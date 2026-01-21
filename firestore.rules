@@ -1,0 +1,27 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // User profiles - users can only read/write their own profile
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Drill questions - authenticated users can read
+    match /drills/{category}/{level}/{questionId} {
+      allow read: if request.auth != null;
+      allow write: if false; // Only admin can write
+    }
+
+    // Exams - authenticated users can read
+    match /exams/{examId}/{document=**} {
+      allow read: if request.auth != null;
+      allow write: if false; // Only admin can write
+    }
+
+    // Stages - authenticated users can read
+    match /stages/{stageId}/{document=**} {
+      allow read: if request.auth != null;
+      allow write: if false; // Only admin can write
+    }
+  }
+}
