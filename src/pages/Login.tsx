@@ -101,7 +101,7 @@ const Login = () => {
             <img
               src="/logo.png"
               alt="Nipponverb Logo"
-              className="w-24 h-24 md:w-32 md:h-32 object-contain animate-float"
+              className="w-24 h-24 md:w-32 md:h-32 object-contain"
             />
           </motion.div>
           <h1 className="text-4xl font-zen font-bold text-gradient mb-2">

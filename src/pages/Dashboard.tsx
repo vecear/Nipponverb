@@ -104,7 +104,7 @@ const Dashboard = () => {
               <Link to={mode.path}>
                 <div className="card p-2 md:p-6 h-full hover:bg-white/15 hover:scale-[1.02] cursor-pointer transition-all duration-150">
                   <div className="text-center space-y-2 md:space-y-4">
-                    <div className={`text-4xl md:text-6xl animate-float`} style={{ animationDelay: `${index * 0.1}s` }}>
+                    <div className="text-4xl md:text-6xl">
                       {mode.icon}
                     </div>
                     <h3 className="text-sm md:text-2xl font-zen font-bold">
