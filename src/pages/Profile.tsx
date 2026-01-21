@@ -60,12 +60,7 @@ const Profile = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.2 }}
-        className="card mb-6 md:mb-8"
-      >
+      <div className="card mb-6 md:mb-8">
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
           <div className="relative">
             {currentUser?.photoURL ? (
@@ -155,7 +150,7 @@ const Profile = () => {
             </button>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       <AnimatePresence>
         {isModalOpen && (

@@ -98,11 +98,7 @@ const Practice = () => {
   // Category selection screen
   if (showCategorySelect) {
     return (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="max-w-2xl mx-auto space-y-8"
-      >
+      <div className="max-w-2xl mx-auto space-y-8">
         <div className="card">
           <h1 className="text-2xl md:text-4xl font-zen font-bold mb-6 text-gradient capitalize">
             {t(`practice.categories.${category}.title`)}

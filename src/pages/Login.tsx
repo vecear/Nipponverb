@@ -84,11 +84,7 @@ const Login = () => {
         ))}
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="glass max-w-md w-full p-8 relative z-10"
-      >
+      <div className="glass max-w-md w-full p-8 relative z-10">
 
 
         <div className="text-center mb-8">
@@ -202,7 +198,7 @@ const Login = () => {
             {isSignUp ? t('auth.alreadyHaveAccount') : t('auth.noAccount')}
           </button>
         </div>
-      </motion.div>
+      </div>
     </div>
   )
 }

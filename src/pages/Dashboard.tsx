@@ -52,19 +52,14 @@ const Dashboard = () => {
   return (
     <div className="space-y-8">
       {/* Hero Section */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.2 }}
-        className="text-center py-8 md:py-12"
-      >
+      <div className="text-center py-8 md:py-12">
         <h1 className="text-3xl md:text-5xl font-zen font-bold mb-4">
           {t('dashboard.welcome', { name: profile?.displayName || currentUser?.displayName || 'Student' })}
         </h1>
         <p className="text-lg md:text-xl text-white/60">
           {t('dashboard.continueJourney')}
         </p>
-      </motion.div>
+      </div>
 
       {/* Stats Section */}
       <div className="grid grid-cols-3 lg:grid-cols-3 gap-2 md:gap-6">
