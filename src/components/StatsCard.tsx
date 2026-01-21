@@ -15,22 +15,22 @@ const StatsCard = ({ title, value, subtitle, color, icon }: StatsCardProps) => {
     <motion.div
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.15 }}
-      className="card p-2 md:p-4"
+      className="card p-2 md:p-3"
     >
-      <div className="space-y-2 md:space-y-3">
+      <div className="space-y-1.5 md:space-y-2">
         <div className="flex items-center justify-between">
-          <h3 className="text-[10px] md:text-base font-semibold text-white/80">{title}</h3>
-          {icon && <span className="text-xl md:text-2xl">{icon}</span>}
+          <h3 className="text-[10px] md:text-sm font-semibold text-white/80">{title}</h3>
+          {icon && <span className="text-xl md:text-xl">{icon}</span>}
         </div>
 
-        <div className="relative w-16 h-16 md:w-24 md:h-24 mx-auto">
+        <div className="relative w-16 h-16 md:w-20 md:h-20 mx-auto">
           <svg className="transform -rotate-90 w-full h-full" viewBox="0 0 128 128">
             <circle
               cx="64"
               cy="64"
               r="56"
               stroke="currentColor"
-              strokeWidth="10"
+              strokeWidth="12"
               fill="transparent"
               className="text-white/10"
             />
@@ -39,7 +39,7 @@ const StatsCard = ({ title, value, subtitle, color, icon }: StatsCardProps) => {
               cy="64"
               r="56"
               stroke={color}
-              strokeWidth="10"
+              strokeWidth="12"
               fill="transparent"
               strokeLinecap="round"
               initial={{ strokeDasharray: '0 352' }}
@@ -50,11 +50,11 @@ const StatsCard = ({ title, value, subtitle, color, icon }: StatsCardProps) => {
             />
           </svg>
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-sm md:text-3xl font-bold">{value}%</span>
+            <span className="text-sm md:text-xl font-bold">{value}%</span>
           </div>
         </div>
 
-        <p className="text-center text-[8px] md:text-base text-white/60 leading-tight md:leading-normal">{subtitle}</p>
+        <p className="text-center text-[8px] md:text-xs text-white/60 leading-tight">{subtitle}</p>
       </div>
     </motion.div>
   )

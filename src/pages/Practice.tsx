@@ -211,19 +211,19 @@ const Practice = () => {
   // Practice screen
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="mb-8">
-        <div className="flex items-center justify-between mb-4">
-          <h1 className="text-3xl font-zen font-bold capitalize">
+      <div className="mb-4 md:mb-6">
+        <div className="flex items-center justify-between mb-2 md:mb-4">
+          <h1 className="text-xl md:text-2xl font-zen font-bold capitalize">
             {t(`practice.categories.${category}.title`)}
           </h1>
-          <div className="text-white/60">
+          <div className="text-xs md:text-sm text-white/60">
             {t('practice.question', { current: currentIndex + 1, total: questions.length })}
           </div>
         </div>
 
-        <div className="w-full bg-white/10 rounded-full h-2">
+        <div className="w-full bg-white/10 rounded-full h-1.5">
           <motion.div
-            className="bg-gradient-to-r from-sakura-pink to-electric-cyan h-2 rounded-full"
+            className="bg-gradient-to-r from-sakura-pink to-electric-cyan h-1.5 rounded-full"
             initial={{ width: 0 }}
             animate={{
               width: `${((currentIndex + 1) / questions.length) * 100}%`,

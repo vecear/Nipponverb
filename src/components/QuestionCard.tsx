@@ -31,14 +31,14 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.1 }}
-      className="card max-w-3xl mx-auto"
+      className="card max-w-2xl mx-auto"
     >
-      <div className="space-y-4 md:space-y-6">
+      <div className="space-y-3 md:space-y-4">
         <div className="text-center">
-          <span className="inline-block px-3 py-1 bg-sakura-pink/20 text-sakura-pink rounded-full text-sm font-semibold mb-2 md:mb-4">
+          <span className="inline-block px-2 py-0.5 bg-sakura-pink/20 text-sakura-pink rounded-full text-[10px] md:text-xs font-semibold mb-1 md:mb-2">
             {question.level}
           </span>
-          <h2 className="text-xl md:text-3xl font-zen font-bold mb-2 break-words text-balance">
+          <h2 className="text-lg md:text-2xl font-zen font-bold mb-1 break-words text-balance">
             {question.stem}
           </h2>
         </div>
@@ -51,7 +51,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
               whileTap={{ scale: selectedAnswer ? 1 : 0.98 }}
               onClick={() => handleAnswerClick(option)}
               disabled={!!selectedAnswer}
-              className={`p-4 md:p-6 rounded-xl border-2 transition-all duration-100 ${selectedAnswer === option
+              className={`p-3 md:p-4 rounded-xl border-2 transition-all duration-100 ${selectedAnswer === option
                 ? isCorrect
                   ? 'bg-green-500/20 border-green-500 shadow-lg shadow-green-500/50'
                   : 'bg-red-500/20 border-red-500 shadow-lg shadow-red-500/50'
@@ -60,7 +60,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
                   : 'glass-hover border-white/20'
                 }`}
             >
-              <span className="text-base md:text-lg font-noto break-words">{option}</span>
+              <span className="text-sm md:text-base font-noto break-words">{option}</span>
             </motion.button>
           ))}
         </div>
@@ -74,15 +74,15 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
               transition={{ duration: 0.07 }}
               className="space-y-4"
             >
-              <div className={`p-4 md:p-6 rounded-xl ${isCorrect
+              <div className={`p-3 md:p-4 rounded-xl ${isCorrect
                 ? 'bg-green-500/20 border-2 border-green-500'
                 : 'bg-red-500/20 border-2 border-red-500'
                 }`}>
-                <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2">
+                <h3 className="text-base md:text-lg font-bold mb-1">
                   {isCorrect ? t('practice.correct') : t('practice.incorrect')}
                 </h3>
                 {(showExplanation || !isCorrect) && (
-                  <p className="text-sm md:text-base text-white/80">{question.explanation}</p>
+                  <p className="text-xs md:text-sm text-white/80">{question.explanation}</p>
                 )}
               </div>
 
@@ -92,10 +92,10 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => onAnswer(selectedAnswer!)}
-                className="w-full btn-primary py-4 flex items-center justify-center gap-2 text-lg font-bold"
+                className="w-full btn-primary py-3 flex items-center justify-center gap-2 text-base font-bold"
               >
                 {t('practice.nextQuestion')}
-                <ChevronRight size={20} />
+                <ChevronRight size={18} />
               </motion.button>
             </motion.div>
           )}
