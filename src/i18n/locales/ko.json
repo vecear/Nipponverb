@@ -44,6 +44,7 @@
     }
   },
   "practice": {
+    "title": "연습",
     "verbs": "동사",
     "kanji": "한자",
     "grammar": "문법",
@@ -58,20 +59,21 @@
   },
   "simulation": {
     "title": "JLPT 모의고사",
-    "tagline": "실전 모의고사로 일본어 실력을 평가하세요",
+    "subtitle": "실전 모의고사로 일본어 실력을 평가하세요",
     "timeLimit": "분",
     "startExam": "시험 시작",
-    "guidelines": "시험 안내",
+    "sectionsLabel": "섹션",
+    "guidelinesTitle": "시험 안내",
     "guideline1": "시험 중에는 피드백이 없습니다 - 결과는 마지막에 표시됩니다",
     "guideline2": "공식 JLPT 기준의 엄격한 시간 제한",
     "guideline3": "실제 말뭉치 데이터에서 가져온 문제",
     "guideline4": "완료 후 상세한 성과 분석 제공",
     "levels": {
-      "N5": "기초 이해",
-      "N4": "초급 이해",
-      "N3": "중급 이해",
-      "N2": "고급 이해",
-      "N1": "전문가 이해"
+      "n5": "기초 이해",
+      "n4": "초급 이해",
+      "n3": "중급 이해",
+      "n2": "고급 이해",
+      "n1": "전문가 이해"
     },
     "sections": {
       "vocabulary": "어휘",
@@ -82,7 +84,7 @@
   },
   "stages": {
     "title": "시나리오 스테이지",
-    "tagline": "실제 대화와 상황을 통해 일본어 학습하기",
+    "subtitle": "실제 대화와 상황을 통해 일본어 학습하기",
     "difficulty": {
       "beginner": "초급",
       "intermediate": "중급",
@@ -91,29 +93,66 @@
     "locked": "잠김",
     "playAgain": "다시 플레이",
     "startStage": "스테이지 시작",
-    "howItWorks": "스테이지 작동 방식",
-    "watchListen": "보기 및 듣기",
-    "watchListenDesc": "실제 일본어 말뭉치에서 가져온 진짜 대화 경험하기",
-    "answerQuestions": "질문 답하기",
-    "answerQuestionsDesc": "맥락, 뉘앙스, 어휘에 대한 이해도 테스트하기",
-    "unlockStages": "새 스테이지 잠금 해제",
-    "unlockStagesDesc": "스테이지를 완료하여 더 어려운 시나리오 잠금 해제하기"
+    "stage1": {
+      "title": "역에서",
+      "description": "표 구매와 교통수단 이용법 배우기"
+    },
+    "stage2": {
+      "title": "식당에서",
+      "description": "음식 주문하고 직원과 정중하게 대화하기"
+    },
+    "stage3": {
+      "title": "옷 쇼핑",
+      "description": "사이즈, 색상, 가격 문의하기"
+    },
+    "stage4": {
+      "title": "취업 면접",
+      "description": "격식 있는 비즈니스 일본어 마스터하기"
+    },
+    "stage5": {
+      "title": "병원 방문",
+      "description": "증상 설명하고 의료 조언 이해하기"
+    },
+    "stage6": {
+      "title": "친구 사귀기",
+      "description": "일상 대화와 사교적 상호작용"
+    },
+    "howItWorks": {
+      "title": "스테이지 작동 방식",
+      "step1Title": "보기 및 듣기",
+      "step1Description": "실제 일본어 말뭉치에서 가져온 진짜 대화 경험하기",
+      "step2Title": "질문 답하기",
+      "step2Description": "맥락, 뉘앙스, 어휘에 대한 이해도 테스트하기",
+      "step3Title": "새 스테이지 잠금 해제",
+      "step3Description": "스테이지를 완료하여 더 어려운 시나리오 잠금 해제하기"
+    }
   },
   "profile": {
     "title": "프로필",
-    "dayStreak": "{{days}}일 연속",
+    "streak": "{{days}}일 연속",
     "targetLevel": "목표 레벨",
-    "totalStudyTime": "총 학습 시간",
-    "questionsAnswered": "답변한 문제",
-    "currentStreak": "현재 연속 일수",
-    "stagesCompleted": "완료한 스테이지",
     "learningProgress": "학습 진도",
-    "achievements": "업적",
     "stats": {
+      "totalStudyTime": "총 학습 시간",
+      "questionsAnswered": "답변한 문제",
+      "currentStreak": "현재 연속 일수",
+      "stagesCompleted": "완료한 스테이지"
+    },
+    "progress": {
       "verbs": "동사",
       "kanji": "한자",
-      "grammar": "문법",
-      "learned": "학습함"
+      "grammar": "문법"
+    },
+    "achievements": {
+      "title": "업적",
+      "streak15": "15일 연속",
+      "firstPerfect": "첫 만점",
+      "questions100": "100개 문제",
+      "stageMaster": "스테이지 마스터",
+      "kanji500": "500개 한자",
+      "n3Ready": "N3 준비 완료",
+      "grammarExpert": "문법 전문가",
+      "jlptChampion": "JLPT 챔피언"
     }
   },
   "settings": {

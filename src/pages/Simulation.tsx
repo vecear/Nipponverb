@@ -1,39 +1,41 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const Simulation = () => {
+  const { t } = useTranslation()
   const [selectedLevel, setSelectedLevel] = useState<string | null>(null)
 
   const levels = [
     {
       level: 'N5',
-      description: 'Basic Understanding',
+      description: t('simulation.levels.n5'),
       timeLimit: 105,
-      sections: ['Vocabulary', 'Grammar', 'Reading'],
+      sections: [t('simulation.sections.vocabulary'), t('simulation.sections.grammar'), t('simulation.sections.reading')],
     },
     {
       level: 'N4',
-      description: 'Elementary Understanding',
+      description: t('simulation.levels.n4'),
       timeLimit: 125,
-      sections: ['Vocabulary', 'Grammar', 'Reading'],
+      sections: [t('simulation.sections.vocabulary'), t('simulation.sections.grammar'), t('simulation.sections.reading')],
     },
     {
       level: 'N3',
-      description: 'Intermediate Understanding',
+      description: t('simulation.levels.n3'),
       timeLimit: 140,
-      sections: ['Vocabulary', 'Grammar', 'Reading'],
+      sections: [t('simulation.sections.vocabulary'), t('simulation.sections.grammar'), t('simulation.sections.reading')],
     },
     {
       level: 'N2',
-      description: 'Advanced Understanding',
+      description: t('simulation.levels.n2'),
       timeLimit: 155,
-      sections: ['Vocabulary', 'Grammar', 'Reading'],
+      sections: [t('simulation.sections.vocabulary'), t('simulation.sections.grammar'), t('simulation.sections.reading')],
     },
     {
       level: 'N1',
-      description: 'Expert Understanding',
+      description: t('simulation.levels.n1'),
       timeLimit: 170,
-      sections: ['Vocabulary', 'Grammar', 'Reading'],
+      sections: [t('simulation.sections.vocabulary'), t('simulation.sections.grammar'), t('simulation.sections.reading')],
     },
   ]
 
@@ -45,10 +47,10 @@ const Simulation = () => {
         className="text-center mb-12"
       >
         <h1 className="text-5xl font-zen font-bold mb-4 text-gradient">
-          JLPT Simulation
+          {t('simulation.title')}
         </h1>
         <p className="text-xl text-white/60">
-          Take a realistic mock exam to assess your Japanese proficiency
+          {t('simulation.subtitle')}
         </p>
       </motion.div>
 
@@ -72,7 +74,7 @@ const Simulation = () => {
               <p className="text-white/60">{exam.description}</p>
 
               <div className="space-y-2">
-                <p className="text-sm font-semibold text-white/80">Sections:</p>
+                <p className="text-sm font-semibold text-white/80">{t('simulation.sectionsLabel')}:</p>
                 <div className="flex flex-wrap gap-2">
                   {exam.sections.map((section) => (
                     <span
@@ -86,7 +88,7 @@ const Simulation = () => {
               </div>
 
               <button className="btn-primary w-full mt-4">
-                Start Exam
+                {t('simulation.startExam')}
               </button>
             </div>
           </motion.div>
@@ -99,23 +101,23 @@ const Simulation = () => {
         transition={{ delay: 0.5 }}
         className="card mt-12"
       >
-        <h3 className="text-2xl font-zen font-bold mb-4">Exam Guidelines</h3>
+        <h3 className="text-2xl font-zen font-bold mb-4">{t('simulation.guidelinesTitle')}</h3>
         <ul className="space-y-3 text-white/80">
           <li className="flex items-start space-x-3">
             <span className="text-sakura-pink mt-1">•</span>
-            <span>No feedback during the exam - results shown at the end</span>
+            <span>{t('simulation.guideline1')}</span>
           </li>
           <li className="flex items-start space-x-3">
             <span className="text-sakura-pink mt-1">•</span>
-            <span>Strict time limit based on official JLPT standards</span>
+            <span>{t('simulation.guideline2')}</span>
           </li>
           <li className="flex items-start space-x-3">
             <span className="text-sakura-pink mt-1">•</span>
-            <span>Questions pulled from authentic corpus data</span>
+            <span>{t('simulation.guideline3')}</span>
           </li>
           <li className="flex items-start space-x-3">
             <span className="text-sakura-pink mt-1">•</span>
-            <span>Detailed performance analysis after completion</span>
+            <span>{t('simulation.guideline4')}</span>
           </li>
         </ul>
       </motion.div>

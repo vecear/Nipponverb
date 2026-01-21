@@ -44,6 +44,7 @@
     }
   },
   "practice": {
+    "title": "练习",
     "verbs": "动词",
     "kanji": "汉字",
     "grammar": "语法",
@@ -58,20 +59,21 @@
   },
   "simulation": {
     "title": "JLPT 模拟考试",
-    "tagline": "进行真实的模拟考试以评估您的日语能力",
+    "subtitle": "进行真实的模拟考试以评估您的日语能力",
     "timeLimit": "分钟",
     "startExam": "开始考试",
-    "guidelines": "考试须知",
+    "sectionsLabel": "科目",
+    "guidelinesTitle": "考试须知",
     "guideline1": "考试期间不会显示回馈 - 结果将在最后显示",
     "guideline2": "基于官方 JLPT 标准的严格时间限制",
     "guideline3": "题目来自真实语料库数据",
     "guideline4": "完成后提供详细的表现分析",
     "levels": {
-      "N5": "基础理解",
-      "N4": "初级理解",
-      "N3": "中级理解",
-      "N2": "高级理解",
-      "N1": "专家理解"
+      "n5": "基础理解",
+      "n4": "初级理解",
+      "n3": "中级理解",
+      "n2": "高级理解",
+      "n1": "专家理解"
     },
     "sections": {
       "vocabulary": "词汇",
@@ -82,7 +84,7 @@
   },
   "stages": {
     "title": "情境关卡",
-    "tagline": "通过真实对话和情境学习日语",
+    "subtitle": "通过真实对话和情境学习日语",
     "difficulty": {
       "beginner": "初级",
       "intermediate": "中级",
@@ -91,29 +93,66 @@
     "locked": "已锁定",
     "playAgain": "再玩一次",
     "startStage": "开始关卡",
-    "howItWorks": "关卡运作方式",
-    "watchListen": "观看与聆听",
-    "watchListenDesc": "体验来自真实日语语料库的真实对话",
-    "answerQuestions": "回答问题",
-    "answerQuestionsDesc": "测试您对情境、语感和词汇的理解",
-    "unlockStages": "解锁新关卡",
-    "unlockStagesDesc": "完成关卡以解锁更具挑战性的情境"
+    "stage1": {
+      "title": "在车站",
+      "description": "学习如何购买车票和使用交通工具"
+    },
+    "stage2": {
+      "title": "在餐厅",
+      "description": "点餐并礼貌地与服务员互动"
+    },
+    "stage3": {
+      "title": "购买衣物",
+      "description": "询问尺寸、颜色和价格"
+    },
+    "stage4": {
+      "title": "工作面试",
+      "description": "掌握正式的商务日语"
+    },
+    "stage5": {
+      "title": "看医生",
+      "description": "描述症状并理解医疗建议"
+    },
+    "stage6": {
+      "title": "结交朋友",
+      "description": "休闲对话和社交互动"
+    },
+    "howItWorks": {
+      "title": "关卡运作方式",
+      "step1Title": "观看与聆听",
+      "step1Description": "体验来自真实日语语料库的真实对话",
+      "step2Title": "回答问题",
+      "step2Description": "测试您对情境、语感和词汇的理解",
+      "step3Title": "解锁新关卡",
+      "step3Description": "完成关卡以解锁更具挑战性的情境"
+    }
   },
   "profile": {
     "title": "个人档案",
-    "dayStreak": "{{days}} 天连续",
+    "streak": "{{days}} 天连续",
     "targetLevel": "目标级别",
-    "totalStudyTime": "总学习时间",
-    "questionsAnswered": "已回答问题",
-    "currentStreak": "当前连续天数",
-    "stagesCompleted": "已完成关卡",
     "learningProgress": "学习进度",
-    "achievements": "成就",
     "stats": {
+      "totalStudyTime": "总学习时间",
+      "questionsAnswered": "已回答问题",
+      "currentStreak": "当前连续天数",
+      "stagesCompleted": "已完成关卡"
+    },
+    "progress": {
       "verbs": "动词",
       "kanji": "汉字",
-      "grammar": "语法",
-      "learned": "已学习"
+      "grammar": "语法"
+    },
+    "achievements": {
+      "title": "成就",
+      "streak15": "15 天连续",
+      "firstPerfect": "首次满分",
+      "questions100": "100 道问题",
+      "stageMaster": "关卡大师",
+      "kanji500": "500 个汉字",
+      "n3Ready": "N3 就绪",
+      "grammarExpert": "语法专家",
+      "jlptChampion": "JLPT 冠军"
     }
   },
   "settings": {

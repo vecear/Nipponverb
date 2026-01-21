@@ -44,6 +44,7 @@
     }
   },
   "practice": {
+    "title": "Practice",
     "verbs": "Verbs",
     "kanji": "Kanji",
     "grammar": "Grammar",
@@ -58,20 +59,21 @@
   },
   "simulation": {
     "title": "JLPT Simulation",
-    "tagline": "Take a realistic mock exam to assess your Japanese proficiency",
+    "subtitle": "Take a realistic mock exam to assess your Japanese proficiency",
     "timeLimit": "min",
     "startExam": "Start Exam",
-    "guidelines": "Exam Guidelines",
+    "sectionsLabel": "Sections",
+    "guidelinesTitle": "Exam Guidelines",
     "guideline1": "No feedback during the exam - results shown at the end",
     "guideline2": "Strict time limit based on official JLPT standards",
     "guideline3": "Questions pulled from authentic corpus data",
     "guideline4": "Detailed performance analysis after completion",
     "levels": {
-      "N5": "Basic Understanding",
-      "N4": "Elementary Understanding",
-      "N3": "Intermediate Understanding",
-      "N2": "Advanced Understanding",
-      "N1": "Expert Understanding"
+      "n5": "Basic Understanding",
+      "n4": "Elementary Understanding",
+      "n3": "Intermediate Understanding",
+      "n2": "Advanced Understanding",
+      "n1": "Expert Understanding"
     },
     "sections": {
       "vocabulary": "Vocabulary",
@@ -82,7 +84,7 @@
   },
   "stages": {
     "title": "Scenario Stages",
-    "tagline": "Learn Japanese through real-world conversations and situations",
+    "subtitle": "Learn Japanese through real-world conversations and situations",
     "difficulty": {
       "beginner": "Beginner",
       "intermediate": "Intermediate",
@@ -91,29 +93,66 @@
     "locked": "Locked",
     "playAgain": "Play Again",
     "startStage": "Start Stage",
-    "howItWorks": "How Stages Work",
-    "watchListen": "Watch & Listen",
-    "watchListenDesc": "Experience authentic conversations from real Japanese corpus data",
-    "answerQuestions": "Answer Questions",
-    "answerQuestionsDesc": "Test your understanding of context, nuance, and vocabulary",
-    "unlockStages": "Unlock New Stages",
-    "unlockStagesDesc": "Complete stages to unlock more challenging scenarios"
+    "stage1": {
+      "title": "At the Station",
+      "description": "Learn how to buy tickets and navigate transportation"
+    },
+    "stage2": {
+      "title": "At a Restaurant",
+      "description": "Order food and interact with staff politely"
+    },
+    "stage3": {
+      "title": "Shopping for Clothes",
+      "description": "Ask about sizes, colors, and prices"
+    },
+    "stage4": {
+      "title": "Job Interview",
+      "description": "Master formal business Japanese"
+    },
+    "stage5": {
+      "title": "Visiting a Doctor",
+      "description": "Describe symptoms and understand medical advice"
+    },
+    "stage6": {
+      "title": "Making Friends",
+      "description": "Casual conversation and social interactions"
+    },
+    "howItWorks": {
+      "title": "How Stages Work",
+      "step1Title": "Watch & Listen",
+      "step1Description": "Experience authentic conversations from real Japanese corpus data",
+      "step2Title": "Answer Questions",
+      "step2Description": "Test your understanding of context, nuance, and vocabulary",
+      "step3Title": "Unlock New Stages",
+      "step3Description": "Complete stages to unlock more challenging scenarios"
+    }
   },
   "profile": {
     "title": "Profile",
-    "dayStreak": "{{days}} day streak",
+    "streak": "{{days}} day streak",
     "targetLevel": "Target Level",
-    "totalStudyTime": "Total Study Time",
-    "questionsAnswered": "Questions Answered",
-    "currentStreak": "Current Streak",
-    "stagesCompleted": "Stages Completed",
     "learningProgress": "Learning Progress",
-    "achievements": "Achievements",
     "stats": {
+      "totalStudyTime": "Total Study Time",
+      "questionsAnswered": "Questions Answered",
+      "currentStreak": "Current Streak",
+      "stagesCompleted": "Stages Completed"
+    },
+    "progress": {
       "verbs": "Verbs",
       "kanji": "Kanji",
-      "grammar": "Grammar",
-      "learned": "learned"
+      "grammar": "Grammar"
+    },
+    "achievements": {
+      "title": "Achievements",
+      "streak15": "15 Day Streak",
+      "firstPerfect": "First Perfect",
+      "questions100": "100 Questions",
+      "stageMaster": "Stage Master",
+      "kanji500": "500 Kanji",
+      "n3Ready": "N3 Ready",
+      "grammarExpert": "Grammar Expert",
+      "jlptChampion": "JLPT Champion"
     }
   },
   "settings": {

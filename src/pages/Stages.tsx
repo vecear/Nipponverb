@@ -1,64 +1,70 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const Stages = () => {
+  const { t } = useTranslation()
   const stages = [
     {
       id: '1',
-      title: 'At the Station',
-      description: 'Learn how to buy tickets and navigate transportation',
-      difficulty: 'Beginner',
+      title: t('stages.stage1.title'),
+      description: t('stages.stage1.description'),
+      difficulty: t('stages.difficulty.beginner'),
       locked: false,
       completed: true,
     },
     {
       id: '2',
-      title: 'At a Restaurant',
-      description: 'Order food and interact with staff politely',
-      difficulty: 'Beginner',
+      title: t('stages.stage2.title'),
+      description: t('stages.stage2.description'),
+      difficulty: t('stages.difficulty.beginner'),
       locked: false,
       completed: true,
     },
     {
       id: '3',
-      title: 'Shopping for Clothes',
-      description: 'Ask about sizes, colors, and prices',
-      difficulty: 'Intermediate',
+      title: t('stages.stage3.title'),
+      description: t('stages.stage3.description'),
+      difficulty: t('stages.difficulty.intermediate'),
       locked: false,
       completed: false,
     },
     {
       id: '4',
-      title: 'Job Interview',
-      description: 'Master formal business Japanese',
-      difficulty: 'Advanced',
+      title: t('stages.stage4.title'),
+      description: t('stages.stage4.description'),
+      difficulty: t('stages.difficulty.advanced'),
       locked: true,
       completed: false,
     },
     {
       id: '5',
-      title: 'Visiting a Doctor',
-      description: 'Describe symptoms and understand medical advice',
-      difficulty: 'Intermediate',
+      title: t('stages.stage5.title'),
+      description: t('stages.stage5.description'),
+      difficulty: t('stages.difficulty.intermediate'),
       locked: true,
       completed: false,
     },
     {
       id: '6',
-      title: 'Making Friends',
-      description: 'Casual conversation and social interactions',
-      difficulty: 'Beginner',
+      title: t('stages.stage6.title'),
+      description: t('stages.stage6.description'),
+      difficulty: t('stages.difficulty.beginner'),
       locked: true,
       completed: false,
     },
   ]
 
   const getDifficultyColor = (difficulty: string) => {
+    const beginner = t('stages.difficulty.beginner')
+    const intermediate = t('stages.difficulty.intermediate')
+    const advanced = t('stages.difficulty.advanced')
+
     switch (difficulty) {
-      case 'Beginner':
+      case beginner:
         return 'text-green-400'
-      case 'Intermediate':
+      case intermediate:
         return 'text-yellow-400'
-      case 'Advanced':
+      case advanced:
         return 'text-red-400'
       default:
         return 'text-white'
@@ -73,10 +79,10 @@ const Stages = () => {
         className="text-center mb-12"
       >
         <h1 className="text-5xl font-zen font-bold mb-4 text-gradient">
-          Scenario Stages
+          {t('stages.title')}
         </h1>
         <p className="text-xl text-white/60">
-          Learn Japanese through real-world conversations and situations
+          {t('stages.subtitle')}
         </p>
       </motion.div>
 
@@ -121,10 +127,10 @@ const Stages = () => {
                 }`}
               >
                 {stage.locked
-                  ? 'Locked'
+                  ? t('stages.locked')
                   : stage.completed
-                  ? 'Play Again'
-                  : 'Start Stage'}
+                  ? t('stages.playAgain')
+                  : t('stages.startStage')}
               </button>
             </div>
           </motion.div>
@@ -137,32 +143,32 @@ const Stages = () => {
         transition={{ delay: 0.6 }}
         className="card mt-12"
       >
-        <h3 className="text-2xl font-zen font-bold mb-4">How Stages Work</h3>
+        <h3 className="text-2xl font-zen font-bold mb-4">{t('stages.howItWorks.title')}</h3>
         <div className="space-y-4 text-white/80">
           <div className="flex items-start space-x-4">
             <div className="text-3xl">🎬</div>
             <div>
-              <h4 className="font-semibold mb-1">Watch & Listen</h4>
+              <h4 className="font-semibold mb-1">{t('stages.howItWorks.step1Title')}</h4>
               <p className="text-white/60">
-                Experience authentic conversations from real Japanese corpus data
+                {t('stages.howItWorks.step1Description')}
               </p>
             </div>
           </div>
           <div className="flex items-start space-x-4">
             <div className="text-3xl">❓</div>
             <div>
-              <h4 className="font-semibold mb-1">Answer Questions</h4>
+              <h4 className="font-semibold mb-1">{t('stages.howItWorks.step2Title')}</h4>
               <p className="text-white/60">
-                Test your understanding of context, nuance, and vocabulary
+                {t('stages.howItWorks.step2Description')}
               </p>
             </div>
           </div>
           <div className="flex items-start space-x-4">
             <div className="text-3xl">🏆</div>
             <div>
-              <h4 className="font-semibold mb-1">Unlock New Stages</h4>
+              <h4 className="font-semibold mb-1">{t('stages.howItWorks.step3Title')}</h4>
               <p className="text-white/60">
-                Complete stages to unlock more challenging scenarios
+                {t('stages.howItWorks.step3Description')}
               </p>
             </div>
           </div>

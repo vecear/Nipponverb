@@ -44,6 +44,7 @@
     }
   },
   "practice": {
+    "title": "Pratique",
     "verbs": "Verbes",
     "kanji": "Kanji",
     "grammar": "Grammaire",
@@ -58,20 +59,21 @@
   },
   "simulation": {
     "title": "Simulation JLPT",
-    "tagline": "Passez un examen simulé réaliste pour évaluer votre maîtrise du japonais",
+    "subtitle": "Passez un examen simulé réaliste pour évaluer votre maîtrise du japonais",
     "timeLimit": "min",
     "startExam": "Commencer l'examen",
-    "guidelines": "Directives de l'examen",
+    "sectionsLabel": "Sections",
+    "guidelinesTitle": "Directives de l'examen",
     "guideline1": "Aucun retour pendant l'examen - résultats affichés à la fin",
     "guideline2": "Limite de temps stricte basée sur les normes officielles JLPT",
     "guideline3": "Questions extraites de données de corpus authentiques",
     "guideline4": "Analyse détaillée des performances après l'achèvement",
     "levels": {
-      "N5": "Compréhension de base",
-      "N4": "Compréhension élémentaire",
-      "N3": "Compréhension intermédiaire",
-      "N2": "Compréhension avancée",
-      "N1": "Compréhension experte"
+      "n5": "Compréhension de base",
+      "n4": "Compréhension élémentaire",
+      "n3": "Compréhension intermédiaire",
+      "n2": "Compréhension avancée",
+      "n1": "Compréhension experte"
     },
     "sections": {
       "vocabulary": "Vocabulaire",
@@ -82,7 +84,7 @@
   },
   "stages": {
     "title": "Scénarios",
-    "tagline": "Apprenez le japonais à travers des conversations et situations réelles",
+    "subtitle": "Apprenez le japonais à travers des conversations et situations réelles",
     "difficulty": {
       "beginner": "Débutant",
       "intermediate": "Intermédiaire",
@@ -91,29 +93,66 @@
     "locked": "Verrouillé",
     "playAgain": "Rejouer",
     "startStage": "Commencer le scénario",
-    "howItWorks": "Comment fonctionnent les scénarios",
-    "watchListen": "Regarder et écouter",
-    "watchListenDesc": "Découvrez des conversations authentiques issues de données de corpus japonais réel",
-    "answerQuestions": "Répondre aux questions",
-    "answerQuestionsDesc": "Testez votre compréhension du contexte, des nuances et du vocabulaire",
-    "unlockStages": "Débloquer de nouveaux scénarios",
-    "unlockStagesDesc": "Terminez des scénarios pour débloquer des situations plus difficiles"
+    "stage1": {
+      "title": "À la gare",
+      "description": "Apprenez à acheter des billets et à naviguer dans les transports"
+    },
+    "stage2": {
+      "title": "Au restaurant",
+      "description": "Commandez de la nourriture et interagissez poliment avec le personnel"
+    },
+    "stage3": {
+      "title": "Acheter des vêtements",
+      "description": "Renseignez-vous sur les tailles, les couleurs et les prix"
+    },
+    "stage4": {
+      "title": "Entretien d'embauche",
+      "description": "Maîtrisez le japonais professionnel formel"
+    },
+    "stage5": {
+      "title": "Visite chez le médecin",
+      "description": "Décrivez les symptômes et comprenez les conseils médicaux"
+    },
+    "stage6": {
+      "title": "Se faire des amis",
+      "description": "Conversation décontractée et interactions sociales"
+    },
+    "howItWorks": {
+      "title": "Comment fonctionnent les scénarios",
+      "step1Title": "Regarder et écouter",
+      "step1Description": "Découvrez des conversations authentiques issues de données de corpus japonais réel",
+      "step2Title": "Répondre aux questions",
+      "step2Description": "Testez votre compréhension du contexte, des nuances et du vocabulaire",
+      "step3Title": "Débloquer de nouveaux scénarios",
+      "step3Description": "Terminez des scénarios pour débloquer des situations plus difficiles"
+    }
   },
   "profile": {
     "title": "Profil",
-    "dayStreak": "Série de {{days}} jours",
+    "streak": "Série de {{days}} jours",
     "targetLevel": "Niveau cible",
-    "totalStudyTime": "Temps d'étude total",
-    "questionsAnswered": "Questions répondues",
-    "currentStreak": "Série actuelle",
-    "stagesCompleted": "Scénarios terminés",
     "learningProgress": "Progrès d'apprentissage",
-    "achievements": "Réalisations",
     "stats": {
+      "totalStudyTime": "Temps d'étude total",
+      "questionsAnswered": "Questions répondues",
+      "currentStreak": "Série actuelle",
+      "stagesCompleted": "Scénarios terminés"
+    },
+    "progress": {
       "verbs": "Verbes",
       "kanji": "Kanji",
-      "grammar": "Grammaire",
-      "learned": "appris"
+      "grammar": "Grammaire"
+    },
+    "achievements": {
+      "title": "Réalisations",
+      "streak15": "Série de 15 jours",
+      "firstPerfect": "Premier parfait",
+      "questions100": "100 questions",
+      "stageMaster": "Maître des scénarios",
+      "kanji500": "500 kanji",
+      "n3Ready": "Prêt pour N3",
+      "grammarExpert": "Expert en grammaire",
+      "jlptChampion": "Champion JLPT"
     }
   },
   "settings": {

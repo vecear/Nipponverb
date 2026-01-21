@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import QuestionCard from '../components/QuestionCard'
 import { usePracticeStore } from '../store/usePracticeStore'
 import { Question } from '../types'
@@ -48,6 +49,7 @@ const mockQuestions: Record<string, Question[]> = {
 }
 
 const Practice = () => {
+  const { t } = useTranslation()
   const { category } = useParams<{ category: string }>()
   const {
     currentQuestion,
@@ -100,7 +102,7 @@ const Practice = () => {
       >
         <div className="card">
           <h1 className="text-4xl font-zen font-bold mb-4 text-gradient">
-            Practice Complete!
+            {t('practice.complete')}
           </h1>
 
           <div className="grid grid-cols-2 gap-6 my-8">
@@ -108,26 +110,26 @@ const Practice = () => {
               <div className="text-5xl font-bold text-sakura-pink mb-2">
                 {score}/{totalAttempts}
               </div>
-              <div className="text-white/60">Questions Correct</div>
+              <div className="text-white/60">{t('practice.questionsCorrect')}</div>
             </div>
 
             <div className="glass p-6 rounded-xl">
               <div className="text-5xl font-bold text-electric-cyan mb-2">
                 {accuracy}%
               </div>
-              <div className="text-white/60">Accuracy</div>
+              <div className="text-white/60">{t('practice.accuracy')}</div>
             </div>
           </div>
 
           <div className="space-y-4">
             <button onClick={handleRestart} className="btn-primary w-full">
-              Practice Again
+              {t('practice.practiceAgain')}
             </button>
             <button
               onClick={() => window.history.back()}
               className="btn-secondary w-full"
             >
-              Back to Dashboard
+              {t('practice.backToDashboard')}
             </button>
           </div>
         </div>
@@ -140,10 +142,10 @@ const Practice = () => {
       <div className="mb-8">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-3xl font-zen font-bold capitalize">
-            {category} Practice
+            {category} {t('practice.title')}
           </h1>
           <div className="text-white/60">
-            Question {currentIndex + 1} of {questions.length}
+            {t('practice.question', { current: currentIndex + 1, total: questions.length })}
           </div>
         </div>
 

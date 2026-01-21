@@ -1,18 +1,20 @@
 import { useState } from 'react'
 import { useAuth } from '../contexts/AuthContext'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const Profile = () => {
+  const { t } = useTranslation()
   const { currentUser } = useAuth()
   const [selectedLevel, setSelectedLevel] = useState<string>('N3')
 
   const levels = ['N5', 'N4', 'N3', 'N2', 'N1']
 
   const stats = [
-    { label: 'Total Study Time', value: '127 hours' },
-    { label: 'Questions Answered', value: '2,450' },
-    { label: 'Current Streak', value: '15 days' },
-    { label: 'Stages Completed', value: '12/25' },
+    { label: t('profile.stats.totalStudyTime'), value: '127 hours' },
+    { label: t('profile.stats.questionsAnswered'), value: '2,450' },
+    { label: t('profile.stats.currentStreak'), value: '15 days' },
+    { label: t('profile.stats.stagesCompleted'), value: '12/25' },
   ]
 
   return (
@@ -36,7 +38,7 @@ const Profile = () => {
               </div>
             )}
             <div className="absolute -bottom-2 -right-2 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-              15 day streak 🔥
+              {t('profile.streak', { days: 15 })} 🔥
             </div>
           </div>
 
@@ -47,7 +49,7 @@ const Profile = () => {
             <p className="text-white/60 mb-4">{currentUser?.email}</p>
 
             <div className="flex items-center justify-center md:justify-start gap-2">
-              <span className="text-white/80">Target Level:</span>
+              <span className="text-white/80">{t('profile.targetLevel')}:</span>
               <div className="flex gap-2">
                 {levels.map((level) => (
                   <button
@@ -86,12 +88,12 @@ const Profile = () => {
       </div>
 
       <div className="card mb-8">
-        <h2 className="text-2xl font-zen font-bold mb-6">Learning Progress</h2>
+        <h2 className="text-2xl font-zen font-bold mb-6">{t('profile.learningProgress')}</h2>
 
         <div className="space-y-6">
           <div>
             <div className="flex justify-between mb-2">
-              <span className="font-semibold">Verbs</span>
+              <span className="font-semibold">{t('profile.progress.verbs')}</span>
               <span className="text-white/60">120/200</span>
             </div>
             <div className="w-full bg-white/10 rounded-full h-3">
@@ -106,7 +108,7 @@ const Profile = () => {
 
           <div>
             <div className="flex justify-between mb-2">
-              <span className="font-semibold">Kanji</span>
+              <span className="font-semibold">{t('profile.progress.kanji')}</span>
               <span className="text-white/60">500/1000</span>
             </div>
             <div className="w-full bg-white/10 rounded-full h-3">
@@ -121,7 +123,7 @@ const Profile = () => {
 
           <div>
             <div className="flex justify-between mb-2">
-              <span className="font-semibold">Grammar</span>
+              <span className="font-semibold">{t('profile.progress.grammar')}</span>
               <span className="text-white/60">45/80</span>
             </div>
             <div className="w-full bg-white/10 rounded-full h-3">
@@ -137,17 +139,17 @@ const Profile = () => {
       </div>
 
       <div className="card">
-        <h2 className="text-2xl font-zen font-bold mb-6">Achievements</h2>
+        <h2 className="text-2xl font-zen font-bold mb-6">{t('profile.achievements.title')}</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { icon: '🔥', name: '15 Day Streak', unlocked: true },
-            { icon: '⭐', name: 'First Perfect', unlocked: true },
-            { icon: '📚', name: '100 Questions', unlocked: true },
-            { icon: '🏆', name: 'Stage Master', unlocked: false },
-            { icon: '💎', name: '500 Kanji', unlocked: true },
-            { icon: '🎯', name: 'N3 Ready', unlocked: false },
-            { icon: '🌸', name: 'Grammar Expert', unlocked: false },
-            { icon: '👑', name: 'JLPT Champion', unlocked: false },
+            { icon: '🔥', name: t('profile.achievements.streak15'), unlocked: true },
+            { icon: '⭐', name: t('profile.achievements.firstPerfect'), unlocked: true },
+            { icon: '📚', name: t('profile.achievements.questions100'), unlocked: true },
+            { icon: '🏆', name: t('profile.achievements.stageMaster'), unlocked: false },
+            { icon: '💎', name: t('profile.achievements.kanji500'), unlocked: true },
+            { icon: '🎯', name: t('profile.achievements.n3Ready'), unlocked: false },
+            { icon: '🌸', name: t('profile.achievements.grammarExpert'), unlocked: false },
+            { icon: '👑', name: t('profile.achievements.jlptChampion'), unlocked: false },
           ].map((achievement, index) => (
             <motion.div
               key={index}
