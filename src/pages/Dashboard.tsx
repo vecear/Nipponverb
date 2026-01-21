@@ -109,27 +109,39 @@ const Dashboard = () => {
 
       {/* Recent Activity */}
       <div>
-        <h2 className="text-3xl font-zen font-bold mb-6">Recent Activity</h2>
-        <div className="card space-y-4">
-          {[
-            { action: 'Completed Verb Practice', time: '2 hours ago', score: '8/10' },
-            { action: 'Cleared Stage: At the Station', time: '1 day ago', score: 'Perfect' },
-            { action: 'JLPT N3 Mock Exam', time: '3 days ago', score: '145/180' },
-          ].map((activity, index) => (
+        <h2 className="text-3xl font-zen font-bold mb-6">Quick Access</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Link to="/simulation">
             <motion.div
-              key={index}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="flex items-center justify-between p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors"
+              className="card-interactive"
             >
-              <div>
-                <p className="font-semibold">{activity.action}</p>
-                <p className="text-sm text-white/60">{activity.time}</p>
+              <div className="flex items-center space-x-4">
+                <div className="text-5xl">📝</div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">JLPT Mock Exam</h3>
+                  <p className="text-white/60">Take a realistic JLPT simulation test</p>
+                </div>
               </div>
-              <div className="text-sakura-pink font-bold">{activity.score}</div>
             </motion.div>
-          ))}
+          </Link>
+
+          <Link to="/stages">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="card-interactive"
+            >
+              <div className="flex items-center space-x-4">
+                <div className="text-5xl">🎭</div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Scenario Stages</h3>
+                  <p className="text-white/60">Learn through real-world conversations</p>
+                </div>
+              </div>
+            </motion.div>
+          </Link>
         </div>
       </div>
     </div>

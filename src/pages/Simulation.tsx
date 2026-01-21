@@ -1,126 +1,386 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { useTranslation } from 'react-i18next'
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
+import { generateJLPTExam, JLPTExam } from '../data/jlpt-exams'
 
 const Simulation = () => {
-  const { t } = useTranslation()
-  const [selectedLevel, setSelectedLevel] = useState<string | null>(null)
+  const navigate = useNavigate()
+  const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1' | null>(null)
+  const [exam, setExam] = useState<JLPTExam | null>(null)
+  const [currentSectionIndex, setCurrentSectionIndex] = useState(0)
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
+  const [answers, setAnswers] = useState<Record<string, string>>({})
+  const [timeRemaining, setTimeRemaining] = useState(0) // in seconds
+  const [examStarted, setExamStarted] = useState(false)
+  const [examFinished, setExamFinished] = useState(false)
 
-  const levels = [
-    {
-      level: 'N5',
-      description: t('simulation.levels.n5'),
-      timeLimit: 105,
-      sections: [t('simulation.sections.vocabulary'), t('simulation.sections.grammar'), t('simulation.sections.reading')],
-    },
-    {
-      level: 'N4',
-      description: t('simulation.levels.n4'),
-      timeLimit: 125,
-      sections: [t('simulation.sections.vocabulary'), t('simulation.sections.grammar'), t('simulation.sections.reading')],
-    },
-    {
-      level: 'N3',
-      description: t('simulation.levels.n3'),
-      timeLimit: 140,
-      sections: [t('simulation.sections.vocabulary'), t('simulation.sections.grammar'), t('simulation.sections.reading')],
-    },
-    {
-      level: 'N2',
-      description: t('simulation.levels.n2'),
-      timeLimit: 155,
-      sections: [t('simulation.sections.vocabulary'), t('simulation.sections.grammar'), t('simulation.sections.reading')],
-    },
-    {
-      level: 'N1',
-      description: t('simulation.levels.n1'),
-      timeLimit: 170,
-      sections: [t('simulation.sections.vocabulary'), t('simulation.sections.grammar'), t('simulation.sections.reading')],
-    },
-  ]
+  // Timer countdown
+  useEffect(() => {
+    if (!examStarted || examFinished || timeRemaining <= 0) return
 
-  return (
-    <div className="max-w-6xl mx-auto">
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-12"
-      >
-        <h1 className="text-5xl font-zen font-bold mb-4 text-gradient">
-          {t('simulation.title')}
-        </h1>
-        <p className="text-xl text-white/60">
-          {t('simulation.subtitle')}
-        </p>
-      </motion.div>
+    const timer = setInterval(() => {
+      setTimeRemaining((prev) => {
+        if (prev <= 1) {
+          setExamFinished(true)
+          return 0
+        }
+        return prev - 1
+      })
+    }, 1000)
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {levels.map((exam, index) => (
-          <motion.div
-            key={exam.level}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            className="card-interactive"
-          >
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <h2 className="text-3xl font-bold">{exam.level}</h2>
-                <div className="px-3 py-1 bg-sakura-pink/20 text-sakura-pink rounded-full text-sm">
-                  {exam.timeLimit} min
+    return () => clearInterval(timer)
+  }, [examStarted, examFinished, timeRemaining])
+
+  const startExam = (level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1') => {
+    const newExam = generateJLPTExam(level)
+    setExam(newExam)
+    setSelectedLevel(level)
+    setTimeRemaining(newExam.totalTimeLimit * 60) // Convert to seconds
+    setExamStarted(true)
+    setCurrentSectionIndex(0)
+    setCurrentQuestionIndex(0)
+    setAnswers({})
+    setExamFinished(false)
+  }
+
+  const handleAnswer = (questionId: string, answer: string) => {
+    setAnswers((prev) => ({ ...prev, [questionId]: answer }))
+  }
+
+  const nextQuestion = () => {
+    if (!exam) return
+    const currentSection = exam.sections[currentSectionIndex]
+
+    if (currentQuestionIndex < currentSection.questions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1)
+    } else if (currentSectionIndex < exam.sections.length - 1) {
+      // Move to next section
+      setCurrentSectionIndex(currentSectionIndex + 1)
+      setCurrentQuestionIndex(0)
+    }
+  }
+
+  const previousQuestion = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(currentQuestionIndex - 1)
+    } else if (currentSectionIndex > 0) {
+      setCurrentSectionIndex(currentSectionIndex - 1)
+      const prevSection = exam!.sections[currentSectionIndex - 1]
+      setCurrentQuestionIndex(prevSection.questions.length - 1)
+    }
+  }
+
+  const finishExam = () => {
+    setExamFinished(true)
+  }
+
+  const formatTime = (seconds: number) => {
+    const hours = Math.floor(seconds / 3600)
+    const minutes = Math.floor((seconds % 3600) / 60)
+    const secs = seconds % 60
+    return `${hours}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`
+  }
+
+  // Calculate results
+  const calculateResults = () => {
+    if (!exam) return { score: 0, total: 0, percentage: 0, sectionScores: [] }
+
+    let totalScore = 0
+    let totalQuestions = 0
+    const sectionScores = exam.sections.map((section) => {
+      let sectionScore = 0
+      section.questions.forEach((q) => {
+        totalQuestions++
+        if (answers[q.id] === q.correct) {
+          sectionScore++
+          totalScore++
+        }
+      })
+      return {
+        title: section.title,
+        score: sectionScore,
+        total: section.questions.length,
+        percentage: Math.round((sectionScore / section.questions.length) * 100),
+      }
+    })
+
+    return {
+      score: totalScore,
+      total: totalQuestions,
+      percentage: Math.round((totalScore / totalQuestions) * 100),
+      sectionScores,
+    }
+  }
+
+  // Level selection screen
+  if (!examStarted) {
+    const levels = [
+      { level: 'N5' as const, time: 75, desc: 'Basic Japanese' },
+      { level: 'N4' as const, time: 90, desc: 'Elementary Japanese' },
+      { level: 'N3' as const, time: 105, desc: 'Intermediate Japanese' },
+      { level: 'N2' as const, time: 125, desc: 'Pre-Advanced Japanese' },
+      { level: 'N1' as const, time: 170, desc: 'Advanced Japanese' },
+    ]
+
+    return (
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-12"
+        >
+          <h1 className="text-5xl font-zen font-bold mb-4 text-gradient">
+            JLPT Mock Exam
+          </h1>
+          <p className="text-xl text-white/60">
+            Take a realistic JLPT simulation test
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {levels.map((level, index) => (
+            <motion.div
+              key={level.level}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              className="card-interactive"
+            >
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-3xl font-bold">{level.level}</h2>
+                  <div className="px-3 py-1 bg-sakura-pink/20 text-sakura-pink rounded-full text-sm">
+                    {level.time} min
+                  </div>
                 </div>
-              </div>
 
-              <p className="text-white/60">{exam.description}</p>
+                <p className="text-white/60">{level.desc}</p>
 
-              <div className="space-y-2">
-                <p className="text-sm font-semibold text-white/80">{t('simulation.sectionsLabel')}:</p>
-                <div className="flex flex-wrap gap-2">
-                  {exam.sections.map((section) => (
-                    <span
-                      key={section}
-                      className="px-3 py-1 bg-white/10 rounded-full text-sm"
-                    >
-                      {section}
-                    </span>
-                  ))}
+                <div className="space-y-2">
+                  <p className="text-sm font-semibold text-white/80">Sections:</p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Vocabulary</span>
+                    <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Grammar</span>
+                    <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Reading</span>
+                  </div>
                 </div>
-              </div>
 
-              <button className="btn-primary w-full mt-4">
-                {t('simulation.startExam')}
-              </button>
-            </div>
-          </motion.div>
-        ))}
+                <button
+                  onClick={() => startExam(level.level)}
+                  className="btn-primary w-full mt-4"
+                >
+                  Start {level.level} Exam
+                </button>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="card"
+        >
+          <h3 className="text-2xl font-zen font-bold mb-4">Exam Guidelines</h3>
+          <ul className="space-y-3 text-white/80">
+            <li className="flex items-start space-x-3">
+              <span className="text-sakura-pink mt-1">•</span>
+              <span>Answer all questions within the time limit</span>
+            </li>
+            <li className="flex items-start space-x-3">
+              <span className="text-sakura-pink mt-1">•</span>
+              <span>No feedback will be shown during the exam</span>
+            </li>
+            <li className="flex items-start space-x-3">
+              <span className="text-sakura-pink mt-1">•</span>
+              <span>You can navigate between questions freely</span>
+            </li>
+            <li className="flex items-start space-x-3">
+              <span className="text-sakura-pink mt-1">•</span>
+              <span>Results will be shown after completion</span>
+            </li>
+          </ul>
+        </motion.div>
       </div>
+    )
+  }
 
+  // Results screen
+  if (examFinished && exam) {
+    const results = calculateResults()
+
+    return (
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="card mt-12"
+        className="max-w-4xl mx-auto space-y-8"
       >
-        <h3 className="text-2xl font-zen font-bold mb-4">{t('simulation.guidelinesTitle')}</h3>
-        <ul className="space-y-3 text-white/80">
-          <li className="flex items-start space-x-3">
-            <span className="text-sakura-pink mt-1">•</span>
-            <span>{t('simulation.guideline1')}</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <span className="text-sakura-pink mt-1">•</span>
-            <span>{t('simulation.guideline2')}</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <span className="text-sakura-pink mt-1">•</span>
-            <span>{t('simulation.guideline3')}</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <span className="text-sakura-pink mt-1">•</span>
-            <span>{t('simulation.guideline4')}</span>
-          </li>
-        </ul>
+        <div className="card text-center">
+          <h1 className="text-4xl font-zen font-bold mb-4 text-gradient">
+            Exam Complete!
+          </h1>
+
+          <div className="grid grid-cols-2 gap-6 my-8">
+            <div className="glass p-6 rounded-xl">
+              <div className="text-5xl font-bold text-sakura-pink mb-2">
+                {results.score}/{results.total}
+              </div>
+              <div className="text-white/60">Questions Correct</div>
+            </div>
+
+            <div className="glass p-6 rounded-xl">
+              <div className="text-5xl font-bold text-electric-cyan mb-2">
+                {results.percentage}%
+              </div>
+              <div className="text-white/60">Overall Score</div>
+            </div>
+          </div>
+
+          <div className="text-left space-y-4 mb-8">
+            <h3 className="text-2xl font-bold">Section Breakdown</h3>
+            {results.sectionScores.map((section, idx) => (
+              <div key={idx} className="glass p-4 rounded-xl">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-semibold">{section.title}</span>
+                  <span className="text-sakura-pink">{section.score}/{section.total}</span>
+                </div>
+                <div className="w-full bg-white/10 rounded-full h-2">
+                  <div
+                    className="bg-gradient-to-r from-sakura-pink to-electric-cyan h-2 rounded-full"
+                    style={{ width: `${section.percentage}%` }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="space-y-4">
+            <button
+              onClick={() => {
+                setExamStarted(false)
+                setExamFinished(false)
+              }}
+              className="btn-primary w-full"
+            >
+              Take Another Exam
+            </button>
+            <button
+              onClick={() => navigate('/')}
+              className="btn-secondary w-full"
+            >
+              Back to Dashboard
+            </button>
+          </div>
+        </div>
       </motion.div>
+    )
+  }
+
+  // Exam in progress
+  if (!exam) return null
+
+  const currentSection = exam.sections[currentSectionIndex]
+  const currentQuestion = currentSection.questions[currentQuestionIndex]
+  const totalQuestions = exam.sections.reduce((sum, s) => sum + s.questions.length, 0)
+  const currentOverallIndex = exam.sections
+    .slice(0, currentSectionIndex)
+    .reduce((sum, s) => sum + s.questions.length, 0) + currentQuestionIndex + 1
+
+  return (
+    <div className="max-w-4xl mx-auto">
+      {/* Header with timer */}
+      <div className="card mb-6">
+        <div className="flex items-center justify-between">
+          <div>
+            <h2 className="text-2xl font-bold">{selectedLevel} Mock Exam</h2>
+            <p className="text-white/60">
+              Section {currentSectionIndex + 1}/{exam.sections.length}: {currentSection.title}
+            </p>
+          </div>
+          <div className="text-right">
+            <div className={`text-3xl font-bold ${timeRemaining < 300 ? 'text-red-500' : 'text-electric-cyan'}`}>
+              {formatTime(timeRemaining)}
+            </div>
+            <div className="text-sm text-white/60">Time Remaining</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Progress */}
+      <div className="mb-6">
+        <div className="flex items-center justify-between mb-2">
+          <span className="text-white/60">
+            Question {currentOverallIndex} / {totalQuestions}
+          </span>
+          <span className="text-white/60">
+            Section: {currentQuestionIndex + 1} / {currentSection.questions.length}
+          </span>
+        </div>
+        <div className="w-full bg-white/10 rounded-full h-2">
+          <div
+            className="bg-gradient-to-r from-sakura-pink to-electric-cyan h-2 rounded-full transition-all"
+            style={{ width: `${(currentOverallIndex / totalQuestions) * 100}%` }}
+          />
+        </div>
+      </div>
+
+      {/* Question */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentQuestion.id}
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -20 }}
+          className="card mb-6"
+        >
+          <h3 className="text-2xl font-semibold mb-6 whitespace-pre-wrap">
+            {currentQuestion.stem}
+          </h3>
+
+          <div className="space-y-3">
+            {currentQuestion.options.map((option, idx) => (
+              <button
+                key={idx}
+                onClick={() => handleAnswer(currentQuestion.id, option)}
+                className={`w-full p-4 rounded-xl text-left transition-all ${answers[currentQuestion.id] === option
+                  ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
+                  : 'glass hover:bg-white/10'
+                  }`}
+              >
+                <span className="font-semibold mr-3">{String.fromCharCode(65 + idx)}.</span>
+                {option}
+              </button>
+            ))}
+          </div>
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Navigation */}
+      <div className="flex items-center justify-between">
+        <button
+          onClick={previousQuestion}
+          disabled={currentSectionIndex === 0 && currentQuestionIndex === 0}
+          className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          ← Previous
+        </button>
+
+        <div className="text-white/60">
+          {Object.keys(answers).length} / {totalQuestions} answered
+        </div>
+
+        {currentSectionIndex === exam.sections.length - 1 &&
+          currentQuestionIndex === currentSection.questions.length - 1 ? (
+          <button onClick={finishExam} className="btn-primary">
+            Finish Exam
+          </button>
+        ) : (
+          <button onClick={nextQuestion} className="btn-primary">
+            Next →
+          </button>
+        )}
+      </div>
     </div>
   )
 }

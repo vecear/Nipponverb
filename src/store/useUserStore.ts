@@ -3,7 +3,7 @@ import { UserProfile, UserStats } from '../types'
 
 interface UserStore {
   profile: UserProfile | null
-  setProfile: (profile: UserProfile) => void
+  setProfile: (profile: UserProfile | null) => void
   updateStats: (stats: Partial<UserStats>) => void
   clearProfile: () => void
 }
@@ -17,9 +17,9 @@ export const useUserStore = create<UserStore>((set) => ({
     set((state) => ({
       profile: state.profile
         ? {
-            ...state.profile,
-            stats: { ...state.profile.stats, ...stats },
-          }
+          ...state.profile,
+          stats: { ...state.profile.stats, ...stats },
+        }
         : null,
     })),
 
