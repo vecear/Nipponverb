@@ -32,3 +32,13 @@ firestore-debug.log
 # Environment
 .env
 .env.local
+
+# Sensitive files
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!tsconfig.node.json
+!firebase.json
+!firestore.indexes.json
+!.eslintrc.cjs
