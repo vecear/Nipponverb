@@ -15,15 +15,15 @@ const StatsCard = ({ title, value, subtitle, color, icon }: StatsCardProps) => {
     <motion.div
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.15 }}
-      className="card p-2 md:p-6"
+      className="card p-2 md:p-4"
     >
-      <div className="space-y-2 md:space-y-4">
+      <div className="space-y-2 md:space-y-3">
         <div className="flex items-center justify-between">
-          <h3 className="text-[10px] md:text-lg font-semibold text-white/80">{title}</h3>
-          {icon && <span className="text-xl md:text-3xl">{icon}</span>}
+          <h3 className="text-[10px] md:text-base font-semibold text-white/80">{title}</h3>
+          {icon && <span className="text-xl md:text-2xl">{icon}</span>}
         </div>
 
-        <div className="relative w-16 h-16 md:w-32 md:h-32 mx-auto">
+        <div className="relative w-16 h-16 md:w-24 md:h-24 mx-auto">
           <svg className="transform -rotate-90 w-full h-full" viewBox="0 0 128 128">
             <circle
               cx="64"

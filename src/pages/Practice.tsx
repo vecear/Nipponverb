@@ -157,7 +157,7 @@ const Practice = () => {
             </button>
           </div>
         </div>
-      </motion.div>
+      </div>
     )
   }
 

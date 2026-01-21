@@ -50,10 +50,10 @@ const Dashboard = () => {
   ]
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-4 md:space-y-6">
       {/* Hero Section */}
-      <div className="text-center py-8 md:py-12">
-        <h1 className="text-3xl md:text-5xl font-zen font-bold mb-4">
+      <div className="text-center py-2 md:py-4">
+        <h1 className="text-2xl md:text-4xl font-zen font-bold mb-2">
           {t('dashboard.welcome', { name: profile?.displayName || currentUser?.displayName || 'Student' })}
         </h1>
         <p className="text-lg md:text-xl text-white/60">
@@ -87,8 +87,8 @@ const Dashboard = () => {
       </div>
 
       <div>
-        <h2 className="text-2xl md:text-3xl font-zen font-bold mb-6">{t('dashboard.practiceCategories')}</h2>
-        <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6">
+        <h2 className="text-xl md:text-2xl font-zen font-bold mb-4">{t('dashboard.practiceCategories')}</h2>
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2 md:gap-4">
           {modes.map((mode, index) => (
             <motion.div
               key={index}
@@ -117,7 +117,7 @@ const Dashboard = () => {
 
       {/* Recent Activity */}
       <div>
-        <h2 className="text-3xl font-zen font-bold mb-6">{t('dashboard.quickAccess')}</h2>
+        <h2 className="text-xl md:text-2xl font-zen font-bold mb-4">{t('dashboard.quickAccess')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Link to="/simulation">
             <motion.div
