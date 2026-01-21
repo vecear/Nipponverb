@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import QuestionCard from '../components/QuestionCard'
 import { usePracticeStore } from '../store/usePracticeStore'
 import { Question } from '../types'
@@ -13,6 +14,7 @@ type PracticeCategory = 'gojuon' | 'verbs' | 'grammar' | 'kanji'
 type GojuonSubcategory = 'hiragana' | 'katakana'
 
 const Practice = () => {
+  const { t } = useTranslation()
   const { category } = useParams<{ category: string }>()
   const navigate = useNavigate()
 
@@ -107,12 +109,12 @@ const Practice = () => {
       >
         <div className="card">
           <h1 className="text-4xl font-zen font-bold mb-6 text-gradient capitalize">
-            {category} Practice
+            {t(`practice.categories.${category}.title`)}
           </h1>
 
           {category === 'gojuon' && (
             <div className="mb-6">
-              <label className="block text-lg font-semibold mb-3">Select Type:</label>
+              <label className="block text-lg font-semibold mb-3">{t('practice.selectSubcategory')}:</label>
               <div className="grid grid-cols-2 gap-4">
                 {(['hiragana', 'katakana'] as GojuonSubcategory[]).map((type) => (
                   <button
@@ -124,7 +126,7 @@ const Practice = () => {
                       }`}
                   >
                     <div className="text-2xl mb-2">{type === 'hiragana' ? 'あ' : 'ア'}</div>
-                    <div className="font-semibold capitalize">{type}</div>
+                    <div className="font-semibold capitalize">{t(`practice.categories.gojuon.${type}`)}</div>
                   </button>
                 ))}
               </div>
@@ -133,7 +135,7 @@ const Practice = () => {
 
           {category !== 'gojuon' && (
             <div className="mb-6">
-              <label className="block text-lg font-semibold mb-3">Select JLPT Level:</label>
+              <label className="block text-lg font-semibold mb-3">{t('practice.selectLevel')}:</label>
               <div className="grid grid-cols-5 gap-3">
                 {(['N5', 'N4', 'N3', 'N2', 'N1'] as const).map((level) => (
                   <button
@@ -153,13 +155,13 @@ const Practice = () => {
 
           <div className="space-y-4">
             <button onClick={startPractice} className="btn-primary w-full text-lg py-4">
-              Start Practice (10 Questions)
+              {t('practice.startPractice')}
             </button>
             <button
               onClick={() => navigate('/')}
               className="btn-secondary w-full"
             >
-              Back to Dashboard
+              {t('practice.backToDashboard')}
             </button>
           </div>
         </div>
@@ -179,7 +181,7 @@ const Practice = () => {
       >
         <div className="card">
           <h1 className="text-4xl font-zen font-bold mb-4 text-gradient">
-            Practice Complete!
+            {t('practice.complete')}
           </h1>
 
           <div className="grid grid-cols-2 gap-6 my-8">
@@ -187,26 +189,26 @@ const Practice = () => {
               <div className="text-5xl font-bold text-sakura-pink mb-2">
                 {score}/{totalAttempts}
               </div>
-              <div className="text-white/60">Questions Correct</div>
+              <div className="text-white/60">{t('practice.questionsCorrect')}</div>
             </div>
 
             <div className="glass p-6 rounded-xl">
               <div className="text-5xl font-bold text-electric-cyan mb-2">
                 {accuracy}%
               </div>
-              <div className="text-white/60">Accuracy</div>
+              <div className="text-white/60">{t('practice.accuracy')}</div>
             </div>
           </div>
 
           <div className="space-y-4">
             <button onClick={handleRestart} className="btn-primary w-full">
-              Practice Again
+              {t('practice.practiceAgain')}
             </button>
             <button
               onClick={() => navigate('/')}
               className="btn-secondary w-full"
             >
-              Back to Dashboard
+              {t('practice.backToDashboard')}
             </button>
           </div>
         </div>
@@ -220,10 +222,10 @@ const Practice = () => {
       <div className="mb-8">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-3xl font-zen font-bold capitalize">
-            {category} Practice
+            {t(`practice.categories.${category}.title`)}
           </h1>
           <div className="text-white/60">
-            Question {currentIndex + 1} / {questions.length}
+            {t('practice.question', { current: currentIndex + 1, total: questions.length })}
           </div>
         </div>
 

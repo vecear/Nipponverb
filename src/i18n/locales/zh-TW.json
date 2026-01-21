@@ -27,27 +27,42 @@
     "welcome": "歡迎回來，{{name}}",
     "continueJourney": "繼續您的日語學習之旅",
     "chooseMode": "選擇您的模式",
-    "recentActivity": "最近活動"
-  },
-  "modes": {
-    "basicTraining": {
-      "title": "基礎訓練",
-      "description": "掌握動詞、漢字和文法基礎"
-    },
-    "simulation": {
-      "title": "JLPT 模擬考試",
-      "description": "進行真實的模擬考試以測試您的技能"
-    },
-    "stages": {
-      "title": "情境關卡",
-      "description": "透過真實對話學習"
+    "recentActivity": "最近活動",
+    "quickAccess": "快速訪問",
+    "practiceCategories": "練習類別",
+    "stats": {
+      "totalQuestions": "總題數",
+      "accuracy": "正確率",
+      "studyStreak": "學習連續天數",
+      "level": "當前級別"
     }
   },
   "practice": {
     "title": "練習",
-    "verbs": "動詞",
-    "kanji": "漢字",
-    "grammar": "文法",
+    "selectCategory": "選擇類別",
+    "selectLevel": "選擇 JLPT 級別",
+    "selectSubcategory": "選擇子類別",
+    "startPractice": "開始練習",
+    "categories": {
+      "gojuon": {
+        "title": "五十音",
+        "description": "掌握平假名和片假名",
+        "hiragana": "平假名",
+        "katakana": "片假名"
+      },
+      "verbs": {
+        "title": "動詞變化",
+        "description": "練習動詞形式和變化"
+      },
+      "grammar": {
+        "title": "文法練習",
+        "description": "掌握 JLPT 文法模式"
+      },
+      "kanji": {
+        "title": "漢字讀音",
+        "description": "學習漢字讀音和意義"
+      }
+    },
     "question": "第 {{current}} 題，共 {{total}} 題",
     "complete": "練習完成！",
     "questionsCorrect": "答對題數",
@@ -59,73 +74,77 @@
   },
   "simulation": {
     "title": "JLPT 模擬考試",
-    "subtitle": "進行真實的模擬考試以評估您的日語能力",
+    "subtitle": "進行真實的 JLPT 模擬測驗",
+    "selectLevel": "選擇 JLPT 級別",
     "timeLimit": "分鐘",
-    "startExam": "開始考試",
+    "startExam": "開始 {{level}} 考試",
     "sectionsLabel": "考試部分",
     "guidelinesTitle": "考試須知",
-    "guideline1": "考試期間不會顯示回饋 - 結果將在最後顯示",
-    "guideline2": "基於官方 JLPT 標準的嚴格時間限制",
-    "guideline3": "題目來自真實語料庫資料",
-    "guideline4": "完成後提供詳細的表現分析",
+    "guideline1": "在時間限制內回答所有問題",
+    "guideline2": "考試期間不會顯示回饋",
+    "guideline3": "您可以自由在問題之間導航",
+    "guideline4": "完成後將顯示結果",
     "levels": {
-      "n5": "基礎理解",
-      "n4": "初級理解",
-      "n3": "中級理解",
-      "n2": "高級理解",
-      "n1": "專家理解"
+      "N5": "基礎日語",
+      "N4": "初級日語",
+      "N3": "中級日語",
+      "N2": "中高級日語",
+      "N1": "高級日語"
     },
     "sections": {
       "vocabulary": "詞彙",
       "grammar": "文法",
       "reading": "閱讀",
-      "listening": "聽力"
+      "kanji": "漢字"
+    },
+    "exam": {
+      "mockExam": "{{level}} 模擬考試",
+      "section": "第 {{current}}/{{total}} 部分：{{name}}",
+      "timeRemaining": "剩餘時間",
+      "question": "第 {{current}} / {{total}} 題",
+      "sectionProgress": "部分：{{current}} / {{total}}",
+      "answered": "已回答 {{count}} / {{total}}",
+      "previous": "← 上一題",
+      "next": "下一題 →",
+      "finishExam": "完成考試"
+    },
+    "results": {
+      "examComplete": "考試完成！",
+      "questionsCorrect": "答對題數",
+      "overallScore": "總分",
+      "sectionBreakdown": "各部分成績",
+      "takeAnother": "再考一次",
+      "backToDashboard": "返回儀表板"
     }
   },
   "stages": {
     "title": "情境關卡",
-    "subtitle": "透過真實對話和情境學習日語",
-    "difficulty": {
-      "beginner": "初級",
-      "intermediate": "中級",
-      "advanced": "高級"
-    },
+    "subtitle": "透過真實對話學習",
+    "selectLevel": "選擇 JLPT 級別",
+    "chooseScenario": "選擇一個情境來練習",
+    "backToLevels": "← 返回級別",
+    "stages": "{{level}} 關卡",
     "locked": "已鎖定",
-    "playAgain": "再玩一次",
     "startStage": "開始關卡",
-    "stage1": {
-      "title": "在車站",
-      "description": "學習如何購買車票和使用交通工具"
-    },
-    "stage2": {
-      "title": "在餐廳",
-      "description": "禮貌地點餐和與服務人員互動"
-    },
-    "stage3": {
-      "title": "購買衣服",
-      "description": "詢問尺寸、顏色和價格"
-    },
-    "stage4": {
-      "title": "工作面試",
-      "description": "掌握正式的商業日語"
-    },
-    "stage5": {
-      "title": "看醫生",
-      "description": "描述症狀並理解醫療建議"
-    },
-    "stage6": {
-      "title": "交朋友",
-      "description": "日常對話和社交互動"
-    },
+    "questions": "{{count}} 個問題",
     "howItWorks": {
-      "title": "關卡運作方式",
-      "step1Title": "觀看與聆聽",
-      "step1Description": "體驗來自真實日語語料庫的真實對話",
+      "title": "運作方式",
+      "step1Title": "閱讀對話",
+      "step1Description": "每個關卡呈現一個真實的對話情境",
       "step2Title": "回答問題",
-      "step2Description": "測試您對情境、語感和詞彙的理解",
-      "step3Title": "解鎖新關卡",
-      "step3Description": "完成關卡以解鎖更具挑戰性的情境"
-    }
+      "step2Description": "透過問題測試您對對話的理解",
+      "step3Title": "完成關卡",
+      "step3Description": "完成關卡以解鎖新情境"
+    },
+    "stageComplete": "關卡完成！",
+    "questionsCorrect": "答對題數",
+    "accuracy": "正確率",
+    "backToStages": "返回關卡",
+    "backToDashboard": "返回儀表板",
+    "previous": "← 上一題",
+    "next": "下一題 →",
+    "finishStage": "完成關卡",
+    "explanation": "解釋："
   },
   "profile": {
     "title": "個人檔案",
@@ -154,24 +173,6 @@
       "grammarExpert": "文法專家",
       "jlptChampion": "JLPT 冠軍"
     }
-  },
-  "settings": {
-    "title": "設定",
-    "language": "語言",
-    "selectLanguage": "選擇語言",
-    "languages": {
-      "en": "English",
-      "zh-TW": "繁體中文",
-      "zh-CN": "简体中文",
-      "ko": "한국어",
-      "es": "Español",
-      "fr": "Français",
-      "de": "Deutsch"
-    },
-    "theme": "主題",
-    "notifications": "通知",
-    "privacy": "隱私",
-    "about": "關於"
   },
   "common": {
     "loading": "載入中...",

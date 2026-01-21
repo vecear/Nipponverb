@@ -27,27 +27,42 @@
     "welcome": "Welcome back, {{name}}",
     "continueJourney": "Continue your Japanese learning journey",
     "chooseMode": "Choose Your Mode",
-    "recentActivity": "Recent Activity"
-  },
-  "modes": {
-    "basicTraining": {
-      "title": "Basic Training",
-      "description": "Master verbs, kanji, and grammar fundamentals"
-    },
-    "simulation": {
-      "title": "JLPT Simulation",
-      "description": "Take realistic mock exams to test your skills"
-    },
-    "stages": {
-      "title": "Scenario Stages",
-      "description": "Learn through real-world conversations"
+    "recentActivity": "Recent Activity",
+    "quickAccess": "Quick Access",
+    "practiceCategories": "Practice Categories",
+    "stats": {
+      "totalQuestions": "Total Questions",
+      "accuracy": "Accuracy",
+      "studyStreak": "Study Streak",
+      "level": "Current Level"
     }
   },
   "practice": {
     "title": "Practice",
-    "verbs": "Verbs",
-    "kanji": "Kanji",
-    "grammar": "Grammar",
+    "selectCategory": "Select a Category",
+    "selectLevel": "Select JLPT Level",
+    "selectSubcategory": "Select Subcategory",
+    "startPractice": "Start Practice",
+    "categories": {
+      "gojuon": {
+        "title": "Gojūon (五十音)",
+        "description": "Master Hiragana and Katakana characters",
+        "hiragana": "Hiragana",
+        "katakana": "Katakana"
+      },
+      "verbs": {
+        "title": "Verb Conjugation",
+        "description": "Practice verb forms and conjugations"
+      },
+      "grammar": {
+        "title": "Grammar Practice",
+        "description": "Master JLPT grammar patterns"
+      },
+      "kanji": {
+        "title": "Kanji Reading",
+        "description": "Learn kanji readings and meanings"
+      }
+    },
     "question": "Question {{current}} of {{total}}",
     "complete": "Practice Complete!",
     "questionsCorrect": "Questions Correct",
@@ -58,74 +73,78 @@
     "incorrect": "Incorrect"
   },
   "simulation": {
-    "title": "JLPT Simulation",
-    "subtitle": "Take a realistic mock exam to assess your Japanese proficiency",
+    "title": "JLPT Mock Exam",
+    "subtitle": "Take a realistic JLPT simulation test",
+    "selectLevel": "Select JLPT Level",
     "timeLimit": "min",
-    "startExam": "Start Exam",
+    "startExam": "Start {{level}} Exam",
     "sectionsLabel": "Sections",
     "guidelinesTitle": "Exam Guidelines",
-    "guideline1": "No feedback during the exam - results shown at the end",
-    "guideline2": "Strict time limit based on official JLPT standards",
-    "guideline3": "Questions pulled from authentic corpus data",
-    "guideline4": "Detailed performance analysis after completion",
+    "guideline1": "Answer all questions within the time limit",
+    "guideline2": "No feedback will be shown during the exam",
+    "guideline3": "You can navigate between questions freely",
+    "guideline4": "Results will be shown after completion",
     "levels": {
-      "n5": "Basic Understanding",
-      "n4": "Elementary Understanding",
-      "n3": "Intermediate Understanding",
-      "n2": "Advanced Understanding",
-      "n1": "Expert Understanding"
+      "N5": "Basic Japanese",
+      "N4": "Elementary Japanese",
+      "N3": "Intermediate Japanese",
+      "N2": "Pre-Advanced Japanese",
+      "N1": "Advanced Japanese"
     },
     "sections": {
       "vocabulary": "Vocabulary",
       "grammar": "Grammar",
       "reading": "Reading",
-      "listening": "Listening"
+      "kanji": "Kanji"
+    },
+    "exam": {
+      "mockExam": "{{level}} Mock Exam",
+      "section": "Section {{current}}/{{total}}: {{name}}",
+      "timeRemaining": "Time Remaining",
+      "question": "Question {{current}} / {{total}}",
+      "sectionProgress": "Section: {{current}} / {{total}}",
+      "answered": "{{count}} / {{total}} answered",
+      "previous": "← Previous",
+      "next": "Next →",
+      "finishExam": "Finish Exam"
+    },
+    "results": {
+      "examComplete": "Exam Complete!",
+      "questionsCorrect": "Questions Correct",
+      "overallScore": "Overall Score",
+      "sectionBreakdown": "Section Breakdown",
+      "takeAnother": "Take Another Exam",
+      "backToDashboard": "Back to Dashboard"
     }
   },
   "stages": {
     "title": "Scenario Stages",
-    "subtitle": "Learn Japanese through real-world conversations and situations",
-    "difficulty": {
-      "beginner": "Beginner",
-      "intermediate": "Intermediate",
-      "advanced": "Advanced"
-    },
+    "subtitle": "Learn through real-world conversations",
+    "selectLevel": "Select JLPT Level",
+    "chooseScenario": "Choose a scenario to practice",
+    "backToLevels": "← Back to Levels",
+    "stages": "{{level}} Stages",
     "locked": "Locked",
-    "playAgain": "Play Again",
     "startStage": "Start Stage",
-    "stage1": {
-      "title": "At the Station",
-      "description": "Learn how to buy tickets and navigate transportation"
-    },
-    "stage2": {
-      "title": "At a Restaurant",
-      "description": "Order food and interact with staff politely"
-    },
-    "stage3": {
-      "title": "Shopping for Clothes",
-      "description": "Ask about sizes, colors, and prices"
-    },
-    "stage4": {
-      "title": "Job Interview",
-      "description": "Master formal business Japanese"
-    },
-    "stage5": {
-      "title": "Visiting a Doctor",
-      "description": "Describe symptoms and understand medical advice"
-    },
-    "stage6": {
-      "title": "Making Friends",
-      "description": "Casual conversation and social interactions"
-    },
+    "questions": "{{count}} questions",
     "howItWorks": {
-      "title": "How Stages Work",
-      "step1Title": "Watch & Listen",
-      "step1Description": "Experience authentic conversations from real Japanese corpus data",
+      "title": "How It Works",
+      "step1Title": "Read the Dialogue",
+      "step1Description": "Each stage presents a realistic conversation scenario",
       "step2Title": "Answer Questions",
-      "step2Description": "Test your understanding of context, nuance, and vocabulary",
-      "step3Title": "Unlock New Stages",
-      "step3Description": "Complete stages to unlock more challenging scenarios"
-    }
+      "step2Description": "Test your comprehension with questions about the dialogue",
+      "step3Title": "Complete Stages",
+      "step3Description": "Clear stages to unlock new scenarios"
+    },
+    "stageComplete": "Stage Complete!",
+    "questionsCorrect": "Questions Correct",
+    "accuracy": "Accuracy",
+    "backToStages": "Back to Stages",
+    "backToDashboard": "Back to Dashboard",
+    "previous": "← Previous",
+    "next": "Next →",
+    "finishStage": "Finish Stage",
+    "explanation": "Explanation:"
   },
   "profile": {
     "title": "Profile",
@@ -154,45 +173,6 @@
       "grammarExpert": "Grammar Expert",
       "jlptChampion": "JLPT Champion"
     }
-  },
-  "settings": {
-    "title": "Settings",
-    "subtitle": "Manage your account and preferences",
-    "language": "Language",
-    "selectLanguage": "Select Language",
-    "languages": {
-      "en": "English",
-      "zh-TW": "繁體中文",
-      "zh-CN": "简体中文",
-      "ko": "한국어",
-      "es": "Español",
-      "fr": "Français",
-      "de": "Deutsch"
-    },
-    "accountInfo": "Account Information",
-    "currentEmail": "Current Email",
-    "loginMethod": "Login Method",
-    "emailPassword": "Email/Password",
-    "changeEmail": "Change Email",
-    "newEmail": "New Email",
-    "updateEmail": "Update Email",
-    "changePassword": "Change Password",
-    "currentPassword": "Current Password",
-    "newPassword": "New Password",
-    "confirmPassword": "Confirm Password",
-    "updatePassword": "Update Password",
-    "linkEmailPassword": "Link Email/Password Login",
-    "linkEmailPasswordDesc": "Add email and password login to your Google account for additional security",
-    "linkAccount": "Link Account",
-    "email": "Email",
-    "passwordMismatch": "Passwords do not match",
-    "passwordTooShort": "Password must be at least 6 characters",
-    "emailChangeSuccess": "Email updated successfully. Please check your new email for verification.",
-    "emailChangeError": "Failed to update email",
-    "passwordChangeSuccess": "Password updated successfully",
-    "passwordChangeError": "Failed to update password",
-    "linkAccountSuccess": "Account linked successfully. You can now login with email/password.",
-    "linkAccountError": "Failed to link account"
   },
   "common": {
     "loading": "Loading...",

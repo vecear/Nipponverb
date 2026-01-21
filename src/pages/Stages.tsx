@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { Stage, getStagesByLevel } from '../data/stages'
 
 const Stages = () => {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1' | null>(null)
   const [selectedStage, setSelectedStage] = useState<Stage | null>(null)
@@ -75,10 +77,10 @@ const Stages = () => {
           className="text-center mb-12"
         >
           <h1 className="text-5xl font-zen font-bold mb-4 text-gradient">
-            Scenario Stages
+            {t('stages.title')}
           </h1>
           <p className="text-xl text-white/60">
-            Learn through real-world conversations
+            {t('stages.subtitle')}
           </p>
         </motion.div>
 
@@ -95,7 +97,7 @@ const Stages = () => {
                 className="card-interactive p-6 text-center"
               >
                 <div className="text-3xl font-bold mb-2">{level}</div>
-                <div className="text-sm text-white/60">{levelStages.length} stages</div>
+                <div className="text-sm text-white/60">{levelStages.length} {t('stages.stages', { level })}</div>
               </motion.button>
             )
           })}
@@ -107,32 +109,32 @@ const Stages = () => {
           transition={{ delay: 0.5 }}
           className="card"
         >
-          <h3 className="text-2xl font-zen font-bold mb-4">How It Works</h3>
+          <h3 className="text-2xl font-zen font-bold mb-4">{t('stages.howItWorks.title')}</h3>
           <div className="space-y-4 text-white/80">
             <div className="flex items-start space-x-4">
               <div className="text-3xl">🎬</div>
               <div>
-                <h4 className="font-semibold mb-1">Read the Dialogue</h4>
+                <h4 className="font-semibold mb-1">{t('stages.howItWorks.step1Title')}</h4>
                 <p className="text-white/60">
-                  Each stage presents a realistic conversation scenario
+                  {t('stages.howItWorks.step1Description')}
                 </p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <div className="text-3xl">❓</div>
               <div>
-                <h4 className="font-semibold mb-1">Answer Questions</h4>
+                <h4 className="font-semibold mb-1">{t('stages.howItWorks.step2Title')}</h4>
                 <p className="text-white/60">
-                  Test your comprehension with questions about the dialogue
+                  {t('stages.howItWorks.step2Description')}
                 </p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <div className="text-3xl">🏆</div>
               <div>
-                <h4 className="font-semibold mb-1">Complete Stages</h4>
+                <h4 className="font-semibold mb-1">{t('stages.howItWorks.step3Title')}</h4>
                 <p className="text-white/60">
-                  Clear stages to unlock new scenarios
+                  {t('stages.howItWorks.step3Description')}
                 </p>
               </div>
             </div>
@@ -157,13 +159,13 @@ const Stages = () => {
             onClick={() => setSelectedLevel(null)}
             className="btn-secondary mb-4"
           >
-            ← Back to Levels
+            {t('stages.backToLevels')}
           </button>
           <h1 className="text-4xl font-zen font-bold mb-2">
-            {selectedLevel} Stages
+            {t('stages.stages', { level: selectedLevel })}
           </h1>
           <p className="text-white/60">
-            Choose a scenario to practice
+            {t('stages.chooseScenario')}
           </p>
         </motion.div>
 
@@ -199,7 +201,7 @@ const Stages = () => {
                 <p className="text-white/60">{stage.description}</p>
 
                 <div className="text-sm text-white/60">
-                  {stage.questions.length} questions
+                  {t('stages.questions', { count: stage.questions.length })}
                 </div>
 
                 <button
@@ -210,7 +212,7 @@ const Stages = () => {
                     : 'btn-primary'
                     }`}
                 >
-                  {stage.locked ? 'Locked' : 'Start Stage'}
+                  {stage.locked ? t('stages.locked') : t('stages.startStage')}
                 </button>
               </div>
             </motion.div>
@@ -232,7 +234,7 @@ const Stages = () => {
       >
         <div className="card text-center">
           <h1 className="text-4xl font-zen font-bold mb-4 text-gradient">
-            Stage Complete!
+            {t('stages.stageComplete')}
           </h1>
 
           <div className="grid grid-cols-2 gap-6 my-8">
@@ -240,26 +242,26 @@ const Stages = () => {
               <div className="text-5xl font-bold text-sakura-pink mb-2">
                 {results.score}/{results.total}
               </div>
-              <div className="text-white/60">Questions Correct</div>
+              <div className="text-white/60">{t('stages.questionsCorrect')}</div>
             </div>
 
             <div className="glass p-6 rounded-xl">
               <div className="text-5xl font-bold text-electric-cyan mb-2">
                 {results.percentage}%
               </div>
-              <div className="text-white/60">Accuracy</div>
+              <div className="text-white/60">{t('stages.accuracy')}</div>
             </div>
           </div>
 
           <div className="space-y-4">
             <button onClick={resetStage} className="btn-primary w-full">
-              Back to Stages
+              {t('stages.backToStages')}
             </button>
             <button
               onClick={() => navigate('/')}
               className="btn-secondary w-full"
             >
-              Back to Dashboard
+              {t('stages.backToDashboard')}
             </button>
           </div>
         </div>
@@ -355,7 +357,7 @@ const Stages = () => {
               className="mt-4 p-4 bg-white/5 rounded-xl"
             >
               <div className="text-sm text-white/80">
-                <strong>Explanation:</strong> {currentQuestion.explanation}
+                <strong>{t('stages.explanation')}</strong> {currentQuestion.explanation}
               </div>
             </motion.div>
           )}
@@ -369,7 +371,7 @@ const Stages = () => {
           disabled={currentQuestionIndex === 0}
           className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          ← Previous
+          {t('stages.previous')}
         </button>
 
         {currentQuestionIndex === selectedStage.questions.length - 1 ? (
@@ -377,11 +379,11 @@ const Stages = () => {
             onClick={() => setShowResults(true)}
             className="btn-primary"
           >
-            Finish Stage
+            {t('stages.finishStage')}
           </button>
         ) : (
           <button onClick={nextQuestion} className="btn-primary">
-            Next →
+            {t('stages.next')}
           </button>
         )}
       </div>

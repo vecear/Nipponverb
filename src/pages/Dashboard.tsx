@@ -1,36 +1,38 @@
 import { useAuth } from '../contexts/AuthContext'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import StatsCard from '../components/StatsCard'
 
 const Dashboard = () => {
+  const { t } = useTranslation()
   const { currentUser } = useAuth()
 
   const modes = [
     {
-      title: 'Gojūon (五十音)',
-      description: 'Master Hiragana and Katakana characters',
+      title: t('practice.categories.gojuon.title'),
+      description: t('practice.categories.gojuon.description'),
       icon: 'あア',
       path: '/practice/gojuon',
       color: 'from-green-500 to-teal-500',
     },
     {
-      title: 'Verb Conjugation',
-      description: 'Practice verb forms and conjugations',
+      title: t('practice.categories.verbs.title'),
+      description: t('practice.categories.verbs.description'),
       icon: '✍️',
       path: '/practice/verbs',
       color: 'from-blue-500 to-cyan-500',
     },
     {
-      title: 'Grammar Practice',
-      description: 'Master JLPT grammar patterns',
+      title: t('practice.categories.grammar.title'),
+      description: t('practice.categories.grammar.description'),
       icon: '📖',
       path: '/practice/grammar',
       color: 'from-purple-500 to-pink-500',
     },
     {
-      title: 'Kanji Reading',
-      description: 'Learn kanji readings and meanings',
+      title: t('practice.categories.kanji.title'),
+      description: t('practice.categories.kanji.description'),
       icon: '漢',
       path: '/practice/kanji',
       color: 'from-orange-500 to-red-500',
@@ -46,10 +48,10 @@ const Dashboard = () => {
         className="text-center py-12"
       >
         <h1 className="text-5xl font-zen font-bold mb-4">
-          Welcome back, <span className="text-gradient">{currentUser?.displayName || 'Student'}</span>
+          {t('dashboard.welcome', { name: currentUser?.displayName || 'Student' })}
         </h1>
         <p className="text-xl text-white/60">
-          Continue your Japanese learning journey
+          {t('dashboard.continueJourney')}
         </p>
       </motion.div>
 
@@ -79,7 +81,7 @@ const Dashboard = () => {
       </div>
 
       <div>
-        <h2 className="text-3xl font-zen font-bold mb-6">Practice Categories</h2>
+        <h2 className="text-3xl font-zen font-bold mb-6">{t('dashboard.practiceCategories')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {modes.map((mode, index) => (
             <motion.div
@@ -109,7 +111,7 @@ const Dashboard = () => {
 
       {/* Recent Activity */}
       <div>
-        <h2 className="text-3xl font-zen font-bold mb-6">Quick Access</h2>
+        <h2 className="text-3xl font-zen font-bold mb-6">{t('dashboard.quickAccess')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Link to="/simulation">
             <motion.div
@@ -120,8 +122,8 @@ const Dashboard = () => {
               <div className="flex items-center space-x-4">
                 <div className="text-5xl">📝</div>
                 <div>
-                  <h3 className="text-xl font-bold mb-1">JLPT Mock Exam</h3>
-                  <p className="text-white/60">Take a realistic JLPT simulation test</p>
+                  <h3 className="text-xl font-bold mb-1">{t('simulation.title')}</h3>
+                  <p className="text-white/60">{t('simulation.subtitle')}</p>
                 </div>
               </div>
             </motion.div>
@@ -136,8 +138,8 @@ const Dashboard = () => {
               <div className="flex items-center space-x-4">
                 <div className="text-5xl">🎭</div>
                 <div>
-                  <h3 className="text-xl font-bold mb-1">Scenario Stages</h3>
-                  <p className="text-white/60">Learn through real-world conversations</p>
+                  <h3 className="text-xl font-bold mb-1">{t('stages.title')}</h3>
+                  <p className="text-white/60">{t('stages.subtitle')}</p>
                 </div>
               </div>
             </motion.div>

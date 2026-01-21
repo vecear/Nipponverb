@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { generateJLPTExam, JLPTExam } from '../data/jlpt-exams'
 
 const Simulation = () => {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1' | null>(null)
   const [exam, setExam] = useState<JLPTExam | null>(null)
@@ -115,11 +117,11 @@ const Simulation = () => {
   // Level selection screen
   if (!examStarted) {
     const levels = [
-      { level: 'N5' as const, time: 75, desc: 'Basic Japanese' },
-      { level: 'N4' as const, time: 90, desc: 'Elementary Japanese' },
-      { level: 'N3' as const, time: 105, desc: 'Intermediate Japanese' },
-      { level: 'N2' as const, time: 125, desc: 'Pre-Advanced Japanese' },
-      { level: 'N1' as const, time: 170, desc: 'Advanced Japanese' },
+      { level: 'N5' as const, time: 75, desc: t('simulation.levels.N5') },
+      { level: 'N4' as const, time: 90, desc: t('simulation.levels.N4') },
+      { level: 'N3' as const, time: 105, desc: t('simulation.levels.N3') },
+      { level: 'N2' as const, time: 125, desc: t('simulation.levels.N2') },
+      { level: 'N1' as const, time: 170, desc: t('simulation.levels.N1') },
     ]
 
     return (
@@ -130,10 +132,10 @@ const Simulation = () => {
           className="text-center mb-12"
         >
           <h1 className="text-5xl font-zen font-bold mb-4 text-gradient">
-            JLPT Mock Exam
+            {t('simulation.title')}
           </h1>
           <p className="text-xl text-white/60">
-            Take a realistic JLPT simulation test
+            {t('simulation.subtitle')}
           </p>
         </motion.div>
 
@@ -150,18 +152,18 @@ const Simulation = () => {
                 <div className="flex items-center justify-between">
                   <h2 className="text-3xl font-bold">{level.level}</h2>
                   <div className="px-3 py-1 bg-sakura-pink/20 text-sakura-pink rounded-full text-sm">
-                    {level.time} min
+                    {level.time} {t('simulation.timeLimit')}
                   </div>
                 </div>
 
                 <p className="text-white/60">{level.desc}</p>
 
                 <div className="space-y-2">
-                  <p className="text-sm font-semibold text-white/80">Sections:</p>
+                  <p className="text-sm font-semibold text-white/80">{t('simulation.sectionsLabel')}:</p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Vocabulary</span>
-                    <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Grammar</span>
-                    <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Reading</span>
+                    <span className="px-3 py-1 bg-white/10 rounded-full text-sm">{t('simulation.sections.vocabulary')}</span>
+                    <span className="px-3 py-1 bg-white/10 rounded-full text-sm">{t('simulation.sections.grammar')}</span>
+                    <span className="px-3 py-1 bg-white/10 rounded-full text-sm">{t('simulation.sections.reading')}</span>
                   </div>
                 </div>
 
@@ -169,7 +171,7 @@ const Simulation = () => {
                   onClick={() => startExam(level.level)}
                   className="btn-primary w-full mt-4"
                 >
-                  Start {level.level} Exam
+                  {t('simulation.startExam', { level: level.level })}
                 </button>
               </div>
             </motion.div>
@@ -182,23 +184,23 @@ const Simulation = () => {
           transition={{ delay: 0.5 }}
           className="card"
         >
-          <h3 className="text-2xl font-zen font-bold mb-4">Exam Guidelines</h3>
+          <h3 className="text-2xl font-zen font-bold mb-4">{t('simulation.guidelinesTitle')}</h3>
           <ul className="space-y-3 text-white/80">
             <li className="flex items-start space-x-3">
               <span className="text-sakura-pink mt-1">•</span>
-              <span>Answer all questions within the time limit</span>
+              <span>{t('simulation.guideline1')}</span>
             </li>
             <li className="flex items-start space-x-3">
               <span className="text-sakura-pink mt-1">•</span>
-              <span>No feedback will be shown during the exam</span>
+              <span>{t('simulation.guideline2')}</span>
             </li>
             <li className="flex items-start space-x-3">
               <span className="text-sakura-pink mt-1">•</span>
-              <span>You can navigate between questions freely</span>
+              <span>{t('simulation.guideline3')}</span>
             </li>
             <li className="flex items-start space-x-3">
               <span className="text-sakura-pink mt-1">•</span>
-              <span>Results will be shown after completion</span>
+              <span>{t('simulation.guideline4')}</span>
             </li>
           </ul>
         </motion.div>
@@ -218,7 +220,7 @@ const Simulation = () => {
       >
         <div className="card text-center">
           <h1 className="text-4xl font-zen font-bold mb-4 text-gradient">
-            Exam Complete!
+            {t('simulation.results.examComplete')}
           </h1>
 
           <div className="grid grid-cols-2 gap-6 my-8">
@@ -226,19 +228,19 @@ const Simulation = () => {
               <div className="text-5xl font-bold text-sakura-pink mb-2">
                 {results.score}/{results.total}
               </div>
-              <div className="text-white/60">Questions Correct</div>
+              <div className="text-white/60">{t('simulation.results.questionsCorrect')}</div>
             </div>
 
             <div className="glass p-6 rounded-xl">
               <div className="text-5xl font-bold text-electric-cyan mb-2">
                 {results.percentage}%
               </div>
-              <div className="text-white/60">Overall Score</div>
+              <div className="text-white/60">{t('simulation.results.overallScore')}</div>
             </div>
           </div>
 
           <div className="text-left space-y-4 mb-8">
-            <h3 className="text-2xl font-bold">Section Breakdown</h3>
+            <h3 className="text-2xl font-bold">{t('simulation.results.sectionBreakdown')}</h3>
             {results.sectionScores.map((section, idx) => (
               <div key={idx} className="glass p-4 rounded-xl">
                 <div className="flex items-center justify-between mb-2">
@@ -263,13 +265,13 @@ const Simulation = () => {
               }}
               className="btn-primary w-full"
             >
-              Take Another Exam
+              {t('simulation.results.takeAnother')}
             </button>
             <button
               onClick={() => navigate('/')}
               className="btn-secondary w-full"
             >
-              Back to Dashboard
+              {t('simulation.results.backToDashboard')}
             </button>
           </div>
         </div>
@@ -293,16 +295,16 @@ const Simulation = () => {
       <div className="card mb-6">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-2xl font-bold">{selectedLevel} Mock Exam</h2>
+            <h2 className="text-2xl font-bold">{t('simulation.exam.mockExam', { level: selectedLevel })}</h2>
             <p className="text-white/60">
-              Section {currentSectionIndex + 1}/{exam.sections.length}: {currentSection.title}
+              {t('simulation.exam.section', { current: currentSectionIndex + 1, total: exam.sections.length, name: currentSection.title })}
             </p>
           </div>
           <div className="text-right">
             <div className={`text-3xl font-bold ${timeRemaining < 300 ? 'text-red-500' : 'text-electric-cyan'}`}>
               {formatTime(timeRemaining)}
             </div>
-            <div className="text-sm text-white/60">Time Remaining</div>
+            <div className="text-sm text-white/60">{t('simulation.exam.timeRemaining')}</div>
           </div>
         </div>
       </div>
@@ -311,10 +313,10 @@ const Simulation = () => {
       <div className="mb-6">
         <div className="flex items-center justify-between mb-2">
           <span className="text-white/60">
-            Question {currentOverallIndex} / {totalQuestions}
+            {t('simulation.exam.question', { current: currentOverallIndex, total: totalQuestions })}
           </span>
           <span className="text-white/60">
-            Section: {currentQuestionIndex + 1} / {currentSection.questions.length}
+            {t('simulation.exam.sectionProgress', { current: currentQuestionIndex + 1, total: currentSection.questions.length })}
           </span>
         </div>
         <div className="w-full bg-white/10 rounded-full h-2">
@@ -363,21 +365,21 @@ const Simulation = () => {
           disabled={currentSectionIndex === 0 && currentQuestionIndex === 0}
           className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          ← Previous
+          {t('simulation.exam.previous')}
         </button>
 
         <div className="text-white/60">
-          {Object.keys(answers).length} / {totalQuestions} answered
+          {t('simulation.exam.answered', { count: Object.keys(answers).length, total: totalQuestions })}
         </div>
 
         {currentSectionIndex === exam.sections.length - 1 &&
           currentQuestionIndex === currentSection.questions.length - 1 ? (
           <button onClick={finishExam} className="btn-primary">
-            Finish Exam
+            {t('simulation.exam.finishExam')}
           </button>
         ) : (
           <button onClick={nextQuestion} className="btn-primary">
-            Next →
+            {t('simulation.exam.next')}
           </button>
         )}
       </div>
