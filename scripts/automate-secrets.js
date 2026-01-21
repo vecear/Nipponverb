@@ -34,7 +34,11 @@ async function setupSecrets() {
 
         // 2. Read Service Account JSON
         const files = fs.readdirSync('.');
-        const saFile = files.find(f => f.startsWith('nipponverb-firebase-adminsdk') && f.endsWith('.json'));
+        const saFile = files.find(f =>
+            f.startsWith('nipponverb') &&
+            f.endsWith('.json') &&
+            !['firebase.json', 'firestore.indexes.json', 'firestore.rules'].includes(f)
+        );
 
         if (!saFile) {
             console.warn('⚠️ Firebase Service Account JSON not found. Will skip FIREBASE_SERVICE_ACCOUNT_NIPPONVERB.');
