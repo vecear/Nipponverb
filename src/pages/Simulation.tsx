@@ -142,30 +142,30 @@ const Simulation = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.05, duration: 0.2 }}
-              className="card-interactive"
+              className="card-interactive !p-4"
             >
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <h2 className="text-3xl font-bold">{level.level}</h2>
-                  <div className="px-3 py-1 bg-sakura-pink/20 text-sakura-pink rounded-full text-sm">
+                  <h2 className="text-2xl font-bold">{level.level}</h2>
+                  <div className="px-2 py-0.5 bg-sakura-pink/20 text-sakura-pink rounded-full text-xs">
                     {level.time} {t('simulation.timeLimit')}
                   </div>
                 </div>
 
-                <p className="text-white/60">{level.desc}</p>
+                <p className="text-white/60 text-sm">{level.desc}</p>
 
-                <div className="space-y-2">
-                  <p className="text-sm font-semibold text-white/80">{t('simulation.sectionsLabel')}:</p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-white/10 rounded-full text-sm">{t('simulation.sections.vocabulary')}</span>
-                    <span className="px-3 py-1 bg-white/10 rounded-full text-sm">{t('simulation.sections.grammar')}</span>
-                    <span className="px-3 py-1 bg-white/10 rounded-full text-sm">{t('simulation.sections.reading')}</span>
+                <div className="space-y-1.5">
+                  <p className="text-xs font-semibold text-white/80">{t('simulation.sectionsLabel')}:</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    <span className="px-2 py-0.5 bg-white/10 rounded-full text-xs">{t('simulation.sections.vocabulary')}</span>
+                    <span className="px-2 py-0.5 bg-white/10 rounded-full text-xs">{t('simulation.sections.grammar')}</span>
+                    <span className="px-2 py-0.5 bg-white/10 rounded-full text-xs">{t('simulation.sections.reading')}</span>
                   </div>
                 </div>
 
                 <button
                   onClick={() => startExam(level.level)}
-                  className="btn-primary w-full mt-4"
+                  className="btn-primary w-full mt-2 !py-2 !text-sm"
                 >
                   {t('simulation.startExam', { level: level.level })}
                 </button>

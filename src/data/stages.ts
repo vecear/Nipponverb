@@ -4,7 +4,6 @@ import { Question } from '../types'
 export interface DialogueLine {
     speaker: string
     text: string
-    translation?: string
 }
 
 export interface Stage {
@@ -29,24 +28,20 @@ export const stages: Stage[] = [
         locked: false,
         dialogue: [
             {
-                speaker: 'Customer',
+                speaker: '客',
                 text: 'すみません、東京までの切符をください。',
-                translation: 'Excuse me, a ticket to Tokyo please.',
             },
             {
-                speaker: 'Staff',
+                speaker: '駅員',
                 text: '片道ですか、往復ですか。',
-                translation: 'One-way or round-trip?',
             },
             {
-                speaker: 'Customer',
+                speaker: '客',
                 text: '往復でお願いします。',
-                translation: 'Round-trip please.',
             },
             {
-                speaker: 'Staff',
+                speaker: '駅員',
                 text: 'かしこまりました。三千円になります。',
-                translation: 'Certainly. That will be 3,000 yen.',
             },
         ],
         questions: [
@@ -85,24 +80,20 @@ export const stages: Stage[] = [
         locked: false,
         dialogue: [
             {
-                speaker: 'Waiter',
+                speaker: '店員',
                 text: 'いらっしゃいませ。ご注文はお決まりですか。',
-                translation: 'Welcome. Have you decided on your order?',
             },
             {
-                speaker: 'Customer',
+                speaker: '客',
                 text: 'はい、ラーメンとギョーザをお願いします。',
-                translation: 'Yes, ramen and gyoza please.',
             },
             {
-                speaker: 'Waiter',
+                speaker: '店員',
                 text: 'お飲み物はいかがですか。',
-                translation: 'How about drinks?',
             },
             {
-                speaker: 'Customer',
+                speaker: '客',
                 text: '水で大丈夫です。',
-                translation: 'Water is fine.',
             },
         ],
         questions: [
@@ -133,29 +124,24 @@ export const stages: Stage[] = [
         locked: false,
         dialogue: [
             {
-                speaker: 'Yuki',
+                speaker: 'ユキ',
                 text: '今週末、映画を見に行かない？',
-                translation: "Shall we go see a movie this weekend?",
             },
             {
-                speaker: 'Takeshi',
+                speaker: 'タケシ',
                 text: 'いいね！何を見たい？',
-                translation: 'Sounds good! What do you want to see?',
             },
             {
-                speaker: 'Yuki',
+                speaker: 'ユキ',
                 text: '新しいアクション映画が面白そうだよ。',
-                translation: 'The new action movie looks interesting.',
             },
             {
-                speaker: 'Takeshi',
+                speaker: 'タケシ',
                 text: 'じゃあ、土曜日の午後はどう？',
-                translation: 'How about Saturday afternoon then?',
             },
             {
-                speaker: 'Yuki',
+                speaker: 'ユキ',
                 text: '完璧！じゃあ、二時に駅で会おう。',
-                translation: "Perfect! Let's meet at the station at 2 o'clock.",
             },
         ],
         questions: [
@@ -199,29 +185,24 @@ export const stages: Stage[] = [
         locked: false,
         dialogue: [
             {
-                speaker: 'Doctor',
+                speaker: '医者',
                 text: 'どうされましたか。',
-                translation: "What's wrong?",
             },
             {
-                speaker: 'Patient',
+                speaker: '患者',
                 text: '昨日から頭が痛くて、熱もあります。',
-                translation: "I've had a headache since yesterday and I also have a fever.",
             },
             {
-                speaker: 'Doctor',
+                speaker: '医者',
                 text: 'そうですか。のども痛いですか。',
-                translation: 'I see. Does your throat hurt too?',
             },
             {
-                speaker: 'Patient',
+                speaker: '患者',
                 text: 'はい、少し痛いです。',
-                translation: 'Yes, it hurts a little.',
             },
             {
-                speaker: 'Doctor',
+                speaker: '医者',
                 text: '風邪ですね。薬を出しますから、ゆっくり休んでください。',
-                translation: "It's a cold. I'll prescribe medicine, so please rest well.",
             },
         ],
         questions: [
@@ -257,24 +238,20 @@ export const stages: Stage[] = [
         locked: false,
         dialogue: [
             {
-                speaker: 'Interviewer',
+                speaker: '面接官',
                 text: '自己紹介をお願いします。',
-                translation: 'Please introduce yourself.',
             },
             {
-                speaker: 'Applicant',
+                speaker: '応募者',
                 text: 'はい。田中太郎と申します。大学で経済学を専攻しました。',
-                translation: "Yes. My name is Taro Tanaka. I majored in economics at university.",
             },
             {
-                speaker: 'Interviewer',
+                speaker: '面接官',
                 text: 'なぜ弊社を志望されましたか。',
-                translation: 'Why did you apply to our company?',
             },
             {
-                speaker: 'Applicant',
+                speaker: '応募者',
                 text: '御社の国際的な事業展開に魅力を感じました。',
-                translation: 'I was attracted to your company\'s international business development.',
             },
         ],
         questions: [

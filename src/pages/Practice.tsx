@@ -14,7 +14,7 @@ type PracticeCategory = 'gojuon' | 'verbs' | 'grammar' | 'kanji'
 type GojuonSubcategory = 'hiragana' | 'katakana'
 
 const Practice = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const { category } = useParams<{ category: string }>()
   const navigate = useNavigate()
 
@@ -57,7 +57,7 @@ const Practice = () => {
           q = generateGrammarQuestion(level)
           break
         case 'kanji':
-          q = generateKanjiQuestion(level, Math.random() > 0.5 ? 'reading' : 'meaning')
+          q = generateKanjiQuestion(level, Math.random() > 0.5 ? 'reading' : 'meaning', i18n.language)
           break
         default:
           q = generateGrammarQuestion(level)

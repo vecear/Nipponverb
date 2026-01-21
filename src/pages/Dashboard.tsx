@@ -154,6 +154,23 @@ const Dashboard = () => {
                 </div>
               </motion.div>
             </Link>
+
+            <Link to="/verbs">
+              <motion.div
+                initial={{ opacity: 0, x: 10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.2, delay: 0.1 }}
+                className="card-interactive p-3"
+              >
+                <div className="flex items-center space-x-3">
+                  <div className="text-2xl md:text-3xl">📖</div>
+                  <div>
+                    <h3 className="text-sm md:text-base font-bold">JLPT 常用動詞</h3>
+                    <p className="text-[10px] text-white/60">動詞變化速查表</p>
+                  </div>
+                </div>
+              </motion.div>
+            </Link>
           </div>
         </div>
       </div>

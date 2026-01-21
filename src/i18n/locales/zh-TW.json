@@ -55,7 +55,23 @@
       },
       "verbs": {
         "title": "動詞變化",
-        "description": "練習動詞形式和變化"
+        "description": "練習動詞形式和變化",
+        "forms": {
+          "masu": "ます形 (敬體)",
+          "te": "て形 (連接)",
+          "ta": "た形 (過去)",
+          "nai": "ない形 (否定)",
+          "potential": "可能形 (能力)",
+          "passive": "受身形 (被動)",
+          "causative": "使役形 (讓/叫)",
+          "volitional": "意向形 (意志)"
+        },
+        "example": "例句",
+        "searchPlaceholder": "搜尋動詞...",
+        "noResults": "找不到相符的動詞",
+        "selectPrompt": "請從左側列表選擇一個動詞",
+        "viewDetails": "查看其詳細的變化形式",
+        "type": "動詞類型"
       },
       "grammar": {
         "title": "文法練習",

@@ -288,11 +288,6 @@ const Stages = () => {
                 {line.speaker}:
               </div>
               <div className="text-lg mb-2">{line.text}</div>
-              {line.translation && (
-                <div className="text-sm text-white/60 italic">
-                  {line.translation}
-                </div>
-              )}
             </motion.div>
           ))}
         </div>
