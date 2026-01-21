@@ -1,56 +1,21 @@
-import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useState } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useTranslation } from 'react-i18next'
 import QuestionCard from '../components/QuestionCard'
 import { usePracticeStore } from '../store/usePracticeStore'
 import { Question } from '../types'
+import { generateGojuonQuestion } from '../data/gojuon'
+import { generateVerbQuestion } from '../data/verbs'
+import { generateGrammarQuestion } from '../data/grammar'
+import { generateKanjiQuestion } from '../data/kanji'
 
-// Mock data - will be replaced with Firestore data
-const mockQuestions: Record<string, Question[]> = {
-  verbs: [
-    {
-      id: '1',
-      stem: '明日、学校へ___。',
-      correct: '行きます',
-      options: ['行きます', '行くい', '行った', '行いて'],
-      explanation: 'Polite non-past form is required for future actions in formal contexts.',
-      level: 'N5',
-    },
-    {
-      id: '2',
-      stem: '昨日、友達に___。',
-      correct: '会いました',
-      options: ['会いました', '会います', '会う', '会って'],
-      explanation: 'Past tense polite form is needed for actions that already happened.',
-      level: 'N5',
-    },
-  ],
-  kanji: [
-    {
-      id: '1',
-      stem: '「学校」の読み方は?',
-      correct: 'がっこう',
-      options: ['がっこう', 'がくこう', 'がっこ', 'がくこ'],
-      explanation: '学校 (がっこう) means "school".',
-      level: 'N5',
-    },
-  ],
-  grammar: [
-    {
-      id: '1',
-      stem: '日本語___勉強しています。',
-      correct: 'を',
-      options: ['を', 'が', 'に', 'で'],
-      explanation: 'The particle を marks the direct object of an action.',
-      level: 'N5',
-    },
-  ],
-}
+type PracticeCategory = 'gojuon' | 'verbs' | 'grammar' | 'kanji'
+type GojuonSubcategory = 'hiragana' | 'katakana'
 
 const Practice = () => {
-  const { t } = useTranslation()
   const { category } = useParams<{ category: string }>()
+  const navigate = useNavigate()
+
   const {
     currentQuestion,
     currentIndex,
@@ -64,12 +29,54 @@ const Practice = () => {
   } = usePracticeStore()
 
   const [showResults, setShowResults] = useState(false)
+  const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1'>('N5')
+  const [selectedSubcategory, setSelectedSubcategory] = useState<GojuonSubcategory>('hiragana')
+  const [showCategorySelect, setShowCategorySelect] = useState(true)
 
-  useEffect(() => {
-    const categoryQuestions = mockQuestions[category || 'verbs'] || []
-    setQuestions(categoryQuestions)
+  // Generate questions based on category
+  const generateQuestions = (
+    cat: PracticeCategory,
+    level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1',
+    count: number = 10
+  ): Question[] => {
+    const generatedQuestions: Question[] = []
+
+    for (let i = 0; i < count; i++) {
+      let q
+
+      switch (cat) {
+        case 'gojuon':
+          q = generateGojuonQuestion(selectedSubcategory, Math.random() > 0.5 ? 'char-to-romaji' : 'romaji-to-char')
+          break
+        case 'verbs':
+          q = generateVerbQuestion(level)
+          break
+        case 'grammar':
+          q = generateGrammarQuestion(level)
+          break
+        case 'kanji':
+          q = generateKanjiQuestion(level, Math.random() > 0.5 ? 'reading' : 'meaning')
+          break
+        default:
+          q = generateGrammarQuestion(level)
+      }
+
+      generatedQuestions.push({
+        id: `${cat}_${i}`,
+        ...q,
+      })
+    }
+
+    return generatedQuestions
+  }
+
+  const startPractice = () => {
+    const cat = category as PracticeCategory
+    const newQuestions = generateQuestions(cat, selectedLevel, 10)
+    setQuestions(newQuestions)
+    setShowCategorySelect(false)
     setShowResults(false)
-  }, [category, setQuestions])
+  }
 
   const handleAnswer = (answer: string) => {
     checkAnswer(answer)
@@ -86,11 +93,81 @@ const Practice = () => {
   }
 
   const handleRestart = () => {
-    const categoryQuestions = mockQuestions[category || 'verbs'] || []
-    setQuestions(categoryQuestions)
-    setShowResults(false)
+    setShowCategorySelect(true)
+    resetPractice()
   }
 
+  // Category selection screen
+  if (showCategorySelect) {
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="max-w-2xl mx-auto space-y-8"
+      >
+        <div className="card">
+          <h1 className="text-4xl font-zen font-bold mb-6 text-gradient capitalize">
+            {category} Practice
+          </h1>
+
+          {category === 'gojuon' && (
+            <div className="mb-6">
+              <label className="block text-lg font-semibold mb-3">Select Type:</label>
+              <div className="grid grid-cols-2 gap-4">
+                {(['hiragana', 'katakana'] as GojuonSubcategory[]).map((type) => (
+                  <button
+                    key={type}
+                    onClick={() => setSelectedSubcategory(type)}
+                    className={`p-4 rounded-xl transition-all ${selectedSubcategory === type
+                      ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
+                      : 'glass hover:bg-white/10'
+                      }`}
+                  >
+                    <div className="text-2xl mb-2">{type === 'hiragana' ? 'あ' : 'ア'}</div>
+                    <div className="font-semibold capitalize">{type}</div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {category !== 'gojuon' && (
+            <div className="mb-6">
+              <label className="block text-lg font-semibold mb-3">Select JLPT Level:</label>
+              <div className="grid grid-cols-5 gap-3">
+                {(['N5', 'N4', 'N3', 'N2', 'N1'] as const).map((level) => (
+                  <button
+                    key={level}
+                    onClick={() => setSelectedLevel(level)}
+                    className={`p-4 rounded-xl transition-all ${selectedLevel === level
+                      ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
+                      : 'glass hover:bg-white/10'
+                      }`}
+                  >
+                    <div className="text-xl font-bold">{level}</div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="space-y-4">
+            <button onClick={startPractice} className="btn-primary w-full text-lg py-4">
+              Start Practice (10 Questions)
+            </button>
+            <button
+              onClick={() => navigate('/')}
+              className="btn-secondary w-full"
+            >
+              Back to Dashboard
+            </button>
+          </div>
+        </div>
+      </motion.div>
+    )
+  }
+
+  // Results screen
   if (showResults) {
     const accuracy = totalAttempts > 0 ? Math.round((score / totalAttempts) * 100) : 0
 
@@ -102,7 +179,7 @@ const Practice = () => {
       >
         <div className="card">
           <h1 className="text-4xl font-zen font-bold mb-4 text-gradient">
-            {t('practice.complete')}
+            Practice Complete!
           </h1>
 
           <div className="grid grid-cols-2 gap-6 my-8">
@@ -110,26 +187,26 @@ const Practice = () => {
               <div className="text-5xl font-bold text-sakura-pink mb-2">
                 {score}/{totalAttempts}
               </div>
-              <div className="text-white/60">{t('practice.questionsCorrect')}</div>
+              <div className="text-white/60">Questions Correct</div>
             </div>
 
             <div className="glass p-6 rounded-xl">
               <div className="text-5xl font-bold text-electric-cyan mb-2">
                 {accuracy}%
               </div>
-              <div className="text-white/60">{t('practice.accuracy')}</div>
+              <div className="text-white/60">Accuracy</div>
             </div>
           </div>
 
           <div className="space-y-4">
             <button onClick={handleRestart} className="btn-primary w-full">
-              {t('practice.practiceAgain')}
+              Practice Again
             </button>
             <button
-              onClick={() => window.history.back()}
+              onClick={() => navigate('/')}
               className="btn-secondary w-full"
             >
-              {t('practice.backToDashboard')}
+              Back to Dashboard
             </button>
           </div>
         </div>
@@ -137,15 +214,16 @@ const Practice = () => {
     )
   }
 
+  // Practice screen
   return (
     <div className="max-w-4xl mx-auto">
       <div className="mb-8">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-3xl font-zen font-bold capitalize">
-            {category} {t('practice.title')}
+            {category} Practice
           </h1>
           <div className="text-white/60">
-            {t('practice.question', { current: currentIndex + 1, total: questions.length })}
+            Question {currentIndex + 1} / {questions.length}
           </div>
         </div>
 

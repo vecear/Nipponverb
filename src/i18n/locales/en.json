@@ -157,6 +157,7 @@
   },
   "settings": {
     "title": "Settings",
+    "subtitle": "Manage your account and preferences",
     "language": "Language",
     "selectLanguage": "Select Language",
     "languages": {
@@ -168,10 +169,30 @@
       "fr": "Français",
       "de": "Deutsch"
     },
-    "theme": "Theme",
-    "notifications": "Notifications",
-    "privacy": "Privacy",
-    "about": "About"
+    "accountInfo": "Account Information",
+    "currentEmail": "Current Email",
+    "loginMethod": "Login Method",
+    "emailPassword": "Email/Password",
+    "changeEmail": "Change Email",
+    "newEmail": "New Email",
+    "updateEmail": "Update Email",
+    "changePassword": "Change Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "updatePassword": "Update Password",
+    "linkEmailPassword": "Link Email/Password Login",
+    "linkEmailPasswordDesc": "Add email and password login to your Google account for additional security",
+    "linkAccount": "Link Account",
+    "email": "Email",
+    "passwordMismatch": "Passwords do not match",
+    "passwordTooShort": "Password must be at least 6 characters",
+    "emailChangeSuccess": "Email updated successfully. Please check your new email for verification.",
+    "emailChangeError": "Failed to update email",
+    "passwordChangeSuccess": "Password updated successfully",
+    "passwordChangeError": "Failed to update password",
+    "linkAccountSuccess": "Account linked successfully. You can now login with email/password.",
+    "linkAccountError": "Failed to link account"
   },
   "common": {
     "loading": "Loading...",

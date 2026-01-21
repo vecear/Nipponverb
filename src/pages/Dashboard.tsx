@@ -8,24 +8,31 @@ const Dashboard = () => {
 
   const modes = [
     {
-      title: 'Basic Training',
-      description: 'Master verbs, kanji, and grammar fundamentals',
-      icon: '📚',
+      title: 'Gojūon (五十音)',
+      description: 'Master Hiragana and Katakana characters',
+      icon: 'あア',
+      path: '/practice/gojuon',
+      color: 'from-green-500 to-teal-500',
+    },
+    {
+      title: 'Verb Conjugation',
+      description: 'Practice verb forms and conjugations',
+      icon: '✍️',
       path: '/practice/verbs',
       color: 'from-blue-500 to-cyan-500',
     },
     {
-      title: 'JLPT Simulation',
-      description: 'Take realistic mock exams to test your skills',
-      icon: '📝',
-      path: '/simulation',
+      title: 'Grammar Practice',
+      description: 'Master JLPT grammar patterns',
+      icon: '📖',
+      path: '/practice/grammar',
       color: 'from-purple-500 to-pink-500',
     },
     {
-      title: 'Scenario Stages',
-      description: 'Learn through real-world conversations',
-      icon: '🎭',
-      path: '/stages',
+      title: 'Kanji Reading',
+      description: 'Learn kanji readings and meanings',
+      icon: '漢',
+      path: '/practice/kanji',
       color: 'from-orange-500 to-red-500',
     },
   ]
@@ -71,10 +78,9 @@ const Dashboard = () => {
         />
       </div>
 
-      {/* Quick Start Section */}
       <div>
-        <h2 className="text-3xl font-zen font-bold mb-6">Choose Your Mode</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <h2 className="text-3xl font-zen font-bold mb-6">Practice Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {modes.map((mode, index) => (
             <motion.div
               key={index}
