@@ -10,11 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "buffer": "^6.0.3",
     "firebase": "^10.8.0",
     "framer-motion": "^11.0.5",
     "i18next": "^25.8.0",
     "i18next-browser-languagedetector": "^8.2.0",
+    "kuroshiro": "^1.2.0",
+    "kuroshiro-analyzer-kuromoji": "^1.1.0",
     "lucide-react": "^0.562.0",
+    "path-browserify": "^1.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-i18next": "^16.5.3",
@@ -31,6 +35,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "google-translate-api-x": "^10.7.2",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.2",

@@ -1,6 +1,5 @@
 import { useAuth } from '../contexts/AuthContext'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import StatsCard from '../components/StatsCard'
 import { useUserStore } from '../store/useUserStore'
@@ -92,12 +91,7 @@ const Dashboard = () => {
           <h2 className="text-lg md:text-xl font-zen font-bold mb-3">{t('dashboard.practiceCategories')}</h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 md:gap-3">
             {modes.map((mode, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.05, duration: 0.2 }}
-              >
+              <div key={index}>
                 <Link to={mode.path}>
                   <div className="card p-2 md:p-3 h-full hover:bg-white/15 hover:scale-[1.02] cursor-pointer transition-all duration-150">
                     <div className="text-center space-y-1 md:space-y-2">
@@ -112,7 +106,7 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -122,12 +116,7 @@ const Dashboard = () => {
           <h2 className="text-lg md:text-xl font-zen font-bold mb-3">{t('dashboard.quickAccess')}</h2>
           <div className="flex flex-col gap-3">
             <Link to="/simulation">
-              <motion.div
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.2 }}
-                className="card-interactive p-3"
-              >
+              <div className="card-interactive p-3">
                 <div className="flex items-center space-x-3">
                   <div className="text-2xl md:text-3xl">📝</div>
                   <div>
@@ -135,16 +124,11 @@ const Dashboard = () => {
                     <p className="text-[10px] text-white/60">{t('simulation.subtitle')}</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </Link>
 
             <Link to="/stages">
-              <motion.div
-                initial={{ opacity: 0, x: 10 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.2 }}
-                className="card-interactive p-3"
-              >
+              <div className="card-interactive p-3">
                 <div className="flex items-center space-x-3">
                   <div className="text-2xl md:text-3xl">🎭</div>
                   <div>
@@ -152,16 +136,11 @@ const Dashboard = () => {
                     <p className="text-[10px] text-white/60">{t('stages.subtitle')}</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </Link>
 
             <Link to="/verbs">
-              <motion.div
-                initial={{ opacity: 0, x: 10 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.2, delay: 0.1 }}
-                className="card-interactive p-3"
-              >
+              <div className="card-interactive p-3">
                 <div className="flex items-center space-x-3">
                   <div className="text-2xl md:text-3xl">📖</div>
                   <div>
@@ -169,7 +148,7 @@ const Dashboard = () => {
                     <p className="text-[10px] text-white/60">動詞變化速查表</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </Link>
           </div>
         </div>

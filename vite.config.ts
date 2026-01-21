@@ -7,6 +7,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': '/src',
+      path: 'path-browserify',
+      kuromoji: 'kuromoji/build/kuromoji.js',
     },
   },
 })

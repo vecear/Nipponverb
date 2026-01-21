@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Stage, getStagesByLevel } from '../data/stages'
@@ -84,27 +83,19 @@ const Stages = () => {
           {levels.map((level, idx) => {
             const levelStages = getStagesByLevel(level)
             return (
-              <motion.button
+              <button
                 key={level}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.05, duration: 0.2 }}
                 onClick={() => setSelectedLevel(level)}
                 className="card-interactive p-4 md:p-6 text-center"
               >
                 <div className="text-2xl md:text-3xl font-bold mb-1 md:mb-2">{level}</div>
                 <div className="text-xs md:text-sm text-white/60">{levelStages.length} {t('stages.stages', { level })}</div>
-              </motion.button>
+              </button>
             )
           })}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.25, duration: 0.2 }}
-          className="card"
-        >
+        <div className="card">
           <h3 className="text-2xl font-zen font-bold mb-4">{t('stages.howItWorks.title')}</h3>
           <div className="space-y-4 text-white/80">
             <div className="flex items-start space-x-4">
@@ -135,7 +126,7 @@ const Stages = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     )
   }
@@ -146,11 +137,7 @@ const Stages = () => {
 
     return (
       <div className="max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="mb-8"
-        >
+        <div className="mb-8">
           <button
             onClick={() => setSelectedLevel(null)}
             className="btn-secondary mb-4"
@@ -163,15 +150,12 @@ const Stages = () => {
           <p className="text-white/60">
             {t('stages.chooseScenario')}
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {levelStages.map((stage, index) => (
-            <motion.div
+            <div
               key={stage.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05, duration: 0.2 }}
               className={`card-interactive relative overflow-hidden ${stage.locked ? 'opacity-50 cursor-not-allowed' : ''
                 }`}
             >
@@ -211,7 +195,7 @@ const Stages = () => {
                   {stage.locked ? t('stages.locked') : t('stages.startStage')}
                 </button>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
@@ -223,11 +207,7 @@ const Stages = () => {
     const results = calculateResults()
 
     return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="max-w-4xl mx-auto space-y-8"
-      >
+      <div className="max-w-4xl mx-auto space-y-8">
         <div className="card text-center">
           <h1 className="text-4xl font-zen font-bold mb-4 text-gradient">
             {t('stages.stageComplete')}
@@ -261,7 +241,7 @@ const Stages = () => {
             </button>
           </div>
         </div>
-      </motion.div>
+      </div>
     )
   }
 
@@ -277,18 +257,15 @@ const Stages = () => {
         <h2 className="text-2xl font-bold mb-4">{selectedStage.title}</h2>
         <div className="space-y-4">
           {selectedStage.dialogue.map((line, idx) => (
-            <motion.div
+            <div
               key={idx}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: idx * 0.1 }}
               className="glass p-4 rounded-xl"
             >
               <div className="font-semibold text-sakura-pink mb-1">
                 {line.speaker}:
               </div>
               <div className="text-lg mb-2">{line.text}</div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
@@ -310,51 +287,37 @@ const Stages = () => {
         </div>
       </div>
 
-      {/* Question */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentQuestion.id}
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -20 }}
-          transition={{ duration: 0.15 }}
-          className="card"
-        >
-          <h3 className="text-2xl font-semibold mb-6">
-            {currentQuestion.stem}
-          </h3>
+      <div className="card">
+        <h3 className="text-2xl font-semibold mb-6">
+          {currentQuestion.stem}
+        </h3>
 
-          <div className="space-y-3">
-            {currentQuestion.options.map((option, idx) => (
-              <button
-                key={idx}
-                onClick={() => handleAnswer(currentQuestion.id, option)}
-                className={`w-full p-4 rounded-xl text-left transition-all ${answers[currentQuestion.id] === option
-                  ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
-                  : 'glass hover:bg-white/10'
-                  }`}
-              >
-                <span className="font-semibold mr-3">
-                  {String.fromCharCode(65 + idx)}.
-                </span>
-                {option}
-              </button>
-            ))}
-          </div>
-
-          {answers[currentQuestion.id] && (
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="mt-4 p-4 bg-white/5 rounded-xl"
+        <div className="space-y-3">
+          {currentQuestion.options.map((option, idx) => (
+            <button
+              key={idx}
+              onClick={() => handleAnswer(currentQuestion.id, option)}
+              className={`w-full p-4 rounded-xl text-left transition-all ${answers[currentQuestion.id] === option
+                ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
+                : 'glass hover:bg-white/10'
+                }`}
             >
-              <div className="text-sm text-white/80">
-                <strong>{t('stages.explanation')}</strong> {currentQuestion.explanation}
-              </div>
-            </motion.div>
-          )}
-        </motion.div>
-      </AnimatePresence>
+              <span className="font-semibold mr-3">
+                {String.fromCharCode(65 + idx)}.
+              </span>
+              {option}
+            </button>
+          ))}
+        </div>
+
+        {answers[currentQuestion.id] && (
+          <div className="mt-4 p-4 bg-white/5 rounded-xl">
+            <div className="text-sm text-white/80">
+              <strong>{t('stages.explanation')}</strong> {currentQuestion.explanation}
+            </div>
+          </div>
+        )}
+      </div>
 
       {/* Navigation */}
       <div className="flex items-center justify-between">

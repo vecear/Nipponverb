@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useAuth } from '../contexts/AuthContext'
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
 import {
   updateEmail,
   updatePassword,
@@ -146,40 +145,28 @@ const Settings = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="mb-8"
-      >
+      <div className="mb-8">
         <h1 className="text-4xl font-zen font-bold mb-2 text-gradient">
           {t('settings.title')}
         </h1>
         <p className="text-white/60">{t('settings.subtitle')}</p>
-      </motion.div>
+      </div>
 
       {message && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className={`card mb-6 ${
-            message.type === 'success'
-              ? 'bg-green-500/20 border-2 border-green-500'
-              : 'bg-red-500/20 border-2 border-red-500'
-          }`}
+        <div
+          className={`card mb-6 ${message.type === 'success'
+            ? 'bg-green-500/20 border-2 border-green-500'
+            : 'bg-red-500/20 border-2 border-red-500'
+            }`}
         >
           <p className={message.type === 'success' ? 'text-green-400' : 'text-red-400'}>
             {message.text}
           </p>
-        </motion.div>
+        </div>
       )}
 
       {/* Account Information */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1 }}
-        className="card mb-6"
-      >
+      <div className="card mb-6">
         <h2 className="text-2xl font-zen font-bold mb-4">{t('settings.accountInfo')}</h2>
         <div className="space-y-3 text-white/80">
           <div className="flex justify-between">
@@ -200,16 +187,11 @@ const Settings = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Link Email/Password for Google Users */}
       {isGoogleUser && !hasPasswordAuth && (
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="card mb-6"
-        >
+        <div className="card mb-6">
           <h2 className="text-2xl font-zen font-bold mb-4">
             {t('settings.linkEmailPassword')}
           </h2>
@@ -261,17 +243,12 @@ const Settings = () => {
               {loading ? t('common.loading') : t('settings.linkAccount')}
             </button>
           </form>
-        </motion.div>
+        </div>
       )}
 
       {/* Change Email */}
       {hasPasswordAuth && (
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="card mb-6"
-        >
+        <div className="card mb-6">
           <h2 className="text-2xl font-zen font-bold mb-4">{t('settings.changeEmail')}</h2>
           <form onSubmit={handleChangeEmail} className="space-y-4">
             <div>
@@ -306,17 +283,12 @@ const Settings = () => {
               {loading ? t('common.loading') : t('settings.updateEmail')}
             </button>
           </form>
-        </motion.div>
+        </div>
       )}
 
       {/* Change Password */}
       {hasPasswordAuth && (
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="card mb-6"
-        >
+        <div className="card mb-6">
           <h2 className="text-2xl font-zen font-bold mb-4">
             {t('settings.changePassword')}
           </h2>
@@ -367,7 +339,7 @@ const Settings = () => {
               {loading ? t('common.loading') : t('settings.updatePassword')}
             </button>
           </form>
-        </motion.div>
+        </div>
       )}
     </div>
   )

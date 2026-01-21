@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { commonVerbs, conjugateVerbWithReading, generateVerbExample, VerbData } from '../data/verbs'
+import FuriganaText from '../components/FuriganaText'
 
 const VerbList = () => {
     const { t, i18n } = useTranslation()
@@ -87,11 +87,8 @@ const VerbList = () => {
                     <div className="card h-[calc(100vh-220px)] overflow-y-auto custom-scrollbar">
                         <div className="space-y-2">
                             {filteredVerbs.map((verb, index) => (
-                                <motion.div
+                                <div
                                     key={index}
-                                    initial={{ opacity: 0, x: -10 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    transition={{ delay: index * 0.05 }}
                                     onClick={() => setSelectedVerb(verb)}
                                     className={`p-3 rounded-lg cursor-pointer transition-all ${selectedVerb?.dictionary === verb.dictionary
                                         ? 'bg-gradient-to-r from-sakura-pink/20 to-electric-cyan/20 border-l-4 border-electric-cyan'
@@ -101,8 +98,9 @@ const VerbList = () => {
                                     <div className="flex justify-between items-center">
                                         <div className="flex items-center gap-2">
                                             <div>
-                                                <div className="text-[10px] text-white/60 leading-none mb-0.5">{verb.reading}</div>
-                                                <span className="text-lg font-bold leading-none">{verb.dictionary}</span>
+                                                <span className="text-lg font-bold leading-none">
+                                                    <FuriganaText text={conjugateVerbWithReading(verb, 'dictionary').text} />
+                                                </span>
                                             </div>
                                             <span className={`text-[10px] px-1.5 py-0.5 rounded ml-2 ${verb.level === 'N5' ? 'bg-green-500/20 text-green-400' :
                                                 verb.level === 'N4' ? 'bg-blue-500/20 text-blue-400' :
@@ -118,7 +116,7 @@ const VerbList = () => {
                                     <div className="text-sm text-white/60 mt-1">
                                         {(i18n.language === 'zh-TW' || i18n.language.startsWith('zh')) ? verb.meaning_zh : verb.meaning}
                                     </div>
-                                </motion.div>
+                                </div >
                             ))}
                             {filteredVerbs.length === 0 && (
                                 <div className="text-center text-white/40 py-8">
@@ -130,128 +128,124 @@ const VerbList = () => {
                 </div>
 
                 <div className={`lg:col-span-2 ${selectedVerb ? 'block' : 'hidden lg:block'}`}>
-                    <AnimatePresence mode="wait">
-                        {selectedVerb ? (
-                            <motion.div
-                                key={selectedVerb.dictionary}
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -10 }}
-                                className="card"
+                    {selectedVerb ? (
+                        <div
+                            key={selectedVerb.dictionary}
+                            className="card"
+                        >
+                            {/* Mobile Back Button */}
+                            <button
+                                onClick={() => setSelectedVerb(null)}
+                                className="lg:hidden mb-4 flex items-center gap-2 text-white/60 hover:text-white transition-colors"
                             >
-                                {/* Mobile Back Button */}
-                                <button
-                                    onClick={() => setSelectedVerb(null)}
-                                    className="lg:hidden mb-4 flex items-center gap-2 text-white/60 hover:text-white transition-colors"
-                                >
-                                    <span>←</span> {t('common.previous')}
-                                </button>
+                                <span>←</span> {t('common.previous')}
+                            </button>
 
-                                <div className="flex justify-between items-start mb-6 border-b border-white/10 pb-4">
-                                    <div>
-                                        <div className="flex items-center gap-3 mb-1">
-                                            <div>
-                                                <div className="text-sm text-sakura-pink mb-1">{selectedVerb.reading}</div>
-                                                <h2 className="text-4xl font-zen font-bold leading-none">{selectedVerb.dictionary}</h2>
-                                            </div>
-                                            <span className={`text-sm px-2 py-1 rounded-md font-bold self-start mt-4 ${selectedVerb.level === 'N5' ? 'bg-green-500/20 text-green-400' :
-                                                selectedVerb.level === 'N4' ? 'bg-blue-500/20 text-blue-400' :
-                                                    selectedVerb.level === 'N3' ? 'bg-yellow-500/20 text-yellow-400' :
-                                                        selectedVerb.level === 'N2' ? 'bg-orange-500/20 text-orange-400' :
-                                                            'bg-red-500/20 text-red-400'
-                                                }`}>
-                                                {selectedVerb.level}
-                                            </span>
+                            <div className="flex justify-between items-start mb-6 border-b border-white/10 pb-4">
+                                <div>
+                                    <div className="flex items-center gap-3 mb-1">
+                                        <div>
+                                            <h2 className="text-4xl font-zen font-bold leading-none">
+                                                <FuriganaText text={conjugateVerbWithReading(selectedVerb, 'dictionary').text} />
+                                            </h2>
                                         </div>
-                                        <p className="text-xl text-white/80 mt-2">
-                                            {(i18n.language === 'zh-TW' || i18n.language.startsWith('zh')) ? selectedVerb.meaning_zh : selectedVerb.meaning}
-                                        </p>
+                                        <span className={`text-sm px-2 py-1 rounded-md font-bold self-start mt-4 ${selectedVerb.level === 'N5' ? 'bg-green-500/20 text-green-400' :
+                                            selectedVerb.level === 'N4' ? 'bg-blue-500/20 text-blue-400' :
+                                                selectedVerb.level === 'N3' ? 'bg-yellow-500/20 text-yellow-400' :
+                                                    selectedVerb.level === 'N2' ? 'bg-orange-500/20 text-orange-400' :
+                                                        'bg-red-500/20 text-red-400'
+                                            }`}>
+                                            {selectedVerb.level}
+                                        </span>
                                     </div>
-                                    <div className="text-right">
-                                        <div className="text-sm text-white/60 mb-1">{t('practice.categories.verbs.type')}</div>
-                                        <div className="font-mono bg-white/10 px-3 py-1 rounded capitalize inline-block">
-                                            {t(`practice.categories.verbs.types.${selectedVerb.type}`)} {selectedVerb.group ? `(${selectedVerb.group})` : ''}
-                                        </div>
+                                    <p className="text-xl text-white/80 mt-2">
+                                        {(i18n.language === 'zh-TW' || i18n.language.startsWith('zh')) ? selectedVerb.meaning_zh : selectedVerb.meaning}
+                                    </p>
+                                </div>
+                                <div className="text-right">
+                                    <div className="text-sm text-white/60 mb-1">{t('practice.categories.verbs.type')}</div>
+                                    <div className="font-mono bg-white/10 px-3 py-1 rounded capitalize inline-block">
+                                        {t(`practice.categories.verbs.types.${selectedVerb.type}`)} {selectedVerb.group ? `(${selectedVerb.group})` : ''}
                                     </div>
                                 </div>
-
-                                {selectedVerb.dictionary_definition && selectedVerb.dictionary_definition.length > 0 && (i18n.language === 'zh-TW' || i18n.language.startsWith('zh')) && (
-                                    <div className="bg-black/20 p-4 rounded-xl border border-white/5 mb-6">
-                                        <div className="text-xs text-white/40 font-bold uppercase tracking-wider mb-2">
-                                            辭書定義
-                                        </div>
-                                        <ul className="space-y-1">
-                                            {selectedVerb.dictionary_definition.map((def, i) => (
-                                                <li key={i} className="text-sm text-white/80 leading-relaxed">
-                                                    {def}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                )}
-
-                                {selectedVerb.native_examples && selectedVerb.native_examples.length > 0 && (
-                                    <div className="bg-white/5 p-4 rounded-xl border border-white/10 mb-6 transition-all hover:bg-white/10">
-                                        <div className="flex items-center gap-2 mb-3">
-                                            <div className="text-xs text-electric-cyan/80 font-bold uppercase tracking-wider">
-                                                {t('practice.categories.verbs.example')} (辭書)
-                                            </div>
-                                            <div className="h-px flex-1 bg-white/10"></div>
-                                        </div>
-                                        <div className="space-y-3">
-                                            {selectedVerb.native_examples.map((ex, i) => (
-                                                <div key={i} className="flex flex-col gap-1">
-                                                    <div className="text-lg text-white font-zen">{ex.ja}</div>
-                                                    <div className="text-sm text-white/50">{ex.zh}</div>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                )}
-
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    {conjugationForms.map((form, idx) => {
-                                        const conjugation = conjugateVerbWithReading(selectedVerb, form.key)
-                                        const example = generateVerbExample(selectedVerb, form.key, i18n.language)
-                                        return (
-                                            <motion.div
-                                                key={form.key}
-                                                initial={{ opacity: 0 }}
-                                                animate={{ opacity: 1 }}
-                                                transition={{ delay: idx * 0.05 }}
-                                                className="bg-white/5 p-4 rounded-xl border border-white/10 hover:bg-white/10 transition-colors"
-                                            >
-                                                <div className="text-xs text-white/40 mb-1 font-mono">
-                                                    {t('practice.categories.verbs.forms.' + form.key)}
-                                                </div>
-                                                <div className="mb-3">
-                                                    <div className="text-sm text-electric-cyan/60 font-mono mb-0.5">
-                                                        {conjugation.reading}
-                                                    </div>
-                                                    <div className="text-2xl font-bold text-electric-cyan font-zen">
-                                                        {conjugation.text}
-                                                    </div>
-                                                </div>
-
-                                                {/* Example Sentence Section */}
-                                                <div className="mt-2 pt-2 border-t border-white/5">
-                                                    <div className="text-[10px] text-white/40 uppercase mb-1">{t('practice.categories.verbs.example')}</div>
-                                                    <div className="text-sm text-white/90 mb-0.5">{example.sentence}</div>
-                                                    <div className="text-xs text-white/50 italic">{example.translation}</div>
-                                                </div>
-                                            </motion.div>
-                                        )
-                                    })}
-                                </div>
-                            </motion.div>
-                        ) : (
-                            <div className="card flex flex-col items-center justify-center h-full text-center py-20 opacity-50">
-                                <span className="text-6xl mb-4">👈</span>
-                                <h3 className="text-xl font-bold">{t('practice.categories.verbs.selectPrompt')}</h3>
-                                <p>{t('practice.categories.verbs.viewDetails')}</p>
                             </div>
-                        )}
-                    </AnimatePresence>
+
+                            {selectedVerb.dictionary_definition && selectedVerb.dictionary_definition.length > 0 && (i18n.language === 'zh-TW' || i18n.language.startsWith('zh')) && (
+                                <div className="bg-black/20 p-4 rounded-xl border border-white/5 mb-6">
+                                    <div className="text-xs text-white/40 font-bold uppercase tracking-wider mb-2">
+                                        辭書定義
+                                    </div>
+                                    <ul className="space-y-1">
+                                        {selectedVerb.dictionary_definition.map((def, i) => (
+                                            <li key={i} className="text-sm text-white/80 leading-relaxed">
+                                                {def}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
+                            {selectedVerb.native_examples && selectedVerb.native_examples.length > 0 && (
+                                <div className="bg-white/5 p-4 rounded-xl border border-white/10 mb-6 transition-all hover:bg-white/10">
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <div className="text-xs text-electric-cyan/80 font-bold uppercase tracking-wider">
+                                            {t('practice.categories.verbs.example')} (辭書)
+                                        </div>
+                                        <div className="h-px flex-1 bg-white/10"></div>
+                                    </div>
+                                    <div className="space-y-3">
+                                        {selectedVerb.native_examples.map((ex, i) => (
+                                            <div key={i} className="flex flex-col gap-1">
+                                                <div className="text-lg text-white font-zen">
+                                                    <FuriganaText text={ex.ja} />
+                                                </div>
+                                                <div className="text-sm text-white/50">{ex.zh}</div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {conjugationForms.map((form) => {
+                                    const conjugation = conjugateVerbWithReading(selectedVerb, form.key)
+                                    const example = generateVerbExample(selectedVerb, form.key, i18n.language)
+                                    return (
+                                        <div
+                                            key={form.key}
+                                            className="bg-white/5 p-4 rounded-xl border border-white/10 hover:bg-white/10 transition-colors"
+                                        >
+                                            <div className="text-xs text-white/40 mb-1 font-mono">
+                                                {t('practice.categories.verbs.forms.' + form.key)}
+                                            </div>
+                                            <div className="mb-3">
+                                                <div className="text-2xl font-bold text-electric-cyan font-zen">
+                                                    <FuriganaText text={conjugation.text} />
+                                                </div>
+                                            </div>
+
+                                            {/* Example Sentence Section */}
+                                            <div className="mt-2 pt-2 border-t border-white/5">
+                                                <div className="text-[10px] text-white/40 uppercase mb-1">{t('practice.categories.verbs.example')}</div>
+                                                <div className="text-sm text-white/90 mb-0.5">
+                                                    <FuriganaText text={example.sentence} />
+                                                </div>
+                                                <div className="text-xs text-white/50">
+                                                    {example.translation}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                    ) : (
+                        <div className="card flex flex-col items-center justify-center h-full text-center py-20 opacity-50">
+                            <span className="text-6xl mb-4">👈</span>
+                            <h3 className="text-xl font-bold">{t('practice.categories.verbs.selectPrompt')}</h3>
+                            <p>{t('practice.categories.verbs.viewDetails')}</p>
+                        </div>
+                    )}
                 </div>
             </div>
         </div >

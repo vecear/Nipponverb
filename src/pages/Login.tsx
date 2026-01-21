@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
 import { getUserProfile, createUserProfile } from '../services/userService'
 
 const Login = () => {
@@ -62,25 +61,16 @@ const Login = () => {
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
-          <motion.div
+          <div
             key={i}
             className="absolute text-white/5 text-6xl"
-            initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
-            }}
-            animate={{
-              y: [null, Math.random() * window.innerHeight],
-              x: [null, Math.random() * window.innerWidth],
-            }}
-            transition={{
-              duration: 20 + Math.random() * 10,
-              repeat: Infinity,
-              repeatType: 'reverse',
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
             }}
           >
             {['あ', 'い', 'う', 'え', 'お', '日', '本', '語'][Math.floor(Math.random() * 8)]}
-          </motion.div>
+          </div>
         ))}
       </div>
 
@@ -88,18 +78,13 @@ const Login = () => {
 
 
         <div className="text-center mb-8">
-          <motion.div
-            initial={{ scale: 0.5, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 260, damping: 20 }}
-            className="inline-block mb-4"
-          >
+          <div className="inline-block mb-4">
             <img
               src="/logo.png"
               alt="Nipponverb Logo"
               className="w-24 h-24 md:w-32 md:h-32 object-contain"
             />
-          </motion.div>
+          </div>
           <h1 className="text-4xl font-zen font-bold text-gradient mb-2">
             {t('app.name')}
           </h1>

@@ -9,6 +9,7 @@ import Stages from './pages/Stages'
 import VerbList from './pages/VerbList'
 import VerbConjugationGuide from './pages/VerbConjugationGuide'
 import Profile from './pages/Profile'
+import DataManagement from './pages/DataManagement'
 import ProtectedRoute from './components/ProtectedRoute'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/verbs" element={<VerbList />} />
             <Route path="/verb-guide" element={<VerbConjugationGuide />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/data-management" element={<DataManagement />} />
           </Route>
         </Routes>
       </Router>

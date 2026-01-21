@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useTranslation } from 'react-i18next'
-import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import LanguageSwitcher from './LanguageSwitcher'
 import { useUserStore } from '../store/useUserStore'
@@ -32,10 +31,7 @@ const Navbar = () => {
   ]
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.2 }}
+    <nav
       className="glass sticky top-0 z-50 backdrop-blur-xl"
     >
       <div className="container mx-auto px-4 py-4">
@@ -96,43 +92,36 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.15 }}
-            className="md:hidden border-t border-white/10 bg-slate-900/95 backdrop-blur-xl overflow-hidden"
-          >
-            <div className="flex flex-col p-4 space-y-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className="text-lg font-medium text-white/80 hover:text-white px-4 py-2 hover:bg-white/5 rounded-lg transition-all"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <div className="pt-4 border-t border-white/10 flex flex-col space-y-4">
-                <div className="px-4">
-                  <LanguageSwitcher />
-                </div>
-                <button
-                  onClick={handleLogout}
-                  className="w-full btn-secondary text-sm py-3"
-                >
-                  {t('nav.logout')}
-                </button>
+      {isMobileMenuOpen && (
+        <div
+          className="md:hidden border-t border-white/10 bg-slate-900/95 backdrop-blur-xl overflow-hidden"
+        >
+          <div className="flex flex-col p-4 space-y-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="text-lg font-medium text-white/80 hover:text-white px-4 py-2 hover:bg-white/5 rounded-lg transition-all"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <div className="pt-4 border-t border-white/10 flex flex-col space-y-4">
+              <div className="px-4">
+                <LanguageSwitcher />
               </div>
+              <button
+                onClick={handleLogout}
+                className="w-full btn-secondary text-sm py-3"
+              >
+                {t('nav.logout')}
+              </button>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.nav>
+          </div>
+        </div>
+      )}
+    </nav>
   )
 }
 

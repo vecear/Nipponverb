@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { generateJLPTExam, JLPTExam } from '../data/jlpt-exams'
+import FuriganaText from '../components/FuriganaText'
 
 const Simulation = () => {
   const { t } = useTranslation()
@@ -136,12 +136,9 @@ const Simulation = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {levels.map((level, index) => (
-            <motion.div
+          {levels.map((level) => (
+            <div
               key={level.level}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05, duration: 0.2 }}
               className="card-interactive !p-4"
             >
               <div className="space-y-3">
@@ -170,16 +167,11 @@ const Simulation = () => {
                   {t('simulation.startExam', { level: level.level })}
                 </button>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.25, duration: 0.2 }}
-          className="card"
-        >
+        <div className="card">
           <h3 className="text-2xl font-zen font-bold mb-4">{t('simulation.guidelinesTitle')}</h3>
           <ul className="space-y-3 text-white/80">
             <li className="flex items-start space-x-3">
@@ -199,7 +191,7 @@ const Simulation = () => {
               <span>{t('simulation.guideline4')}</span>
             </li>
           </ul>
-        </motion.div>
+        </div>
       </div>
     )
   }
@@ -209,11 +201,7 @@ const Simulation = () => {
     const results = calculateResults()
 
     return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="max-w-4xl mx-auto space-y-8"
-      >
+      <div className="max-w-4xl mx-auto space-y-8">
         <div className="card text-center">
           <h1 className="text-4xl font-zen font-bold mb-4 text-gradient">
             {t('simulation.results.examComplete')}
@@ -271,7 +259,7 @@ const Simulation = () => {
             </button>
           </div>
         </div>
-      </motion.div>
+      </div>
     )
   }
 
@@ -323,37 +311,27 @@ const Simulation = () => {
         </div>
       </div>
 
-      {/* Question */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentQuestion.id}
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -20 }}
-          transition={{ duration: 0.15 }}
-          className="card mb-6"
-        >
-          <h3 className="text-2xl font-semibold mb-6 whitespace-pre-wrap">
-            {currentQuestion.stem}
-          </h3>
+      <div className="card mb-6">
+        <h3 className="text-2xl font-semibold mb-6 whitespace-pre-wrap">
+          <FuriganaText text={currentQuestion.stem} />
+        </h3>
 
-          <div className="space-y-3">
-            {currentQuestion.options.map((option, idx) => (
-              <button
-                key={idx}
-                onClick={() => handleAnswer(currentQuestion.id, option)}
-                className={`w-full p-4 rounded-xl text-left transition-all ${answers[currentQuestion.id] === option
-                  ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
-                  : 'glass hover:bg-white/10'
-                  }`}
-              >
-                <span className="font-semibold mr-3">{String.fromCharCode(65 + idx)}.</span>
-                {option}
-              </button>
-            ))}
-          </div>
-        </motion.div>
-      </AnimatePresence>
+        <div className="space-y-3">
+          {currentQuestion.options.map((option, idx) => (
+            <button
+              key={idx}
+              onClick={() => handleAnswer(currentQuestion.id, option)}
+              className={`w-full p-4 rounded-xl text-left transition-all ${answers[currentQuestion.id] === option
+                ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
+                : 'glass hover:bg-white/10'
+                }`}
+            >
+              <span className="font-semibold mr-3">{String.fromCharCode(65 + idx)}.</span>
+              <FuriganaText text={option} />
+            </button>
+          ))}
+        </div>
+      </div>
 
       {/* Navigation */}
       <div className="flex items-center justify-between">

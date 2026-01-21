@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import QuestionCard from '../components/QuestionCard'
 import { usePracticeStore } from '../store/usePracticeStore'
@@ -144,11 +143,8 @@ const Practice = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {modes.map((mode, index) => (
-            <motion.div
+            <div
               key={mode.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
               onClick={() => handleCategorySelect(mode.id)}
               className="card p-6 hover:bg-white/15 cursor-pointer transition-all duration-300 group"
             >
@@ -161,7 +157,7 @@ const Practice = () => {
                   <p className="text-white/60 text-sm">{mode.description}</p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
@@ -239,11 +235,7 @@ const Practice = () => {
     const accuracy = totalAttempts > 0 ? Math.round((score / totalAttempts) * 100) : 0
 
     return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="max-w-2xl mx-auto text-center space-y-8"
-      >
+      <div className="max-w-2xl mx-auto text-center space-y-8">
         <div className="card">
           <h1 className="text-3xl md:text-4xl font-zen font-bold mb-4 text-gradient">
             {t('practice.complete')}
@@ -277,7 +269,7 @@ const Practice = () => {
             </button>
           </div>
         </div>
-      </motion.div>
+      </div>
     )
   }
 
@@ -295,26 +287,22 @@ const Practice = () => {
         </div>
 
         <div className="w-full bg-white/10 rounded-full h-1.5">
-          <motion.div
+          <div
             className="bg-gradient-to-r from-sakura-pink to-electric-cyan h-1.5 rounded-full"
-            initial={{ width: 0 }}
-            animate={{
+            style={{
               width: `${((currentIndex + 1) / questions.length) * 100}%`,
             }}
-            transition={{ duration: 0.15 }}
           />
         </div>
       </div>
 
-      <AnimatePresence mode="wait">
-        {currentQuestion && (
-          <QuestionCard
-            key={currentQuestion.id}
-            question={currentQuestion}
-            onAnswer={handleAnswer}
-          />
-        )}
-      </AnimatePresence>
+      {currentQuestion && (
+        <QuestionCard
+          key={currentQuestion.id}
+          question={currentQuestion}
+          onAnswer={handleAnswer}
+        />
+      )}
     </div>
   )
 }

@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion'
-
 interface StatsCardProps {
   title: string
   value: number
@@ -12,9 +10,7 @@ const StatsCard = ({ title, value, subtitle, color, icon }: StatsCardProps) => {
   const percentage = Math.min(value, 100)
 
   return (
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.15 }}
+    <div
       className="card p-2 md:p-3"
     >
       <div className="space-y-1.5 md:space-y-2">
@@ -34,7 +30,7 @@ const StatsCard = ({ title, value, subtitle, color, icon }: StatsCardProps) => {
               fill="transparent"
               className="text-white/10"
             />
-            <motion.circle
+            <circle
               cx="64"
               cy="64"
               r="56"
@@ -42,11 +38,9 @@ const StatsCard = ({ title, value, subtitle, color, icon }: StatsCardProps) => {
               strokeWidth="12"
               fill="transparent"
               strokeLinecap="round"
-              initial={{ strokeDasharray: '0 352' }}
-              animate={{
+              style={{
                 strokeDasharray: `${(percentage / 100) * 352} 352`,
               }}
-              transition={{ duration: 0.5, ease: 'easeOut' }}
             />
           </svg>
           <div className="absolute inset-0 flex items-center justify-center">
@@ -56,7 +50,7 @@ const StatsCard = ({ title, value, subtitle, color, icon }: StatsCardProps) => {
 
         <p className="text-center text-[8px] md:text-xs text-white/60 leading-tight">{subtitle}</p>
       </div>
-    </motion.div>
+    </div>
   )
 }
 
