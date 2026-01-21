@@ -1,5 +1,9 @@
 # Nipponverb - Japanese Learning Platform
 
+![Deploy Status](https://github.com/vecear/Nipponverb/actions/workflows/firebase-hosting-merge.yml/badge.svg)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://nipponverb.web.app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A premium, interactive Japanese learning web application powered by authentic corpus data (JDD, CEJC).
 
 ## Features
