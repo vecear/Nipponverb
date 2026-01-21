@@ -20,8 +20,11 @@
     "password": "密碼",
     "alreadyHaveAccount": "已有帳號？登入",
     "noAccount": "還沒有帳號？註冊",
-    "loginError": "登入失敗",
-    "signupError": "建立帳號失敗"
+    "loginError": "聯絡伺服器失敗，請檢查網路連線",
+    "signupError": "建立帳號失敗",
+    "displayName": "顯示名稱",
+    "displayNamePlaceholder": "請輸入您的名稱",
+    "nameRequired": "請輸入顯示名稱"
   },
   "dashboard": {
     "welcome": "歡迎回來，{{name}}",
@@ -70,7 +73,8 @@
     "practiceAgain": "再次練習",
     "backToDashboard": "返回儀表板",
     "correct": "正確！",
-    "incorrect": "錯誤"
+    "incorrect": "錯誤",
+    "nextQuestion": "下一題 →"
   },
   "simulation": {
     "title": "JLPT 模擬考試",
@@ -190,7 +194,8 @@
       "reauthDesc": "為了您的帳號安全，在修改敏感資料前，請先驗證您的身份。",
       "currentPassword": "目前的密碼",
       "verify": "驗證身份",
-      "verifyWithGoogle": "使用 Google 驗證"
+      "verifyWithGoogle": "使用 Google 驗證",
+      "editName": "修改名稱"
     }
   },
   "common": {

@@ -2,13 +2,17 @@ import { useState } from 'react'
 import { useAuth } from '../contexts/AuthContext'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { X, Mail, Lock, Link as LinkIcon, AlertCircle, CheckCircle } from 'lucide-react'
+import { X, Mail, Lock, Link as LinkIcon, AlertCircle, CheckCircle, Edit2, Save } from 'lucide-react'
 import { useUserStore } from '../store/useUserStore'
+import { updateUserProfile } from '../services/userService'
 
 const Profile = () => {
   const { t } = useTranslation()
   const { currentUser, updateUserEmail, updateUserPassword, linkGoogleAccount, reauthenticate } = useAuth()
-  const { profile } = useUserStore()
+  const { profile, updateProfile } = useUserStore()
+
+  const [isEditingName, setIsEditingName] = useState(false)
+  const [newName, setNewName] = useState(profile?.displayName || '')
 
   // Initialize levels
   const levels = ['N5', 'N4', 'N3', 'N2', 'N1']
@@ -40,23 +44,38 @@ const Profile = () => {
     { label: t('profile.stats.stagesCompleted'), value: `${stagesClearedCount}/25` },
   ]
 
+  const handleSaveName = async () => {
+    if (!currentUser || !newName.trim()) return
+    setLoading(true)
+    try {
+      await updateUserProfile(currentUser.uid, { displayName: newName.trim() })
+      updateProfile({ displayName: newName.trim() })
+      setIsEditingName(false)
+      setStatus({ type: 'success', message: t('profile.settings.updateSuccess') })
+    } catch (err) {
+      setStatus({ type: 'error', message: t('profile.settings.updateError') })
+    }
+    setLoading(false)
+  }
+
   return (
     <div className="max-w-4xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="card mb-8"
+        transition={{ duration: 0.2 }}
+        className="card mb-6 md:mb-8"
       >
-        <div className="flex flex-col md:flex-row items-center gap-8">
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
           <div className="relative">
             {currentUser?.photoURL ? (
               <img
                 src={currentUser.photoURL}
                 alt="Profile"
-                className="w-32 h-32 rounded-full border-4 border-sakura-pink"
+                className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-sakura-pink"
               />
             ) : (
-              <div className="w-32 h-32 rounded-full bg-gradient-to-r from-sakura-pink to-electric-cyan flex items-center justify-center text-white text-5xl font-bold">
+              <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-r from-sakura-pink to-electric-cyan flex items-center justify-center text-white text-3xl md:text-5xl font-bold">
                 {profile?.displayName?.[0] || currentUser?.displayName?.[0] || 'U'}
               </div>
             )}
@@ -66,21 +85,59 @@ const Profile = () => {
           </div>
 
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-4xl font-zen font-bold mb-2">
-              {profile?.displayName || currentUser?.displayName || 'Student'}
-            </h1>
+            <div className="flex items-center justify-center md:justify-start gap-2 mb-1 md:mb-2">
+              {isEditingName ? (
+                <div className="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value={newName}
+                    onChange={(e) => setNewName(e.target.value)}
+                    className="bg-white/10 border border-white/20 rounded-lg px-3 py-1 outline-none focus:border-sakura-pink text-xl md:text-2xl font-bold font-zen"
+                    autoFocus
+                  />
+                  <button
+                    onClick={handleSaveName}
+                    className="p-2 hover:bg-white/10 rounded-full text-sakura-pink transition-all"
+                  >
+                    <Save size={20} />
+                  </button>
+                  <button
+                    onClick={() => {
+                      setIsEditingName(false)
+                      setNewName(profile?.displayName || '')
+                    }}
+                    className="p-2 hover:bg-white/10 rounded-full text-white/40 transition-all"
+                  >
+                    <X size={20} />
+                  </button>
+                </div>
+              ) : (
+                <>
+                  <h1 className="text-2xl md:text-4xl font-zen font-bold text-gradient">
+                    {profile?.displayName || currentUser?.displayName || 'Student'}
+                  </h1>
+                  <button
+                    onClick={() => setIsEditingName(true)}
+                    className="p-2 hover:bg-white/10 rounded-full text-white/40 hover:text-white transition-all"
+                    title={t('profile.settings.editName')}
+                  >
+                    <Edit2 size={18} />
+                  </button>
+                </>
+              )}
+            </div>
             <p className="text-white/60 mb-4">{currentUser?.email}</p>
 
-            <div className="flex items-center justify-center md:justify-start gap-2">
-              <span className="text-white/80">{t('profile.targetLevel')}:</span>
-              <div className="flex gap-2">
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-2 md:gap-3">
+              <span className="text-white/80 text-sm md:text-base">{t('profile.targetLevel')}:</span>
+              <div className="flex flex-wrap justify-center gap-1 md:gap-2">
                 {levels.map((level) => (
                   <button
                     key={level}
                     onClick={() => setSelectedLevel(level)}
-                    className={`px-4 py-1 rounded-full text-sm font-semibold transition-all ${selectedLevel === level
-                        ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
-                        : 'bg-white/10 text-white/60 hover:bg-white/20'
+                    className={`px-3 md:px-4 py-1 rounded-full text-xs md:text-sm font-semibold transition-all ${selectedLevel === level
+                      ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
+                      : 'bg-white/10 text-white/60 hover:bg-white/20'
                       }`}
                   >
                     {level}
@@ -107,6 +164,7 @@ const Profile = () => {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.15 }}
               className="bg-[#0f172a] border border-white/10 rounded-2xl w-full max-w-md p-6 shadow-2xl"
             >
               <div className="flex justify-between items-center mb-6">
@@ -318,8 +376,8 @@ const Profile = () => {
                       }}
                       disabled={loading || isGoogleLinked}
                       className={`w-full py-3 rounded-xl flex items-center justify-center gap-3 font-semibold transition-all ${isGoogleLinked
-                          ? 'bg-green-500/10 text-green-500 border border-green-500/20'
-                          : 'bg-white text-black hover:bg-white/90 shadow-lg'
+                        ? 'bg-green-500/10 text-green-500 border border-green-500/20'
+                        : 'bg-white text-black hover:bg-white/90 shadow-lg'
                         }`}
                     >
                       {isGoogleLinked ? <CheckCircle size={18} /> : <LinkIcon size={18} />}
@@ -333,17 +391,17 @@ const Profile = () => {
         )}
       </AnimatePresence>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8">
         {stats.map((stat, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            className="card text-center"
+            transition={{ delay: index * 0.05, duration: 0.2 }}
+            className="card p-4 text-center"
           >
-            <div className="text-2xl font-bold text-gradient mb-2">{stat.value}</div>
-            <div className="text-sm text-white/60">{stat.label}</div>
+            <div className="text-xl md:text-2xl font-bold text-gradient mb-1 md:mb-2">{stat.value}</div>
+            <div className="text-xs md:text-sm text-white/60">{stat.label}</div>
           </motion.div>
         ))}
       </div>
@@ -362,7 +420,7 @@ const Profile = () => {
                 className="bg-gradient-to-r from-sakura-pink to-pink-600 h-3 rounded-full"
                 initial={{ width: 0 }}
                 animate={{ width: `${Math.min((verbsLearned / 200) * 100, 100)}%` }}
-                transition={{ duration: 1, delay: 0.2 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
               />
             </div>
           </div>
@@ -377,7 +435,7 @@ const Profile = () => {
                 className="bg-gradient-to-r from-electric-cyan to-blue-600 h-3 rounded-full"
                 initial={{ width: 0 }}
                 animate={{ width: `${Math.min((kanjiLearned / 1000) * 100, 100)}%` }}
-                transition={{ duration: 1, delay: 0.3 }}
+                transition={{ duration: 0.5, delay: 0.15 }}
               />
             </div>
           </div>
@@ -392,7 +450,7 @@ const Profile = () => {
                 className="bg-gradient-to-r from-purple-500 to-purple-700 h-3 rounded-full"
                 initial={{ width: 0 }}
                 animate={{ width: `${Math.min((grammarLearned / 80) * 100, 100)}%` }}
-                transition={{ duration: 1, delay: 0.4 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
               />
             </div>
           </div>
@@ -400,8 +458,8 @@ const Profile = () => {
       </div>
 
       <div className="card">
-        <h2 className="text-2xl font-zen font-bold mb-6">{t('profile.achievements.title')}</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <h2 className="text-xl md:text-2xl font-zen font-bold mb-4 md:mb-6">{t('profile.achievements.title')}</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-4">
           {[
             { id: 'streak-15', icon: '🔥', name: t('profile.achievements.streak15') },
             { id: 'first-perfect', icon: '⭐', name: t('profile.achievements.firstPerfect') },
@@ -418,14 +476,14 @@ const Profile = () => {
                 key={index}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.05 }}
-                className={`p-4 rounded-xl text-center ${isUnlocked
-                    ? 'bg-gradient-to-br from-sakura-pink/20 to-electric-cyan/20 border-2 border-sakura-pink/50'
-                    : 'bg-white/5 opacity-50'
+                transition={{ delay: index * 0.025, duration: 0.15 }}
+                className={`p-3 md:p-4 rounded-xl text-center ${isUnlocked
+                  ? 'bg-gradient-to-br from-sakura-pink/20 to-electric-cyan/20 border-2 border-sakura-pink/50'
+                  : 'bg-white/5 opacity-50'
                   }`}
               >
-                <div className={`text-4xl mb-2 ${isUnlocked ? '' : 'grayscale'}`}>{achievement.icon}</div>
-                <div className="text-xs font-semibold">{achievement.name}</div>
+                <div className={`text-3xl md:text-4xl mb-1 md:mb-2 ${isUnlocked ? '' : 'grayscale'}`}>{achievement.icon}</div>
+                <div className="text-[10px] md:text-xs font-semibold">{achievement.name}</div>
               </motion.div>
             )
           })}

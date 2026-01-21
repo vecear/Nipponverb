@@ -8,6 +8,7 @@ import { getUserProfile, createUserProfile } from '../services/userService'
 const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [displayName, setDisplayName] = useState('')
   const [isSignUp, setIsSignUp] = useState(false)
   const [error, setError] = useState('')
   const { signInWithGoogle, signInWithEmail, signUpWithEmail } = useAuth()
@@ -39,7 +40,11 @@ const Login = () => {
     try {
       setError('')
       if (isSignUp) {
-        await signUpWithEmail(email, password)
+        if (!displayName) {
+          setError(t('auth.nameRequired'))
+          return
+        }
+        await signUpWithEmail(email, password, displayName)
       } else {
         await signInWithEmail(email, password)
       }
@@ -136,6 +141,20 @@ const Login = () => {
         </div>
 
         <form onSubmit={handleEmailAuth} className="space-y-4">
+          {isSignUp && (
+            <div>
+              <label className="block text-sm font-medium mb-2">{t('auth.displayName')}</label>
+              <input
+                type="text"
+                value={displayName}
+                onChange={(e) => setDisplayName(e.target.value)}
+                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink transition-colors"
+                placeholder={t('auth.displayNamePlaceholder')}
+                required
+              />
+            </div>
+          )}
+
           <div>
             <label className="block text-sm font-medium mb-2">{t('auth.email')}</label>
             <input

@@ -74,17 +74,18 @@ const Stages = () => {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          transition={{ duration: 0.2 }}
+          className="text-center mb-8 md:mb-12"
         >
-          <h1 className="text-5xl font-zen font-bold mb-4 text-gradient">
+          <h1 className="text-3xl md:text-5xl font-zen font-bold mb-4 text-gradient">
             {t('stages.title')}
           </h1>
-          <p className="text-xl text-white/60">
+          <p className="text-lg md:text-xl text-white/60">
             {t('stages.subtitle')}
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 mb-8 md:mb-12">
           {levels.map((level, idx) => {
             const levelStages = getStagesByLevel(level)
             return (
@@ -92,12 +93,12 @@ const Stages = () => {
                 key={level}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.1 }}
+                transition={{ delay: idx * 0.05, duration: 0.2 }}
                 onClick={() => setSelectedLevel(level)}
-                className="card-interactive p-6 text-center"
+                className="card-interactive p-4 md:p-6 text-center"
               >
-                <div className="text-3xl font-bold mb-2">{level}</div>
-                <div className="text-sm text-white/60">{levelStages.length} {t('stages.stages', { level })}</div>
+                <div className="text-2xl md:text-3xl font-bold mb-1 md:mb-2">{level}</div>
+                <div className="text-xs md:text-sm text-white/60">{levelStages.length} {t('stages.stages', { level })}</div>
               </motion.button>
             )
           })}
@@ -106,7 +107,7 @@ const Stages = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 0.25, duration: 0.2 }}
           className="card"
         >
           <h3 className="text-2xl font-zen font-bold mb-4">{t('stages.howItWorks.title')}</h3>
@@ -175,7 +176,7 @@ const Stages = () => {
               key={stage.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.05, duration: 0.2 }}
               className={`card-interactive relative overflow-hidden ${stage.locked ? 'opacity-50 cursor-not-allowed' : ''
                 }`}
             >
@@ -237,19 +238,19 @@ const Stages = () => {
             {t('stages.stageComplete')}
           </h1>
 
-          <div className="grid grid-cols-2 gap-6 my-8">
-            <div className="glass p-6 rounded-xl">
-              <div className="text-5xl font-bold text-sakura-pink mb-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 my-6 md:my-8">
+            <div className="glass p-4 md:p-6 rounded-xl">
+              <div className="text-4xl md:text-5xl font-bold text-sakura-pink mb-2">
                 {results.score}/{results.total}
               </div>
-              <div className="text-white/60">{t('stages.questionsCorrect')}</div>
+              <div className="text-sm md:text-base text-white/60">{t('stages.questionsCorrect')}</div>
             </div>
 
-            <div className="glass p-6 rounded-xl">
-              <div className="text-5xl font-bold text-electric-cyan mb-2">
+            <div className="glass p-4 md:p-6 rounded-xl">
+              <div className="text-4xl md:text-5xl font-bold text-electric-cyan mb-2">
                 {results.percentage}%
               </div>
-              <div className="text-white/60">{t('stages.accuracy')}</div>
+              <div className="text-sm md:text-base text-white/60">{t('stages.accuracy')}</div>
             </div>
           </div>
 
@@ -326,6 +327,7 @@ const Stages = () => {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.15 }}
           className="card"
         >
           <h3 className="text-2xl font-semibold mb-6">
@@ -387,7 +389,7 @@ const Stages = () => {
           </button>
         )}
       </div>
-    </div>
+    </div >
   )
 }
 

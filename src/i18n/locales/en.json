@@ -21,7 +21,10 @@
     "alreadyHaveAccount": "Already have an account? Sign In",
     "noAccount": "Don't have an account? Sign Up",
     "loginError": "Failed to sign in",
-    "signupError": "Failed to create account"
+    "signupError": "Failed to create account",
+    "displayName": "Display Name",
+    "displayNamePlaceholder": "Enter your name",
+    "nameRequired": "Display name is required"
   },
   "dashboard": {
     "welcome": "Welcome back, {{name}}",
@@ -70,7 +73,8 @@
     "practiceAgain": "Practice Again",
     "backToDashboard": "Back to Dashboard",
     "correct": "Correct!",
-    "incorrect": "Incorrect"
+    "incorrect": "Incorrect",
+    "nextQuestion": "Next Question →"
   },
   "simulation": {
     "title": "JLPT Mock Exam",
@@ -190,7 +194,8 @@
       "reauthDesc": "For your security, please verify your identity before making sensitive changes.",
       "currentPassword": "Current Password",
       "verify": "Verify Identity",
-      "verifyWithGoogle": "Verify with Google"
+      "verifyWithGoogle": "Verify with Google",
+      "editName": "Edit Name"
     }
   },
   "common": {

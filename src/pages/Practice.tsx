@@ -104,7 +104,7 @@ const Practice = () => {
         className="max-w-2xl mx-auto space-y-8"
       >
         <div className="card">
-          <h1 className="text-4xl font-zen font-bold mb-6 text-gradient capitalize">
+          <h1 className="text-2xl md:text-4xl font-zen font-bold mb-6 text-gradient capitalize">
             {t(`practice.categories.${category}.title`)}
           </h1>
 
@@ -116,13 +116,13 @@ const Practice = () => {
                   <button
                     key={type}
                     onClick={() => setSelectedSubcategory(type)}
-                    className={`p-4 rounded-xl transition-all ${selectedSubcategory === type
+                    className={`p-3 md:p-4 rounded-xl transition-all ${selectedSubcategory === type
                       ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
                       : 'glass hover:bg-white/10'
                       }`}
                   >
-                    <div className="text-2xl mb-2">{type === 'hiragana' ? 'あ' : 'ア'}</div>
-                    <div className="font-semibold capitalize">{t(`practice.categories.gojuon.${type}`)}</div>
+                    <div className="text-xl md:text-2xl mb-1 md:mb-2">{type === 'hiragana' ? 'あ' : 'ア'}</div>
+                    <div className="font-semibold capitalize text-sm md:text-base">{t(`practice.categories.gojuon.${type}`)}</div>
                   </button>
                 ))}
               </div>
@@ -132,17 +132,17 @@ const Practice = () => {
           {category !== 'gojuon' && (
             <div className="mb-6">
               <label className="block text-lg font-semibold mb-3">{t('practice.selectLevel')}:</label>
-              <div className="grid grid-cols-5 gap-3">
+              <div className="grid grid-cols-3 sm:flex sm:flex-wrap gap-2 md:grid md:grid-cols-5 md:gap-3">
                 {(['N5', 'N4', 'N3', 'N2', 'N1'] as const).map((level) => (
                   <button
                     key={level}
                     onClick={() => setSelectedLevel(level)}
-                    className={`p-4 rounded-xl transition-all ${selectedLevel === level
+                    className={`p-3 md:p-4 rounded-xl transition-all ${selectedLevel === level
                       ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
                       : 'glass hover:bg-white/10'
                       }`}
                   >
-                    <div className="text-xl font-bold">{level}</div>
+                    <div className="text-lg md:text-xl font-bold">{level}</div>
                   </button>
                 ))}
               </div>
@@ -176,23 +176,23 @@ const Practice = () => {
         className="max-w-2xl mx-auto text-center space-y-8"
       >
         <div className="card">
-          <h1 className="text-4xl font-zen font-bold mb-4 text-gradient">
+          <h1 className="text-3xl md:text-4xl font-zen font-bold mb-4 text-gradient">
             {t('practice.complete')}
           </h1>
 
-          <div className="grid grid-cols-2 gap-6 my-8">
-            <div className="glass p-6 rounded-xl">
-              <div className="text-5xl font-bold text-sakura-pink mb-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 my-6 md:my-8">
+            <div className="glass p-4 md:p-6 rounded-xl">
+              <div className="text-4xl md:text-5xl font-bold text-sakura-pink mb-2">
                 {score}/{totalAttempts}
               </div>
-              <div className="text-white/60">{t('practice.questionsCorrect')}</div>
+              <div className="text-sm md:text-base text-white/60">{t('practice.questionsCorrect')}</div>
             </div>
 
-            <div className="glass p-6 rounded-xl">
-              <div className="text-5xl font-bold text-electric-cyan mb-2">
+            <div className="glass p-4 md:p-6 rounded-xl">
+              <div className="text-4xl md:text-5xl font-bold text-electric-cyan mb-2">
                 {accuracy}%
               </div>
-              <div className="text-white/60">{t('practice.accuracy')}</div>
+              <div className="text-sm md:text-base text-white/60">{t('practice.accuracy')}</div>
             </div>
           </div>
 
@@ -232,7 +232,7 @@ const Practice = () => {
             animate={{
               width: `${((currentIndex + 1) / questions.length) * 100}%`,
             }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.15 }}
           />
         </div>
       </div>

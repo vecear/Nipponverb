@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
+import { ChevronRight } from 'lucide-react'
 import { Question } from '../types'
 
 interface QuestionCardProps {
@@ -9,6 +11,7 @@ interface QuestionCardProps {
 }
 
 const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionCardProps) => {
+  const { t } = useTranslation()
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null)
   const [showFeedback, setShowFeedback] = useState(false)
@@ -20,10 +23,6 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
     const correct = answer === question.correct
     setIsCorrect(correct)
     setShowFeedback(true)
-
-    setTimeout(() => {
-      onAnswer(answer)
-    }, 800)
   }
 
   return (
@@ -31,36 +30,37 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.1 }}
       className="card max-w-3xl mx-auto"
     >
-      <div className="space-y-6">
+      <div className="space-y-4 md:space-y-6">
         <div className="text-center">
-          <span className="inline-block px-3 py-1 bg-sakura-pink/20 text-sakura-pink rounded-full text-sm font-semibold mb-4">
+          <span className="inline-block px-3 py-1 bg-sakura-pink/20 text-sakura-pink rounded-full text-sm font-semibold mb-2 md:mb-4">
             {question.level}
           </span>
-          <h2 className="text-2xl md:text-3xl font-zen font-bold mb-2">
+          <h2 className="text-xl md:text-3xl font-zen font-bold mb-2 break-words text-balance">
             {question.stem}
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
           {question.options.map((option, index) => (
             <motion.button
               key={index}
-              whileHover={{ scale: selectedAnswer ? 1 : 1.05 }}
-              whileTap={{ scale: selectedAnswer ? 1 : 0.95 }}
+              whileHover={{ scale: selectedAnswer ? 1 : 1.02 }}
+              whileTap={{ scale: selectedAnswer ? 1 : 0.98 }}
               onClick={() => handleAnswerClick(option)}
               disabled={!!selectedAnswer}
-              className={`p-6 rounded-xl border-2 transition-all duration-300 ${selectedAnswer === option
-                  ? isCorrect
-                    ? 'bg-green-500/20 border-green-500 shadow-lg shadow-green-500/50'
-                    : 'bg-red-500/20 border-red-500 shadow-lg shadow-red-500/50'
-                  : selectedAnswer && option === question.correct
-                    ? 'bg-green-500/20 border-green-500'
-                    : 'glass-hover border-white/20'
+              className={`p-4 md:p-6 rounded-xl border-2 transition-all duration-100 ${selectedAnswer === option
+                ? isCorrect
+                  ? 'bg-green-500/20 border-green-500 shadow-lg shadow-green-500/50'
+                  : 'bg-red-500/20 border-red-500 shadow-lg shadow-red-500/50'
+                : selectedAnswer && option === question.correct
+                  ? 'bg-green-500/20 border-green-500'
+                  : 'glass-hover border-white/20'
                 }`}
             >
-              <span className="text-lg font-noto">{option}</span>
+              <span className="text-base md:text-lg font-noto break-words">{option}</span>
             </motion.button>
           ))}
         </div>
@@ -68,20 +68,35 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
         <AnimatePresence>
           {showFeedback && (
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              className={`p-6 rounded-xl ${isCorrect
-                  ? 'bg-green-500/20 border-2 border-green-500'
-                  : 'bg-red-500/20 border-2 border-red-500'
-                }`}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.07 }}
+              className="space-y-4"
             >
-              <h3 className="text-xl font-bold mb-2">
-                {isCorrect ? '正解！' : '不正解'}
-              </h3>
-              {(showExplanation || !isCorrect) && (
-                <p className="text-white/80">{question.explanation}</p>
-              )}
+              <div className={`p-4 md:p-6 rounded-xl ${isCorrect
+                ? 'bg-green-500/20 border-2 border-green-500'
+                : 'bg-red-500/20 border-2 border-red-500'
+                }`}>
+                <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2">
+                  {isCorrect ? t('practice.correct') : t('practice.incorrect')}
+                </h3>
+                {(showExplanation || !isCorrect) && (
+                  <p className="text-sm md:text-base text-white/80">{question.explanation}</p>
+                )}
+              </div>
+
+              <motion.button
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => onAnswer(selectedAnswer!)}
+                className="w-full btn-primary py-4 flex items-center justify-center gap-2 text-lg font-bold"
+              >
+                {t('practice.nextQuestion')}
+                <ChevronRight size={20} />
+              </motion.button>
             </motion.div>
           )}
         </AnimatePresence>
