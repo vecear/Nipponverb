@@ -1,10 +1,13 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
+import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const Navbar = () => {
   const { currentUser, logout } = useAuth()
   const navigate = useNavigate()
+  const { t } = useTranslation()
 
   const handleLogout = async () => {
     try {
@@ -34,29 +37,30 @@ const Navbar = () => {
               to="/"
               className="text-white/80 hover:text-white transition-colors"
             >
-              Dashboard
+              {t('nav.dashboard')}
             </Link>
             <Link
               to="/practice/verbs"
               className="text-white/80 hover:text-white transition-colors"
             >
-              Practice
+              {t('nav.practice')}
             </Link>
             <Link
               to="/simulation"
               className="text-white/80 hover:text-white transition-colors"
             >
-              Simulation
+              {t('nav.simulation')}
             </Link>
             <Link
               to="/stages"
               className="text-white/80 hover:text-white transition-colors"
             >
-              Stages
+              {t('nav.stages')}
             </Link>
           </div>
 
           <div className="flex items-center space-x-4">
+            <LanguageSwitcher />
             <Link to="/profile" className="flex items-center space-x-2">
               {currentUser?.photoURL ? (
                 <img
@@ -74,7 +78,7 @@ const Navbar = () => {
               onClick={handleLogout}
               className="btn-secondary text-sm px-4 py-2"
             >
-              Logout
+              {t('nav.logout')}
             </button>
           </div>
         </div>

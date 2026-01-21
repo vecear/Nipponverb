@@ -1,0 +1,154 @@
+{
+  "app": {
+    "name": "Nipponverb",
+    "tagline": "透過真實語料掌握日語"
+  },
+  "nav": {
+    "dashboard": "儀表板",
+    "practice": "練習",
+    "simulation": "模擬考試",
+    "stages": "情境關卡",
+    "profile": "個人檔案",
+    "logout": "登出"
+  },
+  "auth": {
+    "signIn": "登入",
+    "signUp": "註冊",
+    "continueWithGoogle": "使用 Google 繼續",
+    "or": "或",
+    "email": "電子郵件",
+    "password": "密碼",
+    "alreadyHaveAccount": "已有帳號？登入",
+    "noAccount": "還沒有帳號？註冊",
+    "loginError": "登入失敗",
+    "signupError": "建立帳號失敗"
+  },
+  "dashboard": {
+    "welcome": "歡迎回來，{{name}}",
+    "continueJourney": "繼續您的日語學習之旅",
+    "chooseMode": "選擇您的模式",
+    "recentActivity": "最近活動"
+  },
+  "modes": {
+    "basicTraining": {
+      "title": "基礎訓練",
+      "description": "掌握動詞、漢字和文法基礎"
+    },
+    "simulation": {
+      "title": "JLPT 模擬考試",
+      "description": "進行真實的模擬考試以測試您的技能"
+    },
+    "stages": {
+      "title": "情境關卡",
+      "description": "透過真實對話學習"
+    }
+  },
+  "practice": {
+    "verbs": "動詞",
+    "kanji": "漢字",
+    "grammar": "文法",
+    "question": "第 {{current}} 題，共 {{total}} 題",
+    "complete": "練習完成！",
+    "questionsCorrect": "答對題數",
+    "accuracy": "正確率",
+    "practiceAgain": "再次練習",
+    "backToDashboard": "返回儀表板",
+    "correct": "正確！",
+    "incorrect": "錯誤"
+  },
+  "simulation": {
+    "title": "JLPT 模擬考試",
+    "tagline": "進行真實的模擬考試以評估您的日語能力",
+    "timeLimit": "分鐘",
+    "startExam": "開始考試",
+    "guidelines": "考試須知",
+    "guideline1": "考試期間不會顯示回饋 - 結果將在最後顯示",
+    "guideline2": "基於官方 JLPT 標準的嚴格時間限制",
+    "guideline3": "題目來自真實語料庫資料",
+    "guideline4": "完成後提供詳細的表現分析",
+    "levels": {
+      "N5": "基礎理解",
+      "N4": "初級理解",
+      "N3": "中級理解",
+      "N2": "高級理解",
+      "N1": "專家理解"
+    },
+    "sections": {
+      "vocabulary": "詞彙",
+      "grammar": "文法",
+      "reading": "閱讀",
+      "listening": "聽力"
+    }
+  },
+  "stages": {
+    "title": "情境關卡",
+    "tagline": "透過真實對話和情境學習日語",
+    "difficulty": {
+      "beginner": "初級",
+      "intermediate": "中級",
+      "advanced": "高級"
+    },
+    "locked": "已鎖定",
+    "playAgain": "再玩一次",
+    "startStage": "開始關卡",
+    "howItWorks": "關卡運作方式",
+    "watchListen": "觀看與聆聽",
+    "watchListenDesc": "體驗來自真實日語語料庫的真實對話",
+    "answerQuestions": "回答問題",
+    "answerQuestionsDesc": "測試您對情境、語感和詞彙的理解",
+    "unlockStages": "解鎖新關卡",
+    "unlockStagesDesc": "完成關卡以解鎖更具挑戰性的情境"
+  },
+  "profile": {
+    "title": "個人檔案",
+    "dayStreak": "{{days}} 天連續",
+    "targetLevel": "目標級別",
+    "totalStudyTime": "總學習時間",
+    "questionsAnswered": "已回答問題",
+    "currentStreak": "當前連續天數",
+    "stagesCompleted": "已完成關卡",
+    "learningProgress": "學習進度",
+    "achievements": "成就",
+    "stats": {
+      "verbs": "動詞",
+      "kanji": "漢字",
+      "grammar": "文法",
+      "learned": "已學習"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "language": "語言",
+    "selectLanguage": "選擇語言",
+    "languages": {
+      "en": "English",
+      "zh-TW": "繁體中文",
+      "zh-CN": "简体中文",
+      "ko": "한국어",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch"
+    },
+    "theme": "主題",
+    "notifications": "通知",
+    "privacy": "隱私",
+    "about": "關於"
+  },
+  "common": {
+    "loading": "載入中...",
+    "save": "儲存",
+    "cancel": "取消",
+    "close": "關閉",
+    "confirm": "確認",
+    "delete": "刪除",
+    "edit": "編輯",
+    "done": "完成",
+    "next": "下一步",
+    "previous": "上一步",
+    "search": "搜尋",
+    "filter": "篩選",
+    "sort": "排序",
+    "view": "檢視",
+    "share": "分享"
+  }
+}

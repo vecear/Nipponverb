@@ -1,0 +1,154 @@
+{
+  "app": {
+    "name": "Nipponverb",
+    "tagline": "Master Japanese with Real-World Content"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "practice": "Practice",
+    "simulation": "Simulation",
+    "stages": "Stages",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "continueWithGoogle": "Continue with Google",
+    "or": "Or",
+    "email": "Email",
+    "password": "Password",
+    "alreadyHaveAccount": "Already have an account? Sign In",
+    "noAccount": "Don't have an account? Sign Up",
+    "loginError": "Failed to sign in",
+    "signupError": "Failed to create account"
+  },
+  "dashboard": {
+    "welcome": "Welcome back, {{name}}",
+    "continueJourney": "Continue your Japanese learning journey",
+    "chooseMode": "Choose Your Mode",
+    "recentActivity": "Recent Activity"
+  },
+  "modes": {
+    "basicTraining": {
+      "title": "Basic Training",
+      "description": "Master verbs, kanji, and grammar fundamentals"
+    },
+    "simulation": {
+      "title": "JLPT Simulation",
+      "description": "Take realistic mock exams to test your skills"
+    },
+    "stages": {
+      "title": "Scenario Stages",
+      "description": "Learn through real-world conversations"
+    }
+  },
+  "practice": {
+    "verbs": "Verbs",
+    "kanji": "Kanji",
+    "grammar": "Grammar",
+    "question": "Question {{current}} of {{total}}",
+    "complete": "Practice Complete!",
+    "questionsCorrect": "Questions Correct",
+    "accuracy": "Accuracy",
+    "practiceAgain": "Practice Again",
+    "backToDashboard": "Back to Dashboard",
+    "correct": "Correct!",
+    "incorrect": "Incorrect"
+  },
+  "simulation": {
+    "title": "JLPT Simulation",
+    "tagline": "Take a realistic mock exam to assess your Japanese proficiency",
+    "timeLimit": "min",
+    "startExam": "Start Exam",
+    "guidelines": "Exam Guidelines",
+    "guideline1": "No feedback during the exam - results shown at the end",
+    "guideline2": "Strict time limit based on official JLPT standards",
+    "guideline3": "Questions pulled from authentic corpus data",
+    "guideline4": "Detailed performance analysis after completion",
+    "levels": {
+      "N5": "Basic Understanding",
+      "N4": "Elementary Understanding",
+      "N3": "Intermediate Understanding",
+      "N2": "Advanced Understanding",
+      "N1": "Expert Understanding"
+    },
+    "sections": {
+      "vocabulary": "Vocabulary",
+      "grammar": "Grammar",
+      "reading": "Reading",
+      "listening": "Listening"
+    }
+  },
+  "stages": {
+    "title": "Scenario Stages",
+    "tagline": "Learn Japanese through real-world conversations and situations",
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "locked": "Locked",
+    "playAgain": "Play Again",
+    "startStage": "Start Stage",
+    "howItWorks": "How Stages Work",
+    "watchListen": "Watch & Listen",
+    "watchListenDesc": "Experience authentic conversations from real Japanese corpus data",
+    "answerQuestions": "Answer Questions",
+    "answerQuestionsDesc": "Test your understanding of context, nuance, and vocabulary",
+    "unlockStages": "Unlock New Stages",
+    "unlockStagesDesc": "Complete stages to unlock more challenging scenarios"
+  },
+  "profile": {
+    "title": "Profile",
+    "dayStreak": "{{days}} day streak",
+    "targetLevel": "Target Level",
+    "totalStudyTime": "Total Study Time",
+    "questionsAnswered": "Questions Answered",
+    "currentStreak": "Current Streak",
+    "stagesCompleted": "Stages Completed",
+    "learningProgress": "Learning Progress",
+    "achievements": "Achievements",
+    "stats": {
+      "verbs": "Verbs",
+      "kanji": "Kanji",
+      "grammar": "Grammar",
+      "learned": "learned"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "selectLanguage": "Select Language",
+    "languages": {
+      "en": "English",
+      "zh-TW": "繁體中文",
+      "zh-CN": "简体中文",
+      "ko": "한국어",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch"
+    },
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "privacy": "Privacy",
+    "about": "About"
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "done": "Done",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "view": "View",
+    "share": "Share"
+  }
+}

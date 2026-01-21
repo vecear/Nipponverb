@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
+import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
+import LanguageSwitcher from '../components/LanguageSwitcher'
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -10,6 +12,7 @@ const Login = () => {
   const [error, setError] = useState('')
   const { signInWithGoogle, signInWithEmail, signUpWithEmail } = useAuth()
   const navigate = useNavigate()
+  const { t } = useTranslation()
 
   const handleGoogleLogin = async () => {
     try {
@@ -17,7 +20,7 @@ const Login = () => {
       await signInWithGoogle()
       navigate('/')
     } catch (err) {
-      setError('Failed to sign in with Google')
+      setError(t('auth.loginError'))
       console.error(err)
     }
   }
@@ -33,7 +36,7 @@ const Login = () => {
       }
       navigate('/')
     } catch (err) {
-      setError(isSignUp ? 'Failed to create account' : 'Failed to sign in')
+      setError(isSignUp ? t('auth.signupError') : t('auth.loginError'))
       console.error(err)
     }
   }
@@ -70,12 +73,16 @@ const Login = () => {
         animate={{ opacity: 1, y: 0 }}
         className="glass max-w-md w-full p-8 relative z-10"
       >
+        <div className="absolute top-4 right-4">
+          <LanguageSwitcher />
+        </div>
+
         <div className="text-center mb-8">
           <h1 className="text-4xl font-zen font-bold text-gradient mb-2">
-            Nipponverb
+            {t('app.name')}
           </h1>
           <p className="text-white/60">
-            Master Japanese with Real-World Content
+            {t('app.tagline')}
           </p>
         </div>
 
@@ -107,7 +114,7 @@ const Login = () => {
               d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
             />
           </svg>
-          <span>Continue with Google</span>
+          <span>{t('auth.continueWithGoogle')}</span>
         </button>
 
         <div className="relative mb-6">
@@ -115,13 +122,13 @@ const Login = () => {
             <div className="w-full border-t border-white/20"></div>
           </div>
           <div className="relative flex justify-center text-sm">
-            <span className="px-2 bg-transparent text-white/60">Or</span>
+            <span className="px-2 bg-transparent text-white/60">{t('auth.or')}</span>
           </div>
         </div>
 
         <form onSubmit={handleEmailAuth} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium mb-2">Email</label>
+            <label className="block text-sm font-medium mb-2">{t('auth.email')}</label>
             <input
               type="email"
               value={email}
@@ -132,7 +139,7 @@ const Login = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-2">Password</label>
+            <label className="block text-sm font-medium mb-2">{t('auth.password')}</label>
             <input
               type="password"
               value={password}
@@ -143,7 +150,7 @@ const Login = () => {
           </div>
 
           <button type="submit" className="w-full btn-secondary">
-            {isSignUp ? 'Sign Up' : 'Sign In'}
+            {isSignUp ? t('auth.signUp') : t('auth.signIn')}
           </button>
         </form>
 
@@ -152,9 +159,7 @@ const Login = () => {
             onClick={() => setIsSignUp(!isSignUp)}
             className="text-sm text-white/60 hover:text-white transition-colors"
           >
-            {isSignUp
-              ? 'Already have an account? Sign In'
-              : "Don't have an account? Sign Up"}
+            {isSignUp ? t('auth.alreadyHaveAccount') : t('auth.noAccount')}
           </button>
         </div>
       </motion.div>

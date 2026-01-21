@@ -1,0 +1,154 @@
+{
+  "app": {
+    "name": "Nipponverb",
+    "tagline": "Domina el japonés con contenido del mundo real"
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "practice": "Práctica",
+    "simulation": "Simulación",
+    "stages": "Escenarios",
+    "profile": "Perfil",
+    "logout": "Cerrar sesión"
+  },
+  "auth": {
+    "signIn": "Iniciar sesión",
+    "signUp": "Registrarse",
+    "continueWithGoogle": "Continuar con Google",
+    "or": "O",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta? Inicia sesión",
+    "noAccount": "¿No tienes una cuenta? Regístrate",
+    "loginError": "Error al iniciar sesión",
+    "signupError": "Error al crear la cuenta"
+  },
+  "dashboard": {
+    "welcome": "Bienvenido de nuevo, {{name}}",
+    "continueJourney": "Continúa tu viaje de aprendizaje de japonés",
+    "chooseMode": "Elige tu modo",
+    "recentActivity": "Actividad reciente"
+  },
+  "modes": {
+    "basicTraining": {
+      "title": "Entrenamiento básico",
+      "description": "Domina verbos, kanji y fundamentos gramaticales"
+    },
+    "simulation": {
+      "title": "Simulación JLPT",
+      "description": "Realiza exámenes simulados realistas para probar tus habilidades"
+    },
+    "stages": {
+      "title": "Escenarios",
+      "description": "Aprende a través de conversaciones del mundo real"
+    }
+  },
+  "practice": {
+    "verbs": "Verbos",
+    "kanji": "Kanji",
+    "grammar": "Gramática",
+    "question": "Pregunta {{current}} de {{total}}",
+    "complete": "¡Práctica completada!",
+    "questionsCorrect": "Preguntas correctas",
+    "accuracy": "Precisión",
+    "practiceAgain": "Practicar de nuevo",
+    "backToDashboard": "Volver al panel",
+    "correct": "¡Correcto!",
+    "incorrect": "Incorrecto"
+  },
+  "simulation": {
+    "title": "Simulación JLPT",
+    "tagline": "Realiza un examen simulado realista para evaluar tu dominio del japonés",
+    "timeLimit": "min",
+    "startExam": "Comenzar examen",
+    "guidelines": "Normas del examen",
+    "guideline1": "Sin comentarios durante el examen - resultados mostrados al final",
+    "guideline2": "Límite de tiempo estricto basado en estándares oficiales JLPT",
+    "guideline3": "Preguntas extraídas de datos de corpus auténticos",
+    "guideline4": "Análisis detallado del rendimiento después de completar",
+    "levels": {
+      "N5": "Comprensión básica",
+      "N4": "Comprensión elemental",
+      "N3": "Comprensión intermedia",
+      "N2": "Comprensión avanzada",
+      "N1": "Comprensión experta"
+    },
+    "sections": {
+      "vocabulary": "Vocabulario",
+      "grammar": "Gramática",
+      "reading": "Lectura",
+      "listening": "Comprensión auditiva"
+    }
+  },
+  "stages": {
+    "title": "Escenarios",
+    "tagline": "Aprende japonés a través de conversaciones y situaciones del mundo real",
+    "difficulty": {
+      "beginner": "Principiante",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzado"
+    },
+    "locked": "Bloqueado",
+    "playAgain": "Jugar de nuevo",
+    "startStage": "Comenzar escenario",
+    "howItWorks": "Cómo funcionan los escenarios",
+    "watchListen": "Ver y escuchar",
+    "watchListenDesc": "Experimenta conversaciones auténticas de datos de corpus japonés real",
+    "answerQuestions": "Responder preguntas",
+    "answerQuestionsDesc": "Prueba tu comprensión del contexto, matices y vocabulario",
+    "unlockStages": "Desbloquear nuevos escenarios",
+    "unlockStagesDesc": "Completa escenarios para desbloquear situaciones más desafiantes"
+  },
+  "profile": {
+    "title": "Perfil",
+    "dayStreak": "Racha de {{days}} días",
+    "targetLevel": "Nivel objetivo",
+    "totalStudyTime": "Tiempo total de estudio",
+    "questionsAnswered": "Preguntas respondidas",
+    "currentStreak": "Racha actual",
+    "stagesCompleted": "Escenarios completados",
+    "learningProgress": "Progreso de aprendizaje",
+    "achievements": "Logros",
+    "stats": {
+      "verbs": "Verbos",
+      "kanji": "Kanji",
+      "grammar": "Gramática",
+      "learned": "aprendido"
+    }
+  },
+  "settings": {
+    "title": "Configuración",
+    "language": "Idioma",
+    "selectLanguage": "Seleccionar idioma",
+    "languages": {
+      "en": "English",
+      "zh-TW": "繁體中文",
+      "zh-CN": "简体中文",
+      "ko": "한국어",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch"
+    },
+    "theme": "Tema",
+    "notifications": "Notificaciones",
+    "privacy": "Privacidad",
+    "about": "Acerca de"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "done": "Hecho",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "view": "Ver",
+    "share": "Compartir"
+  }
+}
