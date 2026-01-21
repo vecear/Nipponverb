@@ -7,6 +7,7 @@ import Practice from './pages/Practice'
 import Simulation from './pages/Simulation'
 import Stages from './pages/Stages'
 import VerbList from './pages/VerbList'
+import VerbConjugationGuide from './pages/VerbConjugationGuide'
 import Profile from './pages/Profile'
 import ProtectedRoute from './components/ProtectedRoute'
 
@@ -18,10 +19,12 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route element={<ProtectedRoute><Layout /></ProtectedRoute>}>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/practice" element={<Practice />} />
             <Route path="/practice/:category" element={<Practice />} />
             <Route path="/simulation" element={<Simulation />} />
             <Route path="/stages" element={<Stages />} />
             <Route path="/verbs" element={<VerbList />} />
+            <Route path="/verb-guide" element={<VerbConjugationGuide />} />
             <Route path="/profile" element={<Profile />} />
           </Route>
         </Routes>

@@ -64,23 +64,23 @@ const Dashboard = () => {
       {/* Stats Section */}
       <div className="grid grid-cols-3 gap-2 md:gap-4">
         <StatsCard
-          title="Verbs"
+          title={t('practice.categories.verbs.title')}
           value={stats.verbs.accuracy}
-          subtitle={`${stats.verbs.learned} learned`}
+          subtitle={t('dashboard.stats.learned', { count: stats.verbs.learned })}
           color="#FFB7C5"
           icon="✍️"
         />
         <StatsCard
-          title="Kanji"
+          title={t('practice.categories.kanji.title')}
           value={stats.kanji.accuracy}
-          subtitle={`${stats.kanji.learned} learned`}
+          subtitle={t('dashboard.stats.learned', { count: stats.kanji.learned })}
           color="#00D9FF"
           icon="漢"
         />
         <StatsCard
-          title="Grammar"
+          title={t('practice.categories.grammar.title')}
           value={stats.grammar.accuracy}
-          subtitle={`${stats.grammar.learned} patterns mastered`}
+          subtitle={t('dashboard.stats.patternsMastered', { count: stats.grammar.learned })}
           color="#9333EA"
           icon="📖"
         />

@@ -41,9 +41,17 @@ const VerbList = () => {
                 <div>
                     <Link to="/" className="text-white/60 hover:text-white mb-2 inline-block">← {t('common.previous')}</Link>
                     <h1 className="text-3xl font-zen font-bold text-gradient">{t('practice.categories.verbs.title')}</h1>
-                    <p className="text-white/60 mt-1">{t('practice.categories.verbs.description')}</p>
+                    <div className="flex items-center gap-4 mt-1">
+                        <p className="text-white/60">{t('practice.categories.verbs.description')}</p>
+                        <Link to="/verb-guide" className="px-3 py-1 bg-white/10 hover:bg-white/20 rounded-full text-sm text-electric-cyan transition-colors">
+                            {t('practice.categories.verbs.guide')}
+                        </Link>
+                    </div>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 items-center">
+                    <div className="text-sm text-white/40 font-mono">
+                        {t('practice.categories.verbs.count', { count: filteredVerbs.length })}
+                    </div>
                     {/* Level Selectors */}
                     <div className="flex bg-white/5 rounded-lg p-1">
                         {levels.map((level) => (
@@ -105,7 +113,7 @@ const VerbList = () => {
                                                 {verb.level}
                                             </span>
                                         </div>
-                                        <span className="text-xs text-white/40 px-2 py-1 rounded bg-white/5 capitalize">{verb.type}</span>
+                                        <span className="text-xs text-white/40 px-2 py-1 rounded bg-white/5 capitalize">{t(`practice.categories.verbs.types.${verb.type}`)}</span>
                                     </div>
                                     <div className="text-sm text-white/60 mt-1">
                                         {(i18n.language === 'zh-TW' || i18n.language.startsWith('zh')) ? verb.meaning_zh : verb.meaning}
@@ -155,7 +163,7 @@ const VerbList = () => {
                                     <div className="text-right">
                                         <div className="text-sm text-white/60 mb-1">{t('practice.categories.verbs.type')}</div>
                                         <div className="font-mono bg-white/10 px-3 py-1 rounded capitalize inline-block">
-                                            {selectedVerb.type} {selectedVerb.group ? `(${selectedVerb.group})` : ''}
+                                            {t(`practice.categories.verbs.types.${selectedVerb.type}`)} {selectedVerb.group ? `(${selectedVerb.group})` : ''}
                                         </div>
                                     </div>
                                 </div>

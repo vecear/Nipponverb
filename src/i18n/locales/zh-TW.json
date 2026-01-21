@@ -5,6 +5,7 @@
   },
   "nav": {
     "dashboard": "儀表板",
+    "verbs": "常用動詞",
     "practice": "練習",
     "simulation": "模擬考試",
     "stages": "情境關卡",
@@ -37,7 +38,9 @@
       "totalQuestions": "總題數",
       "accuracy": "正確率",
       "studyStreak": "學習連續天數",
-      "level": "當前級別"
+      "level": "當前級別",
+      "learned": "已學習 {{count}} 個",
+      "patternsMastered": "已掌握 {{count}} 個句型"
     }
   },
   "practice": {
@@ -56,6 +59,8 @@
       "verbs": {
         "title": "動詞變化",
         "description": "練習動詞形式和變化",
+        "guide": "動詞變化解說",
+        "count": "共 {{count}} 個動詞",
         "forms": {
           "masu": "ます形 (敬體)",
           "te": "て形 (連接)",
@@ -71,7 +76,12 @@
         "noResults": "找不到相符的動詞",
         "selectPrompt": "請從左側列表選擇一個動詞",
         "viewDetails": "查看其詳細的變化形式",
-        "type": "動詞類型"
+        "type": "動詞類型",
+        "types": {
+          "godan": "五段動詞",
+          "ichidan": "一段動詞",
+          "irregular": "不規則變換"
+        }
       },
       "grammar": {
         "title": "文法練習",

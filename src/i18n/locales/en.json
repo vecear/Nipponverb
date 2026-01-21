@@ -5,6 +5,7 @@
   },
   "nav": {
     "dashboard": "Dashboard",
+    "verbs": "Common Verbs",
     "practice": "Practice",
     "simulation": "Simulation",
     "stages": "Stages",
@@ -36,8 +37,10 @@
     "stats": {
       "totalQuestions": "Total Questions",
       "accuracy": "Accuracy",
-      "studyStreak": "Study Streak",
-      "level": "Current Level"
+      "studyStreak": "Day Streak",
+      "level": "Current Level",
+      "learned": "{{count}} learned",
+      "patternsMastered": "{{count}} patterns mastered"
     }
   },
   "practice": {
@@ -54,8 +57,16 @@
         "katakana": "Katakana"
       },
       "verbs": {
+        "type": "Verb Type",
+        "types": {
+          "godan": "Godan",
+          "ichidan": "Ichidan",
+          "irregular": "Irregular"
+        },
         "title": "Verb Conjugation",
-        "description": "Practice verb forms and conjugations"
+        "description": "Practice verb forms and conjugations",
+        "guide": "Conjugation Guide",
+        "count": "{{count}} verbs found"
       },
       "grammar": {
         "title": "Grammar Practice",

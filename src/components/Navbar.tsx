@@ -25,7 +25,8 @@ const Navbar = () => {
 
   const navLinks = [
     { to: '/', label: t('nav.dashboard') },
-    { to: '/practice/verbs', label: t('nav.practice') },
+    { to: '/verbs', label: t('nav.verbs') },
+    { to: '/practice', label: t('nav.practice') },
     { to: '/simulation', label: t('nav.simulation') },
     { to: '/stages', label: t('nav.stages') },
   ]
@@ -40,7 +41,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-xl md:text-2xl font-zen font-bold text-gradient truncate">
+            <span className="text-2xl md:text-3xl font-zen font-bold text-gradient truncate">
               Nipponverb
             </span>
           </Link>

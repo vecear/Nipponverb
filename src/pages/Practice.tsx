@@ -95,7 +95,80 @@ const Practice = () => {
     resetPractice()
   }
 
-  // Category selection screen
+  // Determine if we should show the category selection Grid (if no category param) or specific category setup
+  const isDirectAccess = !category
+
+  const modes = [
+    {
+      id: 'gojuon',
+      title: t('practice.categories.gojuon.title'),
+      description: t('practice.categories.gojuon.description'),
+      icon: 'あア',
+      color: 'from-green-500 to-teal-500',
+    },
+    {
+      id: 'verbs',
+      title: t('practice.categories.verbs.title'),
+      description: t('practice.categories.verbs.description'),
+      icon: '✍️',
+      color: 'from-blue-500 to-cyan-500',
+    },
+    {
+      id: 'grammar',
+      title: t('practice.categories.grammar.title'),
+      description: t('practice.categories.grammar.description'),
+      icon: '📖',
+      color: 'from-purple-500 to-pink-500',
+    },
+    {
+      id: 'kanji',
+      title: t('practice.categories.kanji.title'),
+      description: t('practice.categories.kanji.description'),
+      icon: '漢',
+      color: 'from-orange-500 to-red-500',
+    },
+  ]
+
+  const handleCategorySelect = (catId: string) => {
+    navigate(`/practice/${catId}`)
+  }
+
+  // If visiting /practice root, show the grid
+  if (isDirectAccess) {
+    return (
+      <div className="max-w-4xl mx-auto space-y-8">
+        <div className="text-center mb-8">
+          <h1 className="text-3xl md:text-4xl font-zen font-bold text-gradient mb-4">{t('practice.title')}</h1>
+          <p className="text-white/60">{t('practice.selectCategory')}</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+          {modes.map((mode, index) => (
+            <motion.div
+              key={mode.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              onClick={() => handleCategorySelect(mode.id)}
+              className="card p-6 hover:bg-white/15 cursor-pointer transition-all duration-300 group"
+            >
+              <div className="flex items-center space-x-4">
+                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${mode.color} flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition-transform`}>
+                  {mode.icon}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">{mode.title}</h3>
+                  <p className="text-white/60 text-sm">{mode.description}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  // Category selection screen within a specific practice mode (Pre-start)
   if (showCategorySelect) {
     return (
       <div className="max-w-2xl mx-auto space-y-8">
