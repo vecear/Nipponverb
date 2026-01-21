@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { commonVerbs, conjugateVerb, conjugateVerbWithReading, generateVerbExample, VerbData } from '../data/verbs'
+import { commonVerbs, conjugateVerbWithReading, generateVerbExample, VerbData } from '../data/verbs'
 
 const VerbList = () => {
     const { t, i18n } = useTranslation()
