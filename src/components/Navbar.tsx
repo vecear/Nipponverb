@@ -39,7 +39,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-3">
+            <img
+              src="/logo.png"
+              alt="Logo"
+              className="w-8 h-8 md:w-10 md:h-10 object-contain"
+            />
             <span className="text-xl md:text-2xl font-zen font-bold text-gradient truncate">
               Nipponverb
             </span>

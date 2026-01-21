@@ -92,6 +92,18 @@ const Login = () => {
 
 
         <div className="text-center mb-8">
+          <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+            className="inline-block mb-4"
+          >
+            <img
+              src="/logo.png"
+              alt="Nipponverb Logo"
+              className="w-24 h-24 md:w-32 md:h-32 object-contain animate-float"
+            />
+          </motion.div>
           <h1 className="text-4xl font-zen font-bold text-gradient mb-2">
             {t('app.name')}
           </h1>
