@@ -293,7 +293,7 @@ export function generateVerbExample(verb: VerbData, form: string, lang: 'en' | '
     const context = verb.context || { ja: 'よく', zh: '', en: '' }
 
     // Japanese Context (e.g. "寿司を")
-    const jaPrefix = context.ja ? (context.ja + ' ') : ''
+
     const jaRaw = context.ja || ''
 
     // Translation Context
