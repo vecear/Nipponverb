@@ -6,16 +6,29 @@ import {
   createUserWithEmailAndPassword,
   signOut,
   onAuthStateChanged,
+  updateEmail,
+  updatePassword,
+  linkWithPopup,
+  GoogleAuthProvider,
+  EmailAuthProvider,
+  reauthenticateWithCredential,
+  UserCredential,
 } from 'firebase/auth'
 import { auth, googleProvider } from '../config/firebase'
+import { getUserProfile, createUserProfile } from '../services/userService'
+import { useUserStore } from '../store/useUserStore'
 
 interface AuthContextType {
   currentUser: User | null
   loading: boolean
-  signInWithGoogle: () => Promise<void>
-  signInWithEmail: (email: string, password: string) => Promise<void>
-  signUpWithEmail: (email: string, password: string) => Promise<void>
+  signInWithGoogle: () => Promise<UserCredential>
+  signInWithEmail: (email: string, password: string) => Promise<UserCredential>
+  signUpWithEmail: (email: string, password: string) => Promise<UserCredential>
   logout: () => Promise<void>
+  updateUserEmail: (email: string) => Promise<void>
+  updateUserPassword: (password: string) => Promise<void>
+  linkGoogleAccount: () => Promise<void>
+  reauthenticate: (password?: string) => Promise<void>
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
@@ -33,24 +46,86 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [loading, setLoading] = useState(true)
 
   const signInWithGoogle = async () => {
-    await signInWithPopup(auth, googleProvider)
+    return await signInWithPopup(auth, googleProvider)
   }
 
   const signInWithEmail = async (email: string, password: string) => {
-    await signInWithEmailAndPassword(auth, email, password)
+    return await signInWithEmailAndPassword(auth, email, password)
   }
 
   const signUpWithEmail = async (email: string, password: string) => {
-    await createUserWithEmailAndPassword(auth, email, password)
+    const credential = await createUserWithEmailAndPassword(auth, email, password)
+    const { user } = credential
+    // Initialize profile in Firestore
+    await createUserProfile(user.uid, {
+      email: user.email || '',
+      displayName: user.displayName || 'Student',
+    })
+    return credential
   }
 
   const logout = async () => {
     await signOut(auth)
+    useUserStore.getState().clearProfile()
+  }
+
+  const updateUserEmail = async (email: string) => {
+    if (auth.currentUser) {
+      await updateEmail(auth.currentUser, email)
+    }
+  }
+
+  const updateUserPassword = async (password: string) => {
+    if (auth.currentUser) {
+      await updatePassword(auth.currentUser, password)
+    }
+  }
+
+  const linkGoogleAccount = async () => {
+    if (auth.currentUser) {
+      const provider = new GoogleAuthProvider()
+      await linkWithPopup(auth.currentUser, provider)
+    }
+  }
+
+  const reauthenticate = async (password?: string) => {
+    if (!auth.currentUser) return
+
+    const providerId = auth.currentUser.providerData[0]?.providerId
+
+    if (providerId === 'google.com') {
+      const provider = new GoogleAuthProvider()
+      await signInWithPopup(auth, provider)
+    } else if (password) {
+      const credential = EmailAuthProvider.credential(auth.currentUser.email!, password)
+      await reauthenticateWithCredential(auth.currentUser, credential)
+    }
   }
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user)
+      if (user) {
+        try {
+          let profile = await getUserProfile(user.uid)
+          if (!profile) {
+            // Handle edge case where profile might not exist (e.g. legacy user or failed initial creation)
+            await createUserProfile(user.uid, {
+              email: user.email || '',
+              displayName: user.displayName || 'Student',
+              photoURL: user.photoURL || '',
+            })
+            profile = await getUserProfile(user.uid)
+          }
+          if (profile) {
+            useUserStore.getState().setProfile(profile)
+          }
+        } catch (error) {
+          console.error('Error fetching user profile:', error)
+        }
+      } else {
+        useUserStore.getState().clearProfile()
+      }
       setLoading(false)
     })
 
@@ -64,6 +139,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     signInWithEmail,
     signUpWithEmail,
     logout,
+    updateUserEmail,
+    updateUserPassword,
+    linkGoogleAccount,
+    reauthenticate,
   }
 
   return (

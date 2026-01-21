@@ -56,7 +56,7 @@ export function generateJLPTExam(level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1'): JLPTE
         readingQuestions.push({
             ...question,
             id: `reading_${i}`,
-            stem: `Read the passage and answer:\n\n${question.stem}`,
+            stem: `次の文章を読んで、後の問いに答えなさい。\n\n${question.stem}`,
         })
     }
 
@@ -65,19 +65,19 @@ export function generateJLPTExam(level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1'): JLPTE
         sections: [
             {
                 type: 'vocab',
-                title: 'Vocabulary and Kanji',
+                title: '言語知識（文字・語彙）',
                 questions: vocabQuestions,
                 timeLimit: limits.vocab,
             },
             {
                 type: 'grammar',
-                title: 'Grammar',
+                title: '言語知識（文法）',
                 questions: grammarQuestions,
                 timeLimit: limits.grammar,
             },
             {
                 type: 'reading',
-                title: 'Reading Comprehension',
+                title: '読解',
                 questions: readingQuestions,
                 timeLimit: limits.reading,
             },
@@ -94,10 +94,10 @@ export const readingPassages = {
             text: '私は毎朝七時に起きます。朝ごはんを食べてから、学校へ行きます。学校は八時半に始まります。',
             questions: [
                 {
-                    stem: 'What time does the person wake up?',
-                    correct: '7:00 AM',
-                    options: ['7:00 AM', '8:00 AM', '8:30 AM', '9:00 AM'],
-                    explanation: '七時 means 7 o\'clock',
+                    stem: 'この人は毎朝何時に起きますか。',
+                    correct: '七時',
+                    options: ['七時', '八時', '八時半', '九時'],
+                    explanation: '「七時」に起きます。',
                 },
             ],
         },
@@ -108,10 +108,10 @@ export const readingPassages = {
             text: '今週末、友達と映画を見に行くつもりです。その後、レストランで晩ごはんを食べます。',
             questions: [
                 {
-                    stem: 'What will they do after the movie?',
-                    correct: 'Eat dinner at a restaurant',
-                    options: ['Go home', 'Eat dinner at a restaurant', 'Go shopping', 'Study together'],
-                    explanation: 'その後 means "after that", and they will eat dinner (晩ごはん) at a restaurant',
+                    stem: '映画を見た後で、何をしますか。',
+                    correct: 'レストランで晩ごはんを食べます',
+                    options: ['うちに帰ります', 'レストランで晩ごはんを食べます', '買い物に行きます', '一緒に勉強します'],
+                    explanation: '「その後、レストランで晩ごはんを食べます」と書いてあります。',
                 },
             ],
         },

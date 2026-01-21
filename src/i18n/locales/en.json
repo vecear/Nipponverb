@@ -172,6 +172,25 @@
       "n3Ready": "N3 Ready",
       "grammarExpert": "Grammar Expert",
       "jlptChampion": "JLPT Champion"
+    },
+    "settings": {
+      "modifyData": "Modify Data",
+      "accountManagement": "Account Management",
+      "changeEmail": "Change Email",
+      "changePassword": "Change Password",
+      "linkGoogle": "Link Google Account",
+      "googleLinked": "Google Account Linked",
+      "newEmail": "New Email",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm Password",
+      "updateSuccess": "Update Successful",
+      "updateError": "Update Failed",
+      "reauthRequired": "Please re-authenticate to continue",
+      "reauthTitle": "Re-authentication Required",
+      "reauthDesc": "For your security, please verify your identity before making sensitive changes.",
+      "currentPassword": "Current Password",
+      "verify": "Verify Identity",
+      "verifyWithGoogle": "Verify with Google"
     }
   },
   "common": {

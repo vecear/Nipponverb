@@ -172,6 +172,25 @@
       "n3Ready": "N3 準備完成",
       "grammarExpert": "文法專家",
       "jlptChampion": "JLPT 冠軍"
+    },
+    "settings": {
+      "modifyData": "修改資料",
+      "accountManagement": "帳號管理",
+      "changeEmail": "修改電子郵件",
+      "changePassword": "修改密碼",
+      "linkGoogle": "連結 Google 帳號",
+      "googleLinked": "已連結 Google 帳號",
+      "newEmail": "新電子郵件",
+      "newPassword": "新密碼",
+      "confirmPassword": "確認密碼",
+      "updateSuccess": "更新成功",
+      "updateError": "更新失敗",
+      "reauthRequired": "請重新驗證身分後再試",
+      "reauthTitle": "需要重新驗證身份",
+      "reauthDesc": "為了您的帳號安全，在修改敏感資料前，請先驗證您的身份。",
+      "currentPassword": "目前的密碼",
+      "verify": "驗證身份",
+      "verifyWithGoogle": "使用 Google 驗證"
     }
   },
   "common": {

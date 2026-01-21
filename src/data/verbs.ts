@@ -179,19 +179,19 @@ export function generateVerbQuestion(level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1' = '
     }
 
     const formNames: Record<string, string> = {
-        'masu': 'polite form (ます形)',
-        'te': 'te-form (て形)',
-        'ta': 'past tense (た形)',
-        'nai': 'negative form (ない形)',
-        'potential': 'potential form (可能形)',
-        'passive': 'passive form (受身形)',
+        'masu': 'ます形',
+        'te': 'て形',
+        'ta': 'た形',
+        'nai': 'ない形',
+        'potential': '可能形',
+        'passive': '受身形',
     }
 
     return {
-        stem: `Convert "${verb.dictionary}" (${verb.meaning}) to ${formNames[targetForm]}`,
+        stem: `「${verb.dictionary}」を${formNames[targetForm]}に活用させてください。`,
         correct,
         options: [correct, ...distractors.slice(0, 3)].sort(() => Math.random() - 0.5),
-        explanation: `The ${formNames[targetForm]} of ${verb.dictionary} is ${correct}`,
+        explanation: `「${verb.dictionary}」の${formNames[targetForm]}は「${correct}」です。`,
         level,
         source: 'verb_conjugation',
     }

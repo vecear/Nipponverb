@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
-import LanguageSwitcher from '../components/LanguageSwitcher'
+import { getUserProfile, createUserProfile } from '../services/userService'
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -17,7 +17,16 @@ const Login = () => {
   const handleGoogleLogin = async () => {
     try {
       setError('')
-      await signInWithGoogle()
+      const { user } = await signInWithGoogle()
+      // Check if profile exists, if not create it
+      const profile = await getUserProfile(user.uid)
+      if (!profile) {
+        await createUserProfile(user.uid, {
+          email: user.email || '',
+          displayName: user.displayName || 'Student',
+          photoURL: user.photoURL || '',
+        })
+      }
       navigate('/')
     } catch (err) {
       setError(t('auth.loginError'))
@@ -35,9 +44,11 @@ const Login = () => {
         await signInWithEmail(email, password)
       }
       navigate('/')
-    } catch (err) {
-      setError(isSignUp ? t('auth.signupError') : t('auth.loginError'))
+    } catch (err: any) {
       console.error(err)
+      // If firebase error, show clear message
+      const firebaseError = err?.message || err?.code
+      setError(firebaseError ? `${t(isSignUp ? 'auth.signupError' : 'auth.loginError')}: ${firebaseError}` : t(isSignUp ? 'auth.signupError' : 'auth.loginError'))
     }
   }
 
@@ -73,9 +84,7 @@ const Login = () => {
         animate={{ opacity: 1, y: 0 }}
         className="glass max-w-md w-full p-8 relative z-10"
       >
-        <div className="absolute top-4 right-4">
-          <LanguageSwitcher />
-        </div>
+
 
         <div className="text-center mb-8">
           <h1 className="text-4xl font-zen font-bold text-gradient mb-2">

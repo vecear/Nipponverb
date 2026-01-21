@@ -84,13 +84,9 @@ const Practice = () => {
     checkAnswer(answer)
 
     if (currentIndex < questions.length - 1) {
-      setTimeout(() => {
-        nextQuestion()
-      }, 2000)
+      nextQuestion()
     } else {
-      setTimeout(() => {
-        setShowResults(true)
-      }, 2000)
+      setShowResults(true)
     }
   }
 

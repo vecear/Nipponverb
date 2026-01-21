@@ -23,7 +23,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
 
     setTimeout(() => {
       onAnswer(answer)
-    }, 1500)
+    }, 800)
   }
 
   return (
@@ -51,15 +51,14 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
               whileTap={{ scale: selectedAnswer ? 1 : 0.95 }}
               onClick={() => handleAnswerClick(option)}
               disabled={!!selectedAnswer}
-              className={`p-6 rounded-xl border-2 transition-all duration-300 ${
-                selectedAnswer === option
+              className={`p-6 rounded-xl border-2 transition-all duration-300 ${selectedAnswer === option
                   ? isCorrect
                     ? 'bg-green-500/20 border-green-500 shadow-lg shadow-green-500/50'
                     : 'bg-red-500/20 border-red-500 shadow-lg shadow-red-500/50'
                   : selectedAnswer && option === question.correct
-                  ? 'bg-green-500/20 border-green-500'
-                  : 'glass-hover border-white/20'
-              }`}
+                    ? 'bg-green-500/20 border-green-500'
+                    : 'glass-hover border-white/20'
+                }`}
             >
               <span className="text-lg font-noto">{option}</span>
             </motion.button>
@@ -72,11 +71,10 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className={`p-6 rounded-xl ${
-                isCorrect
+              className={`p-6 rounded-xl ${isCorrect
                   ? 'bg-green-500/20 border-2 border-green-500'
                   : 'bg-red-500/20 border-2 border-red-500'
-              }`}
+                }`}
             >
               <h3 className="text-xl font-bold mb-2">
                 {isCorrect ? '正解！' : '不正解'}

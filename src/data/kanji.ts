@@ -187,10 +187,10 @@ export function generateKanjiQuestion(level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1' = 
             .slice(0, 3)
 
         return {
-            stem: `What is the reading of "${example.word}"?`,
+            stem: `「${example.word}」の読み方は何ですか？`,
             correct: example.reading,
             options: [example.reading, ...distractors].sort(() => Math.random() - 0.5),
-            explanation: `${example.word} is read as "${example.reading}" and means "${example.meaning}"`,
+            explanation: `「${example.word}」の読み方は「${example.reading}」で、意味は「${example.meaning}」です。`,
             level,
             source: 'kanji_reading',
         }
@@ -208,10 +208,10 @@ export function generateKanjiQuestion(level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1' = 
             .slice(0, 3)
 
         return {
-            stem: `What does "${example.word}" (${example.reading}) mean?`,
+            stem: `「${example.word}」（${example.reading}）の意味は何ですか？`,
             correct: example.meaning,
             options: [example.meaning, ...distractors].sort(() => Math.random() - 0.5),
-            explanation: `${example.word} (${example.reading}) means "${example.meaning}"`,
+            explanation: `「${example.word}」（${example.reading}）の意味は「${example.meaning}」です。`,
             level,
             source: 'kanji_meaning',
         }

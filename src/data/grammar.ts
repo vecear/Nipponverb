@@ -19,7 +19,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '明日、学校___行きます。',
         correct: 'へ',
         options: ['へ', 'に', 'で', 'を'],
-        explanation: '「へ」is used to indicate direction of movement.',
+        explanation: '「へ」は移動の方向を表すために使われます。',
         pattern: '〜へ行く',
     },
     {
@@ -28,7 +28,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '毎日、図書館___勉強します。',
         correct: 'で',
         options: ['で', 'に', 'へ', 'を'],
-        explanation: '「で」indicates the location where an action takes place.',
+        explanation: '「で」は動作が行われる場所を表します。',
         pattern: '〜で〜する',
     },
     {
@@ -37,7 +37,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '日本語___難しいですが、面白いです。',
         correct: 'は',
         options: ['は', 'が', 'を', 'に'],
-        explanation: '「は」marks the topic of the sentence.',
+        explanation: '「は」は文の主題（トピック）を表します。',
         pattern: '〜は〜です',
     },
     {
@@ -46,7 +46,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '昨日、友達___会いました。',
         correct: 'に',
         options: ['に', 'を', 'と', 'で'],
-        explanation: '「に」is used with 会う to indicate who you meet.',
+        explanation: '「に」は会う対象を表すために使われます。',
         pattern: '〜に会う',
     },
     {
@@ -55,7 +55,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: 'コーヒー___紅茶、どちらが好きですか。',
         correct: 'と',
         options: ['と', 'や', 'か', 'も'],
-        explanation: '「と」is used to list items exhaustively when asking "which".',
+        explanation: '「と」は「どちら」と使われ、複数を並列して表す時に使います。',
         pattern: 'AとB、どちら',
     },
 
@@ -66,7 +66,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '雨が降って___、試合は中止になった。',
         correct: 'しまった',
         options: ['しまった', 'いた', 'おいた', 'みた'],
-        explanation: '「〜てしまう」indicates an undesirable completed action.',
+        explanation: '「〜てしまう」は、残念な結果や完了した動作を表します。',
         pattern: '〜てしまう',
     },
     {
@@ -75,7 +75,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '先生に___もらいました。',
         correct: '教えて',
         options: ['教えて', '教えられて', '教えさせて', '教えて'],
-        explanation: '「〜てもらう」means to receive a favor.',
+        explanation: '「〜てもらう」は、恩恵を受ける（してもらう）ことを意味します。',
         pattern: '〜てもらう',
     },
     {
@@ -84,7 +84,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '日本に___ことがありますか。',
         correct: '行った',
         options: ['行った', '行く', '行って', '行っている'],
-        explanation: '「〜たことがある」expresses past experience.',
+        explanation: '「〜たことがある」は過去の経験を表します。',
         pattern: '〜たことがある',
     },
     {
@@ -93,7 +93,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '宿題を___ながら、音楽を聞いています。',
         correct: 'し',
         options: ['し', 'する', 'して', 'した'],
-        explanation: '「〜ながら」indicates doing two actions simultaneously.',
+        explanation: '「〜ながら」は二つの動作が同時に行われることを表します。',
         pattern: '〜ながら',
     },
 
@@ -104,7 +104,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '彼は優しい___、時々厳しい。',
         correct: 'が',
         options: ['が', 'けど', 'のに', 'ものの'],
-        explanation: '「が」connects contrasting statements.',
+        explanation: '「が」は対照的な内容をつなぐ時に使われます。',
         pattern: '〜が、〜',
     },
     {
@@ -113,7 +113,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '雨が降りそう___、傘を持って行きましょう。',
         correct: 'だから',
         options: ['だから', 'なのに', 'ても', 'ば'],
-        explanation: '「だから」indicates a logical consequence.',
+        explanation: '「だから」は論理的な帰結（理由）を表します。',
         pattern: '〜だから',
     },
     {
@@ -122,7 +122,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '彼女は日本語が話せる___、漢字は読めない。',
         correct: 'が',
         options: ['が', 'し', 'のに', 'ても'],
-        explanation: '「が」shows contrast between two abilities.',
+        explanation: '「が」は二つの能力や事柄の対比を表します。',
         pattern: '〜が、〜ない',
     },
 
@@ -133,7 +133,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '努力した___、合格できなかった。',
         correct: 'にもかかわらず',
         options: ['にもかかわらず', 'おかげで', 'ために', 'ことに'],
-        explanation: '「にもかかわらず」expresses "despite" or "in spite of".',
+        explanation: '「にもかかわらず」は「〜なのに」という意味で、逆接を表します。',
         pattern: '〜にもかかわらず',
     },
     {
@@ -142,7 +142,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '彼は忙しい___、手伝ってくれた。',
         correct: 'にもかかわらず',
         options: ['にもかかわらず', 'ばかりか', 'うえに', 'わりに'],
-        explanation: '「にもかかわらず」indicates an unexpected result.',
+        explanation: '「にもかかわらず」は予想外の結果が生じることを表します。',
         pattern: '〜にもかかわらず',
     },
 
@@ -153,7 +153,7 @@ export const grammarQuestions: GrammarQuestion[] = [
         stem: '彼の態度___、許すことができない。',
         correct: 'には',
         options: ['には', 'では', 'とは', 'からは'],
-        explanation: '「には」emphasizes the topic in formal contexts.',
+        explanation: '「には」は、改まった文脈で主題を強調する時に使われます。',
         pattern: '〜には',
     },
 ]

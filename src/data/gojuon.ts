@@ -148,18 +148,18 @@ export function generateGojuonQuestion(type: 'hiragana' | 'katakana', questionTy
 
     if (questionType === 'char-to-romaji') {
         return {
-            stem: `What is the reading of "${target.char}"?`,
+            stem: `「${target.char}」の読み方は何ですか？`,
             correct: target.romaji,
             options: [target.romaji, ...distractors.map(d => d.romaji)].sort(() => Math.random() - 0.5),
-            explanation: `${target.char} is read as "${target.romaji}"`,
+            explanation: `「${target.char}」の読み方は「${target.romaji}」です。`,
             level: 'N5' as const,
         }
     } else {
         return {
-            stem: `Which character represents "${target.romaji}"?`,
+            stem: `「${target.romaji}」を表す文字はどれですか？`,
             correct: target.char,
             options: [target.char, ...distractors.map(d => d.char)].sort(() => Math.random() - 0.5),
-            explanation: `"${target.romaji}" is written as ${target.char}`,
+            explanation: `「${target.romaji}」は「${target.char}」と書きます。`,
             level: 'N5' as const,
         }
     }
