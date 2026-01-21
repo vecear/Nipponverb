@@ -1,4 +1,4 @@
-# Nipponverb - Japanese Learning Platform
+# Nipponverb 🇯🇵 (v1.0.1) - Japanese Learning Platform
 
 ![Deploy Status](https://github.com/vecear/Nipponverb/actions/workflows/firebase-hosting-merge.yml/badge.svg)
 [![Live Demo](https://img.shields.io/badge/demo-live-success)](https://nipponverb.web.app)
@@ -36,22 +36,26 @@ A premium, interactive Japanese learning web application powered by authentic co
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd Nipponverb
 ```
 
-2. Install dependencies:
+1. Install dependencies:
+
 ```bash
 npm install
 ```
 
-3. Create a `.env` file based on `.env.example`:
+1. Create a `.env` file based on `.env.example`:
+
 ```bash
 cp .env.example .env
 ```
 
-4. Add your Firebase configuration to `.env`:
+1. Add your Firebase configuration to `.env`:
+
 ```
 VITE_FIREBASE_API_KEY=your_api_key
 VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
@@ -61,12 +65,13 @@ VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
 VITE_FIREBASE_APP_ID=your_app_id
 ```
 
-5. Start the development server:
+1. Start the development server:
+
 ```bash
 npm run dev
 ```
 
-6. Open [http://localhost:5173](http://localhost:5173) in your browser
+1. Open [http://localhost:5173](http://localhost:5173) in your browser
 
 ## Firebase Setup
 
