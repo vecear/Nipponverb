@@ -24,12 +24,23 @@ export interface UserProfile {
   createdAt: Date
 }
 
+export interface DistractorExplanation {
+  text: string
+  reason: string
+}
+
+export interface DetailedExplanation {
+  correctRule: string
+  distractors: DistractorExplanation[]
+}
+
 export interface Question {
   id: string
   stem: string
   correct: string
   options: string[]
   explanation: string
+  detailedExplanation?: DetailedExplanation
   source?: string
   level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
 }

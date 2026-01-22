@@ -65,17 +65,42 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
           <div
             className="space-y-4"
           >
-            <div className={`p-3 md:p-4 rounded-xl ${isCorrect
+            <div className={`p-4 rounded-xl space-y-3 ${isCorrect
               ? 'bg-green-500/20 border-2 border-green-500'
               : 'bg-red-500/20 border-2 border-red-500'
               }`}>
-              <h3 className="text-base md:text-lg font-bold mb-1">
+              <h3 className="text-base md:text-lg font-bold">
                 {isCorrect ? t('practice.correct') : t('practice.incorrect')}
               </h3>
-              {(showExplanation || !isCorrect) && (
-                <p className="text-xs md:text-sm text-white/80">
-                  <FuriganaText text={question.explanation} />
-                </p>
+
+              {/* Detailed Explanation Logic */}
+              {question.detailedExplanation ? (
+                <div className="space-y-3 text-sm text-left">
+                  {/* 1. Always show the correct rule */}
+                  <div className="bg-black/20 p-3 rounded-lg border-l-4 border-green-500">
+                    <p className="font-bold text-green-400 mb-1">✅ 正解解析</p>
+                    <p className="text-white/90">
+                      <FuriganaText text={question.detailedExplanation.correctRule} />
+                    </p>
+                  </div>
+
+                  {/* 2. If wrong, show specific error for the selected answer */}
+                  {!isCorrect && selectedAnswer && (
+                    <div className="bg-black/20 p-3 rounded-lg border-l-4 border-red-500">
+                      <p className="font-bold text-red-400 mb-1">❌ 錯誤分析</p>
+                      <p className="text-white/90">
+                        {question.detailedExplanation.distractors.find(d => d.text === selectedAnswer)?.reason || '此選項不正確。'}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                /* Fallback for legacy questions */
+                (showExplanation || !isCorrect) && (
+                  <p className="text-xs md:text-sm text-white/80">
+                    <FuriganaText text={question.explanation} />
+                  </p>
+                )
               )}
             </div>
 

@@ -453,55 +453,51 @@ export function generateVerbExample(verb: VerbData, form: string, lang: 'en' | '
     return { sentence, translation }
 }
 
-export function generateVerbQuestion(level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1' = 'N5') {
-    // Filter verbs by level, or fallback to N5/N4 if none found for high levels
-    let levelVerbs = commonVerbs.filter(v => v.level === level)
-    if (levelVerbs.length === 0) {
-        levelVerbs = commonVerbs.filter(v => v.level === 'N5' || v.level === 'N4')
-    }
+// Helper to generate a contextual stem with a blank
+function generateContextualStem(verb: VerbData, form: string, context: VerbContext): { stem: string, meaning: string, formHint: string } {
+    const meaning = verb.meaning_zh
+    const dictForm = verb.dictionary
+    const blank = '______'
+    const { text: conjugated } = conjugateVerbWithReading(verb, form)
+    // Strip furigana markers for simple matching in native examples
+    const plainConjugated = conjugated.replace(/\{[^}]+\}/g, '')
 
-    const verb = levelVerbs[Math.floor(Math.random() * levelVerbs.length)]
+    // Get context with fallback
+    const jaContext = context.ja || ''
+    const zhContext = context.zh || ''
 
-    const forms = ['masu', 'te', 'ta', 'nai', 'potential', 'passive']
-    const targetForm = forms[Math.floor(Math.random() * forms.length)]
-
-    const { text: correct } = conjugateVerbWithReading(verb, targetForm)
-
-    // Generate tricky distractors
-    const distractors: string[] = []
-
-    // Common mistake: ra-nuki (ら抜き) for potential
-    if (targetForm === 'potential' && verb.type === 'ichidan') {
-        const stem = verb.dictionary.slice(0, -1)
-        // For distractors, we might not need furigana or can generate it simply
-        distractors.push(`${stem}{${verb.reading.slice(0, -1)}}れる`) // Wrong: 食べれる instead of 食べられる
-    }
-
-    // Wrong verb type conjugation
-    if (verb.type === 'godan') {
-        const stem = verb.dictionary.slice(0, -1)
-        const readingStem = verb.reading.slice(0, -1)
-        distractors.push(`${stem}{${readingStem}}て`) // Ichidan-style mistake
-    }
-
-    // Add other random conjugations as distractors
-    const otherForms = forms.filter(f => f !== targetForm)
-    otherForms.forEach(f => {
-        const { text: wrongForm } = conjugateVerbWithReading(verb, f)
-        if (wrongForm !== correct && !distractors.includes(wrongForm)) {
-            distractors.push(wrongForm)
-        }
-    })
-
-    // Ensure we have exactly 3 distractors
-    while (distractors.length < 3) {
-        const randomVerb = levelVerbs[Math.floor(Math.random() * levelVerbs.length)]
-        const { text: randomForm } = conjugateVerbWithReading(randomVerb, targetForm)
-        if (randomForm !== correct && !distractors.includes(randomForm)) {
-            distractors.push(randomForm)
+    // 1. Try to find a Native Example that contains the conjugated form
+    if (verb.native_examples && verb.native_examples.length > 0) {
+        for (const ex of verb.native_examples) {
+            if (ex.ja.includes(plainConjugated)) {
+                const formHints: Record<string, string> = {
+                    'masu': 'ます形 (丁寧語)',
+                    'te': 'て形 (請求/連接)',
+                    'ta': 'た形 (過去/完了)',
+                    'nai': 'ない形 (否定)',
+                    'potential': '可能形 (能力/許可)',
+                    'passive': '受身形 (被動/敬語)',
+                    'causative': '使役形 (強制/許可)',
+                    'volitional': '意向形 (勸誘/意志)'
+                }
+                const regex = new RegExp(plainConjugated, 'g')
+                const stemWithBlank = ex.ja.replace(regex, blank)
+                if (stemWithBlank !== ex.ja) {
+                    return {
+                        stem: stemWithBlank,
+                        meaning: ex.zh,
+                        formHint: formHints[form] || '活用形'
+                    }
+                }
+            }
         }
     }
 
+    // 2. Fallback to templates that always include the verb's context for clarity
+    const pick = (arr: any[]) => arr[Math.floor(Math.random() * arr.length)]
+    const hasContext = jaContext && zhContext
+
+    // Form names in Chinese for clear instructions
     const formNames: Record<string, string> = {
         'masu': 'ます形',
         'te': 'て形',
@@ -509,16 +505,408 @@ export function generateVerbQuestion(level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1' = '
         'nai': 'ない形',
         'potential': '可能形',
         'passive': '受身形',
+        'causative': '使役形',
+        'volitional': '意向形'
+    }
+    const formName = formNames[form] || '活用形'
+
+    switch (form) {
+        case 'masu':
+            if (hasContext) {
+                return pick([
+                    {
+                        stem: `私{わたし}は毎日{まいにち}${jaContext} ${blank}。`,
+                        meaning: `我每天都會${meaning}${zhContext}。`,
+                        formHint: 'ます形 (習慣)',
+                    },
+                    {
+                        stem: `週末{しゅうまつ}は友達{ともだち}と${jaContext} ${blank}。`,
+                        meaning: `週末會和朋友一起${meaning}${zhContext}。`,
+                        formHint: 'ます形 (計畫)',
+                    },
+                    {
+                        stem: `彼{かれ}はいつも${jaContext} ${blank}。`,
+                        meaning: `他總是會${meaning}${zhContext}。`,
+                        formHint: 'ます形 (習慣)',
+                    }
+                ])
+            }
+            // No context - use explicit verb reference
+            return {
+                stem: `「${dictForm}」→ 私{わたし}は毎日{まいにち} ${blank}。`,
+                meaning: `「${meaning}」→ 我每天都會～。`,
+                formHint: 'ます形 (丁寧語)',
+            }
+        case 'te':
+            if (hasContext) {
+                return pick([
+                    {
+                        stem: `${jaContext} ${blank} ください。`,
+                        meaning: `請${meaning}${zhContext}。`,
+                        formHint: 'て形 (請求)',
+                    },
+                    {
+                        stem: `${jaContext} ${blank} から、出{で}かけましょう。`,
+                        meaning: `${meaning}完${zhContext}之後，出門吧。`,
+                        formHint: 'て形 (順序)',
+                    },
+                    {
+                        stem: `今{いま}${jaContext} ${blank} います。`,
+                        meaning: `現在正在${meaning}${zhContext}。`,
+                        formHint: 'て形 (進行)',
+                    },
+                    {
+                        stem: `${jaContext} ${blank} もいいですか？`,
+                        meaning: `可以${meaning}${zhContext}嗎？`,
+                        formHint: 'て形 (許可)',
+                    }
+                ])
+            }
+            return {
+                stem: `「${dictForm}」→ ちょっと ${blank} ください。`,
+                meaning: `「${meaning}」→ 請稍微～一下。`,
+                formHint: 'て形 (請求)',
+            }
+        case 'ta':
+            if (hasContext) {
+                return pick([
+                    {
+                        stem: `昨日{きのう}${jaContext} ${blank}。`,
+                        meaning: `昨天${meaning}了${zhContext}。`,
+                        formHint: 'た形 (過去)',
+                    },
+                    {
+                        stem: `もう${jaContext} ${blank}？`,
+                        meaning: `已經${meaning}${zhContext}了嗎？`,
+                        formHint: 'た形 (確認)',
+                    },
+                    {
+                        stem: `${jaContext} ${blank} ことがありますか？`,
+                        meaning: `你有${meaning}過${zhContext}嗎？`,
+                        formHint: 'た形 (經驗)',
+                    },
+                    {
+                        stem: `さっき${jaContext} ${blank} よ。`,
+                        meaning: `剛剛${meaning}了${zhContext}喔。`,
+                        formHint: 'た形 (報告)',
+                    }
+                ])
+            }
+            return {
+                stem: `「${dictForm}」→ 昨日{きのう} ${blank}。`,
+                meaning: `「${meaning}」→ 昨天～了。`,
+                formHint: 'た形 (過去)',
+            }
+        case 'nai':
+            if (hasContext) {
+                return pick([
+                    {
+                        stem: `私{わたし}は${jaContext} ${blank}。`,
+                        meaning: `我不${meaning}${zhContext}。`,
+                        formHint: 'ない形 (否定)',
+                    },
+                    {
+                        stem: `まだ${jaContext} ${blank}。`,
+                        meaning: `還沒${meaning}${zhContext}。`,
+                        formHint: 'ない形 (尚未)',
+                    },
+                    {
+                        stem: `${jaContext} ${blank} ほうがいいよ。`,
+                        meaning: `最好不要${meaning}${zhContext}喔。`,
+                        formHint: 'ない形 (建議)',
+                    },
+                    {
+                        stem: `${jaContext} ${blank} と困{こま}ります。`,
+                        meaning: `不${meaning}${zhContext}的話會很困擾。`,
+                        formHint: 'ない形 (必要)',
+                    }
+                ])
+            }
+            return {
+                stem: `「${dictForm}」→ 私{わたし}は全然{ぜんぜん} ${blank}。`,
+                meaning: `「${meaning}」→ 我完全不～。`,
+                formHint: 'ない形 (否定)',
+            }
+        case 'potential':
+            if (hasContext) {
+                return pick([
+                    {
+                        stem: `${jaContext} ${blank}？`,
+                        meaning: `你會${meaning}${zhContext}嗎？`,
+                        formHint: '可能形 (詢問)',
+                    },
+                    {
+                        stem: `やっと${jaContext} ${blank} ようになった。`,
+                        meaning: `終於變得會${meaning}${zhContext}了。`,
+                        formHint: '可能形 (變化)',
+                    },
+                    {
+                        stem: `練習{れんしゅう}すれば${jaContext} ${blank} ようになる。`,
+                        meaning: `只要練習就能${meaning}${zhContext}了。`,
+                        formHint: '可能形 (鼓勵)',
+                    }
+                ])
+            }
+            return {
+                stem: `「${dictForm}」→ やっと ${blank} ようになった。`,
+                meaning: `「${meaning}」→ 終於變得會～了。`,
+                formHint: '可能形 (能力)',
+            }
+        case 'passive':
+            if (hasContext) {
+                return pick([
+                    {
+                        stem: `先生{せんせい}に${jaContext} ${blank}。`,
+                        meaning: `被老師${meaning}${zhContext}了。`,
+                        formHint: '受身形 (被動)',
+                    },
+                    {
+                        stem: `友達{ともだち}に${jaContext} ${blank}。`,
+                        meaning: `被朋友${meaning}${zhContext}了。`,
+                        formHint: '受身形 (被動)',
+                    }
+                ])
+            }
+            return {
+                stem: `「${dictForm}」→ 友達{ともだち}に ${blank}。`,
+                meaning: `「${meaning}」→ 被朋友～了。`,
+                formHint: '受身形 (被動)',
+            }
+        case 'causative':
+            if (hasContext) {
+                return pick([
+                    {
+                        stem: `母{はは}は私{わたし}に${jaContext} ${blank}。`,
+                        meaning: `媽媽讓我${meaning}${zhContext}。`,
+                        formHint: '使役形 (指示)',
+                    },
+                    {
+                        stem: `先生{せんせい}は学生{がくせい}に${jaContext} ${blank}。`,
+                        meaning: `老師讓學生${meaning}${zhContext}。`,
+                        formHint: '使役形 (指示)',
+                    }
+                ])
+            }
+            return {
+                stem: `「${dictForm}」→ 母{はは}は私{わたし}に ${blank}。`,
+                meaning: `「${meaning}」→ 媽媽讓我～。`,
+                formHint: '使役形 (使役)',
+            }
+        case 'volitional':
+            if (hasContext) {
+                return pick([
+                    {
+                        stem: `一緒{いっしょ}に${jaContext} ${blank}！`,
+                        meaning: `一起${meaning}${zhContext}吧！`,
+                        formHint: '意向形 (邀約)',
+                    },
+                    {
+                        stem: `今日{きょう}は${jaContext} ${blank} と思{おも}う。`,
+                        meaning: `今天想${meaning}${zhContext}。`,
+                        formHint: '意向形 (意志)',
+                    },
+                    {
+                        stem: `そろそろ${jaContext} ${blank} か。`,
+                        meaning: `差不多該${meaning}${zhContext}了吧。`,
+                        formHint: '意向形 (提議)',
+                    }
+                ])
+            }
+            return {
+                stem: `「${dictForm}」→ 一緒{いっしょ}に ${blank}！`,
+                meaning: `「${meaning}」→ 一起～吧！`,
+                formHint: '意向形 (邀約)',
+            }
+        default:
+            return {
+                stem: `「${dictForm}」を${formName}にしてください → ${blank}`,
+                meaning: `請將「${meaning}」變成${formName}`,
+                formHint: formName,
+            }
+    }
+}
+
+export function generateVerbQuestion(level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1' = 'N5') {
+    // Filter verbs by level, or fallback
+    let levelVerbs = commonVerbs.filter(v => v.level === level)
+    if (levelVerbs.length === 0) {
+        levelVerbs = commonVerbs.filter(v => v.level === 'N5' || v.level === 'N4')
     }
 
-    const { text: dictWithFurigana } = conjugateVerbWithReading(verb, 'dictionary')
+    const verb = levelVerbs[Math.floor(Math.random() * levelVerbs.length)]
+
+    // Focus on main conjugation forms for drills
+    const forms = ['masu', 'te', 'ta', 'nai', 'potential']
+    const targetForm = forms[Math.floor(Math.random() * forms.length)]
+
+    const { text: correct } = conjugateVerbWithReading(verb, targetForm)
+
+    // Generate Context
+    const context = verb.context || { ja: 'よく', zh: '', en: '' }
+    const { stem, meaning, formHint } = generateContextualStem(verb, targetForm, context)
+
+    // --- Intelligent Distractor Generation ---
+    const optionsWithReasons: { text: string, reason: string }[] = []
+
+    // 1. Add Correct Answer
+    // Check conjugation rule to generate the "Correct Rule" string
+    let correctRule = ''
+    if (verb.type === 'godan') {
+        correctRule = `【${formHint}】「${verb.dictionary}」是第一類動詞 (五段)，字尾「${verb.group}」的變化規則是正確的。`
+    } else if (verb.type === 'ichidan') {
+        correctRule = `【${formHint}】「${verb.dictionary}」是第二類動詞 (一段)，去掉「る」直接變化。`
+    } else {
+        correctRule = `【${formHint}】「${verb.dictionary}」是第三類動詞 (不規則)，請死背。`
+    }
+
+    // 2. Distractor: Wrong Verb Group Logic
+    // Special Trap: False Ichidan (Verbs that look like Ichidan but are Godan)
+    const falseIchidan = ['帰る', '切る', '走る', '知る', '入る', '要る']
+    const isFalseIchidan = falseIchidan.includes(verb.dictionary)
+
+    let wrongGroupText = ''
+    let wrongGroupReason = ''
+
+    if (isFalseIchidan) {
+        // Trap the user: conjugate it as if it WERE an Ichidan verb (just drop 'ru')
+        const readingStem = verb.reading.slice(0, -1)
+        const suffix = targetForm === 'te' ? 'て' : targetForm === 'ta' ? 'た' : targetForm === 'nai' ? 'ない' : 'ます'
+        wrongGroupText = verifyFurigana(verb, readingStem + suffix)
+        wrongGroupReason = `陷阱題！「${verb.dictionary}」雖然結尾是「iru/eru」，但它是「第一類動詞 (五段)」，不能像第二類動詞那樣直接去尾。`
+    } else if (verb.type === 'godan') {
+        // Regular Godan -> Pseudo-Ichidan distractor
+        const readingStem = verb.reading.slice(0, -1)
+        const suffix = targetForm === 'te' ? 'て' : targetForm === 'ta' ? 'た' : targetForm === 'nai' ? 'ない' : 'ます'
+        wrongGroupText = verifyFurigana(verb, readingStem + suffix)
+        wrongGroupReason = `錯誤地套用了「第二類動詞 (一段)」的規則 (直接去尾)。但這是第一類動詞。`
+    } else if (verb.type === 'ichidan') {
+        // Ichidan -> Pseudo-Godan (Treat 'ru' as Godan 'ru')
+        const readingStem = verb.reading.slice(0, -1)
+        let ending = ''
+
+        if (targetForm === 'te') ending = 'って'
+        else if (targetForm === 'ta') ending = 'った'
+        else if (targetForm === 'nai') ending = 'らない'
+        else if (targetForm === 'masu') ending = 'ります'
+        else ending = 'られる'
+
+        if (ending) {
+            wrongGroupText = verifyFurigana(verb, readingStem + ending)
+            wrongGroupReason = `錯誤地套用了「第一類動詞 (五段)」的規則。但這是第二類動詞。`
+        }
+    }
+
+    if (wrongGroupText && wrongGroupText !== correct) {
+        optionsWithReasons.push({ text: wrongGroupText, reason: wrongGroupReason })
+    }
+
+    // 3. Distractor: Wrong Onbin (Sound Change) - Specific for Te/Ta
+    // e.g. Yomu -> Yote (Wrong) vs Yonde (Correct)
+    if (verb.type === 'godan' && (targetForm === 'te' || targetForm === 'ta')) {
+        // Generate a "Plain" append or "Wrong Onbin"
+        // e.g. 飲む (mu) -> 飲んで. Distractor: 飲いて (k-style) or 飲って (r-style)
+        const readingStem = verb.reading.slice(0, -1)
+
+        const wrongSuffix = targetForm === 'te'
+            ? (verb.group === 'く' ? 'って' : 'いて') // Swap ku/ru rules
+            : (verb.group === 'く' ? 'った' : 'いた')
+
+        const txt = verifyFurigana(verb, readingStem + wrongSuffix)
+        optionsWithReasons.push({
+            text: txt,
+            reason: `音便規則錯誤。字尾「${verb.group}」不應該這樣變化。`
+        })
+    }
+
+    // 4. Distractor: Wrong Form (e.g. Past instead of Present)
+    // Asking for Te-form, give Ta-form
+    let wrongFormType = ''
+    if (targetForm === 'te') wrongFormType = 'ta'
+    else if (targetForm === 'ta') wrongFormType = 'te'
+    else if (targetForm === 'masu') wrongFormType = 'dictionary' // subtle
+    else wrongFormType = 'masu'
+
+    if (wrongFormType) {
+        const { text: wForm } = conjugateVerbWithReading(verb, wrongFormType)
+        if (wForm !== correct) {
+            const label = wrongFormType === 'te' ? 'て形' : wrongFormType === 'ta' ? 'た形' : wrongFormType
+            optionsWithReasons.push({
+                text: wForm,
+                reason: `這是「${label}」，不是題目要求的「${targetForm === 'te' ? 'て形' : targetForm === 'ta' ? 'た形' : targetForm}」。`
+            })
+        }
+    }
+
+    // 5. Filler Distractors (Random other verbs or forms)
+    // Just simple manual construction to ensure we have 3 distractors
+    while (optionsWithReasons.length < 3) {
+        const randomSuffix = ['て', 'た', 'ます', 'ない'][Math.floor(Math.random() * 4)]
+        const readingStem = verb.reading.slice(0, -1)
+
+        // Just make a nonsense conjugation that looks real
+        // e.g. 飲さ (nomu -> nomisa)
+        const nonsense = verifyFurigana(verb, readingStem + ['さ', 'み', 'き', 'し'][Math.floor(Math.random() * 4)] + randomSuffix)
+
+        if (nonsense !== correct && !optionsWithReasons.some(o => o.text === nonsense)) {
+            optionsWithReasons.push({ text: nonsense, reason: '不存在的動詞變化形式。' })
+        }
+    }
+
+    // Shuffle and pick 3 unique distractors + correct
+    // We explicitly keep track of the explanations
+    const finalOptions = [{ text: correct, reason: 'CORRECT' }, ...optionsWithReasons.slice(0, 3)]
+    finalOptions.sort(() => Math.random() - 0.5)
+
+    // Build the detailed explanation object
+    const distractorsExpl = finalOptions
+        .filter(o => o.text !== correct)
+        .map(o => ({
+            text: o.text,
+            reason: o.reason
+        }))
 
     return {
-        stem: `「${dictWithFurigana}」を${formNames[targetForm]}に活用{かつよう}させてください。`,
+        id: `verb_${Date.now()}_${Math.random()}`,
+        stem: stem + ` (${meaning})`, // Add meaning to stem for context
         correct,
-        options: [correct, ...distractors.slice(0, 3)].sort(() => Math.random() - 0.5),
-        explanation: `「${dictWithFurigana}」の${formNames[targetForm]}は「${correct}」です。`,
+        options: finalOptions.map(o => o.text),
+        explanation: `正解は「${correct}」です。${correctRule}`,
+        detailedExplanation: {
+            correctRule: correctRule,
+            distractors: distractorsExpl
+        },
         level,
-        source: 'verb_conjugation',
+        source: 'Contextual Verb Drill',
     }
+}
+
+// Helper to attach kanji stem furigana to a manually built string
+function verifyFurigana(verb: VerbData, combinedReading: string): string {
+    // This is a simplified version of conjugateVerbWithReading's logic
+    // We know the verb's kanji stem.
+    // e.g. 帰る (akaeru) -> Kanji '帰', Reading 'かえ'
+    // If combinedReading is 'かえって', we want '帰{かえ}って'
+
+    if (verb.dictionary === verb.reading) return combinedReading;
+
+    const dict = verb.dictionary;
+    const read = verb.reading;
+
+    // Find shared suffix to isolate stem
+    let i = dict.length - 1;
+    let j = read.length - 1;
+    while (i >= 0 && j >= 0 && dict[i] === read[j]) {
+        i--;
+        j--;
+    }
+
+    const kanjiPart = dict.substring(0, i + 1);
+    const readingStem = read.substring(0, j + 1);
+
+    // If the combinedReading starts with the readingStem, we can wrap it
+    if (combinedReading.startsWith(readingStem)) {
+        return `${kanjiPart}{${readingStem}}${combinedReading.substring(readingStem.length)}`;
+    }
+
+    return combinedReading;
 }
