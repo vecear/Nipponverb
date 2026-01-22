@@ -17,6 +17,19 @@
   * {
     @apply scroll-smooth;
   }
+
+  /* Ruby/Furigana alignment */
+  ruby {
+    ruby-align: center;
+    ruby-position: over;
+  }
+
+  rt {
+    ruby-align: center;
+    text-align: center;
+    font-size: 0.5em;
+    color: rgba(255, 183, 197, 0.8); /* sakura-pink with opacity */
+  }
 }
 
 @layer components {
