@@ -497,5 +497,909 @@ export const n5Questions: StaticQuestion[] = [
         correctIndex: 0,
         tag: 'te',
         correctRule: '請早點回家。 \n【音便】作為五段動詞，「帰る」在變換為 te 形時，字尾 ru 發生促音便變成「帰って」。'
+    },
+    // --- SOP Expanded N5 Batch 2 & 3 ---
+    // 1. 入る (Hairu)
+    {
+        id: 'n5_v1399_hairu_1',
+        prob: '部屋{へや}に ______。',
+        prob_zh: ' *進入* 房間。',
+        level: 'N5',
+        options: [
+            { text: '入{はい}ります', reason: '正確！五段動詞。' },
+            { text: '入{い}れます', reason: '錯誤：那是他動詞(放入)。' },
+            { text: '入{はい}り', reason: '正確！(連用)' },
+            { text: '入{はい}って', reason: '正確！(音便)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '進入房間。 \n【活用】「入る」(hairu) 是五段動詞，ます形為「入ります」。'
+    },
+    {
+        id: 'n5_v1399_hairu_2',
+        prob: 'お風呂{ふろ}に ______。',
+        prob_zh: ' *洗* 澡(進入浴缸)。',
+        level: 'N5',
+        options: [
+            { text: '入{はい}ります', reason: '正確！洗澡的慣用搭配。' },
+            { text: '入{はい}って', reason: '正確！' },
+            { text: '浴{あ}びます', reason: '正確！(淋浴用浴びる)' },
+            { text: '入{い}れます', reason: '錯誤：他動詞。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '洗澡。 \n【用法】「お風呂に入る」是日文洗澡的標準說法。'
+    },
+    // 2. 止まる (Tomaru)
+    {
+        id: 'n5_v1399_tomaru_1',
+        prob: '車{くるま}が ______。',
+        prob_zh: '車子 *停* 了下來。',
+        level: 'N5',
+        options: [
+            { text: '止{と}まりました', reason: '正確！五段自動詞。' },
+            { text: '止{と}めました', reason: '錯誤：這是人把車停下來(他動詞)。' },
+            { text: '止{と}まって', reason: '正確！' },
+            { text: '終{お}わりました', reason: '錯誤：結束。' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '車子停了下來。 \n【自他動詞】「止まる」(自動) vs 「止める」(他動)。'
+    },
+    {
+        id: 'n5_v1399_tomaru_2',
+        prob: '時計{とけい}が ______ います。',
+        prob_zh: '時鐘 *停* 了。',
+        level: 'N5',
+        options: [
+            { text: '止{と}まって', reason: '正確！自動詞狀態持續。' },
+            { text: '止{と}めて', reason: '錯誤：他動詞。' },
+            { text: '切{き}れて', reason: '正確！(斷掉/沒電)' },
+            { text: '止{と}まり', reason: '錯誤：接續。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '時鐘停了。 \n【活用】五段動詞「止まる」促音便。'
+    },
+    // 3. 弾く (Hiku - play)
+    {
+        id: 'n5_v1399_hiku_p_1',
+        prob: 'ピアノを ______。',
+        prob_zh: ' *彈* 鋼琴。',
+        level: 'N5',
+        options: [
+            { text: '弾{ひ}きます', reason: '正確！五段動詞。' },
+            { text: '弾{ひ}いて', reason: '正確！(音便)' },
+            { text: '弾{ひ}き', reason: '正確！(連用)' },
+            { text: '弾{ひ}か', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '彈鋼琴。 \n【活用】「弾く」(hiku) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_hiku_p_2',
+        prob: 'ギターを ______ ください。',
+        prob_zh: '請 *彈* 吉他。',
+        level: 'N5',
+        options: [
+            { text: '弾{ひ}いて', reason: '正確！五段動詞 i 音便。' },
+            { text: '弾{ひ}か', reason: '錯誤：否定。' },
+            { text: '弾{ひ}き', reason: '錯誤：接續。' },
+            { text: '引{ひ}いて', reason: '錯誤：漢字誤用(那是拉/抽)。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請彈吉他。 \n【音便】五段動詞結尾「く」變為「いて」。'
+    },
+    // 4. 作る (Tsukuru)
+    {
+        id: 'n5_v1399_tsukuru_1',
+        prob: '晩{ばん}ご飯{ごはん}を ______。',
+        prob_zh: ' *做* 晚飯。',
+        level: 'N5',
+        options: [
+            { text: '作{つく}ります', reason: '正確！五段動詞。' },
+            { text: '作{つく}り', reason: '正確！(連用)' },
+            { text: '作{つく}って', reason: '正確！(音便)' },
+            { text: '造{ぞう}ります', reason: '錯誤：漢字層次不同(大型建築用)。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '做晚飯。 \n【活用】「作る」(tsukuru) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_tsukuru_2',
+        prob: 'これ、私{わたし}が ______ 料理{りょうり}です。',
+        prob_zh: '這是這是我 *做* 的料理。',
+        level: 'N5',
+        options: [
+            { text: '作{つく}った', reason: '正確！五段動詞過去式促音便。' },
+            { text: '作{つく}ります', reason: '正確！(但此處修飾名詞，過去式更自然)' },
+            { text: '作{つく}り', reason: '錯誤：接續錯誤。' },
+            { text: '作{つく}て', reason: '錯誤：音便不完整。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '這是我做的料理。 \n【音便】五段動詞結尾「る」變為「った」。'
+    },
+    // 5. 言う (Iu)
+    {
+        id: 'n5_v1399_iu_1',
+        prob: '本当{ほんとう}のことを ______。',
+        prob_zh: ' *說* 實話。',
+        level: 'N5',
+        options: [
+            { text: '言{い}います', reason: '正確！五段動詞。' },
+            { text: '言{い}い', reason: '正確！(連用)' },
+            { text: '言{い}って', reason: '正確！(音便)' },
+            { text: '話{はな}します', reason: '正確！(說話，但短句表達用「言う」)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '說實話。 \n【活用】「言う」(iu) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_iu_2',
+        prob: '名前{なまえ}を ______ ください。',
+        prob_zh: '請 *說出* 名字。',
+        level: 'N5',
+        options: [
+            { text: '言{い}って', reason: '正確！五段動詞促音便。' },
+            { text: '言{い}わ', reason: '錯誤：否定。' },
+            { text: '話{はな}して', reason: '正確！(交談)' },
+            { text: '言{い}え', reason: '錯誤：命令。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請說出名字。 \n【音便】五段動詞結尾「う」變為「って」。'
+    },
+    // 6. 引く (Hiku - pull)
+    {
+        id: 'n5_v1399_hiku_1',
+        prob: '風邪{かぜ}を ______。',
+        prob_zh: ' *感冒* (拉到了感冒)。',
+        level: 'N5',
+        options: [
+            { text: '引{ひ}きました', reason: '正確！感冒的慣用搭配。' },
+            { text: '引{ひ}き', reason: '正確！' },
+            { text: '飲{の}みました', reason: '錯誤：那是吃藥。' },
+            { text: '引{ひ}き', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '感冒了。 \n【語義】「風邪を引く」是固定用法。'
+    },
+    {
+        id: 'n5_v1399_hiku_2',
+        prob: 'ドアを ______ ください。',
+        prob_zh: '請 *拉* 門。',
+        level: 'N5',
+        options: [
+            { text: '引{ひ}いて', reason: '正確！五段動詞 i 音便。' },
+            { text: '押{お}して', reason: '正確！(那是推)' },
+            { text: '引{ひ}き', reason: '錯誤：接續。' },
+            { text: '引{ひ}か', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '請拉門。 \n【音便】五段動詞「引く」(hiku) 變為「引いて」。'
+    },
+    // 7. 持つ (Motsu)
+    {
+        id: 'n5_v1399_motsu_1',
+        prob: '荷物{にもつ}を ______。',
+        prob_zh: ' *拿* 行李。',
+        level: 'N5',
+        options: [
+            { text: '持{も}ちます', reason: '正確！五段動詞。' },
+            { text: '持{も}って', reason: '正確！' },
+            { text: '持{も}ち', reason: '正確！(連用)' },
+            { text: '持{も}た', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '拿行李。 \n【活用】「持つ」(motsu) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_motsu_2',
+        prob: '今{いま}、お宝{たから}を ______ います。',
+        prob_zh: '現在正 *持有(拿著)* 寶物。',
+        level: 'N5',
+        options: [
+            { text: '持{も}って', reason: '正確！持有狀態的持續。' },
+            { text: '持{も}ち', reason: '錯誤：接續。' },
+            { text: '待{ま}って', reason: '錯誤：那是等待。' },
+            { text: '持{も}た', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '現在正持有寶物。 \n【活用】五段動詞「持つ」促音便。'
+    },
+    // 8. 吸う (Suu)
+    {
+        id: 'n5_v1399_suu_1',
+        prob: 'タバコを ______。',
+        prob_zh: ' *抽* 菸。',
+        level: 'N5',
+        options: [
+            { text: '吸{す}います', reason: '正確！五段動詞。' },
+            { text: '吸{す}って', reason: '正確！(音便)' },
+            { text: '吸{す}い', reason: '正確！(連用)' },
+            { text: '吐{は}きます', reason: '錯誤：吐出。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '抽菸。 \n【活用】「吸う」(suu) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_suu_2',
+        prob: '空気{くうき}を ______ ください。',
+        prob_zh: '請 *呼吸* 空氣。',
+        level: 'N5',
+        options: [
+            { text: '吸{す}って', reason: '正確！五段動詞促音便。' },
+            { text: '吸{す}い', reason: '錯誤：接續。' },
+            { text: '吸{す}わ', reason: '錯誤：否定。' },
+            { text: '吐{は}いて', reason: '正確！(呼氣)' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請呼吸空氣。 \n【音便】五段動詞結尾「う」變為「って」。'
+    },
+    // 9. 閉める (Shimeru)
+    {
+        id: 'n5_v1399_shimeru_1',
+        prob: '窓{まど}を ______。',
+        prob_zh: ' *關* 窗戶。',
+        level: 'N5',
+        options: [
+            { text: '閉{し}めます', reason: '正確！一段他動詞。' },
+            { text: '閉{し}まって', reason: '錯誤：自動詞(關著)。' },
+            { text: '閉{し}め', reason: '正確！(連用)' },
+            { text: '開{あ}けます', reason: '錯誤：那是打開。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '關窗戶。 \n【自他動詞】「閉める」(他動) vs 「閉まる」(自動)。'
+    },
+    {
+        id: 'n5_v1399_shimeru_2',
+        prob: '最後{さいご}に、鍵{かぎ}を ______。',
+        prob_zh: '最後， *鎖上* 鎖。',
+        level: 'N5',
+        options: [
+            { text: '閉{し}めます', reason: '正確！鎖門的動作。' },
+            { text: '締{し}めます', reason: '正確！(備註: 打領帶或綁緊才用這個漢字)' },
+            { text: '掛{か}けます', reason: '正確！(常用搭配: 鍵を掛ける)' },
+            { text: '選{えら}び', reason: '錯誤：選擇。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '鎖上鎖。 \n【用法】雖然常用「鍵を掛ける」，但「閉める」在日常中也可用於表示關閉並鎖上的狀態。'
+    },
+    // --- SOP Expanded N5 Batch 3 ---
+    // 10. 見る (Miru)
+    {
+        id: 'n5_v1399_miru_1',
+        prob: 'テレビを ______。',
+        prob_zh: ' *看* 電視。',
+        level: 'N5',
+        options: [
+            { text: '見{み}ます', reason: '正確！一段動詞。' },
+            { text: '見{み}て', reason: '正確！(TE形)' },
+            { text: '見{み}られ', reason: '錯誤：可能/受身。' },
+            { text: '見{み}よう', reason: '錯誤：意向形。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '看電視。 \n【活用】「見る」(miru) 是一段動詞。'
+    },
+    {
+        id: 'n5_v1399_miru_2',
+        prob: '昨日{きのう}、映画{えいが}を ______。',
+        prob_zh: '昨天 *看* 了電影。',
+        level: 'N5',
+        options: [
+            { text: '見{み}ました', reason: '正確！一段語尾去「る」加「ました」。' },
+            { text: '見{み}った', reason: '錯誤：促音便是五段動詞。' },
+            { text: '見{み}た', reason: '正確！(常體)' },
+            { text: '見{み}る', reason: '錯誤：時態錯誤。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '昨天看了電影。 \n【活用】一段動詞的中頓/過去式不發生音便。'
+    },
+    // 11. 開く (Hiraku)
+    {
+        id: 'n5_v1399_hiraku_1',
+        prob: '本{ほん}を ______ ください。',
+        prob_zh: '請 *打開* 書。',
+        level: 'N5',
+        options: [
+            { text: '開{ひら}いて', reason: '正確！五段動詞 i 音便。' },
+            { text: '開{ひら}き', reason: '正確！(連用)' },
+            { text: '開{あ}けて', reason: '正確！(他動詞開ける)' },
+            { text: '開{ひら}いた', reason: '錯誤：過去式。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請打開書。 \n【音便】五段動詞「開く」結尾「く」發生 i 音便。'
+    },
+    {
+        id: 'n5_v1399_hiraku_2',
+        prob: '花{はな}が ______。',
+        prob_zh: '花 *開* 了。',
+        level: 'N5',
+        options: [
+            { text: '開{ひら}きました', reason: '正確！五段ます過去式。' },
+            { text: '開{あ}きました', reason: '正確！(但在開花語境中 hiraku 更常用)' },
+            { text: '開{ひら}いて', reason: '錯誤：接續錯誤。' },
+            { text: '開{あ}けて', reason: '錯誤：那是他動詞。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '花開了。 \n【語義】「開く」(hiraku) 常用於花朵綻放、展開書本或雨傘。'
+    },
+    // 12. 会う (Au)
+    {
+        id: 'n5_v1399_au_1',
+        prob: '駅{えき}で友達{ともだち}に ______。',
+        prob_zh: '在車站和朋友 *見面*。',
+        level: 'N5',
+        options: [
+            { text: '会{あ}います', reason: '正確！五段動詞。' },
+            { text: '会{あ}いて', reason: '錯誤：促音便應為「あって」。' },
+            { text: '会{あ}わ', reason: '錯誤：否定。' },
+            { text: '会{あ}え', reason: '錯誤：可能/命令。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '在車站和朋友見面。 \n【活用】「会う」(au) 是五段動詞。注意其 te 形為「あって」。'
+    },
+    {
+        id: 'n5_v1399_au_2',
+        prob: '昨日{きのう}、先生{せんせい}に ______。',
+        prob_zh: '昨天 *遇見* 了老師。',
+        level: 'N5',
+        options: [
+            { text: '会{あ}いました', reason: '正確！五段ます過去式。' },
+            { text: '会{あ}った', reason: '正確！(常體)' },
+            { text: '会{あ}いた', reason: '錯誤：音便錯誤。' },
+            { text: '見{み}ました', reason: '錯誤：語義不同(看到)。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '昨天遇見了老師。 \n【活用】五段動詞「会う」連用形為「会い」。'
+    },
+    // 13. 書く (Kaku)
+    {
+        id: 'n5_v1399_kaku_1',
+        prob: '手紙{てがみ}を ______。',
+        prob_zh: ' *寫* 信。',
+        level: 'N5',
+        options: [
+            { text: '書{か}きます', reason: '正確！五段動詞。' },
+            { text: '書{か}いて', reason: '正確！(TE形)' },
+            { text: '書{か}き', reason: '正確！(連用)' },
+            { text: '書{か}こ', reason: '錯誤：未完成。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '寫信。 \n【活用】「書く」(kaku) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_kaku_2',
+        prob: '名前{なまえ}を ______ ください。',
+        prob_zh: '請 *寫* 下名字。',
+        level: 'N5',
+        options: [
+            { text: '書{か}いて', reason: '正確！五段動詞 i 音便。' },
+            { text: '書{か}き', reason: '錯誤：連用不接ください。' },
+            { text: '書{か}いた', reason: '錯誤：過去式。' },
+            { text: '書{か}け', reason: '錯誤：可能/命令。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請寫下名字。 \n【音便】五段動詞結尾「く」變為「いて」。'
+    },
+    // 14. 聞く (Kiku)
+    {
+        id: 'n5_v1399_kiku_1',
+        prob: '音楽{おんがく}を ______。',
+        prob_zh: ' *聽* 音樂。',
+        level: 'N5',
+        options: [
+            { text: '聞{き}きます', reason: '正確！五段動詞。' },
+            { text: '聞{き}いて', reason: '正確！(TE形)' },
+            { text: '聞{き}き', reason: '正確！(連用)' },
+            { text: '聞{き}こえ', reason: '錯誤：這是可能形(聽得到)。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '聽音樂。 \n【活用】「聞く」(kiku) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_kiku_2',
+        prob: '先生{せんせい}に ______ ください。',
+        prob_zh: '請 *詢問* 老師。',
+        level: 'N5',
+        options: [
+            { text: '聞{き}いて', reason: '正確！' },
+            { text: '聞{き}き', reason: '錯誤：接續。' },
+            { text: '話{はな}して', reason: '錯誤：那是交談。' },
+            { text: '見{み}て', reason: '錯誤：那是看。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '請詢問老師。 \n【語義】「聞く」除了聽，也表示詢問。'
+    },
+    // 15. 泳ぐ (Oyogu)
+    {
+        id: 'n5_v1399_oyogu_1',
+        prob: '海{うみ}で ______。',
+        prob_zh: '在海裡 *游泳*。',
+        level: 'N5',
+        options: [
+            { text: '泳{およ}ぎます', reason: '正確！五段動詞。' },
+            { text: '泳{およ}いで', reason: '正確！(TE形)' },
+            { text: '泳{およ}ぎ', reason: '正確！(連用)' },
+            { text: '泳{およ}が', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '在海裡游泳。 \n【活用】「泳ぐ」(oyogu) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_oyogu_2',
+        prob: '昨日{きのう}、200メートル ______。',
+        prob_zh: '昨天 *游* 了200公尺。',
+        level: 'N5',
+        options: [
+            { text: '泳{およ}ぎました', reason: '正確！五段ます過去式。' },
+            { text: '泳{およ}いだ', reason: '正確！(常體，濁音便)' },
+            { text: '泳{およ}いた', reason: '錯誤：結尾是「ぐ」應變為「いで」。' },
+            { text: '泳{およ}き', reason: '錯誤：清濁誤用。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '昨天游了200公尺。 \n【音便】五段動詞結尾「ぐ」發生濁音便「いで」或過法「いだ」。'
+    },
+    // 16. 遊ぶ (Asobu)
+    {
+        id: 'n5_v1399_asobu_1',
+        prob: '公園{こうえん}で ______。',
+        prob_zh: '在公園 *玩*。',
+        level: 'N5',
+        options: [
+            { text: '遊{あそ}びます', reason: '正確！五段動詞。' },
+            { text: '遊{あそ}んで', reason: '正確！(TE形)' },
+            { text: '遊{あそ}び', reason: '正確！(連用)' },
+            { text: '滑{すべ}り', reason: '錯誤：那是溜走。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '在公園玩。 \n【活用】「遊ぶ」(asobu) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_asobu_2',
+        prob: '一緒{いっしょ}に ______ ましょう！',
+        prob_zh: '一起 *玩* 吧！',
+        level: 'N5',
+        options: [
+            { text: '遊{あそ}び', reason: '正確！連用形接ましょう。' },
+            { text: '遊{あそ}ん', reason: '錯誤：促音便不接。' },
+            { text: '遊{あそ}べ', reason: '錯誤：命令。' },
+            { text: '遊{あそ}ぼ', reason: '正確！(常體意向)' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '一起玩吧！ \n【提議】「～ましょう」接在動詞連用形之後。'
+    },
+    // 17. 待つ (Matsu)
+    {
+        id: 'n5_v1399_matsu_1',
+        prob: '少々{しょうしょう} ______ ください。',
+        prob_zh: '請 *稍等* 片刻。',
+        level: 'N5',
+        options: [
+            { text: '待{ま}って', reason: '正確！五段動詞促音便。' },
+            { text: '待{ま}ち', reason: '錯誤：接續錯誤。' },
+            { text: '待{ま}た', reason: '錯誤：否定。' },
+            { text: '待{ま}て', reason: '錯誤：命令。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請稍等片刻。 \n【音便】五段動詞結尾「つ」變為「って」。'
+    },
+    {
+        id: 'n5_v1399_matsu_2',
+        prob: 'ここでお父{とう}さんを ______ います。',
+        prob_zh: '正在這裡 *等* 爸爸。',
+        level: 'N5',
+        options: [
+            { text: '待{ま}って', reason: '正確！進行中的動作。' },
+            { text: '待{ま}ち', reason: '正確！(連用)' },
+            { text: '持{も}って', reason: '錯誤：那是拿。' },
+            { text: '待{ま}た', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '正在這裡等爸爸。 \n【を活用】五段動詞「待つ」促音便。'
+    },
+    // 18. 呼ぶ (Yobu)
+    {
+        id: 'n5_v1399_yobu_1',
+        prob: 'タクシーを ______。',
+        prob_zh: ' *叫* 計程車。',
+        level: 'N5',
+        options: [
+            { text: '呼{よ}びます', reason: '正確！五段動詞。' },
+            { text: '呼{よ}んで', reason: '正確！(TE形)' },
+            { text: '読{よ}み', reason: '錯誤：那是讀。' },
+            { text: '及{及}び', reason: '錯誤：字字誤用。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '叫計程車。 \n【活用】「呼ぶ」(yobu) 與 「読む」(yomu) 讀音相似，注意區分。'
+    },
+    {
+        id: 'n5_v1399_yobu_2',
+        prob: '田中{たなか}さんを ______ ください。',
+        prob_zh: '請 *呼叫* 田中先生。',
+        level: 'N5',
+        options: [
+            { text: '呼{よ}んで', reason: '正確！五段動詞撥音便。' },
+            { text: '呼{よ}ん', reason: '正確！(撥音)' },
+            { text: '呼{よ}ば', reason: '錯誤：否定。' },
+            { text: '呼{よ}べ', reason: '錯誤：命令。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請呼叫田中先生。 \n【音便】五段動詞結尾「ぶ」變為「んで」。'
+    },
+    // 19. 休む (Yasumu)
+    {
+        id: 'n5_v1399_yasumu_1',
+        prob: '今日{きょう}は会社{かいしゃ}を ______。',
+        prob_zh: '今天向公司 *請假*。',
+        level: 'N5',
+        options: [
+            { text: '休{やす}みます', reason: '正確！「休む」可表示休息或請假、曠工。' },
+            { text: '休{やす}んで', reason: '正確！(TE形)' },
+            { text: '休{やす}ませ', reason: '錯誤：使役形。' },
+            { text: '止{と}め', reason: '錯誤：停止。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '今天向公司請假。 \n【活用】「休む」(yasumu) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_yasumu_2',
+        prob: '少{すこ}し ______ ましょう。',
+        prob_zh: '稍微 *休息* 一下吧。',
+        level: 'N5',
+        options: [
+            { text: '休{やす}み', reason: '正確！連用形。' },
+            { text: '休{やす}む', reason: '錯誤：辭書形不接。' },
+            { text: '休{やす}ま', reason: '錯誤：否定。' },
+            { text: '休{やす}ん', reason: '錯誤：音便不接。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '稍微休息一下吧。 \n【提議】動詞連用形 + ましょう。'
+    },
+    // --- SOP Expanded N5 Batch 4 ---
+    // 1. 買う (Kau)
+    {
+        id: 'n5_v1399_kau_1',
+        prob: 'スーパーでりんごを ______。',
+        prob_zh: '在超市 *買* 蘋果。',
+        level: 'N5',
+        options: [
+            { text: '買{か}います', reason: '正確！五段動詞。' },
+            { text: '買{か}いました', reason: '正確！(過去)' },
+            { text: '買{か}って', reason: '正確！(音便)' },
+            { text: '買{か}わ', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '在超市買蘋果。 \n【活用】「買う」(kau) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_kau_2',
+        prob: '昨日{きのう}、新{あたら}しい本{ほん}を ______。',
+        prob_zh: '昨天 *買* 了新書。',
+        level: 'N5',
+        options: [
+            { text: '買{か}いました', reason: '正確！五段ます過去式。' },
+            { text: '買{か}いた', reason: '錯誤：音便應為「買った」。' },
+            { text: '買{か}った', reason: '正確！(常體)' },
+            { text: '買{か}い', reason: '錯誤：接續。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '昨天買了新書。 \n【音便】五段動詞結尾「う」變為「った」。'
+    },
+    // 2. 売る (Uru)
+    {
+        id: 'n5_v1399_uru_1',
+        prob: '店{みせ}でパンを ______。',
+        prob_zh: '在店裡 *賣* 麵包。',
+        level: 'N5',
+        options: [
+            { text: '売{う}っています', reason: '正確！表示店鋪正在販售的狀態。' },
+            { text: '売{う}ります', reason: '正確！(將要賣)' },
+            { text: '売{う}り', reason: '正確！(連用)' },
+            { text: '売{う}れ', reason: '錯誤：可能/命令。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '在店裡賣麵包。 \n【活用】「売る」(uru) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_uru_2',
+        prob: '古{ふる}い車{くるま}を ______ ました。',
+        prob_zh: ' *賣* 了舊車。',
+        level: 'N5',
+        options: [
+            { text: '売{う}り', reason: '正確！五段連用形。' },
+            { text: '売{う}', reason: '錯誤：變化錯誤。' },
+            { text: '売{う}っ', reason: '錯誤：音便不接。' },
+            { text: '買{か}い', reason: '錯誤：那是買。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '賣了舊車。 \n【活用】「売る」連用形。'
+    },
+    // 3. 貸す (Kasu)
+    {
+        id: 'n5_v1399_kasu_1',
+        prob: '友達{ともだち}にペンを ______。',
+        prob_zh: ' *借給* 朋友筆。',
+        level: 'N5',
+        options: [
+            { text: '貸{か}します', reason: '正確！五段動詞。指向他人借出。' },
+            { text: '借{か}ります', reason: '錯誤：那是向他人借入。' },
+            { text: '貸{か}して', reason: '正確！' },
+            { text: '貸{か}さ', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '借給朋友筆。 \n【自他辨析】「貸す」(kasu, 借出) vs 「借りる」(kariru, 借入)。'
+    },
+    {
+        id: 'n5_v1399_kasu_2',
+        prob: '傘{かさ}を ______ ください。',
+        prob_zh: '請 *借(出)* 傘給我。',
+        level: 'N5',
+        options: [
+            { text: '貸{か}して', reason: '正確！五段動詞促音便。注意結尾是「す」所以變為「して」。' },
+            { text: '借{か}りて', reason: '錯誤：變成請對方借錢/借東西(向他人)。' },
+            { text: '貸{か}し', reason: '錯誤：接續。' },
+            { text: '貸{か}した', reason: '錯誤：時態。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請借傘給我。 \n【音便】五段動詞結尾「す」變為「して」。'
+    },
+    // 4. 借りる (Kariru)
+    {
+        id: 'n5_v1399_kariru_1',
+        prob: '図書館{としょかん}で本{ほん}を ______。',
+        prob_zh: '在圖書館 *借* 書。',
+        level: 'N5',
+        options: [
+            { text: '借{か}ります', reason: '正確！一段動詞。指向他人借入。' },
+            { text: '貸{か}します', reason: '錯誤：那是借出。' },
+            { text: '借{か}り', reason: '正確！' },
+            { text: '借{か}りて', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '在圖書館借書。 \n【活用】「借りる」(kariru) 是一段動詞。'
+    },
+    {
+        id: 'n5_v1399_kariru_2',
+        prob: 'お金{かね}を ______ ました。',
+        prob_zh: ' *借* 了錢。',
+        level: 'N5',
+        options: [
+            { text: '借{か}り', reason: '正確！一段連用形。' },
+            { text: '借{か}りっ', reason: '錯誤：一段動詞不發生音便。' },
+            { text: '借{か}ら', reason: '錯誤：變化錯誤。' },
+            { text: '貸{か}し', reason: '錯誤：那是借出。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '借了錢。 \n【活用】一段動詞的中頓/過去式不音便。'
+    },
+    // 5. 死ぬ (Shinu)
+    {
+        id: 'n5_v1399_shinu_1',
+        prob: '魚{さかな}が ______。',
+        prob_zh: '魚 *死* 了。',
+        level: 'N5',
+        options: [
+            { text: '死{し}にました', reason: '正確！五段動詞。' },
+            { text: '死{し}んだ', reason: '正確！(常體撥音便)' },
+            { text: '死{し}に', reason: '正確！(連用)' },
+            { text: '死{し}ね', reason: '錯誤：命令。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '魚死了。 \n【活用】「死ぬ」(shinu) 是 N5 唯一的ぬ動詞。'
+    },
+    {
+        id: 'n5_v1399_shinu_2',
+        prob: ' ______ ないでください。',
+        prob_zh: '請不要 *死*。',
+        level: 'N5',
+        options: [
+            { text: '死{し}な', reason: '正確！五段未然形。' },
+            { text: '死{し}に', reason: '錯誤：接續。' },
+            { text: '死{し}ぬ', reason: '錯誤：接續。' },
+            { text: '死{し}ね', reason: '錯誤：命令。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '請不要死。 \n【否定】「ないでください」接在動詞未然形後。'
+    },
+    // 6. 住む (Sumu)
+    {
+        id: 'n5_v1399_sumu_1',
+        prob: '日本{にっぽん}に ______ います。',
+        prob_zh: ' *住* 在日本。',
+        level: 'N5',
+        options: [
+            { text: '住{す}んで', reason: '正確！五段撥音便。表示居住狀態的持續。' },
+            { text: '住{す}み', reason: '正確！(連用)' },
+            { text: '住{す}む', reason: '錯誤：接續。' },
+            { text: '住{す}ま', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '住在日本。 \n【音便】五段動詞結尾「む」變為「んで」。'
+    },
+    {
+        id: 'n5_v1399_sumu_2',
+        prob: 'どこに ______ いたいですか？',
+        prob_zh: '想要 *住* 在哪裡呢？',
+        level: 'N5',
+        options: [
+            { text: '住{す}んで', reason: '正確！居住狀態的欲求。' },
+            { text: '住{す}み', reason: '正確！(直接動作欲求)' },
+            { text: '住{す}みた', reason: '錯誤：接續。' },
+            { text: '住{す}ぼ', reason: '錯誤：變化。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '想要住在哪裡呢？ \n【活用】「住む」連用或撥音便視語境而定。'
+    },
+    // 7. 座る (Suwaru)
+    {
+        id: 'n5_v1399_suwaru_1',
+        prob: '椅子{いす}に ______ ください。',
+        prob_zh: '請 *坐* 在椅子上。',
+        level: 'N5',
+        options: [
+            { text: '座{すわ}って', reason: '正確！五段促音便。' },
+            { text: '座{すわ}り', reason: '錯誤：接續。' },
+            { text: '立{た}って', reason: '錯誤：那是站。' },
+            { text: '座{すわ}った', reason: '錯誤：過去式。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請坐在椅子上。 \n【音便】五段動詞結尾「る」變為「って」。'
+    },
+    {
+        id: 'n5_v1399_suwaru_2',
+        prob: 'ここ、 ______ もいいですか？',
+        prob_zh: '這裡可以 *坐* 嗎？',
+        level: 'N5',
+        options: [
+            { text: '座{すわ}って', reason: '正確！促音便表示許可。' },
+            { text: '座{すわ}り', reason: '錯誤：接續。' },
+            { text: '入{はい}って', reason: '錯誤：那是進來。' },
+            { text: '立{た}って', reason: '錯誤：那是站。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '這裡可以坐嗎？ \n【許可】「～てもいい」是詢問許可。'
+    },
+    // 8. 立つ (Tatsu)
+    {
+        id: 'n5_v1399_tatsu_1',
+        prob: ' ______ ください。',
+        prob_zh: '請 *站* 起來。',
+        level: 'N5',
+        options: [
+            { text: '立{た}って', reason: '正確！五段促音便。' },
+            { text: '座{すわ}って', reason: '錯誤：那是坐。' },
+            { text: '立{た}ち', reason: '錯誤：接續。' },
+            { text: '立{た}つ', reason: '錯誤：接續。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請站起來。 \n【音便】五段動詞結尾「つ」變為「って」。'
+    },
+    {
+        id: 'n5_v1399_tatsu_2',
+        prob: '門{もん}の前{まえ}に ______ います。',
+        prob_zh: '正 *站* 在門前。',
+        level: 'N5',
+        options: [
+            { text: '立{た}って', reason: '正確！表示站立狀態。' },
+            { text: '立{た}ち', reason: '錯誤：接續。' },
+            { text: '座{すわ}って', reason: '錯誤：那是坐。' },
+            { text: '立{た}た', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '正站在門前。 \n【活用】五段動詞「立つ」促音便。'
+    },
+    // 9. 飛ぶ (Tobu)
+    {
+        id: 'n5_v1399_tobu_1',
+        prob: '鳥{とり}が空{そら}を ______。',
+        prob_zh: '鳥在空中 *飛*。',
+        level: 'N5',
+        options: [
+            { text: '飛{と}びます', reason: '正確！五段動詞。' },
+            { text: '飛{と}んで', reason: '正確！(撥音便)' },
+            { text: '飛{と}び', reason: '正確！(連用)' },
+            { text: '泳{およ}ぎます', reason: '錯誤：那是游。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '鳥在空中飛。 \n【活用】「飛ぶ」(tobu) 是五段動詞。'
+    },
+    {
+        id: 'n5_v1399_tobu_2',
+        prob: '飛行機{ひこうき}が上{うえ}を ______ いきました。',
+        prob_zh: '飛機從上方 *飛* 過去了。',
+        level: 'N5',
+        options: [
+            { text: '飛{と}んで', reason: '正確！五段撥音便。' },
+            { text: '飛{と}び', reason: '錯誤：接續。' },
+            { text: '通{とお}って', reason: '正確！(通過，但飛機用飛更具體)' },
+            { text: '飛{と}ば', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '飛機從上方飛過去了。 \n【音便】五段動詞結尾「ぶ」變為「んで」。'
+    },
+    // 10. 撮る (Toru)
+    {
+        id: 'n5_v1399_toru_1',
+        prob: '写真{しゃしん}を ______。',
+        prob_zh: ' *照* 相。',
+        level: 'N5',
+        options: [
+            { text: '撮{と}ります', reason: '正確！五段動詞。專用於攝影。' },
+            { text: '取{と}ります', reason: '正確！(雖然讀音相同，但拿東西用「取」)' },
+            { text: '撮{と}って', reason: '正確！(音便)' },
+            { text: '撮{と}り', reason: '正確！(連用)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '照相。 \n【漢字辨析】「撮る」(toru, 攝影) vs 「取る」(toru, 拿)。'
+    },
+    {
+        id: 'n5_v1399_toru_2',
+        prob: '一緒{いっしょ}に ______ ください。',
+        prob_zh: '請一起 *拍照*。',
+        level: 'N5',
+        options: [
+            { text: '撮{と}って', reason: '正確！五段促音便。' },
+            { text: '撮{と}り', reason: '錯誤：接續。' },
+            { text: '撮{と}ら', reason: '錯誤：否定。' },
+            { text: '取{と}って', reason: '錯誤：漢字誤用。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請一起拍照。 \n【音便】五段動詞結尾「る」變為「って」。'
     }
 ]
+
+

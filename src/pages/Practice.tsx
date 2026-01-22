@@ -239,18 +239,38 @@ const Practice = () => {
             <div className="mb-6">
               <label className="block text-lg font-semibold mb-3">{t('practice.selectLevel')}:</label>
               <div className="grid grid-cols-3 sm:flex sm:flex-wrap gap-2 md:grid md:grid-cols-5 md:gap-3">
-                {(['N5', 'N4', 'N3', 'N2', 'N1'] as const).map((level) => (
-                  <button
-                    key={level}
-                    onClick={() => setSelectedLevel(level)}
-                    className={`p-3 md:p-4 rounded-xl transition-all ${selectedLevel === level
-                      ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
-                      : 'glass hover:bg-white/10'
-                      }`}
-                  >
-                    <div className="text-lg md:text-xl font-bold">{level}</div>
-                  </button>
-                ))}
+                {(['N5', 'N4', 'N3', 'N2', 'N1'] as const).map((level) => {
+                  // Calculate question counts for Verbs category
+                  const getCount = () => {
+                    if (category !== 'verbs') return null;
+                    if (level === 'N5') return n5Questions.length;
+                    if (level === 'N4') return n4Questions.length;
+                    if (level === 'N3') return n3Questions.length;
+                    if (level === 'N2') return n2Questions.length;
+                    if (level === 'N1') return n1Questions.length;
+                    return null;
+                  };
+                  const questionCount = getCount();
+
+                  return (
+                    <button
+                      key={level}
+                      onClick={() => setSelectedLevel(level)}
+                      className={`p-3 md:p-4 rounded-xl transition-all flex flex-col items-center justify-center ${selectedLevel === level
+                          ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white shadow-lg'
+                          : 'glass hover:bg-white/10'
+                        }`}
+                    >
+                      <div className="text-lg md:text-xl font-bold">{level}</div>
+                      {questionCount !== null && (
+                        <div className={`text-[10px] md:text-xs mt-1 ${selectedLevel === level ? 'text-white/90' : 'text-white/40'
+                          }`}>
+                          {questionCount} 題
+                        </div>
+                      )}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           )}

@@ -502,8 +502,8 @@ export const n1Questions: StaticQuestion[] = [
         correctRule: '忙碌之餘(混亂之中)竟然忘記了。 \n【用法】「～に紛れて」常用於表示因為周遭環境的混亂或自己的忙碌，導致注意不到某事。'
     },
     {
-        id: 'n1_gen_magireru_2',
-        prob: '本物{ほんもの}と ______ ような偽物{にせもの}。',
+        id: 'n1_v1399_magireru_2',
+        prob: '本物{ほんもの}に ______ 偽物{にせもの}。',
         prob_zh: '足以與真貨 *混淆* 的假貨。',
         level: 'N1',
         options: [
@@ -515,5 +515,627 @@ export const n1Questions: StaticQuestion[] = [
         correctIndex: 0,
         tag: 'vocab',
         correctRule: '足以與真貨混淆的假貨。 \n【語義】「紛れる」表示兩者極其相似，以至於在群體中無法分辨出來。'
+    },
+    // --- SOP Expanded N1 Batch 3 ---
+    // 1. 遮る (Saegiru)
+    {
+        id: 'n1_v1399_saegiru_1',
+        prob: 'カーテンで窓{まど}の外{そと}の光{ひかり}を ______。',
+        prob_zh: '用窗簾 *遮斷* 窗外陽光。',
+        level: 'N1',
+        options: [
+            { text: '遮{さえぎ}る', reason: '正確！五段動詞。表示阻擋光線、視線或聲音。' },
+            { text: '遮{さえぎ}り', reason: '正確！(連用)' },
+            { text: '遮{さえぎ}って', reason: '正確！(音便)' },
+            { text: '遮{さえぎ}ら', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '用窗簾遮斷窗外陽光。 \n【語義】「遮る」(saegiru) 常用於物理上的阻隔或打斷他人說話。'
+    },
+    {
+        id: 'n1_v1399_saegiru_2',
+        prob: '人{ひと}の言葉{ことば}を ______。',
+        prob_zh: ' *打斷* 他人的話。',
+        level: 'N1',
+        options: [
+            { text: '遮{さえぎ}る', reason: '正確！常用搭配。' },
+            { text: '遮{さえぎ}れば', reason: '正確！(假定)' },
+            { text: '止{と}める', reason: '正確！(停止)' },
+            { text: '邪魔{じゃま}する', reason: '正確！(妨礙)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '打斷他人的話。 \n【用法】在對話中突然介入或阻礙流程。'
+    },
+    // 2. 綻びる (Hokorobiru)
+    {
+        id: 'n1_v1399_hokorobiru_1',
+        prob: '梅{うめ}のつぼみが ______。',
+        prob_zh: '梅花的蕾 *綻放(綻裂)* 了。',
+        level: 'N1',
+        options: [
+            { text: '綻{ほころ}びた', reason: '正確！一段動詞。常用於花蕾微開或縫線裂開。' },
+            { text: '綻{ほころ}んだ', reason: '正確！(五段動詞綻ぶ的音便，語意相同)' },
+            { text: '咲{さ}いた', reason: '正確！(開花)' },
+            { text: '開{ひら}いた', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '梅花的蕾綻放了。 \n【語義】「綻びる」(hokorobiru) 指原本閉合的東西開始裂開出一點縫隙。'
+    },
+    {
+        id: 'n1_v1399_hokorobiru_2',
+        prob: '緊張{きんちょう}が解{と}けて、表情{ひょうじょう}が ______。',
+        prob_zh: '緊張感消除，表情 *放鬆(露出笑意)*。',
+        level: 'N1',
+        options: [
+            { text: '綻{ほころ}びた', reason: '正確！比喻表情變得柔和。' },
+            { text: '緩{ゆる}んだ', reason: '正確！(鬆弛)' },
+            { text: '和{なご}んだ', reason: '正確！(和緩)' },
+            { text: '綻{ほころ}んだ', reason: '正確！(五段)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '緊張感消除，表情放鬆。 \n【用法】「顔が綻びる」是慣用句，指原本嚴肅的臉因喜悅或安心而放鬆。'
+    },
+    // 3. 聳える (Sobbieru)
+    {
+        id: 'n1_v1399_sobbieru_1',
+        prob: '高岸{たかがい}に ______ 摩天楼{まてんろう}。',
+        prob_zh: '在海岸上 *聳立* 的摩天大樓。',
+        level: 'N1',
+        options: [
+            { text: '聳{そび}える', reason: '正確！一段動詞。形容高大建築物或山峰。' },
+            { text: '聳{そび}え', reason: '正確！(連用)' },
+            { text: '立{た}つ', reason: '正確！(普通豎立)' },
+            { text: '建{た}つ', reason: '正確！(建築)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '在海岸上聳立的摩天大樓。 \n【語感】「聳える」帶有高度驚人、令人仰視的氣勢。'
+    },
+    {
+        id: 'n1_v1399_sobbieru_2',
+        prob: '雲{くも}の上{うえ}まで ______ 山{やま}。',
+        prob_zh: ' *直插* 雲霄的山。',
+        level: 'N1',
+        options: [
+            { text: '聳{そび}え立{た}つ', reason: '正確！複合動詞，強調巍然屹立。' },
+            { text: '聳{そび}える', reason: '正確！' },
+            { text: '突{つ}き刺{さ}す', reason: '正確！(刺穿)' },
+            { text: '聳{そび}え', reason: '錯誤：接續。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '直插雲霄的山。 \n【語法】一段動詞修飾。'
+    },
+    // 4. 嘲笑う (Azawarau)
+    {
+        id: 'n1_v1399_azawarau_1',
+        prob: '正義{せいぎ}を ______。',
+        prob_zh: ' *嘲笑* 正義。',
+        level: 'N1',
+        options: [
+            { text: '嘲笑{あざわら}う', reason: '正確！五段動詞。表示蔑視或嘲諷。' },
+            { text: '嘲笑{あざわら}い', reason: '正確！(連用/名詞)' },
+            { text: '笑{わら}う', reason: '正確！(但 azawarau 帶有惡意)' },
+            { text: '莫迦{ばか}にする', reason: '正確！(瞧不起)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '嘲笑正義。 \n【語義】「嘲笑う」結合了嘲笑與輕視。'
+    },
+    {
+        id: 'n1_v1399_azawarau_2',
+        prob: '周囲{しゅうい}から ______ られても平気{へいき}だ。',
+        prob_zh: '即使被周圍的人 *嘲笑* 也不在乎。',
+        level: 'N1',
+        options: [
+            { text: '嘲笑{あざわら}わ', reason: '正確！五段受身未然形。' },
+            { text: '嘲笑{あざわら}え', reason: '錯誤：可能。' },
+            { text: '嘲笑{あざわら}い', reason: '錯誤：變化。' },
+            { text: '笑{わら}わ', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'passive',
+        correctRule: '即使被周圍的人嘲笑也不在乎。 \n【活用】五段動詞「嘲笑う」(azawarau) 變為「嘲笑われる」。'
+    },
+    // 5. 凌ぐ (Shinogu)
+    {
+        id: 'n1_v1399_shinogu_1',
+        prob: '飢{う}えを ______。',
+        prob_zh: ' *忍受(度過)* 飢餓。',
+        level: 'N1',
+        options: [
+            { text: '凌{しの}ぐ', reason: '正確！五段動詞。表示在艱難狀況下撐過去。' },
+            { text: '耐{た}える', reason: '正確！(忍耐)' },
+            { text: '凌{しの}ぎ', reason: '正確！(連用)' },
+            { text: '凌{しの}いで', reason: '正確！(音便)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '忍受(度過)飢餓。 \n【語義】「凌ぐ」常用於度過飢荒、寒冷、暑熱等生理挑戰。'
+    },
+    {
+        id: 'n1_v1399_shinogu_2',
+        prob: '前作{ぜんさく}を遥{はる}かに ______ 出来栄{できば}え。',
+        prob_zh: '遠遠 *超越* 前作的成品。',
+        level: 'N1',
+        options: [
+            { text: '凌{しの}ぐ', reason: '正確！也可用於能力、數量上的超越。' },
+            { text: '超{こ}える', reason: '正確！' },
+            { text: '凌{しの}ぎ', reason: '正確！' },
+            { text: '抜{ぬ}く', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '遠遠超越前作的成品。 \n【用法】比喻能力或性能的高越。'
+    },
+    // 6. 汚す (Kegasu)
+    {
+        id: 'n1_v1399_kegasu_1',
+        prob: '先祖{せんぞ}の名{な}を ______。',
+        prob_zh: ' *玷汙* 祖先的名聲。',
+        level: 'N1',
+        options: [
+            { text: '汚{けが}す', reason: '正確！五段動詞。指玷汙名譽、清白等神聖事物。' },
+            { text: '汚{よご}す', reason: '正確！(但 yogosu 多用於物理上的髒)' },
+            { text: '汚{けが}さない', reason: '正確！(不玷汙)' },
+            { text: '恥{はじ}をかく', reason: '錯誤：蒙受恥辱(主動行為)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '玷汙祖先的名聲。 \n【漢字辨析】「汚す」讀作 kegasu 時帶有強烈的精神、社會層面汙染感。'
+    },
+    {
+        id: 'n1_v1399_kegasu_2',
+        prob: '清{きよ}らかな大地{だいち}を ______。',
+        prob_zh: ' *汙染* 純淨的大地。',
+        level: 'N1',
+        options: [
+            { text: '汚{けが}す', reason: '正確！五段動詞。' },
+            { text: '汚{けが}し', reason: '正確！(連用)' },
+            { text: '汚染{おせん}する', reason: '正確！' },
+            { text: '汚{よご}す', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '汙染純淨的大地。 \n【活用】五段動詞變位。'
+    },
+    // 7. 汚れる (Kegareru)
+    {
+        id: 'n1_v1399_kegareru_1',
+        prob: '心{こころ}を ______。',
+        prob_zh: '心靈 *汙穢* 了。',
+        level: 'N1',
+        options: [
+            { text: '汚{けが}れた', reason: '正確！一段自動詞過去式。指喪失清白。' },
+            { text: '汚{よご}れた', reason: '正確！(物理髒)' },
+            { text: '汚{けが}れ', reason: '正確！(名詞/連用)' },
+            { text: '醜{みにく}い', reason: '錯誤：醜陋。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '心靈汙穢了。 \n【自他動詞】「汚す」(他) vs 「汚れる」(自)。'
+    },
+    {
+        id: 'n1_v1399_kegareru_2',
+        prob: ' ______ ることのない愛{あい}。',
+        prob_zh: '永不 *汙染(變質)* 的愛。',
+        level: 'N1',
+        options: [
+            { text: '汚{けが}れ', reason: '正確！一段連用形接否定。' },
+            { text: '汚{けが}れな', reason: '錯誤：未然。' },
+            { text: '汚{よご}れ', reason: '正確！' },
+            { text: '汚{けが}れる', reason: '錯誤：接續。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '永不汙染的愛。 \n【活用】一段動詞。'
+    },
+    // 8. 汚らわす (Kegarawasu)
+    {
+        id: 'n1_v1399_kegarawasu_1',
+        prob: '耳{みみ}を ______。',
+        prob_zh: ' *汙染* 耳朵(聽到卑鄙或下流的話)。',
+        level: 'N1',
+        options: [
+            { text: '汚{けが}らわす', reason: '正確！五段動詞。比 kegasu 語感更強烈，帶有厭惡感。' },
+            { text: '汚{けが}す', reason: '正確！' },
+            { text: '聞{き}きたくない', reason: '正確！' },
+            { text: '汚{けが}らわし', reason: '正確！(連用)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '汙染耳朵。 \n【語義】「汚らわす」常與耳、目連用，指看到或聽到汙穢不潔的東西。'
+    },
+    {
+        id: 'n1_v1399_kegarawasu_2',
+        prob: '卑劣{ひれつ}な手段{しゅだん}でこの場{ば}を ______ べきではない。',
+        prob_zh: '不應以卑劣手段 *玷汙* 這塊寶地(這個場合)。',
+        level: 'N1',
+        options: [
+            { text: '汚{けが}らわす', reason: '正確！五段動詞。' },
+            { text: '汚{けが}す', reason: '正確！' },
+            { text: '汚{けが}らわし', reason: '正確！' },
+            { text: '汚{けが}らわされる', reason: '錯誤：受身。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '不應以卑劣手段玷汙這塊寶地。 \n【活用】五段動詞變位。'
+    },
+    // 9. 賄う (Makanau)
+    {
+        id: 'n1_v1399_makanau_1',
+        prob: '生活費{せいかつひ}をバイト代{だい}で ______。',
+        prob_zh: '用打工費 *支付(湊足)* 生活費。',
+        level: 'N1',
+        options: [
+            { text: '賄{まかな}う', reason: '正確！五段動詞。指提供物資、伙食或支付開銷。' },
+            { text: '支払{しはら}う', reason: '正確！(支付)' },
+            { text: '工面{くめん}する', reason: '正確！(籌錢)' },
+            { text: '賄{まかな}い', reason: '正確！(名詞，伙食)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '用打工費支付生活費。 \n【語義】「賄う」特別強調「用有限的資源去cover某項支出」。'
+    },
+    {
+        id: 'n1_v1399_makanau_2',
+        prob: '合宿{がっしゅく}の食事{しょくじ}を ______。',
+        prob_zh: ' *提供(張羅)* 集訓的伙食。',
+        level: 'N1',
+        options: [
+            { text: '賄{まかな}う', reason: '正確！原意是張羅飯食。' },
+            { text: '用意{ようい}する', reason: '正確！' },
+            { text: '賄{まかな}って', reason: '正確！(音便)' },
+            { text: '食{た}べる', reason: '錯誤：吃。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '提供集訓的伙食。 \n【用法】「(人)の(食)を賄う」是常見用法，名詞化後「賄い」專指供餐。'
+    },
+    // 10. 綻ぶ (Hokorobu)
+    {
+        id: 'n1_v1399_hokorobu_1',
+        prob: '上着{うわぎ}の袖{そで}が ______。',
+        prob_zh: '上衣的袖子 *開線* 了。',
+        level: 'N1',
+        options: [
+            { text: '綻{ほころ}んだ', reason: '正確！五段自動詞音便。' },
+            { text: '綻{ほころ}びた', reason: '正確！(一段動詞，語意相同)' },
+            { text: '裂{さ}けた', reason: '正確！(撕裂)' },
+            { text: '切{き}れた', reason: '正確！(斷裂)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '上衣的袖子開線了。 \n【漢字】「綻ぶ」(hokorobu) 與「綻びる」(hokorobiru) 二者並存，語義幾乎無差別。'
+    },
+    {
+        id: 'n1_v1399_hokorobu_2',
+        prob: '表情{ひょうじょう}が ______ 時{とき}。',
+        prob_zh: '表情 *變柔和(放鬆)* 的時候。',
+        level: 'N1',
+        options: [
+            { text: '綻{ほころ}ぶ', reason: '正確！五段動詞。' },
+            { text: '綻{ほころ}びる', reason: '正確！(一段)' },
+            { text: '綻{ほころ}んで', reason: '正確！' },
+            { text: '綻{ほころ}ば', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '表情變柔和的時候。 \n【常用】比喻緊張感消失。'
+    },
+    // --- SOP Expanded N1 Batch 4 ---
+    // 1. 重んじる (Omonjiru)
+    {
+        id: 'n1_v1399_omonjiru_1',
+        prob: '伝統{でんとう}を ______。',
+        prob_zh: ' *重視* 傳統。',
+        level: 'N1',
+        options: [
+            { text: '重{おも}んじる', reason: '正確！一/サ變活用動詞。表示尊重、重視。' },
+            { text: '軽{かろ}んじる', reason: '錯誤：那是輕視。' },
+            { text: '重{おも}んじ', reason: '正確！' },
+            { text: '重視{じゅうし}する', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '重視傳統。 \n【活用】「重んじる」(omonjiru) 是由「重み」+「じる」構成，具有上一段或サ變活用的特徵。'
+    },
+    {
+        id: 'n1_v1399_omonjiru_2',
+        prob: '個{こ}人{じん}の意志{いし}が ______ られている。',
+        prob_zh: '個人的意志被 *重視*。',
+        level: 'N1',
+        options: [
+            { text: '重{おも}んじ', reason: '正確！上一段受身形。' },
+            { text: '重{おも}んじられ', reason: '正確！' },
+            { text: '重{おも}んじ', reason: '正確！' },
+            { text: '重{おも}んぜ', reason: '正確！(サ變受身形態)' }
+        ],
+        correctIndex: 0,
+        tag: 'passive',
+        correctRule: '個人的意志被重視。 \n【活用】「重んじる」的受身形常作「重んじられる」。'
+    },
+    // 2. 軽んじる (Karonjiru)
+    {
+        id: 'n1_v1399_karonjiru_1',
+        prob: '命{いのち}を ______。',
+        prob_zh: ' *輕視* 生命。',
+        level: 'N1',
+        options: [
+            { text: '軽{かろ}んじる', reason: '正確！表示不當一回事、蔑視。' },
+            { text: '重{おも}んじる', reason: '錯誤：那是重視。' },
+            { text: '軽{かろ}んじ', reason: '正確！' },
+            { text: '無視{むし}する', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '輕視生命。 \n【自他辨析】「重んじる」(重視) vs 「軽んじる」(輕視)。'
+    },
+    {
+        id: 'n1_v1399_karonjiru_2',
+        prob: '若{わか}いからといって ______ べきではない。',
+        prob_zh: '不可因為年輕就 *輕視*。',
+        level: 'N1',
+        options: [
+            { text: '軽{かろ}んじる', reason: '正確！辭書形接「べき」。' },
+            { text: '軽{かろ}んじ', reason: '錯誤：接續。' },
+            { text: '侮{あなど}る', reason: '正確！(侮辱)' },
+            { text: '軽{かろ}んぜ', reason: '錯誤：サ變命體。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '不可因為年輕就輕視。 \n【活用】維持辭書形接續。'
+    },
+    // 3. 重なる (Kasanaru)
+    {
+        id: 'n1_v1399_kasanaru_1',
+        prob: '不幸{ふこう}が ______。',
+        prob_zh: '不幸的事情 *重疊(接連發生)*。',
+        level: 'N1',
+        options: [
+            { text: '重{かさ}なりました', reason: '正確！五段自動詞。表示重疊、重複。' },
+            { text: '重{かさ}ねました', reason: '錯誤：那是人去堆疊(他動詞)。' },
+            { text: '重{かさ}なって', reason: '正確！' },
+            { text: '続{つづ}きました', reason: '正確！(持續)' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '不幸的事情重疊(接連發生)。 \n【自他動詞】「重なる」(自) vs 「重ねる」(他)。'
+    },
+    {
+        id: 'n1_v1399_kasanaru_2',
+        prob: '予定{よてい}が ______ しまった。',
+        prob_zh: '預定行程 *重疊(撞期)* 了。',
+        level: 'N1',
+        options: [
+            { text: '重{かさ}なって', reason: '正確！五段促音便。用於行程衝突的常用語。' },
+            { text: '重{かさ}なり', reason: '錯誤：接續。' },
+            { text: '被{かぶ}って', reason: '正確！(俗語的撞期)' },
+            { text: '重{かさ}ねて', reason: '錯誤：他動詞。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '預定行程重疊(撞期)了。 \n【音便】五段動詞結尾「る」變為「って」。'
+    },
+    // 4. 重ねる (Kasaneru)
+    {
+        id: 'n1_v1399_kasaneru_1',
+        prob: '努力{どりょく}を ______。',
+        prob_zh: ' *不斷(累積)* 努力。',
+        level: 'N1',
+        options: [
+            { text: '重{かさ}ねる', reason: '正確！一段他動詞。表示重複進行、累積。' },
+            { text: '重{かさ}なる', reason: '錯誤：那是事情自動重疊。' },
+            { text: '重{かさ}ね', reason: '正確！' },
+            { text: '積{つ}む', reason: '正確！(累積經驗)' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '不斷努力。 \n【語義】「重ねる」常用於抽象的積累，如「失敗を重ねる」、「努力を重ねる」。'
+    },
+    {
+        id: 'n1_v1399_kasaneru_2',
+        prob: '皿{さら}を ______ 置{お}く。',
+        prob_zh: '將盤子 *疊放*。',
+        level: 'N1',
+        options: [
+            { text: '重{かさ}ねて', reason: '正確！一段語尾去「る」加「て」。物理上的堆疊。' },
+            { text: '重{かさ}なって', reason: '錯誤：盤子自動重疊。' },
+            { text: '積{つ}んで', reason: '正確！' },
+            { text: '重{かさ}ね', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '將盤子疊放。 \n【活用】一段動詞變位。'
+    },
+    // 5. 省く (Habuku)
+    {
+        id: 'n1_v1399_habuku_1',
+        prob: '無駄{むだ}を ______。',
+        prob_zh: ' *省略(剔除)* 浪費。',
+        level: 'N1',
+        options: [
+            { text: '省{はぶ}く', reason: '正確！五段動詞。表示消除多餘、削減。' },
+            { text: '削{けず}る', reason: '正確！(削減)' },
+            { text: '省{はぶ}き', reason: '正確！' },
+            { text: '省{はぶ}いて', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '省略浪費。 \n【活用】「省く」(habuku) 是五段動詞。'
+    },
+    {
+        id: 'n1_v1399_habuku_2',
+        prob: '手間{てま}を ______。',
+        prob_zh: ' *省去* 勞力。',
+        level: 'N1',
+        options: [
+            { text: '省{はぶ}く', reason: '正確！用於免除不必要的程序。' },
+            { text: '省{はぶ}き', reason: '正確！' },
+            { text: '省略{しょうりゃく}する', reason: '正確！' },
+            { text: '省{かえり}みる', reason: '錯誤：那是反省。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '省去勞力。 \n【語義】「省く」強調減少負擔或程序。'
+    },
+    // 6. 葬る (Houmuru)
+    {
+        id: 'n1_v1399_houmuru_1',
+        prob: '遺体{いたい}を墓{はか}に ______。',
+        prob_zh: '將遺體 *安葬* 於墓中。',
+        level: 'N1',
+        options: [
+            { text: '葬{ほうむ}る', reason: '正確！五段動詞。表示埋葬。' },
+            { text: '葬{ほうむ}り', reason: '正確！' },
+            { text: '埋{う}める', reason: '正確！(埋起來)' },
+            { text: '葬{ほうむ}って', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '將遺體安葬於墓中。 \n【活用】「葬る」(houmuru) 是五段動詞。'
+    },
+    {
+        id: 'n1_v1399_houmuru_2',
+        prob: '闇{やみ}に ______ 去{さ}る。',
+        prob_zh: ' *埋沒(掩蓋)* 入黑暗中。',
+        level: 'N1',
+        options: [
+            { text: '葬{ほうむ}り', reason: '正確！五段連用形。常用於比喻隱瞞真相。' },
+            { text: '葬{ほうむ}る', reason: '錯誤：接續不當。' },
+            { text: '葬{ほうむ}って', reason: '正確！' },
+            { text: '隠{かく}し', reason: '正確！(隱瞞)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '埋沒入黑暗中。 \n【比喻】「闇に葬る」指將不光彩的事情徹底掩蓋。'
+    },
+    // 7. 奉る (Tatematsuru)
+    {
+        id: 'n1_v1399_tatematsuru_1',
+        prob: '神{かみ}に供物{くもつ}を ______。',
+        prob_zh: '向神 *奉獻* 供品。',
+        level: 'N1',
+        options: [
+            { text: '奉{たてまつ}る', reason: '正確！五段動詞。表示獻上、供奉。' },
+            { text: '差{さ}し上{あ}げる', reason: '正確！(謙讓語)' },
+            { text: '奉{たてまつ}り', reason: '正確！' },
+            { text: '奉{たてまつ}って', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '向神奉獻供品。 \n【用法】「奉る」(tatematsuru) 多用於宗教或對極高地位者的奉獻。'
+    },
+    {
+        id: 'n1_v1399_tatematsuru_2',
+        prob: '王{おう}として ______。',
+        prob_zh: ' *擁戴* 為王。',
+        level: 'N1',
+        options: [
+            { text: '奉{たてまつ}る', reason: '正確！在此表示尊崇、擁戴。' },
+            { text: '崇{あが}める', reason: '正確！(崇敬)' },
+            { text: '奉{たてまつ}り', reason: '正確！' },
+            { text: '祭{まつ}る', reason: '正確！(供奉)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '擁戴為王。 \n【語義】除了獻物，也可指將某人置於尊貴位置。'
+    },
+    // 8. 司る (Tsukasadoru)
+    {
+        id: 'n1_v1399_tsukasadoru_1',
+        prob: '祭政{さいせい}を ______。',
+        prob_zh: ' *治理(掌管)* 祭祀與政務。',
+        level: 'N1',
+        options: [
+            { text: '司{つかさど}る', reason: '正確！五段動詞。表示掌管、職掌。' },
+            { text: '管理{かんり}する', reason: '正確！' },
+            { text: '司{つかさど}り', reason: '正確！' },
+            { text: '司{つかさど}って', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '治理祭祀與政務。 \n【活用】「司る」(tsukasadoru) 是五段動詞。'
+    },
+    {
+        id: 'n1_v1399_tsukasadoru_2',
+        prob: '肝臓{かんぞう}は解毒{げどく}を ______ います。',
+        prob_zh: '肝臟 *掌管* 著解毒。',
+        level: 'N1',
+        options: [
+            { text: '司{つかさど}って', reason: '正確！五段促音便。用於生理機能的職責。' },
+            { text: '司{つかさど}り', reason: '錯誤：接續。' },
+            { text: '担当{たんとう}して', reason: '正確！' },
+            { text: '司{つかさど}る', reason: '錯誤：接續。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '肝臟掌管著解毒。 \n【語義】用於器官或組織的功能職掌。'
+    },
+    // 9. 携わる (Tazusawaru)
+    {
+        id: 'n1_v1399_tazusawaru_1',
+        prob: '開発{かいはつ}に ______。',
+        prob_zh: ' *從事(參與)* 開發工作。',
+        level: 'N1',
+        options: [
+            { text: '携{たずさ}わる', reason: '正確！五段動詞。表示參與、從事。' },
+            { text: '従事{じゅうじ}する', reason: '正確！' },
+            { text: '携{たずさ}わり', reason: '正確！' },
+            { text: '携{たずさ}わって', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '從事開發工作。 \n【用法】「携わる」(tazusawaru) 強調專業性的參與。'
+    },
+    {
+        id: 'n1_v1399_tazusawaru_2',
+        prob: '教育{きょういく}に ______ 仕事{しごと}。',
+        prob_zh: ' *涉及(參與)* 教育的工作。',
+        level: 'N1',
+        options: [
+            { text: '携{たずさ}わる', reason: '正確！動詞連體形修飾。' },
+            { text: '携{たずさ}わった', reason: '正確！(過去參與的)' },
+            { text: '関{かか}わる', reason: '正確！' },
+            { text: '携{たずさ}わ', reason: '錯誤：變化。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '參與教育的工作。 \n【活用】五段動詞。'
+    },
+    // 10. 捗る (Hadoru/Hakodoru)
+    {
+        id: 'n1_v1399_hakodoru_1',
+        prob: '仕事{しごと}が ______。',
+        prob_zh: '工作 *進展順利*。',
+        level: 'N1',
+        options: [
+            { text: '捗{はかど}ります', reason: '正確！五段動詞。表示進展順遂。' },
+            { text: '進{すす}みます', reason: '正確！(前進)' },
+            { text: '捗{はかど}り', reason: '正確！' },
+            { text: '遅{おく}れます', reason: '錯誤：延誤。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '工作進展順利。 \n【活用】「捗る」(hakodoru) 是五段動詞. '
+    },
+    {
+        id: 'n1_v1399_hakodoru_2',
+        prob: '勉強{べんきょう}が ______ らない。',
+        prob_zh: '學習 *進展不順*。',
+        level: 'N1',
+        options: [
+            { text: '捗{はかど}', reason: '正確！五段未然形。' },
+            { text: '進{すす}ま', reason: '正確！' },
+            { text: '捗{はかど}り', reason: '錯誤：接續。' },
+            { text: '捗{はかど}れ', reason: '錯誤：命令/可能。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '學習進展不順。 \n【用法】「捗らない」是形容效率低下或受阻的常用說法。'
     }
 ]

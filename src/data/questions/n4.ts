@@ -442,7 +442,7 @@ export const n4Questions: StaticQuestion[] = [
         correctRule: '將來想要蓋大房子。 \n【願望】「～たい」表示第一人稱的願望，一段動詞「建てる」變為「建てたい」。'
     },
     {
-        id: 'n4_gen_tateru_2',
+        id: 'n4_v1399_tateru_2',
         prob: 'この建物{たてもの}は、30年{ねん}前{まえ}に ______。',
         prob_zh: '這棟建築物是30年前 *被蓋* 的。',
         level: 'N4',
@@ -455,5 +455,628 @@ export const n4Questions: StaticQuestion[] = [
         correctIndex: 0,
         tag: 'passive',
         correctRule: '這棟建築物是30年前被蓋的。 \n【受身】對於建築物等客觀事物，無動作主時常使用受身形。「建てる」→「建てられる」。'
+    },
+    // --- SOP Expanded N4 Batch 3 ---
+    // 1. 受ける (Ukeru)
+    {
+        id: 'n4_v1399_ukeru_1',
+        prob: '試験{しけん}を ______。',
+        prob_zh: ' *參加* 考試。',
+        level: 'N4',
+        options: [
+            { text: '受{う}けます', reason: '正確！一段動詞。' },
+            { text: '受{う}かます', reason: '錯誤：五段誤用。' },
+            { text: '受{う}け', reason: '正確！(連用)' },
+            { text: '受{う}けたい', reason: '正確！(想參加)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '參加考試。 \n【語義】「受ける」(ukeru) 在此表示接受考試。'
+    },
+    {
+        id: 'n4_v1399_ukeru_2',
+        prob: '手術{しゅじゅつ}を ______ ほうがいいです。',
+        prob_zh: '最好 *接受* 手術。',
+        level: 'N4',
+        options: [
+            { text: '受{う}けた', reason: '正確！一段動詞過去式 + ほうがいい。' },
+            { text: '受{う}けて', reason: '錯誤：接續錯誤。' },
+            { text: '受{う}ける', reason: '正確！(雖然可用，但建議用過去式)' },
+            { text: '受{う}かった', reason: '錯誤：那是「考上」。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '最好接受手術。 \n【建議】「～たほうがいい」表示具體的建議。'
+    },
+    // 2. 支える (Sazaeru)
+    {
+        id: 'n4_v1399_sazaeru_1',
+        prob: '家族{かぞく}を ______。',
+        prob_zh: ' *支撐(扶養)* 家族。',
+        level: 'N4',
+        options: [
+            { text: '支{ささ}えています', reason: '正確！一段動詞進行中。' },
+            { text: '支{ささ}えます', reason: '正確！(未來/意志)' },
+            { text: '支{ささ}え', reason: '正確！(連用)' },
+            { text: '助{たす}けます', reason: '正確！(幫助，但支撐用支える)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '支撐家族。 \n【語義】「支える」(sazaeru) 指在經濟或精神上支撐、扶養。'
+    },
+    {
+        id: 'n4_v1399_sazaeru_2',
+        prob: '屋根{やね}を柱{はしら}で ______。',
+        prob_zh: '用柱子 *支撐* 屋頂。',
+        level: 'N4',
+        options: [
+            { text: '支{ささ}えている', reason: '正確！表示物理狀態的持續。' },
+            { text: '支{ささ}える', reason: '正確！(辭書)' },
+            { text: '支{ささ}えられ', reason: '錯誤：受身。' },
+            { text: '持{も}っている', reason: '錯誤：手拿。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '用柱子支撐屋頂。 \n【用法】物理上的承重、支撐。'
+    },
+    // 3. 備える (Sonaeru)
+    {
+        id: 'n4_v1399_sonaeru_1',
+        prob: '地震{じしん}に ______。',
+        prob_zh: '為地震做 *準備*。',
+        level: 'N4',
+        options: [
+            { text: '備{そな}えます', reason: '正確！一段動詞。' },
+            { text: '準備{じゅんび}します', reason: '正確！(但此處考備える的語感)' },
+            { text: '備{そな}わります', reason: '錯誤：自動詞(備有)。' },
+            { text: '備{そな}え', reason: '正確！(連用)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '為地震做準備。 \n【語感】「備える」通常指為了應對不可預期的災害、事故而預先準備。'
+    },
+    {
+        id: 'n4_v1399_sonaeru_2',
+        prob: '冬{ふゆ}に ______ 準備{じゅんび}をする。',
+        prob_zh: '為了 *應對* 冬天而做準備。',
+        level: 'N4',
+        options: [
+            { text: '備{そな}えて', reason: '正確！TE形表示目的性的準備。' },
+            { text: '備{そな}え', reason: '正確！(連用)' },
+            { text: '向{む}けて', reason: '正確！(面向，但備える更常用於氣候)' },
+            { text: '備{そな}えられ', reason: '錯誤：受身。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '為了應對冬天而做準備。 \n【活用】一段動詞「備える」去掉「る」加「て」。'
+    },
+    // 4. 訴える (Uttaeru)
+    {
+        id: 'n4_v1399_uttaeru_1',
+        prob: '裁判所{さいばんしょ}に ______。',
+        prob_zh: '向法院 *控告*。',
+        level: 'N4',
+        options: [
+            { text: '訴{うった}えます', reason: '正確！一段動詞。' },
+            { text: '訴{うった}え', reason: '正確！(連用)' },
+            { text: '言{い}います', reason: '錯誤：說話層級太低。' },
+            { text: '頼{たの}みます', reason: '錯誤：拜託。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '向法院控告。 \n【語義】「訴える」可以指法律上的控訴。'
+    },
+    {
+        id: 'n4_v1399_uttaeru_2',
+        prob: '腹痛{ふくつう}を ______。',
+        prob_zh: ' *申訴* 腹痛(感到腹痛並說出來)。',
+        level: 'N4',
+        options: [
+            { text: '訴{うった}えている', reason: '正確！表示持續向他人表達不適。' },
+            { text: '訴{うった}える', reason: '正確！(一般動詞)' },
+            { text: '痛{いた}い', reason: '錯誤：形容詞。' },
+            { text: '叫{さけ}んでいる', reason: '錯誤：大叫。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '申訴腹痛。 \n【語義】「訴える」也可用於向醫生或他人表達痛苦、不適。'
+    },
+    // 5. 越える (Koeru)
+    {
+        id: 'n4_v1399_koeru_1',
+        prob: '山{やま}を ______。',
+        prob_zh: ' *跨越* 山。',
+        level: 'N4',
+        options: [
+            { text: '越{こ}えます', reason: '正確！一段動詞。' },
+            { text: '超{こ}えます', reason: '正確！(備註: 超える多用於數量超過)' },
+            { text: '越{こ}え', reason: '正確！(連用)' },
+            { text: '通{とお}ります', reason: '正確！(通過，但越過山脊用越える)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '跨越山。 \n【語法】跨越障礙物、邊界用「越える」。'
+    },
+    {
+        id: 'n4_v1399_koeru_2',
+        prob: '国境{こっきょう}を ______。',
+        prob_zh: ' *跨越* 國境。',
+        level: 'N4',
+        options: [
+            { text: '越{こ}えた', reason: '正確！一段動詞過去式。' },
+            { text: '越{こ}した', reason: '正確！(五段動詞，也可用但稍帶「移居」感)' },
+            { text: '渡{わた}った', reason: '正確！(渡過，多用於橋或路)' },
+            { text: '超{こ}えた', reason: '錯誤：國境是空間界線，用越。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '跨越國境。 \n【活用】一段動詞語尾變換。'
+    },
+    // 6. 越す (Kosu)
+    {
+        id: 'n4_v1399_kosu_1',
+        prob: '東京{とうきょう}へ 引{ひ}っ ______。',
+        prob_zh: ' *搬* 到東京。',
+        level: 'N4',
+        options: [
+            { text: '越{こ}す', reason: '正確！「引っ越す」是五段複合動詞。' },
+            { text: '越{こ}し', reason: '正確！(連用)' },
+            { text: '越{こ}した', reason: '正確！(過去)' },
+            { text: '越{こ}そう', reason: '正確！(意向)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '搬到東京。 \n【複合動詞】「引っ越す」(hikkosu) 是 N4 必考單字。'
+    },
+    {
+        id: 'n4_v1399_kosu_2',
+        prob: '冬{ふゆ}を ______。',
+        prob_zh: ' *度過* 冬天。',
+        level: 'N4',
+        options: [
+            { text: '越{こ}します', reason: '正確！五段動詞。' },
+            { text: '越{こ}えます', reason: '正確！(一段，也可用於度過時間)' },
+            { text: '過{す}ごします', reason: '正確！(普通的過生活)' },
+            { text: '越{こ}して', reason: '正確！(TE形)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '度過冬天。 \n【語義】「年を越す」(過年)、「冬を越す」(過冬) 常使用五段「越す」。'
+    },
+    // 7. 済む (Sumu)
+    {
+        id: 'n4_v1399_sumu_1',
+        prob: '仕事{しごと}が ______。',
+        prob_zh: '工作 *結束/解決* 了。',
+        level: 'N4',
+        options: [
+            { text: '済{す}みました', reason: '正確！五段自動詞。表示事情辦完了、解決了。' },
+            { text: '済{す}ませました', reason: '錯誤：那是他動詞(人把事辦完)。' },
+            { text: '終{お}わりました', reason: '正確！(意思相近，但済む帶有「完結了」的語感)' },
+            { text: '解決{かいけつ}しました', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '工作結束了。 \n【自他動詞】「済む」(自) vs 「済ませる」(他)。'
+    },
+    {
+        id: 'n4_v1399_sumu_2',
+        prob: '謝{あや}まれば ______。',
+        prob_zh: '只要道歉就 *能了事*。',
+        level: 'N4',
+        options: [
+            { text: '済{す}む', reason: '正確！表示事情以此方式完結。' },
+            { text: '済{す}み', reason: '正確！(連用)' },
+            { text: '解決{かいけつ}する', reason: '正確！' },
+            { text: '済{す}ませ', reason: '錯誤：使役誤用。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '只要道歉就能了事。 \n【語義】在此表示事情可以用某種代價或動作來完結。'
+    },
+    // 8. 済ませる (Sumaseru)
+    {
+        id: 'n4_v1399_sumaseru_1',
+        prob: '宿題{しゅくだい}を早く ______ ください。',
+        prob_zh: '請快點把作業 *做完(處理好)*。',
+        level: 'N4',
+        options: [
+            { text: '済{す}ませて', reason: '正確！一段他動詞。' },
+            { text: '済{す}んで', reason: '錯誤：自動詞，不接ください。' },
+            { text: '済{す}まし', reason: '正確！(連用)' },
+            { text: '終{お}わって', reason: '正確！(雖然可用，但済ませる更具處理感)' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請快點把作業做完。 \n【活用】他動詞「済ませる」(一段) 變為 te 形。'
+    },
+    {
+        id: 'n4_v1399_sumaseru_2',
+        prob: '朝御飯{あさごはん}をパンで ______。',
+        prob_zh: '早餐用麵包 *解決*。',
+        level: 'N4',
+        options: [
+            { text: '済{す}ませた', reason: '正確！表示用簡單的方式處理。' },
+            { text: '済{す}んだ', reason: '錯誤：早餐自己解決？不合邏輯。' },
+            { text: '食{た}べた', reason: '正確！(普通的吃)' },
+            { text: '済{す}ませ', reason: '正確！(連用)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '早餐用麵包解決。 \n【用法】「～で済ませる」表示在資源或內容有限的情況下草草了事。'
+    },
+    // 9. 指す (Sasu)
+    {
+        id: 'n4_v1399_sasu_1',
+        prob: '時計{とけい}の針{はり}が12時{じ}を ______。',
+        prob_zh: '時鐘的指針 *指向* 12點。',
+        level: 'N4',
+        options: [
+            { text: '指{さ}しています', reason: '正確！五段動詞指向中。' },
+            { text: '刺{さ}しています', reason: '錯誤：那是刺入。' },
+            { text: '指{さ}します', reason: '正確！' },
+            { text: '向{む}いています', reason: '正確！(朝向，但指針通常用指す)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '時鐘的指針指向12點。 \n【語義】「指す」(sasu) 指向、指示。'
+    },
+    {
+        id: 'n4_v1399_sasu_2',
+        prob: '北{きた}を ______ います。',
+        prob_zh: '正在 *指* 著北方。',
+        level: 'N4',
+        options: [
+            { text: '指{さ}して', reason: '正確！五段動詞促音便。' },
+            { text: '指{さ}し', reason: '錯誤：接續錯誤。' },
+            { text: '向{む}いて', reason: '正確！' },
+            { text: '指{さ}した', reason: '錯誤：時態。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '正在指著北方。 \n【音便】五段動詞結尾「す」發生促音便應為「して」(與「書く」不同，不要混淆為「さいて」)。備註：其實「指す」是五段s-verb，變法是「した」。'
+    },
+    // 10. 増える (Fueru)
+    {
+        id: 'n4_v1399_fueru_1',
+        prob: '人口{じんこう}が ______。',
+        prob_zh: '人口 *增加* 了。',
+        level: 'N4',
+        options: [
+            { text: '増{ふ}えました', reason: '正確！一段自動詞。' },
+            { text: '増{ふ}やしました', reason: '錯誤：那是人為增加(他動詞)。' },
+            { text: '多{おお}くなりました', reason: '正確！(狀態改變)' },
+            { text: '増{ふ}え', reason: '正確！(連用)' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '人口增加了。 \n【自他動詞】「増える」(自) vs 「増やす」(他)。人口自然成長用自動詞。'
+    },
+    {
+        id: 'n4_v1399_fueru_2',
+        prob: '貯金{ちょきん}が ______ います。',
+        prob_zh: '儲蓄正在 *增加*。',
+        level: 'N4',
+        options: [
+            { text: '増{ふ}えて', reason: '正確！一段動詞 te 形。' },
+            { text: '多{おお}くなって', reason: '正確！' },
+            { text: '増{ふ}え', reason: '正確！(連用)' },
+            { text: '増{ふ}やして', reason: '錯誤：那是去增加(他動詞)。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '儲蓄正在增加。 \n【活用】一段動詞語尾變換。'
+    },
+    // --- SOP Expanded N4 Batch 4 ---
+    // 1. 集める (Atsumeru)
+    {
+        id: 'n4_v1399_atsumeru_1',
+        prob: '切手{きって}を ______。',
+        prob_zh: ' *收集* 郵票。',
+        level: 'N4',
+        options: [
+            { text: '集{あつ}めます', reason: '正確！一段他動詞。' },
+            { text: '集{あつ}まります', reason: '錯誤：那是自動詞(人聚集)。' },
+            { text: '集{あつ}め', reason: '正確！(連用)' },
+            { text: '集{あつ}めて', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '收集郵票。 \n【自他動詞】「集める」(他動) vs 「集まる」(自動)。'
+    },
+    {
+        id: 'n4_v1399_atsumeru_2',
+        prob: 'ゴミを ______ ください。',
+        prob_zh: '請 *收集(清理)* 垃圾。',
+        level: 'N4',
+        options: [
+            { text: '集{あつ}めて', reason: '正確！一段語尾去「る」加「て」。' },
+            { text: '集{あつ}まって', reason: '錯誤：自動詞，不合邏輯。' },
+            { text: '拾{ひろ}って', reason: '正確！(撿起來)' },
+            { text: '捨{す}てて', reason: '錯誤：那是丟掉。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請收集垃圾。 \n【活用】一段動詞變位不音便。'
+    },
+    // 2. 集まる (Atsumaru)
+    {
+        id: 'n4_v1399_atsumaru_1',
+        prob: '人{ひと}が ______。',
+        prob_zh: '人 *聚集* 了起來。',
+        level: 'N4',
+        options: [
+            { text: '集{あつ}まりました', reason: '正確！五段自動詞。' },
+            { text: '集{あつ}めました', reason: '錯誤：這是人為收集(他動詞)。' },
+            { text: '集{あつ}まって', reason: '正確！' },
+            { text: '集{あつ}ま', reason: '錯誤：變化錯誤。' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '人聚集了起來。 \n【自他動詞】「集まる」(人自然聚集) vs 「集める」(人去收集東西)。'
+    },
+    {
+        id: 'n4_v1399_atsumaru_2',
+        prob: '3時{じ}に駅{えき}へ ______ ください。',
+        prob_zh: '請在3點 *集合* 於車站。',
+        level: 'N4',
+        options: [
+            { text: '集{あつ}まって', reason: '正確！五段促音便。' },
+            { text: '集{あつ}り', reason: '錯誤：變化錯誤。' },
+            { text: '来{き}て', reason: '正確！' },
+            { text: '集{あつ}めて', reason: '錯誤：那是收集。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請在3點集合於車站。 \n【音便】五段動詞結尾「る」變為「って」。'
+    },
+    // 3. 壊す (Kowasu)
+    {
+        id: 'n4_v1399_kowasu_1',
+        prob: 'おもちゃを ______。',
+        prob_zh: '把玩具 *弄壞*。',
+        level: 'N4',
+        options: [
+            { text: '壊{こわ}します', reason: '正確！五段他動詞。' },
+            { text: '壊{こわ}れます', reason: '錯誤：這是物品壞了(自動詞)。' },
+            { text: '壊{こわ}し', reason: '正確！' },
+            { text: '壊{こわ}さないで', reason: '正確！(請不要弄壞)' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '把玩具弄壞。 \n【自他動詞】「壊す」(他動) vs 「壊れる」(自動)。'
+    },
+    {
+        id: 'n4_v1399_kowasu_2',
+        prob: '体{からだ}を ______ ないでください。',
+        prob_zh: '請不要 *搞壞* 身體。',
+        level: 'N4',
+        options: [
+            { text: '壊{こわ}さ', reason: '正確！五段未然形。' },
+            { text: '壊{こわ}し', reason: '錯誤：接續錯誤。' },
+            { text: '壊{こわ}れ', reason: '錯誤：自動詞。' },
+            { text: '休{やす}め', reason: '錯誤：休息。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '請不要搞壞身體。 \n【用法】「体を壊す」是搞壞健康的固定說法。'
+    },
+    // 4. 壊れる (Kowareru)
+    {
+        id: 'n4_v1399_kowareru_1',
+        prob: 'テレビが ______。',
+        prob_zh: '電視 *壞* 了。',
+        level: 'N4',
+        options: [
+            { text: '壊{こわ}れました', reason: '正確！一段自動詞。' },
+            { text: '壊{こわ}しました', reason: '錯誤：是他動詞(人弄壞電視)。' },
+            { text: '壊{こわ}れ', reason: '正確！' },
+            { text: '直{なお}りました', reason: '錯誤：修好了。' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '電視壞了。 \n【自他動詞】「壊れる」表示物品發生故障或損壞。'
+    },
+    {
+        id: 'n4_v1399_kowareru_2',
+        prob: ' ______ やすいカメラ。',
+        prob_zh: '容易 *壞* 的相機。',
+        level: 'N4',
+        options: [
+            { text: '壊{こわ}れ', reason: '正確！一段連用形接「やすい」。' },
+            { text: '壊{こわ}し', reason: '錯誤：那是容易弄壞(人為)。' },
+            { text: '壊{こわ}れた', reason: '錯誤：修飾形態不接辭。' },
+            { text: '壊{こわ}れな', reason: '錯誤：變化錯誤。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '容易壞的相機。 \n【活用】動詞連用形 + やすい。'
+    },
+    // 5. 消す (Kesu)
+    {
+        id: 'n4_v1399_kesu_1',
+        prob: '電気{でんき}を ______ ください。',
+        prob_zh: '請 *關* 燈。',
+        level: 'N4',
+        options: [
+            { text: '消{け}して', reason: '正確！五段動詞促音便變為「して」。' },
+            { text: '消{き}えて', reason: '錯誤：那是燈自己熄滅。' },
+            { text: '消{け}し', reason: '錯誤：接續。' },
+            { text: '付{つ}けて', reason: '錯誤：那是開燈。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請關燈。 \n【音便】五段動詞結尾「す」變為「して」。'
+    },
+    {
+        id: 'n4_v1399_kesu_2',
+        prob: '鉛筆{えんぴつ}で書{か}いたところを ______。',
+        prob_zh: ' *擦掉* 用鉛筆寫的地方。',
+        level: 'N4',
+        options: [
+            { text: '消{け}します', reason: '正確！五段他動詞。表示消除、抹除。' },
+            { text: '消{き}えます', reason: '錯誤：自動詞。' },
+            { text: '直{なお}します', reason: '錯誤：改正。' },
+            { text: '消{け}した', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '擦掉用鉛筆寫的地方。 \n【語義】「消す」可用於關掉電源、消除氣味、擦掉文字。'
+    },
+    // 6. 消える (Kieru)
+    {
+        id: 'n4_v1399_kieru_1',
+        prob: '火{ひ}が ______。',
+        prob_zh: '火 *熄滅* 了。',
+        level: 'N4',
+        options: [
+            { text: '消{き}えました', reason: '正確！一段自動詞。' },
+            { text: '消{け}しました', reason: '錯誤：人去關掉/熄滅(他動詞)。' },
+            { text: '付{つ}きました', reason: '錯誤：點燃了。' },
+            { text: '消{き}え', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '火熄滅了。 \n【自他動詞】「消える」(自) vs 「消す」(他)。'
+    },
+    {
+        id: 'n4_v1399_kieru_2',
+        prob: '姿{すがた}が波{なみ}に ______。',
+        prob_zh: '身影在波浪中 *消失*。',
+        level: 'N4',
+        options: [
+            { text: '消{き}えた', reason: '正確！一段過去式。' },
+            { text: '消{け}した', reason: '錯誤：主動消滅。' },
+            { text: '消{き}えて', reason: '正確！' },
+            { text: '隱{かく}れた', reason: '正確！(躲起來，但消失更符合情境)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '身影在波浪中消失。 \n【活用】一段動詞變位。'
+    },
+    // 7. 決める (Kimeru)
+    {
+        id: 'n4_v1399_kimeru_1',
+        prob: '自分{じぶん}で ______。',
+        prob_zh: '由自己 *決定*。',
+        level: 'N4',
+        options: [
+            { text: '決{き}めます', reason: '正確！一段他動詞。' },
+            { text: '決{き}まります', reason: '錯誤：那是被決定(自動詞)。' },
+            { text: '決{き}め', reason: '正確！' },
+            { text: '選{えら}びます', reason: '正確！(選擇)' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '由自己決定。 \n【自他動詞】「決める」(他動，人進行決定) vs 「決まる」(自動，事情被定下來)。'
+    },
+    {
+        id: 'n4_v1399_kimeru_2',
+        prob: ' ______ られた時間{じかん}を守{まも}る。',
+        prob_zh: '遵守 *規定* 的時間。',
+        level: 'N4',
+        options: [
+            { text: '決{き}め', reason: '正確！一段受身修飾，意指規定的。' },
+            { text: '決{き}ま', reason: '錯誤：自動詞受身形態。' },
+            { text: '決{き}めた', reason: '正確！(自己定的)' },
+            { text: '決{き}める', reason: '錯誤：接續。' }
+        ],
+        correctIndex: 0,
+        tag: 'passive',
+        correctRule: '遵守規定的時間。 \n【活用】「決められる」表示被動或被賦予的規則。'
+    },
+    // 8. 決まる (Kimaru)
+    {
+        id: 'n4_v1399_kimaru_1',
+        prob: '出張{しゅっちょう}の日{ひ}が ______。',
+        prob_zh: '出差日期 *定下來(被決定)* 了。',
+        level: 'N4',
+        options: [
+            { text: '決{き}まりました', reason: '正確！五段自動詞。' },
+            { text: '決{き}めました', reason: '錯誤：人去決定日期(他動詞)。' },
+            { text: '決{き}まって', reason: '正確！' },
+            { text: '定{さだ}まりました', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '出差日期定下來了。 \n【語義】「決まる」側重於事情進展到有了定論。'
+    },
+    {
+        id: 'n4_v1399_kimaru_2',
+        prob: ' ______ っていること。',
+        prob_zh: ' *規定* 好的事情。',
+        level: 'N4',
+        options: [
+            { text: '決{き}まって', reason: '正確！自動詞狀態持續。' },
+            { text: '決{き}め', reason: '錯誤：那是正在規定。' },
+            { text: '決{き}まり', reason: '正確！(名詞)' },
+            { text: '決{き}まる', reason: '錯誤：接續。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '規定好的事情。 \n【活用】五段動詞「決まる」促音便。'
+    },
+    // 9. 届ける (Todokeru)
+    {
+        id: 'n4_v1399_todokeru_1',
+        prob: '荷物{にもつ}を ______。',
+        prob_zh: ' *送達* 行李。',
+        level: 'N4',
+        options: [
+            { text: '届{とど}けます', reason: '正確！一段他動詞。' },
+            { text: '届{とど}きます', reason: '錯誤：那是行李抵達(自動詞)。' },
+            { text: '送{おく}ります', reason: '正確！(寄送)' },
+            { text: '届{とど}け', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '送達行李。 \n【自他動詞】「届ける」(人去送) vs 「届く」(物品抵達)。'
+    },
+    {
+        id: 'n4_v1399_todokeru_2',
+        prob: '警察{けいさつ}に ______ ください。',
+        prob_zh: '請向警察 *申報(交回)*。',
+        level: 'N4',
+        options: [
+            { text: '届{とど}けて', reason: '正確！向官署申報也使用「届ける」。' },
+            { text: '届{とど}いて', reason: '錯誤：自動詞，不接ください。' },
+            { text: '知{し}らせて', reason: '正確！(通知)' },
+            { text: '渡{わた}して', reason: '正確！(轉交)' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請向警察申報。 \n【語義】「届ける」除了送貨，也包含正式的事項申報。'
+    },
+    // 10. 付ける (Tsukeru)
+    {
+        id: 'n4_v1399_tsukeru_1',
+        prob: 'テレビを ______。',
+        prob_zh: ' *打開* 電視。',
+        level: 'N4',
+        options: [
+            { text: '付{つ}けます', reason: '正確！一段他動詞。' },
+            { text: '付{つ}きます', reason: '錯誤：那是燈自己亮了(自動詞)。' },
+            { text: '付{つ}け', reason: '正確！' },
+            { text: '消{け}します', reason: '錯誤：那是不關。' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '打開電視。 \n【自他動詞】「付ける」(他動，開燈/電視) vs 「付く」(自動，燈亮著)。'
+    },
+    {
+        id: 'n4_v1399_tsukeru_2',
+        prob: '日記{にっき}を ______ います。',
+        prob_zh: '正在 *記* 日記。',
+        level: 'N4',
+        options: [
+            { text: '付{つ}けて', reason: '正確！習慣性動作也可以用狀態持續。' },
+            { text: '書{か}いて', reason: '正確！(寫日記)' },
+            { text: '付{つ}き', reason: '錯誤：接續。' },
+            { text: '付{つ}か', reason: '錯誤：變化。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '正在記日記。 \n【用法】「日記を付ける」是記日記的慣用寫法。'
     }
 ]
+

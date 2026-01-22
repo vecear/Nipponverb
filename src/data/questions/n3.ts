@@ -328,5 +328,597 @@ export const n3Questions: StaticQuestion[] = [
         correctIndex: 0,
         tag: 'compound',
         correctRule: '【複合動詞】「ます形去masu + 出す」表示突發性的開始 (突然下起雨來)。雖然「始める」也是開始，但「雨が降り出した」是強調突發的慣用句。'
+    },
+    // --- SOP Expanded N3 Batch 3 ---
+    // 1. 訪ねる (Tazuneru)
+    {
+        id: 'n3_v1399_tazuneru_1',
+        prob: '京都{きょうと}の旧友{きゅうゆう}を ______。',
+        prob_zh: ' *拜訪* 京都的老朋友。',
+        level: 'N3',
+        options: [
+            { text: '訪{たず}ねる', reason: '正確！一段動詞。表示人為的拜訪、探訪。' },
+            { text: '訪{おとず}れる', reason: '正確！(語感較正式、文學)' },
+            { text: '尋{たず}ねる', reason: '錯誤：這是「詢問/尋找」。' },
+            { text: '訪{たず}ね', reason: '正確！(連用)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '拜訪京都的老朋友。 \n【漢字辨析】「訪ねる」是拜訪人或地點，「尋ねる」是尋找或詢問。'
+    },
+    {
+        id: 'n3_v1399_tazuneru_2',
+        prob: '彼{かれ}を ______ 行{い}きましたが、留守{るす}でした。',
+        prob_zh: '雖然去 *拜訪* 他，但他不在家。',
+        level: 'N3',
+        options: [
+            { text: '訪{たず}ねに', reason: '正確！ます形去masu + に 表示目的。' },
+            { text: '訪{たず}ねて', reason: '錯誤：接續錯誤。' },
+            { text: '訪{おとず}れに', reason: '正確！' },
+            { text: '訪{たず}ねな', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '雖然去拜訪他，但他不在家。 \n【活用】一段動詞「訪ねる」連用形。'
+    },
+    // 2. 訪れる (Otozureru)
+    {
+        id: 'n3_v1399_otozureru_1',
+        prob: 'ついに、平和{へいわ}が ______。',
+        prob_zh: '終於，和平 *到來* 了。',
+        level: 'N3',
+        options: [
+            { text: '訪{おとず}れました', reason: '正確！一段動詞。常用於季節、時代或抽象事物的到來。' },
+            { text: '訪{たず}ねました', reason: '錯誤：那是人為拜訪。' },
+            { text: '来{き}ました', reason: '正確！(但訪れる語氣更莊重)' },
+            { text: '始{はじ}まりました', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '終於，和平到來了。 \n【語義】「訪れる」常用於文學或新聞，表示某個時期或狀態的降臨。'
+    },
+    {
+        id: 'n3_v1399_otozureru_2',
+        prob: '春{はる}の ______ を感{かん}じる。',
+        prob_zh: '感覺到春天的 *到來*。',
+        level: 'N3',
+        options: [
+            { text: '訪{おとず}れ', reason: '正確！一段動詞連用形轉名詞。' },
+            { text: '訪{たず}ね', reason: '錯誤：語義不符。' },
+            { text: '来{く}る', reason: '正確！(但不如名詞訪れ通順)' },
+            { text: '始{はじ}まり', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '感覺到春天的到來。 \n【用法】「季節の訪れ」是常用的固定搭配。'
+    },
+    // 3. 誘う (Sasou)
+    {
+        id: 'n3_v1399_sasou_1',
+        prob: '彼女{かのじょ}を食事{しょくじ}に ______。',
+        prob_zh: ' *邀請* 她去吃飯。',
+        level: 'N3',
+        options: [
+            { text: '誘{さそ}う', reason: '正確！五段動詞。' },
+            { text: '招待{しょうたい}する', reason: '正確！(較正式，誘う帶有相約感)' },
+            { text: '誘{さそ}い', reason: '正確！(連用)' },
+            { text: '誘{さそ}おう', reason: '正確！(想邀約)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '邀請她去吃飯。 \n【語法】「（人）を（目的）に誘う」是固定用法。'
+    },
+    {
+        id: 'n3_v1399_sasou_2',
+        prob: '友達{ともだち}に ______ 、映画{えいが}を見{み}に行{い}った。',
+        prob_zh: ' *受* 朋友 *邀請*，去看了電影。',
+        level: 'N3',
+        options: [
+            { text: '誘{さそ}われて', reason: '正確！五段受身形。' },
+            { text: '誘{さそ}って', reason: '錯誤：主動邀請朋友。' },
+            { text: '誘{さそ}い', reason: '錯誤：接續。' },
+            { text: '誘{さそ}わせ', reason: '錯誤：使役形。' }
+        ],
+        correctIndex: 0,
+        tag: 'passive',
+        correctRule: '受朋友邀請，去看了電影。 \n【受身】五段動詞「誘う」(sasou) 變為「誘われる」(sasowareru)。'
+    },
+    // 5. 望む (Nozomu)
+    {
+        id: 'n3_v1399_nozomu_1',
+        prob: '多{おお}くは ______ ません。',
+        prob_zh: '不 *奢求* 太甚。',
+        level: 'N3',
+        options: [
+            { text: '望{のぞ}み', reason: '正確！五段ます形否定。' },
+            { text: '望{のぞ}ん', reason: '錯誤：音便。' },
+            { text: '願{ねが}い', reason: '正確！(但望む帶有野心、展望感)' },
+            { text: '望{のぞ}め', reason: '錯誤：命令。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '不奢求太甚。 \n【語義】「望む」(nozomu) 指對未來的期望、展望或要求。'
+    },
+    {
+        id: 'n3_v1399_nozomu_2',
+        prob: '海{うみ}を ______ 高台{たかだい}。',
+        prob_zh: ' *望* 著海的高台。',
+        level: 'N3',
+        options: [
+            { text: '望{のぞ}む', reason: '正確！五段辭書形。' },
+            { text: '臨{のぞ}む', reason: '正確！(備註: 面臨、對著也讀作nozomu，漢字不同)' },
+            { text: '見{み}る', reason: '正確！(普通看)' },
+            { text: '望{のぞ}んだ', reason: '正確！(過去)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '望著海的高台。 \n【語感】在此指視覺上的眺望。'
+    },
+    // 6. 頼む (Tanomu)
+    {
+        id: 'n3_v1399_tanomu_1',
+        prob: '仕事{しごと}を ______。',
+        prob_zh: ' *拜託* 工作。',
+        level: 'N3',
+        options: [
+            { text: '頼{たの}みます', reason: '正確！五段動詞。' },
+            { text: '願{ねが}います', reason: '正確！(但頼む更有委託某特定任務感)' },
+            { text: '頼{たの}み', reason: '正確！(連用)' },
+            { text: '頼{たの}も', reason: '正確！(常體意向)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '拜託工作。 \n【語法】「(事)を(人)に頼む」是核心句型。'
+    },
+    {
+        id: 'n3_v1399_tanomu_2',
+        prob: '彼{かれ}に ______ ください。',
+        prob_zh: '請向他 *拜託*。',
+        level: 'N3',
+        options: [
+            { text: '頼{たの}んで', reason: '正確！五段撥音便。' },
+            { text: '頼{たの}み', reason: '錯誤：接續錯誤。' },
+            { text: '頼{たの}まえ', reason: '錯誤：變化錯誤。' },
+            { text: '頼{たの}め', reason: '錯誤：命令。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請向他拜託。 \n【活用】五段動詞結尾「む」變為「んで」。'
+    },
+    // 7. 頼る (Tayoru)
+    {
+        id: 'n3_v1399_tayoru_1',
+        prob: '親{おや}に ______。',
+        prob_zh: ' *依賴* 父母。',
+        level: 'N3',
+        options: [
+            { text: '頼{たよ}っています', reason: '正確！五段動詞，表示依賴的狀態。' },
+            { text: '頼{たよ}ります', reason: '正確！(未來)' },
+            { text: '依存{いぞん}する', reason: '正確！(較僵硬的學術詞彙)' },
+            { text: '頼{たの}みます', reason: '錯誤：那是拜託。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '依賴父母。 \n【詞彙辨析】「頼る」(tayoru，依賴) 與 「頼む」(tanomu，拜託) 是 N3 常考區分點。'
+    },
+    {
+        id: 'n3_v1399_tayoru_2',
+        prob: '自分{じぶん}の力{ちから}を ______。',
+        prob_zh: ' *依靠* 自己的力量。',
+        level: 'N3',
+        options: [
+            { text: '頼{たよ}る', reason: '正確！五段動詞。' },
+            { text: '信{しん}じる', reason: '正確！(相信，但依靠用頼る)' },
+            { text: '頼{たよ}り', reason: '正確！(名詞/連用)' },
+            { text: '頼{たよ}ら', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '依靠自己的力量。 \n【活用】「頼る」是五段動詞。'
+    },
+    // 8. 驚く (Odoroku)
+    {
+        id: 'n3_v1399_odoroku_1',
+        prob: 'ニュースを聞{き}いて ______。',
+        prob_zh: '聽了新聞後很 *驚訝*。',
+        level: 'N3',
+        options: [
+            { text: '驚{おどろ}きました', reason: '正確！五段動詞。表示驚訝於此意外消息。' },
+            { text: '驚{おどろ}せました', reason: '錯誤：使役(使人驚訝)。' },
+            { text: '驚{おどろ}いた', reason: '正確！(音便)' },
+            { text: 'びっくりしました', reason: '正確！(但 odoroku 較正式)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '聽了新聞後很驚訝。 \n【語義】「驚く」(odoroku) 是自動詞，表示主語感到驚訝。'
+    },
+    {
+        id: 'n3_v1399_odoroku_2',
+        prob: 'あまりに ______ 腰{こし}を抜{ぬ}かした。',
+        prob_zh: '太過 *驚訝* 而嚇得癱軟。',
+        level: 'N3',
+        options: [
+            { text: '驚{おどろ}いて', reason: '正確！五段 i 音便。' },
+            { text: '驚{おどろ}き', reason: '正確！' },
+            { text: '驚{おどろ}かせて', reason: '錯誤：他動詞。' },
+            { text: '驚{おどろ}かないで', reason: '錯誤：不要驚訝。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '太過驚訝而嚇得癱軟。 \n【を活用】五段動詞結尾「く」變為「いて」。'
+    },
+    // 9. 焦る (Aseru)
+    {
+        id: 'n3_v1399_aseru_1',
+        prob: '時間{じかん}がなくて ______。',
+        prob_zh: '因為沒時間而 *焦急*。',
+        level: 'N3',
+        options: [
+            { text: '焦{あせ}っています', reason: '正確！五段動詞，表示焦慮情緒持續。' },
+            { text: '焦{あせ}ります', reason: '正確！(未來)' },
+            { text: '急{いそ}いで', reason: '正確！(急著做，但心境焦熱用焦る)' },
+            { text: '困{こま}って', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '因為沒時間而焦急。 \n【語義】「焦る」指心情浮躁、焦急。注意它是五段動詞(結尾是iru/eru但非一段)。'
+    },
+    {
+        id: 'n3_v1399_aseru_2',
+        prob: '______ は禁物{きんもつ}だ。',
+        prob_zh: ' *焦躁* 是大忌。',
+        level: 'N3',
+        options: [
+            { text: '焦{あせ}り', reason: '正確！五段連用形轉名詞。' },
+            { text: '焦{あせ}る', reason: '正確！(但此處用名詞較自然)' },
+            { text: '急{いそ}ぎ', reason: '正確！' },
+            { text: '焦{あせ}ら', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '焦躁是大忌。 \n【活用】五段動詞連用形名詞化。'
+    },
+    // 10. 悟る (Satoru)
+    {
+        id: 'n3_v1399_satoru_1',
+        prob: '自分{じぶん}の過{あやま}ちを ______。',
+        prob_zh: ' *領悟* 到自己的過錯。',
+        level: 'N3',
+        options: [
+            { text: '悟{さと}りました', reason: '正確！五段動詞。' },
+            { text: '悟{さと}った', reason: '正確！(音便)' },
+            { text: '氣{き}づきました', reason: '正確！(察覺，但悟る層次較深)' },
+            { text: '分{わ}かりました', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '領悟到自己的過錯。 \n【語義】「悟る」(satoru) 指察覺到隱藏的真相或深刻領會道理。'
+    },
+    {
+        id: 'n3_v1399_satoru_2',
+        prob: '危険{きけん}を ______ 逃{に}げ出{だ}した。',
+        prob_zh: ' *察覺* 到危險後逃跑了。',
+        level: 'N3',
+        options: [
+            { text: '悟{さと}って', reason: '正確！五段促音便。' },
+            { text: '悟{さと}り', reason: '錯誤：接續。' },
+            { text: '感{かん}じて', reason: '正確！' },
+            { text: '悟{さと}られ', reason: '錯誤：受身。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '察覺到危險後逃跑了。 \n【活用】五段動詞結尾「る」變為「って」。'
+    },
+    // --- SOP Expanded N3 Batch 4 ---
+    // 1. 信じる (Shinjiru)
+    {
+        id: 'n3_v1399_shinjiru_1',
+        prob: '自分{じぶん}の可能性{かのうせい}を ______。',
+        prob_zh: ' *相信* 自己的可能性。',
+        level: 'N3',
+        options: [
+            { text: '信{しん}じています', reason: '正確！一段動詞。表示持續的信念。' },
+            { text: '信{しん}じます', reason: '正確！(未來/意志)' },
+            { text: '信{しん}じ', reason: '正確！(連用)' },
+            { text: '信{しん}じられたい', reason: '錯誤：想要被相信。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '相信自己的可能性。 \n【活用】「信じる」(shinjiru) 是一段動詞。'
+    },
+    {
+        id: 'n3_v1399_shinjiru_2',
+        prob: ' ______ られない話{はなし}。',
+        prob_zh: '令人無法 *相信* 的話。',
+        level: 'N3',
+        options: [
+            { text: '信{しん}じ', reason: '正確！一段可能形否定。' },
+            { text: '信{しん}じられ', reason: '正確！(被動/可能)' },
+            { text: '信{しん}じな', reason: '錯誤：變化錯誤。' },
+            { text: '信{しん}じ', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'potential',
+        correctRule: '令人無法相信的話。 \n【活用】一段動詞可能形為「信じられる」。'
+    },
+    // 2. 通じる (Tsuujiru)
+    {
+        id: 'n3_v1399_tsuujiru_1',
+        prob: '冗談{じょうだん}が ______。',
+        prob_zh: '笑話 *被聽懂(通)* 了。',
+        level: 'N3',
+        options: [
+            { text: '通{つう}じました', reason: '正確！一段動詞。表示意思傳達或被理解。' },
+            { text: '通{つう}じ', reason: '正確！' },
+            { text: '分{わ}かりました', reason: '正確！(理解了，但通じる強調流通感)' },
+            { text: '通{つう}じない', reason: '正確！(不通)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '笑話被聽懂了。 \n【語義】「通じる」(tsuujiru) 常用於語言、語氣或邏輯的傳達成功。'
+    },
+    {
+        id: 'n3_v1399_tsuujiru_2',
+        prob: '一年{いちねん}を ______。',
+        prob_zh: ' *透過(歷經)* 一整年。',
+        level: 'N3',
+        options: [
+            { text: '通{つう}じて', reason: '正確！一段語尾去「る」加「て」。在此表示期間或媒介。' },
+            { text: '通{つう}じて', reason: '正確！' },
+            { text: '通{とお}って', reason: '正確！(通過空間)' },
+            { text: '通{つう}じ', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '透過一整年。 \n【用法】「～を通じて」是 N3 以上常見的文法句型。'
+    },
+    // 3. 感じる (Kanjiru)
+    {
+        id: 'n3_v1399_kanjiru_1',
+        prob: '寒{さむ}さを ______。',
+        prob_zh: ' *感到* 寒冷。',
+        level: 'N3',
+        options: [
+            { text: '感{かん}じます', reason: '正確！一段動詞。' },
+            { text: '感{かん}じて', reason: '正確！' },
+            { text: '感{かん}じ', reason: '正確！' },
+            { text: '寒{さむ}い', reason: '錯誤：形容詞。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '感到寒冷。 \n【活用】「感じる」(kanjiru) 是一段動詞。'
+    },
+    {
+        id: 'n3_v1399_kanjiru_2',
+        prob: '責任{せきにん}を ______ います。',
+        prob_zh: '正在 *感(背負)* 到責任。',
+        level: 'N3',
+        options: [
+            { text: '感{かん}じて', reason: '正確！表示心理狀態的持續。' },
+            { text: '感{かん}じ', reason: '錯誤：接續。' },
+            { text: '受{う}けて', reason: '正確！(承受)' },
+            { text: '分{わ}かって', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '正在感覺到責任。 \n【活用】一段動詞變位。'
+    },
+    // 4. 関わる (Kakawaru)
+    {
+        id: 'n3_v1399_kakawaru_1',
+        prob: '命{いのち}に ______ 問題{もんだい}。',
+        prob_zh: ' *攸關* 性命的問題。',
+        level: 'N3',
+        options: [
+            { text: '関{かか}わる', reason: '正確！五段動詞。表示關係重大、涉及到。' },
+            { text: '関係{かんけい}する', reason: '正確！' },
+            { text: '関{かか}わり', reason: '正確！(名詞/連用)' },
+            { text: '関{かか}わって', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '攸關性命的問題。 \n【語義】「関わる」(kakawaru) 多用於強調影響重大或參與其中。'
+    },
+    {
+        id: 'n3_v1399_kakawaru_2',
+        prob: '事件{じけん}に ______。',
+        prob_zh: ' *捲入(涉及)* 了事件。',
+        level: 'N3',
+        options: [
+            { text: '関{かか}わりました', reason: '正確！五段過去式。' },
+            { text: '関{かか}わって', reason: '正確！' },
+            { text: '巻{ま}き込{こ}まれました', reason: '正確！(被捲入，但關聯也可以用關わる)' },
+            { text: '関{かか}わ', reason: '錯誤：變化。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '捲入(涉及)了事件。 \n【活用】五段動詞變位。'
+    },
+    // 5. 伝わる (Tsutawaru)
+    {
+        id: 'n3_v1399_tsutawaru_1',
+        prob: '文化{ぶんか}が後世{こうせい}に ______。',
+        prob_zh: '文化 *傳達* 到後世。',
+        level: 'N3',
+        options: [
+            { text: '伝{つた}わります', reason: '正確！五段自動詞。' },
+            { text: '伝{つた}えます', reason: '錯誤：那是人去傳達(他動詞)。' },
+            { text: '伝{つた}わり', reason: '正確！' },
+            { text: '広{ひろ}がります', reason: '正確！(傳播開來)' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '文化傳達到後世。 \n【自他動詞】「伝わる」(自) vs 「伝える」(他)。'
+    },
+    {
+        id: 'n3_v1399_tsutawaru_2',
+        prob: '気持{きも}ちが彼{かれ}に ______。',
+        prob_zh: '心情 *傳達(傳到)* 他那裡了。',
+        level: 'N3',
+        options: [
+            { text: '伝{つた}わった', reason: '正確！五段過去式促音便。' },
+            { text: '伝{つた}えた', reason: '錯誤：他動詞，語意不合。' },
+            { text: '届{とど}いた', reason: '正確！(送達)' },
+            { text: '伝{つた}わって', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '心情傳到他那裡了。 \n【活用】五段動詞結尾「る」變為「った」。'
+    },
+    // 6. 広がる (Hirogaru)
+    {
+        id: 'n3_v1399_hirogaru_1',
+        prob: '噂{うわさ}がまちに ______。',
+        prob_zh: '謠言在鎮上 *傳開*。',
+        level: 'N3',
+        options: [
+            { text: '広{ひろ}がります', reason: '正確！五段自動詞。' },
+            { text: '広{ひろ}げます', reason: '錯誤：那是人去展開(他動詞)。' },
+            { text: '広{ひろ}が', reason: '正確！' },
+            { text: '流{なが}れます', reason: '正確！(流傳)' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '謠言在鎮上傳開。 \n【自他動詞】「広がる」(自) vs 「広げる」(他)。'
+    },
+    {
+        id: 'n4_v1399_hirogaru_2',
+        prob: '景色{けしき}が ______。',
+        prob_zh: '景色 *展開(呈現)* 在眼前。',
+        level: 'N3',
+        options: [
+            { text: '広{ひろ}がっている', reason: '正確！表示廣大空間的展開。' },
+            { text: '広{ひろ}げている', reason: '錯誤：他動詞。' },
+            { text: '広{ひろ}がる', reason: '正確！' },
+            { text: '見{み}える', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '景色展開在眼前。 \n【活用】五段自動詞。'
+    },
+    // 7. 繋がる (Tsunagaru)
+    {
+        id: 'n3_v1399_tsunagaru_1',
+        prob: '電話{でんわ}が ______。',
+        prob_zh: '電話 *通(連接)* 了。',
+        level: 'N3',
+        options: [
+            { text: '繋{つな}がりました', reason: '正確！五段自動詞。' },
+            { text: '繋{つな}ぎました', reason: '錯誤：那是人去連接(他動詞)。' },
+            { text: '繋{つな}がって', reason: '正確！' },
+            { text: '通{つう}じました', reason: '正確！(通了)' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '電話通了。 \n【自他動詞】「繋がる」(自) vs 「繋ぐ」(他)。'
+    },
+    {
+        id: 'n3_v1399_tsunagaru_2',
+        prob: '努力{どりょく}が成功{せいこう}に ______。',
+        prob_zh: '努力 *連結* 到成功。',
+        level: 'N3',
+        options: [
+            { text: '繋{つな}がる', reason: '正確！表示因果關係或路徑的連結。' },
+            { text: '繋{つな}ぎ', reason: '正確！' },
+            { text: '繋{つな}がって', reason: '正確！' },
+            { text: '結{むす}び付{つ}く', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '努力連結到成功。 \n【活用】五段自動詞。'
+    },
+    // 8. 見つかる (Mitsukaru)
+    {
+        id: 'n3_v1399_mitsukaru_1',
+        prob: '犯人{はんにん}が ______。',
+        prob_zh: '犯人 *被找到* 了。',
+        level: 'N3',
+        options: [
+            { text: '見{み}つかりました', reason: '正確！五段自動詞。' },
+            { text: '見{み}つけました', reason: '錯誤：那是人找到了犯人(他動詞)。' },
+            { text: '捕{つか}まえました', reason: '正確！(抓到了)' },
+            { text: '見{み}つかり', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '犯人被找到了。 \n【自他動詞】「見つかる」(被發現/被找到) vs 「見つける」(人主動找)。'
+    },
+    {
+        id: 'n3_v1399_mitsukaru_2',
+        prob: 'いい仕事{しごと}が ______。',
+        prob_zh: ' *找到了* 好工作。',
+        level: 'N3',
+        options: [
+            { text: '見{み}つかった', reason: '正確！五段過去式促音便。' },
+            { text: '見{み}つけた', reason: '正確！(但用自動詞強調事情本身的發生)' },
+            { text: '決{き}まった', reason: '正確！(定下來了)' },
+            { text: '見{み}つかり', reason: '錯誤：接續。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '找到了好工作。 \n【活用】五段動詞變位。'
+    },
+    // 9. 受かる (Ukaru)
+    {
+        id: 'n3_v1399_ukaru_1',
+        prob: '第一志望{だいいちしぼう}に ______。',
+        prob_zh: ' *考上* 第一志願。',
+        level: 'N3',
+        options: [
+            { text: '受{う}かりました', reason: '正確！五段自動詞。表示考中、錄取。' },
+            { text: '受{う}けました', reason: '錯誤：那是去參加考試。' },
+            { text: '受{う}かって', reason: '正確！' },
+            { text: '合格{ごうかく}した', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '考上第一志願。 \n【自他動詞】「受かる」(考上) vs 「受ける」(參加考試)。'
+    },
+    {
+        id: 'n3_v1399_ukaru_2',
+        prob: ' ______ ったと思{おも}います。',
+        prob_zh: '我想應該是 *考上* 了。',
+        level: 'N3',
+        options: [
+            { text: '受{う}か', reason: '正確！五段動詞過去式音便。' },
+            { text: '受{う}け', reason: '錯誤：參加。' },
+            { text: '受{う}か', reason: '正確！' },
+            { text: '受{う}かり', reason: '錯誤：接續。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '我想應該是考上了。 \n【活用】五段動詞「受かる」促音便。'
+    },
+    // 10. 配る (Kubaru)
+    {
+        id: 'n3_v1399_kubaru_1',
+        prob: 'チラシを ______。',
+        prob_zh: ' *分發* 傳單。',
+        level: 'N3',
+        options: [
+            { text: '配{くば}ります', reason: '正確！五段動詞。' },
+            { text: '配{くば}って', reason: '正確！(音便)' },
+            { text: '配{くば}り', reason: '正確！' },
+            { text: '配{くば}ら', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '分發傳單。 \n【活用】「配る」(kubaru) 是五段動詞。'
+    },
+    {
+        id: 'n3_v1399_kubaru_2',
+        prob: '資料{しりょう}を ______ ください。',
+        prob_zh: '請 *分發* 資料。',
+        level: 'N3',
+        options: [
+            { text: '配{くば}って', reason: '正確！五段促音便。' },
+            { text: '配{くば}り', reason: '錯誤：接續。' },
+            { text: '渡{わた}して', reason: '正確！(交給)' },
+            { text: '配{くば}ら', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請分發資料。 \n【活用】五段動詞結尾「る」變為「って」。'
     }
 ]
+
