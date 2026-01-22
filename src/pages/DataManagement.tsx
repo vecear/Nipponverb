@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from 'react';
-// @ts-ignore
-import Kuroshiro from 'kuroshiro';
-// @ts-ignore
-import KuromojiAnalyzer from 'kuroshiro-analyzer-kuromoji';
 import { importedVerbs } from '../data/verbs_imported';
 import { Verb } from '../data/verbs';
 
 const DataManagement: React.FC = () => {
     const [status, setStatus] = useState<string>('Idle');
     const [progress, setProgress] = useState<number>(0);
-    const [processedVerbs, setProcessedVerbs] = useState<Verb[]>([]);
     const [resultJson, setResultJson] = useState<string>('');
     const [kuroshiro, setKuroshiro] = useState<any>(null);
 
     useEffect(() => {
         const init = async () => {
             try {
+                // Dynamic imports to avoid bundling issues
+                // @ts-ignore
+                const Kuroshiro = (await import('kuroshiro')).default;
+                // @ts-ignore
+                const KuromojiAnalyzer = (await import('kuroshiro-analyzer-kuromoji')).default;
+
                 const k = new Kuroshiro();
                 setStatus('Initializing Kuroshiro (loading dict)...');
                 // Use CDN to avoid local file serving issues
@@ -62,7 +63,6 @@ const DataManagement: React.FC = () => {
             }
         }
 
-        setProcessedVerbs(newVerbs);
         setStatus('Done! Generating JSON...');
 
         const jsonOutput = `import { Verb } from './verbs';

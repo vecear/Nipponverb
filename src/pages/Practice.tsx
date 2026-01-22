@@ -142,7 +142,7 @@ const Practice = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-          {modes.map((mode, index) => (
+          {modes.map((mode) => (
             <div
               key={mode.id}
               onClick={() => handleCategorySelect(mode.id)}

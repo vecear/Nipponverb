@@ -225,8 +225,8 @@ const Simulation = () => {
 
           <div className="text-left space-y-4 mb-8">
             <h3 className="text-2xl font-bold">{t('simulation.results.sectionBreakdown')}</h3>
-            {results.sectionScores.map((section, idx) => (
-              <div key={idx} className="glass p-4 rounded-xl">
+            {results.sectionScores.map((section, _idx) => (
+              <div key={_idx} className="glass p-4 rounded-xl">
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-semibold">{section.title}</span>
                   <span className="text-sakura-pink">{section.score}/{section.total}</span>
@@ -317,16 +317,16 @@ const Simulation = () => {
         </h3>
 
         <div className="space-y-3">
-          {currentQuestion.options.map((option, idx) => (
+          {currentQuestion.options.map((option, _idx) => (
             <button
-              key={idx}
+              key={_idx}
               onClick={() => handleAnswer(currentQuestion.id, option)}
               className={`w-full p-4 rounded-xl text-left transition-all ${answers[currentQuestion.id] === option
                 ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
                 : 'glass hover:bg-white/10'
                 }`}
             >
-              <span className="font-semibold mr-3">{String.fromCharCode(65 + idx)}.</span>
+              <span className="font-semibold mr-3">{String.fromCharCode(65 + _idx)}.</span>
               <FuriganaText text={option} />
             </button>
           ))}

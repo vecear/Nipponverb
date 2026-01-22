@@ -80,7 +80,7 @@ const Stages = () => {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 mb-8 md:mb-12">
-          {levels.map((level, idx) => {
+          {levels.map((level) => {
             const levelStages = getStagesByLevel(level)
             return (
               <button
@@ -153,7 +153,7 @@ const Stages = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {levelStages.map((stage, index) => (
+          {levelStages.map((stage) => (
             <div
               key={stage.id}
               className={`card-interactive relative overflow-hidden ${stage.locked ? 'opacity-50 cursor-not-allowed' : ''
@@ -256,9 +256,9 @@ const Stages = () => {
       <div className="card">
         <h2 className="text-2xl font-bold mb-4">{selectedStage.title}</h2>
         <div className="space-y-4">
-          {selectedStage.dialogue.map((line, idx) => (
+          {selectedStage.dialogue.map((line, _idx) => (
             <div
-              key={idx}
+              key={_idx}
               className="glass p-4 rounded-xl"
             >
               <div className="font-semibold text-sakura-pink mb-1">
@@ -293,9 +293,9 @@ const Stages = () => {
         </h3>
 
         <div className="space-y-3">
-          {currentQuestion.options.map((option, idx) => (
+          {currentQuestion.options.map((option, _idx) => (
             <button
-              key={idx}
+              key={_idx}
               onClick={() => handleAnswer(currentQuestion.id, option)}
               className={`w-full p-4 rounded-xl text-left transition-all ${answers[currentQuestion.id] === option
                 ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
@@ -303,7 +303,7 @@ const Stages = () => {
                 }`}
             >
               <span className="font-semibold mr-3">
-                {String.fromCharCode(65 + idx)}.
+                {String.fromCharCode(65 + _idx)}.
               </span>
               {option}
             </button>
