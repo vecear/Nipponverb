@@ -11,9 +11,12 @@ interface FuriganaTextProps {
 const FuriganaText: React.FC<FuriganaTextProps> = ({ text, className = "" }) => {
     if (!text) return null;
 
-    // Regex to match: Text{Furigana}
-    // This matches sequences like 漢字{かんじ}
-    const regex = /([^{}\s]+)\{([^{}]+)\}/g;
+    // Regex to match: Kanji{Furigana}
+    // This matches only CJK characters (kanji) followed by {reading}
+    // CJK Unified Ideographs range: \u4e00-\u9fff
+    // CJK Extension A: \u3400-\u4dbf
+    // Also include some common extended ranges
+    const regex = /([\u4e00-\u9fff\u3400-\u4dbf]+)\{([^{}]+)\}/g;
     const parts = [];
     let lastIndex = 0;
     let match;
