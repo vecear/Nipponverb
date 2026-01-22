@@ -48,6 +48,239 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'keigo',
         correctRule: '【特殊尊敬語】「行く、来る、いる」的尊敬語都是「いらっしゃる」。面對長輩 (社長) 詢問行程時應使用此形。'
     },
+    {
+        id: 'n3_gen_odoroku_2',
+        prob: 'あまりの速{はや}さに、皆{みんな} ______ います。',
+        prob_zh: '因為太快了，大家都很 *驚訝*。',
+        level: 'N3',
+        options: [
+            { text: '驚{おどろ}いて', reason: '正確！五段動詞i音便。表示狀態。' },
+            { text: '驚{おどろ}かせて', reason: '錯誤：使役形(使驚訝)。' },
+            { text: '驚{おどろ}き', reason: '正確！(名詞/連用)' },
+            { text: '驚{おどろ}か', reason: '錯誤：未然形。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '因為太快了，大家都很驚訝。 \n【狀態】「～ている」在此表示受外部影響後持續的心理狀態。'
+    },
+    // --- SOP Expanded N3 Batch 2 ---
+    // 1. 捕まえる / 捕まる (Tsukamaeru / Tsukamaru)
+    {
+        id: 'n3_v1399_tsukamaeru_1',
+        prob: '警察{けいさつ}が泥棒{どろぼう}を ______。',
+        prob_zh: '警察 *抓住* 了小偷。',
+        level: 'N3',
+        options: [
+            { text: '捕{つか}まえ', reason: '正確！一段他動詞連用形。' },
+            { text: '捕{つか}まり', reason: '錯誤：自動詞(被捕)。' },
+            { text: '捕{つか}まえられ', reason: '錯誤：受身。' },
+            { text: '捕{つか}まえ', reason: '正確！(去ru)' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '警察抓住了小偷。 \n【自他動詞】「捕まえる」(他，抓) 與 「捕まる」(自，被抓)。助詞「を」選他動詞。'
+    },
+    {
+        id: 'n3_v1399_tsukamaru_2',
+        prob: '犯人{はんにん}がようやく ______ ました。',
+        prob_zh: '犯人終於越 *被抓* 了。',
+        level: 'N3',
+        options: [
+            { text: '捕{つか}まり', reason: '正確！五段自動詞連用形。' },
+            { text: '捕{つか}まえ', reason: '錯誤：他動詞。' },
+            { text: '捕{つか}まら', reason: '錯誤：否定。' },
+            { text: '捕{つか}まって', reason: '錯誤：接續錯誤。' }
+        ],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '犯人終於被抓了。 \n【活用】「捕まる」(tsukamaru) 是五段自動詞，常用於表示被捕。'
+    },
+    // 2. 片付ける (Katazukeru)
+    {
+        id: 'n3_v1399_katazukeru_1',
+        prob: '部屋{へや}をきれいに ______ ください。',
+        prob_zh: '請把房間 *收拾* 乾淨。',
+        level: 'N3',
+        options: [
+            { text: '片付{かたづ}けて', reason: '正確！一段動詞變化。' },
+            { text: '片付{かたづ}き', reason: '錯誤：自動詞。' },
+            { text: '片付{かたづ}け', reason: '正確！(去ru)' },
+            { text: '片付{かたづ}い', reason: '錯誤：變化錯誤。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '請把房間收拾乾淨。 \n【活用】一段動詞「片付ける」去「る」加「て」。'
+    },
+    {
+        id: 'n3_v1399_katazukeru_2',
+        prob: '仕事{しごと}を ______ から帰{かえ}ります。',
+        prob_zh: ' *處理完* 工作後再回去。',
+        level: 'N3',
+        options: [
+            { text: '片付{かたづ}けて', reason: '正確！表示順序。' },
+            { text: '片付{かたづ}き', reason: '錯誤：自動詞。' },
+            { text: '片付{かたづ}け', reason: '正確！(一段動詞)' },
+            { text: '片付{かたづ}き', reason: '正確！(自動詞則表示事態解決)' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '處理完工作後再回去。 \n【語義】「片付ける」除了收拾房間，也用於處理完結事情、工作。'
+    },
+    // 3. 間に合う (Maniau)
+    {
+        id: 'n3_v1399_maniau_1',
+        prob: '急{いそ}げば、終電{しゅうでん}に ______ よ。',
+        prob_zh: '趕快的話， *趕得上* 末班車喔。',
+        level: 'N3',
+        options: [
+            { text: '間{ま}に合{あ}う', reason: '正確！辭書形表示未來預期。' },
+            { text: '間{ま}に合{あ}い', reason: '錯誤：連用形。' },
+            { text: '間{ま}に合{あ}わ', reason: '錯誤：否定。' },
+            { text: '合{あ}う', reason: '錯誤：語義不同。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '趕快的話，趕得上末班車喔。 \n【慣用句】「間に合う」為一個複合動詞，表示趕得上。'
+    },
+    {
+        id: 'n3_v1399_maniau_2',
+        prob: '残念{ざんねん}ながら、締切{しめきり}に ______ かった。',
+        prob_zh: '遺憾地， *沒趕上* 截止期限。',
+        level: 'N3',
+        options: [
+            { text: '間{ま}に合{あ}わな', reason: '正確！五段動詞否定式。' },
+            { text: '間{ま}に合{あ}い', reason: '錯誤：接續錯誤。' },
+            { text: '間{ま}に合{あ}え', reason: '錯誤：可能。' },
+            { text: '間{ま}に合{あ}っ', reason: '錯誤：促音便不接否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '遺憾地，沒趕上截止期限。 \n【活用】「間に合う」最後是「う」，否定變為「わ」。'
+    },
+    // 4. 合う (Au)
+    {
+        id: 'n3_v1399_au_1',
+        prob: 'サイズがちょうど ______。',
+        prob_zh: '尺寸正好 *合適*。',
+        level: 'N3',
+        options: [
+            { text: '合{あ}います', reason: '正確！五段動詞。' },
+            { text: '合{あ}って', reason: '正確！(狀態)' },
+            { text: '合{あ}わ', reason: '錯誤：否定。' },
+            { text: '合{あ}い', reason: '正確！(連用)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '尺寸正好合適。 \n【詞彙】「合う」用於表示大小、味道、想法等符合。'
+    },
+    {
+        id: 'n3_v1399_au_2',
+        prob: '意見{いけん}が ______ ことが多{おお}いです。',
+        prob_zh: '意見 *契合* 的時候很多。',
+        level: 'N3',
+        options: [
+            { text: '合{あ}う', reason: '正確！常體接名詞句。' },
+            { text: '合{あ}い', reason: '錯誤：連用。' },
+            { text: '合{あ}わせる', reason: '錯誤：使役/他動(配合)。' },
+            { text: '合{あ}う', reason: '正確！(五段)' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '意見契合的時候很多。 \n【活用】「合う」為五段動詞。'
+    },
+    // 5. 祈る / 願う / 祝う (Inoru / Negau / Iwau)
+    {
+        id: 'n3_v1399_inoru_1',
+        prob: '合格{ごうかく}を ______ います。',
+        prob_zh: '正在 *祈禱* 合格。',
+        level: 'N3',
+        options: [
+            { text: '祈{いの}って', reason: '正確！五段促音便。' },
+            { text: '祈{いの}り', reason: '正確！(連用)' },
+            { text: '願{ねが}って', reason: '正確！(但常用詞性不同)' },
+            { text: '祈{いの}ら', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '正在祈禱合格。 \n【音便】五段動詞「祈る」結尾「る」發生促音便。'
+    },
+    {
+        id: 'n3_v1399_negau_2',
+        prob: '平和{へいわ}を ______。',
+        prob_zh: ' *祈求* 和平。',
+        level: 'N3',
+        options: [
+            { text: '願{ねが}います', reason: '正確！五段動詞ます形。' },
+            { text: '願{ねが}って', reason: '正確！(進行)' },
+            { text: '願{ねが}い', reason: '正確！(連用)' },
+            { text: '祈{いの}り', reason: '正確！(祈禱)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '祈求和平。 \n【活用】「願う」為五段動詞。'
+    },
+    // 6. 向かう (Mukau)
+    {
+        id: 'n3_v1399_mukau_1',
+        prob: '駅{えき}に ______ 途中で友達に会った。',
+        prob_zh: '在 *前往* 車站的途中遇到了朋友。',
+        level: 'N3',
+        options: [
+            { text: '向{む}かう', reason: '正確！辭書形接名詞。' },
+            { text: '向{む}かって', reason: '正確！(正在狀態)' },
+            { text: '向{む}かい', reason: '錯誤：連用。' },
+            { text: '向{む}かお', reason: '錯誤：語系。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '在前往車站的途中遇到了朋友。 \n【活用】「向かう」為五段動詞。'
+    },
+    {
+        id: 'n3_v1399_mukau_2',
+        prob: '鏡{かがみ}に ______ 髪{かみ}を整{ととの}える。',
+        prob_zh: ' *對著* 鏡子整理頭髮。',
+        level: 'N3',
+        options: [
+            { text: '向{む}かって', reason: '正確！表示方向或動作目標。' },
+            { text: '向{む}かい', reason: '正確！(書面體)' },
+            { text: '向{む}か', reason: '錯誤：否定。' },
+            { text: '向{む}い', reason: '錯誤：變位錯誤。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '對著鏡子整理頭髮。 \n【音便】五段動詞「向かう」結尾「う」發生促音便。'
+    },
+    // 7. 断る (Kotowaru)
+    {
+        id: 'n3_v1399_kotowaru_1',
+        prob: '丁寧{ていねい}に ______ ました。',
+        prob_zh: '委婉地 *拒絕* 了。',
+        level: 'N3',
+        options: [
+            { text: '断{ことわ}り', reason: '正確！五段連用形。' },
+            { text: '断{ことわ}っ', reason: '錯誤：接續錯誤。' },
+            { text: '断{ことわ}ら', reason: '錯誤：否定。' },
+            { text: '断{ことわ}れ', reason: '錯誤：命令。' }
+        ],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '委婉地拒絕了。 \n【活用】「斷る」為五段動詞。'
+    },
+    {
+        id: 'n3_v1399_kotowaru_2',
+        prob: '無理{むり}な頼{たの}みは ______ 方がいい。',
+        prob_zh: '無理的請求還是 *拒絕* 比較好。',
+        level: 'N3',
+        options: [
+            { text: '断{ことわ}った', reason: '正確！五段促音便過去式。' },
+            { text: '断{ことわ}る', reason: '正確！(但建議語句常用た形)' },
+            { text: '断{ことわ}り', reason: '錯誤：接續錯誤。' },
+            { text: '斷{ことわ}ら', reason: '錯誤：否定。' }
+        ],
+        correctIndex: 0,
+        tag: 'grammar',
+        correctRule: '無理的請求還是拒絕比較好。 \n【建議】「～たほうがいい」接在動詞「た形」之後。'
+    },
     // --- Grammar Patterns (Volitional + to omou) ---
     {
         id: 'n3_grammar_1',
