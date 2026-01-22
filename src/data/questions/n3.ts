@@ -330,7 +330,7 @@ export const n3Questions: StaticQuestion[] = [
         correctRule: '【複合動詞】「ます形去masu + 出す」表示突發性的開始 (突然下起雨來)。雖然「始める」也是開始，但「雨が降り出した」是強調突發的慣用句。'
     },
     // --- SOP Expanded N3 Batch 3 ---
-    // 1. 訪ねる (Tazuneru)
+    // 8. 訪ねる (Tazuneru)
     {
         id: 'n3_v1399_tazuneru_1',
         prob: '京都{きょうと}の旧友{きゅうゆう}を ______。',
@@ -361,7 +361,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'grammar',
         correctRule: '雖然去拜訪他，但他不在家。 \n【活用】一段動詞「訪ねる」連用形。'
     },
-    // 2. 訪れる (Otozureru)
+    // 9. 訪れる (Otozureru)
     {
         id: 'n3_v1399_otozureru_1',
         prob: 'ついに、平和{へいわ}が ______。',
@@ -392,7 +392,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '感覺到春天的到來。 \n【用法】「季節の訪れ」是常用的固定搭配。'
     },
-    // 3. 誘う (Sasou)
+    // 10. 誘う (Sasou)
     {
         id: 'n3_v1399_sasou_1',
         prob: '彼女{かのじょ}を食事{しょくじ}に ______。',
@@ -423,7 +423,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'passive',
         correctRule: '受朋友邀請，去看了電影。 \n【受身】五段動詞「誘う」(sasou) 變為「誘われる」(sasowareru)。'
     },
-    // 5. 望む (Nozomu)
+    // 11. 望む (Nozomu)
     {
         id: 'n3_v1399_nozomu_1',
         prob: '多{おお}くは ______ ません。',
@@ -454,7 +454,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '望著海的高台。 \n【語感】在此指視覺上的眺望。'
     },
-    // 6. 頼む (Tanomu)
+    // 12. 頼む (Tanomu)
     {
         id: 'n3_v1399_tanomu_1',
         prob: '仕事{しごと}を ______。',
@@ -485,7 +485,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請向他拜託。 \n【活用】五段動詞結尾「む」變為「んで」。'
     },
-    // 7. 頼る (Tayoru)
+    // 13. 頼る (Tayoru)
     {
         id: 'n3_v1399_tayoru_1',
         prob: '親{おや}に ______。',
@@ -516,7 +516,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '依靠自己的力量。 \n【活用】「頼る」是五段動詞。'
     },
-    // 8. 驚く (Odoroku)
+    // 14. 驚く (Odoroku)
     {
         id: 'n3_v1399_odoroku_1',
         prob: 'ニュースを聞{き}いて ______。',
@@ -547,7 +547,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '太過驚訝而嚇得癱軟。 \n【を活用】五段動詞結尾「く」變為「いて」。'
     },
-    // 9. 焦る (Aseru)
+    // 15. 焦る (Aseru)
     {
         id: 'n3_v1399_aseru_1',
         prob: '時間{じかん}がなくて ______。',
@@ -578,7 +578,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '焦躁是大忌。 \n【活用】五段動詞連用形名詞化。'
     },
-    // 10. 悟る (Satoru)
+    // 16. 悟る (Satoru)
     {
         id: 'n3_v1399_satoru_1',
         prob: '自分{じぶん}の過{あやま}ちを ______。',
@@ -610,7 +610,7 @@ export const n3Questions: StaticQuestion[] = [
         correctRule: '察覺到危險後逃跑了。 \n【活用】五段動詞結尾「る」變為「って」。'
     },
     // --- SOP Expanded N3 Batch 4 ---
-    // 1. 信じる (Shinjiru)
+    // 17. 信じる (Shinjiru)
     {
         id: 'n3_v1399_shinjiru_1',
         prob: '自分{じぶん}の可能性{かのうせい}を ______。',
@@ -641,7 +641,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'potential',
         correctRule: '令人無法相信的話。 \n【活用】一段動詞可能形為「信じられる」。'
     },
-    // 2. 通じる (Tsuujiru)
+    // 18. 通じる (Tsuujiru)
     {
         id: 'n3_v1399_tsuujiru_1',
         prob: '冗談{じょうだん}が ______。',
@@ -672,7 +672,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '透過一整年。 \n【用法】「～を通じて」是 N3 以上常見的文法句型。'
     },
-    // 3. 感じる (Kanjiru)
+    // 19. 感じる (Kanjiru)
     {
         id: 'n3_v1399_kanjiru_1',
         prob: '寒{さむ}さを ______。',
@@ -703,7 +703,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '正在感覺到責任。 \n【活用】一段動詞變位。'
     },
-    // 4. 関わる (Kakawaru)
+    // 20. 関わる (Kakawaru)
     {
         id: 'n3_v1399_kakawaru_1',
         prob: '命{いのち}に ______ 問題{もんだい}。',
@@ -734,7 +734,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'conjugation',
         correctRule: '捲入(涉及)了事件。 \n【活用】五段動詞變位。'
     },
-    // 5. 伝わる (Tsutawaru)
+    // 21. 伝わる (Tsutawaru)
     {
         id: 'n3_v1399_tsutawaru_1',
         prob: '文化{ぶんか}が後世{こうせい}に ______。',
@@ -765,7 +765,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '心情傳到他那裡了。 \n【活用】五段動詞結尾「る」變為「った」。'
     },
-    // 6. 広がる (Hirogaru)
+    // 22. 広がる (Hirogaru)
     {
         id: 'n3_v1399_hirogaru_1',
         prob: '噂{うわさ}がまちに ______。',
@@ -796,7 +796,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '景色展開在眼前。 \n【活用】五段自動詞。'
     },
-    // 7. 繋がる (Tsunagaru)
+    // 23. 繋がる (Tsunagaru)
     {
         id: 'n3_v1399_tsunagaru_1',
         prob: '電話{でんわ}が ______。',
@@ -827,7 +827,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '努力連結到成功。 \n【活用】五段自動詞。'
     },
-    // 8. 見つかる (Mitsukaru)
+    // 24. 見つかる (Mitsukaru)
     {
         id: 'n3_v1399_mitsukaru_1',
         prob: '犯人{はんにん}が ______。',
@@ -858,7 +858,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '找到了好工作。 \n【活用】五段動詞變位。'
     },
-    // 9. 受かる (Ukaru)
+    // 25. 受かる (Ukaru)
     {
         id: 'n3_v1399_ukaru_1',
         prob: '第一志望{だいいちしぼう}に ______。',
@@ -889,7 +889,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '我想應該是考上了。 \n【活用】五段動詞「受かる」促音便。'
     },
-    // 10. 配る (Kubaru)
+    // 26. 配る (Kubaru)
     {
         id: 'n3_v1399_kubaru_1',
         prob: 'チラシを ______。',
@@ -921,7 +921,7 @@ export const n3Questions: StaticQuestion[] = [
         correctRule: '請分發資料。 \n【活用】五段動詞結尾「る」變為「って」。'
     },
     // --- SOP Expanded N3 Batch 5 ---
-    // 1. 預かる (Azakaru)
+    // 27. 預かる (Azakaru)
     {
         id: 'n3_v1399_azakaru_1',
         prob: '旅行{りょこう}のあいだ、ペットを ______。',
@@ -952,7 +952,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'keigo',
         correctRule: '我為您保管行李吧。 \n【謙讓語】客服或櫃檯人員主動為客人「保管/看管」物品時，標準謙讓表達為「お預かりします」。'
     },
-    // 2. 預ける (Azekeru)
+    // 28. 預ける (Azekeru)
     {
         id: 'n3_v1399_azekeru_1',
         prob: '子供{こども}を保育園{ほいくえん}に ______。',
@@ -983,7 +983,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '把錢存進了銀行。 \n【語義】「預ける」廣泛用於將貴重物品委託給專業機構(如銀行或保險箱)保管。'
     },
-    // 3. 教わる (Osowaru)
+    // 29. 教わる (Osowaru)
     {
         id: 'n3_v1399_osowaru_1',
         prob: '先生{せんせい}に日本語{にほんご}を ______。',
@@ -1014,7 +1014,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '正在向母親學習料理。 \n【活用】五段動詞「教わる」。'
     },
-    // 4. 植える (Ueru)
+    // 30. 植える (Ueru)
     {
         id: 'n3_v1399_ueru_1',
         prob: '庭{にわ}に桜{さくら}の木{き}を ______。',
@@ -1045,7 +1045,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '在田裡種蔬菜。 \n【活用】一段(二類)動詞，其變位直接與「る」的有無掛鉤。'
     },
-    // 5. 伺う (Ukagau)
+    // 31. 伺う (Ukagau)
     {
         id: 'n3_v1399_ukagau_1',
         prob: '明日{あした}、そちらへ ______。',
@@ -1076,7 +1076,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'keigo',
         correctRule: '聽聞了您的話。 \n【謙讓語】向尊長請教或聽取教誨時，使用「伺う」來表達自己位階較低。'
     },
-    // 6. 承る (Uketamawaru)
+    // 32. 承る (Uketamawaru)
     {
         id: 'n3_v1399_uketamawaru_1',
         prob: 'ご注問{ちゅうもん}を ______。',
@@ -1107,7 +1107,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'keigo',
         correctRule: '那件事，我確實聽到了。 \n【活用】「承る」為五段不規則動詞，ます形須將「る」變為「り」。'
     },
-    // 7. 浮く (Uku)
+    // 33. 浮く (Uku)
     {
         id: 'n3_v1399_uku_1',
         prob: '水{みず}に木{き}が ______。',
@@ -1138,7 +1138,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '在隊伍中被孤立了。 \n【比喻】「浮く」除了物理漂浮，也常用於形容性格或表現與周遭「格格不入」。'
     },
-    // 8. 訴える (Uttaeru)
+    // 34. 訴える (Uttaeru)
     {
         id: 'n3_v1399_uttaeru_1',
         prob: '裁判所{さいばんしょ}に ______。',
@@ -1169,7 +1169,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '訴說疼痛。 \n【用法】在醫療語境下常用於患者向醫生表達身體不適、疼痛。'
     },
-    // 9. 生む (Umu)
+    // 35. 生む (Umu)
     {
         id: 'n3_v1399_umu_1',
         prob: '子供{こども}を ______。',
@@ -1200,7 +1200,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '努力孕育了成功。 \n【比喻】「生む」除了生物學上的生育，也常用於「產生正面或負面結果」。'
     },
-    // 10. 疑う (Utagau)
+    // 36. 疑う (Utagau)
     {
         id: 'n3_v1399_utagau_1',
         prob: '彼{かれ}を ______ わけではない。',
@@ -1232,7 +1232,7 @@ export const n3Questions: StaticQuestion[] = [
         correctRule: '被懷疑是犯人。 \n【活用】五段動詞「疑う」的受身形規則為：詞尾「う」變為「わ」加上「れる」。'
     },
     // --- SOP Expanded N3 Batch 6 (Systematic Coverage) ---
-    // 1. 認める (Mitomeru)
+    // 37. 認める (Mitomeru)
     {
         id: 'n3_v1399_mitomeru_1',
         prob: '自分{じぶん}の失敗{しっぱい}を ______ ことは大切{たいせつ}です。',
@@ -1248,7 +1248,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '承認自己的失敗。 \n【活用】一段動詞「認める」。'
     },
-    // 2. 吐く (Haku)
+    // 38. 吐く (Haku)
     {
         id: 'n3_v1399_haku_1',
         prob: '深呼吸{しんこきゅう}して、息{いき}を ______ ください。',
@@ -1264,7 +1264,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請吐氣。 \n【自他動詞】「吐く」除了嘔吐，也指呼氣、說出(心裡話)。'
     },
-    // 3. 留める (Tomeru)
+    // 39. 留める (Tomeru)
     {
         id: 'n3_v1399_tomeru_1',
         prob: 'その話{はな}しを心{こころ}に ______ おいてください。',
@@ -1280,7 +1280,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請記在心裡。 \n【語義】「留める」常用於「心に留める」(記在心裡)。'
     },
-    // 4. 解く (Hodoku)
+    // 40. 解く (Hodoku)
     {
         id: 'n3_v1399_hodoku_1',
         prob: '靴{くつ}のひもを ______。',
@@ -1296,7 +1296,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '解開鞋帶。 \n【活用】五段動詞「解く」。指解開繩結、包裝。'
     },
-    // 5. 愛する (Aisuru)
+    // 41. 愛する (Aisuru)
     {
         id: 'n3_v1399_aisuru_1',
         prob: '家族{かぞく}を ______ います。',
@@ -1312,7 +1312,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '深愛家人。 \n【活用】サ行變格「愛する」。變位同「する」。'
     },
-    // 6. 諦める (Akirameru)
+    // 42. 諦める (Akirameru)
     {
         id: 'n3_v1399_akirameru_1',
         prob: '最後{さいご}まで ______ ないでください。',
@@ -1328,7 +1328,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'negative',
         correctRule: '請不要放棄。 \n【活用】一段動詞「諦める」。'
     },
-    // 7. 飽きる (Akiru)
+    // 43. 飽きる (Akiru)
     {
         id: 'n3_v1399_akiru_1',
         prob: '毎日{まいにち}同{おな}じ料理{りょうり}で ______ ました。',
@@ -1344,7 +1344,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '膩了每天的料理。 \n【活用】一段動詞「飽きる」。'
     },
-    // 8. 明ける (Akeru)
+    // 44. 明ける (Akeru)
     {
         id: 'n3_v1399_akeru_1',
         prob: '夜{よ}が ______。',
@@ -1360,7 +1360,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '天亮了。 \n【語義】「明ける」指黑暗結束亮起來，或新年到來、期限屆滿。'
     },
-    // 9. 与える (Ataeru)
+    // 45. 与える (Ataeru)
     {
         id: 'n3_v1399_ataeru_1',
         prob: '彼{かれ}にチャンスを ______。',
@@ -1376,7 +1376,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '給他機會。 \n【語義】「与える」多用於給予抽象物（影響、印像、機會）。'
     },
-    // 10. 当たる (Ataru)
+    // 46. 当たる (Ataru)
     {
         id: 'n3_v1399_ataru_1',
         prob: '寶{たから}くじに ______。',
@@ -1392,7 +1392,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '中彩券。 \n【活用】五段動詞「当たる」。'
     },
-    // 11. 扱う (Atsukau)
+    // 47. 扱う (Atsukau)
     {
         id: 'n3_v1399_atsukau_1',
         prob: '丁寧{ていねい}に ______ ください。',
@@ -1408,7 +1408,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請小心搬運/對待。 \n【活用】五段動詞「扱う」。常用於對待人或處理物品。'
     },
-    // 12. 当てる (Ateru)
+    // 48. 当てる (Ateru)
     {
         id: 'n3_v1399_ateru_1',
         prob: '目{め}に手{て}を ______。',
@@ -1424,7 +1424,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '手摸著眼睛。 \n【自他動詞】「当てる」(他動詞，人去碰/去對準) 的對應詞為 「当たる」(自動詞)。'
     },
-    // 13. 争う (Arasou)
+    // 49. 争う (Arasou)
     {
         id: 'n3_v1399_arasou_1',
         prob: '一位{いちい}を ______。',
@@ -1440,7 +1440,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '爭奪第一位。 \n【活用】五段動詞「争う」。指比賽競爭或爭論。'
     },
-    // 14. 改める (Aratameru)
+    // 50. 改める (Aratameru)
     {
         id: 'n3_v1399_aratameru_1',
         prob: '規則{きそく}を ______。',
@@ -1456,7 +1456,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '修改規則。 \n【自他動詞】「改める」(他動詞，改變/革新) 的對應詞為 「改まる」(自動詞，莊重起來/嚴肅)。'
     },
-    // 15. 表す (Arawasu)
+    // 51. 表す (Arawasu)
     {
         id: 'n3_v1399_arawasu_1',
         prob: '感謝{かんしゃ}の気持{きも}ちを言{こと}葉{ば}で ______。',
@@ -1472,7 +1472,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '用語言表達謝意。 \n【漢字】情感、數值、含義常用「表す」。'
     },
-    // 16. 現す (Arawasu)
+    // 52. 現す (Arawasu)
     {
         id: 'n3_v1399_arawasu_2',
         prob: '彼{かれ}はついに正体{しょうたい}を ______。',
@@ -1488,7 +1488,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '露出了原形。 \n【漢字】實體、影蹤顯現出來常用「現す」。'
     },
-    // 17. 現れる (Arawareru)
+    // 53. 現れる (Arawareru)
     {
         id: 'n3_v1399_arawareru_1',
         prob: '太陽{たいよう}が ______。',
@@ -1504,7 +1504,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '太陽出現了。 \n【自他動詞】「現れる」(自動詞，出現) 的對應詞為 「現す」(他動詞，顯露)。'
     },
-    // 18. 有る (Aru)
+    // 54. 有る (Aru)
     {
         id: 'n3_v1399_aru_1',
         prob: 'その可能性{かのうせい}は ______。',
@@ -1520,7 +1520,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '有那個可能性。 \n【漢字】雖然通常寫假名，但表示擁有、存在時漢字為「有る/在る」。'
     },
-    // 19. 合わせる (Awaseru)
+    // 55. 合わせる (Awaseru)
     {
         id: 'n3_v1399_awaseru_1',
         prob: '手{て}を ______ お祈{いの}りする。',
@@ -1536,7 +1536,7 @@ export const n3Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '雙手合十祈禱。 \n【自他動詞】「合わせる」(他動詞，人使其合在一起、配合、核對) 的對應詞為 「合う」(自動詞)。'
     },
-    // 20. 慌てる (Awateru)
+    // 56. 慌てる (Awateru)
     {
         id: 'n3_v1399_awateru_1',
         prob: ' ______ ないで、ゆっくり話{はな}してください。',

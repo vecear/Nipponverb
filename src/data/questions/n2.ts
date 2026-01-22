@@ -406,7 +406,7 @@ export const n2Questions: StaticQuestion[] = [
         correctRule: '可以讓我拜讀一下資料嗎？ \n【敬語】「拝見する」縮小自己，提升對方尊嚴。'
     },
     // --- SOP Expanded N2 Batch 3 ---
-    // 1. 仰ぐ (Aogu)
+    // 11. 仰ぐ (Aogu)
     {
         id: 'n2_v1399_aogu_1',
         prob: '夜空{よぞら}を ______ 星{ほし}を眺{なが}める。',
@@ -437,7 +437,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '請求指導。 \n【語義】在此表示對上位者的尊崇與依賴。'
     },
-    // 2. 嘆く (Nageku)
+    // 12. 嘆く (Nageku)
     {
         id: 'n2_v1399_nageku_1',
         prob: '不運{ふうん}を ______。',
@@ -468,7 +468,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '為年輕人的教育不足而感嘆。 \n【活用】五段動詞「嘆く」。'
     },
-    // 4. 慎む (Tsutsushimu)
+    // 13. 慎む (Tsutsushimu)
     {
         id: 'n2_v1399_tsutsushimu_1',
         prob: '不謹慎{ふきんしん}な言動{げんどう}は ______ べきだ。',
@@ -499,7 +499,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '正在節制飲酒。 \n【活用】「慎む」撥音便。'
     },
-    // 6. 励ます (Hagemasu)
+    // 14. 励ます (Hagemasu)
     {
         id: 'n2_v1399_hagemasu_1',
         prob: '落ち込んでいる友人{ゆうじん}を ______。',
@@ -530,7 +530,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '出聲加油/鼓勵。 \n【活用】他動詞用法。'
     },
-    // 7. 慰める (Nagameru)
+    // 15. 慰める (Nagameru)
     {
         id: 'n2_v1399_nagameru_1',
         prob: '泣いている子{こ}を ______。',
@@ -561,7 +561,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'passive',
         correctRule: '被音樂療癒。 \n【活用】一段動詞受身形。'
     },
-    // 8. 労わる (Itawaru)
+    // 16. 労わる (Itawaru)
     {
         id: 'n2_v1399_itawaru_1',
         prob: 'お年寄{としよ}りを ______。',
@@ -592,7 +592,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請保重身體。 \n【活用】五段促音便。'
     },
-    // 9. 敬う (Uyamau)
+    // 17. 敬う (Uyamau)
     {
         id: 'n2_v1399_uyamau_1',
         prob: '神{かみ}を ______。',
@@ -623,7 +623,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '尊敬長輩的態度。 \n【活用】五段動詞。'
     },
-    // 10. 崇める (Agameru)
+    // 18. 崇める (Agameru)
     {
         id: 'n2_v1399_agameru_1',
         prob: '指導者{しどうしゃ}として ______。',
@@ -655,7 +655,7 @@ export const n2Questions: StaticQuestion[] = [
         correctRule: '被崇拜為英雄。 \n【活用】一段動詞受身形。'
     },
     // --- SOP Expanded N2 Batch 4 ---
-    // 1. 蓄える (Takaeru/Takuwaeru)
+    // 19. 蓄える (Takaeru/Takuwaeru)
     {
         id: 'n2_v1399_takuwaeru_1',
         prob: '将来{しょうらい}のために資金{しきん}を ______。',
@@ -686,7 +686,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '積蓄實力。 \n【活用】一段動詞。'
     },
-    // 2. 整える (Totonoeru)
+    // 20. 整える (Totonoeru)
     {
         id: 'n2_v1399_totonoeru_1',
         prob: '身{み}なりを ______。',
@@ -717,7 +717,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '備妥準備並等待。 \n【語義】「整える」強調使事物達到完整的預備狀態或和諧狀態。'
     },
-    // 3. 控える (Hikaeru)
+    // 21. 控える (Hikaeru)
     {
         id: 'n2_v1399_hikaeru_1',
         prob: '塩分{えんぶん}を ______。',
@@ -748,7 +748,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '選舉就在眼前。 \n【用法】「～を目前に控える」是形容重大事件即將到來的經典句型。'
     },
-    // 4. 鍛える (Kitaeru)
+    // 22. 鍛える (Kitaeru)
     {
         id: 'n2_v1399_kitaeru_1',
         prob: '体{からだ}を ______。',
@@ -779,7 +779,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'conjugation',
         correctRule: '重新磨礪精神。 \n【活用】一段動詞連用形。'
     },
-    // 5. 唱える (Tonaeru)
+    // 23. 唱える (Tonaeru)
     {
         id: 'n2_v1399_tonaeru_1',
         prob: '異議{いぎ}を ______。',
@@ -810,7 +810,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '念佛。 \n【語義】在此指宗教上的誦讀。'
     },
-    // 6. 踏まえる (Fumaeru)
+    // 24. 踏まえる (Fumaeru)
     {
         id: 'n2_v1399_fumaeru_1',
         prob: '事実{じじつ}を ______ 議論{ぎろん}する。',
@@ -841,7 +841,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '有鑑於過去的失敗。 \n【活用】常用「～を踏まえて」的形式。'
     },
-    // 7. 抑える (Osaeru)
+    // 25. 抑える (Osaeru)
     {
         id: 'n2_v1399_osaeru_1',
         prob: '怒{いか}りを ______。',
@@ -872,7 +872,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '抑制支出。 \n【活用】一段動詞。'
     },
-    // 8. 堪える (Kotaeru - endure)
+    // 26. 堪える (Kotaeru - endure)
     {
         id: 'n2_v1399_kotaeru_e_1',
         prob: '寒{さむ}さに ______。',
@@ -903,7 +903,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'potential',
         correctRule: '高興到無法忍住。 \n【活用】一段動詞可能形為「堪えられる」。'
     },
-    // 9. 構える (Kamaeru)
+    // 27. 構える (Kamaeru)
     {
         id: 'n2_v1399_kamaeru_1',
         prob: '都心{としん}に店{みせ}を ______。',
@@ -934,7 +934,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '不能太過放鬆(擺出悠閒架勢)。 \n【活用】一段動詞變位。'
     },
-    // 10. 補う (Oginau)
+    // 28. 補う (Oginau)
     {
         id: 'n2_v1399_oginau_1',
         prob: '不足{ふそく}分{ぶん}を ______。',
@@ -966,7 +966,7 @@ export const n2Questions: StaticQuestion[] = [
         correctRule: '彌補缺點。 \n【活用】五段動詞。'
     },
     // --- SOP Expanded N2 Batch 5 ---
-    // 1. 改める (Aratameru)
+    // 29. 改める (Aratameru)
     {
         id: 'n2_v1399_aratameru_1',
         prob: '間違{まちが}いを ______。',
@@ -997,7 +997,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '另選日期後再過來。 \n【用法】「改めて」是 N2 常見用法，表示不延續現狀，而是重新找機會或重新進行。'
     },
-    // 2. 甘やかす (Amayakasu)
+    // 30. 甘やかす (Amayakasu)
     {
         id: 'n2_v1399_amayakasu_1',
         prob: '子供{こども}を ______ はいけない。',
@@ -1028,7 +1028,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '太過溺愛孫子了。 \n【活用】動詞連用形「甘やかし」搭配「～すぎる」表示程度過頭。'
     },
-    // 3. 謝る (Ayamaru)
+    // 31. 謝る (Ayamaru)
     {
         id: 'n2_v1399_ayamaru_1',
         prob: '素直{すなお}に ______ べきだ。',
@@ -1059,7 +1059,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '向對方道歉了嗎？ \n【活用】「謝る」為五段動詞，ます形須將「る」變為「り」。'
     },
-    // 4. 争う (Arasou)
+    // 32. 争う (Arasou)
     {
         id: 'n2_v1399_arasou_1',
         prob: '土地{とち}をめぐって ______。',
@@ -1090,7 +1090,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '沒有必要競爭優劣。 \n【用法】常用於比較能力、等級或地位的高低。'
     },
-    // 5. 改まる (Aratamaru)
+    // 33. 改まる (Aratamaru)
     {
         id: 'n2_v1399_aratamaru_1',
         prob: '正月{しょうがつ}になって、気持{きも}ちが ______。',
@@ -1121,7 +1121,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'negative',
         correctRule: '請不要那麼拘謹。 \n【語義】「改まる」在 N2 文法中常指態度變得端莊、有禮到讓人感到有距離感的程度。'
     },
-    // 6. 表す (Arawasu)
+    // 34. 表す (Arawasu)
     {
         id: 'n2_v1399_arawasu_1',
         prob: '感謝{かんしゃ}の気持{きも}ちを言辞{ことば}に ______。',
@@ -1152,7 +1152,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '這個標誌象徵著什麼？ \n【活用】五段動詞「表す」。常用於解釋標誌、顏色或詞語所代表的具體或抽象含義。'
     },
-    // 7. 現れる (Arawareru)
+    // 35. 現れる (Arawareru)
     {
         id: 'n2_v1399_arawareru_1',
         prob: '太陽{たいよう}が雲{くも}の間{あいだ}から ______。',
@@ -1183,7 +1183,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '真相終於現身了。 \n【語義】在此指抽象的真相變得明朗化。注意「姿を現す」是常用慣用語。'
     },
-    // 8. 合わせる (Awaseru)
+    // 36. 合わせる (Awaseru)
     {
         id: 'n2_v1399_awaseru_1',
         prob: '手{て}を ______ 祈{いの}る。',
@@ -1214,7 +1214,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '我會預先調整行程。 \n【語義】「合わせる」也常用於調整不同的事務使之達成一致或配合。'
     },
-    // 9. あわてる (Awateru)
+    // 37. あわてる (Awateru)
     {
         id: 'n2_v1399_awateru_1',
         prob: '時間{じかん}がないので ______。',
@@ -1245,7 +1245,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'negative',
         correctRule: '火災時，請不要慌張地逃生。 \n【を活用】一段動詞變位。保持冷靜是重點，故選否定後的接續。'
     },
-    // 10. 生かす (Ikasu)
+    // 38. 生かす (Ikasu)
     {
         id: 'n2_v1399_ikasu_1',
         prob: '自分{じぶん}の經驗{けいけん}を仕事{しごと}に ______。',
@@ -1277,7 +1277,7 @@ export const n2Questions: StaticQuestion[] = [
         correctRule: '能發揮他的才能的場所。 \n【活用】五段動詞「生かす」的可能形為「生かせる」。此處表示在該場所有能力展現。'
     },
     // --- SOP Expanded N2 Batch 6 (Systematic Coverage) ---
-    // 1. 重なる (Kasanaru)
+    // 39. 重なる (Kasanaru)
     {
         id: 'n2_v1399_kasanaru_1',
         prob: '不幸{ふこう}が ______。',
@@ -1308,7 +1308,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '行程重疊了。 \n【活用】五段動詞。'
     },
-    // 2. 擦る (Kosuru)
+    // 40. 擦る (Kosuru)
     {
         id: 'n2_v1399_kosuru_1',
         prob: '目{め}を ______ ないでください。',
@@ -1339,7 +1339,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '搓汗。 \n【活用】五段動詞。'
     },
-    // 3. 傾く (Katamuku)
+    // 41. 傾く (Katamuku)
     {
         id: 'n2_v1399_katamuku_1',
         prob: '日{ひ}が西{にし}に ______。',
@@ -1370,7 +1370,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '公司經營不善（趨於衰落）。 \n【活用】五段動詞。'
     },
-    // 4. 潜る (Moguru)
+    // 42. 潜る (Moguru)
     {
         id: 'n2_v1399_moguru_1',
         prob: '海{うみ}に ______。',
@@ -1401,7 +1401,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '鑽進被窩。 \n【活用】五段動詞。'
     },
-    // 5. 汚す (Kegasu)
+    // 43. 汚す (Kegasu)
     {
         id: 'n2_v1399_kegasu_1',
         prob: '名前{なまえ}を ______。',
@@ -1432,7 +1432,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '褻瀆聖地。 \n【活用】五段動詞。'
     },
-    // 6. 盛る (Moru)
+    // 44. 盛る (Moru)
     {
         id: 'n2_v1399_moru_1',
         prob: '器{うつわ}に料理{りょうり}を ______。',
@@ -1463,7 +1463,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'passive',
         correctRule: '堆高的沙子。 \n【活用】五段動詞受身形「盛られる」。'
     },
-    // 7. 背負う (Seou)
+    // 45. 背負う (Seou)
     {
         id: 'n2_v1399_seou_1',
         prob: 'リュックを ______。',
@@ -1494,7 +1494,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '承擔責任。 \n【活用】五段動詞。'
     },
-    // 8. 退く (Shirizoku)
+    // 46. 退く (Shirizoku)
     {
         id: 'n2_v1399_shirizoku_1',
         prob: '一歩{いっぽ} ______。',
@@ -1525,7 +1525,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '退居二線。 \n【活用】五段動詞。'
     },
-    // 9. 退ける (Shirizokeru)
+    // 47. 退ける (Shirizokeru)
     {
         id: 'n2_v1399_shirizokeru_1',
         prob: '敵{てき}を ______。',
@@ -1556,7 +1556,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '駁回/拒絕要求。 \n【活用】一段動詞。'
     },
-    // 10. 剃る (Soru)
+    // 48. 剃る (Soru)
     {
         id: 'n2_v1399_soru_1',
         prob: '髭{ひげ}を ______。',
@@ -1587,7 +1587,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '剃光頭。 \n【活用】五段動詞。'
     },
-    // 11. 造る (Tsukuru)
+    // 49. 造る (Tsukuru)
     {
         id: 'n2_v1399_tsukuru_1',
         prob: '酒{さけ}を ______。',
@@ -1618,7 +1618,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '造船公司。 \n【活用】五段動詞。'
     },
-    // 12. 突く (Tsuku)
+    // 50. 突く (Tsuku)
     {
         id: 'n2_v1399_tsuku_1',
         prob: '杖{つえ}を ______。',
@@ -1649,7 +1649,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '切中核心。 \n【活用】五段動詞。'
     },
-    // 13. あきれる (Akireru)
+    // 51. あきれる (Akireru)
     {
         id: 'n2_v1399_akireru_1',
         prob: '彼{かれ}の態度{たいど}に ______。',
@@ -1680,7 +1680,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '驚得啞口無言。 \n【活用】一段動詞。'
     },
-    // 14. 揚げる (Ageru)
+    // 52. 揚げる (Ageru)
     {
         id: 'n2_v1399_ageru_揚_1',
         prob: '天{てん}ぷらを ______。',
@@ -1711,7 +1711,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '升旗。 \n【活用】一段動詞。'
     },
-    // 15. 挙げる (Ageru)
+    // 53. 挙げる (Ageru)
     {
         id: 'n2_v1399_ageru_挙_1',
         prob: '手{て}を ______ ください。',
@@ -1742,7 +1742,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '舉例。 \n【活用】一段動詞。'
     },
-    // 16. 憧れる (Akogareru)
+    // 54. 憧れる (Akogareru)
     {
         id: 'n2_v1399_akogareru_1',
         prob: '都会{とかい}の生活{せいかつ}に ______。',
@@ -1773,7 +1773,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'passive',
         correctRule: '令人嚮往的前輩。 \n【活用】一段動詞。'
     },
-    // 17. 味わう (Ajiwau)
+    // 55. 味わう (Ajiwau)
     {
         id: 'n2_v1399_ajiwau_1',
         prob: 'ゆっくり ______ ください。',
@@ -1804,7 +1804,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '品嚐勝利。 \n【活用】五段動詞。'
     },
-    // 18. 預かる (Azukaru)
+    // 56. 預かる (Azukaru)
     {
         id: 'n2_v1399_azukaru_1',
         prob: '荷物{にもつ}を ______。',
@@ -1835,7 +1835,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '負責看家。 \n【活用】五段動詞。'
     },
-    // 19. 暖まる (Atatamaru)
+    // 57. 暖まる (Atatamaru)
     {
         id: 'n2_v1399_atatamaru_1',
         prob: 'スープで体{からだ}が ______。',
@@ -1866,7 +1866,7 @@ export const n2Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '房間變暖了。 \n【活用】五段自動詞。'
     },
-    // 20. 暖める (Atatameru)
+    // 58. 暖める (Atatameru)
     {
         id: 'n2_v1399_atatameru_1',
         prob: '弁当{べんとう}を ______ ください。',

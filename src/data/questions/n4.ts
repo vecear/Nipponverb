@@ -457,7 +457,7 @@ export const n4Questions: StaticQuestion[] = [
         correctRule: '這棟建築物是30年前被蓋的。 \n【受身】對於建築物等客觀事物，無動作主時常使用受身形。「建てる」→「建てられる」。'
     },
     // --- SOP Expanded N4 Batch 3 ---
-    // 1. 受ける (Ukeru)
+    // 11. 受ける (Ukeru)
     {
         id: 'n4_v1399_ukeru_1',
         prob: '試験{しけん}を ______。',
@@ -488,7 +488,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'grammar',
         correctRule: '最好接受手術。 \n【建議】「～たほうがいい」表示具體的建議。'
     },
-    // 2. 支える (Sazaeru)
+    // 12. 支える (Sazaeru)
     {
         id: 'n4_v1399_sazaeru_1',
         prob: '家族{かぞく}を ______。',
@@ -519,7 +519,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '用柱子支撐屋頂。 \n【用法】物理上的承重、支撐。'
     },
-    // 3. 備える (Sonaeru)
+    // 13. 備える (Sonaeru)
     {
         id: 'n4_v1399_sonaeru_1',
         prob: '地震{じしん}に ______。',
@@ -550,7 +550,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '為了應對冬天而做準備。 \n【活用】一段動詞「備える」去掉「る」加「て」。'
     },
-    // 4. 訴える (Uttaeru)
+    // 14. 訴える (Uttaeru)
     {
         id: 'n4_v1399_uttaeru_1',
         prob: '裁判所{さいばんしょ}に ______。',
@@ -581,7 +581,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '申訴腹痛。 \n【語義】「訴える」也可用於向醫生或他人表達痛苦、不適。'
     },
-    // 5. 越える (Koeru)
+    // 15. 越える (Koeru)
     {
         id: 'n4_v1399_koeru_1',
         prob: '山{やま}を ______。',
@@ -612,7 +612,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '跨越國境。 \n【活用】一段動詞語尾變換。'
     },
-    // 6. 越す (Kosu)
+    // 16. 越す (Kosu)
     {
         id: 'n4_v1399_kosu_1',
         prob: '東京{とうきょう}へ 引{ひ}っ ______。',
@@ -643,7 +643,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '度過冬天。 \n【語義】「年を越す」(過年)、「冬を越す」(過冬) 常使用五段「越す」。'
     },
-    // 7. 済む (Sumu)
+    // 17. 済む (Sumu)
     {
         id: 'n4_v1399_sumu_1',
         prob: '仕事{しごと}が ______。',
@@ -674,7 +674,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '只要道歉就能了事。 \n【語義】在此表示事情可以用某種代價或動作來完結。'
     },
-    // 8. 済ませる (Sumaseru)
+    // 18. 済ませる (Sumaseru)
     {
         id: 'n4_v1399_sumaseru_1',
         prob: '宿題{しゅくだい}を早く ______ ください。',
@@ -705,7 +705,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '早餐用麵包解決。 \n【用法】「～で済ませる」表示在資源或內容有限的情況下草草了事。'
     },
-    // 9. 指す (Sasu)
+    // 19. 指す (Sasu)
     {
         id: 'n4_v1399_sasu_1',
         prob: '時計{とけい}の針{はり}が12時{じ}を ______。',
@@ -736,7 +736,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '正在指著北方。 \n【音便】五段動詞結尾「す」發生促音便應為「して」(與「書く」不同，不要混淆為「さいて」)。備註：其實「指す」是五段s-verb，變法是「した」。'
     },
-    // 10. 増える (Fueru)
+    // 20. 増える (Fueru)
     {
         id: 'n4_v1399_fueru_1',
         prob: '人口{じんこう}が ______。',
@@ -768,7 +768,7 @@ export const n4Questions: StaticQuestion[] = [
         correctRule: '儲蓄正在增加。 \n【活用】一段動詞語尾變換。'
     },
     // --- SOP Expanded N4 Batch 4 ---
-    // 1. 集める (Atsumeru)
+    // 21. 集める (Atsumeru)
     {
         id: 'n4_v1399_atsumeru_1',
         prob: '切手{きって}を ______。',
@@ -799,7 +799,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請收集垃圾。 \n【活用】一段動詞變位不音便。'
     },
-    // 2. 集まる (Atsumaru)
+    // 22. 集まる (Atsumaru)
     {
         id: 'n4_v1399_atsumaru_1',
         prob: '人{ひと}が ______。',
@@ -830,7 +830,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請在3點集合於車站。 \n【音便】五段動詞結尾「る」變為「って」。'
     },
-    // 3. 壊す (Kowasu)
+    // 23. 壊す (Kowasu)
     {
         id: 'n4_v1399_kowasu_1',
         prob: 'おもちゃを ______。',
@@ -861,7 +861,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'grammar',
         correctRule: '請不要搞壞身體。 \n【用法】「体を壊す」是搞壞健康的固定說法。'
     },
-    // 4. 壊れる (Kowareru)
+    // 24. 壊れる (Kowareru)
     {
         id: 'n4_v1399_kowareru_1',
         prob: 'テレビが ______。',
@@ -892,7 +892,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'grammar',
         correctRule: '容易壞的相機。 \n【活用】動詞連用形 + やすい。'
     },
-    // 5. 消す (Kesu)
+    // 25. 消す (Kesu)
     {
         id: 'n4_v1399_kesu_1',
         prob: '電気{でんき}を ______ ください。',
@@ -923,7 +923,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '擦掉用鉛筆寫的地方。 \n【語義】「消す」可用於關掉電源、消除氣味、擦掉文字。'
     },
-    // 6. 消える (Kieru)
+    // 26. 消える (Kieru)
     {
         id: 'n4_v1399_kieru_1',
         prob: '火{ひ}が ______。',
@@ -954,7 +954,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '身影在波浪中消失。 \n【活用】一段動詞變位。'
     },
-    // 7. 決める (Kimeru)
+    // 27. 決める (Kimeru)
     {
         id: 'n4_v1399_kimeru_1',
         prob: '自分{じぶん}で ______。',
@@ -985,7 +985,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'passive',
         correctRule: '遵守規定的時間。 \n【活用】「決められる」表示被動或被賦予的規則。'
     },
-    // 8. 決まる (Kimaru)
+    // 28. 決まる (Kimaru)
     {
         id: 'n4_v1399_kimaru_1',
         prob: '出張{しゅっちょう}の日{ひ}が ______。',
@@ -1016,7 +1016,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '規定好的事情。 \n【活用】五段動詞「決まる」促音便。'
     },
-    // 9. 届ける (Todokeru)
+    // 29. 届ける (Todokeru)
     {
         id: 'n4_v1399_todokeru_1',
         prob: '荷物{にもつ}を ______。',
@@ -1047,7 +1047,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請向警察申報。 \n【語義】「届ける」除了送貨，也包含正式的事項申報。'
     },
-    // 10. 付ける (Tsukeru)
+    // 30. 付ける (Tsukeru)
     {
         id: 'n4_v1399_tsukeru_1',
         prob: 'テレビを ______。',
@@ -1079,8 +1079,8 @@ export const n4Questions: StaticQuestion[] = [
         correctRule: '這附近正在建造新大樓。 \n【狀態】「建てている」表示建築工程正在進行中的持續狀態。'
     },
     // --- SOP Expanded N4 Batch 5 ---
-    // 1. 受ける (Ukeru)
-    // 1. 捕まえる (Tsukamaeru) / 捕まる (Tsukamaru)
+
+    // 31. 捕まえる (Tsukamaeru) / 捕まる (Tsukamaru)
     {
         id: 'n4_v1399_tsukamaeru_1',
         prob: '警察{けいさつ}がどろぼうを ______。',
@@ -1111,7 +1111,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '犯人落網了。 \n【活用】「捕まる」(tsukamaru) 是五段自動詞，表示主體被抓住。'
     },
-    // 2. 動く (Ugoku)
+    // 32. 動く (Ugoku)
     {
         id: 'n4_v1399_ugoku_1',
         prob: 'この機械{きかい}は ______ ません。',
@@ -1142,7 +1142,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'negative',
         correctRule: '請安靜地不動並等待。 \n【活用】五段動詞未然形（動か）＋ずに（＝ないで），表示在不進行某動作的狀態下做後項。'
     },
-    // 3. 打つ (Utsu)
+    // 33. 打つ (Utsu)
     {
         id: 'n4_v1399_utsu_1',
         prob: 'パソコンで文章{ぶんしょう}を ______。',
@@ -1173,7 +1173,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請在牆上釘釘子。 \n【活用】「打つ」是五段動詞，變為て形發生促音便變為「打って」。'
     },
-    // 4. 写す (Utsusu)
+    // 34. 写す (Utsusu)
     {
         id: 'n4_v1399_utsusu_1',
         prob: '黒板{こくばん}の字{じ}をノートに ______。',
@@ -1204,7 +1204,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '把美麗風景拍進照片裡。 \n【漢字辨析】「写す」強調複製影像或景象，「映す」則強調映射或投射。'
     },
-    // 5. 歌う (Utau)
+    // 35. 歌う (Utau)
     {
         id: 'n4_v1399_utau_1',
         prob: '彼女{かのじょ}は歌{うた}を ______ のが上手{じょうず}だ。',
@@ -1235,7 +1235,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '大家一起唱吧。 \n【活用】五段動詞結尾為「う、つ、る」的動詞，ます形連用形為「い、ち、り」。'
     },
-    // 6. 映る (Utsuru)
+    // 36. 映る (Utsuru)
     {
         id: 'n4_v1399_utsuru_1',
         prob: '鏡{かがみ}に自分{じぶん}の姿{すがた}が ______。',
@@ -1266,7 +1266,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '這台電視顏色顯現得很漂亮。 \n【語義】「映る」也常用於描述電視或投影畫面的顯像品質。'
     },
-    // 7. 選ぶ (Erabu)
+    // 37. 選ぶ (Erabu)
     {
         id: 'n4_v1399_erabu_1',
         prob: '好{す}きな飲{の}み物{もの}を ______ ください。',
@@ -1297,7 +1297,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '他選擇了最難的一條路。 \n【活用】五段動詞變位規則。'
     },
-    // 8. 置く (Oku)
+    // 38. 置く (Oku)
     {
         id: 'n4_v1399_oku_1',
         prob: 'ここに荷物{にもつ}を ______ もいいですか。',
@@ -1328,7 +1328,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '字典放在桌子上。 \n【語法】「他動詞て形＋ある」用來描述某人為了某種目的，完成某個動作後所留下的狀態。'
     },
-    // 9. 送る (Okuru)
+    // 39. 送る (Okuru)
     {
         id: 'n4_v1399_okuru_1',
         prob: '田舎{いなか}の両親{りょうしん}にプレゼントを ______。',
@@ -1359,7 +1359,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '送朋友去車站。 \n【用法】「送る」除了寄送物品，也指陪伴、護送人到目的地，或是送別。'
     },
-    // 10. 起こす (Okosu)
+    // 40. 起こす (Okosu)
     {
         id: 'n4_v1399_okosu_1',
         prob: '明日{あした}、6時{じ}に ______ ください。',
@@ -1391,7 +1391,7 @@ export const n4Questions: StaticQuestion[] = [
         correctRule: '注意不要引起事故。 \n【語義】「起こす」除了叫醒人，也用於「引發、造成」事件、紛爭或交通事故。'
     },
     // --- SOP Expanded N4 Batch 6 (Systematic Coverage) ---
-    // 1. 怒る (Okoru)
+    // 41. 怒る (Okoru)
     {
         id: 'n4_v1399_okoru_1',
         prob: '母{はは}は私{わたし}が嘘{うそ}をつくと、ひどく ______。',
@@ -1422,7 +1422,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'negative',
         correctRule: '請不要那麼生氣。 \n【活用】五段動詞。'
     },
-    // 2. 包む (Tsutsumu)
+    // 42. 包む (Tsutsumu)
     {
         id: 'n4_v1399_tsutsumu_1',
         prob: 'プレゼントをきれいな紙{かみ}で ______。',
@@ -1453,7 +1453,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請包一下這個行李。 \n【活用】字尾「む」變為「んで」。'
     },
-    // 3. 汚れる (Yogoreru)
+    // 43. 汚れる (Yogoreru)
     {
         id: 'n4_v1399_yogoreru_1',
         prob: '靴{くつ}が泥{どろ}で ______ しまいました。',
@@ -1484,7 +1484,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '這件衣服容易髒。 \n【活用】一段動詞。'
     },
-    // 4. 止める (Tomeru)
+    // 44. 止める (Tomeru)
     {
         id: 'n4_v1399_tomeru_1',
         prob: 'そこへ車{くるま}を ______ ください。',
@@ -1515,7 +1515,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '要不要停下工作去玩？ \n【注意】「止める」(tomeru) 多指空間上的停止，「止める/辭める」(yameru) 指動作的中止或辭職。'
     },
-    // 5. 下る (Kudaru)
+    // 45. 下る (Kudaru)
     {
         id: 'n4_v1399_kudaru_1',
         prob: '坂道{さかみち}を ______。',
@@ -1546,7 +1546,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '乘船順流而下。 \n【語義】指從高處往低處移動。'
     },
-    // 6. 上る (Noboru)
+    // 46. 上る (Noboru)
     {
         id: 'n4_v1399_noboru_1',
         prob: '階段{かいだん}を ______。',
@@ -1577,7 +1577,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '爬山很辛苦。 \n【漢字】登山常用「登る」，但「上る」也通。'
     },
-    // 7. 空く (Suku)
+    // 47. 空く (Suku)
     {
         id: 'n4_v1399_suku_1',
         prob: 'おなかが ______ ました。',

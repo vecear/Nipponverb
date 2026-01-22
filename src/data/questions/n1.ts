@@ -517,7 +517,7 @@ export const n1Questions: StaticQuestion[] = [
         correctRule: '足以與真貨混淆的假貨。 \n【語義】「紛れる」表示兩者極其相似，以至於在群體中無法分辨出來。'
     },
     // --- SOP Expanded N1 Batch 3 ---
-    // 1. 遮る (Saegiru)
+    // 11. 遮る (Saegiru)
     {
         id: 'n1_v1399_saegiru_1',
         prob: 'カーテンで窓{まど}の外{そと}の光{ひかり}を ______。',
@@ -548,7 +548,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '打斷他人的話。 \n【用法】在對話中突然介入或阻礙流程。'
     },
-    // 2. 綻びる (Hokorobiru)
+    // 12. 綻びる (Hokorobiru)
     {
         id: 'n1_v1399_hokorobiru_1',
         prob: '梅{うめ}のつぼみが ______。',
@@ -579,7 +579,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '緊張感消除，表情放鬆。 \n【用法】「顔が綻びる」是慣用句，指原本嚴肅的臉因喜悅或安心而放鬆。'
     },
-    // 3. 聳える (Sobbieru)
+    // 13. 聳える (Sobbieru)
     {
         id: 'n1_v1399_sobbieru_1',
         prob: '高岸{たかがい}に ______ 摩天楼{まてんろう}。',
@@ -610,7 +610,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '直插雲霄的山。 \n【語法】一段動詞修飾。'
     },
-    // 4. 嘲笑う (Azawarau)
+    // 14. 嘲笑う (Azawarau)
     {
         id: 'n1_v1399_azawarau_1',
         prob: '正義{せいぎ}を ______。',
@@ -641,7 +641,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'passive',
         correctRule: '即使被周圍的人嘲笑也不在乎。 \n【活用】五段動詞「嘲笑う」(azawarau) 變為「嘲笑われる」。'
     },
-    // 5. 凌ぐ (Shinogu)
+    // 15. 凌ぐ (Shinogu)
     {
         id: 'n1_v1399_shinogu_1',
         prob: '飢{う}えを ______。',
@@ -672,7 +672,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '遠遠超越前作的成品。 \n【用法】比喻能力或性能的高越。'
     },
-    // 6. 汚す (Kegasu)
+    // 16. 汚す (Kegasu)
     {
         id: 'n1_v1399_kegasu_1',
         prob: '先祖{せんぞ}の名{な}を ______。',
@@ -703,7 +703,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '汙染純淨的大地。 \n【活用】五段動詞變位。'
     },
-    // 7. 汚れる (Kegareru)
+    // 17. 汚れる (Kegareru)
     {
         id: 'n1_v1399_kegareru_1',
         prob: '心{こころ}を ______。',
@@ -734,7 +734,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'grammar',
         correctRule: '永不汙染的愛。 \n【活用】一段動詞。'
     },
-    // 8. 汚らわす (Kegarawasu)
+    // 18. 汚らわす (Kegarawasu)
     {
         id: 'n1_v1399_kegarawasu_1',
         prob: '耳{みみ}を ______。',
@@ -765,7 +765,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '不應以卑劣手段玷汙這塊寶地。 \n【活用】五段動詞變位。'
     },
-    // 9. 賄う (Makanau)
+    // 19. 賄う (Makanau)
     {
         id: 'n1_v1399_makanau_1',
         prob: '生活費{せいかつひ}をバイト代{だい}で ______。',
@@ -796,7 +796,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '提供集訓的伙食。 \n【用法】「(人)の(食)を賄う」是常見用法，名詞化後「賄い」專指供餐。'
     },
-    // 10. 綻ぶ (Hokorobu)
+    // 20. 綻ぶ (Hokorobu)
     {
         id: 'n1_v1399_hokorobu_1',
         prob: '上着{うわぎ}の袖{そで}が ______。',
@@ -828,7 +828,7 @@ export const n1Questions: StaticQuestion[] = [
         correctRule: '表情變柔和的時候。 \n【常用】比喻緊張感消失。'
     },
     // --- SOP Expanded N1 Batch 4 ---
-    // 1. 重んじる (Omonjiru)
+    // 21. 重んじる (Omonjiru)
     {
         id: 'n1_v1399_omonjiru_1',
         prob: '伝統{でんとう}を ______。',
@@ -859,7 +859,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'passive',
         correctRule: '個人的意志被重視。 \n【活用】「重んじる」的受身形常作「重んじられる」。'
     },
-    // 2. 軽んじる (Karonjiru)
+    // 22. 軽んじる (Karonjiru)
     {
         id: 'n1_v1399_karonjiru_1',
         prob: '命{いのち}を ______。',
@@ -890,7 +890,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'grammar',
         correctRule: '不可因為年輕就輕視。 \n【活用】維持辭書形接續。'
     },
-    // 3. 重なる (Kasanaru)
+    // 23. 重なる (Kasanaru)
     {
         id: 'n1_v1399_kasanaru_1',
         prob: '不幸{ふこう}が ______。',
@@ -921,7 +921,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '預定行程重疊(撞期)了。 \n【音便】五段動詞結尾「る」變為「って」。'
     },
-    // 4. 重ねる (Kasaneru)
+    // 24. 重ねる (Kasaneru)
     {
         id: 'n1_v1399_kasaneru_1',
         prob: '努力{どりょく}を ______。',
@@ -952,7 +952,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '將盤子疊放。 \n【活用】一段動詞變位。'
     },
-    // 5. 省く (Habuku)
+    // 25. 省く (Habuku)
     {
         id: 'n1_v1399_habuku_1',
         prob: '無駄{むだ}を ______。',
@@ -983,7 +983,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '省去勞力。 \n【語義】「省く」強調減少負擔或程序。'
     },
-    // 6. 葬る (Houmuru)
+    // 26. 葬る (Houmuru)
     {
         id: 'n1_v1399_houmuru_1',
         prob: '遺体{いたい}を墓{はか}に ______。',
@@ -1014,7 +1014,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '埋沒入黑暗中。 \n【比喻】「闇に葬る」指將不光彩的事情徹底掩蓋。'
     },
-    // 7. 奉る (Tatematsuru)
+    // 27. 奉る (Tatematsuru)
     {
         id: 'n1_v1399_tatematsuru_1',
         prob: '神{かみ}に供物{くもつ}を ______。',
@@ -1045,7 +1045,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '擁戴為王。 \n【語義】除了獻物，也可指將某人置於尊貴位置。'
     },
-    // 8. 司る (Tsukasadoru)
+    // 28. 司る (Tsukasadoru)
     {
         id: 'n1_v1399_tsukasadoru_1',
         prob: '祭政{さいせい}を ______。',
@@ -1076,7 +1076,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '肝臟掌管著解毒。 \n【語義】用於器官或組織的功能職掌。'
     },
-    // 9. 携わる (Tazusawaru)
+    // 29. 携わる (Tazusawaru)
     {
         id: 'n1_v1399_tazusawaru_1',
         prob: '開発{かいはつ}に ______。',
@@ -1107,7 +1107,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '參與教育的工作。 \n【活用】五段動詞。'
     },
-    // 10. 捗る (Hadoru/Hakodoru)
+    // 30. 捗る (Hadoru/Hakodoru)
     {
         id: 'n1_v1399_hakodoru_1',
         prob: '仕事{しごと}が ______。',
@@ -1139,7 +1139,7 @@ export const n1Questions: StaticQuestion[] = [
         correctRule: '學習進展不順。 \n【用法】「捗らない」是形容效率低下或受阻的常用說法。'
     },
     // --- SOP Expanded N1 Batch 5 ---
-    // 1. 案じる (Anjiru)
+    // 31. 案じる (Anjiru)
     {
         id: 'n1_v1399_anjiru_1',
         prob: '両親{りょこう}の體{からだ}を ______。',
@@ -1170,7 +1170,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '盤算下一步計策。 \n【活用】「案じる」源於「案ずる」，在此意指動用腦筋去周密考慮、設計某種計畫。'
     },
-    // 2. 生じる (Shoujiru)
+    // 32. 生じる (Shoujiru)
     {
         id: 'n1_v1399_shoujiru_1',
         prob: '摩擦{まさつ}が ______。',
@@ -1201,7 +1201,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '有產生誤解的疑慮。 \n【活用】在此作為自動性質，指因特定環境而自然誘發的問題。'
     },
-    // 3. 演じる (Enjiru)
+    // 33. 演じる (Enjiru)
     {
         id: 'n1_v1399_enjiru_1',
         prob: '悲劇{ひげき}の主人公{しゅじんこう}を ______。',
@@ -1232,7 +1232,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '親自充當門面。 \n【比喻】「演じる」可用來形容在某種局勢或組織中展現特定功能。'
     },
-    // 4. 準じる (Junjiru)
+    // 34. 準じる (Junjiru)
     {
         id: 'n1_v1399_junjiru_1',
         prob: '規則{きそく}に ______ 處理{しょり}。',
@@ -1263,7 +1263,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '比照基本工資的津貼。 \n【活用】常用於行政、人事等制度說明。'
     },
-    // 5. 報じる (Houjiru)
+    // 35. 報じる (Houjiru)
     {
         id: 'n1_v1399_houjiru_1',
         prob: 'ニュースが事件{じけん}を ______。',
@@ -1294,7 +1294,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '回報恩情。 \n【語義】在此指對受到的待遇給予對應的反應或反擊。'
     },
-    // 6. 強いる (Shiiru)
+    // 36. 強いる (Shiiru)
     {
         id: 'n1_v1399_shiiru_1',
         prob: '寄付{きふ}を ______。',
@@ -1325,7 +1325,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'passive',
         correctRule: '被迫陷入苦戰。 \n【活用】在軍事、賽事、商戰等報導中常用的高階被動句型。'
     },
-    // 7. 率いる (Hikiiru)
+    // 37. 率いる (Hikiiru)
     {
         id: 'n1_v1399_hikiiru_1',
         prob: '若手{わかて}を ______ 出場{しゅつじょう}。',
@@ -1356,7 +1356,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '統領大軍。 \n【用法】通常指高級軍官、政治領袖帶領大門大戶或大型組織。'
     },
-    // 8. 用いる (Mochiiru)
+    // 38. 用いる (Mochiiru)
     {
         id: 'n1_v1399_mochiiru_1',
         prob: '最新{さいしん}の技術{ぎじゅつ}を ______。',
@@ -1387,7 +1387,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '應該慎重地運選詞彙。 \n【用法】指在寫作或演說中對特定用辭的權衡與選用。'
     },
-    // 9. 顧みる (Kaerimiru)
+    // 39. 顧みる (Kaerimiru)
     {
         id: 'n1_v1399_kaerimiru_1',
         prob: '過去{かこ}の步{あゆ}みを ______。',
@@ -1418,7 +1418,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'negative',
         correctRule: '不顧危險。 \n【用法】常用於描述某人勇往直前而忽略了可能帶來的風險 or 負擔。'
     },
-    // 10. 省みる (Kaerimiru)
+    // 40. 省みる (Kaerimiru)
     {
         id: 'n1_v1399_kaerimiru_3',
         prob: '自分{じぶん}の行{おこな}いを ______。',
@@ -1450,7 +1450,7 @@ export const n1Questions: StaticQuestion[] = [
         correctRule: '反省過錯的勇氣。 \n【活用】在此強調正視自己的疏失並從中學習。'
     },
     // --- SOP Expanded N1 Batch 6 (Systematic Coverage) ---
-    // 1. 仰ぐ (Aogu)
+    // 41. 仰ぐ (Aogu)
     {
         id: 'n1_v1399_aogu_1',
         prob: '師{し}と ______。',
@@ -1481,7 +1481,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '請求指示。 \n【語義】常用於請求上級 or 專家的教導、指示。'
     },
-    // 2. 明かす (Akasu)
+    // 42. 明かす (Akasu)
     {
         id: 'n1_v1399_akasu_1',
         prob: '秘密{ひみつ}を ______。',
@@ -1512,7 +1512,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '徹夜長談。 \n【語義】「夜を明かす」是固定搭配，指通宵。'
     },
-    // 3. 赤らむ (Akaramu)
+    // 43. 赤らむ (Akaramu)
     {
         id: 'n1_v1399_akaramu_1',
         prob: '頰{ほお}が ______。',
@@ -1543,7 +1543,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '天色微紅。 \n【活用】五段動詞。'
     },
-    // 4. 上がる (Agaru)
+    // 44. 上がる (Agaru)
     {
         id: 'n1_v1399_agaru_1',
         prob: 'ステージで ______ しまった。',
@@ -1574,7 +1574,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '請進。 \n【敬語】「お上がりください」是請客人進入家門的常用禮貌語。'
     },
-    // 5. 呆れる (Akireru)
+    // 45. 呆れる (Akireru)
     {
         id: 'n1_v1399_akireru_1',
         prob: 'あまりの酷{ひど}さに ______。',
@@ -1605,7 +1605,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '令人瞠目結舌。 \n【活用】一段動詞。'
     },
-    // 6. 明くる (Akuru)
+    // 46. 明くる (Akuru)
     {
         id: 'n1_v1399_akuru_1',
         prob: ' ______ 日{ひ}の朝{あさ}。',
@@ -1636,7 +1636,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '次年。 \n【漢字】雖然常用假名，但對應漢字為「明くる」。'
     },
-    // 7. 焦る (Aseru)
+    // 47. 焦る (Aseru)
     {
         id: 'n1_v1399_aseru_1',
         prob: '時間{じかん}がなくて ______。',
@@ -1667,7 +1667,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '因心急而失誤。 \n【活用】五段動詞。'
     },
-    // 8. 値する (Ataisuru)
+    // 48. 値する (Ataisuru)
     {
         id: 'n1_v1399_ataisuru_1',
         prob: '稱賛{しょうさん}に ______。',
@@ -1698,7 +1698,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '值得關注的新聞。 \n【活用】サ行變格。'
     },
-    // 9. 集まる (Atsumaru)
+    // 49. 集まる (Atsumaru)
     {
         id: 'n1_v1399_atsumaru_3',
         prob: '衆目{しゅうもく}が ______。',
@@ -1729,7 +1729,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '受到關注。 \n【活用】五段動詞。'
     },
-    // 10. 誂える (Atsuraeru)
+    // 50. 誂える (Atsuraeru)
     {
         id: 'n1_v1399_atsuraeru_1',
         prob: '服{ふく}を ______。',
@@ -1760,7 +1760,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '定做品。 \n【活用】一段動詞。'
     },
-    // 11. 当てはまる (Atehamaru)
+    // 51. 当てはまる (Atehamaru)
     {
         id: 'n1_v1399_atehamaru_1',
         prob: 'この条件{じょうけん}に ______。',
@@ -1791,7 +1791,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'negative',
         correctRule: '不適用於自身。 \n【活用】五段動詞。'
     },
-    // 12. 当てはめる (Atehameru)
+    // 52. 当てはめる (Atehameru)
     {
         id: 'n1_v1399_atehameru_1',
         prob: '理論{りろん}を現実{げんじつ}に ______。',
@@ -1822,7 +1822,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '套用框架思考。 \n【活用】一段動詞。'
     },
-    // 13. 宛てる (Ateru)
+    // 53. 宛てる (Ateru)
     {
         id: 'n1_v1399_ateru_宛_1',
         prob: '友人{ゆうじん}に ______ 手紙{てがみ}。',
@@ -1853,7 +1853,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '給我的包裹。 \n【語義】「～宛て」是接在人名或組織名後，表示收信人。'
     },
-    // 14. 溢れる (Afureru)
+    // 54. 溢れる (Afureru)
     {
         id: 'n1_v1399_afureru_1',
         prob: '水{みず}がコップから ______。',
@@ -1884,7 +1884,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '充滿自信。 \n【語義】除了液體溢出，也常用於抽象的情感或特質溢於言表。'
     },
-    // 15. 炙る (Aburu)
+    // 55. 炙る (Aburu)
     {
         id: 'n1_v1399_aburu_1',
         prob: '火{ひ}で ______。',
@@ -1915,7 +1915,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '烤海苔。 \n【活用】五段動詞。'
     },
-    // 16. 甘える (Amaeru)
+    // 56. 甘える (Amaeru)
     {
         id: 'n1_v1399_amaeru_1',
         prob: '親{おや}に ______。',
@@ -1946,7 +1946,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '承蒙您的好意。 \n【語義】這是不客氣地接受對方提議時的禮貌說法。'
     },
-    // 17. 操る (Ayatsuru)
+    // 57. 操る (Ayatsuru)
     {
         id: 'n1_v1399_ayatsuru_1',
         prob: '人形{にんぎょう}を ______。',
@@ -1977,7 +1977,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '精通三國語言。 \n【活用】五段動詞。'
     },
-    // 18. 危ぶむ (Ayabumu)
+    // 58. 危ぶむ (Ayabumu)
     {
         id: 'n1_v1399_ayabumu_1',
         prob: '成功{せいこう}が ______ れている。',
@@ -2008,7 +2008,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '擔心能否存續。 \n【活用】五段動詞。'
     },
-    // 19. 謝る (Ayamaru - 過る)
+    // 59. 謝る (Ayamaru - 過る)
     {
         id: 'n1_v1399_ayamaru_過_1',
         prob: '判斷{はんだん}を ______。',
@@ -2039,7 +2039,7 @@ export const n1Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '一步之錯。 \n【活用】五段動詞。'
     },
-    // 20. 歩む (Ayumu)
+    // 60. 歩む (Ayumu)
     {
         id: 'n1_v1399_ayumu_1',
         prob: '別{べつ}の道{みち}を ______。',

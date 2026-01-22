@@ -499,7 +499,7 @@ export const n5Questions: StaticQuestion[] = [
         correctRule: '請早點回家。 \n【音便】作為五段動詞，「帰る」在變換為 te 形時，字尾 ru 發生促音便變成「帰って」。'
     },
     // --- SOP Expanded N5 Batch 2 & 3 ---
-    // 1. 入る (Hairu)
+    // 11. 入る (Hairu)
     {
         id: 'n5_v1399_hairu_1',
         prob: '部屋{へや}に ______。',
@@ -530,7 +530,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '洗澡。 \n【用法】「お風呂に入る」是日文洗澡的標準說法。'
     },
-    // 2. 止まる (Tomaru)
+    // 12. 止まる (Tomaru)
     {
         id: 'n5_v1399_tomaru_1',
         prob: '車{くるま}が ______。',
@@ -561,7 +561,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '時鐘停了。 \n【活用】五段動詞「止まる」促音便。'
     },
-    // 3. 弾く (Hiku - play)
+    // 13. 弾く (Hiku - play)
     {
         id: 'n5_v1399_hiku_p_1',
         prob: 'ピアノを ______。',
@@ -592,7 +592,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請彈吉他。 \n【音便】五段動詞結尾「く」變為「いて」。'
     },
-    // 4. 作る (Tsukuru)
+    // 14. 作る (Tsukuru)
     {
         id: 'n5_v1399_tsukuru_1',
         prob: '晩{ばん}ご飯{ごはん}を ______。',
@@ -623,7 +623,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'conjugation',
         correctRule: '這是我做的料理。 \n【音便】五段動詞結尾「る」變為「った」。'
     },
-    // 5. 言う (Iu)
+    // 15. 言う (Iu)
     {
         id: 'n5_v1399_iu_1',
         prob: '本当{ほんとう}のことを ______。',
@@ -654,7 +654,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請說出名字。 \n【音便】五段動詞結尾「う」變為「って」。'
     },
-    // 6. 引く (Hiku - pull)
+    // 16. 引く (Hiku - pull)
     {
         id: 'n5_v1399_hiku_1',
         prob: '風邪{かぜ}を ______。',
@@ -685,7 +685,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '請拉門。 \n【音便】五段動詞「引く」(hiku) 變為「引いて」。'
     },
-    // 7. 持つ (Motsu)
+    // 17. 持つ (Motsu)
     {
         id: 'n5_v1399_motsu_1',
         prob: '荷物{にもつ}を ______。',
@@ -716,7 +716,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '現在正持有寶物。 \n【活用】五段動詞「持つ」促音便。'
     },
-    // 8. 吸う (Suu)
+    // 18. 吸う (Suu)
     {
         id: 'n5_v1399_suu_1',
         prob: 'タバコを ______。',
@@ -747,7 +747,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請呼吸空氣。 \n【音便】五段動詞結尾「う」變為「って」。'
     },
-    // 9. 閉める (Shimeru)
+    // 19. 閉める (Shimeru)
     {
         id: 'n5_v1399_shimeru_1',
         prob: '窓{まど}を ______。',
@@ -779,7 +779,7 @@ export const n5Questions: StaticQuestion[] = [
         correctRule: '鎖上鎖。 \n【用法】雖然常用「鍵を掛ける」，但「閉める」在日常中也可用於表示關閉並鎖上的狀態。'
     },
     // --- SOP Expanded N5 Batch 3 ---
-    // 10. 見る (Miru)
+    // 20. 見る (Miru)
     {
         id: 'n5_v1399_miru_1',
         prob: 'テレビを ______。',
@@ -810,7 +810,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'conjugation',
         correctRule: '昨天看了電影。 \n【活用】一段動詞的中頓/過去式不發生音便。'
     },
-    // 11. 開く (Hiraku)
+    // 21. 開く (Hiraku)
     {
         id: 'n5_v1399_hiraku_1',
         prob: '本{ほん}を ______ ください。',
@@ -841,7 +841,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '花開了。 \n【語義】「開く」(hiraku) 常用於花朵綻放、展開書本或雨傘。'
     },
-    // 12. 会う (Au)
+    // 22. 会う (Au)
     {
         id: 'n5_v1399_au_1',
         prob: '駅{えき}で友達{ともだち}に ______。',
@@ -872,7 +872,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'conjugation',
         correctRule: '昨天遇見了老師。 \n【活用】五段動詞「会う」連用形為「会い」。'
     },
-    // 13. 書く (Kaku)
+    // 23. 書く (Kaku)
     {
         id: 'n5_v1399_kaku_1',
         prob: '手紙{てがみ}を ______。',
@@ -903,7 +903,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請寫下名字。 \n【音便】五段動詞結尾「く」變為「いて」。'
     },
-    // 14. 聞く (Kiku)
+    // 24. 聞く (Kiku)
     {
         id: 'n5_v1399_kiku_1',
         prob: '音楽{おんがく}を ______。',
@@ -934,7 +934,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '請詢問老師。 \n【語義】「聞く」除了聽，也表示詢問。'
     },
-    // 15. 泳ぐ (Oyogu)
+    // 25. 泳ぐ (Oyogu)
     {
         id: 'n5_v1399_oyogu_1',
         prob: '海{うみ}で ______。',
@@ -965,7 +965,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '昨天游了200公尺。 \n【音便】五段動詞結尾「ぐ」發生濁音便「いで」或過法「いだ」。'
     },
-    // 16. 遊ぶ (Asobu)
+    // 26. 遊ぶ (Asobu)
     {
         id: 'n5_v1399_asobu_1',
         prob: '公園{こうえん}で ______。',
@@ -996,7 +996,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'grammar',
         correctRule: '一起玩吧！ \n【提議】「～ましょう」接在動詞連用形之後。'
     },
-    // 17. 待つ (Matsu)
+    // 27. 待つ (Matsu)
     {
         id: 'n5_v1399_matsu_1',
         prob: '少々{しょうしょう} ______ ください。',
@@ -1027,7 +1027,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'conjugation',
         correctRule: '正在這裡等爸爸。 \n【を活用】五段動詞「待つ」促音便。'
     },
-    // 18. 呼ぶ (Yobu)
+    // 28. 呼ぶ (Yobu)
     {
         id: 'n5_v1399_yobu_1',
         prob: 'タクシーを ______。',
@@ -1058,7 +1058,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請呼叫田中先生。 \n【音便】五段動詞結尾「ぶ」變為「んで」。'
     },
-    // 19. 休む (Yasumu)
+    // 29. 休む (Yasumu)
     {
         id: 'n5_v1399_yasumu_1',
         prob: '今日{きょう}は会社{かいしゃ}を ______。',
@@ -1090,7 +1090,7 @@ export const n5Questions: StaticQuestion[] = [
         correctRule: '稍微休息一下吧。 \n【提議】動詞連用形 + ましょう。'
     },
     // --- SOP Expanded N5 Batch 4 ---
-    // 1. 買う (Kau)
+    // 30. 買う (Kau)
     {
         id: 'n5_v1399_kau_1',
         prob: 'スーパーでりんごを ______。',
@@ -1121,7 +1121,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'conjugation',
         correctRule: '昨天買了新書。 \n【音便】五段動詞結尾「う」變為「った」。'
     },
-    // 2. 売る (Uru)
+    // 31. 売る (Uru)
     {
         id: 'n5_v1399_uru_1',
         prob: '店{みせ}でパンを ______。',
@@ -1152,7 +1152,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'conjugation',
         correctRule: '賣了舊車。 \n【活用】「売る」連用形。'
     },
-    // 3. 貸す (Kasu)
+    // 32. 貸す (Kasu)
     {
         id: 'n5_v1399_kasu_1',
         prob: '友達{ともだち}にペンを ______。',
@@ -1183,7 +1183,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請借傘給我。 \n【音便】五段動詞結尾「す」變為「して」。'
     },
-    // 4. 借りる (Kariru)
+    // 33. 借りる (Kariru)
     {
         id: 'n5_v1399_kariru_1',
         prob: '図書館{としょかん}で本{ほん}を ______。',
@@ -1214,7 +1214,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'conjugation',
         correctRule: '借了錢。 \n【活用】一段動詞的中頓/過去式不音便。'
     },
-    // 5. 死ぬ (Shinu)
+    // 34. 死ぬ (Shinu)
     {
         id: 'n5_v1399_shinu_1',
         prob: '魚{さかな}が ______。',
@@ -1245,7 +1245,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'grammar',
         correctRule: '請不要死。 \n【否定】「ないでください」接在動詞未然形後。'
     },
-    // 6. 住む (Sumu)
+    // 35. 住む (Sumu)
     {
         id: 'n5_v1399_sumu_1',
         prob: '日本{にっぽん}に ______ います。',
@@ -1276,7 +1276,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'grammar',
         correctRule: '想要住在哪裡呢？ \n【活用】「住む」連用或撥音便視語境而定。'
     },
-    // 7. 座る (Suwaru)
+    // 36. 座る (Suwaru)
     {
         id: 'n5_v1399_suwaru_1',
         prob: '椅子{いす}に ______ ください。',
@@ -1307,7 +1307,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'grammar',
         correctRule: '這裡可以坐嗎？ \n【許可】「～てもいい」是詢問許可。'
     },
-    // 8. 立つ (Tatsu)
+    // 37. 立つ (Tatsu)
     {
         id: 'n5_v1399_tatsu_1',
         prob: ' ______ ください。',
@@ -1338,7 +1338,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '正站在門前。 \n【活用】五段動詞「立つ」促音便。'
     },
-    // 9. 飛ぶ (Tobu)
+    // 38. 飛ぶ (Tobu)
     {
         id: 'n5_v1399_tobu_1',
         prob: '鳥{とり}が空{そら}を ______。',
@@ -1369,7 +1369,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '飛機從上方飛過去了。 \n【音便】五段動詞結尾「ぶ」變為「んで」。'
     },
-    // 10. 撮る (Toru)
+    // 39. 撮る (Toru)
     {
         id: 'n5_v1399_toru_1',
         prob: '写真{しゃしん}を ______。',
@@ -1401,7 +1401,7 @@ export const n5Questions: StaticQuestion[] = [
         correctRule: '請一起拍照。 \n【音便】五段動詞結尾「る」變為「って」。'
     },
     // --- SOP Expanded N5 Batch 5 ---
-    // 1. 並ぶ (Narabu)
+    // 40. 並ぶ (Narabu)
     {
         id: 'n5_v1399_narabu_1',
         prob: '銀行{ぎんこう}の前{まえ}に人{ひと}が ______ います。',
@@ -1432,7 +1432,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請大家排成一排。 \n【活用】五段動詞「並ぶ」變為「並んで」。'
     },
-    // 2. 渡る (Wataru)
+    // 41. 渡る (Wataru)
     {
         id: 'n5_v1399_wataru_1',
         prob: '道{みち}を ______ 時{とき}は、氣{き}をつけて。',
@@ -1463,7 +1463,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '過橋到對面去。 \n【自他動詞】「渡る」(自動詞，自己過橋) vs 「渡す」(他動詞，遞東西給人)。'
     },
-    // 3. 磨く (Migaku)
+    // 42. 磨く (Migaku)
     {
         id: 'n5_v1399_migaku_1',
         prob: '飯{はん}を食{た}べた後{あと}で、歯{は}を ______。',
@@ -1494,7 +1494,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請把鏡子擦拭乾淨。 \n【音便】五段動詞字尾為「く」時，變て形發生イ音便 (いて)。例如：「書く→書いて」、「磨く→磨いて」。'
     },
-    // 4. 見せる (Miseru)
+    // 43. 見せる (Miseru)
     {
         id: 'n5_v1399_miseru_1',
         prob: 'その写真{しゃしん}を ______ ください。',
@@ -1525,7 +1525,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '把作業拿給老師看。 \n【活用】第二類動詞 (一段) 直接去掉「る」加上「ました」。'
     },
-    // 5. 生まれる (Umareru)
+    // 44. 生まれる (Umareru)
     {
         id: 'n5_v1399_umareru_1',
         prob: '去年{きょねん}、子供{こども}が ______。',
@@ -1556,7 +1556,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '我在台北出生。 \n【活用】「生まれる」是一段動詞。'
     },
-    // 6. 開ける (Akeru)
+    // 45. 開ける (Akeru)
     {
         id: 'n5_v1399_akeru_1',
         prob: '暑{あつ}いから、窓{まど}を ______ ましょう。',
@@ -1587,7 +1587,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請打開那個瓶子。 \n【漢字】日語中 akeru 有不同漢字，「開ける」指打開、開啟蓋子或窗戶。'
     },
-    // 7. 脫ぐ (Nugu)
+    // 46. 脫ぐ (Nugu)
     {
         id: 'n5_v1399_nugu_1',
         prob: 'ここらで靴{くつ}を ______ ください。',
@@ -1712,7 +1712,7 @@ export const n5Questions: StaticQuestion[] = [
         correctRule: '讀完書之後再睡覺。 \n【音便】五段動詞字尾為「む」時，變て形發生撥音便 (んで)。例如：「読む→読んで」、「飲む→飲んで」。'
     },
     // --- SOP Expanded N5 Batch 6 (Systematic Coverage) ---
-    // 1. 浴びる (Abiru)
+    // 47. 浴びる (Abiru)
     {
         id: 'n5_v1399_abiru_1',
         prob: '毎朝{まいあさ}、シャワーを ______。',
@@ -1743,7 +1743,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '在海邊沐浴日光。 \n【語義】除了洗澡，也可以用於沐浴在光、灰塵、讚美或批評等。'
     },
-    // 2. 洗う (Arau)
+    // 48. 洗う (Arau)
     {
         id: 'n5_v1399_arau_1',
         prob: 'ご飯{はん}の前{まえ}に、手{て}を ______ ましょう。',
@@ -1774,7 +1774,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '昨天洗了車。 \n【活用】五段動詞。'
     },
-    // 3. 歩く (Aruku)
+    // 49. 歩く (Aruku)
     {
         id: 'n5_v1399_aruku_1',
         prob: '駅{えき}まで ______ 行{い}きます。',
@@ -1805,7 +1805,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '每天走一個小時。 \n【活用】表示動作的持續。'
     },
-    // 4. 入れる (Ireru)
+    // 50. 入れる (Ireru)
     {
         id: 'n5_v1399_ireru_1',
         prob: 'コーヒーに砂糖{さとう}を ______。',
@@ -1836,7 +1836,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請把錢包放進包包。 \n【活用】一段動詞「入れる」。'
     },
-    // 5. 歌う (Utau)
+    // 51. 歌う (Utau)
     {
         id: 'n5_v1399_utau_1',
         prob: 'みんなで歌{うた}を ______ ましょう。',
@@ -1867,7 +1867,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '她正在唱歌。 \n【活用】五段動詞字尾「う」變促音便「って」。'
     },
-    // 6. 起きる (Okiru)
+    // 52. 起きる (Okiru)
     {
         id: 'n5_v1399_okiru_1',
         prob: '明日{あした}は六時{ろくじ}に ______。',
@@ -1898,7 +1898,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '還醒著嗎？ \n【活用】一段動詞「起きる」。'
     },
-    // 7. 置く (Oku)
+    // 53. 置く (Oku)
     {
         id: 'n5_v1399_oku_1',
         prob: 'そこに荷物{にもつ}を ______ ください。',
@@ -1929,7 +1929,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '在書架上放了書。 \n【活用】五段動詞「置く」。'
     },
-    // 8. 教える (Oshieru)
+    // 54. 教える (Oshieru)
     {
         id: 'n5_v1399_oshieru_1',
         prob: '日本語{にほんご}を ______ います。',
@@ -1960,7 +1960,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請告訴我電話號碼。 \n【活用】一段動詞「教える」。'
     },
-    // 9. 押す (Osu)
+    // 55. 押す (Osu)
     {
         id: 'n5_v1399_osu_1',
         prob: 'このボタンを ______ と、水{みず}が出{で}ます。',
@@ -1991,7 +1991,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'negative',
         correctRule: '請不要從後面推。 \n【活用】五段動詞未然形接「ないで」。'
     },
-    // 10. 覚える (Oboeru)
+    // 56. 覚える (Oboeru)
     {
         id: 'n5_v1399_oboeru_1',
         prob: '漢字{かんじ}を ______ のは難{むずか}しいです。',
@@ -2022,7 +2022,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '不記得昨天的事了。 \n【語義】「覚えている」表示持續記住的狀態。'
     },
-    // 11. 降りる (Oriru)
+    // 57. 降りる (Oriru)
     {
         id: 'n5_v1399_oriru_1',
         prob: '次{つぎ}の駅{えき}で ______ ます。',
@@ -2053,7 +2053,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '正在下樓梯。 \n【活用】一段動詞「降りる」。'
     },
-    // 12. 返す (Kaesu)
+    // 58. 返す (Kaesu)
     {
         id: 'n5_v1399_kaesu_1',
         prob: '図書館{としょかん}に本{ほん}を ______。',
@@ -2084,7 +2084,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '請還給我。 \n【活用】五段動詞。'
     },
-    // 13. 消える (Kieru)
+    // 59. 消える (Kieru)
     {
         id: 'n5_v1399_kieru_1',
         prob: 'テレビが急{きゅう}に ______。',
@@ -2115,7 +2115,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '足跡消失了。 \n【活用】一段動詞「消える」。'
     },
-    // 14. 聞こえる (Kikoeru)
+    // 60. 聞こえる (Kikoeru)
     {
         id: 'n5_v1399_kikoeru_1',
         prob: '隣{となり}の部屋{へや}から聲{こえ}が ______。',
@@ -2146,7 +2146,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '音樂傳了過來。 \n【活用】一段動詞「聞こえる」。'
     },
-    // 15. 困る (Komaru)
+    // 61. 困る (Komaru)
     {
         id: 'n5_v1399_komaru_1',
         prob: 'お金{かね}がなくて ______ います。',
@@ -2177,7 +2177,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '要是下雨就麻煩了。 \n【語義】表示陷入為難或不知所措的境地。'
     },
-    // 16. 咲く (Saku)
+    // 62. 咲く (Saku)
     {
         id: 'n5_v1399_saku_1',
         prob: '庭{にわ}に花{はな}が ______ います。',
@@ -2208,7 +2208,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '到春天櫻花會開。 \n【活用】五段動詞。'
     },
-    // 17. かかる (Kakaru)
+    // 63. かかる (Kakaru)
     {
         id: 'n5_v1399_kakaru_1',
         prob: '家{いえ}から学校{がっこう}まで30分{さんじゅっぷん} ______。',
@@ -2239,7 +2239,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '花錢。 \n【活用】五段動詞。'
     },
-    // 18. 知る (Shiru)
+    // 64. 知る (Shiru)
     {
         id: 'n5_v1399_shiru_1',
         prob: '彼{かれ}のことを ______ いますか。',
@@ -2270,7 +2270,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '不知道。 \n【例外】雖然肯定用「知っている」，但否定要用「知りません」或「知らない」。'
     },
-    // 19. かける (Kakeru)
+    // 65. かける (Kakeru)
     {
         id: 'n5_v1399_kakeru_1',
         prob: '壁{かべ}に絵{え}を ______。',
@@ -2301,7 +2301,7 @@ export const n5Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '戴眼鏡。 \n【用法】「めがねをかける」是固定搭配。'
     },
-    // 20. 切る (Kiru)
+    // 66. 切る (Kiru)
     {
         id: 'n5_v1399_kiru_1',
         prob: '紙{かみ}をハサミで ______。',
