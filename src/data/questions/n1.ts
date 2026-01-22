@@ -1137,5 +1137,937 @@ export const n1Questions: StaticQuestion[] = [
         correctIndex: 0,
         tag: 'grammar',
         correctRule: '學習進展不順。 \n【用法】「捗らない」是形容效率低下或受阻的常用說法。'
+    },
+    // --- SOP Expanded N1 Batch 5 ---
+    // 1. 案じる (Anjiru)
+    {
+        id: 'n1_v1399_anjiru_1',
+        prob: '両親{りょこう}の體{からだ}を ______。',
+        prob_zh: ' ______ 父母的身體。 (擔心/掛念)',
+        level: 'N1',
+        options: [
+            { text: '案{あん}じて', reason: '正確！一類(一段)動詞。語感較文雅，具深思熟慮的擔心。' },
+            { text: '心配{しんぱい}して', reason: '正確！(一般日常詞彙)' },
+            { text: '案{あん}じ', reason: '正確！(連用/中斷)' },
+            { text: '案{あん}じられ', reason: '錯誤：受身形態。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '擔心父母的身體。 \n【語義】「案じる」常用於高雅或文學性語境，表示對某人的安危、健康或事情進展感到憂慮。'
+    },
+    {
+        id: 'n1_v1399_anjiru_2',
+        prob: '次{つぎ}の策{さく}を ______。',
+        prob_zh: ' ______ 下一步的計策。 (盤算/思考)',
+        level: 'N1',
+        options: [
+            { text: '案{あん}じる', reason: '正確！一段動詞。除了掛念，也有思考、擬定方案之意。' },
+            { text: '考{かんが}える', reason: '正確！(普通思考)' },
+            { text: '案{あん}じ', reason: '正確！(中斷)' },
+            { text: '計{はか}る', reason: '正確！(謀劃)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '盤算下一步計策。 \n【活用】「案じる」源於「案ずる」，在此意指動用腦筋去周密考慮、設計某種計畫。'
+    },
+    // 2. 生じる (Shoujiru)
+    {
+        id: 'n1_v1399_shoujiru_1',
+        prob: '摩擦{まさつ}が ______。',
+        prob_zh: ' ______ 了摩擦。 (產生/發生)',
+        level: 'N1',
+        options: [
+            { text: '生{しょう}じました', reason: '正確！一段動詞。日常指抽象的誤解、困難或物理的摩擦等。' },
+            { text: '生{う}まれました', reason: '錯誤：通常指生命的誕生。' },
+            { text: '起{お}きました', reason: '正確！(發生)' },
+            { text: '出{で}きました', reason: '正確！(出現/達成)' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '產生了摩擦。 \n【語義】「生じる」(shoujiru) 多用於正式文件或學術描述問題、差距、利息等抽象事物的湧現。'
+    },
+    {
+        id: 'n1_v1399_shoujiru_2',
+        prob: '誤解{ごかい}の ______ おそれがある。',
+        prob_zh: '有 ______ 誤解的疑慮。 (產生)',
+        level: 'N1',
+        options: [
+            { text: '生{しょう}じる', reason: '正確！辭書形修飾。' },
+            { text: '起{お}こす', reason: '錯誤：這是他動性質（引起）。' },
+            { text: '發覺{はっかく}する', reason: '錯誤：那是事後敗露。' },
+            { text: '現{あらわ}れる', reason: '錯誤：這是顯現。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '有產生誤解的疑慮。 \n【活用】在此作為自動性質，指因特定環境而自然誘發的問題。'
+    },
+    // 3. 演じる (Enjiru)
+    {
+        id: 'n1_v1399_enjiru_1',
+        prob: '悲劇{ひげき}の主人公{しゅじんこう}を ______。',
+        prob_zh: ' ______ 悲劇的主角。 (扮演/飾演)',
+        level: 'N1',
+        options: [
+            { text: '演{えん}じる', reason: '正確！一段動詞辭書形。' },
+            { text: '扮{ふん}する', reason: '正確！(打扮成)' },
+            { text: '努{つと}める', reason: '正確！(擔當特定角色)' },
+            { text: '偽{いつわ}る', reason: '錯誤：那是欺騙/謊稱。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '扮演悲劇的主角。 \n【活用】「演じる」指在舞台、電影或社會場景中扮演特定的身分。'
+    },
+    {
+        id: 'n1_v1399_enjiru_2',
+        prob: '自{みずか}ら看板{かんばん}を ______。',
+        prob_zh: '親自 ______ 門面。 (充當/扮演)',
+        level: 'N1',
+        options: [
+            { text: '演{えん}じる', reason: '正確！一段動詞。' },
+            { text: '務{つと}める', reason: '正確！(擔任)' },
+            { text: '擔{たん}う', reason: '正確！(承擔)' },
+            { text: '演{えん}じ', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '親自充當門面。 \n【比喻】「演じる」可用來形容在某種局勢或組織中展現特定功能。'
+    },
+    // 4. 準じる (Junjiru)
+    {
+        id: 'n1_v1399_junjiru_1',
+        prob: '規則{きそく}に ______ 處理{しょり}。',
+        prob_zh: ' ______ 規定的處置。 (比照/依照)',
+        level: 'N1',
+        options: [
+            { text: '準{じゅん}じた', reason: '正確！一段動詞。以此標準進行對應。' },
+            { text: '從{したが}った', reason: '正確！(遵從基準)' },
+            { text: '則{のっと}った', reason: '正確！(遵循規範)' },
+            { text: '準{じゅん}じ', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '比照規定的處置。 \n【語義】「準じる」(junjiru) 是由「準ずる」衍生，意指動作或條件基準依照既有的規範進行。'
+    },
+    {
+        id: 'n1_v1399_junjiru_2',
+        prob: '本給{ほんきゅう}に ______ 手當{てあて}。',
+        prob_zh: ' ______ 基本工資發給的津貼。 (比照/掛鉤)',
+        level: 'N1',
+        options: [
+            { text: '準{じゅん}じる', reason: '正確！一段動詞。指津貼與底薪級距一致。' },
+            { text: '含{ふく}む', reason: '錯誤：那是包含。' },
+            { text: '基{もと}づく', reason: '正確！(根據)' },
+            { text: '準{じゅん}じ', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '比照基本工資的津貼。 \n【活用】常用於行政、人事等制度說明。'
+    },
+    // 5. 報じる (Houjiru)
+    {
+        id: 'n1_v1399_houjiru_1',
+        prob: 'ニュースが事件{じけん}を ______。',
+        prob_zh: '新聞 ______ 了事件。 (報導)',
+        level: 'N1',
+        options: [
+            { text: '報{ほう}じました', reason: '正確！一段動詞。' },
+            { text: '傳{つた}えました', reason: '正確！(廣泛的傳達)' },
+            { text: '廣報{こうほう}した', reason: '正確！(官方宣傳)' },
+            { text: '告{つ}げた', reason: '正確！(告知)' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '新聞報導了事件。 \n【活用】「報じる」(houjiru) 是「報ずる」的一段化形態，主要用於大型媒體或官方公告。'
+    },
+    {
+        id: 'n1_v1399_houjiru_2',
+        prob: '恩{おん}に ______。',
+        prob_zh: ' ______ 恩情。 (報答/回報)',
+        level: 'N1',
+        options: [
+            { text: '報{ほう}じる', reason: '正確！一段動詞。也可指回報恩怨。' },
+            { text: '返{かえ}す', reason: '正確！(歸還/回敬)' },
+            { text: '晴{は}らす', reason: '正確！(消除/報冤)' },
+            { text: '報{ほう}じ', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '回報恩情。 \n【語義】在此指對受到的待遇給予對應的反應或反擊。'
+    },
+    // 6. 強いる (Shiiru)
+    {
+        id: 'n1_v1399_shiiru_1',
+        prob: '寄付{きふ}を ______。',
+        prob_zh: ' ______ 捐款。 (強迫/硬要)',
+        level: 'N1',
+        options: [
+            { text: '強{し}いました', reason: '正確！一段動詞。' },
+            { text: '求{もと}めました', reason: '正確！(雖然是要求，但語氣溫和)' },
+            { text: '命令{めいれい}した', reason: '正確！(命令)' },
+            { text: '強{つよ}くし', reason: '錯誤：這是使之堅強。' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '強迫捐款。 \n【語義】「強いる」(shiiru) 隱含不顧對方意志、橫加壓迫的主觀暴力感。'
+    },
+    {
+        id: 'n1_v1399_shiiru_2',
+        prob: '苦戰{くせん}を ______ られている。',
+        prob_zh: '被迫陷於 ______。 (苦戰)',
+        level: 'N1',
+        options: [
+            { text: '強{し}い', reason: '正確！一段未然形。表示外部壓力使己方陷入困局。' },
+            { text: '求{もと}め', reason: '錯誤：追求。' },
+            { text: '強{つよ}い', reason: '錯誤：這是形容詞讀音。' },
+            { text: '強{し}い', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'passive',
+        correctRule: '被迫陷入苦戰。 \n【活用】在軍事、賽事、商戰等報導中常用的高階被動句型。'
+    },
+    // 7. 率いる (Hikiiru)
+    {
+        id: 'n1_v1399_hikiiru_1',
+        prob: '若手{わかて}を ______ 出場{しゅつじょう}。',
+        prob_zh: ' ______ 年輕選手出場。 (率領/帶領)',
+        level: 'N1',
+        options: [
+            { text: '率{ひき}いて', reason: '正確！一段動詞連用接續。' },
+            { text: '連{つ}れて', reason: '正確！(一般性的帶人)' },
+            { text: '引っ張って', reason: '正確！(帶頭衝)' },
+            { text: '率{ひき}い', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '率領年輕選手出場。 \n【活用】「率いる」(hikiiru) 表示作為領導者主導團隊的行動方向。'
+    },
+    {
+        id: 'n1_v1399_hikiiru_2',
+        prob: '大軍{たいぐん}を ______。',
+        prob_zh: ' ______ 大軍。 (統領)',
+        level: 'N1',
+        options: [
+            { text: '率{ひき}いる', reason: '正確！一段動詞辭書形。' },
+            { text: '指揮{しき}する', reason: '正確！(著重於下達命令)' },
+            { text: '率{ひき}い', reason: '正確！' },
+            { text: '束{たば}ねる', reason: '正確！(整合/捆綁)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '統領大軍。 \n【用法】通常指高級軍官、政治領袖帶領大門大戶或大型組織。'
+    },
+    // 8. 用いる (Mochiiru)
+    {
+        id: 'n1_v1399_mochiiru_1',
+        prob: '最新{さいしん}の技術{ぎじゅつ}を ______。',
+        prob_zh: ' ______ 最新的技術。 (採用/活用)',
+        level: 'N1',
+        options: [
+            { text: '用{もち}います', reason: '正確！一段動詞ます形。' },
+            { text: '使{つか}います', reason: '正確！(生活常用詞)' },
+            { text: '採用{さいよう}した', reason: '正確！(組織決定採用)' },
+            { text: '用{もち}い', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '採用最新的技術。 \n【語義】「用いる」(mochiiru) 語感較莊重，強調作為工具、手段或方針進行運用。'
+    },
+    {
+        id: 'n1_v1399_mochiiru_2',
+        prob: '語彙{ごい}を慎重{しんちょう}に ______ べきだ。',
+        prob_zh: '應該慎重地 ______ 詞彙。 (運用的選用)',
+        level: 'N1',
+        options: [
+            { text: '用{もち}いる', reason: '正確！一段動詞辭書形。' },
+            { text: '撰{えら}ぶ', reason: '正確！(挑選)' },
+            { text: '使{つか}う', reason: '正確！(使用)' },
+            { text: '用{もち}い', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '應該慎重地運選詞彙。 \n【用法】指在寫作或演說中對特定用辭的權衡與選用。'
+    },
+    // 9. 顧みる (Kaerimiru)
+    {
+        id: 'n1_v1399_kaerimiru_1',
+        prob: '過去{かこ}の步{あゆ}みを ______。',
+        prob_zh: ' ______ 過去的足跡。 (回顧)',
+        level: 'N1',
+        options: [
+            { text: '顧{かえり}みます', reason: '正確！一段動詞。' },
+            { text: '振{ふ}り返{かえ}ります', reason: '正確！' },
+            { text: '省{かえり}みます', reason: '錯誤：漢字用法不同(反省誤差)。' },
+            { text: '顧{かえり}み', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '回顧過去的足跡。 \n【漢字辨析】「顧みる」側重於「回頭看」、「考慮到周遭」，而讀音相同的「省みる」則側重於「深刻的反省」。'
+    },
+    {
+        id: 'n1_v1399_kaerimiru_2',
+        prob: '危險{きけん}を ______ ない。',
+        prob_zh: '不 ______ 危險。 (顧及/考慮)',
+        level: 'N1',
+        options: [
+            { text: '顧{かえり}み', reason: '正確！一段未然形。表示不屑一顧或是奮不顧身。' },
+            { text: '顧{かえり}み', reason: '正確！' },
+            { text: '省{かえり}み', reason: '錯誤：漢字用途。' },
+            { text: '省{かえり}み', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'negative',
+        correctRule: '不顧危險。 \n【用法】常用於描述某人勇往直前而忽略了可能帶來的風險 or 負擔。'
+    },
+    // 10. 省みる (Kaerimiru)
+    {
+        id: 'n1_v1399_kaerimiru_3',
+        prob: '自分{じぶん}の行{おこな}いを ______。',
+        prob_zh: ' ______ 自己的行為。 (反省/檢討)',
+        level: 'N1',
+        options: [
+            { text: '省{かえり}みる', reason: '正確！一段動詞辭書形。' },
+            { text: '顧{かえり}みる', reason: '錯誤：那是單純的回想。' },
+            { text: '反省{はんせい}する', reason: '正確！(日常詞彙)' },
+            { text: '省{かえり}み', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '反省自己的行為。 \n【漢字辨析】「省みる」含有「回首自檢其過錯」的深刻意涵，是 N1 級別需精確掌握的漢字。'
+    },
+    {
+        id: 'n1_v1399_kaerimiru_4',
+        prob: '過{あやま}ちを ______ 勇氣{ゆうき}。',
+        prob_zh: ' ______ 過錯的勇氣。 (檢討自省)',
+        level: 'N1',
+        options: [
+            { text: '省{かえり}みる', reason: '正確！一段一段動詞。' },
+            { text: '顧{かえり}みる', reason: '錯誤：漢字(考慮)。' },
+            { text: '謝{あy}まって', reason: '錯誤：那是道歉。' },
+            { text: '省{かえり}み', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '反省過錯的勇氣。 \n【活用】在此強調正視自己的疏失並從中學習。'
+    },
+    // --- SOP Expanded N1 Batch 6 (Systematic Coverage) ---
+    // 1. 仰ぐ (Aogu)
+    {
+        id: 'n1_v1399_aogu_1',
+        prob: '師{し}と ______。',
+        prob_zh: ' ______ 某人為師。 (尊為/仰仗/仰望)',
+        level: 'N1',
+        options: [
+            { text: '仰{あお}ぐ', reason: '正確！五段動詞。' },
+            { text: '仰{あお}ぎ', reason: '正確！' },
+            { text: '頼{たよ}る', reason: '正確！(依靠)' },
+            { text: '仰{あお}が', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '奉為老師。 \n【活用】五段動詞「仰ぐ」。除了仰望，也指尊敬或尋求指導。'
+    },
+    {
+        id: 'n1_v1399_aogu_2',
+        prob: '指示{しじ}を ______。',
+        prob_zh: ' ______ 指示。 (請求)',
+        level: 'N1',
+        options: [
+            { text: '仰{あお}ぎました', reason: '正確！' },
+            { text: '仰{あお}ぎ', reason: '正確！' },
+            { text: '頼{たの}みました', reason: '正確！(請求)' },
+            { text: '仰{あお}が', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '請求指示。 \n【語義】常用於請求上級 or 專家的教導、指示。'
+    },
+    // 2. 明かす (Akasu)
+    {
+        id: 'n1_v1399_akasu_1',
+        prob: '秘密{ひみつ}を ______。',
+        prob_zh: ' ______ 秘密。 (揭露/說出)',
+        level: 'N1',
+        options: [
+            { text: '明{あ}かしました', reason: '正確！五段他動詞。' },
+            { text: '話{はな}しました', reason: '正確！(說)' },
+            { text: '隠{かく}しました', reason: '錯誤：隱藏。' },
+            { text: '明{あ}かし', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '揭露秘密。 \n【を活用】五段他動詞「明かす」。'
+    },
+    {
+        id: 'n1_v1399_akasu_2',
+        prob: '夜{よ}を ______ 語り合う。',
+        prob_zh: ' ______ 語/通宵談話。 (熬夜/度過)',
+        level: 'N1',
+        options: [
+            { text: '明{あ}かして', reason: '正確！五段動詞。' },
+            { text: '過{す}ごして', reason: '正確！(度過)' },
+            { text: '起{お}きて', reason: '正確！(醒著)' },
+            { text: '明{あ}かし', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '徹夜長談。 \n【語義】「夜を明かす」是固定搭配，指通宵。'
+    },
+    // 3. 赤らむ (Akaramu)
+    {
+        id: 'n1_v1399_akaramu_1',
+        prob: '頰{ほお}が ______。',
+        prob_zh: '臉頰 ______。 (變紅/發紅)',
+        level: 'N1',
+        options: [
+            { text: '赤{あか}らんでいます', reason: '正確！五段自動詞 持續/狀態。' },
+            { text: '赤{あか}くなっています', reason: '正確！(變紅了)' },
+            { text: '赤{あか}らみ', reason: '正確！' },
+            { text: '赤{あか}らま', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '臉紅了。 \n【活用】五段自動詞「赤らむ」。'
+    },
+    {
+        id: 'n1_v1399_akaramu_2',
+        prob: '空{そら}が ______ きた。',
+        prob_zh: '天空逐漸 ______ 了。 (微紅)',
+        level: 'N1',
+        options: [
+            { text: '赤{あか}らん', reason: '正確！五段撥音便。' },
+            { text: '赤{あか}らみ', reason: '正確！' },
+            { text: '赤{あか}らま', reason: '正確！' },
+            { text: '赤{あか}らめ', reason: '錯誤：他動詞。' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '天色微紅。 \n【活用】五段動詞。'
+    },
+    // 4. 上がる (Agaru)
+    {
+        id: 'n1_v1399_agaru_1',
+        prob: 'ステージで ______ しまった。',
+        prob_zh: '在舞台上 ______ 了。 (緊張/慌亂)',
+        level: 'N1',
+        options: [
+            { text: '上{あ}がって', reason: '正確！五段自動詞促音便。指極度緊張。' },
+            { text: '緊張{きんちょう}して', reason: '正確！(緊張)' },
+            { text: '上{あ}がり', reason: '正確！' },
+            { text: '上{あ}がら', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '怯場了。 \n【語義】「上がる」在心理狀態上指因緊張而不知所措。'
+    },
+    {
+        id: 'n1_v1399_agaru_2',
+        prob: 'どうぞ、お ______ ください。',
+        prob_zh: '請 ______。 (進來/進屋)',
+        level: 'N1',
+        options: [
+            { text: '上{あ}がり', reason: '正確！尊他語固定用法，請進屋。' },
+            { text: '入{はい}り', reason: '正確！' },
+            { text: '上{あ}がれ', reason: '錯誤：命令形。' },
+            { text: '上{あ}がら', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '請進。 \n【敬語】「お上がりください」是請客人進入家門的常用禮貌語。'
+    },
+    // 5. 呆れる (Akireru)
+    {
+        id: 'n1_v1399_akireru_1',
+        prob: 'あまりの酷{ひど}さに ______。',
+        prob_zh: '因為太過過分而 ______。 (愕然/吃驚)',
+        level: 'N1',
+        options: [
+            { text: '呆{あき}れました', reason: '正確！下一段動詞。' },
+            { text: '驚{おどろ}きました', reason: '正確！' },
+            { text: '呆{あき}れ', reason: '正確！' },
+            { text: '呆{あき}れら', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '令人無語。 \n【を活用】下一段自動詞「呆れる」。'
+    },
+    {
+        id: 'n1_v1399_akireru_2',
+        prob: ' ______ るほどの大食い。',
+        prob_zh: '吃得讓人 ______ 的大胃王。',
+        level: 'N1',
+        options: [
+            { text: '呆{あき}れ', reason: '正確！辭書形修飾ほど。' },
+            { text: '呆{あき}れ', reason: '正確！' },
+            { text: '呆{あき}れた', reason: '正確！' },
+            { text: '呆{あき}れま', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '令人瞠目結舌。 \n【活用】一段動詞。'
+    },
+    // 6. 明くる (Akuru)
+    {
+        id: 'n1_v1399_akuru_1',
+        prob: ' ______ 日{ひ}の朝{あさ}。',
+        prob_zh: ' ______ 天早上。 (次/隔)',
+        level: 'N1',
+        options: [
+            { text: '明{あ}くる', reason: '正確！連體詞用法。指次、隔。' },
+            { text: '次{つぎ}の', reason: '正確！(次日的)' },
+            { text: '明{あ}けた', reason: '正確！(天亮後的)' },
+            { text: '明{あ}くる', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '隔天早晨。 \n【用法】「明くる」是「明ける」的連體形殘留，通常寫作假名。'
+    },
+    {
+        id: 'n1_v1399_akuru_2',
+        prob: ' ______ 年{とし}に結婚{けっこん}した。',
+        prob_zh: ' ______ 年結婚了。 (次年)',
+        level: 'N1',
+        options: [
+            { text: '明{あ}くる', reason: '正確！' },
+            { text: '明{あ}け', reason: '正確！' },
+            { text: '翌{よく}年', reason: '正確！(翌年)' },
+            { text: '明{あ}き', reason: '錯誤：音不合。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '次年。 \n【漢字】雖然常用假名，但對應漢字為「明くる」。'
+    },
+    // 7. 焦る (Aseru)
+    {
+        id: 'n1_v1399_aseru_1',
+        prob: '時間{じかん}がなくて ______。',
+        prob_zh: '因為沒時間而 ______。 (焦躁/急躁)',
+        level: 'N1',
+        options: [
+            { text: '焦{あせ}っています', reason: '正確！五段動詞持續。' },
+            { text: '急{いそ}いで', reason: '正確！(趕時間)' },
+            { text: '焦{あせ}り', reason: '正確！' },
+            { text: '焦{あせ}ら', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '心急火燎。 \n【活用】五段動詞「焦る」。注意它是五段動詞(aser-u)，不是一段。'
+    },
+    {
+        id: 'n1_v1399_aseru_2',
+        prob: ' ______ て失敗{しっぱい}した。',
+        prob_zh: '因為 ______ 而失敗了。',
+        level: 'N1',
+        options: [
+            { text: '焦{あせ}っ', reason: '正確！五段動詞促音便。' },
+            { text: '焦{あせ}り', reason: '正確！' },
+            { text: '焦{あせ}ら', reason: '正確！' },
+            { text: '焦{あせ}る', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '因心急而失誤。 \n【活用】五段動詞。'
+    },
+    // 8. 値する (Ataisuru)
+    {
+        id: 'n1_v1399_ataisuru_1',
+        prob: '稱賛{しょうさん}に ______。',
+        prob_zh: ' ______ 稱讚。 (值得/夠得上)',
+        level: 'N1',
+        options: [
+            { text: '値{あた}いします', reason: '正確！サ行變格動詞ます形。' },
+            { text: '値{あた}いする', reason: '正確！(辭書形)' },
+            { text: '足{た}りる', reason: '正確！(值得)' },
+            { text: '値{あた}いし', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '值得稱讚。 \n【を活用】サ行變格「値する」。'
+    },
+    {
+        id: 'n1_v1399_ataisuru_2',
+        prob: '注目{ちゅうもく}に ______ ニュース。',
+        prob_zh: ' ______ 矚目的新聞。',
+        level: 'N1',
+        options: [
+            { text: '値{あた}いする', reason: '正確！辭書形修飾名詞。' },
+            { text: '値{あた}い', reason: '正確！' },
+            { text: '値{あた}いさ', reason: '正確！' },
+            { text: '値{あた}いし', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '值得關注的新聞。 \n【活用】サ行變格。'
+    },
+    // 9. 集まる (Atsumaru)
+    {
+        id: 'n1_v1399_atsumaru_3',
+        prob: '衆目{しゅうもく}が ______。',
+        prob_zh: '眾目 ______。 (聚焦/聚集)',
+        level: 'N1',
+        options: [
+            { text: '集{あつ}まりました', reason: '正確！五段自動詞。用於抽象目光、關注。' },
+            { text: '集{あつ}めました', reason: '錯誤：他動詞(使其聚集)。' },
+            { text: '集{あつ}まり', reason: '正確！' },
+            { text: '集{あつ}まら', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '眾目睽睽/聚焦。 \n【を活用】五段自動詞「集まる」。'
+    },
+    {
+        id: 'n1_v1399_atsumaru_4',
+        prob: '注目{ちゅうもく}が ______。',
+        prob_zh: '備受 ______。 (聚集)',
+        level: 'N1',
+        options: [
+            { text: '集{あつ}まる', reason: '正確！' },
+            { text: '集{あつ}め', reason: '錯誤：他動詞。' },
+            { text: '集{あつ}ま', reason: '正確！' },
+            { text: '集{あつ}まり', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '受到關注。 \n【活用】五段動詞。'
+    },
+    // 10. 誂える (Atsuraeru)
+    {
+        id: 'n1_v1399_atsuraeru_1',
+        prob: '服{ふく}を ______。',
+        prob_zh: ' ______ 衣服。 (訂做/定製)',
+        level: 'N1',
+        options: [
+            { text: '誂{あつら}えました', reason: '正確！下一段他動詞。' },
+            { text: '作{つく}りました', reason: '正確！(製作)' },
+            { text: '誂{あつら}え', reason: '正確！' },
+            { text: '誂{あつら}えら', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '定製衣服。 \n【を活用】下一段他動詞「誂える」。'
+    },
+    {
+        id: 'n1_v1399_atsuraeru_2',
+        prob: ' ______ 品{ひん}。',
+        prob_zh: ' ______ 的物品。 (定製品)',
+        level: 'N1',
+        options: [
+            { text: '誂{あつら}え', reason: '正確！連用形作名詞性修飾。' },
+            { text: '誂{あつら}える', reason: '正確！(辭書形修飾)' },
+            { text: '誂{あつら}えら', reason: '正確！' },
+            { text: '誂{あつら}わ', reason: '錯誤：一段動詞不變詞幹音。' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '定做品。 \n【活用】一段動詞。'
+    },
+    // 11. 当てはまる (Atehamaru)
+    {
+        id: 'n1_v1399_atehamaru_1',
+        prob: 'この条件{じょうけん}に ______。',
+        prob_zh: ' ______ 這個條件。 (符合/適用)',
+        level: 'N1',
+        options: [
+            { text: '当てはまる', reason: '正確！五段自動詞。' },
+            { text: '合{あ}う', reason: '正確！(符合)' },
+            { text: '当てはめる', reason: '錯誤：他動詞(使其適用)。' },
+            { text: '適{てき}する', reason: '正確！(適合)' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '符合條件。 \n【活用】五段自動詞「当てはまる」。'
+    },
+    {
+        id: 'n1_v1399_atehamaru_2',
+        prob: '自分{じぶん}のケースには ______ ない。',
+        prob_zh: '不 ______ 自己的情況。',
+        level: 'N1',
+        options: [
+            { text: '当てはまら', reason: '正確！五段未然形。' },
+            { text: '当てはまり', reason: '正確！' },
+            { text: '当てはまって', reason: '正確！' },
+            { text: '当てはめる', reason: '錯誤：他動詞。' }
+        ],
+        correctIndex: 0,
+        tag: 'negative',
+        correctRule: '不適用於自身。 \n【活用】五段動詞。'
+    },
+    // 12. 当てはめる (Atehameru)
+    {
+        id: 'n1_v1399_atehameru_1',
+        prob: '理論{りろん}を現実{げんじつ}に ______。',
+        prob_zh: '將理論 ______ 於現實。 (套用/使適用)',
+        level: 'N1',
+        options: [
+            { text: '当てはめます', reason: '正確！下一段他動詞。' },
+            { text: '当てはまります', reason: '錯誤：自動詞。' },
+            { text: '当{あ}て', reason: '正確！' },
+            { text: '当てはめ', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '套用理論。 \n【自他動詞】「当てはまる」(自動詞，符合) vs 「当てはめる」(他動詞，套用/適用)。'
+    },
+    {
+        id: 'n1_v1399_atehameru_2',
+        prob: '枠{わく}に ______ て考{かんが}える。',
+        prob_zh: ' ______ 在框框裡思考。',
+        level: 'N1',
+        options: [
+            { text: '当てはめ', reason: '正確！一段連用形。' },
+            { text: '当てはまり', reason: '錯誤：自動詞。' },
+            { text: '当てはめ', reason: '正確！' },
+            { text: '当てはめ', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '套用框架思考。 \n【活用】一段動詞。'
+    },
+    // 13. 宛てる (Ateru)
+    {
+        id: 'n1_v1399_ateru_宛_1',
+        prob: '友人{ゆうじん}に ______ 手紙{てがみ}。',
+        prob_zh: ' ______ 朋友的信。 (寄給/發給)',
+        level: 'N1',
+        options: [
+            { text: '宛{あ}てた', reason: '正確！下一段他動詞。指收件人。' },
+            { text: '当{あ}てた', reason: '錯誤：漢字用法不同(碰觸/對準)。' },
+            { text: '書{か}いた', reason: '正確！(寫的)' },
+            { text: '宛{あ}て', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '寄給朋友的信。 \n【漢字】指明收件人或地址時常用「宛てる」。'
+    },
+    {
+        id: 'n1_v1399_ateru_宛_2',
+        prob: '私{わたし} ______ に荷物{にもつ}が届{とど}いた。',
+        prob_zh: '寄 ______ 我的包裹寄到了。',
+        level: 'N1',
+        options: [
+            { text: '宛{あ}て', reason: '正確！連用形作接尾語用法，表示「收件人是...」。' },
+            { text: '向{む}け', reason: '正確！(面向...的)' },
+            { text: '当{あ}て', reason: '錯誤：漢字錯誤。' },
+            { text: '宛{あ}てら', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '給我的包裹。 \n【語義】「～宛て」是接在人名或組織名後，表示收信人。'
+    },
+    // 14. 溢れる (Afureru)
+    {
+        id: 'n1_v1399_afureru_1',
+        prob: '水{みず}がコップから ______。',
+        prob_zh: '水從杯子裡 ______ 出來。 (溢出)',
+        level: 'N1',
+        options: [
+            { text: '溢{あふ}れています', reason: '正確！下一段自動詞。' },
+            { text: '溢{あふ}れ', reason: '正確！' },
+            { text: 'こぼれて', reason: '正確！(灑出來)' },
+            { text: '溢{あふ}ら', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '水溢出來了。 \n【活用】一段自動詞「溢れる」。'
+    },
+    {
+        id: 'n1_v1399_afureru_2',
+        prob: '自信{じしん}に ______ 表情{ひょうじょう}。',
+        prob_zh: ' ______ 自信的表情。 (充滿)',
+        level: 'N1',
+        options: [
+            { text: '溢{あふ}れた', reason: '正確！引申為充滿。' },
+            { text: '溢{あふ}れる', reason: '正確！' },
+            { text: '満{み}ちた', reason: '正確！(充滿)' },
+            { text: '溢{あふ}れ', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '充滿自信。 \n【語義】除了液體溢出，也常用於抽象的情感或特質溢於言表。'
+    },
+    // 15. 炙る (Aburu)
+    {
+        id: 'n1_v1399_aburu_1',
+        prob: '火{ひ}で ______。',
+        prob_zh: '用火 ______。 (烤/烘)',
+        level: 'N1',
+        options: [
+            { text: '炙{あぶ}ります', reason: '正確！五段動詞。' },
+            { text: '乾{かわ}かします', reason: '正確！(弄乾)' },
+            { text: '炙{あぶ}って', reason: '正確！' },
+            { text: '炙{あぶ}ら', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '用火烤。 \n【活用】五段動詞「炙る」。常用於烘乾或微烤食物。'
+    },
+    {
+        id: 'n1_v1399_aburu_2',
+        prob: '海苔{のり}を軽く ______。',
+        prob_zh: '稍微 ______ 一下海苔。',
+        level: 'N1',
+        options: [
+            { text: '炙{あぶ}る', reason: '正確！辭書形。' },
+            { text: '焼{や}く', reason: '正確！(燒/烤)' },
+            { text: '炙{あぶ}り', reason: '正確！' },
+            { text: '炙{あぶ}っ', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '烤海苔。 \n【活用】五段動詞。'
+    },
+    // 16. 甘える (Amaeru)
+    {
+        id: 'n1_v1399_amaeru_1',
+        prob: '親{おや}に ______。',
+        prob_zh: '向父母 ______。 (撒嬌)',
+        level: 'N1',
+        options: [
+            { text: '甘{あま}えています', reason: '正確！一段自動詞。' },
+            { text: '甘{あま}やかし', reason: '錯誤：他動詞(溺愛/縱容)。' },
+            { text: '甘{あま}え', reason: '正確！' },
+            { text: '甘{あま}えな', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '對父母撒嬌。 \n【自他動詞】「甘える」(自動詞，撒嬌) vs 「甘やかす」(他動詞，溺愛)。'
+    },
+    {
+        id: 'n1_v1399_amaeru_2',
+        prob: 'お言葉{ことば}に ______。',
+        prob_zh: '恭敬不如從命(照您說的去做)。',
+        level: 'N1',
+        options: [
+            { text: '甘{あま}えて', reason: '正確！慣用語「お言葉に甘えて」。' },
+            { text: '甘{あま}えさ', reason: '錯誤：使役。' },
+            { text: '甘{あま}えら', reason: '正確！' },
+            { text: '甘{あま}え', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '承蒙您的好意。 \n【語義】這是不客氣地接受對方提議時的禮貌說法。'
+    },
+    // 17. 操る (Ayatsuru)
+    {
+        id: 'n1_v1399_ayatsuru_1',
+        prob: '人形{にんぎょう}を ______。',
+        prob_zh: ' ______ 木偶。 (操縱)',
+        level: 'N1',
+        options: [
+            { text: '操{あやつ}ります', reason: '正確！五段動詞。' },
+            { text: '動{うご}かします', reason: '正確！(移動)' },
+            { text: '操{あやつ}って', reason: '正確！' },
+            { text: '操{あやつ}ら', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '操縱人偶。 \n【活用】五段動詞「操る」。除了物理操縱，也指掌握語言、駕馭人心。'
+    },
+    {
+        id: 'n1_v1399_ayatsuru_2',
+        prob: '三ヶ国語{さんかこくご}を自在{じざい}に ______。',
+        prob_zh: '自由地 ______ 三種語言。 (掌握/運用)',
+        level: 'N1',
+        options: [
+            { text: '操{あやつ}る', reason: '正確！' },
+            { text: '話{はな}す', reason: '正確！(說)' },
+            { text: '使{つか}う', reason: '正確！(使用)' },
+            { text: '操{あやつ}り', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '精通三國語言。 \n【活用】五段動詞。'
+    },
+    // 18. 危ぶむ (Ayabumu)
+    {
+        id: 'n1_v1399_ayabumu_1',
+        prob: '成功{せいこう}が ______ れている。',
+        prob_zh: '成功被 ______。 (擔憂/恐有危險)',
+        level: 'N1',
+        options: [
+            { text: '危{あや}ぶま', reason: '正確！五段受身形詞幹。' },
+            { text: '危{あや}ぶみ', reason: '錯誤：連用形。' },
+            { text: '心配{しんぱい}さ', reason: '正確！(令人擔心)' },
+            { text: '危{あや}ぶめ', reason: '錯誤：可能形詞幹。' }
+        ],
+        correctIndex: 0,
+        tag: 'passive',
+        correctRule: '成功堪憂。 \n【活用】五段動詞「危ぶむ」的受身形。指對前途感到不安。'
+    },
+    {
+        id: 'n1_v1399_ayabumu_2',
+        prob: '存続{そんぞく}を ______。',
+        prob_zh: ' ______ 存續。 (懷疑/擔心其無法持續)',
+        level: 'N1',
+        options: [
+            { text: '危{あや}ぶむ', reason: '正確！辭書形。' },
+            { text: '疑{うたが}う', reason: '正確！(懷疑)' },
+            { text: '危{あや}ぶみ', reason: '正確！' },
+            { text: '危{あや}ぶま', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '擔心能否存續。 \n【活用】五段動詞。'
+    },
+    // 19. 謝る (Ayamaru - 過る)
+    {
+        id: 'n1_v1399_ayamaru_過_1',
+        prob: '判斷{はんだん}を ______。',
+        prob_zh: '判定 ______。 (出錯/弄錯)',
+        level: 'N1',
+        options: [
+            { text: '過{あやま}りました', reason: '正確！五段動詞「過る」。常用於判定、行動失誤。' },
+            { text: '謝{あや}まりました', reason: '錯誤：那是道歉。' },
+            { text: '間違{まちが}えました', reason: '正確！(弄錯了)' },
+            { text: '過{あやま}り', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '判斷錯誤。 \n【漢字】指弄錯、出錯時漢字為「過る」。'
+    },
+    {
+        id: 'n1_v1399_ayamaru_過_2',
+        prob: '一歩{いっぽ} ______ と大変{たいへん}なことになる。',
+        prob_zh: ' ______ 一步的話，後果將不堪設想。',
+        level: 'N1',
+        options: [
+            { text: '過{あやま}る', reason: '正確！五段動詞辭書形。' },
+            { text: '間違{まちが}える', reason: '正確！' },
+            { text: '謝{あや}まる', reason: '錯誤：漢字錯誤。' },
+            { text: '過{あやま}り', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '一步之錯。 \n【活用】五段動詞。'
+    },
+    // 20. 歩む (Ayumu)
+    {
+        id: 'n1_v1399_ayumu_1',
+        prob: '別{べつ}の道{みち}を ______。',
+        prob_zh: ' ______ 上不同的道路。 (行走/進展)',
+        level: 'N1',
+        options: [
+            { text: '歩{あゆ}みます', reason: '正確！五段動詞。常用於抽象的人生道路或進展。' },
+            { text: '歩{ある}きます', reason: '正確！(行走，通常指物理走動)' },
+            { text: '進{すす}みます', reason: '正確！(前進)' },
+            { text: '歩{あゆ}ん', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'masu',
+        correctRule: '走出不同的路。 \n【を活用】五段動詞「歩む」。'
+    },
+    {
+        id: 'n1_v1399_ayumu_2',
+        prob: '歴史{れきし}を ______ きた。',
+        prob_zh: '一路 ______ 來了歷史。',
+        level: 'N1',
+        options: [
+            { text: '歩{あゆ}ん', reason: '正確！五段撥音便。' },
+            { text: '歩{歩}み', reason: '正確！' },
+            { text: '歩{あゆ}ま', reason: '正確！' },
+            { text: '歩{あゆ}め', reason: '正確！' }
+        ],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '走過的歷史。 \n【活用】五段動詞。'
     }
-]
+];
