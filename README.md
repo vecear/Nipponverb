@@ -191,7 +191,7 @@ src/
 └── index.css         # Global styles
 ```
 
-## Design Philosophy
+## Design Philosophys
 
 - **Premium Feel**: Glassmorphism effects, smooth animations, gradient accents
 - **Authentic Content**: Real corpus data instead of textbook sentences
