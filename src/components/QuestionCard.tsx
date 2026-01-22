@@ -79,6 +79,19 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
                   {/* 1. Always show the correct rule */}
                   <div className="bg-black/20 p-3 rounded-lg border-l-4 border-green-500">
                     <p className="font-bold text-green-400 mb-1">✅ 正解解析</p>
+                    {question.meaning && (
+                      <p className="text-white/80 mb-2 pb-2 border-b border-white/10">
+                        {question.meaning.split(/(\*.*?\*)/).map((part, index) =>
+                          part.startsWith('*') && part.endsWith('*') ? (
+                            <span key={index} className="italic text-sakura-pink/90 font-medium">
+                              {part.slice(1, -1)}
+                            </span>
+                          ) : (
+                            part
+                          )
+                        )}
+                      </p>
+                    )}
                     <p className="text-white/90">
                       <FuriganaText text={question.detailedExplanation.correctRule} />
                     </p>

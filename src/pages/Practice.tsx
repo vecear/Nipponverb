@@ -5,9 +5,16 @@ import QuestionCard from '../components/QuestionCard'
 import { usePracticeStore } from '../store/usePracticeStore'
 import { Question } from '../types'
 import { generateGojuonQuestion } from '../data/gojuon'
-import { generateVerbQuestion } from '../data/verbs'
+// import { generateVerbQuestion } from '../data/verbs' // Legacy dynamic generator
 import { generateGrammarQuestion } from '../data/grammar'
 import { generateKanjiQuestion } from '../data/kanji'
+
+// Static Question Banks
+import { n5Questions } from '../data/questions/n5'
+import { n4Questions } from '../data/questions/n4'
+import { n3Questions } from '../data/questions/n3'
+import { n2Questions } from '../data/questions/n2'
+import { n1Questions } from '../data/questions/n1'
 
 type PracticeCategory = 'gojuon' | 'verbs' | 'grammar' | 'kanji'
 type GojuonSubcategory = 'hiragana' | 'katakana'
@@ -42,6 +49,42 @@ const Practice = () => {
   ): Question[] => {
     const generatedQuestions: Question[] = []
 
+    // VERB STATIC BANK LOGIC
+    if (cat === 'verbs') {
+      let bank = n5Questions
+      if (level === 'N5') bank = n5Questions
+      else if (level === 'N4') bank = n4Questions
+      else if (level === 'N3') bank = n3Questions
+      else if (level === 'N2') bank = n2Questions
+      else if (level === 'N1') bank = n1Questions
+
+      // Shuffle Bank
+      const shuffled = [...bank].sort(() => 0.5 - Math.random())
+      const selected = shuffled.slice(0, count)
+
+      return selected.map(q => ({
+        id: q.id,
+        type: 'multiple-choice', // Standardize type
+        question: q.prob, // Japanese Stem
+        meaning: q.prob_zh, // Taiwanese Stem
+        options: q.options.map(o => o.text),
+        correctAnswer: q.options[q.correctIndex].text,
+        explanation: q.options.map(o => o.reason ? `${o.text}: ${o.reason}` : '').filter(Boolean).join('\n'), // Combine reasons into explanation
+        detailedExplanation: {
+          correctRule: q.correctRule || '正解です。',
+          distractors: q.options.map(o => ({
+            text: o.text,
+            reason: o.reason || '正解'
+          }))
+        },
+        // Polyfill for legacy Question Interface
+        stem: q.prob,
+        correct: q.options[q.correctIndex].text,
+        level: level
+      } as Question))
+    }
+
+    // LEGACY LOGIC FOR OTHER CATEGORIES
     for (let i = 0; i < count; i++) {
       let q
 
@@ -49,9 +92,7 @@ const Practice = () => {
         case 'gojuon':
           q = generateGojuonQuestion(selectedSubcategory, Math.random() > 0.5 ? 'char-to-romaji' : 'romaji-to-char')
           break
-        case 'verbs':
-          q = generateVerbQuestion(level)
-          break
+        // case 'verbs': merged above
         case 'grammar':
           q = generateGrammarQuestion(level)
           break

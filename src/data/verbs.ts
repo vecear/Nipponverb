@@ -1,5 +1,5 @@
 // Common Japanese verbs with conjugation patterns
-import { importedVerbs } from './verbs_imported';
+import { importedVerbs } from './verbs_imported.ts';
 
 export type Verb = VerbData;
 // Based on real-world usage patterns
@@ -454,17 +454,12 @@ export function generateVerbExample(verb: VerbData, form: string, lang: 'en' | '
 }
 
 // Helper to generate a contextual stem with a blank
-function generateContextualStem(verb: VerbData, form: string, context: VerbContext): { stem: string, meaning: string, formHint: string } {
+export function generateContextualStem(verb: VerbData, form: string, context: VerbContext): { stem: string, meaning: string, formHint: string } {
     const meaning = verb.meaning_zh
-    const dictForm = verb.dictionary
     const blank = '______'
     const { text: conjugated } = conjugateVerbWithReading(verb, form)
     // Strip furigana markers for simple matching in native examples
     const plainConjugated = conjugated.replace(/\{[^}]+\}/g, '')
-
-    // Get context with fallback
-    const jaContext = context.ja || ''
-    const zhContext = context.zh || ''
 
     // 1. Try to find a Native Example that contains the conjugated form
     if (verb.native_examples && verb.native_examples.length > 0) {
@@ -493,235 +488,215 @@ function generateContextualStem(verb: VerbData, form: string, context: VerbConte
         }
     }
 
-    // 2. Fallback to templates that always include the verb's context for clarity
+    // 2. Fallback: Semantic-Aware Natural Templates
     const pick = (arr: any[]) => arr[Math.floor(Math.random() * arr.length)]
-    const hasContext = jaContext && zhContext
 
-    // Form names in Chinese for clear instructions
-    const formNames: Record<string, string> = {
-        'masu': 'ます形',
-        'te': 'て形',
-        'ta': 'た形',
-        'nai': 'ない形',
-        'potential': '可能形',
-        'passive': '受身形',
-        'causative': '使役形',
-        'volitional': '意向形'
-    }
-    const formName = formNames[form] || '活用形'
+    // Semantic Categories
+    const stateVerbs = ['ある', 'いる', '要る', '分かる', 'わかる', 'できる', '出来る', '知る', '信じる', '似る']
+    const movementVerbs = ['行く', 'くる', '来る', '帰る', '戻る', '出る', '入る', '走る', '歩く', '登る', '乗る', '降りる']
+    const sensitiveVerbs = ['死ぬ', '殺す']
+
+    const isState = stateVerbs.includes(verb.dictionary)
+    const isMovement = movementVerbs.includes(verb.dictionary)
+    const isSensitive = sensitiveVerbs.includes(verb.dictionary)
+
+    // Context Strings (use empty if missing to fit into generic templates)
+    // We try to make templates that work even without specific context objects
+    const jaCtxt = context.ja || ''
+    const zhCtxt = context.zh || ''
 
     switch (form) {
         case 'masu':
-            if (hasContext) {
-                return pick([
-                    {
-                        stem: `私{わたし}は毎日{まいにち}${jaContext} ${blank}。`,
-                        meaning: `我每天都會${meaning}${zhContext}。`,
-                        formHint: 'ます形 (習慣)',
-                    },
-                    {
-                        stem: `週末{しゅうまつ}は友達{ともだち}と${jaContext} ${blank}。`,
-                        meaning: `週末會和朋友一起${meaning}${zhContext}。`,
-                        formHint: 'ます形 (計畫)',
-                    },
-                    {
-                        stem: `彼{かれ}はいつも${jaContext} ${blank}。`,
-                        meaning: `他總是會${meaning}${zhContext}。`,
-                        formHint: 'ます形 (習慣)',
-                    }
-                ])
+            if (isState) return {
+                stem: `実{じつ}は、その事情{じじょう}を${jaCtxt} ${blank}。`,
+                meaning: `其實，${zhCtxt}${meaning}那個情況。`,
+                formHint: 'ます形 (狀態/敘述)',
             }
-            // No context - use explicit verb reference
-            return {
-                stem: `「${dictForm}」→ 私{わたし}は毎日{まいにち} ${blank}。`,
-                meaning: `「${meaning}」→ 我每天都會～。`,
-                formHint: 'ます形 (丁寧語)',
-            }
+            return pick([
+                {
+                    stem: `私{わたし}は毎日{まいにち}、${jaCtxt} ${blank}。`,
+                    meaning: `我每天都${meaning}${zhCtxt}。`,
+                    formHint: 'ます形 (習慣)',
+                },
+                {
+                    stem: `明日{あした}も、${jaCtxt} ${blank} 予定{よてい}です。`,
+                    meaning: `明天也預定會${meaning}${zhCtxt}。`,
+                    formHint: 'ます形 (預定)',
+                },
+                {
+                    stem: `いつも、${jaCtxt} ${blank}。`,
+                    meaning: `總是會${meaning}${zhCtxt}。`,
+                    formHint: 'ます形 (習慣)',
+                }
+            ])
         case 'te':
-            if (hasContext) {
-                return pick([
-                    {
-                        stem: `${jaContext} ${blank} ください。`,
-                        meaning: `請${meaning}${zhContext}。`,
-                        formHint: 'て形 (請求)',
-                    },
-                    {
-                        stem: `${jaContext} ${blank} から、出{で}かけましょう。`,
-                        meaning: `${meaning}完${zhContext}之後，出門吧。`,
-                        formHint: 'て形 (順序)',
-                    },
-                    {
-                        stem: `今{いま}${jaContext} ${blank} います。`,
-                        meaning: `現在正在${meaning}${zhContext}。`,
-                        formHint: 'て形 (進行)',
-                    },
-                    {
-                        stem: `${jaContext} ${blank} もいいですか？`,
-                        meaning: `可以${meaning}${zhContext}嗎？`,
-                        formHint: 'て形 (許可)',
-                    }
-                ])
+            // CRITICAL FIX: State verbs in Te-form are usually "State Maintenance" or "Reason", NOT Request.
+            // e.g. 知っていて (Knowing...), いて (Being...), わかって (Understanding...)
+            if (isState) return pick([
+                {
+                    stem: `そのことについては、もう${jaCtxt} ${blank} います。`,
+                    meaning: `關於那件事，我已經${meaning}${zhCtxt}了(狀態)。`,
+                    formHint: 'て形 (狀態)',
+                },
+                {
+                    stem: `事情{じじょう}がよく${jaCtxt} ${blank} 、安心{あんしん}しました。`,
+                    meaning: `因為非常${meaning}${zhCtxt}狀況，所以放心了。`,
+                    formHint: 'て形 (原因)',
+                }
+            ])
+
+            if (isSensitive) return {
+                stem: `悲{かな}しいニュースですが、主人公{しゅじんこう}が ${blank} 終わりました。`,
+                meaning: `雖然是悲傷的消息，故事以主角${meaning}做為結束。`,
+                formHint: 'て形 (敘述)',
             }
-            return {
-                stem: `「${dictForm}」→ ちょっと ${blank} ください。`,
-                meaning: `「${meaning}」→ 請稍微～一下。`,
-                formHint: 'て形 (請求)',
+
+            if (isMovement) return {
+                stem: `駅{えき}まで ${blank} から、電話{でんわ}するね。`,
+                meaning: `等到${meaning}到車站後，我再打給你喔。`,
+                formHint: 'て形 (順序)',
             }
+
+            // Normal Action Verbs -> Request, Sequence, State
+            return pick([
+                {
+                    stem: `すみませんが、ちょっと${jaCtxt} ${blank} ください。`,
+                    meaning: `不好意思，請${meaning}一下${zhCtxt}。`,
+                    formHint: 'て形 (請求)',
+                },
+                {
+                    stem: `まずは、${jaCtxt} ${blank} から考{かんが}えましょう。`,
+                    meaning: `先${meaning}${zhCtxt}之後，再來思考吧。`,
+                    formHint: 'て形 (順序)',
+                },
+                {
+                    stem: `今{いま}、${jaCtxt} ${blank} います。`,
+                    meaning: `現在正在${meaning}${zhCtxt}。`,
+                    formHint: 'て形 (進行)',
+                }
+            ])
+
         case 'ta':
-            if (hasContext) {
-                return pick([
-                    {
-                        stem: `昨日{きのう}${jaContext} ${blank}。`,
-                        meaning: `昨天${meaning}了${zhContext}。`,
-                        formHint: 'た形 (過去)',
-                    },
-                    {
-                        stem: `もう${jaContext} ${blank}？`,
-                        meaning: `已經${meaning}${zhContext}了嗎？`,
-                        formHint: 'た形 (確認)',
-                    },
-                    {
-                        stem: `${jaContext} ${blank} ことがありますか？`,
-                        meaning: `你有${meaning}過${zhContext}嗎？`,
-                        formHint: 'た形 (經驗)',
-                    },
-                    {
-                        stem: `さっき${jaContext} ${blank} よ。`,
-                        meaning: `剛剛${meaning}了${zhContext}喔。`,
-                        formHint: 'た形 (報告)',
-                    }
-                ])
+            if (isSensitive) return {
+                stem: `昔{むかし}、ここで多{おお}くの人{ひと}が ${blank} と言{い}われています。`,
+                meaning: `據說很久以前，有很多人在這裡${meaning}了。`,
+                formHint: 'た形 (傳聞/過去)',
             }
-            return {
-                stem: `「${dictForm}」→ 昨日{きのう} ${blank}。`,
-                meaning: `「${meaning}」→ 昨天～了。`,
-                formHint: 'た形 (過去)',
-            }
+            return pick([
+                {
+                    stem: `昨日{きのう}、${jaCtxt} ${blank}。`,
+                    meaning: `昨天${meaning}了${zhCtxt}。`,
+                    formHint: 'た形 (過去)',
+                },
+                {
+                    stem: `もう、${jaCtxt} ${blank} か？`,
+                    meaning: `已經${meaning}${zhCtxt}了嗎？`,
+                    formHint: 'た形 (確認)',
+                },
+                {
+                    stem: `実{じつ}は一度{いちど}も、${jaCtxt} ${blank} ことがありません。`,
+                    meaning: `其實，我一次都沒有${meaning}過${zhCtxt}。`,
+                    formHint: 'た形 (經驗)',
+                }
+            ])
+
         case 'nai':
-            if (hasContext) {
-                return pick([
-                    {
-                        stem: `私{わたし}は${jaContext} ${blank}。`,
-                        meaning: `我不${meaning}${zhContext}。`,
-                        formHint: 'ない形 (否定)',
-                    },
-                    {
-                        stem: `まだ${jaContext} ${blank}。`,
-                        meaning: `還沒${meaning}${zhContext}。`,
-                        formHint: 'ない形 (尚未)',
-                    },
-                    {
-                        stem: `${jaContext} ${blank} ほうがいいよ。`,
-                        meaning: `最好不要${meaning}${zhContext}喔。`,
-                        formHint: 'ない形 (建議)',
-                    },
-                    {
-                        stem: `${jaContext} ${blank} と困{こま}ります。`,
-                        meaning: `不${meaning}${zhContext}的話會很困擾。`,
-                        formHint: 'ない形 (必要)',
-                    }
-                ])
+            // State verbs in Nai-form: "Not knowing", "Not existing"
+            if (isState) return {
+                stem: `全然{ぜんぜん}、${jaCtxt} ${blank} ので困{こま}っています。`,
+                meaning: `因為完全不${meaning}${zhCtxt}，所以很困擾。`,
+                formHint: 'ない形 (原因)',
             }
-            return {
-                stem: `「${dictForm}」→ 私{わたし}は全然{ぜんぜん} ${blank}。`,
-                meaning: `「${meaning}」→ 我完全不～。`,
-                formHint: 'ない形 (否定)',
-            }
+
+            return pick([
+                {
+                    stem: `まだ、${jaCtxt} ${blank} ほうがいい。`,
+                    meaning: `還不要${meaning}${zhCtxt}比較好。`,
+                    formHint: 'ない形 (建議)',
+                },
+                {
+                    stem: `今日{きょう}は、${jaCtxt} ${blank} つもりです。`,
+                    meaning: `今天不打算${meaning}${zhCtxt}。`,
+                    formHint: 'ない形 (意志)',
+                },
+                {
+                    stem: `ここては、${jaCtxt} ${blank} でください。`,
+                    meaning: `請不要在這裡${meaning}${zhCtxt}。`,
+                    formHint: 'ない形 (禁止)',
+                }
+            ])
+
         case 'potential':
-            if (hasContext) {
-                return pick([
-                    {
-                        stem: `${jaContext} ${blank}？`,
-                        meaning: `你會${meaning}${zhContext}嗎？`,
-                        formHint: '可能形 (詢問)',
-                    },
-                    {
-                        stem: `やっと${jaContext} ${blank} ようになった。`,
-                        meaning: `終於變得會${meaning}${zhContext}了。`,
-                        formHint: '可能形 (變化)',
-                    },
-                    {
-                        stem: `練習{れんしゅう}すれば${jaContext} ${blank} ようになる。`,
-                        meaning: `只要練習就能${meaning}${zhContext}了。`,
-                        formHint: '可能形 (鼓勵)',
-                    }
-                ])
-            }
-            return {
-                stem: `「${dictForm}」→ やっと ${blank} ようになった。`,
-                meaning: `「${meaning}」→ 終於變得會～了。`,
-                formHint: '可能形 (能力)',
-            }
+            return pick([
+                {
+                    stem: `君{きみ}は、${jaCtxt} ${blank} ますか？`,
+                    meaning: `你會${meaning}${zhCtxt}嗎？`, // "Can you...?"
+                    formHint: '可能形 (詢問)',
+                },
+                {
+                    stem: `やっと、${jaCtxt} ${blank} ようになりました。`,
+                    meaning: `終於變得能${meaning}${zhCtxt}了。`,
+                    formHint: '可能形 (變化)',
+                }
+            ])
+
         case 'passive':
-            if (hasContext) {
-                return pick([
-                    {
-                        stem: `先生{せんせい}に${jaContext} ${blank}。`,
-                        meaning: `被老師${meaning}${zhContext}了。`,
-                        formHint: '受身形 (被動)',
-                    },
-                    {
-                        stem: `友達{ともだち}に${jaContext} ${blank}。`,
-                        meaning: `被朋友${meaning}${zhContext}了。`,
-                        formHint: '受身形 (被動)',
-                    }
-                ])
-            }
-            return {
-                stem: `「${dictForm}」→ 友達{ともだち}に ${blank}。`,
-                meaning: `「${meaning}」→ 被朋友～了。`,
-                formHint: '受身形 (被動)',
-            }
+            return pick([
+                {
+                    stem: `みんなに、${jaCtxt} ${blank} ました。`,
+                    meaning: `被大家${meaning}了${zhCtxt}。`,
+                    formHint: '受身形 (被動)',
+                },
+                {
+                    stem: `知{し}らない人{ひと}に、${jaCtxt} ${blank} 、びっくりした。`,
+                    meaning: `被不認識的人${meaning}${zhCtxt}，嚇了一跳。`,
+                    formHint: '受身形 (被動)',
+                }
+            ])
+
         case 'causative':
-            if (hasContext) {
-                return pick([
-                    {
-                        stem: `母{はは}は私{わたし}に${jaContext} ${blank}。`,
-                        meaning: `媽媽讓我${meaning}${zhContext}。`,
-                        formHint: '使役形 (指示)',
-                    },
-                    {
-                        stem: `先生{せんせい}は学生{がくせい}に${jaContext} ${blank}。`,
-                        meaning: `老師讓學生${meaning}${zhContext}。`,
-                        formHint: '使役形 (指示)',
-                    }
-                ])
-            }
-            return {
-                stem: `「${dictForm}」→ 母{はは}は私{わたし}に ${blank}。`,
-                meaning: `「${meaning}」→ 媽媽讓我～。`,
-                formHint: '使役形 (使役)',
-            }
+            return pick([
+                {
+                    stem: `母{はは}に、${jaCtxt} ${blank} ました。`,
+                    meaning: `被媽媽叫去${meaning}${zhCtxt}了。`,
+                    formHint: '使役形 (強制/指示)',
+                },
+                {
+                    stem: `部長{ぶちょう}は私{わたし}に、${jaCtxt} ${blank} ました。`,
+                    meaning: `部長讓我去${meaning}${zhCtxt}了。`,
+                    formHint: '使役形 (指示)',
+                }
+            ])
+
         case 'volitional':
-            if (hasContext) {
-                return pick([
-                    {
-                        stem: `一緒{いっしょ}に${jaContext} ${blank}！`,
-                        meaning: `一起${meaning}${zhContext}吧！`,
-                        formHint: '意向形 (邀約)',
-                    },
-                    {
-                        stem: `今日{きょう}は${jaContext} ${blank} と思{おも}う。`,
-                        meaning: `今天想${meaning}${zhContext}。`,
-                        formHint: '意向形 (意志)',
-                    },
-                    {
-                        stem: `そろそろ${jaContext} ${blank} か。`,
-                        meaning: `差不多該${meaning}${zhContext}了吧。`,
-                        formHint: '意向形 (提議)',
-                    }
-                ])
+            // State/Sensitive verbs usually don't have volitional forms in daily speech (I won't "let's exist").
+            // We'll mask them or provide a very specific "I suppose" nuance if needed, but rarely tested.
+            // If tested, we use "Default" for them?
+            // Actually, "Let's die" is valid but dark. "Let's know" is weird ("Let's find out" -> 調べよう).
+            if (isState) return { // 知ろう -> Let's try to know/understand
+                stem: `もっと相手{あいて}のことを ${blank} としている。`,
+                meaning: `正試著想要更${meaning}對方的事情。`,
+                formHint: '意向形 (意志)',
             }
-            return {
-                stem: `「${dictForm}」→ 一緒{いっしょ}に ${blank}！`,
-                meaning: `「${meaning}」→ 一起～吧！`,
-                formHint: '意向形 (邀約)',
-            }
+
+            return pick([
+                {
+                    stem: `一緒{いっしょ}に、${jaCtxt} ${blank}！`,
+                    meaning: `一起${meaning}${zhCtxt}吧！`,
+                    formHint: '意向形 (邀約)',
+                },
+                {
+                    stem: `そろそろ、${jaCtxt} ${blank} か。`,
+                    meaning: `差不多該${meaning}${zhCtxt}了吧。`,
+                    formHint: '意向形 (提議)',
+                }
+            ])
+
         default:
             return {
-                stem: `「${dictForm}」を${formName}にしてください → ${blank}`,
-                meaning: `請將「${meaning}」變成${formName}`,
-                formHint: formName,
+                stem: `この動詞{どうし}を ${blank} 。`,
+                meaning: `練習這個動詞的變化...`,
+                formHint: '活用形',
             }
     }
 }

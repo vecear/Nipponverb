@@ -43,6 +43,7 @@ export interface Question {
   detailedExplanation?: DetailedExplanation
   source?: string
   level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
+  meaning?: string // Chinese translation of the stem
 }
 
 export interface DrillCategory {

@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { Verb } from './verbs';
+import type { Verb } from './verbs.ts';
 
 export const importedVerbs: Verb[] = [
   {
