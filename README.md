@@ -6,7 +6,7 @@
 
 A premium, interactive Japanese learning web application powered by authentic corpus data (JDD, CEJC).
 
-## Featuresss
+## Features
 
 - **Authentic Content**: Questions derived from real Japanese corpus data
 - **Multiple Learning Modes**:
