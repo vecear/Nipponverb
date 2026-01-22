@@ -508,8 +508,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '入{はい}ります', reason: '正確！五段動詞。' },
             { text: '入{い}れます', reason: '錯誤：那是他動詞(放入)。' },
-            { text: '入{はい}り', reason: '正確！(連用)' },
-            { text: '入{はい}って', reason: '正確！(音便)' }
+            { text: '入{はい}り', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
+            { text: '入{はい}って', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -522,8 +522,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '入{はい}ります', reason: '正確！洗澡的慣用搭配。' },
-            { text: '入{はい}って', reason: '正確！' },
-            { text: '浴{あ}びます', reason: '正確！(淋浴用浴びる)' },
+            { text: '入{はい}って', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '浴{あ}びます', reason: '錯誤：這是「淋浴用浴びる」，語意不符。' },
             { text: '入{い}れます', reason: '錯誤：他動詞。' }
         ],
         correctIndex: 0,
@@ -539,7 +539,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '止{と}まりました', reason: '正確！五段自動詞。' },
             { text: '止{と}めました', reason: '錯誤：這是人把車停下來(他動詞)。' },
-            { text: '止{と}まって', reason: '正確！' },
+            { text: '止{と}まって', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '終{お}わりました', reason: '錯誤：結束。' }
         ],
         correctIndex: 0,
@@ -554,7 +554,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '止{と}まって', reason: '正確！自動詞狀態持續。' },
             { text: '止{と}めて', reason: '錯誤：他動詞。' },
-            { text: '切{き}れて', reason: '正確！(斷掉/沒電)' },
+            { text: '切{き}れて', reason: '錯誤：這是「斷掉/沒電」，語意不符。' },
             { text: '止{と}まり', reason: '錯誤：接續。' }
         ],
         correctIndex: 0,
@@ -569,8 +569,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '弾{ひ}きます', reason: '正確！五段動詞。' },
-            { text: '弾{ひ}いて', reason: '正確！(音便)' },
-            { text: '弾{ひ}き', reason: '正確！(連用)' },
+            { text: '弾{ひ}いて', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '弾{ひ}き', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '弾{ひ}か', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -600,8 +600,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '作{つく}ります', reason: '正確！五段動詞。' },
-            { text: '作{つく}り', reason: '正確！(連用)' },
-            { text: '作{つく}って', reason: '正確！(音便)' },
+            { text: '作{つく}り', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
+            { text: '作{つく}って', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
             { text: '造{ぞう}ります', reason: '錯誤：漢字層次不同(大型建築用)。' }
         ],
         correctIndex: 0,
@@ -615,7 +615,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '作{つく}った', reason: '正確！五段動詞過去式促音便。' },
-            { text: '作{つく}ります', reason: '正確！(但此處修飾名詞，過去式更自然)' },
+            { text: '作{つく}ります', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '作{つく}り', reason: '錯誤：接續錯誤。' },
             { text: '作{つく}て', reason: '錯誤：音便不完整。' }
         ],
@@ -631,9 +631,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '言{い}います', reason: '正確！五段動詞。' },
-            { text: '言{い}い', reason: '正確！(連用)' },
-            { text: '言{い}って', reason: '正確！(音便)' },
-            { text: '話{はな}します', reason: '正確！(說話，但短句表達用「言う」)' }
+            { text: '言{い}い', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
+            { text: '言{い}って', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '話{はな}します', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -647,7 +647,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '言{い}って', reason: '正確！五段動詞促音便。' },
             { text: '言{い}わ', reason: '錯誤：否定。' },
-            { text: '話{はな}して', reason: '正確！(交談)' },
+            { text: '話{はな}して', reason: '錯誤：這是「交談」，語意不符。' },
             { text: '言{い}え', reason: '錯誤：命令。' }
         ],
         correctIndex: 0,
@@ -662,9 +662,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '引{ひ}きました', reason: '正確！感冒的慣用搭配。' },
-            { text: '引{ひ}き', reason: '正確！' },
+            { text: '引{ひ}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '飲{の}みました', reason: '錯誤：那是吃藥。' },
-            { text: '引{ひ}き', reason: '正確！' }
+            { text: '引{ひ}き', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -677,7 +677,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '引{ひ}いて', reason: '正確！五段動詞 i 音便。' },
-            { text: '押{お}して', reason: '正確！(那是推)' },
+            { text: '押{お}して', reason: '錯誤：這是「那是推」，語意不符。' },
             { text: '引{ひ}き', reason: '錯誤：接續。' },
             { text: '引{ひ}か', reason: '錯誤：否定。' }
         ],
@@ -693,8 +693,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '持{も}ちます', reason: '正確！五段動詞。' },
-            { text: '持{も}って', reason: '正確！' },
-            { text: '持{も}ち', reason: '正確！(連用)' },
+            { text: '持{も}って', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '持{も}ち', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '持{も}た', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -724,8 +724,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '吸{す}います', reason: '正確！五段動詞。' },
-            { text: '吸{す}って', reason: '正確！(音便)' },
-            { text: '吸{す}い', reason: '正確！(連用)' },
+            { text: '吸{す}って', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '吸{す}い', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '吐{は}きます', reason: '錯誤：吐出。' }
         ],
         correctIndex: 0,
@@ -741,7 +741,7 @@ export const n5Questions: StaticQuestion[] = [
             { text: '吸{す}って', reason: '正確！五段動詞促音便。' },
             { text: '吸{す}い', reason: '錯誤：接續。' },
             { text: '吸{す}わ', reason: '錯誤：否定。' },
-            { text: '吐{は}いて', reason: '正確！(呼氣)' }
+            { text: '吐{は}いて', reason: '錯誤：這是「呼氣」，語意不符。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -756,7 +756,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '閉{し}めます', reason: '正確！一段他動詞。' },
             { text: '閉{し}まって', reason: '錯誤：自動詞(關著)。' },
-            { text: '閉{し}め', reason: '正確！(連用)' },
+            { text: '閉{し}め', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '開{あ}けます', reason: '錯誤：那是打開。' }
         ],
         correctIndex: 0,
@@ -770,8 +770,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '閉{し}めます', reason: '正確！鎖門的動作。' },
-            { text: '締{し}めます', reason: '正確！(備註: 打領帶或綁緊才用這個漢字)' },
-            { text: '掛{か}けます', reason: '正確！(常用搭配: 鍵を掛ける)' },
+            { text: '締{し}めます', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '掛{か}けます', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '選{えら}び', reason: '錯誤：選擇。' }
         ],
         correctIndex: 0,
@@ -787,7 +787,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '見{み}ます', reason: '正確！一段動詞。' },
-            { text: '見{み}て', reason: '正確！(TE形)' },
+            { text: '見{み}て', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
             { text: '見{み}られ', reason: '錯誤：可能/受身。' },
             { text: '見{み}よう', reason: '錯誤：意向形。' }
         ],
@@ -803,7 +803,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '見{み}ました', reason: '正確！一段語尾去「る」加「ました」。' },
             { text: '見{み}った', reason: '錯誤：促音便是五段動詞。' },
-            { text: '見{み}た', reason: '正確！(常體)' },
+            { text: '見{み}た', reason: '錯誤：這是「常體」，語意不符。' },
             { text: '見{み}る', reason: '錯誤：時態錯誤。' }
         ],
         correctIndex: 0,
@@ -818,8 +818,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '開{ひら}いて', reason: '正確！五段動詞 i 音便。' },
-            { text: '開{ひら}き', reason: '正確！(連用)' },
-            { text: '開{あ}けて', reason: '正確！(他動詞開ける)' },
+            { text: '開{ひら}き', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
+            { text: '開{あ}けて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '開{ひら}いた', reason: '錯誤：過去式。' }
         ],
         correctIndex: 0,
@@ -833,7 +833,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '開{ひら}きました', reason: '正確！五段ます過去式。' },
-            { text: '開{あ}きました', reason: '正確！(但在開花語境中 hiraku 更常用)' },
+            { text: '開{あ}きました', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '開{ひら}いて', reason: '錯誤：接續錯誤。' },
             { text: '開{あ}けて', reason: '錯誤：那是他動詞。' }
         ],
@@ -864,7 +864,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '会{あ}いました', reason: '正確！五段ます過去式。' },
-            { text: '会{あ}った', reason: '正確！(常體)' },
+            { text: '会{あ}った', reason: '錯誤：這是「常體」，語意不符。' },
             { text: '会{あ}いた', reason: '錯誤：音便錯誤。' },
             { text: '見{み}ました', reason: '錯誤：語義不同(看到)。' }
         ],
@@ -880,8 +880,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '書{か}きます', reason: '正確！五段動詞。' },
-            { text: '書{か}いて', reason: '正確！(TE形)' },
-            { text: '書{か}き', reason: '正確！(連用)' },
+            { text: '書{か}いて', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '書{か}き', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '書{か}こ', reason: '錯誤：未完成。' }
         ],
         correctIndex: 0,
@@ -911,8 +911,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '聞{き}きます', reason: '正確！五段動詞。' },
-            { text: '聞{き}いて', reason: '正確！(TE形)' },
-            { text: '聞{き}き', reason: '正確！(連用)' },
+            { text: '聞{き}いて', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '聞{き}き', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '聞{き}こえ', reason: '錯誤：這是可能形(聽得到)。' }
         ],
         correctIndex: 0,
@@ -942,8 +942,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '泳{およ}ぎます', reason: '正確！五段動詞。' },
-            { text: '泳{およ}いで', reason: '正確！(TE形)' },
-            { text: '泳{およ}ぎ', reason: '正確！(連用)' },
+            { text: '泳{およ}いで', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '泳{およ}ぎ', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '泳{およ}が', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -957,7 +957,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '泳{およ}ぎました', reason: '正確！五段ます過去式。' },
-            { text: '泳{およ}いだ', reason: '正確！(常體，濁音便)' },
+            { text: '泳{およ}いだ', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
             { text: '泳{およ}いた', reason: '錯誤：結尾是「ぐ」應變為「いで」。' },
             { text: '泳{およ}き', reason: '錯誤：清濁誤用。' }
         ],
@@ -973,8 +973,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '遊{あそ}びます', reason: '正確！五段動詞。' },
-            { text: '遊{あそ}んで', reason: '正確！(TE形)' },
-            { text: '遊{あそ}び', reason: '正確！(連用)' },
+            { text: '遊{あそ}んで', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '遊{あそ}び', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '滑{すべ}り', reason: '錯誤：那是溜走。' }
         ],
         correctIndex: 0,
@@ -990,7 +990,7 @@ export const n5Questions: StaticQuestion[] = [
             { text: '遊{あそ}び', reason: '正確！連用形接ましょう。' },
             { text: '遊{あそ}ん', reason: '錯誤：促音便不接。' },
             { text: '遊{あそ}べ', reason: '錯誤：命令。' },
-            { text: '遊{あそ}ぼ', reason: '正確！(常體意向)' }
+            { text: '遊{あそ}ぼ', reason: '錯誤：這是意向形，語意不符。' }
         ],
         correctIndex: 0,
         tag: 'grammar',
@@ -1019,7 +1019,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '待{ま}って', reason: '正確！進行中的動作。' },
-            { text: '待{ま}ち', reason: '正確！(連用)' },
+            { text: '待{ま}ち', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '持{も}って', reason: '錯誤：那是拿。' },
             { text: '待{ま}た', reason: '錯誤：否定。' }
         ],
@@ -1035,7 +1035,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '呼{よ}びます', reason: '正確！五段動詞。' },
-            { text: '呼{よ}んで', reason: '正確！(TE形)' },
+            { text: '呼{よ}んで', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
             { text: '読{よ}み', reason: '錯誤：那是讀。' },
             { text: '及{及}び', reason: '錯誤：字字誤用。' }
         ],
@@ -1050,7 +1050,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '呼{よ}んで', reason: '正確！五段動詞撥音便。' },
-            { text: '呼{よ}ん', reason: '正確！(撥音)' },
+            { text: '呼{よ}ん', reason: '錯誤：這是「撥音」，語意不符。' },
             { text: '呼{よ}ば', reason: '錯誤：否定。' },
             { text: '呼{よ}べ', reason: '錯誤：命令。' }
         ],
@@ -1066,7 +1066,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '休{やす}みます', reason: '正確！「休む」可表示休息或請假、曠工。' },
-            { text: '休{やす}んで', reason: '正確！(TE形)' },
+            { text: '休{やす}んで', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
             { text: '休{やす}ませ', reason: '錯誤：使役形。' },
             { text: '止{と}め', reason: '錯誤：停止。' }
         ],
@@ -1098,8 +1098,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '買{か}います', reason: '正確！五段動詞。' },
-            { text: '買{か}いました', reason: '正確！(過去)' },
-            { text: '買{か}って', reason: '正確！(音便)' },
+            { text: '買{か}いました', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '買{か}って', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
             { text: '買{か}わ', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -1114,7 +1114,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '買{か}いました', reason: '正確！五段ます過去式。' },
             { text: '買{か}いた', reason: '錯誤：音便應為「買った」。' },
-            { text: '買{か}った', reason: '正確！(常體)' },
+            { text: '買{か}った', reason: '錯誤：這是「常體」，語意不符。' },
             { text: '買{か}い', reason: '錯誤：接續。' }
         ],
         correctIndex: 0,
@@ -1129,8 +1129,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '売{う}っています', reason: '正確！表示店鋪正在販售的狀態。' },
-            { text: '売{う}ります', reason: '正確！(將要賣)' },
-            { text: '売{う}り', reason: '正確！(連用)' },
+            { text: '売{う}ります', reason: '錯誤：這是「將要賣」，語意不符。' },
+            { text: '売{う}り', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '売{う}れ', reason: '錯誤：可能/命令。' }
         ],
         correctIndex: 0,
@@ -1161,7 +1161,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '貸{か}します', reason: '正確！五段動詞。指向他人借出。' },
             { text: '借{か}ります', reason: '錯誤：那是向他人借入。' },
-            { text: '貸{か}して', reason: '正確！' },
+            { text: '貸{か}して', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '貸{か}さ', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -1192,8 +1192,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '借{か}ります', reason: '正確！一段動詞。指向他人借入。' },
             { text: '貸{か}します', reason: '錯誤：那是借出。' },
-            { text: '借{か}り', reason: '正確！' },
-            { text: '借{か}りて', reason: '正確！' }
+            { text: '借{か}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '借{か}りて', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -1222,8 +1222,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '死{し}にました', reason: '正確！五段動詞。' },
-            { text: '死{し}んだ', reason: '正確！(常體撥音便)' },
-            { text: '死{し}に', reason: '正確！(連用)' },
+            { text: '死{し}んだ', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '死{し}に', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '死{し}ね', reason: '錯誤：命令。' }
         ],
         correctIndex: 0,
@@ -1253,7 +1253,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '住{す}んで', reason: '正確！五段撥音便。表示居住狀態的持續。' },
-            { text: '住{す}み', reason: '正確！(連用)' },
+            { text: '住{す}み', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '住{す}む', reason: '錯誤：接續。' },
             { text: '住{す}ま', reason: '錯誤：否定。' }
         ],
@@ -1268,7 +1268,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '住{す}んで', reason: '正確！居住狀態的欲求。' },
-            { text: '住{す}み', reason: '正確！(直接動作欲求)' },
+            { text: '住{す}み', reason: '錯誤：這是「直接動作欲求」，語意不符。' },
             { text: '住{す}みた', reason: '錯誤：接續。' },
             { text: '住{す}ぼ', reason: '錯誤：變化。' }
         ],
@@ -1346,8 +1346,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '飛{と}びます', reason: '正確！五段動詞。' },
-            { text: '飛{と}んで', reason: '正確！(撥音便)' },
-            { text: '飛{と}び', reason: '正確！(連用)' },
+            { text: '飛{と}んで', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '飛{と}び', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '泳{およ}ぎます', reason: '錯誤：那是游。' }
         ],
         correctIndex: 0,
@@ -1362,7 +1362,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '飛{と}んで', reason: '正確！五段撥音便。' },
             { text: '飛{と}び', reason: '錯誤：接續。' },
-            { text: '通{とお}って', reason: '正確！(通過，但飛機用飛更具體)' },
+            { text: '通{とお}って', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '飛{と}ば', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -1377,9 +1377,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '撮{と}ります', reason: '正確！五段動詞。專用於攝影。' },
-            { text: '取{と}ります', reason: '正確！(雖然讀音相同，但拿東西用「取」)' },
-            { text: '撮{と}って', reason: '正確！(音便)' },
-            { text: '撮{と}り', reason: '正確！(連用)' }
+            { text: '取{と}ります', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '撮{と}って', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '撮{と}り', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -1424,7 +1424,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '並{なら}んで', reason: '正確！五段撥音便接「てください」。' },
-            { text: '並{なら}び', reason: '正確！' },
+            { text: '並{なら}び', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '並{なら}ば', reason: '錯誤：否定。' },
             { text: '並{なら}べ', reason: '錯誤：他動詞。' }
         ],
@@ -1440,8 +1440,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '渡{わた}る', reason: '正確！五段辭書形修飾時。' },
-            { text: '渡{わた}り', reason: '正確！' },
-            { text: '渡{わた}って', reason: '正確！' },
+            { text: '渡{わた}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '渡{わた}って', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '渡{わた}ら', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -1455,7 +1455,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '渡{わた}って', reason: '正確！五段促音便接下一步動作。' },
-            { text: '渡{わた}り', reason: '正確！' },
+            { text: '渡{わた}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '渡{わた}る', reason: '錯誤：接續不順。' },
             { text: '渡{わた}し', reason: '錯誤：這是「遞交給人」(他動詞)。' }
         ],
@@ -1534,7 +1534,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '生{う}まれました', reason: '正確！一段自動詞。' },
             { text: '生{う}みました', reason: '錯誤：那是「生小孩」(他動詞)。' },
-            { text: '生{う}まれ', reason: '正確！' },
+            { text: '生{う}まれ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '生{う}まる', reason: '錯誤：變位錯誤。' }
         ],
         correctIndex: 0,
@@ -1549,7 +1549,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '生{う}まれ', reason: '正確！一段動詞連用形。' },
             { text: '生{う}ま', reason: '錯誤：變化不全。' },
-            { text: '生{う}まれ', reason: '正確！' },
+            { text: '生{う}まれ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '生{う}み', reason: '錯誤：他動詞。' }
         ],
         correctIndex: 0,
@@ -1595,7 +1595,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '脫{ぬ}いで', reason: '正確！五段動詞「ぐ」變「いで」。' },
-            { text: '脫{ぬ}ぎ', reason: '正確！' },
+            { text: '脫{ぬ}ぎ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '洗{あら}って', reason: '錯誤：洗鞋子。' },
             { text: '脫{ぬ}が', reason: '錯誤：否定。' }
         ],
@@ -1610,9 +1610,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '脫{ぬ}いで', reason: '正確！五段イ音便。' },
-            { text: '脫{ぬ}ぎ', reason: '正確！' },
+            { text: '脫{ぬ}ぎ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '着{き}て', reason: '錯誤：語義相反(穿上)。' },
-            { text: '脫{ぬ}ぐ', reason: '正確！' }
+            { text: '脫{ぬ}ぐ', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -1641,9 +1641,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: 'やって', reason: '正確！五段動詞「る」變「って」。' },
-            { text: 'あげて', reason: '正確！(但對動植物多用やる)' },
+            { text: 'あげて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'やり', reason: '錯誤：接續不足。' },
-            { text: 'やって', reason: '正確！' }
+            { text: 'やって', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -1658,7 +1658,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '並{なら}べて', reason: '正確！一段他動詞。' },
             { text: '並{なら}んで', reason: '錯誤：那是人去排隊(自動詞)。' },
-            { text: '並{なら}べ', reason: '正確！' },
+            { text: '並{なら}べ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '並{なら}べな', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -1673,8 +1673,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '並{なら}べました', reason: '正確！一段動詞連用形。' },
             { text: '並{なら}びました', reason: '錯誤：自動詞用法不當。' },
-            { text: '置{お}きました', reason: '正確！(放)' },
-            { text: '並{なら}べ', reason: '正確！' }
+            { text: '置{お}きました', reason: '錯誤：這是「放」，語意不符。' },
+            { text: '並{なら}べ', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'masu',
@@ -1688,8 +1688,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '読{よ}みます', reason: '正確！五段詞尾變「み」。' },
-            { text: '読{よ}んで', reason: '正確！(現在)' },
-            { text: '読{よ}み', reason: '正確！(連用)' },
+            { text: '読{よ}んで', reason: '錯誤：這是「現在」，語意不符。' },
+            { text: '読{よ}み', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '読{よ}ま', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -1735,9 +1735,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '浴{あ}びました', reason: '正確！' },
-            { text: '浴{あ}びて', reason: '正確！' },
-            { text: '浴{あ}び', reason: '正確！' },
-            { text: '浴{あ}びる', reason: '正確！' }
+            { text: '浴{あ}びて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '浴{あ}び', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '浴{あ}びる', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'masu',
@@ -1766,9 +1766,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '洗{あら}いました', reason: '正確！' },
-            { text: '洗{あら}って', reason: '正確！' },
+            { text: '洗{あら}って', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '洗{あら}わ', reason: '錯誤：否定。' },
-            { text: '洗{あら}う', reason: '正確！' }
+            { text: '洗{あら}う', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'masu',
@@ -1782,7 +1782,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '歩{ある}いて', reason: '正確！五段動詞「く」發生イ音便。' },
-            { text: '歩{ある}き', reason: '正確！' },
+            { text: '歩{ある}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '歩{ある}か', reason: '錯誤：接續不符。' },
             { text: '歩{ある}け', reason: '錯誤：可能。' }
         ],
@@ -1797,9 +1797,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '步{ある}いて', reason: '正確！' },
-            { text: '步{ある}き', reason: '正確！' },
-            { text: '步{ある}か', reason: '正確！' },
-            { text: '步{ある}く', reason: '正確！' }
+            { text: '步{ある}き', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '步{ある}か', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '步{ある}く', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -1814,7 +1814,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '入{い}れます', reason: '正確！一段他動詞。' },
             { text: '入{はい}ります', reason: '錯誤：那是自動詞(進入)。' },
-            { text: '入{い}れ', reason: '正確！' },
+            { text: '入{い}れ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '入{い}れな', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -1828,7 +1828,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '入{い}れて', reason: '正確！一段去る加て。' },
-            { text: '入{い}れ', reason: '正確！' },
+            { text: '入{い}れ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '入{はい}って', reason: '錯誤：自動詞。' },
             { text: '入{い}ろ', reason: '錯誤：變位錯誤。' }
         ],
@@ -1846,7 +1846,7 @@ export const n5Questions: StaticQuestion[] = [
             { text: '歌{うた}い', reason: '正確！五段連用形。' },
             { text: '歌{うた}わ', reason: '錯誤：不接ましょう。' },
             { text: '歌{うた}え', reason: '錯誤：可能。' },
-            { text: '歌{うた}お', reason: '正確！(意向形，但不接ましょう)' }
+            { text: '歌{うた}お', reason: '錯誤：這是意向形，語意不符。' }
         ],
         correctIndex: 0,
         tag: 'masu',
@@ -1859,9 +1859,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '歌{うた}って', reason: '正確！五段促音便。' },
-            { text: '歌{うた}い', reason: '正確！' },
-            { text: '歌{うた}わ', reason: '正確！' },
-            { text: '歌{うた}う', reason: '正確！' }
+            { text: '歌{うた}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '歌{うた}わ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '歌{うた}う', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -1877,7 +1877,7 @@ export const n5Questions: StaticQuestion[] = [
             { text: '起{お}きます', reason: '正確！一段動詞。' },
             { text: '起{お}きります', reason: '錯誤：變位錯誤。' },
             { text: '起{お}こします', reason: '錯誤：那是「叫醒」(他動詞)。' },
-            { text: '起{お}き', reason: '正確！' }
+            { text: '起{お}き', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'masu',
@@ -1890,7 +1890,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '起{お}きて', reason: '正確！一段去る加て。' },
-            { text: '起{お}き', reason: '正確！' },
+            { text: '起{お}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '起{お}こして', reason: '錯誤：叫醒。' },
             { text: '起{お}きら', reason: '錯誤：否定。' }
         ],
@@ -1906,7 +1906,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '置{お}いて', reason: '正確！五段イ音便。' },
-            { text: '置{お}き', reason: '正確！' },
+            { text: '置{お}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '置{お}か', reason: '錯誤：未然形。' },
             { text: '置{お}け', reason: '錯誤：命令。' }
         ],
@@ -1922,8 +1922,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '置{お}き', reason: '正確！五段連用形。' },
             { text: '置{お}い', reason: '錯誤：變位錯誤。' },
-            { text: '置{お}か', reason: '正確！' },
-            { text: '置{お}け', reason: '正確！' }
+            { text: '置{お}か', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '置{お}け', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'masu',
@@ -1938,7 +1938,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '教{おし}えて', reason: '正確！一段動詞。' },
             { text: '教{おそ}わって', reason: '錯誤：那是「受教」(自動詞方向)。' },
-            { text: '教{おし}え', reason: '正確！' },
+            { text: '教{おし}え', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '教{おし}えな', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -1952,9 +1952,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '教{おし}えて', reason: '正確！一段去る加て。' },
-            { text: '教{おし}え', reason: '正確！' },
+            { text: '教{おし}え', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '教{おし}えま', reason: '錯誤：接續。' },
-            { text: '教{おし}えな', reason: '正確！' }
+            { text: '教{おし}えな', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -1968,9 +1968,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '押{お}す', reason: '正確！五段辭書形接と。' },
-            { text: '押{お}し', reason: '正確！' },
+            { text: '押{お}し', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '押{お}さ', reason: '錯誤：否定。' },
-            { text: '押{お}せ', reason: '正確！' }
+            { text: '押{お}せ', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -1983,9 +1983,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '押{お}さ', reason: '正確！五段未然形。' },
-            { text: '押{お}し', reason: '正確！' },
-            { text: '押{お}し', reason: '正確！' },
-            { text: '押{お}す', reason: '正確！' }
+            { text: '押{お}し', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '押{お}し', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '押{お}す', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'negative',
@@ -1999,9 +1999,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '覚{おぼ}える', reason: '正確！一段動詞辭書形。' },
-            { text: '覚{おぼ}え', reason: '正確！' },
-            { text: '覚{おぼ}え', reason: '正確！' },
-            { text: '覚{おぼ}えた', reason: '正確！' }
+            { text: '覚{おぼ}え', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '覚{おぼ}え', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '覚{おぼ}えた', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -2014,7 +2014,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '覚{おぼ}えて', reason: '正確！一段去る加て。表示狀態。' },
-            { text: '覚{おぼ}え', reason: '正確！' },
+            { text: '覚{おぼ}え', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '思{おも}って', reason: '錯誤：那是「想」。' },
             { text: '忘{わす}れて', reason: '錯誤：那是「忘記」。' }
         ],
@@ -2045,8 +2045,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '降{お}りて', reason: '正確！一段去る加て。' },
-            { text: '降{お}り', reason: '正確！' },
-            { text: '降{お}ろして', reason: '正確！' },
+            { text: '降{お}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '降{お}ろして', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '降{お}りら', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -2062,7 +2062,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '返{かえ}します', reason: '正確！五段動詞。' },
             { text: '借{か}ります', reason: '錯誤：那是「借」。' },
-            { text: '返{かえ}して', reason: '正確！' },
+            { text: '返{かえ}して', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '返{かえ}ら', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -2076,9 +2076,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '返{かえ}して', reason: '正確！五段促音便。' },
-            { text: '返{かえ}し', reason: '正確！' },
-            { text: '返{かえ}さ', reason: '正確！' },
-            { text: '返{かえ}す', reason: '正確！' }
+            { text: '返{かえ}し', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '返{かえ}さ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '返{かえ}す', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -2093,7 +2093,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '消{き}えました', reason: '正確！一段自動詞。' },
             { text: '消{け}しました', reason: '錯誤：那是「關掉」(他動詞)。' },
-            { text: '消{き}え', reason: '正確！' },
+            { text: '消{き}え', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '消{き}ゆ', reason: '錯誤：古文。' }
         ],
         correctIndex: 0,
@@ -2107,8 +2107,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '消{き}えて', reason: '正確！一段去る加て。' },
-            { text: '消{き}え', reason: '正確！' },
-            { text: '消{け}して', reason: '正確！' },
+            { text: '消{き}え', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '消{け}して', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '消{き}えら', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -2124,7 +2124,7 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '聞{き}こえます', reason: '正確！一段自動詞。' },
             { text: '聞{き}きます', reason: '錯誤：那是主動去聽。' },
-            { text: '聞{き}こえ', reason: '正確！' },
+            { text: '聞{き}こえ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '聞{き}け', reason: '錯誤：那是能力形(聽得到)。' }
         ],
         correctIndex: 0,
@@ -2138,8 +2138,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '聞{き}こえて', reason: '正確！一段去る加て。' },
-            { text: '聞{き}こえ', reason: '正確！' },
-            { text: '聞{き}いて', reason: '正確！' },
+            { text: '聞{き}こえ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '聞{き}いて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '聞{き}こえら', reason: '錯誤：否定。' }
         ],
         correctIndex: 0,
@@ -2154,9 +2154,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '困{こま}って', reason: '正確！五段促音便。' },
-            { text: '困{こま}り', reason: '正確！' },
+            { text: '困{こま}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '困{こま}な', reason: '錯誤：變位錯誤。' },
-            { text: '困{こま}ら', reason: '正確！' }
+            { text: '困{こま}ら', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -2169,9 +2169,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '困{こま}る', reason: '正確！五段辭書形。' },
-            { text: '困{こま}り', reason: '正確！' },
-            { text: '困{こま}っ', reason: '正確！' },
-            { text: '困{こま}ら', reason: '正確！' }
+            { text: '困{こま}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '困{こま}っ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '困{こま}ら', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -2185,7 +2185,7 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '咲{さ}いて', reason: '正確！五段イ音便。' },
-            { text: '咲{さ}き', reason: '正確！' },
+            { text: '咲{さ}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '咲{さ}か', reason: '錯誤：否定。' },
             { text: '咲{さ}け', reason: '錯誤：命令。' }
         ],
@@ -2200,9 +2200,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '咲{さ}きます', reason: '正確！五段連用形。' },
-            { text: '咲{さ}き', reason: '正確！' },
+            { text: '咲{さ}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '咲{さ}い', reason: '錯誤：變位錯誤。' },
-            { text: '咲{さ}く', reason: '正確！' }
+            { text: '咲{さ}く', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'masu',
@@ -2216,9 +2216,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: 'かかります', reason: '正確！五段動詞。' },
-            { text: 'かかり', reason: '正確！' },
+            { text: 'かかり', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'かけて', reason: '錯誤：他動詞。' },
-            { text: 'かから', reason: '正確！' }
+            { text: 'かから', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'masu',
@@ -2231,9 +2231,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: 'かかります', reason: '正確！常用於時間或金錢的花費。' },
-            { text: 'かかり', reason: '正確！' },
-            { text: 'かけて', reason: '正確！' },
-            { text: 'かかる', reason: '正確！' }
+            { text: 'かかり', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'かけて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'かかる', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'masu',
@@ -2247,9 +2247,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '知{し}って', reason: '正確！雖然是連體形但要注意其狀態。' },
-            { text: '知{し}り', reason: '正確！' },
+            { text: '知{し}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '知{し}ん', reason: '錯誤：變位錯誤。' },
-            { text: '分{わ}かって', reason: '正確！(理解，但此處問知悉)' }
+            { text: '分{わ}かって', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -2263,8 +2263,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '知{し}り', reason: '正確！五段連用。' },
             { text: '知{し}って', reason: '錯誤：否定不用知っていません。' },
-            { text: '分{わ}かり', reason: '正確！' },
-            { text: '知{し}ら', reason: '正確！' }
+            { text: '分{わ}かり', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '知{し}ら', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'masu',
@@ -2279,8 +2279,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: 'かけます', reason: '正確！一段他動詞。' },
             { text: 'かかります', reason: '錯誤：自動詞(掛著)。' },
-            { text: 'かけ', reason: '正確！' },
-            { text: 'かけて', reason: '正確！' }
+            { text: 'かけ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'かけて', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'masu',
@@ -2295,7 +2295,7 @@ export const n5Questions: StaticQuestion[] = [
             { text: 'かけて', reason: '正確！一段動詞。' },
             { text: 'かぶり', reason: '錯誤：那是戴帽子。' },
             { text: 'はいて', reason: '錯誤：那是穿褲子/鞋子。' },
-            { text: 'し', reason: '正確！' }
+            { text: 'し', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -2310,8 +2310,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '切{き}ります', reason: '正確！五段動詞(外形似一段但為五段)。' },
             { text: '着{き}ます', reason: '錯誤：那是「穿」。' },
-            { text: '切{き}って', reason: '正確！' },
-            { text: '切{き}ら', reason: '正確！' }
+            { text: '切{き}って', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '切{き}ら', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'masu',
@@ -2324,9 +2324,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '切{き}って', reason: '正確！五段促音便。' },
-            { text: '切{き}り', reason: '正確！' },
+            { text: '切{き}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '着{き}て', reason: '錯誤：漢字用法。' },
-            { text: '切{き}ら', reason: '正確！' }
+            { text: '切{き}ら', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
         tag: 'te',

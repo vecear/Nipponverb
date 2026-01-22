@@ -312,39 +312,7 @@ export const importedVerbs: Verb[] = [
       "人品、才能或成績等優異。行。優秀。能幹。了不起。"
     ]
   },
-  {
-    "dictionary": "どう",
-    "reading": "どう",
-    "meaning": "copper",
-    "meaning_zh": "銅",
-    "type": "godan",
-    "group": "う",
-    "level": "N5",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "<ruby>君<rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>はこのことをどう<ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>うか",
-        "zh": "你對這事怎麼看？"
-      },
-      {
-        "ja": "おからだのぐあいはどうですか",
-        "zh": "您身體(狀況)怎麼樣？"
-      },
-      {
-        "ja": "どう<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ても<ruby>二<rp>(</rp><rt>に</rt><rp>)</rp></ruby><ruby>十<rp>(</rp><rt>じゅう</rt><rp>)</rp></ruby><ruby>歳<rp>(</rp><rt>さい</rt><rp>)</rp></ruby>すぎの<ruby>顔<rp>(</rp><rt>かお</rt><rp>)</rp></ruby>だ",
-        "zh": "(不論)怎麼看也是過了二十的面容。"
-      }
-    ],
-    "dictionary_definition": [
-      "表示對事物狀態或行動方式等的疑問的心情。怎麼。怎麼樣。怎樣。",
-      "表示對該動作在作法和內容上不能給與什麼限制。無論怎麼。不管怎麼。如何。"
-    ]
-  },
+  
   {
     "dictionary": "見る",
     "reading": "みる",
@@ -783,116 +751,9 @@ export const importedVerbs: Verb[] = [
       "表示數量、程度很大。"
     ]
   },
-  {
-    "dictionary": "いくつ",
-    "reading": "いくつ",
-    "meaning": "how many",
-    "meaning_zh": "多少",
-    "type": "godan",
-    "group": "つ",
-    "level": "N5",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "あの<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>はいくつになったのかな",
-        "zh": "那孩子幾歲了？"
-      },
-      {
-        "ja": "もういくつ<ruby>欲<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>しいのか",
-        "zh": "還想要幾個？"
-      },
-      {
-        "ja": "<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>めない<ruby>字<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>がいくつかあった",
-        "zh": "有一些不認識的字。"
-      },
-      {
-        "ja": "リンゴはいくつありますか。",
-        "zh": "蘋果有幾個？"
-      }
-    ],
-    "dictionary_definition": [
-      "多少的數。廣泛就個數、年齡、天數而言。幾個。多大(幾歲)。",
-      "多以“いくつか”、“いくつも”的形式，表示不明確的數字。一些。好些。"
-    ]
-  },
-  {
-    "dictionary": "いす",
-    "reading": "いす",
-    "meaning": "chair",
-    "meaning_zh": "椅子/就座",
-    "type": "godan",
-    "group": "す",
-    "level": "N5",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "いすにかける",
-        "zh": "坐在椅子上。"
-      },
-      {
-        "ja": "いすをすすめる",
-        "zh": "讓座。"
-      },
-      {
-        "ja": "<ruby>大臣<rp>(</rp><rt>だいじん</rt><rp>)</rp></ruby>のいす",
-        "zh": "大臣的職位。"
-      },
-      {
-        "ja": "<ruby>窓側<rp>(</rp><rt>まどがわ</rt><rp>)</rp></ruby>のいすに<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>ってもいいですか。",
-        "zh": "我可以坐在靠窗的椅子上嗎？"
-      }
-    ],
-    "dictionary_definition": [
-      "用來坐着的傢俱。椅子。",
-      "在機關、公司裏的高地位。職位。崗位。交椅。"
-    ]
-  },
-  {
-    "dictionary": "いつ",
-    "reading": "いつ",
-    "meaning": "when",
-    "meaning_zh": "什麼時候",
-    "type": "godan",
-    "group": "つ",
-    "level": "N5",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "いつご<ruby>出発<rp>(</rp><rt>しゅっぱつ</rt><rp>)</rp></ruby>ですか",
-        "zh": "什麼時候出發？"
-      },
-      {
-        "ja": "<ruby>払<rp>(</rp><rt>はら</rt><rp>)</rp></ruby>いはいつでもよい",
-        "zh": "什麼時候付款都行。"
-      },
-      {
-        "ja": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>にはいつ<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>るつもりですか。",
-        "zh": "你打算什麼時候來日本？"
-      },
-      {
-        "ja": "いつの<ruby>間<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>にか<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>止<rp>(</rp><rt>や</rt><rp>)</rp></ruby>んでいた。",
-        "zh": "不知不覺間雨就停了。"
-      }
-    ],
-    "dictionary_definition": [
-      "表示不定時或關於時間的疑問。什麼時候。多咱。"
-    ]
-  },
+  
+  
+  
   {
     "dictionary": "要る",
     "reading": "いる",
@@ -1981,39 +1842,7 @@ export const importedVerbs: Verb[] = [
       "使不存在。消。銷燬。洗掉。"
     ]
   },
-  {
-    "dictionary": "九つ",
-    "reading": "ここのつ",
-    "meaning": "nine",
-    "meaning_zh": "九個",
-    "type": "godan",
-    "group": "つ",
-    "level": "N5",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "<ruby>九<rp>(</rp><rt>ここの</rt><rp>)</rp></ruby>つのりんごがある。",
-        "zh": "有九個蘋果。"
-      },
-      {
-        "ja": "<ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>は<ruby>今年<rp>(</rp><rt>ことし</rt><rp>)</rp></ruby>で<ruby>九<rp>(</rp><rt>ここの</rt><rp>)</rp></ruby>つになる。",
-        "zh": "他今年九歲了。"
-      },
-      {
-        "ja": "みかんを<ruby>九<rp>(</rp><rt>ここの</rt><rp>)</rp></ruby>つ<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いました。",
-        "zh": "買了九個橘子。"
-      }
-    ],
-    "dictionary_definition": [
-      "八的下一個數。九。",
-      "九歲。九個。"
-    ]
-  },
+  
   {
     "dictionary": "答える",
     "reading": "こたえる",
@@ -3881,43 +3710,7 @@ export const importedVerbs: Verb[] = [
       "繼承由最初傳下來的系統。繼承。"
     ]
   },
-  {
-    "dictionary": "一つ",
-    "reading": "ひとつ",
-    "meaning": "one",
-    "meaning_zh": "一",
-    "type": "godan",
-    "group": "つ",
-    "level": "N5",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "まちがいはひとつしかない",
-        "zh": "錯誤只有一個。"
-      },
-      {
-        "ja": "みかんがひとつある",
-        "zh": "有1個桔子。"
-      },
-      {
-        "ja": "ひとつ<ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby>をとる",
-        "zh": "長1歲。"
-      }
-    ],
-    "dictionary_definition": [
-      "打頭的數。一。一個。",
-      "計算年齡或東西時的打頭的數。一個。一歲。",
-      "指相同。一樣。",
-      "一面。一方面。",
-      "接在體言之後，和後面的否定詞語相呼應，強調該詞義。連…都。",
-      "分條列項寫時，加在條目上的詞。一。第一。"
-    ]
-  },
+  
   {
     "dictionary": "吹く",
     "reading": "ふく",
@@ -3995,38 +3788,7 @@ export const importedVerbs: Verb[] = [
       "意想不到的事情突然發生。降臨。臨頭。"
     ]
   },
-  {
-    "dictionary": "ほんとう",
-    "reading": "ほんとう",
-    "meaning": "really",
-    "meaning_zh": "真的",
-    "type": "godan",
-    "group": "う",
-    "level": "N5",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "その<ruby>話<rp>(</rp><rt>はなし</rt><rp>)</rp></ruby>はほんとうだ",
-        "zh": "這話是真的。"
-      },
-      {
-        "ja": "ほんとうにつまらない",
-        "zh": "實在無聊。"
-      },
-      {
-        "ja": "ほんとうにかわいそうだ",
-        "zh": "真可憐。"
-      }
-    ],
-    "dictionary_definition": [
-      "指實際上是那樣。也指是真東西。真(的)。真實。真正。實在。其實。"
-    ]
-  },
+  
   {
     "dictionary": "曲る",
     "reading": "まがる",
@@ -4104,40 +3866,7 @@ export const importedVerbs: Verb[] = [
       "以“…に待つ”的形式表示期待。有待於…。有賴於…。對…寄予希望。期望。"
     ]
   },
-  {
-    "dictionary": "まっすぐ",
-    "reading": "まっすぐ",
-    "meaning": "Straight",
-    "meaning_zh": "直的",
-    "type": "godan",
-    "group": "ぐ",
-    "level": "N5",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "まっすぐな<ruby>道<rp>(</rp><rt>みち</rt><rp>)</rp></ruby>",
-        "zh": "筆直的路。"
-      },
-      {
-        "ja": "<ruby>東<rp>(</rp><rt>ひがし</rt><rp>)</rp></ruby>へまっすぐに<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>く",
-        "zh": "一直往東走。"
-      },
-      {
-        "ja": "きょうはまっすぐ(に)<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ろう",
-        "zh": "今天直接回家吧。"
-      }
-    ],
-    "dictionary_definition": [
-      "一點兒也不彎曲的樣子。直。筆直。一直。",
-      "指直接地。直接。",
-      "正派而老實的樣子。正直。"
-    ]
-  },
+  
   {
     "dictionary": "磨く",
     "reading": "みがく",
@@ -4261,77 +3990,8 @@ export const importedVerbs: Verb[] = [
       "照看。看。照料。處理。"
     ]
   },
-  {
-    "dictionary": "向こう",
-    "reading": "むこう",
-    "meaning": "beyond",
-    "meaning_zh": "超過",
-    "type": "godan",
-    "group": "う",
-    "level": "N5",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "むこうの<ruby>雑貨<rp>(</rp><rt>ざっか</rt><rp>)</rp></ruby><ruby>屋<rp>(</rp><rt>や</rt><rp>)</rp></ruby>",
-        "zh": "對過兒的小鋪。"
-      },
-      {
-        "ja": "おむこうのおじさん",
-        "zh": "對門兒的叔叔。"
-      },
-      {
-        "ja": "<ruby>山<rp>(</rp><rt>やま</rt><rp>)</rp></ruby>のむこう",
-        "zh": "山那邊。"
-      }
-    ],
-    "dictionary_definition": [
-      "正前方。對面。也專指對面的房子。對門兒。對過兒。",
-      "那邊。隔着某物，越過它的前方。前頭。前面。",
-      "話題中所指的某處所。那邊。那兒。那裏。",
-      "從現在起。從今以後。今後。以後。",
-      "對方。"
-    ]
-  },
-  {
-    "dictionary": "もう",
-    "reading": "もう",
-    "meaning": "already",
-    "meaning_zh": "已經",
-    "type": "godan",
-    "group": "う",
-    "level": "N5",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "もう<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ている",
-        "zh": "已經來了。"
-      },
-      {
-        "ja": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>からではもう<ruby>遅<rp>(</rp><rt>おそ</rt><rp>)</rp></ruby>い",
-        "zh": "現在開始已經晚了。"
-      },
-      {
-        "ja": "もう<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>るだろう",
-        "zh": "快來了吧。"
-      }
-    ],
-    "dictionary_definition": [
-      "該時已過去的樣子。某事體已結束的樣子。已。已經。",
-      "時間或處所臨近的樣子。快。要。",
-      "在這之上還要。再。",
-      "強調感動心情的詞。嘿。"
-    ]
-  },
+  
+  
   {
     "dictionary": "持つ",
     "reading": "もつ",
@@ -4453,38 +4113,7 @@ export const importedVerbs: Verb[] = [
       "唱點酒。喫飯。吸菸。喝。喫。抽。"
     ]
   },
-  {
-    "dictionary": "よく",
-    "reading": "よく",
-    "meaning": "often",
-    "meaning_zh": "好/經常",
-    "type": "godan",
-    "group": "く",
-    "level": "N5",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "よくが<ruby>深<rp>(</rp><rt>ふか</rt><rp>)</rp></ruby>い",
-        "zh": "貪心不足。"
-      },
-      {
-        "ja": "<ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>はよくに<ruby>目<rp>(</rp><rt>め</rt><rp>)</rp></ruby>がない",
-        "zh": "他利慾薰心。"
-      },
-      {
-        "ja": "<ruby>夜<rp>(</rp><rt>よる</rt><rp>)</rp></ruby><ruby>遅<rp>(</rp><rt>おそ</rt><rp>)</rp></ruby>くまでよく<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きていられるね。",
-        "zh": "你竟然能熬夜到這麼晚啊。"
-      }
-    ],
-    "dictionary_definition": [
-      "希望多得、多做的心情。慾望。貪心。"
-    ]
-  },
+  
   {
     "dictionary": "呼ぶ",
     "reading": "よぶ",
@@ -7115,38 +6744,7 @@ export const importedVerbs: Verb[] = [
       "因無法預料或因悲傷而心裏感到憋悶等，不知如何是好。想不出。"
     ]
   },
-  {
-    "dictionary": "こう",
-    "reading": "こう",
-    "meaning": "like this",
-    "meaning_zh": "像這樣",
-    "type": "godan",
-    "group": "う",
-    "level": "N4",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "ああ<ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>えばこう<ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>う",
-        "zh": "強詞奪理(我那麼說，他這麼說)。"
-      },
-      {
-        "ja": "<ruby>教<rp>(</rp><rt>おし</rt><rp>)</rp></ruby>えを<ruby>請<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>う。",
-        "zh": "請求指教。"
-      },
-      {
-        "ja": "<ruby>許<rp>(</rp><rt>ゆる</rt><rp>)</rp></ruby>しを<ruby>請<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>う。",
-        "zh": "請求原諒。"
-      }
-    ],
-    "dictionary_definition": [
-      "指示眼前的物或近處的事時用的詞。這樣。這麼。"
-    ]
-  },
+  
   {
     "dictionary": "込む",
     "reading": "こむ",
@@ -10818,38 +10416,7 @@ export const importedVerbs: Verb[] = [
       "因特別喜歡而經常沉浸其中。愛。愛好。"
     ]
   },
-  {
-    "dictionary": "あいにく",
-    "reading": "あいにく",
-    "meaning": "Unfortunately",
-    "meaning_zh": "很遺憾",
-    "type": "godan",
-    "group": "く",
-    "level": "N3",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "あいにくなことに<ruby>皆<rp>(</rp><rt>みな</rt><rp>)</rp></ruby>るすだった",
-        "zh": "遺憾的是都不在家。"
-      },
-      {
-        "ja": "あいにく、その<ruby>日<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>の<ruby>午後<rp>(</rp><rt>ごご</rt><rp>)</rp></ruby>は<ruby>予定<rp>(</rp><rt>よてい</rt><rp>)</rp></ruby>が<ruby>入<rp>(</rp><rt>はい</rt><rp>)</rp></ruby>っています。",
-        "zh": "很不湊巧（不幸地），那天下午我已經有事了。"
-      },
-      {
-        "ja": "あいにくの<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>で<ruby>遠足<rp>(</rp><rt>えんそく</rt><rp>)</rp></ruby>は<ruby>中止<rp>(</rp><rt>ちゅうし</rt><rp>)</rp></ruby>になった。",
-        "zh": "因為很不湊巧的下雨，遠足取消了。"
-      }
-    ],
-    "dictionary_definition": [
-      "事物的狀況不好的樣子。不湊巧。偏巧。遺憾。"
-    ]
-  },
+  
   {
     "dictionary": "諦める",
     "reading": "あきらめる",
@@ -11219,42 +10786,7 @@ export const importedVerbs: Verb[] = [
       "全身蒙受。蒙受。受到。博得。沐浴。"
     ]
   },
-  {
-    "dictionary": "あらゆる",
-    "reading": "あらゆる",
-    "meaning": "every",
-    "meaning_zh": "每一個",
-    "type": "godan",
-    "group": "る",
-    "level": "N3",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "あらゆる<ruby>状況<rp>(</rp><rt>じょうきょう</rt><rp>)</rp></ruby>を<ruby>報告<rp>(</rp><rt>ほうこく</rt><rp>)</rp></ruby>した",
-        "zh": "彙報了一切情況。"
-      },
-      {
-        "ja": "あらゆる<ruby>場合<rp>(</rp><rt>ばあい</rt><rp>)</rp></ruby>にあてはまる",
-        "zh": "適用於所有場合。"
-      },
-      {
-        "ja": "あらゆる<ruby>可能<rp>(</rp><rt>かのう</rt><rp>)</rp></ruby><ruby>性<rp>(</rp><rt>せい</rt><rp>)</rp></ruby>を<ruby>考慮<rp>(</rp><rt>こうりょ</rt><rp>)</rp></ruby>して<ruby>計画<rp>(</rp><rt>けいかく</rt><rp>)</rp></ruby>を<ruby>立<rp>(</rp><rt>た</rt><rp>)</rp></ruby>てる。",
-        "zh": "考慮所有（各種）可能性後制定計畫。"
-      },
-      {
-        "ja": "<ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>はあらゆる<ruby>分野<rp>(</rp><rt>ぶんや</rt><rp>)</rp></ruby>に<ruby>精通<rp>(</rp><rt>せいつう</rt><rp>)</rp></ruby>している。",
-        "zh": "他在各個領域都很精通。"
-      }
-    ],
-    "dictionary_definition": [
-      "所有的。全部的。所有。一切。"
-    ]
-  },
+  
   {
     "dictionary": "表す",
     "reading": "あらわす",
@@ -11379,38 +10911,7 @@ export const importedVerbs: Verb[] = [
       "變得令人矚目。出。有。顯露。湧現。"
     ]
   },
-  {
-    "dictionary": "ありがとう",
-    "reading": "ありがとう",
-    "meaning": "thank you",
-    "meaning_zh": "謝謝",
-    "type": "godan",
-    "group": "う",
-    "level": "N3",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "ありがとうございます",
-        "zh": "謝謝。"
-      },
-      {
-        "ja": "どうもありがとう",
-        "zh": "實在感謝。"
-      },
-      {
-        "ja": "<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってくれてありがとう。",
-        "zh": "謝謝你幫我。"
-      }
-    ],
-    "dictionary_definition": [
-      "向對方表示謝意的詞。謝謝。感謝。"
-    ]
-  },
+  
   {
     "dictionary": "有る",
     "reading": "ある",
@@ -11731,38 +11232,7 @@ export const importedVerbs: Verb[] = [
       "祈禱幸福、幸運。祝福。"
     ]
   },
-  {
-    "dictionary": "いわゆる",
-    "reading": "いわゆる",
-    "meaning": "so-called",
-    "meaning_zh": "所謂的",
-    "type": "godan",
-    "group": "る",
-    "level": "N3",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "<ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>はいわゆる<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>の<ruby>虫<rp>(</rp><rt>むし</rt><rp>)</rp></ruby>だ",
-        "zh": "他就是所謂的書迷。"
-      },
-      {
-        "ja": "<ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>はいわゆる<ruby>天才<rp>(</rp><rt>てんさい</rt><rp>)</rp></ruby>だ。",
-        "zh": "他是所謂的天才。"
-      },
-      {
-        "ja": "これが、いわゆる「<ruby>一石二鳥<rp>(</rp><rt>いっせきにちょう</rt><rp>)</rp></ruby>」だ。",
-        "zh": "這就是所謂的「一箭雙鵰」。"
-      }
-    ],
-    "dictionary_definition": [
-      "一般人常說的。一般所說的。所謂。"
-    ]
-  },
+  
   {
     "dictionary": "伺う",
     "reading": "うかがう",
@@ -12783,38 +12253,7 @@ export const importedVerbs: Verb[] = [
       "被吸引。熱中(於某事)而失去理性。迷戀。沉溺。"
     ]
   },
-  {
-    "dictionary": "おめでとう",
-    "reading": "おめでとう",
-    "meaning": "Congratulations",
-    "meaning_zh": "恭喜你",
-    "type": "godan",
-    "group": "う",
-    "level": "N3",
-    "transitivity": "intransitive",
-    "context": {
-      "ja": "",
-      "zh": "",
-      "en": ""
-    },
-    "native_examples": [
-      {
-        "ja": "<ruby>新年<rp>(</rp><rt>しんねん</rt><rp>)</rp></ruby>おめでとうございます",
-        "zh": "新年好！"
-      },
-      {
-        "ja": "<ruby>全快<rp>(</rp><rt>ぜんかい</rt><rp>)</rp></ruby>おめでとう",
-        "zh": "恭喜痊癒！"
-      },
-      {
-        "ja": "ご<ruby>卒業<rp>(</rp><rt>そつぎょう</rt><rp>)</rp></ruby>おめでとう。そして、ご<ruby>就職<rp>(</rp><rt>しゅうしょく</rt><rp>)</rp></ruby>おめでとう",
-        "zh": "恭喜畢業，並恭喜就職！"
-      }
-    ],
-    "dictionary_definition": [
-      "祝賀新年、成功、幸福等喜慶事時的寒暄用語。恭喜。大喜。"
-    ]
-  },
+  
   {
     "dictionary": "お目に掛かる",
     "reading": "おめにかかる",
