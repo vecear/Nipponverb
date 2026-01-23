@@ -8,12 +8,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '這輛腳踏車誰都可以*能借*。',
         level: 'N4',
         options: [
-            { text: '借{か}りられます', reason: '正確！「借りる」是一段動詞，可能形是「～られる」。' },
             { text: '借{か}ります', reason: '錯誤：這只是「借」，沒有「能」的意思。' },
-            { text: '借{か}りれます', reason: '錯誤：「ら抜き言葉」不標準。' },
-            { text: '借{か}れます', reason: '錯誤：「借りる」是一段動詞。' }
-        ],
-        correctIndex: 0,
+            { text: '借{か}りられます', reason: '正確！「借りる」是一段動詞，可能形是「～られる」。' },
+            { text: '借{か}れます', reason: '錯誤：「借りる」是一段動詞。' },
+            { text: '借{か}りれます', reason: '錯誤：「ら抜き言葉」不標準。' }],
+        correctIndex: 1,
         tag: 'potential',
         correctRule: '【考點】可能形活用\n【解析】【可能形】「借りる」是二類動詞 (一段)，變化規則是「去掉る」＋「られる」。(注意：口語常說「借りれる」，但正式考試仍以「借りられる」為準)。\n【延伸】相關詞/混淆項：借れます、借ります、借りれます'
     },
@@ -23,12 +22,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '你會*能讀*日文報紙嗎？',
         level: 'N4',
         options: [
-            { text: '読{よ}まれます', reason: '錯誤：那是受身形或敬語。' },
             { text: '読{よ}かれます', reason: '錯誤：不存在的變化。' },
+            { text: '読{よ}めます', reason: '正確！「読む」的可能形是「読める」。' },
             { text: '読{よ}みます', reason: '錯誤：這是「讀」，不是「能讀」。' },
-            { text: '読{よ}めます', reason: '正確！「読む」的可能形是「読める」。' }
-        ],
-        correctIndex: 3,
+            { text: '読{よ}まれます', reason: '錯誤：那是受身形或敬語。' }],
+        correctIndex: 1,
         tag: 'potential',
         correctRule: '【考點】可能形活用\n【解析】【可能形】「読む」是五段動詞 (mu)，變化規則是「u段」→「e段」＋る。因此「yomu」→「yome」＋「る」→「読める」。\n【延伸】相關詞/混淆項：読みます、読かれます、読まれます'
     },
@@ -39,12 +37,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '在客滿的電車上被*___*了腳。',
         level: 'N4',
         options: [
-            { text: '踏{ふ}めました', reason: '錯誤：這是可能形。' },
+            { text: '踏{ふ}まれました', reason: '正確！「踏む」的受身形。表示「被害」的被動。' },
             { text: '踏{ふ}ませました', reason: '錯誤：這是使役形(強迫踩)。' },
             { text: '踏{ふ}みました', reason: '錯誤：這是我踩別人的意思。' },
-            { text: '踏{ふ}まれました', reason: '正確！「踏む」的受身形。表示「被害」的被動。' }
-        ],
-        correctIndex: 3,
+            { text: '踏{ふ}めました', reason: '錯誤：這是可能形。' }],
+        correctIndex: 0,
         tag: 'passive',
         correctRule: '【考點】受身形活用\n【解析】【受身形 (被動)】五段動詞變化規則：「u段」→「a段」＋「れる」。踏む (fumu) → 踏ま (fuma) ＋れる → 踏まれる。此句型為「被害受身」。\n【延伸】相關詞/混淆項：踏めました、踏みました、踏ませました'
     },
@@ -54,11 +51,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '錢包被小偷*___*了。',
         level: 'N4',
         options: [
-            { text: '盗{ぬす}みました', reason: '錯誤：這變成是我偷了小偷的錢包。' },
-            { text: '盗{ぬす}まれました', reason: '正確！「盗む」的受身形。' },
             { text: '盗{ぬす}めました', reason: '錯誤：這變成能夠偷。' },
-            { text: '盗{ぬす}ませました', reason: '錯誤：這變成我讓小偷去偷。' }
-        ],
+            { text: '盗{ぬす}まれました', reason: '正確！「盗む」的受身形。' },
+            { text: '盗{ぬす}みました', reason: '錯誤：這變成是我偷了小偷的錢包。' },
+            { text: '盗{ぬす}ませました', reason: '錯誤：這變成我讓小偷去偷。' }],
         correctIndex: 1,
         tag: 'passive',
         correctRule: '【考點】受身形活用\n【解析】【受身形 (被動)】五段動詞「盗む (nusumu)」字尾 u → a，變為「盗まれる」。這裡是典型的「持ち主受身」(所有物被...)。\n【延伸】相關詞/混淆項：盗めました、盗ませました、盗みました'
@@ -70,12 +66,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '媽媽*___*小孩吃蔬菜。',
         level: 'N4',
         options: [
-            { text: '食{た}べさせます', reason: '正確！「食べる」的使役形。' },
-            { text: '食{た}べます', reason: '錯誤：媽媽自己吃。' },
             { text: '食{た}べられます', reason: '錯誤：這是受身形或可能形。' },
-            { text: '食{た}べらせます', reason: '錯誤：多餘的音節。' }
-        ],
-        correctIndex: 0,
+            { text: '食{た}べます', reason: '錯誤：媽媽自己吃。' },
+            { text: '食{た}べらせます', reason: '錯誤：多餘的音節。' },
+            { text: '食{た}べさせます', reason: '正確！「食べる」的使役形。' }],
+        correctIndex: 3,
         tag: 'causative',
         correctRule: '【考點】使役形活用\n【解析】【使役形】二類動詞 (一段) 的規則是「去掉る」＋「させる」。食べる → 食べさせる。表示強制或允許。\n【延伸】相關詞/混淆項：食べられます、食べます、食べらせます'
     },
@@ -85,12 +80,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '老師讓學生*___*作業。',
         level: 'N4',
         options: [
-            { text: 'されました', reason: '錯誤：老師被做作業？(被動)。' },
-            { text: 'しました', reason: '錯誤：老師自己做作業。' },
             { text: 'させました', reason: '正確！「する」的使役形是「させる」。' },
-            { text: 'さらせました', reason: '錯誤：不存在的變化。' }
-        ],
-        correctIndex: 2,
+            { text: 'しました', reason: '錯誤：老師自己做作業。' },
+            { text: 'されました', reason: '錯誤：老師被做作業？(被動)。' },
+            { text: 'さらせました', reason: '錯誤：不存在的變化。' }],
+        correctIndex: 0,
         tag: 'causative',
         correctRule: '【考點】使役形活用\n【解析】【使役形】第三類動詞「する」是不規則變化，變為「させる」。此句型表示指示、命令。\n【延伸】相關詞/混淆項：されました、さらせました、しました'
     },
@@ -101,12 +95,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '被部長*被迫*唱歌。',
         level: 'N4',
         options: [
-            { text: '歌{うた}わせられました', reason: '正確！使役受身形，表示「被強迫」。' },
-            { text: '歌{うた}いました', reason: '錯誤：主動唱。' },
+            { text: '歌{うた}われました', reason: '錯誤：被部長唱了歌。' },
             { text: '歌{うた}わせました', reason: '錯誤：我強迫部長唱歌。' },
-            { text: '歌{うた}われました', reason: '錯誤：被部長唱了歌。' }
-        ],
-        correctIndex: 0,
+            { text: '歌{うた}わせられました', reason: '正確！使役受身形，表示「被強迫」。' },
+            { text: '歌{うた}いました', reason: '錯誤：主動唱。' }],
+        correctIndex: 2,
         tag: 'causative-passive',
         correctRule: '【考點】文法與語義\n【解析】【使役受身形】這是一個長難關。五段動詞「歌う」先變使役「歌わせる」，再變被動「歌わせられる」(口語常縮約為 歌わされる)。表示「不得不做」的心情。\n【延伸】相關詞/混淆項：歌いました、歌わせました、歌われました'
     },
@@ -117,12 +110,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '電燈*亮著*。',
         level: 'N4',
         options: [
-            { text: 'ついています', reason: '正確！自動詞「つく」表示狀態。' },
-            { text: 'つけります', reason: '錯誤：不存在的動詞。' },
+            { text: 'ついてあります', reason: '錯誤：自動詞通常不配てあります (除非特殊狀況)。' },
             { text: 'つけています', reason: '錯誤：這是正在開燈 (人為)。' },
-            { text: 'ついてあります', reason: '錯誤：自動詞通常不配てあります (除非特殊狀況)。' }
-        ],
-        correctIndex: 0,
+            { text: 'つけります', reason: '錯誤：不存在的動詞。' },
+            { text: 'ついています', reason: '正確！自動詞「つく」表示狀態。' }],
+        correctIndex: 3,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】【自他動詞】「電気が」提示了主語是電燈自己，故用自動詞「つく」。配合「〜ている」表示結果的狀態持續。\n【延伸】相關詞/混淆項：ついてあります、つけています、つけります'
     },
@@ -135,8 +127,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '入{い}れて', reason: '正確！「入れてある」表示某人為了目的而放著。' },
             { text: '入{い}る', reason: '錯誤：形態不對。' },
             { text: '入{はい}り', reason: '錯誤：形態不對。' },
-            { text: '入{はい}って', reason: '錯誤：入って是自動詞，通常接います。' }
-        ],
+            { text: '入{はい}って', reason: '錯誤：入って是自動詞，通常接います。' }],
         correctIndex: 0,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】包包裡放著地圖。 \n【～てある】句型通常接「他動詞」，表示某人為了某種目的而做的動作結果存續。這裡是指「地圖被人放進去準備好了」。\n【延伸】相關詞/混淆項：入る、入り、入って'
@@ -149,12 +140,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*借了* 朋友的傘。',
         level: 'N4',
         options: [
-            { text: '借{か}りられました', reason: '錯誤：雖然語法對，但此題考基本動詞區分。' },
-            { text: '借{か}らせました', reason: '錯誤：使役形。' },
+            { text: '貸{か}しました', reason: '錯誤：那是「借給」別人的意思。' },
             { text: '借{か}りました', reason: '正確！「借りる」是一段動詞。' },
-            { text: '貸{か}しました', reason: '錯誤：那是「借給」別人的意思。' }
-        ],
-        correctIndex: 2,
+            { text: '借{か}りられました', reason: '錯誤：雖然語法對，但此題考基本動詞區分。' },
+            { text: '借{か}らせました', reason: '錯誤：使役形。' }],
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: '【考點】動詞活用變化\n【解析】借了朋友的傘。 \n【動詞區分】「借りる」(向人借入) 與 「貸す」(借出給人) 是 N4 基礎詞彙區分的重點。\n【延伸】相關詞/混淆項：借りられました、貸しました、借らせました'
     },
@@ -165,29 +155,15 @@ export const n4Questions: StaticQuestion[] = [
         // Actually, let's test Potential.
         level: 'N4',
         options: [
-            { text: '持{も}って行{い}か', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '借{か}りさせ', reason: '錯誤：使役形變化不對。' },
-            { text: '借{か}り', reason: '正確！(備註: ないでください 的接續)' },
-            { text: '借{か}りられ', reason: '錯誤：受身/可能。' }
-        ],
-        // Let's redo this one to be better.
-        correctIndex: 2,
-        tag: 'grammar',
-        correctRule: '【考點】文法接續\n【解析】請不要借圖書館的書。 \n【否定請求】「～ないでください」接在動詞未然形(ない形去nai)之後。一段動詞「借りる」的ない形是「借りない」。\n【延伸】相關詞/混淆項：持って行か、借りられ、借りさせ'
-    },
-    // 2. 教える (Oshieru)
-    {
-        id: 'n4_gen_oshieru_1',
-        prob: '先生{せんせい}に日本語{にほんご}を ______ いただきました。',
-        prob_zh: '請老師 *教了* 我日語。',
-        level: 'N4',
-        options: [
-            { text: '教{おし}えて', reason: '正確！TE形 + いただく 表示蒙受恩惠。' },
-            { text: '教{おし}えられて', reason: '錯誤：這是受身。' },
             { text: '教{おし}えさせて', reason: '錯誤：這是使役，請老師讓我教。' },
-            { text: '教{おし}え', reason: '錯誤：接續錯誤。' }
-        ],
-        correctIndex: 0,
+            { text: '教{おし}え', reason: '錯誤：接續錯誤。' },
+            { text: '教{おし}えて', reason: '正確！TE形 + いただく 表示蒙受恩惠。' },
+            { text: '借{か}り', reason: '正確！(備註: ないでください 的接續)' },
+            { text: '借{か}りられ', reason: '錯誤：受身/可能。' },
+            { text: '持{も}って行{い}か', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '教{おし}えられて', reason: '錯誤：這是受身。' }],
+        correctIndex: 6,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】請老師教了我日語。 \n【授受動詞】「～ていただく」表示請求或接受長輩、上司為自己做某事。\n【延伸】相關詞/混淆項：教えさせて、教え、教えられて'
     },
@@ -198,11 +174,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '教{おし}え', reason: '錯誤：接續錯誤。' },
-            { text: '教{おし}えられ', reason: '錯誤：這是受身。' },
             { text: '教{おし}えて', reason: '正確！TE形 + あげる 表示為他人做事。' },
-            { text: '教{おし}える', reason: '錯誤：接續錯誤。' }
-        ],
-        correctIndex: 2,
+            { text: '教{おし}える', reason: '錯誤：接續錯誤。' },
+            { text: '教{おし}えられ', reason: '錯誤：這是受身。' }],
+        correctIndex: 1,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】需不需要我教您怎麼走？ \n【授受行為】「～てあげる」表示說話者為主語，為對方提供某種動作、行為的恩惠。\n【延伸】相關詞/混淆項：教え、教える、教えられ'
     },
@@ -213,12 +188,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '不小心 *忘記* 寫作業了。',
         level: 'N4',
         options: [
-            { text: '忘{わす}れて', reason: '正確！TE形 + しまう 表示遺憾、後悔。' },
             { text: '忘{わす}れ', reason: '錯誤：接續錯誤。' },
+            { text: '忘{わす}れないで', reason: '錯誤：請不要忘記。' },
             { text: '忘{わす}れた', reason: '錯誤：重複過去式。' },
-            { text: '忘{わす}れないで', reason: '錯誤：請不要忘記。' }
-        ],
-        correctIndex: 0,
+            { text: '忘{わす}れて', reason: '正確！TE形 + しまう 表示遺憾、後悔。' }],
+        correctIndex: 3,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】不小心忘記寫作業了。 \n【遺憾完成】「～てしまう」表示該動作已完成，且帶有意外、不小心或遺憾的情緒。\n【延伸】相關詞/混淆項：忘れた、忘れ、忘れないで'
     },
@@ -229,28 +203,14 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '忘{わす}りました', reason: '錯誤：一段動詞不變 ri。' },
-            { text: '忘{わす}るました', reason: '錯誤：基本規則錯誤。' },
-            { text: '忘{わす}れました', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '忘{わす}れた', reason: '錯誤：這是「常體」，語意不符。' },
-            { text: '忘{わす}れました', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' }
-        ],
-        // Avoiding dups. 
-        correctIndex: 4,
-        tag: 'conjugation',
-        correctRule: '啊，忘記帶傘了。 \n【活用】一段動詞「忘れる」的活用規則是去掉「る」，加上「ました」。'
-    },
-    // 4. 集める (Atsumeru)
-    {
-        id: 'n4_gen_atsumeru_1',
-        prob: '趣味{しゅみ}は切手{きって}を ______ ことです。',
-        prob_zh: '愛好是 *收集* 郵票。',
-        level: 'N4',
-        options: [
             { text: '集{あつ}める', reason: '正確！辭書形 + こと 用於名詞化。' },
+            { text: '忘{わす}れました', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '忘{わす}るました', reason: '錯誤：基本規則錯誤。' },
+            { text: '集{あつ}めて', reason: '錯誤：TE形。' },
+            { text: '忘{わす}れた', reason: '錯誤：這是「常體」，語意不符。' },
+            { text: '忘{わす}れました', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
             { text: '集{あつ}まり', reason: '錯誤：這是自動詞(集合)。' },
-            { text: '集{あつ}まる', reason: '錯誤：這是自動詞。' },
-            { text: '集{あつ}めて', reason: '錯誤：TE形。' }
-        ],
+            { text: '集{あつ}まる', reason: '錯誤：這是自動詞。' }],
         correctIndex: 0,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】愛好是收集郵票。 \n【自他動詞】「集める」(他動詞，收集) 與 「集まる」(自動詞，集合) 的區分。助詞是「を」所以選集める。\n【延伸】相關詞/混淆項：集まる、集めて、集まり'
@@ -261,12 +221,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請把垃圾 *集中* 之後扔掉。',
         level: 'N4',
         options: [
+            { text: '集{あつ}めて', reason: '正確！TE形連接前後動作。' },
             { text: '集{あつ}まらせ', reason: '錯誤：使役形。' },
             { text: '集{あつ}め', reason: '錯誤：接續錯誤。' },
-            { text: '集{あつ}めて', reason: '正確！TE形連接前後動作。' },
-            { text: '集{あつ}まった', reason: '錯誤：自動詞。' }
-        ],
-        correctIndex: 2,
+            { text: '集{あつ}まった', reason: '錯誤：自動詞。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請把垃圾集中之後扔掉。 \n【活用】一段動詞「集める」的 te 形是去掉「る」加上「て」。\n【延伸】相關詞/混淆項：集め、集まらせ、集まった'
     },
@@ -278,11 +237,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '始{はじ}まります', reason: '錯誤：自動詞，會議自己開始。' },
-            { text: '始{はじ}めます', reason: '正確！他動詞，人為開始。' },
+            { text: '始{はじ}める', reason: '錯誤：這是「常體」，語意不符。' },
             { text: '始{はじ}めに', reason: '錯誤：名詞。' },
-            { text: '始{はじ}める', reason: '錯誤：這是「常體」，語意不符。' }
-        ],
-        correctIndex: 1,
+            { text: '始{はじ}めます', reason: '正確！他動詞，人為開始。' }],
+        correctIndex: 3,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】開始開會。 \n【自他動詞】「始める」(他) vs 「始まる」(自)。主語若是人或動作對象用「を」，則選他動詞。\n【延伸】相關詞/混淆項：始まります、始める、始めに'
     },
@@ -292,12 +250,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '雨 *開始* 下了。',
         level: 'N4',
         options: [
-            { text: '終{お}わりました', reason: '錯誤：結束。' },
             { text: '始{はじ}まりました', reason: '錯誤：接續錯誤。' },
             { text: '出{だ}しました', reason: '錯誤：雖然意思相近，但此處通常指突發。' },
-            { text: '始{はじ}めました', reason: '正確！ます形去masu + 始める 表示動作開始。' }
-        ],
-        correctIndex: 3,
+            { text: '始{はじ}めました', reason: '正確！ます形去masu + 始める 表示動作開始。' },
+            { text: '終{お}わりました', reason: '錯誤：結束。' }],
+        correctIndex: 2,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】雨開始下了。 \n【複合動詞】「〜始める」接在動詞連用形之後，表示該動作的開始。\n【延伸】相關詞/混淆項：終わりました、出しました、始まりました'
     },
@@ -308,12 +265,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '考試 *結束* 了。',
         level: 'N4',
         options: [
+            { text: '終{お}わりました', reason: '正確！自動詞五段。' },
             { text: '終{お}わりました', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '終{お}わり', reason: '錯誤：名詞。' },
-            { text: '終{お}えました', reason: '錯誤：他動詞(人把事情結束)。' },
-            { text: '終{お}わりました', reason: '正確！自動詞五段。' }
-        ],
-        correctIndex: 3,
+            { text: '終{お}えました', reason: '錯誤：他動詞(人把事情結束)。' }],
+        correctIndex: 0,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】考試結束了。 \n【自他動詞】「終わる」(自) vs 「終える」(他)。考試自己結束，用自動詞。\n【延伸】相關詞/混淆項：終えました、終わり、終わりました'
     },
@@ -323,11 +279,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '讀 *完* 了書。',
         level: 'N4',
         options: [
-            { text: '止{や}めました', reason: '錯誤：停止(放棄)。' },
+            { text: '終{お}わり', reason: '錯誤：名詞。' },
             { text: '終{お}わって', reason: '錯誤：TE形。' },
             { text: '終{お}わりました', reason: '正確！與 始める 相反，表示動作結束。' },
-            { text: '終{お}わり', reason: '錯誤：名詞。' }
-        ],
+            { text: '止{や}めました', reason: '錯誤：停止(放棄)。' }],
         correctIndex: 2,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】讀完了書。 \n【複合動詞】「〜終わる」接在動詞連用形之後，表示該動作的完結。\n【延伸】相關詞/混淆項：止めました、終わって、終わり'
@@ -339,11 +294,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請代為 *轉達* 問候。',
         level: 'N4',
         options: [
-            { text: '伝{つた}えられ', reason: '錯誤：可能/受身。' },
             { text: '伝{つた}わり', reason: '錯誤：這是自動詞(傳達到)。' },
+            { text: '伝{つた}えられ', reason: '錯誤：可能/受身。' },
             { text: '伝{つた}えて', reason: '正確！一段動詞 te 形。' },
-            { text: '伝{つた}わって', reason: '錯誤：自動詞。' }
-        ],
+            { text: '伝{つた}わって', reason: '錯誤：自動詞。' }],
         correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請代為轉達問候。 \n【自他動詞】「伝える」是傳達某事。常用句「よろしくお伝えください」。\n【延伸】相關詞/混淆項：伝えられ、伝わって、伝わり'
@@ -354,12 +308,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '無法很好地 *表達* 心裡想的事情。',
         level: 'N4',
         options: [
-            { text: '伝{つた}え', reason: '錯誤：接續錯誤。' },
-            { text: '伝{つた}わって', reason: '錯誤：自動詞。' },
             { text: '伝{つた}えます', reason: '錯誤：接續錯誤。' },
-            { text: '伝{つた}える', reason: '正確！辭書形 + ことができる。' }
-        ],
-        correctIndex: 3,
+            { text: '伝{つた}える', reason: '正確！辭書形 + ことができる。' },
+            { text: '伝{つた}え', reason: '錯誤：接續錯誤。' },
+            { text: '伝{つた}わって', reason: '錯誤：自動詞。' }],
+        correctIndex: 1,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】無法很好地表達心裡想的事情。 \n【能力】表達想法或心情，使用他動詞「伝える」接續能力句型。\n【延伸】相關詞/混淆項：伝え、伝わって、伝えます'
     },
@@ -372,9 +325,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '決{き}めた', reason: '錯誤：這是「常體」，語意不符。' },
             { text: '決{き}めました', reason: '正確！一段動詞他動詞。' },
-            { text: '決{き}まりました', reason: '錯誤：這是自動詞(決定好了)。雖然語意通，但通常考區別。' },
-            { text: '決{き}めます', reason: '錯誤：未來式。' }
-        ],
+            { text: '決{き}めます', reason: '錯誤：未來式。' },
+            { text: '決{き}まりました', reason: '錯誤：這是自動詞(決定好了)。雖然語意通，但通常考區別。' }],
         correctIndex: 1,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】決定了下次旅行的目的地。 \n【自他動詞】「決める」(他) vs 「決まる」(自)。主動決定用他動詞。\n【延伸】相關詞/混淆項：決まりました、決めた、決めます'
@@ -385,12 +337,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '最好由自己 *決定*。',
         level: 'N4',
         options: [
-            { text: '決{き}まり', reason: '錯誤：名詞。' },
-            { text: '決{き}める', reason: '錯誤：雖然可以，但通常建議用 ta 形。' },
             { text: '決{き}めて', reason: '錯誤：TE形。' },
-            { text: '決{き}めた', reason: '正確！ta形 + ほうがいい 表示建議。' }
-        ],
-        correctIndex: 3,
+            { text: '決{き}めた', reason: '正確！ta形 + ほうがいい 表示建議。' },
+            { text: '決{き}まり', reason: '錯誤：名詞。' },
+            { text: '決{き}める', reason: '錯誤：雖然可以，但通常建議用 ta 形。' }],
+        correctIndex: 1,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】最好由自己決定。 \n【建議】「～たほうがいい」是用於給予具體建議的句型。\n【延伸】相關詞/混淆項：決める、決めて、決まり'
     },
@@ -401,12 +352,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *投* 球。',
         level: 'N4',
         options: [
-            { text: '投{な}げて', reason: '正確！一段動詞 te 形。' },
+            { text: '投{な}が', reason: '錯誤：變化錯誤。' },
             { text: '投{な}げ', reason: '錯誤：接續錯誤。' },
-            { text: '投{な}ぎ', reason: '錯誤：變化錯誤。' },
-            { text: '投{な}が', reason: '錯誤：變化錯誤。' }
-        ],
-        correctIndex: 0,
+            { text: '投{な}げて', reason: '正確！一段動詞 te 形。' },
+            { text: '投{な}ぎ', reason: '錯誤：變化錯誤。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請投球。 \n【活用】一段動詞「投げる」去掉「る」加上「て」。\n【延伸】相關詞/混淆項：投げ、投ぎ、投が'
     },
@@ -416,11 +366,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '把垃圾從窗戶 *扔掉* 之後逃走了。',
         level: 'N4',
         options: [
+            { text: '投{な}げた', reason: '錯誤：過去式，不能接續逃げる。' },
             { text: '投{な}げ', reason: '錯誤：接續錯誤。' },
-            { text: '投{な}げだした', reason: '錯誤：雖然可以表示投。' },
             { text: '投{な}げて', reason: '正確！TE形連接動作。' },
-            { text: '投{な}げた', reason: '錯誤：過去式，不能接續逃げる。' }
-        ],
+            { text: '投{な}げだした', reason: '錯誤：雖然可以表示投。' }],
         correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】把垃圾從窗戶扔掉之後逃走了。 \n【活用】動詞 te 形連用。\n【延伸】相關詞/混淆項：投げた、投げだした、投げ'
@@ -433,10 +382,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '建{た}てたいです', reason: '正確！ます形去masu + たい 表示願望。' },
-            { text: '建{た}てりたい', reason: '錯誤：拼寫錯誤。' },
+            { text: '建{た}てます', reason: '錯誤：普通肯定。' },
             { text: '建{た}ちます', reason: '錯誤：自動詞(開工/站立)。' },
-            { text: '建{た}てます', reason: '錯誤：普通肯定。' }
-        ],
+            { text: '建{た}てりたい', reason: '錯誤：拼寫錯誤。' }],
         correctIndex: 0,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】將來想要蓋大房子。 \n【願望】「～たい」表示第一人稱的願望，一段動詞「建てる」變為「建てたい」。\n【延伸】相關詞/混淆項：建てます、建ちます、建てりたい'
@@ -447,12 +395,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '這棟建築物是30年前 *被蓋* 的。',
         level: 'N4',
         options: [
-            { text: '建{た}てられました', reason: '正確！中性受身，表示建築。' },
-            { text: '建{た}ちました', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '建{た}されました', reason: '錯誤：變化錯誤。' },
-            { text: '建{た}てさせました', reason: '錯誤：使役形。' }
-        ],
-        correctIndex: 0,
+            { text: '建{た}ちました', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '建{た}てさせました', reason: '錯誤：使役形。' },
+            { text: '建{た}てられました', reason: '正確！中性受身，表示建築。' }],
+        correctIndex: 3,
         tag: 'passive',
         correctRule: '【考點】受身形活用\n【解析】這棟建築物是30年前被蓋的。 \n【受身】對於建築物等客觀事物，無動作主時常使用受身形。「建てる」→「建てられる」。\n【延伸】相關詞/混淆項：建ちました、建てさせました、建されました'
     },
@@ -464,12 +411,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*參加* 考試。',
         level: 'N4',
         options: [
-            { text: '受{う}け', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
-            { text: '受{う}けます', reason: '正確！一段動詞。' },
+            { text: '受{う}かます', reason: '錯誤：五段誤用。' },
             { text: '受{う}けたい', reason: '錯誤：這是「想參加」，語意不符。' },
-            { text: '受{う}かます', reason: '錯誤：五段誤用。' }
-        ],
-        correctIndex: 1,
+            { text: '受{う}け', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
+            { text: '受{う}けます', reason: '正確！一段動詞。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】參加考試。 \n【語義】「受ける」(ukeru) 在此表示接受考試。\n【延伸】相關詞/混淆項：受かます、受け、受けたい'
     },
@@ -479,12 +425,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '最好 *接受* 手術。',
         level: 'N4',
         options: [
-            { text: '受{う}けて', reason: '錯誤：接續錯誤。' },
-            { text: '受{う}かった', reason: '錯誤：那是「考上」。' },
+            { text: '受{う}けた', reason: '正確！一段動詞過去式 + ほうがいい。' },
             { text: '受{う}ける', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
-            { text: '受{う}けた', reason: '正確！一段動詞過去式 + ほうがいい。' }
-        ],
-        correctIndex: 3,
+            { text: '受{う}けて', reason: '錯誤：接續錯誤。' },
+            { text: '受{う}かった', reason: '錯誤：那是「考上」。' }],
+        correctIndex: 0,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】最好接受手術。 \n【建議】「～たほうがいい」表示具體的建議。\n【延伸】相關詞/混淆項：受かった、受けて、受ける'
     },
@@ -495,12 +440,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*支撐* 家族。',
         level: 'N4',
         options: [
-            { text: '助{たす}けます', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '支{ささ}えています', reason: '正確！一段動詞進行中。' },
-            { text: '支{ささ}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
-            { text: '支{ささ}えます', reason: '錯誤：這是「未來/意志」，語意不符。' }
-        ],
-        correctIndex: 1,
+            { text: '助{たす}けます', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '支{ささ}えます', reason: '錯誤：這是「未來/意志」，語意不符。' },
+            { text: '支{ささ}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' }],
+        correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】支撐家族。 \n【語義】「支える」(sazaeru) 指在經濟或精神上支撐、扶養。\n【延伸】相關詞/混淆項：支え、支えます、助けます'
     },
@@ -510,12 +454,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '用柱子 *支撐* 屋頂。',
         level: 'N4',
         options: [
-            { text: '支{ささ}える', reason: '錯誤：這是「辭書」，語意不符。' },
             { text: '支{ささ}えられ', reason: '錯誤：受身。' },
-            { text: '支{ささ}えている', reason: '正確！表示物理狀態的持續。' },
-            { text: '持{も}っている', reason: '錯誤：手拿。' }
-        ],
-        correctIndex: 2,
+            { text: '持{も}っている', reason: '錯誤：手拿。' },
+            { text: '支{ささ}える', reason: '錯誤：這是「辭書」，語意不符。' },
+            { text: '支{ささ}えている', reason: '正確！表示物理狀態的持續。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】用柱子支撐屋頂。 \n【用法】物理上的承重、支撐。\n【延伸】相關詞/混淆項：支えられ、持っている、支える'
     },
@@ -526,12 +469,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '為地震做 *準備*。',
         level: 'N4',
         options: [
-            { text: '備{そな}えます', reason: '正確！一段動詞。' },
-            { text: '備{そな}わります', reason: '錯誤：自動詞(備有)。' },
             { text: '備{そな}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
-            { text: '準備{じゅんび}します', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '準備{じゅんび}します', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '備{そな}わります', reason: '錯誤：自動詞(備有)。' },
+            { text: '備{そな}えます', reason: '正確！一段動詞。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】為地震做準備。 \n【語感】「備える」通常指為了應對不可預期的災害、事故而預先準備。\n【延伸】相關詞/混淆項：準備します、備え、備わります'
     },
@@ -541,12 +483,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '為了 *應對* 冬天而做準備。',
         level: 'N4',
         options: [
+            { text: '備{そな}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '備{そな}えられ', reason: '錯誤：受身。' },
-            { text: '備{そな}えて', reason: '正確！TE形表示目的性的準備。' },
             { text: '向{む}けて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '備{そな}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' }
-        ],
-        correctIndex: 1,
+            { text: '備{そな}えて', reason: '正確！TE形表示目的性的準備。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】為了應對冬天而做準備。 \n【活用】一段動詞「備える」去掉「る」加「て」。\n【延伸】相關詞/混淆項：備え、向けて、備えられ'
     },
@@ -557,12 +498,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '向法院 *控告*。',
         level: 'N4',
         options: [
+            { text: '訴{うった}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '訴{うった}えます', reason: '正確！一段動詞。' },
-            { text: '頼{たの}みます', reason: '錯誤：拜託。' },
             { text: '言{い}います', reason: '錯誤：說話層級太低。' },
-            { text: '訴{うった}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' }
-        ],
-        correctIndex: 0,
+            { text: '頼{たの}みます', reason: '錯誤：拜託。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】向法院控告。 \n【語義】「訴える」可以指法律上的控訴。\n【延伸】相關詞/混淆項：言います、頼みます、訴え'
     },
@@ -572,12 +512,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*申訴* 腹痛。',
         level: 'N4',
         options: [
-            { text: '訴{うった}えている', reason: '正確！表示持續向他人表達不適。' },
             { text: '訴{うった}える', reason: '錯誤：這是「一般動詞」，語意不符。' },
+            { text: '痛{いた}い', reason: '錯誤：形容詞。' },
             { text: '叫{さけ}んでいる', reason: '錯誤：大叫。' },
-            { text: '痛{いた}い', reason: '錯誤：形容詞。' }
-        ],
-        correctIndex: 0,
+            { text: '訴{うった}えている', reason: '正確！表示持續向他人表達不適。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】申訴腹痛。 \n【語義】「訴える」也可用於向醫生或他人表達痛苦、不適。\n【延伸】相關詞/混淆項：訴える、叫んでいる、痛い'
     },
@@ -588,11 +527,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*跨越* 山。',
         level: 'N4',
         options: [
-            { text: '通{とお}ります', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '越{こ}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '越{こ}えます', reason: '正確！一段動詞。' },
             { text: '超{こ}えます', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '越{こ}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' }
-        ],
+            { text: '通{とお}ります', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】跨越山。 \n【語法】跨越障礙物、邊界用「越える」。\n【延伸】相關詞/混淆項：越え、超えます、通ります'
@@ -604,11 +542,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '越{こ}した', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '渡{わた}った', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '越{こ}えた', reason: '正確！一段動詞過去式。' },
-            { text: '超{こ}えた', reason: '錯誤：國境是空間界線，用越。' }
-        ],
-        correctIndex: 2,
+            { text: '渡{わた}った', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '超{こ}えた', reason: '錯誤：國境是空間界線，用越。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】跨越國境。 \n【活用】一段動詞語尾變換。\n【延伸】相關詞/混淆項：越した、超えた、渡った'
     },
@@ -619,11 +556,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*搬* 到東京。',
         level: 'N4',
         options: [
-            { text: '越{こ}し', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '越{こ}した', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '越{こ}そう', reason: '錯誤：這是意向形，語意不符。' },
             { text: '越{こ}す', reason: '正確！「引っ越す」是五段複合動詞。' },
-            { text: '越{こ}そう', reason: '錯誤：這是意向形，語意不符。' }
-        ],
+            { text: '越{こ}し', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' }],
         correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】搬到東京。 \n【複合動詞】「引っ越す」(hikkosu) 是 N4 必考單字。\n【延伸】相關詞/混淆項：越し、越した、越そう'
@@ -634,12 +570,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*度過* 冬天。',
         level: 'N4',
         options: [
-            { text: '過{す}ごします', reason: '錯誤：這是「普通的過生活」，語意不符。' },
-            { text: '越{こ}して', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '越{こ}えます', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '越{こ}します', reason: '正確！五段動詞。' },
-            { text: '越{こ}えます', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '過{す}ごします', reason: '錯誤：這是「普通的過生活」，語意不符。' },
+            { text: '越{こ}して', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】度過冬天。 \n【語義】「年を越す」(過年)、「冬を越す」(過冬) 常使用五段「越す」。\n【延伸】相關詞/混淆項：過ごします、越して、越えます'
     },
@@ -650,12 +585,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '工作 *結束/解決* 了。',
         level: 'N4',
         options: [
+            { text: '済{す}ませました', reason: '錯誤：那是他動詞(人把事辦完)。' },
             { text: '解決{かいけつ}しました', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '済{す}みました', reason: '正確！五段自動詞。表示事情辦完了、解決了。' },
             { text: '終{お}わりました', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '済{す}ませました', reason: '錯誤：那是他動詞(人把事辦完)。' }
-        ],
-        correctIndex: 1,
+            { text: '済{す}みました', reason: '正確！五段自動詞。表示事情辦完了、解決了。' }],
+        correctIndex: 3,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】工作結束了。 \n【自他動詞】「済む」(自) vs 「済ませる」(他)。\n【延伸】相關詞/混淆項：解決しました、済ませました、終わりました'
     },
@@ -665,12 +599,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '只要道歉就 *能了事*。',
         level: 'N4',
         options: [
-            { text: '済{す}み', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
+            { text: '解決{かいけつ}する', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '済{す}ませ', reason: '錯誤：使役誤用。' },
-            { text: '済{す}む', reason: '正確！表示事情以此方式完結。' },
-            { text: '解決{かいけつ}する', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '済{す}み', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
+            { text: '済{す}む', reason: '正確！表示事情以此方式完結。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】只要道歉就能了事。 \n【語義】在此表示事情可以用某種代價或動作來完結。\n【延伸】相關詞/混淆項：済ませ、済み、解決する'
     },
@@ -681,12 +614,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請快點把作業 *做完*。',
         level: 'N4',
         options: [
+            { text: '済{す}んで', reason: '錯誤：自動詞，不接ください。' },
             { text: '済{す}ませて', reason: '正確！一段他動詞。' },
             { text: '済{す}まし', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
-            { text: '終{お}わって', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '済{す}んで', reason: '錯誤：自動詞，不接ください。' }
-        ],
-        correctIndex: 0,
+            { text: '終{お}わって', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請快點把作業做完。 \n【活用】他動詞「済ませる」(一段) 變為 te 形。\n【延伸】相關詞/混淆項：終わって、済んで、済まし'
     },
@@ -696,12 +628,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '早餐用麵包 *解決*。',
         level: 'N4',
         options: [
-            { text: '済{す}んだ', reason: '錯誤：早餐自己解決？不合邏輯。' },
-            { text: '食{た}べた', reason: '錯誤：這是「普通的吃」，語意不符。' },
             { text: '済{す}ませ', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
-            { text: '済{す}ませた', reason: '正確！表示用簡單的方式處理。' }
-        ],
-        correctIndex: 3,
+            { text: '済{す}んだ', reason: '錯誤：早餐自己解決？不合邏輯。' },
+            { text: '済{す}ませた', reason: '正確！表示用簡單的方式處理。' },
+            { text: '食{た}べた', reason: '錯誤：這是「普通的吃」，語意不符。' }],
+        correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】早餐用麵包解決。 \n【用法】「～で済ませる」表示在資源或內容有限的情況下草草了事。\n【延伸】相關詞/混淆項：食べた、済んだ、済ませ'
     },
@@ -712,12 +643,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '時鐘的指針 *指向* 12點。',
         level: 'N4',
         options: [
-            { text: '指{さ}しています', reason: '正確！五段動詞指向中。' },
             { text: '指{さ}します', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '指{さ}しています', reason: '正確！五段動詞指向中。' },
             { text: '刺{さ}しています', reason: '錯誤：那是刺入。' },
-            { text: '向{む}いています', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '向{む}いています', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】時鐘的指針指向12點。 \n【語義】「指す」(sasu) 指向、指示。\n【延伸】相關詞/混淆項：指します、向いています、刺しています'
     },
@@ -727,12 +657,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '正在 *指* 著北方。',
         level: 'N4',
         options: [
-            { text: '向{む}いて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '指{さ}した', reason: '錯誤：時態。' },
             { text: '指{さ}し', reason: '錯誤：接續錯誤。' },
-            { text: '指{さ}して', reason: '正確！五段動詞促音便。' }
-        ],
-        correctIndex: 3,
+            { text: '指{さ}して', reason: '正確！五段動詞促音便。' },
+            { text: '向{む}いて', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】正在指著北方。 \n【音便】五段動詞結尾「す」發生促音便應為「して」(與「書く」不同，不要混淆為「さいて」)。備註：其實「指す」是五段s-verb，變法是「した」。\n【延伸】相關詞/混淆項：指した、指し、向いて'
     },
@@ -743,11 +672,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '人口 *增加* 了。',
         level: 'N4',
         options: [
-            { text: '増{ふ}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
             { text: '増{ふ}やしました', reason: '錯誤：那是人為增加(他動詞)。' },
             { text: '多{おお}くなりました', reason: '錯誤：這是「狀態改變」，語意不符。' },
-            { text: '増{ふ}えました', reason: '正確！一段自動詞。' }
-        ],
+            { text: '増{ふ}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
+            { text: '増{ふ}えました', reason: '正確！一段自動詞。' }],
         correctIndex: 3,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】人口增加了。 \n【自他動詞】「増える」(自) vs 「増やす」(他)。人口自然成長用自動詞。\n【延伸】相關詞/混淆項：増やしました、増え、多くなりました'
@@ -760,9 +688,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '増{ふ}えて', reason: '正確！一段動詞 te 形。' },
             { text: '増{ふ}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
-            { text: '増{ふ}やして', reason: '錯誤：那是去增加(他動詞)。' },
-            { text: '多{おお}くなって', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '多{おお}くなって', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '増{ふ}やして', reason: '錯誤：那是去增加(他動詞)。' }],
         correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】儲蓄正在增加。 \n【活用】一段動詞語尾變換。\n【延伸】相關詞/混淆項：増やして、多くなって、増え'
@@ -778,8 +705,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '集{あつ}まります', reason: '錯誤：那是自動詞(人聚集)。' },
             { text: '集{あつ}めて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '集{あつ}め', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
-            { text: '集{あつ}めます', reason: '正確！一段他動詞。' }
-        ],
+            { text: '集{あつ}めます', reason: '正確！一段他動詞。' }],
         correctIndex: 3,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】收集郵票。 \n【自他動詞】「集める」(他動) vs 「集まる」(自動)。\n【延伸】相關詞/混淆項：集めて、集め、集まります'
@@ -790,12 +716,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *收集* 垃圾。',
         level: 'N4',
         options: [
+            { text: '集{あつ}めて', reason: '正確！一段語尾去「る」加「て」。' },
             { text: '拾{ひろ}って', reason: '錯誤：這是「撿起來」，語意不符。' },
             { text: '集{あつ}まって', reason: '錯誤：自動詞，不合邏輯。' },
-            { text: '捨{す}てて', reason: '錯誤：那是丟掉。' },
-            { text: '集{あつ}めて', reason: '正確！一段語尾去「る」加「て」。' }
-        ],
-        correctIndex: 3,
+            { text: '捨{す}てて', reason: '錯誤：那是丟掉。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請收集垃圾。 \n【活用】一段動詞變位不音便。\n【延伸】相關詞/混淆項：拾って、捨てて、集まって'
     },
@@ -806,11 +731,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '人 *聚集* 了起來。',
         level: 'N4',
         options: [
-            { text: '集{あつ}ま', reason: '錯誤：變化錯誤。' },
-            { text: '集{あつ}まりました', reason: '正確！五段自動詞。' },
             { text: '集{あつ}まって', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '集{あつ}めました', reason: '錯誤：這是人為收集(他動詞)。' }
-        ],
+            { text: '集{あつ}まりました', reason: '正確！五段自動詞。' },
+            { text: '集{あつ}めました', reason: '錯誤：這是人為收集(他動詞)。' },
+            { text: '集{あつ}ま', reason: '錯誤：變化錯誤。' }],
         correctIndex: 1,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】人聚集了起來。 \n【自他動詞】「集まる」(人自然聚集) vs 「集める」(人去收集東西)。\n【延伸】相關詞/混淆項：集めました、集まって、集ま'
@@ -821,11 +745,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請在3點 *集合* 於車站。',
         level: 'N4',
         options: [
-            { text: '集{あつ}めて', reason: '錯誤：那是收集。' },
-            { text: '集{あつ}まって', reason: '正確！五段促音便。' },
             { text: '集{あつ}り', reason: '錯誤：變化錯誤。' },
-            { text: '来{き}て', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '集{あつ}まって', reason: '正確！五段促音便。' },
+            { text: '来{き}て', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '集{あつ}めて', reason: '錯誤：那是收集。' }],
         correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請在3點集合於車站。 \n【音便】五段動詞結尾「る」變為「って」。\n【延伸】相關詞/混淆項：集り、集めて、来て'
@@ -837,12 +760,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '把玩具 *弄壞*。',
         level: 'N4',
         options: [
-            { text: '壊{こわ}さないで', reason: '錯誤：這是「請不要弄壞」，語意不符。' },
             { text: '壊{こわ}します', reason: '正確！五段他動詞。' },
+            { text: '壊{こわ}さないで', reason: '錯誤：這是「請不要弄壞」，語意不符。' },
             { text: '壊{こわ}し', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '壊{こわ}れます', reason: '錯誤：這是物品壞了(自動詞)。' }
-        ],
-        correctIndex: 1,
+            { text: '壊{こわ}れます', reason: '錯誤：這是物品壞了(自動詞)。' }],
+        correctIndex: 0,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】把玩具弄壞。 \n【自他動詞】「壊す」(他動) vs 「壊れる」(自動)。\n【延伸】相關詞/混淆項：壊れます、壊さないで、壊し'
     },
@@ -852,12 +774,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請不要 *搞壞* 身體。',
         level: 'N4',
         options: [
-            { text: '休{やす}め', reason: '錯誤：休息。' },
-            { text: '壊{こわ}し', reason: '錯誤：接續錯誤。' },
             { text: '壊{こわ}さ', reason: '正確！五段未然形。' },
-            { text: '壊{こわ}れ', reason: '錯誤：自動詞。' }
-        ],
-        correctIndex: 2,
+            { text: '壊{こわ}し', reason: '錯誤：接續錯誤。' },
+            { text: '休{やす}め', reason: '錯誤：休息。' },
+            { text: '壊{こわ}れ', reason: '錯誤：自動詞。' }],
+        correctIndex: 0,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】請不要搞壞身體。 \n【用法】「体を壊す」是搞壞健康的固定說法。\n【延伸】相關詞/混淆項：壊し、休め、壊れ'
     },
@@ -869,11 +790,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '直{なお}りました', reason: '錯誤：修好了。' },
-            { text: '壊{こわ}れました', reason: '正確！一段自動詞。' },
             { text: '壊{こわ}しました', reason: '錯誤：是他動詞(人弄壞電視)。' },
-            { text: '壊{こわ}れ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '壊{こわ}れました', reason: '正確！一段自動詞。' },
+            { text: '壊{こわ}れ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】電視壞了。 \n【自他動詞】「壊れる」表示物品發生故障或損壞。\n【延伸】相關詞/混淆項：壊れ、直りました、壊しました'
     },
@@ -883,11 +803,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '容易 *壞* 的相機。',
         level: 'N4',
         options: [
-            { text: '壊{こわ}れな', reason: '錯誤：變化錯誤。' },
-            { text: '壊{こわ}れ', reason: '正確！一段連用形接「やすい」。' },
             { text: '壊{こわ}し', reason: '錯誤：那是容易弄壞(人為)。' },
-            { text: '壊{こわ}れた', reason: '錯誤：修飾形態不接辭。' }
-        ],
+            { text: '壊{こわ}れ', reason: '正確！一段連用形接「やすい」。' },
+            { text: '壊{こわ}れた', reason: '錯誤：修飾形態不接辭。' },
+            { text: '壊{こわ}れな', reason: '錯誤：變化錯誤。' }],
         correctIndex: 1,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】容易壞的相機。 \n【活用】動詞連用形 + やすい。\n【延伸】相關詞/混淆項：壊れな、壊れた、壊し'
@@ -899,12 +818,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *關* 燈。',
         level: 'N4',
         options: [
+            { text: '消{き}えて', reason: '錯誤：那是燈自己熄滅。' },
             { text: '消{け}して', reason: '正確！五段動詞促音便變為「して」。' },
             { text: '消{け}し', reason: '錯誤：接續。' },
-            { text: '消{き}えて', reason: '錯誤：那是燈自己熄滅。' },
-            { text: '付{つ}けて', reason: '錯誤：那是開燈。' }
-        ],
-        correctIndex: 0,
+            { text: '付{つ}けて', reason: '錯誤：那是開燈。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請關燈。 \n【音便】五段動詞結尾「す」變為「して」。\n【延伸】相關詞/混淆項：付けて、消し、消えて'
     },
@@ -914,12 +832,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*擦掉* 用鉛筆寫的地方。',
         level: 'N4',
         options: [
-            { text: '消{き}えます', reason: '錯誤：自動詞。' },
-            { text: '消{け}した', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '直{なお}します', reason: '錯誤：改正。' },
-            { text: '消{け}します', reason: '正確！五段他動詞。表示消除、抹除。' }
-        ],
-        correctIndex: 3,
+            { text: '消{き}えます', reason: '錯誤：自動詞。' },
+            { text: '消{け}します', reason: '正確！五段他動詞。表示消除、抹除。' },
+            { text: '消{け}した', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】擦掉用鉛筆寫的地方。 \n【語義】「消す」可用於關掉電源、消除氣味、擦掉文字。\n【延伸】相關詞/混淆項：消した、消えます、直します'
     },
@@ -931,11 +848,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '消{け}しました', reason: '錯誤：人去關掉/熄滅(他動詞)。' },
-            { text: '付{つ}きました', reason: '錯誤：點燃了。' },
             { text: '消{き}えました', reason: '正確！一段自動詞。' },
-            { text: '消{き}え', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '付{つ}きました', reason: '錯誤：點燃了。' },
+            { text: '消{き}え', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】火熄滅了。 \n【自他動詞】「消える」(自) vs 「消す」(他)。\n【延伸】相關詞/混淆項：消しました、消え、付きました'
     },
@@ -946,11 +862,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '隱{かく}れた', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '消{き}えて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '消{け}した', reason: '錯誤：主動消滅。' },
-            { text: '消{き}えた', reason: '正確！一段過去式。' },
-            { text: '消{き}えて', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '消{き}えた', reason: '正確！一段過去式。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】身影在波浪中消失。 \n【活用】一段動詞變位。\n【延伸】相關詞/混淆項：隱れた、消えて、消した'
     },
@@ -961,11 +876,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '由自己 *決定*。',
         level: 'N4',
         options: [
+            { text: '決{き}め', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '決{き}まります', reason: '錯誤：那是被決定(自動詞)。' },
-            { text: '選{えら}びます', reason: '錯誤：這是「選擇」，語意不符。' },
             { text: '決{き}めます', reason: '正確！一段他動詞。' },
-            { text: '決{き}め', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '選{えら}びます', reason: '錯誤：這是「選擇」，語意不符。' }],
         correctIndex: 2,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】由自己決定。 \n【自他動詞】「決める」(他動，人進行決定) vs 「決まる」(自動，事情被定下來)。\n【延伸】相關詞/混淆項：選びます、決まります、決め'
@@ -977,10 +891,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '決{き}め', reason: '正確！一段受身修飾，意指規定的。' },
-            { text: '決{き}ま', reason: '錯誤：自動詞受身形態。' },
             { text: '決{き}めた', reason: '錯誤：這是「自己定的」，語意不符。' },
-            { text: '決{き}める', reason: '錯誤：接續。' }
-        ],
+            { text: '決{き}める', reason: '錯誤：接續。' },
+            { text: '決{き}ま', reason: '錯誤：自動詞受身形態。' }],
         correctIndex: 0,
         tag: 'passive',
         correctRule: '【考點】受身形活用\n【解析】遵守規定的時間。 \n【活用】「決められる」表示被動或被賦予的規則。\n【延伸】相關詞/混淆項：決めた、決ま、決める'
@@ -992,12 +905,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '出差日期 *定下來* 了。',
         level: 'N4',
         options: [
-            { text: '定{さだ}まりました', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '決{き}まって', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '決{き}まりました', reason: '正確！五段自動詞。' },
-            { text: '決{き}めました', reason: '錯誤：人去決定日期(他動詞)。' }
-        ],
-        correctIndex: 2,
+            { text: '定{さだ}まりました', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '決{き}めました', reason: '錯誤：人去決定日期(他動詞)。' }],
+        correctIndex: 1,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】出差日期定下來了。 \n【語義】「決まる」側重於事情進展到有了定論。\n【延伸】相關詞/混淆項：決めました、決まって、定まりました'
     },
@@ -1007,12 +919,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*規定* 好的事情。',
         level: 'N4',
         options: [
-            { text: '決{き}まる', reason: '錯誤：接續。' },
-            { text: '決{き}め', reason: '錯誤：那是正在規定。' },
             { text: '決{き}まって', reason: '正確！自動詞狀態持續。' },
-            { text: '決{き}まり', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' }
-        ],
-        correctIndex: 2,
+            { text: '決{き}まる', reason: '錯誤：接續。' },
+            { text: '決{き}まり', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
+            { text: '決{き}め', reason: '錯誤：那是正在規定。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】規定好的事情。 \n【活用】五段動詞「決まる」促音便。\n【延伸】相關詞/混淆項：決まり、決め、決まる'
     },
@@ -1023,12 +934,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*送達* 行李。',
         level: 'N4',
         options: [
-            { text: '届{とど}けます', reason: '正確！一段他動詞。' },
-            { text: '送{おく}ります', reason: '錯誤：這是「寄送」，語意不符。' },
             { text: '届{とど}きます', reason: '錯誤：那是行李抵達(自動詞)。' },
-            { text: '届{とど}け', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '送{おく}ります', reason: '錯誤：這是「寄送」，語意不符。' },
+            { text: '届{とど}けます', reason: '正確！一段他動詞。' },
+            { text: '届{とど}け', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】送達行李。 \n【自他動詞】「届ける」(人去送) vs 「届く」(物品抵達)。\n【延伸】相關詞/混淆項：届け、届きます、送ります'
     },
@@ -1041,8 +951,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '届{とど}けて', reason: '正確！向官署申報也使用「届ける」。' },
             { text: '届{とど}いて', reason: '錯誤：自動詞，不接ください。' },
             { text: '渡{わた}して', reason: '錯誤：這是「轉交」，語意不符。' },
-            { text: '知{し}らせて', reason: '錯誤：這是「通知」，語意不符。' }
-        ],
+            { text: '知{し}らせて', reason: '錯誤：這是「通知」，語意不符。' }],
         correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請向警察申報。 \n【語義】「届ける」除了送貨，也包含正式的事項申報。\n【延伸】相關詞/混淆項：知らせて、渡して、届いて'
@@ -1055,11 +964,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '付{つ}きます', reason: '錯誤：那是燈自己亮了(自動詞)。' },
-            { text: '消{け}します', reason: '錯誤：那是不關。' },
             { text: '付{つ}けます', reason: '正確！一段他動詞。' },
-            { text: '付{つ}け', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '付{つ}け', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '消{け}します', reason: '錯誤：那是不關。' }],
+        correctIndex: 1,
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】打開電視。 \n【自他動詞】「付ける」(他動，開燈/電視) vs 「付く」(自動，燈亮著)。\n【延伸】相關詞/混淆項：付きます、付け、消します'
     },
@@ -1072,8 +980,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '付{つ}けて', reason: '正確！習慣性動作也可以用狀態持續。' },
             { text: '付{つ}き', reason: '錯誤：接續。' },
             { text: '付{つ}か', reason: '錯誤：變化。' },
-            { text: '書{か}いて', reason: '錯誤：這是「寫日記」，語意不符。' }
-        ],
+            { text: '書{か}いて', reason: '錯誤：這是「寫日記」，語意不符。' }],
         correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】這附近正在建造新大樓。 \n【狀態】「建てている」表示建築工程正在進行中的持續狀態。\n【延伸】相關詞/混淆項：付き、付か、書いて'
@@ -1088,11 +995,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '捕{つか}まりました', reason: '錯誤：這是自動詞(被抓)。' },
-            { text: '捕{つか}まえ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '捕{つか}まえました', reason: '正確！二類(一段)他動詞。' },
-            { text: '押{お}さえました', reason: '錯誤：這是「壓制」，語意不符。' }
-        ],
-        correctIndex: 2,
+            { text: '捕{つか}まえ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '押{お}さえました', reason: '錯誤：這是「壓制」，語意不符。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】警察抓到了小偷。 \n【自他動詞】「捕まえる」(他動詞，捉人) vs 「捕まる」(自動詞，被捕/被捉)。\n【延伸】相關詞/混淆項：捕まりました、押さえました、捕まえ'
     },
@@ -1102,12 +1008,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '犯人被 *落網/被捕* 了。',
         level: 'N4',
         options: [
-            { text: '捕{つか}まえ', reason: '錯誤：他動詞。' },
-            { text: '逮捕{たいほ}され', reason: '錯誤：這是「被逮捕」，語意不符。' },
             { text: '逃{に}げ', reason: '錯誤：逃跑。' },
-            { text: '捕{つか}まり', reason: '正確！五段自動詞ます形。' }
-        ],
-        correctIndex: 3,
+            { text: '逮捕{たいほ}され', reason: '錯誤：這是「被逮捕」，語意不符。' },
+            { text: '捕{つか}まり', reason: '正確！五段自動詞ます形。' },
+            { text: '捕{つか}まえ', reason: '錯誤：他動詞。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】犯人落網了。 \n【活用】「捕まる」(tsukamaru) 是五段自動詞，表示主體被抓住。\n【延伸】相關詞/混淆項：捕まえ、逮捕され、逃げ'
     },
@@ -1118,12 +1023,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '這台機器 *不動/沒在運作*。',
         level: 'N4',
         options: [
+            { text: '動{うご}き', reason: '正確！五段動詞變位。' },
             { text: '動{うご}け', reason: '錯誤：命令/可能。' },
             { text: '動{うご}い', reason: '錯誤：那是音便形態。' },
-            { text: '動{うご}き', reason: '正確！五段動詞變位。' },
-            { text: '動{うご}か', reason: '錯誤：那是他動詞或未然形。' }
-        ],
-        correctIndex: 2,
+            { text: '動{うご}か', reason: '錯誤：那是他動詞或未然形。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】這台機器沒在運作。 \n【自他動詞】「動く」(自動詞，物體自動/沒法動) vs 「動かす」(他動詞，人去搬動某物)。\n【延伸】相關詞/混淆項：動け、動か、動い'
     },
@@ -1134,11 +1038,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '動{うご}き', reason: '錯誤：接續。' },
+            { text: '走{はし}ら', reason: '錯誤：那是跑。' },
             { text: '動{うご}い', reason: '錯誤：音便。' },
-            { text: '動{うご}か', reason: '正確！五段未然形接「ずに」。' },
-            { text: '走{はし}ら', reason: '錯誤：那是跑。' }
-        ],
-        correctIndex: 2,
+            { text: '動{うご}か', reason: '正確！五段未然形接「ずに」。' }],
+        correctIndex: 3,
         tag: 'negative',
         correctRule: '【考點】文法與語義\n【解析】請安靜地不動並等待。 \n【活用】五段動詞未然形（動か）＋ずに（＝ないで），表示在不進行某動作的狀態下做後項。\n【延伸】相關詞/混淆項：走ら、動い、動き'
     },
@@ -1152,8 +1055,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '書{か}き', reason: '錯誤：這是「寫」，語意不符。' },
             { text: '打{う}ちます', reason: '正確！五段動詞。' },
             { text: '打{う}って', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
-            { text: '打{う}た', reason: '錯誤：否定。' }
-        ],
+            { text: '打{う}た', reason: '錯誤：否定。' }],
         correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】用電腦打文章。 \n【詞彙】「打つ」(utsu) 除了敲打，常用於「打字、發電報」。\n【延伸】相關詞/混淆項：書き、打た、打って'
@@ -1164,12 +1066,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請在牆上 *釘* 釘子。',
         level: 'N4',
         options: [
-            { text: '打{う}ち', reason: '錯誤：接續。' },
             { text: '打{う}た', reason: '錯誤：否定。' },
-            { text: '刺{さ}して', reason: '錯誤：語義不同(刺穿)。' },
-            { text: '打{う}って', reason: '正確！五段促音便「つ」變「って」。' }
-        ],
-        correctIndex: 3,
+            { text: '打{う}ち', reason: '錯誤：接續。' },
+            { text: '打{う}って', reason: '正確！五段促音便「つ」變「って」。' },
+            { text: '刺{さ}して', reason: '錯誤：語義不同(刺穿)。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請在牆上釘釘子。 \n【活用】「打つ」是五段動詞，變為て形發生促音便變為「打って」。\n【延伸】相關詞/混淆項：打ち、打た、刺して'
     },
@@ -1182,10 +1083,9 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '写{うつ}し', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '写{うつ}し', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
-            { text: '写{うつ}わ', reason: '錯誤：變位。' },
-            { text: '写{うつ}します', reason: '正確！五段動詞ます形。' }
-        ],
-        correctIndex: 3,
+            { text: '写{うつ}します', reason: '正確！五段動詞ます形。' },
+            { text: '写{うつ}わ', reason: '錯誤：變位。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】把黑板的字抄到筆記本上。 \n【語義】「写す」(utsusu) 表示把原有的文字、圖畫或景象複製到別處。\n【延伸】相關詞/混淆項：写し、写し、写わ'
     },
@@ -1195,11 +1095,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '把美麗的風景 *拍* 入照片中。',
         level: 'N4',
         options: [
-            { text: '撮{と}りました', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '写{うつ}さ', reason: '錯誤：否定。' },
             { text: '映{うつ}しました', reason: '錯誤：漢字用法不同(映照)。' },
             { text: '写{うつ}しました', reason: '正確！五段動詞。' },
-            { text: '写{うつ}さ', reason: '錯誤：否定。' }
-        ],
+            { text: '撮{と}りました', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】把美麗風景拍進照片裡。 \n【漢字辨析】「写す」強調複製影像或景象，「映す」則強調映射或投射。\n【延伸】相關詞/混淆項：撮りました、映しました、写さ'
@@ -1214,8 +1113,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '歌{うた}い', reason: '錯誤：連用形。' },
             { text: '歌{うた}って', reason: '錯誤：這是「進行中」，語意不符。' },
             { text: '歌{うた}う', reason: '正確！辭書形修飾名詞句。' },
-            { text: '歌{うた}わ', reason: '錯誤：變位。' }
-        ],
+            { text: '歌{うた}わ', reason: '錯誤：變位。' }],
         correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】她很擅長唱歌。 \n【活用】「歌う」是五段動詞，此處用辭書形修飾後面的名詞結構。\n【延伸】相關詞/混淆項：歌い、歌って、歌わ'
@@ -1228,10 +1126,9 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '歌{うた}を', reason: '錯誤：語法錯誤。' },
             { text: '歌{うた}わ', reason: '錯誤：否定。' },
-            { text: '歌{うた}っ', reason: '錯誤：促音變形態。' },
-            { text: '歌{うた}い', reason: '正確！五段ます形省略ます。' }
-        ],
-        correctIndex: 3,
+            { text: '歌{うた}い', reason: '正確！五段ます形省略ます。' },
+            { text: '歌{うた}っ', reason: '錯誤：促音變形態。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】大家一起唱吧。 \n【活用】五段動詞結尾為「う、つ、る」的動詞，ます形連用形為「い、ち、り」。\n【延伸】相關詞/混淆項：歌っ、歌を、歌わ'
     },
@@ -1242,12 +1139,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '鏡子裡 *倒映* 著自己的身影。',
         level: 'N4',
         options: [
-            { text: '見{み}えて', reason: '錯誤：這是「看得見」，語意不符。' },
-            { text: '映{うつ}って', reason: '正確！五段促音便。表示受事後的狀態。' },
+            { text: '写{うつ}って', reason: '錯誤：漢字用法不同(表示抄寫)。' },
             { text: '映{うつ}り', reason: '錯誤：接續。' },
-            { text: '写{うつ}って', reason: '錯誤：漢字用法不同(表示抄寫)。' }
-        ],
-        correctIndex: 1,
+            { text: '見{み}えて', reason: '錯誤：這是「看得見」，語意不符。' },
+            { text: '映{うつ}って', reason: '正確！五段促音便。表示受事後的狀態。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】鏡子裡映著自己的身影。 \n【漢字】「映る」是指光線照射物體後，影像顯現在鏡子、水面或螢幕上。\n【延伸】相關詞/混淆項：写って、見えて、映り'
     },
@@ -1257,12 +1153,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '這台電視的顯色非常漂亮地 *映出/播放*。',
         level: 'N4',
         options: [
-            { text: '見{み}せ', reason: '錯誤：那是給人看。' },
             { text: '映{うつ}って', reason: '錯誤：這是「狀態」，語意不符。' },
             { text: '映{うつ}り', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
-            { text: '映{うつ}ります', reason: '正確！五段動詞。' }
-        ],
-        correctIndex: 3,
+            { text: '映{うつ}ります', reason: '正確！五段動詞。' },
+            { text: '見{み}せ', reason: '錯誤：那是給人看。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】這台電視顏色顯現得很漂亮。 \n【語義】「映る」也常用於描述電視或投影畫面的顯像品質。\n【延伸】相關詞/混淆項：見せ、映り、映って'
     },
@@ -1273,12 +1168,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *選擇* 喜歡的飲料。',
         level: 'N4',
         options: [
-            { text: '選{えら}べ', reason: '錯誤：命令。' },
             { text: '選{えら}んで', reason: '正確！五段撥音便「ぶ」變「んで」。' },
-            { text: '選{えら}ら', reason: '錯誤：變化錯誤。' },
-            { text: '選{えら}び', reason: '錯誤：接續不符。' }
-        ],
-        correctIndex: 1,
+            { text: '選{えら}び', reason: '錯誤：接續不符。' },
+            { text: '選{えら}べ', reason: '錯誤：命令。' },
+            { text: '選{えら}ら', reason: '錯誤：變化錯誤。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請選擇喜歡的飲料。 \n【音便】五段動詞字尾為「ぬ、ぶ、む」時，變て形發生撥音便 (んで)。「選ぶ」→「選んで」。\n【延伸】相關詞/混淆項：選び、選べ、選ら'
     },
@@ -1288,12 +1182,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '他 *選擇* 了最難的一條路。',
         level: 'N4',
         options: [
-            { text: '選{えら}んだ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '選{えら}びました', reason: '正確！五段過去式。' },
             { text: '選{えら}び', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '選{えら}ば', reason: '錯誤：否定。' }
-        ],
-        correctIndex: 1,
+            { text: '選{えら}んだ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '選{えら}ば', reason: '錯誤：否定。' },
+            { text: '選{えら}びました', reason: '正確！五段過去式。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】他選擇了最難的一條路。 \n【活用】五段動詞變位規則。\n【延伸】相關詞/混淆項：選び、選んだ、選ば'
     },
@@ -1304,12 +1197,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '行李 *放置* 在這裡也可以嗎？',
         level: 'N4',
         options: [
-            { text: '置{お}き', reason: '錯誤：接續不符。' },
             { text: '置{お}いて', reason: '正確！五段イ音便「く」變「いて」。' },
-            { text: '置{お}か', reason: '錯誤：否定。' },
-            { text: '置{お}け', reason: '錯誤：命令/可能。' }
-        ],
-        correctIndex: 1,
+            { text: '置{お}き', reason: '錯誤：接續不符。' },
+            { text: '置{お}け', reason: '錯誤：命令/可能。' },
+            { text: '置{お}か', reason: '錯誤：否定。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】行李放在這裡也可以嗎？ \n【音便】五段動詞字尾為「く」時，變て形發生イ音便 (いて)。「置く」→「置いて」。\n【延伸】相關詞/混淆項：置き、置け、置か'
     },
@@ -1319,12 +1211,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '字典 *放著/置於* 在桌子上。',
         level: 'N4',
         options: [
-            { text: '置{お}いて', reason: '正確！「～てある」表示人為意圖後的狀態。' },
-            { text: '置{お}き', reason: '錯誤：接續。' },
             { text: '置{お}か', reason: '錯誤：否定。' },
-            { text: '置{お}い', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '置{お}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '置{お}いて', reason: '正確！「～てある」表示人為意圖後的狀態。' },
+            { text: '置{お}き', reason: '錯誤：接續。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】字典放在桌子上。 \n【語法】「他動詞て形＋ある」用來描述某人為了某種目的，完成某個動作後所留下的狀態。\n【延伸】相關詞/混淆項：置き、置か、置い'
     },
@@ -1335,12 +1226,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*寄送* 禮物給鄉下的父母。',
         level: 'N4',
         options: [
-            { text: '送{おく}ります', reason: '正確！五段動詞連用形。' },
-            { text: '贈{おく}ります', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '送{おく}って', reason: '錯誤：這是「音和義通用」，語意不符。' },
             { text: '送{おく}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '送{おく}って', reason: '錯誤：這是「音和義通用」，語意不符。' }
-        ],
-        correctIndex: 0,
+            { text: '贈{おく}ります', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '送{おく}ります', reason: '正確！五段動詞連用形。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】寄禮物給鄉下的父母。 \n【活用】「送る」是五段動詞，ます形連用形後接「ます」。\n【延伸】相關詞/混淆項：送り、送って、贈ります'
     },
@@ -1350,12 +1240,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*護送/送行* 朋友去車站。',
         level: 'N4',
         options: [
-            { text: '送{おく}って', reason: '錯誤：接續不符。' },
-            { text: '連{つ}れて', reason: '錯誤：這是「帶領」，語意不符。' },
+            { text: '送{おく}り', reason: '正確！表示陪伴、護送。' },
             { text: '見送{みおく}り', reason: '錯誤：這是「目送/送行」，語意不符。' },
-            { text: '送{おく}り', reason: '正確！表示陪伴、護送。' }
-        ],
-        correctIndex: 3,
+            { text: '送{おく}って', reason: '錯誤：接續不符。' },
+            { text: '連{つ}れて', reason: '錯誤：這是「帶領」，語意不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】送朋友去車站。 \n【用法】「送る」除了寄送物品，也指陪伴、護送人到目的地，或是送別。\n【延伸】相關詞/混淆項：見送り、送って、連れて'
     },
@@ -1368,10 +1257,9 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '起{お}き', reason: '錯誤：這是自動詞(自己醒來)。' },
             { text: '立{た}てて', reason: '錯誤：語義不對(豎立)。' },
-            { text: '起{お}こさ', reason: '錯誤：未然形不足。' },
-            { text: '起{お}こして', reason: '正確！五段サ行變「して」。' }
-        ],
-        correctIndex: 3,
+            { text: '起{お}こして', reason: '正確！五段サ行變「して」。' },
+            { text: '起{お}こさ', reason: '錯誤：未然形不足。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】明天請在6點叫醒我。 \n【自他動詞】「起きる」(自動詞，自己醒/起床) vs 「起こす」(他動詞，人去叫醒別人)。\n【延伸】相關詞/混淆項：起き、立てて、起こさ'
     },
@@ -1382,10 +1270,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '起{お}こさ', reason: '正確！五段未然形。表示引發紛爭、事故等。' },
-            { text: '起{お}こし', reason: '錯誤：接續。' },
+            { text: '起{お}こせ', reason: '錯誤：可能。' },
             { text: '起{お}き', reason: '錯誤：自動詞。' },
-            { text: '起{お}こせ', reason: '錯誤：可能。' }
-        ],
+            { text: '起{お}こし', reason: '錯誤：接續。' }],
         correctIndex: 0,
         tag: 'negative',
         correctRule: '【考點】文法與語義\n【解析】注意不要引起事故。 \n【語義】「起こす」除了叫醒人，也用於「引發、造成」事件、紛爭或交通事故。\n【延伸】相關詞/混淆項：起こし、起き、起こせ'
@@ -1400,10 +1287,9 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '怒{いか}ります', reason: '錯誤：雖然漢字一樣，但生氣常用「おこる」。' },
             { text: '怒{おこ}りました', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '怒{おこ}ります', reason: '正確！五段動詞。' },
-            { text: '怒{おこ}って', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '怒{おこ}って', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '怒{おこ}ります', reason: '正確！五段動詞。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】說謊的話媽媽會發火。 \n【活用】五段動詞「怒る」。\n【延伸】相關詞/混淆項：怒ります、怒りました、怒って'
     },
@@ -1413,12 +1299,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請不要那麼 *___*。',
         level: 'N4',
         options: [
-            { text: '怒{おこ}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '怒{おこ}ら', reason: '正確！五段未然形。' },
+            { text: '怒{おこ}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '怒{おこ}れ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '怒{おこ}る', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '怒{おこ}ら', reason: '正確！五段未然形。' },
+            { text: '怒{おこ}り', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'negative',
         correctRule: '【考點】文法與語義\n【解析】請不要那麼生氣。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：怒る、怒れ、怒り'
     },
@@ -1429,12 +1314,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '用漂亮的紙 *包裝* 禮物。',
         level: 'N4',
         options: [
-            { text: '包{つつ}め', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '包{つつ}みます', reason: '正確！五段動詞。' },
+            { text: '包{つつ}んで', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '包{つつ}み', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '包{つつ}んで', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '包{つつ}め', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '包{つつ}みます', reason: '正確！五段動詞。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】用漂亮的紙包禮物。 \n【活用】五段動詞「包む」。\n【延伸】相關詞/混淆項：包み、包んで、包め'
     },
@@ -1444,11 +1328,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *___* 這個行李。',
         level: 'N4',
         options: [
-            { text: '包{つつ}み', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '包{つつ}ま', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '包{つつ}んで', reason: '正確！五段撥音便。' },
             { text: '包{つつ}み', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '包{つつ}ま', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '包{つつ}み', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請包一下這個行李。 \n【活用】字尾「む」變為「んで」。\n【延伸】相關詞/混淆項：包み、包み、包ま'
@@ -1460,12 +1343,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '鞋子被泥土 *弄髒* 了。',
         level: 'N4',
         options: [
-            { text: '汚{よご}れ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '汚{よご}れな', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '汚{よご}して', reason: '錯誤：那是「弄髒某物」(他動詞)。' },
-            { text: '汚{よご}れて', reason: '正確！一段自動詞。' }
-        ],
-        correctIndex: 3,
+            { text: '汚{よご}れ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '汚{よご}れて', reason: '正確！一段自動詞。' },
+            { text: '汚{よご}れな', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】鞋子沾泥弄髒了。 \n【自他動詞】「汚れる」(自動詞，髒了) vs 「汚す」(他動詞，弄髒)。\n【延伸】相關詞/混淆項：汚れ、汚して、汚れな'
     },
@@ -1475,12 +1357,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '這件衣服容易 *___*。',
         level: 'N4',
         options: [
+            { text: '汚{よご}れな', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '汚{よご}れ', reason: '正確！連用形接やすい。' },
-            { text: '汚{よご}り', reason: '錯誤：變位錯誤。' },
             { text: '汚{よご}れる', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '汚{よご}れな', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '汚{よご}り', reason: '錯誤：變位錯誤。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】這件衣服容易髒。 \n【活用】一段動詞。\n【延伸】相關詞/混淆項：汚れる、汚り、汚れな'
     },
@@ -1491,12 +1372,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請在那裡 *停放* 車。',
         level: 'N4',
         options: [
-            { text: '止{と}め', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '止{と}めた', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '止{と}めて', reason: '正確！一段他動詞。' },
             { text: '止{と}まって', reason: '錯誤：那是自動詞(停止)。' },
-            { text: '止{と}めて', reason: '正確！一段他動詞。' }
-        ],
-        correctIndex: 3,
+            { text: '止{と}めた', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '止{と}め', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請在那裡停車。 \n【自他動詞】「止める」(他動詞，停放) vs 「止まる」(自動詞，停止/停下來)。\n【延伸】相關詞/混淆項：止め、止めた、止まって'
     },
@@ -1506,12 +1386,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '要不要 *停掉/中止* 工作去玩？',
         level: 'N4',
         options: [
-            { text: '止{と}まら', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '止{と}まり', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '止{と}め', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '止{や}め', reason: '正確！雖漢字相同，此處指停止動作。' }
-        ],
-        correctIndex: 3,
+            { text: '止{や}め', reason: '正確！雖漢字相同，此處指停止動作。' },
+            { text: '止{と}まら', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】要不要停下工作去玩？ \n【注意】「止める」(tomeru) 多指空間上的停止，「止める/辭める」(yameru) 指動作的中止或辭職。\n【延伸】相關詞/混淆項：止まり、止め、止まら'
     },
@@ -1522,12 +1401,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*下/降* 坡道。',
         level: 'N4',
         options: [
-            { text: '下{くだ}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '下{さ}がります', reason: '錯誤：這是「下降」，語意不符。' },
             { text: '下{くだ}ります', reason: '正確！五段動詞。' },
-            { text: '下{くだ}る', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '下{くだ}る', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '下{くだ}って', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '下{さ}がります', reason: '錯誤：這是「下降」，語意不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】下坡。 \n【活用】五段動詞「下る」。\n【延伸】相關詞/混淆項：下って、下がります、下る'
     },
@@ -1540,8 +1418,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '下{くだ}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '下{くだ}ります', reason: '正確！' },
             { text: '下{くだ}わ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '下{くだ}っ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '下{くだ}っ', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】乘船順流而下。 \n【語義】指從高處往低處移動。\n【延伸】相關詞/混淆項：下わ、下っ、下り'
@@ -1553,11 +1430,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*上/爬* 樓梯。',
         level: 'N4',
         options: [
-            { text: '上{のぼ}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '上{のぼ}って', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '上{のぼ}ります', reason: '正確！五段動詞。' },
             { text: '上{あ}がります', reason: '錯誤：這是「上樓」，語意不符。' },
-            { text: '上{のぼ}って', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '上{のぼ}り', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】上樓梯。 \n【活用】五段動詞「上る」。\n【延伸】相關詞/混淆項：上り、上って、上がります'
@@ -1569,10 +1445,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '上{のぼ}る', reason: '正確！辭書形。常用「登る」。' },
-            { text: '上{のぼ}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '上{のぼ}ら', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '上{のぼ}っ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '上{のぼ}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '上{のぼ}っ', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】爬山很辛苦。 \n【漢字】登山常用「登る」，但「上る」也通。\n【延伸】相關詞/混淆項：上ら、上り、上っ'
@@ -1584,12 +1459,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '肚子 *餓了* 了。',
         level: 'N4',
         options: [
+            { text: '空{す}い', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '減{へ}り', reason: '錯誤：這是「肚子餓」，語意不符。' },
-            { text: '空{す}き', reason: '正確！五段連用向。固定用法。' },
             { text: '空{あ}き', reason: '錯誤：這是「那個音指空間空出」，語意不符。' },
-            { text: '空{す}い', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '空{す}き', reason: '正確！五段連用向。固定用法。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】肚子餓了。 \n【用法】「おなかが 空く」是慣用語。\n【延伸】相關詞/混淆項：空き、減り、空い'
     },
@@ -1600,10 +1474,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '空{す}か', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '空{あ}いて', reason: '錯誤：這是「指空間空著」，語意不符。' },
+            { text: '空{す}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '空{す}いて', reason: '正確！五段イ音便。' },
-            { text: '空{す}き', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '空{あ}いて', reason: '錯誤：這是「指空間空著」，語意不符。' }],
         correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】平日電車很空。 \n【活用】五段動詞「空く」。\n【延伸】相關詞/混淆項：空か、空き、空いて'
@@ -1615,12 +1488,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '在車站與朋友 *見面*。',
         level: 'N4',
         options: [
+            { text: '会{あ}い', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '合{あ}いました', reason: '錯誤：那是合適/一致。' },
-            { text: '会{あ}いました', reason: '正確！五段動詞。' },
             { text: '会{あ}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '会{あ}い', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '会{あ}いました', reason: '正確！五段動詞。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】在車站見了朋友。 \n【活用】五段動詞「会う」。\n【延伸】相關詞/混淆項：合いました、会って、会い'
     },
@@ -1630,12 +1502,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '期待能再次與您 *___*。',
         level: 'N4',
         options: [
-            { text: '会{あ}わ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '会{あ}い', reason: '正確！お+連用形+する(謙讓語)。' },
+            { text: '会{あ}う', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '会{あ}え', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '会{あ}う', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '会{あ}い', reason: '正確！お+連用形+する(謙讓語)。' },
+            { text: '会{あ}わ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】期待再會。 \n【敬語】謙讓語句型。\n【延伸】相關詞/混淆項：会え、会う、会わ'
     },
@@ -1646,12 +1517,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '老師 *在/去/來 - 尊敬語* 在哪裡呢？',
         level: 'N4',
         options: [
-            { text: 'います', reason: '錯誤：這是「一般」，語意不符。' },
+            { text: 'いらっしゃい', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'まいります', reason: '錯誤：那是謙讓語。' },
-            { text: 'いらっしゃいます', reason: '正確！尊他語。' },
-            { text: 'いらっしゃい', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: 'います', reason: '錯誤：這是「一般」，語意不符。' },
+            { text: 'いらっしゃいます', reason: '正確！尊他語。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】老師在哪裡？ \n【敬語】「いらっしゃる」是「いる、行く、来る」的尊敬語。\n【延伸】相關詞/混淆項：いらっしゃい、まいります、います'
     },
@@ -1661,12 +1531,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*歡迎光臨*。',
         level: 'N4',
         options: [
-            { text: 'いらっしゃれ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'いらしゃい', reason: '錯誤：拼寫。' },
-            { text: 'いらっしゃい', reason: '正確！尊敬語連用形。' }
-        ],
-        correctIndex: 3,
+            { text: 'いらっしゃい', reason: '正確！尊敬語連用形。' },
+            { text: 'いらっしゃれ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】歡迎光臨。 \n【活用】「いらっしゃる」是特殊五段敬語動詞變ます形為「いらっしゃいます」。\n【延伸】相關詞/混淆項：き、いらしゃい、いらっしゃれ'
     },
@@ -1677,12 +1546,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '弄錯的話請立刻 *道歉*。',
         level: 'N4',
         options: [
-            { text: '謝{あや}まら', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '謝{あや}まって', reason: '正確！五段動詞。' },
             { text: '謝{あや}まり', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '謝{あや}まる', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '謝{あや}まって', reason: '正確！五段動詞。' }
-        ],
-        correctIndex: 3,
+            { text: '謝{あや}まら', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】錯了就道歉。 \n【活用】五段動詞「謝る」。\n【延伸】相關詞/混淆項：謝まる、謝まら、謝まり'
     },
@@ -1692,12 +1560,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '最好向他 *___* 喔。',
         level: 'N4',
         options: [
-            { text: '謝{あや}まる', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '謝{あや}まり', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '謝{あや}まって', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '謝{あや}まった', reason: '正確！五段促音便接ほうがいい。' },
-            { text: '謝{あや}まり', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '謝{あや}まる', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '謝{あや}まった', reason: '正確！五段促音便接ほうがいい。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】最好道歉。 \n【句型】「～たほうがいい」表示建議。\n【延伸】相關詞/混淆項：謝まって、謝まり、謝まる'
     },
@@ -1708,12 +1575,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*活* 到一百歲。',
         level: 'N4',
         options: [
-            { text: '生{い}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '生{う}まれます', reason: '錯誤：出生。' },
-            { text: '生{い}きて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '生{い}きます', reason: '正確！一段動詞。' }
-        ],
-        correctIndex: 3,
+            { text: '生{い}きます', reason: '正確！一段動詞。' },
+            { text: '生{い}き', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '生{い}きて', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】活到一百歲。 \n【活用】一段動詞「生きる」。\n【延伸】相關詞/混淆項：生き、生まれます、生きて'
     },
@@ -1723,12 +1589,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '堅強地 *___* 下去是很重要的。',
         level: 'N4',
         options: [
-            { text: '生{い}きら', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '生{い}きる', reason: '正確！辭書形。' },
             { text: '生{い}きて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '生{い}きの', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '生{い}きら', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '生{い}きの', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '生{い}きる', reason: '正確！辭書形。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】堅強的生活。 \n【活用】一段動詞。\n【延伸】相關詞/混淆項：生きら、生きの、生きて'
     },
@@ -1739,12 +1604,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請不要 *欺負/虐待* 動物。',
         level: 'N4',
         options: [
-            { text: 'いじめな', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'いじめて', reason: '正確！一段動詞。' },
             { text: 'いじめ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'いじめ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: 'いじめ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'いじめな', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'negative',
         correctRule: '【考點】文法與語義\n【解析】別欺負動物。 \n【活用】一段動詞「いじめる」。\n【延伸】相關詞/混淆項：いじめ、いじめな、いじめ'
     },
@@ -1757,8 +1621,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: 'いじめな', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'いじめました', reason: '正確！' },
             { text: 'いじめ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'いじめ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: 'いじめ', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】欺負了弟弟。 \n【活用】一段動詞。\n【延伸】相關詞/混淆項：いじめ、いじめ、いじめな'
@@ -1770,12 +1633,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '因為沒時間了，*趕快/急著* 吧。',
         level: 'N4',
         options: [
-            { text: '急{いそ}ぎ', reason: '正確！五段連用。' },
             { text: '急{いそ}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '急{いそ}け', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '急{いそ}が', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '急{いそ}が', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '急{いそ}ぎ', reason: '正確！五段連用。' },
+            { text: '急{いそ}け', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】趕快吧。 \n【活用】五段動詞「急ぐ」。\n【延伸】相關詞/混淆項：急が、急い、急け'
     },
@@ -1785,12 +1647,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '不 *___* 去的話就來不及了。',
         level: 'N4',
         options: [
-            { text: '急{いそ}ぎ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '急{いそ}ぐ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '急{いそ}が', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '急{いそ}いで', reason: '正確！五段イ音便。' }
-        ],
-        correctIndex: 3,
+            { text: '急{いそ}いで', reason: '正確！五段イ音便。' },
+            { text: '急{いそ}ぎ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '急{いそ}が', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】趕快去。 \n【活用】字尾「ぐ」變為「いで」(帶濁音)。\n【延伸】相關詞/混淆項：急が、急ぐ、急ぎ'
     },
@@ -1802,10 +1663,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: 'いたす', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'いたさ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'いたせ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'いたし', reason: '正確！サ行謙讓語。' },
-            { text: 'いたせ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: 'いたさ', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】明天打電話。 \n【敬語】「致す」(itasu) 是「する」的謙讓語。\n【延伸】相關詞/混淆項：いたさ、いたせ、いたす'
@@ -1816,12 +1676,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '由我來 *___* 吧。',
         level: 'N4',
         options: [
+            { text: 'いたす', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'いたさ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'いたし', reason: '正確！' },
             { text: 'いたせ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'いたす', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: 'いたし', reason: '正確！' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】我來做。 \n【敬語】謙讓語用法。\n【延伸】相關詞/混淆項：いたす、いたさ、いたせ'
     },
@@ -1832,12 +1691,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*祈禱* 世界和平。',
         level: 'N4',
         options: [
-            { text: '祈{いの}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '祈{いの}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '祈{いの}ります', reason: '正確！五段動詞。' },
-            { text: '祈{いの}れ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '祈{いの}れ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '祈{いの}って', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '祈{いの}り', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】祈禱世界和平。 \n【活用】五段動詞「祈る」。\n【延伸】相關詞/混淆項：祈って、祈れ、祈り'
     },
@@ -1847,12 +1705,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '正在為您的合格 *___* 著。',
         level: 'N4',
         options: [
-            { text: '祈{いの}ら', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '祈{いの}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '祈{いの}って', reason: '正確！五段促音便。' },
-            { text: '祈{いの}り', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '祈{いの}ら', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '祈{いの}り', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】祝你及格。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：祈ら、祈り、祈る'
     },
@@ -1863,12 +1720,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '在院子裡 *種植* 樹。',
         level: 'N4',
         options: [
-            { text: '植{う}わりました', reason: '錯誤：那是自動詞(種著/長著)。' },
-            { text: '植{う}え', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '植{う}えな', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '植{う}えました', reason: '正確！一段他動詞。' }
-        ],
-        correctIndex: 3,
+            { text: '植{う}えました', reason: '正確！一段他動詞。' },
+            { text: '植{う}わりました', reason: '錯誤：那是自動詞(種著/長著)。' },
+            { text: '植{う}え', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】在院子種樹。 \n【自他動詞】「植える」(他動詞，人去種) vs 「植わる」(自動詞，植物被種著)。\n【延伸】相關詞/混淆項：植わりました、植えな、植え'
     },
@@ -1878,12 +1734,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '正在 *___* 花。',
         level: 'N4',
         options: [
-            { text: '植{う}えら', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '植{う}えな', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '植{う}え', reason: '正確！一段動詞。' },
             { text: '植{う}わ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '植{う}え', reason: '正確！一段動詞。' }
-        ],
-        correctIndex: 3,
+            { text: '植{う}えら', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '植{う}えな', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】正在種花。 \n【活用】一段動詞。\n【延伸】相關詞/混淆項：植えら、植わ、植えな'
     },
@@ -1894,12 +1749,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '明天10點將去 *拜訪 - 謙讓語*。',
         level: 'N4',
         options: [
-            { text: '行{い}き', reason: '錯誤：這是「一般」，語意不符。' },
-            { text: '伺{うかが}い', reason: '正確！五段謙讓語。' },
             { text: '来{き}て', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '伺{うかが}わ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '伺{うかが}わ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '行{い}き', reason: '錯誤：這是「一般」，語意不符。' },
+            { text: '伺{うかが}い', reason: '正確！五段謙讓語。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】明天拜訪。 \n【敬語】「伺う」(ukagau) 是「行く、来る、聞く」的謙讓語。\n【延伸】相關詞/混淆項：行き、来て、伺わ'
     },
@@ -1909,12 +1763,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '可以稍微 *請教* 您一些話嗎？',
         level: 'N4',
         options: [
+            { text: '聞{き}い', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '伺{うかが}い', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '伺{うかが}って', reason: '正確！謙讓語「聞く」。' },
-            { text: '話{はな}して', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '聞{き}い', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '話{はな}して', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】可以請教一下嗎？ \n【敬語】謙讓語用法。\n【延伸】相關詞/混淆項：伺い、聞い、話して'
     },
@@ -1925,12 +1778,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*拜訪* 朋友家。',
         level: 'N4',
         options: [
-            { text: '尋{たず}ねました', reason: '錯誤：那是「詢問」。' },
-            { text: '訪{たず}ね', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '訪{たず}ねました', reason: '正確！一段動詞。' },
-            { text: '訪{たず}ね', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '訪{たず}ね', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '訪{たず}ね', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '尋{たず}ねました', reason: '錯誤：那是「詢問」。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】拜訪朋友家。 \n【漢字】拜訪地點/人用「訪ねる」，詢問問題用「尋ねる」。\n【延伸】相關詞/混淆項：訪ね、尋ねました、訪ね'
     },
@@ -1941,11 +1793,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '訪{たず}ね', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '訪{たず}ね', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '訪{たず}ね', reason: '正確！' },
-            { text: '訪{たず}ね', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '訪{たず}ね', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '訪{たず}ね', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】拜訪日本。 \n【活用】一段動詞。\n【延伸】相關詞/混淆項：訪ね、訪ね、訪ね'
     },
@@ -1956,12 +1807,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '公車 *遲到/延誤* 了。',
         level: 'N4',
         options: [
+            { text: '遅{おく}い', reason: '錯誤：那是形容詞(慢)。' },
             { text: '遅{おく}れ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '遅{おく}ら', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '遅{おく}れました', reason: '正確！一段動詞。' },
-            { text: '遅{おく}い', reason: '錯誤：那是形容詞(慢)。' }
-        ],
-        correctIndex: 2,
+            { text: '遅{おく}れました', reason: '正確！一段動詞。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】公車遲了。 \n【活用】一段動詞「遅れる」。\n【延伸】相關詞/混淆項：遅い、遅ら、遅れ'
     },
@@ -1971,11 +1821,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請不要學校 *___*。',
         level: 'N4',
         options: [
-            { text: '遅{おく}れら', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '遅{おく}ろ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '遅{おく}れな', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '遅{おく}れ', reason: '正確！一段動詞。' },
-            { text: '遅{おく}れな', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '遅{おく}れら', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】發生火災。 \n【活用】一段動詞。\n【延伸】相關詞/混淆項：遅ろ、遅れな、遅れら'
@@ -1988,11 +1837,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *沿著* 路走。',
         level: 'N4',
         options: [
-            { text: '添{そ}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '沿{そ}って', reason: '正確！五段動詞促音便。' },
             { text: '沿{そ}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '沿{そ}うて', reason: '錯誤：變位錯誤。' }
-        ],
+            { text: '沿{そ}って', reason: '正確！五段動詞促音便。' },
+            { text: '沿{そ}うて', reason: '錯誤：變位錯誤。' },
+            { text: '添{そ}って', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請沿著路走。 \n【活用】「沿う」(そう) 是五段動詞，字尾為「う」。\n【延伸】相關詞/混淆項：沿うて、沿い、添って'
@@ -2003,12 +1851,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '我會努力不 *辜負* 期待。',
         level: 'N4',
         options: [
-            { text: '沿{そ}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '添{そ}う', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '沿{そ}う', reason: '正確！' },
             { text: 'そう', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '沿{そ}う', reason: '正確！' }
-        ],
-        correctIndex: 3,
+            { text: '添{そ}う', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '沿{そ}い', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】我會努力符合期待。 \n【語義】「期待に沿う」是常用搭配。\n【延伸】相關詞/混淆項：添う、そう、沿い'
     },
@@ -2019,12 +1866,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*給* 妹妹書。',
         level: 'N4',
         options: [
-            { text: 'もらいました', reason: '錯誤：那是「收到」。' },
             { text: 'あげ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'くれました', reason: '錯誤：那是別人給我。' },
-            { text: 'あげました', reason: '正確！一段動詞。' }
-        ],
-        correctIndex: 3,
+            { text: 'もらいました', reason: '錯誤：那是「收到」。' },
+            { text: 'あげました', reason: '正確！一段動詞。' },
+            { text: 'くれました', reason: '錯誤：那是別人給我。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】給妹妹書。 \n【授受動詞】「あげる」表示從說話者這方給予。\n【延伸】相關詞/混淆項：あげ、くれました、もらいました'
     },
@@ -2035,11 +1881,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: 'あげて', reason: '錯誤：接續不對。' },
-            { text: 'あげり', reason: '錯誤：一段動詞不加り。' },
             { text: 'あげ', reason: '正確！連用形接ませんか。' },
-            { text: 'あげ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: 'あげ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'あげり', reason: '錯誤：一段動詞不加り。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】這個要給你嗎？ \n【活用】「あげる」是一段動詞。\n【延伸】相關詞/混淆項：あげ、あげり、あげて'
     },
@@ -2050,12 +1895,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請於10點在車站 *集合*。',
         level: 'N4',
         options: [
-            { text: '集{あつ}まって', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '集{あつ}まり', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '集{あつ}めて', reason: '錯誤：那是他動詞「收集」。' },
-            { text: '集{あつ}まって', reason: '正確！五段動詞促音便。' }
-        ],
-        correctIndex: 3,
+            { text: '集{あつ}まり', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '集{あつ}まって', reason: '正確！五段動詞促音便。' },
+            { text: '集{あつ}まって', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請在車站集合。 \n【自他動詞】「集まる」(自動詞，集合) vs 「集める」(他動詞，收集)。\n【延伸】相關詞/混淆項：集まって、集まり、集めて'
     },
@@ -2065,12 +1909,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '很多人 *聚集* 在一起。',
         level: 'N4',
         options: [
-            { text: '集{あつ}まって', reason: '正確！' },
             { text: '集{あつ}まり', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '集{あつ}め', reason: '錯誤：語義不當。' },
             { text: '集{あつ}まる', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '集{あつ}め', reason: '錯誤：語義不當。' }
-        ],
-        correctIndex: 0,
+            { text: '集{あつ}まって', reason: '正確！' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】很多人聚集在一起。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：集まり、集め、集まる'
     },
@@ -2081,12 +1924,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*收到* 了禮物。',
         level: 'N4',
         options: [
-            { text: 'いただき', reason: '正確！「もらう」的謙讓語。' },
             { text: 'くださり', reason: '錯誤：那是別人的尊語。' },
             { text: 'いたたき', reason: '錯誤：濁音位置錯誤。' },
-            { text: 'さしあげ', reason: '錯誤：那是「送」。' }
-        ],
-        correctIndex: 0,
+            { text: 'さしあげ', reason: '錯誤：那是「送」。' },
+            { text: 'いただき', reason: '正確！「もらう」的謙讓語。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】收到了禮物。 \n【敬語】「いただく」是「もらう」或「食べる/飲む」的謙讓語。\n【延伸】相關詞/混淆項：さしあげ、くださり、いたたき'
     },
@@ -2096,12 +1938,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '我 *開動/心領* 了。',
         level: 'N4',
         options: [
-            { text: 'いただきます', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'いただきました', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'いただきました', reason: '正確！' },
-            { text: '食べました', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '食べました', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'いただきます', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'いただきました', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】我開動了。 \n【敬語】用餐前後的禮貌用語。\n【延伸】相關詞/混淆項：食べました、いただきます、いただきました'
     },
@@ -2112,12 +1953,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '相片 *照* 得很好。',
         level: 'N4',
         options: [
-            { text: '写{うつ}りました', reason: '正確！五段動詞。' },
             { text: '写{うつ}った', reason: '錯誤：這是「普通體」，語意不符。' },
             { text: '写{うつ}しました', reason: '錯誤：那是人去拍照(他動詞)。' },
-            { text: '写{うつ}り', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '写{うつ}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '写{うつ}りました', reason: '正確！五段動詞。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】相片照得很好。 \n【自他動詞】「写る」(自動詞，顯影/映照) vs 「写す」(他動詞，拍照/複寫)。\n【延伸】相關詞/混淆項：写った、写しました、写り'
     },
@@ -2127,12 +1967,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '鏡中 *映照* 著自己。',
         level: 'N4',
         options: [
-            { text: '映{うつ}って', reason: '錯誤：這是「此處漢字亦通」，語意不符。' },
-            { text: '写{うつ}って', reason: '正確！' },
+            { text: '写{うつ}し', reason: '錯誤：他動詞用法錯誤。' },
             { text: '写{うつ}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '写{うつ}し', reason: '錯誤：他動詞用法錯誤。' }
-        ],
-        correctIndex: 1,
+            { text: '写{うつ}って', reason: '正確！' },
+            { text: '映{うつ}って', reason: '錯誤：這是「此處漢字亦通」，語意不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】鏡中映照著自己。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：映って、写し、写り'
     },
@@ -2143,12 +1982,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '老師，要往這邊 *來* 嗎？',
         level: 'N4',
         options: [
+            { text: 'いらっしゃいます', reason: '錯誤：這是「同義」，語意不符。' },
             { text: '来{く}ます', reason: '錯誤：變位錯誤。' },
-            { text: 'おいでになります', reason: '正確！尊語。' },
             { text: '参{まい}ります', reason: '錯誤：那是謙讓語。' },
-            { text: 'いらっしゃいます', reason: '錯誤：這是「同義」，語意不符。' }
-        ],
-        correctIndex: 1,
+            { text: 'おいでになります', reason: '正確！尊語。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】老師要來嗎？ \n【敬語】「おいでになる」是「行く、来る、いる」的尊敬語。\n【延伸】相關詞/混淆項：来ます、参ります、いらっしゃいます'
     },
@@ -2158,11 +1996,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '您剛才 *___* 哪裡了？',
         level: 'N4',
         options: [
+            { text: 'おいで', reason: '錯誤：這是「口語短縮」，語意不符。' },
             { text: '行{い}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'いらっしゃい', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'おいで', reason: '錯誤：這是「口語短縮」，語意不符。' },
-            { text: 'おいでになり', reason: '正確！' }
-        ],
+            { text: 'おいでになり', reason: '正確！' }],
         correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】您去哪了？ \n【敬語】尊敬語用法。\n【延伸】相關詞/混淆項：おいで、いらっしゃい、行き'
@@ -2174,12 +2011,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '7點 *叫醒* 小孩。',
         level: 'N4',
         options: [
-            { text: '起{お}こす', reason: '錯誤：這是「普通體」，語意不符。' },
-            { text: '起{お}こします', reason: '正確！他動詞。' },
+            { text: '起{お}こして', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '起{お}きます', reason: '錯誤：那是自動詞「起床」。' },
-            { text: '起{お}こして', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '起{お}こします', reason: '正確！他動詞。' },
+            { text: '起{お}こす', reason: '錯誤：這是「普通體」，語意不符。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】叫醒小孩。 \n【自他動詞】「起こす」(他動詞，人去叫醒) vs 「起きる」(自動詞，醒來)。\n【延伸】相關詞/混淆項：起きます、起こす、起こして'
     },
@@ -2189,12 +2025,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *叫醒* 我。',
         level: 'N4',
         options: [
-            { text: '起{お}こして', reason: '正確！' },
-            { text: '起{お}こさ', reason: '錯誤：未然形。' },
+            { text: '起{お}きて', reason: '錯誤：請求動作應使用他動詞。' },
             { text: '起{お}こし', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '起{お}きて', reason: '錯誤：請求動作應使用他動詞。' }
-        ],
-        correctIndex: 0,
+            { text: '起{お}こして', reason: '正確！' },
+            { text: '起{お}こさ', reason: '錯誤：未然形。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請叫醒我。 \n【活用】「起こす」是五段動詞。\n【延伸】相關詞/混淆項：起こし、起きて、起こさ'
     },
@@ -2208,8 +2043,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '行{おこな}う', reason: '錯誤：這是「普通體」，語意不符。' },
             { text: '行{い}きます', reason: '錯誤：那是「去」。' },
             { text: '行{おこな}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '行{おこな}います', reason: '正確！五段動詞。' }
-        ],
+            { text: '行{おこな}います', reason: '正確！五段動詞。' }],
         correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】舉行考試。 \n【語義】「行う」意為舉行、實施、進行。\n【延伸】相關詞/混淆項：行って、行う、行きます'
@@ -2220,11 +2054,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '正在 *進行* 實驗。',
         level: 'N4',
         options: [
-            { text: '行{おこな}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '行{い}って', reason: '錯誤：語義/讀音錯誤。' },
             { text: '行{おこな}う', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '行{おこな}って', reason: '正確！五段促音便。' },
-            { text: '行{い}って', reason: '錯誤：語義/讀音錯誤。' }
-        ],
+            { text: '行{おこな}い', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】正在進行實驗。 \n【活用】五段動詞「う」結尾變「って」。\n【延伸】相關詞/混淆項：行い、行う、行って'
@@ -2236,12 +2069,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '老師 *說* 「晚安」。',
         level: 'N4',
         options: [
-            { text: '言{い}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'おっしゃり', reason: '錯誤：不規則五段，ます形為「い」。' },
             { text: 'おっしゃい', reason: '正確！「言う」的尊敬語，ます變位是不規則的。' },
-            { text: 'おっしゃ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: 'おっしゃり', reason: '錯誤：不規則五段，ます形為「い」。' },
+            { text: 'おっしゃ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '言{い}い', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】老師說了晚安。 \n【敬語不規則】「おっしゃる、いらっしゃる、くださる、なさる」這類詞的連用形變為「い」而非「り」。\n【延伸】相關詞/混淆項：おっしゃ、おっしゃり、言い'
     },
@@ -2251,12 +2083,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '您剛才 *___* 什麼？',
         level: 'N4',
         options: [
-            { text: 'おっしゃりました', reason: '錯誤：不規則變位。' },
             { text: 'おっしゃ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'おっしゃって', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'おっしゃいました', reason: '正確！' }
-        ],
-        correctIndex: 3,
+            { text: 'おっしゃいました', reason: '正確！' },
+            { text: 'おっしゃりました', reason: '錯誤：不規則變位。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】您說了什麼？ \n【敬語】「言う」的尊敬語。\n【延伸】相關詞/混淆項：おっしゃって、おっしゃ、おっしゃりました'
     },
@@ -2267,12 +2098,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '把錢包 *弄丟/弄掉* 了。',
         level: 'N4',
         options: [
-            { text: '落{お}として', reason: '正確！他動詞。' },
+            { text: '落{お}とし', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '落{お}とさ', reason: '錯誤：未然形。' },
             { text: '落{お}ちて', reason: '錯誤：那是自動詞「掉落」。' },
-            { text: '落{お}とし', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '落{お}として', reason: '正確！他動詞。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】弄丟了錢包。 \n【自他動詞】「落とす」(他動詞，人弄掉) vs 「落ちる」(自動詞，東西掉了)。\n【延伸】相關詞/混淆項：落とし、落ちて、落とさ'
     },
@@ -2282,12 +2112,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *壓低* 聲音說話。',
         level: 'N4',
         options: [
-            { text: '落{お}として', reason: '正確！也有降低、減少的意思。' },
             { text: '下{さ}げて', reason: '錯誤：這是「同義」，語意不符。' },
             { text: '小{ちい}さくして', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '落{お}とし', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '落{お}とし', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '落{お}として', reason: '正確！也有降低、減少的意思。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請壓低聲音。 \n【語義】「声を落とす」表示降低音量。\n【延伸】相關詞/混淆項：下げて、小さくして、落とし'
     },
@@ -2298,11 +2127,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '一起 *跳舞* 吧。',
         level: 'N4',
         options: [
+            { text: '踊{おど}る', reason: '錯誤：辭書形不能接續「ましょう」。' },
             { text: '踊{おど}っ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '踊{おど}ら', reason: '錯誤：未然形。' },
             { text: '踊{おど}り', reason: '正確！五段動詞。' },
-            { text: '踊{おど}る', reason: '錯誤：辭書形不能接續「ましょう」。' }
-        ],
+            { text: '踊{おど}ら', reason: '錯誤：未然形。' }],
         correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】一起跳舞吧。 \n【活用】「踊る」是五段動詞。\n【延伸】相關詞/混淆項：踊っ、踊ら、踊り'
@@ -2316,8 +2144,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '踊{おど}っ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '踊{おど}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '踊{おど}って', reason: '正確！五段促音便。' },
-            { text: '踊{おど}り', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '踊{おど}り', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】跳得真好。 \n【音便】五段動詞「る」結尾變「って」。\n【延伸】相關詞/混淆項：踊り、踊る、踊っ'
@@ -2329,11 +2156,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '聽了新聞感到 *震驚*。',
         level: 'N4',
         options: [
-            { text: '驚{おどろ}いた', reason: '錯誤：這是「普通體」，語意不符。' },
-            { text: '驚{おどろ}きました', reason: '正確！五段動詞。' },
             { text: '驚{おどろ}き', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '驚{おどろ}かせました', reason: '錯誤：那是「使人吃驚」。' }
-        ],
+            { text: '驚{おどろ}きました', reason: '正確！五段動詞。' },
+            { text: '驚{おどろ}かせました', reason: '錯誤：那是「使人吃驚」。' },
+            { text: '驚{おどろ}いた', reason: '錯誤：這是「普通體」，語意不符。' }],
         correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】聽了新聞大吃一驚。 \n【活用】「驚く」是五段動詞。\n【延伸】相關詞/混淆項：驚き、驚かせました、驚いた'
@@ -2344,12 +2170,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請別那麼 *吃驚*。',
         level: 'N4',
         options: [
-            { text: '驚{おどろ}か', reason: '正確！否定句接續。' },
-            { text: '驚{おどろ}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '驚{おどろ}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '驚{おどろ}け', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '驚{おどろ}け', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '驚{おどろ}き', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '驚{おどろ}か', reason: '正確！否定句接續。' }],
+        correctIndex: 3,
         tag: 'negative',
         correctRule: '【考點】文法與語義\n【解析】別那麼驚訝。 \n【活用】五段動詞未然形。\n【延伸】相關詞/混淆項：驚い、驚け、驚き'
     },
@@ -2361,10 +2186,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '思{おも}い出{だ}せ', reason: '正確！可能形否定。' },
-            { text: '思{おも}い出{だ}し', reason: '錯誤：與題意相反(否定)。' },
             { text: '思{おも}い出{だ}さ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '忘{わす}れ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '忘{わす}れ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '思{おも}い出{だ}し', reason: '錯誤：與題意相反(否定)。' }],
         correctIndex: 0,
         tag: 'potential',
         correctRule: '【考點】可能形活用\n【解析】想不起名字。 \n【語義】「思い出す」(加上可能形)常與否定並用，表示無法回憶起。\n【延伸】相關詞/混淆項：思い出し、忘れ、思い出さ'
@@ -2376,11 +2200,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '思{おも}い出{だ}して', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '思{おも}い出{だ}します', reason: '正確！' },
             { text: '思{おも}い出{だ}した', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '思{おも}い出{だ}す', reason: '錯誤：這是「普通體」，語意不符。' },
-            { text: '思{おも}い出{だ}します', reason: '正確！' }
-        ],
-        correctIndex: 3,
+            { text: '思{おも}い出{だ}す', reason: '錯誤：這是「普通體」，語意不符。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】回想起小時候。 \n【構成】由「思う」和「出す」組成的複合動詞。\n【延伸】相關詞/混淆項：思い出した、思い出す、思い出して'
     },
@@ -2391,12 +2214,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*覺得* 明天會下雨。',
         level: 'N4',
         options: [
-            { text: '思{おも}う', reason: '錯誤：這是「普通體」，語意不符。' },
-            { text: '思{おも}って', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '思{おも}います', reason: '正確！' },
-            { text: '考{かんが}えます', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '思{おも}う', reason: '錯誤：這是「普通體」，語意不符。' },
+            { text: '考{かんが}えます', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '思{おも}って', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】覺得會下雨。 \n【接續】表示意見時用「〜と思う(敬體為思います)」。\n【延伸】相關詞/混淆項：思う、考えます、思って'
     },
@@ -2406,12 +2228,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '正 *思念* 著家人。',
         level: 'N4',
         options: [
-            { text: '思{おも}って', reason: '正確！五段促音便。' },
-            { text: '思{おも}い', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '思{おも}', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '思{おも}う', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '思{おも}う', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '思{おも}って', reason: '正確！五段促音便。' },
+            { text: '思{おも}い', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】正思念著家人。 \n【活用】「思う」字尾「う」變更為「って」。\n【延伸】相關詞/混淆項：思い、思、思う'
     },
@@ -2422,12 +2243,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '從2樓 *下來*。',
         level: 'N4',
         options: [
-            { text: '下{お}ります', reason: '正確！一段動詞。' },
             { text: '落{お}ちました', reason: '錯誤：那是「掉下來」。' },
             { text: '下{お}ろします', reason: '錯誤：那是「拿下來」(他動詞)。' },
-            { text: '降{ふ}ります', reason: '錯誤：那是「下雨」。' }
-        ],
-        correctIndex: 0,
+            { text: '下{お}ります', reason: '正確！一段動詞。' },
+            { text: '降{ふ}ります', reason: '錯誤：那是「下雨」。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】從二樓下來。 \n【活用】「下りる」是一段動詞。\n【延伸】相關詞/混淆項：降ります、落ちました、下ろします'
     },
@@ -2438,10 +2258,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '下{お}りて', reason: '正確！' },
+            { text: '下{お}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '下{お}ろして', reason: '錯誤：他動詞用法錯誤。' },
-            { text: '降{ふ}って', reason: '錯誤：讀音錯誤。' },
-            { text: '下{お}り', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '降{ふ}って', reason: '錯誤：讀音錯誤。' }],
         correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請下山。 \n【自他動詞】「下りる」(自動詞，下來) vs 「下ろす」(他動詞，取下)。\n【延伸】相關詞/混淆項：下ろして、降って、下り'
@@ -2453,11 +2272,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*折* 紙。',
         level: 'N4',
         options: [
-            { text: '折{お}る', reason: '錯誤：這是「普通體」，語意不符。' },
+            { text: '折{お}って', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '折{お}ります', reason: '正確！五段動詞。' },
             { text: '折{お}れます', reason: '錯誤：那是「折斷」(自動詞)。' },
-            { text: '折{お}って', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '折{お}る', reason: '錯誤：這是「普通體」，語意不符。' }],
         correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】折紙。 \n【活用】「折る」是五段動詞。\n【延伸】相關詞/混淆項：折って、折れます、折る'
@@ -2468,12 +2286,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '不小心把樹枝 *折斷* 了。',
         level: 'N4',
         options: [
-            { text: '折{お}れ', reason: '錯誤：語義/變位不對。' },
+            { text: '曲{ま}げて', reason: '錯誤：這是「弄彎」，語意不符。' },
             { text: '折{お}らし', reason: '錯誤：變位不對。' },
-            { text: '折{お}って', reason: '正確！五段促音便。' },
-            { text: '曲{ま}げて', reason: '錯誤：這是「弄彎」，語意不符。' }
-        ],
-        correctIndex: 2,
+            { text: '折{お}れ', reason: '錯誤：語義/變位不對。' },
+            { text: '折{お}って', reason: '正確！五段促音便。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】折斷樹枝。 \n【自他動詞】「折る」(他動詞) vs 「折れる」(自動詞)。\n【延伸】相關詞/混淆項：折れ、曲げて、折らし'
     },
@@ -2484,11 +2301,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '鉛筆 *折斷* 了。',
         level: 'N4',
         options: [
-            { text: '曲{ま}がり', reason: '錯誤：這是「彎了」，語意不符。' },
             { text: '折{お}り', reason: '錯誤：他動詞。' },
+            { text: '曲{ま}がり', reason: '錯誤：這是「彎了」，語意不符。' },
             { text: '折{お}れ', reason: '正確！一段動詞。' },
-            { text: '折{お}れた', reason: '錯誤：這是「普通體」，語意不符。' }
-        ],
+            { text: '折{お}れた', reason: '錯誤：這是「普通體」，語意不符。' }],
         correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】鉛筆斷了。 \n【活用】「折れる」是一段動詞。\n【延伸】相關詞/混淆項：折れた、曲がり、折り'
@@ -2499,12 +2315,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '骨頭正 *折斷* 著。',
         level: 'N4',
         options: [
-            { text: '折{お}れ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '折{お}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '折{お}れて', reason: '正確！' },
-            { text: '折{お}り', reason: '錯誤：主語是物體，應用自動詞。' }
-        ],
-        correctIndex: 2,
+            { text: '折{お}る', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '折{お}れ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '折{お}り', reason: '錯誤：主語是物體，應用自動詞。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】骨折了。 \n【自他動詞】物體發生損壞時常用其對應的自動詞。\n【延伸】相關詞/混淆項：折れ、折る、折り'
     },
@@ -2516,10 +2331,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '代{か}えます', reason: '錯誤：這是「漢字不同意思近」，語意不符。' },
-            { text: '変{か}わります', reason: '錯誤：那是自動詞。' },
             { text: '変{か}え', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '変{か}えます', reason: '正確！一段他動詞。' }
-        ],
+            { text: '変{か}わります', reason: '錯誤：那是自動詞。' },
+            { text: '変{か}えます', reason: '正確！一段他動詞。' }],
         correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】變更預定。 \n【自他動詞】「変える」(他動詞，人去改) vs 「変わる」(自動詞，發生改變)。\n【延伸】相關詞/混淆項：代えます、変わります、変え'
@@ -2531,10 +2345,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '変{か}え', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '代{か}えて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '変{か}わって', reason: '錯誤：請求動作應使用他動詞。' },
             { text: '変{か}えて', reason: '正確！一段動詞。' },
-            { text: '変{か}わって', reason: '錯誤：請求動作應使用他動詞。' }
-        ],
+            { text: '代{か}えて', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請更換場地。 \n【活用】一段動詞去「る」加「て」。\n【延伸】相關詞/混淆項：変わって、代えて、変え'
@@ -2546,12 +2359,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*戴* 著眼鏡。',
         level: 'N4',
         options: [
-            { text: '掛{か}け', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '掛{か}かって', reason: '錯誤：那是自動詞。' },
             { text: '被{かぶ}って', reason: '錯誤：那是戴帽子。' },
-            { text: '掛{か}けて', reason: '正確！一段動詞。' },
-            { text: '掛{か}かって', reason: '錯誤：那是自動詞。' }
-        ],
-        correctIndex: 2,
+            { text: '掛{か}け', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '掛{か}けて', reason: '正確！一段動詞。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】戴眼鏡。 \n【固定搭配】「眼鏡を掛ける」(megane o kakeru)。\n【延伸】相關詞/混淆項：掛かって、被って、掛け'
     },
@@ -2561,12 +2373,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *坐* 在椅子上。',
         level: 'N4',
         options: [
-            { text: '掛{か}けて', reason: '正確！用於坐(椅子)。' },
-            { text: '掛{か}け', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '座{すわ}って', reason: '錯誤：這是「一般坐」，語意不符。' },
-            { text: '掛{か}かり', reason: '錯誤：變位錯誤。' }
-        ],
-        correctIndex: 0,
+            { text: '掛{か}けて', reason: '正確！用於坐(椅子)。' },
+            { text: '掛{か}かり', reason: '錯誤：變位錯誤。' },
+            { text: '掛{か}け', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請坐下。 \n【語義】「腰を掛ける」(koshi o kakeru) 是坐下的美化/正式說法。\n【延伸】相關詞/混淆項：座って、掛かり、掛け'
     },
@@ -2577,12 +2388,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*裝飾* 花。',
         level: 'N4',
         options: [
-            { text: '飾{かざ}る', reason: '錯誤：這是「普通體」，語意不符。' },
             { text: '飾{かざ}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '飾{かざ}ります', reason: '正確！五段動詞。' },
             { text: '飾{かざ}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '飾{かざ}ります', reason: '正確！五段動詞。' }
-        ],
-        correctIndex: 3,
+            { text: '飾{かざ}る', reason: '錯誤：這是「普通體」，語意不符。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】裝飾花。 \n【活用】「飾る」是五段動詞。\n【延伸】相關詞/混淆項：飾って、飾り、飾る'
     },
@@ -2592,12 +2402,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '房間裡正 *裝飾* 著畫。',
         level: 'N4',
         options: [
-            { text: '飾{かざ}ら', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '飾{かざ}って', reason: '正確！' },
+            { text: '飾{かざ}ら', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '飾{かざ}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '飾{かざ}る', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '飾{かざ}る', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】房內掛著畫裝飾中。 \n【音便】五段「る」結尾變「って」。\n【延伸】相關詞/混淆項：飾る、飾ら、飾り'
     },
@@ -2608,11 +2417,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *整理* 房間。',
         level: 'N4',
         options: [
-            { text: '片付{かたづ}け', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '掃{そう}じして', reason: '錯誤：這是「打掃」，語意不符。' },
             { text: '片付{かたづ}いて', reason: '錯誤：那是自動詞。' },
             { text: '片付{かたづ}けて', reason: '正確！一段他動詞。' },
-            { text: '掃{そう}じして', reason: '錯誤：這是「打掃」，語意不符。' }
-        ],
+            { text: '片付{かたづ}け', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請收拾房間。 \n【自他動詞】「片付ける」(他動詞，人去收拾) vs 「片付く」(自動詞，收拾好了)。\n【延伸】相關詞/混淆項：掃じして、片付いて、片付け'
@@ -2623,12 +2431,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*完成/處理好* 工作。',
         level: 'N4',
         options: [
+            { text: '片付{かたづ}けます', reason: '正確！表示把事情處理完。' },
             { text: '片付{かたづ}ける', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '片付{かたづ}き', reason: '錯誤：變位錯誤。' },
-            { text: '片付{かたづ}けます', reason: '正確！表示把事情處理完。' },
-            { text: '終{お}わります', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '終{お}わります', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】處理好工作。 \n【語義】除了整理房間，也可用於「處理好(工作、問題)」。\n【延伸】相關詞/混淆項：終わります、片付ける、片付き'
     },
@@ -2640,11 +2447,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '勝{か}ち', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '勝{か}ちました', reason: '正確！五段動詞。' },
             { text: '勝{か}った', reason: '錯誤：這是「普通體」，語意不符。' },
-            { text: '負{ま}けました', reason: '錯誤：語義相反(輸了)。' }
-        ],
-        correctIndex: 1,
+            { text: '負{ま}けました', reason: '錯誤：語義相反(輸了)。' },
+            { text: '勝{か}ちました', reason: '正確！五段動詞。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】贏了比賽。 \n【接續】「獲勝對象/比賽＋に＋勝つ」。\n【延伸】相關詞/混淆項：負けました、勝ち、勝った'
     },
@@ -2654,11 +2460,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '一定要 *贏* ！',
         level: 'N4',
         options: [
-            { text: '勝{か}とう', reason: '錯誤：這是「意志形」，語意不符。' },
-            { text: '勝{か}つ', reason: '正確！意志的表達。' },
             { text: '勝{か}て', reason: '錯誤：這是命令形，語氣不符。' },
-            { text: '勝{か}ちな', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '勝{か}つ', reason: '正確！意志的表達。' },
+            { text: '勝{か}とう', reason: '錯誤：這是「意志形」，語意不符。' },
+            { text: '勝{か}ちな', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】絕對要贏！ \n【活用】「勝つ」是五段動詞。\n【延伸】相關詞/混淆項：勝ちな、勝とう、勝て'
@@ -2670,11 +2475,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*樣子* 很帥。',
         level: 'N4',
         options: [
-            { text: '形{かたち}', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '色{いろ}', reason: '錯誤：錯誤！' },
             { text: '恰好{かっこう}', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '格好{かっこう}', reason: '正確！雖然在此名單中但它主要是名詞。' },
-            { text: '色{いろ}', reason: '錯誤：錯誤！' }
-        ],
+            { text: '形{かたち}', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】樣子很帥。 \n【注意】雖然在動詞名單裡，但它是名詞/形容動詞用法。\n【延伸】相關詞/混淆項：色、形、恰好'
@@ -2685,12 +2489,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '穿得真 *有型* 呢。',
         level: 'N4',
         options: [
-            { text: 'もの', reason: '錯誤：錯誤！' },
-            { text: '格好{かっこう}', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '格好{かっこう}', reason: '正確！' },
-            { text: '服装{ふくそう}', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '服装{ふくそう}', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'もの', reason: '錯誤：錯誤！' },
+            { text: '格好{かっこう}', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】穿得很有型。 \n【用法】名詞用法。\n【延伸】相關詞/混淆項：服装、もの、格好'
     },
@@ -2702,11 +2505,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '構{かま}え', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '構{かま}わ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '構{かま}', reason: '正確！否定形未然形。' },
-            { text: '構{かま}い', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '構{かま}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '構{かま}わ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'negative',
         correctRule: '【考點】文法與語義\n【解析】沒關係，請別管我。 \n【活用】五段動詞未然形。\n【延伸】相關詞/混淆項：構い、構え、構わ'
     },
@@ -2717,11 +2519,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '構{かま}', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '構{かま}わ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '構{かま}い', reason: '正確！' },
-            { text: '構{かま}', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '構{かま}', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '構{かま}わ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】可以在這抽煙嗎？ \n【固定用法】「〜ても構いません」(沒關係/不要緊)。\n【延伸】相關詞/混淆項：構、構、構わ'
     },
@@ -2732,12 +2533,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *咀嚼* 好了再吃。',
         level: 'N4',
         options: [
+            { text: '噛{か}い', reason: '錯誤：變位錯誤。' },
             { text: '噛{か}んで', reason: '正確！五段撥音便。' },
-            { text: '噛{か}って', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '噛{か}み', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '噛{か}い', reason: '錯誤：變位錯誤。' }
-        ],
-        correctIndex: 0,
+            { text: '噛{か}って', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請好好咀嚼。 \n【音便】五段動詞「む」結尾變「んで」。\n【延伸】相關詞/混淆項：噛み、噛い、噛って'
     },
@@ -2747,12 +2547,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '正在 *嚼* 口香糖。',
         level: 'N4',
         options: [
-            { text: '噛{か}み', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '噛{か}んで', reason: '正確！' },
             { text: '噛{か}む', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '噛{か}ん', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '噛{か}み', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '噛{か}ん', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '噛{か}んで', reason: '正確！' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】正在嚼口香糖。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：噛み、噛む、噛ん'
     },
@@ -2765,9 +2564,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '通{かよ}って', reason: '正確！五段動詞促音便。' },
             { text: '通{かよ}わ', reason: '錯誤：變位錯誤。' },
-            { text: '通{かよ}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '行{い}って', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '行{い}って', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '通{かよ}い', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】每天搭車上學。 \n【語義】「通う」表示定期往返於某地。\n【延伸】相關詞/混淆項：通わ、通い、行って'
@@ -2778,12 +2576,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '去公司 *上班* 很辛苦。',
         level: 'N4',
         options: [
-            { text: '行{い}く', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '出勤{しゅっきん}する', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '通{かよ}う', reason: '正確！' },
-            { text: '通{かよ}い', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '通{かよ}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '行{い}く', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】往返於公司。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：通い、出勤する、行く'
     },
@@ -2794,11 +2591,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '衣服 *乾* 了。',
         level: 'N4',
         options: [
-            { text: '乾{かわ}した', reason: '錯誤：那是「弄乾」(他動詞)。' },
-            { text: '乾{かわ}い', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
             { text: '乾{かわ}った', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '乾{かわ}き', reason: '正確！五段動詞。' }
-        ],
+            { text: '乾{かわ}い', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
+            { text: '乾{かわ}した', reason: '錯誤：那是「弄乾」(他動詞)。' },
+            { text: '乾{かわ}き', reason: '正確！五段動詞。' }],
         correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】衣服乾了。 \n【自他動詞】「乾く」(自動詞，變乾) vs 「乾かす」(他動詞，弄乾)。\n【延伸】相關詞/混淆項：乾い、乾した、乾った'
@@ -2809,12 +2605,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '喉嚨 *渴* 了。',
         level: 'N4',
         options: [
-            { text: '乾{かわ}す', reason: '錯誤：錯誤！' },
-            { text: '乾{かわ}い', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '乾{かわ}き', reason: '正確！常用搭配。' },
-            { text: '渇{かわ}き', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '渇{かわ}き', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '乾{かわ}す', reason: '錯誤：錯誤！' },
+            { text: '乾{かわ}い', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】喉嚨渴了。 \n【固定用法】「喉が乾く/渇く」。\n【延伸】相關詞/混淆項：渇き、乾い、乾す'
     },
@@ -2827,10 +2622,9 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '変{か}わっ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '変{か}え', reason: '錯誤：那是人去改(他動詞)。' },
-            { text: '変{か}わり', reason: '正確！自動詞。' },
-            { text: '代{か}わり', reason: '錯誤：這是「漢字可通用」，語意不符。' }
-        ],
-        correctIndex: 2,
+            { text: '代{か}わり', reason: '錯誤：這是「漢字可通用」，語意不符。' },
+            { text: '変{か}わり', reason: '正確！自動詞。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】號誌變了。 \n【自他動詞】「変わる」(自動詞) vs 「変える」(他動詞)。\n【延伸】相關詞/混淆項：代わり、変わっ、変え'
     },
@@ -2840,12 +2634,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '最近他 *變* 了呢。',
         level: 'N4',
         options: [
-            { text: '変{か}え', reason: '錯誤：那是改。' },
             { text: '変{か}わり', reason: '正確！' },
             { text: '代{か}わっ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '変{か}わっ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '変{か}え', reason: '錯誤：那是改。' },
+            { text: '変{か}わっ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】他變了。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：代わっ、変わっ、変え'
     },
@@ -2856,11 +2649,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '正 *考慮* 著將來的事。',
         level: 'N4',
         options: [
-            { text: '考{かんが}え', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '考{かんが}えて', reason: '正確！一段動詞。' },
             { text: '考{かんが}えり', reason: '錯誤：一段動詞不加り。' },
-            { text: '思{おも}って', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '考{かんが}えて', reason: '正確！一段動詞。' },
+            { text: '考{かんが}え', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '思{おも}って', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】考慮將來。 \n【語義】「考える」指邏輯思考或深思熟慮；「思う」較偏主觀感覺。\n【延伸】相關詞/混淆項：思って、考えり、考え'
@@ -2872,11 +2664,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '考{かんが}え', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '考{かんが}えて', reason: '正確！' },
             { text: '考{かんが}えら', reason: '錯誤：變位錯誤。' },
-            { text: '考{かんが}え', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '考{かんが}えて', reason: '正確！' }
-        ],
-        correctIndex: 3,
+            { text: '考{かんが}え', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請好好思考。 \n【活用】一段動詞去「る」加「て」。\n【延伸】相關詞/混淆項：考えら、考え、考え'
     },
@@ -2887,12 +2678,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*聽得見* 音樂。',
         level: 'N4',
         options: [
+            { text: '聞{き}けます', reason: '錯誤：那是「能夠去聽」(意志能力)。' },
             { text: '聞{き}こえます', reason: '正確！自發動詞(自然聽見)。' },
             { text: '聞{き}きます', reason: '錯誤：那是「聽/問」。' },
-            { text: '聞{き}けます', reason: '錯誤：那是「能夠去聽」(意志能力)。' },
-            { text: '聞{き}こえて', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '聞{き}こえて', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】聽見音樂。 \n【自發】「聞こえる」表示聲音自然進入耳朵；「聞ける」表示具備聽取的條件或能力。\n【延伸】相關詞/混淆項：聞きます、聞こえて、聞けます'
     },
@@ -2902,12 +2692,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '聽不太 *清楚*。',
         level: 'N4',
         options: [
-            { text: '聞{き}こえ', reason: '正確！一段動詞。' },
-            { text: '聞{き}こえり', reason: '錯誤：一段不加り。' },
             { text: '聞{き}こえる', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '聞{き}き', reason: '錯誤：語義/變位不對。' }
-        ],
-        correctIndex: 0,
+            { text: '聞{き}き', reason: '錯誤：語義/變位不對。' },
+            { text: '聞{き}こえり', reason: '錯誤：一段不加り。' },
+            { text: '聞{き}こえ', reason: '正確！一段動詞。' }],
+        correctIndex: 3,
         tag: 'negative',
         correctRule: '【考點】文法與語義\n【解析】聽不見。 \n【活用】「聞こえる」是一段動詞。\n【延伸】相關詞/混淆項：聞き、聞こえる、聞こえり'
     },
@@ -2918,12 +2707,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '日期 *定下來* 了。',
         level: 'N4',
         options: [
-            { text: '決{き}ま', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '決{き}まって', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '決{き}まり', reason: '正確！五段自動詞。' },
-            { text: '決{き}め', reason: '錯誤：那是他動詞「決定」。' }
-        ],
-        correctIndex: 2,
+            { text: '決{き}め', reason: '錯誤：那是他動詞「決定」。' },
+            { text: '決{き}まって', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '決{き}ま', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】日期定了。 \n【自他動詞】「決まる」(自動詞) vs 「決める」(他動詞)。\n【延伸】相關詞/混淆項：決め、決ま、決まって'
     },
@@ -2933,12 +2721,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*定* 在了明天。',
         level: 'N4',
         options: [
+            { text: '決{き}まって', reason: '正確！表示狀態。' },
             { text: '決{き}める', reason: '錯誤：語義不當。' },
             { text: '決{き}まり', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '決{き}まら', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '決{き}まって', reason: '正確！表示狀態。' }
-        ],
-        correctIndex: 3,
+            { text: '決{き}まら', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】已經定在明天了。 \n【活用】五段「る」結尾變「って」。\n【延伸】相關詞/混淆項：決まら、決まり、決める'
     },
@@ -2949,12 +2736,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '老師 *給* 了我書。',
         level: 'N4',
         options: [
-            { text: 'さしあげ', reason: '錯誤：那是「我給尊長」。' },
-            { text: 'あげ', reason: '錯誤：那是「我給別人」。' },
             { text: 'ください', reason: '正確！「くれる」的尊敬語，不規則變位。' },
-            { text: 'くださり', reason: '錯誤：應變位為「い」。' }
-        ],
-        correctIndex: 2,
+            { text: 'くださり', reason: '錯誤：應變位為「い」。' },
+            { text: 'さしあげ', reason: '錯誤：那是「我給尊長」。' },
+            { text: 'あげ', reason: '錯誤：那是「我給別人」。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】老師給了我書。 \n【敬語】「くださる」是「くれる」的尊敬語。ます形變位為「くださいます」。\n【延伸】相關詞/混淆項：さしあげ、くださり、あげ'
     },
@@ -2967,8 +2753,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: 'ください', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'ください', reason: '正確！' },
             { text: 'くれ', reason: '錯誤：這是「較口放」，語意不符。' },
-            { text: 'くださる', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: 'くださる', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】請給我茶。 \n【用法】名詞＋を＋ください。\n【延伸】相關詞/混淆項：くれ、くださる、ください'
@@ -2980,12 +2765,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*比較* 看看價格吧。',
         level: 'N4',
         options: [
-            { text: '比{くら}べ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '違{ちが}って', reason: '錯誤：那是「不同」。' },
+            { text: '比{くら}べり', reason: '錯誤：一段動詞。' },
             { text: '比{くら}べて', reason: '正確！一段動詞。' },
-            { text: '比{くら}べり', reason: '錯誤：一段動詞。' }
-        ],
-        correctIndex: 2,
+            { text: '比{くら}べ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '違{ちが}って', reason: '錯誤：那是「不同」。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】比較看看。 \n【活用】一段動詞去「る」加「て」。\n【延伸】相關詞/混淆項：比べ、比べり、違って'
     },
@@ -2996,10 +2780,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '比{くら}べ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '比{くら}べれば', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '比{くら}べ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '比{くら}べると', reason: '正確！' },
-            { text: '比{くら}べ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '比{くら}べれば', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】與去年相比。 \n【語義】「比べる」用於兩物之間的對照比較。\n【延伸】相關詞/混淆項：比べれば、比べ、比べ'
@@ -3011,12 +2794,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '朋友 *給* 了我蛋糕。',
         level: 'N4',
         options: [
-            { text: 'あげ', reason: '錯誤：那是「我給別人」。' },
-            { text: 'くれり', reason: '錯誤：變位錯誤。' },
             { text: 'くれ', reason: '正確！一段動詞。' },
-            { text: 'もらい', reason: '錯誤：主語是給予者，不能用もらう。' }
-        ],
-        correctIndex: 2,
+            { text: 'くれり', reason: '錯誤：變位錯誤。' },
+            { text: 'もらい', reason: '錯誤：主語是給予者，不能用もらう。' },
+            { text: 'あげ', reason: '錯誤：那是「我給別人」。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】朋友給了我蛋糕。 \n【授受動詞】「くれる」表示別人給「我」或我這方的人。\n【延伸】相關詞/混淆項：くれり、あげ、もらい'
     },
@@ -3026,12 +2808,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '可以 *幫* 我教一下嗎？',
         level: 'N4',
         options: [
-            { text: 'くれ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'くれ', reason: '正確！' },
+            { text: 'あげ', reason: '錯誤：立場錯誤。' },
             { text: 'もらい', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'あげ', reason: '錯誤：立場錯誤。' }
-        ],
-        correctIndex: 1,
+            { text: 'くれ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】能教我嗎？ \n【句型】「〜てくれる」表示別人為我做某事。\n【延伸】相關詞/混淆項：くれ、もらい、あげ'
     },
@@ -3042,12 +2823,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '天 *黑* 了。',
         level: 'N4',
         options: [
-            { text: '暮{く}れた', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '暮{く}れ', reason: '正確！一段動詞。' },
             { text: '暗{くら}く', reason: '錯誤：這是「這是形容詞用法」，語意不符。' },
-            { text: '暮{く}れり', reason: '錯誤：變位錯誤。' }
-        ],
-        correctIndex: 1,
+            { text: '暮{く}れり', reason: '錯誤：變位錯誤。' },
+            { text: '暮{く}れ', reason: '正確！一段動詞。' },
+            { text: '暮{く}れた', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】天黑了。 \n【活用】「暮れる」是一段動詞。\n【延伸】相關詞/混淆項：暮れた、暗く、暮れり'
     },
@@ -3058,11 +2838,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '終{お}わり', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '暮{く}れ', reason: '正確！' },
             { text: '暮{く}れ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '暮{く}れ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '暮{く}れ', reason: '正確！' }
-        ],
-        correctIndex: 3,
+            { text: '暮{く}れ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】歲末。 \n【語義】「日が暮れる」(天黑)；「年が暮れる」(年底)。\n【延伸】相關詞/混淆項：終わり、暮れ、暮れ'
     },
@@ -3073,11 +2852,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '路很 *擁擠* 呢。',
         level: 'N4',
         options: [
-            { text: '込{こ}み', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '込{こ}んで', reason: '正確！五段撥音便。' },
             { text: '込{こ}いて', reason: '錯誤：變位錯誤。' },
-            { text: '込{こ}ん', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '込{こ}んで', reason: '正確！五段撥音便。' },
+            { text: '込{こ}ん', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '込{こ}み', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】路很擠。 \n【活用】「込む」是五段動詞。\n【延伸】相關詞/混淆項：込み、込ん、込いて'
@@ -3088,12 +2866,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '電車 *擠滿了人*。',
         level: 'N4',
         options: [
-            { text: '込{こ}んだ', reason: '錯誤：這是「普通體」，語意不符。' },
+            { text: '込{こ}み', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '込{こ}め', reason: '錯誤：變位錯誤。' },
-            { text: '込{こ}み', reason: '正確！' },
-            { text: '込{こ}み', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '込{こ}んだ', reason: '錯誤：這是「普通體」，語意不符。' },
+            { text: '込{こ}み', reason: '正確！' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】電車擠滿了。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：込んだ、込み、込め'
     },
@@ -3105,11 +2882,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '見{み}ます', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'ごらんになります', reason: '正確！「見る」的尊敬語。' },
+            { text: '拝見{はいけん}します', reason: '錯誤：那是謙讓語。' },
             { text: 'ご覧{ごらん}ください', reason: '錯誤：這是命令形，語氣不符。' },
-            { text: '拝見{はいけん}します', reason: '錯誤：那是謙讓語。' }
-        ],
-        correctIndex: 1,
+            { text: 'ごらんになります', reason: '正確！「見る」的尊敬語。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】您看照片嗎？ \n【敬語】「ご覧になる」是「見る」的尊敬語。\n【延伸】相關詞/混淆項：拝見します、ご覧ください、見ます'
     },
@@ -3119,12 +2895,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '您已經 *看* 了嗎？',
         level: 'N4',
         options: [
-            { text: 'ごらん', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '見{み}', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'ごらんになり', reason: '正確！' },
-            { text: '拝見{はいけん}し', reason: '錯誤：謙讓語。' }
-        ],
-        correctIndex: 2,
+            { text: '拝見{はいけん}し', reason: '錯誤：謙讓語。' },
+            { text: '見{み}', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'ごらん', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】您已經看了嗎？ \n【敬語】尊敬語用法。\n【延伸】相關詞/混淆項：ごらん、拝見し、見'
     },
@@ -3136,11 +2911,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '探{さが}し', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '捜{さが}して', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '探{さが}して', reason: '正確！五段動詞。' },
-            { text: '見{み}つけて', reason: '錯誤：那是「找到」。' }
-        ],
-        correctIndex: 2,
+            { text: '捜{さが}して', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '見{み}つけて', reason: '錯誤：那是「找到」。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】尋找鑰匙。 \n【活用】「探す」是五段動詞。\n【延伸】相關詞/混淆項：探し、見つけて、捜して'
     },
@@ -3150,11 +2924,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '正在 *找* 好工作。',
         level: 'N4',
         options: [
-            { text: '見{み}て', reason: '錯誤：只是看。' },
-            { text: '探{さが}す', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '探{さが}し', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '探{さが}して', reason: '正確！' }
-        ],
+            { text: '探{さが}す', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '見{み}て', reason: '錯誤：只是看。' },
+            { text: '探{さが}して', reason: '正確！' }],
         correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】正在找工作。 \n【語義】「探す」用於尋找想要的東西或人。\n【延伸】相關詞/混淆項：探す、見て、探し'
@@ -3166,12 +2939,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *降低* 價格。',
         level: 'N4',
         options: [
-            { text: '下{お}ろして', reason: '錯誤：語義不同(取下)。' },
             { text: '下{さ}がって', reason: '錯誤：那是自動詞。' },
             { text: '下{さ}げ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '下{さ}げて', reason: '正確！一段他動詞。' }
-        ],
-        correctIndex: 3,
+            { text: '下{さ}げて', reason: '正確！一段他動詞。' },
+            { text: '下{お}ろして', reason: '錯誤：語義不同(取下)。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請降價。 \n【自他動詞】「下げる」(他動詞，人去降) vs 「下がる」(自動詞，下降)。\n【延伸】相關詞/混淆項：下げ、下ろして、下がって'
     },
@@ -3181,12 +2953,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*低* 頭。',
         level: 'N4',
         options: [
+            { text: '下{さ}がります', reason: '錯誤：自動詞用法錯誤。' },
             { text: '下{さ}げ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '下{さ}げます', reason: '正確！' },
-            { text: '下{さ}がります', reason: '錯誤：自動詞用法錯誤。' },
-            { text: '曲{ま}げます', reason: '錯誤：這是「那是弄彎」，語意不符。' }
-        ],
-        correctIndex: 1,
+            { text: '曲{ま}げます', reason: '錯誤：這是「那是弄彎」，語意不符。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】低下頭。 \n【語義】常用於表示謙虛或道歉的動作。\n【延伸】相關詞/混淆項：下げ、下がります、曲げます'
     },
@@ -3198,11 +2969,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: 'あげます', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '差{さ}し上{あ}げます', reason: '正確！「あげる」的謙讓語。' },
+            { text: '差{さ}し上{あ}げ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '差{さ}し上{あ}げる', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '差{さ}し上{あ}げ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '差{さ}し上{あ}げます', reason: '正確！「あげる」的謙讓語。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】送老師禮物。 \n【敬語】「差し上げる」是「あげる」的謙讓語(用於對尊長)。\n【延伸】相關詞/混淆項：差し上げる、あげます、差し上げ'
     },
@@ -3215,8 +2985,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '差{さ}し上{あ}げ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '差{さ}し上{あ}げて', reason: '錯誤：錯誤！' },
             { text: '差{さ}し上{あ}げり', reason: '錯誤：一段動詞不加り。' },
-            { text: '差{さ}し上{あ}げ', reason: '正確！' }
-        ],
+            { text: '差{さ}し上{あ}げ', reason: '正確！' }],
         correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】要送您什麼？ \n【活用】「差し上げる」是一段動詞。\n【延伸】相關詞/混淆項：差し上げ、差し上げり、差し上げて'
@@ -3228,12 +2997,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請不要在教室 *吵鬧*。',
         level: 'N4',
         options: [
-            { text: '騒{さわ}ぎ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '騒{さわ}い', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '騒{さわ}が', reason: '正確！五段動詞未然形。' },
-            { text: '騒{さわ}い', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '騒{さわ}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '騒{さわ}ぎ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'negative',
         correctRule: '【考點】文法與語義\n【解析】別吵鬧。 \n【活用】「騒ぐ」是五段動詞。\n【延伸】相關詞/混淆項：騒い、騒い、騒ぎ'
     },
@@ -3243,12 +3011,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '外面正 *吵鬧* 著呢。',
         level: 'N4',
         options: [
-            { text: '騒{さわ}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '騒{さわ}いで', reason: '正確！五段ガ行イ音便(濁化為いで)。' },
             { text: '騒{さわ}って', reason: '錯誤：變位錯誤。' },
-            { text: '騒{さわ}ぎ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '騒{さわ}いで', reason: '正確！五段ガ行イ音便(濁化為いで)。' }
-        ],
-        correctIndex: 3,
+            { text: '騒{さわ}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '騒{さわ}ぎ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】外面很吵。 \n【音便】字尾為「ぐ」的五段動詞變て形為「いで」。\n【延伸】相關詞/混淆項：騒い、騒って、騒ぎ'
     },
@@ -3260,11 +3027,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '觸{さわ}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '觸{さわ}ら', reason: '正確！五段動詞。' },
             { text: '觸{さわ}れ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '觸{さわ}る', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '觸{さわ}ら', reason: '正確！五段動詞。' },
+            { text: '觸{さわ}る', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'negative',
         correctRule: '【考點】文法與語義\n【解析】請勿觸摸。 \n【活用】「觸る」是五段動詞。\n【延伸】相關詞/混淆項：觸り、觸る、觸れ'
     },
@@ -3274,12 +3040,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '很燙， *摸* 的話很危險哦。',
         level: 'N4',
         options: [
-            { text: '觸{さわ}ら', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '觸{さわ}る', reason: '正確！' },
             { text: '觸{さわ}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '觸{さわ}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '觸{さわ}る', reason: '正確！' }
-        ],
-        correctIndex: 3,
+            { text: '觸{さわ}ら', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】摸了很危險。 \n【用法】五段動詞基本形接と表示條件。\n【延伸】相關詞/混淆項：觸り、觸ら、觸り'
     },
@@ -3290,12 +3055,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '被父親 *罵* 了。',
         level: 'N4',
         options: [
-            { text: '叱{しか}らし', reason: '錯誤：變位錯誤。' },
-            { text: '叱{しか}られ', reason: '正確！受身形。' },
             { text: '叱{しか}って', reason: '錯誤：語義不當。' },
-            { text: '叱{しか}り', reason: '錯誤：那是主動罵。' }
-        ],
-        correctIndex: 1,
+            { text: '叱{しか}り', reason: '錯誤：那是主動罵。' },
+            { text: '叱{しか}らし', reason: '錯誤：變位錯誤。' },
+            { text: '叱{しか}られ', reason: '正確！受身形。' }],
+        correctIndex: 3,
         tag: 'passive',
         correctRule: '【考點】受身形活用\n【解析】被罵了。 \n【受身】五段動詞「叱る」的受身形為「叱られる」。\n【延伸】相關詞/混淆項：叱って、叱らし、叱り'
     },
@@ -3305,12 +3069,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '老師正在 *訓斥* 學生。',
         level: 'N4',
         options: [
-            { text: '叱{しか}っ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '叱{しか}って', reason: '正確！五段促音便。' },
-            { text: '叱{しか}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '叱{しか}ら', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '叱{しか}ら', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '叱{しか}っ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '叱{しか}り', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】正在訓斥。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：叱っ、叱り、叱ら'
     },
@@ -3321,12 +3084,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *通知* 我結果。',
         level: 'N4',
         options: [
+            { text: '教{おし}えて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '知{し}らせて', reason: '正確！一段使役動詞用法(通知/告知)。' },
-            { text: '知{し}って', reason: '錯誤：那是「知道」。' },
             { text: '知{し}らし', reason: '錯誤：變位錯誤。' },
-            { text: '教{おし}えて', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '知{し}って', reason: '錯誤：那是「知道」。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請告知結果。 \n【活用】「知らせる」是一段動詞。\n【延伸】相關詞/混淆項：教えて、知らし、知って'
     },
@@ -3336,11 +3098,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '最好早點 *通知* 比較好。',
         level: 'N4',
         options: [
+            { text: '知{し}らせ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '知{し}らせる', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '知{し}ら', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '知{し}らせた', reason: '正確！過去式接ほうがいい。' },
-            { text: '知{し}らせ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '知{し}ら', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】最好早點通知。 \n【接續】「た形＋ほうがいい」表示建議。\n【延伸】相關詞/混淆項：知ら、知らせ、知らせる'
@@ -3354,9 +3115,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '調{しら}べます', reason: '正確！一段動詞。' },
             { text: '引{ひ}きます', reason: '錯誤：這是「辭典專用「引く」」，語意不符。' },
-            { text: '調{しら}べる', reason: '錯誤：這是「普通體」，語意不符。' },
-            { text: '調{しら}べり', reason: '錯誤：一段動詞不加り。' }
-        ],
+            { text: '調{しら}べり', reason: '錯誤：一段動詞不加り。' },
+            { text: '調{しら}べる', reason: '錯誤：這是「普通體」，語意不符。' }],
         correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】查辭典。 \n【活用】「調べる」是一段動詞。\n【延伸】相關詞/混淆項：調べり、引きます、調べる'
@@ -3367,12 +3127,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '正在 *調查* 原因。',
         level: 'N4',
         options: [
-            { text: '調{しら}り', reason: '錯誤：變位錯誤。' },
             { text: '調{しら}べ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '調{しら}べて', reason: '正確！' },
-            { text: '調{しら}っ', reason: '錯誤：應為一段。' }
-        ],
-        correctIndex: 2,
+            { text: '調{しら}り', reason: '錯誤：變位錯誤。' },
+            { text: '調{しら}っ', reason: '錯誤：應為一段。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】正在調查。 \n【活用】一段動詞。\n【延伸】相關詞/混淆項：調べ、調り、調っ'
     },
@@ -3383,12 +3142,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '*超過* 預定時間了。',
         level: 'N4',
         options: [
-            { text: '過{す}ぎて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '過{す}ぎ', reason: '正確！一段動詞。' },
             { text: '過{す}ぎた', reason: '錯誤：這是「普通體」，語意不符。' },
-            { text: '過{す}ぎり', reason: '錯誤：不加り。' }
-        ],
-        correctIndex: 1,
+            { text: '過{す}ぎて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '過{す}ぎり', reason: '錯誤：不加り。' },
+            { text: '過{す}ぎ', reason: '正確！一段動詞。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】超時。 \n【活用】「過ぎる」是一段動詞。\n【延伸】相關詞/混淆項：過ぎて、過ぎり、過ぎた'
     },
@@ -3398,12 +3156,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '吃 *太多* 了。',
         level: 'N4',
         options: [
-            { text: '過{す}ぎて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '過{す}ぎ', reason: '正確！接尾詞用法。' },
-            { text: '過{す}ぎら', reason: '錯誤：變位錯誤。' },
-            { text: '過{す}ぎ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '過{す}ぎ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '過{す}ぎて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '過{す}ぎら', reason: '錯誤：變位錯誤。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】吃多了。 \n【句型】「動詞連用形＋すぎる」表示過度。\n【延伸】相關詞/混淆項：過ぎら、過ぎて、過ぎ'
     },
@@ -3414,12 +3171,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '肚子 *餓* 了。',
         level: 'N4',
         options: [
-            { text: '空{す}い', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
             { text: '空{す}っ', reason: '錯誤：變位錯誤。' },
             { text: '空{す}き', reason: '正確！五段動詞。' },
-            { text: '空{あ}き', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '空{あ}き', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '空{す}い', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】肚子餓。 \n【固定搭配】「お腹が空く」(onaka ga suku)。\n【延伸】相關詞/混淆項：空い、空っ、空き'
     },
@@ -3429,12 +3185,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '這電車很 *空* 呢。',
         level: 'N4',
         options: [
-            { text: '空{あ}いて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '空{す}いて', reason: '正確！五段イ音便。' },
-            { text: '空{す}き', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '空{す}っ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '空{あ}いて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '空{す}っ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '空{す}き', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】電車很空。 \n【語義】「空く」表示空間稀疏、不擁擠。\n【延伸】相關詞/混淆項：空いて、空っ、空き'
     },
@@ -3445,12 +3200,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請向前 *進*。',
         level: 'N4',
         options: [
-            { text: '進{すす}み', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '進{すす}んで', reason: '正確！五段撥音便。' },
             { text: '進{すす}ま', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '進{すす}めて', reason: '錯誤：那是他動詞「推進」。' },
-            { text: '進{すす}んで', reason: '正確！五段撥音便。' }
-        ],
-        correctIndex: 3,
+            { text: '進{すす}み', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請前進。 \n【自他動詞】「進む」(自動詞) vs 「進める」(他動詞)。\n【延伸】相關詞/混淆項：進ま、進めて、進み'
     },
@@ -3463,8 +3217,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '進{すす}んで', reason: '正確！' },
             { text: '進{すす}む', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '進{すす}める', reason: '錯誤：語義錯誤。' },
-            { text: '進{すす}み', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '進{すす}み', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】鐘錶快了。 \n【活用】五段動詞「む」變「んで」。\n【延伸】相關詞/混淆項：進み、進む、進める'
@@ -3476,12 +3229,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '請 *丟* 垃圾。',
         level: 'N4',
         options: [
-            { text: '捨{す}てて', reason: '正確！一段動詞。' },
             { text: '出{だ}して', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '捨{す}てて', reason: '正確！一段動詞。' },
             { text: '捨{す}て', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '捨{す}てり', reason: '錯誤：一段動詞不加り。' }
-        ],
-        correctIndex: 0,
+            { text: '捨{す}てり', reason: '錯誤：一段動詞不加り。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】丟垃圾。 \n【活用】「捨てる」是一段動詞。\n【延伸】相關詞/混淆項：捨て、捨てり、出して'
     },
@@ -3492,11 +3244,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '捨{す}て', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '捨{す}て', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '捨{す}て', reason: '正確！' },
-            { text: '捨{す}てり', reason: '錯誤：變位錯誤。' }
-        ],
-        correctIndex: 2,
+            { text: '捨{す}て', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '捨{す}てり', reason: '錯誤：變位錯誤。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】扔掉了嗎？ \n【活用】一段動詞。\n【延伸】相關詞/混淆項：捨て、捨て、捨てり'
     },
@@ -3507,12 +3258,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '在銀行的ATM *領出* 生活費後，去了百貨公司買東西。',
         level: 'N4',
         options: [
+            { text: '引{ひ}き出{だ}して', reason: '正確！五段動詞促音便。指從銀行提款。' },
             { text: '引{ひ}き出{だ}した', reason: '錯誤：接續詞「から」前應使用て形。' },
             { text: '引{ひ}き出{だ}し', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '引{ひ}き出{だ}して', reason: '正確！五段動詞促音便。指從銀行提款。' },
-            { text: '出{だ}して', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '出{だ}して', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】領出生活費。 \n【活用】五段動詞「引き出す」。\n【延伸】相關詞/混淆項：引き出し、出して、引き出した'
     },
@@ -3522,12 +3272,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「為什麼拿著這麼多現金？」\nB探：「為了準備旅行，剛才在銀行 *領* 了出來。」',
         level: 'N4',
         options: [
-            { text: '引{ひ}き出{だ}して', reason: '正確！～てくる句型表示去去就回。' },
-            { text: '引{ひ}き出{だ}す', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '引{ひ}き出{だ}さ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '引{ひ}き出{だ}し', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '引{ひ}き出{だ}す', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '引{ひ}き出{だ}し', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '引{ひ}き出{だ}して', reason: '正確！～てくる句型表示去去就回。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】領錢回來。 \n【句型】「～てくる」表示去做某事後回到原處。\n【延伸】相關詞/混淆項：引き出し、引き出す、引き出さ'
     },
@@ -3538,11 +3287,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '假如 *搬到* 新公寓的話，打算向鄰居打聲招呼。',
         level: 'N4',
         options: [
-            { text: '引{ひ}っ越{こ}し', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '引{ひ}っ越{こ}す', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '引{ひ}っ越{こ}して', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '引{ひ}っ越{こ}した', reason: '正確！～たら句型表示假設或完成後。' },
-            { text: '引{ひ}っ越{こ}す', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '引{ひ}っ越{こ}し', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】搬家後。 \n【句型】「～たら」接在動詞た形後。\n【延伸】相關詞/混淆項：引っ越し、引っ越す、引っ越して'
@@ -3554,11 +3302,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '引{ひ}っ越{こ}し', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '引{ひ}っ越{ко}して', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '引{ひ}っ越{こ}さない', reason: '錯誤：雙重否定語意不通。' },
-            { text: '引{ひ}っ越{こ}す', reason: '正確！字典形接わけじゃない。' },
-            { text: '引{ひ}っ越{ко}して', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '引{ひ}っ越{こ}す', reason: '正確！字典形接わけじゃない。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】並非搬到遠方。 \n【句型】「～わけではない」表示並非、不代表。\n【延伸】相關詞/混淆項：引っ越さない、引っ越し、引っ越して'
     },
@@ -3569,12 +3316,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '因為在公園 *撿到* 了錢包，所以立刻送到了附近的派出所。',
         level: 'N4',
         options: [
-            { text: '拾{ひろ}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '拾{ひろ}う', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '拾{ひろ}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '拾{ひろ}った', reason: '正確！五段動詞促音便。表示動作已完成。' }
-        ],
-        correctIndex: 3,
+            { text: '拾{ひろ}った', reason: '正確！五段動詞促音便。表示動作已完成。' },
+            { text: '拾{ひろ}う', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '拾{ひろ}って', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】撿到錢包。 \n【活用】五段動詞「拾う」。\n【延伸】相關詞/混淆項：拾う、拾い、拾って'
     },
@@ -3584,12 +3330,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「那顆漂亮的石頭是在哪裡發現的？」\nB：「是昨天在海邊散步時 *撿到* 的喔。」',
         level: 'N4',
         options: [
-            { text: '拾{ひろ}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '見付{みつ}けた', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '拾{ひろ}った', reason: '正確！～んだ(強調解釋)。' },
-            { text: '拾{ひろ}う', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '見付{みつ}けた', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '拾{ひろ}う', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '拾{ひろ}い', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】撿起來的。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：拾う、見付けた、拾い'
     },
@@ -3601,11 +3346,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '太{ふと}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '太{ふと}って', reason: '正確！五段促音便接しまいました。' },
+            { text: '太{ふと}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '大{おお}きくなって', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '太{ふと}る', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '太{ふと}って', reason: '正確！五段促音便接しまいました。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】變胖了。 \n【活用】五段動詞「太る」。\n【延伸】相關詞/混淆項：太り、大きくなって、太る'
     },
@@ -3615,12 +3359,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「最近小肚子是不是凸出來了？」\nB：「果然是這樣嗎。感覺自從入冬後，就突然 *變胖* 了起來。」',
         level: 'N4',
         options: [
-            { text: '太{ふと}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '重{おも}くなって', reason: '錯誤：這是「變重」，語意不符。' },
-            { text: '太{ふと}って', reason: '正確！～てくる句型表示狀態的轉變。' },
-            { text: '太{ふと}り', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '太{ふと}る', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '太{ふと}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '太{ふと}って', reason: '正確！～てくる句型表示狀態的轉變。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】變胖起來。 \n【句型】「～てくる」在此表示狀態開始並持續到現在。\n【延伸】相關詞/混淆項：太り、太る、重くなって'
     },
@@ -3631,12 +3374,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '在電車裡被某人 *踩* 了腳，但因為對方道歉了所以我原諒了他。',
         level: 'N4',
         options: [
-            { text: '踏{ふ}みました', reason: '錯誤：那是「我踩了別人」。' },
             { text: '踏{ふ}まれました', reason: '正確！五段受身形。' },
-            { text: '踏{ふ}まれて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '踏{ふ}ん', reason: '錯誤：變位不對。' }
-        ],
-        correctIndex: 1,
+            { text: '踏{ふ}ん', reason: '錯誤：變位不對。' },
+            { text: '踏{ふ}みました', reason: '錯誤：那是「我踩了別人」。' },
+            { text: '踏{ふ}まれて', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'passive',
         correctRule: '【考點】受身形活用\n【解析】被踩了腳。 \n【活用】五段動詞「踏む」的受身形為「踏まれる」。\n【延伸】相關詞/混淆項：踏ん、踏まれて、踏みました'
     },
@@ -3646,12 +3388,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「為什麼在那邊生氣？」\nB：「雖然我覺得不是故意的，但剛才重要文件被 *踩* 到了。」',
         level: 'N4',
         options: [
-            { text: '踏{ふ}んで', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '踏{ふ}ま', reason: '正確！五段受身形接詞尾。' },
             { text: '踏{ふ}み', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '踏{ふ}む', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '踏{ふ}んで', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '踏{ふ}む', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'passive',
         correctRule: '【考點】受身形活用\n【解析】被踩到了。 \n【注意】受身形表示遭受不利益的影響。\n【延伸】相關詞/混淆項：踏み、踏む、踏んで'
     },
@@ -3665,8 +3406,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '降{ふ}って', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '降{ふ}ら', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '降{ふ}り出{だ}した', reason: '正確！複合動詞。表示動作開始。' },
-            { text: '降{ふ}り始{はじ}めた', reason: '錯誤：這是「同義」，語意不符。' }
-        ],
+            { text: '降{ふ}り始{はじ}めた', reason: '錯誤：這是「同義」，語意不符。' }],
         correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】下起雨來。 \n【活用】五段動詞「降り出す」。\n【延伸】相關詞/混淆項：降り始めた、降って、降ら'
@@ -3677,12 +3417,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「外面還晴天嗎？」\nB：「不，剛才開始 *下起* 雪來了。最好帶把傘去。」',
         level: 'N4',
         options: [
-            { text: '降{ふ}り出{だ}す', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '振{ふ}り出{だ}し', reason: '錯誤：這是「漢字誤用」，語意不符。' },
             { text: '降{ふ}り出{だ}して', reason: '正確！～てくる表示開始。' },
-            { text: '降{ふ}り出{だ}さ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '振{ふ}り出{だ}し', reason: '錯誤：這是「漢字誤用」，語意不符。' },
+            { text: '降{ふ}り出{だ}さ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '降{ふ}り出{だ}す', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】下起雪來。 \n【語義】「～出す」接在動詞連用形後表示突然開始。\n【延伸】相關詞/混淆項：振り出し、降り出さ、降り出す'
     },
@@ -3693,11 +3432,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '因為考試拿到滿分，被老師大大地 *誇獎* 了，好開心。',
         level: 'N4',
         options: [
-            { text: 'ほめて', reason: '錯誤：那是「我誇獎別人」。' },
             { text: 'ほめられ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'ほめ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'ほめられて', reason: '正確！一段受身形。' }
-        ],
+            { text: 'ほめて', reason: '錯誤：那是「我誇獎別人」。' },
+            { text: 'ほめられて', reason: '正確！一段受身形。' }],
         correctIndex: 3,
         tag: 'passive',
         correctRule: '【考點】受身形活用\n【解析】被誇獎。 \n【活用】一段動詞「ほめる」的受身形為「ほめられる」。\n【延伸】相關詞/混淆項：ほめ、ほめて、ほめられ'
@@ -3708,12 +3446,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「新髮型非常適合你耶！」\nB：「真的嗎？被那樣 *誇獎* 的話，會害羞呢。」',
         level: 'N4',
         options: [
-            { text: 'ほめられ', reason: '正確！一段受身形接詞尾。' },
             { text: 'ほめて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'ほめ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'ほめる', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: 'ほめる', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'ほめられ', reason: '正確！一段受身形接詞尾。' },
+            { text: 'ほめ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'passive',
         correctRule: '【考點】受身形活用\n【解析】被誇獎的話。 \n【活用】一段動詞。\n【延伸】相關詞/混淆項：ほめる、ほめて、ほめ'
     },
@@ -3725,10 +3462,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '参{まい}り', reason: '正確！「来る/行く」的謙讓語。' },
-            { text: 'いらっしゃい', reason: '錯誤：那是尊敬語(對方)。' },
             { text: 'き', reason: '錯誤：這是「一般」，語意不符。' },
-            { text: '伺{うかが}い', reason: '錯誤：這是「拜訪」，語意不符。' }
-        ],
+            { text: 'いらっしゃい', reason: '錯誤：那是尊敬語(對方)。' },
+            { text: '伺{うかが}い', reason: '錯誤：這是「拜訪」，語意不符。' }],
         correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】來了/到了。 \n【敬語】「参る」(mairu) 是「行く、来る」的謙讓語。\n【延伸】相關詞/混淆項：伺い、き、いらっしゃい'
@@ -3742,8 +3478,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '参{まい}っ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '参{まい}り', reason: '正確！' },
             { text: '来{き}て', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'いらっしゃい', reason: '錯誤：自方或同僚通常不用尊語。' }
-        ],
+            { text: 'いらっしゃい', reason: '錯誤：自方或同僚通常不用尊語。' }],
         correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】到了。 \n【敬語】謙讓語句型。\n【延伸】相關詞/混淆項：いらっしゃい、参っ、来て'
@@ -3755,12 +3490,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '雖然直到最後都拼命努力，但結果還是在比賽中 *輸* 了。',
         level: 'N4',
         options: [
-            { text: '勝{か}って', reason: '錯誤：那是「贏」。' },
             { text: '負{ま}け', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '失敗{しっぱい}して', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '負{ま}けて', reason: '正確！一段動詞。' }
-        ],
-        correctIndex: 3,
+            { text: '負{ま}けて', reason: '正確！一段動詞。' },
+            { text: '勝{か}って', reason: '錯誤：那是「贏」。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】輸掉了。 \n【活用】一段動詞「負ける」。\n【延伸】相關詞/混淆項：負け、失敗して、勝って'
     },
@@ -3770,12 +3504,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「昨天的足球比賽怎麼樣了？」\nB：「很遺憾 *輸* 了。下次絕對想要贏。」',
         level: 'N4',
         options: [
+            { text: '負{ま}けて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '負{ま}け', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '負{ま}けた', reason: '正確！過去式。' },
-            { text: '勝{か}てなかった', reason: '錯誤：這是「沒贏」，語意不符。' },
-            { text: '負{ま}けて', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '勝{か}てなかった', reason: '錯誤：這是「沒贏」，語意不符。' }],
+        correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】輸了。 \n【活用】一段動詞。\n【延伸】相關詞/混淆項：勝てなかった、負けて、負け'
     },
@@ -3786,12 +3519,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '因為很趕， *弄錯* 而拿了別人的傘回家了。',
         level: 'N4',
         options: [
-            { text: '間違{まちが}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '間違{まちが}えり', reason: '錯誤：變位錯誤。' },
             { text: '間違{まちが}えて', reason: '正確！一段動詞。表示狀態或方式。' },
-            { text: '違{ちが}って', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '間違{まちが}えり', reason: '錯誤：變位錯誤。' },
+            { text: '違{ちが}って', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '間違{まちが}い', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】弄錯了。 \n【活用】一段動詞「間違える」。\n【延伸】相關詞/混淆項：違って、間違えり、間違い'
     },
@@ -3801,11 +3533,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「你知道這個漢字的讀法嗎？」\nB：「抱歉，我也常常會 *弄錯*。查查看字典吧。」',
         level: 'N4',
         options: [
+            { text: '間違{まちが}えり', reason: '錯誤：一段動詞不加り。' },
             { text: '間違{まちが}えて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '間違{まちが}えっ', reason: '錯誤：變位錯誤。' },
-            { text: '間違{まちが}えり', reason: '錯誤：一段動詞不加り。' },
-            { text: '間違{まちが}え', reason: '正確！～ちゃう是「～てしまう」的口語。' }
-        ],
+            { text: '間違{まちが}え', reason: '正確！～ちゃう是「～てしまう」的口語。' }],
         correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】弄錯了。 \n【口語】「～ちゃう」前接動詞て形（一段動詞去る接て再縮略）。\n【延伸】相關詞/混淆項：間違えっ、間違えて、間違えり'
@@ -3817,12 +3548,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '從山上 *看得到* 漂亮的海洋，所以用相機拍了很多照片。',
         level: 'N4',
         options: [
-            { text: '見{み}て', reason: '錯誤：接續不對。' },
-            { text: '見{み}られた', reason: '錯誤：那是「見られる」指有機會看或被看。' },
             { text: '見{み}えた', reason: '正確！可能動詞(自動呈現)。表示自然映入眼簾。' },
-            { text: '見{み}た', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '見{み}た', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '見{み}られた', reason: '錯誤：那是「見られる」指有機會看或被看。' },
+            { text: '見{み}て', reason: '錯誤：接續不對。' }],
+        correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】看得見海。 \n【用法】「見える」表示事物自然進入視野。\n【延伸】相關詞/混淆項：見た、見て、見られた'
     },
@@ -3832,12 +3562,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「在那邊站著的人是誰呢？」\nB：「因為太遠了不太 *看得到*，但大概是田中先生吧。」',
         level: 'N4',
         options: [
+            { text: '見{み}て', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '見{み}', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '見{み}え', reason: '正確！一段動詞否定形。' },
-            { text: '見{み}られ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '見{み}て', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '見{み}られ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'negative',
         correctRule: '【考點】文法與語義\n【解析】看不清楚。 \n【活用】一段動詞「見える」。\n【延伸】相關詞/混淆項：見られ、見て、見'
     },
@@ -3850,9 +3579,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '見{み}つかる', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '見{み}つかった', reason: '正確！五段自動詞。表示東西被發現。' },
-            { text: '見{み}つけた', reason: '錯誤：那是「我發現了」(他動詞)。' },
-            { text: '見{み}つかって', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '見{み}つかって', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '見{み}つけた', reason: '錯誤：那是「我發現了」(他動詞)。' }],
         correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】被找到了。 \n【自他動詞】「見つかる」(自動詞，被找到) vs 「見つける」(他動詞，去尋找並發現)。\n【延伸】相關詞/混淆項：見つかる、見つけた、見つかって'
@@ -3863,12 +3591,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「丟失的鑰匙還沒 *找到* 嗎？」\nB：「嗯，雖然把家裡全部找過了，但哪裡都沒有。」',
         level: 'N4',
         options: [
-            { text: '見{み}つかって', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '見{み}つかる', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '見{み}つから', reason: '正確！五段否定連用。' },
-            { text: '見{み}つけ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '見{み}つかって', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '見{み}つけ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'negative',
         correctRule: '【考點】文法與語義\n【解析】沒被找到。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：見つけ、見つかって、見つかる'
     },
@@ -3880,11 +3607,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '見{み}をつけて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '見{み}つかった', reason: '錯誤：那是自動詞。' },
             { text: '見{み}つけた', reason: '正確！一段他動詞。表示人去發現。' },
-            { text: '見{み}つけ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '見{み}つかった', reason: '錯誤：那是自動詞。' },
+            { text: '見{み}つけ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】發現了。 \n【活用】一段動詞「見つける」。\n【延伸】相關詞/混淆項：見をつけて、見つかった、見つけ'
     },
@@ -3894,12 +3620,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「已經 *找到* 新工作了嗎？」\nB：「不，還在找。想在下週前定下來。」',
         level: 'N4',
         options: [
-            { text: '見{み}つかっ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '見{み}つけられ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '見{み}つけ', reason: '正確！一段連用。' },
-            { text: '探{さが}し', reason: '錯誤：這是「找」，語意不符。' }
-        ],
-        correctIndex: 2,
+            { text: '見{み}つかっ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '探{さが}し', reason: '錯誤：這是「找」，語意不符。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】找到了。 \n【用法】詢問人的自發行為。\n【延伸】相關詞/混淆項：見つかっ、見つけられ、探し'
     },
@@ -3910,12 +3635,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '在飛機朝著目的地 *飛行* 期間，靠看書度過。',
         level: 'N4',
         options: [
-            { text: '行{い}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '着{つ}いて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '向{む}かって', reason: '正確！五段促音便。表示方向或目標。' },
             { text: '向{む}かい', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '向{む}かって', reason: '正確！五段促音便。表示方向或目標。' }
-        ],
-        correctIndex: 3,
+            { text: '着{つ}いて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '行{い}って', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】朝著。 \n【活用】五段動詞「向かう」。\n【延伸】相關詞/混淆項：向かい、着いて、行って'
     },
@@ -3925,12 +3649,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「現在在哪裡？」\nB：「快要 *到* 車站了。我想再過5分鐘就會到。」',
         level: 'N4',
         options: [
-            { text: '行{い}く', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '向{む}かう', reason: '正確！連體形接處。' },
+            { text: '行{い}く', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '向{む}かって', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '向{む}かい', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '向{む}かい', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】正前往。 \n【語義】朝著某個方向移動。\n【延伸】相關詞/混淆項：向かい、向かって、行く'
     },
@@ -3941,12 +3664,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '去機場 *接* 客人時，飛機延誤了30分鐘。',
         level: 'N4',
         options: [
-            { text: '迎{むか}え', reason: '正確！一段連用形。去接人的慣用法。' },
             { text: '會{あ}い', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '送{おく}り', reason: '錯誤：那是「送行」。' },
-            { text: '待{ま}ち', reason: '錯誤：這是「等」，語意不符。' }
-        ],
-        correctIndex: 0,
+            { text: '迎{むか}え', reason: '正確！一段連用形。去接人的慣用法。' },
+            { text: '待{ま}ち', reason: '錯誤：這是「等」，語意不符。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】去迎接。 \n【活用】一段動詞「迎える」。\n【延伸】相關詞/混淆項：待ち、送り、會い'
     },
@@ -3956,12 +3678,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「新年要怎麼過？」\nB：「打算和家人一起 *迎接* 新的一年。就在家裡放鬆。」',
         level: 'N4',
         options: [
-            { text: 'おくる', reason: '錯誤：這是「送走/度過」，語意不符。' },
-            { text: '迎{むか}えて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '迎{むか}える', reason: '正確！辭書形接つもり。' },
-            { text: '迎{むか}え', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '迎{むか}えて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '迎{むか}え', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'おくる', reason: '錯誤：這是「送走/度過」，語意不符。' }],
+        correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】迎接（新年）。 \n【語義】迎向某個時期或活動。\n【延伸】相關詞/混淆項：迎えて、おくる、迎え'
     },
@@ -3972,11 +3693,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '這裡的蛋糕很有名，您已經 *吃過* 了嗎？',
         level: 'N4',
         options: [
-            { text: '召{め}し上{あ}がっ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '召{め}し上{あ}がりました', reason: '正確！五段尊敬語。' },
             { text: '食{た}べました', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '飲{の}みました', reason: '錯誤：蛋糕用吃的。' }
-        ],
+            { text: '召{め}し上{あ}がりました', reason: '正確！五段尊敬語。' },
+            { text: '召{め}し上{あ}がっ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '飲{の}みました', reason: '錯誤：蛋糕用吃的。' }],
         correctIndex: 1,
         tag: 'keigo',
         correctRule: '【考點】敬語表現\n【解析】吃過了嗎？ \n【敬語】「召し上がる」是「食べる、飲む」的尊敬語。\n【延伸】相關詞/混淆項：召し上がっ、食べました、飲みました'
@@ -3990,8 +3710,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '食{た}べます', reason: '錯誤：考飲料。' },
             { text: 'いただきます', reason: '錯誤：那是謙讓語(B說的)。' },
             { text: '飲{の}みます', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '召{め}し上{あ}がります', reason: '正確！尊語問句。' }
-        ],
+            { text: '召{め}し上{あ}がります', reason: '正確！尊語問句。' }],
         correctIndex: 3,
         tag: 'keigo',
         correctRule: '【考點】敬語表現\n【解析】要喝什麼？ \n【注意】尊敬語用於詢問對方的行為。\n【延伸】相關詞/混淆項：いただきます、食べます、飲みます'
@@ -4003,12 +3722,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '想向您 *表達* 前些日子的謝意，所以寫了信。',
         level: 'N4',
         options: [
+            { text: 'おっしゃっ', reason: '錯誤：那是尊敬語。' },
             { text: '言{い}い', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '申{もう}し上{あ}げ', reason: '正確！一段謙讓語。' },
-            { text: 'おっしゃっ', reason: '錯誤：那是尊敬語。' },
-            { text: '申{もう}し', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '申{もう}し', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'keigo',
         correctRule: '【考點】敬語表現\n【解析】表達（謝意）。 \n【敬語】「申し上げる」是「言う」的謙讓語（鄭重）。\n【延伸】相關詞/混淆項：言い、申し、おっしゃっ'
     },
@@ -4018,12 +3736,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「有話要傳給部長嗎？」\nB探：「是的，請幫我 *轉達* 問候。」',
         level: 'N4',
         options: [
-            { text: 'おっしゃって', reason: '錯誤：尊語語氣不合。' },
             { text: '言{い}って', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '申{もう}し上{あ}げて', reason: '正確！～てください句型。' },
-            { text: '申{もう}し', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '申{もう}し', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'おっしゃって', reason: '錯誤：尊語語氣不合。' }],
+        correctIndex: 1,
         tag: 'keigo',
         correctRule: '【考點】敬語表現\n【解析】轉達。 \n【敬語】謙讓語用法，表示對受話者的敬意。\n【延伸】相關詞/混淆項：言って、申し、おっしゃって'
     },
@@ -4034,12 +3751,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '我 *姓* 田中，請問鈴木老師在嗎？',
         level: 'N4',
         options: [
-            { text: '参{まい}ります', reason: '錯誤：那是「去/來」。' },
-            { text: '申{もう}します', reason: '正確！五段謙讓語。用於自我介紹。' },
             { text: '言{い}います', reason: '錯誤：這是「一般」，語意不符。' },
-            { text: 'おっしゃいます', reason: '錯誤：那是對方說。' }
-        ],
-        correctIndex: 1,
+            { text: 'おっしゃいます', reason: '錯誤：那是對方說。' },
+            { text: '参{まい}ります', reason: '錯誤：那是「去/來」。' },
+            { text: '申{もう}します', reason: '正確！五段謙讓語。用於自我介紹。' }],
+        correctIndex: 3,
         tag: 'keigo',
         correctRule: '【考點】敬語表現\n【解析】叫作/姓。 \n【敬語】「申す」(mousu) 是「言う」的謙讓語。\n【延伸】相關詞/混淆項：おっしゃいます、言います、参ります'
     },
@@ -4051,9 +3767,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '申{もう}します', reason: '正確！連用形接ます。' },
             { text: '申{もう}して', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'おっしゃい', reason: '錯誤：不能對自己用尊語。' },
-            { text: 'いい', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: 'いい', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'おっしゃい', reason: '錯誤：不能對自己用尊語。' }],
         correctIndex: 0,
         tag: 'keigo',
         correctRule: '【考點】敬語表現\n【解析】叫作。 \n【敬語】謙讓語句型。\n【延伸】相關詞/混淆項：申して、いい、おっしゃい'
@@ -4065,12 +3780,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '因為忘了東西而 *回到* 家後，約定好的時間就遲到了。',
         level: 'N4',
         options: [
-            { text: '戻{もど}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '戻{もど}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '戻{もど}った', reason: '正確！五段促音便。～たら句型。' },
-            { text: '帰{かえ}った', reason: '錯誤：這是「回家」，語意不符。' }
-        ],
-        correctIndex: 2,
+            { text: '戻{もど}る', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '帰{かえ}った', reason: '錯誤：這是「回家」，語意不符。' }],
+        correctIndex: 1,
         tag: 'grammar',
         correctRule: '【考點】文法接續\n【解析】回到。 \n【活用】五段動詞「戻る」。\n【延伸】相關詞/混淆項：戻る、戻り、帰った'
     },
@@ -4080,12 +3794,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「會議準備好了嗎？」\nB：「好的。我 *回* 座位拿資料就來，請稍等一下。」',
         level: 'N4',
         options: [
-            { text: '戻{もど}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '戻{もど}って', reason: '正確！～てくる句型。' },
+            { text: '行{い}って', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '戻{もど}ら', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '行{い}って', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '戻{もど}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '戻{もど}って', reason: '正確！～てくる句型。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】回位子。 \n【句型】「～てくる」表示去去就回。\n【延伸】相關詞/混淆項：行って、戻り、戻ら'
     },
@@ -4096,12 +3809,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '生日從朋友那裡 *收到* 了超棒的禮物，非常感動。',
         level: 'N4',
         options: [
-            { text: 'あげて', reason: '錯誤：那是給我。' },
             { text: 'もらわ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'くれて', reason: '錯誤：那是別人給我。' },
-            { text: 'もらって', reason: '正確！五段促音便. 表示接收。' }
-        ],
-        correctIndex: 3,
+            { text: 'もらって', reason: '正確！五段促音便. 表示接收。' },
+            { text: 'あげて', reason: '錯誤：那是給我。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】收到了。 \n【授受動詞】「もらう」表示從別處接收。\n【延伸】相關詞/混淆項：あげて、もらわ、くれて'
     },
@@ -4111,11 +3823,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「那隻手錶，好帥喔！」\nB：「謝謝。這是從父親那裡 *得到* 的。」',
         level: 'N4',
         options: [
-            { text: 'もらい', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'もらいた', reason: '錯誤：促音脫落。' },
+            { text: 'くれた', reason: '錯誤：這是「父がくれた」，語意不符。' },
             { text: 'もらった', reason: '正確！過去式。' },
-            { text: 'くれた', reason: '錯誤：這是「父がくれた」，語意不符。' }
-        ],
+            { text: 'もらい', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】得到的。 \n【授受動詞】注意主語是「我」時用もらう。\n【延伸】相關詞/混淆項：もらい、くれた、もらいた'
@@ -4129,9 +3840,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '漬{つ}けて', reason: '正確！一段動詞て形接おく。' },
             { text: '入{い}れて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '漬{つ}け', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '飾{かざ}って', reason: '錯誤：那是裝飾。' }
-        ],
+            { text: '飾{かざ}って', reason: '錯誤：那是裝飾。' },
+            { text: '漬{つ}け', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】泡、醃。 \n【活用】一段動詞「漬ける」。\n【延伸】相關詞/混淆項：漬け、飾って、入れて'
@@ -4144,9 +3854,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '入{い}れて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '漬{つ}けて', reason: '正確！～てから句型。' },
-            { text: '漬{つ}け', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'おく', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: 'おく', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '漬{つ}け', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】浸泡。 \n【用法】「～てから」表示行為的先後順序。\n【延伸】相關詞/混淆項：おく、漬け、入れて'
@@ -4158,12 +3867,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '下雨天 *持續* 了一週之久，洗好的衣服都晾不乾，讓人很困擾。',
         level: 'N4',
         options: [
+            { text: '降{ふ}った', reason: '錯誤：這是「降雨」，語意不符。' },
             { text: '続{つづ}いた', reason: '正確！五段自動詞。表示狀態持續。' },
-            { text: '続{つづ}けた', reason: '錯誤：那是他動詞。' },
             { text: '続{つづ}き', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '降{ふ}った', reason: '錯誤：這是「降雨」，語意不符。' }
-        ],
-        correctIndex: 0,
+            { text: '続{つづ}けた', reason: '錯誤：那是他動詞。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】持續。 \n【活用】五段自動詞「続く」。\n【延伸】相關詞/混淆項：続けた、続き、降った'
     },
@@ -4173,12 +3881,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「那部連續劇還在演嗎？」\nB：「嗯，好像會 *持續* 到下週。一定要看喔。」',
         level: 'N4',
         options: [
-            { text: '続{つづ}く', reason: '正確！終止形接みたい。' },
             { text: '続{つづ}け', reason: '錯誤：自他動詞誤用。' },
-            { text: '讀{よ}む', reason: '錯誤：考連續劇。' },
-            { text: '続{つづ}い', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '続{つづ}く', reason: '正確！終止形接みたい。' },
+            { text: '続{つづ}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '讀{よ}む', reason: '錯誤：考連續劇。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】持續。 \n【自他動詞】「続く」(自動詞，物體持續) vs 「続ける」(他動詞，人去持續)。\n【延伸】相關詞/混淆項：続け、讀む、続い'
     },
@@ -4189,12 +3896,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '每天 *持續* 學習日語雖然很辛苦，但非常重要。',
         level: 'N4',
         options: [
-            { text: '続{つづ}く', reason: '錯誤：自動詞。' },
             { text: '続{つづ}ける', reason: '正確！一段他動詞。表示意識地進行。' },
+            { text: '続{つづ}く', reason: '錯誤：自動詞。' },
             { text: '勉{べん}強{きょう}する', reason: '錯誤：重複詞意。' },
-            { text: '続{つづ}けて', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '続{つづ}けて', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】持續。 \n【活用】一段他動詞「続ける」。\n【延伸】相關詞/混淆項：勉強する、続く、続けて'
     },
@@ -4204,12 +3910,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「氣色看起來不太好，沒事吧？」\nB：「嗯，但我打算把這份工作 *完成/持續* 到最後。我會加油的。」',
         level: 'N4',
         options: [
+            { text: '続{つづ}け', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '続{つづ}ける', reason: '正確！辭書形接つもり。' },
             { text: '続{つづ}けて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '続{つづ}け', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'する', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: 'する', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】持續下去。 \n【注意】表達人的意志。\n【延伸】相關詞/混淆項：する、続け、続けて'
     },
@@ -4220,12 +3925,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '週末去了海邊，挑戰 *釣* 大魚。',
         level: 'N4',
         options: [
+            { text: '釣{つ}って', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '釣{つ}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '捕{つか}まえる', reason: '錯誤：這是「捕獲」，語意不符。' },
-            { text: '釣{つ}る', reason: '正確！辭書形接助名詞。' },
-            { text: '釣{つ}って', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '釣{つ}る', reason: '正確！辭書形接助名詞。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】釣。 \n【活用】五段動詞「釣る」。\n【延伸】相關詞/混淆項：捕まえる、釣り、釣って'
     },
@@ -4237,9 +3941,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '游{あよ}ぎ', reason: '錯誤：這是「游泳」，語意不符。' },
             { text: '釣{つ}り', reason: '正確！連用形接に。' },
-            { text: '釣{つ}る', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '釣{つ}っ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '釣{つ}っ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '釣{つ}る', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】去釣魚。 \n【用法】「動詞連用形 + に行く」表示目的應。\n【延伸】相關詞/混淆項：游ぎ、釣っ、釣る'
@@ -4251,12 +3954,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '天氣很好，所以 *帶* 狗去公園一起慢跑。',
         level: 'N4',
         options: [
-            { text: '連{つ}れて', reason: '正確！一段連用。連動句型。' },
             { text: '持{も}って', reason: '錯誤：帶寵物用連れる。' },
-            { text: '連{つ}れる', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '連{つ}れ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '連{つ}れ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '連{つ}れて', reason: '正確！一段連用。連動句型。' },
+            { text: '連{つ}れる', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】帶著（伴隨）。 \n【活用】一段動詞「連れる」。\n【延伸】相關詞/混淆項：連れる、連れ、持って'
     },
@@ -4266,12 +3968,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「明天的派對，可以 *帶* 小孩過來嗎？」\nB：「當然可以！我很期待喔。」',
         level: 'N4',
         options: [
-            { text: '連{つ}れ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '連{つ}れる', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '連{つ}れてい', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '連{つ}れて', reason: '正確！～てくる句型。' }
-        ],
-        correctIndex: 3,
+            { text: '連{つ}れ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '連{つ}れて', reason: '正確！～てくる句型。' },
+            { text: '連{つ}れる', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】帶過來。 \n【注意】對人或動物使用「連れる」，對物品使用「持つ」。\n【延伸】相關詞/混淆項：連れる、連れてい、連れ'
     },
@@ -4282,12 +3983,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '因為母親看起來很忙，所以 *幫忙* 了晚餐的準備。',
         level: 'N4',
         options: [
-            { text: '手伝{てつだ}わ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '助{たす}け', reason: '錯誤：這是「救助/幫忙」，語意不符。' },
             { text: '手伝{てつだ}おう', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '手伝{てつだ}い', reason: '正確！五段連用結合ました。' }
-        ],
-        correctIndex: 3,
+            { text: '手伝{てつだ}わ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '手伝{てつだ}い', reason: '正確！五段連用結合ました。' },
+            { text: '助{たす}け', reason: '錯誤：這是「救助/幫忙」，語意不符。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】幫忙。 \n【活用】五段動詞「手伝う」。\n【延伸】相關詞/混淆項：助け、手伝おう、手伝わ'
     },
@@ -4297,12 +3997,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「搬家準備，要 *幫忙* 嗎？」\nB：「謝謝你！幫了大忙了。」',
         level: 'N4',
         options: [
-            { text: '手伝{てつだ}っ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '手伝{てつだ}わ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '手伝{てつだ}う', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '手伝{てつだ}い', reason: '正確！～ましょうか問句。' }
-        ],
-        correctIndex: 3,
+            { text: '手伝{てつだ}い', reason: '正確！～ましょうか問句。' },
+            { text: '手伝{てつだ}わ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '手伝{てつだ}っ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】幫忙吧？ \n【活用】連用形。\n【延伸】相關詞/混淆項：手伝っ、手伝う、手伝わ'
     },
@@ -4313,12 +4012,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '每天 *經過* 這條路去學校，途中的公園裡開著漂亮的花。',
         level: 'N4',
         options: [
-            { text: '走{はし}って', reason: '錯誤：這是「跑」，語意不符。' },
             { text: '通{とお}って', reason: '正確！五段促音便。表示移動路徑。' },
+            { text: '步{ある}いて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '通{とお}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '步{ある}いて', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '走{はし}って', reason: '錯誤：這是「跑」，語意不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】經過、通過。 \n【活用】五段動詞「通る」。注意助詞通常用「～を通る」。\n【延伸】相關詞/混淆項：步いて、通り、走って'
     },
@@ -4329,10 +4027,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '通{とお}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '退{の}いて', reason: '錯誤：叫對方讓開。' },
+            { text: '通{とお}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '通{とお}らして', reason: '正確！使役連用。懇求通過。' },
-            { text: '通{とお}り', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '退{の}いて', reason: '錯誤：叫對方讓開。' }],
         correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】讓(我)過一下。 \n【用法】～てください常用格式。\n【延伸】相關詞/混淆項：退いて、通って、通り'
@@ -4344,12 +4041,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '旅行時 *住* 在古老的旅館，感受到了日本文化。',
         level: 'N4',
         options: [
+            { text: '止{と}まって', reason: '錯誤：同音字錯誤(停止)。' },
             { text: '居{い}て', reason: '錯誤：語感較弱。' },
             { text: '宿{やど}って', reason: '錯誤：這是「較文學」，語意不符。' },
-            { text: '泊{と}まって', reason: '正確！五段促音便。' },
-            { text: '止{と}まって', reason: '錯誤：同音字錯誤(停止)。' }
-        ],
-        correctIndex: 2,
+            { text: '泊{と}まって', reason: '正確！五段促音便。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】外宿。 \n【語義】「泊まる」指在那裡過夜。住家則用「住む」。\n【延伸】相關詞/混淆項：止まって、居て、宿って'
     },
@@ -4359,12 +4055,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「今晚要 *住* 在哪裡？」\nB：「預約了車站附近的飯店。」',
         level: 'N4',
         options: [
-            { text: '泊{と}まる', reason: '正確！連體形。' },
-            { text: '居{い}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '泊{と}まって', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '泊{と}まり', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '居{い}る', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '泊{と}まる', reason: '正確！連體形。' },
+            { text: '泊{と}まり', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】外宿。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：泊まり、泊まって、居る'
     },
@@ -4375,12 +4070,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '燈泡燒壞變暗了，所以 *更換* 了新的。',
         level: 'N4',
         options: [
-            { text: '變{か}え', reason: '錯誤：這是「改變」，語意不符。' },
             { text: '取{と}り替{か}え', reason: '正確！一段連用。' },
             { text: '返{かえ}し', reason: '錯誤：這是「歸還」，語意不符。' },
-            { text: '直{なお}し', reason: '錯誤：這是「修繕」，語意不符。' }
-        ],
-        correctIndex: 1,
+            { text: '變{か}え', reason: '錯誤：這是「改變」，語意不符。' },
+            { text: '直{なお}し', reason: '錯誤：這是「修繕」，語意不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】更換。 \n【活用】複合動詞「取り替える」(一段)。\n【延伸】相關詞/混淆項：直し、變え、返し'
     },
@@ -4390,12 +4084,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「如果尺寸不合，可以讓我 *更換* 嗎？」\nB：「是的，只要有收據，一週內都沒問題。」',
         level: 'N4',
         options: [
-            { text: '取{と}り替{か}えて', reason: '正確！～てもらう句型。' },
-            { text: '替{か}えて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '取{と}り替{か}え', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '返{かえ}して', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '取{と}り替{か}え', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '替{か}えて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '取{と}り替{か}えて', reason: '正確！～てもらう句型。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請人更換。 \n【活用】一段動詞。\n【延伸】相關詞/混淆項：取り替え、返して、替えて'
     },
@@ -4406,12 +4099,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '雖然想嘗試自己 *修理* 壞掉的手錶，但太難了沒辦法做到。',
         level: 'N4',
         options: [
+            { text: '直{なお}る', reason: '錯誤：自動詞。' },
             { text: '治{なお}そう', reason: '錯誤：同音字錯誤(治病)。' },
             { text: '直{なお}そう', reason: '正確！五段意志形。～ようとする句型。' },
-            { text: '直{なお}し', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '直{なお}る', reason: '錯誤：自動詞。' }
-        ],
-        correctIndex: 1,
+            { text: '直{なお}し', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'volitional',
         correctRule: '【考點】文法與語義\n【解析】修理。 \n【活用】五段動詞「直す」。注意漢字區分。\n【延伸】相關詞/混淆項：直し、直る、治そう'
     },
@@ -4421,11 +4113,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「抱歉，可以幫我 *修改* 這份作文嗎？」\nB：「可以喔。來來，讓我看看。」',
         level: 'N4',
         options: [
-            { text: '直{なお}し', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '修{おさ}めて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '直{なお}して', reason: '正確！～ていただく句型。' },
             { text: '見{み}て', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '修{おさ}めて', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '直{なお}し', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】修改、更正。 \n【語義】除了修東西，也可用於修正錯處。\n【延伸】相關詞/混淆項：直し、修めて、見て'
@@ -4437,12 +4128,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '電腦壞掉了很困擾，但今天早上終於 *修好了*，所以可以開始工作了。',
         level: 'N4',
         options: [
-            { text: '直{なお}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '治{なお}った', reason: '錯誤：同音字錯誤(指病好)。' },
             { text: '直{なお}した', reason: '錯誤：那是「修好了」(他動詞)。' },
-            { text: '直{なお}った', reason: '正確！五段自動詞。表示損壞狀態恢復。' }
-        ],
-        correctIndex: 3,
+            { text: '治{なお}った', reason: '錯誤：同音字錯誤(指病好)。' },
+            { text: '直{なお}った', reason: '正確！五段自動詞。表示損壞狀態恢復。' },
+            { text: '直{なお}り', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】修好了。 \n【自他動詞】「直る」(自動詞，東西好了) vs 「直す」(他動詞，人去修)。\n【延伸】相關詞/混淆項：直した、直り、治った'
     },
@@ -4452,12 +4142,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「壞掉的手機 *修好了* 嗎？」\nB：「沒，還沒。打算明天拿去送修。」',
         level: 'N4',
         options: [
-            { text: '直{なお}る', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '直{なお}っ', reason: '正確！連用形結合た。' },
             { text: '直{なお}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '直{なお}した', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '直{なお}した', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '直{なお}る', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '直{なお}っ', reason: '正確！連用形結合た。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】修好了。 \n【注意】自動詞用法，描述狀態轉變。\n【延伸】相關詞/混淆項：直る、直した、直り'
     },
@@ -4468,12 +4157,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '本來想著感冒 *好了* 就要去公園，但因為還在發燒，所以在家睡覺。',
         level: 'N4',
         options: [
-            { text: '直{なお}っ', reason: '錯誤：同音字錯誤(修好)。' },
             { text: '治{なお}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '治{なお}っ', reason: '正確！五段自動詞。指變健康。' },
-            { text: '治{なお}る', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '直{なお}っ', reason: '錯誤：同音字錯誤(修好)。' },
+            { text: '治{なお}る', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】痊癒。 \n【漢字區分】「治る」(變健康) vs 「直る」(修好東西)。\n【延伸】相關詞/混淆項：治る、治り、直っ'
     },
@@ -4484,10 +4172,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '治{なお}り', reason: '正確！連用形。' },
+            { text: '治{なお}っ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '直{なお}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '直{なお}っ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '治{なお}っ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '直{なお}っ', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】康復。 \n【用法】丁寧問句。\n【延伸】相關詞/混淆項：直っ、治っ、直り'
@@ -4500,10 +4187,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '泣{な}く', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '泣{な}か', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '泣{な}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '泣{な}いて', reason: '正確！五段促音便。～てしまう句型。' },
-            { text: '泣{な}き', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '泣{な}か', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】哭。 \n【活用】五段動詞「泣く」。促音便：泣いて。\n【延伸】相關詞/混淆項：泣き、泣く、泣か'
@@ -4514,11 +4200,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「為什麼隔壁房間的嬰兒在 *哭* 呢？」\nB：「我想是肚子餓了。快要到餵奶的時間了。」',
         level: 'N4',
         options: [
-            { text: '泣{な}か', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '泣{な}く', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '泣{な}か', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '泣{な}き', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '泣{な}いて', reason: '正確！～ている進行式。' }
-        ],
+            { text: '泣{な}いて', reason: '正確！～ている進行式。' }],
         correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】正在哭。 \n【用法】描述正在發生的動作。\n【延伸】相關詞/混淆項：泣か、泣き、泣く'
@@ -4530,12 +4215,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '重要的錢包 *弄丟/不見了* 所以去了警察局，但想不起是在哪裡弄丟的。',
         level: 'N4',
         options: [
-            { text: '無{な}くなった', reason: '正確！五段自動詞。表示消失。' },
+            { text: '無{な}くなる', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '無{な}くなり', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '無{な}くした', reason: '錯誤：那是「我弄丟了」(他動詞)。' },
-            { text: '無{な}くなる', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '無{な}くなった', reason: '正確！五段自動詞。表示消失。' },
+            { text: '無{な}くした', reason: '錯誤：那是「我弄丟了」(他動詞)。' }],
+        correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】不見了、遺失。 \n【自他動詞】「無くなる」(自動詞，東西不見) vs 「無くす」(他動詞，人弄丟)。\n【延伸】相關詞/混淆項：無くなる、無くなり、無くした'
     },
@@ -4545,12 +4229,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「冰箱裡的牛奶 *沒了* 嗎？」\nB：「啊，最後是被我喝光了。抱歉，我去買回來。」',
         level: 'N4',
         options: [
-            { text: '亡{な}くなっ', reason: '錯誤：同音字錯誤(死亡)。' },
             { text: '無{な}くし', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '無{な}くなる', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '無{な}くなっ', reason: '正確！連用形結合た。這裡指用完。' }
-        ],
-        correctIndex: 3,
+            { text: '亡{な}くなっ', reason: '錯誤：同音字錯誤(死亡)。' },
+            { text: '無{な}くなっ', reason: '正確！連用形結合た。這裡指用完。' },
+            { text: '無{な}くなる', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】沒了、用完。 \n【語義】除了東西遺失，也用於資源耗盡。\n【延伸】相關詞/混淆項：無くなる、亡くなっ、無くし'
     },
@@ -4561,12 +4244,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '我小時候祖父 *過世了*，我覺得從那時起家族的羈絆變得更強了。',
         level: 'N4',
         options: [
+            { text: '亡{な}くなり', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '死{し}んで', reason: '錯誤：這是「較直白/不敬」，語意不符。' },
             { text: '亡{な}くなって', reason: '正確！五段促音便。指死亡的鄭重說法。' },
-            { text: '亡{な}くなり', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '無{な}くなって', reason: '錯誤：同音字錯誤(消失)。' }
-        ],
-        correctIndex: 1,
+            { text: '無{な}くなって', reason: '錯誤：同音字錯誤(消失)。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】過世。 \n【活用】五段動詞「亡くなる」。促音便：亡くなって。\n【延伸】相關詞/混淆項：無くなって、亡くなり、死んで'
     },
@@ -4576,12 +4258,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「看新聞說，那位有名的歌手好像 *過世了* 耶。」\nB：「咦，真的嗎？明明到昨天都還在電視上看到，真不敢相信。」',
         level: 'N4',
         options: [
-            { text: '亡{な}くなり', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '逃{に}げた', reason: '錯誤：逃走了。' },
             { text: '亡{な}くなった', reason: '正確！過去式。' },
-            { text: '無{な}くなった', reason: '錯誤：同音字錯誤。' }
-        ],
-        correctIndex: 2,
+            { text: '亡{な}くなり', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '無{な}くなった', reason: '錯誤：同音字錯誤。' },
+            { text: '逃{に}げた', reason: '錯誤：逃走了。' }],
+        correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】過世。 \n【注意】用於對逝者的尊重。\n【延伸】相關詞/混淆項：亡くなり、逃げた、無くなった'
     },
@@ -4592,12 +4273,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '部長，明天下午您 *計畫* 做什麼呢？我帶了會議資料過來。',
         level: 'N4',
         options: [
-            { text: 'する', reason: '錯誤：這是「一般」，語意不符。' },
-            { text: 'される', reason: '錯誤：這是「尊敬動詞」，語意不符。' },
+            { text: 'なさる', reason: '正確！五段尊敬語。用於詢問長輩或上司。' },
             { text: 'なさい', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'なさる', reason: '正確！五段尊敬語。用於詢問長輩或上司。' }
-        ],
-        correctIndex: 3,
+            { text: 'される', reason: '錯誤：這是「尊敬動詞」，語意不符。' },
+            { text: 'する', reason: '錯誤：這是「一般」，語意不符。' }],
+        correctIndex: 0,
         tag: 'keigo',
         correctRule: '【考點】敬語表現\n【解析】做（尊敬語）。 \n【敬語】「なさる」是「する」的尊敬語。\n【延伸】相關詞/混淆項：なさい、される、する'
     },
@@ -4608,10 +4288,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: 'なさって', reason: '正確！～ている進行式的尊敬語。' },
+            { text: 'されて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'して', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'なさい', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'されて', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: 'なさい', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 0,
         tag: 'keigo',
         correctRule: '【考點】敬語表現\n【解析】正在做（尊敬語）。 \n【活用】注意促音便「なさって」（特殊五段）。\n【延伸】相關詞/混淆項：されて、して、なさい'
@@ -4623,12 +4302,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '上課中電話突然 *響了*，結果被老師罵了。',
         level: 'N4',
         options: [
-            { text: '鳴{な}って', reason: '正確！五段促音便。表示聲音發出。' },
-            { text: '鳴{な}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '鳴{な}ら', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '鳴{な}り', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '鳴{な}って', reason: '正確！五段促音便。表示聲音發出。' },
+            { text: '鳴{な}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '鳴{な}る', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】響。 \n【活用】五段動詞「鳴る」。\n【延伸】相關詞/混淆項：鳴る、鳴ら、鳴り'
     },
@@ -4638,12 +4316,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「啊，門鈴 *響了*。好像有人來了。」\nB：「好——的，現在就去！」',
         level: 'N4',
         options: [
-            { text: '鳴{な}っ', reason: '正確！連用形結合た。' },
+            { text: '鳴{な}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '鳴{な}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '鳴{な}ら', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '鳴{な}る', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '鳴{な}っ', reason: '正確！連用形結合た。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】響了。 \n【用法】描述瞬間發生的聲音。\n【延伸】相關詞/混淆項：鳴り、鳴ら、鳴る'
     },
@@ -4654,12 +4331,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '剛來日本時生活很辛苦，但現在已經 *習慣了*，每天都很開心。',
         level: 'N4',
         options: [
-            { text: '慣{な}れる', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '慣{な}れ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '慣{な}れて', reason: '正確！一段動詞。連用中斷。' },
-            { text: '分{わ}かって', reason: '錯誤：這是「理解」，語意不符。' }
-        ],
-        correctIndex: 2,
+            { text: '慣{な}れる', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '分{わ}かって', reason: '錯誤：這是「理解」，語意不符。' },
+            { text: '慣{な}れ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】習慣。 \n【活用】一段動詞「慣れる」。通常接助詞「に」。\n【延伸】相關詞/混淆項：分かって、慣れる、慣れ'
     },
@@ -4669,12 +4345,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「對於新工作已經 *習慣* 了嗎？」\nB：「是的，因為大家都很溫柔，所以馬上就學會了。」',
         level: 'N4',
         options: [
-            { text: '慣{な}れ', reason: '正確！連用形結合た。' },
             { text: '慣{な}れ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '慣{な}れよ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '慣{な}れて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '慣{な}れよ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '慣{な}れ', reason: '正確！連用形結合た。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】習慣了。 \n【用法】詢問適應狀態。\n【延伸】相關詞/混淆項：慣れ、慣れて、慣れよ'
     },
@@ -4685,11 +4360,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '小偷本想侵入家裡，但狗一吠，就慌忙地 *逃* 走了。',
         level: 'N4',
         options: [
-            { text: '走{はし}って', reason: '錯誤：這是「跑」，語意不符。' },
-            { text: '逃{に}げて', reason: '正確！一段動詞。表示脫逃。' },
             { text: '帰{かえ}って', reason: '錯誤：這是「回」，語意不符。' },
-            { text: '逃{に}げ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '逃{に}げて', reason: '正確！一段動詞。表示脫逃。' },
+            { text: '逃{に}げ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '走{はし}って', reason: '錯誤：這是「跑」，語意不符。' }],
         correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】逃走。 \n【活用】一段動詞「逃げる」。\n【延伸】相關詞/混淆項：逃げ、走って、帰って'
@@ -4701,11 +4375,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '逃{に}げる', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '逃{に}げ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '逃{に}げられ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '逃{に}げて', reason: '正確！～てしまう句型。' },
-            { text: '逃{に}げ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '逃{に}げて', reason: '正確！～てしまう句型。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】逃走了。 \n【用法】不經意發生的遺憾事。\n【延伸】相關詞/混淆項：逃げられ、逃げ、逃げる'
     },
@@ -4716,12 +4389,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '田中先生長得和父親一模一樣，即使從遠處看也馬上能認出來。',
         level: 'N4',
         options: [
-            { text: '似{に}', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '見{み}えて', reason: '錯誤：那是看起來。' },
             { text: '似{に}て', reason: '正確！一段動詞。表示狀態的維持。' },
-            { text: '似{に}られ', reason: '錯誤：一般不使用被動或可能。' }
-        ],
-        correctIndex: 2,
+            { text: '見{み}えて', reason: '錯誤：那是看起來。' },
+            { text: '似{に}られ', reason: '錯誤：一般不使用被動或可能。' },
+            { text: '似{に}', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】像。 \n【活用】一段動詞「似る」。注意助詞常接「～に似ている」。\n【延伸】相關詞/混淆項：似、似られ、見えて'
     },
@@ -4733,9 +4405,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '似{に}ている', reason: '正確！表示狀態。' },
             { text: '同{おな}じ', reason: '錯誤：這是「那是形容詞」，語意不符。' },
-            { text: '似{に}る', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '似{に}て', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '似{に}て', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '似{に}る', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】長得像。 \n【用法】描述天生的特徵。\n【延伸】相關詞/混淆項：同じ、似て、似る'
@@ -4747,12 +4418,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '在電車上打瞌睡的時候，包包裡的錢包被 *偷了*。',
         level: 'N4',
         options: [
-            { text: '盗{ぬす}まれ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '盗{ぬす}んで', reason: '錯誤：那是「偷了」(主動)。' },
             { text: '盗{ぬす}まれて', reason: '正確！五段動詞被動態。表示受害。' },
-            { text: '取{と}られて', reason: '錯誤：這是「被拿走」，語意不符。' }
-        ],
-        correctIndex: 2,
+            { text: '取{と}られて', reason: '錯誤：這是「被拿走」，語意不符。' },
+            { text: '盗{ぬす}まれ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】被偷。 \n【語法】受害被動「～に～を…（受動態）」。\n【延伸】相關詞/混淆項：盗んで、取られて、盗まれ'
     },
@@ -4762,11 +4432,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「還好嗎？臉色很糟耶。」\nB：「昨天停在停車場的腳踏車被 *偷了*。太震驚了……。」',
         level: 'N4',
         options: [
-            { text: '盗{ぬす}み', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '盗{ぬす}まれ', reason: '正確！連用形結合た(被動)。' },
             { text: '盗{ぬす}る', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '盗{ぬす}ん', reason: '錯誤：那是我偷了。' }
-        ],
+            { text: '盗{ぬす}まれ', reason: '正確！連用形結合た(被動)。' },
+            { text: '盗{ぬす}み', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '盗{ぬす}ん', reason: '錯誤：那是我偷了。' }],
         correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】被偷。 \n【注意】雖然中譯常說「被偷了」，日文常用被動態表達受害心情。\n【延伸】相關詞/混淆項：盗ん、盗る、盗み'
@@ -4778,12 +4447,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '陽光很強，出門前請好好地 *塗抹* 防曬乳。',
         level: 'N4',
         options: [
-            { text: '塗{ぬ}って', reason: '正確！五段促音便。指塗抹藥膏、油漆等。' },
-            { text: '付{つ}けて', reason: '錯誤：這是「也是塗的意思」，語意不符。' },
             { text: '描{か}いて', reason: '錯誤：那是「畫」。' },
-            { text: '塗{ぬ}り', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '付{つ}けて', reason: '錯誤：這是「也是塗的意思」，語意不符。' },
+            { text: '塗{ぬ}って', reason: '正確！五段促音便。指塗抹藥膏、油漆等。' },
+            { text: '塗{ぬ}り', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】塗抹。 \n【活用】五段動詞「塗る」。促音便：塗って。\n【延伸】相關詞/混淆項：付けて、描いて、塗り'
     },
@@ -4793,12 +4461,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「你喜歡在麵包上 *塗* 什麼吃？」\nB：「我最喜歡奶油和蜂蜜的組合了。」',
         level: 'N4',
         options: [
+            { text: '掛{か}けて', reason: '錯誤：這是「淋上去」，語意不符。' },
             { text: '塗{ぬ}って', reason: '正確！～て句型（動作接續）。' },
-            { text: '食{た}べて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '塗{ぬ}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '掛{か}けて', reason: '錯誤：這是「淋上去」，語意不符。' }
-        ],
-        correctIndex: 0,
+            { text: '食{た}べて', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】塗。 \n【用法】描述日常飲食動作。\n【延伸】相關詞/混淆項：食べて、塗り、掛けて'
     },
@@ -4809,12 +4476,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '沒帶傘就出門，結果突然下雨，衣服全被 *淋濕了*。',
         level: 'N4',
         options: [
-            { text: 'ぬらして', reason: '錯誤：那是「弄濕」(他動詞)。' },
-            { text: '鳴{な}って', reason: '錯誤：同音字錯誤。' },
             { text: 'ぬれ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'ぬれて', reason: '正確！一段自動詞。表示淋濕。' }
-        ],
-        correctIndex: 3,
+            { text: 'ぬれて', reason: '正確！一段自動詞。表示淋濕。' },
+            { text: 'ぬらして', reason: '錯誤：那是「弄濕」(他動詞)。' },
+            { text: '鳴{な}って', reason: '錯誤：同音字錯誤。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】濕。 \n【自他動詞】「ぬれる」(自動詞，濕了) vs 「ぬらす」(他動詞，人弄濕)。\n【延伸】相關詞/混淆項：ぬれ、鳴って、ぬらして'
     },
@@ -4824,12 +4490,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「那個包包 *濕了* 喔。裡面的文件沒事吧？」\nB：「咦，真的耶！完全沒注意到。我來確認一下。」',
         level: 'N4',
         options: [
-            { text: 'ぬれる', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'ぬれて', reason: '正確！～ている表示狀態。' },
             { text: 'ぬらして', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'ぬれ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: 'ぬれる', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: 'ぬれ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】濕著。 \n【用法】描述東西目前的濕狀態。\n【延伸】相關詞/混淆項：ぬらして、ぬれ、ぬれる'
     },
@@ -4840,12 +4505,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '可能是昨晚咖啡喝太多的關係，怎麼也 *睡不著*，今天早上好睏。',
         level: 'N4',
         options: [
-            { text: '眠{ねむ}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '眠{ねむ}っ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '眠{ねむ}る', reason: '正確！五段自動詞。指生理上的入睡。' },
-            { text: '寝{ね}る', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '眠{ねむ}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '寝{ね}る', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '眠{ねむ}る', reason: '正確！五段自動詞。指生理上的入睡。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】睡覺、入睡。 \n【活用】「眠る」+「ことができる」(可能句型)。\n【延伸】相關詞/混淆項：眠っ、眠り、寝る'
     },
@@ -4855,12 +4519,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「嬰兒現在在 *睡覺* 嗎？」\nB：「嗯，剛才終於睡著了。別吵醒他，安靜一點喔。」',
         level: 'N4',
         options: [
-            { text: '眠{ねむ}っ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '眠{ねむ}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '眠{ねむ}って', reason: '正確！～ている進行式。' },
-            { text: '寝{ね}て', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '寝{ね}て', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '眠{ねむ}っ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '眠{ねむ}り', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】正在睡。 \n【語義】「眠る」側重於生理狀態，「寝る」側重於就寢動作。\n【延伸】相關詞/混淆項：眠り、寝て、眠っ'
     },
@@ -4871,11 +4534,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '因為太忙沒時間吃午飯，所以便當就那樣 *剩下/還在*。',
         level: 'N4',
         options: [
-            { text: '残{のこ}る', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '残{のこ}って', reason: '正確！五段自動詞。表示殘留。' },
             { text: '残{のこ}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '残{のこ}して', reason: '錯誤：那是「留下/剩下」(他動詞)。' }
-        ],
+            { text: '残{のこ}って', reason: '正確！五段自動詞。表示殘留。' },
+            { text: '残{のこ}して', reason: '錯誤：那是「留下/剩下」(他動詞)。' },
+            { text: '残{のこ}る', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】剩下。 \n【自他動詞】「残る」(自動詞，東西剩下) vs 「残す」(他動詞，人故意留下)。\n【延伸】相關詞/混淆項：残り、残る、残して'
@@ -4887,11 +4549,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '残{のこ}る', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '残{のこ}って', reason: '正確！～ている句型。' },
+            { text: '有{あ}って', reason: '錯誤：這是「有」，語意不符。' },
             { text: '残{のこ}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '有{あ}って', reason: '錯誤：這是「有」，語意不符。' }
-        ],
-        correctIndex: 1,
+            { text: '残{のこ}って', reason: '正確！～ている句型。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】剩下、殘留。 \n【用法】描述物品的剩餘狀態。\n【延伸】相關詞/混淆項：残り、有って、残る'
     },
@@ -4903,10 +4564,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '乗{の}り換{か}える', reason: '正確！一段動詞。表示轉乘交通工具。' },
-            { text: '乗{の}り換{か}わ', reason: '錯誤：活用不正確。' },
+            { text: '乗{の}り換{か}えて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '乗{の}り換{か}え', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '乗{の}り換{か}えて', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '乗{の}り換{か}わ', reason: '錯誤：活用不正確。' }],
         correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】換乘、轉車。 \n【活用】一段動詞。\n【延伸】相關詞/混淆項：乗り換え、乗り換えて、乗り換わ'
@@ -4917,12 +4577,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「在下一站 *換車* 就可以了嗎？」\nB：「是的。去3號月台就可以了。」',
         level: 'N4',
         options: [
-            { text: '乗{の}り換{か}わ', reason: '錯誤：錯誤！' },
+            { text: '乗{の}り換{か}えれ', reason: '正確！假定形（可能/建議句型）。' },
             { text: '乗{の}り換{か}え', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '乗{の}り換{か}えろ', reason: '錯誤：命令形。' },
-            { text: '乗{の}り換{か}えれ', reason: '正確！假定形（可能/建議句型）。' }
-        ],
-        correctIndex: 3,
+            { text: '乗{の}り換{か}わ', reason: '錯誤：錯誤！' }],
+        correctIndex: 0,
         tag: 'ba',
         correctRule: '【考點】文法與語義\n【解析】換乘。 \n【句型】「～ばいい」表示建議或詢問方法。\n【延伸】相關詞/混淆項：乗り換え、乗り換えろ、乗り換わ'
     },
@@ -4933,12 +4592,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '能不能請您幫忙把這件重行李 *搬* 到出口呢？我腰很痛。',
         level: 'N4',
         options: [
+            { text: '運{はこ}び', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '運{はこ}ん', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '持{も}つ', reason: '錯誤：這是「拿」，語意不符。' },
-            { text: '運{はこ}ぶ', reason: '正確！五段動詞。表示搬運物品。' },
-            { text: '運{はこ}び', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '運{はこ}ぶ', reason: '正確！五段動詞。表示搬運物品。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】搬運。 \n【用法】～のを手伝う (幫忙做某事)。\n【延伸】相關詞/混淆項：運び、運ん、持つ'
     },
@@ -4948,12 +4606,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「行李要幫您 *搬* 到車子那邊嗎？」\nB：「謝謝！真的幫大忙了。」',
         level: 'N4',
         options: [
-            { text: '運{はこ}ぶ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '運{はこ}び', reason: '正確！～ましょう(提議)。' },
+            { text: '運{はこ}ぶ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '持{も}ち', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '送{おく}り', reason: '錯誤：那是送。' }
-        ],
-        correctIndex: 1,
+            { text: '送{おく}り', reason: '錯誤：那是送。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】搬運。 \n【用法】～ましょうか (主動提議幫助)。\n【延伸】相關詞/混淆項：持ち、運ぶ、送り'
     },
@@ -4964,12 +4621,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '在便利商店 *付* 電費的時候，忘了跟店員拿收據了。',
         level: 'N4',
         options: [
-            { text: '払{はら}う', reason: '正確！五段動詞。表示支付費用。' },
-            { text: '返{かえ}す', reason: '錯誤：那是還錢。' },
+            { text: '払{はら}っ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '払{はら}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '払{はら}っ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '返{かえ}す', reason: '錯誤：那是還錢。' },
+            { text: '払{はら}う', reason: '正確！五段動詞。表示支付費用。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】付錢、支付。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：払い、払っ、返す'
     },
@@ -4979,12 +4635,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「餐費可以用卡片 *付* 嗎？」\nB：「抱歉，本店僅收現金。」',
         level: 'N4',
         options: [
-            { text: '払{はら}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '払{はら}う', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '払{はら}って', reason: '正確！～てもいい (許可)。' },
-            { text: '出{だ}して', reason: '錯誤：這是「拿出」，語意不符。' }
-        ],
-        correctIndex: 2,
+            { text: '出{だ}して', reason: '錯誤：這是「拿出」，語意不符。' },
+            { text: '払{はら}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '払{はら}う', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】付。 \n【用法】詢問支付方式。\n【延伸】相關詞/混淆項：払う、出して、払い'
     },
@@ -4996,10 +4651,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '冷{ひ}えて', reason: '正確！一段自動詞。表示溫度降低。' },
+            { text: '冷{ひ}え', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '冷{ひ}やして', reason: '錯誤：那是「冰某物」(他動詞)。' },
-            { text: '寒{さむ}く', reason: '錯誤：那是天氣冷。' },
-            { text: '冷{ひ}え', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '寒{さむ}く', reason: '錯誤：那是天氣冷。' }],
         correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】變冷、變涼。 \n【自他動詞】「冷える」(自動詞，東西涼了) vs 「冷やす」(他動詞，人去冰東西)。\n【延伸】相關詞/混淆項：寒く、冷え、冷やして'
@@ -5010,12 +4664,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「到了晚上腳就會突然 *冷* 起來呢。」\nB：「也是。穿厚一點的襪子比較好。」',
         level: 'N4',
         options: [
-            { text: '冷{ひ}え', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '冷{つめ}たく', reason: '錯誤：那是形容詞。' },
-            { text: '冷{ひ}えて', reason: '正確！～てくる (表示狀態變化)。' },
-            { text: '冷{ひ}える', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '冷{ひ}える', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '冷{ひ}え', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '冷{ひ}えて', reason: '正確！～てくる (表示狀態變化)。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】變冷。 \n【注意】與「寒くなる」(天氣) 區分。這裡是身體部位感覺到冷。\n【延伸】相關詞/混淆項：冷え、冷える、冷たく'
     },
@@ -5026,12 +4679,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '夜空中有許多星星在 *發光*，美得就像翻倒了珠寶盒一樣。',
         level: 'N4',
         options: [
-            { text: '光{ひか}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '光{ひか}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '光{ひか}って', reason: '正確！五段促音便。表示發光。' },
-            { text: '明{あか}るく', reason: '錯誤：那是形容詞。' }
-        ],
-        correctIndex: 2,
+            { text: '明{あか}るく', reason: '錯誤：那是形容詞。' },
+            { text: '光{ひか}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '光{ひか}る', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】發光、閃爍。 \n【活用】五段動詞「光る」。\n【延伸】相關詞/混淆項：明るく、光り、光る'
     },
@@ -5042,11 +4694,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '光{ひか}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '光{ひか}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '光{ひか}る', reason: '正確！連體修飾 (修飾「もの」)。' },
             { text: '光{ひか}った', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '光{ひか}る', reason: '正確！連體修飾 (修飾「もの」)。' }
-        ],
-        correctIndex: 3,
+            { text: '光{ひか}り', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】發光的（東西）。 \n【用法】名詞修飾。\n【延伸】相關詞/混淆項：光り、光って、光った'
     },
@@ -5059,10 +4710,9 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '遅{おく}れる', reason: '錯誤：那是遲到。' },
             { text: '間{ま}に合{あ}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '間{ま}に合{あ}う', reason: '正確！五段自動詞。表示趕得上某個期限或時間。' },
-            { text: '間{ま}に合{あ}っ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '間{ま}に合{あ}っ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '間{ま}に合{あ}う', reason: '正確！五段自動詞。表示趕得上某個期限或時間。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】趕上。 \n【活用】「間に合う」+「ことができる」(可能句型)。\n【延伸】相關詞/混淆項：間に合い、遅れる、間に合っ'
     },
@@ -5072,12 +4722,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「再過5分鐘電車就要來了！」\nB：「跑一下的話或許還 *趕得上* 喔。快點！」',
         level: 'N4',
         options: [
-            { text: '間{ま}に合{あ}う', reason: '正確！五段自動詞。' },
             { text: '間{ま}に合{あ}い', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '來{く}る', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '間{ま}に合{あ}わ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '間{ま}に合{あ}わ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '間{ま}に合{あ}う', reason: '正確！五段自動詞。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】趕上。 \n【用法】描述時間上的餘裕或及時。\n【延伸】相關詞/混淆項：間に合い、來る、間に合わ'
     },
@@ -5089,10 +4738,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '回{まわ}って', reason: '正確！五段自動詞。表示旋轉或繞行。' },
-            { text: '回{まわ}し', reason: '錯誤：那是「使旋轉」(他動詞)。' },
             { text: '回{まわ}る', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '動{うご}いて', reason: '錯誤：這是「在動」，語意不符。' }
-        ],
+            { text: '回{まわ}し', reason: '錯誤：那是「使旋轉」(他動詞)。' },
+            { text: '動{うご}いて', reason: '錯誤：這是「在動」，語意不符。' }],
         correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】繞、轉。 \n【用法】～ていて (持續狀態/動作)。\n【延伸】相關詞/混淆項：回し、動いて、回る'
@@ -5104,11 +4752,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '回{まわ}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '回{まわ}って', reason: '正確！描述旋轉動作。' },
             { text: '走{はし}って', reason: '錯誤：這是「指機器運轉」，語意不符。' },
-            { text: '回{まわ}る', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '回{まわ}って', reason: '正確！描述旋轉動作。' },
+            { text: '回{まわ}る', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】旋轉。 \n【用法】描述電器或輪子的轉動。\n【延伸】相關詞/混淆項：回り、回る、走って'
     },
@@ -5119,12 +4766,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '因為去露營了，所以我們在河邊 *烤* 魚吃，非常美味。',
         level: 'N4',
         options: [
-            { text: '焼{や}いて', reason: '正確！五段他動詞。表示烘烤、焚燒。' },
+            { text: '煮{に}て', reason: '錯誤：那是煮。' },
             { text: '焼{や}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '焼{や}け', reason: '錯誤：那是自動詞(被烤)。' },
-            { text: '煮{に}て', reason: '錯誤：那是煮。' }
-        ],
-        correctIndex: 0,
+            { text: '焼{や}いて', reason: '正確！五段他動詞。表示烘烤、焚燒。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】烤。 \n【自他動詞】「焼く」(他動詞，人去烤) vs 「焼ける」(自動詞，東西被烤熟)。\n【延伸】相關詞/混淆項：煮て、焼け、焼き'
     },
@@ -5134,12 +4780,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「要幫您 *烤* 麵包嗎？」\nB：「謝謝。稍微有一點焦痕那樣比較好。」',
         level: 'N4',
         options: [
-            { text: '焼{や}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '焦{こ}がし', reason: '錯誤：這是「弄焦」，語意不符。' },
             { text: '焼{や}き', reason: '正確！～ましょう(提議)。' },
-            { text: '焼{や}く', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '焦{こ}がし', reason: '錯誤：這是「弄焦」，語意不符。' },
+            { text: '焼{や}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '焼{や}く', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】烤。 \n【活用】「焼き」+「ましょう」。\n【延伸】相關詞/混淆項：焼く、焼い、焦がし'
     },
@@ -5150,12 +4795,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '日語字典在查不懂的單字時非常 *有用*。',
         level: 'N4',
         options: [
-            { text: '役{や}くに立{た}つ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '役{や}くに立{た}ち', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '使{つか}って', reason: '錯誤：這是「在用」，語意不符。' },
-            { text: '役{や}くに立{た}って', reason: '正確！慣用句。表示有用、起作用。' }
-        ],
-        correctIndex: 3,
+            { text: '役{や}くに立{た}つ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '役{や}くに立{た}って', reason: '正確！慣用句。表示有用、起作用。' },
+            { text: '役{や}くに立{た}ち', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】有用、有助。 \n【用法】～のに役に立つ (對...有用)。\n【延伸】相關詞/混淆項：使って、役くに立つ、役くに立ち'
     },
@@ -5165,12 +4809,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「這款App怎麼樣？」\nB：「旅行時查路的時候非常 *奏效/有用* 喔。」',
         level: 'N4',
         options: [
-            { text: '役{や}くに立{た}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '使{つか}える', reason: '錯誤：這是「能用」，語意不符。' },
+            { text: '役{や}くに立{た}ち', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '役{や}くに立{た}つ', reason: '正確！描述一般的特徵 or 功能。' },
-            { text: '役{や}くに立{た}ち', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '使{つか}える', reason: '錯誤：這是「能用」，語意不符。' },
+            { text: '役{や}くに立{た}って', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】有用。 \n【用法】描述某物的便利性。\n【延伸】相關詞/混淆項：役くに立ち、役くに立って、使える'
     },
@@ -5183,9 +4826,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '焼{や}け', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '焼{や}けた', reason: '正確！五段自動詞。表示烤熟或焚毀。' },
-            { text: '焼{や}けて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '焼{や}いた', reason: '錯誤：那是烤了(他動詞)。' }
-        ],
+            { text: '焼{や}いた', reason: '錯誤：那是烤了(他動詞)。' },
+            { text: '焼{や}けて', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 1,
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】烤好。 \n【自他動詞】「焼ける」(自動詞，東西熟了) vs 「焼く」(他動詞，人去烤)。\n【延伸】相關詞/混淆項：焼いた、焼け、焼けて'
@@ -5196,12 +4838,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「肉已經 *烤好了* 嗎？」\nB：「唔，我覺得再多烤一下比較好喔。」',
         level: 'N4',
         options: [
-            { text: '焼{や}けた', reason: '正確！表示完成的狀態。' },
-            { text: '焼{や}ける', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '焼{や}け', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '焼{や}けて', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '焼{や}けて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '焼{や}けた', reason: '正確！表示完成的狀態。' },
+            { text: '焼{や}ける', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】烤好。 \n【注意】這裡是詢問熟度。\n【延伸】相關詞/混淆項：焼けて、焼け、焼ける'
     },
@@ -5212,12 +4853,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '自從開始每天慢跑一小時後，三個月內 *瘦了* 5公斤。',
         level: 'N4',
         options: [
+            { text: '減{へ}る', reason: '錯誤：這是「減輕」，語意不符。' },
             { text: '痩{や}せる', reason: '正確！一段自動詞。表示體重減輕。' },
-            { text: '痩{や}せ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '太{ふ}とる', reason: '錯誤：那是變胖。' },
-            { text: '減{へ}る', reason: '錯誤：這是「減輕」，語意不符。' }
-        ],
-        correctIndex: 0,
+            { text: '痩{や}せ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】瘦、減重。 \n【反義詞】太る (變胖)。\n【延伸】相關詞/混淆項：減る、痩せ、太とる'
     },
@@ -5227,11 +4867,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「田中先生，最近是不是稍微 *變瘦了*？」\nB：「真的嗎？我開始減肥了。」',
         level: 'N4',
         options: [
-            { text: '痩{や}せる', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '痩{や}せ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '太{ふ}った', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '痩{や}せた', reason: '正確！描述狀態的改變（已發生的變化）。' }
-        ],
+            { text: '痩{や}せる', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '痩{や}せた', reason: '正確！描述狀態的改變（已發生的變化）。' }],
         correctIndex: 3,
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】變瘦。 \n【用法】描述觀察到的體型變化。\n【延伸】相關詞/混淆項：太った、痩せる、痩せ'
@@ -5243,12 +4882,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '等雨 *停了*，要不要一起去公園散散步？',
         level: 'N4',
         options: [
+            { text: '止{や}み', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '止{や}め', reason: '錯誤：那是「停止(某活動)」(他動詞)。' },
-            { text: '止{や}んだ', reason: '正確！五段自動詞。特指雨、雪、風等停下來。' },
             { text: '止{や}む', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '止{や}み', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '止{や}んだ', reason: '正確！五段自動詞。特指雨、雪、風等停下來。' }],
+        correctIndex: 3,
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】（雨、雪等）停。 \n【習慣】「雨が止む」是固定搭配。\n【延伸】相關詞/混淆項：止め、止む、止み'
     },
@@ -5261,8 +4899,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '止{や}み', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '止{や}んだ', reason: '正確！表示動作已完成。' },
             { text: '止{や}む', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '終{お}わった', reason: '錯誤：這是「結束」，語意不符。' }
-        ],
+            { text: '終{お}わった', reason: '錯誤：這是「結束」，語意不符。' }],
         correctIndex: 1,
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】停。 \n【注意】與「止める」(停止) 區分。這裡是自然現象。\n【延伸】相關詞/混淆項：止み、終わった、止む'
@@ -5274,12 +4911,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '地震讓桌上的杯子嘎噠嘎噠地 *晃動*，裡面的咖啡都灑出來了。',
         level: 'N4',
         options: [
-            { text: '揺{ゆ}れて', reason: '正確！一段自動詞。表示搖晃、擺動。' },
             { text: '揺{ゆ}れる', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '揺{ゆ}らし', reason: '錯誤：那是「使晃動」(他動詞)。' },
-            { text: '動{うご}いて', reason: '錯誤：這是「動」，語意不符。' }
-        ],
-        correctIndex: 0,
+            { text: '動{うご}いて', reason: '錯誤：這是「動」，語意不符。' },
+            { text: '揺{ゆ}れて', reason: '正確！一段自動詞。表示搖晃、擺動。' },
+            { text: '揺{ゆ}らし', reason: '錯誤：那是「使晃動」(他動詞)。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】晃動。 \n【用法】描述地震、波浪引起的動盪。\n【延伸】相關詞/混淆項：揺れる、動いて、揺らし'
     },
@@ -5292,8 +4928,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '揺{ゆ}れる', reason: '正確！描述一般的狀態 or 傾向。' },
             { text: '揺{ゆ}れて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '動{うご}く', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '揺{ゆ}れ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '揺{ゆ}れ', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】搖晃。 \n【用法】描述交通工具的震動。\n【延伸】相關詞/混淆項：動く、揺れて、揺れ'
@@ -5305,12 +4940,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '下班回家路上 *順便去* 了超市，買了晚餐的材料回家。',
         level: 'N4',
         options: [
-            { text: '寄{よ}ら', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '寄{よ}って', reason: '正確！五段自動詞。表示順道經過或靠近。' },
             { text: '行{い}って', reason: '錯誤：語義太模糊。這裡強調節外生枝的順便。' },
-            { text: '寄{よ}る', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '寄{よ}ら', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '寄{よ}る', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '寄{よ}って', reason: '正確！五段自動詞。表示順道經過或靠近。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】順便去。 \n【習慣】「帰りに～に寄る」。\n【延伸】相關詞/混淆項：寄る、寄ら、行って'
     },
@@ -5321,11 +4955,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '寄{よ}っ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '寄{よ}る', reason: '正確！詢問意圖。' },
             { text: '行{い}く', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '寄{よ}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '寄{よ}る', reason: '正確！詢問意圖。' }
-        ],
-        correctIndex: 3,
+            { text: '寄{よ}り', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】順便去、停留。 \n【用法】放學或下班後的社交活動。\n【延伸】相關詞/混淆項：寄り、寄っ、行く'
     },
@@ -5338,9 +4971,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '喜{よろこ}んで', reason: '正確！五段自動詞。表示高興、歡喜。' },
             { text: '嬉{うれ}しくて', reason: '錯誤：那是形容詞。' },
-            { text: '楽{たの}しんで', reason: '錯誤：那是享受。' },
-            { text: '喜{よろこ}び', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '喜{よろこ}び', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '楽{たの}しんで', reason: '錯誤：那是享受。' }],
         correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】高興。 \n【用法】描述他人的情感反應（動詞）。\n【延伸】相關詞/混淆項：嬉しくて、楽しんで、喜び'
@@ -5351,12 +4983,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「合格通知寄到了！」\nB：「恭喜！你爸媽也一定會很 *高興* 吧。」',
         level: 'N4',
         options: [
-            { text: '喜{よろこ}ぶ', reason: '正確！推測他人的反應。' },
-            { text: '喜{よろこ}び', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '喜{よろこ}んで', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '嬉{うれ}しい', reason: '錯誤：形容詞通常描述第一人稱。' }
-        ],
-        correctIndex: 0,
+            { text: '喜{よろこ}び', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '喜{よろこ}ぶ', reason: '正確！推測他人的反應。' },
+            { text: '嬉{うれ}しい', reason: '錯誤：形容詞通常描述第一人稱。' }],
+        correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】高興。 \n【注意】他國的情感常用動詞「喜ぶ」表達。\n【延伸】相關詞/混淆項：喜んで、喜び、嬉しい'
     },
@@ -5367,12 +4998,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '為了給客人泡茶，我在廚房 *煮* 水直到沸騰。',
         level: 'N4',
         options: [
-            { text: '沸{わ}い', reason: '錯誤：那是自動詞(水開了)。' },
-            { text: '焼{や}き', reason: '錯誤：那是烤。' },
             { text: '沸{わ}かす', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '沸{わ}かし', reason: '正確！五段他動詞。表示燒開水、使沸騰。' }
-        ],
-        correctIndex: 3,
+            { text: '焼{や}き', reason: '錯誤：那是烤。' },
+            { text: '沸{わ}かし', reason: '正確！五段他動詞。表示燒開水、使沸騰。' },
+            { text: '沸{わ}い', reason: '錯誤：那是自動詞(水開了)。' }],
+        correctIndex: 2,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】煮（開水）。 \n【自他動詞】「沸かす」(他動詞，人去煮) vs 「沸く」(自動詞，水開了)。\n【延伸】相關詞/混淆項：沸かす、焼き、沸い'
     },
@@ -5382,12 +5012,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「洗澡水已經 *燒好了* 嗎？」\nB：「現在正在燒。再等一下喔。」',
         level: 'N4',
         options: [
-            { text: '沸{わ}かした', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '沸{わ}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '沸{わ}かし', reason: '正確！連用形結合た。' },
             { text: '沸{わ}く', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '沸{わ}かし', reason: '正確！連用形結合た。' }
-        ],
-        correctIndex: 3,
+            { text: '沸{わ}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '沸{わ}かした', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】燒（水、洗澡水）。 \n【用法】描述準備洗澡水的動作。\n【延伸】相關詞/混淆項：沸かした、沸く、沸い'
     },
@@ -5400,10 +5029,9 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '離{はな}れる', reason: '錯誤：這是「離開/距離遠」，語意不符。' },
             { text: '分{わ}かれる', reason: '錯誤：漢字不同，那通常指「分成幾部分」。' },
-            { text: '別{わか}れる', reason: '正確！一段自動詞。表示離別、分手。' },
-            { text: '別{わか}れ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '別{わか}れ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '別{わか}れる', reason: '正確！一段自動詞。表示離別、分手。' }],
+        correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】分別、離別。 \n【注意】與「分かれる」(分開、分岔) 漢字不同。\n【延伸】相關詞/混淆項：分かれる、離れる、別れ'
     },
@@ -5413,11 +5041,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「聽說佐藤小姐和田中先生 *分手* 了，是真的嗎？」\nB：「嗯，上週分的手。好像是因為彼此都太忙了。」',
         level: 'N4',
         options: [
-            { text: '分{わ}かれ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '別{わか}れる', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '分{わ}かれ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '別{わか}れ', reason: '正確！一段動詞。常用於描述戀人分手。' },
-            { text: '離{はな}れ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '離{はな}れ', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】分手。 \n【用法】描述人際關係的結束。\n【延伸】相關詞/混淆項：分かれ、別れる、離れ'
@@ -5430,11 +5057,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '沸{わ}か', reason: '錯誤：那是「燒」(他動詞)。' },
-            { text: '沸{わ}い', reason: '正確！五段自動詞。表示液體沸騰。' },
+            { text: '沸{わ}く', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '沸{わ}き', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '沸{わ}く', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '沸{わ}い', reason: '正確！五段自動詞。表示液體沸騰。' }],
+        correctIndex: 3,
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】（水等）開了。 \n【自他動詞】「沸く」(自動詞，水開了) vs 「沸かす」(他動詞，人去燒)。\n【延伸】相關詞/混淆項：沸く、沸か、沸き'
     },
@@ -5444,12 +5070,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「洗澡水 *好了* 喔」\nB：「謝謝。那我就先去洗囉。」',
         level: 'N4',
         options: [
+            { text: '沸{わ}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '沸{わ}か', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '沸{わ}く', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '沸{わ}い', reason: '正確！描述水溫達到可使用的狀態。' },
-            { text: '沸{わ}き', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '沸{わ}い', reason: '正確！描述水溫達到可使用的狀態。' }],
+        correctIndex: 3,
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】洗澡水燒好了。 \n【慣用】常用「お風呂が沸く」表示洗澡水準備好了。\n【延伸】相關詞/混淆項：沸き、沸か、沸く'
     },
@@ -5460,12 +5085,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '因為朋友說的笑話非常有意思，教室裡的大家都不禁大聲 *笑了起來*。',
         level: 'N4',
         options: [
-            { text: '笑{わら}う', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '笑{わら}っ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '怒{おこ}っ', reason: '錯誤：那是生氣。' },
-            { text: '笑{わら}い', reason: '正確！五段動詞。表示笑。' }
-        ],
-        correctIndex: 3,
+            { text: '笑{わら}い', reason: '正確！五段動詞。表示笑。' },
+            { text: '笑{わら}っ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '笑{わら}う', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】笑。 \n【活用】五段動詞。\n【延伸】相關詞/混淆項：怒っ、笑う、笑っ'
     },
@@ -5476,11 +5100,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '笑{わら}い', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '泣{な}いて', reason: '錯誤：那是哭。' },
+            { text: '笑{わら}って', reason: '正確！～ている (正在笑/持續笑)。' },
             { text: '笑{わら}う', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '笑{わら}って', reason: '正確！～ている (正在笑/持續笑)。' }
-        ],
-        correctIndex: 3,
+            { text: '泣{な}いて', reason: '錯誤：那是哭。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】正在笑。 \n【用法】描述當下的情感表現。\n【延伸】相關詞/混淆項：笑う、笑い、泣いて'
     },
@@ -5492,10 +5115,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '割{わ}れ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '割{わ}る', reason: '錯誤：那是「打碎」(他動詞)。' },
             { text: '壊{こわ}れて', reason: '錯誤：這是「故障/壞掉」，語意不符。' },
-            { text: '割{わ}れる', reason: '正確！一段自動詞。表示碎裂、破掉。' }
-        ],
+            { text: '割{わ}る', reason: '錯誤：那是「打碎」(他動詞)。' },
+            { text: '割{わ}れる', reason: '正確！一段自動詞。表示碎裂、破掉。' }],
         correctIndex: 3,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】破碎。 \n【自他動詞】「割れる」(自動詞，東西碎了) vs 「割る」(他動詞，人打碎)。\n【延伸】相關詞/混淆項：割れ、割る、壊れて'
@@ -5508,10 +5130,9 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '割{わ}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '割{わ}れ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '壊{こわ}れて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '割{わ}れて', reason: '正確！～てしまう (表示遺憾的結果)。' }
-        ],
-        correctIndex: 3,
+            { text: '割{わ}れて', reason: '正確！～てしまう (表示遺憾的結果)。' },
+            { text: '壊{こわ}れて', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】碎了。 \n【用法】常用於描述碗盤、玻璃等硬物的破損。\n【延伸】相關詞/混淆項：壊れて、割る、割れ'
     },
@@ -5522,12 +5143,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '暑假旅行的目的地終於 *決定* 了，所以預約了飛機票。',
         level: 'N4',
         options: [
+            { text: '決{き}まった', reason: '正確！' },
             { text: '決{き}まり', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '選{えら}んだ', reason: '錯誤：那是「選擇了」。' },
-            { text: '決{き}めて', reason: '錯誤：這是他動詞。' },
-            { text: '決{き}まった', reason: '正確！' }
-        ],
-        correctIndex: 3,
+            { text: '決{き}めて', reason: '錯誤：這是他動詞。' }],
+        correctIndex: 0,
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】決定、定下來。 \n【自他動詞】「決まる」(自動詞) vs 「決める」(他動詞)。\n【延伸】相關詞/混淆項：決めて、決まり、選んだ'
     },
@@ -5537,12 +5157,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「下週的派對，已經 *決定* 幾點開始了嗎？」\nB：「還沒，還在詢問大家的方便時間。」',
         level: 'N4',
         options: [
-            { text: '選{えら}んだ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '決{き}めました', reason: '錯誤：這是他動詞。' },
-            { text: '決{き}まった', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '決{き}まりました', reason: '正確！用於詢問某個計畫是否已定案。' }
-        ],
-        correctIndex: 3,
+            { text: '決{き}まりました', reason: '正確！用於詢問某個計畫是否已定案。' },
+            { text: '選{えら}んだ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '決{き}まった', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】定下來。 \n【用法】詢問某事是否已經有了最終結果。\n【延伸】相關詞/混淆項：選んだ、決めました、決まった'
     },
@@ -5554,10 +5173,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '触{さわ}って', reason: '正確！五段自動詞。表示用手或身體接觸。' },
-            { text: '持{も}って', reason: '錯誤：那是「拿」。' },
+            { text: '見{み}て', reason: '錯誤：那是「看」。' },
             { text: '触{さわ}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '見{み}て', reason: '錯誤：那是「看」。' }
-        ],
+            { text: '持{も}って', reason: '錯誤：那是「拿」。' }],
         correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】摸、觸碰。 \n【固定搭配】「～に触る」。\n【延伸】相關詞/混淆項：触り、見て、持って'
@@ -5568,11 +5186,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「啊，這個摸起來好軟喔！」\nB：「啊，不可以擅自 *亂摸* 喔。因為這是商品。」',
         level: 'N4',
         options: [
+            { text: '動{うご}かし', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '触{さわ}る', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '持{も}つ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '触{さわ}っちゃ', reason: '正確！～ては/ちゃいけない的省略。' },
-            { text: '動{うご}かし', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '持{も}つ', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】摸。 \n【提醒】常用於警告不要隨意接觸某物。\n【延伸】相關詞/混淆項：触る、持つ、動かし'
@@ -5586,9 +5203,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '滑{すべ}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '滑{すべ}り', reason: '正確！五段自動詞。表示打滑。' },
-            { text: '走{はし}り', reason: '錯誤：那是跑。' },
-            { text: '転{ころ}び', reason: '錯誤：那是倒下/跌倒。' }
-        ],
+            { text: '転{ころ}び', reason: '錯誤：那是倒下/跌倒。' },
+            { text: '走{はし}り', reason: '錯誤：那是跑。' }],
         correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】滑、打滑。 \n【活用】「滑り」+「やすい」(容易...)。\n【延伸】相關詞/混淆項：滑る、転び、走り'
@@ -5600,11 +5216,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '落{お}ちて', reason: '錯誤：那是掉下來。' },
-            { text: '滑{すべ}って', reason: '正確！表示跌倒的原因。' },
             { text: '滑{すべ}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '走{はし}って', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '走{はし}って', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '滑{すべ}って', reason: '正確！表示跌倒的原因。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】滑。 \n【用法】描述意外發生時的動作過程。\n【延伸】相關詞/混淆項：走って、落ちて、滑り'
     },
@@ -5615,12 +5230,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '我媽媽的愛好是在院子裡 *培育* 各種種類的玫瑰。',
         level: 'N4',
         options: [
+            { text: '育{そだ}てる', reason: '正確！一段他動詞。表示養育、培養。' },
             { text: '建{た}てる', reason: '錯誤：那是建築。' },
-            { text: '作{つく}る', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '植{う}える', reason: '錯誤：那是種植(動作瞬間)。' },
-            { text: '育{そだ}てる', reason: '正確！一段他動詞。表示養育、培養。' }
-        ],
-        correctIndex: 3,
+            { text: '作{つく}る', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】養育、培育。 \n【自他動詞】「育てる」(他動詞，人去養) vs 「育つ」(自動詞，自己長大)。\n【延伸】相關詞/混淆項：建てる、植える、作る'
     },
@@ -5630,12 +5244,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「這隻貓是從小養到大的嗎？」\nB：「嗯。從牠還是寶寶的時候就一直很珍惜地 *養* 到現在。」',
         level: 'N4',
         options: [
+            { text: '見守{みまも}って', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '育{そだ}てて', reason: '正確！～てくる (表示動作從過去持續至今)。' },
             { text: '育{そだ}て', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '見守{みまも}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '大{おお}きく', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '大{おお}きく', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】養。 \n【用法】描述對寵物或小孩的長期撫養過程。\n【延伸】相關詞/混淆項：育て、大きく、見守って'
     },
@@ -5647,11 +5260,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '折{お}れて', reason: '錯誤：那是折斷。' },
+            { text: '倒{たお}れて', reason: '正確！一段自動詞。表示倒下、垮台。' },
             { text: '落{お}ちて', reason: '錯誤：那是掉落。' },
-            { text: '壊{こわ}れて', reason: '錯誤：那是壞掉(機器/建築)。' },
-            { text: '倒{たお}れて', reason: '正確！一段自動詞。表示倒下、垮台。' }
-        ],
-        correctIndex: 3,
+            { text: '壊{こわ}れて', reason: '錯誤：那是壞掉(機器/建築)。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】倒、垮。 \n【自他動詞】「倒れる」(自動詞) vs 「倒す」(他動詞)。\n【延伸】相關詞/混淆項：折れて、壊れて、落ちて'
     },
@@ -5661,12 +5273,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「啊，佐藤小姐！還好嗎？」\nB：「嗯。好像因為貧血，一不小心就 *暈倒* 了……。」',
         level: 'N4',
         options: [
-            { text: '倒{たお}れて', reason: '正確！表示因病或失去意識而倒下。' },
-            { text: '寝{ね}て', reason: '錯誤：那是睡覺。' },
             { text: '座{すわ}って', reason: '錯誤：那是坐下。' },
-            { text: '倒{たお}れ', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 0,
+            { text: '倒{たお}れ', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '寝{ね}て', reason: '錯誤：那是睡覺。' },
+            { text: '倒{たお}れて', reason: '正確！表示因病或失去意識而倒下。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】暈倒。 \n【用法】除了物體倒下，也常用於描述人失去平衡或意識而倒地。\n【延伸】相關詞/混淆項：寝て、倒れ、座って'
     },
@@ -5678,11 +5289,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '加{くわ}え', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '足{た}し', reason: '正確！五段他動詞。表示添加、補充。' },
             { text: '入{い}れ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '振{ふ}り', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '足{た}し', reason: '正確！五段他動詞。表示添加、補充。' },
+            { text: '振{ふ}り', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】加、添加。 \n【用法】常用於料理或數學運算(加法)。\n【延伸】相關詞/混淆項：加え、入れ、振り'
     },
@@ -5695,8 +5305,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '入{い}れる', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '足{た}し', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '足{た}す', reason: '正確！詢問是否需要添加。' },
-            { text: '飲{の}む', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
+            { text: '飲{の}む', reason: '錯誤：文法正確但語意或時態不符。' }],
         correctIndex: 2,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】加、補充。 \n【對比】「引く」(減)。\n【延伸】相關詞/混淆項：入れる、足し、飲む'
@@ -5708,12 +5317,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '因為不知道去車站的路，所以我試著 *詢問* 了路過的人。',
         level: 'N4',
         options: [
-            { text: '教{おし}えて', reason: '錯誤：這是「請求教導」，語意不符。' },
             { text: '尋{たず}ねて', reason: '正確！一段他動詞。表示詢問、調查。' },
-            { text: '答{こた}えて', reason: '錯誤：那是「回答」。' },
-            { text: '訪{おとず}れて', reason: '錯誤：那是「訪問」(去某地)。' }
-        ],
-        correctIndex: 1,
+            { text: '訪{おとず}れて', reason: '錯誤：那是「訪問」(去某地)。' },
+            { text: '教{おし}えて', reason: '錯誤：這是「請求教導」，語意不符。' },
+            { text: '答{こた}えて', reason: '錯誤：那是「回答」。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】問、詢問。 \n【注意】與「訪ねる」(訪問) 同音不同義。\n【延伸】相關詞/混淆項：訪れて、答えて、教えて'
     },
@@ -5723,12 +5331,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「那個，不好意思。可以稍微 *請問* 一下嗎？」\nB：「好的，請問是什麼事？」',
         level: 'N4',
         options: [
-            { text: '話{はな}して', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '尋{たず}ねて', reason: '正確！用於客氣地提問。' },
             { text: '教{おし}教えて', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '聞{き}い', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '聞{き}い', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '話{はな}して', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '尋{たず}ねて', reason: '正確！用於客氣地提問。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】詢問。 \n【禮貌】常用於陌生人之間的搭話起手式。\n【延伸】相關詞/混淆項：聞い、教教えて、話して'
     },
@@ -5739,12 +5346,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '因為下起了大雨，我 *撐* 起傘走路。',
         level: 'N4',
         options: [
-            { text: '立{た}て', reason: '正確！一段他動詞。表示立起、豎起。' },
+            { text: 'さし', reason: '錯誤：這是「撐傘專用詞」，語意不符。' },
             { text: '広{ひろ}げ', reason: '錯誤：這是「打開」，語意不符。' },
-            { text: '持{も}っ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'さし', reason: '錯誤：這是「撐傘專用詞」，語意不符。' }
-        ],
-        correctIndex: 0,
+            { text: '立{た}て', reason: '正確！一段他動詞。表示立起、豎起。' },
+            { text: '持{も}っ', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 2,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】立、豎起。 \n【用法】傘を立てる (撐起傘) 或 計画を立てる (制定計畫)。\n【延伸】相關詞/混淆項：広げ、持っ、さし'
     },
@@ -5754,12 +5360,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「明天開始的露營，準備好了嗎？」\nB：「與其說準備，不如說正在認真 *制定* 計畫呢。」',
         level: 'N4',
         options: [
-            { text: '立{た}て', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '話{はな}した', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '作{つく}った', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '立{た}てて', reason: '正確！「計画を立てる」是固定搭配。' },
-            { text: '作{つく}った', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '話{はな}した', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '立{た}て', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】制定。 \n【慣用】「計画を立てる」是 N4 必考的固定短語。\n【延伸】相關詞/混淆項：作った、話した、立て'
     },
@@ -5770,12 +5375,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '去參加派對時，因人太多椅子 *不夠*，感到很困擾。',
         level: 'N4',
         options: [
-            { text: '足りなく', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '足{た}りなくて', reason: '正確！一段自動詞。表示充足、足夠。' },
             { text: '足りず', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '無{な}くて', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 1,
+            { text: '無{な}くて', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '足りなく', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 0,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】夠、充足。 \n【用法】常用於描述數量、時間或金錢的充足度。\n【延伸】相關詞/混淆項：足りなく、足りず、無くて'
     },
@@ -5785,12 +5389,11 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「這些零用錢 *夠* 嗎？」\nB：「嗯，非常足夠了。謝謝！」',
         level: 'N4',
         options: [
-            { text: '足{た}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '良{よ}い', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '大丈夫{だいじょうぶ}', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '足{た}りる', reason: '正確！詢問量是否滿足需求。' }
-        ],
-        correctIndex: 3,
+            { text: '足{た}りる', reason: '正確！詢問量是否滿足需求。' },
+            { text: '足{た}り', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '良{よ}い', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】夠。 \n【注意】與「足す」(加) 區分。這裡是自動詞。\n【延伸】相關詞/混淆項：大丈夫、良い、足り'
     },
@@ -5802,10 +5405,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: 'つか', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '付{つ}き', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '汚{よご}れて', reason: '錯誤：這是「弄髒了」，語意不符。' },
-            { text: '付{つ}いて', reason: '正確！五段自動詞。表示附著、黏上。' }
-        ],
+            { text: '付{つ}き', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '付{つ}いて', reason: '正確！五段自動詞。表示附著、黏上。' }],
         correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】沾上、附著。 \n【自他動詞】「付く」(自動詞) vs 「付ける」(他動詞)。\n【延伸】相關詞/混淆項：つか、汚れて、付き'
@@ -5817,11 +5419,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '付{つ}け', reason: '錯誤：那是他動詞。' },
+            { text: '付{つ}いた', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '汚{よご}れた', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '付{つ}いている', reason: '正確！描述目前附著的狀態。' },
-            { text: '付{つ}いた', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '付{つ}いている', reason: '正確！描述目前附著的狀態。' }],
+        correctIndex: 3,
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】沾著。 \n【用法】描述衣服上的污漬或附著物。\n【延伸】相關詞/混淆項：付いた、汚れた、付け'
     },
@@ -5833,11 +5434,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '決{き}め', reason: '錯誤：那是他動詞。' },
-            { text: '終{お}わり', reason: '錯誤：那是結束。' },
             { text: '決{き}まり', reason: '正確！五段自動詞。表示決定、定下來。' },
-            { text: '始{はじ}まり', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '終{お}わり', reason: '錯誤：那是結束。' },
+            { text: '始{はじ}まり', reason: '錯誤：文法正確但語意或時態不符。' }],
+        correctIndex: 1,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】決定、定下來（自動詞）。 \n【自他動詞】「決まる」(自動詞) vs 「決める」(他動詞)。\n【延伸】相關詞/混淆項：決め、終わり、始まり'
     },
@@ -5848,11 +5448,10 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '決{き}めました', reason: '錯誤：文法正確但語意或時態不符。' },
+            { text: '変{か}わりました', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '聞{き}きました', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '決{き}まりました', reason: '正確！描述事情有了最終結果。' },
-            { text: '変{か}わりました', reason: '錯誤：文法正確但語意或時態不符。' }
-        ],
-        correctIndex: 2,
+            { text: '決{き}まりました', reason: '正確！描述事情有了最終結果。' }],
+        correctIndex: 3,
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】（事情）決定、定下來。\n【延伸】相關詞/混淆項：決めました、変わりました、聞きました'
     },

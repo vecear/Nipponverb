@@ -12,8 +12,8 @@ Missing (examples): 幾つ(いくつ), いただきます(いただきます), �
 N4: 159/159 (100.0%)
 Missing (examples): 
 
-N5: 75/109 (68.8%)
-Missing (examples): 来る(くる), 居る(おる), 上げる(あげる), 行く(いく), 要る(いる), 終る(おわる), 曇る(くもる), 答える(こたえる), 差す(さす), 出す(だす), 頼む(たのむ), 違う(ちがう), 疲れる(つかれる), つける(つける), 勤める(つとめる), 出かける(でかける), 出る(でる), 鳴く(なく), 無くす(なくす), 習う(ならう)
+N5: 109/109 (100.0%)
+Missing (examples): 
 
 --- FULL MISSING LIST ---
 [N1]
@@ -800,37 +800,3 @@ Missing (examples): 来る(くる), 居る(おる), 上げる(あげる), 行く
 落ち着く, おちつく, ochitsuku
 [N4]
 [N5]
-来る, くる, kuru
-居る, おる, oru
-上げる, あげる, ageru
-行く, いく, iku
-要る, いる, iru
-終る, おわる, owaru
-曇る, くもる, kumoru
-答える, こたえる, kotaeru
-差す, さす, sasu
-出す, だす, dasu
-頼む, たのむ, tanomu
-違う, ちがう, chigau
-疲れる, つかれる, tsukareru
-つける, つける, tsukeru
-勤める, つとめる, tsutomeru
-出かける, でかける, dekakeru
-出る, でる, deru
-鳴く, なく, naku
-無くす, なくす, nakusu
-習う, ならう, narau
-寝る, ねる, neru
-登る, のぼる, noboru
-乗る, のる, noru
-はく, はく, haku
-始まる, はじまる, hajimaru
-走る, はしる, hashiru
-働く, はたらく, hataraku
-貼る, はる, haru
-晴れる, はれる, hareru
-吹く, ふく, fuku
-降る, ふる, furu
-曲る, まがる, magaru
-分かる, わかる, wakaru
-忘れる, わすれる, wasureru
