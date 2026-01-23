@@ -4,11 +4,14 @@ import { useTranslation } from 'react-i18next'
 import { X, Mail, Lock, Link as LinkIcon, AlertCircle, CheckCircle, Edit2, Save } from 'lucide-react'
 import { useUserStore } from '../store/useUserStore'
 import { updateUserProfile } from '../services/userService'
+import { usePracticeStore } from '../store/usePracticeStore'
+
 
 const Profile = () => {
   const { t } = useTranslation()
   const { currentUser, updateUserEmail, updateUserPassword, linkGoogleAccount, reauthenticate } = useAuth()
   const { profile, updateProfile } = useUserStore()
+  const { getHistoryByCategory } = usePracticeStore()
 
   const [isEditingName, setIsEditingName] = useState(false)
   const [newName, setNewName] = useState(profile?.displayName || '')
@@ -437,29 +440,76 @@ const Profile = () => {
       </div>
 
       <div className="card">
-        <h2 className="text-xl md:text-2xl font-zen font-bold mb-4 md:mb-6">{t('profile.achievements.title')}</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-4">
-          {[
-            { id: 'streak-15', icon: '🔥', name: t('profile.achievements.streak15') },
-            { id: 'first-perfect', icon: '⭐', name: t('profile.achievements.firstPerfect') },
-            { id: 'questions-100', icon: '📚', name: t('profile.achievements.questions100') },
-            { id: 'stage-master', icon: '🏆', name: t('profile.achievements.stageMaster') },
-            { id: 'kanji-500', icon: '💎', name: t('profile.achievements.kanji500') },
-            { id: 'n3-ready', icon: '🎯', name: t('profile.achievements.n3Ready') },
-            { id: 'grammar-expert', icon: '🌸', name: t('profile.achievements.grammarExpert') },
-            { id: 'jlpt-champion', icon: '👑', name: t('profile.achievements.jlptChampion') },
-          ].map((achievement, index) => {
-            const isUnlocked = profile?.stats?.stages_cleared?.includes(achievement.id) || false
+        <h2 className="text-xl md:text-2xl font-zen font-bold mb-4 md:mb-6">
+          {t('profile.statistics.title', { level: selectedLevel })}
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
+          {['gojuon', 'verbs', 'kanji', 'grammar', 'vocabulary'].map((category) => {
+            const history = getHistoryByCategory(category, selectedLevel)
+            const hasData = history.length > 0
+
+            // Calculate stats
+            const lastEntry = history[0]
+            const avgAccuracy = hasData
+              ? Math.round(history.reduce((sum, h) => sum + h.accuracy, 0) / history.length)
+              : 0
+
+            // Data for chart (reverse to show chronological order: Old -> New)
+
+
             return (
-              <div
-                key={index}
-                className={`p-3 md:p-4 rounded-xl text-center ${isUnlocked
-                  ? 'bg-gradient-to-br from-sakura-pink/20 to-electric-cyan/20 border-2 border-sakura-pink/50'
-                  : 'bg-white/5 opacity-50'
-                  }`}
-              >
-                <div className={`text-3xl md:text-4xl mb-1 md:mb-2 ${isUnlocked ? '' : 'grayscale'}`}>{achievement.icon}</div>
-                <div className="text-[10px] md:text-xs font-semibold">{achievement.name}</div>
+              <div key={category} className="glass p-3 rounded-xl border border-white/5">
+                <div className="flex flex-col gap-2 mb-2">
+                  <div className="flex items-center gap-2">
+                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-lg font-bold bg-gradient-to-br ${category === 'verbs' ? 'from-blue-500 to-cyan-500' :
+                      category === 'gojuon' ? 'from-green-500 to-teal-500' :
+                        category === 'kanji' ? 'from-orange-500 to-red-500' :
+                          category === 'vocabulary' ? 'from-yellow-400 to-orange-500' :
+                            'from-purple-500 to-pink-500'
+                      }`}>
+                      {category === 'verbs' ? '✍️' :
+                        category === 'gojuon' ? 'あ' :
+                          category === 'kanji' ? '漢' :
+                            category === 'vocabulary' ? '🔤' : '📖'}
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h3 className="font-bold text-sm truncate">
+                        {t(`practice.categories.${category}.title`)}
+                      </h3>
+                      <p className="text-[10px] text-white/50 truncate">
+                        {t('profile.statistics.lastPractice')}: {hasData
+                          ? new Date(lastEntry.date).toLocaleDateString()
+                          : '--'}
+                      </p>
+                    </div>
+                  </div>
+
+                  {hasData && (
+                    <div className="flex items-baseline justify-between">
+                      <div className="text-xl font-bold text-white leading-none">
+                        {lastEntry.score}/{lastEntry.total}
+                      </div>
+                      <div className={`text-xs font-bold ${lastEntry.accuracy >= 80 ? 'text-green-400' :
+                        lastEntry.accuracy >= 60 ? 'text-yellow-400' : 'text-red-400'
+                        }`}>
+                        {lastEntry.accuracy}%
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-white/60">{t('profile.statistics.recentAverage')} (5)</span>
+                    <span className={`font-bold ${avgAccuracy >= 80 ? 'text-green-400' :
+                      avgAccuracy >= 60 ? 'text-yellow-400' : 'text-white/40'
+                      }`}>
+                      {hasData ? `${avgAccuracy}%` : '--'}
+                    </span>
+                  </div>
+
+
+                </div>
               </div>
             )
           })}

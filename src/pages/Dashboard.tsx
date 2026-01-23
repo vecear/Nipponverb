@@ -10,10 +10,12 @@ const Dashboard = () => {
   const { profile } = useUserStore()
 
   // Default stats for new users
-  const stats = profile?.stats || {
+  const stats = {
     verbs: { accuracy: 0, learned: 0 },
     kanji: { accuracy: 0, learned: 0 },
-    grammar: { accuracy: 0, learned: 0 }
+    grammar: { accuracy: 0, learned: 0 },
+    vocabulary: { accuracy: 0, learned: 0 },
+    ...(profile?.stats || {})
   }
 
   const modes = [
@@ -46,6 +48,13 @@ const Dashboard = () => {
       path: '/practice/kanji',
       color: 'from-orange-500 to-red-500',
     },
+    {
+      title: t('practice.categories.vocabulary.title'),
+      description: t('practice.categories.vocabulary.description'),
+      icon: '🔤',
+      path: '/practice/vocabulary',
+      color: 'from-yellow-400 to-orange-500',
+    },
   ]
 
   return (
@@ -61,7 +70,7 @@ const Dashboard = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="grid grid-cols-3 gap-2 md:gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
         <StatsCard
           title={t('practice.categories.verbs.title')}
           value={stats.verbs.accuracy}
@@ -82,6 +91,13 @@ const Dashboard = () => {
           subtitle={t('dashboard.stats.patternsMastered', { count: stats.grammar.learned })}
           color="#9333EA"
           icon="📖"
+        />
+        <StatsCard
+          title={t('practice.categories.vocabulary.title')}
+          value={stats.vocabulary?.accuracy || 0}
+          subtitle={t('dashboard.stats.learned', { count: stats.vocabulary?.learned || 0 })}
+          color="#FACC15"
+          icon="🔤"
         />
       </div>
 

@@ -90,6 +90,10 @@
       "kanji": {
         "title": "漢字讀音",
         "description": "學習漢字讀音和意義"
+      },
+      "vocabulary": {
+        "title": "單字練習",
+        "description": "擴充您的日語詞彙量 (N5-N1)"
       }
     },
     "question": "第 {{current}} 題，共 {{total}} 題",
@@ -192,16 +196,11 @@
       "kanji": "漢字",
       "grammar": "文法"
     },
-    "achievements": {
-      "title": "成就",
-      "streak15": "15 天連續",
-      "firstPerfect": "首次完美",
-      "questions100": "100 題",
-      "stageMaster": "關卡大師",
-      "kanji500": "500 個漢字",
-      "n3Ready": "N3 準備完成",
-      "grammarExpert": "文法專家",
-      "jlptChampion": "JLPT 冠軍"
+    "statistics": {
+      "title": "{{level}} 練習統計",
+      "lastPractice": "上次練習",
+      "recentAverage": "近期平均",
+      "noData": "尚無資料"
     },
     "settings": {
       "modifyData": "修改資料",

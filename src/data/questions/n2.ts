@@ -5,7 +5,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_keigo_1',
         prob: '資料{しりょう}を______。',
-        prob_zh: '我看過資料了 (謙讓語)。',
+        prob_zh: '我 *拜見* 了資料。',
         level: 'N2',
         options: [
             { text: '拝見{はいけん}しました', reason: '正確！「見る」的謙讓語。' },
@@ -20,7 +20,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_keigo_2',
         prob: '駅{えき}まで______ましょうか。',
-        prob_zh: '我送您到車站吧？ (謙讓語)',
+        prob_zh: '我 *送* 您到車站吧？',
         level: 'N2',
         options: [
             { text: '送{おく}らせて', reason: '錯誤：使役 (讓我送)，語氣稍強，不如選項1自然。' },
@@ -36,7 +36,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_passive_1',
         prob: 'このお寺{てら}は、600年{ねん}前{まえ}に______。',
-        prob_zh: '這座寺廟是600年前______ (被建造的)。',
+        prob_zh: '這座寺廟是600年前 *建* 的。',
         level: 'N2',
         options: [
             { text: '建{た}てられました', reason: '正確！客觀事實的受身形。' },
@@ -52,7 +52,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_grammar_1',
         prob: '彼{かれ}なら、必{かなら}ず成功{せいこう}______。',
-        prob_zh: '如果是他的話，______會成功吧 (斷定)。',
+        prob_zh: '如果是他的話， *一定* 會成功吧。',
         level: 'N2',
         options: [
             { text: 'するはずがない', reason: '錯誤：表示「不可能成功」。' },
@@ -67,7 +67,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_grammar_2',
         prob: '勉強{べんきょう}しないことには、合格{ごうかく}______。',
-        prob_zh: '如果不唸書的話，______合格。',
+        prob_zh: '如果不唸書的話， *無法* 合格。',
         level: 'N2',
         options: [
             { text: 'できそうだ', reason: '錯誤：語意矛盾。' },
@@ -161,7 +161,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_megumu_1',
         prob: '貧{まず}しい人{ひと}にお金{かね}を ______。',
-        prob_zh: ' *施捨* 錢給窮人。',
+        prob_zh: '*施捨* 錢給窮人。',
         level: 'N2',
         options: [
             { text: '恵{めぐ}み', reason: '錯誤：連用。' },
@@ -207,7 +207,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_kuyamu_2',
         prob: 'あの時{とき}の決断{けつだん}を ______。',
-        prob_zh: ' *後悔* 當初的決定。',
+        prob_zh: '*後悔* 當初的決定。',
         level: 'N2',
         options: [
             { text: '悔{く}やませる', reason: '錯誤：使役。' },
@@ -254,7 +254,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_urayamu_1',
         prob: '彼{かれ}の才能{さいのう}を ______。',
-        prob_zh: ' *羨慕* 他的才能。',
+        prob_zh: '*羨慕* 他的才能。',
         level: 'N2',
         options: [
             { text: '羨{うらや}ましい', reason: '錯誤：這是形容詞，通常不接名詞。' },
@@ -316,7 +316,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_ogamu_1',
         prob: '初日{はつひ}の出{で}を ______。',
-        prob_zh: ' *膜拜* 元旦的日出。',
+        prob_zh: '*膜拜* 元旦的日出。',
         level: 'N2',
         options: [
             { text: '拝{おが}んで', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
@@ -410,7 +410,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_aogu_1',
         prob: '夜空{よぞら}を ______ 星{ほし}を眺{なが}める。',
-        prob_zh: ' *仰望* 夜空眺望星星。',
+        prob_zh: '*仰望* 夜空眺望星星。',
         level: 'N2',
         options: [
             { text: '仰{あお}ぎ', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
@@ -425,7 +425,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_aogu_2',
         prob: '指導{しどう}を ______。',
-        prob_zh: ' *請求* 指導。',
+        prob_zh: '*請求* 指導。',
         level: 'N2',
         options: [
             { text: '仰{あお}ぎ', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
@@ -441,7 +441,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_nageku_1',
         prob: '不運{ふうん}を ______。',
-        prob_zh: ' *哀嘆* 不幸。',
+        prob_zh: '*哀嘆* 不幸。',
         level: 'N2',
         options: [
             { text: '嘆{なげ}き', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
@@ -472,7 +472,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_tsutsushimu_1',
         prob: '不謹慎{ふきんしん}な言動{げんどう}は ______ べきだ。',
-        prob_zh: '應該 *謹慎* 言行不檢的行為(克制)。',
+        prob_zh: '應該 *謹慎* 言行不檢的行為。',
         level: 'N2',
         options: [
             { text: '慎{つつ}しま', reason: '錯誤：否定。' },
@@ -503,7 +503,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_hagemasu_1',
         prob: '落ち込んでいる友人{ゆうじん}を ______。',
-        prob_zh: ' *鼓勵* 沮喪的朋友。',
+        prob_zh: '*鼓勵* 沮喪的朋友。',
         level: 'N2',
         options: [
             { text: '励{はげ}ま', reason: '錯誤：否定。' },
@@ -534,7 +534,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_nagameru_1',
         prob: '泣いている子{こ}を ______。',
-        prob_zh: ' *安撫* 哭泣的孩子。',
+        prob_zh: '*安撫* 哭泣的孩子。',
         level: 'N2',
         options: [
             { text: '慰{なぐさ}めよう', reason: '錯誤：這是意向形，語意不符。' },
@@ -549,7 +549,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_nagameru_2',
         prob: '音楽{おんがく}に心{こころ}を ______。',
-        prob_zh: '被音樂 *療癒* (的心靈)。',
+        prob_zh: '被音樂 *療癒* 。',
         level: 'N2',
         options: [
             { text: '癒{い}やされる', reason: '錯誤：這是「療癒」，語意不符。' },
@@ -565,7 +565,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_itawaru_1',
         prob: 'お年寄{としよ}りを ______。',
-        prob_zh: ' *體恤* 長者。',
+        prob_zh: '*體恤* 長者。',
         level: 'N2',
         options: [
             { text: '労{いたわ}り', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
@@ -596,7 +596,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_uyamau_1',
         prob: '神{かみ}を ______。',
-        prob_zh: ' *敬奉* 神明。',
+        prob_zh: '*敬奉* 神明。',
         level: 'N2',
         options: [
             { text: '敬{うやま}い', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
@@ -611,7 +611,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_uyamau_2',
         prob: '目上{めうえ}の人{ひと}を ______ 態度{たいど}。',
-        prob_zh: ' *尊敬* 長輩的態度。',
+        prob_zh: '*尊敬* 長輩的態度。',
         level: 'N2',
         options: [
             { text: '敬{うやま}う', reason: '正確！辭書形修飾。' },
@@ -627,7 +627,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_agameru_1',
         prob: '指導者{しどうしゃ}として ______。',
-        prob_zh: ' *推崇* 為領導者。',
+        prob_zh: '*推崇* 為領導者。',
         level: 'N2',
         options: [
             { text: '崇{あが}めて', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
@@ -674,7 +674,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_takuwaeru_2',
         prob: '実力{じつりょく}を ______。',
-        prob_zh: ' *積蓄* 實力。',
+        prob_zh: '*積蓄* 實力。',
         level: 'N2',
         options: [
             { text: '蓄{たくわ}える', reason: '正確！一段動詞。' },
@@ -690,7 +690,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_totonoeru_1',
         prob: '身{み}なりを ______。',
-        prob_zh: ' *整理* 儀容。',
+        prob_zh: '*整理* 儀容。',
         level: 'N2',
         options: [
             { text: '直{なお}す', reason: '錯誤：這是「改正/修理」，語意不符。' },
@@ -705,7 +705,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_totonoeru_2',
         prob: '準備{じゅんび}を ______ 待{ま}つ。',
-        prob_zh: ' *備妥* 準備並等待。',
+        prob_zh: '*備妥* 準備並等待。',
         level: 'N2',
         options: [
             { text: '整{ととの}い', reason: '錯誤：接續。' },
@@ -721,7 +721,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_hikaeru_1',
         prob: '塩分{えんぶん}を ______。',
-        prob_zh: ' *節制* 鹽分。',
+        prob_zh: '*節制* 鹽分。',
         level: 'N2',
         options: [
             { text: '慎{つつ}しむ', reason: '錯誤：這是「謹慎/節制」，語意不符。' },
@@ -736,7 +736,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_hikaeru_2',
         prob: '選挙{せんきょ}を目前{もくぜん}に ______ います。',
-        prob_zh: '選舉就在 *眼前(迫在眉睫)*。',
+        prob_zh: '選舉就在 *眼前*。',
         level: 'N2',
         options: [
             { text: '控{ひか}えて', reason: '正確！表示在時間或空間上臨近。' },
@@ -752,7 +752,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_kitaeru_1',
         prob: '体{からだ}を ______。',
-        prob_zh: ' *鍛鍊* 身體。',
+        prob_zh: '*鍛鍊* 身體。',
         level: 'N2',
         options: [
             { text: '鍛{きた}えて', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -783,7 +783,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_tonaeru_1',
         prob: '異議{いぎ}を ______。',
-        prob_zh: ' *提出* 異議。',
+        prob_zh: '*提出* 異議。',
         level: 'N2',
         options: [
             { text: '唱{とな}え', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -798,7 +798,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_tonaeru_2',
         prob: '念仏{ねんぶつ}を ______。',
-        prob_zh: ' *念* 佛。',
+        prob_zh: '*念* 佛。',
         level: 'N2',
         options: [
             { text: '言{い}う', reason: '錯誤：這是「說」，語意不符。' },
@@ -814,7 +814,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_fumaeru_1',
         prob: '事実{じじつ}を ______ 議論{ぎろん}する。',
-        prob_zh: ' *基於* 事實進行討論。',
+        prob_zh: '*基於* 事實進行討論。',
         level: 'N2',
         options: [
             { text: '踏{ふ}まえ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -829,7 +829,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_fumaeru_2',
         prob: '過去{かこ}の失敗{しっぱい}を ______。',
-        prob_zh: ' *有鑑於(基於)* 過去的失敗。',
+        prob_zh: '*有鑑於* 過去的失敗。',
         level: 'N2',
         options: [
             { text: '活{い}かして', reason: '錯誤：這是「活用」，語意不符。' },
@@ -845,7 +845,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_osaeru_1',
         prob: '怒{いか}りを ______。',
-        prob_zh: ' *壓抑* 怒火。',
+        prob_zh: '*壓抑* 怒火。',
         level: 'N2',
         options: [
             { text: 'ガマンする', reason: '錯誤：這是「忍耐」，語意不符。' },
@@ -860,7 +860,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_osaeru_2',
         prob: '出費{しゅっぴ}を ______。',
-        prob_zh: ' *抑制* 支出。',
+        prob_zh: '*抑制* 支出。',
         level: 'N2',
         options: [
             { text: '抑{おさ}え', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -876,7 +876,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_kotaeru_e_1',
         prob: '寒{さむ}さに ______。',
-        prob_zh: ' *忍受* 寒冷。',
+        prob_zh: '*忍受* 寒冷。',
         level: 'N2',
         options: [
             { text: '耐{た}える', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -891,7 +891,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_kotaeru_e_2',
         prob: ' ______ られないほど嬉{うれ}しい。',
-        prob_zh: '高興到無法 *忍住(喜悅)*。',
+        prob_zh: '高興到無法 *忍住*。',
         level: 'N2',
         options: [
             { text: '堪{こた}えられ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -922,7 +922,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_kamaeru_2',
         prob: 'のん気に ______ いてはいけない。',
-        prob_zh: '不能 *擺出* 悠閒自在的樣子(太過放鬆)。',
+        prob_zh: '不能 *擺出* 悠閒自在的樣子。',
         level: 'N2',
         options: [
             { text: '構{かま}い', reason: '錯誤：接續。' },
@@ -938,7 +938,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_oginau_1',
         prob: '不足{ふそく}分{ぶん}を ______。',
-        prob_zh: ' *補充* 不足的部分。',
+        prob_zh: '*補充* 不足的部分。',
         level: 'N2',
         options: [
             { text: '補充{ほじゅう}する', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -953,7 +953,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_oginau_2',
         prob: '欠点{けってん}を ______。',
-        prob_zh: ' *彌補* 缺點。',
+        prob_zh: '*彌補* 缺點。',
         level: 'N2',
         options: [
             { text: '埋{う}める', reason: '錯誤：這是「填補」，語意不符。' },
@@ -970,7 +970,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_aratameru_1',
         prob: '間違{まちが}いを ______。',
-        prob_zh: ' ______ 錯誤。 (改正/修正)',
+        prob_zh: '*改正/修正* 錯誤。',
         level: 'N2',
         options: [
             { text: '改{あらた}めます', reason: '正確！一段動詞。表示改進或重新審視。' },
@@ -985,7 +985,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_aratameru_2',
         prob: '日{ひ}を ______ 出直{でなお}します。',
-        prob_zh: ' ______ 日期後再過來。 (改日/另選)',
+        prob_zh: '*改日/另選* 日期後再過來。',
         level: 'N2',
         options: [
             { text: '變{か}えて', reason: '錯誤：這是「改變日期」，語意不符。' },
@@ -1001,7 +1001,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_amayakasu_1',
         prob: '子供{こども}を ______ はいけない。',
-        prob_zh: '不可以 ______ 小孩。 (溺愛/縱容)',
+        prob_zh: '不可以 *溺愛/縱容* 小孩。',
         level: 'N2',
         options: [
             { text: '可愛{かわい}がり', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1016,7 +1016,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_amayakasu_2',
         prob: '孫{まご}を ______ すぎる。',
-        prob_zh: '太過 ______ 孫子了。 (寵溺)',
+        prob_zh: '太過 *寵溺* 孫子了。',
         level: 'N2',
         options: [
             { text: '甘{あま}やかし', reason: '正確！五段連用形。' },
@@ -1032,7 +1032,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_ayamaru_1',
         prob: '素直{すなお}に ______ べきだ。',
-        prob_zh: '應該坦率地 ______。 (道歉)',
+        prob_zh: '應該坦率地 *道歉*。',
         level: 'N2',
         options: [
             { text: '謝{あや}まる', reason: '正確！五段動詞辭書形。' },
@@ -1047,7 +1047,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_ayamaru_2',
         prob: '相手{あいて}に ______ ましたか？',
-        prob_zh: '向對方 ______ 了嗎？ (賠罪/道歉)',
+        prob_zh: '向對方 *賠罪/道歉* 了嗎？',
         level: 'N2',
         options: [
             { text: '謝{あや}まり', reason: '正確！五段連用形。' },
@@ -1063,7 +1063,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_arasou_1',
         prob: '土地{とち}をめぐって ______。',
-        prob_zh: '圍繞著土地進行 ______。 (爭執/爭奪)',
+        prob_zh: '圍繞著土地進行 *爭執/爭奪*。',
         level: 'N2',
         options: [
             { text: '戰{たたか}う', reason: '錯誤：這是「戰鬥，層次更高」，語意不符。' },
@@ -1078,7 +1078,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_arasou_2',
         prob: '優劣{ゆうれつ}を ______ 必要{ひつよう}はない。',
-        prob_zh: '沒有必要 ______ 優劣。 (競爭/爭論)',
+        prob_zh: '沒有必要 *競爭/爭論* 優劣。',
         level: 'N2',
         options: [
             { text: '競{きそ}う', reason: '錯誤：這是「競逐/比賽」，語意不符。' },
@@ -1094,7 +1094,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_aratamaru_1',
         prob: '正月{しょうがつ}になって、気持{きも}ちが ______。',
-        prob_zh: '到了正月，心情也 ______ 了。 (煥然一新)',
+        prob_zh: '到了正月，心情也 *煥然一新* 了。',
         level: 'N2',
         options: [
             { text: '改{あらた}めました', reason: '錯誤：那是他動詞(人去修改)。' },
@@ -1109,7 +1109,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_aratamaru_2',
         prob: 'そんなに ______ ないでください。',
-        prob_zh: '請不要那麼 ______。 (莊重/拘謹)',
+        prob_zh: '請不要那麼 *莊重/拘謹*。',
         level: 'N2',
         options: [
             { text: '緊張{きんちょう}し', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1125,7 +1125,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_arawasu_1',
         prob: '感謝{かんしゃ}の気持{きも}ちを言辞{ことば}に ______。',
-        prob_zh: '用言語 ______ 感謝的心情。 (表達)',
+        prob_zh: '用言語 *表達* 感謝的心情。',
         level: 'N2',
         options: [
             { text: '表現{ひょうげん}し', reason: '錯誤：這是「漢字詞」，語意不符。' },
@@ -1140,7 +1140,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_arawasu_2',
         prob: 'このマークは何{なに}を ______ いますか。',
-        prob_zh: '這個標誌 ______ 著什麼？ (象徵/代表)',
+        prob_zh: '這個標誌 *象徵/代表* 著什麼？',
         level: 'N2',
         options: [
             { text: '現{あらわ}して', reason: '錯誤：漢字意義不同。' },
@@ -1156,7 +1156,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_arawareru_1',
         prob: '太陽{たいよう}が雲{くも}の間{あいだ}から ______。',
-        prob_zh: '太陽從雲縫中 ______ 了出來。 (顯現)',
+        prob_zh: '太陽從雲縫中 *顯現* 了出來。',
         level: 'N2',
         options: [
             { text: '消{き}え', reason: '錯誤：語義相反(消失)。' },
@@ -1171,7 +1171,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_arawareru_2',
         prob: 'ついに真実{しんじつ}が姿{すがた}を ______。',
-        prob_zh: '真相終於 ______ 了。 (現形/浮現)',
+        prob_zh: '真相終於 *現形/浮現* 了。',
         level: 'N2',
         options: [
             { text: '見{み}つかった', reason: '錯誤：這是「找到了」，語意不符。' },
@@ -1187,7 +1187,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_awaseru_1',
         prob: '手{て}を ______ 祈{いの}る。',
-        prob_zh: ' ______ 雙手祈禱。 (合起)',
+        prob_zh: '*合起* 雙手祈禱。',
         level: 'N2',
         options: [
             { text: '合{あ}わせ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1202,7 +1202,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_awaseru_2',
         prob: 'スケジュールを ______ おきます。',
-        prob_zh: '我會預先 ______ 大家的行程。 (調整/配合)',
+        prob_zh: '我會預先 *調整/配合* 大家的行程。',
         level: 'N2',
         options: [
             { text: '合{あ}わせて', reason: '正確！一段去る加て。' },
@@ -1218,7 +1218,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_awateru_1',
         prob: '時間{じかん}がないので ______。',
-        prob_zh: '因為沒時間，感到很 ______。 (慌張)',
+        prob_zh: '因為沒時間，感到很 *慌張*。',
         level: 'N2',
         options: [
             { text: 'あわてて', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1233,7 +1233,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_awateru_2',
         prob: '火事{かじ}の時{とき}は、 ______ ずに逃{に}げてください。',
-        prob_zh: '火災時，請不要 ______ 地逃生。 (慌張)',
+        prob_zh: '火災時，請不要 *慌張* 地逃生。',
         level: 'N2',
         options: [
             { text: 'あわてて', reason: '錯誤：那變成慌忙地逃。' },
@@ -1249,7 +1249,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_ikasu_1',
         prob: '自分{じぶん}の經驗{けいけん}を仕事{しごと}に ______。',
-        prob_zh: '在工作中 ______ 自己的經驗。 (活用/發揮)',
+        prob_zh: '在工作中 *活用/發揮* 自己的經驗。',
         level: 'N2',
         options: [
             { text: '生{い}きて', reason: '錯誤：那是自動詞(人活著)。' },
@@ -1264,7 +1264,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_ikasu_2',
         prob: '彼{かれ}の才能{さいのう}を ______ られる場所{ばしょ}。',
-        prob_zh: '能讓他的才能得以 ______ 的場所。 (展現/活用)',
+        prob_zh: '能讓他的才能得以 *展現/活用* 的場所。',
         level: 'N2',
         options: [
             { text: '生{い}かせ', reason: '正確！五段可能形「生かせる」。在此修飾場所。' },
@@ -1281,7 +1281,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_kasanaru_1',
         prob: '不幸{ふこう}が ______。',
-        prob_zh: '不幸的事 ______ 而至。 (重疊)',
+        prob_zh: '不幸的事 *重疊* 而至。',
         level: 'N2',
         options: [
             { text: '合{あ}いました', reason: '錯誤：符合。' },
@@ -1296,7 +1296,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_kasanaru_2',
         prob: '予定{よてい}が ______ しまって、行けません。',
-        prob_zh: '預定 ______ 了，所以不能去。',
+        prob_zh: '預定 *___* 了，所以不能去。',
         level: 'N2',
         options: [
             { text: '重{かさ}なって', reason: '正確！五段促音便。' },
@@ -1312,7 +1312,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_kosuru_1',
         prob: '目{め}を ______ ないでください。',
-        prob_zh: '請不要 ______ 眼睛。 (搓/揉)',
+        prob_zh: '請不要 *搓/揉* 眼睛。',
         level: 'N2',
         options: [
             { text: '擦{こす}れ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1327,7 +1327,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_kosuru_2',
         prob: '汗{あせ}をタオルで ______。',
-        prob_zh: '用毛巾 ______ 汗。 (擦拭/搓)',
+        prob_zh: '用毛巾 *擦拭/搓* 汗。',
         level: 'N2',
         options: [
             { text: '擦{こす}り', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1343,7 +1343,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_katamuku_1',
         prob: '日{ひ}が西{にし}に ______。',
-        prob_zh: '太陽向西 ______。 (傾斜/西沉)',
+        prob_zh: '太陽向西 *傾斜/西沉*。',
         level: 'N2',
         options: [
             { text: '沈{しず}んで', reason: '錯誤：這是「沉下」，語意不符。' },
@@ -1358,7 +1358,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_katamuku_2',
         prob: '経営{けいえい}が ______。',
-        prob_zh: '經營 ______。 (傾斜/衰敗)',
+        prob_zh: '經營 *傾斜/衰敗*。',
         level: 'N2',
         options: [
             { text: '傾{かたむ}き', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1374,7 +1374,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_moguru_1',
         prob: '海{うみ}に ______。',
-        prob_zh: ' ______ 入海中。 (潛水/鑽入)',
+        prob_zh: '*潛水/鑽入* 入海中。',
         level: 'N2',
         options: [
             { text: '潜{ひそ}んで', reason: '錯誤：那是潜伏/隱藏(HISOMU)。' },
@@ -1389,7 +1389,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_moguru_2',
         prob: '布団{ふとん}に ______。',
-        prob_zh: ' ______ 進被窩。 (鑽入)',
+        prob_zh: '*鑽入* 進被窩。',
         level: 'N2',
         options: [
             { text: '潜{もぐ}る', reason: '正確！辭書形。' },
@@ -1405,7 +1405,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_kegasu_1',
         prob: '名前{なまえ}を ______。',
-        prob_zh: ' ______ 名稱/汙名。 (玷汙)',
+        prob_zh: '*玷汙* 名稱/汙名。',
         level: 'N2',
         options: [
             { text: '汚{けが}し', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1420,7 +1420,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_kegasu_2',
         prob: '神聖{しんせい}な場所{ばしょ}を ______ てはならない。',
-        prob_zh: '絕不可 ______ 神聖的地方。 (褻瀆)',
+        prob_zh: '絕不可 *褻瀆* 神聖的地方。',
         level: 'N2',
         options: [
             { text: '汚{けが}さ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1436,7 +1436,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_moru_1',
         prob: '器{うつわ}に料理{りょうり}を ______。',
-        prob_zh: '在器皿裡 ______ 料理。 (盛/裝)',
+        prob_zh: '在器皿裡 *盛/裝* 料理。',
         level: 'N2',
         options: [
             { text: '入{い}れます', reason: '錯誤：這是「放入」，語意不符。' },
@@ -1451,7 +1451,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_moru_2',
         prob: '山{やま}のように ______ られた砂{すな}。',
-        prob_zh: '堆成山一樣的 ______ 的沙子。 (堆積/盛)',
+        prob_zh: '堆成山一樣的 *堆積/盛* 的沙子。',
         level: 'N2',
         options: [
             { text: '盛{も}り', reason: '錯誤：連用形。' },
@@ -1467,7 +1467,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_seou_1',
         prob: 'リュックを ______。',
-        prob_zh: ' ______ 背包。 (揹/擔負)',
+        prob_zh: '*揹/擔負* 背包。',
         level: 'N2',
         options: [
             { text: '持{も}ち', reason: '錯誤：這是「拿」，語意不符。' },
@@ -1482,7 +1482,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_seou_2',
         prob: '責任{せきにん}を ______。',
-        prob_zh: ' ______ 責任。 (負擔)',
+        prob_zh: '*負擔* 責任。',
         level: 'N2',
         options: [
             { text: '背負{せお}わ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1498,7 +1498,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_shirizoku_1',
         prob: '一歩{いっぽ} ______。',
-        prob_zh: ' ______ 一步。 (後退/退下)',
+        prob_zh: '*後退/退下* 一步。',
         level: 'N2',
         options: [
             { text: '退{しりぞ}け', reason: '錯誤：他動詞(擊退/拒絕)。' },
@@ -1513,7 +1513,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_shirizoku_2',
         prob: '第一線{だいいっせん}から ______。',
-        prob_zh: '從第一線 ______。 (引退)',
+        prob_zh: '從第一線 *引退*。',
         level: 'N2',
         options: [
             { text: '退{しりぞ}く', reason: '正確！辭書形。常用於地位、職位。' },
@@ -1529,7 +1529,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_shirizokeru_1',
         prob: '敵{てき}を ______。',
-        prob_zh: ' ______ 敵人。 (擊退)',
+        prob_zh: '*擊退* 敵人。',
         level: 'N2',
         options: [
             { text: '退{しりぞ}けました', reason: '正確！下一段他動詞。' },
@@ -1544,7 +1544,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_shirizokeru_2',
         prob: '要求{ようきゅう}を ______。',
-        prob_zh: ' ______ 要求。 (拒絕/排除)',
+        prob_zh: '*拒絕/排除* 要求。',
         level: 'N2',
         options: [
             { text: '退{しりぞ}け', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1560,7 +1560,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_soru_1',
         prob: '髭{ひげ}を ______。',
-        prob_zh: ' ______ 鬍子。 (刮/剃)',
+        prob_zh: '*刮/剃* 鬍子。',
         level: 'N2',
         options: [
             { text: '剃{そ}り', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1575,7 +1575,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_soru_2',
         prob: '頭{あたま}を ______。',
-        prob_zh: ' ______ 頭/剃頭。',
+        prob_zh: '*___* 頭/剃頭。',
         level: 'N2',
         options: [
             { text: '剃{そ}り', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1591,7 +1591,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_tsukuru_1',
         prob: '酒{さけ}を ______。',
-        prob_zh: ' ______ 酒。 (釀造/製造)',
+        prob_zh: '*釀造/製造* 酒。',
         level: 'N2',
         options: [
             { text: '造{つく}れ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1606,7 +1606,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_tsukuru_2',
         prob: '船{ふね}を ______ 会社{かいしゃ}。',
-        prob_zh: ' ______ 船的公司。',
+        prob_zh: '*___* 船的公司。',
         level: 'N2',
         options: [
             { text: '造{つく}り', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1622,7 +1622,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_tsuku_1',
         prob: '杖{つえ}を ______。',
-        prob_zh: ' ______ 拐杖。 (拄/插/頂)',
+        prob_zh: '*拄/插/頂* 拐杖。',
         level: 'N2',
         options: [
             { text: '突{つ}きます', reason: '正確！五段動詞。' },
@@ -1637,7 +1637,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_tsuku_2',
         prob: '核心{かくしん}を ______。',
-        prob_zh: ' ______ 核心/中肯。 (直搗/揭露)',
+        prob_zh: '*直搗/揭露* 核心/中肯。',
         level: 'N2',
         options: [
             { text: '指摘{してき}する', reason: '錯誤：這是「指出」，語意不符。' },
@@ -1653,7 +1653,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_akireru_1',
         prob: '彼{かれ}の態度{たいど}に ______。',
-        prob_zh: '對他的態度 ______。 (愕然/吃驚/無語)',
+        prob_zh: '對他的態度 *愕然/吃驚/無語*。',
         level: 'N2',
         options: [
             { text: 'あきれら', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1668,7 +1668,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_akireru_2',
         prob: ' ______ て物{もの}も言{い}えない。',
-        prob_zh: ' ______ 到話都說不出來。',
+        prob_zh: '*___* 到話都說不出來。',
         level: 'N2',
         options: [
             { text: 'あきれ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1684,7 +1684,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_ageru_揚_1',
         prob: '天{てん}ぷらを ______。',
-        prob_zh: ' ______ 天婦羅。 (炸)',
+        prob_zh: '*炸* 天婦羅。',
         level: 'N2',
         options: [
             { text: '揚{あ}げて', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1699,7 +1699,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_ageru_揚_2',
         prob: '旗{はた}を ______。',
-        prob_zh: ' ______ 旗子。 (升起)',
+        prob_zh: '*升起* 旗子。',
         level: 'N2',
         options: [
             { text: '上{あ}げる', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1715,7 +1715,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_ageru_挙_1',
         prob: '手{て}を ______ ください。',
-        prob_zh: '請 ______ 手。 (舉起)',
+        prob_zh: '請 *舉起* 手。',
         level: 'N2',
         options: [
             { text: '挙{あ}げら', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1730,7 +1730,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_ageru_挙_2',
         prob: '例{れい}を ______。',
-        prob_zh: ' ______ 例子。 (列舉)',
+        prob_zh: '*列舉* 例子。',
         level: 'N2',
         options: [
             { text: '並{なら}べる', reason: '錯誤：這是「排列」，語意不符。' },
@@ -1746,7 +1746,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_akogareru_1',
         prob: '都会{とかい}の生活{せいかつ}に ______。',
-        prob_zh: ' ______ 城市生活。 (憧憬/嚮往)',
+        prob_zh: '*憧憬/嚮往* 城市生活。',
         level: 'N2',
         options: [
             { text: '憧{あこが}れ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1761,7 +1761,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_akogareru_2',
         prob: ' ______ れていた先輩{せんぱい}。',
-        prob_zh: '曾經 ______ 的學長/前輩。',
+        prob_zh: '曾經 *___* 的學長/前輩。',
         level: 'N2',
         options: [
             { text: '憧{あこが}れる', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1777,7 +1777,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_ajiwau_1',
         prob: 'ゆっくり ______ ください。',
-        prob_zh: '請慢慢 ______。 (品嚐/體會)',
+        prob_zh: '請慢慢 *品嚐/體會*。',
         level: 'N2',
         options: [
             { text: '味{あじ}わ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1792,7 +1792,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_ajiwau_2',
         prob: '勝利{しょうり}を ______。',
-        prob_zh: ' ______ 勝利的滋味。 (體會)',
+        prob_zh: '*體會* 勝利的滋味。',
         level: 'N2',
         options: [
             { text: '感{かん}じる', reason: '錯誤：這是「感覺到了」，語意不符。' },
@@ -1808,7 +1808,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_azukaru_1',
         prob: '荷物{にもつ}を ______。',
-        prob_zh: ' ______ 行利。 (保管/收存)',
+        prob_zh: '*保管/收存* 行利。',
         level: 'N2',
         options: [
             { text: '預{あず}かり', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1823,7 +1823,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_azukaru_2',
         prob: '留守番{るすばん}を ______。',
-        prob_zh: ' ______ 看家任務。 (承接/擔當)',
+        prob_zh: '*承接/擔當* 看家任務。',
         level: 'N2',
         options: [
             { text: 'する', reason: '錯誤：這是「做」，語意不符。' },
@@ -1839,7 +1839,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_atatamaru_1',
         prob: 'スープで体{からだ}が ______。',
-        prob_zh: '喝了湯身體 ______ 了。 (暖和/溫暖起來)',
+        prob_zh: '喝了湯身體 *暖和/溫暖起來* 了。',
         level: 'N2',
         options: [
             { text: '暖{あたた}めました', reason: '錯誤：他動詞(使其暖和)。' },
@@ -1854,7 +1854,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_atatamaru_2',
         prob: '部屋{へや}が ______ きた。',
-        prob_zh: '房間逐漸 ______ 了起來。',
+        prob_zh: '房間逐漸 *___* 了起來。',
         level: 'N2',
         options: [
             { text: '暖{あたた}まら', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1870,7 +1870,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_atatameru_1',
         prob: '弁当{べんとう}を ______ ください。',
-        prob_zh: '請 ______ 便當。 (加熱/使熱)',
+        prob_zh: '請 *加熱/使熱* 便當。',
         level: 'N2',
         options: [
             { text: '暖{あたた}めて', reason: '正確！一段他動詞。' },
@@ -1885,7 +1885,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_v1399_atatameru_2',
         prob: 'スープを ______ て飲{の}む。',
-        prob_zh: ' ______ 湯來喝。',
+        prob_zh: '*___* 湯來喝。',
         level: 'N2',
         options: [
             { text: '温{あたた}め', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1921,7 +1921,7 @@ export const n2Questions: StaticQuestion[] = [
         options: [
             { text: '暴{あば}れて', reason: '正確！一段動詞。' },
             { text: '暴{あば}れ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '暴{あば}ら', reason: '錯誤！' },
+            { text: '暴{あば}ら', reason: '錯誤：錯誤！' },
             { text: '暴{あば}れる', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
@@ -1947,7 +1947,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_afureru_2',
         prob: '自信{じしん}に ______ います。',
-        prob_zh: '充滿了 *自信*。 (溢出)',
+        prob_zh: '充滿了 *自信*。',
         level: 'N2',
         options: [
             { text: '溢{あふ}れる', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1983,7 +1983,7 @@ export const n2Questions: StaticQuestion[] = [
         options: [
             { text: '煎{い}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '煎{い}る', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '入{い}れて', reason: '錯誤！' },
+            { text: '入{い}れて', reason: '錯誤：錯誤！' },
             { text: '煎{い}って', reason: '正確！五段促音便。' }
         ],
         correctIndex: 3,
@@ -1994,7 +1994,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_ueru_1',
         prob: '愛{あい}に ______。',
-        prob_zh: '*渴望* 愛。 (飢渴)',
+        prob_zh: '*渴望* 愛。',
         level: 'N2',
         options: [
             { text: '飢{う}え', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2009,11 +2009,11 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_ueru_2',
         prob: '食料{しょくりょう}に ______ います。',
-        prob_zh: '正在 *飢餓*。 (缺乏糧食)',
+        prob_zh: '正在 *飢餓*。',
         level: 'N2',
         options: [
             { text: '飢{う}えて', reason: '正確！一段動詞。' },
-            { text: '空{す}いて', reason: '錯誤！' },
+            { text: '空{す}いて', reason: '錯誤：錯誤！' },
             { text: '飢{う}える', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '飢{う}え', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
@@ -2025,7 +2025,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_uketamawaru_1',
         prob: '注文{ちゅうもん}を ______。',
-        prob_zh: '*接受* 訂單。 (謙讓語)',
+        prob_zh: '*接受* 訂單。',
         level: 'N2',
         options: [
             { text: '承{うけたまわ}り', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2076,7 +2076,7 @@ export const n2Questions: StaticQuestion[] = [
         options: [
             { text: '受{う}け持{も}って', reason: '正確！五段促音便。' },
             { text: '受{う}け持{も}ち', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '持{も}って', reason: '錯誤！' },
+            { text: '持{も}って', reason: '錯誤：錯誤！' },
             { text: '受{う}け持{も}つ', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 0,
@@ -2164,12 +2164,12 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_utsuru_camera_2',
         prob: 'きれいに ______ います。',
-        prob_zh: '拍得很 *漂亮*。 (拍出來的狀態)',
+        prob_zh: '拍得很 *漂亮*。',
         level: 'N2',
         options: [
             { text: '撮{と}れて', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '写{うつ}って', reason: '正確！五段促音便。' },
-            { text: '写{うつ}らか', reason: '錯誤！' },
+            { text: '写{うつ}らか', reason: '錯誤：錯誤！' },
             { text: '写{うつ}り', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 1,
@@ -2261,7 +2261,7 @@ export const n2Questions: StaticQuestion[] = [
         level: 'N2',
         options: [
             { text: '追{お}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '追{お}い掛{か}けられ', reason: '錯誤！' },
+            { text: '追{お}い掛{か}けられ', reason: '錯誤：錯誤！' },
             { text: '追{お}い掛{か}け', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '追{お}い掛{か}けて', reason: '正確！一段動詞。' }
         ],
@@ -2355,7 +2355,7 @@ export const n2Questions: StaticQuestion[] = [
         options: [
             { text: '驚{おどろ}かした', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '驚{おどろ}かして', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '驚{おどろ}かせ', reason: '錯誤！' },
+            { text: '驚{おどろ}かせ', reason: '錯誤：錯誤！' },
             { text: '驚{おどろ}かし', reason: '正確！' }
         ],
         correctIndex: 3,
@@ -2505,7 +2505,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_kagu_2',
         prob: 'クンクン ______ います。',
-        prob_zh: '正聞個 *不停*。 (嗅)',
+        prob_zh: '正聞個 *不停*。',
         level: 'N2',
         options: [
             { text: '嗅{か}ぐ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2536,7 +2536,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_kajiru_2',
         prob: 'フランス語{ご}を少{すこ}し ______ ました。',
-        prob_zh: '稍微 *學過一點點* 法語。 (咬)',
+        prob_zh: '稍微 *學過一點點* 法語。',
         level: 'N2',
         options: [
             { text: '学{まな}び', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2567,7 +2567,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_katsugu_2',
         prob: '縁起{えんぎ}を ______ います。',
-        prob_zh: '在乎 *吉利*。 (扛著吉兆)',
+        prob_zh: '在乎 *吉利*。',
         level: 'N2',
         options: [
             { text: '担{かつ}ぐ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2598,10 +2598,10 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_kaneru_2',
         prob: '出来{でき} ______ います。',
-        prob_zh: ' *難以* 辦到。 (沒法兼顧)',
+        prob_zh: '*難以* 辦到。',
         level: 'N2',
         options: [
-            { text: 'きず', reason: '錯誤！' },
+            { text: 'きず', reason: '錯誤：錯誤！' },
             { text: 'かね', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'かねて', reason: '正確！一段動詞。搭配連用形表示「難以...」。' },
             { text: 'かねる', reason: '錯誤：文法正確但語意或時態不符。' }
@@ -2629,13 +2629,13 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_kabuseru_2',
         prob: '罪{つみ}を ______ られた。',
-        prob_zh: '被 *嫁禍* 了罪名。 (被蓋上)',
+        prob_zh: '被 *嫁禍* 了罪名。',
         level: 'N2',
         options: [
             { text: '被{かぶ}せ', reason: '正確！一段動詞受身形詞幹。' },
-            { text: '被{かぶ}る', reason: '錯誤！' },
-            { text: '被{かぶ}っ', reason: '錯誤！' },
-            { text: '被{かぶ}ら', reason: '錯誤！' }
+            { text: '被{かぶ}る', reason: '錯誤：錯誤！' },
+            { text: '被{かぶ}っ', reason: '錯誤：錯誤！' },
+            { text: '被{かぶ}ら', reason: '錯誤：錯誤！' }
         ],
         correctIndex: 0,
         tag: 'passive',
@@ -2650,7 +2650,7 @@ export const n2Questions: StaticQuestion[] = [
         options: [
             { text: 'からかい', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'からかう', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'からかいい', reason: '錯誤！' },
+            { text: 'からかいい', reason: '錯誤：錯誤！' },
             { text: 'からかって', reason: '正確！五段促音便。' }
         ],
         correctIndex: 3,
@@ -2666,7 +2666,7 @@ export const n2Questions: StaticQuestion[] = [
             { text: 'からかって', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'からかい', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'からかった', reason: '正確！五段過去式。' },
-            { text: 'からか', reason: '錯誤！' }
+            { text: 'からか', reason: '錯誤：錯誤！' }
         ],
         correctIndex: 2,
         tag: 'masu',
@@ -2694,7 +2694,7 @@ export const n2Questions: StaticQuestion[] = [
         prob_zh: '*銘刻* 在心裡。',
         level: 'N2',
         options: [
-            { text: '忘{わす}れて', reason: '錯誤！' },
+            { text: '忘{わす}れて', reason: '錯誤：錯誤！' },
             { text: '刻{きざ}んで', reason: '正確！五段撥音便。' },
             { text: '刻{きざ}み', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '覚{おぼ}えて', reason: '錯誤：文法正確但語意或時態不符。' }
@@ -2707,7 +2707,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_kuzusu_1',
         prob: '千円{せんえん}札{さつ}を ______。',
-        prob_zh: '把千元鈔票 *換開/找零*。 (拆開)',
+        prob_zh: '把千元鈔票 *換開/找零*。',
         level: 'N2',
         options: [
             { text: '壊{こわ}します', reason: '錯誤：那是「破壞」。' },
@@ -2753,7 +2753,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_kudaku_2',
         prob: '心{こころ}を ______ います。',
-        prob_zh: '正在 *費盡心思*。 (破碎內心)',
+        prob_zh: '正在 *費盡心思*。',
         level: 'N2',
         options: [
             { text: '砕{くだ}いて', reason: '正確！五段イ音便。' },
@@ -2784,7 +2784,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_kutabireru_2',
         prob: ' ______ けた洋服{ようふく}。',
-        prob_zh: '*穿舊了* 的衣服。 (精疲力竭的衣服)',
+        prob_zh: '*穿舊了* 的衣服。',
         level: 'N2',
         options: [
             { text: 'くたびれた', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2846,7 +2846,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_kumu_water_2',
         prob: '相手{あいて}の意向{いこう}を ______ います。',
-        prob_zh: '正在 *考慮/體察* 對方的意向。 (汲取心意)',
+        prob_zh: '正在 *考慮/體察* 對方的意向。',
         level: 'N2',
         options: [
             { text: '考{かんが}えて', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2881,8 +2881,8 @@ export const n2Questions: StaticQuestion[] = [
         level: 'N2',
         options: [
             { text: 'くるま', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: 'くるみ', reason: '錯誤！' },
-            { text: 'くるんで', reason: '錯誤！(主動)' },
+            { text: 'くるみ', reason: '錯誤：錯誤！' },
+            { text: 'くるんで', reason: '錯誤：錯誤！(主動)' },
             { text: '包{つつ}まれ', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 2,
@@ -2939,7 +2939,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_keru_2',
         prob: '地面{じめん}を ______ 走{はし}る。',
-        prob_zh: '*蹬* 地奔跑。 (踢地)',
+        prob_zh: '*蹬* 地奔跑。',
         level: 'N2',
         options: [
             { text: '蹴{け}る', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2970,7 +2970,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_kogasu_2',
         prob: '胸{むね}を ______ います。',
-        prob_zh: '正在 *焦急萬分*。 (焦心)',
+        prob_zh: '正在 *焦急萬分*。',
         level: 'N2',
         options: [
             { text: '焦{こ}がし', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3001,7 +3001,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_kogoeru_2',
         prob: '寒{さむ}さで ______ そうだ。',
-        prob_zh: '快要被凍 *死了*。 (凍僵)',
+        prob_zh: '快要被凍 *死了*。',
         level: 'N2',
         options: [
             { text: '凍{こご}え', reason: '正確！一段連用形。' },
@@ -3063,7 +3063,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_korogasu_2',
         prob: 'サイコロを ______ います。',
-        prob_zh: '正在 *擲* 骰子。 (滾動)',
+        prob_zh: '正在 *擲* 骰子。',
         level: 'N2',
         options: [
             { text: '転{ころ}がし', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3079,7 +3079,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_sakanoboru_1',
         prob: '川{かわ}を ______。',
-        prob_zh: '逆流 *而上*。 (溯)',
+        prob_zh: '逆流 *而上*。',
         level: 'N2',
         options: [
             { text: '遡{さかのぼ}って', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3114,7 +3114,7 @@ export const n2Questions: StaticQuestion[] = [
         level: 'N2',
         options: [
             { text: '探{さぐ}って', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '探{さが}します', reason: '用法不同：那是「尋找」。' },
+            { text: '探{さが}します', reason: '錯誤：用法不同：那是「尋找」。' },
             { text: '探{さぐ}ります', reason: '正確！五段動詞。' },
             { text: '探{さぐ}り', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
@@ -3156,7 +3156,7 @@ export const n2Questions: StaticQuestion[] = [
     {
         id: 'n2_gen_sasayaku_2',
         prob: '愛{あい}を ______ います。',
-        prob_zh: '正在 *傾訴* 愛意。 (細語)',
+        prob_zh: '正在 *傾訴* 愛意。',
         level: 'N2',
         options: [
             { text: '囁{ささや}き', reason: '錯誤：文法正確但語意或時態不符。' },

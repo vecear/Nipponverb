@@ -5,7 +5,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_masu_1',
         prob: '私{わたし}は毎日{まいにち}、日本語{にほんご}を______。',
-        prob_zh: '我每天都______日語。',
+        prob_zh: '我每天都*___*日語。',
         level: 'N5',
         options: [
             { text: '勉強{べんきょう}します', reason: '正確！「勉強する」是第三類動詞，ます形為「勉強します」。' },
@@ -20,7 +20,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_masu_2',
         prob: '明日{あした}、友達{ともだち}と映画{えいが}を______。',
-        prob_zh: '明天，要和朋友______電影。',
+        prob_zh: '明天，要和朋友*___*電影。',
         level: 'N5',
         options: [
             { text: '見{み}ります', reason: '錯誤：「見る」是一段動詞，直接去る＋ます。' },
@@ -36,7 +36,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_te_1',
         prob: 'すみません、ちょっと______ください。',
-        prob_zh: '不好意思，請______一下。',
+        prob_zh: '不好意思，請*___*一下。',
         level: 'N5',
         options: [
             { text: '待{ま}って', reason: '正確！「待つ」是五段動詞，字尾「つ」發生促音便。' },
@@ -51,7 +51,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_te_2',
         prob: '朝{あさ}ご飯{はん}を______から、学校{がっこう}へ行{い}きます。',
-        prob_zh: '______早餐之後，再去學校。',
+        prob_zh: '*___*早餐之後，再去學校。',
         level: 'N5',
         options: [
             { text: '食{た}べて', reason: '正確！「食べる」是一段動詞，直接去る＋て。' },
@@ -66,7 +66,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_te_3',
         prob: 'そのペンを______もいいですか？',
-        prob_zh: '可以______那支筆嗎？ (借用)',
+        prob_zh: '可以*借用*那支筆嗎？',
         level: 'N5',
         options: [
             { text: '使{つか}って', reason: '正確！「使う」是五段動詞，字尾「う」發生促音便。' },
@@ -82,7 +82,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_ta_1',
         prob: '昨日{きのう}、デパートで靴{くつ}を______。',
-        prob_zh: '昨天，在百貨公司______鞋子。',
+        prob_zh: '昨天，在百貨公司*___*鞋子。',
         level: 'N5',
         options: [
             { text: '買{か}った', reason: '正確！「買う」字尾為「う」，發生促音便。' },
@@ -97,7 +97,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_ta_2',
         prob: '日曜日{にちようび}、どこへも______。',
-        prob_zh: '星期天，哪裡都沒______。(否定過去)',
+        prob_zh: '星期天，哪裡都沒*否定過去*。',
         level: 'N5',
         options: [
             { text: '行{い}きませんでした', reason: '正確！過去否定的敬體形式。' },
@@ -113,7 +113,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_nai_1',
         prob: 'ここではタバコを______でください。',
-        prob_zh: '請不要在這裡______菸。',
+        prob_zh: '請不要在這裡*___*菸。',
         level: 'N5',
         options: [
             { text: '吸{す}わない', reason: '正確！五段動詞「う」結尾，變為「わ」＋ない。' },
@@ -128,7 +128,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_nai_2_fixed',
         prob: '時間{じかん}がありますから、______でください。',
-        prob_zh: '還有時間，請______ (不要急)。',
+        prob_zh: '還有時間，請*不要急*。',
         level: 'N5',
         options: [
             { text: '急{いそ}がない', reason: '正確！「急ぐ」字尾是濁音「ぐ」，所以ない形也要濁音「が」。' },
@@ -144,7 +144,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_pot_1',
         prob: '私{わたし}は漢字{かんじ}が______。',
-        prob_zh: '我______漢字 (會寫/能寫)。',
+        prob_zh: '我*會寫/能寫*漢字。',
         level: 'N5',
         options: [
             { text: '書{か}けます', reason: '正確！「書く」的可能形是「書ける」。' },
@@ -160,7 +160,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_trap_1',
         prob: '家{うち}へ______。',
-        prob_zh: '______家 (回去)。',
+        prob_zh: '*回去*家。',
         level: 'N5',
         options: [
             { text: '帰{かえ}ります', reason: '正確！「帰る」是例外的五段動詞。' },
@@ -238,7 +238,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_gen_nomu_2',
         prob: '薬{くすり}を ______ から、寝{ね}ます。',
-        prob_zh: ' *吃(喝)* 藥之後就睡覺。',
+        prob_zh: '*吃* 藥之後就睡覺。',
         level: 'N5',
         options: [
             { text: '飲{の}んで', reason: '正確！TE形 + から 表示動作的先後順序。' },
@@ -393,7 +393,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_gen_shinu_2',
         prob: '植物{しょくぶつ}に水{みず}をやらないと、______。',
-        prob_zh: '不給植物澆水的話，會 *死(枯萎)*。',
+        prob_zh: '不給植物澆水的話，會 *死*。',
         level: 'N5',
         options: [
             { text: '死{し}にます', reason: '正確！現在式/未來式。' },
@@ -424,7 +424,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_gen_asobu_2',
         prob: 'たくさん ______ 楽{たの}しかったです。',
-        prob_zh: ' *玩* 了很多，非常開心。',
+        prob_zh: '*玩* 了很多，非常開心。',
         level: 'N5',
         options: [
             { text: '遊{あそ}んで', reason: '正確！TE形可用於連接原因。' },
@@ -503,7 +503,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_hairu_1',
         prob: '部屋{へや}に ______。',
-        prob_zh: ' *進入* 房間。',
+        prob_zh: '*進入* 房間。',
         level: 'N5',
         options: [
             { text: '入{はい}ります', reason: '正確！五段動詞。' },
@@ -518,7 +518,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_hairu_2',
         prob: 'お風呂{ふろ}に ______。',
-        prob_zh: ' *洗* 澡(進入浴缸)。',
+        prob_zh: '*洗* 澡。',
         level: 'N5',
         options: [
             { text: '入{はい}ります', reason: '正確！洗澡的慣用搭配。' },
@@ -565,7 +565,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_hiku_p_1',
         prob: 'ピアノを ______。',
-        prob_zh: ' *彈* 鋼琴。',
+        prob_zh: '*彈* 鋼琴。',
         level: 'N5',
         options: [
             { text: '弾{ひ}きます', reason: '正確！五段動詞。' },
@@ -596,7 +596,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_tsukuru_1',
         prob: '晩{ばん}ご飯{ごはん}を ______。',
-        prob_zh: ' *做* 晚飯。',
+        prob_zh: '*做* 晚飯。',
         level: 'N5',
         options: [
             { text: '作{つく}ります', reason: '正確！五段動詞。' },
@@ -627,7 +627,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_iu_1',
         prob: '本当{ほんとう}のことを ______。',
-        prob_zh: ' *說* 實話。',
+        prob_zh: '*說* 實話。',
         level: 'N5',
         options: [
             { text: '言{い}います', reason: '正確！五段動詞。' },
@@ -658,7 +658,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_hiku_1',
         prob: '風邪{かぜ}を ______。',
-        prob_zh: ' *感冒* (拉到了感冒)。',
+        prob_zh: '*感冒* 。',
         level: 'N5',
         options: [
             { text: '引{ひ}きました', reason: '正確！感冒的慣用搭配。' },
@@ -689,7 +689,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_motsu_1',
         prob: '荷物{にもつ}を ______。',
-        prob_zh: ' *拿* 行李。',
+        prob_zh: '*拿* 行李。',
         level: 'N5',
         options: [
             { text: '持{も}ちます', reason: '正確！五段動詞。' },
@@ -704,7 +704,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_motsu_2',
         prob: '今{いま}、お宝{たから}を ______ います。',
-        prob_zh: '現在正 *持有(拿著)* 寶物。',
+        prob_zh: '現在正 *持有* 寶物。',
         level: 'N5',
         options: [
             { text: '持{も}って', reason: '正確！持有狀態的持續。' },
@@ -720,7 +720,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_suu_1',
         prob: 'タバコを ______。',
-        prob_zh: ' *抽* 菸。',
+        prob_zh: '*抽* 菸。',
         level: 'N5',
         options: [
             { text: '吸{す}います', reason: '正確！五段動詞。' },
@@ -751,7 +751,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_shimeru_1',
         prob: '窓{まど}を ______。',
-        prob_zh: ' *關* 窗戶。',
+        prob_zh: '*關* 窗戶。',
         level: 'N5',
         options: [
             { text: '閉{し}めます', reason: '正確！一段他動詞。' },
@@ -783,7 +783,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_miru_1',
         prob: 'テレビを ______。',
-        prob_zh: ' *看* 電視。',
+        prob_zh: '*看* 電視。',
         level: 'N5',
         options: [
             { text: '見{み}ます', reason: '正確！一段動詞。' },
@@ -876,7 +876,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kaku_1',
         prob: '手紙{てがみ}を ______。',
-        prob_zh: ' *寫* 信。',
+        prob_zh: '*寫* 信。',
         level: 'N5',
         options: [
             { text: '書{か}きます', reason: '正確！五段動詞。' },
@@ -907,7 +907,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kiku_1',
         prob: '音楽{おんがく}を ______。',
-        prob_zh: ' *聽* 音樂。',
+        prob_zh: '*聽* 音樂。',
         level: 'N5',
         options: [
             { text: '聞{き}きます', reason: '正確！五段動詞。' },
@@ -1031,7 +1031,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_yobu_1',
         prob: 'タクシーを ______。',
-        prob_zh: ' *叫* 計程車。',
+        prob_zh: '*叫* 計程車。',
         level: 'N5',
         options: [
             { text: '呼{よ}びます', reason: '正確！五段動詞。' },
@@ -1140,7 +1140,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_uru_2',
         prob: '古{ふる}い車{くるま}を ______ ました。',
-        prob_zh: ' *賣* 了舊車。',
+        prob_zh: '*賣* 了舊車。',
         level: 'N5',
         options: [
             { text: '売{う}り', reason: '正確！五段連用形。' },
@@ -1156,7 +1156,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kasu_1',
         prob: '友達{ともだち}にペンを ______。',
-        prob_zh: ' *借給* 朋友筆。',
+        prob_zh: '*借給* 朋友筆。',
         level: 'N5',
         options: [
             { text: '貸{か}します', reason: '正確！五段動詞。指向他人借出。' },
@@ -1171,7 +1171,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kasu_2',
         prob: '傘{かさ}を ______ ください。',
-        prob_zh: '請 *借(出)* 傘給我。',
+        prob_zh: '請 *借* 傘給我。',
         level: 'N5',
         options: [
             { text: '貸{か}して', reason: '正確！五段動詞促音便。注意結尾是「す」所以變為「して」。' },
@@ -1202,7 +1202,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kariru_2',
         prob: 'お金{かね}を ______ ました。',
-        prob_zh: ' *借* 了錢。',
+        prob_zh: '*借* 了錢。',
         level: 'N5',
         options: [
             { text: '借{か}り', reason: '正確！一段連用形。' },
@@ -1249,7 +1249,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_sumu_1',
         prob: '日本{にっぽん}に ______ います。',
-        prob_zh: ' *住* 在日本。',
+        prob_zh: '*住* 在日本。',
         level: 'N5',
         options: [
             { text: '住{す}んで', reason: '正確！五段撥音便。表示居住狀態的持續。' },
@@ -1373,7 +1373,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_toru_1',
         prob: '写真{しゃしん}を ______。',
-        prob_zh: ' *照* 相。',
+        prob_zh: '*照* 相。',
         level: 'N5',
         options: [
             { text: '撮{と}ります', reason: '正確！五段動詞。專用於攝影。' },
@@ -1405,7 +1405,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_narabu_1',
         prob: '銀行{ぎんこう}の前{まえ}に人{ひと}が ______ います。',
-        prob_zh: '銀行門口有人在 ______。 (排隊)',
+        prob_zh: '銀行門口有人在 *排隊*。',
         level: 'N5',
         options: [
             { text: '並{なら}んで', reason: '正確！五段動詞「並ぶ」發生撥音便。' },
@@ -1420,7 +1420,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_narabu_2',
         prob: '皆{みな}さん、一列{いちれつ}に ______ ください。',
-        prob_zh: '請大家 ______ 成一排。',
+        prob_zh: '請大家 *___* 成一排。',
         level: 'N5',
         options: [
             { text: '並{なら}んで', reason: '正確！五段撥音便接「てください」。' },
@@ -1436,7 +1436,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_wataru_1',
         prob: '道{みち}を ______ 時{とき}は、氣{き}をつけて。',
-        prob_zh: ' ______ 馬路時，請小心。 (過/穿越)',
+        prob_zh: '*過/穿越* 馬路時，請小心。',
         level: 'N5',
         options: [
             { text: '渡{わた}る', reason: '正確！五段辭書形修飾時。' },
@@ -1451,7 +1451,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_wataru_2',
         prob: '橋{はし}を ______ 向{む}こう側{がわ}へ行{い}きます。',
-        prob_zh: ' ______ 橋到對面去。',
+        prob_zh: '*___* 橋到對面去。',
         level: 'N5',
         options: [
             { text: '渡{わた}って', reason: '正確！五段促音便接下一步動作。' },
@@ -1467,7 +1467,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_migaku_1',
         prob: '飯{はん}を食{た}べた後{あと}で、歯{は}を ______。',
-        prob_zh: '吃完飯後要 ______ 牙齒。 (刷)',
+        prob_zh: '吃完飯後要 *刷* 牙齒。',
         level: 'N5',
         options: [
             { text: '磨{みが}きます', reason: '正確！五段動詞ます形。' },
@@ -1482,7 +1482,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_migaku_2',
         prob: '鏡{かがみ}をきれいに ______ ください。',
-        prob_zh: '請把鏡子 ______ 乾淨。 (擦拭/磨)',
+        prob_zh: '請把鏡子 *擦拭/磨* 乾淨。',
         level: 'N5',
         options: [
             { text: '磨{みが}いて', reason: '正確！五段動詞「く」變「いて」。' },
@@ -1498,7 +1498,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_miseru_1',
         prob: 'その写真{しゃしん}を ______ ください。',
-        prob_zh: '請 ______ 我那張照片。 (給...看)',
+        prob_zh: '請 *給...看* 我那張照片。',
         level: 'N5',
         options: [
             { text: '見{み}せて', reason: '正確！二類(一段)動詞直接去る＋て。' },
@@ -1513,7 +1513,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_miseru_2',
         prob: '先生{せんせい}に宿題{しゅくだい}を ______。',
-        prob_zh: '把作業 ______ 老師看。',
+        prob_zh: '把作業 *___* 老師看。',
         level: 'N5',
         options: [
             { text: '見{み}せました', reason: '正確！一段動詞過去式。' },
@@ -1529,7 +1529,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_umareru_1',
         prob: '去年{きょねん}、子供{こども}が ______。',
-        prob_zh: '去年小孩 ______ 了。 (出生)',
+        prob_zh: '去年小孩 *出生* 了。',
         level: 'N5',
         options: [
             { text: '生{う}まれました', reason: '正確！一段自動詞。' },
@@ -1544,7 +1544,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_umareru_2',
         prob: '私{わたし}は台北{たいぺい}で ______ ました。',
-        prob_zh: '我在台北 ______。',
+        prob_zh: '我在台北 *___*。',
         level: 'N5',
         options: [
             { text: '生{う}まれ', reason: '正確！一段動詞連用形。' },
@@ -1560,7 +1560,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_akeru_1',
         prob: '暑{あつ}いから、窓{まど}を ______ ましょう。',
-        prob_zh: '因為很熱，把窗戶 ______ 吧。 (打開)',
+        prob_zh: '因為很熱，把窗戶 *打開* 吧。',
         level: 'N5',
         options: [
             { text: '開{あ}け', reason: '正確！一段動詞ます形去ます。' },
@@ -1575,7 +1575,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_akeru_2',
         prob: 'その瓶{びん}を ______ ください。',
-        prob_zh: '請 ______ 那個瓶子。 (打開)',
+        prob_zh: '請 *打開* 那個瓶子。',
         level: 'N5',
         options: [
             { text: '開{あ}けて', reason: '正確！一段動詞去る加て。' },
@@ -1591,7 +1591,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_nugu_1',
         prob: 'ここらで靴{くつ}を ______ ください。',
-        prob_zh: '請在這裡 ______ 鞋子。 (脫下)',
+        prob_zh: '請在這裡 *脫下* 鞋子。',
         level: 'N5',
         options: [
             { text: '脫{ぬ}いで', reason: '正確！五段動詞「ぐ」變「いで」。' },
@@ -1606,7 +1606,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_nugu_2',
         prob: '服{ふく}を ______ 入浴{にゅうよく}します。',
-        prob_zh: ' ______ 衣服後去洗澡。 (脫掉)',
+        prob_zh: '*脫掉* 衣服後去洗澡。',
         level: 'N5',
         options: [
             { text: '脫{ぬ}いで', reason: '正確！五段イ音便。' },
@@ -1622,7 +1622,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_yaru_1',
         prob: '宿題{しゅくだい}を ______ ましたか？',
-        prob_zh: '做完作業了 ______？ (做)',
+        prob_zh: '做完作業了 *做*？',
         level: 'N5',
         options: [
             { text: 'やり', reason: '正確！五段ます形連用形。' },
@@ -1637,7 +1637,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_yaru_2',
         prob: '犬{いぬ}にえさを ______ ください。',
-        prob_zh: '請 ______ 狗飼料。 (餵/給)',
+        prob_zh: '請 *餵/給* 狗飼料。',
         level: 'N5',
         options: [
             { text: 'やって', reason: '正確！五段動詞「る」變「って」。' },
@@ -1653,7 +1653,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_naraberu_1',
         prob: '椅子{いす}をきれいに ______ ください。',
-        prob_zh: '請把椅子整齊地 ______。 (排列)',
+        prob_zh: '請把椅子整齊地 *排列*。',
         level: 'N5',
         options: [
             { text: '並{なら}べて', reason: '正確！一段他動詞。' },
@@ -1668,7 +1668,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_naraberu_2',
         prob: '机{つくえ}の上{うえ}に本{ほん}を ______。',
-        prob_zh: '在桌子上 ______ 書本。',
+        prob_zh: '在桌子上 *___* 書本。',
         level: 'N5',
         options: [
             { text: '並{なら}べました', reason: '正確！一段動詞連用形。' },
@@ -1684,7 +1684,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_yomu_1',
         prob: '每日{まいにち}、新問{しんぶん}を ______。',
-        prob_zh: '每天 ______ 報紙。 (讀)',
+        prob_zh: '每天 *讀* 報紙。',
         level: 'N5',
         options: [
             { text: '読{よ}みます', reason: '正確！五段詞尾變「み」。' },
@@ -1699,7 +1699,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_yomu_2',
         prob: '本{ほん}を ______ から、寢{ね}ます。',
-        prob_zh: ' ______ 完書之後，再睡覺。',
+        prob_zh: '*___* 完書之後，再睡覺。',
         level: 'N5',
         options: [
             { text: '読{よ}んで', reason: '正確！五段撥音便。' },
@@ -1716,7 +1716,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_abiru_1',
         prob: '毎朝{まいあさ}、シャワーを ______。',
-        prob_zh: '每天早上都要 ______ 淋浴。',
+        prob_zh: '每天早上都要 *___* 淋浴。',
         level: 'N5',
         options: [
             { text: '浴{あ}びます', reason: '正確！一段動詞。' },
@@ -1731,7 +1731,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_abiru_2',
         prob: '海{うみ}で日光{にっこう}を ______。',
-        prob_zh: '在海邊 ______ 日光。 (沐浴)',
+        prob_zh: '在海邊 *沐浴* 日光。',
         level: 'N5',
         options: [
             { text: '浴{あ}びました', reason: '正確！' },
@@ -1747,7 +1747,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_arau_1',
         prob: 'ご飯{はん}の前{まえ}に、手{て}を ______ ましょう。',
-        prob_zh: '吃飯之前 ______ 手吧。',
+        prob_zh: '吃飯之前 *___* 手吧。',
         level: 'N5',
         options: [
             { text: '洗{あら}い', reason: '正確！五段動詞變ます形。' },
@@ -1762,7 +1762,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_arau_2',
         prob: '昨日{きのう}、車{くるま}を ______。',
-        prob_zh: '昨天 ______ 了車。',
+        prob_zh: '昨天 *___* 了車。',
         level: 'N5',
         options: [
             { text: '洗{あら}いました', reason: '正確！' },
@@ -1778,7 +1778,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_aruku_1',
         prob: '駅{えき}まで ______ 行{い}きます。',
-        prob_zh: ' ______ 去車站。 (走路)',
+        prob_zh: '*走路* 去車站。',
         level: 'N5',
         options: [
             { text: '歩{ある}いて', reason: '正確！五段動詞「く」發生イ音便。' },
@@ -1793,7 +1793,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_aruku_2',
         prob: '毎日{まいにち}、一時間{いちじかん} ______ います。',
-        prob_zh: '每天 ______ 一個小時。',
+        prob_zh: '每天 *___* 一個小時。',
         level: 'N5',
         options: [
             { text: '步{ある}いて', reason: '正確！' },
@@ -1809,7 +1809,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_ireru_1',
         prob: 'コーヒーに砂糖{さとう}を ______。',
-        prob_zh: '在咖啡裡 ______ 糖。 (放入)',
+        prob_zh: '在咖啡裡 *放入* 糖。',
         level: 'N5',
         options: [
             { text: '入{い}れます', reason: '正確！一段他動詞。' },
@@ -1824,7 +1824,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_ireru_2',
         prob: 'バッグに財布{さいふ}を ______ ください。',
-        prob_zh: '請把錢包 ______ 到包包裡。',
+        prob_zh: '請把錢包 *___* 到包包裡。',
         level: 'N5',
         options: [
             { text: '入{い}れて', reason: '正確！一段去る加て。' },
@@ -1840,7 +1840,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_utau_1',
         prob: 'みんなで歌{うた}を ______ ましょう。',
-        prob_zh: '大家一起 ______ 歌吧。',
+        prob_zh: '大家一起 *___* 歌吧。',
         level: 'N5',
         options: [
             { text: '歌{うた}い', reason: '正確！五段連用形。' },
@@ -1855,7 +1855,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_utau_2',
         prob: '彼女{かのじょ}は歌{うた}を ______ います。',
-        prob_zh: '她正在 ______ 歌。',
+        prob_zh: '她正在 *___* 歌。',
         level: 'N5',
         options: [
             { text: '歌{うた}って', reason: '正確！五段促音便。' },
@@ -1871,7 +1871,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_okiru_1',
         prob: '明日{あした}は六時{ろくじ}に ______。',
-        prob_zh: '明天六點 ______。 (起床)',
+        prob_zh: '明天六點 *起床*。',
         level: 'N5',
         options: [
             { text: '起{お}きます', reason: '正確！一段動詞。' },
@@ -1886,7 +1886,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_okiru_2',
         prob: 'まだ ______ いますか。',
-        prob_zh: '還 ______ 著嗎？ (沒睡)',
+        prob_zh: '還 *沒睡* 著嗎？',
         level: 'N5',
         options: [
             { text: '起{お}きて', reason: '正確！一段去る加て。' },
@@ -1902,7 +1902,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_oku_1',
         prob: 'そこに荷物{にもつ}を ______ ください。',
-        prob_zh: '請在那裡 ______ 行李。 (放置)',
+        prob_zh: '請在那裡 *放置* 行李。',
         level: 'N5',
         options: [
             { text: '置{お}いて', reason: '正確！五段イ音便。' },
@@ -1917,7 +1917,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_oku_2',
         prob: '本棚{ほんだな}に本{ほん}を ______ ました。',
-        prob_zh: '在書架上 ______ 了書。',
+        prob_zh: '在書架上 *___* 了書。',
         level: 'N5',
         options: [
             { text: '置{お}き', reason: '正確！五段連用形。' },
@@ -1933,7 +1933,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_oshieru_1',
         prob: '日本語{にほんご}を ______ います。',
-        prob_zh: '正在 ______ 日語。 (教導)',
+        prob_zh: '正在 *教導* 日語。',
         level: 'N5',
         options: [
             { text: '教{おし}えて', reason: '正確！一段動詞。' },
@@ -1948,7 +1948,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_oshieru_2',
         prob: '電號番號{でんわばんごう}を ______ ください。',
-        prob_zh: '請 ______ 我電話號碼。 (告訴)',
+        prob_zh: '請 *告訴* 我電話號碼。',
         level: 'N5',
         options: [
             { text: '教{おし}えて', reason: '正確！一段去る加て。' },
@@ -1964,7 +1964,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_osu_1',
         prob: 'このボタンを ______ と、水{みず}が出{で}ます。',
-        prob_zh: ' ______ 這個按鈕，水就會出來。 (按)',
+        prob_zh: '*按* 這個按鈕，水就會出來。',
         level: 'N5',
         options: [
             { text: '押{お}す', reason: '正確！五段辭書形接と。' },
@@ -1979,7 +1979,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_osu_2',
         prob: '後ろ{うしろ}から ______ ないでください。',
-        prob_zh: '請不要從後面 ______。 (推)',
+        prob_zh: '請不要從後面 *推*。',
         level: 'N5',
         options: [
             { text: '押{お}さ', reason: '正確！五段未然形。' },
@@ -1995,7 +1995,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_oboeru_1',
         prob: '漢字{かんじ}を ______ のは難{むずか}しいです。',
-        prob_zh: ' ______ 漢字很難。 (記住)',
+        prob_zh: '*記住* 漢字很難。',
         level: 'N5',
         options: [
             { text: '覚{おぼ}える', reason: '正確！一段動詞辭書形。' },
@@ -2010,7 +2010,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_oboeru_2',
         prob: '昨日{きのう}のことは ______ いません。',
-        prob_zh: '昨天的事已經不 ______ 了。 (記得)',
+        prob_zh: '昨天的事已經不 *記得* 了。',
         level: 'N5',
         options: [
             { text: '覚{おぼ}えて', reason: '正確！一段去る加て。表示狀態。' },
@@ -2026,7 +2026,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_oriru_1',
         prob: '次{つぎ}の駅{えき}で ______ ます。',
-        prob_zh: '要在下一站 ______。 (下車)',
+        prob_zh: '要在下一站 *下車*。',
         level: 'N5',
         options: [
             { text: '降{お}り', reason: '正確！一段動詞。' },
@@ -2041,7 +2041,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_oriru_2',
         prob: '階段{かいだん}を ______ います。',
-        prob_zh: '正在 ______ 樓梯。',
+        prob_zh: '正在 *___* 樓梯。',
         level: 'N5',
         options: [
             { text: '降{お}りて', reason: '正確！一段去る加て。' },
@@ -2057,7 +2057,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kaesu_1',
         prob: '図書館{としょかん}に本{ほん}を ______。',
-        prob_zh: '把書 ______ 圖書館。 (歸還)',
+        prob_zh: '把書 *歸還* 圖書館。',
         level: 'N5',
         options: [
             { text: '返{かえ}します', reason: '正確！五段動詞。' },
@@ -2072,7 +2072,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kaesu_2',
         prob: '明日{あした}までに ______ ください。',
-        prob_zh: '請在明天之前 ______。',
+        prob_zh: '請在明天之前 *___*。',
         level: 'N5',
         options: [
             { text: '返{かえ}して', reason: '正確！五段促音便。' },
@@ -2088,7 +2088,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kieru_1',
         prob: 'テレビが急{きゅう}に ______。',
-        prob_zh: '電視突然 ______ 了。 (消失/熄滅)',
+        prob_zh: '電視突然 *消失/熄滅* 了。',
         level: 'N5',
         options: [
             { text: '消{き}えました', reason: '正確！一段自動詞。' },
@@ -2103,7 +2103,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kieru_2',
         prob: '足跡{あしあと}が ______ しまいました。',
-        prob_zh: '足跡 ______ 了。 (完全消失)',
+        prob_zh: '足跡 *完全消失* 了。',
         level: 'N5',
         options: [
             { text: '消{き}えて', reason: '正確！一段去る加て。' },
@@ -2119,7 +2119,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kikoeru_1',
         prob: '隣{となり}の部屋{へや}から聲{こえ}が ______。',
-        prob_zh: '從隔壁房間 ______ 聲音。 (自然聽到)',
+        prob_zh: '從隔壁房間 *自然聽到* 聲音。',
         level: 'N5',
         options: [
             { text: '聞{き}こえます', reason: '正確！一段自動詞。' },
@@ -2134,7 +2134,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kikoeru_2',
         prob: '音楽{おんがく}が ______ きます。',
-        prob_zh: '音樂 ______ 過來。',
+        prob_zh: '音樂 *___* 過來。',
         level: 'N5',
         options: [
             { text: '聞{き}こえて', reason: '正確！一段去る加て。' },
@@ -2150,7 +2150,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_komaru_1',
         prob: 'お金{かね}がなくて ______ います。',
-        prob_zh: '因為沒錢而很 ______。 (困擾)',
+        prob_zh: '因為沒錢而很 *困擾*。',
         level: 'N5',
         options: [
             { text: '困{こま}って', reason: '正確！五段促音便。' },
@@ -2165,7 +2165,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_komaru_2',
         prob: '雨{あめ}が降{ふ}ったら ______ な。',
-        prob_zh: '要是下雨就 ______ 了呢。',
+        prob_zh: '要是下雨就 *___* 了呢。',
         level: 'N5',
         options: [
             { text: '困{こま}る', reason: '正確！五段辭書形。' },
@@ -2181,7 +2181,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_saku_1',
         prob: '庭{にわ}に花{はな}が ______ います。',
-        prob_zh: '院子裡花兒正在 ______。 (盛開)',
+        prob_zh: '院子裡花兒正在 *盛開*。',
         level: 'N5',
         options: [
             { text: '咲{さ}いて', reason: '正確！五段イ音便。' },
@@ -2196,7 +2196,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_saku_2',
         prob: '春{はる}になるとさくらが ______。',
-        prob_zh: '一到春天櫻花就 ______。',
+        prob_zh: '一到春天櫻花就 *___*。',
         level: 'N5',
         options: [
             { text: '咲{さ}きます', reason: '正確！五段連用形。' },
@@ -2212,7 +2212,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kakaru_1',
         prob: '家{いえ}から学校{がっこう}まで30分{さんじゅっぷん} ______。',
-        prob_zh: '從家裡到學校要 ______ 30分鐘。 (花費時間)',
+        prob_zh: '從家裡到學校要 *花費時間* 30分鐘。',
         level: 'N5',
         options: [
             { text: 'かかります', reason: '正確！五段動詞。' },
@@ -2227,7 +2227,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kakaru_2',
         prob: 'お金{かね}が ______。',
-        prob_zh: ' ______ 錢。 (花錢)',
+        prob_zh: '*花錢* 錢。',
         level: 'N5',
         options: [
             { text: 'かかります', reason: '正確！常用於時間或金錢的花費。' },
@@ -2243,7 +2243,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_shiru_1',
         prob: '彼{かれ}のことを ______ いますか。',
-        prob_zh: '你 ______ 他嗎？ (認知)',
+        prob_zh: '你 *認知* 他嗎？',
         level: 'N5',
         options: [
             { text: '知{し}って', reason: '正確！雖然是連體形但要注意其狀態。' },
@@ -2258,7 +2258,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_shiru_2',
         prob: 'いいえ、 ______ ません。',
-        prob_zh: '不，我 ______ 。 (不知道)',
+        prob_zh: '不，我 *不知道* 。',
         level: 'N5',
         options: [
             { text: '知{し}り', reason: '正確！五段連用。' },
@@ -2274,7 +2274,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kakeru_1',
         prob: '壁{かべ}に絵{え}を ______。',
-        prob_zh: '在牆上 ______ 畫。 (懸掛)',
+        prob_zh: '在牆上 *懸掛* 畫。',
         level: 'N5',
         options: [
             { text: 'かけます', reason: '正確！一段他動詞。' },
@@ -2289,7 +2289,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kakeru_2',
         prob: 'めがねを ______ います。',
-        prob_zh: ' ______ 著眼鏡。 (戴)',
+        prob_zh: '*戴* 著眼鏡。',
         level: 'N5',
         options: [
             { text: 'かけて', reason: '正確！一段動詞。' },
@@ -2305,7 +2305,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kiru_1',
         prob: '紙{かみ}をハサミで ______。',
-        prob_zh: '用剪刀 ______ 紙。 (剪/切)',
+        prob_zh: '用剪刀 *剪/切* 紙。',
         level: 'N5',
         options: [
             { text: '切{き}ります', reason: '正確！五段動詞(外形似一段但為五段)。' },
@@ -2320,7 +2320,7 @@ export const n5Questions: StaticQuestion[] = [
     {
         id: 'n5_v1399_kiru_2',
         prob: '野菜{やさい}を ______ ください。',
-        prob_zh: '請 ______ 蔬菜。',
+        prob_zh: '請 *___* 蔬菜。',
         level: 'N5',
         options: [
             { text: '切{き}って', reason: '正確！五段促音便。' },

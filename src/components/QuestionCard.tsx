@@ -76,36 +76,70 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
               {/* Detailed Explanation Logic */}
               {question.detailedExplanation ? (
                 <div className="space-y-3 text-sm text-left">
-                  {/* 1. Always show the correct rule */}
-                  <div className="bg-black/20 p-3 rounded-lg border-l-4 border-green-500">
-                    <p className="font-bold text-green-400 mb-1">✅ 正解解析</p>
-                    {question.meaning && (
-                      <p className="text-white/80 mb-2 pb-2 border-b border-white/10">
-                        {question.meaning.split(/(\*.*?\*)/).map((part, index) =>
-                          part.startsWith('*') && part.endsWith('*') ? (
-                            <span key={index} className="italic text-sakura-pink/90 font-medium">
-                              {part.slice(1, -1)}
-                            </span>
-                          ) : (
-                            part
-                          )
-                        )}
-                      </p>
-                    )}
-                    <p className="text-white/90">
+                  {/* Translation / Meaning */}
+                  {question.meaning && (
+                    <p className="text-white/80 pb-2 border-b border-white/10">
+                      {question.meaning.split(/(\*.*?\*)/).map((part, index) =>
+                        part.startsWith('*') && part.endsWith('*') ? (
+                          <span key={index} className="italic text-sakura-pink/90 font-medium">
+                            {part.slice(1, -1)}
+                          </span>
+                        ) : (
+                          part
+                        )
+                      )}
+                    </p>
+                  )}
+
+                  {/* Main Rule Explanation */}
+                  <div className="bg-black/20 p-3 rounded-lg border-l-4 border-electric-cyan">
+                    <p className="font-bold text-electric-cyan mb-1">📖 文法解析</p>
+                    <p className="text-white/90 whitespace-pre-line">
                       <FuriganaText text={question.detailedExplanation.correctRule} />
                     </p>
                   </div>
 
-                  {/* 2. If wrong, show specific error for the selected answer */}
-                  {!isCorrect && selectedAnswer && (
-                    <div className="bg-black/20 p-3 rounded-lg border-l-4 border-red-500">
-                      <p className="font-bold text-red-400 mb-1">❌ 錯誤分析</p>
-                      <p className="text-white/90">
-                        {question.detailedExplanation.distractors.find(d => d.text === selectedAnswer)?.reason || '此選項不正確。'}
-                      </p>
-                    </div>
-                  )}
+                  {/* All Options Explanations */}
+                  <div className="bg-black/20 p-3 rounded-lg space-y-2">
+                    <p className="font-bold text-white/80 mb-2">📝 各選項解析</p>
+                    {question.detailedExplanation.distractors.map((distractor, idx) => {
+                      const isCorrectOption = distractor.text === question.correct
+                      const isSelectedOption = distractor.text === selectedAnswer
+
+                      return (
+                        <div
+                          key={idx}
+                          className={`p-2 rounded-lg ${
+                            isCorrectOption
+                              ? 'bg-green-500/20 border border-green-500/50'
+                              : isSelectedOption
+                              ? 'bg-red-500/20 border border-red-500/50'
+                              : 'bg-white/5 border border-white/10'
+                          }`}
+                        >
+                          <div className="flex items-start gap-2">
+                            <span className={`font-bold shrink-0 ${
+                              isCorrectOption ? 'text-green-400' : isSelectedOption ? 'text-red-400' : 'text-white/60'
+                            }`}>
+                              {isCorrectOption ? '✓' : isSelectedOption ? '✗' : '•'}
+                            </span>
+                            <div className="flex-1">
+                              <span className={`font-medium ${
+                                isCorrectOption ? 'text-green-400' : isSelectedOption ? 'text-red-400' : 'text-white/80'
+                              }`}>
+                                <FuriganaText text={distractor.text} />
+                              </span>
+                              {isCorrectOption && <span className="ml-2 text-xs text-green-400/80">(正解)</span>}
+                              {isSelectedOption && !isCorrectOption && <span className="ml-2 text-xs text-red-400/80">(你的選擇)</span>}
+                              <p className="text-white/70 text-xs mt-1">
+                                <FuriganaText text={distractor.reason} />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
                 </div>
               ) : (
                 /* Fallback for legacy questions */

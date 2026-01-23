@@ -5,7 +5,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_pot_1',
         prob: 'この自転車{じてんしゃ}は誰{だれ}でも______。',
-        prob_zh: '這輛腳踏車誰都可以______ (能借)。',
+        prob_zh: '這輛腳踏車誰都可以*能借*。',
         level: 'N4',
         options: [
             { text: '借{か}りられます', reason: '正確！「借りる」是一段動詞，可能形是「～られる」。' },
@@ -20,7 +20,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_pot_2',
         prob: '日本語{にほんご}の新聞{しんぶん}が______か。',
-        prob_zh: '你會______日文報紙嗎？ (能讀)',
+        prob_zh: '你會*能讀*日文報紙嗎？',
         level: 'N4',
         options: [
             { text: '読{よ}まれます', reason: '錯誤：那是受身形或敬語。' },
@@ -36,7 +36,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_pass_1',
         prob: '満員{まんいん}電車{でんしゃ}で足{あし}を______。',
-        prob_zh: '在客滿的電車上被______了腳。',
+        prob_zh: '在客滿的電車上被*___*了腳。',
         level: 'N4',
         options: [
             { text: '踏{ふ}めました', reason: '錯誤：這是可能形。' },
@@ -51,7 +51,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_pass_2',
         prob: '泥棒{どろぼう}に財布{さいふ}を______。',
-        prob_zh: '錢包被小偷______了。',
+        prob_zh: '錢包被小偷*___*了。',
         level: 'N4',
         options: [
             { text: '盗{ぬす}みました', reason: '錯誤：這變成是我偷了小偷的錢包。' },
@@ -67,7 +67,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_caus_1',
         prob: '母{はは}は子供{こども}に野菜{やさい}を______。',
-        prob_zh: '媽媽______小孩吃蔬菜。',
+        prob_zh: '媽媽*___*小孩吃蔬菜。',
         level: 'N4',
         options: [
             { text: '食{た}べさせます', reason: '正確！「食べる」的使役形。' },
@@ -82,7 +82,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_caus_2',
         prob: '先生{せんせい}は学生{がくせい}に宿題{しゅくだい}を______。',
-        prob_zh: '老師讓學生______作業。',
+        prob_zh: '老師讓學生*___*作業。',
         level: 'N4',
         options: [
             { text: 'されました', reason: '錯誤：老師被做作業？(被動)。' },
@@ -98,7 +98,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_cp_1',
         prob: '部長{ぶちょう}に歌{うた}を______。',
-        prob_zh: '被部長______唱歌 (被迫)。',
+        prob_zh: '被部長*被迫*唱歌。',
         level: 'N4',
         options: [
             { text: '歌{うた}わせられました', reason: '正確！使役受身形，表示「被強迫」。' },
@@ -114,7 +114,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_trans_1',
         prob: '電気が______。',
-        prob_zh: '電燈______ (亮著)。',
+        prob_zh: '電燈*亮著*。',
         level: 'N4',
         options: [
             { text: 'ついています', reason: '正確！自動詞「つく」表示狀態。' },
@@ -146,7 +146,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kariru_1',
         prob: '友達{ともだち}に傘{かさ}を ______。',
-        prob_zh: ' *借了* 朋友的傘。',
+        prob_zh: '*借了* 朋友的傘。',
         level: 'N4',
         options: [
             { text: '借{か}りられました', reason: '錯誤：雖然語法對，但此題考基本動詞區分。' },
@@ -161,7 +161,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kariru_2',
         prob: '図書館{としょかん}の本{ほん}を ______ ないでください。',
-        prob_zh: '請不要把圖書館的書 *借走(不還)*。 (考使役或受身?)',
+        prob_zh: '請不要把圖書館的書 *借走*。',
         // Actually, let's test Potential.
         level: 'N4',
         options: [
@@ -225,7 +225,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_wasureru_2',
         prob: 'あ、傘{かさ}を ______。',
-        prob_zh: '啊， *忘記(帶)* 傘了。',
+        prob_zh: '啊， *忘記* 傘了。',
         level: 'N4',
         options: [
             { text: '忘{わす}りました', reason: '錯誤：一段動詞不變 ri。' },
@@ -274,7 +274,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_hajimeru_1',
         prob: '会議{かいぎ}を ______。',
-        prob_zh: ' *開始* 開會。',
+        prob_zh: '*開始* 開會。',
         level: 'N4',
         options: [
             { text: '始{はじ}まります', reason: '錯誤：自動詞，會議自己開始。' },
@@ -367,7 +367,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kimeru_1',
         prob: '次{つぎ}の旅行{りょこう}の行{い}き先{さき}を ______。',
-        prob_zh: ' *決定* 了下次旅行的目的地。',
+        prob_zh: '*決定* 了下次旅行的目的地。',
         level: 'N4',
         options: [
             { text: '決{き}めた', reason: '錯誤：這是「常體」，語意不符。' },
@@ -461,7 +461,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ukeru_1',
         prob: '試験{しけん}を ______。',
-        prob_zh: ' *參加* 考試。',
+        prob_zh: '*參加* 考試。',
         level: 'N4',
         options: [
             { text: '受{う}け', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
@@ -492,7 +492,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_sazaeru_1',
         prob: '家族{かぞく}を ______。',
-        prob_zh: ' *支撐(扶養)* 家族。',
+        prob_zh: '*支撐* 家族。',
         level: 'N4',
         options: [
             { text: '助{たす}けます', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -569,7 +569,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_uttaeru_2',
         prob: '腹痛{ふくつう}を ______。',
-        prob_zh: ' *申訴* 腹痛(感到腹痛並說出來)。',
+        prob_zh: '*申訴* 腹痛。',
         level: 'N4',
         options: [
             { text: '訴{うった}えている', reason: '正確！表示持續向他人表達不適。' },
@@ -585,7 +585,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_koeru_1',
         prob: '山{やま}を ______。',
-        prob_zh: ' *跨越* 山。',
+        prob_zh: '*跨越* 山。',
         level: 'N4',
         options: [
             { text: '通{とお}ります', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -600,7 +600,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_koeru_2',
         prob: '国境{こっきょう}を ______。',
-        prob_zh: ' *跨越* 國境。',
+        prob_zh: '*跨越* 國境。',
         level: 'N4',
         options: [
             { text: '越{こ}した', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -616,7 +616,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_kosu_1',
         prob: '東京{とうきょう}へ 引{ひ}っ ______。',
-        prob_zh: ' *搬* 到東京。',
+        prob_zh: '*搬* 到東京。',
         level: 'N4',
         options: [
             { text: '越{こ}し', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
@@ -631,7 +631,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_kosu_2',
         prob: '冬{ふゆ}を ______。',
-        prob_zh: ' *度過* 冬天。',
+        prob_zh: '*度過* 冬天。',
         level: 'N4',
         options: [
             { text: '過{す}ごします', reason: '錯誤：這是「普通的過生活」，語意不符。' },
@@ -678,7 +678,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_sumaseru_1',
         prob: '宿題{しゅくだい}を早く ______ ください。',
-        prob_zh: '請快點把作業 *做完(處理好)*。',
+        prob_zh: '請快點把作業 *做完*。',
         level: 'N4',
         options: [
             { text: '済{す}ませて', reason: '正確！一段他動詞。' },
@@ -772,7 +772,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_atsumeru_1',
         prob: '切手{きって}を ______。',
-        prob_zh: ' *收集* 郵票。',
+        prob_zh: '*收集* 郵票。',
         level: 'N4',
         options: [
             { text: '集{あつ}まります', reason: '錯誤：那是自動詞(人聚集)。' },
@@ -787,7 +787,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_atsumeru_2',
         prob: 'ゴミを ______ ください。',
-        prob_zh: '請 *收集(清理)* 垃圾。',
+        prob_zh: '請 *收集* 垃圾。',
         level: 'N4',
         options: [
             { text: '拾{ひろ}って', reason: '錯誤：這是「撿起來」，語意不符。' },
@@ -911,7 +911,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_kesu_2',
         prob: '鉛筆{えんぴつ}で書{か}いたところを ______。',
-        prob_zh: ' *擦掉* 用鉛筆寫的地方。',
+        prob_zh: '*擦掉* 用鉛筆寫的地方。',
         level: 'N4',
         options: [
             { text: '消{き}えます', reason: '錯誤：自動詞。' },
@@ -989,7 +989,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_kimaru_1',
         prob: '出張{しゅっちょう}の日{ひ}が ______。',
-        prob_zh: '出差日期 *定下來(被決定)* 了。',
+        prob_zh: '出差日期 *定下來* 了。',
         level: 'N4',
         options: [
             { text: '定{さだ}まりました', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1004,7 +1004,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_kimaru_2',
         prob: ' ______ っていること。',
-        prob_zh: ' *規定* 好的事情。',
+        prob_zh: '*規定* 好的事情。',
         level: 'N4',
         options: [
             { text: '決{き}まる', reason: '錯誤：接續。' },
@@ -1020,7 +1020,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_todokeru_1',
         prob: '荷物{にもつ}を ______。',
-        prob_zh: ' *送達* 行李。',
+        prob_zh: '*送達* 行李。',
         level: 'N4',
         options: [
             { text: '届{とど}けます', reason: '正確！一段他動詞。' },
@@ -1035,7 +1035,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_todokeru_2',
         prob: '警察{けいさつ}に ______ ください。',
-        prob_zh: '請向警察 *申報(交回)*。',
+        prob_zh: '請向警察 *申報*。',
         level: 'N4',
         options: [
             { text: '届{とど}けて', reason: '正確！向官署申報也使用「届ける」。' },
@@ -1051,7 +1051,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_tsukeru_1',
         prob: 'テレビを ______。',
-        prob_zh: ' *打開* 電視。',
+        prob_zh: '*打開* 電視。',
         level: 'N4',
         options: [
             { text: '付{つ}きます', reason: '錯誤：那是燈自己亮了(自動詞)。' },
@@ -1084,7 +1084,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_tsukamaeru_1',
         prob: '警察{けいさつ}がどろぼうを ______。',
-        prob_zh: '警察 ______ 了小偷。 (捉拿/逮捕)',
+        prob_zh: '警察 *捉拿/逮捕* 了小偷。',
         level: 'N4',
         options: [
             { text: '捕{つか}まりました', reason: '錯誤：這是自動詞(被抓)。' },
@@ -1099,7 +1099,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_tsukamaru_1',
         prob: '犯人{はんにん}が ______ ました。',
-        prob_zh: '犯人被 ______ 了。 (落網/被捕)',
+        prob_zh: '犯人被 *落網/被捕* 了。',
         level: 'N4',
         options: [
             { text: '捕{つか}まえ', reason: '錯誤：他動詞。' },
@@ -1115,7 +1115,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ugoku_1',
         prob: 'この機械{きかい}は ______ ません。',
-        prob_zh: '這台機器 ______。 (不動/沒在運作)',
+        prob_zh: '這台機器 *不動/沒在運作*。',
         level: 'N4',
         options: [
             { text: '動{うご}け', reason: '錯誤：命令/可能。' },
@@ -1130,7 +1130,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ugoku_2',
         prob: '静{しず}かに ______ ずに待{ま}ってください。',
-        prob_zh: '請安靜地 ______ 並等待。 (不動/不要動)',
+        prob_zh: '請安靜地 *不動/不要動* 並等待。',
         level: 'N4',
         options: [
             { text: '動{うご}き', reason: '錯誤：接續。' },
@@ -1146,7 +1146,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_utsu_1',
         prob: 'パソコンで文章{ぶんしょう}を ______。',
-        prob_zh: '用電腦 ______ 文章。 (打字)',
+        prob_zh: '用電腦 *打字* 文章。',
         level: 'N4',
         options: [
             { text: '書{か}き', reason: '錯誤：這是「寫」，語意不符。' },
@@ -1161,7 +1161,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_utsu_2',
         prob: '壁{かべ}に釘{くぎ}を ______ ください。',
-        prob_zh: '請在牆上 ______ 釘子。 (釘)',
+        prob_zh: '請在牆上 *釘* 釘子。',
         level: 'N4',
         options: [
             { text: '打{う}ち', reason: '錯誤：接續。' },
@@ -1177,7 +1177,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_utsusu_1',
         prob: '黒板{こくばん}の字{じ}をノートに ______。',
-        prob_zh: '把黑板的字 ______ 到筆記本上。 (抄寫)',
+        prob_zh: '把黑板的字 *抄寫* 到筆記本上。',
         level: 'N4',
         options: [
             { text: '写{うつ}し', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1192,7 +1192,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_utsusu_2',
         prob: '美{うつく}しい風景{ふうけい}を写真{しゃしん}に ______。',
-        prob_zh: '把美麗的風景 ______ 入照片中。 (拍)',
+        prob_zh: '把美麗的風景 *拍* 入照片中。',
         level: 'N4',
         options: [
             { text: '撮{と}りました', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1208,7 +1208,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_utau_1',
         prob: '彼女{かのじょ}は歌{うた}を ______ のが上手{じょうず}だ。',
-        prob_zh: '她很擅長 ______ 歌。 (唱歌)',
+        prob_zh: '她很擅長 *唱歌* 歌。',
         level: 'N4',
         options: [
             { text: '歌{うた}い', reason: '錯誤：連用形。' },
@@ -1223,7 +1223,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_utau_2',
         prob: 'みんなで一緒{いっしょ}に ______ ましょう。',
-        prob_zh: '大家一起 ______ 吧。 (唱)',
+        prob_zh: '大家一起 *唱* 吧。',
         level: 'N4',
         options: [
             { text: '歌{うた}を', reason: '錯誤：語法錯誤。' },
@@ -1239,7 +1239,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_utsuru_1',
         prob: '鏡{かがみ}に自分{じぶん}の姿{すがた}が ______。',
-        prob_zh: '鏡子裡 ______ 著自己的身影。 (倒映)',
+        prob_zh: '鏡子裡 *倒映* 著自己的身影。',
         level: 'N4',
         options: [
             { text: '見{み}えて', reason: '錯誤：這是「看得見」，語意不符。' },
@@ -1254,7 +1254,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_utsuru_2',
         prob: 'このテレビは色{いろ}がとてもきれいに ______。',
-        prob_zh: '這台電視的顯色非常漂亮地 ______。 (映出/播放)',
+        prob_zh: '這台電視的顯色非常漂亮地 *映出/播放*。',
         level: 'N4',
         options: [
             { text: '見{み}せ', reason: '錯誤：那是給人看。' },
@@ -1270,7 +1270,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_erabu_1',
         prob: '好{す}きな飲{の}み物{もの}を ______ ください。',
-        prob_zh: '請 ______ 喜歡的飲料。 (選擇)',
+        prob_zh: '請 *選擇* 喜歡的飲料。',
         level: 'N4',
         options: [
             { text: '選{えら}べ', reason: '錯誤：命令。' },
@@ -1285,7 +1285,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_erabu_2',
         prob: '彼{かれ}は一番{いちばん}難{むずか}しい道{みち}を ______。',
-        prob_zh: '他 ______ 了最難的一條路。 (選擇)',
+        prob_zh: '他 *選擇* 了最難的一條路。',
         level: 'N4',
         options: [
             { text: '選{えら}んだ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1301,7 +1301,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_oku_1',
         prob: 'ここに荷物{にもつ}を ______ もいいですか。',
-        prob_zh: '行李 ______ 在這裡也可以嗎？ (放置)',
+        prob_zh: '行李 *放置* 在這裡也可以嗎？',
         level: 'N4',
         options: [
             { text: '置{お}き', reason: '錯誤：接續不符。' },
@@ -1316,7 +1316,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_oku_2',
         prob: '辞書{じしょ}は机{つくえ}の上{うえ}に ______ あります。',
-        prob_zh: '字典 ______ 在桌子上。 (放著/置於)',
+        prob_zh: '字典 *放著/置於* 在桌子上。',
         level: 'N4',
         options: [
             { text: '置{お}いて', reason: '正確！「～てある」表示人為意圖後的狀態。' },
@@ -1332,7 +1332,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_okuru_1',
         prob: '田舎{いなか}の両親{りょうしん}にプレゼントを ______。',
-        prob_zh: '______ 禮物給鄉下的父母。 (寄送)',
+        prob_zh: '*寄送* 禮物給鄉下的父母。',
         level: 'N4',
         options: [
             { text: '送{おく}ります', reason: '正確！五段動詞連用形。' },
@@ -1347,7 +1347,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_okuru_2',
         prob: '友達{ともだち}を駅{えき}まで ______ いきました。',
-        prob_zh: '______ 朋友去車站。 (護送/送行)',
+        prob_zh: '*護送/送行* 朋友去車站。',
         level: 'N4',
         options: [
             { text: '送{おく}って', reason: '錯誤：接續不符。' },
@@ -1363,7 +1363,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_okosu_1',
         prob: '明日{あした}、6時{じ}に ______ ください。',
-        prob_zh: '明天請在6點 ______ 我。 (叫醒)',
+        prob_zh: '明天請在6點 *叫醒* 我。',
         level: 'N4',
         options: [
             { text: '起{お}き', reason: '錯誤：這是自動詞(自己醒來)。' },
@@ -1378,7 +1378,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_okosu_2',
         prob: '事故{じこ}を ______ ないように注意{ちゅうい}する。',
-        prob_zh: '注意不要 ______ 事故。 (引起)',
+        prob_zh: '注意不要 *引起* 事故。',
         level: 'N4',
         options: [
             { text: '起{お}こさ', reason: '正確！五段未然形。表示引發紛爭、事故等。' },
@@ -1395,7 +1395,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_okoru_1',
         prob: '母{はは}は私{わたし}が嘘{うそ}をつくと、ひどく ______。',
-        prob_zh: '我一說謊，媽媽就會非常 ______。 (發火/生氣)',
+        prob_zh: '我一說謊，媽媽就會非常 *發火/生氣*。',
         level: 'N4',
         options: [
             { text: '怒{いか}ります', reason: '錯誤：雖然漢字一樣，但生氣常用「おこる」。' },
@@ -1410,7 +1410,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_okoru_2',
         prob: 'そんなに ______ ないでください。',
-        prob_zh: '請不要那麼 ______。',
+        prob_zh: '請不要那麼 *___*。',
         level: 'N4',
         options: [
             { text: '怒{おこ}り', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1426,7 +1426,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_tsutsumu_1',
         prob: 'プレゼントをきれいな紙{かみ}で ______。',
-        prob_zh: '用漂亮的紙 ______ 禮物。 (包裝)',
+        prob_zh: '用漂亮的紙 *包裝* 禮物。',
         level: 'N4',
         options: [
             { text: '包{つつ}め', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1441,7 +1441,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_tsutsumu_2',
         prob: 'この荷物{にもつ}を ______ ください。',
-        prob_zh: '請 ______ 這個行李。',
+        prob_zh: '請 *___* 這個行李。',
         level: 'N4',
         options: [
             { text: '包{つつ}み', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1457,7 +1457,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_yogoreru_1',
         prob: '靴{くつ}が泥{どろ}で ______ しまいました。',
-        prob_zh: '鞋子被泥土 ______ 了。 (弄髒)',
+        prob_zh: '鞋子被泥土 *弄髒* 了。',
         level: 'N4',
         options: [
             { text: '汚{よご}れ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1472,7 +1472,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_yogoreru_2',
         prob: 'この服{ふく}は ______ やすいです。',
-        prob_zh: '這件衣服容易 ______。',
+        prob_zh: '這件衣服容易 *___*。',
         level: 'N4',
         options: [
             { text: '汚{よご}れ', reason: '正確！連用形接やすい。' },
@@ -1488,7 +1488,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_tomeru_1',
         prob: 'そこへ車{くるま}を ______ ください。',
-        prob_zh: '請在那裡 ______ 車。 (停放)',
+        prob_zh: '請在那裡 *停放* 車。',
         level: 'N4',
         options: [
             { text: '止{と}め', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1503,7 +1503,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_tomeru_2',
         prob: '仕事{しごと}を ______ て遊{あそ}びに行{い}きませんか。',
-        prob_zh: '要不要 ______ 工作去玩？ (停掉/中止)',
+        prob_zh: '要不要 *停掉/中止* 工作去玩？',
         level: 'N4',
         options: [
             { text: '止{と}まら', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1519,7 +1519,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_kudaru_1',
         prob: '坂道{さかみち}を ______。',
-        prob_zh: ' ______ 坡道。 (下/降)',
+        prob_zh: '*下/降* 坡道。',
         level: 'N4',
         options: [
             { text: '下{くだ}って', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1534,7 +1534,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_kudaru_2',
         prob: '川{かわ}を舟{ふね}で ______。',
-        prob_zh: '乘船 ______ 河。 (順流而下)',
+        prob_zh: '乘船 *順流而下* 河。',
         level: 'N4',
         options: [
             { text: '下{くだ}り', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1550,7 +1550,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_noboru_1',
         prob: '階段{かいだん}を ______。',
-        prob_zh: ' ______ 樓梯。 (上/爬)',
+        prob_zh: '*上/爬* 樓梯。',
         level: 'N4',
         options: [
             { text: '上{のぼ}り', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1565,7 +1565,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_noboru_2',
         prob: '山{やま}に ______ のは大変{たいへん}ですが、楽{たの}しいです。',
-        prob_zh: ' ______ 山雖然辛苦，但很快樂。 (登山)',
+        prob_zh: '*登山* 山雖然辛苦，但很快樂。',
         level: 'N4',
         options: [
             { text: '上{のぼ}る', reason: '正確！辭書形。常用「登る」。' },
@@ -1581,7 +1581,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_suku_1',
         prob: 'おなかが ______ ました。',
-        prob_zh: '肚子 ______ 了。 (餓了)',
+        prob_zh: '肚子 *餓了* 了。',
         level: 'N4',
         options: [
             { text: '減{へ}り', reason: '錯誤：這是「肚子餓」，語意不符。' },
@@ -1596,7 +1596,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_suku_2',
         prob: '平日{へいじつ}の電車{でんしゃ}は ______ います。',
-        prob_zh: '平時的電車很 ______。 (空閒/不擁擠)',
+        prob_zh: '平時的電車很 *空閒/不擁擠*。',
         level: 'N4',
         options: [
             { text: '空{す}か', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1612,7 +1612,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_au_1',
         prob: '駅{えき}で友達{ともだち}に ______。',
-        prob_zh: '在車站與朋友 ______。 (見面)',
+        prob_zh: '在車站與朋友 *見面*。',
         level: 'N4',
         options: [
             { text: '合{あ}いました', reason: '錯誤：那是合適/一致。' },
@@ -1627,7 +1627,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_au_2',
         prob: 'またお ______ できるのを楽し{たの}しみにしています。',
-        prob_zh: '期待能再次與您 ______。',
+        prob_zh: '期待能再次與您 *___*。',
         level: 'N4',
         options: [
             { text: '会{あ}わ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1643,7 +1643,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_irassharu_1',
         prob: '先生{せんせい}はどちらに ______ か。',
-        prob_zh: '老師 ______ 在哪裡呢？ (在/去/來 - 尊敬語)',
+        prob_zh: '老師 *在/去/來 - 尊敬語* 在哪裡呢？',
         level: 'N4',
         options: [
             { text: 'います', reason: '錯誤：這是「一般」，語意不符。' },
@@ -1658,7 +1658,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_irassharu_2',
         prob: 'よく ______ ました。',
-        prob_zh: '歡迎光臨。',
+        prob_zh: '*歡迎光臨*。',
         level: 'N4',
         options: [
             { text: 'いらっしゃれ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1674,7 +1674,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ayamaru_1',
         prob: '間違{まちが}えたら、すぐに ______。',
-        prob_zh: '弄錯的話請立刻 ______。 (道歉)',
+        prob_zh: '弄錯的話請立刻 *道歉*。',
         level: 'N4',
         options: [
             { text: '謝{あや}まら', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1689,7 +1689,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ayamaru_2',
         prob: '彼{かれ}に ______ ほうがいいですよ。',
-        prob_zh: '最好向他 ______ 喔。',
+        prob_zh: '最好向他 *___* 喔。',
         level: 'N4',
         options: [
             { text: '謝{あや}まる', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1705,7 +1705,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ikiru_1',
         prob: '百歳{ひゃくさい}まで ______。',
-        prob_zh: ' ______ 到一百歲。 (活)',
+        prob_zh: '*活* 到一百歲。',
         level: 'N4',
         options: [
             { text: '生{い}き', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1720,7 +1720,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ikiru_2',
         prob: '強{つよ}く ______ ことが大切{たいせつ}です。',
-        prob_zh: '堅強地 ______ 下去是很重要的。',
+        prob_zh: '堅強地 *___* 下去是很重要的。',
         level: 'N4',
         options: [
             { text: '生{い}きら', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1736,7 +1736,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ijimeru_1',
         prob: '動物{どうぶつ}を ______ ないでください。',
-        prob_zh: '請不要 ______ 動物。 (欺負/虐待)',
+        prob_zh: '請不要 *欺負/虐待* 動物。',
         level: 'N4',
         options: [
             { text: 'いじめな', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1751,7 +1751,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ijimeru_2',
         prob: '弟{おとうと}を ______。',
-        prob_zh: ' ______ 弟弟。',
+        prob_zh: '*___* 弟弟。',
         level: 'N4',
         options: [
             { text: 'いじめな', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1767,7 +1767,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_isogu_1',
         prob: '時間{じかん}がないから、______ ましょう。',
-        prob_zh: '因為沒時間了，______ 吧。 (趕快/急著)',
+        prob_zh: '因為沒時間了，*趕快/急著* 吧。',
         level: 'N4',
         options: [
             { text: '急{いそ}ぎ', reason: '正確！五段連用。' },
@@ -1782,7 +1782,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_isogu_2',
         prob: ' ______ 行{い}かないと間{ま}に合{あ}いません。',
-        prob_zh: '不 ______ 去的話就來不及了。',
+        prob_zh: '不 *___* 去的話就來不及了。',
         level: 'N4',
         options: [
             { text: '急{いそ}ぎ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1798,7 +1798,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_itasu_1',
         prob: '明日{あした}お電話{でんわ} ______ ます。',
-        prob_zh: '明天將給您 ______ 電。 (致/做 - 謙讓語)',
+        prob_zh: '明天將給您 *致/做 - 謙讓語* 電。',
         level: 'N4',
         options: [
             { text: 'いたす', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1813,7 +1813,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_itasu_2',
         prob: '私{わたし}が ______ ましょう。',
-        prob_zh: '由我來 ______ 吧。',
+        prob_zh: '由我來 *___* 吧。',
         level: 'N4',
         options: [
             { text: 'いたさ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1829,7 +1829,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_inoru_1',
         prob: '世界{せかい}の平和{へいわ}を ______。',
-        prob_zh: ' ______ 世界和平。 (祈禱)',
+        prob_zh: '*祈禱* 世界和平。',
         level: 'N4',
         options: [
             { text: '祈{いの}って', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1844,7 +1844,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_inoru_2',
         prob: '合格{ごうかく}を ______ います。',
-        prob_zh: '正在為您的合格 ______ 著。',
+        prob_zh: '正在為您的合格 *___* 著。',
         level: 'N4',
         options: [
             { text: '祈{いの}ら', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1860,7 +1860,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ueru_1',
         prob: '庭{にわ}に木{き}を ______。',
-        prob_zh: '在院子裡 ______ 樹。 (種植)',
+        prob_zh: '在院子裡 *種植* 樹。',
         level: 'N4',
         options: [
             { text: '植{う}わりました', reason: '錯誤：那是自動詞(種著/長著)。' },
@@ -1875,7 +1875,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ueru_2',
         prob: '花{はな}を ______ ています。',
-        prob_zh: '正在 ______ 花。',
+        prob_zh: '正在 *___* 花。',
         level: 'N4',
         options: [
             { text: '植{う}えら', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1891,7 +1891,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ukagau_1',
         prob: '明日{あした}10時{じ}に ______ ます。',
-        prob_zh: '明天10點將去 ______。 (拜訪 - 謙讓語)',
+        prob_zh: '明天10點將去 *拜訪 - 謙讓語*。',
         level: 'N4',
         options: [
             { text: '行{い}き', reason: '錯誤：這是「一般」，語意不符。' },
@@ -1906,7 +1906,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_ukagau_2',
         prob: 'ちょっとお話{はなし}を ______ もいいですか。',
-        prob_zh: '可以稍微 ______ 您一些話嗎？ (請教)',
+        prob_zh: '可以稍微 *請教* 您一些話嗎？',
         level: 'N4',
         options: [
             { text: '伺{うかが}い', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1922,7 +1922,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_tazuneru_1',
         prob: '友達{ともだち}の家{いえ}を ______。',
-        prob_zh: ' ______ 朋友家。 (拜訪)',
+        prob_zh: '*拜訪* 朋友家。',
         level: 'N4',
         options: [
             { text: '尋{たず}ねました', reason: '錯誤：那是「詢問」。' },
@@ -1937,7 +1937,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_tazuneru_2',
         prob: '日本{にほん}を ______ たら、どこへ行{い}きたいですか。',
-        prob_zh: '要是 ______ 日本，你想去哪裡？',
+        prob_zh: '要是 *___* 日本，你想去哪裡？',
         level: 'N4',
         options: [
             { text: '訪{たず}ね', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1953,7 +1953,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_okureru_1',
         prob: 'バスが ______。',
-        prob_zh: '公車 ______ 了。 (遲到/延誤)',
+        prob_zh: '公車 *遲到/延誤* 了。',
         level: 'N4',
         options: [
             { text: '遅{おく}れ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1968,7 +1968,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_okureru_2',
         prob: '学校{がっこう}に ______ ないでください。',
-        prob_zh: '請不要學校 ______。',
+        prob_zh: '請不要學校 *___*。',
         level: 'N4',
         options: [
             { text: '遅{おく}れら', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2000,7 +2000,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_sou_2',
         prob: '期待{きたい}に ______ ように頑張{がんば}ります。',
-        prob_zh: '我會努力不 *辜負* 期待。 (符合)',
+        prob_zh: '我會努力不 *辜負* 期待。',
         level: 'N4',
         options: [
             { text: '沿{そ}い', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2016,7 +2016,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_ageru_1',
         prob: '妹{いもうと}に本{ほん}を ______。',
-        prob_zh: ' *給* 妹妹書。',
+        prob_zh: '*給* 妹妹書。',
         level: 'N4',
         options: [
             { text: 'もらいました', reason: '錯誤：那是「收到」。' },
@@ -2078,7 +2078,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_itadaku_1',
         prob: 'プレゼントを ______ ました。',
-        prob_zh: ' *收到* 了禮物。 (謙遜語)',
+        prob_zh: '*收到* 了禮物。',
         level: 'N4',
         options: [
             { text: 'いただき', reason: '正確！「もらう」的謙讓語。' },
@@ -2140,7 +2140,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_oideninaru_1',
         prob: '先生{せんせい}、こちらへ ______ か。',
-        prob_zh: '老師，要往這邊 ______ 嗎？ (來)',
+        prob_zh: '老師，要往這邊 *來* 嗎？',
         level: 'N4',
         options: [
             { text: '来{く}ます', reason: '錯誤：變位錯誤。' },
@@ -2155,7 +2155,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_oideninaru_2',
         prob: 'どちらへ ______ ましたか。',
-        prob_zh: '您剛才 ______ 哪裡了？',
+        prob_zh: '您剛才 *___* 哪裡了？',
         level: 'N4',
         options: [
             { text: '行{い}き', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2202,7 +2202,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_okonau_1',
         prob: '試験{しけん}を ______。',
-        prob_zh: ' *舉行* 考試。',
+        prob_zh: '*舉行* 考試。',
         level: 'N4',
         options: [
             { text: '行{おこな}う', reason: '錯誤：這是「普通體」，語意不符。' },
@@ -2233,7 +2233,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_ossharu_1',
         prob: '先生{せんせい}は「おやすみ」と ______ ました。',
-        prob_zh: '老師 ______ 「晚安」。 (說)',
+        prob_zh: '老師 *說* 「晚安」。',
         level: 'N4',
         options: [
             { text: '言{い}い', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2248,7 +2248,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_ossharu_2',
         prob: '今{いま}、何{なに}と ______ か。',
-        prob_zh: '您剛才 ______ 什麼？',
+        prob_zh: '您剛才 *___* 什麼？',
         level: 'N4',
         options: [
             { text: 'おっしゃりました', reason: '錯誤：不規則變位。' },
@@ -2301,7 +2301,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '踊{おど}っ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '踊{おど}ら', reason: '錯誤：未然形。' },
             { text: '踊{おど}り', reason: '正確！五段動詞。' },
-            { text: '踊{おど}り', reason: '錯誤：文法正確但語意或時態不符。' }
+            { text: '踊{おど}る', reason: '錯誤：辭書形不能接續「ましょう」。' }
         ],
         correctIndex: 2,
         tag: 'masu',
@@ -2310,7 +2310,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_odoru_2',
         prob: '上手{じょうず}に ______ いますね。',
-        prob_zh: ' *跳* 得很好呢。',
+        prob_zh: '*跳* 得很好呢。',
         level: 'N4',
         options: [
             { text: '踊{おど}っ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2357,7 +2357,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_omoidasu_1',
         prob: '名前{なまえ}が ______ ません。',
-        prob_zh: ' *想不起* 名字。',
+        prob_zh: '*想不起* 名字。',
         level: 'N4',
         options: [
             { text: '思{おも}い出{だ}せ', reason: '正確！可能形否定。' },
@@ -2372,7 +2372,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_omoidasu_2',
         prob: '子供{こども}の時{とき}を ______。',
-        prob_zh: ' *回想起* 小時候。',
+        prob_zh: '*回想起* 小時候。',
         level: 'N4',
         options: [
             { text: '思{おも}い出{だ}して', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2388,7 +2388,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_omou_1',
         prob: '明日{あした}は雨{あめ}だと ______。',
-        prob_zh: ' *覺得* 明天會下雨。',
+        prob_zh: '*覺得* 明天會下雨。',
         level: 'N4',
         options: [
             { text: '思{おも}う', reason: '錯誤：這是「普通體」，語意不符。' },
@@ -2450,7 +2450,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_oru_1',
         prob: '紙{かみ}を ______。',
-        prob_zh: ' *折* 紙。',
+        prob_zh: '*折* 紙。',
         level: 'N4',
         options: [
             { text: '折{お}る', reason: '錯誤：這是「普通體」，語意不符。' },
@@ -2481,7 +2481,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_oreru_1',
         prob: '鉛筆{えんぴつ}が ______ ました。',
-        prob_zh: '鉛筆 *折斷* 了。 (自動詞)',
+        prob_zh: '鉛筆 *折斷* 了。',
         level: 'N4',
         options: [
             { text: '曲{ま}がり', reason: '錯誤：這是「彎了」，語意不符。' },
@@ -2512,7 +2512,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kaeru_1',
         prob: '予定{よてい}を ______。',
-        prob_zh: ' *變更* 預定。',
+        prob_zh: '*變更* 預定。',
         level: 'N4',
         options: [
             { text: '代{か}えます', reason: '錯誤：這是「漢字不同意思近」，語意不符。' },
@@ -2543,7 +2543,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kakeru_1',
         prob: '眼鏡{めがね}を ______ います。',
-        prob_zh: ' *戴* 著眼鏡。',
+        prob_zh: '*戴* 著眼鏡。',
         level: 'N4',
         options: [
             { text: '掛{か}け', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2574,7 +2574,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kazaru_1',
         prob: '花{はな}を ______。',
-        prob_zh: ' *裝飾* 花。',
+        prob_zh: '*裝飾* 花。',
         level: 'N4',
         options: [
             { text: '飾{かざ}る', reason: '錯誤：這是「普通體」，語意不符。' },
@@ -2620,7 +2620,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_katazukeru_2',
         prob: '仕事{しごと}を ______。',
-        prob_zh: ' *完成/處理好* 工作。',
+        prob_zh: '*完成/處理好* 工作。',
         level: 'N4',
         options: [
             { text: '片付{かたづ}ける', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2667,13 +2667,13 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kakkou_1',
         prob: '______ がいい。',
-        prob_zh: ' *樣子* 很帥。 (外觀)',
+        prob_zh: '*樣子* 很帥。',
         level: 'N4',
         options: [
             { text: '形{かたち}', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '恰好{かっこう}', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '格好{かっこう}', reason: '正確！雖然在此名單中但它主要是名詞。' },
-            { text: '色{いろ}', reason: '錯誤！' }
+            { text: '色{いろ}', reason: '錯誤：錯誤！' }
         ],
         correctIndex: 2,
         tag: 'vocab',
@@ -2685,7 +2685,7 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '穿得真 *有型* 呢。',
         level: 'N4',
         options: [
-            { text: 'もの', reason: '錯誤！' },
+            { text: 'もの', reason: '錯誤：錯誤！' },
             { text: '格好{かっこう}', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '格好{かっこう}', reason: '正確！' },
             { text: '服装{ふくそう}', reason: '錯誤：文法正確但語意或時態不符。' }
@@ -2713,7 +2713,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kamau_2',
         prob: 'ここでタバコを吸{す}っても ______ ませんか。',
-        prob_zh: '在這裡抽煙 *介意* 嗎？ (可以嗎)',
+        prob_zh: '在這裡抽煙 *介意* 嗎？',
         level: 'N4',
         options: [
             { text: '構{かま}', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2775,7 +2775,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kayou_2',
         prob: '会社{かいしゃ}に ______ のは大変{たいへん}です。',
-        prob_zh: '去公司 *上班* 很辛苦。 (往返)',
+        prob_zh: '去公司 *上班* 很辛苦。',
         level: 'N4',
         options: [
             { text: '行{い}く', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2809,7 +2809,7 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '喉嚨 *渴* 了。',
         level: 'N4',
         options: [
-            { text: '乾{かわ}す', reason: '錯誤！' },
+            { text: '乾{かわ}す', reason: '錯誤：錯誤！' },
             { text: '乾{かわ}い', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '乾{かわ}き', reason: '正確！常用搭配。' },
             { text: '渇{かわ}き', reason: '錯誤：文法正確但語意或時態不符。' }
@@ -2884,7 +2884,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kikoeru_1',
         prob: '音楽{おんがく}が ______。',
-        prob_zh: ' *聽得見* 音樂。',
+        prob_zh: '*聽得見* 音樂。',
         level: 'N4',
         options: [
             { text: '聞{き}こえます', reason: '正確！自發動詞(自然聽見)。' },
@@ -2930,7 +2930,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kimaru_2',
         prob: '明日{あした}に ______ います。',
-        prob_zh: ' *定* 在了明天。',
+        prob_zh: '*定* 在了明天。',
         level: 'N4',
         options: [
             { text: '決{き}める', reason: '錯誤：語義不當。' },
@@ -2946,7 +2946,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kudasaru_1',
         prob: '先生{せんせい}が本{ほん}を ______ ました。',
-        prob_zh: '老師 *給* 了我書。 (尊語)',
+        prob_zh: '老師 *給* 了我書。',
         level: 'N4',
         options: [
             { text: 'さしあげ', reason: '錯誤：那是「我給尊長」。' },
@@ -2977,7 +2977,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_kuraberu_1',
         prob: '値段{ねだん}を ______ みましょう。',
-        prob_zh: ' *比較* 看看價格吧。',
+        prob_zh: '*比較* 看看價格吧。',
         level: 'N4',
         options: [
             { text: '比{くら}べ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3101,7 +3101,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_goranninaru_1',
         prob: 'この写真{しゃしん}を ______ か。',
-        prob_zh: '您要 ______ 這張照片嗎？ (看)',
+        prob_zh: '您要 *看* 這張照片嗎？',
         level: 'N4',
         options: [
             { text: '見{み}ます', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3116,7 +3116,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_goranninaru_2',
         prob: 'もう ______ ましたか。',
-        prob_zh: '您已經 ______ 了嗎？',
+        prob_zh: '您已經 *看* 了嗎？',
         level: 'N4',
         options: [
             { text: 'ごらん', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3178,7 +3178,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_sageru_2',
         prob: '頭{あたま}を ______。',
-        prob_zh: ' *低* 頭(謝罪/感謝)。',
+        prob_zh: '*低* 頭。',
         level: 'N4',
         options: [
             { text: '下{さ}げ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3194,7 +3194,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_sashiageru_1',
         prob: '先生{せんせい}にお土産{みやげ}を ______。',
-        prob_zh: ' *送* 老師伴手禮。 (謙遜語)',
+        prob_zh: '*送* 老師伴手禮。',
         level: 'N4',
         options: [
             { text: 'あげます', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3213,7 +3213,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '差{さ}し上{あ}げ', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '差{さ}し上{あ}げて', reason: '錯誤！' },
+            { text: '差{さ}し上{あ}げて', reason: '錯誤：錯誤！' },
             { text: '差{さ}し上{あ}げり', reason: '錯誤：一段動詞不加り。' },
             { text: '差{さ}し上{あ}げ', reason: '正確！' }
         ],
@@ -3380,7 +3380,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_sugiru_1',
         prob: '予定{よてい}の時間{じかん}を ______ ました。',
-        prob_zh: ' *超過* 預定時間了。',
+        prob_zh: '*超過* 預定時間了。',
         level: 'N4',
         options: [
             { text: '過{す}ぎて', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3457,7 +3457,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_susumu_2',
         prob: '時計{とけい}が5分{ごふん} ______ います。',
-        prob_zh: '時鐘 *快* 了5分鐘。 (前進了)',
+        prob_zh: '時鐘 *快* 了5分鐘。',
         level: 'N4',
         options: [
             { text: '進{すす}んで', reason: '正確！' },
@@ -3721,7 +3721,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_mairu_1',
         prob: '本日はお忙しい中、遠くからわざわざお越しをいただき、誠に ______ ました。',
-        prob_zh: '今天在百忙之中，特別從遠方趕來，真的非常感謝您 *光臨*。 (在此指來的人是我方的謙遜說法)',
+        prob_zh: '今天在百忙之中，特別從遠方趕來，真的非常感謝您 *光臨*。',
         level: 'N4',
         options: [
             { text: '参{まい}り', reason: '正確！「来る/行く」的謙讓語。' },
@@ -3907,7 +3907,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_mukau_1',
         prob: '飛行機{ひこうき}が目的地{もくてきち}に ______ 飛{と}んでいる間{あいだ}、本{ほん}を読{よ}んで過{す}ごしました。',
-        prob_zh: '在飛機朝著目的地 *飛行* 期間，靠看書度過。 (在此指朝向)',
+        prob_zh: '在飛機朝著目的地 *飛行* 期間，靠看書度過。',
         level: 'N4',
         options: [
             { text: '行{い}って', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -4031,7 +4031,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_mousu_1',
         prob: '私{わたし}は田中{たなか}と ______ が、鈴木{すずき}先生{せんせい}はいらっしゃいますか。',
-        prob_zh: '我 *姓* 田中，請問鈴木老師在嗎？ (在此指稱為)',
+        prob_zh: '我 *姓* 田中，請問鈴木老師在嗎？',
         level: 'N4',
         options: [
             { text: '参{まい}ります', reason: '錯誤：那是「去/來」。' },
@@ -4191,7 +4191,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '続{つづ}く', reason: '錯誤：自動詞。' },
             { text: '続{つづ}ける', reason: '正確！一段他動詞。表示意識地進行。' },
-            { text: '勉{べん}強{きょう}する', reason: '重複詞意。' },
+            { text: '勉{べん}強{きょう}する', reason: '錯誤：重複詞意。' },
             { text: '続{つづ}けて', reason: '錯誤：文法正確但語意或時態不符。' }
         ],
         correctIndex: 1,
@@ -4344,10 +4344,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '旅行時 *住* 在古老的旅館，感受到了日本文化。',
         level: 'N4',
         options: [
-            { text: '居{い}て', reason: '語感較弱。' },
+            { text: '居{い}て', reason: '錯誤：語感較弱。' },
             { text: '宿{やど}って', reason: '錯誤：這是「較文學」，語意不符。' },
             { text: '泊{と}まって', reason: '正確！五段促音便。' },
-            { text: '止{と}まって', reason: '同音字錯誤(停止)。' }
+            { text: '止{と}まって', reason: '錯誤：同音字錯誤(停止)。' }
         ],
         correctIndex: 2,
         tag: 'te',
@@ -4406,7 +4406,7 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '雖然想嘗試自己 *修理* 壞掉的手錶，但太難了沒辦法做到。',
         level: 'N4',
         options: [
-            { text: '治{なお}そう', reason: '同音字錯誤(治病)。' },
+            { text: '治{なお}そう', reason: '錯誤：同音字錯誤(治病)。' },
             { text: '直{なお}そう', reason: '正確！五段意志形。～ようとする句型。' },
             { text: '直{なお}し', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '直{なお}る', reason: '錯誤：自動詞。' }
@@ -4438,7 +4438,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '直{なお}り', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '治{なお}った', reason: '同音字錯誤(指病好)。' },
+            { text: '治{なお}った', reason: '錯誤：同音字錯誤(指病好)。' },
             { text: '直{なお}した', reason: '錯誤：那是「修好了」(他動詞)。' },
             { text: '直{なお}った', reason: '正確！五段自動詞。表示損壞狀態恢復。' }
         ],
@@ -4468,7 +4468,7 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: '本來想著感冒 *好了* 就要去公園，但因為還在發燒，所以在家睡覺。',
         level: 'N4',
         options: [
-            { text: '直{なお}っ', reason: '同音字錯誤(修好)。' },
+            { text: '直{なお}っ', reason: '錯誤：同音字錯誤(修好)。' },
             { text: '治{なお}り', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '治{なお}っ', reason: '正確！五段自動詞。指變健康。' },
             { text: '治{なお}る', reason: '錯誤：文法正確但語意或時態不符。' }
@@ -4545,7 +4545,7 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「冰箱裡的牛奶 *沒了* 嗎？」\nB：「啊，最後是被我喝光了。抱歉，我去買回來。」',
         level: 'N4',
         options: [
-            { text: '亡{な}くなっ', reason: '同音字錯誤(死亡)。' },
+            { text: '亡{な}くなっ', reason: '錯誤：同音字錯誤(死亡)。' },
             { text: '無{な}くし', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '無{な}くなる', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '無{な}くなっ', reason: '正確！連用形結合た。這裡指用完。' }
@@ -4564,7 +4564,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '死{し}んで', reason: '錯誤：這是「較直白/不敬」，語意不符。' },
             { text: '亡{な}くなって', reason: '正確！五段促音便。指死亡的鄭重說法。' },
             { text: '亡{な}くなり', reason: '錯誤：文法正確但語意或時態不符。' },
-            { text: '無{な}くなって', reason: '同音字錯誤(消失)。' }
+            { text: '無{な}くなって', reason: '錯誤：同音字錯誤(消失)。' }
         ],
         correctIndex: 1,
         tag: 'te',
@@ -4579,7 +4579,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '亡{な}くなり', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '逃{に}げた', reason: '錯誤：逃走了。' },
             { text: '亡{な}くなった', reason: '正確！過去式。' },
-            { text: '無{な}くなった', reason: '同音字錯誤。' }
+            { text: '無{な}くなった', reason: '錯誤：同音字錯誤。' }
         ],
         correctIndex: 2,
         tag: 'vocab',
@@ -4589,7 +4589,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_nasaru_1',
         prob: '部長{ぶちょう}、明日{あした}の午後{ごご}は何{なに}を ______ 予定{よてい}ですか。會議{かいぎ}の資料{しりょう}を持{も}ってまいりました。',
-        prob_zh: '部長，明天下午您 *計畫* 做什麼呢？我帶了會議資料過來。 (做什麼的尊敬語)',
+        prob_zh: '部長，明天下午您 *計畫* 做什麼呢？我帶了會議資料過來。',
         level: 'N4',
         options: [
             { text: 'する', reason: '錯誤：這是「一般」，語意不符。' },
@@ -4635,7 +4635,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_naru_2',
         prob: 'A：「あ、ベルが ______ たよ。誰{だれ}か來{き}たみたいだね。」\nB：「はーい、今{いま}出{で}ます！」',
-        prob_zh: 'A：「啊，門鈴 *響了*。好像有人來了。」\nB：「好——的，現在就去（開門）！」',
+        prob_zh: 'A：「啊，門鈴 *響了*。好像有人來了。」\nB：「好——的，現在就去！」',
         level: 'N4',
         options: [
             { text: '鳴{な}っ', reason: '正確！連用形結合た。' },
@@ -4713,7 +4713,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_niru_1',
         prob: '田中{たなか}さんはお父{とう}さんにそっくり ______ いるので、遠{とお}くから見{み}てもすぐに分{わ}かります。',
-        prob_zh: '田中先生長得和父親一模一樣（ *像* ），即使從遠處看也馬上能認出來。',
+        prob_zh: '田中先生長得和父親一模一樣，即使從遠處看也馬上能認出來。',
         level: 'N4',
         options: [
             { text: '似{に}', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -4810,7 +4810,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: 'ぬらして', reason: '錯誤：那是「弄濕」(他動詞)。' },
-            { text: '鳴{な}って', reason: '同音字錯誤。' },
+            { text: '鳴{な}って', reason: '錯誤：同音字錯誤。' },
             { text: 'ぬれ', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: 'ぬれて', reason: '正確！一段自動詞。表示淋濕。' }
         ],
@@ -4917,7 +4917,7 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「在下一站 *換車* 就可以了嗎？」\nB：「是的。去3號月台就可以了。」',
         level: 'N4',
         options: [
-            { text: '乗{の}り換{か}わ', reason: '錯誤！' },
+            { text: '乗{の}り換{か}わ', reason: '錯誤：錯誤！' },
             { text: '乗{の}り換{か}え', reason: '錯誤：文法正確但語意或時態不符。' },
             { text: '乗{の}り換{か}えろ', reason: '錯誤：命令形。' },
             { text: '乗{の}り換{か}えれ', reason: '正確！假定形（可能/建議句型）。' }
@@ -4992,7 +4992,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_hieru_1',
         prob: 'ビールがよく ______ いるので、今{いま}飲{の}むと本当{ほんとう}に美味{おい}しいと思{おも}いますよ。',
-        prob_zh: '啤酒冰得（ *變涼* ）很透，我覺得現在喝的話真的會很好喝喔。',
+        prob_zh: '啤酒冰得很透，我覺得現在喝的話真的會很好喝喔。',
         level: 'N4',
         options: [
             { text: '冷{ひ}えて', reason: '正確！一段自動詞。表示溫度降低。' },
@@ -5441,7 +5441,7 @@ export const n4Questions: StaticQuestion[] = [
     {
         id: 'n4_gen_waku_2',
         prob: 'A：「お風呂{おふろ}、 ______ たよ」\nB：「ありがとう。じゃあ、先{さき}に入{はい}らせてもらうね。」',
-        prob_zh: 'A：「洗澡水 *好了（開了/熱了）* 喔」\nB：「謝謝。那我就先去洗囉。」',
+        prob_zh: 'A：「洗澡水 *好了* 喔」\nB：「謝謝。那我就先去洗囉。」',
         level: 'N4',
         options: [
             { text: '沸{わ}か', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -5517,7 +5517,7 @@ export const n4Questions: StaticQuestion[] = [
     },
     // 136. 決る/決まる (Kimaru)
     {
-        id: 'n4_gen_kimaru_1',
+        id: 'n4_gen_kimaru_1_2',
         prob: '夏休{なつやす}みの旅行{りょこう}の行き先{いきさき}がやっと ______ ので、飛行機{ひこうき}のチケットを予約{よやく}しました。',
         prob_zh: '暑假旅行的目的地終於 *決定* 了，所以預約了飛機票。',
         level: 'N4',
@@ -5532,7 +5532,7 @@ export const n4Questions: StaticQuestion[] = [
         correctRule: '【考點】動詞た形活用\n【解析】決定、定下來。 \n【自他動詞】「決まる」(自動詞) vs 「決める」(他動詞)。\n【延伸】相關詞/混淆項：決めて、決まり、選んだ'
     },
     {
-        id: 'n4_gen_kimaru_2',
+        id: 'n4_gen_kimaru_2_2',
         prob: 'A：「来週{らいしゅう}のパーティー、何時{なんじ}から始{はじ}めるか ______ ？」\nB：「ううん、まだみんなの都合{つごう}を聞{き}いているところだよ。」',
         prob_zh: 'A：「下週的派對，已經 *決定* 幾點開始了嗎？」\nB：「還沒，還在詢問大家的方便時間。」',
         level: 'N4',
@@ -5548,7 +5548,7 @@ export const n4Questions: StaticQuestion[] = [
     },
     // 137. 触る (Sawaru)
     {
-        id: 'n4_gen_sawaru_1',
+        id: 'n4_gen_sawaru_1_2',
         prob: '美術館{びじゅつかん}では、展示{てんじ}されている絵{え}に ______ はいけないことになっています。',
         prob_zh: '在美術館裡，規定不可以 *觸碰* 展示的畫。',
         level: 'N4',
@@ -5563,7 +5563,7 @@ export const n4Questions: StaticQuestion[] = [
         correctRule: '【考點】動詞て形活用\n【解析】摸、觸碰。 \n【固定搭配】「～に触る」。\n【延伸】相關詞/混淆項：触り、見て、持って'
     },
     {
-        id: 'n4_gen_sawaru_2',
+        id: 'n4_gen_sawaru_2_2',
         prob: 'A：「あ、これ、すごくふわふわしてる！」\nB：「あ、勝手{かって}に ______ らダメだよ。売{う}り物{もの}なんだから。」',
         prob_zh: 'A：「啊，這個摸起來好軟喔！」\nB：「啊，不可以擅自 *亂摸* 喔。因為這是商品。」',
         level: 'N4',
@@ -5734,7 +5734,7 @@ export const n4Questions: StaticQuestion[] = [
     },
     // 143. 立てる (Tateru)
     {
-        id: 'n4_gen_tateru_1',
+        id: 'n4_gen_tateru_1_2',
         prob: '強{つよ}い雨{あめ}が降{ふ}ってきたので、傘{かさ}を ______ て歩{ある}きました。',
         prob_zh: '因為下起了大雨，我 *撐* 起傘走路。',
         level: 'N4',
@@ -5827,7 +5827,7 @@ export const n4Questions: StaticQuestion[] = [
     },
     // 159. 決まる (Kimaru) - Listed as 決る in master
     {
-        id: 'n4_gen_kimaru_1',
+        id: 'n4_gen_kimaru_1_3',
         prob: '出張の日程がようやく ______ ました。',
         prob_zh: '出差的行程終於 *定下來* 了。',
         level: 'N4',
@@ -5842,7 +5842,7 @@ export const n4Questions: StaticQuestion[] = [
         correctRule: '【考點】動詞ます形活用\n【解析】決定、定下來（自動詞）。 \n【自他動詞】「決まる」(自動詞) vs 「決める」(他動詞)。\n【延伸】相關詞/混淆項：決め、終わり、始まり'
     },
     {
-        id: 'n4_gen_kimaru_2',
+        id: 'n4_gen_kimaru_2_3',
         prob: 'A：「新しい店長、誰になるか ______ ？」\nB：「いいえ、まだ話し合いが続いています。」',
         prob_zh: 'A：「新店長是誰，已經 *定下來* 了嗎？」\nB：「不，討論還在進行中。」',
         level: 'N4',

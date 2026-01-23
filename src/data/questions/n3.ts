@@ -21,7 +21,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_keigo_1',
         prob: '先生{せんせい}はもう______か。',
-        prob_zh: '老師已經______了嗎？ (回去/尊稱)',
+        prob_zh: '老師已經*回去/尊稱*了嗎？',
         level: 'N3',
         options: [
             { text: 'お帰{かえ}りました', reason: '錯誤：文法錯誤，沒有這種用法。' },
@@ -36,7 +36,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_keigo_2',
         prob: '社長{しゃちょう}、いつ______か。',
-        prob_zh: '社長，您什麼時候______？ (去/尊稱)',
+        prob_zh: '社長，您什麼時候*去/尊稱*？',
         level: 'N3',
         options: [
             { text: 'いらっしゃいます', reason: '正確！「行く/来る/いる」的尊敬語。' },
@@ -114,7 +114,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_katazukeru_2',
         prob: '仕事{しごと}を ______ から帰{かえ}ります。',
-        prob_zh: ' *處理完* 工作後再回去。',
+        prob_zh: '*處理完* 工作後再回去。',
         level: 'N3',
         options: [
             { text: '片付{かたづ}けて', reason: '正確！表示順序。' },
@@ -207,7 +207,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_negau_2',
         prob: '平和{へいわ}を ______。',
-        prob_zh: ' *祈求* 和平。',
+        prob_zh: '*祈求* 和平。',
         level: 'N3',
         options: [
             { text: '願{ねが}います', reason: '正確！五段動詞ます形。' },
@@ -238,7 +238,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_mukau_2',
         prob: '鏡{かがみ}に ______ 髪{かみ}を整{ととの}える。',
-        prob_zh: ' *對著* 鏡子整理頭髮。',
+        prob_zh: '*對著* 鏡子整理頭髮。',
         level: 'N3',
         options: [
             { text: '向{む}かって', reason: '正確！表示方向或動作目標。' },
@@ -285,7 +285,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_grammar_1',
         prob: '来年{らいねん}、日本{にほん}へ______と思{おも}っています。',
-        prob_zh: '我打算明年______日本。',
+        prob_zh: '我打算明年*___*日本。',
         level: 'N3',
         options: [
             { text: '行{い}く', reason: '錯誤：行くと思っています 語意不自然 (覺得會去?)。' },
@@ -301,7 +301,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_trans_1',
         prob: '授業{じゅぎょう}を______。',
-        prob_zh: '______開始上課 (開始)。',
+        prob_zh: '*開始*開始上課。',
         level: 'N3',
         options: [
             { text: '始{はじ}めます', reason: '正確！「～を始める」是此動詞 (人為開始)。' },
@@ -317,7 +317,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_compound_1',
         prob: '雨{あめ}が降{ふ}り______。',
-        prob_zh: '雨______下了起來 (開始)。',
+        prob_zh: '雨*開始*下了起來。',
         level: 'N3',
         options: [
             { text: '出{だ}した', reason: '正確！「～出す」接動詞ます形，表示「突然開始」。' },
@@ -334,7 +334,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_tazuneru_1',
         prob: '京都{きょうと}の旧友{きゅうゆう}を ______。',
-        prob_zh: ' *拜訪* 京都的老朋友。',
+        prob_zh: '*拜訪* 京都的老朋友。',
         level: 'N3',
         options: [
             { text: '尋{たず}ねる', reason: '錯誤：這是「詢問/尋找」。' },
@@ -396,7 +396,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_sasou_1',
         prob: '彼女{かのじょ}を食事{しょくじ}に ______。',
-        prob_zh: ' *邀請* 她去吃飯。',
+        prob_zh: '*邀請* 她去吃飯。',
         level: 'N3',
         options: [
             { text: '招待{しょうたい}する', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -411,7 +411,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_sasou_2',
         prob: '友達{ともだち}に ______ 、映画{えいが}を見{み}に行{い}った。',
-        prob_zh: ' *受* 朋友 *邀請*，去看了電影。',
+        prob_zh: '*受* 朋友 *邀請*，去看了電影。',
         level: 'N3',
         options: [
             { text: '誘{さそ}い', reason: '錯誤：接續。' },
@@ -442,7 +442,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_nozomu_2',
         prob: '海{うみ}を ______ 高台{たかだい}。',
-        prob_zh: ' *望* 著海的高台。',
+        prob_zh: '*望* 著海的高台。',
         level: 'N3',
         options: [
             { text: '望{のぞ}む', reason: '正確！五段辭書形。' },
@@ -458,7 +458,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_tanomu_1',
         prob: '仕事{しごと}を ______。',
-        prob_zh: ' *拜託* 工作。',
+        prob_zh: '*拜託* 工作。',
         level: 'N3',
         options: [
             { text: '頼{たの}も', reason: '錯誤：這是意向形，語意不符。' },
@@ -489,7 +489,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_tayoru_1',
         prob: '親{おや}に ______。',
-        prob_zh: ' *依賴* 父母。',
+        prob_zh: '*依賴* 父母。',
         level: 'N3',
         options: [
             { text: '頼{たよ}ります', reason: '錯誤：這是「未來」，語意不符。' },
@@ -504,7 +504,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_tayoru_2',
         prob: '自分{じぶん}の力{ちから}を ______。',
-        prob_zh: ' *依靠* 自己的力量。',
+        prob_zh: '*依靠* 自己的力量。',
         level: 'N3',
         options: [
             { text: '頼{たよ}ら', reason: '錯誤：否定。' },
@@ -566,7 +566,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_aseru_2',
         prob: '______ は禁物{きんもつ}だ。',
-        prob_zh: ' *焦躁* 是大忌。',
+        prob_zh: '*焦躁* 是大忌。',
         level: 'N3',
         options: [
             { text: '焦{あせ}り', reason: '正確！五段連用形轉名詞。' },
@@ -582,7 +582,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_satoru_1',
         prob: '自分{じぶん}の過{あやま}ちを ______。',
-        prob_zh: ' *領悟* 到自己的過錯。',
+        prob_zh: '*領悟* 到自己的過錯。',
         level: 'N3',
         options: [
             { text: '悟{さと}った', reason: '錯誤：雖然活用正確，但時態或接續不符題意。' },
@@ -597,7 +597,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_satoru_2',
         prob: '危険{きけん}を ______ 逃{に}げ出{だ}した。',
-        prob_zh: ' *察覺* 到危險後逃跑了。',
+        prob_zh: '*察覺* 到危險後逃跑了。',
         level: 'N3',
         options: [
             { text: '悟{さと}られ', reason: '錯誤：受身。' },
@@ -614,7 +614,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_shinjiru_1',
         prob: '自分{じぶん}の可能性{かのうせい}を ______。',
-        prob_zh: ' *相信* 自己的可能性。',
+        prob_zh: '*相信* 自己的可能性。',
         level: 'N3',
         options: [
             { text: '信{しん}じられたい', reason: '錯誤：想要被相信。' },
@@ -645,7 +645,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_tsuujiru_1',
         prob: '冗談{じょうだん}が ______。',
-        prob_zh: '笑話 *被聽懂(通)* 了。',
+        prob_zh: '笑話 *被聽懂* 了。',
         level: 'N3',
         options: [
             { text: '通{つう}じました', reason: '正確！一段動詞。表示意思傳達或被理解。' },
@@ -660,7 +660,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_tsuujiru_2',
         prob: '一年{いちねん}を ______。',
-        prob_zh: ' *透過(歷經)* 一整年。',
+        prob_zh: '*透過* 一整年。',
         level: 'N3',
         options: [
             { text: '通{とお}って', reason: '錯誤：這是「通過空間」，語意不符。' },
@@ -676,7 +676,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_kanjiru_1',
         prob: '寒{さむ}さを ______。',
-        prob_zh: ' *感到* 寒冷。',
+        prob_zh: '*感到* 寒冷。',
         level: 'N3',
         options: [
             { text: '感{かん}じます', reason: '正確！一段動詞。' },
@@ -691,7 +691,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_kanjiru_2',
         prob: '責任{せきにん}を ______ います。',
-        prob_zh: '正在 *感(背負)* 到責任。',
+        prob_zh: '正在 *感* 到責任。',
         level: 'N3',
         options: [
             { text: '受{う}けて', reason: '錯誤：這是「承受」，語意不符。' },
@@ -707,7 +707,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_kakawaru_1',
         prob: '命{いのち}に ______ 問題{もんだい}。',
-        prob_zh: ' *攸關* 性命的問題。',
+        prob_zh: '*攸關* 性命的問題。',
         level: 'N3',
         options: [
             { text: '関係{かんけい}する', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -722,7 +722,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_kakawaru_2',
         prob: '事件{じけん}に ______。',
-        prob_zh: ' *捲入(涉及)* 了事件。',
+        prob_zh: '*捲入* 了事件。',
         level: 'N3',
         options: [
             { text: '巻{ま}き込{こ}まれました', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -753,7 +753,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_tsutawaru_2',
         prob: '気持{きも}ちが彼{かれ}に ______。',
-        prob_zh: '心情 *傳達(傳到)* 他那裡了。',
+        prob_zh: '心情 *傳達* 他那裡了。',
         level: 'N3',
         options: [
             { text: '伝{つた}えた', reason: '錯誤：他動詞，語意不合。' },
@@ -784,7 +784,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n4_v1399_hirogaru_2',
         prob: '景色{けしき}が ______。',
-        prob_zh: '景色 *展開(呈現)* 在眼前。',
+        prob_zh: '景色 *展開* 在眼前。',
         level: 'N3',
         options: [
             { text: '広{ひろ}げている', reason: '錯誤：他動詞。' },
@@ -800,7 +800,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_tsunagaru_1',
         prob: '電話{でんわ}が ______。',
-        prob_zh: '電話 *通(連接)* 了。',
+        prob_zh: '電話 *通* 了。',
         level: 'N3',
         options: [
             { text: '通{つう}じました', reason: '錯誤：這是「通了」，語意不符。' },
@@ -846,7 +846,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_mitsukaru_2',
         prob: 'いい仕事{しごと}が ______。',
-        prob_zh: ' *找到了* 好工作。',
+        prob_zh: '*找到了* 好工作。',
         level: 'N3',
         options: [
             { text: '見{み}つけた', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -862,7 +862,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_ukaru_1',
         prob: '第一志望{だいいちしぼう}に ______。',
-        prob_zh: ' *考上* 第一志願。',
+        prob_zh: '*考上* 第一志願。',
         level: 'N3',
         options: [
             { text: '受{う}かりました', reason: '正確！五段自動詞。表示考中、錄取。' },
@@ -893,7 +893,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_kubaru_1',
         prob: 'チラシを ______。',
-        prob_zh: ' *分發* 傳單。',
+        prob_zh: '*分發* 傳單。',
         level: 'N3',
         options: [
             { text: '配{くば}ら', reason: '錯誤：否定。' },
@@ -925,7 +925,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_azakaru_1',
         prob: '旅行{りょこう}のあいだ、ペットを ______。',
-        prob_zh: '旅行期間， ______ 寵物。 (幫忙照看)',
+        prob_zh: '旅行期間， *幫忙照看* 寵物。',
         level: 'N3',
         options: [
             { text: '預{あず}かり', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -940,7 +940,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_azakaru_2',
         prob: 'お荷物{にもつ}を ______ します。',
-        prob_zh: '讓我為您 ______ 行李吧。 (保管)',
+        prob_zh: '讓我為您 *保管* 行李吧。',
         level: 'N3',
         options: [
             { text: '保管{ほかん}し', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -956,7 +956,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_azekeru_1',
         prob: '子供{こども}を保育園{ほいくえん}に ______。',
-        prob_zh: '把小孩 ______ 在托兒所。 (寄託/交付)',
+        prob_zh: '把小孩 *寄託/交付* 在托兒所。',
         level: 'N3',
         options: [
             { text: '預{あず}けます', reason: '正確！一段動詞。表示委託別人照顧。' },
@@ -971,7 +971,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_azekeru_2',
         prob: '銀行{ぎんこう}にお金{かせ}を ______。',
-        prob_zh: '把錢 ______ 在銀行。 (存款/寄放)',
+        prob_zh: '把錢 *存款/寄放* 在銀行。',
         level: 'N3',
         options: [
             { text: '落{お}とした', reason: '錯誤：錢弄丟了。' },
@@ -987,7 +987,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_osowaru_1',
         prob: '先生{せんせい}に日本語{にほんご}を ______。',
-        prob_zh: '向老師 ______ 日語。 (學習/受教)',
+        prob_zh: '向老師 *學習/受教* 日語。',
         level: 'N3',
         options: [
             { text: '教{おそ}わりました', reason: '正確！五段動詞。表示從他人那裡學習到位。' },
@@ -1002,7 +1002,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_osowaru_2',
         prob: '母{はは}から料理{りょうり}を ______ います。',
-        prob_zh: '正在向母親 ______ 料理。',
+        prob_zh: '正在向母親 *___* 料理。',
         level: 'N3',
         options: [
             { text: '教{おそ}わ', reason: '錯誤：否定。' },
@@ -1018,7 +1018,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_ueru_1',
         prob: '庭{にわ}に桜{さくら}の木{き}を ______。',
-        prob_zh: '在庭院 ______ 櫻花樹。 (種植)',
+        prob_zh: '在庭院 *種植* 櫻花樹。',
         level: 'N3',
         options: [
             { text: '植{う}えました', reason: '正確！一段動詞。' },
@@ -1033,7 +1033,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_ueru_2',
         prob: '畑{はたけ}に野菜{やさい}を ______。',
-        prob_zh: '在田裡 ______ 蔬菜。 (種)',
+        prob_zh: '在田裡 *種* 蔬菜。',
         level: 'N3',
         options: [
             { text: '植{う}えな', reason: '錯誤：否定變位。' },
@@ -1049,7 +1049,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_ukagau_1',
         prob: '明日{あした}、そちらへ ______。',
-        prob_zh: '明天我會 ______ 您那邊。 (拜訪/去)',
+        prob_zh: '明天我會 *拜訪/去* 您那邊。',
         level: 'N3',
         options: [
             { text: '伺{うかが}います', reason: '正確！「行く/来る」的謙讓語。' },
@@ -1064,7 +1064,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_ukagau_2',
         prob: 'お話{はなし}を ______ ました。',
-        prob_zh: '______ 了您的話。 (聽聞/請益)',
+        prob_zh: '*聽聞/請益* 了您的話。',
         level: 'N3',
         options: [
             { text: '聞{き}き', reason: '錯誤：這是「普通體的聽」，語意不符。' },
@@ -1080,7 +1080,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_uketamawaru_1',
         prob: 'ご注問{ちゅうもん}を ______。',
-        prob_zh: '______ 您的訂單。 (受理)',
+        prob_zh: '*受理* 您的訂單。',
         level: 'N3',
         options: [
             { text: '聞{き}きました', reason: '錯誤：這是「只是聽到了」，語意不符。' },
@@ -1095,7 +1095,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_uketamawaru_2',
         prob: 'その件{けん}、確{たし}かに ______ ました。',
-        prob_zh: '那件事，我確實 ______ 了。 (聽到了/承接了)',
+        prob_zh: '那件事，我確實 *聽到了/承接了* 了。',
         level: 'N3',
         options: [
             { text: '聞き入れ', reason: '錯誤：層次與語法不同。' },
@@ -1111,7 +1111,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_uku_1',
         prob: '水{みず}に木{き}が ______。',
-        prob_zh: '木頭 ______ 在水面上。 (漂浮)',
+        prob_zh: '木頭 *漂浮* 在水面上。',
         level: 'N3',
         options: [
             { text: '浮{う}き', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
@@ -1126,7 +1126,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_uku_2',
         prob: 'チームから ______ しまった。',
-        prob_zh: '從隊伍中 ______ 了。 (被孤立/浮現出)',
+        prob_zh: '從隊伍中 *被孤立/浮現出* 了。',
         level: 'N3',
         options: [
             { text: '浮{う}か', reason: '錯誤：否定。' },
@@ -1142,7 +1142,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_uttaeru_1',
         prob: '裁判所{さいばんしょ}に ______。',
-        prob_zh: '向法院 ______。 (起訴/訴訟)',
+        prob_zh: '向法院 *起訴/訴訟*。',
         level: 'N3',
         options: [
             { text: '訴{うった}え', reason: '錯誤：這是連用形/名詞，不適合作為句尾。' },
@@ -1157,7 +1157,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_uttaeru_2',
         prob: '痛{いた}みを ______。',
-        prob_zh: ' ______ 疼痛。 (訴說/表達)',
+        prob_zh: '*訴說/表達* 疼痛。',
         level: 'N3',
         options: [
             { text: '訴{うった}える', reason: '正確！一段動詞。' },
@@ -1173,7 +1173,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_umu_1',
         prob: '子供{こども}を ______。',
-        prob_zh: ' ______ 小孩。 (生產)',
+        prob_zh: '*生產* 小孩。',
         level: 'N3',
         options: [
             { text: '生{う}みました', reason: '正確！五段動詞。' },
@@ -1188,7 +1188,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_umu_2',
         prob: '努力{どりょく}が成功{せいこう}を ______。',
-        prob_zh: '努力 ______ 了成功。 (孕育/產生)',
+        prob_zh: '努力 *孕育/產生* 了成功。',
         level: 'N3',
         options: [
             { text: '生{う}も', reason: '錯誤：變位未然意向不足。' },
@@ -1204,7 +1204,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_utagau_1',
         prob: '彼{かれ}を ______ わけではない。',
-        prob_zh: '並非是 ______ 他。 (懷疑)',
+        prob_zh: '並非是 *懷疑* 他。',
         level: 'N3',
         options: [
             { text: '疑{うたが}わ', reason: '錯誤：否定變位。' },
@@ -1219,7 +1219,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_utagau_2',
         prob: '犯人{はんにん}だと ______ れています。',
-        prob_zh: '被 ______ 為犯人。 (懷疑)',
+        prob_zh: '被 *懷疑* 為犯人。',
         level: 'N3',
         options: [
             { text: '疑{うたが}わ', reason: '正確！五段受身形未然。' },
@@ -1236,7 +1236,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_mitomeru_1',
         prob: '自分{じぶん}の失敗{しっぱい}を ______ ことは大切{たいせつ}です。',
-        prob_zh: ' ______ 自己的失敗是很重要的。 (承認)',
+        prob_zh: '*承認* 自己的失敗是很重要的。',
         level: 'N3',
         options: [
             { text: '許{ゆる}す', reason: '錯誤：原諒。' },
@@ -1252,7 +1252,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_haku_1',
         prob: '深呼吸{しんこきゅう}して、息{いき}を ______ ください。',
-        prob_zh: '請深呼吸，把氣 ______ 出來。 (呼氣)',
+        prob_zh: '請深呼吸，把氣 *呼氣* 出來。',
         level: 'N3',
         options: [
             { text: '吐{は}か', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1268,7 +1268,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_tomeru_1',
         prob: 'その話{はな}しを心{こころ}に ______ おいてください。',
-        prob_zh: '請把那件事 ______ 在心裡。 (留心/記住)',
+        prob_zh: '請把那件事 *留心/記住* 在心裡。',
         level: 'N3',
         options: [
             { text: '留{と}め', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1284,7 +1284,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_hodoku_1',
         prob: '靴{くつ}のひもを ______。',
-        prob_zh: ' ______ 鞋帶。 (解開/鬆開)',
+        prob_zh: '*解開/鬆開* 鞋帶。',
         level: 'N3',
         options: [
             { text: '解{と}きます', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1300,7 +1300,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_aisuru_1',
         prob: '家族{かぞく}を ______ います。',
-        prob_zh: ' ______ 著家人。 (愛)',
+        prob_zh: '*愛* 著家人。',
         level: 'N3',
         options: [
             { text: '愛{あい}して', reason: '正確！サ行變格動詞。' },
@@ -1316,7 +1316,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_akirameru_1',
         prob: '最後{さいご}まで ______ ないでください。',
-        prob_zh: '到最後都請不要 ______。 (放棄/死心)',
+        prob_zh: '到最後都請不要 *放棄/死心*。',
         level: 'N3',
         options: [
             { text: '諦{あきら}めろ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1332,7 +1332,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_akiru_1',
         prob: '毎日{まいにち}同{おな}じ料理{りょうり}で ______ ました。',
-        prob_zh: '每天都一樣的料理，已經 ______ 了。 (厭倦/膩了)',
+        prob_zh: '每天都一樣的料理，已經 *厭倦/膩了* 了。',
         level: 'N3',
         options: [
             { text: '飽{あ}き', reason: '正確！上一段。常用「～に飽きる」。' },
@@ -1348,7 +1348,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_akeru_1',
         prob: '夜{よ}が ______。',
-        prob_zh: '天 ______ 了。 (黎明/亮)',
+        prob_zh: '天 *黎明/亮* 了。',
         level: 'N3',
         options: [
             { text: '明{あ}けら', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1364,7 +1364,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_ataeru_1',
         prob: '彼{かれ}にチャンスを ______。',
-        prob_zh: ' ______ 他機會。 (給予)',
+        prob_zh: '*給予* 他機會。',
         level: 'N3',
         options: [
             { text: '与{あた}えて', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1380,7 +1380,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_ataru_1',
         prob: '寶{たから}くじに ______。',
-        prob_zh: ' ______ 彩券。 (中獎)',
+        prob_zh: '*中獎* 彩券。',
         level: 'N3',
         options: [
             { text: '当{あ}たり', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1396,7 +1396,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_atsukau_1',
         prob: '丁寧{ていねい}に ______ ください。',
-        prob_zh: '請 ______ 仔細一點。 (對待/處理)',
+        prob_zh: '請 *對待/處理* 仔細一點。',
         level: 'N3',
         options: [
             { text: '扱{あつか}わ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1412,7 +1412,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_ateru_1',
         prob: '目{め}に手{て}を ______。',
-        prob_zh: '手 ______ 在眼睛上。 (貼著/碰觸)',
+        prob_zh: '手 *貼著/碰觸* 在眼睛上。',
         level: 'N3',
         options: [
             { text: '当{あ}て', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1428,7 +1428,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_arasou_1',
         prob: '一位{いちい}を ______。',
-        prob_zh: ' ______ 第一名。 (競爭/爭奪)',
+        prob_zh: '*競爭/爭奪* 第一名。',
         level: 'N3',
         options: [
             { text: '争{あらそ}っています', reason: '正確！五段促音便。' },
@@ -1444,7 +1444,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_aratameru_1',
         prob: '規則{きそく}を ______。',
-        prob_zh: ' ______ 規則。 (修改/革新)',
+        prob_zh: '*修改/革新* 規則。',
         level: 'N3',
         options: [
             { text: '改{あらた}まった', reason: '錯誤：自動詞(變正式/嚴肅)。' },
@@ -1460,7 +1460,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_arawasu_1',
         prob: '感謝{かんしゃ}の気持{きも}ちを言{こと}葉{ば}で ______。',
-        prob_zh: '用言語 ______ 感謝的心情。 (表達)',
+        prob_zh: '用言語 *表達* 感謝的心情。',
         level: 'N3',
         options: [
             { text: '表{あらわ}し', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1476,7 +1476,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_arawasu_2',
         prob: '彼{かれ}はついに正体{しょうたい}を ______。',
-        prob_zh: '他終於 ______ 了真面目。 (顯露/現出)',
+        prob_zh: '他終於 *顯露/現出* 了真面目。',
         level: 'N3',
         options: [
             { text: '現{あらわ}れました', reason: '錯誤：那是自動詞(出現)。' },
@@ -1492,7 +1492,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_arawareru_1',
         prob: '太陽{たいよう}が ______。',
-        prob_zh: '太陽 ______ 了。 (出現)',
+        prob_zh: '太陽 *出現* 了。',
         level: 'N3',
         options: [
             { text: '出{で}て', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1508,7 +1508,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_aru_1',
         prob: 'その可能性{かのうせい}は ______。',
-        prob_zh: '那是 ______ 可能性。 (有的)',
+        prob_zh: '那是 *有的* 可能性。',
         level: 'N3',
         options: [
             { text: '有{あ}り', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1524,7 +1524,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_awaseru_1',
         prob: '手{て}を ______ お祈{いの}りする。',
-        prob_zh: ' ______ 手祈禱。 (合起/配合)',
+        prob_zh: '*合起/配合* 手祈禱。',
         level: 'N3',
         options: [
             { text: '合{あ}わせ', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1540,7 +1540,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_awateru_1',
         prob: ' ______ ないで、ゆっくり話{はな}してください。',
-        prob_zh: '請不要 ______，慢慢說。 (慌張/匆忙)',
+        prob_zh: '請不要 *慌張/匆忙*，慢慢說。',
         level: 'N3',
         options: [
             { text: '慌{あわ}てら', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1556,7 +1556,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_mitomeru_2',
         prob: '会議{かいぎ}で案{あん}が ______ られた。',
-        prob_zh: '提案在會議上被 ______ 了。 (認可)',
+        prob_zh: '提案在會議上被 *認可* 了。',
         level: 'N3',
         options: [
             { text: '認{みと}め', reason: '正確！一段受身形詞幹。' },
@@ -1571,7 +1571,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_haku_2',
         prob: '酒{さけ}を飲{の}みすぎて ______ しまった。',
-        prob_zh: '酒喝太多 ______ 了。 (嘔吐)',
+        prob_zh: '酒喝太多 *嘔吐* 了。',
         level: 'N3',
         options: [
             { text: '吐{は}か', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1586,7 +1586,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_tomeru_2',
         prob: '画鋲{がびょう}でポスターを ______。',
-        prob_zh: '用圖釘 ______ 海報。 (固定)',
+        prob_zh: '用圖釘 *固定* 海報。',
         level: 'N3',
         options: [
             { text: '留{と}まる', reason: '錯誤：自動詞。' },
@@ -1601,7 +1601,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_hodoku_2',
         prob: '荷物{にもつ}の紐{ひも}を ______。',
-        prob_zh: ' ______ 行李的繩子。 (解開)',
+        prob_zh: '*解開* 行李的繩子。',
         level: 'N3',
         options: [
             { text: '結{むす}んで', reason: '錯誤：繫上。' },
@@ -1616,7 +1616,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_aisuru_2',
         prob: '彼{かれ}は誰{だれ}からも ______ れている。',
-        prob_zh: '他被所有人 ______ 著。 (愛)',
+        prob_zh: '他被所有人 *愛* 著。',
         level: 'N3',
         options: [
             { text: '愛{あい}しら', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1631,7 +1631,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_akirameru_2',
         prob: ' ______ くらいなら、最初{さいしょ}からやらない。',
-        prob_zh: '與其 ______，不如從一開始就不做。 (放棄)',
+        prob_zh: '與其 *放棄*，不如從一開始就不做。',
         level: 'N3',
         options: [
             { text: '諦{あきら}める', reason: '正確！辭書形修飾くらい。' },
@@ -1646,7 +1646,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_akiru_2',
         prob: '遊{あそ}びに ______ たら帰{かえ}ります。',
-        prob_zh: '玩 ______ 了的話就回家。 (厭倦)',
+        prob_zh: '玩 *厭倦* 了的話就回家。',
         level: 'N3',
         options: [
             { text: '飽{あ}い', reason: '錯誤：變位錯誤。' },
@@ -1661,7 +1661,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_akeru_2',
         prob: '新年{しんねん}あけましておめでとう ______。',
-        prob_zh: '恭賀 ______。 (新春/天亮)',
+        prob_zh: '恭賀 *新春/天亮*。',
         level: 'N3',
         options: [
             { text: 'あります', reason: '錯誤：不合敬語法。' },
@@ -1676,7 +1676,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_ataeru_2',
         prob: '子供{こども}に食物{たべもの}を ______。',
-        prob_zh: ' ______ 小孩食物。 (給予)',
+        prob_zh: '*給予* 小孩食物。',
         level: 'N3',
         options: [
             { text: '食{た}べ', reason: '錯誤：那是吃。' },
@@ -1691,7 +1691,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_ataru_2',
         prob: '日{ひ}の ______ ところに置いてください。',
-        prob_zh: '請放在照得到 ______ 的地方。 (曬到/照射)',
+        prob_zh: '請放在照得到 *曬到/照射* 的地方。',
         level: 'N3',
         options: [
             { text: '当{あ}たり', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1706,7 +1706,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_atsukau_2',
         prob: 'デリケートな問題{もんだい}を ______。',
-        prob_zh: ' ______ 微妙/敏感的問題。 (處理)',
+        prob_zh: '*處理* 微妙/敏感的問題。',
         level: 'N3',
         options: [
             { text: '考{かんが}える', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1721,7 +1721,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_ateru_2',
         prob: 'クイズの答えを ______ みてください。',
-        prob_zh: '請試著 ______ 謎題的答案。 (猜測/對中)',
+        prob_zh: '請試著 *猜測/對中* 謎題的答案。',
         level: 'N3',
         options: [
             { text: '当{あ}たり', reason: '錯誤：自動詞。' },
@@ -1736,7 +1736,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_arasou_2',
         prob: '兄弟{きょうだい}で ______ のはやめなさい。',
-        prob_zh: '快停止兄弟間的 ______。 (爭執)',
+        prob_zh: '快停止兄弟間的 *爭執*。',
         level: 'N3',
         options: [
             { text: '争{あらそ}い', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -1751,7 +1751,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_aratameru_2',
         prob: ' ______ て、また伺{うかが}います。',
-        prob_zh: ' ______ 時間/改日我會再過來。 (重新來過/改日)',
+        prob_zh: '*重新來過/改日* 時間/改日我會再過來。',
         level: 'N3',
         options: [
             { text: '改{あらた}めて', reason: '正確！副詞用法，表示改天或重新。' },
@@ -1766,7 +1766,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_arawasu_3',
         prob: '図{ず}で ______。',
-        prob_zh: '用圖表 ______。 (顯示/表達)',
+        prob_zh: '用圖表 *顯示/表達*。',
         level: 'N3',
         options: [
             { text: '現{あらわ}します', reason: '錯誤：指顯現。' },
@@ -1781,7 +1781,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_arawasu_4',
         prob: '姿{すがた}を ______。',
-        prob_zh: ' ______ 了身姿。 (現出)',
+        prob_zh: '*現出* 了身姿。',
         level: 'N3',
         options: [
             { text: '表{あらわ}しました', reason: '錯誤：漢字用法不同。' },
@@ -1796,7 +1796,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_arawareru_2',
         prob: '顔{かお}に気持{きも}ちが ______ います。',
-        prob_zh: '心情 ______ 在臉上。 (顯露/表露)',
+        prob_zh: '心情 *顯露/表露* 在臉上。',
         level: 'N3',
         options: [
             { text: '書{か}いて', reason: '錯誤：心情不會寫在臉上(用此詞時)。' },
@@ -1811,7 +1811,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_aru_2',
         prob: '経験{けいけん}が ______ 人を採用{さいよう}します。',
-        prob_zh: '採用 ______ 經驗的人。 (有的)',
+        prob_zh: '採用 *有的* 經驗的人。',
         level: 'N3',
         options: [
             { text: 'いらっしゃる', reason: '錯誤：人(敬語)。' },
@@ -1826,7 +1826,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_awaseru_2',
         prob: '力{ちから}を ______ 頑張{がんば}りましょう。',
-        prob_zh: ' ______ 力量一起加油吧。 (合力)',
+        prob_zh: '*合力* 力量一起加油吧。',
         level: 'N3',
         options: [
             { text: '出{だ}して', reason: '錯誤：這是「出力」，語意不符。' },
@@ -1841,7 +1841,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_awateru_2',
         prob: ' ______ て外{そと}に飛{と}び出した。',
-        prob_zh: ' ______ 地跑到了外面。 (慌張/匆忙)',
+        prob_zh: '*慌張/匆忙* 地跑到了外面。',
         level: 'N3',
         options: [
             { text: '慌{あわ}てて', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -2120,7 +2120,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_ureru_2',
         prob: 'A：「あの店{みせ}、いつも行列{ぎょうれつ}ができているね。」\nB：「テレビで紹介{しょうかい}されてから、パンがすごく ______ いるらしいよ。」',
-        prob_zh: 'A：「那家店，總是在排隊呢。」\nB：「自從被電視報導後，麵包似乎賣得 *非常好（暢銷）* 喔。」',
+        prob_zh: 'A：「那家店，總是在排隊呢。」\nB：「自從被電視報導後，麵包似乎賣得 *非常好* 喔。」',
         level: 'N3',
         options: [
             { text: '売{う}って', reason: '錯誤：那是「正在賣」。' },
@@ -2167,7 +2167,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_idaku_1',
         prob: '彼は将来、海外で働くという大きな夢を ______ います。',
-        prob_zh: '他抱持著將來在國外工作的大夢想。',
+        prob_zh: '他 *抱持* 著將來在國外工作的大夢想。',
         level: 'N3',
         options: [
             { text: '抱{いだ}いて', reason: '正確！五段他動詞。常用於抱持理想、夢想或情感。' },
@@ -2275,7 +2275,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_ubau_2',
         prob: 'A：「あの映画、どうだった？」\nB：「映像がとてもきれいで、心を ______ れたよ。」',
-        prob_zh: 'A：「那部電影怎麼樣？」\nB：「畫面非常美，心都被 *奪走*（迷住）了喔。」',
+        prob_zh: 'A：「那部電影怎麼樣？」\nB：「畫面非常美，心都被 *奪走*了喔。」',
         level: 'N3',
         options: [
             { text: '奪{うば}い', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3205,7 +3205,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kizuku_2',
         prob: 'A：「あ、髪切った？」\nB：「よく ______ ね。3センチだけ切ったんだよ。」',
-        prob_zh: 'A：「啊，剪頭髮了嗎？」\nB：「你真敏銳（*注意到了*）呢。只剪了3公分喔。」',
+        prob_zh: 'A：「啊，剪頭髮了嗎？」\nB：「你真敏銳，*注意到了*呢。只剪了3公分喔。」',
         level: 'N3',
         options: [
             { text: '知{し}った', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3236,7 +3236,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kiniiru_2',
         prob: 'A：「新しいマンションはどう？」\nB：「すごく ______ よ。特にキッチンが使いやすくて満足してる。」',
-        prob_zh: 'A：「新的公寓怎麼樣？」\nB：「非常 *滿意（中意）* 喔。特別是廚房很好用，我很滿意。」',
+        prob_zh: 'A：「新的公寓怎麼樣？」\nB：「非常 *滿意* 喔。特別是廚房很好用，我很滿意。」',
         level: 'N3',
         options: [
             { text: '楽{たの}しい', reason: '錯誤：那是開心。' },
@@ -3267,7 +3267,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kirau_2',
         prob: 'A：「田中さんと一緒に仕事、どう？」\nB：「彼は曲がったことが大嫌いで、妥協を ______ んだ。」',
-        prob_zh: 'A：「和田中先生一起工作怎麼樣？」\nB：「他最討厭不正當的事情，非常 *反感（不屑）* 妥協。」',
+        prob_zh: 'A：「和田中先生一起工作怎麼樣？」\nB：「他最討厭不正當的事情，非常 *反感* 妥協。」',
         level: 'N3',
         options: [
             { text: '許{ゆる}す', reason: '錯誤：那是允許。' },
@@ -3314,7 +3314,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kuu_1',
         prob: '「腹減ったな。何か ______ に行こうぜ。」',
-        prob_zh: '「肚子餓了。我們去 *吃* 點什麼吧。」(男性/非正式口語)',
+        prob_zh: '「肚子餓了。我們去 *吃* 點什麼吧。」',
         level: 'N3',
         options: [
             { text: '飲{の}み', reason: '錯誤：那是喝。' },
@@ -3360,7 +3360,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kusaru_2',
         prob: 'A：「田中さん、どうしてあんなに落ち込んでるの？」\nB：「失敗を叱られて、気持ちが ______ いるみたいだよ。」',
-        prob_zh: 'A：「田中先生為什麼那麼沮喪？」\nB：「似乎是因為被責備失敗，心情 *悶悶不樂（消沉）* 呢。」',
+        prob_zh: 'A：「田中先生為什麼那麼沮喪？」\nB：「似乎是因為被責備失敗，心情 *悶悶不樂* 呢。」',
         level: 'N3',
         options: [
             { text: '腐{くさ}って', reason: '正確！「気持ちが腐る」可用於描述心情消沉或自暴自棄。' },
@@ -3376,7 +3376,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kudasaru_1',
         prob: '先生が貴重な資料を貸して ______ ました。',
-        prob_zh: '老師 *給(位尊者給予)* 了我珍貴的資料。',
+        prob_zh: '老師 *給* 了我珍貴的資料。',
         level: 'N3',
         options: [
             { text: 'くれ', reason: '錯誤：這是「標準口語」，語意不符。' },
@@ -3407,7 +3407,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kumu_1',
         prob: '今回のプロジェクトでは、他社と手を ______ ことになりました。',
-        prob_zh: '在這次的專案中，決定要與他家公司 *攜手（合作）*。',
+        prob_zh: '在這次的專案中，決定要與他家公司 *攜手*。',
         level: 'N3',
         options: [
             { text: '作{つく}る', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3453,7 +3453,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kurasu_2',
         prob: 'A：「一人暮らしはどう？」\nB：「最初は不安だったけど、今は楽しく ______ いるよ。」',
-        prob_zh: 'A：「一個人生活怎麼樣？」\nB：「起初很不安，但現在過得很 *開心（生活得很愉快）* 喔。」',
+        prob_zh: 'A：「一個人生活怎麼樣？」\nB：「起初很不安，但現在過得很 *開心* 喔。」',
         level: 'N3',
         options: [
             { text: '暮{く}らして', reason: '正確！常用於描述生活的具體狀態（開心與否等）。' },
@@ -3500,7 +3500,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kurua_1',
         prob: '台風のせいで、旅行の予定が ______ しまった。',
-        prob_zh: '多虧...不，因為颱風的緣故，旅行的計畫 *被打亂（出錯）* 了。',
+        prob_zh: '多虧...不，因為颱風的緣故，旅行的計畫 *被打亂* 了。',
         level: 'N3',
         options: [
             { text: '狂{くる}って', reason: '正確！五段自動詞。表示發瘋、失常、計畫出錯。' },
@@ -3546,7 +3546,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kurishimu_2',
         prob: 'A：「今回の大会、どうだった？」\nB：「強い相手に ______ ましたが、なんとか勝つことができました。」',
-        prob_zh: 'A：「這次的大會怎麼樣？」\nB：「雖然為強大的對手所 *苦（陷入苦戰）*，但總算還是贏了。」',
+        prob_zh: 'A：「這次的大會怎麼樣？」\nB：「雖然為強大的對手所 *苦*，但總算還是贏了。」',
         level: 'N3',
         options: [
             { text: '苦{くる}しみ', reason: '正確！用於描述在困難環境或競爭中的艱辛。' },
@@ -3608,7 +3608,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kuwawaru_2',
         prob: 'A：「外は寒そうだね。」\nB：「ええ。夕方から雨も ______ きたから、もっと冷え込むよ。」',
-        prob_zh: 'A：「外面看起來很冷呢。」\nB：「是啊。從傍晚開始連雨也 *加上（跟著下）* 進來了，會變得更冷喔。」',
+        prob_zh: 'A：「外面看起來很冷呢。」\nB：「是啊。從傍晚開始連雨也 *加上* 進來了，會變得更冷喔。」',
         level: 'N3',
         options: [
             { text: '混{ま}ざって', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3670,7 +3670,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kooru_2',
         prob: 'A：「今の怖い話、聞いた？」\nB：「ええ。あまりの恐怖に体まで ______ しまったよ。」',
-        prob_zh: 'A：「剛才那個恐怖故事聽到了嗎？」\nB：「嗯。因為太過恐懼，連身體都 *凍住了（僵住了）* 喔。」',
+        prob_zh: 'A：「剛才那個恐怖故事聽到了嗎？」\nB：「嗯。因為太過恐懼，連身體都 *凍住了* 喔。」',
         level: 'N3',
         options: [
             { text: '震{ふる}えて', reason: '錯誤：這是「發抖」，語意不符。' },
@@ -3686,7 +3686,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kosu_1',
         prob: '仕事の都合で、来月アメリカへ引っ ______ ことになりました。',
-        prob_zh: '因為工作關係，決定下個月要 *搬（到）* 美國。',
+        prob_zh: '因為工作關係，決定下個月要 *搬* 美國。',
         level: 'N3',
         options: [
             { text: '越{こ}す', reason: '正確！五段自動詞。常用於在「引っ越す」複合動詞中表示搬家。' },
@@ -3701,7 +3701,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_kosu_2',
         prob: 'A：「社長はいらっしゃいますか？」\nB：「はい。まもなくこちらへお ______ になる予定です。」',
-        prob_zh: 'A：「社長在嗎？」\nB：「是的。他預計等一下就會 *過來（尊稱）* 這裡。」',
+        prob_zh: 'A：「社長在嗎？」\nB：「是的。他預計等一下就會 *過來* 這裡。」',
         level: 'N3',
         options: [
             { text: 'お越{こ}し', reason: '正確！「お越しになる」是「来る」的尊敬語。' },
@@ -3763,7 +3763,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_konomu_2',
         prob: 'A：「どんなデザインが人気なの？」\nB：「最近は、シンプルで機能的なものが一般に ______ れています。」',
-        prob_zh: 'A：「什麼樣的設計受歡迎？」\nB：「最近，簡單且具功能性的東西普遍地 *受人喜愛（被偏好）*。」',
+        prob_zh: 'A：「什麼樣的設計受歡迎？」\nB：「最近，簡單且具功能性的東西普遍地 *受人喜愛*。」',
         level: 'N3',
         options: [
             { text: '好{この}ま', reason: '正確！受動態連用形。描述一般大眾的喜好趨勢。' },
@@ -3918,7 +3918,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_sakeru_2',
         prob: 'A：「田中さん、最近目を見てくれないね。」\nB：「ええ。なんだか私を ______ いるみたいで悲しいわ。」',
-        prob_zh: 'A：「田中先生最近都不看(我)眼睛呢。」\nB：「是啊。總覺得他似乎在 *躲避* 我，很令人難過。」',
+        prob_zh: 'A：「田中先生最近都不看眼睛呢。」\nB：「是啊。總覺得他似乎在 *躲避* 我，很令人難過。」',
         level: 'N3',
         options: [
             { text: '捨てて', reason: '錯誤：那是拋棄。' },
@@ -3980,7 +3980,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_gen_sasu_2',
         prob: 'A：「『これ』って何のこと？」\nB：「前の文章に出てきた『新しい計画』を ______ いるんだよ。」',
-        prob_zh: 'A：「『這(個)』是指什麼？」\nB：「是 *指* 前面文章中出現的『新計畫』喔。」',
+        prob_zh: 'A：「『這』是指什麼？」\nB：「是 *指* 前面文章中出現的『新計畫』喔。」',
         level: 'N3',
         options: [
             { text: '書{か}いて', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -3998,7 +3998,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_oeru_1',
         prob: '今の仕事を ______ から、休憩しましょう。',
-        prob_zh: ' *做完* 現在的工作後，休息一下吧。',
+        prob_zh: '*做完* 現在的工作後，休息一下吧。',
         level: 'N3',
         options: [
             { text: '終{お}えて', reason: '正確！一段他動詞。表示把某事做完。' },
@@ -4044,7 +4044,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_oboreru_2',
         prob: 'ギャンブルに ______ 借金を作ってしまった。',
-        prob_zh: ' *沉迷* 於賭博而欠了債。',
+        prob_zh: '*沉迷* 於賭博而欠了債。',
         level: 'N3',
         options: [
             { text: '遊{あそ}んで', reason: '錯誤：這是「玩」，語氣太輕。' },
@@ -4060,7 +4060,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_oyobosu_1',
         prob: 'タバコは健康に害を ______。',
-        prob_zh: '香菸會對健康 *造成(波及)* 危害。',
+        prob_zh: '香菸會對健康 *造成* 危害。',
         level: 'N3',
         options: [
             { text: '加{くわ}えます', reason: '錯誤：這是「增加/施加」，語意略有不同。' },
@@ -4106,7 +4106,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_kudasu_2',
         prob: '腹を ______ しまって、トイレから出られない。',
-        prob_zh: ' *拉* 肚子，出不了廁所。',
+        prob_zh: '*拉* 肚子，出不了廁所。',
         level: 'N3',
         options: [
             { text: '痛{いた}めて', reason: '錯誤：這是「炒/弄痛」。' },
@@ -4184,7 +4184,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_kaeru_replace_1',
         prob: '汚れた服を ______。',
-        prob_zh: ' *更換* 髒掉的衣服。',
+        prob_zh: '*更換* 髒掉的衣服。',
         level: 'N3',
         options: [
             { text: '替{か}える', reason: '正確！一段他動詞。同類物品的替換及更新。' },
@@ -4230,7 +4230,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_kaeru_exchange_2',
         prob: '窓を開けて空気を ______。',
-        prob_zh: '開窗 *更換(流通)* 空氣。',
+        prob_zh: '開窗 *更換* 空氣。',
         level: 'N3',
         options: [
             { text: '入{はい}り換{か}える', reason: '錯誤：複合語法錯誤。' },
@@ -4261,7 +4261,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_kawaru_replace_2',
         prob: 'A：「運転、疲れたでしょう。」\nB：「うん、少し ______ くれる？」',
-        prob_zh: 'A：「開車累了吧。」\nB：「嗯，能稍微 *換手(代替)* 一下嗎？」',
+        prob_zh: 'A：「開車累了吧。」\nB：「嗯，能稍微 *換手* 一下嗎？」',
         level: 'N3',
         options: [
             { text: '換{か}わって', reason: '錯誤：文法正確但語意或時態不符。' },
@@ -4294,7 +4294,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_omenikakaru_2',
         prob: 'A：「田中社長をご存知ですか？」\nB：「いいえ、まだ ______ ことがありません。」',
-        prob_zh: 'A：「您認識田中社長嗎？」\nB：「不，還沒有 *拜見(見過)*。」',
+        prob_zh: 'A：「您認識田中社長嗎？」\nB：「不，還沒有 *拜見*。」',
         level: 'N3',
         options: [
             { text: 'ご覧{らん}になった', reason: '錯誤：這是尊敬語(對方看)，主語是我(沒見過社長)，故錯誤。' },
@@ -4310,7 +4310,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_samasu_1',
         prob: '朝、コーヒーを飲んで目を ______。',
-        prob_zh: '早上喝咖啡 *弄醒(提神)* 腦子(眼睛)。',
+        prob_zh: '早上喝咖啡 *弄醒* 腦子。',
         level: 'N3',
         options: [
             { text: '覚{さ}まします', reason: '正確！五段他動詞。使...醒來、弄醒。' },
@@ -4356,7 +4356,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_sameru_2',
         prob: '百年の恋も一時に ______。',
-        prob_zh: '百年的戀情也可能一時 *冷卻(幻滅)*。',
+        prob_zh: '百年的戀情也可能一時 *冷卻*。',
         level: 'N3',
         options: [
             { text: '止{や}める', reason: '錯誤：這是「停止」。' },
@@ -4387,7 +4387,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_saru_2',
         prob: '世を ______。',
-        prob_zh: ' *逝* 世 (離開人世)。',
+        prob_zh: '*逝* 世 。',
         level: 'N3',
         options: [
             { text: '行{い}く', reason: '錯誤：單獨用「行く」無此意。' },
@@ -4449,7 +4449,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_shizumu_2',
         prob: '太陽が西に ______。',
-        prob_zh: '太陽向西 *沉(落)* 下。',
+        prob_zh: '太陽向西 *沉* 下。',
         level: 'N3',
         options: [
             { text: '沈{しず}む', reason: '正確！日落也用此字。' },
@@ -4465,7 +4465,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_shitagau_1',
         prob: 'ルールに ______ ください。',
-        prob_zh: '請 *遵守(遵從)* 規則。',
+        prob_zh: '請 *遵守* 規則。',
         level: 'N3',
         options: [
             { text: '外{はず}れて', reason: '錯誤：這是「脫離/違背」。' },
@@ -4480,7 +4480,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_shitagau_2',
         prob: '案内に ______ 進んでください。',
-        prob_zh: '請 *跟隨* 指南(引導)前進。',
+        prob_zh: '請 *跟隨* 指南前進。',
         level: 'N3',
         options: [
             { text: '伴{ともな}って', reason: '錯誤：這是「伴隨/發生」，較少用於跟隨物理引導。' },
@@ -4527,7 +4527,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_shimau_1',
         prob: '大切な書類を金庫に ______。',
-        prob_zh: '把重要的文件 *收進(保管)* 金庫裡。',
+        prob_zh: '把重要的文件 *收進* 金庫裡。',
         level: 'N3',
         options: [
             { text: '入{い}れた', reason: '錯誤：雖然語意相近，但「しまう」強調收拾妥當意味，更貼切於放入金庫保管。' },
@@ -4542,7 +4542,7 @@ export const n3Questions: StaticQuestion[] = [
     {
         id: 'n3_v1399_shimau_2',
         prob: '夏服を ______、冬服を出した。',
-        prob_zh: ' *收起* 夏裝，拿出了冬裝。',
+        prob_zh: '*收起* 夏裝，拿出了冬裝。',
         level: 'N3',
         options: [
             { text: 'しまって', reason: '正確！' },
