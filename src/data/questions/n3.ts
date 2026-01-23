@@ -4580,7 +4580,2581 @@ export const n3Questions: StaticQuestion[] = [
         correctIndex: 2,
         tag: 'passive',
         correctRule: '【考點】受身形活用\n【解析】被責怪說不負責任。 \n【活用】一段動詞受身變位。\n【延伸】相關詞/混淆項：責ま、怒ら、攻め'
+    },
+    // --- SOP Expanded N3 Batch 10 (Part 1) ---
+    // 1. 注ぐ (Sosogu)
+    {
+        id: 'n3_v1399_sosogu_1',
+        prob: 'コップに水{みず}を ______。',
+        prob_zh: '往杯子裡 *倒* 水。',
+        level: 'N3',
+        options: [
+            { text: '注{そそ}ぎます', reason: '正確！五段動詞ます形。' },
+            { text: '注{そそ}ぐ', reason: '錯誤：辭書形不接句尾語氣。' },
+            { text: '注{そそ}いで', reason: '錯誤：接續錯誤。' },
+            { text: '流{なが}します', reason: '錯誤：那是「流動/沖洗」。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「注ぐ」(sosogu) ます形。'
+    },
+    {
+        id: 'n3_v1399_sosogu_2',
+        prob: '愛情{あいじょう}を ______ 育{そだ}てる。',
+        prob_zh: '*傾注* 愛情撫養長大。',
+        level: 'N3',
+        options: [
+            { text: '注{そそ}が', reason: '錯誤：否定形。' },
+            { text: '注{そそ}いで', reason: '正確！五段動詞 i 音便 (gu 變 ide)。' },
+            { text: '注{そそ}ぎ', reason: '錯誤：連用形。' },
+            { text: '注{そそ}き', reason: '錯誤：濁音丟失。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞「注ぐ」(sosogu) 的 te 形是「注いで」(sosoyide)。'
+    },
+    // 2. 育つ (Sodatsu)
+    {
+        id: 'n3_v1399_sodatsu_1',
+        prob: '子供{こども}が健{すこ}やかに ______。',
+        prob_zh: '孩子健康地 *成長*。',
+        level: 'N3',
+        options: [
+            { text: '育{そだ}て', reason: '錯誤：他動詞。' },
+            { text: '育{そだ}ちます', reason: '正確！五段自動詞。' },
+            { text: '育{そだ}つます', reason: '錯誤：文法錯誤。' },
+            { text: '育{そだ}てます', reason: '錯誤：他動詞(撫養)。' }],
+        correctIndex: 1,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「育つ」(自動詞，成長) 與 「育てる」(他動詞，撫養)。助詞「が」選自動詞。'
+    },
+    {
+        id: 'n3_v1399_sodatsu_2',
+        prob: 'この木{き}は南国{なんごく}で ______。',
+        prob_zh: '這棵樹在南方 *生長*。',
+        level: 'N3',
+        options: [
+            { text: '育{そだ}って', reason: '正確！五段動詞促音便。' },
+            { text: '育{そだ}ち', reason: '錯誤：連用形。' },
+            { text: '育{そだ}て', reason: '錯誤：他動詞。' },
+            { text: '育{そだ}いた', reason: '錯誤：音便錯誤。' }],
+        correctIndex: 0,
+        tag: 'teiru',
+        correctRule: '【音便】五段動詞 tsu 結尾變 tte。'
+    },
+    // 3. 備える (Sonaeru)
+    {
+        id: 'n3_v1399_sonaeru_1',
+        prob: '地震{じしん}に ______。',
+        prob_zh: '為地震做 *準備*。',
+        level: 'N3',
+        options: [
+            { text: '備{そな}えます', reason: '正確！一段動詞。' },
+            { text: '備{そな}る', reason: '錯誤：誤認五段。' },
+            { text: '備{そな}ら', reason: '錯誤：文法錯誤。' },
+            { text: '備{そな}え', reason: '錯誤：連用形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞「備える」(sonaeru)。'
+    },
+    {
+        id: 'n3_v1399_sonaeru_2',
+        prob: '万一{まんいち}の事態{じたい}に ______ おく。',
+        prob_zh: '為萬一的事態先 *預備* 好。',
+        level: 'N3',
+        options: [
+            { text: '備{そな}え', reason: '正確！一段動詞 te 形 (去 ru 加 te)。' },
+            { text: '備{そな}えて', reason: '正確！一段動詞 te 形 (去 ru 加 te)。' },
+            { text: '備{そな}り', reason: '錯誤：誤認五段。' },
+            { text: '備{そな}っ', reason: '錯誤：音便不適用於一段。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 4. 確かめる (Tashikameru)
+    {
+        id: 'n3_v1399_tashikameru_1',
+        prob: '事実{じじつ}を ______ ください。',
+        prob_zh: '請 *確認* 事實。',
+        level: 'N3',
+        options: [
+            { text: '確{たしか}めて', reason: '正確！一段動詞 te 形。' },
+            { text: '確{たしか}め', reason: '錯誤：連用形。' },
+            { text: '確{たしか}めな', reason: '錯誤：否定。' },
+            { text: '確{たしか}めっ', reason: '錯誤：音便。' }],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    {
+        id: 'n3_v1399_tashikameru_2',
+        prob: 'もう一度{いちど} ______ ほうがいい。',
+        prob_zh: '還是再 *確認* 一次比較好。',
+        level: 'N3',
+        options: [
+            { text: '確{たしか}める', reason: '錯誤：建議用語接た形。' },
+            { text: '確{たしか}め', reason: '錯誤：連用。' },
+            { text: '確{たしか}めた', reason: '正確！一段動詞過去式。' },
+            { text: '確{たしか}め', reason: '錯誤：重複項。' }],
+        correctIndex: 2,
+        tag: 'grammar',
+        correctRule: '【文法】「～たほうがいい」接動詞過去式。'
+    },
+    // 5. 助ける (Tasukeru)
+    {
+        id: 'n3_v1399_tasukeru_1',
+        prob: '困{こま}っている人を ______。',
+        prob_zh: '*幫助* 困境中的人。',
+        level: 'N3',
+        options: [
+            { text: '助{たす}けます', reason: '正確！一段他動詞。' },
+            { text: '助{たす}かり', reason: '錯誤：自動詞(獲救)。' },
+            { text: '助{たす}け', reason: '錯誤：連用形。' },
+            { text: '助{たす}ける', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「助ける」(他動詞，救/幫) 與 「助かる」(自動詞，獲救)。'
+    },
+    {
+        id: 'n3_v1399_tasukeru_2',
+        prob: '命{いのち}を ______ ました。',
+        prob_zh: '*救* 了一命。',
+        level: 'N3',
+        options: [
+            { text: '助{たす}け', reason: '正確！一段動詞連用形。' },
+            { text: '助{たす}かり', reason: '錯誤：自動詞。' },
+            { text: '助{たす}か', reason: '錯誤：未然。' },
+            { text: '助{たす}けな', reason: '錯誤：否定。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞去「る」加「ました」。'
+    },
+    // 6. 戦う (Tatakau)
+    {
+        id: 'n3_v1399_tatakau_1',
+        prob: '最後{さいご}まで ______。',
+        prob_zh: '*戰鬥* 到最後。',
+        level: 'N3',
+        options: [
+            { text: '戦{たたか}う', reason: '正確！辭書形。' },
+            { text: '戦{たたか}い', reason: '錯誤：連用形。' },
+            { text: '戦{たたか}わ', reason: '錯誤：否定。' },
+            { text: '戦{たたか}え', reason: '錯誤：命令。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【活用】五段動詞「戦う」(tatakau)。'
+    },
+    {
+        id: 'n3_v1399_tatakau_2',
+        prob: '病気{びょうき}と ______ います。',
+        prob_zh: '正在與疾病 *搏鬥*。',
+        level: 'N3',
+        options: [
+            { text: '戦{たたか}い', reason: '錯誤：連用形。' },
+            { text: '戦{たたか}って', reason: '正確！五段動詞促音便。' },
+            { text: '戦{たたか}いて', reason: '錯誤：音便錯誤。' },
+            { text: '戦{たたか}わ', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'teiru',
+        correctRule: '【音便】五段動詞 u 結尾變 tte。'
+    },
+    // 7. 叩く (Tataku)
+    {
+        id: 'n3_v1399_tataku_1',
+        prob: 'ドアを ______。',
+        prob_zh: '*敲* 門。',
+        level: 'N3',
+        options: [
+            { text: '叩{たた}きます', reason: '正確！五段動詞ます形。' },
+            { text: '叩{たた}いて', reason: '錯誤：接續錯誤。' },
+            { text: '叩{たた}くます', reason: '錯誤：文法錯誤。' },
+            { text: '叩{たた}け', reason: '錯誤：命令。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「叩く」(tataku) ます形。'
+    },
+    {
+        id: 'n3_v1399_tataku_2',
+        prob: '手{て}を ______ 笑{わら}う。',
+        prob_zh: '*拍* 手大笑。',
+        level: 'N3',
+        options: [
+            { text: '叩{たた}か', reason: '錯誤：否定。' },
+            { text: '叩{たた}いて', reason: '正確！五段動詞 i 音便 (ku 變 ite)。' },
+            { text: '叩{たた}き', reason: '錯誤：連用。' },
+            { text: '叩{たた}っ', reason: '錯誤：促音便不適用於 ku 結尾。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【音便】五段動詞 ku 結尾變 ite。'
+    },
+    // 8. 立ち上がる (Tachiagaru)
+    {
+        id: 'n3_v1399_tachiagaru_1',
+        prob: '椅子{いす}から ______。',
+        prob_zh: '從椅子上 *站起來*。',
+        level: 'N3',
+        options: [
+            { text: '立{た}ち上{あ}が', reason: '錯誤：未然。' },
+            { text: '立{た}ち上{あ}がります', reason: '正確！五段複合動詞。' },
+            { text: '立{た}ち上{あ}げます', reason: '錯誤：他動詞(啟動)。' },
+            { text: '立{た}ち上{あ}がって', reason: '錯誤：接續。' }],
+        correctIndex: 1,
+        tag: 'conjugation',
+        correctRule: '【活用】五段複合動詞「立ち上がる」ます形。'
+    },
+    {
+        id: 'n3_v1399_tachiagaru_2',
+        prob: '急{いそ}いで ______。',
+        prob_zh: '急忙 *站了起來*。',
+        level: 'N3',
+        options: [
+            { text: '立{た}ち上{あ}がった', reason: '正確！五段動詞過去式促音便。' },
+            { text: '立{た}ち上{あ}がっ', reason: '錯誤：未完成。' },
+            { text: '立{た}ち上{あ}がり', reason: '錯誤：連用。' },
+            { text: '立{た}ち上{あ}げた', reason: '錯誤：他動詞。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞 ru 結尾變 tta。'
+    },
+    // 9. 経つ (Tatsu)
+    {
+        id: 'n3_v1399_tatsu_1',
+        prob: '10年{じゅうねん} ______。',
+        prob_zh: '10年 *過去* 了。',
+        level: 'N3',
+        options: [
+            { text: '経{た}ちました', reason: '正確！五段動詞。表示時間流逝。' },
+            { text: '立{た}ちました', reason: '錯誤：那是「站立」。' },
+            { text: '経{た}てました', reason: '錯誤：可能。' },
+            { text: '流{なが}れました', reason: '雖通順但「経つ」更多用於具體時間量。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【活用】五段動詞「経つ」(tatsu)。專指時間流逝。'
+    },
+    {
+        id: 'n3_v1399_tatsu_2',
+        prob: '時{とき}が ______ のは早{はや}い。',
+        prob_zh: '時光 *流逝* 得真快。',
+        level: 'N3',
+        options: [
+            { text: '経{た}ち', reason: '錯誤：連用。' },
+            { text: '経{た}わ', reason: '錯誤：活用。' },
+            { text: '経{た}つ', reason: '正確！辭書形接名詞句。' },
+            { text: '経{た}て', reason: '錯誤：可能。' }],
+        correctIndex: 2,
+        tag: 'grammar',
+        correctRule: '【活用】五段動詞「経つ」。'
+    },
+    // 10. 黙る (Damaru)
+    {
+        id: 'n3_v1399_damaru_1',
+        prob: '静{しず}かに ______。',
+        prob_zh: '安靜地 *沉默*。',
+        level: 'N3',
+        options: [
+            { text: '黙{だま}りなさい', reason: '正確！命令語氣。' },
+            { text: '黙{だま}ります', reason: '正確！五段動詞。' },
+            { text: '黙{だま}って', reason: '錯誤：接續。' },
+            { text: '静{しず}かする', reason: '錯誤：文法錯誤。' }],
+        correctIndex: 1,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「黙る」(damaru) ます形。'
+    },
+    {
+        id: 'n3_v1399_damaru_2',
+        prob: ' ______ いてはいけない。',
+        prob_zh: '不能一直 *沉默* 下去。',
+        level: 'N3',
+        options: [
+            { text: '黙{だま}っ', reason: '正確！五段促音便。' },
+            { text: '黙{だま}ら', reason: '錯誤：否定。' },
+            { text: '黙{だま}り', reason: '錯誤：連用。' },
+            { text: '黙{だま}れ', reason: '錯誤：命令。' }],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 ru 結尾變 tte。'
+    },
+    // 11. 試す (Tamesu)
+    {
+        id: 'n3_v1399_tamesu_1',
+        prob: '新製品{しんせいひん}を ______。',
+        prob_zh: '*試用* 新產品。',
+        level: 'N3',
+        options: [
+            { text: '試{ため}します', reason: '正確！五段動詞ます形。' },
+            { text: '試{ため}す', reason: '錯誤：辭書形。' },
+            { text: '試{ため}して', reason: '錯誤：接續。' },
+            { text: '使{つか}います', reason: '錯誤：那是「使用」。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「試す」(tamesu)。'
+    },
+    {
+        id: 'n3_v1399_tamesu_2',
+        prob: '実力{じつりょく}を ______ いい機会{きかい}だ。',
+        prob_zh: '是個 *試試* 實力的好機會。',
+        level: 'N3',
+        options: [
+            { text: '試{ため}さ', reason: '錯誤：否定。' },
+            { text: '試{ため}す', reason: '正確！辭書形接名詞。' },
+            { text: '試{ため}し', reason: '錯誤：連用。' },
+            { text: '試{ため}せ', reason: '錯誤：命令。' }],
+        correctIndex: 1,
+        tag: 'grammar',
+        correctRule: '【活用】五段動詞「試す」。'
+    },
+    // 12. 掴む (Tsukamu)
+    {
+        id: 'n3_v1399_tsukamu_1',
+        prob: 'チャンスを ______。',
+        prob_zh: '*抓住* 機會。',
+        level: 'N3',
+        options: [
+            { text: '掴{つか}みます', reason: '正確！五段動詞。' },
+            { text: '掴{つか}み', reason: '錯誤：連用。' },
+            { text: '取{と}ります', reason: '錯誤：語氣較弱。' },
+            { text: '掴{つか}ま', reason: '錯誤：否定。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【活用】五段動詞「掴む」(tsukamu)。常用於抽象或具體的抓取。'
+    },
+    {
+        id: 'n3_v1399_tsukamu_2',
+        prob: '特徴{とくちょう}を ______ 描{え}がく。',
+        prob_zh: '*捉住* 特徵描繪。',
+        level: 'N3',
+        options: [
+            { text: '掴{つか}み', reason: '錯誤：連用。' },
+            { text: '掴{つか}んで', reason: '正確！五段動詞撥音便 (mu 變 nde)。' },
+            { text: '掴{つか}み', reason: '錯誤：連用。' },
+            { text: '掴{つか}ま', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【音便】五段動詞 mu 結尾變 nde。'
+    },
+    // 13. 就く (Tsuku)
+    {
+        id: 'n3_v1399_tsuku_1',
+        prob: '教職{きょうしょく}に ______。',
+        prob_zh: '*從事* 教職。',
+        level: 'N3',
+        options: [
+            { text: '就{つ}きます', reason: '正確！五段動詞。常用於就任、從事某職位。' },
+            { text: '付{つ}きます', reason: '錯誤：那是「附屬/跟隨」。' },
+            { text: '仕事{しごと}する', reason: '錯誤：文法正確但語意不同。' },
+            { text: '就{つ}き', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【活用】五段動詞「就く」(tsuku)。表示就職、就任。'
+    },
+    {
+        id: 'n3_v1399_tsuku_2',
+        prob: '眠{ねむ}りに ______。',
+        prob_zh: '*進入* 夢鄉。',
+        level: 'N3',
+        options: [
+            { text: '就{つ}い', reason: '正確！五段 i 音便 (ku 變 ite)。' },
+            { text: '就{つ}いた', reason: '正確！五段 i 音便過去式。' },
+            { text: '付{つ}いた', reason: '錯誤：漢字選錯。' },
+            { text: '寝{ね}た', reason: '語意通但「眠りに就く」是固定搭配。' }],
+        correctIndex: 1,
+        tag: 'vocab',
+        correctRule: '【活用】五段動詞「就く」。固定搭配「眠りに就く」。'
+    },
+    // 14. 詰める (Tsumeru)
+    {
+        id: 'n3_v1399_tsumeru_1',
+        prob: 'かばんに服{ふく}を ______。',
+        prob_zh: '往包包裡 *塞* 衣服。',
+        level: 'N3',
+        options: [
+            { text: '詰{つ}めます', reason: '正確！一段動詞。' },
+            { text: '詰{つ}み', reason: '錯誤：誤認五段。' },
+            { text: '詰{つ}め', reason: '錯誤：連用。' },
+            { text: '入{い}れます', reason: '雖通順但「詰める」強調塞滿。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞「詰める」(tsumeru)。'
+    },
+    {
+        id: 'n3_v1399_tsumeru_2',
+        prob: '間隔{かんかく}を ______ ください。',
+        prob_zh: '請 *縮小* 間隔。',
+        level: 'N3',
+        options: [
+            { text: '詰{つ}める', reason: '錯誤：辭書形。' },
+            { text: '詰{つ}めて', reason: '正確！一段動詞 te 形 (去 ru 加 te)。' },
+            { text: '詰{つ}め', reason: '錯誤：連用。' },
+            { text: '狭{せま}く', reason: '錯誤：接續錯誤。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 15. 積もる (Tsumoru)
+    {
+        id: 'n3_v1399_tsumoru_1',
+        prob: '雪{ゆき}が ______。',
+        prob_zh: '積雪。',
+        level: 'N3',
+        options: [
+            { text: '積{つ}もります', reason: '正確！五段自動詞。' },
+            { text: '積{つ}みます', reason: '錯誤：那是人去堆積(他動詞)。' },
+            { text: '積{つ}も', reason: '錯誤：未然。' },
+            { text: '流{なが}れます', reason: '錯誤：那是「流動」。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「積もる」(自動詞，堆積) 與 「積む」(他動詞，堆放)。'
+    },
+    {
+        id: 'n3_v1399_tsumoru_2',
+        prob: 'ほこりが ______ います。',
+        prob_zh: '落滿了灰塵。',
+        level: 'N3',
+        options: [
+            { text: '積{つ}も', reason: '錯誤：連用。' },
+            { text: '積{つ}もって', reason: '正確！五段促音便。' },
+            { text: '積{つ}んで', reason: '錯誤：他動詞撥音便。' },
+            { text: '積{つ}もり', reason: '錯誤：接續錯誤。' }],
+        correctIndex: 1,
+        tag: 'teiru',
+        correctRule: '【音便】五段動詞 ru 結尾變 tte。'
+    },
+    // 16. 出会う (Deau)
+    {
+        id: 'n3_v1399_deau_1',
+        prob: '偶然{ぐうぜん} ______。',
+        prob_zh: '偶然 *遇見*。',
+        level: 'N3',
+        options: [
+            { text: '出{で}会{あ}います', reason: '正確！五段動詞。指偶然相遇。' },
+            { text: '会{あ}います', reason: '雖通順但「出会う」強調偶然性。' },
+            { text: '出会{あ}い', reason: '錯誤：連用。' },
+            { text: '出{で}会{あ}う', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【活用】五段動詞「出会う」(deau)。'
+    },
+    {
+        id: 'n3_v1399_deau_2',
+        prob: 'いい本{ほん}に ______。',
+        prob_zh: '*遇到了* 一本好書。',
+        level: 'N3',
+        options: [
+            { text: '出{で}会{あ}い', reason: '錯誤：連用。' },
+            { text: '出{で}会{あ}った', reason: '正確！五段過去式促音便。' },
+            { text: '見{み}た', reason: '錯誤：那是「看」。' },
+            { text: '出{で}会{あ}え', reason: '錯誤：可能。' }],
+        correctIndex: 1,
+        tag: 'vocab',
+        correctRule: '【活用】五段動詞 u 結尾變 tta。'
+    },
+    // 17. 適する (Tekisuru)
+    {
+        id: 'n3_v1399_tekisuru_1',
+        prob: 'この仕事{しごと}に ______。',
+        prob_zh: '*適合* 這份工作。',
+        level: 'N3',
+        options: [
+            { text: '適{てき}します', reason: '正確！サ行變格動詞(或視為五段)。' },
+            { text: '適{てき}する', reason: '錯誤：辭書形。' },
+            { text: '適{てき}し', reason: '錯誤：連用。' },
+            { text: '合{あ}います', reason: '雖通順但「適する」更正式。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】サ行變格動詞「適する」(tekisuru)。'
+    },
+    {
+        id: 'n3_v1399_tekisuru_2',
+        prob: '栽培{さいばい}に ______ 地{ち}。',
+        prob_zh: '*適合* 栽培的土地。',
+        level: 'N3',
+        options: [
+            { text: '適{てき}した', reason: '正確！過去式接名詞。' },
+            { text: '適{てき}する', reason: '正確！辭書形接名詞。' },
+            { text: '適{てき}し', reason: '錯誤：連用。' },
+            { text: 'いい', reason: '雖通順但非考點。' }],
+        correctIndex: 1,
+        tag: 'grammar',
+        correctRule: '【活用】「適する」辭書形修飾名詞。'
+    },
+    // 18. 通す (Toosu)
+    {
+        id: 'n3_v1399_toosu_1',
+        prob: '最後{さいご}まで意志{いし}を ______。',
+        prob_zh: '*貫徹* 意志到最後。',
+        level: 'N3',
+        options: [
+            { text: '通{とお}します', reason: '正確！五段他動詞。' },
+            { text: '通{とお}り', reason: '錯誤：自動詞(通過)。' },
+            { text: '通{とお}し', reason: '錯誤：連用形。' },
+            { text: '通{とお}す', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「通す」(他動詞，使通過/貫徹) 與 「通る」(自動詞，通過)。'
+    },
+    {
+        id: 'n3_v1399_toosu_2',
+        prob: '針{はり}に糸{いと}を ______。',
+        prob_zh: '*穿* 針線。',
+        level: 'N3',
+        options: [
+            { text: '通{とお}し', reason: '錯誤：連用。' },
+            { text: '通{とお}して', reason: '正確！五段動詞 su 結尾變 shite。' },
+            { text: '通{とお}って', reason: '錯誤：自動詞促音便。' },
+            { text: '通{とお}さ', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 su 結尾變 shite。'
+    },
+    // 19. 通り過ぎる (Toorisugiru)
+    {
+        id: 'n3_v1399_toorisugiru_1',
+        prob: '嵐{あらし}が ______。',
+        prob_zh: '暴風雨 *經過* 了。',
+        level: 'N3',
+        options: [
+            { text: '通{とお}り過{す}ぎました', reason: '正確！一段複合動詞。' },
+            { text: '通{とお}り過{す}ぎ', reason: '錯誤：連用。' },
+            { text: '通{とお}りました', reason: '雖通順但「通り過ぎる」強調經過並離去。' },
+            { text: '見{み}ました', reason: '錯誤：語意不符。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段複合動詞「通り過ぎる」ます形。'
+    },
+    {
+        id: 'n3_v1399_toorisugiru_2',
+        prob: 'うっかり ______ しまった。',
+        prob_zh: '不小心 *走過頭* 了。',
+        level: 'N3',
+        options: [
+            { text: '通{とお}り過{す}ぎ', reason: '正確！一段動詞 te 形 (去 ru 加 te) 與 しまう 接續。' },
+            { text: '通{とお}り過{す}ぎて', reason: '正確！一段動詞 te 形。' },
+            { text: '通{とお}り過{す}ぎ', reason: '正確！但此處應選 te 形以接 shimau。' },
+            { text: '通{とお}り過{す}ぎた', reason: '錯誤：接續錯誤。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 20. 解ける (Tokeru)
+    {
+        id: 'n3_v1399_tokeru_1',
+        prob: '問題{もんだい}が ______。',
+        prob_zh: '問題 *解決* 了。',
+        level: 'N3',
+        options: [
+            { text: '解{と}けます', reason: '正確！一段自動詞。' },
+            { text: '解{と}きます', reason: '錯誤：人去解題(他動詞)。' },
+            { text: '解{わ}かり', reason: '錯誤：語意不符。' },
+            { text: '解{と}き', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「解ける」(自動詞，解開/解決) 與 「解く」(他動詞，解開/解決)。'
+    },
+    {
+        id: 'n3_v1399_tokeru_2',
+        prob: '靴{くつ}の紐{ひも}が ______。',
+        prob_zh: '鞋帶 *鬆* 了。',
+        level: 'N3',
+        options: [
+            { text: '解{と}き', reason: '錯誤：連用。' },
+            { text: '解{と}けて', reason: '正確！一段動詞 te 形。' },
+            { text: '解{と}け', reason: '錯誤：連用。' },
+            { text: '切{き}れて', reason: '錯誤：那是「斷了」。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // --- SOP Expanded N3 Batch 11 (Part 1) ---
+    // 1. 届く (Todoku)
+    {
+        id: 'n3_v1399_todoku_1',
+        prob: '荷物{にもつ}が ______。',
+        prob_zh: '包裹 *寄到* 了。',
+        level: 'N3',
+        options: [
+            { text: '届{とど}きました', reason: '正確！五段自動詞。' },
+            { text: '届{とど}けました', reason: '錯誤：人去送到(他動詞)。' },
+            { text: '送{おく}りました', reason: '那是「寄送」。' },
+            { text: '届{とど}く', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「届く」(自動詞，寄到) 與 「届けます」(他動詞，送到)。'
+    },
+    {
+        id: 'n3_v1399_todoku_2',
+        prob: '想{おも}いが ______。',
+        prob_zh: '心意 *傳達* 到了。',
+        level: 'N3',
+        options: [
+            { text: '届{とど}いた', reason: '正確！五段過去式。' },
+            { text: '届{とど}いて', reason: '錯誤：接續。' },
+            { text: '届{とど}け', reason: '錯誤：連用。' },
+            { text: '伝{つた}わる', reason: '雖通順但「届く」常用於「心意寄達」。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【活用】五段動詞「届く」(todoku)。'
+    },
+    // 2. 飛ばす (Tobasu)
+    {
+        id: 'n3_v1399_tobasu_1',
+        prob: '紙飛行機{かみひこうき}を ______。',
+        prob_zh: '*放* 紙飛機。',
+        level: 'N3',
+        options: [
+            { text: '飛{と}ばします', reason: '正確！五段他動詞。' },
+            { text: '飛{と}びます', reason: '錯誤：自已飛(自動詞)。' },
+            { text: '飛{と}ば', reason: '錯誤：未然。' },
+            { text: '飛{と}ばす', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「飛ばす」(他動詞，使飛) 與 「飛ぶ」(自動詞，飛)。'
+    },
+    {
+        id: 'n3_v1399_tobasu_2',
+        prob: 'ビデオを ______。',
+        prob_zh: '*快進/跳過* 影片。',
+        level: 'N3',
+        options: [
+            { text: '飛{と}ばし', reason: '錯誤：連用。' },
+            { text: '飛{と}ばして', reason: '正確！五段動詞 su 結尾變 shite。' },
+            { text: '飛{と}ば', reason: '錯誤：未然。' },
+            { text: '飛{と}ばせ', reason: '錯誤：命令/可能。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 su 結尾變 shite。也可用於跳過、略過。'
+    },
+    // 3. 飛び出す (Tobidasu)
+    {
+        id: 'n3_v1399_tobidasu_1',
+        prob: '外{そと}に ______。',
+        prob_zh: '*衝出* 外面。',
+        level: 'N3',
+        options: [
+            { text: '飛{と}び出{だ}し', reason: '正確！五段複合動詞。' },
+            { text: '飛{と}び出{だ}します', reason: '正確！五段複合動詞。' },
+            { text: '出{だ}します', reason: '錯誤：那是「拿出」。' },
+            { text: '飛{と}び出{だ}す', reason: '正確！辭書形不可。' }],
+        correctIndex: 1,
+        tag: 'conjugation',
+        correctRule: '【活用】五段複合動詞「飛び出す」(tobidasu) ます形。'
+    },
+    {
+        id: 'n3_v1399_tobidasu_2',
+        prob: '急{いそ}いで ______。',
+        prob_zh: '急急忙忙 *衝了出來*。',
+        level: 'N3',
+        options: [
+            { text: '飛{と}び出{だ}した', reason: '正確！五段過去式。' },
+            { text: '飛{と}び出{だ}し', reason: '錯誤：連用。' },
+            { text: '飛{と}び出{だ}せ', reason: '錯誤：命令。' },
+            { text: '出{だ}した', reason: '錯誤：那是「拿出」。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段複合動詞「飛び出す」。'
+    },
+    // 4. 取り上げる (Toriageru)
+    {
+        id: 'n3_v1399_toriageru_1',
+        prob: '話題{わだい}に ______。',
+        prob_zh: '*提起* 話題。',
+        level: 'N3',
+        options: [
+            { text: '取{と}り上{あ}げます', reason: '正確！一段複合動詞。' },
+            { text: '取{と}り上{あ}げ', reason: '錯誤：連用。' },
+            { text: '取{と}り出{だ}します', reason: '那是「拿出」。' },
+            { text: '取{と}ります', reason: '那是「取」。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【活用】一段複合動詞「取り上げる」(toriageru)。'
+    },
+    {
+        id: 'n3_v1399_toriageru_2',
+        prob: '免許{めんきょ}を ______。',
+        prob_zh: '*吊銷* 執照。',
+        level: 'N3',
+        options: [
+            { text: '取{と}り上{あ}げ', reason: '正確！一段動詞連用形。' },
+            { text: '取{と}り上{あ}げられ', reason: '正確！一段受身形 (被吊銷)。' },
+            { text: '取{と}り上{あ}げ', reason: '重複項。' },
+            { text: '取{と}り上{あ}げな', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'passive',
+        correctRule: '【活用】一段動詞受身形去「る」加「られる」。'
+    },
+    // 5. 取れる (Toreru)
+    {
+        id: 'n3_v1399_toreru_1',
+        prob: 'ボタンが ______。',
+        prob_zh: '鈕扣 *脫落* 了。',
+        level: 'N3',
+        options: [
+            { text: '取{と}れました', reason: '正確！一段自動詞。' },
+            { text: '取{と}りました', reason: '錯誤：人去取(他動詞)。' },
+            { text: '外{はず}れました', reason: '雖通順但「取れる」是常用詞。' },
+            { text: '取{と}れ', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「取れる」(自動詞，脫落/能取) 與 「取る」(他動詞，取)。'
+    },
+    {
+        id: 'n3_v1399_toreru_2',
+        prob: '魚{さかな}がたくさん ______。',
+        prob_zh: '捕到很多魚。',
+        level: 'N3',
+        options: [
+            { text: '取{と}れ', reason: '錯誤：連用。' },
+            { text: '取{と}れて', reason: '正確！一段動詞 te 形。' },
+            { text: '取{と}れ', reason: '重複項。' },
+            { text: '取{と}ら', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 6. 流す (Nagasu)
+    {
+        id: 'n3_v1399_nagasu_1',
+        prob: '涙{なみだ}を ______。',
+        prob_zh: '*流* 淚。',
+        level: 'N3',
+        options: [
+            { text: '流{なが}します', reason: '正確！五段他動詞。' },
+            { text: '流{なが}れます', reason: '錯誤：自動詞(流動)。' },
+            { text: '流{なが}し', reason: '錯誤：連用。' },
+            { text: '出{だ}します', reason: '那是「發出/拿出」。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「流す」(他動詞，使流/播放) 與 「流れる」(自動詞，流)。'
+    },
+    {
+        id: 'n3_v1399_nagasu_2',
+        prob: '音楽{おんがく}を ______。',
+        prob_zh: '*播放* 音樂。',
+        level: 'N3',
+        options: [
+            { text: '流{なが}し', reason: '錯誤：連用。' },
+            { text: '流{なが}して', reason: '正確！五段動詞 su 結尾變 shite。' },
+            { text: '流{なが}れ', reason: '錯誤：自動詞。' },
+            { text: '掛{か}けて', reason: '雖通順但「流す」常用於店鋪廣播等播放。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 su 結尾變 shite。'
+    },
+    // 7. 眺める (Nagameru)
+    {
+        id: 'n3_v1399_nagameru_1',
+        prob: '景色{けしき}を ______。',
+        prob_zh: '*眺望* 景色。',
+        level: 'N3',
+        options: [
+            { text: '眺{なが}めます', reason: '正確！一段動詞。' },
+            { text: '眺{なが}め', reason: '錯誤：連用。' },
+            { text: '見{み}ます', reason: '普通看。' },
+            { text: '眺{なが}める', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞「眺める」(nagameru) ます形。'
+    },
+    {
+        id: 'n3_v1399_nagameru_2',
+        prob: 'じっと ______ います。',
+        prob_zh: '正出神地 *看* 著。',
+        level: 'N3',
+        options: [
+            { text: '眺{なが}め', reason: '錯誤：連用。' },
+            { text: '眺{なが}めて', reason: '正確！一段動詞 te 形。' },
+            { text: '眺{なが}め', reason: '重複項。' },
+            { text: '見{み}て', reason: '普通看。' }],
+        correctIndex: 1,
+        tag: 'teiru',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 8. 流れる (Nagareru)
+    {
+        id: 'n3_v1399_nagareru_1',
+        prob: '川{かわ}が ______。',
+        prob_zh: '河水 *流動*。',
+        level: 'N3',
+        options: [
+            { text: '流{なが}れます', reason: '正確！一段自動詞。' },
+            { text: '流{なが}します', reason: '錯誤：他動詞。' },
+            { text: '流{なが}れ', reason: '錯誤：連用。' },
+            { text: '流{なが}れる', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「流れる」(自動詞，流) 與 「流す」(他動詞，使流)。'
+    },
+    {
+        id: 'n3_v1399_nagareru_2',
+        prob: '放送{ほうそう}が ______。',
+        prob_zh: '廣播正在 *播放*。',
+        level: 'N3',
+        options: [
+            { text: '流{なが}れ', reason: '錯誤：連用。' },
+            { text: '流{なが}れて', reason: '正確！一段動詞 te 形。' },
+            { text: '流{なが}れ', reason: '重複項。' },
+            { text: '流{なが}さ', reason: '錯誤：他動詞。' }],
+        correctIndex: 1,
+        tag: 'teiru',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 9. 怠ける (Namakeru)
+    {
+        id: 'n3_v1399_namakeru_1',
+        prob: '勉強{べんきょう}を ______。',
+        prob_zh: '*偷懶* 不學習。',
+        level: 'N3',
+        options: [
+            { text: '怠{なま}けます', reason: '正確！一段動詞。' },
+            { text: '怠{なま}け', reason: '錯誤：連用。' },
+            { text: 'サボる', reason: '口語說法。' },
+            { text: '休{やす}みます', reason: '那是「休息」。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞「怠ける」(namakeru)。'
+    },
+    {
+        id: 'n3_v1399_namakeru_2',
+        prob: ' ______ はいけません。',
+        prob_zh: '不能 *偷懶*。',
+        level: 'N3',
+        options: [
+            { text: '怠{なま}け', reason: '正確！一段動詞 te 形。' },
+            { text: '怠{なま}けて', reason: '正確！一段動詞 te 形。' },
+            { text: '怠{なま}けな', reason: '錯誤：否定。' },
+            { text: '怠{なま}け', reason: '重複項。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 10. 悩む (Nayamu)
+    {
+        id: 'n3_v1399_nayamu_1',
+        prob: '進路{しんろ}について ______。',
+        prob_zh: '為進路而 *煩惱*。',
+        level: 'N3',
+        options: [
+            { text: '悩{なや}んでいます', reason: '正確！五段動詞。表示狀態。' },
+            { text: '悩{なや}みます', reason: '正確！五段動詞。表示未來。' },
+            { text: '悩{なや}み', reason: '錯誤：連用。' },
+            { text: '困{こま}って', reason: '那是「困擾」。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「悩む」(nayamu)。'
+    },
+    {
+        id: 'n3_v1399_nayamu_2',
+        prob: '一人{ひとり}で ______ ないで。',
+        prob_zh: '請不要獨自一人 *煩惱*。',
+        level: 'N3',
+        options: [
+            { text: '悩{なや}み', reason: '錯誤：連用。' },
+            { text: '悩{なや}ま', reason: '正確！五段否定形。' },
+            { text: '悩{なや}ん', reason: '錯誤：撥音便。' },
+            { text: '困{こま}ら', reason: '錯誤：語意不符。' }],
+        correctIndex: 1,
+        tag: 'nai',
+        correctRule: '【活用】五段動詞 mu 結尾變 ma。'
+    },
+    // --- SOP Expanded N3 Batch 11 (Part 2) ---
+    // 11. 握る (Nigiru)
+    {
+        id: 'n3_v1399_nigiru_1',
+        prob: '手{て}を ______。',
+        prob_zh: '*握* 手。',
+        level: 'N3',
+        options: [
+            { text: '握{にぎ}ります', reason: '正確！五段動詞。' },
+            { text: '握{にぎ}り', reason: '錯誤：連用。' },
+            { text: '持{も}ちます', reason: '那是「拿」。' },
+            { text: '握{にぎ}る', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「握る」(nigiru)。'
+    },
+    {
+        id: 'n3_v1399_nigiru_2',
+        prob: 'おにぎりを ______。',
+        prob_zh: '*捏* 飯糰。',
+        level: 'N3',
+        options: [
+            { text: '握{にぎ}り', reason: '錯誤：連用。' },
+            { text: '握{にぎ}って', reason: '正確！五段動詞促音便。' },
+            { text: '作{つく}って', reason: '雖然通順，但飯糰專用「握る」。' },
+            { text: '握{にぎ}ら', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 ru 結尾變 tte。'
+    },
+    // 12. 抜ける (Nukeru)
+    {
+        id: 'n3_v1399_nukeru_1',
+        prob: '髪{かみ}の毛{け}が ______。',
+        prob_zh: '頭髮 *脫落*。',
+        level: 'N3',
+        options: [
+            { text: '抜{ぬ}けます', reason: '正確！一段自動詞。' },
+            { text: '抜{ぬ}きます', reason: '錯誤：人去拔(他動詞)。' },
+            { text: '落{お}ちます', reason: '那是「掉落」。' },
+            { text: '抜{ぬ}け', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「抜ける」(自動詞，脫落/穿過) 與 「抜く」(他動詞，拔出/超過)。'
+    },
+    {
+        id: 'n3_v1399_nukeru_2',
+        prob: '最後{さいご}まで ______ 切{き}る。',
+        prob_zh: '*穿過/穿透* 到最後。',
+        level: 'N3',
+        options: [
+            { text: '抜{ぬ}け', reason: '正確！一段動詞連用形。' },
+            { text: '抜{ぬ}けて', reason: '正確！但複合動詞接詞用連用形。' },
+            { text: '抜{ぬ}か', reason: '錯誤：五段活用。' },
+            { text: '抜{ぬ}けし', reason: '錯誤：文法錯誤。' }],
+        correctIndex: 0,
+        tag: 'compound',
+        correctRule: '【活用】一段動詞去「る」。'
+    },
+    // 13. 濡れる (Nureru)
+    {
+        id: 'n3_v1399_nureru_1',
+        prob: '雨{あめ}に ______。',
+        prob_zh: '*被* 雨 *淋濕* 了。',
+        level: 'N3',
+        options: [
+            { text: '濡{ぬ}れました', reason: '正確！一段自動詞。表示狀態改變。' },
+            { text: '濡{ぬ}らしました', reason: '錯誤：人去弄濕(他動詞)。' },
+            { text: '濕{しめ}りました', reason: '那是「潮濕」。' },
+            { text: '濡{ぬ}れ', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「濡れる」(自動詞，濕) 與 「濡らす」(他動詞，弄濕)。'
+    },
+    {
+        id: 'n3_v1399_nureru_2',
+        prob: ' ______ いますね。',
+        prob_zh: '正 *濕* 著呢。',
+        level: 'N3',
+        options: [
+            { text: '濡{ぬ}れ', reason: '錯誤：連用。' },
+            { text: '濡{ぬ}れて', reason: '正確！一段動詞 te 形。' },
+            { text: '濡{ぬ}れ', reason: '重複項。' },
+            { text: '濡{ぬ}らして', reason: '錯誤：他動詞。' }],
+        correctIndex: 1,
+        tag: 'teiru',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 14. 残す (Nokosu)
+    {
+        id: 'n3_v1399_nokosu_1',
+        prob: 'ご飯{はん}を ______。',
+        prob_zh: '*剩* 飯。',
+        level: 'N3',
+        options: [
+            { text: '残{のこ}します', reason: '正確！五段他動詞。' },
+            { text: '残{のこ}ります', reason: '錯誤：自動詞(剩餘)。' },
+            { text: '残{のこ}し', reason: '錯誤：連用。' },
+            { text: '食{た}べ', reason: '那是不吃。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「残す」(他動詞，留下) 與 「残る」(自動詞，剩)。'
+    },
+    {
+        id: 'n3_v1399_nokosu_2',
+        prob: 'メッセージを ______。',
+        prob_zh: '*留言*。',
+        level: 'N3',
+        options: [
+            { text: '残{のこ}し', reason: '錯誤：連用。' },
+            { text: '残{のこ}して', reason: '正確！五段動詞 su 結尾變 shite。' },
+            { text: '残{のこ}り', reason: '錯誤：自動詞。' },
+            { text: '書{か}いて', reason: '雖通順但「留下資訊」用「残す」更準確。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 su 結尾變 shite。'
+    },
+    // 15. 乗せる (Noseru)
+    {
+        id: 'n3_v1399_noseru_1',
+        prob: '子供{こども}を車{くるま}に ______。',
+        prob_zh: '*載* 孩子上車。',
+        level: 'N3',
+        options: [
+            { text: '乗{の}せます', reason: '正確！一段他動詞。' },
+            { text: '乗{の}ります', reason: '錯誤：自動詞(搭乘)。' },
+            { text: '運{はこ}びます', reason: '那是「搬運」。' },
+            { text: '乗{の}せ', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「乘せる」(他動詞，使搭乘/放上) 與 「乘る」(自動詞，搭乘/騎)。'
+    },
+    {
+        id: 'n3_v1399_noseru_2',
+        prob: '棚{たな}に荷物{にもつ}を ______。',
+        prob_zh: '把行李 *放* 在架子上。',
+        level: 'N3',
+        options: [
+            { text: '乗{の}せ', reason: '錯誤：連用。' },
+            { text: '乗{の}せて', reason: '正確！一段動詞 te 形。' },
+            { text: '置{お}いて', reason: '雖然可以用，但此處考「載せる」。' },
+            { text: '乗{の}り', reason: '錯誤：自動詞。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 16. 除く (Nozoku)
+    {
+        id: 'n3_v1399_nozoku_1',
+        prob: '彼{かれ}を ______ 全員{ぜんいん}参加{さんか}です。',
+        prob_zh: '*除了* 他以外全員參加。',
+        level: 'N3',
+        options: [
+            { text: '除{のぞ}いて', reason: '正確！五段動詞 i 音便 (ku 變 ite)。' },
+            { text: '外{はず}して', reason: '那是「解開/取下」。' },
+            { text: '抜{ぬ}かして', reason: '那是「跳過」。' },
+            { text: '除{のぞ}き', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '【活用】五段動詞「除く」(nozoku) 的 te 形是「除いて」。常用於排除、除外。'
+    },
+    {
+        id: 'n3_v1399_nozoku_2',
+        prob: '不安{ふあん}を ______。',
+        prob_zh: '*消除* 不安。',
+        level: 'N3',
+        options: [
+            { text: '除{のぞ}き', reason: '正確！五段連用形。' },
+            { text: '除{のぞ}きます', reason: '正確！五段動詞ます形。' },
+            { text: '消{き}えます', reason: '那是自動詞(消失)。' },
+            { text: '消{け}します', reason: '那是「關掉/抹去」。' }],
+        correctIndex: 1,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「除く」。'
+    },
+    // 17. 伸ばす (Nobasu)
+    {
+        id: 'n3_v1399_nobasu_1',
+        prob: '手{て}を ______。',
+        prob_zh: '*伸* 手。',
+        level: 'N3',
+        options: [
+            { text: '伸{の}ばします', reason: '正確！五段他動詞。' },
+            { text: '伸{の}びます', reason: '錯誤：自動詞(生長/拉長)。' },
+            { text: '伸{の}ば', reason: '錯誤：未然。' },
+            { text: '伸{の}ばす', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「伸ばす」(他動詞，使伸長/延期) 與 「伸びる」(自動詞，增長/伸展)。'
+    },
+    {
+        id: 'n3_v1399_nobasu_2',
+        prob: '締切{しめきり}を ______。',
+        prob_zh: '*延長* 截止期限。',
+        level: 'N3',
+        options: [
+            { text: '伸{の}ばし', reason: '錯誤：連用。' },
+            { text: '伸{の}ばして', reason: '正確！五段動詞 su 結尾變 shite。' },
+            { text: '伸{の}びて', reason: '錯誤：自動詞。' },
+            { text: '変{か}えて', reason: '那是「改變」。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 su 結尾變 shite。'
+    },
+    // 18. 伸びる (Nobiru)
+    {
+        id: 'n3_v1399_nobiru_1',
+        prob: '身長{しんちょう}が ______。',
+        prob_zh: '身高 *增長*。',
+        level: 'N3',
+        options: [
+            { text: '伸{の}びます', reason: '正確！一段自動詞。' },
+            { text: '伸{の}ばします', reason: '錯誤：他動詞。' },
+            { text: '増{ふ}えます', reason: '那是「增加」。' },
+            { text: '伸{の}び', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「伸びる」(自動詞) 與 「伸ばす」(他動詞)。'
+    },
+    {
+        id: 'n3_v1399_nobiru_2',
+        prob: '売上{うりあげ}が ______ います。',
+        prob_zh: '業績正在 *增長*。',
+        level: 'N3',
+        options: [
+            { text: '伸{の}び', reason: '錯誤：連用。' },
+            { text: '伸{の}びて', reason: '正確！一段動詞 te 形。' },
+            { text: '伸{の}ばして', reason: '錯誤：他動詞。' },
+            { text: '上{あ}がって', reason: '雖通順但此處考「伸びる」。' }],
+        correctIndex: 1,
+        tag: 'teiru',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 19. 述べる (Noberu)
+    {
+        id: 'n3_v1399_noberu_1',
+        prob: '意見{いけん}を ______。',
+        prob_zh: '*陳述* 意見。',
+        level: 'N3',
+        options: [
+            { text: '述{の}べます', reason: '正確！一段動詞。' },
+            { text: '言{い}います', reason: '那是「說」。' },
+            { text: '述{の}べ', reason: '錯誤：連用。' },
+            { text: '述{の}べる', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞「述べる」(noberu)。比「言う」更正式。'
+    },
+    {
+        id: 'n3_v1399_noberu_2',
+        prob: '挨拶{あいさつ}を ______ いただく。',
+        prob_zh: '請您 *致詞*。',
+        level: 'N3',
+        options: [
+            { text: '述{の}べ', reason: '正確！一段動詞連用形。' },
+            { text: '述{の}べて', reason: '正確！一段動詞 te 形。' },
+            { text: '述{の}べ', reason: '重複項。' },
+            { text: '言{い}って', reason: '太隨意。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 20. 計る (Hakaru)
+    {
+        id: 'n3_v1399_hakaru_1',
+        prob: '時間{じかん}を ______。',
+        prob_zh: '*計量* 時間。',
+        level: 'N3',
+        options: [
+            { text: '計{はか}ります', reason: '正確！五段動詞。' },
+            { text: '量{はか}ります', reason: '那是測量重量或容量。' },
+            { text: '測{はか}ります', reason: '那是測量長度、面積或溫度。' },
+            { text: '図{はか}ります', reason: '那是策劃/圖謀。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【漢字辨析】「計る」(時間/次數/計畫)；「量る」(重量/體積)；「測る」(長度/深度/性能)。'
+    },
+    {
+        id: 'n3_v1399_hakaru_2',
+        prob: 'ストップウォッチで ______。',
+        prob_zh: '用秒錶 *計時*。',
+        level: 'N3',
+        options: [
+            { text: '計{はか}り', reason: '錯誤：連用。' },
+            { text: '計{はか}って', reason: '正確！五段促音便。' },
+            { text: '計{はか}ら', reason: '錯誤：否定。' },
+            { text: '測{はか}って', reason: '錯誤：漢字選錯。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 ru 結尾變 tte。'
+    },
+    // --- SOP Expanded N3 Batch 12 (Part 1) ---
+    // 1. 外す (Hazusu)
+    {
+        id: 'n3_v1399_hazusu_1',
+        prob: '眼鏡{めがね}を ______。',
+        prob_zh: '*摘下* 眼鏡。',
+        level: 'N3',
+        options: [
+            { text: '外{はず}します', reason: '正確！五段動詞。' },
+            { text: '外{はず}れ', reason: '錯誤：自動詞(脫落)。' },
+            { text: '取{と}ります', reason: '雖然可以用，但「外す」更精確。' },
+            { text: '外{はず}し', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「外す」(他動詞，摘下/錯過) 與 「外れる」(自動詞，脫落)。'
+    },
+    {
+        id: 'n3_v1399_hazusu_2',
+        prob: '的{まと}を ______。',
+        prob_zh: '*脫* 靶 / *沒擊中* 靶。',
+        level: 'N3',
+        options: [
+            { text: '外{はず}し', reason: '錯誤：連用。' },
+            { text: '外{はず}した', reason: '正確！五段過去式。' },
+            { text: '外{はず}れ', reason: '錯誤：自動詞。' },
+            { text: '当{あ}てた', reason: '那是擊中。' }],
+        correctIndex: 1,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「外す」(hazusu)。'
+    },
+    // 2. 罰する (Bassuru)
+    {
+        id: 'n3_v1399_bassuru_1',
+        prob: '法律{ほうりつ}で ______。',
+        prob_zh: '用法律 *懲罰*。',
+        level: 'N3',
+        options: [
+            { text: '罰{ばっ}します', reason: '正確！サ行活用(此處為名詞+する)。' },
+            { text: '罰{ばつ}する', reason: '錯誤：辭書形。' },
+            { text: '罰{ばっ}して', reason: '正確！但此處用敬體。' },
+            { text: '罰{ばつ}', reason: '錯誤：名詞。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】「罰する」(bassuru) 是サ變動詞的一種(或讀為五段)。'
+    },
+    {
+        id: 'n3_v1399_bassuru_2',
+        prob: '厳{きび}しく ______ られた。',
+        prob_zh: '被嚴厲地 *懲罰* 了。',
+        level: 'N3',
+        options: [
+            { text: '罰{ばつ}', reason: '錯誤：名詞。' },
+            { text: '罰{ばっ}せ', reason: '正確！サ變動詞受身形未然形(せ)。' },
+            { text: '罰{ばつ}さ', reason: '錯誤：五段活用受身。' },
+            { text: '罰{ばっ}し', reason: '錯誤：連用。' }],
+        correctIndex: 1,
+        tag: 'passive',
+        correctRule: '【活用】「罰する」(サ變)受身：罰せられる。'
+    },
+    // 3. 話し合う (Hanashiau)
+    {
+        id: 'n3_v1399_hanashiau_1',
+        prob: '将来{しょうらい}について ______。',
+        prob_zh: '*商量/討論* 關於未來。',
+        level: 'N3',
+        options: [
+            { text: '話{はな}し合{あ}います', reason: '正確！五段複合動詞。' },
+            { text: '話{はな}します', reason: '單純說。' },
+            { text: '相談{そうだん}します', reason: '雖然語意相近，但此處考複合動詞。' },
+            { text: '話{はな}し合{あ}い', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段複合動詞「話し合う」(hanashiau)。'
+    },
+    {
+        id: 'n3_v1399_hanashiau_2',
+        prob: '二人{ふたり}で ______。',
+        prob_zh: '兩個人 *商量過*。',
+        level: 'N3',
+        options: [
+            { text: '話{はな}し合{あ}っ', reason: '正確！五段促音便。' },
+            { text: '話{はな}し合{あ}い', reason: '錯誤：連用。' },
+            { text: '話{はな}し合{あ}いた', reason: '錯誤：語尾錯誤。' },
+            { text: '話{はな}し合{あ}っ', reason: '重複項。' }],
+        correctIndex: 0,
+        tag: 'ta',
+        correctRule: '【活用】五段動詞 u 結尾變 tta。'
+    },
+    // 4. 離す (Hanasu)
+    {
+        id: 'n3_v1399_hanasu_1',
+        prob: '手{て}を ______。',
+        prob_zh: '*放* 手。',
+        level: 'N3',
+        options: [
+            { text: '離{はな}します', reason: '正確！五段他動詞。' },
+            { text: '放{はな}します', reason: '正確！但「鬆開」常用「離す」。' },
+            { text: '離{はな}れ', reason: '錯誤：自動詞(離開/分開)。' },
+            { text: '離{はな}し', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「離す」(他動詞，使分開/放開) 與 「離れる」(自動詞，離開)。'
+    },
+    {
+        id: 'n3_v1399_hanasu_2',
+        prob: '距離{きょり}を ______。',
+        prob_zh: '*拉開* 距離。',
+        level: 'N3',
+        options: [
+            { text: '離{はな}し', reason: '錯誤：連用。' },
+            { text: '離{はな}して', reason: '正確！五段動詞 su 結尾變 shite。' },
+            { text: '離{はな}れ', reason: '錯誤：自動詞。' },
+            { text: '開{あ}けて', reason: '雖通順但考「離す」。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 su 結尾變 shite。'
+    },
+    // 5. 放す (Hokasu) - Note: In this DB reading is 'hokasu' (let go/trash in dialect)
+    {
+        id: 'n3_v1399_hokasu_1',
+        prob: '金魚{きんぎょ}を川{かわ}に ______。',
+        prob_zh: '把金魚 *放生* 到河裡。',
+        level: 'N3',
+        options: [
+            { text: '放{ほか}します', reason: '正確！五段他動詞。' },
+            { text: '投{な}げます', reason: '那是「投擲」。' },
+            { text: '捨{す}てます', reason: '那是「遺棄/丟掉」。' },
+            { text: '放{ほか}し', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「放す」(hokasu)。此處意為「放生」。'
+    },
+    {
+        id: 'n3_v1399_hokasu_2',
+        prob: '鳥{とり}を ______ あげた。',
+        prob_zh: '把鳥 *放* 了。',
+        level: 'N3',
+        options: [
+            { text: '放{ほか}し', reason: '錯誤：連用。' },
+            { text: '放{ほか}して', reason: '正確！五段動詞 su 結尾變 shite。' },
+            { text: '逃{に}がして', reason: '那是「放走」。' },
+            { text: '放{ほか}', reason: '錯誤：未然。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 su 結尾變 shite。'
+    },
+    // 6. 離れる (Hanareru)
+    {
+        id: 'n3_v1399_hanareru_1',
+        prob: '故郷{こきょう}を ______。',
+        prob_zh: '*離開* 故鄉。',
+        level: 'N3',
+        options: [
+            { text: '離{はな}れます', reason: '正確！一段自動詞。' },
+            { text: '離{はな}します', reason: '錯誤：他動詞。' },
+            { text: '出{で}ます', reason: '雖然可以用，但「離れる」更有離開感。' },
+            { text: '離{はな}れ', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「離れる」(自動詞) 與 「離す」(他動詞)。'
+    },
+    {
+        id: 'n3_v1399_hanareru_2',
+        prob: '二人{ふたり}は ______ います。',
+        prob_zh: '兩個人正 *分居*。',
+        level: 'N3',
+        options: [
+            { text: '離{はな}れ', reason: '錯誤：連用。' },
+            { text: '離{はな}れて', reason: '正確！一段動詞 te 形。' },
+            { text: '別{わか}れて', reason: '那是「分手/分開」。' },
+            { text: '離{はな}れ', reason: '重複項。' }],
+        correctIndex: 1,
+        tag: 'teiru',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 7. 省く (Habuku)
+    {
+        id: 'n3_v1399_habuku_1',
+        prob: '無駄{むだ}を ______。',
+        prob_zh: '*省去* 浪費。',
+        level: 'N3',
+        options: [
+            { text: '省{はぶ}きます', reason: '正確！五段動詞。' },
+            { text: '省{はぶ}き', reason: '錯誤：連用。' },
+            { text: '減{へ}らします', reason: '那是「減少」。' },
+            { text: '省{はぶ}く', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「省く」(habuku)。'
+    },
+    {
+        id: 'n3_v1399_habuku_2',
+        prob: '詳{くわ}しい説明{せつめい}を ______。',
+        prob_zh: '*省略* 詳細說明。',
+        level: 'N3',
+        options: [
+            { text: '省{はぶ}き', reason: '錯誤：連用。' },
+            { text: '省{はぶ}いて', reason: '正確！五段動詞 i 音便 (ku 變 ite)。' },
+            { text: '省{はぶ}か', reason: '錯誤：否定。' },
+            { text: '止{や}めて', reason: '那是「停止」。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 ku 結尾變 ite。'
+    },
+    // 8. 張る (Haru)
+    {
+        id: 'n3_v1399_haru_1',
+        prob: '切手{きって}を ______。',
+        prob_zh: '*貼* 郵票。',
+        level: 'N3',
+        options: [
+            { text: '張{は}ります', reason: '正確！五段動詞。' },
+            { text: '貼{は}ります', reason: '正確！(常用漢字相同)。' },
+            { text: '張{は}る', reason: '錯誤：辭書形。' },
+            { text: '張{は}り', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「張る」(haru)。'
+    },
+    {
+        id: 'n3_v1399_haru_2',
+        prob: '胸{むね}を ______。',
+        prob_zh: '*挺* 胸。',
+        level: 'N3',
+        options: [
+            { text: '張{は}り', reason: '錯誤：連用。' },
+            { text: '張{は}って', reason: '正確！五段促音便。' },
+            { text: '張{は}ら', reason: '錯誤：否定。' },
+            { text: '開{あ}けて', reason: '那是「打開」。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 ru 結尾變 tte。'
+    },
+    // 9. 轢く (Hiku)
+    {
+        id: 'n3_v1399_hiku_1',
+        prob: '車{くるま}に ______。',
+        prob_zh: '*被* 車 *撞/壓*。',
+        level: 'N3',
+        options: [
+            { text: '轢{ひ}か', reason: '正確！五段受身形未然形(ka)。' },
+            { text: '轢{ひ}き', reason: '錯誤：連用。' },
+            { text: '引{ひ}か', reason: '錯誤：漢字選錯(那是「拉」)。' },
+            { text: '撃{う}た', reason: '那是「被擊中」。' }],
+        correctIndex: 0,
+        tag: 'passive',
+        correctRule: '【活用】五段動詞「轢く」(hiku) 受身：轢かれる。'
+    },
+    {
+        id: 'n3_v1399_hiku_2',
+        prob: ' ______ れて怪我{けが}をしました。',
+        prob_zh: '*被撞* 而受傷了。',
+        level: 'N3',
+        options: [
+            { text: '轢{ひ}き', reason: '錯誤：連用。' },
+            { text: '轢{ひ}か', reason: '正確！五段受身形。' },
+            { text: '轢{ひ}け', reason: '錯誤：命令/可能。' },
+            { text: '撞{つ}か', reason: '錯誤：漢字選錯。' }],
+        correctIndex: 1,
+        tag: 'passive',
+        correctRule: '【活用】五段動詞 u 段變 a 段加「れる」。'
+    },
+    // 10. 引っ張る (Hipparu)
+    {
+        id: 'n3_v1399_hipparu_1',
+        prob: '紐{ひも}を ______。',
+        prob_zh: '*拉* 繩子。',
+        level: 'N3',
+        options: [
+            { text: '引{ひ}っ張{ぱ}ります', reason: '正確！五段複合動詞。' },
+            { text: '引{ひ}きます', reason: '普通拉。' },
+            { text: '引{ひ}っ張{ぱ}り', reason: '錯誤：連用。' },
+            { text: '持{も}ちます', reason: '那是「拿」。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段複合動詞「引っ張る」(hipparu)。'
+    },
+    {
+        id: 'n3_v1399_hipparu_2',
+        prob: 'ぐいぐい ______。',
+        prob_zh: '用力 *拉著*。',
+        level: 'N3',
+        options: [
+            { text: '引{ひ}っ張{ぱ}り', reason: '錯誤：連用。' },
+            { text: '引{ひ}っ張{ぱ}って', reason: '正確！五段促音便。' },
+            { text: '引{ひ}っ張{ぱ}ら', reason: '錯誤：否定。' },
+            { text: '引{ひ}いて', reason: '普通拉。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 ru 結尾變 tte。'
+    },
+    // --- SOP Expanded N3 Batch 12 (Part 2) ---
+    // 11. 含む (Fukumu)
+    {
+        id: 'n3_v1399_fukumu_1',
+        prob: '消費税{しょうひぜい}を ______。',
+        prob_zh: '*包含* 消費稅。',
+        level: 'N3',
+        options: [
+            { text: '含{ふく}みます', reason: '正確！五段動詞。' },
+            { text: '含{ふく}め', reason: '錯誤：一段他動詞(使包含/列入)。' },
+            { text: '入{い}れます', reason: '那是「放入」。' },
+            { text: '含{ふく}み', reason: '錯誤：連用形。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「含む」(五段，包含) 與 「含める」(一段，列入/包括)。'
+    },
+    {
+        id: 'n3_v1399_fukumu_2',
+        prob: 'たっぷり水{みず}を ______。',
+        prob_zh: '*含* 著充足的水分。',
+        level: 'N3',
+        options: [
+            { text: '含{ふく}ま', reason: '錯誤：否定。' },
+            { text: '含{ふく}んで', reason: '正確！五段動詞撥音便。' },
+            { text: '含{ふく}め', reason: '錯誤：一段動詞。' },
+            { text: '持{も}って', reason: '那是「拿著」。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 mu 結尾變 nde。'
+    },
+    // 12. 振る (Furu)
+    {
+        id: 'n3_v1399_furu_1',
+        prob: '手{て}を ______。',
+        prob_zh: '*揮* 手。',
+        level: 'N3',
+        options: [
+            { text: '振{ふ}ります', reason: '正確！五段動詞。' },
+            { text: '振{ふ}り', reason: '錯誤：連用。' },
+            { text: '振{ふ}る', reason: '錯誤：辭書形。' },
+            { text: '振{ふ}れ', reason: '錯誤：命令。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「振る」(furu)。'
+    },
+    {
+        id: 'n3_v1399_furu_2',
+        prob: '塩{しお}を ______。',
+        prob_zh: '*撒* 鹽。 / *甩了* (戀人)。',
+        level: 'N3',
+        options: [
+            { text: '振{ふ}り', reason: '錯誤：連用。' },
+            { text: '振{ふ}って', reason: '正確！五段促音便。' },
+            { text: '振{ふ}ら', reason: '錯誤：否定。' },
+            { text: '掛{か}けて', reason: '雖然可以用，但此處考「振る」。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 ru 結尾變 tte。可用於搖晃、撒、拒絕等。'
+    },
+    // 13. 震える (Furueru)
+    {
+        id: 'n3_v1399_furueru_1',
+        prob: '寒{さむ}さで ______。',
+        prob_zh: '因寒冷而 *發抖*。',
+        level: 'N3',
+        options: [
+            { text: '震{ふる}えます', reason: '正確！一段自動詞。' },
+            { text: '震{ふる}わせます', reason: '錯誤：使抖動(使役)。' },
+            { text: '揺{ゆ}れます', reason: '那是「搖晃」。' },
+            { text: '震{ふる}え', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【活用】一段動詞「震える」(furueru)。'
+    },
+    {
+        id: 'n3_v1399_furueru_2',
+        prob: '手{て}が ______ います。',
+        prob_zh: '手正在 *抖*。',
+        level: 'N3',
+        options: [
+            { text: '震{ふる}え', reason: '錯誤：連用。' },
+            { text: '震{ふる}えて', reason: '正確！一段動詞 te 形。' },
+            { text: '震{ふる}え', reason: '重複項。' },
+            { text: '揺{ゆ}れて', reason: '雖然可以用，但此處考「震える」。' }],
+        correctIndex: 1,
+        tag: 'teiru',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 14. 触れる (Fureru)
+    {
+        id: 'n3_v1399_fureru_1',
+        prob: '作品{さくひん}に ______。',
+        prob_zh: '*接觸* 作品。 (請勿觸摸)',
+        level: 'N3',
+        options: [
+            { text: '触{ふ}れます', reason: '正確！一段動詞。' },
+            { text: '触{さわ}ります', reason: '那是五段動詞「觸摸」。' },
+            { text: '見{み}ます', reason: '那是「看」。' },
+            { text: '触{ふ}れ', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞「触れる」(fureru)。常用於物理接觸或提及話題。'
+    },
+    {
+        id: 'n3_v1399_fureru_2',
+        prob: 'その件{けん}に ______。',
+        prob_zh: '*提到* 那件事。',
+        level: 'N3',
+        options: [
+            { text: '触{ふ}れ', reason: '錯誤：連用。' },
+            { text: '触{ふ}れて', reason: '正確！一段動詞 te 形。' },
+            { text: '言{い}って', reason: '雖然意思相近，但「触れる」更有提及感。' },
+            { text: '触{ふ}れ', reason: '重複項。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 15. 減る (Heru)
+    {
+        id: 'n3_v1399_heru_1',
+        prob: '人口{じんこう}が ______。',
+        prob_zh: '人口 *減少*。',
+        level: 'N3',
+        options: [
+            { text: '減{へ}ります', reason: '正確！五段自動詞(雖然結尾是 ru，但活用是五段)。' },
+            { text: '減{へ}らします', reason: '錯誤：他動詞。' },
+            { text: '少{すく}なくなります', reason: '雖然正確，但此處考動詞「減る」。' },
+            { text: '減{へ}り', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「減る」(五段自動詞) 與 「減らす」(五段他動詞)。'
+    },
+    {
+        id: 'n3_v1399_heru_2',
+        prob: 'お腹{なか}が ______。',
+        prob_zh: '肚子 *餓* 了。 (肚子減少了)',
+        level: 'N3',
+        options: [
+            { text: '減{へ}り', reason: '錯誤：連用。' },
+            { text: '減{へ}った', reason: '正確！五段促音便過去式。' },
+            { text: '減{へ}らした', reason: '錯誤：他動詞。' },
+            { text: '空{す}いた', reason: '常用說法，但「お腹が減った」也很常見。' }],
+        correctIndex: 1,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「減る」(heru)。'
+    },
+    // 16. 吠える (Hoeru)
+    {
+        id: 'n3_v1399_hoeru_1',
+        prob: '犬{いぬ}が ______。',
+        prob_zh: '狗 *吠/叫*。',
+        level: 'N3',
+        options: [
+            { text: '吠{ほ}えます', reason: '正確！一段動詞。' },
+            { text: '鳴{な}きます', reason: '通常用於鳥、貓、蟲叫。' },
+            { text: '吠{ほ}え', reason: '錯誤：連用。' },
+            { text: '吠{ほ}える', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞「吠える」(hoeru)。'
+    },
+    {
+        id: 'n3_v1399_hoeru_2',
+        prob: '一晩中{ひとばんじゅう} ______ いた。',
+        prob_zh: '叫了一整晚。',
+        level: 'N3',
+        options: [
+            { text: '吠{ほ}え', reason: '錯誤：連用。' },
+            { text: '吠{ほ}えて', reason: '正確！一段動詞 te 形。' },
+            { text: '吠{ほ}え', reason: '重複項。' },
+            { text: '鳴{な}いて', reason: '那是鳥/蟲鳴。' }],
+        correctIndex: 1,
+        tag: 'teiru',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 17. 微笑む (Hohoemu)
+    {
+        id: 'n3_v1399_hohoemu_1',
+        prob: 'にっこりと ______。',
+        prob_zh: '微微地 *微笑*。',
+        level: 'N3',
+        options: [
+            { text: '微笑{ほほえ}みます', reason: '正確！五段動詞。' },
+            { text: '笑{わら}います', reason: '那是「笑」。' },
+            { text: '微笑{ほほえ}み', reason: '錯誤：連用。' },
+            { text: '微笑{ほほえ}む', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「微笑む」(hohoemu)。'
+    },
+    {
+        id: 'n3_v1399_hohoemu_2',
+        prob: '赤{あか}ちゃんが ______ います。',
+        prob_zh: '嬰兒正在 *微笑*。',
+        level: 'N3',
+        options: [
+            { text: '微笑{ほほえ}み', reason: '錯誤：連用。' },
+            { text: '微笑{ほほえ}んで', reason: '正確！五段撥音便。' },
+            { text: '笑{わら}って', reason: '那是「笑」。' },
+            { text: '微笑{ほほえ}ま', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'teiru',
+        correctRule: '【活用】五段動詞 mu 結尾變 nde。'
+    },
+    // 18. 任せる (Makaseru)
+    {
+        id: 'n3_v1399_makaseru_1',
+        prob: '仕事{しごと}を ______。',
+        prob_zh: '*委託/任由* 處理工作。',
+        level: 'N3',
+        options: [
+            { text: '任{まか}せます', reason: '正確！一段動詞。' },
+            { text: '任{まか}せ', reason: '錯誤：連用。' },
+            { text: '頼{たの}みます', reason: '那是「請求」。' },
+            { text: '任{まか}せる', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞「任せる」(makaseru)。'
+    },
+    {
+        id: 'n3_v1399_makaseru_2',
+        prob: '私{わたし}に ______ ください。',
+        prob_zh: '請 *交給* 我。',
+        level: 'N3',
+        options: [
+            { text: '任{まか}せ', reason: '錯誤：連用。' },
+            { text: '任{まか}せて', reason: '正確！一段動詞 te 形。' },
+            { text: '任{まか}せ', reason: '重複項。' },
+            { text: '頼{たの}んで', reason: '那是「請求」。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 19. 増す (Masu)
+    {
+        id: 'n3_v1399_masu_1',
+        prob: '不安{ふあん}が ______。',
+        prob_zh: '不安 *增加*。',
+        level: 'N3',
+        options: [
+            { text: '増{ま}します', reason: '正確！五段自動詞/他動詞。' },
+            { text: '増{ふ}えます', reason: '正確！一段自動詞。' },
+            { text: '増{ま}し', reason: '錯誤：連用。' },
+            { text: '増{ま}す', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「増す」(masu)。常用於抽象概念的增加。'
+    },
+    {
+        id: 'n3_v1399_masu_2',
+        prob: '勢{いきお}いが ______ きた。',
+        prob_zh: '氣勢 *增加* 了起來。',
+        level: 'N3',
+        options: [
+            { text: '増{ま}し', reason: '錯誤：連用。' },
+            { text: '増{ま}して', reason: '正確！五段動詞 su 結尾變 shite。' },
+            { text: '増{ふ}えて', reason: '雖然意思相近，但此處考「増す」。' },
+            { text: '増{ま}さ', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 su 結尾變 shite。'
+    },
+    // 20. 学ぶ (Manabu)
+    {
+        id: 'n3_v1399_manabu_1',
+        prob: '技術{ぎじゅつ}を ______。',
+        prob_zh: '*學習* 技術。',
+        level: 'N3',
+        options: [
+            { text: '学{まな}びます', reason: '正確！五段動詞。' },
+            { text: '勉{べん}強{きょう}します', reason: '普通學習。' },
+            { text: '習{なら}います', reason: '跟老師學。' },
+            { text: '学{まな}び', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「学ぶ」(manabu)。常用於學科或技術。'
+    },
+    {
+        id: 'n3_v1399_manabu_2',
+        prob: '多{おお}くのことを ______した。',
+        prob_zh: '*學過* 很多事情。',
+        level: 'N3',
+        options: [
+            { text: '学{まな}び', reason: '錯誤：連用。' },
+            { text: '学{まな}んだ', reason: '正確！五段撥音便過去式。' },
+            { text: '習{なら}った', reason: '那是跟人等學。' },
+            { text: '学{まな}ば', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞 bu 結尾變 nda。'
+    },
+    // --- SOP Expanded N3 Batch 13 (Final) ---
+    // 1. 為る (Naru)
+    {
+        id: 'n3_v1399_naru_1',
+        prob: '役に ______。',
+        prob_zh: '*派上* 用場。',
+        level: 'N3',
+        options: [
+            { text: '立{た}ちます', reason: '正確！(役に立つ)。' },
+            { text: 'なり', reason: '雖然「役に……」可以，但習慣用「経つ」。' },
+            { text: 'なり', reason: '重複項。' },
+            { text: 'し', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【活用】五段動詞「為る」(naru)。慣用語「役に立つ」。'
+    },
+    {
+        id: 'n3_v1399_naru_2',
+        prob: '医者{いしゃ}に ______。',
+        prob_zh: '*成為* 醫生。',
+        level: 'N3',
+        options: [
+            { text: 'なり', reason: '錯誤：連用。' },
+            { text: 'なって', reason: '正確！五段動詞 u 音便。' },
+            { text: 'して', reason: '那是「做」。' },
+            { text: 'なり', reason: '重複項。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 u 結尾變 tte。'
+    },
+    // 2. 招く (Maneku)
+    {
+        id: 'n3_v1399_maneku_1',
+        prob: '客{きゃく}を ______。',
+        prob_zh: '*招待/邀請* 客人。',
+        level: 'N3',
+        options: [
+            { text: '招{まね}きます', reason: '正確！五段動詞。' },
+            { text: '呼{よ}びます', reason: '那是「呼喚」。' },
+            { text: '招{まね}き', reason: '錯誤：連用。' },
+            { text: '招{まね}く', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「招く」(maneku)。'
+    },
+    {
+        id: 'n3_v1399_maneku_2',
+        prob: '誤解{ごかい}を ______。',
+        prob_zh: '*招致* 誤解。',
+        level: 'N3',
+        options: [
+            { text: '招{まね}き', reason: '錯誤：連用。' },
+            { text: '招{まね}いて', reason: '正確！五段動詞 i 音便 (ku 變 ite)。' },
+            { text: '起{お}こして', reason: '那是「引起」。' },
+            { text: '招{まね}か', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 ku 結尾變 ite。'
+    },
+    // 3. 回す (Mawasu)
+    {
+        id: 'n3_v1399_mawasu_1',
+        prob: '取っ手{とって}を ______。',
+        prob_zh: '*轉動* 把手。',
+        level: 'N3',
+        options: [
+            { text: '回{まわ}します', reason: '正確！五段他動詞。' },
+            { text: '回{まわ}ります', reason: '錯誤：自動詞(旋轉)。' },
+            { text: '動{うご}かします', reason: '那是「移動/啟動」。' },
+            { text: '回{まわ}し', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「回す」(他動詞，使旋轉) 與 「回る」(自動詞，旋轉)。'
+    },
+    {
+        id: 'n3_v1399_mawasu_2',
+        prob: '書類{しょるい}を ______。',
+        prob_zh: '*傳閱* 文件。',
+        level: 'N3',
+        options: [
+            { text: '回{まわ}し', reason: '錯誤：連用。' },
+            { text: '回{まわ}して', reason: '正確！五段動詞 su 結尾變 shite。' },
+            { text: '見{み}せて', reason: '那是「展示」。' },
+            { text: '回{まわ}る', reason: '錯誤：辭書形。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 su 結尾變 shite。'
+    },
+    // 4. 満ちる (Michiru)
+    {
+        id: 'n3_v1399_michiru_1',
+        prob: '自信{じしん}に ______。',
+        prob_zh: '*充滿* 自信。',
+        level: 'N3',
+        options: [
+            { text: '満{み}ちています', reason: '正確！一段動詞。表示狀態。' },
+            { text: '満{み}ちます', reason: '正確！一段動詞。表示未來。' },
+            { text: '満{み}たします', reason: '那是他動詞「滿足/填滿」。' },
+            { text: '満{み}ち', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞「満ちる」(michiru)。'
+    },
+    {
+        id: 'n3_v1399_michiru_2',
+        prob: '月{つき}が ______。',
+        prob_zh: '月亮 *圓* 了。',
+        level: 'N3',
+        options: [
+            { text: '満{み}ち', reason: '錯誤：連用。' },
+            { text: '満{み}ちた', reason: '正確！一段去「る」加「た」。' },
+            { text: '満{み}ちて', reason: '錯誤：接續。' },
+            { text: '出{で}た', reason: '那是「出來」。' }],
+        correctIndex: 1,
+        tag: 'ta',
+        correctRule: '【活用】一段動詞去「る」加「た」。'
+    },
+    // 5. 向く (Muku)
+    {
+        id: 'n3_v1399_muku_1',
+        prob: '右{みぎ}を ______。',
+        prob_zh: '*向* 右。',
+        level: 'N3',
+        options: [
+            { text: '向{む}きます', reason: '正確！五段動詞。' },
+            { text: '向{む}けます', reason: '那是他動詞「朝向」。' },
+            { text: '行{い}きます', reason: '那是「去」。' },
+            { text: '向{む}き', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「向く」(自動詞) 與 「向ける」(他動詞)。'
+    },
+    {
+        id: 'n3_v1399_muku_2',
+        prob: '自分{じぶん}に ______ います。',
+        prob_zh: '*適合* 自已。',
+        level: 'N3',
+        options: [
+            { text: '向{む}き', reason: '錯誤：連用。' },
+            { text: '向{む}いて', reason: '正確！五段動詞 i 音便 (ku 變 ite)。' },
+            { text: '合{あ}って', reason: '雖然意思可以，但「向き」常用於傾向。' },
+            { text: '向{む}か', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'teiru',
+        correctRule: '【活用】五段動詞 ku 結尾變 ite。'
+    },
+    // 6. 向ける (Mukeru)
+    {
+        id: 'n3_v1399_mukeru_1',
+        prob: 'カメラを ______。',
+        prob_zh: '*對準* 攝影機。',
+        level: 'N3',
+        options: [
+            { text: '向{む}けます', reason: '正確！一段他動詞。' },
+            { text: '向{む}きます', reason: '錯誤：自動詞(面向)。' },
+            { text: '撮{と}ります', reason: '那是「拍攝」。' },
+            { text: '向{む}け', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「向ける」(他動詞，使朝向) 與 「向く」(自動詞)。'
+    },
+    {
+        id: 'n3_v1399_mukeru_2',
+        prob: '子供{こども}に ______ 書{か}かれた本{ほん}。',
+        prob_zh: '*面向* 兒童而寫的書。',
+        level: 'N3',
+        options: [
+            { text: '向{む}け', reason: '正確！一段動詞連用形。' },
+            { text: '向{む}けて', reason: '正確！用於「向けた」或是「向けて」。' },
+            { text: '向{む}けら', reason: '錯誤：未然。' },
+            { text: '向{む}け', reason: '重複項。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 7. 結ぶ (Musubu)
+    {
+        id: 'n3_v1399_musubu_1',
+        prob: '靴紐{くつひも}を ______。',
+        prob_zh: '*繫* 鞋帶。',
+        level: 'N3',
+        options: [
+            { text: '結{むす}びます', reason: '正確！五段動詞。' },
+            { text: '締{し}めます', reason: '那是「繫緊(如皮帶)」。' },
+            { text: '結{むす}ん', reason: '錯誤：撥音便。' },
+            { text: '結{むす}ぶ', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「結ぶ」(musubu)。'
+    },
+    {
+        id: 'n3_v1399_musubu_2',
+        prob: '縁{えん}を ______。',
+        prob_zh: '*結* 緣。',
+        level: 'N3',
+        options: [
+            { text: '結{むす}び', reason: '錯誤：連用。' },
+            { text: '結{むす}んで', reason: '正確！五段動詞撥音便。' },
+            { text: '作{つく}って', reason: '那是「製作」。' },
+            { text: '結{むす}ば', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 bu 結尾變 nde。'
+    },
+    // 8. 命じる (Meijiru)
+    {
+        id: 'n3_v1399_meijiru_1',
+        prob: '中止{ちゅうし}を ______。',
+        prob_zh: '*命令* 中止。',
+        level: 'N3',
+        options: [
+            { text: '命{めい}じます', reason: '正確！一段動詞。' },
+            { text: '命令{めいれい}します', reason: '名詞+する。' },
+            { text: '言{い}います', reason: '那是「說」。' },
+            { text: '命{めい}じ', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段(或サ變)動詞「命じる」(meijiru)。'
+    },
+    {
+        id: 'n3_v1399_meijiru_2',
+        prob: ' ______ られた。',
+        prob_zh: '*被命令* 了。',
+        level: 'N3',
+        options: [
+            { text: '命{めい}じ', reason: '錯誤：連用。' },
+            { text: '命{めい}じら', reason: '正確！一段受身形未然形。' },
+            { text: '命{めい}ぜら', reason: '那是サ變活用受身(古風)。' },
+            { text: '命{めい}じた', reason: '那是使役/過去。' }],
+        correctIndex: 1,
+        tag: 'passive',
+        correctRule: '【活用】一段動詞受身形去「る」加「られる」。'
+    },
+    // 9. 申し込む (Moushikomu)
+    {
+        id: 'n3_v1399_moushikomu_1',
+        prob: '大会{たいかい}に ______。',
+        prob_zh: '向大會 *報名/申請*。',
+        level: 'N3',
+        options: [
+            { text: '申{もう}し込{こ}みます', reason: '正確！五段複合動詞。' },
+            { text: '願{ねが}います', reason: '那是「祈願/拜託」。' },
+            { text: '申{もう}し込{こ}み', reason: '錯誤：連用。' },
+            { text: '出{だ}します', reason: '那是「提交」。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段複合動詞「申し込む」(moushikomu) ます形。'
+    },
+    {
+        id: 'n3_v1399_moushikomu_2',
+        prob: '結婚{けっこん}を ______。',
+        prob_zh: '*求* 婚。 (申請結婚)',
+        level: 'N3',
+        options: [
+            { text: '申{もう}し込{こ}み', reason: '錯誤：連用。' },
+            { text: '申{もう}し込{こ}んだ', reason: '正確！五段撥音便過去式。' },
+            { text: '言{い}った', reason: '太隨意。' },
+            { text: 'プロポーズした', reason: '雖然常用，但此處考「申し込む」。' }],
+        correctIndex: 1,
+        tag: 'ta',
+        correctRule: '【活用】五段動詞 mu 結尾變 nda。'
+    },
+    // 10. 燃える (Moeru)
+    {
+        id: 'n3_v1399_moeru_1',
+        prob: '家{いえ}が ______。',
+        prob_zh: '房子 *著火/燃燒*。',
+        level: 'N3',
+        options: [
+            { text: '燃{も}えます', reason: '正確！一段自動詞。' },
+            { text: '燃{も}やします', reason: '錯誤：他動詞(焚燒)。' },
+            { text: '火{ひ}がつく', reason: '慣用句，「燃える」是單個動詞。' },
+            { text: '燃{も}え', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「燃える」(自動詞) 與 「燃やす」(他動詞)。'
+    },
+    {
+        id: 'n3_v1399_moeru_2',
+        prob: ' ______ ゴミ。',
+        prob_zh: '可燃 *燃燒* 垃圾。',
+        level: 'N3',
+        options: [
+            { text: '燃{も}え', reason: '錯誤：連用。' },
+            { text: '燃{も}える', reason: '正確！一段動詞連體形。' },
+            { text: '燃{も}やせる', reason: '那是「能燒的」。' },
+            { text: '燃{も}えな', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞辭書形即為連體形。'
+    },
+    // 11. 持ち上げる (Mochiageru)
+    {
+        id: 'n3_v1399_mochiageru_1',
+        prob: '重{おも}い荷物{にもつ}を ______。',
+        prob_zh: '*抬起* 重物。',
+        level: 'N3',
+        options: [
+            { text: '持{も}ち上{あ}げます', reason: '正確！一段複合動詞。' },
+            { text: '持{も}ちます', reason: '那是「拿著」。' },
+            { text: '揚{あ}げます', reason: '那是「揚起/油炸」。' },
+            { text: '持{も}ち上{あ}げ', reason: '錯誤：連用形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段複合動詞「持ち上げる」(mochiageru)。'
+    },
+    {
+        id: 'n3_v1399_mochiageru_2',
+        prob: ' ______ てあげよう。',
+        prob_zh: '幫你 *抬起來* 吧。',
+        level: 'N3',
+        options: [
+            { text: '持{も}ち上{あ}げ', reason: '錯誤：連用。' },
+            { text: '持{も}ち上{あ}げて', reason: '正確！一段動詞 te 形。' },
+            { text: '持{も}って', reason: '那是「拿著」。' },
+            { text: '持{も}ち上{あ}げ', reason: '重複項。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 12. 用いる (Mochiiru)
+    {
+        id: 'n3_v1399_mochiiru_1',
+        prob: '新{あたら}しい技術{ぎじゅつ}を ______。',
+        prob_zh: '*使用* 新技術。',
+        level: 'N3',
+        options: [
+            { text: '用{もち}います', reason: '正確！一段動詞。' },
+            { text: '使{つか}います', reason: '普通使用。' },
+            { text: '用{もち}い', reason: '錯誤：連用。' },
+            { text: '用{もち}いる', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞「用いる」(mochiiru)。比「使う」正式。'
+    },
+    {
+        id: 'n3_v1399_mochiiru_2',
+        prob: ' ______ られています。',
+        prob_zh: '正被 *使用* 著。',
+        level: 'N3',
+        options: [
+            { text: '用{もち}い', reason: '錯誤：連用。' },
+            { text: '用{もち}い', reason: '正確！一段受身形未然形。' },
+            { text: '使{つか}われ', reason: '語意正確，但考「用いる」。' },
+            { text: '用{もち}い', reason: '重複項。' }],
+        correctIndex: 1,
+        tag: 'passive',
+        correctRule: '【活用】一段動詞受身形去「る」加「られる」。'
+    },
+    // 13. 戻す (Modosu)
+    {
+        id: 'n3_v1399_modosu_1',
+        prob: '本{ほん}を元{もと}に ______。',
+        prob_zh: '把書 *歸還* 原位。',
+        level: 'N3',
+        options: [
+            { text: '戻{もど}します', reason: '正確！五段他動詞。' },
+            { text: '戻{もど}ります', reason: '錯誤：自動詞(返回)。' },
+            { text: '返{かえ}します', reason: '那是「歸還(給人)」。' },
+            { text: '戻{もど}し', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「戻す」(他動詞，使返回) 與 「戻る」(自動詞，返回)。'
+    },
+    {
+        id: 'n3_v1399_modosu_2',
+        prob: '計画{けいかく}を ______。',
+        prob_zh: '把計畫 *回撥/退回*。',
+        level: 'N3',
+        options: [
+            { text: '戻{もど}し', reason: '錯誤：連用。' },
+            { text: '戻{もど}して', reason: '正確！五段動詞 su 結尾變 shite。' },
+            { text: '止{や}めて', reason: '那是「停止」。' },
+            { text: '変{か}えて', reason: '那是「改變」。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 su 結尾變 shite。'
+    },
+    // 14. 基づく (Motozuku)
+    {
+        id: 'n3_v1399_motozuku_1',
+        prob: '事実{じじつ}に ______。',
+        prob_zh: '*基於* 事實。',
+        level: 'N3',
+        options: [
+            { text: '基{もと}づいています', reason: '正確！五段動詞。' },
+            { text: 'よります', reason: '那是「根據/依靠」。' },
+            { text: '基{もと}づく', reason: '錯誤：辭書形。' },
+            { text: '基{もと}づき', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「基づく」(motozuku)。'
+    },
+    {
+        id: 'n3_v1399_motozuku_2',
+        prob: 'データに ______ 判{はん}断{だん}する。',
+        prob_zh: '*根據* 數據判斷。',
+        level: 'N3',
+        options: [
+            { text: '基{もと}づき', reason: '錯誤：連用。' },
+            { text: '基{もと}づいて', reason: '正確！五段動詞 i 音便 (ku 變 ite)。' },
+            { text: '対{たい}して', reason: '那是「對於」。' },
+            { text: '基{もと}づか', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 ku 結尾變 ite。'
+    },
+    // 15. 求める (Motomeru)
+    {
+        id: 'n3_v1399_motomeru_1',
+        prob: '平和{へいわ}を ______。',
+        prob_zh: '*追求/尋求* 和平。',
+        level: 'N3',
+        options: [
+            { text: '求{もと}めます', reason: '正確！一段動詞。' },
+            { text: 'さがします', reason: '那是「尋找」。' },
+            { text: '願{ねが}います', reason: '那是「祈願」。' },
+            { text: '求{もと}め', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞「求める」(motomeru)。'
+    },
+    {
+        id: 'n3_v1399_motomeru_2',
+        prob: '説明{せつめい}を ______ られた。',
+        prob_zh: '*被要求* 說明。',
+        level: 'N3',
+        options: [
+            { text: '求{もと}め', reason: '錯誤：連用。' },
+            { text: '求{もと}め', reason: '正確！一段受身形未然形。' },
+            { text: '求{もと}ま', reason: '那是五段活用。' },
+            { text: '買{か}わ', reason: '那是「被買」。' }],
+        correctIndex: 1,
+        tag: 'passive',
+        correctRule: '【活用】一段動詞受身形去「る」加「られる」。'
+    },
+    // 16. 貰う (Morau)
+    {
+        id: 'n3_v1399_morau_1',
+        prob: 'お土産{みやげ}を ______。',
+        prob_zh: '*收到/得到* 名產。',
+        level: 'N3',
+        options: [
+            { text: '貰{もら}いました', reason: '正確！五段動詞。' },
+            { text: '受{う}けます', reason: '那是「受」。' },
+            { text: 'あげました', reason: '那是「給予」。' },
+            { text: '貰{もら}う', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「貰う」(morau)。'
+    },
+    {
+        id: 'n3_v1399_morau_2',
+        prob: '教{おそ}えて ______。',
+        prob_zh: '請你 *教教我*。 (請得到教的動作)',
+        level: 'N3',
+        options: [
+            { text: '貰{もら}い', reason: '錯誤：連用。' },
+            { text: '貰{もら}って', reason: '正確！五段動詞 u 音便。' },
+            { text: '頂{いただ}いて', reason: '雖然更禮貌，但考「貰う」。' },
+            { text: '貰{もら}わ', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 u 結尾變 tte。'
+    },
+    // 17. 雇う (Yatou)
+    {
+        id: 'n3_v1399_yatou_1',
+        prob: 'アルバイトを ______。',
+        prob_zh: '*僱用* 工讀生。',
+        level: 'N3',
+        options: [
+            { text: '雇{やと}います', reason: '正確！五段動詞。' },
+            { text: '使{つか}います', reason: '那是「使用」。' },
+            { text: '雇{やと}い', reason: '錯誤：連用。' },
+            { text: '雇{やと}う', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「雇う」(yatou)。'
+    },
+    {
+        id: 'n3_v1399_yatou_2',
+        prob: 'タクシーを ______。',
+        prob_zh: '*包/僱* 計程車。',
+        level: 'N3',
+        options: [
+            { text: '雇{やと}い', reason: '錯誤：連用。' },
+            { text: '雇{やと}って', reason: '正確！五段動詞 u 音便。' },
+            { text: '呼{よ}んで', reason: '那是「招呼/叫」。' },
+            { text: '雇{やと}わ', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 u 結尾變 tte。'
+    },
+    // 18. 破る (Yaburu)
+    {
+        id: 'n3_v1399_yaburu_1',
+        prob: '紙{かみ}を ______。',
+        prob_zh: '*撕破* 紙。',
+        level: 'N3',
+        options: [
+            { text: '破{やぶ}ります', reason: '正確！五段他動詞。' },
+            { text: '破{やぶ}れます', reason: '錯誤：自動詞(破裂)。' },
+            { text: '割{わ}ります', reason: '那是「打破(硬物)」。' },
+            { text: '破{やぶ}り', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「破る」(他動詞) 與 「破れる」(自動詞)。'
+    },
+    {
+        id: 'n3_v1399_yaburu_2',
+        prob: '約束{やくそく}を ______。',
+        prob_zh: '*違背* 約定。',
+        level: 'N3',
+        options: [
+            { text: '破{やぶ}り', reason: '錯誤：連用。' },
+            { text: '破{やぶ}った', reason: '正確！五段促音便過去式。' },
+            { text: '忘{わす}れた', reason: '那是「忘記」。' },
+            { text: '破{やぶ}れ', reason: '錯誤：自動詞。' }],
+        correctIndex: 1,
+        tag: 'ta',
+        correctRule: '【活用】五段動詞 ru 結尾變 tta。'
+    },
+    // 19. 辞める (Yameru)
+    {
+        id: 'n3_v1399_yameru_1',
+        prob: '仕事{しごと}を ______。',
+        prob_zh: '*辭掉/停止* 工作。',
+        level: 'N3',
+        options: [
+            { text: '辞{や}めます', reason: '正確！一段動詞。' },
+            { text: '止{や}めます', reason: '正確！(漢字不同但常用語同)。' },
+            { text: '辞{や}め', reason: '錯誤：連用。' },
+            { text: '休{やす}みます', reason: '那是「休息」。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段動詞「辞める」(yameru)。'
+    },
+    {
+        id: 'n3_v1399_yameru_2',
+        prob: '学校{がっこう}を ______。',
+        prob_zh: '*退學/輟學*。',
+        level: 'N3',
+        options: [
+            { text: '辞{や}め', reason: '錯誤：連用。' },
+            { text: '辞{や}めて', reason: '正確！一段去「る」加「て」。' },
+            { text: '出{で}て', reason: '雖然可以用，但「辞める」指主動放棄。' },
+            { text: '辞{や}め', reason: '重複項。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 20. 譲る (Yuzuru)
+    {
+        id: 'n3_v1399_yuzuru_1',
+        prob: '席{せき}を ______。',
+        prob_zh: '*讓* 座。',
+        level: 'N3',
+        options: [
+            { text: '譲{ゆず}ります', reason: '正確！五段動詞。' },
+            { text: '空{あ}けます', reason: '那是「騰出」。' },
+            { text: '譲{ゆず}り', reason: '錯誤：連用。' },
+            { text: '譲{ゆず}る', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「譲る」(yuzuru)。'
+    },
+    {
+        id: 'n3_v1399_yuzuru_2',
+        prob: '後{あと}を ______。',
+        prob_zh: '*讓出* 指揮/後續。',
+        level: 'N3',
+        options: [
+            { text: '譲{ゆず}り', reason: '錯誤：連用。' },
+            { text: '譲{ゆず}って', reason: '正確！五段動詞 ru 音便。' },
+            { text: '渡{わた}して', reason: '那是「交付」。' },
+            { text: '譲{ゆず}ら', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 ru 結尾變 tte。'
+    },
+    // 21. 酔う (You)
+    {
+        id: 'n3_v1399_you_1',
+        prob: '酒{さけ}に ______。',
+        prob_zh: '*喝醉* 酒。',
+        level: 'N3',
+        options: [
+            { text: '酔{よ}いました', reason: '正確！五段動詞。' },
+            { text: '飲{の}みました', reason: '那是「喝」。' },
+            { text: '酔{よ}い', reason: '錯誤：連用。' },
+            { text: '酔{よ}う', reason: '錯誤：辭書形。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「酔う」(you)。'
+    },
+    {
+        id: 'n3_v1399_you_2',
+        prob: '車{くるま}に ______。',
+        prob_zh: '*暈* 車。',
+        level: 'N3',
+        options: [
+            { text: '酔{よ}い', reason: '錯誤：連用。' },
+            { text: '酔{よ}って', reason: '正確！五段動詞 u 音便。' },
+            { text: '困{こま}って', reason: '那是「困擾」。' },
+            { text: '酔{よ}わ', reason: '錯誤：否定。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 u 結尾變 tte。'
+    },
+    // 22. 横切る (Yokogiru)
+    {
+        id: 'n3_v1399_yokogiru_1',
+        prob: '道{みち}を ______。',
+        prob_zh: '*穿越* 道路。',
+        level: 'N3',
+        options: [
+            { text: '横切{よこぎ}ります', reason: '正確！五段動詞。' },
+            { text: '渡{わた}ります', reason: '那是「渡過」。' },
+            { text: '通{とお}ります', reason: '那是「通過」。' },
+            { text: '横切{よこぎ}り', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「横切る」(yokogiru)。'
+    },
+    {
+        id: 'n3_v1399_yokogiru_2',
+        prob: ' ______ はいけません。',
+        prob_zh: '不能 *穿越*。',
+        level: 'N3',
+        options: [
+            { text: '横切{よこぎ}り', reason: '錯誤：連用。' },
+            { text: '横切{よこぎ}って', reason: '正確！五段動詞 ru 音便。' },
+            { text: '横切{よこぎ}ら', reason: '錯誤：否定。' },
+            { text: '横切{よこぎ}れ', reason: '錯誤：命令。' }],
+        correctIndex: 1,
+        tag: 'te',
+        correctRule: '【活用】五段動詞 ru 結尾變 tte。'
+    },
+    // 23. 止す (Yosu)
+    {
+        id: 'n3_v1399_yosu_1',
+        prob: '冗談{じょうだん}は ______。',
+        prob_zh: '*停止* 玩笑吧。',
+        level: 'N3',
+        options: [
+            { text: '止{よ}しなさい', reason: '正確！五段動詞命令/建議。' },
+            { text: '止{や}めなさい', reason: '正確！但考「止す」。' },
+            { text: '止{よ}す', reason: '錯誤：辭書形。' },
+            { text: '止{よ}し', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞「止す」(yosu)。常用於口語命令或勸止。'
+    },
+    {
+        id: 'n3_v1399_yosu_2',
+        prob: ' ______ ほうがいい。',
+        prob_zh: '*停止* 比較好。',
+        level: 'N3',
+        options: [
+            { text: '止{よ}し', reason: '錯誤：連用。' },
+            { text: '止{よ}した', reason: '正確！五段促音便過去式。' },
+            { text: '止{よ}す', reason: '錯誤：辭書形。' },
+            { text: '止{や}めた', reason: '正確！但考「止す」。' }],
+        correctIndex: 1,
+        tag: 'ta',
+        correctRule: '【活用】五段動詞 su 結尾變 shita。'
+    },
+    // 24. 論じる (Ronjiru)
+    {
+        id: 'n3_v1399_ronjiru_1',
+        prob: '問題{もんだい}を ______。',
+        prob_zh: '*論述/討論* 問題。',
+        level: 'N3',
+        options: [
+            { text: '論{ろん}じます', reason: '正確！一段動詞。' },
+            { text: '議論{ぎろん}します', reason: '正確！但考「論じる」。' },
+            { text: '話{はな}します', reason: '太隨意。' },
+            { text: '論{ろん}じ', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'conjugation',
+        correctRule: '【活用】一段(或サ變)動詞「論じる」(ronjiru)。'
+    },
+    {
+        id: 'n3_v1399_ronjiru_2',
+        prob: ' ______ られています。',
+        prob_zh: '正被 *討論* 著。',
+        level: 'N3',
+        options: [
+            { text: '論{ろん}じ', reason: '錯誤：連用。' },
+            { text: '論{ろん}じら', reason: '正確！一段受身形未然形。' },
+            { text: '論{ろん}ぜら', reason: '那是サ變活用受身(古風)。' },
+            { text: '話{はな}さ', reason: '那是「說」。' }],
+        correctIndex: 1,
+        tag: 'passive',
+        correctRule: '【活用】一段動詞受身形去「る」加「られる」。'
+    },
+    // 25. 割る (Wareru/Waru) - Table says wareru 759
+    {
+        id: 'n3_v1399_wareru_1',
+        prob: 'コップが ______。',
+        prob_zh: '杯子 *破了*。',
+        level: 'N3',
+        options: [
+            { text: '割{わ}れました', reason: '正確！一段自動詞。' },
+            { text: '割{わ}りました', reason: '錯誤：他動詞(打破)。' },
+            { text: '破{やぶ}れました', reason: '那是「撕破(紙/布)」。' },
+            { text: '割{わ}れ', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'transitive',
+        correctRule: '【自他動詞】「割れる」(自動詞) 與 「割る」(他動詞)。'
+    },
+    {
+        id: 'n3_v1399_wareru_2',
+        prob: ' ______ れています。',
+        prob_zh: '正 *破* 著。',
+        level: 'N3',
+        options: [
+            { text: '割{わ}れ', reason: '錯誤：連用。' },
+            { text: '割{わ}れて', reason: '正確！一段動詞 te 形。' },
+            { text: '割{わ}れ', reason: '重複項。' },
+            { text: '割{わ}って', reason: '錯誤：他動詞。' }],
+        correctIndex: 1,
+        tag: 'teiru',
+        correctRule: '【活用】一段動詞去「る」加「て」。'
+    },
+    // 26. 落ち着く (Ochitsuku)
+    {
+        id: 'n3_v1399_ochitsuku_1',
+        prob: ' ______ ください。',
+        prob_zh: '請 *冷靜/平靜* 下來。',
+        level: 'N3',
+        options: [
+            { text: '落{お}ち着{つ}いて', reason: '正確！五段複合動詞 i 音便 (ku 變 ite)。' },
+            { text: '安心{あんしん}して', reason: '那是「放心」。' },
+            { text: '静{しず}かにして', reason: '那是「安靜」。' },
+            { text: '落{お}ち着{つ}き', reason: '錯誤：連用。' }],
+        correctIndex: 0,
+        tag: 'te',
+        correctRule: '【活用】五段複合動詞「落ち着く」(ochitsuku)。'
+    },
+    {
+        id: 'n3_v1399_ochitsuku_2',
+        prob: '生活{せいかつ}が ______。',
+        prob_zh: '生活 *安定* 了。',
+        level: 'N3',
+        options: [
+            { text: '落{お}ち着{つ}き', reason: '錯誤：連用。' },
+            { text: '落{お}ち着{つ}いた', reason: '正確！五段過去式。' },
+            { text: '落{お}ち着{つ}き', reason: '重複項。' },
+            { text: '變{か}わった', reason: '那是「改變」。' }],
+        correctIndex: 1,
+        tag: 'conjugation',
+        correctRule: '【活用】五段動詞 ku 結尾變 ita。'
+    },
+    // --- SOP Expanded N3 Batch 13 (The Very Final N3 Items) ---
+    // 1. 幾つ (Ikutsu) - Non-verb in dict
+    {
+        id: 'n3_v1399_ikutsu_1',
+        prob: 'りんごは ______ ありますか。',
+        prob_zh: '蘋果有 *多少個*？',
+        level: 'N3',
+        options: [
+            { text: '幾{いく}つ', reason: '正確！雖非動詞但在字典中被分類。' },
+            { text: '幾{いく}ら', reason: '那是「多少錢」。' },
+            { text: '何{なん}で', reason: '那是「為什麼」。' },
+            { text: '幾{いく}つか', reason: '那是「一些」。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【語彙】「幾つ」(ikutsu) 意為多少個。'
+    },
+    // 2. いただきます (Itadakimasu) - Non-verb in dict
+    {
+        id: 'n3_v1399_itadakimasu_1',
+        prob: '食事{しょくじ}の前に ______。',
+        prob_zh: '吃飯前說 *我要開動了*。',
+        level: 'N3',
+        options: [
+            { text: 'いただきます', reason: '正確！雖非動詞但在字典中被分類。' },
+            { text: 'ごちそうさま', reason: '那是飯後說。' },
+            { text: 'おやすみ', reason: '那是睡前說。' },
+            { text: 'こんにちは', reason: '那是打招呼。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【語彙】「いただきます」是開動前的寒暄。'
+    },
+    // 3. 真っ直ぐ (Massugu) - Non-verb in dict
+    {
+        id: 'n3_v1399_massugu_1',
+        prob: ' ______ 行ってください。',
+        prob_zh: '請 *直直地* 走。',
+        level: 'N3',
+        options: [
+            { text: '真っ直ぐ{まっすぐ}', reason: '正確！雖非動詞但在字典中被分類。' },
+            { text: '右{みぎ}に', reason: '那是「向右」。' },
+            { text: '左{ひだり}に', reason: '那是「向左」。' },
+            { text: 'ゆっくり', reason: '那是「慢慢地」。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【語彙】「真っ直ぐ」(massugu) 意為筆直地。'
+    },
+    // 4. 全く (Mattaku) - Non-verb in dict
+    {
+        id: 'n3_v1399_mattaku_1',
+        prob: ' ______ 知{し}りません。',
+        prob_zh: '*完全* 不知道。',
+        level: 'N3',
+        options: [
+            { text: '少{すこ}しも', reason: '雖然也通，但此處考「全く」。' },
+            { text: '全然{ぜんぜん}', reason: '雖然常用，但此處考「全く」。' },
+            { text: '全{まった}く', reason: '正確！' },
+            { text: 'とても', reason: '那是「非常」。' }],
+        correctIndex: 2,
+        tag: 'vocab',
+        correctRule: '【語彙】「全く」(mattaku) 與否定連用表示完全。'
+    },
+    // 5. よろしく (Yoroshiku) - Non-verb in dict
+    {
+        id: 'n3_v1399_yoroshiku_1',
+        prob: 'どうぞ ______。',
+        prob_zh: '請 *多指教*。',
+        level: 'N3',
+        options: [
+            { text: 'よろしく', reason: '正確！' },
+            { text: 'よろしい', reason: '那是「可以」。' },
+            { text: 'よく', reason: '那是「好好的」。' },
+            { text: 'おねがい', reason: '通常連讀。' }],
+        correctIndex: 0,
+        tag: 'vocab',
+        correctRule: '【語彙】「よろしく」常用於自我介紹或拜託。'
     }
 ];
-
-

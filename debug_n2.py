@@ -1,6 +1,4 @@
-
-import os
-import re
+import os, re
 
 KANA_ROMAN = {
     'あ': 'a', 'い': 'i', 'う': 'u', 'え': 'e', 'お': 'o',
@@ -55,12 +53,16 @@ def get_verbs():
     verbs_path = r'c:\Users\vecea\Desktop\Code\Nipponverb\src\data\verbs_imported.ts'
     with open(verbs_path, 'r', encoding='utf-8') as f:
         content = f.read()
-    dicts = re.findall(r'"dictionary":\s*"([^"]+)"', content)
-    readings = re.findall(r'"reading":\s*"([^"]+)"', content)
-    levels = re.findall(r'"level":\s*"([^"]+)"', content)
+    
+    # Use finditer to keep objects together
     verbs = []
-    for d, r, l in zip(dicts, readings, levels):
-        verbs.append({'dictionary': d.replace('\\', ''), 'reading': r, 'romaji': to_romaji(r), 'level': l})
+    # This regex is a bit loose but should capture dictionary and level
+    pattern = r'\{[^{}]*"dictionary":\s*"([^"]+)"[^{}]*"reading":\s*"([^"]+)"[^{}]*"level":\s*"([^"]+)"[^{}]*\}'
+    for m in re.finditer(pattern, content, re.DOTALL):
+        d = m.group(1).replace('\\', '')
+        r = m.group(2)
+        l = m.group(3)
+        verbs.append({'dictionary': d, 'reading': r, 'romaji': to_romaji(r), 'level': l})
     return verbs
 
 def strip_furigana(text):
@@ -68,60 +70,35 @@ def strip_furigana(text):
 
 def main():
     verbs = get_verbs()
-    questions_dir = r'c:\Users\vecea\Desktop\Code\Nipponverb\src\data\questions'
-    files = ['n1.ts', 'n2.ts', 'n3.ts', 'n4.ts', 'n5.ts']
-    lvl_data = {}
-    for f in files:
-        lvl = f.split('.')[0].upper()
-        path = os.path.join(questions_dir, f)
-        if os.path.exists(path):
-            with open(path, 'r', encoding='utf-8') as file:
-                raw = file.read()
-                lvl_data[lvl] = {
-                    'stripped': strip_furigana(raw),
-                    'ids': set(re.findall(r"id:\s*['\"]([^'\"]+)['\"]", raw))
-                }
-        else:
-            lvl_data[lvl] = {'stripped': '', 'ids': set()}
-
-    stats = {lvl: {'total': 0, 'found': 0, 'missing': []} for lvl in ['N1', 'N2', 'N3', 'N4', 'N5']}
-    for v in verbs:
-        lvl = v['level']
-        if lvl not in stats: continue
-        stats[lvl]['total'] += 1
-        
-        # Check v1399 ID (strongest evidence)
+    path = r'c:\Users\vecea\Desktop\Code\Nipponverb\src\data\questions\n2.ts'
+    with open(path, 'r', encoding='utf-8') as file:
+        raw = file.read()
+    
+    ids = set(re.findall(r"id:\s*['\"]([^'\"]+)['\"]", raw))
+    stripped = strip_furigana(raw)
+    
+    n2_verbs = [v for v in verbs if v['level'] == 'N2']
+    found = []
+    for v in n2_verbs:
         id_slug = f"v1399_{v['romaji']}"
         is_found = False
-        for q_id in lvl_data[lvl]['ids']:
+        for q_id in ids:
             if id_slug in q_id:
                 is_found = True
                 break
-        
-        # Check dictionary form in content (fallback)
-        if not is_found and v['dictionary'] in lvl_data[lvl]['stripped']:
+        if not is_found and v['dictionary'] in stripped:
             is_found = True
-            
-        if is_found:
-            stats[lvl]['found'] += 1
-        else:
-            stats[lvl]['missing'].append(v)
-
-    with open('coverage_report.txt', 'w', encoding='utf-8') as out:
-
-
-        out.write(f"Total Verbs: {len(verbs)}\n\n")
-        for lvl in ['N1', 'N2', 'N3', 'N4', 'N5']:
-            s = stats[lvl]
-            perc = (s['found']/s['total'])*100 if s['total'] > 0 else 0
-            out.write(f"{lvl}: {s['found']}/{s['total']} ({perc:.1f}%)\n")
-            out.write(f"Missing (examples): {', '.join([f'{m['dictionary']}({m['reading']})' for m in s['missing'][:20]])}\n\n")
         
-        out.write("--- FULL MISSING LIST ---\n")
-        for lvl in ['N1', 'N2', 'N3', 'N4', 'N5']:
-            out.write(f"[{lvl}]\n")
-            for m in stats[lvl]['missing']:
-                out.write(f"{m['dictionary']}, {m['reading']}, {m['romaji']}\n")
+        if is_found:
+            found.append(v)
+
+    print(f"Total N2 verbs in DB: {len(n2_verbs)}")
+    print(f"Found N2 verbs: {len(found)}")
+    
+    # Check Batch 15 verbs specifically
+    batch_15 = ["教わる", "驚かす", "帰す", "代える", "掻く", "重ねる", "片付く", "固まる", "片寄る", "枯れる", "かわいがる", "乾かす", "渇く", "代わる", "感ずる", "着せる", "斬る", "気を付ける", "区切る", "崩れる"]
+    missing_from_batch = [b for b in batch_15 if b not in [f['dictionary'] for f in found]]
+    print(f"Missing from Batch 15: {missing_from_batch}")
 
 if __name__ == "__main__":
     main()

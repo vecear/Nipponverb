@@ -6,8 +6,8 @@ Missing (examples): 有難う(ありがとう), いく(いく), 戴きます(い
 N2: 91/393 (23.2%)
 Missing (examples): 会う(あう), あてはまる(あてはまる), あてはめる(あてはめる), あぶる(あぶる), 余る(あまる), 編む(あむ), 在る(ある), 言い出す(いいだす), 言い付ける(いいつける), 威張る(いばる), 嫌がる(いやがる), 炒る(いる), 浮かぶ(うかぶ), 浮かべる(うかべる), 浮く(うく), 討つ(うつ), 映す(うつす), 裏返す(うらがえす), 応ずる(おうずる), 納める(おさめる)
 
-N3: 145/236 (61.4%)
-Missing (examples): 幾つ(いくつ), いただきます(いただきます), 為る(なる), 注ぐ(そそぐ), 育つ(そだつ), 備える(そなえる), 確かめる(たしかめる), 助ける(たすける), 戦う(たたかう), 叩く(たたく), 立ち上がる(たちあがる), 経つ(たつ), 黙る(だまる), 試す(ためす), 掴む(つかむ), 就く(つく), 詰める(つめる), 積もる(つもる), 出会う(であう), 適する(てきする)
+N3: 236/236 (100.0%)
+Missing (examples): 
 
 N4: 159/159 (100.0%)
 Missing (examples): 
@@ -707,96 +707,5 @@ Missing (examples):
 填まる, はまる, hamaru
 跡切れる, とぎれる, togireru
 [N3]
-幾つ, いくつ, ikutsu
-いただきます, いただきます, itadakimasu
-為る, なる, naru
-注ぐ, そそぐ, sosogu
-育つ, そだつ, sodatsu
-備える, そなえる, sonaeru
-確かめる, たしかめる, tashikameru
-助ける, たすける, tasukeru
-戦う, たたかう, tatakau
-叩く, たたく, tataku
-立ち上がる, たちあがる, tachiagaru
-経つ, たつ, tatsu
-黙る, だまる, damaru
-試す, ためす, tamesu
-掴む, つかむ, tsukamu
-就く, つく, tsuku
-詰める, つめる, tsumeru
-積もる, つもる, tsumoru
-出会う, であう, deau
-適する, てきする, tekisuru
-通す, とおす, toosu
-通り過ぎる, とおりすぎる, toorisugiru
-解ける, とける, tokeru
-届く, とどく, todoku
-飛ばす, とばす, tobasu
-飛び出す, とびだす, tobidasu
-取り上げる, とりあげる, toriageru
-取れる, とれる, toreru
-流す, ながす, nagasu
-眺める, ながめる, nagameru
-流れる, ながれる, nagareru
-怠ける, なまける, namakeru
-悩む, なやむ, nayamu
-握る, にぎる, nigiru
-抜ける, ぬける, nukeru
-濡れる, ぬれる, nureru
-残す, のこす, nokosu
-乗せる, のせる, noseru
-除く, のぞく, nozoku
-伸ばす, のばす, nobasu
-伸びる, のびる, nobiru
-述べる, のべる, noberu
-計る, はかる, hakaru
-外す, はずす, hazusu
-罰する, ばっする, bassuru
-話し合う, はなしあう, hanashiau
-離す, はなす, hanasu
-放す, ほかす, hokasu
-離れる, はなれる, hanareru
-省く, はぶく, habuku
-張る, はる, haru
-轢く, ひく, hiku
-引っ張る, ひっぱる, hipparu
-含む, ふくむ, fukumu
-振る, ふる, furu
-震える, ふるえる, furueru
-触れる, ふれる, fureru
-減る, へる, heru
-吠える, ほえる, hoeru
-微笑む, ほほえむ, hohoemu
-任せる, まかせる, makaseru
-増す, ます, masu
-真っ直ぐ, まっすぐ, massugu
-全く, まったく, mattaku
-学ぶ, まなぶ, manabu
-招く, まねく, maneku
-回す, まわす, mawasu
-満ちる, みちる, michiru
-向く, むく, muku
-向ける, むける, mukeru
-結ぶ, むすぶ, musubu
-命じる, めいじる, meijiru
-申し込む, もうしこむ, moushikomu
-燃える, もえる, moeru
-持ち上げる, もちあげる, mochiageru
-用いる, もちいる, mochiiru
-戻す, もどす, modosu
-基づく, もとづく, motozuku
-求める, もとめる, motomeru
-貰う, もらう, morau
-雇う, やとう, yatou
-破る, やぶる, yaburu
-辞める, やめる, yameru
-譲る, ゆずる, yuzuru
-酔う, よう, you
-横切る, よこぎる, yokogiru
-止す, よす, yosu
-よろしく, よろしく, yoroshiku
-論じる, ろんじる, ronjiru
-割る, われる, wareru
-落ち着く, おちつく, ochitsuku
 [N4]
 [N5]
