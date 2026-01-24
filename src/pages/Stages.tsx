@@ -293,7 +293,7 @@ const Stages = () => {
         </h3>
 
         <div className="space-y-3">
-          {currentQuestion.options.map((option, _idx) => (
+          {(currentQuestion.options || []).map((option, _idx) => (
             <button
               key={_idx}
               onClick={() => handleAnswer(currentQuestion.id, option)}

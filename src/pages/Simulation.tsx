@@ -313,11 +313,11 @@ const Simulation = () => {
 
       <div className="card mb-6">
         <h3 className="text-2xl font-semibold mb-6 whitespace-pre-wrap">
-          <FuriganaText text={currentQuestion.stem} />
+          <FuriganaText text={currentQuestion.stem || ''} />
         </h3>
 
         <div className="space-y-3">
-          {currentQuestion.options.map((option, _idx) => (
+          {(currentQuestion.options || []).map((option, _idx) => (
             <button
               key={_idx}
               onClick={() => handleAnswer(currentQuestion.id, option)}

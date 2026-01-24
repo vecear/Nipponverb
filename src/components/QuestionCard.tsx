@@ -35,12 +35,12 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
             {question.level}
           </span>
           <h2 className="text-lg md:text-2xl font-zen font-bold mb-1 break-words text-balance">
-            <FuriganaText text={question.stem} />
+            <FuriganaText text={question.stem || ''} />
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-          {question.options.map((option, index) => (
+          {(question.options || []).map((option, index) => (
             <button
               key={index}
               onClick={() => handleAnswerClick(option)}
@@ -143,7 +143,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
                 </div>
               ) : (
                 /* Fallback for legacy questions */
-                (showExplanation || !isCorrect) && (
+                (showExplanation || !isCorrect) && question.explanation && (
                   <p className="text-xs md:text-sm text-white/80">
                     <FuriganaText text={question.explanation} />
                   </p>

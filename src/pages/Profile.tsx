@@ -7,7 +7,7 @@ import { useUserStore } from '../store/useUserStore'
 import { updateUserProfile } from '../services/userService'
 import { usePracticeStore } from '../store/usePracticeStore'
 import ExpBar from '../components/ExpBar'
-import { getJobById, NOVICE_TITLE } from '../data/jobs'
+import { getJobById } from '../data/jobs'
 import { EXP_CONSTANTS, DEFAULT_PROGRESSION } from '../types/progression'
 
 

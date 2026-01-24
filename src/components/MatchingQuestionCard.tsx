@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
-import { useTranslation } from 'react-i18next'
 import { Check } from 'lucide-react'
 import { Question, MatchingPair } from '../types'
-import FuriganaText from './FuriganaText'
 
 interface MatchingQuestionCardProps {
     question: Question
@@ -10,7 +8,6 @@ interface MatchingQuestionCardProps {
 }
 
 const MatchingQuestionCard = ({ question, onAnswer }: MatchingQuestionCardProps) => {
-    const { t } = useTranslation()
     const [pairs, setPairs] = useState<{ left: MatchingPair[], right: MatchingPair[] }>({ left: [], right: [] })
 
     // Selection state
