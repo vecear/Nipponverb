@@ -12,6 +12,7 @@ import VerbConjugationGuide from './pages/VerbConjugationGuide'
 import Profile from './pages/Profile'
 import DataManagement from './pages/DataManagement'
 import GrammarList from './pages/GrammarList'
+import GrammarDetail from './pages/GrammarDetail'
 import JobSelection from './pages/JobSelection'
 import Admin from './pages/Admin'
 import ProtectedRoute from './components/ProtectedRoute'
@@ -29,6 +30,7 @@ function App() {
             <Route path="/practice" element={<Practice />} />
             <Route path="/practice/:category" element={<Practice />} />
             <Route path="/grammar" element={<GrammarList />} />
+            <Route path="/grammar/:id" element={<GrammarDetail />} />
             <Route path="/simulation" element={<Simulation />} />
             <Route path="/stages" element={<Stages />} />
             <Route path="/verbs" element={<VerbList />} />

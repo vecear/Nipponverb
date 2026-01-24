@@ -44,3 +44,9 @@ firestore-debug.log
 !.eslintrc.cjs
 
 *.apkg
+
+# Windows reserved names
+NUL
+CON
+PRN
+AUX

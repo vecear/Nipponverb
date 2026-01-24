@@ -1,12 +1,19 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { generateJLPTExam, JLPTExam } from '../data/jlpt-exams'
 import FuriganaText from '../components/FuriganaText'
+import { useAuth } from '../contexts/AuthContext'
+import { useUserStore } from '../store/useUserStore'
+import { addExp, updateUserProgression, calculateExpReward } from '../services/progressionService'
+import { DEFAULT_PROGRESSION } from '../types/progression'
 
 const Simulation = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
+  const { currentUser } = useAuth()
+  const { profile, setProfile } = useUserStore()
+  const hasAwardedExp = useRef(false)
   const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1' | null>(null)
   const [exam, setExam] = useState<JLPTExam | null>(null)
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0)
@@ -195,6 +202,56 @@ const Simulation = () => {
       </div>
     )
   }
+
+  // Award EXP when exam finishes
+  useEffect(() => {
+    const awardSimulationExp = async () => {
+      if (examFinished && exam && currentUser && profile && !hasAwardedExp.current) {
+        hasAwardedExp.current = true
+        try {
+          const progression = profile.progression || DEFAULT_PROGRESSION
+          const gender = profile.gender || 'male'
+
+          // Calculate accuracy
+          let totalScore = 0
+          let totalQuestions = 0
+          exam.sections.forEach((section) => {
+            section.questions.forEach((q) => {
+              totalQuestions++
+              if (answers[q.id] === q.correct) {
+                totalScore++
+              }
+            })
+          })
+          const accuracy = totalQuestions > 0 ? Math.round((totalScore / totalQuestions) * 100) : 0
+
+          // Calculate EXP based on accuracy (100-500)
+          const expAmount = calculateExpReward('simulation_complete', { accuracy })
+
+          // Add EXP and update progression
+          const { newProgression } = addExp(progression, expAmount, gender)
+          await updateUserProgression(currentUser.uid, newProgression)
+
+          // Update local profile state
+          setProfile({
+            ...profile,
+            progression: newProgression,
+          })
+        } catch (error) {
+          console.error('Failed to award simulation EXP:', error)
+        }
+      }
+    }
+
+    awardSimulationExp()
+  }, [examFinished, exam, currentUser, profile, answers, setProfile])
+
+  // Reset hasAwardedExp when starting new exam
+  useEffect(() => {
+    if (!examFinished) {
+      hasAwardedExp.current = false
+    }
+  }, [examFinished])
 
   // Results screen
   if (examFinished && exam) {

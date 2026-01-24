@@ -1,8 +1,10 @@
 import { useState, useMemo } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Search } from 'lucide-react'
 import { grammarList } from '../data/grammarList'
 
 const GrammarList = () => {
+    const navigate = useNavigate()
     const [selectedLevel, setSelectedLevel] = useState<'ALL' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1'>('ALL')
     const [searchQuery, setSearchQuery] = useState('')
 
@@ -82,7 +84,11 @@ const GrammarList = () => {
                             <tbody className="divide-y divide-white/5">
                                 {filteredGrammar.length > 0 ? (
                                     filteredGrammar.map((item) => (
-                                        <tr key={item.id} className="hover:bg-white/5 transition-colors group">
+                                        <tr
+                                            key={item.id}
+                                            onClick={() => navigate(`/grammar/${item.id}`)}
+                                            className="hover:bg-white/5 transition-colors group cursor-pointer"
+                                        >
                                             <td className="p-4">
                                                 <span className={`inline-block px-2 py-1 rounded text-xs font-bold ${item.level === 'N5' ? 'bg-blue-500/20 text-blue-400' :
                                                     item.level === 'N4' ? 'bg-green-500/20 text-green-400' :

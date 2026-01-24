@@ -1,11 +1,18 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Stage, getStagesByLevel } from '../data/stages'
+import { useAuth } from '../contexts/AuthContext'
+import { useUserStore } from '../store/useUserStore'
+import { addExp, updateUserProgression } from '../services/progressionService'
+import { DEFAULT_PROGRESSION, EXP_REWARDS } from '../types/progression'
 
 const Stages = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
+  const { currentUser } = useAuth()
+  const { profile, setProfile } = useUserStore()
+  const hasAwardedExp = useRef(false)
   const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1' | null>(null)
   const [selectedStage, setSelectedStage] = useState<Stage | null>(null)
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
@@ -201,6 +208,43 @@ const Stages = () => {
       </div>
     )
   }
+
+  // Award EXP when stage completes
+  useEffect(() => {
+    const awardStageExp = async () => {
+      if (showResults && selectedStage && currentUser && profile && !hasAwardedExp.current) {
+        hasAwardedExp.current = true
+        try {
+          const progression = profile.progression || DEFAULT_PROGRESSION
+          const gender = profile.gender || 'male'
+
+          // Award 200 EXP for completing a stage
+          const expAmount = EXP_REWARDS.STAGE_COMPLETE
+
+          // Add EXP and update progression
+          const { newProgression } = addExp(progression, expAmount, gender)
+          await updateUserProgression(currentUser.uid, newProgression)
+
+          // Update local profile state
+          setProfile({
+            ...profile,
+            progression: newProgression,
+          })
+        } catch (error) {
+          console.error('Failed to award stage EXP:', error)
+        }
+      }
+    }
+
+    awardStageExp()
+  }, [showResults, selectedStage, currentUser, profile, setProfile])
+
+  // Reset hasAwardedExp when starting new stage
+  useEffect(() => {
+    if (!showResults) {
+      hasAwardedExp.current = false
+    }
+  }, [showResults])
 
   // Results screen
   if (showResults && selectedStage) {

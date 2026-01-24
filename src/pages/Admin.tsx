@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../contexts/AuthContext'
@@ -13,7 +13,7 @@ import {
   removeAdmin,
   GameConfig,
 } from '../services/adminService'
-import { getJobById, JOBS } from '../data/jobs'
+import { getJobById, JOBS, NOVICE_TITLE } from '../data/jobs'
 import {
   Settings,
   Users,
@@ -26,6 +26,9 @@ import {
   UserPlus,
   Trash2,
   Crown,
+  Home,
+  ChevronDown,
+  ChevronUp,
 } from 'lucide-react'
 
 const Admin = () => {
@@ -37,6 +40,9 @@ const Admin = () => {
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+  const [showLevelPreview, setShowLevelPreview] = useState(false)
+  const [selectedJobForPreview, setSelectedJobForPreview] = useState<string>('doshin')
+  const [previewGender, setPreviewGender] = useState<'male' | 'female'>('male')
 
   // 遊戲配置
   const [config, setConfig] = useState<GameConfig | null>(null)
@@ -101,18 +107,26 @@ const Admin = () => {
   const handleSaveConfig = async () => {
     if (!config || !currentUser?.email) return
 
+    const confirmed = window.confirm(
+      t('admin.confirmSave', '確定要儲存更改並返回主頁面嗎？')
+    )
+    if (!confirmed) return
+
     setSaving(true)
     setStatus(null)
 
     try {
       await updateGameConfig(config, currentUser.email)
       setStatus({ type: 'success', message: t('admin.saveSuccess', '儲存成功') })
+      // 儲存成功後返回主頁面
+      setTimeout(() => {
+        navigate('/')
+      }, 500)
     } catch (error) {
       console.error('Error saving config:', error)
       setStatus({ type: 'error', message: t('admin.saveError', '儲存失敗') })
+      setSaving(false)
     }
-
-    setSaving(false)
   }
 
   // 重新載入資料
@@ -301,7 +315,7 @@ const Admin = () => {
                 {/* 積分系統配置 */}
                 <div className="mb-8">
                   <h3 className="text-lg font-semibold mb-4 text-electric-cyan">
-                    {t('admin.config.progression', '積分系統')}
+                    {t('admin.config.progression.title', '積分系統')}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
@@ -387,7 +401,7 @@ const Admin = () => {
                 {/* 經驗值獎勵配置 */}
                 <div className="mb-8">
                   <h3 className="text-lg font-semibold mb-4 text-electric-cyan">
-                    {t('admin.config.expRewards', '經驗值獎勵')}
+                    {t('admin.config.expRewards.title', '經驗值獎勵')}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div>
@@ -488,21 +502,221 @@ const Admin = () => {
                   </div>
                 </div>
 
+                {/* 等級預覽表格 */}
+                <div className="mb-8">
+                  <button
+                    onClick={() => setShowLevelPreview(!showLevelPreview)}
+                    className="flex items-center gap-2 text-lg font-semibold mb-4 text-electric-cyan hover:text-electric-cyan/80 transition-colors"
+                  >
+                    {showLevelPreview ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                    {t('admin.config.levelPreview.title', '等級預覽表格')}
+                  </button>
+
+                  {showLevelPreview && (
+                    <div className="space-y-4">
+                      {/* 職業和性別選擇 */}
+                      <div className="flex flex-wrap gap-4 mb-4">
+                        <div>
+                          <label className="block text-sm text-white/60 mb-2">
+                            {t('admin.config.levelPreview.selectJob', '選擇職業')}
+                          </label>
+                          <select
+                            value={selectedJobForPreview}
+                            onChange={(e) => setSelectedJobForPreview(e.target.value)}
+                            className="px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                          >
+                            {JOBS.map((job) => (
+                              <option key={job.id} value={job.id} className="bg-slate-800">
+                                {job.icon} {job.nameTw}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                        <div>
+                          <label className="block text-sm text-white/60 mb-2">
+                            {t('admin.config.levelPreview.selectGender', '選擇性別')}
+                          </label>
+                          <select
+                            value={previewGender}
+                            onChange={(e) => setPreviewGender(e.target.value as 'male' | 'female')}
+                            className="px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                          >
+                            <option value="male" className="bg-slate-800">{t('auth.male', '男性')}</option>
+                            <option value="female" className="bg-slate-800">{t('auth.female', '女性')}</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      {/* 等級表格 */}
+                      <div className="overflow-x-auto max-h-96 overflow-y-auto">
+                        <table className="w-full text-sm">
+                          <thead className="sticky top-0 bg-slate-800/95 backdrop-blur">
+                            <tr className="border-b border-white/10">
+                              <th className="text-left py-3 px-3 text-white/60 font-medium">
+                                {t('admin.config.levelPreview.level', '等級')}
+                              </th>
+                              <th className="text-right py-3 px-3 text-white/60 font-medium">
+                                {t('admin.config.levelPreview.expRequired', '升級所需經驗')}
+                              </th>
+                              <th className="text-right py-3 px-3 text-white/60 font-medium">
+                                {t('admin.config.levelPreview.expDiff', '與前級差異')}
+                              </th>
+                              <th className="text-right py-3 px-3 text-white/60 font-medium">
+                                {t('admin.config.levelPreview.totalExp', '累計經驗值')}
+                              </th>
+                              <th className="text-left py-3 px-3 text-white/60 font-medium">
+                                {t('admin.config.levelPreview.title_name', '稱號')}
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {(() => {
+                              const rows = []
+                              const selectedJob = JOBS.find(j => j.id === selectedJobForPreview)
+                              const stages = selectedJob?.stages[previewGender] || []
+                              let totalExp = 0
+                              let prevExp = 0
+
+                              for (let level = 0; level < config.progression.maxLevel; level++) {
+                                // 計算升級所需經驗值
+                                const expRequired = Math.floor(
+                                  config.progression.baseExp *
+                                  Math.pow(1 + config.progression.growthFactor * level, 2)
+                                )
+                                const expDiff = level === 0 ? 0 : expRequired - prevExp
+
+                                // 取得當前等級的稱號
+                                let titleInfo = null
+                                if (level < config.progression.jobChangeLevel) {
+                                  titleInfo = NOVICE_TITLE
+                                } else {
+                                  // 從最高階段往下找
+                                  for (let i = stages.length - 1; i >= 0; i--) {
+                                    if (level >= stages[i].minLevel) {
+                                      titleInfo = stages[i]
+                                      break
+                                    }
+                                  }
+                                }
+
+                                // 判斷是否為階段起始等級（顯示高亮）
+                                const isStageStart = level === 0 ||
+                                  level === config.progression.jobChangeLevel ||
+                                  stages.some(s => s.minLevel === level)
+
+                                rows.push(
+                                  <tr
+                                    key={level}
+                                    className={`border-b border-white/5 ${
+                                      isStageStart ? 'bg-sakura-pink/10' : 'hover:bg-white/5'
+                                    } transition-colors`}
+                                  >
+                                    <td className="py-2 px-3">
+                                      <span className={`font-bold ${isStageStart ? 'text-sakura-pink' : ''}`}>
+                                        Lv.{level}
+                                      </span>
+                                      {level === config.progression.jobChangeLevel && (
+                                        <span className="ml-2 text-xs px-1.5 py-0.5 bg-electric-cyan/20 text-electric-cyan rounded">
+                                          {t('admin.config.levelPreview.jobChange', '轉職')}
+                                        </span>
+                                      )}
+                                    </td>
+                                    <td className="py-2 px-3 text-right font-mono">
+                                      {expRequired.toLocaleString()}
+                                    </td>
+                                    <td className="py-2 px-3 text-right font-mono text-white/60">
+                                      {level === 0 ? '-' : `+${expDiff.toLocaleString()}`}
+                                    </td>
+                                    <td className="py-2 px-3 text-right font-mono text-electric-cyan">
+                                      {totalExp.toLocaleString()}
+                                    </td>
+                                    <td className="py-2 px-3">
+                                      {titleInfo && (
+                                        <div className="flex items-center gap-2">
+                                          <span className="text-white">{titleInfo.nameJp}</span>
+                                          <span className="text-white/50 text-xs">({titleInfo.nameTw})</span>
+                                        </div>
+                                      )}
+                                    </td>
+                                  </tr>
+                                )
+
+                                totalExp += expRequired
+                                prevExp = expRequired
+                              }
+
+                              return rows
+                            })()}
+                          </tbody>
+                        </table>
+                      </div>
+
+                      {/* 統計資訊 */}
+                      <div className="flex flex-wrap gap-4 p-4 glass rounded-xl">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-gradient">
+                            {(() => {
+                              let total = 0
+                              for (let i = 0; i < config.progression.maxLevel; i++) {
+                                total += Math.floor(
+                                  config.progression.baseExp *
+                                  Math.pow(1 + config.progression.growthFactor * i, 2)
+                                )
+                              }
+                              return total.toLocaleString()
+                            })()}
+                          </div>
+                          <div className="text-sm text-white/60">
+                            {t('admin.config.levelPreview.totalExpToMax', '升滿級總經驗值')}
+                          </div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-electric-cyan">
+                            {Math.floor(
+                              config.progression.baseExp *
+                              Math.pow(1 + config.progression.growthFactor * (config.progression.maxLevel - 1), 2)
+                            ).toLocaleString()}
+                          </div>
+                          <div className="text-sm text-white/60">
+                            {t('admin.config.levelPreview.lastLevelExp', '最後一級所需經驗')}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
                 {/* 最後更新資訊 */}
                 <div className="text-sm text-white/40 mb-6">
                   {t('admin.config.lastUpdated', '最後更新')}: {config.updatedAt.toLocaleString()}{' '}
                   by {config.updatedBy}
                 </div>
 
-                {/* 儲存按鈕 */}
-                <button
-                  onClick={handleSaveConfig}
-                  disabled={saving}
-                  className="btn-primary flex items-center gap-2"
-                >
-                  <Save size={18} />
-                  {saving ? t('common.loading', '載入中...') : t('common.save', '儲存')}
-                </button>
+                {/* 儲存按鈕與返回按鈕 */}
+                <div className="flex gap-3">
+                  <button
+                    onClick={handleSaveConfig}
+                    disabled={saving}
+                    className="btn-primary flex items-center gap-2"
+                  >
+                    <Save size={18} />
+                    {saving ? t('common.loading', '載入中...') : t('common.save', '儲存')}
+                  </button>
+                  <button
+                    onClick={() => {
+                      const confirmed = window.confirm(
+                        t('admin.confirmLeave', '確定要離開嗎？未儲存的更改將會遺失。')
+                      )
+                      if (confirmed) {
+                        navigate('/')
+                      }
+                    }}
+                    className="btn-secondary flex items-center gap-2"
+                  >
+                    <Home size={18} />
+                    {t('admin.backToHome', '返回主頁面')}
+                  </button>
+                </div>
               </div>
             )}
 

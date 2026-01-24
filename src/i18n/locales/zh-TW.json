@@ -353,6 +353,19 @@
         "simulationMax": "模擬考最高獎勵",
         "stageComplete": "完成關卡"
       },
+      "levelPreview": {
+        "title": "等級預覽表格",
+        "selectJob": "選擇職業",
+        "selectGender": "選擇性別",
+        "level": "等級",
+        "expRequired": "升級所需經驗",
+        "expDiff": "與前級差異",
+        "totalExp": "累計經驗值",
+        "title_name": "稱號",
+        "jobChange": "轉職",
+        "totalExpToMax": "升滿級總經驗值",
+        "lastLevelExp": "最後一級所需經驗"
+      },
       "lastUpdated": "最後更新",
       "updatedBy": "更新者",
       "saveSuccess": "配置已儲存",

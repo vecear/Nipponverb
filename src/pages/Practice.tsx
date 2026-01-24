@@ -5,12 +5,16 @@ import { ChevronDown, ChevronUp, Check, X, History } from 'lucide-react'
 import QuestionCard from '../components/QuestionCard'
 import FuriganaText from '../components/FuriganaText'
 import { usePracticeStore, PracticeHistoryEntry } from '../store/usePracticeStore'
+import { useUserStore } from '../store/useUserStore'
+import { useAuth } from '../contexts/AuthContext'
 import { Question } from '../types'
 import { generateGojuonQuestion, generateMatchingQuestion } from '../data/gojuon'
 import MatchingQuestionCard from '../components/MatchingQuestionCard'
 // import { generateVerbQuestion } from '../data/verbs' // Legacy dynamic generator
 import { generateGrammarQuestion } from '../data/grammar'
 import { generateKanjiQuestion } from '../data/kanji'
+import { addExp, updateUserProgression } from '../services/progressionService'
+import { DEFAULT_PROGRESSION, EXP_REWARDS } from '../types/progression'
 
 // Static Question Banks
 import { n5Questions } from '../data/questions/n5'
@@ -27,6 +31,8 @@ const Practice = () => {
   const { t, i18n } = useTranslation()
   const { category } = useParams<{ category: string }>()
   const navigate = useNavigate()
+  const { currentUser } = useAuth()
+  const { profile, setProfile } = useUserStore()
 
   const {
     currentQuestion,
@@ -67,14 +73,44 @@ const Practice = () => {
   const [viewingHistory, setViewingHistory] = useState<PracticeHistoryEntry | null>(null)
   const [hasSavedResult, setHasSavedResult] = useState(false)
 
-  // Save practice result when showing results
+  // Save practice result and award EXP when showing results
   useEffect(() => {
-    if (showResults && !hasSavedResult && answerRecords.length > 0 && category) {
-      const levelToSave = category === 'gojuon' ? selectedSubcategory : selectedLevel
-      savePracticeResult(category, levelToSave)
-      setHasSavedResult(true)
+    const saveResultAndAwardExp = async () => {
+      if (showResults && !hasSavedResult && answerRecords.length > 0 && category) {
+        const levelToSave = category === 'gojuon' ? selectedSubcategory : selectedLevel
+        savePracticeResult(category, levelToSave)
+        setHasSavedResult(true)
+
+        // Award EXP for practice completion
+        if (currentUser && profile) {
+          try {
+            const progression = profile.progression || DEFAULT_PROGRESSION
+            const gender = profile.gender || 'male'
+
+            // Calculate EXP: 10 per correct answer + 50 for completing practice
+            const correctAnswers = answerRecords.filter(r => r.isCorrect).length
+            const expFromCorrect = correctAnswers * EXP_REWARDS.CORRECT_ANSWER
+            const expFromComplete = EXP_REWARDS.PRACTICE_COMPLETE
+            const totalExp = expFromCorrect + expFromComplete
+
+            // Add EXP and update progression
+            const { newProgression } = addExp(progression, totalExp, gender)
+            await updateUserProgression(currentUser.uid, newProgression)
+
+            // Update local profile state
+            setProfile({
+              ...profile,
+              progression: newProgression,
+            })
+          } catch (error) {
+            console.error('Failed to award EXP:', error)
+          }
+        }
+      }
     }
-  }, [showResults, hasSavedResult, answerRecords.length, category, selectedLevel, selectedSubcategory, savePracticeResult])
+
+    saveResultAndAwardExp()
+  }, [showResults, hasSavedResult, answerRecords, category, selectedLevel, selectedSubcategory, savePracticeResult, currentUser, profile, setProfile])
 
   // Reset hasSavedResult when starting new practice
   useEffect(() => {
