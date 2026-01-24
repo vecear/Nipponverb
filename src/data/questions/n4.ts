@@ -1,7 +1,7 @@
 import { StaticQuestion } from './types'
 
 export const n4Questions: StaticQuestion[] = [
-    // 1. Ageru
+    // 1. あげる
     {
         id: 'n4_gen_ageru_1',
         prob: '妹{いもうと}に本{ほん}を ______。',
@@ -52,7 +52,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× くれましたか
 → 原因：給予者是說話者B，接受者是A，方向是「我→你」，故用「あげる」。`
     },
-    // 2. Atsumaru
+    // 2. あつまる
     {
         id: 'n4_gen_atsumaru_1',
         prob: '10時{じゅうじ}に駅{えき}に ______ ください。',
@@ -103,7 +103,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 集{あつ}めて
 → 原因：群眾是自己聚集的，非人為像掃地一樣集中，故用自動詞。`
     },
-    // 3. Atsumeru
+    // 3. あつめる
     {
         id: 'n4_gen_atsumeru_1',
         prob: 'ゴミを ______ 捨ててください。',
@@ -154,7 +154,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 集{あつ}まること
 → 原因：人為的主動收集行為，必須用他動詞。`
     },
-    // 4. Au
+    // 4. あう
     {
         id: 'n4_gen_au_1',
         prob: '駅{えき}で友達{ともだち}に ______。',
@@ -205,7 +205,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 会{あ}いの約束
 → 原因：日文動詞修飾名詞直接用普通形，不像名詞修飾名詞需加「の」。`
     },
-    // 5. Ayamaru
+    // 5. あやまる
     {
         id: 'n4_gen_ayamaru_1',
         prob: '間違{まちが}えたら、すぐに ______。',
@@ -256,7 +256,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 謝{あや}るほうがいい
 → 原因：雖然「辞書形+ほうがいい」文法上存在，但在具體建議某人採取某行動時，慣用「た形」。`
     },
-    // 6. Erabu
+    // 6. えらぶ
     {
         id: 'n4_gen_erabu_1',
         prob: '好{す}きな飲{の}み物{もの}を ______ ください。',
@@ -307,7 +307,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 選{えら}った
 → 原因：撥音便規則。「ぶ」結尾變「んだ」。`
     },
-    // 7. Fueru
+    // 7. ふえる
     {
         id: 'n4_gen_fueru_1',
         prob: 'この町{まち}の人口{じんこう}が ______。',
@@ -358,7 +358,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 増{ふ}やした
 → 原因：觀光客是自然增加的，不是說話者「去增加」他們。`
     },
-    // 8. Furidasu
+    // 8. ふりだす
     {
         id: 'n4_gen_furidasu_1',
         prob: 'テニスを始{はじ}めようとしたら急{きゅう}に雨{あめ}が ______ ので、中止{ちゅうし}にしました。',
@@ -409,7 +409,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 降{ふ}り出{だ}って
 → 原因：「出す」是五段動詞，te形是「出して」，不促音便。`
     },
-    // 9. Futoru
+    // 9. ふとる
     {
         id: 'n4_gen_futoru_1',
         prob: '甘{あま}いものばかり食{た}べて、少{すこ}し ______ しまいました。',
@@ -460,7 +460,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 太{ふと}て
 → 原因：漏掉促音。「って」。`
     },
-    // 10. Goranninaru
+    // 10. ごらんになる
     {
         id: 'n4_gen_goranninaru_1',
         prob: 'こちらの写真{しゃしん}を ______ か。',
@@ -511,7 +511,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 拝見{はいけん}しました
 → 原因：絕對不能對對方的動作使用謙讓語。「拝見」是貶低自己動作以示尊敬，用在對方身上非常失禮。`
     },
-    // 11. Hajimeru
+    // 11. はじめる
     {
         id: 'n4_gen_hajimeru_1',
         prob: '会議{かいぎ}を ______ ましょう。',
@@ -562,7 +562,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 始{はじ}まった
 → 原因：「勉強」是人為意志的行為，非自然發生，故用他動詞。`
     },
-    // 12. Hakobu
+    // 12. はこぶ
     {
         id: 'n4_gen_hakobu_1',
         prob: 'この荷物{にもつ}を部屋{へや}へ ______ ください。',
@@ -613,7 +613,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 運{はこ}んで
 → 原因：「ましょう」接在動詞連用形（ます形去ます）後面。`
     },
-    // 13. Harau
+    // 13. はらう
     {
         id: 'n4_gen_harau_1',
         prob: 'レジで代金{だいきん}を ______。',
@@ -664,7 +664,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 払{はら}て
 → 原因：「う」結尾促音便「って」。`
     },
-    // 14. Hieru
+    // 14. ひえる
     {
         id: 'n4_gen_hieru_1',
         prob: 'このビールはよく ______ いておいしい。',
@@ -715,7 +715,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 冷{ひ}えって
 → 原因：一段動詞te形去る加て。`
     },
-    // 15. Hikaru
+    // 15. ひかる
     {
         id: 'n4_gen_hikaru_1',
         prob: '空{そら}に星{ほし}が ______ いる。',
@@ -766,7 +766,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 光{ひか}っているもの（語法沒錯，但光るもの更慣用做一個概念）
 → 備註：此題選項其實「光っている」語法也對，但選項沒給。選項「光って」是錯的。`
     },
-    // 16. Hikidasu
+    // 16. ひきだす
     {
         id: 'n4_gen_hikidasu_1',
         prob: '銀行{ぎんこう}でお金{かね}を ______ きました。',
@@ -817,7 +817,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 才能{さいのう}を出{だ}す（太口語簡單）
 → 原因：複合動詞語義較精確。`
     },
-    // 17. Hikkosu
+    // 17. ひっこす
     {
         id: 'n4_gen_hikkosu_1',
         prob: '新{あたら}しいアパートに ______ ました。',
@@ -868,7 +868,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 引{ひ}っ越{こ}しんですか
 → 原因：「んです」前接普通形（辭書形），不接ます形或連用形。`
     },
-    // 18. Fumu
+    // 18. ふむ
     {
         id: 'n4_gen_fumu_1',
         prob: '満員{まんいん}電車{でんしゃ}で足{あし}を ______。',
@@ -894,7 +894,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 踏{ふ}めました
 → 原因：混淆可能形與受身形。可能形是e段（me），受身形是a段（ma）。`
     },
-    // 19. Hirou
+    // 19. ひろう
     {
         id: 'n4_gen_hirou_1',
         prob: '公園{こうえん}で財布{さいふ}を ______。',
@@ -945,7 +945,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 拾{ひろ}いて
 → 原因：促音便規則。`
     },
-    // 20. Homeru
+    // 20. ほめる
     {
         id: 'n4_gen_homeru_1',
         prob: 'テストで満点{まんてん}を取{と}ったので、先生{せんせい}にたくさん ______。',
@@ -996,7 +996,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× ほめれた
 → 原因：受身形詞尾是「areru」（五段）或「rareru」（一段）。一段動詞「褒める」應為「褒められる」。`
     },
-    // 21. Ijimeru
+    // 21. いじめる
     {
         id: 'n4_gen_ijimeru_1',
         prob: '動物{どうぶつ}を ______ ないでください。',
@@ -1047,7 +1047,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× いじめっている
 → 原因：受身形「られる」是長音節，不促音便。`
     },
-    // 22. Ikiru
+    // 22. いきる
     {
         id: 'n4_gen_ikiru_1',
         prob: '百歳{ひゃくさい}まで ______ たいです。',
@@ -1098,7 +1098,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 生{い}くている
 → 原因：「ている」前接te形。「生きる」→「生きて」。`
     },
-    // 23. Inoru
+    // 23. いのる
     {
         id: 'n4_gen_inoru_1',
         prob: '世界{せかい}の平和{へいわ}を ______。',
@@ -1149,7 +1149,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 祈{いの}いて
 → 原因：五段動詞「る」結尾，te形促音便。`
     },
-    // 24. Irassharu
+    // 24. いらっしゃる
     {
         id: 'n4_gen_irassharu_1',
         prob: '先生{せんせい}はどちらに ______ か。',
@@ -1200,7 +1200,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× いらっしゃります
 → 原因：注意特殊活用。`
     },
-    // 25. Ireru
+    // 25. いれる
     {
         id: 'n4_gen_ireru_1',
         prob: 'カバンの中{なか}に、地図{ちず}が ______ あります。',
@@ -1226,7 +1226,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 入{はい}ってある
 → 原因：「てある」原則上只接他動詞。「入る」是自動詞，不能接「てある」。`
     },
-    // 26. Isogu
+    // 26. いそぐ
     {
         id: 'n4_gen_isogu_1',
         prob: '時間{じかん}がないから、______ ましょう。',
@@ -1277,7 +1277,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 急{いそ}いて
 → 原因：五段動詞「ぐ」結尾，te形濁音化為「いで」。`
     },
-    // 27. Itadaku
+    // 27. いただく
     {
         id: 'n4_gen_itadaku_1',
         prob: '先生{せんせい}に本{ほん}を ______ ました。',
@@ -1328,7 +1328,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× いただきます
 → 原因：無（這是固定語）。注意漢字寫作「頂く」。`
     },
-    // 28. Itasu
+    // 28. いたす
     {
         id: 'n4_gen_itasu_1',
         prob: '私{わたし}がご案内{あんない} ______ ます。',
@@ -1379,7 +1379,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× なさいます
 → 原因：問句用尊敬語「されますか」，答句必須切換為謙讓語或丁寧語。不能用尊敬語回答自己。`
     },
-    // 29. Kaeru
+    // 29. かえる
     {
         id: 'n4_gen_kaeru_1',
         prob: '予定{よてい}を ______。',
@@ -1430,7 +1430,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 変{か}わりましょう
 → 原因：換燈泡是人為動作。`
     },
-    // 30. Kakeru
+    // 30. かける
     {
         id: 'n4_gen_kakeru_1',
         prob: '眼鏡{めがね}を ______ います。',
@@ -1481,7 +1481,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 掛{か}かっている
 → 原因：「掛かっている」是指電話響了（自動詞狀態），或花費了時間金錢。`
     },
-    // 31. Kakkou
+    // 31. かっこう
     {
         id: 'n4_gen_kakkou_1',
         prob: '彼{かれ}はスポーツができて、______ がいいです。',
@@ -1532,7 +1532,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 様子{ようす}
 → 原因：「様子」通常指事物的狀態或氛圍，不用於形容具體的穿搭好壞。`
     },
-    // 32. Kamau
+    // 32. かまう
     {
         id: 'n4_gen_kamau_1',
         prob: '私{わたし}のことは ______ わないでください。',
@@ -1583,7 +1583,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 構{かま}ません
 → 原因：masu形接在連用形（i段）後，u -> i。`
     },
-    // 33. Kamu
+    // 33. かむ
     {
         id: 'n4_gen_kamu_1',
         prob: 'ごはんはよく ______ 食{た}べてください。',
@@ -1634,7 +1634,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 噛{か}んだ
 → 原因：中文「狗咬（我）」，主語是狗。日文若省略主語通常指「我（被咬）」。`
     },
-    // 34. Kangaeru
+    // 34. かんがえる
     {
         id: 'n4_gen_kangaeru_1',
         prob: '将来{しょうらい}のことを ______ います。',
@@ -1685,7 +1685,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 考{かんが}えでも
 → 原因：te形接も。不是de。`
     },
-    // 35. Kariru
+    // 35. かりる
     {
         id: 'n4_gen_kariru_1',
         prob: '図書館{としょかん}で本{ほん}を ______。',
@@ -1697,7 +1697,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '返{かえ}しました', reason: '錯誤：歸還。題意是借入書籍，非歸還。' },
             { text: '借{か}りられました', reason: '錯誤：被借走/能借（語境是主動借書）。' }
         ],
-        // Note: Manual fix for options in code string
+        // 註： Manual fix for options in code string
         correctIndex: 0,
         tag: 'vocab',
         correctRule: `【考點】貸借區分
@@ -1737,7 +1737,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 借{か}りようか
 → 原因：B是物品持有者，動作是「借出（貸す）」。`
     },
-    // 36. Katazukeru
+    // 36. かたづける
     {
         id: 'n4_gen_katazukeru_1',
         prob: '部屋{へや}を ______ ください。',
@@ -1788,7 +1788,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 片付{かたづ}けといて（口語縮約，考試選完整形優先，且選項無縮約）
 → 原因：一段動詞te形。`
     },
-    // 37. Katsu
+    // 37. かつ
     {
         id: 'n4_gen_katsu_1',
         prob: '昨日{きのう}の試合{しあい}に ______。',
@@ -1839,7 +1839,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 勝{か}ち
 → 原因：引用句內保持動詞原形（除非已發生）。`
     },
-    // 38. Kawaku
+    // 38. かわく
     {
         id: 'n4_gen_kawaku_1',
         prob: '洗濯物{せんたくもの}がよく ______ ました。',
@@ -1890,7 +1890,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 喉{のど}が乾{かわ}く（現在式通常不用於描述當下口渴感）
 → 原因：生理狀態的形容常使用過去式（完了形）表示狀態的確立。`
     },
-    // 39. Kawaru
+    // 39. かわる
     {
         id: 'n4_gen_kawaru_1',
         prob: '信号{しんごう}が赤{あか}に ______ ました。',
@@ -1941,7 +1941,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 変{か}わります
 → 原因：雖然發音都是kawaru，但「変わる」指性質變化，「代わる」指輪替。`
     },
-    // 40. Kayou
+    // 40. かよう
     {
         id: 'n4_gen_kayou_1',
         prob: '毎日{まいにち}、バスで学校{がっこう}に ______ います。',
@@ -1992,7 +1992,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 教室{きょうしつ}を習{なら}う（助詞錯誤）
 → 原因：「通う」是自動詞，目的地用「に」。「習う」是他動詞，學的內容用「を」。`
     },
-    // 41. Kazaru
+    // 41. かざる
     {
         id: 'n4_gen_kazaru_1',
         prob: '玄関{げんかん}に花{はな}を ______。',
@@ -2043,7 +2043,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 飾{かざ}れれば
 → 原因：五段動詞假定形是u段改e段+ば。`
     },
-    // 42. Kesu
+    // 42. けす
     {
         id: 'n4_gen_kesu_1',
         prob: '部屋{へや}を出{で}るときは、電気{でんき}を ______ ください。',
@@ -2094,7 +2094,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 消{け}いて
 → 原因：五段動詞「su」結尾，te形為「shite」，無音便。`
     },
-    // 43. Kieru
+    // 43. きえる
     {
         id: 'n4_gen_kieru_1',
         prob: '強{つよ}い風{かぜ}でろうそくの火{ひ}が ______。',
@@ -2145,7 +2145,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 消{け}せた
 → 原因：學習者容易混淆自動詞與可能形（消せる）。`
     },
-    // 44. Kikoeru
+    // 44. きこえる
     {
         id: 'n4_gen_kikoeru_1',
         prob: '変{へん}な音{おと}が ______。',
@@ -2196,7 +2196,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 聞{き}けますか
 → 原因：除非是問「這個收音機壞沒壞？能聽嗎？」，否則確認音量用「聞こえる」。`
     },
-    // 45. Kimaru
+    // 45. きまる
     {
         id: 'n4_gen_kimaru_1',
         prob: '出発{しゅっぱつ}の時間{じかん}が ______ ました。',
@@ -2247,7 +2247,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 決{き}まていない
 → 原因：五段動詞促音便。`
     },
-    // 46. Kimeru
+    // 46. きめる
     {
         id: 'n4_gen_kimeru_1',
         prob: '次{つぎ}の代表{だいひょう}を ______。',
@@ -2298,7 +2298,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 〜を決{き}める（雖然文法對，但在「從選項中選」的語境常用「に」）
 → 原因：格助詞「に」表示歸著點/選擇結果。`
     },
-    // 47. Koeru
+    // 47. こえる
     {
         id: 'n4_gen_koeru_1',
         prob: '山{やま}を ______。',
@@ -2348,7 +2348,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 越{こ}えたと
 → 原因：「と」表示條件時，前面接原形（現在式）。`
     },
-    // 48. Komu
+    // 48. こむ
     {
         id: 'n4_gen_komu_1',
         prob: '電車{でんしゃ}が ______ います。',
@@ -2399,7 +2399,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 込{こ}んでた（口語省略i，考試通常選完整形）
 → 原因：時態一致性。問句是過去式「どうだった」，答句描述當時狀態用過去式。`
     },
-    // 49. Kosu
+    // 49. こす
     {
         id: 'n4_gen_kosu_1',
         prob: '隣{となり}の部屋{へや}に誰{だれ}か ______ きました。',
@@ -2450,7 +2450,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 引{ひ}っ超{こ}す
 → 原因：漢字寫法。`
     },
-    // 50. Kowareru
+    // 50. こわれる
     {
         id: 'n4_gen_kowareru_1',
         prob: '時計{とけい}が ______ いました。',
@@ -2501,7 +2501,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 壊{こわ}している
 → 原因：「壊す」是人為動作。「壊している」變成正在破壞它。`
     },
-    // 51. Kowasu
+    // 51. こわす
     {
         id: 'n4_gen_kowasu_1',
         prob: '弟{おとうと}が私{わたし}のカメラを ______。',
@@ -2552,7 +2552,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 壊{こわ}れた
 → 原因：肚子不會像機器一樣「壊れる」。這是一個他動詞用法的慣用句。`
     },
-    // 52. Kudaru
+    // 52. くだる
     {
         id: 'n4_gen_kudaru_1',
         prob: 'この坂{さか}を ______ と駅{えき}に出{で}ます。',
@@ -2603,22 +2603,22 @@ export const n4Questions: StaticQuestion[] = [
 ・× 川{かわ}を降{お}りる
 → 原因：河流上下游移動用上る/下る。`
     },
-    // 53. Kudasaru
+    // 53. ください
     {
-        id: 'n4_gen_kudasaru_1',
+        id: 'n4_gen_ください_1',
         prob: '先生{せんせい}が本{ほん}を ______ ました。',
         prob_zh: '老師 *給* (賜予) 了我書。',
         level: 'N4',
         options: [
-            { text: 'ください', reason: '正確！「Kudasaru」的連用形特殊變化「Kudasaimasu」→「Kudasaimashita」。此題為過去式選項修正/選出。' },
+            { text: 'ください', reason: '正確！「ください」的連用形特殊變化「くださいます」→「くださいました」。此題為過去式選項修正/選出。' },
             { text: 'くだり', reason: '錯誤：下坡。' },
             { text: 'さしあげ', reason: '錯誤：我給尊長。' },
             { text: 'やり', reason: '錯誤：給晚輩/動物。' }
         ],
-        // Note: Option "ください" here looks weird if it represents "kudasaimashita". 
-        // Typically questions ask for the stem or full form. 
-        // If the question is "______ ました", the answer should be "ください".
-        // Because kudasaru -> kudasaimasu. Stem is kudasai.
+        // 註： 選項「ください」在這裡看起來很奇怪，如果它代表「くださいました」. 
+        // 通常題目詢問詞幹或完整形式. 
+        // 如果題目是「______ ました」，答案應該是「ください」.
+        // 因為ください -> くださいます。詞幹是ください.
         correctIndex: 0,
         tag: 'keigo',
         correctRule: `【考點】尊敬語活用
@@ -2634,7 +2634,7 @@ export const n4Questions: StaticQuestion[] = [
 → 原因：特殊五段動詞（aru/uru結尾敬語），masu形i音變。`
     },
     {
-        id: 'n4_gen_kudasaru_2',
+        id: 'n4_gen_ください_2',
         prob: 'A：「それはどうしたの？」\nB：「社長{しゃちょう}が ______ んです。」',
         prob_zh: 'A：「那個是怎麼回事（哪來的）？」\nB：「是社長 *給* (我的)。」',
         level: 'N4',
@@ -2658,7 +2658,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× いただいた（主語是社長，不能用謙讓）
 → 原因：必須根據主語選擇敬語類別。`
     },
-    // 54. Kuraberu
+    // 54. くらべる
     {
         id: 'n4_gen_kuraberu_1',
         prob: 'A店{てん}とB店{てん}の値段{ねだん}を ______ みましょう。',
@@ -2708,7 +2708,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 比{くら}べれば（語法可，但比べてると是慣用表現形式之一，選項只有くらべると正確）
 → 原因：假定條件表示「一比之下就...」。`
     },
-    // 55. Kureru
+    // 55. くれる
     {
         id: 'n4_gen_kureru_1',
         prob: '誕生日{たんじょうび}に、彼{かれ}が指輪{ゆびわ}を ______ ました。',
@@ -2755,9 +2755,9 @@ export const n4Questions: StaticQuestion[] = [
 【易錯點】
 ・○ くれた
 ・× もらった
-→ 原因：日文授受動詞嚴格區分主語方向。主語是給予者→Kureru。主語是接受者→Morau。`
+→ 原因：日文授受動詞嚴格區分主語方向。主語是給予者→くれる。主語是接受者→もらう。`
     },
-    // 56. Machigaeru
+    // 56. まちがえる
     {
         id: 'n4_gen_machigaeru_1',
         prob: '電話{でんわ}番号{ばんごう}を ______ しまいました。',
@@ -2806,7 +2806,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 違{ちが}いました（指「答案不符」，而非「我犯錯動作」）
 → 原因：自我反省用他動詞。`
     },
-    // 57. Mairu
+    // 57. まいる
     {
         id: 'n4_gen_mairu_1',
         prob: '私{わたし}は来月{らいげつ}、アメリカへ ______ ります。',
@@ -2861,7 +2861,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 田中{たなか}と言{い}います（不夠禮貌）
 → 原因：商務電話需使用謙讓語。`
     },
-    // 58. Makeru
+    // 58. まける
     {
         id: 'n4_gen_makeru_1',
         prob: '試合{しあい}に ______ しまいました。',
@@ -2911,7 +2911,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 負{ま}けった
 → 原因：一段動詞過去式去ru加ta。`
     },
-    // 59. Maniau
+    // 59. まにあう
     {
         id: 'n4_gen_maniau_1',
         prob: '走{はし}れば、電車{でんしゃ}に ______ かもしれません。',
@@ -2943,12 +2943,12 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「會議開始了嗎？」\nB：「不，還 *趕得上/來得及* 喔。」',
         level: 'N4',
         options: [
-            { text: '間{ま}に合{あ}います', reason: '正確！Polite form.' },
+            { text: '間{ま}に合{あ}います', reason: '正確！禮貌形式.' },
             { text: '遅{おく}れます', reason: '錯誤：會遲到。' },
             { text: '間{ま}に合{あ}いません', reason: '錯誤：來不及了（回答是「不」，表示否定A的擔憂或表示還OK）。' },
             { text: '始{はじ}まります', reason: '錯誤：還開始喔（語意不通）。' }
         ],
-        // Note: A asks "Has it started?" 
+        // 註： A asks "Has it started?" 
         // B says "No (it hasn't), still [in time] you know."
         // Contextually "Maniau" means "You aren't late / It's serviceable".
         correctIndex: 0,
@@ -2963,7 +2963,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 間{ま}に合{あ}うります
 → 原因：五段動詞u -> i。`
     },
-    // 60. Mawaru
+    // 60. まわる
     {
         id: 'n4_gen_mawaru_1',
         prob: '扇風機{せんぷうき}が ______ います。',
@@ -3012,7 +3012,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 回{まわ}した
 → 原因：主體移動，用自動詞。`
     },
-    // 61. Meshiagaru
+    // 61. めしあがる
     {
         id: 'n4_gen_meshiagaru_1',
         prob: 'どうぞ、ケーキを ______ ください。',
@@ -3059,7 +3059,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× いただきます
 → 原因：不能問長輩「いただきますか」（您要領受嗎？），不禮貌。`
     },
-    // 62. Mieru
+    // 62. みえる
     {
         id: 'n4_gen_mieru_1',
         prob: 'ここから富士山{ふじさん}が ______。',
@@ -3110,7 +3110,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× よく見{み}れる（口語可能形，但通常指「可以看」而非視力）
 → 原因：視力機能用見える。`
     },
-    // 63. Mitsukaru
+    // 63. みつかる
     {
         id: 'n4_gen_mitsukaru_1',
         prob: '探{さが}していた鍵{かぎ}がやっと ______。',
@@ -3159,7 +3159,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 見{み}つけなくて
 → 原因：地點是主語（場所が），故用自動詞。`
     },
-    // 64. Mitsukeru
+    // 64. みつける
     {
         id: 'n4_gen_mitsukeru_1',
         prob: 'きれいな石{いし}を河原{かわら}で ______。',
@@ -3207,7 +3207,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 見{み}つかった（主語是我，動作是他動詞）
 → 原因：強調是「我」發現的。`
     },
-    // 65. Modoru
+    // 65. もどる
     {
         id: 'n4_gen_modoru_1',
         prob: '席{せき}に ______ ください。',
@@ -3256,7 +3256,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 帰{かえ}る
 → 原因：上班時間暫離後返回崗位用「戻る」。`
     },
-    // 66. Morau
+    // 66. もらう
     {
         id: 'n4_gen_morau_1',
         prob: '父{ちち}にお小遣{こづか}いを ______ ました。',
@@ -3303,9 +3303,9 @@ export const n4Questions: StaticQuestion[] = [
 【易錯點】
 ・○ 兄{あに}にもらった
 ・× 兄{あに}にくれた
-→ 原因：Kureru的主語是給予者（兄が）。`
+→ 原因：くれる的主語是給予者（兄が）。`
     },
-    // 67. Moushiageiru
+    // 67. もうしあげる
     {
         id: 'n4_gen_moushiageiru_1',
         prob: '先日{せんじつ}のお礼{れい}を ______ たくて、お手紙{てがみ}を書{か}きました。',
@@ -3320,7 +3320,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'keigo',
         correctRule: '【考點】敬語表現\n【解析】表達（謝意）。 \n【敬語】「申し上げる」是「言う」的謙讓語（鄭重）。\n【延伸】相關詞/混淆項：言い、申し、おっしゃっ'
     },
-    // 68. Mousu
+    // 68. もうす
     {
         id: 'n4_gen_mousu_1',
         prob: '私{わたし}は田中{たなか}と ______。',
@@ -3367,7 +3367,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 申{もう}されますか
 → 原因：申す是自謙語，不能變成被動敬語形式（申される是誤用，除非極特殊方言）。`
     },
-    // 69. Mukaeru
+    // 69. むかえる
     {
         id: 'n4_gen_mukaeru_1',
         prob: '空港{くうこう}へ父{ちち}を ______ に行{い}きました。',
@@ -3376,7 +3376,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '迎{むか}え', reason: '正確！一段連用形。～に行く（去目的）。' },
             { text: '送{おく}り', reason: '錯誤：送行。' },
-            { text: '迎{むか}い', reason: '錯誤：五段變位（錯誤）。Mukaeru是一段。' },
+            { text: '迎{むか}い', reason: '錯誤：五段變位（錯誤）。むかえる是一段。' },
             { text: '会{あ}い', reason: '錯誤：見面（意思雖通，但接機常用迎え）。' }
         ],
         correctIndex: 0,
@@ -3416,7 +3416,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 迎{むか}えて行{い}く
 → 原因：表目的用ni。`
     },
-    // 70. Mukau
+    // 70. むかう
     {
         id: 'n4_gen_mukau_1',
         prob: '今{いま}、会場{かいじょう}に ______ います。',
@@ -3424,7 +3424,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '向{む}かって', reason: '正確！五段促音便。' },
-            { text: '向{む}いて', reason: '錯誤：面向（Muku）。Muku是面向某方向（如向東），而Mukau是朝目的地移動。' },
+            { text: '向{む}いて', reason: '錯誤：面向（むく）。むく是面向某方向（如向東），而むかう是朝目的地移動。' },
             { text: '向{む}かい', reason: '錯誤：連用形。' },
             { text: '行{い}って', reason: '錯誤：去。行っています（去了，結果狀態）。向かっています（正在前往的途中）。' }
         ],
@@ -3465,7 +3465,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 机{つくえ}を向{む}く
 → 原因：慣用搭配。`
     },
-    // 71. Nageru
+    // 71. なげる
     {
         id: 'n4_gen_nageru_1',
         prob: 'ボールを遠{とお}くへ ______。',
@@ -3514,7 +3514,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 投{な}がる
 → 原因：正確掌握活用。`
     },
-    // 72. Naku
+    // 72. なく
     {
         id: 'n4_gen_naku_1',
         prob: '赤{あか}ちゃんが大{おお}きな声{こえ}で ______ います。',
@@ -3563,7 +3563,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 泣{な}きて
 → 原因：ku結尾ite音便。`
     },
-    // 73. Nakunaru
+    // 73. なくなる
     {
         id: 'n4_gen_nakunaru_1',
         prob: '消{け}しゴムが ______ しまいました。',
@@ -3612,7 +3612,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 無{な}くなるそう（那是傳聞：聽說沒了）
 → 原因：連用形接sou表示樣態，辭書形接sou表示傳聞。`
     },
-    // 74. Naoru
+    // 74. なおる
     {
         id: 'n4_gen_naoru_1',
         prob: '壊{こわ}れたパソコンが ______。',
@@ -3661,7 +3661,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 直{なお}った
 → 原因：醫療相關通常用偏旁有水的治。`
     },
-    // 75. Naosu
+    // 75. なおす
     {
         id: 'n4_gen_naosu_1',
         prob: '間違{まちが}いがあれば、______ ください。',
@@ -3709,7 +3709,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 直{なお}す方{ほう}がいい（文法非錯，但通常建議用ta形）
 → 原因：慣用句型。`
     },
-    // 76. Nareru
+    // 76. なれる
     {
         id: 'n4_gen_nareru_1',
         prob: '日本{にほん}の生活{せいかつ}に ______ ましたか。',
@@ -3758,7 +3758,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 慣{な}りてきた
 → 原因：一段動詞。`
     },
-    // 77. Naru
+    // 77. なる
     {
         id: 'n4_gen_naru_1',
         prob: '授業中{じゅぎょうちゅう}に突然{とつぜん}電話{でんわ}が ______ しまって、先生{せんせい}に叱{しか}られてしまいました。',
@@ -3773,7 +3773,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】響。 \n【活用】五段動詞「鳴る」。\n【延伸】相關詞/混淆項：鳴る、鳴ら、鳴り'
     },
-    // 78. Nasaru
+    // 78. なさる
     {
         id: 'n4_gen_nasaru_1',
         prob: '週末{しゅうまつ}はテニスを ______ ますか。',
@@ -3781,14 +3781,14 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: 'なさり', reason: '錯誤：變位錯誤（i音變）。' },
-            { text: 'なさい', reason: '正確！Nasaru的masu形是Nasaimasu。' },
-            { text: 'され', reason: '錯誤：Sureru? No. Sareru is passive/honorific of Suru. "Saremasu ka". But "Nasaru" is dedicated honorific.' },
+            { text: 'なさい', reason: '正確！なさる的masu形是なさいます。' },
+            { text: 'され', reason: '錯誤：すれる? 否。 される is 被動/敬語形式於する. "されます ka". but「なさる」是專門的敬語。' },
             { text: 'いたし', reason: '錯誤：謙讓語。' }
         ],
         correctIndex: 1,
         tag: 'keigo',
         correctRule: `【考點】特殊尊敬語活用
-【解析】「する」的尊敬語「なさる」。Masu形是「なさいます」（同kudasaru）。
+【解析】「する」的尊敬語「なさる」。ます形是「なさいます」（同ください）。
 【相關詞比較】
 ・なさる：做（尊敬）。
   例：「ご無理{むり}をなさらないで。」（請別勉強。）
@@ -3821,7 +3821,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× なさいて
 → 原因：五段促音便。`
     },
-    // 79. Nemuru
+    // 79. ねむる
     {
         id: 'n4_gen_nemuru_1',
         prob: '心配{しんぱい}で、なかなか ______ ません。',
@@ -3829,7 +3829,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '眠{ねむ}れ', reason: '正確！可能否定（眠れません）。表示無法入睡。' },
-            { text: '寝{ね}られ', reason: '錯誤：寝られません也可，但Nemuru強調生理上的入睡狀態，失眠常用眠れない。' },
+            { text: '寝{ね}られ', reason: '錯誤：寝られません也可，但ねむる強調生理上的入睡狀態，失眠常用眠れない。' },
             { text: '眠{ねむ}ら', reason: '錯誤：未然形「眠らない」是不睡（意志）。' },
             { text: '寝{ね}ませ', reason: '錯誤：不睡（寝ません）。' }
         ],
@@ -3854,7 +3854,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '眠{ねむ}って', reason: '正確！入睡（無意識）。' },
-            { text: '寝{ね}て', reason: '錯誤：雖然口語「寝ちゃった」也用，但文章或描寫入睡狀態，Nemutte較精確。且選項若有Nemutte優先。' },
+            { text: '寝{ね}て', reason: '錯誤：雖然口語「寝ちゃった」也用，但文章或描寫入睡狀態，ねむって較精確。且選項若有ねむって優先。' },
             { text: '眠{ねむ}れて', reason: '錯誤：可能形。' },
             { text: '起{お}きて', reason: '錯誤：醒來。' }
         ],
@@ -3867,10 +3867,10 @@ export const n4Questions: StaticQuestion[] = [
 ・眠{ねむ}くなる：變睏。
 【易錯點】
 ・○ 眠{ねむ}ってしまった
-・× 寝{ね}てしまった（兩者皆通，但Nemuru更強調由醒轉睡的生理變化）
+・× 寝{ね}てしまった（兩者皆通，但ねむる更強調由醒轉睡的生理變化）
 → 原因：五段促音便。`
     },
-    // 80. Nigeru
+    // 80. にげる
     {
         id: 'n4_gen_nigeru_1',
         prob: '犯人{はんにん}が ______ います。',
@@ -3918,7 +3918,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 逃{に}がる
 → 原因：一段動詞。`
     },
-    // 81. Niru
+    // 81. にる
     {
         id: 'n4_gen_niru_1',
         prob: '娘{むすめ}は母親{ははおや}によく ______ います。',
@@ -3967,7 +3967,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 似{に}てある
 → 原因：有生/無生狀態屬性通常用tekiru/teiru。`
     },
-    // 82. Noboru
+    // 82. のぼる
     {
         id: 'n4_gen_noboru_1',
         prob: '階段{かいだん}を ______。',
@@ -4016,7 +4016,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 上{のぼ}った（雖然讀音一樣，但登山漢字用登）
 → 原因：漢字區分。`
     },
-    // 83. Nokoru
+    // 83. のこる
     {
         id: 'n4_gen_nokoru_1',
         prob: '料理{りょうり}がたくさん ______ います。',
@@ -4025,7 +4025,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '残{のこ}って', reason: '正確！五段自動詞。' },
             { text: '残{のこ}して', reason: '錯誤：他動詞（人留下的）。' },
-            { text: '余{あま}って', reason: '錯誤：多餘。語意相近，但N4主要考Nokoru。' },
+            { text: '余{あま}って', reason: '錯誤：多餘。語意相近，但N4主要考のこる。' },
             { text: '無{な}くなって', reason: '錯誤：沒了。' }
         ],
         correctIndex: 0,
@@ -4050,7 +4050,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '残{のこ}っている', reason: '正確！人留在某處。' },
             { text: '残{のこ}している', reason: '錯誤：他動詞。' },
-            { text: '止{と}まっている', reason: '錯誤：停止/過夜（泊まる）。如果是過夜應該用Tomatteiru，但加班通常用Nokoru。' },
+            { text: '止{と}まっている', reason: '錯誤：停止/過夜（泊まる）。如果是過夜應該用とまっている，但加班通常用のこる。' },
             { text: '住{す}んでいる', reason: '錯誤：住。' }
         ],
         correctIndex: 0,
@@ -4065,7 +4065,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 残{のこ}している
 → 原因：山田先生是主語，自己留下來。`
     },
-    // 84. Norikaeru
+    // 84. のりかえる
     {
         id: 'n4_gen_norikaeru_1',
         prob: '次{つぎ}の駅{えき}で地下鉄{ちかてつ}に ______。',
@@ -4112,7 +4112,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 乗{の}り換{か}わった
 → 原因：人為主動動作。`
     },
-    // 85. Nureru
+    // 85. ぬれる
     {
         id: 'n4_gen_nureru_1',
         prob: '雨{あめ}で服{ふく}が ______ しまいました。',
@@ -4160,7 +4160,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 濡{ぬ}っている（塗っている？）
 → 原因：Nureru是一段動詞。`
     },
-    // 86. Nuru
+    // 86. ぬる
     {
         id: 'n4_gen_nuru_1',
         prob: 'パンにバターを ______。',
@@ -4170,7 +4170,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '塗{ぬ}ります', reason: '正確！五段動詞。' },
             { text: '塗{ぬ}れます', reason: '錯誤：可能形/自動詞化。' },
             { text: '貼{は}ります', reason: '錯誤：貼。' },
-            { text: '付{つ}けます', reason: '錯誤：附上/沾上（Tsukeru也可指沾醬，但塗抹奶油常用Nuru）。' }
+            { text: '付{つ}けます', reason: '錯誤：附上/沾上（つける也可指沾醬，但塗抹奶油常用ぬる）。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -4191,7 +4191,7 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「要不要換牆壁顏色？」\nB：「那，試著 *塗* 成白色吧。」',
         level: 'N4',
         options: [
-            { text: '塗{ぬ}って', reason: '正確！Te形+みる（嘗試）。' },
+            { text: '塗{ぬ}って', reason: '正確！て形+みる（嘗試）。' },
             { text: '塗{ぬ}りて', reason: '錯誤：音便錯誤。' },
             { text: '描{か}いて', reason: '錯誤：畫。' },
             { text: '書{か}いて', reason: '錯誤：寫。' }
@@ -4208,7 +4208,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 塗{ぬ}りて
 → 原因：五段促音便。`
     },
-    // 87. Nusumu
+    // 87. ぬすむ
     {
         id: 'n4_gen_nusumu_1',
         prob: '誰{だれ}かが私{わたし}の自転車{じてんしゃ}を ______。',
@@ -4217,7 +4217,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '盗{ぬす}みました', reason: '正確！主語是某人（誰か），主動偷。' },
             { text: '盗{ぬす}まれました', reason: '錯誤：被偷（若主語是自転車則可，但句意是某人去被偷？不通）。' },
-            { text: '取{と}りました', reason: '錯誤：拿（語氣較輕，偷竊用Nusumu）。' },
+            { text: '取{と}りました', reason: '錯誤：拿（語氣較輕，偷竊用ぬすむ）。' },
             { text: '拾{ひろ}いました', reason: '錯誤：撿。' }
         ],
         correctIndex: 0,
@@ -4240,7 +4240,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '盗{ぬす}まれた', reason: '正確！受身形（被害）。主語是（我）。' },
             { text: '盗{ぬす}んだ', reason: '錯誤：我偷了錢包（自首？）。' },
-            { text: '取{と}られた', reason: '錯誤：被拿走（也可以，但Nusumareta更強調竊盜犯罪）。' },
+            { text: '取{と}られた', reason: '錯誤：被拿走（也可以，但ぬすまれた更強調竊盜犯罪）。' },
             { text: '無{な}くした', reason: '錯誤：弄丟了（如果是自己弄丟，和被偷不同。B說被偷通常更嚴重）。' }
         ],
         correctIndex: 0,
@@ -4255,7 +4255,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 盗{ぬす}んだ
 → 原因：我（錢包主人）視角。`
     },
-    // 88. Odoroku
+    // 88. おどろく
     {
         id: 'n4_gen_odoroku_1',
         prob: '急{きゅう}に大{おお}きな音{おと}がして ______。',
@@ -4290,7 +4290,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '驚{おどろ}いた', reason: '正確！感情產生（過去式）。' },
             { text: '驚{おどろ}く', reason: '錯誤：雖然現在式也可（表示驚訝這個事實），但在得知消息當下的反應常用過去式表達「當時嚇到了」。' },
             { text: '困{こま}った', reason: '錯誤：困擾。' },
-            { text: '喜{よろこ}んだ', reason: '錯誤：高興（雖然也可能，但通常對意外消息用驚く為第一反應）。且選項Odoroku最貼切題意「吃驚」。' }
+            { text: '喜{よろこ}んだ', reason: '錯誤：高興（雖然也可能，但通常對意外消息用驚く為第一反應）。且選項おどろく最貼切題意「吃驚」。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -4304,7 +4304,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 驚{おどろ}いたった（變位錯誤）
 → 原因：正確掌握過去式。`
     },
-    // 89. Odoru
+    // 89. おどる
     {
         id: 'n4_gen_odoru_1',
         prob: '音楽{おんがく}に合{あ}わせて ______ ましょう。',
@@ -4314,16 +4314,16 @@ export const n4Questions: StaticQuestion[] = [
             { text: '踊{おど}り', reason: '正確！五段masu形。' },
             { text: '踊{おど}れ', reason: '錯誤：命令/可能。' },
             { text: '躍{おど}り', reason: '錯誤：雖通用，但跳舞常用「踊」。' },
-            { text: '跳{は}ね', reason: '錯誤：跳躍（Jump）。' }
+            { text: '跳{は}ね', reason: '錯誤：跳躍（跳躍）。' }
         ],
         correctIndex: 0,
         tag: 'masu',
         correctRule: `【考點】動詞活用
 【解析】勸誘句型「～ましょう」接masu形。「踊る」→「踊ります」→「踊りましょう」。
 【相關詞比較】
-・踊{おど}る：跳舞（Dance）。
+・踊{おど}る：跳舞（跳舞）。
   例：「盆{ぼん}踊{おど}りを踊{おど}る。」（跳盂蘭盆舞。）
-・跳{は}ねる：跳（Jump/Splash）。
+・跳{は}ねる：跳（跳躍/飛濺）。
 【易錯點】
 ・○ 踊{おど}りましょう
 ・× 踊{おど}るましょう
@@ -4338,7 +4338,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '踊{おど}って', reason: '正確！習慣/經歷（～ている）。' },
             { text: '踊{おど}りて', reason: '錯誤：音便錯誤。' },
             { text: '遊{あそ}んで', reason: '錯誤：玩。' },
-            { text: '習{なら}って', reason: '錯誤：學習（也通，但A稱讚的是目前展現的技巧，B通常回應「一直在跳」，Odoru更直接呼應動作）。若無Odoru可選Narau。' }
+            { text: '習{なら}って', reason: '錯誤：學習（也通，但A稱讚的是目前展現的技巧，B通常回應「一直在跳」，おどる更直接呼應動作）。若無おどる可選ならう。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -4352,7 +4352,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 踊{おど}りて
 → 原因：五段促音便。`
     },
-    // 90. Oideninaru
+    // 90. おいでになる
     {
         id: 'n4_gen_oideninaru_1',
         prob: '先生{せんせい}はもう ______ か。',
@@ -4399,7 +4399,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 参{まい}りません
 → 原因：主語是老師。`
     },
-    // 91. Okonau
+    // 91. おこなう
     {
         id: 'n4_gen_okonau_1',
         prob: '明日{あした}、会議{かいぎ}を ______。',
@@ -4408,7 +4408,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '行{おこな}います', reason: '正確！五段動詞。' },
             { text: '行{い}きます', reason: '錯誤：去。' },
-            { text: '開{ひら}きます', reason: '錯誤：召開（Hirakimasu）。雖然意思通，但題幹是「Okonau」的漢字寫法（行）。' },
+            { text: '開{ひら}きます', reason: '錯誤：召開（ひらきます）。雖然意思通，但題幹是「おこなう」的漢字寫法（行）。' },
             { text: '考{かんが}えます', reason: '錯誤：思考。' }
         ],
         correctIndex: 0,
@@ -4447,7 +4447,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 行{い}かれる
 → 原因：讀音區別。`
     },
-    // 92. Okoru
+    // 92. おこる
     {
         id: 'n4_gen_okoru_1',
         prob: 'そんなに ______ ないでください。',
@@ -4456,7 +4456,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '怒{おこ}ら', reason: '正確！五段未然形。' },
             { text: '怒{おこ}り', reason: '錯誤：連用形。' },
-            { text: '怒{いか}ら', reason: '錯誤：雖然Ikari也是怒，但口語生氣常用Okoru。' },
+            { text: '怒{いか}ら', reason: '錯誤：雖然いかり也是怒，但口語生氣常用おこる。' },
             { text: '笑{わら}わ', reason: '錯誤：笑。' }
         ],
         correctIndex: 0,
@@ -4495,7 +4495,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 怒{おこ}りて
 → 原因：五段促音便。`
     },
-    // 93. Okosu
+    // 93. おこす
     {
         id: 'n4_gen_okosu_1',
         prob: '毎朝{まいあさ}6時{ろくじ}に子供{こども}を ______。',
@@ -4521,7 +4521,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 子供{こども}を起{お}きる
 → 原因：受詞是小孩（對象）。`
     },
-    // 94. Oku
+    // 94. おく
     {
         id: 'n4_gen_oku_1',
         prob: '荷物{にもつ}はここに ______ ください。',
@@ -4530,13 +4530,13 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '置{お}いて', reason: '正確！五段i音便。' },
             { text: '置{お}きて', reason: '錯誤：變位錯誤（ki -> ite）。' },
-            { text: '入{い}れて', reason: '錯誤：放入（通常需要容器，如箱子里。單純放在地點用Oku）。' },
+            { text: '入{い}れて', reason: '錯誤：放入（通常需要容器，如箱子里。單純放在地點用おく）。' },
             { text: '送{おく}って', reason: '錯誤：送/寄。' }
         ],
         correctIndex: 0,
         tag: 'te',
         correctRule: `【考點】動詞活用
-【解析】放置用「置く」。Te形是「置いて」。
+【解析】放置用「置く」。て形是「置いて」。
 【相關詞比較】
 ・置{お}く：放/設置。
   例：「傘{かさ}を置{お}く。」（放傘。）
@@ -4567,9 +4567,9 @@ export const n4Questions: StaticQuestion[] = [
 【易錯點】
 ・○ 置{お}いておいて
 ・× 置{お}っておいて（發音容易混淆）
-→ 原因：Oku + te form。`
+→ 原因：おく + te form。`
     },
-    // 95. Okureru
+    // 95. おくreru
     {
         id: 'n4_gen_okureru_1',
         prob: '約束{やくそく}の時間{じかん}に ______ しまいました。',
@@ -4614,9 +4614,9 @@ export const n4Questions: StaticQuestion[] = [
 【易錯點】
 ・○ 遅{おく}れる
 ・× 遅{おそ}い
-→ 原因：動詞用Okureru。`
+→ 原因：動詞用おくreru。`
     },
-    // 96. Okuru
+    // 96. おくる
     {
         id: 'n4_gen_okuru_1',
         prob: '友達{ともだち}を駅{えき}まで ______。',
@@ -4649,7 +4649,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '送{おく}った', reason: '正確！寄送。' },
             { text: '送{おく}る', reason: '錯誤：時態錯誤。' },
             { text: '渡{わた}した', reason: '錯誤：交給（通常指當面）。' },
-            { text: '届{とど}けた', reason: '錯誤：送達（通常指外送員送到，B如果是寄件人，用Okuru）。' }
+            { text: '届{とど}けた', reason: '錯誤：送達（通常指外送員送到，B如果是寄件人，用おくる）。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -4663,7 +4663,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 送{おく}りた
 → 原因：五段促音便。`
     },
-    // 97. Omoidasu
+    // 97. おもいだす
     {
         id: 'n4_gen_omoidasu_1',
         prob: '名前{なまえ}が ______ ません。',
@@ -4675,7 +4675,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '覚{おぼ}え', reason: '錯誤：記得/背。' },
             { text: '忘{わす}れ', reason: '錯誤：忘记（不通順：名字忘記不了？意為忘不了）。' }
         ],
-        // Note: "Omoidasemasen" = Cannot recall. "Omoidasimasen" = Do not recall (will not).
+        // 註： "Omoidasemasen" = Cannot recall. "Omoidasimasen" = Do not recall (will not).
         // Usually "I can't remember his name" -> Omoidasemasen.
         // Option 1 "omoidase" + masen. Correct.
         correctIndex: 0,
@@ -4710,9 +4710,9 @@ export const n4Questions: StaticQuestion[] = [
 【易錯點】
 ・○ 思{おも}い出{だ}す
 ・× 思{おも}う
-→ 原因：Omou是覺得/認為，Omoidasu是回想/憶起。`
+→ 原因：おもう是覺得/認為，Omoidasu是回想/憶起。`
     },
-    // 98. Omou
+    // 98. おもう
     {
         id: 'n4_gen_omou_1',
         prob: '明日{あした}は雨{あめ}だと ______。',
@@ -4720,8 +4720,8 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '思{おも}います', reason: '正確！意見/推測。' },
-            { text: '思{おも}っています', reason: '錯誤：雖然可以用（一直這麼想），但單純發表預測用Omou/Omoimasu即可。若選項並列，Omoimasu是基本形。' },
-            { text: '考{かんが}えます', reason: '錯誤：思考（邏輯性）。推測天氣用Omou。' },
+            { text: '思{おも}っています', reason: '錯誤：雖然可以用（一直這麼想），但單純發表預測用おもう/おもいます即可。若選項並列，おもいます是基本形。' },
+            { text: '考{かんが}えます', reason: '錯誤：思考（邏輯性）。推測天氣用おもう。' },
             { text: '言{い}います', reason: '錯誤：說。' }
         ],
         correctIndex: 0,
@@ -4745,7 +4745,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '思{おも}います', reason: '正確！詢問意見。' },
             { text: '考{かんが}えます', reason: '錯誤：思考。' },
             { text: '知{し}ります', reason: '錯誤：知道。' },
-            { text: '感{かん}じます', reason: '錯誤：感覺（雖然可通，但在N4詢問意見慣用Omoimasu）。' }
+            { text: '感{かん}じます', reason: '錯誤：感覺（雖然可通，但在N4詢問意見慣用おもいます）。' }
         ],
         correctIndex: 0,
         tag: 'grammar',
@@ -4756,9 +4756,9 @@ export const n4Questions: StaticQuestion[] = [
 【易錯點】
 ・○ どう思{おも}いますか
 ・× どう考{かんが}えますか（較生硬）
-→ 原因：一般感想用Omou。`
+→ 原因：一般感想用おもう。`
     },
-    // 99. Oreru
+    // 99. おれる
     {
         id: 'n4_gen_oreru_1',
         prob: '強{つよ}い風{かぜ}で木{き}の枝{えだ}が ______。',
@@ -4768,7 +4768,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '折{お}れた', reason: '正確！一段自動詞。' },
             { text: '折{お}った', reason: '錯誤：他動詞（人去折）。' },
             { text: '割{わ}れた', reason: '錯誤：破裂（玻璃等）。' },
-            { text: '壊{こわ}れた', reason: '錯誤：壞掉（機械/總稱）。細長物折斷用Oreru。' }
+            { text: '壊{こわ}れた', reason: '錯誤：壞掉（機械/總稱）。細長物折斷用おれる。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -4806,7 +4806,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 折{お}っていない
 → 原因：自動詞狀態。`
     },
-    // 100. Oriru
+    // 100. おりる
     {
         id: 'n4_gen_oriru_1',
         prob: '次{つぎ}の駅{えき}で ______ ます。',
@@ -4816,9 +4816,9 @@ export const n4Questions: StaticQuestion[] = [
             { text: '降{お}り', reason: '正確！一段動詞。' },
             { text: '下{お}り', reason: '錯誤：漢字通常用「降」於交通工具。' },
             { text: '乗{の}り', reason: '錯誤：搭乘。' },
-            { text: '降{ふ}り', reason: '錯誤：下雨（Furu）。' }
+            { text: '降{ふ}り', reason: '錯誤：下雨（ふる）。' }
         ],
-        // Note: Oriru can be written as 降りる (transport) or 下りる (stairs/mountain).
+        // 註： Oriru can be written as 降りる (transport) or 下りる (stairs/mountain).
         // Usually JLPT questions are kana or clear Context. 
         // If Kanji choice, "降り" is correct for train. "下り" is acceptable but less standard for vehicles.
         // Let's assume Kana reading or Kanji usage.
@@ -4859,7 +4859,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 降{お}りる（交通工具）
 → 原因：此題考漢字細微差別。`
     },
-    // 101. Oru
+    // 101. おる
     {
         id: 'n4_gen_oru_1',
         prob: '紙{かみ}を半分{はんぶん}に ______ ください。',
@@ -4893,9 +4893,9 @@ export const n4Questions: StaticQuestion[] = [
             { text: '折{お}った', reason: '正確！經驗（～たことがある）。' },
             { text: '折{お}れる', reason: '錯誤：自動詞。' },
             { text: '折{お}る', reason: '錯誤：現在式。' },
-            { text: '作{つく}った', reason: '錯誤：做。雖然可以，但「折り紙で」暗示動作是折。選項若有Otta優先。' }
+            { text: '作{つく}った', reason: '錯誤：做。雖然可以，但「折り紙で」暗示動作是折。選項若有おった優先。' }
         ],
-        // Note: Origami de tsukuru is common. Origami de oru is somewhat redundant but correct "Fold with origami paper".
+        // 註： Origami de tsukuru is common. Origami de oru is somewhat redundant but correct "Fold with origami paper".
         // Let's assume testing "Oru".
         correctIndex: 0,
         tag: 'grammar',
@@ -4908,7 +4908,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 折{お}りた
 → 原因：五段活用。`
     },
-    // 102. Oshieru
+    // 102. おしえる
     {
         id: 'n4_gen_oshieru_1',
         prob: '地図{ちず}を書{か}いて、道{みち}を ______ あげました。',
@@ -4918,7 +4918,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '教{おし}えて', reason: '正確！一段動詞。' },
             { text: '覚{おぼ}えて', reason: '錯誤：記住。' },
             { text: '考{かんが}えて', reason: '錯誤：思考。' },
-            { text: '習{なら}って', reason: '錯誤：學習（我學）。題目是Agemashita（我給別人），故應是我教。' }
+            { text: '習{なら}って', reason: '錯誤：學習（我學）。題目是あげました（我給別人），故應是我教。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -4955,7 +4955,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 覚{おぼ}えて
 → 原因：Oshieru包含傳遞知識。`
     },
-    // 103. Ossharu
+    // 103. おっしゃる
     {
         id: 'n4_gen_ossharu_1',
         prob: '先生{せんせい}は、明日{あした}テストをすると ______。',
@@ -4970,7 +4970,7 @@ export const n4Questions: StaticQuestion[] = [
         correctIndex: 0,
         tag: 'keigo',
         correctRule: `【考點】尊敬語活用
-【解析】「言う」的尊敬語「おっしゃる」。Masu形是「おっしゃいます」（特殊的ri -> i變化）。
+【解析】「言う」的尊敬語「おっしゃる」。ます形是「おっしゃいます」（特殊的ri -> i變化）。
 【相關詞比較】
 ・おっしゃる：說（尊敬）。
 ・申{もう}す：說（謙讓）。
@@ -4995,14 +4995,14 @@ export const n4Questions: StaticQuestion[] = [
         correctRule: `【考點】普通體敬語（對話）
 【解析】「何とおっしゃったんですか」（說了什麼？）。Ossharu的Ta形是Osshatta（促音便）。
 【相關詞比較】
-・おっしゃって：Te形。
+・おっしゃって：て形。
 ・おっしゃった：Ta形。
 【易錯點】
 ・○ おっしゃった
 ・× おっしゃいた
 → 原因：五段促音便。`
     },
-    // 104. Otosu
+    // 104. おとす
     {
         id: 'n4_gen_otosu_1',
         prob: 'スピードを ______ ください。',
@@ -5033,10 +5033,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「咦，錢包不見了。」\nB：「是不是在哪 *弄丟* 了？」',
         level: 'N4',
         options: [
-            { text: '落{お}とした', reason: '正確！弄丟（Otosu）。' },
-            { text: '落{お}ちた', reason: '錯誤：掉落（意味著錢包自己掉下來，通常講自己弄丟用Otosu）。' },
+            { text: '落{お}とした', reason: '正確！弄丟（おとす）。' },
+            { text: '落{お}ちた', reason: '錯誤：掉落（意味著錢包自己掉下來，通常講自己弄丟用おとす）。' },
             { text: '忘{わす}れた', reason: '錯誤：忘記（帶）。' },
-            { text: '無{な}くした', reason: '錯誤：弄丟（Nakusu）。雖然意思一樣，但選項考Otosu辨析，若兩者皆有通常不並列正確選項。此處Otosu是考點。' }
+            { text: '無{な}くした', reason: '錯誤：弄丟（なくす）。雖然意思一樣，但選項考おとす辨析，若兩者皆有通常不並列正確選項。此處おとす是考點。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -5049,7 +5049,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 負{ま}けた
 → 原因：語義。`
     },
-    // 105. Owaru
+    // 105. おわる
     {
         id: 'n4_gen_owaru_1',
         prob: '夏休{なつやす}みがもうすぐ ______。',
@@ -5057,7 +5057,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '終{お}わります', reason: '正確！自動詞。' },
-            { text: '終{お}えます', reason: '錯誤：他動詞（做完）。主語是暑假（時間），自然結束用Owaru。' },
+            { text: '終{お}えます', reason: '錯誤：他動詞（做完）。主語是暑假（時間），自然結束用おわる。' },
             { text: '止{と}まります', reason: '錯誤：停止（物理移動）。' },
             { text: '閉{し}まります', reason: '錯誤：關閉（門窗）。' }
         ],
@@ -5098,7 +5098,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 終{お}った（送假名通常是わった）
 → 原因：五段活用。`
     },
-    // 106. Sagasu
+    // 106. さがす
     {
         id: 'n4_gen_sagasu_1',
         prob: '眼鏡{めがね}を ______ います。',
@@ -5107,7 +5107,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '探{さが}して', reason: '正確！五段動詞te形。' },
             { text: '探{さが}って', reason: '錯誤：變位錯誤。' },
-            { text: '見{み}つけて', reason: '錯誤：找到（結果）。「正在找」用Sagasu。' },
+            { text: '見{み}つけて', reason: '錯誤：找到（結果）。「正在找」用さがす。' },
             { text: '無{な}くして', reason: '錯誤：弄丟。' }
         ],
         correctIndex: 0,
@@ -5146,7 +5146,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 見{み}つかった（結果）
 → 原因：語意邏輯。`
     },
-    // 107. Sageru
+    // 107. さげる
     {
         id: 'n4_gen_sageru_1',
         prob: '頭{あたま}を ______ お礼{れい}をした。',
@@ -5193,7 +5193,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 後{うし}ろに下{さ}がる（那是「我往後退」）
 → 原因：受詞是行李。`
     },
-    // 108. Sashiageru
+    // 108. さしあげる
     {
         id: 'n4_gen_sashiageru_1',
         prob: '先生{せんせい}に花{はな}を ______。',
@@ -5239,7 +5239,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× くださいます
 → 原因：動作主是我。`
     },
-    // 109. Sasu
+    // 109. さす
     {
         id: 'n4_gen_sasu_1',
         prob: '時計{とけい}の針{はり}が12時{じ}を ______。',
@@ -5247,14 +5247,14 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '指{さ}しています', reason: '正確！五段動詞。' },
-            { text: '指{さ}っています', reason: '錯誤：變位錯誤（Sasu不是u結尾而是su結尾，su的te形是shite）。' },
+            { text: '指{さ}っています', reason: '錯誤：變位錯誤（さす不是u結尾而是su結尾，su的te形是shite）。' },
             { text: '刺{さ}しています', reason: '錯誤：刺（穿刺）。雖讀音同，但指向用指。' },
             { text: '差{さ}しています', reason: '錯誤：撐傘/插入。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
         correctRule: `【考點】漢字與活用
-【解析】指向用「指す」。Sasu -> Sashite。
+【解析】指向用「指す」。さす -> Sashite。
 【相關詞比較】
 ・指{ゆび}を指{さ}す：指著（人）。
 ・将棋{しょうぎ}を指{さ}す：下棋。
@@ -5269,10 +5269,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「下雨了呢。」\nB：「*撐* 傘走吧。」',
         level: 'N4',
         options: [
-            { text: '差{さ}して', reason: '正確！撐傘用Sasu。' },
+            { text: '差{さ}して', reason: '正確！撐傘用さす。' },
             { text: '指{さ}して', reason: '錯誤：手指。' },
             { text: '刺{さ}して', reason: '錯誤：刺。' },
-            { text: '開{ひら}いて', reason: '錯誤：打開（傘可以用開く，但Sasu是撐傘專用動詞）。若兩者並存，Sasu更慣用。' }
+            { text: '開{ひら}いて', reason: '錯誤：打開（傘可以用開く，但さす是撐傘專用動詞）。若兩者並存，さす更慣用。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -5283,10 +5283,10 @@ export const n4Questions: StaticQuestion[] = [
 ・日{ひ}が差{さ}す：陽光照耀。
 【易錯點】
 ・○ 傘{かさ}を差{さ}す
-・× 傘{かさ}を開{ひら}く（不完全錯，但Sasu是固定搭配）
+・× 傘{かさ}を開{ひら}く（不完全錯，但さす是固定搭配）
 → 原因：慣用搭配。`
     },
-    // 110. Sawagu
+    // 110. さわぐ
     {
         id: 'n4_gen_sawagu_1',
         prob: '教室{きょうしつ}で ______ ください。',
@@ -5295,7 +5295,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '騒{さわ}がないで', reason: '正確！' },
             { text: '騒{さわ}げて', reason: '錯誤：變位錯誤。' },
-            { text: '叫{さけ}ばないで', reason: '錯誤：大叫（Sakebu）。' },
+            { text: '叫{さけ}ばないで', reason: '錯誤：大叫（さけぶ）。' },
             { text: '歌{うた}わないで', reason: '錯誤：唱歌。' }
         ],
         correctIndex: 0,
@@ -5319,7 +5319,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '騒{さわ}いで', reason: '正確！五段i音便（gi -> ide）。' },
             { text: '騒{さわ}いて', reason: '錯誤：濁音脫落。' },
-            { text: '騒{さわ}って', reason: '錯誤：觸摸（Sawaru）？變位不同。' },
+            { text: '騒{さわ}って', reason: '錯誤：觸摸（さわる）？變位不同。' },
             { text: '驚{おどろ}いて', reason: '錯誤：吃驚（可能相伴發生，但urusai對應聲音sawagu）。' }
         ],
         correctIndex: 0,
@@ -5334,7 +5334,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 騒{さわ}いて
 → 原因：濁音尾變化。`
     },
-    // 111. Sawaru
+    // 111. さわる
     {
         id: 'n4_gen_sawaru_1',
         prob: '展示物{てんじぶつ}に手{て}で ______ はいけません。',
@@ -5366,7 +5366,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '触{さわ}る', reason: '正確！條件句（～と）。' },
-            { text: '触{さわ}った', reason: '錯誤：過去式（摸了就...）。雖然也可以（Tatara），但To接辭書形表示恆常/必然結果。' },
+            { text: '触{さわ}った', reason: '錯誤：過去式（摸了就...）。雖然也可以（たたら），但と接辭書形表示恆常/必然結果。' },
             { text: '取{と}る', reason: '錯誤：拿/摘。' },
             { text: '見{み}る', reason: '錯誤：看。' }
         ],
@@ -5375,13 +5375,13 @@ export const n4Questions: StaticQuestion[] = [
         correctRule: `【考點】條件叙述（對話）
 【解析】警告動作後果。
 【相關詞比較】
-・気{き}に障{さわ}る：令人不悅（Sawaru漢字不同）。
+・気{き}に障{さわ}る：令人不悅（さわる漢字不同）。
 【易錯點】
 ・○ 触{さわ}る
 ・× 障{さわ}る
 → 原因：漢字區分。`
     },
-    // 112. Sazaeru
+    // 112. さざえる
     {
         id: 'n4_gen_sazaeru_1',
         prob: '家族{かぞく}を ______。',
@@ -5396,7 +5396,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】支撐家族。 \n【語義】「支える」(sazaeru) 指在經濟或精神上支撐、扶養。\n【延伸】相關詞/混淆項：支え、支えます、助けます'
     },
-    // 113. Shikaru
+    // 113. しかる
     {
         id: 'n4_gen_shikaru_1',
         prob: 'いたずらをして、父{ちち}に ______ ました。',
@@ -5442,7 +5442,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 叱{しか}れた（變位錯誤）
 → 原因：五段受身是a段+reru。`
     },
-    // 114. Shiraberu
+    // 114. しらべる
     {
         id: 'n4_gen_shiraberu_1',
         prob: '分{わ}からない言葉{ことば}を辞書{じしょ}で ______。',
@@ -5450,8 +5450,8 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '調{しら}べます', reason: '正確！一段他動詞（調查/查閱）。' },
-            { text: '知{し}らせます', reason: '錯誤：通知（Shiraseru）。' },
-            { text: '探{さが}します', reason: '錯誤：尋找（失物）。查單字習慣用Shiraberu（查閱內容）。' },
+            { text: '知{し}らせます', reason: '錯誤：通知（しらせる）。' },
+            { text: '探{さが}します', reason: '錯誤：尋找（失物）。查單字習慣用しらべる（查閱內容）。' },
             { text: '覚{おぼ}えます', reason: '錯誤：記憶/背。' }
         ],
         correctIndex: 0,
@@ -5464,7 +5464,7 @@ export const n4Questions: StaticQuestion[] = [
 ・探{さが}す：尋找（物品）。
 【易錯點】
 ・○ 辞書{じしょ}で調{しら}べる
-・× 辞書{じしょ}で探{さが}す（雖然也通，但「調內容」更常用Shiraberu）
+・× 辞書{じしょ}で探{さが}す（雖然也通，但「調內容」更常用しらべる）
 → 原因：工具性動作。`
     },
     {
@@ -5475,7 +5475,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '調{しら}べる', reason: '正確！查詢資訊。' },
             { text: '知{し}らせる', reason: '錯誤：通知。' },
-            { text: '見{み}る', reason: '錯誤：看（看網路也可以，但針對問題找答案用Shiraberu更貼切）。' },
+            { text: '見{み}る', reason: '錯誤：看（看網路也可以，但針對問題找答案用しらべる更貼切）。' },
             { text: '聞{き}く', reason: '錯誤：問。' }
         ],
         correctIndex: 0,
@@ -5489,7 +5489,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 知{し}らせる
 → 原因：詞形相近。`
     },
-    // 115. Shiraseru
+    // 115. しらせる
     {
         id: 'n4_gen_shiraseru_1',
         prob: 'みんなにニュースを ______ ください。',
@@ -5519,9 +5519,9 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「聽說田中先生住院了。」\nB：「咦，真的？必須馬上 *通知* 部長。」',
         level: 'N4',
         options: [
-            { text: '知{し}らせ', reason: '正確！Shiraseru + nakya (Shirase nakya)。' },
-            { text: '知{し}ら', reason: '錯誤：未然形變位錯誤（一段去ru）。Shiraranakya (X)。' },
-            { text: '知{し}り', reason: '錯誤：Shiru (知道)。' },
+            { text: '知{し}らせ', reason: '正確！しらせる + nakya (しらせなきゃ)。' },
+            { text: '知{し}ら', reason: '錯誤：未然形變位錯誤（一段去ru）。しらなきゃ (X)。' },
+            { text: '知{し}り', reason: '錯誤：しる (知道)。' },
             { text: '調{しら}べ', reason: '錯誤：調查。' }
         ],
         correctIndex: 0,
@@ -5532,10 +5532,10 @@ export const n4Questions: StaticQuestion[] = [
 ・知{し}らせておきます：先通知一下。
 【易錯點】
 ・○ 知{し}らせなきゃ
-・× 知{し}らなきゃ（那是「若不知道的話」或Shiru的否定）
+・× 知{し}らなきゃ（那是「若不知道的話」或しる的否定）
 → 原因：一段動詞活用。`
     },
-    // 116. Sodateru
+    // 116. そだてる
     {
         id: 'n4_gen_sodateru_1',
         prob: '庭{にわ}で花{はな}を ______ います。',
@@ -5583,7 +5583,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 育{そだ}った
 → 原因：動作主是人。`
     },
-    // 117. Sonaeru
+    // 117. そなえる
     {
         id: 'n4_gen_sonaeru_1',
         prob: '地震{じしん}に ______。',
@@ -5598,7 +5598,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】為地震做準備。 \n【語感】「備える」通常指為了應對不可預期的災害、事故而預先準備。\n【延伸】相關詞/混淆項：準備します、備え、備わります'
     },
-    // 118. Sou
+    // 118. そう
     {
         id: 'n4_gen_sou_1',
         prob: '道{みち}に ______ 行{い}ってください。',
@@ -5613,7 +5613,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請沿著路走。 \n【活用】「沿う」(そう) 是五段動詞，字尾為「う」。\n【延伸】相關詞/混淆項：沿うて、沿い、添って'
     },
-    // 119. Suberu
+    // 119. すべる
     {
         id: 'n4_gen_suberu_1',
         prob: '道{みち}が凍{こお}っていて ______ やすいので、歩{ある}くときは気{き}をつけてください。',
@@ -5628,7 +5628,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】滑、打滑。 \n【活用】「滑り」+「やすい」(容易...)。\n【延伸】相關詞/混淆項：滑る、転び、走り'
     },
-    // 120. Sugiru
+    // 120. すぎる
     {
         id: 'n4_gen_sugiru_1',
         prob: '予定{よてい}の時間{じかん}を ______ ました。',
@@ -5643,7 +5643,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】超時。 \n【活用】「過ぎる」是一段動詞。\n【延伸】相關詞/混淆項：過ぎて、過ぎり、過ぎた'
     },
-    // 121. Suku
+    // 121. すく
     {
         id: 'n4_gen_suku_1',
         prob: 'お腹{なか}が ______ ました。',
@@ -5658,7 +5658,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】肚子餓。 \n【固定搭配】「お腹が空く」(onaka ga suku)。\n【延伸】相關詞/混淆項：空い、空っ、空き'
     },
-    // 122. Sumaseru
+    // 122. すませる
     {
         id: 'n4_gen_sumaseru_1',
         prob: '宿題{しゅくだい}を早く ______ ください。',
@@ -5673,7 +5673,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請快點把作業做完。 \n【活用】他動詞「済ませる」(一段) 變為 te 形。\n【延伸】相關詞/混淆項：終わって、済んで、済まし'
     },
-    // 123. Sumu
+    // 123. すむ
     {
         id: 'n4_gen_sumu_1',
         prob: '仕事{しごと}が ______。',
@@ -5688,7 +5688,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】工作結束了。 \n【自他動詞】「済む」(自) vs 「済ませる」(他)。\n【延伸】相關詞/混淆項：解決しました、済ませました、終わりました'
     },
-    // 124. Suru
+    // 124. する
     {
         id: 'n4_gen_suru_1',
         prob: '先生{せんせい}は学生{がくせい}に宿題{しゅくだい}を ______。',
@@ -5714,7 +5714,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× しらせました
 → 原因：誤以為是「し」+「らせる」。正確變化是直接變為「させる」。`
     },
-    // 125. Susumu
+    // 125. すすむ
     {
         id: 'n4_gen_susumu_1',
         prob: '前{まえ}に ______ ください。',
@@ -5729,7 +5729,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】請前進。 \n【自他動詞】「進む」(自動詞) vs 「進める」(他動詞)。\n【延伸】相關詞/混淆項：進ま、進めて、進み'
     },
-    // 126. Suteru
+    // 126. すてる
     {
         id: 'n4_gen_suteru_1',
         prob: 'ゴミはゴミ箱{ばこ}に ______ ください。',
@@ -5739,12 +5739,12 @@ export const n4Questions: StaticQuestion[] = [
             { text: '捨{す}てて', reason: '正確！一段動詞。' },
             { text: '捨{す}って', reason: '錯誤：誤作五段。' },
             { text: '拾{ひろ}って', reason: '錯誤：撿。' },
-            { text: '出{だ}して', reason: '錯誤：拿出（倒垃圾常用Dasu，但此題強調投入垃圾桶，用Suteru最直接）。且Sutte是錯誤變位。' }
+            { text: '出{だ}して', reason: '錯誤：拿出（倒垃圾常用だす，但此題強調投入垃圾桶，用すてる最直接）。且すって是錯誤變位。' }
         ],
         correctIndex: 0,
         tag: 'te',
         correctRule: `【考點】動詞活用
-【解析】丟棄用「捨てる」（一段）。Te形「捨てて」。
+【解析】丟棄用「捨てる」（一段）。て形「捨てて」。
 【相關詞比較】
 ・捨{す}てる：丟棄。
 ・拾{ひろ}う：撿拾。
@@ -5762,7 +5762,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '捨{す}てて', reason: '正確！許可（～ていい）。' },
             { text: '捨{す}って', reason: '錯誤：變位錯誤。' },
-            { text: '片付{かたづ}けて', reason: '錯誤：整理（不一定要丟）。若選此也通，但Suteru的語氣（因為不讀了）更強烈指向廢棄。選項通常考正確活用。' },
+            { text: '片付{かたづ}けて', reason: '錯誤：整理（不一定要丟）。若選此也通，但すてる的語氣（因為不讀了）更強烈指向廢棄。選項通常考正確活用。' },
             { text: '売{う}って', reason: '錯誤：賣。' }
         ],
         correctIndex: 0,
@@ -5776,7 +5776,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 捨{す}って
 → 原因：一段動詞不促音便。`
     },
-    // 127. Taberu
+    // 127. たべる
     {
         id: 'n4_gen_taberu_1',
         prob: '朝{あさ}ご飯{はん}を ______ ました。',
@@ -5808,7 +5808,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '食{た}べに', reason: '正確！移動目的（masu形去masu + ni）。' },
             { text: '食{た}べるに', reason: '錯誤：接續錯誤。' },
-            { text: '食{た}べて', reason: '錯誤：去吃（Te形+iku是附帶動作或變化，移動目的用ni）。' },
+            { text: '食{た}べて', reason: '錯誤：去吃（て形+iku是附帶動作或變化，移動目的用ni）。' },
             { text: '食{た}べ', reason: '錯誤：連用形單獨使用不完整。' }
         ],
         correctIndex: 0,
@@ -5822,7 +5822,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 食{た}べるに行{い}く
 → 原因：接續規則。`
     },
-    // 128. Taoreru
+    // 128. たおれる
     {
         id: 'n4_gen_taoreru_1',
         prob: '昨日{きのう}の強{つよ}い風{かぜ}で、公園{こうえん}の大きな木{き}が ______ しまいました。',
@@ -5837,7 +5837,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】倒、垮。 \n【自他動詞】「倒れる」(自動詞) vs 「倒す」(他動詞)。\n【延伸】相關詞/混淆項：折れて、壊れて、落ちて'
     },
-    // 129. Tariru
+    // 129. たりる
     {
         id: 'n4_gen_tariru_1',
         prob: 'パーティーに行{い}ったら、人{ひと}が多{おお}すぎて椅子{いす}が ______ 困{こま}りました。',
@@ -5852,7 +5852,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】夠、充足。 \n【用法】常用於描述數量、時間或金錢的充足度。\n【延伸】相關詞/混淆項：足りなく、足りず、無くて'
     },
-    // 130. Tasu
+    // 130. たす
     {
         id: 'n4_gen_tasu_1',
         prob: 'ソースの味{あじ}が少し{すこし}薄{うす}かったので、塩{しお}を ______ てみました。',
@@ -5867,7 +5867,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】加、添加。 \n【用法】常用於料理或數學運算(加法)。\n【延伸】相關詞/混淆項：加え、入れ、振り'
     },
-    // 131. Tateru
+    // 131. たてる
     {
         id: 'n4_gen_tateru_1',
         prob: '新{あたら}しい家{いえ}を ______。',
@@ -5876,8 +5876,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '建{た}てました', reason: '正確！建造（一段他動詞）。' },
             { text: '立{た}てました', reason: '錯誤：立起（旗/柱）。蓋房子用「建」。' },
-            { text: '建{た}ちました', reason: '錯誤：建好了（自動詞）。Tachimashita主語要是房子（家が建ちました）。' },
-            { text: '作{つく}りました', reason: '錯誤：製作（廣義，但蓋房專用Tateru）。' }
+            { text: '建{た}ちました', reason: '錯誤：建好了（自動詞）。たちました主語要是房子（家が建ちました）。' },
+            { text: '作{つく}りました', reason: '錯誤：製作（廣義，但蓋房專用たてる）。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -5917,7 +5917,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 計画{けいかく}を建{た}てる
 → 原因：非實體建築。`
     },
-    // 132. Tazuneru
+    // 132. たずねる
     {
         id: 'n4_gen_tazuneru_1',
         prob: '先生{せんせい}の家{いえ}を ______。',
@@ -5927,9 +5927,9 @@ export const n4Questions: StaticQuestion[] = [
             { text: '訪{たず}ねました', reason: '正確！一段動詞。' },
             { text: '尋{たず}ねました', reason: '錯誤：詢問（尋ねる）。讀音相同但漢字不同。' },
             { text: '呼{よ}びました', reason: '錯誤：叫。' },
-            { text: '行{い}きました', reason: '錯誤：去（語意通，但Tazuneru更正式且題目考點通常是動詞辨析）。若並列，Tazuneru有「訪問」之意。且Ikita助詞通常用ni/e，Tazuneru用o。' }
+            { text: '行{い}きました', reason: '錯誤：去（語意通，但たずねる更正式且題目考點通常是動詞辨析）。若並列，たずねる有「訪問」之意。且いきた助詞通常用ni/e，たずねる用o。' }
         ],
-        // Note: Tazuneru (Visit) takes object "o". Iku takes "ni/e".
+        // 註： たずねる (Visit) takes object "o". Iku takes "ni/e".
         // Problem has "Ie wo". So Iku is grammatically wrong (Ie wo iku -> walk along the house? No).
         correctIndex: 0,
         tag: 'vocab',
@@ -5952,7 +5952,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '尋{たず}ねて', reason: '正確！詢問。' },
             { text: '訪{たず}ねて', reason: '錯誤：拜訪。' },
             { text: '探{さが}して', reason: '錯誤：找。' },
-            { text: '調{しら}べて', reason: '錯誤：查（派出所通常是去問警察，不是去查資料）。但Kikute/Tazunete較佳。' }
+            { text: '調{しら}べて', reason: '錯誤：查（派出所通常是去問警察，不是去查資料）。但きいて/たずねて較佳。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -5965,7 +5965,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 訪{たず}ねる
 → 原因：訪問是Visit，尋問是Ask。`
     },
-    // 133. Tetsudau
+    // 133. てつだう
     {
         id: 'n4_gen_tetsudau_1',
         prob: '母{はは}の掃除{そうじ}を ______。',
@@ -5974,7 +5974,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '手伝{てつだ}いました', reason: '正確！五段動詞。' },
             { text: '手伝{てつだ}えました', reason: '錯誤：可能形/變位錯誤。' },
-            { text: '助{たす}けました', reason: '錯誤：救助（Tasukeru）。通常指救命或脫困。幫忙家事用Tetsudau。' },
+            { text: '助{たす}けました', reason: '錯誤：救助（たすける）。通常指救命或脫困。幫忙家事用てつだう。' },
             { text: '働{はたら}きました', reason: '錯誤：工作。' }
         ],
         correctIndex: 0,
@@ -5995,8 +5995,8 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「行李很多呢。要 *幫忙* 嗎？」\nB：「謝謝。」',
         level: 'N4',
         options: [
-            { text: '手伝{てつだ}いましょう', reason: '正確！主動提議（Mashouka）。' },
-            { text: '手伝{てつだ}ってください', reason: '錯誤：請幫我（請求）。A是主動方，應用Mashou。' },
+            { text: '手伝{てつだ}いましょう', reason: '正確！主動提議（ましょうka）。' },
+            { text: '手伝{てつだ}ってください', reason: '錯誤：請幫我（請求）。A是主動方，應用ましょう。' },
             { text: '持{も}ってください', reason: '錯誤：請拿。' },
             { text: '運{はこ}びなさい', reason: '錯誤：去搬（命令）。' }
         ],
@@ -6011,7 +6011,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 手伝{てつだ}ってください（方向相反）
 → 原因：誰幫誰。`
     },
-    // 134. Todokeru
+    // 134. とどける
     {
         id: 'n4_gen_todokeru_1',
         prob: '荷物{にもつ}を ______。',
@@ -6026,7 +6026,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'transitive',
         correctRule: '【考點】自他動詞辨析\n【解析】送達行李。 \n【自他動詞】「届ける」(人去送) vs 「届く」(物品抵達)。\n【延伸】相關詞/混淆項：届け、届きます、送ります'
     },
-    // 135. Tomaru
+    // 135. とまる
     {
         id: 'n4_gen_tomaru_1',
         prob: '時計{とけい}が ______ しまいました。',
@@ -6035,8 +6035,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '止{と}まって', reason: '正確！五段自動詞。' },
             { text: '止{と}めて', reason: '錯誤：他動詞（使停下）。鐘自己停，用自動詞。' },
-            { text: '辞{や}めて', reason: '錯誤：辭職/停止（Yameru）。' },
-            { text: '泊{と}まって', reason: '錯誤：住宿（Tomaru）。音同字不同。' }
+            { text: '辞{や}めて', reason: '錯誤：辭職/停止（やめる）。' },
+            { text: '泊{と}まって', reason: '錯誤：住宿（とまる）。音同字不同。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -6058,7 +6058,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '止{と}まって', reason: '正確！停下（自動詞命令形/請求）。' },
-            { text: '止{と}めて', reason: '錯誤：把車停下（他動詞）。在紅綠燈等候通常用Tomaru（車停下）。若指停車熄火下客用Tomete。語境是紅綠燈，故Tomaru（暫停）。' },
+            { text: '止{と}めて', reason: '錯誤：把車停下（他動詞）。在紅綠燈等候通常用とまる（車停下）。若指停車熄火下客用とめて。語境是紅綠燈，故とまる（暫停）。' },
             { text: '泊{と}まって', reason: '錯誤：住。' },
             { text: '辞{や}めて', reason: '錯誤：不做了。' }
         ],
@@ -6073,7 +6073,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 信号{しんご}を止{と}める（去把紅綠燈關了？）
 → 原因：自動詞。`
     },
-    // 136. Tomeru
+    // 136. とめる
     {
         id: 'n4_gen_tomeru_1',
         prob: 'ここに車{くるま}を ______ ください。',
@@ -6103,10 +6103,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「沒有停車場呢。」\nB：「*停* 在那裡可以嗎。」',
         level: 'N4',
         options: [
-            { text: '止{と}めても', reason: '正確！許可（～てもいい）。Tomete mo。' },
+            { text: '止{と}めても', reason: '正確！許可（～てもいい）。とめて mo。' },
             { text: '止{と}まっても', reason: '錯誤：自動詞（這車自己停在那？語意通常是駕駛去停，用他動詞）。' },
             { text: 'やめても', reason: '錯誤：放棄。' },
-            { text: 'とじても', reason: '錯誤：閉上（Tojiru）。' }
+            { text: 'とじても', reason: '錯誤：閉上（とじる）。' }
         ],
         correctIndex: 0,
         tag: 'grammar',
@@ -6119,7 +6119,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 止{と}まっても
 → 原因：動作主是人。`
     },
-    // 137. Tooru
+    // 137. とおる
     {
         id: 'n4_gen_tooru_1',
         prob: '毎日{まいにち}この道{みち}を ______ 学校{がっこう}へ行{い}きますが、途中{とちゅう}の公園{こうえん}には綺麗{きれい}な花{はな}が咲{さ}いています。',
@@ -6134,7 +6134,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】經過、通過。 \n【活用】五段動詞「通る」。注意助詞通常用「～を通る」。\n【延伸】相關詞/混淆項：步いて、通り、走って'
     },
-    // 138. Torikaeru
+    // 138. とりかえる
     {
         id: 'n4_gen_torikaeru_1',
         prob: '電池{でんち}を新{あたら}しいものに ______。',
@@ -6164,10 +6164,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「這襯衫尺寸不合...」\nB：「那，跟M號 *交換* 吧。」',
         level: 'N4',
         options: [
-            { text: '取{と}り替{か}え', reason: '正確！Masu形（～ましょう）。' },
+            { text: '取{と}り替{か}え', reason: '正確！ます形（～ましょう）。' },
             { text: '取{と}り変{か}え', reason: '錯誤：漢字通常用替/換。' },
             { text: '着{き}替{が}え', reason: '錯誤：換穿（店員跟顧客換貨，不是換穿）。' },
-            { text: '入{い}れ替{か}え', reason: '錯誤：替換/更替（Irekaeru）。雖然也通（把M號換進來），但Torikaeru更常用於「以物易物」。' }
+            { text: '入{い}れ替{か}え', reason: '錯誤：替換/更替（いれかえる）。雖然也通（把M號換進來），但とりかえる更常用於「以物易物」。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -6180,7 +6180,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 着{き}替{が}える
 → 原因：語義。`
     },
-    // 139. Tsudukeru
+    // 139. つづける
     {
         id: 'n4_gen_tsudukeru_1',
         prob: '毎日{まいにち}日本語{にほんご}の勉強{べんきょう}を ______ ことは大変{たいへん}ですが、とても大切{たいせつ}です。',
@@ -6195,7 +6195,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】持續。 \n【活用】一段他動詞「続ける」。\n【延伸】相關詞/混淆項：勉強する、続く、続けて'
     },
-    // 140. Tsuduku
+    // 140. つづく
     {
         id: 'n4_gen_tsuduku_1',
         prob: '雨{あめ}の日{ひ}が1週間{いっしゅうかん}も ______ ので、洗濯物{せんたくもの}が乾{かわ}かなくて困{こま}っています。',
@@ -6210,7 +6210,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】持續。 \n【活用】五段自動詞「続く」。\n【延伸】相關詞/混淆項：続けた、続き、降った'
     },
-    // 141. Tsukamaeru
+    // 141. つかまえる
     {
         id: 'n4_gen_tsukamaeru_1',
         prob: '警察{けいさつ}がどろぼうを ______。',
@@ -6225,7 +6225,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】警察抓到了小偷。 \n【自他動詞】「捕まえる」(他動詞，捉人) vs 「捕まる」(自動詞，被捕/被捉)。\n【延伸】相關詞/混淆項：捕まりました、押さえました、捕まえ'
     },
-    // 142. Tsukamaru
+    // 142. つかまる
     {
         id: 'n4_gen_tsukamaru_1',
         prob: '犯人{はんにん}が ______ ました。',
@@ -6240,7 +6240,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】犯人落網了。 \n【活用】「捕まる」(tsukamaru) 是五段自動詞，表示主體被抓住。\n【延伸】相關詞/混淆項：捕まえ、逮捕され、逃げ'
     },
-    // 143. Tsukeru
+    // 143. つける
     {
         id: 'n4_gen_tsukeru_1',
         prob: '野菜{やさい}を塩{しお}に ______ おくと、美味{おい}しい漬物{つけもの}になります。',
@@ -6255,7 +6255,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】泡、醃。 \n【活用】一段動詞「漬ける」。\n【延伸】相關詞/混淆項：漬け、飾って、入れて'
     },
-    // 144. Tsuku
+    // 144. つく
     {
         id: 'n4_gen_tsuku_1',
         prob: '電気{でんき}が ______。',
@@ -6281,7 +6281,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× つけています
 → 原因：混淆自動詞與他動詞。「つけている」意味著某人正手按開關不放（進行式），而非燈亮著的狀態。`
     },
-    // 145. Tsureru
+    // 145. つれる
     {
         id: 'n4_gen_tsureru_1',
         prob: '天氣{てんき}がいいので、犬{いぬ}を公園{こうえん}へ ______ 行{い}って、一緖{いっしょ}に走{はし}りました。',
@@ -6296,7 +6296,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】帶著（伴隨）。 \n【活用】一段動詞「連れる」。\n【延伸】相關詞/混淆項：連れる、連れ、持って'
     },
-    // 146. Tsuru
+    // 146. つる
     {
         id: 'n4_gen_tsuru_1',
         prob: '川{かわ}で魚{さかな}を ______。',
@@ -6304,8 +6304,8 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '釣{つ}りました', reason: '正確！五段動詞。' },
-            { text: '取{と}りました', reason: '錯誤：拿/捕（Toru）。雖然意思相近，但「釣魚」專用Tsuru。' },
-            { text: '捕{と}りました', reason: '錯誤：捕捉（Torimashita）。通常用網或手。' },
+            { text: '取{と}りました', reason: '錯誤：拿/捕（とる）。雖然意思相近，但「釣魚」專用つる。' },
+            { text: '捕{と}りました', reason: '錯誤：捕捉（とりました）。通常用網或手。' },
             { text: '飼{か}いました', reason: '錯誤：養。' }
         ],
         correctIndex: 0,
@@ -6327,7 +6327,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '釣{つ}る', reason: '正確！辭書形+koto。' },
-            { text: '釣{つ}って', reason: '錯誤：Te形。' },
+            { text: '釣{つ}って', reason: '錯誤：て形。' },
             { text: '釣{つ}った', reason: '錯誤：過去式（興趣通常用原形表示習慣）。' },
             { text: '釣{つ}り', reason: '錯誤：名詞（可以說「釣{つ}り」です，但題目有koto，動詞+koto）。' }
         ],
@@ -6342,7 +6342,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 釣{つ}りこと
 → 原因：名詞化接續。`
     },
-    // 147. Tsutaeru
+    // 147. つたえる
     {
         id: 'n4_gen_tsutaeru_1',
         prob: '社長{しゃちょう}に用件{ようけん}を ______ おきます。',
@@ -6351,8 +6351,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '伝{つた}えて', reason: '正確！一段他動詞。' },
             { text: '伝{つた}わって', reason: '錯誤：自動詞（傳播/流傳）。' },
-            { text: '手伝{てつだ}って', reason: '錯誤：幫忙（Tetsudau）。' },
-            { text: '言{い}って', reason: '錯誤：說（Iu）。雖然「社長に言って」也通，但商務轉達常用Tsutaeru。' }
+            { text: '手伝{てつだ}って', reason: '錯誤：幫忙（てつだう）。' },
+            { text: '言{い}って', reason: '錯誤：說（いう）。雖然「社長に言って」也通，但商務轉達常用つたえる。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -6375,7 +6375,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '伝{つた}えて', reason: '正確！よろしく伝えてください（請代為問好）。' },
-            { text: '言{い}って', reason: '錯誤：請說「請多指教」？語氣較直接，慣用Tsutaeru。' },
+            { text: '言{い}って', reason: '錯誤：請說「請多指教」？語氣較直接，慣用つたえる。' },
             { text: '話{はな}して', reason: '錯誤：請說話。' },
             { text: '教{おし}えて', reason: '錯誤：請教導。' }
         ],
@@ -6390,7 +6390,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 伝{つた}わって
 → 原因：固定搭配。`
     },
-    // 148. Tsutsumu
+    // 148. つつむ
     {
         id: 'n4_gen_tsutsumu_1',
         prob: 'プレゼントをきれいな紙{かみ}で ______。',
@@ -6405,7 +6405,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】用漂亮的紙包禮物。 \n【活用】五段動詞「包む」。\n【延伸】相關詞/混淆項：包み、包んで、包め'
     },
-    // 149. Ueru
+    // 149. うえる
     {
         id: 'n4_gen_ueru_1',
         prob: '庭{にわ}に木{き}を ______。',
@@ -6414,8 +6414,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '植{う}えました', reason: '正確！一段他動詞。' },
             { text: '生{う}みました', reason: '錯誤：生（產）。' },
-            { text: '育{そだ}てました', reason: '錯誤：培育（Sodateru）。雖然意思相近，但「種（Plant）」是Ueru。Sodateru是長期養育。選項若並列，通常Ueru指種植動作。' },
-            { text: '売{う}りました', reason: '錯誤：賣（Uru）。' }
+            { text: '育{そだ}てました', reason: '錯誤：培育（そだてる）。雖然意思相近，但「種（植物）」是うえる。そだてる是長期養育。選項若並列，通常うえる指種植動作。' },
+            { text: '売{う}りました', reason: '錯誤：賣（うる）。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -6451,7 +6451,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 植{う}わった
 → 原因：動作主是人。`
     },
-    // 150. Ugoku
+    // 150. うごく
     {
         id: 'n4_gen_ugoku_1',
         prob: 'エレベーターが ______ いません。',
@@ -6460,7 +6460,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '動{うご}いて', reason: '正確！五段自動詞。' },
             { text: '動{うご}かして', reason: '錯誤：他動詞（移動某物）。電梯自己運行用自動詞。' },
-            { text: '働{はたら}いて', reason: '錯誤：工作（人）。機械運轉用Ugoku。' },
+            { text: '働{はたら}いて', reason: '錯誤：工作（人）。機械運轉用うごく。' },
             { text: '歩{ある}いて', reason: '錯誤：走路。' }
         ],
         correctIndex: 0,
@@ -6497,7 +6497,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 働{はたら}かないで（別工作）
 → 原因：漢字形近。`
     },
-    // 151. Ukagau
+    // 151. うかがう
     {
         id: 'n4_gen_ukagau_1',
         prob: '明日{あした}10時{じ}に ______ ます。',
@@ -6512,7 +6512,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】明天拜訪。 \n【敬語】「伺う」(ukagau) 是「行く、来る、聞く」的謙讓語。\n【延伸】相關詞/混淆項：行き、来て、伺わ'
     },
-    // 152. Ukeru
+    // 152. うける
     {
         id: 'n4_gen_ukeru_1',
         prob: '試験{しけん}を ______。',
@@ -6527,7 +6527,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】參加考試。 \n【語義】「受ける」(ukeru) 在此表示接受考試。\n【延伸】相關詞/混淆項：受かます、受け、受けたい'
     },
-    // 153. Utau
+    // 153. うたう
     {
         id: 'n4_gen_utau_1',
         prob: 'みんなの前{まえ}で歌{うた}を ______。',
@@ -6553,7 +6553,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 歌{うた}あされました
 → 原因：五段動詞變化的連接音是「a段」。「歌{うた}う」是「wa」。`
     },
-    // 154. Utsu
+    // 154. うつ
     {
         id: 'n4_gen_utsu_1',
         prob: 'ボールを ______。',
@@ -6601,7 +6601,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 頭{あたま}を殴{なぐ}った（被人毆打）
 → 原因：意外撞擊。`
     },
-    // 155. Utsuru
+    // 155. うつる
     {
         id: 'n4_gen_utsuru_1',
         prob: '写真{しゃしん}がよく ______。',
@@ -6616,7 +6616,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'masu',
         correctRule: '【考點】動詞ます形活用\n【解析】相片照得很好。 \n【自他動詞】「写る」(自動詞，顯影/映照) vs 「写す」(他動詞，拍照/複寫)。\n【延伸】相關詞/混淆項：写った、写しました、写り'
     },
-    // 156. Utsusu
+    // 156. うつす
     {
         id: 'n4_gen_utsusu_1',
         prob: '黒板{こくばん}の字{じ}をノートに ______。',
@@ -6626,7 +6626,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '写{うつ}します', reason: '正確！抄寫/臨摹。' },
             { text: '映{うつ}します', reason: '錯誤：放映（影片/影子）。讀音相同，漢字不同。' },
             { text: '移{うつ}します', reason: '錯誤：移動（場所）。' },
-            { text: '撮{と}ります', reason: '錯誤：拍照（雖也有記錄之意，但抄寫用Utsusu）。' }
+            { text: '撮{と}ります', reason: '錯誤：拍照（雖也有記錄之意，但抄寫用うつす）。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -6646,7 +6646,7 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「這張照片，*拍* 得很好看呢（被拍映出來）。」\nB：「謝謝。是新相機。」',
         level: 'N4',
         options: [
-            { text: '写{うつ}っている', reason: '正確！自動詞（被拍到/映照）。照片拍出來的效果用Utsuru。' },
+            { text: '写{うつ}っている', reason: '正確！自動詞（被拍到/映照）。照片拍出來的效果用うつる。' },
             { text: '写{うつ}している', reason: '錯誤：正在拍（動作）。A是看著已拍好的照片評論內容。' },
             { text: '撮{と}っている', reason: '錯誤：正在拍。' },
             { text: '撮{と}られている', reason: '錯誤：被拍（通常指人被偷拍或被攝）。描述照片成像均用「写っている」。' }
@@ -6662,7 +6662,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 写真{しゃしん}に撮{と}る（撮る是拍攝動作）
 → 原因：自動詞表結果。`
     },
-    // 157. Uttaeru
+    // 157. うったえる
     {
         id: 'n4_gen_uttaeru_1',
         prob: '裁判所{さいばんしょ}に ______。',
@@ -6677,7 +6677,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】向法院控告。 \n【語義】「訴える」可以指法律上的控訴。\n【延伸】相關詞/混淆項：言います、頼みます、訴え'
     },
-    // 158. Wakareu
+    // 158. わかれる
     {
         id: 'n4_gen_wakareu_1',
         prob: '大学{だいがく}の卒業{そつぎょう}式{しき}では、友人{ゆうじん}たちと ______ のがとても寂{さび}しかったです。',
@@ -6692,7 +6692,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'vocab',
         correctRule: '【考點】單字語義與搭配\n【解析】分別、離別。 \n【注意】與「分かれる」(分開、分岔) 漢字不同。\n【延伸】相關詞/混淆項：分かれる、離れる、別れ'
     },
-    // 159. Wakasu
+    // 159. わかす
     {
         id: 'n4_gen_wakasu_1',
         prob: 'お湯{ゆ}を ______ ください。',
@@ -6701,8 +6701,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '沸{わ}かして', reason: '正確！五段他動詞。' },
             { text: '沸{わ}いて', reason: '錯誤：自動詞（水開了）。請求別人做用他動詞。' },
-            { text: '焼{や}いて', reason: '錯誤：燒（烤）。燒水不用Yaku。' },
-            { text: '燃{も}やして', reason: '錯誤：燃燒（Moyasu）。' }
+            { text: '焼{や}いて', reason: '錯誤：燒（烤）。燒水不用やく。' },
+            { text: '燃{も}やして', reason: '錯誤：燃燒（もやす）。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -6725,7 +6725,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '沸{わ}いて', reason: '正確！自動詞。水正在沸騰/燒開的狀態。' },
-            { text: '沸{わ}かして', reason: '錯誤：他動詞。如果是「（我）正在燒水」則用Wakashite imasu。但主語是Oyu（水），故用Waite imasu。' },
+            { text: '沸{わ}かして', reason: '錯誤：他動詞。如果是「（我）正在燒水」則用わかして います。但主語是おゆ（水），故用わいて います。' },
             { text: '焼{や}けて', reason: '錯誤：燒烤。' },
             { text: '冷{ひ}えて', reason: '錯誤：冷卻。' }
         ],
@@ -6740,7 +6740,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× お湯{ゆ}が沸{わ}かす
 → 原因：主語是水。`
     },
-    // 160. Waku
+    // 160. わく
     {
         id: 'n4_gen_waku_1',
         prob: 'やかんのお湯{おゆ}が ______ たら、教{おし}えてください。コーヒーをいれましょう。',
@@ -6755,7 +6755,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】（水等）開了。 \n【自他動詞】「沸く」(自動詞，水開了) vs 「沸かす」(他動詞，人去燒)。\n【延伸】相關詞/混淆項：沸く、沸か、沸き'
     },
-    // 161. Warau
+    // 161. わらう
     {
         id: 'n4_gen_warau_1',
         prob: 'みんなで大{おお}きな声{こえ}で ______ ました。',
@@ -6801,7 +6801,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 笑{わら}うている
 → 原因：五段促音便。`
     },
-    // 162. Wareru
+    // 162. われる
     {
         id: 'n4_gen_wareru_1',
         prob: 'コップが ______ しまいました。',
@@ -6810,8 +6810,8 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '割{わ}れて', reason: '正確！一段自動詞。' },
             { text: '割{わ}って', reason: '錯誤：他動詞（打破）。主語是杯子。' },
-            { text: '折{お}れて', reason: '錯誤：折斷（Oreru）。杯子不是細長物，用破碎。' },
-            { text: '壊{こ}われて', reason: '錯誤：壞掉（Kowareru）。雖通，但玻璃陶瓷類破碎常用Wareru。' }
+            { text: '折{お}れて', reason: '錯誤：折斷（おれる）。杯子不是細長物，用破碎。' },
+            { text: '壊{こ}われて', reason: '錯誤：壞掉（こわれる）。雖通，但玻璃陶瓷類破碎常用われる。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -6847,7 +6847,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 割{わ}っている
 → 原因：無生物主語狀態。`
     },
-    // 163. Wasureru
+    // 163. わすれる
     {
         id: 'n4_gen_wasureru_1',
         prob: '宿題{しゅくだい}を ______。',
@@ -6856,7 +6856,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '忘{わす}れました', reason: '正確！一段動詞。' },
             { text: '覚{おぼ}えました', reason: '錯誤：記住。' },
-            { text: '無{な}くしました', reason: '錯誤：弄丟（可能，但忘記帶通稱Wasureru）。Wasureru最直接對應Forget。' },
+            { text: '無{な}くしました', reason: '錯誤：弄丟（可能，但忘記帶通稱わすれる）。わすれる最直接對應忘記。' },
             { text: '遅{おく}れました', reason: '錯誤：遲到。' }
         ],
         correctIndex: 0,
@@ -6878,7 +6878,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '忘{わす}れた', reason: '正確！' },
-            { text: '忘{わす}れて', reason: '錯誤：Te形中頓。' },
+            { text: '忘{わす}れて', reason: '錯誤：て形中頓。' },
             { text: '覚{おぼ}えた', reason: '錯誤：記住。' },
             { text: '落{お}ちた', reason: '錯誤：掉落。' }
         ],
@@ -6893,7 +6893,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 忘{わす}れった（變位錯誤）
 → 原因：一段動詞。`
     },
-    // 164. Yakeru
+    // 164. やける
     {
         id: 'n4_gen_yakeru_1',
         prob: 'パンが ______。',
@@ -6902,7 +6902,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '焼{や}けました', reason: '正確！自動詞（烤好/燒毀）。' },
             { text: '焼{や}きました', reason: '錯誤：他動詞（烤了）。主語是麵包。' },
-            { text: '燃{も}えました', reason: '錯誤：燃燒（Moeru）。通常指起火燃燒，麵包烤好用Yakeru。' },
+            { text: '燃{も}えました', reason: '錯誤：燃燒（もえる）。通常指起火燃燒，麵包烤好用やける。' },
             { text: '食{た}べました', reason: '錯誤：吃了。' }
         ],
         correctIndex: 0,
@@ -6926,8 +6926,8 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '焼{や}けて', reason: '正確！自動詞狀態。' },
-            { text: '焼{や}いて', reason: '錯誤：他動詞（某人正在烤）。主語是「魚」，強調魚的狀態用Yakete iru。' },
-            { text: '煮{に}えて', reason: '錯誤：煮（Nieru）。' },
+            { text: '焼{や}いて', reason: '錯誤：他動詞（某人正在烤）。主語是「魚」，強調魚的狀態用やけて いる。' },
+            { text: '煮{に}えて', reason: '錯誤：煮（にえる）。' },
             { text: '沸{わ}いて', reason: '錯誤：沸騰。' }
         ],
         correctIndex: 0,
@@ -6941,7 +6941,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 焼{や}いている（若主語是人則可）
 → 原因：主語是物。`
     },
-    // 165. Yaku
+    // 165. やく
     {
         id: 'n4_gen_yaku_1',
         prob: '肉{にく}を ______。',
@@ -6949,9 +6949,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '焼{や}きます', reason: '正確！五段他動詞。' },
-            { text: '炊{た}きます', reason: '錯誤：煮（飯）。Takimasu (Cook rice).' },
-            { text: '煮{に}ます', reason: '錯誤：煮（Nimasu）。' },
-            { text: '炒{いた}めます', reason: '錯誤：炒（Itamemasu）。' }
+            { text: '炊{た}きます', reason: '錯誤：煮（飯）。たきます (煮飯).' },
+            { text: '煮{に}ます', reason: '錯誤：煮（にます）。' },
+            { text: '炒{いた}めます', reason: '錯誤：炒（いためます）。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -6975,7 +6975,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '焼{や}く', reason: '正確！' },
             { text: '焼{や}ける', reason: '錯誤：自動詞。' },
             { text: '燃{も}やす', reason: '錯誤：燒掉。' },
-            { text: '作{つく}る', reason: '錯誤：做（雖然也對，但前文提BBQ，Yaku更精確）。' }
+            { text: '作{つく}る', reason: '錯誤：做（雖然也對，但前文提BBQ，やく更精確）。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -6988,7 +6988,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 焼{や}ける
 → 原因：人為主動動作。`
     },
-    // 166. Yakunitatsu
+    // 166. やくnitatsu
     {
         id: 'n4_gen_yakunitatsu_1',
         prob: '日本語{にほんご}の辞書{じしょ}は、わからない單語{たんご}を調{しら}べるのにとても ______ います。',
@@ -7003,7 +7003,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】有用、有助。 \n【用法】～のに役に立つ (對...有用)。\n【延伸】相關詞/混淆項：使って、役くに立つ、役くに立ち'
     },
-    // 167. Yamu
+    // 167. やむ
     {
         id: 'n4_gen_yamu_1',
         prob: '雨{あめ}が ______ ら、一緒{いっしょ}に公園{こうえん}まで散歩{散歩}に行{い}きませんか？',
@@ -7018,7 +7018,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'ta',
         correctRule: '【考點】動詞た形活用\n【解析】（雨、雪等）停。 \n【習慣】「雨が止む」是固定搭配。\n【延伸】相關詞/混淆項：止め、止む、止み'
     },
-    // 168. Yaseru
+    // 168. やせる
     {
         id: 'n4_gen_yaseru_1',
         prob: 'ダイエットをして、少し ______。',
@@ -7026,8 +7026,8 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '痩{や}せました', reason: '正確！一段動詞。' },
-            { text: '太{ふと}りました', reason: '錯誤：變胖（Futoru）。' },
-            { text: '減{へ}りました', reason: '錯誤：減少（Heru）。雖然體重減少，但人變瘦用Yaseru。' },
+            { text: '太{ふと}りました', reason: '錯誤：變胖（ふとる）。' },
+            { text: '減{へ}りました', reason: '錯誤：減少（へる）。雖然體重減少，但人變瘦用やせる。' },
             { text: '弱{よわ}りました', reason: '錯誤：變弱。' }
         ],
         correctIndex: 0,
@@ -7048,9 +7048,9 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「他變帥了呢。」\nB：「嗯，*瘦* 了變苗條了呢。」',
         level: 'N4',
         options: [
-            { text: '痩{や}せて', reason: '正確！Te形中頓。' },
+            { text: '痩{や}せて', reason: '正確！て形中頓。' },
             { text: '痩{や}せって', reason: '錯誤：變位錯誤（一段）。' },
-            { text: '細{こま}かく', reason: '錯誤：詳細/細碎（Komakaku）。' },
+            { text: '細{こま}かく', reason: '錯誤：詳細/細碎（こまかく）。' },
             { text: '薄{うす}くて', reason: '錯誤：薄。' }
         ],
         correctIndex: 0,
@@ -7064,7 +7064,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 痩{や}せって
 → 原因：一段動詞。`
     },
-    // 169. Yogoreru
+    // 169. よごれる
     {
         id: 'n4_gen_yogoreru_1',
         prob: '靴{くつ}が泥{どろ}で ______ しまいました。',
@@ -7079,7 +7079,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】鞋子沾泥弄髒了。 \n【自他動詞】「汚れる」(自動詞，髒了) vs 「汚す」(他動詞，弄髒)。\n【延伸】相關詞/混淆項：汚れ、汚して、汚れな'
     },
-    // 170. Yomu
+    // 170. よむ
     {
         id: 'n4_gen_yomu_1',
         prob: '毎朝{まいあさ}、新聞{しんぶん}を ______。',
@@ -7088,7 +7088,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '読{よ}みます', reason: '正確！五段動詞。' },
             { text: '呼{よ}びます', reason: '錯誤：叫。' },
-            { text: '見{み}ます', reason: '錯誤：看。看報紙習慣用Yomu（閱讀文字）。Mimasu也可以，但Yomu更精確。若並列，Yomu通常為正解。' },
+            { text: '見{み}ます', reason: '錯誤：看。看報紙習慣用よむ（閱讀文字）。みます也可以，但よむ更精確。若並列，よむ通常為正解。' },
             { text: '書{か}きます', reason: '錯誤：寫。' }
         ],
         correctIndex: 0,
@@ -7110,7 +7110,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '読{よ}んだ', reason: '正確！過去式/完了。' },
-            { text: '読{よ}んで', reason: '錯誤：Te形中頓。' },
+            { text: '読{よ}んで', reason: '錯誤：て形中頓。' },
             { text: '呼{よ}んだ', reason: '錯誤：叫了。' },
             { text: '書{か}いた', reason: '錯誤：寫了。' }
         ],
@@ -7125,7 +7125,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 読{よ}むだ
 → 原因：撥音便。`
     },
-    // 171. Yorokobu
+    // 171. よろこぶ
     {
         id: 'n4_gen_yorokobu_1',
         prob: '合格{ごうかく}して、母{はは}が ______ ました。',
@@ -7133,8 +7133,8 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '喜{よろこ}び', reason: '正確！五段動詞。' },
-            { text: '楽{たの}しみ', reason: '錯誤：期待/享受（Tanoshimu）。' },
-            { text: '驚{おどろ}き', reason: '錯誤：驚訝（Odoroku）。' },
+            { text: '楽{たの}しみ', reason: '錯誤：期待/享受（たのしむ）。' },
+            { text: '驚{おどろ}き', reason: '錯誤：驚訝（おどろく）。' },
             { text: '怒{おこ}り', reason: '錯誤：生氣。' }
         ],
         correctIndex: 0,
@@ -7155,9 +7155,9 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「禮物，女朋友 *高興* 嗎（有為我而高興嗎）？」\nB：「嗯，非常（高興）。」',
         level: 'N4',
         options: [
-            { text: '喜{よろこ}んで', reason: '正確！Yorokonde kureta。' },
+            { text: '喜{よろこ}んで', reason: '正確！よろこんで くれた。' },
             { text: '喜{よろこ}ぶて', reason: '錯誤：變位錯誤。' },
-            { text: '好{す}いて', reason: '錯誤：喜歡（Suite）。' },
+            { text: '好{す}いて', reason: '錯誤：喜歡（すいて）。' },
             { text: '笑{わら}って', reason: '錯誤：笑。' }
         ],
         correctIndex: 0,
@@ -7171,7 +7171,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 喜{よろこ}ぶて
 → 原因：五段撥音便。`
     },
-    // 172. Yoru
+    // 172. よる
     {
         id: 'n4_gen_yoru_1',
         prob: '帰{かえ}りにコンビニに ______。',
@@ -7218,7 +7218,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 寄{よ}りて
 → 原因：五段促音便。`
     },
-    // 173. Yureru
+    // 173. ゆれる
     {
         id: 'n4_gen_yureru_1',
         prob: '地震{じしん}で机{つくえ}の上{うえ}のコップがガタガタと ______ 、中{なか}のコーヒーがこぼれてしまいました。',
@@ -7233,7 +7233,7 @@ export const n4Questions: StaticQuestion[] = [
         tag: 'te',
         correctRule: '【考點】動詞て形活用\n【解析】晃動。 \n【用法】描述地震、波浪引起的動盪。\n【延伸】相關詞/混淆項：揺れる、動いて、揺らし'
     },
-    // 174. Moushiageru
+    // 174. もうしあげる
     {
         id: 'n4_gen_moushiageru_1',
         prob: '心{こころ}からお礼{れい}を ______ ます。',
@@ -7280,7 +7280,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 申{もう}す上{あ}げる
 → 原因：複合詞。`
     },
-    // 175. Shinu
+    // 175. しぬ
     {
         id: 'n4_gen_shinu_1',
         prob: '飼{か}っていた金魚{きんぎょ}が ______ しまいました。',
@@ -7295,7 +7295,7 @@ export const n4Questions: StaticQuestion[] = [
         correctIndex: 0,
         tag: 'te',
         correctRule: `【考點】動詞音便
-【解析】「死ぬ」是唯一的nu結尾動詞。Te形為「死んで」。
+【解析】「死ぬ」是唯一的nu結尾動詞。て形為「死んで」。
 【相關詞比較】
 ・死{し}ぬ：死。
 ・殺{ころ}す：殺。
@@ -7328,7 +7328,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 死{し}っている
 → 原因：音便。`
     },
-    // 176. Shinjiru
+    // 176. しんじる
     {
         id: 'n4_gen_shinjiru_1',
         prob: '彼{かれ}の話{はなし}を ______ います。',
@@ -7343,7 +7343,7 @@ export const n4Questions: StaticQuestion[] = [
         correctIndex: 0,
         tag: 'te',
         correctRule: `【考點】動詞活用
-【解析】「信じる」是上一段動詞。Te形沒有促音便。「信じて」。
+【解析】「信じる」是上一段動詞。て形沒有促音便。「信じて」。
 【相關詞比較】
 ・信{しん}じる：相信。
 ・疑{うたが}う：懷疑。
@@ -7374,7 +7374,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 信{しん}じらない
 → 原因：活用規則。`
     },
-    // 177. Tanomu
+    // 177. たのむ
     {
         id: 'n4_gen_tanomu_1',
         prob: '店員{てんいん}に水を ______。',
@@ -7421,7 +7421,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 頼{たの}めよう
 → 原因：五段意向形o段+u。`
     },
-    // 178. Tanoshimu
+    // 178. たのしむ
     {
         id: 'n4_gen_tanoshimu_1',
         prob: '音楽{おんがく}を ______。',
@@ -7429,7 +7429,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '楽{たの}しみます', reason: '正確！五段動詞。' },
-            { text: '楽{たの}しがります', reason: '錯誤：那是「（第三人稱）感到快樂」。Tanoshimu是享受某事（主觀）。' },
+            { text: '楽{たの}しがります', reason: '錯誤：那是「（第三人稱）感到快樂」。たのしむ是享受某事（主觀）。' },
             { text: '喜{よろこ}びます', reason: '錯誤：高興。' },
             { text: '笑{わら}います', reason: '錯誤：笑。' }
         ],
@@ -7468,7 +7468,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 楽{たの}しんでいる（那是正在玩樂）
 → 原因：慣用搭配。`
     },
-    // 179. Tamaru
+    // 179. たまる
     {
         id: 'n4_gen_tamaru_1',
         prob: 'お金{かね}が ______。',
@@ -7477,7 +7477,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '貯{た}まった', reason: '正確！自動詞（積累）。' },
             { text: '貯{た}めた', reason: '錯誤：他動詞（存錢）。主語是錢，應是自動詞。如果是「お金を貯めた」則對。' },
-            { text: '集{あつ}まった', reason: '錯誤：聚集（人/物）。錢通常用Tamaru。' },
+            { text: '集{あつ}まった', reason: '錯誤：聚集（人/物）。錢通常用たまる。' },
             { text: '払{はら}った', reason: '錯誤：支付。' }
         ],
         correctIndex: 0,
@@ -7516,7 +7516,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× ためている
 → 原因：無生物自然現象。`
     },
-    // 180. Taru
+    // 180. たる
     {
         id: 'n4_gen_taru_1',
         prob: '時間{じかん}が ______ ません。',
@@ -7525,13 +7525,13 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '足{た}り', reason: '正確！五段動詞（足る/足りる）。' },
             { text: '足{た}れ', reason: '錯誤：命令/可能。' },
-            { text: '足{た}し', reason: '錯誤：他動詞（Tasru: 加上）。' },
+            { text: '足{た}し', reason: '錯誤：他動詞（たす: 加上）。' },
             { text: '多{おお}く', reason: '錯誤：多。' }
         ],
         correctIndex: 0,
         tag: 'masu',
         correctRule: `【考點】動詞活用
-【解析】足夠用「足りる」（一段）或「足る」（五段）。現代常用一段「足りる」。Masu形皆為「足ります」。
+【解析】足夠用「足りる」（一段）或「足る」（五段）。現代常用一段「足りる」。ます形皆為「足ります」。
 【相關詞比較】
 ・足{た}りる：足夠。
 ・足{た}す：加上。
@@ -7547,7 +7547,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '足{た}りない', reason: '正確！足りる的否定。' },
-            { text: '足{た}らない', reason: '錯誤：足る的否定。雖然文法對，但現代口語常用Tarinai。Taranai 語氣較生硬。' },
+            { text: '足{た}らない', reason: '錯誤：足る的否定。雖然文法對，但現代口語常用たりない。たらない 語氣較生硬。' },
             { text: '足{た}さない', reason: '錯誤：不加上（他動詞）。' },
             { text: '無{な}い', reason: '錯誤：沒有。' }
         ],
@@ -7563,7 +7563,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 足{た}らない（較少用）
 → 原因：現代日語傾向使用一段活用「足りる」。`
     },
-    // 181. Chigau
+    // 181. ちがう
     {
         id: 'n4_gen_chigau_1',
         prob: '答えが ______ います。',
@@ -7578,7 +7578,7 @@ export const n4Questions: StaticQuestion[] = [
         correctIndex: 0,
         tag: 'te',
         correctRule: `【考點】動詞活用
-【解析】錯誤/不同用「違う」。Te形「違って」。
+【解析】錯誤/不同用「違う」。て形「違って」。
 【相關詞比較】
 ・違{ちが}う：不同/錯。
 ・間違{まちが}える：弄錯。
@@ -7596,7 +7596,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '違{ちが}う', reason: '正確！' },
             { text: '違{ちが}った', reason: '錯誤：錯了（過去式）。雖然「違った」也常用於發現錯誤時，但糾正當下狀態用「違う」最自然。' },
             { text: '間違{まちが}い', reason: '錯誤：名詞。' },
-            { text: 'だめ', reason: '錯誤：不行（Dame）。B說「有點不一樣」，用Chigau更精確指出差異。' }
+            { text: 'だめ', reason: '錯誤：不行（だめ）。B說「有點不一樣」，用ちがう更精確指出差異。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -7610,7 +7610,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 違{ちが}える
 → 原因：自動詞。`
     },
-    // 182. Tsukau
+    // 182. つかう
     {
         id: 'n4_gen_tsukau_1',
         prob: 'パソコンを ______ レポートを書{か}きます。',
@@ -7642,7 +7642,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '使{つか}って', reason: '正確！許可（～てもいい）。' },
             { text: '使{つか}うて', reason: '錯誤：音便錯誤。' },
-            { text: '貸{か}して', reason: '錯誤：借（Kashite mo ii? = Can I lend it? Wrong. Should be Karite mo ii - Can I borrow. Kashite is lending to someone）。' },
+            { text: '貸{か}して', reason: '錯誤：借（かして もいい？ = 我可以借出去嗎？ 錯誤。 應該是かりて もいい - 我可以借來嗎。 かして是借給別人）。' },
             { text: '持{も}って', reason: '錯誤：拿。' }
         ],
         correctIndex: 0,
@@ -7657,7 +7657,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 使{つか}いて
 → 原因：五段促音便。`
     },
-    // 183. Tsukareru
+    // 183. つかれる
     {
         id: 'n4_gen_tsukareru_1',
         prob: 'たくさん歩{ある}いて ______ ました。',
@@ -7666,7 +7666,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '疲{つか}れ', reason: '正確！一段動詞。' },
             { text: '疲{つか}り', reason: '錯誤：誤作五段。' },
-            { text: '着{つ}き', reason: '錯誤：到達（Tsuku）。' },
+            { text: '着{つ}き', reason: '錯誤：到達（つく）。' },
             { text: '好{す}き', reason: '錯誤：喜歡。' }
         ],
         correctIndex: 0,
@@ -7703,7 +7703,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 疲{つか}れる（指會累，非當下狀態）
 → 原因：狀態動詞過去式表示當下狀態。`
     },
-    // 184. Tsukuru
+    // 184. つくる
     {
         id: 'n4_gen_tsukuru_1',
         prob: '料理{りょうり}を ______ のが好きです。',
@@ -7737,7 +7737,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '作{つく}って', reason: '正確！' },
             { text: '作{つく}りて', reason: '錯誤：' },
             { text: '使{つか}って', reason: '錯誤：使用。' },
-            { text: '買{か}って', reason: '錯誤：買（不會有製作的香味，雖然可能有香味，但Tsukuru更符合語境"媽媽在..."的主動感）。' }
+            { text: '買{か}って', reason: '錯誤：買（不會有製作的香味，雖然可能有香味，但つくる更符合語境"媽媽在..."的主動感）。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -7750,7 +7750,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 作{つく}りて
 → 原因：五段促音便。`
     },
-    // 185. Tsuzuku
+    // 185. つづく
     {
         id: 'n4_gen_tsuzuku_1',
         prob: '地震{じしん}が ______ います。',
@@ -7785,7 +7785,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '続{つづ}いている', reason: '正確！狀態持續。' },
             { text: '続{つづ}けている', reason: '錯誤：他動詞。' },
             { text: '止{や}んでいる', reason: '錯誤：停了。' },
-            { text: '降{お}りている', reason: '錯誤：下了（車）。(Oru/Oriru confusion). Rain falling is Furu. ' }
+            { text: '降{お}りている', reason: '錯誤：下了（車）。(おる/おりる混淆). 下雨是ふる. ' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -7798,7 +7798,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 続{つづ}けている
 → 原因：自動詞。`
     },
-    // 186. Tsuzukeru
+    // 186. つづける
     {
         id: 'n4_gen_tsuzukeru_1',
         prob: '勉強{べんきょう}を ______ ください。',
@@ -7807,7 +7807,7 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '続{つづ}けて', reason: '正確！一段他動詞。' },
             { text: '続{つづ}いて', reason: '錯誤：自動詞。' },
-            { text: '始{はじ}めて', reason: '錯誤：開始（Hajimeru）。' },
+            { text: '始{はじ}めて', reason: '錯誤：開始（はじめる）。' },
             { text: '終{お}わって', reason: '錯誤：結束。' }
         ],
         correctIndex: 0,
@@ -7828,10 +7828,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「不吃了？」\nB：「雖然飽了，但試著再 *繼續* (吃) 一下。」',
         level: 'N4',
         options: [
-            { text: '食{た}べ続{つづ}けて', reason: '正確！複合動詞（Vmasu + 続ける）。' },
+            { text: '食{た}べ続{つづ}けて', reason: '正確！複合動詞（ます形 + 続ける）。' },
             { text: '食{た}べ終{お}わって', reason: '錯誤：吃完。' },
             { text: '食{た}べ始{はじ}めて', reason: '錯誤：開始吃。' },
-            { text: '食{た}べ止{や}んで', reason: '錯誤：停止吃（Yamu通常接自然現象）。Yameru是停止。' }
+            { text: '食{た}べ止{や}んで', reason: '錯誤：停止吃（やむ通常接自然現象）。やめる是停止。' }
         ],
         correctIndex: 0,
         tag: 'grammar',
@@ -7845,7 +7845,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 食{た}べ続{つづ}く
 → 原因：人的動作持續。`
     },
-    // 187. Tsutomu
+    // 187. つとめる
     {
         id: 'n4_gen_tsutomu_1',
         prob: '父{ちち}は銀行{ぎんこう}に ______ います。',
@@ -7853,9 +7853,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '勤{つと}めて', reason: '正確！任職於（ni）。' },
-            { text: '働{はたら}いて', reason: '錯誤：工作（地點用de）。如果是「銀行で」則選Hataraku。' },
-            { text: '住{す}んで', reason: '錯誤：住（Sunde）。銀行に住んで？不自然。' },
-            { text: '通{かよ}って', reason: '錯誤：通勤（Kayou）。「銀行に」可通，但通常說「任職」較多。且Kayou通常指學校或地點。Tsutomu is stronger for employment.' }
+            { text: '働{はたら}いて', reason: '錯誤：工作（地點用de）。如果是「銀行で」則選はたらく。' },
+            { text: '住{す}んで', reason: '錯誤：住（すんで）。銀行に住んで？不自然。' },
+            { text: '通{かよ}って', reason: '錯誤：通勤（かよう）。「銀行に」可通，但通常說「任職」較多。且かよう通常指學校或地點。つとめる對於就職更恰當。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -7891,7 +7891,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 努{つと}める（盡力）
 → 原因：同音異義。`
     },
-    // 188. Tobu
+    // 188. とぶ
     {
         id: 'n4_gen_tobu_1',
         prob: '鳥{とり}が空{そら}を ______ います。',
@@ -7900,11 +7900,11 @@ export const n4Questions: StaticQuestion[] = [
         options: [
             { text: '飛{と}んで', reason: '正確！五段撥音便（bu -> nde）。' },
             { text: '飛{と}びて', reason: '錯誤：音便錯誤。' },
-            { text: '跳{と}んで', reason: '錯誤：跳（Tondearu? No, Haneru/Tobu jump）。雖然讀音同，但飛翔用「飛」。' },
+            { text: '跳{と}んで', reason: '錯誤：跳（とんである？ No, はねる/とぶ 跳）。雖然讀音同，但飛翔用「飛」。' },
             { text: '登{のぼ}って', reason: '錯誤：爬/登。' }
         ],
-        // Note: Tobu (Fly) and Tobu (Jump) are homophones. Kanji distinguishes. 
-        // Problem uses "Sora wo" (In the sky). So "Fly" is correct.
+        // 註： Tobu (飛) and Tobu (跳躍) are homophones. Kanji distinguishes. 
+        // Problem uses "Sora wo" (In the sky). So "飛" is correct.
         correctIndex: 0,
         tag: 'te',
         correctRule: `【考點】動詞音便與助詞
@@ -7939,7 +7939,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 飛{と}びた
 → 原因：撥音便。`
     },
-    // 189. Toru
+    // 189. とる
     {
         id: 'n4_gen_toru_1',
         prob: '本棚{ほんだな}の本{ほん}を ______。',
@@ -7949,7 +7949,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '取{と}ります', reason: '正確！五段動詞。' },
             { text: '撮{と}ります', reason: '錯誤：拍照。' },
             { text: '採{と}ります', reason: '錯誤：採集/錄用。' },
-            { text: '盗{ぬす}みます', reason: '錯誤：偷（Nusumu）。' }
+            { text: '盗{ぬす}みます', reason: '錯誤：偷（ぬすむ）。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -7969,10 +7969,10 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「鹽，能 *拿* 給我嗎？」\nB：「好，請。」',
         level: 'N4',
         options: [
-            { text: '取{と}って', reason: '正確！請求（Totte kureru?）。' },
+            { text: '取{と}って', reason: '正確！請求（とって くれる？）。' },
             { text: '取{と}りて', reason: '錯誤：音便錯誤。' },
-            { text: '持{も}って', reason: '錯誤：拿著（Motte）。Motte kureru? (Can you hold it?) vs "Pass it". Context "Pass the salt" uses Toru. Compare: "Shio wo totte".' },
-            { text: '出{だ}して', reason: '錯誤：拿出（Dashite）。Totte常用於餐桌遞物。' }
+            { text: '持{も}って', reason: '錯誤：拿著（もって）。もって kureru? (你能拿著嗎？) 對比「遞給我」. 語境「遞鹽」用とる. 比較： "しお を とって".' },
+            { text: '出{だ}して', reason: '錯誤：拿出（だして）。とって常用於餐桌遞物。' }
         ],
         correctIndex: 0,
         tag: 'te',
@@ -7985,7 +7985,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 取{と}りて
 → 原因：五段促音便。`
     },
-    // 190. Umareru
+    // 190. うまれる
     {
         id: 'n4_gen_umareru_1',
         prob: '先月{せんげつ}、子供{こども}が ______。',
@@ -8018,7 +8018,7 @@ export const n4Questions: StaticQuestion[] = [
             { text: '生{う}まれて', reason: '正確！' },
             { text: '生{う}んで', reason: '錯誤：生產。' },
             { text: '生{い}きて', reason: '錯誤：生活/活著。' },
-            { text: '暮{く}らして', reason: '錯誤：生活（Kurashite）。雖也通，但與Sodachimashita對應的通常是Umarete（生於某地長於某地）。' }
+            { text: '暮{く}らして', reason: '錯誤：生活（くらして）。雖也通，但與そだちました對應的通常是うまれて（生於某地長於某地）。' }
         ],
         correctIndex: 0,
         tag: 'grammar',
@@ -8031,7 +8031,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 生{う}んで
 → 原因：自他動詞。`
     },
-    // 191. Uru
+    // 191. うる
     {
         id: 'n4_gen_uru_1',
         prob: 'スーパーで野菜{やさい}を ______ います。',
@@ -8063,9 +8063,9 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '売{う}って', reason: '正確！' },
-            { text: '売{う}れて', reason: '錯誤：暢銷（Urete）。「どこで売れていますか」=哪裡很暢銷？A問哪裡買得到，通常問「哪裡有賣（販售中）」。Utsute iru focuses on the action of selling.' },
-            { text: '買{か}って', reason: '錯誤：買（Kat te imasu ka? I am buying? No. Shop is selling.' },
-            { text: '置{お}いて', reason: '錯誤：放（Oite）。也常用「どこに置いてありますか」。但選項考Uru。' }
+            { text: '売{う}れて', reason: '錯誤：暢銷（うれて）。「どこで売れていますか」=哪裡很暢銷？A問哪裡買得到，通常問「哪裡有賣（販售中）」。うって いる強調販售動作。' },
+            { text: '買{か}って', reason: '錯誤：買（かって いますか？我在買？不對。商店在賣。' },
+            { text: '置{お}いて', reason: '錯誤：放（おいて）。也常用「どこに置いてありますか」。但選項考うる。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
@@ -8079,7 +8079,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 売{う}れている（指銷路好）
 → 原因：語意焦點。`
     },
-    // 192. Wakareru
+    // 192. わかれる
     {
         id: 'n4_gen_wakareru_1',
         prob: '駅{えき}で友達{ともだち}と ______。',
@@ -8087,7 +8087,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '別{わか}れました', reason: '正確！一段動詞。' },
-            { text: '分{わ}かれました', reason: '錯誤：分開/分歧（Wakareru）。讀音相同，但「和人分開/告別」用「別」。' },
+            { text: '分{わ}かれました', reason: '錯誤：分開/分歧（わかれる）。讀音相同，但「和人分開/告別」用「別」。' },
             { text: '会{あ}いました', reason: '錯誤：見面。' },
             { text: '話{はな}しました', reason: '錯誤：說話。' }
         ],
@@ -8111,8 +8111,8 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '別{わか}れた', reason: '正確！' },
-            { text: '離{はな}れた', reason: '錯誤：離開（距離/物理）。分手用Wakareru。' },
-            { text: '分{わ}けた', reason: '錯誤：區分/分配（Wakeru）。' },
+            { text: '離{はな}れた', reason: '錯誤：離開（距離/物理）。分手用わかれる。' },
+            { text: '分{わ}けた', reason: '錯誤：區分/分配（わける）。' },
             { text: '切{き}れた', reason: '錯誤：斷了。' }
         ],
         correctIndex: 0,
@@ -8126,7 +8126,7 @@ export const n4Questions: StaticQuestion[] = [
 ・× 離{はな}れた
 → 原因：慣用搭配。`
     },
-    // 193. Wakaru
+    // 193. わかる
     {
         id: 'n4_gen_wakaru_1',
         prob: '意味{いみ}がよく ______。',
@@ -8134,8 +8134,8 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '分{わ}かります', reason: '正確！五段自動詞。' },
-            { text: '知{し}ります', reason: '錯誤：知道。通常「知っています」表狀態。Understand用Wakaru。' },
-            { text: '分{わ}けます', reason: '錯誤：分開（Wakeru）。' },
+            { text: '知{し}ります', reason: '錯誤：知道。通常「知っています」表狀態。理解用わかる。' },
+            { text: '分{わ}けます', reason: '錯誤：分開（わける）。' },
             { text: '聞{き}きます', reason: '錯誤：聽。' }
         ],
         correctIndex: 0,
@@ -8157,7 +8157,7 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '分{わ}からない', reason: '正確！' },
-            { text: '知{し}らない', reason: '錯誤：不知。對於「難以理解」通常用Wakaranai。Shiranai是指「沒有該資訊」。' },
+            { text: '知{し}らない', reason: '錯誤：不知。對於「難以理解」通常用わからない。しらない是指「沒有該資訊」。' },
             { text: '分{わ}けない', reason: '錯誤：不分。' },
             { text: '困{こま}らない', reason: '錯誤：不困擾。' }
         ],
@@ -8170,9 +8170,9 @@ export const n4Questions: StaticQuestion[] = [
 【易錯點】
 ・○ 分{わ}からない
 ・× 知{し}らない（語氣較冷淡，且不合「難」的因果）
-→ 原因：Wakaranai包含「經過思考仍無法理解」。`
+→ 原因：わからない包含「經過思考仍無法理解」。`
     },
-    // 194. Wataru
+    // 194. わたる
     {
         id: 'n4_gen_wataru_1',
         prob: '橋{はし}を ______。',
@@ -8180,8 +8180,8 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '渡{わた}ります', reason: '正確！五段動詞。' },
-            { text: '渡{わた}します', reason: '錯誤：交給（Watasu）。' },
-            { text: '通{とお}ります', reason: '錯誤：通過（Tooru）。雖然也通，但過橋（從一端到另一端）慣用Wataru。Tooru強調經過。' },
+            { text: '渡{わた}します', reason: '錯誤：交給（わたす）。' },
+            { text: '通{とお}ります', reason: '錯誤：通過（とおる）。雖然也通，但過橋（從一端到另一端）慣用わたる。とおる強調經過。' },
             { text: '歩{ある}きます', reason: '錯誤：走。' }
         ],
         correctIndex: 0,
@@ -8218,23 +8218,23 @@ export const n4Questions: StaticQuestion[] = [
 ・× 渡{わた}す
 → 原因：動作性質。`
     },
-    // 195. Yaru
+    // 195. やる
     {
         id: 'n4_gen_yaru_1',
         prob: '花{はな}に水{みず}を ______。',
         prob_zh: '*澆* 水給花（給予）。',
         level: 'N4',
         options: [
-            { text: 'やりました', reason: '正確！給予（對弟妹/動植物）用Yaru。' },
-            { text: 'あげました', reason: '錯誤：給（平輩/長輩）。雖口語漸通用，但考試區分「對動植物用Yaru」。' },
+            { text: 'やりました', reason: '正確！給予（對弟妹/動植物）用やる。' },
+            { text: 'あげました', reason: '錯誤：給（平輩/長輩）。雖口語漸通用，但考試區分「對動植物用やる」。' },
             { text: 'もらいました', reason: '錯誤：得到。' },
-            { text: 'かけました', reason: '錯誤：潑/掛（Kakemashita）。「水をかける」也通，但授受動詞題型考Yaru。' }
+            { text: 'かけました', reason: '錯誤：潑/掛（かけました）。「水をかける」也通，但授受動詞題型考やる。' }
         ],
-        // Note: Yaru vs Ageru on plants.
-        // Classical grammar: Yaru for inferiors/plants.
-        // Modern: Ageru is often used for pets/plants too to be polite.
-        // But JLPT N4 tests the Yaru distinction.
-        // Let's assume Yaru is target.
+        // 註： やる vs あげる on plants.
+        // Classical grammar: やる for inferiors/plants.
+        // Modern: あげる is often used for pets/plants too to be polite.
+        // But JLPT N4 tests the やる distinction.
+        // Let's assume やる is target.
         correctIndex: 0,
         tag: 'vocab',
         correctRule: `【考點】授受動詞
@@ -8255,22 +8255,22 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: 'やる', reason: '正確！「やる」=「する」（做）。辭書形+tokoro（正要）。' },
-            { text: 'やった', reason: '錯誤：做了（過去）。若選此則變成「剛做完（Yatta tokoro）」，但B說「今から（現在開始）」，故應是未來/意志。' },
+            { text: 'やった', reason: '錯誤：做了（過去）。若選此則變成「剛做完（やった ところ）」，但B說「今から（現在開始）」，故應是未來/意志。' },
             { text: 'している', reason: '錯誤：正在做。' },
             { text: 'ある', reason: '錯誤：有。' }
         ],
         correctIndex: 0,
         tag: 'grammar',
         correctRule: `【考點】動詞時態與意義（對話）
-【解析】「今からやる」（現在開始做）。Yaru口語常用於取代Suru。
+【解析】「今からやる」（現在開始做）。やる口語常用於取代する。
 【相關詞比較】
 ・勉強{べんきょう}をやる：唸書。
 【易錯點】
 ・○ やる
 ・× くれる
-→ 原因：Yaru的多義性（給/做）。`
+→ 原因：やる的多義性（給/做）。`
     },
-    // 196. Yobu
+    // 196. よぶ
     {
         id: 'n4_gen_yobu_1',
         prob: 'タクシーを ______ ください。',
@@ -8278,21 +8278,21 @@ export const n4Questions: StaticQuestion[] = [
         level: 'N4',
         options: [
             { text: '呼{よ}んで', reason: '正確！五段撥音便（bu -> nde）。' },
-            { text: '読{よ}んで', reason: '錯誤：讀（Yomu）。讀音相同但漢字不同。' },
-            { text: '叫{さけ}んで', reason: '錯誤：大叫（Sakebu）。我們是呼叫（Call/Summon）計程車，不是對計程車大吼。' },
-            { text: '頼{たの}んで', reason: '錯誤：請求/點餐。叫車習慣用Yobu（招喚）。' }
+            { text: '読{よ}んで', reason: '錯誤：讀（よむ）。讀音相同但漢字不同。' },
+            { text: '叫{さけ}んで', reason: '錯誤：大叫（さけぶ）。我們是呼叫（招喚）計程車，不是對計程車大吼。' },
+            { text: '頼{たの}んで', reason: '錯誤：請求/點餐。叫車習慣用よぶ（招喚）。' }
         ],
         correctIndex: 0,
         tag: 'vocab',
         correctRule: `【考點】習慣搭配與音便
-【解析】叫車、叫人用「呼ぶ」。Te形「呼んで」。
+【解析】叫車、叫人用「呼ぶ」。て形「呼んで」。
 【相關詞比較】
 ・呼{よ}ぶ：呼叫/招待。
 ・読{よ}む：讀。
 【易錯點】
 ・○ タクシーを呼{よ}ぶ
 ・× タクシーを叫{さけ}ぶ
-→ 原因：Sakebu是大聲喊叫發聲。`
+→ 原因：さけぶ是大聲喊叫發聲。`
     },
     {
         id: 'n4_gen_yobu_2',
@@ -8300,7 +8300,7 @@ export const n4Questions: StaticQuestion[] = [
         prob_zh: 'A：「要 *邀請* (叫) 田中先生來派對嗎？」\nB：「當然。」',
         level: 'N4',
         options: [
-            { text: '呼{よ}ぼうか', reason: '正確！意向形（Yobou）。' },
+            { text: '呼{よ}ぼうか', reason: '正確！意向形（よぼう）。' },
             { text: '呼{よ}んだか', reason: '錯誤：叫了嗎（過去）。A在提議。' },
             { text: '読{よ}もうか', reason: '錯誤：讀。' },
             { text: '泣{な}こうか', reason: '錯誤：哭。' }
@@ -8308,7 +8308,7 @@ export const n4Questions: StaticQuestion[] = [
         correctIndex: 0,
         tag: 'grammar',
         correctRule: `【考點】意向形（對話）
-【解析】Yobu也有「邀請（招待）」之意。
+【解析】よぶ也有「邀請（招待）」之意。
 【相關詞比較】
 ・招{まね}く：招待（較正式）。
 ・招待{しょうたい}する：招待。

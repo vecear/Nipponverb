@@ -5,7 +5,12 @@
   },
   "nav": {
     "dashboard": "Dashboard",
+    "courses": "Courses",
     "verbs": "Common Verbs",
+    "vocabulary": "Vocabulary",
+    "grammar": "Grammar",
+    "idioms": "Idioms",
+    "dateAndCounters": "Dates & Counters",
     "practice": "Practice",
     "simulation": "Simulation",
     "stages": "Stages",
@@ -207,6 +212,26 @@
       "verify": "Verify Identity",
       "verifyWithGoogle": "Verify with Google",
       "editName": "Edit Name"
+    }
+  },
+  "courses": {
+    "title": "Courses",
+    "subtitle": "Choose the course you want to learn",
+    "startLearning": "Start Learning",
+    "verbs": {
+      "description": "Practice verb forms and conjugations"
+    },
+    "vocabulary": {
+      "description": "Expand your Japanese vocabulary (N5-N1)"
+    },
+    "grammar": {
+      "description": "Master JLPT grammar patterns"
+    },
+    "idioms": {
+      "description": "Learn common Japanese idioms and expressions"
+    },
+    "dateCounters": {
+      "description": "Master dates, time, and counter words"
     }
   },
   "common": {

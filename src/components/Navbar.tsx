@@ -24,7 +24,7 @@ const Navbar = () => {
 
   const navLinks = [
     { to: '/', label: t('nav.dashboard') },
-    { to: '/verbs', label: t('nav.verbs') },
+    { to: '/courses', label: t('nav.courses') },
     { to: '/practice', label: t('nav.practice') },
     { to: '/simulation', label: t('nav.simulation') },
     { to: '/stages', label: t('nav.stages') },
@@ -107,6 +107,7 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
+
             <div className="pt-4 border-t border-white/10 flex flex-col space-y-4">
               <div className="px-4">
                 <LanguageSwitcher />

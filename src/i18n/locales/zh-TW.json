@@ -5,7 +5,12 @@
   },
   "nav": {
     "dashboard": "儀表板",
+    "courses": "課程",
     "verbs": "常用動詞",
+    "vocabulary": "單字",
+    "grammar": "文法",
+    "idioms": "慣用語",
+    "dateAndCounters": "日期及數量詞",
     "practice": "練習",
     "simulation": "模擬考試",
     "stages": "情境關卡",
@@ -221,6 +226,26 @@
       "verify": "驗證身份",
       "verifyWithGoogle": "使用 Google 驗證",
       "editName": "修改名稱"
+    }
+  },
+  "courses": {
+    "title": "課程",
+    "subtitle": "選擇您想學習的課程",
+    "startLearning": "開始學習",
+    "verbs": {
+      "description": "練習動詞形式和變化"
+    },
+    "vocabulary": {
+      "description": "擴充您的日語詞彙量 (N5-N1)"
+    },
+    "grammar": {
+      "description": "掌握 JLPT 文法模式"
+    },
+    "idioms": {
+      "description": "學習常用的日語慣用語和俗語"
+    },
+    "dateCounters": {
+      "description": "掌握日期、時間和數量詞的用法"
     }
   },
   "common": {
