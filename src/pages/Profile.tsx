@@ -1,17 +1,28 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useTranslation } from 'react-i18next'
 import { X, Mail, Lock, Link as LinkIcon, AlertCircle, CheckCircle, Edit2, Save } from 'lucide-react'
 import { useUserStore } from '../store/useUserStore'
 import { updateUserProfile } from '../services/userService'
 import { usePracticeStore } from '../store/usePracticeStore'
+import ExpBar from '../components/ExpBar'
+import { getJobById, NOVICE_TITLE } from '../data/jobs'
+import { EXP_CONSTANTS, DEFAULT_PROGRESSION } from '../types/progression'
 
 
 const Profile = () => {
   const { t } = useTranslation()
+  const navigate = useNavigate()
   const { currentUser, updateUserEmail, updateUserPassword, linkGoogleAccount, reauthenticate } = useAuth()
   const { profile, updateProfile } = useUserStore()
   const { getHistoryByCategory } = usePracticeStore()
+
+  // 積分系統資料
+  const progression = profile?.progression || DEFAULT_PROGRESSION
+  const gender = profile?.gender || 'male'
+  const needsJobSelection = progression.level >= EXP_CONSTANTS.JOB_CHANGE_LEVEL && !progression.jobId
+  const job = progression.jobId ? getJobById(progression.jobId) : null
 
   const [isEditingName, setIsEditingName] = useState(false)
   const [newName, setNewName] = useState(profile?.displayName || '')
@@ -152,6 +163,44 @@ const Profile = () => {
             </button>
           </div>
         </div>
+      </div>
+
+      {/* 積分系統區塊 */}
+      <div className="card mb-6 md:mb-8">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-xl md:text-2xl font-zen font-bold">
+            {t('progression.title', '冒險進度')}
+          </h2>
+          {job && (
+            <div className={`px-4 py-2 rounded-xl bg-gradient-to-r ${job.color} flex items-center gap-2`}>
+              <span className="text-xl">{job.icon}</span>
+              <span className="font-bold text-white">{job.nameTw}</span>
+            </div>
+          )}
+        </div>
+
+        {/* 經驗值條 */}
+        <ExpBar progression={progression} gender={gender} showTitle={true} size="lg" />
+
+        {/* 轉職提示 */}
+        {needsJobSelection && (
+          <div className="mt-6 p-4 glass rounded-xl border border-sakura-pink/30 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+              <p className="text-sakura-pink font-bold mb-1">
+                {t('progression.jobSelection.unlocked', '轉職之儀已解鎖！')}
+              </p>
+              <p className="text-white/60 text-sm">
+                {t('progression.jobSelection.hint', '選擇你的職業道路，開啟新的旅程')}
+              </p>
+            </div>
+            <button
+              onClick={() => navigate('/job-selection')}
+              className="btn-primary whitespace-nowrap"
+            >
+              {t('progression.jobSelection.go', '前往轉職')}
+            </button>
+          </div>
+        )}
       </div>
 
       {isModalOpen && (

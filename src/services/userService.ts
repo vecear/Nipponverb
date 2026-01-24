@@ -1,6 +1,7 @@
 import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore'
 import { db } from '../config/firebase'
 import { UserProfile, UserStats } from '../types'
+import { DEFAULT_PROGRESSION } from '../types/progression'
 
 export const createUserProfile = async (
   uid: string,
@@ -23,6 +24,8 @@ export const createUserProfile = async (
     currentLevel: data.currentLevel || 'N5',
     stats: data.stats || defaultStats,
     createdAt: new Date(),
+    gender: data.gender || 'male',
+    progression: data.progression || DEFAULT_PROGRESSION,
   }
 
   await setDoc(userRef, userProfile)

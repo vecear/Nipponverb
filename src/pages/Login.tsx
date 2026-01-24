@@ -3,11 +3,13 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useTranslation } from 'react-i18next'
 import { getUserProfile, createUserProfile } from '../services/userService'
+import { Gender } from '../types/progression'
 
 const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [displayName, setDisplayName] = useState('')
+  const [gender, setGender] = useState<Gender>('male')
   const [isSignUp, setIsSignUp] = useState(false)
   const [error, setError] = useState('')
   const { signInWithGoogle, signInWithEmail, signUpWithEmail } = useAuth()
@@ -43,7 +45,7 @@ const Login = () => {
           setError(t('auth.nameRequired'))
           return
         }
-        await signUpWithEmail(email, password, displayName)
+        await signUpWithEmail(email, password, displayName, gender)
       } else {
         await signInWithEmail(email, password)
       }
@@ -135,17 +137,48 @@ const Login = () => {
 
         <form onSubmit={handleEmailAuth} className="space-y-4">
           {isSignUp && (
-            <div>
-              <label className="block text-sm font-medium mb-2">{t('auth.displayName')}</label>
-              <input
-                type="text"
-                value={displayName}
-                onChange={(e) => setDisplayName(e.target.value)}
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink transition-colors"
-                placeholder={t('auth.displayNamePlaceholder')}
-                required
-              />
-            </div>
+            <>
+              <div>
+                <label className="block text-sm font-medium mb-2">{t('auth.displayName')}</label>
+                <input
+                  type="text"
+                  value={displayName}
+                  onChange={(e) => setDisplayName(e.target.value)}
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink transition-colors"
+                  placeholder={t('auth.displayNamePlaceholder')}
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium mb-2">{t('auth.gender')}</label>
+                <div className="flex gap-4">
+                  <button
+                    type="button"
+                    onClick={() => setGender('male')}
+                    className={`flex-1 py-3 px-4 rounded-lg border transition-all ${
+                      gender === 'male'
+                        ? 'border-sakura-pink bg-sakura-pink/20 text-white'
+                        : 'border-white/20 bg-white/10 text-white/60 hover:border-white/40'
+                    }`}
+                  >
+                    {t('auth.male')}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setGender('female')}
+                    className={`flex-1 py-3 px-4 rounded-lg border transition-all ${
+                      gender === 'female'
+                        ? 'border-sakura-pink bg-sakura-pink/20 text-white'
+                        : 'border-white/20 bg-white/10 text-white/60 hover:border-white/40'
+                    }`}
+                  >
+                    {t('auth.female')}
+                  </button>
+                </div>
+                <p className="text-white/40 text-xs mt-2">{t('auth.genderHint')}</p>
+              </div>
+            </>
           )}
 
           <div>

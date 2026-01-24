@@ -23,7 +23,7 @@ interface AuthContextType {
   loading: boolean
   signInWithGoogle: () => Promise<UserCredential>
   signInWithEmail: (email: string, password: string) => Promise<UserCredential>
-  signUpWithEmail: (email: string, password: string, displayName: string) => Promise<UserCredential>
+  signUpWithEmail: (email: string, password: string, displayName: string, gender?: 'male' | 'female') => Promise<UserCredential>
   logout: () => Promise<void>
   updateUserEmail: (email: string) => Promise<void>
   updateUserPassword: (password: string) => Promise<void>
@@ -53,13 +53,14 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     return await signInWithEmailAndPassword(auth, email, password)
   }
 
-  const signUpWithEmail = async (email: string, password: string, displayName: string) => {
+  const signUpWithEmail = async (email: string, password: string, displayName: string, gender: 'male' | 'female' = 'male') => {
     const credential = await createUserWithEmailAndPassword(auth, email, password)
     const { user } = credential
     // Initialize profile in Firestore
     await createUserProfile(user.uid, {
       email: user.email || '',
       displayName: displayName || 'Student',
+      gender,
     })
     return credential
   }

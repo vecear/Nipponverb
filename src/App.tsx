@@ -12,7 +12,10 @@ import VerbConjugationGuide from './pages/VerbConjugationGuide'
 import Profile from './pages/Profile'
 import DataManagement from './pages/DataManagement'
 import GrammarList from './pages/GrammarList'
+import JobSelection from './pages/JobSelection'
+import Admin from './pages/Admin'
 import ProtectedRoute from './components/ProtectedRoute'
+import AdminRoute from './components/AdminRoute'
 
 function App() {
   return (
@@ -32,7 +35,10 @@ function App() {
             <Route path="/verb-guide" element={<VerbConjugationGuide />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/data-management" element={<DataManagement />} />
+            <Route path="/job-selection" element={<JobSelection />} />
           </Route>
+          {/* 管理員路由 */}
+          <Route path="/admin" element={<AdminRoute><Admin /></AdminRoute>} />
         </Routes>
       </Router>
     </AuthProvider>

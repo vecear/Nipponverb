@@ -1,10 +1,8 @@
 import { useState, useMemo } from 'react'
-import { useTranslation } from 'react-i18next'
-import { Search, ExternalLink } from 'lucide-react'
+import { Search } from 'lucide-react'
 import { grammarList } from '../data/grammarList'
 
 const GrammarList = () => {
-    const { t } = useTranslation()
     const [selectedLevel, setSelectedLevel] = useState<'ALL' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1'>('ALL')
     const [searchQuery, setSearchQuery] = useState('')
 
@@ -12,7 +10,6 @@ const GrammarList = () => {
         return grammarList.filter(item => {
             const matchLevel = selectedLevel === 'ALL' || item.level === selectedLevel
             const matchSearch = item.grammar.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                item.romaji.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 item.meaning.toLowerCase().includes(searchQuery.toLowerCase())
             return matchLevel && matchSearch
         })
@@ -78,9 +75,8 @@ const GrammarList = () => {
                             <thead>
                                 <tr className="bg-white/5 text-white/60 text-sm border-b border-white/10">
                                     <th className="p-4 font-medium">級別</th>
-                                    <th className="p-4 font-medium">文法 / 羅馬字</th>
+                                    <th className="p-4 font-medium">文法</th>
                                     <th className="p-4 font-medium">意義</th>
-                                    <th className="p-4 font-medium text-right">詳細</th>
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-white/5">
@@ -99,26 +95,15 @@ const GrammarList = () => {
                                             </td>
                                             <td className="p-4">
                                                 <div className="font-bold text-lg md:text-xl text-white/90 mb-1">{item.grammar}</div>
-                                                <div className="text-sm text-white/50 font-mono">{item.romaji}</div>
                                             </td>
                                             <td className="p-4 text-white/80">
                                                 {item.meaning}
-                                            </td>
-                                            <td className="p-4 text-right">
-                                                <a
-                                                    href={item.url}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-sakura-pink text-sm font-medium transition-all"
-                                                >
-                                                    學習 <ExternalLink size={14} />
-                                                </a>
                                             </td>
                                         </tr>
                                     ))
                                 ) : (
                                     <tr>
-                                        <td colSpan={4} className="p-8 text-center text-white/40">
+                                        <td colSpan={3} className="p-8 text-center text-white/40">
                                             沒有找到符合的文法項目。
                                         </td>
                                     </tr>

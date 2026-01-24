@@ -22,6 +22,15 @@ export interface UserProfile {
   currentLevel: 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
   stats: UserStats
   createdAt: Date
+  // 積分系統欄位
+  gender?: 'male' | 'female'
+  progression?: {
+    level: number           // 當前等級 (0-99)
+    exp: number             // 當前經驗值
+    totalExp: number        // 累計總經驗值
+    jobId: string | null    // 職業 ID (等級 5 前為 null)
+    jobChangedAt: Date | null // 轉職時間
+  }
 }
 
 export interface DistractorExplanation {

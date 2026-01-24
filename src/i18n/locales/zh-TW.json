@@ -30,7 +30,11 @@
     "signupError": "建立帳號失敗",
     "displayName": "顯示名稱",
     "displayNamePlaceholder": "請輸入您的名稱",
-    "nameRequired": "請輸入顯示名稱"
+    "nameRequired": "請輸入顯示名稱",
+    "gender": "性別",
+    "male": "男性",
+    "female": "女性",
+    "genderHint": "性別會影響職業稱號的顯示"
   },
   "dashboard": {
     "welcome": "歡迎回來，{{name}}",
@@ -264,5 +268,111 @@
     "sort": "排序",
     "view": "檢視",
     "share": "分享"
+  },
+  "progression": {
+    "title": "冒險進度",
+    "level": "等級",
+    "exp": "經驗值",
+    "jobSelection": {
+      "title": "轉職之儀",
+      "subtitle": "選擇你的道路，開啟新的旅程",
+      "select": "選擇此職業",
+      "confirmMessage": "確定要選擇「{{job}}」作為你的職業嗎？",
+      "hint": "職業選擇後將無法更改，請謹慎選擇最適合你的道路",
+      "initialTitle": "初始稱號",
+      "unlocked": "轉職之儀已解鎖！",
+      "go": "前往轉職"
+    },
+    "levelUp": {
+      "title": "升級！",
+      "currentTitle": "當前稱號",
+      "expGained": "+{{exp}} EXP",
+      "jobChangeUnlocked": "轉職之儀已解鎖！",
+      "jobChangeHint": "你已達到等級 5，可以選擇你的職業道路了",
+      "selectJob": "前往選擇職業"
+    },
+    "jobs": {
+      "doshin": {
+        "name": "同心",
+        "description": "維護秩序、追查真相的執法者"
+      },
+      "yakusha": {
+        "name": "役者",
+        "description": "在舞台上綻放光芒的表演者"
+      },
+      "ukiyoeshi": {
+        "name": "浮世繪師",
+        "description": "捕捉浮世風情的藝術家"
+      },
+      "shonin": {
+        "name": "商人",
+        "description": "精於商道、累積財富的經營者"
+      },
+      "gakusha": {
+        "name": "學者",
+        "description": "追求知識、探索真理的求道者"
+      },
+      "onmyoji": {
+        "name": "陰陽師",
+        "description": "掌握陰陽之術的神秘行者"
+      },
+      "ryorinin": {
+        "name": "料理人",
+        "description": "以料理傳遞心意的職人"
+      },
+      "hokan": {
+        "name": "幇間",
+        "description": "以話術和機智娛樂賓客的藝人"
+      }
+    }
+  },
+  "admin": {
+    "title": "後台管理",
+    "unauthorized": "您沒有權限存取此頁面",
+    "tabs": {
+      "config": "遊戲配置",
+      "users": "使用者管理",
+      "stats": "統計資料"
+    },
+    "config": {
+      "title": "遊戲配置管理",
+      "progression": {
+        "title": "等級進度設定",
+        "baseExp": "基礎經驗值",
+        "growthFactor": "成長係數",
+        "maxLevel": "最高等級",
+        "jobChangeLevel": "轉職等級"
+      },
+      "expRewards": {
+        "title": "經驗值獎勵設定",
+        "correctAnswer": "答對題目",
+        "practiceComplete": "完成練習",
+        "simulationMin": "模擬考最低獎勵",
+        "simulationMax": "模擬考最高獎勵",
+        "stageComplete": "完成關卡"
+      },
+      "lastUpdated": "最後更新",
+      "updatedBy": "更新者",
+      "saveSuccess": "配置已儲存",
+      "saveError": "儲存失敗"
+    },
+    "users": {
+      "title": "使用者列表",
+      "email": "電子郵件",
+      "displayName": "顯示名稱",
+      "level": "等級",
+      "job": "職業",
+      "registeredAt": "註冊時間",
+      "noJob": "未轉職",
+      "total": "共 {{count}} 位使用者"
+    },
+    "stats": {
+      "title": "統計資料",
+      "totalUsers": "總使用者數",
+      "jobDistribution": "職業分布",
+      "levelDistribution": "等級分布",
+      "highestLevel": "最高等級",
+      "noData": "尚無資料"
+    }
   }
 }
