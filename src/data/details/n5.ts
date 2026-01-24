@@ -3063,21 +3063,18 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '「に」vs「へ」vs「で」的區別',
-            items: [
+            points: [
                 {
-                    grammar: 'に',
-                    description: '強調到達點、目的地或具體時間點',
-                    example: { sentence: '学校{がっこう}に行{い}きます。', note: '到達學校' }
+                    rule: '「に」：強調到達點、目的地或具體時間點',
+                    examples: [{ japanese: '学校{がっこう}に行{い}きます。', chinese: '到達學校' }]
                 },
                 {
-                    grammar: 'へ',
-                    description: '強調移動的方向（較抽象）',
-                    example: { sentence: '学校{がっこう}へ行{い}きます。', note: '朝學校的方向去' }
+                    rule: '「へ」：強調移動的方向（較抽象）',
+                    examples: [{ japanese: '学校{がっこう}へ行{い}きます。', chinese: '朝學校的方向去' }]
                 },
                 {
-                    grammar: 'で',
-                    description: '表示動作進行的場所',
-                    example: { sentence: '学校{がっこう}で勉強{べんきょう}します。', note: '在學校讀書' }
+                    rule: '「で」：表示動作進行的場所',
+                    examples: [{ japanese: '学校{がっこう}で勉強{べんきょう}します。', chinese: '在學校讀書' }]
                 }
             ]
         },
@@ -3217,21 +3214,18 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '「の」的不同用法比較',
-            items: [
+            points: [
                 {
-                    grammar: '所有/所屬の',
-                    description: '表示擁有關係',
-                    example: { sentence: '私{わたし}の車{くるま}', note: '我的車' }
+                    rule: '所有/所屬「の」：表示擁有關係',
+                    examples: [{ japanese: '私{わたし}の車{くるま}', chinese: '我的車' }]
                 },
                 {
-                    grammar: '修飾の',
-                    description: '名詞修飾名詞',
-                    example: { sentence: '英語{えいご}の本{ほん}', note: '英文書' }
+                    rule: '修飾「の」：名詞修飾名詞',
+                    examples: [{ japanese: '英語{えいご}の本{ほん}', chinese: '英文書' }]
                 },
                 {
-                    grammar: '代名詞の',
-                    description: '代替前文名詞',
-                    example: { sentence: '青{あお}いの', note: '藍色的（那個）' }
+                    rule: '代名詞「の」：代替前文名詞',
+                    examples: [{ japanese: '青{あお}いの', chinese: '藍色的（那個）' }]
                 }
             ]
         },
@@ -3371,21 +3365,18 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '「を」的常見搭配動詞',
-            items: [
+            points: [
                 {
-                    grammar: '食べ物を食べる',
-                    description: '吃某物',
-                    example: { sentence: 'りんごを食{た}べる', note: '吃蘋果' }
+                    rule: '食べ物を食べる：吃某物',
+                    examples: [{ japanese: 'りんごを食{た}べる', chinese: '吃蘋果' }]
                 },
                 {
-                    grammar: '場所を歩く/走る',
-                    description: '在某處走/跑（經過）',
-                    example: { sentence: '道{みち}を歩{ある}く', note: '走路' }
+                    rule: '場所を歩く/走る：在某處走/跑（經過）',
+                    examples: [{ japanese: '道{みち}を歩{ある}く', chinese: '走路' }]
                 },
                 {
-                    grammar: '場所を出る',
-                    description: '離開某處',
-                    example: { sentence: '会社{かいしゃ}を出{で}る', note: '離開公司' }
+                    rule: '場所を出る：離開某處',
+                    examples: [{ japanese: '会社{かいしゃ}を出{で}る', chinese: '離開公司' }]
                 }
             ]
         },
@@ -3525,21 +3516,18 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '「は」vs「が」的區別',
-            items: [
+            points: [
                 {
-                    grammar: 'は（主題）',
-                    description: '標記已知的話題，「關於...」',
-                    example: { sentence: '田中{たなか}さんは先生{せんせい}です。', note: '（說到田中先生）他是老師' }
+                    rule: '「は」（主題）：標記已知的話題，「關於...」',
+                    examples: [{ japanese: '田中{たなか}さんは先生{せんせい}です。', chinese: '（說到田中先生）他是老師' }]
                 },
                 {
-                    grammar: 'が（主語）',
-                    description: '強調新資訊或主語本身',
-                    example: { sentence: '田中{たなか}さんが先生{せんせい}です。', note: '田中先生（才）是老師' }
+                    rule: '「が」（主語）：強調新資訊或主語本身',
+                    examples: [{ japanese: '田中{たなか}さんが先生{せんせい}です。', chinese: '田中先生（才）是老師' }]
                 },
                 {
-                    grammar: 'は（對比）',
-                    description: '暗示與其他事物的對比',
-                    example: { sentence: '魚{さかな}は食{た}べません。', note: '魚不吃（但其他可能吃）' }
+                    rule: '「は」（對比）：暗示與其他事物的對比',
+                    examples: [{ japanese: '魚{さかな}は食{た}べません。', chinese: '魚不吃（但其他可能吃）' }]
                 }
             ]
         },
@@ -3684,21 +3672,18 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '「ている」的不同意義',
-            items: [
+            points: [
                 {
-                    grammar: '動作進行',
-                    description: '正在進行的動作',
-                    example: { sentence: '食{た}べている', note: '正在吃' }
+                    rule: '動作進行：正在進行的動作',
+                    examples: [{ japanese: '食{た}べている', chinese: '正在吃' }]
                 },
                 {
-                    grammar: '結果狀態',
-                    description: '動作完成後的狀態',
-                    example: { sentence: '結婚{けっこん}している', note: '已婚（狀態）' }
+                    rule: '結果狀態：動作完成後的狀態',
+                    examples: [{ japanese: '結婚{けっこん}している', chinese: '已婚（狀態）' }]
                 },
                 {
-                    grammar: '習慣',
-                    description: '反覆進行的動作',
-                    example: { sentence: '毎日{まいにち}走{はし}っている', note: '每天跑步（習慣）' }
+                    rule: '習慣：反覆進行的動作',
+                    examples: [{ japanese: '毎日{まいにち}走{はし}っている', chinese: '每天跑步（習慣）' }]
                 }
             ]
         },
@@ -3825,16 +3810,14 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '「てから」vs「あとで」的區別',
-            items: [
+            points: [
                 {
-                    grammar: 'てから',
-                    description: '強調A完成後才做B，順序關係緊密',
-                    example: { sentence: '食{た}べてから、歯{は}を磨{みが}く。', note: '吃完後（立刻）刷牙' }
+                    rule: '「てから」：強調A完成後才做B，順序關係緊密',
+                    examples: [{ japanese: '食{た}べてから、歯{は}を磨{みが}く。', chinese: '吃完後（立刻）刷牙' }]
                 },
                 {
-                    grammar: 'あとで',
-                    description: '表示之後，時間關係較鬆散',
-                    example: { sentence: '食{た}べたあとで、歯{は}を磨{みが}く。', note: '吃完之後（過一會）刷牙' }
+                    rule: '「あとで」：表示之後，時間關係較鬆散',
+                    examples: [{ japanese: '食{た}べたあとで、歯{は}を磨{みが}く。', chinese: '吃完之後（過一會）刷牙' }]
                 }
             ]
         },
@@ -3961,21 +3944,18 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '請求表達的禮貌程度',
-            items: [
+            points: [
                 {
-                    grammar: '～て',
-                    description: '較隨意的請求（朋友間）',
-                    example: { sentence: '見{み}せて。', note: '給我看一下。' }
+                    rule: '「～て」：較隨意的請求（朋友間）',
+                    examples: [{ japanese: '見{み}せて。', chinese: '給我看一下。' }]
                 },
                 {
-                    grammar: '～てください',
-                    description: '禮貌的請求',
-                    example: { sentence: '見{み}せてください。', note: '請給我看。' }
+                    rule: '「～てください」：禮貌的請求',
+                    examples: [{ japanese: '見{み}せてください。', chinese: '請給我看。' }]
                 },
                 {
-                    grammar: '～てくださいませんか',
-                    description: '非常禮貌的請求',
-                    example: { sentence: '見{み}せてくださいませんか。', note: '能否請您給我看呢？' }
+                    rule: '「～てくださいませんか」：非常禮貌的請求',
+                    examples: [{ japanese: '見{み}せてくださいませんか。', chinese: '能否請您給我看呢？' }]
                 }
             ]
         },
@@ -4102,21 +4082,18 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '許可與禁止的表達',
-            items: [
+            points: [
                 {
-                    grammar: '～てもいい',
-                    description: '可以做（許可）',
-                    example: { sentence: '食{た}べてもいい', note: '可以吃' }
+                    rule: '「～てもいい」：可以做（許可）',
+                    examples: [{ japanese: '食{た}べてもいい', chinese: '可以吃' }]
                 },
                 {
-                    grammar: '～てはいけない',
-                    description: '不可以做（禁止）',
-                    example: { sentence: '食{た}べてはいけない', note: '不可以吃' }
+                    rule: '「～てはいけない」：不可以做（禁止）',
+                    examples: [{ japanese: '食{た}べてはいけない', chinese: '不可以吃' }]
                 },
                 {
-                    grammar: '～なくてもいい',
-                    description: '不做也可以（不必）',
-                    example: { sentence: '食{た}べなくてもいい', note: '不吃也可以' }
+                    rule: '「～なくてもいい」：不做也可以（不必）',
+                    examples: [{ japanese: '食{た}べなくてもいい', chinese: '不吃也可以' }]
                 }
             ]
         },
@@ -4261,16 +4238,14 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '「たい」的助詞搭配',
-            items: [
+            points: [
                 {
-                    grammar: '～が～たい',
-                    description: '對象用「が」標記（強調願望對象）',
-                    example: { sentence: '水{みず}が飲{の}みたい', note: '想喝水' }
+                    rule: '「～が～たい」：對象用「が」標記（強調願望對象）',
+                    examples: [{ japanese: '水{みず}が飲{の}みたい', chinese: '想喝水' }]
                 },
                 {
-                    grammar: '～を～たい',
-                    description: '對象用「を」標記（較客觀）',
-                    example: { sentence: '水{みず}を飲{の}みたい', note: '想喝水' }
+                    rule: '「～を～たい」：對象用「を」標記（較客觀）',
+                    examples: [{ japanese: '水{みず}を飲{の}みたい', chinese: '想喝水' }]
                 }
             ]
         },
@@ -4397,16 +4372,14 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '「ことができる」vs 可能動詞',
-            items: [
+            points: [
                 {
-                    grammar: 'ことができる',
-                    description: '較正式，強調能力',
-                    example: { sentence: '日本語{にほんご}を話{はな}すことができる', note: '能說日語' }
+                    rule: '「ことができる」：較正式，強調能力',
+                    examples: [{ japanese: '日本語{にほんご}を話{はな}すことができる', chinese: '能說日語' }]
                 },
                 {
-                    grammar: '可能動詞',
-                    description: '較口語，較簡潔',
-                    example: { sentence: '日本語{にほんご}が話{はな}せる', note: '會說日語' }
+                    rule: '可能動詞：較口語，較簡潔',
+                    examples: [{ japanese: '日本語{にほんgo}が話{はな}せる', chinese: '會說日語' }]
                 }
             ]
         },
@@ -4546,16 +4519,14 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '「ましょう」和「ましょうか」的區別',
-            items: [
+            points: [
                 {
-                    grammar: '～ましょう',
-                    description: '提議一起做、表示決心',
-                    example: { sentence: '行{い}きましょう', note: '去吧（一起）' }
+                    rule: '「～ましょう」：提議一起做、表示決心',
+                    examples: [{ japanese: '行{い}きましょう', chinese: '去吧（一起）' }]
                 },
                 {
-                    grammar: '～ましょうか',
-                    description: '詢問要不要做、提議幫忙',
-                    example: { sentence: '行{い}きましょうか', note: '要去嗎？要幫你去嗎？' }
+                    rule: '「～ましょうか」：詢問要不要做、提議幫忙',
+                    examples: [{ japanese: '行{い}きましょうか', chinese: '要去嗎？要幫你去嗎？' }]
                 }
             ]
         },
@@ -4682,16 +4653,14 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '「ないでください」和「てはいけません」的區別',
-            items: [
+            points: [
                 {
-                    grammar: '～ないでください',
-                    description: '禮貌請求（較軟性）',
-                    example: { sentence: '走{はし}らないでください', note: '請不要跑' }
+                    rule: '「～ないでください」：禮貌請求（較軟性）',
+                    examples: [{ japanese: '走{はし}らないでください', chinese: '請不要跑' }]
                 },
                 {
-                    grammar: '～てはいけません',
-                    description: '禁止（較強硬）',
-                    example: { sentence: '走{はし}ってはいけません', note: '不可以跑' }
+                    rule: '「～てはいけません」：禁止（較強硬）',
+                    examples: [{ japanese: '走{はし}ってはいけません', chinese: '不可以跑' }]
                 }
             ]
         },
@@ -4823,16 +4792,14 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '比較句型的使用',
-            items: [
+            points: [
                 {
-                    grammar: 'AはBより～',
-                    description: 'A比B更...',
-                    example: { sentence: '私{わたし}は兄{あに}より背{せ}が高{たか}い', note: '我比哥哥高' }
+                    rule: '「AはBより～」：A比B更...',
+                    examples: [{ japanese: '私{わたし}は兄{あに}より背{せ}が高{たか}い', chinese: '我比哥哥高' }]
                 },
                 {
-                    grammar: 'BよりAのほうが～',
-                    description: '比起B，A更...',
-                    example: { sentence: '兄{あに}より私{わたし}のほうが背{せ}が高{たか}い', note: '比起哥哥，我更高' }
+                    rule: '「BよりAのほうが～」：比起B，A更...',
+                    examples: [{ japanese: '兄{あに}より私{わたし}のほうが背{せ}が高{たか}い', chinese: '比起哥哥，我更高' }]
                 }
             ]
         },
@@ -4959,16 +4926,14 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '最高級的表達方式',
-            items: [
+            points: [
                 {
-                    grammar: '～で一番',
-                    description: '在...（範圍）最...',
-                    example: { sentence: '日本{にほん}で一番{いちばん}', note: '在日本最...' }
+                    rule: '「～で一番」：在...（範圍）最...',
+                    examples: [{ japanese: '日本{にほん}で一番{いちばん}', chinese: '在日本最...' }]
                 },
                 {
-                    grammar: '～の中で一番',
-                    description: '...之中最...',
-                    example: { sentence: '果物{くだもの}の中{なか}で一番{いちばん}', note: '水果之中最...' }
+                    rule: '「～の中で一番」：...之中最...',
+                    examples: [{ japanese: '果物{くだもの}の中{なか}で一番{いちばん}', chinese: '水果之中最...' }]
                 }
             ]
         },
@@ -5095,21 +5060,18 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '程度副詞的比較',
-            items: [
+            points: [
                 {
-                    grammar: 'とても',
-                    description: '非常（程度高）',
-                    example: { sentence: 'とても暑{あつ}い', note: '非常熱' }
+                    rule: '「とても」：非常（程度高）',
+                    examples: [{ japanese: 'とても暑{あつ}い', chinese: '非常熱' }]
                 },
                 {
-                    grammar: 'すごく',
-                    description: '超級（口語，程度高）',
-                    example: { sentence: 'すごく暑{あつ}い', note: '超熱' }
+                    rule: '「すごく」：超級（口語，程度高）',
+                    examples: [{ japanese: 'すごく暑{あつ}い', chinese: '超熱' }]
                 },
                 {
-                    grammar: 'ちょっと',
-                    description: '有點（程度低）',
-                    example: { sentence: 'ちょっと暑{あつ}い', note: '有點熱' }
+                    rule: '「ちょっと」：有點（程度低）',
+                    examples: [{ japanese: 'ちょっと暑{あつ}い', chinese: '有點熱' }]
                 }
             ]
         },
@@ -5236,16 +5198,14 @@ Object.assign(n5Details, {
         ],
         analysis: {
             title: '「ので」vs「から」的區別',
-            items: [
+            points: [
                 {
-                    grammar: 'ので',
-                    description: '較客觀、禮貌，多用於書面和正式場合',
-                    example: { sentence: '忙{いそが}しいので、行{い}けません。', note: '（較禮貌）' }
+                    rule: '「ので」：較客觀、禮貌，多用於書面和正式場合',
+                    examples: [{ japanese: '忙{いそが}しいので、行{い}けません。', chinese: '（較禮貌）' }]
                 },
                 {
-                    grammar: 'から',
-                    description: '較主觀、直接，多用於口語',
-                    example: { sentence: '忙{いそが}しいから、行{い}けない。', note: '（較直接）' }
+                    rule: '「から」：較主觀、直接，多用於口語',
+                    examples: [{ japanese: '忙{いそが}しいから、行{い}けない。', chinese: '（較直接）' }]
                 }
             ]
         },
@@ -5329,6 +5289,1121 @@ Object.assign(n5Details, {
                         '「のに」錯誤：「のに」表示逆接。',
                         '「けど」錯誤：「けど」表示轉折。',
                         '「から」錯誤：「から」較直接。'
+                    ]
+                }
+            }
+        ]
+    }
+});
+
+// ============================================================
+// Batch 8: 時間與頻率表達 (まえに、あとで、とき、いつも)
+// ============================================================
+Object.assign(n5Details, {
+    // n5_mae_ni - ～まえに（...之前）
+    n5_mae_ni: {
+        id: 'n5_mae_ni',
+        pattern: '～まえに',
+        connection: '動詞原形＋まえに、名詞＋の＋まえに',
+        translation: '...之前',
+        level: 'N5',
+        explanation: [
+            {
+                usage: '表示動作之前',
+                description: '表示在某動作之前做另一件事。',
+                examples: [
+                    { japanese: '寝{ね}るまえに、歯{は}を磨{みが}きます。', chinese: '睡覺前刷牙。' },
+                    { japanese: '食{た}べるまえに、手{て}を洗{あら}います。', chinese: '吃飯前洗手。' },
+                    {
+                        japanese: '「出{で}かけるまえに、何{なに}かすることある？」\n「うん、窓{まど}を閉{し}めてね。」\n「わかった。」',
+                        chinese: '「出門前有什麼要做的嗎？」\n「嗯，把窗戶關上。」\n「好的。」',
+                        note: '對話情境'
+                    }
+                ]
+            },
+            {
+                usage: '名詞＋のまえに',
+                description: '名詞接「まえに」時要加「の」。',
+                examples: [
+                    { japanese: '会議{かいぎ}のまえに、資料{しりょう}を準備{じゅんび}します。', chinese: '會議前準備資料。' },
+                    { japanese: '試験{しけん}のまえに、たくさん勉強{べんきょう}しました。', chinese: '考試前讀了很多書。' },
+                    {
+                        japanese: '「旅行{りょこう}のまえに、何{なに}を準備{じゅんび}する？」\n「パスポートと服{ふく}かな。」\n「カメラも忘{わす}れないでね。」',
+                        chinese: '「旅行前要準備什麼？」\n「護照和衣服吧。」\n「相機也別忘了喔。」',
+                        note: '對話情境'
+                    }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「まえに」vs「てから」的區別',
+            points: [
+                {
+                    rule: '「～まえに」：在...之前（先做後面的動作）',
+                    examples: [{ japanese: '食{た}べるまえに手{て}を洗{あら}う', chinese: '先洗手，再吃' }]
+                },
+                {
+                    rule: '「～てから」：...之後（先做前面的動作）',
+                    examples: [{ japanese: '手{て}を洗{あら}ってから食{た}べる', chinese: '先洗手，再吃' }]
+                }
+            ]
+        },
+        tips: {
+            title: '小提醒：學習者常犯錯誤',
+            items: [
+                {
+                    mistake: '動詞用た形接「まえに」',
+                    explanation: '「まえに」前面的動詞要用原形（辞書形），不是た形。',
+                    whenToUse: '動詞原形＋まえに。',
+                    correct: { sentence: '寝{ね}るまえに', note: '○ 原形' },
+                    incorrect: { sentence: '寝{ね}たまえに', note: '✕ た形錯誤' }
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n5_q_mae_ni_1',
+                sentence: '寝{ね}る（　）に、シャワーを浴{あ}びます。',
+                options: ['まえ', 'あと', 'とき', 'ので'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「まえ」正確！「寝るまえに」表示「睡覺之前」。',
+                    wrong: [
+                        '「あと」錯誤：「あと」表示「之後」。',
+                        '「とき」錯誤：「とき」表示「...的時候」。',
+                        '「ので」錯誤：「ので」表示原因。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_mae_ni_2',
+                sentence: '会議{かいぎ}（　）まえに、コーヒーを飲{の}みます。',
+                options: ['の', 'を', 'が', 'に'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「の」正確！名詞接「まえに」要加「の」。',
+                    wrong: [
+                        '「を」錯誤：名詞用「の」連接「まえに」。',
+                        '「が」錯誤：「が」不用於連接「まえに」。',
+                        '「に」錯誤：「にまえに」文法錯誤。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_mae_ni_3',
+                sentence: '日本{にほん}に（　）まえに、日本語{にほんご}を勉強{べんきょう}しました。',
+                options: ['行く', '行った', '行って', '行き'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「行く」正確！「まえに」前面用動詞原形。',
+                    wrong: [
+                        '「行った」錯誤：「まえに」前用原形，不用た形。',
+                        '「行って」錯誤：「まえに」前用原形，不用て形。',
+                        '「行き」錯誤：「まえに」前用原形，不用ます形。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_mae_ni_4',
+                sentence: '「映画{えいが}を見{み}る（　）に、何{なに}か食{た}べない？」\n「いいね。ポップコーン買{か}おう。」\n「そうしよう。」',
+                options: ['まえ', 'あと', 'とき', 'から'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「まえ」正確！「見るまえに」表示「看電影之前」。',
+                    wrong: [
+                        '「あと」錯誤：「あと」表示「之後」。',
+                        '「とき」錯誤：「とき」表示「...的時候」。',
+                        '「から」錯誤：「から」表示原因或起點。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_mae_ni_5',
+                sentence: '「授業{じゅぎょう}の（　）に、教科書{きょうかしょ}を読{よ}んでおいて。」\n「はい、わかりました。」\n「よろしく。」',
+                options: ['まえ', 'あと', 'なか', 'うち'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「まえ」正確！「授業のまえに」表示「上課之前」。',
+                    wrong: [
+                        '「あと」錯誤：「あと」表示「之後」。',
+                        '「なか」錯誤：「なか」表示「裡面」。',
+                        '「うち」錯誤：「うち」表示「之內」。'
+                    ]
+                }
+            }
+        ]
+    },
+
+    // n5_ato_de - ～あとで（...之後）
+    n5_ato_de: {
+        id: 'n5_ato_de',
+        pattern: '～あとで',
+        connection: '動詞た形＋あとで、名詞＋の＋あとで',
+        translation: '...之後',
+        level: 'N5',
+        explanation: [
+            {
+                usage: '表示動作之後',
+                description: '表示在某動作完成之後做另一件事。',
+                examples: [
+                    { japanese: '食{た}べたあとで、散歩{さんぽ}します。', chinese: '吃完後散步。' },
+                    { japanese: '映画{えいが}を見{み}たあとで、感想{かんそう}を話{はな}しましょう。', chinese: '看完電影後聊聊感想吧。' },
+                    {
+                        japanese: '「買{か}い物{もの}したあとで、お茶{ちゃ}しない？」\n「いいね！どこに行{い}く？」\n「駅前{えきまえ}のカフェは？」',
+                        chinese: '「購物後要不要喝茶？」\n「好啊！去哪裡？」\n「車站前的咖啡廳如何？」',
+                        note: '對話情境'
+                    }
+                ]
+            },
+            {
+                usage: '名詞＋のあとで',
+                description: '名詞接「あとで」時要加「の」。',
+                examples: [
+                    { japanese: '仕事{しごと}のあとで、飲{の}みに行{い}きませんか。', chinese: '工作後要不要去喝一杯？' },
+                    { japanese: '授業{じゅぎょう}のあとで、質問{しつもん}があります。', chinese: '下課後有問題。' },
+                    {
+                        japanese: '「会議{かいぎ}のあとで、ちょっといい？」\n「うん、何{なに}？」\n「相談{そうだん}したいことがあるんだ。」',
+                        chinese: '「會議後方便嗎？」\n「好，什麼事？」\n「有事想商量。」',
+                        note: '對話情境'
+                    }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「あとで」vs「てから」的區別',
+            points: [
+                {
+                    rule: '「あとで」：...之後（時間較鬆散）',
+                    examples: [{ japanese: '食{た}べたあとで散歩{さんぽ}する', chinese: '吃完後（過一會）散步' }]
+                },
+                {
+                    rule: '「てから」：...之後（緊密順序）',
+                    examples: [{ japanese: '食{た}べてから散歩{さんぽ}する', chinese: '吃完後（馬上）散步' }]
+                }
+            ]
+        },
+        tips: {
+            title: '小提醒：學習者常犯錯誤',
+            items: [
+                {
+                    mistake: '動詞用原形接「あとで」',
+                    explanation: '「あとで」前面的動詞要用た形，不是原形。',
+                    whenToUse: '動詞た形＋あとで。',
+                    correct: { sentence: '食{た}べたあとで', note: '○ た形' },
+                    incorrect: { sentence: '食{た}べるあとで', note: '✕ 原形錯誤' }
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n5_q_ato_de_1',
+                sentence: '仕事{しごと}が終{お}わった（　）で、映画{えいが}を見{み}ます。',
+                options: ['あと', 'まえ', 'とき', 'ので'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「あと」正確！「終わったあとで」表示「結束之後」。',
+                    wrong: [
+                        '「まえ」錯誤：「まえ」表示「之前」。',
+                        '「とき」錯誤：「とき」表示「...的時候」。',
+                        '「ので」錯誤：「ので」表示原因。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_ato_de_2',
+                sentence: '昼{ひる}ご飯{はん}（　）あとで、少{すこ}し休{やす}みます。',
+                options: ['の', 'を', 'が', 'に'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「の」正確！名詞接「あとで」要加「の」。',
+                    wrong: [
+                        '「を」錯誤：名詞用「の」連接「あとで」。',
+                        '「が」錯誤：「が」不用於連接「あとで」。',
+                        '「に」錯誤：「にあとで」文法錯誤。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_ato_de_3',
+                sentence: 'シャワーを（　）あとで、寝{ね}ます。',
+                options: ['浴びた', '浴びる', '浴びて', '浴び'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「浴びた」正確！「あとで」前面用動詞た形。',
+                    wrong: [
+                        '「浴びる」錯誤：「あとで」前用た形，不用原形。',
+                        '「浴びて」錯誤：「あとで」前用た形，不用て形。',
+                        '「浴び」錯誤：「あとで」前用た形，不用ます形。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_ato_de_4',
+                sentence: '「宿題{しゅくだい}を（　）あとで、ゲームしていい？」\n「いいよ。頑張{がんば}って。」\n「やった！」',
+                options: ['した', 'する', 'して', 'し'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「した」正確！「あとで」前面用動詞た形。',
+                    wrong: [
+                        '「する」錯誤：「あとで」前用た形。',
+                        '「して」錯誤：「あとで」前用た形。',
+                        '「し」錯誤：「あとで」前用た形。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_ato_de_5',
+                sentence: '「授業{じゅぎょう}の（　）で、図書館{としょかん}に行{い}かない？」\n「いいね。一緒{いっしょ}に勉強{べんきょう}しよう。」\n「うん。」',
+                options: ['あと', 'まえ', 'なか', 'うえ'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「あと」正確！「授業のあとで」表示「下課後」。',
+                    wrong: [
+                        '「まえ」錯誤：「まえ」表示「之前」。',
+                        '「なか」錯誤：「なか」表示「裡面/期間」。',
+                        '「うえ」錯誤：「うえ」表示「上面」。'
+                    ]
+                }
+            }
+        ]
+    },
+
+    // n5_toki - ～とき（...的時候）
+    n5_toki: {
+        id: 'n5_toki',
+        pattern: '～とき',
+        connection: '動詞普通形＋とき、い形容詞＋とき、な形容詞＋な＋とき、名詞＋の＋とき',
+        translation: '...的時候',
+        level: 'N5',
+        explanation: [
+            {
+                usage: '表示時間點',
+                description: '表示某個時間點或狀況。',
+                examples: [
+                    { japanese: '暇{ひま}なとき、映画{えいが}を見{み}ます。', chinese: '有空的時候看電影。' },
+                    { japanese: '子供{こども}のとき、よく公園{こうえん}で遊{あそ}びました。', chinese: '小時候常在公園玩。' },
+                    {
+                        japanese: '「困{こま}ったとき、誰{だれ}に相談{そうだん}する？」\n「母{はは}かな。」\n「そうなんだ。」',
+                        chinese: '「困擾的時候找誰商量？」\n「媽媽吧。」\n「這樣啊。」',
+                        note: '對話情境'
+                    }
+                ]
+            },
+            {
+                usage: '動詞＋とき的時態',
+                description: '動詞原形＋とき表示「要做...的時候」，た形＋とき表示「做完...的時候」。',
+                examples: [
+                    { japanese: '日本{にほん}に行{い}くとき、パスポートが必要{ひつよう}です。', chinese: '去日本的時候需要護照。（還沒去）' },
+                    { japanese: '日本{にほん}に行{い}ったとき、富士山{ふじさん}を見{み}ました。', chinese: '去日本的時候看了富士山。（已經去了）' },
+                    {
+                        japanese: '「電車{でんしゃ}に乗{の}るとき、何{なに}をする？」\n「音楽{おんがく}を聴{き}くかな。」\n「私{わたし}も！」',
+                        chinese: '「搭電車的時候做什麼？」\n「聽音樂吧。」\n「我也是！」',
+                        note: '對話情境'
+                    }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「とき」的接續方式',
+            points: [
+                {
+                    rule: '動詞原形＋とき：要做...的時候（動作未完成）',
+                    examples: [{ japanese: '行{い}くとき', chinese: '去的時候（還沒到）' }]
+                },
+                {
+                    rule: '動詞た形＋とき：做了...的時候（動作已完成）',
+                    examples: [{ japanese: '行{い}ったとき', chinese: '去了的時候（已經到了）' }]
+                },
+                {
+                    rule: '名詞＋のとき：...的時候',
+                    examples: [{ japanese: '子供{こども}のとき', chinese: '小時候' }]
+                }
+            ]
+        },
+        tips: {
+            title: '小提醒：學習者常犯錯誤',
+            items: [
+                {
+                    mistake: '不理解原形和た形的區別',
+                    explanation: '原形＋とき表示動作還沒完成，た形＋とき表示動作已完成。',
+                    whenToUse: '根據動作是否完成選擇形態。',
+                    correct: { sentence: '家{いえ}を出{で}るとき、鍵{かぎ}を忘{わす}れた。', note: '○ 出門時（正要出門）忘了鑰匙' },
+                    incorrect: { sentence: '家{いえ}を出{で}たとき、鍵{かぎ}を忘{わす}れた。', note: '○ 出門後（已經出門）發現忘了鑰匙' }
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n5_q_toki_1',
+                sentence: '暇{ひま}な（　）、音楽{おんがく}を聴{き}きます。',
+                options: ['とき', 'まえ', 'あと', 'ので'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「とき」正確！「暇なとき」表示「有空的時候」。',
+                    wrong: [
+                        '「まえ」錯誤：「まえ」表示「之前」。',
+                        '「あと」錯誤：「あと」表示「之後」。',
+                        '「ので」錯誤：「ので」表示原因。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_toki_2',
+                sentence: '子供{こども}（　）とき、よく泳{およ}ぎました。',
+                options: ['の', 'な', 'が', 'を'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「の」正確！名詞接「とき」要加「の」。',
+                    wrong: [
+                        '「な」錯誤：名詞用「の」，な形容詞才用「な」。',
+                        '「が」錯誤：「がとき」文法錯誤。',
+                        '「を」錯誤：「をとき」文法錯誤。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_toki_3',
+                sentence: '日本{にほん}に（　）とき、お土産{みやげ}を買{か}いました。',
+                options: ['行った', '行く', '行って', '行き'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「行った」正確！已經去日本了，用た形。',
+                    wrong: [
+                        '「行く」錯誤：這裡已經去了買了土產，用た形。',
+                        '「行って」錯誤：て形不直接接「とき」。',
+                        '「行き」錯誤：ます形不直接接「とき」。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_toki_4',
+                sentence: '「悲{かな}しい（　）、どうする？」\n「音楽{おんがく}を聴{き}くかな。」\n「そうなんだ。」',
+                options: ['とき', 'まえ', 'あと', 'から'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「とき」正確！「悲しいとき」表示「傷心的時候」。',
+                    wrong: [
+                        '「まえ」錯誤：「まえ」表示「之前」。',
+                        '「あと」錯誤：「あと」表示「之後」。',
+                        '「から」錯誤：「から」表示原因。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_toki_5',
+                sentence: '「寝{ね}る（　）、何{なに}をする？」\n「本{ほん}を読{よ}むよ。」\n「へえ、いい習慣{しゅうかん}だね。」',
+                options: ['まえ', 'とき', 'あと', 'から'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「まえ」正確！「寝るまえ」表示「睡前」。',
+                    wrong: [
+                        '「とき」錯誤：「とき」可以，但這裡問睡前習慣。',
+                        '「あと」錯誤：「寝るあと」不自然。',
+                        '「から」錯誤：「から」表示原因。'
+                    ]
+                }
+            }
+        ]
+    },
+
+    // n5_itsumo - いつも（總是）
+    n5_itsumo: {
+        id: 'n5_itsumo',
+        pattern: 'いつも',
+        connection: 'いつも＋動詞/形容詞',
+        translation: '總是、經常',
+        level: 'N5',
+        explanation: [
+            {
+                usage: '表示習慣性動作',
+                description: '表示經常做某事或某種狀態一直持續。',
+                examples: [
+                    { japanese: 'いつも七時{しちじ}に起{お}きます。', chinese: '總是七點起床。' },
+                    { japanese: '彼{かれ}はいつも元気{げんき}です。', chinese: '他總是很有精神。' },
+                    {
+                        japanese: '「朝{あさ}ご飯{はん}、いつも何{なに}を食{た}べる？」\n「パンとコーヒーかな。」\n「シンプルだね。」',
+                        chinese: '「早餐總是吃什麼？」\n「麵包和咖啡吧。」\n「很簡單呢。」',
+                        note: '對話情境'
+                    }
+                ]
+            },
+            {
+                usage: '表示感謝',
+                description: '「いつもありがとうございます」是常用的感謝語。',
+                examples: [
+                    { japanese: 'いつもありがとうございます。', chinese: '一直以來謝謝您。' },
+                    { japanese: 'いつもお世話{せわ}になっております。', chinese: '一直承蒙您照顧。' },
+                    {
+                        japanese: '「いつもお世話{せわ}になっております。」\n「こちらこそ、いつもありがとうございます。」\n「今後{こんご}ともよろしくお願{ねが}いします。」',
+                        chinese: '「一直承蒙您照顧。」\n「我才是，一直以來謝謝您。」\n「今後也請多多指教。」',
+                        note: '對話情境'
+                    }
+                ]
+            }
+        ],
+        analysis: {
+            title: '頻率副詞的比較',
+            points: [
+                {
+                    rule: '「いつも」：總是（100%）',
+                    examples: [{ japanese: 'いつも遅刻{ちこく}する', chinese: '總是遲到' }]
+                },
+                {
+                    rule: '「よく」：經常（70-80%）',
+                    examples: [{ japanese: 'よく遅刻{ちこく}する', chinese: '常常遲到' }]
+                },
+                {
+                    rule: '「ときどき」：有時（30-50%）',
+                    examples: [{ japanese: 'ときどき遅刻{ちこく}する', chinese: '有時遲到' }]
+                },
+                {
+                    rule: '「あまり～ない」：不太（10-20%）',
+                    examples: [{ japanese: 'あまり遅刻{ちこく}しない', chinese: '不太遲到' }]
+                }
+            ]
+        },
+        tips: {
+            title: '小提醒：學習者常犯錯誤',
+            items: [
+                {
+                    mistake: '「いつも」用於否定句',
+                    explanation: '「いつも」通常不用於否定句，否定時用「ぜんぜん」或「あまり」。',
+                    whenToUse: '肯定用「いつも」，否定用「ぜんぜん～ない」。',
+                    correct: { sentence: 'いつも食{た}べます。', note: '○ 肯定句' },
+                    incorrect: { sentence: 'いつも食{た}べません。', note: '△ 不自然，用「ぜんぜん」' }
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n5_q_itsumo_1',
+                sentence: '私{わたし}は（　）電車{でんしゃ}で会社{かいしゃ}に行{い}きます。',
+                options: ['いつも', 'ぜんぜん', 'あまり', 'まだ'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「いつも」正確！表示「總是搭電車去公司」。',
+                    wrong: [
+                        '「ぜんぜん」錯誤：「ぜんぜん」用於否定句。',
+                        '「あまり」錯誤：「あまり」用於否定句。',
+                        '「まだ」錯誤：「まだ」表示「還」。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_itsumo_2',
+                sentence: '彼女{かのじょ}は（　）笑顔{えがお}です。',
+                options: ['いつも', 'ぜんぜん', 'あまり', 'もう'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「いつも」正確！表示「總是笑臉」。',
+                    wrong: [
+                        '「ぜんぜん」錯誤：「ぜんぜん」用於否定。',
+                        '「あまり」錯誤：「あまり」用於否定。',
+                        '「もう」錯誤：「もう」表示「已經」。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_itsumo_3',
+                sentence: '（　）ありがとうございます。',
+                options: ['いつも', 'ぜんぜん', 'あまり', 'まだ'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「いつも」正確！「いつもありがとうございます」是感謝語。',
+                    wrong: [
+                        '「ぜんぜん」錯誤：「ぜんぜんありがとう」不通。',
+                        '「あまり」錯誤：「あまりありがとう」不通。',
+                        '「まだ」錯誤：「まだありがとう」不通。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_itsumo_4',
+                sentence: '「週末{しゅうまつ}、（　）何{なに}をする？」\n「家{いえ}でゆっくりするかな。」\n「そうなんだ。」',
+                options: ['いつも', 'ぜんぜん', 'もう', 'まだ'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「いつも」正確！詢問「週末總是做什麼」。',
+                    wrong: [
+                        '「ぜんぜん」錯誤：「ぜんぜん」用於否定。',
+                        '「もう」錯誤：「もう」表示「已經」。',
+                        '「まだ」錯誤：「まだ」表示「還」。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_itsumo_5',
+                sentence: '「この店{みせ}、（　）混{こ}んでるね。」\n「人気{にんき}があるからね。」\n「今度{こんど}、予約{よやく}しよう。」',
+                options: ['いつも', 'ぜんぜん', 'あまり', 'もう'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「いつも」正確！表示「這家店總是很擠」。',
+                    wrong: [
+                        '「ぜんぜん」錯誤：「ぜんぜん」用於否定。',
+                        '「あまり」錯誤：「あまり」用於否定。',
+                        '「もう」錯誤：「もう」表示「已經」。'
+                    ]
+                }
+            }
+        ]
+    }
+});
+
+// ============================================================
+// Batch 9: 存在與方向句型 (がある/いる、へ、で、から～まで)
+// ============================================================
+Object.assign(n5Details, {
+    // n5_ga_aru - がある/いる（存在）
+    n5_ga_aru: {
+        id: 'n5_ga_aru',
+        pattern: 'がある/いる',
+        connection: '名詞＋がある（物）/いる（人・動物）',
+        translation: '有...',
+        level: 'N5',
+        explanation: [
+            {
+                usage: '表示物品存在',
+                description: '「ある」用於無生命的物品。',
+                examples: [
+                    { japanese: '机{つくえ}の上{うえ}に本{ほん}があります。', chinese: '桌上有書。' },
+                    { japanese: '冷蔵庫{れいぞうこ}にジュースがあります。', chinese: '冰箱裡有果汁。' },
+                    {
+                        japanese: '「すみません、トイレはどこにありますか。」\n「あちらにあります。」\n「ありがとうございます。」',
+                        chinese: '「不好意思，廁所在哪裡？」\n「在那邊。」\n「謝謝您。」',
+                        note: '對話情境'
+                    }
+                ]
+            },
+            {
+                usage: '表示人或動物存在',
+                description: '「いる」用於有生命的人或動物。',
+                examples: [
+                    { japanese: '公園{こうえん}に子供{こども}がいます。', chinese: '公園裡有小孩。' },
+                    { japanese: '家{いえ}に猫{ねこ}がいます。', chinese: '家裡有貓。' },
+                    {
+                        japanese: '「田中{たなか}さんはどこにいますか。」\n「会議室{かいぎしつ}にいます。」\n「わかりました。」',
+                        chinese: '「田中先生在哪裡？」\n「在會議室。」\n「了解。」',
+                        note: '對話情境'
+                    }
+                ]
+            },
+            {
+                usage: '表示擁有',
+                description: '「ある/いる」也可以表示擁有某物或有某人。',
+                examples: [
+                    { japanese: '私{わたし}は車{くるま}があります。', chinese: '我有車。' },
+                    { japanese: '彼{かれ}には兄弟{きょうだい}がいます。', chinese: '他有兄弟姐妹。' },
+                    {
+                        japanese: '「明日{あした}、時間{じかん}ある？」\n「うん、あるよ。」\n「じゃ、映画{えいが}行{い}かない？」',
+                        chinese: '「明天有時間嗎？」\n「有喔。」\n「那要不要去看電影？」',
+                        note: '對話情境'
+                    }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「ある」vs「いる」的使用',
+            points: [
+                {
+                    rule: '「ある」：無生命物品',
+                    examples: [{ japanese: '本{ほん}がある', chinese: '有書' }]
+                },
+                {
+                    rule: '「いる」：人、動物（有生命）',
+                    examples: [{ japanese: '猫{ねこ}がいる', chinese: '有貓' }]
+                },
+                {
+                    rule: '植物：通常用「ある」',
+                    examples: [{ japanese: '花{はな}がある', chinese: '有花' }]
+                }
+            ]
+        },
+        tips: {
+            title: '小提醒：學習者常犯錯誤',
+            items: [
+                {
+                    mistake: '人用「ある」，物用「いる」',
+                    explanation: '有生命的（人、動物）用「いる」，無生命的（物品、植物）用「ある」。',
+                    whenToUse: '先判斷是有生命還是無生命。',
+                    correct: { sentence: '部屋{へや}に人{ひと}がいる。', note: '○ 人用「いる」' },
+                    incorrect: { sentence: '部屋{へや}に人{ひと}がある。', note: '✕ 人不能用「ある」' }
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n5_q_ga_aru_1',
+                sentence: '机{つくえ}の上{うえ}にパソコン（　）あります。',
+                options: ['が', 'を', 'に', 'は'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「が」正確！存在句中用「が」標記存在的物品。',
+                    wrong: [
+                        '「を」錯誤：「を」是受詞標記，存在句用「が」。',
+                        '「に」錯誤：「に」標記位置，物品用「が」。',
+                        '「は」錯誤：新資訊用「が」，不用「は」。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_ga_aru_2',
+                sentence: '公園{こうえん}に犬{いぬ}が（　）。',
+                options: ['います', 'あります', 'です', 'ます'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「います」正確！狗是動物，用「いる」。',
+                    wrong: [
+                        '「あります」錯誤：「ある」用於物品，動物用「いる」。',
+                        '「です」錯誤：「です」不表示存在。',
+                        '「ます」錯誤：「ます」不能單獨使用。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_ga_aru_3',
+                sentence: '冷蔵庫{れいぞうこ}に牛乳{ぎゅうにゅう}が（　）。',
+                options: ['あります', 'います', 'です', 'します'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「あります」正確！牛奶是物品，用「ある」。',
+                    wrong: [
+                        '「います」錯誤：「いる」用於人和動物。',
+                        '「です」錯誤：「です」不表示存在。',
+                        '「します」錯誤：「します」表示做某事。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_ga_aru_4',
+                sentence: '「すみません、この近{ちか}くにコンビニ（　）ますか。」\n「はい、あの角{かど}にありますよ。」\n「ありがとうございます。」',
+                options: ['あり', 'い', 'でき', 'し'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「あり」正確！「ありますか」詢問便利商店的存在。',
+                    wrong: [
+                        '「い」錯誤：「いる」用於人和動物。',
+                        '「でき」錯誤：「できる」表示能夠。',
+                        '「し」錯誤：「します」表示做某事。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_ga_aru_5',
+                sentence: '「彼女{かのじょ}、（　）の？」\n「うん、いるよ。」\n「へえ、いいね。」',
+                options: ['いる', 'ある', 'する', 'なる'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「いる」正確！女朋友是人，用「いる」。',
+                    wrong: [
+                        '「ある」錯誤：「ある」用於物品。',
+                        '「する」錯誤：「する」表示做某事。',
+                        '「なる」錯誤：「なる」表示變成。'
+                    ]
+                }
+            }
+        ]
+    },
+
+    // n5_e_he - へ（方向）
+    n5_e_he: {
+        id: 'n5_e_he',
+        pattern: 'へ',
+        connection: '名詞（場所）＋へ',
+        translation: '往...、朝...',
+        level: 'N5',
+        explanation: [
+            {
+                usage: '表示移動方向',
+                description: '表示移動的方向，強調「朝那個方向去」。',
+                examples: [
+                    { japanese: '学校{がっこう}へ行{い}きます。', chinese: '去學校。' },
+                    { japanese: '日本{にほん}へ旅行{りょこう}に行{い}きます。', chinese: '去日本旅行。' },
+                    {
+                        japanese: '「どこへ行{い}くの？」\n「駅{えき}へ行{い}くよ。」\n「気{き}をつけてね。」',
+                        chinese: '「要去哪裡？」\n「去車站喔。」\n「小心喔。」',
+                        note: '對話情境'
+                    }
+                ]
+            },
+            {
+                usage: '「へ」和「に」的區別',
+                description: '「へ」強調方向，「に」強調到達點，但很多時候可以互換。',
+                examples: [
+                    { japanese: '東{ひがし}へ向{む}かいます。', chinese: '往東邊走。' },
+                    { japanese: '家{いえ}へ帰{かえ}ります。', chinese: '回家。' },
+                    {
+                        japanese: '「明日{あした}、どこへ行{い}く？」\n「海{うみ}へ行{い}こうと思{おも}ってる。」\n「いいね！」',
+                        chinese: '「明天要去哪裡？」\n「想去海邊。」\n「不錯呢！」',
+                        note: '對話情境'
+                    }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「へ」vs「に」的區別',
+            points: [
+                {
+                    rule: '「へ」：強調方向（較抽象）',
+                    examples: [{ japanese: '学校{がっこう}へ行{い}く', chinese: '朝學校的方向去' }]
+                },
+                {
+                    rule: '「に」：強調到達點（較具體）',
+                    examples: [{ japanese: '学校{がっこう}に行{い}く', chinese: '到達學校' }]
+                }
+            ]
+        },
+        tips: {
+            title: '小提醒：學習者常犯錯誤',
+            items: [
+                {
+                    mistake: '把「へ」念成「he」',
+                    explanation: '助詞「へ」雖然寫作「he」，但發音是「e」。',
+                    whenToUse: '只有助詞「へ」念「e」。',
+                    correct: { sentence: '学校{がっこう}へ（gakkou e）', note: '○ 正確發音' },
+                    incorrect: { sentence: '学校{がっこう}へ（gakkou he）', note: '✕ 錯誤發音' }
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n5_q_e_he_1',
+                sentence: '毎日{まいにち}会社{かいしゃ}（　）行{い}きます。',
+                options: ['へ', 'を', 'が', 'の'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「へ」正確！表示去公司的方向。',
+                    wrong: [
+                        '「を」錯誤：「を」是受詞標記，方向用「へ」。',
+                        '「が」錯誤：「が」是主語標記，方向用「へ」。',
+                        '「の」錯誤：「の」是所有格，方向用「へ」。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_e_he_2',
+                sentence: '来週{らいしゅう}、日本{にほん}（　）旅行{りょこう}に行{い}きます。',
+                options: ['へ', 'を', 'が', 'の'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「へ」正確！表示去日本的方向。',
+                    wrong: [
+                        '「を」錯誤：方向用「へ」或「に」。',
+                        '「が」錯誤：「が」是主語標記。',
+                        '「の」錯誤：「の」是所有格。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_e_he_3',
+                sentence: 'もう遅{おそ}いから、家{いえ}（　）帰{かえ}ります。',
+                options: ['へ', 'を', 'が', 'の'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「へ」正確！「家へ帰る」表示回家。',
+                    wrong: [
+                        '「を」錯誤：「を」是受詞標記。',
+                        '「が」錯誤：「が」是主語標記。',
+                        '「の」錯誤：「の」是所有格。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_e_he_4',
+                sentence: '「週末{しゅうまつ}、どこ（　）行{い}く？」\n「山{やま}へ行{い}こうと思{おも}ってる。」\n「いいね！」',
+                options: ['へ', 'を', 'が', 'の'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「へ」正確！「どこへ行く」詢問方向。',
+                    wrong: [
+                        '「を」錯誤：方向用「へ」。',
+                        '「が」錯誤：「が」是主語標記。',
+                        '「の」錯誤：「の」是所有格。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_e_he_5',
+                sentence: '「夏休{なつやす}み、どこ（　）行{い}きたい？」\n「沖縄{おきなわ}へ行{い}きたいな。」\n「海{うみ}がきれいだよね。」',
+                options: ['へ', 'を', 'が', 'の'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「へ」正確！詢問想去的方向。',
+                    wrong: [
+                        '「を」錯誤：方向用「へ」。',
+                        '「が」錯誤：「が」是主語標記。',
+                        '「の」錯誤：「の」是所有格。'
+                    ]
+                }
+            }
+        ]
+    },
+
+    // n5_de_place - で（場所）
+    n5_de_place: {
+        id: 'n5_de_place',
+        pattern: 'で',
+        connection: '名詞（場所）＋で',
+        translation: '在...（動作場所）',
+        level: 'N5',
+        explanation: [
+            {
+                usage: '表示動作進行的場所',
+                description: '表示動作在某地方進行。',
+                examples: [
+                    { japanese: '図書館{としょかん}で勉強{べんきょう}します。', chinese: '在圖書館讀書。' },
+                    { japanese: 'レストランで食{た}べます。', chinese: '在餐廳吃。' },
+                    {
+                        japanese: '「どこで昼{ひる}ご飯{はん}を食{た}べる？」\n「あのカフェで食{た}べよう。」\n「いいね。」',
+                        chinese: '「在哪裡吃午餐？」\n「在那家咖啡廳吃吧。」\n「好啊。」',
+                        note: '對話情境'
+                    }
+                ]
+            },
+            {
+                usage: '表示手段/方法',
+                description: '「で」也可以表示使用的工具或方法。',
+                examples: [
+                    { japanese: '電車{でんしゃ}で行{い}きます。', chinese: '搭電車去。' },
+                    { japanese: '日本語{にほんご}で話{はな}します。', chinese: '用日語說。' },
+                    {
+                        japanese: '「何{なに}で来{き}たの？」\n「自転車{じてんしゃ}で来{き}たよ。」\n「へえ、健康{けんこう}的{てき}だね。」',
+                        chinese: '「怎麼來的？」\n「騎腳踏車來的喔。」\n「欸，很健康呢。」',
+                        note: '對話情境'
+                    }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「で」vs「に」的區別',
+            points: [
+                {
+                    rule: '「で」（動作場所）：動作在此處進行',
+                    examples: [{ japanese: '図書館{としょかん}で勉強{べんきょう}する', chinese: '在圖書館讀書' }]
+                },
+                {
+                    rule: '「に」（存在場所）：人或物存在於此處',
+                    examples: [{ japanese: '図書館{としょかん}にいる', chinese: '在圖書館（存在）' }]
+                }
+            ]
+        },
+        tips: {
+            title: '小提醒：學習者常犯錯誤',
+            items: [
+                {
+                    mistake: '存在用「で」，動作用「に」',
+                    explanation: '動作場所用「で」，存在場所用「に」。',
+                    whenToUse: '動作用「で」，存在（いる/ある）用「に」。',
+                    correct: { sentence: '公園{こうえん}で遊{あそ}ぶ。', note: '○ 動作場所用「で」' },
+                    incorrect: { sentence: '公園{こうえん}に遊{あそ}ぶ。', note: '✕ 動作用「で」' }
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n5_q_de_place_1',
+                sentence: '図書館{としょかん}（　）本{ほん}を読{よ}みます。',
+                options: ['で', 'に', 'へ', 'を'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「で」正確！讀書是動作，動作場所用「で」。',
+                    wrong: [
+                        '「に」錯誤：「に」用於存在，動作場所用「で」。',
+                        '「へ」錯誤：「へ」表示方向。',
+                        '「を」錯誤：「を」是受詞標記。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_de_place_2',
+                sentence: '電車{でんしゃ}（　）会社{かいしゃ}に行{い}きます。',
+                options: ['で', 'に', 'へ', 'を'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「で」正確！「電車で」表示交通工具。',
+                    wrong: [
+                        '「に」錯誤：交通工具用「で」。',
+                        '「へ」錯誤：「へ」表示方向。',
+                        '「を」錯誤：「を」是受詞標記。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_de_place_3',
+                sentence: '日本語{にほんご}（　）手紙{てがみ}を書{か}きました。',
+                options: ['で', 'に', 'へ', 'を'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「で」正確！「日本語で」表示使用的語言。',
+                    wrong: [
+                        '「に」錯誤：語言/方式用「で」。',
+                        '「へ」錯誤：「へ」表示方向。',
+                        '「を」錯誤：「を」標記受詞「手紙」。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_de_place_4',
+                sentence: '「どこ（　）買{か}い物{もの}する？」\n「駅前{えきまえ}のデパートで買{か}おう。」\n「いいね。」',
+                options: ['で', 'に', 'へ', 'を'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「で」正確！買東西是動作，動作場所用「で」。',
+                    wrong: [
+                        '「に」錯誤：動作場所用「で」。',
+                        '「へ」錯誤：「へ」表示方向。',
+                        '「を」錯誤：「を」是受詞標記。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_de_place_5',
+                sentence: '「何{なに}（　）払{はら}いますか。」\n「クレジットカードで払{はら}います。」\n「わかりました。」',
+                options: ['で', 'に', 'へ', 'を'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「で」正確！「何で」詢問用什麼方式付款。',
+                    wrong: [
+                        '「に」錯誤：方式/手段用「で」。',
+                        '「へ」錯誤：「へ」表示方向。',
+                        '「を」錯誤：「を」是受詞標記。'
+                    ]
+                }
+            }
+        ]
+    },
+
+    // n5_kara_made - から～まで（從...到...）
+    n5_kara_made: {
+        id: 'n5_kara_made',
+        pattern: 'から～まで',
+        connection: '名詞＋から＋名詞＋まで',
+        translation: '從...到...',
+        level: 'N5',
+        explanation: [
+            {
+                usage: '表示時間範圍',
+                description: '表示從某時間到某時間。',
+                examples: [
+                    { japanese: '九時{くじ}から五時{ごじ}まで働{はたら}きます。', chinese: '從九點工作到五點。' },
+                    { japanese: '月曜日{げつようび}から金曜日{きんようび}まで学校{がっこう}があります。', chinese: '從星期一到星期五有課。' },
+                    {
+                        japanese: '「仕事{しごと}は何時{なんじ}から何時{なんじ}まで？」\n「九時{くじ}から六時{ろくじ}までだよ。」\n「大変{たいへん}だね。」',
+                        chinese: '「工作從幾點到幾點？」\n「從九點到六點喔。」\n「好辛苦呢。」',
+                        note: '對話情境'
+                    }
+                ]
+            },
+            {
+                usage: '表示空間範圍',
+                description: '表示從某地到某地。',
+                examples: [
+                    { japanese: '東京{とうきょう}から大阪{おおさか}まで新幹線{しんかんせん}で行{い}きます。', chinese: '從東京搭新幹線到大阪。' },
+                    { japanese: '家{いえ}から駅{えき}まで歩{ある}いて十分{じっぷん}です。', chinese: '從家走到車站要十分鐘。' },
+                    {
+                        japanese: '「ここから駅{えき}まで、どのくらいかかりますか。」\n「歩{ある}いて五分{ごふん}くらいです。」\n「ありがとうございます。」',
+                        chinese: '「從這裡到車站要多久？」\n「走路大約五分鐘。」\n「謝謝您。」',
+                        note: '對話情境'
+                    }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「から」和「まで」的單獨使用',
+            points: [
+                {
+                    rule: '「から」：從...（起點）',
+                    examples: [{ japanese: '九時{くじ}から始{はじ}まる', chinese: '從九點開始' }]
+                },
+                {
+                    rule: '「まで」：到...（終點）',
+                    examples: [{ japanese: '五時{ごじ}まで働{はたら}く', chinese: '工作到五點' }]
+                },
+                {
+                    rule: '「から～まで」：從...到...（範圍）',
+                    examples: [{ japanese: '九時{くじ}から五時{ごじ}まで', chinese: '從九點到五點' }]
+                }
+            ]
+        },
+        tips: {
+            title: '小提醒：學習者常犯錯誤',
+            items: [
+                {
+                    mistake: '時間點用「に」還是「から」',
+                    explanation: '「に」表示具體時間點，「から」表示起點。',
+                    whenToUse: '表示「從...」用「から」。',
+                    correct: { sentence: '九時{くじ}から始{はじ}まります。', note: '○ 從九點開始' },
+                    incorrect: { sentence: '九時{くじ}に始{はじ}まります。', note: '○ 也對，但強調「在九點」' }
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n5_q_kara_made_1',
+                sentence: '授業{じゅぎょう}は九時{くじ}（　）始{はじ}まります。',
+                options: ['から', 'まで', 'に', 'で'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「から」正確！「九時から」表示「從九點」開始。',
+                    wrong: [
+                        '「まで」錯誤：「まで」表示終點。',
+                        '「に」錯誤：「に」也可以，但「から」強調起點。',
+                        '「で」錯誤：「で」不用於時間點。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_kara_made_2',
+                sentence: '仕事{しごと}は五時{ごじ}（　）です。',
+                options: ['まで', 'から', 'に', 'で'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「まで」正確！「五時まで」表示「到五點」。',
+                    wrong: [
+                        '「から」錯誤：「から」表示起點。',
+                        '「に」錯誤：「に」表示時間點，不表示終點。',
+                        '「で」錯誤：「で」不用於時間終點。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_kara_made_3',
+                sentence: '東京{とうきょう}（　）大阪{おおさか}まで、新幹線{しんかんせん}で三時間{さんじかん}です。',
+                options: ['から', 'まで', 'に', 'で'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「から」正確！「東京から大阪まで」表示範圍。',
+                    wrong: [
+                        '「まで」錯誤：起點用「から」。',
+                        '「に」錯誤：起點用「から」。',
+                        '「で」錯誤：起點用「から」。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_kara_made_4',
+                sentence: '「夏休{なつやす}みはいつ（　）いつまで？」\n「七月{しちがつ}から八月{はちがつ}までだよ。」\n「長{なが}いね！」',
+                options: ['から', 'まで', 'に', 'で'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「から」正確！詢問暑假的起點。',
+                    wrong: [
+                        '「まで」錯誤：起點用「から」。',
+                        '「に」錯誤：範圍用「から～まで」。',
+                        '「で」錯誤：時間用「から」。'
+                    ]
+                }
+            },
+            {
+                id: 'n5_q_kara_made_5',
+                sentence: '「家{いえ}から学校{がっこう}（　）、どのくらい？」\n「歩{ある}いて十五分{じゅうごふん}くらいかな。」\n「近{ちか}いね。」',
+                options: ['まで', 'から', 'に', 'で'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「まで」正確！「学校まで」表示終點。',
+                    wrong: [
+                        '「から」錯誤：終點用「まで」。',
+                        '「に」錯誤：終點用「まで」。',
+                        '「で」錯誤：終點用「まで」。'
                     ]
                 }
             }
