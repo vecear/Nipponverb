@@ -67,22 +67,35 @@ export const getAdminList = async (): Promise<string[]> => {
     if (adminSnap.exists()) {
       const data = adminSnap.data()
       const emails = (data.emails || []).map((e: string) => e.toLowerCase())
+      // 確保預設管理員總是在列表中
+      if (!emails.includes(DEFAULT_ADMIN_EMAIL)) {
+        emails.push(DEFAULT_ADMIN_EMAIL)
+      }
       adminEmailsCache = emails
+      console.log('Admin list from Firestore:', emails)
       return emails
     }
 
     // 如果不存在，建立預設管理員配置
+    console.log('Admin config not found, creating default...')
     const defaultEmails = [DEFAULT_ADMIN_EMAIL]
-    await setDoc(adminRef, {
-      emails: defaultEmails,
-      updatedAt: new Date(),
-    })
+    try {
+      await setDoc(adminRef, {
+        emails: defaultEmails,
+        updatedAt: new Date(),
+      })
+      console.log('Default admin config created')
+    } catch (writeError) {
+      console.warn('Could not create admin config (might be permissions):', writeError)
+    }
     adminEmailsCache = defaultEmails
     return defaultEmails
   } catch (error) {
     console.error('Error getting admin list:', error)
-    // 發生錯誤時返回預設管理員
-    return [DEFAULT_ADMIN_EMAIL]
+    // 發生錯誤時返回預設管理員並設置快取
+    const defaultEmails = [DEFAULT_ADMIN_EMAIL]
+    adminEmailsCache = defaultEmails
+    return defaultEmails
   }
 }
 

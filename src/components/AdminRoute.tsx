@@ -20,9 +20,20 @@ const AdminRoute = ({ children }: AdminRouteProps) => {
   useEffect(() => {
     const checkAdminStatus = async () => {
       if (currentUser?.email) {
-        // 先載入管理員列表以填充快取
-        await getAdminList()
-        setIsUserAdmin(isAdmin(currentUser.email))
+        try {
+          // 先載入管理員列表以填充快取
+          const adminList = await getAdminList()
+          console.log('Admin list loaded:', adminList)
+          console.log('Current user email:', currentUser.email)
+          const isAdminResult = isAdmin(currentUser.email)
+          console.log('Is admin result:', isAdminResult)
+          setIsUserAdmin(isAdminResult)
+        } catch (error) {
+          console.error('Error checking admin status:', error)
+          // 發生錯誤時，檢查是否為預設管理員
+          const isDefaultAdmin = currentUser.email.toLowerCase() === 'vecear@gmail.com'
+          setIsUserAdmin(isDefaultAdmin)
+        }
       }
       setIsCheckingAdmin(false)
     }

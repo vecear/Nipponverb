@@ -19,9 +19,22 @@ const Navbar = () => {
   useEffect(() => {
     const checkAdmin = async () => {
       if (currentUser?.email) {
-        // 先載入管理員列表以填充快取
-        await getAdminList()
-        setIsUserAdmin(isAdmin(currentUser.email))
+        try {
+          // 先載入管理員列表以填充快取
+          const adminList = await getAdminList()
+          const result = isAdmin(currentUser.email)
+          console.log('[Navbar] Admin check:', {
+            email: currentUser.email,
+            adminList,
+            isAdmin: result
+          })
+          setIsUserAdmin(result)
+        } catch (error) {
+          console.error('[Navbar] Error checking admin:', error)
+          // 發生錯誤時，檢查是否為預設管理員
+          const isDefaultAdmin = currentUser.email.toLowerCase() === 'vecear@gmail.com'
+          setIsUserAdmin(isDefaultAdmin)
+        }
       }
     }
     checkAdmin()
