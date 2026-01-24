@@ -1875,3 +1875,492 @@ Object.assign(n5Details, {
         ]
     }
 });
+
+// Batch 8
+Object.assign(n5Details, {
+    'n5_mashou': {
+        id: 'n5_mashou',
+        pattern: 'ましょう',
+        connection: '動詞ます形（去掉ます） + ましょう',
+        translation: '...吧; 一起...吧',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '提議・勸誘（一起做...吧）',
+                description: '用於提議對方一起做某事。語氣積極，假設對方會同意。',
+                examples: [
+                    { japanese: 'そろそろ行{い}きましょう。', chinese: '差不多該走了吧。' },
+                    { japanese: '一緒{いっしょ}に帰{かえ}りましょう。', chinese: '一起回家吧。' },
+                    {
+                        japanese: '「日曜日{にちようび}、映画{えいが}を見{み}に行{い}きませんか。」\n「いいですね。行{い}きましょう。」',
+                        chinese: '「星期天要不要去看電影？」\n「好啊。走吧。」',
+                        note: '答應邀約時常用'
+                    }
+                ]
+            },
+            {
+                usageId: 2,
+                title: '確認・行動（那我就...了）',
+                description: '說話者為了對方或當下的情況，主動表示要進行某個動作。',
+                examples: [
+                    { japanese: 'ここから始{はじ}めましょう。', chinese: '我們從這裡開始吧。' },
+                    { japanese: '私{わたし}が書{か}きましょう。', chinese: '我來寫吧。（主動承擔）' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「ましょう」與「ませんか」的差異',
+            description: '兩者都用於邀約，但語氣和禮貌程度不同。',
+            points: [
+                {
+                    rule: '「ませんか」給對方選擇權（去不去都可以），比較禮貌。',
+                    examples: [
+                        { japanese: 'コーヒーを飲{の}みませんか。', chinese: '要不要喝杯咖啡？（詢問意願）', note: '○ 客氣邀約' }
+                    ]
+                },
+                {
+                    rule: '「ましょう」語氣較強，假設對方會同意，或者用於已經決定要做的事。',
+                    examples: [
+                        { japanese: 'コーヒーを飲{の}みましょう。', chinese: '喝杯咖啡吧。（積極提議）', note: '○ 用於熟人或確認行動' }
+                    ]
+                }
+            ],
+            summary: '對上司或長輩邀約時，建議用「～ませんか」。確認彼此都同意的行動時，用「～ましょう」。'
+        },
+        tips: {
+            title: '小提醒',
+            items: [
+                {
+                    mistake: '誤用「ましょう」回答問題',
+                    explanation: '當別人問「行きますか」（要去嗎？）時，若單純回答事實，用「行きます」。若回答邀約，用「行きましょう」。',
+                    whenToUse: '回應邀約時。',
+                    correct: { sentence: '「行きませんか像」「ええ、行きましょう。」', note: '○ 回應邀約' },
+                    incorrect: { sentence: '「明日学校へ行きますか」「ええ、行きましょう」', note: '△ 除非是約好一起去，否則單純回答行程用「行きます」' }
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n5_q_mashou_1',
+                type: 'inline_quiz',
+                grammarPoint: 'ましょう',
+                sentence: 'テストを（　）。',
+                options: ['始めます', '始めましょう', '始め', '始めて'],
+                correctIndex: 1,
+                explanation: '老師對學生說：「讓我們開始考試吧」。'
+            },
+            {
+                id: 'n5_q_mashou_2',
+                type: 'inline_quiz',
+                grammarPoint: 'ましょう',
+                sentence: 'ご飯を（　）。',
+                options: ['食べましょう', '食べます', '食べて', '食べた'],
+                correctIndex: 0,
+                explanation: '開動前的提議：「吃吧」。'
+            },
+            {
+                id: 'n5_q_mashou_3',
+                type: 'inline_quiz',
+                grammarPoint: 'ましょう',
+                sentence: '休憩{きゅうけい}（　）。',
+                options: ['します', 'して', 'しましょう', 'しない'],
+                correctIndex: 2,
+                explanation: '提議「休息一下吧」。'
+            },
+            {
+                id: 'n5_q_mashou_4',
+                type: 'inline_quiz',
+                grammarPoint: 'ましょう',
+                sentence: '「タクシーで帰りませんか。」\n「そうですね。（　）。」',
+                options: ['帰りましょう', '帰ります', '帰っています', '帰りません'],
+                correctIndex: 0,
+                explanation: '對話情境。同意對方的提議。「好啊，（我們就）搭計程車回去吧。」'
+            },
+            {
+                id: 'n5_q_mashou_5',
+                type: 'inline_quiz',
+                grammarPoint: 'ましょう',
+                sentence: '「ちょっと疲れましたね。」\n「じゃあ、あそこの店で（　）。」',
+                options: ['休みましょう', '休みます', '休みました', '休んで'],
+                correctIndex: 0,
+                explanation: '對話情境。順著對方的話提議休息。'
+            }
+        ]
+    },
+    'n5_mashouka': {
+        id: 'n5_mashouka',
+        pattern: 'ましょうか',
+        connection: '動詞ます形（去掉ます） + ましょうか',
+        translation: '我來...好嗎?; 我們...好嗎?',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '主動提供幫助（我來...吧？）',
+                description: '看到對方有困難，主動詢問是否需要幫忙。主語通常是「私（我）」，但經常省略。',
+                examples: [
+                    { japanese: '荷物{にもつ}を持{も}ちましょうか。', chinese: '我幫您拿行李吧？' },
+                    { japanese: '窓{まど}を開{あ}けましょうか。', chinese: '要我開窗嗎？' },
+                    { japanese: '手伝{てつだ}いましょうか。', chinese: '需要幫忙嗎？' }
+                ]
+            },
+            {
+                usageId: 2,
+                title: '提議共同行動的疑問（要不要一起...？）',
+                description: '跟「～ましょう」類似，但是是用疑問句形式來徵求對方意見。主語是「私たち（我們）」。',
+                examples: [
+                    { japanese: '何時{なんじ}に会{あ}いましょうか。', chinese: '我們要幾點見面呢？' },
+                    { japanese: 'どこへ行{い}きましょうか。', chinese: '我們要去哪裡呢？' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「ましょうか」的使用注意',
+            description: '雖然是用來提供幫助，但對長輩使用可能會顯得有些居高臨下（彷彿對方沒有能力自己做）。',
+            points: [
+                {
+                    rule: '對平輩或晚輩：可以直接用「～ましょうか」。',
+                    examples: [
+                        { japanese: '貸{か}しましょうか。', chinese: '要我借你嗎？', note: '○ 自然' }
+                    ]
+                },
+                {
+                    rule: '對長輩或上司：建議改用「〜お持ちします」或「〜ましょうか」前加「私が」。',
+                    examples: [
+                        { japanese: 'お持{も}ちしましょうか。', chinese: '我幫您拿吧。（更禮貌）', note: '○ 謙讓語' }
+                    ]
+                }
+            ],
+            summary: '提供幫助時是好意，但要注意對象。'
+        },
+        quiz: [
+            {
+                id: 'n5_q_mashouka_1',
+                type: 'inline_quiz',
+                grammarPoint: 'ましょうか',
+                sentence: '暑いですね。エアコンを（　）。',
+                options: ['つけましょうか', 'つけますか', 'つけてください', 'つけたいです'],
+                correctIndex: 0,
+                explanation: '主動提議「要我開冷氣嗎？」。'
+            },
+            {
+                id: 'n5_q_mashouka_2',
+                type: 'inline_quiz',
+                grammarPoint: 'ましょうか',
+                sentence: '写真{しゃしん}を（　）。',
+                options: ['撮りましょうか', '撮りますか', '撮ってください', '撮っています'],
+                correctIndex: 0,
+                explanation: '看到別人在拍照，主動幫忙「要我幫你們拍嗎？」。'
+            },
+            {
+                id: 'n5_q_mashouka_3',
+                type: 'inline_quiz',
+                grammarPoint: 'ましょうか',
+                sentence: '明日、何時に（　）。',
+                options: ['来ましょうか', '来ますか', '来て', '来る'],
+                correctIndex: 0,
+                explanation: '商量約定的時間「要幾點來呢？」。'
+            },
+            {
+                id: 'n5_q_mashouka_4',
+                type: 'inline_quiz',
+                grammarPoint: 'ましょうか',
+                sentence: '「荷物が多いですね。（　）。」\n「ありがとうございます。」',
+                options: ['持ちましょうか', '持ちませんか', '持ってください', '持っています'],
+                correctIndex: 0,
+                explanation: '對話情境。主動幫忙拿行李。'
+            },
+            {
+                id: 'n5_q_mashouka_5',
+                type: 'inline_quiz',
+                grammarPoint: 'ましょうか',
+                sentence: '「駅まで（　）。」\n「いいえ、大丈夫です。歩いて行きますから。」',
+                options: ['送りましょうか', '送りますか', '送ってください', '送りたいです'],
+                correctIndex: 0,
+                explanation: '對話情境。提議「要我送你去嗎？」。對方婉拒。'
+            }
+        ]
+    },
+    'n5_mo': {
+        id: 'n5_mo',
+        pattern: 'も',
+        connection: '名詞 + も',
+        translation: '也; 都',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '並列（也）',
+                description: '表示與前面提到的事物具有相同的性質或狀態。',
+                examples: [
+                    { japanese: '私{わたし}は学生{がくせい}です。彼{かれ}も学生{がくせい}です。', chinese: '我是學生。他也是學生。' },
+                    { japanese: '日本{にほん}に行{い}きたいです。アメリカへも行{い}きたいです。', chinese: '我想去日本。也想去美國。（助詞「へ」「に」「で」後面可接「も」）' },
+                    {
+                        japanese: '「山田{やまだ}さんは来{き}ませんでしたね。」\n「ええ、田中{たなか}さんも来{き}ませんでした。」',
+                        chinese: '「山田先生沒來呢。」\n「是啊，田中先生也沒來。」',
+                        note: '對話情境'
+                    }
+                ]
+            },
+            {
+                usageId: 2,
+                title: '全面肯定或否定（都.../連...也不...）',
+                description: '疑問詞 + も + 肯定/否定。',
+                examples: [
+                    { japanese: '何{なに}も食{た}べたくないです。', chinese: '什麼都不想吃。' },
+                    { japanese: '教室{きょうしつ}には誰{だれ}もいません。', chinese: '教室裡誰都沒有（沒半個人）。' },
+                    { japanese: 'どこへも行{い}きませんでした。', chinese: '哪裡都沒去。' }
+                ]
+            }
+        ],
+        tips: {
+            title: '助詞重疊規則',
+            items: [
+                {
+                    mistake: '取代 vs 共存',
+                    explanation: '「も」會取代「は」「が」「を」。但會接在「に」「で」「へ」「から」「まで」的後面。',
+                    whenToUse: '使用「も」時要注意前面的助詞。',
+                    correct: { sentence: '日本へも行きます。', note: '○ へ + も' },
+                    incorrect: { sentence: '日本もへ行きます。', note: '✕ 順序錯誤' },
+                    additionalExamples: [
+                        { context: '取代「を」', correct: { sentence: '水も飲みます。', note: '○ 原本是「水を」，被取代' } }
+                    ]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n5_q_mo_1',
+                type: 'inline_quiz',
+                grammarPoint: 'も',
+                sentence: '兄は会社員です。姉（　）会社員です。',
+                options: ['は', 'が', 'も', 'の'],
+                correctIndex: 2,
+                explanation: 'A是X，B「也」是X。'
+            },
+            {
+                id: 'n5_q_mo_2',
+                type: 'inline_quiz',
+                grammarPoint: 'も',
+                sentence: '日曜日、どこ（　）行きませんでした。',
+                options: ['へも', 'でも', 'にも', 'からも'],
+                correctIndex: 0,
+                explanation: '疑問詞 + 助詞 + も + 否定。移動動詞用「へ」或「に」。選項只有「へも」。'
+            },
+            {
+                id: 'n5_q_mo_3',
+                type: 'inline_quiz',
+                grammarPoint: 'も',
+                sentence: '昨日、スーパーへ行きました。デパート（　）行きました。',
+                options: ['へも', 'をも', 'もへ', 'でも'],
+                correctIndex: 0,
+                explanation: '去了超市，「也」去了百貨公司。「へ」+「も」。'
+            },
+            {
+                id: 'n5_q_mo_4',
+                type: 'inline_quiz',
+                grammarPoint: 'も',
+                sentence: '「何を買いましたか。」\n「何（　）買いませんでした。」',
+                options: ['も', 'か', 'は', 'が'],
+                correctIndex: 0,
+                explanation: '對話情境。「何も～ない」（什麼也沒...）。'
+            },
+            {
+                id: 'n5_q_mo_5',
+                type: 'inline_quiz',
+                grammarPoint: 'も',
+                sentence: '「会議には誰が来ますか。」\n「山田さんです。あ、田中さん（　）来ますよ。」',
+                options: ['も', 'は', 'が', 'を'],
+                correctIndex: 0,
+                explanation: '對話情境。追加資訊，「田中先生『也』會來」。'
+            }
+        ]
+    },
+    'n5_mou': {
+        id: 'n5_mou',
+        pattern: 'もう',
+        connection: 'もう + 動詞 / 數量詞',
+        translation: '已經; 再...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '已經（完了）',
+                description: '表示動作已經完成，情況已經改變。',
+                examples: [
+                    { japanese: 'もう昼{ひる}ご飯{はん}を食{た}べました。', chinese: '已經吃過午餐了。' },
+                    { japanese: 'もう１２時{じ}ですよ。', chinese: '已經12點了喔。' }
+                ]
+            },
+            {
+                usageId: 2,
+                title: '不再...（否定）',
+                description: '與否定形連用，表示情況改變，「不再...了」。',
+                examples: [
+                    { japanese: 'もう痛{いた}くありません。', chinese: '已經不痛了。' },
+                    { japanese: '彼{かれ}はもう来{き}ません。', chinese: '他不會再來了。' }
+                ]
+            },
+            {
+                usageId: 3,
+                title: '再...（追加）',
+                description: '接數量詞，表示「再多...」。這時重音通常有變化。',
+                examples: [
+                    { japanese: 'もう一杯{いっぱい}いかがですか。', chinese: '要不要再來一杯？' },
+                    { japanese: 'もう少{すこ}し待{ま}ってください。', chinese: '請再等一下。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n5_q_mou_1',
+                type: 'inline_quiz',
+                grammarPoint: 'もう',
+                sentence: '（　）宿題をしましたか。',
+                options: ['もう', 'まだ', 'いつ', 'たぶん'],
+                correctIndex: 0,
+                explanation: '詢問「已經」做完了嗎。'
+            },
+            {
+                id: 'n5_q_mou_2',
+                type: 'inline_quiz',
+                grammarPoint: 'もう',
+                sentence: '（　）少し安{やす}くなりませんか。',
+                options: ['もう', 'まだ', 'まで', 'よく'],
+                correctIndex: 0,
+                explanation: '「再」便宜一點。「もう少し」（再一點）。'
+            },
+            {
+                id: 'n5_q_mou_3',
+                type: 'inline_quiz',
+                grammarPoint: 'もう',
+                sentence: 'お金は（　）ありません。',
+                options: ['もう', 'まだ', 'いつも', 'とても'],
+                correctIndex: 0,
+                explanation: '搭配否定，「已經」沒有了（不再有了）。'
+            },
+            {
+                id: 'n5_q_mou_4',
+                type: 'inline_quiz',
+                grammarPoint: 'もう',
+                sentence: '「荷物は（　）届きましたか。」\n「はい、届きました。」',
+                options: ['もう', 'まだ', 'よく', 'だいたい'],
+                correctIndex: 0,
+                explanation: '對話情境。「已經」送到了嗎？'
+            },
+            {
+                id: 'n5_q_mou_5',
+                type: 'inline_quiz',
+                grammarPoint: 'もう',
+                sentence: '「お腹がすきましたね。」\n「えっ、（　）食べましたよ。」',
+                options: ['もう', 'まだ', 'すぐ', 'よく'],
+                correctIndex: 0,
+                explanation: '對話情境。驚訝語氣，「（明明）已經吃過了喔」。'
+            }
+        ]
+    },
+    'n5_na_adjectives': {
+        id: 'n5_na_adjectives',
+        pattern: 'な形容詞（なけいようし）',
+        connection: 'な形容詞 + な + 名詞',
+        translation: 'Na形容詞規則',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '修飾名詞',
+                description: 'Na形容詞修飾名詞時，必須在詞幹和名詞之間加「な」。',
+                examples: [
+                    { japanese: '静{しず}かな部屋{へや}。', chinese: '安靜的房間。' },
+                    { japanese: '綺麗{きれい}な花{はな}。', chinese: '漂亮的花。' },
+                    {
+                        japanese: '「京都{きょうと}はどんな町{まち}ですか。」\n「賑{にぎ}やかな町{まち}です。」',
+                        chinese: '「京都無論是什麼樣的城市？」\n「是個熱鬧的城市。」',
+                        note: '對話情境'
+                    }
+                ]
+            },
+            {
+                usageId: 2,
+                title: '謂語用法（是...的）',
+                description: '放在句尾當謂語時，不管是肯定、否定或過去式，變化方式跟名詞一樣（不加な）。',
+                examples: [
+                    { japanese: 'この町{まち}は賑{にぎ}やかです。', chinese: '這座城鎮很熱鬧。' },
+                    { japanese: '日本語{にほんご}が上手{じょうず}ではありません。', chinese: '日文不擅長。' },
+                    { japanese: '昨日{きのう}は暇{ひま}でした。', chinese: '昨天很閒。' }
+                ]
+            },
+            {
+                usageId: 3,
+                title: '時態變化表',
+                description: '肯定：です\n否定：ではありません\n過去：でした\n過去否定：ではありませんでした',
+                examples: [
+                    { japanese: '昨日{きのう}は元気{げんき}でした。', chinese: '昨天很有精神。' }
+                ]
+            }
+        ],
+        tips: {
+            title: '易混淆點',
+            items: [
+                {
+                    mistake: '「きれい」的誤判',
+                    explanation: '「きれい（綺麗）」和「きらい（嫌い）」結尾是「い」，但它們是Na形容詞，不是I形容詞。',
+                    whenToUse: '修飾名詞時要加「な」。',
+                    correct: { sentence: 'きれいな部屋', note: '○ Na形容詞 + な' },
+                    incorrect: { sentence: 'きれい部屋', note: '✕ 漏掉な' },
+                    additionalExamples: [
+                        { context: '否定形', correct: { sentence: 'きれいじゃありません', note: '○' }, incorrect: { sentence: 'きれくないです', note: '✕ i形容詞的變化方式（錯誤）' } }
+                    ]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n5_q_na_adj_1',
+                type: 'inline_quiz',
+                grammarPoint: 'な形容詞',
+                sentence: '田中さんは（　）人です。',
+                options: ['親切な', '親切', '親切の', '親切だ'],
+                correctIndex: 0,
+                explanation: 'Na形容詞修飾名詞要加「な」。'
+            },
+            {
+                id: 'n5_q_na_adj_2',
+                type: 'inline_quiz',
+                grammarPoint: 'な形容詞',
+                sentence: 'この図書館は（　）です。',
+                options: ['静か', '静かな', '静くだ', '静くに'],
+                correctIndex: 0,
+                explanation: '結尾時直接加「です」（不加な）。'
+            },
+            {
+                id: 'n5_q_na_adj_3',
+                type: 'inline_quiz',
+                grammarPoint: 'な形容詞',
+                sentence: '昨日は（　）です。',
+                options: ['暇でした', '暇でした', '暇かったです', '暇なでした'],
+                correctIndex: 0,
+                explanation: '過去式。「暇でした」。'
+            },
+            {
+                id: 'n5_q_na_adj_4',
+                type: 'inline_quiz',
+                grammarPoint: 'な形容詞',
+                sentence: '「日本の生活はどうですか。」\n「毎日（　）です。」',
+                options: ['大変', '大変な', '大変の', '大変だ'],
+                correctIndex: 0,
+                explanation: '對話情境。結尾回答，「很辛苦」。「大変です」。'
+            },
+            {
+                id: 'n5_q_na_adj_5',
+                type: 'inline_quiz',
+                grammarPoint: 'な形容詞',
+                sentence: '「どんな映画が好きですか。」\n「（　）映画が好きです。」',
+                options: ['有名な', '有名', '有名の', '有名だ'],
+                correctIndex: 0,
+                explanation: '對話情境。修飾名詞電影，「有名的電影」。'
+            }
+        ]
+    }
+});
