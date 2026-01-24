@@ -3,12 +3,15 @@
  * Admin Service
  */
 
-import { doc, getDoc, setDoc, collection, getDocs } from 'firebase/firestore'
+import { doc, getDoc, setDoc, collection, getDocs, arrayUnion, arrayRemove } from 'firebase/firestore'
 import { db } from '../config/firebase'
 import { EXP_REWARDS } from '../types/progression'
 
-// 管理員清單
-export const ADMIN_EMAILS = ['vecear@gmail.com']
+// 預設管理員（作為後備，確保至少有一個管理員）
+const DEFAULT_ADMIN_EMAIL = 'vecear@gmail.com'
+
+// 管理員列表快取
+let adminEmailsCache: string[] | null = null
 
 // 遊戲配置類型
 export interface GameConfig {
@@ -49,11 +52,132 @@ export const DEFAULT_GAME_CONFIG: GameConfig = {
 }
 
 /**
- * 檢查是否為管理員
+ * 取得管理員列表
+ */
+export const getAdminList = async (): Promise<string[]> => {
+  // 如果有快取，直接返回
+  if (adminEmailsCache !== null) {
+    return adminEmailsCache
+  }
+
+  try {
+    const adminRef = doc(db, 'config', 'admins')
+    const adminSnap = await getDoc(adminRef)
+
+    if (adminSnap.exists()) {
+      const data = adminSnap.data()
+      const emails = (data.emails || []).map((e: string) => e.toLowerCase())
+      adminEmailsCache = emails
+      return emails
+    }
+
+    // 如果不存在，建立預設管理員配置
+    const defaultEmails = [DEFAULT_ADMIN_EMAIL]
+    await setDoc(adminRef, {
+      emails: defaultEmails,
+      updatedAt: new Date(),
+    })
+    adminEmailsCache = defaultEmails
+    return defaultEmails
+  } catch (error) {
+    console.error('Error getting admin list:', error)
+    // 發生錯誤時返回預設管理員
+    return [DEFAULT_ADMIN_EMAIL]
+  }
+}
+
+/**
+ * 清除管理員列表快取（用於更新後刷新）
+ */
+export const clearAdminCache = (): void => {
+  adminEmailsCache = null
+}
+
+/**
+ * 檢查是否為管理員（同步版本，使用快取）
  */
 export const isAdmin = (email: string | null | undefined): boolean => {
   if (!email) return false
-  return ADMIN_EMAILS.includes(email.toLowerCase())
+  // 如果快取存在，使用快取
+  if (adminEmailsCache !== null) {
+    return adminEmailsCache.includes(email.toLowerCase())
+  }
+  // 快取不存在時，檢查是否為預設管理員
+  return email.toLowerCase() === DEFAULT_ADMIN_EMAIL
+}
+
+/**
+ * 檢查是否為管理員（非同步版本，確保從資料庫讀取）
+ */
+export const isAdminAsync = async (email: string | null | undefined): Promise<boolean> => {
+  if (!email) return false
+  const admins = await getAdminList()
+  return admins.includes(email.toLowerCase())
+}
+
+/**
+ * 新增管理員
+ */
+export const addAdmin = async (
+  newAdminEmail: string,
+  currentAdminEmail: string
+): Promise<void> => {
+  const isCurrentAdmin = await isAdminAsync(currentAdminEmail)
+  if (!isCurrentAdmin) {
+    throw new Error('Unauthorized: Only admins can add new admins')
+  }
+
+  const adminRef = doc(db, 'config', 'admins')
+  const admins = await getAdminList()
+  const normalizedEmail = newAdminEmail.toLowerCase().trim()
+
+  if (admins.includes(normalizedEmail)) {
+    throw new Error('This email is already an admin')
+  }
+
+  await setDoc(adminRef, {
+    emails: arrayUnion(normalizedEmail),
+    updatedAt: new Date(),
+    updatedBy: currentAdminEmail,
+  }, { merge: true })
+
+  // 清除快取
+  clearAdminCache()
+}
+
+/**
+ * 移除管理員
+ */
+export const removeAdmin = async (
+  targetEmail: string,
+  currentAdminEmail: string
+): Promise<void> => {
+  const isCurrentAdmin = await isAdminAsync(currentAdminEmail)
+  if (!isCurrentAdmin) {
+    throw new Error('Unauthorized: Only admins can remove admins')
+  }
+
+  const normalizedTarget = targetEmail.toLowerCase().trim()
+
+  // 不能移除預設管理員
+  if (normalizedTarget === DEFAULT_ADMIN_EMAIL) {
+    throw new Error('Cannot remove the default admin')
+  }
+
+  // 不能移除自己
+  if (normalizedTarget === currentAdminEmail.toLowerCase()) {
+    throw new Error('Cannot remove yourself')
+  }
+
+  const adminRef = doc(db, 'config', 'admins')
+  await setDoc(adminRef, {
+    emails: arrayRemove(normalizedTarget),
+    updatedAt: new Date(),
+    updatedBy: currentAdminEmail,
+  }, { merge: true })
+
+  // 清除快取
+  clearAdminCache()
 }
 
 /**

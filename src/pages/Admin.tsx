@@ -8,6 +8,9 @@ import {
   updateGameConfig,
   getAllUsersStats,
   getUsersList,
+  getAdminList,
+  addAdmin,
+  removeAdmin,
   GameConfig,
 } from '../services/adminService'
 import { getJobById, JOBS } from '../data/jobs'
@@ -20,6 +23,9 @@ import {
   AlertCircle,
   CheckCircle,
   Shield,
+  UserPlus,
+  Trash2,
+  Crown,
 } from 'lucide-react'
 
 const Admin = () => {
@@ -27,7 +33,7 @@ const Admin = () => {
   const navigate = useNavigate()
   const { currentUser } = useAuth()
 
-  const [activeTab, setActiveTab] = useState<'config' | 'users' | 'stats'>('config')
+  const [activeTab, setActiveTab] = useState<'config' | 'users' | 'stats' | 'admins'>('config')
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
@@ -52,6 +58,11 @@ const Admin = () => {
     createdAt: Date
   }>>([])
 
+  // 管理員列表
+  const [admins, setAdmins] = useState<string[]>([])
+  const [newAdminEmail, setNewAdminEmail] = useState('')
+  const [adminActionLoading, setAdminActionLoading] = useState(false)
+
   // 檢查管理員權限
   useEffect(() => {
     if (!currentUser || !isAdmin(currentUser.email)) {
@@ -64,14 +75,16 @@ const Admin = () => {
     const loadData = async () => {
       setLoading(true)
       try {
-        const [gameConfig, usersStats, usersList] = await Promise.all([
+        const [gameConfig, usersStats, usersList, adminList] = await Promise.all([
           getGameConfig(),
           getAllUsersStats(),
           getUsersList(100),
+          getAdminList(),
         ])
         setConfig(gameConfig)
         setStats(usersStats)
         setUsers(usersList)
+        setAdmins(adminList)
       } catch (error) {
         console.error('Error loading admin data:', error)
         setStatus({ type: 'error', message: t('admin.loadError', '載入資料失敗') })
@@ -106,19 +119,76 @@ const Admin = () => {
   const handleRefresh = async () => {
     setLoading(true)
     try {
-      const [gameConfig, usersStats, usersList] = await Promise.all([
+      const [gameConfig, usersStats, usersList, adminList] = await Promise.all([
         getGameConfig(),
         getAllUsersStats(),
         getUsersList(100),
+        getAdminList(),
       ])
       setConfig(gameConfig)
       setStats(usersStats)
       setUsers(usersList)
+      setAdmins(adminList)
       setStatus({ type: 'success', message: t('admin.refreshSuccess', '重新載入成功') })
     } catch (error) {
       setStatus({ type: 'error', message: t('admin.loadError', '載入資料失敗') })
     }
     setLoading(false)
+  }
+
+  // 新增管理員
+  const handleAddAdmin = async () => {
+    if (!newAdminEmail.trim() || !currentUser?.email) return
+
+    // 驗證 email 格式
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(newAdminEmail)) {
+      setStatus({ type: 'error', message: t('admin.admins.invalidEmail', '請輸入有效的電子郵件') })
+      return
+    }
+
+    setAdminActionLoading(true)
+    setStatus(null)
+
+    try {
+      await addAdmin(newAdminEmail, currentUser.email)
+      const updatedAdmins = await getAdminList()
+      setAdmins(updatedAdmins)
+      setNewAdminEmail('')
+      setStatus({ type: 'success', message: t('admin.admins.addSuccess', '管理員新增成功') })
+    } catch (error) {
+      console.error('Error adding admin:', error)
+      const errorMessage = error instanceof Error ? error.message : '新增失敗'
+      setStatus({ type: 'error', message: errorMessage })
+    }
+
+    setAdminActionLoading(false)
+  }
+
+  // 移除管理員
+  const handleRemoveAdmin = async (targetEmail: string) => {
+    if (!currentUser?.email) return
+
+    const confirmed = window.confirm(
+      t('admin.admins.confirmRemove', '確定要移除 {{email}} 的管理員權限嗎？').replace('{{email}}', targetEmail)
+    )
+    if (!confirmed) return
+
+    setAdminActionLoading(true)
+    setStatus(null)
+
+    try {
+      await removeAdmin(targetEmail, currentUser.email)
+      const updatedAdmins = await getAdminList()
+      setAdmins(updatedAdmins)
+      setStatus({ type: 'success', message: t('admin.admins.removeSuccess', '管理員已移除') })
+    } catch (error) {
+      console.error('Error removing admin:', error)
+      const errorMessage = error instanceof Error ? error.message : '移除失敗'
+      setStatus({ type: 'error', message: errorMessage })
+    }
+
+    setAdminActionLoading(false)
   }
 
   if (!currentUser || !isAdmin(currentUser.email)) {
@@ -199,6 +269,17 @@ const Admin = () => {
           >
             <BarChart3 size={18} />
             {t('admin.tabs.stats', '統計資料')}
+          </button>
+          <button
+            onClick={() => setActiveTab('admins')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
+              activeTab === 'admins'
+                ? 'bg-sakura-pink text-white'
+                : 'bg-white/10 text-white/60 hover:bg-white/20'
+            }`}
+          >
+            <Crown size={18} />
+            {t('admin.tabs.admins', '管理員')}
           </button>
         </div>
 
@@ -549,6 +630,114 @@ const Admin = () => {
                       <div className="text-2xl font-bold text-white">
                         {stats.jobDistribution['none'] || 0}
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* 管理員管理 */}
+            {activeTab === 'admins' && (
+              <div className="card">
+                <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
+                  <Crown size={24} className="text-sakura-pink" />
+                  {t('admin.admins.title', '管理員管理')}
+                </h2>
+
+                {/* 新增管理員 */}
+                <div className="mb-8">
+                  <h3 className="text-lg font-semibold mb-4 text-electric-cyan">
+                    {t('admin.admins.add', '新增管理員')}
+                  </h3>
+                  <div className="flex gap-3">
+                    <input
+                      type="email"
+                      value={newAdminEmail}
+                      onChange={(e) => setNewAdminEmail(e.target.value)}
+                      placeholder={t('admin.admins.emailPlaceholder', '輸入電子郵件地址')}
+                      className="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter') {
+                          handleAddAdmin()
+                        }
+                      }}
+                    />
+                    <button
+                      onClick={handleAddAdmin}
+                      disabled={adminActionLoading || !newAdminEmail.trim()}
+                      className="btn-primary flex items-center gap-2"
+                    >
+                      <UserPlus size={18} />
+                      {t('admin.admins.addButton', '新增')}
+                    </button>
+                  </div>
+                  <p className="text-sm text-white/40 mt-2">
+                    {t('admin.admins.addHint', '新增的管理員將擁有完整的後台管理權限')}
+                  </p>
+                </div>
+
+                {/* 管理員列表 */}
+                <div>
+                  <h3 className="text-lg font-semibold mb-4 text-electric-cyan">
+                    {t('admin.admins.list', '目前管理員')}
+                    <span className="text-sm font-normal text-white/60 ml-2">({admins.length})</span>
+                  </h3>
+                  <div className="space-y-2">
+                    {admins.map((email) => {
+                      const isCurrentUser = email === currentUser?.email?.toLowerCase()
+                      const isDefaultAdmin = email === 'vecear@gmail.com'
+                      return (
+                        <div
+                          key={email}
+                          className="flex items-center justify-between p-4 glass rounded-xl"
+                        >
+                          <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-sakura-pink to-electric-cyan flex items-center justify-center">
+                              <Shield size={20} className="text-white" />
+                            </div>
+                            <div>
+                              <div className="font-medium flex items-center gap-2">
+                                {email}
+                                {isDefaultAdmin && (
+                                  <span className="text-xs px-2 py-0.5 bg-sakura-pink/20 text-sakura-pink rounded-full">
+                                    {t('admin.admins.primary', '主要')}
+                                  </span>
+                                )}
+                                {isCurrentUser && (
+                                  <span className="text-xs px-2 py-0.5 bg-electric-cyan/20 text-electric-cyan rounded-full">
+                                    {t('admin.admins.you', '你')}
+                                  </span>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                          {!isDefaultAdmin && !isCurrentUser && (
+                            <button
+                              onClick={() => handleRemoveAdmin(email)}
+                              disabled={adminActionLoading}
+                              className="p-2 text-red-400 hover:bg-red-500/10 rounded-lg transition-colors"
+                              title={t('admin.admins.remove', '移除管理員')}
+                            >
+                              <Trash2 size={18} />
+                            </button>
+                          )}
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+
+                {/* 注意事項 */}
+                <div className="mt-6 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-xl">
+                  <div className="flex items-start gap-3">
+                    <AlertCircle size={20} className="text-yellow-500 flex-shrink-0 mt-0.5" />
+                    <div className="text-sm text-yellow-500/80">
+                      <p className="font-medium mb-1">{t('admin.admins.notice', '注意事項')}</p>
+                      <ul className="list-disc list-inside space-y-1 text-yellow-500/60">
+                        <li>{t('admin.admins.notice1', '主要管理員無法被移除')}</li>
+                        <li>{t('admin.admins.notice2', '無法移除自己的管理員權限')}</li>
+                        <li>{t('admin.admins.notice3', '新管理員將立即獲得完整權限')}</li>
+                      </ul>
                     </div>
                   </div>
                 </div>

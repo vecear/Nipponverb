@@ -1,10 +1,18 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // 管理員列表
-    function isAdmin() {
+    // 預設管理員（確保至少有一個管理員）
+    function isDefaultAdmin() {
       return request.auth != null &&
-             request.auth.token.email in ['vecear@gmail.com'];
+             request.auth.token.email == 'vecear@gmail.com';
+    }
+
+    // 動態管理員檢查（從 config/admins 讀取）
+    function isAdmin() {
+      return request.auth != null && (
+        isDefaultAdmin() ||
+        request.auth.token.email in get(/databases/$(database)/documents/config/admins).data.emails
+      );
     }
 
     // 確認是否為已登入使用者
@@ -25,7 +33,9 @@ service cloud.firestore {
 
     // 遊戲配置 - 所有登入使用者可讀，只有管理員可寫
     match /config/{configId} {
+      // admins 配置需要特殊處理
       allow read: if isAuthenticated();
+      // 只有管理員可以修改配置
       allow write: if isAdmin();
     }
 

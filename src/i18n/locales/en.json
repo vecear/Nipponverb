@@ -15,7 +15,8 @@
     "simulation": "Simulation",
     "stages": "Stages",
     "profile": "Profile",
-    "logout": "Logout"
+    "logout": "Logout",
+    "admin": "Admin"
   },
   "auth": {
     "signIn": "Sign In",
@@ -318,7 +319,8 @@
     "tabs": {
       "config": "Game Config",
       "users": "User Management",
-      "stats": "Statistics"
+      "stats": "Statistics",
+      "admins": "Admins"
     },
     "config": {
       "title": "Game Configuration",
@@ -359,6 +361,25 @@
       "levelDistribution": "Level Distribution",
       "highestLevel": "Highest Level",
       "noData": "No data available"
+    },
+    "admins": {
+      "title": "Admin Management",
+      "add": "Add Admin",
+      "addButton": "Add",
+      "addHint": "New admins will have full access to the admin panel",
+      "addSuccess": "Admin added successfully",
+      "list": "Current Admins",
+      "primary": "Primary",
+      "you": "You",
+      "remove": "Remove Admin",
+      "removeSuccess": "Admin removed successfully",
+      "confirmRemove": "Are you sure you want to remove {{email}} as an admin?",
+      "emailPlaceholder": "Enter email address",
+      "invalidEmail": "Please enter a valid email address",
+      "notice": "Important Notes",
+      "notice1": "The primary admin cannot be removed",
+      "notice2": "You cannot remove yourself",
+      "notice3": "New admins will have immediate full access"
     }
   }
 }

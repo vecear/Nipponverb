@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useTranslation } from 'react-i18next'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Shield } from 'lucide-react'
 import LanguageSwitcher from './LanguageSwitcher'
 import { useUserStore } from '../store/useUserStore'
+import { isAdmin, getAdminList } from '../services/adminService'
 
 const Navbar = () => {
   const { currentUser, logout } = useAuth()
@@ -12,6 +13,19 @@ const Navbar = () => {
   const navigate = useNavigate()
   const { t } = useTranslation()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isUserAdmin, setIsUserAdmin] = useState(false)
+
+  // 檢查是否為管理員
+  useEffect(() => {
+    const checkAdmin = async () => {
+      if (currentUser?.email) {
+        // 先載入管理員列表以填充快取
+        await getAdminList()
+        setIsUserAdmin(isAdmin(currentUser.email))
+      }
+    }
+    checkAdmin()
+  }, [currentUser?.email])
 
   const handleLogout = async () => {
     try {
@@ -74,6 +88,17 @@ const Navbar = () => {
               )}
             </Link>
 
+            {/* 管理員後台連結 */}
+            {isUserAdmin && (
+              <Link
+                to="/admin"
+                className="hidden md:flex items-center gap-1 text-sakura-pink hover:text-sakura-pink/80 transition-colors"
+                title={t('nav.admin', '後台管理')}
+              >
+                <Shield size={20} />
+              </Link>
+            )}
+
             <button
               onClick={handleLogout}
               className="hidden md:block btn-secondary text-sm px-4 py-2"
@@ -109,6 +134,17 @@ const Navbar = () => {
             ))}
 
             <div className="pt-4 border-t border-white/10 flex flex-col space-y-4">
+              {/* 手機版管理員連結 */}
+              {isUserAdmin && (
+                <Link
+                  to="/admin"
+                  className="flex items-center gap-2 text-lg font-medium text-sakura-pink px-4 py-2 hover:bg-white/5 rounded-lg transition-all"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Shield size={20} />
+                  {t('nav.admin', '後台管理')}
+                </Link>
+              )}
               <div className="px-4">
                 <LanguageSwitcher />
               </div>
