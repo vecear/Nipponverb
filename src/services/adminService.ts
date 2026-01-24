@@ -72,21 +72,18 @@ export const getAdminList = async (): Promise<string[]> => {
         emails.push(DEFAULT_ADMIN_EMAIL)
       }
       adminEmailsCache = emails
-      console.log('Admin list from Firestore:', emails)
       return emails
     }
 
     // 如果不存在，建立預設管理員配置
-    console.log('Admin config not found, creating default...')
     const defaultEmails = [DEFAULT_ADMIN_EMAIL]
     try {
       await setDoc(adminRef, {
         emails: defaultEmails,
         updatedAt: new Date(),
       })
-      console.log('Default admin config created')
     } catch (writeError) {
-      console.warn('Could not create admin config (might be permissions):', writeError)
+      // 寫入失敗時靜默處理（可能是權限問題）
     }
     adminEmailsCache = defaultEmails
     return defaultEmails

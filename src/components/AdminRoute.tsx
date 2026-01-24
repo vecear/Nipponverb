@@ -22,14 +22,9 @@ const AdminRoute = ({ children }: AdminRouteProps) => {
       if (currentUser?.email) {
         try {
           // 先載入管理員列表以填充快取
-          const adminList = await getAdminList()
-          console.log('Admin list loaded:', adminList)
-          console.log('Current user email:', currentUser.email)
-          const isAdminResult = isAdmin(currentUser.email)
-          console.log('Is admin result:', isAdminResult)
-          setIsUserAdmin(isAdminResult)
+          await getAdminList()
+          setIsUserAdmin(isAdmin(currentUser.email))
         } catch (error) {
-          console.error('Error checking admin status:', error)
           // 發生錯誤時，檢查是否為預設管理員
           const isDefaultAdmin = currentUser.email.toLowerCase() === 'vecear@gmail.com'
           setIsUserAdmin(isDefaultAdmin)
