@@ -19,32 +19,33 @@ const AdminRoute = ({ children }: AdminRouteProps) => {
 
   useEffect(() => {
     const checkAdminStatus = async () => {
-      if (currentUser?.email) {
-        try {
-          // 先載入管理員列表以填充快取
-          await getAdminList()
-          setIsUserAdmin(isAdmin(currentUser.email))
-        } catch (error) {
-          // 發生錯誤時，檢查是否為預設管理員
-          const isDefaultAdmin = currentUser.email.toLowerCase() === 'vecear@gmail.com'
-          setIsUserAdmin(isDefaultAdmin)
+      if (!loading) {
+        if (currentUser?.email) {
+          try {
+            // 先載入管理員列表以填充快取
+            await getAdminList()
+            const adminStatus = isAdmin(currentUser.email)
+            setIsUserAdmin(adminStatus)
+          } catch (error) {
+            // 發生錯誤時，檢查是否為預設管理員
+            const isDefaultAdmin = currentUser.email.toLowerCase() === 'vecear@gmail.com'
+            setIsUserAdmin(isDefaultAdmin)
+          }
         }
+        setIsCheckingAdmin(false)
       }
-      setIsCheckingAdmin(false)
     }
 
-    if (!loading) {
-      checkAdminStatus()
-    }
-  }, [currentUser?.email, loading])
+    checkAdminStatus()
+  }, [currentUser, loading])
 
   // 載入中顯示載入畫面
   if (loading || isCheckingAdmin) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-stone-100">
+      <div className="min-h-screen flex items-center justify-center bg-slate-900">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-700 mx-auto"></div>
-          <p className="mt-4 text-stone-600">載入中...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-sakura-pink mx-auto"></div>
+          <p className="mt-4 text-white/60">載入中...</p>
         </div>
       </div>
     )
