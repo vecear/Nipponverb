@@ -6,7 +6,8 @@ import QuestionCard from '../components/QuestionCard'
 import FuriganaText from '../components/FuriganaText'
 import { usePracticeStore, PracticeHistoryEntry } from '../store/usePracticeStore'
 import { Question } from '../types'
-import { generateGojuonQuestion } from '../data/gojuon'
+import { generateGojuonQuestion, generateMatchingQuestion } from '../data/gojuon'
+import MatchingQuestionCard from '../components/MatchingQuestionCard'
 // import { generateVerbQuestion } from '../data/verbs' // Legacy dynamic generator
 import { generateGrammarQuestion } from '../data/grammar'
 import { generateKanjiQuestion } from '../data/kanji'
@@ -61,6 +62,7 @@ const Practice = () => {
   const [showResults, setShowResults] = useState(false)
   const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1'>('N5')
   const [selectedSubcategory, setSelectedSubcategory] = useState<GojuonSubcategory>('hiragana')
+  const [questionCount, setQuestionCount] = useState<number>(20)
   const [showCategorySelect, setShowCategorySelect] = useState(true)
   const [viewingHistory, setViewingHistory] = useState<PracticeHistoryEntry | null>(null)
   const [hasSavedResult, setHasSavedResult] = useState(false)
@@ -68,10 +70,11 @@ const Practice = () => {
   // Save practice result when showing results
   useEffect(() => {
     if (showResults && !hasSavedResult && answerRecords.length > 0 && category) {
-      savePracticeResult(category, selectedLevel)
+      const levelToSave = category === 'gojuon' ? selectedSubcategory : selectedLevel
+      savePracticeResult(category, levelToSave)
       setHasSavedResult(true)
     }
-  }, [showResults, hasSavedResult, answerRecords.length, category, selectedLevel, savePracticeResult])
+  }, [showResults, hasSavedResult, answerRecords.length, category, selectedLevel, selectedSubcategory, savePracticeResult])
 
   // Reset hasSavedResult when starting new practice
   useEffect(() => {
@@ -196,13 +199,23 @@ const Practice = () => {
     }
 
     // LEGACY LOGIC FOR OTHER CATEGORIES
-    for (let i = 0; i < count; i++) {
-      let q
+    const totalQuestions = count || 20 // Default to 20 now
+
+    for (let i = 0; i < totalQuestions; i++) {
+      let q: any
 
       switch (cat) {
-        case 'gojuon':
-          q = generateGojuonQuestion(selectedSubcategory, Math.random() > 0.5 ? 'char-to-romaji' : 'romaji-to-char')
+        case 'gojuon': {
+          // 30% chance for matching question, but ensure we have at least some MC
+          const isMatching = Math.random() < 0.3
+          if (isMatching) {
+            q = generateMatchingQuestion(selectedSubcategory)
+            q.correct = 'MATCHING_COMPLETED' // Magic string for validation
+          } else {
+            q = generateGojuonQuestion(selectedSubcategory, Math.random() > 0.5 ? 'char-to-romaji' : 'romaji-to-char')
+          }
           break
+        }
         // case 'verbs': merged above
         case 'grammar':
           q = generateGrammarQuestion(level)
@@ -225,7 +238,7 @@ const Practice = () => {
 
   const startPractice = () => {
     const cat = category as PracticeCategory
-    const newQuestions = generateQuestions(cat, selectedLevel, 10)
+    const newQuestions = generateQuestions(cat, selectedLevel, questionCount)
     setQuestions(newQuestions)
     setShowCategorySelect(false)
     setShowResults(false)
@@ -438,7 +451,7 @@ const Practice = () => {
                         {record.isCorrect ? '✓ 正確' : '✗ 錯誤'}
                       </span>
                       <p className="text-white/60 text-sm truncate max-w-[200px] md:max-w-md">
-                        <FuriganaText text={question.stem} />
+                        <FuriganaText text={question.stem || question.instruction || ''} />
                       </p>
                     </div>
                   </div>
@@ -449,7 +462,7 @@ const Practice = () => {
                   <div className="mt-4 pt-4 border-t border-white/10 space-y-4">
                     <div>
                       <p className="text-lg font-bold mb-1">
-                        <FuriganaText text={question.stem} />
+                        <FuriganaText text={question.stem || question.instruction || ''} />
                       </p>
                       {question.meaning && (
                         <p className="text-white/70 text-sm">
@@ -470,16 +483,22 @@ const Practice = () => {
                       ? 'bg-green-500/20 border border-green-500/50'
                       : 'bg-red-500/20 border border-red-500/50'
                       }`}>
-                      <p className="text-sm">
-                        <span className="text-white/60">你的答案：</span>
-                        <span className="font-bold">{record.selectedAnswer}</span>
-                        {!record.isCorrect && (
-                          <>
-                            <span className="text-white/60 mx-2">→</span>
-                            <span className="text-green-400 font-bold">正確答案：{question.correct}</span>
-                          </>
-                        )}
-                      </p>
+                      {question.type === 'matching' ? (
+                        <div className="text-center">
+                          <p className="text-sm font-bold text-green-400">マッチング完了！</p>
+                        </div>
+                      ) : (
+                        <p className="text-sm">
+                          <span className="text-white/60">你的答案：</span>
+                          <span className="font-bold">{record.selectedAnswer}</span>
+                          {!record.isCorrect && (
+                            <>
+                              <span className="text-white/60 mx-2">→</span>
+                              <span className="text-green-400 font-bold">正確答案：{question.correct}</span>
+                            </>
+                          )}
+                        </p>
+                      )}
                     </div>
 
                     {question.detailedExplanation && (
@@ -501,10 +520,10 @@ const Practice = () => {
                               <div
                                 key={idx}
                                 className={`p-2 rounded-lg ${isCorrectOption
-                                    ? 'bg-green-500/20 border border-green-500/50'
-                                    : isSelectedOption
-                                      ? 'bg-red-500/20 border border-red-500/50'
-                                      : 'bg-white/5 border border-white/10'
+                                  ? 'bg-green-500/20 border border-green-500/50'
+                                  : isSelectedOption
+                                    ? 'bg-red-500/20 border border-red-500/50'
+                                    : 'bg-white/5 border border-white/10'
                                   }`}
                               >
                                 <div className="flex items-start gap-2">
@@ -631,6 +650,24 @@ const Practice = () => {
           )}
 
           <div className="space-y-4">
+            <div className="mb-2">
+              <label className="block text-lg font-semibold mb-2">題目數量:</label>
+              <div className="flex flex-wrap gap-2">
+                {[10, 20, 30, 40, 50].map(count => (
+                  <button
+                    key={count}
+                    onClick={() => setQuestionCount(count)}
+                    className={`px-4 py-2 rounded-lg transition-all font-medium ${questionCount === count
+                        ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white shadow-lg'
+                        : 'glass hover:bg-white/10 text-white/70'
+                      }`}
+                  >
+                    {count}題
+                  </button>
+                ))}
+              </div>
+            </div>
+
             <button onClick={startPractice} className="btn-primary w-full text-lg py-4">
               {t('practice.startPractice')}
             </button>
@@ -644,8 +681,9 @@ const Practice = () => {
         </div>
 
         {/* Practice History Section */}
-        {category !== 'gojuon' && (() => {
-          const history = getHistoryByCategory(category || '', selectedLevel)
+        {(() => {
+          const historyLevel = category === 'gojuon' ? selectedSubcategory : selectedLevel
+          const history = getHistoryByCategory(category || '', historyLevel)
           const avgAccuracy = history.length > 0
             ? Math.round(history.reduce((sum, h) => sum + h.accuracy, 0) / history.length)
             : null
@@ -657,7 +695,7 @@ const Practice = () => {
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-lg font-bold flex items-center gap-2">
                   <History size={20} className="text-electric-cyan" />
-                  近期成績 ({selectedLevel})
+                  近期成績 ({category === 'gojuon' ? t(`practice.categories.gojuon.${selectedSubcategory}`) : selectedLevel})
                 </h2>
                 {avgAccuracy !== null && (
                   <div className="text-sm">
@@ -825,7 +863,7 @@ const Practice = () => {
                         {record.isCorrect ? '✓ 正確' : '✗ 錯誤'}
                       </span>
                       <p className="text-white/60 text-sm truncate max-w-[200px] md:max-w-md">
-                        <FuriganaText text={question.stem} />
+                        <FuriganaText text={question.stem || question.instruction || ''} />
                       </p>
                     </div>
                   </div>
@@ -838,7 +876,7 @@ const Practice = () => {
                     {/* Question Stem */}
                     <div>
                       <p className="text-lg font-bold mb-1">
-                        <FuriganaText text={question.stem} />
+                        <FuriganaText text={question.stem || question.instruction || ''} />
                       </p>
                       {question.meaning && (
                         <p className="text-white/70 text-sm">
@@ -860,16 +898,29 @@ const Practice = () => {
                       ? 'bg-green-500/20 border border-green-500/50'
                       : 'bg-red-500/20 border border-red-500/50'
                       }`}>
-                      <p className="text-sm">
-                        <span className="text-white/60">你的答案：</span>
-                        <span className="font-bold">{record.selectedAnswer}</span>
-                        {!record.isCorrect && (
-                          <>
-                            <span className="text-white/60 mx-2">→</span>
-                            <span className="text-green-400 font-bold">正確答案：{question.correct}</span>
-                          </>
-                        )}
-                      </p>
+                      {question.type === 'matching' ? (
+                        <div className="text-center">
+                          <p className="text-lg font-bold text-green-400 mb-2">マッチング完了！ 🎉</p>
+                          <div className="grid grid-cols-2 gap-2 text-sm">
+                            {question.pairs?.map((p, idx) => (
+                              <div key={idx} className="bg-white/10 p-2 rounded">
+                                {p.char} = {p.romaji}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ) : (
+                        <p className="text-sm">
+                          <span className="text-white/60">你的答案：</span>
+                          <span className="font-bold">{record.selectedAnswer}</span>
+                          {!record.isCorrect && (
+                            <>
+                              <span className="text-white/60 mx-2">→</span>
+                              <span className="text-green-400 font-bold">正確答案：{question.correct}</span>
+                            </>
+                          )}
+                        </p>
+                      )}
                     </div>
 
                     {/* Detailed Explanation */}
@@ -894,10 +945,10 @@ const Practice = () => {
                               <div
                                 key={idx}
                                 className={`p-2 rounded-lg ${isCorrectOption
-                                    ? 'bg-green-500/20 border border-green-500/50'
-                                    : isSelectedOption
-                                      ? 'bg-red-500/20 border border-red-500/50'
-                                      : 'bg-white/5 border border-white/10'
+                                  ? 'bg-green-500/20 border border-green-500/50'
+                                  : isSelectedOption
+                                    ? 'bg-red-500/20 border border-red-500/50'
+                                    : 'bg-white/5 border border-white/10'
                                   }`}
                               >
                                 <div className="flex items-start gap-2">
@@ -973,11 +1024,19 @@ const Practice = () => {
       </div>
 
       {currentQuestion && (
-        <QuestionCard
-          key={currentQuestion.id}
-          question={currentQuestion}
-          onAnswer={handleAnswer}
-        />
+        currentQuestion.type === 'matching' ? (
+          <MatchingQuestionCard
+            key={currentQuestion.id}
+            question={currentQuestion}
+            onAnswer={handleAnswer}
+          />
+        ) : (
+          <QuestionCard
+            key={currentQuestion.id}
+            question={currentQuestion}
+            onAnswer={handleAnswer}
+          />
+        )
       )}
     </div>
   )

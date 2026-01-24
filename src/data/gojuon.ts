@@ -65,6 +65,53 @@ export const hiraganaData = [
     { char: 'わ', romaji: 'wa', row: 'wa' },
     { char: 'を', romaji: 'wo', row: 'wa' },
     { char: 'ん', romaji: 'n', row: 'wa' },
+
+    // 濁音 (Dakuten)
+    { char: 'が', romaji: 'ga', row: 'ga' },
+    { char: 'ぎ', romaji: 'gi', row: 'ga' },
+    { char: 'ぐ', romaji: 'gu', row: 'ga' },
+    { char: 'げ', romaji: 'ge', row: 'ga' },
+    { char: 'ご', romaji: 'go', row: 'ga' },
+
+    { char: 'ざ', romaji: 'za', row: 'za' },
+    { char: 'じ', romaji: 'ji', row: 'za' },
+    { char: 'ず', romaji: 'zu', row: 'za' },
+    { char: 'ぜ', romaji: 'ze', row: 'za' },
+    { char: 'ぞ', romaji: 'zo', row: 'za' },
+
+    { char: 'だ', romaji: 'da', row: 'da' },
+    { char: 'ぢ', romaji: 'ji', row: 'da' },
+    { char: 'づ', romaji: 'zu', row: 'da' },
+    { char: 'で', romaji: 'de', row: 'da' },
+    { char: 'ど', romaji: 'do', row: 'da' },
+
+    { char: 'ば', romaji: 'ba', row: 'ba' },
+    { char: 'び', romaji: 'bi', row: 'ba' },
+    { char: 'ぶ', romaji: 'bu', row: 'ba' },
+    { char: 'べ', romaji: 'be', row: 'ba' },
+    { char: 'ぼ', romaji: 'bo', row: 'ba' },
+
+    // 半濁音 (Handakuten)
+    { char: 'ぱ', romaji: 'pa', row: 'pa' },
+    { char: 'ぴ', romaji: 'pi', row: 'pa' },
+    { char: 'ぷ', romaji: 'pu', row: 'pa' },
+    { char: 'ぺ', romaji: 'pe', row: 'pa' },
+    { char: 'ぽ', romaji: 'po', row: 'pa' },
+
+    // 拗音 (Youon - Standard)
+    { char: 'きゃ', romaji: 'kya', row: 'kya' }, { char: 'きゅ', romaji: 'kyu', row: 'kya' }, { char: 'きょ', romaji: 'kyo', row: 'kya' },
+    { char: 'しゃ', romaji: 'sha', row: 'sha' }, { char: 'しゅ', romaji: 'shu', row: 'sha' }, { char: 'しょ', romaji: 'sho', row: 'sha' },
+    { char: 'ちゃ', romaji: 'cha', row: 'cha' }, { char: 'ちゅ', romaji: 'chu', row: 'cha' }, { char: 'ちょ', romaji: 'cho', row: 'cha' },
+    { char: 'にゃ', romaji: 'nya', row: 'nya' }, { char: 'にゅ', romaji: 'nyu', row: 'nya' }, { char: 'にょ', romaji: 'nyo', row: 'nya' },
+    { char: 'ひゃ', romaji: 'hya', row: 'hya' }, { char: 'ひゅ', romaji: 'hyu', row: 'hya' }, { char: 'ひょ', romaji: 'hyo', row: 'hya' },
+    { char: 'みゃ', romaji: 'mya', row: 'mya' }, { char: 'みゅ', romaji: 'myu', row: 'mya' }, { char: 'みょ', romaji: 'myo', row: 'mya' },
+    { char: 'りゃ', romaji: 'rya', row: 'rya' }, { char: 'りゅ', romaji: 'ryu', row: 'rya' }, { char: 'りょ', romaji: 'ryo', row: 'rya' },
+
+    // 拗音 (Youon - Dakuten)
+    { char: 'ぎゃ', romaji: 'gya', row: 'gya' }, { char: 'ぎゅ', romaji: 'gyu', row: 'gya' }, { char: 'ぎょ', romaji: 'gyo', row: 'gya' },
+    { char: 'じゃ', romaji: 'ja', row: 'ja' }, { char: 'じゅ', romaji: 'ju', row: 'ja' }, { char: 'じょ', romaji: 'jo', row: 'ja' },
+    { char: 'びゃ', romaji: 'bya', row: 'bya' }, { char: 'びゅ', romaji: 'byu', row: 'bya' }, { char: 'びょ', romaji: 'byo', row: 'bya' },
+    { char: 'ぴゃ', romaji: 'pya', row: 'pya' }, { char: 'ぴゅ', romaji: 'pyu', row: 'pya' }, { char: 'ぴょ', romaji: 'pyo', row: 'pya' },
 ]
 
 export const katakanaData = [
@@ -133,7 +180,32 @@ export const katakanaData = [
     { char: 'ワ', romaji: 'wa', row: 'wa', hiragana: 'わ' },
     { char: 'ヲ', romaji: 'wo', row: 'wa', hiragana: 'を' },
     { char: 'ン', romaji: 'n', row: 'wa', hiragana: 'ん' },
+
+    // 濁音 (Dakuten)
+    { char: 'ガ', romaji: 'ga', row: 'ga', hiragana: 'が' }, { char: 'ギ', romaji: 'gi', row: 'ga', hiragana: 'ぎ' }, { char: 'グ', romaji: 'gu', row: 'ga', hiragana: 'ぐ' }, { char: 'ゲ', romaji: 'ge', row: 'ga', hiragana: 'げ' }, { char: 'ゴ', romaji: 'go', row: 'ga', hiragana: 'ご' },
+    { char: 'ザ', romaji: 'za', row: 'za', hiragana: 'ざ' }, { char: 'ジ', romaji: 'ji', row: 'za', hiragana: 'じ' }, { char: 'ズ', romaji: 'zu', row: 'za', hiragana: 'ず' }, { char: 'ゼ', romaji: 'ze', row: 'za', hiragana: 'ぜ' }, { char: 'ゾ', romaji: 'zo', row: 'za', hiragana: 'ぞ' },
+    { char: 'ダ', romaji: 'da', row: 'da', hiragana: 'だ' }, { char: 'ヂ', romaji: 'ji', row: 'da', hiragana: 'ぢ' }, { char: 'ヅ', romaji: 'zu', row: 'da', hiragana: 'づ' }, { char: 'デ', romaji: 'de', row: 'da', hiragana: 'で' }, { char: 'ド', romaji: 'do', row: 'da', hiragana: 'ど' },
+    { char: 'バ', romaji: 'ba', row: 'ba', hiragana: 'ば' }, { char: 'ビ', romaji: 'bi', row: 'ba', hiragana: 'び' }, { char: 'ブ', romaji: 'bu', row: 'ba', hiragana: 'ぶ' }, { char: 'ベ', romaji: 'be', row: 'ba', hiragana: 'べ' }, { char: 'ボ', romaji: 'bo', row: 'ba', hiragana: 'ぼ' },
+
+    // 半濁音 (Handakuten)
+    { char: 'パ', romaji: 'pa', row: 'pa', hiragana: 'ぱ' }, { char: 'ピ', romaji: 'pi', row: 'pa', hiragana: 'ぴ' }, { char: 'プ', romaji: 'pu', row: 'pa', hiragana: 'ぷ' }, { char: 'ペ', romaji: 'pe', row: 'pa', hiragana: 'ぺ' }, { char: 'ポ', romaji: 'po', row: 'pa', hiragana: 'ぽ' },
+
+    // 拗音 (Youon - Standard)
+    { char: 'キャ', romaji: 'kya', row: 'kya', hiragana: 'きゃ' }, { char: 'キュ', romaji: 'kyu', row: 'kya', hiragana: 'きゅ' }, { char: 'キョ', romaji: 'kyo', row: 'kya', hiragana: 'きょ' },
+    { char: 'シャ', romaji: 'sha', row: 'sha', hiragana: 'しゃ' }, { char: 'シュ', romaji: 'shu', row: 'sha', hiragana: 'しゅ' }, { char: 'ショ', romaji: 'sho', row: 'sha', hiragana: 'しょ' },
+    { char: 'チャ', romaji: 'cha', row: 'cha', hiragana: 'ちゃ' }, { char: 'チュ', romaji: 'chu', row: 'cha', hiragana: 'ちゅ' }, { char: 'チョ', romaji: 'cho', row: 'cha', hiragana: 'ちょ' },
+    { char: 'ニャ', romaji: 'nya', row: 'nya', hiragana: 'にゃ' }, { char: 'ニュ', romaji: 'nyu', row: 'nya', hiragana: 'にゅ' }, { char: 'ニョ', romaji: 'nyo', row: 'nya', hiragana: 'にょ' },
+    { char: 'ヒャ', romaji: 'hya', row: 'hya', hiragana: 'ひゃ' }, { char: 'ヒュ', romaji: 'hyu', row: 'hya', hiragana: 'ひゅ' }, { char: 'ヒョ', romaji: 'hyo', row: 'hya', hiragana: 'ひょ' },
+    { char: 'ミャ', romaji: 'mya', row: 'mya', hiragana: 'みゃ' }, { char: 'ミュ', romaji: 'myu', row: 'mya', hiragana: 'みゅ' }, { char: 'ミョ', romaji: 'myo', row: 'mya', hiragana: 'みょ' },
+    { char: 'リャ', romaji: 'rya', row: 'rya', hiragana: 'りゃ' }, { char: 'リュ', romaji: 'ryu', row: 'rya', hiragana: 'りゅ' }, { char: 'リョ', romaji: 'ryo', row: 'rya', hiragana: 'りょ' },
+
+    // 拗音 (Youon - Dakuten)
+    { char: 'ギャ', romaji: 'gya', row: 'gya', hiragana: 'ぎゃ' }, { char: 'ギュ', romaji: 'gyu', row: 'gya', hiragana: 'ぎゅ' }, { char: 'ギョ', romaji: 'gyo', row: 'gya', hiragana: 'ぎょ' },
+    { char: 'ジャ', romaji: 'ja', row: 'ja', hiragana: 'じゃ' }, { char: 'ジュ', romaji: 'ju', row: 'ja', hiragana: 'じゅ' }, { char: 'ジョ', romaji: 'jo', row: 'ja', hiragana: 'じょ' },
+    { char: 'ビャ', romaji: 'bya', row: 'bya', hiragana: 'びゃ' }, { char: 'ビュ', romaji: 'byu', row: 'bya', hiragana: 'びゅ' }, { char: 'ビョ', romaji: 'byo', row: 'bya', hiragana: 'びょ' },
+    { char: 'ピャ', romaji: 'pya', row: 'pya', hiragana: 'ぴゃ' }, { char: 'ピュ', romaji: 'pyu', row: 'pya', hiragana: 'ぴゅ' }, { char: 'ピョ', romaji: 'pyo', row: 'pya', hiragana: 'ぴょ' },
 ]
+
 
 // Generate tricky distractors for Gojuon practice
 export function generateGojuonQuestion(type: 'hiragana' | 'katakana', questionType: 'char-to-romaji' | 'romaji-to-char') {
@@ -162,5 +234,23 @@ export function generateGojuonQuestion(type: 'hiragana' | 'katakana', questionTy
             explanation: `「${target.romaji}」は「${target.char}」と書きます。`,
             level: 'N5' as const,
         }
+    }
+}
+
+// Generate a set of pairs for Matching / Connect games
+export function generateMatchingQuestion(type: 'hiragana' | 'katakana', pairCount: number = 5) {
+    const data = type === 'hiragana' ? hiraganaData : katakanaData
+    // Shuffle and slice
+    const selected = [...data].sort(() => Math.random() - 0.5).slice(0, pairCount)
+
+    return {
+        type: 'matching',
+        instruction: '正しい組み合わせを選んでください（正しいペアをマッチさせてください）。',
+        pairs: selected.map(item => ({
+            char: item.char,
+            romaji: item.romaji,
+            row: item.row // Helpful for grouping context if needed
+        })),
+        level: 'N5' as const
     }
 }

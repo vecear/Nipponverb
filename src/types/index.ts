@@ -34,12 +34,22 @@ export interface DetailedExplanation {
   distractors: DistractorExplanation[]
 }
 
+
+export interface MatchingPair {
+  char: string
+  romaji: string
+  row?: string
+}
+
 export interface Question {
   id: string
-  stem: string
-  correct: string
-  options: string[]
-  explanation: string
+  type?: 'multiple-choice' | 'matching'
+  stem?: string
+  correct?: string
+  options?: string[]
+  pairs?: MatchingPair[]
+  instruction?: string
+  explanation?: string
   detailedExplanation?: DetailedExplanation
   source?: string
   level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1'

@@ -193,7 +193,7 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
     const { practiceHistory } = get()
     return practiceHistory
       .filter((h) => h.category === category && h.level === level)
-      .slice(0, 5)
+      .slice(0, 10)
   },
 
   getLastPractice: (category: string, level: string) => {
