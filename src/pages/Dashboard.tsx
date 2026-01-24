@@ -5,7 +5,7 @@ import StatsCard from '../components/StatsCard'
 import ExpBar from '../components/ExpBar'
 import { useUserStore } from '../store/useUserStore'
 import { DEFAULT_PROGRESSION, EXP_CONSTANTS } from '../types/progression'
-import { getJobById, NOVICE_TITLE } from '../data/jobs'
+import { getJobById, NOVICE_TITLE, getCharacterImagePath } from '../data/jobs'
 
 const Dashboard = () => {
   const { t } = useTranslation()
@@ -53,6 +53,9 @@ const Dashboard = () => {
   }
 
   const jobInfo = getJobInfo()
+
+  // 取得角色圖片路徑
+  const characterImage = getCharacterImagePath(progression.level, progression.jobId, gender)
 
   // Default stats for new users
   const stats = {
@@ -116,10 +119,19 @@ const Dashboard = () => {
       {/* Game Status Section */}
       <div className="card">
         <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
-          {/* 職業圖示和資訊 */}
+          {/* 角色圖片和資訊 */}
           <div className="flex items-center gap-4">
-            <div className={`w-16 h-16 md:w-20 md:h-20 rounded-xl bg-gradient-to-br ${jobInfo.color} flex items-center justify-center text-3xl md:text-4xl shadow-lg`}>
-              {jobInfo.icon}
+            <div className={`w-16 h-16 md:w-20 md:h-20 rounded-xl bg-gradient-to-br ${jobInfo.color} flex items-center justify-center overflow-hidden shadow-lg`}>
+              <img
+                src={characterImage}
+                alt={jobInfo.nameTw}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  // 圖片載入失敗時顯示 emoji
+                  e.currentTarget.style.display = 'none'
+                  e.currentTarget.parentElement!.innerHTML = `<span class="text-3xl md:text-4xl">${jobInfo.icon}</span>`
+                }}
+              />
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-2">

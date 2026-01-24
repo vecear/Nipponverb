@@ -397,3 +397,32 @@ export const getCurrentTitleById = (
 
   return title
 }
+
+// 取得角色圖片路徑
+export const getCharacterImagePath = (
+  level: number,
+  jobId: string | null,
+  gender: 'male' | 'female'
+): string => {
+  // 等級 0-4 或未選擇職業：使用 novice 圖片
+  if (level < 5 || !jobId) {
+    return `/characters/novice_${gender}.png`
+  }
+
+  // 已選擇職業：使用對應職業圖片
+  // 目前只有階段 0 的圖片，命名格式：{jobId}_{gender}_00.png 或 {jobId}_{gender}.png
+  const job = getJobById(jobId)
+  if (!job) {
+    return `/characters/novice_${gender}.png`
+  }
+
+  // 檢查是否有階段圖片（doshin 和 hokan 使用不同命名）
+  // doshin: doshin_male.png, doshin_female.png
+  // hokan: hokan_male.png (female 可能缺失)
+  // 其他: {jobId}_{gender}_00.png
+  if (jobId === 'doshin' || jobId === 'hokan') {
+    return `/characters/${jobId}_${gender}.png`
+  }
+
+  return `/characters/${jobId}_${gender}_00.png`
+}

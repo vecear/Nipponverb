@@ -7,7 +7,7 @@ import { useUserStore } from '../store/useUserStore'
 import { updateUserProfile } from '../services/userService'
 import { usePracticeStore } from '../store/usePracticeStore'
 import ExpBar from '../components/ExpBar'
-import { getJobById } from '../data/jobs'
+import { getJobById, getCharacterImagePath } from '../data/jobs'
 import { EXP_CONSTANTS, DEFAULT_PROGRESSION } from '../types/progression'
 
 
@@ -23,6 +23,7 @@ const Profile = () => {
   const gender = profile?.gender || 'male'
   const needsJobSelection = progression.level >= EXP_CONSTANTS.JOB_CHANGE_LEVEL && !progression.jobId
   const job = progression.jobId ? getJobById(progression.jobId) : null
+  const characterImage = getCharacterImagePath(progression.level, progression.jobId, gender)
 
   const [isEditingName, setIsEditingName] = useState(false)
   const [newName, setNewName] = useState(profile?.displayName || '')
@@ -76,17 +77,24 @@ const Profile = () => {
       <div className="card mb-6 md:mb-8">
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
           <div className="relative">
-            {currentUser?.photoURL ? (
+            {/* 角色圖片 */}
+            <div className={`w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-sakura-pink overflow-hidden ${job ? `bg-gradient-to-br ${job.color}` : 'bg-gradient-to-r from-sakura-pink to-electric-cyan'}`}>
               <img
-                src={currentUser.photoURL}
-                alt="Profile"
-                className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-sakura-pink"
+                src={characterImage}
+                alt="Character"
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  // 圖片載入失敗時顯示使用者頭像或首字母
+                  const target = e.currentTarget
+                  if (currentUser?.photoURL) {
+                    target.src = currentUser.photoURL
+                  } else {
+                    target.style.display = 'none'
+                    target.parentElement!.innerHTML = `<span class="flex items-center justify-center w-full h-full text-white text-3xl md:text-5xl font-bold">${profile?.displayName?.[0] || currentUser?.displayName?.[0] || 'U'}</span>`
+                  }
+                }}
               />
-            ) : (
-              <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-r from-sakura-pink to-electric-cyan flex items-center justify-center text-white text-3xl md:text-5xl font-bold">
-                {profile?.displayName?.[0] || currentUser?.displayName?.[0] || 'U'}
-              </div>
-            )}
+            </div>
             <div className="absolute -bottom-2 -right-2 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
               {t('profile.streak', { days: 0 })} 🔥
             </div>
