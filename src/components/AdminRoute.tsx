@@ -3,20 +3,37 @@
  * Admin Route Protection Component
  */
 
-import { ReactNode } from 'react'
+import { ReactNode, useState, useEffect } from 'react'
 import { Navigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
-import { isAdmin } from '../services/adminService'
+import { isAdmin, getAdminList } from '../services/adminService'
 
 interface AdminRouteProps {
   children: ReactNode
 }
 
 const AdminRoute = ({ children }: AdminRouteProps) => {
-  const { user, loading } = useAuth()
+  const { currentUser, loading } = useAuth()
+  const [isCheckingAdmin, setIsCheckingAdmin] = useState(true)
+  const [isUserAdmin, setIsUserAdmin] = useState(false)
+
+  useEffect(() => {
+    const checkAdminStatus = async () => {
+      if (currentUser?.email) {
+        // 先載入管理員列表以填充快取
+        await getAdminList()
+        setIsUserAdmin(isAdmin(currentUser.email))
+      }
+      setIsCheckingAdmin(false)
+    }
+
+    if (!loading) {
+      checkAdminStatus()
+    }
+  }, [currentUser?.email, loading])
 
   // 載入中顯示載入畫面
-  if (loading) {
+  if (loading || isCheckingAdmin) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-stone-100">
         <div className="text-center">
@@ -28,12 +45,12 @@ const AdminRoute = ({ children }: AdminRouteProps) => {
   }
 
   // 未登入導向登入頁
-  if (!user) {
+  if (!currentUser) {
     return <Navigate to="/login" replace />
   }
 
   // 非管理員導向首頁
-  if (!isAdmin(user.email)) {
+  if (!isUserAdmin) {
     return <Navigate to="/" replace />
   }
 
