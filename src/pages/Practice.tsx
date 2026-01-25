@@ -15,6 +15,7 @@ import { generateGrammarQuestion } from '../data/grammar'
 import { generateKanjiQuestion } from '../data/kanji'
 import { addExp, updateUserProgression } from '../services/progressionService'
 import { DEFAULT_PROGRESSION, EXP_REWARDS } from '../types/progression'
+import { PRACTICE_ICONS } from '../config/assets'
 
 // Static Question Banks
 import { n5Questions } from '../data/questions/n5'
@@ -314,6 +315,7 @@ const Practice = () => {
       description: t('practice.categories.gojuon.description'),
       icon: 'あア',
       color: 'from-green-500 to-teal-500',
+      image: PRACTICE_ICONS.gojuon,
     },
     {
       id: 'verbs',
@@ -321,6 +323,7 @@ const Practice = () => {
       description: t('practice.categories.verbs.description'),
       icon: '✍️',
       color: 'from-blue-500 to-cyan-500',
+      image: PRACTICE_ICONS.verbs,
     },
     {
       id: 'grammar',
@@ -328,6 +331,7 @@ const Practice = () => {
       description: t('practice.categories.grammar.description'),
       icon: '📖',
       color: 'from-purple-500 to-pink-500',
+      image: PRACTICE_ICONS.grammar,
     },
     {
       id: 'kanji',
@@ -335,6 +339,7 @@ const Practice = () => {
       description: t('practice.categories.kanji.description'),
       icon: '漢',
       color: 'from-orange-500 to-red-500',
+      image: PRACTICE_ICONS.kanji,
     },
     {
       id: 'vocabulary',
@@ -342,6 +347,7 @@ const Practice = () => {
       description: t('practice.categories.vocabulary.description'),
       icon: '🔤',
       color: 'from-yellow-400 to-orange-500',
+      image: PRACTICE_ICONS.vocabulary,
     },
   ]
 
@@ -354,8 +360,8 @@ const Practice = () => {
     return (
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-zen font-bold text-gradient mb-4">{t('practice.title')}</h1>
-          <p className="text-indigo-900/90">{t('practice.selectCategory')}</p>
+          <h1 className="text-3xl md:text-4xl font-zen font-bold text-wave-deep mb-4">{t('practice.title')}</h1>
+          <p className="text-sumi-faded">{t('practice.selectCategory')}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
@@ -366,12 +372,24 @@ const Practice = () => {
               className="card-interactive p-4 group"
             >
               <div className="flex items-center md:block md:text-center space-x-4 md:space-x-0 cursor-pointer">
-                <div className={`w-16 h-16 md:w-16 md:h-16 rounded-xl bg-gradient-to-br ${mode.color} flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition-transform md:mx-auto md:mb-3`}>
-                  {mode.icon}
+                <div className={`w-16 h-16 md:w-16 md:h-16 bg-gradient-to-br ${mode.color} flex items-center justify-center text-3xl shadow-ukiyo group-hover:scale-110 transition-transform md:mx-auto md:mb-3 overflow-hidden`}>
+                  {mode.image ? (
+                    <img
+                      src={mode.image}
+                      alt={mode.title}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none'
+                        e.currentTarget.parentElement!.innerHTML = `<span class="text-3xl">${mode.icon}</span>`
+                      }}
+                    />
+                  ) : (
+                    <span>{mode.icon}</span>
+                  )}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-1">{mode.title}</h3>
-                  <p className="text-indigo-900/90 text-sm line-clamp-2 md:line-clamp-none">{mode.description}</p>
+                  <h3 className="text-xl font-bold mb-1 text-wave-deep group-hover:text-vermilion transition-colors">{mode.title}</h3>
+                  <p className="text-sumi-faded text-sm line-clamp-2 md:line-clamp-none">{mode.description}</p>
                 </div>
               </div>
             </div>

@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Sparkles, ArrowUp } from 'lucide-react'
 import { LevelUpInfo } from '../types/progression'
+import { UI_ELEMENTS } from '../config/assets'
 
 interface LevelUpModalProps {
   isOpen: boolean
@@ -72,9 +73,17 @@ const LevelUpModal = ({
                 initial={{ scale: 0, rotate: -180 }}
                 animate={{ scale: 1, rotate: 0 }}
                 transition={{ type: 'spring', delay: 0.2 }}
-                className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-sakura-pink to-electric-cyan flex items-center justify-center"
+                className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-vermilion to-ochre flex items-center justify-center shadow-ukiyo overflow-hidden"
               >
-                <ArrowUp size={40} className="text-white" />
+                <img
+                  src={UI_ELEMENTS.levelUpEffect}
+                  alt="Level Up"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none'
+                    e.currentTarget.parentElement!.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>`
+                  }}
+                />
               </motion.div>
 
               {/* 標題 */}

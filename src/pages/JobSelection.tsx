@@ -7,6 +7,7 @@ import { JOBS, Job } from '../data/jobs'
 import { useUserStore } from '../store/useUserStore'
 import { handleJobSelection } from '../services/progressionService'
 import { useAuth } from '../contexts/AuthContext'
+import { JOB_CHARACTERS } from '../config/assets'
 
 const JobSelection = () => {
   const { t } = useTranslation()
@@ -98,9 +99,21 @@ const JobSelection = () => {
             >
               {/* 職業圖示 */}
               <div
-                className={`w-24 h-24 mx-auto rounded-2xl bg-gradient-to-br ${selectedJob.color} flex items-center justify-center text-5xl mb-6`}
+                className={`w-24 h-24 mx-auto rounded-2xl bg-gradient-to-br ${selectedJob.color} flex items-center justify-center text-5xl mb-6 overflow-hidden shadow-ukiyo`}
               >
-                {selectedJob.icon}
+                {JOB_CHARACTERS[selectedJob.id as keyof typeof JOB_CHARACTERS] ? (
+                  <img
+                    src={JOB_CHARACTERS[selectedJob.id as keyof typeof JOB_CHARACTERS][gender]}
+                    alt={selectedJob.nameTw}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none'
+                      e.currentTarget.parentElement!.innerHTML = `<span class="text-5xl">${selectedJob.icon}</span>`
+                    }}
+                  />
+                ) : (
+                  <span>{selectedJob.icon}</span>
+                )}
               </div>
 
               {/* 職業名稱 */}

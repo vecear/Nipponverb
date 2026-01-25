@@ -13,6 +13,7 @@ import {
 
 import { useUserStore } from '../store/useUserStore'
 import { isAdmin, getAdminList } from '../services/adminService'
+import { BRAND } from '../config/assets'
 
 const Navbar = () => {
   const { currentUser, logout } = useAuth()
@@ -59,14 +60,23 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Top Navbar (Logo + Profile + Desktop Menu) */}
+      {/* Top Navbar (Logo + Profile + Desktop Menu) - 浮世繪風格 */}
       <nav
-        className="sticky top-0 z-50 bg-[#FDFBF7]/95 backdrop-blur-sm border-b-2 border-indigo-900 shadow-md"
+        className="sticky top-0 z-50 bg-washi-light/95 backdrop-blur-sm border-b-2 border-wave-deep shadow-ukiyo"
       >
         <div className="container mx-auto px-4 py-3 md:py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center space-x-2">
-              <span className="text-2xl md:text-3xl font-zen font-bold text-indigo-900 truncate">
+            <Link to="/" className="flex items-center space-x-2 group">
+              <img
+                src={BRAND.logo}
+                alt="Nipponverb"
+                className="h-8 md:h-10 w-auto"
+                onError={(e) => {
+                  // Logo 載入失敗時隱藏圖片，只顯示文字
+                  e.currentTarget.style.display = 'none'
+                }}
+              />
+              <span className="text-2xl md:text-3xl font-zen font-bold text-wave-deep truncate group-hover:text-vermilion transition-colors">
                 Nipponverb
               </span>
             </Link>
@@ -77,7 +87,7 @@ const Navbar = () => {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className={`font-semibold transition-colors ${location.pathname === link.to ? 'text-red-600 border-b-2 border-red-600' : 'text-indigo-900/90 hover:text-indigo-900'}`}
+                  className={`font-zen font-semibold transition-colors ${location.pathname === link.to ? 'text-vermilion border-b-2 border-vermilion' : 'text-wave-deep/90 hover:text-vermilion'}`}
                 >
                   {link.label}
                 </Link>
@@ -90,20 +100,20 @@ const Navbar = () => {
                   <img
                     src={currentUser.photoURL}
                     alt="Profile"
-                    className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-indigo-900"
+                    className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-wave-deep hover:border-vermilion transition-colors"
                   />
                 ) : (
-                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-indigo-100 border-2 border-indigo-900 flex items-center justify-center text-indigo-900 font-bold text-sm md:text-base">
+                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-foam border-2 border-wave-deep hover:border-vermilion flex items-center justify-center text-wave-deep font-zen font-bold text-sm md:text-base transition-colors">
                     {(profile?.displayName || currentUser?.displayName)?.[0] || 'U'}
                   </div>
                 )}
               </Link>
 
-              {/* 管理員後台連結 */}
+              {/* 管理員後台連結 - 朱印風格 */}
               {isUserAdmin && (
                 <Link
                   to="/admin"
-                  className="hidden md:flex items-center gap-1 text-red-600 hover:text-red-700 transition-colors"
+                  className="hidden md:flex items-center gap-1 text-vermilion hover:text-vermilion-dark transition-colors"
                   title={t('nav.admin', '後台管理')}
                 >
                   <Shield size={20} />
@@ -121,20 +131,20 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Bottom Navigation Bar */}
+      {/* Mobile Bottom Navigation Bar - 浮世繪風格 */}
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden pb-safe">
-        <div className="flex justify-around items-center px-2 py-3 border-t-2 border-indigo-900 bg-[#FDFBF7] shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+        <div className="flex justify-around items-center px-2 py-3 border-t-2 border-wave-deep bg-washi-light shadow-[0_-4px_6px_-1px_rgba(26,58,92,0.15)]">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
               className={`flex flex-col items-center justify-center p-2 rounded-lg transition-all ${location.pathname === link.to
-                ? 'text-red-600 scale-110'
-                : 'text-indigo-900/80 hover:text-indigo-900'
+                ? 'text-vermilion scale-110'
+                : 'text-wave-deep/80 hover:text-wave-deep'
                 }`}
             >
               <link.icon size={24} strokeWidth={location.pathname === link.to ? 2.5 : 2} />
-              <span className="text-[10px] mt-1 font-bold">{link.label}</span>
+              <span className="text-[10px] mt-1 font-zen font-bold">{link.label}</span>
             </Link>
           ))}
         </div>

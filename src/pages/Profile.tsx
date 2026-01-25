@@ -78,8 +78,8 @@ const Profile = () => {
       <div className="card mb-6 md:mb-8 !overflow-visible">
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
           <div className="relative">
-            {/* 角色圖片 */}
-            <div className={`w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-red-600 overflow-hidden ${job ? `bg-gradient-to-br ${job.color}` : 'bg-indigo-100'}`}>
+            {/* 角色圖片 - 浮世繪風格 */}
+            <div className={`w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-vermilion overflow-hidden ${job ? `bg-gradient-to-br ${job.color}` : 'bg-foam'}`}>
               <img
                 src={characterImage}
                 alt="Character"
@@ -91,12 +91,12 @@ const Profile = () => {
                     target.src = currentUser.photoURL
                   } else {
                     target.style.display = 'none'
-                    target.parentElement!.innerHTML = `<span class="flex items-center justify-center w-full h-full text-indigo-900 text-3xl md:text-5xl font-bold">${profile?.displayName?.[0] || currentUser?.displayName?.[0] || 'U'}</span>`
+                    target.parentElement!.innerHTML = `<span class="flex items-center justify-center w-full h-full text-wave-deep text-3xl md:text-5xl font-bold">${profile?.displayName?.[0] || currentUser?.displayName?.[0] || 'U'}</span>`
                   }
                 }}
               />
             </div>
-            <div className="absolute -bottom-2 -right-2 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold border-2 border-white">
+            <div className="absolute -bottom-2 -right-2 bg-pine text-white px-3 py-1 rounded-full text-sm font-semibold border-2 border-washi-light">
               {t('profile.streak', { days: 0 })} 🔥
             </div>
           </div>
@@ -109,12 +109,12 @@ const Profile = () => {
                     type="text"
                     value={newName}
                     onChange={(e) => setNewName(e.target.value)}
-                    className="placeholder-indigo-900/40 text-xl font-bold font-zen"
+                    className="placeholder-sumi-faded text-xl font-bold font-zen"
                     autoFocus
                   />
                   <button
                     onClick={handleSaveName}
-                    className="p-2 hover:bg-indigo-900/10 rounded-full text-red-600 transition-all"
+                    className="p-2 hover:bg-wave-light/10 rounded-full text-vermilion transition-all"
                   >
                     <Save size={20} />
                   </button>
@@ -123,19 +123,19 @@ const Profile = () => {
                       setIsEditingName(false)
                       setNewName(profile?.displayName || '')
                     }}
-                    className="p-2 hover:bg-indigo-900/10 rounded-full text-indigo-900/40 transition-all"
+                    className="p-2 hover:bg-wave-light/10 rounded-full text-sumi-faded transition-all"
                   >
                     <X size={20} />
                   </button>
                 </div>
               ) : (
                 <>
-                  <h1 className="text-2xl md:text-4xl font-zen font-bold text-indigo-900">
+                  <h1 className="text-2xl md:text-4xl font-zen font-bold text-wave-deep">
                     {profile?.displayName || currentUser?.displayName || 'Student'}
                   </h1>
                   <button
                     onClick={() => setIsEditingName(true)}
-                    className="p-2 hover:bg-indigo-900/10 rounded-full text-indigo-900/40 hover:text-indigo-900 transition-all"
+                    className="p-2 hover:bg-wave-light/10 rounded-full text-sumi-faded hover:text-wave-deep transition-all"
                     title={t('profile.settings.editName')}
                   >
                     <Edit2 size={18} />
@@ -143,18 +143,18 @@ const Profile = () => {
                 </>
               )}
             </div>
-            <p className="text-indigo-900/80 mb-4">{currentUser?.email}</p>
+            <p className="text-sumi-faded mb-4">{currentUser?.email}</p>
 
             <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-2 md:gap-3">
-              <span className="text-indigo-900/80 text-sm md:text-base font-bold">{t('profile.targetLevel')}:</span>
+              <span className="text-sumi-faded text-sm md:text-base font-bold">{t('profile.targetLevel')}:</span>
               <div className="flex flex-wrap justify-center gap-1 md:gap-2">
                 {levels.map((level) => (
                   <button
                     key={level}
                     onClick={() => setSelectedLevel(level)}
                     className={`px-3 md:px-4 py-1 rounded-full text-xs md:text-sm font-semibold transition-all border ${selectedLevel === level
-                      ? 'bg-red-600 text-white border-red-600'
-                      : 'bg-white text-indigo-900/80 border-indigo-900/20 hover:border-red-600 hover:text-red-600'
+                      ? 'bg-vermilion text-white border-vermilion'
+                      : 'bg-washi-light text-sumi-faded border-wave-mid/30 hover:border-vermilion hover:text-vermilion'
                       }`}
                   >
                     {level}
@@ -175,19 +175,19 @@ const Profile = () => {
         </div>
       </div>
 
-      {/* 積分系統區塊 */}
+      {/* 積分系統區塊 - 浮世繪風格 */}
       <div className="card mb-6 md:mb-8 !p-0 overflow-hidden border-0 bg-transparent">
-        <div className="bg-indigo-900 text-white p-6 md:p-8 rounded-2xl relative overflow-hidden shadow-xl">
-          {/* Background decoration */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-sakura-pink/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-electric-cyan/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <div className="bg-wave-deep text-white p-6 md:p-8 rounded-none relative overflow-hidden shadow-ukiyo-lg border-2 border-wave-deep-dark">
+          {/* Background decoration - 波浪紋理 */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-wave-light/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-sky/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
           <div className="flex items-center justify-between mb-6 relative z-10">
-            <h2 className="text-xl md:text-2xl font-zen font-bold text-white border-b-2 border-white/20 pb-1">
+            <h2 className="text-xl md:text-2xl font-zen font-bold text-white border-b-2 border-foam/30 pb-1">
               {t('progression.title', '冒險進度')}
             </h2>
             {job && (
-              <div className={`px-4 py-2 rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm flex items-center gap-2 shadow-sm`}>
+              <div className={`px-4 py-2 border border-foam/30 bg-wave-mid/30 backdrop-blur-sm flex items-center gap-2 shadow-sm`}>
                 <span className="text-xl">{job.icon}</span>
                 <span className="font-bold text-white">{job.nameTw}</span>
               </div>
@@ -200,12 +200,12 @@ const Profile = () => {
 
         {/* 轉職提示 */}
         {needsJobSelection && (
-          <div className="mt-4 p-4 bg-white border-2 border-red-600/30 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 shadow-lg">
+          <div className="mt-4 p-4 bg-washi-light border-2 border-vermilion/30 flex flex-col md:flex-row items-center justify-between gap-4 shadow-ukiyo">
             <div>
-              <p className="text-red-600 font-bold mb-1">
+              <p className="text-vermilion font-bold mb-1">
                 {t('progression.jobSelection.unlocked', '轉職之儀已解鎖！')}
               </p>
-              <p className="text-indigo-900/80 text-sm">
+              <p className="text-sumi-faded text-sm">
                 {t('progression.jobSelection.hint', '選擇你的職業道路，開啟新的旅程')}
               </p>
             </div>
@@ -220,22 +220,22 @@ const Profile = () => {
       </div>
 
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-indigo-900/20 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-wave-deep/20 backdrop-blur-sm">
           <div
-            className="paper-card w-full max-w-md p-6 shadow-2xl"
+            className="paper-card w-full max-w-md p-6 shadow-ukiyo-lg"
           >
-            <div className="flex justify-between items-center mb-6 border-b border-indigo-900/10 pb-4">
-              <h3 className="text-xl font-bold text-indigo-900">{t('profile.settings.accountManagement')}</h3>
+            <div className="flex justify-between items-center mb-6 border-b border-wave-mid/20 pb-4">
+              <h3 className="text-xl font-bold text-wave-deep">{t('profile.settings.accountManagement')}</h3>
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="p-2 hover:bg-gray-100 rounded-full transition-all text-gray-500"
+                className="p-2 hover:bg-wave-light/10 rounded-full transition-all text-sumi-faded"
               >
                 <X size={20} />
               </button>
             </div>
 
             {status && (
-              <div className={`mb-6 p-4 rounded-xl flex items-center gap-3 ${status.type === 'success' ? 'bg-green-500/10 text-green-500' : 'bg-red-500/10 text-red-500'
+              <div className={`mb-6 p-4 flex items-center gap-3 ${status.type === 'success' ? 'bg-pine/10 text-pine' : 'bg-vermilion/10 text-vermilion'
                 }`}>
                 {status.type === 'success' ? <CheckCircle size={20} /> : <AlertCircle size={20} />}
                 <span className="text-sm font-medium">{status.message}</span>
@@ -244,26 +244,26 @@ const Profile = () => {
 
             {requiresReauth ? (
               <div className="space-y-6">
-                <div className="p-4 bg-sakura-pink/5 border border-sakura-pink/20 rounded-xl text-center">
-                  <div className="w-12 h-12 bg-sakura-pink/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Lock className="text-sakura-pink" size={24} />
+                <div className="p-4 bg-vermilion/5 border border-vermilion/20 text-center">
+                  <div className="w-12 h-12 bg-vermilion/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Lock className="text-vermilion" size={24} />
                   </div>
-                  <h4 className="text-lg font-bold mb-2">
+                  <h4 className="text-lg font-bold mb-2 text-wave-deep">
                     {t('profile.settings.reauthTitle')}
                   </h4>
-                  <p className="text-sm text-indigo-900/70 mb-6">
+                  <p className="text-sm text-sumi-faded mb-6">
                     {t('profile.settings.reauthDesc')}
                   </p>
 
                   {!isGoogleUser ? (
                     <div className="space-y-4">
                       <div className="relative">
-                        <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-indigo-900/40" size={18} />
+                        <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-sumi-faded" size={18} />
                         <input
                           type="password"
                           value={reauthPassword}
                           onChange={(e) => setReauthPassword(e.target.value)}
-                          className="placeholder-indigo-900/40 pl-10"
+                          className="placeholder-sumi-faded pl-10"
                           placeholder={t('profile.settings.currentPassword')}
                         />
                       </div>
@@ -282,7 +282,7 @@ const Profile = () => {
                           setLoading(false)
                         }}
                         disabled={loading || !reauthPassword}
-                        className="w-full py-2 rounded-xl bg-sakura-pink text-white font-bold transition-all disabled:opacity-50"
+                        className="w-full py-2 bg-vermilion text-white font-bold transition-all disabled:opacity-50"
                       >
                         {loading ? t('common.loading') : t('profile.settings.verify')}
                       </button>
@@ -301,7 +301,7 @@ const Profile = () => {
                         }
                         setLoading(false)
                       }}
-                      className="w-full py-3 rounded-xl bg-white text-black font-bold flex items-center justify-center gap-3"
+                      className="w-full py-3 bg-washi-light text-sumi font-bold flex items-center justify-center gap-3 border border-wave-mid"
                     >
                       <Lock size={18} />
                       {t('profile.settings.verifyWithGoogle')}
@@ -310,7 +310,7 @@ const Profile = () => {
 
                   <button
                     onClick={() => setRequiresReauth(false)}
-                    className="mt-4 text-sm text-indigo-900/40 hover:text-indigo-900/60"
+                    className="mt-4 text-sm text-sumi-faded hover:text-wave-deep"
                   >
                     {t('common.cancel')}
                   </button>
@@ -320,16 +320,16 @@ const Profile = () => {
               <div className="space-y-6">
                 {/* Change Email */}
                 <div>
-                  <label className="block text-sm font-medium text-indigo-900/60 mb-2">
+                  <label className="block text-sm font-medium text-sumi-faded mb-2">
                     {t('profile.settings.changeEmail')}
                   </label>
                   <div className="relative">
-                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-indigo-900/40" size={18} />
+                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-sumi-faded" size={18} />
                     <input
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="placeholder-indigo-900/40 pl-10"
+                      className="placeholder-sumi-faded pl-10"
                       placeholder={t('profile.settings.newEmail')}
                     />
                   </div>
@@ -350,37 +350,37 @@ const Profile = () => {
                       setLoading(false)
                     }}
                     disabled={loading || email === currentUser?.email}
-                    className="mt-2 w-full py-2 rounded-xl bg-sakura-pink/20 hover:bg-sakura-pink/30 text-sakura-pink font-semibold transition-all disabled:opacity-50"
+                    className="mt-2 w-full py-2 bg-vermilion/20 hover:bg-vermilion/30 text-vermilion font-semibold transition-all disabled:opacity-50"
                   >
                     {t('common.save')}
                   </button>
                 </div>
 
-                <hr className="border-indigo-900/10" />
+                <hr className="border-wave-mid/20" />
 
                 {/* Change Password */}
                 <div>
-                  <label className="block text-sm font-medium text-indigo-900/60 mb-2">
+                  <label className="block text-sm font-medium text-sumi-faded mb-2">
                     {t('profile.settings.changePassword')}
                   </label>
                   <div className="space-y-2">
                     <div className="relative">
-                      <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-indigo-900/40" size={18} />
+                      <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-sumi-faded" size={18} />
                       <input
                         type="password"
                         value={newPassword}
                         onChange={(e) => setNewPassword(e.target.value)}
-                        className="placeholder-indigo-900/40 pl-10"
+                        className="placeholder-sumi-faded pl-10"
                         placeholder={t('profile.settings.newPassword')}
                       />
                     </div>
                     <div className="relative">
-                      <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-indigo-900/40" size={18} />
+                      <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-sumi-faded" size={18} />
                       <input
                         type="password"
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
-                        className="placeholder-indigo-900/40 pl-10"
+                        className="placeholder-sumi-faded pl-10"
                         placeholder={t('profile.settings.confirmPassword')}
                       />
                     </div>
@@ -408,13 +408,13 @@ const Profile = () => {
                       setLoading(false)
                     }}
                     disabled={loading || !newPassword || newPassword !== confirmPassword}
-                    className="mt-2 w-full py-2 rounded-xl bg-sakura-pink/20 hover:bg-sakura-pink/30 text-sakura-pink font-semibold transition-all disabled:opacity-50"
+                    className="mt-2 w-full py-2 bg-vermilion/20 hover:bg-vermilion/30 text-vermilion font-semibold transition-all disabled:opacity-50"
                   >
                     {t('profile.settings.changePassword')}
                   </button>
                 </div>
 
-                <hr className="border-indigo-900/10" />
+                <hr className="border-wave-mid/20" />
 
                 {/* Link Google */}
                 <div>
@@ -432,9 +432,9 @@ const Profile = () => {
                       setLoading(false)
                     }}
                     disabled={loading || isGoogleLinked}
-                    className={`w-full py-3 rounded-xl flex items-center justify-center gap-3 font-semibold transition-all ${isGoogleLinked
-                      ? 'bg-green-500/10 text-green-500 border border-green-500/20'
-                      : 'bg-white text-black hover:bg-white/90 shadow-lg'
+                    className={`w-full py-3 flex items-center justify-center gap-3 font-semibold transition-all ${isGoogleLinked
+                      ? 'bg-pine/10 text-pine border border-pine/20'
+                      : 'bg-washi-light text-sumi hover:bg-foam shadow-ukiyo border border-wave-mid'
                       }`}
                   >
                     {isGoogleLinked ? <CheckCircle size={18} /> : <LinkIcon size={18} />}
@@ -451,26 +451,26 @@ const Profile = () => {
         {stats.map((stat) => (
           <div
             key={stat.label}
-            className="card p-4 text-center border-l-4 border-indigo-900"
+            className="card p-4 text-center border-l-4 border-wave-deep"
           >
-            <div className="text-xl md:text-2xl font-bold text-indigo-900 mb-1 md:mb-2">{stat.value}</div>
-            <div className="text-xs md:text-sm text-indigo-900/80">{stat.label}</div>
+            <div className="text-xl md:text-2xl font-bold text-wave-deep mb-1 md:mb-2">{stat.value}</div>
+            <div className="text-xs md:text-sm text-sumi-faded">{stat.label}</div>
           </div>
         ))}
       </div>
 
       <div className="card mb-8">
-        <h2 className="text-2xl font-zen font-bold mb-6 text-indigo-900 border-b-2 border-indigo-900/10 pb-2">{t('profile.learningProgress')}</h2>
+        <h2 className="text-2xl font-zen font-bold mb-6 text-wave-deep border-b-2 border-wave-mid/20 pb-2">{t('profile.learningProgress')}</h2>
 
         <div className="space-y-6">
           <div>
             <div className="flex justify-between mb-2">
-              <span className="font-semibold text-indigo-900">{t('profile.progress.verbs')}</span>
-              <span className="text-indigo-900/80">{verbsLearned}/200</span>
+              <span className="font-semibold text-wave-deep">{t('profile.progress.verbs')}</span>
+              <span className="text-sumi-faded">{verbsLearned}/200</span>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden border border-gray-300">
+            <div className="progress-bar progress-bar-vermilion">
               <div
-                className="bg-red-600 h-full"
+                className="progress-bar-fill"
                 style={{ width: `${Math.min((verbsLearned / 200) * 100, 100)}%` }}
               />
             </div>
@@ -478,12 +478,12 @@ const Profile = () => {
 
           <div>
             <div className="flex justify-between mb-2">
-              <span className="font-semibold text-indigo-900">{t('profile.progress.kanji')}</span>
-              <span className="text-indigo-900/80">{kanjiLearned}/1000</span>
+              <span className="font-semibold text-wave-deep">{t('profile.progress.kanji')}</span>
+              <span className="text-sumi-faded">{kanjiLearned}/1000</span>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden border border-gray-300">
+            <div className="progress-bar">
               <div
-                className="bg-indigo-600 h-full"
+                className="progress-bar-fill"
                 style={{ width: `${Math.min((kanjiLearned / 1000) * 100, 100)}%` }}
               />
             </div>
@@ -491,12 +491,12 @@ const Profile = () => {
 
           <div>
             <div className="flex justify-between mb-2">
-              <span className="font-semibold text-indigo-900">{t('profile.progress.grammar')}</span>
-              <span className="text-indigo-900/80">{grammarLearned}/80</span>
+              <span className="font-semibold text-wave-deep">{t('profile.progress.grammar')}</span>
+              <span className="text-sumi-faded">{grammarLearned}/80</span>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden border border-gray-300">
+            <div className="progress-bar">
               <div
-                className="bg-green-600 h-full"
+                className="progress-bar-fill bg-pine"
                 style={{ width: `${Math.min((grammarLearned / 80) * 100, 100)}%` }}
               />
             </div>
@@ -505,7 +505,7 @@ const Profile = () => {
       </div>
 
       <div className="card">
-        <h2 className="text-xl md:text-2xl font-zen font-bold mb-4 md:mb-6 text-indigo-900 border-b-2 border-indigo-900/10 pb-2">
+        <h2 className="text-xl md:text-2xl font-zen font-bold mb-4 md:mb-6 text-wave-deep border-b-2 border-wave-mid/20 pb-2">
           {t('profile.statistics.title', { level: selectedLevel })}
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
@@ -523,20 +523,20 @@ const Profile = () => {
 
 
             return (
-              <div key={category} className="paper-card p-3 rounded-none border border-indigo-900">
+              <div key={category} className="paper-card p-3 rounded-none border border-wave-deep">
                 <div className="flex flex-col gap-2 mb-2">
                   <div className="flex items-center gap-2">
-                    <div className={`w-8 h-8 flex items-center justify-center text-lg font-bold border border-indigo-900 bg-white shadow-sm`}>
+                    <div className={`w-8 h-8 flex items-center justify-center text-lg font-bold border border-wave-deep bg-washi-light shadow-sm`}>
                       {category === 'verbs' ? '✍️' :
                         category === 'gojuon' ? 'あ' :
                           category === 'kanji' ? '漢' :
                             category === 'vocabulary' ? '🔤' : '📖'}
                     </div>
                     <div className="min-w-0 flex-1">
-                      <h3 className="font-bold text-sm truncate text-indigo-900">
+                      <h3 className="font-bold text-sm truncate text-wave-deep">
                         {t(`practice.categories.${category}.title`)}
                       </h3>
-                      <p className="text-[10px] text-indigo-900/50 truncate">
+                      <p className="text-[10px] text-sumi-faded truncate">
                         {t('profile.statistics.lastPractice')}: {hasData
                           ? new Date(lastEntry.date).toLocaleDateString()
                           : '--'}
@@ -546,11 +546,11 @@ const Profile = () => {
 
                   {hasData && (
                     <div className="flex items-baseline justify-between">
-                      <div className="text-xl font-bold text-indigo-900 leading-none">
+                      <div className="text-xl font-bold text-wave-deep leading-none">
                         {lastEntry.score}/{lastEntry.total}
                       </div>
-                      <div className={`text-xs font-bold ${lastEntry.accuracy >= 80 ? 'text-green-600' :
-                        lastEntry.accuracy >= 60 ? 'text-mustard' : 'text-red-600'
+                      <div className={`text-xs font-bold ${lastEntry.accuracy >= 80 ? 'text-pine' :
+                        lastEntry.accuracy >= 60 ? 'text-ochre' : 'text-vermilion'
                         }`}>
                         {lastEntry.accuracy}%
                       </div>
@@ -560,9 +560,9 @@ const Profile = () => {
 
                 <div className="space-y-4">
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-indigo-900/80">{t('profile.statistics.recentAverage')} (5)</span>
-                    <span className={`font-bold ${avgAccuracy >= 80 ? 'text-green-600' :
-                      avgAccuracy >= 60 ? 'text-mustard' : 'text-indigo-900/40'
+                    <span className="text-sumi-faded">{t('profile.statistics.recentAverage')} (5)</span>
+                    <span className={`font-bold ${avgAccuracy >= 80 ? 'text-pine' :
+                      avgAccuracy >= 60 ? 'text-ochre' : 'text-sumi-faded'
                       }`}>
                       {hasData ? `${avgAccuracy}%` : '--'}
                     </span>

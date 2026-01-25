@@ -399,30 +399,45 @@ export const getCurrentTitleById = (
 }
 
 // 取得角色圖片路徑
+// 圖片存放位置: public/assets/characters/
+// - 初心者: public/assets/characters/novice_{gender}.png
+// - 職業基礎: public/assets/characters/jobs/{jobId}_{gender}.png
+// - 職業階段: public/assets/characters/stages/{jobId}_stage{1-10}_{gender}.png
 export const getCharacterImagePath = (
   level: number,
   jobId: string | null,
   gender: 'male' | 'female'
 ): string => {
-  // 等級 0-4 或未選擇職業：使用 novice 圖片
+  // 等級 0-4 或未選擇職業：使用初心者圖片
   if (level < 5 || !jobId) {
-    return `/characters/novice_${gender}.png`
+    return `/assets/characters/novice_${gender}.png`
   }
 
-  // 已選擇職業：使用對應職業圖片
-  // 目前只有階段 0 的圖片，命名格式：{jobId}_{gender}_00.png 或 {jobId}_{gender}.png
   const job = getJobById(jobId)
   if (!job) {
-    return `/characters/novice_${gender}.png`
+    return `/assets/characters/novice_${gender}.png`
   }
 
-  // 檢查是否有階段圖片（doshin 和 hokan 使用不同命名）
-  // doshin: doshin_male.png, doshin_female.png
-  // hokan: hokan_male.png (female 可能缺失)
-  // 其他: {jobId}_{gender}_00.png
-  if (jobId === 'doshin' || jobId === 'hokan') {
-    return `/characters/${jobId}_${gender}.png`
+  // 計算階段 (1-10)
+  // 階段 1: Lv.5-14, 階段 2: Lv.15-24, ..., 階段 10: Lv.95-99
+  const stage = Math.min(10, Math.floor((level - 5) / 10) + 1)
+
+  // 特殊處理：陰陽師和幇間的女性版本有不同名稱
+  let characterJobId = jobId
+  if (gender === 'female') {
+    if (jobId === 'onmyoji') characterJobId = 'miko'
+    if (jobId === 'hokan') characterJobId = 'geigi'
   }
 
-  return `/characters/${jobId}_${gender}_00.png`
+  // 優先使用階段圖片
+  // 格式: /assets/characters/stages/{jobId}_stage{1-10}_{gender}.png
+  const stageImagePath = `/assets/characters/stages/${characterJobId}_stage${stage}_${gender}.png`
+
+  // 基礎職業圖片作為後備
+  // 格式: /assets/characters/jobs/{jobId}_{gender}.png
+  const baseImagePath = `/assets/characters/jobs/${characterJobId}_${gender}.png`
+
+  // 目前階段圖片尚未生成，暫時使用基礎職業圖片
+  // 當階段圖片生成後，可以改為回傳 stageImagePath
+  return baseImagePath
 }

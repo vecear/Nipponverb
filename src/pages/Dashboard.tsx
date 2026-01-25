@@ -115,22 +115,22 @@ const Dashboard = () => {
 
   return (
     <div className="space-y-4 md:space-y-6">
-      {/* Hero Section */}
+      {/* Hero Section - 浮世繪風格 */}
       <div className="text-center py-2 md:py-4">
-        <h1 className="text-2xl md:text-4xl font-zen font-bold mb-2 text-indigo-900">
+        <h1 className="text-2xl md:text-4xl font-zen font-bold mb-2 text-wave-deep">
           {t('dashboard.welcome', { name: profile?.displayName || currentUser?.displayName || 'Student' })}
         </h1>
-        <p className="text-lg md:text-xl text-indigo-900/90 font-medium">
+        <p className="text-lg md:text-xl text-sumi-light font-medium">
           {t('dashboard.continueJourney')}
         </p>
       </div>
 
-      {/* Game Status Section */}
+      {/* Game Status Section - 浮世繪風格 */}
       <div className="card">
         <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
           {/* 角色圖片和資訊 */}
           <div className="flex items-center gap-4">
-            <div className={`w-16 h-16 md:w-20 md:h-20 rounded-none border-2 border-indigo-900 bg-gradient-to-br ${jobInfo.color} flex items-center justify-center overflow-hidden shadow-md`}>
+            <div className={`w-16 h-16 md:w-20 md:h-20 rounded-none border-2 border-wave-deep bg-gradient-to-br ${jobInfo.color} flex items-center justify-center overflow-hidden shadow-ukiyo`}>
               <img
                 src={characterImage}
                 alt={jobInfo.nameTw}
@@ -144,15 +144,15 @@ const Dashboard = () => {
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-2">
-                <span className="text-red-600 font-bold text-lg md:text-xl">Lv.{progression.level}</span>
+                <span className="text-vermilion font-bold text-lg md:text-xl">Lv.{progression.level}</span>
                 {jobInfo.hasJob && (
-                  <span className="px-2 py-0.5 bg-indigo-100 text-indigo-900 border border-indigo-900 rounded-sm text-xs font-bold">
+                  <span className="px-2 py-0.5 bg-foam text-wave-deep border border-wave-deep rounded-sm text-xs font-bold">
                     {jobInfo.name}
                   </span>
                 )}
               </div>
-              <span className="text-indigo-900 text-sm md:text-base font-bold">{jobInfo.nameTw}</span>
-              <span className="text-indigo-900/90 text-xs md:text-sm mt-1">{jobInfo.description}</span>
+              <span className="text-wave-deep text-sm md:text-base font-bold">{jobInfo.nameTw}</span>
+              <span className="text-sumi-faded text-xs md:text-sm mt-1">{jobInfo.description}</span>
               {/* 轉職提示 */}
               {'needsJobChange' in jobInfo && jobInfo.needsJobChange && (
                 <button
@@ -177,18 +177,18 @@ const Dashboard = () => {
         </div>
 
         {/* 總經驗值統計 */}
-        <div className="mt-4 pt-4 border-t-2 border-dashed border-indigo-900/20">
+        <div className="mt-4 pt-4 border-t-2 border-dashed border-wave-mid/30">
           <div className="flex items-center justify-between text-sm">
-            <span className="text-indigo-900/90 font-bold">{t('progression.exp', '總經驗值')}</span>
-            <span className="text-indigo-900 font-bold font-mono">{progression.totalExp.toLocaleString()} EXP</span>
+            <span className="text-sumi-faded font-bold">{t('progression.exp', '總經驗值')}</span>
+            <span className="text-wave-deep font-bold font-mono">{progression.totalExp.toLocaleString()} EXP</span>
           </div>
         </div>
       </div>
 
       {/* Stats Section */}
-      {/* Course List Section */}
+      {/* Course List Section - 浮世繪風格 */}
       <div>
-        <h2 className="text-lg md:text-xl font-zen font-bold mb-3 text-indigo-900 border-b-2 border-indigo-900/20 pb-1 inline-block">{t('courses.title', 'Course List')}</h2>
+        <h2 className="text-lg md:text-xl font-zen font-bold mb-3 text-wave-deep border-b-2 border-wave-mid/30 pb-1 inline-block">{t('courses.title', 'Course List')}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
           {courses.map((course) => {
 
@@ -200,16 +200,16 @@ const Dashboard = () => {
               >
                 <div className="text-center space-y-2">
                   <div className="flex justify-center">
-                    <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center shadow-md p-2 group-hover:shadow-lg transition-all duration-300 transform group-hover:scale-110`}>
+                    <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center shadow-ukiyo p-2 group-hover:shadow-ukiyo-hover transition-all duration-300 transform group-hover:scale-110`}>
                       <span className="text-2xl md:text-3xl">{course.emoji}</span>
                     </div>
                   </div>
 
-                  <h3 className="text-lg md:text-xl font-zen font-bold leading-tight mt-2 text-indigo-900 group-hover:text-red-600">
+                  <h3 className="text-lg md:text-xl font-zen font-bold leading-tight mt-2 text-wave-deep group-hover:text-vermilion">
                     {t(course.titleKey)}
                   </h3>
 
-                  <p className="block text-sm text-indigo-900/90 line-clamp-2">
+                  <p className="block text-sm text-sumi-faded line-clamp-2">
                     {t(course.descriptionKey)}
                   </p>
                 </div>
@@ -219,22 +219,22 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Practice Categories Section - Full width */}
+      {/* Practice Categories Section - 浮世繪風格 */}
       <div>
-        <h2 className="text-lg md:text-xl font-zen font-bold mb-3 text-indigo-900 border-b-2 border-indigo-900/20 pb-1 inline-block">{t('dashboard.practiceCategories')}</h2>
+        <h2 className="text-lg md:text-xl font-zen font-bold mb-3 text-wave-deep border-b-2 border-wave-mid/30 pb-1 inline-block">{t('dashboard.practiceCategories')}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
           {modes.map((mode, index) => (
             <div key={index}>
               <Link to={mode.path}>
                 <div className="card-interactive p-3 h-full group">
                   <div className="text-center space-y-2">
-                    <div className="text-3xl md:text-4xl text-indigo-900 group-hover:scale-110 transition-transform duration-300">
+                    <div className="text-3xl md:text-4xl text-wave-deep group-hover:scale-110 transition-transform duration-300">
                       {mode.icon}
                     </div>
-                    <h3 className="text-lg md:text-xl font-zen font-bold leading-tight text-indigo-900 group-hover:text-red-600">
+                    <h3 className="text-lg md:text-xl font-zen font-bold leading-tight text-wave-deep group-hover:text-vermilion">
                       {mode.title}
                     </h3>
-                    <p className="block text-sm text-indigo-900/90 line-clamp-2">{mode.description}</p>
+                    <p className="block text-sm text-sumi-faded line-clamp-2">{mode.description}</p>
                   </div>
                 </div>
               </Link>

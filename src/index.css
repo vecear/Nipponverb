@@ -4,38 +4,56 @@
 
 @layer base {
   :root {
-    /* Great Wave Palette - Hokusai's Pigments */
+    /* === 神奈川沖浪裏 配色系統 === */
 
-    /* Prussian Blue (Bero-ai) - Primary Ink */
-    --color-prussian: #1D3450;
+    /* 普魯士藍 (Bero-ai) - 主要深藍，波浪深處 */
+    --color-wave-deep: #1A3A5C;
+    --color-wave-deep-dark: #0F2840;
 
-    /* Indigo / Ocean Deep */
-    --color-indigo: #2A4B7C;
+    /* 靛藍 (Ai-iro) - 海洋中層 */
+    --color-wave-mid: #2D5A7B;
 
-    /* Cerulean / Wave Body */
-    --color-cerulean: #2A6F97;
+    /* 淺藍 (Hanada) - 波浪表面 */
+    --color-wave-light: #4A7C9B;
 
-    /* Foam White / Mist */
-    --color-foam: #F0F8FF;
+    /* 天空藍 (Sora-iro) */
+    --color-sky: #7BA3B8;
+    --color-sky-pale: #B8CED8;
 
-    /* Washi Paper - Background */
-    --color-paper: #F9F7F2;
-    --color-paper-dark: #E8E6DF;
+    /* 浪花白 (Nami-shiro) */
+    --color-foam: #F0F5F7;
+    --color-foam-cream: #FDF9F3;
 
-    /* Vermilion (Hanko Red) - Accents/Action */
-    --color-vermilion: #D3382F;
-    --color-vermilion-dark: #B91C1C;
+    /* 和紙色 (Washi) - 背景 */
+    --color-washi: #F5F1E8;
+    --color-washi-dark: #E8E2D5;
+    --color-washi-light: #FDFBF7;
 
-    /* Ochre / Wood - Secondary */
-    --color-ochre: #C59D5F;
+    /* 墨色 (Sumi) - 文字與線條 */
+    --color-sumi: #1C1C1C;
+    --color-sumi-light: #3A3A3A;
+    --color-sumi-faded: #5C5C5C;
+
+    /* 朱紅 (Shu-iro) - 印章/強調 */
+    --color-vermilion: #C53D2F;
+    --color-vermilion-dark: #A32E22;
+    --color-vermilion-light: #E25545;
+
+    /* 黃土 (Oudo) - 木船/次要 */
+    --color-ochre: #C4956A;
+    --color-ochre-light: #D9B896;
+
+    /* 山吹色 (Yamabuki) - 金色點綴 */
+    --color-yamabuki: #F5A623;
   }
 
   body {
-    background-color: var(--color-paper);
-    /* Subtle paper grain texture */
-    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='64' height='64' fill='%23F9F7F2'/%3E%3Crect width='64' height='64' fill='%231D3450' opacity='0.03' filter='url(%23noise)'/%3E%3C/svg%3E");
-    color: var(--color-prussian);
-    font-family: "Zen Old Mincho", serif;
+    background-color: var(--color-washi);
+    /* 和紙紋理效果 - 細緻的噪點紋理 */
+    background-image:
+      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    color: var(--color-sumi);
+    font-family: "Zen Kurenaido", "Noto Sans JP", sans-serif;
     min-height: 100vh;
     padding-bottom: 5rem;
     overflow-x: hidden;
@@ -52,26 +70,45 @@
     @apply scroll-smooth;
   }
 
-  /* Typography */
+  /* Typography - 書道風格 */
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    /* Headings use the deep Prussian ink */
     @apply font-zen font-bold;
-    color: var(--color-prussian);
+    color: var(--color-wave-deep);
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl;
+    letter-spacing: 0.05em;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl;
+    letter-spacing: 0.03em;
   }
 
   p,
   span,
   div,
   li {
-    color: var(--color-prussian);
+    color: var(--color-sumi);
   }
 
-  /* Ruby/Furigana alignment */
+  /* Links - 使用朱紅色 */
+  a {
+    color: var(--color-wave-deep);
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: var(--color-vermilion);
+  }
+
+  /* Ruby/Furigana - 振假名 */
   ruby {
     ruby-align: center;
     ruby-position: over;
@@ -80,133 +117,388 @@
   rt {
     ruby-align: center;
     text-align: center;
-    font-size: 0.6em;
-    color: var(--color-cerulean);
-    /* Lighter blue for reading aid */
-    font-weight: bold;
+    font-size: 0.55em;
+    color: var(--color-wave-light);
+    font-weight: 600;
     user-select: none;
+  }
+
+  /* Scrollbar - 浮世繪風格 */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-washi-dark);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-wave-mid);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-wave-deep);
   }
 }
 
 @layer components {
 
-  /* Hokusai Print Card Style */
+  /* === 卡片系統 - 木版畫風格 === */
   .paper-card,
   .glass,
   .card {
-    @apply relative p-6 border-2 transition-all duration-300;
-    background-color: #FAFAFA;
-    /* Slightly lighter than bg */
-    border-color: var(--color-prussian);
-    /* Deep blue shadow offset */
-    box-shadow: 4px 4px 0px 0px rgba(29, 52, 80, 0.2);
+    @apply relative p-6 transition-all duration-300;
+    background-color: var(--color-washi-light);
+    border: 2px solid var(--color-wave-deep);
+    box-shadow: 4px 4px 0px 0px rgba(26, 58, 92, 0.2);
   }
 
-  /* Interactive Card - Hover effects */
+  /* 互動卡片 */
   .card-interactive,
   .glass-hover {
-    @apply paper-card cursor-pointer hover:-translate-y-1;
+    @apply paper-card cursor-pointer;
   }
 
   .card-interactive:hover,
   .glass-hover:hover {
+    @apply -translate-y-1;
     border-color: var(--color-vermilion);
-    /* Red border on hover */
-    box-shadow: 6px 6px 0px 0px rgba(211, 56, 47, 0.25);
-    /* Red shadow on hover */
+    box-shadow: 6px 6px 0px 0px rgba(197, 61, 47, 0.2);
   }
 
-  /* Form Elements - Calligraphy Style */
+  .card-interactive:active,
+  .glass-hover:active {
+    @apply translate-y-0;
+    box-shadow: 2px 2px 0px 0px rgba(26, 58, 92, 0.2);
+  }
+
+  /* === 表單元素 - 書道風格 === */
   input[type="text"],
   input[type="email"],
   input[type="password"],
-  input[type="number"] {
-    @apply w-full bg-transparent border-b-2 border-indigo-900/30 px-2 py-2 text-lg text-indigo-900 transition-all outline-none rounded-none;
+  input[type="number"],
+  textarea {
+    @apply w-full bg-transparent px-3 py-2 text-lg transition-all outline-none rounded-none;
     font-family: "Zen Kurenaido", sans-serif;
-    border-color: rgba(29, 52, 80, 0.3);
-    color: var(--color-prussian);
+    color: var(--color-sumi);
+    border: none;
+    border-bottom: 2px solid var(--color-wave-mid);
+    background: transparent;
   }
 
-  input:focus {
-    @apply bg-blue-50/50;
-    border-color: var(--color-cerulean);
+  input:focus,
+  textarea:focus {
+    border-bottom-color: var(--color-vermilion);
+    background: rgba(240, 245, 247, 0.5);
   }
 
-  input::placeholder {
-    color: rgba(29, 52, 80, 0.4);
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-sumi-faded);
+    opacity: 0.6;
   }
 
-  /* Hanko (Seal) Button - Primary Action */
+  /* Select 下拉選單 */
+  select {
+    @apply w-full px-3 py-2 text-lg transition-all outline-none rounded-none cursor-pointer;
+    font-family: "Zen Kurenaido", sans-serif;
+    color: var(--color-sumi);
+    background-color: var(--color-washi-light);
+    border: 2px solid var(--color-wave-mid);
+  }
+
+  select:focus {
+    border-color: var(--color-vermilion);
+  }
+
+  /* === 按鈕系統 === */
+
+  /* 主要按鈕 - 朱印風格 */
   .btn-primary {
-    @apply relative inline-flex items-center justify-center px-6 py-3 font-zen font-bold text-xl text-white transition-all duration-200 overflow-hidden select-none;
+    @apply relative inline-flex items-center justify-center px-6 py-3 font-zen font-bold text-lg text-white transition-all duration-200 overflow-hidden select-none;
     background-color: var(--color-vermilion);
     border: 2px solid var(--color-vermilion-dark);
-    border-radius: 8px 4px 8px 4px;
-    /* Organic seal shape */
-    box-shadow: 2px 2px 0px 0px rgba(29, 52, 80, 0.3);
+    border-radius: 6px 3px 6px 3px;
+    box-shadow: 3px 3px 0px 0px rgba(26, 58, 92, 0.3);
   }
 
   .btn-primary:hover {
-    @apply transform -translate-y-0.5;
-    background-color: #E04036;
-    /* Slightly brighter red */
-    box-shadow: 4px 4px 0px 0px rgba(29, 52, 80, 0.3);
+    @apply -translate-y-0.5;
+    background-color: var(--color-vermilion-light);
+    box-shadow: 5px 5px 0px 0px rgba(26, 58, 92, 0.25);
   }
 
   .btn-primary:active {
-    @apply transform translate-y-0.5 scale-95;
-    box-shadow: 0px 0px 0px 0px rgba(29, 52, 80, 0.3);
+    @apply translate-y-0.5;
+    box-shadow: 1px 1px 0px 0px rgba(26, 58, 92, 0.3);
   }
 
-  /* Wave Button - Secondary Action */
+  .btn-primary:disabled {
+    @apply opacity-50 cursor-not-allowed transform-none;
+    background-color: var(--color-sumi-faded);
+    border-color: var(--color-sumi-faded);
+  }
+
+  /* 次要按鈕 - 波浪風格 */
   .btn-secondary {
-    @apply relative inline-flex items-center justify-center px-6 py-3 font-zen font-bold text-xl transition-all duration-200 select-none;
+    @apply relative inline-flex items-center justify-center px-6 py-3 font-zen font-bold text-lg transition-all duration-200 select-none;
     background-color: var(--color-foam);
-    color: var(--color-prussian);
-    border: 2px solid var(--color-prussian);
+    color: var(--color-wave-deep);
+    border: 2px solid var(--color-wave-deep);
     border-radius: 4px;
-    box-shadow: 3px 3px 0px 0px rgba(29, 52, 80, 0.15);
+    box-shadow: 3px 3px 0px 0px rgba(26, 58, 92, 0.15);
   }
 
   .btn-secondary:hover {
-    @apply transform -translate-y-0.5;
+    @apply -translate-y-0.5;
     background-color: #fff;
-    box-shadow: 5px 5px 0px 0px rgba(29, 52, 80, 0.2);
+    border-color: var(--color-wave-mid);
+    box-shadow: 5px 5px 0px 0px rgba(26, 58, 92, 0.2);
   }
 
   .btn-secondary:active {
-    @apply transform translate-y-0.5;
-    box-shadow: 1px 1px 0px 0px rgba(29, 52, 80, 0.2);
+    @apply translate-y-0.5;
+    box-shadow: 1px 1px 0px 0px rgba(26, 58, 92, 0.2);
   }
 
-  /* Text Selection */
+  /* 幽靈按鈕 */
+  .btn-ghost {
+    @apply relative inline-flex items-center justify-center px-4 py-2 font-zen font-bold transition-all duration-200;
+    color: var(--color-wave-deep);
+    background: transparent;
+    border: none;
+  }
+
+  .btn-ghost:hover {
+    color: var(--color-vermilion);
+    background: rgba(197, 61, 47, 0.1);
+  }
+
+  /* === 標籤與徽章 === */
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-bold;
+    background-color: var(--color-foam);
+    color: var(--color-wave-deep);
+    border: 1px solid var(--color-wave-mid);
+  }
+
+  .badge-vermilion {
+    background-color: var(--color-vermilion);
+    color: white;
+    border-color: var(--color-vermilion-dark);
+  }
+
+  .badge-ochre {
+    background-color: var(--color-ochre-light);
+    color: var(--color-sumi);
+    border-color: var(--color-ochre);
+  }
+
+  /* === 分隔線 === */
+  .divider {
+    @apply w-full h-0.5 my-4;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        var(--color-wave-mid) 20%,
+        var(--color-wave-deep) 50%,
+        var(--color-wave-mid) 80%,
+        transparent 100%);
+  }
+
+  .divider-vertical {
+    @apply w-0.5 h-full mx-2;
+    background: linear-gradient(180deg,
+        transparent 0%,
+        var(--color-wave-mid) 20%,
+        var(--color-wave-deep) 50%,
+        var(--color-wave-mid) 80%,
+        transparent 100%);
+  }
+
+  /* === 波浪裝飾元素 === */
+  .wave-decoration {
+    position: relative;
+  }
+
+  .wave-decoration::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: repeating-linear-gradient(90deg,
+        var(--color-wave-deep) 0px,
+        var(--color-wave-mid) 10px,
+        var(--color-wave-light) 20px,
+        var(--color-wave-mid) 30px,
+        var(--color-wave-deep) 40px);
+    border-radius: 2px;
+  }
+
+  /* === 進度條 === */
+  .progress-bar {
+    @apply w-full h-3 overflow-hidden;
+    background-color: var(--color-washi-dark);
+    border: 1px solid var(--color-wave-mid);
+  }
+
+  .progress-bar-fill {
+    @apply h-full transition-all duration-500;
+    background: linear-gradient(90deg, var(--color-wave-light), var(--color-wave-mid), var(--color-wave-deep));
+  }
+
+  .progress-bar-vermilion .progress-bar-fill {
+    background: linear-gradient(90deg, var(--color-vermilion-light), var(--color-vermilion), var(--color-vermilion-dark));
+  }
+
+  /* === 工具提示 === */
+  .tooltip {
+    @apply relative;
+  }
+
+  .tooltip::after {
+    @apply absolute hidden px-2 py-1 text-xs text-white whitespace-nowrap z-50;
+    content: attr(data-tooltip);
+    background-color: var(--color-wave-deep);
+    border-radius: 2px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 4px;
+  }
+
+  .tooltip:hover::after {
+    @apply block;
+  }
+
+  /* === 文字選取效果 === */
   ::selection {
-    background-color: var(--color-cerulean);
+    background-color: var(--color-wave-light);
     color: #fff;
+  }
+
+  /* === 裝飾邊框 === */
+  .border-wave {
+    border-color: var(--color-wave-deep);
+  }
+
+  .border-vermilion {
+    border-color: var(--color-vermilion);
+  }
+
+  /* === 浮世繪風格裝飾框 === */
+  .ukiyo-frame {
+    @apply relative p-4;
+    border: 3px solid var(--color-wave-deep);
+    background-color: var(--color-washi-light);
+  }
+
+  .ukiyo-frame::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: -4px;
+    bottom: -4px;
+    border: 1px solid var(--color-wave-mid);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* === 印章效果 === */
+  .hanko {
+    @apply inline-flex items-center justify-center font-zen font-bold;
+    color: var(--color-vermilion);
+    border: 2px solid var(--color-vermilion);
+    border-radius: 50%;
+    aspect-ratio: 1;
+  }
+
+  .hanko-square {
+    @apply hanko;
+    border-radius: 4px;
   }
 }
 
 @layer utilities {
-  .text-gradient {
-    /* Gradient mimicking the Great Wave: Deep Blue -> Foam White -> Sky */
-    background: linear-gradient(135deg, var(--color-prussian) 0%, var(--color-cerulean) 100%);
+  /* === 文字漸層 === */
+  .text-gradient-wave {
+    background: linear-gradient(135deg, var(--color-wave-deep) 0%, var(--color-wave-light) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: var(--color-prussian);
-    /* Fallback */
   }
 
+  .text-gradient-vermilion {
+    background: linear-gradient(135deg, var(--color-vermilion) 0%, var(--color-vermilion-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* === 字體工具 === */
   .font-zen {
-    font-family: "Zen Kurenaido", sans-serif;
+    font-family: "Zen Kurenaido", "Noto Sans JP", sans-serif;
   }
 
-  /* Utilities for layout Ma (Negative Space) */
+  .font-mincho {
+    font-family: "Shippori Mincho", "Noto Serif JP", serif;
+  }
+
+  /* === 間距工具 (Ma - 間) === */
   .ma-y {
     @apply py-8 md:py-12;
   }
 
   .ma-x {
     @apply px-4 md:px-8;
+  }
+
+  /* === 顏色工具類 === */
+  .text-wave-deep {
+    color: var(--color-wave-deep);
+  }
+
+  .text-wave-mid {
+    color: var(--color-wave-mid);
+  }
+
+  .text-wave-light {
+    color: var(--color-wave-light);
+  }
+
+  .text-vermilion {
+    color: var(--color-vermilion);
+  }
+
+  .text-sumi {
+    color: var(--color-sumi);
+  }
+
+  .text-sumi-faded {
+    color: var(--color-sumi-faded);
+  }
+
+  .bg-washi {
+    background-color: var(--color-washi);
+  }
+
+  .bg-washi-light {
+    background-color: var(--color-washi-light);
+  }
+
+  .bg-foam {
+    background-color: var(--color-foam);
+  }
+
+  .bg-wave-deep {
+    background-color: var(--color-wave-deep);
+  }
+
+  .bg-vermilion {
+    background-color: var(--color-vermilion);
   }
 }
