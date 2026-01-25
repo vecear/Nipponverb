@@ -2,14 +2,61 @@ import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, BookOpen, Lightbulb, HelpCircle, Check, X } from 'lucide-react'
 import { grammarDetails } from '../data/grammarDetails'
 import { grammarList } from '../data/grammarList'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { useMemo } from 'react'
 import type { QuizExplanation } from '../types/grammar'
+import { useNav, createGrammarNavItems } from '../contexts/NavContext'
 
 const GrammarDetail = () => {
     const { id } = useParams<{ id: string }>()
     const detail = id ? grammarDetails[id] : undefined
     const listItem = useMemo(() => grammarList.find(item => item.id === id), [id])
+    const { setCustomNavItems, setActiveSection } = useNav()
+
+    const scrollToSection = useCallback((sectionId: string) => {
+        const el = document.getElementById(sectionId)
+        if (el) {
+            const offset = 80 // Account for sticky nav
+            const top = el.getBoundingClientRect().top + window.scrollY - offset
+            window.scrollTo({ top, behavior: 'smooth' })
+        }
+    }, [])
+
+    // Set custom nav items when component mounts
+    useEffect(() => {
+        if (detail) {
+            const navItems = createGrammarNavItems(
+                !!detail.analysis,
+                !!(detail.quiz && detail.quiz.length > 0),
+                scrollToSection
+            )
+            setCustomNavItems(navItems)
+        }
+
+        // Clear custom nav items when unmounting
+        return () => {
+            setCustomNavItems(null)
+        }
+    }, [detail, scrollToSection, setCustomNavItems])
+
+    // Scroll spy to update active section
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = ['usage', 'analysis', 'quiz']
+            for (const section of sections.reverse()) {
+                const el = document.getElementById(section)
+                if (el) {
+                    const rect = el.getBoundingClientRect()
+                    if (rect.top <= 150) {
+                        setActiveSection(section)
+                        break
+                    }
+                }
+            }
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [setActiveSection])
 
     // Quiz state
     const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>({})
@@ -93,7 +140,7 @@ const GrammarDetail = () => {
             <div className="max-w-4xl mx-auto space-y-8">
                 {/* Header */}
                 <header>
-                    <Link to="/grammar" className="inline-flex items-center text-indigo-900/90 hover:text-indigo-700 mb-6 transition-colors">
+                    <Link to="/grammar" className="inline-flex items-center text-indigo-900/90 hover:text-indigo-700 mb-6 transition-colors md:hidden">
                         <ArrowLeft size={20} className="mr-2" />
                         返回列表
                     </Link>
@@ -123,7 +170,7 @@ const GrammarDetail = () => {
                 </section>
 
                 {/* Explanation & Usages */}
-                <section className="space-y-6">
+                <section id="usage" className="space-y-6 scroll-mt-24">
                     <h3 className="text-2xl font-bold text-indigo-900 mb-4">用法解析</h3>
                     {detail.explanation.map((usage) => (
                         <div key={usage.usageId} className="bg-indigo-900/5 border border-indigo-900/10 rounded-2xl p-6">
@@ -157,7 +204,7 @@ const GrammarDetail = () => {
 
                 {/* Analysis/Comparison */}
                 {detail.analysis && (
-                    <section className="bg-indigo-900/5 border border-indigo-900/10 rounded-2xl p-6">
+                    <section id="analysis" className="bg-indigo-900/5 border border-indigo-900/10 rounded-2xl p-6 scroll-mt-24">
                         <h3 className="text-xl font-bold text-indigo-900 mb-4 flex items-center">
                             <Lightbulb size={24} className="mr-2 text-gold" />
                             {detail.analysis.title}
@@ -189,7 +236,7 @@ const GrammarDetail = () => {
 
                 {/* Quiz */}
                 {detail.quiz && detail.quiz.length > 0 && (
-                    <section className="space-y-4 pt-8">
+                    <section id="quiz" className="space-y-4 pt-8 scroll-mt-24">
                         <h3 className="text-2xl font-bold text-indigo-900 mb-4 flex items-center">
                             <HelpCircle size={24} className="mr-2" />
                             隨堂測驗
@@ -252,6 +299,17 @@ const GrammarDetail = () => {
                         })}
                     </section>
                 )}
+
+                {/* Back to List Button - Desktop only */}
+                <div className="pt-8 pb-4 hidden md:flex justify-center">
+                    <Link
+                        to="/grammar"
+                        className="inline-flex items-center px-6 py-3 bg-indigo-900/10 hover:bg-indigo-900/20 rounded-xl text-indigo-900 font-medium transition-all"
+                    >
+                        <ArrowLeft size={20} className="mr-2" />
+                        返回列表
+                    </Link>
+                </div>
             </div>
         </div>
     )

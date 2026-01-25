@@ -14,6 +14,7 @@ export interface GrammarUsage {
 
 export interface AnalysisPoint {
     rule: string;
+    explanation?: string;
     example?: GrammarExample;
     examples?: GrammarExample[];
 }
@@ -29,6 +30,7 @@ export interface GrammarAnalysis {
         correct?: { sentence: string; note: string };
         incorrect?: { sentence: string; note: string };
     }[];
+    summary?: string;
 }
 
 export interface QuizExplanation {
@@ -45,6 +47,26 @@ export interface QuizQuestion {
     explanation?: string | QuizExplanation;
 }
 
+export interface GrammarTipItem {
+    mistake: string;
+    explanation: string;
+    whenToUse?: string;
+    correct: { sentence: string; note: string };
+    incorrect: { sentence: string; note: string };
+    additionalExamples?: {
+        context: string;
+        correct: { sentence: string; note: string };
+        incorrect: { sentence: string; note: string };
+    }[];
+    memoryTip?: string;
+    relatedPatterns?: string[];
+}
+
+export interface GrammarTips {
+    title: string;
+    items: GrammarTipItem[];
+}
+
 export interface GrammarPoint {
     id: string;
     pattern: string;
@@ -53,6 +75,7 @@ export interface GrammarPoint {
     level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
     explanation: GrammarUsage[];
     analysis?: GrammarAnalysis;
+    tips?: GrammarTips;
     quiz: QuizQuestion[];
 }
 

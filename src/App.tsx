@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
+import { NavProvider } from './contexts/NavContext'
 import Layout from './components/Layout'
 import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
@@ -22,6 +23,7 @@ function App() {
   return (
     <AuthProvider>
       <Router>
+        <NavProvider>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route element={<ProtectedRoute><Layout /></ProtectedRoute>}>
@@ -42,6 +44,7 @@ function App() {
           {/* 管理員路由 */}
           <Route path="/admin" element={<AdminRoute><Admin /></AdminRoute>} />
         </Routes>
+        </NavProvider>
       </Router>
     </AuthProvider>
   )

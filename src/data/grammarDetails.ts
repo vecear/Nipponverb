@@ -1,76 +1,15 @@
 import { GrammarPoint } from '../types/grammar';
 import { n5Details } from './details/n5';
 import { n4Details } from './details/n4';
+import { n3Details } from './details/n3';
+// import { n1Details } from './details/n1'; // TODO: n1.ts 需要修復語法錯誤
 
 export const grammarDetails: Record<string, GrammarPoint> = {
     ...n5Details,
     ...n4Details,
-    // N3 示例文法
-    'n3_amari': {
-        id: 'n3_amari',
-        pattern: 'あまり',
-        connection: '動詞辭书形 / 普通刑 + あまり\n名詞 + の + あまり\nな形容詞 + な + あまり',
-        translation: '太...以至於...; 因過度...',
-        level: 'N3',
-        explanation: [
-            {
-                usageId: 1,
-                title: '因過度...而導致消極結果',
-                description: '表示由於程度過甚，導致了不好的結果。通常帶有消極、負面的含義。前接表示情感或狀態的詞語較多。',
-                examples: [
-                    {
-                        japanese: '驚{おどろ}きのあまり、声{こえ}も出{で}なかった。',
-                        chinese: '因為太過驚訝，連聲音都發不出來。'
-                    },
-                    {
-                        japanese: '心配{しんぱい}するあまり、病気{びょうき}になってしまった。',
-                        chinese: '因為過度擔心，結果生病了。'
-                    },
-                    {
-                        japanese: '嬉{うれ}しさのあまり、泣{な}き出{だ}してしまった。',
-                        chinese: '因為太高興，結果哭了出來。'
-                    }
-                ]
-            }
-        ],
-        quiz: [
-            {
-                id: 'n3_quiz_amari_1',
-                sentence: '忙しさ（　）、昼ご飯を食べるのを忘れていた。',
-                options: ['のあまり', 'あまり', 'なあまり', 'であまり'],
-                correctIndex: 0,
-                explanation: '「忙しさ」是名詞，接續「あまり」時須加「の」。即「名詞 + の + あまり」。'
-            },
-            {
-                id: 'n3_quiz_amari_2',
-                sentence: '彼は怒りの（　）、机を叩いた。',
-                options: ['あまり', 'まま', 'うえ', 'ため'],
-                correctIndex: 0,
-                explanation: '表示「因過度憤怒而...」，使用「（の）あまり」。'
-            },
-            {
-                id: 'n3_quiz_amari_3',
-                sentence: '感激した（　）、何も言えなくなった。',
-                options: ['あげく', 'あまり', 'うえ', '結果'],
-                correctIndex: 1,
-                explanation: '前接動詞「感激した」，表示因程度過甚導致的結果。'
-            },
-            {
-                id: 'n3_quiz_amari_4',
-                sentence: '「どうしたの？顔色が悪いよ。」\n「緊張の（　）、昨夜は一睡もできなかったんだ。」',
-                options: ['せい', 'あまり', 'おかげ', 'ため'],
-                correctIndex: 1,
-                explanation: '對話情境。'
-            },
-            {
-                id: 'n3_quiz_amari_5',
-                sentence: '「彼、急に走り出したけど…。」\n「急ぐ（　）、携帯を忘れていったよ。」',
-                options: ['あまり', 'ため', 'のに', 'ので'],
-                correctIndex: 0,
-                explanation: '對話情境。'
-            }
-        ]
-    },
+    ...n3Details,
+    // ...n1Details, // TODO: 修復後取消註解
+    // N2 示例文法 (待遷移至 n2.ts)
     'n2_ageku': {
         id: 'n2_ageku',
         pattern: 'あげく',
@@ -92,8 +31,9 @@ export const grammarDetails: Record<string, GrammarPoint> = {
                         chinese: '他給父母添盡了麻煩，最後竟然離家出走了。'
                     },
                     {
-                        japanese: '口論{こうろん}のあげく、殴{なぐ}り合{あ}いの喧嘩{けんか}になった。',
-                        chinese: '爭吵到最後，變成了互毆。'
+                        japanese: '「新しいパソコン、買ったの？」\n「うん、どの機種にするか迷ったあげく、結局買わなかったんだ。」\n「ええ？時間もったいなかったね。」',
+                        chinese: '「新電腦買了嗎？」\n「嗯，猶豫了半天要買哪個型號，結果最後沒買。」\n「咦？太浪費時間了吧。」',
+                        note: '對話情境展示'
                     }
                 ]
             }
@@ -115,41 +55,42 @@ export const grammarDetails: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n2_quiz_ageku_1',
-                sentence: 'いろいろ悩んだ（　）、会社を辞めることにした。',
+                sentence: 'いろいろ悩{なや}んだ（　）、会社{かいしゃ}を辞{や}めることにした。',
                 options: ['あげく', 'きり', '一方', '際'],
                 correctIndex: 0,
                 explanation: '「悩んだ」為過去式（た形），表示經過一番煩惱，最終做出了決定。'
             },
             {
                 id: 'n2_quiz_ageku_2',
-                sentence: '彼は借金を重ねた（　）、犯罪に手を染めてしまった。',
+                sentence: '彼{かれ}は借金{しゃっきん}を重{かさ}ねた（　）、犯罪{はんざい}に手{て}を染{そ}めてしまった。',
                 options: ['あげく', '末', '結果', '以上'],
                 correctIndex: 0,
-                explanation: '典型的負面結果。'
+                explanation: '典型的負面結果。不斷借錢，最後淪為犯罪。'
             },
             {
                 id: 'n2_quiz_ageku_3',
-                sentence: '大喧嘩の（　）、二人は別れてしまった。',
+                sentence: '大喧嘩{おおげんか}の（　）、二人{ふたり}は別{わか}れてしまった。',
                 options: ['あげく', 'あと', 'ところ', 'ばかり'],
                 correctIndex: 0,
-                explanation: '「大喧嘩のあげく」（名詞+の）。'
+                explanation: '「大喧嘩のあげく」（名詞+の）。大吵之後分手了。'
             },
             {
                 id: 'n2_quiz_ageku_4',
-                sentence: '「新しいパソコン、買ったの？」\n「うん、どの機種にするか迷った（　）、結局買わなかったんだ。」',
+                sentence: '「会議{かいぎ}どうだった？」\n「5時間{じかん}も議論{ぎろん}した（　）、結局{けっきょく}何{なに}も決{き}まらなかったよ。」',
                 options: ['あげく', '末', '結果', 'あと'],
                 correctIndex: 0,
-                explanation: '對話情境。猶豫了半天，最後「沒買」（徒勞無功）。'
+                explanation: '對話情境。討論了5小時，結果什麼都沒決定。'
             },
             {
                 id: 'n2_quiz_ageku_5',
-                sentence: '「田中さん、遅いですね。」\n「電話で1時間も待たされた（　）、今日は行けないと言われました。」',
+                sentence: '「田中{たなか}さん、遅{おそ}いですね。」\n「電話{でんわ}で1時間{じかん}も待{ま}たされた（　）、今日{きょう}は行{い}けないと言{い}われました。」',
                 options: ['ところ', 'あげく', '末', 'ばかり'],
                 correctIndex: 1,
-                explanation: '對話情境。'
+                explanation: '對話情境。等了一小時，結果說不能來。'
             }
         ]
     },
+    // N1 示例文法 (待遷移至 n1.ts)
     'n1_sura': {
         id: 'n1_sura',
         pattern: 'すら',
@@ -171,47 +112,62 @@ export const grammarDetails: Record<string, GrammarPoint> = {
                         chinese: '他甚至連自己的名字都不會寫。'
                     },
                     {
-                        japanese: 'そんなことは、子供{こども}ですら知{し}っている。',
-                        chinese: '那種事情，連小孩子都知道。'
+                        japanese: '「この問題{もんだい}、難{むずか}しいね。」\n「そうだね。先生{せんせい}ですら解{と}けなかったらしいよ。」\n「えっ、そんなに難{むずか}しいの？」',
+                        chinese: '「這問題好難啊。」\n「是啊。聽說連老師都解不開呢。」\n「咦，有那麼難嗎？」',
+                        note: '對話情境展示'
                     }
                 ]
             }
         ],
+        analysis: {
+            title: '「すら」與「さえ」的比較',
+            description: '兩者意思相近，但語感和使用場合不同。',
+            points: [
+                {
+                    rule: '「すら」：較書面、文語調，語氣較強硬。',
+                    examples: [{ japanese: '名前{なまえ}すら知{し}らない。', chinese: '連名字都不知道。' }]
+                },
+                {
+                    rule: '「さえ」：較口語，使用範圍較廣。',
+                    examples: [{ japanese: '名前{なまえ}さえ知{し}らない。', chinese: '連名字都不知道。' }]
+                }
+            ]
+        },
         quiz: [
             {
                 id: 'n1_quiz_sura_1',
-                sentence: '足が痛くて、立つこと（　）できない。',
+                sentence: '足{あし}が痛{いた}くて、立{た}つこと（　）できない。',
                 options: ['すら', 'こそ', 'ばかり', 'だけ'],
                 correctIndex: 0,
                 explanation: '舉出「站立」這個最基本的動作都做不到，暗示腳痛的程度嚴重。'
             },
             {
                 id: 'n1_quiz_sura_2',
-                sentence: '先生（　）その問題は解けなかった。',
+                sentence: '先生{せんせい}（　）その問題{もんだい}は解{と}けなかった。',
                 options: ['すら', 'しか', 'こそ', 'ほど'],
                 correctIndex: 0,
-                explanation: '連老師（專家）都解不開。'
+                explanation: '連老師（專家）都解不開，暗示其他人更不可能。'
             },
             {
                 id: 'n1_quiz_sura_3',
-                sentence: 'この病気は原因（　）わかっていない。',
+                sentence: 'この病気{びょうき}は原因{げんいん}（　）わかっていない。',
                 options: ['すら', 'さえ', 'まで', 'ほど'],
                 correctIndex: 0,
-                explanation: '連「原因」這個最基本的資訊都不知道。'
+                explanation: '連「原因」這個最基本的資訊都不知道。「すら」比「さえ」更強調極端性。'
             },
             {
                 id: 'n1_quiz_sura_4',
-                sentence: '「彼、大丈夫かな？」\n「重傷で、水（　）飲めない状態らしいよ。」',
+                sentence: '「彼{かれ}、大丈夫{だいじょうぶ}かな？」\n「重傷{じゅうしょう}で、水{みず}（　）飲{の}めない状態{じょうたい}らしいよ。」',
                 options: ['すら', 'こそ', 'だけ', 'しか'],
                 correctIndex: 0,
                 explanation: '對話情境。連「水」這種維持生命最基本的東西都喝不下。'
             },
             {
                 id: 'n1_quiz_sura_5',
-                sentence: '「この書類、読みましたか？」\n「忙しくて、目を通すこと（　）できていません。」',
+                sentence: '「この書類{しょるい}、読{よ}みましたか？」\n「忙{いそが}しくて、目{め}を通{とお}すこと（　）できていません。」',
                 options: ['すら', 'こそ', 'まで', 'ばかり'],
                 correctIndex: 0,
-                explanation: '對話情境。'
+                explanation: '對話情境。連「過目」這種最基本的事都沒做到。'
             }
         ]
     }

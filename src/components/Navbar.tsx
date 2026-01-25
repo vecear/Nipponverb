@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
+import { useNav } from '../contexts/NavContext'
 import { useTranslation } from 'react-i18next'
 import {
   Shield,
@@ -18,10 +19,14 @@ import { BRAND } from '../config/assets'
 const Navbar = () => {
   const { currentUser, logout } = useAuth()
   const { profile } = useUserStore()
+  const { customNavItems, activeSection } = useNav()
   const navigate = useNavigate()
   const location = useLocation()
   const { t } = useTranslation()
   const [isUserAdmin, setIsUserAdmin] = useState(false)
+
+  // Check if we're on a grammar detail page
+  const isGrammarDetailPage = location.pathname.startsWith('/grammar/') && customNavItems
 
   // 檢查是否為管理員
   useEffect(() => {
@@ -83,15 +88,45 @@ const Navbar = () => {
 
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-6">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className={`font-zen font-semibold transition-colors ${location.pathname === link.to ? 'text-vermilion border-b-2 border-vermilion' : 'text-wave-deep/90 hover:text-vermilion'}`}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {isGrammarDetailPage && customNavItems ? (
+                // Grammar detail page custom navigation
+                customNavItems.map((item) => {
+                  const isActive = !item.isLink && activeSection === item.id
+                  if (item.isLink && item.to) {
+                    return (
+                      <Link
+                        key={item.id}
+                        to={item.to}
+                        className="font-zen font-semibold transition-colors text-wave-deep/90 hover:text-vermilion flex items-center gap-2"
+                      >
+                        <item.icon size={18} />
+                        {item.label}
+                      </Link>
+                    )
+                  }
+                  return (
+                    <button
+                      key={item.id}
+                      onClick={item.onClick}
+                      className={`font-zen font-semibold transition-colors flex items-center gap-2 ${isActive ? 'text-vermilion border-b-2 border-vermilion' : 'text-wave-deep/90 hover:text-vermilion'}`}
+                    >
+                      <item.icon size={18} />
+                      {item.label}
+                    </button>
+                  )
+                })
+              ) : (
+                // Default navigation
+                navLinks.map((link) => (
+                  <Link
+                    key={link.to}
+                    to={link.to}
+                    className={`font-zen font-semibold transition-colors ${location.pathname === link.to ? 'text-vermilion border-b-2 border-vermilion' : 'text-wave-deep/90 hover:text-vermilion'}`}
+                  >
+                    {link.label}
+                  </Link>
+                ))
+              )}
             </div>
 
             <div className="flex items-center space-x-4">
@@ -134,19 +169,52 @@ const Navbar = () => {
       {/* Mobile Bottom Navigation Bar - 浮世繪風格 */}
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden pb-safe">
         <div className="flex justify-around items-center px-2 py-3 border-t-2 border-wave-deep bg-washi-light shadow-[0_-4px_6px_-1px_rgba(26,58,92,0.15)]">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={`flex flex-col items-center justify-center p-2 rounded-lg transition-all ${location.pathname === link.to
-                ? 'text-vermilion scale-110'
-                : 'text-wave-deep/80 hover:text-wave-deep'
+          {isGrammarDetailPage && customNavItems ? (
+            // Grammar detail page custom navigation
+            customNavItems.map((item) => {
+              const isActive = !item.isLink && activeSection === item.id
+              if (item.isLink && item.to) {
+                return (
+                  <Link
+                    key={item.id}
+                    to={item.to}
+                    className="flex flex-col items-center justify-center p-2 rounded-lg transition-all text-wave-deep/80 hover:text-wave-deep"
+                  >
+                    <item.icon size={24} />
+                    <span className="text-[10px] mt-1 font-zen font-bold">{item.label}</span>
+                  </Link>
+                )
+              }
+              return (
+                <button
+                  key={item.id}
+                  onClick={item.onClick}
+                  className={`flex flex-col items-center justify-center p-2 rounded-lg transition-all ${isActive
+                    ? 'text-vermilion scale-110'
+                    : 'text-wave-deep/80 hover:text-wave-deep'
+                  }`}
+                >
+                  <item.icon size={24} strokeWidth={isActive ? 2.5 : 2} />
+                  <span className="text-[10px] mt-1 font-zen font-bold">{item.label}</span>
+                </button>
+              )
+            })
+          ) : (
+            // Default navigation
+            navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`flex flex-col items-center justify-center p-2 rounded-lg transition-all ${location.pathname === link.to
+                  ? 'text-vermilion scale-110'
+                  : 'text-wave-deep/80 hover:text-wave-deep'
                 }`}
-            >
-              <link.icon size={24} strokeWidth={location.pathname === link.to ? 2.5 : 2} />
-              <span className="text-[10px] mt-1 font-zen font-bold">{link.label}</span>
-            </Link>
-          ))}
+              >
+                <link.icon size={24} strokeWidth={location.pathname === link.to ? 2.5 : 2} />
+                <span className="text-[10px] mt-1 font-zen font-bold">{link.label}</span>
+              </Link>
+            ))
+          )}
         </div>
       </div>
     </>

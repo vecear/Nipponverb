@@ -11339,5 +11339,5 @@ Object.assign(n5Details, {
                 }
             }
         ]
-    }
+    },
 });

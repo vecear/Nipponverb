@@ -1,12 +1,37 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Search } from 'lucide-react'
 import { grammarList } from '../data/grammarList'
 
+const STORAGE_KEY = 'grammarListState'
+
 const GrammarList = () => {
     const navigate = useNavigate()
-    const [selectedLevel, setSelectedLevel] = useState<'ALL' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1'>('ALL')
+    const isInitialMount = useRef(true)
+
+    // Restore state from sessionStorage on mount
+    const savedState = sessionStorage.getItem(STORAGE_KEY)
+    const initialState = savedState ? JSON.parse(savedState) : { level: 'ALL', scrollY: 0 }
+
+    const [selectedLevel, setSelectedLevel] = useState<'ALL' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1'>(initialState.level)
     const [searchQuery, setSearchQuery] = useState('')
+
+    // Restore scroll position after initial render
+    useEffect(() => {
+        if (isInitialMount.current && initialState.scrollY > 0) {
+            // Use requestAnimationFrame to ensure DOM is ready
+            requestAnimationFrame(() => {
+                window.scrollTo(0, initialState.scrollY)
+            })
+            isInitialMount.current = false
+        }
+    }, [])
+
+    // Save level to sessionStorage when it changes
+    useEffect(() => {
+        const currentState = { level: selectedLevel, scrollY: window.scrollY }
+        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(currentState))
+    }, [selectedLevel])
 
     const filteredGrammar = useMemo(() => {
         return grammarList.filter(item => {
@@ -86,7 +111,14 @@ const GrammarList = () => {
                                     filteredGrammar.map((item) => (
                                         <tr
                                             key={item.id}
-                                            onClick={() => navigate(`/grammar/${item.id}`)}
+                                            onClick={() => {
+                                                // Save current scroll position before navigating
+                                                sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
+                                                    level: selectedLevel,
+                                                    scrollY: window.scrollY
+                                                }))
+                                                navigate(`/grammar/${item.id}`)
+                                            }}
                                             className="hover:bg-indigo-900/5 transition-colors group cursor-pointer"
                                         >
                                             <td className="p-4">
