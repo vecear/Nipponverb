@@ -49,8 +49,8 @@ const GrammarDetail = () => {
             const style = document.createElement('style')
             style.id = 'ruby-style'
             style.innerHTML = `
-                ruby { font-family: sans-serif; }
-                rt { font-size: 0.6em; color: rgba(255, 255, 255, 0.7); }
+                ruby { font-family: inherit; }
+                rt { font-size: 0.6em; color: rgba(255, 255, 255, 0.9); }
             `
             document.head.appendChild(style)
         }
@@ -79,7 +79,7 @@ const GrammarDetail = () => {
                     <h2 className="text-2xl font-bold text-white mb-4">
                         {listItem ? `「${listItem.grammar}」的詳細教學準備中` : '找不到此文法項目'}
                     </h2>
-                    <p className="text-white/60 mb-8">我們正在努力製作更多內容，請稍後再試。</p>
+                    <p className="text-white/90 mb-8">我們正在努力製作更多內容，請稍後再試。</p>
                     <Link to="/grammar" className="px-6 py-2 bg-white/10 hover:bg-white/20 rounded-lg text-white transition-all">
                         返回列表
                     </Link>
@@ -93,7 +93,7 @@ const GrammarDetail = () => {
             <div className="max-w-4xl mx-auto space-y-8">
                 {/* Header */}
                 <header>
-                    <Link to="/grammar" className="inline-flex items-center text-white/60 hover:text-white mb-6 transition-colors">
+                    <Link to="/grammar" className="inline-flex items-center text-white/90 hover:text-white mb-6 transition-colors">
                         <ArrowLeft size={20} className="mr-2" />
                         返回列表
                     </Link>
@@ -140,7 +140,7 @@ const GrammarDetail = () => {
                                         <div className="text-lg text-white mb-1 font-zen">
                                             {renderFurigana(ex.japanese)}
                                         </div>
-                                        <div className="text-white/60 text-sm">
+                                        <div className="text-white/90 text-sm">
                                             {ex.chinese}
                                         </div>
                                         {ex.grammarRef && (
@@ -176,7 +176,7 @@ const GrammarDetail = () => {
                                             {point.examples && point.examples.map((ex, j) => (
                                                 <div key={j} className="bg-black/20 rounded-lg p-3 text-sm">
                                                     <div className="text-white mb-1">{renderFurigana(ex.japanese)}</div>
-                                                    <div className="text-white/50">{ex.chinese}</div>
+                                                    <div className="text-white/80">{ex.chinese}</div>
                                                 </div>
                                             ))}
                                         </div>
@@ -213,7 +213,7 @@ const GrammarDetail = () => {
                                                 } else if (i === selectedAnswers[q.id]) {
                                                     btnClass += "bg-red-500/20 border-red-500 text-red-400"
                                                 } else {
-                                                    btnClass += "bg-white/5 border-white/10 text-white/40"
+                                                    btnClass += "bg-white/5 border-white/10 text-white/60"
                                                 }
                                             } else {
                                                 btnClass += "bg-white/5 border-white/10 text-white hover:bg-white/10 hover:border-white/30 cursor-pointer"

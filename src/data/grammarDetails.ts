@@ -1,90 +1,11 @@
 import { GrammarPoint } from '../types/grammar';
 import { n5Details } from './details/n5';
-
-// Future: Import n4Details, etc.
+import { n4Details } from './details/n4';
 
 export const grammarDetails: Record<string, GrammarPoint> = {
     ...n5Details,
-    // ...n4Details,
-    'n4_aida_ni': {
-        id: 'n4_aida_ni',
-        pattern: '間に',
-        connection: '動詞辭書形 / ている形 / ない形 + 間に\n名詞 + の + 間に\nい形容詞 + 間に\nな形容詞 + な + 間に',
-        translation: '在...期間 (發生某事)',
-        level: 'N4',
-        explanation: [
-            {
-                usageId: 1,
-                title: '在某段期間內發生了某動作',
-                description: '表示在某個持續的狀態或動作進行的期間內，發生了另一個短暫的動作或變化。與「間（あいだ）」不同，「間に」強調的是期間內的「某個時間點」發生了什麼，而不是整個期間都在做什麼。',
-                examples: [
-                    {
-                        japanese: '母{はは}が昼寝{ひるね}をしている間{あいだ}に、テレビを見{み}ました。',
-                        chinese: '趁媽媽在午睡的時候，我看了電視。'
-                    },
-                    {
-                        japanese: '留守{るす}の間{あいだ}に、友達{ともだち}が来{き}ました。',
-                        chinese: '我不在家的時候，朋友來了。'
-                    },
-                    {
-                        japanese: '独身{どくしん}の間{あいだ}に、いろいろなことをしたいです。',
-                        chinese: '我想趁單身的時候，做各式各樣的事情。'
-                    }
-                ]
-            }
-        ],
-        analysis: {
-            title: '「間に」與「間」的差異',
-            description: '兩者都表示「期間」，但後句接續的動作性質不同。',
-            points: [
-                {
-                    rule: '間に：後句為「瞬間動作」或「短暫發生的事」。',
-                    examples: [{ japanese: '日本{にほん}にいる間{あいだ}に、富士山{ふじさん}に登{のぼ}りたい。', chinese: '趁著在日本的期間，想去爬一次富士山。' }]
-                },
-                {
-                    rule: '間：後句為「持續動作」或「一直保持的狀態」。',
-                    examples: [{ japanese: '日本{にほん}にいる間{あいだ}、ずっとホテルに泊{と}まっていました。', chinese: '在日本的期間，我一直都住在飯店。' }]
-                }
-            ]
-        },
-        quiz: [
-            {
-                id: 'n4_quiz_aida_ni_1',
-                sentence: '赤ちゃんが（　）間に、掃除をしました。',
-                options: ['寝る', '寝て', '寝ている', '寝た'],
-                correctIndex: 2,
-                explanation: '表示在「寶寶正在睡覺」的這個持續狀態中，完成了掃除這個動作，故使用「寝ている」。'
-            },
-            {
-                id: 'n4_quiz_aida_ni_2',
-                sentence: '夏休み（　）間に、たくさん本を読みました。',
-                options: ['の', 'な', 'で', 'に'],
-                correctIndex: 0,
-                explanation: '「夏休み」是名詞，接續「間に」需要加「の」。'
-            },
-            {
-                id: 'n4_quiz_aida_ni_3',
-                sentence: 'バスを待っている間に、雨が（　）。',
-                options: ['降っていた', '降り出した', '降る', '降ります'],
-                correctIndex: 1,
-                explanation: '「間に」後句通常接續「瞬間發生的動作」或「變化」。'
-            },
-            {
-                id: 'n4_quiz_aida_ni_4',
-                sentence: '「いつレポートを書いたんですか。」\n「みんなが（　）間に、書きました。」',
-                options: ['遊ぶ', '遊んで', '遊んでいる', '遊んだ'],
-                correctIndex: 2,
-                explanation: '對話情境。回答「趁大家在玩的時候寫的」。'
-            },
-            {
-                id: 'n4_quiz_aida_ni_5',
-                sentence: '「山田さんはまだですか。」\n「待っている（　）、コーヒーでも飲みませんか。」',
-                options: ['間', '間に', '間を', '間で'],
-                correctIndex: 1,
-                explanation: '對話情境。提議「趁著等待的期間...」。'
-            }
-        ]
-    },
+    ...n4Details,
+    // N3 示例文法
     'n3_amari': {
         id: 'n3_amari',
         pattern: 'あまり',

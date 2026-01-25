@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import LanguageSwitcher from '../components/LanguageSwitcher'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useTranslation } from 'react-i18next'
@@ -74,11 +75,11 @@ const Profile = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="card mb-6 md:mb-8">
+      <div className="card mb-6 md:mb-8 !overflow-visible">
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
           <div className="relative">
             {/* 角色圖片 */}
-            <div className={`w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-sakura-pink overflow-hidden ${job ? `bg-gradient-to-br ${job.color}` : 'bg-gradient-to-r from-sakura-pink to-electric-cyan'}`}>
+            <div className={`w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-red-600 overflow-hidden ${job ? `bg-gradient-to-br ${job.color}` : 'bg-indigo-100'}`}>
               <img
                 src={characterImage}
                 alt="Character"
@@ -90,12 +91,12 @@ const Profile = () => {
                     target.src = currentUser.photoURL
                   } else {
                     target.style.display = 'none'
-                    target.parentElement!.innerHTML = `<span class="flex items-center justify-center w-full h-full text-white text-3xl md:text-5xl font-bold">${profile?.displayName?.[0] || currentUser?.displayName?.[0] || 'U'}</span>`
+                    target.parentElement!.innerHTML = `<span class="flex items-center justify-center w-full h-full text-indigo-900 text-3xl md:text-5xl font-bold">${profile?.displayName?.[0] || currentUser?.displayName?.[0] || 'U'}</span>`
                   }
                 }}
               />
             </div>
-            <div className="absolute -bottom-2 -right-2 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+            <div className="absolute -bottom-2 -right-2 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold border-2 border-white">
               {t('profile.streak', { days: 0 })} 🔥
             </div>
           </div>
@@ -108,12 +109,12 @@ const Profile = () => {
                     type="text"
                     value={newName}
                     onChange={(e) => setNewName(e.target.value)}
-                    className="bg-white/10 border border-white/20 rounded-lg px-3 py-1 outline-none focus:border-sakura-pink text-xl md:text-2xl font-bold font-zen"
+                    className="placeholder-indigo-900/40 text-xl font-bold font-zen"
                     autoFocus
                   />
                   <button
                     onClick={handleSaveName}
-                    className="p-2 hover:bg-white/10 rounded-full text-sakura-pink transition-all"
+                    className="p-2 hover:bg-indigo-900/10 rounded-full text-red-600 transition-all"
                   >
                     <Save size={20} />
                   </button>
@@ -122,19 +123,19 @@ const Profile = () => {
                       setIsEditingName(false)
                       setNewName(profile?.displayName || '')
                     }}
-                    className="p-2 hover:bg-white/10 rounded-full text-white/40 transition-all"
+                    className="p-2 hover:bg-indigo-900/10 rounded-full text-indigo-900/40 transition-all"
                   >
                     <X size={20} />
                   </button>
                 </div>
               ) : (
                 <>
-                  <h1 className="text-2xl md:text-4xl font-zen font-bold text-gradient">
+                  <h1 className="text-2xl md:text-4xl font-zen font-bold text-indigo-900">
                     {profile?.displayName || currentUser?.displayName || 'Student'}
                   </h1>
                   <button
                     onClick={() => setIsEditingName(true)}
-                    className="p-2 hover:bg-white/10 rounded-full text-white/40 hover:text-white transition-all"
+                    className="p-2 hover:bg-indigo-900/10 rounded-full text-indigo-900/40 hover:text-indigo-900 transition-all"
                     title={t('profile.settings.editName')}
                   >
                     <Edit2 size={18} />
@@ -142,18 +143,18 @@ const Profile = () => {
                 </>
               )}
             </div>
-            <p className="text-white/60 mb-4">{currentUser?.email}</p>
+            <p className="text-indigo-900/80 mb-4">{currentUser?.email}</p>
 
             <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-2 md:gap-3">
-              <span className="text-white/80 text-sm md:text-base">{t('profile.targetLevel')}:</span>
+              <span className="text-indigo-900/80 text-sm md:text-base font-bold">{t('profile.targetLevel')}:</span>
               <div className="flex flex-wrap justify-center gap-1 md:gap-2">
                 {levels.map((level) => (
                   <button
                     key={level}
                     onClick={() => setSelectedLevel(level)}
-                    className={`px-3 md:px-4 py-1 rounded-full text-xs md:text-sm font-semibold transition-all ${selectedLevel === level
-                      ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
-                      : 'bg-white/10 text-white/60 hover:bg-white/20'
+                    className={`px-3 md:px-4 py-1 rounded-full text-xs md:text-sm font-semibold transition-all border ${selectedLevel === level
+                      ? 'bg-red-600 text-white border-red-600'
+                      : 'bg-white text-indigo-900/80 border-indigo-900/20 hover:border-red-600 hover:text-red-600'
                       }`}
                   >
                     {level}
@@ -162,10 +163,11 @@ const Profile = () => {
               </div>
             </div>
           </div>
-          <div className="mt-6 md:mt-0">
+          <div className="mt-6 md:mt-0 flex flex-col items-center md:items-end gap-3">
+            <LanguageSwitcher />
             <button
               onClick={() => setIsModalOpen(true)}
-              className="px-6 py-2 rounded-xl bg-white/10 hover:bg-white/20 transition-all font-semibold border border-white/10"
+              className="btn-secondary px-6 rounded-xl shadow-sm"
             >
               {t('profile.settings.modifyData')}
             </button>
@@ -176,13 +178,13 @@ const Profile = () => {
       {/* 積分系統區塊 */}
       <div className="card mb-6 md:mb-8">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl md:text-2xl font-zen font-bold">
+          <h2 className="text-xl md:text-2xl font-zen font-bold text-indigo-900 border-b-2 border-indigo-900/10 pb-1">
             {t('progression.title', '冒險進度')}
           </h2>
           {job && (
-            <div className={`px-4 py-2 rounded-xl bg-gradient-to-r ${job.color} flex items-center gap-2`}>
+            <div className={`px-4 py-2 rounded-xl border-2 border-indigo-900 bg-white flex items-center gap-2 shadow-sm`}>
               <span className="text-xl">{job.icon}</span>
-              <span className="font-bold text-white">{job.nameTw}</span>
+              <span className="font-bold text-indigo-900">{job.nameTw}</span>
             </div>
           )}
         </div>
@@ -192,12 +194,12 @@ const Profile = () => {
 
         {/* 轉職提示 */}
         {needsJobSelection && (
-          <div className="mt-6 p-4 glass rounded-xl border border-sakura-pink/30 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="mt-6 p-4 paper-card border-2 border-red-600/30 flex flex-col md:flex-row items-center justify-between gap-4">
             <div>
-              <p className="text-sakura-pink font-bold mb-1">
+              <p className="text-red-600 font-bold mb-1">
                 {t('progression.jobSelection.unlocked', '轉職之儀已解鎖！')}
               </p>
-              <p className="text-white/60 text-sm">
+              <p className="text-indigo-900/80 text-sm">
                 {t('progression.jobSelection.hint', '選擇你的職業道路，開啟新的旅程')}
               </p>
             </div>
@@ -212,15 +214,15 @@ const Profile = () => {
       </div>
 
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-indigo-900/20 backdrop-blur-sm">
           <div
-            className="bg-[#0f172a] border border-white/10 rounded-2xl w-full max-w-md p-6 shadow-2xl"
+            className="paper-card w-full max-w-md p-6 shadow-2xl"
           >
-            <div className="flex justify-between items-center mb-6">
-              <h3 className="text-xl font-bold">{t('profile.settings.accountManagement')}</h3>
+            <div className="flex justify-between items-center mb-6 border-b border-indigo-900/10 pb-4">
+              <h3 className="text-xl font-bold text-indigo-900">{t('profile.settings.accountManagement')}</h3>
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="p-2 hover:bg-white/5 rounded-full transition-all"
+                className="p-2 hover:bg-gray-100 rounded-full transition-all text-gray-500"
               >
                 <X size={20} />
               </button>
@@ -255,7 +257,7 @@ const Profile = () => {
                           type="password"
                           value={reauthPassword}
                           onChange={(e) => setReauthPassword(e.target.value)}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl py-2 pl-10 pr-4 focus:ring-2 focus:ring-sakura-pink/50 outline-none transition-all"
+                          className="placeholder-indigo-900/40 pl-10"
                           placeholder={t('profile.settings.currentPassword')}
                         />
                       </div>
@@ -321,7 +323,7 @@ const Profile = () => {
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="w-full bg-white/5 border border-white/10 rounded-xl py-2 pl-10 pr-4 focus:ring-2 focus:ring-sakura-pink/50 outline-none transition-all"
+                      className="placeholder-indigo-900/40 pl-10"
                       placeholder={t('profile.settings.newEmail')}
                     />
                   </div>
@@ -362,7 +364,7 @@ const Profile = () => {
                         type="password"
                         value={newPassword}
                         onChange={(e) => setNewPassword(e.target.value)}
-                        className="w-full bg-white/5 border border-white/10 rounded-xl py-2 pl-10 pr-4 focus:ring-2 focus:ring-sakura-pink/50 outline-none transition-all"
+                        className="placeholder-indigo-900/40 pl-10"
                         placeholder={t('profile.settings.newPassword')}
                       />
                     </div>
@@ -372,7 +374,7 @@ const Profile = () => {
                         type="password"
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
-                        className="w-full bg-white/5 border border-white/10 rounded-xl py-2 pl-10 pr-4 focus:ring-2 focus:ring-sakura-pink/50 outline-none transition-all"
+                        className="placeholder-indigo-900/40 pl-10"
                         placeholder={t('profile.settings.confirmPassword')}
                       />
                     </div>
@@ -443,26 +445,26 @@ const Profile = () => {
         {stats.map((stat) => (
           <div
             key={stat.label}
-            className="card p-4 text-center"
+            className="card p-4 text-center border-l-4 border-indigo-900"
           >
-            <div className="text-xl md:text-2xl font-bold text-gradient mb-1 md:mb-2">{stat.value}</div>
-            <div className="text-xs md:text-sm text-white/60">{stat.label}</div>
+            <div className="text-xl md:text-2xl font-bold text-indigo-900 mb-1 md:mb-2">{stat.value}</div>
+            <div className="text-xs md:text-sm text-indigo-900/80">{stat.label}</div>
           </div>
         ))}
       </div>
 
       <div className="card mb-8">
-        <h2 className="text-2xl font-zen font-bold mb-6">{t('profile.learningProgress')}</h2>
+        <h2 className="text-2xl font-zen font-bold mb-6 text-indigo-900 border-b-2 border-indigo-900/10 pb-2">{t('profile.learningProgress')}</h2>
 
         <div className="space-y-6">
           <div>
             <div className="flex justify-between mb-2">
-              <span className="font-semibold">{t('profile.progress.verbs')}</span>
-              <span className="text-white/60">{verbsLearned}/200</span>
+              <span className="font-semibold text-indigo-900">{t('profile.progress.verbs')}</span>
+              <span className="text-indigo-900/80">{verbsLearned}/200</span>
             </div>
-            <div className="w-full bg-white/10 rounded-full h-3">
+            <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden border border-gray-300">
               <div
-                className="bg-gradient-to-r from-sakura-pink to-pink-600 h-3 rounded-full"
+                className="bg-red-600 h-full"
                 style={{ width: `${Math.min((verbsLearned / 200) * 100, 100)}%` }}
               />
             </div>
@@ -470,12 +472,12 @@ const Profile = () => {
 
           <div>
             <div className="flex justify-between mb-2">
-              <span className="font-semibold">{t('profile.progress.kanji')}</span>
-              <span className="text-white/60">{kanjiLearned}/1000</span>
+              <span className="font-semibold text-indigo-900">{t('profile.progress.kanji')}</span>
+              <span className="text-indigo-900/80">{kanjiLearned}/1000</span>
             </div>
-            <div className="w-full bg-white/10 rounded-full h-3">
+            <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden border border-gray-300">
               <div
-                className="bg-gradient-to-r from-electric-cyan to-blue-600 h-3 rounded-full"
+                className="bg-indigo-600 h-full"
                 style={{ width: `${Math.min((kanjiLearned / 1000) * 100, 100)}%` }}
               />
             </div>
@@ -483,12 +485,12 @@ const Profile = () => {
 
           <div>
             <div className="flex justify-between mb-2">
-              <span className="font-semibold">{t('profile.progress.grammar')}</span>
-              <span className="text-white/60">{grammarLearned}/80</span>
+              <span className="font-semibold text-indigo-900">{t('profile.progress.grammar')}</span>
+              <span className="text-indigo-900/80">{grammarLearned}/80</span>
             </div>
-            <div className="w-full bg-white/10 rounded-full h-3">
+            <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden border border-gray-300">
               <div
-                className="bg-gradient-to-r from-purple-500 to-purple-700 h-3 rounded-full"
+                className="bg-green-600 h-full"
                 style={{ width: `${Math.min((grammarLearned / 80) * 100, 100)}%` }}
               />
             </div>
@@ -497,7 +499,7 @@ const Profile = () => {
       </div>
 
       <div className="card">
-        <h2 className="text-xl md:text-2xl font-zen font-bold mb-4 md:mb-6">
+        <h2 className="text-xl md:text-2xl font-zen font-bold mb-4 md:mb-6 text-indigo-900 border-b-2 border-indigo-900/10 pb-2">
           {t('profile.statistics.title', { level: selectedLevel })}
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
@@ -515,25 +517,20 @@ const Profile = () => {
 
 
             return (
-              <div key={category} className="glass p-3 rounded-xl border border-white/5">
+              <div key={category} className="paper-card p-3 rounded-none border border-indigo-900">
                 <div className="flex flex-col gap-2 mb-2">
                   <div className="flex items-center gap-2">
-                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-lg font-bold bg-gradient-to-br ${category === 'verbs' ? 'from-blue-500 to-cyan-500' :
-                      category === 'gojuon' ? 'from-green-500 to-teal-500' :
-                        category === 'kanji' ? 'from-orange-500 to-red-500' :
-                          category === 'vocabulary' ? 'from-yellow-400 to-orange-500' :
-                            'from-purple-500 to-pink-500'
-                      }`}>
+                    <div className={`w-8 h-8 flex items-center justify-center text-lg font-bold border border-indigo-900 bg-white shadow-sm`}>
                       {category === 'verbs' ? '✍️' :
                         category === 'gojuon' ? 'あ' :
                           category === 'kanji' ? '漢' :
                             category === 'vocabulary' ? '🔤' : '📖'}
                     </div>
                     <div className="min-w-0 flex-1">
-                      <h3 className="font-bold text-sm truncate">
+                      <h3 className="font-bold text-sm truncate text-indigo-900">
                         {t(`practice.categories.${category}.title`)}
                       </h3>
-                      <p className="text-[10px] text-white/50 truncate">
+                      <p className="text-[10px] text-indigo-900/50 truncate">
                         {t('profile.statistics.lastPractice')}: {hasData
                           ? new Date(lastEntry.date).toLocaleDateString()
                           : '--'}
@@ -543,11 +540,11 @@ const Profile = () => {
 
                   {hasData && (
                     <div className="flex items-baseline justify-between">
-                      <div className="text-xl font-bold text-white leading-none">
+                      <div className="text-xl font-bold text-indigo-900 leading-none">
                         {lastEntry.score}/{lastEntry.total}
                       </div>
-                      <div className={`text-xs font-bold ${lastEntry.accuracy >= 80 ? 'text-green-400' :
-                        lastEntry.accuracy >= 60 ? 'text-yellow-400' : 'text-red-400'
+                      <div className={`text-xs font-bold ${lastEntry.accuracy >= 80 ? 'text-green-600' :
+                        lastEntry.accuracy >= 60 ? 'text-mustard' : 'text-red-600'
                         }`}>
                         {lastEntry.accuracy}%
                       </div>
@@ -557,9 +554,9 @@ const Profile = () => {
 
                 <div className="space-y-4">
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-white/60">{t('profile.statistics.recentAverage')} (5)</span>
-                    <span className={`font-bold ${avgAccuracy >= 80 ? 'text-green-400' :
-                      avgAccuracy >= 60 ? 'text-yellow-400' : 'text-white/40'
+                    <span className="text-indigo-900/80">{t('profile.statistics.recentAverage')} (5)</span>
+                    <span className={`font-bold ${avgAccuracy >= 80 ? 'text-green-600' :
+                      avgAccuracy >= 60 ? 'text-mustard' : 'text-indigo-900/40'
                       }`}>
                       {hasData ? `${avgAccuracy}%` : '--'}
                     </span>

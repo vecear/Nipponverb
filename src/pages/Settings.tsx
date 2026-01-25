@@ -149,7 +149,7 @@ const Settings = () => {
         <h1 className="text-4xl font-zen font-bold mb-2 text-gradient">
           {t('settings.title')}
         </h1>
-        <p className="text-white/60">{t('settings.subtitle')}</p>
+        <p className="text-white/90">{t('settings.subtitle')}</p>
       </div>
 
       {message && (
@@ -170,11 +170,11 @@ const Settings = () => {
         <h2 className="text-2xl font-zen font-bold mb-4">{t('settings.accountInfo')}</h2>
         <div className="space-y-3 text-white/80">
           <div className="flex justify-between">
-            <span className="text-white/60">{t('settings.currentEmail')}:</span>
+            <span className="text-white/90">{t('settings.currentEmail')}:</span>
             <span>{currentUser?.email}</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-white/60">{t('settings.loginMethod')}:</span>
+            <span className="text-white/90">{t('settings.loginMethod')}:</span>
             <div className="flex gap-2">
               {isGoogleUser && (
                 <span className="px-3 py-1 bg-white/10 rounded-full text-sm">Google</span>
@@ -195,7 +195,7 @@ const Settings = () => {
           <h2 className="text-2xl font-zen font-bold mb-4">
             {t('settings.linkEmailPassword')}
           </h2>
-          <p className="text-white/60 mb-6">{t('settings.linkEmailPasswordDesc')}</p>
+          <p className="text-white/90 mb-6">{t('settings.linkEmailPasswordDesc')}</p>
           <form onSubmit={handleLinkEmailPassword} className="space-y-4">
             <div>
               <label className="block text-sm font-semibold mb-2">

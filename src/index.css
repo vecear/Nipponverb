@@ -3,24 +3,72 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Ukiyo-e Palette - Optimized for Legibility and Contrast */
+    --color-paper: #FDFBF7;
+    /* Warm White / Washi */
+    --color-paper-dark: #F0EAD6;
+    /* Aged Paper */
+
+    --color-ink: #0F172A;
+    /* Slate 900 - Deep, almost black ink */
+    --color-ink-light: #334155;
+    /* Slate 700 - Readable secondary text */
+
+    --color-indigo: #1E3A8A;
+    /* Blue 900 - Deep Prussian Blue */
+    --color-indigo-light: #3B82F6;
+    /* For focus rings/accents */
+
+    --color-vermilion: #DC2626;
+    /* Red 600 - Vivid Stamp Red */
+    --color-vermilion-dark: #B91C1C;
+    /* Red 700 - Dried Stamp Red */
+
+    --color-matcha: #4D7C0F;
+    /* Green 700 - Deep Tea Green */
+    --color-gold: #B45309;
+    /* Amber 700 - Aged Gold */
+  }
+
   body {
-    /* Night Edo Gradient: Deepest Ink Black to Night Sky Blue */
-    background: linear-gradient(to bottom, #0F172A, #1E293B, #0F172A);
-    color: #F8FAFC;
-    /* White text for contrast */
-    font-family: "DotGothic16", sans-serif;
+    background-color: var(--color-paper);
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='64' height='64' fill='%23FDFBF7'/%3E%3Crect width='64' height='64' fill='%23000000' opacity='0.03' filter='url(%23noise)'/%3E%3C/svg%3E");
+    color: var(--color-ink);
+    font-family: "Zen Old Mincho", serif;
     min-height: 100vh;
-    background-attachment: fixed;
+    padding-bottom: 5rem;
     overflow-x: hidden;
   }
 
-  html {
-    overflow-x: hidden;
+  /* Reset padding on desktop */
+  @media (min-width: 768px) {
+    body {
+      padding-bottom: 0;
+    }
   }
 
   * {
     @apply scroll-smooth;
-    font-family: "DotGothic16", sans-serif;
+  }
+
+  /* Typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-zen font-bold text-indigo-900;
+  }
+
+  p,
+  span,
+  div,
+  li,
+  a {
+    /* Ensure base readability for all body text */
+    /* letter-spacing: 0.02em; */
   }
 
   /* Ruby/Furigana alignment */
@@ -33,106 +81,131 @@
     ruby-align: center;
     text-align: center;
     font-size: 0.6em;
-    color: #FACC15;
-    /* Moon Gold for readings */
+    color: var(--color-indigo);
+    font-weight: bold;
+    user-select: none;
   }
 }
 
 @layer components {
 
-  /* Night Edo Window Card Style */
-  .glass {
-    /* Dark semi-transparent background */
-    background-color: rgba(30, 41, 59, 0.8);
-    /* Pixel Border: Lighter Indigo */
-    border: 2px solid #334155;
-    /* Hard Shadow */
-    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
+  /* Woodblock Print Card Style */
+  .paper-card,
+  .glass,
+  .card {
+    @apply relative p-6 bg-[#FDFBF7] border-2 border-indigo-900 transition-all duration-300;
+    box-shadow: 6px 6px 0px 0px rgba(30, 58, 138, 0.2);
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
   }
 
+  /* Interactive Card */
+  .card-interactive,
   .glass-hover {
-    @apply transition-all duration-200 hover:-translate-y-1;
-    background-color: rgba(30, 41, 59, 0.9);
-    border: 2px solid #FACC15;
-    /* Gold Glow on hover */
-    box-shadow: 4px 4px 0px 0px #FACC15;
-    /* Gold Shadow */
+    @apply paper-card cursor-pointer hover:-translate-y-1 hover:border-red-600;
   }
 
+  .card-interactive:hover,
   .glass-hover:hover {
-    background-color: rgba(30, 41, 59, 1);
+    box-shadow: 6px 6px 0px 0px rgba(220, 38, 38, 0.3);
   }
 
-  /* Woodblock Print Button Style (Lantern Seal) */
+  /* Form Elements - Calligraphy Style */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"] {
+    @apply w-full bg-transparent border-b-2 border-indigo-900/30 px-2 py-2 text-lg text-indigo-900 transition-all outline-none rounded-none;
+    font-family: "Zen Kurenaido", sans-serif;
+  }
+
+  input:focus {
+    @apply border-red-600 bg-red-50/30;
+  }
+
+  input::placeholder {
+    @apply text-indigo-900/40;
+  }
+
+  /* Hanko (Seal) Button - Primary Action */
   .btn-primary {
-    @apply px-6 py-3 text-white font-bold rounded-none shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 relative overflow-hidden;
-    background-color: #EF4444;
-    /* Lantern Red */
-    border: 2px solid #fff;
-    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+    @apply relative inline-flex items-center justify-center px-6 py-3 font-zen font-bold text-xl text-white transition-all duration-200 overflow-hidden select-none;
+    background-color: var(--color-vermilion);
+    border: 2px solid #881313;
+    /* Darker red border */
+    border-radius: 12px 4px 10px 6px;
+    /* Imperfect "Stamp" shape */
+    box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-primary::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-200;
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
   }
 
   .btn-primary:hover {
-    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+    @apply transform -translate-y-0.5 shadow-lg;
+    background-color: #EF4444;
+    /* Lighter red on hover */
+    box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 0.2), inset 0 0 5px rgba(255, 255, 255, 0.2);
   }
 
+  .btn-primary:active {
+    @apply transform translate-y-0.5 scale-95;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Ema (Wooden Tablet) Button - Secondary Action */
   .btn-secondary {
-    @apply px-6 py-3 text-white font-bold rounded-none shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200;
-    background-color: #1E293B;
-    /* Night Sky */
-    border: 2px solid #334155;
-    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+    @apply relative inline-flex items-center justify-center px-6 py-3 font-zen font-bold text-xl text-indigo-900 transition-all duration-200 select-none;
+    background-color: #FEF3C7;
+    /* Pale Wood */
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(180, 83, 9, 0.05) 10px, rgba(180, 83, 9, 0.05) 11px);
+    /* Subtle wood grain */
+    border: 2px solid var(--color-indigo);
+    border-radius: 4px;
+    /* Ema shape */
+    box-shadow: 4px 4px 0px 0px var(--color-indigo);
   }
 
   .btn-secondary:hover {
-    background-color: #334155;
-    border-color: #FACC15;
-    box-shadow: 2px 2px 0px 0px #FACC15;
+    @apply transform -translate-y-0.5 bg-[#FDE68A];
+    box-shadow: 6px 6px 0px 0px var(--color-indigo);
   }
 
-  /* Card styles */
-  .card {
-    @apply p-6 relative overflow-hidden rounded-none;
-    background-color: rgba(30, 41, 59, 0.6);
-    border: 2px solid #475569;
-    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
+  .btn-secondary:active {
+    @apply transform translate-y-0.5;
+    box-shadow: 1px 1px 0px 0px var(--color-indigo);
   }
 
-  .card-interactive {
-    @apply card transition-all duration-200 cursor-pointer hover:-translate-y-1;
-  }
-
-  .card-interactive:hover {
-    border-color: #FACC15;
-    /* Moon Gold border on hover */
-    box-shadow: 4px 4px 0px 0px #FACC15;
-    /* Gold glow shadow */
-    background-color: rgba(30, 41, 59, 0.9);
+  /* Text Selection */
+  ::selection {
+    @apply bg-red-200 text-red-900;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    /* Moon Gold Gradient Text */
-    background-image: linear-gradient(to right, #FACC15, #EF4444);
+    @apply text-indigo-900;
+    /* Fallback */
+    background: linear-gradient(to right, #1E3A8A, #DC2626);
+    /* Indigo to Vermilion */
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent;
   }
 
-  .animate-float {
-    animation: float 2s ease-in-out infinite;
+  .font-zen {
+    font-family: "Zen Kurenaido", sans-serif;
   }
 
-  @keyframes float {
+  /* Utilities for layout Ma (Negative Space) */
+  .ma-y {
+    @apply py-8 md:py-12;
+  }
 
-    0%,
-    100% {
-      transform: translateY(0px);
-    }
-
-    50% {
-      transform: translateY(-6px);
-    }
+  .ma-x {
+    @apply px-4 md:px-8;
   }
 }

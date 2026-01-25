@@ -81,7 +81,7 @@ const Stages = () => {
           <h1 className="text-3xl md:text-5xl font-zen font-bold mb-4 text-gradient">
             {t('stages.title')}
           </h1>
-          <p className="text-lg md:text-xl text-white/60">
+          <p className="text-lg md:text-xl text-indigo-900/90">
             {t('stages.subtitle')}
           </p>
         </div>
@@ -96,7 +96,7 @@ const Stages = () => {
                 className="card-interactive p-4 md:p-6 text-center"
               >
                 <div className="text-2xl md:text-3xl font-bold mb-1 md:mb-2">{level}</div>
-                <div className="text-xs md:text-sm text-white/60">{levelStages.length} {t('stages.stages', { level })}</div>
+                <div className="text-xs md:text-sm text-indigo-900/60">{levelStages.length} {t('stages.stages', { level })}</div>
               </button>
             )
           })}
@@ -109,7 +109,7 @@ const Stages = () => {
               <div className="text-3xl">🎬</div>
               <div>
                 <h4 className="font-semibold mb-1">{t('stages.howItWorks.step1Title')}</h4>
-                <p className="text-white/60">
+                <p className="text-indigo-900/60">
                   {t('stages.howItWorks.step1Description')}
                 </p>
               </div>
@@ -154,7 +154,7 @@ const Stages = () => {
           <h1 className="text-4xl font-zen font-bold mb-2">
             {t('stages.stages', { level: selectedLevel })}
           </h1>
-          <p className="text-white/60">
+          <p className="text-indigo-900/60">
             {t('stages.chooseScenario')}
           </p>
         </div>
@@ -185,9 +185,9 @@ const Stages = () => {
                   </div>
                 </div>
 
-                <p className="text-white/60">{stage.description}</p>
+                <p className="text-indigo-900/90">{stage.description}</p>
 
-                <div className="text-sm text-white/60">
+                <div className="text-sm text-indigo-900/60">
                   {t('stages.questions', { count: stage.questions.length })}
                 </div>
 
@@ -262,14 +262,14 @@ const Stages = () => {
               <div className="text-4xl md:text-5xl font-bold text-sakura-pink mb-2">
                 {results.score}/{results.total}
               </div>
-              <div className="text-sm md:text-base text-white/60">{t('stages.questionsCorrect')}</div>
+              <div className="text-sm md:text-base text-indigo-900/90">{t('stages.questionsCorrect')}</div>
             </div>
 
             <div className="glass p-4 md:p-6 rounded-xl">
               <div className="text-4xl md:text-5xl font-bold text-electric-cyan mb-2">
                 {results.percentage}%
               </div>
-              <div className="text-sm md:text-base text-white/60">{t('stages.accuracy')}</div>
+              <div className="text-sm md:text-base text-indigo-900/90">{t('stages.accuracy')}</div>
             </div>
           </div>
 
@@ -317,11 +317,11 @@ const Stages = () => {
       {/* Progress */}
       <div>
         <div className="flex items-center justify-between mb-2">
-          <span className="text-white/60">
+          <span className="text-indigo-900/90">
             Question {currentQuestionIndex + 1} / {selectedStage.questions.length}
           </span>
         </div>
-        <div className="w-full bg-white/10 rounded-full h-2">
+        <div className="w-full bg-indigo-900/10 rounded-full h-2">
           <div
             className="bg-gradient-to-r from-sakura-pink to-electric-cyan h-2 rounded-full transition-all"
             style={{
@@ -343,7 +343,7 @@ const Stages = () => {
               onClick={() => handleAnswer(currentQuestion.id, option)}
               className={`w-full p-4 rounded-xl text-left transition-all ${answers[currentQuestion.id] === option
                 ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
-                : 'glass hover:bg-white/10'
+                : 'glass hover:bg-white/50 border border-indigo-900/5'
                 }`}
             >
               <span className="font-semibold mr-3">
@@ -356,7 +356,7 @@ const Stages = () => {
 
         {answers[currentQuestion.id] && (
           <div className="mt-4 p-4 bg-white/5 rounded-xl">
-            <div className="text-sm text-white/80">
+            <div className="text-sm text-indigo-900/80">
               <strong>{t('stages.explanation')}</strong> {currentQuestion.explanation}
             </div>
           </div>

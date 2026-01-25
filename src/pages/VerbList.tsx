@@ -39,28 +39,28 @@ const VerbList = () => {
             {/* Header */}
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                 <div>
-                    <Link to="/" className="text-white/60 hover:text-white mb-2 inline-block">← {t('common.previous')}</Link>
-                    <h1 className="text-3xl font-zen font-bold text-gradient">{t('practice.categories.verbs.title')}</h1>
+                    <Link to="/" className="text-indigo-900/80 hover:text-indigo-900 mb-2 inline-block">← {t('common.previous')}</Link>
+                    <h1 className="text-3xl font-zen font-bold text-indigo-900">{t('practice.categories.verbs.title')}</h1>
                     <div className="flex items-center gap-4 mt-1">
-                        <p className="text-white/60">{t('practice.categories.verbs.description')}</p>
-                        <Link to="/verb-guide" className="px-3 py-1 bg-white/10 hover:bg-white/20 rounded-full text-sm text-electric-cyan transition-colors">
+                        <p className="text-indigo-900/80">{t('practice.categories.verbs.description')}</p>
+                        <Link to="/verb-guide" className="px-3 py-1 bg-white hover:bg-gray-50 rounded-full text-sm text-red-600 border border-red-200 transition-colors">
                             {t('practice.categories.verbs.guide')}
                         </Link>
                     </div>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 items-center">
-                    <div className="text-sm text-white/40 font-mono">
+                    <div className="text-sm text-indigo-900/40 font-mono">
                         {t('practice.categories.verbs.count', { count: filteredVerbs.length })}
                     </div>
                     {/* Level Selectors */}
-                    <div className="flex bg-white/5 rounded-lg p-1">
+                    <div className="flex bg-white/50 rounded-lg p-1 border border-indigo-900/10">
                         {levels.map((level) => (
                             <button
                                 key={level}
                                 onClick={() => setSelectedLevel(selectedLevel === level ? null : level)}
                                 className={`px-4 py-1.5 rounded-md text-sm font-bold transition-all ${selectedLevel === level
-                                    ? 'bg-electric-cyan text-slate-900 shadow-lg'
-                                    : 'text-white/60 hover:text-white hover:bg-white/10'
+                                    ? 'bg-red-600 text-white shadow-md'
+                                    : 'text-indigo-900/80 hover:text-indigo-900 hover:bg-white/50'
                                     }`}
                             >
                                 {level}
@@ -74,9 +74,9 @@ const VerbList = () => {
                             placeholder={t('practice.categories.verbs.searchPlaceholder')}
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
-                            className="bg-white/10 border border-white/20 rounded-full px-4 py-2 pl-10 focus:outline-none focus:border-electric-cyan w-full sm:w-64"
+                            className="bg-white border-2 border-indigo-900/10 rounded-full px-4 py-2 pl-10 focus:outline-none focus:border-red-600 w-full sm:w-64 text-indigo-900 placeholder-indigo-900/30"
                         />
-                        <span className="absolute left-3 top-2.5 text-white/40">🔍</span>
+                        <span className="absolute left-3 top-2.5 text-indigo-900/40">🔍</span>
                     </div>
                 </div>
             </div>
@@ -90,30 +90,30 @@ const VerbList = () => {
                                 <div
                                     key={index}
                                     onClick={() => setSelectedVerb(verb)}
-                                    className={`p-3 rounded-lg cursor-pointer transition-all ${selectedVerb?.dictionary === verb.dictionary
-                                        ? 'bg-gradient-to-r from-sakura-pink/20 to-electric-cyan/20 border-l-4 border-electric-cyan'
-                                        : 'hover:bg-white/10'
+                                    className={`p-3 rounded-none border-b border-indigo-900/10 cursor-pointer transition-all ${selectedVerb?.dictionary === verb.dictionary
+                                        ? 'bg-indigo-50 border-l-4 border-l-red-600'
+                                        : 'hover:bg-indigo-900/5 border-l-4 border-l-transparent'
                                         }`}
                                 >
                                     <div className="flex justify-between items-center">
                                         <div className="flex items-center gap-2">
                                             <div>
-                                                <span className="text-lg font-bold leading-none">
+                                                <span className="text-lg font-bold leading-none text-indigo-900">
                                                     <FuriganaText text={conjugateVerbWithReading(verb, 'dictionary').text} />
                                                 </span>
                                             </div>
-                                            <span className={`text-[10px] px-1.5 py-0.5 rounded ml-2 ${verb.level === 'N5' ? 'bg-green-500/20 text-green-400' :
-                                                verb.level === 'N4' ? 'bg-blue-500/20 text-blue-400' :
-                                                    verb.level === 'N3' ? 'bg-yellow-500/20 text-yellow-400' :
-                                                        verb.level === 'N2' ? 'bg-orange-500/20 text-orange-400' :
-                                                            'bg-red-500/20 text-red-400'
+                                            <span className={`text-[10px] px-1.5 py-0.5 rounded ml-2 font-bold ${verb.level === 'N5' ? 'bg-green-100 text-green-700' :
+                                                verb.level === 'N4' ? 'bg-blue-100 text-blue-700' :
+                                                    verb.level === 'N3' ? 'bg-yellow-100 text-yellow-700' :
+                                                        verb.level === 'N2' ? 'bg-orange-100 text-orange-700' :
+                                                            'bg-red-100 text-red-700'
                                                 }`}>
                                                 {verb.level}
                                             </span>
                                         </div>
-                                        <span className="text-xs text-white/40 px-2 py-1 rounded bg-white/5 capitalize">{t(`practice.categories.verbs.types.${verb.type}`)}</span>
+                                        <span className="text-xs text-indigo-900/90 px-2 py-1 rounded bg-indigo-900/5 capitalize">{t(`practice.categories.verbs.types.${verb.type}`)}</span>
                                     </div>
-                                    <div className="text-sm text-white/60 mt-1">
+                                    <div className="text-sm text-indigo-900/80 mt-1">
                                         {(i18n.language === 'zh-TW' || i18n.language.startsWith('zh')) ? verb.meaning_zh : verb.meaning}
                                     </div>
                                 </div >
@@ -136,48 +136,48 @@ const VerbList = () => {
                             {/* Mobile Back Button */}
                             <button
                                 onClick={() => setSelectedVerb(null)}
-                                className="lg:hidden mb-4 flex items-center gap-2 text-white/60 hover:text-white transition-colors"
+                                className="lg:hidden mb-4 flex items-center gap-2 text-indigo-900/80 hover:text-indigo-900 transition-colors"
                             >
                                 <span>←</span> {t('common.previous')}
                             </button>
 
-                            <div className="flex justify-between items-start mb-6 border-b border-white/10 pb-4">
+                            <div className="flex justify-between items-start mb-6 border-b-2 border-indigo-900/10 pb-4">
                                 <div>
                                     <div className="flex items-center gap-3 mb-1">
                                         <div>
-                                            <h2 className="text-4xl font-zen font-bold leading-none">
+                                            <h2 className="text-4xl font-zen font-bold leading-none text-indigo-900">
                                                 <FuriganaText text={conjugateVerbWithReading(selectedVerb, 'dictionary').text} />
                                             </h2>
                                         </div>
-                                        <span className={`text-sm px-2 py-1 rounded-md font-bold self-start mt-4 ${selectedVerb.level === 'N5' ? 'bg-green-500/20 text-green-400' :
-                                            selectedVerb.level === 'N4' ? 'bg-blue-500/20 text-blue-400' :
-                                                selectedVerb.level === 'N3' ? 'bg-yellow-500/20 text-yellow-400' :
-                                                    selectedVerb.level === 'N2' ? 'bg-orange-500/20 text-orange-400' :
-                                                        'bg-red-500/20 text-red-400'
+                                        <span className={`text-sm px-2 py-1 rounded-md font-bold self-start mt-4 ${selectedVerb.level === 'N5' ? 'bg-green-100 text-green-700' :
+                                            selectedVerb.level === 'N4' ? 'bg-blue-100 text-blue-700' :
+                                                selectedVerb.level === 'N3' ? 'bg-yellow-100 text-yellow-700' :
+                                                    selectedVerb.level === 'N2' ? 'bg-orange-100 text-orange-700' :
+                                                        'bg-red-100 text-red-700'
                                             }`}>
                                             {selectedVerb.level}
                                         </span>
                                     </div>
-                                    <p className="text-xl text-white/80 mt-2">
+                                    <p className="text-xl text-indigo-900/80 mt-2 font-medium">
                                         {(i18n.language === 'zh-TW' || i18n.language.startsWith('zh')) ? selectedVerb.meaning_zh : selectedVerb.meaning}
                                     </p>
                                 </div>
                                 <div className="text-right">
-                                    <div className="text-sm text-white/60 mb-1">{t('practice.categories.verbs.type')}</div>
-                                    <div className="font-mono bg-white/10 px-3 py-1 rounded capitalize inline-block">
+                                    <div className="text-sm text-indigo-900/80 mb-1">{t('practice.categories.verbs.type')}</div>
+                                    <div className="font-mono bg-indigo-900/5 px-3 py-1 rounded capitalize inline-block text-indigo-900">
                                         {t(`practice.categories.verbs.types.${selectedVerb.type}`)} {selectedVerb.group ? `(${selectedVerb.group})` : ''}
                                     </div>
                                 </div>
                             </div>
 
                             {selectedVerb.dictionary_definition && selectedVerb.dictionary_definition.length > 0 && (i18n.language === 'zh-TW' || i18n.language.startsWith('zh')) && (
-                                <div className="bg-black/20 p-4 rounded-xl border border-white/5 mb-6">
-                                    <div className="text-xs text-white/40 font-bold uppercase tracking-wider mb-2">
+                                <div className="bg-indigo-900/5 p-4 rounded-xl border border-indigo-900/10 mb-6">
+                                    <div className="text-xs text-indigo-900/40 font-bold uppercase tracking-wider mb-2">
                                         辭書定義
                                     </div>
                                     <ul className="space-y-1">
                                         {selectedVerb.dictionary_definition.map((def, i) => (
-                                            <li key={i} className="text-sm text-white/80 leading-relaxed">
+                                            <li key={i} className="text-sm text-indigo-900/80 leading-relaxed">
                                                 {def}
                                             </li>
                                         ))}
@@ -186,20 +186,20 @@ const VerbList = () => {
                             )}
 
                             {selectedVerb.native_examples && selectedVerb.native_examples.length > 0 && (
-                                <div className="bg-white/5 p-4 rounded-xl border border-white/10 mb-6 transition-all hover:bg-white/10">
+                                <div className="paper-card mb-6 transition-all hover:border-red-600/30">
                                     <div className="flex items-center gap-2 mb-3">
-                                        <div className="text-xs text-electric-cyan/80 font-bold uppercase tracking-wider">
+                                        <div className="text-xs text-red-600 font-bold uppercase tracking-wider">
                                             {t('practice.categories.verbs.example')} (辭書)
                                         </div>
-                                        <div className="h-px flex-1 bg-white/10"></div>
+                                        <div className="h-px flex-1 bg-indigo-900/10"></div>
                                     </div>
                                     <div className="space-y-3">
                                         {selectedVerb.native_examples.map((ex, i) => (
                                             <div key={i} className="flex flex-col gap-1">
-                                                <div className="text-lg text-white font-zen">
+                                                <div className="text-lg text-indigo-900 font-zen">
                                                     <FuriganaText text={ex.ja} />
                                                 </div>
-                                                <div className="text-sm text-white/50">{ex.zh}</div>
+                                                <div className="text-sm text-indigo-900/50">{ex.zh}</div>
                                             </div>
                                         ))}
                                     </div>
@@ -213,24 +213,24 @@ const VerbList = () => {
                                     return (
                                         <div
                                             key={form.key}
-                                            className="bg-white/5 p-4 rounded-xl border border-white/10 hover:bg-white/10 transition-colors"
+                                            className="bg-indigo-900/5 p-4 rounded-none border border-indigo-900/10 hover:border-red-600 transition-colors"
                                         >
-                                            <div className="text-xs text-white/40 mb-1 font-mono">
+                                            <div className="text-xs text-indigo-900/40 mb-1 font-mono">
                                                 {t('practice.categories.verbs.forms.' + form.key)}
                                             </div>
                                             <div className="mb-3">
-                                                <div className="text-2xl font-bold text-electric-cyan font-zen">
+                                                <div className="text-2xl font-bold text-red-600 font-zen">
                                                     <FuriganaText text={conjugation.text} />
                                                 </div>
                                             </div>
 
                                             {/* Example Sentence Section */}
-                                            <div className="mt-2 pt-2 border-t border-white/5">
-                                                <div className="text-[10px] text-white/40 uppercase mb-1">{t('practice.categories.verbs.example')}</div>
-                                                <div className="text-sm text-white/90 mb-0.5">
+                                            <div className="mt-2 pt-2 border-t border-indigo-900/5">
+                                                <div className="text-[10px] text-indigo-900/40 uppercase mb-1">{t('practice.categories.verbs.example')}</div>
+                                                <div className="text-sm text-indigo-900/90 mb-0.5">
                                                     <FuriganaText text={example.sentence} />
                                                 </div>
-                                                <div className="text-xs text-white/50">
+                                                <div className="text-xs text-indigo-900/50">
                                                     {example.translation}
                                                 </div>
                                             </div>

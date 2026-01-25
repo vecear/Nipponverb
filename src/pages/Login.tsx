@@ -61,11 +61,11 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
       {/* Animated Background */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
-            className="absolute text-white/5 text-6xl"
+            className="absolute text-indigo-900/5 text-6xl font-zen select-none"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -76,21 +76,21 @@ const Login = () => {
         ))}
       </div>
 
-      <div className="glass max-w-md w-full p-8 relative z-10">
+      <div className="paper-card max-w-md w-full p-8 relative z-10 border-2 border-indigo-900 shadow-xl">
 
 
         <div className="text-center mb-8">
-          <div className="inline-block mb-4">
+          <div className="inline-block mb-4 p-4 rounded-full bg-white border-2 border-indigo-900 shadow-md">
             <img
               src="/logo.png"
               alt="Nipponverb Logo"
-              className="w-24 h-24 md:w-32 md:h-32 object-contain"
+              className="w-20 h-20 md:w-28 md:h-28 object-contain"
             />
           </div>
-          <h1 className="text-4xl font-zen font-bold text-gradient mb-2">
+          <h1 className="text-4xl font-zen font-bold text-indigo-900 mb-2">
             {t('app.name')}
           </h1>
-          <p className="text-white/60">
+          <p className="text-indigo-900/80 font-bold">
             {t('app.tagline')}
           </p>
         </div>
@@ -128,10 +128,10 @@ const Login = () => {
 
         <div className="relative mb-6">
           <div className="absolute inset-0 flex items-center">
-            <div className="w-full border-t border-white/20"></div>
+            <div className="w-full border-t border-indigo-900/20"></div>
           </div>
           <div className="relative flex justify-center text-sm">
-            <span className="px-2 bg-transparent text-white/60">{t('auth.or')}</span>
+            <span className="px-2 bg-[#FDFBF7] text-indigo-900/80 font-bold">{t('auth.or')}</span>
           </div>
         </div>
 
@@ -139,71 +139,69 @@ const Login = () => {
           {isSignUp && (
             <>
               <div>
-                <label className="block text-sm font-medium mb-2">{t('auth.displayName')}</label>
+                <label className="block text-sm font-bold text-indigo-900 mb-2">{t('auth.displayName')}</label>
                 <input
                   type="text"
                   value={displayName}
                   onChange={(e) => setDisplayName(e.target.value)}
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink transition-colors"
+                  className="placeholder-indigo-900/40"
                   placeholder={t('auth.displayNamePlaceholder')}
                   required
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium mb-2">{t('auth.gender')}</label>
+                <label className="block text-sm font-bold text-indigo-900 mb-2">{t('auth.gender')}</label>
                 <div className="flex gap-4">
                   <button
                     type="button"
                     onClick={() => setGender('male')}
-                    className={`flex-1 py-3 px-4 rounded-lg border transition-all ${
-                      gender === 'male'
-                        ? 'border-sakura-pink bg-sakura-pink/20 text-white'
-                        : 'border-white/20 bg-white/10 text-white/60 hover:border-white/40'
-                    }`}
+                    className={`flex-1 py-3 px-4 rounded-lg border-2 transition-all font-bold ${gender === 'male'
+                      ? 'border-indigo-900 bg-indigo-900 text-white shadow-md transform -translate-y-1'
+                      : 'border-indigo-900/20 bg-white text-indigo-900/80 hover:border-indigo-900 hover:text-indigo-900'
+                      }`}
                   >
                     {t('auth.male')}
                   </button>
                   <button
                     type="button"
                     onClick={() => setGender('female')}
-                    className={`flex-1 py-3 px-4 rounded-lg border transition-all ${
-                      gender === 'female'
-                        ? 'border-sakura-pink bg-sakura-pink/20 text-white'
-                        : 'border-white/20 bg-white/10 text-white/60 hover:border-white/40'
-                    }`}
+                    className={`flex-1 py-3 px-4 rounded-lg border-2 transition-all font-bold ${gender === 'female'
+                      ? 'border-red-600 bg-red-600 text-white shadow-md transform -translate-y-1'
+                      : 'border-indigo-900/20 bg-white text-indigo-900/80 hover:border-red-600 hover:text-red-600'
+                      }`}
                   >
                     {t('auth.female')}
                   </button>
                 </div>
-                <p className="text-white/40 text-xs mt-2">{t('auth.genderHint')}</p>
+                <p className="text-indigo-900/80 text-xs mt-2 font-bold">{t('auth.genderHint')}</p>
               </div>
             </>
           )}
 
           <div>
-            <label className="block text-sm font-medium mb-2">{t('auth.email')}</label>
+            <label className="block text-sm font-bold text-indigo-900 mb-2">{t('auth.email')}</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink transition-colors"
+              className="placeholder-indigo-900/40"
               required
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-2">{t('auth.password')}</label>
+            <label className="block text-sm font-bold text-indigo-900 mb-2">{t('auth.password')}</label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink transition-colors"
+              className="placeholder-indigo-900/40"
               required
             />
           </div>
 
-          <button type="submit" className="w-full btn-secondary">
+          <button type="submit" className="w-full btn-secondary font-bold text-lg shadow-md hover:shadow-lg transform transition-transform hover:-translate-y-1">
             {isSignUp ? t('auth.signUp') : t('auth.signIn')}
           </button>
         </form>
@@ -211,7 +209,7 @@ const Login = () => {
         <div className="mt-6 text-center">
           <button
             onClick={() => setIsSignUp(!isSignUp)}
-            className="text-sm text-white/60 hover:text-white transition-colors"
+            className="text-sm text-indigo-900/80 hover:text-red-600 transition-colors font-bold underline"
           >
             {isSignUp ? t('auth.alreadyHaveAccount') : t('auth.noAccount')}
           </button>

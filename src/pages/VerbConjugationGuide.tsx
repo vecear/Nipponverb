@@ -21,7 +21,7 @@ const LearningTip = ({ title, children }: { title: string, children: React.React
             <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
             教學重點：{title}
         </h4>
-        <div className="text-sm text-white/70 leading-relaxed font-japanese">
+        <div className="text-sm text-indigo-900/70 leading-relaxed font-japanese">
             {children}
         </div>
     </div>
@@ -35,9 +35,9 @@ const VerbConjugationGuide = () => {
             {/* Header */}
             <div className="flex items-center justify-between mb-8">
                 <div>
-                    <Link to="/verbs" className="text-white/60 hover:text-white mb-2 inline-block">← {t('common.back')}</Link>
+                    <Link to="/verbs" className="text-indigo-900/90 hover:text-indigo-700 mb-2 inline-block">← {t('common.back')}</Link>
                     <h1 className="text-3xl md:text-5xl font-zen font-bold text-gradient">動詞活用完全指南</h1>
-                    <p className="text-lg text-white/70 mt-4 leading-relaxed">
+                    <p className="text-lg text-indigo-900/70 mt-4 leading-relaxed">
                         這是一份為你量身打造的實戰指南。我們不只告訴你「怎麼變」，還會告訴你「為什麼這樣變」。
                     </p>
                 </div>
@@ -53,15 +53,15 @@ const VerbConjugationGuide = () => {
                     <div className="card grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="space-y-2">
                             <h3 className="font-bold text-sakura-pink">第一類 (五段動詞)</h3>
-                            <p className="text-sm text-white/60">字尾散佈於「五段」音，變化最為多樣。</p>
+                            <p className="text-sm text-indigo-900/90">字尾散佈於「五段」音，變化最為多樣。</p>
                         </div>
                         <div className="space-y-2 border-l border-white/10 md:pl-6 pl-0 border-l-0 md:border-l">
                             <h3 className="font-bold text-sakura-pink">第二類 (一段動詞)</h3>
-                            <p className="text-sm text-white/60">字尾必為「る」，且前一音為「い段」或「え段」。</p>
+                            <p className="text-sm text-indigo-900/90">字尾必為「る」，且前一音為「い段」或「え段」。</p>
                         </div>
                         <div className="space-y-2 border-l border-white/10 md:pl-6 pl-0 border-l-0 md:border-l">
                             <h3 className="font-bold text-sakura-pink">第三類 (不規則)</h3>
-                            <p className="text-sm text-white/60">只有「する」與「來る」，是所有變化的基礎。</p>
+                            <p className="text-sm text-indigo-900/90">只有「する」與「來る」，是所有變化的基礎。</p>
                         </div>
                     </div>
                 </section>
@@ -77,7 +77,7 @@ const VerbConjugationGuide = () => {
                     <div className="card space-y-6">
                         <div className="flex justify-between items-start">
                             <h3 className="text-xl font-bold text-sakura-pink">1. ます形 (禮貌形)</h3>
-                            <div className="px-3 py-1 bg-white/5 rounded-full text-[10px] font-mono uppercase tracking-wider">Polite Form</div>
+                            <div className="px-3 py-1 bg-indigo-900/5 rounded-full text-[10px] font-mono uppercase tracking-wider">Polite Form</div>
                         </div>
 
                         <LearningTip title="i-段音的橋樑作用">
@@ -86,53 +86,53 @@ const VerbConjugationGuide = () => {
                         </LearningTip>
 
                         <div className="space-y-4">
-                            <div className="bg-white/5 rounded-xl border border-white/10 transition-all">
+                            <div className="bg-indigo-900/5 rounded-xl border border-indigo-900/10 transition-all">
                                 <div className="p-4 font-bold flex items-center justify-between select-none">
                                     <span>詳細規則教學 (第一、二、三類)</span>
                                 </div>
-                                <div className="p-4 pt-0 space-y-4 border-t border-white/5 text-sm leading-relaxed">
+                                <div className="p-4 pt-0 space-y-4 border-t border-indigo-900/5 text-sm leading-relaxed">
                                     <p>● <strong>第一類 (五段)：</strong> 將字尾音從「う段」改為「い段」。例如：<FuriganaText text="書{か}く" /> → <FuriganaText text="書{か}き" /> + ます。</p>
                                     <p>● <strong>第二類 (一段)：</strong> 最簡單！直接把「る」拿掉。例如：<FuriganaText text="食{た}べる" /> → <FuriganaText text="食{た}べ" /> + ます。</p>
                                     <p>● <strong>第三類 (不規則)：</strong> する變為「します」；<FuriganaText text="来{く}る" /> 讀音變為「き」變成「來ます」。</p>
                                 </div>
                             </div>
 
-                            <div className="bg-white/5 rounded-xl border border-white/10 transition-all">
+                            <div className="bg-indigo-900/5 rounded-xl border border-indigo-900/10 transition-all">
                                 <div className="p-4 font-bold flex items-center justify-between select-none">
                                     <span>例句</span>
                                 </div>
-                                <div className="p-4 pt-0 space-y-4 border-t border-white/5">
+                                <div className="p-4 pt-0 space-y-4 border-t border-indigo-900/5">
                                     <div className="space-y-1">
                                         <div className="flex items-center gap-2"><DifficultyBadge level="easy" /><FuriganaText text="明日{あした}　公{こう}園{えん}へ　行{い}きます。" /></div>
-                                        <p className="text-xs text-white/40">明天要去公園。 (行く → 往「い段」跳一格變為 き)</p>
+                                        <p className="text-xs text-indigo-900/40">明天要去公園。 (行く → 往「い段」跳一格變為 き)</p>
                                     </div>
-                                    <div className="space-y-1 border-t border-white/5 pt-2">
+                                    <div className="space-y-1 border-t border-indigo-900/5 pt-2">
                                         <div className="flex items-center gap-2"><DifficultyBadge level="medium" /><FuriganaText text="もうすぐ　試{し}驗{けん}協助　始{はじ}まります。" /></div>
-                                        <p className="text-xs text-white/40">考試馬上就要開始了。 (始まる → る變為 り)</p>
+                                        <p className="text-xs text-indigo-900/40">考試馬上就要開始了。 (始まる → る變為 り)</p>
                                     </div>
-                                    <div className="space-y-1 border-t border-white/5 pt-2">
+                                    <div className="space-y-1 border-t border-indigo-900/5 pt-2">
                                         <div className="flex items-center gap-2"><DifficultyBadge level="hard" /><FuriganaText text="先{せん}生{せい}に　よろしく　申{もう}し上{あ}げます。" /></div>
-                                        <p className="text-xs text-white/40">向老師致以問候。 (謙讓語的活用，原理相同)</p>
+                                        <p className="text-xs text-indigo-900/40">向老師致以問候。 (謙讓語的活用，原理相同)</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="bg-white/5 rounded-xl border border-white/10 transition-all">
+                            <div className="bg-indigo-900/5 rounded-xl border border-indigo-900/10 transition-all">
                                 <div className="p-4 font-bold flex items-center justify-between select-none">
                                     <span>自我檢測</span>
                                 </div>
-                                <div className="p-4 pt-0 space-y-6 border-t border-white/5">
+                                <div className="p-4 pt-0 space-y-6 border-t border-indigo-900/5">
                                     <div className="space-y-3">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="easy" />將「食べる」變為ます形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="食{た}べます" />。第二類動詞去「る」直接加「ます」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-indigo-900/5 rounded-lg">答案：<FuriganaText text="食{た}べます" />。第二類動詞去「る」直接加「ます」。</div></details>
                                     </div>
-                                    <div className="space-y-3 border-t border-white/5 pt-4">
+                                    <div className="space-y-3 border-t border-indigo-900/5 pt-4">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="medium" />將「走る」變為ます形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="走{はし}ります" />。注意：<FuriganaText text="走{はし}る" /> 是第一類動詞（例外），不可去「る」加「ます」，須將「る」變「り」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-indigo-900/5 rounded-lg">答案：<FuriganaText text="走{はし}ります" />。注意：<FuriganaText text="走{はし}る" /> 是第一類動詞（例外），不可去「る」加「ます」，須將「る」變「り」。</div></details>
                                     </div>
-                                    <div className="space-y-3 border-t border-white/5 pt-4">
+                                    <div className="space-y-3 border-t border-indigo-900/5 pt-4">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="hard" />將「来る」變為ます形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="来{き}ます" />。第三類不規則動詞，讀音從「く」變為「き」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-indigo-900/5 rounded-lg">答案：<FuriganaText text="来{き}ます" />。第三類不規則動詞，讀音從「く」變為「き」。</div></details>
                                     </div>
                                 </div>
                             </div>
@@ -143,7 +143,7 @@ const VerbConjugationGuide = () => {
                     <div className="card space-y-6">
                         <div className="flex justify-between items-start">
                             <h3 className="text-xl font-bold text-sakura-pink">2. て形 (連結形)</h3>
-                            <div className="px-3 py-1 bg-white/5 rounded-full text-[10px] font-mono uppercase tracking-wider">Te-Form</div>
+                            <div className="px-3 py-1 bg-indigo-900/5 rounded-full text-[10px] font-mono uppercase tracking-wider">Te-Form</div>
                         </div>
 
                         <LearningTip title="音便：為了發音舒服的妥協">
@@ -155,93 +155,93 @@ const VerbConjugationGuide = () => {
                         <div className="bg-electric-cyan/10 border-l-4 border-electric-cyan p-4 rounded-r">
                             <h4 className="text-sm font-bold text-electric-cyan mb-3">第一類音便詳細圖解 (加強版)：</h4>
                             <div className="grid grid-cols-1 gap-4 text-sm">
-                                <div className="bg-black/20 p-4 rounded-lg border border-white/5">
+                                <div className="bg-indigo-900/5 p-4 rounded-lg border border-indigo-900/10">
                                     <div className="flex items-center gap-2 mb-2">
                                         <span className="px-2 py-0.5 rounded bg-pink-500/20 text-pink-300 text-xs font-bold border border-pink-500/30">促音便</span>
-                                        <p className="font-bold text-white">う・つ・る → って</p>
+                                        <p className="font-bold text-indigo-900">う・つ・る → って</p>
                                     </div>
-                                    <p className="text-white/60 text-xs mb-3">字尾變成小小的「っ」，發音時計得要停頓一下。</p>
-                                    <div className="space-y-2 pl-2 border-l-2 border-white/10">
+                                    <p className="text-indigo-900/90 text-xs mb-3">字尾變成小小的「っ」，發音時計得要停頓一下。</p>
+                                    <div className="space-y-2 pl-2 border-l-2 border-indigo-900/10">
                                         <div className="flex items-center gap-2">
-                                            <span className="text-white/40 text-xs">①</span>
-                                            <div className="flex items-center gap-2"><FuriganaText text="買{か}う" /> (u) <span className="text-white/30">→</span> <FuriganaText text="買{か}って" /></div>
+                                            <span className="text-indigo-900/40 text-xs">①</span>
+                                            <div className="flex items-center gap-2"><FuriganaText text="買{か}う" /> (u) <span className="text-indigo-900/30">→</span> <FuriganaText text="買{か}って" /></div>
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <span className="text-white/40 text-xs">②</span>
-                                            <div className="flex items-center gap-2"><FuriganaText text="待{ま}つ" /> (tsu) <span className="text-white/30">→</span> <FuriganaText text="待{ま}って" /></div>
+                                            <span className="text-indigo-900/40 text-xs">②</span>
+                                            <div className="flex items-center gap-2"><FuriganaText text="待{ま}つ" /> (tsu) <span className="text-indigo-900/30">→</span> <FuriganaText text="待{ま}って" /></div>
                                         </div>
                                         <div className="flex items-center gap-2 bg-yellow-500/10 p-1 -ml-1 rounded">
                                             <span className="text-yellow-500 text-xs">★</span>
-                                            <div className="flex items-center gap-2"><FuriganaText text="帰{かえ}る" /> (ru) <span className="text-white/30">→</span> <FuriganaText text="帰{かえ}って" /></div>
+                                            <div className="flex items-center gap-2"><FuriganaText text="帰{かえ}る" /> (ru) <span className="text-indigo-900/30">→</span> <FuriganaText text="帰{かえ}って" /></div>
                                             <span className="text-[10px] text-yellow-400/80 ml-auto">(例外! 雖然是る結尾但屬第一類)</span>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="bg-black/20 p-4 rounded-lg border border-white/5">
+                                <div className="bg-indigo-900/5 p-4 rounded-lg border border-indigo-900/10">
                                     <div className="flex items-center gap-2 mb-2">
                                         <span className="px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 text-xs font-bold border border-blue-500/30">鼻音便</span>
-                                        <p className="font-bold text-white">ぬ・ぶ・む → んで</p>
+                                        <p className="font-bold text-indigo-900">ぬ・ぶ・む → んで</p>
                                     </div>
-                                    <p className="text-white/60 text-xs mb-3">變成有鼻音的「ん」，而且後面接的要是濁音「で」。</p>
-                                    <div className="space-y-2 pl-2 border-l-2 border-white/10">
+                                    <p className="text-indigo-900/90 text-xs mb-3">變成有鼻音的「ん」，而且後面接的要是濁音「で」。</p>
+                                    <div className="space-y-2 pl-2 border-l-2 border-indigo-900/10">
                                         <div className="flex items-center gap-2">
-                                            <span className="text-white/40 text-xs">①</span>
-                                            <div className="flex items-center gap-2"><FuriganaText text="遊{あそ}ぶ" /> (bu) <span className="text-white/30">→</span> <FuriganaText text="遊{あそ}んで" /></div>
+                                            <span className="text-indigo-900/40 text-xs">①</span>
+                                            <div className="flex items-center gap-2"><FuriganaText text="遊{あそ}ぶ" /> (bu) <span className="text-indigo-900/30">→</span> <FuriganaText text="遊{あそ}んで" /></div>
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <span className="text-white/40 text-xs">②</span>
-                                            <div className="flex items-center gap-2"><FuriganaText text="読{よ}む" /> (mu) <span className="text-white/30">→</span> <FuriganaText text="読{よ}んで" /></div>
+                                            <span className="text-indigo-900/40 text-xs">②</span>
+                                            <div className="flex items-center gap-2"><FuriganaText text="読{よ}む" /> (mu) <span className="text-indigo-900/30">→</span> <FuriganaText text="読{よ}んで" /></div>
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <span className="text-white/40 text-xs">③</span>
-                                            <div className="flex items-center gap-2"><FuriganaText text="死{し}ぬ" /> (nu) <span className="text-white/30">→</span> <FuriganaText text="死{し}んで" /></div>
-                                            <span className="text-[10px] text-white/30 ml-auto">(唯一的 nu 結尾動詞)</span>
+                                            <span className="text-indigo-900/40 text-xs">③</span>
+                                            <div className="flex items-center gap-2"><FuriganaText text="死{し}ぬ" /> (nu) <span className="text-indigo-900/30">→</span> <FuriganaText text="死{し}んで" /></div>
+                                            <span className="text-[10px] text-indigo-900/30 ml-auto">(唯一的 nu 結尾動詞)</span>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="bg-black/20 p-4 rounded-lg border border-white/5">
+                                <div className="bg-indigo-900/5 p-4 rounded-lg border border-indigo-900/10">
                                     <div className="flex items-center gap-2 mb-2">
                                         <span className="px-2 py-0.5 rounded bg-green-500/20 text-green-300 text-xs font-bold border border-green-500/30">い音便</span>
-                                        <p className="font-bold text-white">く → いて / ぐ → いで</p>
+                                        <p className="font-bold text-indigo-900">く → いて / ぐ → いで</p>
                                     </div>
-                                    <p className="text-white/60 text-xs mb-3">發音變得像滑過去一樣。如果原字有濁點(ten-ten)，後面也要加濁點！</p>
-                                    <div className="space-y-2 pl-2 border-l-2 border-white/10">
+                                    <p className="text-indigo-900/90 text-xs mb-3">發音變得像滑過去一樣。如果原字有濁點(ten-ten)，後面也要加濁點！</p>
+                                    <div className="space-y-2 pl-2 border-l-2 border-indigo-900/10">
                                         <div className="flex items-center gap-2">
-                                            <span className="text-white/40 text-xs">①</span>
-                                            <div className="flex items-center gap-2"><FuriganaText text="書{か}く" /> (ku) <span className="text-white/30">→</span> <FuriganaText text="書{か}いて" /></div>
+                                            <span className="text-indigo-900/40 text-xs">①</span>
+                                            <div className="flex items-center gap-2"><FuriganaText text="書{か}く" /> (ku) <span className="text-indigo-900/30">→</span> <FuriganaText text="書{か}いて" /></div>
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <span className="text-white/40 text-xs">②</span>
-                                            <div className="flex items-center gap-2"><FuriganaText text="聞{き}く" /> (ku) <span className="text-white/30">→</span> <FuriganaText text="聞{き}いて" /></div>
+                                            <span className="text-indigo-900/40 text-xs">②</span>
+                                            <div className="flex items-center gap-2"><FuriganaText text="聞{き}く" /> (ku) <span className="text-indigo-900/30">→</span> <FuriganaText text="聞{き}いて" /></div>
                                         </div>
                                         <div className="flex items-center gap-2 bg-green-500/10 p-1 -ml-1 rounded">
                                             <span className="text-green-400 text-xs">★</span>
-                                            <div className="flex items-center gap-2"><FuriganaText text="泳{およ}ぐ" /> (gu) <span className="text-white/30">→</span> <FuriganaText text="泳{およ}いで" /></div>
+                                            <div className="flex items-center gap-2"><FuriganaText text="泳{およ}ぐ" /> (gu) <span className="text-indigo-900/30">→</span> <FuriganaText text="泳{およ}いで" /></div>
                                             <span className="text-[10px] text-green-400/80 ml-auto">(濁音變濁音！)</span>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="bg-black/20 p-4 rounded-lg border border-white/5">
+                                <div className="bg-indigo-900/5 p-4 rounded-lg border border-indigo-900/10">
                                     <div className="flex items-center gap-2 mb-2">
                                         <span className="px-2 py-0.5 rounded bg-red-500/20 text-red-300 text-xs font-bold border border-red-500/30">特殊例外</span>
-                                        <p className="font-bold text-white">行く → 行って</p>
+                                        <p className="font-bold text-indigo-900">行く → 行って</p>
                                     </div>
-                                    <p className="text-white/60 text-xs mb-3">雖然是「ku」結尾，但因為發音習慣，它不變成「い」而變成促音「っ」。</p>
-                                    <div className="space-y-2 pl-2 border-l-2 border-white/10">
+                                    <p className="text-indigo-900/90 text-xs mb-3">雖然是「ku」結尾，但因為發音習慣，它不變成「い」而變成促音「っ」。</p>
+                                    <div className="space-y-2 pl-2 border-l-2 border-indigo-900/10">
                                         <div className="flex items-center gap-2">
-                                            <span className="text-white/40 text-xs">①</span>
-                                            <div className="flex items-center gap-2"><FuriganaText text="行{い}く" /> (Go) <span className="text-white/30">→</span> <FuriganaText text="行{い}って" /></div>
+                                            <span className="text-indigo-900/40 text-xs">①</span>
+                                            <div className="flex items-center gap-2"><FuriganaText text="行{い}く" /> (Go) <span className="text-indigo-900/30">→</span> <FuriganaText text="行{い}って" /></div>
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <span className="text-white/40 text-xs">②</span>
-                                            <div className="flex items-center gap-2"><FuriganaText text="連{つ}れて行{い}く" /> (複合) <span className="text-white/30">→</span> <FuriganaText text="連{つ}れて行{い}って" /></div>
+                                            <span className="text-indigo-900/40 text-xs">②</span>
+                                            <div className="flex items-center gap-2"><FuriganaText text="連{つ}れて行{い}く" /> (複合) <span className="text-indigo-900/30">→</span> <FuriganaText text="連{つ}れて行{い}って" /></div>
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <span className="text-white/40 text-xs">③</span>
-                                            <div className="flex items-center gap-2"><FuriganaText text="持{も}って行{い}く" /> (複合) <span className="text-white/30">→</span> <FuriganaText text="持{も}って行{い}って" /></div>
+                                            <span className="text-indigo-900/40 text-xs">③</span>
+                                            <div className="flex items-center gap-2"><FuriganaText text="持{も}って行{い}く" /> (複合) <span className="text-indigo-900/30">→</span> <FuriganaText text="持{も}って行{い}って" /></div>
                                         </div>
                                     </div>
                                 </div>
@@ -254,7 +254,7 @@ const VerbConjugationGuide = () => {
                                 <span className="text-lg">⚠️</span>
                                 常見陷阱：偽裝成「二類」的「一類動詞」
                             </h4>
-                            <p className="text-sm text-white/70 mb-4 leading-relaxed">
+                            <p className="text-sm text-indigo-900/70 mb-4 leading-relaxed">
                                 這些動詞雖然結尾是「iru」或「eru」，看起來很像二類動詞（一段），但它們其實是<strong>一類動詞（五段）</strong>！
                                 所以在變化時，必須照著「う・つ・る → って」的促音便規則，而不能直接去る。
                             </p>
@@ -556,7 +556,7 @@ const VerbConjugationGuide = () => {
                         <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">
                             最終試煉：20題綜合測驗
                         </h2>
-                        <p className="text-white/60">
+                        <p className="text-indigo-900/90">
                             運用你學到的所有知識，挑戰這三個階段的試煉吧！
                         </p>
                     </div>

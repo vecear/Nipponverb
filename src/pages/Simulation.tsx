@@ -137,7 +137,7 @@ const Simulation = () => {
           <h1 className="text-2xl md:text-5xl font-zen font-bold mb-4 text-gradient">
             {t('simulation.title')}
           </h1>
-          <p className="text-lg md:text-xl text-white/60">
+          <p className="text-lg md:text-xl text-indigo-900/90">
             {t('simulation.subtitle')}
           </p>
         </div>
@@ -156,14 +156,14 @@ const Simulation = () => {
                   </div>
                 </div>
 
-                <p className="text-white/60 text-sm">{level.desc}</p>
+                <p className="text-indigo-900/90 text-sm">{level.desc}</p>
 
                 <div className="space-y-1.5">
-                  <p className="text-xs font-semibold text-white/80">{t('simulation.sectionsLabel')}:</p>
+                  <p className="text-xs font-semibold text-indigo-900/80">{t('simulation.sectionsLabel')}:</p>
                   <div className="flex flex-wrap gap-1.5">
-                    <span className="px-2 py-0.5 bg-white/10 rounded-full text-xs">{t('simulation.sections.vocabulary')}</span>
-                    <span className="px-2 py-0.5 bg-white/10 rounded-full text-xs">{t('simulation.sections.grammar')}</span>
-                    <span className="px-2 py-0.5 bg-white/10 rounded-full text-xs">{t('simulation.sections.reading')}</span>
+                    <span className="px-2 py-0.5 bg-indigo-900/10 rounded-full text-xs">{t('simulation.sections.vocabulary')}</span>
+                    <span className="px-2 py-0.5 bg-indigo-900/10 rounded-full text-xs">{t('simulation.sections.grammar')}</span>
+                    <span className="px-2 py-0.5 bg-indigo-900/10 rounded-full text-xs">{t('simulation.sections.reading')}</span>
                   </div>
                 </div>
 
@@ -180,7 +180,7 @@ const Simulation = () => {
 
         <div className="card">
           <h3 className="text-2xl font-zen font-bold mb-4">{t('simulation.guidelinesTitle')}</h3>
-          <ul className="space-y-3 text-white/80">
+          <ul className="space-y-3 text-indigo-900/80">
             <li className="flex items-start space-x-3">
               <span className="text-sakura-pink mt-1">•</span>
               <span>{t('simulation.guideline1')}</span>
@@ -269,14 +269,14 @@ const Simulation = () => {
               <div className="text-4xl md:text-5xl font-bold text-sakura-pink mb-2">
                 {results.score}/{results.total}
               </div>
-              <div className="text-sm md:text-base text-white/60">{t('simulation.results.questionsCorrect')}</div>
+              <div className="text-sm md:text-base text-indigo-900/90">{t('simulation.results.questionsCorrect')}</div>
             </div>
 
             <div className="glass p-4 md:p-6 rounded-xl">
               <div className="text-4xl md:text-5xl font-bold text-electric-cyan mb-2">
                 {results.percentage}%
               </div>
-              <div className="text-sm md:text-base text-white/60">{t('simulation.results.overallScore')}</div>
+              <div className="text-sm md:text-base text-indigo-900/90">{t('simulation.results.overallScore')}</div>
             </div>
           </div>
 
@@ -337,7 +337,7 @@ const Simulation = () => {
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-2xl font-bold">{t('simulation.exam.mockExam', { level: selectedLevel })}</h2>
-            <p className="text-white/60">
+            <p className="text-indigo-900/60">
               {t('simulation.exam.section', { current: currentSectionIndex + 1, total: exam.sections.length, name: currentSection.title })}
             </p>
           </div>
@@ -345,7 +345,7 @@ const Simulation = () => {
             <div className={`text-3xl font-bold ${timeRemaining < 300 ? 'text-red-500' : 'text-electric-cyan'}`}>
               {formatTime(timeRemaining)}
             </div>
-            <div className="text-sm text-white/60">{t('simulation.exam.timeRemaining')}</div>
+            <div className="text-sm text-indigo-900/90">{t('simulation.exam.timeRemaining')}</div>
           </div>
         </div>
       </div>
@@ -353,14 +353,14 @@ const Simulation = () => {
       {/* Progress */}
       <div className="mb-6">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-white/60">
+          <span className="text-indigo-900/60">
             {t('simulation.exam.question', { current: currentOverallIndex, total: totalQuestions })}
           </span>
-          <span className="text-white/60">
+          <span className="text-indigo-900/60">
             {t('simulation.exam.sectionProgress', { current: currentQuestionIndex + 1, total: currentSection.questions.length })}
           </span>
         </div>
-        <div className="w-full bg-white/10 rounded-full h-2">
+        <div className="w-full bg-indigo-900/10 rounded-full h-2">
           <div
             className="bg-gradient-to-r from-sakura-pink to-electric-cyan h-2 rounded-full transition-all"
             style={{ width: `${(currentOverallIndex / totalQuestions) * 100}%` }}
@@ -380,7 +380,7 @@ const Simulation = () => {
               onClick={() => handleAnswer(currentQuestion.id, option)}
               className={`w-full p-4 rounded-xl text-left transition-all ${answers[currentQuestion.id] === option
                 ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
-                : 'glass hover:bg-white/10'
+                : 'glass hover:bg-white/50 border border-indigo-900/5'
                 }`}
             >
               <span className="font-semibold mr-3">{String.fromCharCode(65 + _idx)}.</span>
@@ -400,7 +400,7 @@ const Simulation = () => {
           {t('simulation.exam.previous')}
         </button>
 
-        <div className="text-white/60">
+        <div className="text-indigo-900/60">
           {t('simulation.exam.answered', { count: Object.keys(answers).length, total: totalQuestions })}
         </div>
 

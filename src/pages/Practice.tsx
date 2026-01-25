@@ -355,7 +355,7 @@ const Practice = () => {
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-zen font-bold text-gradient mb-4">{t('practice.title')}</h1>
-          <p className="text-white/60">{t('practice.selectCategory')}</p>
+          <p className="text-indigo-900/90">{t('practice.selectCategory')}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
@@ -363,7 +363,7 @@ const Practice = () => {
             <div
               key={mode.id}
               onClick={() => handleCategorySelect(mode.id)}
-              className="card p-6 hover:bg-white/15 cursor-pointer transition-all duration-300 group"
+              className="card p-6 hover:bg-white/50 border border-indigo-900/5 cursor-pointer transition-all duration-300 group"
             >
               <div className="flex items-center space-x-4">
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${mode.color} flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition-transform`}>
@@ -371,7 +371,7 @@ const Practice = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">{mode.title}</h3>
-                  <p className="text-white/60 text-sm">{mode.description}</p>
+                  <p className="text-indigo-900/90 text-sm">{mode.description}</p>
                 </div>
               </div>
             </div>
@@ -392,7 +392,7 @@ const Practice = () => {
           <h1 className="text-2xl md:text-3xl font-zen font-bold mb-4 text-gradient">
             歷史作答記錄
           </h1>
-          <p className="text-white/60 text-sm mb-4">
+          <p className="text-indigo-900/90 text-sm mb-4">
             {viewingHistory.level} · {new Date(viewingHistory.date).toLocaleDateString('zh-TW', {
               year: 'numeric',
               month: 'long',
@@ -407,14 +407,14 @@ const Practice = () => {
               <div className="text-4xl md:text-5xl font-bold text-sakura-pink mb-2">
                 {viewingHistory.score}/{viewingHistory.total}
               </div>
-              <div className="text-sm md:text-base text-white/60">答對題數</div>
+              <div className="text-sm md:text-base text-indigo-900/90">答對題數</div>
             </div>
 
             <div className="glass p-4 md:p-6 rounded-xl">
               <div className="text-4xl md:text-5xl font-bold text-electric-cyan mb-2">
                 {viewingHistory.accuracy}%
               </div>
-              <div className="text-sm md:text-base text-white/60">正確率</div>
+              <div className="text-sm md:text-base text-indigo-900/90">正確率</div>
             </div>
           </div>
 
@@ -435,7 +435,7 @@ const Practice = () => {
                 return (
                   <span
                     key={index}
-                    className="w-9 h-9 rounded-lg flex items-center justify-center font-bold text-sm bg-white/10 text-white/40 border border-white/20"
+                    className="w-9 h-9 rounded-lg flex items-center justify-center font-bold text-sm bg-indigo-900/10 text-indigo-900/40 border border-indigo-900/20"
                   >
                     {index + 1}
                   </span>
@@ -458,7 +458,7 @@ const Practice = () => {
 
         {/* Detailed Question Review */}
         <div className="space-y-4">
-          <h2 className="text-xl font-bold text-white/80">📝 詳細解析</h2>
+          <h2 className="text-xl font-bold text-indigo-900/80">📝 詳細解析</h2>
 
           {viewingHistory.questions.map((question, index) => {
             const record = historyRecordMap.get(question.id)
@@ -486,7 +486,7 @@ const Practice = () => {
                       <span className={`text-sm font-medium ${record.isCorrect ? 'text-green-400' : 'text-red-400'}`}>
                         {record.isCorrect ? '✓ 正確' : '✗ 錯誤'}
                       </span>
-                      <p className="text-white/60 text-sm truncate max-w-[200px] md:max-w-md">
+                      <p className="text-indigo-900/90 text-sm truncate max-w-[200px] md:max-w-md">
                         <FuriganaText text={question.stem || question.instruction || ''} />
                       </p>
                     </div>
@@ -501,7 +501,7 @@ const Practice = () => {
                         <FuriganaText text={question.stem || question.instruction || ''} />
                       </p>
                       {question.meaning && (
-                        <p className="text-white/70 text-sm">
+                        <p className="text-indigo-900/70 text-sm">
                           {question.meaning.split(/(\*.*?\*)/).map((part, i) =>
                             part.startsWith('*') && part.endsWith('*') ? (
                               <span key={i} className="italic text-sakura-pink/90 font-medium">
@@ -525,11 +525,11 @@ const Practice = () => {
                         </div>
                       ) : (
                         <p className="text-sm">
-                          <span className="text-white/60">你的答案：</span>
+                          <span className="text-indigo-900/90">你的答案：</span>
                           <span className="font-bold">{record.selectedAnswer}</span>
                           {!record.isCorrect && (
                             <>
-                              <span className="text-white/60 mx-2">→</span>
+                              <span className="text-indigo-900/90 mx-2">→</span>
                               <span className="text-green-400 font-bold">正確答案：{question.correct}</span>
                             </>
                           )}
@@ -541,13 +541,13 @@ const Practice = () => {
                       <>
                         <div className="bg-black/20 p-4 rounded-lg border-l-4 border-electric-cyan space-y-2">
                           <p className="font-bold text-electric-cyan">📖 文法解析</p>
-                          <p className="text-sm text-white/90 whitespace-pre-line">
+                          <p className="text-sm text-indigo-900/90 whitespace-pre-line">
                             <FuriganaText text={question.detailedExplanation.correctRule} />
                           </p>
                         </div>
 
                         <div className="bg-black/20 p-4 rounded-lg space-y-2">
-                          <p className="font-bold text-white/80 mb-2">📝 各選項解析</p>
+                          <p className="font-bold text-indigo-900/80 mb-2">📝 各選項解析</p>
                           {question.detailedExplanation.distractors.map((distractor, idx) => {
                             const isCorrectOption = distractor.text === question.correct
                             const isSelectedOption = distractor.text === record.selectedAnswer
@@ -559,22 +559,22 @@ const Practice = () => {
                                   ? 'bg-green-500/20 border border-green-500/50'
                                   : isSelectedOption
                                     ? 'bg-red-500/20 border border-red-500/50'
-                                    : 'bg-white/5 border border-white/10'
+                                    : 'bg-white/50 border border-indigo-900/10'
                                   }`}
                               >
                                 <div className="flex items-start gap-2">
-                                  <span className={`font-bold shrink-0 ${isCorrectOption ? 'text-green-400' : isSelectedOption ? 'text-red-400' : 'text-white/60'
+                                  <span className={`font-bold shrink-0 ${isCorrectOption ? 'text-green-600' : isSelectedOption ? 'text-red-500' : 'text-indigo-900/60'
                                     }`}>
                                     {isCorrectOption ? '✓' : isSelectedOption ? '✗' : '•'}
                                   </span>
                                   <div className="flex-1">
-                                    <span className={`font-medium ${isCorrectOption ? 'text-green-400' : isSelectedOption ? 'text-red-400' : 'text-white/80'
+                                    <span className={`font-medium ${isCorrectOption ? 'text-green-600' : isSelectedOption ? 'text-red-500' : 'text-indigo-900/80'
                                       }`}>
                                       <FuriganaText text={distractor.text} />
                                     </span>
                                     {isCorrectOption && <span className="ml-2 text-xs text-green-400/80">(正解)</span>}
                                     {isSelectedOption && !isCorrectOption && <span className="ml-2 text-xs text-red-400/80">(你的選擇)</span>}
-                                    <p className="text-white/70 text-xs mt-1">
+                                    <p className="text-indigo-900/70 text-xs mt-1">
                                       <FuriganaText text={distractor.reason} />
                                     </p>
                                   </div>
@@ -614,7 +614,7 @@ const Practice = () => {
                     onClick={() => setSelectedSubcategory(type)}
                     className={`p-3 md:p-4 rounded-xl transition-all ${selectedSubcategory === type
                       ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
-                      : 'glass hover:bg-white/10'
+                      : 'glass hover:bg-white/50 border border-indigo-900/5'
                       }`}
                   >
                     <div className="text-xl md:text-2xl mb-1 md:mb-2">{type === 'hiragana' ? 'あ' : 'ア'}</div>
@@ -660,18 +660,18 @@ const Practice = () => {
                       onClick={() => setSelectedLevel(level)}
                       className={`p-3 md:p-4 rounded-xl transition-all flex flex-col items-center justify-center ${selectedLevel === level
                         ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white shadow-lg'
-                        : 'glass hover:bg-white/10'
+                        : 'glass hover:bg-white/50 border border-indigo-900/5'
                         }`}
                     >
                       <div className="text-lg md:text-xl font-bold">{level}</div>
                       {questionCount !== null && (
                         <>
-                          <div className={`text-[10px] md:text-xs mt-1 ${selectedLevel === level ? 'text-white/90' : 'text-white/40'
+                          <div className={`text-[10px] md:text-xs mt-1 ${selectedLevel === level ? 'text-white/90' : 'text-indigo-900/40'
                             }`}>
                             {questionCount} 題
                           </div>
                           {coverage && (
-                            <div className={`text-[9px] md:text-[10px] mt-0.5 ${selectedLevel === level ? 'text-white/80' : 'text-white/30'
+                            <div className={`text-[9px] md:text-[10px] mt-0.5 ${selectedLevel === level ? 'text-white/80' : 'text-indigo-900/30'
                               }`}>
                               已做 {coverage.attempted}/{coverage.total}
                             </div>
@@ -694,8 +694,8 @@ const Practice = () => {
                     key={count}
                     onClick={() => setQuestionCount(count)}
                     className={`px-4 py-2 rounded-lg transition-all font-medium ${questionCount === count
-                        ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white shadow-lg'
-                        : 'glass hover:bg-white/10 text-white/70'
+                      ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white shadow-lg'
+                      : 'glass hover:bg-white/50 text-indigo-900/70 border border-indigo-900/5'
                       }`}
                   >
                     {count}題
@@ -746,19 +746,19 @@ const Practice = () => {
                   <button
                     key={entry.id}
                     onClick={() => setViewingHistory(entry)}
-                    className="w-full flex items-center justify-between p-3 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all text-left"
+                    className="w-full flex items-center justify-between p-3 rounded-lg bg-white/50 border border-indigo-900/10 hover:bg-white/80 hover:border-indigo-900/20 transition-all text-left"
                   >
                     <div className="flex items-center gap-3">
-                      <span className="text-white/40 text-sm w-6">#{idx + 1}</span>
+                      <span className="text-indigo-900/40 text-sm w-6">#{idx + 1}</span>
                       <div>
                         <span className={`font-bold ${entry.accuracy >= 80 ? 'text-green-400' : entry.accuracy >= 60 ? 'text-yellow-400' : 'text-red-400'}`}>
                           {entry.score}/{entry.total}
                         </span>
-                        <span className="text-white/60 ml-2">({entry.accuracy}%)</span>
+                        <span className="text-indigo-900/90 ml-2">({entry.accuracy}%)</span>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs text-white/40">
+                      <span className="text-xs text-indigo-900/40">
                         {new Date(entry.date).toLocaleDateString('zh-TW', {
                           month: 'short',
                           day: 'numeric',
@@ -766,7 +766,7 @@ const Practice = () => {
                           minute: '2-digit'
                         })}
                       </span>
-                      <ChevronDown size={14} className="text-white/40 -rotate-90" />
+                      <ChevronDown size={14} className="text-indigo-900/40 -rotate-90" />
                     </div>
                   </button>
                 ))}
@@ -800,14 +800,14 @@ const Practice = () => {
               <div className="text-4xl md:text-5xl font-bold text-sakura-pink mb-2">
                 {score}/{answeredCount}
               </div>
-              <div className="text-sm md:text-base text-white/60">{t('practice.questionsCorrect')}</div>
+              <div className="text-sm md:text-base text-white/90">{t('practice.questionsCorrect')}</div>
             </div>
 
             <div className="glass p-4 md:p-6 rounded-xl">
               <div className="text-4xl md:text-5xl font-bold text-electric-cyan mb-2">
                 {accuracy}%
               </div>
-              <div className="text-sm md:text-base text-white/60">{t('practice.accuracy')}</div>
+              <div className="text-sm md:text-base text-white/90">{t('practice.accuracy')}</div>
             </div>
           </div>
 

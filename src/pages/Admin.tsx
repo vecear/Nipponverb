@@ -238,11 +238,10 @@ const Admin = () => {
         {/* 狀態提示 */}
         {status && (
           <div
-            className={`mb-6 p-4 rounded-xl flex items-center gap-3 ${
-              status.type === 'success'
+            className={`mb-6 p-4 rounded-xl flex items-center gap-3 ${status.type === 'success'
                 ? 'bg-green-500/10 text-green-500 border border-green-500/20'
                 : 'bg-red-500/10 text-red-500 border border-red-500/20'
-            }`}
+              }`}
           >
             {status.type === 'success' ? <CheckCircle size={20} /> : <AlertCircle size={20} />}
             <span className="text-sm font-medium">{status.message}</span>
@@ -253,44 +252,40 @@ const Admin = () => {
         <div className="flex gap-2 mb-6">
           <button
             onClick={() => setActiveTab('config')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
-              activeTab === 'config'
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${activeTab === 'config'
                 ? 'bg-sakura-pink text-white'
                 : 'bg-white/10 text-white/60 hover:bg-white/20'
-            }`}
+              }`}
           >
             <Settings size={18} />
             {t('admin.tabs.config', '遊戲配置')}
           </button>
           <button
             onClick={() => setActiveTab('users')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
-              activeTab === 'users'
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${activeTab === 'users'
                 ? 'bg-sakura-pink text-white'
                 : 'bg-white/10 text-white/60 hover:bg-white/20'
-            }`}
+              }`}
           >
             <Users size={18} />
             {t('admin.tabs.users', '使用者列表')}
           </button>
           <button
             onClick={() => setActiveTab('stats')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
-              activeTab === 'stats'
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${activeTab === 'stats'
                 ? 'bg-sakura-pink text-white'
                 : 'bg-white/10 text-white/60 hover:bg-white/20'
-            }`}
+              }`}
           >
             <BarChart3 size={18} />
             {t('admin.tabs.stats', '統計資料')}
           </button>
           <button
             onClick={() => setActiveTab('admins')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
-              activeTab === 'admins'
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${activeTab === 'admins'
                 ? 'bg-sakura-pink text-white'
                 : 'bg-white/10 text-white/60 hover:bg-white/20'
-            }`}
+              }`}
           >
             <Crown size={18} />
             {t('admin.tabs.admins', '管理員')}
@@ -547,6 +542,16 @@ const Admin = () => {
                         </div>
                       </div>
 
+                      {/* 職業說明 */}
+                      {(() => {
+                        const job = JOBS.find(j => j.id === selectedJobForPreview)
+                        return job ? (
+                          <div className="mb-4 text-white/60 text-sm">
+                            <span className="font-bold text-sakura-pink">{job.nameTw}</span>：{job.description}
+                          </div>
+                        ) : null
+                      })()}
+
                       {/* 等級表格 */}
                       <div className="overflow-x-auto max-h-96 overflow-y-auto">
                         <table className="w-full text-sm">
@@ -607,9 +612,8 @@ const Admin = () => {
                                 rows.push(
                                   <tr
                                     key={level}
-                                    className={`border-b border-white/5 ${
-                                      isStageStart ? 'bg-sakura-pink/10' : 'hover:bg-white/5'
-                                    } transition-colors`}
+                                    className={`border-b border-white/5 ${isStageStart ? 'bg-sakura-pink/10' : 'hover:bg-white/5'
+                                      } transition-colors`}
                                   >
                                     <td className="py-2 px-3">
                                       <span className={`font-bold ${isStageStart ? 'text-sakura-pink' : ''}`}>

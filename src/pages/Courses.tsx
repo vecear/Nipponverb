@@ -14,7 +14,7 @@ const Courses = () => {
           <h1 className="text-4xl md:text-5xl font-zen font-bold text-gradient mb-2">
             {t('courses.title')}
           </h1>
-          <p className="text-white/60 text-lg">
+          <p className="text-indigo-900/60 text-lg">
             {t('courses.subtitle')}
           </p>
         </div>
@@ -26,20 +26,20 @@ const Courses = () => {
               <button
                 key={course.id}
                 onClick={() => navigate(course.path)}
-                className="glass p-6 rounded-2xl hover:scale-105 transition-all duration-300 text-left group"
+                className="glass p-6 rounded-2xl hover:scale-105 transition-all duration-300 text-left group border border-indigo-900/10 hover:border-indigo-900/20"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center text-3xl`}>
                     {course.emoji}
                   </div>
-                  <Icon className="text-white/40 group-hover:text-white/60 transition-colors" size={24} />
+                  <Icon className="text-indigo-900/40 group-hover:text-indigo-900/60 transition-colors" size={24} />
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-gradient transition-colors">
+                <h3 className="text-2xl font-bold text-indigo-900 mb-2 group-hover:text-indigo-700 transition-colors">
                   {t(course.titleKey)}
                 </h3>
 
-                <p className="text-white/60 group-hover:text-white/80 transition-colors">
+                <p className="text-indigo-900/60 group-hover:text-indigo-900/80 transition-colors">
                   {t(course.descriptionKey)}
                 </p>
 
