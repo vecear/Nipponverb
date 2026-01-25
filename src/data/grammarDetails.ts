@@ -2,13 +2,13 @@ import { GrammarPoint } from '../types/grammar';
 import { n5Details } from './details/n5';
 import { n4Details } from './details/n4';
 import { n3Details } from './details/n3';
-// import { n1Details } from './details/n1'; // TODO: n1.ts 需要修復語法錯誤
+import { n1Details } from './details/n1';
 
 export const grammarDetails: Record<string, GrammarPoint> = {
     ...n5Details,
     ...n4Details,
     ...n3Details,
-    // ...n1Details, // TODO: 修復後取消註解
+    ...n1Details,
     // N2 示例文法 (待遷移至 n2.ts)
     'n2_ageku': {
         id: 'n2_ageku',
