@@ -4,37 +4,37 @@
 
 @layer base {
   :root {
-    /* Ukiyo-e Palette - Optimized for Legibility and Contrast */
-    --color-paper: #FDFBF7;
-    /* Warm White / Washi */
-    --color-paper-dark: #F0EAD6;
-    /* Aged Paper */
+    /* Great Wave Palette - Hokusai's Pigments */
 
-    --color-ink: #0F172A;
-    /* Slate 900 - Deep, almost black ink */
-    --color-ink-light: #334155;
-    /* Slate 700 - Readable secondary text */
+    /* Prussian Blue (Bero-ai) - Primary Ink */
+    --color-prussian: #1D3450;
 
-    --color-indigo: #1E3A8A;
-    /* Blue 900 - Deep Prussian Blue */
-    --color-indigo-light: #3B82F6;
-    /* For focus rings/accents */
+    /* Indigo / Ocean Deep */
+    --color-indigo: #2A4B7C;
 
-    --color-vermilion: #DC2626;
-    /* Red 600 - Vivid Stamp Red */
+    /* Cerulean / Wave Body */
+    --color-cerulean: #2A6F97;
+
+    /* Foam White / Mist */
+    --color-foam: #F0F8FF;
+
+    /* Washi Paper - Background */
+    --color-paper: #F9F7F2;
+    --color-paper-dark: #E8E6DF;
+
+    /* Vermilion (Hanko Red) - Accents/Action */
+    --color-vermilion: #D3382F;
     --color-vermilion-dark: #B91C1C;
-    /* Red 700 - Dried Stamp Red */
 
-    --color-matcha: #4D7C0F;
-    /* Green 700 - Deep Tea Green */
-    --color-gold: #B45309;
-    /* Amber 700 - Aged Gold */
+    /* Ochre / Wood - Secondary */
+    --color-ochre: #C59D5F;
   }
 
   body {
     background-color: var(--color-paper);
-    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='64' height='64' fill='%23FDFBF7'/%3E%3Crect width='64' height='64' fill='%23000000' opacity='0.03' filter='url(%23noise)'/%3E%3C/svg%3E");
-    color: var(--color-ink);
+    /* Subtle paper grain texture */
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='64' height='64' fill='%23F9F7F2'/%3E%3Crect width='64' height='64' fill='%231D3450' opacity='0.03' filter='url(%23noise)'/%3E%3C/svg%3E");
+    color: var(--color-prussian);
     font-family: "Zen Old Mincho", serif;
     min-height: 100vh;
     padding-bottom: 5rem;
@@ -59,16 +59,16 @@
   h4,
   h5,
   h6 {
-    @apply font-zen font-bold text-indigo-900;
+    /* Headings use the deep Prussian ink */
+    @apply font-zen font-bold;
+    color: var(--color-prussian);
   }
 
   p,
   span,
   div,
-  li,
-  a {
-    /* Ensure base readability for all body text */
-    /* letter-spacing: 0.02em; */
+  li {
+    color: var(--color-prussian);
   }
 
   /* Ruby/Furigana alignment */
@@ -81,7 +81,8 @@
     ruby-align: center;
     text-align: center;
     font-size: 0.6em;
-    color: var(--color-indigo);
+    color: var(--color-cerulean);
+    /* Lighter blue for reading aid */
     font-weight: bold;
     user-select: none;
   }
@@ -89,24 +90,30 @@
 
 @layer components {
 
-  /* Woodblock Print Card Style */
+  /* Hokusai Print Card Style */
   .paper-card,
   .glass,
   .card {
-    @apply relative p-6 bg-[#FDFBF7] border-2 border-indigo-900 transition-all duration-300;
-    box-shadow: 6px 6px 0px 0px rgba(30, 58, 138, 0.2);
-    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+    @apply relative p-6 border-2 transition-all duration-300;
+    background-color: #FAFAFA;
+    /* Slightly lighter than bg */
+    border-color: var(--color-prussian);
+    /* Deep blue shadow offset */
+    box-shadow: 4px 4px 0px 0px rgba(29, 52, 80, 0.2);
   }
 
-  /* Interactive Card */
+  /* Interactive Card - Hover effects */
   .card-interactive,
   .glass-hover {
-    @apply paper-card cursor-pointer hover:-translate-y-1 hover:border-red-600;
+    @apply paper-card cursor-pointer hover:-translate-y-1;
   }
 
   .card-interactive:hover,
   .glass-hover:hover {
-    box-shadow: 6px 6px 0px 0px rgba(220, 38, 38, 0.3);
+    border-color: var(--color-vermilion);
+    /* Red border on hover */
+    box-shadow: 6px 6px 0px 0px rgba(211, 56, 47, 0.25);
+    /* Red shadow on hover */
   }
 
   /* Form Elements - Calligraphy Style */
@@ -116,84 +123,78 @@
   input[type="number"] {
     @apply w-full bg-transparent border-b-2 border-indigo-900/30 px-2 py-2 text-lg text-indigo-900 transition-all outline-none rounded-none;
     font-family: "Zen Kurenaido", sans-serif;
+    border-color: rgba(29, 52, 80, 0.3);
+    color: var(--color-prussian);
   }
 
   input:focus {
-    @apply border-red-600 bg-red-50/30;
+    @apply bg-blue-50/50;
+    border-color: var(--color-cerulean);
   }
 
   input::placeholder {
-    @apply text-indigo-900/40;
+    color: rgba(29, 52, 80, 0.4);
   }
 
   /* Hanko (Seal) Button - Primary Action */
   .btn-primary {
     @apply relative inline-flex items-center justify-center px-6 py-3 font-zen font-bold text-xl text-white transition-all duration-200 overflow-hidden select-none;
     background-color: var(--color-vermilion);
-    border: 2px solid #881313;
-    /* Darker red border */
-    border-radius: 12px 4px 10px 6px;
-    /* Imperfect "Stamp" shape */
-    box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.1);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  }
-
-  .btn-primary::before {
-    content: '';
-    @apply absolute inset-0 opacity-0 transition-opacity duration-200;
-    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    border: 2px solid var(--color-vermilion-dark);
+    border-radius: 8px 4px 8px 4px;
+    /* Organic seal shape */
+    box-shadow: 2px 2px 0px 0px rgba(29, 52, 80, 0.3);
   }
 
   .btn-primary:hover {
-    @apply transform -translate-y-0.5 shadow-lg;
-    background-color: #EF4444;
-    /* Lighter red on hover */
-    box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 0.2), inset 0 0 5px rgba(255, 255, 255, 0.2);
+    @apply transform -translate-y-0.5;
+    background-color: #E04036;
+    /* Slightly brighter red */
+    box-shadow: 4px 4px 0px 0px rgba(29, 52, 80, 0.3);
   }
 
   .btn-primary:active {
     @apply transform translate-y-0.5 scale-95;
-    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px 0px rgba(29, 52, 80, 0.3);
   }
 
-  /* Ema (Wooden Tablet) Button - Secondary Action */
+  /* Wave Button - Secondary Action */
   .btn-secondary {
-    @apply relative inline-flex items-center justify-center px-6 py-3 font-zen font-bold text-xl text-indigo-900 transition-all duration-200 select-none;
-    background-color: #FEF3C7;
-    /* Pale Wood */
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(180, 83, 9, 0.05) 10px, rgba(180, 83, 9, 0.05) 11px);
-    /* Subtle wood grain */
-    border: 2px solid var(--color-indigo);
+    @apply relative inline-flex items-center justify-center px-6 py-3 font-zen font-bold text-xl transition-all duration-200 select-none;
+    background-color: var(--color-foam);
+    color: var(--color-prussian);
+    border: 2px solid var(--color-prussian);
     border-radius: 4px;
-    /* Ema shape */
-    box-shadow: 4px 4px 0px 0px var(--color-indigo);
+    box-shadow: 3px 3px 0px 0px rgba(29, 52, 80, 0.15);
   }
 
   .btn-secondary:hover {
-    @apply transform -translate-y-0.5 bg-[#FDE68A];
-    box-shadow: 6px 6px 0px 0px var(--color-indigo);
+    @apply transform -translate-y-0.5;
+    background-color: #fff;
+    box-shadow: 5px 5px 0px 0px rgba(29, 52, 80, 0.2);
   }
 
   .btn-secondary:active {
     @apply transform translate-y-0.5;
-    box-shadow: 1px 1px 0px 0px var(--color-indigo);
+    box-shadow: 1px 1px 0px 0px rgba(29, 52, 80, 0.2);
   }
 
   /* Text Selection */
   ::selection {
-    @apply bg-red-200 text-red-900;
+    background-color: var(--color-cerulean);
+    color: #fff;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply text-indigo-900;
-    /* Fallback */
-    background: linear-gradient(to right, #1E3A8A, #DC2626);
-    /* Indigo to Vermilion */
+    /* Gradient mimicking the Great Wave: Deep Blue -> Foam White -> Sky */
+    background: linear-gradient(135deg, var(--color-prussian) 0%, var(--color-cerulean) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: var(--color-prussian);
+    /* Fallback */
   }
 
   .font-zen {

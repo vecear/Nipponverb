@@ -19,33 +19,33 @@ const Courses = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {courses.map((course) => {
-            const Icon = course.icon
             return (
               <button
                 key={course.id}
                 onClick={() => navigate(course.path)}
-                className="glass p-6 rounded-2xl hover:scale-105 transition-all duration-300 text-left group border border-indigo-900/10 hover:border-indigo-900/20"
+                className="card-interactive p-4 rounded-xl text-left group flex items-center md:block"
               >
-                <div className="flex items-start justify-between mb-4">
-                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center text-3xl`}>
+                <div className="flex items-start md:mb-3 mr-4 md:mr-0">
+                  <div className={`w-16 h-16 md:w-12 md:h-12 shrink-0 rounded-lg bg-gradient-to-br ${course.color} flex items-center justify-center text-3xl md:text-2xl`}>
                     {course.emoji}
                   </div>
-                  <Icon className="text-indigo-900/40 group-hover:text-indigo-900/60 transition-colors" size={24} />
                 </div>
 
-                <h3 className="text-2xl font-bold text-indigo-900 mb-2 group-hover:text-indigo-700 transition-colors">
-                  {t(course.titleKey)}
-                </h3>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-xl md:text-lg font-bold text-indigo-900 mb-1 group-hover:text-indigo-700 transition-colors">
+                    {t(course.titleKey)}
+                  </h3>
 
-                <p className="text-indigo-900/60 group-hover:text-indigo-900/80 transition-colors">
-                  {t(course.descriptionKey)}
-                </p>
+                  <p className="text-sm text-indigo-900/60 group-hover:text-indigo-900/80 transition-colors line-clamp-2">
+                    {t(course.descriptionKey)}
+                  </p>
 
-                <div className="mt-4 flex items-center text-sakura-pink group-hover:translate-x-2 transition-transform">
-                  <span className="text-sm font-medium">{t('courses.startLearning')}</span>
-                  <span className="ml-2">→</span>
+                  <div className="hidden md:flex mt-3 items-center text-sakura-pink group-hover:translate-x-1 transition-transform">
+                    <span className="text-xs font-medium">{t('courses.startLearning')}</span>
+                    <span className="ml-1 text-xs">→</span>
+                  </div>
                 </div>
               </button>
             )

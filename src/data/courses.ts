@@ -9,7 +9,6 @@ export interface Course {
     path: string
     color: string
     emoji: string
-    emoji: string
     // image: string // Removed unused image property
 }
 
@@ -22,7 +21,6 @@ export const courses: Course[] = [
         path: '/verbs',
         color: 'from-orange-500 to-red-500',
         emoji: '🔤',
-        emoji: '🔤',
         // image: swordIcon,
     },
     {
@@ -32,7 +30,6 @@ export const courses: Course[] = [
         icon: Book,
         path: '/vocabulary',
         color: 'from-yellow-500 to-orange-500',
-        emoji: 'abc',
         emoji: 'abc',
         // image: bookIcon,
     },
@@ -44,7 +41,6 @@ export const courses: Course[] = [
         path: '/grammar',
         color: 'from-pink-500 to-purple-500',
         emoji: '📖',
-        emoji: '📖',
         // image: lanternIcon,
     },
     {
@@ -55,7 +51,6 @@ export const courses: Course[] = [
         path: '/idioms',
         color: 'from-blue-500 to-cyan-500',
         emoji: '💬',
-        emoji: '💬',
         // image: teaIcon,
     },
     {
@@ -65,7 +60,6 @@ export const courses: Course[] = [
         icon: Calendar,
         path: '/date-counters',
         color: 'from-green-500 to-teal-500',
-        emoji: '📅',
         emoji: '📅',
         // image: abacusIcon,
     },

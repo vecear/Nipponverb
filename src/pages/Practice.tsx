@@ -358,20 +358,20 @@ const Practice = () => {
           <p className="text-indigo-900/90">{t('practice.selectCategory')}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {modes.map((mode) => (
             <div
               key={mode.id}
               onClick={() => handleCategorySelect(mode.id)}
-              className="card p-6 hover:bg-white/50 border border-indigo-900/5 cursor-pointer transition-all duration-300 group"
+              className="card-interactive p-4 group"
             >
-              <div className="flex items-center space-x-4">
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${mode.color} flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition-transform`}>
+              <div className="flex items-center md:block md:text-center space-x-4 md:space-x-0 cursor-pointer">
+                <div className={`w-16 h-16 md:w-16 md:h-16 rounded-xl bg-gradient-to-br ${mode.color} flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition-transform md:mx-auto md:mb-3`}>
                   {mode.icon}
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">{mode.title}</h3>
-                  <p className="text-indigo-900/90 text-sm">{mode.description}</p>
+                  <p className="text-indigo-900/90 text-sm line-clamp-2 md:line-clamp-none">{mode.description}</p>
                 </div>
               </div>
             </div>
@@ -614,7 +614,7 @@ const Practice = () => {
                     onClick={() => setSelectedSubcategory(type)}
                     className={`p-3 md:p-4 rounded-xl transition-all ${selectedSubcategory === type
                       ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
-                      : 'glass hover:bg-white/50 border border-indigo-900/5'
+                      : 'card-interactive !p-3 md:!p-4'
                       }`}
                   >
                     <div className="text-xl md:text-2xl mb-1 md:mb-2">{type === 'hiragana' ? 'あ' : 'ア'}</div>
@@ -660,7 +660,7 @@ const Practice = () => {
                       onClick={() => setSelectedLevel(level)}
                       className={`p-3 md:p-4 rounded-xl transition-all flex flex-col items-center justify-center ${selectedLevel === level
                         ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white shadow-lg'
-                        : 'glass hover:bg-white/50 border border-indigo-900/5'
+                        : 'card-interactive !p-3 md:!p-4'
                         }`}
                     >
                       <div className="text-lg md:text-xl font-bold">{level}</div>
@@ -695,7 +695,7 @@ const Practice = () => {
                     onClick={() => setQuestionCount(count)}
                     className={`px-4 py-2 rounded-lg transition-all font-medium ${questionCount === count
                       ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white shadow-lg'
-                      : 'glass hover:bg-white/50 text-indigo-900/70 border border-indigo-900/5'
+                      : 'card-interactive !px-4 !py-2 text-indigo-900/70'
                       }`}
                   >
                     {count}題

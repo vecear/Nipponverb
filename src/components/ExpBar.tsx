@@ -108,7 +108,7 @@ const ExpBar = ({
         className={`relative ${config.height} ${isDark ? 'bg-white/10' : 'bg-indigo-900/10'} rounded-full overflow-hidden`}
       >
         <motion.div
-          className="absolute inset-y-0 left-0 bg-gradient-to-r from-sakura-pink to-electric-cyan rounded-full"
+          className="absolute inset-y-0 left-0 bg-gradient-to-r from-[#1D3450] to-[#2A6F97] rounded-full"
           initial={{ width: 0 }}
           animate={{ width: `${percentage}%` }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -116,7 +116,7 @@ const ExpBar = ({
 
         {/* 發光效果 */}
         <motion.div
-          className="absolute inset-y-0 left-0 bg-gradient-to-r from-sakura-pink/50 to-electric-cyan/50 rounded-full blur-sm"
+          className="absolute inset-y-0 left-0 bg-gradient-to-r from-[#1D3450]/50 to-[#2A6F97]/50 rounded-full blur-sm"
           initial={{ width: 0 }}
           animate={{ width: `${percentage}%` }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
