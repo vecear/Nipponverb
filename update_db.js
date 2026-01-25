@@ -17,14 +17,14 @@ try {
     patches.forEach(patch => {
         if (patch.id && db[patch.id]) {
             // Update fields
-            db[patch.id].pattern = patch.pattern;
-            db[patch.id].connection = patch.connection;
-            db[patch.id].translation = patch.translation;
-            db[patch.id].level = patch.level;
-            db[patch.id].explanation = patch.explanation;
-            db[patch.id].analysis = patch.analysis;
-            db[patch.id].tips = patch.tips;
-            db[patch.id].quiz = patch.quiz;
+            if (patch.pattern) db[patch.id].pattern = patch.pattern;
+            if (patch.connection) db[patch.id].connection = patch.connection;
+            if (patch.translation) db[patch.id].translation = patch.translation;
+            if (patch.level) db[patch.id].level = patch.level;
+            if (patch.explanation) db[patch.id].explanation = patch.explanation;
+            if (patch.analysis) db[patch.id].analysis = patch.analysis;
+            if (patch.tips) db[patch.id].tips = patch.tips;
+            if (patch.quiz) db[patch.id].quiz = patch.quiz;
             count++;
         } else {
             console.warn(`Patch ID ${patch.id} not found in DB or missing ID.`);
