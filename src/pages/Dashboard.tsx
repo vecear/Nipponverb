@@ -8,11 +8,12 @@ import { DEFAULT_PROGRESSION, EXP_CONSTANTS } from '../types/progression'
 import { getJobById, NOVICE_TITLE, getCharacterImagePath } from '../data/jobs'
 import { courses } from '../data/courses'
 
-import brushIcon from '../assets/icons/brush_sumi_e.png'
-import swordIcon from '../assets/icons/sword_sumi_e.png'
-import lanternIcon from '../assets/icons/lantern_sumi_e.png'
-import toriiIcon from '../assets/icons/torii_sumi_e.png'
-import bookIcon from '../assets/icons/book_sumi_e.png'
+// Icons replaced with unicode/gradients
+// import brushIcon from '../assets/icons/brush_sumi_e.png'
+// import swordIcon from '../assets/icons/sword_sumi_e.png'
+// import lanternIcon from '../assets/icons/lantern_sumi_e.png'
+// import toriiIcon from '../assets/icons/torii_sumi_e.png'
+// import bookIcon from '../assets/icons/book_sumi_e.png'
 
 const Dashboard = () => {
   const { t } = useTranslation()
@@ -76,7 +77,7 @@ const Dashboard = () => {
       icon: 'あア',
       path: '/practice/gojuon',
       color: 'from-green-500 to-teal-500',
-      image: brushIcon,
+      image: undefined, // brushIcon,
     },
     {
       title: t('practice.categories.verbs.title'),
@@ -84,7 +85,7 @@ const Dashboard = () => {
       icon: '✍️',
       path: '/practice/verbs',
       color: 'from-blue-500 to-cyan-500',
-      image: swordIcon,
+      image: undefined, // swordIcon,
     },
     {
       title: t('practice.categories.grammar.title'),
@@ -92,7 +93,7 @@ const Dashboard = () => {
       icon: '📖',
       path: '/practice/grammar',
       color: 'from-purple-500 to-pink-500',
-      image: lanternIcon,
+      image: undefined, // lanternIcon,
     },
     {
       title: t('practice.categories.kanji.title'),
@@ -100,7 +101,7 @@ const Dashboard = () => {
       icon: '漢',
       path: '/practice/kanji',
       color: 'from-orange-500 to-red-500',
-      image: toriiIcon,
+      image: undefined, // toriiIcon,
     },
     {
       title: t('practice.categories.vocabulary.title'),
@@ -108,7 +109,7 @@ const Dashboard = () => {
       icon: '🔤',
       path: '/practice/vocabulary',
       color: 'from-yellow-400 to-orange-500',
-      image: bookIcon,
+      image: undefined, // bookIcon,
     },
   ]
 

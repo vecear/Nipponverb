@@ -1,10 +1,5 @@
 import { BookOpen, MessageSquare, Calendar, Book, FileText, LucideIcon } from 'lucide-react'
-import brushIcon from '../assets/icons/brush_sumi_e.png'
-import bookIcon from '../assets/icons/book_sumi_e.png'
-import lanternIcon from '../assets/icons/lantern_sumi_e.png'
-import teaIcon from '../assets/icons/tea_sumi_e.png'
-import abacusIcon from '../assets/icons/abacus_sumi_e.png'
-import swordIcon from '../assets/icons/sword_sumi_e.png'
+// Image imports removed as they are no longer used
 
 export interface Course {
     id: string
@@ -14,7 +9,8 @@ export interface Course {
     path: string
     color: string
     emoji: string
-    image: string
+    emoji: string
+    // image: string // Removed unused image property
 }
 
 export const courses: Course[] = [
@@ -26,7 +22,8 @@ export const courses: Course[] = [
         path: '/verbs',
         color: 'from-orange-500 to-red-500',
         emoji: '🔤',
-        image: swordIcon,
+        emoji: '🔤',
+        // image: swordIcon,
     },
     {
         id: 'vocabulary',
@@ -36,7 +33,8 @@ export const courses: Course[] = [
         path: '/vocabulary',
         color: 'from-yellow-500 to-orange-500',
         emoji: 'abc',
-        image: bookIcon,
+        emoji: 'abc',
+        // image: bookIcon,
     },
     {
         id: 'grammar',
@@ -46,7 +44,8 @@ export const courses: Course[] = [
         path: '/grammar',
         color: 'from-pink-500 to-purple-500',
         emoji: '📖',
-        image: lanternIcon,
+        emoji: '📖',
+        // image: lanternIcon,
     },
     {
         id: 'idioms',
@@ -56,7 +55,8 @@ export const courses: Course[] = [
         path: '/idioms',
         color: 'from-blue-500 to-cyan-500',
         emoji: '💬',
-        image: teaIcon,
+        emoji: '💬',
+        // image: teaIcon,
     },
     {
         id: 'dateCounters',
@@ -66,6 +66,7 @@ export const courses: Course[] = [
         path: '/date-counters',
         color: 'from-green-500 to-teal-500',
         emoji: '📅',
-        image: abacusIcon,
+        emoji: '📅',
+        // image: abacusIcon,
     },
 ]
