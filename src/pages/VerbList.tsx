@@ -119,7 +119,7 @@ const VerbList = () => {
                                 </div >
                             ))}
                             {filteredVerbs.length === 0 && (
-                                <div className="text-center text-white/40 py-8">
+                                <div className="text-center text-indigo-900/40 py-8">
                                     {t('practice.categories.verbs.noResults')}
                                 </div>
                             )}

@@ -9,6 +9,7 @@ interface ExpBarProps {
   gender: 'male' | 'female'
   showTitle?: boolean
   size?: 'sm' | 'md' | 'lg'
+  theme?: 'light' | 'dark'
   className?: string
 }
 
@@ -17,6 +18,7 @@ const ExpBar = ({
   gender,
   showTitle = true,
   size = 'md',
+  theme = 'light',
   className = '',
 }: ExpBarProps) => {
   const { currentExp, requiredExp, percentage } =
@@ -63,6 +65,9 @@ const ExpBar = ({
   }
 
   const config = sizeConfig[size]
+  const isDark = theme === 'dark'
+  const textColor = isDark ? 'text-white' : 'text-indigo-900'
+  const subTextColor = isDark ? 'text-white/60' : 'text-indigo-900/60'
 
   return (
     <div className={`${className}`}>
@@ -71,8 +76,8 @@ const ExpBar = ({
         <div className="flex items-center gap-3">
           {/* 等級徽章 */}
           <div className="flex items-center gap-1">
-            <span className="text-sakura-pink font-bold">Lv.</span>
-            <span className={`text-white font-bold ${config.levelSize}`}>
+            <span className={`text-sakura-pink font-bold`}>Lv.</span>
+            <span className={`${textColor} font-bold ${config.levelSize}`}>
               {progression.level}
             </span>
           </div>
@@ -80,10 +85,10 @@ const ExpBar = ({
           {/* 稱號 */}
           {showTitle && titleInfo && (
             <div className="flex flex-col">
-              <span className="text-electric-cyan font-medium">
+              <span className={`text-electric-cyan font-medium`}>
                 {titleInfo.nameJp}
               </span>
-              <span className={`text-white/50 ${config.fontSize}`}>
+              <span className={`${subTextColor} ${config.fontSize}`}>
                 {titleInfo.nameTw}
               </span>
             </div>
@@ -91,8 +96,8 @@ const ExpBar = ({
         </div>
 
         {/* 經驗值數字 */}
-        <div className={`text-white/60 ${config.fontSize}`}>
-          <span className="text-white">{currentExp.toLocaleString()}</span>
+        <div className={`${subTextColor} ${config.fontSize}`}>
+          <span className={textColor}>{currentExp.toLocaleString()}</span>
           <span> / </span>
           <span>{requiredExp.toLocaleString()} EXP</span>
         </div>
@@ -100,7 +105,7 @@ const ExpBar = ({
 
       {/* 經驗值條 */}
       <div
-        className={`relative ${config.height} bg-white/10 rounded-full overflow-hidden`}
+        className={`relative ${config.height} ${isDark ? 'bg-white/10' : 'bg-indigo-900/10'} rounded-full overflow-hidden`}
       >
         <motion.div
           className="absolute inset-y-0 left-0 bg-gradient-to-r from-sakura-pink to-electric-cyan rounded-full"
@@ -119,7 +124,7 @@ const ExpBar = ({
       </div>
 
       {/* 百分比 */}
-      <div className={`text-right mt-1 text-white/40 ${config.fontSize}`}>
+      <div className={`text-right mt-1 ${isDark ? 'text-white/40' : 'text-indigo-900/40'} ${config.fontSize}`}>
         {percentage}%
       </div>
     </div>

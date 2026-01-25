@@ -199,16 +199,16 @@ const Dashboard = () => {
               >
                 <div className="text-center space-y-2">
                   <div className="flex justify-center">
-                    <div className={`w-12 h-12 md:w-14 md:h-14 bg-white border-2 border-indigo-900 flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(30,58,138,0.2)] p-2 group-hover:shadow-[4px_4px_0px_0px_rgba(220,38,38,0.3)] group-hover:border-red-600 transition-all`}>
-                      <img src={course.image} alt={t(course.titleKey)} className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-110" />
+                    <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center shadow-md p-2 group-hover:shadow-lg transition-all duration-300 transform group-hover:scale-110`}>
+                      <span className="text-2xl md:text-3xl">{course.emoji}</span>
                     </div>
                   </div>
 
-                  <h3 className="text-sm md:text-base font-zen font-bold leading-tight mt-2 text-indigo-900 group-hover:text-red-600">
+                  <h3 className="text-lg md:text-xl font-zen font-bold leading-tight mt-2 text-indigo-900 group-hover:text-red-600">
                     {t(course.titleKey)}
                   </h3>
 
-                  <p className="hidden md:block text-[10px] text-indigo-900/90 line-clamp-2">
+                  <p className="block text-sm text-indigo-900/90 line-clamp-2">
                     {t(course.descriptionKey)}
                   </p>
                 </div>
@@ -230,10 +230,10 @@ const Dashboard = () => {
                     <div className="text-3xl md:text-4xl text-indigo-900 group-hover:scale-110 transition-transform duration-300">
                       {mode.icon}
                     </div>
-                    <h3 className="text-sm md:text-base font-zen font-bold leading-tight text-indigo-900 group-hover:text-red-600">
+                    <h3 className="text-lg md:text-xl font-zen font-bold leading-tight text-indigo-900 group-hover:text-red-600">
                       {mode.title}
                     </h3>
-                    <p className="hidden md:block text-[10px] text-indigo-900/90 line-clamp-2">{mode.description}</p>
+                    <p className="block text-sm text-indigo-900/90 line-clamp-2">{mode.description}</p>
                   </div>
                 </div>
               </Link>

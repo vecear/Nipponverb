@@ -176,25 +176,31 @@ const Profile = () => {
       </div>
 
       {/* 積分系統區塊 */}
-      <div className="card mb-6 md:mb-8">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl md:text-2xl font-zen font-bold text-indigo-900 border-b-2 border-indigo-900/10 pb-1">
-            {t('progression.title', '冒險進度')}
-          </h2>
-          {job && (
-            <div className={`px-4 py-2 rounded-xl border-2 border-indigo-900 bg-white flex items-center gap-2 shadow-sm`}>
-              <span className="text-xl">{job.icon}</span>
-              <span className="font-bold text-indigo-900">{job.nameTw}</span>
-            </div>
-          )}
-        </div>
+      <div className="card mb-6 md:mb-8 !p-0 overflow-hidden border-0 bg-transparent">
+        <div className="bg-indigo-900 text-white p-6 md:p-8 rounded-2xl relative overflow-hidden shadow-xl">
+          {/* Background decoration */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-sakura-pink/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-electric-cyan/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
-        {/* 經驗值條 */}
-        <ExpBar progression={progression} gender={gender} showTitle={true} size="lg" />
+          <div className="flex items-center justify-between mb-6 relative z-10">
+            <h2 className="text-xl md:text-2xl font-zen font-bold text-white border-b-2 border-white/20 pb-1">
+              {t('progression.title', '冒險進度')}
+            </h2>
+            {job && (
+              <div className={`px-4 py-2 rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm flex items-center gap-2 shadow-sm`}>
+                <span className="text-xl">{job.icon}</span>
+                <span className="font-bold text-white">{job.nameTw}</span>
+              </div>
+            )}
+          </div>
+
+          {/* 經驗值條 */}
+          <ExpBar progression={progression} gender={gender} showTitle={true} size="lg" theme="dark" />
+        </div>
 
         {/* 轉職提示 */}
         {needsJobSelection && (
-          <div className="mt-6 p-4 paper-card border-2 border-red-600/30 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="mt-4 p-4 bg-white border-2 border-red-600/30 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 shadow-lg">
             <div>
               <p className="text-red-600 font-bold mb-1">
                 {t('progression.jobSelection.unlocked', '轉職之儀已解鎖！')}
@@ -245,14 +251,14 @@ const Profile = () => {
                   <h4 className="text-lg font-bold mb-2">
                     {t('profile.settings.reauthTitle')}
                   </h4>
-                  <p className="text-sm text-white/70 mb-6">
+                  <p className="text-sm text-indigo-900/70 mb-6">
                     {t('profile.settings.reauthDesc')}
                   </p>
 
                   {!isGoogleUser ? (
                     <div className="space-y-4">
                       <div className="relative">
-                        <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40" size={18} />
+                        <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-indigo-900/40" size={18} />
                         <input
                           type="password"
                           value={reauthPassword}
@@ -304,7 +310,7 @@ const Profile = () => {
 
                   <button
                     onClick={() => setRequiresReauth(false)}
-                    className="mt-4 text-sm text-white/40 hover:text-white/60"
+                    className="mt-4 text-sm text-indigo-900/40 hover:text-indigo-900/60"
                   >
                     {t('common.cancel')}
                   </button>
@@ -314,11 +320,11 @@ const Profile = () => {
               <div className="space-y-6">
                 {/* Change Email */}
                 <div>
-                  <label className="block text-sm font-medium text-white/60 mb-2">
+                  <label className="block text-sm font-medium text-indigo-900/60 mb-2">
                     {t('profile.settings.changeEmail')}
                   </label>
                   <div className="relative">
-                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40" size={18} />
+                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-indigo-900/40" size={18} />
                     <input
                       type="email"
                       value={email}
@@ -350,16 +356,16 @@ const Profile = () => {
                   </button>
                 </div>
 
-                <hr className="border-white/5" />
+                <hr className="border-indigo-900/10" />
 
                 {/* Change Password */}
                 <div>
-                  <label className="block text-sm font-medium text-white/60 mb-2">
+                  <label className="block text-sm font-medium text-indigo-900/60 mb-2">
                     {t('profile.settings.changePassword')}
                   </label>
                   <div className="space-y-2">
                     <div className="relative">
-                      <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40" size={18} />
+                      <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-indigo-900/40" size={18} />
                       <input
                         type="password"
                         value={newPassword}
@@ -369,7 +375,7 @@ const Profile = () => {
                       />
                     </div>
                     <div className="relative">
-                      <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40" size={18} />
+                      <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-indigo-900/40" size={18} />
                       <input
                         type="password"
                         value={confirmPassword}
@@ -408,7 +414,7 @@ const Profile = () => {
                   </button>
                 </div>
 
-                <hr className="border-white/5" />
+                <hr className="border-indigo-900/10" />
 
                 {/* Link Google */}
                 <div>

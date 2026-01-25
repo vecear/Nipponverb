@@ -104,7 +104,7 @@ const Stages = () => {
 
         <div className="card">
           <h3 className="text-2xl font-zen font-bold mb-4">{t('stages.howItWorks.title')}</h3>
-          <div className="space-y-4 text-white/80">
+          <div className="space-y-4 text-indigo-900/80">
             <div className="flex items-start space-x-4">
               <div className="text-3xl">🎬</div>
               <div>
@@ -118,7 +118,7 @@ const Stages = () => {
               <div className="text-3xl">❓</div>
               <div>
                 <h4 className="font-semibold mb-1">{t('stages.howItWorks.step2Title')}</h4>
-                <p className="text-white/60">
+                <p className="text-indigo-900/60">
                   {t('stages.howItWorks.step2Description')}
                 </p>
               </div>
@@ -127,7 +127,7 @@ const Stages = () => {
               <div className="text-3xl">🏆</div>
               <div>
                 <h4 className="font-semibold mb-1">{t('stages.howItWorks.step3Title')}</h4>
-                <p className="text-white/60">
+                <p className="text-indigo-900/60">
                   {t('stages.howItWorks.step3Description')}
                 </p>
               </div>

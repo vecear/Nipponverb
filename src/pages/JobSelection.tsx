@@ -69,7 +69,7 @@ const JobSelection = () => {
         <h1 className="text-3xl md:text-4xl font-zen font-bold text-gradient mb-2">
           {t('progression.jobSelection.title', '轉職之儀')}
         </h1>
-        <p className="text-white/60">
+        <p className="text-indigo-900/60">
           {t('progression.jobSelection.subtitle', '選擇你的道路，開啟新的旅程')}
         </p>
       </motion.div>
@@ -80,10 +80,10 @@ const JobSelection = () => {
           {/* 左箭頭 */}
           <button
             onClick={handlePrev}
-            className="p-3 rounded-full glass hover:bg-white/10 transition-colors"
+            className="p-3 rounded-full glass hover:bg-white/50 transition-colors border border-indigo-900/10"
             disabled={isConfirming}
           >
-            <ChevronLeft size={28} className="text-white" />
+            <ChevronLeft size={28} className="text-indigo-900" />
           </button>
 
           {/* 職業卡片 */}
@@ -105,36 +105,36 @@ const JobSelection = () => {
 
               {/* 職業名稱 */}
               <div className="text-center mb-6">
-                <h2 className="text-3xl font-bold text-white mb-1">
+                <h2 className="text-3xl font-bold text-indigo-900 mb-1">
                   {selectedJob.nameJp}
                 </h2>
-                <p className="text-white/60 text-lg">
+                <p className="text-indigo-900/60 text-lg">
                   {selectedJob.nameReading}
                 </p>
                 <p className="text-sakura-pink mt-2">{selectedJob.nameTw}</p>
               </div>
 
               {/* 職業描述 */}
-              <p className="text-white/80 text-center mb-6 leading-relaxed">
+              <p className="text-indigo-900/80 text-center mb-6 leading-relaxed">
                 {selectedJob.description}
               </p>
-              <p className="text-white/50 text-center text-sm mb-6 italic">
+              <p className="text-indigo-900/50 text-center text-sm mb-6 italic">
                 {selectedJob.descriptionJp}
               </p>
 
               {/* 初始階段預覽 */}
-              <div className="glass rounded-xl p-4 mb-6">
-                <p className="text-white/50 text-sm text-center mb-2">
+              <div className="glass rounded-xl p-4 mb-6 border border-indigo-900/10">
+                <p className="text-indigo-900/50 text-sm text-center mb-2">
                   {t('progression.jobSelection.initialTitle', '初始稱號')}
                 </p>
                 <div className="text-center">
                   <p className="text-xl font-bold text-electric-cyan">
                     {getFirstStageTitle(selectedJob).nameJp}
                   </p>
-                  <p className="text-white/60 text-sm">
+                  <p className="text-indigo-900/60 text-sm">
                     {getFirstStageTitle(selectedJob).nameReading}
                   </p>
-                  <p className="text-white/80 mt-1">
+                  <p className="text-indigo-900/80 mt-1">
                     {getFirstStageTitle(selectedJob).nameTw}
                   </p>
                 </div>
@@ -146,11 +146,10 @@ const JobSelection = () => {
                   <button
                     key={job.id}
                     onClick={() => setSelectedJobIndex(index)}
-                    className={`w-2 h-2 rounded-full transition-all ${
-                      index === selectedJobIndex
+                    className={`w-2 h-2 rounded-full transition-all ${index === selectedJobIndex
                         ? 'bg-sakura-pink w-6'
-                        : 'bg-white/30 hover:bg-white/50'
-                    }`}
+                        : 'bg-indigo-900/30 hover:bg-indigo-900/50'
+                      }`}
                     disabled={isConfirming}
                   />
                 ))}
@@ -161,10 +160,10 @@ const JobSelection = () => {
           {/* 右箭頭 */}
           <button
             onClick={handleNext}
-            className="p-3 rounded-full glass hover:bg-white/10 transition-colors"
+            className="p-3 rounded-full glass hover:bg-white/50 transition-colors border border-indigo-900/10"
             disabled={isConfirming}
           >
-            <ChevronRight size={28} className="text-white" />
+            <ChevronRight size={28} className="text-indigo-900" />
           </button>
         </div>
       </div>
@@ -182,9 +181,9 @@ const JobSelection = () => {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="glass rounded-2xl p-6 max-w-md"
+            className="glass rounded-2xl p-6 max-w-md border border-indigo-900/10"
           >
-            <p className="text-white text-center mb-4">
+            <p className="text-indigo-900 text-center mb-4">
               {t(
                 'progression.jobSelection.confirmMessage',
                 '確定要選擇「{{job}}」作為你的職業嗎？',
@@ -219,7 +218,7 @@ const JobSelection = () => {
       </div>
 
       {/* 提示 */}
-      <p className="text-white/40 text-sm mt-6 text-center max-w-md">
+      <p className="text-indigo-900/40 text-sm mt-6 text-center max-w-md">
         {t(
           'progression.jobSelection.hint',
           '職業選擇後將無法更改，請謹慎選擇最適合你的道路'
