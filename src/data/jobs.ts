@@ -420,7 +420,7 @@ export const getCharacterImagePath = (
 
   // 計算階段 (1-10)
   // 階段 1: Lv.5-14, 階段 2: Lv.15-24, ..., 階段 10: Lv.95-99
-  const stage = Math.min(10, Math.floor((level - 5) / 10) + 1)
+  // const stage = Math.min(10, Math.floor((level - 5) / 10) + 1)
 
   // 特殊處理：陰陽師和幇間的女性版本有不同名稱
   let characterJobId = jobId
@@ -431,7 +431,7 @@ export const getCharacterImagePath = (
 
   // 優先使用階段圖片
   // 格式: /assets/characters/stages/{jobId}_stage{1-10}_{gender}.png
-  const stageImagePath = `/assets/characters/stages/${characterJobId}_stage${stage}_${gender}.png`
+  // const stageImagePath = `/assets/characters/stages/${characterJobId}_stage${stage}_${gender}.png`
 
   // 基礎職業圖片作為後備
   // 格式: /assets/characters/jobs/{jobId}_{gender}.png

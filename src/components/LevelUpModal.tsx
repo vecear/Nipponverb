@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { Sparkles, ArrowUp } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
 import { LevelUpInfo } from '../types/progression'
 import { UI_ELEMENTS } from '../config/assets'
 

@@ -13,7 +13,7 @@ import {
   removeAdmin,
   GameConfig,
 } from '../services/adminService'
-import { getJobById, JOBS, NOVICE_TITLE } from '../data/jobs'
+import { getJobById, JOBS, NOVICE_TITLE, getCharacterImagePath } from '../data/jobs'
 import {
   Settings,
   Users,
@@ -215,12 +215,12 @@ const Admin = () => {
         {/* 標題 */}
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-3">
-            <Shield className="text-sakura-pink" size={32} />
+            <Shield className="text-vermilion" size={32} />
             <div>
-              <h1 className="text-3xl md:text-4xl font-zen font-bold text-gradient">
+              <h1 className="text-3xl md:text-4xl font-zen font-bold text-wave-deep">
                 {t('admin.title', '後台管理')}
               </h1>
-              <p className="text-white/60 text-sm">
+              <p className="text-sumi-faded text-sm">
                 {t('admin.subtitle', '管理遊戲設定與使用者資料')}
               </p>
             </div>
@@ -249,12 +249,12 @@ const Admin = () => {
         )}
 
         {/* 分頁選單 */}
-        <div className="flex gap-2 mb-6">
+        <div className="flex flex-wrap gap-2 mb-6">
           <button
             onClick={() => setActiveTab('config')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${activeTab === 'config'
-                ? 'bg-sakura-pink text-white'
-                : 'bg-white/10 text-white/60 hover:bg-white/20'
+                ? 'bg-vermilion text-white'
+                : 'bg-washi-light text-sumi-faded hover:bg-foam border border-wave-mid'
               }`}
           >
             <Settings size={18} />
@@ -263,8 +263,8 @@ const Admin = () => {
           <button
             onClick={() => setActiveTab('users')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${activeTab === 'users'
-                ? 'bg-sakura-pink text-white'
-                : 'bg-white/10 text-white/60 hover:bg-white/20'
+                ? 'bg-vermilion text-white'
+                : 'bg-washi-light text-sumi-faded hover:bg-foam border border-wave-mid'
               }`}
           >
             <Users size={18} />
@@ -273,8 +273,8 @@ const Admin = () => {
           <button
             onClick={() => setActiveTab('stats')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${activeTab === 'stats'
-                ? 'bg-sakura-pink text-white'
-                : 'bg-white/10 text-white/60 hover:bg-white/20'
+                ? 'bg-vermilion text-white'
+                : 'bg-washi-light text-sumi-faded hover:bg-foam border border-wave-mid'
               }`}
           >
             <BarChart3 size={18} />
@@ -283,8 +283,8 @@ const Admin = () => {
           <button
             onClick={() => setActiveTab('admins')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${activeTab === 'admins'
-                ? 'bg-sakura-pink text-white'
-                : 'bg-white/10 text-white/60 hover:bg-white/20'
+                ? 'bg-vermilion text-white'
+                : 'bg-washi-light text-sumi-faded hover:bg-foam border border-wave-mid'
               }`}
           >
             <Crown size={18} />
@@ -294,27 +294,27 @@ const Admin = () => {
 
         {loading ? (
           <div className="card p-8 text-center">
-            <RefreshCw className="animate-spin mx-auto mb-4" size={32} />
-            <p className="text-white/60">{t('common.loading', '載入中...')}</p>
+            <RefreshCw className="animate-spin mx-auto mb-4 text-wave-deep" size={32} />
+            <p className="text-sumi-faded">{t('common.loading', '載入中...')}</p>
           </div>
         ) : (
           <>
             {/* 遊戲配置 */}
             {activeTab === 'config' && config && (
               <div className="card">
-                <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
-                  <Settings size={24} className="text-sakura-pink" />
-                  {t('admin.config.title', '遊戲配置')}
+                <h2 className="text-xl font-bold mb-6 flex items-center gap-2 text-wave-deep">
+                  <Settings size={24} className="text-vermilion" />
+                  {t('admin.config.title', '遊戲配置管理')}
                 </h2>
 
                 {/* 積分系統配置 */}
                 <div className="mb-8">
-                  <h3 className="text-lg font-semibold mb-4 text-electric-cyan">
-                    {t('admin.config.progression.title', '積分系統')}
+                  <h3 className="text-lg font-semibold mb-4 text-wave-mid">
+                    {t('admin.config.progression.title', '等級進度設定')}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm text-white/60 mb-2">
+                      <label className="block text-sm text-sumi-faded mb-2">
                         {t('admin.config.baseExp', '基礎經驗值')}
                       </label>
                       <input
@@ -329,11 +329,11 @@ const Admin = () => {
                             },
                           })
                         }
-                        className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                        className="w-full"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm text-white/60 mb-2">
+                      <label className="block text-sm text-sumi-faded mb-2">
                         {t('admin.config.growthFactor', '成長係數')}
                       </label>
                       <input
@@ -349,11 +349,11 @@ const Admin = () => {
                             },
                           })
                         }
-                        className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                        className="w-full"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm text-white/60 mb-2">
+                      <label className="block text-sm text-sumi-faded mb-2">
                         {t('admin.config.maxLevel', '最高等級')}
                       </label>
                       <input
@@ -368,11 +368,11 @@ const Admin = () => {
                             },
                           })
                         }
-                        className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                        className="w-full"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm text-white/60 mb-2">
+                      <label className="block text-sm text-sumi-faded mb-2">
                         {t('admin.config.jobChangeLevel', '轉職等級')}
                       </label>
                       <input
@@ -387,7 +387,7 @@ const Admin = () => {
                             },
                           })
                         }
-                        className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                        className="w-full"
                       />
                     </div>
                   </div>
@@ -395,12 +395,12 @@ const Admin = () => {
 
                 {/* 經驗值獎勵配置 */}
                 <div className="mb-8">
-                  <h3 className="text-lg font-semibold mb-4 text-electric-cyan">
-                    {t('admin.config.expRewards.title', '經驗值獎勵')}
+                  <h3 className="text-lg font-semibold mb-4 text-wave-mid">
+                    {t('admin.config.expRewards.title', '經驗值獎勵設定')}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div>
-                      <label className="block text-sm text-white/60 mb-2">
+                      <label className="block text-sm text-sumi-faded mb-2">
                         {t('admin.config.correctAnswer', '答對練習題')}
                       </label>
                       <input
@@ -415,11 +415,11 @@ const Admin = () => {
                             },
                           })
                         }
-                        className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                        className="w-full"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm text-white/60 mb-2">
+                      <label className="block text-sm text-sumi-faded mb-2">
                         {t('admin.config.practiceComplete', '完成練習')}
                       </label>
                       <input
@@ -434,11 +434,11 @@ const Admin = () => {
                             },
                           })
                         }
-                        className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                        className="w-full"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm text-white/60 mb-2">
+                      <label className="block text-sm text-sumi-faded mb-2">
                         {t('admin.config.stageComplete', '完成關卡')}
                       </label>
                       <input
@@ -453,11 +453,11 @@ const Admin = () => {
                             },
                           })
                         }
-                        className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                        className="w-full"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm text-white/60 mb-2">
+                      <label className="block text-sm text-sumi-faded mb-2">
                         {t('admin.config.simulationMin', '模擬考試最低')}
                       </label>
                       <input
@@ -472,11 +472,11 @@ const Admin = () => {
                             },
                           })
                         }
-                        className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                        className="w-full"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm text-white/60 mb-2">
+                      <label className="block text-sm text-sumi-faded mb-2">
                         {t('admin.config.simulationMax', '模擬考試最高')}
                       </label>
                       <input
@@ -491,7 +491,7 @@ const Admin = () => {
                             },
                           })
                         }
-                        className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                        className="w-full"
                       />
                     </div>
                   </div>
@@ -501,7 +501,7 @@ const Admin = () => {
                 <div className="mb-8">
                   <button
                     onClick={() => setShowLevelPreview(!showLevelPreview)}
-                    className="flex items-center gap-2 text-lg font-semibold mb-4 text-electric-cyan hover:text-electric-cyan/80 transition-colors"
+                    className="flex items-center gap-2 text-lg font-semibold mb-4 text-wave-mid hover:text-wave-deep transition-colors"
                   >
                     {showLevelPreview ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                     {t('admin.config.levelPreview.title', '等級預覽表格')}
@@ -512,32 +512,32 @@ const Admin = () => {
                       {/* 職業和性別選擇 */}
                       <div className="flex flex-wrap gap-4 mb-4">
                         <div>
-                          <label className="block text-sm text-white/60 mb-2">
+                          <label className="block text-sm text-sumi-faded mb-2">
                             {t('admin.config.levelPreview.selectJob', '選擇職業')}
                           </label>
                           <select
                             value={selectedJobForPreview}
                             onChange={(e) => setSelectedJobForPreview(e.target.value)}
-                            className="px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                            className="min-w-[150px]"
                           >
                             {JOBS.map((job) => (
-                              <option key={job.id} value={job.id} className="bg-slate-800">
+                              <option key={job.id} value={job.id}>
                                 {job.icon} {job.nameTw}
                               </option>
                             ))}
                           </select>
                         </div>
                         <div>
-                          <label className="block text-sm text-white/60 mb-2">
+                          <label className="block text-sm text-sumi-faded mb-2">
                             {t('admin.config.levelPreview.selectGender', '選擇性別')}
                           </label>
                           <select
                             value={previewGender}
                             onChange={(e) => setPreviewGender(e.target.value as 'male' | 'female')}
-                            className="px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                            className="min-w-[100px]"
                           >
-                            <option value="male" className="bg-slate-800">{t('auth.male', '男性')}</option>
-                            <option value="female" className="bg-slate-800">{t('auth.female', '女性')}</option>
+                            <option value="male">{t('auth.male', '男性')}</option>
+                            <option value="female">{t('auth.female', '女性')}</option>
                           </select>
                         </div>
                       </div>
@@ -546,30 +546,33 @@ const Admin = () => {
                       {(() => {
                         const job = JOBS.find(j => j.id === selectedJobForPreview)
                         return job ? (
-                          <div className="mb-4 text-white/60 text-sm">
-                            <span className="font-bold text-sakura-pink">{job.nameTw}</span>：{job.description}
+                          <div className="mb-4 text-sumi-faded text-sm">
+                            <span className="font-bold text-vermilion">{job.nameTw}</span>：{job.description}
                           </div>
                         ) : null
                       })()}
 
                       {/* 等級表格 */}
-                      <div className="overflow-x-auto max-h-96 overflow-y-auto">
+                      <div className="overflow-x-auto max-h-[600px] overflow-y-auto border border-wave-mid">
                         <table className="w-full text-sm">
-                          <thead className="sticky top-0 bg-slate-800/95 backdrop-blur">
-                            <tr className="border-b border-white/10">
-                              <th className="text-left py-3 px-3 text-white/60 font-medium">
+                          <thead className="sticky top-0 bg-washi-light z-10">
+                            <tr className="border-b-2 border-wave-mid">
+                              <th className="text-left py-3 px-3 text-wave-deep font-bold">
                                 {t('admin.config.levelPreview.level', '等級')}
                               </th>
-                              <th className="text-right py-3 px-3 text-white/60 font-medium">
+                              <th className="text-center py-3 px-3 text-wave-deep font-bold">
+                                {t('admin.config.levelPreview.character', '角色圖像')}
+                              </th>
+                              <th className="text-right py-3 px-3 text-wave-deep font-bold">
                                 {t('admin.config.levelPreview.expRequired', '升級所需經驗')}
                               </th>
-                              <th className="text-right py-3 px-3 text-white/60 font-medium">
+                              <th className="text-right py-3 px-3 text-wave-deep font-bold">
                                 {t('admin.config.levelPreview.expDiff', '與前級差異')}
                               </th>
-                              <th className="text-right py-3 px-3 text-white/60 font-medium">
+                              <th className="text-right py-3 px-3 text-wave-deep font-bold">
                                 {t('admin.config.levelPreview.totalExp', '累計經驗值')}
                               </th>
-                              <th className="text-left py-3 px-3 text-white/60 font-medium">
+                              <th className="text-left py-3 px-3 text-wave-deep font-bold">
                                 {t('admin.config.levelPreview.title_name', '稱號')}
                               </th>
                             </tr>
@@ -609,36 +612,58 @@ const Admin = () => {
                                   level === config.progression.jobChangeLevel ||
                                   stages.some(s => s.minLevel === level)
 
+                                // 取得角色圖像路徑
+                                const characterImage = getCharacterImagePath(
+                                  level,
+                                  level >= config.progression.jobChangeLevel ? selectedJobForPreview : null,
+                                  previewGender
+                                )
+
                                 rows.push(
                                   <tr
                                     key={level}
-                                    className={`border-b border-white/5 ${isStageStart ? 'bg-sakura-pink/10' : 'hover:bg-white/5'
+                                    className={`border-b border-wave-mid/30 ${isStageStart ? 'bg-vermilion/10' : 'hover:bg-foam'
                                       } transition-colors`}
                                   >
                                     <td className="py-2 px-3">
-                                      <span className={`font-bold ${isStageStart ? 'text-sakura-pink' : ''}`}>
+                                      <span className={`font-bold ${isStageStart ? 'text-vermilion' : 'text-sumi'}`}>
                                         Lv.{level}
                                       </span>
                                       {level === config.progression.jobChangeLevel && (
-                                        <span className="ml-2 text-xs px-1.5 py-0.5 bg-electric-cyan/20 text-electric-cyan rounded">
+                                        <span className="ml-2 text-xs px-1.5 py-0.5 bg-wave-light/20 text-wave-deep rounded border border-wave-mid">
                                           {t('admin.config.levelPreview.jobChange', '轉職')}
                                         </span>
                                       )}
                                     </td>
-                                    <td className="py-2 px-3 text-right font-mono">
+                                    <td className="py-2 px-3 text-center">
+                                      <div className="flex justify-center">
+                                        <div className="w-12 h-12 border-2 border-wave-mid bg-washi overflow-hidden">
+                                          <img
+                                            src={characterImage}
+                                            alt={`Lv.${level}`}
+                                            className="w-full h-full object-cover"
+                                            onError={(e) => {
+                                              e.currentTarget.style.display = 'none'
+                                              e.currentTarget.parentElement!.innerHTML = `<span class="text-2xl flex items-center justify-center h-full">❓</span>`
+                                            }}
+                                          />
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td className="py-2 px-3 text-right font-mono text-sumi">
                                       {expRequired.toLocaleString()}
                                     </td>
-                                    <td className="py-2 px-3 text-right font-mono text-white/60">
+                                    <td className="py-2 px-3 text-right font-mono text-sumi-faded">
                                       {level === 0 ? '-' : `+${expDiff.toLocaleString()}`}
                                     </td>
-                                    <td className="py-2 px-3 text-right font-mono text-electric-cyan">
+                                    <td className="py-2 px-3 text-right font-mono text-wave-deep font-bold">
                                       {totalExp.toLocaleString()}
                                     </td>
                                     <td className="py-2 px-3">
                                       {titleInfo && (
                                         <div className="flex items-center gap-2">
-                                          <span className="text-white">{titleInfo.nameJp}</span>
-                                          <span className="text-white/50 text-xs">({titleInfo.nameTw})</span>
+                                          <span className="text-sumi font-bold">{titleInfo.nameJp}</span>
+                                          <span className="text-sumi-faded text-xs">({titleInfo.nameTw})</span>
                                         </div>
                                       )}
                                     </td>
@@ -656,9 +681,9 @@ const Admin = () => {
                       </div>
 
                       {/* 統計資訊 */}
-                      <div className="flex flex-wrap gap-4 p-4 glass rounded-xl">
+                      <div className="flex flex-wrap gap-4 p-4 card mt-4">
                         <div className="text-center">
-                          <div className="text-2xl font-bold text-gradient">
+                          <div className="text-2xl font-bold text-vermilion">
                             {(() => {
                               let total = 0
                               for (let i = 0; i < config.progression.maxLevel; i++) {
@@ -670,18 +695,18 @@ const Admin = () => {
                               return total.toLocaleString()
                             })()}
                           </div>
-                          <div className="text-sm text-white/60">
+                          <div className="text-sm text-sumi-faded">
                             {t('admin.config.levelPreview.totalExpToMax', '升滿級總經驗值')}
                           </div>
                         </div>
                         <div className="text-center">
-                          <div className="text-2xl font-bold text-electric-cyan">
+                          <div className="text-2xl font-bold text-wave-deep">
                             {Math.floor(
                               config.progression.baseExp *
                               Math.pow(1 + config.progression.growthFactor * (config.progression.maxLevel - 1), 2)
                             ).toLocaleString()}
                           </div>
-                          <div className="text-sm text-white/60">
+                          <div className="text-sm text-sumi-faded">
                             {t('admin.config.levelPreview.lastLevelExp', '最後一級所需經驗')}
                           </div>
                         </div>
@@ -691,7 +716,7 @@ const Admin = () => {
                 </div>
 
                 {/* 最後更新資訊 */}
-                <div className="text-sm text-white/40 mb-6">
+                <div className="text-sm text-sumi-faded mb-6">
                   {t('admin.config.lastUpdated', '最後更新')}: {config.updatedAt.toLocaleString()}{' '}
                   by {config.updatedBy}
                 </div>
@@ -727,29 +752,29 @@ const Admin = () => {
             {/* 使用者列表 */}
             {activeTab === 'users' && (
               <div className="card">
-                <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
-                  <Users size={24} className="text-sakura-pink" />
+                <h2 className="text-xl font-bold mb-6 flex items-center gap-2 text-wave-deep">
+                  <Users size={24} className="text-vermilion" />
                   {t('admin.users.title', '使用者列表')}
-                  <span className="text-sm font-normal text-white/60">({users.length})</span>
+                  <span className="text-sm font-normal text-sumi-faded">({users.length})</span>
                 </h2>
 
-                <div className="overflow-x-auto">
+                <div className="overflow-x-auto border border-wave-mid">
                   <table className="w-full">
                     <thead>
-                      <tr className="border-b border-white/10">
-                        <th className="text-left py-3 px-4 text-white/60 font-medium">
+                      <tr className="border-b-2 border-wave-mid bg-washi-light">
+                        <th className="text-left py-3 px-4 text-wave-deep font-bold">
                           {t('admin.users.name', '名稱')}
                         </th>
-                        <th className="text-left py-3 px-4 text-white/60 font-medium">
+                        <th className="text-left py-3 px-4 text-wave-deep font-bold">
                           {t('admin.users.email', 'Email')}
                         </th>
-                        <th className="text-left py-3 px-4 text-white/60 font-medium">
+                        <th className="text-left py-3 px-4 text-wave-deep font-bold">
                           {t('admin.users.level', '等級')}
                         </th>
-                        <th className="text-left py-3 px-4 text-white/60 font-medium">
+                        <th className="text-left py-3 px-4 text-wave-deep font-bold">
                           {t('admin.users.job', '職業')}
                         </th>
-                        <th className="text-left py-3 px-4 text-white/60 font-medium">
+                        <th className="text-left py-3 px-4 text-wave-deep font-bold">
                           {t('admin.users.createdAt', '註冊時間')}
                         </th>
                       </tr>
@@ -760,24 +785,24 @@ const Admin = () => {
                         return (
                           <tr
                             key={user.uid}
-                            className="border-b border-white/5 hover:bg-white/5 transition-colors"
+                            className="border-b border-wave-mid/30 hover:bg-foam transition-colors"
                           >
-                            <td className="py-3 px-4">{user.displayName}</td>
-                            <td className="py-3 px-4 text-white/60">{user.email}</td>
+                            <td className="py-3 px-4 text-sumi font-bold">{user.displayName}</td>
+                            <td className="py-3 px-4 text-sumi-faded">{user.email}</td>
                             <td className="py-3 px-4">
-                              <span className="text-sakura-pink font-bold">Lv.{user.level}</span>
+                              <span className="text-vermilion font-bold">Lv.{user.level}</span>
                             </td>
                             <td className="py-3 px-4">
                               {job ? (
-                                <span className="flex items-center gap-1">
+                                <span className="flex items-center gap-1 text-sumi">
                                   <span>{job.icon}</span>
                                   <span>{job.nameTw}</span>
                                 </span>
                               ) : (
-                                <span className="text-white/40">-</span>
+                                <span className="text-sumi-faded">-</span>
                               )}
                             </td>
-                            <td className="py-3 px-4 text-white/60">
+                            <td className="py-3 px-4 text-sumi-faded">
                               {user.createdAt.toLocaleDateString()}
                             </td>
                           </tr>
@@ -794,32 +819,32 @@ const Admin = () => {
               <div className="space-y-6">
                 {/* 總覽 */}
                 <div className="card">
-                  <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
-                    <BarChart3 size={24} className="text-sakura-pink" />
+                  <h2 className="text-xl font-bold mb-6 flex items-center gap-2 text-wave-deep">
+                    <BarChart3 size={24} className="text-vermilion" />
                     {t('admin.stats.title', '統計總覽')}
                   </h2>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="glass p-4 rounded-xl text-center">
-                      <div className="text-3xl font-bold text-gradient mb-2">
+                    <div className="card p-4 text-center">
+                      <div className="text-3xl font-bold text-vermilion mb-2">
                         {stats.totalUsers}
                       </div>
-                      <div className="text-white/60">{t('admin.stats.totalUsers', '總使用者數')}</div>
+                      <div className="text-sumi-faded">{t('admin.stats.totalUsers', '總使用者數')}</div>
                     </div>
-                    <div className="glass p-4 rounded-xl text-center">
-                      <div className="text-3xl font-bold text-electric-cyan mb-2">
+                    <div className="card p-4 text-center">
+                      <div className="text-3xl font-bold text-wave-deep mb-2">
                         {Object.values(stats.jobDistribution).reduce((a, b) => a + b, 0) -
                           (stats.jobDistribution['none'] || 0)}
                       </div>
-                      <div className="text-white/60">
+                      <div className="text-sumi-faded">
                         {t('admin.stats.jobSelected', '已轉職人數')}
                       </div>
                     </div>
-                    <div className="glass p-4 rounded-xl text-center">
-                      <div className="text-3xl font-bold text-sakura-pink mb-2">
+                    <div className="card p-4 text-center">
+                      <div className="text-3xl font-bold text-wave-mid mb-2">
                         {Math.max(...Object.keys(stats.levelDistribution).map(Number), 0)}
                       </div>
-                      <div className="text-white/60">
+                      <div className="text-sumi-faded">
                         {t('admin.stats.highestLevel', '最高等級')}
                       </div>
                     </div>
@@ -828,24 +853,24 @@ const Admin = () => {
 
                 {/* 職業分佈 */}
                 <div className="card">
-                  <h3 className="text-lg font-semibold mb-4">
+                  <h3 className="text-lg font-semibold mb-4 text-wave-deep">
                     {t('admin.stats.jobDistribution', '職業分佈')}
                   </h3>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {JOBS.map((job) => {
                       const count = stats.jobDistribution[job.id] || 0
                       return (
-                        <div key={job.id} className="glass p-3 rounded-xl text-center">
+                        <div key={job.id} className="card p-3 text-center">
                           <div className="text-2xl mb-1">{job.icon}</div>
-                          <div className="font-medium">{job.nameTw}</div>
-                          <div className="text-2xl font-bold text-white">{count}</div>
+                          <div className="font-medium text-sumi">{job.nameTw}</div>
+                          <div className="text-2xl font-bold text-wave-deep">{count}</div>
                         </div>
                       )
                     })}
-                    <div className="glass p-3 rounded-xl text-center">
+                    <div className="card p-3 text-center">
                       <div className="text-2xl mb-1">🌱</div>
-                      <div className="font-medium">{t('admin.stats.noJob', '未轉職')}</div>
-                      <div className="text-2xl font-bold text-white">
+                      <div className="font-medium text-sumi">{t('admin.stats.noJob', '未轉職')}</div>
+                      <div className="text-2xl font-bold text-wave-deep">
                         {stats.jobDistribution['none'] || 0}
                       </div>
                     </div>
@@ -857,14 +882,14 @@ const Admin = () => {
             {/* 管理員管理 */}
             {activeTab === 'admins' && (
               <div className="card">
-                <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
-                  <Crown size={24} className="text-sakura-pink" />
+                <h2 className="text-xl font-bold mb-6 flex items-center gap-2 text-wave-deep">
+                  <Crown size={24} className="text-vermilion" />
                   {t('admin.admins.title', '管理員管理')}
                 </h2>
 
                 {/* 新增管理員 */}
                 <div className="mb-8">
-                  <h3 className="text-lg font-semibold mb-4 text-electric-cyan">
+                  <h3 className="text-lg font-semibold mb-4 text-wave-mid">
                     {t('admin.admins.add', '新增管理員')}
                   </h3>
                   <div className="flex gap-3">
@@ -873,7 +898,7 @@ const Admin = () => {
                       value={newAdminEmail}
                       onChange={(e) => setNewAdminEmail(e.target.value)}
                       placeholder={t('admin.admins.emailPlaceholder', '輸入電子郵件地址')}
-                      className="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-sakura-pink"
+                      className="flex-1"
                       onKeyDown={(e) => {
                         if (e.key === 'Enter') {
                           handleAddAdmin()
@@ -889,16 +914,16 @@ const Admin = () => {
                       {t('admin.admins.addButton', '新增')}
                     </button>
                   </div>
-                  <p className="text-sm text-white/40 mt-2">
+                  <p className="text-sm text-sumi-faded mt-2">
                     {t('admin.admins.addHint', '新增的管理員將擁有完整的後台管理權限')}
                   </p>
                 </div>
 
                 {/* 管理員列表 */}
                 <div>
-                  <h3 className="text-lg font-semibold mb-4 text-electric-cyan">
+                  <h3 className="text-lg font-semibold mb-4 text-wave-mid">
                     {t('admin.admins.list', '目前管理員')}
-                    <span className="text-sm font-normal text-white/60 ml-2">({admins.length})</span>
+                    <span className="text-sm font-normal text-sumi-faded ml-2">({admins.length})</span>
                   </h3>
                   <div className="space-y-2">
                     {admins.map((email) => {
@@ -907,22 +932,22 @@ const Admin = () => {
                       return (
                         <div
                           key={email}
-                          className="flex items-center justify-between p-4 glass rounded-xl"
+                          className="flex items-center justify-between p-4 card"
                         >
                           <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-sakura-pink to-electric-cyan flex items-center justify-center">
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-vermilion to-wave-deep flex items-center justify-center">
                               <Shield size={20} className="text-white" />
                             </div>
                             <div>
-                              <div className="font-medium flex items-center gap-2">
+                              <div className="font-medium flex items-center gap-2 text-sumi">
                                 {email}
                                 {isDefaultAdmin && (
-                                  <span className="text-xs px-2 py-0.5 bg-sakura-pink/20 text-sakura-pink rounded-full">
+                                  <span className="text-xs px-2 py-0.5 bg-vermilion/20 text-vermilion rounded-full border border-vermilion/30">
                                     {t('admin.admins.primary', '主要')}
                                   </span>
                                 )}
                                 {isCurrentUser && (
-                                  <span className="text-xs px-2 py-0.5 bg-electric-cyan/20 text-electric-cyan rounded-full">
+                                  <span className="text-xs px-2 py-0.5 bg-wave-light/20 text-wave-deep rounded-full border border-wave-mid/30">
                                     {t('admin.admins.you', '你')}
                                   </span>
                                 )}
@@ -933,7 +958,7 @@ const Admin = () => {
                             <button
                               onClick={() => handleRemoveAdmin(email)}
                               disabled={adminActionLoading}
-                              className="p-2 text-red-400 hover:bg-red-500/10 rounded-lg transition-colors"
+                              className="p-2 text-vermilion hover:bg-vermilion/10 rounded-lg transition-colors"
                               title={t('admin.admins.remove', '移除管理員')}
                             >
                               <Trash2 size={18} />
@@ -946,12 +971,12 @@ const Admin = () => {
                 </div>
 
                 {/* 注意事項 */}
-                <div className="mt-6 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-xl">
+                <div className="mt-6 p-4 bg-ochre-light/30 border-2 border-ochre rounded-xl">
                   <div className="flex items-start gap-3">
-                    <AlertCircle size={20} className="text-yellow-500 flex-shrink-0 mt-0.5" />
-                    <div className="text-sm text-yellow-500/80">
-                      <p className="font-medium mb-1">{t('admin.admins.notice', '注意事項')}</p>
-                      <ul className="list-disc list-inside space-y-1 text-yellow-500/60">
+                    <AlertCircle size={20} className="text-ochre flex-shrink-0 mt-0.5" />
+                    <div className="text-sm text-sumi">
+                      <p className="font-bold mb-1">{t('admin.admins.notice', '注意事項')}</p>
+                      <ul className="list-disc list-inside space-y-1 text-sumi-faded">
                         <li>{t('admin.admins.notice1', '主要管理員無法被移除')}</li>
                         <li>{t('admin.admins.notice2', '無法移除自己的管理員權限')}</li>
                         <li>{t('admin.admins.notice3', '新管理員將立即獲得完整權限')}</li>

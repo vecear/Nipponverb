@@ -169,10 +169,10 @@ export const getCharacterImage = (
   }
 
   // 計算階段 (1-10)
-  const stage = Math.min(10, Math.floor((level - 5) / 10) + 1)
+  // const stage = Math.min(10, Math.floor((level - 5) / 10) + 1)
 
   // 嘗試使用階段圖片
-  const stageImage = getJobStageCharacter(jobId, stage, gender)
+  // const stageImage = getJobStageCharacter(jobId, stage, gender)
 
   // 如果沒有階段圖片，使用基礎職業圖片
   const jobCharacters = JOB_CHARACTERS[jobId as keyof typeof JOB_CHARACTERS]
