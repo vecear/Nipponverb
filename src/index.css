@@ -4,7 +4,11 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-br from-slate-900 via-nihon-indigo to-slate-900 text-white font-noto;
+    /* Night Edo Gradient: Deepest Ink Black to Night Sky Blue */
+    background: linear-gradient(to bottom, #0F172A, #1E293B, #0F172A);
+    color: #F8FAFC;
+    /* White text for contrast */
+    font-family: "DotGothic16", sans-serif;
     min-height: 100vh;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -16,6 +20,7 @@
 
   * {
     @apply scroll-smooth;
+    font-family: "DotGothic16", sans-serif;
   }
 
   /* Ruby/Furigana alignment */
@@ -27,48 +32,96 @@
   rt {
     ruby-align: center;
     text-align: center;
-    font-size: 0.5em;
-    color: rgba(255, 183, 197, 0.8); /* sakura-pink with opacity */
+    font-size: 0.6em;
+    color: #FACC15;
+    /* Moon Gold for readings */
   }
 }
 
 @layer components {
 
-  /* Glassmorphism effect */
+  /* Night Edo Window Card Style */
   .glass {
-    @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-2xl;
+    /* Dark semi-transparent background */
+    background-color: rgba(30, 41, 59, 0.8);
+    /* Pixel Border: Lighter Indigo */
+    border: 2px solid #334155;
+    /* Hard Shadow */
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
   }
 
   .glass-hover {
-    @apply glass transition-all duration-150 hover:bg-white/15 hover:scale-105 hover:shadow-xl;
+    @apply transition-all duration-200 hover:-translate-y-1;
+    background-color: rgba(30, 41, 59, 0.9);
+    border: 2px solid #FACC15;
+    /* Gold Glow on hover */
+    box-shadow: 4px 4px 0px 0px #FACC15;
+    /* Gold Shadow */
   }
 
-  /* Button styles */
+  .glass-hover:hover {
+    background-color: rgba(30, 41, 59, 1);
+  }
+
+  /* Woodblock Print Button Style (Lantern Seal) */
   .btn-primary {
-    @apply px-6 py-3 bg-gradient-to-r from-sakura-pink to-electric-cyan text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-150 hover:scale-105;
+    @apply px-6 py-3 text-white font-bold rounded-none shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 relative overflow-hidden;
+    background-color: #EF4444;
+    /* Lantern Red */
+    border: 2px solid #fff;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
   }
 
   .btn-secondary {
-    @apply px-6 py-3 glass text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-150;
+    @apply px-6 py-3 text-white font-bold rounded-none shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200;
+    background-color: #1E293B;
+    /* Night Sky */
+    border: 2px solid #334155;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  }
+
+  .btn-secondary:hover {
+    background-color: #334155;
+    border-color: #FACC15;
+    box-shadow: 2px 2px 0px 0px #FACC15;
   }
 
   /* Card styles */
   .card {
-    @apply glass p-6 transition-all duration-150;
+    @apply p-6 relative overflow-hidden rounded-none;
+    background-color: rgba(30, 41, 59, 0.6);
+    border: 2px solid #475569;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
   }
 
   .card-interactive {
-    @apply card hover:bg-white/15 hover:scale-[1.02] cursor-pointer;
+    @apply card transition-all duration-200 cursor-pointer hover:-translate-y-1;
+  }
+
+  .card-interactive:hover {
+    border-color: #FACC15;
+    /* Moon Gold border on hover */
+    box-shadow: 4px 4px 0px 0px #FACC15;
+    /* Gold glow shadow */
+    background-color: rgba(30, 41, 59, 0.9);
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-sakura-pink to-electric-cyan bg-clip-text text-transparent;
+    /* Moon Gold Gradient Text */
+    background-image: linear-gradient(to right, #FACC15, #EF4444);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .animate-float {
-    animation: float 1.5s ease-in-out infinite;
+    animation: float 2s ease-in-out infinite;
   }
 
   @keyframes float {
@@ -79,7 +132,7 @@
     }
 
     50% {
-      transform: translateY(-10px);
+      transform: translateY(-6px);
     }
   }
 }

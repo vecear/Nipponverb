@@ -2,8 +2,9 @@ import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, BookOpen, Lightbulb, HelpCircle, Check, X } from 'lucide-react'
 import { grammarDetails } from '../data/grammarDetails'
 import { grammarList } from '../data/grammarList'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useMemo } from 'react'
+import type { QuizExplanation } from '../types/grammar'
 
 const GrammarDetail = () => {
     const { id } = useParams<{ id: string }>()
@@ -20,15 +21,40 @@ const GrammarDetail = () => {
         setShowExplanation(prev => ({ ...prev, [quizId]: true }))
     }
 
-    if (!document.getElementById('ruby-style')) {
-        const style = document.createElement('style')
-        style.id = 'ruby-style'
-        style.innerHTML = `
-            ruby { font-family: sans-serif; }
-            rt { font-size: 0.6em; color: rgba(255, 255, 255, 0.7); }
-        `
-        document.head.appendChild(style)
+    // Helper to check if explanation is object format
+    const isQuizExplanationObject = (exp: string | QuizExplanation | undefined): exp is QuizExplanation => {
+        return typeof exp === 'object' && exp !== null && 'correct' in exp
     }
+
+    // Helper to render explanation based on format
+    const renderExplanation = (explanation: string | QuizExplanation | undefined, isCorrect: boolean, selectedIndex: number) => {
+        if (!explanation) return null
+
+        if (isQuizExplanationObject(explanation)) {
+            // Object format: { correct: string, wrong: string[] }
+            if (isCorrect) {
+                return explanation.correct
+            } else {
+                // Show the wrong explanation for the selected option
+                return explanation.wrong[selectedIndex] || explanation.correct
+            }
+        }
+
+        // String format (legacy)
+        return explanation
+    }
+
+    useEffect(() => {
+        if (!document.getElementById('ruby-style')) {
+            const style = document.createElement('style')
+            style.id = 'ruby-style'
+            style.innerHTML = `
+                ruby { font-family: sans-serif; }
+                rt { font-size: 0.6em; color: rgba(255, 255, 255, 0.7); }
+            `
+            document.head.appendChild(style)
+        }
+    }, [])
 
     const renderFurigana = (text: string) => {
         // Simple parser for "漢字{かんじ}" format
@@ -213,10 +239,10 @@ const GrammarDetail = () => {
                                             </div>
                                             <div>
                                                 <p className={`font-bold mb-1 ${isCorrect ? 'text-green-400' : 'text-red-400'}`}>
-                                                    {isCorrect ? '答對了！' : '再試一次'}
+                                                    {isCorrect ? '答對了！' : '答錯了'}
                                                 </p>
                                                 <p className="text-white/80 text-sm">
-                                                    {q.explanation}
+                                                    {renderExplanation(q.explanation, isCorrect, selectedAnswers[q.id])}
                                                 </p>
                                             </div>
                                         </div>

@@ -1,11 +1,12 @@
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import StatsCard from '../components/StatsCard'
+
 import ExpBar from '../components/ExpBar'
 import { useUserStore } from '../store/useUserStore'
 import { DEFAULT_PROGRESSION, EXP_CONSTANTS } from '../types/progression'
 import { getJobById, NOVICE_TITLE, getCharacterImagePath } from '../data/jobs'
+import { courses } from '../data/courses'
 
 const Dashboard = () => {
   const { t } = useTranslation()
@@ -57,14 +58,7 @@ const Dashboard = () => {
   // 取得角色圖片路徑
   const characterImage = getCharacterImagePath(progression.level, progression.jobId, gender)
 
-  // Default stats for new users
-  const stats = {
-    verbs: { accuracy: 0, learned: 0 },
-    kanji: { accuracy: 0, learned: 0 },
-    grammar: { accuracy: 0, learned: 0 },
-    vocabulary: { accuracy: 0, learned: 0 },
-    ...(profile?.stats || {})
-  }
+
 
   const modes = [
     {
@@ -176,35 +170,39 @@ const Dashboard = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
-        <StatsCard
-          title={t('practice.categories.verbs.title')}
-          value={stats.verbs.accuracy}
-          subtitle={t('dashboard.stats.learned', { count: stats.verbs.learned })}
-          color="#FFB7C5"
-          icon="✍️"
-        />
-        <StatsCard
-          title={t('practice.categories.kanji.title')}
-          value={stats.kanji.accuracy}
-          subtitle={t('dashboard.stats.learned', { count: stats.kanji.learned })}
-          color="#00D9FF"
-          icon="漢"
-        />
-        <StatsCard
-          title={t('practice.categories.grammar.title')}
-          value={stats.grammar.accuracy}
-          subtitle={t('dashboard.stats.patternsMastered', { count: stats.grammar.learned })}
-          color="#9333EA"
-          icon="📖"
-        />
-        <StatsCard
-          title={t('practice.categories.vocabulary.title')}
-          value={stats.vocabulary?.accuracy || 0}
-          subtitle={t('dashboard.stats.learned', { count: stats.vocabulary?.learned || 0 })}
-          color="#FACC15"
-          icon="🔤"
-        />
+      {/* Course List Section */}
+      <div>
+        <h2 className="text-lg md:text-xl font-zen font-bold mb-3">{t('courses.title', 'Course List')}</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 md:gap-3">
+          {courses.map((course) => {
+
+            return (
+              <button
+                key={course.id}
+                onClick={() => navigate(course.path)}
+                className="card p-2 md:p-3 h-full hover:bg-white/15 hover:scale-[1.02] cursor-pointer transition-all duration-150"
+              >
+                <div className="text-center space-y-1 md:space-y-2">
+                  <div className="flex justify-center">
+                    <div className={`w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center text-xl md:text-2xl shadow-lg`}>
+                      {course.emoji}
+                    </div>
+                  </div>
+
+                  <h3 className="text-xs md:text-base font-zen font-bold leading-tight mt-2">
+                    {t(course.titleKey)}
+                  </h3>
+
+                  <p className="hidden md:block text-[10px] text-white/60 line-clamp-1">
+                    {t(course.descriptionKey)}
+                  </p>
+
+                  <div className={`h-1 rounded-full bg-gradient-to-r ${course.color} mt-1 md:mt-2`}></div>
+                </div>
+              </button>
+            )
+          })}
+        </div>
       </div>
 
       {/* Practice Categories Section - Full width */}
@@ -231,7 +229,7 @@ const Dashboard = () => {
           ))}
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

@@ -31,13 +31,18 @@ export interface GrammarAnalysis {
     }[];
 }
 
+export interface QuizExplanation {
+    correct: string;
+    wrong: string[];
+}
+
 export interface QuizQuestion {
     id: string;
     sentence: string;
     options: string[];
     correctIndex: number;
     grammarRef?: string;
-    explanation?: string;
+    explanation?: string | QuizExplanation;
 }
 
 export interface GrammarPoint {

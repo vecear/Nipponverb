@@ -1,58 +1,11 @@
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { BookOpen, MessageSquare, Calendar, Book, FileText } from 'lucide-react'
+import { courses } from '../data/courses'
+
 
 const Courses = () => {
   const navigate = useNavigate()
   const { t } = useTranslation()
-
-  const courses = [
-    {
-      id: 'verbs',
-      title: t('nav.verbs'),
-      description: t('courses.verbs.description'),
-      icon: BookOpen,
-      path: '/verbs',
-      color: 'from-orange-500 to-red-500',
-      emoji: '🔤',
-    },
-    {
-      id: 'vocabulary',
-      title: t('nav.vocabulary'),
-      description: t('courses.vocabulary.description'),
-      icon: Book,
-      path: '/vocabulary',
-      color: 'from-yellow-500 to-orange-500',
-      emoji: 'abc',
-    },
-    {
-      id: 'grammar',
-      title: t('nav.grammar'),
-      description: t('courses.grammar.description'),
-      icon: FileText,
-      path: '/grammar',
-      color: 'from-pink-500 to-purple-500',
-      emoji: '📖',
-    },
-    {
-      id: 'idioms',
-      title: t('nav.idioms'),
-      description: t('courses.idioms.description'),
-      icon: MessageSquare,
-      path: '/idioms',
-      color: 'from-blue-500 to-cyan-500',
-      emoji: '💬',
-    },
-    {
-      id: 'dateCounters',
-      title: t('nav.dateAndCounters'),
-      description: t('courses.dateCounters.description'),
-      icon: Calendar,
-      path: '/date-counters',
-      color: 'from-green-500 to-teal-500',
-      emoji: '📅',
-    },
-  ]
 
   return (
     <div className="min-h-screen py-8 px-4">
@@ -83,11 +36,11 @@ const Courses = () => {
                 </div>
 
                 <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-gradient transition-colors">
-                  {course.title}
+                  {t(course.titleKey)}
                 </h3>
 
                 <p className="text-white/60 group-hover:text-white/80 transition-colors">
-                  {course.description}
+                  {t(course.descriptionKey)}
                 </p>
 
                 <div className="mt-4 flex items-center text-sakura-pink group-hover:translate-x-2 transition-transform">
