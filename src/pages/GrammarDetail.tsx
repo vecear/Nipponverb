@@ -318,7 +318,7 @@ const GrammarDetail = () => {
                                 <h4 className="text-lg font-bold text-indigo-900 mb-2">{usage.title}</h4>
                             )}
                             <p className="text-indigo-900/80 mb-6 leading-relaxed">
-                                {usage.description}
+                                {renderFurigana(usage.description)}
                             </p>
 
                             <div className="space-y-4">
@@ -350,7 +350,9 @@ const GrammarDetail = () => {
                             {detail.analysis.title}
                         </h3>
                         {detail.analysis.description && (
-                            <p className="text-indigo-900/80 mb-4">{detail.analysis.description}</p>
+                            <p className="text-indigo-900/80 mb-4">
+                                {renderFurigana(detail.analysis.description)}
+                            </p>
                         )}
 
                         {detail.analysis.points && (
@@ -359,7 +361,7 @@ const GrammarDetail = () => {
                                     <li key={i} className="flex gap-3">
                                         <div className="w-1.5 h-1.5 rounded-full bg-indigo-900/40 mt-2.5 flex-shrink-0" />
                                         <div className="space-y-2 flex-1">
-                                            <p className="text-indigo-900/90">{point.rule}</p>
+                                            <p className="text-indigo-900/90">{renderFurigana(point.rule)}</p>
                                             {point.examples && point.examples.map((ex, j) => (
                                                 <div key={j} className="bg-indigo-900/10 rounded-lg p-3 text-sm">
                                                     <div className="text-indigo-900 mb-1">{renderFurigana(ex.japanese)}</div>
@@ -389,6 +391,7 @@ const GrammarDetail = () => {
                         {detail.quiz.map((q) => {
                             const isAnswered = selectedAnswers[q.id] !== undefined
                             const isCorrect = selectedAnswers[q.id] === q.correctIndex
+                            const explanationText = renderExplanation(q.explanation, isCorrect, selectedAnswers[q.id])
 
                             return (
                                 <div key={q.id} className="bg-indigo-900/5 border border-indigo-900/10 rounded-2xl p-6">
@@ -434,7 +437,7 @@ const GrammarDetail = () => {
                                                     {isCorrect ? '答對了！' : '答錯了'}
                                                 </p>
                                                 <p className="text-indigo-900/80 text-sm">
-                                                    {renderExplanation(q.explanation, isCorrect, selectedAnswers[q.id])}
+                                                    {explanationText ? renderFurigana(explanationText) : null}
                                                 </p>
                                             </div>
                                         </div>

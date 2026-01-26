@@ -3,8 +3,8 @@ import { GrammarPoint } from '../../types/grammar';
 export const n4Details: Record<string, GrammarPoint> = {
     'n4_aida': {
         id: 'n4_aida',
-        pattern: '間（あいだ）',
-        connection: '動{どう}詞{し}辭書形 / ている形 / ない形 + 間\n名{めい}詞{し} + の + 間\nい形{けい}容{よう}詞{し} + 間\nな形{けい}容{よう}詞{し} + な + 間',
+        pattern: '間{あいだ}',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} / ている形{けい} / ない形{けい} + 間{あいだ}\n名{めい}詞{し} + の + 間{あいだ}\nい形{けい}容{よう}詞{し} + 間{あいだ}\nな形{けい}容{よう}詞{し} + な + 間{あいだ}',
         translation: '期間; 在...期間',
         level: 'N4',
         explanation: [
@@ -87,8 +87,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     },
     'n4_aida_ni': {
         id: 'n4_aida_ni',
-        pattern: '間に（あいだに）',
-        connection: '動{どう}詞{し}辭書形 / ている形 / ない形 + 間に\n名{めい}詞{し} + の + 間に\nい形{けい}容{よう}詞{し} + 間に\nな形{けい}容{よう}詞{し} + な + 間に',
+        pattern: '間{あいだ}に',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} / ている形{けい} / ない形{けい} + 間{あいだ}に\n名{めい}詞{し} + の + 間{あいだ}に\nい形{けい}容{よう}詞{し} + 間{あいだ}に\nな形{けい}容{よう}詞{し} + な + 間{あいだ}に',
         translation: '在...期間 (發生某事)',
         level: 'N4',
         explanation: [
@@ -165,7 +165,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_amari_nai': {
         id: 'n4_amari_nai',
         pattern: 'あまり～ない',
-        connection: 'あまり + 動{どう}詞{し}否定形 / い形否定 / な形否定',
+        connection: 'あまり + 動{どう}詞{し}否定{ひてい}形{けい} / い形否定{ひてい} / な形否定{ひてい}',
         translation: '不怎麼...; 不太...',
         level: 'N4',
         explanation: [
@@ -248,8 +248,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     },
     'n4_ato_de': {
         id: 'n4_ato_de',
-        pattern: '後で（あとで）',
-        connection: '動{どう}詞{し}た形 + 後で\n名{めい}詞{し} + の + 後で',
+        pattern: '後{あと}で',
+        connection: '動{どう}詞{し}た形{けい} + 後{あと}で\n名{めい}詞{し} + の + 後{あと}で',
         translation: '之後; 稍後',
         level: 'N4',
         explanation: [
@@ -326,7 +326,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ba': {
         id: 'n4_ba',
         pattern: 'ば',
-        connection: '動{どう}詞{し}ば形\nい形{けい}容{よう}詞{し}：い → ければ\nな形{けい}容{よう}詞{し}：～であれば\n名{めい}詞{し}：～であれば',
+        connection: '動{どう}詞{し}ば形{けい}\nい形{けい}容{よう}詞{し}：い → ければ\nな形{けい}容{よう}詞{し}：～であれば\n名{めい}詞{し}：～であれば',
         translation: '如果...; 假如... (條件形)',
         level: 'N4',
         explanation: [
@@ -433,7 +433,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_baai_wa': {
         id: 'n4_baai_wa',
         pattern: '場{ば}合{あい}は（ばあいは）',
-        connection: '動{どう}詞{し}普通形 + 場{ば}合{あい}は\nい形{けい}容{よう}詞{し} + 場{ば}合{あい}は\nな形{けい}容{よう}詞{し} + な + 場{ば}合{あい}は\n名{めい}詞{し} + の + 場{ば}合{あい}は',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + 場{ば}合{あい}は\nい形{けい}容{よう}詞{し} + 場{ば}合{あい}は\nな形{けい}容{よう}詞{し} + な + 場{ば}合{あい}は\n名{めい}詞{し} + の + 場{ば}合{あい}は',
         translation: '...的情況下; 萬一',
         level: 'N4',
         explanation: [
@@ -517,7 +517,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_bakari': {
         id: 'n4_bakari',
         pattern: 'ばかり',
-        connection: '名{めい}詞{し} + ばかり\n動{どう}詞{し}て形 + ばかりいる\n動{どう}詞{し}た形 + ばかり（剛剛...）',
+        connection: '名{めい}詞{し} + ばかり\n動{どう}詞{し}て形{けい} + ばかりいる\n動{どう}詞{し}た形{けい} + ばかり（剛剛...）',
         translation: '只有; 僅僅; 光是...',
         level: 'N4',
         explanation: [
@@ -603,7 +603,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_dake_de': {
         id: 'n4_dake_de',
         pattern: 'だけで',
-        connection: '名{めい}詞{し} + だけで\n動{どう}詞{し}辭書形 + だけで',
+        connection: '名{めい}詞{し} + だけで\n動{どう}詞{し}辭書{じしょ}形{けい} + だけで',
         translation: '光是...; 僅僅...就',
         level: 'N4',
         explanation: [
@@ -665,8 +665,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     },
     'n4_dasu': {
         id: 'n4_dasu',
-        pattern: '出す（だす）',
-        connection: '動{どう}詞{し}ます形（去ます）+ 出す',
+        pattern: '出{だ}す',
+        connection: '動{どう}詞{し}ます形{けい}（去{きょ}ます）+ 出{だ}す',
         translation: '開始...; 突然...',
         level: 'N4',
         explanation: [
@@ -897,7 +897,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_dewa_nai_ka': {
         id: 'n4_dewa_nai_ka',
         pattern: 'ではないか',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し} + ではないか',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-な / 名{めい}詞{し} + ではないか',
         translation: '不是嗎?; 對吧?',
         level: 'N4',
         explanation: [
@@ -959,8 +959,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     },
     'n4_ga_hitsuyou': {
         id: 'n4_ga_hitsuyou',
-        pattern: 'が必要（がひつよう）',
-        connection: '名{めい}詞{し} + が必要だ',
+        pattern: 'が必要{ひつよう}（がひつよう）',
+        connection: '名{めい}詞{し} + が必要{ひつよう}だ',
         translation: '需要; 必要',
         level: 'N4',
         explanation: [
@@ -1023,7 +1023,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ga_suru': {
         id: 'n4_ga_suru',
         pattern: 'がする',
-        connection: '名{めい}詞{し}（感覺類）+ がする',
+        connection: '名{めい}詞{し}（感覺{かんかく}類{るい}）+ がする',
         translation: '感覺到 (氣味{あじ}/聲音/味{あじ}道)',
         level: 'N4',
         explanation: [
@@ -1108,7 +1108,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_garu': {
         id: 'n4_garu',
         pattern: 'がる',
-        connection: 'い形{けい}容{よう}詞{し}（去い）+ がる\nな形{けい}容{よう}詞{し}語幹 + がる',
+        connection: 'い形{けい}容{よう}詞{し}（去{きょ}い）+ がる\nな形{けい}容{よう}詞{し}語幹{ごかん} + がる',
         translation: '表現出...的樣子',
         level: 'N4',
         explanation: [
@@ -1254,8 +1254,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     },
     'n4_hajimeru': {
         id: 'n4_hajimeru',
-        pattern: '始める（はじめる）',
-        connection: '動{どう}詞{し}ます形（去ます）+ 始める',
+        pattern: '始{はじ}める',
+        connection: '動{どう}詞{し}ます形{けい}（去{きょ}ます）+ 始{はじ}める',
         translation: '開始...',
         level: 'N4',
         explanation: [
@@ -1339,7 +1339,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hazu_da': {
         id: 'n4_hazu_da',
         pattern: 'はずだ',
-        connection: '動{どう}詞{し}普通形 + はずだ\nい形{けい}容{よう}詞{し} + はずだ\nな形{けい}容{よう}詞{し}-な + はずだ\n名{めい}詞{し}-の + はずだ',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + はずだ\nい形{けい}容{よう}詞{し} + はずだ\nな形{けい}容{よう}詞{し}-な + はずだ\n名{めい}詞{し}-の + はずだ',
         translation: '應該...; 理應...',
         level: 'N4',
         explanation: [
@@ -1423,7 +1423,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hazu_ga_nai': {
         id: 'n4_hazu_ga_nai',
         pattern: 'はずがない',
-        connection: '動{どう}詞{し}普通形 + はずがない\nい形{けい}容{よう}詞{し} + はずがない\nな形{けい}容{よう}詞{し}-な + はずがない\n名{めい}詞{し}-の + はずがない',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + はずがない\nい形{けい}容{よう}詞{し} + はずがない\nな形{けい}容{よう}詞{し}-な + はずがない\n名{めい}詞{し}-の + はずがない',
         translation: '不可能...; 應該不會...',
         level: 'N4',
         explanation: [
@@ -1486,7 +1486,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_irassharu': {
         id: 'n4_irassharu',
         pattern: 'いらっしゃる',
-        connection: '尊敬語，取代「いる / 行く / 来{く}る」',
+        connection: '尊敬{そんけい}語{ご}，取代「いる / 行く / 来{く}る」',
         translation: '在; 來; 去 (尊敬語)',
         level: 'N4',
         explanation: [
@@ -1563,7 +1563,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_itashimasu': {
         id: 'n4_itashimasu',
         pattern: 'いたします',
-        connection: '自謙語，取代「します」',
+        connection: '自謙{じけん}語{ご}，取代「します」',
         translation: '做 (自謙語)',
         level: 'N4',
         explanation: [
@@ -1626,7 +1626,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ka_dou_ka': {
         id: 'n4_ka_dou_ka',
         pattern: 'かどうか',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-だ / 名{めい}詞{し}-だ + かどうか',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-だ / 名{めい}詞{し}-だ + かどうか',
         translation: '是否...',
         level: 'N4',
         explanation: [
@@ -1703,7 +1703,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_kamo_shirenai': {
         id: 'n4_kamo_shirenai',
         pattern: 'かもしれない',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-だ / 名{めい}詞{し}-だ + かもしれない',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-だ / 名{めい}詞{し}-だ + かもしれない',
         translation: '也許; 說不定',
         level: 'N4',
         explanation: [
@@ -1784,7 +1784,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_koto_ga_aru': {
         id: 'n4_koto_ga_aru',
         pattern: 'ことがある',
-        connection: '動{どう}詞{し}辭書形 + ことがある',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} + ことがある',
         translation: '有時候...',
         level: 'N4',
         explanation: [
@@ -1861,7 +1861,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_koto_ni_naru': {
         id: 'n4_koto_ni_naru',
         pattern: 'ことになる',
-        connection: '動{どう}詞{し}辭書形 / ない形 + ことになる',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} / ない形{けい} + ことになる',
         translation: '決定...; 變成...',
         level: 'N4',
         explanation: [
@@ -1938,7 +1938,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_koto_ni_suru': {
         id: 'n4_koto_ni_suru',
         pattern: 'ことにする',
-        connection: '動{どう}詞{し}辭書形 / ない形 + ことにする',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} / ない形{けい} + ことにする',
         translation: '決定...',
         level: 'N4',
         explanation: [
@@ -2001,7 +2001,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_made_ni': {
         id: 'n4_made_ni',
         pattern: 'までに',
-        connection: '時間名{めい}詞{し} / 動{どう}詞{し}辭書形 + までに',
+        connection: '時間名{めい}詞{し} / 動{どう}詞{し}辭書{じしょ}形{けい} + までに',
         translation: '在...之前; 到...為止',
         level: 'N4',
         explanation: [
@@ -2078,7 +2078,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_mama': {
         id: 'n4_mama',
         pattern: 'まま',
-        connection: '動{どう}詞{し}た形 / ない形 + まま\nい形{けい}容{よう}詞{し} + まま\nな形{けい}容{よう}詞{し}-な + まま\n名{めい}詞{し}-の + まま',
+        connection: '動{どう}詞{し}た形{けい} / ない形{けい} + まま\nい形{けい}容{よう}詞{し} + まま\nな形{けい}容{よう}詞{し}-な + まま\n名{めい}詞{し}-の + まま',
         translation: '保持...的狀態',
         level: 'N4',
         explanation: [
@@ -2141,7 +2141,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_mitai_da': {
         id: 'n4_mitai_da',
         pattern: 'みたいだ',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-∅ / 名{めい}詞{し} + みたいだ',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-∅ / 名{めい}詞{し} + みたいだ',
         translation: '好像...; 像...一樣',
         level: 'N4',
         explanation: [
@@ -2218,7 +2218,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_nagara': {
         id: 'n4_nagara',
         pattern: 'ながら',
-        connection: '動{どう}詞{し}ます形（去ます）+ ながら',
+        connection: '動{どう}詞{し}ます形{けい}（去{きょ}ます）+ ながら',
         translation: '一邊...一邊...',
         level: 'N4',
         explanation: [
@@ -2291,7 +2291,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_nakereba_naranai': {
         id: 'n4_nakereba_naranai',
         pattern: 'なければならない',
-        connection: '動{どう}詞{し}ない形（去ない）+ なければならない',
+        connection: '動{どう}詞{し}ない形{けい}（去{きょ}ない）+ なければならない',
         translation: '必須...',
         level: 'N4',
         explanation: [
@@ -2368,7 +2368,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_nara': {
         id: 'n4_nara',
         pattern: 'なら',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-∅ / 名{めい}詞{し} + なら',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-∅ / 名{めい}詞{し} + なら',
         translation: '如果...的話',
         level: 'N4',
         explanation: [
@@ -2467,7 +2467,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_nasai': {
         id: 'n4_nasai',
         pattern: 'なさい',
-        connection: '動{どう}詞{し}ます形（去ます）+ なさい',
+        connection: '動{どう}詞{し}ます形{けい}（去{きょ}ます）+ なさい',
         translation: '做... (命令)',
         level: 'N4',
         explanation: [
@@ -2530,7 +2530,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_nikui': {
         id: 'n4_nikui',
         pattern: 'にくい',
-        connection: '動{どう}詞{し}ます形（去ます）+ にくい',
+        connection: '動{どう}詞{し}ます形{けい}（去{きょ}ます）+ にくい',
         translation: '難以...',
         level: 'N4',
         explanation: [
@@ -2607,7 +2607,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_noni': {
         id: 'n4_noni',
         pattern: 'のに',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-な + のに',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-な / 名{めい}詞{し}-な + のに',
         translation: '雖然...但是...; 明明...',
         level: 'N4',
         explanation: [
@@ -2684,7 +2684,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_rashii': {
         id: 'n4_rashii',
         pattern: 'らしい',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-∅ / 名{めい}詞{し} + らしい',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-∅ / 名{めい}詞{し} + らしい',
         translation: '好像...; 聽說...; 有...的樣子',
         level: 'N4',
         explanation: [
@@ -2756,7 +2756,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_saseru': {
         id: 'n4_saseru',
         pattern: 'させる',
-        connection: '一段動{どう}詞{し}：語幹 + させる\n五段動{どう}詞{し}：あ段 + せる',
+        connection: '一段動{どう}詞{し}：語幹{ごかん} + させる\n五段動{どう}詞{し}：あ段 + せる',
         translation: '讓...做; 使...做 (使役)',
         level: 'N4',
         explanation: [
@@ -2852,7 +2852,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_shi': {
         id: 'n4_shi',
         pattern: 'し',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-だ / 名{めい}詞{し}-だ + し',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-だ / 名{めい}詞{し}-だ + し',
         translation: '既...又...; 而且',
         level: 'N4',
         explanation: [
@@ -2914,8 +2914,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     },
     'n4_sou_da_looks': {
         id: 'n4_sou_da_looks',
-        pattern: 'そうだ (様態)',
-        connection: '動{どう}詞{し}ます形（去ます）+ そうだ\nい形{けい}容{よう}詞{し}（去い）+ そうだ\nな形{けい}容{よう}詞{し}語幹 + そうだ',
+        pattern: 'そうだ (様態{ようたい})',
+        connection: '動{どう}詞{し}ます形{けい}（去{きょ}ます）+ そうだ\nい形{けい}容{よう}詞{し}（去{きょ}い）+ そうだ\nな形{けい}容{よう}詞{し}語幹{ごかん} + そうだ',
         translation: '看起來...; 似乎...',
         level: 'N4',
         explanation: [
@@ -2991,8 +2991,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     },
     'n4_sou_da_heard': {
         id: 'n4_sou_da_heard',
-        pattern: 'そうだ (傳聞)',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-だ / 名{めい}詞{し}-だ + そうだ',
+        pattern: 'そうだ (傳聞{でんぶん})',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-だ / 名{めい}詞{し}-だ + そうだ',
         translation: '聽說...; 據說...',
         level: 'N4',
         explanation: [
@@ -3057,7 +3057,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ta_bakari': {
         id: 'n4_ta_bakari',
         pattern: 'たばかり',
-        connection: '動{どう}詞{し}た形 + ばかり',
+        connection: '動{どう}詞{し}た形{けい} + ばかり',
         translation: '剛剛...',
         level: 'N4',
         explanation: [
@@ -3143,7 +3143,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tara': {
         id: 'n4_tara',
         pattern: 'たら',
-        connection: '動{どう}詞{し}た形 / い形-かったら / な形-だったら / 名{めい}詞{し}-だったら',
+        connection: '動{どう}詞{し}た形{けい} / い形{けい}-かったら / な形{けい}-だったら / 名{めい}詞{し}-だったら',
         translation: '如果...的話; ...之後',
         level: 'N4',
         explanation: [
@@ -3246,7 +3246,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_ageru': {
         id: 'n4_te_ageru',
         pattern: 'てあげる',
-        connection: '動{どう}詞{し}て形 + あげる',
+        connection: '動{どう}詞{し}て形{けい} + あげる',
         translation: '（為別人）做...',
         level: 'N4',
         explanation: [
@@ -3351,7 +3351,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_hoshii': {
         id: 'n4_te_hoshii',
         pattern: 'てほしい',
-        connection: '動{どう}詞{し}て形 + ほしい',
+        connection: '動{どう}詞{し}て形{けい} + ほしい',
         translation: '希望（別人）做...',
         level: 'N4',
         explanation: [
@@ -3437,7 +3437,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_iku': {
         id: 'n4_te_iku',
         pattern: 'ていく',
-        connection: '動{どう}詞{し}て形 + いく',
+        connection: '動{どう}詞{し}て形{けい} + いく',
         translation: '...下去; 漸漸...; 做了再去',
         level: 'N4',
         explanation: [
@@ -3517,7 +3517,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_kureru': {
         id: 'n4_te_kureru',
         pattern: 'てくれる',
-        connection: '動{どう}詞{し}て形 + くれる',
+        connection: '動{どう}詞{し}て形{けい} + くれる',
         translation: '（他人為我）做...',
         level: 'N4',
         explanation: [
@@ -3604,7 +3604,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_kuru': {
         id: 'n4_te_kuru',
         pattern: 'てくる',
-        connection: '動{どう}詞{し}て形 + くる',
+        connection: '動{どう}詞{し}て形{けい} + くる',
         translation: '...起來; 一直...; 做了再來',
         level: 'N4',
         explanation: [
@@ -3693,7 +3693,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_miru': {
         id: 'n4_te_miru',
         pattern: 'てみる',
-        connection: '動{どう}詞{し}て形 + みる',
+        connection: '動{どう}詞{し}て形{けい} + みる',
         translation: '試著做...',
         level: 'N4',
         explanation: [
@@ -3765,7 +3765,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_morau': {
         id: 'n4_te_morau',
         pattern: 'てもらう',
-        connection: '動{どう}詞{し}て形 + もらう',
+        connection: '動{どう}詞{し}て形{けい} + もらう',
         translation: '請（別人）做...; 獲得（別人的幫助）',
         level: 'N4',
         explanation: [
@@ -3852,7 +3852,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_oku': {
         id: 'n4_te_oku',
         pattern: 'ておく',
-        connection: '動{どう}詞{し}て形 + おく',
+        connection: '動{どう}詞{し}て形{けい} + おく',
         translation: '事先做好...; 保持某狀態',
         level: 'N4',
         explanation: [
@@ -3932,7 +3932,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_shimau': {
         id: 'n4_te_shimau',
         pattern: 'てしまう',
-        connection: '動{どう}詞{し}て形 + しまう',
+        connection: '動{どう}詞{し}て形{けい} + しまう',
         translation: '...完了; 不小心...',
         level: 'N4',
         explanation: [
@@ -4026,7 +4026,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_temo': {
         id: 'n4_temo',
         pattern: 'ても',
-        connection: '動{どう}詞{し}て形 / い形-くても / な形-でも / 名{めい}詞{し}-でも',
+        connection: '動{どう}詞{し}て形{けい} / い形{けい}-くても / な形{けい}-でも / 名{めい}詞{し}-でも',
         translation: '即使...; 就算...',
         level: 'N4',
         explanation: [
@@ -4097,8 +4097,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== と（条件） ==============
     'n4_to': {
         id: 'n4_to',
-        pattern: 'と（条件）',
-        connection: '動{どう}詞{し}辭書形 / ない形 + と',
+        pattern: 'と（条件{じょうけん}）',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} / ない形{けい} + と',
         translation: '一...就...; 如果...',
         level: 'N4',
         explanation: [
@@ -4184,7 +4184,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_to_iu': {
         id: 'n4_to_iu',
         pattern: 'という',
-        connection: '名{めい}詞{し} / 文 + という + 名{めい}詞{し}',
+        connection: '名{めい}詞{し} / 文{ぶん} + という + 名{めい}詞{し}',
         translation: '叫做...; 所謂的...',
         level: 'N4',
         explanation: [
@@ -4264,7 +4264,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tokoro': {
         id: 'n4_tokoro',
         pattern: 'ところ',
-        connection: '動{どう}詞{し}辭書形 / ている形 / た形 + ところ',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} / ている形{けい} / た形{けい} + ところ',
         translation: '正要...; 正在...; 剛...',
         level: 'N4',
         explanation: [
@@ -4351,8 +4351,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== 続ける ==============
     'n4_tsuzukeru': {
         id: 'n4_tsuzukeru',
-        pattern: '続ける（つづける）',
-        connection: '動{どう}詞{し}ます形 + 続ける',
+        pattern: '続{つづ}ける',
+        connection: '動{どう}詞{し}ます形{けい} + 続{つづ}ける',
         translation: '繼續...',
         level: 'N4',
         explanation: [
@@ -4424,7 +4424,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_yasui': {
         id: 'n4_yasui',
         pattern: 'やすい',
-        connection: '動{どう}詞{し}ます形 + やすい',
+        connection: '動{どう}詞{し}ます形{けい} + やすい',
         translation: '容易...',
         level: 'N4',
         explanation: [
@@ -4496,7 +4496,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_da': {
         id: 'n4_you_da',
         pattern: 'ようだ',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + ようだ',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-な / 名{めい}詞{し}-の + ようだ',
         translation: '好像...; 似乎...',
         level: 'N4',
         explanation: [
@@ -4577,7 +4577,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_ni_naru': {
         id: 'n4_you_ni_naru',
         pattern: 'ようになる',
-        connection: '動{どう}詞{し}辭書形 / ない形 + ようになる',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} / ない形{けい} + ようになる',
         translation: '變得能夠...; 變得會...',
         level: 'N4',
         explanation: [
@@ -4664,7 +4664,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_ni_suru': {
         id: 'n4_you_ni_suru',
         pattern: 'ようにする',
-        connection: '動{どう}詞{し}辭書形 / ない形 + ようにする',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} / ない形{けい} + ようにする',
         translation: '努力做到...; 盡量...',
         level: 'N4',
         explanation: [
@@ -4750,8 +4750,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== ようにいう ==============
     'n4_you_ni_iu': {
         id: 'n4_you_ni_iu',
-        pattern: 'ように言う',
-        connection: '動{どう}詞{し}辭書形 / ない形 + ように言う',
+        pattern: 'ように言{い}う',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} / ない形{けい} + ように言{い}う',
         translation: '告訴...要...; 叫...做...',
         level: 'N4',
         explanation: [
@@ -4822,8 +4822,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== ようと思う ==============
     'n4_you_to_omou': {
         id: 'n4_you_to_omou',
-        pattern: 'ようと思う',
-        connection: '動{どう}詞{し}意向形 + と思う',
+        pattern: 'ようと思{おも}う',
+        connection: '動{どう}詞{し}意向{いこう}形{けい} + と思{おも}う',
         translation: '想要...; 打算...',
         level: 'N4',
         explanation: [
@@ -4980,8 +4980,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== られる（可能） ==============
     'n4_rareru_kanou': {
         id: 'n4_rareru_kanou',
-        pattern: 'られる（可能）',
-        connection: '一段動{どう}詞{し}：語幹 + られる\n五段動{どう}詞{し}：語幹 + える',
+        pattern: 'られる（可能{かのう}）',
+        connection: '一段動{どう}詞{し}：語幹{ごかん} + られる\n五段動{どう}詞{し}：語幹{ごかん} + える',
         translation: '能夠...; 可以...',
         level: 'N4',
         explanation: [
@@ -5070,8 +5070,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== られる（受身） ==============
     'n4_rareru_ukemi': {
         id: 'n4_rareru_ukemi',
-        pattern: 'られる（受身）',
-        connection: '一段動{どう}詞{し}：語幹 + られる\n五段動{どう}詞{し}：語幹（あ段）+ れる',
+        pattern: 'られる（受身{うけみ}）',
+        connection: '一段動{どう}詞{し}：語幹{ごかん} + られる\n五段動{どう}詞{し}：語幹{ごかん}（あ段）+ れる',
         translation: '被...',
         level: 'N4',
         explanation: [
@@ -5168,8 +5168,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== ～中 ==============
     'n4_chuu': {
         id: 'n4_chuu',
-        pattern: '～中（ちゅう/じゅう）',
-        connection: '名{めい}詞{し} + 中',
+        pattern: '～中{ちゅう/じゅう}',
+        connection: '名{めい}詞{し} + 中{ちゅう/じゅう}',
         translation: '在...中; 整個...',
         level: 'N4',
         explanation: [
@@ -5204,7 +5204,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_chuu_2',
-                sentence: '一年（　）、この季節{きせつ}が一番{いちばん}好{す}きです。',
+                sentence: '一年{いちねん}（　）、この季節{きせつ}が一番{いちばん}好{す}きです。',
                 options: ['じゅう', 'ちゅう', '中', 'なか'],
                 correctIndex: 0,
                 explanation: '一整年中最喜歡這個季{き}節{せつ}。'
@@ -5251,7 +5251,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_sugiru': {
         id: 'n4_sugiru',
         pattern: 'すぎる',
-        connection: '動{どう}詞{し}ます形 / い形語幹 / な形語幹 + すぎる',
+        connection: '動{どう}詞{し}ます形{けい} / い形{けい}語幹{ごかん} / な形{けい}語幹{ごかん} + すぎる',
         translation: '太...; 過於...',
         level: 'N4',
         explanation: [
@@ -5322,8 +5322,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== ～かた ==============
     'n4_kata': {
         id: 'n4_kata',
-        pattern: '～方（かた）',
-        connection: '動{どう}詞{し}ます形 + 方',
+        pattern: '～方{かた}',
+        connection: '動{どう}詞{し}ます形{けい} + 方{かた}',
         translation: '...的方法; 如何...',
         level: 'N4',
         explanation: [
@@ -5394,8 +5394,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== ～やすい ==============
     'n4_yasui_adj': {
         id: 'n4_yasui_adj',
-        pattern: 'やすい（形{けい}容{よう}詞{し}化）',
-        connection: '動{どう}詞{し}ます形 + やすい',
+        pattern: 'やすい（形{けい}容{よう}詞{し}化{か}）',
+        connection: '動{どう}詞{し}ます形{けい} + やすい',
         translation: '容易...',
         level: 'N4',
         explanation: [
@@ -5466,8 +5466,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== ～かどうか ==============
     'n4_ka_dou_ka_full': {
         id: 'n4_ka_dou_ka_full',
-        pattern: 'かどうか（完整用法）',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-か / 名{めい}詞{し}-か + どうか',
+        pattern: 'かどうか（完整{かんせい}用法{ようほう}）',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-か / 名{めい}詞{し}-か + どうか',
         translation: '是否...',
         level: 'N4',
         explanation: [
@@ -5611,7 +5611,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_okage_de': {
         id: 'n4_okage_de',
         pattern: 'おかげで',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + おかげで',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-な / 名{めい}詞{し}-の + おかげで',
         translation: '托...的福; 多虧...',
         level: 'N4',
         explanation: [
@@ -5697,7 +5697,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_sei_de': {
         id: 'n4_sei_de',
         pattern: 'せいで',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + せいで',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-な / 名{めい}詞{し}-の + せいで',
         translation: '因為...（負{ま}け面原{げん}因{いん}）; 都怪...',
         level: 'N4',
         explanation: [
@@ -5984,8 +5984,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== はずだ ==============
     'n4_hazu_da_full': {
         id: 'n4_hazu_da_full',
-        pattern: 'はずだ（完整用法）',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + はずだ',
+        pattern: 'はずだ（完整{かんせい}用法{ようほう}）',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-な / 名{めい}詞{し}-の + はずだ',
         translation: '應該...; 理應...',
         level: 'N4',
         explanation: [
@@ -6071,7 +6071,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tokoro_ni': {
         id: 'n4_tokoro_ni',
         pattern: 'ところに / ところへ',
-        connection: '動{どう}詞{し}辭書形 / ている形 / た形 + ところに / ところへ',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} / ている形{けい} / た形{けい} + ところに / ところへ',
         translation: '正當...的時候',
         level: 'N4',
         explanation: [
@@ -6143,7 +6143,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_to_suru': {
         id: 'n4_you_to_suru',
         pattern: 'ようとする',
-        connection: '動{どう}詞{し}意向形 + とする',
+        connection: '動{どう}詞{し}意向{いこう}形{けい} + とする',
         translation: '正要...; 試圖...',
         level: 'N4',
         explanation: [
@@ -6223,7 +6223,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_ni_request': {
         id: 'n4_you_ni_request',
         pattern: 'ようにしてください',
-        connection: '動{どう}詞{し}辭書形 / ない形 + ようにしてください',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} / ない形{けい} + ようにしてください',
         translation: '請務必...; 請注意...',
         level: 'N4',
         explanation: [
@@ -6294,8 +6294,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== 受身（尊敬） ==============
     'n4_ukemi_sonkei': {
         id: 'n4_ukemi_sonkei',
-        pattern: 'られる（尊敬）',
-        connection: '一段動{どう}詞{し}：語幹 + られる\n五段動{どう}詞{し}：語幹（あ段）+ れる',
+        pattern: 'られる（尊敬{そんけい}）',
+        connection: '一段動{どう}詞{し}：語幹{ごかん} + られる\n五段動{どう}詞{し}：語幹{ごかん}（あ段）+ れる',
         translation: '（尊敬語）做...',
         level: 'N4',
         explanation: [
@@ -6381,7 +6381,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ba_hodo': {
         id: 'n4_ba_hodo',
         pattern: 'ば〜ほど',
-        connection: '動{どう}詞{し}ば形 + 動{どう}詞{し}辭書形 + ほど\nい形-ければ + い形 + ほど',
+        connection: '動{どう}詞{し}ば形{けい} + 動{どう}詞{し}辭書{じしょ}形{けい} + ほど\nい形{けい}-ければ + い形{けい} + ほど',
         translation: '越...越...',
         level: 'N4',
         explanation: [
@@ -6453,7 +6453,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hodo_nai': {
         id: 'n4_hodo_nai',
         pattern: 'ほど〜ない',
-        connection: '名{めい}詞{し} + ほど + 否定形',
+        connection: '名{めい}詞{し} + ほど + 否定{ひてい}形{けい}',
         translation: '沒有...那麼...',
         level: 'N4',
         explanation: [
@@ -6525,7 +6525,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ba_ii': {
         id: 'n4_ba_ii',
         pattern: 'ばいい',
-        connection: '動{どう}詞{し}ば形 + いい',
+        connection: '動{どう}詞{し}ば形{けい} + いい',
         translation: '...就好了; 只要...就行',
         level: 'N4',
         explanation: [
@@ -6605,7 +6605,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tara_ii': {
         id: 'n4_tara_ii',
         pattern: 'たらいい',
-        connection: '動{どう}詞{し}た形 + らいい',
+        connection: '動{どう}詞{し}た形{けい} + らいい',
         translation: '...就好了; 只要...就行',
         level: 'N4',
         explanation: [
@@ -6684,8 +6684,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== はずがない ==============
     'n4_hazu_ga_nai_full': {
         id: 'n4_hazu_ga_nai_full',
-        pattern: 'はずがない（完整用法）',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + はずがない',
+        pattern: 'はずがない（完整{かんせい}用法{ようほう}）',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-な / 名{めい}詞{し}-の + はずがない',
         translation: '不可能...; 不應該...',
         level: 'N4',
         explanation: [
@@ -6757,7 +6757,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_wake_da': {
         id: 'n4_wake_da',
         pattern: 'わけだ',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + わけだ',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-な / 名{めい}詞{し}-の + わけだ',
         translation: '難怪...; 也就是說...',
         level: 'N4',
         explanation: [
@@ -6828,7 +6828,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_wake_ga_nai': {
         id: 'n4_wake_ga_nai',
         pattern: 'わけがない',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + わけがない',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-な / 名{めい}詞{し}-の + わけがない',
         translation: '不可能...; 沒有道理...',
         level: 'N4',
         explanation: [
@@ -6900,7 +6900,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_wake_dewa_nai': {
         id: 'n4_wake_dewa_nai',
         pattern: 'わけではない',
-        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-な + わけではない',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} / い形{けい} / な形{けい}-な / 名{めい}詞{し}-な + わけではない',
         translation: '並不是...; 並非...',
         level: 'N4',
         explanation: [
@@ -6974,8 +6974,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_noni_contrast': {
         id: 'n4_noni_contrast',
-        pattern: 'のに（逆接）',
-        connection: '動{どう}詞{し}普通形 + のに\nい形{けい}容{よう}詞{し} + のに\nな形{けい}容{よう}詞{し} + な + のに\n名{めい}詞{し} + な + のに',
+        pattern: 'のに（逆接{ぎゃくせつ}）',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + のに\nい形{けい}容{よう}詞{し} + のに\nな形{けい}容{よう}詞{し} + な + のに\n名{めい}詞{し} + な + のに',
         translation: '明明...卻...; 雖然...但是...',
         level: 'N4',
         explanation: [
@@ -7069,7 +7069,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_temo_ii': {
         id: 'n4_temo_ii',
         pattern: 'てもいい',
-        connection: '動{どう}詞{し}て形 + もいい',
+        connection: '動{どう}詞{し}て形{けい} + もいい',
         translation: '可以...; ...也行',
         level: 'N4',
         explanation: [
@@ -7149,7 +7149,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tewa_ikenai': {
         id: 'n4_tewa_ikenai',
         pattern: 'てはいけない',
-        connection: '動{どう}詞{し}て形 + はいけない',
+        connection: '動{どう}詞{し}て形{けい} + はいけない',
         translation: '不可以...; 不行...',
         level: 'N4',
         explanation: [
@@ -7230,7 +7230,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_sore_ni': {
         id: 'n4_sore_ni',
         pattern: 'それに',
-        connection: '文 + それに + 文',
+        connection: '文{ぶん} + それに + 文{ぶん}',
         translation: '而且; 再說',
         level: 'N4',
         explanation: [
@@ -7310,7 +7310,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_soshite': {
         id: 'n4_soshite',
         pattern: 'そして',
-        connection: '文 + そして + 文',
+        connection: '文{ぶん} + そして + 文{ぶん}',
         translation: '然後; 於是',
         level: 'N4',
         explanation: [
@@ -7390,7 +7390,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_sorede': {
         id: 'n4_sorede',
         pattern: 'それで',
-        connection: '文 + それで + 文',
+        connection: '文{ぶん} + それで + 文{ぶん}',
         translation: '所以; 因此',
         level: 'N4',
         explanation: [
@@ -7469,8 +7469,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_demo_conj': {
         id: 'n4_demo_conj',
-        pattern: 'でも（接續）',
-        connection: '文 + でも + 文',
+        pattern: 'でも（接續{せつぞく}）',
+        connection: '文{ぶん} + でも + 文{ぶん}',
         translation: '但是; 可是',
         level: 'N4',
         explanation: [
@@ -7550,7 +7550,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_shikashi': {
         id: 'n4_shikashi',
         pattern: 'しかし',
-        connection: '文 + しかし + 文',
+        connection: '文{ぶん} + しかし + 文{ぶん}',
         translation: '但是; 然而',
         level: 'N4',
         explanation: [
@@ -7630,7 +7630,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tokoro_da': {
         id: 'n4_tokoro_da',
         pattern: 'ところだ',
-        connection: '動{どう}詞{し}辞書形 + ところだ\n動{どう}詞{し}ている + ところだ\n動{どう}詞{し}た形 + ところだ',
+        connection: '動{どう}詞{し}辞書{じしょ}形{けい} + ところだ\n動{どう}詞{し}ている + ところだ\n動{どう}詞{し}た形{けい} + ところだ',
         translation: '正要...; 正在...; 剛剛...',
         level: 'N4',
         explanation: [
@@ -7740,7 +7740,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_uchi_ni': {
         id: 'n4_uchi_ni',
         pattern: 'うちに',
-        connection: '動{どう}詞{し}ている + うちに\nない形 + うちに\nい形{けい}容{よう}詞{し} + うちに\nな形{けい}容{よう}詞{し} + な + うちに\n名{めい}詞{し} + の + うちに',
+        connection: '動{どう}詞{し}ている + うちに\nない形{けい} + うちに\nい形{けい}容{よう}詞{し} + うちに\nな形{けい}容{よう}詞{し} + な + うちに\n名{めい}詞{し} + の + うちに',
         translation: '趁著...; 在...之內',
         level: 'N4',
         explanation: [
@@ -7834,8 +7834,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_toki': {
         id: 'n4_toki',
-        pattern: '時（とき）',
-        connection: '動{どう}詞{し}辞書形/た形 + 時\nい形{けい}容{よう}詞{し} + 時\nな形{けい}容{よう}詞{し} + な + 時\n名{めい}詞{し} + の + 時',
+        pattern: '時{とき}',
+        connection: '動{どう}詞{し}辞書{じしょ}形{けい}/た形{けい} + 時{とき}\nい形{けい}容{よう}詞{し} + 時{とき}\nな形{けい}容{よう}詞{し} + な + 時{とき}\n名{めい}詞{し} + の + 時{とき}',
         translation: '...的時候',
         level: 'N4',
         explanation: [
@@ -7928,8 +7928,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_mae_ni': {
         id: 'n4_mae_ni',
-        pattern: '前に（まえに）',
-        connection: '動{どう}詞{し}辞書形 + 前に\n名{めい}詞{し} + の + 前に',
+        pattern: '前{まえ}に',
+        connection: '動{どう}詞{し}辞書{じしょ}形{けい} + 前{まえ}に\n名{めい}詞{し} + の + 前{まえ}に',
         translation: '在...之前',
         level: 'N4',
         explanation: [
@@ -8009,7 +8009,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tari_tari': {
         id: 'n4_tari_tari',
         pattern: 'たり〜たり',
-        connection: '動{どう}詞{し}た形 + り...動{どう}詞{し}た形 + り + する',
+        connection: '動{どう}詞{し}た形{けい} + り...動{どう}詞{し}た形{けい} + り + する',
         translation: '又...又...; 或...或...',
         level: 'N4',
         explanation: [
@@ -8088,8 +8088,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_to_conditional': {
         id: 'n4_to_conditional',
-        pattern: 'と（條件）',
-        connection: '動{どう}詞{し}辞書形/ない形 + と',
+        pattern: 'と（條件{じょうけん}）',
+        connection: '動{どう}詞{し}辞書{じしょ}形{けい}/ない形{けい} + と',
         translation: '一...就...; 如果...就...',
         level: 'N4',
         explanation: [
@@ -8169,7 +8169,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_node': {
         id: 'n4_node',
         pattern: 'ので',
-        connection: '動{どう}詞{し}普通形 + ので\nい形{けい}容{よう}詞{し} + ので\nな形{けい}容{よう}詞{し} + な + ので\n名{めい}詞{し} + な + ので',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + ので\nい形{けい}容{よう}詞{し} + ので\nな形{けい}容{よう}詞{し} + な + ので\n名{めい}詞{し} + な + ので',
         translation: '因為...所以...',
         level: 'N4',
         explanation: [
@@ -8263,7 +8263,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_kara_reason': {
         id: 'n4_kara_reason',
         pattern: 'から（原{げん}因{いん}）',
-        connection: '動{どう}詞{し}普通形 + から\nい形{けい}容{よう}詞{し} + から\nな形{けい}容{よう}詞{し} + だ + から\n名{めい}詞{し} + だ + から',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + から\nい形{けい}容{よう}詞{し} + から\nな形{けい}容{よう}詞{し} + だ + から\n名{めい}詞{し} + だ + から',
         translation: '因為...',
         level: 'N4',
         explanation: [
@@ -8347,7 +8347,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tame_ni': {
         id: 'n4_tame_ni',
         pattern: 'ために',
-        connection: '動{どう}詞{し}辞書形 + ために\n名{めい}詞{し} + の + ために',
+        connection: '動{どう}詞{し}辞書{じしょ}形{けい} + ために\n名{めい}詞{し} + の + ために',
         translation: '為了...',
         level: 'N4',
         explanation: [
@@ -8442,7 +8442,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_ni_goal': {
         id: 'n4_you_ni_goal',
         pattern: 'ように（目{もく}的{てき}）',
-        connection: '動{どう}詞{し}辞書形/可能形/ない形 + ように',
+        connection: '動{どう}詞{し}辞書{じしょ}形{けい}/可能{かのう}形{けい}/ない形{けい} + ように',
         translation: '為了能夠...; 以便...',
         level: 'N4',
         explanation: [
@@ -8551,7 +8551,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_mitai': {
         id: 'n4_mitai',
         pattern: 'みたい',
-        connection: '動{どう}詞{し}普通形 + みたい\nい形{けい}容{よう}詞{し} + みたい\nな形{けい}容{よう}詞{し} + みたい\n名{めい}詞{し} + みたい',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + みたい\nい形{けい}容{よう}詞{し} + みたい\nな形{けい}容{よう}詞{し} + みたい\n名{めい}詞{し} + みたい',
         translation: '好像...; 像...',
         level: 'N4',
         explanation: [
@@ -8646,7 +8646,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_keredo': {
         id: 'n4_keredo',
         pattern: 'けれど/けど',
-        connection: '動{どう}詞{し}普通形 + けれど/けど\nい形{けい}容{よう}詞{し} + けれど/けど\nな形{けい}容{よう}詞{し} + だ + けれど/けど\n名{めい}詞{し} + だ + けれど/けど',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + けれど/けど\nい形{けい}容{よう}詞{し} + けれど/けど\nな形{けい}容{よう}詞{し} + だ + けれど/けど\n名{めい}詞{し} + だ + けれど/けど',
         translation: '雖然...但是...',
         level: 'N4',
         explanation: [
@@ -8740,8 +8740,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_te_form_reason': {
         id: 'n4_te_form_reason',
-        pattern: 'て形（原{げん}因{いん}）',
-        connection: '動{どう}詞{し}て形 / い形{けい}容{よう}詞{し}くて / な形{けい}容{よう}詞{し}で / 名{めい}詞{し}で',
+        pattern: 'て形{けい}（原{げん}因{いん}）',
+        connection: '動{どう}詞{し}て形{けい} / い形{けい}容{よう}詞{し}くて / な形{けい}容{よう}詞{し}で / 名{めい}詞{し}で',
         translation: '因為...(所以)...',
         level: 'N4',
         explanation: [
@@ -8821,7 +8821,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_dake': {
         id: 'n4_dake',
         pattern: 'だけ',
-        connection: '名{めい}詞{し} + だけ\n動{どう}詞{し}普通形 + だけ\n數量詞 + だけ',
+        connection: '名{めい}詞{し} + だけ\n動{どう}詞{し}普通{ふつう}形{けい} + だけ\n數量{すうりょう}詞{し} + だけ',
         translation: '只; 僅僅',
         level: 'N4',
         explanation: [
@@ -8915,7 +8915,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_shika': {
         id: 'n4_shika',
         pattern: 'しか〜ない',
-        connection: '名{めい}詞{し} + しか + 否定\n數量詞 + しか + 否定',
+        connection: '名{めい}詞{し} + しか + 否定{ひてい}\n數量{すうりょう}詞{し} + しか + 否定{ひてい}',
         translation: '只有...; 僅...',
         level: 'N4',
         explanation: [
@@ -8994,8 +8994,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_demo_particle': {
         id: 'n4_demo_particle',
-        pattern: 'でも（助詞）',
-        connection: '疑問詞 + でも\n名{めい}詞{し} + でも',
+        pattern: 'でも（助詞{じょし}）',
+        connection: '疑問{ぎもん}詞{し} + でも\n名{めい}詞{し} + でも',
         translation: '無論...; ...什麼的',
         level: 'N4',
         explanation: [
@@ -9089,8 +9089,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_ka_particle': {
         id: 'n4_ka_particle',
-        pattern: 'か（不定）',
-        connection: '疑問詞 + か',
+        pattern: 'か（不定{ふてい}）',
+        connection: '疑問{ぎもん}詞{し} + か',
         translation: '某...; ...什麼',
         level: 'N4',
         explanation: [
@@ -9171,8 +9171,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_mo_particle': {
         id: 'n4_mo_particle',
-        pattern: 'も（極端）',
-        connection: '數量詞 + も\n疑問詞 + も + 否定',
+        pattern: 'も（極端{きょくたん}）',
+        connection: '數量{すうりょう}詞{し} + も\n疑問{ぎもん}詞{し} + も + 否定{ひてい}',
         translation: '甚至...; ...也（強調）',
         level: 'N4',
         explanation: [
@@ -9270,7 +9270,7 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_made_particle': {
         id: 'n4_made_particle',
-        pattern: 'まで（極端）',
+        pattern: 'まで（極端{きょくたん}）',
         connection: '名{めい}詞{し} + まで',
         translation: '甚至連...都...',
         level: 'N4',
@@ -9350,8 +9350,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_to_omou': {
         id: 'n4_to_omou',
-        pattern: 'と思う',
-        connection: '動{どう}詞{し}普通形 + と思う\n動{どう}詞{し}意向形 + と思う\nい形{けい}容{よう}詞{し} + と思う\nな形{けい}容{よう}詞{し} + だ + と思う\n名{めい}詞{し} + だ + と思う',
+        pattern: 'と思{おも}う',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + と思{おも}う\n動{どう}詞{し}意向{いこう}形{けい} + と思{おも}う\nい形{けい}容{よう}詞{し} + と思{おも}う\nな形{けい}容{よう}詞{し} + だ + と思{おも}う\n名{めい}詞{し} + だ + と思{おも}う',
         translation: '我認為...; 我想...',
         level: 'N4',
         explanation: [
@@ -9446,7 +9446,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_to_ka': {
         id: 'n4_to_ka',
         pattern: 'とか',
-        connection: '名{めい}詞{し} + とか + 名{めい}詞{し} + とか\n動{どう}詞{し}普通形 + とか',
+        connection: '名{めい}詞{し} + とか + 名{めい}詞{し} + とか\n動{どう}詞{し}普通{ふつう}形{けい} + とか',
         translation: '...之類的; ...什麼的',
         level: 'N4',
         explanation: [
@@ -9525,8 +9525,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_sou_da_hearsay': {
         id: 'n4_sou_da_hearsay',
-        pattern: 'そうだ（伝聞）',
-        connection: '動{どう}詞{し}普通形 + そうだ\nい形{けい}容{よう}詞{し} + そうだ\nな形{けい}容{よう}詞{し} + だ + そうだ\n名{めい}詞{し} + だ + そうだ',
+        pattern: 'そうだ（伝聞{でんぶん}）',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + そうだ\nい形{けい}容{よう}詞{し} + そうだ\nな形{けい}容{よう}詞{し} + だ + そうだ\n名{めい}詞{し} + だ + そうだ',
         translation: '聽說...; 據說...',
         level: 'N4',
         explanation: [
@@ -9620,7 +9620,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hazu': {
         id: 'n4_hazu',
         pattern: 'はず',
-        connection: '動{どう}詞{し}普通形 + はず\nい形{けい}容{よう}詞{し} + はず\nな形{けい}容{よう}詞{し} + な + はず\n名{めい}詞{し} + の + はず',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + はず\nい形{けい}容{よう}詞{し} + はず\nな形{けい}容{よう}詞{し} + な + はず\n名{めい}詞{し} + の + はず',
         translation: '應該...; 理應...',
         level: 'N4',
         explanation: [
@@ -9715,7 +9715,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_wake': {
         id: 'n4_wake',
         pattern: 'わけ',
-        connection: '動{どう}詞{し}普通形 + わけ\nい形{けい}容{よう}詞{し} + わけ\nな形{けい}容{よう}詞{し} + な + わけ\n名{めい}詞{し} + の/という + わけ',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + わけ\nい形{けい}容{よう}詞{し} + わけ\nな形{けい}容{よう}詞{し} + な + わけ\n名{めい}詞{し} + の/という + わけ',
         translation: '原{げん}因{いん}是...; 意思是...; 道理',
         level: 'N4',
         explanation: [
@@ -9808,7 +9808,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_koto_ga_dekiru': {
         id: 'n4_koto_ga_dekiru',
         pattern: 'ことができる',
-        connection: '動{どう}詞{し}辭書形 + ことができる',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} + ことができる',
         translation: '能夠...; 會...',
         level: 'N4',
         explanation: [
@@ -9888,7 +9888,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hodo': {
         id: 'n4_hodo',
         pattern: 'ほど',
-        connection: '名{めい}詞{し} + ほど\n動{どう}詞{し}辭書形 + ほど\n動{どう}詞{し}ない形 + ほど',
+        connection: '名{めい}詞{し} + ほど\n動{どう}詞{し}辭書{じしょ}形{けい} + ほど\n動{どう}詞{し}ない形{けい} + ほど',
         translation: '到...程度; 像...那樣',
         level: 'N4',
         explanation: [
@@ -9968,7 +9968,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_toori': {
         id: 'n4_toori',
         pattern: 'とおり',
-        connection: '名{めい}詞{し} + の + とおり（に）\n動{どう}詞{し}た形 + とおり（に）\n動{どう}詞{し}辭書形 + とおり（に）',
+        connection: '名{めい}詞{し} + の + とおり（に）\n動{どう}詞{し}た形{けい} + とおり（に）\n動{どう}詞{し}辭書{じしょ}形{けい} + とおり（に）',
         translation: '按照...; 像...那樣',
         level: 'N4',
         explanation: [
@@ -10128,7 +10128,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tsumori': {
         id: 'n4_tsumori',
         pattern: 'つもり',
-        connection: '動{どう}詞{し}辭書形 + つもりだ\n動{どう}詞{し}ない形 + つもりだ',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} + つもりだ\n動{どう}詞{し}ない形{けい} + つもりだ',
         translation: '打算...; 計劃...',
         level: 'N4',
         explanation: [
@@ -10207,8 +10207,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_yotei': {
         id: 'n4_yotei',
-        pattern: '予定',
-        connection: '動{どう}詞{し}辭書形 + 予定だ\n名{めい}詞{し} + の + 予定だ',
+        pattern: '予定{よてい}',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} + 予定{よてい}だ\n名{めい}詞{し} + の + 予定{よてい}だ',
         translation: '預定...; 計劃...',
         level: 'N4',
         explanation: [
@@ -10288,7 +10288,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_kawari_ni': {
         id: 'n4_kawari_ni',
         pattern: 'かわりに',
-        connection: '名{めい}詞{し} + の + かわりに\n動{どう}詞{し}辭書形 + かわりに\n動{どう}詞{し}た形 + かわりに',
+        connection: '名{めい}詞{し} + の + かわりに\n動{どう}詞{し}辭書{じしょ}形{けい} + かわりに\n動{どう}詞{し}た形{けい} + かわりに',
         translation: '代替...; 取而代之',
         level: 'N4',
         explanation: [
@@ -10368,7 +10368,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_dokoro_ka': {
         id: 'n4_dokoro_ka',
         pattern: 'どころか',
-        connection: '名{めい}詞{し} + どころか\n動{どう}詞{し}辭書形 + どころか',
+        connection: '名{めい}詞{し} + どころか\n動{どう}詞{し}辭書{じしょ}形{けい} + どころか',
         translation: '哪裡是...; 別說...',
         level: 'N4',
         explanation: [
@@ -10448,7 +10448,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_sae': {
         id: 'n4_sae',
         pattern: 'さえ',
-        connection: '名{めい}詞{し}（+助詞）+ さえ',
+        connection: '名{めい}詞{し}（+助詞{じょし}）+ さえ',
         translation: '連...都...; 甚至...',
         level: 'N4',
         explanation: [
@@ -10608,7 +10608,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_kurai_gurai': {
         id: 'n4_kurai_gurai',
         pattern: 'くらい・ぐらい',
-        connection: '名{めい}詞{し} + くらい/ぐらい\n動{どう}詞{し}辭書形 + くらい/ぐらい',
+        connection: '名{めい}詞{し} + くらい/ぐらい\n動{どう}詞{し}辭書{じしょ}形{けい} + くらい/ぐらい',
         translation: '大約...; ...左右; ...的程度',
         level: 'N4',
         explanation: [
@@ -10688,7 +10688,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hoka_ni': {
         id: 'n4_hoka_ni',
         pattern: 'ほかに',
-        connection: '名{めい}詞{し} + の + ほかに\n動{どう}詞{し}辭書形 + ほかに',
+        connection: '名{めい}詞{し} + の + ほかに\n動{どう}詞{し}辭書{じしょ}形{けい} + ほかに',
         translation: '除了...之外（還有）',
         level: 'N4',
         explanation: [
@@ -10767,8 +10767,8 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_igai': {
         id: 'n4_igai',
-        pattern: '以外',
-        connection: '名{めい}詞{し} + 以外（に/は）',
+        pattern: '以外{いがい}',
+        connection: '名{めい}詞{し} + 以外{いがい}（に/は）',
         translation: '除了...之外',
         level: 'N4',
         explanation: [
@@ -10848,7 +10848,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tashika': {
         id: 'n4_tashika',
         pattern: 'たしか',
-        connection: 'たしか + 句子',
+        connection: 'たしか + 句{く}子{し}',
         translation: '如果沒記錯的話; 好像是...',
         level: 'N4',
         explanation: [
@@ -10928,7 +10928,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_kitto': {
         id: 'n4_kitto',
         pattern: 'きっと',
-        connection: 'きっと + 句子',
+        connection: 'きっと + 句{く}子{し}',
         translation: '一定; 必定',
         level: 'N4',
         explanation: [
@@ -11008,7 +11008,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_nakanaka': {
         id: 'n4_nakanaka',
         pattern: 'なかなか',
-        connection: 'なかなか + 肯定形（稱讚）\nなかなか + 否定形（困難）',
+        connection: 'なかなか + 肯定{こうてい}形{けい}（稱讚）\nなかなか + 否定{ひてい}形{けい}（困難）',
         translation: '相當; 很; 不容易...',
         level: 'N4',
         explanation: [
@@ -11099,7 +11099,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_masaka': {
         id: 'n4_masaka',
         pattern: 'まさか',
-        connection: 'まさか + 句子（常與否定或疑問連用）',
+        connection: 'まさか + 句{く}子{し}（常與否定{ひてい}或疑問連用）',
         translation: '難道; 不會吧',
         level: 'N4',
         explanation: [
@@ -11259,7 +11259,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_moshi': {
         id: 'n4_moshi',
         pattern: 'もし',
-        connection: 'もし + 條件句（たら/ば/なら）',
+        connection: 'もし + 條件{じょうけん}句{く}（たら/ば/なら）',
         translation: '如果; 假如',
         level: 'N4',
         explanation: [
@@ -11339,7 +11339,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_yahari_yappari': {
         id: 'n4_yahari_yappari',
         pattern: 'やはり・やっぱり',
-        connection: 'やはり/やっぱり + 句子',
+        connection: 'やはり/やっぱり + 句{く}子{し}',
         translation: '果然; 還是; 到底還是',
         level: 'N4',
         explanation: [
@@ -11430,7 +11430,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_mada': {
         id: 'n4_mada',
         pattern: 'まだ',
-        connection: 'まだ + 肯定形（還在持續）\nまだ + 否定形（還沒）',
+        connection: 'まだ + 肯定{こうてい}形{けい}（還在持續）\nまだ + 否定{ひてい}形{けい}（還沒）',
         translation: '還; 仍然; 還沒',
         level: 'N4',
         explanation: [
@@ -11521,7 +11521,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_mou': {
         id: 'n4_mou',
         pattern: 'もう',
-        connection: 'もう + 肯定形（已經）\nもう + 否定形（再也不）',
+        connection: 'もう + 肯定{こうてい}形{けい}（已經）\nもう + 否定{ひてい}形{けい}（再也不）',
         translation: '已經; 再也不',
         level: 'N4',
         explanation: [
@@ -11878,7 +11878,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_amari_amarini': {
         id: 'n4_amari_amarini',
         pattern: 'あまり・あまりに',
-        connection: 'あまり + 否定形（不太...）\nあまりに + 形{けい}容{よう}詞{し}/動{どう}詞{し}（太...）',
+        connection: 'あまり + 否定{ひてい}形{けい}（不太...）\nあまりに + 形{けい}容{よう}詞{し}/動{どう}詞{し}（太...）',
         translation: '不太...; 太...',
         level: 'N4',
         explanation: [
@@ -12555,7 +12555,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_zenzen': {
         id: 'n4_zenzen',
         pattern: 'ぜんぜん',
-        connection: 'ぜんぜん + 否定形',
+        connection: 'ぜんぜん + 否定{ひてい}形{けい}',
         translation: '完全不...; 一點也不...',
         level: 'N4',
         explanation: [

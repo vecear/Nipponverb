@@ -15,8 +15,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
     rel="stylesheet">
+  <style>
+    /* 針對日文內容使用日文字型 */
+    :lang(ja), [lang="ja"], .jp-text {
+      font-family: "Noto Sans JP", "Zen Kurenaido", sans-serif !important;
+    }
+    /* 針對中文內容使用中文字型 */
+    :lang(zh), :lang(zh-TW), :lang(zh-Hant), [lang="zh"], [lang="zh-TW"], .zh-text {
+      font-family: "Noto Sans TC", sans-serif !important;
+    }
+  </style>
 </head>
 
 <body>

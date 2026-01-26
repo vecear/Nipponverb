@@ -53,7 +53,8 @@
     background-image:
       url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
     color: var(--color-sumi);
-    font-family: "Zen Kurenaido", "Noto Sans JP", sans-serif;
+    /* 日文優先，中文 fallback */
+    font-family: "Noto Sans JP", "Noto Sans TC", "Zen Kurenaido", sans-serif;
     min-height: 100vh;
     padding-bottom: 5rem;
     overflow-x: hidden;
@@ -178,7 +179,7 @@
   input[type="number"],
   textarea {
     @apply w-full bg-transparent px-3 py-2 text-lg transition-all outline-none rounded-none;
-    font-family: "Zen Kurenaido", sans-serif;
+    font-family: "Noto Sans JP", "Noto Sans TC", "Zen Kurenaido", sans-serif;
     color: var(--color-sumi);
     border: none;
     border-bottom: 2px solid var(--color-wave-mid);
@@ -200,7 +201,7 @@
   /* Select 下拉選單 */
   select {
     @apply w-full px-3 py-2 text-lg transition-all outline-none rounded-none cursor-pointer;
-    font-family: "Zen Kurenaido", sans-serif;
+    font-family: "Noto Sans JP", "Noto Sans TC", "Zen Kurenaido", sans-serif;
     color: var(--color-sumi);
     background-color: var(--color-washi-light);
     border: 2px solid var(--color-wave-mid);
@@ -438,11 +439,21 @@
 
   /* === 字體工具 === */
   .font-zen {
-    font-family: "Zen Kurenaido", "Noto Sans JP", sans-serif;
+    font-family: "Zen Kurenaido", "Noto Sans JP", "Noto Sans TC", sans-serif;
   }
 
   .font-mincho {
-    font-family: "Shippori Mincho", "Noto Serif JP", serif;
+    font-family: "Zen Old Mincho", "Noto Serif JP", serif;
+  }
+
+  /* 日文專用字型 */
+  .font-jp {
+    font-family: "Noto Sans JP", sans-serif;
+  }
+
+  /* 中文專用字型 */
+  .font-tc {
+    font-family: "Noto Sans TC", sans-serif;
   }
 
   /* === 間距工具 (Ma - 間) === */

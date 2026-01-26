@@ -3,8 +3,8 @@ import { GrammarPoint } from '../../types/grammar';
 export const n3Details: Record<string, GrammarPoint> = {
     'n3_ageru': {
         id: 'n3_ageru',
-        pattern: '上げる（あげる）',
-        connection: '動詞ます形（去掉ます） + 上げる',
+        pattern: '上{あ}げる',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}掉{とう}ます） + 上{あ}げる',
         translation: '做完...; 完成...',
         level: 'N3',
         explanation: [
@@ -78,7 +78,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_amari': {
         id: 'n3_amari',
         pattern: 'あまり',
-        connection: '動詞辭書形 / 普通形 + あまり\n名詞 + の + あまり\nな形容詞 + な + あまり',
+        connection: '動詞{どうし}辭書{じしょ}形{けい} / 普通{ふつう}形{けい} + あまり\n名詞{めいし} + の + あまり\nな形容詞{けいようし} + な + あまり',
         translation: '太...以至於...; 因過度...',
         level: 'N3',
         explanation: [
@@ -153,7 +153,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_amari_ni_mo': {
         id: 'n3_amari_ni_mo',
         pattern: 'あまりにも',
-        connection: 'あまりに(も) + 形容詞 / 動詞',
+        connection: 'あまりに(も) + 形容詞{けいようし} / 動詞{どうし}',
         translation: '太...; 過於...',
         level: 'N3',
         explanation: [
@@ -212,8 +212,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_au': {
         id: 'n3_au',
-        pattern: '合う（あう）',
-        connection: '動詞ます形（去掉ます） + 合う',
+        pattern: '合{あ}う',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}掉{とう}ます） + 合{あ}う',
         translation: '互相...',
         level: 'N3',
         explanation: [
@@ -290,7 +290,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ba_ii': {
         id: 'n3_ba_ii',
         pattern: 'ばいい',
-        connection: '動詞ば形 + いい\nい形容詞（去い）+ ければいい\nな形容詞・名詞 + であればいい / ならいい',
+        connection: '動詞{どうし}ば形{けい} + いい\nい形容詞{けいようし}（去{きょ}い）+ ければいい\nな形容詞{けいようし}・名詞{めいし} + であればいい / ならいい',
         translation: '只要...就好了; 應該...; ...就好',
         level: 'N3',
         explanation: [
@@ -374,7 +374,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ba_noni': {
         id: 'n3_ba_noni',
         pattern: 'ばのに',
-        connection: '動詞ば形 + のに / い形容詞（去い）+ ければのに',
+        connection: '動詞{どうし}ば形{けい} + のに / い形容詞{けいようし}（去{きょ}い）+ ければのに',
         translation: '要是...的話就好了; 明明...卻...',
         level: 'N3',
         explanation: [
@@ -440,7 +440,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ba_yokatta': {
         id: 'n3_ba_yokatta',
         pattern: 'ばよかった',
-        connection: '動詞ば形 + よかった\nい形容詞（去い）+ ければよかった\nな形容詞・名詞 + であればよかった / ならよかった',
+        connection: '動詞{どうし}ば形{けい} + よかった\nい形容詞{けいようし}（去{きょ}い）+ ければよかった\nな形容詞{けいようし}・名詞{めいし} + であればよかった / ならよかった',
         translation: '要是...就好了; 早知道就...',
         level: 'N3',
         explanation: [
@@ -514,7 +514,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_bakari_de': {
         id: 'n3_bakari_de',
         pattern: 'ばかりで',
-        connection: '動詞て形 + ばかりで\n名詞 + ばかりで',
+        connection: '動詞{どうし}て形{けい} + ばかりで\n名詞{めいし} + ばかりで',
         translation: '光是...; 淨是... (負面)',
         level: 'N3',
         explanation: [
@@ -574,7 +574,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_bakari_denaku': {
         id: 'n3_bakari_denaku',
         pattern: 'ばかりでなく',
-        connection: '名詞 + ばかりでなく\n動詞普通形 + ばかりでなく\nい形容詞 + ばかりでなく\nな形容詞 + な/である + ばかりでなく',
+        connection: '名詞{めいし} + ばかりでなく\n動詞{どうし}普通{ふつう}形{けい} + ばかりでなく\nい形容詞{けいようし} + ばかりでなく\nな形容詞{けいようし} + な/である + ばかりでなく',
         translation: '不僅...而且...',
         level: 'N3',
         explanation: [
@@ -648,7 +648,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ba_hodo': {
         id: 'n3_ba_hodo',
         pattern: 'ば～ほど',
-        connection: '動詞ば形 + 動詞辭書形 + ほど\nい形容詞（-ければ） + い形容詞 + ほど\nな形容詞 + なら/であれば + な形容詞 + なほど',
+        connection: '動詞{どうし}ば形{けい} + 動詞{どうし}辭書{じしょ}形{けい} + ほど\nい形容詞{けいようし}（-ければ） + い形容詞{けいようし} + ほど\nな形容詞{けいようし} + なら/であれば + な形容詞{けいようし} + なほど',
         translation: '越...越...',
         level: 'N3',
         explanation: [
@@ -708,7 +708,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_beki_da': {
         id: 'n3_beki_da',
         pattern: 'べきだ',
-        connection: '動詞辭書形 + べきだ\n※「する」可變為「すべき」或「するべき」',
+        connection: '動詞{どうし}辭書{じしょ}形{けい} + べきだ\n※「する」可{か}變{へん}為{い}「すべき」或{あるい}「するべき」',
         translation: '應該...; 必須...',
         level: 'N3',
         explanation: [
@@ -782,7 +782,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_beki_dewa_nai': {
         id: 'n3_beki_dewa_nai',
         pattern: 'べきではない',
-        connection: '動詞辭書形 + べきではない / べきじゃない',
+        connection: '動詞{どうし}辭書{じしょ}形{けい} + べきではない / べきじゃない',
         translation: '不應該...',
         level: 'N3',
         explanation: [
@@ -841,8 +841,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_betsu_ni_nai': {
         id: 'n3_betsu_ni_nai',
-        pattern: '別に～ない',
-        connection: '別に + 動詞ない形\n別に + い形容詞くない\n別に + な形容詞ではない',
+        pattern: '別{べつ}に～ない',
+        connection: '別{べつ}に + 動詞{どうし}ない形{けい}\n別{べつ}に + い形容詞{けいようし}くない\n別{べつ}に + な形容詞{けいようし}ではない',
         translation: '並非特別...; 並不...',
         level: 'N3',
         explanation: [
@@ -902,8 +902,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_betsu_ni_nai_1': {
         id: 'n3_betsu_ni_nai_1',
-        pattern: '別に～ない（べつに～ない）',
-        connection: '別に + 動詞ない形 / い形容詞くない / な形容詞ではない',
+        pattern: '別{べつ}に～ない',
+        connection: '別{べつ}に + 動詞{どうし}ない形{けい} / い形容詞{けいようし}くない / な形容詞{けいようし}ではない',
         translation: '並不特別...; 不怎麼...',
         level: 'N3',
         explanation: [
@@ -969,7 +969,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_buri_ni': {
         id: 'n3_buri_ni',
         pattern: 'ぶりに',
-        connection: '期間を表す言葉 + ぶりに',
+        connection: '期間{きかん}を表{あらわ}す言葉{ことば} + ぶりに',
         translation: '隔了...; 時隔...',
         level: 'N3',
         explanation: [
@@ -1028,8 +1028,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_chuu': {
         id: 'n3_chuu',
-        pattern: '中（ちゅう）',
-        connection: '名詞 + 中',
+        pattern: '中{ちゅう/じゅう}（ちゅう）',
+        connection: '名詞{めいし} + 中{ちゅう/じゅう}',
         translation: '正在...中; ...期間',
         level: 'N3',
         explanation: [
@@ -1052,7 +1052,7 @@ export const n3Details: Record<string, GrammarPoint> = {
                 title: '期間內',
                 description: '表示在某個期間之內。',
                 examples: [
-                    { japanese: '今週中{こんしゅうちゅう}に返事{へんじ}をください。', chinese: '請在這週內回覆我。' },
+                    { japanese: '今週{こんしゅう}中{こんしゅうちゅう}に返事{へんじ}をください。', chinese: '請在這週內回覆我。' },
                     { japanese: '午前中{ごぜんちゅう}に届{とど}けます。', chinese: '上午之內會送達。' }
                 ]
             }
@@ -1074,35 +1074,35 @@ export const n3Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n3_quiz_chuu_1',
-                sentence: '授業（　）は静{しず}かにしてください。',
+                sentence: '授業{じゅぎょう}（　）は静{しず}かにしてください。',
                 options: ['中', 'の間', '後', '前'],
                 correctIndex: 0,
                 explanation: '上課中請安靜。「授業中」是固定用法。'
             },
             {
                 id: 'n3_quiz_chuu_2',
-                sentence: '運転（　）に電話{でんわ}をしてはいけません。',
+                sentence: '運転{うんてん}（　）に電話{でんわ}をしてはいけません。',
                 options: ['中', '後', '前', 'の間'],
                 correctIndex: 0,
                 explanation: '開車中不可以打電話。'
             },
             {
                 id: 'n3_quiz_chuu_3',
-                sentence: 'この仕事{しごと}は今月（　）に終{お}わらせなければならない。',
+                sentence: 'この仕事{しごと}は今月{こんげつ}（　）に終{お}わらせなければならない。',
                 options: ['中', '後', '前', '間'],
                 correctIndex: 0,
                 explanation: '這個工作必須在這個月內完成。'
             },
             {
                 id: 'n3_quiz_chuu_4',
-                sentence: '「すみません、部長{ぶちょう}はいらっしゃいますか。」\n「申{もう}し訳{わけ}ありません、部長{ぶちょう}は外出（　）です。」',
+                sentence: '「すみません、部長{ぶちょう}はいらっしゃいますか。」\n「申{もう}し訳{わけ}ありません、部長{ぶちょう}は外出{がいしゅつ}（　）です。」',
                 options: ['中', '後', '前', '間'],
                 correctIndex: 0,
                 explanation: '對話情境。部長外出中。'
             },
             {
                 id: 'n3_quiz_chuu_5',
-                sentence: '「このレポート、いつまでに出{だ}せばいいですか。」\n「今週（　）にお願{ねが}いします。」',
+                sentence: '「このレポート、いつまでに出{だ}せばいいですか。」\n「今週{こんしゅう}（　）にお願{ねが}いします。」',
                 options: ['中', '後', '前', '間'],
                 correctIndex: 0,
                 explanation: '對話情境。請在這週內提交。'
@@ -1112,7 +1112,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_dake': {
         id: 'n3_dake',
         pattern: 'だけ',
-        connection: '動詞辭書形 / 可能形 + だけ',
+        connection: '動詞{どうし}辭書{じしょ}形{けい} / 可能{かのう}形{けい} + だけ',
         translation: '盡量...; 足以...',
         level: 'N3',
         explanation: [
@@ -1187,7 +1187,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_dake_de_naku': {
         id: 'n3_dake_de_naku',
         pattern: 'だけでなく',
-        connection: '名詞/動詞普通形/い形容詞/な形容詞＋な + だけでなく',
+        connection: '名詞{めいし}/動詞{どうし}普通{ふつう}形{けい}/い形容詞{けいようし}/な形容詞{けいようし}＋な + だけでなく',
         translation: '不僅...; 不只是...',
         level: 'N3',
         explanation: [
@@ -1253,7 +1253,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_dakedo': {
         id: 'n3_dakedo',
         pattern: 'だけど',
-        connection: '動詞/い形容詞/な形容詞＋な/名詞＋な + んだけど',
+        connection: '動詞{どうし}/い形容詞{けいようし}/な形容詞{けいようし}＋な/名詞{めいし}＋な + んだけど',
         translation: '雖然...但是; ...可是',
         level: 'N3',
         explanation: [
@@ -1319,7 +1319,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_darake': {
         id: 'n3_darake',
         pattern: 'だらけ',
-        connection: '名詞 + だらけ',
+        connection: '名詞{めいし} + だらけ',
         translation: '滿是...; 全是... (負面)',
         level: 'N3',
         explanation: [
@@ -1393,7 +1393,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_donna_ni_temo': {
         id: 'n3_donna_ni_temo',
         pattern: 'どんなに～ても',
-        connection: 'どんなに + 動詞ても / い形容詞くても / な形容詞でも',
+        connection: 'どんなに + 動詞{どうし}ても / い形容詞{けいようし}くても / な形容詞{けいようし}でも',
         translation: '無論多麼...',
         level: 'N3',
         explanation: [
@@ -1453,7 +1453,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_doushitemo': {
         id: 'n3_doushitemo',
         pattern: 'どうしても',
-        connection: 'どうしても + 動詞 / 形容詞',
+        connection: 'どうしても + 動詞{どうし} / 形容詞{けいようし}',
         translation: '無論如何; 怎麼也...',
         level: 'N3',
         explanation: [
@@ -1522,7 +1522,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_futo': {
         id: 'n3_futo',
         pattern: 'ふと',
-        connection: 'ふと + 動詞',
+        connection: 'ふと + 動詞{どうし}',
         translation: '忽然; 不經意地',
         level: 'N3',
         explanation: [
@@ -1588,7 +1588,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_furi': {
         id: 'n3_furi',
         pattern: 'ふりをする',
-        connection: '動詞普通形 + ふりをする\nい形容詞 + ふりをする\nな形容詞 + な + ふりをする\n名詞 + の + ふりをする',
+        connection: '動詞{どうし}普通{ふつう}形{けい} + ふりをする\nい形容詞{けいようし} + ふりをする\nな形容詞{けいようし} + な + ふりをする\n名詞{めいし} + の + ふりをする',
         translation: '假裝...',
         level: 'N3',
         explanation: [
@@ -1648,7 +1648,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_gachi': {
         id: 'n3_gachi',
         pattern: 'がち',
-        connection: '動詞ます形（去掉ます） + がち\n名詞 + がち',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}掉{とう}ます） + がち\n名詞{めいし} + がち',
         translation: '容易...; 往往會...',
         level: 'N3',
         explanation: [
@@ -1725,7 +1725,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_gatai': {
         id: 'n3_gatai',
         pattern: 'がたい',
-        connection: '動詞ます形（去掉ます） + がたい',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}掉{とう}ます） + がたい',
         translation: '難以...; 很難...',
         level: 'N3',
         explanation: [
@@ -1798,8 +1798,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_gimi': {
         id: 'n3_gimi',
-        pattern: '気味（ぎみ）',
-        connection: '動詞ます形（去掉ます）/ 名詞 + 気味',
+        pattern: '気{き}味{ぎみ}{ぎみ}',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}掉{とう}ます）/ 名詞{めいし} + 気{き}味{ぎみ}',
         translation: '有點...; 稍微...; 有...的傾向',
         level: 'N3',
         explanation: [
@@ -1873,7 +1873,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_goto_ni': {
         id: 'n3_goto_ni',
         pattern: 'ごとに',
-        connection: '名詞 / 動詞辭書形 + ごとに',
+        connection: '名詞{めいし} / 動詞{どうし}辭書{じしょ}形{けい} + ごとに',
         translation: '每...; 每隔...',
         level: 'N3',
         explanation: [
@@ -1947,7 +1947,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_hodo': {
         id: 'n3_hodo',
         pattern: 'ほど',
-        connection: '動詞辭書形 / 名詞 / い形容詞 / な形容詞な + ほど',
+        connection: '動詞{どうし}辭書{じしょ}形{けい} / 名詞{めいし} / い形容詞{けいようし} / な形容詞{けいようし}な + ほど',
         translation: '...得...; 到了...的程度; 大約',
         level: 'N3',
         explanation: [
@@ -2021,7 +2021,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_hodo_nai': {
         id: 'n3_hodo_nai',
         pattern: 'ほど～ない',
-        connection: '名詞 + ほど + 形容詞/動詞否定形',
+        connection: '名詞{めいし} + ほど + 形容詞{けいようし}/動詞{どうし}否定{ひてい}形{けい}',
         translation: '沒有...那麼...',
         level: 'N3',
         explanation: [
@@ -2094,8 +2094,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ichido_ni': {
         id: 'n3_ichido_ni',
-        pattern: '一度に（いちどに）',
-        connection: '一度に + 動詞',
+        pattern: '一度{いちど}{いちど}{いちど}に',
+        connection: '一度{いちど}{いちど}に + 動詞{どうし}',
         translation: '同時; 一次',
         level: 'N3',
         explanation: [
@@ -2169,7 +2169,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ikura_temo': {
         id: 'n3_ikura_temo',
         pattern: 'いくら～ても',
-        connection: 'いくら + 動詞て形 / い形容詞くても / な形容詞でも + も',
+        connection: 'いくら + 動詞{どうし}て形{けい} / い形容詞{けいようし}くても / な形容詞{けいようし}でも + も',
         translation: '無論怎麼...也...',
         level: 'N3',
         explanation: [
@@ -2242,8 +2242,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ippou_da': {
         id: 'n3_ippou_da',
-        pattern: '一方だ（いっぽうだ）',
-        connection: '動詞辭書形 + 一方だ',
+        pattern: '一方{いっぽう}{いっぽう}{いっぽう}だ',
+        connection: '動詞{どうし}辭書{じしょ}形{けい} + 一方{いっぽう}{いっぽう}{いっぽう}だ',
         translation: '越來越...; 不斷...',
         level: 'N3',
         explanation: [
@@ -2316,8 +2316,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ippou_da_1': {
         id: 'n3_ippou_da_1',
-        pattern: '一方だ（いっぽうだ）',
-        connection: '動詞辭書形 + 一方だ',
+        pattern: '一方{いっぽう}{いっぽう}{いっぽう}だ',
+        connection: '動詞{どうし}辭書{じしょ}形{けい} + 一方{いっぽう}{いっぽう}{いっぽう}だ',
         translation: '越來越...; 一直...',
         level: 'N3',
         explanation: [
@@ -2390,8 +2390,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ittai': {
         id: 'n3_ittai',
-        pattern: '一体（いったい）',
-        connection: '一体 + 疑問詞',
+        pattern: '一体{いったい}{いったい}{いったい}',
+        connection: '一体{いったい}{いったい} + 疑問{ぎもん}詞{し}',
         translation: '到底; 究竟',
         level: 'N3',
         explanation: [
@@ -2465,7 +2465,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_janai': {
         id: 'n3_janai',
         pattern: 'じゃない',
-        connection: '動詞普通形 / い形容詞 / な形容詞 / 名詞 + じゃない',
+        connection: '動詞{どうし}普通{ふつう}形{けい} / い形容詞{けいようし} / な形容詞{けいようし} / 名詞{めいし} + じゃない',
         translation: '不是嗎?; 對吧? (口語)',
         level: 'N3',
         explanation: [
@@ -2538,8 +2538,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ka_nani_ka': {
         id: 'n3_ka_nani_ka',
-        pattern: 'か何か（かなにか）',
-        connection: '名詞 + か何か',
+        pattern: 'か何{なに}か',
+        connection: '名詞{めいし} + か何{なに}か',
         translation: '...之類的; 什麼的',
         level: 'N3',
         explanation: [
@@ -2612,8 +2612,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ka_nani_ka_1': {
         id: 'n3_ka_nani_ka_1',
-        pattern: 'か何か（かなにか）',
-        connection: '名詞 + か何か',
+        pattern: 'か何{なに}か',
+        connection: '名詞{めいし} + か何{なに}か',
         translation: '...之類的; 什麼的',
         level: 'N3',
         explanation: [
@@ -2687,7 +2687,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_kakeru': {
         id: 'n3_kakeru',
         pattern: 'かける',
-        connection: '動詞ます形（去掉ます） + かける',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}掉{とう}ます） + かける',
         translation: '開始...; 正要...; 還沒做完...',
         level: 'N3',
         explanation: [
@@ -2761,7 +2761,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_kara_ni_kakete': {
         id: 'n3_kara_ni_kakete',
         pattern: 'から〜にかけて',
-        connection: '名詞 + から + 名詞 + にかけて',
+        connection: '名詞{めいし} + から + 名詞{めいし} + にかけて',
         translation: '從...到... (時間/空間)',
         level: 'N3',
         explanation: [
@@ -2797,7 +2797,7 @@ export const n3Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n3_quiz_kara_ni_kakete_1',
-                sentence: '今週{こんしゅう}（　）来週{らいしゅう}にかけて忙{いそが}しい。',
+                sentence: '今週{こんしゅう}{こんしゅう}（　）来週{らいしゅう}にかけて忙{いそが}しい。',
                 options: ['から', 'まで', 'より', 'だけ'],
                 correctIndex: 0,
                 explanation: '從這週到下週很忙。'
@@ -2825,7 +2825,7 @@ export const n3Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n3_quiz_kara_ni_kakete_5',
-                sentence: '「セールはいつまで？」\n「今月{こんげつ}末{まつ}（　）来月{らいげつ}初{はじ}めにかけてだよ。」',
+                sentence: '「セールはいつまで？」\n「今月{こんげつ}{こんげつ}末{まつ}（　）来月{らいげつ}初{はじ}めにかけてだよ。」',
                 options: ['から', 'まで', 'より', 'だけ'],
                 correctIndex: 0,
                 explanation: '對話情境。從月底到下個月初。'
@@ -2834,8 +2834,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_kawari_ni': {
         id: 'n3_kawari_ni',
-        pattern: '代わりに（かわりに）',
-        connection: '名詞の / 動詞普通形 + 代わりに',
+        pattern: '代{か}わりに',
+        connection: '名詞{めいし}の / 動詞{どうし}普通{ふつう}形{けい} + 代{か}わりに',
         translation: '代替...; 作為交換',
         level: 'N3',
         explanation: [
@@ -2908,8 +2908,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_kekka': {
         id: 'n3_kekka',
-        pattern: '結果（けっか）',
-        connection: '動詞た形 / 名詞の + 結果',
+        pattern: '結果{けっか}{けっか}',
+        connection: '動詞{どうし}た形{けい} / 名詞{めいし}の + 結果{けっか}',
         translation: '結果; ...的結果',
         level: 'N3',
         explanation: [
@@ -2982,8 +2982,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_kekkyoku': {
         id: 'n3_kekkyoku',
-        pattern: '結局（けっきょく）',
-        connection: '結局 + 句子',
+        pattern: '結局{けっきょく}{けっきょく}{けっきょく}',
+        connection: '結局{けっきょく}{けっきょく} + 句{く}子{し}',
         translation: '結果; 最後',
         level: 'N3',
         explanation: [
@@ -3056,8 +3056,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_kesshite_nai': {
         id: 'n3_kesshite_nai',
-        pattern: '決して～ない（けっして～ない）',
-        connection: '決して + 動詞/形容詞否定形',
+        pattern: '決{けっ}して～ない（けっして～ない）',
+        connection: '決{けっ}して + 動詞{どうし}/形容詞{けいようし}否定{ひてい}形{けい}',
         translation: '絕不...; 絕對不...',
         level: 'N3',
         explanation: [
@@ -3130,8 +3130,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_kesshite_nai_1': {
         id: 'n3_kesshite_nai_1',
-        pattern: '決して～ない（けっして～ない）',
-        connection: '決して + 動詞/形容詞否定形',
+        pattern: '決{けっ}して～ない（けっして～ない）',
+        connection: '決{けっ}して + 動詞{どうし}/形容詞{けいようし}否定{ひてい}形{けい}',
         translation: '絕不...; 絕對不...',
         level: 'N3',
         explanation: [
@@ -3204,8 +3204,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_kirenai': {
         id: 'n3_kirenai',
-        pattern: '切れない（きれない）',
-        connection: '動詞ます形（去掉ます） + 切れない',
+        pattern: '切{き}れない',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}掉{とう}ます） + 切{き}れない',
         translation: '不能...; ...不完',
         level: 'N3',
         explanation: [
@@ -3278,8 +3278,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_kirenai_1': {
         id: 'n3_kirenai_1',
-        pattern: '切れない（きれない）',
-        connection: '動詞ます形（去掉ます） + 切れない',
+        pattern: '切{き}れない',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}掉{とう}ます） + 切{き}れない',
         translation: '不能...; 做不完...',
         level: 'N3',
         explanation: [
@@ -3353,7 +3353,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_kiri': {
         id: 'n3_kiri',
         pattern: 'きり',
-        connection: '動詞た形 / 名詞 + きり',
+        connection: '動詞{どうし}た形{けい} / 名詞{めいし} + きり',
         translation: '只有...; 僅僅; 自從...以後',
         level: 'N3',
         explanation: [
@@ -3426,8 +3426,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_kiru': {
         id: 'n3_kiru',
-        pattern: '切る（きる）',
-        connection: '動詞ます形（去掉ます） + 切る',
+        pattern: '切{き}る',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}掉{とう}ます） + 切{き}る',
         translation: '做完; 斷言; 充滿自信',
         level: 'N3',
         explanation: [
@@ -3463,7 +3463,7 @@ export const n3Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n3_quiz_kiru_1',
-                sentence: 'この本{ほん}を今週中{こんしゅうちゅう}に読{よ}み（　）たい。',
+                sentence: 'この本{ほん}を今週{こんしゅう}中{こんしゅうちゅう}に読{よ}み（　）たい。',
                 options: ['切り', '終わり', 'はじめ', 'かけ'],
                 correctIndex: 0,
                 explanation: '想在這週內把這本書讀完。'
@@ -3500,8 +3500,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_kiru_1': {
         id: 'n3_kiru_1',
-        pattern: '切る（きる）',
-        connection: '動詞ます形（去掉ます） + 切る',
+        pattern: '切{き}る',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}掉{とう}ます） + 切{き}る',
         translation: '做完; 斷言',
         level: 'N3',
         explanation: [
@@ -3575,7 +3575,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_kke': {
         id: 'n3_kke',
         pattern: 'っけ',
-        connection: '動詞/形容詞普通形 + っけ / 名詞だ + っけ',
+        connection: '動詞{どうし}/形容詞{けいようし}普通{ふつう}形{けい} + っけ / 名詞{めいし}だ + っけ',
         translation: '...來著? (回憶/確認)',
         level: 'N3',
         explanation: [
@@ -3648,8 +3648,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_komu': {
         id: 'n3_komu',
-        pattern: '込む（こむ）',
-        connection: '動詞ます形（去掉ます） + 込む',
+        pattern: '込{こ}む',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}掉{とう}ます） + 込{こ}む',
         translation: '深入...; 充滿...; 進入...',
         level: 'N3',
         explanation: [
@@ -3723,7 +3723,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_koso': {
         id: 'n3_koso',
         pattern: 'こそ',
-        connection: '名詞 / 動詞て形 + こそ',
+        connection: '名詞{めいし} / 動詞{どうし}て形{けい} + こそ',
         translation: '正是...; 才是... (強調)',
         level: 'N3',
         explanation: [
@@ -3797,7 +3797,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_koto': {
         id: 'n3_koto',
         pattern: 'こと',
-        connection: '動詞辭書形 / 動詞ない形 + こと',
+        connection: '動詞{どうし}辭書{じしょ}形{けい} / 動詞{どうし}ない形{けい} + こと',
         translation: '必須... (規則/命令)',
         level: 'N3',
         explanation: [
@@ -3871,7 +3871,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_koto_kara': {
         id: 'n3_koto_kara',
         pattern: 'ことから',
-        connection: '動詞普通形 / い形容詞 / な形容詞な + ことから',
+        connection: '動詞{どうし}普通{ふつう}形{けい} / い形容詞{けいようし} / な形容詞{けいようし}な + ことから',
         translation: '因為...; 從...的事實',
         level: 'N3',
         explanation: [
@@ -3945,7 +3945,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_koto_ni_natteiru': {
         id: 'n3_koto_ni_natteiru',
         pattern: 'ことになっている',
-        connection: '動詞辭書形 / 動詞ない形 + ことになっている',
+        connection: '動詞{どうし}辭書{じしょ}形{けい} / 動詞{どうし}ない形{けい} + ことになっている',
         translation: '按照規定...; 預定...; 據說...',
         level: 'N3',
         explanation: [
@@ -4019,7 +4019,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_koto_wa_nai': {
         id: 'n3_koto_wa_nai',
         pattern: 'ことはない',
-        connection: '動詞辭書形 + ことはない',
+        connection: '動詞{どうし}辭書{じしょ}形{けい} + ことはない',
         translation: '沒必要...; 不用...',
         level: 'N3',
         explanation: [
@@ -4093,7 +4093,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_koto_wa_ga': {
         id: 'n3_koto_wa_ga',
         pattern: 'ことは～が',
-        connection: '動詞普通形 + ことは + 同じ動詞普通形 + が',
+        connection: '動詞{どうし}普通{ふつう}形{けい} + ことは + 同{おな}じ動詞{どうし}普通{ふつう}形{けい} + が',
         translation: '雖然...但是...',
         level: 'N3',
         explanation: [
@@ -4167,7 +4167,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_kurai': {
         id: 'n3_kurai',
         pattern: 'くらい / ぐらい',
-        connection: '動詞普通形 / 名詞 + くらい',
+        connection: '動詞{どうし}普通{ふつう}形{けい} / 名詞{めいし} + くらい',
         translation: '大概; 大約; ...的程度; 至少...',
         level: 'N3',
         explanation: [
@@ -4241,7 +4241,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_kuse_ni': {
         id: 'n3_kuse_ni',
         pattern: 'くせに',
-        connection: '動詞普通形 / い形容詞 / な形容詞な / 名詞の + くせに',
+        connection: '動詞{どうし}普通{ふつう}形{けい} / い形容詞{けいようし} / な形容詞{けいようし}な / 名詞{めいし}の + くせに',
         translation: '明明...卻... (責備/不滿)',
         level: 'N3',
         explanation: [
@@ -4315,7 +4315,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_maru_de': {
         id: 'n3_maru_de',
         pattern: 'まるで',
-        connection: 'まるで + 名詞のよう / 動詞普通形 + かのよう',
+        connection: 'まるで + 名詞{めいし}のよう / 動詞{どうし}普通{ふつう}形{けい} + かのよう',
         translation: '簡直像...; 完全...',
         level: 'N3',
         explanation: [
@@ -4389,7 +4389,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_masaka': {
         id: 'n3_masaka',
         pattern: 'まさか',
-        connection: 'まさか + 句子 / まさか～とは思わなかった',
+        connection: 'まさか + 句{く}子{し} / まさか～とは思{おも}わなかった',
         translation: '該不會...; 難道...; 絕不可能',
         level: 'N3',
         explanation: [
@@ -4463,7 +4463,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_metta_ni_nai': {
         id: 'n3_metta_ni_nai',
         pattern: 'めったに～ない',
-        connection: 'めったに + 動詞否定形',
+        connection: 'めったに + 動詞{どうし}否定{ひてい}形{けい}',
         translation: '很少...; 不常...',
         level: 'N3',
         explanation: [
@@ -4537,7 +4537,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_moshika_shitara': {
         id: 'n3_moshika_shitara',
         pattern: 'もしかしたら',
-        connection: 'もしかしたら + 句子 + かもしれない',
+        connection: 'もしかしたら + 句{く}子{し} + かもしれない',
         translation: '說不定; 也許',
         level: 'N3',
         explanation: [
@@ -4611,7 +4611,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_moshimo_tara': {
         id: 'n3_moshimo_tara',
         pattern: 'もしも〜たら',
-        connection: 'もしも + 動詞た形 + ら',
+        connection: 'もしも + 動詞{どうし}た形{けい} + ら',
         translation: '萬一...的話',
         level: 'N3',
         explanation: [
@@ -4685,7 +4685,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_mo_ba_mo': {
         id: 'n3_mo_ba_mo',
         pattern: 'も～ば～も',
-        connection: '名詞1 + も + 動詞ば形 + 名詞2 + も',
+        connection: '名詞{めいし}1 + も + 動詞{どうし}ば形{けい} + 名詞{めいし}2 + も',
         translation: '既...又...; ...也好...也好',
         level: 'N3',
         explanation: [
@@ -4758,8 +4758,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_muke': {
         id: 'n3_muke',
-        pattern: '向け',
-        connection: '名詞 + 向け',
+        pattern: '向{む}け',
+        connection: '名詞{めいし} + 向{む}け',
         translation: '面向...; 為...設計的',
         level: 'N3',
         explanation: [
@@ -4832,8 +4832,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_muke_1': {
         id: 'n3_muke_1',
-        pattern: '向け（むけ）',
-        connection: '名詞 + 向け',
+        pattern: '向{む}け',
+        connection: '名詞{めいし} + 向{む}け',
         translation: '面向...; 為...設計的',
         level: 'N3',
         explanation: [
@@ -4906,8 +4906,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_muki': {
         id: 'n3_muki',
-        pattern: '向き',
-        connection: '名詞 + 向き',
+        pattern: '向{む}き',
+        connection: '名詞{めいし} + 向{む}き',
         translation: '適合...; 朝向...; 適合...的人',
         level: 'N3',
         explanation: [
@@ -4980,8 +4980,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_muki_1': {
         id: 'n3_muki_1',
-        pattern: '向き（むき）',
-        connection: '名詞 + 向き',
+        pattern: '向{む}き',
+        connection: '名詞{めいし} + 向{む}き',
         translation: '適合...; 朝向...',
         level: 'N3',
         explanation: [
@@ -5055,7 +5055,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_mushiro': {
         id: 'n3_mushiro',
         pattern: 'むしろ',
-        connection: 'むしろ + 文',
+        connection: 'むしろ + 文{ぶん}',
         translation: '寧可...; 倒不如...; 反倒...',
         level: 'N3',
         explanation: [
@@ -5129,7 +5129,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_nagara_mo': {
         id: 'n3_nagara_mo',
         pattern: 'ながらも',
-        connection: '動詞ます形（去ます）/ い形容詞 / な形容詞語幹 / 名詞 + ながらも',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}ます）/ い形容詞{けいようし} / な形容詞{けいようし}語幹{ごかん} / 名詞{めいし} + ながらも',
         translation: '雖然...但是...; 儘管...',
         level: 'N3',
         explanation: [
@@ -5203,7 +5203,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_nai_koto_wa_nai': {
         id: 'n3_nai_koto_wa_nai',
         pattern: 'ないことはない',
-        connection: '動詞ない形 + ことはない',
+        connection: '動詞{どうし}ない形{けい} + ことはない',
         translation: '並非不...; 不是不...',
         level: 'N3',
         explanation: [
@@ -5277,7 +5277,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_naito': {
         id: 'n3_naito',
         pattern: 'ないと',
-        connection: '動詞ない形 + と',
+        connection: '動詞{どうし}ない形{けい} + と',
         translation: '必須... (口語)',
         level: 'N3',
         explanation: [
@@ -5351,7 +5351,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_nakanaka': {
         id: 'n3_nakanaka',
         pattern: 'なかなか',
-        connection: 'なかなか + 動詞ない形',
+        connection: 'なかなか + 動詞{どうし}ない形{けい}',
         translation: '怎麼也(不)... (搭配否定)',
         level: 'N3',
         explanation: [
@@ -5425,7 +5425,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_nanka': {
         id: 'n3_nanka',
         pattern: 'なんか / なんて / など',
-        connection: '名詞 + なんか / なんて / など',
+        connection: '名詞{めいし} + なんか / なんて / など',
         translation: '...之類的; ...什麼的 (輕視/自謙)',
         level: 'N3',
         explanation: [
@@ -5502,8 +5502,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_naosu': {
         id: 'n3_naosu',
-        pattern: '直す（なおす）',
-        connection: '動詞ます形（去ます） + 直す',
+        pattern: '直{なお}す（なおす）',
+        connection: '動詞{どうし}ます形{けい}（去{きょ}ます） + 直{なお}す',
         translation: '重新...; 改...',
         level: 'N3',
         explanation: [
@@ -5577,7 +5577,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_naru_beku': {
         id: 'n3_naru_beku',
         pattern: 'なるべく',
-        connection: 'なるべく + 動詞/形容詞',
+        connection: 'なるべく + 動詞{どうし}/形容詞{けいようし}',
         translation: '盡量; 盡可能',
         level: 'N3',
         explanation: [
@@ -5651,7 +5651,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_nazenara': {
         id: 'n3_nazenara',
         pattern: 'なぜなら',
-        connection: 'なぜなら + 文 + から/からだ',
+        connection: 'なぜなら + 文{ぶん} + から/からだ',
         translation: '因為; 原因是',
         level: 'N3',
         explanation: [
@@ -5725,7 +5725,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ndatte': {
         id: 'n3_ndatte',
         pattern: 'んだって',
-        connection: '普通形 + んだって',
+        connection: '普通{ふつう}形{けい} + んだって',
         translation: '聽說...; 據說... (口語)',
         level: 'N3',
         explanation: [
@@ -5798,8 +5798,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ni_chigai_nai': {
         id: 'n3_ni_chigai_nai',
-        pattern: 'に違いない',
-        connection: '普通形 + に違いない',
+        pattern: 'に違{ちが}いない',
+        connection: '普通{ふつう}形{けい} + に違{ちが}いない',
         translation: '一定...; 肯定...',
         level: 'N3',
         explanation: [
@@ -5872,8 +5872,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ni_chigai_nai_1': {
         id: 'n3_ni_chigai_nai_1',
-        pattern: 'に違いない（にちがいない）',
-        connection: '普通形 + に違いない',
+        pattern: 'に違{ちが}いない',
+        connection: '普通{ふつう}形{けい} + に違{ちが}いない',
         translation: '一定...; 肯定...',
         level: 'N3',
         explanation: [
@@ -5946,8 +5946,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ni_hanshite': {
         id: 'n3_ni_hanshite',
-        pattern: 'に反して',
-        connection: '名詞 + に反して',
+        pattern: 'に反{はん}して',
+        connection: '名詞{めいし} + に反{はん}して',
         translation: '與...相反; 違反...',
         level: 'N3',
         explanation: [
@@ -6020,8 +6020,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ni_hanshite_1': {
         id: 'n3_ni_hanshite_1',
-        pattern: 'に反して（にはんして）',
-        connection: '名詞 + に反して',
+        pattern: 'に反{はん}して',
+        connection: '名詞{めいし} + に反{はん}して',
         translation: '與...相反; 違反...',
         level: 'N3',
         explanation: [
@@ -6095,7 +6095,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_kakete': {
         id: 'n3_ni_kakete',
         pattern: 'にかけて',
-        connection: '名詞 + にかけて',
+        connection: '名詞{めいし} + にかけて',
         translation: '到...為止 (期間); 關於...並非浪得虛名',
         level: 'N3',
         explanation: [
@@ -6152,7 +6152,7 @@ export const n3Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n3_quiz_ni_kakete_4',
-                sentence: '「この工事{こうじ}、いつまで？」\n「今週{こんしゅう}から来週{らいしゅう}（　）ですね。」',
+                sentence: '「この工事{こうじ}、いつまで？」\n「今週{こんしゅう}{こんしゅう}から来週{らいしゅう}（　）ですね。」',
                 options: ['にかけて', 'について', 'にとって', 'にたいして'],
                 correctIndex: 0,
                 explanation: '對話情境。從這週到下週。'
@@ -6168,8 +6168,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ni_kan_suru': {
         id: 'n3_ni_kan_suru',
-        pattern: 'に関する',
-        connection: '名詞 + に関する + 名詞',
+        pattern: 'に関{かん}する',
+        connection: '名詞{めいし} + に関{かん}する + 名詞{めいし}',
         translation: '關於...; 有關...',
         level: 'N3',
         explanation: [
@@ -6242,8 +6242,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ni_kan_suru_ni_kan_shite': {
         id: 'n3_ni_kan_suru_ni_kan_shite',
-        pattern: 'に関する / に関して（にかんする / にかんして）',
-        connection: '名詞 + に関する/に関して',
+        pattern: 'に関{かん}する / に関{かん}して',
+        connection: '名詞{めいし} + に関{かん}する/に関{かん}して',
         translation: '關於...; 有關...',
         level: 'N3',
         explanation: [
@@ -6317,7 +6317,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_kawatte': {
         id: 'n3_ni_kawatte',
         pattern: 'にかわって',
-        connection: '名詞 + にかわって',
+        connection: '名詞{めいし} + にかわって',
         translation: '代替...; 代表...',
         level: 'N3',
         explanation: [
@@ -6360,7 +6360,7 @@ export const n3Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n3_quiz_ni_kawatte_2',
-                sentence: '病気{びょうき}の先生{せんせい}（　）、別{べつ}の先生{せんせい}が授業{じゅぎょう}をした。',
+                sentence: '病気{びょうき}の先生{せんせい}（　）、別{べつ}の先生{せんせい}が授業{じゅぎょう}{じゅぎょう}をした。',
                 options: ['にかわって', 'について', 'にとって', 'に対して'],
                 correctIndex: 0,
                 explanation: '另一位老師代替生病的老師上課。'
@@ -6391,7 +6391,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_kawatte_ni_kawari': {
         id: 'n3_ni_kawatte_ni_kawari',
         pattern: 'にかわって / にかわり',
-        connection: '名詞 + にかわって/にかわり',
+        connection: '名詞{めいし} + にかわって/にかわり',
         translation: '代替...; 代表...; 轉換為...',
         level: 'N3',
         explanation: [
@@ -6464,8 +6464,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ni_kurabete': {
         id: 'n3_ni_kurabete',
-        pattern: 'に比べて',
-        connection: '名詞 + に比べて',
+        pattern: 'に比{くら}べて',
+        connection: '名詞{めいし} + に比{くら}べて',
         translation: '與...相比',
         level: 'N3',
         explanation: [
@@ -6538,8 +6538,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ni_kurabete_1': {
         id: 'n3_ni_kurabete_1',
-        pattern: 'に比べて（にくらべて）',
-        connection: '名詞 + に比べて',
+        pattern: 'に比{くら}べて',
+        connection: '名詞{めいし} + に比{くら}べて',
         translation: '與...相比',
         level: 'N3',
         explanation: [
@@ -6612,8 +6612,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ni_nareru': {
         id: 'n3_ni_nareru',
-        pattern: 'に慣れる',
-        connection: '名詞 + に慣れる',
+        pattern: 'に慣{な}れる',
+        connection: '名詞{めいし} + に慣{な}れる',
         translation: '習慣...',
         level: 'N3',
         explanation: [
@@ -6686,8 +6686,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ni_nareru_1': {
         id: 'n3_ni_nareru_1',
-        pattern: 'に慣れる（になれる）',
-        connection: '名詞 + に慣れる',
+        pattern: 'に慣{な}れる',
+        connection: '名詞{めいし} + に慣{な}れる',
         translation: '習慣...',
         level: 'N3',
         explanation: [
@@ -6744,7 +6744,7 @@ export const n3Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n3_quiz_ni_nareru_1_4',
-                sentence: '「運転{うんてん}できる？」\n「うん、もう（　）きたよ。」',
+                sentence: '「運転{うんてん}{うんてん}できる？」\n「うん、もう（　）きたよ。」',
                 options: ['慣れて', '慣って', '慣いて', '慣えて'],
                 correctIndex: 0,
                 explanation: '對話情境。已經漸漸習慣了。'
@@ -6761,7 +6761,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_oite': {
         id: 'n3_ni_oite',
         pattern: 'において',
-        connection: '名詞 + において',
+        connection: '名詞{めいし} + において',
         translation: '在...; 於... (時間/地點/場合)',
         level: 'N3',
         explanation: [
@@ -6835,7 +6835,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_oite_ni_okeru': {
         id: 'n3_ni_oite_ni_okeru',
         pattern: 'において / における',
-        connection: '名詞 + において/における',
+        connection: '名詞{めいし} + において/における',
         translation: '在...; 於... (時間/地點/場合)',
         level: 'N3',
         explanation: [
@@ -6909,7 +6909,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_shitagatte': {
         id: 'n3_ni_shitagatte',
         pattern: 'にしたがって',
-        connection: '名詞/動詞辭書形 + にしたがって',
+        connection: '名詞{めいし}/動詞{どうし}辭書{じしょ}形{けい} + にしたがって',
         translation: '隨著...; 遵照...',
         level: 'N3',
         explanation: [
@@ -6983,7 +6983,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_shite_mo': {
         id: 'n3_ni_shite_mo',
         pattern: 'にしても',
-        connection: '普通形 + にしても',
+        connection: '普通{ふつう}形{けい} + にしても',
         translation: '即使...; 就算...',
         level: 'N3',
         explanation: [
@@ -7057,7 +7057,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_shite_wa': {
         id: 'n3_ni_shite_wa',
         pattern: 'にしては',
-        connection: '名詞/動詞普通形 + にしては',
+        connection: '名詞{めいし}/動詞{どうし}普通{ふつう}形{けい} + にしては',
         translation: '就...而言; 雖然...但是...',
         level: 'N3',
         explanation: [
@@ -7130,8 +7130,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ni_taishite': {
         id: 'n3_ni_taishite',
-        pattern: 'に対して',
-        connection: '名詞 + に対して',
+        pattern: 'に対{たい}して',
+        connection: '名詞{めいし} + に対{たい}して',
         translation: '對...; 對於...; 與...相反',
         level: 'N3',
         explanation: [
@@ -7204,8 +7204,8 @@ export const n3Details: Record<string, GrammarPoint> = {
     },
     'n3_ni_taishite_1': {
         id: 'n3_ni_taishite_1',
-        pattern: 'に対して（にたいして）',
-        connection: '名詞 + に対して',
+        pattern: 'に対{たい}して',
+        connection: '名詞{めいし} + に対{たい}して',
         translation: '對...; 對於...; 與...相反',
         level: 'N3',
         explanation: [
@@ -7279,7 +7279,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_totte': {
         id: 'n3_ni_totte',
         pattern: 'にとって',
-        connection: '名詞 + にとって',
+        connection: '名詞{めいし} + にとって',
         translation: '對...而言; 就...來說',
         level: 'N3',
         explanation: [
@@ -7353,7 +7353,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_tsuite': {
         id: 'n3_ni_tsuite',
         pattern: 'について',
-        connection: '名詞 + について',
+        connection: '名詞{めいし} + について',
         translation: '關於...; 對於...',
         level: 'N3',
         explanation: [
@@ -7427,7 +7427,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_tsurete': {
         id: 'n3_ni_tsurete',
         pattern: 'につれて',
-        connection: '動詞辭書形/名詞 + につれて',
+        connection: '動詞{どうし}辭書{じしょ}形{けい}/名詞{めいし} + につれて',
         translation: '隨著...; 伴隨而來的是...',
         level: 'N3',
         explanation: [
@@ -7501,7 +7501,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_wa': {
         id: 'n3_ni_wa',
         pattern: 'には',
-        connection: '動詞辭書形/名詞 + には',
+        connection: '動詞{どうし}辭書{じしょ}形{けい}/名詞{めいし} + には',
         translation: '對於...來說; 為了...',
         level: 'N3',
         explanation: [
@@ -7575,7 +7575,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_yoru_to': {
         id: 'n3_ni_yoru_to',
         pattern: 'によると',
-        connection: '名詞 + によると',
+        connection: '名詞{めいし} + によると',
         translation: '根據...; 據...所說',
         level: 'N3',
         explanation: [
@@ -7649,7 +7649,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_yoru_to_ni_yoreba': {
         id: 'n3_ni_yoru_to_ni_yoreba',
         pattern: 'によると /によれば',
-        connection: '名詞 + によると/によれば',
+        connection: '名詞{めいし} + によると/によれば',
         translation: '根據...; 據...所說',
         level: 'N3',
         explanation: [
@@ -7724,7 +7724,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_yotte': {
         id: 'n3_ni_yotte',
         pattern: 'によって',
-        connection: '名詞 + によって',
+        connection: '名詞{めいし} + によって',
         translation: '通過...; 根據...; 由於...',
         level: 'N3',
         explanation: [
@@ -7810,7 +7810,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ni_yotte_ni_yoru': {
         id: 'n3_ni_yotte_ni_yoru',
         pattern: 'によって / による',
-        connection: '名詞 + によって/による',
+        connection: '名詞{めいし} + によって/による',
         translation: '通過...; 根據...; 由於...',
         level: 'N3',
         explanation: [
@@ -7829,8 +7829,8 @@ export const n3Details: Record<string, GrammarPoint> = {
                 title: '兩種形式的對比',
                 description: '「によって」後接動詞，「による」後接名詞。',
                 examples: [
-                    { japanese: '科学{かがく}によって証明{しょうめい}された。（動詞前）', chinese: '透過科學得到了證明。' },
-                    { japanese: '科学{かがく}による証明{しょうめい}が必要{ひつよう}だ。（名詞前）', chinese: '需要科學的證明。' },
+                    { japanese: '科学{かがく}によって証明{しょうめい}された。（動詞{どうし}前{まえ}）', chinese: '透過科學得到了證明。' },
+                    { japanese: '科学{かがく}による証明{しょうめい}が必要{ひつよう}だ。（名詞{めいし}前{まえ}）', chinese: '需要科學的證明。' },
                     { japanese: '「どんな調査{ちょうさ}？」\n「専門家{せんもんか}による調査{ちょうさ}だよ。」', chinese: '「什麼樣的調查？」\n「是專家進行的調查。」' }
                 ]
             }
@@ -7886,7 +7886,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_no_deshou_ka': {
         id: 'n3_no_deshou_ka',
         pattern: 'のでしょうか',
-        connection: '普通形 + のでしょうか',
+        connection: '普通{ふつう}形{けい} + のでしょうか',
         translation: '...吧?; 難道是...嗎? (委婉疑問)',
         level: 'N3',
         explanation: [
@@ -7961,8 +7961,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_o_chuushin_ni': {
         id: 'n3_o_chuushin_ni',
-        pattern: 'を中心に',
-        connection: '名詞 + を中心に',
+        pattern: 'を中心{ちゅうしん}{ちゅうしん}に',
+        connection: '名詞{めいし} + を中心{ちゅうしん}{ちゅうしん}に',
         translation: '以...為中心',
         level: 'N3',
         explanation: [
@@ -8037,8 +8037,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_o_chuushin_ni_1': {
         id: 'n3_o_chuushin_ni_1',
-        pattern: 'を中心に（をちゅうしんに）',
-        connection: '名詞 + を中心に/として/にして',
+        pattern: 'を中心{ちゅうしん}{ちゅうしん}に',
+        connection: '名詞{めいし} + を中心{ちゅうしん}{ちゅうしん}に/として/にして',
         translation: '以...為核心; 集中於...',
         level: 'N3',
         explanation: [
@@ -8104,7 +8104,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_o_hajime': {
         id: 'n3_o_hajime',
         pattern: 'をはじめ',
-        connection: '名詞 + をはじめ（として）',
+        connection: '名詞{めいし} + をはじめ（として）',
         translation: '以...為首; 以及...',
         level: 'N3',
         explanation: [
@@ -8179,8 +8179,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_o_komete': {
         id: 'n3_o_komete',
-        pattern: 'を込めて',
-        connection: '名詞 + を込めて',
+        pattern: 'を込{こ}めて',
+        connection: '名詞{めいし} + を込{こ}めて',
         translation: '傾注...; 充滿... (感情/心意)',
         level: 'N3',
         explanation: [
@@ -8255,8 +8255,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_o_komete_1': {
         id: 'n3_o_komete_1',
-        pattern: 'を込めて（をこめて）',
-        connection: '名詞 + を込めて',
+        pattern: 'を込{こ}めて',
+        connection: '名詞{めいし} + を込{こ}めて',
         translation: '傾注...; 充滿心意地',
         level: 'N3',
         explanation: [
@@ -8321,8 +8321,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_o_tsuujite': {
         id: 'n3_o_tsuujite',
-        pattern: 'を通じて',
-        connection: '名詞 + を通じて',
+        pattern: 'を通{つう}じて',
+        connection: '名詞{めいし} + を通{つう}じて',
         translation: '通過...; 經過...; 在...整個期間',
         level: 'N3',
         explanation: [
@@ -8397,8 +8397,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_o_tsuujite_o_tooshite': {
         id: 'n3_o_tsuujite_o_tooshite',
-        pattern: 'を通じて / を通して（をつうじて / をとおして）',
-        connection: '名詞 + を通じて/を通して',
+        pattern: 'を通{つう}じて / を通{とお}して',
+        connection: '名詞{めいし} + を通{つう}じて/を通{とお}して',
         translation: '通過...; 經過...; 整個...期間',
         level: 'N3',
         explanation: [
@@ -8417,8 +8417,8 @@ export const n3Details: Record<string, GrammarPoint> = {
                 title: '用法傾向',
                 description: '「を通して」偏向物理上穿過，「を通じて」偏向抽象的媒介。',
                 examples: [
-                    { japanese: '彼女{かのじょ}を通{つう}じて情報{じょうほう}を得{え}た。（抽象）', chinese: '透過她獲得了資訊。' },
-                    { japanese: 'ガラスを通{とお}して見{み}る。（物理）', chinese: '透過玻璃看。' },
+                    { japanese: '彼女{かのじょ}を通{つう}じて情報{じょうほう}を得{え}た。（抽象{ちゅうしょう}）', chinese: '透過她獲得了資訊。' },
+                    { japanese: 'ガラスを通{とお}して見{み}る。（物理{ぶつり}）', chinese: '透過玻璃看。' },
                     { japanese: '「どうやって入{はい}ったの？」\n「裏口{うらぐち}を通{とお}して入{はい}ったんだ。」', chinese: '「你怎麼進去的？」\n「從後門穿過去的。」' }
                 ]
             }
@@ -8474,7 +8474,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_okage_de': {
         id: 'n3_okage_de',
         pattern: 'おかげで',
-        connection: '名詞の/普通形 + おかげで',
+        connection: '名詞{めいし}の/普通{ふつう}形{けい} + おかげで',
         translation: '託...的福; 多虧...',
         level: 'N3',
         explanation: [
@@ -8550,7 +8550,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ppanashi': {
         id: 'n3_ppanashi',
         pattern: 'っぱなし',
-        connection: '動詞ます形 + っぱなし',
+        connection: '動詞{どうし}ます形{けい} + っぱなし',
         translation: '一直...著; 置之不理',
         level: 'N3',
         explanation: [
@@ -8587,7 +8587,7 @@ export const n3Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n3_quiz_ppanashi_1',
-                sentence: '水道{すいどう}を出し（　）にしないで。',
+                sentence: '水道{すいどう}を出{だ}し（　）にしないで。',
                 options: ['っぱなし', 'っぽい', 'がち', 'ぎみ'],
                 correctIndex: 0,
                 explanation: '別一直開著水龍頭不關。'
@@ -8626,7 +8626,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ppoi': {
         id: 'n3_ppoi',
         pattern: 'っぽい',
-        connection: '名詞/動詞ます形/い形容詞語幹 + っぽい',
+        connection: '名詞{めいし}/動詞{どうし}ます形{けい}/い形容詞{けいようし}語幹{ごかん} + っぽい',
         translation: '像...的; 有...傾向的; 容易...',
         level: 'N3',
         explanation: [
@@ -8712,7 +8712,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_sae': {
         id: 'n3_sae',
         pattern: 'さえ',
-        connection: '名詞 + さえ',
+        connection: '名詞{めいし} + さえ',
         translation: '連...; 甚至...',
         level: 'N3',
         explanation: [
@@ -8788,7 +8788,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_sae_ba': {
         id: 'n3_sae_ba',
         pattern: 'さえ～ば',
-        connection: '名詞＋さえ～ば / 動詞ます形＋さえすれば',
+        connection: '名詞{めいし}＋さえ～ば / 動詞{どうし}ます形{けい}＋さえすれば',
         translation: '只要...就...',
         level: 'N3',
         explanation: [
@@ -8863,8 +8863,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_sai_ni': {
         id: 'n3_sai_ni',
-        pattern: '際に',
-        connection: '名詞の/動詞辞書形/動詞た形 + 際に',
+        pattern: '際{さい}{さい}{さい}に',
+        connection: '名詞{めいし}の/動詞{どうし}辞書{じしょ}形{けい}/動詞{どうし}た形{けい} + 際{さい}{さい}{さい}に',
         translation: '在...之時',
         level: 'N3',
         explanation: [
@@ -8939,8 +8939,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_sai_ni_1': {
         id: 'n3_sai_ni_1',
-        pattern: '際に（さいに）',
-        connection: '動詞辞書形/た形 + 際に',
+        pattern: '際{さい}{さい}{さい}に',
+        connection: '動詞{どうし}辞書{じしょ}形{けい}/た形{けい} + 際{さい}{さい}{さい}に',
         translation: '在...的時候',
         level: 'N3',
         explanation: [
@@ -9005,8 +9005,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_saichuu_ni': {
         id: 'n3_saichuu_ni',
-        pattern: '最中に',
-        connection: '名詞の/動詞ている + 最中に',
+        pattern: '最中{さいちゅう}{さいちゅう}に',
+        connection: '名詞{めいし}の/動詞{どうし}ている + 最中{さいちゅう}{さいちゅう}に',
         translation: '正在...之中',
         level: 'N3',
         explanation: [
@@ -9043,7 +9043,7 @@ export const n3Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n3_quiz_saichuu_ni_1',
-                sentence: '授業{じゅぎょう}の（　）、居眠{いねむ}りしてしまった。',
+                sentence: '授業{じゅぎょう}{じゅぎょう}の（　）、居眠{いねむ}りしてしまった。',
                 options: ['最中に', 'ために', 'ので', 'から'],
                 correctIndex: 0,
                 explanation: '上課上到一半打瞌睡了。'
@@ -9081,8 +9081,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_saichuu_ni_1': {
         id: 'n3_saichuu_ni_1',
-        pattern: '最中に（さいちゅうに）',
-        connection: '動詞ている + 最中に/最中だ',
+        pattern: '最中{さいちゅう}{さいちゅう}に',
+        connection: '動詞{どうし}ている + 最中{さいちゅう}{さいちゅう}に/最中{さいちゅう}だ',
         translation: '正當...之時',
         level: 'N3',
         explanation: [
@@ -9148,7 +9148,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_sara_ni': {
         id: 'n3_sara_ni',
         pattern: 'さらに',
-        connection: 'さらに + 文',
+        connection: 'さらに + 文{ぶん}',
         translation: '進一步; 更加; 且',
         level: 'N3',
         explanation: [
@@ -9224,7 +9224,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_sate': {
         id: 'n3_sate',
         pattern: 'さて',
-        connection: 'さて、+ 文',
+        connection: 'さて、+ 文{ぶん}',
         translation: '那麼... (切換話題)',
         level: 'N3',
         explanation: [
@@ -9300,7 +9300,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_sei_de': {
         id: 'n3_sei_de',
         pattern: 'せいで',
-        connection: '名詞の/普通形 + せいで',
+        connection: '名詞{めいし}の/普通{ふつう}形{けい} + せいで',
         translation: '都是因為... (導致負面結果)',
         level: 'N3',
         explanation: [
@@ -9376,7 +9376,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_seizei': {
         id: 'n3_seizei',
         pattern: 'せいぜい',
-        connection: 'せいぜい + 數量/程度',
+        connection: 'せいぜい + 數量{すうりょう}/程度{ていど}',
         translation: '充其量; 最大限度',
         level: 'N3',
         explanation: [
@@ -9396,7 +9396,7 @@ export const n3Details: Record<string, GrammarPoint> = {
                 description: '「せいぜい」有時帶有「也就這樣而已」的輕視語氣。',
                 examples: [
                     { japanese: '彼{かれ}にできることはせいぜいこれくらいだ。', chinese: '他能做的頂多就這樣。' },
-                    { japanese: 'せいぜい頑張{がんば}れ。（帶諷刺）', chinese: '儘管努力吧。（帶諷刺）' },
+                    { japanese: 'せいぜい頑張{がんば}れ。（帶{たい}諷{ふう}刺{し}）', chinese: '儘管努力吧。（帶諷刺）' },
                     { japanese: '「彼{かれ}、何{なに}ができる？」\n「せいぜい資料{しりょう}の整理{せいり}くらいだね。」', chinese: '「他能做什麼？」\n「頂多整理資料吧。」' }
                 ]
             }
@@ -9452,7 +9452,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_shibaraku': {
         id: 'n3_shibaraku',
         pattern: 'しばらく',
-        connection: 'しばらく + 動詞',
+        connection: 'しばらく + 動詞{どうし}',
         translation: '暫時; 許久',
         level: 'N3',
         explanation: [
@@ -9528,7 +9528,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_shikanai': {
         id: 'n3_shikanai',
         pattern: 'しかない',
-        connection: '動詞辞書形 + しかない',
+        connection: '動詞{どうし}辞書{じしょ}形{けい} + しかない',
         translation: '只能...; 只好...',
         level: 'N3',
         explanation: [
@@ -9604,7 +9604,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_sono_tame_ni': {
         id: 'n3_sono_tame_ni',
         pattern: 'そのために',
-        connection: 'そのために、+ 文',
+        connection: 'そのために、+ 文{ぶん}',
         translation: '為此; 因此',
         level: 'N3',
         explanation: [
@@ -9756,7 +9756,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_sou_mo_nai': {
         id: 'n3_sou_mo_nai',
         pattern: 'そうもない',
-        connection: '動詞ます形 + そうもない',
+        connection: '動詞{どうし}ます形{けい} + そうもない',
         translation: '看來不...; 不太可能...',
         level: 'N3',
         explanation: [
@@ -9832,7 +9832,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_sou_mo_nai_sou_ni_nai': {
         id: 'n3_sou_mo_nai_sou_ni_nai',
         pattern: 'そうもない /そうにない',
-        connection: '動詞ます形 + そうもない/そうにない',
+        connection: '動詞{どうし}ます形{けい} + そうもない/そうにない',
         translation: '看似不...; 沒什麼可能...',
         level: 'N3',
         explanation: [
@@ -9898,7 +9898,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_sude_ni': {
         id: 'n3_sude_ni',
         pattern: 'すでに',
-        connection: 'すでに + 動詞/形容詞',
+        connection: 'すでに + 動詞{どうし}/形容詞{けいようし}',
         translation: '已經',
         level: 'N3',
         explanation: [
@@ -10049,8 +10049,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_suuryou_wa': {
         id: 'n3_suuryou_wa',
-        pattern: '数量 + は',
-        connection: '數量詞 + は',
+        pattern: '数{すう}量{すうりょう} + は',
+        connection: '數量{すうりょう}{すうりょう}詞{し} + は',
         translation: '至少 (數量)',
         level: 'N3',
         explanation: [
@@ -10070,7 +10070,7 @@ export const n3Details: Record<string, GrammarPoint> = {
                 description: '暗示實際數量可能比說的更多。',
                 examples: [
                     { japanese: '一万円{いちまんえん}はするだろう。', chinese: '至少要一萬日圓吧。' },
-                    { japanese: '二キロは歩{ある}いた。', chinese: '至少走了兩公里。' },
+                    { japanese: '二{に}キロは歩{ある}いた。', chinese: '至少走了兩公里。' },
                     { japanese: '「いくらかかった？」\n「五万円{ごまんえん}はかかったね。」', chinese: '「花了多少？」\n「至少花了五萬日圓。」' }
                 ]
             }
@@ -10125,8 +10125,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_suuryou_wa_1': {
         id: 'n3_suuryou_wa_1',
-        pattern: '数量 + は（すうりょう + は）',
-        connection: '數量詞 + は',
+        pattern: '数{すう}量{すうりょう} + は',
+        connection: '數量{すうりょう}{すうりょう}詞{し} + は',
         translation: '至少...',
         level: 'N3',
         explanation: [
@@ -10135,8 +10135,8 @@ export const n3Details: Record<string, GrammarPoint> = {
                 title: '與「も」的對比',
                 description: '「數量＋は」表示最少，「數量＋も」表示數量很多（意外、驚訝）。',
                 examples: [
-                    { japanese: '十冊{じゅっさつ}は読{よ}んだ。（至少10本）', chinese: '至少讀了十本。' },
-                    { japanese: '十冊{じゅっさつ}も読{よ}んだ。（竟然10本）', chinese: '竟然讀了十本。' },
+                    { japanese: '十冊{じゅっさつ}は読{よ}んだ。（至{し}少{しょう}10本{ほん}）', chinese: '至少讀了十本。' },
+                    { japanese: '十冊{じゅっさつ}も読{よ}んだ。（竟{きょう}然{ぜん}10本{ほん}）', chinese: '竟然讀了十本。' },
                     { japanese: '「どのくらい必要{ひつよう}？」\n「十個{じゅっこ}は必要{ひつよう}だよ。」', chinese: '「需要多少？」\n「至少需要十個。」' }
                 ]
             }
@@ -10192,7 +10192,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ta_mono_da': {
         id: 'n3_ta_mono_da',
         pattern: 'たものだ',
-        connection: '動詞た形 + ものだ',
+        connection: '動詞{どうし}た形{けい} + ものだ',
         translation: '過去經常...; 曾經...',
         level: 'N3',
         explanation: [
@@ -10268,7 +10268,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_ta_totan': {
         id: 'n3_ta_totan',
         pattern: 'たとたん',
-        connection: '動詞た形 + とたん（に）',
+        connection: '動詞{どうし}た形{けい} + とたん（に）',
         translation: '剛一...就...',
         level: 'N3',
         explanation: [
@@ -10344,7 +10344,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tabi_ni': {
         id: 'n3_tabi_ni',
         pattern: 'たびに',
-        connection: '動詞辞書形/名詞の + たびに',
+        connection: '動詞{どうし}辞書{じしょ}形{けい}/名詞{めいし}の + たびに',
         translation: '每當...時',
         level: 'N3',
         explanation: [
@@ -10420,7 +10420,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tame_ni': {
         id: 'n3_tame_ni',
         pattern: 'ために',
-        connection: '名詞の/動詞辞書形 + ために',
+        connection: '名詞{めいし}の/動詞{どうし}辞書{じしょ}形{けい} + ために',
         translation: '為了...; 因為...',
         level: 'N3',
         explanation: [
@@ -10495,8 +10495,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_tashika_ni': {
         id: 'n3_tashika_ni',
-        pattern: '確かに',
-        connection: '確かに + 文',
+        pattern: '確{たし}かに',
+        connection: '確{たし}かに + 文{ぶん}',
         translation: '確實; 的確',
         level: 'N3',
         explanation: [
@@ -10571,8 +10571,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_tashika_ni_1': {
         id: 'n3_tashika_ni_1',
-        pattern: '確かに（たしかに）',
-        connection: '確かに + 文、しかし/けど...',
+        pattern: '確{たし}かに',
+        connection: '確{たし}かに + 文{ぶん}、しかし/けど...',
         translation: '的確; 確實',
         level: 'N3',
         explanation: [
@@ -10638,7 +10638,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tate': {
         id: 'n3_tate',
         pattern: 'たて',
-        connection: '動詞ます形 + たて',
+        connection: '動詞{どうし}ます形{けい} + たて',
         translation: '剛...完 (新鮮狀態)',
         level: 'N3',
         explanation: [
@@ -10675,7 +10675,7 @@ export const n3Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n3_quiz_tate_1',
-                sentence: '揚{あ}げ（　）の天ぷらは最高{さいこう}だ。',
+                sentence: '揚{あ}げ（　）の天{てん}ぷらは最高{さいこう}だ。',
                 options: ['たて', 'がち', 'っぽい', 'ぎみ'],
                 correctIndex: 0,
                 explanation: '剛炸好的天婦羅最棒。'
@@ -10713,8 +10713,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_tatoeba': {
         id: 'n3_tatoeba',
-        pattern: '例えば',
-        connection: '例えば + 例子',
+        pattern: '例{れい}えば',
+        connection: '例{れい}えば + 例{れい}子{し}',
         translation: '例如; 比如',
         level: 'N3',
         explanation: [
@@ -10789,8 +10789,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_tatoeba_1': {
         id: 'n3_tatoeba_1',
-        pattern: '例えば（たとえば）',
-        connection: '例えば + 具體例子 + など',
+        pattern: '例{れい}えば（たとえば）',
+        connection: '例{れい}えば + 具體例{れい}子{し} + など',
         translation: '例如; 譬如',
         level: 'N3',
         explanation: [
@@ -10856,7 +10856,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tatoe_temo': {
         id: 'n3_tatoe_temo',
         pattern: 'たとえ～ても',
-        connection: 'たとえ + 動詞ても/形容詞くても/名詞でも',
+        connection: 'たとえ + 動詞{どうし}ても/形容詞{けいようし}くても/名詞{めいし}でも',
         translation: '即使...也...',
         level: 'N3',
         explanation: [
@@ -10932,7 +10932,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tatte': {
         id: 'n3_tatte',
         pattern: 'たって',
-        connection: '動詞た形/い形容詞く/名詞だ + ったって',
+        connection: '動詞{どうし}た形{けい}/い形容詞{けいようし}く/名詞{めいし}だ + ったって',
         translation: '即使...也... (口語)',
         level: 'N3',
         explanation: [
@@ -11008,7 +11008,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_te_bakari_iru': {
         id: 'n3_te_bakari_iru',
         pattern: 'てばかりいる',
-        connection: '動詞て形 + ばかりいる',
+        connection: '動詞{どうし}て形{けい} + ばかりいる',
         translation: '老是在做...; 淨是在...',
         level: 'N3',
         explanation: [
@@ -11084,7 +11084,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_te_goran': {
         id: 'n3_te_goran',
         pattern: 'てごらん',
-        connection: '動詞て形 + ごらん',
+        connection: '動詞{どうし}て形{けい} + ごらん',
         translation: '試試看做... (命令委婉)',
         level: 'N3',
         explanation: [
@@ -11150,7 +11150,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_te_hajimete': {
         id: 'n3_te_hajimete',
         pattern: 'てはじめて',
-        connection: '動詞て形 + はじめて',
+        connection: '動詞{どうし}て形{けい} + はじめて',
         translation: '直到...才...; 做了...之後才明白',
         level: 'N3',
         explanation: [
@@ -11216,7 +11216,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_te_kara_de_nai_to': {
         id: 'n3_te_kara_de_nai_to',
         pattern: 'てからでないと',
-        connection: '動詞て形 + からでないと',
+        connection: '動詞{どうし}て形{けい} + からでないと',
         translation: '如果不先做...的話',
         level: 'N3',
         explanation: [
@@ -11282,7 +11282,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_te_shou_ga_nai': {
         id: 'n3_te_shou_ga_nai',
         pattern: 'てしょうがない',
-        connection: '動詞て形/い形容詞くて/な形容詞で + しょうがない',
+        connection: '動詞{どうし}て形{けい}/い形容詞{けいようし}くて/な形容詞{けいようし}で + しょうがない',
         translation: '...得不得了; 沒辦法不...',
         level: 'N3',
         explanation: [
@@ -11348,7 +11348,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_te_shou_ga_nai_te_shikata_ga_nai': {
         id: 'n3_te_shou_ga_nai_te_shikata_ga_nai',
         pattern: 'てしょうがない・てしかたがない',
-        connection: '動詞て形/い形容詞くて/な形容詞で + しょうがない/しかたがない',
+        connection: '動詞{どうし}て形{けい}/い形容詞{けいようし}くて/な形容詞{けいようし}で + しょうがない/しかたがない',
         translation: '非常...; ...得不得了',
         level: 'N3',
         explanation: [
@@ -11413,8 +11413,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_te_sumu': {
         id: 'n3_te_sumu',
-        pattern: 'て済む',
-        connection: '動詞て形 + 済む',
+        pattern: 'て済{す}む',
+        connection: '動詞{どうし}て形{けい} + 済{す}む',
         translation: '...就能解決; ...就算了',
         level: 'N3',
         explanation: [
@@ -11423,9 +11423,9 @@ export const n3Details: Record<string, GrammarPoint> = {
                 title: '表示用某方式就能解決',
                 description: '「て済む」表示只要做某事就能解決問題或完成事情，暗示比預想的簡單。',
                 examples: [
-                    { japanese: '謝{あやま}って済む問題{もんだい}ではない。', chinese: '這不是道歉就能了事的問題。' },
-                    { japanese: '少{すこ}しの修理{しゅうり}で済んだ。', chinese: '只需要小修理就解決了。' },
-                    { japanese: '「手術{しゅじゅつ}必要{ひつよう}？」\n「薬{くすり}を飲{の}んで済むそうだ。」', chinese: '「需要手術嗎？」\n「聽說吃藥就可以了。」' }
+                    { japanese: '謝{あやま}って済{す}む問題{もんだい}ではない。', chinese: '這不是道歉就能了事的問題。' },
+                    { japanese: '少{すこ}しの修理{しゅうり}で済{す}んだ。', chinese: '只需要小修理就解決了。' },
+                    { japanese: '「手術{しゅじゅつ}必要{ひつよう}？」\n「薬{くすり}を飲{の}んで済{す}むそうだ。」', chinese: '「需要手術嗎？」\n「聽說吃藥就可以了。」' }
                 ]
             }
         ],
@@ -11479,8 +11479,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_te_sumu_1': {
         id: 'n3_te_sumu_1',
-        pattern: 'て済む（てすむ）',
-        connection: '動詞て形/名詞で + 済む',
+        pattern: 'て済{す}む',
+        connection: '動詞{どうし}て形{けい}/名詞{めいし}で + 済{す}む',
         translation: '...就解決了',
         level: 'N3',
         explanation: [
@@ -11489,9 +11489,9 @@ export const n3Details: Record<string, GrammarPoint> = {
                 title: '表示事情以某種方式收場',
                 description: '「て済む」表示問題或事情以某種方式就能解決或結束，常暗示輕鬆解決或僥倖脫身。',
                 examples: [
-                    { japanese: '今回{こんかい}は警告{けいこく}で済んだ。', chinese: '這次只是被警告就過去了。' },
-                    { japanese: '怪我{けが}がなくて済んだ。', chinese: '沒有受傷就好。' },
-                    { japanese: '「事故{じこ}大丈夫{だいじょうぶ}だった？」\n「車{くるま}がへこんだだけで済んだ。」', chinese: '「事故還好嗎？」\n「只是車凹了就沒事了。」' }
+                    { japanese: '今回{こんかい}は警告{けいこく}で済{す}んだ。', chinese: '這次只是被警告就過去了。' },
+                    { japanese: '怪我{けが}がなくて済{す}んだ。', chinese: '沒有受傷就好。' },
+                    { japanese: '「事故{じこ}大丈夫{だいじょうぶ}だった？」\n「車{くるま}がへこんだだけで済{す}んだ。」', chinese: '「事故還好嗎？」\n「只是車凹了就沒事了。」' }
                 ]
             }
         ],
@@ -11546,7 +11546,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_te_wa_ikenai_kara': {
         id: 'n3_te_wa_ikenai_kara',
         pattern: 'てはいけないから',
-        connection: '動詞て形 + はいけないから',
+        connection: '動詞{どうし}て形{けい} + はいけないから',
         translation: '因為不能做...所以...',
         level: 'N3',
         explanation: [
@@ -11611,8 +11611,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_teiru_baai_janai': {
         id: 'n3_teiru_baai_janai',
-        pattern: 'ている場合じゃない',
-        connection: '動詞て形 + いる場合じゃない',
+        pattern: 'ている場合{ばあい}{ばあい}じゃない',
+        connection: '動詞{どうし}て形{けい} + いる場合{ばあい}じゃない',
         translation: '現在不是在做...的時候',
         level: 'N3',
         explanation: [
@@ -11677,8 +11677,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_teiru_baai_janai_1': {
         id: 'n3_teiru_baai_janai_1',
-        pattern: 'ている場合じゃない（ているばあいじゃない）',
-        connection: '動詞て形 + いる場合じゃない',
+        pattern: 'ている場合{ばあい}{ばあい}じゃない',
+        connection: '動詞{どうし}て形{けい} + いる場合{ばあい}じゃない',
         translation: '不是...的時候',
         level: 'N3',
         explanation: [
@@ -11743,8 +11743,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_teki': {
         id: 'n3_teki',
-        pattern: '的',
-        connection: '名詞 + 的',
+        pattern: '的{てき}',
+        connection: '名詞{めいし} + 的{てき}',
         translation: '的; ...的 (名詞化形容詞)',
         level: 'N3',
         explanation: [
@@ -11799,7 +11799,7 @@ export const n3Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n3_quiz_teki_5',
-                sentence: '「彼{かれ}の話{はなし}わかった？」\n「抽象{ちゅうしょう}（　）でよくわからなかった。」',
+                sentence: '「彼{かれ}の話{はなし}わかった？」\n「抽象{ちゅうしょう}{ちゅうしょう}（　）でよくわからなかった。」',
                 options: ['的', 'ため', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '對話情境。太抽象聽不太懂。'
@@ -11809,8 +11809,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_teki_1': {
         id: 'n3_teki_1',
-        pattern: '的（てき）',
-        connection: '名詞 + 的（な/に）',
+        pattern: '的{てき}（てき）',
+        connection: '名詞{めいし} + 的{てき}（な/に）',
         translation: '...地; ...的',
         level: 'N3',
         explanation: [
@@ -11875,8 +11875,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_temo_hajimaranai': {
         id: 'n3_temo_hajimaranai',
-        pattern: 'ても始まらない',
-        connection: '動詞て形/い形容詞くて/な形容詞で + も始まらない',
+        pattern: 'ても始{はじ}まらない',
+        connection: '動詞{どうし}て形{けい}/い形容詞{けいようし}くて/な形容詞{けいようし}で + も始{はじ}まらない',
         translation: '即使...也沒用',
         level: 'N3',
         explanation: [
@@ -11941,8 +11941,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_temo_hajimaranai_1': {
         id: 'n3_temo_hajimaranai_1',
-        pattern: 'ても始まらない（てもはじまらない）',
-        connection: '動詞て形/い形容詞くて/な形容詞で + も始まらない',
+        pattern: 'ても始{はじ}まらない',
+        connection: '動詞{どうし}て形{けい}/い形容詞{けいようし}くて/な形容詞{けいようし}で + も始{はじ}まらない',
         translation: '就算...也沒用',
         level: 'N3',
         explanation: [
@@ -12007,8 +12007,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_temo_kamawanai': {
         id: 'n3_temo_kamawanai',
-        pattern: 'ても構わない',
-        connection: '動詞て形/い形容詞くて/な形容詞で + も構わない',
+        pattern: 'ても構{かま}わない',
+        connection: '動詞{どうし}て形{けい}/い形容詞{けいようし}くて/な形容詞{けいようし}で + も構{かま}わない',
         translation: '即使用...也沒關係',
         level: 'N3',
         explanation: [
@@ -12073,8 +12073,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_temo_kamawanai_1': {
         id: 'n3_temo_kamawanai_1',
-        pattern: 'ても構わない（てもかまわない）',
-        connection: '動詞て形/い形容詞くて/な形容詞で + も構わない',
+        pattern: 'ても構{かま}わない',
+        connection: '動詞{どうし}て形{けい}/い形容詞{けいようし}くて/な形容詞{けいようし}で + も構{かま}わない',
         translation: '就算...也沒關係',
         level: 'N3',
         explanation: [
@@ -12140,7 +12140,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_temo_shou_ga_nai': {
         id: 'n3_temo_shou_ga_nai',
         pattern: 'てもしょうがない',
-        connection: '動詞て形/い形容詞くて/な形容詞で + もしょうがない',
+        connection: '動詞{どうし}て形{けい}/い形容詞{けいようし}くて/な形容詞{けいようし}で + もしょうがない',
         translation: '即使...也沒辦法',
         level: 'N3',
         explanation: [
@@ -12206,7 +12206,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_temo_shou_ga_nai_temo_shikata_ga_nai': {
         id: 'n3_temo_shou_ga_nai_temo_shikata_ga_nai',
         pattern: 'てもしょうがない / てもしかたがない',
-        connection: '動詞て形/い形容詞くて/な形容詞で + もしょうがない/もしかたがない',
+        connection: '動詞{どうし}て形{けい}/い形容詞{けいようし}くて/な形容詞{けいようし}で + もしょうがない/もしかたがない',
         translation: '即使...也沒用; 沒辦法',
         level: 'N3',
         explanation: [
@@ -12271,8 +12271,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_to_ieba': {
         id: 'n3_to_ieba',
-        pattern: 'と言えば',
-        connection: '名詞/句子 + と言えば',
+        pattern: 'と言{い}えば',
+        connection: '名詞{めいし}/句{く}子{し} + と言{い}えば',
         translation: '說到...; 談起...',
         level: 'N3',
         explanation: [
@@ -12337,8 +12337,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_to_ieba_1': {
         id: 'n3_to_ieba_1',
-        pattern: 'と言えば（といえば）',
-        connection: '名詞/句子 + と言えば',
+        pattern: 'と言{い}えば',
+        connection: '名詞{めいし}/句{く}子{し} + と言{い}えば',
         translation: '提起...; 說到...',
         level: 'N3',
         explanation: [
@@ -12404,7 +12404,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_to_ii': {
         id: 'n3_to_ii',
         pattern: 'といい',
-        connection: '動詞辭書形/ない形 + といい',
+        connection: '動詞{どうし}辭書{じしょ}形{けい}/ない形{けい} + といい',
         translation: '要是...就好了',
         level: 'N3',
         explanation: [
@@ -12470,7 +12470,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_to_ii_tara_ii': {
         id: 'n3_to_ii_tara_ii',
         pattern: 'といい / たらいい',
-        connection: '動詞辭書形 + といい / 動詞た形 + らいい',
+        connection: '動詞{どうし}辭書{じしょ}形{けい} + といい / 動詞{どうし}た形{けい} + らいい',
         translation: '要是...就好了',
         level: 'N3',
         explanation: [
@@ -12536,7 +12536,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_to_ittemo': {
         id: 'n3_to_ittemo',
         pattern: 'といっても',
-        connection: '句子 + といっても',
+        connection: '句{く}子{し} + といっても',
         translation: '雖說...但是...',
         level: 'N3',
         explanation: [
@@ -12602,7 +12602,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_to_iu_koto_da': {
         id: 'n3_to_iu_koto_da',
         pattern: 'ということだ',
-        connection: '句子 + ということだ',
+        connection: '句{く}子{し} + ということだ',
         translation: '據說...; 也就是說...',
         level: 'N3',
         explanation: [
@@ -12668,7 +12668,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_to_iu_nowa': {
         id: 'n3_to_iu_nowa',
         pattern: 'というのは',
-        connection: '名詞/句子 + というのは',
+        connection: '名詞{めいし}/句{く}子{し} + というのは',
         translation: '所謂的...; ...是因為...',
         level: 'N3',
         explanation: [
@@ -12733,8 +12733,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_to_iu_to': {
         id: 'n3_to_iu_to',
-        pattern: 'と言うと',
-        connection: '名詞/句子 + と言うと',
+        pattern: 'と言{い}うと',
+        connection: '名詞{めいし}/句{く}子{し} + と言{い}うと',
         translation: '說起...; 提起...',
         level: 'N3',
         explanation: [
@@ -12799,8 +12799,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_to_iu_to_1': {
         id: 'n3_to_iu_to_1',
-        pattern: 'と言うと（というと）',
-        connection: '名詞/句子 + と言うと',
+        pattern: 'と言{い}うと（というと）',
+        connection: '名詞{めいし}/句{く}子{し} + と言{い}うと',
         translation: '提起...; 說到...',
         level: 'N3',
         explanation: [
@@ -12866,7 +12866,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_to_iu_yori': {
         id: 'n3_to_iu_yori',
         pattern: 'というより',
-        connection: '名詞/形容詞/句子 + というより',
+        connection: '名詞{めいし}/形容詞{けいようし}/句{く}子{し} + というより',
         translation: '與其說...不如說...',
         level: 'N3',
         explanation: [
@@ -12932,7 +12932,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_to_mieru': {
         id: 'n3_to_mieru',
         pattern: 'とみえる',
-        connection: '句子 + とみえる',
+        connection: '句{く}子{し} + とみえる',
         translation: '看來...; 似乎...',
         level: 'N3',
         explanation: [
@@ -12998,7 +12998,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_to_mieru_to_miete': {
         id: 'n3_to_mieru_to_miete',
         pattern: 'とみえる / とみえて',
-        connection: '句子 + とみえる/とみえて',
+        connection: '句{く}子{し} + とみえる/とみえて',
         translation: '看來...; 似乎...',
         level: 'N3',
         explanation: [
@@ -13064,7 +13064,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_to_sureba': {
         id: 'n3_to_sureba',
         pattern: 'とすれば',
-        connection: '句子 + とすれば',
+        connection: '句{く}子{し} + とすれば',
         translation: '假設...; 如果是...',
         level: 'N3',
         explanation: [
@@ -13130,7 +13130,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_to_sureba_to_shitara_to_suru_to': {
         id: 'n3_to_sureba_to_shitara_to_suru_to',
         pattern: 'とすれば・としたら・とすると',
-        connection: '句子 + とすれば/としたら/とすると',
+        connection: '句{く}子{し} + とすれば/としたら/とすると',
         translation: '如果...的話',
         level: 'N3',
         explanation: [
@@ -13195,8 +13195,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_to_tomo_ni': {
         id: 'n3_to_tomo_ni',
-        pattern: 'と共に',
-        connection: '名詞/動詞辭書形 + と共に',
+        pattern: 'と共{とも}に',
+        connection: '名詞{めいし}/動詞{どうし}辭書{じしょ}形{けい} + と共{とも}に',
         translation: '與...一起; 同時...',
         level: 'N3',
         explanation: [
@@ -13261,8 +13261,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_to_tomo_ni_1': {
         id: 'n3_to_tomo_ni_1',
-        pattern: 'と共に（とともに）',
-        connection: '名詞/動詞辭書形 + と共に',
+        pattern: 'と共{とも}に',
+        connection: '名詞{めいし}/動詞{どうし}辭書{じしょ}形{けい} + と共{とも}に',
         translation: '伴隨著...; 同時...',
         level: 'N3',
         explanation: [
@@ -13327,8 +13327,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_tochuu_de': {
         id: 'n3_tochuu_de',
-        pattern: '途中で',
-        connection: '名詞の/動詞辭書形 + 途中で',
+        pattern: '途中{とちゅう}{とちゅう}で',
+        connection: '名詞{めいし}の/動詞{どうし}辭書{じしょ}形{けい} + 途中{とちゅう}{とちゅう}で',
         translation: '在...途中',
         level: 'N3',
         explanation: [
@@ -13393,8 +13393,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_tochuu_de_tochuu_ni': {
         id: 'n3_tochuu_de_tochuu_ni',
-        pattern: '途中で/途中に（とちゅうで/とちゅうに）',
-        connection: '名詞の/動詞辭書形 + 途中で/途中に',
+        pattern: '途中{とちゅう}{とちゅう}で/途中{とちゅう}{とちゅう}に',
+        connection: '名詞{めいし}の/動詞{どうし}辭書{じしょ}形{けい} + 途中{とちゅう}{とちゅう}で/途中{とちゅう}{とちゅう}に',
         translation: '在...中途',
         level: 'N3',
         explanation: [
@@ -13460,7 +13460,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tokoro_de': {
         id: 'n3_tokoro_de',
         pattern: 'ところで',
-        connection: '（句首使用）',
+        connection: '（句{く}首{しゅ}使{し}用{よう}）',
         translation: '順便一提; 話說...',
         level: 'N3',
         explanation: [
@@ -13526,7 +13526,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tokoro_ga': {
         id: 'n3_tokoro_ga',
         pattern: 'ところが',
-        connection: '（句首使用）',
+        connection: '（句{く}首{しゅ}使{し}用{よう}）',
         translation: '然而; 可是',
         level: 'N3',
         explanation: [
@@ -13592,7 +13592,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_toori_ni': {
         id: 'n3_toori_ni',
         pattern: 'とおりに',
-        connection: '名詞の/動詞た形/動詞辭書形 + とおりに',
+        connection: '名詞{めいし}の/動詞{どうし}た形{けい}/動詞{どうし}辭書{じしょ}形{けい} + とおりに',
         translation: '按照...; 正如...',
         level: 'N3',
         explanation: [
@@ -13657,8 +13657,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_toosu': {
         id: 'n3_toosu',
-        pattern: '通す',
-        connection: '動詞ます形 + 通す',
+        pattern: '通{とお}す',
+        connection: '動詞{どうし}ます形{けい} + 通{とお}す',
         translation: '貫通...; 堅持...到底',
         level: 'N3',
         explanation: [
@@ -13723,8 +13723,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_toosu_1': {
         id: 'n3_toosu_1',
-        pattern: '通す（とおす）',
-        connection: '動詞ます形 + 通す',
+        pattern: '通{とお}す',
+        connection: '動詞{どうし}ます形{けい} + 通{とお}す',
         translation: '堅持...到底; 穿過...',
         level: 'N3',
         explanation: [
@@ -13790,7 +13790,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_toshite': {
         id: 'n3_toshite',
         pattern: 'として',
-        connection: '名詞 + として',
+        connection: '名詞{めいし} + として',
         translation: '作為...; 以...身份',
         level: 'N3',
         explanation: [
@@ -13856,7 +13856,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_totemo_nai': {
         id: 'n3_totemo_nai',
         pattern: 'とても～ない',
-        connection: 'とても + 動詞否定形/い形容詞否定形',
+        connection: 'とても + 動詞{どうし}否定{ひてい}形{けい}/い形容詞{けいようし}否定{ひてい}形{けい}',
         translation: '怎麼也辦不到; 根本不...',
         level: 'N3',
         explanation: [
@@ -13921,8 +13921,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_towa_kagiranai': {
         id: 'n3_towa_kagiranai',
-        pattern: 'とは限らない',
-        connection: '句子/名詞 + とは限らない',
+        pattern: 'とは限{かぎ}らない',
+        connection: '句{く}子{し}/名詞{めいし} + とは限{かぎ}らない',
         translation: '不一定...; 未必...',
         level: 'N3',
         explanation: [
@@ -13987,8 +13987,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_towa_kagiranai_1': {
         id: 'n3_towa_kagiranai_1',
-        pattern: 'とは限らない（とはかぎらない）',
-        connection: '句子/名詞 + とは限らない',
+        pattern: 'とは限{かぎ}らない',
+        connection: '句{く}子{し}/名詞{めいし} + とは限{かぎ}らない',
         translation: '不必然...; 不一定...',
         level: 'N3',
         explanation: [
@@ -14054,7 +14054,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tsui': {
         id: 'n3_tsui',
         pattern: 'つい',
-        connection: 'つい + 動詞',
+        connection: 'つい + 動詞{どうし}',
         translation: '不自覺地; 忍不住...',
         level: 'N3',
         explanation: [
@@ -14120,7 +14120,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tsui_ni': {
         id: 'n3_tsui_ni',
         pattern: 'ついに',
-        connection: 'ついに + 動詞',
+        connection: 'ついに + 動詞{どうし}',
         translation: '終於; 總算',
         level: 'N3',
         explanation: [
@@ -14186,7 +14186,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tsuide_ni': {
         id: 'n3_tsuide_ni',
         pattern: 'ついでに',
-        connection: '動詞辭書形/動詞た形 + ついでに / 名詞の + ついでに',
+        connection: '動詞{どうし}辭書{じしょ}形{けい}/動詞{どうし}た形{けい} + ついでに / 名詞{めいし}の + ついでに',
         translation: '順便',
         level: 'N3',
         explanation: [
@@ -14252,7 +14252,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tsumari': {
         id: 'n3_tsumari',
         pattern: 'つまり',
-        connection: '（句首使用）',
+        connection: '（句{く}首{しゅ}使{し}用{よう}）',
         translation: '也就是說; 總之',
         level: 'N3',
         explanation: [
@@ -14318,7 +14318,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tsumori_datta': {
         id: 'n3_tsumori_datta',
         pattern: 'つもりだった',
-        connection: '動詞辭書形/動詞ない形 + つもりだった',
+        connection: '動詞{どうし}辭書{じしょ}形{けい}/動詞{どうし}ない形{けい} + つもりだった',
         translation: '原打算...; 我以為...',
         level: 'N3',
         explanation: [
@@ -14384,7 +14384,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_tsumori_de': {
         id: 'n3_tsumori_de',
         pattern: 'つもりで',
-        connection: '動詞た形/名詞の + つもりで',
+        connection: '動詞{どうし}た形{けい}/名詞{めいし}の + つもりで',
         translation: '帶著...的心情; 打算...',
         level: 'N3',
         explanation: [
@@ -14450,7 +14450,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_uchi_ni': {
         id: 'n3_uchi_ni',
         pattern: 'うちに',
-        connection: '動詞辭書形/動詞ない形/い形容詞い/な形容詞な/名詞の + うちに',
+        connection: '動詞{どうし}辭書{じしょ}形{けい}/動詞{どうし}ない形{けい}/い形容詞{けいようし}い/な形容詞{けいようし}な/名詞{めいし}の + うちに',
         translation: '在...期間; 趁著...',
         level: 'N3',
         explanation: [
@@ -14515,8 +14515,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_ue_de': {
         id: 'n3_ue_de',
-        pattern: '上で',
-        connection: '動詞た形/名詞の + 上で',
+        pattern: '上{うえ}で',
+        connection: '動詞{どうし}た形{けい}/名詞{めいし}の + 上{うえ}で',
         translation: '在...之後; 在...基礎上',
         level: 'N3',
         explanation: [
@@ -14581,8 +14581,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_ue_de_1': {
         id: 'n3_ue_de_1',
-        pattern: '上で（うえで）',
-        connection: '名詞の + 上で',
+        pattern: '上{うえ}で',
+        connection: '名詞{めいし}の + 上{うえ}で',
         translation: '在...之後; 關於...',
         level: 'N3',
         explanation: [
@@ -14647,8 +14647,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_ue_ni': {
         id: 'n3_ue_ni',
-        pattern: '上に',
-        connection: '動詞辭書形/い形容詞い/な形容詞な/名詞の/名詞である + 上に',
+        pattern: '上{うえ}に',
+        connection: '動詞{どうし}辭書{じしょ}形{けい}/い形容詞{けいようし}い/な形容詞{けいようし}な/名詞{めいし}の/名詞{めいし}である + 上{うえ}に',
         translation: '不僅...而且...',
         level: 'N3',
         explanation: [
@@ -14713,8 +14713,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_ue_ni_1': {
         id: 'n3_ue_ni_1',
-        pattern: '上に（うえに）',
-        connection: '動詞辭書形/い形容詞い/な形容詞な/名詞の + 上に',
+        pattern: '上{うえ}に',
+        connection: '動詞{どうし}辭書{じしょ}形{けい}/い形容詞{けいようし}い/な形容詞{けいようし}な/名詞{めいし}の + 上{うえ}に',
         translation: '不僅...而且...; 再加上...',
         level: 'N3',
         explanation: [
@@ -14779,8 +14779,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_wa_betsu_toshite': {
         id: 'n3_wa_betsu_toshite',
-        pattern: 'は別として',
-        connection: '名詞 + は別として',
+        pattern: 'は別{べつ}として',
+        connection: '名詞{めいし} + は別{べつ}として',
         translation: '姑且不論; ...另當別論',
         level: 'N3',
         explanation: [
@@ -14845,8 +14845,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_wa_betsu_toshite_1': {
         id: 'n3_wa_betsu_toshite_1',
-        pattern: 'は別として（はべつとして）',
-        connection: '名詞 + は別として',
+        pattern: 'は別{べつ}として',
+        connection: '名詞{めいし} + は別{べつ}として',
         translation: '除...之外; 另當別論',
         level: 'N3',
         explanation: [
@@ -14912,7 +14912,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_wa_mochiron': {
         id: 'n3_wa_mochiron',
         pattern: 'はもちろん',
-        connection: '名詞 + はもちろん',
+        connection: '名詞{めいし} + はもちろん',
         translation: '不用說...也...; ...是當然的',
         level: 'N3',
         explanation: [
@@ -14978,7 +14978,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_wake_da': {
         id: 'n3_wake_da',
         pattern: 'わけだ',
-        connection: '句子 + わけだ',
+        connection: '句{く}子{し} + わけだ',
         translation: '當然...; 也就是說...',
         level: 'N3',
         explanation: [
@@ -15044,7 +15044,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_wake_dewa_nai': {
         id: 'n3_wake_dewa_nai',
         pattern: 'わけではない',
-        connection: '句子 + わけではない',
+        connection: '句{く}子{し} + わけではない',
         translation: '並非...; 不見得...',
         level: 'N3',
         explanation: [
@@ -15110,7 +15110,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_wake_ga_nai': {
         id: 'n3_wake_ga_nai',
         pattern: 'わけがない',
-        connection: '句子 + わけがない',
+        connection: '句{く}子{し} + わけがない',
         translation: '絕不可能...; 沒有理由...',
         level: 'N3',
         explanation: [
@@ -15176,7 +15176,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_wake_niwa_ikanai': {
         id: 'n3_wake_niwa_ikanai',
         pattern: 'わけにはいかない',
-        connection: '動詞辭書形/動詞ない形 + わけにはいかない',
+        connection: '動詞{どうし}辭書{じしょ}形{けい}/動詞{どうし}ない形{けい} + わけにはいかない',
         translation: '不能...; 不可以...',
         level: 'N3',
         explanation: [
@@ -15241,8 +15241,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_wari_ni': {
         id: 'n3_wari_ni',
-        pattern: '割に',
-        connection: '動詞普通形/い形容詞/な形容詞＋な/名詞＋の + 割に',
+        pattern: '割{わり}{わり}に',
+        connection: '動詞{どうし}普通{ふつう}形{けい}/い形容詞{けいようし}/な形容詞{けいようし}＋な/名詞{めいし}＋の + 割{わり}{わり}に',
         translation: '以...而言算是...; 雖然...卻...',
         level: 'N3',
         explanation: [
@@ -15307,8 +15307,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_wari_ni_1': {
         id: 'n3_wari_ni_1',
-        pattern: '割に（わりに）',
-        connection: '動詞普通形/形容詞/名詞＋の + 割に（は）',
+        pattern: '割{わり}{わり}に',
+        connection: '動詞{どうし}普通{ふつう}形{けい}/形容詞{けいようし}/名詞{めいし}＋の + 割{わり}{わり}に（は）',
         translation: '相對地; 比較起來',
         level: 'N3',
         explanation: [
@@ -15374,7 +15374,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_wazato': {
         id: 'n3_wazato',
         pattern: 'わざと',
-        connection: 'わざと + 動詞',
+        connection: 'わざと + 動詞{どうし}',
         translation: '故意; 特意',
         level: 'N3',
         explanation: [
@@ -15440,7 +15440,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_wazawaza': {
         id: 'n3_wazawaza',
         pattern: 'わざわざ',
-        connection: 'わざわざ + 動詞',
+        connection: 'わざわざ + 動詞{どうし}',
         translation: '特地; 專程',
         level: 'N3',
         explanation: [
@@ -15505,8 +15505,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_wa_de_yuumei': {
         id: 'n3_wa_de_yuumei',
-        pattern: 'は～で有名',
-        connection: '名詞は + 名詞/動詞普通形こと + で有名',
+        pattern: 'は～で有名{ゆうめい}{ゆうめい}',
+        connection: '名詞{めいし}は + 名詞{めいし}/動詞{どうし}普通{ふつう}形{けい}こと + で有名{ゆうめい}',
         translation: '以...聞名; 因...而有名',
         level: 'N3',
         explanation: [
@@ -15571,8 +15571,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_wa_de_yuumei_1': {
         id: 'n3_wa_de_yuumei_1',
-        pattern: 'は～で有名だ',
-        connection: '名詞は + 名詞/こと + で有名だ',
+        pattern: 'は～で有名{ゆうめい}{ゆうめい}だ',
+        connection: '名詞{めいし}は + 名詞{めいし}/こと + で有名{ゆうめい}だ',
         translation: '因...而出名; 以...著稱',
         level: 'N3',
         explanation: [
@@ -15638,7 +15638,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_yorimo': {
         id: 'n3_yorimo',
         pattern: 'よりも',
-        connection: '名詞 + よりも',
+        connection: '名詞{めいし} + よりも',
         translation: '比起...; 與...相比',
         level: 'N3',
         explanation: [
@@ -15704,7 +15704,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_you_ga_nai': {
         id: 'n3_you_ga_nai',
         pattern: 'ようがない',
-        connection: '動詞ます形 + ようがない',
+        connection: '動詞{どうし}ます形{けい} + ようがない',
         translation: '沒辦法...; 無法...',
         level: 'N3',
         explanation: [
@@ -15769,8 +15769,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_you_na_ki_ga_suru': {
         id: 'n3_you_na_ki_ga_suru',
-        pattern: 'ような気がする',
-        connection: '動詞普通形/い形容詞/な形容詞＋な + ような気がする',
+        pattern: 'ような気{き}がする',
+        connection: '動詞{どうし}普通{ふつう}形{けい}/い形容詞{けいようし}/な形容詞{けいようし}＋な + ような気{き}がする',
         translation: '覺得好像...; 感覺像是...',
         level: 'N3',
         explanation: [
@@ -15835,8 +15835,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_you_na_ki_ga_suru_1': {
         id: 'n3_you_na_ki_ga_suru_1',
-        pattern: 'ような気がする（ようなきがする）',
-        connection: '動詞/形容詞普通形 + ような気がする',
+        pattern: 'ような気{き}がする（ようなきがする）',
+        connection: '動詞{どうし}/形容詞{けいようし}普通{ふつう}形{けい} + ような気{き}がする',
         translation: '有...的感覺; 似乎...',
         level: 'N3',
         explanation: [
@@ -15902,7 +15902,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_you_ni': {
         id: 'n3_you_ni',
         pattern: 'ように',
-        connection: '動詞辭書形/動詞ない形 + ように',
+        connection: '動詞{どうし}辭書{じしょ}形{けい}/動詞{どうし}ない形{けい} + ように',
         translation: '為了...; 以便...',
         level: 'N3',
         explanation: [
@@ -15967,8 +15967,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_you_ni_mieru': {
         id: 'n3_you_ni_mieru',
-        pattern: 'ように見える',
-        connection: '動詞普通形/い形容詞/な形容詞＋な + ように見える',
+        pattern: 'ように見{み}える',
+        connection: '動詞{どうし}普通{ふつう}形{けい}/い形容詞{けいようし}/な形容詞{けいようし}＋な + ように見{み}える',
         translation: '看起來像...; 似乎...',
         level: 'N3',
         explanation: [
@@ -16033,8 +16033,8 @@ export const n3Details: Record<string, GrammarPoint> = {
 
     'n3_you_ni_mieru_1': {
         id: 'n3_you_ni_mieru_1',
-        pattern: 'ように見える（ようにみえる）',
-        connection: '名詞＋の + ように見える',
+        pattern: 'ように見{み}える',
+        connection: '名詞{めいし}＋の + ように見{み}える',
         translation: '看起來像...; 外觀上像...',
         level: 'N3',
         explanation: [
@@ -16100,7 +16100,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_you_to_shinai': {
         id: 'n3_you_to_shinai',
         pattern: 'ようとしない',
-        connection: '動詞意志形 + としない',
+        connection: '動詞{どうし}{どうし}意志形{いしけい} + としない',
         translation: '不想...; 不願意...',
         level: 'N3',
         explanation: [
@@ -16166,7 +16166,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_you_to_suru': {
         id: 'n3_you_to_suru',
         pattern: 'ようとする',
-        connection: '動詞意志形 + とする',
+        connection: '動詞{どうし}{どうし}意志形{いしけい} + とする',
         translation: '正要...; 試圖...',
         level: 'N3',
         explanation: [
@@ -16232,7 +16232,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_zuni': {
         id: 'n3_zuni',
         pattern: 'ずに',
-        connection: '動詞ない形（去い）+ ずに',
+        connection: '動詞{どうし}ない形{けい}（去{きょ}い）+ ずに',
         translation: '不做...而...; 沒有...',
         level: 'N3',
         explanation: [
@@ -16298,7 +16298,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_zuni_wa_irarenai': {
         id: 'n3_zuni_wa_irarenai',
         pattern: 'ずにはいられない',
-        connection: '動詞ない形（去い）+ ずにはいられない',
+        connection: '動詞{どうし}ない形{けい}（去{きょ}い）+ ずにはいられない',
         translation: '忍不住...; 不能不...',
         level: 'N3',
         explanation: [
@@ -16364,7 +16364,7 @@ export const n3Details: Record<string, GrammarPoint> = {
     'n3_zutsu': {
         id: 'n3_zutsu',
         pattern: 'ずつ',
-        connection: '數量詞 + ずつ',
+        connection: '數量{すうりょう}{すうりょう}詞{し} + ずつ',
         translation: '每...; 各...',
         level: 'N3',
         explanation: [
