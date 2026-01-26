@@ -5,13 +5,29 @@
  */
 
 import { doc, getDoc, setDoc, collection, getDocs } from 'firebase/firestore'
-import { db } from '../config/firebase'
+import { db, auth } from '../config/firebase'
 import {
   NOVICE_STORIES,
   JOB_STORIES,
   CharacterStories,
   StageStory
 } from '../data/characterStories'
+
+/**
+ * 等待 Firebase Auth 準備好
+ */
+const waitForAuth = (): Promise<void> => {
+  return new Promise((resolve) => {
+    if (auth.currentUser) {
+      resolve()
+      return
+    }
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      unsubscribe()
+      resolve()
+    })
+  })
+}
 
 // 故事資料結構
 export interface StoryData {
@@ -48,6 +64,9 @@ export const loadAllStoriesFromFirebase = async (): Promise<Map<string, StageSto
   const newCache = new Map<string, StageStory[]>()
 
   try {
+    // 等待 Auth 準備好
+    await waitForAuth()
+
     const storiesRef = collection(db, 'characterStories')
     const snapshot = await getDocs(storiesRef)
 
@@ -105,6 +124,9 @@ export const saveStories = async (
   stories: StageStory[],
   updatedBy: string
 ): Promise<void> => {
+  // 等待 Auth 準備好
+  await waitForAuth()
+
   const docId = getCacheKey(jobId, gender)
   const storyRef = doc(db, 'characterStories', docId)
 
@@ -197,6 +219,9 @@ export const initializeStoriesInFirebase = async (updatedBy: string): Promise<vo
  */
 export const hasStoriesInFirebase = async (): Promise<boolean> => {
   try {
+    // 等待 Auth 準備好
+    await waitForAuth()
+
     const storiesRef = collection(db, 'characterStories')
     const snapshot = await getDocs(storiesRef)
     return !snapshot.empty

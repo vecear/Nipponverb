@@ -7,13 +7,17 @@ service cloud.firestore {
              request.auth.token.email == 'vecear@gmail.com';
     }
 
-    // 動態管理員檢查（從 config/admins 讀取）
+    // 從 config/admins 檢查是否為動態管理員
+    function isDynamicAdmin() {
+      let adminsDoc = /databases/$(database)/documents/config/admins;
+      return request.auth != null &&
+             exists(adminsDoc) &&
+             request.auth.token.email in get(adminsDoc).data.emails;
+    }
+
+    // 管理員檢查
     function isAdmin() {
-      return request.auth != null && (
-        isDefaultAdmin() ||
-        (exists(/databases/$(database)/documents/config/admins) &&
-         request.auth.token.email in get(/databases/$(database)/documents/config/admins).data.emails)
-      );
+      return isDefaultAdmin() || isDynamicAdmin();
     }
 
     // 確認是否為已登入使用者
