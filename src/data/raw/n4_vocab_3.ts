@@ -1,6 +1,6 @@
 import { VocabularyData } from '../types';
 
-export const n4Vocabulary_3: VocabularyData[] = [
+export const n4VocabPart3: VocabularyData[] = [
     { word: '利用', reading: 'りよう', meaning: 'use/utilization', meaning_zh: '利用', level: 'N4' },
     { word: '理由', reading: 'りゆう', meaning: 'reason', meaning_zh: '理由', level: 'N4' },
     { word: '留守', reading: 'るす', meaning: 'absence from home', meaning_zh: '不在家', level: 'N4' },

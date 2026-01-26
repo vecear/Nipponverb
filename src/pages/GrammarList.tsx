@@ -94,13 +94,13 @@ const GrammarList = () => {
 
                     {/* Search */}
                     <div className="relative w-full md:w-64">
-                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-indigo-900/40" size={18} />
+                        <Search className="absolute right-3 top-1/2 -translate-y-1/2 text-indigo-900/40 pointer-events-none" size={16} />
                         <input
                             type="text"
                             placeholder="搜尋文法..."
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            className="w-full bg-white/50 border border-indigo-900/10 rounded-xl py-2 pl-10 pr-4 text-indigo-900 placeholder-indigo-900/40 focus:outline-none focus:border-indigo-900/30 transition-all"
+                            className="w-full bg-white/50 border border-indigo-900/10 rounded-xl py-2.5 pl-4 pr-10 text-indigo-900 placeholder-indigo-900/40 focus:outline-none focus:border-indigo-900/30 transition-all"
                         />
                     </div>
                 </div>

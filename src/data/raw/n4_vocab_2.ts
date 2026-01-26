@@ -1,6 +1,6 @@
 import { VocabularyData } from '../types';
 
-export const n4Vocabulary_2: VocabularyData[] = [
+export const n4VocabPart2: VocabularyData[] = [
     { word: '飾る', reading: 'かざる', meaning: 'to decorate', meaning_zh: '裝飾', level: 'N4' },
     { word: '毛', reading: 'け', meaning: 'hair/fur', meaning_zh: '毛', level: 'N4' },
     { word: 'ケーキ', reading: 'けーき', meaning: 'cake', meaning_zh: '蛋糕', level: 'N4' },

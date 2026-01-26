@@ -147,7 +147,7 @@ export const n3Vocabulary: VocabularyData[] = [
     { word: '奨学金', reading: 'しょうがくきん', meaning: 'scholarship', meaning_zh: '獎學金', level: 'N3' },
     { word: '正午', reading: 'しょうご', meaning: 'midday', meaning_zh: '正午', level: 'N3' },
     { word: '商品', reading: 'しょうひん', meaning: 'goods', meaning_zh: '商品', level: 'N3' },
-    { word: '少女', reading: 'しょうじょ', reading_jp: 'しょうじょ', meaning: 'young lady', meaning_zh: '少女', level: 'N3' },
+    { word: '少女', reading: 'しょうじょ', meaning: 'young lady', meaning_zh: '少女', level: 'N3' },
     { word: '証明', reading: 'しょうめい', meaning: 'proof', meaning_zh: '證明', level: 'N3' },
     { word: '少年', reading: 'しょうねん', meaning: 'young boy', meaning_zh: '少年', level: 'N3' },
     { word: '少々', reading: 'しょうしょう', meaning: 'just a minute', meaning_zh: '一點點/稍許', level: 'N3' },

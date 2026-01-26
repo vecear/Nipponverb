@@ -1,6 +1,6 @@
 import { VocabularyData } from '../types';
 
-export const n4Vocabulary_1: VocabularyData[] = [
+export const n4VocabPart1: VocabularyData[] = [
     { word: 'あ', reading: 'あ', meaning: 'ah', meaning_zh: '啊', level: 'N4' },
     { word: 'ああ', reading: 'ああ', meaning: 'like that', meaning_zh: '那樣', level: 'N4' },
     { word: 'アフリカ', reading: 'あふりか', meaning: 'Africa', meaning_zh: '非洲', level: 'N4' },
