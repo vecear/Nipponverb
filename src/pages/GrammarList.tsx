@@ -1,13 +1,23 @@
 import { useState, useMemo, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Search } from 'lucide-react'
+import { Search, Check } from 'lucide-react'
 import { grammarList } from '../data/grammarList'
+import { useGrammarCompletionStore } from '../store/useGrammarCompletionStore'
 
 const STORAGE_KEY = 'grammarListState'
+
+// Strip furigana notation from text for cleaner display
+// Handles both 漢字{かな} and 漢字（かな） formats
+const stripFurigana = (text: string) => {
+    return text
+        .replace(/\{[^}]+\}/g, '')  // Remove {furigana}
+        .replace(/（[^）]+）/g, '') // Remove （furigana）
+}
 
 const GrammarList = () => {
     const navigate = useNavigate()
     const isInitialMount = useRef(true)
+    const { isCompleted } = useGrammarCompletionStore()
 
     // Restore state from sessionStorage on mount
     const savedState = sessionStorage.getItem(STORAGE_KEY)
@@ -101,6 +111,7 @@ const GrammarList = () => {
                         <table className="w-full text-left border-collapse">
                             <thead>
                                 <tr className="bg-indigo-900/5 text-indigo-900/60 text-sm border-b border-indigo-900/10">
+                                    <th className="p-4 font-medium w-12"></th>
                                     <th className="p-4 font-medium">級別</th>
                                     <th className="p-4 font-medium">文法</th>
                                     <th className="p-4 font-medium">意義</th>
@@ -108,40 +119,52 @@ const GrammarList = () => {
                             </thead>
                             <tbody className="divide-y divide-indigo-900/5">
                                 {filteredGrammar.length > 0 ? (
-                                    filteredGrammar.map((item) => (
-                                        <tr
-                                            key={item.id}
-                                            onClick={() => {
-                                                // Save current scroll position before navigating
-                                                sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
-                                                    level: selectedLevel,
-                                                    scrollY: window.scrollY
-                                                }))
-                                                navigate(`/grammar/${item.id}`)
-                                            }}
-                                            className="hover:bg-indigo-900/5 transition-colors group cursor-pointer"
-                                        >
-                                            <td className="p-4">
-                                                <span className={`inline-block px-2 py-1 rounded text-xs font-bold ${item.level === 'N5' ? 'bg-blue-500/20 text-blue-400' :
-                                                    item.level === 'N4' ? 'bg-green-500/20 text-green-400' :
-                                                        item.level === 'N3' ? 'bg-yellow-500/20 text-yellow-400' :
-                                                            item.level === 'N2' ? 'bg-orange-500/20 text-orange-400' :
-                                                                'bg-red-500/20 text-red-400'
-                                                    }`}>
-                                                    {item.level}
-                                                </span>
-                                            </td>
-                                            <td className="p-4">
-                                                <div className="font-bold text-lg md:text-xl text-indigo-900/90 mb-1">{item.grammar}</div>
-                                            </td>
-                                            <td className="p-4 text-indigo-900/80">
-                                                {item.meaning}
-                                            </td>
-                                        </tr>
-                                    ))
+                                    filteredGrammar.map((item) => {
+                                        const completed = isCompleted(item.id)
+                                        return (
+                                            <tr
+                                                key={item.id}
+                                                onClick={() => {
+                                                    // Save current scroll position before navigating
+                                                    sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
+                                                        level: selectedLevel,
+                                                        scrollY: window.scrollY
+                                                    }))
+                                                    navigate(`/grammar/${item.id}`)
+                                                }}
+                                                className="hover:bg-indigo-900/5 transition-colors group cursor-pointer"
+                                            >
+                                                <td className="p-4 text-center">
+                                                    <Check
+                                                        size={20}
+                                                        className={`transition-colors ${completed
+                                                            ? 'text-green-500'
+                                                            : 'text-indigo-900/20'
+                                                            }`}
+                                                    />
+                                                </td>
+                                                <td className="p-4">
+                                                    <span className={`inline-block px-2 py-1 rounded text-xs font-bold ${item.level === 'N5' ? 'bg-blue-500/20 text-blue-400' :
+                                                        item.level === 'N4' ? 'bg-green-500/20 text-green-400' :
+                                                            item.level === 'N3' ? 'bg-yellow-500/20 text-yellow-400' :
+                                                                item.level === 'N2' ? 'bg-orange-500/20 text-orange-400' :
+                                                                    'bg-red-500/20 text-red-400'
+                                                        }`}>
+                                                        {item.level}
+                                                    </span>
+                                                </td>
+                                                <td className="p-4">
+                                                    <div className="font-bold text-lg md:text-xl text-indigo-900/90 mb-1">{stripFurigana(item.grammar)}</div>
+                                                </td>
+                                                <td className="p-4 text-indigo-900/80">
+                                                    {item.meaning}
+                                                </td>
+                                            </tr>
+                                        )
+                                    })
                                 ) : (
                                     <tr>
-                                        <td colSpan={3} className="p-8 text-center text-indigo-900/40">
+                                        <td colSpan={4} className="p-8 text-center text-indigo-900/40">
                                             沒有找到符合的文法項目。
                                         </td>
                                     </tr>

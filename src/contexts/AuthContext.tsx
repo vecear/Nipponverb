@@ -17,6 +17,7 @@ import {
 import { auth, googleProvider } from '../config/firebase'
 import { getUserProfile, createUserProfile } from '../services/userService'
 import { useUserStore } from '../store/useUserStore'
+import { useGrammarCompletionStore } from '../store/useGrammarCompletionStore'
 
 interface AuthContextType {
   currentUser: User | null
@@ -68,6 +69,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const logout = async () => {
     await signOut(auth)
     useUserStore.getState().clearProfile()
+    useGrammarCompletionStore.getState().clearLocal()
   }
 
   const updateUserEmail = async (email: string) => {
@@ -121,11 +123,14 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
           if (profile) {
             useUserStore.getState().setProfile(profile)
           }
+          // Sync grammar completions from Firebase
+          await useGrammarCompletionStore.getState().syncFromFirebase(user.uid)
         } catch (error) {
           console.error('Error fetching user profile:', error)
         }
       } else {
         useUserStore.getState().clearProfile()
+        useGrammarCompletionStore.getState().clearLocal()
       }
       setLoading(false)
     })

@@ -1,17 +1,53 @@
 import { useParams, Link } from 'react-router-dom'
-import { ArrowLeft, BookOpen, Lightbulb, HelpCircle, Check, X } from 'lucide-react'
+import { ArrowLeft, BookOpen, Lightbulb, HelpCircle, Check, X, RotateCcw } from 'lucide-react'
 import { grammarDetails } from '../data/grammarDetails'
 import { grammarList } from '../data/grammarList'
-import { useState, useEffect, useCallback } from 'react'
-import { useMemo } from 'react'
+import { useState, useEffect, useCallback, useMemo } from 'react'
 import type { QuizExplanation } from '../types/grammar'
 import { useNav, createGrammarNavItems } from '../contexts/NavContext'
+import { useGrammarCompletionStore } from '../store/useGrammarCompletionStore'
+import { useAuth } from '../contexts/AuthContext'
+import { useUserStore } from '../store/useUserStore'
+import { addExp, updateUserProgression } from '../services/progressionService'
+import { DEFAULT_PROGRESSION, EXP_REWARDS } from '../types/progression'
+import { getGameConfig } from '../services/adminService'
+import GrammarPassModal from '../components/GrammarPassModal'
 
 const GrammarDetail = () => {
     const { id } = useParams<{ id: string }>()
     const detail = id ? grammarDetails[id] : undefined
     const listItem = useMemo(() => grammarList.find(item => item.id === id), [id])
     const { setCustomNavItems, setActiveSection } = useNav()
+
+    // Auth and user state
+    const { currentUser } = useAuth()
+    const { profile, setProfile } = useUserStore()
+
+    // Grammar completion store
+    const { markCompleted, isCompleted, getCompletionRecord, syncToFirebase } = useGrammarCompletionStore()
+
+    // Check if this grammar is already completed
+    const wasAlreadyCompleted = id ? isCompleted(id) : false
+    const completionRecord = id ? getCompletionRecord(id) : null
+
+    // Modal state
+    const [showPassModal, setShowPassModal] = useState(false)
+    const [expReward, setExpReward] = useState<number>(EXP_REWARDS.GRAMMAR_LESSON_COMPLETE)
+
+    // Load exp reward from config
+    useEffect(() => {
+        const loadConfig = async () => {
+            try {
+                const config = await getGameConfig()
+                if (config.expRewards.grammarLessonComplete) {
+                    setExpReward(config.expRewards.grammarLessonComplete)
+                }
+            } catch {
+                // Use default
+            }
+        }
+        loadConfig()
+    }, [])
 
     const scrollToSection = useCallback((sectionId: string) => {
         const el = document.getElementById(sectionId)
@@ -21,6 +57,11 @@ const GrammarDetail = () => {
             window.scrollTo({ top, behavior: 'smooth' })
         }
     }, [])
+
+    // Scroll to top when entering the page
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [id])
 
     // Set custom nav items when component mounts
     useEffect(() => {
@@ -58,14 +99,91 @@ const GrammarDetail = () => {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [setActiveSection])
 
-    // Quiz state
-    const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>({})
-    const [showExplanation, setShowExplanation] = useState<Record<string, boolean>>({})
+    // Quiz state - initialize from completion record if already completed
+    const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>(() => {
+        if (wasAlreadyCompleted && completionRecord) {
+            return completionRecord.answers
+        }
+        return {}
+    })
+    const [showExplanation, setShowExplanation] = useState<Record<string, boolean>>(() => {
+        if (wasAlreadyCompleted && completionRecord && detail?.quiz) {
+            // If already completed, show all explanations
+            const explanations: Record<string, boolean> = {}
+            detail.quiz.forEach(q => {
+                explanations[q.id] = true
+            })
+            return explanations
+        }
+        return {}
+    })
+
+    // Track if we've already given XP for this session (to prevent double-awarding)
+    const [hasAwardedExp, setHasAwardedExp] = useState(wasAlreadyCompleted)
+
+    // Check if all questions are answered correctly
+    const quizCompleted = useMemo(() => {
+        if (!detail?.quiz || detail.quiz.length === 0) return false
+
+        // Check if all questions are answered
+        const allAnswered = detail.quiz.every(q => selectedAnswers[q.id] !== undefined)
+        if (!allAnswered) return false
+
+        // Check if all answers are correct
+        return detail.quiz.every(q => selectedAnswers[q.id] === q.correctIndex)
+    }, [detail?.quiz, selectedAnswers])
+
+    // Check if any question is wrong (for showing retry button)
+    const hasWrongAnswer = useMemo(() => {
+        if (!detail?.quiz) return false
+        return detail.quiz.some(q =>
+            selectedAnswers[q.id] !== undefined && selectedAnswers[q.id] !== q.correctIndex
+        )
+    }, [detail?.quiz, selectedAnswers])
+
+    // Handle quiz completion
+    useEffect(() => {
+        const handleCompletion = async () => {
+            if (!quizCompleted || hasAwardedExp || !id || !detail) return
+
+            // Mark as completed in store
+            markCompleted(id, selectedAnswers)
+
+            // Award XP if user is logged in
+            if (currentUser && profile) {
+                const progression = profile.progression || DEFAULT_PROGRESSION
+                const gender = profile.gender || 'male'
+
+                const { newProgression } = addExp(progression, expReward, gender)
+                await updateUserProgression(currentUser.uid, newProgression)
+
+                // Update local profile state
+                setProfile({
+                    ...profile,
+                    progression: newProgression,
+                })
+
+                // Sync completion to Firebase
+                await syncToFirebase(currentUser.uid)
+            }
+
+            setHasAwardedExp(true)
+            setShowPassModal(true)
+        }
+
+        handleCompletion()
+    }, [quizCompleted, hasAwardedExp, id, detail, selectedAnswers, markCompleted, currentUser, profile, expReward, setProfile, syncToFirebase])
 
     const handleAnswer = (quizId: string, index: number) => {
         if (selectedAnswers[quizId] !== undefined) return // Already answered
         setSelectedAnswers(prev => ({ ...prev, [quizId]: index }))
         setShowExplanation(prev => ({ ...prev, [quizId]: true }))
+    }
+
+    const handleRetry = () => {
+        // Reset all answers and explanations
+        setSelectedAnswers({})
+        setShowExplanation({})
     }
 
     // Helper to check if explanation is object format
@@ -104,19 +222,34 @@ const GrammarDetail = () => {
     }, [])
 
     const renderFurigana = (text: string) => {
-        // Simple parser for "漢字{かんじ}" format
-        const parts = text.split(/([^\u0000-\u007F\u3040-\u309F\u30A0-\u30FF\uFF00-\uFFEF]+{[^}]+})/)
-        return (
-            <span>
-                {parts.map((part, i) => {
-                    const match = part.match(/^(.+){(.+)}$/)
-                    if (match) {
-                        return <ruby key={i}>{match[1]}<rt>{match[2]}</rt></ruby>
-                    }
-                    return part
-                })}
-            </span>
-        )
+        // Parser for "漢字{かんじ}" format
+        // Only matches CJK characters (kanji) followed by {reading}
+        // CJK Unified Ideographs: \u4e00-\u9fff, Extension A: \u3400-\u4dbf
+        const regex = /([\u4e00-\u9fff\u3400-\u4dbf]+)\{([^{}]+)\}/g
+        const parts: (string | JSX.Element)[] = []
+        let lastIndex = 0
+        let match
+
+        while ((match = regex.exec(text)) !== null) {
+            // Add text before the match
+            if (match.index > lastIndex) {
+                parts.push(text.substring(lastIndex, match.index))
+            }
+            // Add the ruby element
+            parts.push(
+                <ruby key={match.index}>
+                    {match[1]}<rt>{match[2]}</rt>
+                </ruby>
+            )
+            lastIndex = regex.lastIndex
+        }
+
+        // Add remaining text
+        if (lastIndex < text.length) {
+            parts.push(text.substring(lastIndex))
+        }
+
+        return <span>{parts}</span>
     }
 
     if (!detail) {
@@ -155,6 +288,13 @@ const GrammarDetail = () => {
                             {detail.level}
                         </span>
                         <h1 className="text-4xl font-bold text-indigo-900">{detail.pattern}</h1>
+                        {/* Show completion badge if already completed */}
+                        {wasAlreadyCompleted && (
+                            <span className="inline-flex items-center gap-1 px-2 py-1 bg-green-500/20 text-green-500 rounded text-sm font-medium">
+                                <Check size={14} />
+                                已完成
+                            </span>
+                        )}
                     </div>
                     <p className="text-xl text-indigo-900/80">{detail.translation}</p>
                 </header>
@@ -240,6 +380,11 @@ const GrammarDetail = () => {
                         <h3 className="text-2xl font-bold text-indigo-900 mb-4 flex items-center">
                             <HelpCircle size={24} className="mr-2" />
                             隨堂測驗
+                            {wasAlreadyCompleted && (
+                                <span className="ml-3 text-sm font-normal text-green-500">
+                                    (已通過)
+                                </span>
+                            )}
                         </h3>
                         {detail.quiz.map((q) => {
                             const isAnswered = selectedAnswers[q.id] !== undefined
@@ -273,7 +418,7 @@ const GrammarDetail = () => {
                                                     disabled={isAnswered}
                                                     className={btnClass}
                                                 >
-                                                    {opt}
+                                                    {renderFurigana(opt)}
                                                 </button>
                                             )
                                         })}
@@ -300,8 +445,8 @@ const GrammarDetail = () => {
                     </section>
                 )}
 
-                {/* Back to List Button - Desktop only */}
-                <div className="pt-8 pb-4 hidden md:flex justify-center">
+                {/* Back to List and Retry Buttons - Desktop only */}
+                <div className="pt-8 pb-4 hidden md:flex justify-center gap-4">
                     <Link
                         to="/grammar"
                         className="inline-flex items-center px-6 py-3 bg-indigo-900/10 hover:bg-indigo-900/20 rounded-xl text-indigo-900 font-medium transition-all"
@@ -309,8 +454,26 @@ const GrammarDetail = () => {
                         <ArrowLeft size={20} className="mr-2" />
                         返回列表
                     </Link>
+                    {/* Show retry button if there are wrong answers and quiz exists */}
+                    {detail.quiz && detail.quiz.length > 0 && hasWrongAnswer && !wasAlreadyCompleted && (
+                        <button
+                            onClick={handleRetry}
+                            className="inline-flex items-center px-6 py-3 bg-indigo-900/10 hover:bg-indigo-900/20 rounded-xl text-indigo-900 font-medium transition-all"
+                        >
+                            <RotateCcw size={20} className="mr-2" />
+                            重新答題
+                        </button>
+                    )}
                 </div>
             </div>
+
+            {/* Pass Modal */}
+            <GrammarPassModal
+                isOpen={showPassModal}
+                onClose={() => setShowPassModal(false)}
+                expGained={expReward}
+                grammarPattern={detail.pattern}
+            />
         </div>
     )
 }

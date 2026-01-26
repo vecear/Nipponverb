@@ -1,0 +1,498 @@
+--- Checking src/data/details/n5.ts ---
+Line 439 [ID: n5_q_demo_4] (sentence): Found unannotated Kanji
+  Content: 「日{にち}曜{よう}日{び}、暇{ひま}？」\n「うん、映{えい}画{が}（　）見{み}に行かない？」
+  Cleaned: 「、？」\n「うん、（　）に行かない？」
+
+Line 446 [ID: n5_q_demo_5] (sentence): Found unannotated Kanji
+  Content: 「先{せん}生{せい}、これお願いします。」\n「忙{いそが}しいから、後（　）いい？」
+  Cleaned: 「、これお願いします。」\n「しいから、後（　）いい？」
+
+Line 510 [ID: n5_q_deshou_5] (sentence): Found unannotated Kanji
+  Content: 「鍵{かぎ}がない…。」\n「さっき机{つくえ}の上にあった（　）？」
+  Cleaned: 「がない…。」\n「さっきの上にあった（　）？」
+
+Line 552 [ID: n5_q_donna_3] (sentence): Found unannotated Kanji
+  Content: （　）食べ物が嫌{きら}いですか。
+  Cleaned: （　）食べ物がいですか。
+
+Line 622 [ID: n5_q_doushite_1] (sentence): Found unannotated Kanji
+  Content: （　）日{に}本{ほん}語{ご}を勉強していますか。
+  Cleaned: （　）を勉強していますか。
+
+Line 636 [ID: n5_q_doushite_3] (sentence): Found unannotated Kanji
+  Content: 「（　）野{や}菜{さい}を食べないの？」\n「嫌{きら}いだからです。」
+  Cleaned: 「（　）を食べないの？」\n「いだからです。」
+
+Line 643 [ID: n5_q_doushite_4] (sentence): Found unannotated Kanji
+  Content: 「遅れてすみません。」\n「（　）遅れたんですか。」
+  Cleaned: 「遅れてすみません。」\n「（　）遅れたんですか。」
+
+Line 694 [ID: n5_q_douyatte_1] (sentence): Found unannotated Kanji
+  Content: 大{だい}学{がく}まで（　）来ましたか。
+  Cleaned: まで（　）来ましたか。
+
+Line 715 [ID: n5_q_douyatte_4] (sentence): Found unannotated Kanji
+  Content: 「きれいな絵{え}ですね。（　）描いたんですか。」\n「パソコンで描きました。」
+  Cleaned: 「きれいなですね。（　）描いたんですか。」\n「パソコンで描きました。」
+
+Line 722 [ID: n5_q_douyatte_5] (sentence): Found unannotated Kanji
+  Content: 「（　）やせたんですか。」\n「毎{まい}日{にち}走ったんです。」
+  Cleaned: 「（　）やせたんですか。」\n「走ったんです。」
+
+Line 775 [ID: n5_q_ichiban_4] (sentence): Found unannotated Kanji
+  Content: 「季節の中{なか}でいつが好{す}き？」\n「秋{あき}が（　）好{す}き。」
+  Cleaned: 「季節のでいつがき？」\n「が（　）き。」
+
+Line 782 [ID: n5_q_ichiban_5] (sentence): Found unannotated Kanji
+  Content: 「この店{みせ}で何{なに}がおすすめですか。」\n「これが（　）人{ひと}気ですよ。」
+  Cleaned: 「このでがおすすめですか。」\n「これが（　）気ですよ。」
+
+Line 810 [ID: n5_q_issho_ni_1] (sentence): Found unannotated Kanji
+  Content: 週末、彼{かの}女{じょ}（　）一緒にデパートへ行{い}きました。
+  Cleaned: 週末、（　）一緒にデパートへきました。
+
+Line 824 [ID: n5_q_issho_ni_3] (sentence): Found unannotated Kanji
+  Content: （　）ご飯{はん}を食べませんか。
+  Cleaned: （　）ごを食べませんか。
+
+Line 838 [ID: n5_q_issho_ni_5] (sentence): Found unannotated Kanji
+  Content: 「荷{に}物{もつ}が重そうですね。」\n「（　）持{も}ちましょうか。」
+  Cleaned: 「が重そうですね。」\n「（　）ちましょうか。」
+
+Line 894 [ID: n5_q_itsumo_5] (sentence): Found unannotated Kanji
+  Content: 「早{はや}いですね。」\n「ええ、（　）このくらいの時{じ}間{かん}に起きますから。」
+  Cleaned: 「いですね。」\n「ええ、（　）このくらいのに起きますから。」
+
+Line 922 [ID: n5_q_janai_1] (sentence): Found unannotated Kanji
+  Content: 明{あし}日{た}は雨（　）。
+  Cleaned: は雨（　）。
+
+Line 936 [ID: n5_q_janai_3] (sentence): Found unannotated Kanji
+  Content: それは猫（　）、犬だ。
+  Cleaned: それは猫（　）、犬だ。
+
+Line 1316 [ID: n5_q_ga_imasu_5] (sentence): Found unannotated Kanji
+  Content: 「一{ひと}人{り}暮{ぐ}らしですか。」\n「いいえ、猫（　）います。」
+  Cleaned: 「らしですか。」\n「いいえ、猫（　）います。」
+
+Line 1531 [ID: n5_q_kata_1] (sentence): Found unannotated Kanji
+  Content: パソコンの（　）方がわかりません。
+  Cleaned: パソコンの（　）方がわかりません。
+
+Line 1538 [ID: n5_q_kata_2] (sentence): Found unannotated Kanji
+  Content: おいしいコーヒーの（　）方を習いました。
+  Cleaned: おいしいコーヒーの（　）方を習いました。
+
+Line 1545 [ID: n5_q_kata_3] (sentence): Found unannotated Kanji
+  Content: この料{りょう}理{り}の（　）方は簡{かん}単{たん}です。
+  Cleaned: このの（　）方はです。
+
+Line 1552 [ID: n5_q_kata_4] (sentence): Found unannotated Kanji
+  Content: 「すみません、この字{じ}の（　）方を教{おし}えてください。」\n「『あ』ですよ。」
+  Cleaned: 「すみません、このの（　）方をえてください。」\n「『あ』ですよ。」
+
+Line 1559 [ID: n5_q_kata_5] (sentence): Found unannotated Kanji
+  Content: 「駅{えき}への（　）方を知{し}っていますか。」\n「はい、知{し}っていますよ。」
+  Cleaned: 「への（　）方をっていますか。」\n「はい、っていますよ。」
+
+Line 1593 [ID: n5_q_ka_ka_2] (sentence): Found unannotated Kanji
+  Content: 食{た}べる（　）食べない（　）、はっきりしてください。
+  Cleaned: べる（　）食べない（　）、はっきりしてください。
+
+Line 1607 [ID: n5_q_ka_ka_4] (sentence): Found unannotated Kanji
+  Content: 「コーヒー（　）紅{こう}茶{ちゃ}（　）にしますか。」\n「コーヒーをお願いします。」
+  Cleaned: 「コーヒー（　）（　）にしますか。」\n「コーヒーをお願いします。」
+
+Line 1614 [ID: n5_q_ka_ka_5] (sentence): Found unannotated Kanji
+  Content: 「出席しますか。」\n「まだ出席する（　）しない（　）、迷{まよ}っています。」
+  Cleaned: 「出席しますか。」\n「まだ出席する（　）しない（　）、っています。」
+
+Line 1657 [ID: n5_q_kedo_2] (sentence): Found unannotated Kanji
+  Content: 勉強した（　）、テストは悪かった。
+  Cleaned: 勉強した（　）、テストは悪かった。
+
+Line 1664 [ID: n5_q_kedo_3] (sentence): Found unannotated Kanji
+  Content: この店{みせ}は高{たか}い（　）、味はいい。
+  Cleaned: このはい（　）、味はいい。
+
+Line 1678 [ID: n5_q_kedo_5] (sentence): Found unannotated Kanji
+  Content: 「あの映{えい}画{が}見{み}た？」\n「見{み}た（　）、面白くなかったよ。」
+  Cleaned: 「あのた？」\n「た（　）、面白くなかったよ。」
+
+Line 1705 [ID: n5_q_keredomo_1] (sentence): Found unannotated Kanji
+  Content: がんばりましました（　）、負けました。
+  Cleaned: がんばりましました（　）、負けました。
+
+Line 1719 [ID: n5_q_keredomo_3] (sentence): Found unannotated Kanji
+  Content: 昨{き}日{のう}は雨でした（　）、今日{きょう}は晴れです。
+  Cleaned: は雨でした（　）、は晴れです。
+
+Line 1733 [ID: n5_q_keredomo_5] (sentence): Found unannotated Kanji
+  Content: 「ご予約の方ですか。」\n「はい、予約しました（　）、席はありますか。」
+  Cleaned: 「ご予約の方ですか。」\n「はい、予約しました（　）、席はありますか。」
+
+Line 1794 [ID: n5_q_mada_4] (sentence): Found unannotated Kanji
+  Content: 「もうご飯{はん}を食べましたか。」\n「いいえ、（　）です。」
+  Cleaned: 「もうごを食べましたか。」\n「いいえ、（　）です。」
+
+Line 1801 [ID: n5_q_mada_5] (sentence): Found unannotated Kanji
+  Content: 「田{た}中{なか}さんは来ましたか。」\n「いいえ、（　）来{き}ていません。」
+  Cleaned: 「さんは来ましたか。」\n「いいえ、（　）ていません。」
+
+Line 1862 [ID: n5_q_mada_te_imasen_5] (sentence): Found unannotated Kanji
+  Content: 「切{きっ}符{ぷ}を買いましたか。」\n「いいえ、まだ（　）。」
+  Cleaned: 「を買いましたか。」\n「いいえ、まだ（　）。」
+
+Line 1890 [ID: n5_q_made_1] (sentence): Found unannotated Kanji
+  Content: 駅{えき}（　）歩きます。
+  Cleaned: （　）歩きます。
+
+Line 1953 [ID: n5_q_mae_ni_1] (sentence): Found unannotated Kanji
+  Content: 日{に}本{ほん}へ（　）前{まえ}に、日{に}本{ほん}語{ご}を勉強しました。
+  Cleaned: へ（　）に、を勉強しました。
+
+Line 1960 [ID: n5_q_mae_ni_2] (sentence): Found unannotated Kanji
+  Content: テストの（　）勉強します。
+  Cleaned: テストの（　）勉強します。
+
+Line 1974 [ID: n5_q_mae_ni_4] (sentence): Found unannotated Kanji
+  Content: 「いつ手を洗{あら}いますか。」\n「ご飯{はん}を（　）前{まえ}に洗{あら}います。」
+  Cleaned: 「いつ手をいますか。」\n「ごを（　）にいます。」
+
+Line 1981 [ID: n5_q_mae_ni_5] (sentence): Found unannotated Kanji
+  Content: 「駅{えき}の（　）で会いましょう。」\n「わかりました。」
+  Cleaned: 「の（　）で会いましょう。」\n「わかりました。」
+
+Line 2015 [ID: n5_q_masen_ka_2] (sentence): Found unannotated Kanji
+  Content: 一緒に行{い}き（　）。
+  Cleaned: 一緒にき（　）。
+
+Line 2104 [ID: n5_mashou] (sentence): Found unannotated Kanji
+  Content: 「行{い}きませんか像」「ええ、行{い}きましょう。」
+  Cleaned: 「きませんか像」「ええ、きましょう。」
+
+Line 2293 [ID: n5_mo] (text): Found unannotated Kanji
+  Content: 取代「を」
+  Cleaned: 取代「を」
+
+Line 2452 [ID: n5_q_mou_5] (sentence): Found unannotated Kanji
+  Content: 「お腹がすきましたね。」\n「えっ、（　）食べましたよ。」
+  Cleaned: 「お腹がすきましたね。」\n「えっ、（　）食べましたよ。」
+
+Line 2509 [ID: n5_na_adjectives] (text): Found unannotated Kanji
+  Content: 否定形
+  Cleaned: 否定形
+
+Line 2609 [ID: n5_naa] (sentence): Found unannotated Kanji
+  Content: （對朋友）今日{きょう}は暑{あつ}いなあ。
+  Cleaned: （對朋友）はいなあ。
+
+Line 2610 [ID: n5_naa] (sentence): Found unannotated Kanji
+  Content: （對上司）今日{きょう}は暑{あつ}いなあ。
+  Cleaned: （對上司）はいなあ。
+
+Line 4683 [ID: n5_q_koto_dekiru_3] (sentence): Found unannotated Kanji
+  Content: （口語で）日本語{にほんご}（　）？
+  Cleaned: （口語で）（　）？
+
+Line 4713 [ID: n5_q_koto_dekiru_5] (sentence): Found unannotated Kanji
+  Content: （正式場合）ここで写真{しゃしん}を撮{と}る（A）。（口語）ここで写真{しゃしん}（B）よ。
+  Cleaned: （正式場合）ここでをる（A）。（口語）ここで（B）よ。
+
+Line 4835 [ID: n5_q_mashou_3] (sentence): Found unannotated Kanji
+  Content: （初めて誘{さそ}う時{とき}）映{えい}画{が}を見{み}に行{い}き（　）。
+  Cleaned: （初めてう）をにき（　）。
+
+Line 4865 [ID: n5_q_mashou_5] (sentence): Found unannotated Kanji
+  Content: （既に一緒{いっしょ}にいる）「じゃ、出発{しゅっぱつ}し（A）。」\n（初対面{しょたいめん}で）「今度{こんど}、食事{しょくじ}し（B）。」
+  Cleaned: （既ににいる）「じゃ、し（A）。」\n（で）「、し（B）。」
+
+Line 5282 [ID: n5_q_ichiban_5] (sentence): Found unannotated Kanji
+  Content: 「一{いち}番{ばん}」和「より」有什麼區別？\n選出正確的說明：
+  Cleaned: 「」和「より」有什麼區別？\n選出正確的說明：
+
+Line 5425 [ID: n5_q_totemo_5] (sentence): Found unannotated Kanji
+  Content: 「とても」和「たくさん」有什麼區別？\n選出正確的說明：
+  Cleaned: 「とても」和「たくさん」有什麼區別？\n選出正確的說明：
+
+Line 5564 [ID: n5_q_node_5] (sentence): Found unannotated Kanji
+  Content: 「ので」和「のに」有什麼區別？\n選出正確的說明：
+  Cleaned: 「ので」和「のに」有什麼區別？\n選出正確的說明：
+
+Line 5708 [ID: n5_q_mae_ni_5] (sentence): Found unannotated Kanji
+  Content: 「まえに」和「あとで」接動詞的規則是什麼？\n選出正確的說明：
+  Cleaned: 「まえに」和「あとで」接動詞的規則是什麼？\n選出正確的說明：
+
+Line 5847 [ID: n5_q_ato_de_5] (sentence): Found unannotated Kanji
+  Content: 「あとで」和「てから」有什麼區別？\n選出正確的說明：
+  Cleaned: 「あとで」和「てから」有什麼區別？\n選出正確的說明：
+
+Line 5990 [ID: n5_q_toki_5] (sentence): Found unannotated Kanji
+  Content: 動詞接「とき」時{じ}，原形和た形有什麼區別？\n選出正確的說明：
+  Cleaned: 動詞接「とき」，原形和た形有什麼區別？\n選出正確的說明：
+
+Line 6137 [ID: n5_q_itsumo_5] (sentence): Found unannotated Kanji
+  Content: 頻率副詞的順序（高{たか}→低{ひく}）是什麼？\n選出正確的說明：
+  Cleaned: 頻率副詞的順序（→）是什麼？\n選出正確的說明：
+
+Line 6298 [ID: n5_q_ga_aru_5] (sentence): Found unannotated Kanji
+  Content: 「ある」和「いる」的使用規則是什麼？\n選出正確的說明：
+  Cleaned: 「ある」和「いる」的使用規則是什麼？\n選出正確的說明：
+
+Line 6437 [ID: n5_q_e_he_5] (sentence): Found unannotated Kanji
+  Content: 「へ」和「で」有什麼區別？\n選出正確的說明：
+  Cleaned: 「へ」和「で」有什麼區別？\n選出正確的說明：
+
+Line 6576 [ID: n5_q_de_place_5] (sentence): Found unannotated Kanji
+  Content: 「で」的三種用法中{なか}，哪個是錯誤的？\n選出錯誤的說明：
+  Cleaned: 「で」，哪個是錯誤的？\n選出錯誤的說明：
+
+Line 6719 [ID: n5_q_kara_made_5] (sentence): Found unannotated Kanji
+  Content: 「から」、「まで」、「に」的時{じ}間{かん}用法有什麼區別？\n選出正確的說明：
+  Cleaned: 「から」、「まで」、「に」用法有什麼區別？\n選出正確的說明：
+
+Line 6853 [ID: n5_q_naito_5] (sentence): Found unannotated Kanji
+  Content: 「ないといけない」和「なくてはいけない」有什麼區別？\n選出正確的說明：
+  Cleaned: 「ないといけない」和「なくてはいけない」有什麼區別？\n選出正確的說明：
+
+Line 6984 [ID: n5_q_nakuteha_5] (sentence): Found unannotated Kanji
+  Content: 「なくてはいけない」和「なくてもいい」有什麼區別？\n選出正確的說明：
+  Cleaned: 「なくてはいけない」和「なくてもいい」有什麼區別？\n選出正確的說明：
+
+Line 7115 [ID: n5_q_nakutemo_5] (sentence): Found unannotated Kanji
+  Content: 許可、義務、不必的正確表達是什麼？\n選出正確的配{はい}對{つい}：
+  Cleaned: 許可、義務、不必的正確表達是什麼？\n：
+
+Line 7251 [ID: n5_q_nakucha_5] (sentence): Found unannotated Kanji
+  Content: 「なくちゃ」「なくては」「なきゃ」「なければ」的正式度排序，從口語到正式是？
+  Cleaned: 「なくちゃ」「なくては」「なきゃ」「なければ」的正式度排序，從口語到正式是？
+
+Line 7366 [ID: n5_q_naranai_4] (sentence): Found unannotated Kanji
+  Content: 「パスポートを持{も}っていなくてはならない」\n「パスポートを持{も}っていなければならない」\n這兩句的差{さ}別{べつ}是？
+  Cleaned: 「パスポートをっていなくてはならない」\n「パスポートをっていなければならない」\n是？
+
+Line 7459 [ID: n5_naru] (japanese): Found unannotated Kanji
+  Content: 名詞＋になる / 名詞＋にする
+  Cleaned: 名詞＋になる / 名詞＋にする
+
+Line 7460 [ID: n5_naru] (japanese): Found unannotated Kanji
+  Content: い形容詞＋くなる / い形容詞＋くする
+  Cleaned: い形容詞＋くなる / い形容詞＋くする
+
+Line 7510 [ID: n5_q_naru_4] (sentence): Found unannotated Kanji
+  Content: 「空{そら}が暗{くら}くなった」と「部屋{へや}を暗{くら}くした」的差{さ}別{べつ}是？
+  Cleaned: 「がくなった」と「をくした」是？
+
+Line 7605 [ID: n5_ndesu] (japanese): Found unannotated Kanji
+  Content: 食{た}べたのです → 食べたんです
+  Cleaned: べたのです → 食べたんです
+
+Line 7669 [ID: n5_q_ndesu_5] (sentence): Found unannotated Kanji
+  Content: 「んです」的接續規則：動詞/い形容詞→直接加「んです」，名詞/な形容詞→？
+  Cleaned: 「んです」的接續規則：動詞/い形容詞→直接加「んです」，名詞/な形容詞→？
+
+Line 7791 [ID: n5_q_nisuru_4] (sentence): Found unannotated Kanji
+  Content: 「部屋{へや}をきれいにした」と「部屋{へや}がきれいになった」的差{さ}別{べつ}是？
+  Cleaned: 「をきれいにした」と「がきれいになった」是？
+
+Line 7862 [ID: n5_ni_iku] (japanese): Found unannotated Kanji
+  Content: 食{た}べます → 食べに行{い}く
+  Cleaned: べます → 食べにく
+
+Line 7921 [ID: n5_q_niiku_4] (sentence): Found unannotated Kanji
+  Content: 「食{た}べる」的「に行{い}く」形是？
+  Cleaned: 「べる」的「にく」形是？
+
+Line 8069 [ID: n5_q_jouzu_5] (sentence): Found unannotated Kanji
+  Content: 「上{じょう}手{ず}」和「得{とく}意{い}」的使用差{さ}別{べつ}是？
+  Cleaned: 「」和「」是？
+
+Line 8131 [ID: n5_no_ga_heta] (japanese): Found unannotated Kanji
+  Content: （直接對人{ひと}說）あなたは歌{うた}が下手{へた}ですね。
+  Cleaned: （說）あなたはがですね。
+
+Line 8174 [ID: n5_q_heta_3] (sentence): Found unannotated Kanji
+  Content: 「あの人{ひと}は歌{うた}が下手{へた}ですね。」這樣說對嗎？
+  Cleaned: 「あのはがですね。」這樣說對嗎？
+
+Line 8207 [ID: n5_q_heta_5] (sentence): Found unannotated Kanji
+  Content: 「上{じょう}手{ず}/下{へ}手{た}」vs「得{とく}意{い}/苦{に}手{がて}」的差{さ}別{べつ}是？
+  Cleaned: 「/」vs「/」是？
+
+Line 8329 [ID: n5_q_suki_4] (sentence): Found unannotated Kanji
+  Content: 「好{す}き」的喜歡程度排序，從最喜歡到討厭是？
+  Cleaned: 「き」的喜歡程度排序，從最喜歡到討厭是？
+
+Line 8465 [ID: n5_q_ichiban_4] (sentence): Found unannotated Kanji
+  Content: 「一{いち}番{ばん}」和「より」的使用差{さ}別{べつ}是？
+  Cleaned: 「」和「より」是？
+
+Line 8587 [ID: n5_q_takoto_3] (sentence): Found unannotated Kanji
+  Content: 「たことがある」和「た」的差{さ}別{べつ}是？
+  Cleaned: 「たことがある」和「た」是？
+
+Line 8670 [ID: n5_tari_tari] (japanese): Found unannotated Kanji
+  Content: 食{た}べた → 食べたり
+  Cleaned: べた → 食べたり
+
+Line 8671 [ID: n5_tari_tari] (japanese): Found unannotated Kanji
+  Content: 飲{の}んだ → 飲んだり
+  Cleaned: んだ → 飲んだり
+
+Line 8754 [ID: n5_q_tari_5] (sentence): Found unannotated Kanji
+  Content: 「たり～たりする」的構造，最後的「する」可以省略嗎？
+  Cleaned: 「たり～たりする」的構造，最後的「する」可以省略嗎？
+
+Line 8865 [ID: n5_q_temoii_3] (sentence): Found unannotated Kanji
+  Content: 「てもいい」和「てもかまわない」的差{さ}別{べつ}是？
+  Cleaned: 「てもいい」和「てもかまわない」是？
+
+Line 8995 [ID: n5_q_tewaikenai_3] (sentence): Found unannotated Kanji
+  Content: 「てはいけない」「てはだめ」「ちゃだめ」的正式度排序是？
+  Cleaned: 「てはいけない」「てはだめ」「ちゃだめ」的正式度排序是？
+
+Line 9131 [ID: n5_q_tsumori_3] (sentence): Found unannotated Kanji
+  Content: 「つもり」和「予定」的差{さ}別{べつ}是？
+  Cleaned: 「つもり」和「予定」是？
+
+Line 9268 [ID: n5_q_to_3] (sentence): Found unannotated Kanji
+  Content: 「と」和「や」的差{さ}別{べつ}是？
+  Cleaned: 「と」和「や」是？
+
+Line 9301 [ID: n5_q_to_5] (sentence): Found unannotated Kanji
+  Content: 春{はる}になると、桜{さくら}が咲{さ}く。後面可以接「ください」嗎？
+  Cleaned: になると、がく。後面可以接「ください」嗎？
+
+Line 9358 [ID: n5_sugiru] (japanese): Found unannotated Kanji
+  Content: 食{た}べます → 食べすぎる
+  Cleaned: べます → 食べすぎる
+
+Line 9366 [ID: n5_sugiru] (japanese): Found unannotated Kanji
+  Content: 大{おお}きい → 大きすぎる
+  Cleaned: きい → 大きすぎる
+
+Line 9409 [ID: n5_q_sugiru_3] (sentence): Found unannotated Kanji
+  Content: 「すぎる」的接續規則，哪個正確？
+  Cleaned: 「すぎる」的接續規則，哪個正確？
+
+Line 9495 [ID: n5_te_aru] (japanese): Found unannotated Kanji
+  Content: ドアが開{あ}く → ドアが開いている
+  Cleaned: ドアがく → ドアが開いている
+
+Line 9566 [ID: n5_q_tearu_5] (sentence): Found unannotated Kanji
+  Content: 「てある」和「ている」有什麼差{さ}別{べつ}？
+  Cleaned: 「てある」和「ている」？
+
+Line 9700 [ID: n5_q_ya_5] (sentence): Found unannotated Kanji
+  Content: 「や」和「と」的差{さ}別{べつ}是？
+  Cleaned: 「や」和「と」是？
+
+Line 9829 [ID: n5_q_yorihouga_5] (sentence): Found unannotated Kanji
+  Content: 「AよりBのほうが」和「BはAより」有什麼差{さ}別{べつ}？
+  Cleaned: 「AよりBのほうが」和「BはAより」？
+
+Line 9939 [ID: n5_q_wayori_5] (sentence): Found unannotated Kanji
+  Content: 「AはBより」和「BよりAのほうが」有什麼關係？
+  Cleaned: 「AはBより」和「BよりAのほうが」有什麼關係？
+
+Line 10059 [ID: n5_q_wadou_5] (sentence): Found unannotated Kanji
+  Content: 「どうですか」和「いかがですか」的差{さ}別{べつ}是？
+  Cleaned: 「どうですか」和「いかがですか」是？
+
+Line 10170 [ID: n5_q_shikashi_5] (sentence): Found unannotated Kanji
+  Content: 「しかし」「でも」「けど」的正式程度排序是？
+  Cleaned: 「しかし」「でも」「けど」的正式程度排序是？
+
+Line 10280 [ID: n5_q_soshite_5] (sentence): Found unannotated Kanji
+  Content: 「そして」和「それから」有什麼差{さ}別{べつ}？
+  Cleaned: 「そして」和「それから」？
+
+Line 10386 [ID: n5_q_sorekara_5] (sentence): Found unannotated Kanji
+  Content: 「それから」最常用於什麼情況？
+  Cleaned: 「それから」最常用於什麼情況？
+
+Line 10505 [ID: n5_q_watopic_5] (sentence): Found unannotated Kanji
+  Content: 「は」和「が」的差{さ}別{べつ}是？
+  Cleaned: 「は」和「が」是？
+
+Line 10616 [ID: n5_q_okudasai_5] (sentence): Found unannotated Kanji
+  Content: 「名詞＋をください」和「動詞て形＋ください」的差{さ}別{べつ}是？
+  Cleaned: 「名詞＋をください」和「動詞て形＋ください」是？
+
+Line 10728 [ID: n5_q_ogo_5] (sentence): Found unannotated Kanji
+  Content: 「お」和「ご」的基本{ほん}規則是？
+  Cleaned: 「お」和「ご」規則是？
+
+Line 10846 [ID: n5_q_nie_5] (sentence): Found unannotated Kanji
+  Content: 「に」和「へ」的差{さ}別{べつ}是？
+  Cleaned: 「に」和「へ」是？
+
+Line 10956 [ID: n5_q_nodesu_5] (sentence): Found unannotated Kanji
+  Content: 「のです」和「んです」的差{さ}別{べつ}是？
+  Cleaned: 「のです」和「んです」是？
+
+Line 11054 [ID: n5_q_nonakade_5] (sentence): Found unannotated Kanji
+  Content: 「の中{なか}で一{いち}番{ばん}」什麼時{じ}候使用？
+  Cleaned: 「ので」候使用？
+
+Line 11174 [ID: n5_q_iadj_5] (sentence): Found unannotated Kanji
+  Content: い形容詞和な形容詞的否定形差{さ}別{べつ}是？
+  Cleaned: い形容詞和な是？
+
+Line 11272 [ID: n5_q_iadjpast_5] (sentence): Found unannotated Kanji
+  Content: い形容詞和な形容詞的過去形差{さ}別{べつ}是？
+  Cleaned: い形容詞和な是？
+
+Line 11370 [ID: n5_q_naadjpast_5] (sentence): Found unannotated Kanji
+  Content: 「綺{き}麗{れい}」是い形容詞還是な形容詞？
+  Cleaned: 「」是い形容詞還是な形容詞？
+
+Found 112 issues in src/data/details/n5.ts
+
+--- Checking src/data/questions/n5.ts ---
+Line 691 [ID: n5_gen_oku_2] (prob): Found unannotated Kanji
+  Content: A：「この花{はな}、どこに ______ か。」\nB：「テーブルの上{うえ}にお願いします。」
+  Cleaned: A：「この、どこに ______ か。」\nB：「テーブルのにお願いします。」
+
+Line 879 [ID: n5_gen_oboeru_2] (prob): Found unannotated Kanji
+  Content: A：「私{わたし}の名前、______ いますか。」\nB：「はい、もちろんです。」
+  Cleaned: A：「の名前、______ いますか。」\nB：「はい、もちろんです。」
+
+Line 1066 [ID: n5_gen_kaesu_2] (prob): Found unannotated Kanji
+  Content: A：「この本{ほん}、読み終{お}わった？」\nB：「うん、明日{あした} ______ つもり。」
+  Cleaned: A：「この、読みわった？」\nB：「うん、 ______ つもり。」
+
+Line 1113 [ID: n5_gen_kaeru_2] (prob): Found unannotated Kanji
+  Content: A：「もう ______ もいいですか。」\nB：「はい、気をつけて。」
+  Cleaned: A：「もう ______ もいいですか。」\nB：「はい、気をつけて。」
+
+Line 1683 [ID: n5_gen_shinu_2] (prob): Found unannotated Kanji
+  Content: A：「その虫{むし}、生きてる？」\nB：「ううん、もう ______ よ。」
+  Cleaned: A：「その、生きてる？」\nB：「ううん、もう ______ よ。」
+
+Line 1782 [ID: n5_gen_shiru_2] (prob): Found unannotated Kanji
+  Content: A：「田{た}中{なか}さんの電{でん}話{わ}番号、______ ？」\nB：「ううん、______。」
+  Cleaned: A：「さんの番号、______ ？」\nB：「ううん、______。」
+
+Line 1786 [ID: n5_gen_shiru_2] (text): Found unannotated Kanji
+  Content: 知{し}ってる／知らない
+  Cleaned: ってる／知らない
+
+Line 1788 [ID: n5_gen_shiru_2] (text): Found unannotated Kanji
+  Content: 知{し}る／知らない
+  Cleaned: る／知らない
+
+Line 1789 [ID: n5_gen_shiru_2] (text): Found unannotated Kanji
+  Content: 知{し}る／知らん
+  Cleaned: る／知らん
+
+Found 9 issues in src/data/questions/n5.ts
+
+--- Checking src/data/details/n4.ts ---
+Line 5087 [ID: n4_chuu_2] (sentence): Found unannotated Kanji
+  Content: 一年（　）、この季節{きせつ}が一番{いちばん}好{す}きです。
+  Cleaned: 一年（　）、このがきです。
+
+Found 1 issues in src/data/details/n4.ts
+
+Total issues found: 122

@@ -27,6 +27,7 @@ export interface GameConfig {
     simulationMin: number     // 模擬考試最低獎勵
     simulationMax: number     // 模擬考試最高獎勵
     stageComplete: number     // 完成情境關卡
+    grammarLessonComplete: number // 完成文法課程隨堂測驗
   }
   updatedAt: Date
   updatedBy: string
@@ -46,6 +47,7 @@ export const DEFAULT_GAME_CONFIG: GameConfig = {
     simulationMin: EXP_REWARDS.SIMULATION_MIN,
     simulationMax: EXP_REWARDS.SIMULATION_MAX,
     stageComplete: EXP_REWARDS.STAGE_COMPLETE,
+    grammarLessonComplete: EXP_REWARDS.GRAMMAR_LESSON_COMPLETE,
   },
   updatedAt: new Date(),
   updatedBy: 'system',

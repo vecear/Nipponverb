@@ -6,6 +6,7 @@ import ExpBar from '../components/ExpBar'
 import { useUserStore } from '../store/useUserStore'
 import { DEFAULT_PROGRESSION, EXP_CONSTANTS } from '../types/progression'
 import { getJobById, NOVICE_TITLE, getCharacterImagePath } from '../data/jobs'
+import { getCharacterStory } from '../data/characterStories'
 import { courses } from '../data/courses'
 
 // Icons replaced with unicode/gradients
@@ -67,6 +68,9 @@ const Dashboard = () => {
 
   // 取得角色圖片路徑
   const characterImage = getCharacterImagePath(progression.level, progression.jobId, gender)
+
+  // 取得角色故事
+  const characterStory = getCharacterStory(progression.level, progression.jobId, gender)
 
 
 
@@ -152,7 +156,7 @@ const Dashboard = () => {
                 )}
               </div>
               <span className="text-wave-deep text-sm md:text-base font-bold">{jobInfo.nameTw}</span>
-              <span className="text-sumi-faded text-xs md:text-sm mt-1">{jobInfo.description}</span>
+              <p className="text-sumi-faded text-xs md:text-sm mt-1 leading-relaxed max-w-md">{characterStory}</p>
               {/* 轉職提示 */}
               {'needsJobChange' in jobInfo && jobInfo.needsJobChange && (
                 <button

@@ -98,6 +98,9 @@ export function calculateExpReward(
     case 'stage_complete':
       return EXP_REWARDS.STAGE_COMPLETE
 
+    case 'grammar_lesson_complete':
+      return EXP_REWARDS.GRAMMAR_LESSON_COMPLETE
+
     default:
       return 0
   }
@@ -322,4 +325,23 @@ export async function handleJobSelection(
   const newProgression = selectJob(currentProgression, jobId)
   await updateUserProgression(uid, newProgression)
   return newProgression
+}
+
+/**
+ * 處理完成文法課程隨堂測驗事件
+ */
+export async function handleGrammarLessonComplete(
+  uid: string,
+  currentProgression: UserProgression,
+  gender: Gender,
+  customExpAmount?: number
+): Promise<LevelUpInfo | null> {
+  const expAmount = customExpAmount ?? calculateExpReward('grammar_lesson_complete')
+  const { newProgression, levelUpInfo } = addExp(
+    currentProgression,
+    expAmount,
+    gender
+  )
+  await updateUserProgression(uid, newProgression)
+  return levelUpInfo
 }

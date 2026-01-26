@@ -66,9 +66,6 @@
     }
   }
 
-  * {
-    @apply scroll-smooth;
-  }
 
   /* Typography - 書道風格 */
   h1,

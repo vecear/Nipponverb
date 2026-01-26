@@ -68,5 +68,11 @@ service cloud.firestore {
       allow read: if true;
       allow write: if isAdmin();
     }
+
+    // 角色故事資料（登入使用者可讀，管理員可寫）
+    match /characterStories/{storyId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
   }
 }

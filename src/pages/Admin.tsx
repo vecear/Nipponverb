@@ -14,6 +14,15 @@ import {
   GameConfig,
 } from '../services/adminService'
 import { getJobById, JOBS, NOVICE_TITLE, getCharacterImagePath } from '../data/jobs'
+import { JOB_STORIES, NOVICE_STORIES, StageStory } from '../data/characterStories'
+import {
+  getStories,
+  saveStories,
+  loadAllStoriesFromFirebase,
+  hasStoriesInFirebase,
+  initializeStoriesInFirebase,
+  resetStoriesCache,
+} from '../services/storyService'
 import {
   Settings,
   Users,
@@ -29,6 +38,10 @@ import {
   Home,
   ChevronDown,
   ChevronUp,
+  BookOpen,
+  Edit3,
+  X,
+  Upload,
 } from 'lucide-react'
 
 const Admin = () => {
@@ -36,13 +49,23 @@ const Admin = () => {
   const navigate = useNavigate()
   const { currentUser } = useAuth()
 
-  const [activeTab, setActiveTab] = useState<'config' | 'users' | 'stats' | 'admins'>('config')
+  const [activeTab, setActiveTab] = useState<'config' | 'users' | 'stats' | 'admins' | 'stories'>('config')
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
   const [showLevelPreview, setShowLevelPreview] = useState(false)
   const [selectedJobForPreview, setSelectedJobForPreview] = useState<string>('doshin')
   const [previewGender, setPreviewGender] = useState<'male' | 'female'>('male')
+
+  // 故事預覽與編輯
+  const [storyJobId, setStoryJobId] = useState<string>('novice')
+  const [storyGender, setStoryGender] = useState<'male' | 'female'>('male')
+  const [currentStories, setCurrentStories] = useState<StageStory[]>([])
+  const [editingStoryIndex, setEditingStoryIndex] = useState<number | null>(null)
+  const [editingStoryText, setEditingStoryText] = useState<string>('')
+  const [storySaving, setStorySaving] = useState(false)
+  const [storyLoading, setStoryLoading] = useState(false)
+  const [storiesInitialized, setStoriesInitialized] = useState<boolean | null>(null)
 
   // 遊戲配置
   const [config, setConfig] = useState<GameConfig | null>(null)
@@ -102,6 +125,99 @@ const Admin = () => {
       loadData()
     }
   }, [currentUser, t])
+
+  // 載入故事資料
+  useEffect(() => {
+    const loadStories = async () => {
+      setStoryLoading(true)
+      try {
+        // 檢查是否已初始化
+        const hasStories = await hasStoriesInFirebase()
+        setStoriesInitialized(hasStories)
+
+        // 載入當前選擇的故事
+        const stories = await getStories(storyJobId, storyGender)
+        setCurrentStories(stories)
+      } catch (error) {
+        console.error('Error loading stories:', error)
+        // 使用預設故事
+        if (storyJobId === 'novice') {
+          setCurrentStories(NOVICE_STORIES[storyGender])
+        } else {
+          setCurrentStories(JOB_STORIES[storyJobId]?.[storyGender] || [])
+        }
+      }
+      setStoryLoading(false)
+    }
+
+    if (activeTab === 'stories') {
+      loadStories()
+    }
+  }, [storyJobId, storyGender, activeTab])
+
+  // 初始化故事到 Firebase
+  const handleInitializeStories = async () => {
+    if (!currentUser?.email) return
+
+    const confirmed = window.confirm(
+      t('admin.stories.confirmInit', '確定要將預設故事初始化到資料庫嗎？這將覆蓋現有的故事資料。')
+    )
+    if (!confirmed) return
+
+    setStorySaving(true)
+    try {
+      await initializeStoriesInFirebase(currentUser.email)
+      setStoriesInitialized(true)
+      // 重新載入故事
+      const stories = await getStories(storyJobId, storyGender)
+      setCurrentStories(stories)
+      setStatus({ type: 'success', message: t('admin.stories.initSuccess', '故事初始化成功') })
+    } catch (error) {
+      console.error('Error initializing stories:', error)
+      setStatus({ type: 'error', message: t('admin.stories.initError', '故事初始化失敗') })
+    }
+    setStorySaving(false)
+  }
+
+  // 開始編輯故事
+  const handleEditStory = (index: number) => {
+    setEditingStoryIndex(index)
+    setEditingStoryText(currentStories[index].story)
+  }
+
+  // 取消編輯
+  const handleCancelEdit = () => {
+    setEditingStoryIndex(null)
+    setEditingStoryText('')
+  }
+
+  // 儲存單一故事
+  const handleSaveStory = async () => {
+    if (editingStoryIndex === null || !currentUser?.email) return
+
+    setStorySaving(true)
+    try {
+      // 更新故事陣列
+      const updatedStories = [...currentStories]
+      updatedStories[editingStoryIndex] = {
+        ...updatedStories[editingStoryIndex],
+        story: editingStoryText
+      }
+
+      // 儲存到 Firebase
+      await saveStories(storyJobId, storyGender, updatedStories, currentUser.email)
+
+      // 更新本地狀態
+      setCurrentStories(updatedStories)
+      setEditingStoryIndex(null)
+      setEditingStoryText('')
+      setStatus({ type: 'success', message: t('admin.stories.saveSuccess', '故事儲存成功') })
+    } catch (error) {
+      console.error('Error saving story:', error)
+      setStatus({ type: 'error', message: t('admin.stories.saveError', '故事儲存失敗') })
+    }
+    setStorySaving(false)
+  }
 
   // 儲存配置
   const handleSaveConfig = async () => {
@@ -225,14 +341,38 @@ const Admin = () => {
               </p>
             </div>
           </div>
-          <button
-            onClick={handleRefresh}
-            disabled={loading}
-            className="btn-secondary flex items-center gap-2"
-          >
-            <RefreshCw size={18} className={loading ? 'animate-spin' : ''} />
-            {t('admin.refresh', '重新載入')}
-          </button>
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={handleSaveConfig}
+              disabled={saving || !config}
+              className="btn-primary flex items-center gap-2"
+            >
+              <Save size={18} />
+              {saving ? t('common.loading', '載入中...') : t('common.save', '儲存')}
+            </button>
+            <button
+              onClick={() => {
+                const confirmed = window.confirm(
+                  t('admin.confirmLeave', '確定要離開嗎？未儲存的更改將會遺失。')
+                )
+                if (confirmed) {
+                  navigate('/')
+                }
+              }}
+              className="btn-secondary flex items-center gap-2"
+            >
+              <Home size={18} />
+              {t('admin.backToHome', '返回主頁面')}
+            </button>
+            <button
+              onClick={handleRefresh}
+              disabled={loading}
+              className="btn-secondary flex items-center gap-2"
+            >
+              <RefreshCw size={18} className={loading ? 'animate-spin' : ''} />
+              {t('admin.refresh', '重新載入')}
+            </button>
+          </div>
         </div>
 
         {/* 狀態提示 */}
@@ -289,6 +429,16 @@ const Admin = () => {
           >
             <Crown size={18} />
             {t('admin.tabs.admins', '管理員')}
+          </button>
+          <button
+            onClick={() => setActiveTab('stories')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${activeTab === 'stories'
+                ? 'bg-vermilion text-white'
+                : 'bg-washi-light text-sumi-faded hover:bg-foam border border-wave-mid'
+              }`}
+          >
+            <BookOpen size={18} />
+            {t('admin.tabs.stories', '角色故事')}
           </button>
         </div>
 
@@ -488,6 +638,25 @@ const Admin = () => {
                             expRewards: {
                               ...config.expRewards,
                               simulationMax: Number(e.target.value),
+                            },
+                          })
+                        }
+                        className="w-full"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm text-sumi-faded mb-2">
+                        {t('admin.config.grammarLessonComplete', '完成文法課程')}
+                      </label>
+                      <input
+                        type="number"
+                        value={config.expRewards.grammarLessonComplete || 30}
+                        onChange={(e) =>
+                          setConfig({
+                            ...config,
+                            expRewards: {
+                              ...config.expRewards,
+                              grammarLessonComplete: Number(e.target.value),
                             },
                           })
                         }
@@ -716,35 +885,9 @@ const Admin = () => {
                 </div>
 
                 {/* 最後更新資訊 */}
-                <div className="text-sm text-sumi-faded mb-6">
+                <div className="text-sm text-sumi-faded">
                   {t('admin.config.lastUpdated', '最後更新')}: {config.updatedAt.toLocaleString()}{' '}
                   by {config.updatedBy}
-                </div>
-
-                {/* 儲存按鈕與返回按鈕 */}
-                <div className="flex gap-3">
-                  <button
-                    onClick={handleSaveConfig}
-                    disabled={saving}
-                    className="btn-primary flex items-center gap-2"
-                  >
-                    <Save size={18} />
-                    {saving ? t('common.loading', '載入中...') : t('common.save', '儲存')}
-                  </button>
-                  <button
-                    onClick={() => {
-                      const confirmed = window.confirm(
-                        t('admin.confirmLeave', '確定要離開嗎？未儲存的更改將會遺失。')
-                      )
-                      if (confirmed) {
-                        navigate('/')
-                      }
-                    }}
-                    className="btn-secondary flex items-center gap-2"
-                  >
-                    <Home size={18} />
-                    {t('admin.backToHome', '返回主頁面')}
-                  </button>
                 </div>
               </div>
             )}
@@ -981,6 +1124,216 @@ const Admin = () => {
                         <li>{t('admin.admins.notice2', '無法移除自己的管理員權限')}</li>
                         <li>{t('admin.admins.notice3', '新管理員將立即獲得完整權限')}</li>
                       </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* 角色故事 */}
+            {activeTab === 'stories' && (
+              <div className="card">
+                <h2 className="text-xl font-bold mb-6 flex items-center gap-2 text-wave-deep">
+                  <BookOpen size={24} className="text-vermilion" />
+                  {t('admin.stories.title', '角色故事管理')}
+                </h2>
+
+                {/* 初始化提示 */}
+                {storiesInitialized === false && (
+                  <div className="mb-6 p-4 bg-ochre-light/30 border-2 border-ochre rounded-xl">
+                    <div className="flex items-start gap-3">
+                      <AlertCircle size={20} className="text-ochre flex-shrink-0 mt-0.5" />
+                      <div className="flex-1">
+                        <p className="font-bold text-sumi mb-2">
+                          {t('admin.stories.notInitialized', '故事資料尚未初始化')}
+                        </p>
+                        <p className="text-sm text-sumi-faded mb-3">
+                          {t('admin.stories.initDescription', '點擊下方按鈕將預設故事初始化到資料庫，之後就可以編輯故事內容。')}
+                        </p>
+                        <button
+                          onClick={handleInitializeStories}
+                          disabled={storySaving}
+                          className="btn-primary flex items-center gap-2"
+                        >
+                          <Upload size={18} />
+                          {storySaving ? t('common.loading', '載入中...') : t('admin.stories.initButton', '初始化故事資料')}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* 選擇職業和性別 */}
+                <div className="flex flex-wrap gap-4 mb-6">
+                  <div>
+                    <label className="block text-sm text-sumi-faded mb-2">
+                      {t('admin.stories.selectJob', '選擇職業')}
+                    </label>
+                    <select
+                      value={storyJobId}
+                      onChange={(e) => {
+                        setStoryJobId(e.target.value)
+                        handleCancelEdit()
+                      }}
+                      className="px-4 py-2 rounded-lg border border-wave-mid bg-white text-sumi min-w-[200px]"
+                    >
+                      <option value="novice">{NOVICE_TITLE.nameTw} (初心者)</option>
+                      {JOBS.map((job) => (
+                        <option key={job.id} value={job.id}>
+                          {job.icon} {job.nameTw} ({job.nameJp})
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm text-sumi-faded mb-2">
+                      {t('admin.stories.selectGender', '選擇性別')}
+                    </label>
+                    <div className="flex gap-2">
+                      <button
+                        onClick={() => {
+                          setStoryGender('male')
+                          handleCancelEdit()
+                        }}
+                        className={`px-4 py-2 rounded-lg transition-all ${storyGender === 'male'
+                          ? 'bg-wave-deep text-white'
+                          : 'bg-washi-light text-sumi-faded hover:bg-foam border border-wave-mid'
+                          }`}
+                      >
+                        {t('common.male', '男性')}
+                      </button>
+                      <button
+                        onClick={() => {
+                          setStoryGender('female')
+                          handleCancelEdit()
+                        }}
+                        className={`px-4 py-2 rounded-lg transition-all ${storyGender === 'female'
+                          ? 'bg-sakura text-white'
+                          : 'bg-washi-light text-sumi-faded hover:bg-foam border border-wave-mid'
+                          }`}
+                      >
+                        {t('common.female', '女性')}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 故事列表 */}
+                {storyLoading ? (
+                  <div className="p-8 text-center">
+                    <RefreshCw className="animate-spin mx-auto mb-4 text-wave-deep" size={32} />
+                    <p className="text-sumi-faded">{t('common.loading', '載入中...')}</p>
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    {(() => {
+                      const job = storyJobId === 'novice' ? null : getJobById(storyJobId)
+                      const jobIcon = storyJobId === 'novice' ? '🎯' : job?.icon || '❓'
+                      const jobName = storyJobId === 'novice'
+                        ? `${NOVICE_TITLE.nameTw} - ${NOVICE_TITLE.nameJp} (${NOVICE_TITLE.nameReading})`
+                        : job ? `${job.nameTw} - ${job.nameJp} (${job.nameReading})` : ''
+
+                      return (
+                        <>
+                          <h3 className="text-lg font-bold text-wave-mid flex items-center gap-2">
+                            <span className="text-2xl">{jobIcon}</span>
+                            {jobName}
+                          </h3>
+                          {job && <p className="text-sumi-faded text-sm mb-4">{job.description}</p>}
+
+                          {currentStories.map((stage, index) => {
+                            const jobStage = job?.stages[storyGender][index]
+                            const isEditing = editingStoryIndex === index
+
+                            return (
+                              <div key={index} className={`p-4 rounded-xl border ${isEditing ? 'bg-foam/50 border-wave-deep' : 'bg-washi-light/50 border-wave-mid/30'}`}>
+                                <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                  <div className="flex flex-wrap items-center gap-2">
+                                    <span className={`px-2 py-1 rounded text-sm font-bold ${index < 3 ? 'bg-green-500/20 text-green-600' :
+                                      index < 6 ? 'bg-blue-500/20 text-blue-600' :
+                                        index < 9 ? 'bg-purple-500/20 text-purple-600' :
+                                          'bg-vermilion/20 text-vermilion'
+                                      }`}>
+                                      Lv.{stage.minLevel} - {stage.maxLevel}
+                                    </span>
+                                    {jobStage && (
+                                      <span className="px-2 py-1 bg-wave-light/30 text-wave-deep rounded text-sm font-medium">
+                                        {jobStage.nameTw} ({jobStage.nameJp})
+                                      </span>
+                                    )}
+                                  </div>
+                                  {!isEditing && storiesInitialized && (
+                                    <button
+                                      onClick={() => handleEditStory(index)}
+                                      className="p-2 text-wave-mid hover:text-vermilion hover:bg-vermilion/10 rounded-lg transition-colors"
+                                      title={t('common.edit', '編輯')}
+                                    >
+                                      <Edit3 size={18} />
+                                    </button>
+                                  )}
+                                </div>
+
+                                {isEditing ? (
+                                  <div className="space-y-3">
+                                    <textarea
+                                      value={editingStoryText}
+                                      onChange={(e) => setEditingStoryText(e.target.value)}
+                                      className="w-full p-3 rounded-lg border border-wave-mid bg-white text-sumi min-h-[120px] resize-y"
+                                      placeholder={t('admin.stories.enterStory', '輸入故事內容...')}
+                                    />
+                                    <div className="flex gap-2">
+                                      <button
+                                        onClick={handleSaveStory}
+                                        disabled={storySaving}
+                                        className="btn-primary flex items-center gap-2"
+                                      >
+                                        <Save size={16} />
+                                        {storySaving ? t('common.loading', '載入中...') : t('common.save', '儲存')}
+                                      </button>
+                                      <button
+                                        onClick={handleCancelEdit}
+                                        disabled={storySaving}
+                                        className="btn-secondary flex items-center gap-2"
+                                      >
+                                        <X size={16} />
+                                        {t('common.cancel', '取消')}
+                                      </button>
+                                    </div>
+                                    <p className="text-xs text-sumi-faded">
+                                      {t('admin.stories.charCount', '字數')}: {editingStoryText.length}
+                                    </p>
+                                  </div>
+                                ) : (
+                                  <p className="text-sumi leading-relaxed">{stage.story}</p>
+                                )}
+                              </div>
+                            )
+                          })}
+                        </>
+                      )
+                    })()}
+                  </div>
+                )}
+
+                {/* 統計資訊 */}
+                <div className="mt-8 p-4 bg-foam/50 border-2 border-wave-mid/30 rounded-xl">
+                  <h4 className="font-bold text-wave-deep mb-2">{t('admin.stories.stats', '故事統計')}</h4>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                    <div>
+                      <span className="text-sumi-faded">{t('admin.stories.totalJobs', '職業數量')}</span>
+                      <p className="font-bold text-wave-deep">{JOBS.length} 種</p>
+                    </div>
+                    <div>
+                      <span className="text-sumi-faded">{t('admin.stories.stagesPerJob', '每職業階段')}</span>
+                      <p className="font-bold text-wave-deep">10 階段</p>
+                    </div>
+                    <div>
+                      <span className="text-sumi-faded">{t('admin.stories.totalStoriesMale', '男性故事數')}</span>
+                      <p className="font-bold text-wave-deep">{1 + JOBS.length * 10} 篇</p>
+                    </div>
+                    <div>
+                      <span className="text-sumi-faded">{t('admin.stories.totalStoriesFemale', '女性故事數')}</span>
+                      <p className="font-bold text-wave-deep">{1 + JOBS.length * 10} 篇</p>
                     </div>
                   </div>
                 </div>

@@ -4,7 +4,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_aida': {
         id: 'n4_aida',
         pattern: '間（あいだ）',
-        connection: '動詞辭書形 / ている形 / ない形 + 間\n名詞 + の + 間\nい形容詞 + 間\nな形容詞 + な + 間',
+        connection: '動{どう}詞{し}辭書形 / ている形 / ない形 + 間\n名{めい}詞{し} + の + 間\nい形{けい}容{よう}詞{し} + 間\nな形{けい}容{よう}詞{し} + な + 間',
         translation: '期間; 在...期間',
         level: 'N4',
         explanation: [
@@ -13,9 +13,9 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '在某段期間「一直」保持某狀態',
                 description: '表示在某個持續的時間範圍內，後句的動作或狀態也持續進行。與「間に」不同，「間」強調的是「整個期間」都如此，而非某個時間點發生的事。',
                 examples: [
-                    { japanese: '日本{にほん}にいる間{あいだ}、ずっと日本語{にほんご}を勉強{べんきょう}していました。', chinese: '在日本的期間，我一直都在學習日語。' },
-                    { japanese: '電車{でんしゃ}に乗{の}っている間{あいだ}、本{ほん}を読{よ}んでいました。', chinese: '搭電車的期間，我一直在看書。' },
-                    { japanese: '子供{こども}が寝{ね}ている間{あいだ}、静{しず}かにしてください。', chinese: '孩子睡覺的期間，請保持安靜。' }
+                    { japanese: '日本{にほん}にいる間{あいだ}、ずっと日本語{にほんご}を勉{べん}強{きょう}していました。', chinese: '在日本的期間，我一直都在學習日語。' },
+                    { japanese: '電{でん}車{しゃ}に乗{の}っている間{あいだ}、本{ほん}を読{よ}んでいました。', chinese: '搭電車的期間，我一直在看書。' },
+                    { japanese: '子{こ}供{とも}が寝{ね}ている間{あいだ}、静{しず}かにしてください。', chinese: '孩子睡覺的期間，請保持安靜。' }
                 ]
             }
         ],
@@ -36,14 +36,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_aida_1',
-                sentence: '夏休{なつやす}みの（　）、毎日{まいにち}プールで泳{およ}いでいました。',
+                sentence: '夏休{なつやす}みの（　）、毎{まい}日{にち}プールで泳{およ}いでいました。',
                 options: ['間{あいだ}', '間{あいだ}に', '時{とき}', 'ところ'],
                 correctIndex: 0,
                 explanation: '「每天都在游泳」是持續的動作，表示整個暑假期間都在做的事，用「間」。'
             },
             {
                 id: 'n4_aida_2',
-                sentence: '授業{じゅぎょう}の間{あいだ}、ずっと（　）いました。',
+                sentence: '授{じゅ}業{ぎょう}の間{あいだ}、ずっと（　）いました。',
                 options: ['起{お}きて', '起{お}き', '起{お}きる', '起{お}きた'],
                 correctIndex: 0,
                 explanation: '「間」後面接的是「一直持續」的狀態，用「ている形」的「起きて」。'
@@ -71,7 +71,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_aida_5',
-                sentence: '赤{あか}ちゃんが寝{ね}ている（　）、掃除{そうじ}をしました。',
+                sentence: '赤{あか}ちゃんが寝{ね}ている（　）、掃{そう}除{じ}をしました。',
                 options: ['間{あいだ}', '間{あいだ}に', 'とき', 'まで'],
                 correctIndex: 1,
                 explanation: {
@@ -88,7 +88,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_aida_ni': {
         id: 'n4_aida_ni',
         pattern: '間に（あいだに）',
-        connection: '動詞辭書形 / ている形 / ない形 + 間に\n名詞 + の + 間に\nい形容詞 + 間に\nな形容詞 + な + 間に',
+        connection: '動{どう}詞{し}辭書形 / ている形 / ない形 + 間に\n名{めい}詞{し} + の + 間に\nい形{けい}容{よう}詞{し} + 間に\nな形{けい}容{よう}詞{し} + な + 間に',
         translation: '在...期間 (發生某事)',
         level: 'N4',
         explanation: [
@@ -98,7 +98,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示在某個持續的狀態或動作進行的期間內，發生了另一個短暫的動作或變化。與「間」不同，「間に」強調的是期間內的「某個時間點」發生了什麼，而不是整個期間都在做什麼。',
                 examples: [
                     { japanese: '母{はは}が昼寝{ひるね}をしている間{あいだ}に、テレビを見{み}ました。', chinese: '趁媽媽在午睡的時候，我看了電視。' },
-                    { japanese: '留守{るす}の間{あいだ}に、友達{ともだち}が来{き}ました。', chinese: '我不在家的時候，朋友來了。' },
+                    { japanese: '留守{るす}の間{あいだ}に、友{とも}達{だち}が来{き}ました。', chinese: '我不在家的時候，朋友來了。' },
                     { japanese: '独身{どくしん}の間{あいだ}に、いろいろなことをしたいです。', chinese: '我想趁單身的時候，做各式各樣的事情。' }
                 ]
             }
@@ -120,7 +120,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_aida_ni_1',
-                sentence: '赤{あか}ちゃんが（　）間{あいだ}に、掃除{そうじ}をしました。',
+                sentence: '赤{あか}ちゃんが（　）間{あいだ}に、掃{そう}除{じ}をしました。',
                 options: ['寝{ね}る', '寝{ね}て', '寝{ね}ている', '寝{ね}た'],
                 correctIndex: 2,
                 explanation: '表示在「寶寶正在睡覺」的這個持續狀態中，完成了掃除這個動作，故使用「寝ている」。'
@@ -130,14 +130,14 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '夏休{なつやす}み（　）間{あいだ}に、たくさん本{ほん}を読{よ}みました。',
                 options: ['の', 'な', 'で', 'に'],
                 correctIndex: 0,
-                explanation: '「夏休み」是名詞，接續「間に」需要加「の」。'
+                explanation: '「夏休み」是名{めい}詞{し}，接續「間に」需要加「の」。'
             },
             {
                 id: 'n4_aida_ni_3',
                 sentence: 'バスを待{ま}っている間{あいだ}に、雨{あめ}が（　）。',
                 options: ['降{ふ}っていた', '降{ふ}り出{だ}した', '降{ふ}る', '降{ふ}ります'],
                 correctIndex: 1,
-                explanation: '「間に」後句通常接續「瞬間發生的動作」或「變化」，「降り出した」表示開始下雨。'
+                explanation: '「間に」後句通常接續「瞬間發生的動作」或「變化」，「降り出した」表示開始下雨{あめ}。'
             },
             {
                 id: 'n4_aida_ni_4',
@@ -148,7 +148,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_aida_ni_5',
-                sentence: '電車{でんしゃ}に乗{の}っている間{あいだ}に、音楽{おんがく}を（　）。',
+                sentence: '電{でん}車{しゃ}に乗{の}っている間{あいだ}に、音楽{おんがく}を（　）。',
                 options: ['聞{き}いていた', '聞{き}いた', '聞{き}く', '聞{き}かない'],
                 correctIndex: 0,
                 explanation: {
@@ -165,7 +165,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_amari_nai': {
         id: 'n4_amari_nai',
         pattern: 'あまり～ない',
-        connection: 'あまり + 動詞否定形 / い形否定 / な形否定',
+        connection: 'あまり + 動{どう}詞{し}否定形 / い形否定 / な形否定',
         translation: '不怎麼...; 不太...',
         level: 'N4',
         explanation: [
@@ -174,9 +174,9 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '程度不高',
                 description: '表示程度不太高、頻率不多、或數量不多。必須與否定形式一起使用。',
                 examples: [
-                    { japanese: '私{わたし}はあまり料理{りょうり}をしません。', chinese: '我不怎麼做飯。' },
+                    { japanese: '私{わたし}はあまり料{りょう}理{り}をしません。', chinese: '我不怎麼做飯。' },
                     { japanese: 'このレストランはあまり高{たか}くないです。', chinese: '這家餐廳不太貴。' },
-                    { japanese: '彼{かれ}はあまり有名{ゆうめい}じゃありません。', chinese: '他不太有名。' }
+                    { japanese: '彼{かれ}はあまり有{ゆう}名{めい}じゃありません。', chinese: '他不太有名。' }
                 ]
             }
         ],
@@ -197,7 +197,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_amari_nai_1',
-                sentence: '最近{さいきん}あまり運動{うんどう}を（　）。',
+                sentence: '最{さい}近{きん}あまり運動{うんどう}を（　）。',
                 options: ['します', 'しました', 'しません', 'する'],
                 correctIndex: 2,
                 explanation: '「あまり」必須與否定形「しません」搭配使用。'
@@ -207,7 +207,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: 'この映画{えいが}はあまり（　）。',
                 options: ['面白{おもしろ}い', '面白{おもしろ}くない', '面白{おもしろ}くある', '面白{おもしろ}かった'],
                 correctIndex: 1,
-                explanation: '「あまり」需接否定形，い形容詞否定是「くない」。'
+                explanation: '「あまり」需接否定形，い形{けい}容{よう}詞{し}否定是「くない」。'
             },
             {
                 id: 'n4_amari_nai_3',
@@ -215,17 +215,17 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['上手{じょうず}じゃ', '上手{じょうず}に', '上手{じょうず}く', '上手{じょうず}だ'],
                 correctIndex: 0,
                 explanation: {
-                    correct: 'な形容詞的否定是「じゃありません」，配合「あまり」使用。',
+                    correct: 'な形{けい}容{よう}詞{し}的否定是「じゃありません」，配合「あまり」使用。',
                     wrong: [
                         '「上手に」是副詞形式，後面不接「ありません」。',
-                        '「上手く」是「上手い」的變化，「上手」是な形容詞。',
+                        '「上手く」是「上手い」的變化，「上手」是な形{けい}容{よう}詞{し}。',
                         '「上手だ」是肯定形式，不符合「あまり」的用法。'
                     ]
                 }
             },
             {
                 id: 'n4_amari_nai_4',
-                sentence: '「毎日{まいにち}コーヒーを飲{の}みますか。」\n「いいえ、あまり（　）。」',
+                sentence: '「毎{まい}日{にち}コーヒーを飲{の}みますか。」\n「いいえ、あまり（　）。」',
                 options: ['飲{の}みます', '飲{の}みません', '飲{の}んだ', '飲{の}まない'],
                 correctIndex: 1,
                 explanation: '對話情境。回答「不太喝」，用「あまり」+「否定形」。'
@@ -249,7 +249,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ato_de': {
         id: 'n4_ato_de',
         pattern: '後で（あとで）',
-        connection: '動詞た形 + 後で\n名詞 + の + 後で',
+        connection: '動{どう}詞{し}た形 + 後で\n名{めい}詞{し} + の + 後で',
         translation: '之後; 稍後',
         level: 'N4',
         explanation: [
@@ -258,9 +258,9 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '時間先後順序',
                 description: '表示在某動作或某時間點之後，再做另一件事。前句的動作先發生，後句的動作後發生。',
                 examples: [
-                    { japanese: 'ご飯{はん}を食{た}べた後{あと}で、散歩{さんぽ}しました。', chinese: '吃完飯之後，去散步了。' },
+                    { japanese: 'ご飯{はん}を食{た}べた後{あと}で、散{さん}歩{ぽ}しました。', chinese: '吃完飯之後，去散步了。' },
                     { japanese: '仕事{しごと}の後{あと}で、飲{の}みに行{い}きませんか。', chinese: '工作之後，要不要去喝一杯？' },
-                    { japanese: '後{あと}で電話{でんわ}します。', chinese: '稍後再打電話給你。' }
+                    { japanese: '後{あと}で電{でん}話{わ}します。', chinese: '稍後再打電話給你。' }
                 ]
             }
         ],
@@ -281,17 +281,17 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_ato_de_1',
-                sentence: '映画{えいが}を（　）後{あと}で、食事{しょくじ}をしました。',
+                sentence: '映画{えいが}を（　）後{あと}で、食{しょく}事{じ}をしました。',
                 options: ['見{み}た', '見{み}る', '見{み}て', '見{み}'],
                 correctIndex: 0,
-                explanation: '「後で」前面接動詞的「た形」。'
+                explanation: '「後で」前面接動{どう}詞{し}的「た形」。'
             },
             {
                 id: 'n4_ato_de_2',
                 sentence: '会議{かいぎ}（　）後{あと}で、報告書{ほうこくしょ}を書{か}きます。',
                 options: ['の', 'を', 'が', 'に'],
                 correctIndex: 0,
-                explanation: '名詞接「後で」時，需要加「の」。'
+                explanation: '名{めい}詞{し}接「後で」時，需要加「の」。'
             },
             {
                 id: 'n4_ato_de_3',
@@ -309,7 +309,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_ato_de_4',
-                sentence: '「レポート、いつ出{だ}しますか。」\n「授業{じゅぎょう}の（　）出{だ}します。」',
+                sentence: '「レポート、いつ出{だ}しますか。」\n「授{じゅ}業{ぎょう}の（　）出{だ}します。」',
                 options: ['前{まえ}に', '後{あと}で', '間{あいだ}に', 'うちに'],
                 correctIndex: 1,
                 explanation: '對話情境。問什麼時候交報告，回答「課後交」。'
@@ -319,14 +319,14 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「もう宿題{しゅくだい}やった？」\n「うん、ご飯{はん}を（　）後{あと}でやったよ。」',
                 options: ['食{た}べる', '食{た}べた', '食{た}べて', '食{た}べ'],
                 correctIndex: 1,
-                explanation: '對話情境。「吃完飯之後做的」，動詞用「た形」接「後で」。'
+                explanation: '對話情境。「吃完飯之後做的」，動{どう}詞{し}用「た形」接「後で」。'
             }
         ]
     },
     'n4_ba': {
         id: 'n4_ba',
         pattern: 'ば',
-        connection: '動詞ば形\nい形容詞：い → ければ\nな形容詞：～であれば\n名詞：～であれば',
+        connection: '動{どう}詞{し}ば形\nい形{けい}容{よう}詞{し}：い → ければ\nな形{けい}容{よう}詞{し}：～であれば\n名{めい}詞{し}：～であれば',
         translation: '如果...; 假如... (條件形)',
         level: 'N4',
         explanation: [
@@ -336,7 +336,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示假設的條件，「如果...的話，就...」。強調條件成立時的結果。',
                 examples: [
                     { japanese: '安{やす}ければ、買{か}います。', chinese: '如果便宜的話，就買。' },
-                    { japanese: '雨{あめ}が降{ふ}れば、試合{しあい}は中止{ちゅうし}です。', chinese: '如果下雨，比賽就中止。' },
+                    { japanese: '雨{あめ}が降{ふ}れば、試合{しあい}は中止{ちゅうし}です。', chinese: '如果下雨{あめ}，比賽就中止。' },
                     { japanese: '薬{くすり}を飲{の}めば、治{なお}りますよ。', chinese: '如果吃藥的話，會好起來的。' }
                 ]
             }
@@ -350,7 +350,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     examples: [{ japanese: '春{はる}になれば、桜{さくら}が咲{さ}く。', chinese: '到了春天，櫻花就會開。' }]
                 },
                 {
-                    rule: 'と：必然結果，習慣或自然規律。',
+                    rule: 'と：必然結果，習{しゅう}慣{かん}或自然規律。',
                     examples: [{ japanese: '春{はる}になると、桜{さくら}が咲{さ}く。', chinese: '一到春天，櫻花就開。' }]
                 },
                 {
@@ -366,7 +366,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_ba_1',
-                sentence: '時間{じかん}が（　）、手伝{てつだ}ってください。',
+                sentence: '時{じ}間{かん}が（　）、手伝{てつだ}ってください。',
                 options: ['あれば', 'あると', 'あったら', 'あるなら'],
                 correctIndex: 0,
                 explanation: '「ある」的ば形是「あれば」，表示假設「如果有時間的話」。'
@@ -376,7 +376,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: 'この薬{くすり}を（　）、すぐ良{よ}くなりますよ。',
                 options: ['飲{の}めば', '飲{の}むと', '飲{の}んだら', '飲{の}むなら'],
                 correctIndex: 0,
-                explanation: '「飲む」的ば形是「飲めば」，五段動詞把「む」改成「め」加「ば」。'
+                explanation: '「飲む」的ば形是「飲めば」，五段動{どう}詞{し}把「む」改成「め」加「ば」。'
             },
             {
                 id: 'n4_ba_3',
@@ -384,7 +384,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['安{やす}ければ', '安{やす}いと', '安{やす}かったら', '安{やす}いなら'],
                 correctIndex: 0,
                 explanation: {
-                    correct: 'い形容詞的ば形是「い→ければ」，「安ければ」表示「如果便宜一點的話」。',
+                    correct: 'い形{けい}容{よう}詞{し}的ば形是「い→ければ」，「安ければ」表示「如果便宜一點的話」。',
                     wrong: [
                         '「安いと」表示必然結果，這裡是假設語氣。',
                         '「安かったら」也可以，但「ば」在此更自然。',
@@ -394,7 +394,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_ba_4',
-                sentence: '「どうすれば日本語{にほんご}が上手{じょうず}になりますか。」\n「毎日{まいにち}練習{れんしゅう}（　）、上手{じょうず}になりますよ。」',
+                sentence: '「どうすれば日本語{にほんご}が上手{じょうず}になりますか。」\n「毎{まい}日{にち}練{れん}習{しゅう}（　）、上手{じょうず}になりますよ。」',
                 options: ['すれば', 'すると', 'したら', 'するなら'],
                 correctIndex: 0,
                 explanation: '對話情境。問「怎樣才能變好」，回答用「すれば」（如果練習的話）。'
@@ -417,8 +417,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     },
     'n4_baai_wa': {
         id: 'n4_baai_wa',
-        pattern: '場合は（ばあいは）',
-        connection: '動詞普通形 + 場合は\nい形容詞 + 場合は\nな形容詞 + な + 場合は\n名詞 + の + 場合は',
+        pattern: '場{ば}合{あい}は（ばあいは）',
+        connection: '動{どう}詞{し}普通形 + 場{ば}合{あい}は\nい形{けい}容{よう}詞{し} + 場{ば}合{あい}は\nな形{けい}容{よう}詞{し} + な + 場{ば}合{あい}は\n名{めい}詞{し} + の + 場{ば}合{あい}は',
         translation: '...的情況下; 萬一',
         level: 'N4',
         explanation: [
@@ -427,23 +427,23 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '假設某種情況',
                 description: '表示在某種特定情況或條件下，應該如何處理。常用於說明規則、應對方法或給予建議。',
                 examples: [
-                    { japanese: '雨{あめ}の場合{ばあい}は、試合{しあい}を中止{ちゅうし}します。', chinese: '下雨的話，比賽會中止。' },
+                    { japanese: '雨{あめ}の場合{ばあい}は、試合{しあい}を中止{ちゅうし}します。', chinese: '下雨{あめ}的話，比賽會中止。' },
                     { japanese: '分{わ}からない場合{ばあい}は、質問{しつもん}してください。', chinese: '不懂的話，請提問。' },
                     { japanese: '緊急{きんきゅう}の場合{ばあい}は、このボタンを押{お}してください。', chinese: '緊急情況下，請按這個按鈕。' }
                 ]
             }
         ],
         analysis: {
-            title: '「場合」與「とき」的比較',
+            title: '「場{ば}合{あい}」與「とき」的比較',
             description: '兩者都可表示「...的時候」，但用法略有不同。',
             points: [
                 {
-                    rule: '場合：強調「情況、狀況」，常用於假設或規則說明。',
+                    rule: '場{ば}合{あい}：強調「情況、狀況」，常用於假設或規則說明。',
                     examples: [{ japanese: '火事{かじ}の場合{ばあい}は、エレベーターを使{つか}わないでください。', chinese: '發生火災時，請不要使用電梯。' }]
                 },
                 {
                     rule: 'とき：強調「時間點」，可用於過去、現在、未來的時間。',
-                    examples: [{ japanese: '子供{こども}のとき、よく泣{な}いていた。', chinese: '小時候經常哭。' }]
+                    examples: [{ japanese: '子{こ}供{とも}のとき、よく泣{な}いていた。', chinese: '小時候經常哭。' }]
                 }
             ]
         },
@@ -453,14 +453,14 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '地震{じしん}の（　）は、机{つくえ}の下{した}に隠{かく}れてください。',
                 options: ['場合{ばあい}', 'とき', 'ところ', '間{あいだ}'],
                 correctIndex: 0,
-                explanation: '「地震的情況下」用「場合」，這是緊急應對的說明。'
+                explanation: '「地震的情況下」用「場{ば}合{あい}」，這是緊急應對的說明。'
             },
             {
                 id: 'n4_baai_wa_2',
-                sentence: '熱{ねつ}が（　）場合{ばあい}は、学校{がっこう}を休{やす}んでください。',
+                sentence: '熱{ねつ}が（　）場合{ばあい}は、学{がっ}校{こう}を休{やす}んでください。',
                 options: ['ある', 'あった', 'あり', 'あって'],
                 correctIndex: 0,
-                explanation: '動詞辭書形接「場合」，「熱がある場合」。'
+                explanation: '動{どう}詞{し}辭書形接「場{ば}合{あい}」，「熱がある場{ば}合{あい}」。'
             },
             {
                 id: 'n4_baai_wa_3',
@@ -468,32 +468,32 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['悪{わる}い', '悪{わる}く', '悪{わる}くて', '悪{わる}かった'],
                 correctIndex: 0,
                 explanation: {
-                    correct: 'い形容詞直接接「場合」，用辭書形「悪い」。',
+                    correct: 'い形{けい}容{よう}詞{し}直接接「場{ば}合{あい}」，用辭書形「悪い」。',
                     wrong: [
-                        '「悪く」是副詞形式，不能直接接「場合」。',
-                        '「悪くて」是て形，用於連接理由。',
+                        '「悪く」是副詞形式，不能直接接「場{ば}合{あい}」。',
+                        '「悪くて」是て形，用於連接理{り}由{ゆう}。',
                         '「悪かった」是過去式，這裡是假設未來的情況。'
                     ]
                 }
             },
             {
                 id: 'n4_baai_wa_4',
-                sentence: '「もし遅刻{ちこく}したらどうしますか。」\n「遅刻{ちこく}した（　）は、先生{せんせい}に連絡{れんらく}します。」',
+                sentence: '「もし遅刻{ちこく}したらどうしますか。」\n「遅刻{ちこく}した（　）は、先{せん}生{せい}に連{れん}絡{らく}します。」',
                 options: ['場合{ばあい}', 'とき', 'あと', '前{まえ}'],
                 correctIndex: 0,
-                explanation: '對話情境。問遲到怎麼辦，回答用「場合」說明應對方式。'
+                explanation: '對話情境。問遲到怎麼辦，回答用「場{ば}合{あい}」說明應對方式。'
             },
             {
                 id: 'n4_baai_wa_5',
-                sentence: '静{しず}か（　）場合{ばあい}は、勉強{べんきょう}がはかどります。',
+                sentence: '静{しず}か（　）場合{ばあい}は、勉{べん}強{きょう}がはかどります。',
                 options: ['の', 'な', 'に', 'で'],
                 correctIndex: 1,
                 explanation: {
-                    correct: 'な形容詞接「場合」時用「な」，「静かな場合」。',
+                    correct: 'な形{けい}容{よう}詞{し}接「場{ば}合{あい}」時用「な」，「静かな場{ば}合{あい}」。',
                     wrong: [
-                        '「の」用於名詞接「場合」。',
+                        '「の」用於名{めい}詞{し}接「場{ば}合{あい}」。',
                         '「に」是副詞形式。',
-                        '「で」表示原因或手段，不用於接「場合」。'
+                        '「で」表示原{げん}因{いん}或手段，不用於接「場{ば}合{あい}」。'
                     ]
                 }
             }
@@ -502,17 +502,17 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_bakari': {
         id: 'n4_bakari',
         pattern: 'ばかり',
-        connection: '名詞 + ばかり\n動詞て形 + ばかりいる\n動詞た形 + ばかり（剛剛...）',
+        connection: '名{めい}詞{し} + ばかり\n動{どう}詞{し}て形 + ばかりいる\n動{どう}詞{し}た形 + ばかり（剛剛...）',
         translation: '只有; 僅僅; 光是...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '限定「只有」（帶有負面語氣）',
+                title: '限定「只有」（帶有負{ま}け面語氣）',
                 description: '表示「只有」或「淨是」，通常帶有說話者不滿、責備或擔憂的語氣。',
                 examples: [
                     { japanese: '彼{かれ}は肉{にく}ばかり食{た}べている。', chinese: '他只吃肉。（暗示不均衡）' },
-                    { japanese: '最近{さいきん}、雨{あめ}ばかりだ。', chinese: '最近淨是下雨。' },
+                    { japanese: '最{さい}近{きん}、雨{あめ}ばかりだ。', chinese: '最{さい}近{きん}淨是下雨{あめ}。' },
                     { japanese: '文句{もんく}ばかり言{い}わないでください。', chinese: '請不要光是抱怨。' }
                 ]
             },
@@ -531,11 +531,11 @@ export const n4Details: Record<string, GrammarPoint> = {
             description: '兩者都表示限定，但語氣不同。',
             points: [
                 {
-                    rule: 'ばかり：主觀評價，常帶負面語氣，「淨是」。',
+                    rule: 'ばかり：主觀評價，常帶負{ま}け面語氣，「淨是」。',
                     examples: [{ japanese: 'ゲームばかりしている。', chinese: '淨是在玩遊戲。（責備語氣）' }]
                 },
                 {
-                    rule: 'だけ：客觀陳述，中性語氣，「只有」。',
+                    rule: 'だけ：客{きゃく}觀陳述，中性語氣，「只有」。',
                     examples: [{ japanese: 'ゲームだけしている。', chinese: '只在玩遊戲。（單純描述）' }]
                 }
             ]
@@ -557,13 +557,13 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_bakari_3',
-                sentence: '彼女{かのじょ}は甘{あま}いもの（　）食{た}べている。',
+                sentence: '彼{かれ}女{かのじょ}は甘{あま}いもの（　）食{た}べている。',
                 options: ['を', 'ばかり', 'だけを', 'しか'],
                 correctIndex: 1,
                 explanation: {
-                    correct: '「ばかり」表示「淨是吃甜食」，帶有負面評價。',
+                    correct: '「ばかり」表示「淨是吃甜食{た}」，帶有負{ま}け面評價。',
                     wrong: [
-                        '「を」只是賓語標記，沒有限定意味。',
+                        '「を」只是賓語標記，沒有限定意味{あじ}。',
                         '「だけを」語感中性，不帶評價。',
                         '「しか」需要接否定形，這裡是肯定。'
                     ]
@@ -588,7 +588,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_dake_de': {
         id: 'n4_dake_de',
         pattern: 'だけで',
-        connection: '名詞 + だけで\n動詞辭書形 + だけで',
+        connection: '名{めい}詞{し} + だけで\n動{どう}詞{し}辭書形 + だけで',
         translation: '光是...; 僅僅...就',
         level: 'N4',
         explanation: [
@@ -599,7 +599,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 examples: [
                     { japanese: '見{み}ただけで分{わ}かりました。', chinese: '光看就懂了。' },
                     { japanese: '聞{き}くだけで緊張{きんちょう}します。', chinese: '光聽就緊張。' },
-                    { japanese: '説明{せつめい}だけでは分{わ}かりません。', chinese: '光是說明還是不懂。' }
+                    { japanese: '説{せつ}明{めい}だけでは分{わ}かりません。', chinese: '光是說明還是不懂。' }
                 ]
             }
         ],
@@ -616,17 +616,17 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '名前{なまえ}（　）だけで住所{じゅうしょ}は分{わ}かりません。',
                 options: ['を', 'が', 'で', ''],
                 correctIndex: 3,
-                explanation: '「名詞＋だけで」直接連接，「名前だけでは」。'
+                explanation: '「名{めい}詞{し}＋だけで」直接連接，「名前だけでは」。'
             },
             {
                 id: 'n4_dake_de_3',
-                sentence: 'この料理{りょうり}は、見{み}る（　）おいしそうです。',
+                sentence: 'この料{りょう}理{り}は、見{み}る（　）おいしそうです。',
                 options: ['だけで', 'ばかりで', 'ほどで', 'までで'],
                 correctIndex: 0,
                 explanation: {
                     correct: '「見るだけで」表示「光是看就覺得好吃」。',
                     wrong: [
-                        '「ばかりで」帶有負面語氣，這裡是正面評價。',
+                        '「ばかりで」帶有負{ま}け面語氣，這裡是正面評價。',
                         '「ほどで」不存在這種用法。',
                         '「までで」表示範圍的結束，語意不合。'
                     ]
@@ -634,7 +634,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_dake_de_4',
-                sentence: '「説明{せつめい}を読{よ}んだら分{わ}かりますか。」\n「いいえ、（　）だけでは分{わ}かりません。」',
+                sentence: '「説{せつ}明{めい}を読{よ}んだら分{わ}かりますか。」\n「いいえ、（　）だけでは分{わ}かりません。」',
                 options: ['読{よ}む', '読{よ}んだ', '読{よ}み', '読{よ}んで'],
                 correctIndex: 0,
                 explanation: '對話情境。「光是讀還是不懂」用「辭書形＋だけでは」。'
@@ -651,17 +651,17 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_dasu': {
         id: 'n4_dasu',
         pattern: '出す（だす）',
-        connection: '動詞ます形（去ます）+ 出す',
+        connection: '動{どう}詞{し}ます形（去ます）+ 出す',
         translation: '開始...; 突然...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '突然開始做某動作',
-                description: '接在動詞ます形後面，表示某動作突然開始。常用於無法預期或突發的情況。',
+                description: '接在動{どう}詞{し}ます形後面，表示某動作突然開始。常用於無法預期或突發的情況。',
                 examples: [
-                    { japanese: '急{きゅう}に雨{あめ}が降{ふ}り出{だ}した。', chinese: '突然開始下雨了。' },
-                    { japanese: '彼女{かのじょ}は泣{な}き出{だ}した。', chinese: '她突然哭了起來。' },
+                    { japanese: '急{きゅう}に雨{あめ}が降{ふ}り出{だ}した。', chinese: '突然開始下雨{あめ}了。' },
+                    { japanese: '彼{かれ}女{かのじょ}は泣{な}き出{だ}した。', chinese: '她突然哭了起來。' },
                     { japanese: '赤{あか}ちゃんが笑{わら}い出{だ}した。', chinese: '嬰兒突然笑了起來。' }
                 ]
             }
@@ -672,21 +672,21 @@ export const n4Details: Record<string, GrammarPoint> = {
             points: [
                 {
                     rule: '出す：突然、意料之外地開始。',
-                    examples: [{ japanese: '雨{あめ}が降{ふ}り出{だ}した。', chinese: '（突然）開始下雨了。' }]
+                    examples: [{ japanese: '雨{あめ}が降{ふ}り出{だ}した。', chinese: '（突然）開始下雨{あめ}了。' }]
                 },
                 {
                     rule: '始める：有意識或計畫地開始。',
-                    examples: [{ japanese: '勉強{べんきょう}を始{はじ}めた。', chinese: '開始念書了。（有意識的行為）' }]
+                    examples: [{ japanese: '勉{べん}強{きょう}を始{はじ}めた。', chinese: '開始念書了。（有意識的行為）' }]
                 }
             ]
         },
         quiz: [
             {
                 id: 'n4_dasu_1',
-                sentence: '子供{こども}が急{きゅう}に（　）出{だ}した。',
+                sentence: '子{こ}供{とも}が急{きゅう}に（　）出{だ}した。',
                 options: ['走{はし}り', '走{はし}る', '走{はし}って', '走{はし}った'],
                 correctIndex: 0,
-                explanation: '「ます形」去掉「ます」接「出す」，「走ります」→「走り」＋「出す」。'
+                explanation: '「ます形」去掉「ます」接「出す」，「走{はし}ります」→「走{はし}り」＋「出す」。'
             },
             {
                 id: 'n4_dasu_2',
@@ -697,14 +697,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_dasu_3',
-                sentence: '明日{あした}から日本語{にほんご}の勉強{べんきょう}を（　）。',
+                sentence: '明日{あした}から日本語{にほんご}の勉{べん}強{きょう}を（　）。',
                 options: ['始{はじ}め出{だ}す', '始{はじ}める', '出{だ}す', '始{はじ}み出{だ}す'],
                 correctIndex: 1,
                 explanation: {
                     correct: '有計畫地「開始學習」用「始める」，不用「出す」。',
                     wrong: [
                         '「始め出す」語法錯誤。',
-                        '「出す」不能單獨使用表示「開始」，需要接在動詞後。',
+                        '「出す」不能單獨使用表示「開始」，需要接在動{どう}詞{し}後。',
                         '「始み出す」不存在。'
                     ]
                 }
@@ -714,11 +714,11 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「なんで濡{ぬ}れてるの？」\n「さっき急{きゅう}に雨{あめ}が（　）出{だ}したんだ。」',
                 options: ['降{ふ}り', '降{ふ}る', '降{ふ}って', '降{ふ}った'],
                 correctIndex: 0,
-                explanation: '對話情境。「突然開始下雨」用「降り出す」。'
+                explanation: '對話情境。「突然開始下雨{あめ}」用「降り出す」。'
             },
             {
                 id: 'n4_dasu_5',
-                sentence: '映画{えいが}を見{み}ていたら、彼女{かのじょ}が泣{な}き（　）。',
+                sentence: '映画{えいが}を見{み}ていたら、彼{かれ}女{かのじょ}が泣{な}き（　）。',
                 options: ['出{だ}した', '始{はじ}めた', 'かけた', '終{お}わった'],
                 correctIndex: 0,
                 explanation: '看電影時「突然哭起來」是非預期的，用「出す」。'
@@ -728,35 +728,35 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_de_gozaimasu': {
         id: 'n4_de_gozaimasu',
         pattern: 'でございます',
-        connection: '名詞 + でございます',
+        connection: '名{めい}詞{し} + でございます',
         translation: '是 (鄭重語)',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '「です」的鄭重語',
-                description: '是「です」的更禮貌說法，常用於服務業、正式場合或商務情境。',
+                description: '是「です」的更禮貌說法，常用於服務業、正式場{ば}合{あい}或商務情境。',
                 examples: [
-                    { japanese: 'こちらがお部屋{へや}でございます。', chinese: '這裡是您的房間。' },
+                    { japanese: 'こちらがお部{へ}屋{や}でございます。', chinese: '這裡是您的房間。' },
                     { japanese: '私{わたくし}は田中{たなか}でございます。', chinese: '我是田中。' },
-                    { japanese: '本日{ほんじつ}は晴天{せいてん}でございます。', chinese: '今天是晴天。' }
+                    { japanese: '本日{ほんじつ}は晴{は}れ天{せいてん}でございます。', chinese: '今天是晴{は}れ天。' }
                 ]
             }
         ],
         quiz: [
             {
                 id: 'n4_de_gozaimasu_1',
-                sentence: 'お客様{きゃくさま}、こちらがメニュー（　）。',
+                sentence: 'お客{きゃく}様{きゃくさま}、こちらがメニュー（　）。',
                 options: ['です', 'でございます', 'であります', 'だ'],
                 correctIndex: 1,
-                explanation: '對客人使用鄭重語「でございます」。'
+                explanation: '對客{きゃく}人使用鄭重語「でございます」。'
             },
             {
                 id: 'n4_de_gozaimasu_2',
                 sentence: '私{わたくし}、山田{やまだ}（　）が、ご予約{よやく}いただいておりますでしょうか。',
                 options: ['です', 'でございます', 'であります', 'だ'],
                 correctIndex: 1,
-                explanation: '商務場合自我介紹用「でございます」。'
+                explanation: '商務場{ば}合{あい}自我介紹用「でございます」。'
             },
             {
                 id: 'n4_de_gozaimasu_3',
@@ -767,8 +767,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '服務業送餐時使用鄭重語「でございます」。',
                     wrong: [
                         '「です」禮貌度不夠。',
-                        '「だ」是普通體，對客人不適用。',
-                        '「である」是書面語，不用於口語服務。'
+                        '「だ」是普通體，對客{きゃく}人不適用。',
+                        '「である」是書面語，不用於口{こう}語{ご}服務。'
                     ]
                 }
             },
@@ -777,7 +777,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「すみません、トイレはどこですか。」\n「あちら（　）。」',
                 options: ['です', 'でございます', 'だ', 'でした'],
                 correctIndex: 1,
-                explanation: '對話情境。店員回答客人用鄭重語。'
+                explanation: '對話情境。店員回答客{きゃく}人用鄭重語。'
             },
             {
                 id: 'n4_de_gozaimasu_5',
@@ -788,7 +788,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '一般情境用「です」即可，「でございます」過於正式。',
                     wrong: [
                         '「だ」太隨便。',
-                        '「でございます」除非是非常正式的場合，否則過於鄭重。',
+                        '「でございます」除非是非常正式的場{ば}合{あい}，否則過於鄭重。',
                         '「である」是書面語。'
                     ]
                 }
@@ -798,7 +798,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_demo': {
         id: 'n4_demo',
         pattern: 'でも',
-        connection: '名詞 + でも',
+        connection: '名{めい}詞{し} + でも',
         translation: '...之類的; 或者',
         level: 'N4',
         explanation: [
@@ -809,7 +809,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 examples: [
                     { japanese: 'コーヒーでも飲{の}みませんか。', chinese: '要不要喝杯咖啡之類的？' },
                     { japanese: '映画{えいが}でも見{み}に行{い}きましょう。', chinese: '去看個電影之類的吧。' },
-                    { japanese: '週末{しゅうまつ}、どこかにでも行{い}きたいな。', chinese: '週末想去個什麼地方。' }
+                    { japanese: '週末{しゅうまつ}、どこかにでも行{い}きたいな。', chinese: '週{しゅう}末{まつ}想去個什麼地方。' }
                 ]
             }
         ],
@@ -818,12 +818,12 @@ export const n4Details: Record<string, GrammarPoint> = {
             description: '「でも」有兩種用法，需從語境區分。',
             points: [
                 {
-                    rule: '名詞＋でも：舉例、軟化語氣「...之類的」。',
+                    rule: '名{めい}詞{し}＋でも：舉例、軟化語氣「...之類的」。',
                     examples: [{ japanese: 'お茶{ちゃ}でもどうですか。', chinese: '來杯茶之類的如何？' }]
                 },
                 {
                     rule: '句首でも：逆接「可是、但是」。',
-                    examples: [{ japanese: '行{い}きたいです。でも、時間{じかん}がありません。', chinese: '我想去。但是沒有時間。' }]
+                    examples: [{ japanese: '行{い}きたいです。でも、時{じ}間{かん}がありません。', chinese: '我想去。但是沒有時間。' }]
                 }
             ]
         },
@@ -882,7 +882,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_dewa_nai_ka': {
         id: 'n4_dewa_nai_ka',
         pattern: 'ではないか',
-        connection: '動詞普通形 / い形 / な形-な / 名詞 + ではないか',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し} + ではないか',
         translation: '不是嗎?; 對吧?',
         level: 'N4',
         explanation: [
@@ -903,7 +903,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: 'この問題{もんだい}、簡単{かんたん}（　）。',
                 options: ['ではないか', 'ではないの', 'じゃないか', 'じゃないの'],
                 correctIndex: 0,
-                explanation: '「簡単」是な形容詞，接「ではないか」表示確認「這問題不是很簡單嗎」。'
+                explanation: '「簡{かん}単{たん}」是な形{けい}容{よう}詞{し}，接「ではないか」表示確認「這問題不是很簡單嗎」。'
             },
             {
                 id: 'n4_dewa_nai_ka_2',
@@ -935,27 +935,27 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_dewa_nai_ka_5',
-                sentence: 'この料理{りょうり}、おいしい（　）。',
+                sentence: 'この料{りょう}理{り}、おいしい（　）。',
                 options: ['ではないか', 'ではないの', 'じゃないか', 'じゃないの'],
                 correctIndex: 0,
-                explanation: 'い形容詞直接接「ではないか」，表示讚賞確認。'
+                explanation: 'い形{けい}容{よう}詞{し}直接接「ではないか」，表示讚賞確認。'
             }
         ]
     },
     'n4_ga_hitsuyou': {
         id: 'n4_ga_hitsuyou',
         pattern: 'が必要（がひつよう）',
-        connection: '名詞 + が必要だ',
+        connection: '名{めい}詞{し} + が必要だ',
         translation: '需要; 必要',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '表示需要某物',
-                description: '說明某事物是必需的，不可缺少的。「必要」是な形容詞。',
+                description: '說明某事物是必需的，不可缺少的。「必要」是な形{けい}容{よう}詞{し}。',
                 examples: [
                     { japanese: 'パスポートが必要{ひつよう}です。', chinese: '需要護照。' },
-                    { japanese: '日本語{にほんご}を勉強{べんきょう}するには、時間{じかん}が必要{ひつよう}だ。', chinese: '學習日語需要時間。' },
+                    { japanese: '日本語{にほんご}を勉{べん}強{きょう}するには、時{じ}間{かん}が必要{ひつよう}だ。', chinese: '學習日語需要時間。' },
                     { japanese: 'このアプリを使{つか}うには、登録{とうろく}が必要{ひつよう}です。', chinese: '使用這個app需要註冊。' }
                 ]
             }
@@ -970,10 +970,10 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_ga_hitsuyou_2',
-                sentence: 'この仕事{しごと}には経験{けいけん}が（　）。',
+                sentence: 'この仕事{しごと}には経{けい}験{けん}が（　）。',
                 options: ['必要{ひつよう}だ', '必要{ひつよう}する', '必要{ひつよう}ある', '必要{ひつよう}いる'],
                 correctIndex: 0,
-                explanation: '「必要」是な形容詞，用「必要だ」。'
+                explanation: '「必要」是な形{けい}容{よう}詞{し}，用「必要だ」。'
             },
             {
                 id: 'n4_ga_hitsuyou_3',
@@ -1008,27 +1008,27 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ga_suru': {
         id: 'n4_ga_suru',
         pattern: 'がする',
-        connection: '名詞（感覺類）+ がする',
-        translation: '感覺到 (氣味/聲音/味道)',
+        connection: '名{めい}詞{し}（感覺類）+ がする',
+        translation: '感覺到 (氣味{あじ}/聲音/味{あじ}道)',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '感知到五感刺激',
-                description: '用於表達通過五感（嗅覺、聽覺、味覺、觸覺）感受到的東西。常見搭配：匂い（氣味）、音（聲音）、味（味道）、感じ（感覺）等。',
+                description: '用於表達通過五感（嗅覺、聽覺、味{あじ}覺、觸覺）感受到的東西。常見搭配：匂い（氣味{あじ}）、音（聲音）、味{あじ}（味{あじ}道）、感じ（感覺）等。',
                 examples: [
-                    { japanese: 'いい匂{にお}いがする。', chinese: '有好聞的味道。' },
+                    { japanese: 'いい匂{にお}いがする。', chinese: '有好聞的味{あじ}道。' },
                     { japanese: '変{へん}な音{おと}がした。', chinese: '發出了奇怪的聲音。' },
-                    { japanese: 'このスープは塩{しお}の味{あじ}がする。', chinese: '這湯有鹹味。' }
+                    { japanese: 'このスープは塩{しお}の味{あじ}がする。', chinese: '這湯有鹹味{あじ}。' }
                 ]
             }
         ],
         analysis: {
-            title: '「がする」可搭配的名詞',
-            description: '主要用於感官相關的名詞。',
+            title: '「がする」可搭配的名{めい}詞{し}',
+            description: '主要用於感官相關的名{めい}詞{し}。',
             points: [
                 {
-                    rule: '匂い/香り：氣味',
+                    rule: '匂い/香り：氣味{あじ}',
                     examples: [{ japanese: 'コーヒーの香{かお}りがする。', chinese: '有咖啡香。' }]
                 },
                 {
@@ -1036,8 +1036,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                     examples: [{ japanese: '足音{あしおと}がする。', chinese: '有腳步聲。' }]
                 },
                 {
-                    rule: '味：味道',
-                    examples: [{ japanese: '甘{あま}い味{あじ}がする。', chinese: '有甜味。' }]
+                    rule: '味{あじ}：味{あじ}道',
+                    examples: [{ japanese: '甘{あま}い味{あじ}がする。', chinese: '有甜味{あじ}。' }]
                 },
                 {
                     rule: '感じ/気：感覺',
@@ -1051,7 +1051,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: 'この花{はな}は、いい匂{にお}い（　）する。',
                 options: ['が', 'を', 'は', 'に'],
                 correctIndex: 0,
-                explanation: '「匂いがする」固定搭配，表示「有...的味道」。'
+                explanation: '「匂いがする」固定搭配，表示「有...的味{あじ}道」。'
             },
             {
                 id: 'n4_ga_suru_2',
@@ -1066,20 +1066,20 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['がする', 'をする', 'にする', 'する'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '「味がする」表示「有...的味道」。',
+                    correct: '「味{あじ}がする」表示「有...的味{あじ}道」。',
                     wrong: [
-                        '「味をする」語法錯誤。',
-                        '「味にする」表示「做成...口味」，意思不同。',
-                        '「味する」缺少助詞「が」。'
+                        '「味{あじ}をする」語法錯誤。',
+                        '「味{あじ}にする」表示「做成...口味{あじ}」，意思不同。',
+                        '「味{あじ}する」缺少助詞「が」。'
                     ]
                 }
             },
             {
                 id: 'n4_ga_suru_4',
-                sentence: '「何{なに}か焦{こ}げた匂{にお}いがしない？」\n「本当{ほんとう}だ。（　）がするね。」',
+                sentence: '「何{なに}か焦{こ}げた匂{にお}いがしない？」\n「本{ほん}当{とう}だ。（　）がするね。」',
                 options: ['音{おと}', '味{あじ}', '匂{にお}い', '声{こえ}'],
                 correctIndex: 2,
-                explanation: '對話情境。問是否聞到焦味，回答也是關於「匂い」。'
+                explanation: '對話情境。問是否聞到焦味{あじ}，回答也是關於「匂い」。'
             },
             {
                 id: 'n4_ga_suru_5',
@@ -1093,18 +1093,18 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_garu': {
         id: 'n4_garu',
         pattern: 'がる',
-        connection: 'い形容詞（去い）+ がる\nな形容詞語幹 + がる',
+        connection: 'い形{けい}容{よう}詞{し}（去い）+ がる\nな形{けい}容{よう}詞{し}語幹 + がる',
         translation: '表現出...的樣子',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '第三者的情感表現',
-                description: '日語中，形容詞原本用於描述說話者自己的感受。若要描述第三者「看起來」有某種感受或表現出某種樣子，需要加「がる」。',
+                description: '日語中，形{けい}容{よう}詞{し}原本用於描述說話者自己的感受。若要描述第三者「看起來」有某種感受或表現出某種樣子，需要加「がる」。',
                 examples: [
                     { japanese: '彼{かれ}は怖{こわ}がっている。', chinese: '他顯得很害怕。' },
-                    { japanese: '子供{こども}は新{あたら}しいおもちゃを欲{ほ}しがっている。', chinese: '孩子想要新玩具。' },
-                    { japanese: '彼女{かのじょ}は寂{さび}しがっていた。', chinese: '她顯得很寂寞。' }
+                    { japanese: '子{こ}供{とも}は新{あたら}しいおもちゃを欲{ほ}しがっている。', chinese: '孩子想要新玩具。' },
+                    { japanese: '彼{かれ}女{かのじょ}は寂{さび}しがっていた。', chinese: '她顯得很寂寞。' }
                 ]
             }
         ],
@@ -1117,7 +1117,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     examples: [{ japanese: '私{わたし}は怖{こわ}い。', chinese: '我害怕。' }]
                 },
                 {
-                    rule: '第三人稱用がる：彼は怖がっている。',
+                    rule: '第三人稱用がる：彼{かれ}は怖がっている。',
                     examples: [{ japanese: '彼{かれ}は怖{こわ}がっている。', chinese: '他顯得害怕。' }]
                 }
             ]
@@ -1132,28 +1132,28 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_garu_2',
-                sentence: '子供{こども}はおもちゃを欲{ほ}し（　）いる。',
+                sentence: '子{こ}供{とも}はおもちゃを欲{ほ}し（　）いる。',
                 options: ['がって', 'くて', 'がり', 'がる'],
                 correctIndex: 0,
                 explanation: '「欲しい」變成「欲しがる」，描述孩子想要的樣子。'
             },
             {
                 id: 'n4_garu_3',
-                sentence: '彼女{かのじょ}は一人{ひとり}で寂{さび}し（　）いた。',
+                sentence: '彼{かれ}女{かのじょ}は一人{ひとり}で寂{さび}し（　）いた。',
                 options: ['がって', 'くて', 'がり', 'がる'],
                 correctIndex: 0,
                 explanation: {
                     correct: '「寂しい」變成「寂しがる」，過去進行式「寂しがっていた」。',
                     wrong: [
-                        '「寂しくて」是て形，表示理由或並列。',
-                        '「寂しがり」是名詞形「愛寂寞的人」。',
+                        '「寂しくて」是て形，表示理{り}由{ゆう}或並列。',
+                        '「寂しがり」是名{めい}詞{し}形「愛寂寞的人」。',
                         '「寂しがる」是辭書形，這裡需要過去進行式。'
                     ]
                 }
             },
             {
                 id: 'n4_garu_4',
-                sentence: '「田中{たなか}さん、何{なに}か悲{かな}しいことがあったの？」\n「うん、彼{かれ}、最近{さいきん}悲{かな}し（　）いるよ。」',
+                sentence: '「田中{たなか}さん、何{なに}か悲{かな}しいことがあったの？」\n「うん、彼{かれ}、最{さい}近{きん}悲{かな}し（　）いるよ。」',
                 options: ['がって', 'くて', 'そうで', 'みたいで'],
                 correctIndex: 0,
                 explanation: '對話情境。描述田中（第三者）顯得悲傷的樣子。'
@@ -1177,28 +1177,28 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_gozaimasu': {
         id: 'n4_gozaimasu',
         pattern: 'ございます',
-        connection: '名詞 + がございます / でございます',
+        connection: '名{めい}詞{し} + がございます / でございます',
         translation: '有; 在 (鄭重語)',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '「あります」的鄭重語',
-                description: '是「あります」的更禮貌說法，常用於服務業或正式場合。',
+                description: '是「あります」的更禮貌說法，常用於服務業或正式場{ば}合{あい}。',
                 examples: [
                     { japanese: 'お手洗{てあら}いはあちらにございます。', chinese: '洗手間在那邊。' },
                     { japanese: 'ご質問{しつもん}はございますか。', chinese: '有問題嗎？' },
-                    { japanese: '少々{しょうしょう}お時間{じかん}がございます。', chinese: '還有一點時間。' }
+                    { japanese: '少々{しょうしょう}お時{じ}間{かん}がございます。', chinese: '還有一點時間。' }
                 ]
             }
         ],
         quiz: [
             {
                 id: 'n4_gozaimasu_1',
-                sentence: 'お客様{きゃくさま}、トイレは2階{かい}に（　）。',
+                sentence: 'お客{きゃく}様{きゃくさま}、トイレは2階{かい}に（　）。',
                 options: ['あります', 'ございます', 'おります', 'いらっしゃいます'],
                 correctIndex: 1,
-                explanation: '對客人使用鄭重語「ございます」。'
+                explanation: '對客{きゃく}人使用鄭重語「ございます」。'
             },
             {
                 id: 'n4_gozaimasu_2',
@@ -1209,14 +1209,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_gozaimasu_3',
-                sentence: 'お時間{じかん}は（　）ございますか。',
+                sentence: 'お時{じ}間{かん}は（　）ございますか。',
                 options: ['少{すこ}し', '少々{しょうしょう}', 'ちょっと', '少{すこ}しだけ'],
                 correctIndex: 1,
                 explanation: {
-                    correct: '鄭重語場合用「少々」搭配「ございます」。',
+                    correct: '鄭重語場{ば}合{あい}用「少々」搭配「ございます」。',
                     wrong: [
                         '「少し」較一般，配「あります」更自然。',
-                        '「ちょっと」是口語，不配合鄭重語。',
+                        '「ちょっと」是口{こう}語{ご}，不配合鄭重語。',
                         '「少しだけ」太長，不夠正式。'
                     ]
                 }
@@ -1226,7 +1226,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「すみません、この商品{しょうひん}はありますか。」\n「はい、（　）。こちらでございます。」',
                 options: ['あります', 'ございます', 'おります', 'います'],
                 correctIndex: 1,
-                explanation: '對話情境。店員回答客人用「ございます」。'
+                explanation: '對話情境。店員回答客{きゃく}人用「ございます」。'
             },
             {
                 id: 'n4_gozaimasu_5',
@@ -1240,17 +1240,17 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hajimeru': {
         id: 'n4_hajimeru',
         pattern: '始める（はじめる）',
-        connection: '動詞ます形（去ます）+ 始める',
+        connection: '動{どう}詞{し}ます形（去ます）+ 始める',
         translation: '開始...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '開始做某動作',
-                description: '接在動詞ます形後面，表示開始某個動作。通常是有意識、有計畫地開始。',
+                description: '接在動{どう}詞{し}ます形後面，表示開始某個動作。通常是有意識、有計畫地開始。',
                 examples: [
-                    { japanese: '日本語{にほんご}を勉強{べんきょう}し始{はじ}めた。', chinese: '開始學習日語了。' },
-                    { japanese: '雨{あめ}が降{ふ}り始{はじ}めた。', chinese: '開始下雨了。' },
+                    { japanese: '日本語{にほんご}を勉{べん}強{きょう}し始{はじ}めた。', chinese: '開始學習日語了。' },
+                    { japanese: '雨{あめ}が降{ふ}り始{はじ}めた。', chinese: '開始下雨{あめ}了。' },
                     { japanese: '彼{かれ}は話{はな}し始{はじ}めた。', chinese: '他開始說話了。' }
                 ]
             }
@@ -1261,7 +1261,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             points: [
                 {
                     rule: '始める：有意識或按計畫開始。',
-                    examples: [{ japanese: '勉強{べんきょう}し始{はじ}めた。', chinese: '開始念書了。（決定開始）' }]
+                    examples: [{ japanese: '勉{べん}強{きょう}し始{はじ}めた。', chinese: '開始念書了。（決定開始）' }]
                 },
                 {
                     rule: '出す：突然、意料之外地開始。',
@@ -1272,10 +1272,10 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_hajimeru_1',
-                sentence: '彼{かれ}は去年{きょねん}からジョギングを（　）始{はじ}めた。',
+                sentence: '彼{かれ}は去{きょ}年{ねん}からジョギングを（　）始{はじ}めた。',
                 options: ['走{はし}り', '走{はし}る', '走{はし}って', '走{はし}った'],
                 correctIndex: 0,
-                explanation: '「ます形」去掉「ます」接「始める」，「走ります」→「走り」。'
+                explanation: '「ます形」去掉「ます」接「始める」，「走{はし}ります」→「走{はし}り」。'
             },
             {
                 id: 'n4_hajimeru_2',
@@ -1300,14 +1300,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_hajimeru_4',
-                sentence: '「いつから日本語{にほんご}を勉強{べんきょう}しているんですか。」\n「3年{ねん}前{まえ}から（　）始{はじ}めました。」',
-                options: ['勉強{べんきょう}し', '勉強{べんきょう}する', '勉強{べんきょう}して', '勉強{べんきょう}した'],
+                sentence: '「いつから日本語{にほんご}を勉{べん}強{きょう}しているんですか。」\n「3年{ねん}前{まえ}から（　）始{はじ}めました。」',
+                options: ['勉{べん}強{きょう}し', '勉{べん}強{きょう}する', '勉{べん}強{きょう}して', '勉{べん}強{きょう}した'],
                 correctIndex: 0,
                 explanation: '對話情境。「從3年前開始學習」。'
             },
             {
                 id: 'n4_hajimeru_5',
-                sentence: '子供{こども}が急{きゅう}に泣{な}き（　）。',
+                sentence: '子{こ}供{とも}が急{きゅう}に泣{な}き（　）。',
                 options: ['始{はじ}めた', '出{だ}した', 'かけた', '終{お}わった'],
                 correctIndex: 1,
                 explanation: {
@@ -1324,18 +1324,18 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hazu_da': {
         id: 'n4_hazu_da',
         pattern: 'はずだ',
-        connection: '動詞普通形 + はずだ\nい形容詞 + はずだ\nな形容詞-な + はずだ\n名詞-の + はずだ',
+        connection: '動{どう}詞{し}普通形 + はずだ\nい形{けい}容{よう}詞{し} + はずだ\nな形{けい}容{よう}詞{し}-な + はずだ\n名{めい}詞{し}-の + はずだ',
         translation: '應該...; 理應...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '有根據的推測',
-                description: '基於某種證據或理由，推測某事「應該」是這樣。說話者相信這個推測是正確的。',
+                description: '基於某種證據或理{り}由{ゆう}，推測某事「應該」是這樣。說話者相信這個推測是正確的。',
                 examples: [
                     { japanese: '彼{かれ}はもう着{つ}いているはずだ。', chinese: '他應該已經到了。' },
                     { japanese: 'この店{みせ}は安{やす}いはずだ。', chinese: '這家店應該很便宜。' },
-                    { japanese: '明日{あした}は晴{は}れのはずだ。', chinese: '明天應該是晴天。' }
+                    { japanese: '明日{あした}は晴{は}れのはずだ。', chinese: '明天應該是晴{は}れ天。' }
                 ]
             }
         ],
@@ -1366,7 +1366,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: 'この問題{もんだい}は簡単{かんたん}な（　）。',
                 options: ['はずだ', 'はずがない', 'ようだ', 'そうだ'],
                 correctIndex: 0,
-                explanation: 'な形容詞接「はずだ」用「な」，「簡単なはずだ」。'
+                explanation: 'な形{けい}容{よう}詞{し}接「はずだ」用「な」，「簡{かん}単{たん}なはずだ」。'
             },
             {
                 id: 'n4_hazu_da_3',
@@ -1374,7 +1374,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['はずだ', 'はずがない', 'ようだ', 'らしい'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '名詞接「はずだ」用「の」，「休みのはずだ」。',
+                    correct: '名{めい}詞{し}接「はずだ」用「の」，「休みのはずだ」。',
                     wrong: [
                         '「はずがない」是否定，「不可能是休息」。',
                         '「ようだ」是根據外觀的推測。',
@@ -1391,11 +1391,11 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_hazu_da_5',
-                sentence: '彼{かれ}が遅刻{ちこく}する（　）。いつも時間{じかん}に正確{せいかく}だから。',
+                sentence: '彼{かれ}が遅刻{ちこく}する（　）。いつも時{じ}間{かん}に正確{せいかく}だから。',
                 options: ['はずだ', 'はずがない', 'ようだ', 'らしい'],
                 correctIndex: 1,
                 explanation: {
-                    correct: '「他不可能遲到」用「はずがない」，基於他一向準時的理由。',
+                    correct: '「他不可能遲到」用「はずがない」，基於他一向準時的理{り}由{ゆう}。',
                     wrong: [
                         '「はずだ」是肯定推測，與「不可能」矛盾。',
                         '「ようだ」是外觀推測。',
@@ -1408,14 +1408,14 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hazu_ga_nai': {
         id: 'n4_hazu_ga_nai',
         pattern: 'はずがない',
-        connection: '動詞普通形 + はずがない\nい形容詞 + はずがない\nな形容詞-な + はずがない\n名詞-の + はずがない',
+        connection: '動{どう}詞{し}普通形 + はずがない\nい形{けい}容{よう}詞{し} + はずがない\nな形{けい}容{よう}詞{し}-な + はずがない\n名{めい}詞{し}-の + はずがない',
         translation: '不可能...; 應該不會...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '強烈否定的推測',
-                description: '基於某種證據或理由，強烈否定某事的可能性。比「ないはずだ」語氣更強。',
+                description: '基於某種證據或理{り}由{ゆう}，強烈否定某事的可能性。比「ないはずだ」語氣更強。',
                 examples: [
                     { japanese: '彼{かれ}がそんなことをするはずがない。', chinese: '他不可能做那種事。' },
                     { japanese: 'こんな簡単{かんたん}な問題{もんだい}が分{わ}からないはずがない。', chinese: '不可能不懂這麼簡單的問題。' },
@@ -1433,14 +1433,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_hazu_ga_nai_2',
-                sentence: 'あんなに練習{れんしゅう}したのに、負{ま}ける（　）。',
+                sentence: 'あんなに練{れん}習{しゅう}したのに、負{ま}ける（　）。',
                 options: ['はずだ', 'はずがない', 'ものだ', 'ことだ'],
                 correctIndex: 1,
                 explanation: '「練習了那麼多，不可能輸」。'
             },
             {
                 id: 'n4_hazu_ga_nai_3',
-                sentence: '彼女{かのじょ}は約束{やくそく}を破{やぶ}る人{ひと}じゃない。そんなこと（　）。',
+                sentence: '彼{かれ}女{かのじょ}は約{やく}束{そく}を破{やぶ}る人{ひと}じゃない。そんなこと（　）。',
                 options: ['するはずだ', 'するはずがない', 'しないはずだ', 'しないはずがない'],
                 correctIndex: 1,
                 explanation: {
@@ -1471,16 +1471,16 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_irassharu': {
         id: 'n4_irassharu',
         pattern: 'いらっしゃる',
-        connection: '尊敬語，取代「いる / 行く / 来る」',
+        connection: '尊敬語，取代「いる / 行く / 来{く}る」',
         translation: '在; 來; 去 (尊敬語)',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '「いる・行く・来る」的尊敬語',
-                description: '用於尊敬對方或談論尊敬對象時，取代「いる」（在）、「行く」（去）、「来る」（來）三個動詞。',
+                title: '「いる・行く・来{く}る」的尊敬語',
+                description: '用於尊敬對方或談論尊敬對象時，取代「いる」（在）、「行く」（去）、「来{く}る」（來）三個動{どう}詞{し}。',
                 examples: [
-                    { japanese: '先生{せんせい}はいらっしゃいますか。', chinese: '老師在嗎？' },
+                    { japanese: '先{せん}生{せい}はいらっしゃいますか。', chinese: '老師在嗎？' },
                     { japanese: '社長{しゃちょう}は明日{あした}いらっしゃいます。', chinese: '社長明天會來。' },
                     { japanese: 'どちらにいらっしゃいますか。', chinese: '您要去哪裡？' }
                 ]
@@ -1488,15 +1488,15 @@ export const n4Details: Record<string, GrammarPoint> = {
         ],
         analysis: {
             title: '「いらっしゃる」的活用',
-            description: '雖是五段動詞，但活用特殊。',
+            description: '雖是五段動{どう}詞{し}，但活用特殊。',
             points: [
                 {
                     rule: 'ます形：いらっしゃいます',
-                    examples: [{ japanese: '先生{せんせい}はいらっしゃいます。', chinese: '老師在。' }]
+                    examples: [{ japanese: '先{せん}生{せい}はいらっしゃいます。', chinese: '老師在。' }]
                 },
                 {
                     rule: 'て形：いらっしゃって / いらして',
-                    examples: [{ japanese: 'お元気{げんき}でいらっしゃいますか。', chinese: '您好嗎？' }]
+                    examples: [{ japanese: 'お元{げん}気{き}でいらっしゃいますか。', chinese: '您好嗎？' }]
                 }
             ]
         },
@@ -1510,10 +1510,10 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_irassharu_2',
-                sentence: 'お客様{きゃくさま}は何時{なんじ}に（　）か。',
+                sentence: 'お客{きゃく}様{きゃくさま}は何時{なんじ}に（　）か。',
                 options: ['来{き}ます', 'いらっしゃいます', '参{まい}ります', 'おります'],
                 correctIndex: 1,
-                explanation: '詢問客人「幾點來」用尊敬語。'
+                explanation: '詢問客{きゃく}人「幾點來」用尊敬語。'
             },
             {
                 id: 'n4_irassharu_3',
@@ -1538,7 +1538,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_irassharu_5',
-                sentence: '先生{せんせい}、お元気{げんき}で（　）ますか。',
+                sentence: '先{せん}生{せい}、お元{げん}気{き}で（　）ますか。',
                 options: ['い', 'いらっしゃい', 'おり', 'あり'],
                 correctIndex: 1,
                 explanation: '對老師用尊敬語「いらっしゃいます」。'
@@ -1555,10 +1555,10 @@ export const n4Details: Record<string, GrammarPoint> = {
             {
                 usageId: 1,
                 title: '「する」的自謙語',
-                description: '用於謙虛地表達自己的動作，是「します」的自謙表達。常用於商務場合或對上級說話時。',
+                description: '用於謙虛地表達自己的動作，是「します」的自謙表達。常用於商務場{ば}合{あい}或對上級說話時。',
                 examples: [
                     { japanese: '私{わたし}が案内{あんない}いたします。', chinese: '由我來帶路。' },
-                    { japanese: 'ご連絡{れんらく}いたします。', chinese: '我會與您聯絡。' },
+                    { japanese: 'ご連{れん}絡{らく}いたします。', chinese: '我會與您聯絡。' },
                     { japanese: 'お待{ま}ちいたしております。', chinese: '恭候您的光臨。' }
                 ]
             }
@@ -1566,14 +1566,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_itashimasu_1',
-                sentence: '後{あと}ほどご連絡{れんらく}（　）。',
+                sentence: '後{あと}ほどご連{れん}絡{らく}（　）。',
                 options: ['します', 'いたします', 'なさいます', 'されます'],
                 correctIndex: 1,
                 explanation: '謙虛地表達自己會聯絡對方用「いたします」。'
             },
             {
                 id: 'n4_itashimasu_2',
-                sentence: '私{わたし}が説明{せつめい}（　）。',
+                sentence: '私{わたし}が説{せつ}明{めい}（　）。',
                 options: ['します', 'いたします', 'なさいます', 'されます'],
                 correctIndex: 1,
                 explanation: '「由我來說明」用自謙語「いたします」。'
@@ -1611,18 +1611,18 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ka_dou_ka': {
         id: 'n4_ka_dou_ka',
         pattern: 'かどうか',
-        connection: '動詞普通形 / い形 / な形-だ / 名詞-だ + かどうか',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-だ / 名{めい}詞{し}-だ + かどうか',
         translation: '是否...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '表示疑問或不確定',
-                description: '用於表達「是否...」的間接疑問。常與「分かる」「知る」「確認する」等動詞一起使用。',
+                description: '用於表達「是否...」的間接疑問。常與「分かる」「知る」「確認する」等動{どう}詞{し}一起使用。',
                 examples: [
                     { japanese: '彼{かれ}が来{く}るかどうか分{わ}かりません。', chinese: '不知道他會不會來。' },
                     { japanese: 'これでいいかどうか確認{かくにん}してください。', chinese: '請確認這樣可不可以。' },
-                    { japanese: '本当{ほんとう}かどうか分{わ}からない。', chinese: '不知道是不是真的。' }
+                    { japanese: '本{ほん}当{とう}かどうか分{わ}からない。', chinese: '不知道是不是真的。' }
                 ]
             }
         ],
@@ -1646,7 +1646,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '明日{あした}雨{あめ}が降{ふ}る（　）分{わ}かりません。',
                 options: ['か', 'かどうか', 'かな', 'かも'],
                 correctIndex: 1,
-                explanation: '「會不會下雨」是是/否的二選一疑問，用「かどうか」。'
+                explanation: '「會不會下雨{あめ}」是是/否的二選一疑問，用「かどうか」。'
             },
             {
                 id: 'n4_ka_dou_ka_2',
@@ -1688,7 +1688,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_kamo_shirenai': {
         id: 'n4_kamo_shirenai',
         pattern: 'かもしれない',
-        connection: '動詞普通形 / い形 / な形-だ / 名詞-だ + かもしれない',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-だ / 名{めい}詞{し}-だ + かもしれない',
         translation: '也許; 說不定',
         level: 'N4',
         explanation: [
@@ -1697,9 +1697,9 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '不確定的推測',
                 description: '表示說話者對某事的可能性做出推測，但不確定。比「たぶん」更不確定。',
                 examples: [
-                    { japanese: '明日{あした}雨{あめ}が降{ふ}るかもしれない。', chinese: '明天說不定會下雨。' },
+                    { japanese: '明日{あした}雨{あめ}が降{ふ}るかもしれない。', chinese: '明天說不定會下雨{あめ}。' },
                     { japanese: '彼{かれ}は来{こ}ないかもしれない。', chinese: '他也許不會來。' },
-                    { japanese: 'これは本当{ほんとう}かもしれない。', chinese: '這說不定是真的。' }
+                    { japanese: 'これは本{ほん}当{とう}かもしれない。', chinese: '這說不定是真的。' }
                 ]
             }
         ],
@@ -1724,7 +1724,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_kamo_shirenai_1',
-                sentence: '電車{でんしゃ}が遅{おく}れる（　）。',
+                sentence: '電{でん}車{しゃ}が遅{おく}れる（　）。',
                 options: ['かもしれない', 'はずだ', 'に違{ちが}いない', 'ようだ'],
                 correctIndex: 0,
                 explanation: '不確定的推測「電車說不定會誤點」。'
@@ -1769,7 +1769,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_koto_ga_aru': {
         id: 'n4_koto_ga_aru',
         pattern: 'ことがある',
-        connection: '動詞辭書形 + ことがある',
+        connection: '動{どう}詞{し}辭書形 + ことがある',
         translation: '有時候...',
         level: 'N4',
         explanation: [
@@ -1779,8 +1779,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示某事偶爾發生，不是經常或總是發生的。',
                 examples: [
                     { japanese: '朝{あさ}ご飯{はん}を食{た}べないことがある。', chinese: '有時候不吃早餐。' },
-                    { japanese: '週末{しゅうまつ}に映画{えいが}を見{み}ることがある。', chinese: '週末有時會看電影。' },
-                    { japanese: '電車{でんしゃ}で寝過{ねす}ごすことがある。', chinese: '有時候會在電車上睡過站。' }
+                    { japanese: '週末{しゅうまつ}に映画{えいが}を見{み}ることがある。', chinese: '週{しゅう}末{まつ}有時會看電影。' },
+                    { japanese: '電{でん}車{しゃ}で寝過{ねす}ごすことがある。', chinese: '有時候會在電車上睡過站。' }
                 ]
             }
         ],
@@ -1789,7 +1789,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             description: '接續不同，意思也不同。',
             points: [
                 {
-                    rule: '辭書形＋ことがある：有時候...（習慣性的偶發）',
+                    rule: '辭書形＋ことがある：有時候...（習{しゅう}慣{かん}性的偶發）',
                     examples: [{ japanese: '遅刻{ちこく}することがある。', chinese: '有時候會遲到。' }]
                 },
                 {
@@ -1811,7 +1811,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '週末{しゅうまつ}は早{はや}く起{お}きる（　）。',
                 options: ['ことがある', 'ことがない', 'ことになる', 'ことにする'],
                 correctIndex: 0,
-                explanation: '「週末有時候會早起」。'
+                explanation: '「週{しゅう}末{まつ}有時候會早起」。'
             },
             {
                 id: 'n4_koto_ga_aru_3',
@@ -1829,7 +1829,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_koto_ga_aru_4',
-                sentence: '「毎日{まいにち}運動{うんどう}してる？」\n「毎日{まいにち}じゃないけど、週{しゅう}に2、3回{かい}する（　）よ。」',
+                sentence: '「毎{まい}日{にち}運動{うんどう}してる？」\n「毎{まい}日{にち}じゃないけど、週{しゅう}に2、3回{かい}する（　）よ。」',
                 options: ['ことがある', 'ことがない', 'ことになる', 'ことにする'],
                 correctIndex: 0,
                 explanation: '對話情境。「一週有時候做2、3次」。'
@@ -1846,7 +1846,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_koto_ni_naru': {
         id: 'n4_koto_ni_naru',
         pattern: 'ことになる',
-        connection: '動詞辭書形 / ない形 + ことになる',
+        connection: '動{どう}詞{し}辭書形 / ない形 + ことになる',
         translation: '決定...; 變成...',
         level: 'N4',
         explanation: [
@@ -1878,7 +1878,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_koto_ni_naru_1',
-                sentence: '来週{らいしゅう}から毎日{まいにち}残業{ざんぎょう}する（　）。',
+                sentence: '来{らい}週{しゅう}から毎{まい}日{にち}残業{ざんぎょう}する（　）。',
                 options: ['ことになった', 'ことにした', 'ことがある', 'ことができる'],
                 correctIndex: 0,
                 explanation: '公司規定或上級決定的事用「ことになる」。'
@@ -1896,9 +1896,9 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['ことになっている', 'ことにしている', 'ことがある', 'ことができる'],
                 correctIndex: 1,
                 explanation: {
-                    correct: '自己決定的習慣用「ことにしている」。',
+                    correct: '自己決定的習{しゅう}慣{かん}用「ことにしている」。',
                     wrong: [
-                        '「ことになっている」是規定，不適合個人習慣。',
+                        '「ことになっている」是規定，不適合個人習{しゅう}慣{かん}。',
                         '「ことがある」表示偶爾發生。',
                         '「ことができる」表示能力。'
                     ]
@@ -1913,7 +1913,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_koto_ni_naru_5',
-                sentence: 'この学校{がっこう}では制服{せいふく}を着{き}る（　）。',
+                sentence: 'この学{がっ}校{こう}では制服{せいふく}を着{き}る（　）。',
                 options: ['ことになっている', 'ことにしている', 'ことがある', 'ことができる'],
                 correctIndex: 0,
                 explanation: '學校規定穿制服。'
@@ -1923,7 +1923,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_koto_ni_suru': {
         id: 'n4_koto_ni_suru',
         pattern: 'ことにする',
-        connection: '動詞辭書形 / ない形 + ことにする',
+        connection: '動{どう}詞{し}辭書形 / ない形 + ことにする',
         translation: '決定...',
         level: 'N4',
         explanation: [
@@ -1932,7 +1932,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '自己做出決定',
                 description: '表示說話者或主語自己做出的決定。強調是主動的意志行為。',
                 examples: [
-                    { japanese: '来年{らいねん}、日本{にほん}に留学{りゅうがく}することにした。', chinese: '決定明年去日本留學。' },
+                    { japanese: '来{らい}年{ねん}、日本{にほん}に留学{りゅうがく}することにした。', chinese: '決定明年去日本留學。' },
                     { japanese: '今日{きょう}からお酒{さけ}を飲{の}まないことにします。', chinese: '決定從今天開始不喝酒。' },
                     { japanese: 'この件{けん}は断{ことわ}ることにしました。', chinese: '決定拒絕這件事。' }
                 ]
@@ -1941,7 +1941,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_koto_ni_suru_1',
-                sentence: '健康{けんこう}のために、毎日{まいにち}運動{うんどう}する（　）。',
+                sentence: '健康{けんこう}のために、毎{まい}日{にち}運動{うんどう}する（　）。',
                 options: ['ことにした', 'ことになった', 'ことがある', 'ことができる'],
                 correctIndex: 0,
                 explanation: '自己決定每天運動用「ことにする」。'
@@ -1951,7 +1951,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '今日{きょう}から甘{あま}いものを食{た}べない（　）。',
                 options: ['ことにした', 'ことになった', 'ことがある', 'ことができる'],
                 correctIndex: 0,
-                explanation: '自己決定不吃甜食。'
+                explanation: '自己決定不吃甜食{た}。'
             },
             {
                 id: 'n4_koto_ni_suru_3',
@@ -1986,7 +1986,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_made_ni': {
         id: 'n4_made_ni',
         pattern: 'までに',
-        connection: '時間名詞 / 動詞辭書形 + までに',
+        connection: '時間名{めい}詞{し} / 動{どう}詞{し}辭書形 + までに',
         translation: '在...之前; 到...為止',
         level: 'N4',
         explanation: [
@@ -1997,7 +1997,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 examples: [
                     { japanese: '5時{じ}までに帰{かえ}ってきてください。', chinese: '請在5點之前回來。' },
                     { japanese: '金曜日{きんようび}までにレポートを出{だ}してください。', chinese: '請在星期五之前交報告。' },
-                    { japanese: '彼{かれ}が来{く}るまでに準備{じゅんび}しておこう。', chinese: '在他來之前先準備好吧。' }
+                    { japanese: '彼{かれ}が来{く}るまでに準{じゅん}備{び}しておこう。', chinese: '在他來之前先準{じゅん}備{び}好吧。' }
                 ]
             }
         ],
@@ -2018,7 +2018,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_made_ni_1',
-                sentence: '来週{らいしゅう}（　）申込書{もうしこみしょ}を出{だ}してください。',
+                sentence: '来{らい}週{しゅう}（　）申込書{もうしこみしょ}を出{だ}してください。',
                 options: ['までに', 'まで', 'から', 'まで'],
                 correctIndex: 0,
                 explanation: '「在下週之前」提交，表示期限用「までに」。'
@@ -2032,7 +2032,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_made_ni_3',
-                sentence: '夜{よる}10時{じ}（　）勉強{べんきょう}していた。',
+                sentence: '夜{よる}10時{じ}（　）勉{べん}強{きょう}していた。',
                 options: ['までに', 'まで', 'から', 'で'],
                 correctIndex: 1,
                 explanation: {
@@ -2053,7 +2053,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_made_ni_5',
-                sentence: '彼{かれ}が来{く}る（　）部屋{へや}を片付{かたづ}けよう。',
+                sentence: '彼{かれ}が来{く}る（　）部{へ}屋{や}を片付{かたづ}けよう。',
                 options: ['までに', 'まで', 'あとで', 'ところ'],
                 correctIndex: 0,
                 explanation: '「在他來之前」整理房間。'
@@ -2063,7 +2063,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_mama': {
         id: 'n4_mama',
         pattern: 'まま',
-        connection: '動詞た形 / ない形 + まま\nい形容詞 + まま\nな形容詞-な + まま\n名詞-の + まま',
+        connection: '動{どう}詞{し}た形 / ない形 + まま\nい形{けい}容{よう}詞{し} + まま\nな形{けい}容{よう}詞{し}-な + まま\n名{めい}詞{し}-の + まま',
         translation: '保持...的狀態',
         level: 'N4',
         explanation: [
@@ -2126,18 +2126,18 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_mitai_da': {
         id: 'n4_mitai_da',
         pattern: 'みたいだ',
-        connection: '動詞普通形 / い形 / な形-∅ / 名詞 + みたいだ',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-∅ / 名{めい}詞{し} + みたいだ',
         translation: '好像...; 像...一樣',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '推測或比喻',
-                description: '根據觀察到的情況做出推測，或用於比喻。口語中常用。',
+                description: '根據觀察到的情況做出推測，或用於比喻。口{こう}語{ご}中常用。',
                 examples: [
-                    { japanese: '雨{あめ}が降{ふ}るみたいだ。', chinese: '好像要下雨了。' },
+                    { japanese: '雨{あめ}が降{ふ}るみたいだ。', chinese: '好像要下雨{あめ}了。' },
                     { japanese: '彼{かれ}は風邪{かぜ}をひいたみたいだ。', chinese: '他好像感冒了。' },
-                    { japanese: 'まるで夢{ゆめ}みたいだ。', chinese: '簡直像夢一樣。' }
+                    { japanese: 'まるで夢{ゆめ}みたいだ。', chinese: '簡直像夢{ゆめ}一樣。' }
                 ]
             }
         ],
@@ -2146,12 +2146,12 @@ export const n4Details: Record<string, GrammarPoint> = {
             description: '兩者意思相近，但語氣不同。',
             points: [
                 {
-                    rule: 'みたいだ：口語，較隨意',
-                    examples: [{ japanese: '雨{あめ}みたいだね。', chinese: '好像是雨呢。' }]
+                    rule: 'みたいだ：口{こう}語{ご}，較隨意',
+                    examples: [{ japanese: '雨{あめ}みたいだね。', chinese: '好像是雨{あめ}呢。' }]
                 },
                 {
                     rule: 'ようだ：書面語，較正式',
-                    examples: [{ japanese: '雨{あめ}のようです。', chinese: '似乎是雨。' }]
+                    examples: [{ japanese: '雨{あめ}のようです。', chinese: '似乎是雨{あめ}。' }]
                 }
             ]
         },
@@ -2161,39 +2161,39 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '空{そら}が暗{くら}いから、雨{あめ}が降{ふ}る（　）。',
                 options: ['みたいだ', 'らしい', 'そうだ', 'ようだ'],
                 correctIndex: 0,
-                explanation: '根據天色做推測，口語用「みたいだ」。'
+                explanation: '根據天色做推測，口{こう}語{ご}用「みたいだ」。'
             },
             {
                 id: 'n4_mitai_da_2',
-                sentence: '彼{かれ}、今日{きょう}は元気{げんき}がない（　）。',
+                sentence: '彼{かれ}、今日{きょう}は元{げん}気{き}がない（　）。',
                 options: ['みたいだ', 'らしい', 'そうだ', 'ようだ'],
                 correctIndex: 0,
                 explanation: '根據觀察推測「他好像沒精神」。'
             },
             {
                 id: 'n4_mitai_da_3',
-                sentence: '彼女{かのじょ}は人形{にんぎょう}（　）きれいだ。',
+                sentence: '彼{かれ}女{かのじょ}は人形{にんぎょう}（　）きれいだ。',
                 options: ['みたいに', 'らしく', 'そうに', 'ように'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '比喻「像洋娃娃一樣漂亮」，用「みたいに」修飾形容詞。',
+                    correct: '比喻「像洋娃娃一樣漂亮」，用「みたいに」修飾形{けい}容{よう}詞{し}。',
                     wrong: [
                         '「らしく」表示「有...風格地」。',
                         '「そうに」表示樣態。',
-                        '「ように」也可以，但「みたいに」更口語。'
+                        '「ように」也可以，但「みたいに」更口{こう}語{ご}。'
                     ]
                 }
             },
             {
                 id: 'n4_mitai_da_4',
-                sentence: '「田中{たなか}さん、結婚{けっこん}したんだって。」\n「へえ、本当{ほんとう}（　）。」',
+                sentence: '「田中{たなか}さん、結婚{けっこん}したんだって。」\n「へえ、本{ほん}当{とう}（　）。」',
                 options: ['みたいだね', 'らしいね', 'そうだね', 'ようだね'],
                 correctIndex: 0,
                 explanation: '對話情境。「好像是真的呢」。'
             },
             {
                 id: 'n4_mitai_da_5',
-                sentence: 'この料理{りょうり}、まるでレストラン（　）だ。',
+                sentence: 'この料{りょう}理{り}、まるでレストラン（　）だ。',
                 options: ['みたい', 'らしい', 'そう', 'よう'],
                 correctIndex: 0,
                 explanation: '比喻「簡直像餐廳做的一樣」。'
@@ -2203,7 +2203,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_nagara': {
         id: 'n4_nagara',
         pattern: 'ながら',
-        connection: '動詞ます形（去ます）+ ながら',
+        connection: '動{どう}詞{し}ます形（去ます）+ ながら',
         translation: '一邊...一邊...',
         level: 'N4',
         explanation: [
@@ -2212,7 +2212,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '同時進行兩個動作',
                 description: '表示同一主語同時進行兩個動作。主要動作在後句，附屬動作在「ながら」前面。',
                 examples: [
-                    { japanese: '音楽{おんがく}を聴{き}きながら勉強{べんきょう}する。', chinese: '一邊聽音樂一邊讀書。' },
+                    { japanese: '音楽{おんがく}を聴{き}きながら勉{べん}強{きょう}する。', chinese: '一邊聽音樂一邊讀書。' },
                     { japanese: 'テレビを見{み}ながら食{た}べる。', chinese: '一邊看電視一邊吃飯。' },
                     { japanese: '歩{ある}きながら話{はな}しましょう。', chinese: '邊走邊聊吧。' }
                 ]
@@ -2224,7 +2224,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             points: [
                 {
                     rule: '附屬動作在前：音楽を聴きながら',
-                    examples: [{ japanese: '音楽{おんがく}を聴{き}きながら勉強{べんきょう}する。', chinese: '（主要是）讀書，（順便）聽音樂。' }]
+                    examples: [{ japanese: '音楽{おんがく}を聴{き}きながら勉{べん}強{きょう}する。', chinese: '（主要是）讀書，（順便）聽音樂。' }]
                 }
             ]
         },
@@ -2238,7 +2238,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_nagara_2',
-                sentence: '電話{でんわ}で話{はな}し（　）、運転{うんてん}するのは危{あぶ}ないです。',
+                sentence: '電{でん}話{わ}で話{はな}し（　）、運転{うんてん}するのは危{あぶ}ないです。',
                 options: ['ながら', 'まま', 'ところ', 'うちに'],
                 correctIndex: 0,
                 explanation: '「一邊講電話一邊開車」是同時進行。'
@@ -2276,7 +2276,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_nakereba_naranai': {
         id: 'n4_nakereba_naranai',
         pattern: 'なければならない',
-        connection: '動詞ない形（去ない）+ なければならない',
+        connection: '動{どう}詞{し}ない形（去ない）+ なければならない',
         translation: '必須...',
         level: 'N4',
         explanation: [
@@ -2292,7 +2292,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             }
         ],
         analysis: {
-            title: '「なければならない」的口語變化',
+            title: '「なければならない」的口{こう}語{ご}變化',
             description: '有多種說法，正式程度不同。',
             points: [
                 {
@@ -2300,7 +2300,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     examples: [{ japanese: '行{い}かなければなりません。', chinese: '必須去。' }]
                 },
                 {
-                    rule: '口語：なきゃ / なくちゃ',
+                    rule: '口{こう}語{ご}：なきゃ / なくちゃ',
                     examples: [{ japanese: '行{い}かなきゃ。', chinese: '得去。' }]
                 }
             ]
@@ -2308,10 +2308,10 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_nakereba_naranai_1',
-                sentence: '毎日{まいにち}野菜{やさい}を（　）なければなりません。',
+                sentence: '毎{まい}日{にち}野菜{やさい}を（　）なければなりません。',
                 options: ['食{た}べ', '食{た}べる', '食{た}べて', '食{た}べた'],
                 correctIndex: 0,
-                explanation: '「ない形」去掉「ない」接「なければ」。「食べない」→「食べ」。'
+                explanation: '「ない形」去掉「ない」接「なければ」。「食{た}べない」→「食{た}べ」。'
             },
             {
                 id: 'n4_nakereba_naranai_2',
@@ -2339,11 +2339,11 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「明日{あした}、来{こ}られる？」\n「ごめん、仕事{しごと}に行{い}か（　）んだ。」',
                 options: ['なければならない', 'なきゃ', 'なくちゃ', 'なければ'],
                 correctIndex: 1,
-                explanation: '對話情境。口語用「なきゃ」。'
+                explanation: '對話情境。口{こう}語{ご}用「なきゃ」。'
             },
             {
                 id: 'n4_nakereba_naranai_5',
-                sentence: '試験{しけん}のためにもっと勉強{べんきょう}し（　）。',
+                sentence: '試験{しけん}のためにもっと勉{べん}強{きょう}し（　）。',
                 options: ['なければならない', 'てはいけない', 'なくてもいい', 'てもいい'],
                 correctIndex: 0,
                 explanation: '「為了考試必須更用功」。'
@@ -2353,7 +2353,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_nara': {
         id: 'n4_nara',
         pattern: 'なら',
-        connection: '動詞普通形 / い形 / な形-∅ / 名詞 + なら',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-∅ / 名{めい}詞{し} + なら',
         translation: '如果...的話',
         level: 'N4',
         explanation: [
@@ -2378,7 +2378,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 },
                 {
                     rule: 'たら/ば：單純假設條件',
-                    examples: [{ japanese: '雨{あめ}が降{ふ}ったら、行{い}かない。', chinese: '如果下雨，就不去。' }]
+                    examples: [{ japanese: '雨{あめ}が降{ふ}ったら、行{い}かない。', chinese: '如果下雨{あめ}，就不去。' }]
                 }
             ]
         },
@@ -2424,7 +2424,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['なら', 'たら', 'と', 'ば'],
                 correctIndex: 1,
                 explanation: {
-                    correct: '「如果明天下雨」是假設未來，用「たら」。',
+                    correct: '「如果明天下雨{あめ}」是假設未來，用「たら」。',
                     wrong: [
                         '「なら」用於回應話題，這裡是單純假設。',
                         '「と」用於必然結果。',
@@ -2437,7 +2437,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_nasai': {
         id: 'n4_nasai',
         pattern: 'なさい',
-        connection: '動詞ます形（去ます）+ なさい',
+        connection: '動{どう}詞{し}ます形（去ます）+ なさい',
         translation: '做... (命令)',
         level: 'N4',
         explanation: [
@@ -2448,7 +2448,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 examples: [
                     { japanese: '早{はや}く寝{ね}なさい。', chinese: '快點睡覺。' },
                     { japanese: '野菜{やさい}も食{た}べなさい。', chinese: '蔬菜也要吃。' },
-                    { japanese: 'ちゃんと勉強{べんきょう}しなさい。', chinese: '好好念書。' }
+                    { japanese: 'ちゃんと勉{べん}強{きょう}しなさい。', chinese: '好好念書。' }
                 ]
             }
         ],
@@ -2462,7 +2462,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_nasai_2',
-                sentence: '部屋{へや}を片付{かたづ}け（　）！',
+                sentence: '部{へ}屋{や}を片付{かたづ}け（　）！',
                 options: ['なさい', 'てください', 'てほしい', 'ましょう'],
                 correctIndex: 0,
                 explanation: '父母對孩子的命令用「なさい」。'
@@ -2490,7 +2490,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_nasai_5',
-                sentence: '先生{せんせい}が「静{しず}かにし（　）」と言{い}った。',
+                sentence: '先{せん}生{せい}が「静{しず}かにし（　）」と言{い}った。',
                 options: ['なさい', 'ます', 'てください', 'ましょう'],
                 correctIndex: 0,
                 explanation: '老師對學生的命令。'
@@ -2500,7 +2500,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_nikui': {
         id: 'n4_nikui',
         pattern: 'にくい',
-        connection: '動詞ます形（去ます）+ にくい',
+        connection: '動{どう}詞{し}ます形（去ます）+ にくい',
         translation: '難以...',
         level: 'N4',
         explanation: [
@@ -2577,7 +2577,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_noni': {
         id: 'n4_noni',
         pattern: 'のに',
-        connection: '動詞普通形 / い形 / な形-な / 名詞-な + のに',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-な + のに',
         translation: '雖然...但是...; 明明...',
         level: 'N4',
         explanation: [
@@ -2586,8 +2586,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '逆接・不滿或遺憾',
                 description: '表示前後句相反，說話者對結果感到意外、不滿或遺憾。',
                 examples: [
-                    { japanese: '約束{やくそく}したのに、来{こ}なかった。', chinese: '明明約好了，卻沒來。' },
-                    { japanese: 'たくさん勉強{べんきょう}したのに、落{お}ちた。', chinese: '明明讀了很多，卻沒考上。' },
+                    { japanese: '約{やく}束{そく}したのに、来{こ}なかった。', chinese: '明明約好了，卻沒來。' },
+                    { japanese: 'たくさん勉{べん}強{きょう}したのに、落{お}ちた。', chinese: '明明讀了很多，卻沒考上。' },
                     { japanese: '高{たか}いのに、おいしくない。', chinese: '明明很貴，卻不好吃。' }
                 ]
             }
@@ -2601,15 +2601,15 @@ export const n4Details: Record<string, GrammarPoint> = {
                     examples: [{ japanese: '頑張{がんば}ったのに、失敗{しっぱい}した。', chinese: '明明很努力了，卻失敗了。（遺憾）' }]
                 },
                 {
-                    rule: 'ても：客觀陳述，無情緒色彩',
-                    examples: [{ japanese: '頑張{がんば}っても、失敗{しっぱい}することがある。', chinese: '即使努力，也有失敗的時候。（客觀）' }]
+                    rule: 'ても：客{きゃく}觀陳述，無情緒色彩',
+                    examples: [{ japanese: '頑張{がんば}っても、失敗{しっぱい}することがある。', chinese: '即使努力，也有失敗的時候。（客{きゃく}觀）' }]
                 }
             ]
         },
         quiz: [
             {
                 id: 'n4_noni_1',
-                sentence: 'あんなに練習{れんしゅう}した（　）、試合{しあい}に負{ま}けた。',
+                sentence: 'あんなに練{れん}習{しゅう}した（　）、試合{しあい}に負{ま}けた。',
                 options: ['のに', 'ても', 'から', 'ので'],
                 correctIndex: 0,
                 explanation: '「明明練習了那麼多，卻輸了」，有遺憾語氣。'
@@ -2630,8 +2630,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '「明明吃了藥，燒還是沒退」，有不滿。',
                     wrong: [
                         '「ても」是假設，這裡已經吃了。',
-                        '「から」表示原因。',
-                        '「ので」表示原因。'
+                        '「から」表示原{げん}因{いん}。',
+                        '「ので」表示原{げん}因{いん}。'
                     ]
                 }
             },
@@ -2644,7 +2644,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_noni_5',
-                sentence: '高{たか}い（　）、全然{ぜんぜん}使{つか}えない。',
+                sentence: '高{たか}い（　）、全{ぜん}然{ぜん}使{つか}えない。',
                 options: ['のに', 'ても', 'から', 'ので'],
                 correctIndex: 0,
                 explanation: '「明明很貴，卻完全不能用」。'
@@ -2654,7 +2654,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_rashii': {
         id: 'n4_rashii',
         pattern: 'らしい',
-        connection: '動詞普通形 / い形 / な形-∅ / 名詞 + らしい',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-∅ / 名{めい}詞{し} + らしい',
         translation: '好像...; 聽說...; 有...的樣子',
         level: 'N4',
         explanation: [
@@ -2664,7 +2664,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '根據聽到的消息或間接證據做出推測。',
                 examples: [
                     { japanese: '彼{かれ}は来{こ}ないらしい。', chinese: '聽說他不會來。' },
-                    { japanese: '電車{でんしゃ}が遅{おく}れているらしい。', chinese: '電車好像誤點了。' },
+                    { japanese: '電{でん}車{しゃ}が遅{おく}れているらしい。', chinese: '電車好像誤點了。' },
                     { japanese: 'あの店{みせ}はおいしいらしい。', chinese: '聽說那家店很好吃。' }
                 ]
             },
@@ -2684,25 +2684,25 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '明日{あした}は雨{あめ}が降{ふ}る（　）。',
                 options: ['らしい', 'ようだ', 'みたいだ', 'そうだ'],
                 correctIndex: 0,
-                explanation: '根據傳聞「聽說明天會下雨」。'
+                explanation: '根據傳聞「聽說明天會下雨{あめ}」。'
             },
             {
                 id: 'n4_rashii_2',
-                sentence: '彼女{かのじょ}は結婚{けっこん}した（　）。',
+                sentence: '彼{かれ}女{かのじょ}は結婚{けっこん}した（　）。',
                 options: ['らしい', 'ようだ', 'みたいだ', 'そうだ'],
                 correctIndex: 0,
                 explanation: '「聽說她結婚了」是傳聞。'
             },
             {
                 id: 'n4_rashii_3',
-                sentence: '今日{きょう}は本当{ほんとう}に夏{なつ}（　）暑{あつ}さだ。',
+                sentence: '今日{きょう}は本{ほん}当{とう}に夏{なつ}（　）暑{あつ}さだ。',
                 options: ['らしい', 'のような', 'みたいな', 'そうな'],
                 correctIndex: 0,
                 explanation: {
                     correct: '「像夏天一樣的熱」，表示典型特徵用「らしい」。',
                     wrong: [
                         '「のような」也可以，但「らしい」更強調典型。',
-                        '「みたいな」是口語比喻。',
+                        '「みたいな」是口{こう}語{ご}比喻。',
                         '「そうな」表示樣態推測。'
                     ]
                 }
@@ -2716,45 +2716,45 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_rashii_5',
-                sentence: '彼{かれ}は子供{こども}（　）ことを言{い}う。',
+                sentence: '彼{かれ}は子{こ}供{とも}（　）ことを言{い}う。',
                 options: ['らしい', 'のような', 'みたいな', 'そうな'],
                 correctIndex: 0,
-                explanation: '「他說很孩子氣的話」，有負面評價。'
+                explanation: '「他說很孩子氣的話」，有負{ま}け面評價。'
             }
         ]
     },
     'n4_saseru': {
         id: 'n4_saseru',
         pattern: 'させる',
-        connection: '一段動詞：語幹 + させる\n五段動詞：あ段 + せる',
+        connection: '一段動{どう}詞{し}：語幹 + させる\n五段動{どう}詞{し}：あ段 + せる',
         translation: '讓...做; 使...做 (使役)',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '使役形',
-                description: '表示讓某人做某事，或使某人進入某狀態。可以是許可、命令或強制的意味。',
+                description: '表示讓某人做某事，或使某人進入某狀態。可以是許可、命令或強制的意味{あじ}。',
                 examples: [
                     { japanese: '母{はは}は私{わたし}に野菜{やさい}を食{た}べさせた。', chinese: '媽媽讓我吃蔬菜。' },
-                    { japanese: '先生{せんせい}は学生{がくせい}に本{ほん}を読{よ}ませた。', chinese: '老師讓學生讀書。' },
+                    { japanese: '先{せん}生{せい}は学{がく}生{せい}に本{ほん}を読{よ}ませた。', chinese: '老師讓學生讀書。' },
                     { japanese: '彼{かれ}を笑{わら}わせた。', chinese: '讓他笑了。' }
                 ]
             }
         ],
         analysis: {
             title: '使役形的變化規則',
-            description: '根據動詞類型變化不同。',
+            description: '根據動{どう}詞{し}類型變化不同。',
             points: [
                 {
-                    rule: '一段動詞：去る + させる',
+                    rule: '一段動{どう}詞{し}：去る + させる',
                     examples: [{ japanese: '食{た}べる → 食{た}べさせる', chinese: '吃 → 讓...吃' }]
                 },
                 {
-                    rule: '五段動詞：う段 → あ段 + せる',
+                    rule: '五段動{どう}詞{し}：う段 → あ段 + せる',
                     examples: [{ japanese: '読{よ}む → 読{よ}ませる', chinese: '讀 → 讓...讀' }]
                 },
                 {
-                    rule: '不規則：する → させる、来る → 来させる',
+                    rule: '不規則：する → させる、来{く}る → 来させる',
                     examples: [{ japanese: 'する → させる', chinese: '做 → 讓...做' }]
                 }
             ]
@@ -2762,14 +2762,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_saseru_1',
-                sentence: '母{はは}は子供{こども}に牛乳{ぎゅうにゅう}を（　）。',
+                sentence: '母{はは}は子{こ}供{とも}に牛乳{ぎゅうにゅう}を（　）。',
                 options: ['飲{の}ませた', '飲{の}まれた', '飲{の}んだ', '飲{の}みた'],
                 correctIndex: 0,
                 explanation: '「讓孩子喝」用使役形「飲ませる」。'
             },
             {
                 id: 'n4_saseru_2',
-                sentence: '先生{せんせい}は生徒{せいと}を立{た}た（　）。',
+                sentence: '先{せん}生{せい}は生徒{せいと}を立{た}た（　）。',
                 options: ['せた', 'れた', 'った', 'した'],
                 correctIndex: 0,
                 explanation: '「立つ」的使役形是「立たせる」。'
@@ -2783,7 +2783,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '「他的話讓我笑了」用使役形。',
                     wrong: [
                         '「笑われた」是被動「被笑」。',
-                        '「笑った」是自動詞「笑了」。',
+                        '「笑った」是自動{どう}詞{し}「笑了」。',
                         '「笑いた」不存在。'
                     ]
                 }
@@ -2797,7 +2797,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_saseru_5',
-                sentence: '親{おや}は子供{こども}に勉強{べんきょう}（　）。',
+                sentence: '親{おや}は子{こ}供{とも}に勉{べん}強{きょう}（　）。',
                 options: ['させる', 'される', 'する', 'した'],
                 correctIndex: 0,
                 explanation: '「父母讓孩子學習」用使役形。'
@@ -2807,17 +2807,17 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_shi': {
         id: 'n4_shi',
         pattern: 'し',
-        connection: '動詞普通形 / い形 / な形-だ / 名詞-だ + し',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-だ / 名{めい}詞{し}-だ + し',
         translation: '既...又...; 而且',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '並列多個理由或特點',
-                description: '列舉多個理由或特點，常用於強調。可以只列舉一個「し」暗示還有其他。',
+                title: '並列多個理{り}由{ゆう}或特點',
+                description: '列舉多個理{り}由{ゆう}或特點，常用於強調。可以只列舉一個「し」暗示還有其他。',
                 examples: [
-                    { japanese: 'この部屋{へや}は広{ひろ}いし、きれいだし、いいですね。', chinese: '這房間又大又乾淨，很好呢。' },
-                    { japanese: '時間{じかん}もないし、お金{かね}もないし、旅行{りょこう}できない。', chinese: '既沒時間又沒錢，沒法旅行。' },
+                    { japanese: 'この部{へ}屋{や}は広{ひろ}いし、きれいだし、いいですね。', chinese: '這房間又大又乾淨，很好呢。' },
+                    { japanese: '時{じ}間{かん}もないし、お金{かね}もないし、旅{りょ}行{こう}できない。', chinese: '既沒時間又沒錢，沒法旅行。' },
                     { japanese: '疲{つか}れたし、もう帰{かえ}ろう。', chinese: '累了，回去吧。' }
                 ]
             }
@@ -2828,14 +2828,14 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: 'このレストランは安{やす}い（　）、おいしい（　）、よく来{き}ます。',
                 options: ['し / し', 'て / て', 'から / から', 'ので / ので'],
                 correctIndex: 0,
-                explanation: '並列理由「又便宜又好吃」。'
+                explanation: '並列理{り}由{ゆう}「又便宜又好吃」。'
             },
             {
                 id: 'n4_shi_2',
                 sentence: '今日{きょう}は天気{てんき}もいい（　）、出{で}かけましょう。',
                 options: ['し', 'て', 'から', 'ので'],
                 correctIndex: 0,
-                explanation: '「天氣也好」暗示還有其他理由。'
+                explanation: '「天氣也好」暗示還有其他理{り}由{ゆう}。'
             },
             {
                 id: 'n4_shi_3',
@@ -2845,9 +2845,9 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '「又溫柔又聰明」所以受歡迎。',
                     wrong: [
-                        '「て」不能並列形容詞。',
-                        '「から」表示單一原因。',
-                        '「ので」表示單一原因。'
+                        '「て」不能並列形{けい}容{よう}詞{し}。',
+                        '「から」表示單一原{げん}因{いん}。',
+                        '「ので」表示單一原{げん}因{いん}。'
                     ]
                 }
             },
@@ -2856,7 +2856,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「なんでこの車{くるま}を買{か}ったの？」\n「安{やす}かった（　）、デザインもよかった（　）。」',
                 options: ['し / し', 'て / て', 'から / から', 'ので / ので'],
                 correctIndex: 0,
-                explanation: '對話情境。列舉購買理由。'
+                explanation: '對話情境。列舉購買理{り}由{ゆう}。'
             },
             {
                 id: 'n4_shi_5',
@@ -2870,7 +2870,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_sou_da_looks': {
         id: 'n4_sou_da_looks',
         pattern: 'そうだ (様態)',
-        connection: '動詞ます形（去ます）+ そうだ\nい形容詞（去い）+ そうだ\nな形容詞語幹 + そうだ',
+        connection: '動{どう}詞{し}ます形（去ます）+ そうだ\nい形{けい}容{よう}詞{し}（去い）+ そうだ\nな形{けい}容{よう}詞{し}語幹 + そうだ',
         translation: '看起來...; 似乎...',
         level: 'N4',
         explanation: [
@@ -2879,9 +2879,9 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '根據外觀的推測',
                 description: '根據眼前看到的情況，推測某事即將發生或某物具有某種性質。',
                 examples: [
-                    { japanese: '雨{あめ}が降{ふ}りそうだ。', chinese: '看起來要下雨了。' },
+                    { japanese: '雨{あめ}が降{ふ}りそうだ。', chinese: '看起來要下雨{あめ}了。' },
                     { japanese: 'このケーキはおいしそうだ。', chinese: '這蛋糕看起來很好吃。' },
-                    { japanese: '彼{かれ}は元気{げんき}そうだ。', chinese: '他看起來很有精神。' }
+                    { japanese: '彼{かれ}は元{げん}気{き}そうだ。', chinese: '他看起來很有精神。' }
                 ]
             }
         ],
@@ -2890,7 +2890,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             description: '接續不同，意思也不同。',
             points: [
                 {
-                    rule: '様態：ます形/形容詞語幹 + そうだ「看起來...」',
+                    rule: '様態：ます形/形{けい}容{よう}詞{し}語幹 + そうだ「看起來...」',
                     examples: [{ japanese: 'おいしそう', chinese: '看起來好吃' }]
                 },
                 {
@@ -2902,7 +2902,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_sou_da_looks_1',
-                sentence: 'この料理{りょうり}はおいし（　）。',
+                sentence: 'この料{りょう}理{り}はおいし（　）。',
                 options: ['そうだ', 'いそうだ', 'くそうだ', 'そうです'],
                 correctIndex: 0,
                 explanation: '「おいしい」去掉「い」加「そうだ」。'
@@ -2924,7 +2924,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     wrong: [
                         '「いそうだ」接續錯誤。',
                         '「くそうだ」接續錯誤。',
-                        '「そうです」需要丁寧體但接續正確。'
+                        '「そうです」需要丁{てい}寧{ねい}體但接續正確。'
                     ]
                 }
             },
@@ -2933,21 +2933,21 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「この本{ほん}、面白{おもしろ}い？」\n「うん、面白{おもしろ}（　）よ。」',
                 options: ['そうだ', 'いそうだ', 'くそうだ', 'そう'],
                 correctIndex: 3,
-                explanation: '對話情境。口語可省略「だ」。'
+                explanation: '對話情境。口{こう}語{ご}可省略「だ」。'
             },
             {
                 id: 'n4_sou_da_looks_5',
-                sentence: '彼女{かのじょ}は元気{げんき}（　）。',
+                sentence: '彼{かれ}女{かのじょ}は元{げん}気{き}（　）。',
                 options: ['そうだ', 'なそうだ', 'にそうだ', 'そうです'],
                 correctIndex: 0,
-                explanation: 'な形容詞去「な」直接加「そうだ」。'
+                explanation: 'な形{けい}容{よう}詞{し}去「な」直接加「そうだ」。'
             }
         ]
     },
     'n4_sou_da_heard': {
         id: 'n4_sou_da_heard',
         pattern: 'そうだ (傳聞)',
-        connection: '動詞普通形 / い形 / な形-だ / 名詞-だ + そうだ',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-だ / 名{めい}詞{し}-だ + そうだ',
         translation: '聽說...; 據說...',
         level: 'N4',
         explanation: [
@@ -2956,7 +2956,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '傳達聽到的消息',
                 description: '用於傳達從別人那裡聽到的消息或資訊。',
                 examples: [
-                    { japanese: '明日{あした}は雨{あめ}だそうだ。', chinese: '聽說明天會下雨。' },
+                    { japanese: '明日{あした}は雨{あめ}だそうだ。', chinese: '聽說明天會下雨{あめ}。' },
                     { japanese: '彼{かれ}は来{こ}ないそうだ。', chinese: '聽說他不來。' },
                     { japanese: 'あのレストランはおいしいそうだ。', chinese: '聽說那家餐廳很好吃。' }
                 ]
@@ -2993,14 +2993,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_sou_da_heard_4',
-                sentence: '「来週{らいしゅう}、テストがあるんだって。」\n「へえ、テストがある（　）。」',
+                sentence: '「来{らい}週{しゅう}、テストがあるんだって。」\n「へえ、テストがある（　）。」',
                 options: ['そうだ', 'ようだ', 'らしい', 'みたいだ'],
                 correctIndex: 0,
                 explanation: '對話情境。確認聽到的消息。'
             },
             {
                 id: 'n4_sou_da_heard_5',
-                sentence: '新{あたら}しい先生{せんせい}は厳{きび}しい（　）よ。',
+                sentence: '新{あたら}しい先{せん}生{せい}は厳{きび}しい（　）よ。',
                 options: ['そうだ', 'ようだ', 'らしい', 'みたいだ'],
                 correctIndex: 0,
                 explanation: '「聽說新老師很嚴格」。'
@@ -3012,7 +3012,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ta_bakari': {
         id: 'n4_ta_bakari',
         pattern: 'たばかり',
-        connection: '動詞た形 + ばかり',
+        connection: '動{どう}詞{し}た形 + ばかり',
         translation: '剛剛...',
         level: 'N4',
         explanation: [
@@ -3036,7 +3036,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     examples: [{ japanese: '先月{せんげつ}買{か}ったばかりなのに壊{こわ}れた。', chinese: '上個月才買的就壞了。' }]
                 },
                 {
-                    rule: '「たところ」：客觀上「剛完成」，時間非常接近。',
+                    rule: '「たところ」：客{きゃく}觀上「剛完成」，時間非常接近。',
                     examples: [{ japanese: '今{いま}帰{かえ}ってきたところです。', chinese: '我剛到家。' }]
                 }
             ]
@@ -3047,18 +3047,18 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '今{いま}、食{た}べ（　）なので、まだお腹{なか}がいっぱいです。',
                 options: ['たばかり', 'ているばかり', 'てばかり', 'ばかり'],
                 correctIndex: 0,
-                explanation: '動詞た形＋ばかり，表示剛吃完。'
+                explanation: '動{どう}詞{し}た形＋ばかり，表示剛吃完。'
             },
             {
                 id: 'n4_ta_bakari_2',
-                sentence: 'この本{ほん}は先週{せんしゅう}買{か}っ（　）です。',
+                sentence: 'この本{ほん}は先{せん}週{しゅう}買{か}っ（　）です。',
                 options: ['たばかり', 'ているばかり', 'てばかり', 'ばかり'],
                 correctIndex: 0,
                 explanation: '表示上週才買的（主觀感覺剛買）。'
             },
             {
                 id: 'n4_ta_bakari_3',
-                sentence: '彼女{かのじょ}は日本{にほん}に来{き}（　）で、日本語{にほんご}があまり話{はな}せません。',
+                sentence: '彼{かれ}女{かのじょ}は日本{にほん}に来{き}（　）で、日本語{にほんご}があまり話{はな}せません。',
                 options: ['たばかり', 'たところ', 'ている', 'てから'],
                 correctIndex: 0,
                 explanation: {
@@ -3098,7 +3098,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tara': {
         id: 'n4_tara',
         pattern: 'たら',
-        connection: '動詞た形 / い形-かったら / な形-だったら / 名詞-だったら',
+        connection: '動{どう}詞{し}た形 / い形-かったら / な形-だったら / 名{めい}詞{し}-だったら',
         translation: '如果...的話; ...之後',
         level: 'N4',
         explanation: [
@@ -3107,7 +3107,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '假定條件',
                 description: '表示假設的條件，「如果...的話」。',
                 examples: [
-                    { japanese: '雨{あめ}が降{ふ}ったら、行{い}きません。', chinese: '如果下雨的話，我就不去。' },
+                    { japanese: '雨{あめ}が降{ふ}ったら、行{い}きません。', chinese: '如果下雨{あめ}的話，我就不去。' },
                     { japanese: '安{やす}かったら、買{か}います。', chinese: '如果便宜的話，我就買。' },
                     { japanese: '暇{ひま}だったら、遊{あそ}びに来{き}てください。', chinese: '如果有空的話，請來玩。' }
                 ]
@@ -3117,7 +3117,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '確定條件（...之後）',
                 description: '表示某事發生後的必然結果。',
                 examples: [
-                    { japanese: '家{いえ}に帰{かえ}ったら、電話{でんわ}します。', chinese: '回到家之後，我會打電話。' },
+                    { japanese: '家{いえ}に帰{かえ}ったら、電{でん}話{わ}します。', chinese: '回到家之後，我會打電話。' },
                     { japanese: '春{はる}になったら、桜{さくら}が咲{さ}きます。', chinese: '到了春天，櫻花就會開。' }
                 ]
             }
@@ -3128,14 +3128,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             points: [
                 {
                     rule: '「たら」：最通用，可用於假定和確定條件。',
-                    examples: [{ japanese: '雨{あめ}が降{ふ}ったら、中止{ちゅうし}です。', chinese: '如果下雨就取消。' }]
+                    examples: [{ japanese: '雨{あめ}が降{ふ}ったら、中止{ちゅうし}です。', chinese: '如果下雨{あめ}就取消。' }]
                 },
                 {
                     rule: '「ば」：強調前項是後項成立的充分條件。',
                     examples: [{ japanese: '安{やす}ければ買{か}います。', chinese: '便宜的話就買。' }]
                 },
                 {
-                    rule: '「と」：表示自然或習慣性的必然結果。',
+                    rule: '「と」：表示自然或習{しゅう}慣{かん}性的必然結果。',
                     examples: [{ japanese: '春{はる}になると桜{さくら}が咲{さ}く。', chinese: '一到春天櫻花就開。' }]
                 },
                 {
@@ -3154,7 +3154,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_tara_2',
-                sentence: '駅{えき}に着{つ}い（　）、連絡{れんらく}します。',
+                sentence: '駅{えき}に着{つ}い（　）、連{れん}絡{らく}します。',
                 options: ['たら', 'ば', 'と', 'なら'],
                 correctIndex: 0,
                 explanation: '確定條件，「到車站後就聯絡」。'
@@ -3167,7 +3167,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '反事實假設（過去），「要是早點起床的話」。',
                     wrong: [
-                        '「ば」也可以，但「たら」更口語化。',
+                        '「ば」也可以，但「たら」更口{こう}語{ご}化。',
                         '「と」不用於反事實。',
                         '「なら」不用於反事實。'
                     ]
@@ -3189,7 +3189,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '確定條件「作業做完後」可以玩。',
                     wrong: [
                         '「ば」不如「たら」自然。',
-                        '「と」多用於習慣性。',
+                        '「と」多用於習{しゅう}慣{かん}性。',
                         '「なら」是「要是...的話」。'
                     ]
                 }
@@ -3201,23 +3201,23 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_ageru': {
         id: 'n4_te_ageru',
         pattern: 'てあげる',
-        connection: '動詞て形 + あげる',
+        connection: '動{どう}詞{し}て形 + あげる',
         translation: '（為別人）做...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '為他人做某事（授惠）',
-                description: '表示說話者或說話者一方的人為他人做某事，帶有恩惠的意味。',
+                description: '表示說話者或說話者一方的人為他人做某事，帶有恩惠的意味{あじ}。',
                 examples: [
-                    { japanese: '友達{ともだち}に日本語{にほんご}を教{おし}えてあげました。', chinese: '我教朋友日語。' },
+                    { japanese: '友{とも}達{だち}に日本語{にほんご}を教{おし}えてあげました。', chinese: '我教朋友日語。' },
                     { japanese: '妹{いもうと}の宿題{しゅくだい}を手伝{てつだ}ってあげた。', chinese: '我幫妹妹做作業。' },
-                    { japanese: '彼女{かのじょ}を駅{えき}まで送{おく}ってあげます。', chinese: '我送她到車站。' }
+                    { japanese: '彼{かれ}女{かのじょ}を駅{えき}まで送{おく}ってあげます。', chinese: '我送她到車站。' }
                 ]
             }
         ],
         analysis: {
-            title: '授受動詞「あげる」「もらう」「くれる」',
+            title: '授受動{どう}詞{し}「あげる」「もらう」「くれる」',
             description: '日語的授受表達需要考慮方向性。',
             points: [
                 {
@@ -3244,7 +3244,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_te_ageru_2',
-                sentence: '友達{ともだち}の引{ひ}っ越{こ}しを手伝{てつだ}って（　）。',
+                sentence: '友{とも}達{だち}の引{ひ}っ越{こ}しを手伝{てつだ}って（　）。',
                 options: ['あげた', 'もらった', 'くれた', 'いただいた'],
                 correctIndex: 0,
                 explanation: '我幫朋友搬家。'
@@ -3272,7 +3272,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_te_ageru_5',
-                sentence: '先生{せんせい}に手紙{てがみ}を見{み}て（　）。',
+                sentence: '先{せん}生{せい}に手紙{てがみ}を見{み}て（　）。',
                 options: ['いただいた', 'あげた', 'くれた', 'もらった'],
                 correctIndex: 0,
                 explanation: {
@@ -3291,7 +3291,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_hoshii': {
         id: 'n4_te_hoshii',
         pattern: 'てほしい',
-        connection: '動詞て形 + ほしい',
+        connection: '動{どう}詞{し}て形 + ほしい',
         translation: '希望（別人）做...',
         level: 'N4',
         explanation: [
@@ -3315,7 +3315,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     examples: [{ japanese: '手伝{てつだ}ってほしい。', chinese: '希望你幫忙。' }]
                 },
                 {
-                    rule: '「てもらいたい」：請求的語氣，較客氣。',
+                    rule: '「てもらいたい」：請求的語氣，較客{きゃく}氣。',
                     examples: [{ japanese: '手伝{てつだ}ってもらいたいんですが。', chinese: '想請你幫忙。' }]
                 }
             ]
@@ -3333,11 +3333,11 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '明日{あした}は晴{は}れて（　）。',
                 options: ['ほしい', 'たい', 'もらう', 'くれる'],
                 correctIndex: 0,
-                explanation: '希望明天放晴（對天氣的願望）。'
+                explanation: '希望明天放晴{は}れ（對天氣的願望）。'
             },
             {
                 id: 'n4_te_hoshii_3',
-                sentence: '彼{かれ}にもっと勉強{べんきょう}して（　）。',
+                sentence: '彼{かれ}にもっと勉{べん}強{きょう}して（　）。',
                 options: ['ほしい', 'たい', 'もらいたい', 'くれたい'],
                 correctIndex: 0,
                 explanation: {
@@ -3351,7 +3351,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_te_hoshii_4',
-                sentence: '「何{なに}か希望{きぼう}はありますか。」\n「静{しず}かな部屋{へや}に泊{と}まらせて（　）んですが。」',
+                sentence: '「何{なに}か希望{きぼう}はありますか。」\n「静{しず}かな部{へ}屋{や}に泊{と}まらせて（　）んですが。」',
                 options: ['ほしい', 'たい', 'もらう', 'くれる'],
                 correctIndex: 0,
                 explanation: '對話情境。希望住安靜的房間。'
@@ -3377,7 +3377,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_iku': {
         id: 'n4_te_iku',
         pattern: 'ていく',
-        connection: '動詞て形 + いく',
+        connection: '動{どう}詞{し}て形 + いく',
         translation: '...下去; 漸漸...; 做了再去',
         level: 'N4',
         explanation: [
@@ -3386,7 +3386,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '動作持續到將來',
                 description: '表示某狀態或動作從現在持續到將來。',
                 examples: [
-                    { japanese: 'これからも日本語{にほんご}を勉強{べんきょう}していきたい。', chinese: '今後也想繼續學日語。' },
+                    { japanese: 'これからも日本語{にほんご}を勉{べん}強{きょう}していきたい。', chinese: '今後也想繼續學日語。' },
                     { japanese: '人口{じんこう}は減{へ}っていくでしょう。', chinese: '人口大概會漸漸減少吧。' }
                 ]
             },
@@ -3434,7 +3434,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「傘{かさ}を持{も}っていかなくていいの？」\n「大丈夫{だいじょうぶ}、雨{あめ}は止{や}んで（　）から。」',
                 options: ['いく', 'くる', 'いる', 'ある'],
                 correctIndex: 0,
-                explanation: '對話情境。雨會漸漸停。'
+                explanation: '對話情境。雨{あめ}會漸漸停。'
             },
             {
                 id: 'n4_te_iku_5',
@@ -3457,7 +3457,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_kureru': {
         id: 'n4_te_kureru',
         pattern: 'てくれる',
-        connection: '動詞て形 + くれる',
+        connection: '動{どう}詞{し}て形 + くれる',
         translation: '（他人為我）做...',
         level: 'N4',
         explanation: [
@@ -3466,7 +3466,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '他人為我/我方做某事',
                 description: '表示他人為說話者或說話者一方做某事，帶有感謝的語氣。',
                 examples: [
-                    { japanese: '友達{ともだち}が手伝{てつだ}ってくれた。', chinese: '朋友幫了我。' },
+                    { japanese: '友{とも}達{だち}が手伝{てつだ}ってくれた。', chinese: '朋友幫了我。' },
                     { japanese: '母{はは}がお弁当{べんとう}を作{つく}ってくれました。', chinese: '媽媽幫我做了便當。' },
                     { japanese: '彼{かれ}が駅{えき}まで送{おく}ってくれた。', chinese: '他送我到車站。' }
                 ]
@@ -3489,7 +3489,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_te_kureru_3',
-                sentence: '友達{ともだち}が空港{くうこう}まで迎{むか}えに来{き}て（　）。',
+                sentence: '友{とも}達{だち}が空港{くうこう}まで迎{むか}えに来{き}て（　）。',
                 options: ['くれた', 'あげた', 'もらった', 'やった'],
                 correctIndex: 0,
                 explanation: {
@@ -3510,7 +3510,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_te_kureru_5',
-                sentence: '道{みち}に迷{まよ}った時{とき}、親切{しんせつ}な人{ひと}が案内{あんない}して（　）。',
+                sentence: '道{みち}に迷{まよ}った時{とき}、親{しん}切{せつ}な人{ひと}が案内{あんない}して（　）。',
                 options: ['くれた', 'あげた', 'もらった', 'やった'],
                 correctIndex: 0,
                 explanation: {
@@ -3529,7 +3529,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_kuru': {
         id: 'n4_te_kuru',
         pattern: 'てくる',
-        connection: '動詞て形 + くる',
+        connection: '動{どう}詞{し}て形 + くる',
         translation: '...起來; 一直...; 做了再來',
         level: 'N4',
         explanation: [
@@ -3539,7 +3539,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示某狀態或動作從過去持續到現在。',
                 examples: [
                     { japanese: '今{いま}まで頑張{がんば}ってきました。', chinese: '到現在為止一直在努力。' },
-                    { japanese: '日本語{にほんご}を３年{ねん}勉強{べんきょう}してきた。', chinese: '學日語學了三年了。' }
+                    { japanese: '日本語{にほんご}を３年{ねん}勉{べん}強{きょう}してきた。', chinese: '學日語學了三年了。' }
                 ]
             },
             {
@@ -3556,7 +3556,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '變化開始',
                 description: '表示某變化開始發生。',
                 examples: [
-                    { japanese: '雨{あめ}が降{ふ}ってきた。', chinese: '開始下雨了。' },
+                    { japanese: '雨{あめ}が降{ふ}ってきた。', chinese: '開始下雨{あめ}了。' },
                     { japanese: 'お腹{なか}が空{す}いてきた。', chinese: '開始餓了。' }
                 ]
             }
@@ -3618,7 +3618,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_miru': {
         id: 'n4_te_miru',
         pattern: 'てみる',
-        connection: '動詞て形 + みる',
+        connection: '動{どう}詞{し}て形 + みる',
         translation: '試著做...',
         level: 'N4',
         explanation: [
@@ -3636,7 +3636,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_te_miru_1',
-                sentence: 'この料理{りょうり}を作{つく}って（　）。',
+                sentence: 'この料{りょう}理{り}を作{つく}って（　）。',
                 options: ['みた', 'いた', 'きた', 'しまった'],
                 correctIndex: 0,
                 explanation: '試著做了這道菜。'
@@ -3671,7 +3671,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_te_miru_5',
-                sentence: '分{わ}からなかったら、先生{せんせい}に聞{き}いて（　）たらどうですか。',
+                sentence: '分{わ}からなかったら、先{せん}生{せい}に聞{き}いて（　）たらどうですか。',
                 options: ['み', 'い', 'き', 'おき'],
                 correctIndex: 0,
                 explanation: {
@@ -3679,7 +3679,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     wrong: [
                         '「い」接續不對。',
                         '「き」是「くる」。',
-                        '「おき」是事先準備。'
+                        '「おき」是事先準{じゅん}備{び}。'
                     ]
                 }
             }
@@ -3690,7 +3690,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_morau': {
         id: 'n4_te_morau',
         pattern: 'てもらう',
-        connection: '動詞て形 + もらう',
+        connection: '動{どう}詞{し}て形 + もらう',
         translation: '請（別人）做...; 獲得（別人的幫助）',
         level: 'N4',
         explanation: [
@@ -3699,8 +3699,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '請求或接受他人的幫助',
                 description: '表示說話者請求或接受他人為自己做某事。',
                 examples: [
-                    { japanese: '友達{ともだち}に手伝{てつだ}ってもらった。', chinese: '我請朋友幫忙了。' },
-                    { japanese: '先生{せんせい}に説明{せつめい}してもらいました。', chinese: '我請老師說明了。' },
+                    { japanese: '友{とも}達{だち}に手伝{てつだ}ってもらった。', chinese: '我請朋友幫忙了。' },
+                    { japanese: '先{せん}生{せい}に説{せつ}明{めい}してもらいました。', chinese: '我請老師說明了。' },
                     { japanese: '彼{かれ}に車{くるま}で送{おく}ってもらった。', chinese: '我請他開車送我。' }
                 ]
             }
@@ -3708,7 +3708,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_te_morau_1',
-                sentence: '友達{ともだち}に宿題{しゅくだい}を見{み}て（　）。',
+                sentence: '友{とも}達{だち}に宿題{しゅくだい}を見{み}て（　）。',
                 options: ['もらった', 'あげた', 'くれた', 'やった'],
                 correctIndex: 0,
                 explanation: '請朋友看作業。'
@@ -3743,7 +3743,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_te_morau_5',
-                sentence: '病院{びょういん}で診{み}て（　）ほうがいいですよ。',
+                sentence: '病{びょう}院{いん}で診{み}て（　）ほうがいいですよ。',
                 options: ['もらった', 'あげた', 'くれた', 'やった'],
                 correctIndex: 0,
                 explanation: {
@@ -3762,17 +3762,17 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_oku': {
         id: 'n4_te_oku',
         pattern: 'ておく',
-        connection: '動詞て形 + おく',
+        connection: '動{どう}詞{し}て形 + おく',
         translation: '事先做好...; 保持某狀態',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '事先準備',
+                title: '事先準{じゅん}備{び}',
                 description: '表示為了將來而事先做好某事。',
                 examples: [
-                    { japanese: '旅行{りょこう}の前{まえ}にホテルを予約{よやく}しておいた。', chinese: '旅行前事先預訂了飯店。' },
-                    { japanese: '明日{あした}のために準備{じゅんび}しておきます。', chinese: '為了明天事先準備好。' }
+                    { japanese: '旅{りょ}行{こう}の前{まえ}にホテルを予約{よやく}しておいた。', chinese: '旅行前事先預訂了飯店。' },
+                    { japanese: '明日{あした}のために準{じゅん}備{び}しておきます。', chinese: '為了明天事先準{じゅん}備{び}好。' }
                 ]
             },
             {
@@ -3842,7 +3842,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_te_shimau': {
         id: 'n4_te_shimau',
         pattern: 'てしまう',
-        connection: '動詞て形 + しまう',
+        connection: '動{どう}詞{し}て形 + しまう',
         translation: '...完了; 不小心...',
         level: 'N4',
         explanation: [
@@ -3860,14 +3860,14 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '遺憾或後悔',
                 description: '表示不小心做了某事，帶有遺憾或後悔的語氣。',
                 examples: [
-                    { japanese: '電車{でんしゃ}の中{なか}で寝{ね}てしまった。', chinese: '不小心在電車上睡著了。' },
+                    { japanese: '電{でん}車{しゃ}の中{なか}で寝{ね}てしまった。', chinese: '不小心在電車上睡著了。' },
                     { japanese: '大事{だいじ}な書類{しょるい}をなくしてしまった。', chinese: '不小心弄丟了重要文件。' }
                 ]
             }
         ],
         analysis: {
-            title: '口語中的縮約形',
-            description: '「てしまう」在口語中常縮約。',
+            title: '口{こう}語{ご}中的縮約形',
+            description: '「てしまう」在口{こう}語{ご}中常縮約。',
             points: [
                 {
                     rule: '「てしまう」→「ちゃう」',
@@ -3889,21 +3889,21 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_te_shimau_2',
-                sentence: 'ケーキを全部{ぜんぶ}食{た}べて（　）。',
+                sentence: 'ケーキを全{ぜん}部{ぶ}食{た}べて（　）。',
                 options: ['しまった', 'みた', 'おいた', 'いた'],
                 correctIndex: 0,
                 explanation: '把蛋糕全吃完了。'
             },
             {
                 id: 'n4_te_shimau_3',
-                sentence: '約束{やくそく}の時間{じかん}に遅{おく}れて（　）。',
+                sentence: '約{やく}束{そく}の時{じ}間{かん}に遅{おく}れて（　）。',
                 options: ['しまった', 'みた', 'おいた', 'きた'],
                 correctIndex: 0,
                 explanation: {
                     correct: '不小心遲到了（後悔）。',
                     wrong: [
                         '「みた」是嘗試。',
-                        '「おいた」是事先準備。',
+                        '「おいた」是事先準{じゅん}備{び}。',
                         '「きた」是從過去到現在。'
                     ]
                 }
@@ -3924,7 +3924,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '不小心刪掉了重要照片。',
                     wrong: [
                         '「みた」是嘗試。',
-                        '「おいた」是事先準備。',
+                        '「おいた」是事先準{じゅん}備{び}。',
                         '「きた」是從過去到現在。'
                     ]
                 }
@@ -3936,7 +3936,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_temo': {
         id: 'n4_temo',
         pattern: 'ても',
-        connection: '動詞て形 / い形-くても / な形-でも / 名詞-でも',
+        connection: '動{どう}詞{し}て形 / い形-くても / な形-でも / 名{めい}詞{し}-でも',
         translation: '即使...; 就算...',
         level: 'N4',
         explanation: [
@@ -3945,7 +3945,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '讓步條件',
                 description: '表示即使前項成立，後項仍然成立或不受影響。',
                 examples: [
-                    { japanese: '雨{あめ}が降{ふ}っても、行{い}きます。', chinese: '即使下雨也要去。' },
+                    { japanese: '雨{あめ}が降{ふ}っても、行{い}きます。', chinese: '即使下雨{あめ}也要去。' },
                     { japanese: '高{たか}くても、買{か}いたい。', chinese: '就算貴也想買。' },
                     { japanese: '静{しず}かでも、眠{ねむ}れない。', chinese: '就算安靜也睡不著。' }
                 ]
@@ -3968,7 +3968,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_temo_3',
-                sentence: '何度{なんど}説明{せつめい}し（　）、わかってくれない。',
+                sentence: '何度{なんど}説{せつ}明{めい}し（　）、わかってくれない。',
                 options: ['ても', 'たら', 'ば', 'と'],
                 correctIndex: 0,
                 explanation: {
@@ -3985,11 +3985,11 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「明日{あした}、雨{あめ}だったらどうする？」\n「雨{あめ}が降{ふ}っ（　）、行{い}くよ。」',
                 options: ['ても', 'たら', 'ば', 'と'],
                 correctIndex: 0,
-                explanation: '對話情境。即使下雨也去。'
+                explanation: '對話情境。即使下雨{あめ}也去。'
             },
             {
                 id: 'n4_temo_5',
-                sentence: '病気{びょうき}（　）、仕事{しごと}を休{やす}めない。',
+                sentence: '病{びょう}気{き}（　）、仕事{しごと}を休{やす}めない。',
                 options: ['でも', 'だったら', 'なら', 'であれば'],
                 correctIndex: 0,
                 explanation: {
@@ -4008,13 +4008,13 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_to': {
         id: 'n4_to',
         pattern: 'と（条件）',
-        connection: '動詞辭書形 / ない形 + と',
+        connection: '動{どう}詞{し}辭書形 / ない形 + と',
         translation: '一...就...; 如果...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '自然或習慣性的結果',
+                title: '自然或習{しゅう}慣{かん}性的結果',
                 description: '表示一旦發生前項，後項就自然或必然發生。',
                 examples: [
                     { japanese: '春{はる}になると、桜{さくら}が咲{さ}く。', chinese: '一到春天，櫻花就開。' },
@@ -4028,7 +4028,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             description: '「と」後項不能用意志、命令、請求等表達。',
             points: [
                 {
-                    rule: '○ 自然現象、習慣',
+                    rule: '○ 自然現象、習{しゅう}慣{かん}',
                     examples: [{ japanese: '冬{ふゆ}になると寒{さむ}くなる。', chinese: '一到冬天就變冷。' }]
                 },
                 {
@@ -4058,7 +4058,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['と', 'たら', 'ば', 'なら'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '喝酒臉就會變紅（習慣性）。',
+                    correct: '喝酒臉就會變紅（習{しゅう}慣{かん}性）。',
                     wrong: [
                         '「たら」也可但語感不同。',
                         '「ば」強調條件。',
@@ -4068,7 +4068,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_to_4',
-                sentence: '「この薬{くすり}、どうやって飲{の}むの？」\n「食後{しょくご}に飲{の}む（　）、よく効{き}きますよ。」',
+                sentence: '「この薬{くすり}、どうやって飲{の}むの？」\n「食{た}後{しょくご}に飲{の}む（　）、よく効{き}きますよ。」',
                 options: ['と', 'たら', 'ば', 'なら'],
                 correctIndex: 0,
                 explanation: '對話情境。飯後吃效果好。'
@@ -4094,7 +4094,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_to_iu': {
         id: 'n4_to_iu',
         pattern: 'という',
-        connection: '名詞 / 文 + という + 名詞',
+        connection: '名{めい}詞{し} / 文 + という + 名{めい}詞{し}',
         translation: '叫做...; 所謂的...',
         level: 'N4',
         explanation: [
@@ -4104,7 +4104,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '用於說明某事物的名稱或定義。',
                 examples: [
                     { japanese: '「桜{さくら}」という花{はな}を知{し}っていますか。', chinese: '你知道叫「櫻花」的花嗎？' },
-                    { japanese: '田中{たなか}という人{ひと}から電話{でんわ}がありました。', chinese: '有一個叫田中的人打電話來。' }
+                    { japanese: '田中{たなか}という人{ひと}から電{でん}話{わ}がありました。', chinese: '有一個叫田中的人打電話來。' }
                 ]
             },
             {
@@ -4113,7 +4113,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '引用別人說的話或某種說法。',
                 examples: [
                     { japanese: '明日{あした}は休{やす}みだという話{はなし}を聞{き}いた。', chinese: '聽說明天放假。' },
-                    { japanese: '彼{かれ}は来{こ}ないという連絡{れんらく}があった。', chinese: '收到他說不來的聯絡。' }
+                    { japanese: '彼{かれ}は来{こ}ないという連{れん}絡{らく}があった。', chinese: '收到他說不來的聯絡。' }
                 ]
             }
         ],
@@ -4123,11 +4123,11 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「寿司{すし}」（　）食{た}べ物{もの}を知{し}っていますか。',
                 options: ['という', 'といった', 'との', 'とする'],
                 correctIndex: 0,
-                explanation: '你知道叫「壽司」的食物嗎？'
+                explanation: '你知道叫「壽司」的食{た}物嗎？'
             },
             {
                 id: 'n4_to_iu_2',
-                sentence: '山本{やまもと}（　）学生{がくせい}がいます。',
+                sentence: '山本{やまもと}（　）学{がく}生{せい}がいます。',
                 options: ['という', 'といった', 'との', 'とする'],
                 correctIndex: 0,
                 explanation: '有一個叫山本的學生。'
@@ -4148,14 +4148,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_to_iu_4',
-                sentence: '「誰{だれ}から電話{でんわ}があったの？」\n「鈴木{すずき}（　）人{ひと}から。」',
+                sentence: '「誰{だれ}から電{でん}話{わ}があったの？」\n「鈴木{すずき}（　）人{ひと}から。」',
                 options: ['という', 'といった', 'との', 'とする'],
                 correctIndex: 0,
                 explanation: '對話情境。一個叫鈴木的人。'
             },
             {
                 id: 'n4_to_iu_5',
-                sentence: '「お茶漬{ちゃづ}け」（　）料理{りょうり}を食{た}べたことがありますか。',
+                sentence: '「お茶漬{ちゃづ}け」（　）料{りょう}理{り}を食{た}べたことがありますか。',
                 options: ['という', 'といった', 'との', 'とする'],
                 correctIndex: 0,
                 explanation: {
@@ -4174,13 +4174,13 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tokoro': {
         id: 'n4_tokoro',
         pattern: 'ところ',
-        connection: '動詞辭書形 / ている形 / た形 + ところ',
+        connection: '動{どう}詞{し}辭書形 / ている形 / た形 + ところ',
         translation: '正要...; 正在...; 剛...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '動詞辭書形＋ところ：正要...',
+                title: '動{どう}詞{し}辭書形＋ところ：正要...',
                 description: '表示動作即將開始。',
                 examples: [
                     { japanese: '今{いま}から出{で}かけるところです。', chinese: '正要出門。' },
@@ -4189,7 +4189,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 usageId: 2,
-                title: '動詞ている形＋ところ：正在...',
+                title: '動{どう}詞{し}ている形＋ところ：正在...',
                 description: '表示動作正在進行中。',
                 examples: [
                     { japanese: '今{いま}、資料{しりょう}を読{よ}んでいるところです。', chinese: '正在看資料。' }
@@ -4197,11 +4197,11 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 usageId: 3,
-                title: '動詞た形＋ところ：剛...',
+                title: '動{どう}詞{し}た形＋ところ：剛...',
                 description: '表示動作剛剛完成。',
                 examples: [
                     { japanese: '今{いま}、家{いえ}に着{つ}いたところです。', chinese: '剛到家。' },
-                    { japanese: '電話{でんわ}が終{お}わったところだ。', chinese: '剛打完電話。' }
+                    { japanese: '電{でん}話{わ}が終{お}わったところだ。', chinese: '剛打完電話。' }
                 ]
             }
         ],
@@ -4222,7 +4222,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_tokoro_3',
-                sentence: '今{いま}、電話{でんわ}で話{はな}している（　）です。',
+                sentence: '今{いま}、電{でん}話{わ}で話{はな}している（　）です。',
                 options: ['ところ', 'ばかり', 'まま', 'とおり'],
                 correctIndex: 0,
                 explanation: {
@@ -4262,7 +4262,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tsuzukeru': {
         id: 'n4_tsuzukeru',
         pattern: '続ける（つづける）',
-        connection: '動詞ます形 + 続ける',
+        connection: '動{どう}詞{し}ます形 + 続ける',
         translation: '繼續...',
         level: 'N4',
         explanation: [
@@ -4271,9 +4271,9 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '持續進行某動作',
                 description: '表示某動作持續進行，不中斷。',
                 examples: [
-                    { japanese: '３時間{じかん}も歩{ある}き続{つづ}けた。', chinese: '連續走了三個小時。' },
-                    { japanese: '日本語{にほんご}を勉強{べんきょう}し続{つづ}けている。', chinese: '持續在學日語。' },
-                    { japanese: '彼女{かのじょ}は泣{な}き続{つづ}けた。', chinese: '她一直哭。' }
+                    { japanese: '３時{じ}間{かん}も歩{ある}き続{つづ}けた。', chinese: '連續走了三個小時。' },
+                    { japanese: '日本語{にほんご}を勉{べん}強{きょう}し続{つづ}けている。', chinese: '持續在學日語。' },
+                    { japanese: '彼{かれ}女{かのじょ}は泣{な}き続{つづ}けた。', chinese: '她一直哭。' }
                 ]
             }
         ],
@@ -4283,11 +4283,11 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '雨{あめ}が降{ふ}り（　）いる。',
                 options: ['続けて', '始めて', '終わって', '出して'],
                 correctIndex: 0,
-                explanation: '雨一直下著。'
+                explanation: '雨{あめ}一直下著。'
             },
             {
                 id: 'n4_tsuzukeru_2',
-                sentence: '１時間{じかん}も待{ま}ち（　）た。',
+                sentence: '１時{じ}間{かん}も待{ま}ち（　）た。',
                 options: ['続け', '始め', '終わっ', '出し'],
                 correctIndex: 0,
                 explanation: '等了整整一小時。'
@@ -4308,7 +4308,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_tsuzukeru_4',
-                sentence: '「まだ走{はし}っているの？」\n「うん、１時間{じかん}走{はし}り（　）いるよ。」',
+                sentence: '「まだ走{はし}っているの？」\n「うん、１時{じ}間{かん}走{はし}り（　）いるよ。」',
                 options: ['続けて', '始めて', '終わって', '出して'],
                 correctIndex: 0,
                 explanation: '對話情境。跑了一小時了。'
@@ -4319,7 +4319,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['続け', '始め', '終わり', '出し'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '想繼續追夢。',
+                    correct: '想繼續追夢{ゆめ}。',
                     wrong: [
                         '「始め」是開始追。',
                         '「終わり」是結束追。',
@@ -4334,7 +4334,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_yasui': {
         id: 'n4_yasui',
         pattern: 'やすい',
-        connection: '動詞ます形 + やすい',
+        connection: '動{どう}詞{し}ます形 + やすい',
         translation: '容易...',
         level: 'N4',
         explanation: [
@@ -4366,7 +4366,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_yasui_3',
-                sentence: '彼女{かのじょ}の説明{せつめい}は分{わ}かり（　）。',
+                sentence: '彼{かれ}女{かのじょ}の説{せつ}明{めい}は分{わ}かり（　）。',
                 options: ['やすい', 'にくい', 'たい', 'そう'],
                 correctIndex: 0,
                 explanation: {
@@ -4406,7 +4406,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_da': {
         id: 'n4_you_da',
         pattern: 'ようだ',
-        connection: '動詞普通形 / い形 / な形-な / 名詞-の + ようだ',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + ようだ',
         translation: '好像...; 似乎...',
         level: 'N4',
         explanation: [
@@ -4416,7 +4416,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '根據觀察或感覺做出推測。',
                 examples: [
                     { japanese: '彼{かれ}は疲{つか}れているようだ。', chinese: '他好像很累。' },
-                    { japanese: '雨{あめ}が降{ふ}りそうようだ。', chinese: '好像要下雨了。' },
+                    { japanese: '雨{あめ}が降{ふ}りそうようだ。', chinese: '好像要下雨{あめ}了。' },
                     { japanese: '風邪{かぜ}のようです。', chinese: '好像是感冒。' }
                 ]
             },
@@ -4425,8 +4425,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '比喻',
                 description: '表示像某事物一樣。',
                 examples: [
-                    { japanese: 'まるで夢{ゆめ}のようだ。', chinese: '簡直像做夢一樣。' },
-                    { japanese: '彼女{かのじょ}は天使{てんし}のようだ。', chinese: '她像天使一樣。' }
+                    { japanese: 'まるで夢{ゆめ}のようだ。', chinese: '簡直像做夢{ゆめ}一樣。' },
+                    { japanese: '彼{かれ}女{かのじょ}は天使{てんし}のようだ。', chinese: '她像天使一樣。' }
                 ]
             }
         ],
@@ -4455,20 +4455,20 @@ export const n4Details: Record<string, GrammarPoint> = {
                     wrong: [
                         '「そうな」接續不同。',
                         '「らしい」是典型。',
-                        '「みたいな」也可以，較口語。'
+                        '「みたいな」也可以，較口{こう}語{ご}。'
                     ]
                 }
             },
             {
                 id: 'n4_you_da_4',
-                sentence: '「彼{かれ}、元気{げんき}？」\n「最近{さいきん}忙{いそが}しい（　）よ。」',
+                sentence: '「彼{かれ}、元{げん}気{き}？」\n「最{さい}近{きん}忙{いそが}しい（　）よ。」',
                 options: ['ようだ', 'そうだ', 'らしい', 'みたいだ'],
                 correctIndex: 0,
-                explanation: '對話情境。好像最近很忙。'
+                explanation: '對話情境。好像最{さい}近{きん}很忙。'
             },
             {
                 id: 'n4_you_da_5',
-                sentence: '彼{かれ}の話{はなし}は本当{ほんとう}の（　）。',
+                sentence: '彼{かれ}の話{はなし}は本{ほん}当{とう}の（　）。',
                 options: ['ようだ', 'そうだ', 'らしい', 'みたいだ'],
                 correctIndex: 0,
                 explanation: {
@@ -4476,7 +4476,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     wrong: [
                         '「そうだ」是傳聞或樣態。',
                         '「らしい」是傳聞或典型。',
-                        '「みたいだ」也可，較口語。'
+                        '「みたいだ」也可，較口{こう}語{ご}。'
                     ]
                 }
             }
@@ -4487,7 +4487,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_ni_naru': {
         id: 'n4_you_ni_naru',
         pattern: 'ようになる',
-        connection: '動詞辭書形 / ない形 + ようになる',
+        connection: '動{どう}詞{し}辭書形 / ない形 + ようになる',
         translation: '變得能夠...; 變得會...',
         level: 'N4',
         explanation: [
@@ -4512,14 +4512,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_you_ni_naru_2',
-                sentence: '自転車{じてんしゃ}に乗{の}れる（　）。',
+                sentence: '自{じ}転{てん}車{しゃ}に乗{の}れる（　）。',
                 options: ['ようになった', 'ことになった', 'ことにした', 'ようにした'],
                 correctIndex: 0,
                 explanation: '變得會騎腳踏車了。'
             },
             {
                 id: 'n4_you_ni_naru_3',
-                sentence: '毎日{まいにち}運動{うんどう}する（　）。',
+                sentence: '毎{まい}日{にち}運動{うんどう}する（　）。',
                 options: ['ようになった', 'ことになった', 'ことにした', 'ようにした'],
                 correctIndex: 0,
                 explanation: {
@@ -4540,11 +4540,11 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_you_ni_naru_5',
-                sentence: '最近{さいきん}、朝{あさ}ご飯{はん}を食{た}べる（　）。',
+                sentence: '最{さい}近{きん}、朝{あさ}ご飯{はん}を食{た}べる（　）。',
                 options: ['ようになった', 'ことになった', 'ことにした', 'ようにした'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '最近變得會吃早餐了。',
+                    correct: '最{さい}近{きん}變得會吃早餐了。',
                     wrong: [
                         '「ことになった」是被決定。',
                         '「ことにした」是自己決定。',
@@ -4559,16 +4559,16 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_ni_suru': {
         id: 'n4_you_ni_suru',
         pattern: 'ようにする',
-        connection: '動詞辭書形 / ない形 + ようにする',
+        connection: '動{どう}詞{し}辭書形 / ない形 + ようにする',
         translation: '努力做到...; 盡量...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '努力養成習慣或達成目標',
+                title: '努力養成習{しゅう}慣{かん}或達成目標',
                 description: '表示有意識地努力做到某事。',
                 examples: [
-                    { japanese: '毎日{まいにち}運動{うんどう}するようにしている。', chinese: '我盡量每天運動。' },
+                    { japanese: '毎{まい}日{にち}運動{うんどう}するようにしている。', chinese: '我盡量每天運動。' },
                     { japanese: '遅刻{ちこく}しないようにします。', chinese: '我會盡量不遲到。' },
                     { japanese: '野菜{やさい}をたくさん食{た}べるようにしてください。', chinese: '請盡量多吃蔬菜。' }
                 ]
@@ -4587,7 +4587,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '甘{あま}いものを食{た}べない（　）。',
                 options: ['ようにする', 'ことにする', 'ようになる', 'ことになる'],
                 correctIndex: 0,
-                explanation: '盡量不吃甜食。'
+                explanation: '盡量不吃甜食{た}。'
             },
             {
                 id: 'n4_you_ni_suru_3',
@@ -4605,7 +4605,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_you_ni_suru_4',
-                sentence: '「健康{けんこう}のために何{なに}をしていますか。」\n「毎日{まいにち}歩{ある}く（　）います。」',
+                sentence: '「健康{けんこう}のために何{なに}をしていますか。」\n「毎{まい}日{にち}歩{ある}く（　）います。」',
                 options: ['ようにして', 'ことにして', 'ようになって', 'ことになって'],
                 correctIndex: 0,
                 explanation: '對話情境。我盡量每天走路。'
@@ -4631,7 +4631,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_ni_iu': {
         id: 'n4_you_ni_iu',
         pattern: 'ように言う',
-        connection: '動詞辭書形 / ない形 + ように言う',
+        connection: '動{どう}詞{し}辭書形 / ない形 + ように言う',
         translation: '告訴...要...; 叫...做...',
         level: 'N4',
         explanation: [
@@ -4641,7 +4641,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '用於轉述告訴別人要做或不要做某事。',
                 examples: [
                     { japanese: '医者{いしゃ}に薬{くすり}を飲{の}むように言{い}われた。', chinese: '被醫生告知要吃藥。' },
-                    { japanese: '先生{せんせい}は学生{がくせい}に静{しず}かにするように言{い}った。', chinese: '老師告訴學生要安靜。' },
+                    { japanese: '先{せん}生{せい}は学{がく}生{せい}に静{しず}かにするように言{い}った。', chinese: '老師告訴學生要安靜。' },
                     { japanese: '母{はは}に早{はや}く寝{ね}るように言{い}われた。', chinese: '媽媽叫我早點睡。' }
                 ]
             }
@@ -4649,7 +4649,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_you_ni_iu_1',
-                sentence: '先生{せんせい}に宿題{しゅくだい}を出{だ}す（　）言{い}われた。',
+                sentence: '先{せん}生{せい}に宿題{しゅくだい}を出{だ}す（　）言{い}われた。',
                 options: ['ように', 'ことに', 'ために', 'のに'],
                 correctIndex: 0,
                 explanation: '被老師說要交作業。'
@@ -4670,7 +4670,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '被部長說要寫報告。',
                     wrong: [
                         '「ことに」不接「言う」。',
-                        '「ために」是目的。',
+                        '「ために」是目{もく}的{てき}。',
                         '「のに」是轉折。'
                     ]
                 }
@@ -4684,14 +4684,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_you_ni_iu_5',
-                sentence: '子供{こども}に野菜{やさい}を食{た}べる（　）言{い}った。',
+                sentence: '子{こ}供{とも}に野菜{やさい}を食{た}べる（　）言{い}った。',
                 options: ['ように', 'ことに', 'ために', 'のに'],
                 correctIndex: 0,
                 explanation: {
                     correct: '告訴孩子要吃蔬菜。',
                     wrong: [
                         '「ことに」不接「言う」。',
-                        '「ために」是目的。',
+                        '「ために」是目{もく}的{てき}。',
                         '「のに」是轉折。'
                     ]
                 }
@@ -4703,7 +4703,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_to_omou': {
         id: 'n4_you_to_omou',
         pattern: 'ようと思う',
-        connection: '動詞意向形 + と思う',
+        connection: '動{どう}詞{し}意向形 + と思う',
         translation: '想要...; 打算...',
         level: 'N4',
         explanation: [
@@ -4712,8 +4712,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '表達意圖或計劃',
                 description: '表示說話者的意圖或計劃。',
                 examples: [
-                    { japanese: '来年{らいねん}、日本{にほん}に行{い}こうと思{おも}っています。', chinese: '我打算明年去日本。' },
-                    { japanese: 'もっと勉強{べんきょう}しようと思{おも}う。', chinese: '我想要更用功。' },
+                    { japanese: '来{らい}年{ねん}、日本{にほん}に行{い}こうと思{おも}っています。', chinese: '我打算明年去日本。' },
+                    { japanese: 'もっと勉{べん}強{きょう}しようと思{おも}う。', chinese: '我想要更用功。' },
                     { japanese: '転職{てんしょく}しようと思{おも}っている。', chinese: '我在考慮換工作。' }
                 ]
             }
@@ -4738,11 +4738,11 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '週末{しゅうまつ}、映画{えいが}を見{み}（　）思{おも}っています。',
                 options: ['ようと', 'ように', 'ために', 'のに'],
                 correctIndex: 0,
-                explanation: '打算週末看電影。'
+                explanation: '打算週{しゅう}末{まつ}看電影。'
             },
             {
                 id: 'n4_you_to_omou_2',
-                sentence: '来月{らいげつ}から日本語{にほんご}を勉強{べんきょう}し（　）思{おも}う。',
+                sentence: '来月{らいげつ}から日本語{にほんご}を勉{べん}強{きょう}し（　）思{おも}う。',
                 options: ['ようと', 'ように', 'ために', 'のに'],
                 correctIndex: 0,
                 explanation: '打算下個月開始學日語。'
@@ -4755,15 +4755,15 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '一直在考慮減肥，但是...。',
                     wrong: [
-                        '「ように」是目的或樣態。',
-                        '「ために」是目的。',
+                        '「ように」是目{もく}的{てき}或樣態。',
+                        '「ために」是目{もく}的{てき}。',
                         '「のに」是轉折。'
                     ]
                 }
             },
             {
                 id: 'n4_you_to_omou_4',
-                sentence: '「夏休{なつやす}みはどうするの？」\n「旅行{りょこう}に行{い}（　）思{おも}っているよ。」',
+                sentence: '「夏休{なつやす}みはどうするの？」\n「旅{りょ}行{こう}に行{い}（　）思{おも}っているよ。」',
                 options: ['こうと', 'くように', 'くために', 'くのに'],
                 correctIndex: 0,
                 explanation: '對話情境。打算去旅行。'
@@ -4789,7 +4789,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_yori': {
         id: 'n4_yori',
         pattern: 'より',
-        connection: '名詞 + より',
+        connection: '名{めい}詞{し} + より',
         translation: '比...',
         level: 'N4',
         explanation: [
@@ -4814,18 +4814,18 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_yori_2',
-                sentence: 'バス（　）電車{でんしゃ}のほうが速{はや}い。',
+                sentence: 'バス（　）電{でん}車{しゃ}のほうが速{はや}い。',
                 options: ['より', 'ほど', 'くらい', 'ばかり'],
                 correctIndex: 0,
                 explanation: '電車比公車快。'
             },
             {
                 id: 'n4_yori_3',
-                sentence: '去年{きょねん}（　）今年{ことし}のほうが忙{いそが}しい。',
+                sentence: '去{きょ}年{ねん}（　）今{こ}年{とし}のほうが忙{いそが}しい。',
                 options: ['より', 'ほど', 'くらい', 'ばかり'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '今年比去年忙。',
+                    correct: '今{こ}年{とし}比去{きょ}年{ねん}忙。',
                     wrong: [
                         '「ほど」用於否定比較。',
                         '「くらい」是程度。',
@@ -4861,7 +4861,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_rareru_kanou': {
         id: 'n4_rareru_kanou',
         pattern: 'られる（可能）',
-        connection: '一段動詞：語幹 + られる\n五段動詞：語幹 + える',
+        connection: '一段動{どう}詞{し}：語幹 + られる\n五段動{どう}詞{し}：語幹 + える',
         translation: '能夠...; 可以...',
         level: 'N4',
         explanation: [
@@ -4878,14 +4878,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         ],
         analysis: {
             title: '可能形的變化規則',
-            description: '五段動詞和一段動詞的可能形變化不同。',
+            description: '五段動{どう}詞{し}和一段動{どう}詞{し}的可能形變化不同。',
             points: [
                 {
-                    rule: '五段動詞：將「う段」改為「え段」+ る',
+                    rule: '五段動{どう}詞{し}：將「う段」改為「え段」+ る',
                     examples: [{ japanese: '書{か}く → 書{か}ける、読{よ}む → 読{よ}める', chinese: '寫 → 能寫、讀 → 能讀' }]
                 },
                 {
-                    rule: '一段動詞：去る + られる',
+                    rule: '一段動{どう}詞{し}：去る + られる',
                     examples: [{ japanese: '食{た}べる → 食{た}べられる、見{み}る → 見{み}られる', chinese: '吃 → 能吃、看 → 能看' }]
                 },
                 {
@@ -4917,7 +4917,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '能早上六點起床。',
                     wrong: [
-                        '「れる」是五段動詞的可能形。',
+                        '「れる」是五段動{どう}詞{し}的可能形。',
                         '「きれる」是「切る」的可能形。',
                         '「ける」接續不對。'
                     ]
@@ -4951,7 +4951,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_rareru_ukemi': {
         id: 'n4_rareru_ukemi',
         pattern: 'られる（受身）',
-        connection: '一段動詞：語幹 + られる\n五段動詞：語幹（あ段）+ れる',
+        connection: '一段動{どう}詞{し}：語幹 + られる\n五段動{どう}詞{し}：語幹（あ段）+ れる',
         translation: '被...',
         level: 'N4',
         explanation: [
@@ -4960,7 +4960,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '直接被動',
                 description: '表示主語直接受到動作的影響。',
                 examples: [
-                    { japanese: '先生{せんせい}に褒{ほ}められた。', chinese: '被老師稱讚了。' },
+                    { japanese: '先{せん}生{せい}に褒{ほ}められた。', chinese: '被老師稱讚了。' },
                     { japanese: '彼{かれ}に招待{しょうたい}された。', chinese: '被他邀請了。' }
                 ]
             },
@@ -4969,21 +4969,21 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '間接被動（迷惑的被動）',
                 description: '表示因他人的動作而受到困擾或影響。',
                 examples: [
-                    { japanese: '電車{でんしゃ}で足{あし}を踏{ふ}まれた。', chinese: '在電車上被踩了腳。' },
-                    { japanese: '雨{あめ}に降{ふ}られた。', chinese: '被雨淋了。' }
+                    { japanese: '電{でん}車{しゃ}で足{あし}を踏{ふ}まれた。', chinese: '在電車上被踩了腳。' },
+                    { japanese: '雨{あめ}に降{ふ}られた。', chinese: '被雨{あめ}淋了。' }
                 ]
             }
         ],
         analysis: {
             title: '被動形的變化規則',
-            description: '五段動詞和一段動詞的被動形變化不同。',
+            description: '五段動{どう}詞{し}和一段動{どう}詞{し}的被動形變化不同。',
             points: [
                 {
-                    rule: '五段動詞：將「う段」改為「あ段」+ れる',
+                    rule: '五段動{どう}詞{し}：將「う段」改為「あ段」+ れる',
                     examples: [{ japanese: '書{か}く → 書{か}かれる、読{よ}む → 読{よ}まれる', chinese: '寫 → 被寫、讀 → 被讀' }]
                 },
                 {
-                    rule: '一段動詞：去る + られる',
+                    rule: '一段動{どう}詞{し}：去る + られる',
                     examples: [{ japanese: '食{た}べる → 食{た}べられる、見{み}る → 見{み}られる', chinese: '吃 → 被吃、看 → 被看' }]
                 },
                 {
@@ -5002,7 +5002,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_rareru_ukemi_2',
-                sentence: '電車{でんしゃ}で財布{さいふ}を盗{ぬす}（　）。',
+                sentence: '電{でん}車{しゃ}で財布{さいふ}を盗{ぬす}（　）。',
                 options: ['まれた', 'られた', 'された', 'かれた'],
                 correctIndex: 0,
                 explanation: '在電車上被偷了錢包。'
@@ -5015,7 +5015,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '被旁邊的人抽菸了（迷惑被動）。',
                     wrong: [
-                        '「られた」是一段動詞。',
+                        '「られた」是一段動{どう}詞{し}。',
                         '「された」是「する」的被動。',
                         '「かれた」接續不對。'
                     ]
@@ -5026,17 +5026,17 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「どうしたの？」\n「雨{あめ}に降{ふ}（　）の。」',
                 options: ['られた', 'れた', 'された', 'かれた'],
                 correctIndex: 0,
-                explanation: '對話情境。被雨淋了。'
+                explanation: '對話情境。被雨{あめ}淋了。'
             },
             {
                 id: 'n4_rareru_ukemi_5',
-                sentence: 'この本{ほん}は世界中{せかいじゅう}で読{よ}（　）いる。',
+                sentence: 'この本{ほん}は世{せ}界{かい}中{せかいじゅう}で読{よ}（　）いる。',
                 options: ['まれて', 'られて', 'されて', 'かれて'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '這本書在全世界被閱讀。',
+                    correct: '這本書在全世{せ}界{かい}被閱讀。',
                     wrong: [
-                        '「られて」是一段動詞。',
+                        '「られて」是一段動{どう}詞{し}。',
                         '「されて」是「する」的被動。',
                         '「かれて」接續不對。'
                     ]
@@ -5049,7 +5049,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_chuu': {
         id: 'n4_chuu',
         pattern: '～中（ちゅう/じゅう）',
-        connection: '名詞 + 中',
+        connection: '名{めい}詞{し} + 中',
         translation: '在...中; 整個...',
         level: 'N4',
         explanation: [
@@ -5068,16 +5068,16 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '～じゅう：整個範圍',
                 description: '表示整個時間或空間範圍。',
                 examples: [
-                    { japanese: '一日中{いちにちじゅう}勉強{べんきょう}した。', chinese: '整天都在讀書。' },
-                    { japanese: '世界中{せかいじゅう}で有名{ゆうめい}だ。', chinese: '在全世界都很有名。' },
-                    { japanese: '家中{いえじゅう}を掃除{そうじ}した。', chinese: '打掃了整個家。' }
+                    { japanese: '一日中{いちにちじゅう}勉{べん}強{きょう}した。', chinese: '整天都在讀書。' },
+                    { japanese: '世{せ}界{かい}中{せかいじゅう}で有{ゆう}名{めい}だ。', chinese: '在全世{せ}界{かい}都很有名。' },
+                    { japanese: '家中{いえじゅう}を掃{そう}除{じ}した。', chinese: '打掃了整個家。' }
                 ]
             }
         ],
         quiz: [
             {
                 id: 'n4_chuu_1',
-                sentence: '今{いま}、食事{しょくじ}（　）です。',
+                sentence: '今{いま}、食{しょく}事{じ}（　）です。',
                 options: ['中', 'じゅう', 'ちゅう', 'なか'],
                 correctIndex: 0,
                 explanation: '正在用餐中。（讀作ちゅう）'
@@ -5087,11 +5087,11 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '一年（　）、この季節{きせつ}が一番{いちばん}好{す}きです。',
                 options: ['じゅう', 'ちゅう', '中', 'なか'],
                 correctIndex: 0,
-                explanation: '一整年中最喜歡這個季節。'
+                explanation: '一整年中最喜歡這個季{き}節{せつ}。'
             },
             {
                 id: 'n4_chuu_3',
-                sentence: '会議{かいぎ}（　）に電話{でんわ}が鳴{な}った。',
+                sentence: '会議{かいぎ}（　）に電{でん}話{わ}が鳴{な}った。',
                 options: ['ちゅう', 'じゅう', 'で', 'の'],
                 correctIndex: 0,
                 explanation: {
@@ -5105,7 +5105,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_chuu_4',
-                sentence: '「今{いま}、電話{でんわ}できる？」\n「ごめん、仕事{しごと}（　）なんだ。」',
+                sentence: '「今{いま}、電{でん}話{わ}できる？」\n「ごめん、仕事{しごと}（　）なんだ。」',
                 options: ['中', 'じゅう', 'で', 'に'],
                 correctIndex: 0,
                 explanation: '對話情境。工作中。'
@@ -5131,7 +5131,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_sugiru': {
         id: 'n4_sugiru',
         pattern: 'すぎる',
-        connection: '動詞ます形 / い形語幹 / な形語幹 + すぎる',
+        connection: '動{どう}詞{し}ます形 / い形語幹 / な形語幹 + すぎる',
         translation: '太...; 過於...',
         level: 'N4',
         explanation: [
@@ -5192,7 +5192,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     wrong: [
                         '「すぎて」是連接形。',
                         '「すぎた」是過去形。',
-                        '「すぎ」是名詞形。'
+                        '「すぎ」是名{めい}詞{し}形。'
                     ]
                 }
             }
@@ -5203,7 +5203,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_kata': {
         id: 'n4_kata',
         pattern: '～方（かた）',
-        connection: '動詞ます形 + 方',
+        connection: '動{どう}詞{し}ます形 + 方',
         translation: '...的方法; 如何...',
         level: 'N4',
         explanation: [
@@ -5228,7 +5228,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_kata_2',
-                sentence: '料理{りょうり}の作{つく}り（　）を習{なら}いたい。',
+                sentence: '料{りょう}理{り}の作{つく}り（　）を習{なら}いたい。',
                 options: ['方', 'かた', 'ほう', 'よう'],
                 correctIndex: 0,
                 explanation: '想學做菜的方法。'
@@ -5264,7 +5264,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     wrong: [
                         '「ほう」是方向。',
                         '「よう」是樣子。',
-                        '「かた」要接在動詞ます形後。'
+                        '「かた」要接在動{どう}詞{し}ます形後。'
                     ]
                 }
             }
@@ -5274,8 +5274,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     // ============== ～やすい ==============
     'n4_yasui_adj': {
         id: 'n4_yasui_adj',
-        pattern: 'やすい（形容詞化）',
-        connection: '動詞ます形 + やすい',
+        pattern: 'やすい（形{けい}容{よう}詞{し}化）',
+        connection: '動{どう}詞{し}ます形 + やすい',
         translation: '容易...',
         level: 'N4',
         explanation: [
@@ -5307,7 +5307,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_yasui_adj_3',
-                sentence: '彼女{かのじょ}は泣{な}き（　）人{ひと}だ。',
+                sentence: '彼{かれ}女{かのじょ}は泣{な}き（　）人{ひと}だ。',
                 options: ['やすい', 'にくい', 'たい', 'そう'],
                 correctIndex: 0,
                 explanation: {
@@ -5347,7 +5347,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ka_dou_ka_full': {
         id: 'n4_ka_dou_ka_full',
         pattern: 'かどうか（完整用法）',
-        connection: '動詞普通形 / い形 / な形-か / 名詞-か + どうか',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-か / 名{めい}詞{し}-か + どうか',
         translation: '是否...',
         level: 'N4',
         explanation: [
@@ -5387,7 +5387,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     wrong: [
                         '「か」單獨用。',
                         '「かも」是也許。',
-                        '「かしら」是女性用語。'
+                        '「かしら」是女{じょ}性{せい}用語。'
                     ]
                 }
             },
@@ -5408,7 +5408,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     wrong: [
                         '「か」單獨用。',
                         '「かも」是也許。',
-                        '「かしら」是女性用語。'
+                        '「かしら」是女{じょ}性{せい}用語。'
                     ]
                 }
             }
@@ -5419,7 +5419,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_toka': {
         id: 'n4_toka',
         pattern: 'とか',
-        connection: '名詞 + とか + 名詞 + とか',
+        connection: '名{めい}詞{し} + とか + 名{めい}詞{し} + とか',
         translation: '...之類的; ...或...',
         level: 'N4',
         explanation: [
@@ -5444,7 +5444,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_toka_2',
-                sentence: '運動{うんどう}する（　）、散歩{さんぽ}する（　）しています。',
+                sentence: '運動{うんどう}する（　）、散{さん}歩{ぽ}する（　）しています。',
                 options: ['とか...とか', 'や...や', 'と...と', 'も...も'],
                 correctIndex: 0,
                 explanation: '做運動啦、散步啦之類的。'
@@ -5472,13 +5472,13 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_toka_5',
-                sentence: '週末{しゅうまつ}は買{か}い物{もの}（　）、友達{ともだち}と会{あ}う（　）している。',
+                sentence: '週末{しゅうまつ}は買{か}い物{もの}（　）、友{とも}達{だち}と会{あ}う（　）している。',
                 options: ['とか...とか', 'や...や', 'と...と', 'も...も'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '週末會購物啦、見朋友啦之類的。',
+                    correct: '週{しゅう}末{まつ}會購物啦、見朋友啦之類的。',
                     wrong: [
-                        '「や」列舉名詞。',
+                        '「や」列舉名{めい}詞{し}。',
                         '「と」是並列。',
                         '「も」是也。'
                     ]
@@ -5491,16 +5491,16 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_okage_de': {
         id: 'n4_okage_de',
         pattern: 'おかげで',
-        connection: '動詞普通形 / い形 / な形-な / 名詞-の + おかげで',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + おかげで',
         translation: '托...的福; 多虧...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '表示感謝的原因',
+                title: '表示感謝的原{げん}因{いん}',
                 description: '表示因為某人或某事的幫助，而產生好的結果。通常帶有感謝的語氣。',
                 examples: [
-                    { japanese: '先生{せんせい}のおかげで、合格{ごうかく}できました。', chinese: '托老師的福，及格了。' },
+                    { japanese: '先{せん}生{せい}のおかげで、合格{ごうかく}できました。', chinese: '托老師的福，及格了。' },
                     { japanese: '薬{くすり}のおかげで、熱{ねつ}が下{さ}がった。', chinese: '多虧了藥，燒退了。' },
                     { japanese: '皆{みな}さんのおかげです。', chinese: '這都是托大家的福。' }
                 ]
@@ -5508,15 +5508,15 @@ export const n4Details: Record<string, GrammarPoint> = {
         ],
         analysis: {
             title: '「おかげで」與「せいで」的比較',
-            description: '兩者都表示原因，但結果的正負不同。',
+            description: '兩者都表示原{げん}因{いん}，但結果的正負{ま}け不同。',
             points: [
                 {
                     rule: '「おかげで」：正面結果，表示感謝。',
-                    examples: [{ japanese: '友達{ともだち}のおかげで助{たす}かった。', chinese: '多虧朋友幫忙。' }]
+                    examples: [{ japanese: '友{とも}達{だち}のおかげで助{たす}かった。', chinese: '多虧朋友幫忙。' }]
                 },
                 {
-                    rule: '「せいで」：負面結果，表示責怪。',
-                    examples: [{ japanese: '雨{あめ}のせいで遅{おく}れた。', chinese: '因為下雨遲到了。' }]
+                    rule: '「せいで」：負{ま}け面結果，表示責怪。',
+                    examples: [{ japanese: '雨{あめ}のせいで遅{おく}れた。', chinese: '因為下雨{あめ}遲到了。' }]
                 }
             ]
         },
@@ -5530,7 +5530,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_okage_de_2',
-                sentence: '毎日{まいにち}練習{れんしゅう}した（　）、試合{しあい}に勝{か}てた。',
+                sentence: '毎{まい}日{にち}練{れん}習{しゅう}した（　）、試合{しあい}に勝{か}てた。',
                 options: ['おかげで', 'せいで', 'ために', 'によって'],
                 correctIndex: 0,
                 explanation: '多虧每天練習，贏了比賽。'
@@ -5543,15 +5543,15 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '多虧天氣好，衣服乾得很快。',
                     wrong: [
-                        '「せいで」是負面結果。',
-                        '「ために」是目的。',
+                        '「せいで」是負{ま}け面結果。',
+                        '「ために」是目{もく}的{てき}。',
                         '「によって」是根據。'
                     ]
                 }
             },
             {
                 id: 'n4_okage_de_4',
-                sentence: '「日本語{にほんご}、上手{じょうず}になったね。」\n「先生{せんせい}の（　）です。」',
+                sentence: '「日本語{にほんご}、上手{じょうず}になったね。」\n「先{せん}生{せい}の（　）です。」',
                 options: ['おかげ', 'せい', 'ため', 'もと'],
                 correctIndex: 0,
                 explanation: '對話情境。托老師的福。'
@@ -5564,8 +5564,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '多虧他幫忙，很快就結束了。',
                     wrong: [
-                        '「せいで」是負面。',
-                        '「ために」是目的。',
+                        '「せいで」是負{ま}け面。',
+                        '「ために」是目{もく}的{てき}。',
                         '「によって」是根據。'
                     ]
                 }
@@ -5577,25 +5577,25 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_sei_de': {
         id: 'n4_sei_de',
         pattern: 'せいで',
-        connection: '動詞普通形 / い形 / な形-な / 名詞-の + せいで',
-        translation: '因為...（負面原因）; 都怪...',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + せいで',
+        translation: '因為...（負{ま}け面原{げん}因{いん}）; 都怪...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '表示責怪的原因',
+                title: '表示責怪的原{げん}因{いん}',
                 description: '表示因為某人或某事，而產生不好的結果。通常帶有責怪或抱怨的語氣。',
                 examples: [
-                    { japanese: '雨{あめ}のせいで、試合{しあい}が中止{ちゅうし}になった。', chinese: '因為下雨，比賽取消了。' },
+                    { japanese: '雨{あめ}のせいで、試合{しあい}が中止{ちゅうし}になった。', chinese: '因為下雨{あめ}，比賽取消了。' },
                     { japanese: '彼{かれ}のせいで遅刻{ちこく}した。', chinese: '都怪他我遲到了。' },
-                    { japanese: '風邪{かぜ}のせいで、旅行{りょこう}に行{い}けなかった。', chinese: '因為感冒，不能去旅行。' }
+                    { japanese: '風邪{かぜ}のせいで、旅{りょ}行{こう}に行{い}けなかった。', chinese: '因為感冒，不能去旅行。' }
                 ]
             }
         ],
         quiz: [
             {
                 id: 'n4_sei_de_1',
-                sentence: '電車{でんしゃ}が遅{おく}れた（　）、会議{かいぎ}に間{ま}に合{あ}わなかった。',
+                sentence: '電{でん}車{しゃ}が遅{おく}れた（　）、会議{かいぎ}に間{ま}に合{あ}わなかった。',
                 options: ['せいで', 'おかげで', 'ために', 'によって'],
                 correctIndex: 0,
                 explanation: '因為電車誤點，沒趕上會議。'
@@ -5616,7 +5616,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '因為吃太多，肚子痛了。',
                     wrong: [
                         '「おかげで」是正面。',
-                        '「ために」是目的。',
+                        '「ために」是目{もく}的{てき}。',
                         '「によって」是根據。'
                     ]
                 }
@@ -5637,7 +5637,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '都怪那傢伙，計劃泡湯了。',
                     wrong: [
                         '「おかげ」是正面。',
-                        '「ため」是目的。',
+                        '「ため」是目{もく}的{てき}。',
                         '「もと」是根據。'
                     ]
                 }
@@ -5649,7 +5649,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ni_yoru_to': {
         id: 'n4_ni_yoru_to',
         pattern: 'によると',
-        connection: '名詞 + によると',
+        connection: '名{めい}詞{し} + によると',
         translation: '根據...; 據...說',
         level: 'N4',
         explanation: [
@@ -5658,7 +5658,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '引用資訊來源',
                 description: '用於說明資訊的來源或依據。',
                 examples: [
-                    { japanese: '天気予報{てんきよほう}によると、明日{あした}は雨{あめ}だそうだ。', chinese: '根據天氣預報，明天會下雨。' },
+                    { japanese: '天気予報{てんきよほう}によると、明日{あした}は雨{あめ}だそうだ。', chinese: '根據天氣預報，明天會下雨{あめ}。' },
                     { japanese: '彼{かれ}の話{はなし}によると、会議{かいぎ}は中止{ちゅうし}になったらしい。', chinese: '據他說，會議好像取消了。' },
                     { japanese: 'ニュースによると、事故{じこ}があったそうだ。', chinese: '據新聞報導，發生了事故。' }
                 ]
@@ -5674,14 +5674,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_ni_yoru_to_2',
-                sentence: '先生{せんせい}の話{はなし}（　）、試験{しけん}は来週{らいしゅう}だそうだ。',
+                sentence: '先{せん}生{せい}の話{はなし}（　）、試験{しけん}は来{らい}週{しゅう}だそうだ。',
                 options: ['によると', 'にとって', 'について', 'に対して'],
                 correctIndex: 0,
                 explanation: '據老師說，考試在下週。'
             },
             {
                 id: 'n4_ni_yoru_to_3',
-                sentence: '調査{ちょうさ}（　）、若者{わかもの}の読書{どくしょ}時間{じかん}は減{へ}っているらしい。',
+                sentence: '調査{ちょうさ}（　）、若者{わかもの}の読書{どくしょ}時{じ}間{かん}は減{へ}っているらしい。',
                 options: ['によると', 'にとって', 'について', 'に対して'],
                 correctIndex: 0,
                 explanation: {
@@ -5698,11 +5698,11 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「明日{あした}の天気{てんき}は？」\n「予報{よほう}（　）、晴{は}れるらしいよ。」',
                 options: ['によると', 'にとって', 'について', 'に対して'],
                 correctIndex: 0,
-                explanation: '對話情境。根據預報會放晴。'
+                explanation: '對話情境。根據預報會放晴{は}れ。'
             },
             {
                 id: 'n4_ni_yoru_to_5',
-                sentence: '彼女{かのじょ}（　）、パーティーは７時{じ}からだそうだ。',
+                sentence: '彼{かれ}女{かのじょ}（　）、パーティーは７時{じ}からだそうだ。',
                 options: ['によると', 'にとって', 'について', 'に対して'],
                 correctIndex: 0,
                 explanation: {
@@ -5721,7 +5721,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ni_tsuite': {
         id: 'n4_ni_tsuite',
         pattern: 'について',
-        connection: '名詞 + について',
+        connection: '名{めい}詞{し} + について',
         translation: '關於...',
         level: 'N4',
         explanation: [
@@ -5730,7 +5730,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '表示話題或主題',
                 description: '用於說明談論、研究、思考等的對象。',
                 examples: [
-                    { japanese: '日本{にほん}の文化{ぶんか}について研究{けんきゅう}している。', chinese: '正在研究關於日本文化。' },
+                    { japanese: '日本{にほん}の文化{ぶんか}について研究{けんきゅう}している。', chinese: '正在研究關於日本文{ぶん}化{か}。' },
                     { japanese: 'この問題{もんだい}について話{はな}し合{あ}いましょう。', chinese: '讓我們討論這個問題。' },
                     { japanese: '将来{しょうらい}について考{かんが}えている。', chinese: '在思考關於將來的事。' }
                 ]
@@ -5753,7 +5753,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_ni_tsuite_3',
-                sentence: '新{あたら}しいプロジェクト（　）説明{せつめい}します。',
+                sentence: '新{あたら}しいプロジェクト（　）説{せつ}明{めい}します。',
                 options: ['について', 'によって', 'にとって', 'に対して'],
                 correctIndex: 0,
                 explanation: {
@@ -5767,7 +5767,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_ni_tsuite_4',
-                sentence: '「何{なに}を勉強{べんきょう}しているの？」\n「日本{にほん}の文学{ぶんがく}（　）勉強{べんきょう}しているよ。」',
+                sentence: '「何{なに}を勉{べん}強{きょう}しているの？」\n「日本{にほん}の文学{ぶんがく}（　）勉{べん}強{きょう}しているよ。」',
                 options: ['について', 'によって', 'にとって', 'に対して'],
                 correctIndex: 0,
                 explanation: '對話情境。學習關於日本文學。'
@@ -5793,7 +5793,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ni_totte': {
         id: 'n4_ni_totte',
         pattern: 'にとって',
-        connection: '名詞 + にとって',
+        connection: '名{めい}詞{し} + にとって',
         translation: '對...而言; 對...來說',
         level: 'N4',
         explanation: [
@@ -5802,8 +5802,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '表示立場或觀點',
                 description: '從某人的立場或觀點來看某事物。',
                 examples: [
-                    { japanese: '私{わたし}にとって、家族{かぞく}が一番{いちばん}大切{たいせつ}です。', chinese: '對我來說，家人最重要。' },
-                    { japanese: '子供{こども}にとって、遊{あそ}びは勉強{べんきょう}だ。', chinese: '對孩子而言，玩耍就是學習。' },
+                    { japanese: '私{わたし}にとって、家{か}族{ぞく}が一番{いちばん}大切{たいせつ}です。', chinese: '對我來說，家人最重要。' },
+                    { japanese: '子{こ}供{とも}にとって、遊{あそ}びは勉{べん}強{きょう}だ。', chinese: '對孩子而言，玩耍就是學習。' },
                     { japanese: '外国人{がいこくじん}にとって、日本語{にほんご}は難{むずか}しい。', chinese: '對外國人而言，日語很難。' }
                 ]
             }
@@ -5811,14 +5811,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_ni_totte_1',
-                sentence: '学生{がくせい}（　）、この本{ほん}は役{やく}に立{た}つ。',
+                sentence: '学{がく}生{せい}（　）、この本{ほん}は役{やく}に立{た}つ。',
                 options: ['にとって', 'について', 'によって', 'に対して'],
                 correctIndex: 0,
                 explanation: '對學生而言，這本書很有用。'
             },
             {
                 id: 'n4_ni_totte_2',
-                sentence: '私{わたし}（　）、友達{ともだち}は宝物{たからもの}だ。',
+                sentence: '私{わたし}（　）、友{とも}達{だち}は宝物{たからもの}だ。',
                 options: ['にとって', 'について', 'によって', 'に対して'],
                 correctIndex: 0,
                 explanation: '對我而言，朋友是寶物。'
@@ -5865,18 +5865,18 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hazu_da_full': {
         id: 'n4_hazu_da_full',
         pattern: 'はずだ（完整用法）',
-        connection: '動詞普通形 / い形 / な形-な / 名詞-の + はずだ',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + はずだ',
         translation: '應該...; 理應...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '根據理由推測',
-                description: '根據某種理由或根據進行推測，表示「理應如此」。',
+                title: '根據理{り}由{ゆう}推測',
+                description: '根據某種理{り}由{ゆう}或根據進行推測，表示「理應如此」。',
                 examples: [
                     { japanese: '彼{かれ}は今日{きょう}来{く}るはずです。', chinese: '他今天應該會來。' },
-                    { japanese: 'この本{ほん}は図書館{としょかん}にあるはずだ。', chinese: '這本書應該在圖書館。' },
-                    { japanese: '電車{でんしゃ}はもう着{つ}いたはずだ。', chinese: '電車應該已經到了。' }
+                    { japanese: 'この本{ほん}は図{と}書{しょ}館{かん}にあるはずだ。', chinese: '這本書應該在圖書館。' },
+                    { japanese: '電{でん}車{しゃ}はもう着{つ}いたはずだ。', chinese: '電車應該已經到了。' }
                 ]
             }
         ],
@@ -5885,33 +5885,33 @@ export const n4Details: Record<string, GrammarPoint> = {
             description: '兩者都可譯為「應該」，但用法不同。',
             points: [
                 {
-                    rule: '「はずだ」：根據理由的推測。',
-                    examples: [{ japanese: '約束{やくそく}したから、来{く}るはずだ。', chinese: '因為約好了，應該會來。' }]
+                    rule: '「はずだ」：根據理{り}由{ゆう}的推測。',
+                    examples: [{ japanese: '約{やく}束{そく}したから、来{く}るはずだ。', chinese: '因為約好了，應該會來。' }]
                 },
                 {
                     rule: '「べきだ」：道義上或規範上的應該。',
-                    examples: [{ japanese: '約束{やくそく}は守{まも}るべきだ。', chinese: '應該遵守約定。' }]
+                    examples: [{ japanese: '約{やく}束{そく}は守{まも}るべきだ。', chinese: '應該遵守約定。' }]
                 }
             ]
         },
         quiz: [
             {
                 id: 'n4_hazu_da_full_1',
-                sentence: '電話{でんわ}したから、知{し}っている（　）だ。',
+                sentence: '電{でん}話{わ}したから、知{し}っている（　）だ。',
                 options: ['はず', 'べき', 'つもり', 'わけ'],
                 correctIndex: 0,
                 explanation: '因為打過電話，應該知道。'
             },
             {
                 id: 'n4_hazu_da_full_2',
-                sentence: '彼女{かのじょ}は日本{にほん}に住{す}んでいた（　）だ。',
+                sentence: '彼{かれ}女{かのじょ}は日本{にほん}に住{す}んでいた（　）だ。',
                 options: ['はず', 'べき', 'つもり', 'わけ'],
                 correctIndex: 0,
                 explanation: '她應該住過日本。'
             },
             {
                 id: 'n4_hazu_da_full_3',
-                sentence: '約束{やくそく}したんだから、来{く}る（　）だ。',
+                sentence: '約{やく}束{そく}したんだから、来{く}る（　）だ。',
                 options: ['はず', 'べき', 'つもり', 'わけ'],
                 correctIndex: 0,
                 explanation: {
@@ -5932,7 +5932,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_hazu_da_full_5',
-                sentence: '説明書{せつめいしょ}を読{よ}んだから、使{つか}い方{かた}が分{わ}かる（　）だ。',
+                sentence: '説{せつ}明{めい}書{せつめいしょ}を読{よ}んだから、使{つか}い方{かた}が分{わ}かる（　）だ。',
                 options: ['はず', 'べき', 'つもり', 'わけ'],
                 correctIndex: 0,
                 explanation: {
@@ -5951,7 +5951,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tokoro_ni': {
         id: 'n4_tokoro_ni',
         pattern: 'ところに / ところへ',
-        connection: '動詞辭書形 / ている形 / た形 + ところに / ところへ',
+        connection: '動{どう}詞{し}辭書形 / ている形 / た形 + ところに / ところへ',
         translation: '正當...的時候',
         level: 'N4',
         explanation: [
@@ -5960,8 +5960,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '時機的巧合',
                 description: '表示在某個時機點發生了某事。',
                 examples: [
-                    { japanese: '出{で}かけようとしたところに、電話{でんわ}がかかってきた。', chinese: '正要出門的時候，電話響了。' },
-                    { japanese: '食{た}べているところに、友達{ともだち}が来{き}た。', chinese: '正在吃飯的時候，朋友來了。' },
+                    { japanese: '出{で}かけようとしたところに、電{でん}話{わ}がかかってきた。', chinese: '正要出門的時候，電話響了。' },
+                    { japanese: '食{た}べているところに、友{とも}達{だち}が来{き}た。', chinese: '正在吃飯的時候，朋友來了。' },
                     { japanese: '寝{ね}ようとしたところに、地震{じしん}があった。', chinese: '正要睡覺的時候，發生了地震。' }
                 ]
             }
@@ -5969,7 +5969,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_tokoro_ni_1',
-                sentence: 'お風呂{ふろ}に入{はい}っている（　）、電話{でんわ}が鳴{な}った。',
+                sentence: 'お風呂{ふろ}に入{はい}っている（　）、電{でん}話{わ}が鳴{な}った。',
                 options: ['ところに', 'ところで', 'ところを', 'ところが'],
                 correctIndex: 0,
                 explanation: '正在洗澡的時候電話響了。'
@@ -5979,11 +5979,11 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '出{で}かけようとした（　）、雨{あめ}が降{ふ}ってきた。',
                 options: ['ところに', 'ところで', 'ところを', 'ところが'],
                 correctIndex: 0,
-                explanation: '正要出門的時候下雨了。'
+                explanation: '正要出門的時候下雨{あめ}了。'
             },
             {
                 id: 'n4_tokoro_ni_3',
-                sentence: '寝{ね}ようとした（　）、友達{ともだち}から電話{でんわ}があった。',
+                sentence: '寝{ね}ようとした（　）、友{とも}達{だち}から電{でん}話{わ}があった。',
                 options: ['ところに', 'ところで', 'ところを', 'ところが'],
                 correctIndex: 0,
                 explanation: {
@@ -6004,11 +6004,11 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_tokoro_ni_5',
-                sentence: '食事{しょくじ}をしている（　）、来客{らいきゃく}があった。',
+                sentence: '食{しょく}事{じ}をしている（　）、来客{らいきゃく}があった。',
                 options: ['ところに', 'ところで', 'ところを', 'ところが'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '正在用餐時有客人來。',
+                    correct: '正在用餐時有客{きゃく}人來。',
                     wrong: [
                         '「ところで」是順帶一提。',
                         '「ところを」是被看到。',
@@ -6023,7 +6023,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_to_suru': {
         id: 'n4_you_to_suru',
         pattern: 'ようとする',
-        connection: '動詞意向形 + とする',
+        connection: '動{どう}詞{し}意向形 + とする',
         translation: '正要...; 試圖...',
         level: 'N4',
         explanation: [
@@ -6032,7 +6032,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '表示即將進行的動作',
                 description: '表示正要做某動作的瞬間。',
                 examples: [
-                    { japanese: '家{いえ}を出{で}ようとした時{とき}、電話{でんわ}が鳴{な}った。', chinese: '正要出門的時候，電話響了。' },
+                    { japanese: '家{いえ}を出{で}ようとした時{とき}、電{でん}話{わ}が鳴{な}った。', chinese: '正要出門的時候，電話響了。' },
                     { japanese: '寝{ね}ようとしている。', chinese: '正要睡覺。' }
                 ]
             },
@@ -6049,7 +6049,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_you_to_suru_1',
-                sentence: '電車{でんしゃ}に乗{の}（　）した時{とき}、ドアが閉{し}まった。',
+                sentence: '電{でん}車{しゃ}に乗{の}（　）した時{とき}、ドアが閉{し}まった。',
                 options: ['ろうと', 'ると', 'ように', 'ために'],
                 correctIndex: 0,
                 explanation: '正要上電車時門關了。'
@@ -6063,15 +6063,15 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_you_to_suru_3',
-                sentence: '彼女{かのじょ}に話{はな}しかけ（　）したが、勇気{ゆうき}がなかった。',
+                sentence: '彼{かれ}女{かのじょ}に話{はな}しかけ（　）したが、勇気{ゆうき}がなかった。',
                 options: ['ようと', 'ると', 'ように', 'ために'],
                 correctIndex: 0,
                 explanation: {
                     correct: '試著跟她搭話，但沒有勇氣。',
                     wrong: [
                         '「ると」接續不對。',
-                        '「ように」是目的。',
-                        '「ために」是目的。'
+                        '「ように」是目{もく}的{てき}。',
+                        '「ために」是目{もく}的{てき}。'
                     ]
                 }
             },
@@ -6091,8 +6091,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '他試著逃跑但被抓住了。',
                     wrong: [
                         '「ると」接續不對。',
-                        '「ように」是目的。',
-                        '「ために」是目的。'
+                        '「ように」是目{もく}的{てき}。',
+                        '「ために」是目{もく}的{てき}。'
                     ]
                 }
             }
@@ -6103,17 +6103,17 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_you_ni_request': {
         id: 'n4_you_ni_request',
         pattern: 'ようにしてください',
-        connection: '動詞辭書形 / ない形 + ようにしてください',
+        connection: '動{どう}詞{し}辭書形 / ない形 + ようにしてください',
         translation: '請務必...; 請注意...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '禮貌的請求或警告',
-                description: '用於禮貌地請求對方注意某事或養成某習慣。',
+                description: '用於禮貌地請求對方注意某事或養成某習{しゅう}慣{かん}。',
                 examples: [
                     { japanese: '遅刻{ちこく}しないようにしてください。', chinese: '請注意不要遲到。' },
-                    { japanese: '毎日{まいにち}運動{うんどう}するようにしてください。', chinese: '請每天運動。' },
+                    { japanese: '毎{まい}日{にち}運動{うんどう}するようにしてください。', chinese: '請每天運動。' },
                     { japanese: '忘{わす}れ物{もの}をしないようにしてください。', chinese: '請注意不要忘記東西。' }
                 ]
             }
@@ -6142,7 +6142,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '請不要大聲說話。',
                     wrong: [
                         '「ことに」不接這個句型。',
-                        '「ために」是目的。',
+                        '「ために」是目{もく}的{てき}。',
                         '「のに」是轉折。'
                     ]
                 }
@@ -6163,7 +6163,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '請不要讓門開著。',
                     wrong: [
                         '「ことに」不接這個句型。',
-                        '「ために」是目的。',
+                        '「ために」是目{もく}的{てき}。',
                         '「のに」是轉折。'
                     ]
                 }
@@ -6175,7 +6175,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ukemi_sonkei': {
         id: 'n4_ukemi_sonkei',
         pattern: 'られる（尊敬）',
-        connection: '一段動詞：語幹 + られる\n五段動詞：語幹（あ段）+ れる',
+        connection: '一段動{どう}詞{し}：語幹 + られる\n五段動{どう}詞{し}：語幹（あ段）+ れる',
         translation: '（尊敬語）做...',
         level: 'N4',
         explanation: [
@@ -6184,7 +6184,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '尊敬用法',
                 description: '被動形也可以用作尊敬語，表示對上位者的敬意。',
                 examples: [
-                    { japanese: '先生{せんせい}はもう帰{かえ}られました。', chinese: '老師已經回去了。' },
+                    { japanese: '先{せん}生{せい}はもう帰{かえ}られました。', chinese: '老師已經回去了。' },
                     { japanese: '社長{しゃちょう}は何{なに}を召{め}し上{あ}がられますか。', chinese: '社長要用什麼？' },
                     { japanese: '部長{ぶちょう}は明日{あした}来{こ}られますか。', chinese: '部長明天來嗎？' }
                 ]
@@ -6196,18 +6196,18 @@ export const n4Details: Record<string, GrammarPoint> = {
             points: [
                 {
                     rule: '被動形尊敬：比較一般的敬意',
-                    examples: [{ japanese: '先生{せんせい}は帰{かえ}られた。', chinese: '老師回去了。' }]
+                    examples: [{ japanese: '先{せん}生{せい}は帰{かえ}られた。', chinese: '老師回去了。' }]
                 },
                 {
                     rule: '專門尊敬語：更高的敬意',
-                    examples: [{ japanese: '先生{せんせい}はお帰{かえ}りになった。', chinese: '老師回去了。' }]
+                    examples: [{ japanese: '先{せん}生{せい}はお帰{かえ}りになった。', chinese: '老師回去了。' }]
                 }
             ]
         },
         quiz: [
             {
                 id: 'n4_ukemi_sonkei_1',
-                sentence: '先生{せんせい}は何時{なんじ}に来{こ}（　）か。',
+                sentence: '先{せん}生{せい}は何時{なんじ}に来{こ}（　）か。',
                 options: ['られます', 'ます', 'います', 'します'],
                 correctIndex: 0,
                 explanation: '老師幾點來？（尊敬）'
@@ -6235,14 +6235,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_ukemi_sonkei_4',
-                sentence: '「先生{せんせい}はどこですか。」\n「もう帰{かえ}（　）よ。」',
+                sentence: '「先{せん}生{せい}はどこですか。」\n「もう帰{かえ}（　）よ。」',
                 options: ['られました', 'りました', 'いました', 'しました'],
                 correctIndex: 0,
                 explanation: '對話情境。已經回去了。'
             },
             {
                 id: 'n4_ukemi_sonkei_5',
-                sentence: '先生{せんせい}は新{あたら}しい論文{ろんぶん}を書{か}（　）。',
+                sentence: '先{せん}生{せい}は新{あたら}しい論文{ろんぶん}を書{か}（　）。',
                 options: ['かれた', 'いた', 'した', 'きた'],
                 correctIndex: 0,
                 explanation: {
@@ -6261,7 +6261,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ba_hodo': {
         id: 'n4_ba_hodo',
         pattern: 'ば〜ほど',
-        connection: '動詞ば形 + 動詞辭書形 + ほど\nい形-ければ + い形 + ほど',
+        connection: '動{どう}詞{し}ば形 + 動{どう}詞{し}辭書形 + ほど\nい形-ければ + い形 + ほど',
         translation: '越...越...',
         level: 'N4',
         explanation: [
@@ -6272,14 +6272,14 @@ export const n4Details: Record<string, GrammarPoint> = {
                 examples: [
                     { japanese: '考{かんが}えれば考{かんが}えるほど分{わ}からなくなる。', chinese: '越想越不懂。' },
                     { japanese: '安{やす}ければ安{やす}いほどいい。', chinese: '越便宜越好。' },
-                    { japanese: '練習{れんしゅう}すればするほど上手{じょうず}になる。', chinese: '越練習越熟練。' }
+                    { japanese: '練{れん}習{しゅう}すればするほど上手{じょうず}になる。', chinese: '越練習越熟練。' }
                 ]
             }
         ],
         quiz: [
             {
                 id: 'n4_ba_hodo_1',
-                sentence: '勉強{べんきょう}すれば（　）ほど、難{むずか}しく感{かん}じる。',
+                sentence: '勉{べん}強{きょう}すれば（　）ほど、難{むずか}しく感{かん}じる。',
                 options: ['する', 'して', 'した', 'すれば'],
                 correctIndex: 0,
                 explanation: '越學越覺得難。'
@@ -6333,7 +6333,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hodo_nai': {
         id: 'n4_hodo_nai',
         pattern: 'ほど〜ない',
-        connection: '名詞 + ほど + 否定形',
+        connection: '名{めい}詞{し} + ほど + 否定形',
         translation: '沒有...那麼...',
         level: 'N4',
         explanation: [
@@ -6379,7 +6379,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_hodo_nai_4',
-                sentence: '「この料理{りょうり}、辛{から}い？」\n「思{おも}った（　）辛{から}くないよ。」',
+                sentence: '「この料{りょう}理{り}、辛{から}い？」\n「思{おも}った（　）辛{から}くないよ。」',
                 options: ['ほど', 'より', 'くらい', 'ばかり'],
                 correctIndex: 0,
                 explanation: '對話情境。沒想像中辣。'
@@ -6405,7 +6405,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_ba_ii': {
         id: 'n4_ba_ii',
         pattern: 'ばいい',
-        connection: '動詞ば形 + いい',
+        connection: '動{どう}詞{し}ば形 + いい',
         translation: '...就好了; 只要...就行',
         level: 'N4',
         explanation: [
@@ -6423,7 +6423,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '期望或願望',
                 description: '表示希望某事發生。',
                 examples: [
-                    { japanese: '明日{あした}、晴{は}れればいいな。', chinese: '明天放晴就好了。' },
+                    { japanese: '明日{あした}、晴{は}れればいいな。', chinese: '明天放晴{は}れ就好了。' },
                     { japanese: '早{はや}く春{はる}が来{く}ればいい。', chinese: '春天快點來就好了。' }
                 ]
             }
@@ -6459,7 +6459,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_ba_ii_4',
-                sentence: '「どうしたらいいですか。」\n「先生{せんせい}に相談{そうだん}す（　）よ。」',
+                sentence: '「どうしたらいいですか。」\n「先{せん}生{せい}に相談{そうだん}す（　）よ。」',
                 options: ['ればいい', 'たらいい', 'といい', 'ならいい'],
                 correctIndex: 0,
                 explanation: '對話情境。和老師商量就好。'
@@ -6485,17 +6485,17 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tara_ii': {
         id: 'n4_tara_ii',
         pattern: 'たらいい',
-        connection: '動詞た形 + らいい',
+        connection: '動{どう}詞{し}た形 + らいい',
         translation: '...就好了; 只要...就行',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '建議',
-                description: '用於給予建議或指導。比「ばいい」更口語化。',
+                description: '用於給予建議或指導。比「ばいい」更口{こう}語{ご}化。',
                 examples: [
                     { japanese: '困{こま}ったら、私{わたし}に言{い}ったらいい。', chinese: '有困難的話跟我說就好。' },
-                    { japanese: '時間{じかん}があったら、来{き}たらいい。', chinese: '有時間的話來就好。' }
+                    { japanese: '時{じ}間{かん}があったら、来{き}たらいい。', chinese: '有時間的話來就好。' }
                 ]
             },
             {
@@ -6511,7 +6511,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_tara_ii_1',
-                sentence: '電車{でんしゃ}に乗{の}り遅{おく}れたら、次{つぎ}のに乗{の}っ（　）。',
+                sentence: '電{でん}車{しゃ}に乗{の}り遅{おく}れたら、次{つぎ}のに乗{の}っ（　）。',
                 options: ['たらいい', 'ればいい', 'といい', 'ならいい'],
                 correctIndex: 0,
                 explanation: '沒趕上電車的話搭下一班就好。'
@@ -6565,18 +6565,18 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hazu_ga_nai_full': {
         id: 'n4_hazu_ga_nai_full',
         pattern: 'はずがない（完整用法）',
-        connection: '動詞普通形 / い形 / な形-な / 名詞-の + はずがない',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + はずがない',
         translation: '不可能...; 不應該...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '強烈否定推測',
-                description: '根據理由進行強烈的否定推測。',
+                description: '根據理{り}由{ゆう}進行強烈的否定推測。',
                 examples: [
                     { japanese: '彼{かれ}がそんなことをするはずがない。', chinese: '他不可能做那種事。' },
                     { japanese: 'こんな簡単{かんたん}な問題{もんだい}が分{わ}からないはずがない。', chinese: '這麼簡單的問題不可能不懂。' },
-                    { japanese: '約束{やくそく}を忘{わす}れるはずがない。', chinese: '不可能忘記約定。' }
+                    { japanese: '約{やく}束{そく}を忘{わす}れるはずがない。', chinese: '不可能忘記約定。' }
                 ]
             }
         ],
@@ -6597,7 +6597,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_hazu_ga_nai_full_3',
-                sentence: '彼女{かのじょ}が知{し}らない（　）。',
+                sentence: '彼{かれ}女{かのじょ}が知{し}らない（　）。',
                 options: ['はずがない', 'はずだ', 'わけがない', 'わけだ'],
                 correctIndex: 0,
                 explanation: {
@@ -6611,14 +6611,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_hazu_ga_nai_full_4',
-                sentence: '「彼{かれ}、本当{ほんとう}に来{く}るかな。」\n「約束{やくそく}したんだから、来{こ}ない（　）よ。」',
+                sentence: '「彼{かれ}、本{ほん}当{とう}に来{く}るかな。」\n「約{やく}束{そく}したんだから、来{こ}ない（　）よ。」',
                 options: ['はずがない', 'はずだ', 'わけがない', 'わけだ'],
                 correctIndex: 0,
                 explanation: '對話情境。既然約好了不可能不來。'
             },
             {
                 id: 'n4_hazu_ga_nai_full_5',
-                sentence: 'こんなに勉強{べんきょう}したのに、落{お}ちる（　）。',
+                sentence: 'こんなに勉{べん}強{きょう}したのに、落{お}ちる（　）。',
                 options: ['はずがない', 'はずだ', 'わけがない', 'わけだ'],
                 correctIndex: 0,
                 explanation: {
@@ -6637,7 +6637,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_wake_da': {
         id: 'n4_wake_da',
         pattern: 'わけだ',
-        connection: '動詞普通形 / い形 / な形-な / 名詞-の + わけだ',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + わけだ',
         translation: '難怪...; 也就是說...',
         level: 'N4',
         explanation: [
@@ -6647,14 +6647,14 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示根據前文得出合理的結論或理解。',
                 examples: [
                     { japanese: '彼{かれ}は日本{にほん}に10年{ねん}住{す}んでいた。日本語{にほんご}が上手{じょうず}なわけだ。', chinese: '他在日本住了十年。難怪日語這麼好。' },
-                    { japanese: '風邪{かぜ}を引{ひ}いている。だから元気{げんき}がないわけだ。', chinese: '他感冒了。難怪沒精神。' }
+                    { japanese: '風邪{かぜ}を引{ひ}いている。だから元{げん}気{き}がないわけだ。', chinese: '他感冒了。難怪沒精神。' }
                 ]
             }
         ],
         quiz: [
             {
                 id: 'n4_wake_da_1',
-                sentence: '彼{かれ}は毎日{まいにち}練習{れんしゅう}している。上手{じょうず}な（　）。',
+                sentence: '彼{かれ}は毎{まい}日{にち}練{れん}習{しゅう}している。上手{じょうず}な（　）。',
                 options: ['わけだ', 'はずだ', 'ようだ', 'そうだ'],
                 correctIndex: 0,
                 explanation: '他每天練習。難怪這麼厲害。'
@@ -6668,7 +6668,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_wake_da_3',
-                sentence: '彼女{かのじょ}は料理{りょうり}学校{がっこう}に通{かよ}っていた。料理{りょうり}が上手{じょうず}な（　）。',
+                sentence: '彼{かれ}女{かのじょ}は料{りょう}理{り}学{がっ}校{こう}に通{かよ}っていた。料{りょう}理{り}が上手{じょうず}な（　）。',
                 options: ['わけだ', 'はずだ', 'ようだ', 'そうだ'],
                 correctIndex: 0,
                 explanation: {
@@ -6708,7 +6708,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_wake_ga_nai': {
         id: 'n4_wake_ga_nai',
         pattern: 'わけがない',
-        connection: '動詞普通形 / い形 / な形-な / 名詞-の + わけがない',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-の + わけがない',
         translation: '不可能...; 沒有道理...',
         level: 'N4',
         explanation: [
@@ -6717,7 +6717,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 title: '強烈否定',
                 description: '表示從道理上來說不可能，比「はずがない」更強調主觀判斷。',
                 examples: [
-                    { japanese: 'そんな話{はなし}が本当{ほんとう}のわけがない。', chinese: '那種話不可能是真的。' },
+                    { japanese: 'そんな話{はなし}が本{ほん}当{とう}のわけがない。', chinese: '那種話不可能是真的。' },
                     { japanese: '彼{かれ}がそんなことを知{し}っているわけがない。', chinese: '他不可能知道那種事。' },
                     { japanese: '1日{にち}で終{お}わるわけがない。', chinese: '不可能一天就做完。' }
                 ]
@@ -6740,7 +6740,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_wake_ga_nai_3',
-                sentence: '彼女{かのじょ}が私{わたし}のことを好{す}きな（　）。',
+                sentence: '彼{かれ}女{かのじょ}が私{わたし}のことを好{す}きな（　）。',
                 options: ['わけがない', 'わけだ', 'はずがない', 'はずだ'],
                 correctIndex: 0,
                 explanation: {
@@ -6754,14 +6754,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_wake_ga_nai_4',
-                sentence: '「彼{かれ}、来{く}るかな。」\n「約束{やくそく}を破{やぶ}る（　）。」',
+                sentence: '「彼{かれ}、来{く}るかな。」\n「約{やく}束{そく}を破{やぶ}る（　）。」',
                 options: ['わけがない', 'わけだ', 'はずがない', 'はずだ'],
                 correctIndex: 0,
                 explanation: '對話情境。他不可能違約。'
             },
             {
                 id: 'n4_wake_ga_nai_5',
-                sentence: 'お金{かね}がないのに、旅行{りょこう}に行{い}ける（　）。',
+                sentence: 'お金{かね}がないのに、旅{りょ}行{こう}に行{い}ける（　）。',
                 options: ['わけがない', 'わけだ', 'はずがない', 'はずだ'],
                 correctIndex: 0,
                 explanation: {
@@ -6780,7 +6780,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_wake_dewa_nai': {
         id: 'n4_wake_dewa_nai',
         pattern: 'わけではない',
-        connection: '動詞普通形 / い形 / な形-な / 名詞-な + わけではない',
+        connection: '動{どう}詞{し}普通形 / い形 / な形-な / 名{めい}詞{し}-な + わけではない',
         translation: '並不是...; 並非...',
         level: 'N4',
         explanation: [
@@ -6791,7 +6791,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 examples: [
                     { japanese: '嫌{きら}いなわけではないが、苦手{にがて}だ。', chinese: '並不是討厭，只是不擅長。' },
                     { japanese: '忙{いそが}しくないわけではない。', chinese: '並不是不忙。' },
-                    { japanese: '行{い}きたくないわけではないが、時間{じかん}がない。', chinese: '並不是不想去，只是沒時間。' }
+                    { japanese: '行{い}きたくないわけではないが、時{じ}間{かん}がない。', chinese: '並不是不想去，只是沒時間。' }
                 ]
             }
         ],
@@ -6855,7 +6855,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_noni_contrast': {
         id: 'n4_noni_contrast',
         pattern: 'のに（逆接）',
-        connection: '動詞普通形 + のに\nい形容詞 + のに\nな形容詞 + な + のに\n名詞 + な + のに',
+        connection: '動{どう}詞{し}普通形 + のに\nい形{けい}容{よう}詞{し} + のに\nな形{けい}容{よう}詞{し} + な + のに\n名{めい}詞{し} + な + のに',
         translation: '明明...卻...; 雖然...但是...',
         level: 'N4',
         explanation: [
@@ -6865,7 +6865,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示前後兩件事之間存在矛盾或意外的關係，常帶有說話者的不滿、遺憾、惋惜等情緒。',
                 examples: [
                     {
-                        japanese: '約束{やくそく}したのに、来{こ}なかった。',
+                        japanese: '約{やく}束{そく}したのに、来{こ}なかった。',
                         chinese: '明明約好了，卻沒來。'
                     },
                     {
@@ -6873,7 +6873,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '明明很貴，卻不好吃。'
                     },
                     {
-                        japanese: '彼{かれ}は病気{びょうき}なのに、働{はたら}いている。',
+                        japanese: '彼{かれ}は病{びょう}気{き}なのに、働{はたら}いている。',
                         chinese: '他明明生病了，卻還在工作。'
                     }
                 ]
@@ -6888,15 +6888,15 @@ export const n4Details: Record<string, GrammarPoint> = {
                     examples: [{ japanese: 'せっかく作{つく}ったのに、食{た}べてくれなかった。', chinese: '特地做了，卻不吃（不滿）。' }]
                 },
                 {
-                    rule: '「けど/が」是客觀陳述對比。',
-                    examples: [{ japanese: '作{つく}ったけど、食{た}べなかった。', chinese: '做了，但沒吃（客觀）。' }]
+                    rule: '「けど/が」是客{きゃく}觀陳述對比。',
+                    examples: [{ japanese: '作{つく}ったけど、食{た}べなかった。', chinese: '做了，但沒吃（客{きゃく}觀）。' }]
                 }
             ]
         },
         quiz: [
             {
                 id: 'n4_noni_contrast_1',
-                sentence: '一生懸命{いっしょうけんめい}勉強{べんきょう}した（　）、不合格{ふごうかく}だった。',
+                sentence: '一生懸命{いっしょうけんめい}勉{べん}強{きょう}した（　）、不合格{ふごうかく}だった。',
                 options: ['のに', 'ので', 'から', 'けど'],
                 correctIndex: 0,
                 explanation: '表示不滿、遺憾。'
@@ -6914,7 +6914,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['なのに', 'のに', 'だのに', 'であるのに'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '名詞後接「なのに」。',
+                    correct: '名{めい}詞{し}後接「なのに」。',
                     wrong: [
                         '「のに」前面需要「な」。',
                         '「だのに」不自然。',
@@ -6924,7 +6924,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_noni_contrast_4',
-                sentence: '「彼女{かのじょ}、来{こ}なかったね。」\n「約束{やくそく}した（　）ね。残念{ざんねん}だ。」',
+                sentence: '「彼{かれ}女{かのじょ}、来{こ}なかったね。」\n「約{やく}束{そく}した（　）ね。残念{ざんねん}だ。」',
                 options: ['のに', 'ので', 'から', 'けど'],
                 correctIndex: 0,
                 explanation: '對話情境。帶有遺憾。'
@@ -6937,9 +6937,9 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '「せっかく...のに」是常見搭配，表示惋惜。',
                     wrong: [
-                        '「ので」表示原因。',
-                        '「から」表示原因。',
-                        '「けど」較客觀，不帶遺憾。'
+                        '「ので」表示原{げん}因{いん}。',
+                        '「から」表示原{げん}因{いん}。',
+                        '「けど」較客{きゃく}觀，不帶遺憾。'
                     ]
                 }
             }
@@ -6949,7 +6949,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_temo_ii': {
         id: 'n4_temo_ii',
         pattern: 'てもいい',
-        connection: '動詞て形 + もいい',
+        connection: '動{どう}詞{し}て形 + もいい',
         translation: '可以...; ...也行',
         level: 'N4',
         explanation: [
@@ -7029,7 +7029,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tewa_ikenai': {
         id: 'n4_tewa_ikenai',
         pattern: 'てはいけない',
-        connection: '動詞て形 + はいけない',
+        connection: '動{どう}詞{し}て形 + はいけない',
         translation: '不可以...; 不行...',
         level: 'N4',
         explanation: [
@@ -7056,7 +7056,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_tewa_ikenai_1',
-                sentence: '図書館{としょかん}で大{おお}きな声{こえ}を出{だ}し（　）いけません。',
+                sentence: '図{と}書{しょ}館{かん}で大{おお}きな声{こえ}を出{だ}し（　）いけません。',
                 options: ['ては', 'ても', 'たら', 'て'],
                 correctIndex: 0,
                 explanation: '禁止在圖書館大聲說話。'
@@ -7120,7 +7120,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '用於追加同方向的信息，加強語氣。',
                 examples: [
                     {
-                        japanese: 'この料理{りょうり}はおいしい。それに、安{やす}い。',
+                        japanese: 'この料{りょう}理{り}はおいしい。それに、安{やす}い。',
                         chinese: '這道菜很好吃。而且很便宜。'
                     },
                     {
@@ -7137,14 +7137,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_sore_ni_1',
-                sentence: 'この本{ほん}は面白{おもしろ}い。（　）、勉強{べんきょう}になる。',
+                sentence: 'この本{ほん}は面白{おもしろ}い。（　）、勉{べん}強{きょう}になる。',
                 options: ['それに', 'でも', 'しかし', 'だから'],
                 correctIndex: 0,
                 explanation: '追加正面信息。'
             },
             {
                 id: 'n4_sore_ni_2',
-                sentence: '彼女{かのじょ}は歌{うた}がうまい。（　）、ダンスも上手{じょうず}だ。',
+                sentence: '彼{かれ}女{かのじょ}は歌{うた}がうまい。（　）、ダンスも上手{じょうず}だ。',
                 options: ['それに', 'でも', 'しかし', 'だから'],
                 correctIndex: 0,
                 explanation: '追加同方向的優點。'
@@ -7155,7 +7155,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['それに', 'だから', 'しかし', 'でも'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '追加同方向（負面）的信息。',
+                    correct: '追加同方向（負{ま}け面）的信息。',
                     wrong: [
                         '「だから」表示因果。',
                         '「しかし」表示轉折。',
@@ -7168,7 +7168,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「この映画{えいが}、どう？」\n「面白{おもしろ}いよ。（　）、音楽{おんがく}もいい。」',
                 options: ['それに', 'でも', 'しかし', 'だから'],
                 correctIndex: 0,
-                explanation: '對話情境。追加推薦理由。'
+                explanation: '對話情境。追加推薦理{り}由{ゆう}。'
             },
             {
                 id: 'n4_sore_ni_5',
@@ -7200,15 +7200,15 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '用於連接時間順序上的前後事項，或邏輯上的承接。',
                 examples: [
                     {
-                        japanese: '朝{あさ}ご飯{はん}を食{た}べた。そして、学校{がっこう}へ行{い}った。',
+                        japanese: '朝{あさ}ご飯{はん}を食{た}べた。そして、学{がっ}校{こう}へ行{い}った。',
                         chinese: '吃了早餐。然後去了學校。'
                     },
                     {
-                        japanese: '彼{かれ}は一生懸命{いっしょうけんめい}勉強{べんきょう}した。そして、合格{ごうかく}した。',
+                        japanese: '彼{かれ}は一生懸命{いっしょうけんめい}勉{べん}強{きょう}した。そして、合格{ごうかく}した。',
                         chinese: '他努力學習。然後合格了。'
                     },
                     {
-                        japanese: '彼女{かのじょ}は泣{な}いた。そして、部屋{へや}を出{で}て行{い}った。',
+                        japanese: '彼{かれ}女{かのじょ}は泣{な}いた。そして、部{へ}屋{や}を出{で}て行{い}った。',
                         chinese: '她哭了。然後離開了房間。'
                     }
                 ]
@@ -7245,7 +7245,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_soshite_4',
-                sentence: '「昨日{きのう}、何{なに}をしましたか。」\n「友達{ともだち}と会{あ}いました。（　）、一緒{いっしょ}に晩{ばん}ご飯{はん}を食{た}べました。」',
+                sentence: '「昨日{きのう}、何{なに}をしましたか。」\n「友{とも}達{だち}と会{あ}いました。（　）、一緒{いっしょ}に晩{ばん}ご飯{はん}を食{た}べました。」',
                 options: ['そして', 'でも', 'しかし', 'だから'],
                 correctIndex: 0,
                 explanation: '對話情境。敘述做事順序。'
@@ -7277,19 +7277,19 @@ export const n4Details: Record<string, GrammarPoint> = {
             {
                 usageId: 1,
                 title: '表示因果關係',
-                description: '用於連接原因和結果，強調因果關係。',
+                description: '用於連接原{げん}因{いん}和結果，強調因果關係。',
                 examples: [
                     {
-                        japanese: '電車{でんしゃ}が止{と}まった。それで、遅刻{ちこく}した。',
+                        japanese: '電{でん}車{しゃ}が止{と}まった。それで、遅刻{ちこく}した。',
                         chinese: '電車停了。所以遲到了。'
                     },
                     {
-                        japanese: '彼{かれ}は病気{びょうき}だった。それで、学校{がっこう}を休{やす}んだ。',
+                        japanese: '彼{かれ}は病{びょう}気{き}だった。それで、学{がっ}校{こう}を休{やす}んだ。',
                         chinese: '他生病了。所以請假了。'
                     },
                     {
                         japanese: '雨{あめ}が降{ふ}っている。それで、傘{かさ}を持{も}っていく。',
-                        chinese: '在下雨。所以帶傘去。'
+                        chinese: '在下雨{あめ}。所以帶傘去。'
                     }
                 ]
             }
@@ -7304,7 +7304,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_sorede_2',
-                sentence: '約束{やくそく}があった。（　）、早{はや}く帰{かえ}った。',
+                sentence: '約{やく}束{そく}があった。（　）、早{はや}く帰{かえ}った。',
                 options: ['それで', 'でも', 'しかし', 'そして'],
                 correctIndex: 0,
                 explanation: '因為有約所以早回去。'
@@ -7332,7 +7332,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_sorede_5',
-                sentence: '仕事{しごと}が忙{いそが}しかった。（　）、旅行{りょこう}をキャンセルした。',
+                sentence: '仕事{しごと}が忙{いそが}しかった。（　）、旅{りょ}行{こう}をキャンセルした。',
                 options: ['それで', 'でも', 'しかし', 'そして'],
                 correctIndex: 0,
                 explanation: {
@@ -7416,7 +7416,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['でも', 'だから', 'それで', 'そして'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '轉折：下雨但還是出門了。',
+                    correct: '轉折：下雨{あめ}但還是出門了。',
                     wrong: [
                         '「だから」是因果。',
                         '「それで」是因果。',
@@ -7437,7 +7437,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             {
                 usageId: 1,
                 title: '正式的轉折表達',
-                description: '比「でも」更正式，多用於書面或正式場合。',
+                description: '比「でも」更正式，多用於書面或正式場{ば}合{あい}。',
                 examples: [
                     {
                         japanese: '努力{どりょく}した。しかし、失敗{しっぱい}した。',
@@ -7448,8 +7448,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '經濟在恢復。然而問題也很多。'
                     },
                     {
-                        japanese: '彼{かれ}の意見{いけん}は正{ただ}しい。しかし、賛成{さんせい}できない。',
-                        chinese: '他的意見是對的。然而不能贊成。'
+                        japanese: '彼{かれ}の意{い}見{けん}は正{ただ}しい。しかし、賛成{さんせい}できない。',
+                        chinese: '他的意{い}見{けん}是對的。然而不能贊成。'
                     }
                 ]
             }
@@ -7457,14 +7457,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_shikashi_1',
-                sentence: '説明{せつめい}を聞{き}いた。（　）、分{わ}からなかった。',
+                sentence: '説{せつ}明{めい}を聞{き}いた。（　）、分{わ}からなかった。',
                 options: ['しかし', 'だから', 'それで', 'そして'],
                 correctIndex: 0,
                 explanation: '轉折：聽了說明但不懂。'
             },
             {
                 id: 'n4_shikashi_2',
-                sentence: '彼{かれ}は若{わか}い。（　）、経験{けいけん}がある。',
+                sentence: '彼{かれ}は若{わか}い。（　）、経{けい}験{けん}がある。',
                 options: ['しかし', 'だから', 'それで', 'そして'],
                 correctIndex: 0,
                 explanation: '轉折：年輕但有經驗。'
@@ -7492,7 +7492,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_shikashi_5',
-                sentence: '彼女{かのじょ}は優秀{ゆうしゅう}だ。（　）、謙虚{けんきょ}だ。',
+                sentence: '彼{かれ}女{かのじょ}は優秀{ゆうしゅう}だ。（　）、謙虚{けんきょ}だ。',
                 options: ['しかし', 'だから', 'それで', 'それに'],
                 correctIndex: 0,
                 explanation: {
@@ -7510,21 +7510,21 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tokoro_da': {
         id: 'n4_tokoro_da',
         pattern: 'ところだ',
-        connection: '動詞辞書形 + ところだ\n動詞ている + ところだ\n動詞た形 + ところだ',
+        connection: '動{どう}詞{し}辞書形 + ところだ\n動{どう}詞{し}ている + ところだ\n動{どう}詞{し}た形 + ところだ',
         translation: '正要...; 正在...; 剛剛...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '即將做某事',
-                description: '「動詞辞書形 + ところだ」表示正要開始做某事。',
+                description: '「動{どう}詞{し}辞書形 + ところだ」表示正要開始做某事。',
                 examples: [
                     {
                         japanese: '今{いま}から出{で}かけるところです。',
                         chinese: '正要出門。'
                     },
                     {
-                        japanese: 'ちょうど電話{でんわ}をかけるところだった。',
+                        japanese: 'ちょうど電{でん}話{わ}をかけるところだった。',
                         chinese: '正要打電話。'
                     }
                 ]
@@ -7532,7 +7532,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             {
                 usageId: 2,
                 title: '正在做某事',
-                description: '「動詞ている + ところだ」表示正在進行中。',
+                description: '「動{どう}詞{し}ている + ところだ」表示正在進行中。',
                 examples: [
                     {
                         japanese: '今{いま}、食{た}べているところです。',
@@ -7547,14 +7547,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             {
                 usageId: 3,
                 title: '剛剛完成某事',
-                description: '「動詞た形 + ところだ」表示剛剛做完。',
+                description: '「動{どう}詞{し}た形 + ところだ」表示剛剛做完。',
                 examples: [
                     {
                         japanese: '今{いま}、帰{かえ}ってきたところです。',
                         chinese: '剛剛回來。'
                     },
                     {
-                        japanese: '電話{でんわ}を切{き}ったところだ。',
+                        japanese: '電{でん}話{わ}を切{き}ったところだ。',
                         chinese: '剛掛完電話。'
                     }
                 ]
@@ -7620,7 +7620,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_uchi_ni': {
         id: 'n4_uchi_ni',
         pattern: 'うちに',
-        connection: '動詞ている + うちに\nない形 + うちに\nい形容詞 + うちに\nな形容詞 + な + うちに\n名詞 + の + うちに',
+        connection: '動{どう}詞{し}ている + うちに\nない形 + うちに\nい形{けい}容{よう}詞{し} + うちに\nな形{けい}容{よう}詞{し} + な + うちに\n名{めい}詞{し} + の + うちに',
         translation: '趁著...; 在...之內',
         level: 'N4',
         explanation: [
@@ -7630,7 +7630,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示要趁著某個狀態或時機還存在時做某事。',
                 examples: [
                     {
-                        japanese: '若{わか}いうちに、いろいろ経験{けいけん}したい。',
+                        japanese: '若{わか}いうちに、いろいろ経{けい}験{けん}したい。',
                         chinese: '想趁年輕的時候體驗各種事情。'
                     },
                     {
@@ -7662,7 +7662,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_uchi_ni_1',
-                sentence: '元気{げんき}な（　）、旅行{りょこう}に行{い}きたい。',
+                sentence: '元{げん}気{き}な（　）、旅{りょ}行{こう}に行{い}きたい。',
                 options: ['うちに', '間に', '中に', 'ところに'],
                 correctIndex: 0,
                 explanation: '趁身體健康的時候想去旅行。'
@@ -7676,7 +7676,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_uchi_ni_3',
-                sentence: '何度{なんど}も練習{れんしゅう}している（　）、上手{じょうず}になった。',
+                sentence: '何度{なんど}も練{れん}習{しゅう}している（　）、上手{じょうず}になった。',
                 options: ['うちに', '間に', '中に', 'ところに'],
                 correctIndex: 0,
                 explanation: {
@@ -7715,7 +7715,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_toki': {
         id: 'n4_toki',
         pattern: '時（とき）',
-        connection: '動詞辞書形/た形 + 時\nい形容詞 + 時\nな形容詞 + な + 時\n名詞 + の + 時',
+        connection: '動{どう}詞{し}辞書形/た形 + 時\nい形{けい}容{よう}詞{し} + 時\nな形{けい}容{よう}詞{し} + な + 時\n名{めい}詞{し} + の + 時',
         translation: '...的時候',
         level: 'N4',
         explanation: [
@@ -7749,21 +7749,21 @@ export const n4Details: Record<string, GrammarPoint> = {
                 },
                 {
                     rule: '「た形＋時」：前項動作完成後，後項才發生。',
-                    examples: [{ japanese: '家{いえ}を出{で}た時{とき}、雨{あめ}が降{ふ}っていた。', chinese: '出門的時候在下雨（出門後發現在下雨）。' }]
+                    examples: [{ japanese: '家{いえ}を出{で}た時{とき}、雨{あめ}が降{ふ}っていた。', chinese: '出門的時候在下雨{あめ}（出門後發現在下雨{あめ}）。' }]
                 }
             ]
         },
         quiz: [
             {
                 id: 'n4_toki_1',
-                sentence: '子供{こども}の（　）、よく公園{こうえん}で遊{あそ}んだ。',
+                sentence: '子{こ}供{とも}の（　）、よく公園{こうえん}で遊{あそ}んだ。',
                 options: ['時', '間', 'うち', 'ところ'],
                 correctIndex: 0,
                 explanation: '小時候常在公園玩。'
             },
             {
                 id: 'n4_toki_2',
-                sentence: '困{こま}った（　）、連絡{れんらく}してください。',
+                sentence: '困{こま}った（　）、連{れん}絡{らく}してください。',
                 options: ['時は', '間は', 'うちは', 'ところは'],
                 correctIndex: 0,
                 explanation: '遇到困難的時候請聯絡。'
@@ -7791,7 +7791,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_toki_5',
-                sentence: '寂{さび}しい（　）、友達{ともだち}に電話{でんわ}する。',
+                sentence: '寂{さび}しい（　）、友{とも}達{だち}に電{でん}話{わ}する。',
                 options: ['時', '間', 'うち', 'ところ'],
                 correctIndex: 0,
                 explanation: {
@@ -7809,7 +7809,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_mae_ni': {
         id: 'n4_mae_ni',
         pattern: '前に（まえに）',
-        connection: '動詞辞書形 + 前に\n名詞 + の + 前に',
+        connection: '動{どう}詞{し}辞書形 + 前に\n名{めい}詞{し} + の + 前に',
         translation: '在...之前',
         level: 'N4',
         explanation: [
@@ -7823,7 +7823,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '睡覺之前刷牙。'
                     },
                     {
-                        japanese: '食事{しょくじ}の前{まえ}に、手{て}を洗{あら}ってください。',
+                        japanese: '食{しょく}事{じ}の前{まえ}に、手{て}を洗{あら}ってください。',
                         chinese: '吃飯之前請洗手。'
                     },
                     {
@@ -7836,14 +7836,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_mae_ni_1',
-                sentence: '会議{かいぎ}の（　）、資料{しりょう}を準備{じゅんび}しておいてください。',
+                sentence: '会議{かいぎ}の（　）、資料{しりょう}を準{じゅん}備{び}しておいてください。',
                 options: ['前に', '後に', '間に', 'うちに'],
                 correctIndex: 0,
-                explanation: '開會之前請準備好資料。'
+                explanation: '開會之前請準{じゅん}備{び}好資料。'
             },
             {
                 id: 'n4_mae_ni_2',
-                sentence: '日本{にほん}に来{く}る（　）、日本語{にほんご}を勉強{べんきょう}した。',
+                sentence: '日本{にほん}に来{く}る（　）、日本語{にほんご}を勉{べん}強{きょう}した。',
                 options: ['前に', '後に', '間に', 'うちに'],
                 correctIndex: 0,
                 explanation: '來日本之前學了日語。'
@@ -7889,7 +7889,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tari_tari': {
         id: 'n4_tari_tari',
         pattern: 'たり〜たり',
-        connection: '動詞た形 + り...動詞た形 + り + する',
+        connection: '動{どう}詞{し}た形 + り...動{どう}詞{し}た形 + り + する',
         translation: '又...又...; 或...或...',
         level: 'N4',
         explanation: [
@@ -7903,7 +7903,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '休假的時候會看電影、購物等等。'
                     },
                     {
-                        japanese: '昨日{きのう}は、掃除{そうじ}をしたり、洗濯{せんたく}をしたりした。',
+                        japanese: '昨日{きのう}は、掃{そう}除{じ}をしたり、洗{せん}濯{たく}をしたりした。',
                         chinese: '昨天打掃了、洗衣服了之類的。'
                     },
                     {
@@ -7916,14 +7916,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_tari_tari_1',
-                sentence: '週末{しゅうまつ}は、友達{ともだち}と遊{あそ}ん（　）、家{いえ}でゲームをし（　）する。',
+                sentence: '週末{しゅうまつ}は、友{とも}達{だち}と遊{あそ}ん（　）、家{いえ}でゲームをし（　）する。',
                 options: ['だり...たり', 'で...て', 'ながら...ながら', 'つつ...つつ'],
                 correctIndex: 0,
-                explanation: '週末會跟朋友玩、在家打遊戲等。'
+                explanation: '週{しゅう}末{まつ}會跟朋友玩、在家打遊戲等。'
             },
             {
                 id: 'n4_tari_tari_2',
-                sentence: '旅行{りょこう}で、写真{しゃしん}を撮{と}っ（　）、お土産{みやげ}を買{か}っ（　）した。',
+                sentence: '旅{りょ}行{こう}で、写真{しゃしん}を撮{と}っ（　）、お土産{みやげ}を買{か}っ（　）した。',
                 options: ['たり...たり', 'て...て', 'ながら...ながら', 'つつ...つつ'],
                 correctIndex: 0,
                 explanation: '旅行時拍照、買伴手禮等。'
@@ -7955,7 +7955,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['たり...たり', 'て...て', 'ながら...ながら', 'つつ...つつ'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '時忙時閒。形容詞也可用「たり〜たり」。',
+                    correct: '時忙時閒。形{けい}容{よう}詞{し}也可用「たり〜たり」。',
                     wrong: [
                         '「て」形不這樣用。',
                         '「ながら」不這樣用。',
@@ -7969,14 +7969,14 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_to_conditional': {
         id: 'n4_to_conditional',
         pattern: 'と（條件）',
-        connection: '動詞辞書形/ない形 + と',
+        connection: '動{どう}詞{し}辞書形/ない形 + と',
         translation: '一...就...; 如果...就...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '表示必然結果或自然現象',
-                description: '表示前項發生後必然會有後項的結果，常用於自然現象、習慣或機器操作等。',
+                description: '表示前項發生後必然會有後項的結果，常用於自然現象、習{しゅう}慣{かん}或機器操作等。',
                 examples: [
                     {
                         japanese: '春{はる}になると、桜{さくら}が咲{さ}く。',
@@ -8035,7 +8035,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['と', 'ば', 'たら', 'なら'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '一喝酒臉就會紅（習慣性結果）。',
+                    correct: '一喝酒臉就會紅（習{しゅう}慣{かん}性結果）。',
                     wrong: [
                         '「ば」也可以。',
                         '「たら」較不自然。',
@@ -8049,21 +8049,21 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_node': {
         id: 'n4_node',
         pattern: 'ので',
-        connection: '動詞普通形 + ので\nい形容詞 + ので\nな形容詞 + な + ので\n名詞 + な + ので',
+        connection: '動{どう}詞{し}普通形 + ので\nい形{けい}容{よう}詞{し} + ので\nな形{けい}容{よう}詞{し} + な + ので\n名{めい}詞{し} + な + ので',
         translation: '因為...所以...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '客觀地陳述理由',
-                description: '比「から」更客觀、委婉，常用於正式場合或向他人說明理由時。',
+                title: '客{きゃく}觀地陳述理{り}由{ゆう}',
+                description: '比「から」更客{きゃく}觀、委婉，常用於正式場{ば}合{あい}或向他人說明理{り}由{ゆう}時。',
                 examples: [
                     {
-                        japanese: '電車{でんしゃ}が遅{おく}れたので、遅刻{ちこく}しました。',
+                        japanese: '電{でん}車{しゃ}が遅{おく}れたので、遅刻{ちこく}しました。',
                         chinese: '因為電車誤點所以遲到了。'
                     },
                     {
-                        japanese: '天気{てんき}がいいので、散歩{さんぽ}しましょう。',
+                        japanese: '天気{てんき}がいいので、散{さん}歩{ぽ}しましょう。',
                         chinese: '因為天氣好，去散步吧。'
                     },
                     {
@@ -8075,14 +8075,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         ],
         analysis: {
             title: '「ので」與「から」的比較',
-            description: '兩者都表示原因，但語感不同。',
+            description: '兩者都表示原{げん}因{いん}，但語感不同。',
             points: [
                 {
-                    rule: '「ので」較客觀、委婉、禮貌，多用於正式場合。',
+                    rule: '「ので」較客{きゃく}觀、委婉、禮貌，多用於正式場{ば}合{あい}。',
                     examples: [{ japanese: '体調{たいちょう}が悪{わる}いので、休{やす}ませてください。', chinese: '因為身體不舒服，請讓我休息（委婉請求）。' }]
                 },
                 {
-                    rule: '「から」較主觀、直接，可用於口語或強調個人理由。',
+                    rule: '「から」較主觀、直接，可用於口{こう}語{ご}或強調個人理{り}由{ゆう}。',
                     examples: [{ japanese: '眠{ねむ}いから、寝{ね}る。', chinese: '因為睏了所以睡（直接）。' }]
                 }
             ]
@@ -8093,7 +8093,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '雨{あめ}が降{ふ}っている（　）、傘{かさ}を持{も}っていきます。',
                 options: ['ので', 'から', 'のに', 'けど'],
                 correctIndex: 0,
-                explanation: '因為在下雨所以帶傘去。'
+                explanation: '因為在下雨{あめ}所以帶傘去。'
             },
             {
                 id: 'n4_node_2',
@@ -8121,7 +8121,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '「どうして来{こ}なかったの？」\n「用事{ようじ}があった（　）...」',
                 options: ['ので', 'から', 'のに', 'けど'],
                 correctIndex: 0,
-                explanation: '對話情境。委婉地說明理由。'
+                explanation: '對話情境。委婉地說明理{り}由{ゆう}。'
             },
             {
                 id: 'n4_node_5',
@@ -8142,22 +8142,22 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_kara_reason': {
         id: 'n4_kara_reason',
-        pattern: 'から（原因）',
-        connection: '動詞普通形 + から\nい形容詞 + から\nな形容詞 + だ + から\n名詞 + だ + から',
+        pattern: 'から（原{げん}因{いん}）',
+        connection: '動{どう}詞{し}普通形 + から\nい形{けい}容{よう}詞{し} + から\nな形{けい}容{よう}詞{し} + だ + から\n名{めい}詞{し} + だ + から',
         translation: '因為...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '主觀地說明理由',
-                description: '直接說明理由，語氣較主觀，常用於口語或強調個人想法時。',
+                title: '主觀地說明理{り}由{ゆう}',
+                description: '直接說明理{り}由{ゆう}，語氣較主觀，常用於口{こう}語{ご}或強調個人想法時。',
                 examples: [
                     {
                         japanese: '暑{あつ}いから、エアコンをつけて。',
                         chinese: '因為很熱，開冷氣吧。'
                     },
                     {
-                        japanese: '好{す}きだから、毎日{まいにち}食{た}べる。',
+                        japanese: '好{す}きだから、毎{まい}日{にち}食{た}べる。',
                         chinese: '因為喜歡所以每天吃。'
                     },
                     {
@@ -8190,7 +8190,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '因為明天休息所以熬夜。',
                     wrong: [
-                        '「ので」也可以但「から」更口語。',
+                        '「ので」也可以但「から」更口{こう}語{ご}。',
                         '「のに」表示逆接。',
                         '「けど」表示轉折。'
                     ]
@@ -8227,25 +8227,25 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tame_ni': {
         id: 'n4_tame_ni',
         pattern: 'ために',
-        connection: '動詞辞書形 + ために\n名詞 + の + ために',
+        connection: '動{どう}詞{し}辞書形 + ために\n名{めい}詞{し} + の + ために',
         translation: '為了...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '表示目的',
-                description: '表示為了達成某個目的而做某事。',
+                title: '表示目{もく}的{てき}',
+                description: '表示為了達成某個目{もく}的{てき}而做某事。',
                 examples: [
                     {
                         japanese: '日本{にほん}に行{い}くために、お金{かね}を貯{た}めている。',
                         chinese: '為了去日本，正在存錢。'
                     },
                     {
-                        japanese: '健康{けんこう}のために、毎日{まいにち}運動{うんどう}している。',
+                        japanese: '健康{けんこう}のために、毎{まい}日{にち}運動{うんどう}している。',
                         chinese: '為了健康，每天運動。'
                     },
                     {
-                        japanese: '試験{しけん}に合格{ごうかく}するために、一生懸命{いっしょうけんめい}勉強{べんきょう}した。',
+                        japanese: '試験{しけん}に合格{ごうかく}するために、一生懸命{いっしょうけんめい}勉{べん}強{きょう}した。',
                         chinese: '為了考試及格，努力學習了。'
                     }
                 ]
@@ -8254,50 +8254,65 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_tame_ni_1',
-                sentence: '大学{だいがく}に入{はい}る（　）、勉強{べんきょう}している。',
+                sentence: '大学{だいがく}に入{はい}る（　）、勉{べん}強{きょう}している。',
                 options: ['ために', 'ように', 'から', 'ので'],
                 correctIndex: 0,
                 explanation: '為了進大學在學習。'
             },
             {
                 id: 'n4_tame_ni_2',
-                sentence: '家族{かぞく}の（　）、働{はたら}いている。',
+                sentence: '家{か}族{ぞく}の（　）、働{はたら}いている。',
                 options: ['ために', 'ように', 'から', 'ので'],
                 correctIndex: 0,
                 explanation: '為了家人在工作。'
             },
             {
                 id: 'n4_tame_ni_3',
-                sentence: '痩{や}せる（　）、食事{しょくじ}を減{へ}らしている。',
+                sentence: '痩{や}せる（　）、食{しょく}事{じ}を減{へ}らしている。',
                 options: ['ために', 'ように', 'から', 'ので'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '為了減肥，減少飲食。',
+                    correct: '為了減肥，減少飲食{た}。',
                     wrong: [
                         '「ように」也可以，但「ために」更自然。',
-                        '「から」表示原因。',
-                        '「ので」表示原因。'
+                        '「から」表示原{げん}因{いん}。',
+                        '「ので」表示原{げん}因{いん}。'
                     ]
                 }
             },
             {
                 id: 'n4_tame_ni_4',
-                sentence: '「どうしてアルバイトしているの？」\n「旅行{りょこう}に行{い}く（　）。」',
+                sentence: '「どうしてアルバイトしているの？」\n「旅{りょ}行{こう}に行{い}く（　）。」',
                 options: ['ために', 'ように', 'から', 'ので'],
                 correctIndex: 0,
-                explanation: '對話情境。說明打工的目的。'
+                explanation: '對話情境。說明打工的目{もく}的{てき}。'
             },
             {
                 id: 'n4_tame_ni_5',
-                sentence: '将来{しょうらい}の（　）、今{いま}から準備{じゅんび}している。',
+                sentence: '将来{しょうらい}の（　）、今{いま}から準{じゅん}備{び}している。',
                 options: ['ために', 'ように', 'から', 'ので'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '為了將來，從現在開始準備。',
+                    correct: '為了將來，從現在開始準{じゅん}備{び}。',
                     wrong: [
-                        '「ように」用於非意志動詞。',
-                        '「から」表示原因。',
-                        '「ので」表示原因。'
+                        '「ように」用於非意志動{どう}詞{し}。',
+                        '「から」表示原{げん}因{いん}。',
+                        '「ので」表示原{げん}因{いん}。'
+                    ]
+                }
+            },
+            // 第 6 題：陷阱題 - 正確答案是「ように」
+            {
+                id: 'n4_tame_ni_6',
+                sentence: '日本語{にほんご}が話{はな}せる（　）、毎日{まいにち}練習{れんしゅう}します。',
+                options: ['ために', 'ように', 'のに', 'ので'],
+                correctIndex: 1,
+                explanation: {
+                    correct: '「ように」正確！前接「話せる（能說）」是可能形（狀態/非意志），故用「ように」。',
+                    wrong: [
+                        '「ために」錯誤：「ために」前接「意志動詞」的辭書形。若{わか}是「話す（說）」則可用「ために」。',
+                        '「のに」錯誤：表示逆接或用途。',
+                        '「ので」錯誤：表示原因。'
                     ]
                 }
             }
@@ -8306,18 +8321,18 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_you_ni_goal': {
         id: 'n4_you_ni_goal',
-        pattern: 'ように（目的）',
-        connection: '動詞辞書形/可能形/ない形 + ように',
+        pattern: 'ように（目{もく}的{てき}）',
+        connection: '動{どう}詞{し}辞書形/可能形/ない形 + ように',
         translation: '為了能夠...; 以便...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '表示非意志性的目的',
-                description: '用於非意志動詞或可能形，表示希望達到某種狀態。',
+                title: '表示非意志性的目{もく}的{てき}',
+                description: '用於非意志動{どう}詞{し}或可能形，表示希望達到某種狀態。',
                 examples: [
                     {
-                        japanese: '日本語{にほんご}が話{はな}せるように、毎日{まいにち}練習{れんしゅう}している。',
+                        japanese: '日本語{にほんご}が話{はな}せるように、毎{まい}日{にち}練{れん}習{しゅう}している。',
                         chinese: '為了能說日語，每天練習。'
                     },
                     {
@@ -8333,15 +8348,15 @@ export const n4Details: Record<string, GrammarPoint> = {
         ],
         analysis: {
             title: '「ために」與「ように」的比較',
-            description: '兩者都表示目的，但用法不同。',
+            description: '兩者都表示目{もく}的{てき}，但用法不同。',
             points: [
                 {
-                    rule: '「ために」：用於意志動詞，主語前後相同。',
-                    examples: [{ japanese: '大学{だいがく}に入{はい}るために勉強{べんきょう}する。', chinese: '為了進大學而學習。' }]
+                    rule: '「ために」：用於意志動{どう}詞{し}，主語前後相同。',
+                    examples: [{ japanese: '大学{だいがく}に入{はい}るために勉{べん}強{きょう}する。', chinese: '為了進大學而學習。' }]
                 },
                 {
-                    rule: '「ように」：用於可能形、非意志動詞、或否定形。',
-                    examples: [{ japanese: '読{よ}めるように練習{れんしゅう}する。', chinese: '為了能讀而練習。' }]
+                    rule: '「ように」：用於可能形、非意志動{どう}詞{し}、或否定形。',
+                    examples: [{ japanese: '読{よ}めるように練{れん}習{しゅう}する。', chinese: '為了能讀而練習。' }]
                 }
             ]
         },
@@ -8362,15 +8377,15 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_you_ni_goal_3',
-                sentence: '子供{こども}でも分{わ}かる（　）、簡単{かんたん}に説明{せつめい}した。',
+                sentence: '子{こ}供{とも}でも分{わ}かる（　）、簡単{かんたん}に説{せつ}明{めい}した。',
                 options: ['ように', 'ために', 'から', 'ので'],
                 correctIndex: 0,
                 explanation: {
                     correct: '為了連小孩也能懂，簡單地說明了。',
                     wrong: [
-                        '「ために」用於意志動詞。',
-                        '「から」表示原因。',
-                        '「ので」表示原因。'
+                        '「ために」用於意志動{どう}詞{し}。',
+                        '「から」表示原{げん}因{いん}。',
+                        '「ので」表示原{げん}因{いん}。'
                     ]
                 }
             },
@@ -8383,15 +8398,30 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_you_ni_goal_5',
-                sentence: '泳{およ}げる（　）練習{れんしゅう}している。',
+                sentence: '泳{およ}げる（　）練{れん}習{しゅう}している。',
                 options: ['ように', 'ために', 'から', 'ので'],
                 correctIndex: 0,
                 explanation: {
                     correct: '為了能游泳而練習。可能形用「ように」。',
                     wrong: [
                         '「ために」不用於可能形。',
-                        '「から」表示原因。',
-                        '「ので」表示原因。'
+                        '「から」表示原{げん}因{いん}。',
+                        '「ので」表示原{げん}因{いん}。'
+                    ]
+                }
+            },
+            // 第 6 題：陷阱題 - 正確答案是「ために」
+            {
+                id: 'n4_you_ni_goal_6',
+                sentence: '家{いえ}を（　）、一生懸命{いっしょうけんめい}働{はたら}いています。',
+                options: ['買うために', '買うように', '買ってから', '買うのに'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「買うために」正確！「買う」是意志動詞，表示「為了買房子」的明確目的，用「ために」。',
+                    wrong: [
+                        '「買うように」錯誤：雖然表示目的，但「ように」前接意志動詞辭書形通常表示「努力做到.../習慣...」，這裡強調「賺錢的目的」用「ために」更合適。',
+                        '「買ってから」錯誤：「買了之後」。',
+                        '「買うのに」錯誤：「為了買...（用途/花費）」，若接「働いています」不如「ために」自然。'
                     ]
                 }
             }
@@ -8401,14 +8431,14 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_mitai': {
         id: 'n4_mitai',
         pattern: 'みたい',
-        connection: '動詞普通形 + みたい\nい形容詞 + みたい\nな形容詞 + みたい\n名詞 + みたい',
+        connection: '動{どう}詞{し}普通形 + みたい\nい形{けい}容{よう}詞{し} + みたい\nな形{けい}容{よう}詞{し} + みたい\n名{めい}詞{し} + みたい',
         translation: '好像...; 像...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '表示推測',
-                description: '根據觀察或印象進行推測，語氣較口語。',
+                description: '根據觀察或印象進行推測，語氣較口{こう}語{ご}。',
                 examples: [
                     {
                         japanese: '彼{かれ}は疲{つか}れているみたいだ。',
@@ -8416,10 +8446,10 @@ export const n4Details: Record<string, GrammarPoint> = {
                     },
                     {
                         japanese: '雨{あめ}が降{ふ}りそうみたいだ。',
-                        chinese: '好像要下雨了。'
+                        chinese: '好像要下雨{あめ}了。'
                     },
                     {
-                        japanese: '彼女{かのじょ}は怒{おこ}っているみたい。',
+                        japanese: '彼{かれ}女{かのじょ}は怒{おこ}っているみたい。',
                         chinese: '她好像在生氣。'
                     }
                 ]
@@ -8430,7 +8460,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '將某物比喻成另一物。',
                 examples: [
                     {
-                        japanese: '彼{かれ}は子供{こども}みたいだ。',
+                        japanese: '彼{かれ}は子{こ}供{とも}みたいだ。',
                         chinese: '他像小孩一樣。'
                     },
                     {
@@ -8443,21 +8473,21 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_mitai_1',
-                sentence: '彼{かれ}は病気{びょうき}（　）。',
+                sentence: '彼{かれ}は病{びょう}気{き}（　）。',
                 options: ['みたいだ', 'そうだ', 'ようだ', 'らしい'],
                 correctIndex: 0,
-                explanation: '他好像生病了（口語推測）。'
+                explanation: '他好像生病了（口{こう}語{ご}推測）。'
             },
             {
                 id: 'n4_mitai_2',
-                sentence: 'この部屋{へや}は夏{なつ}（　）暑{あつ}い。',
+                sentence: 'この部{へ}屋{や}は夏{なつ}（　）暑{あつ}い。',
                 options: ['みたいに', 'そうに', 'ように', 'らしく'],
                 correctIndex: 0,
                 explanation: '這房間像夏天一樣熱（比喻）。'
             },
             {
                 id: 'n4_mitai_3',
-                sentence: '彼女{かのじょ}は何{なに}か知{し}っている（　）。',
+                sentence: '彼{かれ}女{かのじょ}は何{なに}か知{し}っている（　）。',
                 options: ['みたいだ', 'そうだ', 'ようだ', 'らしい'],
                 correctIndex: 0,
                 explanation: {
@@ -8482,7 +8512,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['みたいな', 'そうな', 'ような', 'らしい'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '像夢一樣的故事（比喻）。',
+                    correct: '像夢{ゆめ}一樣的故事（比喻）。',
                     wrong: [
                         '「そうな」不用於比喻。',
                         '「ような」也可以但較正式。',
@@ -8496,14 +8526,14 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_keredo': {
         id: 'n4_keredo',
         pattern: 'けれど/けど',
-        connection: '動詞普通形 + けれど/けど\nい形容詞 + けれど/けど\nな形容詞 + だ + けれど/けど\n名詞 + だ + けれど/けど',
+        connection: '動{どう}詞{し}普通形 + けれど/けど\nい形{けい}容{よう}詞{し} + けれど/けど\nな形{けい}容{よう}詞{し} + だ + けれど/けど\n名{めい}詞{し} + だ + けれど/けど',
         translation: '雖然...但是...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '表示轉折',
-                description: '連接兩個相反或對比的內容。「けど」較口語，「けれど」較正式。',
+                description: '連接兩個相反或對比的內容。「けど」較口{こう}語{ご}，「けれど」較正式。',
                 examples: [
                     {
                         japanese: '高{たか}いけど、買{か}いたい。',
@@ -8538,14 +8568,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_keredo_1',
-                sentence: '行{い}きたい（　）、時間{じかん}がない。',
+                sentence: '行{い}きたい（　）、時{じ}間{かん}がない。',
                 options: ['けど', 'から', 'ので', 'のに'],
                 correctIndex: 0,
                 explanation: '想去，但沒時間。'
             },
             {
                 id: 'n4_keredo_2',
-                sentence: '約束{やくそく}した（　）、忘{わす}れていた。',
+                sentence: '約{やく}束{そく}した（　）、忘{わす}れていた。',
                 options: ['けど', 'から', 'ので', 'のに'],
                 correctIndex: 0,
                 explanation: '雖然約好了，但忘記了。'
@@ -8558,8 +8588,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '雖然小，但很方便。',
                     wrong: [
-                        '「から」表示原因。',
-                        '「ので」表示原因。',
+                        '「から」表示原{げん}因{いん}。',
+                        '「ので」表示原{げん}因{いん}。',
                         '「のに」帶有不滿情緒。'
                     ]
                 }
@@ -8579,8 +8609,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '他雖然溫柔，但偶爾會生氣。',
                     wrong: [
-                        '「から」表示原因。',
-                        '「ので」表示原因。',
+                        '「から」表示原{げん}因{いん}。',
+                        '「ので」表示原{げん}因{いん}。',
                         '「のに」帶有不滿情緒。'
                     ]
                 }
@@ -8590,22 +8620,22 @@ export const n4Details: Record<string, GrammarPoint> = {
 
     'n4_te_form_reason': {
         id: 'n4_te_form_reason',
-        pattern: 'て形（原因）',
-        connection: '動詞て形 / い形容詞くて / な形容詞で / 名詞で',
+        pattern: 'て形（原{げん}因{いん}）',
+        connection: '動{どう}詞{し}て形 / い形{けい}容{よう}詞{し}くて / な形{けい}容{よう}詞{し}で / 名{めい}詞{し}で',
         translation: '因為...(所以)...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '表示原因或理由',
-                description: '用て形連接表示原因，後面接感情或狀態。',
+                title: '表示原{げん}因{いん}或理{り}由{ゆう}',
+                description: '用て形連接表示原{げん}因{いん}，後面接感情或狀態。',
                 examples: [
                     {
                         japanese: '嬉{うれ}しくて、泣{な}いてしまった。',
                         chinese: '因為太高興，哭了出來。'
                     },
                     {
-                        japanese: '風邪{かぜ}をひいて、学校{がっこう}を休{やす}んだ。',
+                        japanese: '風邪{かぜ}をひいて、学{がっ}校{こう}を休{やす}んだ。',
                         chinese: '因為感冒，請假了。'
                     },
                     {
@@ -8625,7 +8655,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_te_form_reason_2',
-                sentence: '電車{でんしゃ}が止{と}まっ（　）、会社{かいしゃ}に行{い}けなかった。',
+                sentence: '電{でん}車{しゃ}が止{と}まっ（　）、会社{かいしゃ}に行{い}けなかった。',
                 options: ['て', 'から', 'ので', 'のに'],
                 correctIndex: 0,
                 explanation: '因為電車停了，無法去公司。'
@@ -8671,7 +8701,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_dake': {
         id: 'n4_dake',
         pattern: 'だけ',
-        connection: '名詞 + だけ\n動詞普通形 + だけ\n數量詞 + だけ',
+        connection: '名{めい}詞{し} + だけ\n動{どう}詞{し}普通形 + だけ\n數量詞 + だけ',
         translation: '只; 僅僅',
         level: 'N4',
         explanation: [
@@ -8700,7 +8730,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             description: '兩者都表示限定，但語感不同。',
             points: [
                 {
-                    rule: '「だけ」客觀陳述限定，後接肯定形。',
+                    rule: '「だけ」客{きゃく}觀陳述限定，後接肯定形。',
                     examples: [{ japanese: '3人{にん}だけ来{き}た。', chinese: '只有3個人來了。' }]
                 },
                 {
@@ -8740,7 +8770,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_dake_4',
-                sentence: '「全部{ぜんぶ}食{た}べたの？」\n「いいえ、少{すこ}し（　）。」',
+                sentence: '「全{ぜん}部{ぶ}食{た}べたの？」\n「いいえ、少{すこ}し（　）。」',
                 options: ['だけ', 'しか', 'ばかり', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。只吃了一點。'
@@ -8765,7 +8795,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_shika': {
         id: 'n4_shika',
         pattern: 'しか〜ない',
-        connection: '名詞 + しか + 否定\n數量詞 + しか + 否定',
+        connection: '名{めい}詞{し} + しか + 否定\n數量詞 + しか + 否定',
         translation: '只有...; 僅...',
         level: 'N4',
         explanation: [
@@ -8783,7 +8813,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '只有他知道（沒有其他人知道）。'
                     },
                     {
-                        japanese: '時間{じかん}が30分{ぷん}しかなかった。',
+                        japanese: '時{じ}間{かん}が30分{ぷん}しかなかった。',
                         chinese: '只有30分鐘（時間不夠）。'
                     }
                 ]
@@ -8845,7 +8875,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_demo_particle': {
         id: 'n4_demo_particle',
         pattern: 'でも（助詞）',
-        connection: '疑問詞 + でも\n名詞 + でも',
+        connection: '疑問詞 + でも\n名{めい}詞{し} + でも',
         translation: '無論...; ...什麼的',
         level: 'N4',
         explanation: [
@@ -8863,14 +8893,14 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '誰都能參加。'
                     },
                     {
-                        japanese: 'いつでも連絡{れんらく}してください。',
+                        japanese: 'いつでも連{れん}絡{らく}してください。',
                         chinese: '隨時聯絡我。'
                     }
                 ]
             },
             {
                 usageId: 2,
-                title: '名詞＋でも：舉例',
+                title: '名{めい}詞{し}＋でも：舉例',
                 description: '舉出一個例子，表示「...什麼的」「...之類的」。',
                 examples: [
                     {
@@ -8915,14 +8945,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_demo_particle_4',
-                sentence: '「暇{ひま}だね。」\n「散歩{さんぽ}（　）しない？」',
+                sentence: '「暇{ひま}だね。」\n「散{さん}歩{ぽ}（　）しない？」',
                 options: ['でも', 'か', 'も', 'を'],
                 correctIndex: 0,
                 explanation: '對話情境。去散步什麼的好嗎？'
             },
             {
                 id: 'n4_demo_particle_5',
-                sentence: '誰{だれ}（　）知{し}っている有名{ゆうめい}な話{はなし}だ。',
+                sentence: '誰{だれ}（　）知{し}っている有{ゆう}名{めい}な話{はなし}だ。',
                 options: ['でも', 'か', 'も', 'が'],
                 correctIndex: 0,
                 explanation: {
@@ -9032,11 +9062,11 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示數量超出預期，「竟然有這麼多」。',
                 examples: [
                     {
-                        japanese: '3時間{じかん}も待{ま}った。',
+                        japanese: '3時{じ}間{かん}も待{ま}った。',
                         chinese: '竟然等了3小時。'
                     },
                     {
-                        japanese: '10回{かい}も電話{でんわ}した。',
+                        japanese: '10回{かい}も電{でん}話{わ}した。',
                         chinese: '打了10次電話之多。'
                     },
                     {
@@ -9068,7 +9098,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_mo_particle_1',
-                sentence: '2時間{じかん}（　）歩{ある}いた。',
+                sentence: '2時{じ}間{かん}（　）歩{ある}いた。',
                 options: ['も', 'が', 'を', 'に'],
                 correctIndex: 0,
                 explanation: '竟然走了2小時（強調時間長）。'
@@ -9121,7 +9151,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_made_particle': {
         id: 'n4_made_particle',
         pattern: 'まで（極端）',
-        connection: '名詞 + まで',
+        connection: '名{めい}詞{し} + まで',
         translation: '甚至連...都...',
         level: 'N4',
         explanation: [
@@ -9131,7 +9161,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '舉出一個極端的例子，表示「連這個都...」，暗示其他更不用說。',
                 examples: [
                     {
-                        japanese: '子供{こども}まで知{し}っている。',
+                        japanese: '子{こ}供{とも}まで知{し}っている。',
                         chinese: '連小孩都知道。'
                     },
                     {
@@ -9155,14 +9185,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_made_particle_2',
-                sentence: '先生{せんせい}（　）わからない問題{もんだい}だ。',
+                sentence: '先{せん}生{せい}（　）わからない問題{もんだい}だ。',
                 options: ['まで', 'も', 'が', 'に'],
                 correctIndex: 0,
                 explanation: '連老師都不會的問題。'
             },
             {
                 id: 'n4_made_particle_3',
-                sentence: '犬{いぬ}（　）食{た}べない料理{りょうり}だ。',
+                sentence: '犬{いぬ}（　）食{た}べない料{りょう}理{り}だ。',
                 options: ['まで', 'も', 'が', 'を'],
                 correctIndex: 0,
                 explanation: {
@@ -9201,13 +9231,13 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_to_omou': {
         id: 'n4_to_omou',
         pattern: 'と思う',
-        connection: '動詞普通形 + と思う\n動詞意向形 + と思う\nい形容詞 + と思う\nな形容詞 + だ + と思う\n名詞 + だ + と思う',
+        connection: '動{どう}詞{し}普通形 + と思う\n動{どう}詞{し}意向形 + と思う\nい形{けい}容{よう}詞{し} + と思う\nな形{けい}容{よう}詞{し} + だ + と思う\n名{めい}詞{し} + だ + と思う',
         translation: '我認為...; 我想...',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '表示自己的想法或意見',
+                title: '表示自己的想法或意{い}見{けん}',
                 description: '用於表達說話者的看法或判斷。',
                 examples: [
                     {
@@ -9215,12 +9245,12 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '我認為他會來。'
                     },
                     {
-                        japanese: 'この料理{りょうり}はおいしいと思{おも}う。',
+                        japanese: 'この料{りょう}理{り}はおいしいと思{おも}う。',
                         chinese: '我覺得這道菜好吃。'
                     },
                     {
                         japanese: '明日{あした}は晴{は}れだと思{おも}う。',
-                        chinese: '我想明天會放晴。'
+                        chinese: '我想明天會放晴{は}れ。'
                     }
                 ]
             },
@@ -9230,7 +9260,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示說話者的意圖或打算。',
                 examples: [
                     {
-                        japanese: '来年{らいねん}、日本{にほん}に行{い}こうと思{おも}っている。',
+                        japanese: '来{らい}年{ねん}、日本{にほん}に行{い}こうと思{おも}っている。',
                         chinese: '我打算明年去日本。'
                     },
                     {
@@ -9243,7 +9273,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_to_omou_1',
-                sentence: '彼女{かのじょ}は優{やさ}しい（　）。',
+                sentence: '彼{かれ}女{かのじょ}は優{やさ}しい（　）。',
                 options: ['と思う', 'を思う', 'に思う', 'で思う'],
                 correctIndex: 0,
                 explanation: '我覺得她很溫柔。'
@@ -9296,7 +9326,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_to_ka': {
         id: 'n4_to_ka',
         pattern: 'とか',
-        connection: '名詞 + とか + 名詞 + とか\n動詞普通形 + とか',
+        connection: '名{めい}詞{し} + とか + 名{めい}詞{し} + とか\n動{どう}詞{し}普通形 + とか',
         translation: '...之類的; ...什麼的',
         level: 'N4',
         explanation: [
@@ -9311,7 +9341,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     },
                     {
                         japanese: '週末{しゅうまつ}は映画{えいが}を見{み}るとか、買{か}い物{もの}をするとかした。',
-                        chinese: '週末看了電影啊、購物之類的。'
+                        chinese: '週{しゅう}末{まつ}看了電影啊、購物之類的。'
                     },
                     {
                         japanese: 'コーヒーとか紅茶{こうちゃ}とか、何{なに}かありますか。',
@@ -9337,7 +9367,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_to_ka_3',
-                sentence: '日曜日{にちようび}は掃除{そうじ}する（　）洗濯{せんたく}する（　）した。',
+                sentence: '日{にち}曜{よう}日{び}は掃{そう}除{じ}する（　）洗{せん}濯{たく}する（　）した。',
                 options: ['とか...とか', 'と...と', 'や...や', 'か...か'],
                 correctIndex: 0,
                 explanation: {
@@ -9376,7 +9406,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_sou_da_hearsay': {
         id: 'n4_sou_da_hearsay',
         pattern: 'そうだ（伝聞）',
-        connection: '動詞普通形 + そうだ\nい形容詞 + そうだ\nな形容詞 + だ + そうだ\n名詞 + だ + そうだ',
+        connection: '動{どう}詞{し}普通形 + そうだ\nい形{けい}容{よう}詞{し} + そうだ\nな形{けい}容{よう}詞{し} + だ + そうだ\n名{めい}詞{し} + だ + そうだ',
         translation: '聽說...; 據說...',
         level: 'N4',
         explanation: [
@@ -9387,7 +9417,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 examples: [
                     {
                         japanese: '明日{あした}は雨{あめ}だそうだ。',
-                        chinese: '聽說明天下雨。'
+                        chinese: '聽說明天下雨{あめ}。'
                     },
                     {
                         japanese: '彼{かれ}は結婚{けっこん}したそうだ。',
@@ -9405,19 +9435,19 @@ export const n4Details: Record<string, GrammarPoint> = {
             description: '兩者接續和意義不同，需特別注意。',
             points: [
                 {
-                    rule: '伝聞：動詞普通形＋そうだ → 聽說...',
-                    examples: [{ japanese: '雨{あめ}が降{ふ}るそうだ。', chinese: '聽說會下雨。' }]
+                    rule: '伝聞：動{どう}詞{し}普通形＋そうだ → 聽說...',
+                    examples: [{ japanese: '雨{あめ}が降{ふ}るそうだ。', chinese: '聽說會下雨{あめ}。' }]
                 },
                 {
-                    rule: '様態：動詞ます形（去ます）＋そうだ → 看起來要...',
-                    examples: [{ japanese: '雨{あめ}が降{ふ}りそうだ。', chinese: '看起來要下雨了。' }]
+                    rule: '様態：動{どう}詞{し}ます形（去ます）＋そうだ → 看起來要...',
+                    examples: [{ japanese: '雨{あめ}が降{ふ}りそうだ。', chinese: '看起來要下雨{あめ}了。' }]
                 }
             ]
         },
         quiz: [
             {
                 id: 'n4_sou_da_hearsay_1',
-                sentence: '彼{かれ}は来年{らいねん}留学{りゅうがく}する（　）。',
+                sentence: '彼{かれ}は来{らい}年{ねん}留学{りゅうがく}する（　）。',
                 options: ['そうだ', 'そうだった', 'ようだ', 'みたいだ'],
                 correctIndex: 0,
                 explanation: '聽說他明年要留學。'
@@ -9437,7 +9467,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '聽說明天放假。',
                     wrong: [
-                        '「そうな」用於修飾名詞。',
+                        '「そうな」用於修飾名{めい}詞{し}。',
                         '「ようだ」表示推測。',
                         '「みたいだ」表示推測。'
                     ]
@@ -9458,7 +9488,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '聽說考試很難。',
                     wrong: [
-                        '「そうな」用於修飾名詞。',
+                        '「そうな」用於修飾名{めい}詞{し}。',
                         '「ようだ」表示推測。',
                         '「みたいだ」表示推測。'
                     ]
@@ -9470,7 +9500,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hazu': {
         id: 'n4_hazu',
         pattern: 'はず',
-        connection: '動詞普通形 + はず\nい形容詞 + はず\nな形容詞 + な + はず\n名詞 + の + はず',
+        connection: '動{どう}詞{し}普通形 + はず\nい形{けい}容{よう}詞{し} + はず\nな形{けい}容{よう}詞{し} + な + はず\n名{めい}詞{し} + の + はず',
         translation: '應該...; 理應...',
         level: 'N4',
         explanation: [
@@ -9488,7 +9518,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '鑰匙應該在這裡。'
                     },
                     {
-                        japanese: '彼女{かのじょ}は忙{いそが}しいはずだ。',
+                        japanese: '彼{かれ}女{かのじょ}は忙{いそが}しいはずだ。',
                         chinese: '她應該很忙。'
                     }
                 ]
@@ -9512,7 +9542,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_hazu_1',
-                sentence: '電車{でんしゃ}は5時{じ}に着{つ}く（　）だ。',
+                sentence: '電{でん}車{しゃ}は5時{じ}に着{つ}く（　）だ。',
                 options: ['はず', 'べき', 'そう', 'よう'],
                 correctIndex: 0,
                 explanation: '電車應該5點到。'
@@ -9547,7 +9577,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_hazu_5',
-                sentence: '彼女{かのじょ}がそんなことをする（　）がない。',
+                sentence: '彼{かれ}女{かのじょ}がそんなことをする（　）がない。',
                 options: ['はず', 'べき', 'そう', 'よう'],
                 correctIndex: 0,
                 explanation: {
@@ -9565,8 +9595,8 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_wake': {
         id: 'n4_wake',
         pattern: 'わけ',
-        connection: '動詞普通形 + わけ\nい形容詞 + わけ\nな形容詞 + な + わけ\n名詞 + の/という + わけ',
-        translation: '原因是...; 意思是...; 道理',
+        connection: '動{どう}詞{し}普通形 + わけ\nい形{けい}容{よう}詞{し} + わけ\nな形{けい}容{よう}詞{し} + な + わけ\n名{めい}詞{し} + の/という + わけ',
+        translation: '原{げん}因{いん}是...; 意思是...; 道理',
         level: 'N4',
         explanation: [
             {
@@ -9579,7 +9609,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '他在日本待了10年。難怪日語那麼好。'
                     },
                     {
-                        japanese: '毎日{まいにち}走{はし}っている。痩{や}せたわけだ。',
+                        japanese: '毎{まい}日{にち}走{はし}っている。痩{や}せたわけだ。',
                         chinese: '每天跑步。難怪瘦了。'
                     }
                 ]
@@ -9603,7 +9633,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_wake_1',
-                sentence: '彼{かれ}は毎日{まいにち}練習{れんしゅう}している。上手{じょうず}な（　）だ。',
+                sentence: '彼{かれ}は毎{まい}日{にち}練{れん}習{しゅう}している。上手{じょうず}な（　）だ。',
                 options: ['わけ', 'はず', 'そう', 'よう'],
                 correctIndex: 0,
                 explanation: '他每天練習。難怪很厲害。'
@@ -9621,7 +9651,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['わけ', 'はず', 'こと', 'もの'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '因為這樣的原因，會議延期了。',
+                    correct: '因為這樣的原{げん}因{いん}，會議延期了。',
                     wrong: [
                         '「はず」表示應該。',
                         '「こと」表示事情。',
@@ -9658,7 +9688,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_koto_ga_dekiru': {
         id: 'n4_koto_ga_dekiru',
         pattern: 'ことができる',
-        connection: '動詞辭書形 + ことができる',
+        connection: '動{どう}詞{し}辭書形 + ことができる',
         translation: '能夠...; 會...',
         level: 'N4',
         explanation: [
@@ -9738,7 +9768,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hodo': {
         id: 'n4_hodo',
         pattern: 'ほど',
-        connection: '名詞 + ほど\n動詞辭書形 + ほど\n動詞ない形 + ほど',
+        connection: '名{めい}詞{し} + ほど\n動{どう}詞{し}辭書形 + ほど\n動{どう}詞{し}ない形 + ほど',
         translation: '到...程度; 像...那樣',
         level: 'N4',
         explanation: [
@@ -9779,7 +9809,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_hodo_3',
-                sentence: '彼女{かのじょ}（　）美{うつく}しい人{ひと}は見{み}たことがない。',
+                sentence: '彼{かれ}女{かのじょ}（　）美{うつく}しい人{ひと}は見{み}たことがない。',
                 options: ['ほど', 'まで', 'だけ', 'しか'],
                 correctIndex: 0,
                 explanation: {
@@ -9800,7 +9830,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_hodo_5',
-                sentence: '食{た}べられない（　）たくさん料理{りょうり}があった。',
+                sentence: '食{た}べられない（　）たくさん料{りょう}理{り}があった。',
                 options: ['ほど', 'まで', 'だけ', 'しか'],
                 correctIndex: 0,
                 explanation: {
@@ -9818,7 +9848,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_toori': {
         id: 'n4_toori',
         pattern: 'とおり',
-        connection: '名詞 + の + とおり（に）\n動詞た形 + とおり（に）\n動詞辭書形 + とおり（に）',
+        connection: '名{めい}詞{し} + の + とおり（に）\n動{どう}詞{し}た形 + とおり（に）\n動{どう}詞{し}辭書形 + とおり（に）',
         translation: '按照...; 像...那樣',
         level: 'N4',
         explanation: [
@@ -9828,7 +9858,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示按照某人說的、做的、或某種標準來進行。',
                 examples: [
                     {
-                        japanese: '先生{せんせい}が言{い}ったとおりにしてください。',
+                        japanese: '先{せん}生{せい}が言{い}ったとおりにしてください。',
                         chinese: '請照老師說的做。'
                     },
                     {
@@ -9837,7 +9867,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     },
                     {
                         japanese: 'レシピのとおりに作{つく}ったら、美味{おい}しくできた。',
-                        chinese: '按照食譜做，結果做得很好吃。'
+                        chinese: '按照食{た}譜做，結果做得很好吃。'
                     }
                 ]
             }
@@ -9845,7 +9875,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_toori_1',
-                sentence: '説明書{せつめいしょ}の（　）に組{く}み立{た}ててください。',
+                sentence: '説{せつ}明{めい}書{せつめいしょ}の（　）に組{く}み立{た}ててください。',
                 options: ['とおり', 'まま', 'ように', 'ために'],
                 correctIndex: 0,
                 explanation: '請按照說明書組裝。'
@@ -9866,29 +9896,29 @@ export const n4Details: Record<string, GrammarPoint> = {
                     correct: '正如預想的，考試很難。',
                     wrong: [
                         '「まま」表示維持原狀。',
-                        '「ように」表示目的或比喻。',
-                        '「ために」表示目的或原因。'
+                        '「ように」表示目{もく}的{てき}或比喻。',
+                        '「ために」表示目{もく}的{てき}或原{げん}因{いん}。'
                     ]
                 }
             },
             {
                 id: 'n4_toori_4',
-                sentence: '「料理{りょうり}、上手{じょうず}だね。」\n「うん、母{はは}に教{おそ}わった（　）に作{つく}っただけだよ。」',
+                sentence: '「料{りょう}理{り}、上手{じょうず}だね。」\n「うん、母{はは}に教{おそ}わった（　）に作{つく}っただけだよ。」',
                 options: ['とおり', 'まま', 'ように', 'ために'],
                 correctIndex: 0,
                 explanation: '對話情境。只是按照媽媽教的做。'
             },
             {
                 id: 'n4_toori_5',
-                sentence: '約束{やくそく}の（　）、3時{じ}に来{き}てください。',
+                sentence: '約{やく}束{そく}の（　）、3時{じ}に来{き}てください。',
                 options: ['とおり', 'まま', 'ように', 'ために'],
                 correctIndex: 0,
                 explanation: {
                     correct: '請按照約定三點來。',
                     wrong: [
                         '「まま」表示維持原狀。',
-                        '「ように」表示目的或比喻。',
-                        '「ために」表示目的或原因。'
+                        '「ように」表示目{もく}的{てき}或比喻。',
+                        '「ために」表示目{もく}的{てき}或原{げん}因{いん}。'
                     ]
                 }
             }
@@ -9898,7 +9928,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_nado': {
         id: 'n4_nado',
         pattern: 'など',
-        connection: '名詞 + など',
+        connection: '名{めい}詞{し} + など',
         translation: '...等等; ...之類',
         level: 'N4',
         explanation: [
@@ -9978,7 +10008,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tsumori': {
         id: 'n4_tsumori',
         pattern: 'つもり',
-        connection: '動詞辭書形 + つもりだ\n動詞ない形 + つもりだ',
+        connection: '動{どう}詞{し}辭書形 + つもりだ\n動{どう}詞{し}ない形 + つもりだ',
         translation: '打算...; 計劃...',
         level: 'N4',
         explanation: [
@@ -9988,12 +10018,12 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示說話人的打算或意圖。比「～たい」更具體、更確定。',
                 examples: [
                     {
-                        japanese: '来年{らいねん}、日本{にほん}に留学{りゅうがく}するつもりです。',
+                        japanese: '来{らい}年{ねん}、日本{にほん}に留学{りゅうがく}するつもりです。',
                         chinese: '打算明年去日本留學。'
                     },
                     {
                         japanese: '週末{しゅうまつ}は出{で}かけないつもりだ。',
-                        chinese: '週末不打算出門。'
+                        chinese: '週{しゅう}末{まつ}不打算出門。'
                     },
                     {
                         japanese: '彼{かれ}と結婚{けっこん}するつもりはない。',
@@ -10005,7 +10035,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_tsumori_1',
-                sentence: '夏休{なつやす}みに旅行{りょこう}する（　）です。',
+                sentence: '夏休{なつやす}みに旅{りょ}行{こう}する（　）です。',
                 options: ['つもり', 'ため', 'よう', 'はず'],
                 correctIndex: 0,
                 explanation: '打算暑假去旅行。'
@@ -10025,8 +10055,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '打算再也不見面了。',
                     wrong: [
-                        '「ため」表示目的或原因。',
-                        '「よう」表示樣態或目的。',
+                        '「ため」表示目{もく}的{てき}或原{げん}因{いん}。',
+                        '「よう」表示樣態或目{もく}的{てき}。',
                         '「はず」表示推測或應該。'
                     ]
                 }
@@ -10046,8 +10076,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '本來打算不告訴他的。',
                     wrong: [
-                        '「ため」表示目的或原因。',
-                        '「よう」表示樣態或目的。',
+                        '「ため」表示目{もく}的{てき}或原{げん}因{いん}。',
+                        '「よう」表示樣態或目{もく}的{てき}。',
                         '「はず」表示推測或應該。'
                     ]
                 }
@@ -10058,7 +10088,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_yotei': {
         id: 'n4_yotei',
         pattern: '予定',
-        connection: '動詞辭書形 + 予定だ\n名詞 + の + 予定だ',
+        connection: '動{どう}詞{し}辭書形 + 予定だ\n名{めい}詞{し} + の + 予定だ',
         translation: '預定...; 計劃...',
         level: 'N4',
         explanation: [
@@ -10085,25 +10115,25 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_yotei_1',
-                sentence: '電車{でんしゃ}は10時{じ}に到着{とうちゃく}する（　）です。',
+                sentence: '電{でん}車{しゃ}は10時{じ}に到着{とうちゃく}する（　）です。',
                 options: ['予定', 'つもり', 'はず', 'こと'],
                 correctIndex: 0,
                 explanation: '電車預定10點到達。'
             },
             {
                 id: 'n4_yotei_2',
-                sentence: '来週{らいしゅう}の月曜日{げつようび}に発表{はっぴょう}する（　）だ。',
+                sentence: '来{らい}週{しゅう}の月曜日{げつようび}に発表{はっぴょう}する（　）だ。',
                 options: ['予定', 'つもり', 'はず', 'こと'],
                 correctIndex: 0,
                 explanation: '預定下週一發表。'
             },
             {
                 id: 'n4_yotei_3',
-                sentence: '今年{ことし}の夏{なつ}に引{ひ}っ越{こ}しする（　）だ。',
+                sentence: '今{こ}年{とし}の夏{なつ}に引{ひ}っ越{こ}しする（　）だ。',
                 options: ['予定', 'つもり', 'はず', 'こと'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '預定今年夏天搬家。',
+                    correct: '預定今{こ}年{とし}夏天搬家。',
                     wrong: [
                         '「つもり」表示個人打算。',
                         '「はず」表示推測。',
@@ -10120,7 +10150,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_yotei_5',
-                sentence: '新{あたら}しい店{みせ}は来年{らいねん}オープンの（　）だ。',
+                sentence: '新{あたら}しい店{みせ}は来{らい}年{ねん}オープンの（　）だ。',
                 options: ['予定', 'つもり', 'はず', 'こと'],
                 correctIndex: 0,
                 explanation: {
@@ -10138,7 +10168,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_kawari_ni': {
         id: 'n4_kawari_ni',
         pattern: 'かわりに',
-        connection: '名詞 + の + かわりに\n動詞辭書形 + かわりに\n動詞た形 + かわりに',
+        connection: '名{めい}詞{し} + の + かわりに\n動{どう}詞{し}辭書形 + かわりに\n動{どう}詞{し}た形 + かわりに',
         translation: '代替...; 取而代之',
         level: 'N4',
         explanation: [
@@ -10148,12 +10178,12 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示用某物/某人代替另一物/人，或做某事來交換另一件事。',
                 examples: [
                     {
-                        japanese: '電車{でんしゃ}のかわりにバスで行{い}った。',
+                        japanese: '電{でん}車{しゃ}のかわりにバスで行{い}った。',
                         chinese: '沒坐電車，改坐公車去了。'
                     },
                     {
-                        japanese: '病気{びょうき}の田中{たなか}さんのかわりに私{わたし}が出席{しゅっせき}した。',
-                        chinese: '代替生病的田中出席了。'
+                        japanese: '病{びょう}気{き}の田中{たなか}さんのかわりに私{わたし}が出席{しゅっせき}した。',
+                        chinese: '代替生病的田中出{しゅっ}席{せき}了。'
                     },
                     {
                         japanese: '手伝{てつだ}ってくれたかわりに、ご飯{はん}をおごった。',
@@ -10185,29 +10215,29 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '作為教我的回報，道了謝。',
                     wrong: [
-                        '「ために」表示目的或原因。',
-                        '「ように」表示目的或比喻。',
+                        '「ために」表示目{もく}的{てき}或原{げん}因{いん}。',
+                        '「ように」表示目{もく}的{てき}或比喻。',
                         '「について」表示關於。'
                     ]
                 }
             },
             {
                 id: 'n4_kawari_ni_4',
-                sentence: '「車{くるま}で行{い}かないの？」\n「うん、車{くるま}の（　）自転車{じてんしゃ}で行{い}くよ。」',
+                sentence: '「車{くるま}で行{い}かないの？」\n「うん、車{くるま}の（　）自{じ}転{てん}車{しゃ}で行{い}くよ。」',
                 options: ['かわりに', 'ために', 'ように', 'について'],
                 correctIndex: 0,
                 explanation: '對話情境。不開車，改騎腳踏車去。'
             },
             {
                 id: 'n4_kawari_ni_5',
-                sentence: '運動{うんどう}する（　）、食事{しょくじ}を減{へ}らした。',
+                sentence: '運動{うんどう}する（　）、食{しょく}事{じ}を減{へ}らした。',
                 options: ['かわりに', 'ために', 'ように', 'について'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '不運動，改減少飲食。',
+                    correct: '不運動，改減少飲食{た}。',
                     wrong: [
-                        '「ために」表示目的或原因。',
-                        '「ように」表示目的或比喻。',
+                        '「ために」表示目{もく}的{てき}或原{げん}因{いん}。',
+                        '「ように」表示目{もく}的{てき}或比喻。',
                         '「について」表示關於。'
                     ]
                 }
@@ -10218,7 +10248,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_dokoro_ka': {
         id: 'n4_dokoro_ka',
         pattern: 'どころか',
-        connection: '名詞 + どころか\n動詞辭書形 + どころか',
+        connection: '名{めい}詞{し} + どころか\n動{どう}詞{し}辭書形 + どころか',
         translation: '哪裡是...; 別說...',
         level: 'N4',
         explanation: [
@@ -10228,7 +10258,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示實際情況比預期的更嚴重或更輕，常用於否定前項而強調後項。',
                 examples: [
                     {
-                        japanese: '旅行{りょこう}どころか、外出{がいしゅつ}もできない。',
+                        japanese: '旅{りょ}行{こう}どころか、外出{がいしゅつ}もできない。',
                         chinese: '別說旅行了，連外出都不行。'
                     },
                     {
@@ -10259,7 +10289,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_dokoro_ka_3',
-                sentence: '彼女{かのじょ}は歌{うた}が下手{へた}（　）、むしろ上手{じょうず}だ。',
+                sentence: '彼{かれ}女{かのじょ}は歌{うた}が下手{へた}（　）、むしろ上手{じょうず}だ。',
                 options: ['どころか', 'ばかり', 'だけ', 'しか'],
                 correctIndex: 0,
                 explanation: {
@@ -10273,7 +10303,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_dokoro_ka_4',
-                sentence: '「旅行{りょこう}、楽{たの}しかった？」\n「楽{たの}しい（　）、大変{たいへん}だったよ。」',
+                sentence: '「旅{りょ}行{こう}、楽{たの}しかった？」\n「楽{たの}しい（　）、大変{たいへん}だったよ。」',
                 options: ['どころか', 'ばかり', 'だけ', 'しか'],
                 correctIndex: 0,
                 explanation: '對話情境。哪是好玩，累死了。'
@@ -10298,7 +10328,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_sae': {
         id: 'n4_sae',
         pattern: 'さえ',
-        connection: '名詞（+助詞）+ さえ',
+        connection: '名{めい}詞{し}（+助詞）+ さえ',
         translation: '連...都...; 甚至...',
         level: 'N4',
         explanation: [
@@ -10308,11 +10338,11 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '舉出極端或意外的例子，強調程度之深。常與「も」互換，但「さえ」語氣更強。',
                 examples: [
                     {
-                        japanese: '子供{こども}でさえ知{し}っている。',
+                        japanese: '子{こ}供{とも}でさえ知{し}っている。',
                         chinese: '連小孩都知道。'
                     },
                     {
-                        japanese: '忙{いそが}しくて、ご飯{はん}を食{た}べる時間{じかん}さえない。',
+                        japanese: '忙{いそが}しくて、ご飯{はん}を食{た}べる時{じ}間{かん}さえない。',
                         chinese: '忙得連吃飯的時間都沒有。'
                     },
                     {
@@ -10325,7 +10355,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_sae_1',
-                sentence: '自分{じぶん}の電話番号{でんわばんごう}（　）忘{わす}れてしまった。',
+                sentence: '自{じ}分{ぶん}の電話番号{でんわばんごう}（　）忘{わす}れてしまった。',
                 options: ['さえ', 'だけ', 'しか', 'ばかり'],
                 correctIndex: 0,
                 explanation: '連自己的電話號碼都忘了。'
@@ -10339,7 +10369,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_sae_3',
-                sentence: 'あの問題{もんだい}は先生{せんせい}（　）解{と}けなかった。',
+                sentence: 'あの問題{もんだい}は先{せん}生{せい}（　）解{と}けなかった。',
                 options: ['でさえ', 'だけ', 'しか', 'ばかり'],
                 correctIndex: 0,
                 explanation: {
@@ -10378,7 +10408,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_koso': {
         id: 'n4_koso',
         pattern: 'こそ',
-        connection: '名詞 + こそ',
+        connection: '名{めい}詞{し} + こそ',
         translation: '正是...; 才是...',
         level: 'N4',
         explanation: [
@@ -10396,7 +10426,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '我才要請您多關照。'
                     },
                     {
-                        japanese: '彼{かれ}こそ真{しん}の友達{ともだち}だ。',
+                        japanese: '彼{かれ}こそ真{しん}の友{とも}達{だち}だ。',
                         chinese: '他才是真正的朋友。'
                     }
                 ]
@@ -10405,17 +10435,17 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_koso_1',
-                sentence: '今年{ことし}（　）目標{もくひょう}を達成{たっせい}したい。',
+                sentence: '今{こ}年{とし}（　）目標{もくひょう}を達成{たっせい}したい。',
                 options: ['こそ', 'さえ', 'だけ', 'しか'],
                 correctIndex: 0,
-                explanation: '今年一定要達成目標。'
+                explanation: '今{こ}年{とし}一定要達成目標。'
             },
             {
                 id: 'n4_koso_2',
                 sentence: 'これ（　）本物{ほんもの}の味{あじ}だ。',
                 options: ['こそ', 'さえ', 'だけ', 'しか'],
                 correctIndex: 0,
-                explanation: '這才是真正的味道。'
+                explanation: '這才是真正的味{あじ}道。'
             },
             {
                 id: 'n4_koso_3',
@@ -10458,7 +10488,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_kurai_gurai': {
         id: 'n4_kurai_gurai',
         pattern: 'くらい・ぐらい',
-        connection: '名詞 + くらい/ぐらい\n動詞辭書形 + くらい/ぐらい',
+        connection: '名{めい}詞{し} + くらい/ぐらい\n動{どう}詞{し}辭書形 + くらい/ぐらい',
         translation: '大約...; ...左右; ...的程度',
         level: 'N4',
         explanation: [
@@ -10485,7 +10515,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_kurai_gurai_1',
-                sentence: '1時間{じかん}（　）かかります。',
+                sentence: '1時{じ}間{かん}（　）かかります。',
                 options: ['くらい', 'だけ', 'しか', 'さえ'],
                 correctIndex: 0,
                 explanation: '大約需要1小時。'
@@ -10513,7 +10543,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_kurai_gurai_4',
-                sentence: '「どのくらい日本語{にほんご}を勉強{べんきょう}していますか。」\n「3年{ねん}（　）です。」',
+                sentence: '「どのくらい日本語{にほんご}を勉{べん}強{きょう}していますか。」\n「3年{ねん}（　）です。」',
                 options: ['くらい', 'だけ', 'しか', 'さえ'],
                 correctIndex: 0,
                 explanation: '對話情境。大約3年。'
@@ -10538,7 +10568,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_hoka_ni': {
         id: 'n4_hoka_ni',
         pattern: 'ほかに',
-        connection: '名詞 + の + ほかに\n動詞辭書形 + ほかに',
+        connection: '名{めい}詞{し} + の + ほかに\n動{どう}詞{し}辭書形 + ほかに',
         translation: '除了...之外（還有）',
         level: 'N4',
         explanation: [
@@ -10556,7 +10586,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '還有其他問題嗎？'
                     },
                     {
-                        japanese: '勉強{べんきょう}するほかに、アルバイトもしている。',
+                        japanese: '勉{べん}強{きょう}するほかに、アルバイトもしている。',
                         chinese: '除了讀書之外，也在打工。'
                     }
                 ]
@@ -10572,7 +10602,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_hoka_ni_2',
-                sentence: '英語{えいご}の（　）、フランス語{ご}も勉強{べんきょう}している。',
+                sentence: '英語{えいご}の（　）、フランス語{ご}も勉{べん}強{きょう}している。',
                 options: ['ほかに', 'ために', 'ように', 'までに'],
                 correctIndex: 0,
                 explanation: '除了英語之外，也在學法語。'
@@ -10585,8 +10615,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '除了工作之外，也在做志工。',
                     wrong: [
-                        '「ために」表示目的或原因。',
-                        '「ように」表示目的或比喻。',
+                        '「ために」表示目{もく}的{てき}或原{げん}因{いん}。',
+                        '「ように」表示目{もく}的{てき}或比喻。',
                         '「までに」表示截止期限。'
                     ]
                 }
@@ -10606,8 +10636,8 @@ export const n4Details: Record<string, GrammarPoint> = {
                 explanation: {
                     correct: '除了足球之外，也喜歡網球。',
                     wrong: [
-                        '「ために」表示目的或原因。',
-                        '「ように」表示目的或比喻。',
+                        '「ために」表示目{もく}的{てき}或原{げん}因{いん}。',
+                        '「ように」表示目{もく}的{てき}或比喻。',
                         '「までに」表示截止期限。'
                     ]
                 }
@@ -10618,7 +10648,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_igai': {
         id: 'n4_igai',
         pattern: '以外',
-        connection: '名詞 + 以外（に/は）',
+        connection: '名{めい}詞{し} + 以外（に/は）',
         translation: '除了...之外',
         level: 'N4',
         explanation: [
@@ -10628,7 +10658,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '表示除了某事物之外的其他。「以外に」常與肯定句連用，「以外は」常與否定句連用。',
                 examples: [
                     {
-                        japanese: '日曜日{にちようび}以外{いがい}は毎日{まいにち}働{はたら}いている。',
+                        japanese: '日{にち}曜{よう}日{び}以外{いがい}は毎{まい}日{にち}働{はたら}いている。',
                         chinese: '除了星期天以外每天都工作。'
                     },
                     {
@@ -10673,14 +10703,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_igai_4',
-                sentence: '「休{やす}みの日{ひ}は何{なに}をしますか。」\n「雨{あめ}の日{ひ}（　）、散歩{さんぽ}します。」',
+                sentence: '「休{やす}みの日{ひ}は何{なに}をしますか。」\n「雨{あめ}の日{ひ}（　）、散{さん}歩{ぽ}します。」',
                 options: ['以外は', 'だけは', 'しかは', 'ばかりは'],
                 correctIndex: 0,
-                explanation: '對話情境。除了下雨天以外都散步。'
+                explanation: '對話情境。除了下雨{あめ}天以外都散步。'
             },
             {
                 id: 'n4_igai_5',
-                sentence: '彼女{かのじょ}（　）に話{はな}せる人{ひと}がいない。',
+                sentence: '彼{かれ}女{かのじょ}（　）に話{はな}せる人{ひと}がいない。',
                 options: ['以外', 'ほか', 'だけ', 'しか'],
                 correctIndex: 0,
                 explanation: {
@@ -10716,7 +10746,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '好像明天是休假吧。'
                     },
                     {
-                        japanese: '彼女{かのじょ}の名前{なまえ}は、たしか田中{たなか}さんだった。',
+                        japanese: '彼{かれ}女{かのじょ}の名前{なまえ}は、たしか田中{たなか}さんだった。',
                         chinese: '她的名字好像是田中。'
                     }
                 ]
@@ -10753,7 +10783,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_tashika_4',
-                sentence: '「山田{やまだ}さんの誕生日{たんじょうび}、いつ？」\n「（　）来週{らいしゅう}だったと思{おも}う。」',
+                sentence: '「山田{やまだ}さんの誕生日{たんじょうび}、いつ？」\n「（　）来{らい}週{しゅう}だったと思{おも}う。」',
                 options: ['たしか', 'きっと', 'ぜひ', 'まさか'],
                 correctIndex: 0,
                 explanation: '對話情境。好像是下週吧。'
@@ -10789,7 +10819,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 examples: [
                     {
                         japanese: '明日{あした}はきっと晴{は}れるだろう。',
-                        chinese: '明天一定會放晴的吧。'
+                        chinese: '明天一定會放晴{は}れ的吧。'
                     },
                     {
                         japanese: '彼{かれ}はきっと成功{せいこう}する。',
@@ -10805,7 +10835,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_kitto_1',
-                sentence: '彼女{かのじょ}は（　）来{く}ると思{おも}う。',
+                sentence: '彼{かれ}女{かのじょ}は（　）来{く}ると思{おも}う。',
                 options: ['きっと', 'たしか', 'まさか', 'なかなか'],
                 correctIndex: 0,
                 explanation: '她一定會來的。'
@@ -10868,7 +10898,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '與肯定形連用時，表示「相當」「很」的意思，帶有稱讚語氣。',
                 examples: [
                     {
-                        japanese: 'この料理{りょうり}はなかなかおいしい。',
+                        japanese: 'この料{りょう}理{り}はなかなかおいしい。',
                         chinese: '這道菜相當好吃。'
                     },
                     {
@@ -10903,7 +10933,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_nakanaka_2',
-                sentence: '電車{でんしゃ}が（　）来{こ}ない。',
+                sentence: '電{でん}車{しゃ}が（　）来{こ}ない。',
                 options: ['なかなか', 'きっと', 'たしか', 'まさか'],
                 correctIndex: 0,
                 explanation: '電車遲遲不來。'
@@ -10924,7 +10954,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_nakanaka_4',
-                sentence: '「日本語{にほんご}の勉強{べんきょう}、どう？」\n「（　）難{むずか}しくて、進{すす}まないんだ。」',
+                sentence: '「日本語{にほんご}の勉{べん}強{きょう}、どう？」\n「（　）難{むずか}しくて、進{すす}まないんだ。」',
                 options: ['なかなか', 'きっと', 'たしか', 'まさか'],
                 correctIndex: 0,
                 explanation: '對話情境。很難，不容易進步。'
@@ -10964,7 +10994,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     },
                     {
                         japanese: 'まさか雨{あめ}が降{ふ}るとは。',
-                        chinese: '沒想到會下雨。'
+                        chinese: '沒想到會下雨{あめ}。'
                     },
                     {
                         japanese: 'まさか、嘘{うそ}でしょう？',
@@ -11004,14 +11034,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_masaka_4',
-                sentence: '「彼{かれ}、結婚{けっこん}したんだって。」\n「（　）！本当{ほんとう}？」',
+                sentence: '「彼{かれ}、結婚{けっこん}したんだって。」\n「（　）！本{ほん}当{とう}？」',
                 options: ['まさか', 'きっと', 'たしか', 'なかなか'],
                 correctIndex: 0,
                 explanation: '對話情境。不會吧！真的假的？'
             },
             {
                 id: 'n4_masaka_5',
-                sentence: '（　）彼女{かのじょ}が嘘{うそ}をつくとは。',
+                sentence: '（　）彼{かれ}女{かのじょ}が嘘{うそ}をつくとは。',
                 options: ['まさか', 'きっと', 'たしか', 'なかなか'],
                 correctIndex: 0,
                 explanation: {
@@ -11029,7 +11059,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_zehi': {
         id: 'n4_zehi',
         pattern: 'ぜひ',
-        connection: 'ぜひ + 動詞',
+        connection: 'ぜひ + 動{どう}詞{し}',
         translation: '務必; 一定要',
         level: 'N4',
         explanation: [
@@ -11070,7 +11100,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_zehi_3',
-                sentence: 'お時間{じかん}があれば、（　）お越{こ}しください。',
+                sentence: 'お時{じ}間{かん}があれば、（　）お越{こ}しください。',
                 options: ['ぜひ', 'たしか', 'まさか', 'なかなか'],
                 correctIndex: 0,
                 explanation: {
@@ -11084,7 +11114,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_zehi_4',
-                sentence: '「来週{らいしゅう}のパーティー、来{く}る？」\n「うん、（　）行{い}きたいです。」',
+                sentence: '「来{らい}週{しゅう}のパーティー、来{く}る？」\n「うん、（　）行{い}きたいです。」',
                 options: ['ぜひ', 'たしか', 'まさか', 'なかなか'],
                 correctIndex: 0,
                 explanation: '對話情境。好，我很想去。'
@@ -11119,7 +11149,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '用於強調假設性的條件。通常與「～たら」「～ば」「～なら」等條件表現連用。',
                 examples: [
                     {
-                        japanese: 'もし時間{じかん}があったら、映画{えいが}を見{み}に行{い}こう。',
+                        japanese: 'もし時{じ}間{かん}があったら、映画{えいが}を見{み}に行{い}こう。',
                         chinese: '如果有時間的話，去看電影吧。'
                     },
                     {
@@ -11139,7 +11169,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 sentence: '（　）明日{あした}雨{あめ}だったら、どうしますか。',
                 options: ['もし', 'ぜひ', 'きっと', 'たしか'],
                 correctIndex: 0,
-                explanation: '如果明天下雨的話怎麼辦？'
+                explanation: '如果明天下雨{あめ}的話怎麼辦？'
             },
             {
                 id: 'n4_moshi_2',
@@ -11164,14 +11194,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_moshi_4',
-                sentence: '「（　）よかったら、電話{でんわ}をください。」\n「はい、わかりました。」',
+                sentence: '「（　）よかったら、電{でん}話{わ}をください。」\n「はい、わかりました。」',
                 options: ['もし', 'ぜひ', 'きっと', 'たしか'],
                 correctIndex: 0,
                 explanation: '對話情境。如果方便的話請打電話。'
             },
             {
                 id: 'n4_moshi_5',
-                sentence: '（　）来年{らいねん}も日本{にほん}にいたら、桜{さくら}を見{み}に行{い}きたい。',
+                sentence: '（　）来{らい}年{ねん}も日本{にほん}にいたら、桜{さくら}を見{み}に行{い}きたい。',
                 options: ['もし', 'ぜひ', 'きっと', 'たしか'],
                 correctIndex: 0,
                 explanation: {
@@ -11227,7 +11257,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_yahari_1',
-                sentence: '（　）彼女{かのじょ}は優{やさ}しい人{ひと}だ。',
+                sentence: '（　）彼{かれ}女{かのじょ}は優{やさ}しい人{ひと}だ。',
                 options: ['やっぱり', 'もし', 'ぜひ', 'まさか'],
                 correctIndex: 0,
                 explanation: '她果然是個溫柔的人。'
@@ -11262,7 +11292,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_yahari_5',
-                sentence: '練習{れんしゅう}しなかったから、（　）失敗{しっぱい}した。',
+                sentence: '練{れん}習{しゅう}しなかったから、（　）失敗{しっぱい}した。',
                 options: ['やっぱり', 'もし', 'ぜひ', 'まさか'],
                 correctIndex: 0,
                 explanation: {
@@ -11295,7 +11325,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     },
                     {
                         japanese: '雨{あめ}はまだ降{ふ}っている。',
-                        chinese: '雨還在下。'
+                        chinese: '雨{あめ}還在下。'
                     }
                 ]
             },
@@ -11325,14 +11355,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_mada_2',
-                sentence: '彼女{かのじょ}は（　）学生{がくせい}です。',
+                sentence: '彼{かれ}女{かのじょ}は（　）学{がく}生{せい}です。',
                 options: ['まだ', 'もう', 'やっと', 'ずっと'],
                 correctIndex: 0,
                 explanation: '她還是學生。'
             },
             {
                 id: 'n4_mada_3',
-                sentence: '電車{でんしゃ}は（　）来{き}ていない。',
+                sentence: '電{でん}車{しゃ}は（　）来{き}ていない。',
                 options: ['まだ', 'もう', 'やっと', 'ずっと'],
                 correctIndex: 0,
                 explanation: {
@@ -11353,7 +11383,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_mada_5',
-                sentence: '子供{こども}は（　）起{お}きている。',
+                sentence: '子{こ}供{とも}は（　）起{お}きている。',
                 options: ['まだ', 'もう', 'やっと', 'ずっと'],
                 correctIndex: 0,
                 explanation: {
@@ -11462,7 +11492,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_yatto': {
         id: 'n4_yatto',
         pattern: 'やっと',
-        connection: 'やっと + 動詞',
+        connection: 'やっと + 動{どう}詞{し}',
         translation: '終於; 好不容易',
         level: 'N4',
         explanation: [
@@ -11472,7 +11502,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 description: '用於表達經過長時間等待或努力後終於達成某事，帶有欣慰或解脫的語氣。',
                 examples: [
                     {
-                        japanese: 'やっと電車{でんしゃ}が来{き}た。',
+                        japanese: 'やっと電{でん}車{しゃ}が来{き}た。',
                         chinese: '電車終於來了。'
                     },
                     {
@@ -11496,7 +11526,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_yatto_2',
-                sentence: '3時間{じかん}待{ま}って、（　）彼{かれ}が来{き}た。',
+                sentence: '3時{じ}間{かん}待{ま}って、（　）彼{かれ}が来{き}た。',
                 options: ['やっと', 'もう', 'まだ', 'ずっと'],
                 correctIndex: 0,
                 explanation: '等了3小時，他終於來了。'
@@ -11524,7 +11554,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_yatto_5',
-                sentence: '（　）彼女{かのじょ}に会{あ}えた。',
+                sentence: '（　）彼{かれ}女{かのじょ}に会{あ}えた。',
                 options: ['やっと', 'もう', 'まだ', 'ずっと'],
                 correctIndex: 0,
                 explanation: {
@@ -11542,7 +11572,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_zutto': {
         id: 'n4_zutto',
         pattern: 'ずっと',
-        connection: 'ずっと + 動詞/形容詞',
+        connection: 'ずっと + 動{どう}詞{し}/形{けい}容{よう}詞{し}',
         translation: '一直; ...得多',
         level: 'N4',
         explanation: [
@@ -11580,7 +11610,7 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_zutto_1',
-                sentence: '彼女{かのじょ}のことを（　）好{す}きだった。',
+                sentence: '彼{かれ}女{かのじょ}のことを（　）好{す}きだった。',
                 options: ['ずっと', 'もう', 'まだ', 'やっと'],
                 correctIndex: 0,
                 explanation: '一直喜歡她。'
@@ -11594,7 +11624,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_zutto_3',
-                sentence: '子供{こども}の頃{ころ}から（　）ピアノを習{なら}っている。',
+                sentence: '子{こ}供{とも}の頃{ころ}から（　）ピアノを習{なら}っている。',
                 options: ['ずっと', 'もう', 'まだ', 'やっと'],
                 correctIndex: 0,
                 explanation: {
@@ -11633,17 +11663,17 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_totemo_tottemo': {
         id: 'n4_totemo_tottemo',
         pattern: 'とても・とっても',
-        connection: 'とても + 形容詞/動詞',
+        connection: 'とても + 形{けい}容{よう}詞{し}/動{どう}詞{し}',
         translation: '非常; 很',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
                 title: '表示程度高（肯定）',
-                description: '用於強調程度高。「とっても」是口語化的說法，語氣更親近。',
+                description: '用於強調程度高。「とっても」是口{こう}語{ご}化的說法，語氣更親近。',
                 examples: [
                     {
-                        japanese: 'この料理{りょうり}はとてもおいしい。',
+                        japanese: 'この料{りょう}理{り}はとてもおいしい。',
                         chinese: '這道菜非常好吃。'
                     },
                     {
@@ -11728,7 +11758,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_amari_amarini': {
         id: 'n4_amari_amarini',
         pattern: 'あまり・あまりに',
-        connection: 'あまり + 否定形（不太...）\nあまりに + 形容詞/動詞（太...）',
+        connection: 'あまり + 否定形（不太...）\nあまりに + 形{けい}容{よう}詞{し}/動{どう}詞{し}（太...）',
         translation: '不太...; 太...',
         level: 'N4',
         explanation: [
@@ -11766,14 +11796,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_amari_1',
-                sentence: 'この料理{りょうり}は（　）おいしくない。',
+                sentence: 'この料{りょう}理{り}は（　）おいしくない。',
                 options: ['あまり', 'とても', 'なかなか', 'ずっと'],
                 correctIndex: 0,
                 explanation: '這道菜不太好吃。'
             },
             {
                 id: 'n4_amari_2',
-                sentence: '彼女{かのじょ}は（　）出{で}かけない。',
+                sentence: '彼{かれ}女{かのじょ}は（　）出{で}かけない。',
                 options: ['あまり', 'とても', 'なかなか', 'ずっと'],
                 correctIndex: 0,
                 explanation: '她不太出門。'
@@ -11819,7 +11849,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_sugu': {
         id: 'n4_sugu',
         pattern: 'すぐ',
-        connection: 'すぐ + 動詞',
+        connection: 'すぐ + 動{どう}詞{し}',
         translation: '馬上; 立刻',
         level: 'N4',
         explanation: [
@@ -11837,7 +11867,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '他動不動就生氣。'
                     },
                     {
-                        japanese: 'すぐに電話{でんわ}してください。',
+                        japanese: 'すぐに電{でん}話{わ}してください。',
                         chinese: '請立刻打電話。'
                     }
                 ]
@@ -11852,7 +11882,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '車站就在那裡。'
                     },
                     {
-                        japanese: '学校{がっこう}は家{いえ}のすぐ近{ちか}くにある。',
+                        japanese: '学{がっ}校{こう}は家{いえ}のすぐ近{ちか}くにある。',
                         chinese: '學校就在家附近。'
                     }
                 ]
@@ -11868,7 +11898,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_sugu_2',
-                sentence: '病院{びょういん}は（　）そこです。',
+                sentence: '病{びょう}院{いん}は（　）そこです。',
                 options: ['すぐ', 'ずっと', 'やっと', 'まだ'],
                 correctIndex: 0,
                 explanation: '醫院就在那裡。'
@@ -11914,7 +11944,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_sorosoro': {
         id: 'n4_sorosoro',
         pattern: 'そろそろ',
-        connection: 'そろそろ + 動詞',
+        connection: 'そろそろ + 動{どう}詞{し}',
         translation: '差不多該...; 快要...',
         level: 'N4',
         explanation: [
@@ -11932,7 +11962,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '快要到春天了呢。'
                     },
                     {
-                        japanese: 'そろそろ寝{ね}る時間{じかん}だ。',
+                        japanese: 'そろそろ寝{ね}る時{じ}間{かん}だ。',
                         chinese: '差不多是睡覺時間了。'
                     }
                 ]
@@ -11994,7 +12024,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_chanto': {
         id: 'n4_chanto',
         pattern: 'ちゃんと',
-        connection: 'ちゃんと + 動詞',
+        connection: 'ちゃんと + 動{どう}詞{し}',
         translation: '好好地; 確實地',
         level: 'N4',
         explanation: [
@@ -12008,7 +12038,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                         chinese: '好好洗手喔。'
                     },
                     {
-                        japanese: '彼{かれ}はちゃんと約束{やくそく}を守{まも}る人{ひと}だ。',
+                        japanese: '彼{かれ}はちゃんと約{やく}束{そく}を守{まも}る人{ひと}だ。',
                         chinese: '他是個會好好遵守約定的人。'
                     },
                     {
@@ -12049,7 +12079,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_chanto_4',
-                sentence: '「説明{せつめい}、聞{き}いた？」\n「うん、（　）聞{き}いたよ。」',
+                sentence: '「説{せつ}明{めい}、聞{き}いた？」\n「うん、（　）聞{き}いたよ。」',
                 options: ['ちゃんと', 'やっと', 'そろそろ', 'すぐ'],
                 correctIndex: 0,
                 explanation: '對話情境。嗯，有好好聽。'
@@ -12074,7 +12104,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_chotto': {
         id: 'n4_chotto',
         pattern: 'ちょっと',
-        connection: 'ちょっと + 動詞/形容詞',
+        connection: 'ちょっと + 動{どう}詞{し}/形{けい}容{よう}詞{し}',
         translation: '稍微; 有點; 不太方便',
         level: 'N4',
         explanation: [
@@ -12151,7 +12181,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                 options: ['ちょっと', 'ちゃんと', 'そろそろ', 'やっと'],
                 correctIndex: 0,
                 explanation: {
-                    correct: '味道有點重吧。',
+                    correct: '味{あじ}道有點重吧。',
                     wrong: [
                         '「ちゃんと」表示好好地。',
                         '「そろそろ」表示差不多該。',
@@ -12165,14 +12195,14 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_taitei': {
         id: 'n4_taitei',
         pattern: 'たいてい',
-        connection: 'たいてい + 動詞',
+        connection: 'たいてい + 動{どう}詞{し}',
         translation: '大多; 通常',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '表示一般情況或習慣',
-                description: '表示在大多數情況下或通常的習慣。',
+                title: '表示一般情況或習{しゅう}慣{かん}',
+                description: '表示在大多數情況下或通常的習{しゅう}慣{かん}。',
                 examples: [
                     {
                         japanese: '朝{あさ}はたいてい7時{じ}に起{お}きる。',
@@ -12180,7 +12210,7 @@ export const n4Details: Record<string, GrammarPoint> = {
                     },
                     {
                         japanese: '週末{しゅうまつ}はたいてい家{いえ}にいる。',
-                        chinese: '週末通常在家。'
+                        chinese: '週{しゅう}末{まつ}通常在家。'
                     },
                     {
                         japanese: 'たいていの人{ひと}はそう思{おも}う。',
@@ -12199,14 +12229,14 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_taitei_2',
-                sentence: '彼女{かのじょ}は（　）遅刻{ちこく}しない。',
+                sentence: '彼{かれ}女{かのじょ}は（　）遅刻{ちこく}しない。',
                 options: ['たいてい', 'ちょっと', 'そろそろ', 'やっと'],
                 correctIndex: 0,
                 explanation: '她通常不遲到。'
             },
             {
                 id: 'n4_taitei_3',
-                sentence: '日曜日{にちようび}は（　）映画{えいが}を見{み}る。',
+                sentence: '日{にち}曜{よう}日{び}は（　）映画{えいが}を見{み}る。',
                 options: ['たいてい', 'ちょっと', 'そろそろ', 'やっと'],
                 correctIndex: 0,
                 explanation: {
@@ -12227,7 +12257,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_taitei_5',
-                sentence: '（　）の学生{がくせい}はアルバイトをしている。',
+                sentence: '（　）の学{がく}生{せい}はアルバイトをしている。',
                 options: ['たいてい', 'ちょっと', 'そろそろ', 'やっと'],
                 correctIndex: 0,
                 explanation: {
@@ -12245,7 +12275,7 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_tokidoki': {
         id: 'n4_tokidoki',
         pattern: 'ときどき',
-        connection: 'ときどき + 動詞',
+        connection: 'ときどき + 動{どう}詞{し}',
         translation: '有時; 偶爾',
         level: 'N4',
         explanation: [
@@ -12272,21 +12302,21 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_tokidoki_1',
-                sentence: '（　）友達{ともだち}と食事{しょくじ}に行{い}く。',
+                sentence: '（　）友{とも}達{だち}と食{しょく}事{じ}に行{い}く。',
                 options: ['ときどき', 'たいてい', 'いつも', 'ぜんぜん'],
                 correctIndex: 0,
                 explanation: '偶爾和朋友去吃飯。'
             },
             {
                 id: 'n4_tokidoki_2',
-                sentence: '彼女{かのじょ}は（　）怒{おこ}ることがある。',
+                sentence: '彼{かれ}女{かのじょ}は（　）怒{おこ}ることがある。',
                 options: ['ときどき', 'たいてい', 'いつも', 'ぜんぜん'],
                 correctIndex: 0,
                 explanation: '她有時會生氣。'
             },
             {
                 id: 'n4_tokidoki_3',
-                sentence: '（　）電車{でんしゃ}が遅{おく}れることがある。',
+                sentence: '（　）電{でん}車{しゃ}が遅{おく}れることがある。',
                 options: ['ときどき', 'たいてい', 'いつも', 'ぜんぜん'],
                 correctIndex: 0,
                 explanation: {
@@ -12325,13 +12355,13 @@ export const n4Details: Record<string, GrammarPoint> = {
     'n4_itsumo': {
         id: 'n4_itsumo',
         pattern: 'いつも',
-        connection: 'いつも + 動詞',
+        connection: 'いつも + 動{どう}詞{し}',
         translation: '總是; 經常',
         level: 'N4',
         explanation: [
             {
                 usageId: 1,
-                title: '表示習慣性行為',
+                title: '表示習{しゅう}慣{かん}性行為',
                 description: '表示某動作或狀態一直保持或經常發生。',
                 examples: [
                     {
@@ -12352,14 +12382,14 @@ export const n4Details: Record<string, GrammarPoint> = {
         quiz: [
             {
                 id: 'n4_itsumo_1',
-                sentence: '彼女{かのじょ}は（　）元気{げんき}だ。',
+                sentence: '彼{かれ}女{かのじょ}は（　）元{げん}気{き}だ。',
                 options: ['いつも', 'ときどき', 'ぜんぜん', 'あまり'],
                 correctIndex: 0,
                 explanation: '她總是很有精神。'
             },
             {
                 id: 'n4_itsumo_2',
-                sentence: '（　）同{おな}じ時間{じかん}に起{お}きる。',
+                sentence: '（　）同{おな}じ時{じ}間{かん}に起{お}きる。',
                 options: ['いつも', 'ときどき', 'ぜんぜん', 'あまり'],
                 correctIndex: 0,
                 explanation: '總是同一時間起床。'
@@ -12439,7 +12469,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_zenzen_2',
-                sentence: '彼女{かのじょ}のことは（　）知{し}らない。',
+                sentence: '彼{かれ}女{かのじょ}のことは（　）知{し}らない。',
                 options: ['ぜんぜん', 'いつも', 'ときどき', 'たいてい'],
                 correctIndex: 0,
                 explanation: '完全不知道她的事。'
