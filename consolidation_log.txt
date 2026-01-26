@@ -1,0 +1,9 @@
+// This is a temporary consolidation script logic.
+// I will build the array directly in the next tool call.
+// Current observations:
+// Page 1: 100 items. (Verified 1-100 in earlier screenshot)
+// Page 2: 100 items. (101-200)
+// Page 3: 100 items. (201-300)
+// ...
+// Page 7: 44 items. (601-644)
+// Total 644.
