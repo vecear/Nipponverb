@@ -4,18 +4,31 @@ export const n5Details: Record<string, GrammarPoint> = {
     'n5_cha_ikenai': {
         id: 'n5_cha_ikenai',
         pattern: 'ちゃいけない・じゃいけない',
-        connection: '動詞て形（去掉て/で） + ちゃいけない / じゃいけない',
-        translation: '不能做...; 不可以做...',
+        connection: 'Verb て form (remove て) + ちゃ... / Verb で form (remove で) + じゃ...',
+        translation: '不能做...; 不可以做... (口語)',
         level: 'N5',
         explanation: [
             {
                 usageId: 1,
+                title: '接續方式',
+                description: '動詞(て形去掉て) + ちゃ + いけない / だめ\n動詞(で形去掉で) + じゃ + いけない / だめ',
+                examples: []
+            },
+            {
+                usageId: 2,
                 title: '禁止 (口語)',
-                description: '「てはいけない」的口語縮略形式。用於告訴對方不能做某事，語氣較隨意，通常用於朋友、晚輩或家{いえ}人{ひと}之間。',
+                description: '意思：不可以...、不能... (口語)\n這是「てはいけない (te wa ikenai)」的口語形式，語氣較隨意。\n\n變形規則 (ちゃ vs じゃ)：\n- 使用動詞「て形」，去掉「て」，加上「ちゃ」。\n  (例：食べる -> 食べて -> 食べちゃ)\n- 如果「て形」是濁音「で」，則變成「じゃ」。\n  (例：飲む -> 飲んで -> 飲んじゃ)\n\n三種結尾句型：\n1. ダメ (dame) = 標準口語，隨意\n2. いけない (ikenai) = 標準口語，隨意\n3. いけません (ikemasen) = 意思相同，但較有禮貌',
                 examples: [
-                    { japanese: 'ここでタバコを吸{す}っちゃいけないよ。', chinese: '不可以在這裡抽菸喔。' },
-                    { japanese: '嘘{うそ}をついちゃいけない。', chinese: '不可以撒謊。' },
-                    { japanese: 'お酒{さけ}を飲{の}んじゃいけない。', chinese: '不可以喝酒{さけ}。' }
+                    { japanese: '寝る前にスマホを⾒ちゃダメよ。', chinese: '睡覺前不可以看手機喔。' },
+                    { japanese: 'ここはきけんなので、⼊っちゃダメだよ。', chinese: '因為這裡很危險，所以不可以進去喔。' },
+                    { japanese: 'やっちゃいけないことをやっちゃった。', chinese: '做了不可以做的事。' },
+                    { japanese: '⾃信をなくしちゃいけません︕', chinese: '不可以失去自信！' },
+                    { japanese: 'そんなに授業をさぼっちゃダメよ。', chinese: '不可以翹那麼多課喔。' },
+                    { japanese: '彼を信⽤しちゃいけない。', chinese: '不可以相信他。' },
+                    { japanese: '⾚信号をむししちゃいけません︕', chinese: '不可以無視紅綠燈！' },
+                    { japanese: '野菜を⾷べるまでデザートを⾷べちゃいけないよ。', chinese: '在吃完蔬菜之前不可以吃甜點喔。' },
+                    { japanese: '⼦どもの前に悪いことばを⾔っちゃいけません。', chinese: '不可以在孩子面前說髒話。' },
+                    { japanese: '２０歳未満の⼈はお酒を飲んじゃいけません。', chinese: '未滿20歲的人不可以喝酒。' }
                 ]
             }
         ],
@@ -81,12 +94,24 @@ export const n5Details: Record<string, GrammarPoint> = {
         explanation: [
             {
                 usageId: 1,
-                title: '肯定的斷定',
-                description: '用於判斷或說明人{ひと}、事、物的性質、狀態或身分{ふん}。「だ」是普通體，「です」是禮貌體。',
+                title: '接續方式',
+                description: '名詞 / な形容詞 + だ (普通體)\n名詞 / な形容詞 + です (禮貌體)\n\n例如：\n- 學生 -> 学生だ / 学生です\n- 漂亮 -> きれいだ / きれいです',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '「だ」和「です」用於斷定人、事、物的性質或狀態。相當於中文的「是」。\n- 「だ」用於家人、朋友之間的對話 (普通體/常體)。\n- 「です」用於對長輩、上司或不熟的人 (禮貌體/敬體)。',
                 examples: [
-                    { japanese: '私{わたし}は学{がく}生{せい}です。', chinese: '我是學生。' },
-                    { japanese: 'これはペンだ。', chinese: '這是一支筆。' },
-                    { japanese: '彼女{かのじょ}はきれいだ。', chinese: '她很漂亮。' }
+
+                ]
+            },
+            {
+                usageId: 3,
+                title: '過去式變化',
+                description: '過去式的變化如下：\n- だ -> だった (datta)\n- です -> でした (deshita)\n\n例如：\n- 昨天是雨天 -> 昨日は雨だった / 昨日は雨でした',
+                examples: [
+
                 ]
             }
         ],
@@ -166,12 +191,31 @@ export const n5Details: Record<string, GrammarPoint> = {
         explanation: [
             {
                 usageId: 1,
-                title: '限定',
-                description: '表示限定範圍，除此之外沒有別的。',
+                title: '接續方式',
+                description: '動詞(辭書形) + だけ\n名詞 + だけ\nな形容詞 + な + だけ\nい形容詞 + だけ',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '限定 (只有...)',
+                description: '意思：只有、僅僅。\n表示排他性的限定，除此之外沒有其他。\n\n例：\n- 一人だけ (只有一個人)\n- ただ一つだけある (僅僅只有一個)\n- 欲しいものはこれだけ (我想要的只有這個)',
                 examples: [
-                    { japanese: 'ジュースだけ飲{の}みました。', chinese: '只喝了果汁。' },
-                    { japanese: '10分{ぷん}だけ休{やす}みましょう。', chinese: '休息10分{ふん}鐘就好{す}。' },
-                    { japanese: '見{み}ているだけです。', chinese: '我只是看看而已。' }
+                    { japanese: '私の持っているお⾦はこれだけだ。', chinese: '我擁有的錢只有這些。' },
+                    { japanese: 'ちょっと⾒ているだけです。', chinese: '我只是看一下而已。' },
+                    { japanese: '好きじゃない⾷べ物はトマトだけだ。', chinese: '不喜歡的食物只有番茄。' },
+                    { japanese: 'ただ話していただけです。', chinese: '只是說說話而已。' },
+                    { japanese: '問題はそれだけだと思うかい︖', chinese: '你認為問題只有那個嗎？' },
+                    { japanese: '私は⼀⼈だけでできます。', chinese: '我一個人就能做到。' },
+                    { japanese: 'その⼥の⼦はただ泣くだけだった。', chinese: '那個女孩只是在哭。' },
+                    { japanese: '彼⼥が信頼できるのは彼だけだ。', chinese: '她能信賴的只有他。' }
+                ]
+            },
+            {
+                usageId: 3,
+                title: '盡可能 (as match as)',
+                description: '意思：盡量、盡可能 (通常搭配「できる」)。\n表示程度的界限「到達某個程度」。\n\n例：\n- できるだけ (盡可能地)\n- 15人だけは (至少有15人)',
+                examples: [
+                    { japanese: '出来るだけ新しい漢字を勉強したい。', chinese: '想要盡可能多學習新的漢字。' }
                 ]
             }
         ],
@@ -251,12 +295,23 @@ export const n5Details: Record<string, GrammarPoint> = {
         explanation: [
             {
                 usageId: 1,
-                title: '推測 (普通體)',
-                description: '表示說話者的推測，非斷定。用於普通體對話。禮貌體為「でしょう」。',
+                title: '接續方式',
+                description: '動詞(辭書形) + だろう\n名詞 + だろう\nな形容詞 + だろう\nい形容詞 + だろう',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '推測 / 確認 (Casual)',
+                description: '意思：我想...、大概...吧、...對吧？\n\n雖然有多種含義，容易從語境中理解：\n1. 表示推測 (大概會...)\n   - 雨が降るだろう (大概會下雨吧)\n2. 尋求確認 (是...吧?)\n   - 嘘だろう (是騙人的吧？)\n\n注意：有時會縮短為「だろ (daro)」，意思相同。',
                 examples: [
-                    { japanese: '明日{あした}は雨{あめ}だろう。', chinese: '明天大概會下雨吧。' },
-                    { japanese: '彼{かれ}はもう帰{かえ}っただろう。', chinese: '他大概已經回家{いえ}了吧。' },
-                    { japanese: 'その映{えい}画{が}は面白{おもしろ}いだろう。', chinese: '那部電影應該很有趣吧。' }
+                    { japanese: '彼はもうすぐ来るだろう。', chinese: '他應該馬上就會來了吧。' },
+                    { japanese: 'そうだろうと思ったよ。', chinese: '我就想說是那樣。' },
+                    { japanese: '明⽇はたぶん⾬が降るだろう。空に雲がたくさんあるから。', chinese: '明天大概會下雨吧。因為天空中有很多雲。' },
+                    { japanese: '間違いないだろう。', chinese: '應該沒錯吧。' },
+                    { japanese: 'たぶんこの⾬は１時間ぐらいでやむだろう。', chinese: '這場雨大概一小時左右就會停了吧。' },
+                    { japanese: 'あそこにいる⼈は誰だろう。', chinese: '在那裡的人是誰呢？ (推測)' },
+                    { japanese: 'この⾁は、もう⾷べないほうがいいだろう。もう悪くなってしまった。', chinese: '這肉最好不要吃了比較好。已經壞掉了。' },
+                    { japanese: 'どうして⽇本の夏はこんなに暑いんだろう。', chinese: '為什麼日本的夏天這麼熱呢？' }
                 ]
             }
         ],
@@ -322,21 +377,44 @@ export const n5Details: Record<string, GrammarPoint> = {
         explanation: [
             {
                 usageId: 1,
-                title: '動作發生的場{ば}所{しょ}',
-                description: '表示動作進行的地點。',
-                examples: [
-                    { japanese: '図書館{としょかん}で勉{べん}強{きょう}します。', chinese: '在圖書館讀書。' },
-                    { japanese: 'レストランで食事{しょくじ}をします。', chinese: '在餐廳吃飯。' }
-                ]
+                title: '接續方式',
+                description: '名詞 + で',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '手段、方法、工具',
-                description: '表示使用某種工具、語言或交通手段。',
+                title: '動作的場所',
+                description: '意思：在...\n表示動作發生的地點。前面的名詞必須是地點。\n例：学校で日本語を勉強する (在學校學日語)。',
                 examples: [
-                    { japanese: 'バスで学{がっ}校{こう}へ行{い}きます。', chinese: '搭巴士去學校。' },
-                    { japanese: '箸{はし}でご販{はん}を食{た}べます。', chinese: '用筷子吃飯。' },
-                    { japanese: '日本語{にほんご}で手{て}紙{がみ}を書{か}きます。', chinese: '用日文寫信。' }
+                    { japanese: 'ここで電話しないでください。', chinese: '請不要在這裡講電話。' },
+                    { japanese: '駅で会いましょうね。', chinese: '在車站見面吧。' },
+                    { japanese: 'そのシャツどこで買いましたか？', chinese: '那件襯衫是在哪裡買的？' }
+                ]
+            },
+            {
+                usageId: 3,
+                title: '手段/方法',
+                description: '意思：用...、以...、搭乘...\n表示手段或方法。\n例：車で行く (開車去)。',
+                examples: [
+                    { japanese: 'じてんしゃで行きます。', chinese: '騎腳踏車去。' },
+                    { japanese: 'YouTubeで日本語を勉強します。', chinese: '透過YouTube學習日語。' }
+                ]
+            },
+            {
+                usageId: 4,
+                title: '合計/範圍',
+                description: '意思：合計...、...之內。\n表示數量、時間、金錢的總和或範圍。\n例：1時間で終わります (1小時內結束/總共花1小時)。',
+                examples: [
+                    { japanese: 'みんなで行こう！', chinese: '大家一起去吧！ (合計大家)' },
+                    { japanese: 'たまに一人でカラオケに行きます。', chinese: '偶爾會一個人去唱卡拉OK。' }
+                ]
+            },
+            {
+                usageId: 5,
+                title: '原因/理由',
+                description: '意思：因為...\n表示原因。\n例：病気で休みます (因為生病請假)。',
+                examples: [
+                    { japanese: 'なにかの理由で彼は虫が怖いんだ。', chinese: '因為某些理由，他很怕蟲子。' }
                 ]
             }
         ],
@@ -446,29 +524,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '逆接接續詞',
-                description: '放在句首，表示轉折。',
-                examples: [
-                    { japanese: '雨{あめ}が降{ふ}っています。でも、出{で}かけます。', chinese: '正在下雨。但是，我還是要出門。' },
-                    { japanese: '日本語{にほんご}は難{むずか}しいです。でも、面白{おもしろ}いです。', chinese: '日文很難{むずか}。但是，很有趣。' }
-                ]
+                title: '接續方式',
+                description: '句子/名詞 + でも',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '舉例（暗示其他）',
-                description: '舉出極端的例子，暗示「連...也...」。',
+                title: '逆接 (但是)',
+                description: '意思：但是、不過。\n注意：JLPT N5 的「でも (demo)」單純表示「但是」或「然而」。\n常用於句首，或連接兩個相反的想法。意思和「しかし (shikashi)」相似，但「しかし」語氣較強。\n\n*小心不要與「ても・でも (temo/demo)」(即使...也...) 句型混淆。',
                 examples: [
-                    { japanese: '子供{こども}でも分{わ}かります。', chinese: '連小孩都懂。' },
-                    { japanese: 'そんなことはサルでもできる。', chinese: '那種事情連猴子都會。' }
-                ]
-            },
-            {
-                usageId: 3,
-                title: '提議（非限定）',
-                description: '舉出一個例子，暗示「...之類的東西」。常用於邀約。',
-                examples: [
-                    { japanese: 'お茶{ちゃ}でも飲{の}みませんか。', chinese: '要不要喝個茶之類的？' },
-                    { japanese: '日曜日{にほんご}に映{えい}画{が}でも見{み}よう。', chinese: '星期天去看個電影什麼的吧。' }
+                    { japanese: '私は⿂が好すきです。でも⾁も好きです。', chinese: '我喜歡魚。不過我也喜歡肉。' },
+                    { japanese: 'パン屋に⾏きました。でも、何も買いませんでした。', chinese: '去了麵包店。但是，什麼也沒買。' },
+                    { japanese: '動物が好きです。でも、⽝が⼀ばん好きです。', chinese: '我喜歡動物。但是，最喜歡狗。' },
+                    { japanese: '図書館に⾏きました。でも、集中できませんでした。', chinese: '去了圖書館。但是，無法集中精神。' },
+                    { japanese: 'スーパーに⾏きました。でも、財布を忘れました︕', chinese: '去了超市。但是，忘記帶錢包了！' },
+                    { japanese: '今朝学校に⾏きました。でも、休みでした。', chinese: '今天早上去了學校。但是，學校休息。' },
+                    { japanese: '⽇本⼈ともっと話したいです。でも、私の⽇本語はあまり上⼿ではありません。', chinese: '想多跟日本人說話。但是，我的日語不太好。' }
                 ]
             }
         ],
@@ -534,20 +605,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '推測 (禮貌體)',
-                description: '表示說話者的推測，比「だろう」更有禮貌。',
-                examples: [
-                    { japanese: '明日{あした}は晴{は}れるでしょう。', chinese: '明天大概會放晴吧。' },
-                    { japanese: '彼{かれ}は来{く}るでしょう。', chinese: '他應該會來吧。' }
-                ]
+                title: '接續方式',
+                description: '動詞/名詞/形容詞 + でしょう',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '確認 (語調上揚)',
-                description: '徵求對方的同意或確認。',
+                title: '推測 / 確認 (Polite)',
+                description: '意思：我想...、大概...吧、...對吧？\n「でしょう (deshou)」是「だろう (darou)」的禮貌形。\n\n意義：\n1. 表示推測 (大概會...)\n   - 明日は雨が降るでしょう (明天大概會下雨吧)\n2. 尋求確認 (是...吧?)\n   - 先生はまもなく来るでしょう (老師大概馬上就來了吧)\n\n*口語中可縮略為「でしょ (desho)」。',
                 examples: [
-                    { japanese: 'これはあなたの本{ほん}でしょう？', chinese: '這是你的書對吧？' },
-                    { japanese: '日本語{にほんご}は面白{おもしろ}いでしょう？', chinese: '日文很有趣吧？' }
+                    { japanese: 'あの⼈は誰でしょう︖', chinese: '那個人是誰呢？' },
+                    { japanese: 'いいでしょう。', chinese: '不錯吧 / 聽起來不錯。' },
+                    { japanese: 'この問題は簡単でしょう︖', chinese: '這個問題很簡單吧？' },
+                    { japanese: '彼はもうすぐ来るでしょう。', chinese: '他應該馬上就會到了吧。' },
+                    { japanese: '頑張れば、いい⼤学に⾏けるでしょう。', chinese: '努力的話，應該能考上好的大學吧。' },
+                    { japanese: '今⽇の試合では、Aチームが勝つでしょう。', chinese: '今天的比賽，A隊會贏吧。' },
+                    { japanese: 'この問題は、明⽇の試験に出るでしょうか。', chinese: '這個問題，會出現在明天的考試中嗎？' }
                 ]
             }
         ],
@@ -613,12 +686,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '詢問性質、狀態',
-                description: '詢問某人{ひと}或某事物具備什麼樣的特徵或內容。',
+                title: '接續方式',
+                description: 'どんな + 名詞',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '詢問性質/狀態',
+                description: '意思：怎樣的...、什麼樣的...\n用於詢問人或事物的狀態、性質或特徵。',
                 examples: [
-                    { japanese: 'どんなスポーツが好{す}きですか。', chinese: '你喜歡什麼樣的運{うん}動{どう}？' },
-                    { japanese: '彼{かれ}はどんな人{ひと}ですか。', chinese: '他是個什麼樣的人{ひと}？' },
-                    { japanese: '東{とう}京{きょう}はどんな町{まち}ですか。', chinese: '東{とう}京{きょう}是個什麼樣的城市？' }
+                    { japanese: 'ベトナムはどんな国ですか。', chinese: '越南是什麼樣的國家呢？' },
+                    { japanese: 'どんな仕事をするのですか。', chinese: '你是做什麼樣的工作呢？' },
+                    { japanese: 'どんな⾷べ物が好きですか。', chinese: '你喜歡什麼樣的食物？' },
+                    { japanese: 'どんなパソコンを持っていますか。', chinese: '你持有什麼樣的電腦？' },
+                    { japanese: 'どんな⾞に乗っていますか︖', chinese: '你開什麼樣的車？' },
+                    { japanese: '今⽇はどんな天気ですか。', chinese: '今天天氣如何？' },
+                    { japanese: '新しい先⽣はどんな⼈ですか。', chinese: '新老師是什麼樣的人呢？' }
                 ]
             }
         ],
@@ -688,12 +771,30 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '詢問理{り}由{ゆう}、原因',
-                description: '用於詢問原因。比「なぜ」稍微口語一點，比「なんで」稍微正式。可單獨使用。',
+                title: '接續方式',
+                description: 'どうして + 句子',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '為什麼 (Why)',
+                description: '意思：為什麼、何以。\n詢問理由或原因。\n例：どうして来なかった？ (為什麼沒來？)',
                 examples: [
-                    { japanese: 'どうして泣{な}いているのですか。', chinese: '為什麼在哭呢？' },
-                    { japanese: 'どうしてパーティーに来{こ}なかったのですか。', chinese: '為什麼沒有來參加派對呢？' },
-                    { japanese: '「学{がっ}校{こう}を休{やす}みます。」「どうしてですか。」', chinese: '「我要請假。」「為什麼？」' }
+                    { japanese: 'どうして来ないの︖', chinese: '為什麼不來呢？' },
+                    { japanese: 'どうしてそうなったの︖', chinese: '為什麼會變那樣？' },
+                    { japanese: 'どうしてそれを知っている︖', chinese: '為什麼知道那個？' },
+                    { japanese: 'どうして⽇本に来たんですか︖', chinese: '為什麼來日本呢？' },
+                    { japanese: 'どうして⽇本の夏はこんなに暑いんだろう。', chinese: '為什麼日本的夏天這麼熱呢？' },
+                    { japanese: 'どうしてその事故が起こったのか。', chinese: '那起事故是怎麼發生的？' }
+                ]
+            },
+            {
+                usageId: 3,
+                title: '如何 (How)',
+                description: '意思：如何、怎麼。\n詢問方法或手段 (較少用，通常用 douyatte)。\n例：この字はどうして書くんですか？ (這字怎麼寫？)',
+                examples: [
+                    { japanese: '君はどうしてけがをしたか。', chinese: '你是怎麼受傷的？' },
+                    { japanese: 'どうして彼⼥と知り合ったのですか。', chinese: '你是怎麼認識她的？' }
                 ]
             }
         ],
@@ -769,12 +870,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '詢問方法、手段',
-                description: '詢問做某事的方法或過程。',
+                title: '接續方式',
+                description: 'どうやって + 動詞',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '詢問方法/手段',
+                description: '意思：如何、怎麼、用什麼方式。\n用於詢問做某事的方法或手段。\n例：駅までどうやって行きますか (要怎麼去車站？)',
                 examples: [
-                    { japanese: '駅{えき}までどうやって行{い}きますか。', chinese: '怎麼去車{くるま}站？' },
-                    { japanese: 'これはどうやって使{つか}うのですか。', chinese: '這個要怎麼用？' },
-                    { japanese: '漢字{かんじ}はどうやって覚{おぼ}えますか。', chinese: '漢字{じ}要怎麼記？' }
+                    { japanese: '駅までどうやって⾏きますか。', chinese: '去車站要怎麼走？' },
+                    { japanese: 'これはどうやって使いますか。', chinese: '這個要怎麼使用？' },
+                    { japanese: 'これはどうやって⾷べますか。', chinese: '這個要怎麼吃？' },
+                    { japanese: 'リサさんは毎⽇どうやって学校へ来ますか。', chinese: 'Lisa 妳每天怎麼來學校？' },
+                    { japanese: 'どうやって彼⼥と出会ったのですか。', chinese: '你是怎麼遇見她的？' },
+                    { japanese: 'あなたはどうやって漢字を覚えますか。', chinese: '你是怎麼記漢字的？' },
+                    { japanese: 'これはどうやって料理するのですか。', chinese: '這個要怎麼料理？' }
                 ]
             }
         ],
@@ -844,12 +955,17 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '最高{たか}級',
-                description: '表示在某個範圍內程度最高{たか}。',
+                title: '接續方式',
+                description: '範圍 + で + 一番',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '表示最高級，意思是「最...」。\n通常與疑問詞或名詞範圍搭配使用。',
                 examples: [
-                    { japanese: '日{に}本{ほん}で一{いち}番{ばん}高{たか}い山{やま}は富士山{ふじさん}です。', chinese: '日{に}本{ほん}最高的山{やま}是富士山{やま}。' },
-                    { japanese: 'このクラスで、誰{だれ}が一{いち}番{ばん}背{せ}が高{たか}いですか。', chinese: '這個班級裡，誰{だれ}個子最高{たか}？' },
-                    { japanese: '私{わたし}は夏{なつ}が一{いち}番{ばん}好{す}きです。', chinese: '我最喜歡夏天。' }
+                    { japanese: '日本料理の中で寿司が一番好きです。', chinese: '日本料理之中最喜歡壽司。' },
+                    { japanese: 'クラスで誰が一番背が高いですか。', chinese: '班上誰個子最高？' }
                 ]
             }
         ],
@@ -900,12 +1016,17 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '共同動作',
-                description: '表示和某人{ひと}一起做某事。',
+                title: '接續方式',
+                description: '一緒に + 動詞',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '副詞，表示共同做某事。意思是「一起...」。\n常與「～ませんか」或「～ましょう」連用，表示邀約。',
                 examples: [
-                    { japanese: '明日{あした}、映{えい}画{が}を見{み}に行{い}きませんか。', chinese: '明天要不要一起去看電影？' }, // Note: context usually implies 'issho ni' but explicitly using it is better for example
-                    { japanese: '友達{ともだち}と一緒{いっしょ}に宿{しゅく}題{だい}をしました。', chinese: '和朋友一起寫了作業。' },
-                    { japanese: '家{か}族{ぞく}と一緒{いっしょ}に住{す}んでいます。', chinese: '和家{いえ}人{ひと}住在一起。' }
+                    { japanese: '一緒に昼ご飯を食べませんか。', chinese: '要不要一起吃午餐？' },
+                    { japanese: '駅まで一緒に行きましょう。', chinese: '一起去車站吧。' }
                 ]
             }
         ],
@@ -971,12 +1092,19 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '頻率（總是）',
-                description: '表示動作或狀態發生的頻率很高{たか}，幾乎是習慣性的。',
+                title: '接續方式',
+                description: '總是 + 動詞/形容詞',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '頻率 (總是)',
+                description: '意思：總是、經常、習慣性地。\n表示某事總是發生，或習慣性的行為。',
                 examples: [
-                    { japanese: '私{わたし}はいつも７時{じ}に起{お}きます。', chinese: '我總是7點起床。' },
-                    { japanese: '彼{かれ}はいつも元{げん}気{き}です。', chinese: '他總是很有精神。' },
-                    { japanese: '日曜日{にちようび}はいつも家{いえ}にいます。', chinese: '星期天我通常都在家{いえ}。' }
+                    { japanese: '彼はいつも元気ですね。', chinese: '他總是很有精神呢。' },
+                    { japanese: '妹はいつも寝ている。', chinese: '妹妹總是在睡覺。' },
+                    { japanese: 'いつも夜10時に寝ます。', chinese: '總是晚上10點睡覺。' },
+                    { japanese: '昼ご飯はいつも納⾖を⾷べます。', chinese: '午餐總是吃納豆。' }
                 ]
             }
         ],
@@ -1042,12 +1170,25 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '否定 (普通體)',
-                description: '「ではありません」的普通體（常體）。「じゃない」比較口語，「ではない」比較正式或偏書面。',
+                title: '接續方式',
+                description: '名詞 / な形容詞 + じゃない',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '表示否定，意思是「不是...」。\n是「ではない」或「ではありません」的口語形式。常在口語中使用。',
                 examples: [
-                    { japanese: '私{わたし}は学{がく}生{せい}じゃない。', chinese: '我不是學生。' },
-                    { japanese: 'これは私{わたし}の本{ほん}ではない。', chinese: '這不是我的書。' },
-                    { japanese: 'その映{えい}画{が}は有{ゆう}名{めい}じゃない。', chinese: '那部電影不出名。' }
+                    { japanese: '私は学生じゃない。', chinese: '我不是學生。' },
+                    { japanese: 'この問題は簡単じゃない。', chinese: '這個問題不簡單。' }
+                ]
+            },
+            {
+                usageId: 3,
+                title: '句尾語氣',
+                description: '若句尾語調上揚「～じゃない？」，則表示確認，意思是「～不是嗎？」。',
+                examples: [
+                    { japanese: 'これ、いいじゃない？', chinese: '這個不錯不是嗎？' }
                 ]
             }
         ],
@@ -1113,23 +1254,42 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '疑問',
-                description: '放在句尾表示疑問。',
-                examples: [
-                    { japanese: 'これは何{なん}ですか。', chinese: '這是什麼？' },
-                    { japanese: '学{がく}生{せい}ですか。', chinese: '你是學生嗎？' }
-                ]
+                title: '接續方式',
+                description: '句尾 + か / 名詞 + か + 名詞',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '選擇 (或者)',
-                description: '連接兩個名詞，表示二選一。',
+                title: '用法一：疑問',
+                description: '放在句尾表示疑問。相當於中文的「嗎」。',
                 examples: [
-                    { japanese: 'コーヒーか紅{こう}茶{ちゃ}を飲{の}みます。', chinese: '喝咖啡或紅{こう}茶{ちゃ}。' },
-                    { japanese: '月曜日{げつようび}か火曜日{かようび}に行{い}きます。', chinese: '星期一或星期二去。' }
+                    { japanese: 'これは何ですか。', chinese: '這是什麼？' }
+                ]
+            },
+            {
+                usageId: 3,
+                title: '用法二：選擇',
+                description: '放在兩個名詞之間，表示「或者」。',
+                examples: [
+                    { japanese: 'お茶かコーヒーを飲みます。', chinese: '喝茶或咖啡。' }
                 ]
             }
-        ],
+            ,
+            {
+                usageId: 99, /* PDF Auto-Merge */
+                title: '更多例句 (From PDF)',
+                description: '意思：疑問助詞; 或者',
+                examples: [
+                    { japanese: '何ですか︖', chinese: '是什麼？' },
+                    { japanese: 'すみません、あなたも学⽣ですか 。', chinese: '不好意思，請問你也是學生嗎？' },
+                    { japanese: 'あなたの名前は何です か。', chinese: '你的名字是什麼？' },
+                    { japanese: '元気ですか。', chinese: '你好嗎？' },
+                    { japanese: '彼は何才ですか。', chinese: '他幾歲了？' },
+                    { japanese: '⼤丈夫ですか︖', chinese: '沒事吧？' },
+                    { japanese: '私とお昼ご飯を⾷べませんか ︖', chinese: '要不要跟我一起吃午餐？' },
+                    { japanese: 'どうしてこのことを知らないのか ︖', chinese: '為什麼不知道這件事呢？' }
+                ]
+            }],
         quiz: [
             {
                 id: 'n5_q_ka_1',
@@ -1196,21 +1356,31 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '主語標記',
-                description: '標示動作的主體（是誰{だれ}做的）或狀態的主體（是誰{だれ}、是什麼樣子）。特{とく}別{べつ}用於自然現象、感官對象、能力對象、喜好{す}對象。',
-                examples: [
-                    { japanese: '雨{あめ}が降{ふ}っています。', chinese: '正在下雨。' },
-                    { japanese: '私{わたし}は猫{ねこ}が好{す}きです。', chinese: '我喜歡貓。' },
-                    { japanese: '私{わたし}は日本語{にほんご}が分{わ}かります。', chinese: '我懂日文。' }
-                ]
+                title: '接續方式',
+                description: '名詞 + が\n句子 + が + 句子',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '逆接（但是）',
-                description: '連接兩個句子，表示轉折。',
+                title: '主語標記',
+                description: '意思：...是(主語)。\n標示句子的主語。與主題標記「は (wa)」相似。\n例：犬が好きです (喜歡狗 - 對象/主體)。',
                 examples: [
-                    { japanese: 'すみませんが、駅{えき}はどこですか。', chinese: '不好{す}意思，請問車{くるま}站在哪裡？' },
-                    { japanese: 'その店{みせ}はおいしいですが、高{たか}いです。', chinese: '那家{いえ}店{みせ}很好{す}吃，但是很貴。' }
+                    { japanese: '明⽇は⾬が降る。', chinese: '明天會下雨。' },
+                    { japanese: '仕⽅がない。', chinese: '沒辦法 (沒有辦法)。' },
+                    { japanese: 'コンビニが近くにあります。', chinese: '附近有便利商店。' },
+                    { japanese: '彼は借⾦がある。', chinese: '他有欠債。' },
+                    { japanese: '今⽇は、やることがたくさんある。', chinese: '今天有很多事要做。' }
+                ]
+            },
+            {
+                usageId: 3,
+                title: '逆接 (但是)',
+                description: '意思：但是、不過。\n置於兩個句子中間，表示轉折。\n例：好きですが (雖然喜歡但是...)',
+                examples: [
+                    { japanese: '彼は⾦はあるが、バカな男だ。', chinese: '他雖然有錢，但是個笨男人。' },
+                    { japanese: '私は⽇本語を話すことはできますが、読むことはできません。', chinese: '我會說日語，但是不會讀。' },
+                    { japanese: 'このカメラを買いたいですがお⾦がない。', chinese: '想買這個相機，但是沒錢。' },
+                    { japanese: '恐れ⼊りますが、本⽇は満席です。', chinese: '不好意思，今天客滿了。' }
                 ]
             }
         ],
@@ -1325,20 +1495,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '存在',
-                description: '表示某處有某物（無生命物體，如東西、植物等）。',
-                examples: [
-                    { japanese: '机{つくえ}の上{うえ}に本{ほん}があります。', chinese: '桌上有書。' },
-                    { japanese: '庭{にわ}に桜{さくら}の木{き}があります。', chinese: '庭院裡有櫻花樹。' }
-                ]
+                title: '接續方式',
+                description: '名詞 + があります',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '所有',
-                description: '表示擁有某物。',
+                title: '存在 (非生物)',
+                description: '意思：有...、在...。\n用於「非生物」(如物品、植物等) 的存在。\n- 生物請用「がいます (ga imasu)」。\n- 地點用「に/は」。\n\n用法：\n1. 擁有：宿題があります (有作業)。\n2. 存在地點：机の上にあります (在桌子上)。',
                 examples: [
-                    { japanese: '私{わたし}は車{くるま}があります。', chinese: '我有車{くるま}。' },
-                    { japanese: '今日{きょう}は時{じ}間{かん}がありません。', chinese: '今{いま}天沒有時{じ}間{かん}。' }
+                    { japanese: '⼈気がある。', chinese: '有人氣 (受歡迎)。' },
+                    { japanese: '先⽉お⾦がぜんぜんなかった。', chinese: '上個月完全沒有錢。' },
+                    { japanese: 'へやにテレビがあります。', chinese: '房間裡有電視。' },
+                    { japanese: '⽇本の好きじゃないところはあります。', chinese: '也有不喜歡日本的地方。' },
+                    { japanese: 'このマンションにはへやが三つあります。', chinese: '這間公寓有三個房間。' },
+                    { japanese: '彼は⾦があるから新⾞が買える。', chinese: '因為他有錢所以能買新車。' },
+                    { japanese: '今夜⽤事があるから⾏けない。', chinese: '因為今晚有事所以不能去。' }
                 ]
             }
         ],
@@ -1404,12 +1576,24 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '慾望',
-                description: '表示想要某樣東西。通常用於第一{ひと}人{り}稱（我）。對長{なが}輩或上司直接詢問「...がほしいですか」是不禮貌的。',
+                title: '接續方式',
+                description: '名詞 + がほしい',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '願望 (想要某物)',
+                description: '意思：想要...\n簡單地接在名詞後，表示想要某個東西。\n例：これがほしい (我想要這個)。\n\n*注意：可以寫成漢字「欲しい」，但平假名也很常用。',
                 examples: [
-                    { japanese: '私{わたし}は新{あたら}しいパソコンがほしいです。', chinese: '我想要新電腦。' },
-                    { japanese: '何{なに}がほしいですか。', chinese: '你想要什麼？' },
-                    { japanese: '彼{かれ}は友達{ともだち}がほしいと言{い}っています。', chinese: '他說他想要朋友。（引用他人{ひと}慾望）' }
+                    { japanese: 'もっとお⾦が欲しいです。', chinese: '想要更多錢。' },
+                    { japanese: '彼⼥がほしい。', chinese: '想要女朋友。' },
+                    { japanese: 'お⾦がたくさんほしい。', chinese: '想要很多錢。' },
+                    { japanese: '何⼈⼦どもがほしいですか︖', chinese: '想要有幾個小孩？' },
+                    { japanese: '新しいGoProカメラが欲しいです︕', chinese: '想要新的GoPro相機！' },
+                    { japanese: 'いつか⾃分の家が欲しいです。', chinese: '總有一天想要自己的房子。' },
+                    { japanese: '私が欲しいものは⾃由です。', chinese: '我想要的是自由。' },
+                    { japanese: '⽇本で作られた⾞が欲しい。', chinese: '想要日本製造的車。' },
+                    { japanese: '最近、仕事が忙しすぎてリラックスする時間が欲しい。', chinese: '最近工作太忙，想要放鬆的時間。' }
                 ]
             }
         ],
@@ -1475,20 +1659,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '存在',
-                description: '表示某處有某人{ひと}或動物（有生命物體）。',
-                examples: [
-                    { japanese: '教室{きょうしつ}に学{がく}生{せい}がいます。', chinese: '教{きょう}室{しつ}裡有學生。' },
-                    { japanese: 'あそこに犬{いぬ}がいます。', chinese: '那裡有一隻狗。' }
-                ]
+                title: '接續方式',
+                description: '名詞(生物) + がいます',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '擁有（家{いえ}人{ひと}、朋友等）',
-                description: '表示有家{いえ}人{ひと}、兄{きょう}弟{だい}姊妹{いもうと}、朋友等。',
+                title: '存在 (生物)',
+                description: '意思：有...、在...。\n用於「生物」(人、動物) 的存在。\n動詞「いる」源自「居る」。\n\n用法：\n1. 存在地點：シャワーに誰かがいます (淋浴間有人)。\n2. 擁有(關係)：妹がいます (有妹妹)。',
                 examples: [
-                    { japanese: '私{わたし}は兄弟{きょうだい}が二人{ふたり}います。', chinese: '我有兩個兄{きょう}弟{だい}。' },
-                    { japanese: '日{に}本{ほん}人{ひと}の友達{ともだち}がいます。', chinese: '我有日{に}本{ほん}朋友。' }
+                    { japanese: 'テーブルの下に猫がいる。', chinese: '桌子底下有貓。' },
+                    { japanese: 'あなたは彼⽒がいるの︖', chinese: '妳有男朋友嗎？' },
+                    { japanese: '私には兄弟がいないんだ。', chinese: '我沒有兄弟姊妹。' },
+                    { japanese: '弟⼀⼈妹⼀⼈がいます。', chinese: '有一個弟弟和一個妹妹。' },
+                    { japanese: 'その部屋に⽝がいる。', chinese: '那個房間裡有狗。' },
+                    { japanese: '今学校にだれもいません。', chinese: '現在學校裡誰也不在。' },
+                    { japanese: '東京駅に観光者がいっぱいいる。', chinese: '東京站有很多觀光客。' }
                 ]
             }
         ],
@@ -1554,12 +1740,25 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '建議、勸告',
-                description: '建議對方做某事（肯定用た形）或不做某事（否定用ない形）。語氣較強，有時{じ}帶有命令或警告的意{い}味{み}。「最好{す}做...，不然會...」。',
+                title: '接續方式',
+                description: '動詞(た形) / 動詞(ない形) + ほうがいい',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '表示建議或勸告。意思是「最好...」、「...比較好」。\n雖然翻譯成「比較好」，但在日語中這有較強的建議意味，有時如果不做可能會產生不好後果。',
                 examples: [
-                    { japanese: '薬{くすり}を飲{の}んだほうがいいです。', chinese: '最好{す}吃藥。（建議）' },
-                    { japanese: 'タバコは吸{す}わないほうがいいです。', chinese: '最好{す}不要抽菸。（勸告）' },
-                    { japanese: '早{はや}く寝{ね}たほうがいいですよ。', chinese: '最好{す}早點睡喔。' }
+
+                ]
+            },
+            {
+                usageId: 3,
+                title: '肯定與否定',
+                description: '- 肯定建議：用た形 (行ったほうがいい - 最好要去)\n- 否定建議：用ない形 (行かないほうがいい - 最好別去)\n注意：雖然也可以接辭書形，但「た形 + ほうがいい」語氣更自然且具體。',
+                examples: [
+                    { japanese: '薬を飲んだほうがいいですよ。', chinese: '最好吃個藥喔。' },
+                    { japanese: '無理しないほうがいいです。', chinese: '最好不要勉強。' }
                 ]
             }
         ],
@@ -1644,31 +1843,38 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '原因・理{り}由{ゆう}',
-                description: '接在句子後面（若{わか}是名詞/Na形容詞要加「だ」），表示原因或理{り}由{ゆう}。',
-                examples: [
-                    { japanese: '時{じ}間{かん}がありませんから、急{いそ}ぎましょう。', chinese: '因為沒有時{じ}間{かん}了，快一點吧。' },
-                    { japanese: '危{あぶ}ないですから、触{さわ}らないでください。', chinese: '因為很危險，請不要觸摸。' }
-                ]
+                title: '接續方式',
+                description: '動詞(て形) + から',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '起點・開始',
-                description: '接在名詞（時{じ}間{かん}、地點）後面，表示動作的起點。常與「まで」搭配使用。',
+                title: '順序 (After)',
+                description: '意思：...之後。\n表示動作的先後順序，做完前項動作後，接著做後項。\n例：食べてから寝る (吃完後睡覺)。',
                 examples: [
-                    { japanese: '会{かい}議{ぎ}は９時{じ}からです。', chinese: '會議從9點開始。' },
-                    { japanese: '学{がっ}校{こう}から家{いえ}まで１時{じ}間{かん}かかります。', chinese: '從學校到家{いえ}裡要花1個小時{じ}。' }
-                ]
-            },
-            {
-                usageId: 3,
-                title: '原料・材料（由...製成）',
-                description: '表示製作物品的原料。',
-                examples: [
-                    { japanese: '日本酒{にほんしゅ}は米{こめ}から作{つく}られます。', chinese: '日{に}本{ほん}酒{さけ}是由米製成的。' }
+                    { japanese: 'トイレを使ってから、⼿を洗わないといけません。', chinese: '使用廁所後，必須洗手。' },
+                    { japanese: '買い物をしてから家に帰ります。', chinese: '買完東西後回家。' },
+                    { japanese: 'ご飯を⾷べてから散歩しました。', chinese: '吃完飯後去散步了。' },
+                    { japanese: '今⽇は、起きてからまだ何も⾷べていません。', chinese: '今天起床後還什麼都沒吃。' },
+                    { japanese: 'アメリカに帰国してから太りました。', chinese: '回美國之後變胖了。' },
+                    { japanese: '彼が禁煙してから2ヶ⽉がたった。', chinese: '他戒菸之後過了2個月。' },
+                    { japanese: '電話をしてから来てください。', chinese: '請打電話之後再來。' },
+                    { japanese: '空き⽸は潰してからゴミとして出してください。', chinese: '空罐請壓扁後再丟棄。' }
                 ]
             }
-        ],
+            ,
+            {
+                usageId: 99, /* PDF Auto-Merge */
+                title: '更多例句 (From PDF)',
+                description: '意思：因為; 從',
+                examples: [
+                    { japanese: '天気がいいから、外に⾏きたい。', chinese: '因為天氣好，想去外面。' },
+                    { japanese: '私はすぐ戻るから、ここでちょっと待ってください。', chinese: '我馬上回來，請在這裡稍等一下。' },
+                    { japanese: 'これからもよろしくお願いします。', chinese: '今後也請多多指教。' },
+                    { japanese: 'ここからあの駅まで歩いてどれぐらいかかりますか︖', chinese: '從這裡走到那個車站要花多久時間？' },
+                    { japanese: 'お店は何時から何時まで開いていますか︖', chinese: '這家店從幾點開到幾點？' }
+                ]
+            }],
         quiz: [
             // 第 1 題：正向題 - 原因理{り}由{ゆう}
             {
@@ -1771,12 +1977,17 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '方法',
-                description: '接在動詞連用形（ます形去掉ます）後面，表示做某事的方法。',
+                title: '接續方式',
+                description: '動詞(ます形去ます) + 方（かた）',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '表示做某動作的方法或方式。變成名詞用法。\n\n例如：\n- 読む (讀) -> 読み方 (讀法/怎麼讀)\n- 作る (做) -> 作り方 (做法)',
                 examples: [
-                    { japanese: 'この漢字{かんじ}の読{よ}み方{かた}が分{わ}かりません。', chinese: '我不知道這個漢字{じ}的讀法（怎麼唸）。' },
-                    { japanese: 'お箸{はし}の使{つか}い方{かた}を教{おし}えてください。', chinese: '請教我筷子的用法。' },
-                    { japanese: '泳{およ}ぎ方{かた}を知{し}っていますか。', chinese: '你知道怎麼游泳嗎？' }
+                    { japanese: 'この漢字の読み方を教えてください。', chinese: '請教我這個漢字的唸法。' },
+                    { japanese: 'ケーキの作り方を知っていますか。', chinese: '你知道蛋糕的做法嗎？' }
                 ]
             }
         ],
@@ -1842,11 +2053,17 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '選擇疑問句',
-                description: '列出多個選項進行詢問。',
+                title: '接續方式',
+                description: '動詞/形容詞/名詞(普通形) + か + ... + か',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '表示不確定的選擇或疑問的嵌入。意思是「...是否...」。\n常接「わかる」(知道)、「知る」(知道) 等動詞。',
                 examples: [
-                    { japanese: 'これは水{みず}ですか、それともお酒{さけ}ですか。', chinese: '這是水{みず}呢，還是酒{さけ}呢？' },
-                    { japanese: '行{い}くか行{い}かないか、決{き}めてください。', chinese: '要去還是不去，請決定一下。' }
+                    { japanese: '明日雨が降るかどうかわかりません。', chinese: '不知道明天是否會下雨。' },
+                    { japanese: '行くか行かないか決めてください。', chinese: '去或不去請決定。' }
                 ]
             }
         ],
@@ -1912,23 +2129,42 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '逆接（口語）',
-                description: '「けれども」的口語形式，表示轉折。',
-                examples: [
-                    { japanese: 'その服{ふく}、かわいけど、高{たか}いね。', chinese: '那件衣服很可愛，但是很貴呢。' },
-                    { japanese: '行{い}きたいけど、時{じ}間{かん}がない。', chinese: '雖然想去，但是沒時{じ}間{かん}。' }
-                ]
+                title: '接續方式',
+                description: '句子 + けど',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '前置緩衝（鋪陳）',
-                description: '用在句尾，緩和語氣，或者引出下文。並不一定表示強烈的轉折。',
+                title: '意義詳解',
+                description: '表示逆接（轉折），意思是「雖然...但是...」。\n是「が」或「けれども」的口語形式。語氣較隨意。',
                 examples: [
-                    { japanese: 'もしもし、田{た}中{なか}ですけど、山{やま}田{だ}さんはいますか。', chinese: '喂，我是田{た}中{なか}，請問山{やま}田{だ}先{せん}生{せい}在嗎？' },
-                    { japanese: 'これ、おいしいけど、食{た}べる？', chinese: '這個很好{す}吃喔，你要吃嗎？' }
+                    { japanese: '行きたいけど、時間がない。', chinese: '雖然想去，但沒時間。' }
+                ]
+            },
+            {
+                usageId: 3,
+                title: '緩衝語氣',
+                description: '有時用於句尾，不一定表示轉折，而是用來緩和語氣或引出話題。',
+                examples: [
+                    { japanese: 'もしもし、田中ですけど...', chinese: '喂，我是田中...' }
                 ]
             }
-        ],
+            ,
+            {
+                usageId: 99, /* PDF Auto-Merge */
+                title: '更多例句 (From PDF)',
+                description: '意思：但是; 雖然 (口語)',
+                examples: [
+                    { japanese: '仕事は⾟いけど楽しい。', chinese: '工作很辛苦，但是很開心。' },
+                    { japanese: '⾦はないけど夢はある。', chinese: '雖然沒錢，但是有夢想。' },
+                    { japanese: 'スポーツは上⼿じゃない けど、好きです。', chinese: '雖然不擅長運動，但是喜歡。' },
+                    { japanese: '悪いけど、明⽇のパーティーに⾏けません。', chinese: '不好意思，明天的派對我不能去。' },
+                    { japanese: '眠いけど、まだ宿題があるから寝られません。', chinese: '雖然很睏，但還有作業所以不能睡。' },
+                    { japanese: 'たくさん勉強したけど、テストの点はよくないでした。', chinese: '雖然讀了很多書，但考試分數不太好。' },
+                    { japanese: '泣いたけど後悔はしていません。', chinese: '雖然哭了，但不後悔。' },
+                    { japanese: '家賃は⾼いけどこのマンションが⼤好きです。', chinese: '雖然房租很貴，但很喜歡這間公寓。' }
+                ]
+            }],
         quiz: [
             {
                 id: 'n5_q_kedo_1',
@@ -1998,7 +2234,22 @@ Object.assign(n5Details, {
                     { japanese: '一生懸命{いっしょうけんめい}走{はし}りましたけれども、間{ま}に合{あ}いませんでした。', chinese: '雖然拚命跑了，但還是沒趕上。' }
                 ]
             }
-        ],
+            ,
+            {
+                usageId: 99, /* PDF Auto-Merge */
+                title: '更多例句 (From PDF)',
+                description: '意思：但是; 雖然 (較正式)',
+                examples: [
+                    { japanese: 'このカメラは⾼かった けれど、すぐ壊れてしまいました。', chinese: '這台相機雖然很貴，但馬上就壞了。' },
+                    { japanese: '外は暑いけれど、家の中は暖かいです。', chinese: '雖然外面很熱，但家裡很溫暖。（註：原文可能有誤，通常是外面冷家裡暖，或外面熱家裡涼）' },
+                    { japanese: '眠いけれど、まだ宿題があるから寝られません。', chinese: '雖然很睏，但還有作業所以不能睡。' },
+                    { japanese: '雪が降っているけれども、スーパーに⾏きます。', chinese: '雖然在下雪，還是要去超市。' },
+                    { japanese: 'お⾦はあまり持っていません。けれども、毎⽇幸せです。', chinese: '雖然沒什麼錢。但是每天都很幸福。' },
+                    { japanese: '先⽣はクラスでは厳しい けれど、クラスの外ではやさしいです。', chinese: '老師在班上很嚴格，但在課外很溫柔。' },
+                    { japanese: '彼は若いけれども経験がある。', chinese: '雖然他很年輕，但有經驗。' },
+                    { japanese: '列⾞が遅れたけれども、なんとか間に合った。', chinese: '雖然火車晚點了，但總算趕上了。' }
+                ]
+            }],
         quiz: [
             {
                 id: 'n5_q_keredomo_1',
@@ -2065,23 +2316,57 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '持續 (還...)',
-                description: '接肯定形，表示狀態還在持續（還在做...）。',
-                examples: [
-                    { japanese: '彼{かれ}はまだ寝{ね}ています。', chinese: '他還在睡覺。' },
-                    { japanese: '雨{あめ}はまだ降{ふ}っています。', chinese: '雨還在下。' }
-                ]
+                title: '接續方式',
+                description: 'まだ + 肯定 / 否定',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '未完成 (尚未)',
-                description: '接否定形，表示動作尚未開始或完成（還沒...）。',
+                title: '用法一：尚在持續 (肯定)',
+                description: '不管是動作還是狀態，表示還在進行中。意思是「還...」。',
                 examples: [
-                    { japanese: '銀{ぎん}行{こう}はまだ開{あ}いていません。', chinese: '銀{ぎん}行{こう}還沒開。' },
-                    { japanese: 'まだ決{き}めていません。', chinese: '還沒決定。' }
+                    { japanese: 'まだ雨が降っています。', chinese: '還在下雨。' }
+                ]
+            },
+            {
+                usageId: 3,
+                title: '用法二：尚未完成 (否定)',
+                description: '與否定形搭配，表示「還沒...」。常搭配「～ていません」。',
+                examples: [
+                    { japanese: 'まだ食べていません。', chinese: '還沒吃。' },
+                    { japanese: 'まだ決めていない。', chinese: '還沒決定。' }
                 ]
             }
-        ],
+            ,
+            {
+                usageId: 99, /* PDF Auto-Merge */
+                title: '更多例句 (From PDF)',
+                description: '意思：還; 尚未',
+                examples: [
+                    { japanese: 'まだですか︖', chinese: '還沒好嗎？/還沒到嗎？' },
+                    { japanese: 'まだまだ暑いだ。', chinese: '天氣還很熱啊。' },
+                    { japanese: '先⽣はまだ来ていない。', chinese: '老師還沒來。' },
+                    { japanese: 'もう10時ですが弟がまだ寝ている。', chinese: '已經10點了，弟弟還在睡。' },
+                    { japanese: 'まだ1時間もあるよ。', chinese: '還有1個小時喔。' },
+                    { japanese: 'あきらめるのはまだ早い︕', chinese: '現在放棄還太早！' },
+                    { japanese: '私は宿題がまだ終わっていません。', chinese: '我的作業還沒寫完。' }
+                ]
+            },
+            {
+                usageId: 99, /* PDF Auto-Merge */
+                title: '更多例句 (From PDF)',
+                description: '意思：還沒...',
+                examples: [
+                    { japanese: 'バスはまだ来ていません。', chinese: '公車還沒來。' },
+                    { japanese: 'まだ、決まっていません 。', chinese: '還沒決定。' },
+                    { japanese: '私はまだ朝ごはんを⾷べていません 。', chinese: '我還沒吃早餐。' },
+                    { japanese: '今週の新しい単語をまだ覚えていません 。', chinese: '這週的新單字還沒記住。' },
+                    { japanese: '⽗はまだ帰ってきていない。', chinese: '父親還沒回來。' },
+                    { japanese: 'まだ宿題をやっていない。', chinese: '還沒做作業。' },
+                    { japanese: '俺はまだあきらめてないんだぞ。', chinese: '我可還沒放棄喔。' },
+                    { japanese: '私の知っている限りでは、彼⼥は まだ結婚していません 。', chinese: '據我所知，她還沒結婚。' }
+                ]
+            }],
         quiz: [
             {
                 id: 'n5_q_mada_1',
@@ -2220,15 +2505,37 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '終點',
-                description: '表示動作或狀態持續的終點（時{じ}間{かん}或地點）。',
+                title: '接續方式',
+                description: '名詞(時間/地點) / 動詞辭書形 + まで',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '表示動作或狀態持續的終點。意思是「到...」、「直到...」。',
                 examples: [
-                    { japanese: '仕事{しごと}は５時{じ}までです。', chinese: '工作到5點結束。' },
-                    { japanese: '東{とう}京{きょう}まで行{い}きます。', chinese: '去到東{とう}京{きょう}。' },
-                    { japanese: '朝{あさ}から晩{ばん}まで勉{べん}強{きょう}しました。', chinese: '從早到晚讀書。' }
+                    { japanese: '大阪まで新幹線で行きます。', chinese: '搭新幹線到大阪。' },
+                    { japanese: '明日まで待ちます。', chinese: '等到明天為止。' }
                 ]
             }
-        ],
+            ,
+            {
+                usageId: 99, /* PDF Auto-Merge */
+                title: '更多例句 (From PDF)',
+                description: '意思：到...; 直到...; 甚至...',
+                examples: [
+                    { japanese: '昨⽇までお休みでした。', chinese: '休假到昨天為止。' },
+                    { japanese: 'ここからそこまでは遠いですよ。', chinese: '從這裡到那裡很遠喔。' },
+                    { japanese: '駅まで⾏きたいんですが、どう⾏ったらいいですか。', chinese: '想去車站，請問該怎麼走？' },
+                    { japanese: '最後までがんばってね︕', chinese: '堅持到最後喔！' },
+                    { japanese: '家まで⾞で送ります。', chinese: '開車送你到家。' },
+                    { japanese: '朝から夜までずっとかんじを勉強しました。', chinese: '從早到晚一直在學漢字。' },
+                    { japanese: 'お店は何時から何時まで開いていますか︖', chinese: '店從幾點開到幾點？' },
+                    { japanese: '先⽣、何時まで学校にいらっしゃいますか。', chinese: '老師，您在學校待到幾點？' },
+                    { japanese: '昼ごはんまでにレポートを書いてしまいました。', chinese: '午餐前就把報告寫完了。（註：原文為made ni，表示期限）' },
+                    { japanese: '⾬が降っているよ。駅 まで送ってあげようか︖', chinese: '在下雨喔。我送你到車站吧？' }
+                ]
+            }],
         quiz: [
             {
                 id: 'n5_q_made_1',
@@ -2291,19 +2598,18 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '時{じ}間{かん}順序（在...之前）',
-                description: '表示在做某動作之前，先做後面的動作。',
-                examples: [
-                    { japanese: '寝{ね}る前{まえ}に、歯{は}を磨{みが}きます。', chinese: '睡覺前刷牙。' },
-                    { japanese: '食事{しょくじ}の前{まえ}に、手{て}を洗{あら}ってください。', chinese: '用餐前請洗手。' }
-                ]
+                title: '接續方式',
+                description: '名詞+の / 動詞辭書形 / 時間詞 + 前に',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '空{そら}間位置（在...前面）',
-                description: '表示位置。',
+                title: '意義詳解',
+                description: '表示時間的先後順序，意思是「在...之前」。\n若是接動詞，必須用辭書形（原形）。',
                 examples: [
-                    { japanese: '駅{えき}の前{まえ}に銀{ぎん}行{こう}があります。', chinese: '車{くるま}站前面有銀{ぎん}行{こう}。' }
+                    { japanese: '寝る前に歯を磨きます。', chinese: '睡前刷牙。' },
+                    { japanese: '食事の前に手を洗います。', chinese: '飯前洗手。' },
+                    { japanese: '30分前に来ました。', chinese: '30分鐘前來的。' }
                 ]
             }
         ],
@@ -2369,14 +2675,40 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '邀約',
-                description: '禮貌地邀請對方做某事。比「～ましょう」更客氣，因為給予對方拒絕的餘地。',
+                title: '接續方式',
+                description: '動詞(ます形去掉ます) + ませんか',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '邀請/建議 (要不要...)',
+                description: '意思：要不要...？、不...嗎？\n用於禮貌地邀請他人做某事。\n例：行きませんか (要不要去？)。',
                 examples: [
-                    { japanese: '一緒{いっしょ}に映{えい}画{が}を見{み}に行{い}きませんか。', chinese: '要不要一起去看電影？' },
-                    { japanese: 'お茶{ちゃ}を飲{の}みませんか。', chinese: '要不要喝杯茶？' }
+                    { japanese: '今⽇⼀緒に⾷べませんか︖', chinese: '今天以此一起吃飯好嗎？' },
+                    { japanese: 'うちで映画を⾒ませんか。', chinese: '要不要在我家看電影？' },
+                    { japanese: 'お茶にしませんか︖', chinese: '要不要喝杯茶？' },
+                    { japanese: '⽇曜⽇にテニスをしませんか。', chinese: '星期天要不要打網球？' },
+                    { japanese: '明⽇⾃転⾞で学校へ⾏きませんか︖', chinese: '明天要不要騎腳踏車去學校？' },
+                    { japanese: 'もう暗くなりました。家へ帰りませんか。', chinese: '天已經黑了。要不要回家了？' },
+                    { japanese: '写真をとってくれませんか︖', chinese: '能幫我拍張照嗎？' }
                 ]
             }
-        ],
+            ,
+            {
+                usageId: 99, /* PDF Auto-Merge */
+                title: '更多例句 (From PDF)',
+                description: '意思：要不要...?; 不...嗎? (邀約)',
+                examples: [
+                    { japanese: '今⽇⼀緒に⾷べませんか︖', chinese: '今天要不要一起吃？' },
+                    { japanese: 'うちで映画を⾒ませんか。', chinese: '要不要在我家看電影？' },
+                    { japanese: 'お茶にしませんか︖', chinese: '要不要喝杯茶？' },
+                    { japanese: '⽇曜⽇にテニスをしませんか。', chinese: '週日要不要打網球？' },
+                    { japanese: '明⽇⾃転⾞で学校へ⾏き ませんか︖', chinese: '明天要不要騎腳踏車去學校？' },
+                    { japanese: 'もう暗くなりました。家へ帰りませんか。', chinese: '已經變暗了。要不要回家了？' },
+                    { japanese: '写真をとってくれませんか︖', chinese: '可以幫我拍張照嗎？' },
+                    { japanese: '私の仕事を⼿伝ってくれません か。', chinese: '可以幫忙我的工作嗎？' }
+                ]
+            }],
         quiz: [
             {
                 id: 'n5_q_masen_ka_1',
@@ -2443,25 +2775,21 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '提議・勸誘（一起做...吧）',
-                description: '用於提議對方一起做某事。語氣積極，假設對方會同意。',
-                examples: [
-                    { japanese: 'そろそろ行{い}きましょう。', chinese: '差不多該走了吧。' },
-                    { japanese: '一緒{いっしょ}に帰{かえ}りましょう。', chinese: '一起回家{いえ}吧。' },
-                    {
-                        japanese: '「日曜日{にちようび}、映{えい}画{が}を見{み}に行{い}きませんか。」\n「いいですね。行{い}きましょう。」',
-                        chinese: '「星期天要不要去看電影？」\n「好{す}啊。走吧。」',
-                        note: '答應邀約時{じ}常用'
-                    }
-                ]
+                title: '接續方式',
+                description: '動詞(ます形去掉ます) + ましょう',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '確認・行動（那我就...了）',
-                description: '說話者為了對方或當下的情況，主動表示要進行某個動作。',
+                title: '提議 (吧/Let\'s)',
+                description: '意思：...吧、一起...吧。\n用於提議一起做某事。\n例：食べましょう (吃吧/我們吃吧)。',
                 examples: [
-                    { japanese: 'ここから始{はじ}めましょう。', chinese: '我們從這裡開始吧。' },
-                    { japanese: '私{わたし}が書{か}きましょう。', chinese: '我來寫吧。（主動承擔）' }
+                    { japanese: '⾏きましょう︕', chinese: '走吧！' },
+                    { japanese: '駅で会いましょう︕', chinese: '在車站見吧！' },
+                    { japanese: 'もうご飯の時間だよ、早く⾷べましょう︕', chinese: '已經是吃飯時間了，快點吃吧！' },
+                    { japanese: '帰る前に教室をきれいにしましょう。', chinese: '回去之前把教室打掃乾淨吧。' },
+                    { japanese: '⼀緒に⽇本語を勉強しましょう︕', chinese: '一起學習日語吧！' },
+                    { japanese: '電気をつけて、部屋を明るくしましょう。', chinese: '開燈讓房間變亮吧。' }
                 ]
             }
         ],
@@ -2494,7 +2822,38 @@ Object.assign(n5Details, {
                     correct: { sentence: '「行{い}きませんか像」「ええ、行{い}きましょう。」', note: '○ 回應邀約' },
                     incorrect: { sentence: '「明{あし}日{た}学{がっ}校{こう}へ行{い}きますか」「ええ、行{い}きましょう」', note: '△ 除非是約好{す}一起去，否則單純回答行程用「行{い}きます」' }
                 }
-            ]
+                ,
+                {
+                    usageId: 99, /* PDF Auto-Merge */
+                    title: '更多例句 (From PDF)',
+                    description: '意思：...吧 (提議)',
+                    examples: [
+                        { japanese: '⾏きましょう︕', chinese: '走吧！' },
+                        { japanese: '駅で会いましょう︕', chinese: '在車站見吧！' },
+                        { japanese: 'もうご飯の時間だよ、早く⾷べましょう︕', chinese: '已經是吃飯時間了，快點吃吧！' },
+                        { japanese: '帰る前に教室をきれいにしましょう。', chinese: '回去前把教室打掃乾淨吧。' },
+                        { japanese: '⼀緒に⽇本語を勉強し ましょう︕', chinese: '一起學日文吧！' },
+                        { japanese: 'もう暗くなったから、帰りましょう。', chinese: '已經變暗了，回家吧。' },
+                        { japanese: '来週、すしを⾷べに⾏き ましょうよ︕', chinese: '下週去吃壽司吧！' },
+                        { japanese: '10時になったら、出かけましょう。', chinese: '到了10點就出門吧。' },
+                        { japanese: '電気をつけて、部屋を明るくしましょう。', chinese: '開燈讓房間變亮吧。' },
+                        { japanese: '決める前にもっとデータを収集し ましょう。', chinese: '決定之前先多收集點數據吧。' }
+                    ]
+                },
+                {
+                    usageId: 99, /* PDF Auto-Merge */
+                    title: '更多例句 (From PDF)',
+                    description: '意思：我來...好嗎? (主動提議)',
+                    examples: [
+                        { japanese: 'マドを開けましょうか。', chinese: '我把窗戶打開好嗎？' },
+                        { japanese: '⼿伝いましょうか 。', chinese: '要幫忙嗎？' },
+                        { japanese: '荷物を持ちましょうか。', chinese: '我幫您拿行李吧？' },
+                        { japanese: 'タクシーを呼びましょうか 。', chinese: '我幫您叫計程車吧？' },
+                        { japanese: '私がお⽫を洗いましょうか ︖', chinese: '我來洗盤子好嗎？' },
+                        { japanese: '写真を取りましょうか。', chinese: '我幫您拍照吧？' },
+                        { japanese: 'サラダを作りましょうか︖', chinese: '我來做沙拉好嗎？' }
+                    ]
+                }]
         },
         quiz: [
             {
@@ -2677,26 +3036,23 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '並列（也）',
-                description: '表示與前面提到的事物具有相同的性質或狀態。',
-                examples: [
-                    { japanese: '私{わたし}は学{がく}生{せい}です。彼{かれ}も学{がく}生{せい}です。', chinese: '我是學生。他也是學生。' },
-                    { japanese: '日{に}本{ほん}に行{い}きたいです。アメリカへも行{い}きたいです。', chinese: '我想去日{に}本{ほん}。也想去美國。（助詞「へ」「に」「で」後面可接「も」）' },
-                    {
-                        japanese: '「山{やま}田{だ}さんは来{き}ませんでしたね。」\n「ええ、田{た}中{なか}さんも来{き}ませんでした。」',
-                        chinese: '「山{やま}田{だ}先{せん}生{せい}沒來呢。」\n「是啊，田{た}中{なか}先{せん}生{せい}也沒來。」',
-                        note: '對話情境'
-                    }
-                ]
+                title: '接續方式',
+                description: '名詞 + も',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '全面肯定或否定（都.../連...也不...）',
-                description: '疑問詞 + も + 肯定/否定。',
+                title: '也 (Too/Also)',
+                description: '意思：也、也是。\n表示同類事物的追加。\n常用句型：AもBも (A和B都...)。',
                 examples: [
-                    { japanese: '何{なに}も食{た}べたくないです。', chinese: '什麼都不想吃。' },
-                    { japanese: '教室{きょうしつ}には誰{だれ}もいません。', chinese: '教{きょう}室{しつ}裡誰{だれ}都沒有（沒半{はん}個人{ひと}）。' },
-                    { japanese: 'どこへも行{い}きませんでした。', chinese: '哪裡都沒去。' }
+                    { japanese: '私もできる。', chinese: '我也能做。' },
+                    { japanese: '⽢いものも⾟いものも好きです。', chinese: '甜的和辣的我都喜歡。' },
+                    { japanese: '先⽣も来ました。', chinese: '老師也來了。' },
+                    { japanese: '私は⽇本語も英語もベトナム語も話せます。', chinese: '我會說日語、英語還有越南語。' },
+                    { japanese: 'あなたもお腹が空いたでしょう︖', chinese: '你肚子也餓了吧？' },
+                    { japanese: '私も⽇本語を勉強していますよ︕', chinese: '我也正在學日文喔！' },
+                    { japanese: '私の妻も⼦どもも来ます。', chinese: '我的妻子和孩子也都會來。' },
+                    { japanese: '仕事に⾏くとき、⾃転⾞も電⾞も使っています。', chinese: '去上班時，自行車和電車都會使用。' }
                 ]
             }
         ],
@@ -2713,7 +3069,23 @@ Object.assign(n5Details, {
                         { context: '取代「を」', correct: { sentence: '水{みず}も飲{の}みます。', note: '○ 原本{ほん}是「水{みず}を」，被取代' } }
                     ]
                 }
-            ]
+                ,
+                {
+                    usageId: 99, /* PDF Auto-Merge */
+                    title: '更多例句 (From PDF)',
+                    description: '意思：也; 連...都',
+                    examples: [
+                        { japanese: '私もできる。', chinese: '我也會。' },
+                        { japanese: '⽢いものも⾟いものも好きです。', chinese: '甜的和辣的都喜歡。' },
+                        { japanese: 'カラオケにはみんなが来ました。先⽣も 来ました。', chinese: '大家都有來唱卡拉OK。老師也來了。' },
+                        { japanese: '私は⽇本語も英語もベトナム語も話せます。', chinese: '我會說從日文、英文和越南文。' },
+                        { japanese: 'あなたもお腹が空いたでしょう︖', chinese: '你也餓了吧？' },
+                        { japanese: '私も⽇本語を勉強していますよ︕', chinese: '我也正在學日文喔！' },
+                        { japanese: '私の妻も⼦どもも来ます。', chinese: '我的妻子和孩子也會來。' },
+                        { japanese: '私も⽇本で留学したことがあります。', chinese: '我也曾在日本留學過。' },
+                        { japanese: '仕事に⾏くとき、⾃転⾞ も電⾞も使っています。', chinese: '去工作時，腳踏車和電車都會用。' }
+                    ]
+                }]
         },
         quiz: [
             // 第 1 題：正向題 - 並列（也）
@@ -2817,32 +3189,58 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '已經（完了）',
-                description: '表示動作已經完成，情況已經改變。',
-                examples: [
-                    { japanese: 'もう昼{ひる}ご飯{はん}を食{た}べました。', chinese: '已經吃過午餐了。' },
-                    { japanese: 'もう１２時{じ}ですよ。', chinese: '已經12點了喔。' }
-                ]
+                title: '接續方式',
+                description: 'もう + 句子',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '不再...（否定）',
-                description: '與否定形連用，表示情況改變，「不再...了」。',
+                title: '已經 (Already)',
+                description: '意思：已經。\n表示動作已完成或狀態已改變。\n例：もう9時だ (已經9點了)。',
                 examples: [
-                    { japanese: 'もう痛{いた}くありません。', chinese: '已經不痛{いた}了。' },
-                    { japanese: '彼{かれ}はもう来{き}ません。', chinese: '他不會再來了。' }
+                    { japanese: 'もう昼ご飯の時間だ。早く⾷べましょう︕', chinese: '已經是午餐時間了。快點吃吧！' },
+                    { japanese: '宿題はもう終わった︖', chinese: '作業已經做完了嗎？' },
+                    { japanese: 'もう少し待ってください。', chinese: '請再等一下 (這裡的 mou 是「再」的意思)。' },
+                    { japanese: 'もう10時ですが、彼はまだ寝ています。', chinese: '已經10點了，但他還在睡。' },
+                    { japanese: '彼⼥と結婚してから、もう５年になります。', chinese: '和她結婚已經5年了。' }
                 ]
             },
             {
                 usageId: 3,
-                title: '再...（追加）',
-                description: '接數量詞，表示「再多...」。這時{じ}重音通常有變化。',
+                title: '再/另外 (Again/More)',
+                description: '意思：再、另外。\n例：もう一杯 (再來一杯)。',
                 examples: [
-                    { japanese: 'もう一杯{いっぱい}いかがですか。', chinese: '要不要再來一杯？' },
-                    { japanese: 'もう少{すこ}し待{ま}ってください。', chinese: '請再等一下。' }
+                    { japanese: 'ビールもう⼀杯ください︕', chinese: '啤酒請再來一杯！' }
+                ]
+            },
+            {
+                usageId: 4,
+                title: '不再 (Not anymore)',
+                description: '意思：不再... (搭配否定)。\n例：もう行かない (再也不去了)。',
+                examples: [
+                    { japanese: '飲み物は全部飲みました。もうありません。', chinese: '飲料全部喝光了。已經沒有了。' },
+                    { japanese: 'コーヒーはもう飲まないことにしました。', chinese: '我決定再也不喝咖啡了。' },
+                    { japanese: 'もう我慢できない。', chinese: '已經無法忍受了。' }
                 ]
             }
-        ],
+            ,
+            {
+                usageId: 99, /* PDF Auto-Merge */
+                title: '更多例句 (From PDF)',
+                description: '意思：已經; 再; 其他',
+                examples: [
+                    { japanese: 'もう昼ご飯の時間だ。早く⾷べましょう︕', chinese: '已經是午餐時間了。快點吃吧！' },
+                    { japanese: '宿題はもう終わった︖', chinese: '作業已經寫完了嗎？' },
+                    { japanese: 'ビールもう⼀杯ください︕', chinese: '請再給給我一杯啤酒！' },
+                    { japanese: '飲み物は全部飲みました。もうありません。', chinese: '飲料全部喝完了。已經沒有了。' },
+                    { japanese: 'もう少し待ってください。', chinese: '請再稍等一下。' },
+                    { japanese: 'コーヒーはもう飲まないことにしました。', chinese: '我決定不再喝咖啡了。' },
+                    { japanese: 'もうこの暑さには、耐えられない。', chinese: '已經受不了這個熱度了。' },
+                    { japanese: 'もう我慢できない。', chinese: '再也忍受不了了。' },
+                    { japanese: 'もう10時ですが、彼はまだ寝ています。', chinese: '已經10點了，但他還在睡。' },
+                    { japanese: '彼⼥と結婚してから、 もう５年になります。', chinese: '自從跟她結婚已經5年了。' }
+                ]
+            }],
         quiz: [
             {
                 id: 'n5_q_mou_1',
@@ -3037,30 +3435,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '感嘆、自言自語',
-                description: '放在句尾表達說話者的感嘆、願望或自言自語。語氣較為隨意，常用於獨白或與親近的人{ひと}對話。',
-                examples: [
-                    { japanese: '今日{きょう}は暑{あつ}いなあ。', chinese: '今{いま}天好熱{ねつ}啊。' },
-                    { japanese: 'おいしいなあ。', chinese: '好{す}好{す}吃啊。' },
-                    {
-                        japanese: '「この桜{さくら}、きれいだなあ。」\n「本{ほん}当{とう}だね。毎年{まいとし}この時期{じき}に来{く}るのが楽{たの}しみなんだ。」\n「うん、来年{らいねん}もまた来{こ}ようね。」',
-                        chinese: '「這櫻花好{す}漂亮啊。」\n「真的耶。每年這個時{じ}期來都很期待呢。」\n「嗯，明年也要再來喔。」',
-                        note: '對話情境'
-                    }
-                ]
+                title: '接續方式',
+                description: '句子 + なあ',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '願望、希望',
-                description: '表達說話者的願望或期待。常與「たい」「ほしい」等表願望的表達一起使用。',
+                title: '感嘆/詠嘆',
+                description: '意思：啊...、呢...。\n用於自言自語或表達強烈的情感、感嘆。\n有時縮略為「な (na)」。\n用法：\n1. 表達感佩 (好...啊)\n2. 表達願望 (真想...啊)\n3. 表達不確定 (是...嗎?)',
                 examples: [
-                    { japanese: '旅行{りょこう}に行{い}きたいなあ。', chinese: '好{す}想去旅行啊。' },
-                    { japanese: '新{あたら}しいパソコンがほしいなあ。', chinese: '好{す}想要新電腦啊。' },
-                    {
-                        japanese: '「夏休{なつやす}み、どこか行{い}きたいなあ。」\n「いいね！海{うみ}と山{やま}、どっちがいい？」\n「うーん、海{うみ}がいいなあ。泳{およ}ぎたい。」',
-                        chinese: '「暑{あつ}假好{す}想去哪裡啊。」\n「好{す}耶！海{うみ}跟山{やま}，你想去哪個？」\n「嗯...想去海{うみ}邊啊。想游泳。」',
-                        note: '對話情境'
-                    }
+                    { japanese: 'たくさんの⼈がいるなあ。', chinese: '哇，有好多人啊。' },
+                    { japanese: 'これ、美味しいなあ。', chinese: '這個，真好吃啊。' },
+                    { japanese: '暑くなってきたなあ。', chinese: '變熱了啊。' },
+                    { japanese: '明⽇は晴れるかなあ。', chinese: '明天會放晴嗎...' },
+                    { japanese: '頭が痛いな。', chinese: '頭好痛啊。' },
+                    { japanese: '新し⾃転⾞が欲しいな〜。', chinese: '真想要新腳踏車啊~。' },
+                    { japanese: 'すごいなあ︕', chinese: '真厲害啊！' }
                 ]
             }
         ],
@@ -3074,7 +3464,23 @@ Object.assign(n5Details, {
                     correct: { sentence: '（對朋友）今日{きょう}は暑{あつ}いなあ。', note: '○ 朋友間使用' },
                     incorrect: { sentence: '（對上司）今日{きょう}は暑{あつ}いなあ。', note: '✕ 對上司太{ふと}隨意' }
                 }
-            ]
+                ,
+                {
+                    usageId: 99, /* PDF Auto-Merge */
+                    title: '更多例句 (From PDF)',
+                    description: '意思：...啊 (感嘆)',
+                    examples: [
+                        { japanese: 'たくさんの⼈がいるなあ。', chinese: '好多人啊。' },
+                        { japanese: 'これ、美味しいなあ。', chinese: '這個真好吃啊。' },
+                        { japanese: '暑くなってきたなあ。', chinese: '變熱了啊。' },
+                        { japanese: 'それは本当かな。', chinese: '那是真的嗎...' },
+                        { japanese: '明⽇は晴れるかなあ。', chinese: '明天會放晴嗎...' },
+                        { japanese: 'トイレはどこかな。', chinese: '廁所在哪裡呢...' },
+                        { japanese: '頭が痛いな。', chinese: '頭好痛啊。' },
+                        { japanese: '新し⾃転⾞が欲しいな〜。', chinese: '好想要新腳踏車啊〜。' },
+                        { japanese: 'あなたは全部⼀⼈で作りましたか︖すごいなあ︕', chinese: '這些全部是你一個人做的嗎？真厲害啊！' }
+                    ]
+                }]
         },
         quiz: [
             {
@@ -3173,30 +3579,21 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '不做A就做B（附帶狀況）',
-                description: '表示在不做A的狀態下做B。強調沒有做某個動作。',
-                examples: [
-                    { japanese: '朝{あさ}ご飯{はん}を食{た}べないで、学{がっ}校{こう}へ行{い}った。', chinese: '沒吃早餐就去學校了。' },
-                    { japanese: '傘{かさ}を持{も}たないで、出{で}かけた。', chinese: '沒帶傘{かさ}就出門了。' },
-                    {
-                        japanese: '「顔色{かおいろ}が悪{わる}いね。大丈夫{だいじょうぶ}？」\n「うん...昨日{きのう}、寝{ね}ないで仕事{しごと}したから、ちょっと疲{つか}れた。」\n「無理{むり}しないでね。今日{きょう}は早{はや}く帰{かえ}りなよ。」',
-                        chinese: '「臉色不太{ふと}好{す}耶。沒事吧？」\n「嗯...因為昨天沒睡一直工作，有點累了。」\n「不要太{ふと}勉強喔。今{いま}天早點回去吧。」',
-                        note: '對話情境'
-                    }
-                ]
+                title: '接續方式',
+                description: '動詞(ない形) + で',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '輕微請求（請不要...）',
-                description: '比「ないでください」更隨意的請求，常用於朋友之間。',
+                title: '不...而... (Without doing)',
+                description: '意思：不做(A)就做(B)、在沒做(A)的狀態下做(B)。\n例：寝ないで勉強する (不睡覺唸書/徹夜唸書)。',
                 examples: [
-                    { japanese: '心配{しんぱい}しないで。', chinese: '不要擔心。' },
-                    { japanese: 'そんなこと言{い}わないで。', chinese: '不要說那種話。' },
-                    {
-                        japanese: '「ねえ、私{わたし}のこと忘{わす}れないで。」\n「何{なに}言{い}ってるの？絶対{ぜったい}忘{わす}れないよ。」\n「ありがとう。また連絡{れんらく}するね。」',
-                        chinese: '「欸，不要忘記我喔。」\n「你在說什麼？絕對不會忘記的啦。」\n「謝謝。我會再聯絡的。」',
-                        note: '對話情境'
-                    }
+                    { japanese: 'コーヒーには、いつもさとうを⼊れないで飲みます。', chinese: '喝咖啡時總是不加糖。' },
+                    { japanese: '彼⼥はカサを持たないで出てしまった。', chinese: '她沒帶傘就出門了。' },
+                    { japanese: '昨⽇は疲れていて、電気を消さないで寝てしまった。', chinese: '昨天太累，沒關燈就睡著了。' },
+                    { japanese: '今朝、朝ごはんを⾷べないで仕事に来ました。', chinese: '今天早上沒吃早餐就來工作了。' },
+                    { japanese: '明⽇は試験なので、今夜は寝ないで勉強します。', chinese: '明天要考試，所以今晚不睡覺唸書。' },
+                    { japanese: 'エアコンをつけないで寝ます。', chinese: '不開冷氣睡覺。' }
                 ]
             }
         ],
@@ -3228,7 +3625,36 @@ Object.assign(n5Details, {
                     correct: { sentence: '薬{くすり}を飲{の}まないで、寝{ね}た。', note: '○ 沒吃藥就睡了（動作缺失）' },
                     incorrect: { sentence: '薬{くすり}を飲{の}まなくて、寝{ね}た。', note: '✕ 語法不通' }
                 }
-            ]
+                ,
+                {
+                    usageId: 99, /* PDF Auto-Merge */
+                    title: '更多例句 (From PDF)',
+                    description: '意思：不...而...; 沒有...',
+                    examples: [
+                        { japanese: 'コーヒーには、いつもさとうを⼊れ ないで飲みます。', chinese: '喝咖啡總是不加糖。' },
+                        { japanese: '彼⼥はカサを持たないで出てしまった。', chinese: '她沒帶傘就出門了。' },
+                        { japanese: '昨⽇は疲れていて、電気を消さないで寝てしまった。', chinese: '昨天太累，沒關燈就睡著了。' },
+                        { japanese: '今朝、朝ごはんを⾷べ ないで仕事に来ました。', chinese: '今天早上沒吃早餐就來工作了。' },
+                        { japanese: '昨⽇、お⾵呂に⼊らないで寝てしまった。', chinese: '昨天沒洗澡就睡著了。' },
+                        { japanese: '明⽇は試験なので、今夜は寝ないで勉強します。', chinese: '明天要考試，所以今晚要通宵唸書。' },
+                        { japanese: '最近、涼しいのでエアコンをつけ ないで寝ます。', chinese: '最近很涼爽，所以睡覺不開冷氣。' },
+                        { japanese: '朝ごはんを⾷べないで学校に来たから、お腹がすいた。', chinese: '因為沒吃早餐就來學校，肚子餓了。' }
+                    ]
+                },
+                {
+                    usageId: 99, /* PDF Auto-Merge */
+                    title: '更多例句 (From PDF)',
+                    description: '意思：請不要...',
+                    examples: [
+                        { japanese: '泣かないでください。', chinese: '請不要哭。' },
+                        { japanese: 'このパソコンを使わないでください。', chinese: '請不要使用這台電腦。' },
+                        { japanese: '明⽇の予定を忘れないでください。', chinese: '請不要忘記明天的行程。' },
+                        { japanese: '私のことを⼼配しないでください。', chinese: '請不要擔心我。' },
+                        { japanese: '道の邪魔をしないでください。', chinese: '請不要擋路。' },
+                        { japanese: '事務所で⾷べないでください。', chinese: '請不要在辦公室吃東西。' },
+                        { japanese: '⼀⼈にしたいからここに来ないでください。', chinese: '我想一個人靜一靜，請不要過來這裡。' }
+                    ]
+                }]
         },
         quiz: [
             {
@@ -3327,16 +3753,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '禮貌的禁止請求',
-                description: '禮貌地請求對方不要做某事。比「ないで」更正式，可用於對上司或陌生人{ひと}。',
+                title: '接續方式',
+                description: '動詞(ない形) + でください',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '請不要... (禁止)',
+                description: '意思：請不要...\n禮貌地請求對方不要做某事。',
                 examples: [
-                    { japanese: 'ここで写真{しゃしん}を撮{と}らないでください。', chinese: '請不要在這裡拍照。' },
-                    { japanese: '大{おお}きい声{こえ}で話{はな}さないでください。', chinese: '請不要大聲說話。' },
-                    {
-                        japanese: '「すみません、ここでタバコを吸{す}わないでください。」\n「あ、すみません。喫煙所{きつえんじょ}はどこですか。」\n「外{そと}のあそこにあります。」\n「分{わ}かりました。ありがとうございます。」',
-                        chinese: '「不好{す}意思，請不要在這裡抽菸。」\n「啊，抱歉。吸菸區在哪裡？」\n「在外面那邊。」\n「我知道了。謝謝您。」',
-                        note: '對話情境'
-                    }
+                    { japanese: '泣かないでください。', chinese: '請不要哭。' },
+                    { japanese: 'このパソコンを使わないでください。', chinese: '請不要使用這台電腦。' },
+                    { japanese: '明⽇の予定を忘れないでください。', chinese: '請不要忘記明天的行程。' },
+                    { japanese: '私のことを⼼配しないでください。', chinese: '請不要擔心我。' },
+                    { japanese: '道の邪魔をしないでください。', chinese: '請不要擋路。' },
+                    { japanese: '事務所で⾷べないでください。', chinese: '請不要在辦公室吃東西。' },
+                    { japanese: 'ここに来ないでください。', chinese: '請不要來這裡。' }
                 ]
             }
         ],
@@ -3461,30 +3893,23 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '尋求確認或同意',
-                description: '放在句尾，確認對方是否同意或知道某件事。語調上揚時{じ}帶有詢問的語氣。',
-                examples: [
-                    { japanese: '今日{きょう}は寒{さむ}いですね。', chinese: '今{いま}天好{す}冷{つめ}呢。（對吧？）' },
-                    { japanese: 'この料{りょう}理{り}、おいしいね。', chinese: '這道菜好{す}好{す}吃呢。' },
-                    {
-                        japanese: '「この映{えい}画{が}、面白{おもしろ}かったね。」\n「うん、特{とく}にラストが良{よ}かったね。」\n「また一緒{いっしょ}に映{えい}画{が}見{み}に行{い}こうね。」',
-                        chinese: '「這部電影很好{す}看呢。」\n「嗯，特{とく}別{べつ}是結局很棒呢。」\n「下次再一起去看電影吧。」',
-                        note: '對話情境'
-                    }
-                ]
+                title: '接續方式',
+                description: '句子/短語 + ね',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '緩和語氣、拉近距離',
-                description: '加在句尾可以讓語氣更加柔和親{しん}切{せつ}，拉近與對方的距離。',
+                title: '確認/徵求同意',
+                description: '意思：...呢、...吧。\n句尾助詞，用於：\n1. 徵求對方同意 (是這樣吧？)\n2. 確認事實\n3. 表示輕微的感嘆\n\n例：今日は暑いですね (今天好熱呢 - 期待對方同意)。',
                 examples: [
-                    { japanese: 'じゃあ、また明日{あした}ね。', chinese: '那麼，明天見{み}囉。' },
-                    { japanese: '頑張{がんば}ってね。', chinese: '加油喔。' },
-                    {
-                        japanese: '「明日{あした}の約束{やくそく}、忘{わす}れないでね。」\n「大丈夫{だいじょうぶ}だよ。10時{じ}に駅{えき}前{まえ}で待{ま}ち合{あ}わせね。」\n「うん、楽{たの}しみにしてるね。」',
-                        chinese: '「明天的約定，不要忘記喔。」\n「沒問{もん}題{だい}啦。10點在車{くるま}站前見{み}面喔。」\n「嗯，我很期待喔。」',
-                        note: '對話情境'
-                    }
+                    { japanese: 'かわいいね。', chinese: '好可愛呢。' },
+                    { japanese: 'そうですね。', chinese: '是啊 / 對呀。' },
+                    { japanese: '今⽇の天気はいいですね。', chinese: '今天天氣真好呢。' },
+                    { japanese: 'またメールするね。', chinese: '晚點再傳訊息給你喔。' },
+                    { japanese: 'それは⼤変ですね。', chinese: '那真是辛苦呢 / 夠嗆的。' },
+                    { japanese: 'あなたはとても疲れた声をしているね。', chinese: '你的聲音聽起來很累呢。' },
+                    { japanese: '⽇本語がお上⼿ですね。', chinese: '日語說得真好呢。' },
+                    { japanese: 'あなたはスポーツが下⼿ですね。', chinese: '你不擅長運動呢。' }
                 ]
             }
         ],
@@ -3504,7 +3929,24 @@ Object.assign(n5Details, {
                         { japanese: '明日{あした}は休{やす}みですよ。', chinese: '明天休息喔。（告訴你這個資訊）', note: '○ 告知新資訊' }
                     ]
                 }
-            ]
+                ,
+                {
+                    usageId: 99, /* PDF Auto-Merge */
+                    title: '更多例句 (From PDF)',
+                    description: '意思：呢; 吧 (確認/共鳴)',
+                    examples: [
+                        { japanese: 'かわいいね。', chinese: '好可愛喔。' },
+                        { japanese: 'そうですね。', chinese: '是啊。' },
+                        { japanese: '今⽇の天気はいいです ね。', chinese: '今天天氣真好呢。' },
+                        { japanese: 'またあとでね︕', chinese: '待會見囉！' },
+                        { japanese: 'またメールするね 。', chinese: '再傳郵件給你喔。' },
+                        { japanese: 'それは⼤変ですね 。', chinese: '那真是辛苦呢。' },
+                        { japanese: 'あなたはとても疲れた声をしている ね。', chinese: '你的聲音聽起來很累呢。' },
+                        { japanese: '⽇本語がお上⼿ですね 。', chinese: '日語真好呢。' },
+                        { japanese: 'あなたはスポーツが下⼿ですね 。', chinese: '你不擅長運動呢。' },
+                        { japanese: '今⽇も⼀⽇、頑張りましょうね 。', chinese: '今天一整天也一起加油吧。' }
+                    ]
+                }]
         },
         quiz: [
             // 第 1 題：正向題 - 確認共識
@@ -3608,30 +4050,25 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '告知對方不知道的資訊',
-                description: '用於告訴對方他可能不知道的事情，有「我告訴你喔」的語氣。',
-                examples: [
-                    { japanese: '明日{あした}は休{やす}みですよ。', chinese: '明天休息喔。' },
-                    { japanese: 'もう電{でん}車{しゃ}が来{き}ますよ。', chinese: '電{でん}車{しゃ}要來了喔。' },
-                    {
-                        japanese: '「あれ、田{た}中{なか}さんは？」\n「田{た}中{なか}さんは今日{きょう}、休{やす}みですよ。」\n「え、そうなの？知{し}らなかった。」',
-                        chinese: '「咦，田{た}中{なか}先{せん}生{せい}呢？」\n「田{た}中{なか}先{せん}生{せい}今{いま}天休假喔。」\n「咦，是嗎？我不知道。」',
-                        note: '對話情境'
-                    }
-                ]
+                title: '接續方式',
+                description: '句子 + よ',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '強調、提醒',
-                description: '強調某件事或提醒對方注意。帶有「你聽好{す}了」的語氣。',
+                title: '強調/告知 (Emphasis)',
+                description: '意思：喔、唷。\n句尾助詞，用於：\n1. 告知對方不知道的訊息\n2. 強調自己的主張\n3. 提醒或警告\n\n例：おいしいよ (很好吃喔 - 告訴你)。',
                 examples: [
-                    { japanese: '危{あぶ}ないですよ！', chinese: '很危險喔！' },
-                    { japanese: '本{ほん}当{とう}ですよ。', chinese: '是真的喔。' },
-                    {
-                        japanese: '「あ、財布{さいふ}忘{わす}れてるよ！」\n「え！ありがとう。危{あぶ}なかった。」\n「気{き}をつけてよ。」',
-                        chinese: '「啊，你忘記帶錢包了喔！」\n「咦！謝謝。好{す}險。」\n「小心點喔。」',
-                        note: '對話情境'
-                    }
+                    { japanese: '⾏くよ。', chinese: '走囉！' },
+                    { japanese: 'ちょっと、待ってよ︕', chinese: '喂，等一下唷！' },
+                    { japanese: '元気を出せよ。', chinese: '打起精神來唷。' },
+                    { japanese: '愛してるよ。', chinese: '愛你喔。' },
+                    { japanese: '頑張るよ。', chinese: '我會加油的喔。' },
+                    { japanese: '寝る時間ですよ。', chinese: '是睡覺時間囉。' },
+                    { japanese: '君にいい知らせがあるよ︕', chinese: '有好消息要告訴你喔！' },
+                    { japanese: '家まで⾞で送るよ。', chinese: '開車送你回家喔。' },
+                    { japanese: '⾞で来る予定ですよね︖', chinese: '預定是開車來吧？' },
+                    { japanese: '燃えるゴミと燃えないゴミの区別もよく分からないよね。', chinese: '可燃垃圾和不可燃垃圾的區別也搞不太清楚呢。' }
                 ]
             }
         ],
@@ -3755,55 +4192,26 @@ Object.assign(n5Details, {
         level: 'N5',
         explanation: [
             {
-                usage: '表示時{じ}間{かん}點',
-                description: '表示動作發生的具體時{じ}間{かん}點。',
-                examples: [
-                    { japanese: '七時{しちじ}に起{お}きます。', chinese: '七點起床。' },
-                    { japanese: '日曜日{にちようび}に映{えい}画{が}を見{み}ます。', chinese: '星期天看電影。' },
-                    {
-                        japanese: '「明日{あした}何時{なんじ}に会{あ}う？」\n「十時{じゅうじ}に駅{えき}で会{あ}おう。」\n「分{わ}かった。」',
-                        chinese: '「明天幾點見{み}面？」\n「十{とお}點在車{くるま}站見{み}面吧。」\n「好{す}的。」',
-                        note: '對話情境'
-                    }
-                ]
+                usageId: 1,
+                title: '接續方式',
+                description: '名詞 + に',
+                examples: []
             },
             {
-                usage: '表示方向/目的地',
-                description: '表示移動的方向或目的地。',
+                usageId: 2,
+                title: '助詞用法總結',
+                description: '「に」有多種用法，取決於上下文。\n\n主要用法：\n1. 地點 (在...)：日本に住んでいる (住在與本)。\n2. 時間 (在...時)：7時に行く (7點去)。\n3. 目的地 (去...)：日本に行く (去日本)。\n4. 存在位置 (在...)：テーブルの上にある (在桌子上)。\n5. 對象：友達に会う (見朋友)。',
                 examples: [
-                    { japanese: '学{がっ}校{こう}に行{い}きます。', chinese: '去學校。' },
-                    { japanese: '日{に}本{ほん}に行{い}きたいです。', chinese: '想去日{に}本{ほん}。' },
-                    {
-                        japanese: '「どこに行{い}くの？」\n「図書館{としょかん}に行{い}く。」\n「じゃ、一緒{いっしょ}に行{い}こう。」',
-                        chinese: '「要去哪裡？」\n「去圖書館。」\n「那一起去吧。」',
-                        note: '對話情境'
-                    }
-                ]
-            },
-            {
-                usage: '表示存在位置',
-                description: '與「いる/ある」一起使用，表示人{ひと}或物存在的位置。',
-                examples: [
-                    { japanese: '部屋{へや}に猫{ねこ}がいます。', chinese: '房間裡有貓。' },
-                    { japanese: '机{つくえ}の上{うえ}に本{ほん}があります。', chinese: '桌上有書。' },
-                    {
-                        japanese: '「お母{かあ}さんはどこにいる？」\n「台所{だいどころ}にいるよ。」\n「ありがとう。」',
-                        chinese: '「媽媽在哪裡？」\n「在廚房喔。」\n「謝謝。」',
-                        note: '對話情境'
-                    }
-                ]
-            },
-            {
-                usage: '表示對象',
-                description: '表示動作的對象（給予、教授等動作的接收者）。',
-                examples: [
-                    { japanese: '友達{ともだち}にプレゼントをあげます。', chinese: '送禮物給朋友。' },
-                    { japanese: '先{せん}生{せい}に質{しつ}問{もん}します。', chinese: '向老師提問。' },
-                    {
-                        japanese: '「誰{だれ}にあげるの？」\n「彼女{かのじょ}にあげる。」\n「いいね！」',
-                        chinese: '「要給誰{だれ}？」\n「給女朋友。」\n「不錯喔！」',
-                        note: '對話情境'
-                    }
+                    { japanese: '来⽉⼤学に⼊る。', chinese: '下個月進大學。' },
+                    { japanese: 'どうやって学校に通っていますか︖', chinese: '你是怎麼去上學的？' },
+                    { japanese: 'あなたは何時にスーパーに⾏きますか︖', chinese: '你幾點去超市？' },
+                    { japanese: '⽇本に来たことはありますか︖', chinese: '有來過日本嗎？' },
+                    { japanese: 'あの⽊の下に⼤きな⽝がいます。', chinese: '那棵樹下有一隻大狗。' },
+                    { japanese: '今家の中にいますよ。', chinese: '我現在在家裡喔。' },
+                    { japanese: 'ここにお名前を書いてください。', chinese: '請在這裡寫上名字。' },
+                    { japanese: 'アメリカにはどのくらい滞在しますか︖', chinese: '會在美國待多久呢？' },
+                    { japanese: '家へ向かっているところです。', chinese: '正要回家 (朝家的方向)。' },
+                    { japanese: 'そこへ⾏くには⾞で6時間かかる。', chinese: '去那裡開車要花6小時。' }
                 ]
             }
         ],
@@ -3939,42 +4347,23 @@ Object.assign(n5Details, {
         level: 'N5',
         explanation: [
             {
-                usage: '表示所有/所屬',
-                description: '表示某物屬於某人{ひと}或某物。',
-                examples: [
-                    { japanese: '私{わたし}の本{ほん}', chinese: '我的書' },
-                    { japanese: '日{に}本{ほん}の文化{ぶんか}', chinese: '日{に}本{ほん}的文化' },
-                    {
-                        japanese: '「これは誰{だれ}の傘{かさ}？」\n「田{た}中{なか}さんのだと思{おも}う。」\n「そうか。届{とど}けてあげよう。」',
-                        chinese: '「這是誰{だれ}的傘{かさ}？」\n「我想是田{た}中{なか}先{せん}生{せい}的。」\n「這樣啊。幫他送過去吧。」',
-                        note: '對話情境'
-                    }
-                ]
+                usageId: 1,
+                title: '接續方式',
+                description: '名詞 + の + 名詞',
+                examples: []
             },
             {
-                usage: '名詞修飾名詞',
-                description: '用「の」連接兩個名詞，前面的名詞修飾後面的名詞。',
+                usageId: 2,
+                title: '所有格/屬性 (的)',
+                description: '意思：...的。\n表示所屬、修飾或屬性。\n例：私のペン (我的筆)。\n也可以代替名詞使用 (用於避免重複)。\n例：私のです (是我的 [東西])。',
                 examples: [
-                    { japanese: '日本語{にほんご}の先{せん}生{せい}', chinese: '日語老師' },
-                    { japanese: '木{き}の机{つくえ}', chinese: '木頭{あたま}桌子' },
-                    {
-                        japanese: '「あの人{ひと}は誰{だれ}？」\n「大{だい}学{がく}の友達{ともだち}だよ。」\n「へえ、紹介{しょうかい}して。」',
-                        chinese: '「那個人{ひと}是誰{だれ}？」\n「是大學的朋友喔。」\n「欸，介紹一下。」',
-                        note: '對話情境'
-                    }
-                ]
-            },
-            {
-                usage: '代替名詞（の＝もの/こと）',
-                description: '「の」可以代替前面提過的名詞，避免重複。',
-                examples: [
-                    { japanese: '赤{あか}いのが好{す}きです。', chinese: '我喜歡紅色的（東西）。' },
-                    { japanese: '大{おお}きいのをください。', chinese: '請給我大的（那個）。' },
-                    {
-                        japanese: '「どのケーキにする？」\n「チョコレートのにする。」\n「じゃ、私{わたし}はいちごの。」',
-                        chinese: '「要哪個蛋糕？」\n「我要巧克力的。」\n「那我要草莓的。」',
-                        note: '對話情境'
-                    }
+                    { japanese: 'あなたの名前は何ですか︖', chinese: '你的名字是什麼？' },
+                    { japanese: 'これはだれのカバンですか︖', chinese: '這是誰的包包？' },
+                    { japanese: '私の先⽣はとてもいい先⽣だ。', chinese: '我的老師是非常好的老師。' },
+                    { japanese: '彼⽒の好きな料理はカレーです。', chinese: '男朋友喜歡的料理是咖哩。' },
+                    { japanese: '私の⼀番好きな季節は秋だ。', chinese: '我最喜歡的季節是秋天。' },
+                    { japanese: 'このカメラは私のではなく、友だちのです。', chinese: '這相機不是我的，是朋友的。' },
+                    { japanese: '夏の暑さのせいで私は寝不⾜です。', chinese: '因為夏天的炎熱，我睡眠不足。' }
                 ]
             }
         ],
@@ -4110,42 +4499,23 @@ Object.assign(n5Details, {
         level: 'N5',
         explanation: [
             {
-                usage: '標記動作的受詞',
-                description: '「を」放在名詞後面，表示這個名詞是動作的對象（受詞）。',
-                examples: [
-                    { japanese: '本{ほん}を読{よ}みます。', chinese: '讀書。' },
-                    { japanese: 'ご飯{はん}を食{た}べます。', chinese: '吃飯。' },
-                    {
-                        japanese: '「今日{きょう}何{なに}を食{た}べる？」\n「カレーを食{た}べたいな。」\n「いいね、作{つく}ろう！」',
-                        chinese: '「今{いま}天要吃什麼？」\n「想吃咖哩。」\n「好{す}啊，來做吧！」',
-                        note: '對話情境'
-                    }
-                ]
+                usageId: 1,
+                title: '接續方式',
+                description: '名詞 + を + 動詞',
+                examples: []
             },
             {
-                usage: '表示經過的地點',
-                description: '與移動動詞一起使用，表示經過或離開的地點。',
+                usageId: 2,
+                title: '受詞標記',
+                description: '意思：把...、對...。\n標示動作的對象 (受詞)。\n發音通常讀作「o」，但在鍵盤輸入時要打「wo」。\n例：肉を食べる (吃肉)。',
                 examples: [
-                    { japanese: '公{こう}園{えん}を散{さん}歩{ぽ}します。', chinese: '在公{こう}園{えん}散步。' },
-                    { japanese: '橋{はし}を渡{わた}ります。', chinese: '過橋。' },
-                    {
-                        japanese: '「どの道{みち}を行{い}く？」\n「この道{みち}を行{い}こう。近{ちか}いから。」\n「うん、そうしよう。」',
-                        chinese: '「走哪條路？」\n「走這條路吧。因為比較近。」\n「嗯，就這樣吧。」',
-                        note: '對話情境'
-                    }
-                ]
-            },
-            {
-                usage: '表示離開的起點',
-                description: '與「出{で}る」「卒{そつ}業{ぎょう}する」等動詞一起使用，表示離開某處。',
-                examples: [
-                    { japanese: '家{いえ}を出{で}ます。', chinese: '出門。' },
-                    { japanese: '大{だい}学{がく}を卒業{そつぎょう}しました。', chinese: '大學畢業了。' },
-                    {
-                        japanese: '「もう行{い}くの？」\n「うん、七時{しちじ}に家{いえ}を出{で}ないと。」\n「気{き}をつけてね。」',
-                        chinese: '「要走了嗎？」\n「嗯，七點必須出門。」\n「小心喔。」',
-                        note: '對話情境'
-                    }
+                    { japanese: '⽇本語をべんきょうしています。', chinese: '正在學日語。' },
+                    { japanese: '⽇本語を話します。', chinese: '說日語。' },
+                    { japanese: '今⽇は朝ごはんを⾷べませんでした。', chinese: '今天沒吃早餐。' },
+                    { japanese: 'もう宿題をしました。', chinese: '作業已經做了。' },
+                    { japanese: '毎⽇ランニングをします。', chinese: '每天跑步 (做跑步這件事)。' },
+                    { japanese: '⿂を⾷べたことがない。', chinese: '沒吃過魚。' },
+                    { japanese: '毎週新しいかんじを学ぶ。', chinese: '每週學習新的漢字。' }
                 ]
             }
         ],
@@ -4281,42 +4651,24 @@ Object.assign(n5Details, {
         level: 'N5',
         explanation: [
             {
-                usage: '標記話題/主題',
-                description: '「は」用來標記句子的主題，表示「關於...」。',
-                examples: [
-                    { japanese: '私{わたし}は学{がく}生{せい}です。', chinese: '我是學生。' },
-                    { japanese: '東{とう}京{きょう}は日{に}本{ほん}の首都{しゅと}です。', chinese: '東{とう}京{きょう}是日{に}本{ほん}的首都。' },
-                    {
-                        japanese: '「田{た}中{なか}さんはどこ？」\n「田{た}中{なか}さんは会議室{かいぎしつ}にいますよ。」\n「ありがとう。」',
-                        chinese: '「田{た}中{なか}先{せん}生{せい}在哪裡？」\n「田{た}中{なか}先{せん}生{せい}在會議室喔。」\n「謝謝。」',
-                        note: '對話情境'
-                    }
-                ]
+                usageId: 1,
+                title: '接續方式',
+                description: '名詞 + は',
+                examples: []
             },
             {
-                usage: '表示對比',
-                description: '使用「は」可以暗示與其他事物的對比。',
+                usageId: 2,
+                title: '主題標記 (Topic)',
+                description: '意思：...是...、關於...。\n標示句子的主題。\n發音讀作「wa」。\n例：私は学生です (我是學生)。',
                 examples: [
-                    { japanese: '肉{にく}は食{た}べますが、魚{さかな}は食{た}べません。', chinese: '我吃肉{にく}，但不吃魚{さかな}。' },
-                    { japanese: '今日{きょう}は暇{ひま}ですが、明日{あした}は忙{いそが}しいです。', chinese: '今{いま}天有空{そら}，但明天很忙{いそが}。' },
-                    {
-                        japanese: '「コーヒーは飲{の}む？」\n「コーヒーは飲{の}まないけど、紅{こう}茶{ちゃ}は飲{の}むよ。」\n「じゃ、紅{こう}茶{ちゃ}にしよう。」',
-                        chinese: '「要喝咖啡嗎？」\n「咖啡不喝，但紅{こう}茶{ちゃ}要喝喔。」\n「那就紅{こう}茶{ちゃ}吧。」',
-                        note: '對話情境'
-                    }
-                ]
-            },
-            {
-                usage: '否定句中{なか}強調',
-                description: '在否定句中{なか}，「は」強調「這個不行，別的可能可以」。',
-                examples: [
-                    { japanese: 'ここでは食{た}べられません。', chinese: '這裡不能吃。（別處可以）' },
-                    { japanese: '今日{きょう}は行{い}けません。', chinese: '今{いま}天不能去。（別天可以）' },
-                    {
-                        japanese: '「今日{きょう}、映{えい}画{が}行{い}かない？」\n「今日{きょう}は行{い}けないな。明日{あした}はどう？」\n「明日{あした}ならOK！」',
-                        chinese: '「今{いま}天要不要去看電影？」\n「今{いま}天不行呢。明天如何{なに}？」\n「明天的話OK！」',
-                        note: '對話情境'
-                    }
+                    { japanese: '私はジョンです。', chinese: '我是John。' },
+                    { japanese: 'それは⾯⽩い。', chinese: '那很有趣。' },
+                    { japanese: '今⽇は電⾞で来ました。', chinese: '今天搭電車來的。' },
+                    { japanese: '⾦曜⽇は空いていますか︖', chinese: '星期五有空嗎？' },
+                    { japanese: '運動をするのは嫌です。', chinese: '討厭運動。' },
+                    { japanese: '好きな⾷べ物は何ですか︖', chinese: '喜歡的食物是什麼？' },
+                    { japanese: '私の⼤学はその駅の近くにある。', chinese: '我的大學在那個車站附近。' },
+                    { japanese: '彼を説得するのは不可能だった。', chinese: '說服他是不可能的。' }
                 ]
             }
         ],
@@ -4457,42 +4809,32 @@ Object.assign(n5Details, {
         level: 'N5',
         explanation: [
             {
-                usage: '表示進行中{なか}的動作',
-                description: '表示動作正在進行中{なか}。',
+                usageId: 1,
+                title: '接續方式',
+                description: '動詞(て形) + いる',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '正在進行 (Progressive)',
+                description: '意思：正在...。\n表示動作正在進行。\n例：食べている (正在吃)。',
                 examples: [
-                    { japanese: '本{ほん}を読{よ}んでいます。', chinese: '正在看書。' },
-                    { japanese: '今{いま}、ご飯{はん}を食{た}べています。', chinese: '現在正在吃飯。' },
-                    {
-                        japanese: '「何{なに}をしているの？」\n「宿{しゅく}題{だい}をしているよ。」\n「頑張{がんば}って！」',
-                        chinese: '「在做什麼？」\n「在做功課喔。」\n「加油！」',
-                        note: '對話情境'
-                    }
+                    { japanese: '昼ごはんは何を⾷べているの︖', chinese: '午餐正在吃什麼？' },
+                    { japanese: '私もその本を読んでいる︕', chinese: '我也正在讀那本書！' },
+                    { japanese: '今⽇の⽇本は⾬が降っています。', chinese: '今天的日本正在下雨。' },
+                    { japanese: 'お⺟さんと電話をしています。', chinese: '正在跟媽媽講電話。' }
                 ]
             },
             {
-                usage: '表示持續的狀態',
-                description: '表示動作的結果所形成的狀態。',
+                usageId: 3,
+                title: '狀態持續 (State/Habit)',
+                description: '意思：...著、一直...、習慣...\n表示動作的結果狀態持續，或習慣性動作。\n例：\n- 知っている (知道 - 狀態)\n- 結婚している (已婚 - 狀態)\n- 毎日走っている (每天跑 - 習慣)\n- 住んでいる (住在 - 狀態)',
                 examples: [
-                    { japanese: '窓{まど}が開{あ}いています。', chinese: '窗戶開著。' },
-                    { japanese: '彼{かれ}は結婚{けっこん}しています。', chinese: '他已經結{けっ}婚{こん}了。' },
-                    {
-                        japanese: '「あれ、電{でん}気{き}がついているよ。」\n「ああ、消{け}すの忘{わす}れた。」\n「もったいないね。」',
-                        chinese: '「咦，電燈亮著喔。」\n「啊，忘記關了。」\n「真浪費呢。」',
-                        note: '對話情境'
-                    }
-                ]
-            },
-            {
-                usage: '表示習慣/反覆動作',
-                description: '表示經常做某事或習慣性動作。',
-                examples: [
-                    { japanese: '毎日{まいにち}運動{うんどう}しています。', chinese: '每天都在運{うん}動{どう}。' },
-                    { japanese: '東{とう}京{きょう}に住{す}んでいます。', chinese: '住在東{とう}京{きょう}。' },
-                    {
-                        japanese: '「どこで働{はたら}いているの？」\n「IT会{かい}社{しゃ}で働{はたら}いているよ。」\n「いいね！」',
-                        chinese: '「在哪裡工作？」\n「在IT公司工作喔。」\n「不錯呢！」',
-                        note: '對話情境'
-                    }
+                    { japanese: 'いつからサッカーをやっているのですか。', chinese: '從什麼時候開始踢足球的？ (習慣)' },
+                    { japanese: 'どれくらい⽇本に住んでいますか︖', chinese: '在日本住多久了？ (狀態)' },
+                    { japanese: 'そのお店は何時までやっているのですか︖', chinese: '那家店開到幾點？ (狀態)' },
+                    { japanese: '⼭⽥さんはまだ寝ていると思います。', chinese: '我想山田先生還在睡覺 (狀態)。' },
+                    { japanese: '私もあなたを愛しています。', chinese: '我也愛著你 (狀態)。' }
                 ]
             }
         ],
@@ -4628,29 +4970,17 @@ Object.assign(n5Details, {
         level: 'N5',
         explanation: [
             {
-                usage: '表示動作順序',
-                description: '表示先做A，然後做B。強調A完成後才做B。',
-                examples: [
-                    { japanese: '手{て}を洗{あら}ってから、ご飯{はん}を食{た}べます。', chinese: '洗手之後吃飯。' },
-                    { japanese: '宿{しゅく}題{だい}をしてから、遊{あそ}びます。', chinese: '做完功課之後玩。' },
-                    {
-                        japanese: '「今日{きょう}、映{えい}画{が}見{み}に行{い}かない？」\n「うん、仕事{しごと}が終{お}わってから行{い}こう。」\n「何時{なんじ}に終{お}わる？」',
-                        chinese: '「今{いま}天要不要去看電影？」\n「好{す}啊，工作結束後去吧。」\n「幾點結束？」',
-                        note: '對話情境'
-                    }
-                ]
+                usageId: 1,
+                title: '接續方式',
+                description: '動詞(て形) + から',
+                examples: []
             },
             {
-                usage: '表示時{じ}間{かん}經過',
-                description: '表示自從某事發生後經過多久。',
+                usageId: 2,
+                title: '意義詳解',
+                description: '表示動作的先後順序。意思是「做完A之後，立刻做B」。\n強調順序。',
                 examples: [
-                    { japanese: '日{に}本{ほん}に来{き}てから、三年{さんねん}になります。', chinese: '來日{に}本{ほん}已經三年了。' },
-                    { japanese: '起{お}きてから、まだ何{なに}も食{た}べていません。', chinese: '起床後還什麼都沒吃。' },
-                    {
-                        japanese: '「日本語{にほんご}の勉{べん}強{きょう}、いつから始{はじ}めたの？」\n「大{だい}学{がく}に入{はい}ってからだよ。」\n「そうなんだ。上{じょう}手{ず}だね。」',
-                        chinese: '「日語是什麼時{じ}候開始學的？」\n「進大學之後喔。」\n「這樣啊。說得很好{す}呢。」',
-                        note: '對話情境'
-                    }
+                    { japanese: '手を洗ってから、食べます。', chinese: '洗完手之後再吃。' }
                 ]
             }
         ],
@@ -4782,29 +5112,25 @@ Object.assign(n5Details, {
         level: 'N5',
         explanation: [
             {
-                usage: '禮貌請求',
-                description: '禮貌地請求對方做某事。',
-                examples: [
-                    { japanese: 'ここに名{な}前{まえ}を書{か}いてください。', chinese: '請在這裡寫名字{じ}。' },
-                    { japanese: 'もう一度{いちど}言{い}ってください。', chinese: '請再說一次。' },
-                    {
-                        japanese: '「すみません、写真{しゃしん}を撮{と}ってください。」\n「いいですよ。はい、チーズ！」\n「ありがとうございます。」',
-                        chinese: '「不好{す}意思，請幫我拍照。」\n「好{す}的。好{す}，起司！」\n「謝謝您。」',
-                        note: '對話情境'
-                    }
-                ]
+                usageId: 1,
+                title: '接續方式',
+                description: '動詞(て形) + ください',
+                examples: []
             },
             {
-                usage: '指示/說明',
-                description: '用於說明書、指示等，告訴對方該怎麼做。',
+                usageId: 2,
+                title: '請求 (Please do)',
+                description: '意思：請...。\n禮貌地請求對方做某事。\n例：待ってください (請等一下)。',
                 examples: [
-                    { japanese: '電源{でんげん}を入{い}れてから、ボタンを押{お}してください。', chinese: '請開電源後按按鈕。' },
-                    { japanese: 'ここで待{ま}っていてください。', chinese: '請在這裡等。' },
-                    {
-                        japanese: '「すみません、駅{えき}はどこですか。」\n「あの信号{しんごう}を右{みぎ}に曲{ま}がってください。」\n「ありがとうございます。」',
-                        chinese: '「不好{す}意思，車{くるま}站在哪裡？」\n「請在那個紅綠燈右轉。」\n「謝謝您。」',
-                        note: '對話情境'
-                    }
+                    { japanese: 'ちょっと待ってください。', chinese: '請稍等一下。' },
+                    { japanese: 'やめてください︕', chinese: '請住手 / 請不要這樣！' },
+                    { japanese: 'もっとゆっくり⾔ってください。', chinese: '請說慢一點。' },
+                    { japanese: '静かにしてください。', chinese: '請安靜。' },
+                    { japanese: 'やってみてください。', chinese: '請試著做做看。' },
+                    { japanese: 'どうぞ座ってください。', chinese: '請坐。' },
+                    { japanese: 'もう⼀回説明してください。', chinese: '請再解釋一次。' },
+                    { japanese: '⽇本語を教えてください。', chinese: '請教我日語。' },
+                    { japanese: '私に知らせてください。', chinese: '請通知我。' }
                 ]
             }
         ],
@@ -4940,29 +5266,24 @@ Object.assign(n5Details, {
         level: 'N5',
         explanation: [
             {
-                usage: '表示許可',
-                description: '表示允許做某事或請求許可。',
-                examples: [
-                    { japanese: 'ここで写真{しゃしん}を撮{と}ってもいいですか。', chinese: '可以在這裡拍照嗎？' },
-                    { japanese: 'この本{ほん}を借{か}りてもいいですか。', chinese: '可以借這本{ほん}書嗎？' },
-                    {
-                        japanese: '「すみません、ここに座{すわ}ってもいいですか。」\n「はい、どうぞ。」\n「ありがとうございます。」',
-                        chinese: '「不好{す}意思，可以坐這裡嗎？」\n「好{す}的，請坐。」\n「謝謝。」',
-                        note: '對話情境'
-                    }
-                ]
+                usageId: 1,
+                title: '接續方式',
+                description: '動詞(て形) + も + いい',
+                examples: []
             },
             {
-                usage: '表示可以這樣做',
-                description: '告訴對方「你可以這樣做」。',
+                usageId: 2,
+                title: '許可 (Is it okay to?)',
+                description: '意思：...也可以、可以...嗎？\n表示許可。\n例：食べてもいい (吃也可以/可以吃)。',
                 examples: [
-                    { japanese: '帰{かえ}ってもいいですよ。', chinese: '你可以回去了喔。' },
-                    { japanese: '全部{ぜんぶ}食{た}べてもいいよ。', chinese: '你可以全{ぜん}部{ぶ}吃掉喔。' },
-                    {
-                        japanese: '「先{せん}生{せい}、もう帰{かえ}ってもいいですか。」\n「はい、帰{かえ}ってもいいですよ。」\n「ありがとうございます。」',
-                        chinese: '「老師，可以回去了嗎？」\n「好{す}的，可以回去了喔。」\n「謝謝您。」',
-                        note: '對話情境'
-                    }
+                    { japanese: 'トイレに⾏ってもいいですか︖', chinese: '可以去廁所嗎？' },
+                    { japanese: 'うん、⾏ってもいいですよ︕', chinese: '嗯，可以去喔！' },
+                    { japanese: 'それを⾷べてもいいですか。', chinese: '可以吃那個嗎？' },
+                    { japanese: '私も⼀緒に⾏っていい︖', chinese: '我也可以一起去嗎？' },
+                    { japanese: 'ここに座ってもいいですか︖', chinese: '可以坐這裡嗎？' },
+                    { japanese: '⼀つ質問を聞いていいですか︖', chinese: '可以問一個問題嗎？' },
+                    { japanese: 'あなたと⼀緒に⾏ってもいいですよ。', chinese: '和你一起去也可以喔。' },
+                    { japanese: '今話してもいいですか。', chinese: '現在講話方便嗎 (可以講話嗎)？' }
                 ]
             }
         ],
@@ -5103,42 +5424,24 @@ Object.assign(n5Details, {
         level: 'N5',
         explanation: [
             {
-                usage: '表示說話者的願望',
-                description: '表示自己想做某事。只用於第一{ひと}人{り}稱。',
-                examples: [
-                    { japanese: '日{に}本{ほん}に行{い}きたいです。', chinese: '想去日{に}本{ほん}。' },
-                    { japanese: '新{あたら}しいパソコンが買{か}いたいです。', chinese: '想買新電腦。' },
-                    {
-                        japanese: '「今日{きょう}、何{なに}が食{た}べたい？」\n「ラーメンが食{た}べたいな。」\n「いいね、行{い}こう！」',
-                        chinese: '「今{いま}天想吃什麼？」\n「想吃拉麵呢。」\n「好{す}啊，走吧！」',
-                        note: '對話情境'
-                    }
-                ]
+                usageId: 1,
+                title: '接續方式',
+                description: '動詞(ます形去掉ます) + たい',
+                examples: []
             },
             {
-                usage: '否定形「～たくない」',
-                description: '表示不想做某事。',
+                usageId: 2,
+                title: '願望 (Want to)',
+                description: '意思：想...。\n表示說話者想做某事。\n例：食べたい (想吃)。\n\n*注意：\n- 否定：たくない (不想...)\n- 過去：たかった (想...了/那時想...)\n- 欲求對象可用「が」或「を」標記。\n- 第三稱若要表示「想...」，通常用「たがる」。',
                 examples: [
-                    { japanese: '今日{きょう}は出{で}かけたくないです。', chinese: '今{いま}天不想出門。' },
-                    { japanese: 'あの映{えい}画{が}は見{み}たくないです。', chinese: '不想看那部電影。' },
-                    {
-                        japanese: '「一緒{いっしょ}に運動{うんどう}しない？」\n「ごめん、今日{きょう}はしたくない。疲{つか}れてる。」\n「そっか、また今度{こんど}ね。」',
-                        chinese: '「要不要一起運{うん}動{どう}？」\n「抱歉，今{いま}天不想。好{す}累。」\n「這樣啊，下次吧。」',
-                        note: '對話情境'
-                    }
-                ]
-            },
-            {
-                usage: '詢問對方的願望',
-                description: '用疑問句詢問對方想做什麼。',
-                examples: [
-                    { japanese: '何{なに}が飲{の}みたいですか。', chinese: '想喝什麼？' },
-                    { japanese: 'どこに行{い}きたいですか。', chinese: '想去哪裡？' },
-                    {
-                        japanese: '「週末{しゅうまつ}、どこに行{い}きたい？」\n「海{うみ}に行{い}きたいな。」\n「いいね！泳{およ}ごう。」',
-                        chinese: '「週末想去哪裡？」\n「想去海{うみ}邊呢。」\n「好{す}啊！去游泳吧。」',
-                        note: '對話情境'
-                    }
+                    { japanese: '⽇本語をもっと勉強したいです。', chinese: '想多學習日語。' },
+                    { japanese: '先⽣、聞きたいことがありますが。', chinese: '老師，我有想問的事。' },
+                    { japanese: '早く結婚したい。', chinese: '想早點結婚。' },
+                    { japanese: '⾃転⾞がこわれたから、新しいのを買いたい。', chinese: '腳踏車壞了，想買新的。' },
+                    { japanese: '⼦どものころから、ずっと⽇本に⾏きたかった。', chinese: '從小時候開始，就一直想去日本。' },
+                    { japanese: 'つかれたから、もう勉強したくない。', chinese: '累了，不想學習了。' },
+                    { japanese: '将来は⽇本の会社で働きたいです。', chinese: '將來想在日本公司工作。' },
+                    { japanese: 'お⾦がたくさんあったら、何をしたいですか︖', chinese: '如果有很多錢的話，想做什麼呢？' }
                 ]
             }
         ],
@@ -6028,29 +6331,21 @@ Object.assign(n5Details, {
         level: 'N5',
         explanation: [
             {
-                usage: '加強程度',
-                description: '用於加強形容詞或副詞的程度。',
-                examples: [
-                    { japanese: '今日{きょう}はとても暑{あつ}いです。', chinese: '今{いま}天非常熱{ねつ}。' },
-                    { japanese: 'この本{ほん}はとてもおもしろいです。', chinese: '這本{ほん}書非常有趣。' },
-                    {
-                        japanese: '「このラーメン、どう？」\n「とてもおいしい！」\n「よかった。」',
-                        chinese: '「這拉麵如何{なに}？」\n「非常好{す}吃！」\n「太{ふと}好{す}了。」',
-                        note: '對話情境'
-                    }
-                ]
+                usageId: 1,
+                title: '接續方式',
+                description: 'とても + 形容詞',
+                examples: []
             },
             {
-                usage: '否定句中{なか}的「とても～ない」',
-                description: '「とても～ない」表示「怎麼也無法...」。',
+                usageId: 2,
+                title: '程度 (Very)',
+                description: '意思：非常...、很...。\n表示程度很高。\n例：とても暑い (很熱)。',
                 examples: [
-                    { japanese: 'この問{もん}題{だい}はとても難{むずか}しくて、分{わ}かりません。', chinese: '這個問{もん}題{だい}非常難{むずか}，不懂。' },
-                    { japanese: 'とても食{た}べられません。', chinese: '怎麼也吃不完。' },
-                    {
-                        japanese: '「この仕事{しごと}、一人{ひとり}でできる？」\n「とてもできないよ。手伝{てつだ}って。」\n「わかった。」',
-                        chinese: '「這工作，一個人{ひと}做得來嗎？」\n「怎麼也做不來啊。幫幫我。」\n「好{す}的。」',
-                        note: '對話情境'
-                    }
+                    { japanese: '今日はとても暑いですね。', chinese: '今天非常熱呢。' },
+                    { japanese: 'このケーキはとてもおいしいです。', chinese: '這個蛋糕非常好吃。' },
+                    { japanese: '彼女はとても親切な人です。', chinese: '她是個非常親切的人。' },
+                    { japanese: '昨日のテストはとても難しかったです。', chinese: '昨天的考試非常難。' },
+                    { japanese: '日本語の勉強はとても楽しいです。', chinese: '學習日語非常快樂。' }
                 ]
             }
         ],
@@ -6186,29 +6481,23 @@ Object.assign(n5Details, {
         level: 'N5',
         explanation: [
             {
-                usage: '表示原因（較客觀）',
-                description: '說明原因或理{り}由{ゆう}，語氣較「から」客觀、禮貌。',
-                examples: [
-                    { japanese: '雨{あめ}が降{ふ}っているので、傘{かさ}を持{も}っていきます。', chinese: '因為在下雨，所以帶傘{かさ}去。' },
-                    { japanese: '体調{たいちょう}が悪{わる}いので、今日{きょう}は休{やす}みます。', chinese: '因為身體不舒服，今{いま}天休息。' },
-                    {
-                        japanese: '「明日{あした}、パーティーに来{こ}られる？」\n「ごめん、用事{ようじ}があるので、行{い}けないんだ。」\n「残念{ざんねん}。また今度{こんど}ね。」',
-                        chinese: '「明天能來派對嗎？」\n「抱歉，因為有事，去不了。」\n「可惜。下次吧。」',
-                        note: '對話情境'
-                    }
-                ]
+                usageId: 1,
+                title: '接續方式',
+                description: '普通形 + ので\n名詞/な形容詞 + な + ので',
+                examples: []
             },
             {
-                usage: '禮貌地說明理{り}由{ゆう}',
-                description: '向他人{ひと}說明理由時{じ}，「ので」較「から」禮貌。',
+                usageId: 2,
+                title: '因為...所以... (Reason)',
+                description: '意思：因為...、由於...。\n表示原因或理由。\n比較：\n- から (kara)：主觀原因，語氣較強。\n- ので (node)：客觀原因，較為委婉禮貌。\n\n注意接續：名詞/な形容詞要加「な」 (例：好きなので)。',
                 examples: [
-                    { japanese: '電{でん}車{しゃ}が遅{おく}れたので、遅刻{ちこく}しました。', chinese: '因為電{でん}車{しゃ}誤點，所以遲到了。' },
-                    { japanese: '静{しず}かなので、この部屋{へや}が好{す}きです。', chinese: '因為安靜，所以喜歡這個房間。' },
-                    {
-                        japanese: '「どうして日本語{にほんご}を勉{べん}強{きょう}しているんですか。」\n「日{に}本{ほん}の文化{ぶんか}が好{す}きなので、勉{べん}強{きょう}しています。」\n「そうなんですね。」',
-                        chinese: '「為什麼在學日語呢？」\n「因為喜歡日{に}本{ほん}文化，所以在學。」\n「原來如此。」',
-                        note: '對話情境'
-                    }
+                    { japanese: 'ちょっと寒いので、窓を閉めてもいいですか。', chinese: '因為有點冷，可以關窗戶嗎？' },
+                    { japanese: 'ちょっと⽤事があるので、先に帰ります。', chinese: '因為有點事，先回去了。' },
+                    { japanese: '台⾵が来るので、明⽇のクラスに来なくていいです。', chinese: '因為颱風要來，明天的課不用來。' },
+                    { japanese: 'おなかが痛いので、薬をください。', chinese: '因為肚子痛，請給我藥。' },
+                    { japanese: '彼⼥がとてもきれいなので、すぐ好きになりました。', chinese: '因為她太漂亮了，馬上就喜歡上了。' },
+                    { japanese: '今から⾏きますので、少々お待ちください。', chinese: '現在就過去，請稍等一下。' },
+                    { japanese: '⾬が降っていたので、試合が中⽌になりました。', chinese: '因為下雨，比賽中止了。' }
                 ]
             }
         ],
@@ -6638,29 +6927,22 @@ Object.assign(n5Details, {
         level: 'N5',
         explanation: [
             {
-                usage: '表示時{じ}間{かん}點',
-                description: '表示某個時{じ}間{かん}點或狀況。',
-                examples: [
-                    { japanese: '暇{ひま}なとき、映{えい}画{が}を見{み}ます。', chinese: '有空的時{じ}候看電影。' },
-                    { japanese: '子供{こども}のとき、よく公{こう}園{えん}で遊{あそ}びました。', chinese: '小時{じ}候常在公{こう}園{えん}玩。' },
-                    {
-                        japanese: '「困{こま}ったとき、誰{だれ}に相談{そうだん}する？」\n「母{はは}かな。」\n「そうなんだ。」',
-                        chinese: '「困擾的時{じ}候找誰{だれ}商量？」\n「媽媽吧。」\n「這樣啊。」',
-                        note: '對話情境'
-                    }
-                ]
+                usageId: 1,
+                title: '接續方式',
+                description: '普通形 + とき\n名詞 + の + とき\nな形容詞 + な + とき',
+                examples: []
             },
             {
-                usage: '動詞＋とき的時{じ}態',
-                description: '動詞原形＋とき表示「要做...的時{じ}候」，た形＋とき表示「做完...的時{じ}候」。',
+                usageId: 2,
+                title: '時候 (When)',
+                description: '意思：...的時候。\n表示時間點或場合。\n例：子供のとき (小時候)、行くとき (要去的時候)。',
                 examples: [
-                    { japanese: '日{に}本{ほん}に行{い}くとき、パスポートが必要{ひつよう}です。', chinese: '去日{に}本{ほん}的時{じ}候需要護照。（還沒去）' },
-                    { japanese: '日{に}本{ほん}に行{い}ったとき、富士山{ふじさん}を見{み}ました。', chinese: '去日{に}本{ほん}的時{じ}候看了富士山{やま}。（已經去了）' },
-                    {
-                        japanese: '「電{でん}車{しゃ}に乗{の}るとき、何{なに}をする？」\n「音{おん}楽{がく}を聴{き}くかな。」\n「私{わたし}も！」',
-                        chinese: '「搭電{でん}車{しゃ}的時{じ}候做什麼？」\n「聽音樂吧。」\n「我也是！」',
-                        note: '對話情境'
-                    }
+                    { japanese: '図書館で本を借りるとき、カードがいります。', chinese: '在圖書館借書的時候，需要卡片。' },
+                    { japanese: '使い⽅がわからないとき、私に聞いてください。', chinese: '不知道怎麼用的時候，請問我。' },
+                    { japanese: '忙しいとき、家族に⼿伝ってもらいます。', chinese: '忙碌的時候，會請家人幫忙。' },
+                    { japanese: '暇なとき、ゲームをします。', chinese: '有空的時候，會玩遊戲。' },
+                    { japanese: '子供のとき、よく川で泳ぎました。', chinese: '小時候，常在河裡游泳。' },
+                    { japanese: '電車に乗っているとき、地震がありました。', chinese: '搭電車的時候，發生了地震。' }
                 ]
             }
         ],
@@ -7735,16 +8017,23 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示義務或必要性',
-                description: '與「ないといけない」意思相同，表示「必須做某事」。語氣稍微正式一些。',
+                title: '接續方式',
+                description: '動詞(ない形，去い) + くてはいけない',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '必須 (Obligation)',
+                description: '意思：必須...、不能不...。\n表示義務或必要性。比「なくちゃ」正式。',
                 examples: [
-                    { japanese: '約束{やくそく}は守{まも}らなくてはいけない。', chinese: '必須遵守約定。' },
-                    { japanese: '毎日{まいにち}日本語{にほんご}を勉{べん}強{きょう}しなくてはいけない。', chinese: '必須每天學日語。' },
-                    {
-                        japanese: '「どうして毎日{まいにち}走{はし}ってるの？」\n「健康{けんこう}のために運動{うんどう}しなくてはいけないと思{おも}って。」\n「偉{えら}いね！」',
-                        chinese: '「為什麼每天跑步？」\n「我覺得為了健康必須運{うん}動{どう}。」\n「好{す}厲害！」',
-                        note: '對話情境'
-                    }
+                    { japanese: '本当にすぐ⾏かなくてはいけない。', chinese: '真的必須馬上走。' },
+                    { japanese: '急がなくてはいけない。', chinese: '必須快一點。' },
+                    { japanese: 'もう10時だ。寝なくてはいけない。', chinese: '已經10點了。必須睡了。' },
+                    { japanese: '⽇本語をもっと勉強しなくてはいけない。', chinese: '必須多讀日語。' },
+                    { japanese: '花の⽔やりをしなくてはいけません。', chinese: '必須給花澆水。' },
+                    { japanese: '明⽇、早く起きなくてはいけません。', chinese: '明天必須早起。' },
+                    { japanese: '野菜を⾷べなくてはいけませんよ。', chinese: '必須吃蔬菜喔。' },
+                    { japanese: 'JLPTを受けなくてはいけません。', chinese: '必須參加JLPT考試。' }
                 ]
             }
         ],
@@ -7881,16 +8170,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示不需要做某事',
-                description: '表示「不做某事也沒關係」，是「てもいい」（許可）的否定形式。',
+                title: '接續方式',
+                description: '動詞(ない形，去い) + くてもいい',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '不...也可以 (Permission)',
+                description: '意思：不...也可以、不需要...。\n表示許可，不做某事也沒關係。',
                 examples: [
-                    { japanese: '明日{あした}は来{こ}なくてもいいです。', chinese: '明天不用來也可以。' },
-                    { japanese: '無理{むり}して食{た}べなくてもいい。', chinese: '不用勉強吃。' },
-                    {
-                        japanese: '「全部{ぜんぶ}覚{おぼ}えなくちゃいけませんか。」\n「いいえ、全部{ぜんぶ}覚{おぼ}えなくてもいいですよ。大事{だいじ}なところだけで。」\n「よかった！」',
-                        chinese: '「必須全{ぜん}部{ぶ}記住嗎？」\n「不，不用全{ぜん}部{ぶ}記住也可以喔。只要重要的地方就好{す}。」\n「太{ふと}好{す}了！」',
-                        note: '對話情境'
-                    }
+                    { japanese: '明⽇は休みだから、学校に⾏かなくてもいい。', chinese: '明天休假，所以不用去學校也可以。' },
+                    { japanese: '空港まで来なくてもいいよ。', chinese: '不用來機場也可以喔。' },
+                    { japanese: '好きじゃないなら、⾷べなくてもいいですよ。', chinese: '如果不喜歡的話，不吃也可以喔。' },
+                    { japanese: '無理しなくてもいいですよ。', chinese: '不需要太勉強喔。' },
+                    { japanese: 'そんなに急がなくていいよ。', chinese: '不用那麼趕也可以喔。' },
+                    { japanese: '外⾷しなくていいよ。家で⾷べましょう。', chinese: '不用出去吃也行。在家吃吧。' },
+                    { japanese: '返してくれなくてもいいからね。', chinese: '不還給我也沒關係喔。' }
                 ]
             }
         ],
@@ -8030,23 +8325,23 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '口語縮略形',
-                description: '「なくちゃ」是「なくては（いけない）」的口語縮略形，表示義務或必須做某事。在日常會話中{なか}非常常用，語氣比正式形更輕鬆。後面的「いけない」經常被省略。',
-                examples: [
-                    { japanese: '早{はや}く起{お}きなくちゃ。', chinese: '必須早點起床。' },
-                    { japanese: 'もう行{い}かなくちゃ。', chinese: '我得走了。' },
-                    { japanese: '宿{しゅく}題{だい}をしなくちゃいけない。', chinese: '必須做作業。' },
-                    { japanese: '薬{くすり}を飲{の}まなくちゃ。', chinese: '必須吃藥。' }
-                ]
+                title: '接續方式',
+                description: '動詞(ない形，去い) + くちゃ',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '自言自語用法',
-                description: '「なくちゃ」常用於自言自語，表達自己需要做某事的想法。這種用法非常自然，經常在獨白或內心想法中{なか}出現。',
+                title: '必須... (Casual)',
+                description: '意思：必須...、不得不...。\n這是「なくてはならない」的口語縮略形。\n常見組合：\n- なくちゃ (必須...)\n- なくちゃだめ (不...不行)\n- なくちゃいけない (必須...)',
                 examples: [
-                    { japanese: 'あ、電{でん}話{わ}しなくちゃ。', chinese: '啊，得打電{でん}話{わ}。' },
-                    { japanese: '買{か}い物{もの}に行{い}かなくちゃ。', chinese: '得去買東西。' },
-                    { japanese: 'そろそろ帰{かえ}らなくちゃ。', chinese: '差不多該回去了。' }
+                    { japanese: '⾏かなくちゃ。', chinese: '我得走了。' },
+                    { japanese: 'もう寝なくちゃ。', chinese: '得睡了。' },
+                    { japanese: '新しい⾞を買わなくちゃね。', chinese: '得買新車了呢。' },
+                    { japanese: 'よく考えなくちゃダメだよ。', chinese: '不仔細思考不行喔。' },
+                    { japanese: '君でなくちゃダメなんだ。', chinese: '非你不可！' },
+                    { japanese: '彼は返さなくちゃいけない借⾦がある', chinese: '他有必須償還的債務。' },
+                    { japanese: 'なんで僕がやらなくちゃいけないの。', chinese: '為什麼我非做不可？' },
+                    { japanese: 'すぐに警察に連絡しなくちゃいけません。', chinese: '必須馬上聯絡警察。' }
                 ]
             }
         ],
@@ -8178,22 +8473,23 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '正式的義務表達',
-                description: '「なくてはならない」是表達義務的正式說法，比「なくてはいけない」更正式、更書面化。常用於規則、法律、正式文章等場合。',
-                examples: [
-                    { japanese: '規則{きそく}を守{まも}らなくてはならない。', chinese: '必須遵守規則。' },
-                    { japanese: '20歳{さい}以上{いじょう}でなくてはならない。', chinese: '必須年滿20歲。' },
-                    { japanese: '税金{ぜいきん}を払{はら}わなくてはならない。', chinese: '必須繳納稅金。' },
-                    { japanese: 'パスポートを持{も}っていなくてはならない。', chinese: '必須持有護照。' }
-                ]
+                title: '接續方式',
+                description: '動詞(ない形，去い) + くてはならない',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '與「なくてはいけない」的區別',
-                description: '兩者意思相同，但「ならない」更正式。「いけない」可用於日常對話，「ならない」多用於書面或正式場合。',
+                title: '必須 (Duty)',
+                description: '意思：必須...。\n與「なくてはいけない」意思幾乎相同，但語氣上「ならない」更強調客觀的義務或規則。',
                 examples: [
-                    { japanese: '宿{しゅく}題{だい}を出{だ}さなくてはいけない。', chinese: '（日常）必須交作業。' },
-                    { japanese: '申請書{しんせいしょ}を提出{ていしゅつ}しなくてはならない。', chinese: '（正式）必須提交申請書。' }
+                    { japanese: '急がなくてはならない。', chinese: '必須趕快。' },
+                    { japanese: '本当にすぐ⾏かなくてはならない。', chinese: '真的必須馬上走。' },
+                    { japanese: 'もう10時だ。寝なくてはならない。', chinese: '已經10點了，必須睡了。' },
+                    { japanese: '花の⽔やりをしなくてはなりません。', chinese: '必須給花澆水。' },
+                    { japanese: '明⽇、早く起きなくてはなりません。', chinese: '明天必須早起。' },
+                    { japanese: '野菜を⾷べなくてはなりませんよ。', chinese: '必須吃蔬菜喔。' },
+                    { japanese: '⽇本語能⼒試験を受けなくてはなりません。', chinese: '必須參加日語能力試驗。' },
+                    { japanese: 'もう帰らなくてはなりません。', chinese: '必須回去了。' }
                 ]
             }
         ],
@@ -8322,34 +8618,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '名詞・な形容詞＋になる',
-                description: '表示變化成某種狀態或身分{ふん}。名詞和な形容詞後面接「に」再接「なる」。',
-                examples: [
-                    { japanese: '医{い}者{しゃ}になりたい。', chinese: '想成為醫生。' },
-                    { japanese: '部屋{へや}がきれいになった。', chinese: '房間變乾淨了。' },
-                    { japanese: '日本語{にほんご}が上{じょう}手{ず}になった。', chinese: '日語變好{す}了。' },
-                    { japanese: '20歳{さい}になったら、お酒{さけ}が飲{の}める。', chinese: '到了20歲就可以喝酒{さけ}了。' }
-                ]
+                title: '接續方式',
+                description: '名詞/な形容詞 + になる\nい形容詞(去い) + く + なる',
+                examples: []
             },
             {
                 usageId: 2,
-                title: 'い形容詞＋くなる',
-                description: 'い形容詞要去掉「い」，加上「く」再接「なる」。表示程度或狀態的變化。',
+                title: '變化 (Become)',
+                description: '意思：變得...、成為...。\n表示狀態的變化。\n\n接續變形：\n- 名詞/な形容詞：加「に」 + なる (例：20歳になる、きれいになる)\n- い形容詞：去掉「い」加「く」 + なる (例：高くなる、暑くなる)\n\n時態變化：\n- なる (辭書形)\n- なります (禮貌形)\n- なっている (正在變得/狀態)\n- なった (變成了/過去式)',
                 examples: [
-                    { japanese: '最近{さいきん}、寒{さむ}くなった。', chinese: '最近變冷{つめ}了。' },
-                    { japanese: '背{せ}が高{たか}くなった。', chinese: '長{なが}高{たか}了。' },
-                    { japanese: '日本語{にほんご}の勉{べん}強{きょう}が楽{たの}しくなった。', chinese: '日語學習變得有趣了。' },
-                    { japanese: '朝{あさ}早{はや}くなった。', chinese: '早上變早了。' }
-                ]
-            },
-            {
-                usageId: 3,
-                title: '時{じ}間{かん}的變化',
-                description: '「なる」常用於表達時{じ}間{かん}推移帶來的變化。',
-                examples: [
-                    { japanese: '春{はる}になると、桜{さくら}が咲{さ}く。', chinese: '到了春{はる}天，櫻花就會開。' },
-                    { japanese: '6時{じ}になったら、家{いえ}に帰{かえ}る。', chinese: '到了6點就回家{いえ}。' },
-                    { japanese: 'もう夜{よる}になった。', chinese: '已經是晚上了。' }
+                    { japanese: '今年、私は２０歳になります。', chinese: '今年我將滿20歲 (成為20歲)。' },
+                    { japanese: '暗くなる前に家に帰りたい。', chinese: '想在變暗之前回家。' },
+                    { japanese: 'もっと強くなるために、毎⽇運動しています。', chinese: '為了變得更強，每天都在運動。' },
+                    { japanese: '⽇本語が上⼿になっていますね。', chinese: '日語變好了呢。' },
+                    { japanese: '将来、何になりたいですか。', chinese: '將來想成為什麼呢？' },
+                    { japanese: '暗くなってきましたね。', chinese: '天色變暗了呢。' },
+                    { japanese: '今⽇のイベントは中⽌になりました。', chinese: '今天的活動中止了 (變成中止狀態)。' }
                 ]
             }
         ],
@@ -8481,33 +8765,21 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '說明原因或理{り}由{ゆう}',
-                description: '用於向對方說明某種情況的原因、理{り}由{ゆう}或背景。語氣帶有解釋的意{い}味{み}。',
-                examples: [
-                    { japanese: '頭{あたま}が痛{いた}いんです。', chinese: '（是因為）頭{あたま}很痛{いた}。' },
-                    { japanese: '電{でん}車{しゃ}が遅{おく}れたんです。', chinese: '（是因為）電{でん}車{しゃ}晚了。' },
-                    { japanese: '明日{あした}テストなんです。', chinese: '（是因為）明天有考試。' },
-                    { japanese: '風邪{かぜ}なんです。', chinese: '（是因為）感冒了。' }
-                ]
+                title: '接續方式',
+                description: '普通形 + んです',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '詢問原因或狀況',
-                description: '用於詢問對方情況的原因或詳情，帶有關心的語氣。',
+                title: '強調/解釋說明 (口語)',
+                description: '意思：是...的。\n用於解釋原因、理由，或強調語氣。\n比單純的「です」帶有更強的說明性質。\n「のです」的口語縮略形，較為隨意親切。\n\n例：\n- 暑いです (很熱 - 單純陳述)\n- 暑いんです (是因為很熱 - 解釋原因/強調)',
                 examples: [
-                    { japanese: 'どうしたんですか。', chinese: '怎麼了？（發生什麼事了？）' },
-                    { japanese: 'どこへ行{い}くんですか。', chinese: '你要去哪裡？（帶有關心）' },
-                    { japanese: '何{なに}を探{さが}しているんですか。', chinese: '你在找什麼？' }
-                ]
-            },
-            {
-                usageId: 3,
-                title: '強調或確認',
-                description: '用於強調某件事或確認對方的意思。',
-                examples: [
-                    { japanese: '本{ほん}当{とう}なんです！', chinese: '是真的！' },
-                    { japanese: 'このケーキ、おいしいんです。', chinese: '這個蛋糕很好{す}吃喔。（強調推薦）' },
-                    { japanese: '日{に}本{ほん}に行{い}きたいんです。', chinese: '（我很）想去日{に}本{ほん}。' }
+                    { japanese: '何を飲みたいんですか。', chinese: '你想喝什麼呢？ (詢問意願)' },
+                    { japanese: 'お茶を飲みたいんです。', chinese: '我想喝茶 (解釋需求)。' },
+                    { japanese: '眠くないんですか。', chinese: '你不睏嗎？' },
+                    { japanese: '気分が良くないんですよ。', chinese: '我不太舒服 (解釋狀況)。' },
+                    { japanese: '今からバイトに⾏くんだ。', chinese: '我現在要去打工 (解釋行程)。' },
+                    { japanese: 'いつか⽇本に⾏くんだ︕', chinese: '總有一天要去日本！ (強調決心)' }
                 ]
             }
         ],
@@ -8644,23 +8916,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '決定・選擇',
-                description: '用於表示從多個選項中{なか}做出決定或選擇。常用於點餐、購物等場合。',
-                examples: [
-                    { japanese: 'コーヒーにします。', chinese: '我要（決定要）咖啡。' },
-                    { japanese: '私{わたし}はこれにする。', chinese: '我選這個。' },
-                    { japanese: '旅行{りょこう}は来月{らいげつ}にしましょう。', chinese: '旅行決定下個月吧。' },
-                    { japanese: '名{な}前{まえ}は「さくら」にした。', chinese: '名字{じ}決定叫「櫻」了。' }
-                ]
+                title: '接續方式',
+                description: '名詞 + にする',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '使之成為、改變成',
-                description: '表示人{ひと}為地使某物變成某種狀態。與「なる」（自然變化）形成對比。',
+                title: '決定 (Decide on)',
+                description: '意思：決定要...、選...。\n表示選擇或決定某個選項。\n常在點餐或做決定時使用。\n\n形式：\n- にする (casual)\n- にします (polite)\n- ことにする (接動詞時)',
                 examples: [
-                    { japanese: '部屋{へや}をきれいにする。', chinese: '把房間弄乾淨。' },
-                    { japanese: '音{おと}を小{ちい}さくする。', chinese: '把聲音調小。' },
-                    { japanese: '彼{かれ}を幸{しあわ}せにしたい。', chinese: '想讓他幸福。' }
+                    { japanese: 'どれにする?', chinese: '要哪個？' },
+                    { japanese: '飲み物は何にする︖', chinese: '飲料要什麼？' },
+                    { japanese: 'お茶にする。', chinese: '我要喝茶。' },
+                    { japanese: 'これにします。', chinese: '我要這個 (決定選這個)。' },
+                    { japanese: '今⽇は部屋をきれいにします。', chinese: '今天要把房間弄乾淨 (決定/使役)。' },
+                    { japanese: '紅茶にしますかそれともコーヒーにしますか。', chinese: '要紅茶還是咖啡？' },
+                    { japanese: '今年は素晴しい年にします︕', chinese: '今年要過得精彩！' }
                 ]
             }
         ],
@@ -8792,24 +9063,17 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示移動的目的',
-                description: '「動詞ます形＋に行{い}く/来{く}る」表示移動的目的。「に」表示目的，「行{い}く/来{く}る」表示移動。',
-                examples: [
-                    { japanese: '映{えい}画{が}を見{み}に行{い}く。', chinese: '去看電影。' },
-                    { japanese: '友達{ともだち}に会{あ}いに来{き}た。', chinese: '來見{み}朋友的。' },
-                    { japanese: '日{に}本{ほん}へ勉{べん}強{きょう}しに行{い}きたい。', chinese: '想去日{に}本{ほん}學習。' },
-                    { japanese: 'お昼{ひる}を食{た}べに行{い}きましょう。', chinese: '去吃午餐吧。' }
-                ]
+                title: '接續方式',
+                description: '動詞(ます形去ます) / 動作性名詞 + に + 行く/来る/帰る',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '名詞＋に行{い}く/来{く}る',
-                description: '也可以用「名詞＋に」表示目的，後接「行{い}く/来{く}る」。',
+                title: '意義詳解',
+                description: '表示移動的目的。意思是「去/來/回...做某事」。\n\n例如：\n- 食べに行く (去吃)\n- 買い物に行く (去購物)',
                 examples: [
-                    { japanese: '買{か}い物{もの}に行{い}く。', chinese: '去買東西。' },
-                    { japanese: '旅行{りょこう}に行{い}きたい。', chinese: '想去旅行。' },
-                    { japanese: '遊{あそ}びに来{き}てください。', chinese: '請來玩。' },
-                    { japanese: '散{さん}歩{ぽ}に行{い}こう。', chinese: '去散步吧。' }
+                    { japanese: '日本へ日本語を勉強しに来ました。', chinese: '來日本學日語。' },
+                    { japanese: '映画を見に行きます。', chinese: '去看電影。' }
                 ]
             }
         ],
@@ -8937,23 +9201,16 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示擅長{なが}某動作',
-                description: '「動詞辞{じ}書{しょ}形＋のが上{じょう}手{ず}」表示某人{ひと}擅長{なが}做某件事。「の」將動詞名詞化。',
-                examples: [
-                    { japanese: '彼女{かのじょ}は料{りょう}理{り}を作{つく}るのが上{じょう}手{ず}だ。', chinese: '她很擅長{なが}做菜。' },
-                    { japanese: '田{た}中{なか}さんは歌{うた}うのが上{じょう}手{ず}です。', chinese: '田{た}中{なか}先{せん}生{せい}很會唱歌{うた}。' },
-                    { japanese: '妹{いもうと}は絵{え}を描{か}くのが上{じょう}手{ず}だ。', chinese: '妹{いもうと}妹{いもうと}很擅長{なが}畫畫。' },
-                    { japanese: 'あの人{ひと}は話{はな}すのが上{じょう}手{ず}ですね。', chinese: '那個人{ひと}很會說話呢。' }
-                ]
+                title: '接續方式',
+                description: '動詞辭書形 + のが + 上手',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '名詞＋が上{じょう}手{ず}',
-                description: '也可以直接用「名詞＋が上{じょう}手{ず}」表示擅長{なが}某事。',
+                title: '意義詳解',
+                description: '表示擅長做某動作。意思是「很會...」、「擅長...」。\n',
                 examples: [
-                    { japanese: '彼{かれ}はテニスが上{じょう}手{ず}だ。', chinese: '他很擅長{なが}網球。' },
-                    { japanese: '日本語{にほんご}が上{じょう}手{ず}ですね。', chinese: '日語很好{す}呢。' },
-                    { japanese: '料{りょう}理{り}が上{じょう}手{ず}な人{ひと}', chinese: '擅長料{りょう}理{り}的人{ひと}' }
+                    { japanese: '歌うのが上手ですね。', chinese: '很會唱歌呢。' }
                 ]
             }
         ],
@@ -9086,23 +9343,16 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示不擅長{なが}某動作',
-                description: '「動詞辞{じ}書{しょ}形＋のが下{へ}手{た}」表示某人{ひと}不擅長{なが}做某件事。是「上{じょう}手{ず}」的反義詞。',
-                examples: [
-                    { japanese: '私{わたし}は料{りょう}理{り}を作{つく}るのが下手{へた}だ。', chinese: '我不擅長{なが}做菜。' },
-                    { japanese: '弟{おとうと}は絵{え}を描{か}くのが下手{へた}です。', chinese: '弟{おとうと}弟{おとうと}不擅長{なが}畫畫。' },
-                    { japanese: '彼{かれ}は泳{およ}ぐのが下手{へた}だ。', chinese: '他不擅長{なが}游泳。' },
-                    { japanese: '説明{せつめい}するのが下手{へた}で、すみません。', chinese: '抱歉我不太{ふと}會說明。' }
-                ]
+                title: '接續方式',
+                description: '動詞辭書形 + のが + 下手',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '名詞＋が下{へ}手{た}',
-                description: '也可以直接用「名詞＋が下{へ}手{た}」表示不擅長{なが}某事。',
+                title: '意義詳解',
+                description: '表示不擅長做某動作。「の」將前面的動詞名詞化，使其能作為「下手」的對象。',
                 examples: [
-                    { japanese: '私{わたし}は運動{うんどう}が下手{へた}だ。', chinese: '我不擅長{なが}運{うん}動{どう}。' },
-                    { japanese: '字{じ}が下手{へた}で恥{は}ずかしい。', chinese: '字{じ}寫得不好{す}很不好{す}意思。' },
-                    { japanese: '英{えい}語{ご}が下手{へた}なので、手伝{てつだ}ってください。', chinese: '因為英{えい}語{ご}不好{す}，請幫幫我。' }
+                    { japanese: '私はあ絵を描くのが下手です。', chinese: '我不擅長畫畫。' }
                 ]
             }
         ],
@@ -9224,24 +9474,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示喜歡某動作',
-                description: '「動詞辞{じ}書{しょ}形＋のが好{す}き」表示喜歡做某件事。「の」將動詞名詞化。',
-                examples: [
-                    { japanese: '私{わたし}は本{ほん}を読{よ}むのが好{す}きだ。', chinese: '我喜歡看書。' },
-                    { japanese: '音{おん}楽{がく}を聴{き}くのが好{す}きです。', chinese: '喜歡聽音樂。' },
-                    { japanese: '旅行{りょこう}するのが好{す}きだ。', chinese: '喜歡旅行。' },
-                    { japanese: '料{りょう}理{り}を作{つく}るのが好{す}きですか。', chinese: '喜歡做菜嗎？' }
-                ]
+                title: '接續方式',
+                description: '動詞(辭書形) + のが好き',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '名詞＋が好{す}き',
-                description: '也可以直接用「名詞＋が好{す}き」表示喜歡某事物。',
+                title: '喜歡做... (Like doing)',
+                description: '意思：喜歡做...。\n將動詞名詞化 (加「の」)，然後接「が好き」。\n例：食べるのが好き (喜歡吃)。\n\n*動詞原形 + の = 做某事(名詞化)',
                 examples: [
-                    { japanese: '私{わたし}は猫{ねこ}が好{す}きだ。', chinese: '我喜歡貓。' },
-                    { japanese: 'コーヒーが好{す}きですか。', chinese: '喜歡咖啡嗎？' },
-                    { japanese: 'どんな映{えい}画{が}が好{す}きですか。', chinese: '喜歡什麼樣的電影？' },
-                    { japanese: '日{に}本{ほん}の食{た}べ物{もの}が好{す}きです。', chinese: '喜歡日{に}本{ほん}的食物。' }
+                    { japanese: '私は寝るのが好きです。', chinese: '我喜歡睡覺。' },
+                    { japanese: '漫画を読むのが好きだ。', chinese: '喜歡看漫畫。' },
+                    { japanese: '妹は料理をするのが好きです。', chinese: '妹妹喜歡做菜。' },
+                    { japanese: '彼⼥は野球の試合を⾒るのが好きです。', chinese: '她喜歡看棒球比賽。' },
+                    { japanese: '私は何かを⾷べながら映画を観るのが好きです。', chinese: '我喜歡邊吃東西邊看電影。' },
+                    { japanese: '電⾞とバスのどちらに乗るのが好きですか︖', chinese: '電車和公車你喜歡搭哪種？' },
+                    { japanese: '多くの⽇本⼈は多くの⼈の前で⾃分の意⾒を表現するのが好きじゃない。', chinese: '大多數日本人不喜歡在多人面前表達自己的意見。' }
                 ]
             }
         ],
@@ -9526,23 +9774,24 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示過去的經驗',
-                description: '用於表示曾經有過某種經驗。強調的是「經驗」本{ほん}身，而非具體的時{じ}間{かん}或次數。',
-                examples: [
-                    { japanese: '日{に}本{ほん}に行{い}ったことがある。', chinese: '我去過日{に}本{ほん}。' },
-                    { japanese: '富士山{ふじさん}を見{み}たことがあります。', chinese: '我看過富士山{やま}。' },
-                    { japanese: '納豆{なっとう}を食{た}べたことがありますか。', chinese: '你吃過納豆嗎？' },
-                    { japanese: 'この映{えい}画{が}を見{み}たことがない。', chinese: '我沒看過這部電影。' }
-                ]
+                title: '接續方式',
+                description: '動詞(た形) + ことがある',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '否定形「ことがない」',
-                description: '「動詞た形＋ことがない」表示從未有過某種經驗。',
+                title: '經驗 (Have done)',
+                description: '意思：曾經做過...。\n表示過去的經驗。\n例：日本に行ったことがある (去過日本)。\n\n否定：たことがない (沒做過...)',
                 examples: [
-                    { japanese: '飛{ひ}行{こう}機{き}に乗{の}ったことがない。', chinese: '我沒坐過飛機。' },
-                    { japanese: 'お酒{さけ}を飲{の}んだことがありません。', chinese: '我沒喝過酒{さけ}。' },
-                    { japanese: 'まだ日{に}本{ほん}に行{い}ったことがない。', chinese: '還沒去過日{に}本{ほん}。' }
+                    { japanese: 'これを⾒たことがある。', chinese: '我看過這個。' },
+                    { japanese: 'フランスに⾏ったことある。', chinese: '去過法國。' },
+                    { japanese: 'それを聞いたことがある。', chinese: '聽過那件事。' },
+                    { japanese: '⼀度だけカラオケをやったことがあります。', chinese: '只唱過一次卡拉OK。' },
+                    { japanese: '⽇本に⾏ったことありますか︖', chinese: '你去過日本嗎？' },
+                    { japanese: '⽇本は好きですが⾏ったことがない。', chinese: '雖然喜歡日本，但沒去過。' },
+                    { japanese: '本当に、⾞を運転したことがないですか︖', chinese: '真的沒開過車嗎？' },
+                    { japanese: 'これは誰にも話したことがありません。', chinese: '這件事我沒跟任何人說過。' },
+                    { japanese: '私は⼀度しかすしを⾷べたことがありません。', chinese: '我只吃過一次壽司。' }
                 ]
             }
         ],
@@ -9677,22 +9926,16 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '列舉多個動作（非全{ぜん}部{ぶ}）',
-                description: '用於列舉多個動作，暗示還有其他動作。表示「做...、做...等」。',
-                examples: [
-                    { japanese: '週末{しゅうまつ}は映{えい}画{が}を見{み}たり、買{か}い物{もの}をしたりする。', chinese: '週末看電影、買東西等。' },
-                    { japanese: '休{やす}みの日{ひ}は本{ほん}を読{よ}んだり、音{おん}楽{がく}を聴{き}いたりします。', chinese: '假日讀書、聽音樂等。' },
-                    { japanese: '日{に}本{ほん}でラーメンを食{た}べたり、温泉{おんせん}に入{はい}ったりした。', chinese: '在日{に}本{ほん}吃拉麵、泡溫泉等。' }
-                ]
+                title: '接續方式',
+                description: '動詞(た形)り + 動詞(た形)り + する',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '表示反覆或不定的動作',
-                description: '也可用於表示動作的反覆或不確定的狀態。',
+                title: '意義詳解',
+                description: '表示列舉具代表性的動作。意思是「做做A啦，做做B啦 (之類的)」。\n暗示還有其他動作沒列舉出來。',
                 examples: [
-                    { japanese: '雨{あめ}が降{ふ}ったり止{や}んだりしている。', chinese: '雨時{じ}下時{じ}停。' },
-                    { japanese: '彼{かれ}は来{き}たり来{こ}なかったりする。', chinese: '他有時{じ}來有時{じ}不來。' },
-                    { japanese: '体調{たいちょう}が良{よ}かったり悪{わる}かったりする。', chinese: '身體狀況時{じ}好時{じ}壞。' }
+                    { japanese: '日曜日は本を読んだり、テレビを見たりします。', chinese: '星期天讀讀書、看看電視之類的。' }
                 ]
             }
         ],
@@ -9985,23 +10228,24 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示禁止',
-                description: '用於表示某個行為是被禁止的。語氣較強，常用於規則、警告等場合。',
-                examples: [
-                    { japanese: 'ここでタバコを吸{す}ってはいけません。', chinese: '這裡不可以抽菸。' },
-                    { japanese: '試{し}験{けん}中{ちゅう}に話{はな}してはいけない。', chinese: '考試中{なか}不可以說話。' },
-                    { japanese: '写真{しゃしん}を撮{と}ってはいけません。', chinese: '不可以拍照。' },
-                    { japanese: 'ここに入{はい}ってはいけません。', chinese: '不可以進入這裡。' }
-                ]
+                title: '接續方式',
+                description: '動詞(て形) + は + いけない/なりません',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '與「てはだめ」的比較',
-                description: '「てはだめ」也表示禁止，但語氣比「てはいけない」更口語、更隨意。',
+                title: '禁止 (Must not)',
+                description: '意思：不可以...。\n表示禁止做某事。\n口語縮略：\n- ちゃいけない\n- じゃいけない',
                 examples: [
-                    { japanese: 'そんなことをしてはだめだよ。', chinese: '不可以做那種事喔。（口語）' },
-                    { japanese: '食{た}べ過{す}ぎてはだめ。', chinese: '不可以吃太{ふと}多。（口語）' },
-                    { japanese: 'ここで遊{あそ}んではいけません。', chinese: '不可以在這裡玩。（正式）' }
+                    { japanese: '窓を開けてはいけない。', chinese: '不可以開窗。' },
+                    { japanese: '嘘をついてはいけない。', chinese: '不可以撒謊。' },
+                    { japanese: 'ろうかを⾛ってはいけませんよ。', chinese: '不可以在走廊奔跑喔。' },
+                    { japanese: '図書館でうるさくしてはいけない。', chinese: '在圖書館不可以吵鬧。' },
+                    { japanese: '遅刻してはいけない。', chinese: '不可以遲到。' },
+                    { japanese: '室内でタバコを吸ってはいけませんよ。', chinese: '室內不可以吸菸喔。' },
+                    { japanese: '笑ってはいけない冗談だった。', chinese: '是不能笑的玩笑。' },
+                    { japanese: '授業中に携帯電話を使ってはいけません。', chinese: '上課中不可以使用手機。' },
+                    { japanese: '２０歳未満の⼈はお酒を飲んではいけません。', chinese: '未滿20歲的人不可以喝酒。' }
                 ]
             }
         ],
@@ -10138,23 +10382,23 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示意圖或計劃',
-                description: '「つもり」用於表示說話者的意圖、計劃或打算。表示已經決定要做某事。',
-                examples: [
-                    { japanese: '来年{らいねん}、日{に}本{ほん}に行{い}くつもりです。', chinese: '打算明年去日{に}本{ほん}。' },
-                    { japanese: '週末{しゅうまつ}は勉{べん}強{きょう}するつもりだ。', chinese: '週末打算讀書。' },
-                    { japanese: '今日{きょう}は早{はや}く寝{ね}るつもりです。', chinese: '今{いま}天打算早點睡。' },
-                    { japanese: '大{だい}学{がく}を卒業{そつぎょう}したら、就職{しゅうしょく}するつもりだ。', chinese: '大學畢業後打算就業。' }
-                ]
+                title: '接續方式',
+                description: '動詞(辭書形/ない形) + つもり',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '否定的意圖「ないつもり」',
-                description: '「動詞ない形＋つもり」表示不打算做某事。',
+                title: '打算 (Plan/Intend)',
+                description: '意思：打算...、計畫...。\n表示說話者的意志或計畫。\n例：行くつもり (打算去)、行かないつもり (打算不去)。',
                 examples: [
-                    { japanese: 'もうお酒{さけ}は飲{の}まないつもりだ。', chinese: '打算不再喝酒{さけ}了。' },
-                    { japanese: '今日{きょう}は出{で}かけないつもりです。', chinese: '今{いま}天不打算出門。' },
-                    { japanese: '彼{かれ}には言{い}わないつもりだ。', chinese: '不打算告訴他。' }
+                    { japanese: '今⽇はラーメンを⾷べるつもりだ。', chinese: '今天打算吃拉麵。' },
+                    { japanese: 'あなたたちも⾏くつもりですか︖', chinese: '你們也打算去嗎？' },
+                    { japanese: '⼤学に⼊って⽇本語を勉強するつもりです。', chinese: '進大學後打算讀日語。' },
+                    { japanese: '何度聞かれても、あなたに教えるつもりはありません。', chinese: '不管被問幾次，都不打算告訴你。' },
+                    { japanese: 'いつ⽇本に留学するつもりなの︖', chinese: '打算什麼時候去日本留學？' },
+                    { japanese: 'ばれたら、どうするつもり︖', chinese: '如果穿幫了，你打算怎麼辦？' },
+                    { japanese: 'ごめんなさい︕あなたを傷つけるつもりはなかったんです。', chinese: '對不起！我並沒有打算傷害你。' },
+                    { japanese: 'もしJLPTに受かったら⽇本の会社で働くつもりだ。', chinese: '如果JLPT考過了，打算在日本公司工作。' }
                 ]
             }
         ],
@@ -10281,32 +10525,32 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '並列助詞「と」',
-                description: '用於連接名詞，表示「和」「與」的意思。列舉的項目是完整的，沒有其他。',
-                examples: [
-                    { japanese: 'りんごとバナナを買{か}った。', chinese: '買了蘋果和香蕉。' },
-                    { japanese: '田{た}中{なか}さんと山{やま}田{だ}さんが来{き}た。', chinese: '田{た}中{なか}和山{やま}田{だ}來了。' },
-                    { japanese: '日本語{にほんご}と英{えい}語{ご}を勉{べん}強{きょう}している。', chinese: '正在學日語和英{えい}語{ご}。' }
-                ]
+                title: '接續方式',
+                description: '名詞 + と',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '共同動作「と」',
-                description: '表示一起做某動作的對象。',
+                title: '並列 (And)',
+                description: '意思：和、與。\n用於連接名詞。\n例：犬と猫 (狗和貓)。',
                 examples: [
-                    { japanese: '友達{ともだち}と映{えい}画{が}を見{み}た。', chinese: '和朋友看了電影。' },
-                    { japanese: '彼女{かのじょ}と食事{しょくじ}した。', chinese: '和她一起吃飯了。' },
-                    { japanese: '誰{だれ}と行{い}きますか。', chinese: '和誰{だれ}去？' }
+                    { japanese: 'これとそれは違います。', chinese: '這個和那個不一樣。' },
+                    { japanese: '飲み物と⾷べ物禁⽌。', chinese: '禁止飲食 (飲料和食物)。' },
+                    { japanese: '私はいつもそこでハンバーガーとフライドポテトを⾷べます。', chinese: '我總是在那裡吃漢堡和薯條。' }
                 ]
             },
             {
                 usageId: 3,
-                title: '條件「と」',
-                description: '「動詞辞{じ}書{しょ}形＋と」表示自然的結果或習慣性的條件，意思是「一...就...」。',
+                title: '共同動作 (With)',
+                description: '意思：和...一起。\n表示動作的對象或夥伴。\n例：友達と行く (和朋友去)。',
                 examples: [
-                    { japanese: '春{はる}になると、桜{さくら}が咲{さ}く。', chinese: '一到春{はる}天，櫻花就開。' },
-                    { japanese: 'このボタンを押{お}すと、ドアが開{あ}く。', chinese: '按這個按鈕，門就開。' },
-                    { japanese: '右{みぎ}に曲{ま}がると、駅{えき}がある。', chinese: '往右轉就有車{くるま}站。' }
+                    { japanese: 'お⺟さんと買い物に⾏った。', chinese: '和媽媽去買東西了。' },
+                    { japanese: '彼⼥と仲がいいです。', chinese: '和她感情很好。' },
+                    { japanese: 'あなたと話したくない。', chinese: '不想和你說話。' },
+                    { japanese: '彼はベトナム⼈と結婚している。', chinese: '他和越南人結婚了。' },
+                    { japanese: '⽝と遊ぶのが⼤好きです。', chinese: '最喜歡和狗玩。' },
+                    { japanese: '明⽇同僚と⾷事に⾏く予定です。', chinese: '明天打算和同事去吃飯。' },
+                    { japanese: '⾼校時代にクラスメイトと連絡をとっていますか。', chinese: '有和高中時代的同學聯絡嗎？' }
                 ]
             }
         ],
@@ -10438,24 +10682,25 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '動詞＋すぎる',
-                description: '「動詞ます形＋すぎる」表示做某動作過度。通常帶有負面含義。',
-                examples: [
-                    { japanese: '食{た}べすぎた。', chinese: '吃太{ふと}多了。' },
-                    { japanese: '昨日{きのう}は飲{の}みすぎました。', chinese: '昨天喝太{ふと}多了。' },
-                    { japanese: '働{はたら}きすぎて、体{からだ}を壊{こわ}した。', chinese: '工作過度，身體搞壞了。' },
-                    { japanese: '寝{ね}すぎて、頭{あたま}が痛{いた}い。', chinese: '睡太{ふと}多，頭{あたま}很痛{いた}。' }
-                ]
+                title: '接續方式',
+                description: '動詞(ます形去掉ます) + すぎる\nい形容詞(去い) + すぎる\n名詞/な形容詞 + すぎる',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '形容詞＋すぎる',
-                description: 'い形容詞去「い」、な形容詞去「な」後接「すぎる」。',
+                title: '過度 (Too much)',
+                description: '意思：太...、過於...。\n表示程度超過了正常或適當的範圍。\n例：食べすぎる (吃太多)、高すぎる (太貴)。\n\n*動詞ます形 + すぎる -> 變成二類動詞 (ru-verb)\n過去式：すぎた (sugita)',
                 examples: [
-                    { japanese: 'このラーメンは辛{から}すぎる。', chinese: '這個拉麵太{ふと}辣了。' },
-                    { japanese: 'この部屋{へや}は静{しず}かすぎる。', chinese: '這個房間太{ふと}安靜了。' },
-                    { japanese: '問{もん}題{だい}が難{むずか}しすぎる。', chinese: '問{もん}題{だい}太{ふと}難{むずか}了。' },
-                    { japanese: 'この服{ふく}は派手{はで}すぎる。', chinese: '這件衣服太{ふと}花俏了。' }
+                    { japanese: 'このシャツは⼤きすぎる。', chinese: '這件襯衫太大了。' },
+                    { japanese: '今年の夏は暑すぎた。', chinese: '今年的夏天太熱了。' },
+                    { japanese: '冬の来るのが早すぎた。', chinese: '冬天來得太早了。' },
+                    { japanese: 'この問題は簡単すぎます。', chinese: '這個問題太簡單了。' },
+                    { japanese: '幸せすぎて死にそうだ。', chinese: '幸福得快死了。' },
+                    { japanese: 'かんじを覚えるのが私には難しすぎる。', chinese: '記漢字對我來說太難了。' },
+                    { japanese: 'このレストランはちょっと⾼すぎる。', chinese: '這家餐廳有點太貴了。' },
+                    { japanese: 'この会社は給料が少なすぎます。', chinese: '這家公司的薪水太少了。' },
+                    { japanese: 'ごめんなさい、少し⾔いすぎました。', chinese: '抱歉，我說得有點過分了 (說太多了)。' },
+                    { japanese: '昨夜ちょっと飲みすぎました。', chinese: '昨晚喝太多了。' }
                 ]
             }
         ],
@@ -10589,24 +10834,23 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示動作結果的狀態',
-                description: '「てある」表示某人{ひと}做了某動作後，其結果狀態一直持續。強調「為了某目的而準{じゅん}備{び}好{す}」的狀態。',
-                examples: [
-                    { japanese: '窓{まど}が開{あ}けてある。', chinese: '窗戶（被人{ひと}）開著。' },
-                    { japanese: 'テーブルの上{うえ}に本{ほん}が置{お}いてある。', chinese: '桌上放著書。' },
-                    { japanese: '部屋{へや}が掃{そう}除{じ}してある。', chinese: '房間已經打掃好{す}了。' },
-                    { japanese: '予約{よやく}してあります。', chinese: '已經預約好{す}了。' }
-                ]
+                title: '接續方式',
+                description: '動詞(て形) + ある',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '與「ている」的區別',
-                description: '「ている」描述狀態或持續動作，「てある」強調人{ひと}為準{じゅん}備{び}的結果狀態。',
+                title: '狀態存續 (Resulting state)',
+                description: '意思：...著。\n表示某動作結束後，其結果狀態依然持續著。\n通常暗示是「某人有意為之」。\n只接「他動詞」。\n\n例：\n- 開けてある (開著 - 有人故意開的)\n- 書いてある (寫著 - 有人寫上去的)',
                 examples: [
-                    { japanese: '窓{まど}が開{あ}いている。', chinese: '窗戶開著。（狀態描述）' },
-                    { japanese: '窓{まど}が開{あ}けてある。', chinese: '窗戶（被人{ひと}）開著。（準{じゅん}備{び}狀態）' },
-                    { japanese: '電{でん}気{き}がついている。', chinese: '燈亮著。（自動詞）' },
-                    { japanese: '電{でん}気{き}がつけてある。', chinese: '燈（被人{ひと}）打開著。（他動詞）' }
+                    { japanese: 'ここには私の名前が書いてあります。', chinese: '這裡寫著我的名字。' },
+                    { japanese: 'ドアがわざと開けてある。', chinese: '門被故意開著。' },
+                    { japanese: '宿題はもうやってあります。', chinese: '作業已經做好了 (放在那)。' },
+                    { japanese: '夜には学校の⼊り⼝が閉めてある。', chinese: '晚上學校入口是關著的。' },
+                    { japanese: 'ここに何て書いてあるの︖', chinese: '這上面寫著什麼？' },
+                    { japanese: '料理が作ってあるから、今⽇は家で⾷べる。', chinese: '飯菜已經煮好了，所以今天在家吃。' },
+                    { japanese: 'テニスをしよう。１０時３０分にコートを予約してあるから。', chinese: '打網球吧。已經預約好10點半的場地了。' },
+                    { japanese: 'すでに⾔ってあるように、これもあなたの仕事のうちだ。', chinese: '正如已經說過的，這也是你的工作之一。' }
                 ]
             }
         ],
@@ -10733,22 +10977,23 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '列舉（非完整）',
-                description: '「や」用於列舉名詞，暗示還有其他項目沒有列出。常與「など」搭配使用。',
-                examples: [
-                    { japanese: 'りんごやバナナを買{か}った。', chinese: '買了蘋果、香蕉等。' },
-                    { japanese: '田{た}中{なか}さんや山{やま}田{だ}さんが来{き}た。', chinese: '田{た}中{なか}、山{やま}田{だ}等人{ひと}來了。' },
-                    { japanese: '肉{にく}や野菜{やさい}やお米{こめ}を買{か}いました。', chinese: '買了肉{にく}、蔬菜、米等。' },
-                    { japanese: '本{ほん}やノートなどを持{も}ってきてください。', chinese: '請帶書、筆記本{ほん}等。' }
-                ]
+                title: '接續方式',
+                description: '名詞 + や + 名詞',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '與「と」的區別',
-                description: '「と」列舉完整的項目，「や」暗示還有其他沒列出的項目。',
+                title: '列舉 (And/Or)',
+                description: '意思：...啦...啦 (等等)。\n用於列舉多個例子，暗示還有其他未列出的項目。\n常與「など (nado)」搭配使用。\n例：AやBなど (A啦B之類的)。',
                 examples: [
-                    { japanese: 'コーヒーと紅{こう}茶{ちゃ}を頼{たの}んだ。', chinese: '點了咖啡和紅{こう}茶{ちゃ}（只有這兩種）。' },
-                    { japanese: 'コーヒーや紅{こう}茶{ちゃ}を頼{たの}んだ。', chinese: '點了咖啡、紅{こう}茶{ちゃ}等（可能還有其他）。' }
+                    { japanese: '毎朝、パンやベーコンなどを⾷べています。', chinese: '每天早上吃麵包啦培根之類的。' },
+                    { japanese: 'スーパーで⾁や野菜を買いました。', chinese: '在超市買了肉和蔬菜等等。' },
+                    { japanese: 'あなたのおすすめの⾳楽や本を私に教えてください。', chinese: '請告訴我你推薦的音樂或書。' },
+                    { japanese: '電⾞やバスでの旅は好きです。', chinese: '喜歡搭電車或巴士旅行。' },
+                    { japanese: '私はアメリカやイギリスのテレビドラマを⾒るのが好きです。', chinese: '我喜歡看美國或英國的電視劇。' },
+                    { japanese: '冬休みは家族で⻑野や北海道へ⾏きます。', chinese: '寒假和家人去長野啦北海道等地。' },
+                    { japanese: '私は数学や化学などが好きです。', chinese: '我喜歡數學和化學等科目。' },
+                    { japanese: '秋には葉が⾚や⻩⾊に変わる。', chinese: '秋天葉子會變成紅色或黃色。' }
                 ]
             }
         ],
@@ -10885,22 +11130,16 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '兩者比較',
-                description: '「AよりBのほうが」用於比較兩個事物，表示B比A更具有某種特質。',
-                examples: [
-                    { japanese: '電{でん}車{しゃ}より飛{ひ}行{こう}機{き}のほうが速{はや}い。', chinese: '飛機比電{でん}車{しゃ}快。' },
-                    { japanese: '夏{なつ}より冬{ふゆ}のほうが好{す}きです。', chinese: '比起夏天，我更喜歡冬{ふゆ}天。' },
-                    { japanese: '肉{にく}より魚{さかな}のほうが体{からだ}にいい。', chinese: '魚{さかな}比肉{にく}對身體好{す}。' },
-                    { japanese: '日本語{にほんご}より英{えい}語{ご}のほうが難{むずか}しいです。', chinese: '英{えい}語{ご}比日語難{むずか}。' }
-                ]
+                title: '接續方式',
+                description: 'A + より + B + のほうが...',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '省略形式',
-                description: '「より」或「ほうが」有時{じ}可以省略，但意思相同。',
+                title: '意義詳解',
+                description: '表示比較。意思是「比起A，B更...」。\n\n句型：\nA より B のほうが ～ です。(比起A，B更～)',
                 examples: [
-                    { japanese: 'こっちのほうがいい。', chinese: '這邊比較好{す}。（省略より）' },
-                    { japanese: '東{とう}京{きょう}より大阪{おおさか}が大{おお}きい。', chinese: '大阪比東{とう}京{きょう}大。（省略ほうが）' }
+                    { japanese: '日本より中国のほうが広いです。', chinese: '比起日本，中國更遼闊。' }
                 ]
             }
         ],
@@ -11151,22 +11390,23 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '詢問意見{み}或感想',
-                description: '用於詢問對方對某事物的意見{み}、感想或評價。',
-                examples: [
-                    { japanese: '日{に}本{ほん}の食{た}べ物{もの}はどうですか。', chinese: '日{に}本{ほん}的食物怎麼樣？' },
-                    { japanese: '新{あたら}しい仕事{しごと}はどうですか。', chinese: '新工作怎麼樣？' },
-                    { japanese: '最近{さいきん}の調子{ちょうし}はどうですか。', chinese: '最近狀況怎麼樣？' }
-                ]
+                title: '接續方式',
+                description: '名詞 + はどうですか',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '提出建議',
-                description: '也可用於向對方提出建議或邀請。',
+                title: '如何/怎麼樣 (How about)',
+                description: '意思：...怎麼樣？、...如何？\n用於詢問對方的意見、狀況或提議。\n例：味はどうですか (味道如何？)。',
                 examples: [
-                    { japanese: 'コーヒーはどうですか。', chinese: '要不要喝咖啡？' },
-                    { japanese: '明日{あした}はどうですか。', chinese: '明天怎麼樣？（明天可以嗎？）' },
-                    { japanese: 'もう一杯{いっぱい}はどうですか。', chinese: '再來一杯怎麼樣？' }
+                    { japanese: '明⽇はどうですか。', chinese: '明天怎麼樣？ (方便嗎？)' },
+                    { japanese: '⽇本はどうですか︖', chinese: '日本怎麼樣？ (你覺得如何？)' },
+                    { japanese: '天気はどうですか。', chinese: '天氣怎麼樣？' },
+                    { japanese: '買い物に⾏くのはどうですか。', chinese: '去買東西怎麼樣？ (提議)' },
+                    { japanese: '⽇本語の勉強はどうですか。', chinese: '日語學習得怎麼樣了？' },
+                    { japanese: '私の⽇本語の発⾳はどうですか︖', chinese: '我的日語發音如何？' },
+                    { japanese: '新しい学校はどうですか。友だちができましたか︖', chinese: '新學校怎麼樣？交到朋友了嗎？' },
+                    { japanese: '最近仕事のほうはどうですか︖', chinese: '最近工作方面怎麼樣？' }
                 ]
             }
         ],
@@ -11286,12 +11526,22 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示轉折',
-                description: '「しかし」用於連接兩個句子，表示後句與前句相反或對比。是較正式的轉折詞。',
+                title: '接續方式',
+                description: '然而 / 但是',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '逆接 (Formal)',
+                description: '意思：但是、然而。\n用於連接兩個相反的想法。比「でも」更正式。\n常用於句首。\n例：日本は大好きです。しかし、夏は暑いです。(我很喜歡日本。但是，夏天很熱。)',
                 examples: [
-                    { japanese: '彼{かれ}は頭{あたま}がいい。しかし、勉{べん}強{きょう}しない。', chinese: '他很聰明。但是不讀書。' },
-                    { japanese: '高{たか}いです。しかし、品質{ひんしつ}がいいです。', chinese: '很貴。但是品質好{す}。' },
-                    { japanese: '雨{あめ}が降{ふ}っていた。しかし、試合{しあい}は行{おこな}われた。', chinese: '下著雨。但是比賽照常舉行。' }
+                    { japanese: 'しかしなぜ︖', chinese: '但是為什麼？' },
+                    { japanese: '今⽇のクラスはむずかしかったです。しかし楽しかったです。', chinese: '今天的課很難。但是很有趣。' },
+                    { japanese: 'しかし問題があるかもしれない。', chinese: '然而，這可能會有問題。' },
+                    { japanese: '冬は寒い、しかし私は好きだ。', chinese: '冬天很冷，不過我喜歡。' },
+                    { japanese: 'しかし、彼は⽇本語を話すことも書くこともできません。', chinese: '但是，他既不會說也不會寫日語。' },
+                    { japanese: '⽇本料理はもちろんおいしいです。しかし、アメリカ料理の⽅が好きです。', chinese: '日本料理當然好吃。但是，我比較喜歡美國料理。' },
+                    { japanese: 'あなたはたぶん正しいでしょう。しかし、私は少し違った意⾒を持っています。', chinese: '你大概是對的吧。不過，我有一點不同的意見。' }
                 ]
             }
         ],
@@ -11397,12 +11647,16 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示追加或順序',
-                description: '「そして」用於連接兩個句子，表示追加信息或時{じ}間{かん}順序。',
+                title: '接續方式',
+                description: '句子。 + そして + 句子。',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '表示並列或順接。意思是「而且」、「然後」。\n可以用於連接名詞 (AそしてB) 或句子。',
                 examples: [
-                    { japanese: '朝{あさ}起{お}きた。そして、朝{あさ}ご飯{はん}を食{た}べた。', chinese: '早上起床了。然後吃了早餐。' },
-                    { japanese: '彼{かれ}は優{やさ}しい。そして、面白{おもしろ}い。', chinese: '他很溫柔。而且很有趣。' },
-                    { japanese: '買{か}い物{もの}をした。そして、映{えい}画{が}を見{み}た。', chinese: '買了東西。然後看了電影。' }
+                    { japanese: '明るくて、そしてきれいな部屋です。', chinese: '明亮而且乾淨的房間。' }
                 ]
             }
         ],
@@ -11522,20 +11776,16 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示時{じ}間{かん}順序',
-                description: '「それから」用於表示動作的先後順序，強調「之後」「然後」的時{じ}間{かん}關係。',
-                examples: [
-                    { japanese: '買{か}い物{もの}をした。それから、家{いえ}に帰{かえ}った。', chinese: '買了東西。然後回家{いえ}了。' },
-                    { japanese: 'まず宿{しゅく}題{だい}をする。それから、遊{あそ}ぶ。', chinese: '先做作業。然後玩。' },
-                    { japanese: 'シャワーを浴{あ}びた。それから、寝{ね}た。', chinese: '洗了澡。然後睡覺了。' }
-                ]
+                title: '接續方式',
+                description: '句子。 + それから + 句子。',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '列舉時{じ}使用',
-                description: '也可用於列舉多個項目。',
+                title: '意義詳解',
+                description: '表示動作的連續發生或追加。意思是「然後」、「還有」。',
                 examples: [
-                    { japanese: 'りんごと、バナナと、それからオレンジを買{か}った。', chinese: '買了蘋果、香蕉、還有柳橙。' }
+                    { japanese: '買い物をしました。それから、映画を見ました。', chinese: '去買了東西。然後看了電影。' }
                 ]
             }
         ],
@@ -11777,13 +12027,20 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '請求物品',
-                description: '「をください」用於禮貌地請求得到某物，常用於購物、點餐等場合。',
+                title: '接續方式',
+                description: '名詞 + をください',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '請給我... (Please give me)',
+                description: '意思：請給我...。\n用於一般索取物品或點餐。\n句型：[物品] を ください。',
                 examples: [
-                    { japanese: 'コーヒーをください。', chinese: '請給我咖啡。' },
-                    { japanese: 'メニューをください。', chinese: '請給我菜單。' },
-                    { japanese: 'お水{みず}をください。', chinese: '請給我水{みず}。' },
-                    { japanese: 'これを二{ふた}つください。', chinese: '請給我兩個這個。' }
+                    { japanese: 'すみません、お⽔をください。', chinese: '不好意思，請給我水。' },
+                    { japanese: 'これをください。', chinese: '請給我這個 (我要買這個)。' },
+                    { japanese: 'コーヒーを⼆つください。', chinese: '請給我兩杯咖啡。' },
+                    { japanese: '少し時間をください。', chinese: '請給我一點時間。' },
+                    { japanese: 'すぐに返信をください。', chinese: '請馬上給我回信。' }
                 ]
             }
         ],
@@ -11903,13 +12160,17 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '美化語・敬語接頭{あたま}詞',
-                description: '「お」「ご」是敬語接頭{あたま}詞，用於使語言更禮貌、更優雅。「お」通常接和語（日{に}本{ほん}固有詞），「ご」通常接漢語詞。',
+                title: '接續方式',
+                description: 'お + 和語詞彙 / ご + 漢語詞彙',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '美化語/尊敬語',
+                description: '接在名詞前，表示禮貌或尊敬。\n- 「お」接訓讀詞彙 (例：お水、お名前)\n- 「ご」接音讀詞彙 (例：家族、住所)',
                 examples: [
-                    { japanese: 'お茶{ちゃ}をどうぞ。', chinese: '請喝茶。' },
-                    { japanese: 'お名{な}前{まえ}は？', chinese: '請問貴姓？' },
-                    { japanese: 'ご住{じゅう}所{しょ}をお願{ねが}いします。', chinese: '請告訴我您的地址。' },
-                    { japanese: 'ご家{か}族{ぞく}はお元{げん}気{き}ですか。', chinese: '您的家{いえ}人{ひと}好{す}嗎？' }
+                    { japanese: 'お元気ですか。', chinese: '你好嗎？' },
+                    { japanese: 'ご主人', chinese: '您的丈夫' }
                 ]
             }
         ],
@@ -12148,12 +12409,21 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '說明或強調',
-                description: '「のです」用於說明原因、背景或強調某事。口語中{なか}常說「んです」。',
+                title: '接續方式',
+                description: '普通形 + のです',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '強調/解釋說明 (正式)',
+                description: '意思：是...的。\n與「んです」意思相同，但較為正式書面。\n用於說明理由、強調事實。\n\n注意：接名詞時，要加「那」 -> 「なのです (na no desu)」。\n例：いい先生なのですか (是好老師嗎？)',
                 examples: [
-                    { japanese: '熱{ねつ}があるのです。', chinese: '（是因為）發燒了。' },
-                    { japanese: '電{でん}車{しゃ}が遅{おく}れたのです。', chinese: '（是因為）電{でん}車{しゃ}晚了。' },
-                    { japanese: 'どうしたのですか。', chinese: '怎麼了？' }
+                    { japanese: 'どこへ⾏きたいのですか。', chinese: '你想去哪裡呢？' },
+                    { japanese: '何を⾔いたいのですか。', chinese: '你到底想說什麼呢？' },
+                    { japanese: '昼ごはんを⾷べなかったのですね。', chinese: '是因為沒吃午餐吧？' },
+                    { japanese: '今⽇は学校に⾏くのですね。', chinese: '今天要上學是吧？' },
+                    { japanese: 'あなたが悪いのだ。', chinese: '是你的錯 (強調)。' },
+                    { japanese: '⽣きるために⾷べるのだ。', chinese: '是為了生存而吃。' }
                 ]
             }
         ],
@@ -12258,12 +12528,21 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: '表示範圍',
-                description: '「の中{なか}で」用於表示某個範圍或集合之中{なか}。',
+                title: '接續方式',
+                description: '名詞 + の中で... が一番...',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '範圍中之最 (最高級)',
+                description: '意思：在...之中，...最...。\n用於比較，指出某個團體或範圍中程度最高的一個。\n句型：Aの中で Bが一番 (A之中B最...)',
                 examples: [
-                    { japanese: 'クラスの中{なか}で一{いち}番{ばん}背{せ}が高{たか}い。', chinese: '班上最高{たか}。' },
-                    { japanese: '日{に}本{ほん}の中{なか}で一{いち}番{ばん}大{おお}きい都市{とし}はどこですか。', chinese: '日{に}本{ほん}最大的城市是哪裡？' },
-                    { japanese: '家{か}族{ぞく}の中{なか}で誰{だれ}が一{いち}番{ばん}早{はや}く起{お}きますか。', chinese: '家{いえ}人{ひと}中{なか}誰{だれ}最早起？' }
+                    { japanese: '家族のなかで⽗がいちばん背が⾼いです。', chinese: '在家人之中，父親個子最高。' },
+                    { japanese: 'チームの中で⼭⽥が⼀番強い︕', chinese: '在隊伍中，山田最強！' },
+                    { japanese: '⽇本の⾷べ物の中でラーメンが⼀番好きだ。', chinese: '日本食物之中，最喜歡拉麵。' },
+                    { japanese: 'クラスの中でジェシカが⼀番頭いい。', chinese: '班級裡，Jessica最聰明。' },
+                    { japanese: '世界の中で⽇本が⼀番安全な国です。', chinese: '世界上，日本是最安全的國家。' },
+                    { japanese: '友達の中では、クリスが⼀番先輩。', chinese: '朋友之中，Chris資歷最深。' }
                 ]
             }
         ],
@@ -12356,23 +12635,25 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: 'い形容詞的基本{ほん}用法',
-                description: 'い形容詞以「い」結尾，可以直接修飾名詞或作為謂語。',
-                examples: [
-                    { japanese: '大{おお}きい車{くるま}', chinese: '大車{くるま}' },
-                    { japanese: 'おいしい料{りょう}理{り}', chinese: '好吃的料{りょう}理{り}' },
-                    { japanese: 'この本{ほん}は面白{おもしろ}い。', chinese: '這本{ほん}書很有趣。' },
-                    { japanese: '今日{きょう}は暑{あつ}いです。', chinese: '今{いま}天很熱{ねつ}。' }
-                ]
+                title: '接續方式',
+                description: 'い形容詞 (本身即可修飾名詞)',
+                examples: []
             },
             {
                 usageId: 2,
-                title: '否定形',
-                description: 'い形容詞否定時{じ}，「い」變成「くない」。',
+                title: '意義詳解',
+                description: '修飾名詞時直接放在名詞前面。不需要加「の」。\n做謂語時，句尾通常接「です」。',
                 examples: [
-                    { japanese: '高{たか}い → 高{たか}くない', chinese: '貴 → 不貴' },
-                    { japanese: 'おいしい → おいしくない', chinese: '好{す}吃 → 不好{す}吃' },
-                    { japanese: 'この映{えい}画{が}は面白{おもしろ}くない。', chinese: '這部電影不有趣。' }
+                    { japanese: '面白い映画を見ました。', chinese: '看了有趣的電影。' },
+                    { japanese: 'この映画は面白いです。', chinese: '這部電影很有趣。' }
+                ]
+            },
+            {
+                usageId: 3,
+                title: '否定形式',
+                description: '去「い」+「くない」。\n例如：高い (貴) -> 高くない (不貴)',
+                examples: [
+
                 ]
             }
         ],
@@ -12476,12 +12757,17 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: 'い形容詞的過去形',
-                description: 'い形容詞的過去形，去「い」加「かった」。',
+                title: '接續方式',
+                description: 'い形容詞去い + くて',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '表示並列或原因。形容詞的「て形」。\n將兩個形容詞連接在一起時使用。',
                 examples: [
-                    { japanese: '昨日{きのう}は暑{あつ}かった。', chinese: '昨天很熱{ねつ}。' },
-                    { japanese: 'その映{えい}画{が}は面白{おもしろ}かったです。', chinese: '那部電影很有趣。' },
-                    { japanese: '旅行{りょこう}は楽{たの}しかった。', chinese: '旅行很開心。' }
+                    { japanese: 'この部屋は広くて明るいです。', chinese: '這房間又寬敞又明亮。' },
+                    { japanese: '高くて買えません。', chinese: '太貴了買不起 (原因)。' }
                 ]
             }
         ],
@@ -12574,12 +12860,25 @@ Object.assign(n5Details, {
         explanation: [
             {
                 usageId: 1,
-                title: 'な形容詞的過去形',
-                description: 'な形容詞的過去形，加「だった」（普通體）或「でした」（丁寧體）。',
+                title: '接續方式',
+                description: 'な形容詞 + な + 名詞',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '修飾名詞',
+                description: 'な形容詞在修飾名詞時，必須在詞幹和名詞之間加「な」。\n這點與「の形容詞」(名詞+の) 不同，需特別注意。',
                 examples: [
-                    { japanese: '彼{かれ}は元{げん}気{き}だった。', chinese: '他以前很健康。' },
-                    { japanese: 'あの店{みせ}は静{しず}かでした。', chinese: '那家{いえ}店{みせ}以前很安靜。' },
-                    { japanese: '日本語{にほんご}は苦手{にがて}だった。', chinese: '以前不擅長{なが}日語。' }
+                    { japanese: '静かな部屋', chinese: '安靜的房間' },
+                    { japanese: '親切な先生', chinese: '親切的老師' }
+                ]
+            },
+            {
+                usageId: 3,
+                title: '謂語用法',
+                description: '做謂語時，句尾接「です」(肯定) 或「じゃありません」(否定)。\n這時不需要加「な」。',
+                examples: [
+                    { japanese: 'この部屋は静かです。', chinese: '這房間很安靜。' }
                 ]
             }
         ],
@@ -12660,5 +12959,1860 @@ Object.assign(n5Details, {
                 }
             }
         ]
+    },
+});
+
+
+// ===== Batch 3: ka - no_ga_heta =====
+Object.assign(n5Details, {
+    n5_ka: {
+        id: 'n5_ka',
+        pattern: 'か',
+        connection: '',
+        translation: '疑問助詞; 或者',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '疑問助詞',
+                description: '接在句尾，使句子變成疑問句。相當於中文的「嗎」。',
+                examples: [
+                    { japanese: '何ですか︖', chinese: '是什麼？' },
+                    { japanese: 'すみません、あなたも学⽣ですか。', chinese: '不好意思，請問你也是學生嗎？' },
+                    { japanese: '元気ですか。', chinese: '你好嗎？' },
+                ]
+            },
+            {
+                usageId: 2,
+                title: '選擇（或者）',
+                description: '連接兩個名詞，表示選擇。相當於中文的「或者」。',
+                examples: [
+                    { japanese: 'お茶かコーヒーが飲みたい。', chinese: '想喝茶或咖啡。' },
+                    { japanese: '来週の⽉曜⽇か⽕曜⽇に京都に⾏きます。', chinese: '下週一或週二要去京都。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_ka_1',
+                sentence: 'これはペンです（　）。',
+                options: ['か', 'が', 'は', 'の'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「か」正確！句尾加「か」變成疑問句「這是筆嗎？」。',
+                    wrong: [
+                        '其他助詞不放在句尾表示疑問。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_ka_ka: {
+        id: 'n5_ka_ka',
+        pattern: 'か～か',
+        connection: '',
+        translation: '...或者...; 是否...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '是否...',
+                description: '用於嵌入疑問句中，表示「是否...」。常接「知らない」「わからない」等。',
+                examples: [
+                    { japanese: '明⽇は⾬かどうか分からない。', chinese: '不知道明天會不會下雨。' },
+                    { japanese: 'やるかやらないか早く決めてください。', chinese: '做還是不做，請快點決定。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_kaka_1',
+                sentence: '雨が降る（　）どう（　）わかりません。',
+                options: ['か/か', 'が/が', 'は/は', 'も/も'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「か/か」正確！「かどうか」表示「是否...」。',
+                    wrong: [
+                        '這是固定用法。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_kara: {
+        id: 'n5_kara',
+        pattern: 'から',
+        connection: '',
+        translation: '因為; 從',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '表示原因',
+                description: '接在句尾或子句尾，表示原因或理由。相當於中文的「因為...所以...」。',
+                examples: [
+                    { japanese: '天気がいいから、外に⾏きたい。', chinese: '因為天氣好，想去外面。' },
+                    { japanese: '私はすぐ戻るから、ここでちょっと待ってください。', chinese: '我馬上回來，請在這裡稍等一下。' },
+                ]
+            },
+            {
+                usageId: 2,
+                title: '表示起點（從...）',
+                description: '接在時間、場所名詞後，表示起點。常與「まで」（直到）連用。',
+                examples: [
+                    { japanese: 'ここからあの駅まで歩いてどれぐらいかかりますか︖', chinese: '從這裡走到那個車站要花多久時間？' },
+                    { japanese: 'お店は何時から何時まで開いていますか︖', chinese: '這家店從幾點開到幾點？' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_kara_1',
+                sentence: '時間がありません（　）、急ぎましょう。',
+                options: ['から', 'まで', 'より', 'でも'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「から」正確！表示原因「因為沒有時間」。',
+                    wrong: [
+                        '其他助詞意思不符。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_kata: {
+        id: 'n5_kata',
+        pattern: '方（かた）',
+        connection: '',
+        translation: '...的方法',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '做某事的方法',
+                description: '接在動詞ます形（去ます）後面，表示做該動作的方法。注意：變成名詞，後面的助詞通常用「の」。',
+                examples: [
+                    { japanese: 'パソコンの使いかたがわかりません。', chinese: '不知道電腦的使用方法。' },
+                    { japanese: 'ケーキの作り⽅を知っていますか︖', chinese: '你知道蛋糕的做法嗎？' },
+                    { japanese: 'この漢字の読み⽅ を教えてください。', chinese: '請教我這個漢字的唸法。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_kata_1',
+                sentence: 'この漢字の（　）方がわかりません。',
+                options: ['読み', '読む', '読んで', '読んだ'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「読み」正確！動詞ます形（去ます）+ 方。読みます -> 読み方。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_kedo: {
+        id: 'n5_kedo',
+        pattern: 'けど',
+        connection: '',
+        translation: '但是; 雖然',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '逆接（但是）',
+                description: '連接兩個句子，表示轉折。比「が」更口語。',
+                examples: [
+                    { japanese: '仕事は⾟いけど楽しい。', chinese: '工作很辛苦，但是很開心。' },
+                    { japanese: '⾦はないけど夢はある。', chinese: '雖然沒錢，但是有夢想。' },
+                ]
+            },
+            {
+                usageId: 2,
+                title: '前置鋪陳（雖然...但是...）',
+                description: '用於句首或句中，作為開場白或緩衝語氣。',
+                examples: [
+                    { japanese: '悪いけど、明⽇のパーティーに⾏けません。', chinese: '不好意思，明天的派對我不能去。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_kedo_1',
+                sentence: '美味しい（　）、高いです。',
+                options: ['けど', 'から', 'ので', 'たら'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「けど」正確！表示轉折「雖然好吃，但是很貴」。',
+                    wrong: [
+                        '「から」「ので」表示原因。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_made: {
+        id: 'n5_made',
+        pattern: 'まで',
+        connection: '',
+        translation: '到...; 直到...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '終點（到...）',
+                description: '表示時間或空間的終點。常與「から」連用。',
+                examples: [
+                    { japanese: '昨⽇までお休みでした。', chinese: '休假到昨天為止。' },
+                    { japanese: 'ここからそこまでは遠いですよ。', chinese: '從這裡到那裡很遠喔。' },
+                    { japanese: '朝から夜までずっとかんじを勉強しました。', chinese: '從早到晚一直在學漢字。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_made_1',
+                sentence: '駅（　）歩いて行きます。',
+                options: ['まで', 'から', 'より', 'でも'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「まで」正確！表示目的地/终点「走到車站」。',
+                    wrong: [
+                        '「から」是起點。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_mae_ni: {
+        id: 'n5_mae_ni',
+        pattern: '前に',
+        connection: '',
+        translation: '在...之前',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '時間順序（在...之前）',
+                description: '接在動詞辭書形或名詞+の後面，表示做某事之前。',
+                examples: [
+                    { japanese: '寝る前に、⻭みがきを忘すれないでね。', chinese: '睡前別忘了刷牙喔。' },
+                    { japanese: 'ご飯の前に⼿を洗いましょう。', chinese: '飯前洗手吧。' },
+                    { japanese: '旅行の前に切符を買っておきます。', chinese: '旅行前先買好票。' },
+                ]
+            },
+            {
+                usageId: 2,
+                title: '位置（在...前面）',
+                description: '表示物理位置的前方。',
+                examples: [
+                    { japanese: 'コンビニの前にじてんしゃがたくさんあります。', chinese: '便利商店前面有很多腳踏車。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_maeni_1',
+                sentence: '寝る（　）シャワーを浴びます。',
+                options: ['前に', '後で', '時', '間'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「前に」正確！「寝る前に」=睡前。',
+                    wrong: [
+                        '「後で」通常接在た形後面（寝た後で）。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_masen_ka: {
+        id: 'n5_masen_ka',
+        pattern: 'ませんか',
+        connection: '',
+        translation: '要不要...?',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '邀約（要不要...？）',
+                description: '雖然是否定疑問形式，但用於客氣地邀請對方做某事。',
+                examples: [
+                    { japanese: '今⽇⼀緒に⾷べませんか︖', chinese: '今天要不要一起吃？' },
+                    { japanese: 'お茶にしませんか︖', chinese: '要不要喝杯茶？' },
+                    { japanese: '日曜日、映画を見に行きませんか。', chinese: '星期天要不要去看電影？' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_masenka_1',
+                sentence: '一緒にコーヒーを（　）ませんか。',
+                options: ['飲み', '飲む', '飲んで', '飲んだ'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「飲み」正確！接在ます形（去ます）後面。飲みます -> 飲みませんか。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_mashou: {
+        id: 'n5_mashou',
+        pattern: 'ましょう',
+        connection: '',
+        translation: '...吧! (提議)',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '積極提議/勸誘',
+                description: '表示提議做某事，或者回應對方的邀約。意為「我們...吧！」',
+                examples: [
+                    { japanese: '⾏きましょう︕', chinese: '走吧！' },
+                    { japanese: '駅で会いましょう︕', chinese: '在車站見吧！' },
+                    { japanese: 'そろそろ帰りましょう。', chinese: '差不多該回去了。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_mashou_1',
+                sentence: 'そろそろ（　）ましょう。',
+                options: ['帰り', '帰る', '帰って', '帰った'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「帰り」正確！接在ます形（去ます）後面。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_mashou_ka: {
+        id: 'n5_mashou_ka',
+        pattern: 'ましょうか',
+        connection: '',
+        translation: '我來...好嗎?',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '接續方式',
+                description: '動詞(ます形去掉ます) + ましょうか',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '提議/主動幫忙',
+                description: '意思：我來...好嗎？、要...嗎？\n用於主動提議幫助對方，或徵求對方的意願。\n例：窓を開けましょうか (我來開窗好嗎？)。',
+                examples: [
+                    { japanese: 'マドを開けましょうか。', chinese: '要我把窗戶打開嗎？' },
+                    { japanese: '⼿伝いましょうか。', chinese: '需要幫忙嗎？' },
+                    { japanese: '荷物を持ちましょうか。', chinese: '我幫你拿行李吧？' },
+                    { japanese: 'タクシーを呼びましょうか。', chinese: '要叫計程車嗎？' },
+                    { japanese: '私がお⽫を洗いましょうか︖', chinese: '我來洗盤子好嗎？' },
+                    { japanese: '写真を取りましょうか。', chinese: '要幫你拍照嗎？' },
+                    { japanese: 'サラダを作りましょうか︖', chinese: '要做沙拉嗎？' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n5_q_mashouka_1',
+                sentence: '暑いですね。窓を（　）ましょうか。',
+                options: ['開け', '開く', '開いて', '開けた'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「開け」正確！開けます -> 開けましょうか。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_mo: {
+        id: 'n5_mo',
+        pattern: 'も',
+        connection: '',
+        translation: '也; 連...都',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '同類事物（也）',
+                description: '表示與前面提到的事物相同。',
+                examples: [
+                    { japanese: '私もできる。', chinese: '我也會。' },
+                    { japanese: '私の妻も⼦どもも来ます。', chinese: '我的妻子和孩子也會來。' },
+                ]
+            },
+            {
+                usageId: 2,
+                title: '並列（既...也...）',
+                description: '「AもBも」表示A和B都...',
+                examples: [
+                    { japanese: '⽢いものも⾟いものも好きです。', chinese: '甜的和辣的都喜歡。' },
+                    { japanese: '⽇本語も英語も話せます。', chinese: '日語和英語都會說。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_mo_1',
+                sentence: '私は学生です。妹（　）学生です。',
+                options: ['も', 'は', 'が', 'を'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「も」正確！表示「也」。',
+                    wrong: [
+                        '其他助詞意思不符。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_mou: {
+        id: 'n5_mou',
+        pattern: 'もう',
+        connection: '',
+        translation: '已經; 再',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '已經（完成/狀態變化）',
+                description: '表示事情已經發生或狀態已經改變。',
+                examples: [
+                    { japanese: 'もう昼ご飯の時間だ。', chinese: '已經是午餐時間了。' },
+                    { japanese: '宿題はもう終わった︖', chinese: '作業已經寫完了嗎？' },
+                    { japanese: 'もう帰らなくてはいけません。', chinese: '已經必須回去了。' },
+                ]
+            },
+            {
+                usageId: 2,
+                title: '再（追加）',
+                description: '表示追加數量或程度。',
+                examples: [
+                    { japanese: 'ビールもう⼀杯ください︕', chinese: '請再給給我一杯啤酒！' },
+                    { japanese: 'もう少し待ってください。', chinese: '請再稍等一下。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_mou_1',
+                sentence: '（　）ご飯を食べましたか。',
+                options: ['もう', 'まだ', 'いつも', 'よく'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「もう」正確！「もう～ました」=已經...了。',
+                    wrong: [
+                        '「まだ」表示還沒。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_naide: {
+        id: 'n5_naide',
+        pattern: 'ないで',
+        connection: '',
+        translation: '不...而...; 沒...就...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '附帶狀況（沒做A就做了B）',
+                description: '表示在沒有進行某動作的狀態下，進行了後面的動作。',
+                examples: [
+                    { japanese: '朝ごはんを⾷べないで学校に来た。', chinese: '沒吃早餐就來學校了。' },
+                    { japanese: '昨⽇、お⾵呂に⼊らないで寝てしまった。', chinese: '昨天沒洗澡就睡著了。' },
+                    { japanese: 'コーヒーには、いつもさとうを⼊れ ないで飲みます。', chinese: '喝咖啡總是不加糖（在不加糖的狀態下喝）。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_naide_1',
+                sentence: '傘を（　）出かけました。',
+                options: ['持たないで', '持って', '持った', '持ちます'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「持たないで」正確！表示「沒帶傘就出門了」。',
+                    wrong: [
+                        '其他選項意思相反或文法不通。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_naide_kudasai: {
+        id: 'n5_naide_kudasai',
+        pattern: 'ないでください',
+        connection: '',
+        translation: '請不要...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '禁止/請求（請不要...）',
+                description: '禮貌地請求對方不要做某事。',
+                examples: [
+                    { japanese: 'ここで写真を撮らないでください。', chinese: '請不要在這裡拍照。' },
+                    { japanese: '⼼配しないでください。', chinese: '請不要擔心。' },
+                    { japanese: '忘れないでください。', chinese: '請不要忘記。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_naidek_1',
+                sentence: 'ここでタバコを（　）ください。',
+                options: ['吸わないで', '吸わなくて', '吸うな', '吸いません'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「吸わないで」正確！乃形+ないでください。',
+                    wrong: [
+                        '其他選項接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_nakute_mo_ii: {
+        id: 'n5_nakute_mo_ii',
+        pattern: 'なくてもいい',
+        connection: '',
+        translation: '不...也可以',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '接續方式',
+                description: '動詞(ない形去い) + くてもいい',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '表示許可或不必要。意思是「不...也可以」、「不用...沒關係」。\n用於告訴對方沒有做的義務。',
+                examples: [
+                    { japanese: '脱がなくてもいいです。', chinese: '不用脫也可以。' },
+                    { japanese: '明日来なくてもいいです。', chinese: '明天不來也可以。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n5_q_nakutemoii_1',
+                sentence: '日曜日は早く（　）いいです。',
+                options: ['起きなくても', '起きないで', '起きて', '起きる'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「起きなくても」正確！「起きなくてもいい」=不用起床也可以。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_ni_iku: {
+        id: 'n5_ni_iku',
+        pattern: 'に行く',
+        connection: '',
+        translation: '去...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '移動的目的（去...）',
+                description: '接在動詞ます形（去ます）或動作性名詞後面，表示移動（去、來、回）的目的。',
+                examples: [
+                    { japanese: '友だちの家に遊びに⾏く。', chinese: '去朋友家玩。' },
+                    { japanese: '日本へ日本語を勉強しに行きます。', chinese: '去日本學日語。' },
+                    { japanese: 'ラーメンを⾷べに⾏きましょう。', chinese: '去吃拉麵吧。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_niiku_1',
+                sentence: 'デパートへ靴を（　）に行きます。',
+                options: ['買い', '買う', '買って', '買おう'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「買い」正確！買います -> 買いに行きます。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_ni_suru: {
+        id: 'n5_ni_suru',
+        pattern: 'にする',
+        connection: '',
+        translation: '決定是...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '決定/選擇',
+                description: '在餐廳點餐或做決定時使用。「名詞 + にする」。',
+                examples: [
+                    { japanese: 'お茶にする。', chinese: '我要茶（決定喝茶）。' },
+                    { japanese: 'これにします。', chinese: '我要這個（決定買這個）。' },
+                    { japanese: '飲み物は何にする︖', chinese: '飲料要什麼？' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_nisuru_1',
+                sentence: '私はコーヒー（　）します。',
+                options: ['に', 'を', 'が', 'で'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「に」正確！「〜にします」=決定是...。',
+                    wrong: [
+                        '其他助詞意思不符。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_no_ga_heta: {
+        id: 'n5_no_ga_heta',
+        pattern: 'のが下手',
+        connection: '',
+        translation: '不擅長做...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '不擅長...',
+                description: '接在動詞辭書形後面，表示不擅長做該動作。「の」將動詞名詞化。',
+                examples: [
+                    { japanese: '彼はおはしを使うのが下⼿だ。', chinese: '他不擅長用筷子。' },
+                    { japanese: '私は料理をするのが下⼿です。', chinese: '我不擅長做飯。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_nogahei_1',
+                sentence: '私は絵を（　）のが下手です。',
+                options: ['描く', '描き', '描いて', '描いた'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「描く」正確！動詞辭書形 + のが下手。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+});
+
+
+// ===== Batch 3 Part 2: keredomo - no_desu =====
+Object.assign(n5Details, {
+    n5_keredomo: {
+        id: 'n5_keredomo',
+        pattern: 'けれども',
+        connection: '',
+        translation: '但是; 雖然',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '接續方式',
+                description: '句子 + けれども',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '表示逆接，意思是「雖然...但是...」。\n與「けど」意思相同，但比「けど」更正式、禮貌。',
+                examples: [
+                    { japanese: 'おいしいけれども、高いです。', chinese: '雖然好吃，但是很貴。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n5_q_keredomo_1',
+                sentence: '眠い（　）、宿題をします。',
+                options: ['けれども', 'から', 'ので', 'なら'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「けれども」正確！雖然...但是...。',
+                    wrong: [
+                        '其他選項文意不符。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_mada: {
+        id: 'n5_mada',
+        pattern: 'まだ',
+        connection: '',
+        translation: '還; 尚未',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '還（持續）',
+                description: '表示狀態或動作仍在持續。',
+                examples: [
+                    { japanese: 'まだですか︖', chinese: '還沒好嗎？' },
+                    { japanese: '先⽣はまだ来ていない。', chinese: '老師還沒來。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_mada_1',
+                sentence: '宿題は（　）終わっていません。',
+                options: ['まだ', 'もう', 'よく', 'たいてい'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「まだ」正確！「まだ～ていません」=還沒...。',
+                    wrong: [
+                        '「もう」表示已經。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_naa: {
+        id: 'n5_naa',
+        pattern: 'なあ',
+        connection: '',
+        translation: '...啊 (感嘆)',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '感嘆/詠嘆',
+                description: '接在句尾，表示深切的感觸或自言自語。',
+                examples: [
+                    { japanese: 'これ、美味しいなあ。', chinese: '這個真好吃啊。' },
+                    { japanese: '暑くなってきたなあ。', chinese: '變熱了啊。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_naa_1',
+                sentence: '今日は天気がいい（　）。',
+                options: ['なあ', 'か', 'よ', 'ね'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「なあ」正確！表示感嘆。',
+                    wrong: [
+                        '其他助詞語氣不同。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_nakucha: {
+        id: 'n5_nakucha',
+        pattern: 'なくちゃ',
+        connection: '',
+        translation: '必須...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '必須（口語）',
+                description: '「なくては（いけない）」的口語縮略形。',
+                examples: [
+                    { japanese: '⾏かなくちゃ。', chinese: '得走了。' },
+                    { japanese: 'もう寝なくちゃ。', chinese: '得睡了。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_nakuca_1',
+                sentence: 'もう（　）なくちゃ。',
+                options: ['帰ら', '帰る', '帰って', '帰り'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「帰ら」正確！ない形（去ない）+なくちゃ。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_nakute_wa_ikenai: {
+        id: 'n5_nakute_wa_ikenai',
+        pattern: 'なくてはいけない',
+        connection: '',
+        translation: '必須...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '義務/必要',
+                description: '表示不做某事不行，即「必須...」。',
+                examples: [
+                    { japanese: '薬を飲まなくてはいけない。', chinese: '必須吃藥。' },
+                    { japanese: '早く起きなくてはいけません。', chinese: '必須早起。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_nakuteikenai_1',
+                sentence: '毎日野菜を（　）なくてはいけません。',
+                options: ['食べ', '食べる', '食べて', '食べた'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「食べ」正確！ない形（去ない）+なくてはいけない。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_nakute_wa_naranai: {
+        id: 'n5_nakute_wa_naranai',
+        pattern: 'なくてはならない',
+        connection: '',
+        translation: '必須...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '義務/必要（正式）',
+                description: '比「なくてはいけない」語氣更強，更正式。',
+                examples: [
+                    { japanese: '国民は税金を払わなくてはならない。', chinese: '國民必須納稅。' },
+                    { japanese: '約束を守らなくてはなりません。', chinese: '必須遵守約定。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_nakutenaranai_1',
+                sentence: '勉強し（　）てはなりません。',
+                options: ['なく', 'ない', 'なか', 'ないで'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「なく」正確！勉強しない -> 勉強しなくてはなりません。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_ni_naru: {
+        id: 'n5_ni_naru',
+        pattern: 'になる',
+        connection: '',
+        translation: '變成...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '接續方式',
+                description: '名詞 + に + なる',
+                examples: []
+            },
+            {
+                usageId: 2,
+                title: '意義詳解',
+                description: '表示變化的結果。意思是「變成...」、「到了...」。\n特別常見於時間、季節的變化。',
+                examples: [
+                    { japanese: '春になりました。', chinese: '到了春天 (變成春天了)。' },
+                    { japanese: '20歳になりました。', chinese: '滿20歲了。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n5_q_ninaru_1',
+                sentence: '部屋が（　）なりました。',
+                options: ['きれいに', 'きれい', 'きれいく', 'きれいで'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「きれいに」正確！な形容詞 + になる。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_ndesu: {
+        id: 'n5_ndesu',
+        pattern: 'んです',
+        connection: '',
+        translation: '是...的',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '強調/解釋說明',
+                description: '用於強調理由、解釋情況或尋求說明。',
+                examples: [
+                    { japanese: 'どうしたんですか。', chinese: '怎麼了嗎？（尋求說明）' },
+                    { japanese: '頭が痛いんです。', chinese: '頭很痛。（解釋原因）' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_ndesu_1',
+                sentence: 'どうして食べない（　）ですか。',
+                options: ['ん', 'の', 'こと', 'もの'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「ん」正確！口語中用「ん」代替「の」。',
+                    wrong: [
+                        '「の」是書面語，口語常用「ん」。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_ne: {
+        id: 'n5_ne',
+        pattern: 'ね',
+        connection: '',
+        translation: '呢; 吧',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '尋求同意/確認',
+                description: '接在句尾，表示希望對方同意或確認事實。',
+                examples: [
+                    { japanese: 'いい天気ですね。', chinese: '天氣真好呢。' },
+                    { japanese: 'そうですね。', chinese: '是啊。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_ne_1',
+                sentence: 'きれいな花です（　）。',
+                options: ['ね', 'よ', 'か', 'わ'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「ね」正確！表示尋求共鳴「真漂亮的花呢」。',
+                    wrong: [
+                        '其他語氣不同。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_ni: {
+        id: 'n5_ni',
+        pattern: 'に',
+        connection: '',
+        translation: '在; 往; 於',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '存在的場所',
+                description: '與「います/あります」連用，表示人或物存在的地點。',
+                examples: [
+                    { japanese: '部屋に猫がいます。', chinese: '房間裡有貓。' },
+                    { japanese: '机の上に本があります。', chinese: '桌上有書。' },
+                ]
+            },
+            {
+                usageId: 2,
+                title: '時間點',
+                description: '表示動作發生的具體時間。',
+                examples: [
+                    { japanese: '朝6時に起きます。', chinese: '早上6點起床。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_ni_1',
+                sentence: '日曜日（　）テニスをします。',
+                options: ['に', 'で', 'を', 'が'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「に」正確！特定時間點用「に」。',
+                    wrong: [
+                        '其他助詞用法不同。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_no: {
+        id: 'n5_no',
+        pattern: 'の',
+        connection: '',
+        translation: '的',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '所有格（的）',
+                description: '連接兩個名詞，表示所屬關係。',
+                examples: [
+                    { japanese: '私の本。', chinese: '我的書。' },
+                    { japanese: '日本語の先生。', chinese: '日語老師（日語的老師）。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_no_1',
+                sentence: 'これ（　）誰のカバンですか。',
+                options: ['は', 'の', 'が', 'を'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「は」正確！這題要注意主語。「これは」=這是。但如果問「誰の」的「の」才是題目考點。',
+                    wrong: [
+                        '這題題目挖空是主語位置。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_no_desu: {
+        id: 'n5_no_desu',
+        pattern: 'のです',
+        connection: '',
+        translation: '是...的',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '解釋說明（書面）',
+                description: '「のです」是「んです」的書面/正式形式。',
+                examples: [
+                    { japanese: '彼が犯人なのです。', chinese: '他就是犯人。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_nodesu_1',
+                sentence: '行く（　）ですか。',
+                options: ['の', 'ん', 'こと', 'もの'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「の」正確！「行くのですか」是正式問句。',
+                    wrong: [
+                        '「ん」是口語。'
+                    ]
+                }
+            },
+        ]
+    },
+});
+
+
+// ===== Batch 3 Part 3: no_ga_jouzu - yo (FINISH) =====
+Object.assign(n5Details, {
+    n5_no_ga_jouzu: {
+        id: 'n5_no_ga_jouzu',
+        pattern: 'のが上手',
+        connection: '',
+        translation: '擅長做...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '擅長...',
+                description: '接在動詞辭書形後面，表示擅長做該動作。',
+                examples: [
+                    { japanese: '彼は歌うのが上⼿です。', chinese: '他很擅長唱歌。' },
+                    { japanese: '日本語を話すのが上手ですね。', chinese: '日語說得很棒呢。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_nogajouzu_1',
+                sentence: '彼女はピアノを（　）のが上手です。',
+                options: ['弾く', '弾き', '弾いて', '弾いた'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「弾く」正確！動詞辭書形 + のが上手。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_no_ga_suki: {
+        id: 'n5_no_ga_suki',
+        pattern: 'のが好き',
+        connection: '',
+        translation: '喜歡做...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '喜歡做...',
+                description: '接在動詞辭書形後面，表示喜歡做該動作。',
+                examples: [
+                    { japanese: '私は音楽を聞くのが好きです。', chinese: '我喜歡聽音樂。' },
+                    { japanese: '本を読むのが好きです。', chinese: '喜歡讀書。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_nogasuki_1',
+                sentence: 'アニメを（　）のが好きです。',
+                options: ['見る', '見り', '見て', '見た'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「見る」正確！動詞辭書形 + のが好き。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_no_naka_de: {
+        id: 'n5_no_naka_de',
+        pattern: 'の中で',
+        connection: '',
+        translation: '在...之中',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '範圍（在...之中）',
+                description: '表示比較的範圍。常用於最高級比較。',
+                examples: [
+                    { japanese: 'スポーツの中でサッカーが一番好きです。', chinese: '運動之中最喜歡足球。' },
+                    { japanese: '果物の中で何が好きですか。', chinese: '水果之中喜歡什麼？' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_nonakade_1',
+                sentence: '日本料理（　）寿司が一番好きです。',
+                options: ['の中で', 'で', 'より', 'から'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「の中で」正確！表示範圍。',
+                    wrong: [
+                        '其他選項文意不符。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_no_naka_de_a_ga_ichiban: {
+        id: 'n5_no_naka_de_a_ga_ichiban',
+        pattern: 'の中で[A]が一番',
+        connection: '',
+        translation: '在...之中[A]最...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '最高級比較',
+                description: '表示在某個範圍內，A是程度最高的。',
+                examples: [
+                    { japanese: 'クラスの中で彼が一番背が高いです。', chinese: '班上他個子最高。' },
+                    { japanese: '一週間の中で金曜日が一番好きです。', chinese: '一週之中最喜歡星期五。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_nonakadeichiban_1',
+                sentence: '季節の中で（　）が一番好きですか。',
+                options: ['いつ', 'どこ', 'だれ', 'なに'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「いつ」正確！季節是時間，用「いつ」。',
+                    wrong: [
+                        '其他疑問詞不符。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_node: {
+        id: 'n5_node',
+        pattern: 'ので',
+        connection: '',
+        translation: '因為',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '原因/理由（客觀）',
+                description: '比「から」語氣更委婉、客觀。常用於請求許可或陳述客觀事實。',
+                examples: [
+                    { japanese: 'バスが遅れたので、遅刻しました。', chinese: '因為公車晚點，所以遲到了。' },
+                    { japanese: '頭が痛いので、帰ってもいいですか。', chinese: '因為頭痛，可以回去嗎。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_node_1',
+                sentence: '用事が（　）ので、先に失礼します。',
+                options: ['ある', 'あって', 'あり', 'あった'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「ある」正確！普通形 + ので。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_o_go: {
+        id: 'n5_o_go',
+        pattern: 'お / ご',
+        connection: '',
+        translation: '美化語 (敬語前綴)',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '美化語',
+                description: '接在名詞前，表示禮貌或尊敬。「お」通常接和語詞，「ご」通常接漢語詞。',
+                examples: [
+                    { japanese: 'お酒', chinese: '酒' },
+                    { japanese: 'お金', chinese: '錢' },
+                    { japanese: 'ご家族', chinese: '家人' },
+                    { japanese: 'ご住所', chinese: '地址' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_ogo_1',
+                sentence: '（　）名前は何ですか。',
+                options: ['お', 'ご', 'み', '高'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「お」正確！「お名前」。',
+                    wrong: [
+                        '名前是和語詞，用「お」。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_o_wo: {
+        id: 'n5_o_wo',
+        pattern: 'を',
+        connection: '',
+        translation: '賓語助詞',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '賓語標記',
+                description: '表示動作的對象（受詞）。',
+                examples: [
+                    { japanese: 'ご飯を食べます。', chinese: '吃飯。' },
+                    { japanese: '日本語を勉強します。', chinese: '學日語。' },
+                ]
+            },
+            {
+                usageId: 2,
+                title: '移動場所',
+                description: '表示移動動作經過的場所（離開、通過）。',
+                examples: [
+                    { japanese: 'バスを降ります。', chinese: '下公車。' },
+                    { japanese: '公園を散歩します。', chinese: '在公園散步。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_o_1',
+                sentence: '道を（　）ます。',
+                options: ['渡り', '渡る', '渡って', '渡った'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「渡り」正確！「道を渡ります」=過馬路。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_o_kudasai: {
+        id: 'n5_o_kudasai',
+        pattern: 'をください',
+        connection: '',
+        translation: '請給我...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '請求（請給我...）',
+                description: '在商店買東西或點餐時使用。',
+                examples: [
+                    { japanese: '水をください。', chinese: '請給我水。' },
+                    { japanese: 'これをください。', chinese: '請給我這個。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_okudasai_1',
+                sentence: 'コーヒー（　）ください。',
+                options: ['を', 'が', 'は', 'に'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「を」正確！「名詞 + をください」。',
+                    wrong: [
+                        '助詞錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_tai: {
+        id: 'n5_tai',
+        pattern: 'たい',
+        connection: '',
+        translation: '想要做...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '願望（想做...）',
+                description: '接在動詞ます形（去ます）後面，表示說話者的願望。',
+                examples: [
+                    { japanese: '日本へ行きたいです。', chinese: '想去日本。' },
+                    { japanese: '水が飲みたい。', chinese: '想喝水。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_tai_1',
+                sentence: 'テレビを（　）たいです。',
+                options: ['見', '見る', '見て', '見た'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「見」正確！見ます -> 見たい。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_toki: {
+        id: 'n5_toki',
+        pattern: 'とき',
+        connection: '',
+        translation: '...的時候',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '時間（...的時候）',
+                description: '表示做某動作的時候或某狀態的時候。',
+                examples: [
+                    { japanese: '寝るとき、電気を消します。', chinese: '睡覺時會關燈。' },
+                    { japanese: '子供のとき、よく川で遊びました。', chinese: '小時候常在河邊玩。' },
+                    { japanese: '暇なとき、ゲームをします。', chinese: '有空時玩遊戲。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_toki_1',
+                sentence: '図書館へ（　）とき、カードを持って行きます。',
+                options: ['行く', '行って', '行った', '行かない'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「行く」正確！「行くとき」=去的時候（還沒到）。',
+                    wrong: [
+                        '「行ったとき」=去到之後。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_totemo: {
+        id: 'n5_totemo',
+        pattern: 'とても',
+        connection: '',
+        translation: '非常',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '程度（非常）',
+                description: '修飾形容詞，表示程度很高。',
+                examples: [
+                    { japanese: 'とても美味しいです。', chinese: '非常好吃。' },
+                    { japanese: '今日はとても暑いです。', chinese: '今天非常熱。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_totemo_1',
+                sentence: 'この映画は（　）面白かったです。',
+                options: ['とても', 'あまり', '全然', 'ちょっと'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「とても」正確！修飾肯定形。',
+                    wrong: [
+                        '「あまり」「全然」通常接否定。'
+                    ]
+                }
+            },
+        ]
+    },
+    n5_yo: {
+        id: 'n5_yo',
+        pattern: 'よ',
+        connection: '',
+        translation: '喔 (告知)',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '告知/強調',
+                description: '放在句尾，用於告訴對方不知道的訊息或強調自己的主張。',
+                examples: [
+                    { japanese: '明日、テストですよ。', chinese: '明天有考試喔。' },
+                    { japanese: '違いますよ。', chinese: '不對喔。' },
+                    { japanese: 'あそこに猫がいるよ。', chinese: '那裡有貓喔。' },
+                ]
+            },
+        ],
+        quiz: [
+            {
+                id: 'n5_q_yo_1',
+                sentence: 'その店は（　）よ。',
+                options: ['休みだ', '休み', '休みの', '休みで'],
+                correctIndex: 0,
+                explanation: {
+                    correct: '「休みだ」正確！普通形 + よ。',
+                    wrong: [
+                        '接續錯誤。'
+                    ]
+                }
+            },
+        ]
+    },
+
+    'n5_pdf_auto_2': {
+        id: 'n5_pdf_auto_2',
+        pattern: 'か〜か',
+        connection: '',
+        translation: '...或者...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '...或者...',
+                examples: [
+                    { japanese: '明⽇は⾬かどうか分からない。', chinese: '不知道明天會不會下雨。' },
+                    { japanese: 'お茶かコーヒーが飲みたい。', chinese: '想喝茶或咖啡。' },
+                    { japanese: '当たるかはずれるか。', chinese: '是中還是不中（看運氣）。' },
+                    { japanese: 'やるかやらないか早く決めてください。', chinese: '做還是不做，請快點決定。' },
+                    { japanese: '来週の⽉曜⽇か⽕曜⽇に京都に⾏きます。', chinese: '下週一或週二要去京都。' },
+                    { japanese: '死ぬか⽣きるか。', chinese: '是死是活。' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_4': {
+        id: 'n5_pdf_auto_4',
+        pattern: '⽅',
+        connection: '',
+        translation: '...的方法',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '...的方法',
+                examples: [
+                    { japanese: 'パソコンの使いかたがわかりません。', chinese: '不知道電腦的使用方法。' },
+                    { japanese: 'ケーキの作り⽅を知っていますか︖', chinese: '你知道蛋糕的做法嗎？' },
+                    { japanese: 'おはしの使い⽅が上⼿ですね。', chinese: '你筷子用得很棒呢。' },
+                    { japanese: 'あの先⽣の教え⽅ はとてもわかりやすいです。', chinese: '那位老師的教法很容易懂。' },
+                    { japanese: '彼の⽣き⽅は、かっこいいです。', chinese: '他的生活方式很帥氣。' },
+                    { japanese: 'この漢字の読み⽅ を教えてください。', chinese: '請教我這個漢字的唸法。' },
+                    { japanese: 'ATMの使い⽅を教えていただけませんか。', chinese: '可以教我ATM的使用方法嗎？' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_10': {
+        id: 'n5_pdf_auto_10',
+        pattern: '前に',
+        connection: '',
+        translation: '在...之前; 在...前面',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '在...之前; 在...前面',
+                examples: [
+                    { japanese: 'ドアを開ける前にノックぐらいしてください。', chinese: '開門前請至少敲個門。' },
+                    { japanese: 'コンビニの前にじてんしゃがたくさんあります。', chinese: '便利商店前面有很多腳踏車。' },
+                    { japanese: '旅⾏の前に切符を買っておきます。', chinese: '旅行前先買好票。' },
+                    { japanese: 'ご飯の前に⼿を洗いましょう。', chinese: '飯前洗手吧。' },
+                    { japanese: 'テストの前に⼀⽣懸命勉強しました。', chinese: '考試前拚命念書了。' },
+                    { japanese: '⼤学を卒業する前に留学したいな。', chinese: '想在大學畢業前去留學啊。' },
+                    { japanese: '23時前に寝なければなりません。', chinese: '必須在23點前睡覺。' },
+                    { japanese: '寝る前に、⻭みがきを忘すれないでね。', chinese: '睡前別忘了刷牙喔。' },
+                    { japanese: '試合の前にまだ⼀週間があるのでもっと練習しょう。', chinese: '比賽前還有一週，多練習吧。' },
+                    { japanese: '私たちの学校の前には美しい公園があります。', chinese: '我們學校前面有一座美麗的公園。' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_19': {
+        id: 'n5_pdf_auto_19',
+        pattern: 'なくてもいい',
+        connection: '',
+        translation: '不...也可以; 沒關係',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '不...也可以; 沒關係',
+                examples: [
+                    { japanese: '明⽇は休みだから、学校に⾏かなくてもいい 。', chinese: '明天休假，所以不用去學校也可以。' },
+                    { japanese: '空港まで来なくてもいいよ。', chinese: '你不用特地來機場也可以喔。' },
+                    { japanese: '好きじゃないなら、⾷べ なくてもいいですよ。', chinese: '不喜歡的話，不吃也沒關係喔。' },
+                    { japanese: '来なくてもいいですよ。私⼀⼈で⾏くから。', chinese: '不來也可以喔。因為我一個人去。' },
+                    { japanese: '無理しなくてもいい ですよ。', chinese: '不需要勉強自己喔。' },
+                    { japanese: '明⽇は授業がないから⼤学に⾏か なくてもいいです。', chinese: '明天沒課，所以不用去大學也可以。' },
+                    { japanese: '時間がまだいっぱいあるから、そんなに急がなくていい よ。', chinese: '時間還很多，不用那麼趕也可以喔。' },
+                    { japanese: '外⾷しなくていい よ。家で⾷べましょう。', chinese: '不用出去吃也可以喔。在家吃吧。' },
+                    { japanese: 'その本はあげるよ，返してくれなくてもいい からね。', chinese: '那本書送你，不用還我也可以喔。' },
+                    { japanese: '⼩学⽣以下はお⾦を払わ なくてもいいです。', chinese: '小學生以下不用付錢。' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_20': {
+        id: 'n5_pdf_auto_20',
+        pattern: 'なくちゃ',
+        connection: '',
+        translation: '必須... (口語)',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '必須... (口語)',
+                examples: [
+                    { japanese: '⾏かなくちゃ。', chinese: '得走了。' },
+                    { japanese: 'もう寝なくちゃ。', chinese: '得睡了。' },
+                    { japanese: '新しい⾞を買わなくちゃね。', chinese: '得買新車了呢。' },
+                    { japanese: 'よく考えなくちゃダメ だよ。', chinese: '得好好思考才行喔。' },
+                    { japanese: '君でなくちゃダメ なんだ。', chinese: '非你不可。' },
+                    { japanese: '彼は返さなくちゃいけない借⾦がある', chinese: '他有必須償還的債務。' },
+                    { japanese: 'なんで僕がやらなくちゃいけないの。', chinese: '為什麼我非做不可？' },
+                    { japanese: 'すぐに警察に連絡しなくちゃいけません。', chinese: '必須馬上聯絡警察。' },
+                    { japanese: '世話しなくちゃならない⼦供がいる。', chinese: '我有必須照顧的孩子。' },
+                    { japanese: 'ごめんなさい。早く帰ら なくちゃなりません。', chinese: '對不起。必須早點回去。' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_21': {
+        id: 'n5_pdf_auto_21',
+        pattern: 'なくてはいけない',
+        connection: '',
+        translation: '必須...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '必須...',
+                examples: [
+                    { japanese: '本当にすぐ⾏かなくてはいけない。', chinese: '真的必須馬上走了。' },
+                    { japanese: '急がなくてはいけない。', chinese: '必須趕快才行。' },
+                    { japanese: 'もう10時だ。寝なくてはいけない。', chinese: '已經10點了。必須睡了。' },
+                    { japanese: '⽇本語をもっと勉強し なくてはいけない。', chinese: '必須更努力學日語。' },
+                    { japanese: '花の⽔やりをしなくてはいけません。', chinese: '必須給花澆水。' },
+                    { japanese: '明⽇、早く起きなくてはいけません。', chinese: '明天必須早起。' },
+                    { japanese: '野菜を⾷べなくてはいけませんよ。', chinese: '必須吃蔬菜喔。' },
+                    { japanese: 'JLPTを受けなくてはいけません。', chinese: '必須參加JLPT考試。' },
+                    { japanese: 'もう帰らなくてはいけません。', chinese: '已經必須回去了。' },
+                    { japanese: '⽇本語⼒を上達させなくてはいけません。', chinese: '必須讓日語能力進步。' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_22': {
+        id: 'n5_pdf_auto_22',
+        pattern: 'なくてはならない',
+        connection: '',
+        translation: '必須... (正式)',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '必須... (正式)',
+                examples: [
+                    { japanese: '急がなくてはならない。', chinese: '必須趕快才行。' },
+                    { japanese: '本当にすぐ⾏かなくてはならない。', chinese: '真的必須馬上走了。' },
+                    { japanese: 'もう10時だ。寝なくてはならない。', chinese: '已經10點了。必須睡了。' },
+                    { japanese: '⽇本語をもっと勉強し なくてはいけない。', chinese: '必須更努力學日語。' },
+                    { japanese: '花の⽔やりをしなくてはなりません。', chinese: '必須給花澆水。' },
+                    { japanese: '明⽇、早く起きなくてはなりません。', chinese: '明天必須早起。' },
+                    { japanese: '野菜を⾷べなくてはなりませんよ。', chinese: '必須吃蔬菜喔。' },
+                    { japanese: '⽇本語能⼒試験を受け なくてはなりません。', chinese: '必須參加日語能力試驗。' },
+                    { japanese: 'もう帰らなくてはなりません。', chinese: '已經必須回去了。' },
+                    { japanese: '⽇本語⼒を上達させなくてはなりません。', chinese: '必須讓日語能力進步。' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_23': {
+        id: 'n5_pdf_auto_23',
+        pattern: 'になる',
+        connection: '',
+        translation: '變成...; 成為...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '變成...; 成為...',
+                examples: [
+                    { japanese: '⼤きくなっている ね︕', chinese: '變大了呢！' },
+                    { japanese: '今⽇は暑くなるようだ。', chinese: '今天似乎會變熱。' },
+                    { japanese: '今年、私は２０歳になります 。', chinese: '我今年要20歲了。' },
+                    { japanese: '暗くなる前に家に帰りたい。', chinese: '想在變暗前回家。' },
+                    { japanese: 'もっと強くなるために、毎⽇運動しています。', chinese: '為了變得更強，每天都在運動。' },
+                    { japanese: '⽇本語が上⼿になっていますね。', chinese: '日語變好了呢。' },
+                    { japanese: '将来、何になりたい ですか。', chinese: '將來想成為什麼（職業）？' },
+                    { japanese: '６⽉に⼊って、ちょっと暑くなったね。', chinese: '進入6月，稍微變熱了呢。' },
+                    { japanese: '暗くなってきましたね。そろそろ帰りましょうか。', chinese: '變暗了呢。差不多該回去了吧？' },
+                    { japanese: '今⽇のイベントは中⽌ になりました。', chinese: '今天的活動中止了。' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_24': {
+        id: 'n5_pdf_auto_24',
+        pattern: 'んです',
+        connection: '',
+        translation: '是...的 (強調說明)',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '是...的 (強調說明)',
+                examples: [
+                    { japanese: '何を飲みたいんですか。', chinese: '你想喝什麼？' },
+                    { japanese: 'お茶を飲みたいんです。', chinese: '我想喝茶。' },
+                    { japanese: '眠くないんですか。', chinese: '你不睏嗎？' },
+                    { japanese: '気分が良くないんですよ。', chinese: '我身體不太舒服。' },
+                    { japanese: '今からバイトに⾏くんだ。', chinese: '我現在要去打工。' },
+                    { japanese: '朝に弱いんだ。', chinese: '我早上起不來（不擅長早起）。' },
+                    { japanese: 'いつか⽇本に⾏くんだ︕', chinese: '總有一天要去日本！' },
+                    { japanese: '買いたいんですがお⾦がない んだ。', chinese: '想買是想買，但沒錢啊。' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_26': {
+        id: 'n5_pdf_auto_26',
+        pattern: 'に',
+        connection: '',
+        translation: '在; 往; 於',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '在; 往; 於',
+                examples: [
+                    { japanese: '来⽉⼤学に⼊る。', chinese: '下個月進大學。' },
+                    { japanese: 'どうやって学校に 通っていますか︖', chinese: '你怎麼去學校的？' },
+                    { japanese: 'あなたは何時にスーパーに⾏きますか︖', chinese: '你幾點去超市？' },
+                    { japanese: '彼は、⼤学に⼊るための努⼒をしている。', chinese: '他正在為了進大學而努力。' },
+                    { japanese: '⽇本に来たことはありますか︖', chinese: '你有來過日本嗎？' },
+                    { japanese: 'あの⽊の下に⼤きな⽝がいます。', chinese: '那棵樹下有一隻大狗。' },
+                    { japanese: '今家の中にいますよ。', chinese: '現在在家裡喔。' },
+                    { japanese: 'ここにお名前を書いてください。', chinese: '請在這裡寫名字。' },
+                    { japanese: 'アメリカにはどのくらい滞在しますか︖', chinese: '會在美國待多久？' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_27': {
+        id: 'n5_pdf_auto_27',
+        pattern: 'に行く',
+        connection: '',
+        translation: '去做... (移動目的)',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '去做... (移動目的)',
+                examples: [
+                    { japanese: '友だちの家に遊びに⾏く。', chinese: '去朋友家玩。' },
+                    { japanese: '⽇本に勉強しに⾏くつもりなのです。', chinese: '打算去日本唸書。' },
+                    { japanese: '東京へなにしに⾏くの︖', chinese: '去東京做什麼？' },
+                    { japanese: '私たちは公園にサッカーをしに⾏くつもりだ。', chinese: '我們打算去公園踢足球。' },
+                    { japanese: 'メキシコへ友だちに会い に⾏きます。', chinese: '去墨西哥見朋友。' },
+                    { japanese: 'ちょっと⾛りに⾏ってきます。', chinese: '稍微去跑個步。' },
+                    { japanese: '明⽇、友⼈と⼀緒に⽇本⾷を⾷べ に⾏きます。', chinese: '明天要跟朋友一起去吃日本料理。' },
+                    { japanese: '私は今度はベトナムへ旅⾏しに⾏きます 。', chinese: '我下次要去越南旅行。' },
+                    { japanese: 'ゴミを捨てに⾏きます。', chinese: '去倒垃圾。' },
+                    { japanese: '今夜ラーメンを⾷べに⾏きましょう︕', chinese: '今晚去吃拉麵吧！' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_28': {
+        id: 'n5_pdf_auto_28',
+        pattern: 'にする',
+        connection: '',
+        translation: '決定是...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '決定是...',
+                examples: [
+                    { japanese: 'どれにする?', chinese: '要哪個？' },
+                    { japanese: '飲み物は何にする︖', chinese: '飲料要什麼？' },
+                    { japanese: 'お茶にする。', chinese: '我要茶。' },
+                    { japanese: '私は明⽇と来週の⽕曜⽇を休みにする。', chinese: '我明天和下週二休假。' },
+                    { japanese: 'これにします。', chinese: '我要這個。' },
+                    { japanese: '今⽇は部屋をきれいにします。', chinese: '今天要把房間弄乾淨。' },
+                    { japanese: '君を幸せにします。', chinese: '我會讓你幸福。' },
+                    { japanese: '紅茶にしますかそれともコーヒー にしますか。', chinese: '要紅茶還是咖啡？' },
+                    { japanese: '今年は素晴しい年にします︕', chinese: '今年要是個精彩的一年！' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_29': {
+        id: 'n5_pdf_auto_29',
+        pattern: 'の',
+        connection: '',
+        translation: '的; 關於',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '的; 關於',
+                examples: [
+                    { japanese: 'あなたの名前は何ですか︖', chinese: '你的名字是什麼？' },
+                    { japanese: 'あなたの⽝ですか︖', chinese: '是你的狗嗎？' },
+                    { japanese: 'これはだれのカバンですか︖', chinese: '這是誰的包包？' },
+                    { japanese: '私の先⽣はとてもいい先⽣だ。', chinese: '我的老師是非常好的老師。' },
+                    { japanese: '彼⽒の好きな料理はカレーです。', chinese: '男朋友喜歡的菜是咖哩。' },
+                    { japanese: '彼⼥のお⽗さんはとても怖いです。', chinese: '女朋友的父親很可怕。' },
+                    { japanese: '私の⼀番好きな季節は秋だ。', chinese: '我最喜歡的季節是秋天。' },
+                    { japanese: 'このカメラは私の ではなく、友だちの です。', chinese: '這個相機不是我的，是朋友的。' },
+                    { japanese: '夏の暑さのせいで私は寝不⾜です。', chinese: '因為夏天的炎熱，我睡眠不足。' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_30': {
+        id: 'n5_pdf_auto_30',
+        pattern: 'のです',
+        connection: '',
+        translation: '是...的 (解釋說明)',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '是...的 (解釋說明)',
+                examples: [
+                    { japanese: 'どこへ⾏きたいのですか。', chinese: '你想去哪裡？' },
+                    { japanese: 'どう違うのだ。', chinese: '有什麼不同？' },
+                    { japanese: '何を⾔いたいのですか。', chinese: '你想說什麼？' },
+                    { japanese: 'あなたは優しいのですね。', chinese: '你很溫柔呢。' },
+                    { japanese: '昼ごはんを⾷べなかった のですね。', chinese: '你沒吃午餐對吧。' },
+                    { japanese: '今⽇は学校に⾏くのですね。', chinese: '今天要去學校對吧。' },
+                    { japanese: 'あなたが悪いのだ。', chinese: '是你的錯。' },
+                    { japanese: '⾷べるために⽣きるのではない。⽣きるために⾷べるのだ。', chinese: '不是為了吃而活。是為了活而吃。' }
+                ]
+            }
+        ],
+        quiz: []
+    },
+    'n5_pdf_auto_31': {
+        id: 'n5_pdf_auto_31',
+        pattern: 'のが下手',
+        connection: '',
+        translation: '不擅長做...',
+        level: 'N5',
+        explanation: [
+            {
+                usageId: 1,
+                title: '基本用法',
+                description: '不擅長做...',
+                examples: [
+                    { japanese: '彼はおはしを使うのが下⼿だ。', chinese: '他不擅長用筷子。' },
+                    { japanese: '⺟は料理をするのが下⼿だ。', chinese: '母親不擅長做飯。' },
+                    { japanese: '私は⼈としゃべるのが下⼿だ。', chinese: '我不擅長跟人交談。' }
+                ]
+            }
+        ],
+        quiz: []
     },
 });
