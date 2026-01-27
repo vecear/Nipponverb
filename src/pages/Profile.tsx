@@ -7,6 +7,7 @@ import { X, Mail, Lock, Link as LinkIcon, AlertCircle, CheckCircle, Edit2, Save 
 import { useUserStore } from '../store/useUserStore'
 import { updateUserProfile } from '../services/userService'
 import { usePracticeStore } from '../store/usePracticeStore'
+import { useGrammarCompletionStore } from '../store/useGrammarCompletionStore'
 import ExpBar from '../components/ExpBar'
 import { getJobById, getCharacterImagePath } from '../data/jobs'
 import { EXP_CONSTANTS, DEFAULT_PROGRESSION } from '../types/progression'
@@ -18,6 +19,10 @@ const Profile = () => {
   const { currentUser, updateUserEmail, updateUserPassword, linkGoogleAccount, reauthenticate } = useAuth()
   const { profile, updateProfile } = useUserStore()
   const { getHistoryByCategory } = usePracticeStore()
+  const { completions } = useGrammarCompletionStore()
+
+  // 計算已完成的文法數量
+  const grammarCompletedCount = Object.keys(completions).length
 
   // 積分系統資料
   const progression = profile?.progression || DEFAULT_PROGRESSION
@@ -176,27 +181,21 @@ const Profile = () => {
       </div>
 
       {/* 積分系統區塊 - 浮世繪風格 */}
-      <div className="card mb-4 sm:mb-6 md:mb-8 !p-0 overflow-hidden border-0 bg-transparent">
-        <div className="bg-wave-deep text-white p-3 sm:p-6 md:p-8 rounded-none relative overflow-hidden shadow-ukiyo-lg border-2 border-wave-deep-dark">
-          {/* Background decoration - 波浪紋理 */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-wave-light/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-sky/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
-
-          <div className="flex items-center justify-between mb-3 sm:mb-6 relative z-10">
-            <h2 className="text-base sm:text-xl md:text-2xl font-zen font-bold text-white border-b-2 border-foam/30 pb-1">
-              {t('progression.title', '冒險進度')}
-            </h2>
-            {job && (
-              <div className={`px-2 py-1 sm:px-4 sm:py-2 border border-foam/30 bg-wave-mid/30 backdrop-blur-sm flex items-center gap-1 sm:gap-2 shadow-sm`}>
-                <span className="text-base sm:text-xl">{job.icon}</span>
-                <span className="font-bold text-white text-xs sm:text-base">{job.nameTw}</span>
-              </div>
-            )}
-          </div>
-
-          {/* 經驗值條 */}
-          <ExpBar progression={progression} gender={gender} showTitle={true} size="lg" theme="dark" />
+      <div className="card mb-4 sm:mb-6 md:mb-8 p-3 sm:p-6 md:p-8">
+        <div className="flex items-center justify-between mb-3 sm:mb-6">
+          <h2 className="text-base sm:text-xl md:text-2xl font-zen font-bold text-wave-deep border-b-2 border-wave-mid/30 pb-1">
+            {t('progression.title', '冒險進度')}
+          </h2>
+          {job && (
+            <div className={`px-2 py-1 sm:px-4 sm:py-2 border border-wave-deep/30 bg-foam flex items-center gap-1 sm:gap-2 shadow-sm`}>
+              <span className="text-base sm:text-xl">{job.icon}</span>
+              <span className="font-bold text-wave-deep text-xs sm:text-base">{job.nameTw}</span>
+            </div>
+          )}
         </div>
+
+        {/* 經驗值條 */}
+        <ExpBar progression={progression} gender={gender} showTitle={true} size="lg" />
 
         {/* 轉職提示 */}
         {needsJobSelection && (
@@ -463,41 +462,72 @@ const Profile = () => {
         <h2 className="text-lg sm:text-2xl font-zen font-bold mb-3 sm:mb-6 text-wave-deep border-b-2 border-wave-mid/20 pb-2">{t('profile.learningProgress')}</h2>
 
         <div className="space-y-3 sm:space-y-6">
+          {/* 常用動詞 */}
           <div>
             <div className="flex justify-between mb-1 sm:mb-2">
-              <span className="font-semibold text-wave-deep text-xs sm:text-sm md:text-base">{t('profile.progress.verbs')}</span>
-              <span className="text-sumi-faded text-xs sm:text-sm">{verbsLearned}/200</span>
+              <span className="font-semibold text-wave-deep text-xs sm:text-sm md:text-base">{t('nav.verbs')}</span>
+              <span className="text-sumi-faded text-xs sm:text-sm">{verbsLearned}/121</span>
             </div>
             <div className="progress-bar progress-bar-vermilion">
               <div
                 className="progress-bar-fill"
-                style={{ width: `${Math.min((verbsLearned / 200) * 100, 100)}%` }}
+                style={{ width: `${Math.min((verbsLearned / 121) * 100, 100)}%` }}
               />
             </div>
           </div>
 
+          {/* 單字 */}
           <div>
             <div className="flex justify-between mb-1 sm:mb-2">
-              <span className="font-semibold text-wave-deep text-xs sm:text-sm md:text-base">{t('profile.progress.kanji')}</span>
-              <span className="text-sumi-faded text-xs sm:text-sm">{kanjiLearned}/1000</span>
+              <span className="font-semibold text-wave-deep text-xs sm:text-sm md:text-base">{t('nav.vocabulary')}</span>
+              <span className="text-sumi-faded text-xs sm:text-sm">0/1111</span>
             </div>
             <div className="progress-bar">
               <div
                 className="progress-bar-fill"
-                style={{ width: `${Math.min((kanjiLearned / 1000) * 100, 100)}%` }}
+                style={{ width: '0%' }}
               />
             </div>
           </div>
 
+          {/* 文法 */}
           <div>
             <div className="flex justify-between mb-1 sm:mb-2">
-              <span className="font-semibold text-wave-deep text-xs sm:text-sm md:text-base">{t('profile.progress.grammar')}</span>
-              <span className="text-sumi-faded text-xs sm:text-sm">{grammarLearned}/80</span>
+              <span className="font-semibold text-wave-deep text-xs sm:text-sm md:text-base">{t('nav.grammar')}</span>
+              <span className="text-sumi-faded text-xs sm:text-sm">{grammarCompletedCount}/1167</span>
             </div>
             <div className="progress-bar">
               <div
                 className="progress-bar-fill bg-pine"
-                style={{ width: `${Math.min((grammarLearned / 80) * 100, 100)}%` }}
+                style={{ width: `${Math.min((grammarCompletedCount / 1167) * 100, 100)}%` }}
+              />
+            </div>
+          </div>
+
+          {/* 慣用語 */}
+          <div>
+            <div className="flex justify-between mb-1 sm:mb-2">
+              <span className="font-semibold text-wave-deep text-xs sm:text-sm md:text-base">{t('nav.idioms')}</span>
+              <span className="text-sumi-faded text-xs sm:text-sm">0/6</span>
+            </div>
+            <div className="progress-bar">
+              <div
+                className="progress-bar-fill bg-sky"
+                style={{ width: '0%' }}
+              />
+            </div>
+          </div>
+
+          {/* 日期及數量詞 */}
+          <div>
+            <div className="flex justify-between mb-1 sm:mb-2">
+              <span className="font-semibold text-wave-deep text-xs sm:text-sm md:text-base">{t('nav.dateAndCounters')}</span>
+              <span className="text-sumi-faded text-xs sm:text-sm">0/0</span>
+            </div>
+            <div className="progress-bar">
+              <div
+                className="progress-bar-fill bg-ochre"
+                style={{ width: '0%' }}
               />
             </div>
           </div>

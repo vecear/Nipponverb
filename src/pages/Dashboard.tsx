@@ -112,16 +112,6 @@ const Dashboard = () => {
 
   return (
     <div className="space-y-3 sm:space-y-4 md:space-y-6">
-      {/* Hero Section - 浮世繪風格 */}
-      <div className="text-center py-1 sm:py-2 md:py-4">
-        <h1 className="text-lg sm:text-2xl md:text-4xl font-zen font-bold mb-1 sm:mb-2 text-wave-deep">
-          {t('dashboard.welcome', { name: profile?.displayName || currentUser?.displayName || 'Student' })}
-        </h1>
-        <p className="text-sm sm:text-lg md:text-xl text-sumi-light font-medium">
-          {t('dashboard.continueJourney')}
-        </p>
-      </div>
-
       {/* Game Status Section - 浮世繪風格 */}
       <div className="card p-2 sm:p-4 md:p-6">
         <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-4 md:gap-6">
