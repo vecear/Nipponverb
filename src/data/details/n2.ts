@@ -7551,5 +7551,1181 @@ export const n2Details: Record<string, GrammarPoint> = {
                 explanation: '書面の敬語。'
             }
         ]
+    },
+    'n2_roku_ni_nai': {
+        id: 'n2_roku_ni_nai',
+        pattern: 'ろくに～ない',
+        connection: 'ろくに + 動{どう}詞{し}ない形{けい}',
+        translation: '不好好地...; 沒怎麼...',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '十分でない',
+                description: '十分に行わない、またはほとんどしないことを表す。',
+                examples: [
+                    { japanese: 'ろくに勉{べん}強{きょう}しないで試{し}験{けん}を受{う}けた。', chinese: '沒怎麼讀書就去考試。' },
+                    { japanese: '忙{いそ}しくてろくに寝{ね}ていない。', chinese: '太忙幾乎沒睡。' },
+                    { japanese: 'ろくに説{せつ}明{めい}も聞{き}かずに決{き}めた。', chinese: '沒怎麼聽說明就決定了。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_roku_ni_nai_1',
+                sentence: 'ろくに勉{べん}強{きょう}しないで試{し}験{けん}を受{う}けた。',
+                options: ['ろくに', 'せいか', 'せっかく', 'せめて'],
+                correctIndex: 0,
+                explanation: '不充分的意思。'
+            },
+            {
+                id: 'n2_roku_ni_nai_2',
+                sentence: '忙{いそ}しくてろくに寝{ね}て（　）。',
+                options: ['いない', 'いる', 'いた', 'いて'],
+                correctIndex: 0,
+                explanation: '「ろくに〜ない」。'
+            },
+            {
+                id: 'n2_roku_ni_nai_3',
+                sentence: 'ろくに説{せつ}明{めい}も聞{き}か（　）決{き}めた。',
+                options: ['ずに', 'ないで', 'ないと', 'なくて'],
+                correctIndex: 0,
+                explanation: '「聞かずに」。'
+            }
+        ]
+    },
+    'n2_saiwai': {
+        id: 'n2_saiwai',
+        pattern: '幸{さい}いなことに',
+        connection: '幸{さい}いなことに + 文{ぶん}',
+        translation: '幸運的是...',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '良い結果を述べる',
+                description: '良い出来事が起きたことを伝える。',
+                examples: [
+                    { japanese: '幸{さい}いなことに、雨{あめ}は止{や}んだ。', chinese: '幸運的是，雨停了。' },
+                    { japanese: '幸{さい}いなことに、けがはなかった。', chinese: '幸運的是，沒有受傷。' },
+                    { japanese: '幸{さい}いなことに、電{でん}車{しゃ}が遅{おく}れて助{たす}かった。', chinese: '幸好電車延誤了。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_saiwai_1',
+                sentence: '幸{さい}いなことに、雨{あめ}は止{や}んだ。',
+                options: ['幸{さい}いなことに', 'せいか', 'せっかく', 'せめて'],
+                correctIndex: 0,
+                explanation: '良い結果を導入。'
+            },
+            {
+                id: 'n2_saiwai_2',
+                sentence: '幸{さい}いなことに、けがは（　）。',
+                options: ['なかった', 'あった', 'ある', 'あって'],
+                correctIndex: 0,
+                explanation: '良い結果。'
+            },
+            {
+                id: 'n2_saiwai_3',
+                sentence: '幸{さい}いなことに、電{でん}車{しゃ}が遅{おく}れて（　）。',
+                options: ['助{たす}かった', '助{たす}ける', '助{たす}かる', '助{たす}けた'],
+                correctIndex: 0,
+                explanation: '「助かった」。'
+            }
+        ]
+    },
+    'n2_saiwai_na_koto_ni': {
+        id: 'n2_saiwai_na_koto_ni',
+        pattern: '幸{さい}いなことに',
+        connection: '幸{さい}いなことに + 文{ぶん}',
+        translation: '謝天謝地; 幸好',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '幸運な状況',
+                description: '良い結果が起きたことを強調する。',
+                examples: [
+                    { japanese: '幸{さい}いなことに、間{ま}に合{あ}った。', chinese: '幸好趕上了。' },
+                    { japanese: '幸{さい}いなことに、雨{あめ}が止{や}んだ。', chinese: '幸好雨停了。' },
+                    { japanese: '幸{さい}いなことに、みんな無{ぶ}事{じ}だった。', chinese: '謝天謝地大家都平安。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_saiwai_na_koto_ni_1',
+                sentence: '幸{さい}いなことに、間{ま}に（　）。',
+                options: ['合{あ}った', '合{あ}う', '合{あ}って', '合{あ}わない'],
+                correctIndex: 0,
+                explanation: '過去の良い結果。'
+            },
+            {
+                id: 'n2_saiwai_na_koto_ni_2',
+                sentence: '幸{さい}いなことに、雨{あめ}が（　）。',
+                options: ['止{や}んだ', '止{や}む', '止{や}んで', '止{や}まない'],
+                correctIndex: 0,
+                explanation: '幸運な出来事。'
+            },
+            {
+                id: 'n2_saiwai_na_koto_ni_3',
+                sentence: '幸{さい}いなことに、みんな無{ぶ}事{じ}（　）。',
+                options: ['だった', 'だ', 'で', 'ではない'],
+                correctIndex: 0,
+                explanation: '過去の状況。'
+            }
+        ]
+    },
+    'n2_sei_ka': {
+        id: 'n2_sei_ka',
+        pattern: 'せいか',
+        connection: '普{ふ}通{つう}形{けい} + せいか',
+        translation: '也許是因為... (導致)',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '原因推測',
+                description: 'はっきりしない原因を推測して述べる。',
+                examples: [
+                    { japanese: '疲{つか}れたせいか、頭{あたま}が痛{いた}い。', chinese: '可能因為累了，頭痛。' },
+                    { japanese: '緊{きん}張{ちょう}したせいか、声{こえ}が震{ふる}える。', chinese: '可能因為緊張，聲音發抖。' },
+                    { japanese: '雨{あめ}のせいか、客{きゃく}が少{すく}ない。', chinese: '可能因為下雨，客人很少。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sei_ka_1',
+                sentence: '疲{つか}れた（　）、頭{あたま}が痛{いた}い。',
+                options: ['せいか', 'せっかく', 'せめて', 'しだい'],
+                correctIndex: 0,
+                explanation: '原因の推測。'
+            },
+            {
+                id: 'n2_sei_ka_2',
+                sentence: '緊{きん}張{ちょう}した（　）、声{こえ}が震{ふる}える。',
+                options: ['せいか', 'せっかく', 'せめて', 'しだい'],
+                correctIndex: 0,
+                explanation: '推測の原因。'
+            },
+            {
+                id: 'n2_sei_ka_3',
+                sentence: '雨{あめ}の（　）、客{きゃく}が少{すく}ない。',
+                options: ['せいか', 'せっかく', 'せめて', 'しだい'],
+                correctIndex: 0,
+                explanation: '名詞+の+せいか。'
+            }
+        ]
+    },
+    'n2_sekkaku': {
+        id: 'n2_sekkaku',
+        pattern: 'せっかく',
+        connection: 'せっかく + 文{ぶん}',
+        translation: '難得; 特意; 好不容易',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '貴重な機会',
+                description: '努力や機会が無駄になることを惜しむ。',
+                examples: [
+                    { japanese: 'せっかく来{き}たのだから、見{み}ていこう。', chinese: '難得來了就看看吧。' },
+                    { japanese: 'せっかく作{つく}ったのに、誰{だれ}も食{た}べなかった。', chinese: '好不容易做了卻沒人吃。' },
+                    { japanese: 'せっかくの休{やす}みだから、ゆっくり休{やす}む。', chinese: '難得的假期就好好休息。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sekkaku_1',
+                sentence: 'せっかく来{き}たのだから、見{み}ていこう。',
+                options: ['せっかく', 'せいか', 'せめて', 'しだい'],
+                correctIndex: 0,
+                explanation: '貴重な機会。'
+            },
+            {
+                id: 'n2_sekkaku_2',
+                sentence: 'せっかく作{つく}ったのに、誰{だれ}も（　）。',
+                options: ['食{た}べなかった', '食{た}べる', '食{た}べた', '食{た}べて'],
+                correctIndex: 0,
+                explanation: '努力が無駄。'
+            },
+            {
+                id: 'n2_sekkaku_3',
+                sentence: 'せっかくの休{やす}みだから、ゆっくり（　）。',
+                options: ['休{やす}む', '休{やす}んだ', '休{やす}んで', '休{やす}まない'],
+                correctIndex: 0,
+                explanation: '貴重な休み。'
+            }
+        ]
+    },
+    'n2_semete': {
+        id: 'n2_semete',
+        pattern: 'せめて',
+        connection: 'せめて + 文{ぶん}',
+        translation: '至少; 起碼 (願望)',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '最低限の希望',
+                description: '最低限の条件や希望を表す。',
+                examples: [
+                    { japanese: 'せめて一{いち}言{ごん}連{れん}絡{らく}してほしかった。', chinese: '至少希望你聯絡一句。' },
+                    { japanese: 'せめて今{いま}回{かい}だけは許{ゆる}して。', chinese: '至少這次請原諒。' },
+                    { japanese: 'せめて名{な}前{まえ}だけでも覚{おぼ}えてほしい。', chinese: '至少記住名字。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_semete_1',
+                sentence: 'せめて一{いち}言{ごん}連{れん}絡{らく}してほしかった。',
+                options: ['せめて', 'せいか', 'せっかく', 'しだい'],
+                correctIndex: 0,
+                explanation: '最低限の希望。'
+            },
+            {
+                id: 'n2_semete_2',
+                sentence: 'せめて今{いま}回{かい}だけは（　）。',
+                options: ['許{ゆる}して', '許{ゆる}す', '許{ゆる}した', '許{ゆる}さない'],
+                correctIndex: 0,
+                explanation: '願望の表現。'
+            },
+            {
+                id: 'n2_semete_3',
+                sentence: 'せめて名{な}前{まえ}だけでも覚{おぼ}えて（　）。',
+                options: ['ほしい', 'ほしいだ', 'ほしく', 'ほしかった'],
+                correctIndex: 0,
+                explanation: '最低限の願い。'
+            }
+        ]
+    },
+    'n2_shidai': {
+        id: 'n2_shidai',
+        pattern: '次{し}第',
+        connection: '動{どう}詞{し}ます形{けい} + 次{し}第\n名{めい}詞{し} + 次{し}第',
+        translation: '一...立刻; 全憑...而定',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '起点・順序',
+                description: '何かが起こり次第すぐに、という意味。',
+                examples: [
+                    { japanese: '準{じゅん}備{び}ができ次{し}第、出{しゅっ}発{ぱつ}します。', chinese: '準備好就出發。' },
+                    { japanese: '決{き}まり次{し}第、ご連{れん}絡{らく}します。', chinese: '一決定就聯絡。' },
+                    { japanese: '結果{けっ}果{か}次{し}第で方{ほう}針{しん}が変{か}わる。', chinese: '方針取決於結果。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_shidai_1',
+                sentence: '準{じゅん}備{び}ができ（　）、出{しゅっ}発{ぱつ}します。',
+                options: ['次{し}第', '次第に', '次第で', '次第だ'],
+                correctIndex: 0,
+                explanation: '「〜次第」= すぐに。'
+            },
+            {
+                id: 'n2_shidai_2',
+                sentence: '決{き}まり（　）、ご連{れん}絡{らく}します。',
+                options: ['次{し}第', '次第に', '次第で', '次第だ'],
+                correctIndex: 0,
+                explanation: '決まり次第。'
+            },
+            {
+                id: 'n2_shidai_3',
+                sentence: '結{けっ}果{か}（　）で方{ほう}針{しん}が変{か}わる。',
+                options: ['次{し}第', '次第に', '次第で', '次第だ'],
+                correctIndex: 2,
+                explanation: '「次第で」= によって。'
+            }
+        ]
+    },
+    'n2_shidai_1': {
+        id: 'n2_shidai_1',
+        pattern: '次{し}第',
+        connection: '動{どう}詞{し}ます形{けい} + 次{し}第\n名{めい}詞{し} + 次{し}第',
+        translation: '立刻; 視...而定',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: 'すぐに / 〜によって',
+                description: '「〜次第」= すぐに、「次第」= 〜によって。',
+                examples: [
+                    { japanese: '用{よう}意{い}でき次{し}第、お知{し}らせします。', chinese: '準備好就通知。' },
+                    { japanese: '場{ば}合{あい}次{し}第では中{ちゅう}止{し}になる。', chinese: '視情況可能中止。' },
+                    { japanese: '手{て}続{つづ}きが終{お}わり次{し}第、連{れん}絡{らく}ください。', chinese: '手續完畢就聯絡。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_shidai_1_1',
+                sentence: '用{よう}意{い}でき（　）、お知{し}らせします。',
+                options: ['次{し}第', '次第に', '次第で', '次第だ'],
+                correctIndex: 0,
+                explanation: '「〜次第」= すぐに。'
+            },
+            {
+                id: 'n2_shidai_1_2',
+                sentence: '場{ば}合{あい}（　）では中{ちゅう}止{し}になる。',
+                options: ['次{し}第', '次第に', '次第で', '次第だ'],
+                correctIndex: 0,
+                explanation: '視場合而定。'
+            },
+            {
+                id: 'n2_shidai_1_3',
+                sentence: '手{て}続{つづ}きが終{お}わり（　）、連{れん}絡{らく}ください。',
+                options: ['次{し}第', '次第に', '次第で', '次第だ'],
+                correctIndex: 0,
+                explanation: '完了後すぐ。'
+            }
+        ]
+    },
+    'n2_shidai_de': {
+        id: 'n2_shidai_de',
+        pattern: '次{し}第で',
+        connection: '名{めい}詞{し} + 次{し}第で',
+        translation: '全憑...; 取決於...',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '〜によって決まる',
+                description: '結果が条件によって変わることを示す。',
+                examples: [
+                    { japanese: '今{こん}回{かい}の成{せい}功{こう}は君{きみ}の努{ど}力{りょく}次{し}第で決{き}まる。', chinese: '這次是否成功取決於你的努力。' },
+                    { japanese: '天{てん}気{き}次{し}第で延{えん}期{き}する。', chinese: '是否延期取決於天氣。' },
+                    { japanese: '予{よ}算{さん}次{し}第で計{けい}画{かく}を変{か}える。', chinese: '計畫會視預算而變。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_shidai_de_1',
+                sentence: '天{てん}気{き}（　）で延{えん}期{き}する。',
+                options: ['次{し}第', '次第に', '次第で', '次第だ'],
+                correctIndex: 2,
+                explanation: '「次第で」= 〜によって。'
+            },
+            {
+                id: 'n2_shidai_de_2',
+                sentence: '成{せい}功{こう}は努{ど}力{りょく}（　）で決{き}まる。',
+                options: ['次{し}第', '次第に', '次第で', '次第だ'],
+                correctIndex: 2,
+                explanation: '条件次第。'
+            },
+            {
+                id: 'n2_shidai_de_3',
+                sentence: '予{よ}算{さん}（　）で計{けい}画{かく}を変{か}える。',
+                options: ['次{し}第', '次第に', '次第で', '次第だ'],
+                correctIndex: 2,
+                explanation: '「次第で」。'
+            }
+        ]
+    },
+    'n2_shidai_de_1': {
+        id: 'n2_shidai_de_1',
+        pattern: '次{し}第で',
+        connection: '名{めい}詞{し} + 次{し}第で',
+        translation: '取決於...',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '条件による決定',
+                description: 'ある条件次第で結果が変わる。',
+                examples: [
+                    { japanese: '景{けい}気{き}次{し}第で給{きゅう}料{りょう}が変{か}わる。', chinese: '薪水取決於景氣。' },
+                    { japanese: '社{しゃ}長{ちょう}の判{はん}断{だん}次{し}第で進{すす}める。', chinese: '是否推進取決於社長判斷。' },
+                    { japanese: '試{し}験{けん}の結{けっ}果{か}次{し}第だ。', chinese: '取決於考試結果。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_shidai_de_1_1',
+                sentence: '景{けい}気{き}（　）で給{きゅう}料{りょう}が変{か}わる。',
+                options: ['次{し}第', '次第に', '次第で', '次第だ'],
+                correctIndex: 2,
+                explanation: '「次第で」= によって。'
+            },
+            {
+                id: 'n2_shidai_de_1_2',
+                sentence: '社{しゃ}長{ちょう}の判{はん}断{だん}（　）で進{すす}める。',
+                options: ['次{し}第', '次第に', '次第で', '次第だ'],
+                correctIndex: 2,
+                explanation: '条件次第。'
+            },
+            {
+                id: 'n2_shidai_de_1_3',
+                sentence: '試{し}験{けん}の結{けっ}果{か}（　）だ。',
+                options: ['次{し}第', '次第に', '次第で', '次第だ'],
+                correctIndex: 0,
+                explanation: '名詞+次第。'
+            }
+        ]
+    },
+    'n2_shidai_ni': {
+        id: 'n2_shidai_ni',
+        pattern: '次{し}第に',
+        connection: '次{し}第に + 文{ぶん}',
+        translation: '逐漸; 漸漸',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '徐々に変化',
+                description: '時間の経過とともに少しずつ変わる。',
+                examples: [
+                    { japanese: '次{し}第に暖{あたた}かくなってきた。', chinese: '逐漸變暖。' },
+                    { japanese: '練{れん}習{しゅう}して次{し}第に上{じょう}手{ず}になった。', chinese: '練習後漸漸變好。' },
+                    { japanese: '次{し}第に人{ひと}が集{あつ}まってきた。', chinese: '人逐漸聚集。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_shidai_ni_1',
+                sentence: '次{し}第に暖{あたた}かくなってきた。',
+                options: ['次第に', '次第で', '次第だ', '次第'],
+                correctIndex: 0,
+                explanation: '徐々にの意味。'
+            },
+            {
+                id: 'n2_shidai_ni_2',
+                sentence: '練{れん}習{しゅう}して次{し}第に上{じょう}手{ず}になった。',
+                options: ['次第に', '次第で', '次第だ', '次第'],
+                correctIndex: 0,
+                explanation: '少しずつ変化。'
+            },
+            {
+                id: 'n2_shidai_ni_3',
+                sentence: '次{し}第に人{ひと}が集{あつ}まってきた。',
+                options: ['次第に', '次第で', '次第だ', '次第'],
+                correctIndex: 0,
+                explanation: '漸進的な変化。'
+            }
+        ]
+    },
+    'n2_shidai_ni_1': {
+        id: 'n2_shidai_ni_1',
+        pattern: '次{し}第に',
+        connection: '次{し}第に + 文{ぶん}',
+        translation: '逐漸地; 漸漸地',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: 'ゆっくり変化',
+                description: '少しずつ変わっていく様子を表す。',
+                examples: [
+                    { japanese: '次{し}第に明{あか}るくなってきた。', chinese: '天漸漸亮了。' },
+                    { japanese: '次{し}第に気{き}持{もち}ちが落{お}ち着{つ}いた。', chinese: '心情逐漸平靜。' },
+                    { japanese: '次{し}第に慣{な}れてきた。', chinese: '漸漸習慣了。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_shidai_ni_1_1',
+                sentence: '次{し}第に明{あか}るくなってきた。',
+                options: ['次第に', '次第で', '次第だ', '次第'],
+                correctIndex: 0,
+                explanation: '徐々に。'
+            },
+            {
+                id: 'n2_shidai_ni_1_2',
+                sentence: '次{し}第に気{き}持{もち}ちが落{お}ち着{つ}いた。',
+                options: ['次第に', '次第で', '次第だ', '次第'],
+                correctIndex: 0,
+                explanation: '少しずつの変化。'
+            },
+            {
+                id: 'n2_shidai_ni_1_3',
+                sentence: '次{し}第に慣{な}れてきた。',
+                options: ['次第に', '次第で', '次第だ', '次第'],
+                correctIndex: 0,
+                explanation: '漸進。'
+            }
+        ]
+    },
+    'n2_shikamo': {
+        id: 'n2_shikamo',
+        pattern: 'しかも',
+        connection: 'しかも + 文{ぶん}',
+        translation: '而且; 並且; 況且',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '追加の強調',
+                description: '前の内容にさらに強い内容を加える。',
+                examples: [
+                    { japanese: '雨{あめ}が降{ふ}っている。しかも寒{さむ}い。', chinese: '下雨了，而且很冷。' },
+                    { japanese: '彼{かれ}は優{やさ}しい。しかも頭{あたま}がいい。', chinese: '他很溫柔，而且很聰明。' },
+                    { japanese: '値{ね}段{だん}が高{たか}い。しかも味{あじ}がいまいちだ。', chinese: '價格高，而且味道不怎麼樣。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_shikamo_1',
+                sentence: '雨{あめ}が降{ふ}っている。（　）寒{さむ}い。',
+                options: ['しかも', 'その上', 'それなのに', 'そうすると'],
+                correctIndex: 0,
+                explanation: '追加の強調。'
+            },
+            {
+                id: 'n2_shikamo_2',
+                sentence: '彼{かれ}は優{やさ}しい。（　）頭{あたま}がいい。',
+                options: ['しかも', 'それなのに', 'それなら', 'そういえば'],
+                correctIndex: 0,
+                explanation: '良い点の追加。'
+            },
+            {
+                id: 'n2_shikamo_3',
+                sentence: '値{ね}段{だん}が高{たか}い。（　）味{あじ}がいまいちだ。',
+                options: ['しかも', 'それなのに', 'そうすると', 'そういえば'],
+                correctIndex: 0,
+                explanation: '不利な追加。'
+            }
+        ]
+    },
+    'n2_sono_ue': {
+        id: 'n2_sono_ue',
+        pattern: 'その上',
+        connection: 'その上 + 文{ぶん}',
+        translation: '而且; 再加上...',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '追加・上乗せ',
+                description: '前の内容に別の内容をさらに加える。',
+                examples: [
+                    { japanese: '雨{あめ}が降{ふ}って、その上風{かぜ}も強{つよ}い。', chinese: '下雨了，還加上風很大。' },
+                    { japanese: '忙{いそ}しい。その上、体{からだ}も悪{わる}い。', chinese: '很忙，還加上身體不好。' },
+                    { japanese: '料{りょう}理{り}がおいしい。その上、安{やす}い。', chinese: '料理好吃，而且便宜。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sono_ue_1',
+                sentence: '雨{あめ}が降{ふ}って、その上風{かぜ}も強{つよ}い。',
+                options: ['その上', 'しかも', 'それなのに', 'そうすると'],
+                correctIndex: 0,
+                explanation: '追加の表現。'
+            },
+            {
+                id: 'n2_sono_ue_2',
+                sentence: '忙{いそ}しい。（　）、体{からだ}も悪{わる}い。',
+                options: ['その上', 'それなのに', 'それなら', 'そういえば'],
+                correctIndex: 0,
+                explanation: 'さらに追加。'
+            },
+            {
+                id: 'n2_sono_ue_3',
+                sentence: '料{りょう}理{り}がおいしい。（　）安{やす}い。',
+                options: ['その上', 'それなのに', 'そうすると', 'そういえば'],
+                correctIndex: 0,
+                explanation: '良い点の追加。'
+            }
+        ]
+    },
+    'n2_sono_ue_1': {
+        id: 'n2_sono_ue_1',
+        pattern: 'その上',
+        connection: 'その上 + 文{ぶん}',
+        translation: '再加上...',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '付け加える',
+                description: '前の内容にさらに情報を加える。',
+                examples: [
+                    { japanese: '値{ね}段{だん}が高{たか}い。その上、配{はい}送{そう}も遅{おそ}い。', chinese: '價格高，而且配送也慢。' },
+                    { japanese: '彼{かれ}は優{やさ}しい。その上、誠{せい}実{じつ}だ。', chinese: '他溫柔，而且很誠實。' },
+                    { japanese: '駅{えき}が近{ちか}い。その上、静{しず}かだ。', chinese: '離車站近，而且很安靜。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sono_ue_1_1',
+                sentence: '値{ね}段{だん}が高{たか}い。その上、配{はい}送{そう}も遅{おそ}い。',
+                options: ['その上', 'しかも', 'それなのに', 'そうすると'],
+                correctIndex: 0,
+                explanation: '追加の表現。'
+            },
+            {
+                id: 'n2_sono_ue_1_2',
+                sentence: '彼{かれ}は優{やさ}しい。その上、誠{せい}実{じつ}だ。',
+                options: ['その上', 'それなのに', 'それなら', 'そういえば'],
+                correctIndex: 0,
+                explanation: '良い点の追加。'
+            },
+            {
+                id: 'n2_sono_ue_1_3',
+                sentence: '駅{えき}が近{ちか}い。その上、静{しず}かだ。',
+                options: ['その上', 'それなのに', 'そうすると', 'そういえば'],
+                correctIndex: 0,
+                explanation: '補足の情報。'
+            }
+        ]
+    },
+    'n2_sore_na_noni': {
+        id: 'n2_sore_na_noni',
+        pattern: 'それなのに',
+        connection: 'それなのに + 文{ぶん}',
+        translation: '儘管如此; 可是',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '期待と反対の結果',
+                description: '前の内容から予想される結果と異なることを述べる。',
+                examples: [
+                    { japanese: '一{いち}生{しょう}懸{けん}命{めい}勉{べん}強{きょう}した。それなのに合{ごう}格{かく}できなかった。', chinese: '拼命學了，但還是沒合格。' },
+                    { japanese: '雨{あめ}は止{や}んだ。それなのに試{し}合{あい}は中{ちゅう}止{し}になった。', chinese: '雨停了，可是比賽還是取消了。' },
+                    { japanese: '約{やく}束{そく}した。それなのに彼{かれ}は来{こ}なかった。', chinese: '約好了，可是他沒來。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sore_na_noni_1',
+                sentence: '一{いち}生{しょう}懸{けん}命{めい}勉{べん}強{きょう}した。（　）合{ごう}格{かく}できなかった。',
+                options: ['それなのに', 'それなら', 'それにしても', 'そうすると'],
+                correctIndex: 0,
+                explanation: '期待と逆の結果。'
+            },
+            {
+                id: 'n2_sore_na_noni_2',
+                sentence: '雨{あめ}は止{や}んだ。（　）試{し}合{あい}は中{ちゅう}止{し}になった。',
+                options: ['それなのに', 'そういえば', 'そうすると', 'それなら'],
+                correctIndex: 0,
+                explanation: '逆接の表現。'
+            },
+            {
+                id: 'n2_sore_na_noni_3',
+                sentence: '約{やく}束{そく}した。（　）彼{かれ}は来{こ}なかった。',
+                options: ['それなのに', 'それなら', 'それにしても', 'そういえば'],
+                correctIndex: 0,
+                explanation: '意外な結果。'
+            }
+        ]
+    },
+    'n2_sore_nara': {
+        id: 'n2_sore_nara',
+        pattern: 'それなら',
+        connection: 'それなら + 文{ぶん}',
+        translation: '如果是那樣的話',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '前の話を受けた提案',
+                description: '前述の内容を受けて提案・判断を示す。',
+                examples: [
+                    { japanese: '明{あした}は雨{あめ}だそうです。それなら家{いえ}で過{す}ごそう。', chinese: '聽說明天會下雨，那就待在家吧。' },
+                    { japanese: '忙{いそ}しいなら無{む}理{り}しないで。それなら別{べつ}の日{ひ}にしよう。', chinese: '如果很忙就不要勉強，那就改天吧。' },
+                    { japanese: '駅{えき}まで遠{とお}い。それならタクシーで行{い}こう。', chinese: '車站很遠，那就搭計程車吧。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sore_nara_1',
+                sentence: '明{あした}は雨{あめ}だそうです。（　）家{いえ}で過{す}ごそう。',
+                options: ['それなら', 'それなのに', 'それにしても', 'そうすると'],
+                correctIndex: 0,
+                explanation: '前の話を受けた提案。'
+            },
+            {
+                id: 'n2_sore_nara_2',
+                sentence: '忙{いそ}しいなら無{む}理{り}しないで。（　）別{べつ}の日{ひ}にしよう。',
+                options: ['それなら', 'そういえば', 'そうすると', 'それなのに'],
+                correctIndex: 0,
+                explanation: '「それなら」= ならば。'
+            },
+            {
+                id: 'n2_sore_nara_3',
+                sentence: '駅{えき}まで遠{とお}い。（　）タクシーで行{い}こう。',
+                options: ['それなら', 'それなのに', 'それにしても', 'そういえば'],
+                correctIndex: 0,
+                explanation: '判断・提案。'
+            }
+        ]
+    },
+    'n2_sore_ni_shitemo': {
+        id: 'n2_sore_ni_shitemo',
+        pattern: 'それにしても',
+        connection: 'それにしても + 文{ぶん}',
+        translation: '話雖如此; 儘管如此',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '前提を受けた感想',
+                description: '前の内容を受けて驚きや評価を述べる。',
+                examples: [
+                    { japanese: 'それにしても、よく頑{がん}張{ば}ったね。', chinese: '話雖如此，你真的很努力。' },
+                    { japanese: 'それにしても暑{あつ}い日{ひ}だ。', chinese: '話說回來，真是熱。' },
+                    { japanese: 'それにしても彼{かれ}は遅{おそ}い。', chinese: '儘管如此，他還是很慢。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sore_ni_shitemo_1',
+                sentence: 'それにしても、よく頑{がん}張{ば}ったね。',
+                options: ['それにしても', 'それなら', 'それなのに', 'そうすると'],
+                correctIndex: 0,
+                explanation: '感想を述べる。'
+            },
+            {
+                id: 'n2_sore_ni_shitemo_2',
+                sentence: 'それにしても暑{あつ}い日{ひ}だ。',
+                options: ['それにしても', 'そういえば', 'そうすると', 'それなのに'],
+                correctIndex: 0,
+                explanation: '前提を受けた感想。'
+            },
+            {
+                id: 'n2_sore_ni_shitemo_3',
+                sentence: 'それにしても彼{かれ}は遅{おそ}い。',
+                options: ['それにしても', 'それなら', 'それなのに', 'そういえば'],
+                correctIndex: 0,
+                explanation: '評価の表現。'
+            }
+        ]
+    },
+    'n2_sou_ieba': {
+        id: 'n2_sou_ieba',
+        pattern: 'そう言{い}えば',
+        connection: 'そう言{い}えば + 文{ぶん}',
+        translation: '說起來; 這麼一說',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '思い出し',
+                description: '話題に関連して思い出したことを述べる。',
+                examples: [
+                    { japanese: 'そう言{い}えば、彼{かれ}は今{いま}日{にち}誕{たん}生{じょう}日{び}だ。', chinese: '說起來，他今天生日。' },
+                    { japanese: 'そう言{い}えば、あの店{みせ}は閉{し}まったらしい。', chinese: '說起來，那家店好像關了。' },
+                    { japanese: 'そう言{い}えば、宿{しゅく}題{だい}を忘{わす}れた。', chinese: '這麼一說，我忘了作業。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sou_ieba_1',
+                sentence: 'そう言{い}えば、彼{かれ}は今{いま}日{にち}誕{たん}生{じょう}日{び}だ。',
+                options: ['そう言{い}えば', 'それなら', 'それなのに', 'そうすると'],
+                correctIndex: 0,
+                explanation: '思い出しの表現。'
+            },
+            {
+                id: 'n2_sou_ieba_2',
+                sentence: 'そう言{い}えば、あの店{みせ}は閉{し}まったらしい。',
+                options: ['そう言{い}えば', 'それにしても', 'それなら', 'それなのに'],
+                correctIndex: 0,
+                explanation: '話題からの連想。'
+            },
+            {
+                id: 'n2_sou_ieba_3',
+                sentence: 'そう言{い}えば、宿{しゅく}題{だい}を忘{わす}れた。',
+                options: ['そう言{い}えば', 'それなら', 'それなのに', 'そうすると'],
+                correctIndex: 0,
+                explanation: '思い出したことを述べる。'
+            }
+        ]
+    },
+    'n2_sou_ieba_1': {
+        id: 'n2_sou_ieba_1',
+        pattern: 'そう言{い}えば',
+        connection: 'そう言{い}えば + 文{ぶん}',
+        translation: '說起那件事...',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '連想から話題転換',
+                description: '関連することを思い出して話題を変える。',
+                examples: [
+                    { japanese: 'そう言{い}えば、今{いま}週{しゅう}は休{やす}みだった。', chinese: '說起來，這週放假。' },
+                    { japanese: 'そう言{い}えば、あの映{えい}画{が}見{み}た？', chinese: '說起那件事，你看那部電影了嗎？' },
+                    { japanese: 'そう言{い}えば、メール返{へん}信{しん}していない。', chinese: '說起來，我還沒回信。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sou_ieba_1_1',
+                sentence: 'そう言{い}えば、今{いま}週{しゅう}は休{やす}みだった。',
+                options: ['そう言{い}えば', 'それなら', 'それなのに', 'そうすると'],
+                correctIndex: 0,
+                explanation: '話題転換。'
+            },
+            {
+                id: 'n2_sou_ieba_1_2',
+                sentence: 'そう言{い}えば、あの映{えい}画{が}見{み}た？',
+                options: ['そう言{い}えば', 'それにしても', 'それなら', 'それなのに'],
+                correctIndex: 0,
+                explanation: '関連事項の思い出し。'
+            },
+            {
+                id: 'n2_sou_ieba_1_3',
+                sentence: 'そう言{い}えば、メール返{へん}信{しん}していない。',
+                options: ['そう言{い}えば', 'それなら', 'それなのに', 'そうすると'],
+                correctIndex: 0,
+                explanation: '思い出したこと。'
+            }
+        ]
+    },
+    'n2_sou_suru_to': {
+        id: 'n2_sou_suru_to',
+        pattern: 'そうすると',
+        connection: 'そうすると + 文{ぶん}',
+        translation: '那樣一來; 如果那樣的話',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '結果・展開',
+                description: '前の内容を受けて結果や次の展開を述べる。',
+                examples: [
+                    { japanese: 'ボタンを押{お}す。そうすると扉{とびら}が開{ひら}く。', chinese: '按下按鈕，然後門就開了。' },
+                    { japanese: 'まず電{でん}源{げん}を入{い}れてください。そうすると画{が}面{めん}が映{うつ}ります。', chinese: '先打開電源，這樣畫面就會顯示。' },
+                    { japanese: '道{みち}を曲{ま}がる。そうすると右{みぎ}に駅{えき}が見{み}える。', chinese: '轉彎後就會看到右邊的車站。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sou_suru_to_1',
+                sentence: 'ボタンを押{お}す。（　）扉{とびら}が開{ひら}く。',
+                options: ['そうすると', 'それなら', 'それなのに', 'そういえば'],
+                correctIndex: 0,
+                explanation: '結果を示す。'
+            },
+            {
+                id: 'n2_sou_suru_to_2',
+                sentence: '電{でん}源{げん}を入{い}れる。（　）画{が}面{めん}が映{うつ}る。',
+                options: ['そうすると', 'それにしても', 'それなら', 'それなのに'],
+                correctIndex: 0,
+                explanation: '次の展開。'
+            },
+            {
+                id: 'n2_sou_suru_to_3',
+                sentence: '道{みち}を曲{ま}がる。（　）右{みぎ}に駅{えき}が見{み}える。',
+                options: ['そうすると', 'それなら', 'それなのに', 'そういえば'],
+                correctIndex: 0,
+                explanation: '「そうすると」= すると。'
+            }
+        ]
+    },
+    'n2_sue_ni': {
+        id: 'n2_sue_ni',
+        pattern: '末{すえ}に',
+        connection: '動{どう}詞{し}た形{けい} + 末{すえ}に\n名{めい}詞{し} + の + 末{すえ}に',
+        translation: '在...之後; 經過...的最後',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '長い過程の結果',
+                description: '時間をかけた努力や行動の最終結果を表す。',
+                examples: [
+                    { japanese: '話{はな}し合{あ}った末{すえ}に結{けっ}論{ろん}を出{だ}した。', chinese: '經過討論後得出結論。' },
+                    { japanese: '迷{まよ}った末{すえ}に買{か}わなかった。', chinese: '猶豫到最後還是沒買。' },
+                    { japanese: '努{ど}力{りょく}した末{すえ}に成{せい}功{こう}した。', chinese: '努力之後終於成功。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sue_ni_1',
+                sentence: '話{はな}し合{あ}った（　）結{けっ}論{ろん}を出{だ}した。',
+                options: ['末{すえ}に', '末{すえ}で', '末{すえ}を', '末{すえ}は'],
+                correctIndex: 0,
+                explanation: '長い過程の結果。'
+            },
+            {
+                id: 'n2_sue_ni_2',
+                sentence: '迷{まよ}った（　）買{か}わなかった。',
+                options: ['末{すえ}に', '末{すえ}で', '末{すえ}を', '末{すえ}は'],
+                correctIndex: 0,
+                explanation: '「末に」。'
+            },
+            {
+                id: 'n2_sue_ni_3',
+                sentence: '努{ど}力{りょく}した（　）成{せい}功{こう}した。',
+                options: ['末{すえ}に', '末{すえ}で', '末{すえ}を', '末{すえ}は'],
+                correctIndex: 0,
+                explanation: '結果の表現。'
+            }
+        ]
+    },
+    'n2_sue_ni_1': {
+        id: 'n2_sue_ni_1',
+        pattern: '末{すえ}に',
+        connection: '動{どう}詞{し}た形{けい} + 末{すえ}に\n名{めい}詞{し} + の + 末{すえ}に',
+        translation: '經過...之後',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '最終結果',
+                description: '時間をかけた末に起こる結果を表す。',
+                examples: [
+                    { japanese: '検{けん}討{とう}した末{すえ}に中{ちゅう}止{し}を決{き}めた。', chinese: '經過研討後決定中止。' },
+                    { japanese: '苦{くる}労{ろう}した末{すえ}に夢{ゆめ}がかなった。', chinese: '辛苦之後夢想實現。' },
+                    { japanese: '長{なが}い話{はな}し合{あ}いの末{すえ}に和{わ}解{かい}した。', chinese: '長時間談判後和解。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sue_ni_1_1',
+                sentence: '検{けん}討{とう}した（　）中{ちゅう}止{し}を決{き}めた。',
+                options: ['末{すえ}に', '末{すえ}で', '末{すえ}を', '末{すえ}は'],
+                correctIndex: 0,
+                explanation: '結果を表す。'
+            },
+            {
+                id: 'n2_sue_ni_1_2',
+                sentence: '苦{くる}労{ろう}した（　）夢{ゆめ}がかなった。',
+                options: ['末{すえ}に', '末{すえ}で', '末{すえ}を', '末{すえ}は'],
+                correctIndex: 0,
+                explanation: '「末に」。'
+            },
+            {
+                id: 'n2_sue_ni_1_3',
+                sentence: '話{はな}し合{あ}いの（　）和{わ}解{かい}した。',
+                options: ['末{すえ}に', '末{すえ}で', '末{すえ}を', '末{すえ}は'],
+                correctIndex: 0,
+                explanation: '名詞+の+末に。'
+            }
+        ]
+    },
+    'n2_sukoshi_mo_nai': {
+        id: 'n2_sukoshi_mo_nai',
+        pattern: '少{すこ}しも～ない',
+        connection: '少{すこ}しも + 動{どう}詞{し}ない形{けい}',
+        translation: '一點也不...',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '否定の強調',
+                description: '「少しも〜ない」で全くないことを強調する。',
+                examples: [
+                    { japanese: '少{すこ}しも疲{つか}れていない。', chinese: '一點也不累。' },
+                    { japanese: '少{すこ}しも分{わ}からない。', chinese: '一點也不懂。' },
+                    { japanese: '少{すこ}しも心{しん}配{ぱい}していない。', chinese: '一點也不擔心。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sukoshi_mo_nai_1',
+                sentence: '少{すこ}しも疲{つか}れて（　）。',
+                options: ['いない', 'いる', 'いた', 'いて'],
+                correctIndex: 0,
+                explanation: '否定の強調。'
+            },
+            {
+                id: 'n2_sukoshi_mo_nai_2',
+                sentence: '少{すこ}しも分{わ}から（　）。',
+                options: ['ない', 'ある', 'あった', 'あって'],
+                correctIndex: 0,
+                explanation: '「少しも〜ない」。'
+            },
+            {
+                id: 'n2_sukoshi_mo_nai_3',
+                sentence: '少{すこ}しも心{しん}配{ぱい}して（　）。',
+                options: ['いない', 'いる', 'いた', 'いて'],
+                correctIndex: 0,
+                explanation: '否定の表現。'
+            }
+        ]
+    },
+    'n2_sukoshi_mo_nai_1': {
+        id: 'n2_sukoshi_mo_nai_1',
+        pattern: '少{すこ}しも～ない',
+        connection: '少{すこ}しも + 動{どう}詞{し}ない形{けい}',
+        translation: '絲豪不...',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '完全否定',
+                description: '全くないことを強く言う表現。',
+                examples: [
+                    { japanese: '少{すこ}しも変{か}わっていない。', chinese: '一點也沒變。' },
+                    { japanese: '少{すこ}しも怖{こわ}くない。', chinese: '一點也不怕。' },
+                    { japanese: '少{すこ}しも後{こう}悔{かい}していない。', chinese: '一點也不後悔。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sukoshi_mo_nai_1_1',
+                sentence: '少{すこ}しも変{か}わって（　）。',
+                options: ['いない', 'いる', 'いた', 'いて'],
+                correctIndex: 0,
+                explanation: '完全否定。'
+            },
+            {
+                id: 'n2_sukoshi_mo_nai_1_2',
+                sentence: '少{すこ}しも怖{こわ}く（　）。',
+                options: ['ない', 'ある', 'あった', 'あって'],
+                correctIndex: 0,
+                explanation: '「少しも〜ない」。'
+            },
+            {
+                id: 'n2_sukoshi_mo_nai_1_3',
+                sentence: '少{すこ}しも後{こう}悔{かい}して（　）。',
+                options: ['いない', 'いる', 'いた', 'いて'],
+                correctIndex: 0,
+                explanation: '強い否定。'
+            }
+        ]
+    },
+    'n2_sukunaku_tomo': {
+        id: 'n2_sukunaku_tomo',
+        pattern: '少{すく}なくとも',
+        connection: '少{すく}なくとも + 数{すう}量{りょう}/文{ぶん}',
+        translation: '至少',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '最低限',
+                description: '最低ラインや基準を示す。',
+                examples: [
+                    { japanese: '少{すく}なくとも三{さん}日{にち}はかかる。', chinese: '至少要三天。' },
+                    { japanese: '少{すく}なくとも今{いま}回{かい}は謝{あやま}るべきだ。', chinese: '至少這次該道歉。' },
+                    { japanese: '少{すく}なくとも彼{かれ}は嘘{うそ}をついていない。', chinese: '至少他沒有說謊。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sukunaku_tomo_1',
+                sentence: '少{すく}なくとも三{さん}日{にち}は（　）。',
+                options: ['かかる', 'かかって', 'かかった', 'かからない'],
+                correctIndex: 0,
+                explanation: '最低限の期間。'
+            },
+            {
+                id: 'n2_sukunaku_tomo_2',
+                sentence: '少{すく}なくとも今{いま}回{かい}は謝{あやま}る（　）。',
+                options: ['べきだ', 'べきではない', 'べきだった', 'べきでない'],
+                correctIndex: 0,
+                explanation: '最低限の義務。'
+            },
+            {
+                id: 'n2_sukunaku_tomo_3',
+                sentence: '少{すく}なくとも彼{かれ}は嘘{うそ}をついてい（　）。',
+                options: ['ない', 'る', 'た', 'て'],
+                correctIndex: 0,
+                explanation: '最低限の事実。'
+            }
+        ]
+    },
+    'n2_sukunaku_tomo_1': {
+        id: 'n2_sukunaku_tomo_1',
+        pattern: '少{すく}なくとも',
+        connection: '少{すく}なくとも + 数{すう}量{りょう}/文{ぶん}',
+        translation: '至少...',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: '最低限の基準',
+                description: '最低限の条件を示す。',
+                examples: [
+                    { japanese: '少{すく}なくとも一{いっ}週{しゅう}間{かん}は必{ひつ}要{よう}だ。', chinese: '至少需要一週。' },
+                    { japanese: '少{すく}なくとも今{いま}日{にち}は休{やす}んだほうがいい。', chinese: '至少今天應該休息。' },
+                    { japanese: '少{すく}なくとも連{れん}絡{らく}すべきだ。', chinese: '至少應該聯絡。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_sukunaku_tomo_1_1',
+                sentence: '少{すく}なくとも一{いっ}週{しゅう}間{かん}は必{ひつ}要{よう}だ。',
+                options: ['少{すく}なくとも', 'それなのに', 'それなら', 'そうすると'],
+                correctIndex: 0,
+                explanation: '最低限の条件。'
+            },
+            {
+                id: 'n2_sukunaku_tomo_1_2',
+                sentence: '少{すく}なくとも今{いま}日{にち}は休{やす}んだほうがいい。',
+                options: ['少{すく}なくとも', 'それにしても', 'それなら', 'そういえば'],
+                correctIndex: 0,
+                explanation: '最低限の助言。'
+            },
+            {
+                id: 'n2_sukunaku_tomo_1_3',
+                sentence: '少{すく}なくとも連{れん}絡{らく}すべきだ。',
+                options: ['少{すく}なくとも', 'それなら', 'それなのに', 'そうすると'],
+                correctIndex: 0,
+                explanation: '最低限の義務。'
+            }
+        ]
+    },
+    'n2_tadachi_ni': {
+        id: 'n2_tadachi_ni',
+        pattern: '直{ただ}ちに',
+        connection: '直{ただ}ちに + 動{どう}詞{し}',
+        translation: '立即; 直接',
+        level: 'N2',
+        explanation: [
+            {
+                usageId: 1,
+                title: 'すぐに',
+                description: '緊急や即時の行動を表す。',
+                examples: [
+                    { japanese: '異{い}常{じょう}があれば直{ただ}ちに連{れん}絡{らく}してください。', chinese: '若有異常請立即聯絡。' },
+                    { japanese: '直{ただ}ちに避{ひ}難{なん}してください。', chinese: '請立即避難。' },
+                    { japanese: '直{ただ}ちに対{たい}応{おう}する必{ひつ}要{よう}がある。', chinese: '需要立即應對。' }
+                ]
+            }
+        ],
+        quiz: [
+            {
+                id: 'n2_tadachi_ni_1',
+                sentence: '異{い}常{じょう}があれば直{ただ}ちに連{れん}絡{らく}してください。',
+                options: ['直{ただ}ちに', '少{すく}なくとも', 'それにしても', 'そういえば'],
+                correctIndex: 0,
+                explanation: '即時の行動。'
+            },
+            {
+                id: 'n2_tadachi_ni_2',
+                sentence: '直{ただ}ちに避{ひ}難{なん}してください。',
+                options: ['直{ただ}ちに', 'それなら', 'それなのに', 'そうすると'],
+                correctIndex: 0,
+                explanation: 'すぐにの意味。'
+            },
+            {
+                id: 'n2_tadachi_ni_3',
+                sentence: '直{ただ}ちに対{たい}応{おう}する必{ひつ}要{よう}がある。',
+                options: ['直{ただ}ちに', '少{すく}なくとも', 'それなら', 'そういえば'],
+                correctIndex: 0,
+                explanation: '緊急性を示す。'
+            }
+        ]
     }
 };
