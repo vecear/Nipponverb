@@ -9,13 +9,6 @@ import { getJobById, NOVICE_TITLE, getCharacterImagePath } from '../data/jobs'
 import { getCharacterStory } from '../data/characterStories'
 import { courses } from '../data/courses'
 
-// Icons replaced with unicode/gradients
-// import brushIcon from '../assets/icons/brush_sumi_e.png'
-// import swordIcon from '../assets/icons/sword_sumi_e.png'
-// import lanternIcon from '../assets/icons/lantern_sumi_e.png'
-// import toriiIcon from '../assets/icons/torii_sumi_e.png'
-// import bookIcon from '../assets/icons/book_sumi_e.png'
-
 const Dashboard = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
@@ -81,7 +74,7 @@ const Dashboard = () => {
       icon: 'あア',
       path: '/practice/gojuon',
       color: 'from-green-500 to-teal-500',
-      image: undefined, // brushIcon,
+      image: '/assets/icons/practice/practice-gojuon.png',
     },
     {
       title: t('practice.categories.verbs.title'),
@@ -89,7 +82,7 @@ const Dashboard = () => {
       icon: '✍️',
       path: '/practice/verbs',
       color: 'from-blue-500 to-cyan-500',
-      image: undefined, // swordIcon,
+      image: '/assets/icons/practice/practice-verbs.png',
     },
     {
       title: t('practice.categories.grammar.title'),
@@ -97,7 +90,7 @@ const Dashboard = () => {
       icon: '📖',
       path: '/practice/grammar',
       color: 'from-purple-500 to-pink-500',
-      image: undefined, // lanternIcon,
+      image: '/assets/icons/practice/practice-grammar.png',
     },
     {
       title: t('practice.categories.kanji.title'),
@@ -105,7 +98,7 @@ const Dashboard = () => {
       icon: '漢',
       path: '/practice/kanji',
       color: 'from-orange-500 to-red-500',
-      image: undefined, // toriiIcon,
+      image: '/assets/icons/practice/practice-kanji.png',
     },
     {
       title: t('practice.categories.vocabulary.title'),
@@ -113,7 +106,7 @@ const Dashboard = () => {
       icon: '🔤',
       path: '/practice/vocabulary',
       color: 'from-yellow-400 to-orange-500',
-      image: undefined, // bookIcon,
+      image: '/assets/icons/practice/practice-vocabulary.png',
     },
   ]
 
@@ -204,8 +197,20 @@ const Dashboard = () => {
               >
                 <div className="text-center space-y-2">
                   <div className="flex justify-center">
-                    <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center shadow-ukiyo p-2 group-hover:shadow-ukiyo-hover transition-all duration-300 transform group-hover:scale-110`}>
-                      <span className="text-2xl md:text-3xl">{course.emoji}</span>
+                    <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center shadow-ukiyo p-1 group-hover:shadow-ukiyo-hover transition-all duration-300 transform group-hover:scale-110 overflow-hidden`}>
+                      {course.image ? (
+                        <img
+                          src={course.image}
+                          alt={t(course.titleKey)}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none'
+                            e.currentTarget.parentElement!.innerHTML = `<span class="text-2xl md:text-3xl">${course.emoji}</span>`
+                          }}
+                        />
+                      ) : (
+                        <span className="text-2xl md:text-3xl">{course.emoji}</span>
+                      )}
                     </div>
                   </div>
 
@@ -232,8 +237,22 @@ const Dashboard = () => {
               <Link to={mode.path}>
                 <div className="card-interactive p-3 h-full group">
                   <div className="text-center space-y-2">
-                    <div className="text-3xl md:text-4xl text-wave-deep group-hover:scale-110 transition-transform duration-300">
-                      {mode.icon}
+                    <div className="flex justify-center">
+                      <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${mode.color} flex items-center justify-center shadow-ukiyo p-1 group-hover:shadow-ukiyo-hover transition-all duration-300 transform group-hover:scale-110 overflow-hidden`}>
+                        {mode.image ? (
+                          <img
+                            src={mode.image}
+                            alt={mode.title}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.currentTarget.style.display = 'none'
+                              e.currentTarget.parentElement!.innerHTML = `<span class="text-2xl md:text-3xl">${mode.icon}</span>`
+                            }}
+                          />
+                        ) : (
+                          <span className="text-2xl md:text-3xl">{mode.icon}</span>
+                        )}
+                      </div>
                     </div>
                     <h3 className="text-lg md:text-xl font-zen font-bold leading-tight text-wave-deep group-hover:text-vermilion">
                       {mode.title}

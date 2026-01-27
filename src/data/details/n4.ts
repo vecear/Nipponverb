@@ -2667,7 +2667,7 @@ export const n4Details: Record<string, GrammarPoint> = {
             },
             {
                 id: 'n4_noni_4',
-                sentence: '「せっかく作{つく}ったのに、食{た}べてくれなかった。」',
+                sentence: '「せっかく作{つく}った（　）、食{た}べてくれなかった。」',
                 options: ['のに', 'ても', 'から', 'ので'],
                 correctIndex: 0,
                 explanation: '「明明特地做了，卻不吃」，有不滿。'
@@ -12628,6 +12628,3254 @@ export const n4Details: Record<string, GrammarPoint> = {
                         '「たいてい」表示通常。'
                     ]
                 }
+            }
+        ]
+    },
+    'n4_gari': {
+        id: 'n4_gari',
+        pattern: 'がり',
+        connection: 'い形{けい}容{よう}詞{し}（去{きょ}い）+ がり\nな形{けい}容{よう}詞{し}語幹{ごかん} + がり',
+        translation: '容易...的人; ...傾向',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '性格或傾向的名詞化',
+                description: '形容一個人容易出現某種情緒或反應的性格傾向，多用作名詞。',
+                examples: [
+                    { japanese: '妹{いもうと}は怖{こわ}がりだ。', chinese: '妹妹很膽小。' },
+                    { japanese: '彼{かれ}は恥{は}ずかしがりです。', chinese: '他很害羞。' },
+                    { japanese: '父{ちち}は寒{さむ}がりだ。', chinese: '爸爸很怕冷。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「がる」與「がり」',
+            description: '同一語幹，不同詞性。',
+            points: [
+                {
+                    rule: 'がる：動詞，描述某人表現出某種感受。',
+                    examples: [{ japanese: '子{こ}供{とも}が新{あたら}しいおもちゃを欲{ほ}しがる。', chinese: '孩子顯得很想要新玩具。' }]
+                },
+                {
+                    rule: 'がり：名詞，描述性格或體質。',
+                    examples: [{ japanese: '彼{かれ}は暑{あつ}がりだから、夏{なつ}が苦手{にがて}だ。', chinese: '他很怕熱，所以不喜歡夏天。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_gari_1',
+                sentence: '彼{かれ}は人前{ひとまえ}で話{はな}すのが恥{は}ずかし（　）だ。',
+                options: ['がり', 'がる', 'がって', 'がった'],
+                correctIndex: 0,
+                explanation: '「恥ずかしがり」是名詞，表示容易害羞的性格。'
+            },
+            {
+                id: 'n4_gari_2',
+                sentence: '弟{おとうと}は暗{くら}い所{ところ}を怖{こわ}（　）。',
+                options: ['がり', 'がる', 'がって', 'がった'],
+                correctIndex: 0,
+                explanation: '「怖がり」表示怕黑的性格。'
+            },
+            {
+                id: 'n4_gari_3',
+                sentence: '母{はは}は心配{しんぱい}（　）だから、連絡{れんらく}しよう。',
+                options: ['がり', 'がる', 'がって', 'がった'],
+                correctIndex: 0,
+                explanation: '表示「愛擔心的性格」，用「がり」。'
+            }
+        ]
+    },
+    'n4_hitsuyou_ga_aru': {
+        id: 'n4_hitsuyou_ga_aru',
+        pattern: '必要{ひつよう}がある',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} + 必要{ひつよう}がある\n動{どう}詞{し}辭書{じしょ}形{けい} + 必要{ひつよう}がない',
+        translation: '需要...; 有必要...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '表示「有必要做」',
+                description: '指出做某事是必要的，也可用否定形表示「沒必要」。',
+                examples: [
+                    { japanese: '明日{あした}までに提出{ていしゅつ}する必要{ひつよう}がある。', chinese: '有必要在明天前交出。' },
+                    { japanese: '急{いそ}ぐ必要{ひつよう}はありません。', chinese: '不需要著急。' },
+                    { japanese: '説明{せつめい}する必要{ひつよう}がある。', chinese: '有必要說明。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「必要がある」與「が必要」',
+            description: '兩者都表示需要，但重點不同。',
+            points: [
+                {
+                    rule: '必要がある：強調「必須做某事」。',
+                    examples: [{ japanese: '修理{しゅうり}する必要{ひつよう}がある。', chinese: '需要修理。' }]
+                },
+                {
+                    rule: 'が必要：強調「某物是必需」。',
+                    examples: [{ japanese: '身分{みぶん}証{しょう}が必要{ひつよう}だ。', chinese: '需要身分證。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_hitsuyou_ga_aru_1',
+                sentence: 'この薬{くすり}は冷{れい}蔵{ぞう}庫{こ}に入{い}れる必要{ひつよう}が（　）。',
+                options: ['ある', 'いる', 'できる', 'なる'],
+                correctIndex: 0,
+                explanation: '必要がある。'
+            },
+            {
+                id: 'n4_hitsuyou_ga_aru_2',
+                sentence: 'そんなに謝{あやま}る必要{ひつよう}は（　）。',
+                options: ['ない', 'いない', 'できない', 'ならない'],
+                correctIndex: 0,
+                explanation: '必要がない＝沒必要。'
+            },
+            {
+                id: 'n4_hitsuyou_ga_aru_3',
+                sentence: '試験{しけん}の前{まえ}に（　）する必要{ひつよう}がある。',
+                options: ['復習{ふくしゅう}', '復習{ふくしゅう}を', '復習{ふくしゅう}で', '復習{ふくしゅう}に'],
+                correctIndex: 1,
+                explanation: '動詞名詞化可用「復習する」。這裡選「復習をする」の「を」。'
+            }
+        ]
+    },
+    'n4_ikou_kei': {
+        id: 'n4_ikou_kei',
+        pattern: '意向形{いこうけい}',
+        connection: '動{どう}詞{し}意向形{いこうけい}\nる動詞: る → よう\nう動詞: 語尾{ごび}u → おう\nする → しよう / 来{く}る → こよう\n丁寧{ていねい}: ましょう',
+        translation: '意向形; 一起...吧',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '表示提議或意志',
+                description: '用來提出建議或表示說話者的意志，等同於「讓我們...吧」。',
+                examples: [
+                    { japanese: '一緒{いっしょ}に行{い}こう。', chinese: '一起去吧。' },
+                    { japanese: '今日は早{はや}く寝{ね}よう。', chinese: '今天早點睡吧。' },
+                    { japanese: 'ちょっと休{やす}もう。', chinese: '休息一下吧。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '丁寧形との關係',
+            description: '意向形的禮貌版是「ましょう」。',
+            points: [
+                {
+                    rule: '普通形：行こう、食べよう。',
+                    examples: [{ japanese: '今から始{はじ}めよう。', chinese: '現在開始吧。' }]
+                },
+                {
+                    rule: '丁寧形：行きましょう、食べましょう。',
+                    examples: [{ japanese: 'ここで待{ま}ちましょう。', chinese: '在這裡等吧。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_ikou_kei_1',
+                sentence: 'この映画{えいが}を（　）。',
+                options: ['見よう', '見る', '見た', '見て'],
+                correctIndex: 0,
+                explanation: '意向形「見よう」。'
+            },
+            {
+                id: 'n4_ikou_kei_2',
+                sentence: 'そろそろ帰{かえ}（　）。',
+                options: ['ろう', 'ろ', 'る', 'った'],
+                correctIndex: 0,
+                explanation: '「帰ろう」= 回去吧。'
+            },
+            {
+                id: 'n4_ikou_kei_3',
+                sentence: '丁寧{ていねい}に言{い}うと、「行{い}こう」は（　）。',
+                options: ['行きます', '行きました', '行きましょう', '行けます'],
+                correctIndex: 2,
+                explanation: '意向形的丁寧表現是「ましょう」。'
+            }
+        ]
+    },
+    'n4_janai_ka': {
+        id: 'n4_janai_ka',
+        pattern: 'じゃないか',
+        connection: '普通{ふつう}形{けい} + じゃないか',
+        translation: '不是嗎?; 對吧?; (邀約)',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '確認或提議',
+                description: '用於向對方確認或提出建議，語氣較口語。',
+                examples: [
+                    { japanese: 'いい天気{てんき}じゃないか。', chinese: '天氣不錯嘛。' },
+                    { japanese: '一緒{いっしょ}に行{い}こうじゃないか。', chinese: '一起去吧。' },
+                    { japanese: 'それは大{たい}変{へん}じゃないか。', chinese: '那不是很糟嗎？' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「ではないか」',
+            description: '較正式的版本。',
+            points: [
+                {
+                    rule: 'じゃないか：口語。',
+                    examples: [{ japanese: '今{いま}行{い}くべきじゃないか。', chinese: '現在應該去吧。' }]
+                },
+                {
+                    rule: 'ではないか：較正式或書面。',
+                    examples: [{ japanese: 'すばらしい成{せい}果{か}ではないか。', chinese: '這不是很棒的成果嗎？' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_janai_ka_1',
+                sentence: '今夜{こんや}外食{がいしょく}しよう（　）。',
+                options: ['じゃないか', 'らしい', 'ようだ', 'そうだ'],
+                correctIndex: 0,
+                explanation: '邀約語氣用「じゃないか」。'
+            },
+            {
+                id: 'n4_janai_ka_2',
+                sentence: '今日は寒{さむ}い（　）。',
+                options: ['じゃないか', 'じゃないで', 'じゃないに', 'じゃないを'],
+                correctIndex: 0,
+                explanation: '句尾確認。'
+            },
+            {
+                id: 'n4_janai_ka_3',
+                sentence: '「それ、間違{まちが}ってるよ。」\n「え、私{わたし}（　）？」',
+                options: ['じゃないか', 'じゃないで', 'じゃないに', 'じゃないを'],
+                correctIndex: 0,
+                explanation: '口語疑問「不是嗎？」'
+            }
+        ]
+    },
+    'n4_kashira': {
+        id: 'n4_kashira',
+        pattern: 'かしら',
+        connection: '普通{ふつう}形{けい} + かしら',
+        translation: '我在想...; 不知道...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '自言自語的疑問',
+                description: '表示自言自語的疑問或思考，常見於女性口語。',
+                examples: [
+                    { japanese: '雨{あめ}が降{ふ}るかしら。', chinese: '不知道會不會下雨。' },
+                    { japanese: '彼{かれ}は来{く}るかしら。', chinese: '他會來嗎？' },
+                    { japanese: 'これでいいかしら。', chinese: '這樣可以嗎？' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「かな」との違い',
+            description: '兩者都是「我在想」，語氣不同。',
+            points: [
+                {
+                    rule: 'かしら：較女性化、語氣柔和。',
+                    examples: [{ japanese: 'もう遅{おそ}いかしら。', chinese: '會不會太晚了呢。' }]
+                },
+                {
+                    rule: 'かな：較中性，男女都可用。',
+                    examples: [{ japanese: '間{ま}に合{あ}うかな。', chinese: '來得及嗎？' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_kashira_1',
+                sentence: '今日は忙{いそが}しい（　）。',
+                options: ['かしら', 'かい', 'かな', 'かどうか'],
+                correctIndex: 0,
+                explanation: '自言自語的疑問用「かしら」。'
+            },
+            {
+                id: 'n4_kashira_2',
+                sentence: '彼{かれ}に聞{き}いてみよう（　）。',
+                options: ['かしら', 'かい', 'かな', 'かどうか'],
+                correctIndex: 0,
+                explanation: '「要不要問問他呢」語氣柔和。'
+            },
+            {
+                id: 'n4_kashira_3',
+                sentence: '駅{えき}まで歩{ある}ける（　）。',
+                options: ['かしら', 'かい', 'かな', 'かどうか'],
+                correctIndex: 0,
+                explanation: '自問語氣。'
+            }
+        ]
+    },
+    'n4_kai': {
+        id: 'n4_kai',
+        pattern: 'かい',
+        connection: '普通{ふつう}形{けい} + かい',
+        translation: '疑問句 (口語)',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '口語問句',
+                description: '多用於親近對象或小孩的口語疑問。',
+                examples: [
+                    { japanese: '元気{げんき}かい？', chinese: '你還好嗎？' },
+                    { japanese: '行{い}くかい？', chinese: '要去嗎？' },
+                    { japanese: 'もう終{お}わったかい？', chinese: '已經結束了嗎？' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「か」との關係',
+            description: '「かい」是口語加強版，語氣較輕鬆。',
+            points: [
+                {
+                    rule: 'か：一般疑問。',
+                    examples: [{ japanese: '行{い}きますか。', chinese: '要去嗎？' }]
+                },
+                {
+                    rule: 'かい：口語、親近。',
+                    examples: [{ japanese: '行{い}くかい？', chinese: '要去嗎？' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_kai_1',
+                sentence: 'もう寝{ね}る（　）。',
+                options: ['かい', 'かな', 'かしら', 'かどうか'],
+                correctIndex: 0,
+                explanation: '口語疑問用「かい」。'
+            },
+            {
+                id: 'n4_kai_2',
+                sentence: '手伝{てつだ}ってくれる（　）？',
+                options: ['かい', 'かしら', 'かどうか', 'のに'],
+                correctIndex: 0,
+                explanation: '親近語氣。'
+            },
+            {
+                id: 'n4_kai_3',
+                sentence: 'それでいい（　）？',
+                options: ['かい', 'だい', 'ので', 'から'],
+                correctIndex: 0,
+                explanation: '「〜かい？」是口語問句。'
+            }
+        ]
+    },
+    'n4_kana': {
+        id: 'n4_kana',
+        pattern: 'かな',
+        connection: '普通{ふつう}形{けい} + かな',
+        translation: '我在想...; 是否...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '自言自語的思考',
+                description: '用於自我思考或帶點猶豫的疑問，男女皆可。',
+                examples: [
+                    { japanese: '雨{あめ}が降{ふ}るかな。', chinese: '不知道會不會下雨。' },
+                    { japanese: 'そろそろ帰{かえ}ろうかな。', chinese: '是不是該回去了呢。' },
+                    { japanese: 'これでいいかな。', chinese: '這樣可以嗎？' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「かしら」との違い',
+            description: '同樣表示疑問或思考，但語氣更中性。',
+            points: [
+                {
+                    rule: 'かな：中性、常用。',
+                    examples: [{ japanese: '間{ま}に合{あ}うかな。', chinese: '不知道來不來得及。' }]
+                },
+                {
+                    rule: 'かしら：較女性化。',
+                    examples: [{ japanese: '大丈夫{だいじょうぶ}かしら。', chinese: '不知道會不會沒問題。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_kana_1',
+                sentence: '今{いま}から行{い}こう（　）。',
+                options: ['かな', 'かしら', 'かい', 'かどうか'],
+                correctIndex: 0,
+                explanation: '自我思考「要不要去」。'
+            },
+            {
+                id: 'n4_kana_2',
+                sentence: 'この服{ふく}で大丈夫{だいじょうぶ}（　）。',
+                options: ['かな', 'かい', 'かどうか', 'ので'],
+                correctIndex: 0,
+                explanation: '「這樣可以嗎」的自問。'
+            },
+            {
+                id: 'n4_kana_3',
+                sentence: '「昼{ひる}ごはん、何{なに}にする？」\n「うーん、カレーにしよう（　）。」',
+                options: ['かな', 'かしら', 'かい', 'かどうか'],
+                correctIndex: 0,
+                explanation: '對話中自我決定語氣。'
+            }
+        ]
+    },
+    'n4_kara_tsukuru': {
+        id: 'n4_kara_tsukuru',
+        pattern: 'から作{つく}る',
+        connection: '名{めい}詞{し} + から + 作{つく}る\n名{めい}詞{し} + で + 作{つく}る',
+        translation: '由...製成',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '材料或原料',
+                description: '表示材料來源或原料。',
+                examples: [
+                    { japanese: 'ワインはぶどうから作{つく}る。', chinese: '葡萄酒是由葡萄釀成的。' },
+                    { japanese: '紙{かみ}は木{き}から作{つく}られる。', chinese: '紙由木頭製成。' },
+                    { japanese: 'この机{つくえ}は木{き}で作{つく}った。', chinese: '這張桌子是用木頭做的。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「から」與「で」',
+            description: '強調原料或材料。',
+            points: [
+                {
+                    rule: 'から：原料看不出原形的變化。',
+                    examples: [{ japanese: 'パンは小麦{こむぎ}から作{つく}る。', chinese: '麵包由小麥做成。' }]
+                },
+                {
+                    rule: 'で：材料仍可辨認。',
+                    examples: [{ japanese: 'この箱{はこ}は紙{かみ}で作{つく}った。', chinese: '這個盒子是用紙做的。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_kara_tsukuru_1',
+                sentence: 'ビールは麦{むぎ}（　）作{つく}る。',
+                options: ['から', 'で', 'に', 'を'],
+                correctIndex: 0,
+                explanation: '原料來源用「から」。'
+            },
+            {
+                id: 'n4_kara_tsukuru_2',
+                sentence: 'このカバンは革{かわ}（　）作{つく}られている。',
+                options: ['で', 'から', 'に', 'を'],
+                correctIndex: 0,
+                explanation: '材料可辨認，用「で」。'
+            },
+            {
+                id: 'n4_kara_tsukuru_3',
+                sentence: 'ジュースは果物{くだもの}（　）作{つく}る。',
+                options: ['から', 'まで', 'に', 'を'],
+                correctIndex: 0,
+                explanation: '表示原料。'
+            }
+        ]
+    },
+    'n4_koro': {
+        id: 'n4_koro',
+        pattern: '頃{ころ} / ごろ',
+        connection: '時{じ}間{かん}名{めい}詞{し} + ごろ\n動{どう}詞{し}普通{ふつう}形{けい} + 頃{ころ}',
+        translation: '大約...; ...時候',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '大約的時間點',
+                description: '「ごろ」用於大約的時間點，「ころ」用於某段時期。',
+                examples: [
+                    { japanese: '7時{じ}ごろ帰{かえ}ります。', chinese: '大約七點回去。' },
+                    { japanese: '子{こ}供{とも}の頃{ころ}、よく川{かわ}で遊{あそ}んだ。', chinese: '小時候常在河邊玩。' },
+                    { japanese: '春{はる}の終{お}わり頃{ころ}に出発{しゅっぱつ}します。', chinese: '春末左右出發。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「ころ」與「ごろ」',
+            description: '同讀音不同用法。',
+            points: [
+                {
+                    rule: 'ごろ：時間點的「大約」。',
+                    examples: [{ japanese: '9時{じ}ごろに出{で}ます。', chinese: '大約九點出門。' }]
+                },
+                {
+                    rule: 'ころ：某段時期或時候。',
+                    examples: [{ japanese: '高校生{こうこうせい}の頃{ころ}、毎日{まいにち}練習{れんしゅう}した。', chinese: '高中時期每天練習。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_koro_1',
+                sentence: '昼{ひる}の1時{じ}（　）に着{つ}く予定{よてい}です。',
+                options: ['ごろ', 'ころ', 'ほど', 'まで'],
+                correctIndex: 0,
+                explanation: '時間點用「ごろ」。'
+            },
+            {
+                id: 'n4_koro_2',
+                sentence: '私{わたし}は小{ちい}さい（　）、よく絵{え}を描{か}いた。',
+                options: ['ころ', 'ごろ', 'まで', 'ほど'],
+                correctIndex: 0,
+                explanation: '時期用「ころ」。'
+            },
+            {
+                id: 'n4_koro_3',
+                sentence: '夕方{ゆうがた}（　）、雨{あめ}が降{ふ}りそうです。',
+                options: ['ごろ', 'ころ', 'から', 'で'],
+                correctIndex: 0,
+                explanation: '時間點大約。'
+            }
+        ]
+    },
+    'n4_koto': {
+        id: 'n4_koto',
+        pattern: 'こと',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + こと',
+        translation: '動詞名詞化',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '動詞名詞化',
+                description: '把動作或狀態變成名詞，常用於表達「做某事」作為話題。',
+                examples: [
+                    { japanese: '本{ほん}を読{よ}むことが好{す}きです。', chinese: '喜歡看書。' },
+                    { japanese: '日本{にほん}へ行{い}くことを考{かんが}えている。', chinese: '正在考慮去日本。' },
+                    { japanese: '運動{うんどう}することは大切{たいせつ}だ。', chinese: '運動很重要。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「こと」與「の」',
+            description: '兩者都可名詞化，但語感不同。',
+            points: [
+                {
+                    rule: 'こと：較正式、抽象。',
+                    examples: [{ japanese: '日本語{にほんご}を学{まな}ぶことは大切{たいせつ}だ。', chinese: '學日語很重要。' }]
+                },
+                {
+                    rule: 'の：較口語、具體感。',
+                    examples: [{ japanese: '日本語{にほんご}を学{まな}ぶのは楽{たの}しい。', chinese: '學日語很有趣。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_koto_1',
+                sentence: '私{わたし}の趣味{しゅみ}は料理{りょうり}する（　）です。',
+                options: ['こと', 'もの', 'ところ', 'ため'],
+                correctIndex: 0,
+                explanation: '動詞名詞化。'
+            },
+            {
+                id: 'n4_koto_2',
+                sentence: 'ここで写真{しゃしん}を撮{と}る（　）はできません。',
+                options: ['こと', 'もの', 'ところ', 'ため'],
+                correctIndex: 0,
+                explanation: '「撮ること」作名詞。'
+            },
+            {
+                id: 'n4_koto_3',
+                sentence: '日本語{にほんご}を話{はな}す（　）に慣{な}れたい。',
+                options: ['こと', 'もの', 'ところ', 'ため'],
+                correctIndex: 0,
+                explanation: '動作名詞化。'
+            }
+        ]
+    },
+    'n4_ku_suru': {
+        id: 'n4_ku_suru',
+        pattern: 'くする',
+        connection: 'い形{けい}容{よう}詞{し}の い → く + する',
+        translation: '使...變得 (い形)',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '把狀態變成某種樣子',
+                description: '用於將事物變成某個狀態，接在い形容詞後。',
+                examples: [
+                    { japanese: '音{おと}を小{ちい}さくする。', chinese: '把音量調小。' },
+                    { japanese: '部屋{へや}を明{あか}るくする。', chinese: '把房間變亮。' },
+                    { japanese: '値段{ねだん}を安{やす}くした。', chinese: '把價格降下來。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「くする」與「にする」',
+            description: 'い形容詞用「くする」，な形容詞用「にする」。',
+            points: [
+                {
+                    rule: 'い形容詞：安くする、短くする。',
+                    examples: [{ japanese: '髪{かみ}を短{みじか}くする。', chinese: '把頭髮剪短。' }]
+                },
+                {
+                    rule: 'な形容詞：静かにする。',
+                    examples: [{ japanese: '教室{きょうしつ}を静{しず}かにする。', chinese: '讓教室安靜下來。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_ku_suru_1',
+                sentence: 'テレビの音{おと}を小{ちい}さ（　）。',
+                options: ['くする', 'にする', 'になる', 'くなる'],
+                correctIndex: 0,
+                explanation: 'い形容詞「小さい」→「小さくする」。'
+            },
+            {
+                id: 'n4_ku_suru_2',
+                sentence: '部屋{へや}を明{あか}る（　）ために電気{でんき}をつけた。',
+                options: ['くする', 'にする', 'くなる', 'になる'],
+                correctIndex: 0,
+                explanation: '使房間變亮。'
+            },
+            {
+                id: 'n4_ku_suru_3',
+                sentence: '値段{ねだん}を高{たか}（　）と客{きゃく}が減{へ}る。',
+                options: ['くすると', 'にすると', 'くなると', 'になると'],
+                correctIndex: 0,
+                explanation: '把價格調高用「くする」。'
+            }
+        ]
+    },
+    'n4_kyuu_ni': {
+        id: 'n4_kyuu_ni',
+        pattern: '急{きゅう}に',
+        connection: '急{きゅう}に + 動{どう}詞{し} / 形{けい}容{よう}詞{し}',
+        translation: '突然',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '突然的變化或動作',
+                description: '表示事情突然發生或狀態突然改變。',
+                examples: [
+                    { japanese: '急{きゅう}に雨{あめ}が降{ふ}った。', chinese: '突然下雨了。' },
+                    { japanese: '急{きゅう}に寒{さむ}くなった。', chinese: '突然變冷。' },
+                    { japanese: '彼{かれ}は急{きゅう}に立{た}ち上{あ}がった。', chinese: '他突然站起來。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '類似表現',
+            description: '「急に」較口語，「突然」較正式。',
+            points: [
+                {
+                    rule: '急に：日常口語常用。',
+                    examples: [{ japanese: '急{きゅう}に電話{でんわ}が鳴{な}った。', chinese: '電話突然響了。' }]
+                },
+                {
+                    rule: '突然：書面或正式場合。',
+                    examples: [{ japanese: '突然{とつぜん}の連絡{れんらく}に驚{おどろ}いた。', chinese: '對突然的聯絡感到驚訝。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_kyuu_ni_1',
+                sentence: '風{かぜ}が（　）強{つよ}くなった。',
+                options: ['急に', 'いつも', 'だんだん', 'ときどき'],
+                correctIndex: 0,
+                explanation: '突然變強。'
+            },
+            {
+                id: 'n4_kyuu_ni_2',
+                sentence: '彼{かれ}は（　）泣{な}き出{だ}した。',
+                options: ['急に', 'すぐ', 'やっと', 'ずっと'],
+                correctIndex: 0,
+                explanation: '突然開始哭。'
+            },
+            {
+                id: 'n4_kyuu_ni_3',
+                sentence: '（　）眠{ねむ}くなった。',
+                options: ['急{きゅう}に', 'いつも', 'たいてい', 'まさか'],
+                correctIndex: 0,
+                explanation: '用「急に」。'
+            }
+        ]
+    },
+    'n4_matawa': {
+        id: 'n4_matawa',
+        pattern: 'または',
+        connection: '名{めい}詞{し} + または + 名{めい}詞{し}',
+        translation: '或者; 或是',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '選擇或並列',
+                description: '較正式的「或」，表示選擇或兩者皆可。',
+                examples: [
+                    { japanese: '電話{でんわ}またはメールで連絡{れんらく}してください。', chinese: '請用電話或郵件聯絡。' },
+                    { japanese: '日本語{にほんご}または英語{えいご}で話{はな}せます。', chinese: '可以用日語或英語溝通。' },
+                    { japanese: 'AまたはBを選{えら}びます。', chinese: '選A或B。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「または」與「あるいは」',
+            description: '兩者都較正式，意思相近。',
+            points: [
+                {
+                    rule: 'または：書面常見。',
+                    examples: [{ japanese: '身分{みぶん}証{しょう}またはパスポート。', chinese: '身分證或護照。' }]
+                },
+                {
+                    rule: 'あるいは：語氣稍正式。',
+                    examples: [{ japanese: '現金{げんきん}あるいはクレジット。', chinese: '現金或信用卡。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_matawa_1',
+                sentence: '土曜{どよう}日{び}（　）日曜{にちよう}日に行{い}きます。',
+                options: ['または', 'そして', 'だから', 'しかし'],
+                correctIndex: 0,
+                explanation: '「或」用「または」。'
+            },
+            {
+                id: 'n4_matawa_2',
+                sentence: '番号{ばんごう}（　）名前{なまえ}を入力{にゅうりょく}してください。',
+                options: ['または', 'まで', 'から', 'でも'],
+                correctIndex: 0,
+                explanation: '二選一。'
+            },
+            {
+                id: 'n4_matawa_3',
+                sentence: '現金{げんきん}（　）カードで支払{しはら}えます。',
+                options: ['または', 'しか', 'だけ', 'ほど'],
+                correctIndex: 0,
+                explanation: '正式「或」。'
+            }
+        ]
+    },
+    'n4_mitai_na': {
+        id: 'n4_mitai_na',
+        pattern: 'みたいな',
+        connection: '名{めい}詞{し} + みたいな + 名{めい}詞{し}',
+        translation: '像...的',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '形容名詞',
+                description: '用於修飾名詞，表示「像...的」。',
+                examples: [
+                    { japanese: '子{こ}供{とも}みたいな声{こえ}だ。', chinese: '像小孩一樣的聲音。' },
+                    { japanese: '夢{ゆめ}みたいな話{はなし}だ。', chinese: '像夢一樣的故事。' },
+                    { japanese: '雪{ゆき}みたいな白{しろ}い服{ふく}。', chinese: '像雪一樣白的衣服。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「みたいだ／みたいな」',
+            description: '「みたいだ」是斷定，「みたいな」用來修飾名詞。',
+            points: [
+                {
+                    rule: '文末：みたいだ。',
+                    examples: [{ japanese: '彼{かれ}は子{こ}供{とも}みたいだ。', chinese: '他像小孩一樣。' }]
+                },
+                {
+                    rule: '修飾名詞：みたいな。',
+                    examples: [{ japanese: '子{こ}供{とも}みたいな人{ひと}。', chinese: '像小孩一樣的人。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_mitai_na_1',
+                sentence: '天使{てんし}（　）声{こえ}が聞{き}こえた。',
+                options: ['みたいな', 'みたいに', 'みたいだ', 'そうな'],
+                correctIndex: 0,
+                explanation: '修飾名詞「声」。'
+            },
+            {
+                id: 'n4_mitai_na_2',
+                sentence: '映画{えいが}（　）景色{けしき}だ。',
+                options: ['みたいな', 'みたいに', 'みたいだ', 'そうに'],
+                correctIndex: 2,
+                explanation: '句尾斷定用「みたいだ」。'
+            },
+            {
+                id: 'n4_mitai_na_3',
+                sentence: '猫{ねこ}（　）人{ひと}が好{す}き。',
+                options: ['みたいな', 'みたいに', 'みたいだ', 'らしい'],
+                correctIndex: 0,
+                explanation: '修飾名詞「人」。'
+            }
+        ]
+    },
+    'n4_mitai_ni': {
+        id: 'n4_mitai_ni',
+        pattern: 'みたいに',
+        connection: '名{めい}詞{し} + みたいに + 動{どう}詞{し} / 形{けい}容{よう}詞{し}',
+        translation: '像...一樣',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '方式或狀態',
+                description: '用於修飾動詞或形容詞，表示「像...一樣」。',
+                examples: [
+                    { japanese: '子{こ}供{とも}みたいに笑{わら}う。', chinese: '像小孩一樣笑。' },
+                    { japanese: '風{かぜ}みたいに速{はや}く走{はし}る。', chinese: '像風一樣快跑。' },
+                    { japanese: '彼{かれ}みたいに話{はな}したい。', chinese: '想像他那樣說話。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「みたいに／みたいな」',
+            description: '「みたいに」修飾動詞或形容詞，「みたいな」修飾名詞。',
+            points: [
+                {
+                    rule: 'みたいに + 動詞/形容詞。',
+                    examples: [{ japanese: '先生{せんせい}みたいに説明{せつめい}する。', chinese: '像老師一樣說明。' }]
+                },
+                {
+                    rule: 'みたいな + 名詞。',
+                    examples: [{ japanese: '先生{せんせい}みたいな人{ひと}。', chinese: '像老師一樣的人。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_mitai_ni_1',
+                sentence: '鳥{とり}みたい（　）飛{と}びたい。',
+                options: ['に', 'な', 'だ', 'で'],
+                correctIndex: 0,
+                explanation: '修飾動詞用「みたいに」。'
+            },
+            {
+                id: 'n4_mitai_ni_2',
+                sentence: '彼{かれ}は子{こ}供{とも}みたい（　）元気{げんき}だ。',
+                options: ['に', 'な', 'だ', 'で'],
+                correctIndex: 0,
+                explanation: '修飾形容詞用「みたいに」。'
+            },
+            {
+                id: 'n4_mitai_ni_3',
+                sentence: '海{うみ}みたい（　）広{ひろ}い場所{ばしょ}に行{い}きたい。',
+                options: ['な', 'に', 'だ', 'で'],
+                correctIndex: 0,
+                explanation: '修飾名詞用「みたいな」。'
+            }
+        ]
+    },
+    'n4_mo_quantity': {
+        id: 'n4_mo_quantity',
+        pattern: 'も',
+        connection: '數{すう}量{りょう} + も',
+        translation: '多達...; ...也(強調數量)',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '表示數量之多',
+                description: '強調數量或時間很多，帶有驚訝或強調語氣。',
+                examples: [
+                    { japanese: '三{さん}時{じ}間{かん}も待{ま}った。', chinese: '等了足足三個小時。' },
+                    { japanese: '百{ひゃく}人{にん}も来{き}た。', chinese: '竟然來了上百人。' },
+                    { japanese: '一{いち}日{にち}に五{ご}回{かい}も食{た}べる。', chinese: '一天吃了五次。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「も」的強調',
+            description: '接在數量後強調「多」。',
+            points: [
+                {
+                    rule: '時間/數量 + も。',
+                    examples: [{ japanese: '十{じゅう}分{ぷん}も遅{おく}れた。', chinese: '晚了十分鐘之多。' }]
+                },
+                {
+                    rule: '表達驚訝或不滿。',
+                    examples: [{ japanese: '一{いち}日{にち}も休{やす}めない。', chinese: '一天都不能休息。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_mo_quantity_1',
+                sentence: '二{に}時{じ}間{かん}（　）待{ま}った。',
+                options: ['も', 'で', 'に', 'まで'],
+                correctIndex: 0,
+                explanation: '時間之多用「も」。'
+            },
+            {
+                id: 'n4_mo_quantity_2',
+                sentence: '今日{きょう}は三{さん}回{かい}（　）間違{まちが}えた。',
+                options: ['も', 'と', 'に', 'が'],
+                correctIndex: 0,
+                explanation: '強調次數之多。'
+            },
+            {
+                id: 'n4_mo_quantity_3',
+                sentence: '雨{あめ}が五{ご}日{にち}（　）続{つづ}いている。',
+                options: ['も', 'まで', 'から', 'で'],
+                correctIndex: 0,
+                explanation: '強調「多達五天」。'
+            }
+        ]
+    },
+    'n4_na_prohibitive': {
+        id: 'n4_na_prohibitive',
+        pattern: 'な',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} + な',
+        translation: '不要... (禁止)',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '禁止命令',
+                description: '用於強烈的禁止，語氣較直接。',
+                examples: [
+                    { japanese: '入{はい}るな。', chinese: '不要進來。' },
+                    { japanese: '忘{わす}れるな。', chinese: '不要忘記。' },
+                    { japanese: '動{うご}くな。', chinese: '不要動。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '禮貌說法',
+            description: '要更委婉可用「ないでください」。',
+            points: [
+                {
+                    rule: 'な：強烈禁止。',
+                    examples: [{ japanese: 'ここで走{はし}るな。', chinese: '不要在這裡跑。' }]
+                },
+                {
+                    rule: 'ないでください：禮貌禁止。',
+                    examples: [{ japanese: 'ここで走{はし}らないでください。', chinese: '請不要在這裡跑。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_na_prohibitive_1',
+                sentence: 'ここでタバコを吸{す}う（　）。',
+                options: ['な', 'で', 'に', 'と'],
+                correctIndex: 0,
+                explanation: '禁止命令。'
+            },
+            {
+                id: 'n4_na_prohibitive_2',
+                sentence: '遅{おそ}くまで起{お}きる（　）。',
+                options: ['な', 'よ', 'ね', 'か'],
+                correctIndex: 0,
+                explanation: '不要熬夜。'
+            },
+            {
+                id: 'n4_na_prohibitive_3',
+                sentence: '危{あぶ}ないから近{ちか}づく（　）。',
+                options: ['な', 'で', 'に', 'を'],
+                correctIndex: 0,
+                explanation: '禁止靠近。'
+            }
+        ]
+    },
+    'n4_nakereba_ikenai': {
+        id: 'n4_nakereba_ikenai',
+        pattern: 'なければいけない',
+        connection: '動{どう}詞{し}ない形{けい} + なければいけない',
+        translation: '必須...; 不...不行',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '義務或必要',
+                description: '表示必須做某事，語氣較強。',
+                examples: [
+                    { japanese: '明日{あした}は早{はや}く起{お}きなければいけない。', chinese: '明天必須早起。' },
+                    { japanese: '宿題{しゅくだい}を出{だ}さなければいけない。', chinese: '作業必須交。' },
+                    { japanese: '薬{くすり}を飲{の}まなければいけない。', chinese: '必須吃藥。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「なければならない」',
+            description: '意思相同，但「ならない」較正式。',
+            points: [
+                {
+                    rule: 'なければいけない：口語常用。',
+                    examples: [{ japanese: '急{いそ}がなければいけない。', chinese: '必須快點。' }]
+                },
+                {
+                    rule: 'なければならない：正式語氣。',
+                    examples: [{ japanese: '報告{ほうこく}しなければならない。', chinese: '必須報告。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_nakereba_ikenai_1',
+                sentence: '今日{きょう}は早{はや}く寝{ね}（　）いけない。',
+                options: ['なければ', 'なくて', 'ないで', 'なく'],
+                correctIndex: 0,
+                explanation: '「なければいけない」。'
+            },
+            {
+                id: 'n4_nakereba_ikenai_2',
+                sentence: '宿題{しゅくだい}をしなければ（　）。',
+                options: ['いけない', 'いい', 'だめ', 'ならない'],
+                correctIndex: 0,
+                explanation: '必須做某事。'
+            },
+            {
+                id: 'n4_nakereba_ikenai_3',
+                sentence: '会議{かいぎ}に（　）なければいけない。',
+                options: ['出{で}', '出{で}る', '出{で}た', '出{で}て'],
+                correctIndex: 1,
+                explanation: '動詞ない形的基礎是辞書形。'
+            }
+        ]
+    },
+    'n4_nasaru': {
+        id: 'n4_nasaru',
+        pattern: 'なさる',
+        connection: 'する → なさる\nなさいます（丁寧）',
+        translation: '做 (尊敬語)',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '尊敬語的「する」',
+                description: '用於尊敬對方或第三者的行為。',
+                examples: [
+                    { japanese: '社長{しゃちょう}は今{いま}会議{かいぎ}をなさっています。', chinese: '社長正在開會。' },
+                    { japanese: 'どうなさいましたか。', chinese: '怎麼了呢？' },
+                    { japanese: 'お飲{の}み物{もの}は何{なに}になさいますか。', chinese: '您要喝什麼？' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '尊敬語的其他形式',
+            description: '也可用「お〜になる」。',
+            points: [
+                {
+                    rule: 'なさる：固定動詞。',
+                    examples: [{ japanese: '先生{せんせい}は今{いま}読{よ}みなさっています。', chinese: '老師正在閱讀。' }]
+                },
+                {
+                    rule: 'お〜になる：一般尊敬表現。',
+                    examples: [{ japanese: '先生{せんせい}は今{いま}お読{よ}みになっています。', chinese: '老師正在閱讀。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_nasaru_1',
+                sentence: '部長{ぶちょう}はどこへ（　）ましたか。',
+                options: ['なさい', 'なさ', 'なさり', 'なさる'],
+                correctIndex: 0,
+                explanation: '過去丁寧形「なさいました」。'
+            },
+            {
+                id: 'n4_nasaru_2',
+                sentence: '社長{しゃちょう}は今{いま}会議{かいぎ}を（　）います。',
+                options: ['なさって', 'して', 'させて', 'されて'],
+                correctIndex: 0,
+                explanation: '尊敬語「なさる」。'
+            },
+            {
+                id: 'n4_nasaru_3',
+                sentence: 'お茶{ちゃ}は何{なに}に（　）か。',
+                options: ['なさいます', 'なさる', 'します', 'いたします'],
+                correctIndex: 0,
+                explanation: '丁寧尊敬語。'
+            }
+        ]
+    },
+    'n4_ni_ki_ga_tsuku': {
+        id: 'n4_ni_ki_ga_tsuku',
+        pattern: 'に気{き}がつく',
+        connection: '名{めい}詞{し} / こと + に気{き}がつく',
+        translation: '注意到...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '發現或察覺',
+                description: '表示注意到某件事或突然想起。',
+                examples: [
+                    { japanese: '電車{でんしゃ}で財布{さいふ}を忘{わす}れたことに気{き}がついた。', chinese: '發現把錢包忘在電車上了。' },
+                    { japanese: '彼{かれ}のやさしさに気{き}がついた。', chinese: '注意到他的溫柔。' },
+                    { japanese: '鍵{かぎ}がないことに気{き}がつく。', chinese: '察覺沒有鑰匙。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「気づく」',
+            description: '「気がつく」與「気づく」幾乎同義。',
+            points: [
+                {
+                    rule: '気がつく：稍正式。',
+                    examples: [{ japanese: '間違{まちが}いに気{き}がついた。', chinese: '注意到錯誤。' }]
+                },
+                {
+                    rule: '気づく：口語常用。',
+                    examples: [{ japanese: '間違{まちが}いに気{き}づいた。', chinese: '注意到錯誤。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_ni_ki_ga_tsuku_1',
+                sentence: '忘{わす}れ物{もの}に気{き}が（　）。',
+                options: ['ついた', 'つけた', 'つく', 'ついて'],
+                correctIndex: 0,
+                explanation: '過去形「気がついた」。'
+            },
+            {
+                id: 'n4_ni_ki_ga_tsuku_2',
+                sentence: '家{いえ}に着{つ}いてから、財布{さいふ}がないことに気{き}が（　）。',
+                options: ['ついた', 'つけた', 'つく', 'ついて'],
+                correctIndex: 0,
+                explanation: '到家後發現。'
+            },
+            {
+                id: 'n4_ni_ki_ga_tsuku_3',
+                sentence: 'ミスに気{き}が（　）ので、すぐ直{なお}した。',
+                options: ['ついた', 'つけた', 'つく', 'ついて'],
+                correctIndex: 0,
+                explanation: '注意到錯誤。'
+            }
+        ]
+    },
+    'n4_ni_mieru': {
+        id: 'n4_ni_mieru',
+        pattern: 'に見{み}える / にみえる',
+        connection: '名{めい}詞{し} / な形{けい}容{よう}詞{し} / い形{けい}容{よう}詞{し} + に見{み}える',
+        translation: '看起來像...; 看起來...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '外觀判斷',
+                description: '表示從外觀或印象看起來是某種樣子。',
+                examples: [
+                    { japanese: '彼{かれ}は学{がく}生{せい}に見{み}える。', chinese: '他看起來像學生。' },
+                    { japanese: 'その絵{え}は本物{ほんもの}に見{み}える。', chinese: '那幅畫看起來像真的。' },
+                    { japanese: '元気{げんき}に見{み}える。', chinese: '看起來很有精神。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「そうだ」との違い',
+            description: '「に見える」偏視覺印象，「そうだ」偏當下樣態。',
+            points: [
+                {
+                    rule: 'に見える：外觀/印象。',
+                    examples: [{ japanese: '彼{かれ}は優{やさ}しそうに見{み}える。', chinese: '他看起來很溫柔。' }]
+                },
+                {
+                    rule: 'そうだ：樣態推測。',
+                    examples: [{ japanese: '雨{あめ}が降{ふ}りそうだ。', chinese: '看起來要下雨。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_ni_mieru_1',
+                sentence: '彼{かれ}は医者{いしゃ}（　）見{み}える。',
+                options: ['に', 'で', 'を', 'が'],
+                correctIndex: 0,
+                explanation: '「〜に見える」。'
+            },
+            {
+                id: 'n4_ni_mieru_2',
+                sentence: 'この服{ふく}は新{あたら}しく（　）。',
+                options: ['見{み}える', '見{み}せる', '見{み}えた', '見{み}せた'],
+                correctIndex: 0,
+                explanation: '「新しく見える」。'
+            },
+            {
+                id: 'n4_ni_mieru_3',
+                sentence: '子{こ}供{とも}（　）見{み}える。',
+                options: ['に', 'で', 'を', 'が'],
+                correctIndex: 0,
+                explanation: '名詞 + に見える。'
+            }
+        ]
+    },
+    'n4_ni_suru_make': {
+        id: 'n4_ni_suru_make',
+        pattern: 'にする',
+        connection: 'な形{けい}容{よう}詞{し}語幹{ごかん} + にする\n名{めい}詞{し} + にする',
+        translation: '使...變成; 使成...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '讓事物變成某狀態',
+                description: '把事物變成某種狀態或做出選擇。',
+                examples: [
+                    { japanese: '部屋{へや}を静{しず}かにする。', chinese: '讓房間安靜。' },
+                    { japanese: '写真{しゃしん}を大切{たいせつ}にする。', chinese: '珍惜照片。' },
+                    { japanese: 'コーヒーにする。', chinese: '我選咖啡。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: 'い形容詞的用法',
+            description: 'い形容詞要用「くする」。',
+            points: [
+                {
+                    rule: 'な形容詞/名詞：にする。',
+                    examples: [{ japanese: '部屋{へや}をきれいにする。', chinese: '把房間弄乾淨。' }]
+                },
+                {
+                    rule: 'い形容詞：くする。',
+                    examples: [{ japanese: '音{おと}を小{ちい}さくする。', chinese: '把音量調小。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_ni_suru_make_1',
+                sentence: '電気{でんき}を消{け}して部屋{へや}を暗{くら}く（　）。',
+                options: ['する', 'にする', 'なる', 'になる'],
+                correctIndex: 0,
+                explanation: 'い形容詞は「くする」。'
+            },
+            {
+                id: 'n4_ni_suru_make_2',
+                sentence: '教室{きょうしつ}を静{しず}か（　）してください。',
+                options: ['に', 'く', 'で', 'を'],
+                correctIndex: 0,
+                explanation: 'な形容詞語幹 + にする。'
+            },
+            {
+                id: 'n4_ni_suru_make_3',
+                sentence: '注文{ちゅうもん}はカレー（　）します。',
+                options: ['に', 'を', 'で', 'へ'],
+                correctIndex: 0,
+                explanation: '選擇用「にする」。'
+            }
+        ]
+    },
+    'n4_no_naka_de': {
+        id: 'n4_no_naka_de',
+        pattern: 'の中{なか}で',
+        connection: '名{めい}詞{し} + の中{なか}で',
+        translation: '在...之中; 在...裡',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '範圍或群體內',
+                description: '表示「在...範圍內」或「在...裡面」，也可用於比較。',
+                examples: [
+                    { japanese: 'このクラスの中{なか}で私{わたし}が一番{いちばん}若{わか}い。', chinese: '在這個班裡我最年輕。' },
+                    { japanese: '部屋{へや}の中{なか}で待{ま}ってください。', chinese: '請在房間裡等。' },
+                    { japanese: '四季{しき}の中{なか}で春{はる}が好{す}きです。', chinese: '四季之中我喜歡春天。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「の中で」與「の中に」',
+            description: '前者偏範圍/比較，後者偏位置。',
+            points: [
+                {
+                    rule: 'の中で：在...之中（範圍、比較）。',
+                    examples: [{ japanese: '家族{かぞく}の中{なか}で父{ちち}が一番{いちばん}忙{いそが}しい。', chinese: '家人裡爸爸最忙。' }]
+                },
+                {
+                    rule: 'の中に：在...裡面（位置）。',
+                    examples: [{ japanese: '箱{はこ}の中{なか}に入{はい}れてください。', chinese: '請放進盒子裡。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_no_naka_de_1',
+                sentence: 'この三人{さんにん}の（　）彼{かれ}が一番{いちばん}背{せ}が高{たか}い。',
+                options: ['中{なか}で', '中{なか}に', '中{なか}へ', '中{なか}を'],
+                correctIndex: 0,
+                explanation: '比較用法。'
+            },
+            {
+                id: 'n4_no_naka_de_2',
+                sentence: '家{いえ}の中{なか}（　）遊{あそ}ばないで。',
+                options: ['で', 'に', 'へ', 'を'],
+                correctIndex: 0,
+                explanation: '場所範圍內的動作。'
+            },
+            {
+                id: 'n4_no_naka_de_3',
+                sentence: '果物{くだもの}の（　）りんごが一番{いちばん}好{す}きです。',
+                options: ['中{なか}で', '中{なか}に', '中{なか}へ', '中{なか}を'],
+                correctIndex: 0,
+                explanation: '範圍內比較。'
+            }
+        ]
+    },
+    'n4_no_wa_da': {
+        id: 'n4_no_wa_da',
+        pattern: 'のは〜だ',
+        connection: '動{どう}詞{し}普通{ふつう}形{けい} + のは + 名{めい}詞{し} / 形{けい}容{よう}詞{し}',
+        translation: '...的是...; ...的原因是...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '主題或理由說明',
+                description: '用於強調某件事或解釋原因。',
+                examples: [
+                    { japanese: '私{わたし}が好{す}きなのはコーヒーだ。', chinese: '我喜歡的是咖啡。' },
+                    { japanese: '遅{おく}れたのは電車{でんしゃ}のせいだ。', chinese: '遲到的原因是電車。' },
+                    { japanese: '大変{たいへん}なのは準備{じゅんび}だ。', chinese: '最辛苦的是準備。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '焦點強調',
+            description: '「のは〜だ」可突出焦點。',
+            points: [
+                {
+                    rule: '強調主題。',
+                    examples: [{ japanese: '重要{じゅうよう}なのは時間{じかん}だ。', chinese: '重要的是時間。' }]
+                },
+                {
+                    rule: '說明原因。',
+                    examples: [{ japanese: '失敗{しっぱい}したのは準備{じゅんび}不足{ぶそく}だ。', chinese: '失敗的原因是準備不足。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_no_wa_da_1',
+                sentence: '私{わたし}が欲{ほ}しいのは新{あたら}しい自転車{じてんしゃ}（　）。',
+                options: ['だ', 'です', 'だった', 'で'],
+                correctIndex: 0,
+                explanation: '「のは〜だ」構文。'
+            },
+            {
+                id: 'n4_no_wa_da_2',
+                sentence: '会議{かいぎ}が長{なが}いのは資料{しりょう}が多{おお}い（　）。',
+                options: ['からだ', 'のに', 'ためだ', 'ので'],
+                correctIndex: 2,
+                explanation: '「〜のは...ためだ」。'
+            },
+            {
+                id: 'n4_no_wa_da_3',
+                sentence: '私{わたし}が驚{おどろ}いたのはその話{はなし}（　）。',
+                options: ['だ', 'で', 'に', 'を'],
+                correctIndex: 0,
+                explanation: '名詞述語。'
+            }
+        ]
+    },
+    'n4_o_kudasai': {
+        id: 'n4_o_kudasai',
+        pattern: 'お〜ください',
+        connection: 'お + 動{どう}詞{し}ます形{けい} + ください',
+        translation: '請... (尊敬語)',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '尊敬語的請求',
+                description: '對對方提出較正式、禮貌的請求。',
+                examples: [
+                    { japanese: 'こちらでお待{ま}ちください。', chinese: '請在這裡等候。' },
+                    { japanese: 'お名{な}前{まえ}をお書{か}きください。', chinese: '請寫下您的姓名。' },
+                    { japanese: 'どうぞお入{はい}りください。', chinese: '請進。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '與「てください」',
+            description: '「お〜ください」更禮貌。',
+            points: [
+                {
+                    rule: 'お〜ください：尊敬語。',
+                    examples: [{ japanese: 'こちらへお越{こ}しください。', chinese: '請過來這邊。' }]
+                },
+                {
+                    rule: 'てください：一般請求。',
+                    examples: [{ japanese: 'ここで待{ま}ってください。', chinese: '請在這裡等。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_o_kudasai_1',
+                sentence: 'ここにお名{な}前{まえ}を（　）ください。',
+                options: ['お書{か}き', '書{か}い', '書{か}き', '書{か}いて'],
+                correctIndex: 0,
+                explanation: 'ます形語幹 + お + ください。'
+            },
+            {
+                id: 'n4_o_kudasai_2',
+                sentence: '少々{しょうしょう}お待{ま}ち（　）。',
+                options: ['ください', 'します', 'なさい', 'です'],
+                correctIndex: 0,
+                explanation: '定型表現。'
+            },
+            {
+                id: 'n4_o_kudasai_3',
+                sentence: 'こちらからお入{はい}り（　）。',
+                options: ['ください', 'します', 'なさい', 'です'],
+                correctIndex: 0,
+                explanation: '敬語請求。'
+            }
+        ]
+    },
+    'n4_o_ni_naru': {
+        id: 'n4_o_ni_naru',
+        pattern: 'お〜になる',
+        connection: 'お + 動{どう}詞{し}ます形{けい} + になる',
+        translation: '做... (尊敬語)',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '尊敬語的動作',
+                description: '用於尊敬對方或第三者的行為。',
+                examples: [
+                    { japanese: '社長{しゃちょう}はもうお帰{かえ}りになりました。', chinese: '社長已經回去了。' },
+                    { japanese: '先生{せんせい}は本{ほん}をお読{よ}みになります。', chinese: '老師讀書。' },
+                    { japanese: '何{なに}をお飲{の}みになりますか。', chinese: '您要喝什麼？' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「なさる」との關係',
+            description: '兩者皆為尊敬語。',
+            points: [
+                {
+                    rule: 'お〜になる：一般尊敬語。',
+                    examples: [{ japanese: 'お待{ま}ちになります。', chinese: '等候。' }]
+                },
+                {
+                    rule: 'なさる：特別動詞「する」的尊敬語。',
+                    examples: [{ japanese: 'どうなさいましたか。', chinese: '怎麼了呢？' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_o_ni_naru_1',
+                sentence: '先生{せんせい}は今{いま}お休{やす}み（　）。',
+                options: ['になっています', 'しています', 'します', 'なさいます'],
+                correctIndex: 0,
+                explanation: '尊敬語「お〜になる」。'
+            },
+            {
+                id: 'n4_o_ni_naru_2',
+                sentence: '何{なに}をお飲{の}み（　）か。',
+                options: ['になります', 'します', 'なさいます', 'でした'],
+                correctIndex: 0,
+                explanation: '定型「お飲みになりますか」。'
+            },
+            {
+                id: 'n4_o_ni_naru_3',
+                sentence: '社長{しゃちょう}はもうお帰{かえ}り（　）。',
+                options: ['になりました', 'しました', 'なさいました', 'でございます'],
+                correctIndex: 0,
+                explanation: '尊敬語。'
+            }
+        ]
+    },
+    'n4_oki_ni': {
+        id: 'n4_oki_ni',
+        pattern: 'おきに',
+        connection: '時{じ}間{かん} / 距{きょ}離{り} + おきに',
+        translation: '每...; 每隔...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '間隔',
+                description: '表示固定的時間或距離間隔。',
+                examples: [
+                    { japanese: 'バスは10分{ぷん}おきに来{き}ます。', chinese: '巴士每10分鐘來一班。' },
+                    { japanese: '薬{くすり}は2時間{じかん}おきに飲{の}みます。', chinese: '藥每兩小時吃一次。' },
+                    { japanese: '木{き}が5メートルおきに植{う}えてある。', chinese: '樹每5公尺種一棵。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「〜ごと」',
+            description: '「ごと」也表示「每」，但語感稍不同。',
+            points: [
+                {
+                    rule: 'おきに：間隔感較強。',
+                    examples: [{ japanese: '一日{いちにち}おきに走{はし}る。', chinese: '隔一天跑一次。' }]
+                },
+                {
+                    rule: 'ごとに：每次/每隔。',
+                    examples: [{ japanese: '三{さん}回{かい}ごとに休{やす}む。', chinese: '每三次休息。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_oki_ni_1',
+                sentence: '電車{でんしゃ}は5分{ぷん}（　）来{き}ます。',
+                options: ['おきに', 'ほど', 'まで', 'ころ'],
+                correctIndex: 0,
+                explanation: '固定間隔。'
+            },
+            {
+                id: 'n4_oki_ni_2',
+                sentence: '二日{ふつか}（　）運動{うんどう}している。',
+                options: ['おきに', 'までに', 'から', 'へ'],
+                correctIndex: 0,
+                explanation: '隔兩天做一次。'
+            },
+            {
+                id: 'n4_oki_ni_3',
+                sentence: 'この薬{くすり}は三時間{さんじかん}（　）飲{の}んでください。',
+                options: ['おきに', 'ころ', 'だけ', 'ほど'],
+                correctIndex: 0,
+                explanation: '每三小時一次。'
+            }
+        ]
+    },
+    'n4_owaru': {
+        id: 'n4_owaru',
+        pattern: '終{お}わる',
+        connection: '動{どう}詞{し}ます形{けい} + 終{お}わる',
+        translation: '結束; 做完',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '動作完成',
+                description: '表示某動作完成或結束。',
+                examples: [
+                    { japanese: '宿題{しゅくだい}を書{か}き終{お}わった。', chinese: '作業寫完了。' },
+                    { japanese: 'ご飯{はん}を食{た}べ終{お}わった。', chinese: '飯吃完了。' },
+                    { japanese: '会議{かいぎ}が終{お}わった。', chinese: '會議結束了。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「終わる」與「終わり」',
+            description: '「終わる」是動詞，「終わり」是名詞。',
+            points: [
+                {
+                    rule: '動詞：〜終わる。',
+                    examples: [{ japanese: '読{よ}み終{お}わる。', chinese: '讀完。' }]
+                },
+                {
+                    rule: '名詞：終わり。',
+                    examples: [{ japanese: '授業{じゅぎょう}の終{お}わり。', chinese: '課程的結束。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_owaru_1',
+                sentence: 'レポートを（　）終{お}わった。',
+                options: ['書{か}き', '書{か}く', '書{か}いた', '書{か}いて'],
+                correctIndex: 0,
+                explanation: 'ます形語幹 + 終わる。'
+            },
+            {
+                id: 'n4_owaru_2',
+                sentence: '試験{しけん}が（　）。',
+                options: ['終{お}わった', '終{お}わる', '終{お}わって', '終{お}わり'],
+                correctIndex: 0,
+                explanation: '過去形。'
+            },
+            {
+                id: 'n4_owaru_3',
+                sentence: 'ご飯{はん}を食{た}べ（　）ら電話{でんわ}します。',
+                options: ['終{お}わった', '終{お}わり', '終{お}わる', '終{お}わって'],
+                correctIndex: 0,
+                explanation: '「食べ終わったら」。'
+            }
+        ]
+    },
+    'n4_sa_nominalizer': {
+        id: 'n4_sa_nominalizer',
+        pattern: 'さ',
+        connection: 'い形{けい}容{よう}詞{し}（い → さ）\nな形{けい}容{よう}詞{し}語幹{ごかん} + さ',
+        translation: '形容詞名詞化',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '程度或特質的名詞化',
+                description: '將形容詞變為名詞，表示程度或特質。',
+                examples: [
+                    { japanese: '山{やま}の高{たか}さは1000メートルです。', chinese: '山的高度是1000公尺。' },
+                    { japanese: '静{しず}かさが好{す}きだ。', chinese: '喜歡安靜的感覺。' },
+                    { japanese: 'この部屋{へや}の広{ひろ}さは十分{じゅうぶん}だ。', chinese: '這房間的大小足夠。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '常見用法',
+            description: '多用於測量或程度表達。',
+            points: [
+                {
+                    rule: 'い形容詞：高さ、長さ。',
+                    examples: [{ japanese: '橋{はし}の長{なが}さは2キロです。', chinese: '橋長2公里。' }]
+                },
+                {
+                    rule: 'な形容詞：便利{べんり}さ、静かさ。',
+                    examples: [{ japanese: '便利{べんり}さを重視{じゅうし}する。', chinese: '重視便利性。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_sa_nominalizer_1',
+                sentence: 'この池{いけ}の深{ふか}（　）はどのくらいですか。',
+                options: ['さ', 'み', 'く', 'に'],
+                correctIndex: 0,
+                explanation: '「深さ」。'
+            },
+            {
+                id: 'n4_sa_nominalizer_2',
+                sentence: '静{しず}か（　）が大切{たいせつ}です。',
+                options: ['さ', 'み', 'に', 'く'],
+                correctIndex: 0,
+                explanation: 'な形容詞語幹 + さ。'
+            },
+            {
+                id: 'n4_sa_nominalizer_3',
+                sentence: '山{やま}の高{たか}（　）を比{くら}べる。',
+                options: ['さ', 'み', 'で', 'に'],
+                correctIndex: 0,
+                explanation: '名詞化「高さ」。'
+            }
+        ]
+    },
+    'n4_sakki': {
+        id: 'n4_sakki',
+        pattern: 'さっき',
+        connection: 'さっき + 文',
+        translation: '剛才',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '剛剛發生的事',
+                description: '指不久前的時間。',
+                examples: [
+                    { japanese: 'さっき電話{でんわ}がありました。', chinese: '剛才有電話。' },
+                    { japanese: 'さっき会{あ}ったよ。', chinese: '剛才見過了。' },
+                    { japanese: 'さっきまで雨{あめ}だった。', chinese: '剛剛還在下雨。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「さきほど」',
+            description: '「さきほど」更正式。',
+            points: [
+                {
+                    rule: 'さっき：口語。',
+                    examples: [{ japanese: 'さっき見{み}た。', chinese: '剛才看過。' }]
+                },
+                {
+                    rule: 'さきほど：較正式。',
+                    examples: [{ japanese: 'さきほど申{もう}し上{あ}げました。', chinese: '剛才已經說過了。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_sakki_1',
+                sentence: '（　）まで寝{ね}ていた。',
+                options: ['さっき', 'さっさと', 'すぐ', 'やっと'],
+                correctIndex: 0,
+                explanation: '剛才。'
+            },
+            {
+                id: 'n4_sakki_2',
+                sentence: 'さっき何{なに}（　）？',
+                options: ['言{い}った', '言{い}う', '言{い}って', '言{い}わ'],
+                correctIndex: 0,
+                explanation: '過去形。'
+            },
+            {
+                id: 'n4_sakki_3',
+                sentence: '（　）の話{はなし}、もう一度{いちど}聞{き}たい。',
+                options: ['さっき', 'さっさと', 'すぐ', 'やっと'],
+                correctIndex: 0,
+                explanation: '剛才的。'
+            }
+        ]
+    },
+    'n4_saserareru': {
+        id: 'n4_saserareru',
+        pattern: 'させられる',
+        connection: '動{どう}詞{し}使役形{しえきけい} + られる',
+        translation: '被迫做...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '使役被動',
+                description: '表示「被迫做某事」，帶有不情願的語氣。',
+                examples: [
+                    { japanese: '残業{ざんぎょう}させられた。', chinese: '被迫加班。' },
+                    { japanese: '一{いち}時間{じかん}も待{ま}たされた。', chinese: '被迫等了一個小時。' },
+                    { japanese: '掃除{そうじ}をさせられた。', chinese: '被迫打掃。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '主體與施事',
+            description: '被迫的人為主語，施事用「に」。',
+            points: [
+                {
+                    rule: 'AはBに〜させられる。',
+                    examples: [{ japanese: '私{わたし}は上司{じょうし}に謝{あやま}らせられた。', chinese: '我被上司逼著道歉。' }]
+                },
+                {
+                    rule: '語氣帶有不滿或被動感。',
+                    examples: [{ japanese: '無理{むり}な仕事{しごと}をさせられた。', chinese: '被迫做不合理的工作。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_saserareru_1',
+                sentence: '子{こ}供{とも}に野菜{やさい}を食{た}べ（　）。',
+                options: ['させられる', 'させる', 'される', 'させて'],
+                correctIndex: 0,
+                explanation: '被迫吃。'
+            },
+            {
+                id: 'n4_saserareru_2',
+                sentence: '先生{せんせい}に長{なが}い作文{さくぶん}を（　）。',
+                options: ['書{か}かせられた', '書{か}かせる', '書{か}かされた', '書{か}かせて'],
+                correctIndex: 0,
+                explanation: '使役被動。'
+            },
+            {
+                id: 'n4_saserareru_3',
+                sentence: '友{とも}達{だち}に二{に}時間{じかん}も（　）。',
+                options: ['待{ま}たされた', '待{ま}たせた', '待{ま}たされる', '待{ま}たせる'],
+                correctIndex: 0,
+                explanation: '被迫等待。'
+            }
+        ]
+    },
+    'n4_sasete_kudasai': {
+        id: 'n4_sasete_kudasai',
+        pattern: 'させてください',
+        connection: '動{どう}詞{し}使役形{しえきけい}て形{けい} + ください',
+        translation: '請讓我...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '請求允許',
+                description: '表示請求對方允許自己做某事。',
+                examples: [
+                    { japanese: '説明{せつめい}させてください。', chinese: '請讓我說明。' },
+                    { japanese: '少{すこ}し休{やす}ませてください。', chinese: '請讓我休息一下。' },
+                    { japanese: '確認{かくにん}させてください。', chinese: '請讓我確認。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '使用場合',
+            description: '對上級或客人時常用，語氣較客氣。',
+            points: [
+                {
+                    rule: '使役て形 + ください。',
+                    examples: [{ japanese: '報告{ほうこく}させてください。', chinese: '請讓我報告。' }]
+                },
+                {
+                    rule: '也可用「いただけますか」。',
+                    examples: [{ japanese: '説明{せつめい}させていただけますか。', chinese: '可以讓我說明嗎？' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_sasete_kudasai_1',
+                sentence: '少{すこ}し考{かんが}え（　）ください。',
+                options: ['させて', 'させる', 'させられ', 'させた'],
+                correctIndex: 0,
+                explanation: '使役て形 + ください。'
+            },
+            {
+                id: 'n4_sasete_kudasai_2',
+                sentence: '今日{きょう}は早{はや}く帰{かえ}ら（　）ください。',
+                options: ['せて', 'せる', 'せられ', 'せた'],
+                correctIndex: 0,
+                explanation: '「帰らせてください」。'
+            },
+            {
+                id: 'n4_sasete_kudasai_3',
+                sentence: '私{わたし}に説明{せつめい}（　）ください。',
+                options: ['させて', 'させる', 'させた', 'させられ'],
+                correctIndex: 0,
+                explanation: '請讓我說明。'
+            }
+        ]
+    },
+    'n4_sasuga': {
+        id: 'n4_sasuga',
+        pattern: 'さすが',
+        connection: 'さすが + 名{めい}詞{し} / 文',
+        translation: '不愧是; 果然',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '符合期待的評價',
+                description: '用於稱讚或感嘆，表示「果然如此」。',
+                examples: [
+                    { japanese: 'さすが先{せん}生{せい}だ。', chinese: '不愧是老師。' },
+                    { japanese: 'さすがに早{はや}いね。', chinese: '果然很快。' },
+                    { japanese: '彼{かれ}はさすがに強{つよ}い。', chinese: '他果然很強。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「さすがに」的語氣',
+            description: '可加「に」增強語氣。',
+            points: [
+                {
+                    rule: 'さすがに：強調「真的、確實」。',
+                    examples: [{ japanese: 'さすがに疲{つか}れた。', chinese: '真的累了。' }]
+                },
+                {
+                    rule: 'さすが：稱讚或感嘆。',
+                    examples: [{ japanese: 'さすが有名{ゆうめい}店{てん}だ。', chinese: '不愧是有名店。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_sasuga_1',
+                sentence: '（　）プロだね。',
+                options: ['さすが', 'すぐに', 'それでも', 'そんなに'],
+                correctIndex: 0,
+                explanation: '稱讚語氣。'
+            },
+            {
+                id: 'n4_sasuga_2',
+                sentence: 'さすが（　）上{う}まい。',
+                options: ['に', 'で', 'を', 'へ'],
+                correctIndex: 0,
+                explanation: '「さすがに」固定用法。'
+            },
+            {
+                id: 'n4_sasuga_3',
+                sentence: '彼{かれ}は経験{けいけん}が多{おお}いから（　）。',
+                options: ['さすがだ', 'すぐだ', 'そんなだ', 'それでもだ'],
+                correctIndex: 0,
+                explanation: '符合期待。'
+            }
+        ]
+    },
+    'n4_sonna_ni': {
+        id: 'n4_sonna_ni',
+        pattern: 'そんなに',
+        connection: 'そんなに + 動{どう}詞{し} / 形{けい}容{よう}詞{し}',
+        translation: '那麼...; 那麼多...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '程度強調',
+                description: '表示程度之大或超出預期，也常用於否定。',
+                examples: [
+                    { japanese: 'そんなに高{たか}くない。', chinese: '沒那麼貴。' },
+                    { japanese: 'そんなに急{いそ}がないで。', chinese: '不要那麼急。' },
+                    { japanese: 'そんなにたくさん食{た}べない。', chinese: '不吃那麼多。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '語氣用法',
+            description: '可表驚訝、安慰或勸阻。',
+            points: [
+                {
+                    rule: '否定中常見：そんなに〜ない。',
+                    examples: [{ japanese: 'そんなに心配{しんぱい}しないで。', chinese: '別那麼擔心。' }]
+                },
+                {
+                    rule: '肯定也可用於強調。',
+                    examples: [{ japanese: 'そんなに忙{いそが}しいの？', chinese: '有那麼忙嗎？' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_sonna_ni_1',
+                sentence: '（　）悲{かな}しまないで。',
+                options: ['そんなに', 'さすが', 'それでも', 'すぐに'],
+                correctIndex: 0,
+                explanation: '程度強調。'
+            },
+            {
+                id: 'n4_sonna_ni_2',
+                sentence: 'この店{みせ}は（　）高{たか}くない。',
+                options: ['そんなに', 'さすが', 'それでも', 'やっと'],
+                correctIndex: 0,
+                explanation: '否定用法。'
+            },
+            {
+                id: 'n4_sonna_ni_3',
+                sentence: '（　）走{はし}らなくても間{ま}に合{あ}うよ。',
+                options: ['そんなに', 'すぐ', 'さすが', 'だんだん'],
+                correctIndex: 0,
+                explanation: '不要那麼急。'
+            }
+        ]
+    },
+    'n4_sore_demo': {
+        id: 'n4_sore_demo',
+        pattern: 'それでも',
+        connection: 'それでも + 文',
+        translation: '即使如此; 仍然',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '轉折與堅持',
+                description: '表示前後內容相反或違背預期，但後句仍成立。',
+                examples: [
+                    { japanese: '雨{あめ}が降{ふ}っている。それでも行{い}く。', chinese: '下雨了，但我還是要去。' },
+                    { japanese: '反対{はんたい}された。それでもやる。', chinese: '被反對了，但還是要做。' },
+                    { japanese: '疲{つか}れた。それでも頑張{がんば}る。', chinese: '很累，但還是要努力。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「でも」的銜接',
+            description: '「それでも」常承接前句內容。',
+            points: [
+                {
+                    rule: '句首使用，承接前句。',
+                    examples: [{ japanese: '高{たか}い。それでも買{か}う。', chinese: '很貴，但我還是買。' }]
+                },
+                {
+                    rule: '表達強烈的堅持。',
+                    examples: [{ japanese: '難{むずか}しい。それでも挑戦{ちょうせん}する。', chinese: '很難，但還是要挑戰。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_sore_demo_1',
+                sentence: '雨{あめ}だ。（　）出{で}かける。',
+                options: ['それでも', 'それに', 'それで', 'そして'],
+                correctIndex: 0,
+                explanation: '轉折。'
+            },
+            {
+                id: 'n4_sore_demo_2',
+                sentence: '反対{はんたい}された。（　）あきらめない。',
+                options: ['それでも', 'それで', 'それに', 'だから'],
+                correctIndex: 0,
+                explanation: '仍然。'
+            },
+            {
+                id: 'n4_sore_demo_3',
+                sentence: '忙{いそが}しい。（　）手伝{てつだ}うよ。',
+                options: ['それでも', 'それで', 'それに', 'それから'],
+                correctIndex: 0,
+                explanation: '即使如此。'
+            }
+        ]
+    },
+    'n4_sou_ni_sou_na': {
+        id: 'n4_sou_ni_sou_na',
+        pattern: 'そうに / そうな',
+        connection: '動{どう}詞{し}ます形{けい} + そうに / そうな\nい形{けい}容{よう}詞{し}（い → そう）\nな形{けい}容{よう}詞{し}語幹{ごかん} + そうな',
+        translation: '看起來...; 似乎...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '外觀或樣態',
+                description: '描述「看起來」的狀態，可修飾名詞或動詞。',
+                examples: [
+                    { japanese: '楽{たの}しそうな人{ひと}だ。', chinese: '看起來很開心的人。' },
+                    { japanese: '眠{ねむ}そうに見{み}える。', chinese: '看起來很想睡。' },
+                    { japanese: '雨{あめ}が降{ふ}りそうだ。', chinese: '看起來要下雨。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「そうだ」との區別',
+            description: '「そうだ」作句尾判斷，「そうな/そうに」修飾。',
+            points: [
+                {
+                    rule: 'そうだ：句尾。',
+                    examples: [{ japanese: 'この料理{りょうり}はおいしそうだ。', chinese: '這道菜看起來很好吃。' }]
+                },
+                {
+                    rule: 'そうな/そうに：修飾名詞或動詞。',
+                    examples: [{ japanese: 'おいしそうな料理{りょうり}。', chinese: '看起來很好吃的料理。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_sou_ni_sou_na_1',
+                sentence: '彼{かれ}は眠{ねむ}（　）に見{み}える。',
+                options: ['そう', 'そうだ', 'そうな', 'そうに'],
+                correctIndex: 3,
+                explanation: '副詞修飾用「そうに」。'
+            },
+            {
+                id: 'n4_sou_ni_sou_na_2',
+                sentence: '楽し（　）子{こ}供{とも}たち。',
+                options: ['そうな', 'そうに', 'そうだ', 'そう'],
+                correctIndex: 0,
+                explanation: '修飾名詞用「そうな」。'
+            },
+            {
+                id: 'n4_sou_ni_sou_na_3',
+                sentence: '雨{あめ}が降{ふ}り（　）。',
+                options: ['そうだ', 'そうな', 'そうに', 'そうで'],
+                correctIndex: 0,
+                explanation: '句尾判斷用「そうだ」。'
+            }
+        ]
+    },
+    'n4_ta_tokoro': {
+        id: 'n4_ta_tokoro',
+        pattern: 'たところ',
+        connection: '動{どう}詞{し}た形{けい} + ところ',
+        translation: '剛剛...; ...結果...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '剛剛做完',
+                description: '表示動作剛結束，也可表示「做了之後，結果...」。',
+                examples: [
+                    { japanese: '今{いま}起{お}きたところです。', chinese: '我剛剛起床。' },
+                    { japanese: '調{しら}べたところ、間違{まちが}いが見{み}つかった。', chinese: '查了之後，發現錯誤。' },
+                    { japanese: '食{た}べたところです。', chinese: '剛吃完。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「たばかり」との違い',
+            description: '「たところ」較客觀，「たばかり」較主觀。',
+            points: [
+                {
+                    rule: 'たところ：動作剛結束或結果。',
+                    examples: [{ japanese: '調{しら}べたところ、問題{もんだい}があった。', chinese: '查了之後有問題。' }]
+                },
+                {
+                    rule: 'たばかり：主觀地「剛剛」。',
+                    examples: [{ japanese: 'さっき来{き}たばかりだ。', chinese: '我才剛來。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_ta_tokoro_1',
+                sentence: '今{いま}帰{かえ}った（　）です。',
+                options: ['ところ', 'ばかり', 'とき', 'まま'],
+                correctIndex: 0,
+                explanation: '剛回來。'
+            },
+            {
+                id: 'n4_ta_tokoro_2',
+                sentence: '病院{びょういん}で検査{けんさ}した（　）、問題{もんだい}はなかった。',
+                options: ['ところ', 'ながら', 'ばかり', 'まで'],
+                correctIndex: 0,
+                explanation: '「做了之後的結果」。'
+            },
+            {
+                id: 'n4_ta_tokoro_3',
+                sentence: '今{いま}ちょうど出{で}た（　）です。',
+                options: ['ところ', 'とき', 'まま', 'ほど'],
+                correctIndex: 0,
+                explanation: '剛剛。'
+            }
+        ]
+    },
+    'n4_tadoushi_jidoushi': {
+        id: 'n4_tadoushi_jidoushi',
+        pattern: '他動詞{たどうし}・自動詞{じどうし}',
+        connection: '他動詞: を + 動詞\n自動詞: が + 動詞',
+        translation: '他動詞與自動詞',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '動作與變化的對比',
+                description: '他動詞有動作的施事，自動詞表示狀態或變化。',
+                examples: [
+                    { japanese: 'ドアを開{あ}ける（他動詞）／ドアが開{あ}く（自動詞）。', chinese: '開門／門開了。' },
+                    { japanese: '窓{まど}を閉{し}める／窓{まど}が閉{し}まる。', chinese: '關窗／窗關上了。' },
+                    { japanese: '電気{でんき}をつける／電気{でんき}がつく。', chinese: '開燈／燈亮了。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '助詞の違い',
+            description: '他動詞多用「を」，自動詞多用「が」。',
+            points: [
+                {
+                    rule: '他動詞：AがBを動かす。',
+                    examples: [{ japanese: '私{わたし}が窓{まど}を開{あ}けた。', chinese: '我打開窗戶。' }]
+                },
+                {
+                    rule: '自動詞：Bが動く。',
+                    examples: [{ japanese: '窓{まど}が開{あ}いた。', chinese: '窗戶開了。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_tadoushi_jidoushi_1',
+                sentence: '私{わたし}はドアを（　）。',
+                options: ['開{あ}けた', '開{あ}いた', '開{あ}く', '開{あ}いて'],
+                correctIndex: 0,
+                explanation: '他動詞「開ける」。'
+            },
+            {
+                id: 'n4_tadoushi_jidoushi_2',
+                sentence: 'ドアが（　）。',
+                options: ['開{あ}いた', '開{あ}けた', '開{あ}ける', '開{あ}けて'],
+                correctIndex: 0,
+                explanation: '自動詞「開く」。'
+            },
+            {
+                id: 'n4_tadoushi_jidoushi_3',
+                sentence: '電気{でんき}を（　）と部屋{へや}が明{あか}るくなる。',
+                options: ['つける', 'つく', 'つけた', 'ついて'],
+                correctIndex: 0,
+                explanation: '他動詞「つける」。'
+            }
+        ]
+    },
+    'n4_tagaru': {
+        id: 'n4_tagaru',
+        pattern: 'たがる',
+        connection: '動{どう}詞{し}たい形{けい}（たい → たがる）',
+        translation: '第三人稱想要...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '他人想做',
+                description: '用於描述第三人稱想做某事的樣子。',
+                examples: [
+                    { japanese: '子{こ}供{とも}は遊{あそ}びたがっている。', chinese: '孩子想玩。' },
+                    { japanese: '彼{かれ}は帰{かえ}りたがった。', chinese: '他想回去。' },
+                    { japanese: '友{とも}達{だち}が食{た}べたがる。', chinese: '朋友想吃。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「たい」との違い',
+            description: '「たい」用於自己，「たがる」用於他人。',
+            points: [
+                {
+                    rule: '自分：〜たい。',
+                    examples: [{ japanese: '私{わたし}は休{やす}みたい。', chinese: '我想休息。' }]
+                },
+                {
+                    rule: '他人：〜たがる。',
+                    examples: [{ japanese: '彼{かれ}は休{やす}みたがる。', chinese: '他想休息。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_tagaru_1',
+                sentence: '彼{かれ}は早{はや}く帰{かえ}り（　）。',
+                options: ['たがっている', 'たい', 'たがる', 'たがった'],
+                correctIndex: 0,
+                explanation: '第三人稱的現在樣態。'
+            },
+            {
+                id: 'n4_tagaru_2',
+                sentence: '子{こ}供{とも}が外{そと}で遊{あそ}び（　）。',
+                options: ['たがる', 'たい', 'たいだ', 'たがって'],
+                correctIndex: 0,
+                explanation: '第三人稱一般傾向。'
+            },
+            {
+                id: 'n4_tagaru_3',
+                sentence: '彼{かれ}女{かのじょ}は旅行{りょこう}に行{い}き（　）いた。',
+                options: ['たがって', 'たい', 'たがる', 'たがった'],
+                correctIndex: 0,
+                explanation: '過去進行。'
+            }
+        ]
+    },
+    'n4_tara_dou': {
+        id: 'n4_tara_dou',
+        pattern: 'たらどう',
+        connection: '動{どう}詞{し}た形{けい} + らどう',
+        translation: '何不...?',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '建議',
+                description: '用於給對方建議或勸告。',
+                examples: [
+                    { japanese: '早{はや}く寝{ね}たらどう？', chinese: '早點睡怎麼樣？' },
+                    { japanese: '先生{せんせい}に聞{き}いたらどうですか。', chinese: '問問老師如何？' },
+                    { japanese: '病院{びょういん}へ行{い}ったらどう。', chinese: '去醫院怎麼樣？' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '語氣',
+            description: '較口語，語氣輕。',
+            points: [
+                {
+                    rule: 'たらどうですか：較禮貌。',
+                    examples: [{ japanese: '休{やす}んだらどうですか。', chinese: '要不要休息一下？' }]
+                },
+                {
+                    rule: 'たらどう：口語較直接。',
+                    examples: [{ japanese: '一度{いちど}やってみたらどう。', chinese: '試一次如何？' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_tara_dou_1',
+                sentence: '時間{じかん}がないなら、タクシーに乗{の}っ（　）？',
+                options: ['たらどう', 'ばいい', 'なら', 'と'],
+                correctIndex: 0,
+                explanation: '建議。'
+            },
+            {
+                id: 'n4_tara_dou_2',
+                sentence: 'もっと休{やす}ん（　）どうですか。',
+                options: ['たら', 'なら', 'と', 'ば'],
+                correctIndex: 0,
+                explanation: 'た形 + らどうですか。'
+            },
+            {
+                id: 'n4_tara_dou_3',
+                sentence: '医者{いしゃ}に診{み}てもらっ（　）。',
+                options: ['たらどう', 'なら', 'と', 'ば'],
+                correctIndex: 0,
+                explanation: '建議句。'
+            }
+        ]
+    },
+    'n4_tara_ii_desu_ka': {
+        id: 'n4_tara_ii_desu_ka',
+        pattern: 'たらいいですか',
+        connection: '動{どう}詞{し}た形{けい} + らいいですか',
+        translation: '我該怎麼做?',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '尋求指示',
+                description: '向對方詢問該採取的做法。',
+                examples: [
+                    { japanese: 'どうしたらいいですか。', chinese: '我該怎麼辦？' },
+                    { japanese: 'どこで降{お}りたらいいですか。', chinese: '要在哪一站下車？' },
+                    { japanese: '何{なに}を買{か}ったらいいですか。', chinese: '該買什麼好？' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '用途',
+            description: '表示請教或求助。',
+            points: [
+                {
+                    rule: '疑問詞 + たらいいですか。',
+                    examples: [{ japanese: 'いつ行{い}ったらいいですか。', chinese: '何時去比較好？' }]
+                },
+                {
+                    rule: 'どうしたらいいですか：固定用法。',
+                    examples: [{ japanese: '財布{さいふ}を失{な}くしたらどうしたらいいですか。', chinese: '錢包丟了該怎麼辦？' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_tara_ii_desu_ka_1',
+                sentence: '駅{えき}へ行{い}きたいんですが、どう（　）いいですか。',
+                options: ['したら', 'すれば', 'するなら', 'すると'],
+                correctIndex: 0,
+                explanation: '固定用法。'
+            },
+            {
+                id: 'n4_tara_ii_desu_ka_2',
+                sentence: 'この書類{しょるい}はいつまでに出{だ}（　）いいですか。',
+                options: ['したら', 'すると', 'すれば', 'する'],
+                correctIndex: 0,
+                explanation: 'たら + いいですか。'
+            },
+            {
+                id: 'n4_tara_ii_desu_ka_3',
+                sentence: '何{なに}を食{た}べ（　）いいですか。',
+                options: ['たら', 'と', 'ば', 'なら'],
+                correctIndex: 0,
+                explanation: '尋求建議。'
+            }
+        ]
+    },
+    'n4_te_de': {
+        id: 'n4_te_de',
+        pattern: 'て / で',
+        connection: '動{どう}詞{し}て形{けい} + ...\nい形{けい}容{よう}詞{し}くて + ...\nな形{けい}容{よう}詞{し} / 名{めい}詞{し} + で + ...',
+        translation: '因為...; 於是...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '原因或並列',
+                description: '用「て/で」連接原因或並列敘述。',
+                examples: [
+                    { japanese: '忙{いそが}しくて行{い}けない。', chinese: '因為忙所以去不了。' },
+                    { japanese: '雨{あめ}で試合{しあい}が中止{ちゅうし}になった。', chinese: '因為下雨比賽取消了。' },
+                    { japanese: 'この教室{きょうしつ}は静{しず}かで勉{べん}強{きょう}しやすい。', chinese: '這教室安靜，很適合學習。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '接續規則',
+            description: '動詞用「て」，名詞/な形容詞用「で」。',
+            points: [
+                {
+                    rule: '動詞・い形容詞：て/くて。',
+                    examples: [{ japanese: '疲{つか}れて休{やす}んだ。', chinese: '因為累而休息。' }]
+                },
+                {
+                    rule: '名詞・な形容詞：で。',
+                    examples: [{ japanese: '病気{びょうき}で休{やす}んだ。', chinese: '因為生病而請假。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_te_de_1',
+                sentence: '雨{あめ}（　）試合{しあい}が中止{ちゅうし}になった。',
+                options: ['で', 'て', 'に', 'を'],
+                correctIndex: 0,
+                explanation: '名詞 + で。'
+            },
+            {
+                id: 'n4_te_de_2',
+                sentence: '忙{いそが}しく（　）行{い}けない。',
+                options: ['て', 'で', 'に', 'を'],
+                correctIndex: 0,
+                explanation: 'い形容詞 + くて。'
+            },
+            {
+                id: 'n4_te_de_3',
+                sentence: '風邪{かぜ}をひい（　）、学校{がっこう}を休{やす}んだ。',
+                options: ['て', 'で', 'に', 'を'],
+                correctIndex: 0,
+                explanation: '動詞て形。'
+            }
+        ]
+    },
+    'n4_te_ita': {
+        id: 'n4_te_ita',
+        pattern: 'ていた',
+        connection: '動{どう}詞{し}て形{けい} + いた',
+        translation: '正在做(過去進行)',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '過去的持續動作',
+                description: '表示過去某段時間正在進行的動作。',
+                examples: [
+                    { japanese: '昨日{きのう}は家{いえ}で勉{べん}強{きょう}していた。', chinese: '昨天在家讀書。' },
+                    { japanese: '雨{あめ}が降{ふ}っていた。', chinese: '當時在下雨。' },
+                    { japanese: '子{こ}供{とも}の頃{ころ}、よく遊{あそ}んでいた。', chinese: '小時候常常在玩。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「ていた」與「た」',
+            description: '「ていた」強調持續，「た」是單次完成。',
+            points: [
+                {
+                    rule: 'ていた：過去進行。',
+                    examples: [{ japanese: '電話{でんわ}していた。', chinese: '正在打電話。' }]
+                },
+                {
+                    rule: 'た：過去完成。',
+                    examples: [{ japanese: '電話{でんわ}した。', chinese: '打了電話。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_te_ita_1',
+                sentence: 'その時{とき}、私{わたし}は勉{べん}強{きょう}し（　）。',
+                options: ['ていた', 'た', 'ている', 'ておく'],
+                correctIndex: 0,
+                explanation: '過去進行。'
+            },
+            {
+                id: 'n4_te_ita_2',
+                sentence: '子{こ}供{とも}の頃{ころ}は毎日{まいにち}走{はし}っ（　）。',
+                options: ['ていた', 'た', 'ている', 'ておく'],
+                correctIndex: 0,
+                explanation: '過去の習慣。'
+            },
+            {
+                id: 'n4_te_ita_3',
+                sentence: '雨{あめ}が降{ふ}っ（　）ので、出{で}かけなかった。',
+                options: ['ていた', 'た', 'ている', 'ておく'],
+                correctIndex: 0,
+                explanation: '當時在下雨。'
+            }
+        ]
+    },
+    'n4_te_itadakemasen_ka': {
+        id: 'n4_te_itadakemasen_ka',
+        pattern: 'ていただけませんか',
+        connection: '動{どう}詞{し}て形{けい} + いただけませんか',
+        translation: '可以請您...嗎',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '非常禮貌的請求',
+                description: '用於對對方提出非常客氣的請求。',
+                examples: [
+                    { japanese: '少{すこ}し待{ま}っていただけませんか。', chinese: '可以請您稍等一下嗎？' },
+                    { japanese: '説明{せつめい}していただけませんか。', chinese: '可以請您說明一下嗎？' },
+                    { japanese: '写真{しゃしん}を撮{と}っていただけませんか。', chinese: '可以請您幫忙拍照嗎？' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '敬語の丁寧度',
+            description: '「ていただけませんか」比「てくれませんか」更禮貌。',
+            points: [
+                {
+                    rule: 'ていただけませんか：非常禮貌。',
+                    examples: [{ japanese: 'もう一度{いちど}言{い}っていただけませんか。', chinese: '可以再說一次嗎？' }]
+                },
+                {
+                    rule: 'てくれませんか：一般禮貌。',
+                    examples: [{ japanese: 'もう一度{いちど}言{い}ってくれませんか。', chinese: '可以再說一次嗎？' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_te_itadakemasen_ka_1',
+                sentence: 'ちょっと待{ま}って（　）ませんか。',
+                options: ['いただけ', 'くれ', 'もらえ', 'させ'],
+                correctIndex: 0,
+                explanation: '「いただけませんか」。'
+            },
+            {
+                id: 'n4_te_itadakemasen_ka_2',
+                sentence: 'この書類{しょるい}を確認{かくにん}して（　）ませんか。',
+                options: ['いただけ', 'くれ', 'もらえ', 'させ'],
+                correctIndex: 0,
+                explanation: '丁寧請求。'
+            },
+            {
+                id: 'n4_te_itadakemasen_ka_3',
+                sentence: '写真{しゃしん}を撮{と}って（　）ませんか。',
+                options: ['いただけ', 'させ', 'くれ', 'もらえ'],
+                correctIndex: 0,
+                explanation: '非常禮貌的請求。'
+            }
+        ]
+    },
+    'n4_te_sumimasen': {
+        id: 'n4_te_sumimasen',
+        pattern: 'てすみません',
+        connection: '動{どう}詞{し}て形{けい} + すみません',
+        translation: '對不起做了...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '行為道歉',
+                description: '為自己的行為道歉。',
+                examples: [
+                    { japanese: '遅{おく}れてすみません。', chinese: '抱歉遲到了。' },
+                    { japanese: '迷{めい}惑{わく}をかけてすみません。', chinese: '抱歉造成麻煩。' },
+                    { japanese: '忘{わす}れてすみません。', chinese: '抱歉我忘了。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「ごめんなさい」',
+            description: '「すみません」較正式，「ごめんなさい」較親近。',
+            points: [
+                {
+                    rule: 'すみません：一般或正式場合。',
+                    examples: [{ japanese: 'お待{ま}たせしてすみません。', chinese: '讓您久等了，抱歉。' }]
+                },
+                {
+                    rule: 'ごめんなさい：較口語、親近。',
+                    examples: [{ japanese: '遅{おく}れてごめんなさい。', chinese: '遲到了對不起。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_te_sumimasen_1',
+                sentence: '返事{へんじ}が遅{おそ}れて（　）。',
+                options: ['すみません', 'ください', 'でしょう', 'らしい'],
+                correctIndex: 0,
+                explanation: '道歉表達。'
+            },
+            {
+                id: 'n4_te_sumimasen_2',
+                sentence: '心配{しんぱい}させ（　）ません。',
+                options: ['てすみ', 'てすみません', 'てください', 'てしまいます'],
+                correctIndex: 1,
+                explanation: '道歉。'
+            },
+            {
+                id: 'n4_te_sumimasen_3',
+                sentence: '忘{わす}れて（　）。',
+                options: ['すみません', 'でした', 'でしょう', 'ません'],
+                correctIndex: 0,
+                explanation: '固定用法。'
+            }
+        ]
+    },
+    'n4_te_yaru': {
+        id: 'n4_te_yaru',
+        pattern: 'てやる',
+        connection: '動{どう}詞{し}て形{けい} + やる',
+        translation: '幫...做 (口語)',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '為對方做事（口語）',
+                description: '與「てあげる」相近，但較口語或有點粗魯。',
+                examples: [
+                    { japanese: '手伝{てつだ}ってやる。', chinese: '我來幫你。' },
+                    { japanese: '教{おし}えてやるよ。', chinese: '我來教你。' },
+                    { japanese: '送{おく}ってやる。', chinese: '我送你。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '語氣注意',
+            description: '對上級不宜使用。',
+            points: [
+                {
+                    rule: 'てやる：口語、對下級或親近對象。',
+                    examples: [{ japanese: '私{わたし}がやってやる。', chinese: '我來幫你做。' }]
+                },
+                {
+                    rule: 'てあげる：較中性。',
+                    examples: [{ japanese: '私{わたし}がやってあげる。', chinese: '我來幫你做。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_te_yaru_1',
+                sentence: '宿題{しゅくだい}を手伝{てつだ}って（　）。',
+                options: ['やる', 'あげる', 'くれる', 'もらう'],
+                correctIndex: 0,
+                explanation: '口語。'
+            },
+            {
+                id: 'n4_te_yaru_2',
+                sentence: '彼{かれ}に教{おし}えて（　）よ。',
+                options: ['やる', 'くれる', 'もらう', 'いる'],
+                correctIndex: 0,
+                explanation: '口語。'
+            },
+            {
+                id: 'n4_te_yaru_3',
+                sentence: '車{くるま}で送{おく}って（　）。',
+                options: ['やる', 'する', 'いる', 'なる'],
+                correctIndex: 0,
+                explanation: '「送ってやる」。'
+            }
+        ]
+    },
+    'n4_te_yokatta': {
+        id: 'n4_te_yokatta',
+        pattern: 'てよかった',
+        connection: '動{どう}詞{し}て形{けい} + よかった',
+        translation: '真好...; 幸好...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '喜悅或安心',
+                description: '表達「幸好做了...」或「能...真好」。',
+                examples: [
+                    { japanese: '会{あ}えてよかった。', chinese: '能見到你真好。' },
+                    { japanese: '買{か}ってよかった。', chinese: '買了真好。' },
+                    { japanese: '間{ま}に合{あ}ってよかった。', chinese: '幸好趕上了。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '表達感情',
+            description: '用於正向結果或安心。',
+            points: [
+                {
+                    rule: '良かった：結果令人安心。',
+                    examples: [{ japanese: '事故{じこ}がなくてよかった。', chinese: '幸好沒有事故。' }]
+                },
+                {
+                    rule: '相反感情可用「て困る」。',
+                    examples: [{ japanese: '遅{おく}れて困{こま}った。', chinese: '遲到讓人困擾。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_te_yokatta_1',
+                sentence: '無事{ぶじ}に帰{かえ}って（　）。',
+                options: ['よかった', 'よくない', 'よかったら', 'よかったで'],
+                correctIndex: 0,
+                explanation: '幸好平安回來。'
+            },
+            {
+                id: 'n4_te_yokatta_2',
+                sentence: 'この本{ほん}を買{か}って（　）。',
+                options: ['よかった', 'よくない', 'よくて', 'よかったで'],
+                correctIndex: 0,
+                explanation: '買了真好。'
+            },
+            {
+                id: 'n4_te_yokatta_3',
+                sentence: '早{はや}く来{き}て（　）。',
+                options: ['よかった', 'よくない', 'よくて', 'よかったで'],
+                correctIndex: 0,
+                explanation: '早點來真好。'
+            }
+        ]
+    },
+    'n4_teiru_tokoro': {
+        id: 'n4_teiru_tokoro',
+        pattern: 'ているところ',
+        connection: '動{どう}詞{し}ている + ところ',
+        translation: '正在...當中',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '正在進行中',
+                description: '強調「此刻正在做」的狀態。',
+                examples: [
+                    { japanese: '今{いま}料{りょう}理{り}しているところです。', chinese: '我正在做飯。' },
+                    { japanese: '電話{でんわ}しているところです。', chinese: '我正在講電話。' },
+                    { japanese: '勉{べん}強{きょう}しているところだ。', chinese: '正在學習中。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「ている」との違い',
+            description: '「ているところ」更強調當下進行。',
+            points: [
+                {
+                    rule: 'ている：一般狀態。',
+                    examples: [{ japanese: '今{いま}勉{べん}強{きょう}している。', chinese: '正在學習。' }]
+                },
+                {
+                    rule: 'ているところ：當下進行中。',
+                    examples: [{ japanese: '今{いま}勉{べん}強{きょう}しているところです。', chinese: '正好在學習中。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_teiru_tokoro_1',
+                sentence: '今{いま}出{で}かけている（　）です。',
+                options: ['ところ', 'ばかり', 'とき', 'まま'],
+                correctIndex: 0,
+                explanation: '正在進行中。'
+            },
+            {
+                id: 'n4_teiru_tokoro_2',
+                sentence: '料理{りょうり}している（　）なので、後{あと}で。',
+                options: ['ところ', 'ばかり', 'とき', 'まま'],
+                correctIndex: 0,
+                explanation: '正在做飯。'
+            },
+            {
+                id: 'n4_teiru_tokoro_3',
+                sentence: '会議{かいぎ}の準備{じゅんび}をしている（　）だ。',
+                options: ['ところ', 'とき', 'まま', 'ほど'],
+                correctIndex: 0,
+                explanation: '正在準備。'
+            }
+        ]
+    },
+    'n4_to_ittemo_ii': {
+        id: 'n4_to_ittemo_ii',
+        pattern: 'と言{い}ってもいい',
+        connection: '文 + と言{い}ってもいい',
+        translation: '可以說是...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '評價或總結',
+                description: '表示「可以說是...」，用於評價或歸納。',
+                examples: [
+                    { japanese: '彼{かれ}は天才{てんさい}と言{い}ってもいい。', chinese: '可以說他是天才。' },
+                    { japanese: '成功{せいこう}と言{い}ってもいい結果{けっか}だ。', chinese: '可以說是成功的結果。' },
+                    { japanese: '初{はじ}めてと言{い}ってもいい。', chinese: '幾乎可以說是第一次。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '語氣',
+            description: '帶有評價、判斷的語感。',
+            points: [
+                {
+                    rule: '用於總結或評價。',
+                    examples: [{ japanese: '最高{さいこう}と言{い}ってもいい。', chinese: '可以說是最棒的。' }]
+                },
+                {
+                    rule: '不是事實斷言，而是意見。',
+                    examples: [{ japanese: '失敗{しっぱい}と言{い}ってもいい経験{けいけん}だ。', chinese: '可以說是失敗的經驗。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_to_ittemo_ii_1',
+                sentence: 'この景色{けしき}は最高{さいこう}と言{い}っても（　）。',
+                options: ['いい', 'だめ', 'だ', 'なる'],
+                correctIndex: 0,
+                explanation: '固定用法。'
+            },
+            {
+                id: 'n4_to_ittemo_ii_2',
+                sentence: '彼{かれ}はプロと言{い}っても（　）だ。',
+                options: ['いい', '悪{わる}い', 'ない', 'かもしれない'],
+                correctIndex: 0,
+                explanation: '評價。'
+            },
+            {
+                id: 'n4_to_ittemo_ii_3',
+                sentence: '大{おお}成{せい}功{こう}と言{い}っても（　）結果{けっか}だ。',
+                options: ['いい', 'だめ', 'だった', 'いる'],
+                correctIndex: 0,
+                explanation: '「と言ってもいい」。'
+            }
+        ]
+    },
+    'n4_to_iu_koto': {
+        id: 'n4_to_iu_koto',
+        pattern: 'ということ',
+        connection: '文 + ということ',
+        translation: '就是說...; ...這件事',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '名詞化或總結',
+                description: '把句子名詞化，或用來總結前文。',
+                examples: [
+                    { japanese: '彼{かれ}が来{こ}ないということは本当{ほんとう}ですか。', chinese: '他不來這件事是真的嗎？' },
+                    { japanese: 'つまり、今{いま}は行{い}けないということだ。', chinese: '也就是說現在不能去。' },
+                    { japanese: '日本{にほん}へ行{い}くということは大{たい}変{へん}だ。', chinese: '去日本這件事不簡單。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「こと」との違い',
+            description: '「ということ」更強調內容或總結。',
+            points: [
+                {
+                    rule: 'こと：一般名詞化。',
+                    examples: [{ japanese: '走{はし}ることが好{す}きだ。', chinese: '喜歡跑步。' }]
+                },
+                {
+                    rule: 'ということ：說明內容。',
+                    examples: [{ japanese: '行{い}けないということだ。', chinese: '意思是不能去。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_to_iu_koto_1',
+                sentence: '彼{かれ}が辞{や}める（　）は本当{ほんとう}ですか。',
+                options: ['ということ', 'こと', 'ところ', 'ため'],
+                correctIndex: 0,
+                explanation: '內容名詞化。'
+            },
+            {
+                id: 'n4_to_iu_koto_2',
+                sentence: 'つまり、失敗{しっぱい}した（　）だ。',
+                options: ['ということ', 'こと', 'ところ', 'ため'],
+                correctIndex: 0,
+                explanation: '總結用法。'
+            },
+            {
+                id: 'n4_to_iu_koto_3',
+                sentence: '試験{しけん}に合格{ごうかく}した（　）を知{し}った。',
+                options: ['ということ', 'こと', 'ところ', 'ため'],
+                correctIndex: 0,
+                explanation: '內容名詞化。'
+            }
+        ]
+    },
+    'n4_to_iwarete_iru': {
+        id: 'n4_to_iwarete_iru',
+        pattern: 'と言{い}われている',
+        connection: '文 + と言{い}われている',
+        translation: '據說...; 被認為...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '一般傳聞',
+                description: '表示普遍的說法或傳聞。',
+                examples: [
+                    { japanese: '彼{かれ}は天才{てんさい}だと言{い}われている。', chinese: '他被說是天才。' },
+                    { japanese: '日本人{にほんじん}は親切{しんせつ}だと言{い}われている。', chinese: '據說日本人很親切。' },
+                    { japanese: '来年{らいねん}値段{ねだん}が上{あ}がると言{い}われている。', chinese: '據說明年會漲價。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「そうだ」との違い',
+            description: '「と言われている」更強調「普遍說法」。',
+            points: [
+                {
+                    rule: 'と言われている：社會上普遍。',
+                    examples: [{ japanese: '健康{けんこう}が一番{いちばん}大切{たいせつ}だと言{い}われている。', chinese: '普遍認為健康最重要。' }]
+                },
+                {
+                    rule: 'そうだ：單次傳聞。',
+                    examples: [{ japanese: '彼{かれ}は来{く}るそうだ。', chinese: '聽說他會來。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_to_iwarete_iru_1',
+                sentence: 'この山{やま}は危{あぶ}ないと言{い}われて（　）。',
+                options: ['いる', 'ある', 'なる', 'する'],
+                correctIndex: 0,
+                explanation: '固定用法。'
+            },
+            {
+                id: 'n4_to_iwarete_iru_2',
+                sentence: '日本{にほん}の冬{ふゆ}は寒{さむ}いと言{い}われて（　）。',
+                options: ['いる', 'ある', 'なる', 'する'],
+                correctIndex: 0,
+                explanation: '普遍說法。'
+            },
+            {
+                id: 'n4_to_iwarete_iru_3',
+                sentence: '彼{かれ}は優{やさ}しい（　）。',
+                options: ['と言{い}われている', 'と言{い}う', 'と聞{き}く', 'そうだ'],
+                correctIndex: 0,
+                explanation: '普遍評價。'
+            }
+        ]
+    },
+    'n4_to_kiita': {
+        id: 'n4_to_kiita',
+        pattern: 'と聞{き}いた',
+        connection: '文 + と聞{き}いた',
+        translation: '我聽說...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '聽說的資訊',
+                description: '表示從他人那裡得知的消息。',
+                examples: [
+                    { japanese: '彼{かれ}が来{く}ると聞{き}いた。', chinese: '聽說他會來。' },
+                    { japanese: '試験{しけん}は難{むずか}しいと聞{き}いた。', chinese: '聽說考試很難。' },
+                    { japanese: '新{あたら}しい店{みせ}ができたと聞{き}いた。', chinese: '聽說開了新店。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「そうだ」との違い',
+            description: '「と聞いた」強調資訊來源是「聽到」。',
+            points: [
+                {
+                    rule: 'と聞いた：主觀資訊來源。',
+                    examples: [{ japanese: '彼{かれ}は転職{てんしょく}する と聞{き}いた。', chinese: '聽說他要轉職。' }]
+                },
+                {
+                    rule: 'そうだ：一般傳聞。',
+                    examples: [{ japanese: '彼{かれ}は転職{てんしょく}するそうだ。', chinese: '聽說他要轉職。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_to_kiita_1',
+                sentence: '彼{かれ}は有名{ゆうめい}だ（　）。',
+                options: ['と聞{き}いた', 'と聞{き}く', 'と言{い}う', 'そう'],
+                correctIndex: 0,
+                explanation: '「聞いた」過去形。'
+            },
+            {
+                id: 'n4_to_kiita_2',
+                sentence: 'この映画{えいが}は面白{おもしろ}い（　）。',
+                options: ['と聞{き}いた', 'と聞{き}いて', 'と聞{き}く', 'と聞{き}か'],
+                correctIndex: 0,
+                explanation: '已經聽說了。'
+            },
+            {
+                id: 'n4_to_kiita_3',
+                sentence: '来週{らいしゅう}は雪{ゆき}が降{ふ}る（　）。',
+                options: ['と聞{き}いた', 'と聞{き}く', 'と言{い}う', 'そう'],
+                correctIndex: 0,
+                explanation: '情報來源。'
+            }
+        ]
+    },
+    'n4_toka_toka': {
+        id: 'n4_toka_toka',
+        pattern: 'とか〜とか',
+        connection: '名{めい}詞{し} / 動{どう}詞{し}普通{ふつう}形{けい} + とか + ... + とか',
+        translation: '例如...等等',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '列舉例子',
+                description: '列舉幾個例子，暗示還有其他。',
+                examples: [
+                    { japanese: '寿司{すし}とかラーメンとかが好{す}き。', chinese: '喜歡壽司、拉麵之類。' },
+                    { japanese: '映画{えいが}を見{み}るとか本{ほん}を読{よ}むとか。', chinese: '看電影、讀書之類。' },
+                    { japanese: '雨{あめ}とか風{かぜ}とかで試合{しあい}が中止{ちゅうし}になった。', chinese: '因為雨或風等原因比賽取消了。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '單項也可用',
+            description: '只列一項也可，暗示還有其他。',
+            points: [
+                {
+                    rule: '名詞 + とか。',
+                    examples: [{ japanese: 'コーヒーとか飲{の}む？', chinese: '要不要喝咖啡之類的？' }]
+                },
+                {
+                    rule: '動詞 + とか。',
+                    examples: [{ japanese: '散歩{さんぽ}するとかどう？', chinese: '散步之類的如何？' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_toka_toka_1',
+                sentence: '休{やす}みの日{ひ}は掃{そう}除{じ}とか買{か}い物{もの}（　）する。',
+                options: ['とか', 'まで', 'ほど', 'しか'],
+                correctIndex: 0,
+                explanation: '列舉例子。'
+            },
+            {
+                id: 'n4_toka_toka_2',
+                sentence: 'お茶{ちゃ}とかジュース（　）どう？',
+                options: ['とか', 'まで', 'ほど', 'しか'],
+                correctIndex: 0,
+                explanation: '列舉選項。'
+            },
+            {
+                id: 'n4_toka_toka_3',
+                sentence: '走{はし}るとか泳{およ}ぐ（　）体{からだ}を動{うご}かしたい。',
+                options: ['とか', 'しか', 'ほど', 'まで'],
+                correctIndex: 0,
+                explanation: '列舉動作。'
+            }
+        ]
+    },
+    'n4_tte': {
+        id: 'n4_tte',
+        pattern: 'って',
+        connection: '名{めい}詞{し} + って\n文 + って',
+        translation: '叫做... (口語)',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '口語「という」',
+                description: '「って」是「という」的口語形式，表示名稱或引述。',
+                examples: [
+                    { japanese: 'たい焼{や}きって食{た}べ物{もの}を知{し}ってる？', chinese: '你知道叫「鯛魚燒」的食物嗎？' },
+                    { japanese: '田中{たなか}さんって人{ひと}が来{き}た。', chinese: '有個叫田中先生的人來了。' },
+                    { japanese: '行{い}かないって言{い}った。', chinese: '他說不去。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '書面語',
+            description: '正式場合用「という」。',
+            points: [
+                {
+                    rule: 'って：口語。',
+                    examples: [{ japanese: '山田{やまだ}って人{ひと}。', chinese: '叫山田的人。' }]
+                },
+                {
+                    rule: 'という：正式或書面。',
+                    examples: [{ japanese: '山田{やまだ}という人{ひと}。', chinese: '叫山田的人。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_tte_1',
+                sentence: '「たこ焼{や}き」（　）食{た}べ物{もの}だよ。',
+                options: ['って', 'という', 'とか', 'のに'],
+                correctIndex: 0,
+                explanation: '口語。'
+            },
+            {
+                id: 'n4_tte_2',
+                sentence: '彼{かれ}は来{こ}ない（　）言{い}った。',
+                options: ['って', 'とか', 'なら', 'ため'],
+                correctIndex: 0,
+                explanation: '口語引述。'
+            },
+            {
+                id: 'n4_tte_3',
+                sentence: '山田{やまだ}さん（　）人{ひと}を知{し}ってる？',
+                options: ['って', 'という', 'とか', 'より'],
+                correctIndex: 0,
+                explanation: '口語「という」。'
+            }
+        ]
+    },
+    'n4_wa_ga_wa': {
+        id: 'n4_wa_ga_wa',
+        pattern: 'は〜が…は',
+        connection: 'Aは...が、Bは...',
+        translation: 'A...但B...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '對比',
+                description: '用兩個主題對比，表示「A可以，但B不行」。',
+                examples: [
+                    { japanese: 'ひらがなは書{か}けますが、漢字{かんじ}は書{か}けません。', chinese: '平假名會寫，但漢字不會。' },
+                    { japanese: '英語{えいご}は話{はな}せるが、日本語{にほんご}は話{はな}せない。', chinese: '英語會說，但日語不會。' },
+                    { japanese: '魚{さかな}は好{す}きだが、肉{にく}は苦手{にがて}だ。', chinese: '喜歡魚，但不太能吃肉。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '結構',
+            description: '前後主題要對比。',
+            points: [
+                {
+                    rule: 'Aは...が、Bは...。',
+                    examples: [{ japanese: '価格{かかく}は安{やす}いが、質{しつ}は普通{ふつう}だ。', chinese: '價格便宜，但品質普通。' }]
+                },
+                {
+                    rule: '對比兩項特點。',
+                    examples: [{ japanese: '味{あじ}はいいが、量{りょう}は少{すく}ない。', chinese: '味道好，但份量少。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_wa_ga_wa_1',
+                sentence: '数学{すうがく}は得意{とくい}だが、英語{えいご}（　）苦手{にがて}だ。',
+                options: ['は', 'が', 'を', 'で'],
+                correctIndex: 0,
+                explanation: '對比主題。'
+            },
+            {
+                id: 'n4_wa_ga_wa_2',
+                sentence: '私は猫{ねこ}は好{す}きですが、犬{いぬ}（　）好{す}きじゃない。',
+                options: ['は', 'が', 'に', 'で'],
+                correctIndex: 0,
+                explanation: '對比「猫は」「犬は」。'
+            },
+            {
+                id: 'n4_wa_ga_wa_3',
+                sentence: '値段{ねだん}は安{やす}いが、味{あじ}（　）普通{ふつう}だ。',
+                options: ['は', 'が', 'を', 'に'],
+                correctIndex: 0,
+                explanation: '對比主題。'
+            }
+        ]
+    },
+    'n4_you_ni_you_na_like': {
+        id: 'n4_you_ni_you_na_like',
+        pattern: 'ように / ような',
+        connection: '名{めい}詞{し} + の + ように / ような\n動{どう}詞{し}普通{ふつう}形{けい} + ように（比喩）',
+        translation: '像...一樣; 如同...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '比喩',
+                description: '表示「像...一樣」。',
+                examples: [
+                    { japanese: '犬{いぬ}のように働{はたら}く。', chinese: '像狗一樣工作。' },
+                    { japanese: '天使{てんし}のような人{ひと}だ。', chinese: '像天使一樣的人。' },
+                    { japanese: '風{かぜ}のように速{はや}い。', chinese: '像風一樣快。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「ように」與「ような」',
+            description: '「ように」修飾動詞或形容詞，「ような」修飾名詞。',
+            points: [
+                {
+                    rule: 'ように + 動詞/形容詞。',
+                    examples: [{ japanese: '光{ひかり}のように輝{かがや}く。', chinese: '像光一樣閃耀。' }]
+                },
+                {
+                    rule: 'ような + 名詞。',
+                    examples: [{ japanese: '夢{ゆめ}のような話{はなし}。', chinese: '像夢一樣的故事。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_you_ni_you_na_like_1',
+                sentence: '鳥{とり}の（　）飛{と}びたい。',
+                options: ['ように', 'ような', 'そうに', 'みたいな'],
+                correctIndex: 0,
+                explanation: '修飾動詞。'
+            },
+            {
+                id: 'n4_you_ni_you_na_like_2',
+                sentence: '夢{ゆめ}の（　）話{はなし}だ。',
+                options: ['ような', 'ように', 'そうな', 'みたいに'],
+                correctIndex: 0,
+                explanation: '修飾名詞。'
+            },
+            {
+                id: 'n4_you_ni_you_na_like_3',
+                sentence: '風{かぜ}の（　）速{はや}く走{はし}る。',
+                options: ['ように', 'ような', 'そうに', 'みたいな'],
+                correctIndex: 0,
+                explanation: '修飾動詞。'
+            }
+        ]
+    },
+    'n4_noni_purpose': {
+        id: 'n4_noni_purpose',
+        pattern: 'のに（目的）',
+        connection: '動{どう}詞{し}辭書{じしょ}形{けい} + のに',
+        translation: '為了...; 用於...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '用途或目的',
+                description: '表示某事對於完成某動作是必要或有用的。',
+                examples: [
+                    { japanese: '勉{べん}強{きょう}するのに時間{じかん}がかかる。', chinese: '讀書需要花時間。' },
+                    { japanese: 'この道具{どうぐ}は切{き}るのに便{べん}利{り}だ。', chinese: '這個工具用來切很方便。' },
+                    { japanese: '駅{えき}まで行{い}くのに30分{ぷん}かかる。', chinese: '到車站要30分鐘。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「のに（逆接）」との違い',
+            description: '這裡的「のに」表示用途，不是轉折。',
+            points: [
+                {
+                    rule: '用途：〜するのに必要{ひつよう}。',
+                    examples: [{ japanese: '料理{りょうり}するのに道具{どうぐ}がいる。', chinese: '做飯需要工具。' }]
+                },
+                {
+                    rule: '逆接：〜のに〜。',
+                    examples: [{ japanese: '雨{あめ}なのに出{で}かける。', chinese: '明明下雨卻要出門。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_noni_purpose_1',
+                sentence: 'このパソコンは仕事{しごと}をする（　）便利{べんり}だ。',
+                options: ['のに', 'から', 'ので', 'のは'],
+                correctIndex: 0,
+                explanation: '用途。'
+            },
+            {
+                id: 'n4_noni_purpose_2',
+                sentence: '駅{えき}まで行{い}く（　）時間{じかん}がかかる。',
+                options: ['のに', 'まで', 'から', 'しか'],
+                correctIndex: 0,
+                explanation: '動作用途。'
+            },
+            {
+                id: 'n4_noni_purpose_3',
+                sentence: '勉{べん}強{きょう}する（　）静{しず}かな場所{ばしょ}が必要{ひつよう}だ。',
+                options: ['のに', 'のは', 'ので', 'のが'],
+                correctIndex: 0,
+                explanation: '用途。'
+            }
+        ]
+    },
+    'n4_zurai': {
+        id: 'n4_zurai',
+        pattern: 'づらい',
+        connection: '動{どう}詞{し}ます形{けい} + づらい',
+        translation: '難以...',
+        level: 'N4',
+        explanation: [
+            {
+                usageId: 1,
+                title: '主觀的困難',
+                description: '表示「做起來不順、不好做」，帶有主觀感受。',
+                examples: [
+                    { japanese: 'この字{じ}は読{よ}みづらい。', chinese: '這個字很難讀。' },
+                    { japanese: 'あの人{ひと}は話{はな}しづらい。', chinese: '那個人不好開口說話。' },
+                    { japanese: 'この靴{くつ}は歩{ある}きづらい。', chinese: '這雙鞋不好走。' }
+                ]
+            }
+        ],
+        analysis: {
+            title: '「にくい」との違い',
+            description: '「づらい」偏主觀感受，「にくい」偏客觀難度。',
+            points: [
+                {
+                    rule: 'づらい：心理上不順。',
+                    examples: [{ japanese: '頼{たの}みづらい。', chinese: '不好意思拜託。' }]
+                },
+                {
+                    rule: 'にくい：客觀困難。',
+                    examples: [{ japanese: '読{よ}みにくい字{じ}。', chinese: '難讀的字。' }]
+                }
+            ]
+        },
+        quiz: [
+            {
+                id: 'n4_zurai_1',
+                sentence: 'この説明{せつめい}は分{わ}かり（　）。',
+                options: ['づらい', 'やすい', 'たい', 'そう'],
+                correctIndex: 0,
+                explanation: '不好理解。'
+            },
+            {
+                id: 'n4_zurai_2',
+                sentence: 'あの人{ひと}には話{はな}し（　）。',
+                options: ['づらい', 'やすい', 'たい', 'そう'],
+                correctIndex: 0,
+                explanation: '不好開口說話。'
+            },
+            {
+                id: 'n4_zurai_3',
+                sentence: 'この道{みち}は歩{ある}き（　）。',
+                options: ['づらい', 'やすい', 'たい', 'そう'],
+                correctIndex: 0,
+                explanation: '不好走。'
             }
         ]
     }

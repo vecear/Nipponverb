@@ -225,7 +225,7 @@ const GrammarDetail = () => {
         // Parser for "漢字{かんじ}" format
         // Only matches CJK characters (kanji) followed by {reading}
         // CJK Unified Ideographs: \u4e00-\u9fff, Extension A: \u3400-\u4dbf
-        const regex = /([\u4e00-\u9fff\u3400-\u4dbf]+)\{([^{}]+)\}/g
+        const regex = /([\u4e00-\u9fff\u3400-\u4dbf\u3005\u3007\u30f5\u30f6]+)\{([^{}]+)\}/g
         const parts: (string | JSX.Element)[] = []
         let lastIndex = 0
         let match
@@ -287,7 +287,7 @@ const GrammarDetail = () => {
                             }`}>
                             {detail.level}
                         </span>
-                        <h1 className="text-4xl font-bold text-indigo-900">{detail.pattern}</h1>
+                        <h1 className="text-4xl font-bold text-indigo-900">{renderFurigana(detail.pattern)}</h1>
                         {/* Show completion badge if already completed */}
                         {wasAlreadyCompleted && (
                             <span className="inline-flex items-center gap-1 px-2 py-1 bg-green-500/20 text-green-500 rounded text-sm font-medium">
@@ -305,7 +305,7 @@ const GrammarDetail = () => {
                         <BookOpen size={20} className="mr-2" /> 接續
                     </h3>
                     <p className="text-indigo-900/90 font-mono bg-indigo-900/10 p-3 rounded-lg inline-block">
-                        {detail.connection}
+                        {renderFurigana(detail.connection)}
                     </p>
                 </section>
 
