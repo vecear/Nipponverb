@@ -1,19 +1,20 @@
-import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import ExpBar from '../components/ExpBar'
 import { useUserStore } from '../store/useUserStore'
+import { usePracticeStore } from '../store/usePracticeStore'
 import { DEFAULT_PROGRESSION, EXP_CONSTANTS } from '../types/progression'
 import { getJobById, NOVICE_TITLE, getCharacterImagePath } from '../data/jobs'
 import { getCharacterStory } from '../data/characterStories'
 import { courses } from '../data/courses'
+import { formatStudyTime } from '../services/studyTrackingService'
 
 const Dashboard = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const { currentUser } = useAuth()
   const { profile } = useUserStore()
+  const { practiceHistory } = usePracticeStore()
 
   // 取得進度資料
   const progression = profile?.progression || DEFAULT_PROGRESSION
@@ -65,7 +66,18 @@ const Dashboard = () => {
   // 取得角色故事
   const characterStory = getCharacterStory(progression.level, progression.jobId, gender)
 
+  // 從練習歷史計算統計數據
+  const totalQuestionsAnswered = practiceHistory.reduce((sum, entry) => sum + entry.total, 0)
+  const practiceSessionsCompleted = practiceHistory.length
+  const totalStudyTime = profile?.stats?.totalStudyTime || 0
+  const currentStreak = profile?.stats?.streak?.current || 0
 
+  const stats = [
+    { label: t('profile.stats.totalStudyTime'), value: formatStudyTime(totalStudyTime) },
+    { label: t('profile.stats.currentStreak'), value: currentStreak > 0 ? `${currentStreak} 天` : '0 天' },
+    { label: t('profile.stats.questionsAnswered'), value: totalQuestionsAnswered.toLocaleString() },
+    { label: t('profile.stats.stagesCompleted'), value: practiceSessionsCompleted.toLocaleString() },
+  ]
 
   const modes = [
     {
@@ -112,6 +124,16 @@ const Dashboard = () => {
 
   return (
     <div className="space-y-3 sm:space-y-4 md:space-y-6">
+      {/* Stats Cards - 統計卡片 */}
+      <div className="grid grid-cols-4 gap-2 sm:gap-3">
+        {stats.map((stat, index) => (
+          <div key={index} className="card p-2 sm:p-3 text-center">
+            <div className="text-base sm:text-xl md:text-2xl font-bold text-wave-deep">{stat.value}</div>
+            <div className="text-[10px] sm:text-xs text-sumi-faded mt-0.5">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+
       {/* Game Status Section - 浮世繪風格 */}
       <div className="card p-2 sm:p-4 md:p-6">
         <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-4 md:gap-6">

@@ -52,17 +52,7 @@ const Profile = () => {
 
   // Calculate stats from profile
   const verbsLearned = profile?.stats?.verbs?.learned || 0
-  const kanjiLearned = profile?.stats?.kanji?.learned || 0
-  const grammarLearned = profile?.stats?.grammar?.learned || 0
-  const stagesClearedCount = profile?.stats?.stages_cleared?.length || 0
-  const totalQuestions = verbsLearned + kanjiLearned + grammarLearned
-
-  const stats = [
-    { label: t('profile.stats.totalStudyTime'), value: '--' }, // Time tracking not yet implemented
-    { label: t('profile.stats.questionsAnswered'), value: totalQuestions.toLocaleString() },
-    { label: t('profile.stats.currentStreak'), value: '--' }, // Streak tracking not yet implemented
-    { label: t('profile.stats.stagesCompleted'), value: `${stagesClearedCount}/25` },
-  ]
+  const currentStreak = profile?.stats?.streak?.current || 0
 
   const handleSaveName = async () => {
     if (!currentUser || !newName.trim()) return
@@ -102,7 +92,7 @@ const Profile = () => {
               />
             </div>
             <div className="absolute -bottom-2 -right-2 bg-pine text-white px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-semibold border-2 border-washi-light">
-              {t('profile.streak', { days: 0 })} 🔥
+              {t('profile.streak', { days: currentStreak })} 🔥
             </div>
           </div>
 
@@ -177,6 +167,93 @@ const Profile = () => {
               {t('profile.settings.modifyData')}
             </button>
           </div>
+        </div>
+      </div>
+
+      {/* 練習統計區塊 */}
+      <div className="card mb-4 sm:mb-6 md:mb-8 p-3 sm:p-4 md:p-6">
+        <h2 className="text-base sm:text-xl md:text-2xl font-zen font-bold mb-3 sm:mb-4 md:mb-6 text-wave-deep border-b-2 border-wave-mid/20 pb-2">
+          {t('profile.statistics.title', { level: selectedLevel })}
+        </h2>
+        <div className={`grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 ${selectedLevel === 'N5' ? 'sm:grid-cols-3 md:grid-cols-5' : 'sm:grid-cols-2 md:grid-cols-4'}`}>
+          {(() => {
+            // 五十音只在 N5 時顯示，其他級別顯示 4 個類別
+            const categories = selectedLevel === 'N5'
+              ? ['gojuon', 'verbs', 'grammar', 'kanji', 'vocabulary']
+              : ['verbs', 'grammar', 'kanji', 'vocabulary']
+
+            return categories.map((category) => {
+              // 五十音使用合併的 hiragana + katakana 資料
+              let history
+              if (category === 'gojuon') {
+                const hiraganaHistory = getHistoryByCategory('gojuon', 'hiragana')
+                const katakanaHistory = getHistoryByCategory('gojuon', 'katakana')
+                // 合併並按日期排序
+                history = [...hiraganaHistory, ...katakanaHistory]
+                  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+                  .slice(0, 10)
+              } else {
+                history = getHistoryByCategory(category, selectedLevel)
+              }
+
+              const hasData = history.length > 0
+
+              // Calculate stats
+              const lastEntry = history[0]
+              const avgAccuracy = hasData
+                ? Math.round(history.reduce((sum, h) => sum + h.accuracy, 0) / history.length)
+                : 0
+
+              return (
+                <div key={category} className="paper-card p-2 sm:p-3 rounded-none border border-wave-deep">
+                  <div className="flex flex-col gap-1 sm:gap-2 mb-1 sm:mb-2">
+                    <div className="flex items-center gap-1 sm:gap-2">
+                      <div className={`w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-sm sm:text-lg font-bold border border-wave-deep bg-washi-light shadow-sm shrink-0`}>
+                        {category === 'verbs' ? '✍️' :
+                          category === 'gojuon' ? 'あ' :
+                            category === 'kanji' ? '漢' :
+                              category === 'vocabulary' ? '🔤' : '📖'}
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <h3 className="font-bold text-[10px] sm:text-sm truncate text-wave-deep">
+                          {t(`practice.categories.${category}.title`)}
+                        </h3>
+                        <p className="text-[8px] sm:text-[10px] text-sumi-faded truncate">
+                          {t('profile.statistics.lastPractice')}: {hasData
+                            ? new Date(lastEntry.date).toLocaleDateString()
+                            : '--'}
+                        </p>
+                      </div>
+                    </div>
+
+                    {hasData && (
+                      <div className="flex items-baseline justify-between">
+                        <div className="text-base sm:text-xl font-bold text-wave-deep leading-none">
+                          {lastEntry.score}/{lastEntry.total}
+                        </div>
+                        <div className={`text-[10px] sm:text-xs font-bold ${lastEntry.accuracy >= 80 ? 'text-pine' :
+                          lastEntry.accuracy >= 60 ? 'text-ochre' : 'text-vermilion'
+                          }`}>
+                          {lastEntry.accuracy}%
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="space-y-2 sm:space-y-4">
+                    <div className="flex items-center justify-between text-[10px] sm:text-sm">
+                      <span className="text-sumi-faded">{t('profile.statistics.recentAverage')} (5)</span>
+                      <span className={`font-bold ${avgAccuracy >= 80 ? 'text-pine' :
+                        avgAccuracy >= 60 ? 'text-ochre' : 'text-sumi-faded'
+                        }`}>
+                        {hasData ? `${avgAccuracy}%` : '--'}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )
+            })
+          })()}
         </div>
       </div>
 
@@ -446,18 +523,6 @@ const Profile = () => {
         </div>
       )}
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6 md:mb-8">
-        {stats.map((stat) => (
-          <div
-            key={stat.label}
-            className="card p-2 sm:p-4 text-center border-l-4 border-wave-deep"
-          >
-            <div className="text-base sm:text-xl md:text-2xl font-bold text-wave-deep mb-0.5 sm:mb-1 md:mb-2">{stat.value}</div>
-            <div className="text-[10px] sm:text-xs md:text-sm text-sumi-faded">{stat.label}</div>
-          </div>
-        ))}
-      </div>
-
       <div className="card mb-4 sm:mb-8 p-3 sm:p-4 md:p-6">
         <h2 className="text-lg sm:text-2xl font-zen font-bold mb-3 sm:mb-6 text-wave-deep border-b-2 border-wave-mid/20 pb-2">{t('profile.learningProgress')}</h2>
 
@@ -531,78 +596,6 @@ const Profile = () => {
               />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="card p-3 sm:p-4 md:p-6">
-        <h2 className="text-base sm:text-xl md:text-2xl font-zen font-bold mb-3 sm:mb-4 md:mb-6 text-wave-deep border-b-2 border-wave-mid/20 pb-2">
-          {t('profile.statistics.title', { level: selectedLevel })}
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
-          {['gojuon', 'verbs', 'kanji', 'grammar', 'vocabulary'].map((category) => {
-            const history = getHistoryByCategory(category, selectedLevel)
-            const hasData = history.length > 0
-
-            // Calculate stats
-            const lastEntry = history[0]
-            const avgAccuracy = hasData
-              ? Math.round(history.reduce((sum, h) => sum + h.accuracy, 0) / history.length)
-              : 0
-
-            // Data for chart (reverse to show chronological order: Old -> New)
-
-
-            return (
-              <div key={category} className="paper-card p-2 sm:p-3 rounded-none border border-wave-deep">
-                <div className="flex flex-col gap-1 sm:gap-2 mb-1 sm:mb-2">
-                  <div className="flex items-center gap-1 sm:gap-2">
-                    <div className={`w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-sm sm:text-lg font-bold border border-wave-deep bg-washi-light shadow-sm shrink-0`}>
-                      {category === 'verbs' ? '✍️' :
-                        category === 'gojuon' ? 'あ' :
-                          category === 'kanji' ? '漢' :
-                            category === 'vocabulary' ? '🔤' : '📖'}
-                    </div>
-                    <div className="min-w-0 flex-1">
-                      <h3 className="font-bold text-[10px] sm:text-sm truncate text-wave-deep">
-                        {t(`practice.categories.${category}.title`)}
-                      </h3>
-                      <p className="text-[8px] sm:text-[10px] text-sumi-faded truncate">
-                        {t('profile.statistics.lastPractice')}: {hasData
-                          ? new Date(lastEntry.date).toLocaleDateString()
-                          : '--'}
-                      </p>
-                    </div>
-                  </div>
-
-                  {hasData && (
-                    <div className="flex items-baseline justify-between">
-                      <div className="text-base sm:text-xl font-bold text-wave-deep leading-none">
-                        {lastEntry.score}/{lastEntry.total}
-                      </div>
-                      <div className={`text-[10px] sm:text-xs font-bold ${lastEntry.accuracy >= 80 ? 'text-pine' :
-                        lastEntry.accuracy >= 60 ? 'text-ochre' : 'text-vermilion'
-                        }`}>
-                        {lastEntry.accuracy}%
-                      </div>
-                    </div>
-                  )}
-                </div>
-
-                <div className="space-y-2 sm:space-y-4">
-                  <div className="flex items-center justify-between text-[10px] sm:text-sm">
-                    <span className="text-sumi-faded">{t('profile.statistics.recentAverage')} (5)</span>
-                    <span className={`font-bold ${avgAccuracy >= 80 ? 'text-pine' :
-                      avgAccuracy >= 60 ? 'text-ochre' : 'text-sumi-faded'
-                      }`}>
-                      {hasData ? `${avgAccuracy}%` : '--'}
-                    </span>
-                  </div>
-
-
-                </div>
-              </div>
-            )
-          })}
         </div>
       </div>
     </div>

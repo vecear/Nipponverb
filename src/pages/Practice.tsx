@@ -16,6 +16,7 @@ import { generateKanjiQuestion } from '../data/kanji'
 import { addExp, updateUserProgression } from '../services/progressionService'
 import { DEFAULT_PROGRESSION, EXP_REWARDS } from '../types/progression'
 import { PRACTICE_ICONS } from '../config/assets'
+import { updateStudyTracking } from '../services/studyTrackingService'
 
 // Static Question Banks
 import { n5Questions } from '../data/questions/n5'
@@ -73,6 +74,7 @@ const Practice = () => {
   const [showCategorySelect, setShowCategorySelect] = useState(true)
   const [viewingHistory, setViewingHistory] = useState<PracticeHistoryEntry | null>(null)
   const [hasSavedResult, setHasSavedResult] = useState(false)
+  const [practiceStartTime, setPracticeStartTime] = useState<number | null>(null)
 
   // Save practice result and award EXP when showing results
   useEffect(() => {
@@ -98,10 +100,21 @@ const Practice = () => {
             const { newProgression } = addExp(progression, totalExp, gender)
             await updateUserProgression(currentUser.uid, newProgression)
 
+            // 更新學習時間和連續天數
+            const studyMinutes = practiceStartTime
+              ? Math.max(1, Math.round((Date.now() - practiceStartTime) / 60000))
+              : 1 // 至少算 1 分鐘
+            const trackingResult = await updateStudyTracking(currentUser.uid, studyMinutes)
+
             // Update local profile state
             setProfile({
               ...profile,
               progression: newProgression,
+              stats: {
+                ...profile.stats,
+                totalStudyTime: trackingResult.totalStudyTime,
+                streak: trackingResult.streak,
+              },
             })
           } catch (error) {
             console.error('Failed to award EXP:', error)
@@ -111,7 +124,7 @@ const Practice = () => {
     }
 
     saveResultAndAwardExp()
-  }, [showResults, hasSavedResult, answerRecords, category, selectedLevel, selectedSubcategory, savePracticeResult, currentUser, profile, setProfile])
+  }, [showResults, hasSavedResult, answerRecords, category, selectedLevel, selectedSubcategory, savePracticeResult, currentUser, profile, setProfile, practiceStartTime])
 
   // Reset hasSavedResult when starting new practice
   useEffect(() => {
@@ -279,6 +292,7 @@ const Practice = () => {
     setQuestions(newQuestions)
     setShowCategorySelect(false)
     setShowResults(false)
+    setPracticeStartTime(Date.now()) // 記錄開始時間
   }
 
   const handleAnswer = (answer: string) => {
@@ -303,6 +317,7 @@ const Practice = () => {
     resetPractice()
     setQuestions(newQuestions)
     setShowResults(false)
+    setPracticeStartTime(Date.now()) // 重置開始時間
   }
 
   // Determine if we should show the category selection Grid (if no category param) or specific category setup

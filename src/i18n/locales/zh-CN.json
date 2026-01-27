@@ -134,9 +134,9 @@
     "learningProgress": "学习进度",
     "stats": {
       "totalStudyTime": "总学习时间",
-      "questionsAnswered": "已回答问题",
+      "questionsAnswered": "已回答练习问题",
       "currentStreak": "当前连续天数",
-      "stagesCompleted": "已完成关卡"
+      "stagesCompleted": "已完成练习关卡"
     },
     "progress": {
       "verbs": "动词",

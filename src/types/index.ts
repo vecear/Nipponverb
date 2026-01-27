@@ -12,6 +12,13 @@ export interface UserStats {
     learned: number
   }
   stages_cleared: string[]
+  // 學習時間追蹤 (分鐘)
+  totalStudyTime?: number
+  // 連續天數追蹤
+  streak?: {
+    current: number       // 當前連續天數
+    lastStudyDate: string // 最後學習日期 (YYYY-MM-DD)
+  }
 }
 
 export interface UserProfile {
