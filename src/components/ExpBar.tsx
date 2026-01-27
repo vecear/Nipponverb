@@ -76,7 +76,7 @@ const ExpBar = ({
         <div className="flex items-center gap-3">
           {/* 等級徽章 */}
           <div className="flex items-center gap-1">
-            <span className={`text-sakura-pink font-bold`}>Lv.</span>
+            <span className={`text-vermilion font-bold`}>Lv.</span>
             <span className={`${textColor} font-bold ${config.levelSize}`}>
               {progression.level}
             </span>
@@ -85,7 +85,7 @@ const ExpBar = ({
           {/* 稱號 */}
           {showTitle && titleInfo && (
             <div className="flex flex-col">
-              <span className={`text-electric-cyan font-medium`}>
+              <span className={`text-wave-light font-medium`}>
                 {titleInfo.nameJp}
               </span>
               <span className={`${subTextColor} ${config.fontSize}`}>

@@ -62,32 +62,32 @@ const GrammarList = () => {
     }, [])
 
     return (
-        <div className="min-h-screen py-8 px-4 pb-24">
-            <div className="max-w-6xl mx-auto space-y-6">
-                <header className="mb-8">
-                    <h1 className="text-4xl md:text-5xl font-zen font-bold text-gradient mb-4">
+        <div className="min-h-screen py-4 sm:py-8 px-2 sm:px-4 pb-24">
+            <div className="max-w-6xl mx-auto space-y-4 sm:space-y-6">
+                <header className="mb-4 sm:mb-8">
+                    <h1 className="text-2xl sm:text-4xl md:text-5xl font-zen font-bold text-gradient mb-2 sm:mb-4">
                         JLPT 文法列表
                     </h1>
-                    <p className="text-indigo-900/60 text-lg">
+                    <p className="text-indigo-900/60 text-sm sm:text-lg">
                         N5 到 N1 的完整文法參考表
                     </p>
                 </header>
 
                 {/* Filters and Search */}
-                <div className="flex flex-col md:flex-row gap-4 justify-between items-start md:items-center bg-white/50 p-4 rounded-2xl border border-indigo-900/10">
+                <div className="flex flex-col md:flex-row gap-2 sm:gap-4 justify-between items-start md:items-center bg-white/50 p-2 sm:p-4 rounded-xl sm:rounded-2xl border border-indigo-900/10">
 
                     {/* Level Tabs */}
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-1 sm:gap-2">
                         {(['ALL', 'N5', 'N4', 'N3', 'N2', 'N1'] as const).map(level => (
                             <button
                                 key={level}
                                 onClick={() => setSelectedLevel(level)}
-                                className={`px-4 py-2 rounded-lg font-bold transition-all ${selectedLevel === level
+                                className={`px-2 py-1 sm:px-4 sm:py-2 rounded-md sm:rounded-lg font-bold transition-all text-xs sm:text-sm ${selectedLevel === level
                                     ? 'bg-gradient-to-r from-pink-500 to-purple-500 text-white shadow-lg'
                                     : 'glass hover:bg-white/50 text-indigo-900/60 border border-indigo-900/10'
                                     }`}
                             >
-                                {level} <span className="text-xs opacity-60 ml-1">({counts[level]})</span>
+                                {level} <span className="text-[10px] sm:text-xs opacity-60 ml-0.5 sm:ml-1">({counts[level]})</span>
                             </button>
                         ))}
                     </div>
@@ -105,9 +105,55 @@ const GrammarList = () => {
                     </div>
                 </div>
 
-                {/* Table */}
-                <div className="glass rounded-2xl overflow-hidden border border-indigo-900/10">
-                    <div className="overflow-x-auto">
+                {/* Table - Card view on mobile, Table on desktop */}
+                <div className="glass rounded-xl sm:rounded-2xl overflow-hidden border border-indigo-900/10">
+                    {/* Mobile Card View */}
+                    <div className="sm:hidden divide-y divide-indigo-900/10">
+                        {filteredGrammar.length > 0 ? (
+                            filteredGrammar.map((item) => {
+                                const completed = isCompleted(item.id)
+                                return (
+                                    <div
+                                        key={item.id}
+                                        onClick={() => {
+                                            sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
+                                                level: selectedLevel,
+                                                scrollY: window.scrollY
+                                            }))
+                                            navigate(`/grammar/${item.id}`)
+                                        }}
+                                        className="p-3 hover:bg-indigo-900/5 transition-colors cursor-pointer flex items-start gap-2"
+                                    >
+                                        <Check
+                                            size={16}
+                                            className={`shrink-0 mt-1 transition-colors ${completed ? 'text-green-500' : 'text-indigo-900/20'}`}
+                                        />
+                                        <div className="flex-1 min-w-0">
+                                            <div className="flex items-center gap-2 mb-1">
+                                                <span className={`inline-block px-1.5 py-0.5 rounded text-[10px] font-bold ${item.level === 'N5' ? 'bg-blue-500/20 text-blue-400' :
+                                                    item.level === 'N4' ? 'bg-green-500/20 text-green-400' :
+                                                        item.level === 'N3' ? 'bg-yellow-500/20 text-yellow-400' :
+                                                            item.level === 'N2' ? 'bg-orange-500/20 text-orange-400' :
+                                                                'bg-red-500/20 text-red-400'
+                                                    }`}>
+                                                    {item.level}
+                                                </span>
+                                                <span className="font-bold text-sm text-indigo-900/90 truncate">{stripFurigana(item.grammar)}</span>
+                                            </div>
+                                            <p className="text-xs text-indigo-900/70 line-clamp-2">{item.meaning}</p>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        ) : (
+                            <div className="p-6 text-center text-indigo-900/40 text-sm">
+                                沒有找到符合的文法項目。
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Desktop Table View */}
+                    <div className="hidden sm:block overflow-x-auto">
                         <table className="w-full text-left border-collapse">
                             <thead>
                                 <tr className="bg-indigo-900/5 text-indigo-900/60 text-sm border-b border-indigo-900/10">
@@ -125,7 +171,6 @@ const GrammarList = () => {
                                             <tr
                                                 key={item.id}
                                                 onClick={() => {
-                                                    // Save current scroll position before navigating
                                                     sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
                                                         level: selectedLevel,
                                                         scrollY: window.scrollY

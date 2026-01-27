@@ -41,7 +41,7 @@ const FuriganaText: React.FC<FuriganaTextProps> = ({ text, className = "" }) => 
         parts.push(
             <ruby key={match.index}>
                 {match[1]}
-                <rt className="text-[0.6em] text-sakura-pink/80 select-none">{match[2]}</rt>
+                <rt className="text-[0.6em] text-vermilion/80 select-none">{match[2]}</rt>
             </ruby>
         );
 

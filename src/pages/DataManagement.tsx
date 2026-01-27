@@ -74,23 +74,23 @@ export const importedVerbs: Verb[] = ${JSON.stringify(newVerbs, null, 4)};\n`;
 
     return (
         <div className="p-8 text-white min-h-screen bg-midnight-charcoal">
-            <h1 className="text-3xl font-bold mb-6 text-sakura-pink">Data Management</h1>
+            <h1 className="text-3xl font-bold mb-6 text-vermilion">Data Management</h1>
 
             <div className="bg-white/5 p-6 rounded-xl border border-white/10 mb-6">
                 <h2 className="text-xl font-bold mb-4">Fix Imported Verbs</h2>
                 <div className="mb-4 text-white/70">
-                    Status: <span className="text-electric-cyan">{status}</span>
+                    Status: <span className="text-wave-light">{status}</span>
                 </div>
                 {progress > 0 && (
                     <div className="w-full bg-white/10 rounded-full h-2.5 mb-6">
-                        <div className="bg-electric-cyan h-2.5 rounded-full" style={{ width: `${progress}%` }}></div>
+                        <div className="bg-wave-light h-2.5 rounded-full" style={{ width: `${progress}%` }}></div>
                     </div>
                 )}
 
                 <button
                     onClick={handleGenerateReadings}
                     disabled={!kuroshiro || status.startsWith('Processing')}
-                    className="px-6 py-2 bg-electric-cyan text-midnight-charcoal font-bold rounded hover:bg-cyan-400 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="px-6 py-2 bg-wave-light text-midnight-charcoal font-bold rounded hover:bg-cyan-400 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                     Generate Readings (Kuroshiro)
                 </button>

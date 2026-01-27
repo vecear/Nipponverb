@@ -68,7 +68,7 @@ const LanguageSwitcher = () => {
                 <span className="text-sm font-medium">{lang.name}</span>
                 {i18n.language === lang.code && (
                   <svg
-                    className="w-4 h-4 ml-auto text-sakura-pink"
+                    className="w-4 h-4 ml-auto text-vermilion"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >

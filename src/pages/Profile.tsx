@@ -74,12 +74,12 @@ const Profile = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto">
-      <div className="card mb-6 md:mb-8 !overflow-visible">
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+    <div className="max-w-4xl mx-auto px-2 sm:px-0">
+      <div className="card mb-4 sm:mb-6 md:mb-8 !overflow-visible p-3 sm:p-4 md:p-6">
+        <div className="flex flex-col md:flex-row items-center gap-3 sm:gap-6 md:gap-8">
           <div className="relative">
             {/* 角色圖片 - 浮世繪風格 */}
-            <div className={`w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-vermilion overflow-hidden ${job ? `bg-gradient-to-br ${job.color}` : 'bg-foam'}`}>
+            <div className={`w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full border-4 border-vermilion overflow-hidden ${job ? `bg-gradient-to-br ${job.color}` : 'bg-foam'}`}>
               <img
                 src={characterImage}
                 alt="Character"
@@ -91,68 +91,68 @@ const Profile = () => {
                     target.src = currentUser.photoURL
                   } else {
                     target.style.display = 'none'
-                    target.parentElement!.innerHTML = `<span class="flex items-center justify-center w-full h-full text-wave-deep text-3xl md:text-5xl font-bold">${profile?.displayName?.[0] || currentUser?.displayName?.[0] || 'U'}</span>`
+                    target.parentElement!.innerHTML = `<span class="flex items-center justify-center w-full h-full text-wave-deep text-2xl sm:text-3xl md:text-5xl font-bold">${profile?.displayName?.[0] || currentUser?.displayName?.[0] || 'U'}</span>`
                   }
                 }}
               />
             </div>
-            <div className="absolute -bottom-2 -right-2 bg-pine text-white px-3 py-1 rounded-full text-sm font-semibold border-2 border-washi-light">
+            <div className="absolute -bottom-2 -right-2 bg-pine text-white px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-semibold border-2 border-washi-light">
               {t('profile.streak', { days: 0 })} 🔥
             </div>
           </div>
 
-          <div className="flex-1 text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-1 md:mb-2">
+          <div className="flex-1 text-center md:text-left min-w-0">
+            <div className="flex items-center justify-center md:justify-start gap-1 sm:gap-2 mb-1 md:mb-2">
               {isEditingName ? (
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1 sm:gap-2">
                   <input
                     type="text"
                     value={newName}
                     onChange={(e) => setNewName(e.target.value)}
-                    className="placeholder-sumi-faded text-xl font-bold font-zen"
+                    className="placeholder-sumi-faded text-base sm:text-xl font-bold font-zen w-32 sm:w-auto"
                     autoFocus
                   />
                   <button
                     onClick={handleSaveName}
-                    className="p-2 hover:bg-wave-light/10 rounded-full text-vermilion transition-all"
+                    className="p-1.5 sm:p-2 hover:bg-wave-light/10 rounded-full text-vermilion transition-all"
                   >
-                    <Save size={20} />
+                    <Save size={16} className="sm:w-5 sm:h-5" />
                   </button>
                   <button
                     onClick={() => {
                       setIsEditingName(false)
                       setNewName(profile?.displayName || '')
                     }}
-                    className="p-2 hover:bg-wave-light/10 rounded-full text-sumi-faded transition-all"
+                    className="p-1.5 sm:p-2 hover:bg-wave-light/10 rounded-full text-sumi-faded transition-all"
                   >
-                    <X size={20} />
+                    <X size={16} className="sm:w-5 sm:h-5" />
                   </button>
                 </div>
               ) : (
                 <>
-                  <h1 className="text-2xl md:text-4xl font-zen font-bold text-wave-deep">
+                  <h1 className="text-xl sm:text-2xl md:text-4xl font-zen font-bold text-wave-deep truncate">
                     {profile?.displayName || currentUser?.displayName || 'Student'}
                   </h1>
                   <button
                     onClick={() => setIsEditingName(true)}
-                    className="p-2 hover:bg-wave-light/10 rounded-full text-sumi-faded hover:text-wave-deep transition-all"
+                    className="p-1.5 sm:p-2 hover:bg-wave-light/10 rounded-full text-sumi-faded hover:text-wave-deep transition-all shrink-0"
                     title={t('profile.settings.editName')}
                   >
-                    <Edit2 size={18} />
+                    <Edit2 size={14} className="sm:w-[18px] sm:h-[18px]" />
                   </button>
                 </>
               )}
             </div>
-            <p className="text-sumi-faded mb-4">{currentUser?.email}</p>
+            <p className="text-sumi-faded mb-2 sm:mb-4 text-xs sm:text-sm md:text-base truncate">{currentUser?.email}</p>
 
-            <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-2 md:gap-3">
-              <span className="text-sumi-faded text-sm md:text-base font-bold">{t('profile.targetLevel')}:</span>
-              <div className="flex flex-wrap justify-center gap-1 md:gap-2">
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-1 sm:gap-2 md:gap-3">
+              <span className="text-sumi-faded text-xs sm:text-sm md:text-base font-bold">{t('profile.targetLevel')}:</span>
+              <div className="flex flex-wrap justify-center gap-1">
                 {levels.map((level) => (
                   <button
                     key={level}
                     onClick={() => setSelectedLevel(level)}
-                    className={`px-3 md:px-4 py-1 rounded-full text-xs md:text-sm font-semibold transition-all border ${selectedLevel === level
+                    className={`px-2 sm:px-3 md:px-4 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs md:text-sm font-semibold transition-all border ${selectedLevel === level
                       ? 'bg-vermilion text-white border-vermilion'
                       : 'bg-washi-light text-sumi-faded border-wave-mid/30 hover:border-vermilion hover:text-vermilion'
                       }`}
@@ -163,11 +163,11 @@ const Profile = () => {
               </div>
             </div>
           </div>
-          <div className="mt-6 md:mt-0 flex flex-col items-center md:items-end gap-3">
+          <div className="mt-3 sm:mt-6 md:mt-0 flex flex-col items-center md:items-end gap-2 sm:gap-3">
             <LanguageSwitcher />
             <button
               onClick={() => setIsModalOpen(true)}
-              className="btn-secondary px-6 rounded-xl shadow-sm"
+              className="btn-secondary px-4 sm:px-6 py-1.5 sm:py-2 rounded-lg sm:rounded-xl shadow-sm text-xs sm:text-sm"
             >
               {t('profile.settings.modifyData')}
             </button>
@@ -176,20 +176,20 @@ const Profile = () => {
       </div>
 
       {/* 積分系統區塊 - 浮世繪風格 */}
-      <div className="card mb-6 md:mb-8 !p-0 overflow-hidden border-0 bg-transparent">
-        <div className="bg-wave-deep text-white p-6 md:p-8 rounded-none relative overflow-hidden shadow-ukiyo-lg border-2 border-wave-deep-dark">
+      <div className="card mb-4 sm:mb-6 md:mb-8 !p-0 overflow-hidden border-0 bg-transparent">
+        <div className="bg-wave-deep text-white p-3 sm:p-6 md:p-8 rounded-none relative overflow-hidden shadow-ukiyo-lg border-2 border-wave-deep-dark">
           {/* Background decoration - 波浪紋理 */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-wave-light/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-sky/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
-          <div className="flex items-center justify-between mb-6 relative z-10">
-            <h2 className="text-xl md:text-2xl font-zen font-bold text-white border-b-2 border-foam/30 pb-1">
+          <div className="flex items-center justify-between mb-3 sm:mb-6 relative z-10">
+            <h2 className="text-base sm:text-xl md:text-2xl font-zen font-bold text-white border-b-2 border-foam/30 pb-1">
               {t('progression.title', '冒險進度')}
             </h2>
             {job && (
-              <div className={`px-4 py-2 border border-foam/30 bg-wave-mid/30 backdrop-blur-sm flex items-center gap-2 shadow-sm`}>
-                <span className="text-xl">{job.icon}</span>
-                <span className="font-bold text-white">{job.nameTw}</span>
+              <div className={`px-2 py-1 sm:px-4 sm:py-2 border border-foam/30 bg-wave-mid/30 backdrop-blur-sm flex items-center gap-1 sm:gap-2 shadow-sm`}>
+                <span className="text-base sm:text-xl">{job.icon}</span>
+                <span className="font-bold text-white text-xs sm:text-base">{job.nameTw}</span>
               </div>
             )}
           </div>
@@ -200,18 +200,18 @@ const Profile = () => {
 
         {/* 轉職提示 */}
         {needsJobSelection && (
-          <div className="mt-4 p-4 bg-washi-light border-2 border-vermilion/30 flex flex-col md:flex-row items-center justify-between gap-4 shadow-ukiyo">
-            <div>
-              <p className="text-vermilion font-bold mb-1">
+          <div className="mt-2 sm:mt-4 p-2 sm:p-4 bg-washi-light border-2 border-vermilion/30 flex flex-col md:flex-row items-center justify-between gap-2 sm:gap-4 shadow-ukiyo">
+            <div className="text-center md:text-left">
+              <p className="text-vermilion font-bold mb-0.5 sm:mb-1 text-sm sm:text-base">
                 {t('progression.jobSelection.unlocked', '轉職之儀已解鎖！')}
               </p>
-              <p className="text-sumi-faded text-sm">
+              <p className="text-sumi-faded text-xs sm:text-sm">
                 {t('progression.jobSelection.hint', '選擇你的職業道路，開啟新的旅程')}
               </p>
             </div>
             <button
               onClick={() => navigate('/job-selection')}
-              className="btn-primary whitespace-nowrap"
+              className="btn-primary whitespace-nowrap text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2"
             >
               {t('progression.jobSelection.go', '前往轉職')}
             </button>
@@ -447,26 +447,26 @@ const Profile = () => {
         </div>
       )}
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6 md:mb-8">
         {stats.map((stat) => (
           <div
             key={stat.label}
-            className="card p-4 text-center border-l-4 border-wave-deep"
+            className="card p-2 sm:p-4 text-center border-l-4 border-wave-deep"
           >
-            <div className="text-xl md:text-2xl font-bold text-wave-deep mb-1 md:mb-2">{stat.value}</div>
-            <div className="text-xs md:text-sm text-sumi-faded">{stat.label}</div>
+            <div className="text-base sm:text-xl md:text-2xl font-bold text-wave-deep mb-0.5 sm:mb-1 md:mb-2">{stat.value}</div>
+            <div className="text-[10px] sm:text-xs md:text-sm text-sumi-faded">{stat.label}</div>
           </div>
         ))}
       </div>
 
-      <div className="card mb-8">
-        <h2 className="text-2xl font-zen font-bold mb-6 text-wave-deep border-b-2 border-wave-mid/20 pb-2">{t('profile.learningProgress')}</h2>
+      <div className="card mb-4 sm:mb-8 p-3 sm:p-4 md:p-6">
+        <h2 className="text-lg sm:text-2xl font-zen font-bold mb-3 sm:mb-6 text-wave-deep border-b-2 border-wave-mid/20 pb-2">{t('profile.learningProgress')}</h2>
 
-        <div className="space-y-6">
+        <div className="space-y-3 sm:space-y-6">
           <div>
-            <div className="flex justify-between mb-2">
-              <span className="font-semibold text-wave-deep">{t('profile.progress.verbs')}</span>
-              <span className="text-sumi-faded">{verbsLearned}/200</span>
+            <div className="flex justify-between mb-1 sm:mb-2">
+              <span className="font-semibold text-wave-deep text-xs sm:text-sm md:text-base">{t('profile.progress.verbs')}</span>
+              <span className="text-sumi-faded text-xs sm:text-sm">{verbsLearned}/200</span>
             </div>
             <div className="progress-bar progress-bar-vermilion">
               <div
@@ -477,9 +477,9 @@ const Profile = () => {
           </div>
 
           <div>
-            <div className="flex justify-between mb-2">
-              <span className="font-semibold text-wave-deep">{t('profile.progress.kanji')}</span>
-              <span className="text-sumi-faded">{kanjiLearned}/1000</span>
+            <div className="flex justify-between mb-1 sm:mb-2">
+              <span className="font-semibold text-wave-deep text-xs sm:text-sm md:text-base">{t('profile.progress.kanji')}</span>
+              <span className="text-sumi-faded text-xs sm:text-sm">{kanjiLearned}/1000</span>
             </div>
             <div className="progress-bar">
               <div
@@ -490,9 +490,9 @@ const Profile = () => {
           </div>
 
           <div>
-            <div className="flex justify-between mb-2">
-              <span className="font-semibold text-wave-deep">{t('profile.progress.grammar')}</span>
-              <span className="text-sumi-faded">{grammarLearned}/80</span>
+            <div className="flex justify-between mb-1 sm:mb-2">
+              <span className="font-semibold text-wave-deep text-xs sm:text-sm md:text-base">{t('profile.progress.grammar')}</span>
+              <span className="text-sumi-faded text-xs sm:text-sm">{grammarLearned}/80</span>
             </div>
             <div className="progress-bar">
               <div
@@ -504,11 +504,11 @@ const Profile = () => {
         </div>
       </div>
 
-      <div className="card">
-        <h2 className="text-xl md:text-2xl font-zen font-bold mb-4 md:mb-6 text-wave-deep border-b-2 border-wave-mid/20 pb-2">
+      <div className="card p-3 sm:p-4 md:p-6">
+        <h2 className="text-base sm:text-xl md:text-2xl font-zen font-bold mb-3 sm:mb-4 md:mb-6 text-wave-deep border-b-2 border-wave-mid/20 pb-2">
           {t('profile.statistics.title', { level: selectedLevel })}
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
           {['gojuon', 'verbs', 'kanji', 'grammar', 'vocabulary'].map((category) => {
             const history = getHistoryByCategory(category, selectedLevel)
             const hasData = history.length > 0
@@ -523,20 +523,20 @@ const Profile = () => {
 
 
             return (
-              <div key={category} className="paper-card p-3 rounded-none border border-wave-deep">
-                <div className="flex flex-col gap-2 mb-2">
-                  <div className="flex items-center gap-2">
-                    <div className={`w-8 h-8 flex items-center justify-center text-lg font-bold border border-wave-deep bg-washi-light shadow-sm`}>
+              <div key={category} className="paper-card p-2 sm:p-3 rounded-none border border-wave-deep">
+                <div className="flex flex-col gap-1 sm:gap-2 mb-1 sm:mb-2">
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <div className={`w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-sm sm:text-lg font-bold border border-wave-deep bg-washi-light shadow-sm shrink-0`}>
                       {category === 'verbs' ? '✍️' :
                         category === 'gojuon' ? 'あ' :
                           category === 'kanji' ? '漢' :
                             category === 'vocabulary' ? '🔤' : '📖'}
                     </div>
                     <div className="min-w-0 flex-1">
-                      <h3 className="font-bold text-sm truncate text-wave-deep">
+                      <h3 className="font-bold text-[10px] sm:text-sm truncate text-wave-deep">
                         {t(`practice.categories.${category}.title`)}
                       </h3>
-                      <p className="text-[10px] text-sumi-faded truncate">
+                      <p className="text-[8px] sm:text-[10px] text-sumi-faded truncate">
                         {t('profile.statistics.lastPractice')}: {hasData
                           ? new Date(lastEntry.date).toLocaleDateString()
                           : '--'}
@@ -546,10 +546,10 @@ const Profile = () => {
 
                   {hasData && (
                     <div className="flex items-baseline justify-between">
-                      <div className="text-xl font-bold text-wave-deep leading-none">
+                      <div className="text-base sm:text-xl font-bold text-wave-deep leading-none">
                         {lastEntry.score}/{lastEntry.total}
                       </div>
-                      <div className={`text-xs font-bold ${lastEntry.accuracy >= 80 ? 'text-pine' :
+                      <div className={`text-[10px] sm:text-xs font-bold ${lastEntry.accuracy >= 80 ? 'text-pine' :
                         lastEntry.accuracy >= 60 ? 'text-ochre' : 'text-vermilion'
                         }`}>
                         {lastEntry.accuracy}%
@@ -558,8 +558,8 @@ const Profile = () => {
                   )}
                 </div>
 
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between text-sm">
+                <div className="space-y-2 sm:space-y-4">
+                  <div className="flex items-center justify-between text-[10px] sm:text-sm">
                     <span className="text-sumi-faded">{t('profile.statistics.recentAverage')} (5)</span>
                     <span className={`font-bold ${avgAccuracy >= 80 ? 'text-pine' :
                       avgAccuracy >= 60 ? 'text-ochre' : 'text-sumi-faded'

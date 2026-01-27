@@ -151,7 +151,7 @@ const Simulation = () => {
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <h2 className="text-2xl font-bold">{level.level}</h2>
-                  <div className="px-2 py-0.5 bg-sakura-pink/20 text-sakura-pink rounded-full text-xs">
+                  <div className="px-2 py-0.5 bg-vermilion/20 text-vermilion rounded-full text-xs">
                     {level.time} {t('simulation.timeLimit')}
                   </div>
                 </div>
@@ -182,19 +182,19 @@ const Simulation = () => {
           <h3 className="text-2xl font-zen font-bold mb-4">{t('simulation.guidelinesTitle')}</h3>
           <ul className="space-y-3 text-indigo-900/80">
             <li className="flex items-start space-x-3">
-              <span className="text-sakura-pink mt-1">•</span>
+              <span className="text-vermilion mt-1">•</span>
               <span>{t('simulation.guideline1')}</span>
             </li>
             <li className="flex items-start space-x-3">
-              <span className="text-sakura-pink mt-1">•</span>
+              <span className="text-vermilion mt-1">•</span>
               <span>{t('simulation.guideline2')}</span>
             </li>
             <li className="flex items-start space-x-3">
-              <span className="text-sakura-pink mt-1">•</span>
+              <span className="text-vermilion mt-1">•</span>
               <span>{t('simulation.guideline3')}</span>
             </li>
             <li className="flex items-start space-x-3">
-              <span className="text-sakura-pink mt-1">•</span>
+              <span className="text-vermilion mt-1">•</span>
               <span>{t('simulation.guideline4')}</span>
             </li>
           </ul>
@@ -266,14 +266,14 @@ const Simulation = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 my-6 md:my-8">
             <div className="glass p-4 md:p-6 rounded-xl">
-              <div className="text-4xl md:text-5xl font-bold text-sakura-pink mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-vermilion mb-2">
                 {results.score}/{results.total}
               </div>
               <div className="text-sm md:text-base text-indigo-900/90">{t('simulation.results.questionsCorrect')}</div>
             </div>
 
             <div className="glass p-4 md:p-6 rounded-xl">
-              <div className="text-4xl md:text-5xl font-bold text-electric-cyan mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-wave-light mb-2">
                 {results.percentage}%
               </div>
               <div className="text-sm md:text-base text-indigo-900/90">{t('simulation.results.overallScore')}</div>
@@ -286,11 +286,11 @@ const Simulation = () => {
               <div key={_idx} className="glass p-4 rounded-xl">
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-semibold">{section.title}</span>
-                  <span className="text-sakura-pink">{section.score}/{section.total}</span>
+                  <span className="text-vermilion">{section.score}/{section.total}</span>
                 </div>
                 <div className="w-full bg-white/10 rounded-full h-2">
                   <div
-                    className="bg-gradient-to-r from-sakura-pink to-electric-cyan h-2 rounded-full"
+                    className="bg-gradient-to-r from-vermilion to-wave-deep h-2 rounded-full"
                     style={{ width: `${section.percentage}%` }}
                   />
                 </div>
@@ -331,28 +331,28 @@ const Simulation = () => {
     .reduce((sum, s) => sum + s.questions.length, 0) + currentQuestionIndex + 1
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto px-2 sm:px-0">
       {/* Header with timer */}
-      <div className="card mb-6">
-        <div className="flex items-center justify-between">
-          <div>
-            <h2 className="text-2xl font-bold">{t('simulation.exam.mockExam', { level: selectedLevel })}</h2>
-            <p className="text-indigo-900/60">
+      <div className="card mb-3 sm:mb-6 p-3 sm:p-6">
+        <div className="flex items-center justify-between gap-2">
+          <div className="min-w-0">
+            <h2 className="text-base sm:text-2xl font-bold truncate">{t('simulation.exam.mockExam', { level: selectedLevel })}</h2>
+            <p className="text-indigo-900/60 text-xs sm:text-base truncate">
               {t('simulation.exam.section', { current: currentSectionIndex + 1, total: exam.sections.length, name: currentSection.title })}
             </p>
           </div>
-          <div className="text-right">
-            <div className={`text-3xl font-bold ${timeRemaining < 300 ? 'text-red-500' : 'text-electric-cyan'}`}>
+          <div className="text-right shrink-0">
+            <div className={`text-lg sm:text-3xl font-bold ${timeRemaining < 300 ? 'text-red-500' : 'text-wave-light'}`}>
               {formatTime(timeRemaining)}
             </div>
-            <div className="text-sm text-indigo-900/90">{t('simulation.exam.timeRemaining')}</div>
+            <div className="text-[10px] sm:text-sm text-indigo-900/90">{t('simulation.exam.timeRemaining')}</div>
           </div>
         </div>
       </div>
 
       {/* Progress */}
-      <div className="mb-6">
-        <div className="flex items-center justify-between mb-2">
+      <div className="mb-3 sm:mb-6">
+        <div className="flex items-center justify-between mb-1 sm:mb-2 text-[10px] sm:text-sm">
           <span className="text-indigo-900/60">
             {t('simulation.exam.question', { current: currentOverallIndex, total: totalQuestions })}
           </span>
@@ -360,30 +360,30 @@ const Simulation = () => {
             {t('simulation.exam.sectionProgress', { current: currentQuestionIndex + 1, total: currentSection.questions.length })}
           </span>
         </div>
-        <div className="w-full bg-indigo-900/10 rounded-full h-2">
+        <div className="w-full bg-indigo-900/10 rounded-full h-1 sm:h-2">
           <div
-            className="bg-gradient-to-r from-sakura-pink to-electric-cyan h-2 rounded-full transition-all"
+            className="bg-gradient-to-r from-vermilion to-wave-deep h-1 sm:h-2 rounded-full transition-all"
             style={{ width: `${(currentOverallIndex / totalQuestions) * 100}%` }}
           />
         </div>
       </div>
 
-      <div className="card mb-6">
-        <h3 className="text-2xl font-semibold mb-6 whitespace-pre-wrap">
+      <div className="card mb-3 sm:mb-6 p-3 sm:p-6">
+        <h3 className="text-base sm:text-2xl font-semibold mb-3 sm:mb-6 whitespace-pre-wrap">
           <FuriganaText text={currentQuestion.stem || ''} />
         </h3>
 
-        <div className="space-y-3">
+        <div className="space-y-2 sm:space-y-3">
           {(currentQuestion.options || []).map((option, _idx) => (
             <button
               key={_idx}
               onClick={() => handleAnswer(currentQuestion.id, option)}
-              className={`w-full p-4 rounded-xl text-left transition-all ${answers[currentQuestion.id] === option
-                ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
+              className={`w-full p-2 sm:p-4 rounded-lg sm:rounded-xl text-left transition-all text-sm sm:text-base ${answers[currentQuestion.id] === option
+                ? 'bg-wave-deep text-foam border-2 border-vermilion shadow-ukiyo'
                 : 'glass hover:bg-white/50 border border-indigo-900/5'
                 }`}
             >
-              <span className="font-semibold mr-3">{String.fromCharCode(65 + _idx)}.</span>
+              <span className="font-semibold mr-2 sm:mr-3">{String.fromCharCode(65 + _idx)}.</span>
               <FuriganaText text={option} />
             </button>
           ))}
@@ -391,26 +391,26 @@ const Simulation = () => {
       </div>
 
       {/* Navigation */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-2">
         <button
           onClick={previousQuestion}
           disabled={currentSectionIndex === 0 && currentQuestionIndex === 0}
-          className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
+          className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed text-xs sm:text-sm px-2 py-1.5 sm:px-4 sm:py-2"
         >
           {t('simulation.exam.previous')}
         </button>
 
-        <div className="text-indigo-900/60">
+        <div className="text-indigo-900/60 text-[10px] sm:text-sm text-center">
           {t('simulation.exam.answered', { count: Object.keys(answers).length, total: totalQuestions })}
         </div>
 
         {currentSectionIndex === exam.sections.length - 1 &&
           currentQuestionIndex === currentSection.questions.length - 1 ? (
-          <button onClick={finishExam} className="btn-primary">
+          <button onClick={finishExam} className="btn-primary text-xs sm:text-sm px-2 py-1.5 sm:px-4 sm:py-2">
             {t('simulation.exam.finishExam')}
           </button>
         ) : (
-          <button onClick={nextQuestion} className="btn-primary">
+          <button onClick={nextQuestion} className="btn-primary text-xs sm:text-sm px-2 py-1.5 sm:px-4 sm:py-2">
             {t('simulation.exam.next')}
           </button>
         )}

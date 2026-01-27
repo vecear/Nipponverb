@@ -269,17 +269,17 @@ const GrammarDetail = () => {
     }
 
     return (
-        <div className="min-h-screen py-8 px-4 pb-24">
-            <div className="max-w-4xl mx-auto space-y-8">
+        <div className="min-h-screen py-4 sm:py-8 px-2 sm:px-4 pb-24">
+            <div className="max-w-4xl mx-auto space-y-4 sm:space-y-8">
                 {/* Header */}
                 <header>
-                    <Link to="/grammar" className="inline-flex items-center text-indigo-900/90 hover:text-indigo-700 mb-6 transition-colors md:hidden">
-                        <ArrowLeft size={20} className="mr-2" />
+                    <Link to="/grammar" className="inline-flex items-center text-indigo-900/90 hover:text-indigo-700 mb-3 sm:mb-6 transition-colors md:hidden text-sm">
+                        <ArrowLeft size={16} className="mr-1 sm:mr-2" />
                         返回列表
                     </Link>
 
-                    <div className="flex items-center gap-4 mb-2">
-                        <span className={`px-3 py-1 rounded text-sm font-bold ${detail.level === 'N5' ? 'bg-blue-500/20 text-blue-400' :
+                    <div className="flex items-center gap-2 sm:gap-4 mb-1 sm:mb-2 flex-wrap">
+                        <span className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded text-xs sm:text-sm font-bold ${detail.level === 'N5' ? 'bg-blue-500/20 text-blue-400' :
                             detail.level === 'N4' ? 'bg-green-500/20 text-green-400' :
                                 detail.level === 'N3' ? 'bg-yellow-500/20 text-yellow-400' :
                                     detail.level === 'N2' ? 'bg-orange-500/20 text-orange-400' :
@@ -287,51 +287,51 @@ const GrammarDetail = () => {
                             }`}>
                             {detail.level}
                         </span>
-                        <h1 className="text-4xl font-bold text-indigo-900">{renderFurigana(detail.pattern)}</h1>
+                        <h1 className="text-2xl sm:text-4xl font-bold text-indigo-900">{renderFurigana(detail.pattern)}</h1>
                         {/* Show completion badge if already completed */}
                         {wasAlreadyCompleted && (
-                            <span className="inline-flex items-center gap-1 px-2 py-1 bg-green-500/20 text-green-500 rounded text-sm font-medium">
-                                <Check size={14} />
+                            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 sm:px-2 sm:py-1 bg-green-500/20 text-green-500 rounded text-xs sm:text-sm font-medium">
+                                <Check size={12} className="sm:w-3.5 sm:h-3.5" />
                                 已完成
                             </span>
                         )}
                     </div>
-                    <p className="text-xl text-indigo-900/80">{detail.translation}</p>
+                    <p className="text-base sm:text-xl text-indigo-900/80">{detail.translation}</p>
                 </header>
 
                 {/* Connection */}
-                <section className="bg-indigo-900/5 border border-indigo-900/10 rounded-2xl p-6">
-                    <h3 className="text-lg font-bold text-sakura-pink mb-2 flex items-center">
-                        <BookOpen size={20} className="mr-2" /> 接續
+                <section className="bg-indigo-900/5 border border-indigo-900/10 rounded-xl sm:rounded-2xl p-3 sm:p-6">
+                    <h3 className="text-sm sm:text-lg font-bold text-vermilion mb-1 sm:mb-2 flex items-center">
+                        <BookOpen size={16} className="sm:w-5 sm:h-5 mr-1 sm:mr-2" /> 接續
                     </h3>
-                    <p className="text-indigo-900/90 font-mono bg-indigo-900/10 p-3 rounded-lg inline-block">
+                    <p className="text-indigo-900/90 font-mono bg-indigo-900/10 p-2 sm:p-3 rounded-md sm:rounded-lg inline-block text-xs sm:text-base">
                         {renderFurigana(detail.connection)}
                     </p>
                 </section>
 
                 {/* Explanation & Usages */}
-                <section id="usage" className="space-y-6 scroll-mt-24">
-                    <h3 className="text-2xl font-bold text-indigo-900 mb-4">用法解析</h3>
+                <section id="usage" className="space-y-3 sm:space-y-6 scroll-mt-24">
+                    <h3 className="text-lg sm:text-2xl font-bold text-indigo-900 mb-2 sm:mb-4">用法解析</h3>
                     {detail.explanation.map((usage) => (
-                        <div key={usage.usageId} className="bg-indigo-900/5 border border-indigo-900/10 rounded-2xl p-6">
+                        <div key={usage.usageId} className="bg-indigo-900/5 border border-indigo-900/10 rounded-xl sm:rounded-2xl p-3 sm:p-6">
                             {usage.title && (
-                                <h4 className="text-lg font-bold text-indigo-900 mb-2">{usage.title}</h4>
+                                <h4 className="text-sm sm:text-lg font-bold text-indigo-900 mb-1 sm:mb-2">{usage.title}</h4>
                             )}
-                            <p className="text-indigo-900/80 mb-6 leading-relaxed">
+                            <p className="text-indigo-900/80 mb-3 sm:mb-6 leading-relaxed text-xs sm:text-base">
                                 {renderFurigana(usage.description)}
                             </p>
 
-                            <div className="space-y-4">
+                            <div className="space-y-2 sm:space-y-4">
                                 {usage.examples.map((ex, i) => (
-                                    <div key={i} className="bg-indigo-900/10 rounded-xl p-4">
-                                        <div className="text-lg text-indigo-900 mb-1 font-zen">
+                                    <div key={i} className="bg-indigo-900/10 rounded-lg sm:rounded-xl p-2 sm:p-4">
+                                        <div className="text-sm sm:text-lg text-indigo-900 mb-0.5 sm:mb-1 font-zen">
                                             {renderFurigana(ex.japanese)}
                                         </div>
-                                        <div className="text-indigo-900/90 text-sm">
+                                        <div className="text-indigo-900/90 text-xs sm:text-sm">
                                             {ex.chinese}
                                         </div>
                                         {ex.grammarRef && (
-                                            <div className="text-xs text-sakura-pink mt-2 text-right">
+                                            <div className="text-[10px] sm:text-xs text-vermilion mt-1 sm:mt-2 text-right">
                                                 參照: {ex.grammarRef}
                                             </div>
                                         )}
@@ -344,27 +344,27 @@ const GrammarDetail = () => {
 
                 {/* Analysis/Comparison */}
                 {detail.analysis && (
-                    <section id="analysis" className="bg-indigo-900/5 border border-indigo-900/10 rounded-2xl p-6 scroll-mt-24">
-                        <h3 className="text-xl font-bold text-indigo-900 mb-4 flex items-center">
-                            <Lightbulb size={24} className="mr-2 text-gold" />
+                    <section id="analysis" className="bg-indigo-900/5 border border-indigo-900/10 rounded-xl sm:rounded-2xl p-3 sm:p-6 scroll-mt-24">
+                        <h3 className="text-base sm:text-xl font-bold text-indigo-900 mb-2 sm:mb-4 flex items-center">
+                            <Lightbulb size={18} className="sm:w-6 sm:h-6 mr-1 sm:mr-2 text-gold" />
                             {detail.analysis.title}
                         </h3>
                         {detail.analysis.description && (
-                            <p className="text-indigo-900/80 mb-4">
+                            <p className="text-indigo-900/80 mb-2 sm:mb-4 text-xs sm:text-base">
                                 {renderFurigana(detail.analysis.description)}
                             </p>
                         )}
 
                         {detail.analysis.points && (
-                            <ul className="space-y-4">
+                            <ul className="space-y-2 sm:space-y-4">
                                 {detail.analysis.points.map((point, i) => (
-                                    <li key={i} className="flex gap-3">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-indigo-900/40 mt-2.5 flex-shrink-0" />
-                                        <div className="space-y-2 flex-1">
-                                            <p className="text-indigo-900/90">{renderFurigana(point.rule)}</p>
+                                    <li key={i} className="flex gap-2 sm:gap-3">
+                                        <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-indigo-900/40 mt-2 sm:mt-2.5 flex-shrink-0" />
+                                        <div className="space-y-1 sm:space-y-2 flex-1">
+                                            <p className="text-indigo-900/90 text-xs sm:text-base">{renderFurigana(point.rule)}</p>
                                             {point.examples && point.examples.map((ex, j) => (
-                                                <div key={j} className="bg-indigo-900/10 rounded-lg p-3 text-sm">
-                                                    <div className="text-indigo-900 mb-1">{renderFurigana(ex.japanese)}</div>
+                                                <div key={j} className="bg-indigo-900/10 rounded-md sm:rounded-lg p-2 sm:p-3 text-xs sm:text-sm">
+                                                    <div className="text-indigo-900 mb-0.5 sm:mb-1">{renderFurigana(ex.japanese)}</div>
                                                     <div className="text-indigo-900/80">{ex.chinese}</div>
                                                 </div>
                                             ))}
@@ -378,12 +378,12 @@ const GrammarDetail = () => {
 
                 {/* Quiz */}
                 {detail.quiz && detail.quiz.length > 0 && (
-                    <section id="quiz" className="space-y-4 pt-8 scroll-mt-24">
-                        <h3 className="text-2xl font-bold text-indigo-900 mb-4 flex items-center">
-                            <HelpCircle size={24} className="mr-2" />
+                    <section id="quiz" className="space-y-3 sm:space-y-4 pt-4 sm:pt-8 scroll-mt-24">
+                        <h3 className="text-lg sm:text-2xl font-bold text-indigo-900 mb-2 sm:mb-4 flex items-center">
+                            <HelpCircle size={18} className="sm:w-6 sm:h-6 mr-1 sm:mr-2" />
                             隨堂測驗
                             {wasAlreadyCompleted && (
-                                <span className="ml-3 text-sm font-normal text-green-500">
+                                <span className="ml-2 sm:ml-3 text-xs sm:text-sm font-normal text-green-500">
                                     (已通過)
                                 </span>
                             )}
@@ -394,14 +394,14 @@ const GrammarDetail = () => {
                             const explanationText = renderExplanation(q.explanation, isCorrect, selectedAnswers[q.id])
 
                             return (
-                                <div key={q.id} className="bg-indigo-900/5 border border-indigo-900/10 rounded-2xl p-6">
-                                    <p className="text-lg text-indigo-900 mb-6 font-zen whitespace-pre-wrap">
+                                <div key={q.id} className="bg-indigo-900/5 border border-indigo-900/10 rounded-xl sm:rounded-2xl p-3 sm:p-6">
+                                    <p className="text-sm sm:text-lg text-indigo-900 mb-3 sm:mb-6 font-zen whitespace-pre-wrap">
                                         {renderFurigana(q.sentence)}
                                     </p>
 
-                                    <div className="grid grid-cols-2 gap-3 mb-4">
+                                    <div className="grid grid-cols-2 gap-1.5 sm:gap-3 mb-2 sm:mb-4">
                                         {q.options.map((opt, i) => {
-                                            let btnClass = "p-3 rounded-xl border transition-all text-center "
+                                            let btnClass = "p-2 sm:p-3 rounded-lg sm:rounded-xl border transition-all text-center text-xs sm:text-base "
                                             if (isAnswered) {
                                                 if (i === q.correctIndex) {
                                                     btnClass += "bg-green-500/20 border-green-500 text-green-400"
@@ -428,15 +428,15 @@ const GrammarDetail = () => {
                                     </div>
 
                                     {showExplanation[q.id] && (
-                                        <div className={`mt-4 p-4 rounded-xl flex gap-3 ${isCorrect ? 'bg-green-500/10' : 'bg-red-500/10'}`}>
+                                        <div className={`mt-2 sm:mt-4 p-2 sm:p-4 rounded-lg sm:rounded-xl flex gap-2 sm:gap-3 ${isCorrect ? 'bg-green-500/10' : 'bg-red-500/10'}`}>
                                             <div className="flex-shrink-0 mt-0.5">
-                                                {isCorrect ? <Check size={20} className="text-green-400" /> : <X size={20} className="text-red-400" />}
+                                                {isCorrect ? <Check size={16} className="sm:w-5 sm:h-5 text-green-400" /> : <X size={16} className="sm:w-5 sm:h-5 text-red-400" />}
                                             </div>
                                             <div>
-                                                <p className={`font-bold mb-1 ${isCorrect ? 'text-green-400' : 'text-red-400'}`}>
+                                                <p className={`font-bold mb-0.5 sm:mb-1 text-xs sm:text-base ${isCorrect ? 'text-green-400' : 'text-red-400'}`}>
                                                     {isCorrect ? '答對了！' : '答錯了'}
                                                 </p>
-                                                <p className="text-indigo-900/80 text-sm">
+                                                <p className="text-indigo-900/80 text-[10px] sm:text-sm">
                                                     {explanationText ? renderFurigana(explanationText) : null}
                                                 </p>
                                             </div>
@@ -449,21 +449,21 @@ const GrammarDetail = () => {
                 )}
 
                 {/* Back to List and Retry Buttons - Desktop only */}
-                <div className="pt-8 pb-4 hidden md:flex justify-center gap-4">
+                <div className="pt-4 sm:pt-8 pb-4 hidden md:flex justify-center gap-4">
                     <Link
                         to="/grammar"
-                        className="inline-flex items-center px-6 py-3 bg-indigo-900/10 hover:bg-indigo-900/20 rounded-xl text-indigo-900 font-medium transition-all"
+                        className="inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-indigo-900/10 hover:bg-indigo-900/20 rounded-lg sm:rounded-xl text-indigo-900 font-medium transition-all text-sm sm:text-base"
                     >
-                        <ArrowLeft size={20} className="mr-2" />
+                        <ArrowLeft size={16} className="sm:w-5 sm:h-5 mr-1 sm:mr-2" />
                         返回列表
                     </Link>
                     {/* Show retry button if there are wrong answers and quiz exists */}
                     {detail.quiz && detail.quiz.length > 0 && hasWrongAnswer && !wasAlreadyCompleted && (
                         <button
                             onClick={handleRetry}
-                            className="inline-flex items-center px-6 py-3 bg-indigo-900/10 hover:bg-indigo-900/20 rounded-xl text-indigo-900 font-medium transition-all"
+                            className="inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-indigo-900/10 hover:bg-indigo-900/20 rounded-lg sm:rounded-xl text-indigo-900 font-medium transition-all text-sm sm:text-base"
                         >
-                            <RotateCcw size={20} className="mr-2" />
+                            <RotateCcw size={16} className="sm:w-5 sm:h-5 mr-1 sm:mr-2" />
                             重新答題
                         </button>
                     )}
