@@ -18,10 +18,8 @@ import { JOB_STORIES, NOVICE_STORIES, StageStory } from '../data/characterStorie
 import {
   getStories,
   saveStories,
-  loadAllStoriesFromFirebase,
   hasStoriesInFirebase,
   initializeStoriesInFirebase,
-  resetStoriesCache,
 } from '../services/storyService'
 import {
   Settings,

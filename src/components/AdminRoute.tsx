@@ -44,7 +44,7 @@ const AdminRoute = ({ children }: AdminRouteProps) => {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-900">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-sakura-pink mx-auto"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-vermilion mx-auto"></div>
           <p className="mt-4 text-white/60">載入中...</p>
         </div>
       </div>

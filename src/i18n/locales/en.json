@@ -178,9 +178,9 @@
     "learningProgress": "Learning Progress",
     "stats": {
       "totalStudyTime": "Total Study Time",
-      "questionsAnswered": "Questions Answered",
+      "questionsAnswered": "Practice Questions Answered",
       "currentStreak": "Current Streak",
-      "stagesCompleted": "Stages Completed"
+      "stagesCompleted": "Practice Stages Completed"
     },
     "progress": {
       "verbs": "Verbs",

@@ -49,7 +49,7 @@ const LevelUpModal = ({
                 {[...Array(20)].map((_, i) => (
                   <motion.div
                     key={i}
-                    className="absolute w-2 h-2 bg-sakura-pink/30 rounded-full"
+                    className="absolute w-2 h-2 bg-vermilion/30 rounded-full"
                     initial={{
                       x: Math.random() * 100 - 50 + '%',
                       y: '100%',
@@ -109,7 +109,7 @@ const LevelUpModal = ({
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     transition={{ delay: 0.4, type: 'spring' }}
-                    className="text-sakura-pink text-2xl"
+                    className="text-vermilion text-2xl"
                   >
                     →
                   </motion.span>
@@ -117,7 +117,7 @@ const LevelUpModal = ({
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     transition={{ delay: 0.5, type: 'spring' }}
-                    className="text-electric-cyan text-3xl font-bold"
+                    className="text-wave-light text-3xl font-bold"
                   >
                     Lv.{levelUpInfo.newLevel}
                   </motion.span>
@@ -140,7 +140,7 @@ const LevelUpModal = ({
                     <p className="text-white/60 text-sm">
                       {levelUpInfo.newTitle.nameReading}
                     </p>
-                    <p className="text-sakura-pink">
+                    <p className="text-vermilion">
                       {levelUpInfo.newTitle.nameTw}
                     </p>
                   </motion.div>
@@ -152,9 +152,9 @@ const LevelUpModal = ({
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.6 }}
-                    className="glass rounded-xl p-4 mb-6 border border-sakura-pink/30"
+                    className="glass rounded-xl p-4 mb-6 border border-vermilion/30"
                   >
-                    <p className="text-sakura-pink font-bold mb-2">
+                    <p className="text-vermilion font-bold mb-2">
                       {t('progression.levelUp.jobChangeUnlocked', '轉職之儀已解鎖！')}
                     </p>
                     <p className="text-white/60 text-sm">

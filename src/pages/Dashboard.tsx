@@ -1,26 +1,20 @@
-import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import ExpBar from '../components/ExpBar'
 import { useUserStore } from '../store/useUserStore'
+import { usePracticeStore } from '../store/usePracticeStore'
 import { DEFAULT_PROGRESSION, EXP_CONSTANTS } from '../types/progression'
 import { getJobById, NOVICE_TITLE, getCharacterImagePath } from '../data/jobs'
 import { getCharacterStory } from '../data/characterStories'
 import { courses } from '../data/courses'
-
-// Icons replaced with unicode/gradients
-// import brushIcon from '../assets/icons/brush_sumi_e.png'
-// import swordIcon from '../assets/icons/sword_sumi_e.png'
-// import lanternIcon from '../assets/icons/lantern_sumi_e.png'
-// import toriiIcon from '../assets/icons/torii_sumi_e.png'
-// import bookIcon from '../assets/icons/book_sumi_e.png'
+import { formatStudyTime } from '../services/studyTrackingService'
 
 const Dashboard = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const { currentUser } = useAuth()
   const { profile } = useUserStore()
+  const { practiceHistory } = usePracticeStore()
 
   // 取得進度資料
   const progression = profile?.progression || DEFAULT_PROGRESSION
@@ -72,7 +66,18 @@ const Dashboard = () => {
   // 取得角色故事
   const characterStory = getCharacterStory(progression.level, progression.jobId, gender)
 
+  // 從練習歷史計算統計數據
+  const totalQuestionsAnswered = practiceHistory.reduce((sum, entry) => sum + entry.total, 0)
+  const practiceSessionsCompleted = practiceHistory.length
+  const totalStudyTime = profile?.stats?.totalStudyTime || 0
+  const currentStreak = profile?.stats?.streak?.current || 0
 
+  const stats = [
+    { label: t('profile.stats.totalStudyTime'), value: formatStudyTime(totalStudyTime) },
+    { label: t('profile.stats.currentStreak'), value: currentStreak > 0 ? `${currentStreak} 天` : '0 天' },
+    { label: t('profile.stats.questionsAnswered'), value: totalQuestionsAnswered.toLocaleString() },
+    { label: t('profile.stats.stagesCompleted'), value: practiceSessionsCompleted.toLocaleString() },
+  ]
 
   const modes = [
     {
@@ -81,7 +86,7 @@ const Dashboard = () => {
       icon: 'あア',
       path: '/practice/gojuon',
       color: 'from-green-500 to-teal-500',
-      image: undefined, // brushIcon,
+      image: '/assets/icons/practice/practice-gojuon.png',
     },
     {
       title: t('practice.categories.verbs.title'),
@@ -89,7 +94,7 @@ const Dashboard = () => {
       icon: '✍️',
       path: '/practice/verbs',
       color: 'from-blue-500 to-cyan-500',
-      image: undefined, // swordIcon,
+      image: '/assets/icons/practice/practice-verbs.png',
     },
     {
       title: t('practice.categories.grammar.title'),
@@ -97,7 +102,7 @@ const Dashboard = () => {
       icon: '📖',
       path: '/practice/grammar',
       color: 'from-purple-500 to-pink-500',
-      image: undefined, // lanternIcon,
+      image: '/assets/icons/practice/practice-grammar.png',
     },
     {
       title: t('practice.categories.kanji.title'),
@@ -105,7 +110,7 @@ const Dashboard = () => {
       icon: '漢',
       path: '/practice/kanji',
       color: 'from-orange-500 to-red-500',
-      image: undefined, // toriiIcon,
+      image: '/assets/icons/practice/practice-kanji.png',
     },
     {
       title: t('practice.categories.vocabulary.title'),
@@ -113,28 +118,28 @@ const Dashboard = () => {
       icon: '🔤',
       path: '/practice/vocabulary',
       color: 'from-yellow-400 to-orange-500',
-      image: undefined, // bookIcon,
+      image: '/assets/icons/practice/practice-vocabulary.png',
     },
   ]
 
   return (
-    <div className="space-y-4 md:space-y-6">
-      {/* Hero Section - 浮世繪風格 */}
-      <div className="text-center py-2 md:py-4">
-        <h1 className="text-2xl md:text-4xl font-zen font-bold mb-2 text-wave-deep">
-          {t('dashboard.welcome', { name: profile?.displayName || currentUser?.displayName || 'Student' })}
-        </h1>
-        <p className="text-lg md:text-xl text-sumi-light font-medium">
-          {t('dashboard.continueJourney')}
-        </p>
+    <div className="space-y-3 sm:space-y-4 md:space-y-6">
+      {/* Stats Cards - 統計卡片 */}
+      <div className="grid grid-cols-4 gap-2 sm:gap-3">
+        {stats.map((stat, index) => (
+          <div key={index} className="card p-2 sm:p-3 text-center">
+            <div className="text-base sm:text-xl md:text-2xl font-bold text-wave-deep">{stat.value}</div>
+            <div className="text-[10px] sm:text-xs text-sumi-faded mt-0.5">{stat.label}</div>
+          </div>
+        ))}
       </div>
 
       {/* Game Status Section - 浮世繪風格 */}
-      <div className="card">
-        <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
+      <div className="card p-2 sm:p-4 md:p-6">
+        <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-4 md:gap-6">
           {/* 角色圖片和資訊 */}
-          <div className="flex items-center gap-4">
-            <div className={`w-16 h-16 md:w-20 md:h-20 rounded-none border-2 border-wave-deep bg-gradient-to-br ${jobInfo.color} flex items-center justify-center overflow-hidden shadow-ukiyo`}>
+          <div className="flex items-center gap-2 sm:gap-4">
+            <div className={`w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-none border-2 border-wave-deep bg-gradient-to-br ${jobInfo.color} flex items-center justify-center overflow-hidden shadow-ukiyo shrink-0`}>
               <img
                 src={characterImage}
                 alt={jobInfo.nameTw}
@@ -142,26 +147,26 @@ const Dashboard = () => {
                 onError={(e) => {
                   // 圖片載入失敗時顯示 emoji
                   e.currentTarget.style.display = 'none'
-                  e.currentTarget.parentElement!.innerHTML = `<span class="text-3xl md:text-4xl">${jobInfo.icon}</span>`
+                  e.currentTarget.parentElement!.innerHTML = `<span class="text-2xl sm:text-3xl md:text-4xl">${jobInfo.icon}</span>`
                 }}
               />
             </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-2">
-                <span className="text-vermilion font-bold text-lg md:text-xl">Lv.{progression.level}</span>
+            <div className="flex flex-col min-w-0">
+              <div className="flex items-center gap-1 sm:gap-2 flex-wrap">
+                <span className="text-vermilion font-bold text-sm sm:text-lg md:text-xl">Lv.{progression.level}</span>
                 {jobInfo.hasJob && (
-                  <span className="px-2 py-0.5 bg-foam text-wave-deep border border-wave-deep rounded-sm text-xs font-bold">
+                  <span className="px-1.5 py-0.5 sm:px-2 bg-foam text-wave-deep border border-wave-deep rounded-sm text-[10px] sm:text-xs font-bold">
                     {jobInfo.name}
                   </span>
                 )}
               </div>
-              <span className="text-wave-deep text-sm md:text-base font-bold">{jobInfo.nameTw}</span>
-              <p className="text-sumi-faded text-xs md:text-sm mt-1 leading-relaxed max-w-md">{characterStory}</p>
+              <span className="text-wave-deep text-xs sm:text-sm md:text-base font-bold">{jobInfo.nameTw}</span>
+              <p className="text-sumi-faded text-[10px] sm:text-xs md:text-sm mt-0.5 sm:mt-1 leading-relaxed max-w-md line-clamp-2">{characterStory}</p>
               {/* 轉職提示 */}
               {'needsJobChange' in jobInfo && jobInfo.needsJobChange && (
                 <button
                   onClick={() => navigate('/job-selection')}
-                  className="mt-2 btn-primary text-xs !py-1 !px-3 shadow-none border-0"
+                  className="mt-1 sm:mt-2 btn-primary text-[10px] sm:text-xs !py-0.5 !px-2 sm:!py-1 sm:!px-3 shadow-none border-0"
                 >
                   {t('progression.jobSelection.go', '前往轉職')}
                 </button>
@@ -181,8 +186,8 @@ const Dashboard = () => {
         </div>
 
         {/* 總經驗值統計 */}
-        <div className="mt-4 pt-4 border-t-2 border-dashed border-wave-mid/30">
-          <div className="flex items-center justify-between text-sm">
+        <div className="mt-2 sm:mt-4 pt-2 sm:pt-4 border-t-2 border-dashed border-wave-mid/30">
+          <div className="flex items-center justify-between text-xs sm:text-sm">
             <span className="text-sumi-faded font-bold">{t('progression.exp', '總經驗值')}</span>
             <span className="text-wave-deep font-bold font-mono">{progression.totalExp.toLocaleString()} EXP</span>
           </div>
@@ -192,28 +197,40 @@ const Dashboard = () => {
       {/* Stats Section */}
       {/* Course List Section - 浮世繪風格 */}
       <div>
-        <h2 className="text-lg md:text-xl font-zen font-bold mb-3 text-wave-deep border-b-2 border-wave-mid/30 pb-1 inline-block">{t('courses.title', 'Course List')}</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
+        <h2 className="text-sm sm:text-lg md:text-xl font-zen font-bold mb-2 sm:mb-3 text-wave-deep border-b-2 border-wave-mid/30 pb-1 inline-block">{t('courses.title', 'Course List')}</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
           {courses.map((course) => {
 
             return (
               <button
                 key={course.id}
                 onClick={() => navigate(course.path)}
-                className="card-interactive p-3 h-full group"
+                className="card-interactive p-2 sm:p-3 h-full group"
               >
-                <div className="text-center space-y-2">
+                <div className="text-center space-y-1 sm:space-y-2">
                   <div className="flex justify-center">
-                    <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center shadow-ukiyo p-2 group-hover:shadow-ukiyo-hover transition-all duration-300 transform group-hover:scale-110`}>
-                      <span className="text-2xl md:text-3xl">{course.emoji}</span>
+                    <div className={`w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg sm:rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center shadow-ukiyo p-1 group-hover:shadow-ukiyo-hover transition-all duration-300 transform group-hover:scale-110 overflow-hidden`}>
+                      {course.image ? (
+                        <img
+                          src={course.image}
+                          alt={t(course.titleKey)}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none'
+                            e.currentTarget.parentElement!.innerHTML = `<span class="text-xl sm:text-2xl md:text-3xl">${course.emoji}</span>`
+                          }}
+                        />
+                      ) : (
+                        <span className="text-xl sm:text-2xl md:text-3xl">{course.emoji}</span>
+                      )}
                     </div>
                   </div>
 
-                  <h3 className="text-lg md:text-xl font-zen font-bold leading-tight mt-2 text-wave-deep group-hover:text-vermilion">
+                  <h3 className="text-sm sm:text-lg md:text-xl font-zen font-bold leading-tight mt-1 sm:mt-2 text-wave-deep group-hover:text-vermilion">
                     {t(course.titleKey)}
                   </h3>
 
-                  <p className="block text-sm text-sumi-faded line-clamp-2">
+                  <p className="hidden sm:block text-xs sm:text-sm text-sumi-faded line-clamp-2">
                     {t(course.descriptionKey)}
                   </p>
                 </div>
@@ -225,20 +242,34 @@ const Dashboard = () => {
 
       {/* Practice Categories Section - 浮世繪風格 */}
       <div>
-        <h2 className="text-lg md:text-xl font-zen font-bold mb-3 text-wave-deep border-b-2 border-wave-mid/30 pb-1 inline-block">{t('dashboard.practiceCategories')}</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
+        <h2 className="text-sm sm:text-lg md:text-xl font-zen font-bold mb-2 sm:mb-3 text-wave-deep border-b-2 border-wave-mid/30 pb-1 inline-block">{t('dashboard.practiceCategories')}</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
           {modes.map((mode, index) => (
             <div key={index}>
               <Link to={mode.path}>
-                <div className="card-interactive p-3 h-full group">
-                  <div className="text-center space-y-2">
-                    <div className="text-3xl md:text-4xl text-wave-deep group-hover:scale-110 transition-transform duration-300">
-                      {mode.icon}
+                <div className="card-interactive p-2 sm:p-3 h-full group">
+                  <div className="text-center space-y-1 sm:space-y-2">
+                    <div className="flex justify-center">
+                      <div className={`w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg sm:rounded-xl bg-gradient-to-br ${mode.color} flex items-center justify-center shadow-ukiyo p-1 group-hover:shadow-ukiyo-hover transition-all duration-300 transform group-hover:scale-110 overflow-hidden`}>
+                        {mode.image ? (
+                          <img
+                            src={mode.image}
+                            alt={mode.title}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.currentTarget.style.display = 'none'
+                              e.currentTarget.parentElement!.innerHTML = `<span class="text-xl sm:text-2xl md:text-3xl">${mode.icon}</span>`
+                            }}
+                          />
+                        ) : (
+                          <span className="text-xl sm:text-2xl md:text-3xl">{mode.icon}</span>
+                        )}
+                      </div>
                     </div>
-                    <h3 className="text-lg md:text-xl font-zen font-bold leading-tight text-wave-deep group-hover:text-vermilion">
+                    <h3 className="text-sm sm:text-lg md:text-xl font-zen font-bold leading-tight text-wave-deep group-hover:text-vermilion">
                       {mode.title}
                     </h3>
-                    <p className="block text-sm text-sumi-faded line-clamp-2">{mode.description}</p>
+                    <p className="hidden sm:block text-xs sm:text-sm text-sumi-faded line-clamp-2">{mode.description}</p>
                   </div>
                 </div>
               </Link>

@@ -41,29 +41,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ageru_1',
                 sentence: '彼{かれ}は3時間{じかん}で作文{さくぶん}を書{か}き（　）。',
-                options: ['上げた', '終わった', '始めた', '出した'],
-                correctIndex: 0,
+                options: ['終わった', '出した', '上げた', '始めた'],
+                correctIndex: 2,
                 explanation: '「書き上げる」表示把文章寫完。強調完成的成就感。'
             },
             {
                 id: 'n3_quiz_ageru_2',
                 sentence: 'この料理{りょうり}は手作{てづく}りで作{つく}り（　）ものです。',
-                options: ['上げた', '上がった', '始めた', '続けた'],
-                correctIndex: 0,
+                options: ['始めた', '上げた', '上がった', '続けた'],
+                correctIndex: 1,
                 explanation: '「作り上げる」表示完成製作。「上げた」是他動詞形。'
             },
             {
                 id: 'n3_quiz_ageru_3',
                 sentence: '選手{せんしゅ}たちは長年{ながねん}の努力{どりょく}で優{すぐ}れた技術{ぎじゅつ}を（　）。',
-                options: ['磨き上げた', '磨き終わった', '磨き始めた', '磨き続けた'],
-                correctIndex: 0,
+                options: ['磨き始めた', '磨き終わった', '磨き上げた', '磨き続けた'],
+                correctIndex: 2,
                 explanation: '「磨き上げる」表示經過長時間努力而練就精湛技術。'
             },
             {
                 id: 'n3_quiz_ageru_4',
                 sentence: '「この曲{きょく}、いつ完成{かんせい}するの？」\n「来週{らいしゅう}までに（　）つもりだよ。」',
-                options: ['仕上げる', '仕終わる', '仕始める', '仕続ける'],
-                correctIndex: 0,
+                options: ['仕始める', '仕上げる', '仕続ける', '仕終わる'],
+                correctIndex: 1,
                 explanation: '對話情境。「仕上げる」表示完成作品。'
             },
             {
@@ -116,36 +116,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_amari_1',
                 sentence: '忙{いそが}しさ（　）、昼{ひる}ご飯{はん}を食{た}べるのを忘{わす}れていた。',
-                options: ['のあまり', 'あまり', 'なあまり', 'であまり'],
-                correctIndex: 0,
+                options: ['あまり', 'なあまり', 'のあまり', 'であまり'],
+                correctIndex: 2,
                 explanation: '「忙しさ」是名詞，接續「あまり」時須加「の」。即「名詞 + の + あまり」。'
             },
             {
                 id: 'n3_quiz_amari_2',
                 sentence: '彼{かれ}は怒{いか}りの（　）、机{つくえ}を叩{たた}いた。',
-                options: ['あまり', 'まま', 'うえ', 'ため'],
-                correctIndex: 0,
+                options: ['ため', 'うえ', 'まま', 'あまり'],
+                correctIndex: 3,
                 explanation: '表示「因過度憤怒而...」，使用「（の）あまり」。'
             },
             {
                 id: 'n3_quiz_amari_3',
                 sentence: '感激{かんげき}した（　）、何{なに}も言{い}えなくなった。',
-                options: ['あげく', 'あまり', 'うえ', '結果'],
-                correctIndex: 1,
+                options: ['あまり', 'うえ', 'あげく', '結果'],
+                correctIndex: 0,
                 explanation: '前接動詞「感激した」，表示因程度過甚導致的結果。'
             },
             {
                 id: 'n3_quiz_amari_4',
                 sentence: '「どうしたの？顔色{かおいろ}が悪{わる}いよ。」\n「緊張{きんちょう}の（　）、昨夜{ゆうべ}は一睡{いっすい}もできなかったんだ。」',
-                options: ['せい', 'あまり', 'おかげ', 'ため'],
-                correctIndex: 1,
+                options: ['ため', 'おかげ', 'あまり', 'せい'],
+                correctIndex: 2,
                 explanation: '對話情境。因過度緊張而睡不著。'
             },
             {
                 id: 'n3_quiz_amari_5',
                 sentence: '「彼{かれ}、急{きゅう}に走{はし}り出{だ}したけど…。」\n「急{いそ}ぐ（　）、携帯{けいたい}を忘{わす}れていったよ。」',
-                options: ['あまり', 'ため', 'のに', 'ので'],
-                correctIndex: 0,
+                options: ['ので', 'のに', 'あまり', 'ため'],
+                correctIndex: 2,
                 explanation: '對話情境。因太著急而忘記帶手機。'
             }
         ]
@@ -176,35 +176,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_amari_ni_mo_1',
                 sentence: 'この問題{もんだい}は（　）難{むずか}しくて解{と}けなかった。',
-                options: ['あまりにも', 'あまりの', 'あまりで', 'あまりな'],
-                correctIndex: 0,
+                options: ['あまりな', 'あまりの', 'あまりで', 'あまりにも'],
+                correctIndex: 3,
                 explanation: '修飾形容詞「難しい」時，用「あまりにも」。'
             },
             {
                 id: 'n3_quiz_amari_ni_mo_2',
                 sentence: '彼女{かのじょ}の話{はなし}は（　）長{なが}かったので、途中{とちゅう}で寝{ね}てしまった。',
-                options: ['あまりにも', 'あまりの', 'あまりに', 'あまり'],
-                correctIndex: 0,
+                options: ['あまり', 'あまりにも', 'あまりの', 'あまりに'],
+                correctIndex: 1,
                 explanation: '「あまりにも」修飾「長い」，強調話太長了。'
             },
             {
                 id: 'n3_quiz_amari_ni_mo_3',
                 sentence: '彼{かれ}の行動{こうどう}は（　）自分勝手{じぶんかって}だ。',
-                options: ['あまりにも', 'あまりの', 'あまりで', 'あまり'],
-                correctIndex: 0,
+                options: ['あまりの', 'あまり', 'あまりで', 'あまりにも'],
+                correctIndex: 3,
                 explanation: '「あまりにも」修飾な形容詞「自分勝手」。'
             },
             {
                 id: 'n3_quiz_amari_ni_mo_4',
                 sentence: '「どうして遅刻{ちこく}したの？」\n「すみません。電車{でんしゃ}が（　）混{こ}んでいて乗{の}れなかったんです。」',
-                options: ['あまりにも', 'あまりの', 'あまりを', 'あまりが'],
+                options: ['あまりにも', 'あまりを', 'あまりの', 'あまりが'],
                 correctIndex: 0,
                 explanation: '對話情境。電車太擠了以至於搭不上。'
             },
             {
                 id: 'n3_quiz_amari_ni_mo_5',
                 sentence: '「彼{かれ}、なんであんなに怒{おこ}ってるの？」\n「上司{じょうし}に（　）ひどいことを言{い}われたみたいだよ。」',
-                options: ['あまりにも', 'あまりの', 'あまりを', 'あまりな'],
+                options: ['あまりにも', 'あまりな', 'あまりを', 'あまりの'],
                 correctIndex: 0,
                 explanation: '對話情境。被上司說了太過分的話。'
             }
@@ -253,35 +253,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_au_1',
                 sentence: '家族{かぞく}で将来{しょうらい}のことを（　）。',
-                options: ['話し合った', '話した', '話しかけた', '話し始めた'],
-                correctIndex: 0,
+                options: ['話し始めた', '話しかけた', '話し合った', '話した'],
+                correctIndex: 2,
                 explanation: '「話し合う」表示家人之間互相討論。'
             },
             {
                 id: 'n3_quiz_au_2',
                 sentence: '隣人{りんじん}と挨拶{あいさつ}を（　）仲{なか}だ。',
-                options: ['し合う', 'する', 'し始める', 'しかける'],
-                correctIndex: 0,
+                options: ['する', 'し始める', 'し合う', 'しかける'],
+                correctIndex: 2,
                 explanation: '「挨拶をし合う」表示互相打招呼的關係。'
             },
             {
                 id: 'n3_quiz_au_3',
                 sentence: 'チームメイトと（　）ながら練習{れんしゅう}した。',
-                options: ['競い合い', '競い', '競い始め', '競い続け'],
-                correctIndex: 0,
+                options: ['競い始め', '競い続け', '競い合い', '競い'],
+                correctIndex: 2,
                 explanation: '「競い合う」表示互相競爭。'
             },
             {
                 id: 'n3_quiz_au_4',
                 sentence: '「あの夫婦{ふうふ}、仲{なか}がいいね。」\n「うん、いつも（　）いるよね。見{み}ていて微笑{ほほえ}ましい。」',
-                options: ['支え合って', '支えて', '支え始めて', '支え続けて'],
+                options: ['支え合って', '支え続けて', '支えて', '支え始めて'],
                 correctIndex: 0,
                 explanation: '對話情境。「支え合う」表示互相支持。'
             },
             {
                 id: 'n3_quiz_au_5',
                 sentence: '「この問題{もんだい}、どうする？」\n「みんなで（　）決{き}めよう。」',
-                options: ['話し合って', '話して', '話しかけて', '話し始めて'],
+                options: ['話し合って', '話し始めて', '話しかけて', '話して'],
                 correctIndex: 0,
                 explanation: '對話情境。大家一起互相討論來決定。'
             }
@@ -336,22 +336,22 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ba_ii_1',
                 sentence: '電車{でんしゃ}に乗{の}り遅{おく}れたら、タクシーに（　）いい。',
-                options: ['乗れば', '乗ったら', '乗って', '乗るなら'],
-                correctIndex: 0,
+                options: ['乗ったら', '乗って', '乗れば', '乗るなら'],
+                correctIndex: 2,
                 explanation: '「〜ばいい」用於提出建議：搭計程車就好了。'
             },
             {
                 id: 'n3_quiz_ba_ii_2',
                 sentence: 'お金{かね}がなければ、借{か}り（　）いいよ。',
-                options: ['れば', 'たら', 'て', 'るなら'],
+                options: ['れば', 'て', 'たら', 'るなら'],
                 correctIndex: 0,
                 explanation: '動詞ば形接「いい」。「借りる」→「借りれば」。'
             },
             {
                 id: 'n3_quiz_ba_ii_3',
                 sentence: 'この書類{しょるい}はどこに提出{ていしゅつ}（　）いいですか。',
-                options: ['すれば', 'したら', 'して', 'するなら'],
-                correctIndex: 0,
+                options: ['したら', 'するなら', 'すれば', 'して'],
+                correctIndex: 2,
                 explanation: '疑問形「〜ばいいですか」用於詢問該怎麼做。'
             },
             {
@@ -364,8 +364,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ba_ii_5',
                 sentence: '「日本語{にほんご}が上手{じょうず}になりたいんです。どうすれば（　）。」\n「毎日{まいにち}少{すこ}しずつ練習{れんしゅう}することですね。」',
-                options: ['いいですか', 'いいですね', 'いいですよ', 'いいですけど'],
-                correctIndex: 0,
+                options: ['いいですね', 'いいですか', 'いいですよ', 'いいですけど'],
+                correctIndex: 1,
                 explanation: '對話情境。用「〜ばいいですか」詢問建議。'
             }
         ]
@@ -402,35 +402,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ba_noni_1',
                 sentence: '言{い}ってくれれ（　）、手伝{てつだ}ったのに。',
-                options: ['ばのに', 'から', 'まで', 'さえ'],
+                options: ['ばのに', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '要是說了就好了，我可以幫忙的。'
             },
             {
                 id: 'n3_quiz_ba_noni_2',
                 sentence: 'もっと勉強{べんきょう}すれ（　）。',
-                options: ['ばのに', 'から', 'まで', 'さえ'],
+                options: ['ばのに', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '要是多讀點書就好了。'
             },
             {
                 id: 'n3_quiz_ba_noni_3',
                 sentence: '傘{かさ}を持{も}ってくれ（　）、濡{ぬ}れなかったのに。',
-                options: ['ばのに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'ばのに', 'から'],
+                correctIndex: 2,
                 explanation: '要是帶傘就好了，就不會淋濕了。'
             },
             {
                 id: 'n3_quiz_ba_noni_4',
                 sentence: '「連絡{れんらく}くれなかったね。」\n「連絡{れんらく}すれ（　）、ごめん。」',
-                options: ['ばのに', 'から', 'まで', 'さえ'],
+                options: ['ばのに', 'さえ', 'から', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。要是聯絡就好了，對不起。'
             },
             {
                 id: 'n3_quiz_ba_noni_5',
                 sentence: '「なんで買{か}わなかったの？」\n「買{か}え（　）、お金{かね}がなかったんだよ。」',
-                options: ['ばのに', 'から', 'まで', 'さえ'],
+                options: ['ばのに', 'さえ', 'まで', 'から'],
                 correctIndex: 0,
                 explanation: '對話情境。想買的話也沒錢啊。'
             }
@@ -477,36 +477,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ba_yokatta_1',
                 sentence: 'あの映画{えいが}、見{み}（　）よかった。すごく面白{おもしろ}かったらしい。',
-                options: ['れば', 'たら', 'て', 'ると'],
-                correctIndex: 0,
+                options: ['て', 'ると', 'れば', 'たら'],
+                correctIndex: 2,
                 explanation: '表示「早知道就看了」的後悔。「見る」→「見れば」。'
             },
             {
                 id: 'n3_quiz_ba_yokatta_2',
                 sentence: '大学{だいがく}でもっと英語{えいご}を（　）よかった。',
-                options: ['勉強すれば', '勉強したら', '勉強して', '勉強すると'],
-                correctIndex: 0,
+                options: ['勉強して', '勉強すると', '勉強すれば', '勉強したら'],
+                correctIndex: 2,
                 explanation: '對過去沒有好好學英語的後悔。'
             },
             {
                 id: 'n3_quiz_ba_yokatta_3',
                 sentence: '安{やす}い時{とき}に買{か}（　）よかったなあ。',
-                options: ['えば', 'ったら', 'って', 'うと'],
-                correctIndex: 0,
+                options: ['って', 'うと', 'ったら', 'えば'],
+                correctIndex: 3,
                 explanation: '「買う」→「買えば」。早知道便宜時就買了。'
             },
             {
                 id: 'n3_quiz_ba_yokatta_4',
                 sentence: '「テスト、どうだった？」\n「全然{ぜんぜん}できなかった。もっと勉強{べんきょう}（　）よかった...」',
-                options: ['すれば', 'したら', 'して', 'すると'],
-                correctIndex: 0,
+                options: ['して', 'すると', 'すれば', 'したら'],
+                correctIndex: 2,
                 explanation: '對話情境。考試失敗後的後悔。'
             },
             {
                 id: 'n3_quiz_ba_yokatta_5',
                 sentence: '「彼{かれ}と別{わか}れたの？」\n「うん...あんなこと言{い}わなければ（　）。」',
-                options: ['よかった', 'よかったのに', 'よかったら', 'よくて'],
-                correctIndex: 0,
+                options: ['よかったら', 'よかった', 'よかったのに', 'よくて'],
+                correctIndex: 1,
                 explanation: '對話情境。後悔說了那些話。'
             }
         ]
@@ -537,36 +537,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_bakari_de_1',
                 sentence: '彼{かれ}は文句{もんく}を（　）ばかりで、何{なに}もしない。',
-                options: ['言って', '言い', '言う', '言った'],
-                correctIndex: 0,
+                options: ['言う', '言い', '言った', '言って'],
+                correctIndex: 3,
                 explanation: '「〜てばかりで」表示只做某事。「言う」→「言って」。'
             },
             {
                 id: 'n3_quiz_bakari_de_2',
                 sentence: 'テレビを（　）ばかりで、宿題{しゅくだい}をしなさい！',
-                options: ['見て', '見', '見る', '見た'],
-                correctIndex: 0,
+                options: ['見る', '見た', '見', '見て'],
+                correctIndex: 3,
                 explanation: '只看電視不做功課。帶有責備語氣。'
             },
             {
                 id: 'n3_quiz_bakari_de_3',
                 sentence: 'このレストランは値段{ねだん}が高{たか}い（　）で、料理{りょうり}はおいしくない。',
-                options: ['ばかり', 'だけ', 'しか', 'まで'],
-                correctIndex: 0,
+                options: ['だけ', 'ばかり', 'まで', 'しか'],
+                correctIndex: 1,
                 explanation: '「ばかりで」表示只有價格貴，但東西不好吃（負面評價）。'
             },
             {
                 id: 'n3_quiz_bakari_de_4',
                 sentence: '「弟{おとうと}、最近{さいきん}どう？」\n「ゲーム（　）ばかりで困{こま}ってるよ。」',
-                options: ['して', 'し', 'する', 'した'],
-                correctIndex: 0,
+                options: ['する', 'して', 'し', 'した'],
+                correctIndex: 1,
                 explanation: '對話情境。弟弟光是打電動（令人困擾）。'
             },
             {
                 id: 'n3_quiz_bakari_de_5',
                 sentence: '「その本{ほん}、もう読{よ}んだ？」\n「いや、買{か}って（　）で、まだ読{よ}んでないんだ。」',
-                options: ['ばかり', 'だけ', 'しか', 'まで'],
-                correctIndex: 0,
+                options: ['まで', 'ばかり', 'しか', 'だけ'],
+                correctIndex: 1,
                 explanation: '對話情境。光是買了還沒讀。'
             }
         ]
@@ -611,36 +611,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_bakari_denaku_1',
                 sentence: '日本{にほん}ばかりでなく、海外{かいがい}（　）人気{にんき}がある。',
-                options: ['でも', 'にも', 'とも', 'へも'],
-                correctIndex: 0,
+                options: ['とも', 'でも', 'へも', 'にも'],
+                correctIndex: 1,
                 explanation: '不僅在日本，在海外也很受歡迎。後面常接「も」。'
             },
             {
                 id: 'n3_quiz_bakari_denaku_2',
                 sentence: '彼女{かのじょ}は歌{うた}が上手{じょうず}な（　）、ダンスもできる。',
-                options: ['ばかりでなく', 'ばかりで', 'ばかりに', 'ばかりか'],
-                correctIndex: 0,
+                options: ['ばかりか', 'ばかりに', 'ばかりで', 'ばかりでなく'],
+                correctIndex: 3,
                 explanation: '不僅歌唱得好，舞也跳得好。'
             },
             {
                 id: 'n3_quiz_bakari_denaku_3',
                 sentence: 'この仕事{しごと}は給料{きゅうりょう}がいいばかりでなく、（　）。',
-                options: ['休みも多い', '休みが少ない', '疲れる', '大変だ'],
-                correctIndex: 0,
+                options: ['疲れる', '大変だ', '休みも多い', '休みが少ない'],
+                correctIndex: 2,
                 explanation: '「ばかりでなく」後面接正面的內容，表示累加。'
             },
             {
                 id: 'n3_quiz_bakari_denaku_4',
                 sentence: '「この大学{だいがく}、どうしてそんなに人気{にんき}なの？」\n「設備{せつび}がいい（　）、先生{せんせい}も優秀{ゆうしゅう}なんだって。」',
-                options: ['ばかりでなく', 'ばかりで', 'ばかりに', 'ばかりか'],
-                correctIndex: 0,
+                options: ['ばかりか', 'ばかりに', 'ばかりで', 'ばかりでなく'],
+                correctIndex: 3,
                 explanation: '對話情境。不僅設備好，老師也優秀。'
             },
             {
                 id: 'n3_quiz_bakari_denaku_5',
                 sentence: '「彼{かれ}はすごいね。」\n「うん、頭{あたま}がいい（　）、スポーツも得意{とくい}なんだよ。」',
-                options: ['ばかりでなく', 'ばかりで', 'ばかりに', 'ばかりか'],
-                correctIndex: 0,
+                options: ['ばかりか', 'ばかりで', 'ばかりに', 'ばかりでなく'],
+                correctIndex: 3,
                 explanation: '對話情境。不僅頭腦好，運動也擅長。'
             }
         ]
@@ -671,36 +671,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ba_hodo_1',
                 sentence: '考{かんが}えれば（　）ほど、わからなくなる。',
-                options: ['考える', '考えた', '考えて', '考え'],
-                correctIndex: 0,
+                options: ['考えて', '考えた', '考え', '考える'],
+                correctIndex: 3,
                 explanation: '「〜ば〜ほど」中間放辭書形。越想越不懂。'
             },
             {
                 id: 'n3_quiz_ba_hodo_2',
                 sentence: '年{とし}を取{と}れば（　）ほど、時間{じかん}が早{はや}く過{す}ぎる気{き}がする。',
-                options: ['取る', '取った', '取って', '取り'],
-                correctIndex: 0,
+                options: ['取って', '取り', '取る', '取った'],
+                correctIndex: 2,
                 explanation: '越上年紀越覺得時間過得快。'
             },
             {
                 id: 'n3_quiz_ba_hodo_3',
                 sentence: '高{たか}ければ高{たか}いほど、品質{ひんしつ}が（　）というわけではない。',
-                options: ['いい', 'よい', 'よくて', 'いくて'],
-                correctIndex: 0,
+                options: ['よくて', 'いい', 'よい', 'いくて'],
+                correctIndex: 1,
                 explanation: '並非越貴品質越好。'
             },
             {
                 id: 'n3_quiz_ba_hodo_4',
                 sentence: '「この曲{きょく}、どう？」\n「（　）聞{き}くほど好{す}きになるね。」',
-                options: ['聞けば', '聞いたら', '聞くと', '聞いて'],
-                correctIndex: 0,
+                options: ['聞くと', '聞いて', '聞けば', '聞いたら'],
+                correctIndex: 2,
                 explanation: '對話情境。越聽越喜歡這首歌。'
             },
             {
                 id: 'n3_quiz_ba_hodo_5',
                 sentence: '「日本{にほん}の文化{ぶんか}、面白{おもしろ}いよね。」\n「うん、（　）深{ふか}いほど興味深{きょうみぶか}いね。」',
-                options: ['知れば知る', '知ったら知る', '知ると知る', '知って知る'],
-                correctIndex: 0,
+                options: ['知ると知る', '知ったら知る', '知れば知る', '知って知る'],
+                correctIndex: 2,
                 explanation: '對話情境。越了解越覺得深奧有趣。'
             }
         ]
@@ -745,36 +745,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_beki_da_1',
                 sentence: '人{ひと}の悪口{わるくち}を（　）べきではない。',
-                options: ['言う', '言い', '言って', '言った'],
-                correctIndex: 0,
+                options: ['言い', '言った', '言って', '言う'],
+                correctIndex: 3,
                 explanation: '「べき」前接動詞辭書形。不應該說別人壞話。'
             },
             {
                 id: 'n3_quiz_beki_da_2',
                 sentence: '健康{けんこう}のために、もっと運動{うんどう}（　）べきだ。',
-                options: ['する', 'し', 'して', 'した'],
-                correctIndex: 0,
+                options: ['した', 'して', 'する', 'し'],
+                correctIndex: 2,
                 explanation: '為了健康應該多運動。「するべき」或「すべき」都可。'
             },
             {
                 id: 'n3_quiz_beki_da_3',
                 sentence: 'この問題{もんだい}は真剣{しんけん}に（　）べきだ。',
-                options: ['考える', '考え', '考えて', '考えた'],
+                options: ['考える', '考えて', '考えた', '考え'],
                 correctIndex: 0,
                 explanation: '這個問題應該認真思考。'
             },
             {
                 id: 'n3_quiz_beki_da_4',
                 sentence: '「環境問題{かんきょうもんだい}について、どう思{おも}う？」\n「みんながもっと（　）べきだと思{おも}うよ。」',
-                options: ['考える', '考え', '考えて', '考えた'],
-                correctIndex: 0,
+                options: ['考え', '考えた', '考える', '考えて'],
+                correctIndex: 2,
                 explanation: '對話情境。大家應該更加思考這個問題。'
             },
             {
                 id: 'n3_quiz_beki_da_5',
                 sentence: '「彼{かれ}、遅刻{ちこく}ばかりだね。」\n「うん、社会人{しゃかいじん}として時間{じかん}は（　）べきだよ。」',
-                options: ['守る', '守り', '守って', '守った'],
-                correctIndex: 0,
+                options: ['守り', '守った', '守って', '守る'],
+                correctIndex: 3,
                 explanation: '對話情境。作為社會人士應該遵守時間。'
             }
         ]
@@ -805,36 +805,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_beki_dewa_nai_1',
                 sentence: '公共{こうきょう}の場{ば}で大声{おおごえ}を（　）べきではない。',
-                options: ['出す', '出し', '出して', '出した'],
-                correctIndex: 0,
+                options: ['出した', '出し', '出して', '出す'],
+                correctIndex: 3,
                 explanation: '在公共場所不應該大聲喧嘩。'
             },
             {
                 id: 'n3_quiz_beki_dewa_nai_2',
                 sentence: '人{ひと}を外見{がいけん}で（　）べきではない。',
-                options: ['判断する', '判断し', '判断して', '判断した'],
-                correctIndex: 0,
+                options: ['判断した', '判断して', '判断する', '判断し'],
+                correctIndex: 2,
                 explanation: '不應該以外表判斷人。'
             },
             {
                 id: 'n3_quiz_beki_dewa_nai_3',
                 sentence: 'そんな簡単{かんたん}に（　）べきではないよ。',
-                options: ['諦める', '諦め', '諦めて', '諦めた'],
-                correctIndex: 0,
+                options: ['諦め', '諦める', '諦めた', '諦めて'],
+                correctIndex: 1,
                 explanation: '不應該那麼輕易放棄。'
             },
             {
                 id: 'n3_quiz_beki_dewa_nai_4',
                 sentence: '「彼女{かのじょ}に本当{ほんとう}のこと言{い}おうかな。」\n「うーん、今{いま}は（　）べきじゃないと思{おも}うよ。」',
-                options: ['言う', '言い', '言って', '言った'],
-                correctIndex: 0,
+                options: ['言って', '言い', '言った', '言う'],
+                correctIndex: 3,
                 explanation: '對話情境。現在不應該說出真相。'
             },
             {
                 id: 'n3_quiz_beki_dewa_nai_5',
                 sentence: '「この情報{じょうほう}、SNSに載{の}せてもいい？」\n「ダメだよ。個人情報{こじんじょうほう}を勝手{かって}に（　）べきじゃない。」',
-                options: ['公開する', '公開し', '公開して', '公開した'],
-                correctIndex: 0,
+                options: ['公開して', '公開した', '公開する', '公開し'],
+                correctIndex: 2,
                 explanation: '對話情境。不應該擅自公開個人資訊。'
             }
         ]
@@ -865,28 +865,28 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_betsu_ni_nai_1',
                 sentence: 'あの店{みせ}の料理{りょうり}は別{べつ}に（　）。',
-                options: ['おいしくない', 'おいしい', 'おいしくて', 'おいしかった'],
-                correctIndex: 0,
+                options: ['おいしかった', 'おいしくて', 'おいしい', 'おいしくない'],
+                correctIndex: 3,
                 explanation: '「別に」後接否定形，表示「並沒有多好吃」。'
             },
             {
                 id: 'n3_quiz_betsu_ni_nai_2',
                 sentence: '「寒{さむ}くない？」「別{べつ}に（　）よ。」',
-                options: ['寒くない', '寒い', '寒くて', '寒かった'],
-                correctIndex: 0,
+                options: ['寒い', '寒かった', '寒くない', '寒くて'],
+                correctIndex: 2,
                 explanation: '「別に寒くない」表示「並不覺得冷」。'
             },
             {
                 id: 'n3_quiz_betsu_ni_nai_3',
                 sentence: '別{べつ}に急{いそ}いで（　）から、ゆっくり来{き}てね。',
-                options: ['いない', 'いる', 'いて', 'いた'],
-                correctIndex: 0,
+                options: ['いた', 'いる', 'いて', 'いない'],
+                correctIndex: 3,
                 explanation: '「急いでいない」表示「並沒有在趕」。'
             },
             {
                 id: 'n3_quiz_betsu_ni_nai_4',
                 sentence: '「彼女{かのじょ}のこと、好{す}きなんでしょ？」\n「別{べつ}にそんなこと（　）よ。」',
-                options: ['ない', 'ある', 'なくて', 'あって'],
+                options: ['ない', 'なくて', 'ある', 'あって'],
                 correctIndex: 0,
                 explanation: '對話情境。否認有那回事。'
             },
@@ -938,29 +938,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_betsu_ni_nai_1_2',
                 sentence: '別{べつ}に行{い}き（　）よ。',
-                options: ['たくない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'たくない', 'まで'],
+                correctIndex: 2,
                 explanation: '不特別想去。'
             },
             {
                 id: 'n3_quiz_betsu_ni_nai_1_3',
                 sentence: '別{べつ}に驚{おどろ}（　）よ。',
-                options: ['かない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'かない', 'から'],
+                correctIndex: 2,
                 explanation: '不怎麼驚訝。'
             },
             {
                 id: 'n3_quiz_betsu_ni_nai_1_4',
                 sentence: '「寒{さむ}い？」\n「別{べつ}に寒{さむ}（　）よ。」',
-                options: ['くない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'くない', 'まで'],
+                correctIndex: 2,
                 explanation: '對話情境。不怎麼冷。'
             },
             {
                 id: 'n3_quiz_betsu_ni_nai_1_5',
                 sentence: '「悔{くや}しい？」\n「別{べつ}に悔{くや}し（　）よ。」',
-                options: ['くない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'くない', 'まで'],
+                correctIndex: 2,
                 explanation: '對話情境。不怎麼不甘心。'
             }
         ]
@@ -992,8 +992,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_buri_ni_1',
                 sentence: '10年{ねん}（　）、昔{むかし}の友達{ともだち}に会{あ}った。',
-                options: ['ぶりに', 'あとに', 'まえに', 'ごとに'],
-                correctIndex: 0,
+                options: ['まえに', 'あとに', 'ぶりに', 'ごとに'],
+                correctIndex: 2,
                 explanation: '時隔10年見到了老朋友。'
             },
             {
@@ -1006,22 +1006,22 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_buri_ni_3',
                 sentence: '久{ひさ}し（　）、実家{じっか}に電話{でんわ}した。',
-                options: ['ぶりに', 'あとに', 'まえに', 'ごとに'],
-                correctIndex: 0,
+                options: ['ごとに', 'まえに', 'ぶりに', 'あとに'],
+                correctIndex: 2,
                 explanation: '「久しぶりに」是固定用法，表示「好久不見地」。'
             },
             {
                 id: 'n3_quiz_buri_ni_4',
                 sentence: '「最近{さいきん}、運動{うんどう}してる？」\n「うん、1ヶ月{げつ}（　）ジムに行{い}ってきたよ。」',
-                options: ['ぶりに', 'あとに', 'まえに', 'ごとに'],
-                correctIndex: 0,
+                options: ['ごとに', 'ぶりに', 'あとに', 'まえに'],
+                correctIndex: 1,
                 explanation: '對話情境。時隔一個月去了健身房。'
             },
             {
                 id: 'n3_quiz_buri_ni_5',
                 sentence: '「久{ひさ}しぶり！2年{ねん}（　）だね。」\n「本当{ほんとう}だね。会{あ}えて嬉{うれ}しいよ。」',
-                options: ['ぶり', 'あと', 'まえ', 'ごと'],
-                correctIndex: 0,
+                options: ['あと', 'まえ', 'ごと', 'ぶり'],
+                correctIndex: 3,
                 explanation: '對話情境。時隔兩年。'
             }
         ]
@@ -1075,36 +1075,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_chuu_1',
                 sentence: '授業{じゅぎょう}（　）は静{しず}かにしてください。',
-                options: ['中', 'の間', '後', '前'],
-                correctIndex: 0,
+                options: ['後', '中', '前', 'の間'],
+                correctIndex: 1,
                 explanation: '上課中請安靜。「授業中」是固定用法。'
             },
             {
                 id: 'n3_quiz_chuu_2',
                 sentence: '運転{うんてん}（　）に電話{でんわ}をしてはいけません。',
-                options: ['中', '後', '前', 'の間'],
-                correctIndex: 0,
+                options: ['前', '後', '中', 'の間'],
+                correctIndex: 2,
                 explanation: '開車中不可以打電話。'
             },
             {
                 id: 'n3_quiz_chuu_3',
                 sentence: 'この仕事{しごと}は今月{こんげつ}（　）に終{お}わらせなければならない。',
-                options: ['中', '後', '前', '間'],
-                correctIndex: 0,
+                options: ['前', '中', '間', '後'],
+                correctIndex: 1,
                 explanation: '這個工作必須在這個月內完成。'
             },
             {
                 id: 'n3_quiz_chuu_4',
                 sentence: '「すみません、部長{ぶちょう}はいらっしゃいますか。」\n「申{もう}し訳{わけ}ありません、部長{ぶちょう}は外出{がいしゅつ}（　）です。」',
-                options: ['中', '後', '前', '間'],
+                options: ['中', '間', '後', '前'],
                 correctIndex: 0,
                 explanation: '對話情境。部長外出中。'
             },
             {
                 id: 'n3_quiz_chuu_5',
                 sentence: '「このレポート、いつまでに出{だ}せばいいですか。」\n「今週{こんしゅう}（　）にお願{ねが}いします。」',
-                options: ['中', '後', '前', '間'],
-                correctIndex: 0,
+                options: ['間', '中', '前', '後'],
+                correctIndex: 1,
                 explanation: '對話情境。請在這週內提交。'
             }
         ]
@@ -1149,36 +1149,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_dake_1',
                 sentence: '今日{きょう}は（　）だけ働{はたら}きます。',
-                options: ['できる', 'できて', 'できた', 'できない'],
+                options: ['できる', 'できた', 'できて', 'できない'],
                 correctIndex: 0,
                 explanation: '「できるだけ」表示「盡可能地」。'
             },
             {
                 id: 'n3_quiz_dake_2',
                 sentence: '持{も}てる（　）荷物{にもつ}を持{も}っていきます。',
-                options: ['だけ', 'まで', 'ほど', 'くらい'],
+                options: ['だけ', 'くらい', 'ほど', 'まで'],
                 correctIndex: 0,
                 explanation: '「持てるだけ」表示盡量帶能帶的行李。'
             },
             {
                 id: 'n3_quiz_dake_3',
                 sentence: 'この問題{もんだい}は（　）だけ自分{じぶん}で考{かんが}えてみてください。',
-                options: ['できる', 'できて', 'できた', 'できない'],
-                correctIndex: 0,
+                options: ['できた', 'できる', 'できない', 'できて'],
+                correctIndex: 1,
                 explanation: '請盡量自己思考這個問題。'
             },
             {
                 id: 'n3_quiz_dake_4',
                 sentence: '「この仕事{しごと}、いつまでに終{お}わる？」\n「（　）だけ早{はや}く終{お}わらせるよ。」',
-                options: ['できる', 'できて', 'できた', 'できない'],
+                options: ['できる', 'できた', 'できて', 'できない'],
                 correctIndex: 0,
                 explanation: '對話情境。盡可能早點完成。'
             },
             {
                 id: 'n3_quiz_dake_5',
                 sentence: '「お金{かね}、どのくらい貯{た}めた？」\n「（　）だけ貯{た}めたつもりなんだけど...」',
-                options: ['貯められる', '貯められて', '貯められた', '貯めて'],
-                correctIndex: 0,
+                options: ['貯められて', '貯めて', '貯められた', '貯められる'],
+                correctIndex: 3,
                 explanation: '對話情境。盡量存了錢。'
             }
         ]
@@ -1215,36 +1215,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_dake_de_naku_1',
                 sentence: '勉強{べんきょう}（　）、スポーツも頑張{がんば}っている。',
-                options: ['だけでなく', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'だけでなく', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '不只讀書，運動也很努力。'
             },
             {
                 id: 'n3_quiz_dake_de_naku_2',
                 sentence: '味{あじ}（　）、見{み}た目{め}も大切{たいせつ}だ。',
-                options: ['だけでなく', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'だけでなく', 'から'],
+                correctIndex: 2,
                 explanation: '不只味道，外觀也很重要。'
             },
             {
                 id: 'n3_quiz_dake_de_naku_3',
                 sentence: '東京{とうきょう}（　）、大阪{おおさか}にも店{みせ}がある。',
-                options: ['だけでなく', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'さえ', 'だけでなく'],
+                correctIndex: 3,
                 explanation: '不只東京，大阪也有店。'
             },
             {
                 id: 'n3_quiz_dake_de_naku_4',
                 sentence: '「料理{りょうり}上手{じょうず}？」\n「うん、作{つく}る（　）、食{た}べるのも好{す}き。」',
-                options: ['だけでなく', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'だけでなく', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '對話情境。不只會做，吃也喜歡。'
             },
             {
                 id: 'n3_quiz_dake_de_naku_5',
                 sentence: '「彼{かれ}、優{やさ}しい？」\n「優{やさ}しい（　）、頭{あたま}もいいよ。」',
-                options: ['だけでなく', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'だけでなく', 'まで'],
+                correctIndex: 2,
                 explanation: '對話情境。不只溫柔，頭腦也好。'
             }
         ]
@@ -1281,15 +1281,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_dakedo_1',
                 sentence: '欲{ほ}しいん（　）、お金{かね}がない。',
-                options: ['だけど', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'まで', 'だけど'],
+                correctIndex: 3,
                 explanation: '雖然想要，但沒錢。'
             },
             {
                 id: 'n3_quiz_dakedo_2',
                 sentence: '聞{き}きたいこともあるん（　）...',
-                options: ['だけど', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'だけど', 'さえ', 'まで'],
+                correctIndex: 1,
                 explanation: '有想問的事...'
             },
             {
@@ -1302,15 +1302,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_dakedo_4',
                 sentence: '「今{いま}忙{いそが}しい？」\n「ちょっと忙{いそが}しいん（　）、何{なに}？」',
-                options: ['だけど', 'から', 'まで', 'さえ'],
+                options: ['だけど', 'まで', 'さえ', 'から'],
                 correctIndex: 0,
                 explanation: '對話情境。有點忙，怎麼了？'
             },
             {
                 id: 'n3_quiz_dakedo_5',
                 sentence: '「手伝{てつだ}おうか？」\n「ありがとう、お願{ねが}いしたいん（　）...」',
-                options: ['だけど', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'だけど', 'から'],
+                correctIndex: 2,
                 explanation: '對話情境。謝謝，想拜託你...'
             }
         ]
@@ -1356,36 +1356,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_darake_1',
                 sentence: '庭{にわ}が雑草{ざっそう}（　）になってしまった。',
-                options: ['だらけ', 'まみれ', 'ずくめ', 'っぽい'],
-                correctIndex: 0,
+                options: ['まみれ', 'だらけ', 'ずくめ', 'っぽい'],
+                correctIndex: 1,
                 explanation: '院子長滿了雜草。'
             },
             {
                 id: 'n3_quiz_darake_2',
                 sentence: 'この部屋{へや}はゴミ（　）だ。',
-                options: ['だらけ', 'まみれ', 'ずくめ', 'っぽい'],
-                correctIndex: 0,
+                options: ['ずくめ', 'まみれ', 'っぽい', 'だらけ'],
+                correctIndex: 3,
                 explanation: '這房間到處都是垃圾。'
             },
             {
                 id: 'n3_quiz_darake_3',
                 sentence: '彼{かれ}の報告書{ほうこくしょ}はミス（　）だった。',
-                options: ['だらけ', 'まみれ', 'ずくめ', 'っぽい'],
-                correctIndex: 0,
+                options: ['っぽい', 'まみれ', 'だらけ', 'ずくめ'],
+                correctIndex: 2,
                 explanation: '他的報告書錯誤百出。'
             },
             {
                 id: 'n3_quiz_darake_4',
                 sentence: '「どうしたの？顔{かお}が傷{きず}（　）だよ。」\n「自転車{じてんしゃ}で転{ころ}んじゃって...」',
-                options: ['だらけ', 'まみれ', 'ずくめ', 'っぽい'],
+                options: ['だらけ', 'っぽい', 'まみれ', 'ずくめ'],
                 correctIndex: 0,
                 explanation: '對話情境。臉上都是傷。'
             },
             {
                 id: 'n3_quiz_darake_5',
                 sentence: '「このレポート、提出{ていしゅつ}してもいい？」\n「ダメだよ！誤字{ごじ}（　）だから、直{なお}してから出{だ}して。」',
-                options: ['だらけ', 'まみれ', 'ずくめ', 'っぽい'],
-                correctIndex: 0,
+                options: ['まみれ', 'ずくめ', 'っぽい', 'だらけ'],
+                correctIndex: 3,
                 explanation: '對話情境。報告錯字連連。'
             }
         ]
@@ -1423,28 +1423,28 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_donna_ni_temo_2',
                 sentence: 'どんなに（　）も、この仕事{しごと}は終{お}わらない。',
-                options: ['頑張って', '頑張り', '頑張る', '頑張った'],
-                correctIndex: 0,
+                options: ['頑張る', '頑張った', '頑張って', '頑張り'],
+                correctIndex: 2,
                 explanation: '「〜ても」的形式。無論多努力，這工作都做不完。'
             },
             {
                 id: 'n3_quiz_donna_ni_temo_3',
                 sentence: 'どんなに高{たか}（　）も、欲{ほ}しいものは買{か}う。',
-                options: ['くて', 'い', 'かった', 'く'],
+                options: ['くて', 'く', 'い', 'かった'],
                 correctIndex: 0,
                 explanation: '「高い」→「高くても」。無論多貴都買。'
             },
             {
                 id: 'n3_quiz_donna_ni_temo_4',
                 sentence: '「明日{あした}の試合{しあい}、勝{か}てるかな...」\n「どんなに強{つよ}い相手{あいて}（　）、諦{あきら}めないで頑張{がんば}ろう！」',
-                options: ['でも', 'ても', 'だから', 'なのに'],
-                correctIndex: 0,
+                options: ['だから', 'なのに', 'でも', 'ても'],
+                correctIndex: 2,
                 explanation: '對話情境。無論對手多強都不放棄。'
             },
             {
                 id: 'n3_quiz_donna_ni_temo_5',
                 sentence: '「毎日{まいにち}練習{れんしゅう}してるのに、上手{じょうず}にならないよ...」\n「どんなに時間{じかん}が（　）も、続{つづ}けることが大切{たいせつ}だよ。」',
-                options: ['かかって', 'かかり', 'かかる', 'かかった'],
+                options: ['かかって', 'かかった', 'かかり', 'かかる'],
                 correctIndex: 0,
                 explanation: '對話情境。無論花多少時間，堅持下去很重要。'
             }
@@ -1484,36 +1484,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_doushitemo_1',
                 sentence: 'どうしてもこの資格{しかく}を（　）たい。',
-                options: ['取り', '取っ', '取る', '取れ'],
+                options: ['取り', '取る', '取れ', '取っ'],
                 correctIndex: 0,
                 explanation: '「取りたい」無論如何都想拿到這個資格。'
             },
             {
                 id: 'n3_quiz_doushitemo_2',
                 sentence: 'この薬{くすり}は苦{にが}くて、どうしても（　）。',
-                options: ['飲めない', '飲まない', '飲みたくない', '飲んだ'],
-                correctIndex: 0,
+                options: ['飲まない', '飲みたくない', '飲めない', '飲んだ'],
+                correctIndex: 2,
                 explanation: '這藥太苦了，怎麼也喝不下去。'
             },
             {
                 id: 'n3_quiz_doushitemo_3',
                 sentence: '彼{かれ}の名前{なまえ}がどうしても（　）。',
-                options: ['思い出せない', '思い出す', '思い出した', '思い出して'],
+                options: ['思い出せない', '思い出す', '思い出して', '思い出した'],
                 correctIndex: 0,
                 explanation: '怎麼也想不起來他的名字。'
             },
             {
                 id: 'n3_quiz_doushitemo_4',
                 sentence: '「このコンサート、チケット取{と}れた？」\n「ううん、どうしても（　）んだ。人気{にんき}すぎて。」',
-                options: ['取れなかった', '取った', '取れた', '取らなかった'],
-                correctIndex: 0,
+                options: ['取った', '取れた', '取らなかった', '取れなかった'],
+                correctIndex: 3,
                 explanation: '對話情境。怎麼也買不到票。'
             },
             {
                 id: 'n3_quiz_doushitemo_5',
                 sentence: '「今日{きょう}のミーティング、出{で}られる？」\n「ごめん、どうしても外{はず}せない用事{ようじ}が（　）んだ。」',
-                options: ['ある', 'あった', 'ない', 'なかった'],
-                correctIndex: 0,
+                options: ['なかった', 'ある', 'あった', 'ない'],
+                correctIndex: 1,
                 explanation: '對話情境。有無論如何都無法推掉的事情。'
             }
         ]
@@ -1550,36 +1550,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_futo_1',
                 sentence: '（　）空{そら}を見上{みあ}げた。',
-                options: ['ふと', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'まで', 'ふと'],
+                correctIndex: 3,
                 explanation: '忽然抬頭看天空。'
             },
             {
                 id: 'n3_quiz_futo_2',
                 sentence: '（　）彼女{かのじょ}のことを思{おも}い出{だ}した。',
-                options: ['ふと', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'から', 'ふと'],
+                correctIndex: 3,
                 explanation: '不經意想起了她。'
             },
             {
                 id: 'n3_quiz_futo_3',
                 sentence: '（　）見{み}ると、猫{ねこ}がいた。',
-                options: ['ふと', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'ふと', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '忽然一看，有隻貓。'
             },
             {
                 id: 'n3_quiz_futo_4',
                 sentence: '「どうして気{き}づいたの？」\n「（　）目{め}に入{はい}ったんだ。」',
-                options: ['ふと', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'ふと', 'さえ'],
+                correctIndex: 2,
                 explanation: '對話情境。不經意看到的。'
             },
             {
                 id: 'n3_quiz_futo_5',
                 sentence: '「急{きゅう}にどうしたの？」\n「（　）懐{なつ}かしくなってね。」',
-                options: ['ふと', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'ふと', 'まで'],
+                correctIndex: 2,
                 explanation: '對話情境。忽然覺得很懷念。'
             }
         ]
@@ -1611,36 +1611,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_furi_1',
                 sentence: '子供{こども}は寝{ね}た（　）をしていた。',
-                options: ['ふり', 'よう', 'まま', 'とおり'],
-                correctIndex: 0,
+                options: ['よう', 'まま', 'とおり', 'ふり'],
+                correctIndex: 3,
                 explanation: '小孩在假裝睡著了。'
             },
             {
                 id: 'n3_quiz_furi_2',
                 sentence: '彼女{かのじょ}は何{なに}も聞{き}こえない（　）をした。',
-                options: ['ふり', 'よう', 'まま', 'とおり'],
-                correctIndex: 0,
+                options: ['よう', 'まま', 'とおり', 'ふり'],
+                correctIndex: 3,
                 explanation: '她假裝什麼都沒聽到。'
             },
             {
                 id: 'n3_quiz_furi_3',
                 sentence: '元気{げんき}な（　）をしているけど、本当{ほんとう}は疲{つか}れている。',
-                options: ['ふり', 'よう', 'まま', 'とおり'],
-                correctIndex: 0,
+                options: ['とおり', 'よう', 'まま', 'ふり'],
+                correctIndex: 3,
                 explanation: '雖然假裝有精神，但其實很累。'
             },
             {
                 id: 'n3_quiz_furi_4',
                 sentence: '「彼{かれ}、どうして私{わたし}を無視{むし}するんだろう。」\n「気{き}づかない（　）をしているんじゃない？」',
-                options: ['ふり', 'よう', 'まま', 'とおり'],
-                correctIndex: 0,
+                options: ['よう', 'ふり', 'とおり', 'まま'],
+                correctIndex: 1,
                 explanation: '對話情境。他在假裝沒注意到吧？'
             },
             {
                 id: 'n3_quiz_furi_5',
                 sentence: '「さっきの電話{でんわ}、誰{だれ}から？」\n「知{し}らない人{ひと}の（　）をして切{き}っちゃった。」',
-                options: ['ふり', 'よう', 'まま', 'とおり'],
-                correctIndex: 0,
+                options: ['よう', 'ふり', 'とおり', 'まま'],
+                correctIndex: 1,
                 explanation: '對話情境。假裝是陌生人然後掛斷了。'
             }
         ]
@@ -1688,36 +1688,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_gachi_1',
                 sentence: '彼女{かのじょ}は約束{やくそく}を忘{わす}れ（　）だ。',
-                options: ['がち', 'ぎみ', 'っぽい', 'らしい'],
-                correctIndex: 0,
+                options: ['らしい', 'っぽい', 'ぎみ', 'がち'],
+                correctIndex: 3,
                 explanation: '她容易忘記約定。'
             },
             {
                 id: 'n3_quiz_gachi_2',
                 sentence: '冬{ふゆ}は風邪{かぜ}を引{ひ}き（　）になる。',
-                options: ['がち', 'ぎみ', 'っぽい', 'らしい'],
-                correctIndex: 0,
+                options: ['らしい', 'ぎみ', 'がち', 'っぽい'],
+                correctIndex: 2,
                 explanation: '冬天容易感冒。'
             },
             {
                 id: 'n3_quiz_gachi_3',
                 sentence: '一人暮{ひとりぐ}らしだと、野菜{やさい}が不足{ふそく}し（　）だ。',
-                options: ['がち', 'ぎみ', 'っぽい', 'らしい'],
+                options: ['がち', 'らしい', 'ぎみ', 'っぽい'],
                 correctIndex: 0,
                 explanation: '獨居的話容易蔬菜攝取不足。'
             },
             {
                 id: 'n3_quiz_gachi_4',
                 sentence: '「最近{さいきん}、疲{つか}れてない？」\n「うん、残業{ざんぎょう}（　）で...」',
-                options: ['がち', 'ぎみ', 'っぽい', 'らしい'],
-                correctIndex: 0,
+                options: ['っぽい', 'らしい', 'がち', 'ぎみ'],
+                correctIndex: 2,
                 explanation: '對話情境。常常加班。'
             },
             {
                 id: 'n3_quiz_gachi_5',
                 sentence: '「この計画{けいかく}、うまくいくかな？」\n「悲観的{ひかんてき}になり（　）だけど、前向{まえむ}きに考{かんが}えよう。」',
-                options: ['がち', 'ぎみ', 'っぽい', 'らしい'],
-                correctIndex: 0,
+                options: ['っぽい', 'がち', 'ぎみ', 'らしい'],
+                correctIndex: 1,
                 explanation: '對話情境。容易變得悲觀。'
             }
         ]
@@ -1762,36 +1762,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_gatai_1',
                 sentence: 'この事故{じこ}の原因{げんいん}は説明{せつめい}し（　）。',
-                options: ['がたい', 'にくい', 'やすい', 'っぽい'],
-                correctIndex: 0,
+                options: ['っぽい', 'にくい', 'やすい', 'がたい'],
+                correctIndex: 3,
                 explanation: '這起事故的原因難以解釋。'
             },
             {
                 id: 'n3_quiz_gatai_2',
                 sentence: '彼{かれ}の成功{せいこう}は信{しん}じ（　）ことだ。',
-                options: ['がたい', 'にくい', 'やすい', 'そう'],
+                options: ['がたい', 'やすい', 'にくい', 'そう'],
                 correctIndex: 0,
                 explanation: '他的成功是難以置信的事。'
             },
             {
                 id: 'n3_quiz_gatai_3',
                 sentence: '忘{わす}れ（　）思{おも}い出{で}がたくさんある。',
-                options: ['がたい', 'にくい', 'やすい', 'そう'],
-                correctIndex: 0,
+                options: ['やすい', 'がたい', 'そう', 'にくい'],
+                correctIndex: 1,
                 explanation: '有很多難以忘懷的回憶。'
             },
             {
                 id: 'n3_quiz_gatai_4',
                 sentence: '「この数字{すうじ}、正{ただ}しいの？」\n「うーん、認{みと}め（　）結果{けっか}だね。」',
-                options: ['がたい', 'にくい', 'やすい', 'そう'],
-                correctIndex: 0,
+                options: ['そう', 'にくい', 'がたい', 'やすい'],
+                correctIndex: 2,
                 explanation: '對話情境。難以認同的結果。'
             },
             {
                 id: 'n3_quiz_gatai_5',
                 sentence: '「彼{かれ}が嘘{うそ}をついたって本当{ほんとう}？」\n「ああ、許{ゆる}し（　）行為{こうい}だよ。」',
-                options: ['がたい', 'にくい', 'やすい', 'そう'],
-                correctIndex: 0,
+                options: ['にくい', 'そう', 'やすい', 'がたい'],
+                correctIndex: 3,
                 explanation: '對話情境。難以原諒的行為。'
             }
         ]
@@ -1836,35 +1836,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_gimi_1',
                 sentence: '電車{でんしゃ}が遅{おく}れ（　）で、いつも心配{しんぱい}だ。',
-                options: ['気味', 'がち', 'っぽい', 'らしい'],
-                correctIndex: 0,
+                options: ['がち', '気味', 'らしい', 'っぽい'],
+                correctIndex: 1,
                 explanation: '電車有點晚點的傾向，總是很擔心。'
             },
             {
                 id: 'n3_quiz_gimi_2',
                 sentence: '今日{きょう}は風邪{かぜ}（　）なので、早退{そうたい}した。',
-                options: ['気味', 'がち', 'っぽい', 'らしい'],
-                correctIndex: 0,
+                options: ['らしい', 'っぽい', '気味', 'がち'],
+                correctIndex: 2,
                 explanation: '今天有點感冒所以早退了。'
             },
             {
                 id: 'n3_quiz_gimi_3',
                 sentence: '最近{さいきん}、運動不足{うんどうぶそく}（　）だ。',
-                options: ['気味', 'がち', 'っぽい', 'らしい'],
-                correctIndex: 0,
+                options: ['がち', 'らしい', '気味', 'っぽい'],
+                correctIndex: 2,
                 explanation: '最近有點運動不足。'
             },
             {
                 id: 'n3_quiz_gimi_4',
                 sentence: '「プロジェクト、進{すす}んでる？」\n「うーん、遅{おく}れ（　）かな。」',
-                options: ['気味', 'がち', 'っぽい', 'らしい'],
+                options: ['気味', 'らしい', 'っぽい', 'がち'],
                 correctIndex: 0,
                 explanation: '對話情境。有點延遲。'
             },
             {
                 id: 'n3_quiz_gimi_5',
                 sentence: '「最近{さいきん}、食{た}べ過{す}ぎてない？」\n「そうなんだ。太{ふと}り（　）で困{こま}ってる。」',
-                options: ['気味', 'がち', 'っぽい', 'らしい'],
+                options: ['気味', 'らしい', 'がち', 'っぽい'],
                 correctIndex: 0,
                 explanation: '對話情境。有點發胖。'
             }
@@ -1910,36 +1910,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_goto_ni_1',
                 sentence: '一{いち}ヶ月{げつ}（　）に給料{きゅうりょう}が入{はい}る。',
-                options: ['ごと', 'たび', 'おき', 'つつ'],
-                correctIndex: 0,
+                options: ['おき', 'つつ', 'ごと', 'たび'],
+                correctIndex: 2,
                 explanation: '每個月都會收到薪水。'
             },
             {
                 id: 'n3_quiz_goto_ni_2',
                 sentence: '季節{きせつ}（　）に服{ふく}を入{い}れ替{か}える。',
-                options: ['ごと', 'たび', 'おき', 'つつ'],
+                options: ['ごと', 'たび', 'つつ', 'おき'],
                 correctIndex: 0,
                 explanation: '每個季節都會換衣服。'
             },
             {
                 id: 'n3_quiz_goto_ni_3',
                 sentence: '会{あ}う（　）に彼女{かのじょ}は綺麗{きれい}になっている。',
-                options: ['ごと', 'たび', 'おき', 'つつ'],
-                correctIndex: 0,
+                options: ['つつ', 'おき', 'たび', 'ごと'],
+                correctIndex: 3,
                 explanation: '每次見面她都變漂亮了。'
             },
             {
                 id: 'n3_quiz_goto_ni_4',
                 sentence: '「レポート、いつ出{だ}せばいい？」\n「週{しゅう}（　）に提出{ていしゅつ}してください。」',
-                options: ['ごと', 'たび', 'おき', 'つつ'],
-                correctIndex: 0,
+                options: ['おき', 'ごと', 'たび', 'つつ'],
+                correctIndex: 1,
                 explanation: '對話情境。每週提交。'
             },
             {
                 id: 'n3_quiz_goto_ni_5',
                 sentence: '「日本語{にほんご}、上手{じょうず}になったね。」\n「ありがとう。日{ひ}（　）に練習{れんしゅう}してるから。」',
-                options: ['ごと', 'たび', 'おき', 'つつ'],
-                correctIndex: 0,
+                options: ['おき', 'つつ', 'ごと', 'たび'],
+                correctIndex: 2,
                 explanation: '對話情境。每天練習。'
             }
         ]
@@ -1984,35 +1984,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_hodo_1',
                 sentence: '彼{かれ}は目{め}が覚{さ}める（　）ハンサムだ。',
-                options: ['ほど', 'くらい', 'まで', 'だけ'],
-                correctIndex: 0,
+                options: ['だけ', 'まで', 'ほど', 'くらい'],
+                correctIndex: 2,
                 explanation: '他帥到讓人眼睛一亮。'
             },
             {
                 id: 'n3_quiz_hodo_2',
                 sentence: '歩{ある}けない（　）足{あし}が痛{いた}い。',
-                options: ['ほど', 'くらい', 'まで', 'だけ'],
-                correctIndex: 0,
+                options: ['まで', 'だけ', 'ほど', 'くらい'],
+                correctIndex: 2,
                 explanation: '腳痛到無法走路。'
             },
             {
                 id: 'n3_quiz_hodo_3',
                 sentence: '30分{ぷん}（　）で着{つ}きます。',
-                options: ['ほど', 'くらい', 'まで', 'だけ'],
+                options: ['ほど', 'くらい', 'だけ', 'まで'],
                 correctIndex: 0,
                 explanation: '大約30分鐘到達。'
             },
             {
                 id: 'n3_quiz_hodo_4',
                 sentence: '「この映画{えいが}、どうだった？」\n「感動{かんどう}して、泣{な}く（　）だったよ。」',
-                options: ['ほど', 'くらい', 'まで', 'だけ'],
-                correctIndex: 0,
+                options: ['だけ', 'ほど', 'まで', 'くらい'],
+                correctIndex: 1,
                 explanation: '對話情境。感動到快哭的程度。'
             },
             {
                 id: 'n3_quiz_hodo_5',
                 sentence: '「仕事{しごと}、忙{いそが}しい？」\n「うん、寝{ね}る時間{じかん}もない（　）だよ。」',
-                options: ['ほど', 'くらい', 'まで', 'だけ'],
+                options: ['ほど', 'くらい', 'だけ', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。忙到沒時間睡覺。'
             }
@@ -2058,36 +2058,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_hodo_nai_1',
                 sentence: 'この問題{もんだい}は思{おも}った（　）難{むずか}しくなかった。',
-                options: ['ほど', 'くらい', 'より', 'だけ'],
-                correctIndex: 0,
+                options: ['だけ', 'ほど', 'より', 'くらい'],
+                correctIndex: 1,
                 explanation: '這個問題沒有想像的那麼難。'
             },
             {
                 id: 'n3_quiz_hodo_nai_2',
                 sentence: '彼{かれ}（　）上手{じょうず}な人{ひと}はいない。',
-                options: ['ほど', 'くらい', 'より', 'だけ'],
-                correctIndex: 0,
+                options: ['より', 'ほど', 'だけ', 'くらい'],
+                correctIndex: 1,
                 explanation: '沒有人像他那麼厲害。'
             },
             {
                 id: 'n3_quiz_hodo_nai_3',
                 sentence: '今年{ことし}の夏{なつ}は去年{きょねん}（　）暑{あつ}くない。',
-                options: ['ほど', 'くらい', 'より', 'だけ'],
+                options: ['ほど', 'くらい', 'だけ', 'より'],
                 correctIndex: 0,
                 explanation: '今年夏天沒有去年那麼熱。'
             },
             {
                 id: 'n3_quiz_hodo_nai_4',
                 sentence: '「日本語{にほんご}、難{むずか}しい？」\n「最初{さいしょ}思{おも}った（　）でもないよ。」',
-                options: ['ほど', 'くらい', 'より', 'だけ'],
-                correctIndex: 0,
+                options: ['より', 'ほど', 'くらい', 'だけ'],
+                correctIndex: 1,
                 explanation: '對話情境。沒有一開始想的那麼難。'
             },
             {
                 id: 'n3_quiz_hodo_nai_5',
                 sentence: '「あの店{みせ}、高{たか}いでしょ？」\n「いや、噂{うわさ}（　）高{たか}くなかったよ。」',
-                options: ['ほど', 'くらい', 'より', 'だけ'],
-                correctIndex: 0,
+                options: ['だけ', 'ほど', 'くらい', 'より'],
+                correctIndex: 1,
                 explanation: '對話情境。沒有傳說中那麼貴。'
             }
         ]
@@ -2132,36 +2132,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ichido_ni_1',
                 sentence: 'この本{ほん}を（　）全部{ぜんぶ}読{よ}むのは大変{たいへん}だ。',
-                options: ['一度に', '同時に', '一緒に', 'すぐに'],
-                correctIndex: 0,
+                options: ['同時に', 'すぐに', '一度に', '一緒に'],
+                correctIndex: 2,
                 explanation: '一次讀完這些書很辛苦。'
             },
             {
                 id: 'n3_quiz_ichido_ni_2',
                 sentence: 'お客{きゃく}さんが（　）大勢{おおぜい}来{き}て、忙{いそが}しかった。',
-                options: ['一度に', '同時に', '一緒に', 'すぐに'],
+                options: ['一度に', '一緒に', 'すぐに', '同時に'],
                 correctIndex: 0,
                 explanation: '客人一次來了很多，很忙。'
             },
             {
                 id: 'n3_quiz_ichido_ni_3',
                 sentence: 'そんなにたくさん（　）食{た}べられないよ。',
-                options: ['一度に', '同時に', '一緒に', 'すぐに'],
-                correctIndex: 0,
+                options: ['すぐに', '同時に', '一緒に', '一度に'],
+                correctIndex: 3,
                 explanation: '一次吃不了那麼多。'
             },
             {
                 id: 'n3_quiz_ichido_ni_4',
                 sentence: '「この仕事{しごと}、今日中{きょうじゅう}にできる？」\n「（　）は無理{むり}だよ。」',
-                options: ['一度に', '同時に', '一緒に', 'すぐに'],
-                correctIndex: 0,
+                options: ['すぐに', '同時に', '一度に', '一緒に'],
+                correctIndex: 2,
                 explanation: '對話情境。一次完成不了。'
             },
             {
                 id: 'n3_quiz_ichido_ni_5',
                 sentence: '「ケーキ、何個{なんこ}食{た}べた？」\n「（　）三{みっ}つも食{た}べちゃった。」',
-                options: ['一度に', '同時に', '一緒に', 'すぐに'],
-                correctIndex: 0,
+                options: ['一緒に', '一度に', 'すぐに', '同時に'],
+                correctIndex: 1,
                 explanation: '對話情境。一次吃了三個。'
             }
         ]
@@ -2206,36 +2206,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ikura_temo_1',
                 sentence: '（　）考{かんが}えても、答{こた}えが分{わ}からない。',
-                options: ['いくら', 'どんな', 'なんで', 'いつ'],
-                correctIndex: 0,
+                options: ['なんで', 'いつ', 'いくら', 'どんな'],
+                correctIndex: 2,
                 explanation: '無論怎麼想都不知道答案。'
             },
             {
                 id: 'n3_quiz_ikura_temo_2',
                 sentence: '（　）待{ま}っても、バスが来{こ}なかった。',
-                options: ['いくら', 'どんな', 'なんで', 'いつ'],
+                options: ['いくら', 'なんで', 'いつ', 'どんな'],
                 correctIndex: 0,
                 explanation: '無論等多久公車都不來。'
             },
             {
                 id: 'n3_quiz_ikura_temo_3',
                 sentence: '（　）眠{ねむ}くても、勉強{べんきょう}しなければならない。',
-                options: ['いくら', 'どんな', 'なんで', 'いつ'],
-                correctIndex: 0,
+                options: ['なんで', 'いくら', 'いつ', 'どんな'],
+                correctIndex: 1,
                 explanation: '無論多睏都必須讀書。'
             },
             {
                 id: 'n3_quiz_ikura_temo_4',
                 sentence: '「このパズル、解{と}けた？」\n「（　）やっても無理{むり}だった。」',
-                options: ['いくら', 'どんな', 'なんで', 'いつ'],
-                correctIndex: 0,
+                options: ['なんで', 'いつ', 'どんな', 'いくら'],
+                correctIndex: 3,
                 explanation: '對話情境。無論怎麼試都解不開。'
             },
             {
                 id: 'n3_quiz_ikura_temo_5',
                 sentence: '「彼{かれ}、謝{あやま}った？」\n「（　）頼{たの}んでも謝{あやま}らないよ。」',
-                options: ['いくら', 'どんな', 'なんで', 'いつ'],
-                correctIndex: 0,
+                options: ['いつ', 'なんで', 'いくら', 'どんな'],
+                correctIndex: 2,
                 explanation: '對話情境。無論怎麼拜託他都不道歉。'
             }
         ]
@@ -2280,36 +2280,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ippou_da_1',
                 sentence: '環境問題{かんきょうもんだい}は深刻{しんこく}になる（　）だ。',
-                options: ['一方', 'ばかり', 'だけ', 'のみ'],
-                correctIndex: 0,
+                options: ['ばかり', '一方', 'のみ', 'だけ'],
+                correctIndex: 1,
                 explanation: '環境問題越來越嚴重。'
             },
             {
                 id: 'n3_quiz_ippou_da_2',
                 sentence: '彼{かれ}の成績{せいせき}は下{さ}がる（　）だ。',
-                options: ['一方', 'ばかり', 'だけ', 'のみ'],
-                correctIndex: 0,
+                options: ['のみ', 'ばかり', '一方', 'だけ'],
+                correctIndex: 2,
                 explanation: '他的成績不斷下滑。'
             },
             {
                 id: 'n3_quiz_ippou_da_3',
                 sentence: 'この店{みせ}は客{きゃく}が減{へ}る（　）だ。',
-                options: ['一方', 'ばかり', 'だけ', 'のみ'],
-                correctIndex: 0,
+                options: ['のみ', 'ばかり', 'だけ', '一方'],
+                correctIndex: 3,
                 explanation: '這家店的客人不斷減少。'
             },
             {
                 id: 'n3_quiz_ippou_da_4',
                 sentence: '「会社{かいしゃ}の業績{ぎょうせき}、どう？」\n「悪{わる}くなる（　）で、心配{しんぱい}だよ。」',
-                options: ['一方', 'ばかり', 'だけ', 'のみ'],
-                correctIndex: 0,
+                options: ['ばかり', '一方', 'だけ', 'のみ'],
+                correctIndex: 1,
                 explanation: '對話情境。公司業績不斷惡化。'
             },
             {
                 id: 'n3_quiz_ippou_da_5',
                 sentence: '「日本語{にほんご}、上達{じょうたつ}してる？」\n「いや、忘{わす}れる（　）だよ。」',
-                options: ['一方', 'ばかり', 'だけ', 'のみ'],
-                correctIndex: 0,
+                options: ['ばかり', '一方', 'のみ', 'だけ'],
+                correctIndex: 1,
                 explanation: '對話情境。日語越來越生疏。'
             }
         ]
@@ -2354,28 +2354,28 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ippou_da_1_1',
                 sentence: '少子高齢化{しょうしこうれいか}は進{すす}む（　）だ。',
-                options: ['一方', 'ばかり', 'のみ', 'きり'],
-                correctIndex: 0,
+                options: ['ばかり', 'きり', 'のみ', '一方'],
+                correctIndex: 3,
                 explanation: '少子高齡化不斷加劇。'
             },
             {
                 id: 'n3_quiz_ippou_da_1_2',
                 sentence: '田舎{いなか}の人口{じんこう}は減{へ}る（　）だ。',
-                options: ['一方', 'ばかり', 'のみ', 'きり'],
+                options: ['一方', 'のみ', 'ばかり', 'きり'],
                 correctIndex: 0,
                 explanation: '鄉下的人口持續減少。'
             },
             {
                 id: 'n3_quiz_ippou_da_1_3',
                 sentence: '彼{かれ}との関係{かんけい}は悪{わる}くなる（　）だった。',
-                options: ['一方', 'ばかり', 'のみ', 'きり'],
+                options: ['一方', 'きり', 'ばかり', 'のみ'],
                 correctIndex: 0,
                 explanation: '與他的關係越來越差。'
             },
             {
                 id: 'n3_quiz_ippou_da_1_4',
                 sentence: '「最近{さいきん}、視力{しりょく}どう？」\n「落{お}ちる（　）で、メガネを変{か}えたよ。」',
-                options: ['一方', 'ばかり', 'のみ', 'きり'],
+                options: ['一方', 'のみ', 'きり', 'ばかり'],
                 correctIndex: 0,
                 explanation: '對話情境。視力一直在下降。'
             },
@@ -2428,36 +2428,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ittai_1',
                 sentence: '（　）何{なに}があったの？',
-                options: ['一体', 'まさか', 'ぜひ', 'さすが'],
-                correctIndex: 0,
+                options: ['まさか', 'さすが', 'ぜひ', '一体'],
+                correctIndex: 3,
                 explanation: '到底發生什麼事了？'
             },
             {
                 id: 'n3_quiz_ittai_2',
                 sentence: '（　）いつになったら届{とど}くの？',
-                options: ['一体', 'まさか', 'ぜひ', 'さすが'],
+                options: ['一体', 'ぜひ', 'まさか', 'さすが'],
                 correctIndex: 0,
                 explanation: '到底什麼時候才會送到？'
             },
             {
                 id: 'n3_quiz_ittai_3',
                 sentence: '（　）どうすればいいのか分{わ}からない。',
-                options: ['一体', 'まさか', 'ぜひ', 'さすが'],
+                options: ['一体', 'さすが', 'まさか', 'ぜひ'],
                 correctIndex: 0,
                 explanation: '完全不知道到底該怎麼辦。'
             },
             {
                 id: 'n3_quiz_ittai_4',
                 sentence: '「電話{でんわ}が繋{つな}がらない。」\n「（　）どこにいるんだろう？」',
-                options: ['一体', 'まさか', 'ぜひ', 'さすが'],
-                correctIndex: 0,
+                options: ['ぜひ', 'まさか', '一体', 'さすが'],
+                correctIndex: 2,
                 explanation: '對話情境。到底在哪裡？'
             },
             {
                 id: 'n3_quiz_ittai_5',
                 sentence: '「彼{かれ}、急{きゅう}に怒{おこ}り出{だ}したよ。」\n「（　）何{なに}が気{き}に入{い}らなかったんだろう？」',
-                options: ['一体', 'まさか', 'ぜひ', 'さすが'],
-                correctIndex: 0,
+                options: ['さすが', '一体', 'ぜひ', 'まさか'],
+                correctIndex: 1,
                 explanation: '對話情境。到底是什麼讓他不滿？'
             }
         ]
@@ -2502,35 +2502,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_janai_1',
                 sentence: 'もう帰{かえ}るの？早{はや}い（　）！',
-                options: ['じゃない', 'ではない', 'でもない', 'じゃなく'],
-                correctIndex: 0,
+                options: ['ではない', 'でもない', 'じゃなく', 'じゃない'],
+                correctIndex: 3,
                 explanation: '已經要回去了？太早了吧！'
             },
             {
                 id: 'n3_quiz_janai_2',
                 sentence: '昨日{きのう}約束{やくそく}した（　）。どうして忘{わす}れたの？',
-                options: ['じゃない', 'ではない', 'でもない', 'じゃなく'],
-                correctIndex: 0,
+                options: ['でもない', 'じゃなく', 'ではない', 'じゃない'],
+                correctIndex: 3,
                 explanation: '昨天不是說好了嗎。為什麼忘了？'
             },
             {
                 id: 'n3_quiz_janai_3',
                 sentence: 'この服{ふく}、素敵{すてき}（　）？',
-                options: ['じゃない', 'ではない', 'でもない', 'じゃなく'],
-                correctIndex: 0,
+                options: ['でもない', 'じゃない', 'ではない', 'じゃなく'],
+                correctIndex: 1,
                 explanation: '這件衣服很漂亮不是嗎？'
             },
             {
                 id: 'n3_quiz_janai_4',
                 sentence: '「まだ終{お}わってないの？」\n「難{むずか}しいんだから、仕方{しかた}ない（　）。」',
-                options: ['じゃない', 'ではない', 'でもない', 'じゃなく'],
-                correctIndex: 0,
+                options: ['じゃなく', 'でもない', 'ではない', 'じゃない'],
+                correctIndex: 3,
                 explanation: '對話情境。因為很難，沒辦法啊。'
             },
             {
                 id: 'n3_quiz_janai_5',
                 sentence: '「また遅刻{ちこく}？」\n「電車{でんしゃ}が止{と}まったんだから、しょうがない（　）。」',
-                options: ['じゃない', 'ではない', 'でもない', 'じゃなく'],
+                options: ['じゃない', 'じゃなく', 'ではない', 'でもない'],
                 correctIndex: 0,
                 explanation: '對話情境。電車停了沒辦法啊。'
             }
@@ -2576,15 +2576,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ka_nani_ka_1',
                 sentence: 'コーヒー（　）いかがですか。',
-                options: ['か何か', 'など', 'とか', 'でも'],
-                correctIndex: 0,
+                options: ['など', 'か何か', 'とか', 'でも'],
+                correctIndex: 1,
                 explanation: '咖啡之類的如何？'
             },
             {
                 id: 'n3_quiz_ka_nani_ka_2',
                 sentence: '傘{かさ}（　）持{も}っていったほうがいいよ。',
-                options: ['か何か', 'など', 'とか', 'でも'],
-                correctIndex: 0,
+                options: ['など', 'か何か', 'でも', 'とか'],
+                correctIndex: 1,
                 explanation: '帶傘之類的比較好。'
             },
             {
@@ -2597,15 +2597,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ka_nani_ka_4',
                 sentence: '「喉{のど}渇{かわ}いた。」\n「じゃ、水{みず}（　）買{か}おうか。」',
-                options: ['か何か', 'など', 'とか', 'でも'],
-                correctIndex: 0,
+                options: ['とか', 'でも', 'など', 'か何か'],
+                correctIndex: 3,
                 explanation: '對話情境。買水之類的吧。'
             },
             {
                 id: 'n3_quiz_ka_nani_ka_5',
                 sentence: '「寒{さむ}くない？」\n「うん、コート（　）貸{か}して。」',
-                options: ['か何か', 'など', 'とか', 'でも'],
-                correctIndex: 0,
+                options: ['など', 'でも', 'か何か', 'とか'],
+                correctIndex: 2,
                 explanation: '對話情境。借我外套之類的。'
             }
         ]
@@ -2650,36 +2650,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ka_nani_ka_1_1',
                 sentence: '何{なに}か飲{の}み物{もの}（　）いりますか。',
-                options: ['か何か', 'など', 'とか', 'でも'],
-                correctIndex: 0,
+                options: ['とか', 'など', 'でも', 'か何か'],
+                correctIndex: 3,
                 explanation: '需要飲料之類的嗎？'
             },
             {
                 id: 'n3_quiz_ka_nani_ka_1_2',
                 sentence: '質問{しつもん}（　）あれば、いつでもどうぞ。',
-                options: ['か何か', 'など', 'とか', 'でも'],
-                correctIndex: 0,
+                options: ['とか', 'など', 'でも', 'か何か'],
+                correctIndex: 3,
                 explanation: '有問題什麼的隨時說。'
             },
             {
                 id: 'n3_quiz_ka_nani_ka_1_3',
                 sentence: '風邪{かぜ}（　）引{ひ}いたの？',
-                options: ['か何か', 'など', 'とか', 'でも'],
-                correctIndex: 0,
+                options: ['でも', 'とか', 'か何か', 'など'],
+                correctIndex: 2,
                 explanation: '是感冒之類的嗎？'
             },
             {
                 id: 'n3_quiz_ka_nani_ka_1_4',
                 sentence: '「疲{つか}れた顔{かお}してるね。」\n「仕事{しごと}（　）でストレスがたまってて。」',
-                options: ['か何か', 'など', 'とか', 'でも'],
-                correctIndex: 0,
+                options: ['とか', 'か何か', 'でも', 'など'],
+                correctIndex: 1,
                 explanation: '對話情境。因為工作之類的壓力大。'
             },
             {
                 id: 'n3_quiz_ka_nani_ka_1_5',
                 sentence: '「今度{こんど}の休{やす}み、予定{よてい}ある？」\n「ドライブ（　）しない？」',
-                options: ['か何か', 'など', 'とか', 'でも'],
-                correctIndex: 0,
+                options: ['など', 'でも', 'か何か', 'とか'],
+                correctIndex: 2,
                 explanation: '對話情境。要不要開車兜風之類的？'
             }
         ]
@@ -2724,36 +2724,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kakeru_1',
                 sentence: '読{よ}み（　）の本{ほん}をなくしてしまった。',
-                options: ['かけ', 'はじめ', 'おわり', 'つづけ'],
-                correctIndex: 0,
+                options: ['おわり', 'はじめ', 'つづけ', 'かけ'],
+                correctIndex: 3,
                 explanation: '把讀到一半的書弄丟了。'
             },
             {
                 id: 'n3_quiz_kakeru_2',
                 sentence: '彼{かれ}は何{なに}か言{い}い（　）て、黙{だま}った。',
-                options: ['かけ', 'はじめ', 'おわり', 'つづけ'],
-                correctIndex: 0,
+                options: ['おわり', 'かけ', 'はじめ', 'つづけ'],
+                correctIndex: 1,
                 explanation: '他話說到一半就沉默了。'
             },
             {
                 id: 'n3_quiz_kakeru_3',
                 sentence: '死{し}に（　）の動物{どうぶつ}を助{たす}けた。',
-                options: ['かけ', 'はじめ', 'おわり', 'つづけ'],
+                options: ['かけ', 'つづけ', 'はじめ', 'おわり'],
                 correctIndex: 0,
                 explanation: '救了一隻快死的動物。'
             },
             {
                 id: 'n3_quiz_kakeru_4',
                 sentence: '「この料理{りょうり}、誰{だれ}の？」\n「あ、食{た}べ（　）のやつだ。」',
-                options: ['かけ', 'はじめ', 'おわり', 'つづけ'],
-                correctIndex: 0,
+                options: ['はじめ', 'かけ', 'おわり', 'つづけ'],
+                correctIndex: 1,
                 explanation: '對話情境。吃到一半的那個。'
             },
             {
                 id: 'n3_quiz_kakeru_5',
                 sentence: '「話{はなし}があるんだけど...」\n「言{い}い（　）で止{や}めないでよ。」',
-                options: ['かけ', 'はじめ', 'おわり', 'つづけ'],
-                correctIndex: 0,
+                options: ['つづけ', 'おわり', 'はじめ', 'かけ'],
+                correctIndex: 3,
                 explanation: '對話情境。不要說到一半就停。'
             }
         ]
@@ -2798,36 +2798,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kara_ni_kakete_1',
                 sentence: '今週{こんしゅう}{こんしゅう}（　）来週{らいしゅう}にかけて忙{いそが}しい。',
-                options: ['から', 'まで', 'より', 'だけ'],
-                correctIndex: 0,
+                options: ['より', 'だけ', 'から', 'まで'],
+                correctIndex: 2,
                 explanation: '從這週到下週很忙。'
             },
             {
                 id: 'n3_quiz_kara_ni_kakete_2',
                 sentence: '夜{よる}から朝{あさ}（　）かけて強{つよ}い雨{あめ}が降{ふ}った。',
-                options: ['に', 'まで', 'で', 'が'],
-                correctIndex: 0,
+                options: ['で', 'まで', 'が', 'に'],
+                correctIndex: 3,
                 explanation: '從晚上到早上下了大雨。'
             },
             {
                 id: 'n3_quiz_kara_ni_kakete_3',
                 sentence: '春{はる}から夏{なつ}（　）かけて花{はな}が咲{さ}く。',
-                options: ['に', 'まで', 'で', 'が'],
-                correctIndex: 0,
+                options: ['が', 'まで', 'に', 'で'],
+                correctIndex: 2,
                 explanation: '從春天到夏天花會開。'
             },
             {
                 id: 'n3_quiz_kara_ni_kakete_4',
                 sentence: '「台風{たいふう}はいつ来{く}る？」\n「明日{あした}の午後{ごご}から夜{よる}（　）かけてだって。」',
-                options: ['に', 'まで', 'で', 'が'],
-                correctIndex: 0,
+                options: ['が', 'に', 'で', 'まで'],
+                correctIndex: 1,
                 explanation: '對話情境。從明天下午到晚上。'
             },
             {
                 id: 'n3_quiz_kara_ni_kakete_5',
                 sentence: '「セールはいつまで？」\n「今月{こんげつ}{こんげつ}末{まつ}（　）来月{らいげつ}初{はじ}めにかけてだよ。」',
-                options: ['から', 'まで', 'より', 'だけ'],
-                correctIndex: 0,
+                options: ['まで', 'だけ', 'から', 'より'],
+                correctIndex: 2,
                 explanation: '對話情境。從月底到下個月初。'
             }
         ]
@@ -2872,36 +2872,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kawari_ni_1',
                 sentence: '部長{ぶちょう}の（　）に私{わたし}が挨拶{あいさつ}した。',
-                options: ['代わり', '代理', '変わり', '替え'],
-                correctIndex: 0,
+                options: ['変わり', '代わり', '替え', '代理'],
+                correctIndex: 1,
                 explanation: '代替部長致詞。'
             },
             {
                 id: 'n3_quiz_kawari_ni_2',
                 sentence: 'バスの（　）にタクシーで行{い}った。',
-                options: ['代わり', '代理', '変わり', '替え'],
+                options: ['代わり', '替え', '代理', '変わり'],
                 correctIndex: 0,
                 explanation: '沒搭公車改搭計程車去。'
             },
             {
                 id: 'n3_quiz_kawari_ni_3',
                 sentence: '教{おし}えてくれた（　）に昼{ひる}ごはんをおごった。',
-                options: ['代わり', '代理', '変わり', '替え'],
-                correctIndex: 0,
+                options: ['代理', '替え', '代わり', '変わり'],
+                correctIndex: 2,
                 explanation: '作為教我的回報請吃午餐。'
             },
             {
                 id: 'n3_quiz_kawari_ni_4',
                 sentence: '「買{か}い物{もの}行{い}ける？」\n「うん、お母{かあ}さんの（　）に行{い}ってくるよ。」',
-                options: ['代わり', '代理', '変わり', '替え'],
-                correctIndex: 0,
+                options: ['代理', '代わり', '変わり', '替え'],
+                correctIndex: 1,
                 explanation: '對話情境。代替媽媽去。'
             },
             {
                 id: 'n3_quiz_kawari_ni_5',
                 sentence: '「この仕事{しごと}、手伝{てつだ}ってくれない？」\n「いいよ。その（　）に今度{こんど}飲{の}みに行{い}こう。」',
-                options: ['代わり', '代理', '変わり', '替え'],
-                correctIndex: 0,
+                options: ['代理', '変わり', '替え', '代わり'],
+                correctIndex: 3,
                 explanation: '對話情境。作為交換下次去喝一杯。'
             }
         ]
@@ -2946,36 +2946,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kekka_1',
                 sentence: '一年間{いちねんかん}勉強{べんきょう}した（　）、日本語{にほんご}が上手{じょうず}になった。',
-                options: ['結果', '原因', '理由', '目的'],
-                correctIndex: 0,
+                options: ['目的', '理由', '結果', '原因'],
+                correctIndex: 2,
                 explanation: '學習了一年的結果日語進步了。'
             },
             {
                 id: 'n3_quiz_kekka_2',
                 sentence: '実験{じっけん}の（　）、新{あたら}しい発見{はっけん}があった。',
-                options: ['結果', '原因', '理由', '目的'],
+                options: ['結果', '原因', '目的', '理由'],
                 correctIndex: 0,
                 explanation: '實驗的結果有了新發現。'
             },
             {
                 id: 'n3_quiz_kekka_3',
                 sentence: '話{はな}し合{あ}った（　）、賛成{さんせい}することにした。',
-                options: ['結果', '原因', '理由', '目的'],
-                correctIndex: 0,
+                options: ['理由', '結果', '目的', '原因'],
+                correctIndex: 1,
                 explanation: '討論的結果決定贊成。'
             },
             {
                 id: 'n3_quiz_kekka_4',
                 sentence: '「ダイエット続{つづ}けてるの？」\n「うん、運動{うんどう}した（　）、3キロ痩{や}せたよ。」',
-                options: ['結果', '原因', '理由', '目的'],
-                correctIndex: 0,
+                options: ['原因', '結果', '目的', '理由'],
+                correctIndex: 1,
                 explanation: '對話情境。運動的結果瘦了3公斤。'
             },
             {
                 id: 'n3_quiz_kekka_5',
                 sentence: '「選挙{せんきょ}の（　）はどうなった？」\n「まだ発表{はっぴょう}されてないよ。」',
-                options: ['結果', '原因', '理由', '目的'],
-                correctIndex: 0,
+                options: ['理由', '目的', '原因', '結果'],
+                correctIndex: 3,
                 explanation: '對話情境。選舉結果怎麼樣了？'
             }
         ]
@@ -3020,35 +3020,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kekkyoku_1',
                 sentence: 'たくさん探{さが}したが、（　）見{み}つからなかった。',
-                options: ['結局', '結果', '最後', '終わり'],
-                correctIndex: 0,
+                options: ['終わり', '結果', '結局', '最後'],
+                correctIndex: 2,
                 explanation: '找了很多，結果還是沒找到。'
             },
             {
                 id: 'n3_quiz_kekkyoku_2',
                 sentence: '悩{なや}んだけど、（　）元{もと}のままにした。',
-                options: ['結局', '結果', '最後', '終わり'],
-                correctIndex: 0,
+                options: ['最後', '終わり', '結局', '結果'],
+                correctIndex: 2,
                 explanation: '煩惱了一番，最後還是維持原樣。'
             },
             {
                 id: 'n3_quiz_kekkyoku_3',
                 sentence: '（　）誰{だれ}も助{たす}けてくれなかった。',
-                options: ['結局', '結果', '最後', '終わり'],
-                correctIndex: 0,
+                options: ['最後', '終わり', '結果', '結局'],
+                correctIndex: 3,
                 explanation: '結果沒有人幫忙。'
             },
             {
                 id: 'n3_quiz_kekkyoku_4',
                 sentence: '「映画{えいが}見{み}に行{い}った？」\n「行{い}こうとしたけど、（　）行{い}けなかった。」',
-                options: ['結局', '結果', '最後', '終わり'],
-                correctIndex: 0,
+                options: ['最後', '結果', '終わり', '結局'],
+                correctIndex: 3,
                 explanation: '對話情境。想去但結果沒去成。'
             },
             {
                 id: 'n3_quiz_kekkyoku_5',
                 sentence: '「彼{かれ}と仲直{なかなお}りした？」\n「いろいろ話{はな}したけど、（　）無理{むり}だった。」',
-                options: ['結局', '結果', '最後', '終わり'],
+                options: ['結局', '結果', '終わり', '最後'],
                 correctIndex: 0,
                 explanation: '對話情境。談了很多但結果還是不行。'
             }
@@ -3094,36 +3094,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kesshite_nai_1',
                 sentence: 'この約束{やくそく}は（　）破{やぶ}らない。',
-                options: ['決して', '全然', 'まったく', 'ぜんぜん'],
-                correctIndex: 0,
+                options: ['全然', 'まったく', 'ぜんぜん', '決して'],
+                correctIndex: 3,
                 explanation: '這個約定絕對不會打破。'
             },
             {
                 id: 'n3_quiz_kesshite_nai_2',
                 sentence: '彼{かれ}は（　）嘘{うそ}をつかない人{ひと}だ。',
-                options: ['決して', '全然', 'まったく', 'ぜんぜん'],
-                correctIndex: 0,
+                options: ['まったく', '決して', 'ぜんぜん', '全然'],
+                correctIndex: 1,
                 explanation: '他是絕對不會說謊的人。'
             },
             {
                 id: 'n3_quiz_kesshite_nai_3',
                 sentence: 'この問題{もんだい}は（　）簡単{かんたん}ではない。',
-                options: ['決して', '全然', 'まったく', 'ぜんぜん'],
-                correctIndex: 0,
+                options: ['まったく', '全然', '決して', 'ぜんぜん'],
+                correctIndex: 2,
                 explanation: '這個問題絕對不簡單。'
             },
             {
                 id: 'n3_quiz_kesshite_nai_4',
                 sentence: '「怒{おこ}ってる？」\n「ううん、（　）怒{おこ}ってないよ。」',
-                options: ['決して', '全然', 'まったく', 'ぜんぜん'],
+                options: ['決して', '全然', 'ぜんぜん', 'まったく'],
                 correctIndex: 0,
                 explanation: '對話情境。絕對沒有生氣。'
             },
             {
                 id: 'n3_quiz_kesshite_nai_5',
                 sentence: '「また失敗{しっぱい}しちゃった。」\n「大丈夫{だいじょうぶ}。（　）諦{あきら}めないで。」',
-                options: ['決して', '全然', 'まったく', 'ぜんぜん'],
-                correctIndex: 0,
+                options: ['ぜんぜん', 'まったく', '決して', '全然'],
+                correctIndex: 2,
                 explanation: '對話情境。絕對不要放棄。'
             }
         ]
@@ -3175,29 +3175,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kesshite_nai_1_2',
                 sentence: 'この道{みち}は（　）安全{あんぜん}ではない。',
-                options: ['決して', '全然', 'まったく', 'ぜんぜん'],
-                correctIndex: 0,
+                options: ['全然', 'ぜんぜん', '決して', 'まったく'],
+                correctIndex: 2,
                 explanation: '這條路絕對不安全。'
             },
             {
                 id: 'n3_quiz_kesshite_nai_1_3',
                 sentence: '私{わたし}は（　）後悔{こうかい}しない。',
-                options: ['決して', '全然', 'まったく', 'ぜんぜん'],
+                options: ['決して', 'ぜんぜん', 'まったく', '全然'],
                 correctIndex: 0,
                 explanation: '我絕對不會後悔。'
             },
             {
                 id: 'n3_quiz_kesshite_nai_1_4',
                 sentence: '「信{しん}じていいの？」\n「うん、（　）嘘{うそ}じゃないよ。」',
-                options: ['決して', '全然', 'まったく', 'ぜんぜん'],
-                correctIndex: 0,
+                options: ['まったく', '決して', 'ぜんぜん', '全然'],
+                correctIndex: 1,
                 explanation: '對話情境。絕對不是謊話。'
             },
             {
                 id: 'n3_quiz_kesshite_nai_1_5',
                 sentence: '「もう会{あ}えないの？」\n「（　）そんなことないよ。また会{あ}おう。」',
-                options: ['決して', '全然', 'まったく', 'ぜんぜん'],
-                correctIndex: 0,
+                options: ['ぜんぜん', '決して', 'まったく', '全然'],
+                correctIndex: 1,
                 explanation: '對話情境。絕對不是那樣的。'
             }
         ]
@@ -3242,36 +3242,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kirenai_1',
                 sentence: 'お菓子{かし}が多{おお}すぎて食{た}べ（　）。',
-                options: ['きれない', 'おわらない', 'できない', 'しまわない'],
+                options: ['きれない', 'しまわない', 'できない', 'おわらない'],
                 correctIndex: 0,
                 explanation: '點心太多吃不完。'
             },
             {
                 id: 'n3_quiz_kirenai_2',
                 sentence: '彼女{かのじょ}への感謝{かんしゃ}は言{い}い（　）。',
-                options: ['きれない', 'おわらない', 'できない', 'しまわない'],
-                correctIndex: 0,
+                options: ['しまわない', 'できない', 'きれない', 'おわらない'],
+                correctIndex: 2,
                 explanation: '對她的感謝說不完。'
             },
             {
                 id: 'n3_quiz_kirenai_3',
                 sentence: '仕事{しごと}が多{おお}くて今日中{きょうじゅう}に終{お}わり（　）。',
-                options: ['きれない', 'おわらない', 'できない', 'しまわない'],
-                correctIndex: 0,
+                options: ['しまわない', 'おわらない', 'できない', 'きれない'],
+                correctIndex: 3,
                 explanation: '工作太多今天內做不完。'
             },
             {
                 id: 'n3_quiz_kirenai_4',
                 sentence: '「宿題{しゅくだい}終{お}わった？」\n「全部{ぜんぶ}はやり（　）よ。」',
-                options: ['きれない', 'おわらない', 'できない', 'しまわない'],
-                correctIndex: 0,
+                options: ['しまわない', 'きれない', 'おわらない', 'できない'],
+                correctIndex: 1,
                 explanation: '對話情境。全部做不完。'
             },
             {
                 id: 'n3_quiz_kirenai_5',
                 sentence: '「思{おも}い出{で}、覚{おぼ}えてる？」\n「もちろん。数{かぞ}え（　）ほどあるよ。」',
-                options: ['きれない', 'おわらない', 'できない', 'しまわない'],
-                correctIndex: 0,
+                options: ['しまわない', 'できない', 'おわらない', 'きれない'],
+                correctIndex: 3,
                 explanation: '對話情境。多到數不完。'
             }
         ]
@@ -3316,35 +3316,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kirenai_1_1',
                 sentence: 'この複雑{ふくざつ}な状況{じょうきょう}は把握{はあく}し（　）。',
-                options: ['きれない', 'おわらない', 'できない', 'しまわない'],
-                correctIndex: 0,
+                options: ['しまわない', 'できない', 'きれない', 'おわらない'],
+                correctIndex: 2,
                 explanation: '這複雜的情況無法完全掌握。'
             },
             {
                 id: 'n3_quiz_kirenai_1_2',
                 sentence: '彼{かれ}の気持{きも}ちを理解{りかい}し（　）。',
-                options: ['きれない', 'おわらない', 'できない', 'しまわない'],
-                correctIndex: 0,
+                options: ['おわらない', 'しまわない', 'きれない', 'できない'],
+                correctIndex: 2,
                 explanation: '無法完全理解他的心情。'
             },
             {
                 id: 'n3_quiz_kirenai_1_3',
                 sentence: 'こんなに大量{たいりょう}の情報{じょうほう}は覚{おぼ}え（　）。',
-                options: ['きれない', 'おわらない', 'できない', 'しまわない'],
-                correctIndex: 0,
+                options: ['おわらない', 'きれない', 'できない', 'しまわない'],
+                correctIndex: 1,
                 explanation: '這麼大量的資訊記不完。'
             },
             {
                 id: 'n3_quiz_kirenai_1_4',
                 sentence: '「この仕事{しごと}、引{ひ}き受{う}ける？」\n「責任{せきにん}が重{おも}すぎて負{お}い（　）よ。」',
-                options: ['きれない', 'おわらない', 'できない', 'しまわない'],
-                correctIndex: 0,
+                options: ['おわらない', 'できない', 'きれない', 'しまわない'],
+                correctIndex: 2,
                 explanation: '對話情境。責任太重承擔不起。'
             },
             {
                 id: 'n3_quiz_kirenai_1_5',
                 sentence: '「全員{ぜんいん}の意見{いけん}を聞{き}いた？」\n「多{おお}すぎて聞{き}き（　）よ。」',
-                options: ['きれない', 'おわらない', 'できない', 'しまわない'],
+                options: ['きれない', 'できない', 'しまわない', 'おわらない'],
                 correctIndex: 0,
                 explanation: '對話情境。太多人聽不完。'
             }
@@ -3390,36 +3390,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kiri_1',
                 sentence: '彼{かれ}とは一度{いちど}会{あ}った（　）だ。',
-                options: ['きり', 'だけ', 'ばかり', 'のみ'],
+                options: ['きり', 'だけ', 'のみ', 'ばかり'],
                 correctIndex: 0,
                 explanation: '和他只見過一次面。'
             },
             {
                 id: 'n3_quiz_kiri_2',
                 sentence: '母{はは}は入院{にゅういん}した（　）、まだ退院{たいいん}していない。',
-                options: ['きり', 'だけ', 'ばかり', 'のみ'],
-                correctIndex: 0,
+                options: ['だけ', 'ばかり', 'のみ', 'きり'],
+                correctIndex: 3,
                 explanation: '母親住院後還沒出院。'
             },
             {
                 id: 'n3_quiz_kiri_3',
                 sentence: '二人{ふたり}（　）で旅行{りょこう}に行{い}きたい。',
-                options: ['きり', 'だけ', 'ばかり', 'のみ'],
+                options: ['きり', 'ばかり', 'だけ', 'のみ'],
                 correctIndex: 0,
                 explanation: '想兩個人單獨去旅行。'
             },
             {
                 id: 'n3_quiz_kiri_4',
                 sentence: '「この本{ほん}、返{かえ}してくれた？」\n「あ、借{か}りた（　）だった。ごめん。」',
-                options: ['きり', 'だけ', 'ばかり', 'のみ'],
-                correctIndex: 0,
+                options: ['ばかり', 'のみ', 'だけ', 'きり'],
+                correctIndex: 3,
                 explanation: '對話情境。借了之後一直沒還。'
             },
             {
                 id: 'n3_quiz_kiri_5',
                 sentence: '「お兄{にい}さん、元気{げんき}？」\n「実{じつ}は、病気{びょうき}で寝{ね}た（　）なんだ。」',
-                options: ['きり', 'だけ', 'ばかり', 'のみ'],
-                correctIndex: 0,
+                options: ['のみ', 'きり', 'だけ', 'ばかり'],
+                correctIndex: 1,
                 explanation: '對話情境。生病後一直臥床。'
             }
         ]
@@ -3464,15 +3464,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kiru_1',
                 sentence: 'この本{ほん}を今週{こんしゅう}中{こんしゅうちゅう}に読{よ}み（　）たい。',
-                options: ['切り', '終わり', 'はじめ', 'かけ'],
-                correctIndex: 0,
+                options: ['終わり', 'かけ', 'はじめ', '切り'],
+                correctIndex: 3,
                 explanation: '想在這週內把這本書讀完。'
             },
             {
                 id: 'n3_quiz_kiru_2',
                 sentence: '彼{かれ}は自信{じしん}を持{も}って言{い}い（　）た。',
-                options: ['切っ', '終わっ', 'はじめ', 'かけ'],
-                correctIndex: 0,
+                options: ['終わっ', 'かけ', '切っ', 'はじめ'],
+                correctIndex: 2,
                 explanation: '他自信滿滿地斷言了。'
             },
             {
@@ -3485,15 +3485,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kiru_4',
                 sentence: '「試合{しあい}どうだった？」\n「最後{さいご}まで走{はし}り（　）たよ！」',
-                options: ['切っ', '終わっ', 'はじめ', 'かけ'],
-                correctIndex: 0,
+                options: ['終わっ', 'かけ', '切っ', 'はじめ'],
+                correctIndex: 2,
                 explanation: '對話情境。跑完全程了！'
             },
             {
                 id: 'n3_quiz_kiru_5',
                 sentence: '「あの店{みせ}、美味{おい}しい？」\n「絶対{ぜったい}美味{おい}しいと言{い}い（　）れるよ。」',
-                options: ['切', '終わ', 'はじめ', 'かけ'],
-                correctIndex: 0,
+                options: ['はじめ', '切', 'かけ', '終わ'],
+                correctIndex: 1,
                 explanation: '對話情境。可以肯定地說很好吃。'
             }
         ]
@@ -3538,36 +3538,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kiru_1_1',
                 sentence: 'お金{かね}を使{つか}い（　）てしまった。',
-                options: ['切っ', '終わっ', 'はじめ', 'かけ'],
-                correctIndex: 0,
+                options: ['終わっ', 'かけ', 'はじめ', '切っ'],
+                correctIndex: 3,
                 explanation: '把錢用光了。'
             },
             {
                 id: 'n3_quiz_kiru_1_2',
                 sentence: '彼{かれ}を信{しん}じ（　）ていた。',
-                options: ['切っ', '終わっ', 'はじめ', 'かけ'],
-                correctIndex: 0,
+                options: ['終わっ', '切っ', 'かけ', 'はじめ'],
+                correctIndex: 1,
                 explanation: '完全相信他。'
             },
             {
                 id: 'n3_quiz_kiru_1_3',
                 sentence: '電池{でんち}が切{き}れたので、使{つか}い（　）た。',
-                options: ['切っ', '終わっ', 'はじめ', 'かけ'],
-                correctIndex: 0,
+                options: ['はじめ', 'かけ', '切っ', '終わっ'],
+                correctIndex: 2,
                 explanation: '電池沒電了，用光了。'
             },
             {
                 id: 'n3_quiz_kiru_1_4',
                 sentence: '「その話{はなし}、本当{ほんとう}？」\n「うん、断言{だんげん}し（　）れるよ。」',
-                options: ['切', '終わ', 'はじめ', 'かけ'],
-                correctIndex: 0,
+                options: ['はじめ', 'かけ', '切', '終わ'],
+                correctIndex: 2,
                 explanation: '對話情境。可以斷言。'
             },
             {
                 id: 'n3_quiz_kiru_1_5',
                 sentence: '「疲{つか}れた？」\n「うん、もう体力{たいりょく}を使{つか}い（　）たよ。」',
-                options: ['切っ', '終わっ', 'はじめ', 'かけ'],
-                correctIndex: 0,
+                options: ['かけ', '終わっ', '切っ', 'はじめ'],
+                correctIndex: 2,
                 explanation: '對話情境。體力用盡了。'
             }
         ]
@@ -3612,35 +3612,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kke_1',
                 sentence: 'あの人{ひと}の名前{なまえ}、何{なん}だ（　）？',
-                options: ['っけ', 'かな', 'だろう', 'よね'],
-                correctIndex: 0,
+                options: ['よね', 'だろう', 'かな', 'っけ'],
+                correctIndex: 3,
                 explanation: '那個人的名字叫什麼來著？'
             },
             {
                 id: 'n3_quiz_kke_2',
                 sentence: '今日{きょう}、何曜日{なんようび}だ（　）？',
-                options: ['っけ', 'かな', 'だろう', 'よね'],
-                correctIndex: 0,
+                options: ['かな', 'だろう', 'っけ', 'よね'],
+                correctIndex: 2,
                 explanation: '今天星期幾來著？'
             },
             {
                 id: 'n3_quiz_kke_3',
                 sentence: 'この単語{たんご}、どういう意味{いみ}だ（　）？',
-                options: ['っけ', 'かな', 'だろう', 'よね'],
-                correctIndex: 0,
+                options: ['だろう', 'かな', 'よね', 'っけ'],
+                correctIndex: 3,
                 explanation: '這個單字是什麼意思來著？'
             },
             {
                 id: 'n3_quiz_kke_4',
                 sentence: '「電話番号{でんわばんごう}、何番{なんばん}だ（　）？」\n「090から始{はじ}まるやつだよ。」',
-                options: ['っけ', 'かな', 'だろう', 'よね'],
-                correctIndex: 0,
+                options: ['かな', 'っけ', 'よね', 'だろう'],
+                correctIndex: 1,
                 explanation: '對話情境。電話號碼是多少來著？'
             },
             {
                 id: 'n3_quiz_kke_5',
                 sentence: '「あれ、カギ、どこに置{お}いたっ（　）？」\n「テーブルの上{うえ}じゃない？」',
-                options: ['け', 'かな', 'だろう', 'よね'],
+                options: ['け', 'よね', 'だろう', 'かな'],
                 correctIndex: 0,
                 explanation: '對話情境。鑰匙放哪裡來著？'
             }
@@ -3686,29 +3686,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_komu_1',
                 sentence: '彼女{かのじょ}は急{きゅう}に泣{な}き（　）んだ。',
-                options: ['込', '出し', '始め', '続け'],
-                correctIndex: 0,
+                options: ['始め', '出し', '込', '続け'],
+                correctIndex: 2,
                 explanation: '她突然哭了起來（哭得很深入）。'
             },
             {
                 id: 'n3_quiz_komu_2',
                 sentence: '彼{かれ}は黙{だま}り（　）んでしまった。',
-                options: ['込', '出し', '始め', '続け'],
-                correctIndex: 0,
+                options: ['出し', '込', '続け', '始め'],
+                correctIndex: 1,
                 explanation: '他沉默不語了。'
             },
             {
                 id: 'n3_quiz_komu_3',
                 sentence: '荷物{にもつ}を車{くるま}に積{つ}み（　）む。',
-                options: ['込', '出し', '始め', '続け'],
-                correctIndex: 0,
+                options: ['続け', '出し', '始め', '込'],
+                correctIndex: 3,
                 explanation: '把行李裝進車裡。'
             },
             {
                 id: 'n3_quiz_komu_4',
                 sentence: '「どうしてそんなに悩{なや}んでるの？」\n「考{かんが}え（　）んでしまってね。」',
-                options: ['込', '出し', '始め', '続け'],
-                correctIndex: 0,
+                options: ['始め', '続け', '込', '出し'],
+                correctIndex: 2,
                 explanation: '對話情境。陷入沉思了。'
             },
             {
@@ -3760,29 +3760,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_koso_1',
                 sentence: '今年{ことし}（　）日本語{にほんご}を上手{じょうず}になりたい。',
-                options: ['こそ', 'だけ', 'しか', 'ばかり'],
-                correctIndex: 0,
+                options: ['しか', 'だけ', 'ばかり', 'こそ'],
+                correctIndex: 3,
                 explanation: '今年一定要把日語學好。'
             },
             {
                 id: 'n3_quiz_koso_2',
                 sentence: '失敗{しっぱい}して（　）分{わ}かることもある。',
-                options: ['こそ', 'だけ', 'しか', 'ばかり'],
-                correctIndex: 0,
+                options: ['ばかり', 'こそ', 'だけ', 'しか'],
+                correctIndex: 1,
                 explanation: '正因為失敗才能明白的事情也有。'
             },
             {
                 id: 'n3_quiz_koso_3',
                 sentence: 'あなた（　）リーダーにふさわしい。',
-                options: ['こそ', 'だけ', 'しか', 'ばかり'],
+                options: ['こそ', 'ばかり', 'だけ', 'しか'],
                 correctIndex: 0,
                 explanation: '正是你才適合當領導。'
             },
             {
                 id: 'n3_quiz_koso_4',
                 sentence: '「お疲{つか}れ様{さま}でした。」\n「こちら（　）。」',
-                options: ['こそ', 'だけ', 'しか', 'ばかり'],
-                correctIndex: 0,
+                options: ['だけ', 'しか', 'ばかり', 'こそ'],
+                correctIndex: 3,
                 explanation: '對話情境。我才要說辛苦了。'
             },
             {
@@ -3834,14 +3834,14 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_koto_1',
                 sentence: '試験中{しけんちゅう}は私語{しご}をしない（　）。',
-                options: ['こと', 'もの', 'はず', 'べき'],
+                options: ['こと', 'はず', 'べき', 'もの'],
                 correctIndex: 0,
                 explanation: '考試中不可交談。'
             },
             {
                 id: 'n3_quiz_koto_2',
                 sentence: 'レポートは金曜日{きんようび}までに提出{ていしゅつ}する（　）。',
-                options: ['こと', 'もの', 'はず', 'べき'],
+                options: ['こと', 'もの', 'べき', 'はず'],
                 correctIndex: 0,
                 explanation: '報告必須在週五前提交。'
             },
@@ -3855,14 +3855,14 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_koto_4',
                 sentence: '「注意事項{ちゅういじこう}、読{よ}んだ？」\n「うん、騒{さわ}がない（　）って書{か}いてあったよ。」',
-                options: ['こと', 'もの', 'はず', 'べき'],
-                correctIndex: 0,
+                options: ['はず', 'もの', 'こと', 'べき'],
+                correctIndex: 2,
                 explanation: '對話情境。上面寫著不可喧嘩。'
             },
             {
                 id: 'n3_quiz_koto_5',
                 sentence: '「このジム{じむ}、ルール厳{きび}しい？」\n「うん、靴{くつ}を履{は}き替{か}える（　）、って。」',
-                options: ['こと', 'もの', 'はず', 'べき'],
+                options: ['こと', 'べき', 'もの', 'はず'],
                 correctIndex: 0,
                 explanation: '對話情境。必須換鞋。'
             }
@@ -3908,36 +3908,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_koto_kara_1',
                 sentence: '丸{まる}い形{かたち}をしている（　）、この花{はな}は「まり」と呼{よ}ばれている。',
-                options: ['ことから', 'ために', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['から', 'ので', 'ことから', 'ために'],
+                correctIndex: 2,
                 explanation: '因為是圓形的，這朵花被稱為「毬」。'
             },
             {
                 id: 'n3_quiz_koto_kara_2',
                 sentence: '彼{かれ}が遅{おく}れた（　）、計画{けいかく}を変更{へんこう}した。',
-                options: ['ことから', 'ために', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ために', 'から', 'ので', 'ことから'],
+                correctIndex: 3,
                 explanation: '因為他遲到了，計畫做了變更。'
             },
             {
                 id: 'n3_quiz_koto_kara_3',
                 sentence: '人気{にんき}がある（　）、この店{みせ}はいつも混{こ}んでいる。',
-                options: ['ことから', 'ために', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ために', 'から', 'ので', 'ことから'],
+                correctIndex: 3,
                 explanation: '因為很受歡迎，這家店總是很擁擠。'
             },
             {
                 id: 'n3_quiz_koto_kara_4',
                 sentence: '「なんでこの町{まち}は「桜{さくら}町{まち}」って言{い}うの？」\n「桜{さくら}がたくさんある（　）だって。」',
-                options: ['ことから', 'ために', 'ので', 'から'],
+                options: ['ことから', 'ために', 'から', 'ので'],
                 correctIndex: 0,
                 explanation: '對話情境。因為有很多櫻花。'
             },
             {
                 id: 'n3_quiz_koto_kara_5',
                 sentence: '「この人{ひと}、どうして有名{ゆうめい}なの？」\n「若{わか}くして成功{せいこう}した（　）だよ。」',
-                options: ['ことから', 'ために', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ので', 'から', 'ことから', 'ために'],
+                correctIndex: 2,
                 explanation: '對話情境。因為年輕時就成功了。'
             }
         ]
@@ -3982,36 +3982,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_koto_ni_natteiru_1',
                 sentence: '社員{しゃいん}は8時{じ}半{はん}までに出社{しゅっしゃ}する（　）。',
-                options: ['ことになっている', 'ことにしている', 'ことがある', 'ことができる'],
-                correctIndex: 0,
+                options: ['ことができる', 'ことがある', 'ことにしている', 'ことになっている'],
+                correctIndex: 3,
                 explanation: '員工按規定要在8點半前到公司。'
             },
             {
                 id: 'n3_quiz_koto_ni_natteiru_2',
                 sentence: 'この建物{たてもの}では喫煙{きつえん}しない（　）。',
-                options: ['ことになっている', 'ことにしている', 'ことがある', 'ことができる'],
-                correctIndex: 0,
+                options: ['ことにしている', 'ことがある', 'ことができる', 'ことになっている'],
+                correctIndex: 3,
                 explanation: '這棟建築物按規定不能抽菸。'
             },
             {
                 id: 'n3_quiz_koto_ni_natteiru_3',
                 sentence: '来月{らいげつ}から新{あたら}しいシステムを使{つか}う（　）。',
-                options: ['ことになっている', 'ことにしている', 'ことがある', 'ことができる'],
-                correctIndex: 0,
+                options: ['ことができる', 'ことにしている', 'ことがある', 'ことになっている'],
+                correctIndex: 3,
                 explanation: '下個月開始要使用新系統。'
             },
             {
                 id: 'n3_quiz_koto_ni_natteiru_4',
                 sentence: '「制服{せいふく}、着{き}なくていいの？」\n「いや、毎日{まいにち}着{き}る（　）よ。」',
-                options: ['ことになっている', 'ことにしている', 'ことがある', 'ことができる'],
-                correctIndex: 0,
+                options: ['ことにしている', 'ことがある', 'ことができる', 'ことになっている'],
+                correctIndex: 3,
                 explanation: '對話情境。按規定每天要穿。'
             },
             {
                 id: 'n3_quiz_koto_ni_natteiru_5',
                 sentence: '「あの部屋{へや}、入{はい}れる？」\n「関係者{かんけいしゃ}以外{いがい}は入{はい}らない（　）。」',
-                options: ['ことになっている', 'ことにしている', 'ことがある', 'ことができる'],
-                correctIndex: 0,
+                options: ['ことができる', 'ことがある', 'ことになっている', 'ことにしている'],
+                correctIndex: 2,
                 explanation: '對話情境。按規定非相關人員不能進入。'
             }
         ]
@@ -4056,15 +4056,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_koto_wa_nai_1',
                 sentence: 'そんなに怒{おこ}る（　）。',
-                options: ['ことはない', 'ことがない', 'ことにする', 'ことになる'],
-                correctIndex: 0,
+                options: ['ことになる', 'ことがない', 'ことにする', 'ことはない'],
+                correctIndex: 3,
                 explanation: '不用那麼生氣。'
             },
             {
                 id: 'n3_quiz_koto_wa_nai_2',
                 sentence: '今{いま}決{き}める（　）よ。ゆっくり考{かんが}えて。',
-                options: ['ことはない', 'ことがない', 'ことにする', 'ことになる'],
-                correctIndex: 0,
+                options: ['ことにする', 'ことになる', 'ことはない', 'ことがない'],
+                correctIndex: 2,
                 explanation: '不用現在決定。慢慢想。'
             },
             {
@@ -4077,14 +4077,14 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_koto_wa_nai_4',
                 sentence: '「遅{おく}れてすみません。」\n「謝{あやま}る（　）よ。大丈夫{だいじょうぶ}。」',
-                options: ['ことはない', 'ことがない', 'ことにする', 'ことになる'],
-                correctIndex: 0,
+                options: ['ことにする', 'ことになる', 'ことがない', 'ことはない'],
+                correctIndex: 3,
                 explanation: '對話情境。不用道歉。'
             },
             {
                 id: 'n3_quiz_koto_wa_nai_5',
                 sentence: '「一人{ひとり}で全部{ぜんぶ}やらなきゃ。」\n「そんなに頑張{がんば}る（　）。手伝{てつだ}うよ。」',
-                options: ['ことはない', 'ことがない', 'ことにする', 'ことになる'],
+                options: ['ことはない', 'ことになる', 'ことがない', 'ことにする'],
                 correctIndex: 0,
                 explanation: '對話情境。不用那麼拼命。'
             }
@@ -4130,35 +4130,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_koto_wa_ga_1',
                 sentence: '読{よ}む（　）読{よ}んだが、難{むずか}しかった。',
-                options: ['ことは', 'ものは', 'わけは', 'はずは'],
-                correctIndex: 0,
+                options: ['ものは', 'わけは', 'はずは', 'ことは'],
+                correctIndex: 3,
                 explanation: '讀是讀了，但很難。'
             },
             {
                 id: 'n3_quiz_koto_wa_ga_2',
                 sentence: '作{つく}る（　）作{つく}ったが、失敗{しっぱい}した。',
-                options: ['ことは', 'ものは', 'わけは', 'はずは'],
-                correctIndex: 0,
+                options: ['わけは', 'はずは', 'ものは', 'ことは'],
+                correctIndex: 3,
                 explanation: '做是做了，但失敗了。'
             },
             {
                 id: 'n3_quiz_koto_wa_ga_3',
                 sentence: '買{か}う（　）買{か}ったが、使{つか}っていない。',
-                options: ['ことは', 'ものは', 'わけは', 'はずは'],
-                correctIndex: 0,
+                options: ['わけは', 'ことは', 'ものは', 'はずは'],
+                correctIndex: 1,
                 explanation: '買是買了，但沒在用。'
             },
             {
                 id: 'n3_quiz_koto_wa_ga_4',
                 sentence: '「料理{りょうり}できる？」\n「できる（　）できるけど、得意{とくい}じゃない。」',
-                options: ['ことは', 'ものは', 'わけは', 'はずは'],
-                correctIndex: 0,
+                options: ['わけは', 'ものは', 'ことは', 'はずは'],
+                correctIndex: 2,
                 explanation: '對話情境。會是會，但不擅長。'
             },
             {
                 id: 'n3_quiz_koto_wa_ga_5',
                 sentence: '「彼{かれ}と話{はな}した？」\n「話{はな}す（　）話{はな}したけど、あまり話{はな}せなかった。」',
-                options: ['ことは', 'ものは', 'わけは', 'はずは'],
+                options: ['ことは', 'ものは', 'はずは', 'わけは'],
                 correctIndex: 0,
                 explanation: '對話情境。說是說了，但沒說太多。'
             }
@@ -4204,36 +4204,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kurai_1',
                 sentence: '10分{ぷん}（　）で終{お}わります。',
-                options: ['ぐらい', 'ほど', 'だけ', 'しか'],
-                correctIndex: 0,
+                options: ['しか', 'だけ', 'ぐらい', 'ほど'],
+                correctIndex: 2,
                 explanation: '大約10分鐘會結束。'
             },
             {
                 id: 'n3_quiz_kurai_2',
                 sentence: '倒{たお}れる（　）疲{つか}れた。',
-                options: ['くらい', 'ほど', 'だけ', 'しか'],
+                options: ['くらい', 'しか', 'ほど', 'だけ'],
                 correctIndex: 0,
                 explanation: '累到快倒下。'
             },
             {
                 id: 'n3_quiz_kurai_3',
                 sentence: 'このくらいの問題{もんだい}は自分{じぶん}で解{と}けるはずだ。',
-                options: ['くらい', 'ほど', 'だけ', 'しか'],
-                correctIndex: 0,
+                options: ['しか', 'ほど', 'だけ', 'くらい'],
+                correctIndex: 3,
                 explanation: '這種程度的問題應該自己能解。'
             },
             {
                 id: 'n3_quiz_kurai_4',
                 sentence: '「何人{なんにん}来{く}る？」\n「20人{にん}（　）だと思{おも}う。」',
-                options: ['ぐらい', 'ほど', 'だけ', 'しか'],
-                correctIndex: 0,
+                options: ['ほど', 'だけ', 'しか', 'ぐらい'],
+                correctIndex: 3,
                 explanation: '對話情境。大概20人左右。'
             },
             {
                 id: 'n3_quiz_kurai_5',
                 sentence: '「その仕事{しごと}、どの（　）かかる？」\n「3日{みっか}はかかるかな。」',
-                options: ['くらい', 'ほど', 'だけ', 'しか'],
-                correctIndex: 0,
+                options: ['だけ', 'くらい', 'しか', 'ほど'],
+                correctIndex: 1,
                 explanation: '對話情境。那工作要多久？'
             }
         ]
@@ -4278,15 +4278,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kuse_ni_1',
                 sentence: '金{かね}がない（　）、高{たか}いものを買{か}う。',
-                options: ['くせに', 'のに', 'ても', 'から'],
+                options: ['くせに', 'ても', 'から', 'のに'],
                 correctIndex: 0,
                 explanation: '明明沒錢，還買貴的東西。'
             },
             {
                 id: 'n3_quiz_kuse_ni_2',
                 sentence: '自分{じぶん}でやらない（　）、文句{もんく}ばかり言{い}う。',
-                options: ['くせに', 'のに', 'ても', 'から'],
-                correctIndex: 0,
+                options: ['のに', 'くせに', 'から', 'ても'],
+                correctIndex: 1,
                 explanation: '明明自己不做，卻老是抱怨。'
             },
             {
@@ -4299,15 +4299,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_kuse_ni_4',
                 sentence: '「彼{かれ}、すぐ疲{つか}れたって言{い}うよね。」\n「若{わか}い（　）、体力{たいりょく}ないね。」',
-                options: ['くせに', 'のに', 'ても', 'から'],
-                correctIndex: 0,
+                options: ['から', 'ても', 'くせに', 'のに'],
+                correctIndex: 2,
                 explanation: '對話情境。明明年輕卻沒體力。'
             },
             {
                 id: 'n3_quiz_kuse_ni_5',
                 sentence: '「あの人{ひと}、いつも威張{いば}ってるよね。」\n「何{なに}も知{し}らない（　）ね。」',
-                options: ['くせに', 'のに', 'ても', 'から'],
-                correctIndex: 0,
+                options: ['から', 'ても', 'くせに', 'のに'],
+                correctIndex: 2,
                 explanation: '對話情境。明明什麼都不知道。'
             }
         ]
@@ -4352,36 +4352,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_maru_de_1',
                 sentence: '（　）春{はる}が来{き}たようだ。',
-                options: ['まるで', 'たぶん', 'きっと', 'もしかして'],
-                correctIndex: 0,
+                options: ['きっと', 'まるで', 'もしかして', 'たぶん'],
+                correctIndex: 1,
                 explanation: '簡直像春天來了一樣。'
             },
             {
                 id: 'n3_quiz_maru_de_2',
                 sentence: '彼女{かのじょ}は（　）人形{にんぎょう}のように美{うつく}しい。',
-                options: ['まるで', 'たぶん', 'きっと', 'もしかして'],
-                correctIndex: 0,
+                options: ['たぶん', 'もしかして', 'きっと', 'まるで'],
+                correctIndex: 3,
                 explanation: '她像人偶一樣美麗。'
             },
             {
                 id: 'n3_quiz_maru_de_3',
                 sentence: '（　）嘘{うそ}のような本当{ほんとう}の話{はなし}だ。',
-                options: ['まるで', 'たぶん', 'きっと', 'もしかして'],
-                correctIndex: 0,
+                options: ['たぶん', 'もしかして', 'きっと', 'まるで'],
+                correctIndex: 3,
                 explanation: '這是像假的一樣的真實故事。'
             },
             {
                 id: 'n3_quiz_maru_de_4',
                 sentence: '「この肉{にく}、柔{やわ}らかいね。」\n「（　）バターみたいだね。」',
-                options: ['まるで', 'たぶん', 'きっと', 'もしかして'],
-                correctIndex: 0,
+                options: ['もしかして', 'きっと', 'まるで', 'たぶん'],
+                correctIndex: 2,
                 explanation: '對話情境。簡直像奶油一樣。'
             },
             {
                 id: 'n3_quiz_maru_de_5',
                 sentence: '「彼{かれ}、変{か}わったね。」\n「うん、（　）別人{べつじん}みたいだ。」',
-                options: ['まるで', 'たぶん', 'きっと', 'もしかして'],
-                correctIndex: 0,
+                options: ['もしかして', 'きっと', 'まるで', 'たぶん'],
+                correctIndex: 2,
                 explanation: '對話情境。簡直像換了一個人。'
             }
         ]
@@ -4426,36 +4426,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_masaka_1',
                 sentence: '（　）彼{かれ}が嘘{うそ}をつくとは思{おも}わなかった。',
-                options: ['まさか', 'きっと', 'たぶん', 'もしかして'],
-                correctIndex: 0,
+                options: ['きっと', 'まさか', 'もしかして', 'たぶん'],
+                correctIndex: 1,
                 explanation: '沒想到他竟然會說謊。'
             },
             {
                 id: 'n3_quiz_masaka_2',
                 sentence: '（　）！信{しん}じられない。',
-                options: ['まさか', 'きっと', 'たぶん', 'もしかして'],
+                options: ['まさか', 'もしかして', 'きっと', 'たぶん'],
                 correctIndex: 0,
                 explanation: '不會吧！難以置信。'
             },
             {
                 id: 'n3_quiz_masaka_3',
                 sentence: '（　）試験{しけん}に落{お}ちるとは。',
-                options: ['まさか', 'きっと', 'たぶん', 'もしかして'],
-                correctIndex: 0,
+                options: ['きっと', 'たぶん', 'まさか', 'もしかして'],
+                correctIndex: 2,
                 explanation: '沒想到考試竟然不及格。'
             },
             {
                 id: 'n3_quiz_masaka_4',
                 sentence: '「宝{たから}くじ当{あ}たったって！」\n「（　）！嘘{うそ}でしょ？」',
-                options: ['まさか', 'きっと', 'たぶん', 'もしかして'],
-                correctIndex: 0,
+                options: ['きっと', 'まさか', 'たぶん', 'もしかして'],
+                correctIndex: 1,
                 explanation: '對話情境。不會吧！騙人的吧？'
             },
             {
                 id: 'n3_quiz_masaka_5',
                 sentence: '「明日{あした}、試験{しけん}だって。」\n「（　）、知{し}らなかった！」',
-                options: ['まさか', 'きっと', 'たぶん', 'もしかして'],
-                correctIndex: 0,
+                options: ['きっと', 'たぶん', 'もしかして', 'まさか'],
+                correctIndex: 3,
                 explanation: '對話情境。不會吧，我不知道！'
             }
         ]
@@ -4500,36 +4500,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_metta_ni_nai_1',
                 sentence: '彼{かれ}は（　）泣{な}かない人{ひと}だ。',
-                options: ['めったに', 'たまに', 'いつも', 'よく'],
-                correctIndex: 0,
+                options: ['たまに', 'よく', 'めったに', 'いつも'],
+                correctIndex: 2,
                 explanation: '他是很少哭的人。'
             },
             {
                 id: 'n3_quiz_metta_ni_nai_2',
                 sentence: 'こんな美{うつく}しい景色{けしき}は（　）見{み}られない。',
-                options: ['めったに', 'たまに', 'いつも', 'よく'],
-                correctIndex: 0,
+                options: ['よく', 'たまに', 'めったに', 'いつも'],
+                correctIndex: 2,
                 explanation: '這麼美的景色很少能看到。'
             },
             {
                 id: 'n3_quiz_metta_ni_nai_3',
                 sentence: '私{わたし}は（　）外食{がいしょく}しない。',
-                options: ['めったに', 'たまに', 'いつも', 'よく'],
-                correctIndex: 0,
+                options: ['よく', 'めったに', 'たまに', 'いつも'],
+                correctIndex: 1,
                 explanation: '我很少外食。'
             },
             {
                 id: 'n3_quiz_metta_ni_nai_4',
                 sentence: '「映画館{えいがかん}行{い}く？」\n「（　）行{い}かないなあ。」',
-                options: ['めったに', 'たまに', 'いつも', 'よく'],
-                correctIndex: 0,
+                options: ['よく', 'めったに', 'たまに', 'いつも'],
+                correctIndex: 1,
                 explanation: '對話情境。很少去呢。'
             },
             {
                 id: 'n3_quiz_metta_ni_nai_5',
                 sentence: '「この店{みせ}、高{たか}いでしょ？」\n「うん、（　）来{こ}ないよ。」',
-                options: ['めったに', 'たまに', 'いつも', 'よく'],
-                correctIndex: 0,
+                options: ['たまに', 'いつも', 'よく', 'めったに'],
+                correctIndex: 3,
                 explanation: '對話情境。嗯，很少來。'
             }
         ]
@@ -4581,29 +4581,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_moshika_shitara_2',
                 sentence: '（　）、彼女{かのじょ}は怒{おこ}っているかもしれない。',
-                options: ['もしかしたら', 'きっと', 'たぶん', 'ぜひ'],
-                correctIndex: 0,
+                options: ['たぶん', 'きっと', 'ぜひ', 'もしかしたら'],
+                correctIndex: 3,
                 explanation: '說不定她在生氣。'
             },
             {
                 id: 'n3_quiz_moshika_shitara_3',
                 sentence: '（　）、間{ま}に合{あ}わないかもしれない。',
-                options: ['もしかしたら', 'きっと', 'たぶん', 'ぜひ'],
+                options: ['もしかしたら', 'ぜひ', 'たぶん', 'きっと'],
                 correctIndex: 0,
                 explanation: '說不定來不及。'
             },
             {
                 id: 'n3_quiz_moshika_shitara_4',
                 sentence: '「あの人{ひと}、見覚{みおぼ}えある。」\n「（　）、同{おな}じ学校{がっこう}だったかも。」',
-                options: ['もしかしたら', 'きっと', 'たぶん', 'ぜひ'],
-                correctIndex: 0,
+                options: ['きっと', 'ぜひ', 'もしかしたら', 'たぶん'],
+                correctIndex: 2,
                 explanation: '對話情境。說不定是同校的。'
             },
             {
                 id: 'n3_quiz_moshika_shitara_5',
                 sentence: '「彼{かれ}、遅{おく}れてるね。」\n「（　）、道{みち}に迷{まよ}ってるのかも。」',
-                options: ['もしかしたら', 'きっと', 'たぶん', 'ぜひ'],
-                correctIndex: 0,
+                options: ['きっと', 'ぜひ', 'もしかしたら', 'たぶん'],
+                correctIndex: 2,
                 explanation: '對話情境。說不定迷路了。'
             }
         ]
@@ -4648,35 +4648,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_moshimo_tara_1',
                 sentence: '（　）タイムマシンがあったら、過去{かこ}に戻{もど}りたい。',
-                options: ['もしも', 'もし', 'たとえ', 'いくら'],
-                correctIndex: 0,
+                options: ['いくら', 'もし', 'もしも', 'たとえ'],
+                correctIndex: 2,
                 explanation: '假如有時光機的話，想回到過去。'
             },
             {
                 id: 'n3_quiz_moshimo_tara_2',
                 sentence: '（　）世界中{せかいじゅう}どこでも行{い}けたら、どこに行{い}く？',
-                options: ['もしも', 'もし', 'たとえ', 'いくら'],
-                correctIndex: 0,
+                options: ['もし', 'たとえ', 'もしも', 'いくら'],
+                correctIndex: 2,
                 explanation: '假如能去世界任何地方的話，你會去哪裡？'
             },
             {
                 id: 'n3_quiz_moshimo_tara_3',
                 sentence: '（　）やり直{なお}せたら、もっと勉強{べんきょう}するのに。',
-                options: ['もしも', 'もし', 'たとえ', 'いくら'],
-                correctIndex: 0,
+                options: ['もし', 'もしも', 'たとえ', 'いくら'],
+                correctIndex: 1,
                 explanation: '假如能重來的話，會更用功讀書。'
             },
             {
                 id: 'n3_quiz_moshimo_tara_4',
                 sentence: '「（　）魔法{まほう}が使{つか}えたら？」\n「透明人間{とうめいにんげん}になりたい！」',
-                options: ['もしも', 'もし', 'たとえ', 'いくら'],
-                correctIndex: 0,
+                options: ['いくら', 'たとえ', 'もしも', 'もし'],
+                correctIndex: 2,
                 explanation: '對話情境。假如能使用魔法的話？'
             },
             {
                 id: 'n3_quiz_moshimo_tara_5',
                 sentence: '「（　）生{う}まれ変{か}わったら、何{なに}になりたい？」\n「鳥{とり}になって空{そら}を飛{と}びたい。」',
-                options: ['もしも', 'もし', 'たとえ', 'いくら'],
+                options: ['もしも', 'いくら', 'もし', 'たとえ'],
                 correctIndex: 0,
                 explanation: '對話情境。假如能重生的話，想成為什麼？'
             }
@@ -4722,35 +4722,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_mo_ba_mo_1',
                 sentence: 'この店{みせ}は安{やす}く（　）あれば、美味{おい}しくもある。',
-                options: ['も', 'は', 'が', 'を'],
-                correctIndex: 0,
+                options: ['は', 'を', 'も', 'が'],
+                correctIndex: 2,
                 explanation: '這家店既便宜又好吃。'
             },
             {
                 id: 'n3_quiz_mo_ba_mo_2',
                 sentence: '彼{かれ}は勉強{べんきょう}（　）できれば、スポーツもできる。',
-                options: ['も', 'は', 'が', 'を'],
-                correctIndex: 0,
+                options: ['を', 'は', 'が', 'も'],
+                correctIndex: 3,
                 explanation: '他讀書也行，運動也行。'
             },
             {
                 id: 'n3_quiz_mo_ba_mo_3',
                 sentence: 'ピアノ（　）弾{ひ}ければ、ギターも弾{ひ}ける。',
-                options: ['も', 'は', 'が', 'を'],
-                correctIndex: 0,
+                options: ['が', 'を', 'は', 'も'],
+                correctIndex: 3,
                 explanation: '鋼琴能彈，吉他也能彈。'
             },
             {
                 id: 'n3_quiz_mo_ba_mo_4',
                 sentence: '「あの人{ひと}、何{なん}でもできるよね。」\n「うん、料理{りょうり}（　）上手{じょうず}ければ、掃除{そうじ}も上手{じょうず}だ。」',
-                options: ['も', 'は', 'が', 'を'],
-                correctIndex: 0,
+                options: ['は', 'を', 'も', 'が'],
+                correctIndex: 2,
                 explanation: '對話情境。做菜好，打掃也好。'
             },
             {
                 id: 'n3_quiz_mo_ba_mo_5',
                 sentence: '「彼{かれ}って才能{さいのう}あるよね。」\n「絵{え}（　）描{か}ければ、音楽{おんがく}もできるんだって。」',
-                options: ['も', 'は', 'が', 'を'],
+                options: ['も', 'が', 'は', 'を'],
                 correctIndex: 0,
                 explanation: '對話情境。會畫畫，音樂也行。'
             }
@@ -4796,15 +4796,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_muke_1',
                 sentence: 'これは外国人{がいこくじん}（　）の日本語{にほんご}教材{きょうざい}です。',
-                options: ['向け', '向き', 'むき', 'むかい'],
-                correctIndex: 0,
+                options: ['向き', 'むかい', 'むき', '向け'],
+                correctIndex: 3,
                 explanation: '這是面向外國人的日語教材。'
             },
             {
                 id: 'n3_quiz_muke_2',
                 sentence: '女性{じょせい}（　）の雑誌{ざっし}がたくさんあります。',
-                options: ['向け', '向き', 'ため', 'らしい'],
-                correctIndex: 0,
+                options: ['ため', '向き', 'らしい', '向け'],
+                correctIndex: 3,
                 explanation: '有很多面向女性的雜誌。'
             },
             {
@@ -4817,8 +4817,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_muke_4',
                 sentence: '「この番組{ばんぐみ}、面白{おもしろ}いね。」\n「うん、若者{わかもの}（　）に作{つく}られたんだって。」',
-                options: ['向け', '向き', 'ため', 'よう'],
-                correctIndex: 0,
+                options: ['よう', '向き', '向け', 'ため'],
+                correctIndex: 2,
                 explanation: '對話情境。聽說是為年輕人設計的。'
             },
             {
@@ -4870,36 +4870,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_muke_1_1',
                 sentence: 'このアニメは大人{おとな}（　）の内容{ないよう}です。',
-                options: ['向け', '向き', 'ため', 'よう'],
-                correctIndex: 0,
+                options: ['向き', '向け', 'よう', 'ため'],
+                correctIndex: 1,
                 explanation: '這部動畫的內容是面向成人的。'
             },
             {
                 id: 'n3_quiz_muke_1_2',
                 sentence: '海外{かいがい}市場{しじょう}（　）の製品{せいひん}を開発{かいはつ}しました。',
-                options: ['向け', '向き', 'むかい', 'あて'],
+                options: ['向け', '向き', 'あて', 'むかい'],
                 correctIndex: 0,
                 explanation: '開發了面向海外市場的產品。'
             },
             {
                 id: 'n3_quiz_muke_1_3',
                 sentence: '観光客{かんこうきゃく}（　）のパンフレットを作{つく}りました。',
-                options: ['向け', '向き', 'ため', 'らしい'],
-                correctIndex: 0,
+                options: ['向き', 'らしい', 'ため', '向け'],
+                correctIndex: 3,
                 explanation: '製作了面向遊客的宣傳冊。'
             },
             {
                 id: 'n3_quiz_muke_1_4',
                 sentence: '「このコース、簡単{かんたん}だね。」\n「初心者{しょしんしゃ}（　）だからね。」',
-                options: ['向け', '向き', 'ため', 'みたい'],
-                correctIndex: 0,
+                options: ['向き', 'ため', '向け', 'みたい'],
+                correctIndex: 2,
                 explanation: '對話情境。因為是面向初學者的。'
             },
             {
                 id: 'n3_quiz_muke_1_5',
                 sentence: '「この化粧品{けしょうひん}、評判{ひょうばん}いいね。」\n「敏感肌{びんかんはだ}（　）に開発{かいはつ}されたんだって。」',
-                options: ['向け', '向き', 'ため', 'よう'],
-                correctIndex: 0,
+                options: ['ため', 'よう', '向け', '向き'],
+                correctIndex: 2,
                 explanation: '對話情境。聽說是專為敏感肌開發的。'
             }
         ]
@@ -4944,36 +4944,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_muki_1',
                 sentence: 'この仕事{しごと}は体力{たいりょく}がある人{ひと}（　）です。',
-                options: ['向き', '向け', 'ため', 'らしい'],
-                correctIndex: 0,
+                options: ['らしい', '向き', '向け', 'ため'],
+                correctIndex: 1,
                 explanation: '這份工作適合有體力的人。'
             },
             {
                 id: 'n3_quiz_muki_2',
                 sentence: '東{ひがし}（　）の部屋{へや}は朝日{あさひ}が入{はい}ります。',
-                options: ['向き', '向け', 'むかい', 'あて'],
+                options: ['向き', '向け', 'あて', 'むかい'],
                 correctIndex: 0,
                 explanation: '朝東的房間有朝陽照入。'
             },
             {
                 id: 'n3_quiz_muki_3',
                 sentence: 'この料理{りょうり}は辛{から}いものが好{す}きな人{ひと}（　）です。',
-                options: ['向き', '向け', 'ため', 'よう'],
-                correctIndex: 0,
+                options: ['ため', 'よう', '向け', '向き'],
+                correctIndex: 3,
                 explanation: '這道菜適合喜歡辣的人。'
             },
             {
                 id: 'n3_quiz_muki_4',
                 sentence: '「このスポーツ、始{はじ}めたいんだけど。」\n「運動神経{うんどうしんけい}がいい人{ひと}（　）かな。」',
-                options: ['向き', '向け', 'ため', 'みたい'],
-                correctIndex: 0,
+                options: ['向け', 'ため', 'みたい', '向き'],
+                correctIndex: 3,
                 explanation: '對話情境。可能適合運動神經好的人。'
             },
             {
                 id: 'n3_quiz_muki_5',
                 sentence: '「この映画{えいが}、どんな人{ひと}が見{み}るの？」\n「アクション好{ず}き（　）だね。」',
-                options: ['向き', '向け', 'ため', 'らしい'],
-                correctIndex: 0,
+                options: ['向け', '向き', 'らしい', 'ため'],
+                correctIndex: 1,
                 explanation: '對話情境。適合喜歡動作片的人。'
             }
         ]
@@ -5018,35 +5018,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_muki_1_1',
                 sentence: 'この服{ふく}は若{わか}い人{ひと}（　）のデザインです。',
-                options: ['向き', '向け', 'ため', 'らしい'],
-                correctIndex: 0,
+                options: ['ため', '向け', 'らしい', '向き'],
+                correctIndex: 3,
                 explanation: '這件衣服是適合年輕人的設計。'
             },
             {
                 id: 'n3_quiz_muki_1_2',
                 sentence: '西{にし}（　）のマンションを探{さが}しています。',
-                options: ['向き', '向け', 'むかい', 'あて'],
-                correctIndex: 0,
+                options: ['あて', '向け', '向き', 'むかい'],
+                correctIndex: 2,
                 explanation: '正在找朝西的公寓。'
             },
             {
                 id: 'n3_quiz_muki_1_3',
                 sentence: 'このコースは真面目{まじめ}な人{ひと}（　）です。',
-                options: ['向き', '向け', 'ため', 'よう'],
-                correctIndex: 0,
+                options: ['ため', '向き', 'よう', '向け'],
+                correctIndex: 1,
                 explanation: '這個課程適合認真的人。'
             },
             {
                 id: 'n3_quiz_muki_1_4',
                 sentence: '「どんな部屋{へや}がいい？」\n「できれば南{みなみ}（　）がいいな。」',
-                options: ['向き', '向け', 'ため', 'みたい'],
-                correctIndex: 0,
+                options: ['ため', '向け', '向き', 'みたい'],
+                correctIndex: 2,
                 explanation: '對話情境。可以的話想要朝南的。'
             },
             {
                 id: 'n3_quiz_muki_1_5',
                 sentence: '「この靴{くつ}、履{は}きやすい？」\n「うん、長時間{ちょうじかん}歩{ある}く人{ひと}（　）だね。」',
-                options: ['向き', '向け', 'ため', 'らしい'],
+                options: ['向き', 'らしい', '向け', 'ため'],
                 correctIndex: 0,
                 explanation: '對話情境。適合長時間走路的人。'
             }
@@ -5092,36 +5092,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_mushiro_1',
                 sentence: '彼{かれ}は天才{てんさい}というより、（　）努力家{どりょくか}だ。',
-                options: ['むしろ', 'まるで', 'まさか', 'もしも'],
-                correctIndex: 0,
+                options: ['まるで', 'むしろ', 'まさか', 'もしも'],
+                correctIndex: 1,
                 explanation: '與其說他是天才，不如說他是努力家。'
             },
             {
                 id: 'n3_quiz_mushiro_2',
                 sentence: '休{やす}むより、（　）仕事{しごと}をしていた方{ほう}が楽{らく}だ。',
-                options: ['むしろ', 'まるで', 'まさか', 'もしも'],
-                correctIndex: 0,
+                options: ['まるで', 'むしろ', 'もしも', 'まさか'],
+                correctIndex: 1,
                 explanation: '與其休息，不如工作還比較輕鬆。'
             },
             {
                 id: 'n3_quiz_mushiro_3',
                 sentence: '説明{せつめい}を聞{き}くより、（　）自分{じぶん}でやった方{ほう}がいい。',
-                options: ['むしろ', 'まるで', 'まさか', 'もしかしたら'],
+                options: ['むしろ', 'まさか', 'まるで', 'もしかしたら'],
                 correctIndex: 0,
                 explanation: '與其聽說明，不如自己做比較好。'
             },
             {
                 id: 'n3_quiz_mushiro_4',
                 sentence: '「電話{でんわ}する？」\n「（　）会{あ}って話{はな}した方{ほう}がいいよ。」',
-                options: ['むしろ', 'まるで', 'まさか', 'もしも'],
-                correctIndex: 0,
+                options: ['まるで', 'むしろ', 'まさか', 'もしも'],
+                correctIndex: 1,
                 explanation: '對話情境。不如見面談比較好。'
             },
             {
                 id: 'n3_quiz_mushiro_5',
                 sentence: '「この仕事{しごと}、大変{たいへん}？」\n「大変{たいへん}というより、（　）楽{たの}しいよ。」',
-                options: ['むしろ', 'まるで', 'まさか', 'もしも'],
-                correctIndex: 0,
+                options: ['まさか', 'まるで', 'むしろ', 'もしも'],
+                correctIndex: 2,
                 explanation: '對話情境。與其說辛苦，不如說很開心。'
             }
         ]
@@ -5166,36 +5166,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_nagara_mo_1',
                 sentence: '小{ちい}さい（　）、パワフルなエンジンです。',
-                options: ['ながらも', 'ながら', 'けれども', 'のに'],
+                options: ['ながらも', 'けれども', 'ながら', 'のに'],
                 correctIndex: 0,
                 explanation: '雖然小，但是很有力的引擎。'
             },
             {
                 id: 'n3_quiz_nagara_mo_2',
                 sentence: '分{わ}かっている（　）、やめられない。',
-                options: ['ながらも', 'ながら', 'けれども', 'のに'],
-                correctIndex: 0,
+                options: ['ながら', 'ながらも', 'のに', 'けれども'],
+                correctIndex: 1,
                 explanation: '雖然明白，但戒不掉。'
             },
             {
                 id: 'n3_quiz_nagara_mo_3',
                 sentence: '不安{ふあん}（　）、挑戦{ちょうせん}することにした。',
-                options: ['ながらも', 'ながら', 'けれども', 'のに'],
-                correctIndex: 0,
+                options: ['ながら', 'ながらも', 'けれども', 'のに'],
+                correctIndex: 1,
                 explanation: '雖然不安，但決定挑戰。'
             },
             {
                 id: 'n3_quiz_nagara_mo_4',
                 sentence: '「彼女{かのじょ}、若{わか}いね。」\n「若{わか}い（　）、しっかりしてるよ。」',
-                options: ['ながらも', 'ながら', 'けれども', 'のに'],
-                correctIndex: 0,
+                options: ['けれども', 'のに', 'ながら', 'ながらも'],
+                correctIndex: 3,
                 explanation: '對話情境。雖然年輕，但很穩重。'
             },
             {
                 id: 'n3_quiz_nagara_mo_5',
                 sentence: '「あの会社{かいしゃ}、小{ちい}さいけど大丈夫{だいじょうぶ}？」\n「小{ちい}さい（　）、信頼{しんらい}できるよ。」',
-                options: ['ながらも', 'ながら', 'けれども', 'のに'],
-                correctIndex: 0,
+                options: ['のに', 'ながらも', 'ながら', 'けれども'],
+                correctIndex: 1,
                 explanation: '對話情境。雖然小，但值得信賴。'
             }
         ]
@@ -5240,36 +5240,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_nai_koto_wa_nai_1',
                 sentence: '分{わ}から（　）ことはないが、説明{せつめい}が難{むずか}しい。',
-                options: ['ない', 'なく', 'なかった', 'ません'],
-                correctIndex: 0,
+                options: ['ません', 'ない', 'なく', 'なかった'],
+                correctIndex: 1,
                 explanation: '不是不懂，只是難以說明。'
             },
             {
                 id: 'n3_quiz_nai_koto_wa_nai_2',
                 sentence: 'できない（　）ないけど、時間{じかん}がかかる。',
-                options: ['ことは', 'ことが', 'ことを', 'ことに'],
-                correctIndex: 0,
+                options: ['ことが', 'ことに', 'ことは', 'ことを'],
+                correctIndex: 2,
                 explanation: '不是做不到，只是需要時間。'
             },
             {
                 id: 'n3_quiz_nai_koto_wa_nai_3',
                 sentence: '行{い}か（　）ことはないが、気{き}が進{すす}まない。',
-                options: ['ない', 'なく', 'なかった', 'ません'],
-                correctIndex: 0,
+                options: ['なく', 'ません', 'ない', 'なかった'],
+                correctIndex: 2,
                 explanation: '不是不去，只是不太想。'
             },
             {
                 id: 'n3_quiz_nai_koto_wa_nai_4',
                 sentence: '「日本語{にほんご}、読{よ}める？」\n「読{よ}め（　）ことはないけど、書{か}くのは苦手{にがて}。」',
-                options: ['ない', 'なく', 'なかった', 'ません'],
-                correctIndex: 0,
+                options: ['ません', 'なく', 'ない', 'なかった'],
+                correctIndex: 2,
                 explanation: '對話情境。不是不會讀，只是寫不太行。'
             },
             {
                 id: 'n3_quiz_nai_koto_wa_nai_5',
                 sentence: '「泳{およ}げる？」\n「泳{およ}げない（　）ないけど、あまり上手{じょうず}じゃない。」',
-                options: ['ことは', 'ことが', 'ことを', 'ことに'],
-                correctIndex: 0,
+                options: ['ことが', 'ことに', 'ことは', 'ことを'],
+                correctIndex: 2,
                 explanation: '對話情境。不是不會游泳，只是不太擅長。'
             }
         ]
@@ -5314,36 +5314,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_naito_1',
                 sentence: 'もう帰{かえ}ら（　）。',
-                options: ['ないと', 'なくて', 'なければ', 'なかった'],
+                options: ['ないと', 'なければ', 'なくて', 'なかった'],
                 correctIndex: 0,
                 explanation: '得回去了。'
             },
             {
                 id: 'n3_quiz_naito_2',
                 sentence: '電話{でんわ}し（　）。忘{わす}れそうだ。',
-                options: ['ないと', 'なくて', 'なければ', 'なかった'],
+                options: ['ないと', 'なければ', 'なくて', 'なかった'],
                 correctIndex: 0,
                 explanation: '得打電話。好像會忘記。'
             },
             {
                 id: 'n3_quiz_naito_3',
                 sentence: '薬{くすり}を飲{の}ま（　）。',
-                options: ['ないと', 'なくて', 'なければ', 'なかった'],
+                options: ['ないと', 'なかった', 'なければ', 'なくて'],
                 correctIndex: 0,
                 explanation: '得吃藥。'
             },
             {
                 id: 'n3_quiz_naito_4',
                 sentence: '「もう9時{じ}？」\n「うん、早{はや}く起{お}き（　）。」',
-                options: ['ないと', 'なくて', 'なければ', 'なかった'],
-                correctIndex: 0,
+                options: ['なければ', 'ないと', 'なくて', 'なかった'],
+                correctIndex: 1,
                 explanation: '對話情境。得早點起床。'
             },
             {
                 id: 'n3_quiz_naito_5',
                 sentence: '「宿題{しゅくだい}終{お}わった？」\n「まだ。早{はや}くやら（　）。」',
-                options: ['ないと', 'なくて', 'なければ', 'なかった'],
-                correctIndex: 0,
+                options: ['なくて', 'なければ', 'ないと', 'なかった'],
+                correctIndex: 2,
                 explanation: '對話情境。還沒，得快點做。'
             }
         ]
@@ -5388,36 +5388,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_nakanaka_1',
                 sentence: '電車{でんしゃ}が（　）来{こ}ない。',
-                options: ['なかなか', 'なんか', 'なるべく', 'なぜなら'],
+                options: ['なかなか', 'なぜなら', 'なるべく', 'なんか'],
                 correctIndex: 0,
                 explanation: '電車遲遲不來。'
             },
             {
                 id: 'n3_quiz_nakanaka_2',
                 sentence: 'この問題{もんだい}は（　）解{と}けない。',
-                options: ['なかなか', 'なんか', 'なるべく', 'なぜなら'],
-                correctIndex: 0,
+                options: ['なぜなら', 'なかなか', 'なるべく', 'なんか'],
+                correctIndex: 1,
                 explanation: '這道題怎麼也解不出來。'
             },
             {
                 id: 'n3_quiz_nakanaka_3',
                 sentence: '彼{かれ}の名前{なまえ}が（　）思{おも}い出{だ}せない。',
-                options: ['なかなか', 'なんか', 'なるべく', 'なぜなら'],
+                options: ['なかなか', 'なぜなら', 'なるべく', 'なんか'],
                 correctIndex: 0,
                 explanation: '怎麼也想不起他的名字。'
             },
             {
                 id: 'n3_quiz_nakanaka_4',
                 sentence: '「仕事{しごと}見{み}つかった？」\n「うん、でも（　）いいのがないんだ。」',
-                options: ['なかなか', 'なんか', 'なるべく', 'なぜなら'],
+                options: ['なかなか', 'なぜなら', 'なんか', 'なるべく'],
                 correctIndex: 0,
                 explanation: '對話情境。怎麼也找不到好的。'
             },
             {
                 id: 'n3_quiz_nakanaka_5',
                 sentence: '「日本語{にほんご}上達{じょうたつ}した？」\n「うーん、（　）上手{じょうず}にならなくて。」',
-                options: ['なかなか', 'なんか', 'なるべく', 'なぜなら'],
-                correctIndex: 0,
+                options: ['なんか', 'なかなか', 'なるべく', 'なぜなら'],
+                correctIndex: 1,
                 explanation: '對話情境。怎麼也不進步。'
             }
         ]
@@ -5473,29 +5473,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_nanka_2',
                 sentence: 'そんなこと（　）どうでもいい。',
-                options: ['なんか', 'なんで', 'なるほど', 'なぜか'],
-                correctIndex: 0,
+                options: ['なるほど', 'なぜか', 'なんで', 'なんか'],
+                correctIndex: 3,
                 explanation: '那種事怎樣都好。'
             },
             {
                 id: 'n3_quiz_nanka_3',
                 sentence: '勉強{べんきょう}（　）したくない。',
-                options: ['なんか', 'なんで', 'なるほど', 'なぜか'],
-                correctIndex: 0,
+                options: ['なるほど', 'なぜか', 'なんで', 'なんか'],
+                correctIndex: 3,
                 explanation: '不想念書什麼的。'
             },
             {
                 id: 'n3_quiz_nanka_4',
                 sentence: '「この料理{りょうり}、美味{おい}しいね。」\n「こんなの（　）簡単{かんたん}だよ。」',
-                options: ['なんか', 'なんで', 'なるほど', 'なぜか'],
-                correctIndex: 0,
+                options: ['なんで', 'なぜか', 'なるほど', 'なんか'],
+                correctIndex: 3,
                 explanation: '對話情境。這種東西很簡單。'
             },
             {
                 id: 'n3_quiz_nanka_5',
                 sentence: '「手伝{てつだ}ってくれる？」\n「私{わたし}（　）でよければ。」',
-                options: ['なんか', 'なんで', 'なるほど', 'なぜか'],
-                correctIndex: 0,
+                options: ['なんで', 'なんか', 'なぜか', 'なるほど'],
+                correctIndex: 1,
                 explanation: '對話情境。如果我這種人可以的話。'
             }
         ]
@@ -5540,36 +5540,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_naosu_1',
                 sentence: '間違{まちが}いがあるので、書{か}き（　）ください。',
-                options: ['直して', '出して', '始めて', '続けて'],
+                options: ['直して', '出して', '続けて', '始めて'],
                 correctIndex: 0,
                 explanation: '因為有錯誤，請重寫。'
             },
             {
                 id: 'n3_quiz_naosu_2',
                 sentence: '失敗{しっぱい}したけど、もう一度{いちど}やり（　）。',
-                options: ['直す', '出す', '始める', '続ける'],
+                options: ['直す', '始める', '出す', '続ける'],
                 correctIndex: 0,
                 explanation: '雖然失敗了，但再重來一次。'
             },
             {
                 id: 'n3_quiz_naosu_3',
                 sentence: 'デザインが気{き}に入{い}らないので、作{つく}り（　）。',
-                options: ['直した', '出した', '始めた', '続けた'],
-                correctIndex: 0,
+                options: ['始めた', '続けた', '直した', '出した'],
+                correctIndex: 2,
                 explanation: '因為不喜歡設計，所以重做。'
             },
             {
                 id: 'n3_quiz_naosu_4',
                 sentence: '「発音{はつおん}が違{ちが}うよ。」\n「じゃあ、言{い}い（　）。」',
-                options: ['直すね', '出すね', '始めるね', '続けるね'],
+                options: ['直すね', '出すね', '続けるね', '始めるね'],
                 correctIndex: 0,
                 explanation: '對話情境。那我重說一遍。'
             },
             {
                 id: 'n3_quiz_naosu_5',
                 sentence: '「この計画{けいかく}、問題{もんだい}があるね。」\n「うん、考{かんが}え（　）必要{ひつよう}がある。」',
-                options: ['直す', '出す', '始める', '続ける'],
-                correctIndex: 0,
+                options: ['続ける', '出す', '直す', '始める'],
+                correctIndex: 2,
                 explanation: '對話情境。需要重新考慮。'
             }
         ]
@@ -5614,36 +5614,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_naru_beku_1',
                 sentence: '（　）安{やす}いものを買{か}うようにしています。',
-                options: ['なるべく', 'なかなか', 'なんか', 'なぜか'],
-                correctIndex: 0,
+                options: ['なんか', 'なぜか', 'なるべく', 'なかなか'],
+                correctIndex: 2,
                 explanation: '我盡量買便宜的東西。'
             },
             {
                 id: 'n3_quiz_naru_beku_2',
                 sentence: '（　）電気{でんき}を消{け}すようにしてください。',
-                options: ['なるべく', 'なかなか', 'なんか', 'なぜか'],
+                options: ['なるべく', 'なんか', 'なぜか', 'なかなか'],
                 correctIndex: 0,
                 explanation: '請盡量關燈。'
             },
             {
                 id: 'n3_quiz_naru_beku_3',
                 sentence: '健康{けんこう}のために（　）運動{うんどう}している。',
-                options: ['なるべく', 'なかなか', 'なんか', 'なぜか'],
-                correctIndex: 0,
+                options: ['なぜか', 'なるべく', 'なかなか', 'なんか'],
+                correctIndex: 1,
                 explanation: '為了健康盡量運動。'
             },
             {
                 id: 'n3_quiz_naru_beku_4',
                 sentence: '「いつまでに終{お}わらせる？」\n「（　）今日中{きょうじゅう}に。」',
-                options: ['なるべく', 'なかなか', 'なんか', 'なぜか'],
-                correctIndex: 0,
+                options: ['なんか', 'なかなか', 'なるべく', 'なぜか'],
+                correctIndex: 2,
                 explanation: '對話情境。盡量在今天之內。'
             },
             {
                 id: 'n3_quiz_naru_beku_5',
                 sentence: '「遅刻{ちこく}しないでね。」\n「うん、（　）早{はや}く行{い}くよ。」',
-                options: ['なるべく', 'なかなか', 'なんか', 'なぜか'],
-                correctIndex: 0,
+                options: ['なかなか', 'なるべく', 'なぜか', 'なんか'],
+                correctIndex: 1,
                 explanation: '對話情境。我盡量早點去。'
             }
         ]
@@ -5688,36 +5688,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_nazenara_1',
                 sentence: '彼女{かのじょ}を尊敬{そんけい}している。（　）、とても優{やさ}しいからだ。',
-                options: ['なぜなら', 'なるべく', 'なかなか', 'なんか'],
-                correctIndex: 0,
+                options: ['なんか', 'なぜなら', 'なるべく', 'なかなか'],
+                correctIndex: 1,
                 explanation: '我尊敬她。因為她很溫柔。'
             },
             {
                 id: 'n3_quiz_nazenara_2',
                 sentence: 'この店{みせ}が好{す}きだ。（　）、料理{りょうり}が美味{おい}しいからだ。',
-                options: ['なぜなら', 'なるべく', 'なかなか', 'なんか'],
-                correctIndex: 0,
+                options: ['なるべく', 'なぜなら', 'なかなか', 'なんか'],
+                correctIndex: 1,
                 explanation: '我喜歡這家店。因為料理很好吃。'
             },
             {
                 id: 'n3_quiz_nazenara_3',
                 sentence: '参加{さんか}できない。（　）、仕事{しごと}があるからだ。',
-                options: ['なぜなら', 'なるべく', 'なかなか', 'なんか'],
-                correctIndex: 0,
+                options: ['なんか', 'なかなか', 'なぜなら', 'なるべく'],
+                correctIndex: 2,
                 explanation: '沒辦法參加。因為有工作。'
             },
             {
                 id: 'n3_quiz_nazenara_4',
                 sentence: '「どうして日本語{にほんご}を勉強{べんきょう}してるの？」\n「（　）、日本{にほん}のアニメが好{す}きだから。」',
-                options: ['なぜなら', 'なるべく', 'なかなか', 'なんか'],
+                options: ['なぜなら', 'なかなか', 'なるべく', 'なんか'],
                 correctIndex: 0,
                 explanation: '對話情境。因為喜歡日本動畫。'
             },
             {
                 id: 'n3_quiz_nazenara_5',
                 sentence: '「彼{かれ}、人気{にんき}があるね。」\n「うん。（　）、誰{だれ}にでも優{やさ}しいからだよ。」',
-                options: ['なぜなら', 'なるべく', 'なかなか', 'なんか'],
-                correctIndex: 0,
+                options: ['なかなか', 'なんか', 'なぜなら', 'なるべく'],
+                correctIndex: 2,
                 explanation: '對話情境。因為他對誰都很溫柔。'
             }
         ]
@@ -5762,15 +5762,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ndatte_1',
                 sentence: '新{あたら}しい店{みせ}ができる（　）。',
-                options: ['んだって', 'んだから', 'んだけど', 'んだが'],
-                correctIndex: 0,
+                options: ['んだが', 'んだって', 'んだけど', 'んだから'],
+                correctIndex: 1,
                 explanation: '聽說要開新店。'
             },
             {
                 id: 'n3_quiz_ndatte_2',
                 sentence: '彼女{かのじょ}、外国{がいこく}に行{い}く（　）。',
-                options: ['んだって', 'んだから', 'んだけど', 'んだが'],
-                correctIndex: 0,
+                options: ['んだが', 'んだから', 'んだけど', 'んだって'],
+                correctIndex: 3,
                 explanation: '聽說她要出國。'
             },
             {
@@ -5783,15 +5783,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ndatte_4',
                 sentence: '「山田{やまだ}さん、元気{げんき}？」\n「うん、最近{さいきん}忙{いそが}しい（　）。」',
-                options: ['んだって', 'んだから', 'んだけど', 'んだが'],
-                correctIndex: 0,
+                options: ['んだけど', 'んだって', 'んだから', 'んだが'],
+                correctIndex: 1,
                 explanation: '對話情境。聽說最近很忙。'
             },
             {
                 id: 'n3_quiz_ndatte_5',
                 sentence: '「あの人{ひと}、誰{だれ}？」\n「新{あたら}しい部長{ぶちょう}（　）。」',
-                options: ['なんだって', 'なんだから', 'なんだけど', 'なんだが'],
-                correctIndex: 0,
+                options: ['なんだから', 'なんだが', 'なんだけど', 'なんだって'],
+                correctIndex: 3,
                 explanation: '對話情境。聽說是新部長。'
             }
         ]
@@ -5836,36 +5836,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_chigai_nai_1',
                 sentence: '彼{かれ}は知{し}っている（　）。',
-                options: ['に違いない', 'にかぎらない', 'にすぎない', 'にほかならない'],
-                correctIndex: 0,
+                options: ['にすぎない', 'にかぎらない', 'にほかならない', 'に違いない'],
+                correctIndex: 3,
                 explanation: '他一定知道。'
             },
             {
                 id: 'n3_quiz_ni_chigai_nai_2',
                 sentence: 'あの店{みせ}は人気{にんき}がある（　）。いつも混{こ}んでいる。',
-                options: ['に違いない', 'にかぎらない', 'にすぎない', 'にほかならない'],
-                correctIndex: 0,
+                options: ['にかぎらない', 'に違いない', 'にすぎない', 'にほかならない'],
+                correctIndex: 1,
                 explanation: '那家店一定很受歡迎。總是很擠。'
             },
             {
                 id: 'n3_quiz_ni_chigai_nai_3',
                 sentence: '彼女{かのじょ}は怒{おこ}っている（　）。',
-                options: ['に違いない', 'にかぎらない', 'にすぎない', 'にほかならない'],
-                correctIndex: 0,
+                options: ['にすぎない', 'にかぎらない', 'にほかならない', 'に違いない'],
+                correctIndex: 3,
                 explanation: '她一定在生氣。'
             },
             {
                 id: 'n3_quiz_ni_chigai_nai_4',
                 sentence: '「この問題{もんだい}、難{むずか}しいね。」\n「先生{せんせい}も難{むずか}しいと思{おも}っている（　）。」',
-                options: ['に違いない', 'にかぎらない', 'にすぎない', 'にほかならない'],
+                options: ['に違いない', 'にすぎない', 'にほかならない', 'にかぎらない'],
                 correctIndex: 0,
                 explanation: '對話情境。老師一定也覺得很難。'
             },
             {
                 id: 'n3_quiz_ni_chigai_nai_5',
                 sentence: '「彼{かれ}、なぜ来{こ}ないの？」\n「忘{わす}れた（　）。」',
-                options: ['に違いない', 'にかぎらない', 'にすぎない', 'にほかならない'],
-                correctIndex: 0,
+                options: ['にすぎない', 'にほかならない', 'に違いない', 'にかぎらない'],
+                correctIndex: 2,
                 explanation: '對話情境。一定是忘記了。'
             }
         ]
@@ -5910,36 +5910,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_chigai_nai_1_1',
                 sentence: 'あの人{ひと}は日本人{にほんじん}に（　）。発音{はつおん}が完璧{かんぺき}だ。',
-                options: ['違いない', '限らない', 'すぎない', 'ほかならない'],
-                correctIndex: 0,
+                options: ['ほかならない', 'すぎない', '違いない', '限らない'],
+                correctIndex: 2,
                 explanation: '那個人一定是日本人。發音很完美。'
             },
             {
                 id: 'n3_quiz_ni_chigai_nai_1_2',
                 sentence: 'この仕事{しごと}は大変{たいへん}に（　）。',
-                options: ['違いない', '限らない', 'すぎない', 'ほかならない'],
+                options: ['違いない', '限らない', 'ほかならない', 'すぎない'],
                 correctIndex: 0,
                 explanation: '這份工作一定很辛苦。'
             },
             {
                 id: 'n3_quiz_ni_chigai_nai_1_3',
                 sentence: '彼女{かのじょ}は悲{かな}しんでいるに（　）。',
-                options: ['違いない', '限らない', 'すぎない', 'ほかならない'],
-                correctIndex: 0,
+                options: ['限らない', 'すぎない', 'ほかならない', '違いない'],
+                correctIndex: 3,
                 explanation: '她一定很難過。'
             },
             {
                 id: 'n3_quiz_ni_chigai_nai_1_4',
                 sentence: '「この手紙{てがみ}、誰{だれ}から？」\n「彼氏{かれし}からに（　）。」',
-                options: ['違いない', '限らない', 'すぎない', 'ほかならない'],
-                correctIndex: 0,
+                options: ['ほかならない', 'すぎない', '限らない', '違いない'],
+                correctIndex: 3,
                 explanation: '對話情境。一定是男朋友寄的。'
             },
             {
                 id: 'n3_quiz_ni_chigai_nai_1_5',
                 sentence: '「彼{かれ}、最近{さいきん}元気{げんき}ないね。」\n「何{なに}か悩{なや}みがあるに（　）。」',
-                options: ['違いない', '限らない', 'すぎない', 'ほかならない'],
-                correctIndex: 0,
+                options: ['限らない', '違いない', 'ほかならない', 'すぎない'],
+                correctIndex: 1,
                 explanation: '對話情境。一定有什麼煩惱。'
             }
         ]
@@ -5984,36 +5984,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_hanshite_1',
                 sentence: '予想{よそう}（　）、彼{かれ}は合格{ごうかく}した。',
-                options: ['に反して', 'に対して', 'について', 'にとって'],
+                options: ['に反して', 'にとって', 'に対して', 'について'],
                 correctIndex: 0,
                 explanation: '與預期相反，他及格了。'
             },
             {
                 id: 'n3_quiz_ni_hanshite_2',
                 sentence: '期待{きたい}（　）、売{う}り上{あ}げは下{さ}がった。',
-                options: ['に反して', 'に対して', 'について', 'にとって'],
-                correctIndex: 0,
+                options: ['にとって', 'について', 'に対して', 'に反して'],
+                correctIndex: 3,
                 explanation: '與期望相反，銷售額下降了。'
             },
             {
                 id: 'n3_quiz_ni_hanshite_3',
                 sentence: '法律{ほうりつ}（　）行動{こうどう}してはいけない。',
-                options: ['に反して', 'に対して', 'について', 'にとって'],
-                correctIndex: 0,
+                options: ['について', 'に反して', 'にとって', 'に対して'],
+                correctIndex: 1,
                 explanation: '不能做違反法律的行為。'
             },
             {
                 id: 'n3_quiz_ni_hanshite_4',
                 sentence: '「試験{しけん}どうだった？」\n「予想{よそう}（　）、簡単{かんたん}だったよ。」',
-                options: ['に反して', 'に対して', 'について', 'にとって'],
-                correctIndex: 0,
+                options: ['について', 'に反して', 'に対して', 'にとって'],
+                correctIndex: 1,
                 explanation: '對話情境。與預期相反，很簡單。'
             },
             {
                 id: 'n3_quiz_ni_hanshite_5',
                 sentence: '「彼{かれ}、辞{や}めたんだって。」\n「上司{じょうし}の意向{いこう}（　）だね。」',
-                options: ['に反して', 'に対して', 'について', 'にとって'],
-                correctIndex: 0,
+                options: ['にとって', 'に反して', 'について', 'に対して'],
+                correctIndex: 1,
                 explanation: '對話情境。違背上司的意向呢。'
             }
         ]
@@ -6058,8 +6058,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_hanshite_1_1',
                 sentence: '会社{かいしゃ}の方針{ほうしん}に（　）行動{こうどう}した。',
-                options: ['反して', '対して', 'ついて', 'とって'],
-                correctIndex: 0,
+                options: ['ついて', 'とって', '対して', '反して'],
+                correctIndex: 3,
                 explanation: '做了違反公司方針的行動。'
             },
             {
@@ -6072,22 +6072,22 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_hanshite_1_3',
                 sentence: '彼{かれ}は周{まわ}りの反対{はんたい}に（　）、転職{てんしょく}した。',
-                options: ['反して', '対して', 'ついて', 'とって'],
-                correctIndex: 0,
+                options: ['対して', '反して', 'とって', 'ついて'],
+                correctIndex: 1,
                 explanation: '他違背周圍的反對，換了工作。'
             },
             {
                 id: 'n3_quiz_ni_hanshite_1_4',
                 sentence: '「彼{かれ}、続{つづ}けるの？」\n「みんなの予想{よそう}に（　）ね。」',
-                options: ['反して', '対して', 'ついて', 'とって'],
-                correctIndex: 0,
+                options: ['とって', '対して', 'ついて', '反して'],
+                correctIndex: 3,
                 explanation: '對話情境。與大家的預期相反呢。'
             },
             {
                 id: 'n3_quiz_ni_hanshite_1_5',
                 sentence: '「結果{けっか}どうだった？」\n「心配{しんぱい}に（　）、うまくいったよ。」',
-                options: ['反して', '対して', 'ついて', 'とって'],
-                correctIndex: 0,
+                options: ['とって', 'ついて', '対して', '反して'],
+                correctIndex: 3,
                 explanation: '對話情境。與擔心相反，很順利。'
             }
         ]
@@ -6132,29 +6132,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_kakete_1',
                 sentence: '午後{ごご}から夕方{ゆうがた}（　）雨{あめ}が降{ふ}るでしょう。',
-                options: ['にかけて', 'について', 'にとって', 'にたいして'],
-                correctIndex: 0,
+                options: ['について', 'にたいして', 'にかけて', 'にとって'],
+                correctIndex: 2,
                 explanation: '從下午到傍晚可能會下雨。'
             },
             {
                 id: 'n3_quiz_ni_kakete_2',
                 sentence: '東京{とうきょう}から大阪{おおさか}（　）新幹線{しんかんせん}が通{とお}っている。',
-                options: ['にかけて', 'について', 'にとって', 'にたいして'],
-                correctIndex: 0,
+                options: ['にたいして', 'にとって', 'について', 'にかけて'],
+                correctIndex: 3,
                 explanation: '從東京到大阪有新幹線通過。'
             },
             {
                 id: 'n3_quiz_ni_kakete_3',
                 sentence: '1月{がつ}から3月{がつ}（　）、この地域{ちいき}は雪{ゆき}が多{おお}い。',
-                options: ['にかけて', 'について', 'にとって', 'にたいして'],
-                correctIndex: 0,
+                options: ['にたいして', 'にとって', 'について', 'にかけて'],
+                correctIndex: 3,
                 explanation: '從1月到3月，這地區雪很多。'
             },
             {
                 id: 'n3_quiz_ni_kakete_4',
                 sentence: '「この工事{こうじ}、いつまで？」\n「今週{こんしゅう}{こんしゅう}から来週{らいしゅう}（　）ですね。」',
-                options: ['にかけて', 'について', 'にとって', 'にたいして'],
-                correctIndex: 0,
+                options: ['について', 'にとって', 'にたいして', 'にかけて'],
+                correctIndex: 3,
                 explanation: '對話情境。從這週到下週。'
             },
             {
@@ -6206,36 +6206,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_kan_suru_1',
                 sentence: '健康{けんこう}に（　）情報{じょうほう}を集{あつ}めています。',
-                options: ['関する', '対する', 'とって', 'ついて'],
-                correctIndex: 0,
+                options: ['とって', '対する', '関する', 'ついて'],
+                correctIndex: 2,
                 explanation: '正在收集關於健康的資訊。'
             },
             {
                 id: 'n3_quiz_ni_kan_suru_2',
                 sentence: 'この問題{もんだい}に（　）質問{しつもん}はありますか。',
-                options: ['関する', '対する', 'とって', 'ついて'],
-                correctIndex: 0,
+                options: ['対する', '関する', 'ついて', 'とって'],
+                correctIndex: 1,
                 explanation: '有關於這個問題的疑問嗎？'
             },
             {
                 id: 'n3_quiz_ni_kan_suru_3',
                 sentence: '教育{きょういく}に（　）政策{せいさく}が発表{はっぴょう}された。',
-                options: ['関する', '対する', 'とって', 'ついて'],
-                correctIndex: 0,
+                options: ['対する', 'とって', '関する', 'ついて'],
+                correctIndex: 2,
                 explanation: '發表了關於教育的政策。'
             },
             {
                 id: 'n3_quiz_ni_kan_suru_4',
                 sentence: '「何{なに}を調{しら}べてるの？」\n「日本{にほん}の歴史{れきし}に（　）ことだよ。」',
-                options: ['関する', '対する', 'とっての', 'ついての'],
-                correctIndex: 0,
+                options: ['とっての', 'ついての', '関する', '対する'],
+                correctIndex: 2,
                 explanation: '對話情境。關於日本歷史的事。'
             },
             {
                 id: 'n3_quiz_ni_kan_suru_5',
                 sentence: '「このレポート、テーマは？」\n「環境問題{かんきょうもんだい}に（　）ものです。」',
-                options: ['関する', '対する', 'とっての', 'ついての'],
-                correctIndex: 0,
+                options: ['対する', '関する', 'とっての', 'ついての'],
+                correctIndex: 1,
                 explanation: '對話情境。關於環境問題的。'
             }
         ]
@@ -6280,36 +6280,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_kan_suru_ni_kan_shite_1',
                 sentence: 'この事件{じけん}に（　）調査{ちょうさ}が行{おこな}われた。',
-                options: ['関して', '対して', 'ついて', 'とって'],
-                correctIndex: 0,
+                options: ['ついて', '対して', '関して', 'とって'],
+                correctIndex: 2,
                 explanation: '進行了關於這件事的調查。'
             },
             {
                 id: 'n3_quiz_ni_kan_suru_ni_kan_shite_2',
                 sentence: '仕事{しごと}の内容{ないよう}に（　）詳{くわ}しく説明{せつめい}した。',
-                options: ['関して', '対して', 'ついて', 'とって'],
-                correctIndex: 0,
+                options: ['ついて', '関して', '対して', 'とって'],
+                correctIndex: 1,
                 explanation: '詳細說明了關於工作內容。'
             },
             {
                 id: 'n3_quiz_ni_kan_suru_ni_kan_shite_3',
                 sentence: '契約{けいやく}に（　）書類{しょるい}を準備{じゅんび}してください。',
-                options: ['関する', '対する', 'ついての', 'とっての'],
-                correctIndex: 0,
+                options: ['とっての', '関する', '対する', 'ついての'],
+                correctIndex: 1,
                 explanation: '請準備關於合約的文件。'
             },
             {
                 id: 'n3_quiz_ni_kan_suru_ni_kan_shite_4',
                 sentence: '「何{なに}か聞{き}きたいことある？」\n「はい、休暇{きゅうか}に（　）質問{しつもん}があります。」',
-                options: ['関して', '対して', 'ついて', 'とって'],
-                correctIndex: 0,
+                options: ['ついて', '対して', 'とって', '関して'],
+                correctIndex: 3,
                 explanation: '對話情境。有關於休假的問題。'
             },
             {
                 id: 'n3_quiz_ni_kan_suru_ni_kan_shite_5',
                 sentence: '「このプロジェクト、知{し}ってる？」\n「詳{くわ}しいことに（　）は知{し}らない。」',
-                options: ['関して', '対して', 'ついて', 'とって'],
-                correctIndex: 0,
+                options: ['対して', '関して', 'とって', 'ついて'],
+                correctIndex: 1,
                 explanation: '對話情境。不知道關於詳細的事。'
             }
         ]
@@ -6361,29 +6361,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_kawatte_2',
                 sentence: '病気{びょうき}の先生{せんせい}（　）、別{べつ}の先生{せんせい}が授業{じゅぎょう}{じゅぎょう}をした。',
-                options: ['にかわって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'にかわって', 'に対して', 'にとって'],
+                correctIndex: 1,
                 explanation: '另一位老師代替生病的老師上課。'
             },
             {
                 id: 'n3_quiz_ni_kawatte_3',
                 sentence: '電話{でんわ}（　）、メールで連絡{れんらく}することが多{おお}くなった。',
-                options: ['にかわって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'にとって', 'にかわって', 'に対して'],
+                correctIndex: 2,
                 explanation: '用電子郵件取代電話聯絡變多了。'
             },
             {
                 id: 'n3_quiz_ni_kawatte_4',
                 sentence: '「今日{きょう}の会議{かいぎ}、田中{たなか}さんは？」\n「田中{たなか}さん（　）、山田{やまだ}さんが来{き}ます。」',
-                options: ['にかわって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'にかわって', 'について', 'にとって'],
+                correctIndex: 1,
                 explanation: '對話情境。山田代替田中來。'
             },
             {
                 id: 'n3_quiz_ni_kawatte_5',
                 sentence: '「誰{だれ}がスピーチする？」\n「社長{しゃちょう}（　）、私{わたし}がします。」',
-                options: ['にかわって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'にかわって', 'について', 'にとって'],
+                correctIndex: 1,
                 explanation: '對話情境。我代替社長演講。'
             }
         ]
@@ -6428,36 +6428,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_kawatte_ni_kawari_1',
                 sentence: '大臣{だいじん}（　）、副大臣{ふくだいじん}が会見{かいけん}した。',
-                options: ['にかわり', 'について', 'にとって', 'に対して'],
+                options: ['にかわり', 'にとって', 'について', 'に対して'],
                 correctIndex: 0,
                 explanation: '副大臣代替大臣召開記者會。'
             },
             {
                 id: 'n3_quiz_ni_kawatte_ni_kawari_2',
                 sentence: '現金{げんきん}（　）、カードで支払{しはら}う人{ひと}が増{ふ}えた。',
-                options: ['にかわって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'にかわって', 'に対して', 'にとって'],
+                correctIndex: 1,
                 explanation: '用卡片取代現金支付的人增加了。'
             },
             {
                 id: 'n3_quiz_ni_kawatte_ni_kawari_3',
                 sentence: '石油{せきゆ}（　）、太陽{たいよう}エネルギーが注目{ちゅうもく}されている。',
-                options: ['にかわって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'にとって', 'にかわって', 'について'],
+                correctIndex: 2,
                 explanation: '太陽能取代石油受到關注。'
             },
             {
                 id: 'n3_quiz_ni_kawatte_ni_kawari_4',
                 sentence: '「社長{しゃちょう}のスピーチは？」\n「社長{しゃちょう}（　）、専務{せんむ}がしました。」',
-                options: ['にかわり', 'について', 'にとって', 'に対して'],
+                options: ['にかわり', 'に対して', 'について', 'にとって'],
                 correctIndex: 0,
                 explanation: '對話情境。專務代替社長演講。'
             },
             {
                 id: 'n3_quiz_ni_kawatte_ni_kawari_5',
                 sentence: '「最近{さいきん}、手紙{てがみ}書{か}く？」\n「手紙{てがみ}（　）、LINEを使{つか}うよ。」',
-                options: ['にかわって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'について', 'に対して', 'にかわって'],
+                correctIndex: 3,
                 explanation: '對話情境。用LINE取代寫信。'
             }
         ]
@@ -6502,36 +6502,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_kurabete_1',
                 sentence: '夏{なつ}（　）、冬{ふゆ}は電気代{でんきだい}が高{たか}い。',
-                options: ['に比べて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に比べて', 'にとって', 'に対して'],
+                correctIndex: 1,
                 explanation: '與夏天相比，冬天電費貴。'
             },
             {
                 id: 'n3_quiz_ni_kurabete_2',
                 sentence: '日本{にほん}（　）、この国{くに}は物価{ぶっか}が安{やす}い。',
-                options: ['に比べて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'に対して', 'に比べて', 'について'],
+                correctIndex: 2,
                 explanation: '與日本相比，這個國家物價便宜。'
             },
             {
                 id: 'n3_quiz_ni_kurabete_3',
                 sentence: '若{わか}い頃{ころ}（　）、体力{たいりょく}が落{お}ちた。',
-                options: ['に比べて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に比べて', 'にとって', 'に対して'],
+                correctIndex: 1,
                 explanation: '與年輕時相比，體力下降了。'
             },
             {
                 id: 'n3_quiz_ni_kurabete_4',
                 sentence: '「日本語{にほんご}上達{じょうたつ}した？」\n「前{まえ}（　）、少{すこ}し上手{じょうず}になったかな。」',
-                options: ['に比べて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'にとって', 'に比べて'],
+                correctIndex: 3,
                 explanation: '對話情境。與之前相比可能進步了一點。'
             },
             {
                 id: 'n3_quiz_ni_kurabete_5',
                 sentence: '「この街{まち}、変{か}わった？」\n「10年前{ねんまえ}（　）、ずいぶん発展{はってん}したよ。」',
-                options: ['に比べて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'に比べて', 'について', 'にとって'],
+                correctIndex: 1,
                 explanation: '對話情境。與10年前相比發展了很多。'
             }
         ]
@@ -6583,29 +6583,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_kurabete_1_2',
                 sentence: '期待{きたい}（　）、結果{けっか}は良{よ}かった。',
-                options: ['に比べて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'について', 'に比べて', 'に対して'],
+                correctIndex: 2,
                 explanation: '與期待相比，結果很好。'
             },
             {
                 id: 'n3_quiz_ni_kurabete_1_3',
                 sentence: '去年{きょねん}の売{う}り上{あ}げ（　）、今年{ことし}は増{ふ}えた。',
-                options: ['に比べて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に比べて', 'にとって', 'に対して'],
+                correctIndex: 1,
                 explanation: '與去年的銷售額相比，今年增加了。'
             },
             {
                 id: 'n3_quiz_ni_kurabete_1_4',
                 sentence: '「彼{かれ}、変{か}わった？」\n「前{まえ}（　）、明{あか}るくなったね。」',
-                options: ['に比べて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'にとって', 'に比べて', 'に対して'],
+                correctIndex: 2,
                 explanation: '對話情境。與之前相比變開朗了。'
             },
             {
                 id: 'n3_quiz_ni_kurabete_1_5',
                 sentence: '「新{あたら}しいアパート、どう？」\n「前{まえ}のところ（　）、広{ひろ}いよ。」',
-                options: ['に比べて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'に比べて', 'に対して', 'について'],
+                correctIndex: 1,
                 explanation: '對話情境。與之前的地方相比很大。'
             }
         ]
@@ -6650,35 +6650,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_nareru_1',
                 sentence: 'この辛{から}い料理{りょうり}（　）慣{な}れた。',
-                options: ['に', 'を', 'が', 'で'],
-                correctIndex: 0,
+                options: ['が', 'を', 'で', 'に'],
+                correctIndex: 3,
                 explanation: '習慣了這道辣的料理。'
             },
             {
                 id: 'n3_quiz_ni_nareru_2',
                 sentence: '一人暮{ひとりぐ}らし（　）慣{な}れるのに3ヶ月{かげつ}かかった。',
-                options: ['に', 'を', 'が', 'で'],
-                correctIndex: 0,
+                options: ['で', 'が', 'に', 'を'],
+                correctIndex: 2,
                 explanation: '習慣一個人住花了3個月。'
             },
             {
                 id: 'n3_quiz_ni_nareru_3',
                 sentence: '新{あたら}しい環境{かんきょう}（　）なかなか慣{な}れない。',
-                options: ['に', 'を', 'が', 'で'],
-                correctIndex: 0,
+                options: ['を', 'に', 'が', 'で'],
+                correctIndex: 1,
                 explanation: '怎麼也不習慣新環境。'
             },
             {
                 id: 'n3_quiz_ni_nareru_4',
                 sentence: '「日本語{にほんご}の敬語{けいご}、難{むずか}しい？」\n「最初{さいしょ}は難{むずか}しかったけど、もう（　）慣{な}れたよ。」',
-                options: ['に', 'を', 'が', 'で'],
+                options: ['に', 'で', 'を', 'が'],
                 correctIndex: 0,
                 explanation: '對話情境。已經習慣了。'
             },
             {
                 id: 'n3_quiz_ni_nareru_5',
                 sentence: '「満員{まんいん}電車{でんしゃ}、嫌{いや}じゃない？」\n「もう（　）慣{な}れちゃった。」',
-                options: ['に', 'を', 'が', 'で'],
+                options: ['に', 'を', 'で', 'が'],
                 correctIndex: 0,
                 explanation: '對話情境。已經習慣了。'
             }
@@ -6724,36 +6724,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_nareru_1_1',
                 sentence: 'パソコンの操作{そうさ}に（　）。',
-                options: ['慣れた', '慣った', '慣いた', '慣えた'],
-                correctIndex: 0,
+                options: ['慣えた', '慣いた', '慣った', '慣れた'],
+                correctIndex: 3,
                 explanation: '習慣了電腦操作。'
             },
             {
                 id: 'n3_quiz_ni_nareru_1_2',
                 sentence: 'まだこの町{まち}に（　）いない。',
-                options: ['慣れて', '慣って', '慣いて', '慣えて'],
+                options: ['慣れて', '慣えて', '慣いて', '慣って'],
                 correctIndex: 0,
                 explanation: '還沒習慣這個城市。'
             },
             {
                 id: 'n3_quiz_ni_nareru_1_3',
                 sentence: '日本{にほん}の食事{しょくじ}に（　）まで1ヶ月{かげつ}かかった。',
-                options: ['慣れる', '慣る', '慣いる', '慣える'],
+                options: ['慣れる', '慣る', '慣える', '慣いる'],
                 correctIndex: 0,
                 explanation: '習慣日本飲食花了1個月。'
             },
             {
                 id: 'n3_quiz_ni_nareru_1_4',
                 sentence: '「運転{うんてん}{うんてん}できる？」\n「うん、もう（　）きたよ。」',
-                options: ['慣れて', '慣って', '慣いて', '慣えて'],
-                correctIndex: 0,
+                options: ['慣って', '慣いて', '慣れて', '慣えて'],
+                correctIndex: 2,
                 explanation: '對話情境。已經漸漸習慣了。'
             },
             {
                 id: 'n3_quiz_ni_nareru_1_5',
                 sentence: '「寮{りょう}生活{せいかつ}、大変{たいへん}？」\n「最初{さいしょ}は大変{たいへん}だったけど、今{いま}は（　）。」',
-                options: ['慣れた', '慣った', '慣いた', '慣えた'],
-                correctIndex: 0,
+                options: ['慣いた', '慣った', '慣えた', '慣れた'],
+                correctIndex: 3,
                 explanation: '對話情境。現在習慣了。'
             }
         ]
@@ -6798,8 +6798,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_oite_1',
                 sentence: 'オリンピックは東京{とうきょう}（　）開催{かいさい}された。',
-                options: ['において', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'において', 'に対して', 'にとって'],
+                correctIndex: 1,
                 explanation: '奧運在東京舉辦。'
             },
             {
@@ -6812,22 +6812,22 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_oite_3',
                 sentence: '日本{にほん}（　）、地震{じしん}が多{おお}い。',
-                options: ['において', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'において', 'に対して', 'について'],
+                correctIndex: 1,
                 explanation: '在日本地震很多。'
             },
             {
                 id: 'n3_quiz_ni_oite_4',
                 sentence: '「式典{しきてん}はどこ？」\n「市民{しみん}ホール（　）行{おこな}われます。」',
-                options: ['において', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'にとって', 'において', 'について'],
+                correctIndex: 2,
                 explanation: '對話情境。在市民會館舉行。'
             },
             {
                 id: 'n3_quiz_ni_oite_5',
                 sentence: '「この分野{ぶんや}、詳{くわ}しい？」\n「医学{いがく}（　）は詳{くわ}しくないです。」',
-                options: ['において', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'において', 'について', 'に対して'],
+                correctIndex: 1,
                 explanation: '對話情境。在醫學方面不熟。'
             }
         ]
@@ -6872,35 +6872,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_oite_ni_okeru_1',
                 sentence: '日本{にほん}（　）生活{せいかつ}は便利{べんり}だ。',
-                options: ['における', 'において', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'において', 'における', 'にとって'],
+                correctIndex: 2,
                 explanation: '在日本的生活很方便。'
             },
             {
                 id: 'n3_quiz_ni_oite_ni_okeru_2',
                 sentence: '会社{かいしゃ}（　）地位{ちい}は高{たか}い。',
-                options: ['における', 'において', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'における', 'にとって', 'において'],
+                correctIndex: 1,
                 explanation: '在公司的地位很高。'
             },
             {
                 id: 'n3_quiz_ni_oite_ni_okeru_3',
                 sentence: '世界{せかい}（　）日本{にほん}の役割{やくわり}は大{おお}きい。',
-                options: ['における', 'において', 'にとって', 'に対して'],
+                options: ['における', 'にとって', 'において', 'に対して'],
                 correctIndex: 0,
                 explanation: '日本在世界的角色很大。'
             },
             {
                 id: 'n3_quiz_ni_oite_ni_okeru_4',
                 sentence: '「この論文{ろんぶん}、テーマは何{なに}？」\n「教育{きょういく}（　）問題{もんだい}についてです。」',
-                options: ['における', 'において', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'において', 'に対して', 'における'],
+                correctIndex: 3,
                 explanation: '對話情境。關於教育領域的問題。'
             },
             {
                 id: 'n3_quiz_ni_oite_ni_okeru_5',
                 sentence: '「あの選手{せんしゅ}、すごいね。」\n「オリンピック（　）成績{せいせき}は最高{さいこう}だよ。」',
-                options: ['における', 'において', 'にとって', 'に対して'],
+                options: ['における', 'に対して', 'において', 'にとって'],
                 correctIndex: 0,
                 explanation: '對話情境。在奧運的成績是最好的。'
             }
@@ -6946,35 +6946,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_shitagatte_1',
                 sentence: '時間{じかん}が経{た}つ（　）、記憶{きおく}が薄{うす}れる。',
-                options: ['にしたがって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'にしたがって', 'について', 'に対して'],
+                correctIndex: 1,
                 explanation: '隨著時間流逝，記憶變淡。'
             },
             {
                 id: 'n3_quiz_ni_shitagatte_2',
                 sentence: '先生{せんせい}の指示{しじ}（　）行動{こうどう}してください。',
-                options: ['にしたがって', 'について', 'にとって', 'に対して'],
+                options: ['にしたがって', 'にとって', 'について', 'に対して'],
                 correctIndex: 0,
                 explanation: '請遵照老師的指示行動。'
             },
             {
                 id: 'n3_quiz_ni_shitagatte_3',
                 sentence: '技術{ぎじゅつ}が進歩{しんぽ}する（　）、生活{せいかつ}が便利{べんり}になる。',
-                options: ['にしたがって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'に対して', 'にしたがって', 'について'],
+                correctIndex: 2,
                 explanation: '隨著技術進步，生活變方便。'
             },
             {
                 id: 'n3_quiz_ni_shitagatte_4',
                 sentence: '「この薬{くすり}、どう飲{の}むの？」\n「説明書{せつめいしょ}（　）飲{の}んでね。」',
-                options: ['にしたがって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'にしたがって', 'に対して', 'にとって'],
+                correctIndex: 1,
                 explanation: '對話情境。請按照說明書服用。'
             },
             {
                 id: 'n3_quiz_ni_shitagatte_5',
                 sentence: '「日本語{にほんご}難{むずか}しい？」\n「勉強{べんきょう}する（　）、面白{おもしろ}くなってきた。」',
-                options: ['にしたがって', 'について', 'にとって', 'に対して'],
+                options: ['にしたがって', 'に対して', 'にとって', 'について'],
                 correctIndex: 0,
                 explanation: '對話情境。隨著學習變得有趣了。'
             }
@@ -7020,35 +7020,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_shite_mo_1',
                 sentence: '高{たか}い（　）、買{か}いたい。',
-                options: ['にしても', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'にとって', 'にしても'],
+                correctIndex: 3,
                 explanation: '即使貴也想買。'
             },
             {
                 id: 'n3_quiz_ni_shite_mo_2',
                 sentence: '難{むずか}しい（　）、やってみる価値{かち}はある。',
-                options: ['にしても', 'について', 'にとって', 'に対して'],
+                options: ['にしても', 'に対して', 'にとって', 'について'],
                 correctIndex: 0,
                 explanation: '即使難也值得試試。'
             },
             {
                 id: 'n3_quiz_ni_shite_mo_3',
                 sentence: '成功{せいこう}する（　）、失敗{しっぱい}する（　）、やってみよう。',
-                options: ['にしても', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'について', 'に対して', 'にしても'],
+                correctIndex: 3,
                 explanation: '不管成功還是失敗，都試試看。'
             },
             {
                 id: 'n3_quiz_ni_shite_mo_4',
                 sentence: '「明日{あした}、天気{てんき}悪{わる}いかも。」\n「雨{あめ}（　）、行{い}くよ。」',
-                options: ['にしても', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'にしても', 'にとって'],
+                correctIndex: 2,
                 explanation: '對話情境。即使下雨也去。'
             },
             {
                 id: 'n3_quiz_ni_shite_mo_5',
                 sentence: '「断{ことわ}られるかな。」\n「断{ことわ}られる（　）、聞{き}いてみよう。」',
-                options: ['にしても', 'について', 'にとって', 'に対して'],
+                options: ['にしても', 'にとって', 'に対して', 'について'],
                 correctIndex: 0,
                 explanation: '對話情境。即使被拒絕也問問看。'
             }
@@ -7094,36 +7094,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_shite_wa_1',
                 sentence: '彼{かれ}は日本人{にほんじん}（　）、英語{えいご}が上手{じょうず}だ。',
-                options: ['にしては', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'にしては', 'に対して', 'にとって'],
+                correctIndex: 1,
                 explanation: '就日本人而言，他英語很好。'
             },
             {
                 id: 'n3_quiz_ni_shite_wa_2',
                 sentence: 'この店{みせ}は安{やす}い（　）、料理{りょうり}がおいしい。',
-                options: ['にしては', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'にとって', 'にしては', 'に対して'],
+                correctIndex: 2,
                 explanation: '這家店就便宜而言料理很好吃。'
             },
             {
                 id: 'n3_quiz_ni_shite_wa_3',
                 sentence: '初心者{しょしんしゃ}（　）、よくできた。',
-                options: ['にしては', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'について', 'にしては', 'にとって'],
+                correctIndex: 2,
                 explanation: '就初學者而言做得很好。'
             },
             {
                 id: 'n3_quiz_ni_shite_wa_4',
                 sentence: '「この絵{え}、誰{だれ}が描{か}いたの？」\n「子供{こども}が描{か}いたの。子供{こども}（　）上手{じょうず}でしょ。」',
-                options: ['にしては', 'について', 'にとって', 'に対して'],
+                options: ['にしては', 'にとって', 'に対して', 'について'],
                 correctIndex: 0,
                 explanation: '對話情境。就小孩而言畫得很好吧。'
             },
             {
                 id: 'n3_quiz_ni_shite_wa_5',
                 sentence: '「この映画{えいが}、どう？」\n「低予算{ていよさん}（　）、よくできてるよ。」',
-                options: ['にしては', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'にとって', 'にしては', 'に対して'],
+                correctIndex: 2,
                 explanation: '對話情境。就低預算而言拍得很好。'
             }
         ]
@@ -7168,36 +7168,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_taishite_1',
                 sentence: 'お客様{きゃくさま}（　）丁寧{ていねい}に接{せっ}する。',
-                options: ['に対して', 'について', 'にとって', 'にしては'],
-                correctIndex: 0,
+                options: ['について', 'にとって', 'にしては', 'に対して'],
+                correctIndex: 3,
                 explanation: '對客人態度要有禮貌。'
             },
             {
                 id: 'n3_quiz_ni_taishite_2',
                 sentence: '親{おや}（　）感謝{かんしゃ}している。',
-                options: ['に対して', 'について', 'にとって', 'にしては'],
-                correctIndex: 0,
+                options: ['にとって', 'にしては', 'に対して', 'について'],
+                correctIndex: 2,
                 explanation: '對父母感謝。'
             },
             {
                 id: 'n3_quiz_ni_taishite_3',
                 sentence: 'この問題{もんだい}（　）、様々{さまざま}な意見{いけん}がある。',
-                options: ['に対して', 'について', 'にとって', 'にしては'],
+                options: ['に対して', 'にとって', 'について', 'にしては'],
                 correctIndex: 0,
                 explanation: '對於這個問題有各種意見。'
             },
             {
                 id: 'n3_quiz_ni_taishite_4',
                 sentence: '「彼{かれ}、どんな人{ひと}？」\n「年上{としうえ}（　）も敬語{けいご}を使{つか}わないんだ。」',
-                options: ['に対して', 'について', 'にとって', 'にしては'],
-                correctIndex: 0,
+                options: ['にしては', 'にとって', 'に対して', 'について'],
+                correctIndex: 2,
                 explanation: '對話情境。對年長者也不用敬語。'
             },
             {
                 id: 'n3_quiz_ni_taishite_5',
                 sentence: '「この政策{せいさく}、反対{はんたい}意見{いけん}ある？」\n「多{おお}くの市民{しみん}がこの政策{せいさく}（　）反対{はんたい}しています。」',
-                options: ['に対して', 'について', 'にとって', 'にしては'],
-                correctIndex: 0,
+                options: ['にしては', 'に対して', 'について', 'にとって'],
+                correctIndex: 1,
                 explanation: '對話情境。很多市民反對這政策。'
             }
         ]
@@ -7242,22 +7242,22 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_taishite_1_1',
                 sentence: '都会{とかい}が便利{べんり}なの（　）、田舎{いなか}は不便{ふべん}だ。',
-                options: ['に対して', 'について', 'にとって', 'にしては'],
-                correctIndex: 0,
+                options: ['について', 'にしては', 'にとって', 'に対して'],
+                correctIndex: 3,
                 explanation: '都市方便，相對地鄉下不便。'
             },
             {
                 id: 'n3_quiz_ni_taishite_1_2',
                 sentence: '環境{かんきょう}問題{もんだい}（　）真剣{しんけん}に取{と}り組{く}む。',
-                options: ['に対して', 'について', 'にとって', 'にしては'],
-                correctIndex: 0,
+                options: ['にとって', 'にしては', 'に対して', 'について'],
+                correctIndex: 2,
                 explanation: '認真面對環境問題。'
             },
             {
                 id: 'n3_quiz_ni_taishite_1_3',
                 sentence: '賛成{さんせい}意見{いけん}（　）反対{はんたい}意見{いけん}もある。',
-                options: ['に対して', 'について', 'にとって', 'にしては'],
-                correctIndex: 0,
+                options: ['について', 'にとって', 'に対して', 'にしては'],
+                correctIndex: 2,
                 explanation: '對贊成意見也有反對意見。'
             },
             {
@@ -7270,8 +7270,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_taishite_1_5',
                 sentence: '「この提案{ていあん}どう思{おも}う？」\n「一部{いちぶ}の人{ひと}はこの提案{ていあん}（　）否定的{ひていてき}だね。」',
-                options: ['に対して', 'について', 'にとって', 'にしては'],
-                correctIndex: 0,
+                options: ['について', 'にしては', 'にとって', 'に対して'],
+                correctIndex: 3,
                 explanation: '對話情境。一部分人對這提案持否定態度。'
             }
         ]
@@ -7316,36 +7316,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_totte_1',
                 sentence: '外国人{がいこくじん}（　）、敬語{けいご}は難{むずか}しい。',
-                options: ['にとって', 'について', 'に対して', 'にしては'],
-                correctIndex: 0,
+                options: ['にしては', 'に対して', 'にとって', 'について'],
+                correctIndex: 2,
                 explanation: '對外國人來說敬語很難。'
             },
             {
                 id: 'n3_quiz_ni_totte_2',
                 sentence: '健康{けんこう}は誰{だれ}（　）も大切{たいせつ}だ。',
-                options: ['にとって', 'について', 'に対して', 'にしては'],
+                options: ['にとって', 'に対して', 'について', 'にしては'],
                 correctIndex: 0,
                 explanation: '健康對任何人來說都很重要。'
             },
             {
                 id: 'n3_quiz_ni_totte_3',
                 sentence: '子供{こども}（　）、遊{あそ}ぶことは大事{だいじ}だ。',
-                options: ['にとって', 'について', 'に対して', 'にしては'],
-                correctIndex: 0,
+                options: ['について', 'にとって', 'にしては', 'に対して'],
+                correctIndex: 1,
                 explanation: '對小孩來說玩耍很重要。'
             },
             {
                 id: 'n3_quiz_ni_totte_4',
                 sentence: '「この仕事{しごと}、難{むずか}しい？」\n「私{わたし}（　）は難{むずか}しくないよ。」',
-                options: ['にとって', 'について', 'に対して', 'にしては'],
-                correctIndex: 0,
+                options: ['について', 'にしては', 'に対して', 'にとって'],
+                correctIndex: 3,
                 explanation: '對話情境。對我來說不難。'
             },
             {
                 id: 'n3_quiz_ni_totte_5',
                 sentence: '「彼女{かのじょ}、何{なに}が大事{だいじ}？」\n「彼女{かのじょ}（　）は家族{かぞく}が一番{いちばん}だよ。」',
-                options: ['にとって', 'について', 'に対して', 'にしては'],
-                correctIndex: 0,
+                options: ['に対して', 'にしては', 'にとって', 'について'],
+                correctIndex: 2,
                 explanation: '對話情境。對她來說家人最重要。'
             }
         ]
@@ -7390,35 +7390,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_tsuite_1',
                 sentence: 'この計画{けいかく}（　）説明{せつめい}してください。',
-                options: ['について', 'にとって', 'に対して', 'にしては'],
-                correctIndex: 0,
+                options: ['にしては', 'に対して', 'について', 'にとって'],
+                correctIndex: 2,
                 explanation: '請說明關於這個計劃。'
             },
             {
                 id: 'n3_quiz_ni_tsuite_2',
                 sentence: '彼{かれ}（　）何{なに}も知{し}らない。',
-                options: ['について', 'にとって', 'に対して', 'にしては'],
-                correctIndex: 0,
+                options: ['にとって', 'に対して', 'について', 'にしては'],
+                correctIndex: 2,
                 explanation: '關於他什麼都不知道。'
             },
             {
                 id: 'n3_quiz_ni_tsuite_3',
                 sentence: 'この事件{じけん}（　）新聞{しんぶん}で読{よ}んだ。',
-                options: ['について', 'にとって', 'に対して', 'にしては'],
-                correctIndex: 0,
+                options: ['にとって', 'にしては', 'に対して', 'について'],
+                correctIndex: 3,
                 explanation: '在報紙上讀到關於這件事。'
             },
             {
                 id: 'n3_quiz_ni_tsuite_4',
                 sentence: '「何{なに}か質問{しつもん}ある？」\n「給料{きゅうりょう}（　）聞{き}きたいです。」',
-                options: ['について', 'にとって', 'に対して', 'にしては'],
-                correctIndex: 0,
+                options: ['にしては', 'に対して', 'について', 'にとって'],
+                correctIndex: 2,
                 explanation: '對話情境。想問關於薪水的事。'
             },
             {
                 id: 'n3_quiz_ni_tsuite_5',
                 sentence: '「何{なに}を書{か}いてるの？」\n「旅行{りょこう}（　）のブログを書{か}いてるんだ。」',
-                options: ['について', 'にとって', 'に対して', 'にしては'],
+                options: ['について', 'にしては', 'にとって', 'に対して'],
                 correctIndex: 0,
                 explanation: '對話情境。在寫關於旅行的部落格。'
             }
@@ -7464,36 +7464,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_tsurete_1',
                 sentence: '経験{けいけん}を積{つ}む（　）、自信{じしん}がつく。',
-                options: ['につれて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'につれて', 'にとって'],
+                correctIndex: 2,
                 explanation: '隨著累積經驗，變得有自信。'
             },
             {
                 id: 'n3_quiz_ni_tsurete_2',
                 sentence: '都市化{としか}が進{すす}む（　）、自然{しぜん}が減{へ}る。',
-                options: ['につれて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'について', 'につれて', 'にとって'],
+                correctIndex: 2,
                 explanation: '隨著都市化發展，自然減少。'
             },
             {
                 id: 'n3_quiz_ni_tsurete_3',
                 sentence: '技術{ぎじゅつ}が発展{はってん}する（　）、生活{せいかつ}が便利{べんり}になる。',
-                options: ['につれて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'につれて', 'にとって'],
+                correctIndex: 2,
                 explanation: '隨著技術發展，生活變方便。'
             },
             {
                 id: 'n3_quiz_ni_tsurete_4',
                 sentence: '「最近{さいきん}疲{つか}れやすくない？」\n「年{とし}を取{と}る（　）ね。」',
-                options: ['につれて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'につれて', 'にとって'],
+                correctIndex: 2,
                 explanation: '對話情境。隨著年齡增長。'
             },
             {
                 id: 'n3_quiz_ni_tsurete_5',
                 sentence: '「彼{かれ}、変{か}わった？」\n「責任{せきにん}が増{ふ}える（　）、真面目{まじめ}になったよ。」',
-                options: ['につれて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'につれて', 'について', 'にとって'],
+                correctIndex: 1,
                 explanation: '對話情境。隨著責任增加變認真了。'
             }
         ]
@@ -7538,36 +7538,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_wa_1',
                 sentence: '成功{せいこう}する（　）、努力{どりょく}が必要{ひつよう}だ。',
-                options: ['には', 'では', 'とは', 'への'],
-                correctIndex: 0,
+                options: ['への', 'には', 'とは', 'では'],
+                correctIndex: 1,
                 explanation: '要成功需要努力。'
             },
             {
                 id: 'n3_quiz_ni_wa_2',
                 sentence: '日本{にほん}で働{はたら}く（　）、日本語{にほんご}が必要{ひつよう}だ。',
-                options: ['には', 'では', 'とは', 'への'],
-                correctIndex: 0,
+                options: ['への', 'とは', 'では', 'には'],
+                correctIndex: 3,
                 explanation: '要在日本工作需要日語。'
             },
             {
                 id: 'n3_quiz_ni_wa_3',
                 sentence: 'この問題{もんだい}は私{わたし}（　）難{むずか}しすぎる。',
-                options: ['には', 'では', 'とは', 'への'],
-                correctIndex: 0,
+                options: ['では', 'とは', 'への', 'には'],
+                correctIndex: 3,
                 explanation: '這問題對我來說太難了。'
             },
             {
                 id: 'n3_quiz_ni_wa_4',
                 sentence: '「どうすれば痩{や}せる？」\n「痩{や}せる（　）、運動{うんどう}するしかないよ。」',
-                options: ['には', 'では', 'とは', 'への'],
-                correctIndex: 0,
+                options: ['とは', 'では', 'には', 'への'],
+                correctIndex: 2,
                 explanation: '對話情境。要瘦下來只能運動。'
             },
             {
                 id: 'n3_quiz_ni_wa_5',
                 sentence: '「これ、できる？」\n「うーん、私{わたし}（　）ちょっと無理{むり}かな。」',
-                options: ['には', 'では', 'とは', 'への'],
-                correctIndex: 0,
+                options: ['とは', 'への', 'では', 'には'],
+                correctIndex: 3,
                 explanation: '對話情境。對我來說可能有點不行。'
             }
         ]
@@ -7612,36 +7612,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_yoru_to_1',
                 sentence: '新聞{しんぶん}（　）、電車{でんしゃ}の事故{じこ}があったそうだ。',
-                options: ['によると', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'によると', 'に対して', 'について'],
+                correctIndex: 1,
                 explanation: '根據報紙，好像發生了電車事故。'
             },
             {
                 id: 'n3_quiz_ni_yoru_to_2',
                 sentence: '彼{かれ}の話{はなし}（　）、試験{しけん}は難{むずか}しかったらしい。',
-                options: ['によると', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'によると', 'にとって'],
+                correctIndex: 2,
                 explanation: '根據他的話，考試好像很難。'
             },
             {
                 id: 'n3_quiz_ni_yoru_to_3',
                 sentence: '調査{ちょうさ}（　）、若者{わかもの}の読書{どくしょ}量{りょう}が減{へ}っているそうだ。',
-                options: ['によると', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'に対して', 'について', 'によると'],
+                correctIndex: 3,
                 explanation: '根據調查，年輕人的閱讀量減少了。'
             },
             {
                 id: 'n3_quiz_ni_yoru_to_4',
                 sentence: '「パーティー、いつ？」\n「メール（　）、来週{らいしゅう}の土曜日{どようび}だって。」',
-                options: ['によると', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'にとって', 'に対して', 'によると'],
+                correctIndex: 3,
                 explanation: '對話情境。根據郵件，是下週六。'
             },
             {
                 id: 'n3_quiz_ni_yoru_to_5',
                 sentence: '「彼{かれ}、元気{げんき}？」\n「友達{ともだち}（　）、最近{さいきん}忙{いそが}しいらしいよ。」',
-                options: ['によると', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'によると', 'にとって'],
+                correctIndex: 2,
                 explanation: '對話情境。據朋友說，最近很忙。'
             }
         ]
@@ -7686,36 +7686,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_yoru_to_ni_yoreba_1',
                 sentence: '統計{とうけい}（　）、人口{じんこう}が減少{げんしょう}している。',
-                options: ['によれば', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'によれば', 'に対して', 'について'],
+                correctIndex: 1,
                 explanation: '根據統計，人口在減少。'
             },
             {
                 id: 'n3_quiz_ni_yoru_to_ni_yoreba_2',
                 sentence: '研究{けんきゅう}（　）、この食品{しょくひん}は体{からだ}にいいらしい。',
-                options: ['によれば', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'によれば', 'に対して', 'について'],
+                correctIndex: 1,
                 explanation: '根據研究，這食品好像對身體好。'
             },
             {
                 id: 'n3_quiz_ni_yoru_to_ni_yoreba_3',
                 sentence: '法律{ほうりつ}（　）、これは禁止{きんし}されている。',
-                options: ['によれば', 'について', 'にとって', 'に対して'],
+                options: ['によれば', 'に対して', 'について', 'にとって'],
                 correctIndex: 0,
                 explanation: '根據法律，這是被禁止的。'
             },
             {
                 id: 'n3_quiz_ni_yoru_to_ni_yoreba_4',
                 sentence: '「この情報{じょうほう}、正{ただ}しい？」\n「公式{こうしき}発表{はっぴょう}（　）正{ただ}しいよ。」',
-                options: ['によれば', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'について', 'にとって', 'によれば'],
+                correctIndex: 3,
                 explanation: '對話情境。根據官方發表是正確的。'
             },
             {
                 id: 'n3_quiz_ni_yoru_to_ni_yoreba_5',
                 sentence: '「彼{かれ}、辞{や}めるの？」\n「噂{うわさ}（　）辞{や}めるらしいよ。」',
-                options: ['によると', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'によると', 'にとって', 'について'],
+                correctIndex: 1,
                 explanation: '對話情境。根據傳聞好像要辭職。'
             }
         ]
@@ -7772,22 +7772,22 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_yotte_1',
                 sentence: '努力{どりょく}（　）成功{せいこう}を手{て}に入{い}れた。',
-                options: ['によって', 'について', 'にとって', 'に対して'],
+                options: ['によって', 'にとって', 'に対して', 'について'],
                 correctIndex: 0,
                 explanation: '透過努力獲得了成功。'
             },
             {
                 id: 'n3_quiz_ni_yotte_2',
                 sentence: '台風{たいふう}（　）飛行機{ひこうき}が欠航{けっこう}になった。',
-                options: ['によって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'について', 'によって', 'に対して'],
+                correctIndex: 2,
                 explanation: '由於颱風，飛機停飛了。'
             },
             {
                 id: 'n3_quiz_ni_yotte_3',
                 sentence: '地域{ちいき}（　）方言{ほうげん}が違{ちが}う。',
-                options: ['によって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'にとって', 'について', 'によって'],
+                correctIndex: 3,
                 explanation: '各地區的方言不同。'
             },
             {
@@ -7800,8 +7800,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_yotte_5',
                 sentence: '「なんで値段{ねだん}が違{ちが}うの？」\n「季節{きせつ}（　）変{か}わるからだよ。」',
-                options: ['によって', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'について', 'にとって', 'によって'],
+                correctIndex: 3,
                 explanation: '對話情境。因為會根據季節而變。'
             }
         ]
@@ -7848,36 +7848,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ni_yotte_ni_yoru_1',
                 sentence: 'ミス（　）事故{じこ}が多{おお}い。',
-                options: ['による', 'によって', 'について', 'にとって'],
+                options: ['による', 'によって', 'にとって', 'について'],
                 correctIndex: 0,
                 explanation: '由失誤造成的事故很多。'
             },
             {
                 id: 'n3_quiz_ni_yotte_ni_yoru_2',
                 sentence: '政府{せいふ}（　）発表{はっぴょう}があった。',
-                options: ['による', 'によって', 'について', 'にとって'],
+                options: ['による', 'によって', 'にとって', 'について'],
                 correctIndex: 0,
                 explanation: '有來自政府的發表。'
             },
             {
                 id: 'n3_quiz_ni_yotte_ni_yoru_3',
                 sentence: '彼{かれ}の発言{はつげん}（　）誤解{ごかい}が生{う}まれた。',
-                options: ['によって', 'による', 'について', 'にとって'],
-                correctIndex: 0,
+                options: ['による', 'によって', 'にとって', 'について'],
+                correctIndex: 1,
                 explanation: '因為他的發言產生了誤解。'
             },
             {
                 id: 'n3_quiz_ni_yotte_ni_yoru_4',
                 sentence: '「この被害{ひがい}は？」\n「洪水{こうずい}（　）被害{ひがい}です。」',
-                options: ['による', 'によって', 'について', 'にとって'],
-                correctIndex: 0,
+                options: ['について', 'によって', 'にとって', 'による'],
+                correctIndex: 3,
                 explanation: '對話情境。是洪水造成的災害。'
             },
             {
                 id: 'n3_quiz_ni_yotte_ni_yoru_5',
                 sentence: '「どう決{き}まったの？」\n「投票{とうひょう}（　）決{き}まったよ。」',
-                options: ['によって', 'による', 'について', 'にとって'],
-                correctIndex: 0,
+                options: ['について', 'によって', 'による', 'にとって'],
+                correctIndex: 1,
                 explanation: '對話情境。透過投票決定的。'
             }
         ]
@@ -7924,36 +7924,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_no_deshou_ka_1',
                 sentence: 'どうしたら合格{ごうかく}できる（　）。',
-                options: ['のでしょうか', 'のですか', 'だろうか', 'かな'],
+                options: ['のでしょうか', 'かな', 'のですか', 'だろうか'],
                 correctIndex: 0,
                 explanation: '怎樣才能通過呢？（委婉詢問）'
             },
             {
                 id: 'n3_quiz_no_deshou_ka_2',
                 sentence: 'なぜこんなことになった（　）。',
-                options: ['のでしょうか', 'のですか', 'だろうか', 'かな'],
-                correctIndex: 0,
+                options: ['かな', 'のですか', 'だろうか', 'のでしょうか'],
+                correctIndex: 3,
                 explanation: '為什麼會變成這樣呢？'
             },
             {
                 id: 'n3_quiz_no_deshou_ka_3',
                 sentence: 'この問題{もんだい}、どう解{と}けばいい（　）。',
-                options: ['のでしょうか', 'のですか', 'だろうか', 'かな'],
-                correctIndex: 0,
+                options: ['かな', 'だろうか', 'のですか', 'のでしょうか'],
+                correctIndex: 3,
                 explanation: '這個問題該怎麼解才好呢？'
             },
             {
                 id: 'n3_quiz_no_deshou_ka_4',
                 sentence: '「すみません、予約{よやく}は必要{ひつよう}な（　）。」\n「はい、週末{しゅうまつ}は必要{ひつよう}です。」',
-                options: ['のでしょうか', 'のですか', 'だろうか', 'かな'],
-                correctIndex: 0,
+                options: ['だろうか', 'のですか', 'のでしょうか', 'かな'],
+                correctIndex: 2,
                 explanation: '對話情境。需要預約嗎？'
             },
             {
                 id: 'n3_quiz_no_deshou_ka_5',
                 sentence: '「彼{かれ}、なんで急{きゅう}に辞{や}めたんだろう。」\n「何{なに}か理由{りゆう}があった（　）ね。」',
-                options: ['のでしょうか', 'のですか', 'だろうか', 'かな'],
-                correctIndex: 0,
+                options: ['だろうか', 'かな', 'のですか', 'のでしょうか'],
+                correctIndex: 3,
                 explanation: '對話情境。應該是有什麼理由吧。'
             }
         ]
@@ -8000,36 +8000,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_o_chuushin_ni_1',
                 sentence: '駅{えき}（　）商店{しょうてん}が並{なら}んでいる。',
-                options: ['を中心に', 'について', 'にとって', 'に対して'],
+                options: ['を中心に', 'に対して', 'にとって', 'について'],
                 correctIndex: 0,
                 explanation: '以車站為中心排列著商店。'
             },
             {
                 id: 'n3_quiz_o_chuushin_ni_2',
                 sentence: '健康{けんこう}（　）生活{せいかつ}を考{かんが}える。',
-                options: ['を中心に', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'を中心に', 'について', 'にとって'],
+                correctIndex: 1,
                 explanation: '以健康為中心考慮生活。'
             },
             {
                 id: 'n3_quiz_o_chuushin_ni_3',
                 sentence: '関東{かんとう}地方{ちほう}（　）雨{あめ}が降{ふ}る。',
-                options: ['を中心に', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'を中心に', 'にとって', 'に対して'],
+                correctIndex: 1,
                 explanation: '以關東地區為中心會下雨。'
             },
             {
                 id: 'n3_quiz_o_chuushin_ni_4',
                 sentence: '「このバンド、どこで人気{にんき}？」\n「アジア（　）人気{にんき}があるよ。」',
-                options: ['を中心に', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'を中心に', 'に対して', 'について'],
+                correctIndex: 1,
                 explanation: '對話情境。以亞洲為中心受歡迎。'
             },
             {
                 id: 'n3_quiz_o_chuushin_ni_5',
                 sentence: '「今日{きょう}は何{なに}を話{はな}し合{あ}うの？」\n「予算{よさん}（　）話{はな}し合{あ}おう。」',
-                options: ['を中心に', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'を中心に', 'にとって', 'に対して'],
+                correctIndex: 1,
                 explanation: '對話情境。以預算為中心來討論。'
             }
         ]
@@ -8066,36 +8066,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_o_chuushin_ni_1_1',
                 sentence: '部長{ぶちょう}（　）チームが編成{へんせい}された。',
-                options: ['を中心として', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'を中心として', 'にとって'],
+                correctIndex: 2,
                 explanation: '以部長為中心組成了團隊。'
             },
             {
                 id: 'n3_quiz_o_chuushin_ni_1_2',
                 sentence: '福岡{ふくおか}（　）九州{きゅうしゅう}全体{ぜんたい}に広{ひろ}がった。',
-                options: ['を中心にして', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'に対して', 'を中心にして', 'について'],
+                correctIndex: 2,
                 explanation: '以福岡為中心擴展到整個九州。'
             },
             {
                 id: 'n3_quiz_o_chuushin_ni_1_3',
                 sentence: '彼女{かのじょ}（　）ファンクラブが作{つく}られた。',
-                options: ['を中心に', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'を中心に', 'にとって'],
+                correctIndex: 2,
                 explanation: '以她為中心成立了粉絲俱樂部。'
             },
             {
                 id: 'n3_quiz_o_chuushin_ni_1_4',
                 sentence: '「このプロジェクトは誰{だれ}が仕切{しき}ってるの？」\n「田中{たなか}さん（　）進{すす}めてるよ。」',
-                options: ['を中心にして', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'について', 'に対して', 'を中心にして'],
+                correctIndex: 3,
                 explanation: '對話情境。以田中為中心在推進。'
             },
             {
                 id: 'n3_quiz_o_chuushin_ni_1_5',
                 sentence: '「この町{まち}、どう発展{はってん}したの？」\n「港{みなと}（　）発展{はってん}したんだ。」',
-                options: ['を中心として', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'にとって', 'を中心として'],
+                correctIndex: 3,
                 explanation: '對話情境。以港口為中心發展的。'
             }
         ]
@@ -8142,14 +8142,14 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_o_hajime_1',
                 sentence: '校長{こうちょう}（　）、先生方{せんせいがた}が出席{しゅっせき}した。',
-                options: ['をはじめ', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'について', 'をはじめ', 'に対して'],
+                correctIndex: 2,
                 explanation: '以校長為首，老師們都出席了。'
             },
             {
                 id: 'n3_quiz_o_hajime_2',
                 sentence: 'りんご（　）、果物{くだもの}がたくさんある。',
-                options: ['をはじめ', 'について', 'にとって', 'に対して'],
+                options: ['をはじめ', 'にとって', 'に対して', 'について'],
                 correctIndex: 0,
                 explanation: '以蘋果為首，有很多水果。'
             },
@@ -8163,14 +8163,14 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_o_hajime_4',
                 sentence: '「この会社{かいしゃ}、何{なに}を作{つく}ってるの？」\n「車{くるま}（　）、いろんな製品{せいひん}を作{つく}ってるよ。」',
-                options: ['をはじめ', 'について', 'にとって', 'に対して'],
+                options: ['をはじめ', 'に対して', 'にとって', 'について'],
                 correctIndex: 0,
                 explanation: '對話情境。以汽車為首，製造各種產品。'
             },
             {
                 id: 'n3_quiz_o_hajime_5',
                 sentence: '「誰{だれ}が反対{はんたい}したの？」\n「部長{ぶちょう}（　）、みんな反対{はんたい}したんだ。」',
-                options: ['をはじめ', 'について', 'にとって', 'に対して'],
+                options: ['をはじめ', 'に対して', 'にとって', 'について'],
                 correctIndex: 0,
                 explanation: '對話情境。以部長為首，大家都反對了。'
             }
@@ -8218,36 +8218,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_o_komete_1',
                 sentence: '心{こころ}（　）歌{うた}を歌{うた}った。',
-                options: ['を込めて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'を込めて', 'に対して', 'について'],
+                correctIndex: 1,
                 explanation: '用心唱了歌。'
             },
             {
                 id: 'n3_quiz_o_komete_2',
                 sentence: '感謝{かんしゃ}（　）お礼{れい}を言{い}った。',
-                options: ['を込めて', 'について', 'にとって', 'に対して'],
+                options: ['を込めて', 'に対して', 'にとって', 'について'],
                 correctIndex: 0,
                 explanation: '懷著感謝道了謝。'
             },
             {
                 id: 'n3_quiz_o_komete_3',
                 sentence: '愛情{あいじょう}（　）子供{こども}を育{そだ}てる。',
-                options: ['を込めて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'を込めて', 'にとって', 'について'],
+                correctIndex: 1,
                 explanation: '用愛養育孩子。'
             },
             {
                 id: 'n3_quiz_o_komete_4',
                 sentence: '「このセーター、素敵{すてき}だね。」\n「祖母{そぼ}が心{こころ}（　）編{あ}んでくれたの。」',
-                options: ['を込めて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'を込めて', 'にとって'],
+                correctIndex: 2,
                 explanation: '對話情境。是祖母用心編織的。'
             },
             {
                 id: 'n3_quiz_o_komete_5',
                 sentence: '「なんでそんなに丁寧{ていねい}に作{つく}るの？」\n「気持{きも}ち（　）作{つく}りたいから。」',
-                options: ['を込めて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'を込めて', 'にとって', 'に対して'],
+                correctIndex: 1,
                 explanation: '對話情境。因為想傾注心意製作。'
             }
         ]
@@ -8284,21 +8284,21 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_o_komete_1_1',
                 sentence: '全力{ぜんりょく}（　）走{はし}った。',
-                options: ['を込めて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'を込めて', 'について', 'にとって'],
+                correctIndex: 1,
                 explanation: '傾注全力跑了。'
             },
             {
                 id: 'n3_quiz_o_komete_1_2',
                 sentence: '真心{まごころ}（　）お詫{わ}びする。',
-                options: ['を込めて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'を込めて', 'について', 'に対して'],
+                correctIndex: 1,
                 explanation: '真心誠意道歉。'
             },
             {
                 id: 'n3_quiz_o_komete_1_3',
                 sentence: '情熱{じょうねつ}（　）仕事{しごと}に取{と}り組{く}む。',
-                options: ['を込めて', 'について', 'にとって', 'に対して'],
+                options: ['を込めて', 'に対して', 'について', 'にとって'],
                 correctIndex: 0,
                 explanation: '懷著熱情投入工作。'
             },
@@ -8312,8 +8312,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_o_komete_1_5',
                 sentence: '「この詩{し}、感動{かんどう}するね。」\n「詩人{しじん}が思{おも}い（　）書{か}いたからね。」',
-                options: ['を込めて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['について', 'に対して', 'を込めて', 'にとって'],
+                correctIndex: 2,
                 explanation: '對話情境。因為是詩人傾注心意寫的。'
             }
         ]
@@ -8360,15 +8360,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_o_tsuujite_1',
                 sentence: '経験{けいけん}（　）多{おお}くのことを学{まな}んだ。',
-                options: ['を通じて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'について', 'を通じて', 'に対して'],
+                correctIndex: 2,
                 explanation: '透過經驗學到了很多。'
             },
             {
                 id: 'n3_quiz_o_tsuujite_2',
                 sentence: '四季{しき}（　）花{はな}が咲{さ}いている。',
-                options: ['を通じて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'に対して', 'について', 'を通じて'],
+                correctIndex: 3,
                 explanation: '一年四季都開著花。'
             },
             {
@@ -8381,15 +8381,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_o_tsuujite_4',
                 sentence: '「どうやって予約{よやく}したの？」\n「アプリ（　）予約{よやく}したよ。」',
-                options: ['を通じて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'について', 'を通じて', 'に対して'],
+                correctIndex: 2,
                 explanation: '對話情境。透過APP預約的。'
             },
             {
                 id: 'n3_quiz_o_tsuujite_5',
                 sentence: '「このスキー場{じょう}、夏{なつ}もやってる？」\n「一年{いちねん}（　）営業{えいぎょう}してるよ。」',
-                options: ['を通じて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'にとって', 'について', 'を通じて'],
+                correctIndex: 3,
                 explanation: '對話情境。一整年都營業。'
             }
         ]
@@ -8436,35 +8436,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_o_tsuujite_o_tooshite_1',
                 sentence: 'ボランティア活動{かつどう}（　）社会{しゃかい}に貢献{こうけん}する。',
-                options: ['を通して', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['に対して', 'にとって', 'を通して', 'について'],
+                correctIndex: 2,
                 explanation: '透過志工活動對社會做貢獻。'
             },
             {
                 id: 'n3_quiz_o_tsuujite_o_tooshite_2',
                 sentence: 'レンズ（　）光{ひかり}を集{あつ}める。',
-                options: ['を通して', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'について', 'に対して', 'を通して'],
+                correctIndex: 3,
                 explanation: '透過鏡片聚集光線。'
             },
             {
                 id: 'n3_quiz_o_tsuujite_o_tooshite_3',
                 sentence: '留学{りゅうがく}（　）いろいろな経験{けいけん}ができた。',
-                options: ['を通じて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'について', 'を通じて', 'に対して'],
+                correctIndex: 2,
                 explanation: '透過留學獲得了各種經驗。'
             },
             {
                 id: 'n3_quiz_o_tsuujite_o_tooshite_4',
                 sentence: '「どうやって頼{たの}んだの？」\n「知{し}り合{あ}い（　）頼{たの}んだよ。」',
-                options: ['を通じて', 'について', 'にとって', 'に対して'],
-                correctIndex: 0,
+                options: ['にとって', 'について', 'に対して', 'を通じて'],
+                correctIndex: 3,
                 explanation: '對話情境。透過熟人拜託的。'
             },
             {
                 id: 'n3_quiz_o_tsuujite_o_tooshite_5',
                 sentence: '「何{なに}が見{み}えるの？」\n「望遠鏡{ぼうえんきょう}（　）星{ほし}が見{み}えるよ。」',
-                options: ['を通して', 'について', 'にとって', 'に対して'],
+                options: ['を通して', 'にとって', 'について', 'に対して'],
                 correctIndex: 0,
                 explanation: '對話情境。透過望遠鏡可以看到星星。'
             }
@@ -8512,35 +8512,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_okage_de_1',
                 sentence: 'あなた（　）助{たす}かりました。',
-                options: ['のおかげで', 'のせいで', 'について', 'にとって'],
+                options: ['のおかげで', 'について', 'にとって', 'のせいで'],
                 correctIndex: 0,
                 explanation: '多虧你，得救了。'
             },
             {
                 id: 'n3_quiz_okage_de_2',
                 sentence: '薬{くすり}（　）熱{ねつ}が下{さ}がった。',
-                options: ['のおかげで', 'のせいで', 'について', 'にとって'],
-                correctIndex: 0,
+                options: ['について', 'にとって', 'のせいで', 'のおかげで'],
+                correctIndex: 3,
                 explanation: '多虧藥，退燒了。'
             },
             {
                 id: 'n3_quiz_okage_de_3',
                 sentence: '努力{どりょく}した（　）、夢{ゆめ}が叶{かな}った。',
-                options: ['おかげで', 'せいで', 'ために', 'ので'],
-                correctIndex: 0,
+                options: ['せいで', 'おかげで', 'ために', 'ので'],
+                correctIndex: 1,
                 explanation: '多虧努力了，夢想實現了。'
             },
             {
                 id: 'n3_quiz_okage_de_4',
                 sentence: '「試験{しけん}、受{う}かったんだって？」\n「うん、先輩{せんぱい}（　）だよ。」',
-                options: ['のおかげ', 'のせい', 'について', 'にとって'],
-                correctIndex: 0,
+                options: ['について', 'のせい', 'にとって', 'のおかげ'],
+                correctIndex: 3,
                 explanation: '對話情境。多虧前輩。'
             },
             {
                 id: 'n3_quiz_okage_de_5',
                 sentence: '「今日{きょう}は早{はや}く終{お}わったね。」\n「みんなが手伝{てつだ}ってくれた（　）だね。」',
-                options: ['おかげ', 'せい', 'ため', 'から'],
+                options: ['おかげ', 'から', 'せい', 'ため'],
                 correctIndex: 0,
                 explanation: '對話情境。多虧大家幫忙。'
             }
@@ -8588,36 +8588,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ppanashi_1',
                 sentence: '水道{すいどう}を出{だ}し（　）にしないで。',
-                options: ['っぱなし', 'っぽい', 'がち', 'ぎみ'],
-                correctIndex: 0,
+                options: ['っぽい', 'ぎみ', 'がち', 'っぱなし'],
+                correctIndex: 3,
                 explanation: '別一直開著水龍頭不關。'
             },
             {
                 id: 'n3_quiz_ppanashi_2',
                 sentence: '電気{でんき}をつけ（　）で寝{ね}た。',
-                options: ['っぱなし', 'っぽい', 'がち', 'ぎみ'],
-                correctIndex: 0,
+                options: ['がち', 'っぽい', 'っぱなし', 'ぎみ'],
+                correctIndex: 2,
                 explanation: '開著燈就睡了。'
             },
             {
                 id: 'n3_quiz_ppanashi_3',
                 sentence: '本{ほん}を読{よ}み（　）にして返{かえ}さなかった。',
-                options: ['っぱなし', 'っぽい', 'がち', 'ぎみ'],
-                correctIndex: 0,
+                options: ['ぎみ', 'っぱなし', 'っぽい', 'がち'],
+                correctIndex: 1,
                 explanation: '借了書一直沒還。'
             },
             {
                 id: 'n3_quiz_ppanashi_4',
                 sentence: '「足{あし}が痛{いた}い？」\n「うん、座{すわ}り（　）だったから。」',
-                options: ['っぱなし', 'っぽい', 'がち', 'ぎみ'],
-                correctIndex: 0,
+                options: ['っぽい', 'ぎみ', 'っぱなし', 'がち'],
+                correctIndex: 2,
                 explanation: '對話情境。因為一直坐著。'
             },
             {
                 id: 'n3_quiz_ppanashi_5',
                 sentence: '「エアコン、つけてた？」\n「あ、つけ（　）だった。消{け}すね。」',
-                options: ['っぱなし', 'っぽい', 'がち', 'ぎみ'],
-                correctIndex: 0,
+                options: ['ぎみ', 'っぱなし', 'がち', 'っぽい'],
+                correctIndex: 1,
                 explanation: '對話情境。一直開著沒關，我去關。'
             }
         ]
@@ -8674,36 +8674,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ppoi_1',
                 sentence: 'この味{あじ}は油{あぶら}（　）。',
-                options: ['っぽい', 'っぱなし', 'がち', 'ぎみ'],
-                correctIndex: 0,
+                options: ['がち', 'ぎみ', 'っぱなし', 'っぽい'],
+                correctIndex: 3,
                 explanation: '這味道很油膩。'
             },
             {
                 id: 'n3_quiz_ppoi_2',
                 sentence: '彼{かれ}は飽{あ}き（　）から続{つづ}かない。',
-                options: ['っぽい', 'っぱなし', 'がち', 'ぎみ'],
+                options: ['っぽい', 'っぱなし', 'ぎみ', 'がち'],
                 correctIndex: 0,
                 explanation: '他容易厭倦所以不持久。'
             },
             {
                 id: 'n3_quiz_ppoi_3',
                 sentence: 'この茶色{ちゃいろ}は赤{あか}（　）。',
-                options: ['っぽい', 'っぱなし', 'がち', 'ぎみ'],
-                correctIndex: 0,
+                options: ['がち', 'っぽい', 'っぱなし', 'ぎみ'],
+                correctIndex: 1,
                 explanation: '這茶色偏紅。'
             },
             {
                 id: 'n3_quiz_ppoi_4',
                 sentence: '「彼女{かのじょ}の性格{せいかく}、どう？」\n「ちょっと男{おとこ}（　）かな。」',
-                options: ['っぽい', 'っぱなし', 'がち', 'ぎみ'],
-                correctIndex: 0,
+                options: ['ぎみ', 'がち', 'っぱなし', 'っぽい'],
+                correctIndex: 3,
                 explanation: '對話情境。有點男孩子氣。'
             },
             {
                 id: 'n3_quiz_ppoi_5',
                 sentence: '「また風邪{かぜ}ひいたの？」\n「うん、最近{さいきん}風邪{かぜ}をひき（　）で。」',
-                options: ['っぽい', 'っぱなし', 'がち', 'ぎみ'],
-                correctIndex: 0,
+                options: ['ぎみ', 'っぽい', 'がち', 'っぱなし'],
+                correctIndex: 1,
                 explanation: '對話情境。最近很容易感冒。'
             }
         ]
@@ -8750,35 +8750,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_sae_1',
                 sentence: '忙{いそが}しくて食{た}べる時間{じかん}（　）ない。',
-                options: ['さえ', 'しか', 'だけ', 'ばかり'],
-                correctIndex: 0,
+                options: ['ばかり', 'しか', 'だけ', 'さえ'],
+                correctIndex: 3,
                 explanation: '忙到連吃飯時間都沒有。'
             },
             {
                 id: 'n3_quiz_sae_2',
                 sentence: '彼{かれ}は挨拶{あいさつ}（　）しない。',
-                options: ['さえ', 'しか', 'だけ', 'ばかり'],
+                options: ['さえ', 'だけ', 'しか', 'ばかり'],
                 correctIndex: 0,
                 explanation: '他連打招呼都不做。'
             },
             {
                 id: 'n3_quiz_sae_3',
                 sentence: 'この店{みせ}は犬{いぬ}（　）入{はい}れる。',
-                options: ['さえ', 'しか', 'だけ', 'ばかり'],
-                correctIndex: 0,
+                options: ['しか', 'さえ', 'だけ', 'ばかり'],
+                correctIndex: 1,
                 explanation: '這家店連狗都能進。'
             },
             {
                 id: 'n3_quiz_sae_4',
                 sentence: '「寒{さむ}い？」\n「うん、コート（　）寒{さむ}いよ。」',
-                options: ['を着てさえ', 'を着てしか', 'を着てだけ', 'を着てばかり'],
-                correctIndex: 0,
+                options: ['を着てだけ', 'を着てばかり', 'を着てしか', 'を着てさえ'],
+                correctIndex: 3,
                 explanation: '對話情境。穿著大衣還是冷。'
             },
             {
                 id: 'n3_quiz_sae_5',
                 sentence: '「彼{かれ}、元気{げんき}？」\n「最近{さいきん}、メール（　）くれないよ。」',
-                options: ['さえ', 'しか', 'だけ', 'ばかり'],
+                options: ['さえ', 'ばかり', 'だけ', 'しか'],
                 correctIndex: 0,
                 explanation: '對話情境。最近連郵件都不回。'
             }
@@ -8826,36 +8826,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_sae_ba_1',
                 sentence: '時間{じかん}（　）あれば、できる。',
-                options: ['さえ', 'しか', 'だけ', 'ばかり'],
+                options: ['さえ', 'ばかり', 'だけ', 'しか'],
                 correctIndex: 0,
                 explanation: '只要有時間就能做。'
             },
             {
                 id: 'n3_quiz_sae_ba_2',
                 sentence: '彼{かれ}が来{き}（　）すれば、始{はじ}められる。',
-                options: ['さえ', 'しか', 'だけ', 'ばかり'],
-                correctIndex: 0,
+                options: ['だけ', 'しか', 'さえ', 'ばかり'],
+                correctIndex: 2,
                 explanation: '只要他來就能開始。'
             },
             {
                 id: 'n3_quiz_sae_ba_3',
                 sentence: '健康{けんこう}（　）あれば、他{ほか}は何{なに}もいらない。',
-                options: ['さえ', 'しか', 'だけ', 'ばかり'],
+                options: ['さえ', 'だけ', 'ばかり', 'しか'],
                 correctIndex: 0,
                 explanation: '只要有健康，其他什麼都不需要。'
             },
             {
                 id: 'n3_quiz_sae_ba_4',
                 sentence: '「どうしたら日本語{にほんご}が上手{じょうず}になる？」\n「毎日{まいにち}話{はな}し（　）すれば上手{じょうず}になるよ。」',
-                options: ['さえ', 'しか', 'だけ', 'ばかり'],
-                correctIndex: 0,
+                options: ['ばかり', 'だけ', 'しか', 'さえ'],
+                correctIndex: 3,
                 explanation: '對話情境。只要每天說就會變好。'
             },
             {
                 id: 'n3_quiz_sae_ba_5',
                 sentence: '「成功{せいこう}の秘訣{ひけつ}は？」\n「諦{あきら}めない（　）すれば、いつか成功{せいこう}するよ。」',
-                options: ['さえ', 'しか', 'だけ', 'ばかり'],
-                correctIndex: 0,
+                options: ['しか', 'さえ', 'だけ', 'ばかり'],
+                correctIndex: 1,
                 explanation: '對話情境。只要不放棄，總有一天會成功。'
             }
         ]
@@ -8902,35 +8902,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_sai_ni_1',
                 sentence: '退出{たいしゅつ}の（　）、カードをお返{かえ}しください。',
-                options: ['際に', 'ために', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ので', '際に', 'ために', 'から'],
+                correctIndex: 1,
                 explanation: '離開時請歸還卡片。'
             },
             {
                 id: 'n3_quiz_sai_ni_2',
                 sentence: '緊急{きんきゅう}の（　）は、このボタンを押{お}してください。',
-                options: ['際に', 'ために', 'ので', 'から'],
+                options: ['際に', 'ために', 'から', 'ので'],
                 correctIndex: 0,
                 explanation: '緊急時請按此按鈕。'
             },
             {
                 id: 'n3_quiz_sai_ni_3',
                 sentence: '購入{こうにゅう}（　）、身分証{みぶんしょう}が必要{ひつよう}です。',
-                options: ['の際に', 'のために', 'のので', 'のから'],
-                correctIndex: 0,
+                options: ['のために', 'のので', 'の際に', 'のから'],
+                correctIndex: 2,
                 explanation: '購買時需要身分證。'
             },
             {
                 id: 'n3_quiz_sai_ni_4',
                 sentence: '「いつもらったの？」\n「卒業{そつぎょう}（　）もらったんだ。」',
-                options: ['の際に', 'のために', 'のので', 'のから'],
-                correctIndex: 0,
+                options: ['のので', 'のから', 'のために', 'の際に'],
+                correctIndex: 3,
                 explanation: '對話情境。畢業時收到的。'
             },
             {
                 id: 'n3_quiz_sai_ni_5',
                 sentence: '「質問{しつもん}したいんですが。」\n「ご不明{ふめい}な点{てん}がございました（　）、お問{と}い合{あ}わせください。」',
-                options: ['際には', 'ためには', 'のでは', 'からは'],
+                options: ['際には', 'からは', 'のでは', 'ためには'],
                 correctIndex: 0,
                 explanation: '對話情境。有不清楚的地方時請詢問。'
             }
@@ -8968,36 +8968,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_sai_ni_1_1',
                 sentence: '予約{よやく}する（　）、人数{にんずう}をお伝{つた}えください。',
-                options: ['際に', 'ために', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['から', 'ために', '際に', 'ので'],
+                correctIndex: 2,
                 explanation: '預約時請告知人數。'
             },
             {
                 id: 'n3_quiz_sai_ni_1_2',
                 sentence: '引{ひ}っ越{こ}した（　）、住所{じゅうしょ}を変更{へんこう}してください。',
-                options: ['際に', 'ために', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ので', 'から', 'ために', '際に'],
+                correctIndex: 3,
                 explanation: '搬家時請變更地址。'
             },
             {
                 id: 'n3_quiz_sai_ni_1_3',
                 sentence: '出国{しゅっこく}する（　）、手続{てつづ}きが必要{ひつよう}だ。',
-                options: ['際には', 'ためには', 'のでは', 'からは'],
+                options: ['際には', 'からは', 'のでは', 'ためには'],
                 correctIndex: 0,
                 explanation: '出國時需要辦手續。'
             },
             {
                 id: 'n3_quiz_sai_ni_1_4',
                 sentence: '「いつ彼{かれ}に会{あ}ったの？」\n「会議{かいぎ}に出席{しゅっせき}した（　）会{あ}ったよ。」',
-                options: ['際に', 'ために', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ので', '際に', 'ために', 'から'],
+                correctIndex: 1,
                 explanation: '對話情境。出席會議時見到的。'
             },
             {
                 id: 'n3_quiz_sai_ni_1_5',
                 sentence: '「いつ買{か}えばいい？」\n「チケットを受{う}け取{と}る（　）買{か}ってね。」',
-                options: ['際に', 'ために', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ために', 'ので', 'から', '際に'],
+                correctIndex: 3,
                 explanation: '對話情境。領票時買吧。'
             }
         ]
@@ -9044,36 +9044,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_saichuu_ni_1',
                 sentence: '授業{じゅぎょう}{じゅぎょう}の（　）、居眠{いねむ}りしてしまった。',
-                options: ['最中に', 'ために', 'ので', 'から'],
+                options: ['最中に', 'ので', 'ために', 'から'],
                 correctIndex: 0,
                 explanation: '上課上到一半打瞌睡了。'
             },
             {
                 id: 'n3_quiz_saichuu_ni_2',
                 sentence: '試験{しけん}を受{う}けている（　）、具合{ぐあい}が悪{わる}くなった。',
-                options: ['最中に', 'ために', 'ので', 'から'],
+                options: ['最中に', 'ので', 'から', 'ために'],
                 correctIndex: 0,
                 explanation: '正在考試時身體不舒服了。'
             },
             {
                 id: 'n3_quiz_saichuu_ni_3',
                 sentence: '映画{えいが}の（　）、携帯{けいたい}が鳴{な}った。',
-                options: ['最中に', 'ために', 'ので', 'から'],
+                options: ['最中に', 'から', 'ので', 'ために'],
                 correctIndex: 0,
                 explanation: '看電影看到一半手機響了。'
             },
             {
                 id: 'n3_quiz_saichuu_ni_4',
                 sentence: '「なんで聞{き}かなかったの？」\n「説明{せつめい}の（　）だったから。」',
-                options: ['最中', 'ため', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ので', 'ため', '最中', 'から'],
+                correctIndex: 2,
                 explanation: '對話情境。因為正在說明中。'
             },
             {
                 id: 'n3_quiz_saichuu_ni_5',
                 sentence: '「ドアを開{あ}けないで！」\n「え、着替{きが}えている（　）だったの？」',
-                options: ['最中', 'ため', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ため', '最中', 'から', 'ので'],
+                correctIndex: 1,
                 explanation: '對話情境。正在換衣服嗎？'
             }
         ]
@@ -9110,36 +9110,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_saichuu_ni_1_1',
                 sentence: '今{いま}、検討{けんとう}している（　）です。',
-                options: ['最中', 'ため', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ので', 'ため', '最中', 'から'],
+                correctIndex: 2,
                 explanation: '現在正在討論中。'
             },
             {
                 id: 'n3_quiz_saichuu_ni_1_2',
                 sentence: '修理{しゅうり}の（　）なので、使{つか}えません。',
-                options: ['最中', 'ため', 'ので', 'から'],
+                options: ['最中', 'から', 'ため', 'ので'],
                 correctIndex: 0,
                 explanation: '正在維修中，無法使用。'
             },
             {
                 id: 'n3_quiz_saichuu_ni_1_3',
                 sentence: '工事{こうじ}の（　）だから通{とお}れない。',
-                options: ['最中', 'ため', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ので', 'ため', '最中', 'から'],
+                correctIndex: 2,
                 explanation: '正在施工中所以不能通過。'
             },
             {
                 id: 'n3_quiz_saichuu_ni_1_4',
                 sentence: '「まだ決{き}まってないの？」\n「今{いま}、話{はな}し合{あ}いの（　）だよ。」',
-                options: ['最中', 'ため', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ので', 'ため', 'から', '最中'],
+                correctIndex: 3,
                 explanation: '對話情境。現在正在商量中。'
             },
             {
                 id: 'n3_quiz_saichuu_ni_1_5',
                 sentence: '「食{た}べられる？」\n「まだ料理{りょうり}の（　）だから待{ま}って。」',
-                options: ['最中', 'ため', 'ので', 'から'],
-                correctIndex: 0,
+                options: ['ので', 'から', '最中', 'ため'],
+                correctIndex: 2,
                 explanation: '對話情境。還在做菜中請等一下。'
             }
         ]
@@ -9186,35 +9186,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_sara_ni_1',
                 sentence: '問題{もんだい}は（　）複雑{ふくざつ}になった。',
-                options: ['さらに', 'まだ', 'もう', 'やはり'],
-                correctIndex: 0,
+                options: ['もう', 'さらに', 'まだ', 'やはり'],
+                correctIndex: 1,
                 explanation: '問題變得更加複雜了。'
             },
             {
                 id: 'n3_quiz_sara_ni_2',
                 sentence: '（　）努力{どりょく}が必要{ひつよう}だ。',
-                options: ['さらに', 'まだ', 'もう', 'やはり'],
-                correctIndex: 0,
+                options: ['やはり', 'まだ', 'もう', 'さらに'],
+                correctIndex: 3,
                 explanation: '需要更進一步的努力。'
             },
             {
                 id: 'n3_quiz_sara_ni_3',
                 sentence: '彼女{かのじょ}は（　）綺麗{きれい}になった。',
-                options: ['さらに', 'まだ', 'もう', 'やはり'],
+                options: ['さらに', 'もう', 'やはり', 'まだ'],
                 correctIndex: 0,
                 explanation: '她變得更漂亮了。'
             },
             {
                 id: 'n3_quiz_sara_ni_4',
                 sentence: '「足{た}りる？」\n「いや、（　）必要{ひつよう}だよ。」',
-                options: ['さらに', 'まだ', 'もう', 'やはり'],
+                options: ['さらに', 'まだ', 'やはり', 'もう'],
                 correctIndex: 0,
                 explanation: '對話情境。不，還需要更多。'
             },
             {
                 id: 'n3_quiz_sara_ni_5',
                 sentence: '「上達{じょうたつ}した？」\n「うん、（　）練習{れんしゅう}すればもっと上達{じょうたつ}できるよ。」',
-                options: ['さらに', 'まだ', 'もう', 'やはり'],
+                options: ['さらに', 'やはり', 'まだ', 'もう'],
                 correctIndex: 0,
                 explanation: '對話情境。再進一步練習可以更進步。'
             }
@@ -9262,36 +9262,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_sate_1',
                 sentence: '（　）、本題{ほんだい}に入{はい}りましょう。',
-                options: ['さて', 'ところで', 'だから', 'しかし'],
-                correctIndex: 0,
+                options: ['ところで', 'さて', 'しかし', 'だから'],
+                correctIndex: 1,
                 explanation: '那麼，進入正題吧。'
             },
             {
                 id: 'n3_quiz_sate_2',
                 sentence: '（　）、何{なに}から始{はじ}めようか。',
-                options: ['さて', 'ところで', 'だから', 'しかし'],
+                options: ['さて', 'しかし', 'ところで', 'だから'],
                 correctIndex: 0,
                 explanation: '那麼，從什麼開始呢。'
             },
             {
                 id: 'n3_quiz_sate_3',
                 sentence: '（　）、次{つぎ}のステップに進{すす}みましょう。',
-                options: ['さて', 'ところで', 'だから', 'しかし'],
+                options: ['さて', 'しかし', 'だから', 'ところで'],
                 correctIndex: 0,
                 explanation: '那麼，進入下一步吧。'
             },
             {
                 id: 'n3_quiz_sate_4',
                 sentence: '「準備{じゅんび}できた？」\n「うん。（　）、出発{しゅっぱつ}しよう。」',
-                options: ['さて', 'ところで', 'だから', 'しかし'],
-                correctIndex: 0,
+                options: ['だから', 'しかし', 'さて', 'ところで'],
+                correctIndex: 2,
                 explanation: '對話情境。那麼，出發吧。'
             },
             {
                 id: 'n3_quiz_sate_5',
                 sentence: '「雑談{ざつだん}はここまでにして...」\n「（　）、今日{きょう}の目的{もくてき}は...」',
-                options: ['さて', 'ところで', 'だから', 'しかし'],
-                correctIndex: 0,
+                options: ['しかし', 'さて', 'ところで', 'だから'],
+                correctIndex: 1,
                 explanation: '對話情境。那麼，今天的目的是...'
             }
         ]
@@ -9338,36 +9338,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_sei_de_1',
                 sentence: '騒音{そうおん}の（　）眠{ねむ}れなかった。',
-                options: ['せいで', 'おかげで', 'ために', 'によって'],
-                correctIndex: 0,
+                options: ['ために', 'によって', 'せいで', 'おかげで'],
+                correctIndex: 2,
                 explanation: '因為噪音睡不著。'
             },
             {
                 id: 'n3_quiz_sei_de_2',
                 sentence: '工事{こうじ}の（　）道{みち}が渋滞{じゅうたい}している。',
-                options: ['せいで', 'おかげで', 'ために', 'によって'],
-                correctIndex: 0,
+                options: ['おかげで', 'せいで', 'によって', 'ために'],
+                correctIndex: 1,
                 explanation: '因為施工道路塞車。'
             },
             {
                 id: 'n3_quiz_sei_de_3',
                 sentence: '飲{の}み過{す}ぎた（　）、頭{あたま}が痛{いた}い。',
-                options: ['せいで', 'おかげで', 'ために', 'によって'],
-                correctIndex: 0,
+                options: ['ために', 'せいで', 'によって', 'おかげで'],
+                correctIndex: 1,
                 explanation: '因為喝太多頭痛。'
             },
             {
                 id: 'n3_quiz_sei_de_4',
                 sentence: '「なんで落{お}ちたの？」\n「緊張{きんちょう}した（　）だと思{おも}う。」',
-                options: ['せい', 'おかげ', 'ため', 'から'],
-                correctIndex: 0,
+                options: ['ため', 'せい', 'おかげ', 'から'],
+                correctIndex: 1,
                 explanation: '對話情境。我想是因為緊張。'
             },
             {
                 id: 'n3_quiz_sei_de_5',
                 sentence: '「体調{たいちょう}悪{わる}い？」\n「うん、睡眠不足{すいみんぶそく}の（　）かな。」',
-                options: ['せい', 'おかげ', 'ため', 'から'],
-                correctIndex: 0,
+                options: ['ため', 'せい', 'から', 'おかげ'],
+                correctIndex: 1,
                 explanation: '對話情境。可能是睡眠不足的關係。'
             }
         ]
@@ -9421,29 +9421,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_seizei_2',
                 sentence: '今{いま}の給料{きゅうりょう}では（　）生活{せいかつ}するのがやっとだ。',
-                options: ['せいぜい', 'たくさん', '少なくとも', 'もっと'],
-                correctIndex: 0,
+                options: ['少なくとも', 'たくさん', 'もっと', 'せいぜい'],
+                correctIndex: 3,
                 explanation: '現在的薪水頂多勉強過活。'
             },
             {
                 id: 'n3_quiz_seizei_3',
                 sentence: '（　）三十分{さんじゅっぷん}で着{つ}くよ。',
-                options: ['せいぜい', 'たくさん', '少なくとも', 'もっと'],
-                correctIndex: 0,
+                options: ['もっと', 'せいぜい', 'たくさん', '少なくとも'],
+                correctIndex: 1,
                 explanation: '最多三十分鐘就到。'
             },
             {
                 id: 'n3_quiz_seizei_4',
                 sentence: '「いくらかかる？」\n「（　）五千円{ごせんえん}だよ。」',
-                options: ['せいぜい', 'たくさん', '少なくとも', 'もっと'],
+                options: ['せいぜい', '少なくとも', 'もっと', 'たくさん'],
                 correctIndex: 0,
                 explanation: '對話情境。最多五千日圓。'
             },
             {
                 id: 'n3_quiz_seizei_5',
                 sentence: '「彼{かれ}に任{まか}せて大丈夫{だいじょうぶ}？」\n「（　）手伝{てつだ}いぐらいしかできないよ。」',
-                options: ['せいぜい', 'たくさん', '少なくとも', 'もっと'],
-                correctIndex: 0,
+                options: ['少なくとも', 'たくさん', 'もっと', 'せいぜい'],
+                correctIndex: 3,
                 explanation: '對話情境。他頂多只能幫個忙。'
             }
         ]
@@ -9490,36 +9490,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_shibaraku_1',
                 sentence: '（　）休{やす}んでから続{つづ}けよう。',
-                options: ['しばらく', 'たくさん', 'すぐに', 'もっと'],
-                correctIndex: 0,
+                options: ['たくさん', 'もっと', 'すぐに', 'しばらく'],
+                correctIndex: 3,
                 explanation: '稍微休息一下再繼續吧。'
             },
             {
                 id: 'n3_quiz_shibaraku_2',
                 sentence: '（　）連絡{れんらく}がなかった。',
-                options: ['しばらく', 'たくさん', 'すぐに', 'もっと'],
+                options: ['しばらく', 'すぐに', 'もっと', 'たくさん'],
                 correctIndex: 0,
                 explanation: '好一陣子沒有聯繫。'
             },
             {
                 id: 'n3_quiz_shibaraku_3',
                 sentence: '（　）この仕事{しごと}を続{つづ}けるつもりだ。',
-                options: ['しばらく', 'たくさん', 'すぐに', 'もっと'],
-                correctIndex: 0,
+                options: ['もっと', 'しばらく', 'すぐに', 'たくさん'],
+                correctIndex: 1,
                 explanation: '打算暫時繼續這份工作。'
             },
             {
                 id: 'n3_quiz_shibaraku_4',
                 sentence: '「久{ひさ}しぶり！」\n「うん、（　）だね。」',
-                options: ['しばらく', 'たくさん', 'すぐに', 'もっと'],
-                correctIndex: 0,
+                options: ['たくさん', 'すぐに', 'しばらく', 'もっと'],
+                correctIndex: 2,
                 explanation: '對話情境。好久不見。'
             },
             {
                 id: 'n3_quiz_shibaraku_5',
                 sentence: '「いつ決{き}める？」\n「（　）考{かんが}えてから決{き}めるよ。」',
-                options: ['しばらく', 'たくさん', 'すぐに', 'もっと'],
-                correctIndex: 0,
+                options: ['すぐに', 'もっと', 'しばらく', 'たくさん'],
+                correctIndex: 2,
                 explanation: '對話情境。想一陣子再決定。'
             }
         ]
@@ -9566,22 +9566,22 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_shikanai_1',
                 sentence: 'お金{かね}がないから、借{か}りる（　）。',
-                options: ['しかない', 'ことがある', 'わけがない', 'はずがない'],
-                correctIndex: 0,
+                options: ['ことがある', 'わけがない', 'しかない', 'はずがない'],
+                correctIndex: 2,
                 explanation: '沒錢只能借。'
             },
             {
                 id: 'n3_quiz_shikanai_2',
                 sentence: 'バスが来{こ}ないなら、タクシーに乗{の}る（　）。',
-                options: ['しかない', 'ことがある', 'わけがない', 'はずがない'],
-                correctIndex: 0,
+                options: ['はずがない', 'しかない', 'わけがない', 'ことがある'],
+                correctIndex: 1,
                 explanation: '公車不來只能搭計程車。'
             },
             {
                 id: 'n3_quiz_shikanai_3',
                 sentence: '期限{きげん}が明日{あした}だから、徹夜{てつや}する（　）。',
-                options: ['しかない', 'ことがある', 'わけがない', 'はずがない'],
-                correctIndex: 0,
+                options: ['はずがない', 'わけがない', 'ことがある', 'しかない'],
+                correctIndex: 3,
                 explanation: '期限是明天只能熬夜。'
             },
             {
@@ -9594,8 +9594,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_shikanai_5',
                 sentence: '「彼{かれ}、来{く}るかな？」\n「待{ま}つ（　）よ。」',
-                options: ['しかない', 'ことがある', 'わけがない', 'はずがない'],
-                correctIndex: 0,
+                options: ['はずがない', 'ことがある', 'わけがない', 'しかない'],
+                correctIndex: 3,
                 explanation: '對話情境。只能等了。'
             }
         ]
@@ -9642,36 +9642,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_sono_tame_ni_1',
                 sentence: '試験{しけん}に受{う}かりたい。（　）毎日{まいにち}勉強{べんきょう}している。',
-                options: ['そのために', 'そのうえ', 'そのかわり', 'そのほか'],
-                correctIndex: 0,
+                options: ['そのかわり', 'そのために', 'そのほか', 'そのうえ'],
+                correctIndex: 1,
                 explanation: '想通過考試。為此每天學習。'
             },
             {
                 id: 'n3_quiz_sono_tame_ni_2',
                 sentence: '台風{たいふう}が来{き}た。（　）イベントが中止{ちゅうし}になった。',
-                options: ['そのために', 'そのうえ', 'そのかわり', 'そのほか'],
-                correctIndex: 0,
+                options: ['そのかわり', 'そのうえ', 'そのほか', 'そのために'],
+                correctIndex: 3,
                 explanation: '颱風來了。因此活動取消了。'
             },
             {
                 id: 'n3_quiz_sono_tame_ni_3',
                 sentence: '独立{どくりつ}したい。（　）今{いま}準備{じゅんび}している。',
-                options: ['そのために', 'そのうえ', 'そのかわり', 'そのほか'],
-                correctIndex: 0,
+                options: ['そのうえ', 'そのために', 'そのかわり', 'そのほか'],
+                correctIndex: 1,
                 explanation: '想獨立。為此正在準備。'
             },
             {
                 id: 'n3_quiz_sono_tame_ni_4',
                 sentence: '「なんでジムに通{かよ}ってるの？」\n「ダイエットしたいんだ。（　）だよ。」',
-                options: ['そのため', 'そのうえ', 'そのかわり', 'そのほか'],
-                correctIndex: 0,
+                options: ['そのかわり', 'そのうえ', 'そのほか', 'そのため'],
+                correctIndex: 3,
                 explanation: '對話情境。想減肥。為此去的。'
             },
             {
                 id: 'n3_quiz_sono_tame_ni_5',
                 sentence: '「なんで来{こ}なかったの？」\n「急{きゅう}に仕事{しごと}が入{はい}ったんだ。（　）行{い}けなかったんだ。」',
-                options: ['そのために', 'そのうえ', 'そのかわり', 'そのほか'],
-                correctIndex: 0,
+                options: ['そのうえ', 'そのほか', 'そのために', 'そのかわり'],
+                correctIndex: 2,
                 explanation: '對話情境。突然有工作。因此沒能去。'
             }
         ]
@@ -9718,8 +9718,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_soretomo_1',
                 sentence: 'ホットにしますか、（　）アイスにしますか。',
-                options: ['それとも', 'または', 'あるいは', 'しかも'],
-                correctIndex: 0,
+                options: ['または', 'しかも', 'あるいは', 'それとも'],
+                correctIndex: 3,
                 explanation: '要熱的還是冰的？'
             },
             {
@@ -9732,22 +9732,22 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_soretomo_3',
                 sentence: '彼{かれ}は嘘{うそ}をついているのか、（　）本当{ほんとう}のことを言{い}っているのか。',
-                options: ['それとも', 'または', 'あるいは', 'しかも'],
+                options: ['それとも', 'しかも', 'あるいは', 'または'],
                 correctIndex: 0,
                 explanation: '他在說謊還是說真話？'
             },
             {
                 id: 'n3_quiz_soretomo_4',
                 sentence: '「夏{なつ}休{やす}み、海{うみ}に行{い}く？（　）山{やま}に行{い}く？」\n「海{うみ}がいいな。」',
-                options: ['それとも', 'または', 'あるいは', 'しかも'],
-                correctIndex: 0,
+                options: ['または', 'あるいは', 'しかも', 'それとも'],
+                correctIndex: 3,
                 explanation: '對話情境。暑假去海邊還是去山上？'
             },
             {
                 id: 'n3_quiz_soretomo_5',
                 sentence: '「来週{らいしゅう}会{あ}える？月曜日{げつようび}？（　）水曜日{すいようび}？」\n「水曜日{すいようび}なら大丈夫{だいじょうぶ}。」',
-                options: ['それとも', 'または', 'あるいは', 'しかも'],
-                correctIndex: 0,
+                options: ['あるいは', 'しかも', 'それとも', 'または'],
+                correctIndex: 2,
                 explanation: '對話情境。下週能見面嗎？週一還是週三？'
             }
         ]
@@ -9794,36 +9794,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_sou_mo_nai_1',
                 sentence: '電車{でんしゃ}は来{き}（　）。',
-                options: ['そうもない', 'そうだ', 'ようだ', 'らしい'],
-                correctIndex: 0,
+                options: ['そうだ', 'ようだ', 'らしい', 'そうもない'],
+                correctIndex: 3,
                 explanation: '電車看來不會來。'
             },
             {
                 id: 'n3_quiz_sou_mo_nai_2',
                 sentence: 'この仕事{しごと}は一人{ひとり}ではでき（　）。',
-                options: ['そうもない', 'そうだ', 'ようだ', 'らしい'],
-                correctIndex: 0,
+                options: ['ようだ', 'そうだ', 'そうもない', 'らしい'],
+                correctIndex: 2,
                 explanation: '這工作一個人看來做不了。'
             },
             {
                 id: 'n3_quiz_sou_mo_nai_3',
                 sentence: '彼{かれ}は諦{あきら}め（　）。',
-                options: ['そうもない', 'そうだ', 'ようだ', 'らしい'],
-                correctIndex: 0,
+                options: ['ようだ', 'そうもない', 'そうだ', 'らしい'],
+                correctIndex: 1,
                 explanation: '他看來不會放棄。'
             },
             {
                 id: 'n3_quiz_sou_mo_nai_4',
                 sentence: '「治{なお}る？」\n「この状態{じょうたい}じゃ、すぐには治{なお}り（　）。」',
-                options: ['そうもない', 'そうだ', 'ようだ', 'らしい'],
-                correctIndex: 0,
+                options: ['ようだ', 'らしい', 'そうもない', 'そうだ'],
+                correctIndex: 2,
                 explanation: '對話情境。這狀態看來馬上好不了。'
             },
             {
                 id: 'n3_quiz_sou_mo_nai_5',
                 sentence: '「売{う}れる？」\n「この値段{ねだん}じゃ売{う}れ（　）よ。」',
-                options: ['そうもない', 'そうだ', 'ようだ', 'らしい'],
-                correctIndex: 0,
+                options: ['そうだ', 'ようだ', 'らしい', 'そうもない'],
+                correctIndex: 3,
                 explanation: '對話情境。這價格看來賣不掉。'
             }
         ]
@@ -9860,35 +9860,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_sou_mo_nai_sou_ni_nai_1',
                 sentence: '彼女{かのじょ}は泣{な}き止{や}み（　）。',
-                options: ['そうにない', 'そうだ', 'ようだ', 'らしい'],
-                correctIndex: 0,
+                options: ['らしい', 'そうにない', 'そうだ', 'ようだ'],
+                correctIndex: 1,
                 explanation: '她看來不會停止哭泣。'
             },
             {
                 id: 'n3_quiz_sou_mo_nai_sou_ni_nai_2',
                 sentence: 'この天気{てんき}じゃ出{で}かけ（　）。',
-                options: ['そうにない', 'そうだ', 'ようだ', 'らしい'],
-                correctIndex: 0,
+                options: ['らしい', 'ようだ', 'そうにない', 'そうだ'],
+                correctIndex: 2,
                 explanation: '這天氣看來出不了門。'
             },
             {
                 id: 'n3_quiz_sou_mo_nai_sou_ni_nai_3',
                 sentence: '彼{かれ}は賛成{さんせい}し（　）。',
-                options: ['そうもない', 'そうだ', 'ようだ', 'らしい'],
-                correctIndex: 0,
+                options: ['らしい', 'そうもない', 'そうだ', 'ようだ'],
+                correctIndex: 1,
                 explanation: '他根本不可能贊成。'
             },
             {
                 id: 'n3_quiz_sou_mo_nai_sou_ni_nai_4',
                 sentence: '「解決{かいけつ}する？」\n「話{はな}し合{あ}いだけでは解決{かいけつ}し（　）ね。」',
-                options: ['そうにない', 'そうだ', 'ようだ', 'らしい'],
-                correctIndex: 0,
+                options: ['らしい', 'そうだ', 'そうにない', 'ようだ'],
+                correctIndex: 2,
                 explanation: '對話情境。光靠商量看來解決不了。'
             },
             {
                 id: 'n3_quiz_sou_mo_nai_sou_ni_nai_5',
                 sentence: '「信{しん}じてくれる？」\n「証拠{しょうこ}がないと信{しん}じてくれ（　）よ。」',
-                options: ['そうもない', 'そうだ', 'ようだ', 'らしい'],
+                options: ['そうもない', 'ようだ', 'らしい', 'そうだ'],
                 correctIndex: 0,
                 explanation: '對話情境。沒證據根本不會相信。'
             }
@@ -9936,35 +9936,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_sude_ni_1',
                 sentence: '店{みせ}は（　）閉{し}まっていた。',
-                options: ['すでに', 'まだ', 'やっと', 'ついに'],
-                correctIndex: 0,
+                options: ['やっと', 'ついに', 'すでに', 'まだ'],
+                correctIndex: 2,
                 explanation: '店已經關了。'
             },
             {
                 id: 'n3_quiz_sude_ni_2',
                 sentence: '問題{もんだい}は（　）解決{かいけつ}済{ず}みだ。',
-                options: ['すでに', 'まだ', 'やっと', 'ついに'],
-                correctIndex: 0,
+                options: ['やっと', 'まだ', 'ついに', 'すでに'],
+                correctIndex: 3,
                 explanation: '問題已經解決了。'
             },
             {
                 id: 'n3_quiz_sude_ni_3',
                 sentence: '契約{けいやく}は（　）終了{しゅうりょう}している。',
-                options: ['すでに', 'まだ', 'やっと', 'ついに'],
+                options: ['すでに', 'やっと', 'ついに', 'まだ'],
                 correctIndex: 0,
                 explanation: '合約已經終止了。'
             },
             {
                 id: 'n3_quiz_sude_ni_4',
                 sentence: '「チケット、ある？」\n「（　）売{う}り切{き}れだって。」',
-                options: ['すでに', 'まだ', 'やっと', 'ついに'],
+                options: ['すでに', 'やっと', 'まだ', 'ついに'],
                 correctIndex: 0,
                 explanation: '對話情境。已經賣完了。'
             },
             {
                 id: 'n3_quiz_sude_ni_5',
                 sentence: '「彼{かれ}に連絡{れんらく}した？」\n「うん、（　）伝{つた}えたよ。」',
-                options: ['すでに', 'まだ', 'やっと', 'ついに'],
+                options: ['すでに', 'ついに', 'まだ', 'やっと'],
                 correctIndex: 0,
                 explanation: '對話情境。已經傳達了。'
             }
@@ -10012,29 +10012,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_sunawachi_1',
                 sentence: 'H2O、（　）水{みず}のことだ。',
-                options: ['すなわち', 'ところで', 'しかし', 'だから'],
+                options: ['すなわち', 'しかし', 'ところで', 'だから'],
                 correctIndex: 0,
                 explanation: 'H2O就是水。'
             },
             {
                 id: 'n3_quiz_sunawachi_2',
                 sentence: '彼{かれ}の答{こた}えは（　）「ノー」ということだ。',
-                options: ['すなわち', 'ところで', 'しかし', 'だから'],
-                correctIndex: 0,
+                options: ['ところで', 'しかし', 'すなわち', 'だから'],
+                correctIndex: 2,
                 explanation: '他的回答也就是「不」的意思。'
             },
             {
                 id: 'n3_quiz_sunawachi_3',
                 sentence: '首都{しゅと}、（　）東京{とうきょう}で開催{かいさい}される。',
-                options: ['すなわち', 'ところで', 'しかし', 'だから'],
-                correctIndex: 0,
+                options: ['しかし', 'だから', 'ところで', 'すなわち'],
+                correctIndex: 3,
                 explanation: '在首都，也就是東京舉辦。'
             },
             {
                 id: 'n3_quiz_sunawachi_4',
                 sentence: '「この略語{りゃくご}は何{なに}？」\n「AI、（　）人工知能{じんこうちのう}のことだよ。」',
-                options: ['すなわち', 'ところで', 'しかし', 'だから'],
-                correctIndex: 0,
+                options: ['ところで', 'しかし', 'だから', 'すなわち'],
+                correctIndex: 3,
                 explanation: '對話情境。AI就是人工智慧。'
             },
             {
@@ -10088,36 +10088,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_suuryou_wa_1',
                 sentence: 'このケーキ、一個{いっこ}三百円{さんびゃくえん}（　）するよ。',
-                options: ['は', 'も', 'が', 'を'],
+                options: ['は', 'が', 'も', 'を'],
                 correctIndex: 0,
                 explanation: '這蛋糕一個至少要三百日圓。'
             },
             {
                 id: 'n3_quiz_suuryou_wa_2',
                 sentence: '完成{かんせい}まで一週間{いっしゅうかん}（　）かかる。',
-                options: ['は', 'も', 'が', 'を'],
-                correctIndex: 0,
+                options: ['を', 'も', 'は', 'が'],
+                correctIndex: 2,
                 explanation: '完成至少要一週。'
             },
             {
                 id: 'n3_quiz_suuryou_wa_3',
                 sentence: 'この店{みせ}、毎日{まいにち}二百人{にひゃくにん}（　）来{く}る。',
-                options: ['は', 'も', 'が', 'を'],
-                correctIndex: 0,
+                options: ['も', 'は', 'を', 'が'],
+                correctIndex: 1,
                 explanation: '這家店每天至少來二百人。'
             },
             {
                 id: 'n3_quiz_suuryou_wa_4',
                 sentence: '「どのくらい待{ま}つ？」\n「三十分{さんじゅっぷん}（　）待{ま}つと思{おも}うよ。」',
-                options: ['は', 'も', 'が', 'を'],
-                correctIndex: 0,
+                options: ['が', 'を', 'は', 'も'],
+                correctIndex: 2,
                 explanation: '對話情境。我想至少要等三十分鐘。'
             },
             {
                 id: 'n3_quiz_suuryou_wa_5',
                 sentence: '「何{なん}ページ読{よ}んだ？」\n「五十{ごじゅう}ページ（　）読{よ}んだよ。」',
-                options: ['は', 'も', 'が', 'を'],
-                correctIndex: 0,
+                options: ['が', 'も', 'を', 'は'],
+                correctIndex: 3,
                 explanation: '對話情境。至少讀了五十頁。'
             }
         ]
@@ -10154,35 +10154,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_suuryou_wa_1_1',
                 sentence: 'あと一時間{いちじかん}（　）必要{ひつよう}だ。',
-                options: ['は', 'も', 'が', 'を'],
+                options: ['は', 'を', 'も', 'が'],
                 correctIndex: 0,
                 explanation: '還需要至少一個小時。'
             },
             {
                 id: 'n3_quiz_suuryou_wa_1_2',
                 sentence: '五千円{ごせんえん}（　）持{も}っていったほうがいい。',
-                options: ['は', 'も', 'が', 'を'],
+                options: ['は', 'も', 'を', 'が'],
                 correctIndex: 0,
                 explanation: '至少帶五千日圓比較好。'
             },
             {
                 id: 'n3_quiz_suuryou_wa_1_3',
                 sentence: '二回{にかい}（　）確認{かくにん}したはずだ。',
-                options: ['は', 'も', 'が', 'を'],
+                options: ['は', 'が', 'を', 'も'],
                 correctIndex: 0,
                 explanation: '應該至少確認過兩次了。'
             },
             {
                 id: 'n3_quiz_suuryou_wa_1_4',
                 sentence: '「何個{なんこ}買{か}えばいい？」\n「三個{さんこ}（　）買{か}っておいて。」',
-                options: ['は', 'も', 'が', 'を'],
-                correctIndex: 0,
+                options: ['が', 'を', 'は', 'も'],
+                correctIndex: 2,
                 explanation: '對話情境。至少買三個。'
             },
             {
                 id: 'n3_quiz_suuryou_wa_1_5',
                 sentence: '「彼{かれ}の年齢{ねんれい}は？」\n「四十歳{よんじゅっさい}（　）いってるだろう。」',
-                options: ['は', 'も', 'が', 'を'],
+                options: ['は', 'が', 'を', 'も'],
                 correctIndex: 0,
                 explanation: '對話情境。至少有四十歲了吧。'
             }
@@ -10230,36 +10230,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ta_mono_da_1',
                 sentence: '子供{こども}の頃{ころ}、祖母{そぼ}の家{いえ}によく遊{あそ}びに行{い}った（　）。',
-                options: ['ものだ', 'ことだ', 'わけだ', 'はずだ'],
-                correctIndex: 0,
+                options: ['ことだ', 'はずだ', 'ものだ', 'わけだ'],
+                correctIndex: 2,
                 explanation: '小時候經常去祖母家玩。'
             },
             {
                 id: 'n3_quiz_ta_mono_da_2',
                 sentence: '昔{むかし}はこの辺{へん}は静{しず}かだった（　）。',
-                options: ['ものだ', 'ことだ', 'わけだ', 'はずだ'],
-                correctIndex: 0,
+                options: ['ことだ', 'わけだ', 'ものだ', 'はずだ'],
+                correctIndex: 2,
                 explanation: '以前這附近很安靜啊。'
             },
             {
                 id: 'n3_quiz_ta_mono_da_3',
                 sentence: '若{わか}い頃{ころ}はよく徹夜{てつや}した（　）。',
-                options: ['ものだ', 'ことだ', 'わけだ', 'はずだ'],
-                correctIndex: 0,
+                options: ['わけだ', 'ことだ', 'ものだ', 'はずだ'],
+                correctIndex: 2,
                 explanation: '年輕時經常熬夜。'
             },
             {
                 id: 'n3_quiz_ta_mono_da_4',
                 sentence: '「懐{なつ}かしいね。」\n「うん、ここでよく遊{あそ}んだ（　）ね。」',
-                options: ['ものだ', 'ことだ', 'わけだ', 'はずだ'],
-                correctIndex: 0,
+                options: ['はずだ', 'ことだ', 'ものだ', 'わけだ'],
+                correctIndex: 2,
                 explanation: '對話情境。以前經常在這裡玩呢。'
             },
             {
                 id: 'n3_quiz_ta_mono_da_5',
                 sentence: '「この曲{きょく}、知{し}ってる？」\n「うん、学生{がくせい}時代{じだい}によく聞{き}いた（　）よ。」',
-                options: ['ものだ', 'ことだ', 'わけだ', 'はずだ'],
-                correctIndex: 0,
+                options: ['ことだ', 'わけだ', 'ものだ', 'はずだ'],
+                correctIndex: 2,
                 explanation: '對話情境。學生時代經常聽這首歌。'
             }
         ]
@@ -10306,36 +10306,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ta_totan_1',
                 sentence: 'ベッドに入{はい}った（　）、眠{ねむ}ってしまった。',
-                options: ['とたん', 'ところ', 'ばかり', 'まま'],
-                correctIndex: 0,
+                options: ['ばかり', 'とたん', 'ところ', 'まま'],
+                correctIndex: 1,
                 explanation: '剛躺到床上就睡著了。'
             },
             {
                 id: 'n3_quiz_ta_totan_2',
                 sentence: '食{た}べ始{はじ}めた（　）、電話{でんわ}が鳴{な}った。',
-                options: ['とたん', 'ところ', 'ばかり', 'まま'],
-                correctIndex: 0,
+                options: ['ばかり', 'とたん', 'ところ', 'まま'],
+                correctIndex: 1,
                 explanation: '剛開始吃電話就響了。'
             },
             {
                 id: 'n3_quiz_ta_totan_3',
                 sentence: '目{め}を覚{さ}ました（　）、地震{じしん}が起{お}きた。',
-                options: ['とたん', 'ところ', 'ばかり', 'まま'],
-                correctIndex: 0,
+                options: ['ばかり', 'とたん', 'ところ', 'まま'],
+                correctIndex: 1,
                 explanation: '剛醒來就發生地震了。'
             },
             {
                 id: 'n3_quiz_ta_totan_4',
                 sentence: '「何{なに}があったの？」\n「座{すわ}った（　）、椅子{いす}が壊{こわ}れちゃって。」',
-                options: ['とたんに', 'ところで', 'ばかりに', 'ままで'],
-                correctIndex: 0,
+                options: ['ところで', 'ばかりに', 'ままで', 'とたんに'],
+                correctIndex: 3,
                 explanation: '對話情境。剛坐下椅子就壞了。'
             },
             {
                 id: 'n3_quiz_ta_totan_5',
                 sentence: '「大丈夫{だいじょうぶ}？」\n「急{きゅう}に立{た}った（　）、頭{あたま}がくらくらして。」',
-                options: ['とたん', 'ところ', 'ばかり', 'まま'],
-                correctIndex: 0,
+                options: ['ばかり', 'ところ', 'まま', 'とたん'],
+                correctIndex: 3,
                 explanation: '對話情境。突然站起來就頭暈了。'
             }
         ]
@@ -10382,36 +10382,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tabi_ni_1',
                 sentence: 'この写真{しゃしん}を見{み}る（　）、昔{むかし}を思{おも}い出{だ}す。',
-                options: ['たびに', 'ところで', 'ばかりに', 'ままに'],
-                correctIndex: 0,
+                options: ['ところで', 'ままに', 'たびに', 'ばかりに'],
+                correctIndex: 2,
                 explanation: '每當看這張照片就會想起從前。'
             },
             {
                 id: 'n3_quiz_tabi_ni_2',
                 sentence: '出張{しゅっちょう}の（　）、お土産{みやげ}を買{か}ってくる。',
-                options: ['たびに', 'ところで', 'ばかりに', 'ままに'],
-                correctIndex: 0,
+                options: ['ままに', 'たびに', 'ばかりに', 'ところで'],
+                correctIndex: 1,
                 explanation: '每次出差都會買紀念品回來。'
             },
             {
                 id: 'n3_quiz_tabi_ni_3',
                 sentence: '彼{かれ}に会{あ}う（　）、新{あたら}しいことを教{おし}えてもらう。',
-                options: ['たびに', 'ところで', 'ばかりに', 'ままに'],
-                correctIndex: 0,
+                options: ['ところで', 'ばかりに', 'ままに', 'たびに'],
+                correctIndex: 3,
                 explanation: '每次見到他都會學到新東西。'
             },
             {
                 id: 'n3_quiz_tabi_ni_4',
                 sentence: '「この歌{うた}、好{す}き？」\n「うん、聞{き}く（　）元気{げんき}が出{で}るよ。」',
-                options: ['たびに', 'ところで', 'ばかりに', 'ままに'],
-                correctIndex: 0,
+                options: ['ところで', 'ばかりに', 'たびに', 'ままに'],
+                correctIndex: 2,
                 explanation: '對話情境。每次聽都會有精神。'
             },
             {
                 id: 'n3_quiz_tabi_ni_5',
                 sentence: '「実家{じっか}に帰{かえ}る？」\n「帰{かえ}る（　）、太{ふと}っちゃうんだよね。」',
-                options: ['たびに', 'ところで', 'ばかりに', 'ままに'],
-                correctIndex: 0,
+                options: ['ままに', 'ばかりに', 'たびに', 'ところで'],
+                correctIndex: 2,
                 explanation: '對話情境。每次回老家都會變胖。'
             }
         ]
@@ -10458,36 +10458,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tame_ni_1',
                 sentence: '試験{しけん}に受{う}かる（　）、毎日{まいにち}勉強{べんきょう}している。',
-                options: ['ために', 'のに', 'からに', 'までに'],
-                correctIndex: 0,
+                options: ['のに', 'からに', 'までに', 'ために'],
+                correctIndex: 3,
                 explanation: '為了通過考試每天學習。'
             },
             {
                 id: 'n3_quiz_tame_ni_2',
                 sentence: '風邪{かぜ}をひいた（　）、学校{がっこう}を休{やす}んだ。',
-                options: ['ために', 'のに', 'からに', 'までに'],
+                options: ['ために', 'までに', 'からに', 'のに'],
                 correctIndex: 0,
                 explanation: '因為感冒請假了。'
             },
             {
                 id: 'n3_quiz_tame_ni_3',
                 sentence: '将来{しょうらい}の（　）、今{いま}頑張{がんば}る。',
-                options: ['ために', 'のに', 'からに', 'までに'],
+                options: ['ために', 'までに', 'からに', 'のに'],
                 correctIndex: 0,
                 explanation: '為了將來現在努力。'
             },
             {
                 id: 'n3_quiz_tame_ni_4',
                 sentence: '「なぜ日本{にほん}に来{き}たの？」\n「仕事{しごと}の（　）来{き}ました。」',
-                options: ['ために', 'のに', 'からに', 'までに'],
-                correctIndex: 0,
+                options: ['のに', 'までに', 'からに', 'ために'],
+                correctIndex: 3,
                 explanation: '對話情境。為了工作來的。'
             },
             {
                 id: 'n3_quiz_tame_ni_5',
                 sentence: '「なんで中止{ちゅうし}になったの？」\n「台風{たいふう}の（　）中止{ちゅうし}になったんだ。」',
-                options: ['ために', 'のに', 'からに', 'までに'],
-                correctIndex: 0,
+                options: ['までに', 'からに', 'ために', 'のに'],
+                correctIndex: 2,
                 explanation: '對話情境。因為颱風取消了。'
             }
         ]
@@ -10534,36 +10534,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tashika_ni_1',
                 sentence: '（　）、その意見{いけん}は正{ただ}しい。',
-                options: ['確かに', 'たぶん', 'きっと', 'もしかして'],
+                options: ['確かに', 'たぶん', 'もしかして', 'きっと'],
                 correctIndex: 0,
                 explanation: '確實，那個意見是對的。'
             },
             {
                 id: 'n3_quiz_tashika_ni_2',
                 sentence: '（　）、この店{みせ}に来{き}たことがある。',
-                options: ['確かに', 'たぶん', 'きっと', 'もしかして'],
+                options: ['確かに', 'きっと', 'たぶん', 'もしかして'],
                 correctIndex: 0,
                 explanation: '確實來過這家店。'
             },
             {
                 id: 'n3_quiz_tashika_ni_3',
                 sentence: '（　）彼{かれ}は昨日{きのう}いた。',
-                options: ['確かに', 'たぶん', 'きっと', 'もしかして'],
-                correctIndex: 0,
+                options: ['きっと', 'もしかして', '確かに', 'たぶん'],
+                correctIndex: 2,
                 explanation: '確實他昨天在。'
             },
             {
                 id: 'n3_quiz_tashika_ni_4',
                 sentence: '「この計画{けいかく}、リスクがあるよね。」\n「（　）、でもやる価値{かち}はある。」',
-                options: ['確かに', 'たぶん', 'きっと', 'もしかして'],
-                correctIndex: 0,
+                options: ['もしかして', '確かに', 'たぶん', 'きっと'],
+                correctIndex: 1,
                 explanation: '對話情境。確實，但值得做。'
             },
             {
                 id: 'n3_quiz_tashika_ni_5',
                 sentence: '「ここに置{お}いた？」\n「うん、（　）ここに置{お}いたよ。」',
-                options: ['確かに', 'たぶん', 'きっと', 'もしかして'],
-                correctIndex: 0,
+                options: ['きっと', '確かに', 'たぶん', 'もしかして'],
+                correctIndex: 1,
                 explanation: '對話情境。確實放在這裡了。'
             }
         ]
@@ -10600,29 +10600,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tashika_ni_1_1',
                 sentence: '（　）おいしいけど、量{りょう}が少{すく}ない。',
-                options: ['確かに', 'たぶん', 'きっと', 'もしかして'],
-                correctIndex: 0,
+                options: ['たぶん', '確かに', 'もしかして', 'きっと'],
+                correctIndex: 1,
                 explanation: '確實好吃，但量太少。'
             },
             {
                 id: 'n3_quiz_tashika_ni_1_2',
                 sentence: '（　）彼{かれ}は頭{あたま}がいいが、努力{どりょく}が足{た}りない。',
-                options: ['確かに', 'たぶん', 'きっと', 'もしかして'],
+                options: ['確かに', 'もしかして', 'きっと', 'たぶん'],
                 correctIndex: 0,
                 explanation: '確實他很聰明，但努力不夠。'
             },
             {
                 id: 'n3_quiz_tashika_ni_1_3',
                 sentence: '（　）問題{もんだい}はあるけど、解決{かいけつ}できる。',
-                options: ['確かに', 'たぶん', 'きっと', 'もしかして'],
+                options: ['確かに', 'もしかして', 'きっと', 'たぶん'],
                 correctIndex: 0,
                 explanation: '確實有問題，但可以解決。'
             },
             {
                 id: 'n3_quiz_tashika_ni_1_4',
                 sentence: '「大変{たいへん}そうだね。」\n「（　）大変{たいへん}だけど、やりがいがある。」',
-                options: ['確かに', 'たぶん', 'きっと', 'もしかして'],
-                correctIndex: 0,
+                options: ['もしかして', 'たぶん', '確かに', 'きっと'],
+                correctIndex: 2,
                 explanation: '對話情境。確實辛苦，但有成就感。'
             },
             {
@@ -10676,36 +10676,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tate_1',
                 sentence: '揚{あ}げ（　）の天{てん}ぷらは最高{さいこう}だ。',
-                options: ['たて', 'がち', 'っぽい', 'ぎみ'],
-                correctIndex: 0,
+                options: ['ぎみ', 'たて', 'っぽい', 'がち'],
+                correctIndex: 1,
                 explanation: '剛炸好的天婦羅最棒。'
             },
             {
                 id: 'n3_quiz_tate_2',
                 sentence: 'この牛乳{ぎゅうにゅう}は絞{しぼ}り（　）だ。',
-                options: ['たて', 'がち', 'っぽい', 'ぎみ'],
-                correctIndex: 0,
+                options: ['ぎみ', 'がち', 'たて', 'っぽい'],
+                correctIndex: 2,
                 explanation: '這牛奶是剛擠的。'
             },
             {
                 id: 'n3_quiz_tate_3',
                 sentence: '炊{た}き（　）のご飯{はん}はおいしい。',
-                options: ['たて', 'がち', 'っぽい', 'ぎみ'],
+                options: ['たて', 'っぽい', 'ぎみ', 'がち'],
                 correctIndex: 0,
                 explanation: '剛煮好的飯很好吃。'
             },
             {
                 id: 'n3_quiz_tate_4',
                 sentence: '「このパン、柔{やわ}らかいね。」\n「焼{や}き（　）だからね。」',
-                options: ['たて', 'がち', 'っぽい', 'ぎみ'],
-                correctIndex: 0,
+                options: ['ぎみ', 'っぽい', 'たて', 'がち'],
+                correctIndex: 2,
                 explanation: '對話情境。因為是剛烤好的。'
             },
             {
                 id: 'n3_quiz_tate_5',
                 sentence: '「卵{たまご}、新鮮{しんせん}？」\n「うん、産{う}み（　）だよ。」',
-                options: ['たて', 'がち', 'っぽい', 'ぎみ'],
-                correctIndex: 0,
+                options: ['っぽい', 'ぎみ', 'たて', 'がち'],
+                correctIndex: 2,
                 explanation: '對話情境。是剛生的蛋。'
             }
         ]
@@ -10752,36 +10752,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tatoeba_1',
                 sentence: '果物{くだもの}、（　）りんごやみかんが好{す}きだ。',
-                options: ['例えば', 'つまり', 'すなわち', 'しかし'],
-                correctIndex: 0,
+                options: ['すなわち', 'しかし', 'つまり', '例えば'],
+                correctIndex: 3,
                 explanation: '水果，例如蘋果和橘子我喜歡。'
             },
             {
                 id: 'n3_quiz_tatoeba_2',
                 sentence: '（　）一億円{いちおくえん}あったら、何{なに}をしたい？',
-                options: ['例えば', 'つまり', 'すなわち', 'しかし'],
+                options: ['例えば', 'すなわち', 'つまり', 'しかし'],
                 correctIndex: 0,
                 explanation: '比如有一億的話想做什麼？'
             },
             {
                 id: 'n3_quiz_tatoeba_3',
                 sentence: '外国語{がいこくご}、（　）英語{えいご}や中国語{ちゅうごくご}を勉強{べんきょう}している。',
-                options: ['例えば', 'つまり', 'すなわち', 'しかし'],
-                correctIndex: 0,
+                options: ['すなわち', 'しかし', '例えば', 'つまり'],
+                correctIndex: 2,
                 explanation: '外語，例如英語和中文正在學。'
             },
             {
                 id: 'n3_quiz_tatoeba_4',
                 sentence: '「何{なに}かスポーツできる？」\n「（　）テニスとか。」',
-                options: ['例えば', 'つまり', 'すなわち', 'しかし'],
-                correctIndex: 0,
+                options: ['しかし', 'すなわち', '例えば', 'つまり'],
+                correctIndex: 2,
                 explanation: '對話情境。例如網球之類的。'
             },
             {
                 id: 'n3_quiz_tatoeba_5',
                 sentence: '「趣味{しゅみ}は？」\n「音楽{おんがく}かな。（　）ギターを弾{ひ}いたりする。」',
-                options: ['例えば', 'つまり', 'すなわち', 'しかし'],
-                correctIndex: 0,
+                options: ['しかし', 'つまり', '例えば', 'すなわち'],
+                correctIndex: 2,
                 explanation: '對話情境。例如彈吉他之類的。'
             }
         ]
@@ -10825,29 +10825,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tatoeba_1_2',
                 sentence: '日本{にほん}料理{りょうり}は（　）寿司{すし}や天{てん}ぷらなどがある。',
-                options: ['例えば', 'つまり', 'すなわち', 'しかし'],
+                options: ['例えば', 'しかし', 'つまり', 'すなわち'],
                 correctIndex: 0,
                 explanation: '日本料理例如有壽司或天婦羅等。'
             },
             {
                 id: 'n3_quiz_tatoeba_1_3',
                 sentence: 'SNS、（　）ツイッターやインスタなどをよく使{つか}う。',
-                options: ['例えば', 'つまり', 'すなわち', 'しかし'],
-                correctIndex: 0,
+                options: ['すなわち', '例えば', 'つまり', 'しかし'],
+                correctIndex: 1,
                 explanation: 'SNS例如Twitter或Instagram等常用。'
             },
             {
                 id: 'n3_quiz_tatoeba_1_4',
                 sentence: '「どんな本{ほん}を読{よ}むの？」\n「（　）小説{しょうせつ}とかビジネス書{しょ}とか。」',
-                options: ['例えば', 'つまり', 'すなわち', 'しかし'],
-                correctIndex: 0,
+                options: ['しかし', 'すなわち', 'つまり', '例えば'],
+                correctIndex: 3,
                 explanation: '對話情境。例如小說或商業書之類的。'
             },
             {
                 id: 'n3_quiz_tatoeba_1_5',
                 sentence: '「休{やす}みの日{ひ}は何{なに}する？」\n「（　）映画{えいが}を見{み}たり買{か}い物{もの}したりかな。」',
-                options: ['例えば', 'つまり', 'すなわち', 'しかし'],
-                correctIndex: 0,
+                options: ['つまり', 'しかし', '例えば', 'すなわち'],
+                correctIndex: 2,
                 explanation: '對話情境。例如看電影或購物之類的。'
             }
         ]
@@ -10894,36 +10894,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tatoe_temo_1',
                 sentence: '（　）難{むずか}しくても、挑戦{ちょうせん}する。',
-                options: ['たとえ', 'もし', 'だから', 'しかし'],
-                correctIndex: 0,
+                options: ['もし', 'だから', 'しかし', 'たとえ'],
+                correctIndex: 3,
                 explanation: '即使困難也要挑戰。'
             },
             {
                 id: 'n3_quiz_tatoe_temo_2',
                 sentence: '（　）一人{ひとり}でも、頑張{がんば}る。',
-                options: ['たとえ', 'もし', 'だから', 'しかし'],
+                options: ['たとえ', 'だから', 'しかし', 'もし'],
                 correctIndex: 0,
                 explanation: '即使一個人也會努力。'
             },
             {
                 id: 'n3_quiz_tatoe_temo_3',
                 sentence: '（　）どんなに遠{とお}くても、会{あ}いに行{い}く。',
-                options: ['たとえ', 'もし', 'だから', 'しかし'],
+                options: ['たとえ', 'しかし', 'もし', 'だから'],
                 correctIndex: 0,
                 explanation: '即使多遠也會去見面。'
             },
             {
                 id: 'n3_quiz_tatoe_temo_4',
                 sentence: '「もし嫌{いや}だって言{い}われたら？」\n「（　）嫌{いや}だと言{い}われても、説得{せっとく}するよ。」',
-                options: ['たとえ', 'もし', 'だから', 'しかし'],
-                correctIndex: 0,
+                options: ['もし', 'しかし', 'たとえ', 'だから'],
+                correctIndex: 2,
                 explanation: '對話情境。即使被拒絕也會說服。'
             },
             {
                 id: 'n3_quiz_tatoe_temo_5',
                 sentence: '「失敗{しっぱい}したらどうする？」\n「（　）失敗{しっぱい}しても、また挑戦{ちょうせん}するさ。」',
-                options: ['たとえ', 'もし', 'だから', 'しかし'],
-                correctIndex: 0,
+                options: ['しかし', 'だから', 'もし', 'たとえ'],
+                correctIndex: 3,
                 explanation: '對話情境。即使失敗也會再挑戰。'
             }
         ]
@@ -10970,35 +10970,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tatte_1',
                 sentence: '走{はし}っ（　）、間{ま}に合{あ}わないよ。',
-                options: ['たって', 'ても', 'から', 'けど'],
-                correctIndex: 0,
+                options: ['ても', 'けど', 'たって', 'から'],
+                correctIndex: 2,
                 explanation: '跑也來不及啦。'
             },
             {
                 id: 'n3_quiz_tatte_2',
                 sentence: '言{い}っ（　）、聞{き}いてくれない。',
-                options: ['たって', 'ても', 'から', 'けど'],
-                correctIndex: 0,
+                options: ['から', 'たって', 'ても', 'けど'],
+                correctIndex: 1,
                 explanation: '說了也不聽。'
             },
             {
                 id: 'n3_quiz_tatte_3',
                 sentence: '高{たか}く（　）、買{か}うよ。',
-                options: ['たって', 'ても', 'から', 'けど'],
-                correctIndex: 0,
+                options: ['けど', 'たって', 'ても', 'から'],
+                correctIndex: 1,
                 explanation: '即使貴也會買。'
             },
             {
                 id: 'n3_quiz_tatte_4',
                 sentence: '「説明{せつめい}して。」\n「説明{せつめい}し（　）、わからないでしょ。」',
-                options: ['たって', 'ても', 'から', 'けど'],
+                options: ['たって', 'ても', 'けど', 'から'],
                 correctIndex: 0,
                 explanation: '對話情境。解釋了你也不懂吧。'
             },
             {
                 id: 'n3_quiz_tatte_5',
                 sentence: '「待{ま}てば？」\n「待{ま}っ（　）、来{こ}ないよ。」',
-                options: ['たって', 'ても', 'から', 'けど'],
+                options: ['たって', 'から', 'けど', 'ても'],
                 correctIndex: 0,
                 explanation: '對話情境。等也不會來啦。'
             }
@@ -11046,35 +11046,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_te_bakari_iru_1',
                 sentence: '泣{な}い（　）いないで、頑張{がんば}りなさい。',
-                options: ['てばかり', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'てから', 'てばかり'],
+                correctIndex: 3,
                 explanation: '別老是哭，加油。'
             },
             {
                 id: 'n3_quiz_te_bakari_iru_2',
                 sentence: '彼{かれ}はスマホをいじっ（　）いる。',
-                options: ['てばかり', 'てから', 'てまで', 'てさえ'],
+                options: ['てばかり', 'てさえ', 'てから', 'てまで'],
                 correctIndex: 0,
                 explanation: '他老是在玩手機。'
             },
             {
                 id: 'n3_quiz_te_bakari_iru_3',
                 sentence: '休{やす}ん（　）いると、仕事{しごと}が終{お}わらないよ。',
-                options: ['でばかり', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でまで', 'でばかり', 'でから', 'でさえ'],
+                correctIndex: 1,
                 explanation: '老是休息的話工作做不完。'
             },
             {
                 id: 'n3_quiz_te_bakari_iru_4',
                 sentence: '「最近{さいきん}どう？」\n「忙{いそが}しくて働{はたら}い（　）いるよ。」',
-                options: ['てばかり', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てばかり', 'てから', 'てまで'],
+                correctIndex: 1,
                 explanation: '對話情境。忙到一直在工作。'
             },
             {
                 id: 'n3_quiz_te_bakari_iru_5',
                 sentence: '「運動{うんどう}しないの？」\n「家{いえ}にい（　）いて、全然{ぜんぜん}してない。」',
-                options: ['てばかり', 'てから', 'てまで', 'てさえ'],
+                options: ['てばかり', 'てさえ', 'てから', 'てまで'],
                 correctIndex: 0,
                 explanation: '對話情境。老是在家完全沒運動。'
             }
@@ -11112,36 +11112,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_te_goran_1',
                 sentence: 'まず自分{じぶん}でやっ（　）。',
-                options: ['てごらん', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てから', 'てまで', 'てごらん'],
+                correctIndex: 3,
                 explanation: '先自己試著做做看。'
             },
             {
                 id: 'n3_quiz_te_goran_2',
                 sentence: 'この絵{え}を見{み}（　）、きれいでしょう？',
-                options: ['てごらん', 'てから', 'てまで', 'てさえ'],
+                options: ['てごらん', 'てさえ', 'てまで', 'てから'],
                 correctIndex: 0,
                 explanation: '看看這幅畫，很美吧？'
             },
             {
                 id: 'n3_quiz_te_goran_3',
                 sentence: 'もう一回{いっかい}説明{せつめい}し（　）。',
-                options: ['てごらん', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'てごらん', 'てさえ', 'てから'],
+                correctIndex: 1,
                 explanation: '再解釋一次看看。'
             },
             {
                 id: 'n3_quiz_te_goran_4',
                 sentence: '「この問題{もんだい}わからない。」\n「先生{せんせい}に聞{き}い（　）。」',
-                options: ['てごらん', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てごらん', 'てから', 'てまで'],
+                correctIndex: 1,
                 explanation: '對話情境。去問問老師看看。'
             },
             {
                 id: 'n3_quiz_te_goran_5',
                 sentence: '「ピアノ弾{ひ}けない。」\n「練習{れんしゅう}し（　）、上手{じょうず}になるよ。」',
-                options: ['てごらん', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てから', 'てまで', 'てごらん', 'てさえ'],
+                correctIndex: 2,
                 explanation: '對話情境。試著練習，會變厲害的。'
             }
         ]
@@ -11178,36 +11178,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_te_hajimete_1',
                 sentence: '失{うしな}っ（　）、大切{たいせつ}さがわかる。',
-                options: ['てはじめて', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'てはじめて', 'てさえ', 'てから'],
+                correctIndex: 1,
                 explanation: '失去之後才知道珍貴。'
             },
             {
                 id: 'n3_quiz_te_hajimete_2',
                 sentence: '一人暮{ひとりぐ}らしをし（　）、料理{りょうり}の大変{たいへん}さを知{し}った。',
-                options: ['てはじめて', 'てから', 'てまで', 'てさえ'],
+                options: ['てはじめて', 'てさえ', 'てまで', 'てから'],
                 correctIndex: 0,
                 explanation: '一個人生活之後才知道做飯很辛苦。'
             },
             {
                 id: 'n3_quiz_te_hajimete_3',
                 sentence: '社会人{しゃかいじん}になっ（　）、学生{がくせい}時代{じだい}の楽{たの}しさがわかった。',
-                options: ['てはじめて', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てから', 'てまで', 'てはじめて', 'てさえ'],
+                correctIndex: 2,
                 explanation: '出社會後才明白學生時代的快樂。'
             },
             {
                 id: 'n3_quiz_te_hajimete_4',
                 sentence: '「子供{こども}の世話{せわ}大変{たいへん}？」\n「育{そだ}て（　）、親{おや}のありがたみがわかったよ。」',
-                options: ['てはじめて', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てから', 'てはじめて', 'てさえ', 'てまで'],
+                correctIndex: 1,
                 explanation: '對話情境。養育孩子後才感謝父母。'
             },
             {
                 id: 'n3_quiz_te_hajimete_5',
                 sentence: '「海外{かいがい}生活{せいかつ}どう？」\n「日本{にほん}を離{はな}れ（　）、日本{にほん}の良{よ}さがわかった。」',
-                options: ['てはじめて', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'てから', 'てはじめて'],
+                correctIndex: 3,
                 explanation: '對話情境。離開日本後才知道日本的好。'
             }
         ]
@@ -11244,36 +11244,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_te_kara_de_nai_to_1',
                 sentence: '説明{せつめい}を聞{き}い（　）、操作{そうさ}できません。',
-                options: ['てからでないと', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'てからでないと', 'てから'],
+                correctIndex: 2,
                 explanation: '不先聽說明不能操作。'
             },
             {
                 id: 'n3_quiz_te_kara_de_nai_to_2',
                 sentence: '身分証{みぶんしょう}を見{み}せ（　）、入室{にゅうしつ}できません。',
-                options: ['てからでないと', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'てから', 'てさえ', 'てからでないと'],
+                correctIndex: 3,
                 explanation: '不先出示身分證不能進入。'
             },
             {
                 id: 'n3_quiz_te_kara_de_nai_to_3',
                 sentence: '確認{かくにん}し（　）、送{おく}れない。',
-                options: ['てからでないと', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てから', 'てからでないと', 'てまで'],
+                correctIndex: 2,
                 explanation: '不先確認的話沒辦法送出。'
             },
             {
                 id: 'n3_quiz_te_kara_de_nai_to_4',
                 sentence: '「すぐ始{はじ}めよう。」\n「準備{じゅんび}し（　）、始{はじ}められないよ。」',
-                options: ['てからでないと', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'てから', 'てからでないと'],
+                correctIndex: 3,
                 explanation: '對話情境。不先準備不能開始。'
             },
             {
                 id: 'n3_quiz_te_kara_de_nai_to_5',
                 sentence: '「買{か}っちゃおう！」\n「値段{ねだん}を比{くら}べ（　）、買{か}わない方{ほう}がいいよ。」',
-                options: ['てからでないと', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'てさえ', 'てから', 'てからでないと'],
+                correctIndex: 3,
                 explanation: '對話情境。不先比較價格最好不要買。'
             }
         ]
@@ -11310,29 +11310,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_te_shou_ga_nai_1',
                 sentence: '暑{あつ}く（　）。',
-                options: ['てしょうがない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てから', 'てしょうがない', 'てまで'],
+                correctIndex: 2,
                 explanation: '熱得不得了。'
             },
             {
                 id: 'n3_quiz_te_shou_ga_nai_2',
                 sentence: '結果{けっか}が心配{しんぱい}（　）。',
-                options: ['でしょうがない', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でまで', 'でさえ', 'でしょうがない', 'でから'],
+                correctIndex: 2,
                 explanation: '擔心結果得不得了。'
             },
             {
                 id: 'n3_quiz_te_shou_ga_nai_3',
                 sentence: '面白{おもしろ}く（　）、笑{わら}いが止{と}まらない。',
-                options: ['てしょうがない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てしょうがない', 'てまで', 'てから'],
+                correctIndex: 1,
                 explanation: '有趣得不得了，笑個不停。'
             },
             {
                 id: 'n3_quiz_te_shou_ga_nai_4',
                 sentence: '「旅行{りょこう}楽{たの}しみ？」\n「うん、待{ま}ち遠{どお}しく（　）。」',
-                options: ['てしょうがない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'てから', 'てしょうがない'],
+                correctIndex: 3,
                 explanation: '對話情境。期待得不得了。'
             },
             {
@@ -11376,36 +11376,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_te_shou_ga_nai_te_shikata_ga_nai_1',
                 sentence: '寂{さび}しく（　）。',
-                options: ['てしかたがない', 'てから', 'てまで', 'てさえ'],
+                options: ['てしかたがない', 'てまで', 'てから', 'てさえ'],
                 correctIndex: 0,
                 explanation: '寂寞得不得了。'
             },
             {
                 id: 'n3_quiz_te_shou_ga_nai_te_shikata_ga_nai_2',
                 sentence: '彼{かれ}に会{あ}いたく（　）。',
-                options: ['てしかたがない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'てから', 'てしかたがない'],
+                correctIndex: 3,
                 explanation: '好想見他。'
             },
             {
                 id: 'n3_quiz_te_shou_ga_nai_te_shikata_ga_nai_3',
                 sentence: '不安{ふあん}（　）、眠{ねむ}れない。',
-                options: ['でしかたがない', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でまで', 'でから', 'でしかたがない', 'でさえ'],
+                correctIndex: 2,
                 explanation: '不安得睡不著。'
             },
             {
                 id: 'n3_quiz_te_shou_ga_nai_te_shikata_ga_nai_4',
                 sentence: '「試験{しけん}どうだった？」\n「後悔{こうかい}（　）。もっと勉強{べんきょう}すればよかった。」',
-                options: ['でしかたがない', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でから', 'でさえ', 'でまで', 'でしかたがない'],
+                correctIndex: 3,
                 explanation: '對話情境。後悔得不得了。'
             },
             {
                 id: 'n3_quiz_te_shou_ga_nai_te_shikata_ga_nai_5',
                 sentence: '「元気{げんき}ない？」\n「故郷{こきょう}が恋{こい}しく（　）。」',
-                options: ['てしかたがない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'てしかたがない', 'てから'],
+                correctIndex: 2,
                 explanation: '對話情境。想念故鄉。'
             }
         ]
@@ -11442,36 +11442,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_te_sumu_1',
                 sentence: 'お金{かね}を払{はら}っ（　）問題{もんだい}ではない。',
-                options: ['て済む', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てから', 'てさえ', 'て済む', 'てまで'],
+                correctIndex: 2,
                 explanation: '這不是付錢就能解決的問題。'
             },
             {
                 id: 'n3_quiz_te_sumu_2',
                 sentence: '電話{でんわ}一本{いっぽん}（　）。',
-                options: ['で済んだ', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でから', 'で済んだ', 'でまで', 'でさえ'],
+                correctIndex: 1,
                 explanation: '打一通電話就解決了。'
             },
             {
                 id: 'n3_quiz_te_sumu_3',
                 sentence: '軽{かる}い怪我{けが}（　）よかった。',
-                options: ['で済んで', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でさえ', 'でから', 'で済んで', 'でまで'],
+                correctIndex: 2,
                 explanation: '只是輕傷就好了。'
             },
             {
                 id: 'n3_quiz_te_sumu_4',
                 sentence: '「大変{たいへん}だった？」\n「いや、報告書{ほうこくしょ}を書{か}い（　）。」',
-                options: ['て済んだ', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てから', 'てまで', 'て済んだ', 'てさえ'],
+                correctIndex: 2,
                 explanation: '對話情境。寫報告就解決了。'
             },
             {
                 id: 'n3_quiz_te_sumu_5',
                 sentence: '「謝{あやま}れば許{ゆる}してもらえる？」\n「謝{あやま}っ（　）話{はなし}じゃないよ。」',
-                options: ['て済む', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てから', 'てまで', 'て済む'],
+                correctIndex: 3,
                 explanation: '對話情境。這不是道歉就能了事的。'
             }
         ]
@@ -11508,15 +11508,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_te_sumu_1_1',
                 sentence: '今回{こんかい}は注意{ちゅうい}（　）。',
-                options: ['で済んだ', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でさえ', 'でから', 'でまで', 'で済んだ'],
+                correctIndex: 3,
                 explanation: '這次只被提醒就過去了。'
             },
             {
                 id: 'n3_quiz_te_sumu_1_2',
                 sentence: '大事{だいじ}に至{いた}らなく（　）。',
-                options: ['て済んだ', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てから', 'て済んだ', 'てまで', 'てさえ'],
+                correctIndex: 1,
                 explanation: '沒有釀成大事就好。'
             },
             {
@@ -11529,15 +11529,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_te_sumu_1_4',
                 sentence: '「遅刻{ちこく}して怒{おこ}られた？」\n「いや、謝{あやま}っ（　）。」',
-                options: ['て済んだ', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'てから', 'て済んだ', 'てさえ'],
+                correctIndex: 2,
                 explanation: '對話情境。道歉就沒事了。'
             },
             {
                 id: 'n3_quiz_te_sumu_1_5',
                 sentence: '「入院{にゅういん}必要{ひつよう}？」\n「通院{つういん}だけ（　）そうだ。」',
-                options: ['で済む', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でから', 'でさえ', 'で済む', 'でまで'],
+                correctIndex: 2,
                 explanation: '對話情境。只需要門診就可以了。'
             }
         ]
@@ -11574,14 +11574,14 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_te_wa_ikenai_kara_1',
                 sentence: '約束{やくそく}を破{やぶ}っ（　）、必{かなら}ず行{い}く。',
-                options: ['てはいけないから', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'てから', 'てはいけないから'],
+                correctIndex: 3,
                 explanation: '因為不能違約，所以一定去。'
             },
             {
                 id: 'n3_quiz_te_wa_ikenai_kara_2',
                 sentence: '嘘{うそ}をつい（　）、正直{しょうじき}に話{はな}した。',
-                options: ['てはいけないから', 'てから', 'てまで', 'てさえ'],
+                options: ['てはいけないから', 'てから', 'てさえ', 'てまで'],
                 correctIndex: 0,
                 explanation: '因為不能說謊，所以老實說了。'
             },
@@ -11595,15 +11595,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_te_wa_ikenai_kara_4',
                 sentence: '「なんで早{はや}く寝{ね}るの？」\n「明日{あした}遅刻{ちこく}し（　）。」',
-                options: ['てはいけないから', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'てさえ', 'てから', 'てはいけないから'],
+                correctIndex: 3,
                 explanation: '對話情境。因為明天不能遲到。'
             },
             {
                 id: 'n3_quiz_te_wa_ikenai_kara_5',
                 sentence: '「そんなに確認{かくにん}するの？」\n「ミスし（　）。」',
-                options: ['てはいけないから', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'てはいけないから', 'てさえ', 'てから'],
+                correctIndex: 1,
                 explanation: '對話情境。因為不能出錯。'
             }
         ]
@@ -11640,36 +11640,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_teiru_baai_janai_1',
                 sentence: '寝{ね}（　）、仕事{しごと}を終{お}わらせなさい。',
-                options: ['ている場合じゃない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'ている場合じゃない', 'てから'],
+                correctIndex: 2,
                 explanation: '現在不是睡覺的時候，把工作做完。'
             },
             {
                 id: 'n3_quiz_teiru_baai_janai_2',
                 sentence: 'のんびりし（　）。締{し}め切{き}りは今日{きょう}だ。',
-                options: ['ている場合じゃない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'てさえ', 'ている場合じゃない', 'てから'],
+                correctIndex: 2,
                 explanation: '現在不是悠閒的時候。截止日是今天。'
             },
             {
                 id: 'n3_quiz_teiru_baai_janai_3',
                 sentence: '落{お}ち込{こ}ん（　）。次{つぎ}を考{かんが}えよう。',
-                options: ['でいる場合じゃない', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でまで', 'でさえ', 'でいる場合じゃない', 'でから'],
+                correctIndex: 2,
                 explanation: '現在不是沮喪的時候。想想下一步。'
             },
             {
                 id: 'n3_quiz_teiru_baai_janai_4',
                 sentence: '「ちょっと休{やす}もう。」\n「休{やす}ん（　）！早{はや}く逃{に}げよう！」',
-                options: ['でいる場合じゃない', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でまで', 'でいる場合じゃない', 'でさえ', 'でから'],
+                correctIndex: 1,
                 explanation: '對話情境。現在不是休息的時候，快逃！'
             },
             {
                 id: 'n3_quiz_teiru_baai_janai_5',
                 sentence: '「また失敗{しっぱい}した…」\n「悔{くや}ん（　）。やり直{なお}そう。」',
-                options: ['でいる場合じゃない', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でまで', 'でいる場合じゃない', 'でから', 'でさえ'],
+                correctIndex: 1,
                 explanation: '對話情境。現在不是後悔的時候。重新來過。'
             }
         ]
@@ -11706,35 +11706,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_teiru_baai_janai_1_1',
                 sentence: '迷{まよ}っ（　）。すぐ決{き}めて！',
-                options: ['ている場合じゃない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'てから', 'ている場合じゃない', 'てさえ'],
+                correctIndex: 2,
                 explanation: '現在不是猶豫的時候。快決定！'
             },
             {
                 id: 'n3_quiz_teiru_baai_janai_1_2',
                 sentence: '怖{こわ}がっ（　）。前{まえ}に進{すす}もう。',
-                options: ['ている場合じゃない', 'てから', 'てまで', 'てさえ'],
+                options: ['ている場合じゃない', 'てさえ', 'てから', 'てまで'],
                 correctIndex: 0,
                 explanation: '現在不是害怕的時候。往前走吧。'
             },
             {
                 id: 'n3_quiz_teiru_baai_janai_1_3',
                 sentence: 'ぼーっとし（　）。集中{しゅうちゅう}して！',
-                options: ['ている場合じゃない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てから', 'ている場合じゃない', 'てさえ', 'てまで'],
+                correctIndex: 1,
                 explanation: '現在不是發呆的時候。集中精神！'
             },
             {
                 id: 'n3_quiz_teiru_baai_janai_1_4',
                 sentence: '「もう無理{むり}だ…」\n「諦{あきら}め（　）！最後{さいご}まで頑張{がんば}れ！」',
-                options: ['ている場合じゃない', 'てから', 'てまで', 'てさえ'],
+                options: ['ている場合じゃない', 'てさえ', 'てまで', 'てから'],
                 correctIndex: 0,
                 explanation: '對話情境。現在不是放棄的時候！'
             },
             {
                 id: 'n3_quiz_teiru_baai_janai_1_5',
                 sentence: '「どうしよう…」\n「悩{なや}ん（　）！行動{こうどう}しよう！」',
-                options: ['でいる場合じゃない', 'でから', 'でまで', 'でさえ'],
+                options: ['でいる場合じゃない', 'でさえ', 'でまで', 'でから'],
                 correctIndex: 0,
                 explanation: '對話情境。現在不是煩惱的時候！行動吧！'
             }
@@ -11772,36 +11772,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_teki_1',
                 sentence: '彼女{かのじょ}は社会{しゃかい}（　）に活躍{かつやく}している。',
-                options: ['的', 'ため', 'から', 'さえ'],
-                correctIndex: 0,
+                options: ['ため', '的', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '她在社會上很活躍。'
             },
             {
                 id: 'n3_quiz_teki_2',
                 sentence: '国際{こくさい}（　）な問題{もんだい}について話{はな}し合{あ}った。',
-                options: ['的', 'ため', 'から', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'ため', '的'],
+                correctIndex: 3,
                 explanation: '討論了國際性的問題。'
             },
             {
                 id: 'n3_quiz_teki_3',
                 sentence: '効果{こうか}（　）な方法{ほうほう}を教{おし}えてください。',
-                options: ['的', 'ため', 'から', 'さえ'],
-                correctIndex: 0,
+                options: ['ため', 'から', 'さえ', '的'],
+                correctIndex: 3,
                 explanation: '請告訴我有效的方法。'
             },
             {
                 id: 'n3_quiz_teki_4',
                 sentence: '「どんな計画{けいかく}？」\n「具体{ぐたい}（　）にはまだ決{き}まっていない。」',
-                options: ['的', 'ため', 'から', 'さえ'],
+                options: ['的', 'さえ', 'から', 'ため'],
                 correctIndex: 0,
                 explanation: '對話情境。具體的還沒決定。'
             },
             {
                 id: 'n3_quiz_teki_5',
                 sentence: '「彼{かれ}の話{はなし}わかった？」\n「抽象{ちゅうしょう}{ちゅうしょう}（　）でよくわからなかった。」',
-                options: ['的', 'ため', 'から', 'さえ'],
-                correctIndex: 0,
+                options: ['ため', 'から', '的', 'さえ'],
+                correctIndex: 2,
                 explanation: '對話情境。太抽象聽不太懂。'
             }
         ]
@@ -11838,36 +11838,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_teki_1_1',
                 sentence: '個人{こじん}（　）には賛成{さんせい}できない。',
-                options: ['的', 'ため', 'から', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'ため', '的', 'さえ'],
+                correctIndex: 2,
                 explanation: '個人來說無法贊成。'
             },
             {
                 id: 'n3_quiz_teki_1_2',
                 sentence: '技術{ぎじゅつ}（　）に可能{かのう}だ。',
-                options: ['的', 'ため', 'から', 'さえ'],
+                options: ['的', 'さえ', 'から', 'ため'],
                 correctIndex: 0,
                 explanation: '技術上是可能的。'
             },
             {
                 id: 'n3_quiz_teki_1_3',
                 sentence: '基本{きほん}（　）に毎日{まいにち}運動{うんどう}している。',
-                options: ['的', 'ため', 'から', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', '的', 'から', 'ため'],
+                correctIndex: 1,
                 explanation: '基本上每天運動。'
             },
             {
                 id: 'n3_quiz_teki_1_4',
                 sentence: '「仕事{しごと}どう？」\n「肉体{にくたい}（　）にきついけど、やりがいがある。」',
-                options: ['的', 'ため', 'から', 'さえ'],
-                correctIndex: 0,
+                options: ['ため', '的', 'さえ', 'から'],
+                correctIndex: 1,
                 explanation: '對話情境。體力上很累但有成就感。'
             },
             {
                 id: 'n3_quiz_teki_1_5',
                 sentence: '「計画{けいかく}進{すす}んでる？」\n「理論{りろん}（　）には問題{もんだい}ないよ。」',
-                options: ['的', 'ため', 'から', 'さえ'],
-                correctIndex: 0,
+                options: ['ため', 'から', '的', 'さえ'],
+                correctIndex: 2,
                 explanation: '對話情境。理論上沒問題。'
             }
         ]
@@ -11904,35 +11904,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_temo_hajimaranai_1',
                 sentence: '泣{な}い（　）。元気{げんき}を出{だ}そう。',
-                options: ['ても始まらない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'てから', 'ても始まらない'],
+                correctIndex: 3,
                 explanation: '哭也沒用。振作起來吧。'
             },
             {
                 id: 'n3_quiz_temo_hajimaranai_2',
                 sentence: '過去{かこ}を悔{く}やん（　）。',
-                options: ['でも始まらない', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でさえ', 'でも始まらない', 'でまで', 'でから'],
+                correctIndex: 1,
                 explanation: '懊悔過去也沒用。'
             },
             {
                 id: 'n3_quiz_temo_hajimaranai_3',
                 sentence: '怒{おこ}っ（　）、状況{じょうきょう}は変{か}わらない。',
-                options: ['ても始まらない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'ても始まらない', 'てまで', 'てから'],
+                correctIndex: 1,
                 explanation: '生氣也沒用，狀況不會改變。'
             },
             {
                 id: 'n3_quiz_temo_hajimaranai_4',
                 sentence: '「どうしよう…失敗{しっぱい}した…」\n「悩{なや}ん（　）。次{つぎ}頑張{がんば}ろう。」',
-                options: ['でも始まらない', 'でから', 'でまで', 'でさえ'],
+                options: ['でも始まらない', 'でまで', 'でさえ', 'でから'],
                 correctIndex: 0,
                 explanation: '對話情境。煩惱也沒用。下次加油。'
             },
             {
                 id: 'n3_quiz_temo_hajimaranai_5',
                 sentence: '「あの時{とき}ああすれば…」\n「言{い}っ（　）よ。現実{げんじつ}を見{み}よう。」',
-                options: ['ても始まらない', 'てから', 'てまで', 'てさえ'],
+                options: ['ても始まらない', 'てから', 'てさえ', 'てまで'],
                 correctIndex: 0,
                 explanation: '對話情境。說了也沒用。面對現實吧。'
             }
@@ -11970,36 +11970,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_temo_hajimaranai_1_1',
                 sentence: '人{ひと}を恨{うら}ん（　）。',
-                options: ['でも始まらない', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でまで', 'でから', 'でさえ', 'でも始まらない'],
+                correctIndex: 3,
                 explanation: '怨恨別人也沒用。'
             },
             {
                 id: 'n3_quiz_temo_hajimaranai_1_2',
                 sentence: '嘆{なげ}い（　）、現状{げんじょう}は変{か}わらない。',
-                options: ['ても始まらない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てから', 'ても始まらない', 'てまで'],
+                correctIndex: 2,
                 explanation: '嘆息也沒用，現狀不會改變。'
             },
             {
                 id: 'n3_quiz_temo_hajimaranai_1_3',
                 sentence: '運{うん}が悪{わる}かったと言{い}っ（　）。',
-                options: ['ても始まらない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'ても始まらない', 'てまで', 'てから'],
+                correctIndex: 1,
                 explanation: '說運氣不好也沒用。'
             },
             {
                 id: 'n3_quiz_temo_hajimaranai_1_4',
                 sentence: '「上司{じょうし}に腹{はら}が立{た}つ！」\n「怒{おこ}っ（　）よ。解決策{かいけつさく}を考{かんが}えよう。」',
-                options: ['ても始まらない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'ても始まらない', 'てから', 'てさえ'],
+                correctIndex: 1,
                 explanation: '對話情境。生氣也沒用。想解決辦法吧。'
             },
             {
                 id: 'n3_quiz_temo_hajimaranai_1_5',
                 sentence: '「また落{お}ちた…」\n「落{お}ち込{こ}ん（　）。次{つぎ}に備{そな}えよう。」',
-                options: ['でも始まらない', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でから', 'でも始まらない', 'でまで', 'でさえ'],
+                correctIndex: 1,
                 explanation: '對話情境。沮喪也沒用。為下次做準備吧。'
             }
         ]
@@ -12043,28 +12043,28 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_temo_kamawanai_2',
                 sentence: '失敗{しっぱい}し（　）、チャレンジすることが大切{たいせつ}だ。',
-                options: ['ても構わない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'ても構わない', 'てさえ', 'てから'],
+                correctIndex: 1,
                 explanation: '失敗也沒關係，挑戰才重要。'
             },
             {
                 id: 'n3_quiz_temo_kamawanai_3',
                 sentence: '量{りょう}が少{すこ}なく（　）。',
-                options: ['ても構わない', 'てから', 'てまで', 'てさえ'],
+                options: ['ても構わない', 'てから', 'てさえ', 'てまで'],
                 correctIndex: 0,
                 explanation: '量少一點也沒關係。'
             },
             {
                 id: 'n3_quiz_temo_kamawanai_4',
                 sentence: '「写真{しゃしん}を撮{と}っ（　）？」\n「いいですよ。」',
-                options: ['ても構いませんか', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'ても構いませんか', 'てさえ', 'てから'],
+                correctIndex: 1,
                 explanation: '對話情境。可以拍照嗎？'
             },
             {
                 id: 'n3_quiz_temo_kamawanai_5',
                 sentence: '「明日{あした}でいい？」\n「うん、いつ（　）。」',
-                options: ['でも構わない', 'でから', 'でまで', 'でさえ'],
+                options: ['でも構わない', 'でさえ', 'でから', 'でまで'],
                 correctIndex: 0,
                 explanation: '對話情境。什麼時候都可以。'
             }
@@ -12102,36 +12102,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_temo_kamawanai_1_1',
                 sentence: '小{ちい}さく（　）、便利{べんり}な方{ほう}がいい。',
-                options: ['ても構わない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'てから', 'ても構わない'],
+                correctIndex: 3,
                 explanation: '小一點也沒關係，方便比較重要。'
             },
             {
                 id: 'n3_quiz_temo_kamawanai_1_2',
                 sentence: '遠{とお}く（　）、静{しず}かな場所{ばしょ}がいい。',
-                options: ['ても構わない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てから', 'ても構わない', 'てまで'],
+                correctIndex: 2,
                 explanation: '遠一點也沒關係，想要安靜的地方。'
             },
             {
                 id: 'n3_quiz_temo_kamawanai_1_3',
                 sentence: '時間{じかん}がかかっ（　）、丁寧{ていねい}にやってほしい。',
-                options: ['ても構わない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てから', 'ても構わない', 'てまで', 'てさえ'],
+                correctIndex: 1,
                 explanation: '花時間也沒關係，希望做得仔細。'
             },
             {
                 id: 'n3_quiz_temo_kamawanai_1_4',
                 sentence: '「もう少{すこ}し待{ま}ってもらえる？」\n「いくら待{ま}っ（　）。」',
-                options: ['ても構わない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'ても構わない', 'てまで', 'てから'],
+                correctIndex: 1,
                 explanation: '對話情境。等多久都可以。'
             },
             {
                 id: 'n3_quiz_temo_kamawanai_1_5',
                 sentence: '「日本語{にほんご}間違{まちが}ってるかも…」\n「間違{まちが}っ（　）から、どんどん話{はな}して。」',
-                options: ['ても構わない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'てさえ', 'てから', 'ても構わない'],
+                correctIndex: 3,
                 explanation: '對話情境。錯了也沒關係，盡量說。'
             }
         ]
@@ -12168,36 +12168,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_temo_shou_ga_nai_1',
                 sentence: '心配{しんぱい}し（　）。結果{けっか}を待{ま}とう。',
-                options: ['てもしょうがない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てから', 'てもしょうがない', 'てさえ', 'てまで'],
+                correctIndex: 1,
                 explanation: '擔心也沒用。等結果吧。'
             },
             {
                 id: 'n3_quiz_temo_shou_ga_nai_2',
                 sentence: '文句{もんく}を言{い}っ（　）。',
-                options: ['てもしょうがない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てから', 'てまで', 'てさえ', 'てもしょうがない'],
+                correctIndex: 3,
                 explanation: '抱怨也沒用。'
             },
             {
                 id: 'n3_quiz_temo_shou_ga_nai_3',
                 sentence: '今{いま}さら反省{はんせい}し（　）。',
-                options: ['てもしょうがない', 'てから', 'てまで', 'てさえ'],
+                options: ['てもしょうがない', 'てまで', 'てから', 'てさえ'],
                 correctIndex: 0,
                 explanation: '事到如今反省也沒用。'
             },
             {
                 id: 'n3_quiz_temo_shou_ga_nai_4',
                 sentence: '「彼{かれ}のことばかり考{かんが}えてる。」\n「考{かんが}え（　）よ。前{まえ}を向{む}こう。」',
-                options: ['てもしょうがない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てまで', 'てから', 'てもしょうがない', 'てさえ'],
+                correctIndex: 2,
                 explanation: '對話情境。想也沒用。向前看吧。'
             },
             {
                 id: 'n3_quiz_temo_shou_ga_nai_5',
                 sentence: '「試験{しけん}落{お}ちた…」\n「悔{く}やん（　）。次{つぎ}があるよ。」',
-                options: ['でもしょうがない', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でさえ', 'でまで', 'でから', 'でもしょうがない'],
+                correctIndex: 3,
                 explanation: '對話情境。後悔也沒用。還有下次。'
             }
         ]
@@ -12241,29 +12241,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_temo_shou_ga_nai_temo_shikata_ga_nai_2',
                 sentence: '誰{だれ}かのせいにし（　）。',
-                options: ['てもしかたがない', 'てから', 'てまで', 'てさえ'],
+                options: ['てもしかたがない', 'てから', 'てさえ', 'てまで'],
                 correctIndex: 0,
                 explanation: '怪別人也沒用。'
             },
             {
                 id: 'n3_quiz_temo_shou_ga_nai_temo_shikata_ga_nai_3',
                 sentence: 'ないものはない。欲{ほ}しがっ（　）。',
-                options: ['てもしかたがない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'てもしかたがない', 'てから'],
+                correctIndex: 2,
                 explanation: '沒有的就是沒有。想要也沒用。'
             },
             {
                 id: 'n3_quiz_temo_shou_ga_nai_temo_shikata_ga_nai_4',
                 sentence: '「また不合格{ふごうかく}だった…」\n「済{す}んだことを言{い}っ（　）。次{つぎ}頑張{がんば}ろう。」',
-                options: ['てもしかたがない', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てから', 'てまで', 'てもしかたがない', 'てさえ'],
+                correctIndex: 2,
                 explanation: '對話情境。說過去的事也沒用。下次加油。'
             },
             {
                 id: 'n3_quiz_temo_shou_ga_nai_temo_shikata_ga_nai_5',
                 sentence: '「あの人{ひと}嫌{きら}いだ。」\n「嫌{いや}（　）、一緒{いっしょ}に仕事{しごと}しなきゃ。」',
-                options: ['でもしかたがない', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でさえ', 'でまで', 'でもしかたがない', 'でから'],
+                correctIndex: 2,
                 explanation: '對話情境。討厭也沒辦法，得一起工作。'
             }
         ]
@@ -12300,35 +12300,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_ieba_1',
                 sentence: '北海道{ほっかいどう}（　）、雪{ゆき}まつりが有名{ゆうめい}だ。',
-                options: ['と言えば', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'とまで', 'と言えば', 'とさえ'],
+                correctIndex: 2,
                 explanation: '說到北海道，雪祭很有名。'
             },
             {
                 id: 'n3_quiz_to_ieba_2',
                 sentence: '日本{にほん}（　）、桜{さくら}を思{おも}い浮{う}かべる。',
-                options: ['と言えば', 'とから', 'とまで', 'とさえ'],
+                options: ['と言えば', 'とさえ', 'とから', 'とまで'],
                 correctIndex: 0,
                 explanation: '說到日本，就想到櫻花。'
             },
             {
                 id: 'n3_quiz_to_ieba_3',
                 sentence: 'お正月{しょうがつ}（　）、おせち料理{りょうり}だ。',
-                options: ['と言えば', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'と言えば', 'とから'],
+                correctIndex: 2,
                 explanation: '說到新年，就是年菜。'
             },
             {
                 id: 'n3_quiz_to_ieba_4',
                 sentence: '「大阪{おおさか}（　）？」\n「たこ焼{や}きかな。」',
-                options: ['と言えば', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'と言えば', 'とから'],
+                correctIndex: 2,
                 explanation: '對話情境。說到大阪呢？章魚燒吧。'
             },
             {
                 id: 'n3_quiz_to_ieba_5',
                 sentence: '「田中{たなか}さん（　）、今日{きょう}見{み}なかったね。」\n「そうだね。休{やす}みかな。」',
-                options: ['と言えば', 'とから', 'とまで', 'とさえ'],
+                options: ['と言えば', 'とさえ', 'とから', 'とまで'],
                 correctIndex: 0,
                 explanation: '對話情境。說到田中，今天沒看到呢。'
             }
@@ -12366,36 +12366,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_ieba_1_1',
                 sentence: 'あの店{みせ}（　）、いつも混{こ}んでいる。',
-                options: ['と言えば', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とから', 'と言えば', 'とまで'],
+                correctIndex: 2,
                 explanation: '說到那家店，總是很擁擠。'
             },
             {
                 id: 'n3_quiz_to_ieba_1_2',
                 sentence: '運動{うんどう}（　）、最近{さいきん}全然{ぜんぜん}してない。',
-                options: ['と言えば', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'とさえ', 'と言えば', 'とまで'],
+                correctIndex: 2,
                 explanation: '說到運動，最近完全沒做。'
             },
             {
                 id: 'n3_quiz_to_ieba_1_3',
                 sentence: '旅行{りょこう}（　）、来月{らいげつ}海外{かいがい}に行{い}く予定{よてい}だ。',
-                options: ['と言えば', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とから', 'とまで', 'と言えば'],
+                correctIndex: 3,
                 explanation: '說到旅行，下個月預計出國。'
             },
             {
                 id: 'n3_quiz_to_ieba_1_4',
                 sentence: '「佐藤{さとう}さん元気{げんき}？」\n「佐藤{さとう}さん（　）、結婚{けっこん}したらしいよ。」',
-                options: ['と言えば', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'とから', 'と言えば'],
+                correctIndex: 3,
                 explanation: '對話情境。說到佐藤，聽說結婚了。'
             },
             {
                 id: 'n3_quiz_to_ieba_1_5',
                 sentence: '「今日{きょう}暑{あつ}いね。」\n「暑{あつ}い（　）、エアコン壊{こわ}れたんだ。」',
-                options: ['と言えば', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'とまで', 'と言えば', 'とさえ'],
+                correctIndex: 2,
                 explanation: '對話情境。說到熱，冷氣壞了。'
             }
         ]
@@ -12432,36 +12432,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_ii_1',
                 sentence: '早{はや}く元気{げんき}になる（　）ね。',
-                options: ['といい', 'とから', 'とまで', 'とさえ'],
+                options: ['といい', 'とから', 'とさえ', 'とまで'],
                 correctIndex: 0,
                 explanation: '希望快點康復。'
             },
             {
                 id: 'n3_quiz_to_ii_2',
                 sentence: '彼女{かのじょ}に会{あ}える（　）なあ。',
-                options: ['といい', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とから', 'といい', 'とまで'],
+                correctIndex: 2,
                 explanation: '要是能見到她就好了。'
             },
             {
                 id: 'n3_quiz_to_ii_3',
                 sentence: '今年{ことし}中{ちゅう}に終{お}わる（　）んだけど。',
-                options: ['といい', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'とから', 'といい', 'とさえ'],
+                correctIndex: 2,
                 explanation: '希望在今年內結束。'
             },
             {
                 id: 'n3_quiz_to_ii_4',
                 sentence: '「明日{あした}面接{めんせつ}なんだ。」\n「うまくいく（　）ね。」',
-                options: ['といい', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とから', 'とまで', 'といい'],
+                correctIndex: 3,
                 explanation: '對話情境。希望順利。'
             },
             {
                 id: 'n3_quiz_to_ii_5',
                 sentence: '「ずっと雨{あめ}だね。」\n「早{はや}く止{や}む（　）なあ。」',
-                options: ['といい', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'とまで', 'とさえ', 'といい'],
+                correctIndex: 3,
                 explanation: '對話情境。希望快點停雨。'
             }
         ]
@@ -12498,36 +12498,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_ii_tara_ii_1',
                 sentence: '休{やす}みが長{なが}かっ（　）のに。',
-                options: ['たらいい', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てから', 'てさえ', 'てまで', 'たらいい'],
+                correctIndex: 3,
                 explanation: '要是假期更長就好了。'
             },
             {
                 id: 'n3_quiz_to_ii_tara_ii_2',
                 sentence: 'もっと安{やす}かっ（　）なあ。',
-                options: ['たらいい', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てから', 'てまで', 'たらいい'],
+                correctIndex: 3,
                 explanation: '要是更便宜就好了。'
             },
             {
                 id: 'n3_quiz_to_ii_tara_ii_3',
                 sentence: '近{ちか}くにコンビニがあっ（　）のに。',
-                options: ['たらいい', 'てから', 'てまで', 'てさえ'],
-                correctIndex: 0,
+                options: ['てさえ', 'てまで', 'てから', 'たらいい'],
+                correctIndex: 3,
                 explanation: '要是附近有便利商店就好了。'
             },
             {
                 id: 'n3_quiz_to_ii_tara_ii_4',
                 sentence: '「緊張{きんちょう}する…」\n「リラックスし（　）よ。」',
-                options: ['たらいい', 'てから', 'てまで', 'てさえ'],
+                options: ['たらいい', 'てさえ', 'てまで', 'てから'],
                 correctIndex: 0,
                 explanation: '對話情境。放輕鬆就好。'
             },
             {
                 id: 'n3_quiz_to_ii_tara_ii_5',
                 sentence: '「何{なに}を食{た}べよう？」\n「好{す}きなものを選{えら}ん（　）よ。」',
-                options: ['だらいい', 'でから', 'でまで', 'でさえ'],
-                correctIndex: 0,
+                options: ['でから', 'でさえ', 'でまで', 'だらいい'],
+                correctIndex: 3,
                 explanation: '對話情境。選喜歡的就好。'
             }
         ]
@@ -12564,35 +12564,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_ittemo_1',
                 sentence: '運動{うんどう}している（　）、週{しゅう}に一回{いっかい}だけだ。',
-                options: ['といっても', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'といっても', 'とさえ', 'とから'],
+                correctIndex: 1,
                 explanation: '雖說有運動，但一週只有一次。'
             },
             {
                 id: 'n3_quiz_to_ittemo_2',
                 sentence: '広{ひろ}い（　）、二人{ふたり}でちょうどいい程度{ていど}だ。',
-                options: ['といっても', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'とから', 'といっても'],
+                correctIndex: 3,
                 explanation: '雖說寬敞，但也就剛好兩人住的程度。'
             },
             {
                 id: 'n3_quiz_to_ittemo_3',
                 sentence: '高{たか}い（　）、五千円{ごせんえん}ぐらいだ。',
-                options: ['といっても', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'とから', 'といっても'],
+                correctIndex: 3,
                 explanation: '雖說貴，但大概五千日圓。'
             },
             {
                 id: 'n3_quiz_to_ittemo_4',
                 sentence: '「お金持{かねも}ちなんでしょ？」\n「お金持{かねも}ち（　）、普通{ふつう}のサラリーマンだよ。」',
-                options: ['といっても', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'とから', 'とさえ', 'といっても'],
+                correctIndex: 3,
                 explanation: '對話情境。雖說有錢，其實是普通上班族。'
             },
             {
                 id: 'n3_quiz_to_ittemo_5',
                 sentence: '「ピアノ弾{ひ}ける？」\n「弾{ひ}ける（　）、一曲{いっきょく}だけだよ。」',
-                options: ['といっても', 'とから', 'とまで', 'とさえ'],
+                options: ['といっても', 'とまで', 'とさえ', 'とから'],
                 correctIndex: 0,
                 explanation: '對話情境。雖說會彈，但只會一首。'
             }
@@ -12630,36 +12630,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_iu_koto_da_1',
                 sentence: '電車{でんしゃ}が遅{おく}れている（　）。',
-                options: ['ということだ', 'とから', 'とまで', 'とさえ'],
+                options: ['ということだ', 'とまで', 'とから', 'とさえ'],
                 correctIndex: 0,
                 explanation: '據說電車誤點了。'
             },
             {
                 id: 'n3_quiz_to_iu_koto_da_2',
                 sentence: 'あの店{みせ}は来月{らいげつ}閉{し}まる（　）。',
-                options: ['ということだ', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'ということだ', 'とさえ', 'とまで'],
+                correctIndex: 1,
                 explanation: '據說那家店下個月要關門。'
             },
             {
                 id: 'n3_quiz_to_iu_koto_da_3',
                 sentence: '返事{へんじ}がないのは、承諾{しょうだく}した（　）。',
-                options: ['ということだ', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'とさえ', 'ということだ', 'とから'],
+                correctIndex: 2,
                 explanation: '沒有回覆，也就是說同意了。'
             },
             {
                 id: 'n3_quiz_to_iu_koto_da_4',
                 sentence: '「田中{たなか}さんは？」\n「出張{しゅっちょう}中{ちゅう}だ（　）。」',
-                options: ['ということだ', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'ということだ', 'とさえ', 'とまで'],
+                correctIndex: 1,
                 explanation: '對話情境。據說在出差中。'
             },
             {
                 id: 'n3_quiz_to_iu_koto_da_5',
                 sentence: '「彼{かれ}は不参加{ふさんか}か…」\n「つまり、二人{ふたり}でやる（　）。」',
-                options: ['ということだ', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'とさえ', 'とから', 'ということだ'],
+                correctIndex: 3,
                 explanation: '對話情境。也就是說，兩個人做。'
             }
         ]
@@ -12696,36 +12696,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_iu_nowa_1',
                 sentence: '「敬語{けいご}」（　）目上{めうえ}の人{ひと}に使{つか}う丁寧{ていねい}な言葉{ことば}だ。',
-                options: ['というのは', 'とから', 'とまで', 'とさえ'],
+                options: ['というのは', 'とまで', 'とから', 'とさえ'],
                 correctIndex: 0,
                 explanation: '所謂的「敬語」是對長輩使用的禮貌用語。'
             },
             {
                 id: 'n3_quiz_to_iu_nowa_2',
                 sentence: '行{い}けない。（　）、仕事{しごと}があるからだ。',
-                options: ['というのは', 'とから', 'とまで', 'とさえ'],
+                options: ['というのは', 'とから', 'とさえ', 'とまで'],
                 correctIndex: 0,
                 explanation: '去不了。因為有工作。'
             },
             {
                 id: 'n3_quiz_to_iu_nowa_3',
                 sentence: '「引{ひ}きこもり」（　）家{いえ}から出{で}ない人{ひと}のことだ。',
-                options: ['というのは', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'とから', 'というのは'],
+                correctIndex: 3,
                 explanation: '所謂的「繭居族」是指不出門的人。'
             },
             {
                 id: 'n3_quiz_to_iu_nowa_4',
                 sentence: '「なぜ転職{てんしょく}したの？」\n「（　）、今{いま}の会社{かいしゃ}に成長{せいちょう}がないからだ。」',
-                options: ['というのは', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'とから', 'というのは'],
+                correctIndex: 3,
                 explanation: '對話情境。因為現在的公司沒有發展。'
             },
             {
                 id: 'n3_quiz_to_iu_nowa_5',
                 sentence: '「SDGs」（　）持続可能{じぞくかのう}な開発{かいはつ}目標{もくひょう}のことだ。',
-                options: ['というのは', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'とさえ', 'というのは', 'とまで'],
+                correctIndex: 2,
                 explanation: '「SDGs」是指永續發展目標。'
             }
         ]
@@ -12762,8 +12762,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_iu_to_1',
                 sentence: '京都{きょうと}（　）、金閣寺{きんかくじ}が有名{ゆうめい}だ。',
-                options: ['と言うと', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'とから', 'と言うと', 'とさえ'],
+                correctIndex: 2,
                 explanation: '說起京都，金閣寺很有名。'
             },
             {
@@ -12776,22 +12776,22 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_iu_to_3',
                 sentence: '彼{かれ}（　）、いつも遅刻{ちこく}する。',
-                options: ['と言うと', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'と言うと', 'とから', 'とさえ'],
+                correctIndex: 1,
                 explanation: '說起他，總是遲到。'
             },
             {
                 id: 'n3_quiz_to_iu_to_4',
                 sentence: '「田中{たなか}さんが辞{や}めるらしい。」\n「田中{たなか}さん（　）、経理{けいり}部{ぶ}の？」',
-                options: ['と言うと', 'とから', 'とまで', 'とさえ'],
+                options: ['と言うと', 'とさえ', 'とから', 'とまで'],
                 correctIndex: 0,
                 explanation: '對話情境。說到田中，是會計部的嗎？'
             },
             {
                 id: 'n3_quiz_to_iu_to_5',
                 sentence: '「あのレストランに行{い}った。」\n「あのレストラン（　）、駅前{えきまえ}の？」',
-                options: ['と言うと', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とから', 'と言うと', 'とまで'],
+                correctIndex: 2,
                 explanation: '對話情境。說到那家餐廳，是車站前的嗎？'
             }
         ]
@@ -12828,36 +12828,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_iu_to_1_1',
                 sentence: 'ラーメン（　）、博多{はかた}ラーメンが一番{いちばん}だ。',
-                options: ['と言うと', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'と言うと', 'とさえ', 'とまで'],
+                correctIndex: 1,
                 explanation: '說到拉麵，博多拉麵最棒。'
             },
             {
                 id: 'n3_quiz_to_iu_to_1_2',
                 sentence: 'あの事件{じけん}（　）、まだ解決{かいけつ}していない。',
-                options: ['と言うと', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'と言うと', 'とから', 'とまで'],
+                correctIndex: 1,
                 explanation: '說到那個事件，還沒解決。'
             },
             {
                 id: 'n3_quiz_to_iu_to_1_3',
                 sentence: '温泉{おんせん}（　）、やっぱり箱根{はこね}かな。',
-                options: ['と言うと', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'とから', 'と言うと'],
+                correctIndex: 3,
                 explanation: '說到溫泉，果然是箱根吧。'
             },
             {
                 id: 'n3_quiz_to_iu_to_1_4',
                 sentence: '「計画{けいかく}が失敗{しっぱい}した。」\n「失敗{しっぱい}（　）、予算{よさん}が足{た}りなかった？」',
-                options: ['と言うと', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'とさえ', 'と言うと', 'とから'],
+                correctIndex: 2,
                 explanation: '對話情境。說到失敗，是預算不夠嗎？'
             },
             {
                 id: 'n3_quiz_to_iu_to_1_5',
                 sentence: '「来週{らいしゅう}引{ひ}っ越{こ}すんだ。」\n「引{ひ}っ越{こ}し（　）、遠{とお}くに行{い}くの？」',
-                options: ['と言うと', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'と言うと', 'とから'],
+                correctIndex: 2,
                 explanation: '對話情境。說到搬家，要搬遠嗎？'
             }
         ]
@@ -12894,35 +12894,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_iu_yori_1',
                 sentence: 'これは失敗{しっぱい}（　）、いい経験{けいけん}だ。',
-                options: ['というより', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'とさえ', 'とから', 'というより'],
+                correctIndex: 3,
                 explanation: '與其說這是失敗，不如說是好的經驗。'
             },
             {
                 id: 'n3_quiz_to_iu_yori_2',
                 sentence: '疲{つか}れた（　）、眠{ねむ}い。',
-                options: ['というより', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とから', 'とまで', 'というより'],
+                correctIndex: 3,
                 explanation: '與其說累，不如說想睡。'
             },
             {
                 id: 'n3_quiz_to_iu_yori_3',
                 sentence: 'この部屋{へや}は狭{せま}い（　）、ちょうどいい。',
-                options: ['というより', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'とから', 'というより', 'とさえ'],
+                correctIndex: 2,
                 explanation: '與其說這房間小，不如說剛剛好。'
             },
             {
                 id: 'n3_quiz_to_iu_yori_4',
                 sentence: '「辛{つら}い？」\n「辛{つら}い（　）、寂{さび}しいかな。」',
-                options: ['というより', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'とから', 'というより'],
+                correctIndex: 3,
                 explanation: '對話情境。與其說辛苦，不如說寂寞。'
             },
             {
                 id: 'n3_quiz_to_iu_yori_5',
                 sentence: '「彼{かれ}は優{やさ}しい？」\n「優{やさ}しい（　）、お人好{ひとよ}しだね。」',
-                options: ['というより', 'とから', 'とまで', 'とさえ'],
+                options: ['というより', 'とさえ', 'とから', 'とまで'],
                 correctIndex: 0,
                 explanation: '對話情境。與其說溫柔，不如說好人過頭。'
             }
@@ -12960,36 +12960,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_mieru_1',
                 sentence: '彼{かれ}は忙{いそが}しい（　）、全然{ぜんぜん}連絡{れんらく}がない。',
-                options: ['とみえて', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'とから', 'とみえて'],
+                correctIndex: 3,
                 explanation: '看來他很忙，完全沒聯絡。'
             },
             {
                 id: 'n3_quiz_to_mieru_2',
                 sentence: '人気{にんき}がある（　）、いつも満席{まんせき}だ。',
-                options: ['とみえて', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'とまで', 'とみえて', 'とさえ'],
+                correctIndex: 2,
                 explanation: '看來很有人氣，總是客滿。'
             },
             {
                 id: 'n3_quiz_to_mieru_3',
                 sentence: '安{やす}い（　）、たくさんの人{ひと}が買{か}っている。',
-                options: ['とみえて', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'とから', 'とみえて'],
+                correctIndex: 3,
                 explanation: '看來很便宜，很多人在買。'
             },
             {
                 id: 'n3_quiz_to_mieru_4',
                 sentence: '「なんで泣{な}いてるの？」\n「悲{かな}しいニュースを見{み}た（　）。」',
-                options: ['とみえる', 'とから', 'とまで', 'とさえ'],
+                options: ['とみえる', 'とさえ', 'とから', 'とまで'],
                 correctIndex: 0,
                 explanation: '對話情境。看來看了悲傷的新聞。'
             },
             {
                 id: 'n3_quiz_to_mieru_5',
                 sentence: '「彼{かれ}機嫌{きげん}悪{わる}い？」\n「うん、何{なに}かあった（　）。」',
-                options: ['とみえる', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とみえる', 'とまで', 'とから'],
+                correctIndex: 1,
                 explanation: '對話情境。嗯，看來發生了什麼事。'
             }
         ]
@@ -13033,29 +13033,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_mieru_to_miete_2',
                 sentence: '急{いそ}いでいる（　）、走{はし}っている。',
-                options: ['とみえて', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とから', 'とみえて', 'とまで'],
+                correctIndex: 2,
                 explanation: '看來在趕時間，正在跑。'
             },
             {
                 id: 'n3_quiz_to_mieru_to_miete_3',
                 sentence: 'お腹{なか}が空{す}いた（　）、早{はや}く食{た}べたがっている。',
-                options: ['とみえて', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'とまで', 'とさえ', 'とみえて'],
+                correctIndex: 3,
                 explanation: '看來肚子餓了，想快點吃。'
             },
             {
                 id: 'n3_quiz_to_mieru_to_miete_4',
                 sentence: '「彼{かれ}寝{ね}てる？」\n「うん、疲{つか}れた（　）。」',
-                options: ['とみえる', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とみえる', 'とまで', 'とから'],
+                correctIndex: 1,
                 explanation: '對話情境。嗯，看來很累。'
             },
             {
                 id: 'n3_quiz_to_mieru_to_miete_5',
                 sentence: '「なんで笑{わら}ってるの？」\n「面白{おもしろ}いことがあった（　）。」',
-                options: ['とみえる', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'とみえる', 'とから'],
+                correctIndex: 2,
                 explanation: '對話情境。看來有好笑的事。'
             }
         ]
@@ -13092,15 +13092,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_sureba_1',
                 sentence: '予算{よさん}が足{た}りないと（　）、規模{きぼ}を縮小{しゅくしょう}するしかない。',
-                options: ['すれば', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'から', 'すれば'],
+                correctIndex: 3,
                 explanation: '假設預算不夠的話，只能縮小規模。'
             },
             {
                 id: 'n3_quiz_to_sureba_2',
                 sentence: '彼女{かのじょ}が辞{や}めると（　）、代{か}わりが必要{ひつよう}だ。',
-                options: ['すれば', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'まで', 'すれば'],
+                correctIndex: 3,
                 explanation: '假設她辭職的話，需要替代人選。'
             },
             {
@@ -13113,15 +13113,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_sureba_4',
                 sentence: '「来週{らいしゅう}忙{いそが}しい？」\n「来週{らいしゅう}だと（　）、少{すこ}し時間{じかん}がある。」',
-                options: ['すれば', 'から', 'まで', 'さえ'],
+                options: ['すれば', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。如果是下週的話，有一點時間。'
             },
             {
                 id: 'n3_quiz_to_sureba_5',
                 sentence: '「彼{かれ}が反対{はんたい}したら？」\n「反対{はんたい}すると（　）、計画{けいかく}を変{か}えよう。」',
-                options: ['すれば', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'すれば', 'さえ'],
+                correctIndex: 2,
                 explanation: '對話情境。假設他反對的話，就改計畫。'
             }
         ]
@@ -13158,36 +13158,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_sureba_to_shitara_to_suru_to_1',
                 sentence: '電車{でんしゃ}で行{い}くと（　）、一時間{いちじかん}かかる。',
-                options: ['すると', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'から', 'すると'],
+                correctIndex: 3,
                 explanation: '假設搭電車去的話，要一小時。'
             },
             {
                 id: 'n3_quiz_to_sureba_to_shitara_to_suru_to_2',
                 sentence: '今日{きょう}無理{むり}だと（　）、明日{あした}はどう？',
-                options: ['したら', 'から', 'まで', 'さえ'],
+                options: ['したら', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '假設今天不行的話，明天怎麼樣？'
             },
             {
                 id: 'n3_quiz_to_sureba_to_shitara_to_suru_to_3',
                 sentence: '合格{ごうかく}できないと（　）、来年{らいねん}また受{う}ける。',
-                options: ['すれば', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'すれば', 'さえ', 'から'],
+                correctIndex: 1,
                 explanation: '假設不能合格的話，明年再考。'
             },
             {
                 id: 'n3_quiz_to_sureba_to_shitara_to_suru_to_4',
                 sentence: '「もし百万円{ひゃくまんえん}もらったら？」\n「もらったと（　）、旅行{りょこう}に行{い}きたい。」',
-                options: ['したら', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'したら', 'から', 'まで'],
+                correctIndex: 1,
                 explanation: '對話情境。假設拿到的話，想去旅行。'
             },
             {
                 id: 'n3_quiz_to_sureba_to_shitara_to_suru_to_5',
                 sentence: '「この仕事{しごと}引{ひ}き受{う}ける？」\n「引{ひ}き受{う}けると（　）、条件{じょうけん}がある。」',
-                options: ['すれば', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'すれば', 'まで'],
+                correctIndex: 2,
                 explanation: '對話情境。假設接受的話，有條件。'
             }
         ]
@@ -13224,36 +13224,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_tomo_ni_1',
                 sentence: '年齢{ねんれい}（　）、体力{たいりょく}も衰{おとろ}える。',
-                options: ['と共に', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とから', 'と共に', 'とまで'],
+                correctIndex: 2,
                 explanation: '隨著年齡增長，體力也會衰退。'
             },
             {
                 id: 'n3_quiz_to_tomo_ni_2',
                 sentence: '友人{ゆうじん}（　）旅行{りょこう}した。',
-                options: ['と共に', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'と共に', 'とさえ', 'とまで'],
+                correctIndex: 1,
                 explanation: '和朋友一起旅行了。'
             },
             {
                 id: 'n3_quiz_to_tomo_ni_3',
                 sentence: '技術{ぎじゅつ}の発展{はってん}（　）、生活{せいかつ}が便利{べんり}になった。',
-                options: ['と共に', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'とさえ', 'と共に', 'とまで'],
+                correctIndex: 2,
                 explanation: '隨著技術發展，生活變得便利。'
             },
             {
                 id: 'n3_quiz_to_tomo_ni_4',
                 sentence: '「一人{ひとり}で行{い}くの？」\n「同僚{どうりょう}（　）行{い}くよ。」',
-                options: ['と共に', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'と共に', 'とさえ', 'とから'],
+                correctIndex: 1,
                 explanation: '對話情境。和同事一起去。'
             },
             {
                 id: 'n3_quiz_to_tomo_ni_5',
                 sentence: '「会社{かいしゃ}は成長{せいちょう}してる？」\n「社員{しゃいん}の成長{せいちょう}（　）、会社{かいしゃ}も発展{はってん}している。」',
-                options: ['と共に', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'とまで', 'と共に', 'とさえ'],
+                correctIndex: 2,
                 explanation: '對話情境。隨著員工成長，公司也發展。'
             }
         ]
@@ -13290,35 +13290,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_to_tomo_ni_1_1',
                 sentence: '季節{きせつ}の移{うつ}り変{か}わり（　）、景色{けしき}も変{か}わる。',
-                options: ['と共に', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'と共に', 'とから', 'とまで'],
+                correctIndex: 1,
                 explanation: '隨著季節更替，景色也改變。'
             },
             {
                 id: 'n3_quiz_to_tomo_ni_1_2',
                 sentence: '経済{けいざい}の発展{はってん}（　）、問題{もんだい}も増{ふ}えた。',
-                options: ['と共に', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'と共に', 'とから'],
+                correctIndex: 2,
                 explanation: '隨著經濟發展，問題也增加了。'
             },
             {
                 id: 'n3_quiz_to_tomo_ni_1_3',
                 sentence: '時間{じかん}が経{た}つ（　）、記憶{きおく}が薄{うす}れる。',
-                options: ['と共に', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'と共に', 'とまで', 'とさえ'],
+                correctIndex: 1,
                 explanation: '隨著時間流逝，記憶變淡。'
             },
             {
                 id: 'n3_quiz_to_tomo_ni_1_4',
                 sentence: '「日本語{にほんご}上手{じょうず}になった？」\n「練習{れんしゅう}を重{かさ}ねる（　）、少{すこ}しずつね。」',
-                options: ['と共に', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とから', 'と共に', 'とまで'],
+                correctIndex: 2,
                 explanation: '對話情境。隨著練習增加，一點一點進步。'
             },
             {
                 id: 'n3_quiz_to_tomo_ni_1_5',
                 sentence: '「子供{こども}大{おお}きくなった？」\n「成長{せいちょう}する（　）、手{て}がかからなくなったよ。」',
-                options: ['と共に', 'とから', 'とまで', 'とさえ'],
+                options: ['と共に', 'とまで', 'とから', 'とさえ'],
                 correctIndex: 0,
                 explanation: '對話情境。隨著成長，不那麼費心了。'
             }
@@ -13356,36 +13356,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tochuu_de_1',
                 sentence: '駅{えき}に行{い}く（　）、財布{さいふ}を落{お}とした。',
-                options: ['途中で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', '途中で', 'さえ'],
+                correctIndex: 2,
                 explanation: '去車站途中弄丟了錢包。'
             },
             {
                 id: 'n3_quiz_tochuu_de_2',
                 sentence: '話{はなし}の（　）、突然{とつぜん}思{おも}い出{だ}した。',
-                options: ['途中で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', '途中で', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '說話途中突然想起來了。'
             },
             {
                 id: 'n3_quiz_tochuu_de_3',
                 sentence: '読{よ}む（　）眠{ねむ}くなった。',
-                options: ['途中で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'まで', '途中で'],
+                correctIndex: 3,
                 explanation: '讀的時候變得想睡。'
             },
             {
                 id: 'n3_quiz_tochuu_de_4',
                 sentence: '「なんで途中{とちゅう}で帰{かえ}ったの？」\n「映画{えいが}の（　）、気分{きぶん}が悪{わる}くなったんだ。」',
-                options: ['途中で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'から', '途中で'],
+                correctIndex: 3,
                 explanation: '對話情境。看電影途中不舒服了。'
             },
             {
                 id: 'n3_quiz_tochuu_de_5',
                 sentence: '「買{か}い物{もの}楽{たの}しかった？」\n「うん、でも帰{かえ}りの（　）雨{あめ}に降{ふ}られた。」',
-                options: ['途中で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', '途中で', 'から'],
+                correctIndex: 2,
                 explanation: '對話情境。回程途中淋到雨了。'
             }
         ]
@@ -13422,35 +13422,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tochuu_de_tochuu_ni_1',
                 sentence: '途中{とちゅう}（　）やめてはいけない。',
-                options: ['で', 'に', 'から', 'まで'],
-                correctIndex: 0,
+                options: ['まで', 'に', 'から', 'で'],
+                correctIndex: 3,
                 explanation: '不可以中途放棄。'
             },
             {
                 id: 'n3_quiz_tochuu_de_tochuu_ni_2',
                 sentence: '学校{がっこう}への途中{とちゅう}（　）公園{こうえん}がある。',
-                options: ['に', 'で', 'から', 'まで'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'に', 'で'],
+                correctIndex: 2,
                 explanation: '去學校的途中有公園。'
             },
             {
                 id: 'n3_quiz_tochuu_de_tochuu_ni_3',
                 sentence: '説明{せつめい}の途中{とちゅう}（　）質問{しつもん}しないでください。',
-                options: ['で', 'に', 'から', 'まで'],
-                correctIndex: 0,
+                options: ['に', 'で', 'から', 'まで'],
+                correctIndex: 1,
                 explanation: '說明途中請不要發問。'
             },
             {
                 id: 'n3_quiz_tochuu_de_tochuu_ni_4',
                 sentence: '「郵便局{ゆうびんきょく}ある？」\n「駅{えき}への途中{とちゅう}（　）あるよ。」',
-                options: ['に', 'で', 'から', 'まで'],
-                correctIndex: 0,
+                options: ['で', 'まで', 'に', 'から'],
+                correctIndex: 2,
                 explanation: '對話情境。在去車站途中有。'
             },
             {
                 id: 'n3_quiz_tochuu_de_tochuu_ni_5',
                 sentence: '「なぜ途中{とちゅう}（　）帰{かえ}った？」\n「急用{きゅうよう}ができたから。」',
-                options: ['で', 'に', 'から', 'まで'],
+                options: ['で', 'まで', 'に', 'から'],
                 correctIndex: 0,
                 explanation: '對話情境。為什麼中途回去了？因為有急事。'
             }
@@ -13488,36 +13488,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tokoro_de_1',
                 sentence: '（　）、田中{たなか}さんは元気{げんき}？',
-                options: ['ところで', 'だから', 'しかし', 'そして'],
-                correctIndex: 0,
+                options: ['そして', 'しかし', 'だから', 'ところで'],
+                correctIndex: 3,
                 explanation: '話說，田中先生還好嗎？'
             },
             {
                 id: 'n3_quiz_tokoro_de_2',
                 sentence: '（　）、鍵{かぎ}どこに置{お}いた？',
-                options: ['ところで', 'だから', 'しかし', 'そして'],
-                correctIndex: 0,
+                options: ['しかし', 'そして', 'だから', 'ところで'],
+                correctIndex: 3,
                 explanation: '對了，鑰匙放哪了？'
             },
             {
                 id: 'n3_quiz_tokoro_de_3',
                 sentence: '（　）、もうお昼{ひる}だけど、どこで食{た}べる？',
-                options: ['ところで', 'だから', 'しかし', 'そして'],
-                correctIndex: 0,
+                options: ['しかし', 'だから', 'ところで', 'そして'],
+                correctIndex: 2,
                 explanation: '話說，已經中午了，要在哪吃？'
             },
             {
                 id: 'n3_quiz_tokoro_de_4',
                 sentence: '「報告書{ほうこくしょ}終{お}わった？」\n「うん。（　）、来週{らいしゅう}の会議{かいぎ}いつ？」',
-                options: ['ところで', 'だから', 'しかし', 'そして'],
-                correctIndex: 0,
+                options: ['だから', 'しかし', 'ところで', 'そして'],
+                correctIndex: 2,
                 explanation: '對話情境。嗯。話說，下週的會議什麼時候？'
             },
             {
                 id: 'n3_quiz_tokoro_de_5',
                 sentence: '「映画{えいが}面白{おもしろ}かったね。」\n「（　）、お腹{なか}空{す}かない？」',
-                options: ['ところで', 'だから', 'しかし', 'そして'],
-                correctIndex: 0,
+                options: ['そして', 'だから', 'ところで', 'しかし'],
+                correctIndex: 2,
                 explanation: '對話情境。話說，不餓嗎？'
             }
         ]
@@ -13554,36 +13554,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tokoro_ga_1',
                 sentence: '行{い}かないと思{おも}った。（　）、来{き}た。',
-                options: ['ところが', 'だから', 'そして', 'ところで'],
-                correctIndex: 0,
+                options: ['だから', 'ところで', 'そして', 'ところが'],
+                correctIndex: 3,
                 explanation: '以為不會來。結果來了。'
             },
             {
                 id: 'n3_quiz_tokoro_ga_2',
                 sentence: '安{やす}いと思{おも}った。（　）、高{たか}かった。',
-                options: ['ところが', 'だから', 'そして', 'ところで'],
+                options: ['ところが', 'ところで', 'だから', 'そして'],
                 correctIndex: 0,
                 explanation: '以為便宜。結果很貴。'
             },
             {
                 id: 'n3_quiz_tokoro_ga_3',
                 sentence: '反対{はんたい}されると思{おも}った。（　）、賛成{さんせい}してくれた。',
-                options: ['ところが', 'だから', 'そして', 'ところで'],
-                correctIndex: 0,
+                options: ['ところで', 'ところが', 'そして', 'だから'],
+                correctIndex: 1,
                 explanation: '以為會被反對。結果贊成了。'
             },
             {
                 id: 'n3_quiz_tokoro_ga_4',
                 sentence: '「彼{かれ}怒{おこ}った？」\n「怒{おこ}ると思{おも}った。（　）、笑{わら}ってた。」',
-                options: ['ところが', 'だから', 'そして', 'ところで'],
-                correctIndex: 0,
+                options: ['だから', 'ところで', 'そして', 'ところが'],
+                correctIndex: 3,
                 explanation: '對話情境。以為會生氣。結果在笑。'
             },
             {
                 id: 'n3_quiz_tokoro_ga_5',
                 sentence: '「彼女{かのじょ}断{ことわ}った？」\n「断{ことわ}られると思{おも}った。（　）、OKしてくれた！」',
-                options: ['ところが', 'だから', 'そして', 'ところで'],
-                correctIndex: 0,
+                options: ['だから', 'ところが', 'ところで', 'そして'],
+                correctIndex: 1,
                 explanation: '對話情境。以為會被拒絕。結果答應了！'
             }
         ]
@@ -13620,15 +13620,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_toori_ni_1',
                 sentence: '予定{よてい}の（　）進{すす}んでいる。',
-                options: ['とおりに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'とおりに', 'から'],
+                correctIndex: 2,
                 explanation: '按照預定進行。'
             },
             {
                 id: 'n3_quiz_toori_ni_2',
                 sentence: '先生{せんせい}が教{おし}えた（　）やってみた。',
-                options: ['とおりに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'から', 'とおりに'],
+                correctIndex: 3,
                 explanation: '按照老師教的試做了。'
             },
             {
@@ -13641,15 +13641,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_toori_ni_4',
                 sentence: '「これでいい？」\n「私{わたし}が見{み}せた（　）やって。」',
-                options: ['とおりに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'とおりに', 'まで'],
+                correctIndex: 2,
                 explanation: '對話情境。按照我示範的做。'
             },
             {
                 id: 'n3_quiz_toori_ni_5',
                 sentence: '「地図{ちず}見{み}ながら行{い}く？」\n「うん、地図{ちず}の（　）行{い}けば着{つ}くよ。」',
-                options: ['とおりに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'から', 'とおりに'],
+                correctIndex: 3,
                 explanation: '對話情境。按照地圖走就會到。'
             }
         ]
@@ -13686,36 +13686,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_toosu_1',
                 sentence: '嘘{うそ}をつき（　）のは良{よ}くない。',
-                options: ['通す', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', '通す', 'から'],
+                correctIndex: 2,
                 explanation: '一直說謊是不好的。'
             },
             {
                 id: 'n3_quiz_toosu_2',
                 sentence: '夜{よる}通{とお}し働{はたら}き（　）。',
-                options: ['通した', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'から', '通した'],
+                correctIndex: 3,
                 explanation: '通宵工作到底。'
             },
             {
                 id: 'n3_quiz_toosu_3',
                 sentence: '最後{さいご}まで黙{だま}り（　）。',
-                options: ['通した', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', '通した', 'まで'],
+                correctIndex: 2,
                 explanation: '保持沉默到最後。'
             },
             {
                 id: 'n3_quiz_toosu_4',
                 sentence: '「諦{あきら}めなかった？」\n「うん、信{しん}じ（　）よ。」',
-                options: ['通した', 'から', 'まで', 'さえ'],
+                options: ['通した', 'さえ', 'まで', 'から'],
                 correctIndex: 0,
                 explanation: '對話情境。嗯，相信到底了。'
             },
             {
                 id: 'n3_quiz_toosu_5',
                 sentence: '「完走{かんそう}できた？」\n「なんとか走{はし}り（　）。」',
-                options: ['通した', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', '通した', 'から'],
+                correctIndex: 2,
                 explanation: '對話情境。總算跑完全程了。'
             }
         ]
@@ -13752,35 +13752,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_toosu_1_1',
                 sentence: '最後{さいご}まで戦{たたか}い（　）つもりだ。',
-                options: ['通す', 'から', 'まで', 'さえ'],
+                options: ['通す', 'まで', 'さえ', 'から'],
                 correctIndex: 0,
                 explanation: '打算戰鬥到最後。'
             },
             {
                 id: 'n3_quiz_toosu_1_2',
                 sentence: '自分{じぶん}の信念{しんねん}を貫{つらぬ}き（　）。',
-                options: ['通した', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'さえ', '通した'],
+                correctIndex: 3,
                 explanation: '貫徹了自己的信念。'
             },
             {
                 id: 'n3_quiz_toosu_1_3',
                 sentence: 'この厚{あつ}い本{ほん}を読{よ}み（　）のは難{むずか}しい。',
-                options: ['通す', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'さえ', '通す'],
+                correctIndex: 3,
                 explanation: '把這本厚書讀完很難。'
             },
             {
                 id: 'n3_quiz_toosu_1_4',
                 sentence: '「反対{はんたい}されても？」\n「自分{じぶん}の意見{いけん}を押{お}し（　）。」',
-                options: ['通す', 'から', 'まで', 'さえ'],
+                options: ['通す', 'さえ', 'から', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。會堅持己見。'
             },
             {
                 id: 'n3_quiz_toosu_1_5',
                 sentence: '「100キロ歩{ある}けた？」\n「なんとか歩{ある}き（　）よ。」',
-                options: ['通した', 'から', 'まで', 'さえ'],
+                options: ['通した', 'さえ', 'から', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。總算走完了。'
             }
@@ -13818,36 +13818,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_toshite_1',
                 sentence: '彼{かれ}は社長{しゃちょう}（　）会社{かいしゃ}を代表{だいひょう}する。',
-                options: ['として', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'として', 'から', 'まで'],
+                correctIndex: 1,
                 explanation: '他以社長身份代表公司。'
             },
             {
                 id: 'n3_quiz_toshite_2',
                 sentence: '日本語{にほんご}教師{きょうし}（　）働{はたら}いている。',
-                options: ['として', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'から', 'として'],
+                correctIndex: 3,
                 explanation: '以日語老師的身份工作。'
             },
             {
                 id: 'n3_quiz_toshite_3',
                 sentence: 'お礼{れい}（　）これを差{さ}し上{あ}げます。',
-                options: ['として', 'から', 'まで', 'さえ'],
+                options: ['として', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '作為謝禮送上這個。'
             },
             {
                 id: 'n3_quiz_toshite_4',
                 sentence: '「何{なに}しに来{き}たの？」\n「取材{しゅざい}（　）来{き}ました。」',
-                options: ['として', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'として', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '對話情境。來採訪的。'
             },
             {
                 id: 'n3_quiz_toshite_5',
                 sentence: '「あなたはどう思{おも}う？」\n「親{おや}（　）心配{しんぱい}だ。」',
-                options: ['として', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'から', 'として'],
+                correctIndex: 3,
                 explanation: '對話情境。作為父母很擔心。'
             }
         ]
@@ -13884,7 +13884,7 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_totemo_nai_1',
                 sentence: 'この問題{もんだい}は（　）難{むずか}しくて解{と}けない。',
-                options: ['とても', 'から', 'まで', 'さえ'],
+                options: ['とても', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '這個問題太難解不開。'
             },
@@ -13898,15 +13898,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_totemo_nai_3',
                 sentence: 'この距離{きょり}は（　）歩{ある}けない。',
-                options: ['とても', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'とても', 'から'],
+                correctIndex: 2,
                 explanation: '這距離根本走不了。'
             },
             {
                 id: 'n3_quiz_totemo_nai_4',
                 sentence: '「明日{あした}までに終{お}わる？」\n「（　）間{ま}に合{あ}わない。」',
-                options: ['とても', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'とても', 'さえ', 'から'],
+                correctIndex: 1,
                 explanation: '對話情境。根本來不及。'
             },
             {
@@ -13950,36 +13950,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_towa_kagiranai_1',
                 sentence: '若{わか}いからといって元気{げんき}（　）。',
-                options: ['とは限らない', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'とは限らない', 'とから', 'とさえ'],
+                correctIndex: 1,
                 explanation: '年輕不代表一定有活力。'
             },
             {
                 id: 'n3_quiz_towa_kagiranai_2',
                 sentence: '安{やす}い（　）。品質{ひんしつ}も大事{だいじ}だ。',
-                options: ['とは限らない', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'とさえ', 'とまで', 'とは限らない'],
+                correctIndex: 3,
                 explanation: '不一定便宜。品質也重要。'
             },
             {
                 id: 'n3_quiz_towa_kagiranai_3',
                 sentence: '努力{どりょく}すれば成功{せいこう}する（　）。',
-                options: ['とは限らない', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とは限らない', 'とから', 'とまで'],
+                correctIndex: 1,
                 explanation: '努力不一定會成功。'
             },
             {
                 id: 'n3_quiz_towa_kagiranai_4',
                 sentence: '「お金{かね}があれば幸{しあわ}せ？」\n「お金{かね}があっても幸{しあわ}せ（　）よ。」',
-                options: ['とは限らない', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'とは限らない', 'とさえ', 'とまで'],
+                correctIndex: 1,
                 explanation: '對話情境。有錢不一定幸福。'
             },
             {
                 id: 'n3_quiz_towa_kagiranai_5',
                 sentence: '「彼{かれ}なら分{わ}かるでしょ？」\n「分{わ}かる（　）よ。聞{き}いてみて。」',
-                options: ['とは限らない', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とまで', 'とから', 'とは限らない'],
+                correctIndex: 3,
                 explanation: '對話情境。不一定知道。問問看。'
             }
         ]
@@ -14016,36 +14016,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_towa_kagiranai_1_1',
                 sentence: '値段{ねだん}が高{たか}いからといって良{よ}い品{しな}（　）。',
-                options: ['とは限らない', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とから', 'とは限らない', 'とまで', 'とさえ'],
+                correctIndex: 1,
                 explanation: '貴不代表一定是好東西。'
             },
             {
                 id: 'n3_quiz_towa_kagiranai_1_2',
                 sentence: '見{み}た目{め}がきれいだからといっておいしい（　）。',
-                options: ['とは限らない', 'とから', 'とまで', 'とさえ'],
+                options: ['とは限らない', 'とまで', 'とさえ', 'とから'],
                 correctIndex: 0,
                 explanation: '看起來漂亮不代表好吃。'
             },
             {
                 id: 'n3_quiz_towa_kagiranai_1_3',
                 sentence: '専門家{せんもんか}だからといって正{ただ}しい（　）。',
-                options: ['とは限らない', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とから', 'とまで', 'とは限らない'],
+                correctIndex: 3,
                 explanation: '是專家不代表一定對。'
             },
             {
                 id: 'n3_quiz_towa_kagiranai_1_4',
                 sentence: '「学歴{がくれき}が高{たか}いと優秀{ゆうしゅう}？」\n「学歴{がくれき}があるから優秀{ゆうしゅう}（　）。」',
-                options: ['とは限らない', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とさえ', 'とは限らない', 'とまで', 'とから'],
+                correctIndex: 1,
                 explanation: '對話情境。有學歷不代表優秀。'
             },
             {
                 id: 'n3_quiz_towa_kagiranai_1_5',
                 sentence: '「人気{にんき}がある店{みせ}は美味{おい}しい？」\n「人気{にんき}があるから美味{おい}しい（　）よ。」',
-                options: ['とは限らない', 'とから', 'とまで', 'とさえ'],
-                correctIndex: 0,
+                options: ['とまで', 'とさえ', 'とは限らない', 'とから'],
+                correctIndex: 2,
                 explanation: '對話情境。有人氣不代表好吃。'
             }
         ]
@@ -14082,36 +14082,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tsui_1',
                 sentence: '（　）秘密{ひみつ}を話{はな}してしまった。',
-                options: ['つい', 'から', 'まで', 'さえ'],
+                options: ['つい', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '不小心說出了秘密。'
             },
             {
                 id: 'n3_quiz_tsui_2',
                 sentence: '（　）買{か}いすぎてしまった。',
-                options: ['つい', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'つい', 'さえ'],
+                correctIndex: 2,
                 explanation: '不小心買太多了。'
             },
             {
                 id: 'n3_quiz_tsui_3',
                 sentence: '（　）怒{おこ}ってしまった。',
-                options: ['つい', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'つい', 'まで', 'さえ'],
+                correctIndex: 1,
                 explanation: '不小心發火了。'
             },
             {
                 id: 'n3_quiz_tsui_4',
                 sentence: '「なんで泣{な}いてるの？」\n「映画{えいが}を見{み}て（　）泣{な}いちゃった。」',
-                options: ['つい', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'つい', 'さえ', 'まで'],
+                correctIndex: 1,
                 explanation: '對話情境。看電影忍不住哭了。'
             },
             {
                 id: 'n3_quiz_tsui_5',
                 sentence: '「また夜更{よふ}かし？」\n「（　）ゲームに夢中{むちゅう}になって…」',
-                options: ['つい', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'つい', 'まで'],
+                correctIndex: 2,
                 explanation: '對話情境。不小心沉迷遊戲...'
             }
         ]
@@ -14148,15 +14148,15 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tsui_ni_1',
                 sentence: '（　）完成{かんせい}した！',
-                options: ['ついに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'ついに', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '終於完成了！'
             },
             {
                 id: 'n3_quiz_tsui_ni_2',
                 sentence: '（　）春{はる}が来{き}た。',
-                options: ['ついに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'ついに', 'から', 'まで'],
+                correctIndex: 1,
                 explanation: '春天終於來了。'
             },
             {
@@ -14169,14 +14169,14 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tsui_ni_4',
                 sentence: '「待{ま}ち遠{どお}しかった？」\n「うん、（　）この日{ひ}が来{き}た！」',
-                options: ['ついに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'さえ', 'ついに'],
+                correctIndex: 3,
                 explanation: '對話情境。這一天終於來了！'
             },
             {
                 id: 'n3_quiz_tsui_ni_5',
                 sentence: '「彼{かれ}連絡{れんらく}来{き}た？」\n「いや、（　）来{こ}なかった。」',
-                options: ['ついに', 'から', 'まで', 'さえ'],
+                options: ['ついに', 'さえ', 'から', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。不，最終還是沒來。'
             }
@@ -14214,36 +14214,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tsuide_ni_1',
                 sentence: '散歩{さんぽ}の（　）郵便局{ゆうびんきょく}に寄{よ}った。',
-                options: ['ついでに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'ついでに', 'さえ', 'から'],
+                correctIndex: 1,
                 explanation: '散步時順便去了郵局。'
             },
             {
                 id: 'n3_quiz_tsuide_ni_2',
                 sentence: '駅{えき}に行{い}く（　）、ATMでお金{かね}を下{お}ろした。',
-                options: ['ついでに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'ついでに', 'さえ'],
+                correctIndex: 2,
                 explanation: '去車站時順便領了錢。'
             },
             {
                 id: 'n3_quiz_tsuide_ni_3',
                 sentence: '旅行{りょこう}の（　）友達{ともだち}に会{あ}った。',
-                options: ['ついでに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'ついでに', 'さえ', 'まで'],
+                correctIndex: 1,
                 explanation: '旅行時順便見了朋友。'
             },
             {
                 id: 'n3_quiz_tsuide_ni_4',
                 sentence: '「スーパー行{い}くの？」\n「うん、（　）牛乳{ぎゅうにゅう}買{か}ってきて。」',
-                options: ['ついでに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'ついでに', 'から'],
+                correctIndex: 2,
                 explanation: '對話情境。順便買牛奶回來。'
             },
             {
                 id: 'n3_quiz_tsuide_ni_5',
                 sentence: '「帰{かえ}る途中{とちゅう}？」\n「うん、（　）クリーニング取{と}ってきた。」',
-                options: ['ついでに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'まで', 'ついでに'],
+                correctIndex: 3,
                 explanation: '對話情境。順便取了乾洗衣物。'
             }
         ]
@@ -14280,36 +14280,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tsumari_1',
                 sentence: '（　）、賛成{さんせい}ということですね。',
-                options: ['つまり', 'だから', 'しかし', 'ところで'],
+                options: ['つまり', 'だから', 'ところで', 'しかし'],
                 correctIndex: 0,
                 explanation: '也就是說，是贊成對吧。'
             },
             {
                 id: 'n3_quiz_tsumari_2',
                 sentence: '（　）、時間{じかん}がないということだ。',
-                options: ['つまり', 'だから', 'しかし', 'ところで'],
-                correctIndex: 0,
+                options: ['だから', 'つまり', 'しかし', 'ところで'],
+                correctIndex: 1,
                 explanation: '總之，沒有時間。'
             },
             {
                 id: 'n3_quiz_tsumari_3',
                 sentence: '彼{かれ}は来{こ}ない。（　）、一人{ひとり}でやるしかない。',
-                options: ['つまり', 'だから', 'しかし', 'ところで'],
-                correctIndex: 0,
+                options: ['ところで', 'しかし', 'つまり', 'だから'],
+                correctIndex: 2,
                 explanation: '他不來。也就是說，只能一個人做。'
             },
             {
                 id: 'n3_quiz_tsumari_4',
                 sentence: '「結論{けつろん}は？」\n「（　）、延期{えんき}だ。」',
-                options: ['つまり', 'だから', 'しかし', 'ところで'],
+                options: ['つまり', 'しかし', 'ところで', 'だから'],
                 correctIndex: 0,
                 explanation: '對話情境。總之，延期了。'
             },
             {
                 id: 'n3_quiz_tsumari_5',
                 sentence: '「何{なに}が言{い}いたいの？」\n「（　）、もっと協力{きょうりょく}してほしい。」',
-                options: ['つまり', 'だから', 'しかし', 'ところで'],
-                correctIndex: 0,
+                options: ['ところで', 'しかし', 'だから', 'つまり'],
+                correctIndex: 3,
                 explanation: '對話情境。總之，希望更多合作。'
             }
         ]
@@ -14346,36 +14346,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tsumori_datta_1',
                 sentence: '早{はや}く起{お}きる（　）が、寝坊{ねぼう}した。',
-                options: ['つもりだった', 'から', 'まで', 'さえ'],
+                options: ['つもりだった', 'さえ', 'まで', 'から'],
                 correctIndex: 0,
                 explanation: '本來打算早起的，但睡過頭了。'
             },
             {
                 id: 'n3_quiz_tsumori_datta_2',
                 sentence: '手伝{てつだ}っている（　）、邪魔{じゃま}になっていた。',
-                options: ['つもりだったが', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'つもりだったが', 'さえ', 'から'],
+                correctIndex: 1,
                 explanation: '以為在幫忙，結果在添亂。'
             },
             {
                 id: 'n3_quiz_tsumori_datta_3',
                 sentence: '全部{ぜんぶ}読{よ}む（　）、時間{じかん}がなかった。',
-                options: ['つもりだったが', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'つもりだったが', 'さえ'],
+                correctIndex: 2,
                 explanation: '本來打算全部讀的，但沒時間。'
             },
             {
                 id: 'n3_quiz_tsumori_datta_4',
                 sentence: '「怒{おこ}らせた？」\n「褒{ほ}める（　）のに…」',
-                options: ['つもりだった', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'つもりだった', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '對話情境。本來是想誇獎的...'
             },
             {
                 id: 'n3_quiz_tsumori_datta_5',
                 sentence: '「なぜ断{ことわ}った？」\n「参加{さんか}する（　）けど、都合{つごう}が悪{わる}くなった。」',
-                options: ['つもりだった', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'から', 'つもりだった'],
+                correctIndex: 3,
                 explanation: '對話情境。本來打算參加的，但沒辦法了。'
             }
         ]
@@ -14412,36 +14412,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_tsumori_de_1',
                 sentence: '試験{しけん}（　）問題{もんだい}を解{と}く。',
-                options: ['のつもりで', 'から', 'まで', 'さえ'],
+                options: ['のつもりで', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '以考試的心態解題。'
             },
             {
                 id: 'n3_quiz_tsumori_de_2',
                 sentence: '初心{しょしん}に戻{もど}った（　）やり直{なお}す。',
-                options: ['つもりで', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'つもりで', 'さえ'],
+                correctIndex: 2,
                 explanation: '帶著回到初衷的心態重新來過。'
             },
             {
                 id: 'n3_quiz_tsumori_de_3',
                 sentence: '旅行{りょこう}に行{い}った（　）貯金{ちょきん}する。',
-                options: ['つもりで', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'まで', 'つもりで'],
+                correctIndex: 3,
                 explanation: '當作去旅行一樣存錢。'
             },
             {
                 id: 'n3_quiz_tsumori_de_4',
                 sentence: '「失敗{しっぱい}したらどうしよう…」\n「成功{せいこう}する（　）やってみて。」',
-                options: ['つもりで', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'つもりで', 'まで', 'さえ'],
+                correctIndex: 1,
                 explanation: '對話情境。帶著會成功的心態試試。'
             },
             {
                 id: 'n3_quiz_tsumori_de_5',
                 sentence: '「なんでそんなに頑張{がんば}るの？」\n「最後{さいご}（　）やってる。」',
-                options: ['のつもりで', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'のつもりで', 'から'],
+                correctIndex: 2,
                 explanation: '對話情境。當作最後一次在努力。'
             }
         ]
@@ -14478,29 +14478,29 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_uchi_ni_1',
                 sentence: '元気{げんき}な（　）運動{うんどう}しよう。',
-                options: ['うちに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'まで', 'うちに'],
+                correctIndex: 3,
                 explanation: '趁身體好的時候運動。'
             },
             {
                 id: 'n3_quiz_uchi_ni_2',
                 sentence: '暗{くら}くならない（　）帰{かえ}ろう。',
-                options: ['うちに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'うちに', 'から', 'まで'],
+                correctIndex: 1,
                 explanation: '趁天還沒黑回去吧。'
             },
             {
                 id: 'n3_quiz_uchi_ni_3',
                 sentence: '日本{にほん}にいる（　）富士山{ふじさん}に登{のぼ}りたい。',
-                options: ['うちに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'うちに', 'から'],
+                correctIndex: 2,
                 explanation: '想趁在日本時登富士山。'
             },
             {
                 id: 'n3_quiz_uchi_ni_4',
                 sentence: '「いつ連絡{れんらく}する？」\n「忘{わす}れない（　）今{いま}しよう。」',
-                options: ['うちに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'うちに', 'さえ'],
+                correctIndex: 2,
                 explanation: '對話情境。趁沒忘記現在聯絡。'
             },
             {
@@ -14544,36 +14544,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ue_de_1',
                 sentence: '相談{そうだん}した（　）決{き}めましょう。',
-                options: ['上で', 'から', 'まで', 'さえ'],
+                options: ['上で', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '商量之後再決定吧。'
             },
             {
                 id: 'n3_quiz_ue_de_2',
                 sentence: '資料{しりょう}を読{よ}んだ（　）意見{いけん}を言{い}う。',
-                options: ['上で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', '上で', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '讀完資料後再發表意見。'
             },
             {
                 id: 'n3_quiz_ue_de_3',
                 sentence: '契約{けいやく}書{しょ}を確認{かくにん}した（　）サインする。',
-                options: ['上で', 'から', 'まで', 'さえ'],
+                options: ['上で', 'さえ', 'から', 'まで'],
                 correctIndex: 0,
                 explanation: '確認合約後再簽名。'
             },
             {
                 id: 'n3_quiz_ue_de_4',
                 sentence: '「すぐ答{こた}える？」\n「よく考{かんが}えた（　）答{こた}える。」',
-                options: ['上で', 'から', 'まで', 'さえ'],
+                options: ['上で', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。仔細考慮後再回答。'
             },
             {
                 id: 'n3_quiz_ue_de_5',
                 sentence: '「入会{にゅうかい}する？」\n「規約{きやく}を読{よ}んだ（　）決{き}めるよ。」',
-                options: ['上で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'さえ', '上で'],
+                correctIndex: 3,
                 explanation: '對話情境。讀完規約再決定。'
             }
         ]
@@ -14610,36 +14610,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ue_de_1_1',
                 sentence: '経済{けいざい}の（　）大{おお}きな変化{へんか}があった。',
-                options: ['上で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'から', '上で'],
+                correctIndex: 3,
                 explanation: '經濟上有很大的變化。'
             },
             {
                 id: 'n3_quiz_ue_de_1_2',
                 sentence: '法律{ほうりつ}の（　）問題{もんだい}はない。',
-                options: ['上で', 'から', 'まで', 'さえ'],
+                options: ['上で', 'さえ', 'まで', 'から'],
                 correctIndex: 0,
                 explanation: '法律上沒有問題。'
             },
             {
                 id: 'n3_quiz_ue_de_1_3',
                 sentence: '健康{けんこう}の（　）注意{ちゅうい}すべきことがある。',
-                options: ['上で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', '上で', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '健康上有需要注意的事。'
             },
             {
                 id: 'n3_quiz_ue_de_1_4',
                 sentence: '「何{なに}が大事{だいじ}？」\n「チームワークの（　）、コミュニケーションが大事{だいじ}だ。」',
-                options: ['上で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', '上で', 'さえ'],
+                correctIndex: 2,
                 explanation: '對話情境。團隊合作上溝通很重要。'
             },
             {
                 id: 'n3_quiz_ue_de_1_5',
                 sentence: '「この制度{せいど}どう？」\n「理論{りろん}の（　）は良{よ}いが、実際{じっさい}は難{むずか}しい。」',
-                options: ['上で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'から', '上で'],
+                correctIndex: 3,
                 explanation: '對話情境。理論上好，但實際上很難。'
             }
         ]
@@ -14676,35 +14676,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ue_ni_1',
                 sentence: '安{やす}い（　）、おいしい。',
-                options: ['上に', 'から', 'まで', 'さえ'],
+                options: ['上に', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '不僅便宜，還好吃。'
             },
             {
                 id: 'n3_quiz_ue_ni_2',
                 sentence: '遅刻{ちこく}した（　）、忘{わす}れ物{もの}もした。',
-                options: ['上に', 'から', 'まで', 'さえ'],
+                options: ['上に', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '不僅遲到，還忘帶東西。'
             },
             {
                 id: 'n3_quiz_ue_ni_3',
                 sentence: '彼女{かのじょ}はきれいな（　）、優{やさ}しい。',
-                options: ['上に', 'から', 'まで', 'さえ'],
+                options: ['上に', 'さえ', 'まで', 'から'],
                 correctIndex: 0,
                 explanation: '她不僅漂亮，還很溫柔。'
             },
             {
                 id: 'n3_quiz_ue_ni_4',
                 sentence: '「なぜ落{お}ちた？」\n「難{むずか}しかった（　）、時間{じかん}も足{た}りなかった。」',
-                options: ['上に', 'から', 'まで', 'さえ'],
+                options: ['上に', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。不僅難，時間也不夠。'
             },
             {
                 id: 'n3_quiz_ue_ni_5',
                 sentence: '「彼{かれ}すごい？」\n「仕事{しごと}ができる（　）、人柄{ひとがら}もいい。」',
-                options: ['上に', 'から', 'まで', 'さえ'],
+                options: ['上に', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '對話情境。不僅能幹，人品也好。'
             }
@@ -14742,36 +14742,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_ue_ni_1_1',
                 sentence: '景色{けしき}がきれいな（　）、料理{りょうり}もおいしい。',
-                options: ['上に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', '上に', 'から', 'まで'],
+                correctIndex: 1,
                 explanation: '風景美，料理也好吃。'
             },
             {
                 id: 'n3_quiz_ue_ni_1_2',
                 sentence: '駅{えき}から近{ちか}い（　）、家賃{やちん}も安{やす}い。',
-                options: ['上に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', '上に', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '離車站近，房租也便宜。'
             },
             {
                 id: 'n3_quiz_ue_ni_1_3',
                 sentence: '電車{でんしゃ}が遅{おく}れた（　）、雨{あめ}にも降{ふ}られた。',
-                options: ['上に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'さえ', '上に'],
+                correctIndex: 3,
                 explanation: '電車誤點，還被淋雨。'
             },
             {
                 id: 'n3_quiz_ue_ni_1_4',
                 sentence: '「なぜ選{えら}んだ？」\n「便利{べんり}な（　）、価格{かかく}も手頃{てごろ}だから。」',
-                options: ['上に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'さえ', '上に'],
+                correctIndex: 3,
                 explanation: '對話情境。方便，價格也合理。'
             },
             {
                 id: 'n3_quiz_ue_ni_1_5',
                 sentence: '「彼女{かのじょ}なぜ人気{にんき}？」\n「歌{うた}が上手{じょうず}な（　）、ダンスもうまいから。」',
-                options: ['上に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', '上に', 'まで'],
+                correctIndex: 2,
                 explanation: '對話情境。會唱歌，舞也跳得好。'
             }
         ]
@@ -14808,36 +14808,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wa_betsu_toshite_1',
                 sentence: '結果{けっか}（　）、努力{どりょく}したことは評価{ひょうか}する。',
-                options: ['は別として', 'から', 'まで', 'さえ'],
+                options: ['は別として', 'さえ', 'から', 'まで'],
                 correctIndex: 0,
                 explanation: '結果姑且不論，努力值得肯定。'
             },
             {
                 id: 'n3_quiz_wa_betsu_toshite_2',
                 sentence: '彼{かれ}の性格{せいかく}（　）、仕事{しごと}はできる。',
-                options: ['は別として', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'は別として', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '他的個性另說，工作能力是有的。'
             },
             {
                 id: 'n3_quiz_wa_betsu_toshite_3',
                 sentence: '価格{かかく}（　）、品質{ひんしつ}は最高{さいこう}だ。',
-                options: ['は別として', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'は別として', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '價格另當別論，品質最好。'
             },
             {
                 id: 'n3_quiz_wa_betsu_toshite_4',
                 sentence: '「彼{かれ}採用{さいよう}する？」\n「経験{けいけん}（　）、熱意{ねつい}はある。」',
-                options: ['は別として', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'は別として', 'から'],
+                correctIndex: 2,
                 explanation: '對話情境。經驗另說，熱情是有的。'
             },
             {
                 id: 'n3_quiz_wa_betsu_toshite_5',
                 sentence: '「この店{みせ}どう？」\n「場所{ばしょ}（　）、料理{りょうり}はおいしいよ。」',
-                options: ['は別として', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'さえ', 'は別として'],
+                correctIndex: 3,
                 explanation: '對話情境。地點另說，料理好吃。'
             }
         ]
@@ -14881,28 +14881,28 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wa_betsu_toshite_1_2',
                 sentence: '社長{しゃちょう}（　）、みんな残業{ざんぎょう}している。',
-                options: ['は別として', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'は別として', 'まで', 'さえ'],
+                correctIndex: 1,
                 explanation: '社長另當別論，大家都在加班。'
             },
             {
                 id: 'n3_quiz_wa_betsu_toshite_1_3',
                 sentence: '天候{てんこう}（　）、予定{よてい}通{どお}りに行{おこな}う。',
-                options: ['は別として', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'から', 'は別として'],
+                correctIndex: 3,
                 explanation: '天氣另當別論，按計畫進行。'
             },
             {
                 id: 'n3_quiz_wa_betsu_toshite_4',
                 sentence: '「全員{ぜんいん}賛成{さんせい}？」\n「山田{やまだ}さん（　）、みんな賛成{さんせい}だ。」',
-                options: ['は別として', 'から', 'まで', 'さえ'],
+                options: ['は別として', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。山田另當別論，大家都贊成。'
             },
             {
                 id: 'n3_quiz_wa_betsu_toshite_1_5',
                 sentence: '「ルール守{まも}らなきゃ？」\n「特例{とくれい}（　）、守{まも}る必要{ひつよう}がある。」',
-                options: ['は別として', 'から', 'まで', 'さえ'],
+                options: ['は別として', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '對話情境。特例另當別論，需要遵守。'
             }
@@ -14940,36 +14940,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wa_mochiron_1',
                 sentence: '大人{おとな}（　）、子供{こども}も楽{たの}しめる。',
-                options: ['はもちろん', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'はもちろん', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '大人不用說，小孩也能享受。'
             },
             {
                 id: 'n3_quiz_wa_mochiron_2',
                 sentence: '平日{へいじつ}（　）、週末{しゅうまつ}も働{はたら}いている。',
-                options: ['はもちろん', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'はもちろん', 'から', 'まで'],
+                correctIndex: 1,
                 explanation: '平日不用說，週末也在工作。'
             },
             {
                 id: 'n3_quiz_wa_mochiron_3',
                 sentence: '国内{こくない}（　）、海外{かいがい}でも有名{ゆうめい}だ。',
-                options: ['はもちろん', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'さえ', 'はもちろん'],
+                correctIndex: 3,
                 explanation: '國內不用說，海外也有名。'
             },
             {
                 id: 'n3_quiz_wa_mochiron_4',
                 sentence: '「日本語{にほんご}だけ？」\n「日本語{にほんご}（　）、韓国語{かんこくご}も話{はな}せる。」',
-                options: ['はもちろん', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'から', 'はもちろん'],
+                correctIndex: 3,
                 explanation: '對話情境。日語不用說，韓語也會。'
             },
             {
                 id: 'n3_quiz_wa_mochiron_5',
                 sentence: '「肉{にく}料理{りょうり}だけ？」\n「肉{にく}（　）、魚{さかな}料理{りょうり}も得意{とくい}だよ。」',
-                options: ['はもちろん', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'から', 'はもちろん'],
+                correctIndex: 3,
                 explanation: '對話情境。肉類不用說，魚料理也擅長。'
             }
         ]
@@ -15006,28 +15006,28 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wake_da_1',
                 sentence: '留学{りゅうがく}していたのか。英語{えいご}が上手{じょうず}な（　）。',
-                options: ['わけだ', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'まで', 'わけだ'],
+                correctIndex: 3,
                 explanation: '留過學啊。難怪英語那麼好。'
             },
             {
                 id: 'n3_quiz_wake_da_2',
                 sentence: '運動{うんどう}しないから、太{ふと}る（　）。',
-                options: ['わけだ', 'から', 'まで', 'さえ'],
+                options: ['わけだ', 'まで', 'さえ', 'から'],
                 correctIndex: 0,
                 explanation: '不運動，自然會胖。'
             },
             {
                 id: 'n3_quiz_wake_da_3',
                 sentence: '彼{かれ}は医者{いしゃ}だ。忙{いそが}しい（　）。',
-                options: ['わけだ', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'まで', 'わけだ'],
+                correctIndex: 3,
                 explanation: '他是醫生。難怪很忙。'
             },
             {
                 id: 'n3_quiz_wake_da_4',
                 sentence: '「彼女{かのじょ}料理{りょうり}上手{じょうず}だね。」\n「主婦{しゅふ}だから、上手{じょうず}な（　）。」',
-                options: ['わけだ', 'から', 'まで', 'さえ'],
+                options: ['わけだ', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。是主婦，難怪很會做。'
             },
@@ -15072,36 +15072,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wake_dewa_nai_1',
                 sentence: '反対{はんたい}している（　）が、心配{しんぱい}はある。',
-                options: ['わけではない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'わけではない', 'さえ'],
+                correctIndex: 2,
                 explanation: '並不是反對，但有擔心。'
             },
             {
                 id: 'n3_quiz_wake_dewa_nai_2',
                 sentence: '行{い}きたくない（　）が、予定{よてい}がある。',
-                options: ['わけではない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'わけではない', 'さえ'],
+                correctIndex: 2,
                 explanation: '並不是不想去，但有安排。'
             },
             {
                 id: 'n3_quiz_wake_dewa_nai_3',
                 sentence: '彼{かれ}を責{せ}めている（　）。',
-                options: ['わけではない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'さえ', 'わけではない'],
+                correctIndex: 3,
                 explanation: '並不是在責怪他。'
             },
             {
                 id: 'n3_quiz_wake_dewa_nai_4',
                 sentence: '「怒{おこ}ってる？」\n「怒{おこ}っている（　）よ。」',
-                options: ['わけではない', 'から', 'まで', 'さえ'],
+                options: ['わけではない', 'さえ', 'から', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。並沒有在生氣。'
             },
             {
                 id: 'n3_quiz_wake_dewa_nai_5',
                 sentence: '「お金{かね}が大事{だいじ}じゃない？」\n「大事{だいじ}じゃない（　）が、それだけじゃない。」',
-                options: ['わけではない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'まで', 'わけではない'],
+                correctIndex: 3,
                 explanation: '對話情境。不是說不重要，但不只是那樣。'
             }
         ]
@@ -15138,36 +15138,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wake_ga_nai_1',
                 sentence: '彼女{かのじょ}が裏切{うらぎ}る（　）。',
-                options: ['わけがない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'わけがない', 'さえ', 'から'],
+                correctIndex: 1,
                 explanation: '她不可能背叛。'
             },
             {
                 id: 'n3_quiz_wake_ga_nai_2',
                 sentence: '一晩{ひとばん}で終{お}わる（　）。',
-                options: ['わけがない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'わけがない', 'さえ'],
+                correctIndex: 2,
                 explanation: '一晚不可能結束。'
             },
             {
                 id: 'n3_quiz_wake_ga_nai_3',
                 sentence: 'こんなに安{やす}い（　）。何{なに}かおかしい。',
-                options: ['わけがない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'さえ', 'わけがない'],
+                correctIndex: 3,
                 explanation: '不可能這麼便宜。有問題。'
             },
             {
                 id: 'n3_quiz_wake_ga_nai_4',
                 sentence: '「忘{わす}れた？」\n「忘{わす}れる（　）。ちゃんと覚{おぼ}えてる。」',
-                options: ['わけがない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'わけがない', 'まで'],
+                correctIndex: 2,
                 explanation: '對話情境。不可能忘記。記得很清楚。'
             },
             {
                 id: 'n3_quiz_wake_ga_nai_5',
                 sentence: '「彼{かれ}諦{あきら}めた？」\n「彼{かれ}が諦{あきら}める（　）。」',
-                options: ['わけがない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'から', 'わけがない'],
+                correctIndex: 3,
                 explanation: '對話情境。他不可能放棄。'
             }
         ]
@@ -15204,36 +15204,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wake_niwa_ikanai_1',
                 sentence: 'まだ終{お}わってないから、帰{かえ}る（　）。',
-                options: ['わけにはいかない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'わけにはいかない', 'さえ', 'まで'],
+                correctIndex: 1,
                 explanation: '還沒結束，不能回去。'
             },
             {
                 id: 'n3_quiz_wake_niwa_ikanai_2',
                 sentence: '秘密{ひみつ}だから、言{い}う（　）。',
-                options: ['わけにはいかない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'から', 'わけにはいかない'],
+                correctIndex: 3,
                 explanation: '是秘密，不能說。'
             },
             {
                 id: 'n3_quiz_wake_niwa_ikanai_3',
                 sentence: '彼{かれ}だけに任{まか}せる（　）。',
-                options: ['わけにはいかない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'まで', 'わけにはいかない'],
+                correctIndex: 3,
                 explanation: '不能只交給他一個人。'
             },
             {
                 id: 'n3_quiz_wake_niwa_ikanai_4',
                 sentence: '「諦{あきら}めないの？」\n「ここまで来{き}て諦{あきら}める（　）。」',
-                options: ['わけにはいかない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'わけにはいかない', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '對話情境。都到這地步了，不能放棄。'
             },
             {
                 id: 'n3_quiz_wake_niwa_ikanai_5',
                 sentence: '「断{ことわ}れば？」\n「先輩{せんぱい}の頼{たの}みだから、断{ことわ}る（　）。」',
-                options: ['わけにはいかない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'わけにはいかない', 'さえ'],
+                correctIndex: 2,
                 explanation: '對話情境。是前輩拜託的，不能拒絕。'
             }
         ]
@@ -15270,36 +15270,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wari_ni_1',
                 sentence: 'このアパートは駅{えき}から近{ちか}い（　）、家賃{やちん}が安{やす}い。',
-                options: ['割に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'さえ', '割に'],
+                correctIndex: 3,
                 explanation: '離車站這麼近，房租卻很便宜。'
             },
             {
                 id: 'n3_quiz_wari_ni_2',
                 sentence: '彼{かれ}は食{た}べる（　）、太{ふと}らない。',
-                options: ['割に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', '割に', 'さえ', 'から'],
+                correctIndex: 1,
                 explanation: '他吃那麼多，卻不會胖。'
             },
             {
                 id: 'n3_quiz_wari_ni_3',
                 sentence: 'この仕事{しごと}は大変{たいへん}な（　）、給料{きゅうりょう}が少{すく}ない。',
-                options: ['割に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'さえ', '割に'],
+                correctIndex: 3,
                 explanation: '這工作這麼辛苦，薪水卻很少。'
             },
             {
                 id: 'n3_quiz_wari_ni_4',
                 sentence: '「彼女{かのじょ}、勉強{べんきょう}してる？」\n「勉強{べんきょう}してる（　）、成績{せいせき}が上{あ}がらないね。」',
-                options: ['割に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', '割に', 'から'],
+                correctIndex: 2,
                 explanation: '對話情境。雖然有在讀書，成績卻沒進步。'
             },
             {
                 id: 'n3_quiz_wari_ni_5',
                 sentence: '「この靴{くつ}、高{たか}かった？」\n「値段{ねだん}の（　）、質{しつ}がいいよ。」',
-                options: ['割に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'まで', '割に'],
+                correctIndex: 3,
                 explanation: '對話情境。以價格來說，品質很好。'
             }
         ]
@@ -15336,36 +15336,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wari_ni_1_1',
                 sentence: '彼{かれ}は初心者{しょしんしゃ}の（　）、上手{じょうず}だ。',
-                options: ['割に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', '割に', 'から', 'まで'],
+                correctIndex: 1,
                 explanation: '他身為初學者卻很厲害。'
             },
             {
                 id: 'n3_quiz_wari_ni_1_2',
                 sentence: '子供{こども}の（　）しっかりしている。',
-                options: ['割に', 'から', 'まで', 'さえ'],
+                options: ['割に', 'さえ', 'から', 'まで'],
                 correctIndex: 0,
                 explanation: '以小孩來說很穩重。'
             },
             {
                 id: 'n3_quiz_wari_ni_1_3',
                 sentence: '努力{どりょく}した（　）、結果{けっか}が出{で}なかった。',
-                options: ['割に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'から', '割に'],
+                correctIndex: 3,
                 explanation: '雖然努力了，卻沒有成果。'
             },
             {
                 id: 'n3_quiz_wari_ni_1_4',
                 sentence: '「新人{しんじん}にしては優秀{ゆうしゅう}だね。」\n「経験{けいけん}の（　）よくやってるよ。」',
-                options: ['割に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', '割に', 'さえ', 'まで'],
+                correctIndex: 1,
                 explanation: '對話情境。以經驗來說做得很好。'
             },
             {
                 id: 'n3_quiz_wari_ni_1_5',
                 sentence: '「彼{かれ}、走{はし}るの速{はや}いね。」\n「体{からだ}が大{おお}きい（　）速{はや}いね。」',
-                options: ['割に', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'さえ', '割に'],
+                correctIndex: 3,
                 explanation: '對話情境。以他的體型來說跑得很快。'
             }
         ]
@@ -15402,36 +15402,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wazato_1',
                 sentence: '彼{かれ}は（　）間違{まちが}えたに違{ちが}いない。',
-                options: ['わざと', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'さえ', 'わざと'],
+                correctIndex: 3,
                 explanation: '他一定是故意弄錯的。'
             },
             {
                 id: 'n3_quiz_wazato_2',
                 sentence: '（　）遅{おく}れたわけではない。',
-                options: ['わざと', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'わざと', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '不是故意遲到的。'
             },
             {
                 id: 'n3_quiz_wazato_3',
                 sentence: '彼女{かのじょ}は（　）聞{き}こえないふりをした。',
-                options: ['わざと', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'わざと', 'から'],
+                correctIndex: 2,
                 explanation: '她故意裝作沒聽到。'
             },
             {
                 id: 'n3_quiz_wazato_4',
                 sentence: '「なんであの人{ひと}に言{い}ったの？」\n「（　）言{い}ったんじゃないよ。」',
-                options: ['わざと', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'わざと', 'まで'],
+                correctIndex: 2,
                 explanation: '對話情境。不是故意說的。'
             },
             {
                 id: 'n3_quiz_wazato_5',
                 sentence: '「ぶつかったでしょ！」\n「（　）じゃないよ、ごめん。」',
-                options: ['わざと', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'わざと', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '對話情境。不是故意的，對不起。'
             }
         ]
@@ -15468,8 +15468,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wazawaza_1',
                 sentence: '（　）お越{こ}しいただき、ありがとうございます。',
-                options: ['わざわざ', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'わざわざ', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '謝謝您特地過來。'
             },
             {
@@ -15482,22 +15482,22 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wazawaza_3',
                 sentence: '遠{とお}いところを（　）来{き}てくれた。',
-                options: ['わざわざ', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'わざわざ', 'から'],
+                correctIndex: 2,
                 explanation: '從那麼遠特地來。'
             },
             {
                 id: 'n3_quiz_wazawaza_4',
                 sentence: '「お土産{みやげ}、ありがとう！」\n「（　）買{か}ってきたんだよ。」',
-                options: ['わざわざ', 'から', 'まで', 'さえ'],
+                options: ['わざわざ', 'さえ', 'まで', 'から'],
                 correctIndex: 0,
                 explanation: '對話情境。特地買來的。'
             },
             {
                 id: 'n3_quiz_wazawaza_5',
                 sentence: '「送{おく}っていくよ。」\n「（　）いいよ、自分{じぶん}で帰{かえ}れるから。」',
-                options: ['わざわざ', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'わざわざ', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '對話情境。不用特地送，我自己能回去。'
             }
         ]
@@ -15534,36 +15534,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wa_de_yuumei_1',
                 sentence: '北海道{ほっかいどう}は雪{ゆき}（　）有名{ゆうめい}だ。',
-                options: ['で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'まで', 'で'],
+                correctIndex: 3,
                 explanation: '北海道以雪聞名。'
             },
             {
                 id: 'n3_quiz_wa_de_yuumei_2',
                 sentence: 'この店{みせ}はラーメン（　）有名{ゆうめい}だ。',
-                options: ['で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'で', 'まで'],
+                correctIndex: 2,
                 explanation: '這家店以拉麵聞名。'
             },
             {
                 id: 'n3_quiz_wa_de_yuumei_3',
                 sentence: '彼女{かのじょ}は歌{うた}がうまいこと（　）有名{ゆうめい}だ。',
-                options: ['で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'で', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '她以唱歌好聽而聞名。'
             },
             {
                 id: 'n3_quiz_wa_de_yuumei_4',
                 sentence: '「この地域{ちいき}、何{なに}（　）有名{ゆうめい}？」\n「りんご（　）有名{ゆうめい}だよ。」',
-                options: ['で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'さえ', 'で'],
+                correctIndex: 3,
                 explanation: '對話情境。這個地區以蘋果聞名。'
             },
             {
                 id: 'n3_quiz_wa_de_yuumei_5',
                 sentence: '「あの作家{さっか}、知{し}ってる？」\n「うん、ミステリー小説{しょうせつ}（　）有名{ゆうめい}だよね。」',
-                options: ['で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'まで', 'で'],
+                correctIndex: 3,
                 explanation: '對話情境。那位作家以推理小說聞名。'
             }
         ]
@@ -15600,35 +15600,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_wa_de_yuumei_1_1',
                 sentence: 'あの選手{せんしゅ}はスピード（　）有名{ゆうめい}だ。',
-                options: ['で', 'から', 'まで', 'さえ'],
+                options: ['で', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '那位選手以速度著稱。'
             },
             {
                 id: 'n3_quiz_wa_de_yuumei_1_2',
                 sentence: 'この大学{だいがく}は医学部{いがくぶ}（　）有名{ゆうめい}だ。',
-                options: ['で', 'から', 'まで', 'さえ'],
+                options: ['で', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '這所大學以醫學院著稱。'
             },
             {
                 id: 'n3_quiz_wa_de_yuumei_1_3',
                 sentence: 'あの料理人{りょうりにん}は創作{そうさく}料理{りょうり}（　）有名{ゆうめい}だ。',
-                options: ['で', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'で', 'さえ', 'から'],
+                correctIndex: 1,
                 explanation: '那位廚師以創意料理著稱。'
             },
             {
                 id: 'n3_quiz_wa_de_yuumei_1_4',
                 sentence: '「この地域{ちいき}の特産{とくさん}は？」\n「お茶{ちゃ}（　）有名{ゆうめい}だよ。」',
-                options: ['で', 'から', 'まで', 'さえ'],
+                options: ['で', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。以茶著稱。'
             },
             {
                 id: 'n3_quiz_wa_de_yuumei_1_5',
                 sentence: '「あの監督{かんとく}、すごいね。」\n「アクション映画{えいが}（　）有名{ゆうめい}なんだ。」',
-                options: ['で', 'から', 'まで', 'さえ'],
+                options: ['で', 'さえ', 'から', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。以動作片著稱。'
             }
@@ -15666,35 +15666,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_yorimo_1',
                 sentence: 'お金{かね}（　）時間{じかん}の方{ほう}が大切{たいせつ}だ。',
-                options: ['よりも', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'よりも', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '比起金錢，時間更重要。'
             },
             {
                 id: 'n3_quiz_yorimo_2',
                 sentence: '去年{きょねん}（　）今年{ことし}は忙{いそが}しい。',
-                options: ['よりも', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'よりも', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '今年比去年更忙。'
             },
             {
                 id: 'n3_quiz_yorimo_3',
                 sentence: '予想{よそう}（　）難{むずか}しかった。',
-                options: ['よりも', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'よりも', 'まで'],
+                correctIndex: 2,
                 explanation: '比預想的更難。'
             },
             {
                 id: 'n3_quiz_yorimo_4',
                 sentence: '「電車{でんしゃ}で行{い}く？」\n「電車{でんしゃ}（　）バスの方{ほう}が便利{べんり}だよ。」',
-                options: ['よりも', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'よりも', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '對話情境。比起電車，公車更方便。'
             },
             {
                 id: 'n3_quiz_yorimo_5',
                 sentence: '「何{なに}が好{す}き？」\n「肉{にく}（　）魚{さかな}の方{ほう}が好{す}きかな。」',
-                options: ['よりも', 'から', 'まで', 'さえ'],
+                options: ['よりも', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '對話情境。比起肉，我更喜歡魚。'
             }
@@ -15732,36 +15732,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_you_ga_nai_1',
                 sentence: '電話番号{でんわばんごう}を知{し}らないから、電話{でんわ}し（　）。',
-                options: ['ようがない', 'から', 'まで', 'さえ'],
+                options: ['ようがない', 'まで', 'さえ', 'から'],
                 correctIndex: 0,
                 explanation: '不知道電話號碼，沒辦法打電話。'
             },
             {
                 id: 'n3_quiz_you_ga_nai_2',
                 sentence: '説明{せつめい}がないから、使{つか}い（　）。',
-                options: ['ようがない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'ようがない', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '沒有說明，不知道怎麼用。'
             },
             {
                 id: 'n3_quiz_you_ga_nai_3',
                 sentence: '何{なに}も聞{き}いてないから、答{こた}え（　）。',
-                options: ['ようがない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'ようがない', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '什麼都沒聽說，沒辦法回答。'
             },
             {
                 id: 'n3_quiz_you_ga_nai_4',
                 sentence: '「直{なお}してよ。」\n「原因{げんいん}がわからないから、直{なお}し（　）。」',
-                options: ['ようがない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'ようがない', 'まで'],
+                correctIndex: 2,
                 explanation: '對話情境。不知道原因，沒辦法修。'
             },
             {
                 id: 'n3_quiz_you_ga_nai_5',
                 sentence: '「見{み}つけられる？」\n「名前{なまえ}も知{し}らないから、探{さが}し（　）。」',
-                options: ['ようがない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'ようがない', 'まで', 'さえ'],
+                correctIndex: 1,
                 explanation: '對話情境。連名字都不知道，沒辦法找。'
             }
         ]
@@ -15798,22 +15798,22 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_you_na_ki_ga_suru_1',
                 sentence: 'この本{ほん}は読{よ}んだことがある（　）。',
-                options: ['ような気がする', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'ような気がする', 'から'],
+                correctIndex: 2,
                 explanation: '覺得好像讀過這本書。'
             },
             {
                 id: 'n3_quiz_you_na_ki_ga_suru_2',
                 sentence: '明日{あした}は晴{は}れる（　）。',
-                options: ['ような気がする', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'から', 'ような気がする'],
+                correctIndex: 3,
                 explanation: '覺得明天好像會放晴。'
             },
             {
                 id: 'n3_quiz_you_na_ki_ga_suru_3',
                 sentence: '何{なに}か忘{わす}れている（　）。',
-                options: ['ような気がする', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'まで', 'ような気がする'],
+                correctIndex: 3,
                 explanation: '覺得好像忘了什麼。'
             },
             {
@@ -15826,7 +15826,7 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_you_na_ki_ga_suru_5',
                 sentence: '「彼女{かのじょ}、怒{おこ}ってる？」\n「ちょっと怒{おこ}ってる（　）なあ。」',
-                options: ['ような気がする', 'から', 'まで', 'さえ'],
+                options: ['ような気がする', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。感覺好像有點生氣。'
             }
@@ -15864,36 +15864,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_you_na_ki_ga_suru_1_1',
                 sentence: 'この話{はなし}は聞{き}いたことがある（　）。',
-                options: ['ような気がする', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'ような気がする', 'から'],
+                correctIndex: 2,
                 explanation: '感覺好像聽過這個故事。'
             },
             {
                 id: 'n3_quiz_you_na_ki_ga_suru_1_2',
                 sentence: '彼{かれ}は何{なに}か隠{かく}している（　）。',
-                options: ['ような気がする', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'ような気がする', 'から', 'まで'],
+                correctIndex: 1,
                 explanation: '感覺他好像在隱瞞什麼。'
             },
             {
                 id: 'n3_quiz_you_na_ki_ga_suru_1_3',
                 sentence: '前{まえ}よりうまくなった（　）。',
-                options: ['ような気がする', 'から', 'まで', 'さえ'],
+                options: ['ような気がする', 'さえ', 'まで', 'から'],
                 correctIndex: 0,
                 explanation: '感覺比以前進步了。'
             },
             {
                 id: 'n3_quiz_you_na_ki_ga_suru_1_4',
                 sentence: '「この道{みち}、合{あ}ってる？」\n「うーん、間違{まちが}ってる（　）なあ。」',
-                options: ['ような気がする', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'ような気がする', 'さえ'],
+                correctIndex: 2,
                 explanation: '對話情境。感覺好像走錯了。'
             },
             {
                 id: 'n3_quiz_you_na_ki_ga_suru_1_5',
                 sentence: '「この映画{えいが}、見{み}た？」\n「前{まえ}に見{み}た（　）んだけど...」',
-                options: ['ような気がする', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'さえ', 'ような気がする'],
+                correctIndex: 3,
                 explanation: '對話情境。感覺以前好像看過。'
             }
         ]
@@ -15930,36 +15930,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_you_ni_1',
                 sentence: '風邪{かぜ}をひかない（　）、温{あたた}かくしてください。',
-                options: ['ように', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'ように', 'まで'],
+                correctIndex: 2,
                 explanation: '為了不感冒，請保暖。'
             },
             {
                 id: 'n3_quiz_you_ni_2',
                 sentence: '聞{き}こえる（　）、大{おお}きな声{こえ}で話{はな}してください。',
-                options: ['ように', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'まで', 'ように'],
+                correctIndex: 3,
                 explanation: '為了能聽到，請大聲說。'
             },
             {
                 id: 'n3_quiz_you_ni_3',
                 sentence: '遅{おく}れない（　）、早{はや}めに出{で}た。',
-                options: ['ように', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'ように', 'から'],
+                correctIndex: 2,
                 explanation: '為了不遲到，提早出門了。'
             },
             {
                 id: 'n3_quiz_you_ni_4',
                 sentence: '「なんでメモしてるの？」\n「後{あと}で見{み}てわかる（　）だよ。」',
-                options: ['ように', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'ように', 'から'],
+                correctIndex: 2,
                 explanation: '對話情境。為了之後看能懂。'
             },
             {
                 id: 'n3_quiz_you_ni_5',
                 sentence: '「早{はや}く寝{ね}なさい。」\n「うん、明日{あした}起{お}きられる（　）早{はや}く寝{ね}る。」',
-                options: ['ように', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'ように', 'さえ', 'まで'],
+                correctIndex: 1,
                 explanation: '對話情境。為了明天能起床，早點睡。'
             }
         ]
@@ -15996,36 +15996,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_you_ni_mieru_1',
                 sentence: '彼{かれ}は怒{おこ}っている（　）。',
-                options: ['ように見える', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'さえ', 'まで', 'ように見える'],
+                correctIndex: 3,
                 explanation: '他看起來很生氣。'
             },
             {
                 id: 'n3_quiz_you_ni_mieru_2',
                 sentence: 'この問題{もんだい}は複雑{ふくざつ}な（　）。',
-                options: ['ように見える', 'から', 'まで', 'さえ'],
+                options: ['ように見える', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '這個問題看起來很複雜。'
             },
             {
                 id: 'n3_quiz_you_ni_mieru_3',
                 sentence: '二人{ふたり}は仲{なか}がいい（　）。',
-                options: ['ように見える', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'ように見える', 'まで'],
+                correctIndex: 2,
                 explanation: '兩人看起來感情很好。'
             },
             {
                 id: 'n3_quiz_you_ni_mieru_4',
                 sentence: '「あの人{ひと}、学生{がくせい}？」\n「学生{がくせい}の（　）けど、実{じつ}は先生{せんせい}だよ。」',
-                options: ['ように見える', 'から', 'まで', 'さえ'],
+                options: ['ように見える', 'から', 'さえ', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。看起來像學生，其實是老師。'
             },
             {
                 id: 'n3_quiz_you_ni_mieru_5',
                 sentence: '「彼女{かのじょ}、楽{たの}しそう？」\n「うん、とても楽{たの}しんでいる（　）ね。」',
-                options: ['ように見える', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'ように見える', 'さえ', 'まで'],
+                correctIndex: 1,
                 explanation: '對話情境。看起來玩得很開心。'
             }
         ]
@@ -16062,36 +16062,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_you_ni_mieru_1_1',
                 sentence: 'この絵{え}は写真{しゃしん}の（　）。',
-                options: ['ように見える', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'ように見える', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '這幅畫看起來像照片。'
             },
             {
                 id: 'n3_quiz_you_ni_mieru_1_2',
                 sentence: '彼女{かのじょ}は女優{じょゆう}の（　）。',
-                options: ['ように見える', 'から', 'まで', 'さえ'],
+                options: ['ように見える', 'さえ', 'まで', 'から'],
                 correctIndex: 0,
                 explanation: '她看起來像女演員。'
             },
             {
                 id: 'n3_quiz_you_ni_mieru_1_3',
                 sentence: 'この建物{たてもの}は城{しろ}の（　）。',
-                options: ['ように見える', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'ように見える', 'さえ', 'まで'],
+                correctIndex: 1,
                 explanation: '這建築看起來像城堡。'
             },
             {
                 id: 'n3_quiz_you_ni_mieru_1_4',
                 sentence: '「あの雲{くも}、何{なに}に見{み}える？」\n「犬{いぬ}の（　）ね。」',
-                options: ['ように見える', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'ように見える', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '對話情境。那朵雲看起來像狗。'
             },
             {
                 id: 'n3_quiz_you_ni_mieru_1_5',
                 sentence: '「この人{ひと}、何歳{なんさい}だと思{おも}う？」\n「30代{だい}の（　）けど、実{じつ}は50歳{さい}だって。」',
-                options: ['ように見える', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'ように見える', 'から', 'まで'],
+                correctIndex: 1,
                 explanation: '對話情境。看起來像30多歲，其實50歲。'
             }
         ]
@@ -16128,36 +16128,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_you_to_shinai_1',
                 sentence: '彼女{かのじょ}は自分{じぶん}の間違{まちが}いを認{みと}め（　）。',
-                options: ['ようとしない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'から', 'ようとしない', 'さえ'],
+                correctIndex: 2,
                 explanation: '她不願意承認自己的錯誤。'
             },
             {
                 id: 'n3_quiz_you_to_shinai_2',
                 sentence: '彼{かれ}は私{わたし}の話{はなし}を聞{き}こ（　）。',
-                options: ['うとしない', 'から', 'まで', 'さえ'],
+                options: ['うとしない', 'さえ', 'まで', 'から'],
                 correctIndex: 0,
                 explanation: '他不願意聽我說。'
             },
             {
                 id: 'n3_quiz_you_to_shinai_3',
                 sentence: '息子{むすこ}が勉強{べんきょう}し（　）困{こま}っている。',
-                options: ['ようとしなくて', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'から', 'ようとしなくて'],
+                correctIndex: 3,
                 explanation: '兒子不願意讀書，讓我很困擾。'
             },
             {
                 id: 'n3_quiz_you_to_shinai_4',
                 sentence: '「彼{かれ}、変{か}わった？」\n「全然{ぜんぜん}。変{か}わろ（　）んだよ。」',
-                options: ['うとしない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'うとしない', 'さえ'],
+                correctIndex: 2,
                 explanation: '對話情境。完全沒有，他不願意改變。'
             },
             {
                 id: 'n3_quiz_you_to_shinai_5',
                 sentence: '「手伝{てつだ}ってもらった？」\n「いや、誰{だれ}も手伝{てつだ}お（　）んだ。」',
-                options: ['うとしない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'から', 'うとしない'],
+                correctIndex: 3,
                 explanation: '對話情境。沒有，沒人願意幫忙。'
             }
         ]
@@ -16194,21 +16194,21 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_you_to_suru_1',
                 sentence: '家{いえ}を出{で}（　）したとき、雨{あめ}が降{ふ}り出{だ}した。',
-                options: ['ようと', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'さえ', 'ようと'],
+                correctIndex: 3,
                 explanation: '正要出門時，下起雨來了。'
             },
             {
                 id: 'n3_quiz_you_to_suru_2',
                 sentence: '彼{かれ}は新{あたら}しいことに挑戦{ちょうせん}し（　）している。',
-                options: ['ようと', 'から', 'まで', 'さえ'],
+                options: ['ようと', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '他正在嘗試挑戰新事物。'
             },
             {
                 id: 'n3_quiz_you_to_suru_3',
                 sentence: 'ドアを開{あ}け（　）したら、鍵{かぎ}がかかっていた。',
-                options: ['ようと', 'から', 'まで', 'さえ'],
+                options: ['ようと', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '正要開門時，發現門鎖著。'
             },
@@ -16222,8 +16222,8 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_you_to_suru_5',
                 sentence: '「彼{かれ}、諦{あきら}めた？」\n「いや、まだ頑張{がんば}ろ（　）しているよ。」',
-                options: ['うと', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'うと', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '對話情境。還在努力嘗試。'
             }
         ]
@@ -16260,36 +16260,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_zuni_1',
                 sentence: '傘{かさ}を持{も}た（　）出{で}かけた。',
-                options: ['ずに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'から', 'ずに'],
+                correctIndex: 3,
                 explanation: '沒帶傘就出門了。'
             },
             {
                 id: 'n3_quiz_zuni_2',
                 sentence: '何{なに}も言{い}わ（　）帰{かえ}ってしまった。',
-                options: ['ずに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'ずに', 'から', 'さえ'],
+                correctIndex: 1,
                 explanation: '什麼都沒說就回去了。'
             },
             {
                 id: 'n3_quiz_zuni_3',
                 sentence: '誰{だれ}にも相談{そうだん}せ（　）決{き}めた。',
-                options: ['ずに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'ずに', 'さえ', 'まで'],
+                correctIndex: 1,
                 explanation: '沒和任何人商量就決定了。'
             },
             {
                 id: 'n3_quiz_zuni_4',
                 sentence: '「確認{かくにん}した？」\n「確認{かくにん}せ（　）送{おく}っちゃった。」',
-                options: ['ずに', 'から', 'まで', 'さえ'],
+                options: ['ずに', 'さえ', 'から', 'まで'],
                 correctIndex: 0,
                 explanation: '對話情境。沒確認就寄出了。'
             },
             {
                 id: 'n3_quiz_zuni_5',
                 sentence: '「休憩{きゅうけい}しないの？」\n「休憩{きゅうけい}せ（　）続{つづ}けるよ。」',
-                options: ['ずに', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'ずに', 'から', 'まで'],
+                correctIndex: 1,
                 explanation: '對話情境。不休息繼續做。'
             }
         ]
@@ -16326,35 +16326,35 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_zuni_wa_irarenai_1',
                 sentence: 'この写真{しゃしん}を見{み}ると、彼{かれ}のことを思{おも}い出{だ}さ（　）。',
-                options: ['ずにはいられない', 'から', 'まで', 'さえ'],
+                options: ['ずにはいられない', 'さえ', 'から', 'まで'],
                 correctIndex: 0,
                 explanation: '看到這張照片，忍不住會想起他。'
             },
             {
                 id: 'n3_quiz_zuni_wa_irarenai_2',
                 sentence: 'あの店{みせ}のケーキを見{み}ると、買{か}わ（　）。',
-                options: ['ずにはいられない', 'から', 'まで', 'さえ'],
+                options: ['ずにはいられない', 'さえ', 'まで', 'から'],
                 correctIndex: 0,
                 explanation: '看到那家店的蛋糕，忍不住會買。'
             },
             {
                 id: 'n3_quiz_zuni_wa_irarenai_3',
                 sentence: 'こんなに美{うつく}しい景色{けしき}を見{み}たら、感動{かんどう}せ（　）。',
-                options: ['ずにはいられない', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'ずにはいられない', 'まで', 'から'],
+                correctIndex: 1,
                 explanation: '看到這麼美的景色，不可能不感動。'
             },
             {
                 id: 'n3_quiz_zuni_wa_irarenai_4',
                 sentence: '「黙{だま}っていられた？」\n「いや、言{い}わ（　）よ。」',
-                options: ['ずにはいられなかった', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['まで', 'さえ', 'から', 'ずにはいられなかった'],
+                correctIndex: 3,
                 explanation: '對話情境。忍不住說了。'
             },
             {
                 id: 'n3_quiz_zuni_wa_irarenai_5',
                 sentence: '「心配{しんぱい}した？」\n「もちろん、心配{しんぱい}せ（　）よ。」',
-                options: ['ずにはいられなかった', 'から', 'まで', 'さえ'],
+                options: ['ずにはいられなかった', 'まで', 'さえ', 'から'],
                 correctIndex: 0,
                 explanation: '對話情境。當然忍不住擔心了。'
             }
@@ -16392,36 +16392,36 @@ export const n3Details: Record<string, GrammarPoint> = {
             {
                 id: 'n3_quiz_zutsu_1',
                 sentence: '子供{こども}たちにお菓子{かし}を三{みっ}つ（　）あげた。',
-                options: ['ずつ', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'ずつ', 'から'],
+                correctIndex: 2,
                 explanation: '給孩子們每人三個點心。'
             },
             {
                 id: 'n3_quiz_zutsu_2',
                 sentence: '日本語{にほんご}が少{すこ}し（　）わかるようになってきた。',
-                options: ['ずつ', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'まで', 'ずつ', 'から'],
+                correctIndex: 2,
                 explanation: '日語漸漸能懂了。'
             },
             {
                 id: 'n3_quiz_zutsu_3',
                 sentence: '一{いち}ページ（　）丁寧{ていねい}に読{よ}んだ。',
-                options: ['ずつ', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['から', 'まで', 'さえ', 'ずつ'],
+                correctIndex: 3,
                 explanation: '一頁一頁仔細地讀。'
             },
             {
                 id: 'n3_quiz_zutsu_4',
                 sentence: '「みんなに配{くば}れる？」\n「うん、一人{ひとり}二枚{にまい}（　）なら大丈夫{だいじょうぶ}。」',
-                options: ['ずつ', 'から', 'まで', 'さえ'],
+                options: ['ずつ', 'まで', 'から', 'さえ'],
                 correctIndex: 0,
                 explanation: '對話情境。每人兩張的話沒問題。'
             },
             {
                 id: 'n3_quiz_zutsu_5',
                 sentence: '「進{すす}んでる？」\n「うん、毎日{まいにち}少{すこ}し（　）進{すす}めてるよ。」',
-                options: ['ずつ', 'から', 'まで', 'さえ'],
-                correctIndex: 0,
+                options: ['さえ', 'から', 'ずつ', 'まで'],
+                correctIndex: 2,
                 explanation: '對話情境。每天一點點在進展。'
             }
         ]

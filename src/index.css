@@ -147,10 +147,12 @@
   .paper-card,
   .glass,
   .card {
-    @apply relative p-6 transition-all duration-300;
+    @apply relative p-3 sm:p-6 transition-all duration-300;
     background-color: var(--color-washi-light);
     border: 2px solid var(--color-wave-deep);
     box-shadow: 4px 4px 0px 0px rgba(26, 58, 92, 0.2);
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   /* 互動卡片 */
@@ -215,7 +217,7 @@
 
   /* 主要按鈕 - 朱印風格 */
   .btn-primary {
-    @apply relative inline-flex items-center justify-center px-6 py-3 font-zen font-bold text-lg text-white transition-all duration-200 overflow-hidden select-none;
+    @apply relative inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 font-zen font-bold text-sm sm:text-lg text-white transition-all duration-200 overflow-hidden select-none;
     background-color: var(--color-vermilion);
     border: 2px solid var(--color-vermilion-dark);
     border-radius: 6px 3px 6px 3px;
@@ -241,7 +243,7 @@
 
   /* 次要按鈕 - 波浪風格 */
   .btn-secondary {
-    @apply relative inline-flex items-center justify-center px-6 py-3 font-zen font-bold text-lg transition-all duration-200 select-none;
+    @apply relative inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 font-zen font-bold text-sm sm:text-lg transition-all duration-200 select-none;
     background-color: var(--color-foam);
     color: var(--color-wave-deep);
     border: 2px solid var(--color-wave-deep);

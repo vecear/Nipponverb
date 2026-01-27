@@ -16,6 +16,7 @@ import { generateKanjiQuestion } from '../data/kanji'
 import { addExp, updateUserProgression } from '../services/progressionService'
 import { DEFAULT_PROGRESSION, EXP_REWARDS } from '../types/progression'
 import { PRACTICE_ICONS } from '../config/assets'
+import { updateStudyTracking } from '../services/studyTrackingService'
 
 // Static Question Banks
 import { n5Questions } from '../data/questions/n5'
@@ -73,6 +74,7 @@ const Practice = () => {
   const [showCategorySelect, setShowCategorySelect] = useState(true)
   const [viewingHistory, setViewingHistory] = useState<PracticeHistoryEntry | null>(null)
   const [hasSavedResult, setHasSavedResult] = useState(false)
+  const [practiceStartTime, setPracticeStartTime] = useState<number | null>(null)
 
   // Save practice result and award EXP when showing results
   useEffect(() => {
@@ -98,10 +100,21 @@ const Practice = () => {
             const { newProgression } = addExp(progression, totalExp, gender)
             await updateUserProgression(currentUser.uid, newProgression)
 
+            // 更新學習時間和連續天數
+            const studyMinutes = practiceStartTime
+              ? Math.max(1, Math.round((Date.now() - practiceStartTime) / 60000))
+              : 1 // 至少算 1 分鐘
+            const trackingResult = await updateStudyTracking(currentUser.uid, studyMinutes)
+
             // Update local profile state
             setProfile({
               ...profile,
               progression: newProgression,
+              stats: {
+                ...profile.stats,
+                totalStudyTime: trackingResult.totalStudyTime,
+                streak: trackingResult.streak,
+              },
             })
           } catch (error) {
             console.error('Failed to award EXP:', error)
@@ -111,7 +124,7 @@ const Practice = () => {
     }
 
     saveResultAndAwardExp()
-  }, [showResults, hasSavedResult, answerRecords, category, selectedLevel, selectedSubcategory, savePracticeResult, currentUser, profile, setProfile])
+  }, [showResults, hasSavedResult, answerRecords, category, selectedLevel, selectedSubcategory, savePracticeResult, currentUser, profile, setProfile, practiceStartTime])
 
   // Reset hasSavedResult when starting new practice
   useEffect(() => {
@@ -279,6 +292,7 @@ const Practice = () => {
     setQuestions(newQuestions)
     setShowCategorySelect(false)
     setShowResults(false)
+    setPracticeStartTime(Date.now()) // 記錄開始時間
   }
 
   const handleAnswer = (answer: string) => {
@@ -303,6 +317,7 @@ const Practice = () => {
     resetPractice()
     setQuestions(newQuestions)
     setShowResults(false)
+    setPracticeStartTime(Date.now()) // 重置開始時間
   }
 
   // Determine if we should show the category selection Grid (if no category param) or specific category setup
@@ -420,19 +435,19 @@ const Practice = () => {
             })}
           </p>
 
-          <div className="grid grid-cols-2 gap-4 md:gap-6 my-6">
-            <div className="glass p-4 md:p-6 rounded-xl">
-              <div className="text-4xl md:text-5xl font-bold text-sakura-pink mb-2">
+          <div className="grid grid-cols-2 gap-3 md:gap-4 my-4">
+            <div className="paper-card p-3 md:p-4 rounded-xl">
+              <div className="text-2xl md:text-3xl font-bold text-vermilion mb-1">
                 {viewingHistory.score}/{viewingHistory.total}
               </div>
-              <div className="text-sm md:text-base text-indigo-900/90">答對題數</div>
+              <div className="text-xs md:text-sm text-sumi">答對題數</div>
             </div>
 
-            <div className="glass p-4 md:p-6 rounded-xl">
-              <div className="text-4xl md:text-5xl font-bold text-electric-cyan mb-2">
+            <div className="paper-card p-3 md:p-4 rounded-xl">
+              <div className="text-2xl md:text-3xl font-bold text-wave-deep mb-1">
                 {viewingHistory.accuracy}%
               </div>
-              <div className="text-sm md:text-base text-indigo-900/90">正確率</div>
+              <div className="text-xs md:text-sm text-sumi">正確率</div>
             </div>
           </div>
 
@@ -476,7 +491,7 @@ const Practice = () => {
 
         {/* Detailed Question Review */}
         <div className="space-y-4">
-          <h2 className="text-xl font-bold text-indigo-900/80">📝 詳細解析</h2>
+          <h2 className="text-xl font-bold text-sumi">詳細解析</h2>
 
           {viewingHistory.questions.map((question, index) => {
             const record = historyRecordMap.get(question.id)
@@ -522,7 +537,7 @@ const Practice = () => {
                         <p className="text-indigo-900/70 text-sm">
                           {question.meaning.split(/(\*.*?\*)/).map((part, i) =>
                             part.startsWith('*') && part.endsWith('*') ? (
-                              <span key={i} className="italic text-sakura-pink/90 font-medium">
+                              <span key={i} className="italic text-vermilion/90 font-medium">
                                 {part.slice(1, -1)}
                               </span>
                             ) : (
@@ -557,8 +572,8 @@ const Practice = () => {
 
                     {question.detailedExplanation && (
                       <>
-                        <div className="bg-black/20 p-4 rounded-lg border-l-4 border-electric-cyan space-y-2">
-                          <p className="font-bold text-electric-cyan">📖 文法解析</p>
+                        <div className="bg-black/20 p-4 rounded-lg border-l-4 border-wave-light space-y-2">
+                          <p className="font-bold text-wave-light">📖 文法解析</p>
                           <p className="text-sm text-indigo-900/90 whitespace-pre-line">
                             <FuriganaText text={question.detailedExplanation.correctRule} />
                           </p>
@@ -616,27 +631,27 @@ const Practice = () => {
   // Category selection screen within a specific practice mode (Pre-start)
   if (showCategorySelect) {
     return (
-      <div className="max-w-2xl mx-auto space-y-8">
-        <div className="card">
-          <h1 className="text-2xl md:text-4xl font-zen font-bold mb-6 text-gradient capitalize">
+      <div className="max-w-md sm:max-w-2xl mx-auto space-y-4 px-2 sm:px-0">
+        <div className="card px-3 py-3 sm:px-6 sm:py-6">
+          <h1 className="text-lg sm:text-2xl font-zen font-bold mb-3 sm:mb-4 text-gradient capitalize">
             {t(`practice.categories.${category}.title`)}
           </h1>
 
           {category === 'gojuon' && (
-            <div className="mb-6">
-              <label className="block text-lg font-semibold mb-3">{t('practice.selectSubcategory')}:</label>
-              <div className="grid grid-cols-2 gap-4">
+            <div className="mb-3">
+              <label className="block text-xs sm:text-sm font-semibold mb-1.5">{t('practice.selectSubcategory')}:</label>
+              <div className="grid grid-cols-2 gap-1.5">
                 {(['hiragana', 'katakana'] as GojuonSubcategory[]).map((type) => (
                   <button
                     key={type}
                     onClick={() => setSelectedSubcategory(type)}
-                    className={`p-3 md:p-4 rounded-xl transition-all ${selectedSubcategory === type
-                      ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
-                      : 'card-interactive !p-3 md:!p-4'
+                    className={`py-1.5 px-2 rounded-md transition-all ${selectedSubcategory === type
+                      ? 'bg-wave-deep border-2 border-vermilion shadow-ukiyo'
+                      : 'card-interactive !py-1.5 !px-2'
                       }`}
                   >
-                    <div className="text-xl md:text-2xl mb-1 md:mb-2">{type === 'hiragana' ? 'あ' : 'ア'}</div>
-                    <div className="font-semibold capitalize text-sm md:text-base">{t(`practice.categories.gojuon.${type}`)}</div>
+                    <div className={`text-base sm:text-lg mb-0.5 ${selectedSubcategory === type ? 'text-foam' : ''}`}>{type === 'hiragana' ? 'あ' : 'ア'}</div>
+                    <div className={`font-semibold capitalize text-[10px] sm:text-xs ${selectedSubcategory === type ? 'text-foam' : ''}`}>{t(`practice.categories.gojuon.${type}`)}</div>
                   </button>
                 ))}
               </div>
@@ -644,9 +659,9 @@ const Practice = () => {
           )}
 
           {category !== 'gojuon' && (
-            <div className="mb-6">
-              <label className="block text-lg font-semibold mb-3">{t('practice.selectLevel')}:</label>
-              <div className="grid grid-cols-3 sm:flex sm:flex-wrap gap-2 md:grid md:grid-cols-5 md:gap-3">
+            <div className="mb-3">
+              <label className="block text-xs sm:text-sm font-semibold mb-1.5">{t('practice.selectLevel')}:</label>
+              <div className="flex flex-wrap gap-1 sm:gap-1.5">
                 {(['N5', 'N4', 'N3', 'N2', 'N1'] as const).map((level) => {
                   // Calculate question counts for Verbs category
                   const getCount = () => {
@@ -676,20 +691,20 @@ const Practice = () => {
                     <button
                       key={level}
                       onClick={() => setSelectedLevel(level)}
-                      className={`p-3 md:p-4 rounded-xl transition-all flex flex-col items-center justify-center ${selectedLevel === level
-                        ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white shadow-lg'
-                        : 'card-interactive !p-3 md:!p-4'
+                      className={`py-1 px-2 sm:py-1.5 sm:px-2.5 rounded-md transition-all flex flex-col items-center justify-center ${selectedLevel === level
+                        ? 'bg-wave-deep text-foam border-2 border-vermilion shadow-ukiyo'
+                        : 'card-interactive !py-1 !px-2 sm:!py-1.5 sm:!px-2.5'
                         }`}
                     >
-                      <div className="text-lg md:text-xl font-bold">{level}</div>
+                      <div className={`text-xs sm:text-sm font-bold ${selectedLevel === level ? 'text-foam' : ''}`}>{level}</div>
                       {questionCount !== null && (
                         <>
-                          <div className={`text-[10px] md:text-xs mt-1 ${selectedLevel === level ? 'text-white/90' : 'text-indigo-900/40'
+                          <div className={`text-[8px] sm:text-[9px] ${selectedLevel === level ? 'text-foam/90' : 'text-sumi-faded'
                             }`}>
                             {questionCount} 題
                           </div>
                           {coverage && (
-                            <div className={`text-[9px] md:text-[10px] mt-0.5 ${selectedLevel === level ? 'text-white/80' : 'text-indigo-900/30'
+                            <div className={`text-[7px] sm:text-[8px] ${selectedLevel === level ? 'text-foam/80' : 'text-sumi-faded/70'
                               }`}>
                               已做 {coverage.attempted}/{coverage.total}
                             </div>
@@ -703,17 +718,17 @@ const Practice = () => {
             </div>
           )}
 
-          <div className="space-y-4">
-            <div className="mb-2">
-              <label className="block text-lg font-semibold mb-2">題目數量:</label>
-              <div className="flex flex-wrap gap-2">
+          <div className="space-y-2">
+            <div className="mb-1.5">
+              <label className="block text-xs sm:text-sm font-semibold mb-1.5">題目數量:</label>
+              <div className="flex flex-wrap gap-1 sm:gap-1.5">
                 {[10, 20, 30, 40, 50].map(count => (
                   <button
                     key={count}
                     onClick={() => setQuestionCount(count)}
-                    className={`px-4 py-2 rounded-lg transition-all font-medium ${questionCount === count
-                      ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white shadow-lg'
-                      : 'card-interactive !px-4 !py-2 text-indigo-900/70'
+                    className={`px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-md transition-all font-medium text-xs sm:text-sm ${questionCount === count
+                      ? 'bg-wave-deep text-foam border-2 border-vermilion shadow-ukiyo'
+                      : 'card-interactive !px-2 !py-1 sm:!px-2.5 sm:!py-1.5 text-sumi-faded'
                       }`}
                   >
                     {count}題
@@ -722,15 +737,17 @@ const Practice = () => {
               </div>
             </div>
 
-            <button onClick={startPractice} className="btn-primary w-full text-lg py-4">
-              {t('practice.startPractice')}
-            </button>
-            <button
-              onClick={() => navigate('/')}
-              className="btn-secondary w-full"
-            >
-              {t('practice.backToDashboard')}
-            </button>
+            <div className="flex gap-1.5 sm:gap-2 pt-1">
+              <button onClick={startPractice} className="btn-primary flex-1 py-1.5 sm:py-2 text-xs sm:text-sm">
+                {t('practice.startPractice')}
+              </button>
+              <button
+                onClick={() => navigate('/')}
+                className="btn-secondary flex-1 py-1.5 sm:py-2 text-xs sm:text-sm"
+              >
+                {t('practice.backToDashboard')}
+              </button>
+            </div>
           </div>
         </div>
 
@@ -745,46 +762,44 @@ const Practice = () => {
           if (history.length === 0) return null
 
           return (
-            <div className="card">
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="text-lg font-bold flex items-center gap-2">
-                  <History size={20} className="text-electric-cyan" />
+            <div className="card p-2 sm:p-4">
+              <div className="flex items-center justify-between mb-2 sm:mb-4">
+                <h2 className="text-sm sm:text-lg font-bold flex items-center gap-1 sm:gap-2">
+                  <History size={16} className="sm:w-5 sm:h-5 text-wave-light" />
                   近期成績 ({category === 'gojuon' ? t(`practice.categories.gojuon.${selectedSubcategory}`) : selectedLevel})
                 </h2>
                 {avgAccuracy !== null && (
-                  <div className="text-sm">
-                    平均：<span className="font-bold text-electric-cyan">{avgAccuracy}%</span>
+                  <div className="text-xs sm:text-sm">
+                    平均：<span className="font-bold text-wave-light">{avgAccuracy}%</span>
                   </div>
                 )}
               </div>
 
               {/* History Table - Clickable */}
-              <div className="space-y-2">
+              <div className="space-y-1.5 sm:space-y-2">
                 {history.map((entry, idx) => (
                   <button
                     key={entry.id}
                     onClick={() => setViewingHistory(entry)}
-                    className="w-full flex items-center justify-between p-3 rounded-lg bg-white/50 border border-indigo-900/10 hover:bg-white/80 hover:border-indigo-900/20 transition-all text-left"
+                    className="w-full flex items-center justify-between p-2 sm:p-3 rounded-md sm:rounded-lg bg-white/50 border border-indigo-900/10 hover:bg-white/80 hover:border-indigo-900/20 transition-all text-left"
                   >
-                    <div className="flex items-center gap-3">
-                      <span className="text-indigo-900/40 text-sm w-6">#{idx + 1}</span>
+                    <div className="flex items-center gap-2 sm:gap-3">
+                      <span className="text-indigo-900/40 text-xs sm:text-sm w-5 sm:w-6">#{idx + 1}</span>
                       <div>
-                        <span className={`font-bold ${entry.accuracy >= 80 ? 'text-green-400' : entry.accuracy >= 60 ? 'text-yellow-400' : 'text-red-400'}`}>
+                        <span className={`font-bold text-xs sm:text-sm ${entry.accuracy >= 80 ? 'text-green-400' : entry.accuracy >= 60 ? 'text-yellow-400' : 'text-red-400'}`}>
                           {entry.score}/{entry.total}
                         </span>
-                        <span className="text-indigo-900/90 ml-2">({entry.accuracy}%)</span>
+                        <span className="text-indigo-900/90 ml-1 sm:ml-2 text-xs sm:text-sm">({entry.accuracy}%)</span>
                       </div>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs text-indigo-900/40">
+                    <div className="flex items-center gap-1 sm:gap-2">
+                      <span className="text-[10px] sm:text-xs text-indigo-900/40">
                         {new Date(entry.date).toLocaleDateString('zh-TW', {
                           month: 'short',
                           day: 'numeric',
-                          hour: '2-digit',
-                          minute: '2-digit'
                         })}
                       </span>
-                      <ChevronDown size={14} className="text-indigo-900/40 -rotate-90" />
+                      <ChevronDown size={12} className="sm:w-3.5 sm:h-3.5 text-indigo-900/40 -rotate-90" />
                     </div>
                   </button>
                 ))}
@@ -806,46 +821,53 @@ const Practice = () => {
     const recordMap = new Map(answerRecords.map(r => [r.questionId, r]))
 
     return (
-      <div className="max-w-3xl mx-auto space-y-6">
+      <div className="max-w-3xl mx-auto space-y-3 px-2 sm:px-0">
         {/* Score Summary Card */}
-        <div className="card text-center">
-          <h1 className="text-3xl md:text-4xl font-zen font-bold mb-4 text-gradient">
+        <div className="card text-center py-2 px-3 sm:py-3 sm:px-4">
+          <h1 className="text-lg sm:text-xl md:text-2xl font-zen font-bold mb-1.5 sm:mb-2 text-gradient">
             {t('practice.complete')}
           </h1>
 
-          <div className="grid grid-cols-2 gap-4 md:gap-6 my-6">
-            <div className="glass p-4 md:p-6 rounded-xl">
-              <div className="text-4xl md:text-5xl font-bold text-sakura-pink mb-2">
+          <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6 my-2">
+            <div className="text-center">
+              <div className="text-lg sm:text-xl md:text-2xl font-bold text-vermilion">
                 {score}/{answeredCount}
               </div>
-              <div className="text-sm md:text-base text-white/90">{t('practice.questionsCorrect')}</div>
+              <div className="text-[9px] sm:text-[10px] md:text-xs text-sumi">{t('practice.questionsCorrect')}</div>
             </div>
 
-            <div className="glass p-4 md:p-6 rounded-xl">
-              <div className="text-4xl md:text-5xl font-bold text-electric-cyan mb-2">
+            <div className="w-px h-6 sm:h-8 bg-wave-deep/20"></div>
+
+            <div className="text-center">
+              <div className="text-lg sm:text-xl md:text-2xl font-bold text-wave-deep">
                 {accuracy}%
               </div>
-              <div className="text-sm md:text-base text-white/90">{t('practice.accuracy')}</div>
+              <div className="text-[9px] sm:text-[10px] md:text-xs text-sumi">{t('practice.accuracy')}</div>
             </div>
+
+            {unansweredCount > 0 && (
+              <>
+                <div className="w-px h-6 sm:h-8 bg-wave-deep/20"></div>
+                <div className="text-center">
+                  <div className="text-[10px] sm:text-sm text-sumi-faded whitespace-nowrap">
+                    ⚠️ {unansweredCount} 題未答
+                  </div>
+                </div>
+              </>
+            )}
           </div>
 
-          {unansweredCount > 0 && (
-            <div className="text-sm text-white/50 mb-4">
-              ⚠️ 未作答：{unansweredCount} 題
-            </div>
-          )}
-
-          {/* Action Buttons - Side by Side */}
-          <div className="flex gap-3 justify-center flex-wrap pt-2">
-            <button onClick={handleQuickRestart} className="btn-primary px-5 py-2.5">
+          {/* Action Buttons - Stack on mobile, side by side on larger */}
+          <div className="flex flex-col sm:flex-row gap-1.5 sm:gap-2 justify-center pt-2">
+            <button onClick={handleQuickRestart} className="btn-primary px-3 py-1.5 text-xs sm:text-sm">
               {t('practice.practiceAgain')}
             </button>
-            <button onClick={handleRestart} className="btn-secondary px-5 py-2.5">
+            <button onClick={handleRestart} className="btn-secondary px-3 py-1.5 text-xs sm:text-sm">
               重新選擇
             </button>
             <button
               onClick={() => navigate('/')}
-              className="btn-secondary px-5 py-2.5"
+              className="btn-secondary px-3 py-1.5 text-xs sm:text-sm"
             >
               {t('practice.backToDashboard')}
             </button>
@@ -853,8 +875,8 @@ const Practice = () => {
         </div>
 
         {/* Question Navigation - Sticky */}
-        <div className="sticky top-16 z-10 card py-3 px-4">
-          <div className="flex flex-wrap gap-2 justify-center">
+        <div className="sticky top-16 z-10 card py-2 px-2 sm:py-3 sm:px-4">
+          <div className="flex flex-wrap gap-1 sm:gap-2 justify-center">
             {questions.map((q, index) => {
               const record = recordMap.get(q.id)
               if (!record) {
@@ -862,7 +884,7 @@ const Practice = () => {
                 return (
                   <span
                     key={index}
-                    className="w-9 h-9 rounded-lg flex items-center justify-center font-bold text-sm bg-white/10 text-white/40 border border-white/20"
+                    className="w-7 h-7 sm:w-9 sm:h-9 rounded-md sm:rounded-lg flex items-center justify-center font-bold text-xs sm:text-sm bg-wave-deep/10 text-sumi-faded border border-wave-deep/20"
                   >
                     {index + 1}
                   </span>
@@ -872,11 +894,11 @@ const Practice = () => {
                 <a
                   key={index}
                   href={`#q-${index}`}
-                  className={`w-9 h-9 rounded-lg flex items-center justify-center font-bold text-sm transition-all hover:scale-110 ${record.isCorrect
-                    ? 'bg-green-500/30 text-green-400 border border-green-500/50'
-                    : 'bg-red-500/30 text-red-400 border border-red-500/50'
+                  className={`w-7 h-7 sm:w-9 sm:h-9 rounded-md sm:rounded-lg flex items-center justify-center font-bold text-xs sm:text-sm transition-all hover:scale-110 ${record.isCorrect
+                    ? 'bg-green-600 text-white border border-green-700'
+                    : 'bg-red-500 text-white border border-red-600'
                     }`}>
-                  {record.isCorrect ? <Check size={16} /> : <X size={16} />}
+                  {record.isCorrect ? <Check size={14} className="sm:w-4 sm:h-4" /> : <X size={14} className="sm:w-4 sm:h-4" />}
                   <span className="sr-only">第 {index + 1} 題</span>
                 </a>
               )
@@ -886,7 +908,7 @@ const Practice = () => {
 
         {/* Detailed Question Review - Only show answered questions */}
         <div className="space-y-4">
-          <h2 className="text-xl font-bold text-white/80">📝 詳細解析（已作答 {answeredCount} 題）</h2>
+          <h2 className="text-xl font-bold text-sumi">詳細解析（已作答 {answeredCount} 題）</h2>
 
           {questions.map((question, index) => {
             const record = recordMap.get(question.id)
@@ -936,7 +958,7 @@ const Practice = () => {
                         <p className="text-white/70 text-sm">
                           {question.meaning.split(/(\*.*?\*)/).map((part, i) =>
                             part.startsWith('*') && part.endsWith('*') ? (
-                              <span key={i} className="italic text-sakura-pink/90 font-medium">
+                              <span key={i} className="italic text-vermilion/90 font-medium">
                                 {part.slice(1, -1)}
                               </span>
                             ) : (
@@ -981,8 +1003,8 @@ const Practice = () => {
                     {question.detailedExplanation && (
                       <>
                         {/* Main Rule Explanation */}
-                        <div className="bg-black/20 p-4 rounded-lg border-l-4 border-electric-cyan space-y-2">
-                          <p className="font-bold text-electric-cyan">📖 文法解析</p>
+                        <div className="bg-black/20 p-4 rounded-lg border-l-4 border-wave-light space-y-2">
+                          <p className="font-bold text-wave-light">📖 文法解析</p>
                           <p className="text-sm text-white/90 whitespace-pre-line">
                             <FuriganaText text={question.detailedExplanation.correctRule} />
                           </p>
@@ -1040,36 +1062,36 @@ const Practice = () => {
 
   // Practice screen
   return (
-    <div className="max-w-4xl mx-auto">
-      <div className="mb-4 md:mb-6">
-        <div className="flex items-center justify-between mb-2 md:mb-4">
-          <div className="flex items-center gap-3">
-            <h1 className="text-xl md:text-2xl font-zen font-bold capitalize">
+    <div className="max-w-md sm:max-w-2xl mx-auto px-2 sm:px-0">
+      <div className="mb-2 sm:mb-4">
+        <div className="flex items-center justify-between mb-1.5 sm:mb-2">
+          <div className="flex items-center gap-2 flex-wrap">
+            <h1 className="text-base sm:text-lg font-zen font-bold capitalize text-sumi">
               {t(`practice.categories.${category}.title`)}
             </h1>
-            <div className="flex gap-2">
+            <div className="flex gap-1">
               <button
                 onClick={handleRestart}
-                className="px-3 py-1.5 text-xs rounded-lg glass hover:bg-white/20 transition-all text-white/70 hover:text-white"
+                className="px-2 py-1 text-[10px] sm:text-xs rounded-md border border-wave-deep/30 hover:border-vermilion transition-all text-sumi-faded hover:text-sumi"
               >
-                結束返回
+                結束
               </button>
               <button
                 onClick={() => setShowResults(true)}
-                className="px-3 py-1.5 text-xs rounded-lg bg-sakura-pink/20 hover:bg-sakura-pink/40 border border-sakura-pink/50 transition-all text-sakura-pink"
+                className="px-2 py-1 text-[10px] sm:text-xs rounded-md bg-vermilion/20 hover:bg-vermilion/40 border border-vermilion/50 transition-all text-vermilion"
               >
                 交卷
               </button>
             </div>
           </div>
-          <div className="text-xs md:text-sm text-white/60">
-            {t('practice.question', { current: currentIndex + 1, total: questions.length })}
+          <div className="text-[10px] sm:text-xs text-sumi-faded whitespace-nowrap">
+            {currentIndex + 1}/{questions.length}
           </div>
         </div>
 
-        <div className="w-full bg-white/10 rounded-full h-1.5">
+        <div className="w-full bg-wave-deep/10 rounded-full h-1">
           <div
-            className="bg-gradient-to-r from-sakura-pink to-electric-cyan h-1.5 rounded-full"
+            className="bg-gradient-to-r from-vermilion to-wave-deep h-1 rounded-full transition-all"
             style={{
               width: `${((currentIndex + 1) / questions.length) * 100}%`,
             }}

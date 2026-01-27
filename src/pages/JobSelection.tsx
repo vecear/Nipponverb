@@ -124,7 +124,7 @@ const JobSelection = () => {
                 <p className="text-indigo-900/60 text-lg">
                   {selectedJob.nameReading}
                 </p>
-                <p className="text-sakura-pink mt-2">{selectedJob.nameTw}</p>
+                <p className="text-vermilion mt-2">{selectedJob.nameTw}</p>
               </div>
 
               {/* 職業描述 */}
@@ -141,7 +141,7 @@ const JobSelection = () => {
                   {t('progression.jobSelection.initialTitle', '初始稱號')}
                 </p>
                 <div className="text-center">
-                  <p className="text-xl font-bold text-electric-cyan">
+                  <p className="text-xl font-bold text-wave-light">
                     {getFirstStageTitle(selectedJob).nameJp}
                   </p>
                   <p className="text-indigo-900/60 text-sm">
@@ -160,7 +160,7 @@ const JobSelection = () => {
                     key={job.id}
                     onClick={() => setSelectedJobIndex(index)}
                     className={`w-2 h-2 rounded-full transition-all ${index === selectedJobIndex
-                        ? 'bg-sakura-pink w-6'
+                        ? 'bg-vermilion w-6'
                         : 'bg-indigo-900/30 hover:bg-indigo-900/50'
                       }`}
                     disabled={isConfirming}

@@ -14,6 +14,11 @@ export const createUserProfile = async (
     kanji: { accuracy: 0, learned: 0 },
     grammar: { accuracy: 0, learned: 0 },
     stages_cleared: [],
+    totalStudyTime: 0,
+    streak: {
+      current: 0,
+      lastStudyDate: '',
+    },
   }
 
   const userProfile: UserProfile = {

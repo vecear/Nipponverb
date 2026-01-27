@@ -15,8 +15,8 @@ const FuriganaText: React.FC<FuriganaTextProps> = ({ text, className = "" }) => 
     // This matches only CJK characters (kanji) followed by {reading}
     // CJK Unified Ideographs range: \u4e00-\u9fff
     // CJK Extension A: \u3400-\u4dbf
-    // Also include some common extended ranges
-    const regex = /([\u4e00-\u9fff\u3400-\u4dbf]+)\{([^{}]+)\}/g;
+    // Include iteration mark (々) and common small kana marks used in words
+    const regex = /([\u4e00-\u9fff\u3400-\u4dbf\u3005\u3007\u30f5\u30f6]+)\{([^{}]+)\}/g;
     const parts = [];
     let lastIndex = 0;
     let match;
@@ -41,7 +41,7 @@ const FuriganaText: React.FC<FuriganaTextProps> = ({ text, className = "" }) => 
         parts.push(
             <ruby key={match.index}>
                 {match[1]}
-                <rt className="text-[0.6em] text-sakura-pink/80 select-none">{match[2]}</rt>
+                <rt className="text-[0.6em] text-vermilion/80 select-none">{match[2]}</rt>
             </ruby>
         );
 

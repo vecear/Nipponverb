@@ -69,19 +69,19 @@ const Navbar = () => {
       <nav
         className="sticky top-0 z-50 bg-washi-light/95 backdrop-blur-sm border-b-2 border-wave-deep shadow-ukiyo"
       >
-        <div className="container mx-auto px-4 py-3 md:py-4">
+        <div className="container mx-auto px-2 sm:px-4 py-2 sm:py-3 md:py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center space-x-2 group">
+            <Link to="/" className="flex items-center space-x-1 sm:space-x-2 group min-w-0">
               <img
                 src={BRAND.logo}
                 alt="Nipponverb"
-                className="h-8 md:h-10 w-auto"
+                className="h-7 sm:h-8 md:h-10 w-auto shrink-0"
                 onError={(e) => {
                   // Logo 載入失敗時隱藏圖片，只顯示文字
                   e.currentTarget.style.display = 'none'
                 }}
               />
-              <span className="text-2xl md:text-3xl font-zen font-bold text-wave-deep truncate group-hover:text-vermilion transition-colors">
+              <span className="text-lg sm:text-2xl md:text-3xl font-zen font-bold text-wave-deep truncate group-hover:text-vermilion transition-colors">
                 Nipponverb
               </span>
             </Link>
@@ -129,16 +129,16 @@ const Navbar = () => {
               )}
             </div>
 
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-2 sm:space-x-4">
               <Link to="/profile" className="flex items-center space-x-2">
                 {currentUser?.photoURL ? (
                   <img
                     src={currentUser.photoURL}
                     alt="Profile"
-                    className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-wave-deep hover:border-vermilion transition-colors"
+                    className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full border-2 border-wave-deep hover:border-vermilion transition-colors"
                   />
                 ) : (
-                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-foam border-2 border-wave-deep hover:border-vermilion flex items-center justify-center text-wave-deep font-zen font-bold text-sm md:text-base transition-colors">
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-foam border-2 border-wave-deep hover:border-vermilion flex items-center justify-center text-wave-deep font-zen font-bold text-xs sm:text-sm md:text-base transition-colors">
                     {(profile?.displayName || currentUser?.displayName)?.[0] || 'U'}
                   </div>
                 )}

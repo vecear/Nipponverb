@@ -76,58 +76,58 @@ const Stages = () => {
     const levels = ['N5', 'N4', 'N3', 'N2', 'N1'] as const
 
     return (
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-8 md:mb-12">
-          <h1 className="text-3xl md:text-5xl font-zen font-bold mb-4 text-gradient">
+      <div className="max-w-6xl mx-auto px-2 sm:px-0">
+        <div className="text-center mb-4 sm:mb-8 md:mb-12">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-zen font-bold mb-2 sm:mb-4 text-gradient">
             {t('stages.title')}
           </h1>
-          <p className="text-lg md:text-xl text-indigo-900/90">
+          <p className="text-sm sm:text-lg md:text-xl text-indigo-900/90">
             {t('stages.subtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 mb-8 md:mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-8 md:mb-12">
           {levels.map((level) => {
             const levelStages = getStagesByLevel(level)
             return (
               <button
                 key={level}
                 onClick={() => setSelectedLevel(level)}
-                className="card-interactive p-4 md:p-6 text-center"
+                className="card-interactive p-3 sm:p-4 md:p-6 text-center"
               >
-                <div className="text-2xl md:text-3xl font-bold mb-1 md:mb-2">{level}</div>
-                <div className="text-xs md:text-sm text-indigo-900/60">{levelStages.length} {t('stages.stages', { level })}</div>
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-0.5 sm:mb-1 md:mb-2">{level}</div>
+                <div className="text-[10px] sm:text-xs md:text-sm text-indigo-900/60">{levelStages.length} {t('stages.stages', { level })}</div>
               </button>
             )
           })}
         </div>
 
-        <div className="card">
-          <h3 className="text-2xl font-zen font-bold mb-4">{t('stages.howItWorks.title')}</h3>
-          <div className="space-y-4 text-indigo-900/80">
-            <div className="flex items-start space-x-4">
-              <div className="text-3xl">🎬</div>
+        <div className="card p-3 sm:p-6">
+          <h3 className="text-lg sm:text-2xl font-zen font-bold mb-2 sm:mb-4">{t('stages.howItWorks.title')}</h3>
+          <div className="space-y-2 sm:space-y-4 text-indigo-900/80">
+            <div className="flex items-start space-x-2 sm:space-x-4">
+              <div className="text-xl sm:text-3xl">🎬</div>
               <div>
-                <h4 className="font-semibold mb-1">{t('stages.howItWorks.step1Title')}</h4>
-                <p className="text-indigo-900/60">
+                <h4 className="font-semibold mb-0.5 sm:mb-1 text-sm sm:text-base">{t('stages.howItWorks.step1Title')}</h4>
+                <p className="text-indigo-900/60 text-xs sm:text-base">
                   {t('stages.howItWorks.step1Description')}
                 </p>
               </div>
             </div>
-            <div className="flex items-start space-x-4">
-              <div className="text-3xl">❓</div>
+            <div className="flex items-start space-x-2 sm:space-x-4">
+              <div className="text-xl sm:text-3xl">❓</div>
               <div>
-                <h4 className="font-semibold mb-1">{t('stages.howItWorks.step2Title')}</h4>
-                <p className="text-indigo-900/60">
+                <h4 className="font-semibold mb-0.5 sm:mb-1 text-sm sm:text-base">{t('stages.howItWorks.step2Title')}</h4>
+                <p className="text-indigo-900/60 text-xs sm:text-base">
                   {t('stages.howItWorks.step2Description')}
                 </p>
               </div>
             </div>
-            <div className="flex items-start space-x-4">
-              <div className="text-3xl">🏆</div>
+            <div className="flex items-start space-x-2 sm:space-x-4">
+              <div className="text-xl sm:text-3xl">🏆</div>
               <div>
-                <h4 className="font-semibold mb-1">{t('stages.howItWorks.step3Title')}</h4>
-                <p className="text-indigo-900/60">
+                <h4 className="font-semibold mb-0.5 sm:mb-1 text-sm sm:text-base">{t('stages.howItWorks.step3Title')}</h4>
+                <p className="text-indigo-900/60 text-xs sm:text-base">
                   {t('stages.howItWorks.step3Description')}
                 </p>
               </div>
@@ -143,58 +143,58 @@ const Stages = () => {
     const levelStages = getStagesByLevel(selectedLevel)
 
     return (
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-8">
+      <div className="max-w-6xl mx-auto px-2 sm:px-0">
+        <div className="mb-4 sm:mb-8">
           <button
             onClick={() => setSelectedLevel(null)}
-            className="btn-secondary mb-4"
+            className="btn-secondary mb-2 sm:mb-4 text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2"
           >
             {t('stages.backToLevels')}
           </button>
-          <h1 className="text-4xl font-zen font-bold mb-2">
+          <h1 className="text-2xl sm:text-4xl font-zen font-bold mb-1 sm:mb-2">
             {t('stages.stages', { level: selectedLevel })}
           </h1>
-          <p className="text-indigo-900/60">
+          <p className="text-indigo-900/60 text-sm sm:text-base">
             {t('stages.chooseScenario')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {levelStages.map((stage) => (
             <div
               key={stage.id}
-              className={`card-interactive relative overflow-hidden ${stage.locked ? 'opacity-50 cursor-not-allowed' : ''
+              className={`card-interactive relative overflow-hidden p-3 sm:p-4 ${stage.locked ? 'opacity-50 cursor-not-allowed' : ''
                 }`}
             >
               {stage.locked && (
-                <div className="absolute top-4 right-4 text-3xl">🔒</div>
+                <div className="absolute top-2 right-2 sm:top-4 sm:right-4 text-xl sm:text-3xl">🔒</div>
               )}
 
-              <div className="space-y-4">
+              <div className="space-y-2 sm:space-y-4">
                 <div>
-                  <h3 className="text-2xl font-zen font-bold mb-2">
+                  <h3 className="text-lg sm:text-2xl font-zen font-bold mb-1 sm:mb-2">
                     {stage.title}
                   </h3>
-                  <div className="flex items-center gap-2 text-sm">
-                    <span className="px-2 py-1 bg-sakura-pink/20 text-sakura-pink rounded">
+                  <div className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm">
+                    <span className="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-vermilion/20 text-vermilion rounded">
                       {stage.level}
                     </span>
-                    <span className="px-2 py-1 bg-electric-cyan/20 text-electric-cyan rounded capitalize">
+                    <span className="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-wave-light/20 text-wave-light rounded capitalize">
                       {stage.topic.replace('_', ' ')}
                     </span>
                   </div>
                 </div>
 
-                <p className="text-indigo-900/90">{stage.description}</p>
+                <p className="text-indigo-900/90 text-xs sm:text-base">{stage.description}</p>
 
-                <div className="text-sm text-indigo-900/60">
+                <div className="text-xs sm:text-sm text-indigo-900/60">
                   {t('stages.questions', { count: stage.questions.length })}
                 </div>
 
                 <button
                   disabled={stage.locked}
                   onClick={() => startStage(stage)}
-                  className={`w-full ${stage.locked
+                  className={`w-full text-xs sm:text-sm py-1.5 sm:py-2 ${stage.locked
                     ? 'btn-secondary opacity-50 cursor-not-allowed'
                     : 'btn-primary'
                     }`}
@@ -251,35 +251,35 @@ const Stages = () => {
     const results = calculateResults()
 
     return (
-      <div className="max-w-4xl mx-auto space-y-8">
-        <div className="card text-center">
-          <h1 className="text-4xl font-zen font-bold mb-4 text-gradient">
+      <div className="max-w-4xl mx-auto space-y-4 sm:space-y-8 px-2 sm:px-0">
+        <div className="card text-center p-3 sm:p-6">
+          <h1 className="text-2xl sm:text-4xl font-zen font-bold mb-2 sm:mb-4 text-gradient">
             {t('stages.stageComplete')}
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 my-6 md:my-8">
-            <div className="glass p-4 md:p-6 rounded-xl">
-              <div className="text-4xl md:text-5xl font-bold text-sakura-pink mb-2">
+          <div className="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6 my-3 sm:my-6 md:my-8">
+            <div className="glass p-3 sm:p-4 md:p-6 rounded-lg sm:rounded-xl">
+              <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-vermilion mb-1 sm:mb-2">
                 {results.score}/{results.total}
               </div>
-              <div className="text-sm md:text-base text-indigo-900/90">{t('stages.questionsCorrect')}</div>
+              <div className="text-xs sm:text-sm md:text-base text-indigo-900/90">{t('stages.questionsCorrect')}</div>
             </div>
 
-            <div className="glass p-4 md:p-6 rounded-xl">
-              <div className="text-4xl md:text-5xl font-bold text-electric-cyan mb-2">
+            <div className="glass p-3 sm:p-4 md:p-6 rounded-lg sm:rounded-xl">
+              <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-wave-light mb-1 sm:mb-2">
                 {results.percentage}%
               </div>
-              <div className="text-sm md:text-base text-indigo-900/90">{t('stages.accuracy')}</div>
+              <div className="text-xs sm:text-sm md:text-base text-indigo-900/90">{t('stages.accuracy')}</div>
             </div>
           </div>
 
-          <div className="space-y-4">
-            <button onClick={resetStage} className="btn-primary w-full">
+          <div className="space-y-2 sm:space-y-4">
+            <button onClick={resetStage} className="btn-primary w-full text-sm sm:text-base py-2 sm:py-3">
               {t('stages.backToStages')}
             </button>
             <button
               onClick={() => navigate('/')}
-              className="btn-secondary w-full"
+              className="btn-secondary w-full text-sm sm:text-base py-2 sm:py-3"
             >
               {t('stages.backToDashboard')}
             </button>
@@ -295,20 +295,20 @@ const Stages = () => {
   const currentQuestion = selectedStage.questions[currentQuestionIndex]
 
   return (
-    <div className="max-w-4xl mx-auto space-y-6">
+    <div className="max-w-4xl mx-auto space-y-3 sm:space-y-6 px-2 sm:px-0">
       {/* Dialogue Section */}
-      <div className="card">
-        <h2 className="text-2xl font-bold mb-4">{selectedStage.title}</h2>
-        <div className="space-y-4">
+      <div className="card p-3 sm:p-6">
+        <h2 className="text-base sm:text-2xl font-bold mb-2 sm:mb-4">{selectedStage.title}</h2>
+        <div className="space-y-2 sm:space-y-4">
           {selectedStage.dialogue.map((line, _idx) => (
             <div
               key={_idx}
-              className="glass p-4 rounded-xl"
+              className="glass p-2 sm:p-4 rounded-lg sm:rounded-xl"
             >
-              <div className="font-semibold text-sakura-pink mb-1">
+              <div className="font-semibold text-vermilion mb-0.5 sm:mb-1 text-xs sm:text-base">
                 {line.speaker}:
               </div>
-              <div className="text-lg mb-2">{line.text}</div>
+              <div className="text-sm sm:text-lg mb-1 sm:mb-2">{line.text}</div>
             </div>
           ))}
         </div>
@@ -316,14 +316,14 @@ const Stages = () => {
 
       {/* Progress */}
       <div>
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-indigo-900/90">
+        <div className="flex items-center justify-between mb-1 sm:mb-2">
+          <span className="text-indigo-900/90 text-xs sm:text-base">
             Question {currentQuestionIndex + 1} / {selectedStage.questions.length}
           </span>
         </div>
-        <div className="w-full bg-indigo-900/10 rounded-full h-2">
+        <div className="w-full bg-indigo-900/10 rounded-full h-1 sm:h-2">
           <div
-            className="bg-gradient-to-r from-sakura-pink to-electric-cyan h-2 rounded-full transition-all"
+            className="bg-gradient-to-r from-vermilion to-wave-deep h-1 sm:h-2 rounded-full transition-all"
             style={{
               width: `${((currentQuestionIndex + 1) / selectedStage.questions.length) * 100}%`,
             }}
@@ -331,22 +331,22 @@ const Stages = () => {
         </div>
       </div>
 
-      <div className="card">
-        <h3 className="text-2xl font-semibold mb-6">
+      <div className="card p-3 sm:p-6">
+        <h3 className="text-base sm:text-2xl font-semibold mb-3 sm:mb-6">
           {currentQuestion.stem}
         </h3>
 
-        <div className="space-y-3">
+        <div className="space-y-2 sm:space-y-3">
           {(currentQuestion.options || []).map((option, _idx) => (
             <button
               key={_idx}
               onClick={() => handleAnswer(currentQuestion.id, option)}
-              className={`w-full p-4 rounded-xl text-left transition-all ${answers[currentQuestion.id] === option
-                ? 'bg-gradient-to-r from-sakura-pink to-electric-cyan text-white'
+              className={`w-full p-2 sm:p-4 rounded-lg sm:rounded-xl text-left transition-all text-sm sm:text-base ${answers[currentQuestion.id] === option
+                ? 'bg-gradient-to-r from-vermilion to-wave-deep text-white'
                 : 'glass hover:bg-white/50 border border-indigo-900/5'
                 }`}
             >
-              <span className="font-semibold mr-3">
+              <span className="font-semibold mr-2 sm:mr-3">
                 {String.fromCharCode(65 + _idx)}.
               </span>
               {option}
@@ -355,8 +355,8 @@ const Stages = () => {
         </div>
 
         {answers[currentQuestion.id] && (
-          <div className="mt-4 p-4 bg-white/5 rounded-xl">
-            <div className="text-sm text-indigo-900/80">
+          <div className="mt-2 sm:mt-4 p-2 sm:p-4 bg-white/5 rounded-lg sm:rounded-xl">
+            <div className="text-xs sm:text-sm text-indigo-900/80">
               <strong>{t('stages.explanation')}</strong> {currentQuestion.explanation}
             </div>
           </div>
@@ -364,11 +364,11 @@ const Stages = () => {
       </div>
 
       {/* Navigation */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-2">
         <button
           onClick={previousQuestion}
           disabled={currentQuestionIndex === 0}
-          className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
+          className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed text-xs sm:text-sm px-2 py-1.5 sm:px-4 sm:py-2"
         >
           {t('stages.previous')}
         </button>
@@ -376,12 +376,12 @@ const Stages = () => {
         {currentQuestionIndex === selectedStage.questions.length - 1 ? (
           <button
             onClick={() => setShowResults(true)}
-            className="btn-primary"
+            className="btn-primary text-xs sm:text-sm px-2 py-1.5 sm:px-4 sm:py-2"
           >
             {t('stages.finishStage')}
           </button>
         ) : (
-          <button onClick={nextQuestion} className="btn-primary">
+          <button onClick={nextQuestion} className="btn-primary text-xs sm:text-sm px-2 py-1.5 sm:px-4 sm:py-2">
             {t('stages.next')}
           </button>
         )}

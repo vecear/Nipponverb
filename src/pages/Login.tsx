@@ -80,11 +80,11 @@ const Login = () => {
 
 
         <div className="text-center mb-8">
-          <div className="inline-block mb-4 p-4 rounded-full bg-white border-2 border-indigo-900 shadow-md">
+          <div className="inline-block mb-4 rounded-2xl border-2 border-indigo-900 shadow-md overflow-hidden bg-white">
             <img
-              src="/logo.png"
+              src="/apple-touch-icon.png"
               alt="Nipponverb Logo"
-              className="w-20 h-20 md:w-28 md:h-28 object-contain"
+              className="w-24 h-24 md:w-32 md:h-32 object-contain"
             />
           </div>
           <h1 className="text-4xl font-zen font-bold text-indigo-900 mb-2">

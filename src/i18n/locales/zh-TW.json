@@ -197,9 +197,9 @@
     "learningProgress": "學習進度",
     "stats": {
       "totalStudyTime": "總學習時間",
-      "questionsAnswered": "已回答問題",
+      "questionsAnswered": "已回答練習問題",
       "currentStreak": "當前連續天數",
-      "stagesCompleted": "已完成關卡"
+      "stagesCompleted": "已完成練習關卡"
     },
     "progress": {
       "verbs": "動詞",

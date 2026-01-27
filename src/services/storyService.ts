@@ -4,12 +4,11 @@
  * 管理角色故事的讀取和儲存
  */
 
-import { doc, getDoc, setDoc, collection, getDocs } from 'firebase/firestore'
+import { doc, setDoc, collection, getDocs } from 'firebase/firestore'
 import { db, auth } from '../config/firebase'
 import {
   NOVICE_STORIES,
   JOB_STORIES,
-  CharacterStories,
   StageStory
 } from '../data/characterStories'
 
@@ -22,7 +21,7 @@ const waitForAuth = (): Promise<void> => {
       resolve()
       return
     }
-    const unsubscribe = auth.onAuthStateChanged((user) => {
+    const unsubscribe = auth.onAuthStateChanged(() => {
       unsubscribe()
       resolve()
     })

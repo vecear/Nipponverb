@@ -46,21 +46,21 @@ const VerbConjugationGuide = () => {
             <article className="space-y-16">
                 {/* 01. 三類別概覽 */}
                 <section>
-                    <h2 className="text-2xl font-bold text-electric-cyan mb-6 flex items-center gap-2">
-                        <span className="w-8 h-8 rounded-lg bg-electric-cyan/20 flex items-center justify-center text-sm">01</span>
+                    <h2 className="text-2xl font-bold text-wave-light mb-6 flex items-center gap-2">
+                        <span className="w-8 h-8 rounded-lg bg-wave-light/20 flex items-center justify-center text-sm">01</span>
                         日文動詞三類別概覽
                     </h2>
                     <div className="card grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="space-y-2">
-                            <h3 className="font-bold text-sakura-pink">第一類 (五段動詞)</h3>
+                            <h3 className="font-bold text-vermilion">第一類 (五段動詞)</h3>
                             <p className="text-sm text-indigo-900/90">字尾散佈於「五段」音，變化最為多樣。</p>
                         </div>
                         <div className="space-y-2 border-l border-white/10 md:pl-6 pl-0 border-l-0 md:border-l">
-                            <h3 className="font-bold text-sakura-pink">第二類 (一段動詞)</h3>
+                            <h3 className="font-bold text-vermilion">第二類 (一段動詞)</h3>
                             <p className="text-sm text-indigo-900/90">字尾必為「る」，且前一音為「い段」或「え段」。</p>
                         </div>
                         <div className="space-y-2 border-l border-white/10 md:pl-6 pl-0 border-l-0 md:border-l">
-                            <h3 className="font-bold text-sakura-pink">第三類 (不規則)</h3>
+                            <h3 className="font-bold text-vermilion">第三類 (不規則)</h3>
                             <p className="text-sm text-indigo-900/90">只有「する」與「來る」，是所有變化的基礎。</p>
                         </div>
                     </div>
@@ -68,15 +68,15 @@ const VerbConjugationGuide = () => {
 
                 {/* 02. 常用五大變化 */}
                 <section className="space-y-16">
-                    <h2 className="text-2xl font-bold text-electric-cyan mb-6 flex items-center gap-2">
-                        <span className="w-8 h-8 rounded-lg bg-electric-cyan/20 flex items-center justify-center text-sm">02</span>
+                    <h2 className="text-2xl font-bold text-wave-light mb-6 flex items-center gap-2">
+                        <span className="w-8 h-8 rounded-lg bg-wave-light/20 flex items-center justify-center text-sm">02</span>
                         常用五大變化型態
                     </h2>
 
                     {/* 1. ます形 */}
                     <div className="card space-y-6">
                         <div className="flex justify-between items-start">
-                            <h3 className="text-xl font-bold text-sakura-pink">1. ます形 (禮貌形)</h3>
+                            <h3 className="text-xl font-bold text-vermilion">1. ます形 (禮貌形)</h3>
                             <div className="px-3 py-1 bg-indigo-900/5 rounded-full text-[10px] font-mono uppercase tracking-wider">Polite Form</div>
                         </div>
 
@@ -124,15 +124,15 @@ const VerbConjugationGuide = () => {
                                 <div className="p-4 pt-0 space-y-6 border-t border-indigo-900/5">
                                     <div className="space-y-3">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="easy" />將「食べる」變為ます形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-indigo-900/5 rounded-lg">答案：<FuriganaText text="食{た}べます" />。第二類動詞去「る」直接加「ます」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-indigo-900/5 rounded-lg">答案：<FuriganaText text="食{た}べます" />。第二類動詞去「る」直接加「ます」。</div></details>
                                     </div>
                                     <div className="space-y-3 border-t border-indigo-900/5 pt-4">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="medium" />將「走る」變為ます形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-indigo-900/5 rounded-lg">答案：<FuriganaText text="走{はし}ります" />。注意：<FuriganaText text="走{はし}る" /> 是第一類動詞（例外），不可去「る」加「ます」，須將「る」變「り」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-indigo-900/5 rounded-lg">答案：<FuriganaText text="走{はし}ります" />。注意：<FuriganaText text="走{はし}る" /> 是第一類動詞（例外），不可去「る」加「ます」，須將「る」變「り」。</div></details>
                                     </div>
                                     <div className="space-y-3 border-t border-indigo-900/5 pt-4">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="hard" />將「来る」變為ます形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-indigo-900/5 rounded-lg">答案：<FuriganaText text="来{き}ます" />。第三類不規則動詞，讀音從「く」變為「き」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-indigo-900/5 rounded-lg">答案：<FuriganaText text="来{き}ます" />。第三類不規則動詞，讀音從「く」變為「き」。</div></details>
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@ const VerbConjugationGuide = () => {
                     {/* 2. て形 */}
                     <div className="card space-y-6">
                         <div className="flex justify-between items-start">
-                            <h3 className="text-xl font-bold text-sakura-pink">2. て形 (連結形)</h3>
+                            <h3 className="text-xl font-bold text-vermilion">2. て形 (連結形)</h3>
                             <div className="px-3 py-1 bg-indigo-900/5 rounded-full text-[10px] font-mono uppercase tracking-wider">Te-Form</div>
                         </div>
 
@@ -152,8 +152,8 @@ const VerbConjugationGuide = () => {
                             <strong>小秘訣：</strong>如果字尾音有濁點（如：<i>gu/bu</i>），變出來的「て」也要變濁音「で」！
                         </LearningTip>
 
-                        <div className="bg-electric-cyan/10 border-l-4 border-electric-cyan p-4 rounded-r">
-                            <h4 className="text-sm font-bold text-electric-cyan mb-3">第一類音便詳細圖解 (加強版)：</h4>
+                        <div className="bg-wave-light/10 border-l-4 border-wave-light p-4 rounded-r">
+                            <h4 className="text-sm font-bold text-wave-light mb-3">第一類音便詳細圖解 (加強版)：</h4>
                             <div className="grid grid-cols-1 gap-4 text-sm">
                                 <div className="bg-indigo-900/5 p-4 rounded-lg border border-indigo-900/10">
                                     <div className="flex items-center gap-2 mb-2">
@@ -330,15 +330,15 @@ const VerbConjugationGuide = () => {
                                 <div className="p-4 pt-0 space-y-6 border-t border-white/5">
                                     <div className="space-y-3">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="easy" />將「見る」變為て形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="見{み}て" />。第二類動詞去「る」加「て」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="見{み}て" />。第二類動詞去「る」加「て」。</div></details>
                                     </div>
                                     <div className="space-y-3 border-t border-white/5 pt-4">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="medium" />將「死ぬ」變為て形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="死{し}んで" />。第一類鼻音便。字尾「ぬ」變為「んで」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="死{し}んで" />。第一類鼻音便。字尾「ぬ」變為「んで」。</div></details>
                                     </div>
                                     <div className="space-y-3 border-t border-white/5 pt-4">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="hard" />將「代わる」變為て形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="代{か}わって" />。第一類促音便。字尾為「る」的五段動詞變為「って」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="代{か}わって" />。第一類促音便。字尾為「る」的五段動詞變為「って」。</div></details>
                                     </div>
                                 </div>
                             </div>
@@ -348,7 +348,7 @@ const VerbConjugationGuide = () => {
                     {/* 3. ない形 */}
                     <div className="card space-y-6">
                         <div className="flex justify-between items-start">
-                            <h3 className="text-xl font-bold text-sakura-pink">3. ない形 (否定形)</h3>
+                            <h3 className="text-xl font-bold text-vermilion">3. ない形 (否定形)</h3>
                             <div className="px-3 py-1 bg-white/5 rounded-full text-[10px] font-mono uppercase tracking-wider">Negative Form</div>
                         </div>
 
@@ -396,15 +396,15 @@ const VerbConjugationGuide = () => {
                                 <div className="p-4 pt-0 space-y-6 border-t border-white/5">
                                     <div className="space-y-3">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="easy" />將「泳ぐ」變為ない形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="泳{およ}がない" />。第一類「ぐ」變為其「あ段」音「が」加「ない」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="泳{およ}がない" />。第一類「ぐ」變為其「あ段」音「が」加「ない」。</div></details>
                                     </div>
                                     <div className="space-y-3 border-t border-white/5 pt-4">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="medium" />將「買う」變為ない形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="買{か}わない" />。重要：字尾是「う」的動詞，否定必須變為「わ」而非「あ」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="買{か}わない" />。重要：字尾是「う」的動詞，否定必須變為「わ」而非「あ」。</div></details>
                                     </div>
                                     <div className="space-y-3 border-t border-white/5 pt-4">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="hard" />將「来る」變為ない形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="来{こ}ない" />。不規則動詞，注意讀音變換為「こ」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="来{こ}ない" />。不規則動詞，注意讀音變換為「こ」。</div></details>
                                     </div>
                                 </div>
                             </div>
@@ -414,7 +414,7 @@ const VerbConjugationGuide = () => {
                     {/* 4. た形 */}
                     <div className="card space-y-6">
                         <div className="flex justify-between items-start">
-                            <h3 className="text-xl font-bold text-sakura-pink">4. た形 (過去形)</h3>
+                            <h3 className="text-xl font-bold text-vermilion">4. た形 (過去形)</h3>
                             <div className="px-3 py-1 bg-white/5 rounded-full text-[10px] font-mono uppercase tracking-wider">Past Form</div>
                         </div>
 
@@ -451,15 +451,15 @@ const VerbConjugationGuide = () => {
                                 <div className="p-4 pt-0 space-y-6 border-t border-white/5">
                                     <div className="space-y-3">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="easy" />將「書く」變為た形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="書{か}いた" />。第一類い音便，「く」變為「いた」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="書{か}いた" />。第一類い音便，「く」變為「いた」。</div></details>
                                     </div>
                                     <div className="space-y-3 border-t border-white/5 pt-4">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="medium" />將「運ぶ」變為た形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="運{はこ}んだ" />。第一類鼻音便，「ぶ」變為「んだ」。注意是濁音！</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="運{はこ}んだ" />。第一類鼻音便，「ぶ」變為「んだ」。注意是濁音！</div></details>
                                     </div>
                                     <div className="space-y-3 border-t border-white/5 pt-4">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="hard" />將「受ける」變為た形。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="受{う}けた" />。第二類動詞去「る」直接加「た」。要注意不要跟「受かる（第一類）」混淆。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="受{う}けた" />。第二類動詞去「る」直接加「た」。要注意不要跟「受かる（第一類）」混淆。</div></details>
                                     </div>
                                 </div>
                             </div>
@@ -469,7 +469,7 @@ const VerbConjugationGuide = () => {
                     {/* 5. 辭書形 */}
                     <div className="card space-y-6">
                         <div className="flex justify-between items-start">
-                            <h3 className="text-xl font-bold text-sakura-pink">5. 辭書形 (字典形 / 原型)</h3>
+                            <h3 className="text-xl font-bold text-vermilion">5. 辭書形 (字典形 / 原型)</h3>
                             <div className="px-3 py-1 bg-white/5 rounded-full text-[10px] font-mono uppercase tracking-wider">Dictionary Form</div>
                         </div>
 
@@ -506,15 +506,15 @@ const VerbConjugationGuide = () => {
                                 <div className="p-4 pt-0 space-y-6 border-t border-white/5">
                                     <div className="space-y-3">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="easy" />「話します」的原型是什麼？</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="話{はな}す" />。從「い段」音變回「う段」音。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="話{はな}す" />。從「い段」音變回「う段」音。</div></details>
                                     </div>
                                     <div className="space-y-3 border-t border-white/5 pt-4">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="medium" />「開けます」的原型是什麼？</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="開{あ}ける" />。一段動詞，將「ます」替換為「る」。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="開{あ}ける" />。一段動詞，將「ます」替換為「る」。</div></details>
                                     </div>
                                     <div className="space-y-3 border-t border-white/5 pt-4">
                                         <p className="text-sm flex items-center gap-2"><DifficultyBadge level="hard" />「きます」的原型有兩個，分別對應「來」與「穿」，請寫出後者。</p>
-                                        <details className="text-xs"><summary className="cursor-pointer text-sakura-pink underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="着{き}る" />。注意「來る」是第三類，但「著る」是第二類的一段動詞。</div></details>
+                                        <details className="text-xs"><summary className="cursor-pointer text-vermilion underline">查看詳解</summary><div className="mt-2 p-3 bg-white/5 rounded-lg">答案：<FuriganaText text="着{き}る" />。注意「來る」是第三類，但「著る」是第二類的一段動詞。</div></details>
                                     </div>
                                 </div>
                             </div>
