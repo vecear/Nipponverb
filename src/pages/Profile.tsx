@@ -9,6 +9,7 @@ import { updateUserProfile } from '../services/userService'
 import { usePracticeStore } from '../store/usePracticeStore'
 import { useGrammarCompletionStore } from '../store/useGrammarCompletionStore'
 import ExpBar from '../components/ExpBar'
+import ImageLightbox from '../components/ImageLightbox'
 import { getJobById, getCharacterImagePath, JOBS, NOVICE_TITLE } from '../data/jobs'
 import { EXP_CONSTANTS, DEFAULT_PROGRESSION } from '../types/progression'
 import { UI_ELEMENTS } from '../config/assets'
@@ -91,23 +92,22 @@ const Profile = () => {
             </div>
 
             {/* 角色圖片 - 浮世繪風格 */}
-            <div className={`relative z-10 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full border-4 border-vermilion overflow-hidden ${job ? `bg-gradient-to-br ${job.color}` : 'bg-foam'}`}>
-              <img
-                src={characterImage}
-                alt="Character"
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  // 圖片載入失敗時顯示使用者頭像或首字母
-                  const target = e.currentTarget
-                  if (currentUser?.photoURL) {
-                    target.src = currentUser.photoURL
-                  } else {
-                    target.style.display = 'none'
-                    target.parentElement!.innerHTML = `<span class="flex items-center justify-center w-full h-full text-wave-deep text-2xl sm:text-3xl md:text-5xl font-bold">${profile?.displayName?.[0] || currentUser?.displayName?.[0] || 'U'}</span>`
-                  }
-                }}
-              />
-            </div>
+            <ImageLightbox
+              src={characterImage}
+              alt={job?.nameTw || '初心者'}
+              containerClassName={`relative z-10 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full border-4 border-vermilion overflow-hidden ${job ? `bg-gradient-to-br ${job.color}` : 'bg-foam'}`}
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                // 圖片載入失敗時顯示使用者頭像或首字母
+                const target = e.currentTarget
+                if (currentUser?.photoURL) {
+                  target.src = currentUser.photoURL
+                } else {
+                  target.style.display = 'none'
+                  target.parentElement!.innerHTML = `<span class="flex items-center justify-center w-full h-full text-wave-deep text-2xl sm:text-3xl md:text-5xl font-bold">${profile?.displayName?.[0] || currentUser?.displayName?.[0] || 'U'}</span>`
+                }
+              }}
+            />
             <div className="absolute -bottom-2 -right-2 z-20 bg-pine text-white px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-semibold border-2 border-washi-light">
               {t('profile.streak', { days: currentStreak })} 🔥
             </div>
@@ -426,17 +426,16 @@ const Profile = () => {
                           </td>
                           <td className="py-2 px-2 sm:py-3 sm:px-3 text-center">
                             <div className="flex justify-center">
-                              <div className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-wave-mid bg-washi overflow-hidden">
-                                <img
-                                  src={noviceImage}
-                                  alt="初心者"
-                                  className="w-full h-full object-cover"
-                                  onError={(e) => {
-                                    e.currentTarget.style.display = 'none'
-                                    e.currentTarget.parentElement!.innerHTML = `<span class="text-xl flex items-center justify-center h-full">🎯</span>`
-                                  }}
-                                />
-                              </div>
+                              <ImageLightbox
+                                src={noviceImage}
+                                alt="初心者"
+                                containerClassName="w-10 h-10 sm:w-12 sm:h-12 border-2 border-wave-mid bg-washi overflow-hidden"
+                                className="w-full h-full object-cover"
+                                onError={(e) => {
+                                  e.currentTarget.style.display = 'none'
+                                  e.currentTarget.parentElement!.innerHTML = `<span class="text-xl flex items-center justify-center h-full">🎯</span>`
+                                }}
+                              />
                             </div>
                           </td>
                           <td className="py-2 px-2 sm:py-3 sm:px-3">
@@ -482,17 +481,16 @@ const Profile = () => {
                             </td>
                             <td className="py-2 px-2 sm:py-3 sm:px-3 text-center">
                               <div className="flex justify-center">
-                                <div className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-wave-mid bg-washi overflow-hidden">
-                                  <img
-                                    src={stageImage}
-                                    alt={stage.nameTw}
-                                    className="w-full h-full object-cover"
-                                    onError={(e) => {
-                                      e.currentTarget.style.display = 'none'
-                                      e.currentTarget.parentElement!.innerHTML = `<span class="text-xl flex items-center justify-center h-full">${previewJob?.icon || '❓'}</span>`
-                                    }}
-                                  />
-                                </div>
+                                <ImageLightbox
+                                  src={stageImage}
+                                  alt={stage.nameTw}
+                                  containerClassName="w-10 h-10 sm:w-12 sm:h-12 border-2 border-wave-mid bg-washi overflow-hidden"
+                                  className="w-full h-full object-cover"
+                                  onError={(e) => {
+                                    e.currentTarget.style.display = 'none'
+                                    e.currentTarget.parentElement!.innerHTML = `<span class="text-xl flex items-center justify-center h-full">${previewJob?.icon || '❓'}</span>`
+                                  }}
+                                />
                               </div>
                             </td>
                             <td className="py-2 px-2 sm:py-3 sm:px-3">

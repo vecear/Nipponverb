@@ -14,6 +14,7 @@ import {
   GameConfig,
 } from '../services/adminService'
 import { getJobById, JOBS, NOVICE_TITLE, getCharacterImagePath, getJobBaseImagePath } from '../data/jobs'
+import ImageLightbox from '../components/ImageLightbox'
 import { JOB_STORIES, NOVICE_STORIES, StageStory } from '../data/characterStories'
 import {
   getStories,
@@ -804,17 +805,16 @@ const Admin = () => {
                                     </td>
                                     <td className="py-2 px-3 text-center">
                                       <div className="flex justify-center">
-                                        <div className="w-12 h-12 border-2 border-wave-mid bg-washi overflow-hidden">
-                                          <img
-                                            src={characterImage}
-                                            alt={`Lv.${level}`}
-                                            className="w-full h-full object-cover"
-                                            onError={(e) => {
-                                              e.currentTarget.style.display = 'none'
-                                              e.currentTarget.parentElement!.innerHTML = `<span class="text-2xl flex items-center justify-center h-full">❓</span>`
-                                            }}
-                                          />
-                                        </div>
+                                        <ImageLightbox
+                                          src={characterImage}
+                                          alt={`Lv.${level} 角色`}
+                                          containerClassName="w-12 h-12 border-2 border-wave-mid bg-washi overflow-hidden"
+                                          className="w-full h-full object-cover"
+                                          onError={(e) => {
+                                            e.currentTarget.style.display = 'none'
+                                            e.currentTarget.parentElement!.innerHTML = `<span class="text-2xl flex items-center justify-center h-full">❓</span>`
+                                          }}
+                                        />
                                       </div>
                                     </td>
                                     <td className="py-2 px-3 text-right font-mono text-sumi">
@@ -1259,25 +1259,24 @@ const Admin = () => {
                                 <div className="flex gap-4">
                                   {/* 階段角色圖片 */}
                                   <div className="flex-shrink-0">
-                                    <div className="w-20 h-20 md:w-24 md:h-24 border-2 border-wave-mid bg-washi overflow-hidden rounded-lg shadow-sm">
-                                      <img
-                                        src={stageCharacterImage}
-                                        alt={`Stage ${index + 1}`}
-                                        className="w-full h-full object-cover"
-                                        onError={(e) => {
-                                          // 如果階段圖片不存在，嘗試載入職業基礎圖片
-                                          const img = e.currentTarget
-                                          if (img.src !== baseCharacterImage && !img.dataset.fallbackAttempted) {
-                                            img.dataset.fallbackAttempted = 'true'
-                                            img.src = baseCharacterImage
-                                          } else {
-                                            // 如果基礎圖片也不存在，顯示 emoji
-                                            img.style.display = 'none'
-                                            img.parentElement!.innerHTML = `<span class="text-3xl flex items-center justify-center h-full bg-washi-light">${storyJobId === 'novice' ? '🌱' : job?.icon || '❓'}</span>`
-                                          }
-                                        }}
-                                      />
-                                    </div>
+                                    <ImageLightbox
+                                      src={stageCharacterImage}
+                                      alt={`${storyJobId === 'novice' ? '初心者' : job?.nameTw || ''} 階段 ${index + 1}`}
+                                      containerClassName="w-20 h-20 md:w-24 md:h-24 border-2 border-wave-mid bg-washi overflow-hidden rounded-lg shadow-sm"
+                                      className="w-full h-full object-cover"
+                                      onError={(e) => {
+                                        // 如果階段圖片不存在，嘗試載入職業基礎圖片
+                                        const img = e.currentTarget
+                                        if (img.src !== baseCharacterImage && !img.dataset.fallbackAttempted) {
+                                          img.dataset.fallbackAttempted = 'true'
+                                          img.src = baseCharacterImage
+                                        } else {
+                                          // 如果基礎圖片也不存在，顯示 emoji
+                                          img.style.display = 'none'
+                                          img.parentElement!.innerHTML = `<span class="text-3xl flex items-center justify-center h-full bg-washi-light">${storyJobId === 'novice' ? '🌱' : job?.icon || '❓'}</span>`
+                                        }
+                                      }}
+                                    />
                                     <p className="text-xs text-center text-sumi-faded mt-1">
                                       {t('admin.stories.stage', '階段')} {index + 1}
                                     </p>

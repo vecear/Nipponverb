@@ -154,7 +154,7 @@ const GrammarList = () => {
 
                     {/* Desktop Table View */}
                     <div className="hidden sm:block overflow-x-auto">
-                        <table className="w-full text-left border-collapse">
+                        <table className="w-full text-left border-collapse bg-white/50">
                             <thead>
                                 <tr className="bg-indigo-900/5 text-indigo-900/60 text-sm border-b border-indigo-900/10">
                                     <th className="p-4 font-medium w-12"></th>

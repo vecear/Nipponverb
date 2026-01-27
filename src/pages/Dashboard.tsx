@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import ExpBar from '../components/ExpBar'
+import ImageLightbox from '../components/ImageLightbox'
 import { useUserStore } from '../store/useUserStore'
 import { usePracticeStore } from '../store/usePracticeStore'
 import { DEFAULT_PROGRESSION, EXP_CONSTANTS } from '../types/progression'
@@ -139,18 +140,17 @@ const Dashboard = () => {
         <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-4 md:gap-6">
           {/* 角色圖片和資訊 */}
           <div className="flex items-center gap-2 sm:gap-4">
-            <div className={`w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-none border-2 border-wave-deep bg-gradient-to-br ${jobInfo.color} flex items-center justify-center overflow-hidden shadow-ukiyo shrink-0`}>
-              <img
-                src={characterImage}
-                alt={jobInfo.nameTw}
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  // 圖片載入失敗時顯示 emoji
-                  e.currentTarget.style.display = 'none'
-                  e.currentTarget.parentElement!.innerHTML = `<span class="text-2xl sm:text-3xl md:text-4xl">${jobInfo.icon}</span>`
-                }}
-              />
-            </div>
+            <ImageLightbox
+              src={characterImage}
+              alt={jobInfo.nameTw}
+              containerClassName={`relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-none border-2 border-wave-deep bg-gradient-to-br ${jobInfo.color} flex items-center justify-center overflow-hidden shadow-ukiyo shrink-0`}
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                // 圖片載入失敗時顯示 emoji
+                e.currentTarget.style.display = 'none'
+                e.currentTarget.parentElement!.innerHTML = `<span class="text-2xl sm:text-3xl md:text-4xl">${jobInfo.icon}</span>`
+              }}
+            />
             <div className="flex flex-col min-w-0">
               <div className="flex items-center gap-1 sm:gap-2 flex-wrap">
                 <span className="text-vermilion font-bold text-sm sm:text-lg md:text-xl">Lv.{progression.level}</span>
