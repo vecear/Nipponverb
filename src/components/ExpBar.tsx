@@ -3,6 +3,7 @@ import { UserProgression } from '../types/progression'
 import { getCurrentLevelProgress } from '../services/progressionService'
 import { getJobById, getCurrentTitle, NOVICE_TITLE } from '../data/jobs'
 import { EXP_CONSTANTS } from '../types/progression'
+import { UI_ELEMENTS } from '../config/assets'
 
 interface ExpBarProps {
   progression: UserProgression
@@ -103,24 +104,36 @@ const ExpBar = ({
         </div>
       </div>
 
-      {/* 經驗值條 */}
-      <div
-        className={`relative ${config.height} ${isDark ? 'bg-white/10' : 'bg-indigo-900/10'} rounded-full overflow-hidden`}
-      >
-        <motion.div
-          className="absolute inset-y-0 left-0 bg-gradient-to-r from-[#1D3450] to-[#2A6F97] rounded-full"
-          initial={{ width: 0 }}
-          animate={{ width: `${percentage}%` }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        />
+      {/* 經驗值條 - 帶裝飾 */}
+      <div className="relative">
+        {/* 裝飾框架 */}
+        <div className="absolute -inset-1 z-0 opacity-30 pointer-events-none hidden sm:block">
+          <img
+            src={UI_ELEMENTS.expBarDecoration}
+            alt=""
+            className="w-full h-full object-fill"
+            onError={(e) => e.currentTarget.style.display = 'none'}
+          />
+        </div>
 
-        {/* 發光效果 */}
-        <motion.div
-          className="absolute inset-y-0 left-0 bg-gradient-to-r from-[#1D3450]/50 to-[#2A6F97]/50 rounded-full blur-sm"
-          initial={{ width: 0 }}
-          animate={{ width: `${percentage}%` }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        />
+        <div
+          className={`relative ${config.height} ${isDark ? 'bg-white/10' : 'bg-indigo-900/10'} rounded-full overflow-hidden z-10`}
+        >
+          <motion.div
+            className="absolute inset-y-0 left-0 bg-gradient-to-r from-[#1D3450] to-[#2A6F97] rounded-full"
+            initial={{ width: 0 }}
+            animate={{ width: `${percentage}%` }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+          />
+
+          {/* 發光效果 */}
+          <motion.div
+            className="absolute inset-y-0 left-0 bg-gradient-to-r from-[#1D3450]/50 to-[#2A6F97]/50 rounded-full blur-sm"
+            initial={{ width: 0 }}
+            animate={{ width: `${percentage}%` }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+          />
+        </div>
       </div>
 
       {/* 百分比 */}

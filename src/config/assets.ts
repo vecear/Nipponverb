@@ -6,6 +6,30 @@
  */
 
 // ============================================
+// UI 元素 imports (使用 Vite 的靜態資源處理)
+// ============================================
+import hankoStampImg from '../assets/ui/hanko-stamp.png'
+
+// ============================================
+// 角色圖片 imports
+// ============================================
+// 初心者
+import noviceMaleImg from '../assets/characters/novice_male.png'
+import noviceFemaleImg from '../assets/characters/novice_female.png'
+
+// 職業角色
+import doshinMaleImg from '../assets/characters/jobs/doshin_male.png'
+import doshinFemaleImg from '../assets/characters/jobs/doshin_female.png'
+import yakushaMaleImg from '../assets/characters/jobs/yakusha_male.png'
+import yakushaFemaleImg from '../assets/characters/jobs/yakusha_female.png'
+import ukiyoeshiMaleImg from '../assets/characters/jobs/ukiyoeshi_male.png'
+import ukiyoeshiFemaleImg from '../assets/characters/jobs/ukiyoeshi_female.png'
+import shoninMaleImg from '../assets/characters/jobs/shonin_male.png'
+import shoninFemaleImg from '../assets/characters/jobs/shonin_female.png'
+import gakushaMaleImg from '../assets/characters/jobs/gakusha_male.png'
+import gakushaFemaleImg from '../assets/characters/jobs/gakusha_female.png'
+
+// ============================================
 // 品牌素材
 // ============================================
 export const BRAND = {
@@ -62,45 +86,46 @@ export const COURSE_LIST_ICONS = {
 // 初心者角色圖片
 // ============================================
 export const NOVICE_CHARACTERS = {
-  male: '/assets/characters/novice_male.png',
-  female: '/assets/characters/novice_female.png',
+  male: noviceMaleImg,
+  female: noviceFemaleImg,
 }
 
 // ============================================
 // 職業角色圖片
 // ============================================
-export const JOB_CHARACTERS = {
+export const JOB_CHARACTERS: Record<string, { male: string; female: string }> = {
   doshin: {
-    male: '/assets/characters/jobs/doshin_male.png',
-    female: '/assets/characters/jobs/doshin_female.png',
+    male: doshinMaleImg,
+    female: doshinFemaleImg,
   },
   yakusha: {
-    male: '/assets/characters/jobs/yakusha_male.png',
-    female: '/assets/characters/jobs/yakusha_female.png',
+    male: yakushaMaleImg,
+    female: yakushaFemaleImg,
   },
   ukiyoeshi: {
-    male: '/assets/characters/jobs/ukiyoeshi_male.png',
-    female: '/assets/characters/jobs/ukiyoeshi_female.png',
+    male: ukiyoeshiMaleImg,
+    female: ukiyoeshiFemaleImg,
   },
   shonin: {
-    male: '/assets/characters/jobs/shonin_male.png',
-    female: '/assets/characters/jobs/shonin_female.png',
+    male: shoninMaleImg,
+    female: shoninFemaleImg,
   },
   gakusha: {
-    male: '/assets/characters/jobs/gakusha_male.png',
-    female: '/assets/characters/jobs/gakusha_female.png',
+    male: gakushaMaleImg,
+    female: gakushaFemaleImg,
   },
+  // 以下職業圖片尚未加入 src/assets，暫時使用初心者圖片作為 fallback
   onmyoji: {
-    male: '/assets/characters/jobs/onmyoji_male.png',
-    female: '/assets/characters/jobs/miko_female.png', // 女性版本為巫女
+    male: noviceMaleImg,
+    female: noviceFemaleImg,
   },
   ryorinin: {
-    male: '/assets/characters/jobs/ryorinin_male.png',
-    female: '/assets/characters/jobs/ryorinin_female.png',
+    male: noviceMaleImg,
+    female: noviceFemaleImg,
   },
   hokan: {
-    male: '/assets/characters/jobs/hokan_male.png',
-    female: '/assets/characters/jobs/geigi_female.png', // 女性版本為芸妓
+    male: noviceMaleImg,
+    female: noviceFemaleImg,
   },
 }
 
@@ -113,11 +138,10 @@ export const getJobStageCharacter = (
   stage: number,
   gender: 'male' | 'female'
 ): string => {
-  // 特殊處理陰陽師和幇間的女性版本
+  // 特殊處理幇間的女性版本
   let actualJobId = jobId
-  if (gender === 'female') {
-    if (jobId === 'onmyoji') actualJobId = 'miko'
-    if (jobId === 'hokan') actualJobId = 'geigi'
+  if (gender === 'female' && jobId === 'hokan') {
+    actualJobId = 'geigi'
   }
 
   return `/assets/characters/stages/${actualJobId}_stage${stage}_${gender}.png`
@@ -127,7 +151,7 @@ export const getJobStageCharacter = (
 // UI 裝飾元素
 // ============================================
 export const UI_ELEMENTS = {
-  hankoStamp: '/assets/ui/hanko-stamp.png',
+  hankoStamp: hankoStampImg,
   badgeFrame: '/assets/ui/badge-frame.png',
   levelUpEffect: '/assets/ui/level-up-effect.png',
   expBarDecoration: '/assets/ui/exp-bar-decoration.png',
@@ -168,19 +192,32 @@ export const getCharacterImage = (
     return NOVICE_CHARACTERS[gender]
   }
 
-  // 計算階段 (1-10)
-  // const stage = Math.min(10, Math.floor((level - 5) / 10) + 1)
-
-  // 嘗試使用階段圖片
-  // const stageImage = getJobStageCharacter(jobId, stage, gender)
-
-  // 如果沒有階段圖片，使用基礎職業圖片
-  const jobCharacters = JOB_CHARACTERS[jobId as keyof typeof JOB_CHARACTERS]
+  // 使用職業圖片
+  const jobCharacters = JOB_CHARACTERS[jobId]
   if (jobCharacters) {
     return jobCharacters[gender]
   }
 
   // 後備：使用初心者圖片
+  return NOVICE_CHARACTERS[gender]
+}
+
+// ============================================
+// 輔助函數：取得職業基礎圖片路徑（不需要 level 參數）
+// ============================================
+export const getJobBaseImage = (
+  jobId: string | null,
+  gender: 'male' | 'female'
+): string => {
+  if (!jobId) {
+    return NOVICE_CHARACTERS[gender]
+  }
+
+  const jobCharacters = JOB_CHARACTERS[jobId]
+  if (jobCharacters) {
+    return jobCharacters[gender]
+  }
+
   return NOVICE_CHARACTERS[gender]
 }
 

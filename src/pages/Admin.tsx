@@ -13,7 +13,7 @@ import {
   removeAdmin,
   GameConfig,
 } from '../services/adminService'
-import { getJobById, JOBS, NOVICE_TITLE, getCharacterImagePath } from '../data/jobs'
+import { getJobById, JOBS, NOVICE_TITLE, getCharacterImagePath, getJobBaseImagePath } from '../data/jobs'
 import { JOB_STORIES, NOVICE_STORIES, StageStory } from '../data/characterStories'
 import {
   getStories,
@@ -1242,68 +1242,110 @@ const Admin = () => {
                           {currentStories.map((stage, index) => {
                             const jobStage = job?.stages[storyGender][index]
                             const isEditing = editingStoryIndex === index
+                            // 計算此階段對應的等級圖片
+                            const stageCharacterImage = getCharacterImagePath(
+                              stage.minLevel,
+                              storyJobId === 'novice' ? null : storyJobId,
+                              storyGender
+                            )
+                            // 職業基礎圖片作為 fallback
+                            const baseCharacterImage = getJobBaseImagePath(
+                              storyJobId === 'novice' ? null : storyJobId,
+                              storyGender
+                            )
 
                             return (
                               <div key={index} className={`p-4 rounded-xl border ${isEditing ? 'bg-foam/50 border-wave-deep' : 'bg-washi-light/50 border-wave-mid/30'}`}>
-                                <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                                  <div className="flex flex-wrap items-center gap-2">
-                                    <span className={`px-2 py-1 rounded text-sm font-bold ${index < 3 ? 'bg-green-500/20 text-green-600' :
-                                      index < 6 ? 'bg-blue-500/20 text-blue-600' :
-                                        index < 9 ? 'bg-purple-500/20 text-purple-600' :
-                                          'bg-vermilion/20 text-vermilion'
-                                      }`}>
-                                      Lv.{stage.minLevel} - {stage.maxLevel}
-                                    </span>
-                                    {jobStage && (
-                                      <span className="px-2 py-1 bg-wave-light/30 text-wave-deep rounded text-sm font-medium">
-                                        {jobStage.nameTw} ({jobStage.nameJp})
-                                      </span>
-                                    )}
-                                  </div>
-                                  {!isEditing && storiesInitialized && (
-                                    <button
-                                      onClick={() => handleEditStory(index)}
-                                      className="p-2 text-wave-mid hover:text-vermilion hover:bg-vermilion/10 rounded-lg transition-colors"
-                                      title={t('common.edit', '編輯')}
-                                    >
-                                      <Edit3 size={18} />
-                                    </button>
-                                  )}
-                                </div>
-
-                                {isEditing ? (
-                                  <div className="space-y-3">
-                                    <textarea
-                                      value={editingStoryText}
-                                      onChange={(e) => setEditingStoryText(e.target.value)}
-                                      className="w-full p-3 rounded-lg border border-wave-mid bg-white text-sumi min-h-[120px] resize-y"
-                                      placeholder={t('admin.stories.enterStory', '輸入故事內容...')}
-                                    />
-                                    <div className="flex gap-2">
-                                      <button
-                                        onClick={handleSaveStory}
-                                        disabled={storySaving}
-                                        className="btn-primary flex items-center gap-2"
-                                      >
-                                        <Save size={16} />
-                                        {storySaving ? t('common.loading', '載入中...') : t('common.save', '儲存')}
-                                      </button>
-                                      <button
-                                        onClick={handleCancelEdit}
-                                        disabled={storySaving}
-                                        className="btn-secondary flex items-center gap-2"
-                                      >
-                                        <X size={16} />
-                                        {t('common.cancel', '取消')}
-                                      </button>
+                                <div className="flex gap-4">
+                                  {/* 階段角色圖片 */}
+                                  <div className="flex-shrink-0">
+                                    <div className="w-20 h-20 md:w-24 md:h-24 border-2 border-wave-mid bg-washi overflow-hidden rounded-lg shadow-sm">
+                                      <img
+                                        src={stageCharacterImage}
+                                        alt={`Stage ${index + 1}`}
+                                        className="w-full h-full object-cover"
+                                        onError={(e) => {
+                                          // 如果階段圖片不存在，嘗試載入職業基礎圖片
+                                          const img = e.currentTarget
+                                          if (img.src !== baseCharacterImage && !img.dataset.fallbackAttempted) {
+                                            img.dataset.fallbackAttempted = 'true'
+                                            img.src = baseCharacterImage
+                                          } else {
+                                            // 如果基礎圖片也不存在，顯示 emoji
+                                            img.style.display = 'none'
+                                            img.parentElement!.innerHTML = `<span class="text-3xl flex items-center justify-center h-full bg-washi-light">${storyJobId === 'novice' ? '🌱' : job?.icon || '❓'}</span>`
+                                          }
+                                        }}
+                                      />
                                     </div>
-                                    <p className="text-xs text-sumi-faded">
-                                      {t('admin.stories.charCount', '字數')}: {editingStoryText.length}
+                                    <p className="text-xs text-center text-sumi-faded mt-1">
+                                      {t('admin.stories.stage', '階段')} {index + 1}
                                     </p>
                                   </div>
-                                ) : (
-                                  <p className="text-sumi leading-relaxed">{stage.story}</p>
-                                )}
+
+                                  {/* 故事內容 */}
+                                  <div className="flex-1 min-w-0">
+                                    <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                      <div className="flex flex-wrap items-center gap-2">
+                                        <span className={`px-2 py-1 rounded text-sm font-bold ${index < 3 ? 'bg-green-500/20 text-green-600' :
+                                          index < 6 ? 'bg-blue-500/20 text-blue-600' :
+                                            index < 9 ? 'bg-purple-500/20 text-purple-600' :
+                                              'bg-vermilion/20 text-vermilion'
+                                          }`}>
+                                          Lv.{stage.minLevel} - {stage.maxLevel}
+                                        </span>
+                                        {jobStage && (
+                                          <span className="px-2 py-1 bg-wave-light/30 text-wave-deep rounded text-sm font-medium">
+                                            {jobStage.nameTw} ({jobStage.nameJp})
+                                          </span>
+                                        )}
+                                      </div>
+                                      {!isEditing && storiesInitialized && (
+                                        <button
+                                          onClick={() => handleEditStory(index)}
+                                          className="p-2 text-wave-mid hover:text-vermilion hover:bg-vermilion/10 rounded-lg transition-colors"
+                                          title={t('common.edit', '編輯')}
+                                        >
+                                          <Edit3 size={18} />
+                                        </button>
+                                      )}
+                                    </div>
+
+                                    {isEditing ? (
+                                      <div className="space-y-3">
+                                        <textarea
+                                          value={editingStoryText}
+                                          onChange={(e) => setEditingStoryText(e.target.value)}
+                                          className="w-full p-3 rounded-lg border border-wave-mid bg-white text-sumi min-h-[120px] resize-y"
+                                          placeholder={t('admin.stories.enterStory', '輸入故事內容...')}
+                                        />
+                                        <div className="flex gap-2">
+                                          <button
+                                            onClick={handleSaveStory}
+                                            disabled={storySaving}
+                                            className="btn-primary flex items-center gap-2"
+                                          >
+                                            <Save size={16} />
+                                            {storySaving ? t('common.loading', '載入中...') : t('common.save', '儲存')}
+                                          </button>
+                                          <button
+                                            onClick={handleCancelEdit}
+                                            disabled={storySaving}
+                                            className="btn-secondary flex items-center gap-2"
+                                          >
+                                            <X size={16} />
+                                            {t('common.cancel', '取消')}
+                                          </button>
+                                        </div>
+                                        <p className="text-xs text-sumi-faded">
+                                          {t('admin.stories.charCount', '字數')}: {editingStoryText.length}
+                                        </p>
+                                      </div>
+                                    ) : (
+                                      <p className="text-sumi leading-relaxed">{stage.story}</p>
+                                    )}
+                                  </div>
+                                </div>
                               </div>
                             )
                           })}

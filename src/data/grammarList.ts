@@ -609,7 +609,6 @@ export const grammarList: GrammarPointItem[] = [
     { id: 'n2_koto_ni', level: 'N2', grammar: 'ことに', meaning: '令人...的是...' },
     { id: 'n2_koto_niwa_naranai', level: 'N2', grammar: 'ことにはならない', meaning: '不見得就是...; 並不意味著...' },
     { id: 'n2_kuse_shite', level: 'N2', grammar: 'くせして', meaning: '明明...卻... (責備/蔑視)' },
-    { id: 'n2_madashimo_1', level: 'N2', grammar: 'まだしも', meaning: '還湊合; 還算好' },
     { id: 'n2_mai', level: 'N2', grammar: 'まい', meaning: '絕不再...; 大概不...' },
     { id: 'n2_mama_ni', level: 'N2', grammar: 'ままに', meaning: '隨...; 任憑...' },
     { id: 'n2_mattaku_nai', level: 'N2', grammar: '全く～ない', meaning: '完全不...; 絲毫不...' },

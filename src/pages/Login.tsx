@@ -4,6 +4,7 @@ import { useAuth } from '../contexts/AuthContext'
 import { useTranslation } from 'react-i18next'
 import { getUserProfile, createUserProfile } from '../services/userService'
 import { Gender } from '../types/progression'
+import { ILLUSTRATIONS } from '../config/assets'
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -59,9 +60,19 @@ const Login = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4">
+    <div className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+      {/* Welcome Scene Background */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={ILLUSTRATIONS.welcome}
+          alt="Welcome"
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-washi/80 via-washi/60 to-washi/90" />
+      </div>
+
       {/* Animated Background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         {[...Array(20)].map((_, i) => (
           <div
             key={i}

@@ -399,45 +399,10 @@ export const getCurrentTitleById = (
 }
 
 // 取得角色圖片路徑
-// 圖片存放位置: public/assets/characters/
-// - 初心者: public/assets/characters/novice_{gender}.png
-// - 職業基礎: public/assets/characters/jobs/{jobId}_{gender}.png
-// - 職業階段: public/assets/characters/stages/{jobId}_stage{1-10}_{gender}.png
-export const getCharacterImagePath = (
-  level: number,
-  jobId: string | null,
-  gender: 'male' | 'female'
-): string => {
-  // 等級 0-4 或未選擇職業：使用初心者圖片
-  if (level < 5 || !jobId) {
-    return `/assets/characters/novice_${gender}.png`
-  }
+// 使用 src/assets/characters/ 的圖片（透過 Vite import）
+// 實際邏輯在 config/assets.ts 的 getCharacterImage
+export { getCharacterImage as getCharacterImagePath } from '../config/assets'
 
-  const job = getJobById(jobId)
-  if (!job) {
-    return `/assets/characters/novice_${gender}.png`
-  }
-
-  // 計算階段 (1-10)
-  // 階段 1: Lv.5-14, 階段 2: Lv.15-24, ..., 階段 10: Lv.95-99
-  // const stage = Math.min(10, Math.floor((level - 5) / 10) + 1)
-
-  // 特殊處理：陰陽師和幇間的女性版本有不同名稱
-  let characterJobId = jobId
-  if (gender === 'female') {
-    if (jobId === 'onmyoji') characterJobId = 'miko'
-    if (jobId === 'hokan') characterJobId = 'geigi'
-  }
-
-  // 優先使用階段圖片
-  // 格式: /assets/characters/stages/{jobId}_stage{1-10}_{gender}.png
-  // const stageImagePath = `/assets/characters/stages/${characterJobId}_stage${stage}_${gender}.png`
-
-  // 基礎職業圖片作為後備
-  // 格式: /assets/characters/jobs/{jobId}_{gender}.png
-  const baseImagePath = `/assets/characters/jobs/${characterJobId}_${gender}.png`
-
-  // 目前階段圖片尚未生成，暫時使用基礎職業圖片
-  // 當階段圖片生成後，可以改為回傳 stageImagePath
-  return baseImagePath
-}
+// 取得職業基礎圖片路徑（不需要 level 參數）
+// 使用 src/assets/characters/ 的圖片（透過 Vite import）
+export { getJobBaseImage as getJobBaseImagePath } from '../config/assets'

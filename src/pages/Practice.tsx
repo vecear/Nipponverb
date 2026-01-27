@@ -15,7 +15,7 @@ import { generateGrammarQuestion } from '../data/grammar'
 import { generateKanjiQuestion } from '../data/kanji'
 import { addExp, updateUserProgression } from '../services/progressionService'
 import { DEFAULT_PROGRESSION, EXP_REWARDS } from '../types/progression'
-import { PRACTICE_ICONS } from '../config/assets'
+import { PRACTICE_ICONS, UI_ELEMENTS, ILLUSTRATIONS } from '../config/assets'
 import { updateStudyTracking } from '../services/studyTrackingService'
 
 // Static Question Banks
@@ -374,9 +374,20 @@ const Practice = () => {
   if (isDirectAccess) {
     return (
       <div className="max-w-4xl mx-auto space-y-8">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-zen font-bold text-wave-deep mb-4">{t('practice.title')}</h1>
-          <p className="text-sumi-faded">{t('practice.selectCategory')}</p>
+        {/* Studying Scene Header */}
+        <div className="relative overflow-hidden rounded-lg mb-6">
+          <div className="absolute inset-0 z-0">
+            <img
+              src={ILLUSTRATIONS.studying}
+              alt=""
+              className="w-full h-full object-cover opacity-30"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-washi via-washi/80 to-transparent" />
+          </div>
+          <div className="relative z-10 py-8 px-4 text-center">
+            <h1 className="text-3xl md:text-4xl font-zen font-bold text-wave-deep mb-4">{t('practice.title')}</h1>
+            <p className="text-sumi-faded">{t('practice.selectCategory')}</p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
@@ -823,12 +834,33 @@ const Practice = () => {
     return (
       <div className="max-w-3xl mx-auto space-y-3 px-2 sm:px-0">
         {/* Score Summary Card */}
-        <div className="card text-center py-2 px-3 sm:py-3 sm:px-4">
-          <h1 className="text-lg sm:text-xl md:text-2xl font-zen font-bold mb-1.5 sm:mb-2 text-gradient">
-            {t('practice.complete')}
-          </h1>
+        <div className="card text-center py-2 px-3 sm:py-3 sm:px-4 relative overflow-hidden">
+          {/* Achievement Scene Background */}
+          <div className="absolute inset-0 z-0 opacity-10">
+            <img
+              src={ILLUSTRATIONS.achievement}
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-          <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6 my-2">
+          <div className="relative z-10">
+            {/* Hanko Stamp - appears when accuracy is good */}
+            {accuracy >= 70 && (
+              <div className="absolute -top-2 -right-2 sm:top-0 sm:right-0 w-16 h-16 sm:w-20 sm:h-20 transform rotate-12 opacity-80">
+                <img
+                  src={UI_ELEMENTS.hankoStamp}
+                  alt="Completion Stamp"
+                  className="w-full h-full object-contain drop-shadow-lg"
+                />
+              </div>
+            )}
+
+            <h1 className="text-lg sm:text-xl md:text-2xl font-zen font-bold mb-1.5 sm:mb-2 text-gradient">
+              {t('practice.complete')}
+            </h1>
+
+            <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6 my-2">
             <div className="text-center">
               <div className="text-lg sm:text-xl md:text-2xl font-bold text-vermilion">
                 {score}/{answeredCount}
@@ -857,20 +889,21 @@ const Practice = () => {
             )}
           </div>
 
-          {/* Action Buttons - Stack on mobile, side by side on larger */}
-          <div className="flex flex-col sm:flex-row gap-1.5 sm:gap-2 justify-center pt-2">
-            <button onClick={handleQuickRestart} className="btn-primary px-3 py-1.5 text-xs sm:text-sm">
-              {t('practice.practiceAgain')}
-            </button>
-            <button onClick={handleRestart} className="btn-secondary px-3 py-1.5 text-xs sm:text-sm">
-              重新選擇
-            </button>
-            <button
-              onClick={() => navigate('/')}
-              className="btn-secondary px-3 py-1.5 text-xs sm:text-sm"
-            >
-              {t('practice.backToDashboard')}
-            </button>
+            {/* Action Buttons - Stack on mobile, side by side on larger */}
+            <div className="flex flex-col sm:flex-row gap-1.5 sm:gap-2 justify-center pt-2">
+              <button onClick={handleQuickRestart} className="btn-primary px-3 py-1.5 text-xs sm:text-sm">
+                {t('practice.practiceAgain')}
+              </button>
+              <button onClick={handleRestart} className="btn-secondary px-3 py-1.5 text-xs sm:text-sm">
+                重新選擇
+              </button>
+              <button
+                onClick={() => navigate('/')}
+                className="btn-secondary px-3 py-1.5 text-xs sm:text-sm"
+              >
+                {t('practice.backToDashboard')}
+              </button>
+            </div>
           </div>
         </div>
 
