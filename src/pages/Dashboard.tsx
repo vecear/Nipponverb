@@ -136,60 +136,65 @@ const Dashboard = () => {
       </div>
 
       {/* Game Status Section - 浮世繪風格 */}
-      <div className="card p-2 sm:p-4 md:p-6">
-        <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-4 md:gap-6">
-          {/* 角色圖片和資訊 */}
-          <div className="flex items-center gap-2 sm:gap-4">
-            <ImageLightbox
-              src={characterImage}
-              alt={jobInfo.nameTw}
-              containerClassName={`relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-none border-2 border-wave-deep bg-gradient-to-br ${jobInfo.color} flex items-center justify-center overflow-hidden shadow-ukiyo shrink-0`}
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                // 圖片載入失敗時顯示 emoji
-                e.currentTarget.style.display = 'none'
-                e.currentTarget.parentElement!.innerHTML = `<span class="text-2xl sm:text-3xl md:text-4xl">${jobInfo.icon}</span>`
-              }}
-            />
-            <div className="flex flex-col min-w-0">
-              <div className="flex items-center gap-1 sm:gap-2 flex-wrap">
-                <span className="text-vermilion font-bold text-sm sm:text-lg md:text-xl">Lv.{progression.level}</span>
-                {jobInfo.hasJob && (
-                  <span className="px-1.5 py-0.5 sm:px-2 bg-foam text-wave-deep border border-wave-deep rounded-sm text-[10px] sm:text-xs font-bold">
-                    {jobInfo.name}
-                  </span>
+      <div className="card p-0 overflow-hidden">
+        <div className="flex">
+          {/* 角色圖片 - 占滿卡片高度 */}
+          <ImageLightbox
+            src={characterImage}
+            alt={jobInfo.nameTw}
+            containerClassName={`relative w-24 sm:w-28 md:w-32 shrink-0 border-r-2 border-wave-deep bg-gradient-to-br ${jobInfo.color} flex items-center justify-center overflow-hidden`}
+            className="w-full h-full object-cover object-top"
+            onError={(e) => {
+              // 圖片載入失敗時顯示 emoji
+              e.currentTarget.style.display = 'none'
+              e.currentTarget.parentElement!.innerHTML = `<span class="text-2xl sm:text-3xl md:text-4xl">${jobInfo.icon}</span>`
+            }}
+          />
+
+          {/* 右側內容區 */}
+          <div className="flex-1 p-2 sm:p-4 md:p-6 flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-4 md:gap-6">
+              {/* 角色資訊 */}
+              <div className="flex flex-col min-w-0">
+                <div className="flex items-center gap-1 sm:gap-2 flex-wrap">
+                  <span className="text-vermilion font-bold text-sm sm:text-lg md:text-xl">Lv.{progression.level}</span>
+                  {jobInfo.hasJob && (
+                    <span className="px-1.5 py-0.5 sm:px-2 bg-foam text-wave-deep border border-wave-deep rounded-sm text-[10px] sm:text-xs font-bold">
+                      {jobInfo.name}
+                    </span>
+                  )}
+                </div>
+                <span className="text-wave-deep text-xs sm:text-sm md:text-base font-bold">{jobInfo.nameTw}</span>
+                <p className="text-sumi-faded text-[10px] sm:text-xs md:text-sm mt-0.5 sm:mt-1 leading-relaxed max-w-md line-clamp-2">{characterStory}</p>
+                {/* 轉職提示 */}
+                {'needsJobChange' in jobInfo && jobInfo.needsJobChange && (
+                  <button
+                    onClick={() => navigate('/job-selection')}
+                    className="mt-1 sm:mt-2 btn-primary text-[10px] sm:text-xs !py-0.5 !px-2 sm:!py-1 sm:!px-3 shadow-none border-0"
+                  >
+                    {t('progression.jobSelection.go', '前往轉職')}
+                  </button>
                 )}
               </div>
-              <span className="text-wave-deep text-xs sm:text-sm md:text-base font-bold">{jobInfo.nameTw}</span>
-              <p className="text-sumi-faded text-[10px] sm:text-xs md:text-sm mt-0.5 sm:mt-1 leading-relaxed max-w-md line-clamp-2">{characterStory}</p>
-              {/* 轉職提示 */}
-              {'needsJobChange' in jobInfo && jobInfo.needsJobChange && (
-                <button
-                  onClick={() => navigate('/job-selection')}
-                  className="mt-1 sm:mt-2 btn-primary text-[10px] sm:text-xs !py-0.5 !px-2 sm:!py-1 sm:!px-3 shadow-none border-0"
-                >
-                  {t('progression.jobSelection.go', '前往轉職')}
-                </button>
-              )}
+
+              {/* 經驗值條 */}
+              <div className="flex-1">
+                <ExpBar
+                  progression={progression}
+                  gender={gender}
+                  showTitle={false}
+                  size="md"
+                />
+              </div>
             </div>
-          </div>
 
-          {/* 經驗值條 */}
-          <div className="flex-1">
-            <ExpBar
-              progression={progression}
-              gender={gender}
-              showTitle={false}
-              size="md"
-            />
-          </div>
-        </div>
-
-        {/* 總經驗值統計 */}
-        <div className="mt-2 sm:mt-4 pt-2 sm:pt-4 border-t-2 border-dashed border-wave-mid/30">
-          <div className="flex items-center justify-between text-xs sm:text-sm">
-            <span className="text-sumi-faded font-bold">{t('progression.exp', '總經驗值')}</span>
-            <span className="text-wave-deep font-bold font-mono">{progression.totalExp.toLocaleString()} EXP</span>
+            {/* 總經驗值統計 */}
+            <div className="mt-2 sm:mt-4 pt-2 sm:pt-4 border-t-2 border-dashed border-wave-mid/30">
+              <div className="flex items-center justify-between text-xs sm:text-sm">
+                <span className="text-sumi-faded font-bold">{t('progression.exp', '經驗值')}</span>
+                <span className="text-wave-deep font-bold font-mono">{progression.totalExp.toLocaleString()} EXP</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

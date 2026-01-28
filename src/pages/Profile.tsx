@@ -2,17 +2,16 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useTranslation } from 'react-i18next'
-import { X, Mail, Lock, Link as LinkIcon, AlertCircle, CheckCircle, Edit2, Save, ChevronDown, ChevronUp, Eye, EyeOff } from 'lucide-react'
+import { X, Mail, Lock, Link as LinkIcon, AlertCircle, CheckCircle, Edit2, Save, Eye, EyeOff } from 'lucide-react'
 import { useUserStore } from '../store/useUserStore'
 import { updateUserProfile } from '../services/userService'
 import { usePracticeStore } from '../store/usePracticeStore'
 import { useGrammarCompletionStore } from '../store/useGrammarCompletionStore'
 import ExpBar from '../components/ExpBar'
 import ImageLightbox from '../components/ImageLightbox'
-import { getJobById, getCharacterImagePath, JOBS, NOVICE_TITLE } from '../data/jobs'
+import { getJobById, getCharacterImagePath, NOVICE_TITLE } from '../data/jobs'
 import { EXP_CONSTANTS, DEFAULT_PROGRESSION } from '../types/progression'
 import { UI_ELEMENTS } from '../config/assets'
-import { JOB_STORIES, NOVICE_STORIES } from '../data/characterStories'
 
 
 const Profile = () => {
@@ -35,11 +34,6 @@ const Profile = () => {
 
   const [isEditingName, setIsEditingName] = useState(false)
   const [newName, setNewName] = useState(profile?.displayName || '')
-
-  // 等級預覽表格狀態
-  const [showLevelPreview, setShowLevelPreview] = useState(false)
-  const [selectedJobForPreview, setSelectedJobForPreview] = useState<string>(progression.jobId || 'doshin')
-  const [previewGender, setPreviewGender] = useState<'male' | 'female'>(gender)
 
   // Initialize levels
   const levels = ['N5', 'N4', 'N3', 'N2', 'N1']
@@ -320,245 +314,6 @@ const Profile = () => {
           </div>
         )}
 
-        {/* 等級預覽表格 - 可展開 */}
-        <div className="mt-4 sm:mt-6">
-          <button
-            onClick={() => setShowLevelPreview(!showLevelPreview)}
-            className="flex items-center gap-2 text-sm sm:text-base font-semibold text-wave-mid hover:text-wave-deep transition-colors"
-          >
-            {showLevelPreview ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-            {t('profile.levelPreview.title', '角色成長預覽')}
-          </button>
-
-          {showLevelPreview && (
-            <div className="mt-3 sm:mt-4 space-y-4">
-              {/* 職業和性別選擇 */}
-              <div className="flex flex-wrap gap-3 sm:gap-4">
-                <div>
-                  <label className="block text-xs sm:text-sm text-sumi-faded mb-1.5">
-                    {t('profile.levelPreview.selectJob', '選擇職業')}
-                  </label>
-                  <select
-                    value={selectedJobForPreview}
-                    onChange={(e) => setSelectedJobForPreview(e.target.value)}
-                    className="min-w-[140px] text-xs sm:text-sm px-2 py-1.5 sm:px-3 sm:py-2 rounded-lg border border-wave-mid bg-white text-sumi"
-                  >
-                    {JOBS.map((j) => (
-                      <option key={j.id} value={j.id}>
-                        {j.icon} {j.nameTw}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-xs sm:text-sm text-sumi-faded mb-1.5">
-                    {t('profile.levelPreview.selectGender', '選擇性別')}
-                  </label>
-                  <div className="flex gap-1.5">
-                    <button
-                      onClick={() => setPreviewGender('male')}
-                      className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm transition-all ${previewGender === 'male'
-                        ? 'bg-wave-deep text-white'
-                        : 'bg-washi-light text-sumi-faded hover:bg-foam border border-wave-mid'
-                        }`}
-                    >
-                      {t('common.male', '男性')}
-                    </button>
-                    <button
-                      onClick={() => setPreviewGender('female')}
-                      className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm transition-all ${previewGender === 'female'
-                        ? 'bg-sakura text-white'
-                        : 'bg-washi-light text-sumi-faded hover:bg-foam border border-wave-mid'
-                        }`}
-                    >
-                      {t('common.female', '女性')}
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* 職業說明 */}
-              {(() => {
-                const previewJob = JOBS.find(j => j.id === selectedJobForPreview)
-                return previewJob ? (
-                  <div className="text-sumi-faded text-xs sm:text-sm">
-                    <span className="font-bold text-vermilion">{previewJob.nameTw}</span>：{previewJob.description}
-                  </div>
-                ) : null
-              })()}
-
-              {/* 等級表格 */}
-              <div className="overflow-x-auto max-h-[400px] sm:max-h-[500px] overflow-y-auto border border-wave-mid rounded-lg">
-                <table className="w-full text-xs sm:text-sm">
-                  <thead className="sticky top-0 bg-washi-light z-10">
-                    <tr className="border-b-2 border-wave-mid">
-                      <th className="text-left py-2 px-2 sm:py-3 sm:px-3 text-wave-deep font-bold">
-                        {t('profile.levelPreview.level', '等級')}
-                      </th>
-                      <th className="text-center py-2 px-2 sm:py-3 sm:px-3 text-wave-deep font-bold">
-                        {t('profile.levelPreview.character', '角色')}
-                      </th>
-                      <th className="text-left py-2 px-2 sm:py-3 sm:px-3 text-wave-deep font-bold">
-                        {t('profile.levelPreview.title_name', '稱號')}
-                      </th>
-                      <th className="text-left py-2 px-2 sm:py-3 sm:px-3 text-wave-deep font-bold hidden md:table-cell">
-                        {t('profile.levelPreview.story', '故事')}
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {(() => {
-                      const rows = []
-                      const previewJob = JOBS.find(j => j.id === selectedJobForPreview)
-                      const stages = previewJob?.stages[previewGender] || []
-                      const jobStories = JOB_STORIES[selectedJobForPreview]?.[previewGender] || []
-
-                      // 初心者階段 (0-4)
-                      const noviceStory = NOVICE_STORIES[previewGender][0]
-                      const noviceImage = getCharacterImagePath(0, null, previewGender)
-                      const isCurrentNovice = progression.level >= 0 && progression.level <= 4
-
-                      rows.push(
-                        <tr
-                          key="novice"
-                          className={`border-b border-wave-mid/30 ${isCurrentNovice ? 'bg-vermilion/10' : 'hover:bg-foam'} transition-colors`}
-                        >
-                          <td className="py-2 px-2 sm:py-3 sm:px-3">
-                            <span className={`font-bold ${isCurrentNovice ? 'text-vermilion' : 'text-sumi'}`}>
-                              Lv.0-4
-                            </span>
-                            {isCurrentNovice && (
-                              <span className="ml-1.5 text-[10px] px-1.5 py-0.5 bg-vermilion/20 text-vermilion rounded">
-                                現在
-                              </span>
-                            )}
-                          </td>
-                          <td className="py-2 px-2 sm:py-3 sm:px-3 text-center">
-                            <div className="flex justify-center">
-                              <ImageLightbox
-                                src={noviceImage}
-                                alt="初心者"
-                                containerClassName="w-10 h-10 sm:w-12 sm:h-12 border-2 border-wave-mid bg-washi overflow-hidden"
-                                className="w-full h-full object-cover"
-                                onError={(e) => {
-                                  e.currentTarget.style.display = 'none'
-                                  e.currentTarget.parentElement!.innerHTML = `<span class="text-xl flex items-center justify-center h-full">🎯</span>`
-                                }}
-                              />
-                            </div>
-                          </td>
-                          <td className="py-2 px-2 sm:py-3 sm:px-3">
-                            <div className="flex flex-col">
-                              <span className="text-sumi font-bold">{NOVICE_TITLE.nameJp}</span>
-                              <span className="text-sumi-faded text-[10px] sm:text-xs">({NOVICE_TITLE.nameTw})</span>
-                            </div>
-                          </td>
-                          <td className="py-2 px-2 sm:py-3 sm:px-3 hidden md:table-cell">
-                            <p className="text-sumi-faded text-xs line-clamp-2">{noviceStory?.story}</p>
-                          </td>
-                        </tr>
-                      )
-
-                      // 職業階段 (5-99)
-                      stages.forEach((stage, index) => {
-                        const stageStory = jobStories[index]
-                        const stageImage = getCharacterImagePath(stage.minLevel, selectedJobForPreview, previewGender)
-                        // 計算 maxLevel：下一個階段的 minLevel - 1，最後一個階段則為 99
-                        const nextStage = stages[index + 1]
-                        const maxLevel = nextStage ? nextStage.minLevel - 1 : 99
-                        const isCurrentStage = progression.level >= stage.minLevel && progression.level <= maxLevel && progression.jobId === selectedJobForPreview
-
-                        rows.push(
-                          <tr
-                            key={stage.minLevel}
-                            className={`border-b border-wave-mid/30 ${isCurrentStage ? 'bg-vermilion/10' : 'hover:bg-foam'} transition-colors`}
-                          >
-                            <td className="py-2 px-2 sm:py-3 sm:px-3">
-                              <span className={`font-bold ${isCurrentStage ? 'text-vermilion' : 'text-sumi'}`}>
-                                Lv.{stage.minLevel}-{maxLevel}
-                              </span>
-                              {isCurrentStage && (
-                                <span className="ml-1.5 text-[10px] px-1.5 py-0.5 bg-vermilion/20 text-vermilion rounded">
-                                  現在
-                                </span>
-                              )}
-                              {stage.minLevel === EXP_CONSTANTS.JOB_CHANGE_LEVEL && (
-                                <span className="ml-1.5 text-[10px] px-1.5 py-0.5 bg-wave-light/20 text-wave-deep rounded border border-wave-mid">
-                                  轉職
-                                </span>
-                              )}
-                            </td>
-                            <td className="py-2 px-2 sm:py-3 sm:px-3 text-center">
-                              <div className="flex justify-center">
-                                <ImageLightbox
-                                  src={stageImage}
-                                  alt={stage.nameTw}
-                                  containerClassName="w-10 h-10 sm:w-12 sm:h-12 border-2 border-wave-mid bg-washi overflow-hidden"
-                                  className="w-full h-full object-cover"
-                                  onError={(e) => {
-                                    e.currentTarget.style.display = 'none'
-                                    e.currentTarget.parentElement!.innerHTML = `<span class="text-xl flex items-center justify-center h-full">${previewJob?.icon || '❓'}</span>`
-                                  }}
-                                />
-                              </div>
-                            </td>
-                            <td className="py-2 px-2 sm:py-3 sm:px-3">
-                              <div className="flex flex-col">
-                                <span className="text-sumi font-bold">{stage.nameJp}</span>
-                                <span className="text-sumi-faded text-[10px] sm:text-xs">({stage.nameTw})</span>
-                              </div>
-                            </td>
-                            <td className="py-2 px-2 sm:py-3 sm:px-3 hidden md:table-cell">
-                              <p className="text-sumi-faded text-xs line-clamp-2">{stageStory?.story}</p>
-                            </td>
-                          </tr>
-                        )
-                      })
-
-                      return rows
-                    })()}
-                  </tbody>
-                </table>
-              </div>
-
-              {/* 手機版故事展開區 */}
-              <div className="md:hidden space-y-2">
-                <p className="text-xs text-sumi-faded">點擊查看完整故事</p>
-                {(() => {
-                  const previewJob = JOBS.find(j => j.id === selectedJobForPreview)
-                  const stages = previewJob?.stages[previewGender] || []
-                  const jobStories = JOB_STORIES[selectedJobForPreview]?.[previewGender] || []
-
-                  return (
-                    <details className="group">
-                      <summary className="cursor-pointer text-sm font-bold text-wave-deep hover:text-vermilion transition-colors">
-                        查看所有階段故事
-                      </summary>
-                      <div className="mt-2 space-y-3 pl-2 border-l-2 border-wave-mid/30">
-                        <div className="p-2 bg-foam/50 rounded">
-                          <p className="text-xs font-bold text-vermilion mb-1">Lv.0-4 {NOVICE_TITLE.nameTw}</p>
-                          <p className="text-xs text-sumi-faded">{NOVICE_STORIES[previewGender][0]?.story}</p>
-                        </div>
-                        {stages.map((stage, index) => {
-                          const nextStage = stages[index + 1]
-                          const maxLevel = nextStage ? nextStage.minLevel - 1 : 99
-                          return (
-                            <div key={stage.minLevel} className="p-2 bg-foam/50 rounded">
-                              <p className="text-xs font-bold text-wave-deep mb-1">
-                                Lv.{stage.minLevel}-{maxLevel} {stage.nameTw}
-                              </p>
-                              <p className="text-xs text-sumi-faded">{jobStories[index]?.story}</p>
-                            </div>
-                          )
-                        })}
-                      </div>
-                    </details>
-                  )
-                })()}
-              </div>
-            </div>
-          )}
-        </div>
       </div>
 
       {isModalOpen && (
