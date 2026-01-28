@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { Search, Check } from 'lucide-react'
 import { grammarList } from '../data/grammarList'
 import { useGrammarCompletionStore } from '../store/useGrammarCompletionStore'
+import { useUserStore } from '../store/useUserStore'
 
 const STORAGE_KEY = 'grammarListState'
 
@@ -18,10 +19,12 @@ const GrammarList = () => {
     const navigate = useNavigate()
     const isInitialMount = useRef(true)
     const { isCompleted } = useGrammarCompletionStore()
+    const { profile } = useUserStore()
 
-    // Restore state from sessionStorage on mount
+    // Restore state from sessionStorage on mount, fallback to user's currentLevel
     const savedState = sessionStorage.getItem(STORAGE_KEY)
-    const initialState = savedState ? JSON.parse(savedState) : { level: 'ALL', scrollY: 0 }
+    const defaultLevel = profile?.currentLevel || 'N5'
+    const initialState = savedState ? JSON.parse(savedState) : { level: defaultLevel, scrollY: 0 }
 
     const [selectedLevel, setSelectedLevel] = useState<'ALL' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1'>(initialState.level)
     const [searchQuery, setSearchQuery] = useState('')

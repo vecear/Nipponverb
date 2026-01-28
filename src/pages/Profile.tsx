@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import LanguageSwitcher from '../components/LanguageSwitcher'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useTranslation } from 'react-i18next'
-import { X, Mail, Lock, Link as LinkIcon, AlertCircle, CheckCircle, Edit2, Save, ChevronDown, ChevronUp } from 'lucide-react'
+import { X, Mail, Lock, Link as LinkIcon, AlertCircle, CheckCircle, Edit2, Save, ChevronDown, ChevronUp, Eye, EyeOff } from 'lucide-react'
 import { useUserStore } from '../store/useUserStore'
 import { updateUserProfile } from '../services/userService'
 import { usePracticeStore } from '../store/usePracticeStore'
@@ -54,6 +53,9 @@ const Profile = () => {
   const [requiresReauth, setRequiresReauth] = useState(false)
   const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
   const [loading, setLoading] = useState(false)
+  const [showNewPassword, setShowNewPassword] = useState(false)
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false)
+  const [showReauthPassword, setShowReauthPassword] = useState(false)
 
   const isGoogleUser = currentUser?.providerData.some(p => p.providerId === 'google.com')
   const isGoogleLinked = currentUser?.providerData.some(p => p.providerId === 'google.com')
@@ -163,7 +165,15 @@ const Profile = () => {
                 {levels.map((level) => (
                   <button
                     key={level}
-                    onClick={() => setSelectedLevel(level)}
+                    onClick={async () => {
+                      setSelectedLevel(level)
+                      // Save to Firebase and update local store
+                      if (currentUser) {
+                        const newLevel = level as 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
+                        await updateUserProfile(currentUser.uid, { currentLevel: newLevel })
+                        updateProfile({ currentLevel: newLevel })
+                      }
+                    }}
                     className={`px-2 sm:px-3 md:px-4 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs md:text-sm font-semibold transition-all border ${selectedLevel === level
                       ? 'bg-vermilion text-white border-vermilion'
                       : 'bg-washi-light text-sumi-faded border-wave-mid/30 hover:border-vermilion hover:text-vermilion'
@@ -176,7 +186,6 @@ const Profile = () => {
             </div>
           </div>
           <div className="mt-3 sm:mt-6 md:mt-0 flex flex-col items-center md:items-end gap-2 sm:gap-3">
-            <LanguageSwitcher />
             <button
               onClick={() => setIsModalOpen(true)}
               className="btn-secondary px-4 sm:px-6 py-1.5 sm:py-2 rounded-lg sm:rounded-xl shadow-sm text-xs sm:text-sm"
@@ -591,14 +600,25 @@ const Profile = () => {
                   {!isGoogleUser ? (
                     <div className="space-y-4">
                       <div className="relative">
-                        <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-sumi-faded" size={18} />
                         <input
-                          type="password"
+                          type={showReauthPassword ? 'text' : 'password'}
                           value={reauthPassword}
                           onChange={(e) => setReauthPassword(e.target.value)}
-                          className="placeholder-sumi-faded pl-10"
+                          className="placeholder-sumi-faded pr-16"
                           placeholder={t('profile.settings.currentPassword')}
                         />
+                        <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
+                          <button
+                            type="button"
+                            onPointerDown={() => setShowReauthPassword(true)}
+                            onPointerUp={() => setShowReauthPassword(false)}
+                            onPointerLeave={() => setShowReauthPassword(false)}
+                            className="p-1 text-sumi-faded hover:text-wave-deep transition-colors"
+                          >
+                            {showReauthPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                          </button>
+                          <Lock className="text-sumi-faded pointer-events-none" size={16} />
+                        </div>
                       </div>
                       <button
                         onClick={async () => {
@@ -657,14 +677,14 @@ const Profile = () => {
                     {t('profile.settings.changeEmail')}
                   </label>
                   <div className="relative">
-                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-sumi-faded" size={18} />
                     <input
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="placeholder-sumi-faded pl-10"
+                      className="placeholder-sumi-faded pr-10"
                       placeholder={t('profile.settings.newEmail')}
                     />
+                    <Mail className="absolute right-3 top-1/2 -translate-y-1/2 text-sumi-faded pointer-events-none" size={18} />
                   </div>
                   <button
                     onClick={async () => {
@@ -698,24 +718,46 @@ const Profile = () => {
                   </label>
                   <div className="space-y-2">
                     <div className="relative">
-                      <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-sumi-faded" size={18} />
                       <input
-                        type="password"
+                        type={showNewPassword ? 'text' : 'password'}
                         value={newPassword}
                         onChange={(e) => setNewPassword(e.target.value)}
-                        className="placeholder-sumi-faded pl-10"
+                        className="placeholder-sumi-faded pr-16"
                         placeholder={t('profile.settings.newPassword')}
                       />
+                      <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
+                        <button
+                          type="button"
+                          onPointerDown={() => setShowNewPassword(true)}
+                          onPointerUp={() => setShowNewPassword(false)}
+                          onPointerLeave={() => setShowNewPassword(false)}
+                          className="p-1 text-sumi-faded hover:text-wave-deep transition-colors"
+                        >
+                          {showNewPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                        </button>
+                        <Lock className="text-sumi-faded pointer-events-none" size={16} />
+                      </div>
                     </div>
                     <div className="relative">
-                      <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-sumi-faded" size={18} />
                       <input
-                        type="password"
+                        type={showConfirmPassword ? 'text' : 'password'}
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
-                        className="placeholder-sumi-faded pl-10"
+                        className="placeholder-sumi-faded pr-16"
                         placeholder={t('profile.settings.confirmPassword')}
                       />
+                      <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
+                        <button
+                          type="button"
+                          onPointerDown={() => setShowConfirmPassword(true)}
+                          onPointerUp={() => setShowConfirmPassword(false)}
+                          onPointerLeave={() => setShowConfirmPassword(false)}
+                          className="p-1 text-sumi-faded hover:text-wave-deep transition-colors"
+                        >
+                          {showConfirmPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                        </button>
+                        <Lock className="text-sumi-faded pointer-events-none" size={16} />
+                      </div>
                     </div>
                   </div>
                   <button

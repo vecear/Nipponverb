@@ -68,7 +68,7 @@ const Practice = () => {
   }
 
   const [showResults, setShowResults] = useState(false)
-  const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1'>('N5')
+  const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1'>(profile?.currentLevel || 'N5')
   const [selectedSubcategory, setSelectedSubcategory] = useState<GojuonSubcategory>('hiragana')
   const [questionCount, setQuestionCount] = useState<number>(20)
   const [showCategorySelect, setShowCategorySelect] = useState(true)

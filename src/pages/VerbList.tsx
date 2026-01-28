@@ -3,12 +3,14 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { commonVerbs, conjugateVerbWithReading, generateVerbExample, VerbData } from '../data/verbs'
 import FuriganaText from '../components/FuriganaText'
+import { useUserStore } from '../store/useUserStore'
 
 const VerbList = () => {
     const { t, i18n } = useTranslation()
+    const { profile } = useUserStore()
     const [selectedVerb, setSelectedVerb] = useState<VerbData | null>(null)
     const [searchTerm, setSearchTerm] = useState('')
-    const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1' | null>(null)
+    const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1' | null>(profile?.currentLevel || null)
 
     // Filter verbs based on search term and selected level
     const filteredVerbs = commonVerbs.filter(verb => {

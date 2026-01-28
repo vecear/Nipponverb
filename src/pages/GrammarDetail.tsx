@@ -252,6 +252,12 @@ const GrammarDetail = () => {
         return <span>{parts}</span>
     }
 
+    // Strip furigana markers for Chinese text display (e.g., connection field)
+    // Removes {reading} markers but keeps the kanji
+    const stripFurigana = (text: string) => {
+        return text.replace(/\{[^{}]+\}/g, '')
+    }
+
     if (!detail) {
         return (
             <div className="min-h-screen py-8 px-4 flex items-center justify-center">
@@ -304,8 +310,8 @@ const GrammarDetail = () => {
                     <h3 className="text-sm sm:text-lg font-bold text-vermilion mb-1 sm:mb-2 flex items-center">
                         <BookOpen size={16} className="sm:w-5 sm:h-5 mr-1 sm:mr-2" /> 接續
                     </h3>
-                    <p className="text-indigo-900/90 font-mono bg-indigo-900/10 p-2 sm:p-3 rounded-md sm:rounded-lg inline-block text-xs sm:text-base">
-                        {renderFurigana(detail.connection)}
+                    <p className="text-indigo-900/90 font-mono bg-indigo-900/10 p-2 sm:p-3 rounded-md sm:rounded-lg inline-block text-xs sm:text-base whitespace-pre-wrap">
+                        {stripFurigana(detail.connection)}
                     </p>
                 </section>
 

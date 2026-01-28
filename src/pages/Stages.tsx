@@ -13,7 +13,7 @@ const Stages = () => {
   const { currentUser } = useAuth()
   const { profile, setProfile } = useUserStore()
   const hasAwardedExp = useRef(false)
-  const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1' | null>(null)
+  const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1' | null>(profile?.currentLevel || null)
   const [selectedStage, setSelectedStage] = useState<Stage | null>(null)
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState<Record<string, string>>({})

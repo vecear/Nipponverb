@@ -14,7 +14,7 @@ const Simulation = () => {
   const { currentUser } = useAuth()
   const { profile, setProfile } = useUserStore()
   const hasAwardedExp = useRef(false)
-  const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1' | null>(null)
+  const [selectedLevel, setSelectedLevel] = useState<'N5' | 'N4' | 'N3' | 'N2' | 'N1' | null>(profile?.currentLevel || null)
   const [exam, setExam] = useState<JLPTExam | null>(null)
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0)
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
