@@ -28,6 +28,12 @@ import shoninMaleImg from '../assets/characters/jobs/shonin_male.png'
 import shoninFemaleImg from '../assets/characters/jobs/shonin_female.png'
 import gakushaMaleImg from '../assets/characters/jobs/gakusha_male.png'
 import gakushaFemaleImg from '../assets/characters/jobs/gakusha_female.png'
+import onmyojiMaleImg from '../assets/characters/jobs/onmyoji_male.png'
+import mikoFemaleImg from '../assets/characters/jobs/miko_female.png'
+import ryorininMaleImg from '../assets/characters/jobs/ryorinin_male.png'
+import ryorininFemaleImg from '../assets/characters/jobs/ryorinin_female.png'
+import hokanMaleImg from '../assets/characters/jobs/hokan_male.png'
+import geigiFemaleImg from '../assets/characters/jobs/geigi_female.png'
 
 // ============================================
 // 品牌素材
@@ -114,18 +120,17 @@ export const JOB_CHARACTERS: Record<string, { male: string; female: string }> = 
     male: gakushaMaleImg,
     female: gakushaFemaleImg,
   },
-  // 以下職業圖片尚未加入 src/assets，暫時使用初心者圖片作為 fallback
   onmyoji: {
-    male: noviceMaleImg,
-    female: noviceFemaleImg,
+    male: onmyojiMaleImg,
+    female: mikoFemaleImg, // 女性版本使用巫女
   },
   ryorinin: {
-    male: noviceMaleImg,
-    female: noviceFemaleImg,
+    male: ryorininMaleImg,
+    female: ryorininFemaleImg,
   },
   hokan: {
-    male: noviceMaleImg,
-    female: noviceFemaleImg,
+    male: hokanMaleImg,
+    female: geigiFemaleImg, // 女性版本使用芸妓
   },
 }
 
