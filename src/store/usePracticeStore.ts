@@ -1,5 +1,10 @@
 import { create } from 'zustand'
 import { Question } from '../types'
+import {
+  loadUserPracticeData,
+  saveUserPracticeHistory,
+  saveUserQuestionStats,
+} from '../services/practiceService'
 
 interface AnswerRecord {
   questionId: string
@@ -28,6 +33,15 @@ export interface QuestionStats {
   }
 }
 
+// 級別統計資訊
+export interface LevelStats {
+  totalAttempted: number  // 總共做過幾題（不重複）
+  totalCorrect: number    // 答對幾題（不重複）
+  totalWrong: number      // 答錯幾題（最近一次答錯的）
+  accuracy: number        // 正確率
+  wrongQuestionIds: string[]  // 答錯的題目 ID 列表
+}
+
 interface PracticeStore {
   currentQuestion: Question | null
   questions: Question[]
@@ -37,7 +51,10 @@ interface PracticeStore {
   answerRecords: AnswerRecord[]
   practiceHistory: PracticeHistoryEntry[]
   questionStats: QuestionStats
+  currentUserId: string | null
+  isLoading: boolean
 
+  setCurrentUserId: (userId: string | null) => Promise<void>
   setQuestions: (questions: Question[]) => void
   nextQuestion: () => void
   checkAnswer: (answer: string) => boolean
@@ -49,43 +66,9 @@ interface PracticeStore {
   getQuestionStats: (questionId: string) => QuestionStats[string] | null
   getCoverage: (category: string, level: string, totalQuestions: number) => { attempted: number; total: number; percentage: number }
   getAttemptedQuestions: (category: string, level: string) => Set<string>
-}
-
-const HISTORY_KEY = 'nipponverb_practice_history'
-const STATS_KEY = 'nipponverb_question_stats'
-
-const loadHistoryFromStorage = (): PracticeHistoryEntry[] => {
-  try {
-    const stored = localStorage.getItem(HISTORY_KEY)
-    return stored ? JSON.parse(stored) : []
-  } catch {
-    return []
-  }
-}
-
-const saveHistoryToStorage = (history: PracticeHistoryEntry[]) => {
-  try {
-    localStorage.setItem(HISTORY_KEY, JSON.stringify(history))
-  } catch {
-    console.error('Failed to save practice history')
-  }
-}
-
-const loadStatsFromStorage = (): QuestionStats => {
-  try {
-    const stored = localStorage.getItem(STATS_KEY)
-    return stored ? JSON.parse(stored) : {}
-  } catch {
-    return {}
-  }
-}
-
-const saveStatsToStorage = (stats: QuestionStats) => {
-  try {
-    localStorage.setItem(STATS_KEY, JSON.stringify(stats))
-  } catch {
-    console.error('Failed to save question stats')
-  }
+  getLevelStats: (category: string, level: string) => LevelStats
+  getWrongQuestionIds: (category: string, level: string) => string[]
+  clearPracticeData: () => void
 }
 
 export const usePracticeStore = create<PracticeStore>((set, get) => ({
@@ -95,8 +78,64 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
   score: 0,
   totalAttempts: 0,
   answerRecords: [],
-  practiceHistory: loadHistoryFromStorage(),
-  questionStats: loadStatsFromStorage(),
+  practiceHistory: [],
+  questionStats: {},
+  currentUserId: null,
+  isLoading: false,
+
+  // 設定當前使用者 ID，並從 Firestore 載入該使用者的練習資料
+  setCurrentUserId: async (userId: string | null) => {
+    set({ currentUserId: userId, isLoading: true })
+
+    if (userId) {
+      try {
+        const data = await loadUserPracticeData(userId)
+        if (data) {
+          set({
+            practiceHistory: data.practiceHistory || [],
+            questionStats: data.questionStats || {},
+            isLoading: false,
+          })
+        } else {
+          // 新使用者，沒有練習資料
+          set({
+            practiceHistory: [],
+            questionStats: {},
+            isLoading: false,
+          })
+        }
+      } catch (error) {
+        console.error('Failed to load practice data:', error)
+        set({
+          practiceHistory: [],
+          questionStats: {},
+          isLoading: false,
+        })
+      }
+    } else {
+      // 登出時清除資料
+      set({
+        practiceHistory: [],
+        questionStats: {},
+        isLoading: false,
+      })
+    }
+  },
+
+  // 清除練習資料（登出時使用）
+  clearPracticeData: () => {
+    set({
+      currentUserId: null,
+      practiceHistory: [],
+      questionStats: {},
+      currentQuestion: null,
+      questions: [],
+      currentIndex: 0,
+      score: 0,
+      totalAttempts: 0,
+      answerRecords: [],
+    })
+  },
 
   setQuestions: (questions) =>
     set({
@@ -118,7 +157,7 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
     }),
 
   checkAnswer: (answer: string) => {
-    const { currentQuestion, questionStats } = get()
+    const { currentQuestion, questionStats, currentUserId } = get()
     if (!currentQuestion) return false
 
     const isCorrect = answer === currentQuestion.correct
@@ -133,7 +172,12 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
     if (isCorrect) updatedStats[qid].correct++
     updatedStats[qid].lastAttempt = new Date().toISOString()
 
-    saveStatsToStorage(updatedStats)
+    // 儲存到 Firestore（非同步，不阻塞）
+    if (currentUserId) {
+      saveUserQuestionStats(currentUserId, updatedStats).catch((error) => {
+        console.error('Failed to save question stats to cloud:', error)
+      })
+    }
 
     set((state) => ({
       score: isCorrect ? state.score + 1 : state.score,
@@ -163,7 +207,7 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
     }),
 
   savePracticeResult: (category: string, level: string) => {
-    const { score, answerRecords, questions } = get()
+    const { score, answerRecords, questions, currentUserId, practiceHistory } = get()
     if (answerRecords.length === 0) return
 
     const entry: PracticeHistoryEntry = {
@@ -178,15 +222,21 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
       answerRecords,
     }
 
-    set((state) => {
-      const newHistory = [entry, ...state.practiceHistory]
-      saveHistoryToStorage(newHistory)
-      return { practiceHistory: newHistory }
-    })
+    const newHistory = [entry, ...practiceHistory]
+
+    // 儲存到 Firestore（非同步，不阻塞）
+    if (currentUserId) {
+      saveUserPracticeHistory(currentUserId, newHistory).catch((error) => {
+        console.error('Failed to save practice history to cloud:', error)
+      })
+    }
+
+    set({ practiceHistory: newHistory })
   },
 
   loadPracticeHistory: () => {
-    set({ practiceHistory: loadHistoryFromStorage() })
+    // 這個方法現在主要由 setCurrentUserId 處理
+    // 保留此方法以維持 API 相容性
   },
 
   getHistoryByCategory: (category: string, level: string) => {
@@ -232,5 +282,82 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
       percentage,
     }
   },
-}))
 
+  // 取得答錯的題目 ID（最近一次作答答錯的）
+  getWrongQuestionIds: (category: string, level: string) => {
+    const { questionStats, practiceHistory } = get()
+    const wrongIds: string[] = []
+
+    // 從歷史記錄中找出該類別和級別的題目
+    const relevantHistory = practiceHistory.filter(
+      (h) => h.category === category && h.level === level
+    )
+
+    // 收集所有做過的題目 ID
+    const allQuestionIds = new Set<string>()
+    relevantHistory.forEach((entry) => {
+      entry.questions.forEach((q) => allQuestionIds.add(q.id))
+    })
+
+    // 檢查每個題目的統計，找出答錯比答對多的題目（或從未答對的）
+    // 邏輯與 getLevelStats 保持一致
+    allQuestionIds.forEach((qid) => {
+      const stats = questionStats[qid]
+      if (stats) {
+        // 與 getLevelStats 相同邏輯：correct > 0 且 correct >= wrong 才算答對
+        const isCorrect = stats.correct > 0 && stats.correct >= stats.attempts - stats.correct
+        if (!isCorrect) {
+          wrongIds.push(qid)
+        }
+      }
+    })
+
+    return wrongIds
+  },
+
+  // 取得級別的完整統計資訊
+  getLevelStats: (category: string, level: string) => {
+    const { questionStats, practiceHistory } = get()
+
+    // 從歷史記錄中找出該類別和級別的題目
+    const relevantHistory = practiceHistory.filter(
+      (h) => h.category === category && h.level === level
+    )
+
+    // 收集所有做過的題目 ID
+    const allQuestionIds = new Set<string>()
+    relevantHistory.forEach((entry) => {
+      entry.questions.forEach((q) => allQuestionIds.add(q.id))
+    })
+
+    let totalCorrect = 0
+    let totalWrong = 0
+    const wrongQuestionIds: string[] = []
+
+    // 統計每個題目
+    allQuestionIds.forEach((qid) => {
+      const stats = questionStats[qid]
+      if (stats) {
+        if (stats.correct > 0 && stats.correct >= stats.attempts - stats.correct) {
+          // 答對次數 >= 答錯次數，算答對
+          totalCorrect++
+        } else {
+          // 答錯次數 > 答對次數，算答錯
+          totalWrong++
+          wrongQuestionIds.push(qid)
+        }
+      }
+    })
+
+    const totalAttempted = allQuestionIds.size
+    const accuracy = totalAttempted > 0 ? Math.round((totalCorrect / totalAttempted) * 100) : 0
+
+    return {
+      totalAttempted,
+      totalCorrect,
+      totalWrong,
+      accuracy,
+      wrongQuestionIds,
+    }
+  },
+}))

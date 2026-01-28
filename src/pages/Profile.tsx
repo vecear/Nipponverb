@@ -9,7 +9,7 @@ import { usePracticeStore } from '../store/usePracticeStore'
 import { useGrammarCompletionStore } from '../store/useGrammarCompletionStore'
 import ExpBar from '../components/ExpBar'
 import ImageLightbox from '../components/ImageLightbox'
-import { getJobById, getCharacterImagePath, NOVICE_TITLE } from '../data/jobs'
+import { getJobById, getCharacterImagePath } from '../data/jobs'
 import { EXP_CONSTANTS, DEFAULT_PROGRESSION } from '../types/progression'
 import { UI_ELEMENTS } from '../config/assets'
 

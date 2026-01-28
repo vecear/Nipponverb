@@ -78,7 +78,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
                 <div className="space-y-2 text-xs sm:text-sm text-left">
                   {/* Translation / Meaning */}
                   {question.meaning && (
-                    <p className="text-white/80 pb-1.5 border-b border-white/10">
+                    <p className="text-gray-800 pb-1.5 border-b border-gray-300">
                       {question.meaning.split(/(\*.*?\*)/).map((part, index) =>
                         part.startsWith('*') && part.endsWith('*') ? (
                           <span key={index} className="italic text-vermilion/90 font-medium">
@@ -92,16 +92,16 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
                   )}
 
                   {/* Main Rule Explanation */}
-                  <div className="bg-black/20 p-2 rounded-md border-l-3 border-wave-light">
-                    <p className="font-bold text-wave-light mb-0.5 text-[11px] sm:text-xs">📖 文法解析</p>
-                    <p className="text-white/90 whitespace-pre-line text-[10px] sm:text-xs">
+                  <div className="bg-gray-200/80 p-2 rounded-md border-l-3 border-wave">
+                    <p className="font-bold text-wave mb-0.5 text-[11px] sm:text-xs">📖 文法解析</p>
+                    <p className="text-gray-800 whitespace-pre-line text-[10px] sm:text-xs">
                       <FuriganaText text={question.detailedExplanation.correctRule} />
                     </p>
                   </div>
 
                   {/* All Options Explanations */}
-                  <div className="bg-black/20 p-2 rounded-md space-y-1.5">
-                    <p className="font-bold text-white/80 mb-1 text-[11px] sm:text-xs">📝 各選項解析</p>
+                  <div className="bg-gray-200/80 p-2 rounded-md space-y-1.5">
+                    <p className="font-bold text-gray-800 mb-1 text-[11px] sm:text-xs">📝 各選項解析</p>
                     {question.detailedExplanation.distractors.map((distractor, idx) => {
                       const isCorrectOption = distractor.text === question.correct
                       const isSelectedOption = distractor.text === selectedAnswer
@@ -114,24 +114,24 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
                               ? 'bg-green-500/20 border border-green-500/50'
                               : isSelectedOption
                               ? 'bg-red-500/20 border border-red-500/50'
-                              : 'bg-white/5 border border-white/10'
+                              : 'bg-gray-100 border border-gray-300'
                           }`}
                         >
                           <div className="flex items-start gap-1.5">
                             <span className={`font-bold shrink-0 text-[10px] ${
-                              isCorrectOption ? 'text-green-400' : isSelectedOption ? 'text-red-400' : 'text-white/60'
+                              isCorrectOption ? 'text-green-600' : isSelectedOption ? 'text-red-600' : 'text-gray-600'
                             }`}>
                               {isCorrectOption ? '✓' : isSelectedOption ? '✗' : '•'}
                             </span>
                             <div className="flex-1 min-w-0">
                               <span className={`font-medium text-[10px] sm:text-[11px] ${
-                                isCorrectOption ? 'text-green-400' : isSelectedOption ? 'text-red-400' : 'text-white/80'
+                                isCorrectOption ? 'text-green-700' : isSelectedOption ? 'text-red-700' : 'text-gray-800'
                               }`}>
                                 <FuriganaText text={distractor.text} />
                               </span>
-                              {isCorrectOption && <span className="ml-1 text-[9px] text-green-400/80">(正解)</span>}
-                              {isSelectedOption && !isCorrectOption && <span className="ml-1 text-[9px] text-red-400/80">(你的選擇)</span>}
-                              <p className="text-white/70 text-[9px] sm:text-[10px] mt-0.5">
+                              {isCorrectOption && <span className="ml-1 text-[9px] text-green-600">(正解)</span>}
+                              {isSelectedOption && !isCorrectOption && <span className="ml-1 text-[9px] text-red-600">(你的選擇)</span>}
+                              <p className="text-gray-700 text-[9px] sm:text-[10px] mt-0.5">
                                 <FuriganaText text={distractor.reason} />
                               </p>
                             </div>
@@ -144,7 +144,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
               ) : (
                 /* Fallback for legacy questions */
                 (showExplanation || !isCorrect) && question.explanation && (
-                  <p className="text-[10px] sm:text-xs text-white/80">
+                  <p className="text-[10px] sm:text-xs text-gray-800">
                     <FuriganaText text={question.explanation} />
                   </p>
                 )

@@ -49,8 +49,8 @@ const Practice = () => {
     savePracticeResult,
     getHistoryByCategory,
     getAttemptedQuestions,
-    getCoverage,
-    questionStats,
+    getLevelStats,
+    getWrongQuestionIds,
   } = usePracticeStore()
 
   const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set())
@@ -150,28 +150,37 @@ const Practice = () => {
       else if (level === 'N2') bank = vocabN2
       else if (level === 'N1') bank = vocabN1
 
-      // Smart Question Selection: 優先選擇未做過或做過次數少的題目
+      // Smart Question Selection: 答錯題目佔一半 + 未做過的題目優先
       const attemptedIds = getAttemptedQuestions('vocabulary', level)
+      const wrongIds = getWrongQuestionIds('vocabulary', level)
+      const wrongIdSet = new Set(wrongIds)
 
-      // 分類題目：未做過的 vs 做過的
+      // 分類題目
       const unattempted = bank.filter(q => !attemptedIds.has(q.id))
-      const attempted = bank.filter(q => attemptedIds.has(q.id))
+      const wrongQuestions = bank.filter(q => wrongIdSet.has(q.id))
+      const attemptedCorrect = bank.filter(q => attemptedIds.has(q.id) && !wrongIdSet.has(q.id))
 
-      // 對做過的題目按嘗試次數排序（次數少的優先）
-      const sortedAttempted = attempted.sort((a, b) => {
-        const aStats = questionStats[a.id]
-        const bStats = questionStats[b.id]
-        const aAttempts = aStats?.attempts || 0
-        const bAttempts = bStats?.attempts || 0
-        return aAttempts - bAttempts
-      })
+      // 計算答錯題目應佔的數量（總題數的一半）
+      const halfCount = Math.floor(count / 2)
+      const shuffledWrong = [...wrongQuestions].sort(() => 0.5 - Math.random())
+      // 若答錯題目不足一半，則全部納入
+      const selectedWrong = shuffledWrong.slice(0, Math.min(halfCount, shuffledWrong.length))
 
-      // 組合選題池：優先未做過的，然後是做過次數少的
-      const prioritized = [...unattempted, ...sortedAttempted]
+      // 計算剩餘需要的題目數量
+      let remaining = count - selectedWrong.length
 
-      // 洗牌並選取
-      const shuffled = prioritized.sort(() => 0.5 - Math.random())
-      const selected = shuffled.slice(0, count)
+      // 優先從未做過的題目中選取
+      const shuffledUnattempted = [...unattempted].sort(() => 0.5 - Math.random())
+      const selectedUnattempted = shuffledUnattempted.slice(0, Math.min(remaining, shuffledUnattempted.length))
+      remaining -= selectedUnattempted.length
+
+      // 如果還需要更多題目，從做過且答對的題目中補足
+      const shuffledAttemptedCorrect = [...attemptedCorrect].sort(() => 0.5 - Math.random())
+      const selectedAttemptedCorrect = shuffledAttemptedCorrect.slice(0, remaining)
+
+      // 組合所有選中的題目並洗牌
+      const selected = [...selectedWrong, ...selectedUnattempted, ...selectedAttemptedCorrect]
+        .sort(() => 0.5 - Math.random())
 
       return selected.map(q => ({
         id: q.id,
@@ -203,28 +212,37 @@ const Practice = () => {
       else if (level === 'N2') bank = n2Questions
       else if (level === 'N1') bank = n1Questions
 
-      // Smart Question Selection: 優先選擇未做過或做過次數少的題目
+      // Smart Question Selection: 答錯題目佔一半 + 未做過的題目優先
       const attemptedIds = getAttemptedQuestions('verbs', level)
+      const wrongIds = getWrongQuestionIds('verbs', level)
+      const wrongIdSet = new Set(wrongIds)
 
-      // 分類題目：未做過的 vs 做過的
+      // 分類題目
       const unattempted = bank.filter(q => !attemptedIds.has(q.id))
-      const attempted = bank.filter(q => attemptedIds.has(q.id))
+      const wrongQuestions = bank.filter(q => wrongIdSet.has(q.id))
+      const attemptedCorrect = bank.filter(q => attemptedIds.has(q.id) && !wrongIdSet.has(q.id))
 
-      // 對做過的題目按嘗試次數排序（次數少的優先）
-      const sortedAttempted = attempted.sort((a, b) => {
-        const aStats = questionStats[a.id]
-        const bStats = questionStats[b.id]
-        const aAttempts = aStats?.attempts || 0
-        const bAttempts = bStats?.attempts || 0
-        return aAttempts - bAttempts
-      })
+      // 計算答錯題目應佔的數量（總題數的一半）
+      const halfCount = Math.floor(count / 2)
+      const shuffledWrong = [...wrongQuestions].sort(() => 0.5 - Math.random())
+      // 若答錯題目不足一半，則全部納入
+      const selectedWrong = shuffledWrong.slice(0, Math.min(halfCount, shuffledWrong.length))
 
-      // 組合選題池：優先未做過的，然後是做過次數少的
-      const prioritized = [...unattempted, ...sortedAttempted]
+      // 計算剩餘需要的題目數量
+      let remaining = count - selectedWrong.length
 
-      // 洗牌並選取
-      const shuffled = prioritized.sort(() => 0.5 - Math.random())
-      const selected = shuffled.slice(0, count)
+      // 優先從未做過的題目中選取
+      const shuffledUnattempted = [...unattempted].sort(() => 0.5 - Math.random())
+      const selectedUnattempted = shuffledUnattempted.slice(0, Math.min(remaining, shuffledUnattempted.length))
+      remaining -= selectedUnattempted.length
+
+      // 如果還需要更多題目，從做過且答對的題目中補足
+      const shuffledAttemptedCorrect = [...attemptedCorrect].sort(() => 0.5 - Math.random())
+      const selectedAttemptedCorrect = shuffledAttemptedCorrect.slice(0, remaining)
+
+      // 組合所有選中的題目並洗牌
+      const selected = [...selectedWrong, ...selectedUnattempted, ...selectedAttemptedCorrect]
+        .sort(() => 0.5 - Math.random())
 
       return selected.map(q => ({
         id: q.id,
@@ -293,6 +311,64 @@ const Practice = () => {
     setShowCategorySelect(false)
     setShowResults(false)
     setPracticeStartTime(Date.now()) // 記錄開始時間
+  }
+
+  // 複習錯題功能
+  const startReviewWrongQuestions = () => {
+    const cat = category as PracticeCategory
+    if (!cat) return
+
+    const wrongIds = getWrongQuestionIds(cat, selectedLevel)
+    if (wrongIds.length === 0) return
+
+    const wrongIdSet = new Set(wrongIds)
+
+    // 根據類別取得對應的題庫
+    let bank: any[] = []
+    if (cat === 'vocabulary') {
+      if (selectedLevel === 'N5') bank = vocabN5
+      else if (selectedLevel === 'N4') bank = vocabN4
+      else if (selectedLevel === 'N3') bank = vocabN3
+      else if (selectedLevel === 'N2') bank = vocabN2
+      else if (selectedLevel === 'N1') bank = vocabN1
+    } else if (cat === 'verbs') {
+      if (selectedLevel === 'N5') bank = n5Questions
+      else if (selectedLevel === 'N4') bank = n4Questions
+      else if (selectedLevel === 'N3') bank = n3Questions
+      else if (selectedLevel === 'N2') bank = n2Questions
+      else if (selectedLevel === 'N1') bank = n1Questions
+    }
+
+    // 過濾出錯題
+    const wrongQuestions = bank.filter(q => wrongIdSet.has(q.id))
+
+    // 轉換為 Question 格式
+    const formattedQuestions = wrongQuestions.map(q => ({
+      id: q.id,
+      type: 'multiple-choice',
+      question: q.prob,
+      meaning: q.prob_zh,
+      options: q.options.map((o: any) => o.text),
+      correctAnswer: q.options[q.correctIndex].text,
+      explanation: q.options.map((o: any) => o.reason ? `${o.text}: ${o.reason}` : '').filter(Boolean).join('\n'),
+      detailedExplanation: {
+        correctRule: q.correctRule || '正解です。',
+        distractors: q.options.map((o: any) => ({
+          text: o.text,
+          reason: o.reason || '正解'
+        }))
+      },
+      stem: q.prob,
+      correct: q.options[q.correctIndex].text,
+      level: selectedLevel
+    } as Question))
+
+    // 洗牌並設定題目
+    const shuffled = formattedQuestions.sort(() => 0.5 - Math.random())
+    setQuestions(shuffled)
+    setShowCategorySelect(false)
+    setShowResults(false)
+    setPracticeStartTime(Date.now())
   }
 
   const handleAnswer = (answer: string) => {
@@ -644,7 +720,7 @@ const Practice = () => {
     return (
       <div className="max-w-md sm:max-w-2xl mx-auto space-y-4 px-2 sm:px-0">
         <div className="card px-3 py-3 sm:px-6 sm:py-6">
-          <h1 className="text-lg sm:text-2xl font-zen font-bold mb-3 sm:mb-4 text-gradient capitalize">
+          <h1 className="text-xl sm:text-3xl font-zen font-bold mb-4 sm:mb-5 text-gradient capitalize">
             {t(`practice.categories.${category}.title`)}
           </h1>
 
@@ -670,9 +746,9 @@ const Practice = () => {
           )}
 
           {category !== 'gojuon' && (
-            <div className="mb-3">
-              <label className="block text-xs sm:text-sm font-semibold mb-1.5">{t('practice.selectLevel')}:</label>
-              <div className="flex flex-wrap gap-1 sm:gap-1.5">
+            <div className="mb-5">
+              <label className="block text-base sm:text-lg font-semibold mb-3">{t('practice.selectLevel')}:</label>
+              <div className="grid grid-cols-5 gap-2 sm:gap-3">
                 {(['N5', 'N4', 'N3', 'N2', 'N1'] as const).map((level) => {
                   // Calculate question counts for Verbs category
                   const getCount = () => {
@@ -691,33 +767,34 @@ const Practice = () => {
                     if (level === 'N1') return n1Questions.length;
                     return null;
                   };
-                  const questionCount = getCount();
+                  const totalQuestionCount = getCount();
 
-                  // 計算涵蓋率
-                  const coverage = questionCount !== null
-                    ? getCoverage(category || '', level, questionCount)
-                    : null;
+                  // 取得級別統計
+                  const levelStats = category ? getLevelStats(category, level) : null;
 
                   return (
                     <button
                       key={level}
                       onClick={() => setSelectedLevel(level)}
-                      className={`py-1 px-2 sm:py-1.5 sm:px-2.5 rounded-md transition-all flex flex-col items-center justify-center ${selectedLevel === level
+                      className={`py-3 px-2 sm:py-4 sm:px-3 rounded-lg transition-all flex flex-col items-center justify-center ${selectedLevel === level
                         ? 'bg-wave-deep text-foam border-2 border-vermilion shadow-ukiyo'
-                        : 'card-interactive !py-1 !px-2 sm:!py-1.5 sm:!px-2.5'
+                        : 'card-interactive !py-3 !px-2 sm:!py-4 sm:!px-3'
                         }`}
                     >
-                      <div className={`text-xs sm:text-sm font-bold ${selectedLevel === level ? 'text-foam' : ''}`}>{level}</div>
-                      {questionCount !== null && (
+                      <div className={`text-lg sm:text-xl font-bold ${selectedLevel === level ? 'text-foam' : ''}`}>{level}</div>
+                      {totalQuestionCount !== null && (
                         <>
-                          <div className={`text-[8px] sm:text-[9px] ${selectedLevel === level ? 'text-foam/90' : 'text-sumi-faded'
-                            }`}>
-                            {questionCount} 題
+                          <div className={`text-sm sm:text-base ${selectedLevel === level ? 'text-foam/90' : 'text-sumi-faded'}`}>
+                            {totalQuestionCount} 題
                           </div>
-                          {coverage && (
-                            <div className={`text-[7px] sm:text-[8px] ${selectedLevel === level ? 'text-foam/80' : 'text-sumi-faded/70'
-                              }`}>
-                              已做 {coverage.attempted}/{coverage.total}
+                          {levelStats && levelStats.totalAttempted > 0 && (
+                            <div className={`text-xs sm:text-sm mt-1 space-y-0.5 text-center ${selectedLevel === level ? 'text-foam/80' : 'text-sumi-faded/80'}`}>
+                              <div className="flex items-center justify-center gap-1">
+                                <span className={selectedLevel === level ? 'text-green-300' : 'text-green-500'}>✓{levelStats.totalCorrect}</span>
+                                <span className={selectedLevel === level ? 'text-foam/80' : ''}>/</span>
+                                <span className={selectedLevel === level ? 'text-red-300' : 'text-red-500'}>✗{levelStats.totalWrong}</span>
+                              </div>
+                              <div className={selectedLevel === level ? 'text-foam/90' : ''}>正確率 {levelStats.accuracy}%</div>
                             </div>
                           )}
                         </>
@@ -729,17 +806,17 @@ const Practice = () => {
             </div>
           )}
 
-          <div className="space-y-2">
-            <div className="mb-1.5">
-              <label className="block text-xs sm:text-sm font-semibold mb-1.5">題目數量:</label>
-              <div className="flex flex-wrap gap-1 sm:gap-1.5">
+          <div className="space-y-3">
+            <div className="mb-3">
+              <label className="block text-base sm:text-lg font-semibold mb-3">題目數量:</label>
+              <div className="grid grid-cols-5 gap-2 sm:gap-3">
                 {[10, 20, 30, 40, 50].map(count => (
                   <button
                     key={count}
                     onClick={() => setQuestionCount(count)}
-                    className={`px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-md transition-all font-medium text-xs sm:text-sm ${questionCount === count
+                    className={`py-2 sm:py-2.5 rounded-lg transition-all font-medium text-base sm:text-lg ${questionCount === count
                       ? 'bg-wave-deep text-foam border-2 border-vermilion shadow-ukiyo'
-                      : 'card-interactive !px-2 !py-1 sm:!px-2.5 sm:!py-1.5 text-sumi-faded'
+                      : 'card-interactive !py-2 sm:!py-2.5 text-sumi-faded'
                       }`}
                   >
                     {count}題
@@ -748,17 +825,34 @@ const Practice = () => {
               </div>
             </div>
 
-            <div className="flex gap-1.5 sm:gap-2 pt-1">
-              <button onClick={startPractice} className="btn-primary flex-1 py-1.5 sm:py-2 text-xs sm:text-sm">
+            <div className="flex gap-2 sm:gap-3 pt-3">
+              <button onClick={startPractice} className="btn-primary flex-1 py-3 sm:py-4 text-base sm:text-lg font-bold">
                 {t('practice.startPractice')}
               </button>
-              <button
-                onClick={() => navigate('/')}
-                className="btn-secondary flex-1 py-1.5 sm:py-2 text-xs sm:text-sm"
-              >
-                {t('practice.backToDashboard')}
-              </button>
+              {(() => {
+                const wrongIds = category ? getWrongQuestionIds(category, selectedLevel) : [];
+                const hasWrongQuestions = wrongIds.length > 0;
+                return (
+                  <button
+                    onClick={() => hasWrongQuestions && startReviewWrongQuestions()}
+                    disabled={!hasWrongQuestions}
+                    className={`flex-1 py-3 sm:py-4 text-base sm:text-lg font-bold rounded-lg transition-all ${
+                      hasWrongQuestions
+                        ? 'bg-vermilion text-white hover:bg-vermilion/90 shadow-md'
+                        : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                    }`}
+                  >
+                    複習錯題 {hasWrongQuestions ? `(${wrongIds.length})` : ''}
+                  </button>
+                );
+              })()}
             </div>
+            <button
+              onClick={() => navigate('/')}
+              className="btn-secondary w-full py-2.5 sm:py-3 text-base sm:text-lg"
+            >
+              {t('practice.backToDashboard')}
+            </button>
           </div>
         </div>
 

@@ -9,9 +9,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '会{あ}います', reason: '正確！五段動詞ます形（う → い + ます）。' },
-            { text: '会{あ}うます', reason: '錯誤：五段動詞不能直接接ます。' },
+            { text: '会{あ}っています', reason: '錯誤：正在見{み}（進行式）。題目是有「明{あし}日{た}（明天）」，用ます形表示未來較自然。' },
             { text: '会{あ}ります', reason: '錯誤：u結尾五段動詞變成i，不是ri。あらいます? 不對, あいます。' },
-            { text: '会{あ}っています', reason: '錯誤：正在見{み}（進行式）。題目是有「明{あし}日{た}（明天）」，用ます形表示未來較自然。' }
+            { text: '会{あ}うます', reason: '錯誤：五段動詞不能直接接ます。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -31,12 +31,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「什麼時{じ}候 *見{み}面* 呢？」\nB：「下週一如何{なに}？」',
         level: 'N5',
         options: [
+            { text: '会{あ}いたい', reason: '錯誤：想見{み}面（たい）。雖然通，但ましょうか更像在主動安排。' },
             { text: '会{あ}いましょう', reason: '正確！提議/邀約（ます形去ます + ましょう）。' },
             { text: '会{あ}うましょう', reason: '錯誤：接續錯誤。' },
-            { text: '会{あ}ってください', reason: '錯誤：請見{み}面（請求）。語境是商量時{じ}間{かん}，ましょうか（要不要...呢）較合適。' },
-            { text: '会{あ}いたい', reason: '錯誤：想見{み}面（たい）。雖然通，但ましょうか更像在主動安排。' }
+            { text: '会{あ}ってください', reason: '錯誤：請見{み}面（請求）。語境是商量時{じ}間{かん}，ましょうか（要不要...呢）較合適。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】意向/提議（對話）
 【解析】「～ましょうか」（要不要...呢/吧）。動詞連用形+ましょう。
@@ -56,12 +56,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '因為很熱{ねつ}，請 *開* 窗戶。',
         level: 'N5',
         options: [
-            { text: '開{あ}けて', reason: '正確！一段動詞て形（去る + て）。' },
-            { text: '開{あ}いて', reason: '錯誤：あいく？不對。あく（開 - 自動詞）的て形是あいて。但句子有「窓を」（賓語），需要他動詞あける。あける → あけて。' },
             { text: '開{あ}くて', reason: '錯誤：形容詞接續？' },
-            { text: '開{あ}けって', reason: '錯誤：一段動詞不需促音。' }
+            { text: '開{あ}けって', reason: '錯誤：一段動詞不需促音。' },
+            { text: '開{あ}けて', reason: '正確！一段動詞て形（去る + て）。' },
+            { text: '開{あ}いて', reason: '錯誤：あいく？不對。あく（開 - 自動詞）的て形是あいて。但句子有「窓を」（賓語），需要他動詞あける。あける → あけて。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】一段動詞て形與自他
 【解析】「開{あ}ける」是一段他動詞（開窗）。て形為「開{あ}けて」。
@@ -79,12 +79,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「把這個箱子 *打開* 也可以嗎？」\nB：「可以喔。」',
         level: 'N5',
         options: [
-            { text: '開{あ}けて', reason: '正確！許可（～てもいい）。' },
+            { text: '開{あ}け', reason: '錯誤：連用形。' },
             { text: '開{あ}く', reason: '錯誤：辭書形。' },
             { text: '開{あ}けた', reason: '錯誤：過去式。' },
-            { text: '開{あ}け', reason: '錯誤：連用形。' }
+            { text: '開{あ}けて', reason: '正確！許可（～てもいい）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】請求許可（對話）
 【解析】「～てもいいですか」（...也可以嗎）。接續為て形。「開{あ}けて」。
@@ -104,8 +104,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: 'あげました', reason: '正確！一段動詞（給）。' },
-            { text: 'あげりました', reason: '錯誤：誤作五段。' },
             { text: 'もらいました', reason: '錯誤：收到（もらう）。主語是我（省略），給媽媽，用あげる。' },
+            { text: 'あげりました', reason: '錯誤：誤作五段。' },
             { text: 'くれました', reason: '錯誤：別人{ひと}給我（くれる）。' }
         ],
         correctIndex: 0,
@@ -127,12 +127,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「那本{ほん}書要怎麼辦？」\nB：「打算 *送* (給) 朋友。」',
         level: 'N5',
         options: [
-            { text: 'あげる', reason: '正確！辭書形+つもり（打算）。' },
-            { text: 'もらう', reason: '錯誤：跟朋友拿（もらう）。從語境「怎麼處理（手上的書）」看，送人{ひと}較合理。且もらう通常助詞用に/から。' },
             { text: 'くれる', reason: '錯誤：朋友給我。' },
-            { text: 'やる', reason: '錯誤：給（對晚輩/動物）。對朋友通常用あげる。' }
+            { text: 'あげる', reason: '正確！辭書形+つもり（打算）。' },
+            { text: 'やる', reason: '錯誤：給（對晚輩/動物）。對朋友通常用あげる。' },
+            { text: 'もらう', reason: '錯誤：跟朋友拿（もらう）。從語境「怎麼處理（手上的書）」看，送人{ひと}較合理。且もらう通常助詞用に/から。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】打算/意志（對話）
 【解析】「つもり」（打算）接辭書形。「あげるつもり」。
@@ -151,12 +151,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '週末在公{こう}園{えん} *玩*。',
         level: 'N5',
         options: [
-            { text: '遊{あそ}びます', reason: '正確！五段動詞（ぶ → び + ます）。' },
-            { text: '遊{あそ}ぶます', reason: '錯誤：接續錯誤。' },
             { text: '遊{あそ}みます', reason: '錯誤：活用錯誤（bu不是mu）。' },
+            { text: '遊{あそ}ぶます', reason: '錯誤：接續錯誤。' },
+            { text: '遊{あそ}びます', reason: '正確！五段動詞（ぶ → び + ます）。' },
             { text: '遊{あそ}んで', reason: '錯誤：て形。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「遊{あそ}ぶ」是五段動詞。ます形為「遊{あそ}びます」。
@@ -174,12 +174,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「星期日有空{そら}嗎？」\nB：「嗯，要一起 *玩* 嗎？」',
         level: 'N5',
         options: [
-            { text: '遊{あそ}ばない', reason: '正確！否定疑問表邀約（あそばない? = 要不要玩/出去?）。' },
-            { text: '遊{あそ}ぶない', reason: '錯誤：五段否定是あ段+ない（あそばない）。' },
             { text: '遊{あそ}びない', reason: '錯誤：連用形+ない是錯誤的。' },
-            { text: '遊{あそ}んで', reason: '錯誤：て形。' }
+            { text: '遊{あそ}ぶない', reason: '錯誤：五段否定是あ段+ない（あそばない）。' },
+            { text: '遊{あそ}んで', reason: '錯誤：て形。' },
+            { text: '遊{あそ}ばない', reason: '正確！否定疑問表邀約（あそばない? = 要不要玩/出去?）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】邀約與否定形（對話）
 【解析】「遊{あそ}ぶ」否定形為「遊ばない」。口語「～ない？」升調表示邀約。
@@ -199,8 +199,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '浴{あ}びます', reason: '正確！上一段動詞（あびる）。去る+ます。' },
-            { text: '浴{あ}びります', reason: '錯誤：誤作五段。' },
             { text: '浴{あ}べます', reason: '錯誤：誤用e段。' },
+            { text: '浴{あ}びります', reason: '錯誤：誤作五段。' },
             { text: '浴{あ}ぶます', reason: '錯誤。' }
         ],
         correctIndex: 0,
@@ -221,12 +221,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「泡澡了嗎？」\nB：「沒，*洗* 完淋浴後就睡。」',
         level: 'N5',
         options: [
+            { text: '浴{あ}び', reason: '錯誤：連用形。' },
             { text: '浴{あ}びて', reason: '正確！て形（あびて）。' },
-            { text: '浴{あ}ぶって', reason: '錯誤：誤作五段促音便。' },
             { text: '浴{あ}んで', reason: '錯誤：誤作五段撥音便。' },
-            { text: '浴{あ}び', reason: '錯誤：連用形。' }
+            { text: '浴{あ}ぶって', reason: '錯誤：誤作五段促音便。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】先後順序（對話）
 【解析】「～てから」（做完...之後）。「浴びてから」。
@@ -245,12 +245,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '吃飯前 *洗* 手。',
         level: 'N5',
         options: [
-            { text: '洗{あら}います', reason: '正確！五段動詞（う → い + ます）。' },
             { text: '洗{あら}うます', reason: '錯誤。' },
             { text: '洗{あら}えます', reason: '錯誤：可能形。' },
+            { text: '洗{あら}います', reason: '正確！五段動詞（う → い + ます）。' },
             { text: '洗{あら}っています', reason: '錯誤：正在洗（狀態）。吃飯「前」通常指一般習慣或動作，ます形較佳。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「洗{あら}う」是五段動詞。ます形為「洗{あら}います」。
@@ -268,12 +268,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「這衣服髒了呢。」\nB：「那，我會先 *洗* 好{す}。」',
         level: 'N5',
         options: [
-            { text: '洗{あら}って', reason: '正確！て形+おきます（事先做/置之不理）。' },
             { text: '洗{あら}いて', reason: '錯誤：五段u結尾，て形是促音便「って」。あらう → あらうって → あらって。等等。う動詞 → って。かう → かって。あらう → あらって。' },
+            { text: '洗{あら}った', reason: '錯誤：過去式（あらった おきます？不對。あらって おきます）。' },
             { text: '洗{あら}うて', reason: '錯誤：古語/方言。' },
-            { text: '洗{あら}った', reason: '錯誤：過去式（あらった おきます？不對。あらって おきます）。' }
+            { text: '洗{あら}って', reason: '正確！て形+おきます（事先做/置之不理）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】準{じゅん}備{び}行動（對話）
 【解析】「～ておく」（事先做）。「洗っておく」。
@@ -293,9 +293,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: 'あります', reason: '正確！無生命存在（あります）。' },
-            { text: 'います', reason: '錯誤：有生命存在（います）。書是無生命。' },
+            { text: 'ありります', reason: '錯誤：變位錯誤。' },
             { text: 'あっています', reason: '錯誤：あう（見{み}面）のて形？或はあるのて形（あって）+ います？あるは通常進行式「あって います」を存在表現には使わない。「あります」は狀態。' },
-            { text: 'ありります', reason: '錯誤：變位錯誤。' }
+            { text: 'います', reason: '錯誤：有生命存在（います）。書是無生命。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -315,12 +315,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「*有* 錢嗎？」\nB：「不，完全沒有。」',
         level: 'N5',
         options: [
+            { text: 'いる', reason: '錯誤：います? 錢 是 無生命.' },
             { text: 'ある', reason: '正確！常體疑問（升調）。' },
             { text: 'あらない', reason: '錯誤：ある的否定是「ない」，不是「あらない」。' },
-            { text: 'いる', reason: '錯誤：います? 錢 是 無生命.' },
             { text: 'あった', reason: '錯誤：有了嗎（過去）。A問現在狀態。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】存在動詞否定與常體（對話）
 【解析】「ある」的否定是特殊變化「ない」。
@@ -339,12 +339,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*走* 路去車{くるま}站。',
         level: 'N5',
         options: [
-            { text: '歩{ある}きます', reason: '正確！五段動詞（く → き + ます）。' },
-            { text: '歩{ある}くます', reason: '錯誤。' },
             { text: '歩{ある}いて', reason: '錯誤：て形。' },
-            { text: '走{はし}ります', reason: '錯誤：跑（はしります）。' }
+            { text: '走{はし}ります', reason: '錯誤：跑（はしります）。' },
+            { text: '歩{ある}きます', reason: '正確！五段動詞（く → き + ます）。' },
+            { text: '歩{ある}くます', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「歩{ある}く」是五段動詞。ます形為「歩{ある}きます」。
@@ -362,12 +362,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「搭計程車{くるま}去嗎？」\nB：「很近，*走* 著去吧。」',
         level: 'N5',
         options: [
-            { text: '歩{ある}いて', reason: '正確！手段/狀態（て形）。' },
-            { text: '歩{ある}く', reason: '錯誤：連用形/中{なか}頓需用て形修飾いこう。' },
             { text: '歩{ある}いた', reason: '錯誤：過去。' },
-            { text: '歩{ある}き', reason: '錯誤：名詞/連用形，接いこう較生硬，口語常用あるいて いく。' }
+            { text: '歩{ある}く', reason: '錯誤：連用形/中{なか}頓需用て形修飾いこう。' },
+            { text: '歩{ある}き', reason: '錯誤：名詞/連用形，接いこう較生硬，口語常用あるいて いく。' },
+            { text: '歩{ある}いて', reason: '正確！手段/狀態（て形）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】動作狀態（對話）
 【解析】走路去「歩{ある}いて行{い}く」。
@@ -409,12 +409,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「田{た}中{なか}先{せん}生{せい} *說* 了什麼？」\nB：「*說* 了謝謝。」',
         level: 'N5',
         options: [
+            { text: '話{はな}して', reason: '錯誤：はなす通常不接「～と」。' },
             { text: '言{い}って', reason: '正確！引用內容「～と言っています」（正在說/說著）。' },
             { text: '言{い}いて', reason: '錯誤。' },
-            { text: '話{はな}して', reason: '錯誤：はなす通常不接「～と」。' },
             { text: '聞{き}いて', reason: '錯誤：聽。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】引用與狀態（對話）
 【解析】「～と言っていました」（說了...）。
@@ -433,12 +433,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*去* 學校。',
         level: 'N5',
         options: [
-            { text: '行{い}きます', reason: '正確！五段動詞。' },
-            { text: '来{き}ます', reason: '錯誤：來（きます）。' },
             { text: '帰{かえ}ります', reason: '錯誤：回家{いえ}。' },
-            { text: '行{い}くます', reason: '錯誤。' }
+            { text: '行{い}くます', reason: '錯誤。' },
+            { text: '行{い}きます', reason: '正確！五段動詞。' },
+            { text: '来{き}ます', reason: '錯誤：來（きます）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】移動動詞活用
 【解析】「行{い}く」是五段動詞。ます形「行{い}きます」。
@@ -456,12 +456,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「上週末，*去* 哪裡了嗎？」\nB：「不，哪裡也沒 *去*。」',
         level: 'N5',
         options: [
-            { text: '行{い}きました／行{い}きませんでした', reason: '正確！過去式。' },
-            { text: '行{い}きます／行{い}きません', reason: '錯誤：現在/未來式。' },
+            { text: '帰{かえ}りました／帰{かえ}りませんでした', reason: '錯誤：回。' },
             { text: '来{き}ました／来{き}ませんでした', reason: '錯誤：來。' },
-            { text: '帰{かえ}りました／帰{かえ}りませんでした', reason: '錯誤：回。' }
+            { text: '行{い}きます／行{い}きません', reason: '錯誤：現在/未來式。' },
+            { text: '行{い}きました／行{い}きませんでした', reason: '正確！過去式。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】過去式與否定（對話）
 【解析】詢問過去的事用「行{い}きましたか」。否定回答「行{い}きませんでした」。
@@ -482,8 +482,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: 'います', reason: '正確！有生命存在（います）。' },
             { text: 'あります', reason: '錯誤：無生命存在（あります）。' },
-            { text: 'いります', reason: '錯誤：要（いります - 需要）。' },
-            { text: 'いきます', reason: '錯誤：去。' }
+            { text: 'いきます', reason: '錯誤：去。' },
+            { text: 'いります', reason: '錯誤：要（いります - 需要）。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -504,12 +504,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「狗在 *哪裡* ？」\nB：「在院子裡喔。」',
         level: 'N5',
         options: [
-            { text: 'います／います', reason: '正確！' },
             { text: 'あります／あります', reason: '錯誤：狗是動物。' },
-            { text: 'です／です', reason: '錯誤：です（是）。雖然「どこですか」通，但B回答存在位置，用います更精確對應A的動詞期待。若{わか}A問「どこですか」，B回「にわです」可。但選項是います。' },
-            { text: 'します／します', reason: '錯誤：做。' }
+            { text: 'います／います', reason: '正確！' },
+            { text: 'します／します', reason: '錯誤：做。' },
+            { text: 'です／です', reason: '錯誤：です（是）。雖然「どこですか」通，但B回答存在位置，用います更精確對應A的動詞期待。若{わか}A問「どこですか」，B回「にわです」可。但選項是います。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】存在問答（對話）
 【解析】詢問動物位置用「どこにいますか」。
@@ -528,12 +528,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '把書 *放進* 包包。',
         level: 'N5',
         options: [
-            { text: '入{い}れます', reason: '正確！一段他動詞（いれる）。' },
-            { text: '入{はい}ります', reason: '錯誤：進入（はいる - 自動詞）。はいるは「～が～に入{はい}る」。這裡是「～を～に入{い}れる」。' },
+            { text: '入{い}れります', reason: '錯誤：誤作五段。' },
             { text: '入{い}ります', reason: '錯誤：いる (需要) 的ます形。' },
-            { text: '入{い}れります', reason: '錯誤：誤作五段。' }
+            { text: '入{い}れます', reason: '正確！一段他動詞（いれる）。' },
+            { text: '入{はい}ります', reason: '錯誤：進入（はいる - 自動詞）。はいるは「～が～に入{はい}る」。這裡是「～を～に入{い}れる」。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】自他動詞與活用
 【解析】「入{い}れる」是一段他動詞。ます形「入{い}れます」。
@@ -551,12 +551,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「喝咖啡嗎？」\nB：「嗯，請 *放* 很多糖喔。」',
         level: 'N5',
         options: [
-            { text: '入{い}れて', reason: '正確！請求（て形）。' },
-            { text: '入{はい}って', reason: '錯誤：請進去（はいる）。' },
             { text: '入{い}って', reason: '錯誤：いる（需要）→ いって。いる（需要）は通常自動詞構造「が いる」。不是「を いる」。' },
-            { text: '入{い}れ', reason: '錯誤：連用形。' }
+            { text: '入{い}れ', reason: '錯誤：連用形。' },
+            { text: '入{はい}って', reason: '錯誤：請進去（はいる）。' },
+            { text: '入{い}れて', reason: '正確！請求（て形）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】請求句型（對話）
 【解析】請放入用「入{い}れてください」。省略ください。
@@ -576,9 +576,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '歌{うた}います', reason: '正確！五段動詞。' },
-            { text: '歌{うた}うます', reason: '錯誤。' },
             { text: '言{い}います', reason: '錯誤：いいます (說)。' },
-            { text: '聞{き}きます', reason: '錯誤：聽。' }
+            { text: '聞{き}きます', reason: '錯誤：聽。' },
+            { text: '歌{うた}うます', reason: '錯誤。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -598,12 +598,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「在卡拉OK *唱* 了什麼？」\nB：「動漫歌{うた}喔。」',
         level: 'N5',
         options: [
+            { text: '歌{うた}いた', reason: '錯誤：音便錯誤。' },
             { text: '歌{うた}った', reason: '正確！過去常體（た形）。' },
             { text: '歌{うた}うた', reason: '錯誤：五段促音便（わる/うつ/うる → った，但うたうはう → った）。うたう → うたった。不是うたうた。' },
-            { text: '歌{うた}いた', reason: '錯誤：音便錯誤。' },
             { text: '歌{うた}って', reason: '錯誤：て形。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】過去式音便（對話）
 【解析】「歌{うた}う」字{じ}尾u，た形促音便「歌{うた}った」。
@@ -622,12 +622,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '每天早上6點 *起床*。',
         level: 'N5',
         options: [
-            { text: '起{お}きます', reason: '正確！上一段動詞（きはい段）。去る加ます。' },
+            { text: '起{お}くます', reason: '錯誤。' },
             { text: '起{お}きります', reason: '錯誤：誤作五段。' },
-            { text: '起{お}こします', reason: '錯誤：叫醒（おこす - 他動詞）。自己起床用自動詞おきる。' },
-            { text: '起{お}くます', reason: '錯誤。' }
+            { text: '起{お}きます', reason: '正確！上一段動詞（きはい段）。去る加ます。' },
+            { text: '起{お}こします', reason: '錯誤：叫醒（おこす - 他動詞）。自己起床用自動詞おきる。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】一段動詞活用
 【解析】「起{お}きる」是上一段動詞。活用去ru加masu。「起きます」。
@@ -645,12 +645,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「今{いま}天很早 *起* 呢。」\nB：「嗯，因為要去健行。」',
         level: 'N5',
         options: [
-            { text: '起{お}きた', reason: '正確！過去常體（おきた）。' },
-            { text: '起{お}いた', reason: '錯誤：五段音便（く → いた）。おきるは一段 → おきた。如果是おく（放）→ おいた。' },
+            { text: '起{お}きった', reason: '錯誤。' },
             { text: '起{お}った', reason: '錯誤：五段促音便（る → った）。おこるは「発生」の意{い}味{み}で、た形はおこった。但「起床」はおきる → おきた。' },
-            { text: '起{お}きった', reason: '錯誤。' }
+            { text: '起{お}いた', reason: '錯誤：五段音便（く → いた）。おきるは一段 → おきた。如果是おく（放）→ おいた。' },
+            { text: '起{お}きた', reason: '正確！過去常體（おきた）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】一段與五段辨析（對話）
 【解析】「起{お}きる」（起床）是一段，た形為「起きた」。「起こる」（發生）是五段，た形為「起こった」。語境是「早起」，故用おきた。
@@ -670,9 +670,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '置{お}いて', reason: '正確！五段動詞（く → いて）。' },
-            { text: '置{お}って', reason: '錯誤：う/つ/る才是って。くはいて。' },
+            { text: '置{お}く', reason: '錯誤：辭書形。' },
             { text: '置{お}きて', reason: '錯誤：おきる（起床）のて形はおきて。おく（放）はおいて。' },
-            { text: '置{お}く', reason: '錯誤：辭書形。' }
+            { text: '置{お}って', reason: '錯誤：う/つ/る才是って。くはいて。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -692,12 +692,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「這花要 *放* 在哪裡呢？」\nB：「麻煩放在桌上。」',
         level: 'N5',
         options: [
+            { text: '置{お}こう', reason: '錯誤：意向形常體。對長{なが}輩或客氣場合宜用ましょうか。' },
             { text: '置{お}きましょう', reason: '正確！ましょうか（我放吧/要放哪呢 - 詢問指示）。' },
             { text: '置{お}きます', reason: '錯誤：我要放（意志）。A在詢問放在哪好{す}，ましょうか較有商量語氣。' },
-            { text: '置{お}いて', reason: '錯誤：請放。A是動作執行者，問B指示。' },
-            { text: '置{お}こう', reason: '錯誤：意向形常體。對長{なが}輩或客氣場合宜用ましょうか。' }
+            { text: '置{お}いて', reason: '錯誤：請放。A是動作執行者，問B指示。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】提議/確認意向（對話）
 【解析】「～ましょうか」（我來做...好{す}嗎？）。詢問指示。
@@ -716,12 +716,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*寄* 信給朋友。',
         level: 'N5',
         options: [
-            { text: '送{おく}ります', reason: '正確！五段動詞（る → り + ます）。' },
-            { text: '送{おく}るます', reason: '錯誤。' },
             { text: '送{おく}ます', reason: '錯誤。' },
+            { text: '送{おく}るます', reason: '錯誤。' },
+            { text: '送{おく}ります', reason: '正確！五段動詞（る → り + ます）。' },
             { text: '送{おく}れます', reason: '錯誤：可能形/送れる（おくれる - 遲到）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「送{おく}る」是五段動詞。ます形「送{おく}ります」。
@@ -739,12 +739,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「行李已經 *寄* 了嗎？」\nB：「是，昨天寄出了。」',
         level: 'N5',
         options: [
-            { text: '送{おく}りました', reason: '正確！過去疑問。' },
             { text: '送{おく}っています', reason: '錯誤：正在寄/由寄的狀態。雖おくっていますか也通，但配合「もう」（已經），通常確認動作完成用ましたか。且B回答「きのう だしました」（過去），故問句用過去一致。' },
+            { text: '送{おく}らせた', reason: '錯誤：使役。' },
             { text: '送{おく}ります', reason: '錯誤：未來。' },
-            { text: '送{おく}らせた', reason: '錯誤：使役。' }
+            { text: '送{おく}りました', reason: '正確！過去疑問。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】動作完了（對話）
 【解析】「もう～ましたか」（已經...了嗎）。
@@ -765,8 +765,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '教{おし}えて', reason: '正確！一段動詞て形（おしえて）。' },
             { text: '教{おし}えって', reason: '錯誤：一段無促音。' },
-            { text: '教{おし}って', reason: '錯誤：誤作五段（おしる？不對）。' },
-            { text: '教{おそ}わって', reason: '錯誤：おそわる（受教/學習）。這是學生學。' }
+            { text: '教{おそ}わって', reason: '錯誤：おそわる（受教/學習）。這是學生學。' },
+            { text: '教{おし}って', reason: '錯誤：誤作五段（おしる？不對）。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -786,12 +786,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「請 *教* 我這個漢字{じ}的唸法。」\nB：「好{す}喔。」',
         level: 'N5',
         options: [
+            { text: '教{おし}え', reason: '錯誤：連用形。' },
             { text: '教{おし}えて', reason: '正確！請求（て形+kudasai）。' },
-            { text: '教{おし}えって', reason: '錯誤。' },
             { text: '教{おし}ると', reason: '錯誤。' },
-            { text: '教{おし}え', reason: '錯誤：連用形。' }
+            { text: '教{おし}えって', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】請求句型（對話）
 【解析】「教{おし}えてください」（請教我）。
@@ -810,12 +810,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '一 *按* 按鈕，水{みず}就會出來。',
         level: 'N5',
         options: [
-            { text: '押{お}す', reason: '正確！辭書形+to（條件）。' },
             { text: '押{お}して', reason: '錯誤：て形。' },
             { text: '押{お}した', reason: '錯誤：過去。' },
+            { text: '押{お}す', reason: '正確！辭書形+to（條件）。' },
             { text: '押{お}し', reason: '錯誤：連用形。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】條件句型
 【解析】「～と」表示一...就...。接續為辭書形。「押すと」。
@@ -832,12 +832,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「怎麼進去？」\nB：「要 *推* 開門喔（推著開）。」',
         level: 'N5',
         options: [
-            { text: '押{お}して', reason: '正確！方式手段（て形）。' },
+            { text: '押{お}って', reason: '錯誤：おって是おる（彎曲/折斷）？不對。おす → おして。す → して。' },
             { text: '押{お}すて', reason: '錯誤。' },
             { text: '押{お}いて', reason: '錯誤：おいて 是 おく (放). おす 是 うして. ' },
-            { text: '押{お}って', reason: '錯誤：おって是おる（彎曲/折斷）？不對。おす → おして。す → して。' }
+            { text: '押{お}して', reason: '正確！方式手段（て形）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「押{お}す」是す結尾五段動詞。て形為「押{お}して」（す → して）。
@@ -858,9 +858,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '覚{おぼ}えて', reason: '正確！一段動詞て形（おぼえて）。' },
-            { text: '覚{おぼ}えって', reason: '錯誤。' },
+            { text: '覚{おぼ}わって', reason: '錯誤：おそわる? 不對. ' },
             { text: '覚{おぼ}って', reason: '錯誤：誤作五段。' },
-            { text: '覚{おぼ}わって', reason: '錯誤：おそわる? 不對. ' }
+            { text: '覚{おぼ}えって', reason: '錯誤。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -880,12 +880,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「*記得* 我的名字{じ}嗎？」\nB：「是，當然。」',
         level: 'N5',
         options: [
+            { text: '考{かんが}えて', reason: '錯誤：思考。' },
             { text: '覚{おぼ}えて', reason: '正確！狀態（覚えています＝記憶中{なか}/記得）。' },
             { text: '覚{おぼ}えって', reason: '錯誤。' },
-            { text: '思{おも}い出{だ}して', reason: '錯誤：想起來（おもいだす）。記得狀態用おぼえて いる。' },
-            { text: '考{かんが}えて', reason: '錯誤：思考。' }
+            { text: '思{おも}い出{だ}して', reason: '錯誤：想起來（おもいだす）。記得狀態用おぼえて いる。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】狀態描述（對話）
 【解析】記得（持有記憶）用「覚えている」。
@@ -904,12 +904,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '在海{うみ}裡 *游泳* 了。',
         level: 'N5',
         options: [
-            { text: '泳{およ}ぎ', reason: '正確！五段動詞（ぐ → ぎ + ます）。' },
             { text: '泳{およ}ぐ', reason: '錯誤：接續錯誤（およぐました 是錯誤的）。' },
-            { text: '泳{およ}い', reason: '錯誤：およいました？不對。ぐ → ぎ。' },
-            { text: '泳{およ}んで', reason: '錯誤：て形（およんで）+ ました 是錯誤的。' }
+            { text: '泳{およ}んで', reason: '錯誤：て形（およんで）+ ました 是錯誤的。' },
+            { text: '泳{およ}ぎ', reason: '正確！五段動詞（ぐ → ぎ + ます）。' },
+            { text: '泳{およ}い', reason: '錯誤：およいました？不對。ぐ → ぎ。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「泳{およ}ぐ」是五段動詞。ます形「泳{およ}ぎます」。
@@ -926,12 +926,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「在泳池{いけ} *游* 了嗎？」\nB：「嗯，很開心喔。」',
         level: 'N5',
         options: [
-            { text: '泳{およ}いだ', reason: '正確！過去常體（ぐ → いだ）。' },
-            { text: '泳{およ}んだ', reason: '錯誤：ぐ變成いだ。ぶ/む/ぬ變成んだ。およぶ？不對，およぐ。所以是およいだ。' },
             { text: '泳{およ}ぎた', reason: '錯誤：連用形+ta。' },
-            { text: '泳{およ}ぐた', reason: '錯誤。' }
+            { text: '泳{およ}んだ', reason: '錯誤：ぐ變成いだ。ぶ/む/ぬ變成んだ。およぶ？不對，およぐ。所以是およいだ。' },
+            { text: '泳{およ}ぐた', reason: '錯誤。' },
+            { text: '泳{およ}いだ', reason: '正確！過去常體（ぐ → いだ）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】過去式音便（對話）
 【解析】ぐ結尾動詞，た形為イ音便並濁化「～いだ」。「泳いだ」。
@@ -973,12 +973,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「考試已經 *結束* 了嗎？」\nB：「是。」',
         level: 'N5',
         options: [
+            { text: '終{お}わって', reason: '錯誤：て形。' },
             { text: '終{お}わった', reason: '正確！過去常體（る → った）。' },
-            { text: '終{お}わりた', reason: '錯誤。' },
             { text: '終{お}わた', reason: '錯誤。' },
-            { text: '終{お}わって', reason: '錯誤：て形。' }
+            { text: '終{お}わりた', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】過去式音便（對話）
 【解析】「終{お}わる」字{じ}尾ru，促音便「終{お}わった」。
@@ -996,12 +996,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '在超市 *買* 麵包。',
         level: 'N5',
         options: [
-            { text: '買{か}います', reason: '正確！五段動詞（う → い + ます）。' },
             { text: '買{か}うます', reason: '錯誤。' },
-            { text: '買{か}ります', reason: '錯誤：誤以r結尾。' },
-            { text: '買{か}って', reason: '錯誤：て形。' }
+            { text: '買{か}って', reason: '錯誤：て形。' },
+            { text: '買{か}います', reason: '正確！五段動詞（う → い + ます）。' },
+            { text: '買{か}ります', reason: '錯誤：誤以r結尾。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「買{か}う」是五段動詞。ます形「買{か}います」。
@@ -1019,12 +1019,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「那雙鞋，在哪裡 *買* 的？」\nB：「百{ひゃく}貨公司喔。」',
         level: 'N5',
         options: [
-            { text: '買{か}った', reason: '正確！過去常體（う → った）。' },
-            { text: '買{か}いた', reason: '錯誤：かう（う）→ かった。かく（く）→ かいた。' },
             { text: '買{か}うた', reason: '錯誤：古語/方言。' },
-            { text: '買{か}って', reason: '錯誤：て形。' }
+            { text: '買{か}いた', reason: '錯誤：かう（う）→ かった。かく（く）→ かいた。' },
+            { text: '買{か}って', reason: '錯誤：て形。' },
+            { text: '買{か}った', reason: '正確！過去常體（う → った）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】過去式音便（對話）
 【解析】「買{か}う」字{じ}尾u，促音便「買った」。
@@ -1045,8 +1045,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '返{かえ}します', reason: '正確！五段動詞（す → し + ます）。' },
-            { text: '返{かえ}すます', reason: '錯誤。' },
             { text: '返{かえ}ります', reason: '錯誤：かえります（回家{いえ}）。かえすは返還（物品）。' },
+            { text: '返{かえ}すます', reason: '錯誤。' },
             { text: '返{かえ}して', reason: '錯誤：て形。' }
         ],
         correctIndex: 0,
@@ -1067,12 +1067,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「這本{ほん}書，讀完了？」\nB：「嗯，打算明天 *還*。」',
         level: 'N5',
         options: [
+            { text: '帰{かえ}る', reason: '錯誤：回去。' },
             { text: '返{かえ}す', reason: '正確！辭書形+つもり。' },
             { text: '返{かえ}して', reason: '錯誤。' },
-            { text: '返{かえ}した', reason: '錯誤：過去+つもり（以為我已經返還了）。語境暗示未來意圖。' },
-            { text: '帰{かえ}る', reason: '錯誤：回去。' }
+            { text: '返{かえ}した', reason: '錯誤：過去+つもり（以為我已經返還了）。語境暗示未來意圖。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】打算/意志（對話）
 【解析】「つもり」接辭書形。「返すつもり」。
@@ -1091,12 +1091,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*回* 家{いえ}。',
         level: 'N5',
         options: [
-            { text: '帰{かえ}ります', reason: '正確！五段動詞（例外，ru前e段但屬五段）。' },
             { text: '帰{かえ}ます', reason: '錯誤：誤作一段（去る）。' },
             { text: '帰{かえ}して', reason: '錯誤：かえす（返還某物）。' },
+            { text: '帰{かえ}ります', reason: '正確！五段動詞（例外，ru前e段但屬五段）。' },
             { text: '来{き}ます', reason: '錯誤：來。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】特殊五段動詞
 【解析】「帰{かえ}る」看似一段（e段+ru），但其實是五段動詞。活用為「帰{かえ}ります」。
@@ -1114,12 +1114,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「已經可以 *回去* 了嗎？」\nB：「好{す}，小心點。」',
         level: 'N5',
         options: [
-            { text: '帰{かえ}って', reason: '正確！五段促音便（る → って）。' },
+            { text: '変{か}えて', reason: '錯誤：改變（かえる → かえて）。' },
             { text: '帰{かえ}て', reason: '錯誤：誤作一段（去る+て）。' },
             { text: '返{かえ}して', reason: '錯誤：還（東西）。' },
-            { text: '変{か}えて', reason: '錯誤：改變（かえる → かえて）。' }
+            { text: '帰{かえ}って', reason: '正確！五段促音便（る → って）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】特殊五段動詞音便
 【解析】「帰{かえ}る」是五段，て形為促音便「帰{かえ}って」。
@@ -1141,9 +1141,9 @@ export const n5Questions: StaticQuestion[] = [
 
         options: [
             { text: 'かかります', reason: '正確！' },
+            { text: 'かかます', reason: '錯誤：變位錯誤。' },
             { text: 'かけます', reason: '錯誤：他動詞。' },
-            { text: 'います', reason: '錯誤：有。' },
-            { text: 'かかます', reason: '錯誤：變位錯誤。' }
+            { text: 'います', reason: '錯誤：有。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -1168,12 +1168,12 @@ export const n5Questions: StaticQuestion[] = [
         // 兩者 imply incoming.
         // 讓's use simple かかる.
         options: [
+            { text: 'かけた', reason: '錯誤：打了（去電）。' },
             { text: 'かかってきた', reason: '正確！複合動詞（打來了）。' },
             { text: 'かけてきた', reason: '錯誤：去打（他動詞）。主語是電{でん}話{わ}（來電），用自動詞。' },
-            { text: 'かけた', reason: '錯誤：打了（去電）。' },
             { text: 'かからない', reason: '錯誤：ない形。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】來電表現（對話）
 【解析】電{でん}話{わ}打來用「電{でん}話{わ}がかかってくる」。
@@ -1193,12 +1193,12 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
 
         options: [
-            { text: '書{か}いて', reason: '正確！' },
+            { text: '聞{き}いて', reason: '錯誤：聽。' },
             { text: '書{か}って', reason: '錯誤：音便錯誤。' },
-            { text: '読{よ}んで', reason: '錯誤：讀。' },
-            { text: '聞{き}いて', reason: '錯誤：聽。' }
+            { text: '書{か}いて', reason: '正確！' },
+            { text: '読{よ}んで', reason: '錯誤：讀。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞音便
 【解析】「書{か}く」字{じ}尾ku，て形為イ音便「書{か}いて」。
@@ -1215,12 +1215,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「信，已經 *寫* 了嗎？」\nB：「嗯。」',
         level: 'N5',
         options: [
-            { text: '書{か}いた', reason: '正確！過去常體（く → いた）。' },
+            { text: '書{か}きた', reason: '錯誤。' },
             { text: '書{か}った', reason: '錯誤：かう（買）→ かった。かく → かいた。' },
             { text: '書{か}くた', reason: '錯誤。' },
-            { text: '書{か}きた', reason: '錯誤。' }
+            { text: '書{か}いた', reason: '正確！過去常體（く → いた）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】過去式音便（對話）
 【解析】「書{か}く」た形為「書いた」。
@@ -1240,9 +1240,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: 'かけて', reason: '正確！一段動詞（かけて）。' },
-            { text: 'かかって', reason: '錯誤：かかる (掛 - 自動詞). めがね を (賓語). 需要 他動詞 かける. ' },
+            { text: 'かいて', reason: '錯誤：かく（寫/抓）。' },
             { text: 'かけって', reason: '錯誤。' },
-            { text: 'かいて', reason: '錯誤：かく（寫/抓）。' }
+            { text: 'かかって', reason: '錯誤：かかる (掛 - 自動詞). めがね を (賓語). 需要 他動詞 かける. ' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -1262,12 +1262,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「可以 *打* 電{でん}話{わ}嗎？」\nB：「請。」',
         level: 'N5',
         options: [
-            { text: 'かけても', reason: '正確！かける → かけて + mo ii. ' },
-            { text: 'かかっても', reason: '錯誤：かかる（響鈴）。我可以打鈴嗎？不對，我可以打電{でん}話{わ}嗎。' },
             { text: 'かいても', reason: '錯誤：寫.' },
-            { text: 'かって', reason: '錯誤：かう（買）。' }
+            { text: 'かけても', reason: '正確！かける → かけて + mo ii. ' },
+            { text: 'かって', reason: '錯誤：かう（買）。' },
+            { text: 'かかっても', reason: '錯誤：かかる（響鈴）。我可以打鈴嗎？不對，我可以打電{でん}話{わ}嗎。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】許可句型（對話）
 【解析】打電{でん}話{わ}「電{でん}話{わ}をかける」。許可形「かけてもいい」。
@@ -1286,12 +1286,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '請 *借* 我鉛{えん}筆{ぴつ}。',
         level: 'N5',
         options: [
-            { text: '貸{か}して', reason: '正確！五段（す → して）。かす（借出）。「借我」。' },
+            { text: '返{かえ}して', reason: '錯誤：還。' },
             { text: '借{か}りて', reason: '錯誤：借入（かりる）。請借？不對。請借給我。' },
-            { text: '貸{か}って', reason: '錯誤：音便錯誤。' },
-            { text: '返{かえ}して', reason: '錯誤：還。' }
+            { text: '貸{か}して', reason: '正確！五段（す → して）。かす（借出）。「借我」。' },
+            { text: '貸{か}って', reason: '錯誤：音便錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】授受動詞（借貸）
 【解析】請求對方借自己東西，用「貸{か}してください」（請借出）。
@@ -1309,12 +1309,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「橡皮擦，*借* (我) 嗎？」\nB：「好{す}喔。」',
         level: 'N5',
         options: [
-            { text: '貸{か}して', reason: '正確！請求（て形）。かして（くれる）？' },
             { text: '借{か}りて', reason: '錯誤。' },
+            { text: '借{か}る', reason: '錯誤：かりる是一段（かりる/かりて）。かる 是 錯誤的活用基底。' },
             { text: '貸{か}す', reason: '錯誤：辭書形（我要借給你？）。語氣上A向B借，用かして自然。' },
-            { text: '借{か}る', reason: '錯誤：かりる是一段（かりる/かりて）。かる 是 錯誤的活用基底。' }
+            { text: '貸{か}して', reason: '正確！請求（て形）。かして（くれる）？' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】請求與省略（對話）
 【解析】口語請求常用て形上揚。「貸{か}して？」（借我？）。
@@ -1335,8 +1335,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '聞{き}きます', reason: '正確！五段動詞。' },
             { text: '聞{き}くます', reason: '錯誤。' },
-            { text: '聞{き}いて', reason: '錯誤：て形。' },
-            { text: '書{か}きます', reason: '錯誤：寫。' }
+            { text: '書{か}きます', reason: '錯誤：寫。' },
+            { text: '聞{き}いて', reason: '錯誤：て形。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -1356,12 +1356,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「試著 *問* 看看老師如何{なに}？」\nB：「我會的。」',
         level: 'N5',
         options: [
-            { text: '聞{き}いて', reason: '正確！嘗試（て形+みる）。きく可以意思是詢問。' },
             { text: '聞{き}って', reason: '錯誤：く → いて。' },
-            { text: '聞{き}きて', reason: '錯誤。' },
-            { text: '書{か}いて', reason: '錯誤：寫。' }
+            { text: '聞{き}いて', reason: '正確！嘗試（て形+みる）。きく可以意思是詢問。' },
+            { text: '書{か}いて', reason: '錯誤：寫。' },
+            { text: '聞{き}きて', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】嘗試句型（對話）
 【解析】「聞{き}く」有聽與問之意。「聞{き}いてみる」（問問看）。
@@ -1380,12 +1380,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*穿* 襯衫。',
         level: 'N5',
         options: [
-            { text: '着{き}ます', reason: '正確！上一段動詞。' },
-            { text: '着{き}ります', reason: '錯誤：誤作五段。' },
+            { text: '切{き}ります', reason: '錯誤：切（きります - 五段）。讀音雖同きる，但切的ます形是きります。' },
             { text: '履{は}きます', reason: '錯誤：穿（下半{はん}身/鞋）。襯衫用きる。' },
-            { text: '切{き}ります', reason: '錯誤：切（きります - 五段）。讀音雖同きる，但切的ます形是きります。' }
+            { text: '着{き}ます', reason: '正確！上一段動詞。' },
+            { text: '着{き}ります', reason: '錯誤：誤作五段。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】穿戴動詞與自他
 【解析】穿上半{はん}身衣物用「着{き}る」。上一段動詞，ます形「着{き}ます」。
@@ -1403,12 +1403,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「那件大衣，可以 *試穿* 看看嗎？」\nB：「好{す}，請。」',
         level: 'N5',
         options: [
-            { text: '着{き}て', reason: '正確！て形（きて）。' },
             { text: '着{き}って', reason: '錯誤：切（きる - 切）的て形是きって。穿是きて。' },
             { text: '履{は}いて', reason: '錯誤：穿鞋/褲。大衣用きる。' },
-            { text: '来{き}て', reason: '錯誤：來（きて）。漢字{じ}不同。' }
+            { text: '来{き}て', reason: '錯誤：來（きて）。漢字{じ}不同。' },
+            { text: '着{き}て', reason: '正確！て形（きて）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】嘗試與辨析（對話）
 【解析】「着てみる」（試穿）。きる（穿）是上一段，て形為きて。
@@ -1429,8 +1429,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '来{き}ます', reason: '正確！第三類動詞（くる → きます）。' },
-            { text: '来{く}ります', reason: '錯誤。' },
             { text: '来{く}ます', reason: '錯誤。' },
+            { text: '来{く}ります', reason: '錯誤。' },
             { text: '行{い}きます', reason: '錯誤：去。' }
         ],
         correctIndex: 0,
@@ -1450,12 +1450,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「明天，*來* (參加) 派對嗎？」\nB：「嗯，會去喔。」',
         level: 'N5',
         options: [
-            { text: '来{く}る', reason: '正確！辭書形（常體疑問）。' },
             { text: '来{き}る', reason: '錯誤：讀音錯誤（きる → くる）。' },
-            { text: '行{い}く', reason: '錯誤：A在問B來不來（以派對為中{なか}心）。若{わか}A也去，問B「來嗎」，若{わか}A在別處問B「去嗎」則用いく。通常「くる？」暗示A在那裡或邀請。B回答「いく」（移動到A/派對）。日文視點轉移。' },
-            { text: '来{き}て', reason: '錯誤：請求（きて）。' }
+            { text: '来{く}る', reason: '正確！辭書形（常體疑問）。' },
+            { text: '来{き}て', reason: '錯誤：請求（きて）。' },
+            { text: '行{い}く', reason: '錯誤：A在問B來不來（以派對為中{なか}心）。若{わか}A也去，問B「來嗎」，若{わか}A在別處問B「去嗎」則用いく。通常「くる？」暗示A在那裡或邀請。B回答「いく」（移動到A/派對）。日文視點轉移。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】移動方向（對話）
 【解析】對方問「来{く}る？」（你來嗎？），回答用「行{い}くよ」（我會去）。
@@ -1474,12 +1474,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*關* 燈。',
         level: 'N5',
         options: [
-            { text: '消{け}します', reason: '正確！五段（す → し + ます）。' },
             { text: '消{き}えます', reason: '錯誤：熄滅（自動詞 きえる）。きえる → きえます. "でんき を" 需要 他動詞 けす. ' },
-            { text: '消{け}すます', reason: '錯誤。' },
-            { text: '閉{し}めます', reason: '錯誤：關（門/窗）。燈用けす。' }
+            { text: '閉{し}めます', reason: '錯誤：關（門/窗）。燈用けす。' },
+            { text: '消{け}します', reason: '正確！五段（す → し + ます）。' },
+            { text: '消{け}すます', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】自他動詞與對象
 【解析】關（電器/火）用「消{け}す」。ます形「消{け}します」。
@@ -1497,12 +1497,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「電視，*關* 掉也可以嗎？」\nB：「嗯，可以喔。」',
         level: 'N5',
         options: [
-            { text: '消{け}しても', reason: '正確！許可（けす → けして）。' },
+            { text: '閉{し}めても', reason: '錯誤：關（門）。' },
             { text: '消{け}っても', reason: '錯誤：す 用して。不是って。' },
             { text: '消{き}えても', reason: '錯誤：きえる（熄滅）。' },
-            { text: '閉{し}めても', reason: '錯誤：關（門）。' }
+            { text: '消{け}しても', reason: '正確！許可（けす → けして）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】許可句型（對話）
 【解析】關電視「消{け}す」→「消{け}しても」。
@@ -1521,9 +1521,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '咲{さ}いて', reason: '正確！五段（く → いて）。' },
-            { text: '咲{さ}かって', reason: '錯誤：誤作五段促音。' },
             { text: '咲{さ}きて', reason: '錯誤。' },
-            { text: '笑{わら}って', reason: '錯誤：わらう（笑）。' }
+            { text: '笑{わら}って', reason: '錯誤：わらう（笑）。' },
+            { text: '咲{さ}かって', reason: '錯誤：誤作五段促音。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -1542,12 +1542,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「櫻花已經 *開* 了嗎？」\nB：「與還沒。」',
         level: 'N5',
         options: [
+            { text: '咲{さ}いて', reason: '錯誤：て形。' },
             { text: '咲{さ}きました', reason: '正確！過去疑問。' },
-            { text: '咲{さ}きます', reason: '錯誤：未來。A問「已經...了嗎」，暗示檢查過去/現在狀態完了。' },
             { text: '咲{さ}きましょう', reason: '錯誤：意向。' },
-            { text: '咲{さ}いて', reason: '錯誤：て形。' }
+            { text: '咲{さ}きます', reason: '錯誤：未來。A問「已經...了嗎」，暗示檢查過去/現在狀態完了。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】完了時{じ}態（對話）
 【解析】「もう～ましたか」。
@@ -1568,12 +1568,12 @@ export const n5Questions: StaticQuestion[] = [
 
         // 乾淨 d是tractor
         options: [
-            { text: '差{さ}して', reason: '正確！' },
             { text: '差{さ}って', reason: '錯誤。' },
-            { text: '着{き}て', reason: '錯誤：穿。' },
-            { text: '降{ふ}って', reason: '錯誤：下（雨）。' }
+            { text: '降{ふ}って', reason: '錯誤：下（雨）。' },
+            { text: '差{さ}して', reason: '正確！' },
+            { text: '着{き}て', reason: '錯誤：穿。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】穿戴動詞（傘{かさ}）
 【解析】撐傘{かさ}用「傘{かさ}を差す」。て形「差して」。
@@ -1590,12 +1590,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「*撐* 著傘{かさ}去吧（帶著傘{かさ}）。」\nB：「好{す}。」',
         level: 'N5',
         options: [
-            { text: '差{さ}して', reason: '正確！さして ikimashou. ' },
-            { text: '差{さ}した', reason: '錯誤。' },
             { text: '差{さ}し', reason: '錯誤。' },
-            { text: '差{さ}す', reason: '錯誤。' }
+            { text: '差{さ}す', reason: '錯誤。' },
+            { text: '差{さ}した', reason: '錯誤。' },
+            { text: '差{さ}して', reason: '正確！さして ikimashou. ' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】動作狀態（對話）
 【解析】撐著傘{かさ}（狀態）去。「差して行{い}く」。
@@ -1618,8 +1618,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '散歩{さんぽ}します', reason: '正確！' },
             { text: '散歩{さんぽ}ます', reason: '錯誤。' },
-            { text: '散歩{さんぽ}ります', reason: '錯誤。' },
-            { text: '散歩{さんぽ}です', reason: '錯誤：不是句子。從語境需要動詞或「を」需要動詞。' }
+            { text: '散歩{さんぽ}です', reason: '錯誤：不是句子。從語境需要動詞或「を」需要動詞。' },
+            { text: '散歩{さんぽ}ります', reason: '錯誤。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -1638,12 +1638,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「每早都在做什麼？」\nB：「正在和狗 *散步*。」',
         level: 'N5',
         options: [
+            { text: '散歩{さんぽ}すって', reason: '錯誤。' },
             { text: '散歩{さんぽ}して', reason: '正確！する → して + います。' },
             { text: '散歩{さんぽ}しって', reason: '錯誤。' },
-            { text: '散歩{さんぽ}すって', reason: '錯誤。' },
             { text: '散歩{さんぽ}した', reason: '錯誤：過去式不能接います。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】習慣/進行（對話）
 【解析】て形+います表示習慣或狀態。
@@ -1662,12 +1662,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '寵物魚{さかな} *死* 了。',
         level: 'N5',
         options: [
-            { text: '死{し}にました', reason: '正確！五段動詞（ぬ → に + ます）。' },
-            { text: '死{し}ねました', reason: '錯誤。' },
             { text: '死{し}ぬました', reason: '錯誤。' },
+            { text: '死{し}ねました', reason: '錯誤。' },
+            { text: '死{し}にました', reason: '正確！五段動詞（ぬ → に + ます）。' },
             { text: '生{い}きました', reason: '錯誤：活。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「死{し}ぬ」是唯一的nu結尾五段動詞。ます形「死{し}にます」。
@@ -1690,12 +1690,12 @@ export const n5Questions: StaticQuestion[] = [
         // 兩者 natural. "おまえ wa mou shindeiru" (你 are already dead).
         // 讓's options clearly d是tingu是h conjugation.
         options: [
-            { text: '死{し}んでいる', reason: '正確！' },
-            { text: '死{し}ている', reason: '錯誤：しぬ のて形は しんで（ぬ→んで）。不是して（して是する）。' },
+            { text: '死{し}に', reason: '錯誤。' },
             { text: '死{し}って', reason: '錯誤。' },
-            { text: '死{し}に', reason: '錯誤。' }
+            { text: '死{し}ている', reason: '錯誤：しぬ のて形は しんで（ぬ→んで）。不是して（して是する）。' },
+            { text: '死{し}んでいる', reason: '正確！' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞撥音便
 【解析】「死{し}ぬ」て形為撥音便「死んで」。
@@ -1716,8 +1716,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '閉{し}めます', reason: '正確！一段動詞（しめる）。' },
             { text: '閉{し}まります', reason: '錯誤：關閉（しまる - 自動詞）。ドア が しまる。ドア を しめる。' },
-            { text: '閉{し}めります', reason: '錯誤。' },
-            { text: '消{け}します', reason: '錯誤：關燈。' }
+            { text: '消{け}します', reason: '錯誤：關燈。' },
+            { text: '閉{し}めります', reason: '錯誤。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -1737,12 +1737,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「請 *關* 窗戶。」\nB：「好{す}，知道了。」',
         level: 'N5',
         options: [
+            { text: '閉{し}めって', reason: '錯誤。' },
             { text: '閉{し}めて', reason: '正確！請求（て形）。' },
             { text: '閉{し}まって', reason: '錯誤：しまって（它關閉）。' },
-            { text: '閉{し}めって', reason: '錯誤。' },
             { text: '消{け}して', reason: '錯誤：關（電器）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】請求句型（對話）
 【解析】「閉{し}めてください」。
@@ -1761,12 +1761,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*知道* 那個新{しん}聞{ぶん}嗎？',
         level: 'N5',
         options: [
-            { text: '知{し}って', reason: '正確！五段（る → って）。' },
-            { text: '知{し}りて', reason: '錯誤。' },
             { text: '知{し}て', reason: '錯誤：しる是五段（特殊？不對，普通五段有り詞幹）。しる → しります。しる → しって。不是て形：看起來像一段但是五段。' },
-            { text: '分{わ}かって', reason: '錯誤：懂（わかる）。「知道」消息用しる。「理解」意思用わかる。' }
+            { text: '分{わ}かって', reason: '錯誤：懂（わかる）。「知道」消息用しる。「理解」意思用わかる。' },
+            { text: '知{し}って', reason: '正確！五段（る → って）。' },
+            { text: '知{し}りて', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】特殊五段動詞
 【解析】「知{し}る」是五段動詞（ru前i段）。て形「知{し}って」。
@@ -1783,12 +1783,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「*知道* 田{た}中{なか}先{せん}生{せい}的電{でん}話{わ}號碼嗎？」\nB：「不，*不知道*。」',
         level: 'N5',
         options: [
-            { text: '知{し}ってる／知らない', reason: '正確！知{し}っている（我知道/知道狀態）。否定習慣用「知らない」（不知 - 不具有該資訊）。不說「知{し}っていない」。' },
             { text: '知{し}ってる／知{し}ってない', reason: '錯誤：知道的否定通常用しらない。' },
+            { text: '知{し}る／知らん', reason: '錯誤：しらん 是方言/粗俗。' },
             { text: '知{し}る／知らない', reason: '錯誤：A問狀態（你知道嗎？= 有知識？）用ている。B回しらない。' },
-            { text: '知{し}る／知らん', reason: '錯誤：しらん 是方言/粗俗。' }
+            { text: '知{し}ってる／知らない', reason: '正確！知{し}っている（我知道/知道狀態）。否定習慣用「知らない」（不知 - 不具有該資訊）。不說「知{し}っていない」。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】狀態與否定（對話）
 【解析】「知{し}っていますか」的否定回答是「知りません」（或常體「知らない」）。不說「知{し}っていません」。
@@ -1829,12 +1829,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「可以在這裡 *抽* 菸嗎？」\nB：「不，不行。」',
         level: 'N5',
         options: [
-            { text: '吸{す}って', reason: '正確！五段促音便（う → って）。' },
             { text: '吸{す}いて', reason: '錯誤：すう → すって。かう → かって。' },
+            { text: '吸{す}って', reason: '正確！五段促音便（う → って）。' },
             { text: '吸{す}うて', reason: '錯誤：古語。' },
             { text: '飲{の}んで', reason: '錯誤：喝。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞音便
 【解析】「吸{す}う」て形為促音便「吸{す}って」。
@@ -1853,12 +1853,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*住* 在日{に}本{ほん}。',
         level: 'N5',
         options: [
-            { text: '住{す}んで', reason: '正確！五段撥音便（む → んで）。' },
             { text: '住{す}むで', reason: '錯誤。' },
-            { text: '住{す}みて', reason: '錯誤。' },
-            { text: '行{い}って', reason: '錯誤：去。' }
+            { text: '行{い}って', reason: '錯誤：去。' },
+            { text: '住{す}んで', reason: '正確！五段撥音便（む → んで）。' },
+            { text: '住{す}みて', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞音便與狀態
 【解析】住所狀態用「住{す}んでいる」。て形為撥音便「住{す}んで」。
@@ -1875,12 +1875,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「*住* 在哪裡呢？」\nB：「東{とう}京{きょう}。」',
         level: 'N5',
         options: [
-            { text: '住{す}んで', reason: '正確！' },
-            { text: '住{す}まって', reason: '錯誤：すまる？不對。' },
             { text: '生{い}きて', reason: '錯誤：活。' },
-            { text: '行{い}って', reason: '錯誤：去。' }
+            { text: '住{す}まって', reason: '錯誤：すまる？不對。' },
+            { text: '行{い}って', reason: '錯誤：去。' },
+            { text: '住{す}んで', reason: '正確！' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】居住狀態（對話）
 【解析】詢問居住地常用「どこに住{す}んでいますか」。
@@ -1901,8 +1901,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: 'します', reason: '正確！三類動詞。' },
             { text: 'すります', reason: '錯誤：する（擦）→ すります。する（做）→ します。' },
-            { text: 'やります', reason: '錯誤：やる也意思是做，但する → します是標準。選項「します」是最適合する。如果やる不是目標。' },
-            { text: 'きます', reason: '錯誤：來/穿.' }
+            { text: 'きます', reason: '錯誤：來/穿.' },
+            { text: 'やります', reason: '錯誤：やる也意思是做，但する → します是標準。選項「します」是最適合する。如果やる不是目標。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -1922,12 +1922,12 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
 
         options: [
+            { text: 'とった', reason: '錯誤：取。' },
             { text: 'した', reason: '正確！' },
-            { text: 'すった', reason: '錯誤：吸/磨。' },
             { text: 'しった', reason: '錯誤：知。' },
-            { text: 'とった', reason: '錯誤：取。' }
+            { text: 'すった', reason: '錯誤：吸/磨。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】過去式音便（對話）
 【解析】「する」的過去式是「した」。
@@ -1947,12 +1947,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '請 *坐* 在椅{い}子{す}上。',
         level: 'N5',
         options: [
-            { text: '座{すわ}って', reason: '正確！五段促音便（る → って）。' },
-            { text: '座{すわ}りて', reason: '錯誤。' },
+            { text: '立{た}って', reason: '錯誤：站（たつ）。' },
             { text: '座{すわ}いて', reason: '錯誤。' },
-            { text: '立{た}って', reason: '錯誤：站（たつ）。' }
+            { text: '座{すわ}って', reason: '正確！五段促音便（る → って）。' },
+            { text: '座{すわ}りて', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞音便
 【解析】「座{すわ}る」字{じ}尾ru，て形「座{すわ}って」。
@@ -1970,12 +1970,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「可以 *坐* 這裡嗎？」\nB：「好{す}。」',
         level: 'N5',
         options: [
-            { text: '座{すわ}っても', reason: '正確！許可。' },
-            { text: '座{すわ}りても', reason: '錯誤。' },
+            { text: '使{つか}っても', reason: '錯誤：用。' },
             { text: '触{さわ}っても', reason: '錯誤：摸（さわる）。' },
-            { text: '使{つか}っても', reason: '錯誤：用。' }
+            { text: '座{すわ}りても', reason: '錯誤。' },
+            { text: '座{すわ}っても', reason: '正確！許可。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】許可句型（對話）
 【解析】「座ってもいいですか」。
@@ -2016,12 +2016,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「作業，*交* 出了嗎？」\nB：「是。」',
         level: 'N5',
         options: [
+            { text: '出{だ}して', reason: '錯誤：て形。' },
             { text: '出{だ}した', reason: '正確！過去常體。だす（提交）。' },
             { text: '出{で}た', reason: '錯誤：出來了（でた）。作業出來了？不對。' },
-            { text: '出{だ}いた', reason: '錯誤。' },
-            { text: '出{だ}して', reason: '錯誤：て形。' }
+            { text: '出{だ}いた', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】交作業（對話）
 【解析】交作業用「宿{しゅく}題{だい}を出す」。
@@ -2040,12 +2040,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '請 *站* 在那裡。',
         level: 'N5',
         options: [
-            { text: '立{た}って', reason: '正確！五段促音便（つ → って）。' },
-            { text: '立{た}てて', reason: '錯誤：立起（たてる → たてて）。請立起（某物）？不對。請站立（你自己）。' },
+            { text: '座{すわ}って', reason: '錯誤：坐。' },
             { text: '立{た}いて', reason: '錯誤。' },
-            { text: '座{すわ}って', reason: '錯誤：坐。' }
+            { text: '立{た}って', reason: '正確！五段促音便（つ → って）。' },
+            { text: '立{た}てて', reason: '錯誤：立起（たてる → たてて）。請立起（某物）？不對。請站立（你自己）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞音便
 【解析】「立{た}つ」字{じ}尾tsu，て形促音便「立{た}って」。
@@ -2063,12 +2063,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「在電{でん}車{しゃ}上 *站* 著去了。」\nB：「真辛{から}苦{にが}呢。」',
         level: 'N5',
         options: [
-            { text: '立{た}って', reason: '正確！狀態（たって - 站立）。' },
-            { text: '立{た}ち', reason: '錯誤。' },
             { text: '座{すわ}って', reason: '錯誤：坐。' },
-            { text: '乗{の}って', reason: '錯誤：搭乘（のって）。のって いく暗示在乘車{くるま}期間站立。' }
+            { text: '乗{の}って', reason: '錯誤：搭乘（のって）。のって いく暗示在乘車{くるま}期間站立。' },
+            { text: '立{た}ち', reason: '錯誤。' },
+            { text: '立{た}って', reason: '正確！狀態（たって - 站立）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】動作狀態（對話）
 【解析】站著用「立って」。
@@ -2088,9 +2088,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '食{た}べます', reason: '正確！一段。' },
-            { text: '食{た}べります', reason: '錯誤。' },
             { text: '飲{の}みます', reason: '錯誤：喝。' },
-            { text: '食{た}ぶます', reason: '錯誤。' }
+            { text: '食{た}ぶます', reason: '錯誤。' },
+            { text: '食{た}べります', reason: '錯誤。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -2109,12 +2109,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「蛋糕，*吃* 了也可以嗎？」\nB：「請。」',
         level: 'N5',
         options: [
+            { text: '買{か}っても', reason: '錯誤：買。' },
             { text: '食{た}べても', reason: '正確！許可（たべて も）。' },
-            { text: '食{た}べくても', reason: '錯誤。' },
             { text: '飲{の}んでも', reason: '錯誤：喝。' },
-            { text: '買{か}っても', reason: '錯誤：買。' }
+            { text: '食{た}べくても', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】許可句型（對話）
 【解析】て形+もいい。「食{た}べてもいい」。
@@ -2133,12 +2133,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '在餐廳 *點* 菜。',
         level: 'N5',
         options: [
-            { text: '頼{たの}みます', reason: '正確！五段（む → み）。' },
             { text: '頼{たの}むます', reason: '錯誤。' },
-            { text: '頼{たの}んで', reason: '錯誤：て形。' },
-            { text: '食{た}べます', reason: '錯誤：吃（たべます）。點菜用たのむ。' }
+            { text: '食{た}べます', reason: '錯誤：吃（たべます）。點菜用たのむ。' },
+            { text: '頼{たの}みます', reason: '正確！五段（む → み）。' },
+            { text: '頼{たの}んで', reason: '錯誤：て形。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「頼{たの}む」是五段。ます形「頼{たの}みます」。
@@ -2155,12 +2155,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「*拜託* 田{た}中{なか}先{せん}生{せい}工作了嗎？」\nB：「嗯。」',
         level: 'N5',
         options: [
-            { text: '頼{たの}んだ', reason: '正確！過去常體（む → んだ）。' },
-            { text: '頼{たの}いだ', reason: '錯誤：む 是 んだ。ぐ 是 いだ。' },
             { text: '頼{たの}むた', reason: '錯誤。' },
-            { text: '頼{たの}みて', reason: '錯誤。' }
+            { text: '頼{たの}みて', reason: '錯誤。' },
+            { text: '頼{たの}いだ', reason: '錯誤：む 是 んだ。ぐ 是 いだ。' },
+            { text: '頼{たの}んだ', reason: '正確！過去常體（む → んだ）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】過去式撥音便（對話）
 【解析】「頼む」字{じ}尾mu，た形為撥音便「頼んだ」。
@@ -2182,9 +2182,9 @@ export const n5Questions: StaticQuestion[] = [
 
         options: [
             { text: '違{ちが}って', reason: '正確！' },
+            { text: '直{なお}って', reason: '錯誤：治好{す}。' },
             { text: '違{ちが}いて', reason: '錯誤：音便錯誤。' },
-            { text: '合{あ}って', reason: '錯誤：對/合（あう → あって）。意思相反。' },
-            { text: '直{なお}って', reason: '錯誤：治好{す}。' }
+            { text: '合{あ}って', reason: '錯誤：對/合（あう → あって）。意思相反。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -2205,12 +2205,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*用* 電腦。',
         level: 'N5',
         options: [
+            { text: '作{つく}ります', reason: '錯誤：做（つくる）。' },
             { text: '使{つか}います', reason: '正確！五段。' },
             { text: '使{つか}うます', reason: '錯誤。' },
-            { text: '作{つく}ります', reason: '錯誤：做（つくる）。' },
             { text: '疲{つか}れます', reason: '錯誤：累（つかれる）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「使{つか}う」ます形「使{つか}います」。
@@ -2230,12 +2230,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*抵達* 車{くるま}站了。',
         level: 'N5',
         options: [
-            { text: '着{つ}き', reason: '正確！五段（く → き）。つきました。' },
             { text: '着{つ}く', reason: '錯誤。' },
             { text: '着{つ}い', reason: '錯誤：て形語幹？不對。' },
+            { text: '着{つ}き', reason: '正確！五段（く → き）。つきました。' },
             { text: '着{き}き', reason: '錯誤：きる（穿）はきます。つくはつきます。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「着{つ}く」是五段。ます形「着{つ}きます」。
@@ -2252,12 +2252,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「幾點 *到* 東{とう}京{きょう}？」\nB：「3點。」',
         level: 'N5',
         options: [
-            { text: '着{つ}きます', reason: '正確！未來習慣/預定。' },
-            { text: '着{つ}いて', reason: '錯誤：て形。' },
             { text: '来{き}ます', reason: '錯誤：來。A問到達時{じ}間{かん}，つく更精確。' },
-            { text: '行{い}きます', reason: '錯誤：去。' }
+            { text: '行{い}きます', reason: '錯誤：去。' },
+            { text: '着{つ}いて', reason: '錯誤：て形。' },
+            { text: '着{つ}きます', reason: '正確！未來習慣/預定。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】到着動詞（對話）
 【解析】到達用「着く」。
@@ -2277,9 +2277,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '作{つく}ります', reason: '正確！五段（る → り）。' },
-            { text: '作{つく}ます', reason: '錯誤。' },
+            { text: '食{た}べます', reason: '錯誤：吃。' },
             { text: '使{つか}います', reason: '錯誤：用。' },
-            { text: '食{た}べます', reason: '錯誤：吃。' }
+            { text: '作{つく}ます', reason: '錯誤。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -2298,12 +2298,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「這個，是誰{だれ} *做* 的？」\nB：「媽媽喔。」',
         level: 'N5',
         options: [
-            { text: '作{つく}った', reason: '正確！過去常體（る → った）。' },
-            { text: '作{つく}りた', reason: '錯誤。' },
             { text: '作{つく}たた', reason: '錯誤。' },
-            { text: '使{つか}った', reason: '錯誤：用（つかった）。語境是「製作結果」，つくった較常用於料{りょう}理{り}/物品。' }
+            { text: '作{つく}った', reason: '正確！過去常體（る → った）。' },
+            { text: '使{つか}った', reason: '錯誤：用（つかった）。語境是「製作結果」，つくった較常用於料{りょう}理{り}/物品。' },
+            { text: '作{つく}りた', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】過去式音便（對話）
 【解析】「作{つく}る」た形為「作った」。
@@ -2322,12 +2322,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*幫忙{いそが}* 父{ちち}親的工作。',
         level: 'N5',
         options: [
-            { text: '手伝{てつだ}います', reason: '正確！五段（う → い）。' },
-            { text: '手伝{てつだ}うます', reason: '錯誤。' },
             { text: '手伝{てつだ}って', reason: '錯誤：て形。' },
+            { text: '手伝{てつだ}うます', reason: '錯誤。' },
+            { text: '手伝{てつだ}います', reason: '正確！五段（う → い）。' },
             { text: '働{はたら}きます', reason: '錯誤：工作（はたらく）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「手伝{てつだ}う」是五段。ます形「手伝{てつだ}います」。
@@ -2346,12 +2346,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*離開/出* 房間。',
         level: 'N5',
         options: [
-            { text: '出{で}ます', reason: '正確！一段動詞（でる → でます）。' },
-            { text: '出{で}ります', reason: '錯誤：誤作五段。' },
             { text: '出{だ}します', reason: '錯誤：拿出（だす）。' },
-            { text: '入{はい}ります', reason: '錯誤：進。' }
+            { text: '入{はい}ります', reason: '錯誤：進。' },
+            { text: '出{で}ります', reason: '錯誤：誤作五段。' },
+            { text: '出{で}ます', reason: '正確！一段動詞（でる → でます）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】一段動詞活用
 【解析】「出{で}る」是一段。ます形「出{で}ます」。助詞用「o」（離開的場{ば}所{しょ}）。
@@ -2396,12 +2396,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '鐘 *停* 了。',
         level: 'N5',
         options: [
+            { text: '終{お}わりました', reason: '錯誤：結束。' },
             { text: '止{と}まりました', reason: '正確！五段（る → り）。' },
-            { text: '止{と}めました', reason: '錯誤：使停下（とめる - 他動詞）。' },
             { text: '止{と}まました', reason: '錯誤。' },
-            { text: '終{お}わりました', reason: '錯誤：結束。' }
+            { text: '止{と}めました', reason: '錯誤：使停下（とめる - 他動詞）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】自他動詞
 【解析】「止{と}まる」（停止/停下）是自動詞。ます形「止{と}まります」。
@@ -2422,12 +2422,12 @@ export const n5Questions: StaticQuestion[] = [
 
         // 乾淨 d是tractor
         options: [
-            { text: '取{と}って', reason: '正確！' },
-            { text: '取{と}りて', reason: '錯誤。' },
             { text: '手伝{てつだ}って', reason: '錯誤：幫忙{いそが}。' },
-            { text: '貸{か}して', reason: '錯誤：借。' }
+            { text: '貸{か}して', reason: '錯誤：借。' },
+            { text: '取{と}って', reason: '正確！' },
+            { text: '取{と}りて', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞促音便
 【解析】「取{と}る」字{じ}尾ru，て形促音便「取{と}って」。
@@ -2447,12 +2447,12 @@ export const n5Questions: StaticQuestion[] = [
 
         // 乾淨 選項
         options: [
-            { text: '鳴{な}いて', reason: '正確！' },
             { text: '鳴{な}きて', reason: '錯誤。' },
             { text: '鳴{な}って', reason: '錯誤：鳴る（響）。' },
-            { text: '歌{うた}って', reason: '錯誤：唱。' }
+            { text: '歌{うた}って', reason: '錯誤：唱。' },
+            { text: '鳴{な}いて', reason: '正確！' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞音便
 【解析】「鳴{な}く」字{じ}尾ku，て形為「鳴{な}いて」。
@@ -2473,9 +2473,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '並{なら}んで', reason: '正確！五段撥音便（ぶ → んで）。' },
+            { text: '待{ま}って', reason: '錯誤：等。' },
             { text: '並{なら}びて', reason: '錯誤。' },
-            { text: '並{なら}って', reason: '錯誤：ならう（學習）→ ならって。ならぶ（排隊）→ ならんで。' },
-            { text: '待{ま}って', reason: '錯誤：等。' }
+            { text: '並{なら}って', reason: '錯誤：ならう（學習）→ ならって。ならぶ（排隊）→ ならんで。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -2496,12 +2496,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*變成* / 當上 醫生。',
         level: 'N5',
         options: [
-            { text: 'なります', reason: '正確！五段（る → り）。' },
-            { text: 'なれます', reason: '錯誤：可能形/なれる（習慣）。' },
             { text: '鳴{な}ります', reason: '錯誤：響（なる）。讀音同，但漢字{じ}不同。如果ひらがな的話，從「いしゃ に」可以判斷是「變成」。' },
-            { text: 'あります', reason: '錯誤：有。' }
+            { text: 'なります', reason: '正確！五段（る → り）。' },
+            { text: 'あります', reason: '錯誤：有。' },
+            { text: 'なれます', reason: '錯誤：可能形/なれる（習慣）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「なる」（成為）是五段。ます形「なります」。
@@ -2518,12 +2518,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「*變* 大了呢。」\nB：「嗯。」',
         level: 'N5',
         options: [
-            { text: 'なった', reason: '正確！過去常體（る → った）。' },
+            { text: 'あった', reason: '錯誤：有。' },
             { text: 'なりた', reason: '錯誤。' },
-            { text: 'なて', reason: '錯誤。' },
-            { text: 'あった', reason: '錯誤：有。' }
+            { text: 'なった', reason: '正確！過去常體（る → った）。' },
+            { text: 'なて', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】變化表現（對話）
 【解析】形容詞連用形く + なる。「大きくなる」。過去式「なった」。
@@ -2544,12 +2544,12 @@ export const n5Questions: StaticQuestion[] = [
 
         // 乾淨 d是tractor
         options: [
-            { text: '寝{ね}ました', reason: '正確！' },
-            { text: '寝{ね}りました', reason: '錯誤。' },
             { text: '寝{ね}て', reason: '錯誤：て形。' },
-            { text: '起{お}きました', reason: '錯誤。' }
+            { text: '寝{ね}りました', reason: '錯誤。' },
+            { text: '起{お}きました', reason: '錯誤。' },
+            { text: '寝{ね}ました', reason: '正確！' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】一段動詞活用
 【解析】「寝{ね}る」是一段。ます形「寝{ね}ました」。
@@ -2569,9 +2569,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '飲{の}みます', reason: '正確！五段（む → み）。' },
+            { text: '食{た}べます', reason: '錯誤：吃。' },
             { text: '飲{の}むます', reason: '錯誤。' },
-            { text: '飲{の}んで', reason: '錯誤：て形。' },
-            { text: '食{た}べます', reason: '錯誤：吃。' }
+            { text: '飲{の}んで', reason: '錯誤：て形。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -2590,12 +2590,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「藥，*吃* (喝) 了嗎？」\nB：「不，還沒。」',
         level: 'N5',
         options: [
-            { text: '飲{の}んだ', reason: '正確！' },
             { text: '飲{の}いだ', reason: '錯誤：ぐ 是 いだ。む 是 んだ。' },
+            { text: '飲{の}んだ', reason: '正確！' },
             { text: '飲{の}むた', reason: '錯誤。' },
             { text: '食{た}べた', reason: '錯誤：吃藥日語用「飲{の}む」（のむ）。不用たべる。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】服藥動詞（對話）
 【解析】吃藥/喝藥用「薬{くすり}を飲{の}む」。過去常體「飲んだ」。
@@ -2614,12 +2614,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*搭* 電{でん}車{しゃ}。',
         level: 'N5',
         options: [
-            { text: '乗{の}ります', reason: '正確！五段（る → り）。' },
-            { text: '乗{の}ます', reason: '錯誤。' },
             { text: '降{お}ります', reason: '錯誤：下車{くるま}（おりる）。' },
-            { text: '入{はい}ります', reason: '錯誤：進。' }
+            { text: '入{はい}ります', reason: '錯誤：進。' },
+            { text: '乗{の}ります', reason: '正確！五段（る → り）。' },
+            { text: '乗{の}ます', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】移動動詞
 【解析】搭乘交通工具用「～に乗{の}る」。
@@ -2638,12 +2638,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '請 *脫* 鞋。',
         level: 'N5',
         options: [
-            { text: '脱{ぬ}いで', reason: '正確！五段（ぐ → いで）。' },
             { text: '脱{ぬ}んで', reason: '錯誤：ぐ は いで。む/ぶ/ぬ は んで。這是ぬぐ（ぐ），不是ぬぬ。' },
+            { text: '履{は}いて', reason: '錯誤：穿。' },
             { text: '脱{ぬ}ぐて', reason: '錯誤。' },
-            { text: '履{は}いて', reason: '錯誤：穿。' }
+            { text: '脱{ぬ}いで', reason: '正確！五段（ぐ → いで）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞音便
 【解析】「脱{ぬ}ぐ」字{じ}尾gu，て形「脱{ぬ}いで」。
@@ -2664,8 +2664,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '入{はい}ります', reason: '正確！五段（特殊）。る前i段但屬五段。はいります. ' },
             { text: '入{はい}ます', reason: '錯誤：誤作一段。' },
-            { text: '入{い}れます', reason: '錯誤：放入（いれる）。' },
-            { text: '帰{かえ}ります', reason: '錯誤：回。' }
+            { text: '帰{かえ}ります', reason: '錯誤：回。' },
+            { text: '入{い}れます', reason: '錯誤：放入（いれる）。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -2686,12 +2686,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*穿* 褲子。',
         level: 'N5',
         options: [
+            { text: '脱{ぬ}ぎます', reason: '錯誤：脫。' },
             { text: '履{は}きます', reason: '正確！五段。' },
             { text: '着{き}ます', reason: '錯誤：穿（上衣）。' },
-            { text: '脱{ぬ}ぎます', reason: '錯誤：脫。' },
             { text: 'かぶります', reason: '錯誤：戴（帽）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】穿戴動詞
 【解析】穿下半{はん}身（褲/鞋）用「履{は}く」。
@@ -2710,12 +2710,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '上課 *開始*。',
         level: 'N5',
         options: [
-            { text: '始{はじ}まります', reason: '正確！五段自動詞。' },
-            { text: '始{はじ}めます', reason: '錯誤：開始（はじめる - 他動詞）。じゅぎょう が（語境：課自然開始/時{じ}程）。通常用はじまる。' },
             { text: '終{お}わります', reason: '錯誤：結束。' },
+            { text: '始{はじ}めます', reason: '錯誤：開始（はじめる - 他動詞）。じゅぎょう が（語境：課自然開始/時{じ}程）。通常用はじまる。' },
+            { text: '始{はじ}まります', reason: '正確！五段自動詞。' },
             { text: '止{と}まります', reason: '錯誤：停。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】自他動詞
 【解析】開始（自動詞）用「始{はじ}まる」。
@@ -2734,12 +2734,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '請不要在走廊 *跑*。',
         level: 'N5',
         options: [
-            { text: '走{はし}らないで', reason: '正確！否定請求（はしる → はしらない → はしらない で）。はしるは五段（特殊）。る → ら。' },
             { text: '走{はし}ないで', reason: '錯誤：誤作一段（去る）。' },
+            { text: '泳{およ}がないで', reason: '錯誤：游。' },
             { text: '歩{ある}かないで', reason: '錯誤：走。' },
-            { text: '泳{およ}がないで', reason: '錯誤：游。' }
+            { text: '走{はし}らないで', reason: '正確！否定請求（はしる → はしらない → はしらない で）。はしるは五段（特殊）。る → ら。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】特殊五段動詞與否定
 【解析】「走{はし}る」是五段。否定形「走{はし}らない」。
@@ -2760,8 +2760,8 @@ export const n5Questions: StaticQuestion[] = [
         options: [
             { text: '働{はたら}いて', reason: '正確！五段（く → いて）。' },
             { text: '働{はたら}かって', reason: '錯誤。' },
-            { text: '動{うご}いて', reason: '錯誤：動。' },
-            { text: '休{やす}んで', reason: '錯誤：休息。' }
+            { text: '休{やす}んで', reason: '錯誤：休息。' },
+            { text: '動{うご}いて', reason: '錯誤：動。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -2782,12 +2782,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*拉* 門。',
         level: 'N5',
         options: [
-            { text: '引{ひ}きます', reason: '正確！五段。' },
             { text: '押{お}します', reason: '錯誤：推。' },
-            { text: '開{あ}けます', reason: '錯誤：開。' },
-            { text: '閉{し}めます', reason: '錯誤：關。' }
+            { text: '引{ひ}きます', reason: '正確！五段。' },
+            { text: '閉{し}めます', reason: '錯誤：關。' },
+            { text: '開{あ}けます', reason: '錯誤：開。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】單字{じ}語義
 【解析】拉用「引{ひ}く」。
@@ -2807,12 +2807,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '正在 *下* 雨。',
         level: 'N5',
         options: [
-            { text: '降{ふ}って', reason: '正確！五段促音便（る → って）。' },
+            { text: '来{き}て', reason: '錯誤：來。' },
             { text: '降{ふ}りて', reason: '錯誤：おりる（下車{くるま}）は おりて。ふる（落下）は ふって。' },
-            { text: '降{お}りて', reason: '錯誤：下車{くるま}。' },
-            { text: '来{き}て', reason: '錯誤：來。' }
+            { text: '降{ふ}って', reason: '正確！五段促音便（る → って）。' },
+            { text: '降{お}りて', reason: '錯誤：下車{くるま}。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞促音便
 【解析】「降{ふ}る」是五段，て形「降{ふ}って」。注意「降{お}りる」是一段，て形「降{お}りて」。
@@ -2830,12 +2830,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '在轉角向右 *轉*。',
         level: 'N5',
         options: [
-            { text: '曲{ま}がります', reason: '正確！五段。' },
-            { text: '曲{ま}げます', reason: '錯誤：彎曲（まげる - 他動詞）。彎曲某物。轉是まがる。' },
             { text: '渡{わた}ります', reason: '錯誤：過（橋）。' },
-            { text: '止{と}まります', reason: '錯誤：停。' }
+            { text: '止{と}まります', reason: '錯誤：停。' },
+            { text: '曲{ま}げます', reason: '錯誤：彎曲（まげる - 他動詞）。彎曲某物。轉是まがる。' },
+            { text: '曲{ま}がります', reason: '正確！五段。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】移動動詞
 【解析】轉彎用「曲{ま}がる」。
@@ -2855,9 +2855,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '待{ま}って', reason: '正確！五段促音便（つ → って）。' },
+            { text: '立{た}って', reason: '錯誤：站。' },
             { text: '待{ま}ちて', reason: '錯誤。' },
-            { text: '持{も}って', reason: '錯誤：拿（もつ → もって）。活用相同但漢字{じ}不同。' },
-            { text: '立{た}って', reason: '錯誤：站。' }
+            { text: '持{も}って', reason: '錯誤：拿（もつ → もって）。活用相同但漢字{じ}不同。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -2880,12 +2880,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*拿* 著行李。',
         level: 'N5',
         options: [
-            { text: '持{も}って', reason: '正確！五段促音便。' },
-            { text: '持{も}ちて', reason: '錯誤。' },
             { text: '待{ま}って', reason: '錯誤：等。' },
-            { text: '取{と}って', reason: '錯誤：取。' }
+            { text: '持{も}って', reason: '正確！五段促音便。' },
+            { text: '取{と}って', reason: '錯誤：取。' },
+            { text: '持{も}ちて', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞促音便
 【解析】「持{も}つ」字{じ}尾tsu，て形「持{も}って」。
@@ -2904,12 +2904,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*給* 人{ひと} *看* (顯示) 照片。',
         level: 'N5',
         options: [
-            { text: '見{み}せます', reason: '正確！一段他動詞。' },
-            { text: '見{み}ます', reason: '錯誤：看（みる）。' },
+            { text: '教{おし}えます', reason: '錯誤：教。' },
             { text: '見{み}えます', reason: '錯誤：看得見{み}（みえる - 自動詞）。' },
-            { text: '教{おし}えます', reason: '錯誤：教。' }
+            { text: '見{み}せます', reason: '正確！一段他動詞。' },
+            { text: '見{み}ます', reason: '錯誤：看（みる）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】自他動詞
 【解析】給看/展示用「見{み}せる」。
@@ -2929,12 +2929,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*看* 電影。',
         level: 'N5',
         options: [
-            { text: '見{み}ます', reason: '正確！一段。' },
-            { text: '見{み}ります', reason: '錯誤。' },
             { text: '読{よ}みます', reason: '錯誤：讀。' },
-            { text: '書{か}きます', reason: '錯誤：寫。' }
+            { text: '書{か}きます', reason: '錯誤：寫。' },
+            { text: '見{み}ります', reason: '錯誤。' },
+            { text: '見{み}ます', reason: '正確！一段。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】一段動詞 활용
 【解析】「見{み}る」是一段。ます形「見{み}ます」。
@@ -2954,9 +2954,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '休{やす}みます', reason: '正確！五段。' },
-            { text: '休{やす}むます', reason: '錯誤。' },
+            { text: '遊{あそ}びます', reason: '錯誤：玩。' },
             { text: '働{はたら}きます', reason: '錯誤：工作。' },
-            { text: '遊{あそ}びます', reason: '錯誤：玩。' }
+            { text: '休{やす}むます', reason: '錯誤。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -2975,12 +2975,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「累了呢。」\nB：「稍微 *休息* 吧？」',
         level: 'N5',
         options: [
-            { text: '休{やす}もう', reason: '正確！意向形常體（む → もう）。' },
-            { text: '休{やす}む', reason: '錯誤：辭書形（我要休息？）。やすもう か（要不要休息？）。' },
             { text: '休{やす}んで', reason: '錯誤：て形。' },
-            { text: '休{やす}め', reason: '錯誤：命令。' }
+            { text: '休{やす}もう', reason: '正確！意向形常體（む → もう）。' },
+            { text: '休{やす}め', reason: '錯誤：命令。' },
+            { text: '休{やす}む', reason: '錯誤：辭書形（我要休息？）。やすもう か（要不要休息？）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】意向形（對話）
 【解析】提議「休息吧」用意向形「休もう」。
@@ -3000,12 +3000,12 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
 
         options: [
-            { text: 'やります', reason: '正確！' },
-            { text: 'やれます', reason: '錯誤。' },
+            { text: 'とります', reason: '錯誤：取。' },
             { text: 'あげます', reason: '錯誤：給。' },
-            { text: 'とります', reason: '錯誤：取。' }
+            { text: 'やります', reason: '正確！' },
+            { text: 'やれます', reason: '錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用
 【解析】「やる」是五段。ます形「やります」。做/給（動植物）。
@@ -3024,12 +3024,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '請 *叫* 計程車{くるま}。',
         level: 'N5',
         options: [
-            { text: '呼{よ}んで', reason: '正確！五段撥音便（ぶ → んで）。' },
-            { text: '呼{よ}びて', reason: '錯誤。' },
             { text: '読{よ}んで', reason: '錯誤：讀（よむ → よんで）。活用相同，漢字{じ}不同。' },
-            { text: '飲{の}んで', reason: '錯誤：喝。' }
+            { text: '呼{よ}びて', reason: '錯誤。' },
+            { text: '飲{の}んで', reason: '錯誤：喝。' },
+            { text: '呼{よ}んで', reason: '正確！五段撥音便（ぶ → んで）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞撥音便
 【解析】「呼{よ}ぶ」字{じ}尾bu，て形「呼{よ}んで」。
@@ -3072,12 +3072,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*懂* 日語。',
         level: 'N5',
         options: [
-            { text: '分{わ}かります', reason: '正確！五段。' },
             { text: '分{わ}けます', reason: '錯誤：分{ふん}開（わける）。' },
+            { text: '分{わ}かります', reason: '正確！五段。' },
             { text: '知{し}ります', reason: '錯誤：知。' },
             { text: '聞{き}きます', reason: '錯誤：聽。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】理解動詞
 【解析】「分{わ}かる」是五段。ます形「分{わ}かります」。助詞用ga。
@@ -3094,12 +3094,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「意思 *懂* 嗎？」\nB：「不，太{ふと}難{むずか}了 *不懂*。」',
         level: 'N5',
         options: [
-            { text: '分{わ}かる／分{わ}からない', reason: '正確！常體問答。' },
-            { text: '分{わ}ける／分{わ}けない', reason: '錯誤：わける（分{ふん}開）。' },
             { text: '知{し}る／知{し}らない', reason: '錯誤：しる（知道消息/資訊）。理解意思用わかる。' },
+            { text: '分{わ}ける／分{わ}けない', reason: '錯誤：わける（分{ふん}開）。' },
+            { text: '分{わ}かる／分{わ}からない', reason: '正確！常體問答。' },
             { text: '分{わ}かった／分{わ}からなかった', reason: '錯誤：過去。語境暗示現在對主題的理解。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】否定活用（對話）
 【解析】「分{ふん}かる」的否定是「分{ふん}からない」。
@@ -3118,12 +3118,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*忘* 了作業。',
         level: 'N5',
         options: [
-            { text: '忘{わす}れました', reason: '正確！一段。' },
-            { text: '忘{わす}りました', reason: '錯誤：誤作五段。' },
             { text: '覚{おぼ}えました', reason: '錯誤：記住。' },
-            { text: '無{な}くしました', reason: '錯誤：弄丟。' }
+            { text: '無{な}くしました', reason: '錯誤：弄丟。' },
+            { text: '忘{わす}りました', reason: '錯誤：誤作五段。' },
+            { text: '忘{わす}れました', reason: '正確！一段。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】一段動詞 활용
 【解析】「忘{わす}れる」是一段。ます形「忘{わす}れます」。
@@ -3166,12 +3166,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '在圖書館 *借* 書。',
         level: 'N5',
         options: [
-            { text: '借{か}ります', reason: '正確！上一段動詞（去る + ます）。' },
             { text: '借{か}りります', reason: '錯誤：誤作五段。一段動詞直接去る加ます。' },
+            { text: '借{か}ります', reason: '正確！上一段動詞（去る + ます）。' },
             { text: '借{か}れます', reason: '錯誤：誤用え段。かりるはい段一段動詞。' },
             { text: '借{か}るます', reason: '錯誤：辭書形不能直接接ます。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】上一段動詞ます形變化
 【解析】「借{か}りる」是上一段動詞（り為i段音）。ます形為去ru加masu：「借ります」。
@@ -3189,12 +3189,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「*借* 字{じ}典也可以嗎？」\nB：「請用。」',
         level: 'N5',
         options: [
-            { text: '借{か}りて', reason: '正確！て形（かりて）接許可表現「～てもいい」。' },
-            { text: '借{か}って', reason: '錯誤：誤作五段促音便。一段動詞て形為かりて。' },
             { text: '借{か}り', reason: '錯誤：連用形單獨不接「もいい」。' },
+            { text: '借{か}って', reason: '錯誤：誤作五段促音便。一段動詞て形為かりて。' },
+            { text: '借{か}りて', reason: '正確！て形（かりて）接許可表現「～てもいい」。' },
             { text: '借{か}りる', reason: '錯誤：辭書形不接「も」。許可表現需要て形。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】請求許可（對話）
 【解析】「～てもいいですか」（...也可以嗎）接て形。「借りて」。
@@ -3214,12 +3214,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '*回答* 老師的問{もん}題{だい}。',
         level: 'N5',
         options: [
-            { text: '答{こた}えます', reason: '正確！下一段動詞（去る + ます）。' },
-            { text: '答{こた}えりします', reason: '錯誤：誤作五段。一段動詞去る即可。' },
             { text: '答{こた}います', reason: '錯誤：誤刪え段。こたえるの語幹是こたえ。' },
-            { text: '答{こた}るます', reason: '錯誤：接續錯誤。' }
+            { text: '答{こた}るます', reason: '錯誤：接續錯誤。' },
+            { text: '答{こた}えりします', reason: '錯誤：誤作五段。一段動詞去る即可。' },
+            { text: '答{こた}えます', reason: '正確！下一段動詞（去る + ます）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】下一段動詞ます形變化
 【解析】「答{こた}える」是下一段動詞（え為e段音）。ます形為「答えます」。
@@ -3238,9 +3238,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '答{こた}えられ', reason: '正確！可能否定形（一段動詞可能：える → られる，再接ない）。' },
-            { text: '答{こた}えない', reason: '錯誤：普通否定形。題意是「無法回答」（能力），不是「不回答」（意志）。' },
+            { text: '答{こた}わない', reason: '錯誤：活用錯誤。' },
             { text: '答{こた}えれない', reason: '錯誤：「ら」抜き言{こと}葉{ば}（口語省略）。正式應為「答えられない」。' },
-            { text: '答{こた}わない', reason: '錯誤：活用錯誤。' }
+            { text: '答{こた}えない', reason: '錯誤：普通否定形。題意是「無法回答」（能力），不是「不回答」（意志）。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -3262,12 +3262,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '現在正要 *出門*。',
         level: 'N5',
         options: [
+            { text: '出{で}かけます', reason: '錯誤：ます形不接「ところ」。' },
             { text: '出{で}かける', reason: '正確！辭書形接「ところ」表示即將。' },
-            { text: '出{で}かけた', reason: '錯誤：過去式。「出{で}かけたところ」是「剛出門完」，題目「今{いま}から」是即將。' },
             { text: '出{で}かけて', reason: '錯誤：て形。「～ているところ」是正在進行。' },
-            { text: '出{で}かけます', reason: '錯誤：ます形不接「ところ」。' }
+            { text: '出{で}かけた', reason: '錯誤：過去式。「出{で}かけたところ」是「剛出門完」，題目「今{いま}から」是即將。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】動作即將發生（～ところ）
 【解析】「辭書形 + ところ」表示即將做某事。「出{で}かけるところ」（正要出門）。
@@ -3285,12 +3285,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「一起去買東西嗎？」\nB：「抱歉，現在要 *出門*，下次吧。」',
         level: 'N5',
         options: [
-            { text: '出{で}かけます', reason: '正確！ます形（禮貌表達）。' },
-            { text: '出{で}かける', reason: '錯誤：辭書形。對話中{なか}拒絕邀約，用ます形較禮貌。' },
             { text: '出{で}かけた', reason: '錯誤：過去式。「今{いま}から」（現在開始）用現在/未來時{じ}。' },
+            { text: '出{で}かける', reason: '錯誤：辭書形。對話中{なか}拒絕邀約，用ます形較禮貌。' },
+            { text: '出{で}かけます', reason: '正確！ます形（禮貌表達）。' },
             { text: '出{で}かけて', reason: '錯誤：て形。「～てから」後面通常接另一動作，此處直接說「要出門」。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】禮貌拒絕（對話）
 【解析】「出{で}かけます」ます形表達禮貌。「今{いま}から～」說明即將的行動。
@@ -3310,12 +3310,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '用菜刀 *切* 蔬菜。',
         level: 'N5',
         options: [
-            { text: '切{き}ります', reason: '正確！五段動詞（る結尾，う → い + ます）。' },
-            { text: '切{き}ます', reason: '錯誤：誤以為一段動詞。きる（切）是五段，變成きります。' },
             { text: '切{き}れます', reason: '錯誤：可能形（能切）。題目是普通陳述。' },
-            { text: '切{き}るます', reason: '錯誤：辭書形不直接接ます。' }
+            { text: '切{き}るます', reason: '錯誤：辭書形不直接接ます。' },
+            { text: '切{き}ます', reason: '錯誤：誤以為一段動詞。きる（切）是五段，變成きります。' },
+            { text: '切{き}ります', reason: '正確！五段動詞（る結尾，う → い + ます）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用（特殊る結尾）
 【解析】「切{き}る」雖然る結尾，但是五段動詞。ます形為「切{き}ります」。
@@ -3334,8 +3334,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '切{き}って', reason: '正確！て形（五段ru結尾促音便：きって）。' },
-            { text: '切{き}て', reason: '錯誤：誤作一段動詞。五段る結尾促音便為促音+te。' },
             { text: '切{き}りて', reason: '錯誤：活用錯誤。' },
+            { text: '切{き}て', reason: '錯誤：誤作一段動詞。五段る結尾促音便為促音+te。' },
             { text: '切{き}り', reason: '錯誤：連用形，不接「ください」。' }
         ],
         correctIndex: 0,
@@ -3358,12 +3358,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '每天 *學習* 兩小時{じ}。',
         level: 'N5',
         options: [
+            { text: '勉強{べんきょう}られます', reason: '錯誤：誤作可能形。' },
             { text: '勉強{べんきょう}します', reason: '正確！サ變動詞（する → します）。' },
-            { text: '勉強{べんきょう}する', reason: '錯誤：辭書形。句末應用ます形（禮貌）。' },
             { text: '勉強{べんきょう}すます', reason: '錯誤：活用錯誤。する變成します。' },
-            { text: '勉強{べんきょう}られます', reason: '錯誤：誤作可能形。' }
+            { text: '勉強{べんきょう}する', reason: '錯誤：辭書形。句末應用ます形（禮貌）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】サ變動詞ます形變化
 【解析】「勉強{べんきょう}する」是サ變動詞。する → します。
@@ -3381,12 +3381,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「今{いま}晚要去玩嗎？」\nB：「抱歉，明天考試，不得不 *學習*。」',
         level: 'N5',
         options: [
-            { text: '勉強{べんきょう}し', reason: '正確！連用形接「なくちゃ」（口語：不得不）。' },
-            { text: '勉強{べんきょう}する', reason: '錯誤：辭書形不接「なくちゃ」。' },
             { text: '勉強{べんきょう}して', reason: '錯誤：て形。「～てなくちゃ」不常用，應為「～しなくちゃ」。' },
-            { text: '勉強{べんきょう}しない', reason: '錯誤：否定形。「～しないなくちゃ」雙重否定錯誤。' }
+            { text: '勉強{べんきょう}しない', reason: '錯誤：否定形。「～しないなくちゃ」雙重否定錯誤。' },
+            { text: '勉強{べんきょう}し', reason: '正確！連用形接「なくちゃ」（口語：不得不）。' },
+            { text: '勉強{べんきょう}する', reason: '錯誤：辭書形不接「なくちゃ」。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】義務表現（對話）
 【解析】「～なくちゃ」（口語：不得不）接動詞連用形。「勉強しなくちゃ」。
@@ -3406,12 +3406,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '明天天氣應該會 *放晴* 吧。',
         level: 'N5',
         options: [
-            { text: '晴{は}れる', reason: '正確！辭書形接「でしょう」（推測）。' },
-            { text: '晴{は}れます', reason: '錯誤：ます形不接「でしょう」。應為「晴{は}れるでしょう」或「晴れますでしょう（較不常用）」。' },
             { text: '晴{は}れた', reason: '錯誤：過去式。「晴れたでしょう」是「晴了吧（推測過去）」。題目「明{あし}日{た}」是未來。' },
-            { text: '晴{は}れて', reason: '錯誤：て形不接「でしょう」。' }
+            { text: '晴{は}れます', reason: '錯誤：ます形不接「でしょう」。應為「晴{は}れるでしょう」或「晴れますでしょう（較不常用）」。' },
+            { text: '晴{は}れて', reason: '錯誤：て形不接「でしょう」。' },
+            { text: '晴{は}れる', reason: '正確！辭書形接「でしょう」（推測）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】推測表現（天氣）
 【解析】「辭書形 + でしょう」表示推測。「晴{は}れるでしょう」（會晴吧）。
@@ -3430,8 +3430,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '晴{は}れた', reason: '正確！過去式（已經晴了）。' },
-            { text: '晴{は}れる', reason: '錯誤：辭書形。「もう」（已經）暗示已完成，用過去式。' },
             { text: '晴{は}れて', reason: '錯誤：て形。「晴れている」才是狀態，但答句更強調「已晴」。' },
+            { text: '晴{は}れる', reason: '錯誤：辭書形。「もう」（已經）暗示已完成，用過去式。' },
             { text: '晴{は}れます', reason: '錯誤：ます形表未來/習慣，不符「もう」（已）。' }
         ],
         correctIndex: 0,
@@ -3454,12 +3454,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '從下午開始天空{そら}好{す}像會 *陰天*。',
         level: 'N5',
         options: [
-            { text: '曇{くも}り', reason: '正確！連用形接「そう」（樣態：好{す}像要...）。' },
-            { text: '曇{くも}る', reason: '錯誤：辭書形。「～そう」接連用形（くもり）。' },
             { text: '曇{くも}った', reason: '錯誤：過去式。「曇ったそう」是「聽說陰了」（傳聞），不是「好{す}像要陰」。' },
-            { text: '曇{くも}ります', reason: '錯誤：ます形不接「そう」。' }
+            { text: '曇{くも}り', reason: '正確！連用形接「そう」（樣態：好{す}像要...）。' },
+            { text: '曇{くも}ります', reason: '錯誤：ます形不接「そう」。' },
+            { text: '曇{くも}る', reason: '錯誤：辭書形。「～そう」接連用形（くもり）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】樣態推測（～そう）
 【解析】「連用形 + そう」表示樣子（好{す}像要...）。「曇りそう」（好{す}像要陰天）。
@@ -3477,12 +3477,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「帶傘{かさ}去嗎？」\nB：「嗯，因為 *陰天* 了。」',
         level: 'N5',
         options: [
-            { text: '曇{くも}って', reason: '正確！て形表示理{り}由{ゆう}（因為陰了）。' },
+            { text: '曇{くも}った', reason: '錯誤：過去式。雖可接「から」，但て形「曇って」更常用於表理{り}由{ゆう}。' },
             { text: '曇{くも}る', reason: '錯誤：辭書形。用「から」說理{り}由{ゆう}，前面通常用て形或普通形。' },
-            { text: '曇{くも}り', reason: '錯誤：連用形或名詞。「曇り」可作名詞（陰天），但接「から」時{じ}用動詞形式較自然。' },
-            { text: '曇{くも}った', reason: '錯誤：過去式。雖可接「から」，但て形「曇って」更常用於表理{り}由{ゆう}。' }
+            { text: '曇{くも}って', reason: '正確！て形表示理{り}由{ゆう}（因為陰了）。' },
+            { text: '曇{くも}り', reason: '錯誤：連用形或名詞。「曇り」可作名詞（陰天），但接「から」時{じ}用動詞形式較自然。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】理{り}由{ゆう}表達（對話）
 【解析】「～てから」或「～て」表示理{り}由{ゆう}。五段動詞「曇{くも}る」て形為「曇って」。
@@ -3502,12 +3502,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '電燈 *熄滅* 了。',
         level: 'N5',
         options: [
-            { text: '消{き}えました', reason: '正確！一段動詞過去式（きえる → きえました）。' },
+            { text: '消{き}ました', reason: '錯誤：語幹錯誤。きえる語幹是きえ。' },
             { text: '消{き}えりました', reason: '錯誤：誤作五段。一段動詞去る加ます。' },
             { text: '消{き}しました', reason: '錯誤：「消{け}す」（他動詞：熄滅某物）的過去式。題目主語「電気が」用自動詞。' },
-            { text: '消{き}ました', reason: '錯誤：語幹錯誤。きえる語幹是きえ。' }
+            { text: '消{き}えました', reason: '正確！一段動詞過去式（きえる → きえました）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】自動詞過去式（一段動詞）
 【解析】「消{き}える」是自動詞（自己消失）。過去式「消えました」。
@@ -3526,8 +3526,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '消{き}えた', reason: '正確！過去式（普通形）接「んじゃない」（推測：不是...嗎）。' },
-            { text: '消{き}える', reason: '錯誤：辭書形。雖可接「んじゃない」，但「消えたんじゃない」更強調已發生。' },
             { text: '消{き}えて', reason: '錯誤：て形。「～てんじゃない」可用，但「消えた」更直接表示結果。' },
+            { text: '消{き}える', reason: '錯誤：辭書形。雖可接「んじゃない」，但「消えたんじゃない」更強調已發生。' },
             { text: '消{き}します', reason: '錯誤：「消{け}す」（他動詞）ます形。且不接「ん」。' }
         ],
         correctIndex: 0,
@@ -3550,12 +3550,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '因為沒錢而 *困擾*。',
         level: 'N5',
         options: [
+            { text: '困{こま}るます', reason: '錯誤：辭書形不直接接ます。' },
             { text: '困{こま}ります', reason: '正確！五段動詞（る結尾，う → い + ます）。' },
             { text: '困{こま}ます', reason: '錯誤：誤作一段動詞。こまる是五段。' },
-            { text: '困{こま}れます', reason: '錯誤：誤作可能形。' },
-            { text: '困{こま}るます', reason: '錯誤：辭書形不直接接ます。' }
+            { text: '困{こま}れます', reason: '錯誤：誤作可能形。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用（る結尾）
 【解析】「困{こま}る」是五段動詞（る結尾但是五段）。ます形為「困ります」。
@@ -3573,12 +3573,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「作業有不懂的地方。」\nB：「那很 *困擾* 呢。要幫忙{いそが}嗎？」',
         level: 'N5',
         options: [
-            { text: '困{こま}った', reason: '正確！過去式作形容詞用（困った：麻煩的/困擾的）。' },
-            { text: '困{こま}る', reason: '錯誤：辭書形。「困った」作形容詞修飾名詞或獨立表示「真困擾」。' },
             { text: '困{こま}って', reason: '錯誤：て形。雖可用（困ってね），但「困った」更常見{み}。' },
-            { text: '困{こま}ります', reason: '錯誤：ます形不接「ね」作感嘆。' }
+            { text: '困{こま}ります', reason: '錯誤：ます形不接「ね」作感嘆。' },
+            { text: '困{こま}った', reason: '正確！過去式作形容詞用（困った：麻煩的/困擾的）。' },
+            { text: '困{こま}る', reason: '錯誤：辭書形。「困った」作形容詞修飾名詞或獨立表示「真困擾」。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】形容詞化過去式（對話）
 【解析】「困った」可作形容詞用（麻煩的）。「困ったね」（真困擾呢）。
@@ -3598,12 +3598,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '門 *開* 了。',
         level: 'N5',
         options: [
-            { text: '開{あ}きました', reason: '正確！五段動詞過去式（自動詞）。' },
             { text: '開{あ}けました', reason: '錯誤：「開{あ}ける」（他動詞：開門）。題目「ドアが」用自動詞あく。' },
             { text: '開{あ}いました', reason: '錯誤：活用錯誤。あく（五段）過去式是あきました，不是あいました。' },
-            { text: '開{あ}くました', reason: '錯誤：辭書形不直接接ます。' }
+            { text: '開{あ}くました', reason: '錯誤：辭書形不直接接ます。' },
+            { text: '開{あ}きました', reason: '正確！五段動詞過去式（自動詞）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】自動詞過去式（五段動詞）
 【解析】「開{あ}く」是自動詞（自己開）。過去式「開{あ}きました」。
@@ -3622,9 +3622,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '開{あ}く', reason: '正確！辭書形（普通形）接「よ」（強調）。' },
+            { text: '開{あ}いて', reason: '錯誤：て形。不符語境。' },
             { text: '開{あ}きます', reason: '錯誤：ます形。雖正確，但口語對話常用普通形+よ。' },
-            { text: '開{あ}ける', reason: '錯誤：他動詞。店{みせ}自己開，用自動詞あく。' },
-            { text: '開{あ}いて', reason: '錯誤：て形。不符語境。' }
+            { text: '開{あ}ける', reason: '錯誤：他動詞。店{みせ}自己開，用自動詞あく。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -3646,12 +3646,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '強風在 *吹*。',
         level: 'N5',
         options: [
+            { text: '吹{ふ}いました', reason: '錯誤：過去式（吹了）。題目描述現在狀態。' },
             { text: '吹{ふ}いています', reason: '正確！進行式（～ている：正在...）。' },
             { text: '吹{ふ}きます', reason: '錯誤：ます形。可用但「吹いています」更強調正在進行。' },
-            { text: '吹{ふ}くています', reason: '錯誤：辭書形不接「ている」。應為て形。' },
-            { text: '吹{ふ}いました', reason: '錯誤：過去式（吹了）。題目描述現在狀態。' }
+            { text: '吹{ふ}くています', reason: '錯誤：辭書形不接「ている」。應為て形。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】進行式（～ている）
 【解析】「～ている」表示正在進行。五段動詞「吹く」て形為「吹いて」。
@@ -3669,12 +3669,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「好{す}冷{つめ}呢。」\nB：「嗯，因為風在 *吹*。」',
         level: 'N5',
         options: [
-            { text: '吹{ふ}いて', reason: '正確！て形表示理{り}由{ゆう}（因為風吹）。' },
-            { text: '吹{ふ}く', reason: '錯誤：辭書形。雖可接「から」，但て形更自然。' },
             { text: '吹{ふ}いた', reason: '錯誤：過去式。風現在正吹，用現在式或て形。' },
-            { text: '吹{ふ}き', reason: '錯誤：連用形不直接接「から」。' }
+            { text: '吹{ふ}き', reason: '錯誤：連用形不直接接「から」。' },
+            { text: '吹{ふ}いて', reason: '正確！て形表示理{り}由{ゆう}（因為風吹）。' },
+            { text: '吹{ふ}く', reason: '錯誤：辭書形。雖可接「から」，但て形更自然。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】理{り}由{ゆう}表達（對話）
 【解析】「～て + から」表示理{り}由{ゆう}。「吹いてから」（因為吹）。
@@ -3694,12 +3694,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '在牆上 *貼* 海{うみ}報。',
         level: 'N5',
         options: [
-            { text: '貼{は}ります', reason: '正確！五段動詞（る結尾，う → い + ます）。' },
-            { text: '貼{は}ます', reason: '錯誤：誤作一段動詞。はる是五段。' },
             { text: '貼{は}れます', reason: '錯誤：可能形（能貼）。題目是普通陳述。' },
-            { text: '貼{は}るます', reason: '錯誤：辭書形不直接接ます。' }
+            { text: '貼{は}ます', reason: '錯誤：誤作一段動詞。はる是五段。' },
+            { text: '貼{は}るます', reason: '錯誤：辭書形不直接接ます。' },
+            { text: '貼{は}ります', reason: '正確！五段動詞（る結尾，う → い + ます）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用（る結尾）
 【解析】「貼{は}る」是五段動詞（る結尾但是五段）。ます形為「貼ります」。
@@ -3718,8 +3718,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '貼{は}ろう', reason: '正確！意向形（～よう：打算...）表詢問。' },
-            { text: '貼{は}る', reason: '錯誤：辭書形。「どこに貼る」雖可用，但「貼ろう」更表示意向商量。' },
             { text: '貼{は}ります', reason: '錯誤：ます形。意向疑問用「貼ろうか」較自然。' },
+            { text: '貼{は}る', reason: '錯誤：辭書形。「どこに貼る」雖可用，但「貼ろう」更表示意向商量。' },
             { text: '貼{は}って', reason: '錯誤：て形不符語境。' }
         ],
         correctIndex: 0,
@@ -3742,12 +3742,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '會 *彈* 鋼琴。',
         level: 'N5',
         options: [
+            { text: '弾{ひ}ける', reason: '錯誤：可能形。雖「弾ける」（能彈）正確，但題目框架是「～ことができる」。' },
             { text: '弾{ひ}く', reason: '正確！辭書形接「ことができる」（能夠...）。' },
             { text: '弾{ひ}きます', reason: '錯誤：ます形不接「こと」。' },
-            { text: '弾{ひ}いて', reason: '錯誤：て形不接「こと」。' },
-            { text: '弾{ひ}ける', reason: '錯誤：可能形。雖「弾ける」（能彈）正確，但題目框架是「～ことができる」。' }
+            { text: '弾{ひ}いて', reason: '錯誤：て形不接「こと」。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】能力表現（～ことができる）
 【解析】「辭書形 + ことができる」表示能力。「弾くことができる」（能彈）。
@@ -3765,12 +3765,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「吉他彈得真好{す}。」\nB：「謝謝。因為每天都 *彈*。」',
         level: 'N5',
         options: [
-            { text: '弾{ひ}いて', reason: '正確！て形表示理{り}由{ゆう}（因為每天彈）。' },
+            { text: '弾{ひ}き', reason: '錯誤：連用形不直接接「から」。' },
             { text: '弾{ひ}く', reason: '錯誤：辭書形。雖可接「から」，但て形更自然。' },
-            { text: '弾{ひ}いた', reason: '錯誤：過去式。習慣用現在式或て形。' },
-            { text: '弾{ひ}き', reason: '錯誤：連用形不直接接「から」。' }
+            { text: '弾{ひ}いて', reason: '正確！て形表示理{り}由{ゆう}（因為每天彈）。' },
+            { text: '弾{ひ}いた', reason: '錯誤：過去式。習慣用現在式或て形。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】理{り}由{ゆう}表達（對話）
 【解析】「～て + から」表示理{り}由{ゆう}。五段「弾く」て形為「弾いて」。
@@ -3790,12 +3790,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '這個工作 *需要* 電腦。',
         level: 'N5',
         options: [
-            { text: '要{い}ります', reason: '正確！五段動詞（る結尾，う → い + ます）。' },
-            { text: '要{い}ます', reason: '錯誤：誤作一段動詞。いる（要）是五段，不同於いる（居）一段。' },
             { text: '要{い}れます', reason: '錯誤：誤作可能形。' },
-            { text: '要{い}るます', reason: '錯誤：辭書形不直接接ます。' }
+            { text: '要{い}ます', reason: '錯誤：誤作一段動詞。いる（要）是五段，不同於いる（居）一段。' },
+            { text: '要{い}るます', reason: '錯誤：辭書形不直接接ます。' },
+            { text: '要{い}ります', reason: '正確！五段動詞（る結尾，う → い + ます）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】五段動詞活用（特殊いる）
 【解析】「要{い}る」（需要）是五段動詞。不同於「居{い}る」（在）一段動詞。
@@ -3814,9 +3814,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '要{い}る', reason: '正確！辭書形（口語疑問）。' },
-            { text: '要{い}ります', reason: '錯誤：ます形。雖正確，但口語「いる？」更常見{み}。' },
+            { text: '要{い}って', reason: '錯誤：て形不用於疑問。' },
             { text: '要{い}った', reason: '錯誤：過去式不符語境。' },
-            { text: '要{い}って', reason: '錯誤：て形不用於疑問。' }
+            { text: '要{い}ります', reason: '錯誤：ます形。雖正確，但口語「いる？」更常見{み}。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -3838,12 +3838,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '給朋友 *打電{でん}話{わ}*。',
         level: 'N5',
         options: [
+            { text: '電話{でんわ}すます', reason: '錯誤：活用錯誤。する變成します。' },
             { text: '電話{でんわ}します', reason: '正確！サ變動詞（する → します）。' },
             { text: '電話{でんわ}する', reason: '錯誤：辭書形。句末應用ます形（禮貌）。' },
-            { text: '電話{でんわ}すます', reason: '錯誤：活用錯誤。する變成します。' },
             { text: '電話{でんわ}しる', reason: '錯誤：活用錯誤。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】サ變動詞ます形變化
 【解析】「電話{でんわ}する」是サ變動詞。する → します。
@@ -3861,12 +3861,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「現在忙{いそが}嗎？」\nB：「不，等一下。現在正在 *打電{でん}話{わ}*。」',
         level: 'N5',
         options: [
-            { text: '電話{でんわ}して', reason: '正確！て形接「いる」（進行式）。' },
-            { text: '電話{でんわ}する', reason: '錯誤：辭書形。進行式需要て形。' },
             { text: '電話{でんわ}した', reason: '錯誤：過去式。題目「今{いま}」表示現在進行。' },
+            { text: '電話{でんわ}する', reason: '錯誤：辭書形。進行式需要て形。' },
+            { text: '電話{でんわ}して', reason: '正確！て形接「いる」（進行式）。' },
             { text: '電話{でんわ}し', reason: '錯誤：連用形不接「いる」，應為「している」。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】進行式（對話）
 【解析】「～ている」表進行。サ變「する」て形為「して」。「電{でん}話{わ}してる」。
@@ -3886,12 +3886,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '預定明年 *結{けっ}婚{こん}*。',
         level: 'N5',
         options: [
-            { text: '結婚{けっこん}する', reason: '正確！辭書形接「予定」（預定）。' },
             { text: '結婚{けっこん}します', reason: '錯誤：ます形不接「予定」。' },
+            { text: '結婚{けっこん}して', reason: '錯誤：て形不接「予定」。' },
             { text: '結婚{けっこん}した', reason: '錯誤：過去式。「結{けっ}婚{こん}した予定」語意錯誤。' },
-            { text: '結婚{けっこん}して', reason: '錯誤：て形不接「予定」。' }
+            { text: '結婚{けっこん}する', reason: '正確！辭書形接「予定」（預定）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】預定表現（～予定）
 【解析】「辭書形 + 予定」表示預定。「結{けっ}婚{こん}する予定」（預定結{けっ}婚{こん}）。
@@ -3910,8 +3910,8 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '結婚{けっこん}した', reason: '正確！過去式（普通形）接「んです」（解釋/強調）。' },
-            { text: '結婚{けっこん}する', reason: '錯誤：辭書形。「去{きょ}年{ねん}」（過去）用過去式。' },
             { text: '結婚{けっこん}して', reason: '錯誤：て形。「～てんです」可用但較口語，「した」更標準。' },
+            { text: '結婚{けっこん}する', reason: '錯誤：辭書形。「去{きょ}年{ねん}」（過去）用過去式。' },
             { text: '結婚{けっこん}します', reason: '錯誤：ます形不接「ん」。' }
         ],
         correctIndex: 0,
@@ -3934,12 +3934,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '請 *影印* 這份文件。',
         level: 'N5',
         options: [
-            { text: 'コピーして', reason: '正確！て形接「ください」（請...）。' },
             { text: 'コピーする', reason: '錯誤：辭書形不接「ください」。' },
-            { text: 'コピーした', reason: '錯誤：過去式不接「ください」。' },
-            { text: 'コピーし', reason: '錯誤：連用形不直接接「ください」，應為「して」。' }
+            { text: 'コピーして', reason: '正確！て形接「ください」（請...）。' },
+            { text: 'コピーし', reason: '錯誤：連用形不直接接「ください」，應為「して」。' },
+            { text: 'コピーした', reason: '錯誤：過去式不接「ください」。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】請求表現（～てください）
 【解析】「～てください」（請...）接て形。サ變「する」て形為「して」。
@@ -3957,12 +3957,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「這個要幾張？」\nB：「打算 *影印* 10張。」',
         level: 'N5',
         options: [
-            { text: 'コピーする', reason: '正確！辭書形接「つもり」（打算）。' },
-            { text: 'コピーします', reason: '錯誤：ます形不接「つもり」。' },
+            { text: 'コピーして', reason: '錯誤：て形不接「つもり」。' },
             { text: 'コピーした', reason: '錯誤：過去式。「したつもり」是「以為印了」。' },
-            { text: 'コピーして', reason: '錯誤：て形不接「つもり」。' }
+            { text: 'コピーする', reason: '正確！辭書形接「つもり」（打算）。' },
+            { text: 'コピーします', reason: '錯誤：ます形不接「つもり」。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】意圖表現（對話）
 【解析】「辭書形 + つもり」表示打算。「コピーするつもり」（打算影印）。
@@ -3982,12 +3982,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '每週六 *打掃* 房間。',
         level: 'N5',
         options: [
-            { text: '掃除{そうじ}します', reason: '正確！サ變動詞ます形（習慣）。' },
             { text: '掃除{そうじ}する', reason: '錯誤：辭書形。句末應用ます形（禮貌）。' },
             { text: '掃除{そうじ}して', reason: '錯誤：て形不作句末（需接續）。' },
-            { text: '掃除{そうじ}すます', reason: '錯誤：活用錯誤。する變成します。' }
+            { text: '掃除{そうじ}すます', reason: '錯誤：活用錯誤。する變成します。' },
+            { text: '掃除{そうじ}します', reason: '正確！サ變動詞ます形（習慣）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 3,
         tag: 'conjugation',
         correctRule: `【考點】サ變動詞習慣表達
 【解析】「掃除{そうじ}する」ます形為「掃{そう}除{じ}します」。表示習慣動作。
@@ -4006,9 +4006,9 @@ export const n5Questions: StaticQuestion[] = [
         level: 'N5',
         options: [
             { text: '掃除{そうじ}した', reason: '正確！過去式接「ばかり」（剛剛才...）。' },
-            { text: '掃除{そうじ}する', reason: '錯誤：辭書形。「～ばかり」接過去式表「剛完成」。' },
             { text: '掃除{そうじ}して', reason: '錯誤：て形。「～てばかり」意思不同（老是...）。' },
-            { text: '掃除{そうじ}します', reason: '錯誤：ます形不接「ばかり」。' }
+            { text: '掃除{そうじ}します', reason: '錯誤：ます形不接「ばかり」。' },
+            { text: '掃除{そうじ}する', reason: '錯誤：辭書形。「～ばかり」接過去式表「剛完成」。' }
         ],
         correctIndex: 0,
         tag: 'conjugation',
@@ -4030,12 +4030,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: '週末在家{いえ} *做菜*。',
         level: 'N5',
         options: [
-            { text: '料理{りょうり}します', reason: '正確！サ變動詞ます形。' },
             { text: '料理{りょうり}する', reason: '錯誤：辭書形。句末應用ます形（禮貌）。' },
+            { text: '料理{りょうり}します', reason: '正確！サ變動詞ます形。' },
             { text: '料理{りょうり}すます', reason: '錯誤：活用錯誤。する變成します。' },
             { text: '料理{りょうり}して', reason: '錯誤：て形不作句末（需接續）。' }
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         tag: 'conjugation',
         correctRule: `【考點】サ變動詞ます形變化
 【解析】「料理{りょうり}する」是サ變動詞。ます形為「料{りょう}理{り}します」。
@@ -4053,12 +4053,12 @@ export const n5Questions: StaticQuestion[] = [
         prob_zh: 'A：「我喜歡 *做菜*。」\nB：「哇，真厲害。」',
         level: 'N5',
         options: [
-            { text: '料理{りょうり}する', reason: '正確！辭書形接「の」（名詞化）。' },
-            { text: '料理{りょうり}します', reason: '錯誤：ます形不接「の」。' },
+            { text: '料理{りょうり}して', reason: '錯誤：て形不接「の」。' },
             { text: '料理{りょうり}した', reason: '錯誤：過去式。「したのが好{す}き」意思不同（喜歡做過的）。' },
-            { text: '料理{りょうり}して', reason: '錯誤：て形不接「の」。' }
+            { text: '料理{りょうり}する', reason: '正確！辭書形接「の」（名詞化）。' },
+            { text: '料理{りょうり}します', reason: '錯誤：ます形不接「の」。' }
         ],
-        correctIndex: 0,
+        correctIndex: 2,
         tag: 'conjugation',
         correctRule: `【考點】名詞化（～のが）
 【解析】「辭書形 + のが好{す}き」表示喜歡做某事。「料{りょう}理{り}するのが好{す}き」。

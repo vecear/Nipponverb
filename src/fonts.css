@@ -1,0 +1,8 @@
+/* 針對日文內容使用日文字型 */
+:lang(ja), [lang="ja"], .jp-text {
+  font-family: "Noto Sans JP", "Zen Kurenaido", sans-serif !important;
+}
+/* 針對中文內容使用中文字型 */
+:lang(zh), :lang(zh-TW), :lang(zh-Hant), [lang="zh"], [lang="zh-TW"], .zh-text {
+  font-family: "Noto Sans TC", sans-serif !important;
+}

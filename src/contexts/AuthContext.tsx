@@ -18,6 +18,7 @@ import { auth, googleProvider } from '../config/firebase'
 import { getUserProfile, createUserProfile } from '../services/userService'
 import { useUserStore } from '../store/useUserStore'
 import { useGrammarCompletionStore } from '../store/useGrammarCompletionStore'
+import { usePracticeStore } from '../store/usePracticeStore'
 
 interface AuthContextType {
   currentUser: User | null
@@ -70,6 +71,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     await signOut(auth)
     useUserStore.getState().clearProfile()
     useGrammarCompletionStore.getState().clearLocal()
+    usePracticeStore.getState().clearPracticeData()
   }
 
   const updateUserEmail = async (email: string) => {
@@ -125,12 +127,15 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
           }
           // Sync grammar completions from Firebase
           await useGrammarCompletionStore.getState().syncFromFirebase(user.uid)
+          // 載入使用者的練習資料
+          await usePracticeStore.getState().setCurrentUserId(user.uid)
         } catch (error) {
           console.error('Error fetching user profile:', error)
         }
       } else {
         useUserStore.getState().clearProfile()
         useGrammarCompletionStore.getState().clearLocal()
+        usePracticeStore.getState().clearPracticeData()
       }
       setLoading(false)
     })
