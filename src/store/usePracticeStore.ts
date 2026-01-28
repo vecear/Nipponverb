@@ -324,10 +324,10 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
       (h) => h.category === category && h.level === level
     )
 
-    // 收集所有做過的題目 ID
+    // 收集所有實際作答過的題目 ID（使用 answerRecords 而非 questions）
     const allQuestionIds = new Set<string>()
     relevantHistory.forEach((entry) => {
-      entry.questions.forEach((q) => allQuestionIds.add(q.id))
+      entry.answerRecords.forEach((record) => allQuestionIds.add(record.questionId))
     })
 
     let totalCorrect = 0
