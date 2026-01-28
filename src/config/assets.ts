@@ -35,6 +35,23 @@ import ryorininFemaleImg from '../assets/characters/jobs/ryorinin_female.png'
 import hokanMaleImg from '../assets/characters/jobs/hokan_male.png'
 import geigiFemaleImg from '../assets/characters/jobs/geigi_female.png'
 
+// 職業階段角色 (Stage 1)
+import doshinStage1MaleImg from '../assets/characters/stages/doshin_stage1_male.png'
+import doshinStage1FemaleImg from '../assets/characters/stages/doshin_stage1_female.png'
+import yakushaStage1MaleImg from '../assets/characters/stages/yakusha_stage1_male.png'
+import yakushaStage1FemaleImg from '../assets/characters/stages/yakusha_stage1_female.png'
+import ukiyoeshiStage1MaleImg from '../assets/characters/stages/ukiyoeshi_stage1_male.png'
+import ukiyoeshiStage1FemaleImg from '../assets/characters/stages/ukiyoeshi_stage1_female.png'
+import shoninStage1MaleImg from '../assets/characters/stages/shonin_stage1_male.png'
+import shoninStage1FemaleImg from '../assets/characters/stages/shonin_stage1_female.png'
+import gakushaStage1MaleImg from '../assets/characters/stages/gakusha_stage1_male.png'
+import gakushaStage1FemaleImg from '../assets/characters/stages/gakusha_stage1_female.png'
+import onmyojiStage1MaleImg from '../assets/characters/stages/onmyoji_stage1_male.png'
+import mikoStage1FemaleImg from '../assets/characters/stages/miko_stage1_female.png'
+import ryorininStage1MaleImg from '../assets/characters/stages/ryorinin_stage1_male.png'
+import ryorininStage1FemaleImg from '../assets/characters/stages/ryorinin_stage1_female.png'
+import hokanStage1MaleImg from '../assets/characters/stages/hokan_stage1_male.png'
+
 // ============================================
 // 品牌素材
 // ============================================
@@ -138,18 +155,53 @@ export const JOB_CHARACTERS: Record<string, { male: string; female: string }> = 
 // 職業階段角色圖片
 // 命名規則: {jobId}_stage{1-10}_{gender}.png
 // ============================================
+type StageImages = {
+  [stage: number]: {
+    male?: string
+    female?: string
+  }
+}
+
+export const JOB_STAGE_CHARACTERS: Record<string, StageImages> = {
+  doshin: {
+    1: { male: doshinStage1MaleImg, female: doshinStage1FemaleImg },
+  },
+  yakusha: {
+    1: { male: yakushaStage1MaleImg, female: yakushaStage1FemaleImg },
+  },
+  ukiyoeshi: {
+    1: { male: ukiyoeshiStage1MaleImg, female: ukiyoeshiStage1FemaleImg },
+  },
+  shonin: {
+    1: { male: shoninStage1MaleImg, female: shoninStage1FemaleImg },
+  },
+  gakusha: {
+    1: { male: gakushaStage1MaleImg, female: gakushaStage1FemaleImg },
+  },
+  onmyoji: {
+    1: { male: onmyojiStage1MaleImg, female: mikoStage1FemaleImg },
+  },
+  ryorinin: {
+    1: { male: ryorininStage1MaleImg, female: ryorininStage1FemaleImg },
+  },
+  hokan: {
+    1: { male: hokanStage1MaleImg, female: undefined }, // 女性版本尚未生成
+  },
+}
+
+// 取得職業階段角色圖片
 export const getJobStageCharacter = (
   jobId: string,
   stage: number,
   gender: 'male' | 'female'
-): string => {
-  // 特殊處理幇間的女性版本
-  let actualJobId = jobId
-  if (gender === 'female' && jobId === 'hokan') {
-    actualJobId = 'geigi'
-  }
+): string | null => {
+  const jobStages = JOB_STAGE_CHARACTERS[jobId]
+  if (!jobStages) return null
 
-  return `/assets/characters/stages/${actualJobId}_stage${stage}_${gender}.png`
+  const stageImages = jobStages[stage]
+  if (!stageImages) return null
+
+  return stageImages[gender] || null
 }
 
 // ============================================
@@ -185,6 +237,23 @@ export const LEGACY_ICONS = {
 }
 
 // ============================================
+// 輔助函數：根據等級取得階段編號
+// ============================================
+const getStageFromLevel = (level: number): number => {
+  if (level < 5) return 0
+  if (level < 15) return 1
+  if (level < 25) return 2
+  if (level < 35) return 3
+  if (level < 45) return 4
+  if (level < 55) return 5
+  if (level < 65) return 6
+  if (level < 75) return 7
+  if (level < 85) return 8
+  if (level < 95) return 9
+  return 10
+}
+
+// ============================================
 // 輔助函數：取得角色圖片路徑
 // ============================================
 export const getCharacterImage = (
@@ -197,13 +266,22 @@ export const getCharacterImage = (
     return NOVICE_CHARACTERS[gender]
   }
 
-  // 使用職業圖片
+  // 計算當前階段
+  const stage = getStageFromLevel(level)
+
+  // 嘗試取得階段圖片
+  const stageImage = getJobStageCharacter(jobId, stage, gender)
+  if (stageImage) {
+    return stageImage
+  }
+
+  // 後備：使用職業基礎圖片
   const jobCharacters = JOB_CHARACTERS[jobId]
   if (jobCharacters) {
     return jobCharacters[gender]
   }
 
-  // 後備：使用初心者圖片
+  // 最終後備：使用初心者圖片
   return NOVICE_CHARACTERS[gender]
 }
 
