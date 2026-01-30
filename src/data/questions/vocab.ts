@@ -2,11 +2,29 @@ import { StaticQuestion } from './types'
 import { n5VocabBatch1 } from './n5_vocab_new';
 import { n5VocabBatch2 } from './n5_vocab_batch2';
 import { n5_vocab_batch3 } from './n5_vocab_batch3';
+import { n5VocabBatch4 } from './n5_vocab_batch4';
+import { n5VocabBatch5 } from './n5_vocab_batch5';
+import { n5VocabBatch6 } from './n5_vocab_batch6';
+import { n5VocabBatch7 } from './n5_vocab_batch7';
+import { n5VocabBatch8 } from './n5_vocab_batch8';
+import { n5VocabBatch9 } from './n5_vocab_batch9';
+import { n5VocabBatch10 } from './n5_vocab_batch10';
+import { n5VocabBatch11 } from './n5_vocab_batch11';
+import { n5VocabBatch12 } from './n5_vocab_batch12';
 
 export const vocabN5: StaticQuestion[] = [
     ...n5VocabBatch1,
     ...n5VocabBatch2,
     ...n5_vocab_batch3,
+    ...n5VocabBatch4,
+    ...n5VocabBatch5,
+    ...n5VocabBatch6,
+    ...n5VocabBatch7,
+    ...n5VocabBatch8,
+    ...n5VocabBatch9,
+    ...n5VocabBatch10,
+    ...n5VocabBatch11,
+    ...n5VocabBatch12,
     {
         id: 'n5_vocab_1',
         prob: '毎日{まいにち}、______で学校{がっこう}へ行{い}きます。',

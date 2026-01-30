@@ -33,12 +33,12 @@
 ---
 
 **Total Words:** 644
-**Completed:** 15
-**Pending:** 629
+**Completed:** 55
+**Pending:** 589
 
 ## Next Action
 
-**Resume from Word #16:** 姉 (あね)
+**Resume from Word #56:** 茶碗 (ちゃわん)
 
 ## Detailed Status
 
@@ -59,46 +59,46 @@
 | 13 | 雨 | あめ | Completed | Batch 3 |
 | 14 | 飴 | あめ | Completed | Batch 3 |
 | 15 | あなた | あなた | Completed | Batch 3 |
-| 16 | 姉 | あね | Pending |  |
-| 17 | 兄 | あni | Pending |  |
-| 18 | あの | あの | Pending |  |
-| 19 | 青 | あお | Pending |  |
-| 20 | 青い | あおい | Pending |  |
-| 21 | アパート | アパート | Pending |  |
-| 22 | 洗う | あらう | Pending |  |
-| 23 | あれ | あれ | Pending |  |
-| 24 | ある | ある | Pending |  |
-| 25 | 歩く | あるく | Pending |  |
-| 26 | 朝 | あさ | Pending |  |
-| 27 | 朝ご飯 | あさごはん | Pending |  |
-| 28 | 明後日 | あさって | Pending |  |
-| 29 | 足 | あし | Pending |  |
-| 30 | 明日 | あした | Pending |  |
-| 31 | 遊ぶ | あそぶ | Pending |  |
-| 32 | あそこ | あそこ | Pending |  |
-| 33 | 頭 | あたま | Pending |  |
-| 34 | 新しい | あたらしい | Pending |  |
-| 35 | 暖かい | あたたかい | Pending |  |
-| 36 | 後 | あと | Pending |  |
-| 37 | 厚い | あつい | Pending |  |
-| 38 | 暑い | あつい | Pending |  |
-| 39 | 熱い | あつい | Pending |  |
-| 40 | 会う | あう | Pending |  |
-| 41 | 晩ご飯 | ばんごはん | Pending |  |
-| 42 | 番号 | ばんごう | Pending |  |
-| 43 | バス | バス | Pending |  |
-| 44 | バター | バター | Pending |  |
-| 45 | ベッド | ベッド | Pending |  |
-| 46 | 勉強 | べんきょう | Pending |  |
-| 47 | 便利 | べんり | Pending |  |
-| 48 | ボールペン | ボールペン | Pending |  |
-| 49 | ボタン | ボタン | Pending |  |
-| 50 | 帽子 | ぼうし | Pending |  |
-| 51 | 文章 | ぶんしょう | Pending |  |
-| 52 | 豚肉 | ぶたにく | Pending |  |
-| 53 | 病院 | びょういん | Pending |  |
-| 54 | 病気 | びょうき | Pending |  |
-| 55 | 茶色 | ちゃいろ | Pending |  |
+| 16 | 姉 | あね | Completed | Batch 4 |
+| 17 | 兄 | あに | Completed | Batch 4 |
+| 18 | あの | あの | Completed | Batch 4 |
+| 19 | 青 | あお | Completed | Batch 4 |
+| 20 | 青い | あおい | Completed | Batch 4 |
+| 21 | アパート | アパート | Completed | Batch 5 |
+| 22 | 洗う | あらう | Completed | Batch 5 |
+| 23 | あれ | あれ | Completed | Batch 5 |
+| 24 | ある | ある | Completed | Batch 5 |
+| 25 | 歩く | あるく | Completed | Batch 5 |
+| 26 | 朝 | あさ | Completed | Batch 6 |
+| 27 | 朝ご飯 | あさごはん | Completed | Batch 6 |
+| 28 | 明後日 | あさって | Completed | Batch 6 |
+| 29 | 足 | あし | Completed | Batch 6 |
+| 30 | 明日 | あした | Completed | Batch 6 |
+| 31 | 遊ぶ | あそぶ | Completed | Batch 7 |
+| 32 | あそこ | あそこ | Completed | Batch 7 |
+| 33 | 頭 | あたま | Completed | Batch 7 |
+| 34 | 新しい | あたらしい | Completed | Batch 7 |
+| 35 | 暖かい | あたたかい | Completed | Batch 7 |
+| 36 | 後 | あと | Completed | Batch 8 |
+| 37 | 厚い | あつい | Completed | Batch 8 |
+| 38 | 暑い | あつい | Completed | Batch 8 |
+| 39 | 熱い | あつい | Completed | Batch 8 |
+| 40 | 会う | あう | Completed | Batch 8 |
+| 41 | 晩ご飯 | ばんごはん | Completed | Batch 9 |
+| 42 | 番号 | ばんごう | Completed | Batch 9 |
+| 43 | バス | バス | Completed | Batch 9 |
+| 44 | バター | バター | Completed | Batch 9 |
+| 45 | ベッド | ベッド | Completed | Batch 9 |
+| 46 | 勉強 | べんきょう | Completed | Batch 10 |
+| 47 | 便利 | べんり | Completed | Batch 10 |
+| 48 | ボールペン | ボールペン | Completed | Batch 10 |
+| 49 | ボタン | ボタン | Completed | Batch 10 |
+| 50 | 帽子 | ぼうし | Completed | Batch 10 |
+| 51 | 文章 | ぶんしょう | Completed | Batch 11 |
+| 52 | 豚肉 | ぶたにく | Completed | Batch 11 |
+| 53 | 病院 | びょういん | Completed | Batch 11 |
+| 54 | 病気 | びょうき | Completed | Batch 11 |
+| 55 | 茶色 | ちゃいろ | Completed | Batch 11 |
 | 56 | 茶碗 | ちゃわん | Pending |  |
 | 57 | 父 | ちち | Pending |  |
 | 58 | 違う | ちがう | Pending |  |

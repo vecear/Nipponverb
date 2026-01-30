@@ -385,29 +385,6 @@ export const n5_vocab_batch3: StaticQuestion[] = [
     // 題型 5: 類義語 - 對話
     {
         id: 'n5_vocab_ruigigo_ame_rain_2',
-        prob: '「<u>雨</u>がやみましたね。」\n「ええ、散歩{さんぽ}に行{い}きませんか。」',
-        prob_zh: '「 *雨* 停了呢。」\n「是啊，要去散步嗎？」(選出與劃線部分下雨狀況相反的選項)',
-        options: [
-            { text: '降{ふ}る', reason: '正確！「止む」（停）的反義是「降る」（下）。' },
-            { text: '吹{ふ}く', reason: '錯誤：这是吹（风）。' },
-            { text: '曇{くも}る', reason: '錯誤：这是阴天。' },
-            { text: '晴{は}れる', reason: '錯誤：这是放晴。' }
-        ],
-        // Note: The question structure here is slightly different, asking for antonym context or just ensuring understanding. 
-        // Let's stick to standard synonym format. Restructuring.
-        // Actually, "ruigigo" asks for closest meaning. Let's re-do.
-
-        // Retry logic:
-        // "Rain stopped" -> "Not raining anymore"
-        // Let's change the question content slightly to fit the mold better.
-        correctIndex: 0,
-        level: 'N5',
-        tag: 'vocab_ruigigo',
-    },
-    // RE-DO 題型 5: 類義語 - 對話 (Override above)
-    // 題型 5: 類義語 - 對話
-    {
-        id: 'n5_vocab_ruigigo_ame_rain_2',
         prob: '「外{そと}を見{み}てください。<u>雨</u>ですよ。」\n「あ、傘{かさ}を持{も}っていません。」',
         prob_zh: '「請看外面。下 *雨* 喔。」\n「啊，我沒帶傘。」(選出意思最接近的選項)',
         options: [

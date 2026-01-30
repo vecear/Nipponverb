@@ -18,6 +18,7 @@ import JobSelection from './pages/JobSelection'
 import Admin from './pages/Admin'
 import VocabularyLevelSelection from './pages/VocabularyLevelSelection'
 import { VocabularyList } from './pages/vocabulary'
+import DatesAndCounters from './pages/DatesAndCounters'
 import ProtectedRoute from './components/ProtectedRoute'
 
 import AdminRoute from './components/AdminRoute'
@@ -45,6 +46,7 @@ function App() {
               <Route path="/job-selection" element={<JobSelection />} />
               <Route path="/vocabulary" element={<VocabularyLevelSelection />} />
               <Route path="/vocabulary/:level" element={<VocabularyList />} />
+              <Route path="/date-counters" element={<DatesAndCounters />} />
             </Route>
             {/* 管理員路由 */}
             <Route path="/admin" element={<AdminRoute><Admin /></AdminRoute>} />
