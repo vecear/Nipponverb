@@ -70,6 +70,8 @@ import ryorininStage2MaleImg from '../assets/characters/stages/ryorinin_stage2_m
 import ryorininStage2FemaleImg from '../assets/characters/stages/ryorinin_stage2_female.png'
 import hokanStage2MaleImg from '../assets/characters/stages/hokan_stage2_male.png'
 import geigiStage2FemaleImg from '../assets/characters/stages/geigi_stage2_female.png'
+import practiceVocabularyImg from '../assets/icons/practice/practice-vocabulary.png'
+import practiceDatesImg from '../assets/icons/practice/practice-dates.png'
 
 // ============================================
 // 品牌素材
@@ -110,7 +112,8 @@ export const PRACTICE_ICONS = {
   verbs: '/assets/icons/practice/practice-verbs.png',
   grammar: '/assets/icons/practice/practice-grammar.png',
   kanji: '/assets/icons/practice/practice-kanji.png',
-  vocabulary: '/assets/icons/practice/practice-vocabulary.png',
+  vocabulary: practiceVocabularyImg,
+  dates: practiceDatesImg,
 }
 
 // ============================================
@@ -341,6 +344,7 @@ export const getPracticeIcon = (category: string): string | null => {
     grammar: PRACTICE_ICONS.grammar,
     kanji: PRACTICE_ICONS.kanji,
     vocabulary: PRACTICE_ICONS.vocabulary,
+    dates: PRACTICE_ICONS.dates,
   }
   return icons[category] || null
 }

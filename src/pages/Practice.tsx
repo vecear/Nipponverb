@@ -13,6 +13,7 @@ import MatchingQuestionCard from '../components/MatchingQuestionCard'
 // import { generateVerbQuestion } from '../data/verbs' // Legacy dynamic generator
 import { generateGrammarQuestion } from '../data/grammar'
 import { generateKanjiQuestion } from '../data/kanji'
+import { generateDateCounterQuestion } from '../data/questions/dateCounters'
 import { addExp, updateUserProgression } from '../services/progressionService'
 import { DEFAULT_PROGRESSION, EXP_REWARDS } from '../types/progression'
 import { PRACTICE_ICONS, UI_ELEMENTS, ILLUSTRATIONS } from '../config/assets'
@@ -26,7 +27,7 @@ import { n2Questions } from '../data/questions/n2'
 import { n1Questions } from '../data/questions/n1'
 import { vocabN5, vocabN4, vocabN3, vocabN2, vocabN1 } from '../data/questions/vocab'
 
-type PracticeCategory = 'gojuon' | 'verbs' | 'grammar' | 'kanji' | 'vocabulary'
+type PracticeCategory = 'gojuon' | 'verbs' | 'grammar' | 'kanji' | 'vocabulary' | 'dates'
 type GojuonSubcategory = 'hiragana' | 'katakana'
 
 const Practice = () => {
@@ -291,6 +292,9 @@ const Practice = () => {
         case 'kanji':
           q = generateKanjiQuestion(level, Math.random() > 0.5 ? 'reading' : 'meaning', i18n.language)
           break
+        case 'dates':
+          q = generateDateCounterQuestion()
+          break
         default:
           q = generateGrammarQuestion(level)
       }
@@ -439,6 +443,14 @@ const Practice = () => {
       icon: '🔤',
       color: 'from-yellow-400 to-orange-500',
       image: PRACTICE_ICONS.vocabulary,
+    },
+    {
+      id: 'dates',
+      title: t('practice.categories.dates.title'),
+      description: t('practice.categories.dates.description'),
+      icon: '📅',
+      color: 'from-emerald-500 to-cyan-500',
+      image: PRACTICE_ICONS.dates,
     },
   ]
 
@@ -759,12 +771,16 @@ const Practice = () => {
                       if (level === 'N2') return vocabN2.length;
                       if (level === 'N1') return vocabN1.length;
                     }
-                    if (category !== 'verbs') return null;
-                    if (level === 'N5') return n5Questions.length;
-                    if (level === 'N4') return n4Questions.length;
-                    if (level === 'N3') return n3Questions.length;
-                    if (level === 'N2') return n2Questions.length;
-                    if (level === 'N1') return n1Questions.length;
+                    if (category === 'verbs') {
+                      if (level === 'N5') return n5Questions.length;
+                      if (level === 'N4') return n4Questions.length;
+                      if (level === 'N3') return n3Questions.length;
+                      if (level === 'N2') return n2Questions.length;
+                      if (level === 'N1') return n1Questions.length;
+                    }
+                    if (category === 'dates') {
+                      return null;
+                    }
                     return null;
                   };
                   const totalQuestionCount = getCount();
@@ -836,11 +852,10 @@ const Practice = () => {
                   <button
                     onClick={() => hasWrongQuestions && startReviewWrongQuestions()}
                     disabled={!hasWrongQuestions}
-                    className={`flex-1 py-3 sm:py-4 text-base sm:text-lg font-bold rounded-lg transition-all ${
-                      hasWrongQuestions
-                        ? 'bg-vermilion text-white hover:bg-vermilion/90 shadow-md'
-                        : 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                    }`}
+                    className={`flex-1 py-3 sm:py-4 text-base sm:text-lg font-bold rounded-lg transition-all ${hasWrongQuestions
+                      ? 'bg-vermilion text-white hover:bg-vermilion/90 shadow-md'
+                      : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                      }`}
                   >
                     複習錯題 {hasWrongQuestions ? `(${wrongIds.length})` : ''}
                   </button>
@@ -955,33 +970,33 @@ const Practice = () => {
             </h1>
 
             <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6 my-2">
-            <div className="text-center">
-              <div className="text-lg sm:text-xl md:text-2xl font-bold text-vermilion">
-                {score}/{answeredCount}
-              </div>
-              <div className="text-[9px] sm:text-[10px] md:text-xs text-sumi">{t('practice.questionsCorrect')}</div>
-            </div>
-
-            <div className="w-px h-6 sm:h-8 bg-wave-deep/20"></div>
-
-            <div className="text-center">
-              <div className="text-lg sm:text-xl md:text-2xl font-bold text-wave-deep">
-                {accuracy}%
-              </div>
-              <div className="text-[9px] sm:text-[10px] md:text-xs text-sumi">{t('practice.accuracy')}</div>
-            </div>
-
-            {unansweredCount > 0 && (
-              <>
-                <div className="w-px h-6 sm:h-8 bg-wave-deep/20"></div>
-                <div className="text-center">
-                  <div className="text-[10px] sm:text-sm text-sumi-faded whitespace-nowrap">
-                    ⚠️ {unansweredCount} 題未答
-                  </div>
+              <div className="text-center">
+                <div className="text-lg sm:text-xl md:text-2xl font-bold text-vermilion">
+                  {score}/{answeredCount}
                 </div>
-              </>
-            )}
-          </div>
+                <div className="text-[9px] sm:text-[10px] md:text-xs text-sumi">{t('practice.questionsCorrect')}</div>
+              </div>
+
+              <div className="w-px h-6 sm:h-8 bg-wave-deep/20"></div>
+
+              <div className="text-center">
+                <div className="text-lg sm:text-xl md:text-2xl font-bold text-wave-deep">
+                  {accuracy}%
+                </div>
+                <div className="text-[9px] sm:text-[10px] md:text-xs text-sumi">{t('practice.accuracy')}</div>
+              </div>
+
+              {unansweredCount > 0 && (
+                <>
+                  <div className="w-px h-6 sm:h-8 bg-wave-deep/20"></div>
+                  <div className="text-center">
+                    <div className="text-[10px] sm:text-sm text-sumi-faded whitespace-nowrap">
+                      ⚠️ {unansweredCount} 題未答
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
 
             {/* Action Buttons - Stack on mobile, side by side on larger */}
             <div className="flex flex-col sm:flex-row gap-1.5 sm:gap-2 justify-center pt-2">
