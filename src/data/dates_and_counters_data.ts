@@ -4,6 +4,14 @@ export interface DateCounterItem {
     kanji?: string;
     special?: boolean; // Highlight special readings
     meaning_zh?: string;
+    note?: string; // Additional notes
+}
+
+export interface NumberCategory {
+    id: string;
+    title: string;
+    description: string;
+    items: DateCounterItem[];
 }
 
 export interface CounterCategory {
@@ -252,6 +260,88 @@ export const commonMistakes = [
             { label: '3本', wrong: 'さんほん', right: 'さんぼん', note: '濁音 b' },
             { label: '6回', wrong: 'ろくかい', right: 'ろっかい', note: '促音' },
             { label: '10個', wrong: 'じゅうこ', right: 'じゅっこ', note: '促音' },
+        ]
+    },
+    {
+        id: 'numbers',
+        title: '數字的陷阱 (Number Mistakes)',
+        description: '300, 600, 800, 3000, 8000 的音變，以及一萬的讀法。',
+        items: [
+            { label: '300', wrong: 'さんひゃく', right: 'さんびゃく', note: '濁音 ben' },
+            { label: '600', wrong: 'ろくひゃく', right: 'ろっぴゃく', note: '促音+半濁音' },
+            { label: '800', wrong: 'はちひゃく', right: 'はっぴゃく', note: '促音+半濁音' },
+            { label: '3000', wrong: 'さんせん', right: 'さんぜん', note: '濁音 zen' },
+            { label: '8000', wrong: 'はちせん', right: 'はっせん', note: '促音' },
+            { label: '10000', wrong: 'まん', right: 'いちまん', note: '必須加「一」' },
+        ]
+    }
+];
+
+export const numbers: NumberCategory[] = [
+    {
+        id: 'basic',
+        title: '基本數字 (0-10)',
+        description: '最基礎的數字讀法。',
+        items: [
+            { value: 0, reading: 'ゼロ / れい', kanji: '零' },
+            { value: 1, reading: 'いち', kanji: '一' },
+            { value: 2, reading: 'に', kanji: '二' },
+            { value: 3, reading: 'さん', kanji: '三' },
+            { value: 4, reading: 'よん / し', kanji: '四' },
+            { value: 5, reading: 'ご', kanji: '五' },
+            { value: 6, reading: 'ろく', kanji: '六' },
+            { value: 7, reading: 'なな / しち', kanji: '七' },
+            { value: 8, reading: 'はち', kanji: '八' },
+            { value: 9, reading: 'きゅう / く', kanji: '九' },
+            { value: 10, reading: 'じゅう', kanji: '十' },
+        ]
+    },
+    {
+        id: 'tens',
+        title: '十位數 (Tens)',
+        description: '10 + 數字 / 數字 + 10',
+        items: [
+            { value: 11, reading: 'じゅういち', kanji: '十一' },
+            { value: 12, reading: 'じゅうに', kanji: '十二' },
+            { value: 14, reading: 'じゅうよん / じゅうし', kanji: '十四' },
+            { value: 19, reading: 'じゅうきゅう / じゅうく', kanji: '十九' },
+            { value: 20, reading: 'にじゅう', kanji: '二十' },
+            { value: 30, reading: 'さんじゅう', kanji: '三十' },
+            { value: 40, reading: 'よんじゅう', kanji: '四十' },
+            { value: 90, reading: 'きゅうじゅう', kanji: '九十' },
+        ]
+    },
+    {
+        id: 'hundreds',
+        title: '百位數 (Hundreds)',
+        description: '注意 300, 600, 800 的音變。',
+        items: [
+            { value: 100, reading: 'ひゃく', kanji: '百' },
+            { value: 200, reading: 'にひゃく', kanji: '二百' },
+            { value: 300, reading: 'さんびゃく', kanji: '三百', special: true, note: '濁音 ben' },
+            { value: 400, reading: 'よんひゃく', kanji: '四百' },
+            { value: 500, reading: 'ごひゃく', kanji: '五百' },
+            { value: 600, reading: 'ろっぴゃく', kanji: '六百', special: true, note: '促音+半濁音' },
+            { value: 700, reading: 'ななひゃく', kanji: '七百' },
+            { value: 800, reading: 'はっぴゃく', kanji: '八百', special: true, note: '促音+半濁音' },
+            { value: 900, reading: 'きゅうひゃく', kanji: '九百' },
+        ]
+    },
+    {
+        id: 'thousands',
+        title: '千位數 (Thousands)',
+        description: '注意 3000, 8000 的音變。',
+        items: [
+            { value: 1000, reading: 'せん', kanji: '千' },
+            { value: 2000, reading: 'にせん', kanji: '二千' },
+            { value: 3000, reading: 'さんぜん', kanji: '三千', special: true, note: '濁音 zen' },
+            { value: 4000, reading: 'よんせん', kanji: '四千' },
+            { value: 5000, reading: 'ごせん', kanji: '五千' },
+            { value: 6000, reading: 'ろくせん', kanji: '六千' },
+            { value: 7000, reading: 'ななせん', kanji: '七千' },
+            { value: 8000, reading: 'はっせん', kanji: '八千', special: true, note: '促音' },
+            { value: 9000, reading: 'きゅうせん', kanji: '九千' },
+            { value: 10000, reading: 'いちまん', kanji: '一万', special: true, note: '必須加「一」' },
         ]
     }
 ];

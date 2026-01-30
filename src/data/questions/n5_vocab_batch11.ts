@@ -237,30 +237,6 @@ export const n5VocabBatch11: StaticQuestion[] = [
     },
     {
         id: 'n5_vocab_bunmyaku_chairo_1',
-        prob: 'あの______犬{いぬ}は私{わたし}のです。',
-        prob_zh: '那隻 *咖啡色（茶色）* 的狗是我的。',
-        options: [
-            { text: '茶色{ちゃいろ}', reason: '正確！(形容詞需+の, 茶色の)' }, // Wait, option is noun 'chairo'. With の in sentence?
-            // Sentence has "あの______犬は". If I put 茶色 -> 茶色犬 (incorrect grammar usually 茶色の犬).
-            // But if option is "茶色の" it's ok.
-            // Or if text is "茶色い" (i-adj). 茶色 is noun, sometimes no-adj.
-            // Usually 茶色の犬.
-            // Let's check options.
-            { text: '茶色{ちゃいろ}い', reason: '正確！茶色い（い形容詞）。' },
-            { text: '茶色{ちゃいろ}の', reason: '正確！但通常選項只有一個正確形式。' },
-            // Correction: Make sentence "あの______の犬"。
-        ],
-        // Revising sentence
-        prob: 'あの______の犬{いぬ}は私{わたし}のです。',
-        prob_zh: '那隻 *咖啡色* 的狗是我的。',
-        options: [
-            { text: '茶色{ちゃいろ}', reason: '正確！茶色の犬。' },
-            { text: '赤{あか}い', reason: '錯誤：赤いの犬 (X) -> 赤い犬。' },
-            { text: '黒{くろ}', reason: '正確？黒の犬 (O)。但通常黒い犬。茶色通常是茶色の犬 (除了茶色い)。' },
-            // To avoid ambiguity, use color contexts that are distinct.
-            { text: '暗{くら}い', reason: '錯誤：暗的。' }
-        ],
-        // Let's stick to simple noun identification
         prob: 'コーヒーは______です。',
         prob_zh: '咖啡是 *褐色（咖啡色）* 的。',
         options: [

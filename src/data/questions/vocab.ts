@@ -11,6 +11,25 @@ import { n5VocabBatch9 } from './n5_vocab_batch9';
 import { n5VocabBatch10 } from './n5_vocab_batch10';
 import { n5VocabBatch11 } from './n5_vocab_batch11';
 import { n5VocabBatch12 } from './n5_vocab_batch12';
+import { n5VocabBatch13 } from './n5_vocab_batch13';
+import { n5VocabBatch14 } from './n5_vocab_batch14';
+import { n5VocabBatch15 } from './n5_vocab_batch15';
+import { n5VocabBatch16 } from './n5_vocab_batch16';
+import { n5VocabBatch17 } from './n5_vocab_batch17';
+import { n5VocabBatch18 } from './n5_vocab_batch18';
+import { n5VocabBatch19 } from './n5_vocab_batch19';
+import { n5VocabBatch20 } from './n5_vocab_batch20';
+import { n5VocabBatch21 } from './n5_vocab_batch21';
+import { n5VocabBatch22 } from './n5_vocab_batch22';
+import { n5VocabBatch23 } from './n5_vocab_batch23';
+import { n5VocabBatch24 } from './n5_vocab_batch24';
+import { n5VocabBatch25 } from './n5_vocab_batch25';
+import { n5VocabBatch26 } from './n5_vocab_batch26';
+import { n5VocabBatch27 } from './n5_vocab_batch27';
+import { n5VocabBatch28 } from './n5_vocab_batch28';
+import { n5VocabBatch29 } from './n5_vocab_batch29';
+import { n5VocabBatch30 } from './n5_vocab_batch30';
+import { n5VocabBatch31 } from './n5_vocab_batch31';
 
 export const vocabN5: StaticQuestion[] = [
     ...n5VocabBatch1,
@@ -25,6 +44,25 @@ export const vocabN5: StaticQuestion[] = [
     ...n5VocabBatch10,
     ...n5VocabBatch11,
     ...n5VocabBatch12,
+    ...n5VocabBatch13,
+    ...n5VocabBatch14,
+    ...n5VocabBatch15,
+    ...n5VocabBatch16,
+    ...n5VocabBatch17,
+    ...n5VocabBatch18,
+    ...n5VocabBatch19,
+    ...n5VocabBatch20,
+    ...n5VocabBatch21,
+    ...n5VocabBatch22,
+    ...n5VocabBatch23,
+    ...n5VocabBatch24,
+    ...n5VocabBatch25,
+    ...n5VocabBatch26,
+    ...n5VocabBatch27,
+    ...n5VocabBatch28,
+    ...n5VocabBatch29,
+    ...n5VocabBatch30,
+    ...n5VocabBatch31,
     {
         id: 'n5_vocab_1',
         prob: '毎日{まいにち}、______で学校{がっこう}へ行{い}きます。',

@@ -33,12 +33,12 @@
 ---
 
 **Total Words:** 644
-**Completed:** 55
-**Pending:** 589
+**Completed:** 155
+**Pending:** 489
 
 ## Next Action
 
-**Resume from Word #56:** 茶碗 (ちゃわん)
+**Resume from Word #156:** 晴れ (はれ)
 
 ## Detailed Status
 
@@ -99,150 +99,156 @@
 | 53 | 病院 | びょういん | Completed | Batch 11 |
 | 54 | 病気 | びょうき | Completed | Batch 11 |
 | 55 | 茶色 | ちゃいろ | Completed | Batch 11 |
-| 56 | 茶碗 | ちゃわん | Pending |  |
-| 57 | 父 | ちち | Pending |  |
-| 58 | 違う | ちがう | Pending |  |
-| 59 | 小さい | ちいさい | Pending |  |
-| 60 | 小さな | ちいさな | Pending |  |
-| 61 | 近い | ちかい | Pending |  |
-| 62 | 地下鐵 | ちかてつ | Pending |  |
-| 63 | 地圖 | ちず | Pending |  |
-| 64 | ちょっと | ちょっと | Pending |  |
-| 65 | ちょうど | ちょうど | Pending |  |
-| 66 | 台所 | だいどころ | Pending |  |
-| 67 | 大學 | だいがく | Pending |  |
-| 68 | 大丈夫 | だいじょうぶ | Pending |  |
-| 69 | 大好き | だいすき | Pending |  |
-| 70 | だんだん | だんだん | Pending |  |
-| 71 | 誰 | だれ | Pending |  |
-| 72 | 出す | だす | Pending |  |
-| 73 | 出口 | でぐち | Pending |  |
-| 74 | 出かける | でかける | Pending |  |
-| 75 | 電氣 | でんき | Pending |  |
-| 76 | 電車 | でんしゃ | Pending |  |
-| 77 | 電話 | でんわ | Pending |  |
-| 78 | デパート | デパート | Pending |  |
-| 79 | 出る | でる | Pending |  |
-| 80 | ドア | ドア | Pending |  |
-| 81 | どっち | どっち | Pending |  |
-| 82 | どちら | どちら | Pending |  |
-| 83 | どこ | どこ | Pending |  |
-| 84 | 動物 | どうぶつ | Pending |  |
-| 85 | どうも | どうも | Pending |  |
-| 86 | どれ | どれ | Pending |  |
-| 87 | どうして | どうして | Pending |  |
-| 88 | どうぞ | どうぞ | Pending |  |
-| 89 | 土曜日 | どようび | Pending |  |
-| 90 | 絵 | え | Pending |  |
-| 91 | エアコン | エアコン | Pending |  |
-| 92 | 映画 | えいが | Pending |  |
-| 93 | 映画館 | えいがかん | Pending |  |
-| 94 | 英語 | えいご | Pending |  |
-| 95 | 駅 | えき | Pending |  |
-| 96 | 鉛筆 | えんぴつ | Pending |  |
-| 97 | エレベーター | エレベーター | Pending |  |
-| 98 | フィルム | フィルム | Pending |  |
-| 99 | フォーク | フォーク | Pending |  |
-| 100 | 服 | ふく | Pending |  |
-| 101 | 吹く | ふく | Pending |  |
-| 102 | 降る | ふる | Pending |  |
-| 103 | 古い | ふるい | Pending |  |
-| 104 | 二人 | ふたり | Pending |  |
-| 105 | 二つ | ふたつ | Pending |  |
-| 106 | 太い | ふとい | Pending |  |
-| 107 | 二日 | ふつか | Pending |  |
-| 108 | 封筒 | ふうとう | Pending |  |
-| 109 | 冬 | ふゆ | Pending |  |
-| 110 | 外國 | がいこく | Pending |  |
-| 111 | 外國人 | がいこくじん | Pending |  |
-| 112 | 學校 | がっこう | Pending |  |
-| 113 | 學生 | がくせい | Pending |  |
-| 114 | 玄關 | げんかん | Pending |  |
-| 115 | 元氣 | げんき | Pending |  |
-| 116 | 月曜日 | げつようび | Pending |  |
-| 117 | 銀行 | ぎんこう | Pending |  |
-| 118 | ギター | ギター | Pending |  |
-| 119 | 五 | ご | Pending |  |
-| 120 | 午後 | ごご | Pending |  |
-| 121 | ご飯 | ごはん | Pending |  |
-| 122 | 午前 | ごぜん | Pending |  |
-| 123 | グラム | グラム | Pending |  |
-| 124 | 牛肉 | ぎゅうにく | Pending |  |
-| 125 | 牛乳 | ぎゅうにゅう | Pending |  |
-| 126 | 歯 | は | Pending |  |
-| 127 | 八 | はち | Pending |  |
-| 128 | 葉書 | はがき | Pending |  |
-| 129 | 母 | はは | Pending |  |
-| 130 | はい | はい | Pending |  |
-| 131 | 入る | はいる | Pending |  |
-| 132 | 灰皿 | はいざら | Pending |  |
-| 133 | 始まる | はじまる | Pending |  |
-| 134 | 初めて | はじめて | Pending |  |
-| 135 | 箱 | はこ | Pending |  |
-| 136 | 履く | はく | Pending |  |
-| 137 | 半 | はん | Pending |  |
-| 138 | 花 | はな | Pending |  |
-| 139 | 鼻 | はな | Pending |  |
-| 140 | 話 | はなし | Pending |  |
-| 141 | 話す | はなす | Pending |  |
-| 142 | 半分 | はんぶん | Pending |  |
-| 143 | ハンカチ | ハンカチ | Pending |  |
-| 144 | 晴れ | はれ | Pending |  |
-| 145 | 晴れる | はれる | Pending |  |
-| 146 | 春 | はる | Pending |  |
-| 147 | 貼る | はる | Pending |  |
-| 148 | 箸 | はし | Pending |  |
-| 149 | 橋 | はし | Pending |  |
-| 150 | 走る | はしる | Pending |  |
-| 151 | 二十歳 | はたち | Pending |  |
-| 152 | 働く | はたらく | Pending |  |
-| 153 | 二十日 | はつか | Pending |  |
-| 154 | 速い | はやい | Pending |  |
-| 155 | 早い | はやい | Pending |  |
-| 156 | 辺 | へん | Pending |  |
-| 157 | 下手 | へた | Pending |  |
-| 158 | 部屋 | へや | Pending |  |
-| 159 | 左 | ひだり | Pending |  |
-| 160 | 東 | ひがし | Pending |  |
-| 161 | 飛行機 | ひこうき | Pending |  |
-| 162 | 引く | ひく | Pending |  |
-| 163 | 彈く | ひく | Pending |  |
-| 164 | 低い | ひくい | Pending |  |
-| 165 | 暇 | ひま | Pending |  |
-| 166 | 広い | ひろい | Pending |  |
-| 167 | 晝 | ひる | Pending |  |
-| 168 | 晝ご飯 | ひるごはん | Pending |  |
-| 169 | 人 | ひと | Pending |  |
-| 170 | 一人 | ひとり | Pending |  |
-| 171 | 一つ | ひとつ | Pending |  |
-| 172 | ほか | ほか | Pending |  |
-| 173 | 本 | ほん | Pending |  |
-| 174 | 本棚 | ほんだな | Pending |  |
-| 175 | 本当 | ほんとう | Pending |  |
-| 176 | 欲しい | ほしい | Pending |  |
-| 177 | 細い | ほそい | Pending |  |
-| 178 | ホテル | ホテル | Pending |  |
-| 179 | 百 | ひゃく | Pending |  |
-| 180 | 一 | いち | Pending |  |
-| 181 | 一番 | いちばん | Pending |  |
-| 182 | 一日 | いちにち | Pending |  |
-| 183 | 家 | いえ | Pending |  |
-| 184 | 池 | いけ | Pending |  |
-| 185 | いかが | いかが | Pending |  |
-| 186 | 行く | いく | Pending |  |
-| 187 | いくら | いくら | Pending |  |
-| 188 | いくつ | いくつ | Pending |  |
-| 189 | 今 | いま | Pending |  |
-| 190 | 意味 | いみ | Pending |  |
-| 191 | 妹 | いもうと | Pending |  |
-| 192 | 犬 | いぬ | Pending |  |
-| 193 | 入れる | いれる | Pending |  |
-| 194 | 入口 | いりぐち | Pending |  |
-| 195 | 色 | いろ | Pending |  |
-| 196 | 色々 | いろいろ | Pending |  |
-| 197 | 居る | いる | Pending |  |
-| 198 | 要る | いる | Pending |  |
-| 199 | 醫者 | いしゃ | Pending |  |
+| 56 | 茶碗 | ちゃわん | Completed | Batch 12 |
+| 57 | 父 | ちち | Completed | Batch 12 |
+| 58 | 違う | ちがう | Completed | Batch 12 |
+| 59 | 小さい | ちいさい | Completed | Batch 12 |
+| 60 | 小さな | ちいさな | Completed | Batch 12 |
+| 61 | 近い | ちかい | Completed | Batch 13 |
+| 62 | 地下鉄 | ちかてつ | Completed | Batch 13 |
+| 63 | 地図 | ちず | Completed | Batch 13 |
+| 64 | ちょっと | ちょっと | Completed | Batch 13 |
+| 65 | ちょうど | ちょうど | Completed | Batch 13 |
+| 66 | 台所 | だいどころ | Completed | Batch 14 |
+| 67 | 大學 | だいがく | Completed | Batch 14 |
+| 68 | 大丈夫 | だいじょうぶ | Completed | Batch 14 |
+| 69 | 大好き | だいすき | Completed | Batch 14 |
+| 70 | 大切 | たいせつ | Completed | Batch 14 |
+| 71 | 大抵 | たいてい | Completed | Batch 15 |
+| 72 | 台風 | たいふう | Completed | Batch 15 |
+| 73 | たくさん | たくさん | Completed | Batch 15 |
+| 74 | タクシー | タクシー | Completed | Batch 15 |
+| 75 | 出す | だす | Completed | Batch 15 |
+| 76 | 立つ | たつ | Completed | Batch 16 |
+| 77 | 建てる | たてる | Completed | Batch 16 |
+| 78 | たとえば | たとえば | Completed | Batch 16 |
+| 79 | 楽しい | たのしい | Completed | Batch 16 |
+| 80 | 頼む | たのむ | Completed | Batch 16 |
+| 81 | 食べ物 | たべもの | Completed | Batch 17 |
+| 82 | 食べる | たべる | Completed | Batch 17 |
+| 83 | 卵 | たまご | Completed | Batch 17 |
+| 84 | 誰 | だれ | Completed | Batch 17 |
+| 85 | 誕生日 | たんじょうび | Completed | Batch 17 |
+| 86 | 小さい | ちいさい | Completed | Batch 18 |
+| 87 | 近い | ちかい | Completed | Batch 18 |
+| 88 | 地下鉄 | ちかてつ | Completed | Batch 18 |
+| 89 | 違う | ちがう | Completed | Batch 18 |
+| 90 | 近く | ちかく | Completed | Batch 18 |
+| 91 | 力 | ちから | Completed | Batch 19 |
+| 92 | 地図 | ちず | Completed | Batch 19 |
+| 93 | 父 | ちち | Completed | Batch 19 |
+| 94 | 茶色 | ちゃいろ | Completed | Batch 19 |
+| 95 | 茶碗 | ちゃわん | Completed | Batch 19 |
+| 96 | 中 | なか | Completed | Batch 20 |
+| 97 | 長い | ながい | Completed | Batch 20 |
+| 98 | 鳴く | なく | Completed | Batch 20 |
+| 99 | 無くす | なくす | Completed | Batch 20 |
+| 100 | なぜ | なぜ | Completed | Batch 20 |
+| 101 | 夏 | なつ | Completed | Batch 21 |
+| 102 | 夏休み | なつやすみ | Completed | Batch 21 |
+| 103 | など | など | Completed | Batch 21 |
+| 104 | 七つ | ななつ | Completed | Batch 21 |
+| 105 | 七日 | なのか | Completed | Batch 21 |
+| 106 | 名前 | なまえ | Completed | Batch 22 |
+| 107 | 習う | ならう | Completed | Batch 22 |
+| 108 | 並ぶ | ならぶ | Completed | Batch 22 |
+| 109 | 並べる | ならべる | Completed | Batch 22 |
+| 110 | なる | なる | Completed | Batch 22 |
+| 111 | 何 | なん/なに | Completed | Batch 23 |
+| 112 | 二階 | にかい | Completed | Batch 23 |
+| 113 | 賑やか | にぎやか | Completed | Batch 23 |
+| 114 | 肉 | にく | Completed | Batch 23 |
+| 115 | 西 | にし | Completed | Batch 23 |
+| 116 | 日曜日 | にちようび | Completed | Batch 24 |
+| 117 | 荷物 | にもつ | Completed | Batch 24 |
+| 118 | ニュース | ニュース | Completed | Batch 24 |
+| 119 | 庭 | にわ | Completed | Batch 24 |
+| 120 | 脱ぐ | ぬぐ | Completed | Batch 24 |
+| 121 | ネクタイ | ネクタイ | Completed | Batch 25 |
+| 122 | 猫 | ねこ | Completed | Batch 25 |
+| 123 | 寝る | ねる | Completed | Batch 25 |
+| 124 | ノート | ノート | Completed | Batch 25 |
+| 125 | 登る | のぼる | Completed | Batch 25 |
+| 126 | 飲み物 | のみもの | Completed | Batch 26 |
+| 127 | 飲む | のむ | Completed | Batch 26 |
+| 128 | 乗る | のる | Completed | Batch 26 |
+| 129 | 歯 | は | Completed | Batch 26 |
+| 130 | パーティー | パーティー | Completed | Batch 26 |
+| 131 | はい | はい | Completed | Batch 27 |
+| 132 | 入る | はいる | Completed | Batch 27 |
+| 133 | 葉書 | はがき | Completed | Batch 27 |
+| 134 | 履く | はく | Completed | Batch 27 |
+| 135 | 箱 | はこ | Completed | Batch 27 |
+| 136 | 橋 | はし | Completed | Batch 28 |
+| 137 | 箸 | はし | Completed | Batch 28 |
+| 138 | 始まる | はじまる | Completed | Batch 28 |
+| 139 | 初め | はじめ | Completed | Batch 28 |
+| 140 | 初めて | はじめて | Completed | Batch 28 |
+| 141 | 走る | はしる | Completed | Batch 29 |
+| 142 | バス | バス | Completed | Batch 29 |
+| 143 | バター | バター | Completed | Batch 29 |
+| 144 | 二十歳 | はたち | Completed | Batch 29 |
+| 145 | 働く | はたらく | Completed | Batch 29 |
+| 146 | 八 | はち | Completed | Batch 30 |
+| 147 | 二十日 | はつか | Completed | Batch 30 |
+| 148 | 花 | はな | Completed | Batch 30 |
+| 149 | 鼻 | はな | Completed | Batch 30 |
+| 150 | 話 | はなし | Completed | Batch 30 |
+| 151 | 灰皿 | はいざら | Completed | Batch 31 |
+| 152 | 半 | はん | Completed | Batch 31 |
+| 153 | 話す | はなす | Completed | Batch 31 |
+| 154 | 半分 | はんぶん | Completed | Batch 31 |
+| 155 | ハンカチ | ハンカチ | Completed | Batch 31 |
+| 156 | 晴れ | はれ | Pending |  |
+| 157 | 晴れる | はれる | Pending |  |
+| 158 | 春 | はる | Pending |  |
+| 159 | 貼る | はる | Pending |  |
+| 160 | 速い | はやい | Pending |  |
+| 161 | 早い | はやい | Pending |  |
+| 162 | 辺 | へん | Pending |  |
+| 163 | 下手 | へた | Pending |  |
+| 164 | 部屋 | へや | Pending |  |
+| 165 | 左 | ひだり | Pending |  |
+| 166 | 東 | ひがし | Pending |  |
+| 167 | 飛行機 | ひこうき | Pending |  |
+| 168 | 引く | ひく | Pending |  |
+| 169 | 弾く | ひく | Pending |  |
+| 170 | 低い | ひくい | Pending |  |
+| 171 | 暇 | ひま | Pending |  |
+| 172 | 広い | ひろい | Pending |  |
+| 173 | 昼 | ひる | Pending |  |
+| 174 | 昼ご飯 | ひるごはん | Pending |  |
+| 175 | 人 | ひと | Pending |  |
+| 176 | 一人 | ひとり | Pending |  |
+| 177 | 一つ | ひとつ | Pending |  |
+| 178 | ほか | ほか | Pending |  |
+| 179 | 本 | ほん | Pending |  |
+| 180 | 本棚 | ほんだな | Pending |  |
+| 181 | 本当 | ほんとう | Pending |  |
+| 182 | 欲しい | ほしい | Pending |  |
+| 183 | 細い | ほそい | Pending |  |
+| 184 | ホテル | ホテル | Pending |  |
+| 185 | 百 | ひゃく | Pending |  |
+| 186 | 一 | いち | Pending |  |
+| 187 | 一番 | いちばん | Pending |  |
+| 188 | 一日 | いちにち | Pending |  |
+| 189 | 家 | いえ | Pending |  |
+| 190 | 池 | いけ | Pending |  |
+| 191 | いかが | いかが | Pending |  |
+| 192 | 行く | いく | Pending |  |
+| 193 | いくら | いくら | Pending |  |
+| 194 | いくつ | いくつ | Pending |  |
+| 195 | 今 | いま | Pending |  |
+| 196 | 意味 | いみ | Pending |  |
+| 197 | 妹 | いもうと | Pending |  |
+| 198 | 犬 | いぬ | Pending |  |
+| 199 | 入れる | いれる | Pending |  |
+| 200 | 入口 | いりぐち | Pending |  |
+| 201 | 色 | いろ | Pending |  |
+| 202 | 色々 | いろいろ | Pending |  |
+| 203 | 居る | いる | Pending |  |
+| 204 | 要る | いる | Pending |  |
+| 205 | 医者 | いしゃ | Pending |  |
 | 200 | 忙しい | いそがしい | Pending |  |
 | 201 | 一緒 | いっしょ | Pending |  |
 | 202 | 椅子 | いす | Pending |  |

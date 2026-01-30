@@ -34,8 +34,7 @@ export const n5VocabBatch12: StaticQuestion[] = [
     },
     {
         id: 'n5_vocab_bunmyaku_chawan_1',
-        prob: '______をご飯{はん}を食{た}べます。← This sentence is grammatically awkward. Correct: 茶碗でご飯を食べます。',
-        // Revising prob
+
         prob: '______でご飯{はん}を食{た}べます。',
         prob_zh: '用 *碗* 吃飯。',
         options: [
@@ -100,17 +99,6 @@ export const n5VocabBatch12: StaticQuestion[] = [
     // 58. 違う (ちがう)
     {
         id: 'n5_vocab_kanji_yomi_chigau_1',
-        prob: 'それは<u>違い</u>ます。',
-        prob_zh: '那個 *不對（不同）*。',
-        options: [
-            { text: 'ちかい', reason: '錯誤：近い。' },
-            { text: 'ちがい', reason: '正確！' },
-            { text: 'まちがい', reason: '錯誤：間違い（名詞），這裡動詞。' }, // Kanjs match but okurigana match? 違います is chigaimasu. 
-            // Wait, prob is "違います". Kanji is 違. Reading is chiga(imasu).
-            // Options are full verb stem? Let's fix prob to be simpler reading.
-            // prob: 違います。 -> chigaimasu.
-        ],
-        // Simpler prob
         prob: '色が<u>違い</u>ますね。',
         prob_zh: '顏色 *不一樣* 呢。',
         options: [
