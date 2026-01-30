@@ -1,10 +1,12 @@
 import { StaticQuestion } from './types'
 import { n5VocabBatch1 } from './n5_vocab_new';
 import { n5VocabBatch2 } from './n5_vocab_batch2';
+import { n5_vocab_batch3 } from './n5_vocab_batch3';
 
 export const vocabN5: StaticQuestion[] = [
     ...n5VocabBatch1,
     ...n5VocabBatch2,
+    ...n5_vocab_batch3,
     {
         id: 'n5_vocab_1',
         prob: '毎日{まいにち}、______で学校{がっこう}へ行{い}きます。',
