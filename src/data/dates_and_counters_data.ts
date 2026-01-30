@@ -89,7 +89,7 @@ export const counters: CounterCategory[] = [
     {
         id: 'people',
         title: '人數 (人)',
-        description: '数人的单位。注意1人和2人的特殊读法。',
+        description: '數人的單位。注意1人和2人的特殊讀法。',
         items: [
             { value: 1, reading: 'ひとり', kanji: '一人', special: true },
             { value: 2, reading: 'ふたり', kanji: '二人', special: true },
@@ -106,8 +106,8 @@ export const counters: CounterCategory[] = [
     {
         id: 'long_objects',
         title: '細長物 (本)',
-        description: '笔、瓶子、雨伞、树木等细长物体。注意 1, 3, 6, 8, 10 的音变。',
-        rule: '1/6/8/10 变促音+半浊音 (pp), 3 变浊音 (bb)',
+        description: '筆、瓶子、雨傘、樹木等細長物體。注意 1, 3, 6, 8, 10 的音變。',
+        rule: '1/6/8/10 變促音+半濁音 (pp), 3 變濁音 (bb)',
         items: [
             { value: 1, reading: 'いっぽん', kanji: '一本', special: true },
             { value: 2, reading: 'にほん', kanji: '二本' },
@@ -124,7 +124,7 @@ export const counters: CounterCategory[] = [
     {
         id: 'flat_objects',
         title: '扁平物 (枚)',
-        description: '纸张、盘子、衬衫、CD 等扁平物体。无特殊音变，直接读数字+mai。',
+        description: '紙張、盤子、襯衫、CD 等扁平物體。無特殊音變，直接讀數字+mai。',
         items: [
             { value: 1, reading: 'いちまい', kanji: '一枚' },
             { value: 2, reading: 'にまい', kanji: '二枚' },
@@ -141,8 +141,8 @@ export const counters: CounterCategory[] = [
     {
         id: 'books',
         title: '書籍 (冊)',
-        description: '书本、笔记本等成册的物体。1, 8, 10 发生音变。',
-        rule: '1/8/10 变促音 (ss)',
+        description: '書本、筆記本等成冊的物體。1, 8, 10 發生音變。',
+        rule: '1/8/10 變促音 (ss)',
         items: [
             { value: 1, reading: 'いっさつ', kanji: '一冊', special: true },
             { value: 2, reading: 'にさつ', kanji: '二冊' },
@@ -159,8 +159,8 @@ export const counters: CounterCategory[] = [
     {
         id: 'small_animals',
         title: '小動物 (匹)',
-        description: '猫、狗、鱼、昆虫等小动物。音变规则同「本」。',
-        rule: '1/6/8/10 变促音+半浊音 (pp), 3 变浊音 (bb)',
+        description: '貓、狗、魚、昆蟲等小動物。音變規則同「本」。',
+        rule: '1/6/8/10 變促音+半濁音 (pp), 3 變濁音 (bb)',
         items: [
             { value: 1, reading: 'いっぴき', kanji: '一匹', special: true },
             { value: 2, reading: 'にひき', kanji: '二匹' },
@@ -177,7 +177,7 @@ export const counters: CounterCategory[] = [
     {
         id: 'general_objects',
         title: '一般物品 (つ)',
-        description: '用于形状不规则或没有特定量词的物品。使用训读数字 (hitotsu, futatsu...)。10 读作 "too"。',
+        description: '用於形狀不規則或沒有特定量詞的物品。使用訓讀數字 (hitotsu, futatsu...)。10 讀作 "too"。',
         items: [
             { value: 1, reading: 'ひとつ', kanji: '一つ' },
             { value: 2, reading: 'ふたつ', kanji: '二つ' },
@@ -194,8 +194,8 @@ export const counters: CounterCategory[] = [
     {
         id: 'age',
         title: '年齡 (歳)',
-        description: '年岁。1, 8, 10 发生音变。20岁特殊读法 "hatachi"。',
-        rule: '1/8/10 变促音 (ss)',
+        description: '年歲。1, 8, 10 發生音變。20歲特殊讀法 "hatachi"。',
+        rule: '1/8/10 變促音 (ss)',
         items: [
             { value: 1, reading: 'いっさい', kanji: '一歳', special: true },
             { value: 2, reading: 'にさい', kanji: '二歳' },
@@ -213,7 +213,7 @@ export const counters: CounterCategory[] = [
     {
         id: 'machines',
         title: '機械 (台)',
-        description: '车、电脑、电视、钢琴等机械。无特殊音变。',
+        description: '車、電腦、電視、鋼琴等機械。無特殊音變。',
         items: [
             { value: 1, reading: 'いちだい', kanji: '一台' },
             { value: 2, reading: 'にだい', kanji: '二台' },
