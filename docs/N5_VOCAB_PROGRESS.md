@@ -3,9 +3,11 @@
 ## Context & Instructions for Resume
 
 **Primary Guideline (SOP):**
+
 - MUST follow `.agent/skills/VOCAB_SKILL.md` strictly.
 
 **Critical Rules (Do Not Ignore):**
+
 1. **Frontend Support Check:** HTML tags like `<u>` are supported but stick using `<u>...</u>` for underlining. Do not use complex HTML unless necessary.
 2. **Review `FuriganaText.tsx`:** If introducing new tags, verify `src/components/FuriganaText.tsx` first.
 3. **Randomize Answers:** `correctIndex` must be randomized (0-3). Do NOT always put the correct answer at index 0.
@@ -17,6 +19,7 @@
    - Import and spread them in `src/data/questions/vocab.ts`.
 
 **Workflow:**
+
 1. Check `Next Action` below for the starting word.
 2. Process words in batches (e.g., 5-10 words).
 3. Generate valid TS file & Update `vocab.ts`.
@@ -30,11 +33,12 @@
 ---
 
 **Total Words:** 644
-**Completed:** 10
-**Pending:** 634
+**Completed:** 15
+**Pending:** 629
 
 ## Next Action
-**Resume from Word #11:** 開く (あく)
+
+**Resume from Word #16:** 姉 (あね)
 
 ## Detailed Status
 
@@ -50,11 +54,11 @@
 | 8 | 明るい | あかるい | Completed | Batch 2 |
 | 9 | 開ける | あける | Completed | Batch 2 |
 | 10 | 秋 | あき | Completed | Batch 2 |
-| 11 | 開く | あく | Pending |  |
-| 12 | 甘い | あまい | Pending |  |
-| 13 | 雨 | あめ | Pending |  |
-| 14 | 飴 | あめ | Pending |  |
-| 15 | あなた | あなた | Pending |  |
+| 11 | 開く | あく | Completed | Batch 3 |
+| 12 | 甘い | あまい | Completed | Batch 3 |
+| 13 | 雨 | あめ | Completed | Batch 3 |
+| 14 | 飴 | あめ | Completed | Batch 3 |
+| 15 | あなた | あなた | Completed | Batch 3 |
 | 16 | 姉 | あね | Pending |  |
 | 17 | 兄 | あni | Pending |  |
 | 18 | あの | あの | Pending |  |

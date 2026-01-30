@@ -396,7 +396,7 @@ export const n5_vocab_batch3: StaticQuestion[] = [
         // Note: The question structure here is slightly different, asking for antonym context or just ensuring understanding. 
         // Let's stick to standard synonym format. Restructuring.
         // Actually, "ruigigo" asks for closest meaning. Let's re-do.
-        question_type: '劃線部分的單字與下列何者意思最接近？', // Implicit
+
         // Retry logic:
         // "Rain stopped" -> "Not raining anymore"
         // Let's change the question content slightly to fit the mold better.
@@ -569,34 +569,20 @@ export const n5_vocab_batch3: StaticQuestion[] = [
     // 其實N5單字表如果沒有漢字，通常不考漢字讀音。但SOP要求4種題型。
     // 我們改考單字辨識。
 
+    // Let's adjust strictness: The prompt asks for "Kanji Yomi". 
+    // If the word has no common Kanji at N5, maybe we skip or use a very simple sentence where we ASK for the reading?
+    // Let's stick to using "貴方" but explain it well, or ask "which one is YOU"?
+    // No, standard type 1 is "Kanji -> Kana".
+    // Let's switch Prob to use Kanji "貴方" assuming exposure, OR (safer for N5) just assume it's Kanji practice.
+    // "貴方" is technically above N5.
+    // However, this is "Vocab Generation".
+    // Let's try to map "Use correct word in context" (Type 3) easily.
+    // For Type 1/2, if impossible, we might need to skip or fake it.
+    // But "あなた" is in the list.
+    // Let's use "貴方" but keep it simple.
+
     {
         id: 'n5_vocab_kanji_yomi_anata_1',
-        prob: 'これは<u>あなた</u>の本{ほん}ですか。',
-        prob_zh: '這是 *你* 的書嗎？',
-        options: [
-            { text: 'わたし', reason: '錯誤：「私」是「我」。' },
-            { text: 'あなた', reason: '正確！' },
-            { text: 'かれ', reason: '錯誤：「彼」是「他」。' },
-            { text: 'かのじょ', reason: '錯誤：「彼女」是「她」。' }
-        ],
-        // Wait, kanji_yomi tests Kanji -> Reading. If text is already Kana, this makes no sense.
-        // If the word "anata" is listed as Kana only in some lists, we might not need Kanji Yomi.
-        // But let's check standard "貴方" usage. It is formally taught later but recognizable.
-        // Alternatively, maybe I should treat this as a "reading check" if I put Kanji.
-        // Let's use "貴方" for the sake of the exercise, but note it might be hard for N5.
-        // ACTUALLY, strict N5 vocab mostly uses Kana for anata.
-        // Let's adjust strictness: The prompt asks for "Kanji Yomi". 
-        // If the word has no common Kanji at N5, maybe we skip or use a very simple sentence where we ASK for the reading?
-        // Let's stick to using "貴方" but explain it well, or ask "which one is YOU"?
-        // No, standard type 1 is "Kanji -> Kana".
-        // Let's switch Prob to use Kanji "貴方" assuming exposure, OR (safer for N5) just assume it's Kanji practice.
-        // "貴方" is technically above N5.
-        // However, this is "Vocab Generation".
-        // Let's try to map "Use correct word in context" (Type 3) easily.
-        // For Type 1/2, if impossible, we might need to skip or fake it.
-        // But "あなた" is in the list.
-        // Let's use "貴方" but keep it simple.
-
         prob: '<u>貴方</u>の名前{なまえ}は何{なん}ですか。',
         prob_zh: ' *你* 的名字是什麼？',
         options: [

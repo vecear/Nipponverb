@@ -51,6 +51,25 @@ import mikoStage1FemaleImg from '../assets/characters/stages/miko_stage1_female.
 import ryorininStage1MaleImg from '../assets/characters/stages/ryorinin_stage1_male.png'
 import ryorininStage1FemaleImg from '../assets/characters/stages/ryorinin_stage1_female.png'
 import hokanStage1MaleImg from '../assets/characters/stages/hokan_stage1_male.png'
+import geigiStage1FemaleImg from '../assets/characters/stages/geigi_stage1_female.png'
+
+// 職業階段角色 (Stage 2)
+import doshinStage2MaleImg from '../assets/characters/stages/doshin_stage2_male.png'
+import doshinStage2FemaleImg from '../assets/characters/stages/doshin_stage2_female.png'
+import yakushaStage2MaleImg from '../assets/characters/stages/yakusha_stage2_male.png'
+import yakushaStage2FemaleImg from '../assets/characters/stages/yakusha_stage2_female.png'
+import ukiyoeshiStage2MaleImg from '../assets/characters/stages/ukiyoeshi_stage2_male.png'
+import ukiyoeshiStage2FemaleImg from '../assets/characters/stages/ukiyoeshi_stage2_female.png'
+import shoninStage2MaleImg from '../assets/characters/stages/shonin_stage2_male.png'
+import shoninStage2FemaleImg from '../assets/characters/stages/shonin_stage2_female.png'
+import gakushaStage2MaleImg from '../assets/characters/stages/gakusha_stage2_male.png'
+import gakushaStage2FemaleImg from '../assets/characters/stages/gakusha_stage2_female.png'
+import onmyojiStage2MaleImg from '../assets/characters/stages/onmyoji_stage2_male.png'
+import mikoStage2FemaleImg from '../assets/characters/stages/miko_stage2_female.png'
+import ryorininStage2MaleImg from '../assets/characters/stages/ryorinin_stage2_male.png'
+import ryorininStage2FemaleImg from '../assets/characters/stages/ryorinin_stage2_female.png'
+import hokanStage2MaleImg from '../assets/characters/stages/hokan_stage2_male.png'
+import geigiStage2FemaleImg from '../assets/characters/stages/geigi_stage2_female.png'
 
 // ============================================
 // 品牌素材
@@ -165,27 +184,35 @@ type StageImages = {
 export const JOB_STAGE_CHARACTERS: Record<string, StageImages> = {
   doshin: {
     1: { male: doshinStage1MaleImg, female: doshinStage1FemaleImg },
+    2: { male: doshinStage2MaleImg, female: doshinStage2FemaleImg },
   },
   yakusha: {
     1: { male: yakushaStage1MaleImg, female: yakushaStage1FemaleImg },
+    2: { male: yakushaStage2MaleImg, female: yakushaStage2FemaleImg },
   },
   ukiyoeshi: {
     1: { male: ukiyoeshiStage1MaleImg, female: ukiyoeshiStage1FemaleImg },
+    2: { male: ukiyoeshiStage2MaleImg, female: ukiyoeshiStage2FemaleImg },
   },
   shonin: {
     1: { male: shoninStage1MaleImg, female: shoninStage1FemaleImg },
+    2: { male: shoninStage2MaleImg, female: shoninStage2FemaleImg },
   },
   gakusha: {
     1: { male: gakushaStage1MaleImg, female: gakushaStage1FemaleImg },
+    2: { male: gakushaStage2MaleImg, female: gakushaStage2FemaleImg },
   },
   onmyoji: {
     1: { male: onmyojiStage1MaleImg, female: mikoStage1FemaleImg },
+    2: { male: onmyojiStage2MaleImg, female: mikoStage2FemaleImg },
   },
   ryorinin: {
     1: { male: ryorininStage1MaleImg, female: ryorininStage1FemaleImg },
+    2: { male: ryorininStage2MaleImg, female: ryorininStage2FemaleImg },
   },
   hokan: {
-    1: { male: hokanStage1MaleImg, female: undefined }, // 女性版本尚未生成
+    1: { male: hokanStage1MaleImg, female: geigiStage1FemaleImg },
+    2: { male: hokanStage2MaleImg, female: geigiStage2FemaleImg },
   },
 }
 
