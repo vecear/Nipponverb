@@ -222,11 +222,20 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
       answerRecords,
     }
 
-    const newHistory = [entry, ...practiceHistory]
+    // 限制最多保留 50 筆歷史記錄
+    const newHistory = [entry, ...practiceHistory].slice(0, 50)
 
     // 儲存到 Firestore（非同步，不阻塞）
+    // 精簡 questions：剝除 detailedExplanation 和 explanation 以減少存儲大小
     if (currentUserId) {
-      saveUserPracticeHistory(currentUserId, newHistory).catch((error) => {
+      const compactHistory = newHistory.map(h => ({
+        ...h,
+        questions: h.questions.map(q => {
+          const { detailedExplanation, explanation, ...compact } = q
+          return compact
+        }),
+      }))
+      saveUserPracticeHistory(currentUserId, compactHistory as PracticeHistoryEntry[]).catch((error) => {
         console.error('Failed to save practice history to cloud:', error)
       })
     }
@@ -263,8 +272,8 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
     practiceHistory
       .filter((h) => h.category === category && h.level === level)
       .forEach((entry) => {
-        entry.questions.forEach((q) => {
-          attemptedIds.add(q.id)
+        entry.answerRecords.forEach((r) => {
+          attemptedIds.add(r.questionId)
         })
       })
 
@@ -293,10 +302,10 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
       (h) => h.category === category && h.level === level
     )
 
-    // 收集所有做過的題目 ID
+    // 收集所有做過的題目 ID（使用 answerRecords 而非 questions）
     const allQuestionIds = new Set<string>()
     relevantHistory.forEach((entry) => {
-      entry.questions.forEach((q) => allQuestionIds.add(q.id))
+      entry.answerRecords.forEach((r) => allQuestionIds.add(r.questionId))
     })
 
     // 檢查每個題目的統計，找出答錯比答對多的題目（或從未答對的）

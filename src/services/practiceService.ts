@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore'
+import { doc, getDoc, setDoc } from 'firebase/firestore'
 import { db } from '../config/firebase'
 import { PracticeHistoryEntry, QuestionStats } from '../store/usePracticeStore'
 
@@ -37,20 +37,10 @@ export const saveUserPracticeHistory = async (
 ): Promise<void> => {
   try {
     const practiceRef = doc(db, 'users', uid, 'data', 'practice')
-    const practiceSnap = await getDoc(practiceRef)
-
-    if (practiceSnap.exists()) {
-      await updateDoc(practiceRef, {
-        practiceHistory,
-        updatedAt: new Date().toISOString(),
-      })
-    } else {
-      await setDoc(practiceRef, {
-        practiceHistory,
-        questionStats: {},
-        updatedAt: new Date().toISOString(),
-      })
-    }
+    await setDoc(practiceRef, {
+      practiceHistory,
+      updatedAt: new Date().toISOString(),
+    }, { merge: true })
   } catch (error) {
     console.error('Failed to save practice history:', error)
     throw error
@@ -66,20 +56,10 @@ export const saveUserQuestionStats = async (
 ): Promise<void> => {
   try {
     const practiceRef = doc(db, 'users', uid, 'data', 'practice')
-    const practiceSnap = await getDoc(practiceRef)
-
-    if (practiceSnap.exists()) {
-      await updateDoc(practiceRef, {
-        questionStats,
-        updatedAt: new Date().toISOString(),
-      })
-    } else {
-      await setDoc(practiceRef, {
-        practiceHistory: [],
-        questionStats,
-        updatedAt: new Date().toISOString(),
-      })
-    }
+    await setDoc(practiceRef, {
+      questionStats,
+      updatedAt: new Date().toISOString(),
+    }, { merge: true })
   } catch (error) {
     console.error('Failed to save question stats:', error)
     throw error
@@ -109,7 +89,5 @@ export const saveUserPracticeData = async (
  * 清除使用者的練習資料（用於登出時清除本地狀態）
  */
 export const clearUserPracticeData = async (uid: string): Promise<void> => {
-  // 這個函數不會刪除雲端資料，只是提供一個清除的介面
-  // 實際清除雲端資料需要更謹慎的處理
   console.log(`Practice data cleared for user: ${uid}`)
 }

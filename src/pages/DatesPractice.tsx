@@ -8,7 +8,7 @@ import FuriganaText from '../components/FuriganaText';
 type PageState = 'category-select' | 'subcategory-select' | 'practice' | 'results';
 
 const DatesPractice: React.FC = () => {
-    const { t } = useTranslation();
+    const { } = useTranslation();
     const navigate = useNavigate();
 
     const [pageState, setPageState] = useState<PageState>('category-select');

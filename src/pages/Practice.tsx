@@ -8,30 +8,29 @@ import { usePracticeStore, PracticeHistoryEntry } from '../store/usePracticeStor
 import { useUserStore } from '../store/useUserStore'
 import { useAuth } from '../contexts/AuthContext'
 import { Question } from '../types'
-import { generateGojuonQuestion, generateMatchingQuestion } from '../data/gojuon'
+import { generateGojuonQuestion, generateMatchingQuestion, getGojuonQuestionBank, getGojuonQuestionCount } from '../data/gojuon'
 import MatchingQuestionCard from '../components/MatchingQuestionCard'
-// import { generateVerbQuestion } from '../data/verbs' // Legacy dynamic generator
-import { generateGrammarQuestion } from '../data/grammar'
-import { generateKanjiQuestion } from '../data/kanji'
-import { generateDateCounterQuestion } from '../data/questions/dateCounters'
+import { generateGrammarQuestion, getGrammarQuestionBank, getGrammarQuestionCount } from '../data/grammar'
+import { generateKanjiQuestion, getKanjiQuestionBank, getKanjiQuestionCount } from '../data/kanji'
 import { addExp, updateUserProgression } from '../services/progressionService'
 import { DEFAULT_PROGRESSION, EXP_REWARDS } from '../types/progression'
 import { PRACTICE_ICONS, UI_ELEMENTS, ILLUSTRATIONS } from '../config/assets'
 import { updateStudyTracking } from '../services/studyTrackingService'
 
-// Static Question Banks
-import { n5Questions } from '../data/questions/n5'
-import { n4Questions } from '../data/questions/n4'
-import { n3Questions } from '../data/questions/n3'
-import { n2Questions } from '../data/questions/n2'
-import { n1Questions } from '../data/questions/n1'
-import { vocabN5, vocabN4, vocabN3, vocabN2, vocabN1 } from '../data/questions/vocab'
+// Dates practice data
+import { practiceCategories as datesPracticeCategories, getQuestionsBySubcategory } from '../data/questions/datesPractice'
+
+// Extracted utilities
+import { selectQuestionsSmartly } from '../utils/smartSelection'
+import { staticToQuestion, datesToQuestion } from '../utils/questionAdapters'
+import { getStaticBank, getStaticBankCount } from '../utils/questionBanks'
+import { buildQuestionLookup } from '../utils/questionLookup'
 
 type PracticeCategory = 'gojuon' | 'verbs' | 'grammar' | 'kanji' | 'vocabulary' | 'dates'
 type GojuonSubcategory = 'hiragana' | 'katakana'
 
 const Practice = () => {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const { category } = useParams<{ category: string }>()
   const navigate = useNavigate()
   const { currentUser } = useAuth()
@@ -77,11 +76,19 @@ const Practice = () => {
   const [hasSavedResult, setHasSavedResult] = useState(false)
   const [practiceStartTime, setPracticeStartTime] = useState<number | null>(null)
 
+  // Dates subcategory state
+  const [selectedDatesCategory, setSelectedDatesCategory] = useState('numbers')
+  const [selectedDatesSubcategory, setSelectedDatesSubcategory] = useState('basic')
+
   // Save practice result and award EXP when showing results
   useEffect(() => {
     const saveResultAndAwardExp = async () => {
       if (showResults && !hasSavedResult && answerRecords.length > 0 && category) {
-        const levelToSave = category === 'gojuon' ? selectedSubcategory : selectedLevel
+        const levelToSave = category === 'gojuon'
+          ? selectedSubcategory
+          : category === 'dates'
+            ? `${selectedDatesCategory}_${selectedDatesSubcategory}`
+            : selectedLevel
         savePracticeResult(category, levelToSave)
         setHasSavedResult(true)
 
@@ -125,7 +132,7 @@ const Practice = () => {
     }
 
     saveResultAndAwardExp()
-  }, [showResults, hasSavedResult, answerRecords, category, selectedLevel, selectedSubcategory, savePracticeResult, currentUser, profile, setProfile, practiceStartTime])
+  }, [showResults, hasSavedResult, answerRecords, category, selectedLevel, selectedSubcategory, selectedDatesCategory, selectedDatesSubcategory, savePracticeResult, currentUser, profile, setProfile, practiceStartTime])
 
   // Reset hasSavedResult when starting new practice
   useEffect(() => {
@@ -142,133 +149,35 @@ const Practice = () => {
   ): Question[] => {
     const generatedQuestions: Question[] = []
 
-    // VOCABULARY STATIC BANK LOGIC
-    if (cat === 'vocabulary') {
-      let bank = vocabN5
-      if (level === 'N5') bank = vocabN5
-      else if (level === 'N4') bank = vocabN4
-      else if (level === 'N3') bank = vocabN3
-      else if (level === 'N2') bank = vocabN2
-      else if (level === 'N1') bank = vocabN1
-
-      // Smart Question Selection: 答錯題目佔一半 + 未做過的題目優先
-      const attemptedIds = getAttemptedQuestions('vocabulary', level)
-      const wrongIds = getWrongQuestionIds('vocabulary', level)
-      const wrongIdSet = new Set(wrongIds)
-
-      // 分類題目
-      const unattempted = bank.filter(q => !attemptedIds.has(q.id))
-      const wrongQuestions = bank.filter(q => wrongIdSet.has(q.id))
-      const attemptedCorrect = bank.filter(q => attemptedIds.has(q.id) && !wrongIdSet.has(q.id))
-
-      // 計算答錯題目應佔的數量（總題數的一半）
-      const halfCount = Math.floor(count / 2)
-      const shuffledWrong = [...wrongQuestions].sort(() => 0.5 - Math.random())
-      // 若答錯題目不足一半，則全部納入
-      const selectedWrong = shuffledWrong.slice(0, Math.min(halfCount, shuffledWrong.length))
-
-      // 計算剩餘需要的題目數量
-      let remaining = count - selectedWrong.length
-
-      // 優先從未做過的題目中選取
-      const shuffledUnattempted = [...unattempted].sort(() => 0.5 - Math.random())
-      const selectedUnattempted = shuffledUnattempted.slice(0, Math.min(remaining, shuffledUnattempted.length))
-      remaining -= selectedUnattempted.length
-
-      // 如果還需要更多題目，從做過且答對的題目中補足
-      const shuffledAttemptedCorrect = [...attemptedCorrect].sort(() => 0.5 - Math.random())
-      const selectedAttemptedCorrect = shuffledAttemptedCorrect.slice(0, remaining)
-
-      // 組合所有選中的題目並洗牌
-      const selected = [...selectedWrong, ...selectedUnattempted, ...selectedAttemptedCorrect]
-        .sort(() => 0.5 - Math.random())
-
-      return selected.map(q => ({
-        id: q.id,
-        type: 'multiple-choice',
-        question: q.prob,
-        meaning: q.prob_zh,
-        options: q.options.map(o => o.text),
-        correctAnswer: q.options[q.correctIndex].text,
-        explanation: q.options.map(o => o.reason ? `${o.text}: ${o.reason}` : '').filter(Boolean).join('\n'),
-        detailedExplanation: {
-          correctRule: q.correctRule || '正解です。',
-          distractors: q.options.map(o => ({
-            text: o.text,
-            reason: o.reason || '正解'
-          }))
-        },
-        stem: q.prob,
-        correct: q.options[q.correctIndex].text,
-        level: level
-      } as Question))
+    // STATIC BANK CATEGORIES (vocabulary, verbs) — use smart selection
+    const staticBank = getStaticBank(cat, level)
+    if (staticBank) {
+      const selected = selectQuestionsSmartly({
+        bank: staticBank,
+        getId: q => q.id,
+        count,
+        attemptedIds: getAttemptedQuestions(cat, level),
+        wrongIds: getWrongQuestionIds(cat, level),
+      })
+      return selected.map(q => staticToQuestion(q, level))
     }
 
-    // VERB STATIC BANK LOGIC
-    if (cat === 'verbs') {
-      let bank = n5Questions
-      if (level === 'N5') bank = n5Questions
-      else if (level === 'N4') bank = n4Questions
-      else if (level === 'N3') bank = n3Questions
-      else if (level === 'N2') bank = n2Questions
-      else if (level === 'N1') bank = n1Questions
-
-      // Smart Question Selection: 答錯題目佔一半 + 未做過的題目優先
-      const attemptedIds = getAttemptedQuestions('verbs', level)
-      const wrongIds = getWrongQuestionIds('verbs', level)
-      const wrongIdSet = new Set(wrongIds)
-
-      // 分類題目
-      const unattempted = bank.filter(q => !attemptedIds.has(q.id))
-      const wrongQuestions = bank.filter(q => wrongIdSet.has(q.id))
-      const attemptedCorrect = bank.filter(q => attemptedIds.has(q.id) && !wrongIdSet.has(q.id))
-
-      // 計算答錯題目應佔的數量（總題數的一半）
-      const halfCount = Math.floor(count / 2)
-      const shuffledWrong = [...wrongQuestions].sort(() => 0.5 - Math.random())
-      // 若答錯題目不足一半，則全部納入
-      const selectedWrong = shuffledWrong.slice(0, Math.min(halfCount, shuffledWrong.length))
-
-      // 計算剩餘需要的題目數量
-      let remaining = count - selectedWrong.length
-
-      // 優先從未做過的題目中選取
-      const shuffledUnattempted = [...unattempted].sort(() => 0.5 - Math.random())
-      const selectedUnattempted = shuffledUnattempted.slice(0, Math.min(remaining, shuffledUnattempted.length))
-      remaining -= selectedUnattempted.length
-
-      // 如果還需要更多題目，從做過且答對的題目中補足
-      const shuffledAttemptedCorrect = [...attemptedCorrect].sort(() => 0.5 - Math.random())
-      const selectedAttemptedCorrect = shuffledAttemptedCorrect.slice(0, remaining)
-
-      // 組合所有選中的題目並洗牌
-      const selected = [...selectedWrong, ...selectedUnattempted, ...selectedAttemptedCorrect]
-        .sort(() => 0.5 - Math.random())
-
-      return selected.map(q => ({
-        id: q.id,
-        type: 'multiple-choice', // Standardize type
-        question: q.prob, // Japanese Stem
-        meaning: q.prob_zh, // Taiwanese Stem
-        options: q.options.map(o => o.text),
-        correctAnswer: q.options[q.correctIndex].text,
-        explanation: q.options.map(o => o.reason ? `${o.text}: ${o.reason}` : '').filter(Boolean).join('\n'), // Combine reasons into explanation
-        detailedExplanation: {
-          correctRule: q.correctRule || '正解です。',
-          distractors: q.options.map(o => ({
-            text: o.text,
-            reason: o.reason || '正解'
-          }))
-        },
-        // Polyfill for legacy Question Interface
-        stem: q.prob,
-        correct: q.options[q.correctIndex].text,
-        level: level
-      } as Question))
+    // DATES STATIC BANK — use subcategory selection + smart selection
+    if (cat === 'dates') {
+      const datesLevel = `${selectedDatesCategory}_${selectedDatesSubcategory}`
+      const datesBank = getQuestionsBySubcategory(selectedDatesCategory, selectedDatesSubcategory)
+      const selected = selectQuestionsSmartly({
+        bank: datesBank,
+        getId: q => q.id,
+        count,
+        attemptedIds: getAttemptedQuestions('dates', datesLevel),
+        wrongIds: getWrongQuestionIds('dates', datesLevel),
+      })
+      return selected.map(q => datesToQuestion(q))
     }
 
-    // LEGACY LOGIC FOR OTHER CATEGORIES
-    const totalQuestions = count || 20 // Default to 20 now
+    // DYNAMIC GENERATION FOR OTHER CATEGORIES
+    const totalQuestions = count || 20
 
     for (let i = 0; i < totalQuestions; i++) {
       let q: any
@@ -285,15 +194,11 @@ const Practice = () => {
           }
           break
         }
-        // case 'verbs': merged above
         case 'grammar':
           q = generateGrammarQuestion(level)
           break
         case 'kanji':
-          q = generateKanjiQuestion(level, Math.random() > 0.5 ? 'reading' : 'meaning', i18n.language)
-          break
-        case 'dates':
-          q = generateDateCounterQuestion()
+          q = generateKanjiQuestion(level)
           break
         default:
           q = generateGrammarQuestion(level)
@@ -322,53 +227,78 @@ const Practice = () => {
     const cat = category as PracticeCategory
     if (!cat) return
 
-    const wrongIds = getWrongQuestionIds(cat, selectedLevel)
+    const currentLevel = cat === 'gojuon'
+      ? selectedSubcategory
+      : cat === 'dates'
+        ? `${selectedDatesCategory}_${selectedDatesSubcategory}`
+        : selectedLevel
+    const wrongIds = getWrongQuestionIds(cat, currentLevel)
     if (wrongIds.length === 0) return
 
     const wrongIdSet = new Set(wrongIds)
 
-    // 根據類別取得對應的題庫
-    let bank: any[] = []
-    if (cat === 'vocabulary') {
-      if (selectedLevel === 'N5') bank = vocabN5
-      else if (selectedLevel === 'N4') bank = vocabN4
-      else if (selectedLevel === 'N3') bank = vocabN3
-      else if (selectedLevel === 'N2') bank = vocabN2
-      else if (selectedLevel === 'N1') bank = vocabN1
-    } else if (cat === 'verbs') {
-      if (selectedLevel === 'N5') bank = n5Questions
-      else if (selectedLevel === 'N4') bank = n4Questions
-      else if (selectedLevel === 'N3') bank = n3Questions
-      else if (selectedLevel === 'N2') bank = n2Questions
-      else if (selectedLevel === 'N1') bank = n1Questions
+    // Handle dates category
+    if (cat === 'dates') {
+      const datesBank = getQuestionsBySubcategory(selectedDatesCategory, selectedDatesSubcategory)
+      const wrongQuestions = datesBank.filter(q => wrongIdSet.has(q.id))
+      const shuffled = wrongQuestions
+        .sort(() => 0.5 - Math.random())
+        .map(q => datesToQuestion(q))
+      setQuestions(shuffled)
+      setShowCategorySelect(false)
+      setShowResults(false)
+      setPracticeStartTime(Date.now())
+      return
     }
 
-    // 過濾出錯題
+    // Handle grammar category (dynamic generation with static bank)
+    if (cat === 'grammar') {
+      const grammarBank = getGrammarQuestionBank(selectedLevel)
+      const wrongQuestions = grammarBank.filter(q => wrongIdSet.has(q.id))
+      const shuffled = wrongQuestions.sort(() => 0.5 - Math.random())
+        .map(q => ({ ...q, type: 'multiple-choice' as const }))
+      setQuestions(shuffled)
+      setShowCategorySelect(false)
+      setShowResults(false)
+      setPracticeStartTime(Date.now())
+      return
+    }
+
+    // Handle kanji category (dynamic generation with static bank)
+    if (cat === 'kanji') {
+      const kanjiBank = getKanjiQuestionBank(selectedLevel)
+      const wrongQuestions = kanjiBank.filter(q => wrongIdSet.has(q.id))
+      const shuffled = wrongQuestions.sort(() => 0.5 - Math.random())
+        .map(q => ({ ...q, type: 'multiple-choice' as const }))
+      setQuestions(shuffled)
+      setShowCategorySelect(false)
+      setShowResults(false)
+      setPracticeStartTime(Date.now())
+      return
+    }
+
+    // Handle gojuon category (dynamic generation with static bank)
+    if (cat === 'gojuon') {
+      const gojuonBank = getGojuonQuestionBank(selectedSubcategory)
+      const wrongQuestions = gojuonBank.filter(q => wrongIdSet.has(q.id))
+      const shuffled = wrongQuestions.sort(() => 0.5 - Math.random())
+        .map(q => ({ ...q, type: 'multiple-choice' as const }))
+      setQuestions(shuffled)
+      setShowCategorySelect(false)
+      setShowResults(false)
+      setPracticeStartTime(Date.now())
+      return
+    }
+
+    // Handle static bank categories (verbs, vocabulary)
+    const bank = getStaticBank(cat, selectedLevel)
+    if (!bank) return
+
     const wrongQuestions = bank.filter(q => wrongIdSet.has(q.id))
+    const shuffled = wrongQuestions
+      .sort(() => 0.5 - Math.random())
+      .map(q => staticToQuestion(q, selectedLevel))
 
-    // 轉換為 Question 格式
-    const formattedQuestions = wrongQuestions.map(q => ({
-      id: q.id,
-      type: 'multiple-choice',
-      question: q.prob,
-      meaning: q.prob_zh,
-      options: q.options.map((o: any) => o.text),
-      correctAnswer: q.options[q.correctIndex].text,
-      explanation: q.options.map((o: any) => o.reason ? `${o.text}: ${o.reason}` : '').filter(Boolean).join('\n'),
-      detailedExplanation: {
-        correctRule: q.correctRule || '正解です。',
-        distractors: q.options.map((o: any) => ({
-          text: o.text,
-          reason: o.reason || '正解'
-        }))
-      },
-      stem: q.prob,
-      correct: q.options[q.correctIndex].text,
-      level: selectedLevel
-    } as Question))
-
-    // 洗牌並設定題目
-    const shuffled = formattedQuestions.sort(() => 0.5 - Math.random())
     setQuestions(shuffled)
     setShowCategorySelect(false)
     setShowResults(false)
@@ -517,6 +447,20 @@ const Practice = () => {
   if (viewingHistory) {
     const historyRecordMap = new Map(viewingHistory.answerRecords.map(r => [r.questionId, r]))
 
+    // Enrich compact questions with detailedExplanation from banks if missing
+    const lookup = viewingHistory.questions.some(q => !q.detailedExplanation)
+      ? buildQuestionLookup(viewingHistory.category, viewingHistory.level)
+      : null
+    const enrichedQuestions = lookup
+      ? viewingHistory.questions.map(q => {
+          if (!q.detailedExplanation) {
+            const fullQ = lookup.get(q.id)
+            return fullQ ? { ...q, detailedExplanation: fullQ.detailedExplanation } : q
+          }
+          return q
+        })
+      : viewingHistory.questions
+
     return (
       <div className="max-w-3xl mx-auto space-y-6">
         {/* History Summary Card */}
@@ -561,7 +505,7 @@ const Practice = () => {
         {/* Question Navigation */}
         <div className="card py-3 px-4">
           <div className="flex flex-wrap gap-2 justify-center">
-            {viewingHistory.questions.map((q, index) => {
+            {enrichedQuestions.map((q, index) => {
               const record = historyRecordMap.get(q.id)
               if (!record) {
                 return (
@@ -592,7 +536,7 @@ const Practice = () => {
         <div className="space-y-4">
           <h2 className="text-xl font-bold text-sumi">詳細解析</h2>
 
-          {viewingHistory.questions.map((question, index) => {
+          {enrichedQuestions.map((question, index) => {
             const record = historyRecordMap.get(question.id)
             if (!record) return null
             const isExpanded = expandedQuestions.has(index)
@@ -673,7 +617,7 @@ const Practice = () => {
                       <>
                         <div className="bg-black/20 p-4 rounded-lg border-l-4 border-wave-light space-y-2">
                           <p className="font-bold text-wave-light">📖 文法解析</p>
-                          <p className="text-sm text-indigo-900/90 whitespace-pre-line">
+                          <p className="text-base text-indigo-900/90 whitespace-pre-line">
                             <FuriganaText text={question.detailedExplanation.correctRule} />
                           </p>
                         </div>
@@ -704,9 +648,9 @@ const Practice = () => {
                                       }`}>
                                       <FuriganaText text={distractor.text} />
                                     </span>
-                                    {isCorrectOption && <span className="ml-2 text-xs text-green-400/80">(正解)</span>}
-                                    {isSelectedOption && !isCorrectOption && <span className="ml-2 text-xs text-red-400/80">(你的選擇)</span>}
-                                    <p className="text-indigo-900/70 text-xs mt-1">
+                                    {isCorrectOption && <span className="ml-2 text-sm text-green-400/80">(正解)</span>}
+                                    {isSelectedOption && !isCorrectOption && <span className="ml-2 text-sm text-red-400/80">(你的選擇)</span>}
+                                    <p className="text-indigo-900/70 text-sm mt-1">
                                       <FuriganaText text={distractor.reason} />
                                     </p>
                                   </div>
@@ -740,50 +684,126 @@ const Practice = () => {
             <div className="mb-3">
               <label className="block text-xs sm:text-sm font-semibold mb-1.5">{t('practice.selectSubcategory')}:</label>
               <div className="grid grid-cols-2 gap-1.5">
-                {(['hiragana', 'katakana'] as GojuonSubcategory[]).map((type) => (
-                  <button
-                    key={type}
-                    onClick={() => setSelectedSubcategory(type)}
-                    className={`py-1.5 px-2 rounded-md transition-all ${selectedSubcategory === type
-                      ? 'bg-wave-deep border-2 border-vermilion shadow-ukiyo'
-                      : 'card-interactive !py-1.5 !px-2'
-                      }`}
-                  >
-                    <div className={`text-base sm:text-lg mb-0.5 ${selectedSubcategory === type ? 'text-foam' : ''}`}>{type === 'hiragana' ? 'あ' : 'ア'}</div>
-                    <div className={`font-semibold capitalize text-[10px] sm:text-xs ${selectedSubcategory === type ? 'text-foam' : ''}`}>{t(`practice.categories.gojuon.${type}`)}</div>
-                  </button>
-                ))}
+                {(['hiragana', 'katakana'] as GojuonSubcategory[]).map((type) => {
+                  const gojuonStats = getLevelStats('gojuon', type)
+                  const gojuonTotal = getGojuonQuestionCount(type)
+                  const gojuonAttempted = getAttemptedQuestions('gojuon', type).size
+                  return (
+                    <button
+                      key={type}
+                      onClick={() => setSelectedSubcategory(type)}
+                      className={`py-2 px-2 rounded-md transition-all flex flex-col items-center justify-center ${selectedSubcategory === type
+                        ? 'bg-wave-deep border-2 border-vermilion shadow-ukiyo'
+                        : 'card-interactive !py-2 !px-2'
+                        }`}
+                    >
+                      <div className={`text-base sm:text-lg mb-0.5 ${selectedSubcategory === type ? 'text-foam' : ''}`}>{type === 'hiragana' ? 'あ' : 'ア'}</div>
+                      <div className={`font-semibold capitalize text-[10px] sm:text-xs ${selectedSubcategory === type ? 'text-foam' : ''}`}>{t(`practice.categories.gojuon.${type}`)}</div>
+                      <div className={`text-[10px] sm:text-xs ${selectedSubcategory === type ? 'text-foam/90' : 'text-sumi-faded'}`}>
+                        {gojuonTotal} 題
+                        {gojuonAttempted > 0 && (
+                          <span className={`ml-1 ${selectedSubcategory === type ? 'text-foam/70' : 'text-sumi-faded/70'}`}>
+                            ({gojuonAttempted}完)
+                          </span>
+                        )}
+                      </div>
+                      {gojuonStats && gojuonStats.totalAttempted > 0 && (
+                        <div className={`text-xs sm:text-sm mt-1 space-y-0.5 text-center ${selectedSubcategory === type ? 'text-foam/80' : 'text-sumi-faded/80'}`}>
+                          <div className="flex items-center justify-center gap-1">
+                            <span className={selectedSubcategory === type ? 'text-green-300' : 'text-green-500'}>✓{gojuonStats.totalCorrect}</span>
+                            <span className={selectedSubcategory === type ? 'text-foam/80' : ''}>/</span>
+                            <span className={selectedSubcategory === type ? 'text-red-300' : 'text-red-500'}>✗{gojuonStats.totalWrong}</span>
+                          </div>
+                          <div className={selectedSubcategory === type ? 'text-foam/90' : ''}>正確率 {gojuonStats.accuracy}%</div>
+                        </div>
+                      )}
+                    </button>
+                  )
+                })}
               </div>
             </div>
           )}
 
-          {category !== 'gojuon' && (
+          {category === 'dates' && (
+            <>
+              {/* Dates Category Selection */}
+              <div className="mb-4">
+                <label className="block text-base sm:text-lg font-semibold mb-3">練習類別:</label>
+                <div className="grid grid-cols-3 gap-2 sm:gap-3">
+                  {datesPracticeCategories.map((dateCat) => (
+                    <button
+                      key={dateCat.id}
+                      onClick={() => {
+                        setSelectedDatesCategory(dateCat.id)
+                        setSelectedDatesSubcategory(dateCat.subcategories[0].id)
+                      }}
+                      className={`py-3 px-2 sm:py-4 sm:px-3 rounded-lg transition-all flex flex-col items-center justify-center ${selectedDatesCategory === dateCat.id
+                        ? 'bg-wave-deep text-foam border-2 border-vermilion shadow-ukiyo'
+                        : 'card-interactive !py-3 !px-2 sm:!py-4 sm:!px-3'
+                        }`}
+                    >
+                      <div className={`text-base sm:text-lg font-bold ${selectedDatesCategory === dateCat.id ? 'text-foam' : ''}`}>
+                        {dateCat.titleZh}
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Dates Subcategory Selection */}
+              <div className="mb-5">
+                <label className="block text-base sm:text-lg font-semibold mb-3">子類別:</label>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3">
+                  {datesPracticeCategories
+                    .find(c => c.id === selectedDatesCategory)
+                    ?.subcategories.map((sub) => {
+                      const datesLevel = `${selectedDatesCategory}_${sub.id}`
+                      const subStats = getLevelStats('dates', datesLevel)
+                      const datesAttempted = getAttemptedQuestions('dates', datesLevel).size
+                      return (
+                        <button
+                          key={sub.id}
+                          onClick={() => setSelectedDatesSubcategory(sub.id)}
+                          className={`py-3 px-2 sm:py-4 sm:px-3 rounded-lg transition-all flex flex-col items-center justify-center ${selectedDatesSubcategory === sub.id
+                            ? 'bg-wave-deep text-foam border-2 border-vermilion shadow-ukiyo'
+                            : 'card-interactive !py-3 !px-2 sm:!py-4 sm:!px-3'
+                            }`}
+                        >
+                          <div className={`text-sm sm:text-base font-bold ${selectedDatesSubcategory === sub.id ? 'text-foam' : ''}`}>
+                            {sub.title}
+                          </div>
+                          <div className={`text-xs sm:text-sm ${selectedDatesSubcategory === sub.id ? 'text-foam/90' : 'text-sumi-faded'}`}>
+                            {sub.questionCount} 題
+                            {datesAttempted > 0 && (
+                              <span className={`ml-1 ${selectedDatesSubcategory === sub.id ? 'text-foam/70' : 'text-sumi-faded/70'}`}>
+                                ({datesAttempted}完)
+                              </span>
+                            )}
+                          </div>
+                          {subStats && subStats.totalAttempted > 0 && (
+                            <div className={`text-xs mt-1 ${selectedDatesSubcategory === sub.id ? 'text-foam/80' : 'text-sumi-faded/80'}`}>
+                              正確率 {subStats.accuracy}%
+                            </div>
+                          )}
+                        </button>
+                      )
+                    })}
+                </div>
+              </div>
+            </>
+          )}
+
+          {category !== 'gojuon' && category !== 'dates' && (
             <div className="mb-5">
               <label className="block text-base sm:text-lg font-semibold mb-3">{t('practice.selectLevel')}:</label>
               <div className="grid grid-cols-5 gap-2 sm:gap-3">
                 {(['N5', 'N4', 'N3', 'N2', 'N1'] as const).map((level) => {
-                  // Calculate question counts for Verbs category
-                  const getCount = () => {
-                    if (category === 'vocabulary') {
-                      if (level === 'N5') return vocabN5.length;
-                      if (level === 'N4') return vocabN4.length;
-                      if (level === 'N3') return vocabN3.length;
-                      if (level === 'N2') return vocabN2.length;
-                      if (level === 'N1') return vocabN1.length;
-                    }
-                    if (category === 'verbs') {
-                      if (level === 'N5') return n5Questions.length;
-                      if (level === 'N4') return n4Questions.length;
-                      if (level === 'N3') return n3Questions.length;
-                      if (level === 'N2') return n2Questions.length;
-                      if (level === 'N1') return n1Questions.length;
-                    }
-                    if (category === 'dates') {
-                      return null;
-                    }
-                    return null;
-                  };
-                  const totalQuestionCount = getCount();
+                  const totalQuestionCount = category
+                    ? (getStaticBankCount(category, level)
+                      ?? (category === 'grammar' ? getGrammarQuestionCount(level) : null)
+                      ?? (category === 'kanji' ? getKanjiQuestionCount(level) : null))
+                    : null;
+                  const attemptedCount = category ? getAttemptedQuestions(category, level).size : 0;
 
                   // 取得級別統計
                   const levelStats = category ? getLevelStats(category, level) : null;
@@ -799,21 +819,24 @@ const Practice = () => {
                     >
                       <div className={`text-lg sm:text-xl font-bold ${selectedLevel === level ? 'text-foam' : ''}`}>{level}</div>
                       {totalQuestionCount !== null && (
-                        <>
-                          <div className={`text-sm sm:text-base ${selectedLevel === level ? 'text-foam/90' : 'text-sumi-faded'}`}>
-                            {totalQuestionCount} 題
-                          </div>
-                          {levelStats && levelStats.totalAttempted > 0 && (
-                            <div className={`text-xs sm:text-sm mt-1 space-y-0.5 text-center ${selectedLevel === level ? 'text-foam/80' : 'text-sumi-faded/80'}`}>
-                              <div className="flex items-center justify-center gap-1">
-                                <span className={selectedLevel === level ? 'text-green-300' : 'text-green-500'}>✓{levelStats.totalCorrect}</span>
-                                <span className={selectedLevel === level ? 'text-foam/80' : ''}>/</span>
-                                <span className={selectedLevel === level ? 'text-red-300' : 'text-red-500'}>✗{levelStats.totalWrong}</span>
-                              </div>
-                              <div className={selectedLevel === level ? 'text-foam/90' : ''}>正確率 {levelStats.accuracy}%</div>
-                            </div>
+                        <div className={`text-sm sm:text-base ${selectedLevel === level ? 'text-foam/90' : 'text-sumi-faded'}`}>
+                          {totalQuestionCount} 題
+                          {attemptedCount > 0 && (
+                            <span className={`text-xs ml-1 ${selectedLevel === level ? 'text-foam/70' : 'text-sumi-faded/70'}`}>
+                              ({attemptedCount}完)
+                            </span>
                           )}
-                        </>
+                        </div>
+                      )}
+                      {levelStats && levelStats.totalAttempted > 0 && (
+                        <div className={`text-xs sm:text-sm mt-1 space-y-0.5 text-center ${selectedLevel === level ? 'text-foam/80' : 'text-sumi-faded/80'}`}>
+                          <div className="flex items-center justify-center gap-1">
+                            <span className={selectedLevel === level ? 'text-green-300' : 'text-green-500'}>✓{levelStats.totalCorrect}</span>
+                            <span className={selectedLevel === level ? 'text-foam/80' : ''}>/</span>
+                            <span className={selectedLevel === level ? 'text-red-300' : 'text-red-500'}>✗{levelStats.totalWrong}</span>
+                          </div>
+                          <div className={selectedLevel === level ? 'text-foam/90' : ''}>正確率 {levelStats.accuracy}%</div>
+                        </div>
                       )}
                     </button>
                   );
@@ -846,7 +869,12 @@ const Practice = () => {
                 {t('practice.startPractice')}
               </button>
               {(() => {
-                const wrongIds = category ? getWrongQuestionIds(category, selectedLevel) : [];
+                const currentLevel = category === 'gojuon'
+                  ? selectedSubcategory
+                  : category === 'dates'
+                    ? `${selectedDatesCategory}_${selectedDatesSubcategory}`
+                    : selectedLevel
+                const wrongIds = category ? getWrongQuestionIds(category, currentLevel) : [];
                 const hasWrongQuestions = wrongIds.length > 0;
                 return (
                   <button
@@ -873,7 +901,11 @@ const Practice = () => {
 
         {/* Practice History Section */}
         {(() => {
-          const historyLevel = category === 'gojuon' ? selectedSubcategory : selectedLevel
+          const historyLevel = category === 'gojuon'
+            ? selectedSubcategory
+            : category === 'dates'
+              ? `${selectedDatesCategory}_${selectedDatesSubcategory}`
+              : selectedLevel
           const history = getHistoryByCategory(category || '', historyLevel)
           const avgAccuracy = history.length > 0
             ? Math.round(history.reduce((sum, h) => sum + h.accuracy, 0) / history.length)
@@ -886,7 +918,12 @@ const Practice = () => {
               <div className="flex items-center justify-between mb-2 sm:mb-4">
                 <h2 className="text-sm sm:text-lg font-bold flex items-center gap-1 sm:gap-2">
                   <History size={16} className="sm:w-5 sm:h-5 text-wave-light" />
-                  近期成績 ({category === 'gojuon' ? t(`practice.categories.gojuon.${selectedSubcategory}`) : selectedLevel})
+                  近期成績 ({category === 'gojuon'
+                    ? t(`practice.categories.gojuon.${selectedSubcategory}`)
+                    : category === 'dates'
+                      ? (datesPracticeCategories.find(c => c.id === selectedDatesCategory)
+                          ?.subcategories.find(s => s.id === selectedDatesSubcategory)?.title || selectedDatesSubcategory)
+                      : selectedLevel})
                 </h2>
                 {avgAccuracy !== null && (
                   <div className="text-xs sm:text-sm">
@@ -1147,7 +1184,7 @@ const Practice = () => {
                         {/* Main Rule Explanation */}
                         <div className="bg-black/20 p-4 rounded-lg border-l-4 border-wave-light space-y-2">
                           <p className="font-bold text-wave-light">📖 文法解析</p>
-                          <p className="text-sm text-white/90 whitespace-pre-line">
+                          <p className="text-base text-white/90 whitespace-pre-line">
                             <FuriganaText text={question.detailedExplanation.correctRule} />
                           </p>
                         </div>
@@ -1179,9 +1216,9 @@ const Practice = () => {
                                       }`}>
                                       <FuriganaText text={distractor.text} />
                                     </span>
-                                    {isCorrectOption && <span className="ml-2 text-xs text-green-400/80">(正解)</span>}
-                                    {isSelectedOption && !isCorrectOption && <span className="ml-2 text-xs text-red-400/80">(你的選擇)</span>}
-                                    <p className="text-white/70 text-xs mt-1">
+                                    {isCorrectOption && <span className="ml-2 text-sm text-green-400/80">(正解)</span>}
+                                    {isSelectedOption && !isCorrectOption && <span className="ml-2 text-sm text-red-400/80">(你的選擇)</span>}
+                                    <p className="text-white/70 text-sm mt-1">
                                       <FuriganaText text={distractor.reason} />
                                     </p>
                                   </div>

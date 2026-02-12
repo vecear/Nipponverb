@@ -207,34 +207,81 @@ export const katakanaData = [
 ]
 
 
-// Generate tricky distractors for Gojuon practice
-export function generateGojuonQuestion(type: 'hiragana' | 'katakana', questionType: 'char-to-romaji' | 'romaji-to-char') {
+// Helper: generate a question for a specific character
+function generateGojuonForChar(
+    type: 'hiragana' | 'katakana',
+    target: typeof hiraganaData[0],
+    questionType: 'char-to-romaji' | 'romaji-to-char'
+) {
     const data = type === 'hiragana' ? hiraganaData : katakanaData
-    const target = data[Math.floor(Math.random() * data.length)]
-
-    // Generate distractors from the same or adjacent rows
     const distractors = data
         .filter(item => item.char !== target.char)
         .sort(() => Math.random() - 0.5)
         .slice(0, 3)
 
     if (questionType === 'char-to-romaji') {
+        const correct = target.romaji
+        const shuffledOptions = [correct, ...distractors.map(d => d.romaji)].sort(() => Math.random() - 0.5)
+        const explanationText = `「${target.char}」の読{よ}みは「${target.romaji}」です。（${target.row}行{ぎょう}）`
         return {
-            stem: `「${target.char}」の読み方は何ですか？`,
-            correct: target.romaji,
-            options: [target.romaji, ...distractors.map(d => d.romaji)].sort(() => Math.random() - 0.5),
-            explanation: `「${target.char}」の読み方は「${target.romaji}」です。`,
+            id: `gojuon_${type}_${target.romaji}_c2r`,
+            stem: `「${target.char}」の読{よ}み方{かた}は何{なん}ですか？`,
+            correct,
+            options: shuffledOptions,
+            explanation: explanationText,
+            detailedExplanation: {
+                correctRule: explanationText,
+                distractors: shuffledOptions.map(opt => ({
+                    text: opt,
+                    reason: opt === correct
+                        ? `正解{せいかい}！「${target.char}」の読{よ}みは「${target.romaji}」です。`
+                        : `不正解{ふせいかい}：「${opt}」は他{ほか}の仮名{かな}の読{よ}みです。`,
+                })),
+            },
             level: 'N5' as const,
         }
     } else {
+        const correct = target.char
+        const shuffledOptions = [correct, ...distractors.map(d => d.char)].sort(() => Math.random() - 0.5)
+        const explanationText = `「${target.romaji}」は「${target.char}」と書{か}きます。（${target.row}行{ぎょう}）`
         return {
-            stem: `「${target.romaji}」を表す文字はどれですか？`,
-            correct: target.char,
-            options: [target.char, ...distractors.map(d => d.char)].sort(() => Math.random() - 0.5),
-            explanation: `「${target.romaji}」は「${target.char}」と書きます。`,
+            id: `gojuon_${type}_${target.romaji}_r2c`,
+            stem: `「${target.romaji}」を表{あらわ}す文字{もじ}はどれですか？`,
+            correct,
+            options: shuffledOptions,
+            explanation: explanationText,
+            detailedExplanation: {
+                correctRule: explanationText,
+                distractors: shuffledOptions.map(opt => ({
+                    text: opt,
+                    reason: opt === correct
+                        ? `正解{せいかい}！「${target.romaji}」は「${target.char}」です。`
+                        : `不正解{ふせいかい}：この仮名{かな}の読{よ}みは「${target.romaji}」ではありません。`,
+                })),
+            },
             level: 'N5' as const,
         }
     }
+}
+
+// Generate tricky distractors for Gojuon practice
+export function generateGojuonQuestion(type: 'hiragana' | 'katakana', questionType: 'char-to-romaji' | 'romaji-to-char') {
+    const data = type === 'hiragana' ? hiraganaData : katakanaData
+    const target = data[Math.floor(Math.random() * data.length)]
+    return generateGojuonForChar(type, target, questionType)
+}
+
+export function getGojuonQuestionBank(type: 'hiragana' | 'katakana') {
+    const data = type === 'hiragana' ? hiraganaData : katakanaData
+    return data.flatMap(char => [
+        generateGojuonForChar(type, char, 'char-to-romaji'),
+        generateGojuonForChar(type, char, 'romaji-to-char'),
+    ])
+}
+
+export function getGojuonQuestionCount(type: 'hiragana' | 'katakana'): number {
+    const data = type === 'hiragana' ? hiraganaData : katakanaData
+    return data.length * 2  // 2 directions per character
 }
 
 // Generate a set of pairs for Matching / Connect games

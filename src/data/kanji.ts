@@ -175,85 +175,74 @@ export const kanjiData: KanjiData[] = [
     },
 ]
 
-// Generate kanji reading questions
+// Helper to build detailedExplanation for kanji questions
+function buildKanjiExplanation(
+    correct: string,
+    shuffledOptions: string[],
+    explanationText: string
+) {
+    return {
+        correctRule: explanationText,
+        distractors: shuffledOptions.map(opt => ({
+            text: opt,
+            reason: opt === correct
+                ? '正解{せいかい}！'
+                : '不正解{ふせいかい}：正{ただ}しい答{こた}えではありません。',
+        })),
+    }
+}
+
+// Generate a reading question for a specific kanji entry and example index
+function generateKanjiReadingForEntry(target: KanjiData, exampleIdx: number) {
+    const example = target.examples[exampleIdx]
+    const level = target.level
+
+    const allReadings = kanjiData
+        .filter(k => k.kanji !== target.kanji)
+        .flatMap(k => k.examples.map(e => e.reading))
+    const distractors = allReadings
+        .filter(r => r !== example.reading)
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 3)
+    const shuffledOptions = [example.reading, ...distractors].sort(() => Math.random() - 0.5)
+    const explanationText = `「${example.word}」の読{よ}み方{かた}は「${example.reading}」です。`
+
+    return {
+        id: `kanji_${level}_${target.kanji}_reading_${exampleIdx}`,
+        stem: `「${example.word}」の読{よ}み方{かた}は何{なん}ですか。`,
+        correct: example.reading,
+        options: shuffledOptions,
+        explanation: explanationText,
+        detailedExplanation: buildKanjiExplanation(example.reading, shuffledOptions, explanationText),
+        level,
+        source: 'kanji_reading',
+    }
+}
+
+// Generate a random kanji reading question for the given level
 export function generateKanjiQuestion(
-    level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1' = 'N5',
-    type: 'reading' | 'writing' | 'meaning' = 'reading',
-    lang: 'en' | 'zh-TW' | string = 'en'
+    level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1' = 'N5'
 ) {
     const levelKanji = kanjiData.filter(k => k.level === level)
     if (levelKanji.length === 0) {
-        // Fallback to N5
-        return generateKanjiQuestion('N5', type, lang)
+        return generateKanjiQuestion('N5')
     }
 
     const target = levelKanji[Math.floor(Math.random() * levelKanji.length)]
-    const isZh = lang.startsWith('zh') || lang === 'zh-TW'
+    const exampleIdx = Math.floor(Math.random() * target.examples.length)
 
-    if (type === 'reading') {
-        // Pick a random example word
-        const example = target.examples[Math.floor(Math.random() * target.examples.length)]
+    return generateKanjiReadingForEntry(target, exampleIdx)
+}
 
-        // Generate distractors
-        const allReadings = kanjiData
-            .filter(k => k.kanji !== target.kanji)
-            .flatMap(k => k.examples.map(e => e.reading))
+// Get all kanji reading questions for a given level (useful for wrong-question review)
+export function getKanjiQuestionBank(level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1') {
+    const levelKanji = kanjiData.filter(k => k.level === level)
+    return levelKanji.flatMap(target =>
+        target.examples.map((_, idx) => generateKanjiReadingForEntry(target, idx))
+    )
+}
 
-        const distractors = allReadings
-            .filter(r => r !== example.reading)
-            .sort(() => Math.random() - 0.5)
-            .slice(0, 3)
-
-        return {
-            stem: `「${example.word}」${isZh ? '的讀音是什麼？' : 'の読み方は何ですか。'}`,
-            correct: example.reading,
-            options: [example.reading, ...distractors].sort(() => Math.random() - 0.5),
-            explanation: `「${example.word}」${isZh ? '的讀音是' : 'の読み方は'}「${example.reading}」${isZh ? '。' : 'です。'}`,
-            level,
-            source: 'kanji_reading',
-        }
-    } else if (type === 'writing') {
-        // Writing question (Hiragana -> Kanji)
-        const example = target.examples[Math.floor(Math.random() * target.examples.length)]
-
-        const allWords = kanjiData
-            .filter(k => k.kanji !== target.kanji)
-            .flatMap(k => k.examples.map(e => e.word))
-
-        const distractors = allWords
-            .filter(w => w !== example.word)
-            .sort(() => Math.random() - 0.5)
-            .slice(0, 3)
-
-        return {
-            stem: `「${example.reading}」${isZh ? '的漢字怎麼寫？' : 'は漢字でどう書きますか。'}`,
-            correct: example.word,
-            options: [example.word, ...distractors].sort(() => Math.random() - 0.5),
-            explanation: `「${example.reading}」${isZh ? '的漢字寫作' : 'は漢字で'}「${example.word}」${isZh ? '。' : 'とし書きます。'}`,
-            level,
-            source: 'kanji_writing',
-        }
-    } else {
-        // Meaning question (Kanji -> Meaning)
-        const example = target.examples[Math.floor(Math.random() * target.examples.length)]
-        const correctMeaning = isZh ? example.meaning_zh : example.meaning
-
-        const allMeanings = kanjiData
-            .filter(k => k.kanji !== target.kanji)
-            .flatMap(k => k.examples.map(e => isZh ? e.meaning_zh : e.meaning))
-
-        const distractors = allMeanings
-            .filter(m => m !== correctMeaning)
-            .sort(() => Math.random() - 0.5)
-            .slice(0, 3)
-
-        return {
-            stem: `「${example.word}」${isZh ? '的意思是什麼？' : 'の意味は何ですか。'}`,
-            correct: correctMeaning,
-            options: [correctMeaning, ...distractors].sort(() => Math.random() - 0.5),
-            explanation: `「${example.word}」${isZh ? '的意思是' : 'の意味は'}「${correctMeaning}」${isZh ? '。' : 'です。'}`,
-            level,
-            source: 'kanji_meaning',
-        }
-    }
+// Get the total number of kanji questions available for a given level
+export function getKanjiQuestionCount(level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1'): number {
+    return kanjiData.filter(k => k.level === level).reduce((sum, k) => sum + k.examples.length, 0)
 }
