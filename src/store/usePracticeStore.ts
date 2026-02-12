@@ -5,11 +5,13 @@ import {
   saveUserPracticeHistory,
   saveUserQuestionStats,
 } from '../services/practiceService'
+import { rateAnswer, updateSRS } from '../utils/srsEngine'
 
-interface AnswerRecord {
+export interface AnswerRecord {
   questionId: string
   selectedAnswer: string
   isCorrect: boolean
+  responseTimeMs?: number
 }
 
 export interface PracticeHistoryEntry {
@@ -22,15 +24,34 @@ export interface PracticeHistoryEntry {
   date: string
   questions: Question[]
   answerRecords: AnswerRecord[]
+  durationMs?: number           // 整場練習時長 (ms)
+  avgResponseTimeMs?: number    // 平均每題作答時間 (ms)
+}
+
+// 單題統計資料（含 SRS 和弱點追蹤）
+export interface QuestionStatsEntry {
+  // 基礎統計
+  attempts: number
+  correct: number
+  lastAttempt: string
+
+  // SRS 間隔重複
+  srsInterval?: number       // 天數（預設 1）
+  srsEaseFactor?: number     // 倍率（預設 2.5）
+  srsDueDate?: string        // ISO 日期字串
+  srsPhase?: 'new' | 'learning' | 'review' | 'relearning'
+
+  // 弱點追蹤
+  consecutiveErrors?: number   // 連續答錯次數（答對重設為 0）
+  consecutiveCorrect?: number  // 連續答對次數（答錯重設為 0）
+  avgResponseTime?: number     // 滾動平均作答時間 (ms)
+  lastResponseTime?: number    // 上次作答時間 (ms)
+  errorPattern?: string[]      // 最近 5 次答錯時選的答案
 }
 
 // 題目完成次數統計
 export interface QuestionStats {
-  [questionId: string]: {
-    attempts: number
-    correct: number
-    lastAttempt: string
-  }
+  [questionId: string]: QuestionStatsEntry
 }
 
 // 級別統計資訊
@@ -53,6 +74,8 @@ interface PracticeStore {
   questionStats: QuestionStats
   currentUserId: string | null
   isLoading: boolean
+  questionStartTime: number | null  // 當前題目開始作答時間戳
+  earnedAchievements: string[]      // 已獲得的成就 ID 列表
 
   setCurrentUserId: (userId: string | null) => Promise<void>
   setQuestions: (questions: Question[]) => void
@@ -82,6 +105,8 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
   questionStats: {},
   currentUserId: null,
   isLoading: false,
+  questionStartTime: null,
+  earnedAchievements: [],
 
   // 設定當前使用者 ID，並從 Firestore 載入該使用者的練習資料
   setCurrentUserId: async (userId: string | null) => {
@@ -94,6 +119,7 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
           set({
             practiceHistory: data.practiceHistory || [],
             questionStats: data.questionStats || {},
+            earnedAchievements: data.earnedAchievements || [],
             isLoading: false,
           })
         } else {
@@ -101,6 +127,7 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
           set({
             practiceHistory: [],
             questionStats: {},
+            earnedAchievements: [],
             isLoading: false,
           })
         }
@@ -128,12 +155,14 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
       currentUserId: null,
       practiceHistory: [],
       questionStats: {},
+      earnedAchievements: [],
       currentQuestion: null,
       questions: [],
       currentIndex: 0,
       score: 0,
       totalAttempts: 0,
       answerRecords: [],
+      questionStartTime: null,
     })
   },
 
@@ -145,6 +174,7 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
       score: 0,
       totalAttempts: 0,
       answerRecords: [],
+      questionStartTime: Date.now(),
     }),
 
   nextQuestion: () =>
@@ -153,14 +183,17 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
       return {
         currentIndex: nextIndex,
         currentQuestion: state.questions[nextIndex] || null,
+        questionStartTime: Date.now(),
       }
     }),
 
   checkAnswer: (answer: string) => {
-    const { currentQuestion, questionStats, currentUserId } = get()
+    const { currentQuestion, questionStats, currentUserId, questionStartTime } = get()
     if (!currentQuestion) return false
 
     const isCorrect = answer === currentQuestion.correct
+    const now = Date.now()
+    const responseTimeMs = questionStartTime ? now - questionStartTime : undefined
 
     // 更新題目統計
     const updatedStats = { ...questionStats }
@@ -168,9 +201,52 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
     if (!updatedStats[qid]) {
       updatedStats[qid] = { attempts: 0, correct: 0, lastAttempt: '' }
     }
-    updatedStats[qid].attempts++
-    if (isCorrect) updatedStats[qid].correct++
-    updatedStats[qid].lastAttempt = new Date().toISOString()
+
+    const prevEntry = updatedStats[qid]
+
+    // 基礎統計
+    updatedStats[qid] = {
+      ...prevEntry,
+      attempts: prevEntry.attempts + 1,
+      correct: isCorrect ? prevEntry.correct + 1 : prevEntry.correct,
+      lastAttempt: new Date().toISOString(),
+
+      // SRS 更新
+      ...(() => {
+        const quality = rateAnswer(
+          isCorrect,
+          responseTimeMs,
+          prevEntry.avgResponseTime,
+          prevEntry.consecutiveCorrect ?? 0,
+        )
+        const currentSRS = {
+          interval: prevEntry.srsInterval ?? 1,
+          easeFactor: prevEntry.srsEaseFactor ?? 2.5,
+          phase: (prevEntry.srsPhase ?? 'new') as 'new' | 'learning' | 'review' | 'relearning',
+          dueDate: prevEntry.srsDueDate ?? new Date().toISOString(),
+        }
+        const newSRS = updateSRS(currentSRS, quality)
+        return {
+          srsInterval: newSRS.interval,
+          srsEaseFactor: newSRS.easeFactor,
+          srsDueDate: newSRS.dueDate,
+          srsPhase: newSRS.phase,
+        }
+      })(),
+
+      // 弱點追蹤
+      consecutiveErrors: isCorrect ? 0 : (prevEntry.consecutiveErrors ?? 0) + 1,
+      consecutiveCorrect: isCorrect ? (prevEntry.consecutiveCorrect ?? 0) + 1 : 0,
+      lastResponseTime: responseTimeMs,
+      avgResponseTime: responseTimeMs !== undefined
+        ? prevEntry.avgResponseTime
+          ? Math.round(prevEntry.avgResponseTime * 0.7 + responseTimeMs * 0.3)
+          : responseTimeMs
+        : prevEntry.avgResponseTime,
+      errorPattern: !isCorrect
+        ? [...(prevEntry.errorPattern ?? []).slice(-4), answer]
+        : prevEntry.errorPattern,
+    }
 
     // 儲存到 Firestore（非同步，不阻塞）
     if (currentUserId) {
@@ -188,6 +264,7 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
           questionId: currentQuestion.id,
           selectedAnswer: answer,
           isCorrect,
+          responseTimeMs,
         },
       ],
       questionStats: updatedStats,
@@ -204,11 +281,20 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
       score: 0,
       totalAttempts: 0,
       answerRecords: [],
+      questionStartTime: null,
     }),
 
   savePracticeResult: (category: string, level: string) => {
     const { score, answerRecords, questions, currentUserId, practiceHistory } = get()
     if (answerRecords.length === 0) return
+
+    // 計算作答時間統計
+    const responseTimes = answerRecords
+      .map(r => r.responseTimeMs)
+      .filter((t): t is number => t !== undefined)
+    const avgResponseTimeMs = responseTimes.length > 0
+      ? Math.round(responseTimes.reduce((a, b) => a + b, 0) / responseTimes.length)
+      : undefined
 
     const entry: PracticeHistoryEntry = {
       id: `${Date.now()}_${Math.random().toString(36).substring(2, 11)}`,
@@ -220,6 +306,7 @@ export const usePracticeStore = create<PracticeStore>((set, get) => ({
       date: new Date().toISOString(),
       questions,
       answerRecords,
+      avgResponseTimeMs,
     }
 
     // 限制最多保留 50 筆歷史記錄

@@ -84,6 +84,10 @@ export default {
       animation: {
         'wave': 'wave 3s ease-in-out infinite',
         'float': 'float 6s ease-in-out infinite',
+        'shake': 'shake 0.3s ease-in-out',
+        'bounce-in': 'bounceIn 0.4s ease-out',
+        'slide-up': 'slideUp 0.3s ease-out',
+        'correct-pulse': 'correctPulse 0.5s ease-out',
       },
       keyframes: {
         wave: {
@@ -93,6 +97,24 @@ export default {
         float: {
           '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
           '50%': { transform: 'translateY(-10px) rotate(1deg)' },
+        },
+        shake: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '25%': { transform: 'translateX(-4px)' },
+          '75%': { transform: 'translateX(4px)' },
+        },
+        bounceIn: {
+          '0%': { transform: 'scale(0.8)', opacity: '0' },
+          '60%': { transform: 'scale(1.05)' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(10px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        correctPulse: {
+          '0%': { boxShadow: '0 0 0 0 rgba(34, 197, 94, 0.4)' },
+          '100%': { boxShadow: '0 0 0 12px rgba(34, 197, 94, 0)' },
         },
       },
     },

@@ -12,18 +12,18 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'basic',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「一」的正確讀音是？',
+        stem: '「一」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一」的正確讀音是？',
         options: [
-            { text: 'いち', isCorrect: true, reason: '正確{せいかく}！「一{いち}」的音讀{おんどく}是「いち」，源自{げんじ}古代{こだい}中國{ちゅうごく}的讀音{どくおん}。' },
-            { text: 'ひとつ', isCorrect: false, reason: '這是「一{ひと}つ」的讀法{よみかた}，用於{もちい}計數{けいすう}一般{いっぱん}物品{ぶっぴん}時{とき}使用{しよう}訓讀{くんどく}。' },
-            { text: 'いつ', isCorrect: false, reason: '這是「五{ご}」在「五{いつ}つ」中的讀法{よみかた}，不是「一{いち}」。' },
-            { text: 'ひと', isCorrect: false, reason: '這是「一人{ひとり}」中「一{ひと}」的訓讀{くんどく}部分{ぶぶん}，不是獨立{どくりつ}數字{すうじ}的讀法{よみかた}。' }
+            { text: 'いち', isCorrect: true, reason: '正確！「一{いち}」的音讀是「いち」，源自古代中國的讀音。' },
+            { text: 'ひとつ', isCorrect: false, reason: '這是「一{ひと}つ」的讀法，用於計數一般物品時使用訓讀。' },
+            { text: 'いつ', isCorrect: false, reason: '這是「五」在「五つ」中的讀法，不是「一{いち}」。' },
+            { text: 'ひと', isCorrect: false, reason: '這是「一人」中「一{ひと}」的訓讀部分，不是獨立數字的讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '數字{すうじ}「一{いち}」的標準{ひょうじゅん}音讀{おんどく}是「いち」，源自{げんじ}古代{こだい}中國{ちゅうごく}的讀音{どくおん}。在現代{げんだい}日語{にほんご}中，「いち」常用於{じょうようもちい}電話{でんわ}號碼{ばんごう}、數學{すうがく}計算{けいさん}和10以上{いじょう}的組合{くみあわせ}數字{すうじ}。',
-            relatedRules: ['音讀{おんどく}與訓讀{くんどく}的區別{くべつ}', '1-10的基本{きほん}發音{はつおん}', '音讀{おんどく}使用{しよう}場景{ばめん}']
+            correctRule: '數字「一{いち}」的標準音讀是「いち」，源自古代中國的讀音。在現代日語中，「いち」常用於電話號碼、數學計算和10以上的組合數字。',
+            relatedRules: ['音讀與訓讀的區別', '1-10的基本發音', '音讀使用場景']
         },
         sourceItem: { value: 1, kanji: '一', reading: 'いち' }
     },
@@ -36,16 +36,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '彼女は＿＿番です。',
         stem_zh: '她是一號。',
         options: [
-            { text: 'ひと', isCorrect: false, reason: '陷阱{かんけい}！「ひと」是訓讀{くんどく}，在編號{ばんごう}中必須{ひっす}使用{しよう}する音讀{おんどく}。' },
-            { text: 'いち', isCorrect: true, reason: '正確{せいかく}！編號{ばんごう}、順序{じゅんじょ}時{とき}使用{しよう}音讀{おんどく}「いち」。' },
-            { text: 'ひとつ', isCorrect: false, reason: '「ひとつ」用於{もちい}計數{けいすう}物品{ぶっぴん}，不用於{もちいず}編號{ばんごう}。' },
-            { text: 'いっ', isCorrect: false, reason: '「いっ」は促音化{そくおんか}の形式{けいしき}，獨立{どくりつ}使用{しよう}時{とき}不促音{ふそくおん}。' }
+            { text: 'ひと', isCorrect: false, reason: '陷阱！「ひと」是訓讀，在編號中必須使用音讀。' },
+            { text: 'いち', isCorrect: true, reason: '正確！編號、順序時使用音讀「いち」。' },
+            { text: 'ひとつ', isCorrect: false, reason: '「ひとつ」用於計數物品，不用於編號。' },
+            { text: 'いっ', isCorrect: false, reason: '「いっ」是促音化的形式，獨立使用時不促音。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '在編號{ばんごう}、順序{じゅんじょ}、號碼{ばんごう}等情境{じょうきょう}中，必須{ひっす}使用{しよう}音讀{おんどく}「いち」，不可{ふか}使用{しよう}訓讀{くんどく}「ひと」或「ひとつ」。',
-            trapExplanation: '這是一道{いちどう}陷阱題{かんけいだい}，利用{りよう}學習者{がくしゅうしゃ}容易{ようい}混淆{こんこう}音讀{おんどく}與訓讀{くんどく}の使用{しよう}場景{ばめん}。',
-            relatedRules: ['編號{ばんごう}使用{しよう}音讀{おんどく}', '音讀{おんどく}與訓讀{くんどく}の使用{しよう}場景{ばめん}區別{くべつ}']
+            correctRule: '在編號、順序、號碼等情境中，必須使用音讀「いち」，不可使用訓讀「ひと」或「ひとつ」。',
+            trapExplanation: '這是一道陷阱題，利用學習者容易混淆音讀與訓讀的使用場景。',
+            relatedRules: ['編號使用音讀', '音讀與訓讀的使用場景區別']
         },
         sourceItem: { value: 1, kanji: '一番', reading: 'いちばん' }
     },
@@ -62,15 +62,15 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '090の＿＿23の4567です。（最初是1）'
         },
         options: [
-            { text: 'ひと', isCorrect: false, reason: '電話{でんわ}號碼{ばんごう}必須{ひっす}使用{しよう}する音讀{おんどく}，不能{ふのう}使用{しよう}する訓讀{くんどく}「ひと」。' },
-            { text: 'いち', isCorrect: true, reason: '正確{せいかく}！電話{でんわ}號碼{ばんごう}使用{しよう}音讀{おんどく}「いち」。' },
-            { text: 'ひとつ', isCorrect: false, reason: '電話{でんわ}號碼{ばんごう}使用{しよう}しない量詞{りょうし}讀法{よみかた}。' },
-            { text: 'いっち', isCorrect: false, reason: '沒有{ない}「いっち」這個{この}讀法{よみかた}。' }
+            { text: 'ひと', isCorrect: false, reason: '電話號碼必須使用音讀，不能使用訓讀「ひと」。' },
+            { text: 'いち', isCorrect: true, reason: '正確！電話號碼使用音讀「いち」。' },
+            { text: 'ひとつ', isCorrect: false, reason: '電話號碼不使用量詞讀法。' },
+            { text: 'いっち', isCorrect: false, reason: '沒有「いっち」這個讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '電話{でんわ}號碼{ばんごう}、地址{じゅうしょ}等數字{すうじ}序列{じょれつ}中，一律{いちりつ}使用{しよう}音讀{おんどく}「いち」。',
-            relatedRules: ['電話{でんわ}號碼{ばんごう}の讀法{よみかた}', '數字{すうじ}序列{じょれつ}使用{しよう}音讀{おんどく}']
+            correctRule: '電話號碼、地址等數字序列中，一律使用音讀「いち」。',
+            relatedRules: ['電話號碼的讀法', '數字序列使用音讀']
         },
         sourceItem: { value: 1, kanji: '一', reading: 'いち' }
     },
@@ -82,18 +82,18 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'basic',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二」的正確讀音是？',
+        stem: '「二」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二」的正確讀音是？',
         options: [
-            { text: 'に', isCorrect: true, reason: '正確{せいかく}！「二{に}」的音讀{おんどく}是「に」。' },
-            { text: 'ふた', isCorrect: false, reason: '「ふた」是訓讀{くんどく}，用於{もちい}「二{ふた}つ」等詞{とうし}。' },
-            { text: 'ふたつ', isCorrect: false, reason: '「ふたつ」是完整{かんせい}的量詞{りょうし}讀法{よみかた}，不是單純{たんじゅん}的數字{すうじ}讀音{どくおん}。' },
-            { text: 'じ', isCorrect: false, reason: '「じ」不是「二{に}」的讀音{どくおん}。' }
+            { text: 'に', isCorrect: true, reason: '正確！「二{に}」的音讀是「に」。' },
+            { text: 'ふた', isCorrect: false, reason: '「ふた」是訓讀，用於「二つ」等詞。' },
+            { text: 'ふたつ', isCorrect: false, reason: '「ふたつ」是完整的量詞讀法，不是單純的數字讀音。' },
+            { text: 'じ', isCorrect: false, reason: '「じ」不是「二{に}」的讀音。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二{に}」的標準{ひょうじゅん}音讀{おんどく}是「に」，發音{はつおん}簡短{かんたん}清晰{せいせき}，是日語{にほんご}中最{もっと}常用{じょうよう}的數字{すうじ}之一{のいち}。',
-            relatedRules: ['基本{きほん}數字{すうじ}1-10の音讀{おんどく}', '2の發音{はつおん}特點{とくてん}']
+            correctRule: '「二{に}」的標準音讀是「に」，發音簡短清晰，是日語中最常用的數字之一。',
+            relatedRules: ['基本數字1-10的音讀', '2的發音特點']
         },
         sourceItem: { value: 2, kanji: '二', reading: 'に' }
     },
@@ -106,16 +106,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '私には兄が＿＿人います。',
         stem_zh: '我有兩個哥哥。',
         options: [
-            { text: 'に', isCorrect: false, reason: '陷阱{かんけい}！「二人{ふたり}」讀まない{よまない}「ににん」，使用{しよう}する特殊{とくしゅ}訓讀{くんどく}。' },
-            { text: 'ふたり', isCorrect: true, reason: '正確{せいかく}！「二人{ふたり}」的特殊{とくしゅ}讀法{よみかた}是「ふたり」。' },
-            { text: 'ふた', isCorrect: false, reason: '缺少{けっしょう}量詞{りょうし}「り」，不完整{ふかんせい}。' },
-            { text: 'ふたつ', isCorrect: false, reason: '「ふたつ」用於{もちい}物品{ぶっぴん}，人數{にんずう}使用{しよう}する「ふたり」。' }
+            { text: 'に', isCorrect: false, reason: '陷阱！「二人{ふたり}」不讀「ににん」，使用特殊訓讀。' },
+            { text: 'ふたり', isCorrect: true, reason: '正確！「二人{ふたり}」的特殊讀法是「ふたり」。' },
+            { text: 'ふた', isCorrect: false, reason: '缺少量詞「り」，不完整。' },
+            { text: 'ふたつ', isCorrect: false, reason: '「ふたつ」用於物品，人數使用「ふたり」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二人{ふたり}」は特殊{とくしゅ}讀法{よみかた}，必須{ひっす}讀作{どくさ}「ふたり」，不能{ふのう}使用{しよう}する音讀{おんどく}「ににん」。這是日語{にほんご}中少數{しょうすう}保留{ほりゅう}訓讀{くんどく}の人數{にんずう}表達{ひょうたつ}。',
-            trapExplanation: '這是陷阱題{かんけいだい}，「二人{ふたり}」は日語{にほんご}中の特殊{とくしゅ}讀法{よみかた}，學習者{がくしゅうしゃ}容易{ようい}套用{とうよう}一般{いっぱん}規則{きそく}而錯誤{さくご}。',
-            relatedRules: ['人數{にんずう}の特殊{とくしゅ}讀法{よみかた}', '一人{ひとり}、二人{ふたり}の訓讀{くんどく}']
+            correctRule: '「二人{ふたり}」是特殊讀法，必須讀作「ふたり」，不能使用音讀「ににん」。這是日語中少數保留訓讀的人數表達。',
+            trapExplanation: '這是陷阱題，「二人{ふたり}」是日語中的特殊讀法，學習者容易套用一般規則而錯誤。',
+            relatedRules: ['人數的特殊讀法', '一人、二人{ふたり}的訓讀']
         },
         sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
     },
@@ -132,15 +132,15 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿月{がつ}です。（二月）'
         },
         options: [
-            { text: 'ふたがつ', isCorrect: false, reason: '月份{げっぷん}使用{しよう}しない訓讀{くんどく}「ふた」。' },
-            { text: 'に', isCorrect: false, reason: '缺少{けっしょう}「がつ」，不完整{ふかんせい}。' },
-            { text: 'にがつ', isCorrect: true, reason: '正確{せいかく}！二月{にがつ}讀作{どくさ}「にがつ」。' },
-            { text: 'じがつ', isCorrect: false, reason: '「じ」不是二{に}の讀音{どくおん}。' }
+            { text: 'ふたがつ', isCorrect: false, reason: '月份不使用訓讀「ふた」。' },
+            { text: 'に', isCorrect: false, reason: '缺少「がつ」，不完整。' },
+            { text: 'にがつ', isCorrect: true, reason: '正確！二月{にがつ}讀作「にがつ」。' },
+            { text: 'じがつ', isCorrect: false, reason: '「じ」不是二{に}的讀音。' }
         ],
         correctIndex: 2,
         explanation: {
-            correctRule: '月份{げっぷん}使用{しよう}音讀{おんどく}，「二月{にがつ}」讀作{どくさ}「にがつ」。',
-            relatedRules: ['月份{げっぷん}の讀法{よみかた}', '音讀{おんどく}在日期{にっき}中の應用{おうよう}']
+            correctRule: '月份使用音讀，「二月{にがつ}」讀作「にがつ」。',
+            relatedRules: ['月份的讀法', '音讀在日期中の應用']
         },
         sourceItem: { value: 2, kanji: '二月', reading: 'にがつ' }
     },
@@ -152,18 +152,18 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'basic',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「三」的正確讀音是？',
+        stem: '「三」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三」的正確讀音是？',
         options: [
-            { text: 'さん', isCorrect: true, reason: '正確{せいかく}！「三{さん}」的音讀{おんどく}是「さん」。' },
-            { text: 'み', isCorrect: false, reason: '「み」是訓讀{くんどく}，用於{もちい}「三{み}つ」時{とき}讀作{どくさ}「みっつ」。' },
-            { text: 'みっつ', isCorrect: false, reason: '「みっつ」は量詞{りょうし}讀法{よみかた}，不是單純{たんじゅん}數字{すうじ}。' },
-            { text: 'ざん', isCorrect: false, reason: '沒有{ない}濁音{だくおん}，正確{せいかく}は「さん」。' }
+            { text: 'さん', isCorrect: true, reason: '正確！「三{さん}」的音讀是「さん」。' },
+            { text: 'み', isCorrect: false, reason: '「み」是訓讀，用於「三{み}つ」時讀作「みっつ」。' },
+            { text: 'みっつ', isCorrect: false, reason: '「みっつ」は量詞讀法，不是單純數字。' },
+            { text: 'ざん', isCorrect: false, reason: '沒有濁音，正確「さん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三{さん}」的音讀{おんどく}は「さん」，這是最{もっと}標準{ひょうじゅん}和常用{じょうよう}の讀法{よみかた}。',
-            relatedRules: ['基本{きほん}數字{すうじ}1-10', '三{さん}の發音{はつおん}']
+            correctRule: '「三{さん}」的音讀「さん」，這是最標準和常用的讀法。',
+            relatedRules: ['基本數字1-10', '三{さん}的發音']
         },
         sourceItem: { value: 3, kanji: '三', reading: 'さん' }
     },
@@ -176,16 +176,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '私は鉛筆を＿＿持っています。',
         stem_zh: '我有三支鉛筆。',
         options: [
-            { text: 'さんほん', isCorrect: false, reason: '陷阱{かんけい}！「三{さん}」後面{うしろ}接{せつ}「本{ほん}」時{とき}會發生{はっせい}濁音化{だくおんか}，變成{へんせい}「ぼん」。' },
-            { text: 'さんぼん', isCorrect: true, reason: '正確{せいかく}！撥音{はつおん}「ん」後面{うしろ}の「ほ」要變成{へんせい}濁音{だくおん}「ぼ」。' },
-            { text: 'みっぽん', isCorrect: false, reason: '這混合{こんごう}了訓讀{くんどく}數字{すうじ}和音讀{おんどく}量詞{りょうし}，且音變{おんへん}錯誤{さくご}。' },
-            { text: 'さんぽん', isCorrect: false, reason: '應該{おうがい}は濁音{だくおん}「ぼ」，不是半濁音{はんだくおん}「ぽ」。' }
+            { text: 'さんほん', isCorrect: false, reason: '陷阱！「三{さん}」後面接「本{ほん}」時會發生濁音化，變成「ぼん」。' },
+            { text: 'さんぼん', isCorrect: true, reason: '正確！撥音「ん」後面の「ほ」要變成濁音「ぼ」。' },
+            { text: 'みっぽん', isCorrect: false, reason: '這混合了訓讀數字和音讀量詞，且音變錯誤。' },
+            { text: 'さんぽん', isCorrect: false, reason: '應該は濁音「ぼ」，不是半濁音「ぽ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「本{ほん}」量詞{りょうし}在「三{さん}」後面{うしろ}會濁音化{だくおんか}：さん＋ほん→さんぼん。這是因為{いんい}撥音{はつおん}「ん」後面{うしろ}のは行音{ぎょうおん}容易{ようい}濁音化{だくおんか}。',
-            trapExplanation: '這是一道{いちどう}陷阱題{かんけいだい}，利用{りよう}學習者{がくしゅうしゃ}容易{ようい}忽略{こりゃく}「ん」後面{うしろ}濁音化{だくおんか}の規則{きそく}。「さんほん」は最{もっと}常見{じょうけん}の錯誤{さくご}。',
-            relatedRules: ['h-p轉換{てんかん}規律{きりつ}', '撥音{はつおん}後{あと}の濁音化{だくおんか}', '「本{ほん}」の音變{おんへん}規則{きそく}', '3引發{いんはつ}の濁音化{だくおんか}']
+            correctRule: '「本{ほん}」量詞在「三{さん}」後面會濁音化：さん＋ほん→さんぼん。這是因為撥音「ん」後面のは行音容易濁音化。',
+            trapExplanation: '這是一道陷阱題，利用學習者容易忽略「ん」後面濁音化的規則。「さんほん」は最常見の錯誤。',
+            relatedRules: ['h-p轉換規律', '撥音後的濁音化', '「本{ほん}」的音變規則', '3引發的濁音化']
         },
         sourceItem: { value: 3, kanji: '三本', reading: 'さんぼん' }
     },
@@ -202,15 +202,15 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿人{にん}家族{かぞく}です。（三人）'
         },
         options: [
-            { text: 'みっつ', isCorrect: false, reason: '「みっつ」用於{もちい}物品{ぶっぴん}，人數{にんずう}使用{しよう}する「にん」。' },
-            { text: 'みたり', isCorrect: false, reason: '沒有{ない}「みたり」這個{この}讀法{よみかた}，二人{ふたり}以上{いじょう}使用{しよう}音讀{おんどく}。' },
-            { text: 'さんにん', isCorrect: true, reason: '正確{せいかく}！三人{さんにん}及{およ}以上{いじょう}使用{しよう}音讀{おんどく}「さんにん」。' },
-            { text: 'さんり', isCorrect: false, reason: '人數{にんずう}量詞{りょうし}は「にん」，不是「り」。' }
+            { text: 'みっつ', isCorrect: false, reason: '「みっつ」用於物品，人數使用「にん」。' },
+            { text: 'みたり', isCorrect: false, reason: '沒有「みたり」這個讀法，二人{ふたり}以上使用音讀。' },
+            { text: 'さんにん', isCorrect: true, reason: '正確！三人{さんにん}及以上使用音讀「さんにん」。' },
+            { text: 'さんり', isCorrect: false, reason: '人數量詞「にん」，不是「り」。' }
         ],
         correctIndex: 2,
         explanation: {
-            correctRule: '三人{さんにん}及{およ}以上{いじょう}の人數{にんずう}使用{しよう}音讀{おんどく}，「三人{さんにん}」讀作{どくさ}「さんにん」。只有{ただ}一人{ひとり}和二人{ふたり}使用{しよう}訓讀{くんどく}（ひとり、ふたり）。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '一二人{いちににん}使用{しよう}訓讀{くんどく}，三人{さんにん}起{き}使用{しよう}音讀{おんどく}']
+            correctRule: '三人{さんにん}及以上の人數使用音讀，「三人{さんにん}」讀作「さんにん」。只有一人{ひとり}和二人{ふたり}使用訓讀（ひとり、ふたり）。',
+            relatedRules: ['人數的讀法', '一人二人使用訓讀，三人{さんにん}起使用音讀']
         },
         sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
     },
@@ -225,16 +225,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '「四」最常用的讀音是？',
         stem_zh: '「四」最常用的讀音是？',
         options: [
-            { text: 'し', isCorrect: false, reason: '雖然{すいぜん}「し」也是讀音{どくおん}之一{のいち}，但因{たんいん}避諱{ひき}「死{し}」，日常{にちじょう}多用{おおくもちい}「よん」。' },
-            { text: 'よん', isCorrect: true, reason: '正確{せいかく}！為了{ために}避諱{ひき}「死{し}」の發音{はつおん}，日常{にちじょう}對話{たいわ}中{なか}多く{おおく}使用{しよう}「よん」。' },
-            { text: 'よ', isCorrect: false, reason: '「よ」は訓讀{くんどく}の一部分{いちぶぶん}，完整{かんせい}應{おう}は「よっつ」。' },
-            { text: 'よっつ', isCorrect: false, reason: '「よっつ」は量詞{りょうし}讀法{よみかた}，不是單純{たんじゅん}數字{すうじ}讀音{どくおん}。' }
+            { text: 'し', isCorrect: false, reason: '雖然「し」也是讀音之一，但因避諱「死」，日常多用「よん」。' },
+            { text: 'よん', isCorrect: true, reason: '正確！為了避諱「死」的發音，日常對話中多使用「よん」。' },
+            { text: 'よ', isCorrect: false, reason: '「よ」は訓讀の一部分，完整應「よっつ」。' },
+            { text: 'よっつ', isCorrect: false, reason: '「よっつ」は量詞讀法，不是單純數字讀音。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「四{よん}」有兩個{りょうこ}音讀{おんどく}：「し」和「よん」。由於{ゆえ}「し」與「死{し}」同音{どうおん}，日常{にちじょう}生活{せいかつ}中{なか}多く{おおく}使用{しよう}「よん」以避諱{いひき}。但在某些{ぼうしゅ}固定{こてい}用法{ようほう}中仍{なお}使用{しよう}「し」（如四月{しがつ}「しがつ」）。',
-            trapExplanation: '這是陷阱題{かんけいだい}，測試{そくし}學習者{がくしゅうしゃ}是否{ぜひ}了解{りょうかい}日語{にほんご}中の避諱{ひき}文化{ぶんか}。「し」雖然{すいぜん}也正確{せいかく}，但「よん」更常用{こうじょうよう}。',
-            relatedRules: ['四{よん}の兩種{りょうしゅ}讀法{よみかた}', '日語{にほんご}避諱{ひき}文化{ぶんか}', '「し」與「よん」の使用{しよう}區別{くべつ}']
+            correctRule: '「四{よん}」有兩個音讀：「し」和「よん」。由於「し」與「死」同音，日常生活中多使用「よん」以避諱。但在某些固定用法中仍使用「し」（如四月{しがつ}「しがつ」）。',
+            trapExplanation: '這是陷阱題，測試學習者是否了解日語中の避諱文化。「し」雖然也正確，但「よん」更常用。',
+            relatedRules: ['四{よん}の兩種讀法', '日語避諱文化', '「し」與「よん」的使用區別']
         },
         sourceItem: { value: 4, kanji: '四', reading: 'よん / し' }
     },
@@ -247,16 +247,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '＿＿月に桜が咲きます。',
         stem_zh: '四月櫻花開。',
         options: [
-            { text: 'よんがつ', isCorrect: false, reason: '陷阱{かんけい}！月份{げっぷん}使用{しよう}「清瘦型{せいそうがた}」讀法{よみかた}，四月{しがつ}必須{ひっす}讀む{よむ}「しがつ」。' },
-            { text: 'しがつ', isCorrect: true, reason: '正確{せいかく}！月份{げっぷん}中「四月{しがつ}」固定{こてい}讀作{どくさ}「しがつ」，不能{ふのう}使用{しよう}する「よん」。' },
-            { text: 'よがつ', isCorrect: false, reason: '不完整{ふかんせい}，缺少{けっしょう}「ん」。' },
-            { text: 'よっがつ', isCorrect: false, reason: '沒有{ない}促音{そくおん}，且月份{げっぷん}使用{しよう}しない這個{この}讀法{よみかた}。' }
+            { text: 'よんがつ', isCorrect: false, reason: '陷阱！月份使用「清瘦型」讀法，四月{しがつ}必須讀「しがつ」。' },
+            { text: 'しがつ', isCorrect: true, reason: '正確！月份中「四月{しがつ}」固定讀作「しがつ」，不能使用「よん」。' },
+            { text: 'よがつ', isCorrect: false, reason: '不完整，缺少「ん」。' },
+            { text: 'よっがつ', isCorrect: false, reason: '沒有促音，且月份不使用這個讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '月份{げっぷん}使用{しよう}「清瘦型{せいそうがた}」讀法{よみかた}，「四月{しがつ}」固定{こてい}讀作{どくさ}「しがつ」，禁止{きんし}使用{しよう}「よんがつ」。這是月份{げっぷん}讀法{よみかた}の特殊{とくしゅ}規則{きそく}。',
-            trapExplanation: '這是雙重{そうじゅう}陷阱題{かんけいだい}：一{いち}は測試{そくし}學習者{がくしゅうしゃ}是否{ぜひ}知道{しって}月份{げっぷん}の特殊{とくしゅ}讀法{よみかた}，二{に}は測試{そくし}是否{ぜひ}會被{かいひ}日常{にちじょう}習慣{しゅうかん}用{もち}「よん」所誤導{しょごどう}。',
-            relatedRules: ['月份{げっぷん}の清瘦型{せいそうがた}讀法{よみかた}', '四月{しがつ}、七月{しちがつ}、九月{くがつ}の特殊{とくしゅ}讀法{よみかた}', '避諱{ひき}規則{きそく}の例外{れいがい}情況{じょうきょう}']
+            correctRule: '月份使用「清瘦型」讀法，「四月{しがつ}」固定讀作「しがつ」，禁止使用「よんがつ」。這是月份讀法的特殊規則。',
+            trapExplanation: '這是雙重陷阱題：一は測試學習者是否知道月份的特殊讀法，二は測試是否會被日常習慣用「よん」所誤導。',
+            relatedRules: ['月份の清瘦型讀法', '四月{しがつ}、七月{しちがつ}、九月{くがつ}的特殊讀法', '避諱規則の例外情況']
         },
         sourceItem: { value: 4, kanji: '四月', reading: 'しがつ' }
     },
@@ -273,16 +273,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（四點）'
         },
         options: [
-            { text: 'よんじ', isCorrect: false, reason: '陷阱{かんけい}！「四時{よじ}」不能{ふのう}讀作{どくさ}「よんじ」，這是固定{こてい}の特殊{とくしゅ}讀法{よみかた}。' },
-            { text: 'しじ', isCorrect: false, reason: '陷阱{かんけい}！雖然{すいぜん}接近{せっきん}，但正確{せいかく}讀音{どくおん}は「よじ」，不是「しじ」。' },
-            { text: 'よじ', isCorrect: true, reason: '正確{せいかく}！「四時{よじ}」の固定{こてい}讀法{よみかた}は「よじ」，這是時間{じかん}表達{ひょうたつ}の特殊{とくしゅ}規則{きそく}。' },
-            { text: 'よっじ', isCorrect: false, reason: '促音{そくおん}「っ」不出現{ふしゅつげん}在「四時{よじ}」中。' }
+            { text: 'よんじ', isCorrect: false, reason: '陷阱！「四時{よじ}」不能讀作「よんじ」，這是固定的特殊讀法。' },
+            { text: 'しじ', isCorrect: false, reason: '陷阱！雖然接近，但正確讀音「よじ」，不是「しじ」。' },
+            { text: 'よじ', isCorrect: true, reason: '正確！「四時{よじ}」の固定讀法「よじ」，這是時間表達的特殊規則。' },
+            { text: 'よっじ', isCorrect: false, reason: '促音「っ」不出現在「四時{よじ}」中。' }
         ],
         correctIndex: 2,
         explanation: {
-            correctRule: '「四時{よじ}」は時間{じかん}表達{ひょうたつ}中の特殊{とくしゅ}讀法{よみかた}，必須{ひっす}讀作{どくさ}「よじ」，不可{ふか}讀む{よむ}「しじ」或「よんじ」。這是固定{こてい}搭配{とうはい}，需要{じゅよう}特別{とくべつ}記憶{きおく}。',
-            trapExplanation: '這是三重{さんじゅう}陷阱題{かんけいだい}：「よんじ」利用{りよう}日常{にちじょう}習慣{しゅうかん}、「しじ」利用{りよう}月份{げっぷん}讀法{よみかた}類比{るいひ}、「よっじ」利用{りよう}日期{にっき}讀法{よみかた}類比{るいひ}。正確{せいかく}答案{とうあん}「よじ」は獨特{どくとく}的。',
-            relatedRules: ['四時{よじ}、七時{しちじ}、九時{くじ}の特殊{とくしゅ}讀法{よみかた}', '時間{じかん}表達{ひょうたつ}の固定{こてい}搭配{とうはい}', '避諱{ひき}規則{きそく}在時間{じかん}中の特殊{とくしゅ}處理{しょり}']
+            correctRule: '「四時{よじ}」は時間表達中的特殊讀法，必須讀作「よじ」，不可讀「しじ」或「よんじ」。這是固定搭配，需要特別記憶。',
+            trapExplanation: '這是三重陷阱題：「よんじ」利用日常習慣、「しじ」利用月份讀法類比、「よっじ」利用日期讀法類比。正確答案「よじ」は獨特的。',
+            relatedRules: ['四時{よじ}、七時{しちじ}、九時{くじ}的特殊讀法', '時間表達の固定搭配', '避諱規則在時間中的特殊處理']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -294,18 +294,18 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'basic',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五」的正確讀音是？',
+        stem: '「五」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五」的正確讀音是？',
         options: [
-            { text: 'ご', isCorrect: true, reason: '正確{せいかく}！「五{ご}」の音讀{おんどく}は「ご」。' },
-            { text: 'いつ', isCorrect: false, reason: '「いつ」は訓讀{くんどく}，用於{もちい}「五{いつ}つ」（いつつ）。' },
-            { text: 'いつつ', isCorrect: false, reason: '「いつつ」は完整{かんせい}の量詞{りょうし}讀法{よみかた}。' },
-            { text: 'こ', isCorrect: false, reason: 'は「ご」不是「こ」，需要{じゅよう}濁音{だくおん}。' }
+            { text: 'ご', isCorrect: true, reason: '正確！「五{ご}」的音讀「ご」。' },
+            { text: 'いつ', isCorrect: false, reason: '「いつ」は訓讀，用於「五{いつ}つ」（いつつ）。' },
+            { text: 'いつつ', isCorrect: false, reason: '「いつつ」は完整の量詞讀法。' },
+            { text: 'こ', isCorrect: false, reason: '「ご」不是「こ」，需要濁音。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五{ご}」の音讀{おんどく}は「ご」，發音{はつおん}時{とき}需要{じゅよう}濁音{だくおん}，不要{ふよう}與「こ」混淆{こんこう}。',
-            relatedRules: ['基本{きほん}數字{すうじ}1-10', '濁音{だくおん}の正確{せいかく}發音{はつおん}']
+            correctRule: '「五{ご}」的音讀「ご」，發音時需要濁音，不要與「こ」混淆。',
+            relatedRules: ['基本數字1-10', '濁音の正確發音']
         },
         sourceItem: { value: 5, kanji: '五', reading: 'ご' }
     },
@@ -318,15 +318,15 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '私は＿＿月生まれです。',
         stem_zh: '我是五月出生的。',
         options: [
-            { text: 'いつがつ', isCorrect: false, reason: '月份{げっぷん}使用{しよう}しない訓讀{くんどく}「いつ」。' },
-            { text: 'こがつ', isCorrect: false, reason: '需要{じゅよう}濁音{だくおん}，は「ご」不是「こ」。' },
-            { text: 'ごがつ', isCorrect: true, reason: '正確{せいかく}！五月{ごがつ}讀作{どくさ}「ごがつ」。' },
-            { text: 'ごつ', isCorrect: false, reason: '缺少{けっしょう}「がつ」，不完整{ふかんせい}。' }
+            { text: 'いつがつ', isCorrect: false, reason: '月份不使用訓讀「いつ」。' },
+            { text: 'こがつ', isCorrect: false, reason: '需要濁音，「ご」不是「こ」。' },
+            { text: 'ごがつ', isCorrect: true, reason: '正確！五月{ごがつ}讀作「ごがつ」。' },
+            { text: 'ごつ', isCorrect: false, reason: '缺少「がつ」，不完整。' }
         ],
         correctIndex: 2,
         explanation: {
-            correctRule: '月份{げっぷん}使用{しよう}音讀{おんどく}，「五月{ごがつ}」讀作{どくさ}「ごがつ」。五月{ごがつ}の讀法{よみかた}相對{そうたい}規則{きそく}，沒有{ない}特殊{とくしゅ}變化{へんか}。',
-            relatedRules: ['月份{げっぷん}の讀法{よみかた}', '五{ご}の音讀{おんどく}應用{おうよう}']
+            correctRule: '月份使用音讀，「五月{ごがつ}」讀作「ごがつ」。五月{ごがつ}的讀法相對規則，沒有特殊變化。',
+            relatedRules: ['月份的讀法', '五{ご}的音讀應用']
         },
         sourceItem: { value: 5, kanji: '五月', reading: 'ごがつ' }
     },
@@ -343,15 +343,15 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿あります。（五個）'
         },
         options: [
-            { text: 'ごこ', isCorrect: false, reason: '「個{こ}」讀まない{よまない}「こ」，一般{いっぱん}物品{ぶっぴん}用{もち}「つ」。' },
-            { text: 'ごつ', isCorrect: false, reason: '五{ご}の訓讀{くんどく}不是「ご」，應該{おうがい}は「いつ」。' },
-            { text: 'いつつ', isCorrect: true, reason: '正確{せいかく}！一般{いっぱん}物品{ぶっぴん}1-10個{こ}使用{しよう}訓讀{くんどく}「つ」，五個{ごこ}は「いつつ」。' },
-            { text: 'いつこ', isCorrect: false, reason: '「いつこ」不是標準{ひょうじゅん}讀法{よみかた}，應該{おうがい}使用{しよう}する「いつつ」。' }
+            { text: 'ごこ', isCorrect: false, reason: '「個」不讀「こ」，一般物品用「つ」。' },
+            { text: 'ごつ', isCorrect: false, reason: '五{ご}的訓讀不是「ご」，應該「いつ」。' },
+            { text: 'いつつ', isCorrect: true, reason: '正確！一般物品1-10個使用訓讀「つ」，五個「いつつ」。' },
+            { text: 'いつこ', isCorrect: false, reason: '「いつこ」不是標準讀法，應該使用「いつつ」。' }
         ],
         correctIndex: 2,
         explanation: {
-            correctRule: '一般{いっぱん}物品{ぶっぴん}1-10個{こ}使用{しよう}「つ」量詞{りょうし}，五個{ごこ}讀作{どくさ}「いつつ」。這是訓讀{くんどく}系統{けいとう}，與音讀{おんどく}「ご」不同{ふどう}。',
-            relatedRules: ['「つ」量詞{りょうし}の使用{しよう}', '1-10の訓讀{くんどく}', '一般{いっぱん}物品{ぶっぴん}の計數{けいすう}方法{ほうほう}']
+            correctRule: '一般物品1-10個使用「つ」量詞，五個讀作「いつつ」。這是訓讀系統，與音讀「ご」不同。',
+            relatedRules: ['「つ」量詞的使用', '1-10的訓讀', '一般物品の計數方法']
         },
         sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
     },
@@ -363,18 +363,18 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'basic',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「零」的正確讀音是？',
+        stem: '「零」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「零」的正確讀音是？',
         options: [
-            { text: 'ゼロ / れい', isCorrect: true, reason: '正確{せいかく}！「零{れい}」可讀{かどく}「ゼロ」（外來語{がいらいご}）或「れい」（音讀{おんどく}）。' },
-            { text: 'まる', isCorrect: false, reason: '「まる」是「丸{まる}」の意思{いみ}，雖然{すいぜん}有時{ときどき}口語{こうご}會說{かいう}，但不是標準{ひょうじゅん}數字{すうじ}讀法{よみかた}。' },
-            { text: 'なし', isCorrect: false, reason: '「なし」是「無{なし}」の意思{いみ}，不是數字{すうじ}0の讀法{よみかた}。' },
-            { text: 'ぜろう', isCorrect: false, reason: '不正確{ふせいかく}，正確{せいかく}の外來語{がいらいご}發音{はつおん}是「ゼロ」。' }
+            { text: 'ゼロ / れい', isCorrect: true, reason: '正確！「零{れい}」可讀「ゼロ」（外來語）或「れい」（音讀）。' },
+            { text: 'まる', isCorrect: false, reason: '「まる」是「丸{まる}」的意思，雖然有時口語會說，但不是標準數字讀法。' },
+            { text: 'なし', isCorrect: false, reason: '「なし」是「無」的意思，不是數字0的讀法。' },
+            { text: 'ぜろう', isCorrect: false, reason: '不正確，正確の外來語發音是「ゼロ」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '數字{すうじ}「零{れい}」有兩種{りょうしゅ}讀法{よみかた}：「ゼロ」是外來語{がいらいご}讀法{よみかた}（來自{らいじ}英語{えいご}zero），「れい」是傳統{でんとう}音讀{おんどく}。兩者{りょうしゃ}都{すべて}常用{じょうよう}。',
-            relatedRules: ['外來語{がいらいご}數字{すうじ}', '零{れい}の兩種{りょうしゅ}讀法{よみかた}']
+            correctRule: '數字「零{れい}」有兩種讀法：「ゼロ」是外來語讀法（來自英語zero），「れい」是傳統音讀。兩者都常用。',
+            relatedRules: ['外來語數字', '零{れい}の兩種讀法']
         },
         sourceItem: { value: 0, kanji: '零', reading: 'ゼロ / れい' }
     },
@@ -387,15 +387,15 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '気温は＿＿度です。',
         stem_zh: '氣溫是零度。',
         options: [
-            { text: 'れいど', isCorrect: true, reason: '正確{せいかく}！溫度{おんど}中常用{じょうよう}「れいど」（零度{れいど}）。' },
-            { text: 'ゼロど', isCorrect: false, reason: '雖然{すいぜん}可以{かのう}理解{りかい}，但溫度{おんど}通常{つうじょう}使用{しよう}「れいど」。' },
-            { text: 'まるど', isCorrect: false, reason: '「まるど」不是標準{ひょうじゅん}溫度{おんど}表達{ひょうたつ}。' },
-            { text: 'ないど', isCorrect: false, reason: '沒有{ない}「ないど」這種{このしゅ}讀法{よみかた}。' }
+            { text: 'れいど', isCorrect: true, reason: '正確！溫度中常用「れいど」（零度）。' },
+            { text: 'ゼロど', isCorrect: false, reason: '雖然可以理解，但溫度通常使用「れいど」。' },
+            { text: 'まるど', isCorrect: false, reason: '「まるど」不是標準溫度表達。' },
+            { text: 'ないど', isCorrect: false, reason: '沒有「ないど」這種讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '溫度{おんど}表達{ひょうたつ}中，「零度{れいど}」通常{つうじょう}讀作{どくさ}「れいど」，使用{しよう}傳統{でんとう}音讀{おんどく}。',
-            relatedRules: ['溫度{おんど}の表達{ひょうたつ}', '零{れい}の使用{しよう}場景{ばめん}']
+            correctRule: '溫度表達中，「零度」通常讀作「れいど」，使用傳統音讀。',
+            relatedRules: ['溫度的表達', '零{れい}的使用場景']
         },
         sourceItem: { value: 0, kanji: '零度', reading: 'れいど' }
     },
@@ -412,15 +412,15 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿九〇の1234です。（090）'
         },
         options: [
-            { text: 'ゼロきゅうゼロ', isCorrect: true, reason: '正確{せいかく}！電話{でんわ}號碼{ばんごう}中0通常{つうじょう}讀む{よむ}「ゼロ」。' },
-            { text: 'れいきゅうれい', isCorrect: false, reason: '雖然{すいぜん}「れい」也是正確{せいかく}讀法{よみかた}，但電話{でんわ}號碼{ばんごう}中多く{おおく}使用{しよう}「ゼロ」。' },
-            { text: 'まるきゅうまる', isCorrect: false, reason: '「まる」不是數字{すうじ}0の標準{ひょうじゅん}讀法{よみかた}。' },
-            { text: 'おーきゅうおー', isCorrect: false, reason: '「おー」是英語{えいご}O的讀法{よみかた}，日語{にほんご}使用{しよう}「ゼロ」。' }
+            { text: 'ゼロきゅうゼロ', isCorrect: true, reason: '正確！電話號碼中0通常讀「ゼロ」。' },
+            { text: 'れいきゅうれい', isCorrect: false, reason: '雖然「れい」也是正確讀法，但電話號碼中多使用「ゼロ」。' },
+            { text: 'まるきゅうまる', isCorrect: false, reason: '「まる」不是數字0の標準讀法。' },
+            { text: 'おーきゅうおー', isCorrect: false, reason: '「おー」是英語O的讀法，日語使用「ゼロ」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '電話{でんわ}號碼{ばんごう}等數字{すうじ}序列{じょれつ}中，「零{れい}」常用{じょうよう}外來語{がいらいご}讀法{よみかた}「ゼロ」。',
-            relatedRules: ['電話{でんわ}號碼{ばんごう}の讀法{よみかた}', '外來語{がいらいご}數字{すうじ}の使用{しよう}']
+            correctRule: '電話號碼等數字序列中，「零{れい}」常用外來語讀法「ゼロ」。',
+            relatedRules: ['電話號碼的讀法', '外來語數字的使用']
         },
         sourceItem: { value: 0, kanji: '零', reading: 'ゼロ' }
     },
@@ -432,18 +432,18 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'basic',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「六」的正確讀音是？',
+        stem: '「六」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「六」的正確讀音是？',
         options: [
-            { text: 'ろく', isCorrect: true, reason: '正確{せいかく}！「六{ろく}」の音讀{おんどく}是「ろく」。' },
-            { text: 'むっつ', isCorrect: false, reason: '「むっつ」是「六{む}つ」の完整{かんせい}量詞{りょうし}讀法{よみかた}，不是單純{たんじゅん}數字{すうじ}。' },
-            { text: 'む', isCorrect: false, reason: '「む」は訓讀{くんどく}の一部分{いちぶぶん}，不獨立{ふどくりつ}使用{しよう}。' },
-            { text: 'りく', isCorrect: false, reason: '「りく」是「陸{りく}」（陸地{りくち}）の讀法{よみかた}，不是數字{すうじ}。' }
+            { text: 'ろく', isCorrect: true, reason: '正確！「六{ろく}」的音讀是「ろく」。' },
+            { text: 'むっつ', isCorrect: false, reason: '「むっつ」是「六{む}つ」の完整量詞讀法，不是單純數字。' },
+            { text: 'む', isCorrect: false, reason: '「む」は訓讀の一部分，不獨立使用。' },
+            { text: 'りく', isCorrect: false, reason: '「りく」是「陸{りく}」（陸地）的讀法，不是數字。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六{ろく}」の音讀{おんどく}是「ろく」，發音{はつおん}清晰{せいせき}標準{ひょうじゅん}。',
-            relatedRules: ['基本{きほん}數字{すうじ}1-10', '六{ろく}の音讀{おんどく}']
+            correctRule: '「六{ろく}」的音讀是「ろく」，發音清晰標準。',
+            relatedRules: ['基本數字1-10', '六{ろく}的音讀']
         },
         sourceItem: { value: 6, kanji: '六', reading: 'ろく' }
     },
@@ -456,16 +456,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '私は鉛筆を＿＿持っています。',
         stem_zh: '我有六支鉛筆。',
         options: [
-            { text: 'ろくほん', isCorrect: false, reason: '陷阱{かんけい}！「六{ろく}」後面{うしろ}接{せつ}「本{ほん}」時{とき}會發生{はっせい}促音化{そくおんか}和半濁音化{はんだくおんか}。' },
-            { text: 'ろっぽん', isCorrect: true, reason: '正確{せいかく}！「六{ろく}」＋「本{ほん}」→「ろっぽん」，促音{そくおん}＋半濁音{はんだくおん}。' },
-            { text: 'むっぽん', isCorrect: false, reason: '數字{すうじ}部分{ぶぶん}應{おう}使用{しよう}音讀{おんどく}「ろく」。' },
-            { text: 'ろくぼん', isCorrect: false, reason: '應{おう}是半濁音{はんだくおん}「ぽ」不是濁音{だくおん}「ぼ」，且需要{じゅよう}促音{そくおん}。' }
+            { text: 'ろくほん', isCorrect: false, reason: '陷阱！「六{ろく}」後面接「本{ほん}」時會發生促音化和半濁音化。' },
+            { text: 'ろっぽん', isCorrect: true, reason: '正確！「六{ろく}」＋「本{ほん}」→「ろっぽん」，促音＋半濁音。' },
+            { text: 'むっぽん', isCorrect: false, reason: '數字部分應使用音讀「ろく」。' },
+            { text: 'ろくぼん', isCorrect: false, reason: '應是半濁音「ぽ」不是濁音「ぼ」，且需要促音。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「本{ほん}」量詞{りょうし}在「六{ろく}」後面{うしろ}會發生{はっせい}h-p轉換{てんかん}：ろく＋ほん→ろっぽん。「く」變成{へんせい}促音{そくおん}「っ」，「ほ」變成{へんせい}半濁音{はんだくおん}「ぽ」。',
-            trapExplanation: '這是陷阱題{かんけいだい}，測試{そくし}學習者{がくしゅうしゃ}是否{ぜひ}掌握{しょうあく}「六{ろく}」引發{いんはつ}の促音化{そくおんか}和半濁音化{はんだくおんか}規則{きそく}。',
-            relatedRules: ['h-p轉換{てんかん}規律{きりつ}', '6引發{いんはつ}の促音{そくおん}+半濁音{はんだくおん}', '「本{ほん}」の音變{おんへん}規則{きそく}']
+            correctRule: '「本{ほん}」量詞在「六{ろく}」後面會發生h-p轉換：ろく＋ほん→ろっぽん。「く」變成促音「っ」，「ほ」變成半濁音「ぽ」。',
+            trapExplanation: '這是陷阱題，測試學習者是否掌握「六{ろく}」引發的促音化和半濁音化規則。',
+            relatedRules: ['h-p轉換規律', '6引發の促音+半濁音', '「本{ほん}」的音變規則']
         },
         sourceItem: { value: 6, kanji: '六本', reading: 'ろっぽん' }
     },
@@ -482,15 +482,15 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿生まれです。（六月）'
         },
         options: [
-            { text: 'むつがつ', isCorrect: false, reason: '月份{げっぷん}使用{しよう}しない訓讀{くんどく}「むつ」。' },
-            { text: 'りくがつ', isCorrect: false, reason: '「りく」不是「六{ろく}」の讀法{よみかた}。' },
-            { text: 'ろくがつ', isCorrect: true, reason: '正確{せいかく}！六月{ろくがつ}讀作{どくさ}「ろくがつ」。' },
-            { text: 'ろっがつ', isCorrect: false, reason: '月份{げっぷん}不促音化{ふそくおんか}，は「ろくがつ」不是「ろっがつ」。' }
+            { text: 'むつがつ', isCorrect: false, reason: '月份不使用訓讀「むつ」。' },
+            { text: 'りくがつ', isCorrect: false, reason: '「りく」不是「六{ろく}」的讀法。' },
+            { text: 'ろくがつ', isCorrect: true, reason: '正確！六月{ろくがつ}讀作「ろくがつ」。' },
+            { text: 'ろっがつ', isCorrect: false, reason: '月份不促音化，「ろくがつ」不是「ろっがつ」。' }
         ],
         correctIndex: 2,
         explanation: {
-            correctRule: '月份{げっぷん}使用{しよう}音讀{おんどく}，「六月{ろくがつ}」讀作{どくさ}「ろくがつ」，不促音化{ふそくおんか}。',
-            relatedRules: ['月份{げっぷん}の讀法{よみかた}', '六月{ろくがつ}沒有{ない}音變{おんへん}']
+            correctRule: '月份使用音讀，「六月{ろくがつ}」讀作「ろくがつ」，不促音化。',
+            relatedRules: ['月份的讀法', '六月{ろくがつ}沒有音變']
         },
         sourceItem: { value: 6, kanji: '六月', reading: 'ろくがつ' }
     },
@@ -505,16 +505,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '「七」最常用的讀音是？',
         stem_zh: '「七」最常用的讀音是？',
         options: [
-            { text: 'しち', isCorrect: false, reason: '「しち」也是正確{せいかく}讀法{よみかた}，但因{たんいん}容易{ようい}與「一{いち}」混淆{こんこう}，日常{にちじょう}多用{おおくもちい}「なな」。' },
-            { text: 'なな', isCorrect: true, reason: '正確{せいかく}！為{ため}避免{ひめん}與「一{いち}」混淆{こんこう}，日常{にちじょう}對話{たいわ}多く{おおく}使用{しよう}「なな」。' },
-            { text: 'ななつ', isCorrect: false, reason: '「ななつ」是量詞{りょうし}讀法{よみかた}，不是單純{たんじゅん}數字{すうじ}讀音{どくおん}。' },
-            { text: 'しっち', isCorrect: false, reason: '沒有{ない}「しっち」這個{この}讀法{よみかた}。' }
+            { text: 'しち', isCorrect: false, reason: '「しち」也是正確讀法，但因容易與「一」混淆，日常多用「なな」。' },
+            { text: 'なな', isCorrect: true, reason: '正確！為避免與「一」混淆，日常對話多使用「なな」。' },
+            { text: 'ななつ', isCorrect: false, reason: '「ななつ」是量詞讀法，不是單純數字讀音。' },
+            { text: 'しっち', isCorrect: false, reason: '沒有「しっち」這個讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「七{なな}」有兩個{りょうこ}讀法{よみかた}：「しち」和「なな」。由於{ゆえ}「しち」容易{ようい}與「一{いち}」聽起來{ききおこり}混淆{こんこう}，日常{にちじょう}生活{せいかつ}中多く{おおく}使用{しよう}「なな」。',
-            trapExplanation: '這是陷阱題{かんけいだい}，測試{そくし}學習者{がくしゅうしゃ}是否{ぜひ}了解{りょうかい}「なな」vs「しち」の使用{しよう}習慣{しゅうかん}。',
-            relatedRules: ['七{なな}の兩種{りょうしゅ}讀法{よみかた}', '避免{ひめん}混淆{こんこう}の習慣{しゅうかん}用法{ようほう}']
+            correctRule: '「七{なな}」有兩個讀法：「しち」和「なな」。由於「しち」容易與「一」聽起來混淆，日常生活中多使用「なな」。',
+            trapExplanation: '這是陷阱題，測試學習者是否了解「なな」vs「しち」的使用習慣。',
+            relatedRules: ['七{なな}の兩種讀法', '避免混淆の習慣用法']
         },
         sourceItem: { value: 7, kanji: '七', reading: 'なな / しち' }
     },
@@ -527,16 +527,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '＿＿月は夏休みの季節です。',
         stem_zh: '七月是暑假的季節。',
         options: [
-            { text: 'なながつ', isCorrect: false, reason: '陷阱{かんけい}！月份{げっぷん}使用{しよう}する「清瘦型{せいそうがた}」讀法{よみかた}，七月{しちがつ}必須{ひっす}讀む{よむ}「しちがつ」。' },
-            { text: 'しちがつ', isCorrect: true, reason: '正確{せいかく}！月份{げっぷん}中「七月{しちがつ}」固定{こてい}讀作{どくさ}「しちがつ」。' },
-            { text: 'ななつき', isCorrect: false, reason: '月份{げっぷん}使用{しよう}する「がつ」不是「つき」。' },
-            { text: 'しつがつ', isCorrect: false, reason: 'は「しち」不是「しつ」，促音{そくおん}位置{いち}錯誤{さくご}。' }
+            { text: 'なながつ', isCorrect: false, reason: '陷阱！月份使用「清瘦型」讀法，七月{しちがつ}必須讀「しちがつ」。' },
+            { text: 'しちがつ', isCorrect: true, reason: '正確！月份中「七月{しちがつ}」固定讀作「しちがつ」。' },
+            { text: 'ななつき', isCorrect: false, reason: '月份使用「がつ」不是「つき」。' },
+            { text: 'しつがつ', isCorrect: false, reason: '「しち」不是「しつ」，促音位置錯誤。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '月份{げっぷん}使用{しよう}「清瘦型{せいそうがた}」讀法{よみかた}，「七月{しちがつ}」固定{こてい}讀作{どくさ}「しちがつ」，禁止{きんし}使用{しよう}「なながつ」。',
-            trapExplanation: '雖然{すいぜん}日常{にちじょう}中「七{なな}」多く{おおく}讀む{よむ}「なな」，但月份{げっぷん}中必須{ひっす}使用{しよう}「しち」。',
-            relatedRules: ['月份{げっぷん}の清瘦型{せいそうがた}讀法{よみかた}', '七月{しちがつ}の特殊{とくしゅ}規則{きそく}']
+            correctRule: '月份使用「清瘦型」讀法，「七月{しちがつ}」固定讀作「しちがつ」，禁止使用「なながつ」。',
+            trapExplanation: '雖然日常中「七{なな}」多讀「なな」，但月份中必須使用「しち」。',
+            relatedRules: ['月份の清瘦型讀法', '七月{しちがつ}的特殊規則']
         },
         sourceItem: { value: 7, kanji: '七月', reading: 'しちがつ' }
     },
@@ -553,16 +553,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（七點）'
         },
         options: [
-            { text: 'ななじ', isCorrect: false, reason: '雖然{すいぜん}「なな」常用{じょうよう}，但時間{じかん}中七時{しちじ}讀む{よむ}「しちじ」。' },
-            { text: 'しちじ', isCorrect: true, reason: '正確{せいかく}！「七時{しちじ}」の固定{こてい}讀法{よみかた}是「しちじ」。' },
-            { text: 'しつじ', isCorrect: false, reason: 'は「しち」不是「しつ」。' },
-            { text: 'なのじ', isCorrect: false, reason: '沒有{ない}「なのじ」這個{この}讀法{よみかた}。' }
+            { text: 'ななじ', isCorrect: false, reason: '雖然「なな」常用，但時間中七時{しちじ}讀「しちじ」。' },
+            { text: 'しちじ', isCorrect: true, reason: '正確！「七時{しちじ}」の固定讀法是「しちじ」。' },
+            { text: 'しつじ', isCorrect: false, reason: '「しち」不是「しつ」。' },
+            { text: 'なのじ', isCorrect: false, reason: '沒有「なのじ」這個讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「七時{しちじ}」是時間{じかん}表達{ひょうたつ}中の固定{こてい}讀法{よみかた}，必須{ひっす}讀作{どくさ}「しちじ」。',
-            trapExplanation: '這是陷阱題{かんけいだい}，時間{じかん}中の七時{しちじ}使用{しよう}「しち」，與日常{にちじょう}習慣{しゅうかん}使用{しよう}「なな」不同{ふどう}。',
-            relatedRules: ['七時{しちじ}の固定{こてい}讀法{よみかた}', '時間{じかん}表達{ひょうたつ}の特殊{とくしゅ}規則{きそく}']
+            correctRule: '「七時{しちじ}」是時間表達中の固定讀法，必須讀作「しちじ」。',
+            trapExplanation: '這是陷阱題，時間中の七時{しちじ}使用「しち」，與日常習慣使用「なな」不同。',
+            relatedRules: ['七時{しちじ}の固定讀法', '時間表達的特殊規則']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -574,18 +574,18 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'basic',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「八」的正確讀音是？',
+        stem: '「八」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「八」的正確讀音是？',
         options: [
-            { text: 'はち', isCorrect: true, reason: '正確{せいかく}！「八{はち}」の音讀{おんどく}是「はち」。' },
-            { text: 'やっつ', isCorrect: false, reason: '「やっつ」是「八{や}つ」の量詞{りょうし}讀法{よみかた}，不是單純{たんじゅん}數字{すうじ}。' },
-            { text: 'や', isCorrect: false, reason: '「や」は訓讀{くんどく}の一部分{いちぶぶん}，不獨立{ふどくりつ}使用{しよう}。' },
-            { text: 'はっ', isCorrect: false, reason: '「はっ」は促音化{そくおんか}形式{けいしき}，量詞{りょうし}前{まえ}使用{しよう}，不獨立{ふどくりつ}。' }
+            { text: 'はち', isCorrect: true, reason: '正確！「八{はち}」的音讀是「はち」。' },
+            { text: 'やっつ', isCorrect: false, reason: '「やっつ」是「八{や}つ」の量詞讀法，不是單純數字。' },
+            { text: 'や', isCorrect: false, reason: '「や」は訓讀の一部分，不獨立使用。' },
+            { text: 'はっ', isCorrect: false, reason: '「はっ」是促音化形式，量詞前使用，不獨立。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「八{はち}」の音讀{おんどく}是「はち」，標準{ひょうじゅん}清晰{せいせき}。',
-            relatedRules: ['基本{きほん}數字{すうじ}1-10', '八{はち}の音讀{おんどく}']
+            correctRule: '「八{はち}」的音讀是「はち」，標準清晰。',
+            relatedRules: ['基本數字1-10', '八{はち}的音讀']
         },
         sourceItem: { value: 8, kanji: '八', reading: 'はち' }
     },
@@ -598,16 +598,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '私は本を＿＿読みました。',
         stem_zh: '我讀了八本書。',
         options: [
-            { text: 'はちさつ', isCorrect: false, reason: '陷阱{かんけい}！「八{はち}」＋「冊{さつ}」會促音化{そくおんか}為「はっさつ」。' },
-            { text: 'はっさつ', isCorrect: true, reason: '正確{せいかく}！「八{はち}」＋「冊{さつ}」→「はっさつ」，促音化{そくおんか}。' },
-            { text: 'やっさつ', isCorrect: false, reason: '書籍{しょせき}量詞{りょうし}使用{しよう}しない訓讀{くんどく}「や」。' },
-            { text: 'はちざつ', isCorrect: false, reason: '「冊{さつ}」不濁音化{ふだくおんか}，應{おう}是促音化{そくおんか}。' }
+            { text: 'はちさつ', isCorrect: false, reason: '陷阱！「八{はち}」＋「冊{さつ}」會促音化為「はっさつ」。' },
+            { text: 'はっさつ', isCorrect: true, reason: '正確！「八{はち}」＋「冊{さつ}」→「はっさつ」，促音化。' },
+            { text: 'やっさつ', isCorrect: false, reason: '書籍量詞不使用訓讀「や」。' },
+            { text: 'はちざつ', isCorrect: false, reason: '「冊{さつ}」不濁音化，應是促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「冊{さつ}」量詞{りょうし}在「八{はち}」後面{うしろ}會促音化{そくおんか}：はち＋さつ→はっさつ。「ち」變成{へんせい}促音{そくおん}「っ」。',
-            trapExplanation: '這是陷阱題{かんけいだい}，測試{そくし}學習者{がくしゅうしゃ}是否{ぜひ}掌握{しょうあく}「八{はち}」引發{いんはつ}の促音化{そくおんか}規則{きそく}。',
-            relatedRules: ['8引發{いんはつ}の促音化{そくおんか}', '「冊{さつ}」の音變{おんへん}規則{きそく}']
+            correctRule: '「冊{さつ}」量詞在「八{はち}」後面會促音化：はち＋さつ→はっさつ。「ち」變成促音「っ」。',
+            trapExplanation: '這是陷阱題，測試學習者是否掌握「八{はち}」引發的促音化規則。',
+            relatedRules: ['8引發的促音化', '「冊{さつ}」的音變規則']
         },
         sourceItem: { value: 8, kanji: '八冊', reading: 'はっさつ' }
     },
@@ -624,15 +624,15 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿生まれです。（八月）'
         },
         options: [
-            { text: 'やつがつ', isCorrect: false, reason: '月份{げっぷん}使用{しよう}しない訓讀{くんどく}「やつ」。' },
-            { text: 'はちがつ', isCorrect: true, reason: '正確{せいかく}！八月{はちがつ}讀作{どくさ}「はちがつ」。' },
-            { text: 'はっがつ', isCorrect: false, reason: '月份{げっぷん}不促音化{ふそくおんか}，は「はちがつ」。' },
-            { text: 'やがつ', isCorrect: false, reason: '月份{げっぷん}使用{しよう}する音讀{おんどく}「はち」。' }
+            { text: 'やつがつ', isCorrect: false, reason: '月份不使用訓讀「やつ」。' },
+            { text: 'はちがつ', isCorrect: true, reason: '正確！八月{はちがつ}讀作「はちがつ」。' },
+            { text: 'はっがつ', isCorrect: false, reason: '月份不促音化，「はちがつ」。' },
+            { text: 'やがつ', isCorrect: false, reason: '月份使用音讀「はち」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '月份{げっぷん}使用{しよう}音讀{おんどく}，「八月{はちがつ}」讀作{どくさ}「はちがつ」，不促音化{ふそくおんか}。',
-            relatedRules: ['月份{げっぷん}の讀法{よみかた}', '八月{はちがつ}沒有{ない}音變{おんへん}']
+            correctRule: '月份使用音讀，「八月{はちがつ}」讀作「はちがつ」，不促音化。',
+            relatedRules: ['月份的讀法', '八月{はちがつ}沒有音變']
         },
         sourceItem: { value: 8, kanji: '八月', reading: 'はちがつ' }
     },
@@ -647,16 +647,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '「九」最常用的讀音是？',
         stem_zh: '「九」最常用的讀音是？',
         options: [
-            { text: 'く', isCorrect: false, reason: '「く」也是正確{せいかく}讀法{よみかた}，但因{たんいん}諧音{かいおん}「苦{く}」，日常{にちじょう}多用{おおくもちい}「きゅう」。' },
-            { text: 'きゅう', isCorrect: true, reason: '正確{せいかく}！為{ため}避諱{ひき}「苦{く}」の發音{はつおん}，日常{にちじょう}對話{たいわ}多く{おおく}使用{しよう}「きゅう」。' },
-            { text: 'ここのつ', isCorrect: false, reason: '「ここのつ」是量詞{りょうし}讀法{よみかた}，不是單純{たんじゅん}數字{すうじ}讀音{どくおん}。' },
-            { text: 'ここの', isCorrect: false, reason: '「ここの」は訓讀{くんどく}の一部分{いちぶぶん}，不獨立{ふどくりつ}使用{しよう}。' }
+            { text: 'く', isCorrect: false, reason: '「く」也是正確讀法，但因諧音「苦」，日常多用「きゅう」。' },
+            { text: 'きゅう', isCorrect: true, reason: '正確！為避諱「苦」的發音，日常對話多使用「きゅう」。' },
+            { text: 'ここのつ', isCorrect: false, reason: '「ここのつ」是量詞讀法，不是單純數字讀音。' },
+            { text: 'ここの', isCorrect: false, reason: '「ここの」は訓讀の一部分，不獨立使用。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「九{きゅう}」有兩個{りょうこ}讀法{よみかた}：「きゅう」和「く」。由於{ゆえ}「く」與「苦{く}」同音{どうおん}，日常{にちじょう}生活{せいかつ}中多く{おおく}使用{しよう}「きゅう」以避諱{いひき}。',
-            trapExplanation: '這是陷阱題{かんけいだい}，測試{そくし}學習者{がくしゅうしゃ}是否{ぜひ}了解{りょうかい}日語{にほんご}中の避諱{ひき}文化{ぶんか}。',
-            relatedRules: ['九{きゅう}の兩種{りょうしゅ}讀法{よみかた}', '日語{にほんご}避諱{ひき}文化{ぶんか}']
+            correctRule: '「九{きゅう}」有兩個讀法：「きゅう」和「く」。由於「く」與「苦」同音，日常生活中多使用「きゅう」以避諱。',
+            trapExplanation: '這是陷阱題，測試學習者是否了解日語中の避諱文化。',
+            relatedRules: ['九{きゅう}の兩種讀法', '日語避諱文化']
         },
         sourceItem: { value: 9, kanji: '九', reading: 'きゅう / く' }
     },
@@ -669,16 +669,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '＿＿月は秋の始まりです。',
         stem_zh: '九月是秋天的開始。',
         options: [
-            { text: 'きゅうがつ', isCorrect: false, reason: '陷阱{かんけい}！月份{げっぷん}使用{しよう}する「清瘦型{せいそうがた}」讀法{よみかた}，九月{くがつ}必須{ひっす}讀む{よむ}「くがつ」。' },
-            { text: 'くがつ', isCorrect: true, reason: '正確{せいかく}！月份{げっぷん}中「九月{くがつ}」固定{こてい}讀作{どくさ}「くがつ」。' },
-            { text: 'ここのつき', isCorrect: false, reason: '月份{げっぷん}使用{しよう}しない訓讀{くんどく}。' },
-            { text: 'ここがつ', isCorrect: false, reason: '沒有{ない}「ここがつ」這個{この}讀法{よみかた}。' }
+            { text: 'きゅうがつ', isCorrect: false, reason: '陷阱！月份使用「清瘦型」讀法，九月{くがつ}必須讀「くがつ」。' },
+            { text: 'くがつ', isCorrect: true, reason: '正確！月份中「九月{くがつ}」固定讀作「くがつ」。' },
+            { text: 'ここのつき', isCorrect: false, reason: '月份不使用訓讀。' },
+            { text: 'ここがつ', isCorrect: false, reason: '沒有「ここがつ」這個讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '月份{げっぷん}使用{しよう}「清瘦型{せいそうがた}」讀法{よみかた}，「九月{くがつ}」固定{こてい}讀作{どくさ}「くがつ」，禁止{きんし}使用{しよう}「きゅうがつ」。',
-            trapExplanation: '雖然{すいぜん}日常{にちじょう}中「九{きゅう}」多く{おおく}讀む{よむ}「きゅう」以避諱{いひき}「苦{く}」，但月份{げっぷん}中必須{ひっす}使用{しよう}「く」。',
-            relatedRules: ['月份{げっぷん}の清瘦型{せいそうがた}讀法{よみかた}', '九月{くがつ}の特殊{とくしゅ}規則{きそく}']
+            correctRule: '月份使用「清瘦型」讀法，「九月{くがつ}」固定讀作「くがつ」，禁止使用「きゅうがつ」。',
+            trapExplanation: '雖然日常中「九{きゅう}」多讀「きゅう」以避諱「苦」，但月份中必須使用「く」。',
+            relatedRules: ['月份の清瘦型讀法', '九月{くがつ}的特殊規則']
         },
         sourceItem: { value: 9, kanji: '九月', reading: 'くがつ' }
     },
@@ -695,16 +695,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（九點）'
         },
         options: [
-            { text: 'きゅうじ', isCorrect: false, reason: '陷阱{かんけい}！時間{じかん}中九時{くじ}讀む{よむ}「くじ」，不是「きゅうじ」。' },
-            { text: 'くじ', isCorrect: true, reason: '正確{せいかく}！「九時{くじ}」の固定{こてい}讀法{よみかた}是「くじ」。' },
-            { text: 'ここのじ', isCorrect: false, reason: '沒有{ない}「ここのじ」這個{この}讀法{よみかた}。' },
-            { text: 'きゅじ', isCorrect: false, reason: '不完整{ふかんせい}，正確{せいかく}是「くじ」。' }
+            { text: 'きゅうじ', isCorrect: false, reason: '陷阱！時間中九時{くじ}讀「くじ」，不是「きゅうじ」。' },
+            { text: 'くじ', isCorrect: true, reason: '正確！「九時{くじ}」の固定讀法是「くじ」。' },
+            { text: 'ここのじ', isCorrect: false, reason: '沒有「ここのじ」這個讀法。' },
+            { text: 'きゅじ', isCorrect: false, reason: '不完整，正確是「くじ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「九時{くじ}」是時間{じかん}表達{ひょうたつ}中の固定{こてい}讀法{よみかた}，必須{ひっす}讀作{どくさ}「くじ」，不可{ふか}讀む{よむ}「きゅうじ」。',
-            trapExplanation: '這是陷阱題{かんけいだい}，時間{じかん}中の九時{くじ}使用{しよう}「く」，與日常{にちじょう}習慣{しゅうかん}使用{しよう}「きゅう」不同{ふどう}。',
-            relatedRules: ['九時{くじ}の固定{こてい}讀法{よみかた}', '時間{じかん}表達{ひょうたつ}の特殊{とくしゅ}規則{きそく}']
+            correctRule: '「九時{くじ}」是時間表達中の固定讀法，必須讀作「くじ」，不可讀「きゅうじ」。',
+            trapExplanation: '這是陷阱題，時間中の九時{くじ}使用「く」，與日常習慣使用「きゅう」不同。',
+            relatedRules: ['九時{くじ}の固定讀法', '時間表達的特殊規則']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -716,18 +716,18 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'basic',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十」的正確讀音是？',
+        stem: '「十」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十」的正確讀音是？',
         options: [
-            { text: 'じゅう', isCorrect: true, reason: '正確{せいかく}！「十{じゅう}」の音讀{おんどく}是「じゅう」。' },
-            { text: 'とお', isCorrect: false, reason: '「とお」是「十{とお}」の訓讀{くんどく}，用於{もちい}「つ」量詞{りょうし}時。' },
-            { text: 'じゅっ', isCorrect: false, reason: '「じゅっ」は促音化{そくおんか}形式{けいしき}，量詞{りょうし}前{まえ}使用{しよう}，不獨立{ふどくりつ}。' },
-            { text: 'じゅ', isCorrect: false, reason: '不完整{ふかんせい}，正確{せいかく}は「じゅう」。' }
+            { text: 'じゅう', isCorrect: true, reason: '正確！「十{じゅう}」的音讀是「じゅう」。' },
+            { text: 'とお', isCorrect: false, reason: '「とお」是「十{とお}」的訓讀，用於「つ」量詞時。' },
+            { text: 'じゅっ', isCorrect: false, reason: '「じゅっ」是促音化形式，量詞前使用，不獨立。' },
+            { text: 'じゅ', isCorrect: false, reason: '不完整，正確「じゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十{じゅう}」の音讀{おんどく}是「じゅう」，標準{ひょうじゅん}清晰{せいせき}。訓讀{くんどく}「とお」用於{もちい}特殊{とくしゅ}場合{ばあい}。',
-            relatedRules: ['基本{きほん}數字{すうじ}1-10', '十{じゅう}の音讀{おんどく}與訓讀{くんどく}']
+            correctRule: '「十{じゅう}」的音讀是「じゅう」，標準清晰。訓讀「とお」用於特殊場合。',
+            relatedRules: ['基本數字1-10', '十{じゅう}的音讀與訓讀']
         },
         sourceItem: { value: 10, kanji: '十', reading: 'じゅう' }
     },
@@ -740,16 +740,16 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         stem: '私は鉛筆を＿＿持っています。',
         stem_zh: '我有十支鉛筆。',
         options: [
-            { text: 'じゅうほん', isCorrect: false, reason: '陷阱{かんけい}！「十{じゅう}」＋「本{ほん}」會促音化{そくおんか}和半濁音化{はんだくおんか}為「じゅっぽん」。' },
-            { text: 'じゅっぽん', isCorrect: true, reason: '正確{せいかく}！「十{じゅう}」＋「本{ほん}」→「じゅっぽん」，促音{そくおん}＋半濁音{はんだくおん}。' },
-            { text: 'とおほん', isCorrect: false, reason: '「本{ほん}」量詞{りょうし}使用{しよう}しない訓讀{くんどく}「とお」。' },
-            { text: 'じゅうぼん', isCorrect: false, reason: '應{おう}是促音{そくおん}+半濁音{はんだくおん}，不是只有{だけ}濁音{だくおん}。' }
+            { text: 'じゅうほん', isCorrect: false, reason: '陷阱！「十{じゅう}」＋「本{ほん}」會促音化和半濁音化為「じゅっぽん」。' },
+            { text: 'じゅっぽん', isCorrect: true, reason: '正確！「十{じゅう}」＋「本{ほん}」→「じゅっぽん」，促音＋半濁音。' },
+            { text: 'とおほん', isCorrect: false, reason: '「本{ほん}」量詞不使用訓讀「とお」。' },
+            { text: 'じゅうぼん', isCorrect: false, reason: '應是促音+半濁音，不是只有濁音。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「本{ほん}」量詞{りょうし}在「十{じゅう}」後面{うしろ}會發生{はっせい}h-p轉換{てんかん}：じゅう＋ほん→じゅっぽん。「う」變成{へんせい}促音{そくおん}「っ」，「ほ」變成{へんせい}半濁音{はんだくおん}「ぽ」。',
-            trapExplanation: '這是陷阱題{かんけいだい}，測試{そくし}學習者{がくしゅうしゃ}是否{ぜひ}掌握{しょうあく}「十{じゅう}」引發{いんはつ}の促音化{そくおんか}和半濁音化{はんだくおんか}規則{きそく}。',
-            relatedRules: ['h-p轉換{てんかん}規律{きりつ}', '10引發{いんはつ}の促音{そくおん}+半濁音{はんだくおん}', '「本{ほん}」の音變{おんへん}規則{きそく}']
+            correctRule: '「本{ほん}」量詞在「十{じゅう}」後面會發生h-p轉換：じゅう＋ほん→じゅっぽん。「う」變成促音「っ」，「ほ」變成半濁音「ぽ」。',
+            trapExplanation: '這是陷阱題，測試學習者是否掌握「十{じゅう}」引發的促音化和半濁音化規則。',
+            relatedRules: ['h-p轉換規律', '10引發の促音+半濁音', '「本{ほん}」的音變規則']
         },
         sourceItem: { value: 10, kanji: '十本', reading: 'じゅっぽん' }
     },
@@ -766,15 +766,15 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿あります。（十個）'
         },
         options: [
-            { text: 'じゅうこ', isCorrect: false, reason: '一般{いっぱん}物品{ぶっぴん}計數{けいすう}使用{しよう}する「つ」量詞{りょうし}，10個{こ}讀む{よむ}「とお」。' },
-            { text: 'とお', isCorrect: true, reason: '正確{せいかく}！一般{いっぱん}物品{ぶっぴん}10個{こ}使用{しよう}訓讀{くんどく}「とお」（沒有{ない}「つ」）。' },
-            { text: 'じゅっこ', isCorrect: false, reason: '雖然{すいぜん}「個{こ}」量詞{りょうし}使用{しよう}「じゅっこ」，但「いくつ」問句{もんく}通常{つうじょう}用{もち}「とお」回答{かいとう}。' },
-            { text: 'とおつ', isCorrect: false, reason: '10時{じ}沒有{ない}「つ」，直接{ちょくせつ}讀む{よむ}「とお」。' }
+            { text: 'じゅうこ', isCorrect: false, reason: '一般物品計數使用「つ」量詞，10個讀「とお」。' },
+            { text: 'とお', isCorrect: true, reason: '正確！一般物品10個使用訓讀「とお」（沒有「つ」）。' },
+            { text: 'じゅっこ', isCorrect: false, reason: '雖然「個」量詞使用「じゅっこ」，但「いくつ」問句通常用「とお」回答。' },
+            { text: 'とおつ', isCorrect: false, reason: '10時沒有「つ」，直接讀「とお」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「つ」量詞{りょうし}在10時{じ}特殊{とくしゅ}，直接{ちょくせつ}使用{しよう}訓讀{くんどく}「とお」，不加{ふか}「つ」。',
-            relatedRules: ['「つ」量詞{りょうし}の特殊{とくしゅ}規則{きそく}', '10の訓讀{くんどく}「とお」']
+            correctRule: '「つ」量詞在10時特殊，直接使用訓讀「とお」，不加「つ」。',
+            relatedRules: ['「つ」量詞的特殊規則', '10的訓讀「とお」']
         },
         sourceItem: { value: 10, kanji: '十', reading: 'とお' }
     },
@@ -790,7 +790,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: '不同，「参」讀「み」', isCorrect: false, reason: '「み」是「三」的訓讀部分。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「参」是「三」的大寫形式（大字），用於金融文件防止篡改，讀音相同。', relatedRules: ['數字の大字', '大字の使用場景'] },
+        explanation: { correctRule: '「参」是「三」的大寫形式（大字），用於金融文件防止篡改，讀音相同。', relatedRules: ['數字の大字', '大字的使用場景'] },
         sourceItem: { value: 3, kanji: '三/参', reading: 'さん' }
     },
     {
@@ -803,7 +803,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたじゅう', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「二十歳」是特殊讀法，讀作「はたち」，這是日語中的固定表達。', relatedRules: ['年齡の特殊讀法', '二十歳=はたち'] },
+        explanation: { correctRule: '「二十歳」是特殊讀法，讀作「はたち」，這是日語中的固定表達。', relatedRules: ['年齡的特殊讀法', '二十歳=はたち'] },
         sourceItem: { value: 20, kanji: '二十歳', reading: 'はたち' }
     },
     {
@@ -817,12 +817,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅう', isCorrect: false, reason: '9不是3+5的答案。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '數學計算結果使用音讀，「八」讀「はち」。', relatedRules: ['數學計算の讀法'] },
+        explanation: { correctRule: '數學計算結果使用音讀，「八」讀「はち」。', relatedRules: ['數學計算的讀法'] },
         sourceItem: { value: 8, kanji: '八', reading: 'はち' }
     },
     {
         id: 'num_basic_extra_4', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
-        stem: '「一人」的正確讀音是？', stem_zh: '「一人」的正確讀音是？',
+        stem: '「一人」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「一人」的正確讀音是？',
         options: [
             { text: 'いちにん', isCorrect: false, reason: '陷阱！「一人」的特殊讀法不是音讀。' },
             { text: 'ひとり', isCorrect: true, reason: '正確！「一人」是特殊讀法，讀「ひとり」。' },
@@ -830,7 +830,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いちり', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「一人」和「二人」是特殊讀法：ひとり、ふたり。', trapExplanation: '這是陷阱題，測試學習者是否知道人數的特殊讀法。', relatedRules: ['人數の特殊讀法'] },
+        explanation: { correctRule: '「一人」和「二人」是特殊讀法：ひとり、ふたり。', trapExplanation: '這是陷阱題，測試學習者是否知道人數的特殊讀法。', relatedRules: ['人數的特殊讀法'] },
         sourceItem: { value: 1, kanji: '一人', reading: 'ひとり' }
     },
     {
@@ -843,7 +843,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ワン、ツー、スリー', isCorrect: false, reason: '日語電話號碼不用英語讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '電話號碼逐個數字讀出，使用音讀。', relatedRules: ['電話番号の讀法'] },
+        explanation: { correctRule: '電話號碼逐個數字讀出，使用音讀。', relatedRules: ['電話番号的讀法'] },
         sourceItem: { value: 123, kanji: '一二三', reading: 'いちにさん' }
     },
     {
@@ -857,12 +857,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとひ', isCorrect: false, reason: '這不是日期的讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「一日」作為日期（1號）讀「ついたち」，這是特殊讀法。', trapExplanation: '這是陷阱題，「一日」有多種讀法，日期用「ついたち」。', relatedRules: ['日期の特殊讀法', '一日=ついたち'] },
+        explanation: { correctRule: '「一日」作為日期（1號）讀「ついたち」，這是特殊讀法。', trapExplanation: '這是陷阱題，「一日」有多種讀法，日期用「ついたち」。', relatedRules: ['日期的特殊讀法', '一日=ついたち'] },
         sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
     },
     {
         id: 'num_basic_extra_7', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「二日」的正確讀音是？', stem_zh: '「二日」的正確讀音是？',
+        stem: '「二日」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二日」的正確讀音是？',
         options: [
             { text: 'にち', isCorrect: false, reason: '不完整。' },
             { text: 'ふつか', isCorrect: true, reason: '正確！「二日」（2號）讀「ふつか」。' },
@@ -870,7 +870,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたひ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「二日」（2號）讀「ふつか」，這是日期的特殊讀法。', relatedRules: ['日期の特殊讀法', '二日=ふつか'] },
+        explanation: { correctRule: '「二日」（2號）讀「ふつか」，這是日期的特殊讀法。', relatedRules: ['日期的特殊讀法', '二日=ふつか'] },
         sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
     },
     {
@@ -883,7 +883,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんか', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三日」（3號）讀「みっか」，有促音。', relatedRules: ['日期の特殊讀法', '三日=みっか'] },
+        explanation: { correctRule: '「三日」（3號）讀「みっか」，有促音。', relatedRules: ['日期的特殊讀法', '三日=みっか'] },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
     {
@@ -897,12 +897,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よか', isCorrect: false, reason: '需要促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「四日」（4號）讀「よっか」，有促音。', relatedRules: ['日期の特殊讀法', '四日=よっか'] },
+        explanation: { correctRule: '「四日」（4號）讀「よっか」，有促音。', relatedRules: ['日期的特殊讀法', '四日=よっか'] },
         sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
     },
     {
         id: 'num_basic_extra_10', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「五日」的正確讀音是？', stem_zh: '「五日」的正確讀音是？',
+        stem: '「五日」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「五日」的正確讀音是？',
         options: [
             { text: 'ごにち', isCorrect: false, reason: '日期有特殊讀法。' },
             { text: 'いつか', isCorrect: true, reason: '正確！「五日」（5號）讀「いつか」。' },
@@ -910,7 +910,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いっか', isCorrect: false, reason: '這是「一家」的讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「五日」（5號）讀「いつか」。', relatedRules: ['日期の特殊讀法', '五日=いつか'] },
+        explanation: { correctRule: '「五日」（5號）讀「いつか」。', relatedRules: ['日期的特殊讀法', '五日=いつか'] },
         sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
     },
     {
@@ -923,7 +923,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっか', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「六日」（6號）讀「むいか」。', relatedRules: ['日期の特殊讀法', '六日=むいか'] },
+        explanation: { correctRule: '「六日」（6號）讀「むいか」。', relatedRules: ['日期的特殊讀法', '六日=むいか'] },
         sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
     },
     {
@@ -937,12 +937,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なぬか', isCorrect: false, reason: '古語讀法，現代用「なのか」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「七日」（7號）讀「なのか」。', relatedRules: ['日期の特殊讀法', '七日=なのか'] },
+        explanation: { correctRule: '「七日」（7號）讀「なのか」。', relatedRules: ['日期的特殊讀法', '七日=なのか'] },
         sourceItem: { value: 7, kanji: '七日', reading: 'なのか' }
     },
     {
         id: 'num_basic_extra_13', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「八日」的正確讀音是？', stem_zh: '「八日」的正確讀音是？',
+        stem: '「八日」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「八日」的正確讀音是？',
         options: [
             { text: 'はちにち', isCorrect: false, reason: '日期有特殊讀法。' },
             { text: 'ようか', isCorrect: true, reason: '正確！「八日」（8號）讀「ようか」。' },
@@ -950,7 +950,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はっか', isCorrect: false, reason: '這是「発火」等詞的讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八日」（8號）讀「ようか」。', relatedRules: ['日期の特殊讀法', '八日=ようか'] },
+        explanation: { correctRule: '「八日」（8號）讀「ようか」。', relatedRules: ['日期的特殊讀法', '八日=ようか'] },
         sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
     },
     {
@@ -963,7 +963,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここか', isCorrect: false, reason: '需要「の」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「九日」（9號）讀「ここのか」。', relatedRules: ['日期の特殊讀法', '九日=ここのか'] },
+        explanation: { correctRule: '「九日」（9號）讀「ここのか」。', relatedRules: ['日期的特殊讀法', '九日=ここのか'] },
         sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
     },
     {
@@ -977,7 +977,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'とうか', isCorrect: false, reason: '長音位置錯誤。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「十日」（10號）讀「とおか」。', relatedRules: ['日期の特殊讀法', '十日=とおか'] },
+        explanation: { correctRule: '「十日」（10號）讀「とおか」。', relatedRules: ['日期的特殊讀法', '十日=とおか'] },
         sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
     },
     {
@@ -990,7 +990,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いっか、にっか、さんか', isCorrect: false, reason: '這些都不是正確讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '日期1-10日有特殊讀法，需要特別記憶。', trapExplanation: '這是陷阱題，測試日期讀法的掌握程度。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '日期1-10日有特殊讀法，需要特別記憶。', trapExplanation: '這是陷阱題，測試日期讀法的掌握程度。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 0, kanji: '日期', reading: '特殊讀法' }
     },
     {
@@ -1003,7 +1003,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いちたい', isCorrect: false, reason: '需要濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「台」量詞在撥音後濁音化，「一台」讀「いちだい」。', relatedRules: ['量詞の濁音化', '台の讀法'] },
+        explanation: { correctRule: '「台」量詞在撥音後濁音化，「一台」讀「いちだい」。', relatedRules: ['量詞的濁音化', '台的讀法'] },
         sourceItem: { value: 1, kanji: '一台', reading: 'いちだい' }
     },
     {
@@ -1017,12 +1017,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんざい', isCorrect: false, reason: '不需要濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '年齡使用音讀，「三歳」讀「さんさい」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '年齡使用音讀，「三歳」讀「さんさい」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 3, kanji: '三歳', reading: 'さんさい' }
     },
     {
         id: 'num_basic_extra_19', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「四歳」的正確讀音是？', stem_zh: '「四歳」的正確讀音是？',
+        stem: '「四歳」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四歳」的正確讀音是？',
         options: [
             { text: 'しさい', isCorrect: false, reason: '年齡中「四」通常讀「よん」。' },
             { text: 'よんさい', isCorrect: true, reason: '正確！「四歳」讀「よんさい」。' },
@@ -1030,7 +1030,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よさい', isCorrect: false, reason: '缺少「ん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '年齡中「四」讀「よん」，「四歳」讀「よんさい」。', relatedRules: ['年齡の讀法', '四=よん'] },
+        explanation: { correctRule: '年齡中「四」讀「よん」，「四歳」讀「よんさい」。', relatedRules: ['年齡的讀法', '四=よん'] },
         sourceItem: { value: 4, kanji: '四歳', reading: 'よんさい' }
     },
     {
@@ -1043,7 +1043,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのさい', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '年齡中「七」讀「なな」，「七歳」讀「ななさい」。', relatedRules: ['年齡の讀法', '七=なな'] },
+        explanation: { correctRule: '年齡中「七」讀「なな」，「七歳」讀「ななさい」。', relatedRules: ['年齡的讀法', '七=なな'] },
         sourceItem: { value: 7, kanji: '七歳', reading: 'ななさい' }
     },
     {
@@ -1057,12 +1057,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅっさい', isCorrect: false, reason: '不需要促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '年齡中「九」讀「きゅう」，「九歳」讀「きゅうさい」。', trapExplanation: '注意年齡用「きゅう」，但九時、九月用「く」。', relatedRules: ['年齡の讀法', '九=きゅう'] },
+        explanation: { correctRule: '年齡中「九」讀「きゅう」，「九歳」讀「きゅうさい」。', trapExplanation: '注意年齡用「きゅう」，但九時、九月用「く」。', relatedRules: ['年齡的讀法', '九=きゅう'] },
         sourceItem: { value: 9, kanji: '九歳', reading: 'きゅうさい' }
     },
     {
         id: 'num_basic_extra_22', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
-        stem: '「十歳」的正確讀音是？', stem_zh: '「十歳」的正確讀音是？',
+        stem: '「十歳」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「十歳」的正確讀音是？',
         options: [
             { text: 'じゅうさい', isCorrect: true, reason: '正確！「十歳」讀「じゅうさい」或「じゅっさい」。' },
             { text: 'とおさい', isCorrect: false, reason: '年齡不用訓讀「とお」。' },
@@ -1070,7 +1070,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'とさい', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十歳」讀「じゅうさい」或「じゅっさい」都可以。', relatedRules: ['年齡の讀法', '十=じゅう'] },
+        explanation: { correctRule: '「十歳」讀「じゅうさい」或「じゅっさい」都可以。', relatedRules: ['年齡的讀法', '十=じゅう'] },
         sourceItem: { value: 10, kanji: '十歳', reading: 'じゅうさい' }
     },
     {
@@ -1102,7 +1102,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
     },
     {
         id: 'num_basic_extra_25', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「八個」的正確讀音是？', stem_zh: '「八個」的正確讀音是？',
+        stem: '「八個」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「八個」的正確讀音是？',
         options: [
             { text: 'はちこ', isCorrect: false, reason: '需要促音化。' },
             { text: 'はっこ', isCorrect: true, reason: '正確！「八個」讀「はっこ」。' },
@@ -1137,12 +1137,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'りくじ', isCorrect: false, reason: '「六」不讀「りく」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六時」讀「ろくじ」，「時」前不促音化。', trapExplanation: '注意「六」在不同量詞前的音變不同。', relatedRules: ['時間の讀法', '六時=ろくじ'] },
+        explanation: { correctRule: '「六時」讀「ろくじ」，「時」前不促音化。', trapExplanation: '注意「六」在不同量詞前的音變不同。', relatedRules: ['時間的讀法', '六時=ろくじ'] },
         sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
     },
     {
         id: 'num_basic_extra_28', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「八時」的正確讀音是？', stem_zh: '「八時」的正確讀音是？',
+        stem: '「八時」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「八時」的正確讀音是？',
         options: [
             { text: 'はっじ', isCorrect: false, reason: '「時」前不促音化。' },
             { text: 'はちじ', isCorrect: true, reason: '正確！「八時」讀「はちじ」。' },
@@ -1150,7 +1150,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちし', isCorrect: false, reason: '「時」不讀「し」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八時」讀「はちじ」，「時」前不促音化。', relatedRules: ['時間の讀法', '八時=はちじ'] },
+        explanation: { correctRule: '「八時」讀「はちじ」，「時」前不促音化。', relatedRules: ['時間的讀法', '八時=はちじ'] },
         sourceItem: { value: 8, kanji: '八時', reading: 'はちじ' }
     },
     {
@@ -1163,7 +1163,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっじ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「十時」讀「じゅうじ」，「時」前不促音化。', relatedRules: ['時間の讀法', '十時=じゅうじ'] },
+        explanation: { correctRule: '「十時」讀「じゅうじ」，「時」前不促音化。', relatedRules: ['時間的讀法', '十時=じゅうじ'] },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
     {
@@ -1177,12 +1177,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとふん', isCorrect: false, reason: '「分」量詞用音讀數字。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「一分」讀「いっぷん」，「分」前促音化且半濁音化。', trapExplanation: '「分」的讀法較複雜，需要特別記憶。', relatedRules: ['分の讀法', '一分=いっぷん'] },
+        explanation: { correctRule: '「一分」讀「いっぷん」，「分」前促音化且半濁音化。', trapExplanation: '「分」的讀法較複雜，需要特別記憶。', relatedRules: ['分的讀法', '一分=いっぷん'] },
         sourceItem: { value: 1, kanji: '一分', reading: 'いっぷん' }
     },
     {
         id: 'num_basic_extra_31', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「三分」的正確讀音是？', stem_zh: '「三分」的正確讀音是？',
+        stem: '「三分」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「三分」的正確讀音是？',
         options: [
             { text: 'さんふん', isCorrect: false, reason: '「分」在撥音後讀「ぷん」。' },
             { text: 'さんぷん', isCorrect: true, reason: '正確！「三分」讀「さんぷん」。' },
@@ -1190,7 +1190,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんぶん', isCorrect: false, reason: '「ぶん」是「部分」等詞的讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三分」讀「さんぷん」，撥音後「分」讀「ぷん」。', relatedRules: ['分の讀法', '三分=さんぷん'] },
+        explanation: { correctRule: '「三分」讀「さんぷん」，撥音後「分」讀「ぷん」。', relatedRules: ['分的讀法', '三分=さんぷん'] },
         sourceItem: { value: 3, kanji: '三分', reading: 'さんぷん' }
     },
     {
@@ -1203,7 +1203,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごぶん', isCorrect: false, reason: '「ぶん」是「部分」等詞的讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五分」讀「ごふん」，「五」後保持原音。', relatedRules: ['分の讀法', '五分=ごふん'] },
+        explanation: { correctRule: '「五分」讀「ごふん」，「五」後保持原音。', relatedRules: ['分的讀法', '五分=ごふん'] },
         sourceItem: { value: 5, kanji: '五分', reading: 'ごふん' }
     },
     {
@@ -1217,12 +1217,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくぶん', isCorrect: false, reason: '「ぶん」是「部分」等詞的讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「六分」讀「ろっぷん」，「六」後促音化且半濁音化。', relatedRules: ['分の讀法', '六分=ろっぷん'] },
+        explanation: { correctRule: '「六分」讀「ろっぷん」，「六」後促音化且半濁音化。', relatedRules: ['分的讀法', '六分=ろっぷん'] },
         sourceItem: { value: 6, kanji: '六分', reading: 'ろっぷん' }
     },
     {
         id: 'num_basic_extra_34', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「八分」的正確讀音是？', stem_zh: '「八分」的正確讀音是？',
+        stem: '「八分」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「八分」的正確讀音是？',
         options: [
             { text: 'はちふん', isCorrect: false, reason: '「八」後促音化且半濁音化。' },
             { text: 'はっぷん', isCorrect: true, reason: '正確！「八分」讀「はっぷん」。' },
@@ -1230,7 +1230,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちぶん', isCorrect: false, reason: '「ぶん」是「部分」等詞的讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八分」讀「はっぷん」，「八」後促音化且半濁音化。', relatedRules: ['分の讀法', '八分=はっぷん'] },
+        explanation: { correctRule: '「八分」讀「はっぷん」，「八」後促音化且半濁音化。', relatedRules: ['分的讀法', '八分=はっぷん'] },
         sourceItem: { value: 8, kanji: '八分', reading: 'はっぷん' }
     },
     {
@@ -1243,7 +1243,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっぷん', isCorrect: false, reason: '這是舊讀法，現代用「じゅっぷん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「十分」讀「じゅっぷん」，「十」後促音化且半濁音化。', relatedRules: ['分の讀法', '十分=じゅっぷん'] },
+        explanation: { correctRule: '「十分」讀「じゅっぷん」，「十」後促音化且半濁音化。', relatedRules: ['分的讀法', '十分=じゅっぷん'] },
         sourceItem: { value: 10, kanji: '十分', reading: 'じゅっぷん' }
     },
 
@@ -1258,7 +1258,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: '全部讀「し」', isCorrect: false, reason: '錯誤，避諱「死」，很多場景用「よん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四」在不同場景讀法不同：月份(し)、時間(よ)、年齡(よん)。', trapExplanation: '這是陷阱題，需要記憶各場景的固定讀法。', relatedRules: ['四の讀法分類'] },
+        explanation: { correctRule: '「四」在不同場景讀法不同：月份(し)、時間(よ)、年齡(よん)。', trapExplanation: '這是陷阱題，需要記憶各場景的固定讀法。', relatedRules: ['四的讀法分類'] },
         sourceItem: { value: 4, kanji: '四', reading: '場景讀法' }
     },
     {
@@ -1271,7 +1271,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: '全部讀「しち」', isCorrect: false, reason: '錯誤，年齡用「なな」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七」在不同場景讀法不同：月份(しち)、時間(しち)、年齡(なな)。', trapExplanation: '這是陷阱題，需要記憶各場景的固定讀法。', relatedRules: ['七の讀法分類'] },
+        explanation: { correctRule: '「七」在不同場景讀法不同：月份(しち)、時間(しち)、年齡(なな)。', trapExplanation: '這是陷阱題，需要記憶各場景的固定讀法。', relatedRules: ['七的讀法分類'] },
         sourceItem: { value: 7, kanji: '七', reading: '場景讀法' }
     },
     {
@@ -1284,7 +1284,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: '全部讀「く」', isCorrect: false, reason: '錯誤，年齡用「きゅう」避諱「苦」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九」在不同場景讀法不同：月份(く)、時間(く)、年齡(きゅう)。', trapExplanation: '這是陷阱題，需要記憶各場景的固定讀法。', relatedRules: ['九の讀法分類'] },
+        explanation: { correctRule: '「九」在不同場景讀法不同：月份(く)、時間(く)、年齡(きゅう)。', trapExplanation: '這是陷阱題，需要記憶各場景的固定讀法。', relatedRules: ['九的讀法分類'] },
         sourceItem: { value: 9, kanji: '九', reading: '場景讀法' }
     },
     {
@@ -1297,7 +1297,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: '十日(とおか)', isCorrect: false, reason: '這是正確的讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '1-10日有特殊讀法，不能用音讀。', trapExplanation: '這是陷阱題，測試日期特殊讀法。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '1-10日有特殊讀法，不能用音讀。', trapExplanation: '這是陷阱題，測試日期特殊讀法。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 0, kanji: '日期', reading: '特殊讀法' }
     },
     {
@@ -1310,7 +1310,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: '沒有音變', isCorrect: false, reason: '錯誤，「本」有複雜的音變規則。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「本」量詞：1/6/8/10→っぽん，3→ぼん，其他→ほん。', relatedRules: ['本の音變規則'] },
+        explanation: { correctRule: '「本」量詞：1/6/8/10→っぽん，3→ぼん，其他→ほん。', relatedRules: ['本的音變規則'] },
         sourceItem: { value: 0, kanji: '〜本', reading: '音變規則' }
     },
     {
@@ -1323,7 +1323,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: '所有數字都讀「ぶん」', isCorrect: false, reason: '錯誤，「ぶん」是「部分」等詞的讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「分」量詞：1/6/8/10→っぷん，3→んぷん，2/5/7/9→ふん，4→ぷん。', relatedRules: ['分の音變規則'] },
+        explanation: { correctRule: '「分」量詞：1/6/8/10→っぷん，3→んぷん，2/5/7/9→ふん，4→ぷん。', relatedRules: ['分的音變規則'] },
         sourceItem: { value: 0, kanji: '〜分', reading: '音變規則' }
     },
 
@@ -1338,12 +1338,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: '全部用音讀，無變體', isCorrect: false, reason: '錯誤，4/7/9有兩種讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '0-10的音讀需要記住雙讀法：4(し/よん)、7(しち/なな)、9(きゅう/く)。', relatedRules: ['基本數字の音讀'] },
+        explanation: { correctRule: '0-10的音讀需要記住雙讀法：4(し/よん)、7(しち/なな)、9(きゅう/く)。', relatedRules: ['基本數字的音讀'] },
         sourceItem: { value: 0, kanji: '0-10', reading: '音讀' }
     },
     {
         id: 'num_basic_review_2', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「つ」量詞1-10的正確讀法是？', stem_zh: '「つ」量詞1-10的正確讀法是？',
+        stem: '「つ」の数{かぞ}え方{かた}（1〜10）の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「つ」量詞1-10的正確讀法是？',
         options: [
             { text: 'ひとつ、ふたつ、みっつ、よっつ、いつつ、むっつ、ななつ、やっつ、ここのつ、とお', isCorrect: true, reason: '正確！這是「つ」量詞的完整讀法。' },
             { text: '全部加「つ」', isCorrect: false, reason: '錯誤，10沒有「つ」。' },
@@ -1351,7 +1351,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: '沒有促音', isCorrect: false, reason: '錯誤，3/4/6/8有促音。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「つ」量詞使用訓讀，3/4/6/8有促音，10沒有「つ」。', relatedRules: ['つ量詞の讀法'] },
+        explanation: { correctRule: '「つ」量詞使用訓讀，3/4/6/8有促音，10沒有「つ」。', relatedRules: ['つ量詞的讀法'] },
         sourceItem: { value: 0, kanji: '〜つ', reading: '訓讀' }
     },
     {
@@ -1380,12 +1380,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごっぴゃく', isCorrect: false, reason: '「五」後不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五百」讀「ごひゃく」，「五」後保持原音。', relatedRules: ['百の讀法', '五百=ごひゃく'] },
+        explanation: { correctRule: '「五百」讀「ごひゃく」，「五」後保持原音。', relatedRules: ['百的讀法', '五百=ごひゃく'] },
         sourceItem: { value: 500, kanji: '五百', reading: 'ごひゃく' }
     },
     {
         id: 'num_basic_extra_37', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
-        stem: '「二人」的正確讀音是？', stem_zh: '「二人」的正確讀音是？',
+        stem: '「二人」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二人」的正確讀音是？',
         options: [
             { text: 'ににん', isCorrect: false, reason: '陷阱！「二人」是特殊讀法。' },
             { text: 'ふたり', isCorrect: true, reason: '正確！「二人」讀「ふたり」。' },
@@ -1393,7 +1393,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたにん', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「二人」是特殊讀法，讀「ふたり」，與「一人」(ひとり)相同是訓讀。', trapExplanation: '「一人」「二人」是特殊讀法，三人以上用音讀。', relatedRules: ['人數の特殊讀法', '二人=ふたり'] },
+        explanation: { correctRule: '「二人」是特殊讀法，讀「ふたり」，與「一人」(ひとり)相同是訓讀。', trapExplanation: '「一人」「二人」是特殊讀法，三人以上用音讀。', relatedRules: ['人數的特殊讀法', '二人=ふたり'] },
         sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
     },
     {
@@ -1406,7 +1406,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじん', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三人」及以上用音讀，讀「さんにん」。', relatedRules: ['人數の讀法', '三人=さんにん'] },
+        explanation: { correctRule: '「三人」及以上用音讀，讀「さんにん」。', relatedRules: ['人數的讀法', '三人=さんにん'] },
         sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
     },
     {
@@ -1420,12 +1420,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よったり', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「四人」讀「よにん」，「四」在人數中讀「よ」。', trapExplanation: '「四人」的「四」特殊讀法是「よ」。', relatedRules: ['人數の讀法', '四人=よにん'] },
+        explanation: { correctRule: '「四人」讀「よにん」，「四」在人數中讀「よ」。', trapExplanation: '「四人」的「四」特殊讀法是「よ」。', relatedRules: ['人數的讀法', '四人=よにん'] },
         sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
     },
     {
         id: 'num_basic_extra_40', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「七人」的正確讀音是？', stem_zh: '「七人」的正確讀音是？',
+        stem: '「七人」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七人」的正確讀音是？',
         options: [
             { text: 'ななにん', isCorrect: false, reason: '「七人」的「七」讀「しち」。' },
             { text: 'しちにん', isCorrect: true, reason: '正確！「七人」讀「しちにん」。' },
@@ -1433,7 +1433,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのにん', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「七人」讀「しちにん」，人數中「七」讀「しち」。', relatedRules: ['人數の讀法', '七人=しちにん'] },
+        explanation: { correctRule: '「七人」讀「しちにん」，人數中「七」讀「しち」。', relatedRules: ['人數的讀法', '七人=しちにん'] },
         sourceItem: { value: 7, kanji: '七人', reading: 'しちにん' }
     },
     {
@@ -1446,7 +1446,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'とにん', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「十人」讀「じゅうにん」，「人」前不促音化。', relatedRules: ['人數の讀法', '十人=じゅうにん'] },
+        explanation: { correctRule: '「十人」讀「じゅうにん」，「人」前不促音化。', relatedRules: ['人數的讀法', '十人=じゅうにん'] },
         sourceItem: { value: 10, kanji: '十人', reading: 'じゅうにん' }
     },
     {
@@ -1460,12 +1460,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いっがつ', isCorrect: false, reason: '「月」前不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「一月」讀「いちがつ」，月份中「月」讀「がつ」。', relatedRules: ['月份の讀法', '一月=いちがつ'] },
+        explanation: { correctRule: '「一月」讀「いちがつ」，月份中「月」讀「がつ」。', relatedRules: ['月份的讀法', '一月=いちがつ'] },
         sourceItem: { value: 1, kanji: '一月', reading: 'いちがつ' }
     },
     {
         id: 'num_basic_extra_43', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「二月」的正確讀音是？', stem_zh: '「二月」的正確讀音是？',
+        stem: '「二月」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二月」的正確讀音是？',
         options: [
             { text: 'にがつ', isCorrect: true, reason: '正確！「二月」讀「にがつ」。' },
             { text: 'ふたがつ', isCorrect: false, reason: '月份用音讀。' },
@@ -1473,7 +1473,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じがつ', isCorrect: false, reason: '「二」不讀「じ」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二月」讀「にがつ」。', relatedRules: ['月份の讀法', '二月=にがつ'] },
+        explanation: { correctRule: '「二月」讀「にがつ」。', relatedRules: ['月份的讀法', '二月=にがつ'] },
         sourceItem: { value: 2, kanji: '二月', reading: 'にがつ' }
     },
     {
@@ -1486,7 +1486,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みっがつ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三月」讀「さんがつ」。', relatedRules: ['月份の讀法', '三月=さんがつ'] },
+        explanation: { correctRule: '「三月」讀「さんがつ」。', relatedRules: ['月份的讀法', '三月=さんがつ'] },
         sourceItem: { value: 3, kanji: '三月', reading: 'さんがつ' }
     },
     {
@@ -1500,12 +1500,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'しげつ', isCorrect: false, reason: '「月」在月份中讀「がつ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「四月」讀「しがつ」，月份中「四」讀「し」。', trapExplanation: '注意月份中「四」讀「し」，與年齡「よん」不同。', relatedRules: ['月份の讀法', '四月=しがつ'] },
+        explanation: { correctRule: '「四月」讀「しがつ」，月份中「四」讀「し」。', trapExplanation: '注意月份中「四」讀「し」，與年齡「よん」不同。', relatedRules: ['月份的讀法', '四月=しがつ'] },
         sourceItem: { value: 4, kanji: '四月', reading: 'しがつ' }
     },
     {
         id: 'num_basic_extra_46', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「五月」的正確讀音是？', stem_zh: '「五月」的正確讀音是？',
+        stem: '「五月」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「五月」的正確讀音是？',
         options: [
             { text: 'ごがつ', isCorrect: true, reason: '正確！「五月」讀「ごがつ」。' },
             { text: 'いつがつ', isCorrect: false, reason: '月份用音讀。' },
@@ -1513,7 +1513,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さつきがつ', isCorrect: false, reason: '「皐月」是五月的別稱，但讀法不同。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五月」讀「ごがつ」。', relatedRules: ['月份の讀法', '五月=ごがつ'] },
+        explanation: { correctRule: '「五月」讀「ごがつ」。', relatedRules: ['月份的讀法', '五月=ごがつ'] },
         sourceItem: { value: 5, kanji: '五月', reading: 'ごがつ' }
     },
     {
@@ -1526,7 +1526,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっがつ', isCorrect: false, reason: '「月」前不促音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「六月」讀「ろくがつ」。', relatedRules: ['月份の讀法', '六月=ろくがつ'] },
+        explanation: { correctRule: '「六月」讀「ろくがつ」。', relatedRules: ['月份的讀法', '六月=ろくがつ'] },
         sourceItem: { value: 6, kanji: '六月', reading: 'ろくがつ' }
     },
     {
@@ -1540,12 +1540,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'しちげつ', isCorrect: false, reason: '「月」在月份中讀「がつ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「七月」讀「しちがつ」，月份中「七」讀「しち」。', trapExplanation: '注意月份中「七」讀「しち」，與年齡「なな」不同。', relatedRules: ['月份の讀法', '七月=しちがつ'] },
+        explanation: { correctRule: '「七月」讀「しちがつ」，月份中「七」讀「しち」。', trapExplanation: '注意月份中「七」讀「しち」，與年齡「なな」不同。', relatedRules: ['月份的讀法', '七月=しちがつ'] },
         sourceItem: { value: 7, kanji: '七月', reading: 'しちがつ' }
     },
     {
         id: 'num_basic_extra_49', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「八月」的正確讀音是？', stem_zh: '「八月」的正確讀音是？',
+        stem: '「八月」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「八月」的正確讀音是？',
         options: [
             { text: 'はちがつ', isCorrect: true, reason: '正確！「八月」讀「はちがつ」。' },
             { text: 'やがつ', isCorrect: false, reason: '月份用音讀。' },
@@ -1553,7 +1553,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はっがつ', isCorrect: false, reason: '「月」前不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八月」讀「はちがつ」。', relatedRules: ['月份の讀法', '八月=はちがつ'] },
+        explanation: { correctRule: '「八月」讀「はちがつ」。', relatedRules: ['月份的讀法', '八月=はちがつ'] },
         sourceItem: { value: 8, kanji: '八月', reading: 'はちがつ' }
     },
     {
@@ -1566,7 +1566,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'くげつ', isCorrect: false, reason: '「月」在月份中讀「がつ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「九月」讀「くがつ」，月份中「九」讀「く」。', trapExplanation: '注意月份中「九」讀「く」，與年齡「きゅう」不同。', relatedRules: ['月份の讀法', '九月=くがつ'] },
+        explanation: { correctRule: '「九月」讀「くがつ」，月份中「九」讀「く」。', trapExplanation: '注意月份中「九」讀「く」，與年齡「きゅう」不同。', relatedRules: ['月份的讀法', '九月=くがつ'] },
         sourceItem: { value: 9, kanji: '九月', reading: 'くがつ' }
     },
     {
@@ -1580,12 +1580,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうげつ', isCorrect: false, reason: '「月」在月份中讀「がつ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「十月」讀「じゅうがつ」。', relatedRules: ['月份の讀法', '十月=じゅうがつ'] },
+        explanation: { correctRule: '「十月」讀「じゅうがつ」。', relatedRules: ['月份的讀法', '十月=じゅうがつ'] },
         sourceItem: { value: 10, kanji: '十月', reading: 'じゅうがつ' }
     },
     {
         id: 'num_basic_extra_52', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「一時」（1點鐘）的正確讀音是？', stem_zh: '「一時」（1點鐘）的正確讀音是？',
+        stem: '「一時」（1時{じ}）の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「一時」（1點鐘）的正確讀音是？',
         options: [
             { text: 'いちじ', isCorrect: true, reason: '正確！「一時」讀「いちじ」。' },
             { text: 'ひとじ', isCorrect: false, reason: '時間用音讀。' },
@@ -1593,7 +1593,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いちとき', isCorrect: false, reason: '「いちとき」是「一時（暫時）」的讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「一時」（1點鐘）讀「いちじ」。', relatedRules: ['時間の讀法', '一時=いちじ'] },
+        explanation: { correctRule: '「一時」（1點鐘）讀「いちじ」。', relatedRules: ['時間的讀法', '一時=いちじ'] },
         sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
     },
     {
@@ -1606,7 +1606,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じじ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「二時」讀「にじ」。', relatedRules: ['時間の讀法', '二時=にじ'] },
+        explanation: { correctRule: '「二時」讀「にじ」。', relatedRules: ['時間的讀法', '二時=にじ'] },
         sourceItem: { value: 2, kanji: '二時', reading: 'にじ' }
     },
     {
@@ -1620,12 +1620,12 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんとき', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三時」讀「さんじ」。', relatedRules: ['時間の讀法', '三時=さんじ'] },
+        explanation: { correctRule: '「三時」讀「さんじ」。', relatedRules: ['時間的讀法', '三時=さんじ'] },
         sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
     },
     {
         id: 'num_basic_extra_55', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
-        stem: '「五時」的正確讀音是？', stem_zh: '「五時」的正確讀音是？',
+        stem: '「五時」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「五時」的正確讀音是？',
         options: [
             { text: 'ごじ', isCorrect: true, reason: '正確！「五時」讀「ごじ」。' },
             { text: 'いつじ', isCorrect: false, reason: '時間用音讀。' },
@@ -1633,7 +1633,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごっじ', isCorrect: false, reason: '「時」前不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五時」讀「ごじ」。', relatedRules: ['時間の讀法', '五時=ごじ'] },
+        explanation: { correctRule: '「五時」讀「ごじ」。', relatedRules: ['時間的讀法', '五時=ごじ'] },
         sourceItem: { value: 5, kanji: '五時', reading: 'ごじ' }
     },
     {
@@ -1646,7 +1646,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ななとき', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「七時」讀「しちじ」，時間中「七」讀「しち」。', relatedRules: ['時間の讀法', '七時=しちじ'] },
+        explanation: { correctRule: '「七時」讀「しちじ」，時間中「七」讀「しち」。', relatedRules: ['時間的讀法', '七時=しちじ'] },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
     {
@@ -1660,7 +1660,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅじ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「九時」讀「くじ」，時間中「九」讀「く」。', relatedRules: ['時間の讀法', '九時=くじ'] },
+        explanation: { correctRule: '「九時」讀「くじ」，時間中「九」讀「く」。', relatedRules: ['時間的讀法', '九時=くじ'] },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
     {
@@ -1673,7 +1673,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: '九分(きゅうふん)', isCorrect: false, reason: '這是正確的讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「四分」讀「よんぷん」，「四」後「分」需要半濁音化。', trapExplanation: '「分」的讀法規則：1/6/8/10促音+ぷん，3/4撥音/長音+ぷん，其他ふん。', relatedRules: ['分の讀法規則'] },
+        explanation: { correctRule: '「四分」讀「よんぷん」，「四」後「分」需要半濁音化。', trapExplanation: '「分」的讀法規則：1/6/8/10促音+ぷん，3/4撥音/長音+ぷん，其他ふん。', relatedRules: ['分的讀法規則'] },
         sourceItem: { value: 4, kanji: '四分', reading: 'よんぷん' }
     },
 
@@ -1692,7 +1692,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さ', isCorrect: false, reason: '需要完整的「さん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三百」讀「さんびゃく」，使用音讀。', relatedRules: ['百位數の讀法'] },
+        explanation: { correctRule: '「三百」讀「さんびゃく」，使用音讀。', relatedRules: ['百位數的讀法'] },
         sourceItem: { value: 3, kanji: '三百', reading: 'さんびゃく' }
     },
     {
@@ -1705,7 +1705,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いつ', isCorrect: false, reason: '需要完整的「いつつ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '一般物品計數使用「〜つ」，「五つ」讀「いつつ」。', trapExplanation: '「〜個」主要用於漢語詞彙。', relatedRules: ['つ量詞の使用'] },
+        explanation: { correctRule: '一般物品計數使用「〜つ」，「五つ」讀「いつつ」。', trapExplanation: '「〜個」主要用於漢語詞彙。', relatedRules: ['つ量詞的使用'] },
         sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
     },
     {
@@ -1718,7 +1718,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'む', isCorrect: false, reason: '「む」是訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六」的音讀是「ろく」。', relatedRules: ['6の發音'] },
+        explanation: { correctRule: '「六」的音讀是「ろく」。', relatedRules: ['6的發音'] },
         sourceItem: { value: 6, kanji: '六', reading: 'ろく' }
     },
     {
@@ -1732,7 +1732,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたこ', isCorrect: false, reason: '沒有這個組合。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「二つ」讀「ふたつ」，用於計數一般物品。', relatedRules: ['つ量詞の使用'] },
+        explanation: { correctRule: '「二つ」讀「ふたつ」，用於計數一般物品。', relatedRules: ['つ量詞的使用'] },
         sourceItem: { value: 2, kanji: '二つ', reading: 'ふたつ' }
     },
     {
@@ -1745,7 +1745,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はっ', isCorrect: false, reason: '獨立使用時不促音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '號碼使用音讀，「八」讀「はち」。', relatedRules: ['號碼の讀法'] },
+        explanation: { correctRule: '號碼使用音讀，「八」讀「はち」。', relatedRules: ['號碼的讀法'] },
         sourceItem: { value: 8, kanji: '八', reading: 'はち' }
     },
     {
@@ -1758,7 +1758,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ない', isCorrect: false, reason: '「ない」表示「沒有」，不是數字0。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「零」可讀「れい」或「ゼロ」。', relatedRules: ['0の讀法'] },
+        explanation: { correctRule: '「零」可讀「れい」或「ゼロ」。', relatedRules: ['0的讀法'] },
         sourceItem: { value: 0, kanji: '零', reading: 'れい' }
     },
     {
@@ -1772,7 +1772,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いっ', isCorrect: false, reason: '「足す」前不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '數學計算使用音讀。', relatedRules: ['數學の讀法'] },
+        explanation: { correctRule: '數學計算使用音讀。', relatedRules: ['數學的讀法'] },
         sourceItem: { value: 1, kanji: '一', reading: 'いち' }
     },
     {
@@ -1785,7 +1785,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'しじん', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「四人」讀「よにん」，「四」後接人用「よ」。', trapExplanation: '「四」在「四人」中讀「よ」，不是「し」或「よん」。', relatedRules: ['人數の讀法'] },
+        explanation: { correctRule: '「四人」讀「よにん」，「四」後接人用「よ」。', trapExplanation: '「四」在「四人」中讀「よ」，不是「し」或「よん」。', relatedRules: ['人數的讀法'] },
         sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
     },
     {
@@ -1798,7 +1798,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっ', isCorrect: false, reason: '這是促音化形式。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十」的音讀是「じゅう」。', relatedRules: ['10の發音'] },
+        explanation: { correctRule: '「十」的音讀是「じゅう」。', relatedRules: ['10的發音'] },
         sourceItem: { value: 10, kanji: '十', reading: 'じゅう' }
     },
     {
@@ -1812,7 +1812,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅ', isCorrect: false, reason: '需要長音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「九歳」讀「きゅうさい」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「九歳」讀「きゅうさい」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 9, kanji: '九歳', reading: 'きゅうさい' }
     },
     {
@@ -1825,7 +1825,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんぴき', isCorrect: false, reason: '是「びき」不是「ぴき」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三匹」讀「さんびき」，濁音化。', relatedRules: ['匹の音變'] },
+        explanation: { correctRule: '「三匹」讀「さんびき」，濁音化。', relatedRules: ['匹的音變'] },
         sourceItem: { value: 3, kanji: '三匹', reading: 'さんびき' }
     },
     {
@@ -1838,7 +1838,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'しち・ななつ', isCorrect: false, reason: '「ななつ」是「七つ」的讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七」可讀「しち」（音讀）或「なな」（訓讀）。', relatedRules: ['7の讀法'] },
+        explanation: { correctRule: '「七」可讀「しち」（音讀）或「なな」（訓讀）。', relatedRules: ['7的讀法'] },
         sourceItem: { value: 7, kanji: '七', reading: 'しち/なな' }
     },
     {
@@ -1852,7 +1852,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'しいじ', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「四時」讀「よじ」。', trapExplanation: '時間的「四」讀「よ」，是特殊讀法。', relatedRules: ['時間の特殊讀法'] },
+        explanation: { correctRule: '「四時」讀「よじ」。', trapExplanation: '時間的「四」讀「よ」，是特殊讀法。', relatedRules: ['時間的特殊讀法'] },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
     {
@@ -1865,7 +1865,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくせつ', isCorrect: false, reason: '是「さつ」不是「せつ」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六冊」讀「ろくさつ」。', relatedRules: ['冊の讀法'] },
+        explanation: { correctRule: '「六冊」讀「ろくさつ」。', relatedRules: ['冊的讀法'] },
         sourceItem: { value: 6, kanji: '六冊', reading: 'ろくさつ' }
     },
     {
@@ -1878,7 +1878,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'は', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八」的訓讀是「や」，如「八百屋（やおや）」。', relatedRules: ['8の讀法'] },
+        explanation: { correctRule: '「八」的訓讀是「や」，如「八百屋（やおや）」。', relatedRules: ['8的讀法'] },
         sourceItem: { value: 8, kanji: '八', reading: 'や' }
     },
     {
@@ -1892,7 +1892,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごっぽん', isCorrect: false, reason: '「五」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五本」讀「ごほん」。', relatedRules: ['本の讀法'] },
+        explanation: { correctRule: '「五本」讀「ごほん」。', relatedRules: ['本的讀法'] },
         sourceItem: { value: 5, kanji: '五本', reading: 'ごほん' }
     },
     {
@@ -1905,7 +1905,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いちばい', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「一枚」讀「いちまい」，不促音化。', trapExplanation: '「一」在「枚」前不促音化。', relatedRules: ['枚の讀法'] },
+        explanation: { correctRule: '「一枚」讀「いちまい」，不促音化。', trapExplanation: '「一」在「枚」前不促音化。', relatedRules: ['枚的讀法'] },
         sourceItem: { value: 1, kanji: '一枚', reading: 'いちまい' }
     },
     {
@@ -1918,7 +1918,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅ・く', isCorrect: false, reason: '是「きゅう」不是「きゅ」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九」的音讀有「きゅう」和「く」兩種。', relatedRules: ['9の讀法'] },
+        explanation: { correctRule: '「九」的音讀有「きゅう」和「く」兩種。', relatedRules: ['9的讀法'] },
         sourceItem: { value: 9, kanji: '九', reading: 'きゅう/く' }
     },
     {
@@ -1932,7 +1932,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じ', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二月」讀「にがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「二月」讀「にがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 2, kanji: '二月', reading: 'にがつ' }
     },
     {
@@ -1945,7 +1945,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いちばい', isCorrect: false, reason: '是「ぱい」不是「ばい」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「一杯」讀「いっぱい」，促音化且半濁音。', trapExplanation: '「一」在「杯」前促音化，且「杯」變「ぱい」。', relatedRules: ['杯の讀法'] },
+        explanation: { correctRule: '「一杯」讀「いっぱい」，促音化且半濁音。', trapExplanation: '「一」在「杯」前促音化，且「杯」變「ぱい」。', relatedRules: ['杯的讀法'] },
         sourceItem: { value: 1, kanji: '一杯', reading: 'いっぱい' }
     },
     {
@@ -1958,7 +1958,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よつ', isCorrect: false, reason: '「よつ」是「四つ」的讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四」的訓讀是「よ」，如「四日（よっか）」。', relatedRules: ['4の讀法'] },
+        explanation: { correctRule: '「四」的訓讀是「よ」，如「四日（よっか）」。', relatedRules: ['4的讀法'] },
         sourceItem: { value: 4, kanji: '四', reading: 'よ' }
     },
     {
@@ -1972,7 +1972,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はっつ', isCorrect: false, reason: '不用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八つ」讀「やっつ」。', relatedRules: ['つ量詞の讀法'] },
+        explanation: { correctRule: '「八つ」讀「やっつ」。', relatedRules: ['つ量詞的讀法'] },
         sourceItem: { value: 8, kanji: '八つ', reading: 'やっつ' }
     },
     {
@@ -1985,7 +1985,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっ', isCorrect: true, reason: '「じっだん」也正確。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「十段」讀「じゅっだん」或「じっだん」。', relatedRules: ['10の促音化'] },
+        explanation: { correctRule: '「十段」讀「じゅっだん」或「じっだん」。', relatedRules: ['10的促音化'] },
         sourceItem: { value: 10, kanji: '十段', reading: 'じゅっだん' }
     },
     {
@@ -1998,7 +1998,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さ', isCorrect: false, reason: '需要完整的「さん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三人」讀「さんにん」。', trapExplanation: '「人」前用音讀，不用訓讀「み」。', relatedRules: ['人數の讀法'] },
+        explanation: { correctRule: '「三人」讀「さんにん」。', trapExplanation: '「人」前用音讀，不用訓讀「み」。', relatedRules: ['人數的讀法'] },
         sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
     },
     {
@@ -2012,7 +2012,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっつ', isCorrect: false, reason: '不用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六つ」讀「むっつ」。', trapExplanation: '「〜つ」量詞用訓讀。', relatedRules: ['つ量詞の讀法'] },
+        explanation: { correctRule: '「六つ」讀「むっつ」。', trapExplanation: '「〜つ」量詞用訓讀。', relatedRules: ['つ量詞的讀法'] },
         sourceItem: { value: 6, kanji: '六つ', reading: 'むっつ' }
     },
     {
@@ -2025,7 +2025,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ひち', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「七階」可讀「しちかい」或「ななかい」。', relatedRules: ['7の讀法'] },
+        explanation: { correctRule: '「七階」可讀「しちかい」或「ななかい」。', relatedRules: ['7的讀法'] },
         sourceItem: { value: 7, kanji: '七階', reading: 'しちかい' }
     },
     {
@@ -2038,7 +2038,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'い', isCorrect: false, reason: '需要促音。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「一本」讀「いっぽん」，促音化且半濁音。', relatedRules: ['本の讀法'] },
+        explanation: { correctRule: '「一本」讀「いっぽん」，促音化且半濁音。', relatedRules: ['本的讀法'] },
         sourceItem: { value: 1, kanji: '一本', reading: 'いっぽん' }
     },
     {
@@ -2052,7 +2052,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごう', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五名」讀「ごめい」。', relatedRules: ['名の讀法'] },
+        explanation: { correctRule: '「五名」讀「ごめい」。', relatedRules: ['名的讀法'] },
         sourceItem: { value: 5, kanji: '五名', reading: 'ごめい' }
     },
     {
@@ -2065,7 +2065,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みっかい', isCorrect: false, reason: '不用訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三回」讀「さんかい」。', trapExplanation: '「回」前用音讀，不用訓讀。', relatedRules: ['回の讀法'] },
+        explanation: { correctRule: '「三回」讀「さんかい」。', trapExplanation: '「回」前用音讀，不用訓讀。', relatedRules: ['回的讀法'] },
         sourceItem: { value: 3, kanji: '三回', reading: 'さんかい' }
     },
     {
@@ -2078,7 +2078,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にっ', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二人」讀「ふたり」，是特殊訓讀。', relatedRules: ['人數の特殊讀法'] },
+        explanation: { correctRule: '「二人」讀「ふたり」，是特殊訓讀。', relatedRules: ['人數的特殊讀法'] },
         sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
     },
     {
@@ -2092,7 +2092,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっ', isCorrect: false, reason: '「六時」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六時」讀「ろくじ」。', relatedRules: ['時間の讀法'] },
+        explanation: { correctRule: '「六時」讀「ろくじ」。', relatedRules: ['時間的讀法'] },
         sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
     },
     {
@@ -2105,7 +2105,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はっ', isCorrect: false, reason: '「八番目」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八番目」讀「はちばんめ」。', relatedRules: ['序數の讀法'] },
+        explanation: { correctRule: '「八番目」讀「はちばんめ」。', relatedRules: ['序數的讀法'] },
         sourceItem: { value: 8, kanji: '八番目', reading: 'はちばんめ' }
     },
     {
@@ -2118,7 +2118,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっ', isCorrect: true, reason: '「じっぽん」也正確。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十本」讀「じゅっぽん」或「じっぽん」。', trapExplanation: '「十」在「本」前促音化。', relatedRules: ['本の讀法'] },
+        explanation: { correctRule: '「十本」讀「じゅっぽん」或「じっぽん」。', trapExplanation: '「十」在「本」前促音化。', relatedRules: ['本的讀法'] },
         sourceItem: { value: 10, kanji: '十本', reading: 'じゅっぽん' }
     },
     {
@@ -2132,7 +2132,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さ', isCorrect: false, reason: '需要「さん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三歳」讀「さんさい」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「三歳」讀「さんさい」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 3, kanji: '三歳', reading: 'さんさい' }
     },
     {
@@ -2145,7 +2145,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いちびき', isCorrect: false, reason: '不是這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「一匹」讀「いっぴき」。', trapExplanation: '「一」在「匹」前促音化，且「匹」變「ぴき」。', relatedRules: ['匹の讀法'] },
+        explanation: { correctRule: '「一匹」讀「いっぴき」。', trapExplanation: '「一」在「匹」前促音化，且「匹」變「ぴき」。', relatedRules: ['匹的讀法'] },
         sourceItem: { value: 1, kanji: '一匹', reading: 'いっぴき' }
     },
     {
@@ -2158,7 +2158,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'むっ', isCorrect: false, reason: '不用訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六匹」讀「ろっぴき」。', relatedRules: ['匹の讀法'] },
+        explanation: { correctRule: '「六匹」讀「ろっぴき」。', relatedRules: ['匹的讀法'] },
         sourceItem: { value: 6, kanji: '六匹', reading: 'ろっぴき' }
     },
     {
@@ -2172,7 +2172,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にっ', isCorrect: false, reason: '「二千」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二千」讀「にせん」。', relatedRules: ['千の讀法'] },
+        explanation: { correctRule: '「二千」讀「にせん」。', relatedRules: ['千的讀法'] },
         sourceItem: { value: 2, kanji: '二千', reading: 'にせん' }
     },
     {
@@ -2185,7 +2185,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっまい', isCorrect: false, reason: '「枚」前不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十枚」讀「じゅうまい」。', relatedRules: ['枚の讀法'] },
+        explanation: { correctRule: '「十枚」讀「じゅうまい」。', relatedRules: ['枚的讀法'] },
         sourceItem: { value: 10, kanji: '十枚', reading: 'じゅうまい' }
     },
     {
@@ -2198,7 +2198,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やっ', isCorrect: false, reason: '不用訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八本」讀「はっぽん」。', trapExplanation: '「八」在「本」前促音化，且「本」變「ぽん」。', relatedRules: ['本の讀法'] },
+        explanation: { correctRule: '「八本」讀「はっぽん」。', trapExplanation: '「八」在「本」前促音化，且「本」變「ぽん」。', relatedRules: ['本的讀法'] },
         sourceItem: { value: 8, kanji: '八本', reading: 'はっぽん' }
     },
     {
@@ -2212,7 +2212,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここつ', isCorrect: false, reason: '需要「ここのつ」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九つ」讀「ここのつ」。', relatedRules: ['つ量詞の讀法'] },
+        explanation: { correctRule: '「九つ」讀「ここのつ」。', relatedRules: ['つ量詞的讀法'] },
         sourceItem: { value: 9, kanji: '九つ', reading: 'ここのつ' }
     },
     {
@@ -2225,7 +2225,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごう', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五段」讀「ごだん」。', relatedRules: ['段の讀法'] },
+        explanation: { correctRule: '「五段」讀「ごだん」。', relatedRules: ['段的讀法'] },
         sourceItem: { value: 5, kanji: '五段', reading: 'ごだん' }
     },
     {
@@ -2238,7 +2238,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: '三杯(みはい)', isCorrect: false, reason: '「杯」用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三杯」讀「さんばい」。', trapExplanation: '「杯」的讀法：1/6/8/10→っぱい，3→ばい，其他→はい。', relatedRules: ['杯の讀法規則'] },
+        explanation: { correctRule: '「三杯」讀「さんばい」。', trapExplanation: '「杯」的讀法：1/6/8/10→っぱい，3→ばい，其他→はい。', relatedRules: ['杯的讀法規則'] },
         sourceItem: { value: 3, kanji: '三杯', reading: 'さんばい' }
     },
 
@@ -2254,7 +2254,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとひ', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「一日」作為日期讀「ついたち」。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '「一日」作為日期讀「ついたち」。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
     },
     {
@@ -2267,7 +2267,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくぷん', isCorrect: false, reason: '需要促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六分」讀「ろっぷん」。', trapExplanation: '「六」在「分」前促音化，且「分」變「ぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「六分」讀「ろっぷん」。', trapExplanation: '「六」在「分」前促音化，且「分」變「ぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 6, kanji: '六分', reading: 'ろっぷん' }
     },
     {
@@ -2280,7 +2280,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'と', isCorrect: false, reason: '需要「とお」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十日」讀「とおか」。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '「十日」讀「とおか」。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
     },
     {
@@ -2294,7 +2294,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よっ', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四年生」讀「よねんせい」。', relatedRules: ['年級の讀法'] },
+        explanation: { correctRule: '「四年生」讀「よねんせい」。', relatedRules: ['年級的讀法'] },
         sourceItem: { value: 4, kanji: '四年生', reading: 'よねんせい' }
     },
     {
@@ -2307,7 +2307,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのほん', isCorrect: false, reason: '不是「なの」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七本」讀「ななほん」。', relatedRules: ['本の讀法'] },
+        explanation: { correctRule: '「七本」讀「ななほん」。', relatedRules: ['本的讀法'] },
         sourceItem: { value: 7, kanji: '七本', reading: 'ななほん' }
     },
     {
@@ -2320,7 +2320,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ひ', isCorrect: false, reason: '需要「ひと」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「一人」讀「ひとり」。', trapExplanation: '「一人」和「二人」是特殊訓讀。', relatedRules: ['人數の特殊讀法'] },
+        explanation: { correctRule: '「一人」讀「ひとり」。', trapExplanation: '「一人」和「二人」是特殊訓讀。', relatedRules: ['人數的特殊讀法'] },
         sourceItem: { value: 1, kanji: '一人', reading: 'ひとり' }
     },
     {
@@ -2334,7 +2334,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にっ', isCorrect: false, reason: '「二枚」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二枚」讀「にまい」。', relatedRules: ['枚の讀法'] },
+        explanation: { correctRule: '「二枚」讀「にまい」。', relatedRules: ['枚的讀法'] },
         sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
     },
     {
@@ -2347,7 +2347,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やっ', isCorrect: false, reason: '不用訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八階」讀「はっかい」。', trapExplanation: '「八」在「階」前促音化。', relatedRules: ['階の讀法'] },
+        explanation: { correctRule: '「八階」讀「はっかい」。', trapExplanation: '「八」在「階」前促音化。', relatedRules: ['階的讀法'] },
         sourceItem: { value: 8, kanji: '八階', reading: 'はっかい' }
     },
     {
@@ -2360,7 +2360,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さ', isCorrect: false, reason: '需要「さん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三月」讀「さんがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「三月」讀「さんがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 3, kanji: '三月', reading: 'さんがつ' }
     },
     {
@@ -2374,7 +2374,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっ', isCorrect: true, reason: '「じってん」也正確。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十点」讀「じゅってん」或「じってん」。', relatedRules: ['点の讀法'] },
+        explanation: { correctRule: '「十点」讀「じゅってん」或「じってん」。', relatedRules: ['点的讀法'] },
         sourceItem: { value: 10, kanji: '十点', reading: 'じゅってん' }
     },
     {
@@ -2387,7 +2387,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いつたり', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五人」讀「ごにん」。', relatedRules: ['人數の讀法'] },
+        explanation: { correctRule: '「五人」讀「ごにん」。', relatedRules: ['人數的讀法'] },
         sourceItem: { value: 5, kanji: '五人', reading: 'ごにん' }
     },
     {
@@ -2400,7 +2400,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっ', isCorrect: false, reason: '不用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六日」讀「むいか」。', trapExplanation: '日期1-10日都有特殊讀法。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '「六日」讀「むいか」。', trapExplanation: '日期1-10日都有特殊讀法。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
     },
     {
@@ -2414,7 +2414,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんほん', isCorrect: false, reason: '「三」後「本」濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三本」讀「さんぼん」。', relatedRules: ['本の讀法'] },
+        explanation: { correctRule: '「三本」讀「さんぼん」。', relatedRules: ['本的讀法'] },
         sourceItem: { value: 3, kanji: '三本', reading: 'さんぼん' }
     },
     {
@@ -2427,7 +2427,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅ', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九月」讀「くがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「九月」讀「くがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 9, kanji: '九月', reading: 'くがつ' }
     },
     {
@@ -2440,7 +2440,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なん', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七日」讀「なのか」。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '「七日」讀「なのか」。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 7, kanji: '七日', reading: 'なのか' }
     },
     {
@@ -2454,7 +2454,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとつ', isCorrect: false, reason: '「台」不用「つ」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「一台」讀「いちだい」。', trapExplanation: '「一」在「台」前不促音化。', relatedRules: ['台の讀法'] },
+        explanation: { correctRule: '「一台」讀「いちだい」。', trapExplanation: '「一」在「台」前不促音化。', relatedRules: ['台的讀法'] },
         sourceItem: { value: 1, kanji: '一台', reading: 'いちだい' }
     },
     {
@@ -2467,7 +2467,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にっ', isCorrect: false, reason: '不用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二日」讀「ふつか」。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '「二日」讀「ふつか」。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
     },
     {
@@ -2480,7 +2480,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よっ', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四月」讀「しがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「四月」讀「しがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 4, kanji: '四月', reading: 'しがつ' }
     },
     {
@@ -2494,7 +2494,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なん', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七歳」讀「ななさい」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「七歳」讀「ななさい」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 7, kanji: '七歳', reading: 'ななさい' }
     },
     {
@@ -2507,7 +2507,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にっ', isCorrect: false, reason: '「二時間」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二時間」讀「にじかん」。', trapExplanation: '「時間」用音讀，不用訓讀。', relatedRules: ['時間の讀法'] },
+        explanation: { correctRule: '「二時間」讀「にじかん」。', trapExplanation: '「時間」用音讀，不用訓讀。', relatedRules: ['時間的讀法'] },
         sourceItem: { value: 2, kanji: '二時間', reading: 'にじかん' }
     },
     {
@@ -2520,7 +2520,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はっ', isCorrect: false, reason: '不用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八日」讀「ようか」。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '「八日」讀「ようか」。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
     },
     {
@@ -2534,7 +2534,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よっ', isCorrect: false, reason: '「四回」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四回」讀「よんかい」。', relatedRules: ['回の讀法'] },
+        explanation: { correctRule: '「四回」讀「よんかい」。', relatedRules: ['回的讀法'] },
         sourceItem: { value: 4, kanji: '四回', reading: 'よんかい' }
     },
     {
@@ -2547,7 +2547,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっ', isCorrect: false, reason: '「六月」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六月」讀「ろくがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「六月」讀「ろくがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 6, kanji: '六月', reading: 'ろくがつ' }
     },
     {
@@ -2560,7 +2560,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さ', isCorrect: false, reason: '不用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三日」讀「みっか」。', trapExplanation: '日期1-10日都有特殊讀法。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '「三日」讀「みっか」。', trapExplanation: '日期1-10日都有特殊讀法。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
     {
@@ -2574,7 +2574,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はっ', isCorrect: false, reason: '「八十」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十」讀「はちじゅう」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「八十」讀「はちじゅう」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 8, kanji: '八十', reading: 'はちじゅう' }
     },
     {
@@ -2587,7 +2587,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっ', isCorrect: true, reason: '「じっぱ」也正確。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十羽」讀「じゅっぱ」或「じっぱ」。', relatedRules: ['羽の讀法'] },
+        explanation: { correctRule: '「十羽」讀「じゅっぱ」或「じっぱ」。', relatedRules: ['羽的讀法'] },
         sourceItem: { value: 10, kanji: '十羽', reading: 'じゅっぱ' }
     },
     {
@@ -2600,7 +2600,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅ', isCorrect: false, reason: '不用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九日」讀「ここのか」。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '「九日」讀「ここのか」。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
     },
     {
@@ -2614,7 +2614,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅ', isCorrect: false, reason: '需要長音。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十」讀「きゅうじゅう」。', trapExplanation: '「九」在十位數用「きゅう」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「九十」讀「きゅうじゅう」。', trapExplanation: '「九」在十位數用「きゅう」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 9, kanji: '九十', reading: 'きゅうじゅう' }
     },
     {
@@ -2627,7 +2627,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さ', isCorrect: false, reason: '需要「さん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三月」讀「さんがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「三月」讀「さんがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 3, kanji: '三月', reading: 'さんがつ' }
     },
     {
@@ -2640,7 +2640,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごう', isCorrect: false, reason: '不用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五日」讀「いつか」。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '「五日」讀「いつか」。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
     },
     {
@@ -2654,7 +2654,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'と', isCorrect: false, reason: '需要「とお」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十」的訓讀是「とお」。', relatedRules: ['10の讀法'] },
+        explanation: { correctRule: '「十」的訓讀是「とお」。', relatedRules: ['10的讀法'] },
         sourceItem: { value: 10, kanji: '十', reading: 'とお' }
     },
     {
@@ -2667,7 +2667,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'むっ', isCorrect: false, reason: '不用訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六羽」讀「ろっぱ」。', trapExplanation: '「六」在「羽」前促音化，且「羽」變「ぱ」。', relatedRules: ['羽の讀法'] },
+        explanation: { correctRule: '「六羽」讀「ろっぱ」。', trapExplanation: '「六」在「羽」前促音化，且「羽」變「ぱ」。', relatedRules: ['羽的讀法'] },
         sourceItem: { value: 6, kanji: '六羽', reading: 'ろっぱ' }
     },
     {
@@ -2680,7 +2680,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よん', isCorrect: false, reason: '不用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四日」讀「よっか」。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '「四日」讀「よっか」。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
     },
     {
@@ -2694,7 +2694,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっ', isCorrect: false, reason: '「十月」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十月」讀「じゅうがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「十月」讀「じゅうがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 10, kanji: '十月', reading: 'じゅうがつ' }
     },
     {
@@ -2707,7 +2707,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのほん', isCorrect: false, reason: '不是「なの」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七本」讀「ななほん」。', relatedRules: ['本の讀法'] },
+        explanation: { correctRule: '「七本」讀「ななほん」。', relatedRules: ['本的讀法'] },
         sourceItem: { value: 7, kanji: '七本', reading: 'ななほん' }
     },
     {
@@ -2720,7 +2720,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ひ', isCorrect: false, reason: '不用訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「一月」讀「いちがつ」。', trapExplanation: '月份用音讀，不用訓讀。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「一月」讀「いちがつ」。', trapExplanation: '月份用音讀，不用訓讀。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 1, kanji: '一月', reading: 'いちがつ' }
     },
     {
@@ -2734,7 +2734,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごう', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五百」讀「ごひゃく」。', relatedRules: ['百位數の讀法'] },
+        explanation: { correctRule: '「五百」讀「ごひゃく」。', relatedRules: ['百位數的讀法'] },
         sourceItem: { value: 5, kanji: '五百', reading: 'ごひゃく' }
     },
     {
@@ -2747,7 +2747,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとつ', isCorrect: false, reason: '「羽」不用「つ」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「一羽」讀「いちわ」。', trapExplanation: '「一」在「羽」前不促音化。', relatedRules: ['羽の讀法'] },
+        explanation: { correctRule: '「一羽」讀「いちわ」。', trapExplanation: '「一」在「羽」前不促音化。', relatedRules: ['羽的讀法'] },
         sourceItem: { value: 1, kanji: '一羽', reading: 'いちわ' }
     },
     {
@@ -2760,7 +2760,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なん', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七月」讀「しちがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「七月」讀「しちがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 7, kanji: '七月', reading: 'しちがつ' }
     },
     {
@@ -2774,7 +2774,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふ', isCorrect: false, reason: '不用訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二匹」讀「にひき」。', relatedRules: ['匹の讀法'] },
+        explanation: { correctRule: '「二匹」讀「にひき」。', relatedRules: ['匹的讀法'] },
         sourceItem: { value: 2, kanji: '二匹', reading: 'にひき' }
     },
     {
@@ -2787,7 +2787,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はっ', isCorrect: false, reason: '「八月」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八月」讀「はちがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「八月」讀「はちがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 8, kanji: '八月', reading: 'はちがつ' }
     },
     {
@@ -2800,7 +2800,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっ', isCorrect: false, reason: '「六月」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六月」讀「ろくがつ」。', trapExplanation: '月份用音讀，不用訓讀。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「六月」讀「ろくがつ」。', trapExplanation: '月份用音讀，不用訓讀。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 6, kanji: '六月', reading: 'ろくがつ' }
     },
     {
@@ -2814,7 +2814,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いつつ', isCorrect: false, reason: '不用訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五分」讀「ごふん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「五分」讀「ごふん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 5, kanji: '五分', reading: 'ごふん' }
     },
     {
@@ -2827,7 +2827,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よっ', isCorrect: false, reason: '「四匹」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四匹」讀「よんひき」。', relatedRules: ['匹の讀法'] },
+        explanation: { correctRule: '「四匹」讀「よんひき」。', relatedRules: ['匹的讀法'] },
         sourceItem: { value: 4, kanji: '四匹', reading: 'よんひき' }
     },
     {
@@ -2840,7 +2840,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にっ', isCorrect: false, reason: '「二月」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二月」讀「にがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「二月」讀「にがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 2, kanji: '二月', reading: 'にがつ' }
     },
     {
@@ -2854,7 +2854,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちぷん', isCorrect: false, reason: '需要促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八分」讀「はっぷん」。', trapExplanation: '「八」在「分」前促音化，且「分」變「ぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「八分」讀「はっぷん」。', trapExplanation: '「八」在「分」前促音化，且「分」變「ぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 8, kanji: '八分', reading: 'はっぷん' }
     },
     {
@@ -2867,7 +2867,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よっ', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四月」讀「しがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「四月」讀「しがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 4, kanji: '四月', reading: 'しがつ' }
     },
     {
@@ -2880,7 +2880,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごう', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五月」讀「ごがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「五月」讀「ごがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 5, kanji: '五月', reading: 'ごがつ' }
     },
     {
@@ -2894,7 +2894,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅっ', isCorrect: false, reason: '「九本」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九本」讀「きゅうほん」。', relatedRules: ['本の讀法'] },
+        explanation: { correctRule: '「九本」讀「きゅうほん」。', relatedRules: ['本的讀法'] },
         sourceItem: { value: 9, kanji: '九本', reading: 'きゅうほん' }
     },
     {
@@ -2907,7 +2907,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さ', isCorrect: false, reason: '需要「さん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三羽」讀「さんわ」或「さんば」。', trapExplanation: '「羽」用音讀，不用訓讀。', relatedRules: ['羽の讀法'] },
+        explanation: { correctRule: '「三羽」讀「さんわ」或「さんば」。', trapExplanation: '「羽」用音讀，不用訓讀。', relatedRules: ['羽的讀法'] },
         sourceItem: { value: 3, kanji: '三羽', reading: 'さんわ' }
     },
     {
@@ -2920,7 +2920,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はっ', isCorrect: false, reason: '「八月」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八月」讀「はちがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「八月」讀「はちがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 8, kanji: '八月', reading: 'はちがつ' }
     },
     {
@@ -2934,7 +2934,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なん', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七冊」讀「ななさつ」。', relatedRules: ['冊の讀法'] },
+        explanation: { correctRule: '「七冊」讀「ななさつ」。', relatedRules: ['冊的讀法'] },
         sourceItem: { value: 7, kanji: '七冊', reading: 'ななさつ' }
     },
     {
@@ -2947,7 +2947,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'むっ', isCorrect: false, reason: '不用訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六回」讀「ろっかい」。', relatedRules: ['回の讀法'] },
+        explanation: { correctRule: '「六回」讀「ろっかい」。', relatedRules: ['回的讀法'] },
         sourceItem: { value: 6, kanji: '六回', reading: 'ろっかい' }
     },
     {
@@ -2960,7 +2960,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅ', isCorrect: false, reason: '沒有這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九月」讀「くがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「九月」讀「くがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 9, kanji: '九月', reading: 'くがつ' }
     },
     {
@@ -2974,7 +2974,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっぷん', isCorrect: true, reason: '「じっぷん」也正確。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十分」讀「じゅっぷん」或「じっぷん」。', trapExplanation: '「十」在「分」前促音化，且「分」變「ぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「十分」讀「じゅっぷん」或「じっぷん」。', trapExplanation: '「十」在「分」前促音化，且「分」變「ぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 10, kanji: '十分', reading: 'じゅっぷん' }
     },
     {
@@ -2987,7 +2987,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっいち', isCorrect: false, reason: '「十一月」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十一月」讀「じゅういちがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「十一月」讀「じゅういちがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 11, kanji: '十一月', reading: 'じゅういちがつ' }
     },
     {
@@ -3000,7 +3000,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっに', isCorrect: false, reason: '「十二」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十二」讀「じゅうに」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「十二」讀「じゅうに」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 12, kanji: '十二', reading: 'じゅうに' }
     },
     {
@@ -3014,7 +3014,7 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっに', isCorrect: false, reason: '「十二月」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十二月」讀「じゅうにがつ」。', relatedRules: ['月份の讀法'] },
+        explanation: { correctRule: '「十二月」讀「じゅうにがつ」。', relatedRules: ['月份的讀法'] },
         sourceItem: { value: 12, kanji: '十二月', reading: 'じゅうにがつ' }
     }
 ];

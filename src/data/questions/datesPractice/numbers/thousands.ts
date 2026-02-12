@@ -12,18 +12,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「千」的正確讀音是？',
+        stem: '「千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「千」的正確讀音是？',
         options: [
-            { text: 'せん', isCorrect: true, reason: '正確{せいかく}！「千{せん}」讀作{どくさ}「せん」。' },
-            { text: 'ち', isCorrect: false, reason: '「ち」是訓讀{くんどく}，數字{すうじ}使用{しよう}する音讀{おんどく}「せん」。' },
-            { text: 'いちせん', isCorrect: false, reason: '「千{せん}」單獨{たんどく}時{とき}通常{つうじょう}省略{しょうりゃく}「いち」。' },
-            { text: 'ぜん', isCorrect: false, reason: '「千{せん}」單獨{たんどく}使用{しよう}時{とき}不濁音化{ふだくおんか}。' }
+            { text: 'せん', isCorrect: true, reason: '正確！「千{せん}」讀作「せん」。' },
+            { text: 'ち', isCorrect: false, reason: '「ち」是訓讀，數字使用音讀「せん」。' },
+            { text: 'いちせん', isCorrect: false, reason: '「千{せん}」單獨時通常省略「いち」。' },
+            { text: 'ぜん', isCorrect: false, reason: '「千{せん}」單獨使用時不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「千{せん}」讀作{どくさ}「せん」，通常{つうじょう}省略{しょうりゃく}「一{いち}」。',
-            relatedRules: ['千{せん}の基本{きほん}讀法{よみかた}', '千位數{せんいすう}の發音{はつおん}']
+            correctRule: '「千{せん}」讀作「せん」，通常省略「一」。',
+            relatedRules: ['千{せん}的基本讀法', '千位數的發音']
         },
         sourceItem: { value: 1000, kanji: '千', reading: 'せん' }
     },
@@ -36,15 +36,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書一千日圓。',
         options: [
-            { text: 'せんえん', isCorrect: true, reason: '正確{せいかく}！「千円{せんえん}」讀作{どくさ}「せんえん」。' },
-            { text: 'いちせんえん', isCorrect: false, reason: '通常{つうじょう}省略{しょうりゃく}「いち」，直接{ちょくせつ}說{いう}「せん」。' },
-            { text: 'いっせんえん', isCorrect: false, reason: '「一{いち}」通常{つうじょう}省略{しょうりゃく}，且不促音化{ふそくおんか}。' },
-            { text: 'ぜんえん', isCorrect: false, reason: '「千{せん}」不濁音化{ふだくおんか}。' }
+            { text: 'せんえん', isCorrect: true, reason: '正確！「千円{せんえん}」讀作「せんえん」。' },
+            { text: 'いちせんえん', isCorrect: false, reason: '通常省略「いち」，直接說「せん」。' },
+            { text: 'いっせんえん', isCorrect: false, reason: '「一」通常省略，且不促音化。' },
+            { text: 'ぜんえん', isCorrect: false, reason: '「千{せん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「千円{せんえん}」通常{つうじょう}省略{しょうりゃく}「一{いち}」，直接{ちょくせつ}說{いう}「せん」。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '千{せん}の省略{しょうりゃく}規則{きそく}']
+            correctRule: '「千円{せんえん}」通常省略「一」，直接說「せん」。',
+            relatedRules: ['金額的表達', '千{せん}の省略規則']
         },
         sourceItem: { value: 1000, kanji: '千円', reading: 'せんえん' }
     },
@@ -61,15 +61,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（一千日圓）'
         },
         options: [
-            { text: 'せんえん', isCorrect: true, reason: '正確{せいかく}！「千円{せんえん}」讀作{どくさ}「せんえん」。' },
-            { text: 'いちせんえん', isCorrect: false, reason: '通常{つうじょう}省略{しょうりゃく}「いち」。' },
-            { text: 'いっせんえん', isCorrect: false, reason: '「一{いち}」不促音化{ふそくおんか}。' },
-            { text: 'ちえん', isCorrect: false, reason: '數字{すうじ}使用{しよう}する音讀{おんどく}「せん」。' }
+            { text: 'せんえん', isCorrect: true, reason: '正確！「千円{せんえん}」讀作「せんえん」。' },
+            { text: 'いちせんえん', isCorrect: false, reason: '通常省略「いち」。' },
+            { text: 'いっせんえん', isCorrect: false, reason: '「一」不促音化。' },
+            { text: 'ちえん', isCorrect: false, reason: '數字使用音讀「せん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「千円{せんえん}」是常見{じょうけん}の紙幣{しへい}金額{きんがく}。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '千{せん}の使用{しよう}']
+            correctRule: '「千円{せんえん}」是常見の紙幣金額。',
+            relatedRules: ['金額的表達', '千{せん}的使用']
         },
         sourceItem: { value: 1000, kanji: '千円', reading: 'せんえん' }
     },
@@ -81,18 +81,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二千」的正確讀音是？',
+        stem: '「二千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二千」的正確讀音是？',
         options: [
-            { text: 'にせん', isCorrect: true, reason: '正確{せいかく}！「二千{にせん}」讀作{どくさ}「にせん」。' },
-            { text: 'ふたせん', isCorrect: false, reason: '組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}「に」。' },
-            { text: 'にぜん', isCorrect: false, reason: '「二千{にせん}」不濁音化{ふだくおんか}。' },
-            { text: 'ふたち', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「に」和「せん」。' }
+            { text: 'にせん', isCorrect: true, reason: '正確！「二千{にせん}」讀作「にせん」。' },
+            { text: 'ふたせん', isCorrect: false, reason: '組合數字使用音讀「に」。' },
+            { text: 'にぜん', isCorrect: false, reason: '「二千{にせん}」不濁音化。' },
+            { text: 'ふたち', isCorrect: false, reason: '使用音讀「に」和「せん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二千{にせん}」讀作{どくさ}「にせん」，無{ない}音變{おんへん}。',
-            relatedRules: ['千位數{せんいすう}の讀法{よみかた}', '2000の發音{はつおん}']
+            correctRule: '「二千{にせん}」讀作「にせん」，無音變。',
+            relatedRules: ['千位數的讀法', '2000的發音']
         },
         sourceItem: { value: 2000, kanji: '二千', reading: 'にせん' }
     },
@@ -105,15 +105,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書兩千日圓。',
         options: [
-            { text: 'にせんえん', isCorrect: true, reason: '正確{せいかく}！「二千円{にせんえん}」讀作{どくさ}「にせんえん」。' },
-            { text: 'ふたせんえん', isCorrect: false, reason: '金額{きんがく}使用{しよう}する音讀{おんどく}「に」。' },
-            { text: 'にぜんえん', isCorrect: false, reason: '「二千{にせん}」不濁音化{ふだくおんか}。' },
-            { text: 'りせんえん', isCorrect: false, reason: '「二{に}」不變{ふへん}「り」。' }
+            { text: 'にせんえん', isCorrect: true, reason: '正確！「二千円{にせんえん}」讀作「にせんえん」。' },
+            { text: 'ふたせんえん', isCorrect: false, reason: '金額使用音讀「に」。' },
+            { text: 'にぜんえん', isCorrect: false, reason: '「二千{にせん}」不濁音化。' },
+            { text: 'りせんえん', isCorrect: false, reason: '「二」不變「り」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二千円{にせんえん}」讀作{どくさ}「にせんえん」。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '2000の發音{はつおん}']
+            correctRule: '「二千円{にせんえん}」讀作「にせんえん」。',
+            relatedRules: ['金額的表達', '2000的發音']
         },
         sourceItem: { value: 2000, kanji: '二千円', reading: 'にせんえん' }
     },
@@ -130,15 +130,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（兩千日圓）'
         },
         options: [
-            { text: 'にせんえん', isCorrect: true, reason: '正確{せいかく}！「二千円{にせんえん}」。' },
-            { text: 'ふたせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「に」。' },
-            { text: 'にぜんえん', isCorrect: false, reason: '不濁音化{ふだくおんか}。' },
-            { text: 'にっせんえん', isCorrect: false, reason: '「二{に}」不促音化{ふそくおんか}。' }
+            { text: 'にせんえん', isCorrect: true, reason: '正確！「二千円{にせんえん}」。' },
+            { text: 'ふたせんえん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にぜんえん', isCorrect: false, reason: '不濁音化。' },
+            { text: 'にっせんえん', isCorrect: false, reason: '「二」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二千円{にせんえん}」讀作{どくさ}「にせんえん」。',
-            relatedRules: ['2000の發音{はつおん}', '金額{きんがく}表達{ひょうたつ}']
+            correctRule: '「二千円{にせんえん}」讀作「にせんえん」。',
+            relatedRules: ['2000的發音', '金額表達']
         },
         sourceItem: { value: 2000, kanji: '二千円', reading: 'にせんえん' }
     },
@@ -150,19 +150,19 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「三千」的正確讀音是？',
+        stem: '「三千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三千」的正確讀音是？',
         options: [
-            { text: 'さんせん', isCorrect: false, reason: '陷阱{かんけい}！「三千{さんぜん}」會濁音化{だくおんか}，讀む{よむ}「さんぜん」。' },
-            { text: 'さんぜん', isCorrect: true, reason: '正確{せいかく}！「三{さん}」の撥音{はつおん}「ん」後面{うしろ}，「せん」濁音化{だくおんか}為「ぜん」。' },
-            { text: 'みせん', isCorrect: false, reason: '組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}「さん」。' },
-            { text: 'みっせん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「さん」，且應{おう}濁音化{だくおんか}。' }
+            { text: 'さんせん', isCorrect: false, reason: '陷阱！「三千{さんぜん}」會濁音化，讀「さんぜん」。' },
+            { text: 'さんぜん', isCorrect: true, reason: '正確！「三{さん}」の撥音「ん」後面，「せん」濁音化為「ぜん」。' },
+            { text: 'みせん', isCorrect: false, reason: '組合數字使用音讀「さん」。' },
+            { text: 'みっせん', isCorrect: false, reason: '使用音讀「さん」，且應濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三千{さんぜん}」中，撥音{はつおん}「ん」後面{うしろ}の「せん」會濁音化{だくおんか}為「ぜん」。這是3引發{いんはつ}濁音化{だくおんか}の規則{きそく}。',
-            trapExplanation: '這是重要{じゅうよう}陷阱題{かんけいだい}，測試{そくし}「三{さん}」引發{いんはつ}の濁音化{だくおんか}規則{きそく}。',
-            relatedRules: ['三{さん}引發{いんはつ}の濁音化{だくおんか}', '撥音{はつおん}後{あと}の音變{おんへん}']
+            correctRule: '「三千{さんぜん}」中，撥音「ん」後面の「せん」會濁音化為「ぜん」。這是3引發濁音化的規則。',
+            trapExplanation: '這是重要陷阱題，測試「三{さん}」引發的濁音化規則。',
+            relatedRules: ['三{さん}引發的濁音化', '撥音後的音變']
         },
         sourceItem: { value: 3000, kanji: '三千', reading: 'さんぜん' }
     },
@@ -175,16 +175,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書三千日圓。',
         options: [
-            { text: 'さんせんえん', isCorrect: false, reason: '陷阱{かんけい}！「三千{さんぜん}」會濁音化{だくおんか}。' },
-            { text: 'さんぜんえん', isCorrect: true, reason: '正確{せいかく}！「三千円{さんぜんえん}」讀作{どくさ}「さんぜんえん」。' },
-            { text: 'みせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「さん」。' },
-            { text: 'みっせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「さん」。' }
+            { text: 'さんせんえん', isCorrect: false, reason: '陷阱！「三千{さんぜん}」會濁音化。' },
+            { text: 'さんぜんえん', isCorrect: true, reason: '正確！「三千円{さんぜんえん}」讀作「さんぜんえん」。' },
+            { text: 'みせんえん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'みっせんえん', isCorrect: false, reason: '使用音讀「さん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三千円{さんぜんえん}」讀作{どくさ}「さんぜんえん」，「せん」濁音化{だくおんか}為「ぜん」。',
-            trapExplanation: '學習者{がくしゅうしゃ}容易{ようい}忽略{こりゃく}濁音化{だくおんか}規則{きそく}。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '3000の濁音化{だくおんか}']
+            correctRule: '「三千円{さんぜんえん}」讀作「さんぜんえん」，「せん」濁音化為「ぜん」。',
+            trapExplanation: '學習者容易忽略濁音化規則。',
+            relatedRules: ['金額的表達', '3000的濁音化']
         },
         sourceItem: { value: 3000, kanji: '三千円', reading: 'さんぜんえん' }
     },
@@ -201,16 +201,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（三千日圓）'
         },
         options: [
-            { text: 'さんせんえん', isCorrect: false, reason: '陷阱{かんけい}！必須{ひっす}濁音化{だくおんか}。' },
-            { text: 'さんぜんえん', isCorrect: true, reason: '正確{せいかく}！「三千円{さんぜんえん}」。' },
-            { text: 'みぜんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「さん」。' },
-            { text: 'さっぜんえん', isCorrect: false, reason: '「三{さん}」不促音化{ふそくおんか}。' }
+            { text: 'さんせんえん', isCorrect: false, reason: '陷阱！必須濁音化。' },
+            { text: 'さんぜんえん', isCorrect: true, reason: '正確！「三千円{さんぜんえん}」。' },
+            { text: 'みぜんえん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さっぜんえん', isCorrect: false, reason: '「三{さん}」不促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三千円{さんぜんえん}」讀作{どくさ}「さんぜんえん」。',
-            trapExplanation: '這是常見{じょうけん}の陷阱{かんけい}，「三{さん}」後面{うしろ}の「せん」必須{ひっす}濁音化{だくおんか}。',
-            relatedRules: ['3000の濁音化{だくおんか}', '金額{きんがく}の發音{はつおん}']
+            correctRule: '「三千円{さんぜんえん}」讀作「さんぜんえん」。',
+            trapExplanation: '這是常見の陷阱，「三{さん}」後面の「せん」必須濁音化。',
+            relatedRules: ['3000的濁音化', '金額的發音']
         },
         sourceItem: { value: 3000, kanji: '三千円', reading: 'さんぜんえん' }
     },
@@ -222,19 +222,19 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「八千」的正確讀音是？',
+        stem: '「八千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「八千」的正確讀音是？',
         options: [
-            { text: 'はちせん', isCorrect: false, reason: '陷阱{かんけい}！「八千{はっせん}」會促音化{そくおんか}，讀む{よむ}「はっせん」。' },
-            { text: 'はっせん', isCorrect: true, reason: '正確{せいかく}！「八{はち}」變成{へんせい}「はっ」，促音化{そくおんか}。' },
-            { text: 'やせん', isCorrect: false, reason: '組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}「はち」。' },
-            { text: 'はちぜん', isCorrect: false, reason: '「八千{はっせん}」是促音化{そくおんか}，不是濁音化{だくおんか}。' }
+            { text: 'はちせん', isCorrect: false, reason: '陷阱！「八千{はっせん}」會促音化，讀「はっせん」。' },
+            { text: 'はっせん', isCorrect: true, reason: '正確！「八{はち}」變成「はっ」，促音化。' },
+            { text: 'やせん', isCorrect: false, reason: '組合數字使用音讀「はち」。' },
+            { text: 'はちぜん', isCorrect: false, reason: '「八千{はっせん}」是促音化，不是濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八千{はっせん}」中，「八{はち}」促音化{そくおんか}為「はっ」。',
-            trapExplanation: '這是重要{じゅうよう}陷阱題{かんけいだい}，測試{そくし}「八{はち}」引發{いんはつ}の促音化{そくおんか}規則{きそく}。',
-            relatedRules: ['八{はち}引發{いんはつ}の促音化{そくおんか}', '千位數{せんいすう}の音變{おんへん}']
+            correctRule: '「八千{はっせん}」中，「八{はち}」促音化為「はっ」。',
+            trapExplanation: '這是重要陷阱題，測試「八{はち}」引發的促音化規則。',
+            relatedRules: ['八{はち}引發的促音化', '千位數的音變']
         },
         sourceItem: { value: 8000, kanji: '八千', reading: 'はっせん' }
     },
@@ -247,16 +247,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書八千日圓。',
         options: [
-            { text: 'はちせんえん', isCorrect: false, reason: '陷阱{かんけい}！「八千{はっせん}」會促音化{そくおんか}。' },
-            { text: 'はっせんえん', isCorrect: true, reason: '正確{せいかく}！「八千円{はっせんえん}」讀作{どくさ}「はっせんえん」。' },
-            { text: 'やっせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「はち」。' },
-            { text: 'はちぜんえん', isCorrect: false, reason: '是促音化{そくおんか}，不是濁音化{だくおんか}。' }
+            { text: 'はちせんえん', isCorrect: false, reason: '陷阱！「八千{はっせん}」會促音化。' },
+            { text: 'はっせんえん', isCorrect: true, reason: '正確！「八千円{はっせんえん}」讀作「はっせんえん」。' },
+            { text: 'やっせんえん', isCorrect: false, reason: '使用音讀「はち」。' },
+            { text: 'はちぜんえん', isCorrect: false, reason: '是促音化，不是濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八千円{はっせんえん}」讀作{どくさ}「はっせんえん」，「はち」促音化{そくおんか}為「はっ」。',
-            trapExplanation: '學習者{がくしゅうしゃ}容易{ようい}忽略{こりゃく}促音化{そくおんか}規則{きそく}。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '8000の促音化{そくおんか}']
+            correctRule: '「八千円{はっせんえん}」讀作「はっせんえん」，「はち」促音化為「はっ」。',
+            trapExplanation: '學習者容易忽略促音化規則。',
+            relatedRules: ['金額的表達', '8000的促音化']
         },
         sourceItem: { value: 8000, kanji: '八千円', reading: 'はっせんえん' }
     },
@@ -273,16 +273,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（八千日圓）'
         },
         options: [
-            { text: 'はちせんえん', isCorrect: false, reason: '陷阱{かんけい}！必須{ひっす}促音化{そくおんか}。' },
-            { text: 'はっせんえん', isCorrect: true, reason: '正確{せいかく}！「八千円{はっせんえん}」。' },
-            { text: 'やっせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「はち」→「はっ」。' },
-            { text: 'はちぜんえん', isCorrect: false, reason: '是促音化{そくおんか}，不是濁音化{だくおんか}。' }
+            { text: 'はちせんえん', isCorrect: false, reason: '陷阱！必須促音化。' },
+            { text: 'はっせんえん', isCorrect: true, reason: '正確！「八千円{はっせんえん}」。' },
+            { text: 'やっせんえん', isCorrect: false, reason: '使用音讀「はち」→「はっ」。' },
+            { text: 'はちぜんえん', isCorrect: false, reason: '是促音化，不是濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八千円{はっせんえん}」讀作{どくさ}「はっせんえん」。',
-            trapExplanation: '這是常見{じょうけん}の陷阱{かんけい}。',
-            relatedRules: ['8000の促音化{そくおんか}', '金額{きんがく}の發音{はつおん}']
+            correctRule: '「八千円{はっせんえん}」讀作「はっせんえん」。',
+            trapExplanation: '這是常見の陷阱。',
+            relatedRules: ['8000的促音化', '金額的發音']
         },
         sourceItem: { value: 8000, kanji: '八千円', reading: 'はっせんえん' }
     },
@@ -294,19 +294,19 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「一万」的正確讀音是？',
+        stem: '「一万」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一萬」的正確讀音是？',
         options: [
-            { text: 'まん', isCorrect: false, reason: '陷阱{かんけい}！「一万{いちまん}」必須{ひっす}加{か}「いち」，不能{ふのう}省略{しょうりゃく}。' },
-            { text: 'いちまん', isCorrect: true, reason: '正確{せいかく}！「一万{いちまん}」必須{ひっす}讀む{よむ}「いちまん」，不能{ふのう}省略{しょうりゃく}「いち」。' },
-            { text: 'いっまん', isCorrect: false, reason: '「一{いち}」在「万{まん}」前{まえ}不促音化{ふそくおんか}。' },
-            { text: 'ひとまん', isCorrect: false, reason: '組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}「いち」。' }
+            { text: 'まん', isCorrect: false, reason: '陷阱！「一万{いちまん}」必須加「いち」，不能省略。' },
+            { text: 'いちまん', isCorrect: true, reason: '正確！「一万{いちまん}」必須讀「いちまん」，不能省略「いち」。' },
+            { text: 'いっまん', isCorrect: false, reason: '「一{いち}」在「万{まん}」前不促音化。' },
+            { text: 'ひとまん', isCorrect: false, reason: '組合數字使用音讀「いち」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「一万{いちまん}」必須{ひっす}讀む{よむ}「いちまん」，不能{ふのう}像「百{ひゃく}」「千{せん}」那樣{ように}省略{しょうりゃく}「一{いち}」。',
-            trapExplanation: '這是重要{じゅうよう}陷阱題{かんけいだい}。學習者{がくしゅうしゃ}會以為{おもい}可以{かのう}像「ひゃく」「せん」一樣{いちよう}省略{しょうりゃく}「いち」，但「万{まん}」不可以{ふかのう}。',
-            relatedRules: ['万{まん}の特殊{とくしゅ}規則{きそく}', '「いち」不可{ふか}省略{しょうりゃく}']
+            correctRule: '「一万{いちまん}」必須讀「いちまん」，不能像「百」「千」那樣省略「一」。',
+            trapExplanation: '這是重要陷阱題。學習者會以為可以像「ひゃく」「せん」一樣省略「いち」，但「万」不可以。',
+            relatedRules: ['万{まん}的特殊規則', '「いち」不可省略']
         },
         sourceItem: { value: 10000, kanji: '一万', reading: 'いちまん' }
     },
@@ -319,16 +319,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書一萬日圓。',
         options: [
-            { text: 'まんえん', isCorrect: false, reason: '陷阱{かんけい}！「一万{いちまん}」必須{ひっす}加{か}「いち」。' },
-            { text: 'いちまんえん', isCorrect: true, reason: '正確{せいかく}！「一万円{いちまんえん}」讀作{どくさ}「いちまんえん」。' },
-            { text: 'いっまんえん', isCorrect: false, reason: '「一{いち}」不促音化{ふそくおんか}。' },
-            { text: 'ひとまんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「いち」。' }
+            { text: 'まんえん', isCorrect: false, reason: '陷阱！「一万{いちまん}」必須加「いち」。' },
+            { text: 'いちまんえん', isCorrect: true, reason: '正確！「一万円{いちまんえん}」讀作「いちまんえん」。' },
+            { text: 'いっまんえん', isCorrect: false, reason: '「一」不促音化。' },
+            { text: 'ひとまんえん', isCorrect: false, reason: '使用音讀「いち」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「一万円{いちまんえん}」必須{ひっす}讀む{よむ}「いちまんえん」，「いち」不可{ふか}省略{しょうりゃく}。',
-            trapExplanation: '這是常見{じょうけん}の陷阱{かんけい}，與「百{ひゃく}」「千{せん}」可以{かのう}省略{しょうりゃく}不同{ふどう}。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '万{まん}の特殊{とくしゅ}規則{きそく}']
+            correctRule: '「一万円{いちまんえん}」必須讀「いちまんえん」，「いち」不可省略。',
+            trapExplanation: '這是常見の陷阱，與「百」「千」可以省略不同。',
+            relatedRules: ['金額的表達', '万{まん}的特殊規則']
         },
         sourceItem: { value: 10000, kanji: '一万円', reading: 'いちまんえん' }
     },
@@ -345,16 +345,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（一萬日圓）'
         },
         options: [
-            { text: 'まんえん', isCorrect: false, reason: '陷阱{かんけい}！必須{ひっす}加{か}「いち」。' },
-            { text: 'いちまんえん', isCorrect: true, reason: '正確{せいかく}！「一万円{いちまんえん}」。' },
-            { text: 'いっまんえん', isCorrect: false, reason: '不促音化{ふそくおんか}。' },
-            { text: 'ひとまんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「いち」。' }
+            { text: 'まんえん', isCorrect: false, reason: '陷阱！必須加「いち」。' },
+            { text: 'いちまんえん', isCorrect: true, reason: '正確！「一万円{いちまんえん}」。' },
+            { text: 'いっまんえん', isCorrect: false, reason: '不促音化。' },
+            { text: 'ひとまんえん', isCorrect: false, reason: '使用音讀「いち」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「一万円{いちまんえん}」必須{ひっす}讀む{よむ}「いちまんえん」。',
-            trapExplanation: '「万{まん}」的「いち」不可{ふか}省略{しょうりゃく}，這是日語{にほんご}數字{すうじ}的特殊{とくしゅ}規則{きそく}。',
-            relatedRules: ['万{まん}の特殊{とくしゅ}規則{きそく}', '金額{きんがく}表達{ひょうたつ}']
+            correctRule: '「一万円{いちまんえん}」必須讀「いちまんえん」。',
+            trapExplanation: '「万」的「いち」不可省略，這是日語數字的特殊規則。',
+            relatedRules: ['万{まん}的特殊規則', '金額表達']
         },
         sourceItem: { value: 10000, kanji: '一万円', reading: 'いちまんえん' }
     },
@@ -366,18 +366,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「四千」的正確讀音是？',
+        stem: '「四千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「四千」的正確讀音是？',
         options: [
-            { text: 'よんせん', isCorrect: true, reason: '正確{せいかく}！「四千{よんせん}」讀作{どくさ}「よんせん」，為{ため}避諱{ひき}使用{しよう}「よん」。' },
-            { text: 'しせん', isCorrect: false, reason: '為{ため}避諱{ひき}「死{し}」，多用{おおくもちい}「よん」。' },
-            { text: 'よんぜん', isCorrect: false, reason: '「四千{よんせん}」不濁音化{ふだくおんか}。' },
-            { text: 'よっせん', isCorrect: false, reason: '「四{よん}」不促音化{ふそくおんか}。' }
+            { text: 'よんせん', isCorrect: true, reason: '正確！「四千{よんせん}」讀作「よんせん」，為避諱使用「よん」。' },
+            { text: 'しせん', isCorrect: false, reason: '為避諱「死」，多用「よん」。' },
+            { text: 'よんぜん', isCorrect: false, reason: '「四千{よんせん}」不濁音化。' },
+            { text: 'よっせん', isCorrect: false, reason: '「四」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四千{よんせん}」讀作{どくさ}「よんせん」，使用{しよう}「よん」避諱{ひき}，無{ない}音變{おんへん}。',
-            relatedRules: ['四{よん}の避諱{ひき}讀法{よみかた}', '4000の發音{はつおん}']
+            correctRule: '「四千{よんせん}」讀作「よんせん」，使用「よん」避諱，無音變。',
+            relatedRules: ['四の避諱讀法', '4000的發音']
         },
         sourceItem: { value: 4000, kanji: '四千', reading: 'よんせん' }
     },
@@ -390,15 +390,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書四千日圓。',
         options: [
-            { text: 'よんせんえん', isCorrect: true, reason: '正確{せいかく}！「四千円{よんせんえん}」讀作{どくさ}「よんせんえん」。' },
-            { text: 'しせんえん', isCorrect: false, reason: '為{ため}避諱{ひき}「死{し}」，多用{おおくもちい}「よん」。' },
-            { text: 'よんぜんえん', isCorrect: false, reason: '「四千{よんせん}」不濁音化{ふだくおんか}。' },
-            { text: 'よっせんえん', isCorrect: false, reason: '「四{よん}」不促音化{ふそくおんか}。' }
+            { text: 'よんせんえん', isCorrect: true, reason: '正確！「四千円{よんせんえん}」讀作「よんせんえん」。' },
+            { text: 'しせんえん', isCorrect: false, reason: '為避諱「死」，多用「よん」。' },
+            { text: 'よんぜんえん', isCorrect: false, reason: '「四千{よんせん}」不濁音化。' },
+            { text: 'よっせんえん', isCorrect: false, reason: '「四」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四千円{よんせんえん}」讀作{どくさ}「よんせんえん」。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '4000の發音{はつおん}']
+            correctRule: '「四千円{よんせんえん}」讀作「よんせんえん」。',
+            relatedRules: ['金額的表達', '4000的發音']
         },
         sourceItem: { value: 4000, kanji: '四千円', reading: 'よんせんえん' }
     },
@@ -415,15 +415,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（四千日圓）'
         },
         options: [
-            { text: 'よんせんえん', isCorrect: true, reason: '正確{せいかく}！「四千円{よんせんえん}」。' },
-            { text: 'しせんえん', isCorrect: false, reason: '為{ため}避諱{ひき}多用{おおくもちい}「よん」。' },
-            { text: 'よんぜんえん', isCorrect: false, reason: '不濁音化{ふだくおんか}。' },
-            { text: 'よっせんえん', isCorrect: false, reason: '不促音化{ふそくおんか}。' }
+            { text: 'よんせんえん', isCorrect: true, reason: '正確！「四千円{よんせんえん}」。' },
+            { text: 'しせんえん', isCorrect: false, reason: '為避諱多用「よん」。' },
+            { text: 'よんぜんえん', isCorrect: false, reason: '不濁音化。' },
+            { text: 'よっせんえん', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四千円{よんせんえん}」讀作{どくさ}「よんせんえん」。',
-            relatedRules: ['4000の發音{はつおん}', '金額{きんがく}表達{ひょうたつ}']
+            correctRule: '「四千円{よんせんえん}」讀作「よんせんえん」。',
+            relatedRules: ['4000的發音', '金額表達']
         },
         sourceItem: { value: 4000, kanji: '四千円', reading: 'よんせんえん' }
     },
@@ -435,18 +435,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五千」的正確讀音是？',
+        stem: '「五千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五千」的正確讀音是？',
         options: [
-            { text: 'ごせん', isCorrect: true, reason: '正確{せいかく}！「五千{ごせん}」讀作{どくさ}「ごせん」。' },
-            { text: 'いつせん', isCorrect: false, reason: '組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'ごぜん', isCorrect: false, reason: '「五千{ごせん}」不濁音化{ふだくおんか}。「ごぜん」是「午前{ごぜん}」。' },
-            { text: 'こせん', isCorrect: false, reason: '需要{じゅよう}濁音{だくおん}「ご」。' }
+            { text: 'ごせん', isCorrect: true, reason: '正確！「五千{ごせん}」讀作「ごせん」。' },
+            { text: 'いつせん', isCorrect: false, reason: '組合數字使用音讀「ご」。' },
+            { text: 'ごぜん', isCorrect: false, reason: '「五千{ごせん}」不濁音化。「ごぜん」是「午前」。' },
+            { text: 'こせん', isCorrect: false, reason: '需要濁音「ご」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五千{ごせん}」讀作{どくさ}「ごせん」，無{ない}音變{おんへん}。',
-            relatedRules: ['千位數{せんいすう}の讀法{よみかた}', '5000の發音{はつおん}']
+            correctRule: '「五千{ごせん}」讀作「ごせん」，無音變。',
+            relatedRules: ['千位數的讀法', '5000的發音']
         },
         sourceItem: { value: 5000, kanji: '五千', reading: 'ごせん' }
     },
@@ -459,15 +459,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書五千日圓。',
         options: [
-            { text: 'ごせんえん', isCorrect: true, reason: '正確{せいかく}！「五千円{ごせんえん}」讀作{どくさ}「ごせんえん」。' },
-            { text: 'いつせんえん', isCorrect: false, reason: '金額{きんがく}使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'ごぜんえん', isCorrect: false, reason: '「五千{ごせん}」不濁音化{ふだくおんか}。' },
-            { text: 'ごっせんえん', isCorrect: false, reason: '「五{ご}」不促音化{ふそくおんか}。' }
+            { text: 'ごせんえん', isCorrect: true, reason: '正確！「五千円{ごせんえん}」讀作「ごせんえん」。' },
+            { text: 'いつせんえん', isCorrect: false, reason: '金額使用音讀「ご」。' },
+            { text: 'ごぜんえん', isCorrect: false, reason: '「五千{ごせん}」不濁音化。' },
+            { text: 'ごっせんえん', isCorrect: false, reason: '「五」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五千円{ごせんえん}」讀作{どくさ}「ごせんえん」，是常見{じょうけん}の紙幣{しへい}金額{きんがく}。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '5000の發音{はつおん}']
+            correctRule: '「五千円{ごせんえん}」讀作「ごせんえん」，是常見の紙幣金額。',
+            relatedRules: ['金額的表達', '5000的發音']
         },
         sourceItem: { value: 5000, kanji: '五千円', reading: 'ごせんえん' }
     },
@@ -484,15 +484,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（五千日圓）'
         },
         options: [
-            { text: 'ごせんえん', isCorrect: true, reason: '正確{せいかく}！「五千円{ごせんえん}」。' },
-            { text: 'いつせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'ごぜんえん', isCorrect: false, reason: '不濁音化{ふだくおんか}。' },
-            { text: 'ごっせんえん', isCorrect: false, reason: '不促音化{ふそくおんか}。' }
+            { text: 'ごせんえん', isCorrect: true, reason: '正確！「五千円{ごせんえん}」。' },
+            { text: 'いつせんえん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごぜんえん', isCorrect: false, reason: '不濁音化。' },
+            { text: 'ごっせんえん', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五千円{ごせんえん}」是日本{にほん}常見{じょうけん}の紙幣{しへい}。',
-            relatedRules: ['5000の發音{はつおん}', '金額{きんがく}表達{ひょうたつ}']
+            correctRule: '「五千円{ごせんえん}」是日本常見の紙幣。',
+            relatedRules: ['5000的發音', '金額表達']
         },
         sourceItem: { value: 5000, kanji: '五千円', reading: 'ごせんえん' }
     },
@@ -504,18 +504,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「六千」的正確讀音是？',
+        stem: '「六千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「六千」的正確讀音是？',
         options: [
-            { text: 'ろくせん', isCorrect: true, reason: '正確{せいかく}！「六千{ろくせん}」讀作{どくさ}「ろくせん」，無{ない}音變{おんへん}。' },
-            { text: 'ろっせん', isCorrect: false, reason: '「六千{ろくせん}」不促音化{ふそくおんか}，與「六百{ろっぴゃく}」不同{ふどう}。' },
-            { text: 'むっせん', isCorrect: false, reason: '組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}「ろく」。' },
-            { text: 'ろくぜん', isCorrect: false, reason: '「六千{ろくせん}」不濁音化{ふだくおんか}。' }
+            { text: 'ろくせん', isCorrect: true, reason: '正確！「六千{ろくせん}」讀作「ろくせん」，無音變。' },
+            { text: 'ろっせん', isCorrect: false, reason: '「六千{ろくせん}」不促音化，與「六百{ろっぴゃく}」不同。' },
+            { text: 'むっせん', isCorrect: false, reason: '組合數字使用音讀「ろく」。' },
+            { text: 'ろくぜん', isCorrect: false, reason: '「六千{ろくせん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六千{ろくせん}」讀作{どくさ}「ろくせん」，與「六百{ろっぴゃく}」不同{ふどう}，無{ない}音變{おんへん}。',
-            relatedRules: ['千位數{せんいすう}の讀法{よみかた}', '6000の發音{はつおん}']
+            correctRule: '「六千{ろくせん}」讀作「ろくせん」，與「六百{ろっぴゃく}」不同，無音變。',
+            relatedRules: ['千位數的讀法', '6000的發音']
         },
         sourceItem: { value: 6000, kanji: '六千', reading: 'ろくせん' }
     },
@@ -528,15 +528,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書六千日圓。',
         options: [
-            { text: 'ろくせんえん', isCorrect: true, reason: '正確{せいかく}！「六千円{ろくせんえん}」讀作{どくさ}「ろくせんえん」。' },
-            { text: 'ろっせんえん', isCorrect: false, reason: '「六千{ろくせん}」不促音化{ふそくおんか}。' },
-            { text: 'むっせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ろく」。' },
-            { text: 'ろくぜんえん', isCorrect: false, reason: '「六千{ろくせん}」不濁音化{ふだくおんか}。' }
+            { text: 'ろくせんえん', isCorrect: true, reason: '正確！「六千円{ろくせんえん}」讀作「ろくせんえん」。' },
+            { text: 'ろっせんえん', isCorrect: false, reason: '「六千{ろくせん}」不促音化。' },
+            { text: 'むっせんえん', isCorrect: false, reason: '使用音讀「ろく」。' },
+            { text: 'ろくぜんえん', isCorrect: false, reason: '「六千{ろくせん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六千円{ろくせんえん}」讀作{どくさ}「ろくせんえん」。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '6000の發音{はつおん}']
+            correctRule: '「六千円{ろくせんえん}」讀作「ろくせんえん」。',
+            relatedRules: ['金額的表達', '6000的發音']
         },
         sourceItem: { value: 6000, kanji: '六千円', reading: 'ろくせんえん' }
     },
@@ -553,15 +553,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（六千日圓）'
         },
         options: [
-            { text: 'ろくせんえん', isCorrect: true, reason: '正確{せいかく}！「六千円{ろくせんえん}」。' },
-            { text: 'ろっせんえん', isCorrect: false, reason: '不促音化{ふそくおんか}。' },
-            { text: 'むっせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ろく」。' },
-            { text: 'ろくぜんえん', isCorrect: false, reason: '不濁音化{ふだくおんか}。' }
+            { text: 'ろくせんえん', isCorrect: true, reason: '正確！「六千円{ろくせんえん}」。' },
+            { text: 'ろっせんえん', isCorrect: false, reason: '不促音化。' },
+            { text: 'むっせんえん', isCorrect: false, reason: '使用音讀「ろく」。' },
+            { text: 'ろくぜんえん', isCorrect: false, reason: '不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六千円{ろくせんえん}」讀作{どくさ}「ろくせんえん」。',
-            relatedRules: ['6000の發音{はつおん}', '金額{きんがく}表達{ひょうたつ}']
+            correctRule: '「六千円{ろくせんえん}」讀作「ろくせんえん」。',
+            relatedRules: ['6000的發音', '金額表達']
         },
         sourceItem: { value: 6000, kanji: '六千円', reading: 'ろくせんえん' }
     },
@@ -573,18 +573,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「七千」的正確讀音是？',
+        stem: '「七千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「七千」的正確讀音是？',
         options: [
-            { text: 'ななせん', isCorrect: true, reason: '正確{せいかく}！「七千{ななせん}」讀作{どくさ}「ななせん」，為{ため}避免{ひめん}混淆{こんこう}使用{しよう}「なな」。' },
-            { text: 'しちせん', isCorrect: false, reason: '為{ため}避免{ひめん}混淆{こんこう}，多用{おおくもちい}「なな」。' },
-            { text: 'ななぜん', isCorrect: false, reason: '「七千{ななせん}」不濁音化{ふだくおんか}。' },
-            { text: 'なっせん', isCorrect: false, reason: '「七{なな}」不促音化{ふそくおんか}。' }
+            { text: 'ななせん', isCorrect: true, reason: '正確！「七千{ななせん}」讀作「ななせん」，為避免混淆使用「なな」。' },
+            { text: 'しちせん', isCorrect: false, reason: '為避免混淆，多用「なな」。' },
+            { text: 'ななぜん', isCorrect: false, reason: '「七千{ななせん}」不濁音化。' },
+            { text: 'なっせん', isCorrect: false, reason: '「七」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七千{ななせん}」讀作{どくさ}「ななせん」，使用{しよう}「なな」避免{ひめん}混淆{こんこう}，無{ない}音變{おんへん}。',
-            relatedRules: ['七{なな}の避免{ひめん}混淆{こんこう}讀法{よみかた}', '7000の發音{はつおん}']
+            correctRule: '「七千{ななせん}」讀作「ななせん」，使用「なな」避免混淆，無音變。',
+            relatedRules: ['七の避免混淆讀法', '7000的發音']
         },
         sourceItem: { value: 7000, kanji: '七千', reading: 'ななせん' }
     },
@@ -597,15 +597,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書七千日圓。',
         options: [
-            { text: 'ななせんえん', isCorrect: true, reason: '正確{せいかく}！「七千円{ななせんえん}」讀作{どくさ}「ななせんえん」。' },
-            { text: 'しちせんえん', isCorrect: false, reason: '為{ため}避免{ひめん}混淆{こんこう}，多用{おおくもちい}「なな」。' },
-            { text: 'ななぜんえん', isCorrect: false, reason: '「七千{ななせん}」不濁音化{ふだくおんか}。' },
-            { text: 'なっせんえん', isCorrect: false, reason: '「七{なな}」不促音化{ふそくおんか}。' }
+            { text: 'ななせんえん', isCorrect: true, reason: '正確！「七千円{ななせんえん}」讀作「ななせんえん」。' },
+            { text: 'しちせんえん', isCorrect: false, reason: '為避免混淆，多用「なな」。' },
+            { text: 'ななぜんえん', isCorrect: false, reason: '「七千{ななせん}」不濁音化。' },
+            { text: 'なっせんえん', isCorrect: false, reason: '「七」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七千円{ななせんえん}」讀作{どくさ}「ななせんえん」。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '7000の發音{はつおん}']
+            correctRule: '「七千円{ななせんえん}」讀作「ななせんえん」。',
+            relatedRules: ['金額的表達', '7000的發音']
         },
         sourceItem: { value: 7000, kanji: '七千円', reading: 'ななせんえん' }
     },
@@ -622,15 +622,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（七千日圓）'
         },
         options: [
-            { text: 'ななせんえん', isCorrect: true, reason: '正確{せいかく}！「七千円{ななせんえん}」。' },
-            { text: 'しちせんえん', isCorrect: false, reason: '為{ため}避免{ひめん}混淆{こんこう}多用{おおくもちい}「なな」。' },
-            { text: 'ななぜんえん', isCorrect: false, reason: '不濁音化{ふだくおんか}。' },
-            { text: 'なっせんえん', isCorrect: false, reason: '不促音化{ふそくおんか}。' }
+            { text: 'ななせんえん', isCorrect: true, reason: '正確！「七千円{ななせんえん}」。' },
+            { text: 'しちせんえん', isCorrect: false, reason: '為避免混淆多用「なな」。' },
+            { text: 'ななぜんえん', isCorrect: false, reason: '不濁音化。' },
+            { text: 'なっせんえん', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七千円{ななせんえん}」讀作{どくさ}「ななせんえん」。',
-            relatedRules: ['7000の發音{はつおん}', '金額{きんがく}表達{ひょうたつ}']
+            correctRule: '「七千円{ななせんえん}」讀作「ななせんえん」。',
+            relatedRules: ['7000的發音', '金額表達']
         },
         sourceItem: { value: 7000, kanji: '七千円', reading: 'ななせんえん' }
     },
@@ -642,18 +642,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「九千」的正確讀音是？',
+        stem: '「九千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「九千」的正確讀音是？',
         options: [
-            { text: 'きゅうせん', isCorrect: true, reason: '正確{せいかく}！「九千{きゅうせん}」讀作{どくさ}「きゅうせん」，為{ため}避諱{ひき}使用{しよう}「きゅう」。' },
-            { text: 'くせん', isCorrect: false, reason: '為{ため}避諱{ひき}「苦{く}」，多用{おおくもちい}「きゅう」。' },
-            { text: 'きゅうぜん', isCorrect: false, reason: '「九千{きゅうせん}」不濁音化{ふだくおんか}。' },
-            { text: 'きゅっせん', isCorrect: false, reason: '「九{きゅう}」不促音化{ふそくおんか}。' }
+            { text: 'きゅうせん', isCorrect: true, reason: '正確！「九千{きゅうせん}」讀作「きゅうせん」，為避諱使用「きゅう」。' },
+            { text: 'くせん', isCorrect: false, reason: '為避諱「苦」，多用「きゅう」。' },
+            { text: 'きゅうぜん', isCorrect: false, reason: '「九千{きゅうせん}」不濁音化。' },
+            { text: 'きゅっせん', isCorrect: false, reason: '「九」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「九千{きゅうせん}」讀作{どくさ}「きゅうせん」，使用{しよう}「きゅう」避諱{ひき}，無{ない}音變{おんへん}。',
-            relatedRules: ['九{きゅう}の避諱{ひき}讀法{よみかた}', '9000の發音{はつおん}']
+            correctRule: '「九千{きゅうせん}」讀作「きゅうせん」，使用「きゅう」避諱，無音變。',
+            relatedRules: ['九の避諱讀法', '9000的發音']
         },
         sourceItem: { value: 9000, kanji: '九千', reading: 'きゅうせん' }
     },
@@ -666,15 +666,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書九千日圓。',
         options: [
-            { text: 'きゅうせんえん', isCorrect: true, reason: '正確{せいかく}！「九千円{きゅうせんえん}」讀作{どくさ}「きゅうせんえん」。' },
-            { text: 'くせんえん', isCorrect: false, reason: '為{ため}避諱{ひき}「苦{く}」，多用{おおくもちい}「きゅう」。' },
-            { text: 'きゅうぜんえん', isCorrect: false, reason: '「九千{きゅうせん}」不濁音化{ふだくおんか}。' },
-            { text: 'きゅっせんえん', isCorrect: false, reason: '「九{きゅう}」不促音化{ふそくおんか}。' }
+            { text: 'きゅうせんえん', isCorrect: true, reason: '正確！「九千円{きゅうせんえん}」讀作「きゅうせんえん」。' },
+            { text: 'くせんえん', isCorrect: false, reason: '為避諱「苦」，多用「きゅう」。' },
+            { text: 'きゅうぜんえん', isCorrect: false, reason: '「九千{きゅうせん}」不濁音化。' },
+            { text: 'きゅっせんえん', isCorrect: false, reason: '「九」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「九千円{きゅうせんえん}」讀作{どくさ}「きゅうせんえん」。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '9000の發音{はつおん}']
+            correctRule: '「九千円{きゅうせんえん}」讀作「きゅうせんえん」。',
+            relatedRules: ['金額的表達', '9000的發音']
         },
         sourceItem: { value: 9000, kanji: '九千円', reading: 'きゅうせんえん' }
     },
@@ -691,15 +691,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（九千日圓）'
         },
         options: [
-            { text: 'きゅうせんえん', isCorrect: true, reason: '正確{せいかく}！「九千円{きゅうせんえん}」。' },
-            { text: 'くせんえん', isCorrect: false, reason: '為{ため}避諱{ひき}多用{おおくもちい}「きゅう」。' },
-            { text: 'きゅうぜんえん', isCorrect: false, reason: '不濁音化{ふだくおんか}。' },
-            { text: 'きゅっせんえん', isCorrect: false, reason: '不促音化{ふそくおんか}。' }
+            { text: 'きゅうせんえん', isCorrect: true, reason: '正確！「九千円{きゅうせんえん}」。' },
+            { text: 'くせんえん', isCorrect: false, reason: '為避諱多用「きゅう」。' },
+            { text: 'きゅうぜんえん', isCorrect: false, reason: '不濁音化。' },
+            { text: 'きゅっせんえん', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「九千円{きゅうせんえん}」讀作{どくさ}「きゅうせんえん」。',
-            relatedRules: ['9000の發音{はつおん}', '金額{きんがく}表達{ひょうたつ}']
+            correctRule: '「九千円{きゅうせんえん}」讀作「きゅうせんえん」。',
+            relatedRules: ['9000的發音', '金額表達']
         },
         sourceItem: { value: 9000, kanji: '九千円', reading: 'きゅうせんえん' }
     },
@@ -711,18 +711,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「千百」的正確讀音是？',
+        stem: '「千百」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一千一百」的正確讀音是？',
         options: [
-            { text: 'せんひゃく', isCorrect: true, reason: '正確{せいかく}！「千百{せんひゃく}」讀作{どくさ}「せんひゃく」。' },
-            { text: 'いちせんいちひゃく', isCorrect: false, reason: '通常{つうじょう}省略{しょうりゃく}「いち」。' },
-            { text: 'せんびゃく', isCorrect: false, reason: '「せん」後面{うしろ}の「ひゃく」不濁音化{ふだくおんか}。' },
-            { text: 'いっせんひゃく', isCorrect: false, reason: '「一{いち}」不促音化{ふそくおんか}。' }
+            { text: 'せんひゃく', isCorrect: true, reason: '正確！「千百{せんひゃく}」讀作「せんひゃく」。' },
+            { text: 'いちせんいちひゃく', isCorrect: false, reason: '通常省略「いち」。' },
+            { text: 'せんびゃく', isCorrect: false, reason: '「せん」後面の「ひゃく」不濁音化。' },
+            { text: 'いっせんひゃく', isCorrect: false, reason: '「一」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「千百{せんひゃく}」省略{しょうりゃく}「一{いち}」，無{ない}音變{おんへん}。',
-            relatedRules: ['千位數{せんいすう}の組合{くみあわせ}', '1100の發音{はつおん}']
+            correctRule: '「千百{せんひゃく}」省略「一」，無音變。',
+            relatedRules: ['千位數的組合', '1100的發音']
         },
         sourceItem: { value: 1100, kanji: '千百', reading: 'せんひゃく' }
     },
@@ -735,15 +735,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書一千兩百日圓。',
         options: [
-            { text: 'せんにひゃくえん', isCorrect: true, reason: '正確{せいかく}！「千二百円{せんにひゃくえん}」。' },
-            { text: 'いちせんにひゃくえん', isCorrect: false, reason: '通常{つうじょう}省略{しょうりゃく}「いち」。' },
-            { text: 'せんふたひゃくえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「に」。' },
-            { text: 'せんにびゃくえん', isCorrect: false, reason: '「二百{にひゃく}」不濁音化{ふだくおんか}。' }
+            { text: 'せんにひゃくえん', isCorrect: true, reason: '正確！「千二百円{せんにひゃくえん}」。' },
+            { text: 'いちせんにひゃくえん', isCorrect: false, reason: '通常省略「いち」。' },
+            { text: 'せんふたひゃくえん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'せんにびゃくえん', isCorrect: false, reason: '「二百{にひゃく}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「千二百円{せんにひゃくえん}」省略{しょうりゃく}「一{いち}」。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '組合{くみあわせ}數字{すうじ}']
+            correctRule: '「千二百円{せんにひゃくえん}」省略「一」。',
+            relatedRules: ['金額的表達', '組合數字']
         },
         sourceItem: { value: 1200, kanji: '千二百円', reading: 'せんにひゃくえん' }
     },
@@ -753,19 +753,19 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「千三百」的正確讀音是？',
+        stem: '「千三百」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一千三百」的正確讀音是？',
         options: [
-            { text: 'せんさんひゃく', isCorrect: false, reason: '陷阱{かんけい}！「三百{さんびゃく}」要濁音化{だくおんか}。' },
-            { text: 'せんさんびゃく', isCorrect: true, reason: '正確{せいかく}！「三百{さんびゃく}」的「ひゃく」濁音化{だくおんか}為「びゃく」。' },
-            { text: 'いっせんさんびゃく', isCorrect: false, reason: '「一{いち}」通常{つうじょう}省略{しょうりゃく}。' },
-            { text: 'せんみびゃく', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「さん」。' }
+            { text: 'せんさんひゃく', isCorrect: false, reason: '陷阱！「三百{さんびゃく}」要濁音化。' },
+            { text: 'せんさんびゃく', isCorrect: true, reason: '正確！「三百{さんびゃく}」的「ひゃく」濁音化為「びゃく」。' },
+            { text: 'いっせんさんびゃく', isCorrect: false, reason: '「一」通常省略。' },
+            { text: 'せんみびゃく', isCorrect: false, reason: '使用音讀「さん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「千三百{せんさんびゃく}」中，「三{さん}」引發{いんはつ}「ひゃく」濁音化{だくおんか}為「びゃく」。',
-            trapExplanation: '這是常見{じょうけん}陷阱{かんけい}，「三{さん}」後面{うしろ}の「ひゃく」必須{ひっす}濁音化{だくおんか}。',
-            relatedRules: ['三{さん}引發{いんはつ}の濁音化{だくおんか}', '組合{くみあわせ}數字{すうじ}']
+            correctRule: '「千三百{せんさんびゃく}」中，「三{さん}」引發「ひゃく」濁音化為「びゃく」。',
+            trapExplanation: '這是常見陷阱，「三{さん}」後面の「ひゃく」必須濁音化。',
+            relatedRules: ['三{さん}引發的濁音化', '組合數字']
         },
         sourceItem: { value: 1300, kanji: '千三百', reading: 'せんさんびゃく' }
     },
@@ -782,15 +782,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（一千五百日圓）'
         },
         options: [
-            { text: 'せんごひゃくえん', isCorrect: true, reason: '正確{せいかく}！「千五百円{せんごひゃくえん}」。' },
-            { text: 'いちせんごひゃくえん', isCorrect: false, reason: '通常{つうじょう}省略{しょうりゃく}「いち」。' },
-            { text: 'せんごびゃくえん', isCorrect: false, reason: '「五百{ごひゃく}」不濁音化{ふだくおんか}。' },
-            { text: 'せんいつひゃくえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ご」。' }
+            { text: 'せんごひゃくえん', isCorrect: true, reason: '正確！「千五百円{せんごひゃくえん}」。' },
+            { text: 'いちせんごひゃくえん', isCorrect: false, reason: '通常省略「いち」。' },
+            { text: 'せんごびゃくえん', isCorrect: false, reason: '「五百{ごひゃく}」不濁音化。' },
+            { text: 'せんいつひゃくえん', isCorrect: false, reason: '使用音讀「ご」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「千五百円{せんごひゃくえん}」是常見{じょうけん}の金額{きんがく}。',
-            relatedRules: ['組合{くみあわせ}金額{きんがく}', '千五百{せんごひゃく}の發音{はつおん}']
+            correctRule: '「千五百円{せんごひゃくえん}」是常見の金額。',
+            relatedRules: ['組合金額', '千五百的發音']
         },
         sourceItem: { value: 1500, kanji: '千五百円', reading: 'せんごひゃくえん' }
     },
@@ -800,19 +800,19 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「千六百」的正確讀音是？',
+        stem: '「千六百」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一千六百」的正確讀音是？',
         options: [
-            { text: 'せんろくひゃく', isCorrect: false, reason: '陷阱{かんけい}！「六百{ろっぴゃく}」要促音化{そくおんか}和半濁音化{はんだくおんか}。' },
-            { text: 'せんろっぴゃく', isCorrect: true, reason: '正確{せいかく}！「六百{ろっぴゃく}」的「ろく」促音化{そくおんか}，「ひゃく」半濁音化{はんだくおんか}為「ぴゃく」。' },
-            { text: 'せんむひゃく', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ろく」→「ろっ」。' },
-            { text: 'せんろくびゃく', isCorrect: false, reason: '是促音化{そくおんか}+半濁音化{はんだくおんか}，不是濁音化{だくおんか}。' }
+            { text: 'せんろくひゃく', isCorrect: false, reason: '陷阱！「六百{ろっぴゃく}」要促音化和半濁音化。' },
+            { text: 'せんろっぴゃく', isCorrect: true, reason: '正確！「六百{ろっぴゃく}」的「ろく」促音化，「ひゃく」半濁音化為「ぴゃく」。' },
+            { text: 'せんむひゃく', isCorrect: false, reason: '使用音讀「ろく」→「ろっ」。' },
+            { text: 'せんろくびゃく', isCorrect: false, reason: '是促音化+半濁音化，不是濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「千六百{せんろっぴゃく}」中，「六{ろく}」促音化{そくおんか}為「ろっ」，「ひゃく」半濁音化{はんだくおんか}為「ぴゃく」。',
-            trapExplanation: '六百{ろっぴゃく}的音變{おんへん}規則{きそく}容易{ようい}混淆{こんこう}。',
-            relatedRules: ['六{ろく}引發{いんはつ}の促音化{そくおんか}', '半濁音化{はんだくおんか}規則{きそく}']
+            correctRule: '「千六百{せんろっぴゃく}」中，「六{ろく}」促音化為「ろっ」，「ひゃく」半濁音化為「ぴゃく」。',
+            trapExplanation: '六百{ろっぴゃく}的音變規則容易混淆。',
+            relatedRules: ['六引發的促音化', '半濁音化規則']
         },
         sourceItem: { value: 1600, kanji: '千六百', reading: 'せんろっぴゃく' }
     },
@@ -825,16 +825,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書一千八百日圓。',
         options: [
-            { text: 'せんはちひゃくえん', isCorrect: false, reason: '陷阱{かんけい}！「八百{はっぴゃく}」要促音化{そくおんか}和半濁音化{はんだくおんか}。' },
-            { text: 'せんはっぴゃくえん', isCorrect: true, reason: '正確{せいかく}！「千八百円{せんはっぴゃくえん}」。' },
-            { text: 'せんやひゃくえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「はち」→「はっ」。' },
-            { text: 'せんはちびゃくえん', isCorrect: false, reason: '是促音化{そくおんか}+半濁音化{はんだくおんか}，不是濁音化{だくおんか}。' }
+            { text: 'せんはちひゃくえん', isCorrect: false, reason: '陷阱！「八百{はっぴゃく}」要促音化和半濁音化。' },
+            { text: 'せんはっぴゃくえん', isCorrect: true, reason: '正確！「千八百円{せんはっぴゃくえん}」。' },
+            { text: 'せんやひゃくえん', isCorrect: false, reason: '使用音讀「はち」→「はっ」。' },
+            { text: 'せんはちびゃくえん', isCorrect: false, reason: '是促音化+半濁音化，不是濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「千八百円{せんはっぴゃくえん}」中，「八{はち}」促音化{そくおんか}為「はっ」，「ひゃく」半濁音化{はんだくおんか}為「ぴゃく」。',
-            trapExplanation: '八百{はっぴゃく}的音變{おんへん}與六百{ろっぴゃく}相同{どうよう}。',
-            relatedRules: ['八{はち}引發{いんはつ}の促音化{そくおんか}', '半濁音化{はんだくおんか}']
+            correctRule: '「千八百円{せんはっぴゃくえん}」中，「八{はち}」促音化為「はっ」，「ひゃく」半濁音化為「ぴゃく」。',
+            trapExplanation: '八百{はっぴゃく}的音變與六百{ろっぴゃく}相同。',
+            relatedRules: ['八引發的促音化', '半濁音化']
         },
         sourceItem: { value: 1800, kanji: '千八百円', reading: 'せんはっぴゃくえん' }
     },
@@ -853,16 +853,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（兩千三百日圓）'
         },
         options: [
-            { text: 'にせんさんひゃくえん', isCorrect: false, reason: '陷阱{かんけい}！「三百{さんびゃく}」要濁音化{だくおんか}。' },
-            { text: 'にせんさんびゃくえん', isCorrect: true, reason: '正確{せいかく}！「二千三百円{にせんさんびゃくえん}」。' },
-            { text: 'ふたせんみびゃくえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「に」和「さん」。' },
-            { text: 'にぜんさんびゃくえん', isCorrect: false, reason: '「二千{にせん}」不濁音化{ふだくおんか}。' }
+            { text: 'にせんさんひゃくえん', isCorrect: false, reason: '陷阱！「三百{さんびゃく}」要濁音化。' },
+            { text: 'にせんさんびゃくえん', isCorrect: true, reason: '正確！「二千三百円{にせんさんびゃくえん}」。' },
+            { text: 'ふたせんみびゃくえん', isCorrect: false, reason: '使用音讀「に」和「さん」。' },
+            { text: 'にぜんさんびゃくえん', isCorrect: false, reason: '「二千{にせん}」不濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二千三百円{にせんさんびゃくえん}」中，「三百{さんびゃく}」濁音化{だくおんか}。',
-            trapExplanation: '複合{ふくごう}數字{すうじ}中，三百{さんびゃく}仍需{なおひつよう}濁音化{だくおんか}。',
-            relatedRules: ['三百{さんびゃく}の濁音化{だくおんか}', '組合{くみあわせ}金額{きんがく}']
+            correctRule: '「二千三百円{にせんさんびゃくえん}」中，「三百{さんびゃく}」濁音化。',
+            trapExplanation: '複合數字中，三百{さんびゃく}仍需濁音化。',
+            relatedRules: ['三百的濁音化', '組合金額']
         },
         sourceItem: { value: 2300, kanji: '二千三百円', reading: 'にせんさんびゃくえん' }
     },
@@ -872,18 +872,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二千五百」的正確讀音是？',
+        stem: '「二千五百」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「兩千五百」的正確讀音是？',
         options: [
-            { text: 'にせんごひゃく', isCorrect: true, reason: '正確{せいかく}！「二千五百{にせんごひゃく}」無{ない}音變{おんへん}。' },
-            { text: 'ふたせんごひゃく', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「に」。' },
-            { text: 'にぜんごひゃく', isCorrect: false, reason: '「二千{にせん}」不濁音化{ふだくおんか}。' },
-            { text: 'にせんごびゃく', isCorrect: false, reason: '「五百{ごひゃく}」不濁音化{ふだくおんか}。' }
+            { text: 'にせんごひゃく', isCorrect: true, reason: '正確！「二千五百{にせんごひゃく}」無音變。' },
+            { text: 'ふたせんごひゃく', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にぜんごひゃく', isCorrect: false, reason: '「二千{にせん}」不濁音化。' },
+            { text: 'にせんごびゃく', isCorrect: false, reason: '「五百{ごひゃく}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二千五百{にせんごひゃく}」無{ない}音變{おんへん}。',
-            relatedRules: ['千位數{せんいすう}の組合{くみあわせ}', '2500の發音{はつおん}']
+            correctRule: '「二千五百{にせんごひゃく}」無音變。',
+            relatedRules: ['千位數的組合', '2500的發音']
         },
         sourceItem: { value: 2500, kanji: '二千五百', reading: 'にせんごひゃく' }
     },
@@ -895,19 +895,19 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「三千三百」的正確讀音是？',
+        stem: '「三千三百」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三千三百」的正確讀音是？',
         options: [
-            { text: 'さんせんさんひゃく', isCorrect: false, reason: '陷阱{かんけい}！「三千{さんぜん}」和「三百{さんびゃく}」都要音變{おんへん}！' },
-            { text: 'さんぜんさんびゃく', isCorrect: true, reason: '正確{せいかく}！「三{さん}」引發{いんはつ}兩次{にかい}濁音化{だくおんか}。' },
-            { text: 'さんぜんさんひゃく', isCorrect: false, reason: '「三百{さんびゃく}」也要濁音化{だくおんか}。' },
-            { text: 'さんせんさんびゃく', isCorrect: false, reason: '「三千{さんぜん}」也要濁音化{だくおんか}。' }
+            { text: 'さんせんさんひゃく', isCorrect: false, reason: '陷阱！「三千{さんぜん}」和「三百{さんびゃく}」都要音變！' },
+            { text: 'さんぜんさんびゃく', isCorrect: true, reason: '正確！「三{さん}」引發兩次濁音化。' },
+            { text: 'さんぜんさんひゃく', isCorrect: false, reason: '「三百{さんびゃく}」也要濁音化。' },
+            { text: 'さんせんさんびゃく', isCorrect: false, reason: '「三千{さんぜん}」也要濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三千三百{さんぜんさんびゃく}」中，「三{さん}」引發{いんはつ}「千{せん}」和「百{ひゃく}」都濁音化{だくおんか}。',
-            trapExplanation: '這是雙重{にじゅう}濁音化{だくおんか}の陷阱題{かんけいだい}。',
-            relatedRules: ['三{さん}引發{いんはつ}の濁音化{だくおんか}', '複合{ふくごう}音變{おんへん}']
+            correctRule: '「三千三百{さんぜんさんびゃく}」中，「三{さん}」引發「千{せん}」和「百{ひゃく}」都濁音化。',
+            trapExplanation: '這是雙重濁音化の陷阱題。',
+            relatedRules: ['三引發的濁音化', '複合音變']
         },
         sourceItem: { value: 3300, kanji: '三千三百', reading: 'さんぜんさんびゃく' }
     },
@@ -920,16 +920,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書三千五百日圓。',
         options: [
-            { text: 'さんせんごひゃくえん', isCorrect: false, reason: '陷阱{かんけい}！「三千{さんぜん}」要濁音化{だくおんか}。' },
-            { text: 'さんぜんごひゃくえん', isCorrect: true, reason: '正確{せいかく}！「三千五百円{さんぜんごひゃくえん}」。' },
-            { text: 'さんぜんいつひゃくえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'みぜんごひゃくえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「さん」。' }
+            { text: 'さんせんごひゃくえん', isCorrect: false, reason: '陷阱！「三千{さんぜん}」要濁音化。' },
+            { text: 'さんぜんごひゃくえん', isCorrect: true, reason: '正確！「三千五百円{さんぜんごひゃくえん}」。' },
+            { text: 'さんぜんいつひゃくえん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'みぜんごひゃくえん', isCorrect: false, reason: '使用音讀「さん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三千五百円{さんぜんごひゃくえん}」中，「三千{さんぜん}」濁音化{だくおんか}，「五百{ごひゃく}」無{ない}音變{おんへん}。',
-            trapExplanation: '3開頭{かいとう}的千位數{せんいすう}必須{ひっす}濁音化{だくおんか}。',
-            relatedRules: ['三{さん}引發{いんはつ}の濁音化{だくおんか}', '金額{きんがく}表達{ひょうたつ}']
+            correctRule: '「三千五百円{さんぜんごひゃくえん}」中，「三千{さんぜん}」濁音化，「五百」無音變。',
+            trapExplanation: '3開頭的千位數必須濁音化。',
+            relatedRules: ['三引發的濁音化', '金額表達']
         },
         sourceItem: { value: 3500, kanji: '三千五百円', reading: 'さんぜんごひゃくえん' }
     },
@@ -946,16 +946,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（三千六百日圓）'
         },
         options: [
-            { text: 'さんせんろくひゃくえん', isCorrect: false, reason: '陷阱{かんけい}！「三千{さんぜん}」和「六百{ろっぴゃく}」都要音變{おんへん}！' },
-            { text: 'さんぜんろっぴゃくえん', isCorrect: true, reason: '正確{せいかく}！「三千六百円{さんぜんろっぴゃくえん}」。' },
-            { text: 'さんぜんろくひゃくえん', isCorrect: false, reason: '「六百{ろっぴゃく}」要促音化{そくおんか}和半濁音化{はんだくおんか}。' },
-            { text: 'さんせんろっぴゃくえん', isCorrect: false, reason: '「三千{さんぜん}」要濁音化{だくおんか}。' }
+            { text: 'さんせんろくひゃくえん', isCorrect: false, reason: '陷阱！「三千{さんぜん}」和「六百{ろっぴゃく}」都要音變！' },
+            { text: 'さんぜんろっぴゃくえん', isCorrect: true, reason: '正確！「三千六百円{さんぜんろっぴゃくえん}」。' },
+            { text: 'さんぜんろくひゃくえん', isCorrect: false, reason: '「六百{ろっぴゃく}」要促音化和半濁音化。' },
+            { text: 'さんせんろっぴゃくえん', isCorrect: false, reason: '「三千{さんぜん}」要濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三千六百円{さんぜんろっぴゃくえん}」中，「三千{さんぜん}」濁音化{だくおんか}，「六百{ろっぴゃく}」促音化{そくおんか}+半濁音化{はんだくおんか}。',
-            trapExplanation: '這是複合{ふくごう}音變{おんへん}の陷阱題{かんけいだい}。',
-            relatedRules: ['三千{さんぜん}の濁音化{だくおんか}', '六百{ろっぴゃく}の音變{おんへん}']
+            correctRule: '「三千六百円{さんぜんろっぴゃくえん}」中，「三千{さんぜん}」濁音化，「六百{ろっぴゃく}」促音化+半濁音化。',
+            trapExplanation: '這是複合音變の陷阱題。',
+            relatedRules: ['三千的濁音化', '六百的音變']
         },
         sourceItem: { value: 3600, kanji: '三千六百円', reading: 'さんぜんろっぴゃくえん' }
     },
@@ -965,19 +965,19 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「三千八百」的正確讀音是？',
+        stem: '「三千八百」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三千八百」的正確讀音是？',
         options: [
-            { text: 'さんせんはちひゃく', isCorrect: false, reason: '陷阱{かんけい}！「三千{さんぜん}」和「八百{はっぴゃく}」都要音變{おんへん}！' },
-            { text: 'さんぜんはっぴゃく', isCorrect: true, reason: '正確{せいかく}！「三千{さんぜん}」濁音化{だくおんか}，「八百{はっぴゃく}」促音化{そくおんか}+半濁音化{はんだくおんか}。' },
-            { text: 'さんぜんはちひゃく', isCorrect: false, reason: '「八百{はっぴゃく}」要音變{おんへん}。' },
-            { text: 'さんせんはっぴゃく', isCorrect: false, reason: '「三千{さんぜん}」要濁音化{だくおんか}。' }
+            { text: 'さんせんはちひゃく', isCorrect: false, reason: '陷阱！「三千{さんぜん}」和「八百{はっぴゃく}」都要音變！' },
+            { text: 'さんぜんはっぴゃく', isCorrect: true, reason: '正確！「三千{さんぜん}」濁音化，「八百{はっぴゃく}」促音化+半濁音化。' },
+            { text: 'さんぜんはちひゃく', isCorrect: false, reason: '「八百{はっぴゃく}」要音變。' },
+            { text: 'さんせんはっぴゃく', isCorrect: false, reason: '「三千{さんぜん}」要濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三千八百{さんぜんはっぴゃく}」是複合{ふくごう}音變{おんへん}：三千{さんぜん}+八百{はっぴゃく}。',
-            trapExplanation: '這是高難度{こうなんど}陷阱題{かんけいだい}。',
-            relatedRules: ['三千{さんぜん}の濁音化{だくおんか}', '八百{はっぴゃく}の音變{おんへん}']
+            correctRule: '「三千八百{さんぜんはっぴゃく}」是複合音變：三千{さんぜん}+八百{はっぴゃく}。',
+            trapExplanation: '這是高難度陷阱題。',
+            relatedRules: ['三千的濁音化', '八百的音變']
         },
         sourceItem: { value: 3800, kanji: '三千八百', reading: 'さんぜんはっぴゃく' }
     },
@@ -992,16 +992,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書八千三百日圓。',
         options: [
-            { text: 'はちせんさんひゃくえん', isCorrect: false, reason: '陷阱{かんけい}！「八千{はっせん}」和「三百{さんびゃく}」都要音變{おんへん}！' },
-            { text: 'はっせんさんびゃくえん', isCorrect: true, reason: '正確{せいかく}！「八千{はっせん}」促音化{そくおんか}，「三百{さんびゃく}」濁音化{だくおんか}。' },
-            { text: 'はっせんさんひゃくえん', isCorrect: false, reason: '「三百{さんびゃく}」要濁音化{だくおんか}。' },
-            { text: 'はちせんさんびゃくえん', isCorrect: false, reason: '「八千{はっせん}」要促音化{そくおんか}。' }
+            { text: 'はちせんさんひゃくえん', isCorrect: false, reason: '陷阱！「八千{はっせん}」和「三百{さんびゃく}」都要音變！' },
+            { text: 'はっせんさんびゃくえん', isCorrect: true, reason: '正確！「八千{はっせん}」促音化，「三百{さんびゃく}」濁音化。' },
+            { text: 'はっせんさんひゃくえん', isCorrect: false, reason: '「三百{さんびゃく}」要濁音化。' },
+            { text: 'はちせんさんびゃくえん', isCorrect: false, reason: '「八千{はっせん}」要促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八千三百円{はっせんさんびゃくえん}」是複合{ふくごう}音變{おんへん}：八千{はっせん}+三百{さんびゃく}。',
-            trapExplanation: '這是複合{ふくごう}音變{おんへん}の陷阱題{かんけいだい}。',
-            relatedRules: ['八千{はっせん}の促音化{そくおんか}', '三百{さんびゃく}の濁音化{だくおんか}']
+            correctRule: '「八千三百円{はっせんさんびゃくえん}」是複合音變：八千{はっせん}+三百{さんびゃく}。',
+            trapExplanation: '這是複合音變の陷阱題。',
+            relatedRules: ['八千的促音化', '三百的濁音化']
         },
         sourceItem: { value: 8300, kanji: '八千三百円', reading: 'はっせんさんびゃくえん' }
     },
@@ -1018,16 +1018,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（八千六百日圓）'
         },
         options: [
-            { text: 'はちせんろくひゃくえん', isCorrect: false, reason: '陷阱{かんけい}！「八千{はっせん}」和「六百{ろっぴゃく}」都要音變{おんへん}！' },
-            { text: 'はっせんろっぴゃくえん', isCorrect: true, reason: '正確{せいかく}！「八千六百円{はっせんろっぴゃくえん}」。' },
-            { text: 'はっせんろくひゃくえん', isCorrect: false, reason: '「六百{ろっぴゃく}」要促音化{そくおんか}+半濁音化{はんだくおんか}。' },
-            { text: 'はちせんろっぴゃくえん', isCorrect: false, reason: '「八千{はっせん}」要促音化{そくおんか}。' }
+            { text: 'はちせんろくひゃくえん', isCorrect: false, reason: '陷阱！「八千{はっせん}」和「六百{ろっぴゃく}」都要音變！' },
+            { text: 'はっせんろっぴゃくえん', isCorrect: true, reason: '正確！「八千六百円{はっせんろっぴゃくえん}」。' },
+            { text: 'はっせんろくひゃくえん', isCorrect: false, reason: '「六百{ろっぴゃく}」要促音化+半濁音化。' },
+            { text: 'はちせんろっぴゃくえん', isCorrect: false, reason: '「八千{はっせん}」要促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八千六百円{はっせんろっぴゃくえん}」是雙重{にじゅう}促音化{そくおんか}：八千{はっせん}+六百{ろっぴゃく}。',
-            trapExplanation: '這是高難度{こうなんど}陷阱題{かんけいだい}。',
-            relatedRules: ['八千{はっせん}の促音化{そくおんか}', '六百{ろっぴゃく}の音變{おんへん}']
+            correctRule: '「八千六百円{はっせんろっぴゃくえん}」是雙重促音化：八千{はっせん}+六百{ろっぴゃく}。',
+            trapExplanation: '這是高難度陷阱題。',
+            relatedRules: ['八千的促音化', '六百的音變']
         },
         sourceItem: { value: 8600, kanji: '八千六百円', reading: 'はっせんろっぴゃくえん' }
     },
@@ -1037,19 +1037,19 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「八千八百」的正確讀音是？',
+        stem: '「八千八百」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「八千八百」的正確讀音是？',
         options: [
-            { text: 'はちせんはちひゃく', isCorrect: false, reason: '陷阱{かんけい}！「八千{はっせん}」和「八百{はっぴゃく}」都要促音化{そくおんか}！' },
-            { text: 'はっせんはっぴゃく', isCorrect: true, reason: '正確{せいかく}！「八{はち}」引發{いんはつ}兩次{にかい}促音化{そくおんか}。' },
-            { text: 'はっせんはちひゃく', isCorrect: false, reason: '「八百{はっぴゃく}」也要促音化{そくおんか}。' },
-            { text: 'はちせんはっぴゃく', isCorrect: false, reason: '「八千{はっせん}」也要促音化{そくおんか}。' }
+            { text: 'はちせんはちひゃく', isCorrect: false, reason: '陷阱！「八千{はっせん}」和「八百{はっぴゃく}」都要促音化！' },
+            { text: 'はっせんはっぴゃく', isCorrect: true, reason: '正確！「八{はち}」引發兩次促音化。' },
+            { text: 'はっせんはちひゃく', isCorrect: false, reason: '「八百{はっぴゃく}」也要促音化。' },
+            { text: 'はちせんはっぴゃく', isCorrect: false, reason: '「八千{はっせん}」也要促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八千八百{はっせんはっぴゃく}」是雙重{にじゅう}促音化{そくおんか}的典型{てんけい}。',
-            trapExplanation: '8888是學習{がくしゅう}音變{おんへん}規則{きそく}の重要{じゅうよう}數字{すうじ}。',
-            relatedRules: ['八{はち}引發{いんはつ}の促音化{そくおんか}', '複合{ふくごう}音變{おんへん}']
+            correctRule: '「八千八百{はっせんはっぴゃく}」是雙重促音化的典型。',
+            trapExplanation: '8888是學習音變規則的重要數字。',
+            relatedRules: ['八引發的促音化', '複合音變']
         },
         sourceItem: { value: 8800, kanji: '八千八百', reading: 'はっせんはっぴゃく' }
     },
@@ -1064,16 +1064,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: '学生は＿＿人います。',
         stem_zh: '有一千兩百三十四名學生。',
         options: [
-            { text: 'せんにひゃくさんじゅうよんにん', isCorrect: false, reason: '陷阱{かんけい}！「三十{さんじゅう}」不是「さんじゅう」。' },
-            { text: 'せんにひゃくさんじゅうよにん', isCorrect: true, reason: '正確{せいかく}！「四人{よにん}」使用{しよう}「よ」，「三十{さんじゅう}」正常{せいじょう}。' },
-            { text: 'いちせんにひゃくさんじゅうしにん', isCorrect: false, reason: '「四{し}」要避諱{ひき}用「よ」，且省略{しょうりゃく}「いち」。' },
-            { text: 'せんにびゃくさんじゅうよにん', isCorrect: false, reason: '「二百{にひゃく}」不濁音化{ふだくおんか}。' }
+            { text: 'せんにひゃくさんじゅうよんにん', isCorrect: false, reason: '陷阱！「三十」不是「さんじゅう」。' },
+            { text: 'せんにひゃくさんじゅうよにん', isCorrect: true, reason: '正確！「四人」使用「よ」，「三十」正常。' },
+            { text: 'いちせんにひゃくさんじゅうしにん', isCorrect: false, reason: '「四{し}」要避諱用「よ」，且省略「いち」。' },
+            { text: 'せんにびゃくさんじゅうよにん', isCorrect: false, reason: '「二百」不濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「千二百三十四人{せんにひゃくさんじゅうよにん}」中，「四{し}」在人數{にんずう}時用「よ」。',
-            trapExplanation: '人數{にんずう}時「四{し}」要用「よ」避諱{ひき}。',
-            relatedRules: ['四{よん}の避諱{ひき}', '人數{にんずう}の表達{ひょうたつ}']
+            correctRule: '「千二百三十四人{せんにひゃくさんじゅうよにん}」中，「四」在人數時用「よ」。',
+            trapExplanation: '人數時「四」要用「よ」避諱。',
+            relatedRules: ['四の避諱', '人數的表達']
         },
         sourceItem: { value: 1234, kanji: '千二百三十四人', reading: 'せんにひゃくさんじゅうよにん' }
     },
@@ -1090,15 +1090,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（四千五百六十七日圓）'
         },
         options: [
-            { text: 'よんせんごひゃくろくじゅうななえん', isCorrect: true, reason: '正確{せいかく}！使用{しよう}「よん」和「なな」避諱{ひき}。' },
-            { text: 'しせんごひゃくろくじゅうしちえん', isCorrect: false, reason: '「四{し}」和「七{しち}」都要避諱{ひき}用「よん」和「なな」。' },
-            { text: 'よんせんごひゃくろくじゅうしちえん', isCorrect: false, reason: '「七{しち}」要用「なな」避免{ひめん}混淆{こんこう}。' },
-            { text: 'しせんごひゃくろくじゅうななえん', isCorrect: false, reason: '「四{し}」要用「よん」避諱{ひき}。' }
+            { text: 'よんせんごひゃくろくじゅうななえん', isCorrect: true, reason: '正確！使用「よん」和「なな」避諱。' },
+            { text: 'しせんごひゃくろくじゅうしちえん', isCorrect: false, reason: '「四」和「七」都要避諱用「よん」和「なな」。' },
+            { text: 'よんせんごひゃくろくじゅうしちえん', isCorrect: false, reason: '「七」要用「なな」避免混淆。' },
+            { text: 'しせんごひゃくろくじゅうななえん', isCorrect: false, reason: '「四」要用「よん」避諱。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四千五百六十七円{よんせんごひゃくろくじゅうななえん}」中，「四{し}」用「よん」，「七{しち}」用「なな」。',
-            relatedRules: ['四{よん}の避諱{ひき}', '七{なな}の避免{ひめん}混淆{こんこう}']
+            correctRule: '「四千五百六十七円{よんせんごひゃくろくじゅうななえん}」中，「四」用「よん」，「七」用「なな」。',
+            relatedRules: ['四の避諱', '七の避免混淆']
         },
         sourceItem: { value: 4567, kanji: '四千五百六十七円', reading: 'よんせんごひゃくろくじゅうななえん' }
     },
@@ -1108,18 +1108,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五千メートル」的正確讀音是？',
+        stem: '「五千メートル」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五千公尺」的正確讀音是？',
         options: [
-            { text: 'ごせんメートル', isCorrect: true, reason: '正確{せいかく}！「五千{ごせん}」加{か}外來語{がいらいご}「メートル」。' },
-            { text: 'いつせんメートル', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'ごぜんメートル', isCorrect: false, reason: '「五千{ごせん}」不濁音化{ふだくおんか}。「ごぜん」是「午前{ごぜん}」。' },
-            { text: 'ごっせんメートル', isCorrect: false, reason: '「五{ご}」不促音化{ふそくおんか}。' }
+            { text: 'ごせんメートル', isCorrect: true, reason: '正確！「五千{ごせん}」加外來語「メートル」。' },
+            { text: 'いつせんメートル', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごぜんメートル', isCorrect: false, reason: '「五千{ごせん}」不濁音化。「ごぜん」是「午前」。' },
+            { text: 'ごっせんメートル', isCorrect: false, reason: '「五」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五千メートル{ごせんメートル}」是常見{じょうけん}の距離{きょり}表達{ひょうたつ}。',
-            relatedRules: ['千位數{せんいすう}+單位{たんい}', '距離{きょり}の表達{ひょうたつ}']
+            correctRule: '「五千メートル」是常見の距離表達。',
+            relatedRules: ['千位數+單位', '距離的表達']
         },
         sourceItem: { value: 5000, kanji: '五千メートル', reading: 'ごせんメートル' }
     },
@@ -1132,16 +1132,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この商品は＿＿円です。',
         stem_zh: '這個商品六千七百八十九日圓。',
         options: [
-            { text: 'ろくせんななひゃくはちじゅうきゅうえん', isCorrect: false, reason: '陷阱{かんけい}！「八十{はちじゅう}」要正確{せいかく}發音{はつおん}。' },
-            { text: 'ろくせんななひゃくはちじゅうくえん', isCorrect: true, reason: '正確{せいかく}！「九{きゅう}」在這裡{ここ}通常{つうじょう}用「く」也可以{かのう}，但「きゅう」更常見{じょうけん}。' },
-            { text: 'ろっせんななひゃくはちじゅうくえん', isCorrect: false, reason: '「六千{ろくせん}」不促音化{ふそくおんか}。' },
-            { text: 'ろくせんしちひゃくはちじゅうくえん', isCorrect: false, reason: '「七{しち}」在這裡{ここ}用「なな」更常見{じょうけん}。' }
+            { text: 'ろくせんななひゃくはちじゅうきゅうえん', isCorrect: false, reason: '陷阱！「八十{はちじゅう}」要正確發音。' },
+            { text: 'ろくせんななひゃくはちじゅうくえん', isCorrect: true, reason: '正確！「九{きゅう}」在這裡通常用「く」也可以，但「きゅう」更常見。' },
+            { text: 'ろっせんななひゃくはちじゅうくえん', isCorrect: false, reason: '「六千{ろくせん}」不促音化。' },
+            { text: 'ろくせんしちひゃくはちじゅうくえん', isCorrect: false, reason: '「七{しち}」在這裡用「なな」更常見。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「六千七百八十九円{ろくせんななひゃくはちじゅうくえん}」中，「六千{ろくせん}」無{ない}音變{おんへん}。',
-            trapExplanation: '「六千{ろくせん}」與「六百{ろっぴゃく}」不同{ふどう}，不促音化{ふそくおんか}。',
-            relatedRules: ['六千{ろくせん}の發音{はつおん}', '複合{ふくごう}金額{きんがく}']
+            correctRule: '「六千七百八十九円{ろくせんななひゃくはちじゅうくえん}」中，「六千{ろくせん}」無音變。',
+            trapExplanation: '「六千{ろくせん}」與「六百{ろっぴゃく}」不同，不促音化。',
+            relatedRules: ['六千的發音', '複合金額']
         },
         sourceItem: { value: 6789, kanji: '六千七百八十九円', reading: 'ろくせんななひゃくはちじゅうくえん' }
     },
@@ -1153,18 +1153,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二万」的正確讀音是？',
+        stem: '「二万」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「兩萬」的正確讀音是？',
         options: [
-            { text: 'にまん', isCorrect: true, reason: '正確{せいかく}！「二万{にまん}」讀作{どくさ}「にまん」。' },
-            { text: 'ふたまん', isCorrect: false, reason: '組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}「に」。' },
-            { text: 'りまん', isCorrect: false, reason: '「二{に}」不變{ふへん}「り」。' },
-            { text: 'にばん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。' }
+            { text: 'にまん', isCorrect: true, reason: '正確！「二万{にまん}」讀作「にまん」。' },
+            { text: 'ふたまん', isCorrect: false, reason: '組合數字使用音讀「に」。' },
+            { text: 'りまん', isCorrect: false, reason: '「二{に}」不變「り」。' },
+            { text: 'にばん', isCorrect: false, reason: '「万」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二万{にまん}」讀作{どくさ}「にまん」，無{ない}音變{おんへん}。',
-            relatedRules: ['万位數{まんいすう}の讀法{よみかた}', '20000の發音{はつおん}']
+            correctRule: '「二万{にまん}」讀作「にまん」，無音變。',
+            relatedRules: ['万位數的讀法', '20000的發音']
         },
         sourceItem: { value: 20000, kanji: '二万', reading: 'にまん' }
     },
@@ -1177,16 +1177,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この車は＿＿円です。',
         stem_zh: '這台車三萬日圓。',
         options: [
-            { text: 'さんまんえん', isCorrect: false, reason: '陷阱{かんけい}！「三万{さんまん}」要濁音化{だくおんか}！讀む{よむ}「さんばん」...不對{ふたい}！' },
-            { text: 'さんまんえん', isCorrect: true, reason: '正確{せいかく}！實際上{じっさいじょう}「三万{さんまん}」不濁音化{ふだくおんか}。' },
-            { text: 'みまんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「さん」。' },
-            { text: 'さんばんえん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}為「ばん」。' }
+            { text: 'さんまんえん', isCorrect: false, reason: '陷阱！「三万{さんまん}」要濁音化！讀「さんばん」...不對！' },
+            { text: 'さんまんえん', isCorrect: true, reason: '正確！實際上「三万{さんまん}」不濁音化。' },
+            { text: 'みまんえん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんばんえん', isCorrect: false, reason: '「万{まん}」不濁音化為「ばん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三万{さんまん}」實際上{じっさいじょう}不濁音化{ふだくおんか}！這與「三千{さんぜん}」不同{ふどう}。',
-            trapExplanation: '這是反陷阱題{はんかんけいだい}！學習者{がくしゅうしゃ}容易{ようい}過度{かど}適用{てきよう}濁音化{だくおんか}規則{きそく}。',
-            relatedRules: ['万{まん}の特殊{とくしゅ}規則{きそく}', '三万{さんまん}不濁音化{ふだくおんか}']
+            correctRule: '「三万{さんまん}」實際上不濁音化！這與「三千{さんぜん}」不同。',
+            trapExplanation: '這是反陷阱題！學習者容易過度適用濁音化規則。',
+            relatedRules: ['万的特殊規則', '三万不濁音化']
         },
         sourceItem: { value: 30000, kanji: '三万円', reading: 'さんまんえん' }
     },
@@ -1203,15 +1203,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（四萬日圓）'
         },
         options: [
-            { text: 'よんまんえん', isCorrect: true, reason: '正確{せいかく}！「四万円{よんまんえん}」。' },
-            { text: 'しまんえん', isCorrect: false, reason: '為{ため}避諱{ひき}「死{し}」，多用{おおくもちい}「よん」。' },
-            { text: 'よまんえん', isCorrect: false, reason: '應{おう}說{いう}「よん」不是「よ」。' },
-            { text: 'よんばんえん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。' }
+            { text: 'よんまんえん', isCorrect: true, reason: '正確！「四万円{よんまんえん}」。' },
+            { text: 'しまんえん', isCorrect: false, reason: '為避諱「死」，多用「よん」。' },
+            { text: 'よまんえん', isCorrect: false, reason: '應說「よん」不是「よ」。' },
+            { text: 'よんばんえん', isCorrect: false, reason: '「万」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四万円{よんまんえん}」使用{しよう}「よん」避諱{ひき}。',
-            relatedRules: ['四{よん}の避諱{ひき}', '万位數{まんいすう}金額{きんがく}']
+            correctRule: '「四万円{よんまんえん}」使用「よん」避諱。',
+            relatedRules: ['四の避諱', '万位數金額']
         },
         sourceItem: { value: 40000, kanji: '四万円', reading: 'よんまんえん' }
     },
@@ -1221,18 +1221,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五万」的正確讀音是？',
+        stem: '「五万」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五萬」的正確讀音是？',
         options: [
-            { text: 'ごまん', isCorrect: true, reason: '正確{せいかく}！「五万{ごまん}」讀作{どくさ}「ごまん」。' },
-            { text: 'いつまん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'ごばん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。「ごばん」是「碁盤{ごばん}」。' },
-            { text: 'ごっまん', isCorrect: false, reason: '「五{ご}」不促音化{ふそくおんか}。' }
+            { text: 'ごまん', isCorrect: true, reason: '正確！「五万{ごまん}」讀作「ごまん」。' },
+            { text: 'いつまん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごばん', isCorrect: false, reason: '「万」不濁音化。「ごばん」是「碁盤」。' },
+            { text: 'ごっまん', isCorrect: false, reason: '「五」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五万{ごまん}」讀作{どくさ}「ごまん」，無{ない}音變{おんへん}。',
-            relatedRules: ['万位數{まんいすう}の讀法{よみかた}', '50000の發音{はつおん}']
+            correctRule: '「五万{ごまん}」讀作「ごまん」，無音變。',
+            relatedRules: ['万位數的讀法', '50000的發音']
         },
         sourceItem: { value: 50000, kanji: '五万', reading: 'ごまん' }
     },
@@ -1245,16 +1245,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この家電は＿＿円です。',
         stem_zh: '這個家電八萬日圓。',
         options: [
-            { text: 'はちまんえん', isCorrect: false, reason: '陷阱{かんけい}！「八万{はちまん}」要促音化{そくおんか}！' },
-            { text: 'はちまんえん', isCorrect: true, reason: '正確{せいかく}！實際上{じっさいじょう}「八万{はちまん}」不促音化{ふそくおんか}。' },
-            { text: 'やまんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「はち」。' },
-            { text: 'はっまんえん', isCorrect: false, reason: '「八万{はちまん}」實際上{じっさいじょう}不促音化{ふそくおんか}！' }
+            { text: 'はちまんえん', isCorrect: false, reason: '陷阱！「八万{はちまん}」要促音化！' },
+            { text: 'はちまんえん', isCorrect: true, reason: '正確！實際上「八万{はちまん}」不促音化。' },
+            { text: 'やまんえん', isCorrect: false, reason: '使用音讀「はち」。' },
+            { text: 'はっまんえん', isCorrect: false, reason: '「八万{はちまん}」實際上不促音化！' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八万{はちまん}」實際上{じっさいじょう}不促音化{ふそくおんか}！這與「八千{はっせん}」不同{ふどう}。',
-            trapExplanation: '這是反陷阱題{はんかんけいだい}！「八{はち}」在「万{まん}」前{まえ}不促音化{ふそくおんか}。',
-            relatedRules: ['万{まん}の特殊{とくしゅ}規則{きそく}', '八万{はちまん}不促音化{ふそくおんか}']
+            correctRule: '「八万{はちまん}」實際上不促音化！這與「八千{はっせん}」不同。',
+            trapExplanation: '這是反陷阱題！「八」在「万」前不促音化。',
+            relatedRules: ['万的特殊規則', '八万不促音化']
         },
         sourceItem: { value: 80000, kanji: '八万円', reading: 'はちまんえん' }
     },
@@ -1269,16 +1269,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: '「三千」和「三万」的讀音規則有何不同？',
         stem_zh: '「三千」和「三萬」的讀音規則有何不同？',
         options: [
-            { text: '三千讀「さんぜん」（濁音化），三万讀「さんまん」（不濁音化）', isCorrect: true, reason: '正確{せいかく}！「千{せん}」會濁音化{だくおんか}，但「万{まん}」不會{ふかい}。' },
-            { text: '三千讀「さんせん」，三万讀「さんばん」', isCorrect: false, reason: '「三千{さんぜん}」要濁音化{だくおんか}，「三万{さんまん}」不濁音化{ふだくおんか}。' },
-            { text: '兩者都不濁音化', isCorrect: false, reason: '「三千{さんぜん}」要濁音化{だくおんか}。' },
-            { text: '兩者都濁音化', isCorrect: false, reason: '「三万{さんまん}」不濁音化{ふだくおんか}。' }
+            { text: '三千讀「さんぜん」（濁音化），三万讀「さんまん」（不濁音化）', isCorrect: true, reason: '正確！「千{せん}」會濁音化，但「万{まん}」不會。' },
+            { text: '三千讀「さんせん」，三万讀「さんばん」', isCorrect: false, reason: '「三千{さんぜん}」要濁音化，「三万{さんまん}」不濁音化。' },
+            { text: '兩者都不濁音化', isCorrect: false, reason: '「三千{さんぜん}」要濁音化。' },
+            { text: '兩者都濁音化', isCorrect: false, reason: '「三万{さんまん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「千{せん}」和「万{まん}」在「三{さん}」後面{うしろ}的音變{おんへん}規則{きそく}不同{ふどう}。',
-            trapExplanation: '這是測試{そくし}「千{せん}」和「万{まん}」音變{おんへん}差異{さい}の比較題{ひかくだい}。',
-            relatedRules: ['三千{さんぜん}の濁音化{だくおんか}', '三万{さんまん}不濁音化{ふだくおんか}']
+            correctRule: '「千」和「万」在「三」後面的音變規則不同。',
+            trapExplanation: '這是測試「千」和「万」音變差異の比較題。',
+            relatedRules: ['三千的濁音化', '三万不濁音化']
         },
         sourceItem: { value: 3000, kanji: '三千/三万', reading: 'さんぜん/さんまん' }
     },
@@ -1291,16 +1291,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: '「八千円」和「八万円」各怎麼讀？',
         stem_zh: '「八千日圓」和「八萬日圓」各怎麼讀？',
         options: [
-            { text: '八千円讀「はっせんえん」，八万円讀「はちまんえん」', isCorrect: true, reason: '正確{せいかく}！「千{せん}」會促音化{そくおんか}，但「万{まん}」不會{ふかい}。' },
-            { text: '八千円讀「はちせんえん」，八万円讀「はっまんえん」', isCorrect: false, reason: '規則{きそく}相反{そうはん}了！' },
-            { text: '兩者都促音化', isCorrect: false, reason: '「八万{はちまん}」不促音化{ふそくおんか}。' },
-            { text: '兩者都不促音化', isCorrect: false, reason: '「八千{はっせん}」要促音化{そくおんか}。' }
+            { text: '八千円讀「はっせんえん」，八万円讀「はちまんえん」', isCorrect: true, reason: '正確！「千{せん}」會促音化，但「万{まん}」不會。' },
+            { text: '八千円讀「はちせんえん」，八万円讀「はっまんえん」', isCorrect: false, reason: '規則相反了！' },
+            { text: '兩者都促音化', isCorrect: false, reason: '「八万{はちまん}」不促音化。' },
+            { text: '兩者都不促音化', isCorrect: false, reason: '「八千{はっせん}」要促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「八千{はっせん}」促音化{そくおんか}，「八万{はちまん}」不促音化{ふそくおんか}。',
-            trapExplanation: '這是測試{そくし}「千{せん}」和「万{まん}」音變{おんへん}差異{さい}の比較題{ひかくだい}。',
-            relatedRules: ['八千{はっせん}の促音化{そくおんか}', '八万{はちまん}不促音化{ふそくおんか}']
+            correctRule: '「八千{はっせん}」促音化，「八万{はちまん}」不促音化。',
+            trapExplanation: '這是測試「千」和「万」音變差異の比較題。',
+            relatedRules: ['八千的促音化', '八万不促音化']
         },
         sourceItem: { value: 8000, kanji: '八千円/八万円', reading: 'はっせんえん/はちまんえん' }
     },
@@ -1319,15 +1319,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（四千兩百日圓）'
         },
         options: [
-            { text: 'よんせんにひゃくえん', isCorrect: true, reason: '正確{せいかく}！「四千二百円{よんせんにひゃくえん}」。' },
-            { text: 'しせんにひゃくえん', isCorrect: false, reason: '為{ため}避諱{ひき}多用{おおくもちい}「よん」。' },
-            { text: 'よんせんふたひゃくえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「に」。' },
-            { text: 'よんぜんにひゃくえん', isCorrect: false, reason: '「四千{よんせん}」不濁音化{ふだくおんか}。' }
+            { text: 'よんせんにひゃくえん', isCorrect: true, reason: '正確！「四千二百円{よんせんにひゃくえん}」。' },
+            { text: 'しせんにひゃくえん', isCorrect: false, reason: '為避諱多用「よん」。' },
+            { text: 'よんせんふたひゃくえん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'よんぜんにひゃくえん', isCorrect: false, reason: '「四千{よんせん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四千二百円{よんせんにひゃくえん}」無{ない}音變{おんへん}。',
-            relatedRules: ['四{よん}の避諱{ひき}', '組合{くみあわせ}金額{きんがく}']
+            correctRule: '「四千二百円{よんせんにひゃくえん}」無音變。',
+            relatedRules: ['四の避諱', '組合金額']
         },
         sourceItem: { value: 4200, kanji: '四千二百円', reading: 'よんせんにひゃくえん' }
     },
@@ -1337,19 +1337,19 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「五千六百」的正確讀音是？',
+        stem: '「五千六百」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五千六百」的正確讀音是？',
         options: [
-            { text: 'ごせんろくひゃく', isCorrect: false, reason: '陷阱{かんけい}！「六百{ろっぴゃく}」要促音化{そくおんか}和半濁音化{はんだくおんか}。' },
-            { text: 'ごせんろっぴゃく', isCorrect: true, reason: '正確{せいかく}！「五千{ごせん}」無{ない}音變{おんへん}，「六百{ろっぴゃく}」促音化{そくおんか}+半濁音化{はんだくおんか}。' },
-            { text: 'ごっせんろっぴゃく', isCorrect: false, reason: '「五千{ごせん}」不促音化{ふそくおんか}。' },
-            { text: 'ごせんろくびゃく', isCorrect: false, reason: '「六百{ろっぴゃく}」不是濁音化{だくおんか}。' }
+            { text: 'ごせんろくひゃく', isCorrect: false, reason: '陷阱！「六百{ろっぴゃく}」要促音化和半濁音化。' },
+            { text: 'ごせんろっぴゃく', isCorrect: true, reason: '正確！「五千{ごせん}」無音變，「六百{ろっぴゃく}」促音化+半濁音化。' },
+            { text: 'ごっせんろっぴゃく', isCorrect: false, reason: '「五千{ごせん}」不促音化。' },
+            { text: 'ごせんろくびゃく', isCorrect: false, reason: '「六百{ろっぴゃく}」不是濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「五千六百{ごせんろっぴゃく}」中，只有{ただ}「六百{ろっぴゃく}」需要{じゅよう}音變{おんへん}。',
-            trapExplanation: '不要{ふよう}過度{かど}適用{てきよう}音變{おんへん}規則{きそく}。',
-            relatedRules: ['五千{ごせん}の發音{はつおん}', '六百{ろっぴゃく}の音變{おんへん}']
+            correctRule: '「五千六百{ごせんろっぴゃく}」中，只有「六百{ろっぴゃく}」需要音變。',
+            trapExplanation: '不要過度適用音變規則。',
+            relatedRules: ['五千的發音', '六百的音變']
         },
         sourceItem: { value: 5600, kanji: '五千六百', reading: 'ごせんろっぴゃく' }
     },
@@ -1362,16 +1362,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書七千三百日圓。',
         options: [
-            { text: 'ななせんさんひゃくえん', isCorrect: false, reason: '陷阱{かんけい}！「三百{さんびゃく}」要濁音化{だくおんか}。' },
-            { text: 'ななせんさんびゃくえん', isCorrect: true, reason: '正確{せいかく}！「七千三百円{ななせんさんびゃくえん}」。' },
-            { text: 'しちせんさんびゃくえん', isCorrect: false, reason: '為{ため}避免{ひめん}混淆{こんこう}多用{おおくもちい}「なな」。' },
-            { text: 'ななぜんさんびゃくえん', isCorrect: false, reason: '「七千{ななせん}」不濁音化{ふだくおんか}。' }
+            { text: 'ななせんさんひゃくえん', isCorrect: false, reason: '陷阱！「三百{さんびゃく}」要濁音化。' },
+            { text: 'ななせんさんびゃくえん', isCorrect: true, reason: '正確！「七千三百円{ななせんさんびゃくえん}」。' },
+            { text: 'しちせんさんびゃくえん', isCorrect: false, reason: '為避免混淆多用「なな」。' },
+            { text: 'ななぜんさんびゃくえん', isCorrect: false, reason: '「七千{ななせん}」不濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「七千三百円{ななせんさんびゃくえん}」中，「七千{ななせん}」無{ない}音變{おんへん}，「三百{さんびゃく}」濁音化{だくおんか}。',
-            trapExplanation: '「三百{さんびゃく}」在任何{にんい}位置{いち}都要{とも}濁音化{だくおんか}。',
-            relatedRules: ['七千{ななせん}の發音{はつおん}', '三百{さんびゃく}の濁音化{だくおんか}']
+            correctRule: '「七千三百円{ななせんさんびゃくえん}」中，「七千{ななせん}」無音變，「三百{さんびゃく}」濁音化。',
+            trapExplanation: '「三百{さんびゃく}」在任何位置都要濁音化。',
+            relatedRules: ['七千的發音', '三百的濁音化']
         },
         sourceItem: { value: 7300, kanji: '七千三百円', reading: 'ななせんさんびゃくえん' }
     },
@@ -1388,16 +1388,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（九千八百日圓）'
         },
         options: [
-            { text: 'きゅうせんはちひゃくえん', isCorrect: false, reason: '陷阱{かんけい}！「八百{はっぴゃく}」要促音化{そくおんか}和半濁音化{はんだくおんか}。' },
-            { text: 'きゅうせんはっぴゃくえん', isCorrect: true, reason: '正確{せいかく}！「九千八百円{きゅうせんはっぴゃくえん}」。' },
-            { text: 'くせんはっぴゃくえん', isCorrect: false, reason: '為{ため}避諱{ひき}多用{おおくもちい}「きゅう」。' },
-            { text: 'きゅうぜんはっぴゃくえん', isCorrect: false, reason: '「九千{きゅうせん}」不濁音化{ふだくおんか}。' }
+            { text: 'きゅうせんはちひゃくえん', isCorrect: false, reason: '陷阱！「八百{はっぴゃく}」要促音化和半濁音化。' },
+            { text: 'きゅうせんはっぴゃくえん', isCorrect: true, reason: '正確！「九千八百円{きゅうせんはっぴゃくえん}」。' },
+            { text: 'くせんはっぴゃくえん', isCorrect: false, reason: '為避諱多用「きゅう」。' },
+            { text: 'きゅうぜんはっぴゃくえん', isCorrect: false, reason: '「九千{きゅうせん}」不濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「九千八百円{きゅうせんはっぴゃくえん}」中，「九千{きゅうせん}」無{ない}音變{おんへん}，「八百{はっぴゃく}」促音化{そくおんか}+半濁音化{はんだくおんか}。',
-            trapExplanation: '「八百{はっぴゃく}」在任何{にんい}位置{いち}都要{とも}音變{おんへん}。',
-            relatedRules: ['九千{きゅうせん}の發音{はつおん}', '八百{はっぴゃく}の音變{おんへん}']
+            correctRule: '「九千八百円{きゅうせんはっぴゃくえん}」中，「九千{きゅうせん}」無音變，「八百{はっぴゃく}」促音化+半濁音化。',
+            trapExplanation: '「八百{はっぴゃく}」在任何位置都要音變。',
+            relatedRules: ['九千的發音', '八百的音變']
         },
         sourceItem: { value: 9800, kanji: '九千八百円', reading: 'きゅうせんはっぴゃくえん' }
     },
@@ -1409,18 +1409,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二千メートル」的正確讀音是？',
+        stem: '「二千メートル」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「兩千公尺」的正確讀音是？',
         options: [
-            { text: 'にせんメートル', isCorrect: true, reason: '正確{せいかく}！「二千{にせん}」加{か}「メートル」。' },
-            { text: 'ふたせんメートル', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「に」。' },
-            { text: 'にぜんメートル', isCorrect: false, reason: '「二千{にせん}」不濁音化{ふだくおんか}。' },
-            { text: 'にっせんメートル', isCorrect: false, reason: '「二{に}」不促音化{ふそくおんか}。' }
+            { text: 'にせんメートル', isCorrect: true, reason: '正確！「二千{にせん}」加「メートル」。' },
+            { text: 'ふたせんメートル', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にぜんメートル', isCorrect: false, reason: '「二千{にせん}」不濁音化。' },
+            { text: 'にっせんメートル', isCorrect: false, reason: '「二」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二千メートル{にせんメートル}」是常見{じょうけん}の距離{きょり}表達{ひょうたつ}。',
-            relatedRules: ['千位數{せんいすう}+單位{たんい}', '距離{きょり}の表達{ひょうたつ}']
+            correctRule: '「二千メートル」是常見の距離表達。',
+            relatedRules: ['千位數+單位', '距離的表達']
         },
         sourceItem: { value: 2000, kanji: '二千メートル', reading: 'にせんメートル' }
     },
@@ -1433,16 +1433,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この学校には＿＿人の学生がいます。',
         stem_zh: '這所學校有三千名學生。',
         options: [
-            { text: 'さんせんにん', isCorrect: false, reason: '陷阱{かんけい}！「三千{さんぜん}」要濁音化{だくおんか}。' },
-            { text: 'さんぜんにん', isCorrect: true, reason: '正確{せいかく}！「三千人{さんぜんにん}」。' },
-            { text: 'みせんにん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「さん」。' },
-            { text: 'さんぜんひと', isCorrect: false, reason: '人數{にんずう}用「にん」不用「ひと」。' }
+            { text: 'さんせんにん', isCorrect: false, reason: '陷阱！「三千{さんぜん}」要濁音化。' },
+            { text: 'さんぜんにん', isCorrect: true, reason: '正確！「三千人{さんぜんにん}」。' },
+            { text: 'みせんにん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんぜんひと', isCorrect: false, reason: '人數用「にん」不用「ひと」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三千人{さんぜんにん}」中，「三千{さんぜん}」濁音化{だくおんか}。',
-            trapExplanation: '人數{にんずう}表達{ひょうたつ}時也要{とも}注意{ちゅうい}音變{おんへん}。',
-            relatedRules: ['三千{さんぜん}の濁音化{だくおんか}', '人數{にんずう}の表達{ひょうたつ}']
+            correctRule: '「三千人{さんぜんにん}」中，「三千{さんぜん}」濁音化。',
+            trapExplanation: '人數表達時也要注意音變。',
+            relatedRules: ['三千的濁音化', '人數的表達']
         },
         sourceItem: { value: 3000, kanji: '三千人', reading: 'さんぜんにん' }
     },
@@ -1459,16 +1459,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿参加しました。（八千人）'
         },
         options: [
-            { text: 'はちせんにん', isCorrect: false, reason: '陷阱{かんけい}！「八千{はっせん}」要促音化{そくおんか}。' },
-            { text: 'はっせんにん', isCorrect: true, reason: '正確{せいかく}！「八千人{はっせんにん}」。' },
-            { text: 'やせんにん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「はち」→「はっ」。' },
-            { text: 'はちぜんにん', isCorrect: false, reason: '是促音化{そくおんか}，不是濁音化{だくおんか}。' }
+            { text: 'はちせんにん', isCorrect: false, reason: '陷阱！「八千{はっせん}」要促音化。' },
+            { text: 'はっせんにん', isCorrect: true, reason: '正確！「八千人{はっせんにん}」。' },
+            { text: 'やせんにん', isCorrect: false, reason: '使用音讀「はち」→「はっ」。' },
+            { text: 'はちぜんにん', isCorrect: false, reason: '是促音化，不是濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八千人{はっせんにん}」中，「八千{はっせん}」促音化{そくおんか}。',
-            trapExplanation: '人數{にんずう}表達{ひょうたつ}時也要{とも}注意{ちゅうい}音變{おんへん}。',
-            relatedRules: ['八千{はっせん}の促音化{そくおんか}', '人數{にんずう}の表達{ひょうたつ}']
+            correctRule: '「八千人{はっせんにん}」中，「八千{はっせん}」促音化。',
+            trapExplanation: '人數表達時也要注意音變。',
+            relatedRules: ['八千的促音化', '人數的表達']
         },
         sourceItem: { value: 8000, kanji: '八千人', reading: 'はっせんにん' }
     },
@@ -1478,18 +1478,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「四千年」的正確讀音是？',
+        stem: '「四千年」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「四千年」的正確讀音是？',
         options: [
-            { text: 'よんせんねん', isCorrect: true, reason: '正確{せいかく}！「四千年{よんせんねん}」。' },
-            { text: 'しせんねん', isCorrect: false, reason: '為{ため}避諱{ひき}多用{おおくもちい}「よん」。' },
-            { text: 'よんぜんねん', isCorrect: false, reason: '「四千{よんせん}」不濁音化{ふだくおんか}。' },
-            { text: 'よっせんねん', isCorrect: false, reason: '「四{よん}」不促音化{ふそくおんか}。' }
+            { text: 'よんせんねん', isCorrect: true, reason: '正確！「四千年{よんせんねん}」。' },
+            { text: 'しせんねん', isCorrect: false, reason: '為避諱多用「よん」。' },
+            { text: 'よんぜんねん', isCorrect: false, reason: '「四千{よんせん}」不濁音化。' },
+            { text: 'よっせんねん', isCorrect: false, reason: '「四{よん}」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四千年{よんせんねん}」使用{しよう}「よん」避諱{ひき}，無{ない}音變{おんへん}。',
-            relatedRules: ['四{よん}の避諱{ひき}', '年數{ねんすう}の表達{ひょうたつ}']
+            correctRule: '「四千年{よんせんねん}」使用「よん」避諱，無音變。',
+            relatedRules: ['四の避諱', '年數的表達']
         },
         sourceItem: { value: 4000, kanji: '四千年', reading: 'よんせんねん' }
     },
@@ -1508,15 +1508,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（六萬日圓）'
         },
         options: [
-            { text: 'ろくまんえん', isCorrect: true, reason: '正確{せいかく}！「六万円{ろくまんえん}」。' },
-            { text: 'むまんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ろく」。' },
-            { text: 'ろっまんえん', isCorrect: false, reason: '「六万{ろくまん}」不促音化{ふそくおんか}。' },
-            { text: 'ろくばんえん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。' }
+            { text: 'ろくまんえん', isCorrect: true, reason: '正確！「六万円{ろくまんえん}」。' },
+            { text: 'むまんえん', isCorrect: false, reason: '使用音讀「ろく」。' },
+            { text: 'ろっまんえん', isCorrect: false, reason: '「六万」不促音化。' },
+            { text: 'ろくばんえん', isCorrect: false, reason: '「万」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六万円{ろくまんえん}」無{ない}音變{おんへん}，與「六百{ろっぴゃく}」「六千{ろくせん}」不同{ふどう}。',
-            relatedRules: ['六万{ろくまん}の發音{はつおん}', '万位數{まんいすう}の特殊{とくしゅ}規則{きそく}']
+            correctRule: '「六万円{ろくまんえん}」無音變，與「六百{ろっぴゃく}」「六千{ろくせん}」不同。',
+            relatedRules: ['六万的發音', '万位數的特殊規則']
         },
         sourceItem: { value: 60000, kanji: '六万円', reading: 'ろくまんえん' }
     },
@@ -1526,18 +1526,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「七万」的正確讀音是？',
+        stem: '「七万」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「七萬」的正確讀音是？',
         options: [
-            { text: 'ななまん', isCorrect: true, reason: '正確{せいかく}！「七万{ななまん}」讀作{どくさ}「ななまん」。' },
-            { text: 'しちまん', isCorrect: false, reason: '為{ため}避免{ひめん}混淆{こんこう}多用{おおくもちい}「なな」。' },
-            { text: 'ななばん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。' },
-            { text: 'なっまん', isCorrect: false, reason: '「七{なな}」不促音化{ふそくおんか}。' }
+            { text: 'ななまん', isCorrect: true, reason: '正確！「七万{ななまん}」讀作「ななまん」。' },
+            { text: 'しちまん', isCorrect: false, reason: '為避免混淆多用「なな」。' },
+            { text: 'ななばん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'なっまん', isCorrect: false, reason: '「七」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七万{ななまん}」讀作{どくさ}「ななまん」，無{ない}音變{おんへん}。',
-            relatedRules: ['七{なな}の避免{ひめん}混淆{こんこう}', '万位數{まんいすう}の讀法{よみかた}']
+            correctRule: '「七万{ななまん}」讀作「ななまん」，無音變。',
+            relatedRules: ['七の避免混淆', '万位數的讀法']
         },
         sourceItem: { value: 70000, kanji: '七万', reading: 'ななまん' }
     },
@@ -1550,15 +1550,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この車は＿＿円です。',
         stem_zh: '這台車九萬日圓。',
         options: [
-            { text: 'きゅうまんえん', isCorrect: true, reason: '正確{せいかく}！「九万円{きゅうまんえん}」。' },
-            { text: 'くまんえん', isCorrect: false, reason: '為{ため}避諱{ひき}多用{おおくもちい}「きゅう」。' },
-            { text: 'きゅうばんえん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。' },
-            { text: 'きゅっまんえん', isCorrect: false, reason: '「九{きゅう}」不促音化{ふそくおんか}。' }
+            { text: 'きゅうまんえん', isCorrect: true, reason: '正確！「九万円{きゅうまんえん}」。' },
+            { text: 'くまんえん', isCorrect: false, reason: '為避諱多用「きゅう」。' },
+            { text: 'きゅうばんえん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'きゅっまんえん', isCorrect: false, reason: '「九」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「九万円{きゅうまんえん}」使用{しよう}「きゅう」避諱{ひき}，無{ない}音變{おんへん}。',
-            relatedRules: ['九{きゅう}の避諱{ひき}', '万位數{まんいすう}金額{きんがく}']
+            correctRule: '「九万円{きゅうまんえん}」使用「きゅう」避諱，無音變。',
+            relatedRules: ['九の避諱', '万位數金額']
         },
         sourceItem: { value: 90000, kanji: '九万円', reading: 'きゅうまんえん' }
     },
@@ -1577,15 +1577,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（一萬兩千日圓）'
         },
         options: [
-            { text: 'いちまんにせんえん', isCorrect: true, reason: '正確{せいかく}！「一万二千円{いちまんにせんえん}」。' },
-            { text: 'まんにせんえん', isCorrect: false, reason: '「一万{いちまん}」的「いち」不可{ふか}省略{しょうりゃく}。' },
-            { text: 'いちまんふたせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「に」。' },
-            { text: 'いちまんにぜんえん', isCorrect: false, reason: '「二千{にせん}」不濁音化{ふだくおんか}。' }
+            { text: 'いちまんにせんえん', isCorrect: true, reason: '正確！「一万二千円{いちまんにせんえん}」。' },
+            { text: 'まんにせんえん', isCorrect: false, reason: '「一万{いちまん}」的「いち」不可省略。' },
+            { text: 'いちまんふたせんえん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'いちまんにぜんえん', isCorrect: false, reason: '「二千{にせん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「一万二千円{いちまんにせんえん}」中，「いち」不可{ふか}省略{しょうりゃく}。',
-            relatedRules: ['一万{いちまん}の特殊{とくしゅ}規則{きそく}', '組合{くみあわせ}金額{きんがく}']
+            correctRule: '「一万二千円{いちまんにせんえん}」中，「いち」不可省略。',
+            relatedRules: ['一万的特殊規則', '組合金額']
         },
         sourceItem: { value: 12000, kanji: '一万二千円', reading: 'いちまんにせんえん' }
     },
@@ -1595,18 +1595,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「一万五千」的正確讀音是？',
+        stem: '「一万五千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一萬五千」的正確讀音是？',
         options: [
-            { text: 'いちまんごせん', isCorrect: true, reason: '正確{せいかく}！「一万五千{いちまんごせん}」。' },
-            { text: 'まんごせん', isCorrect: false, reason: '「一万{いちまん}」的「いち」不可{ふか}省略{しょうりゃく}。' },
-            { text: 'いちまんいつせん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'いちまんごぜん', isCorrect: false, reason: '「五千{ごせん}」不濁音化{ふだくおんか}。' }
+            { text: 'いちまんごせん', isCorrect: true, reason: '正確！「一万五千{いちまんごせん}」。' },
+            { text: 'まんごせん', isCorrect: false, reason: '「一万{いちまん}」的「いち」不可省略。' },
+            { text: 'いちまんいつせん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'いちまんごぜん', isCorrect: false, reason: '「五千{ごせん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「一万五千{いちまんごせん}」中，「いち」不可{ふか}省略{しょうりゃく}。',
-            relatedRules: ['一万{いちまん}の特殊{とくしゅ}規則{きそく}', '萬位數{まんいすう}組合{くみあわせ}']
+            correctRule: '「一万五千{いちまんごせん}」中，「いち」不可省略。',
+            relatedRules: ['一万的特殊規則', '萬位數組合']
         },
         sourceItem: { value: 15000, kanji: '一万五千', reading: 'いちまんごせん' }
     },
@@ -1619,16 +1619,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この家電は＿＿円です。',
         stem_zh: '這個家電一萬三千日圓。',
         options: [
-            { text: 'いちまんさんせんえん', isCorrect: false, reason: '陷阱{かんけい}！「三千{さんぜん}」要濁音化{だくおんか}。' },
-            { text: 'いちまんさんぜんえん', isCorrect: true, reason: '正確{せいかく}！「一万三千円{いちまんさんぜんえん}」。' },
-            { text: 'まんさんぜんえん', isCorrect: false, reason: '「いち」不可{ふか}省略{しょうりゃく}。' },
-            { text: 'いちばんさんぜんえん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。' }
+            { text: 'いちまんさんせんえん', isCorrect: false, reason: '陷阱！「三千{さんぜん}」要濁音化。' },
+            { text: 'いちまんさんぜんえん', isCorrect: true, reason: '正確！「一万三千円{いちまんさんぜんえん}」。' },
+            { text: 'まんさんぜんえん', isCorrect: false, reason: '「いち」不可省略。' },
+            { text: 'いちばんさんぜんえん', isCorrect: false, reason: '「万{まん}」不濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「一万三千円{いちまんさんぜんえん}」中，「三千{さんぜん}」濁音化{だくおんか}。',
-            trapExplanation: '即使{たとえ}在萬位數{まんいすう}後面{うしろ}，「三千{さんぜん}」仍{なお}需要{じゅよう}濁音化{だくおんか}。',
-            relatedRules: ['一万{いちまん}の特殊{とくしゅ}規則{きそく}', '三千{さんぜん}の濁音化{だくおんか}']
+            correctRule: '「一万三千円{いちまんさんぜんえん}」中，「三千{さんぜん}」濁音化。',
+            trapExplanation: '即使在萬位數後面，「三千{さんぜん}」仍需要濁音化。',
+            relatedRules: ['一万{いちまん}的特殊規則', '三千{さんぜん}的濁音化']
         },
         sourceItem: { value: 13000, kanji: '一万三千円', reading: 'いちまんさんぜんえん' }
     },
@@ -1645,16 +1645,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（一萬八千日圓）'
         },
         options: [
-            { text: 'いちまんはちせんえん', isCorrect: false, reason: '陷阱{かんけい}！「八千{はっせん}」要促音化{そくおんか}。' },
-            { text: 'いちまんはっせんえん', isCorrect: true, reason: '正確{せいかく}！「一万八千円{いちまんはっせんえん}」。' },
-            { text: 'まんはっせんえん', isCorrect: false, reason: '「いち」不可{ふか}省略{しょうりゃく}。' },
-            { text: 'いちまんやせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「はち」→「はっ」。' }
+            { text: 'いちまんはちせんえん', isCorrect: false, reason: '陷阱！「八千{はっせん}」要促音化。' },
+            { text: 'いちまんはっせんえん', isCorrect: true, reason: '正確！「一万八千円{いちまんはっせんえん}」。' },
+            { text: 'まんはっせんえん', isCorrect: false, reason: '「いち」不可省略。' },
+            { text: 'いちまんやせんえん', isCorrect: false, reason: '使用音讀「はち」→「はっ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「一万八千円{いちまんはっせんえん}」中，「八千{はっせん}」促音化{そくおんか}。',
-            trapExplanation: '即使{たとえ}在萬位數{まんいすう}後面{うしろ}，「八千{はっせん}」仍{なお}需要{じゅよう}促音化{そくおんか}。',
-            relatedRules: ['一万{いちまん}の特殊{とくしゅ}規則{きそく}', '八千{はっせん}の促音化{そくおんか}']
+            correctRule: '「一万八千円{いちまんはっせんえん}」中，「八千{はっせん}」促音化。',
+            trapExplanation: '即使在萬位數後面，「八千{はっせん}」仍需要促音化。',
+            relatedRules: ['一万{いちまん}的特殊規則', '八千{はっせん}的促音化']
         },
         sourceItem: { value: 18000, kanji: '一万八千円', reading: 'いちまんはっせんえん' }
     },
@@ -1666,18 +1666,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二千九百八十」的正確讀音是？',
+        stem: '「二千九百八十」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「兩千九百八十」的正確讀音是？',
         options: [
-            { text: 'にせんきゅうひゃくはちじゅう', isCorrect: false, reason: '陷阱{かんけい}！「九百{きゅうひゃく}」和「八十{はちじゅう}」的發音{はつおん}要確認{かくにん}。' },
-            { text: 'にせんきゅうひゃくはちじゅう', isCorrect: true, reason: '正確{せいかく}！「二千九百八十{にせんきゅうひゃくはちじゅう}」無{ない}音變{おんへん}。' },
-            { text: 'にぜんくひゃくはちじゅう', isCorrect: false, reason: '「二千{にせん}」不濁音化{ふだくおんか}，「九{きゅう}」不用「く」。' },
-            { text: 'ふたせんきゅうひゃくはちじゅう', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「に」。' }
+            { text: 'にせんきゅうひゃくはちじゅう', isCorrect: false, reason: '陷阱！「九百{きゅうひゃく}」和「八十{はちじゅう}」的發音要確認。' },
+            { text: 'にせんきゅうひゃくはちじゅう', isCorrect: true, reason: '正確！「二千九百八十{にせんきゅうひゃくはちじゅう}」無音變。' },
+            { text: 'にぜんくひゃくはちじゅう', isCorrect: false, reason: '「二千{にせん}」不濁音化，「九{きゅう}」不用「く」。' },
+            { text: 'ふたせんきゅうひゃくはちじゅう', isCorrect: false, reason: '使用音讀「に」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二千九百八十{にせんきゅうひゃくはちじゅう}」無{ない}音變{おんへん}。',
-            relatedRules: ['組合{くみあわせ}數字{すうじ}の讀法{よみかた}', '2980の發音{はつおん}']
+            correctRule: '「二千九百八十{にせんきゅうひゃくはちじゅう}」無音變。',
+            relatedRules: ['組合數字的讀法', '2980的發音']
         },
         sourceItem: { value: 2980, kanji: '二千九百八十', reading: 'にせんきゅうひゃくはちじゅう' }
     },
@@ -1690,16 +1690,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: '一年は＿＿日あります。',
         stem_zh: '一年有三百六十五天。',
         options: [
-            { text: 'さんびゃくろくじゅうごにち', isCorrect: true, reason: '正確{せいかく}！「三百六十五日{さんびゃくろくじゅうごにち}」。' },
-            { text: 'さんひゃくろくじゅうごにち', isCorrect: false, reason: '陷阱{かんけい}！「三百{さんびゃく}」要濁音化{だくおんか}。' },
-            { text: 'みびゃくろくじゅうごにち', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「さん」。' },
-            { text: 'さんびゃくむじゅうごにち', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ろく」。' }
+            { text: 'さんびゃくろくじゅうごにち', isCorrect: true, reason: '正確！「三百六十五日{さんびゃくろくじゅうごにち}」。' },
+            { text: 'さんひゃくろくじゅうごにち', isCorrect: false, reason: '陷阱！「三百{さんびゃく}」要濁音化。' },
+            { text: 'みびゃくろくじゅうごにち', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんびゃくむじゅうごにち', isCorrect: false, reason: '使用音讀「ろく」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三百六十五日{さんびゃくろくじゅうごにち}」中，「三百{さんびゃく}」濁音化{だくおんか}。',
-            trapExplanation: '這是日常{にちじょう}生活{せいかつ}中常見{じょうけん}の數字{すうじ}。',
-            relatedRules: ['三百{さんびゃく}の濁音化{だくおんか}', '日數{にっすう}の表達{ひょうたつ}']
+            correctRule: '「三百六十五日{さんびゃくろくじゅうごにち}」中，「三百{さんびゃく}」濁音化。',
+            trapExplanation: '這是日常生活中常見の數字。',
+            relatedRules: ['三百{さんびゃく}的濁音化', '日數的表達']
         },
         sourceItem: { value: 365, kanji: '三百六十五日', reading: 'さんびゃくろくじゅうごにち' }
     },
@@ -1716,15 +1716,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（七千八百九十日圓）'
         },
         options: [
-            { text: 'ななせんはっぴゃくきゅうじゅうえん', isCorrect: true, reason: '正確{せいかく}！「七千八百九十円{ななせんはっぴゃくきゅうじゅうえん}」。' },
-            { text: 'しちせんはっぴゃくきゅうじゅうえん', isCorrect: false, reason: '為{ため}避免{ひめん}混淆{こんこう}多用{おおくもちい}「なな」。' },
-            { text: 'ななせんはちひゃくきゅうじゅうえん', isCorrect: false, reason: '「八百{はっぴゃく}」要促音化{そくおんか}和半濁音化{はんだくおんか}。' },
-            { text: 'ななぜんはっぴゃくきゅうじゅうえん', isCorrect: false, reason: '「七千{ななせん}」不濁音化{ふだくおんか}。' }
+            { text: 'ななせんはっぴゃくきゅうじゅうえん', isCorrect: true, reason: '正確！「七千八百九十円{ななせんはっぴゃくきゅうじゅうえん}」。' },
+            { text: 'しちせんはっぴゃくきゅうじゅうえん', isCorrect: false, reason: '為避免混淆多用「なな」。' },
+            { text: 'ななせんはちひゃくきゅうじゅうえん', isCorrect: false, reason: '「八百{はっぴゃく}」要促音化和半濁音化。' },
+            { text: 'ななぜんはっぴゃくきゅうじゅうえん', isCorrect: false, reason: '「七千{ななせん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七千八百九十円{ななせんはっぴゃくきゅうじゅうえん}」中，「八百{はっぴゃく}」要音變{おんへん}。',
-            relatedRules: ['七千{ななせん}の發音{はつおん}', '八百{はっぴゃく}の音變{おんへん}']
+            correctRule: '「七千八百九十円{ななせんはっぴゃくきゅうじゅうえん}」中，「八百{はっぴゃく}」要音變。',
+            relatedRules: ['七千{ななせん}的發音', '八百{はっぴゃく}的音變']
         },
         sourceItem: { value: 7890, kanji: '七千八百九十円', reading: 'ななせんはっぴゃくきゅうじゅうえん' }
     },
@@ -1739,16 +1739,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: '下列哪個數字的千位會發生音變？',
         stem_zh: '下列哪個數字的千位會發生音變？',
         options: [
-            { text: '三千（さんぜん）- 濁音化', isCorrect: true, reason: '正確{せいかく}！「三千{さんぜん}」的「せん」會濁音化{だくおんか}為「ぜん」。' },
-            { text: '二千（にせん）- 無音變', isCorrect: false, reason: '「二千{にせん}」無{ない}音變{おんへん}，不是正確{せいかく}答案{こたえ}。' },
-            { text: '五千（ごせん）- 無音變', isCorrect: false, reason: '「五千{ごせん}」無{ない}音變{おんへん}，不是正確{せいかく}答案{こたえ}。' },
-            { text: '七千（ななせん）- 無音變', isCorrect: false, reason: '「七千{ななせん}」無{ない}音變{おんへん}，不是正確{せいかく}答案{こたえ}。' }
+            { text: '三千（さんぜん）- 濁音化', isCorrect: true, reason: '正確！「三千{さんぜん}」的「せん」會濁音化為「ぜん」。' },
+            { text: '二千（にせん）- 無音變', isCorrect: false, reason: '「二千{にせん}」無音變，不是正確答案。' },
+            { text: '五千（ごせん）- 無音變', isCorrect: false, reason: '「五千{ごせん}」無音變，不是正確答案。' },
+            { text: '七千（ななせん）- 無音變', isCorrect: false, reason: '「七千{ななせん}」無音變，不是正確答案。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '千位數{せんいすう}中，只有{ただ}「三千{さんぜん}」和「八千{はっせん}」會發生{はっせい}音變{おんへん}。',
-            trapExplanation: '這是總複習{そうふくしゅう}題{だい}，測試{そくし}對千位數{せんいすう}音變{おんへん}規則{きそく}の理解{りかい}。',
-            relatedRules: ['千{せん}の音變{おんへん}規則{きそく}', '三千{さんぜん}と八千{はっせん}']
+            correctRule: '千位數中，只有「三千{さんぜん}」和「八千{はっせん}」會發生音變。',
+            trapExplanation: '這是總複習題，測試對千位數音變規則の理解。',
+            relatedRules: ['千{せん}的音變規則', '三千{さんぜん}と八千{はっせん}']
         },
         sourceItem: { value: 3000, kanji: '三千', reading: 'さんぜん' }
     },
@@ -1761,16 +1761,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: '下列哪個說法正確？',
         stem_zh: '下列哪個說法正確？',
         options: [
-            { text: '「一万」必須讀「いちまん」，「一」不可省略', isCorrect: true, reason: '正確{せいかく}！「一万{いちまん}」的「いち」不可{ふか}省略{しょうりゃく}。' },
-            { text: '「一百」必須讀「いちひゃく」，「一」不可省略', isCorrect: false, reason: '「百{ひゃく}」通常{つうじょう}省略{しょうりゃく}「いち」。' },
-            { text: '「一千」必須讀「いちせん」，「一」不可省略', isCorrect: false, reason: '「千{せん}」通常{つうじょう}省略{しょうりゃく}「いち」。' },
-            { text: '「一」在所有數字單位前都可省略', isCorrect: false, reason: '「万{まん}」前{まえ}的「いち」不可{ふか}省略{しょうりゃく}。' }
+            { text: '「一万」必須讀「いちまん」，「一」不可省略', isCorrect: true, reason: '正確！「一万{いちまん}」的「いち」不可省略。' },
+            { text: '「一百」必須讀「いちひゃく」，「一」不可省略', isCorrect: false, reason: '「百{ひゃく}」通常省略「いち」。' },
+            { text: '「一千」必須讀「いちせん」，「一」不可省略', isCorrect: false, reason: '「千{せん}」通常省略「いち」。' },
+            { text: '「一」在所有數字單位前都可省略', isCorrect: false, reason: '「万{まん}」前的「いち」不可省略。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「一万{いちまん}」是特殊{とくしゅ}規則{きそく}，「いち」不可{ふか}省略{しょうりゃく}。',
-            trapExplanation: '這是總複習{そうふくしゅう}題{だい}，測試{そくし}對「一{いち}」省略{しょうりゃく}規則{きそく}の理解{りかい}。',
-            relatedRules: ['一万{いちまん}の特殊{とくしゅ}規則{きそく}', '「いち」の省略{しょうりゃく}']
+            correctRule: '「一万{いちまん}」是特殊規則，「いち」不可省略。',
+            trapExplanation: '這是總複習題，測試對「一{いち}」省略規則の理解。',
+            relatedRules: ['一万{いちまん}的特殊規則', '「いち」の省略']
         },
         sourceItem: { value: 10000, kanji: '一万', reading: 'いちまん' }
     },
@@ -1787,16 +1787,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '「八千」讀作「___」。'
         },
         options: [
-            { text: 'はっせん（促音化）；八万讀作「はちまん」（無音變）', isCorrect: true, reason: '正確{せいかく}！「千{せん}」前{まえ}促音化{そくおんか}，「万{まん}」前{まえ}不促音化{ふそくおんか}。' },
-            { text: 'はちせん；八万讀作「はっまん」', isCorrect: false, reason: '規則{きそく}相反{そうはん}了！' },
-            { text: '兩者都是「はっ」', isCorrect: false, reason: '「八万{はちまん}」不促音化{ふそくおんか}。' },
-            { text: '兩者都是「はち」', isCorrect: false, reason: '「八千{はっせん}」要促音化{そくおんか}。' }
+            { text: 'はっせん（促音化）；八万讀作「はちまん」（無音變）', isCorrect: true, reason: '正確！「千{せん}」前促音化，「万{まん}」前不促音化。' },
+            { text: 'はちせん；八万讀作「はっまん」', isCorrect: false, reason: '規則相反了！' },
+            { text: '兩者都是「はっ」', isCorrect: false, reason: '「八万{はちまん}」不促音化。' },
+            { text: '兩者都是「はち」', isCorrect: false, reason: '「八千{はっせん}」要促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「八{はち}」在「千{せん}」前{まえ}促音化{そくおんか}為「はっ」，但在「万{まん}」前{まえ}不促音化{ふそくおんか}。',
-            trapExplanation: '這是總複習{そうふくしゅう}題{だい}，測試{そくし}對「八{はち}」音變{おんへん}の理解{りかい}。',
-            relatedRules: ['八千{はっせん}の促音化{そくおんか}', '八万{はちまん}不促音化{ふそくおんか}']
+            correctRule: '「八{はち}」在「千{せん}」前促音化為「はっ」，但在「万{まん}」前不促音化。',
+            trapExplanation: '這是總複習題，測試對「八{はち}」音變の理解。',
+            relatedRules: ['八千{はっせん}的促音化', '八万{はちまん}不促音化']
         },
         sourceItem: { value: 8000, kanji: '八千/八万', reading: 'はっせん/はちまん' }
     },
@@ -1809,15 +1809,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: '「六千」讀作什麼？',
         stem_zh: '「六千」讀作什麼？',
         options: [
-            { text: 'ろくせん', isCorrect: true, reason: '正確{せいかく}！「六千{ろくせん}」無{ない}音變{おんへん}，與「六百{ろっぴゃく}」不同{ふどう}。' },
-            { text: 'ろっせん', isCorrect: false, reason: '「六千{ろくせん}」不促音化{ふそくおんか}。' },
-            { text: 'むせん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ろく」。' },
-            { text: 'ろくぜん', isCorrect: false, reason: '「六千{ろくせん}」不濁音化{ふだくおんか}。' }
+            { text: 'ろくせん', isCorrect: true, reason: '正確！「六千{ろくせん}」無音變，與「六百{ろっぴゃく}」不同。' },
+            { text: 'ろっせん', isCorrect: false, reason: '「六千{ろくせん}」不促音化。' },
+            { text: 'むせん', isCorrect: false, reason: '使用音讀「ろく」。' },
+            { text: 'ろくぜん', isCorrect: false, reason: '「六千{ろくせん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六千{ろくせん}」無{ない}音變{おんへん}，與「六百{ろっぴゃく}」的音變{おんへん}規則{きそく}不同{ふどう}。',
-            relatedRules: ['六千{ろくせん}の發音{はつおん}', '六{ろく}の音變{おんへん}比較{ひかく}']
+            correctRule: '「六千{ろくせん}」無音變，與「六百{ろっぴゃく}」的音變規則不同。',
+            relatedRules: ['六千{ろくせん}的發音', '六{ろく}的音變比較']
         },
         sourceItem: { value: 6000, kanji: '六千', reading: 'ろくせん' }
     },
@@ -1830,15 +1830,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: '今年有＿＿人參加馬拉松。',
         stem_zh: '今年有五千人參加馬拉松。',
         options: [
-            { text: 'ごせんにん', isCorrect: true, reason: '正確{せいかく}！「五千人{ごせんにん}」無{ない}音變{おんへん}。' },
-            { text: 'いつせんにん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'ごぜんにん', isCorrect: false, reason: '「五千{ごせん}」不濁音化{ふだくおんか}。' },
-            { text: 'ごっせんにん', isCorrect: false, reason: '「五{ご}」不促音化{ふそくおんか}。' }
+            { text: 'ごせんにん', isCorrect: true, reason: '正確！「五千人{ごせんにん}」無音變。' },
+            { text: 'いつせんにん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごぜんにん', isCorrect: false, reason: '「五千{ごせん}」不濁音化。' },
+            { text: 'ごっせんにん', isCorrect: false, reason: '「五{ご}」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五千人{ごせんにん}」無{ない}音變{おんへん}。',
-            relatedRules: ['五千{ごせん}の發音{はつおん}', '人數{にんずう}の表達{ひょうたつ}']
+            correctRule: '「五千人{ごせんにん}」無音變。',
+            relatedRules: ['五千{ごせん}的發音', '人數的表達']
         },
         sourceItem: { value: 5000, kanji: '五千人', reading: 'ごせんにん' }
     },
@@ -1850,18 +1850,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「千五百」的正確讀音是？',
+        stem: '「千五百」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一千五百」的正確讀音是？',
         options: [
-            { text: 'せんごひゃく', isCorrect: true, reason: '正確{せいかく}！「千五百{せんごひゃく}」省略{しょうりゃく}「いち」。' },
-            { text: 'いちせんごひゃく', isCorrect: false, reason: '通常{つうじょう}省略{しょうりゃく}「いち」。' },
-            { text: 'せんごびゃく', isCorrect: false, reason: '「五百{ごひゃく}」不濁音化{ふだくおんか}。' },
-            { text: 'ちごひゃく', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「せん」。' }
+            { text: 'せんごひゃく', isCorrect: true, reason: '正確！「千五百{せんごひゃく}」省略「いち」。' },
+            { text: 'いちせんごひゃく', isCorrect: false, reason: '通常省略「いち」。' },
+            { text: 'せんごびゃく', isCorrect: false, reason: '「五百{ごひゃく}」不濁音化。' },
+            { text: 'ちごひゃく', isCorrect: false, reason: '使用音讀「せん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「千五百{せんごひゃく}」省略{しょうりゃく}「いち」，無{ない}音變{おんへん}。',
-            relatedRules: ['千位數{せんいすう}の省略{しょうりゃく}', '1500の發音{はつおん}']
+            correctRule: '「千五百{せんごひゃく}」省略「いち」，無音變。',
+            relatedRules: ['千位數の省略', '1500的發音']
         },
         sourceItem: { value: 1500, kanji: '千五百', reading: 'せんごひゃく' }
     },
@@ -1874,16 +1874,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この商品は＿＿円です。',
         stem_zh: '這個商品三千六百日圓。',
         options: [
-            { text: 'さんせんろくひゃくえん', isCorrect: false, reason: '陷阱{かんけい}！「三千{さんぜん}」要濁音化{だくおんか}。' },
-            { text: 'さんぜんろくひゃくえん', isCorrect: true, reason: '正確{せいかく}！「三千六百円{さんぜんろくひゃくえん}」。' },
-            { text: 'みぜんろくひゃくえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「さん」。' },
-            { text: 'さんぜんむひゃくえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ろく」。' }
+            { text: 'さんせんろくひゃくえん', isCorrect: false, reason: '陷阱！「三千{さんぜん}」要濁音化。' },
+            { text: 'さんぜんろくひゃくえん', isCorrect: true, reason: '正確！「三千六百円{さんぜんろくひゃくえん}」。' },
+            { text: 'みぜんろくひゃくえん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんぜんむひゃくえん', isCorrect: false, reason: '使用音讀「ろく」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三千六百円{さんぜんろくひゃくえん}」中，「三千{さんぜん}」濁音化{だくおんか}。',
-            trapExplanation: '「三千{さんぜん}」在任何{にんい}組合{くみあわせ}中都{とも}要濁音化{だくおんか}。',
-            relatedRules: ['三千{さんぜん}の濁音化{だくおんか}', '組合{くみあわせ}金額{きんがく}']
+            correctRule: '「三千六百円{さんぜんろくひゃくえん}」中，「三千{さんぜん}」濁音化。',
+            trapExplanation: '「三千{さんぜん}」在任何組合中都要濁音化。',
+            relatedRules: ['三千{さんぜん}的濁音化', '組合金額']
         },
         sourceItem: { value: 3600, kanji: '三千六百円', reading: 'さんぜんろくひゃくえん' }
     },
@@ -1900,16 +1900,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '約＿＿メートルです。（約八千公尺）'
         },
         options: [
-            { text: 'はちせん', isCorrect: false, reason: '陷阱{かんけい}！「八千{はっせん}」要促音化{そくおんか}。' },
-            { text: 'はっせん', isCorrect: true, reason: '正確{せいかく}！「八千{はっせん}」促音化{そくおんか}。' },
-            { text: 'やせん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「はち」→「はっ」。' },
-            { text: 'はちぜん', isCorrect: false, reason: '是促音化{そくおんか}，不是濁音化{だくおんか}。' }
+            { text: 'はちせん', isCorrect: false, reason: '陷阱！「八千{はっせん}」要促音化。' },
+            { text: 'はっせん', isCorrect: true, reason: '正確！「八千{はっせん}」促音化。' },
+            { text: 'やせん', isCorrect: false, reason: '使用音讀「はち」→「はっ」。' },
+            { text: 'はちぜん', isCorrect: false, reason: '是促音化，不是濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八千メートル{はっせんメートル}」中，「八千{はっせん}」促音化{そくおんか}。',
-            trapExplanation: '距離{きょり}表達{ひょうたつ}時也要{とも}注意{ちゅうい}音變{おんへん}。',
-            relatedRules: ['八千{はっせん}の促音化{そくおんか}', '距離{きょり}の表達{ひょうたつ}']
+            correctRule: '「八千メートル{はっせんメートル}」中，「八千{はっせん}」促音化。',
+            trapExplanation: '距離表達時也要{とも}注意音變。',
+            relatedRules: ['八千{はっせん}的促音化', '距離的表達']
         },
         sourceItem: { value: 8000, kanji: '八千メートル', reading: 'はっせんメートル' }
     },
@@ -1919,18 +1919,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二万三千」的正確讀音是？',
+        stem: '「二万三千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「兩萬三千」的正確讀音是？',
         options: [
-            { text: 'にまんさんぜん', isCorrect: true, reason: '正確{せいかく}！「三千{さんぜん}」要濁音化{だくおんか}。' },
-            { text: 'にまんさんせん', isCorrect: false, reason: '「三千{さんぜん}」要濁音化{だくおんか}。' },
-            { text: 'ふたまんさんぜん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「に」。' },
-            { text: 'にばんさんぜん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。' }
+            { text: 'にまんさんぜん', isCorrect: true, reason: '正確！「三千{さんぜん}」要濁音化。' },
+            { text: 'にまんさんせん', isCorrect: false, reason: '「三千{さんぜん}」要濁音化。' },
+            { text: 'ふたまんさんぜん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にばんさんぜん', isCorrect: false, reason: '「万{まん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二万三千{にまんさんぜん}」中，「三千{さんぜん}」濁音化{だくおんか}。',
-            relatedRules: ['三千{さんぜん}の濁音化{だくおんか}', '萬位數{まんいすう}組合{くみあわせ}']
+            correctRule: '「二万三千{にまんさんぜん}」中，「三千{さんぜん}」濁音化。',
+            relatedRules: ['三千{さんぜん}的濁音化', '萬位數組合']
         },
         sourceItem: { value: 23000, kanji: '二万三千', reading: 'にまんさんぜん' }
     },
@@ -1943,16 +1943,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この車は＿＿円です。',
         stem_zh: '這台車五萬八千日圓。',
         options: [
-            { text: 'ごまんはちせんえん', isCorrect: false, reason: '陷阱{かんけい}！「八千{はっせん}」要促音化{そくおんか}。' },
-            { text: 'ごまんはっせんえん', isCorrect: true, reason: '正確{せいかく}！「五万八千円{ごまんはっせんえん}」。' },
-            { text: 'いつまんはっせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'ごばんはっせんえん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。' }
+            { text: 'ごまんはちせんえん', isCorrect: false, reason: '陷阱！「八千{はっせん}」要促音化。' },
+            { text: 'ごまんはっせんえん', isCorrect: true, reason: '正確！「五万八千円{ごまんはっせんえん}」。' },
+            { text: 'いつまんはっせんえん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごばんはっせんえん', isCorrect: false, reason: '「万{まん}」不濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「五万八千円{ごまんはっせんえん}」中，「八千{はっせん}」促音化{そくおんか}。',
-            trapExplanation: '即使{たとえ}在萬位數{まんいすう}後面{うしろ}，「八千{はっせん}」仍{なお}需要{じゅよう}促音化{そくおんか}。',
-            relatedRules: ['八千{はっせん}の促音化{そくおんか}', '萬位數{まんいすう}金額{きんがく}']
+            correctRule: '「五万八千円{ごまんはっせんえん}」中，「八千{はっせん}」促音化。',
+            trapExplanation: '即使在萬位數後面，「八千{はっせん}」仍需要促音化。',
+            relatedRules: ['八千{はっせん}的促音化', '萬位數金額']
         },
         sourceItem: { value: 58000, kanji: '五万八千円', reading: 'ごまんはっせんえん' }
     },
@@ -1969,15 +1969,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '約＿＿年前です。（約六千年前）'
         },
         options: [
-            { text: 'ろくせんねんまえ', isCorrect: true, reason: '正確{せいかく}！「六千年前{ろくせんねんまえ}」。' },
-            { text: 'ろっせんねんまえ', isCorrect: false, reason: '「六千{ろくせん}」不促音化{ふそくおんか}。' },
-            { text: 'むせんねんまえ', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ろく」。' },
-            { text: 'ろくぜんねんまえ', isCorrect: false, reason: '「六千{ろくせん}」不濁音化{ふだくおんか}。' }
+            { text: 'ろくせんねんまえ', isCorrect: true, reason: '正確！「六千年前{ろくせんねんまえ}」。' },
+            { text: 'ろっせんねんまえ', isCorrect: false, reason: '「六千{ろくせん}」不促音化。' },
+            { text: 'むせんねんまえ', isCorrect: false, reason: '使用音讀「ろく」。' },
+            { text: 'ろくぜんねんまえ', isCorrect: false, reason: '「六千{ろくせん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六千年{ろくせんねん}」無{ない}音變{おんへん}。',
-            relatedRules: ['六千{ろくせん}の發音{はつおん}', '年數{ねんすう}の表達{ひょうたつ}']
+            correctRule: '「六千年{ろくせんねん}」無音變。',
+            relatedRules: ['六千{ろくせん}的發音', '年數的表達']
         },
         sourceItem: { value: 6000, kanji: '六千年', reading: 'ろくせんねん' }
     },
@@ -1987,18 +1987,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「七千五百」的正確讀音是？',
+        stem: '「七千五百」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「七千五百」的正確讀音是？',
         options: [
-            { text: 'ななせんごひゃく', isCorrect: true, reason: '正確{せいかく}！「七千五百{ななせんごひゃく}」無{ない}音變{おんへん}。' },
-            { text: 'しちせんごひゃく', isCorrect: false, reason: '為{ため}避免{ひめん}混淆{こんこう}多用{おおくもちい}「なな」。' },
-            { text: 'ななぜんごひゃく', isCorrect: false, reason: '「七千{ななせん}」不濁音化{ふだくおんか}。' },
-            { text: 'ななせんごびゃく', isCorrect: false, reason: '「五百{ごひゃく}」不濁音化{ふだくおんか}。' }
+            { text: 'ななせんごひゃく', isCorrect: true, reason: '正確！「七千五百{ななせんごひゃく}」無音變。' },
+            { text: 'しちせんごひゃく', isCorrect: false, reason: '為避免混淆多用「なな」。' },
+            { text: 'ななぜんごひゃく', isCorrect: false, reason: '「七千{ななせん}」不濁音化。' },
+            { text: 'ななせんごびゃく', isCorrect: false, reason: '「五百{ごひゃく}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七千五百{ななせんごひゃく}」無{ない}音變{おんへん}。',
-            relatedRules: ['七千{ななせん}の發音{はつおん}', '組合{くみあわせ}數字{すうじ}']
+            correctRule: '「七千五百{ななせんごひゃく}」無音變。',
+            relatedRules: ['七千{ななせん}的發音', '組合數字']
         },
         sourceItem: { value: 7500, kanji: '七千五百', reading: 'ななせんごひゃく' }
     },
@@ -2011,15 +2011,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: '彼の年収は＿＿円です。',
         stem_zh: '他的年收入是四百萬日圓。',
         options: [
-            { text: 'よんひゃくまんえん', isCorrect: true, reason: '正確{せいかく}！「四百万円{よんひゃくまんえん}」。' },
-            { text: 'しひゃくまんえん', isCorrect: false, reason: '為{ため}避諱{ひき}多用{おおくもちい}「よん」。' },
-            { text: 'よんびゃくまんえん', isCorrect: false, reason: '「四百{よんひゃく}」不濁音化{ふだくおんか}。' },
-            { text: 'よんひゃくばんえん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。' }
+            { text: 'よんひゃくまんえん', isCorrect: true, reason: '正確！「四百万円{よんひゃくまんえん}」。' },
+            { text: 'しひゃくまんえん', isCorrect: false, reason: '為避諱多用「よん」。' },
+            { text: 'よんびゃくまんえん', isCorrect: false, reason: '「四百{よんひゃく}」不濁音化。' },
+            { text: 'よんひゃくばんえん', isCorrect: false, reason: '「万{まん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四百万円{よんひゃくまんえん}」使用{しよう}「よん」避諱{ひき}，無{ない}音變{おんへん}。',
-            relatedRules: ['四{よん}の避諱{ひき}', '百萬{ひゃくまん}の金額{きんがく}']
+            correctRule: '「四百万円{よんひゃくまんえん}」使用「よん」避諱，無音變。',
+            relatedRules: ['四{よん}の避諱', '百萬{ひゃくまん}の金額']
         },
         sourceItem: { value: 4000000, kanji: '四百万円', reading: 'よんひゃくまんえん' }
     },
@@ -2036,16 +2036,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（三萬三千日圓）'
         },
         options: [
-            { text: 'さんまんさんせんえん', isCorrect: false, reason: '陷阱{かんけい}！「三千{さんぜん}」要濁音化{だくおんか}。' },
-            { text: 'さんまんさんぜんえん', isCorrect: true, reason: '正確{せいかく}！「三万三千円{さんまんさんぜんえん}」。' },
-            { text: 'さんばんさんぜんえん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。' },
-            { text: 'みまんみぜんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「さん」。' }
+            { text: 'さんまんさんせんえん', isCorrect: false, reason: '陷阱！「三千{さんぜん}」要濁音化。' },
+            { text: 'さんまんさんぜんえん', isCorrect: true, reason: '正確！「三万三千円{さんまんさんぜんえん}」。' },
+            { text: 'さんばんさんぜんえん', isCorrect: false, reason: '「万{まん}」不濁音化。' },
+            { text: 'みまんみぜんえん', isCorrect: false, reason: '使用音讀「さん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三万三千円{さんまんさんぜんえん}」中，「万{まん}」不濁音化{ふだくおんか}，但「千{せん}」濁音化{だくおんか}。',
-            trapExplanation: '注意{ちゅうい}「万{まん}」和「千{せん}」的音變{おんへん}規則{きそく}不同{ふどう}。',
-            relatedRules: ['三万{さんまん}不濁音化{ふだくおんか}', '三千{さんぜん}の濁音化{だくおんか}']
+            correctRule: '「三万三千円{さんまんさんぜんえん}」中，「万{まん}」不濁音化，但「千{せん}」濁音化。',
+            trapExplanation: '注意「万{まん}」和「千{せん}」的音變規則不同。',
+            relatedRules: ['三万{さんまん}不濁音化', '三千{さんぜん}的濁音化']
         },
         sourceItem: { value: 33000, kanji: '三万三千円', reading: 'さんまんさんぜんえん' }
     },
@@ -2055,19 +2055,19 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「四万八千」的正確讀音是？',
+        stem: '「四万八千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「四萬八千」的正確讀音是？',
         options: [
-            { text: 'よんまんはちせん', isCorrect: false, reason: '陷阱{かんけい}！「八千{はっせん}」要促音化{そくおんか}。' },
-            { text: 'よんまんはっせん', isCorrect: true, reason: '正確{せいかく}！「四万八千{よんまんはっせん}」。' },
-            { text: 'しまんはっせん', isCorrect: false, reason: '為{ため}避諱{ひき}多用{おおくもちい}「よん」。' },
-            { text: 'よんばんはっせん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。' }
+            { text: 'よんまんはちせん', isCorrect: false, reason: '陷阱！「八千{はっせん}」要促音化。' },
+            { text: 'よんまんはっせん', isCorrect: true, reason: '正確！「四万八千{よんまんはっせん}」。' },
+            { text: 'しまんはっせん', isCorrect: false, reason: '為避諱多用「よん」。' },
+            { text: 'よんばんはっせん', isCorrect: false, reason: '「万{まん}」不濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「四万八千{よんまんはっせん}」中，「八千{はっせん}」促音化{そくおんか}。',
-            trapExplanation: '即使{たとえ}在萬位數{まんいすう}後面{うしろ}，「八千{はっせん}」仍{なお}需要{じゅよう}促音化{そくおんか}。',
-            relatedRules: ['四{よん}の避諱{ひき}', '八千{はっせん}の促音化{そくおんか}']
+            correctRule: '「四万八千{よんまんはっせん}」中，「八千{はっせん}」促音化。',
+            trapExplanation: '即使在萬位數後面，「八千{はっせん}」仍需要促音化。',
+            relatedRules: ['四{よん}の避諱', '八千{はっせん}的促音化']
         },
         sourceItem: { value: 48000, kanji: '四万八千', reading: 'よんまんはっせん' }
     },
@@ -2080,15 +2080,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この町の人口は＿＿人です。',
         stem_zh: '這個城鎮的人口是九千人。',
         options: [
-            { text: 'きゅうせんにん', isCorrect: true, reason: '正確{せいかく}！「九千人{きゅうせんにん}」無{ない}音變{おんへん}。' },
-            { text: 'くせんにん', isCorrect: false, reason: '為{ため}避諱{ひき}多用{おおくもちい}「きゅう」。' },
-            { text: 'きゅうぜんにん', isCorrect: false, reason: '「九千{きゅうせん}」不濁音化{ふだくおんか}。' },
-            { text: 'きゅっせんにん', isCorrect: false, reason: '「九{きゅう}」不促音化{ふそくおんか}。' }
+            { text: 'きゅうせんにん', isCorrect: true, reason: '正確！「九千人{きゅうせんにん}」無音變。' },
+            { text: 'くせんにん', isCorrect: false, reason: '為避諱多用「きゅう」。' },
+            { text: 'きゅうぜんにん', isCorrect: false, reason: '「九千{きゅうせん}」不濁音化。' },
+            { text: 'きゅっせんにん', isCorrect: false, reason: '「九{きゅう}」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「九千人{きゅうせんにん}」無{ない}音變{おんへん}。',
-            relatedRules: ['九千{きゅうせん}の發音{はつおん}', '人口{じんこう}の表達{ひょうたつ}']
+            correctRule: '「九千人{きゅうせんにん}」無音變。',
+            relatedRules: ['九千{きゅうせん}的發音', '人口的表達']
         },
         sourceItem: { value: 9000, kanji: '九千人', reading: 'きゅうせんにん' }
     },
@@ -2105,15 +2105,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（兩萬五千日圓）'
         },
         options: [
-            { text: 'にまんごせんえん', isCorrect: true, reason: '正確{せいかく}！「二万五千円{にまんごせんえん}」無{ない}音變{おんへん}。' },
-            { text: 'ふたまんごせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「に」。' },
-            { text: 'にまんいつせんえん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'にまんごぜんえん', isCorrect: false, reason: '「五千{ごせん}」不濁音化{ふだくおんか}。' }
+            { text: 'にまんごせんえん', isCorrect: true, reason: '正確！「二万五千円{にまんごせんえん}」無音變。' },
+            { text: 'ふたまんごせんえん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にまんいつせんえん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'にまんごぜんえん', isCorrect: false, reason: '「五千{ごせん}」不濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二万五千円{にまんごせんえん}」無{ない}音變{おんへん}。',
-            relatedRules: ['萬位數{まんいすう}の組合{くみあわせ}', '金額{きんがく}表達{ひょうたつ}']
+            correctRule: '「二万五千円{にまんごせんえん}」無音變。',
+            relatedRules: ['萬位數的組合', '金額表達']
         },
         sourceItem: { value: 25000, kanji: '二万五千円', reading: 'にまんごせんえん' }
     },
@@ -2123,19 +2123,19 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「六万三千」的正確讀音是？',
+        stem: '「六万三千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「六萬三千」的正確讀音是？',
         options: [
-            { text: 'ろくまんさんせん', isCorrect: false, reason: '陷阱{かんけい}！「三千{さんぜん}」要濁音化{だくおんか}。' },
-            { text: 'ろくまんさんぜん', isCorrect: true, reason: '正確{せいかく}！「六万三千{ろくまんさんぜん}」。' },
-            { text: 'むまんさんぜん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ろく」。' },
-            { text: 'ろっまんさんぜん', isCorrect: false, reason: '「六万{ろくまん}」不促音化{ふそくおんか}。' }
+            { text: 'ろくまんさんせん', isCorrect: false, reason: '陷阱！「三千{さんぜん}」要濁音化。' },
+            { text: 'ろくまんさんぜん', isCorrect: true, reason: '正確！「六万三千{ろくまんさんぜん}」。' },
+            { text: 'むまんさんぜん', isCorrect: false, reason: '使用音讀「ろく」。' },
+            { text: 'ろっまんさんぜん', isCorrect: false, reason: '「六万{ろくまん}」不促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「六万三千{ろくまんさんぜん}」中，「三千{さんぜん}」濁音化{だくおんか}。',
-            trapExplanation: '「三千{さんぜん}」在任何{にんい}位置{いち}都{とも}要濁音化{だくおんか}。',
-            relatedRules: ['三千{さんぜん}の濁音化{だくおんか}', '萬位數{まんいすう}組合{くみあわせ}']
+            correctRule: '「六万三千{ろくまんさんぜん}」中，「三千{さんぜん}」濁音化。',
+            trapExplanation: '「三千{さんぜん}」在任何位置都要濁音化。',
+            relatedRules: ['三千{さんぜん}的濁音化', '萬位數組合']
         },
         sourceItem: { value: 63000, kanji: '六万三千', reading: 'ろくまんさんぜん' }
     },
@@ -2148,15 +2148,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: '富士山の高さは＿＿メートルです。',
         stem_zh: '富士山的高度是三千七百七十六公尺。',
         options: [
-            { text: 'さんぜんななひゃくななじゅうろくメートル', isCorrect: true, reason: '正確{せいかく}！「三千{さんぜん}」濁音化{だくおんか}，其他{そのた}無{ない}音變{おんへん}。' },
-            { text: 'さんせんななひゃくななじゅうろくメートル', isCorrect: false, reason: '「三千{さんぜん}」要濁音化{だくおんか}。' },
-            { text: 'さんぜんしちひゃくしちじゅうろくメートル', isCorrect: false, reason: '「七{しち}」在這裡{ここ}用「なな」更常見{じょうけん}。' },
-            { text: 'みぜんななひゃくななじゅうろくメートル', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「さん」。' }
+            { text: 'さんぜんななひゃくななじゅうろくメートル', isCorrect: true, reason: '正確！「三千{さんぜん}」濁音化，其他無音變。' },
+            { text: 'さんせんななひゃくななじゅうろくメートル', isCorrect: false, reason: '「三千{さんぜん}」要濁音化。' },
+            { text: 'さんぜんしちひゃくしちじゅうろくメートル', isCorrect: false, reason: '「七{しち}」在這裡用「なな」更常見。' },
+            { text: 'みぜんななひゃくななじゅうろくメートル', isCorrect: false, reason: '使用音讀「さん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '富士山{ふじさん}的高度{たかさ}是3776メートル，「三千{さんぜん}」濁音化{だくおんか}。',
-            relatedRules: ['三千{さんぜん}の濁音化{だくおんか}', '高度{こうど}の表達{ひょうたつ}']
+            correctRule: '富士山{ふじさん}的高度是3776メートル，「三千{さんぜん}」濁音化。',
+            relatedRules: ['三千{さんぜん}的濁音化', '高度的表達']
         },
         sourceItem: { value: 3776, kanji: '三千七百七十六メートル', reading: 'さんぜんななひゃくななじゅうろくメートル' }
     },
@@ -2173,16 +2173,16 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（八千八百日圓）'
         },
         options: [
-            { text: 'はちせんはちひゃくえん', isCorrect: false, reason: '陷阱{かんけい}！「八千{はっせん}」和「八百{はっぴゃく}」都要音變{おんへん}！' },
-            { text: 'はっせんはっぴゃくえん', isCorrect: true, reason: '正確{せいかく}！「八千八百円{はっせんはっぴゃくえん}」。' },
-            { text: 'はっせんはちひゃくえん', isCorrect: false, reason: '「八百{はっぴゃく}」也要促音化{そくおんか}和半濁音化{はんだくおんか}。' },
-            { text: 'はちせんはっぴゃくえん', isCorrect: false, reason: '「八千{はっせん}」也要促音化{そくおんか}。' }
+            { text: 'はちせんはちひゃくえん', isCorrect: false, reason: '陷阱！「八千{はっせん}」和「八百{はっぴゃく}」都要音變！' },
+            { text: 'はっせんはっぴゃくえん', isCorrect: true, reason: '正確！「八千八百円{はっせんはっぴゃくえん}」。' },
+            { text: 'はっせんはちひゃくえん', isCorrect: false, reason: '「八百{はっぴゃく}」也要促音化和半濁音化。' },
+            { text: 'はちせんはっぴゃくえん', isCorrect: false, reason: '「八千{はっせん}」也要促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八千八百円{はっせんはっぴゃくえん}」是雙重{にじゅう}促音化{そくおんか}的例子{れいじ}。',
-            trapExplanation: '8888是學習{がくしゅう}音變{おんへん}規則{きそく}の重要{じゅうよう}數字{すうじ}。',
-            relatedRules: ['八千{はっせん}の促音化{そくおんか}', '八百{はっぴゃく}の音變{おんへん}']
+            correctRule: '「八千八百円{はっせんはっぴゃくえん}」是雙重促音化的例子。',
+            trapExplanation: '8888是學習音變規則的重要數字。',
+            relatedRules: ['八千{はっせん}的促音化', '八百{はっぴゃく}的音變']
         },
         sourceItem: { value: 8800, kanji: '八千八百円', reading: 'はっせんはっぴゃくえん' }
     },
@@ -2192,18 +2192,18 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「一万一千」的正確讀音是？',
+        stem: '「一万一千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一萬一千」的正確讀音是？',
         options: [
-            { text: 'いちまんいっせん', isCorrect: true, reason: '正確{せいかく}！「一万一千{いちまんいっせん}」，「千{せん}」前{まえ}的「一{いち}」促音化{そくおんか}。' },
-            { text: 'いちまんせん', isCorrect: false, reason: '這裡{ここ}「一千{いっせん}」不省略{しょうりゃく}「いち」，而是促音化{そくおんか}。' },
-            { text: 'まんいっせん', isCorrect: false, reason: '「一万{いちまん}」的「いち」不可{ふか}省略{しょうりゃく}。' },
-            { text: 'いちまんいちせん', isCorrect: false, reason: '「一千{いっせん}」通常{つうじょう}促音化{そくおんか}。' }
+            { text: 'いちまんいっせん', isCorrect: true, reason: '正確！「一万一千{いちまんいっせん}」，「千{せん}」前的「一{いち}」促音化。' },
+            { text: 'いちまんせん', isCorrect: false, reason: '這裡「一千{いっせん}」不省略「いち」，而是促音化。' },
+            { text: 'まんいっせん', isCorrect: false, reason: '「一万{いちまん}」的「いち」不可省略。' },
+            { text: 'いちまんいちせん', isCorrect: false, reason: '「一千{いっせん}」通常促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「一万一千{いちまんいっせん}」中，「一万{いちまん}」不省略{しょうりゃく}「いち」，「一千{いっせん}」促音化{そくおんか}。',
-            relatedRules: ['一万{いちまん}の特殊{とくしゅ}規則{きそく}', '一千{いっせん}の促音化{そくおんか}']
+            correctRule: '「一万一千{いちまんいっせん}」中，「一万{いちまん}」不省略「いち」，「一千{いっせん}」促音化。',
+            relatedRules: ['一万{いちまん}的特殊規則', '一千{いっせん}的促音化']
         },
         sourceItem: { value: 11000, kanji: '一万一千', reading: 'いちまんいっせん' }
     },
@@ -2216,15 +2216,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'このビルは＿＿平方メートルです。',
         stem_zh: '這棟大樓是四千平方公尺。',
         options: [
-            { text: 'よんせんへいほうメートル', isCorrect: true, reason: '正確{せいかく}！「四千{よんせん}」使用{しよう}「よん」避諱{ひき}，無{ない}音變{おんへん}。' },
-            { text: 'しせんへいほうメートル', isCorrect: false, reason: '為{ため}避諱{ひき}多用{おおくもちい}「よん」。' },
-            { text: 'よんぜんへいほうメートル', isCorrect: false, reason: '「四千{よんせん}」不濁音化{ふだくおんか}。' },
-            { text: 'よっせんへいほうメートル', isCorrect: false, reason: '「四{よん}」不促音化{ふそくおんか}。' }
+            { text: 'よんせんへいほうメートル', isCorrect: true, reason: '正確！「四千{よんせん}」使用「よん」避諱，無音變。' },
+            { text: 'しせんへいほうメートル', isCorrect: false, reason: '為避諱多用「よん」。' },
+            { text: 'よんぜんへいほうメートル', isCorrect: false, reason: '「四千{よんせん}」不濁音化。' },
+            { text: 'よっせんへいほうメートル', isCorrect: false, reason: '「四{よん}」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四千{よんせん}」使用{しよう}「よん」避諱{ひき}，無{ない}音變{おんへん}。',
-            relatedRules: ['四{よん}の避諱{ひき}', '面積{めんせき}の表達{ひょうたつ}']
+            correctRule: '「四千{よんせん}」使用「よん」避諱，無音變。',
+            relatedRules: ['四{よん}の避諱', '面積的表達']
         },
         sourceItem: { value: 4000, kanji: '四千平方メートル', reading: 'よんせんへいほうメートル' }
     },
@@ -2241,15 +2241,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '約＿＿人います。（約七千人）'
         },
         options: [
-            { text: 'ななせんにん', isCorrect: true, reason: '正確{せいかく}！「七千人{ななせんにん}」無{ない}音變{おんへん}。' },
-            { text: 'しちせんにん', isCorrect: false, reason: '為{ため}避免{ひめん}混淆{こんこう}多用{おおくもちい}「なな」。' },
-            { text: 'ななぜんにん', isCorrect: false, reason: '「七千{ななせん}」不濁音化{ふだくおんか}。' },
-            { text: 'なっせんにん', isCorrect: false, reason: '「七{なな}」不促音化{ふそくおんか}。' }
+            { text: 'ななせんにん', isCorrect: true, reason: '正確！「七千人{ななせんにん}」無音變。' },
+            { text: 'しちせんにん', isCorrect: false, reason: '為避免混淆多用「なな」。' },
+            { text: 'ななぜんにん', isCorrect: false, reason: '「七千{ななせん}」不濁音化。' },
+            { text: 'なっせんにん', isCorrect: false, reason: '「七{なな}」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七千人{ななせんにん}」無{ない}音變{おんへん}。',
-            relatedRules: ['七千{ななせん}の發音{はつおん}', '人數{にんずう}の表達{ひょうたつ}']
+            correctRule: '「七千人{ななせんにん}」無音變。',
+            relatedRules: ['七千{ななせん}的發音', '人數的表達']
         },
         sourceItem: { value: 7000, kanji: '七千人', reading: 'ななせんにん' }
     },
@@ -2259,19 +2259,19 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'thousands',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「八万三千」的正確讀音是？',
+        stem: '「八万三千」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「八萬三千」的正確讀音是？',
         options: [
-            { text: 'はちまんさんせん', isCorrect: false, reason: '陷阱{かんけい}！「三千{さんぜん}」要濁音化{だくおんか}。' },
-            { text: 'はちまんさんぜん', isCorrect: true, reason: '正確{せいかく}！「八万三千{はちまんさんぜん}」。注意{ちゅうい}：「八万{はちまん}」不促音化{ふそくおんか}！' },
-            { text: 'はっまんさんぜん', isCorrect: false, reason: '「八万{はちまん}」不促音化{ふそくおんか}。' },
-            { text: 'やまんさんぜん', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「はち」。' }
+            { text: 'はちまんさんせん', isCorrect: false, reason: '陷阱！「三千{さんぜん}」要濁音化。' },
+            { text: 'はちまんさんぜん', isCorrect: true, reason: '正確！「八万三千{はちまんさんぜん}」。注意：「八万{はちまん}」不促音化！' },
+            { text: 'はっまんさんぜん', isCorrect: false, reason: '「八万{はちまん}」不促音化。' },
+            { text: 'やまんさんぜん', isCorrect: false, reason: '使用音讀「はち」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八万三千{はちまんさんぜん}」中，「八万{はちまん}」不促音化{ふそくおんか}，「三千{さんぜん}」濁音化{だくおんか}。',
-            trapExplanation: '注意{ちゅうい}「八{はち}」在「万{まん}」前{まえ}不促音化{ふそくおんか}！',
-            relatedRules: ['八万{はちまん}不促音化{ふそくおんか}', '三千{さんぜん}の濁音化{だくおんか}']
+            correctRule: '「八万三千{はちまんさんぜん}」中，「八万{はちまん}」不促音化，「三千{さんぜん}」濁音化。',
+            trapExplanation: '注意「八{はち}」在「万{まん}」前不促音化！',
+            relatedRules: ['八万{はちまん}不促音化', '三千{さんぜん}的濁音化']
         },
         sourceItem: { value: 83000, kanji: '八万三千', reading: 'はちまんさんぜん' }
     },
@@ -2284,15 +2284,15 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この街の面積は＿＿平方キロメートルです。',
         stem_zh: '這個城市的面積是五千平方公里。',
         options: [
-            { text: 'ごせんへいほうキロメートル', isCorrect: true, reason: '正確{せいかく}！「五千{ごせん}」無{ない}音變{おんへん}。' },
-            { text: 'いつせんへいほうキロメートル', isCorrect: false, reason: '使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'ごぜんへいほうキロメートル', isCorrect: false, reason: '「五千{ごせん}」不濁音化{ふだくおんか}。' },
-            { text: 'ごっせんへいほうキロメートル', isCorrect: false, reason: '「五{ご}」不促音化{ふそくおんか}。' }
+            { text: 'ごせんへいほうキロメートル', isCorrect: true, reason: '正確！「五千{ごせん}」無音變。' },
+            { text: 'いつせんへいほうキロメートル', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごぜんへいほうキロメートル', isCorrect: false, reason: '「五千{ごせん}」不濁音化。' },
+            { text: 'ごっせんへいほうキロメートル', isCorrect: false, reason: '「五{ご}」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五千{ごせん}」無{ない}音變{おんへん}。',
-            relatedRules: ['五千{ごせん}の發音{はつおん}', '面積{めんせき}の表達{ひょうたつ}']
+            correctRule: '「五千{ごせん}」無音變。',
+            relatedRules: ['五千{ごせん}的發音', '面積的表達']
         },
         sourceItem: { value: 5000, kanji: '五千平方キロメートル', reading: 'ごせんへいほうキロメートル' }
     },
@@ -2309,22 +2309,22 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（九萬八千日圓）'
         },
         options: [
-            { text: 'きゅうまんはちせんえん', isCorrect: false, reason: '陷阱{かんけい}！「八千{はっせん}」要促音化{そくおんか}。' },
-            { text: 'きゅうまんはっせんえん', isCorrect: true, reason: '正確{せいかく}！「九万八千円{きゅうまんはっせんえん}」。' },
-            { text: 'くまんはっせんえん', isCorrect: false, reason: '為{ため}避諱{ひき}多用{おおくもちい}「きゅう」。' },
-            { text: 'きゅうばんはっせんえん', isCorrect: false, reason: '「万{まん}」不濁音化{ふだくおんか}。' }
+            { text: 'きゅうまんはちせんえん', isCorrect: false, reason: '陷阱！「八千{はっせん}」要促音化。' },
+            { text: 'きゅうまんはっせんえん', isCorrect: true, reason: '正確！「九万八千円{きゅうまんはっせんえん}」。' },
+            { text: 'くまんはっせんえん', isCorrect: false, reason: '為避諱多用「きゅう」。' },
+            { text: 'きゅうばんはっせんえん', isCorrect: false, reason: '「万{まん}」不濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「九万八千円{きゅうまんはっせんえん}」中，「八千{はっせん}」促音化{そくおんか}。',
-            trapExplanation: '即使{たとえ}在萬位數{まんいすう}後面{うしろ}，「八千{はっせん}」仍{なお}需要{じゅよう}促音化{そくおんか}。',
-            relatedRules: ['九{きゅう}の避諱{ひき}', '八千{はっせん}の促音化{そくおんか}']
+            correctRule: '「九万八千円{きゅうまんはっせんえん}」中，「八千{はっせん}」促音化。',
+            trapExplanation: '即使在萬位數後面，「八千{はっせん}」仍需要促音化。',
+            relatedRules: ['九{きゅう}の避諱', '八千{はっせん}的促音化']
         },
         sourceItem: { value: 98000, kanji: '九万八千円', reading: 'きゅうまんはっせんえん' }
     },
     {
         id: 'num_thousands_extra_22', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「千二百」的正確讀音是？', stem_zh: '「一千二百」的正確讀音是？',
+        stem: '「千二百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「一千二百」的正確讀音是？',
         options: [
             { text: 'せんにひゃく', isCorrect: true, reason: '正確！「千二百」省略「一」。' },
             { text: 'いちせんにひゃく', isCorrect: false, reason: '「千」通常省略「一」。' },
@@ -2345,7 +2345,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたせんみひゃくえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二千三百円」，「三百」濁音化。', relatedRules: ['二千の讀法', '三百の濁音化'] },
+        explanation: { correctRule: '「二千三百円」，「三百」濁音化。', relatedRules: ['二千的讀法', '三百的濁音化'] },
         sourceItem: { value: 2300, kanji: '二千三百円', reading: 'にせんさんびゃくえん' }
     },
     {
@@ -2359,12 +2359,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みぜんよひゃくえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化為「さんぜん」。', trapExplanation: '「三千」的濁音化容易被忽略。', relatedRules: ['三千の濁音化'] },
+        explanation: { correctRule: '「三千」濁音化為「さんぜん」。', trapExplanation: '「三千」的濁音化容易被忽略。', relatedRules: ['三千的濁音化'] },
         sourceItem: { value: 3400, kanji: '三千四百円', reading: 'さんぜんよんひゃくえん' }
     },
     {
         id: 'num_thousands_extra_25', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「四千五百」的正確讀音是？', stem_zh: '「四千五百」的正確讀音是？',
+        stem: '「四千五百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四千五百」的正確讀音是？',
         options: [
             { text: 'よんせんごひゃく', isCorrect: true, reason: '正確！「四千五百」無音變。' },
             { text: 'しせんごひゃく', isCorrect: false, reason: '「四」讀「よん」。' },
@@ -2372,7 +2372,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よんせんごびゃく', isCorrect: false, reason: '「五百」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四千五百」無音變。', relatedRules: ['四千の讀法', '組合數字'] },
+        explanation: { correctRule: '「四千五百」無音變。', relatedRules: ['四千的讀法', '組合數字'] },
         sourceItem: { value: 4500, kanji: '四千五百', reading: 'よんせんごひゃく' }
     },
     {
@@ -2385,7 +2385,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やせんむひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八千六百」，「八千」促音化，「六百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['八千の促音化', '六百の音變'] },
+        explanation: { correctRule: '「八千六百」，「八千」促音化，「六百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['八千的促音化', '六百的音變'] },
         sourceItem: { value: 8600, kanji: '八千六百', reading: 'はっせんろっぴゃく' }
     },
     {
@@ -2399,12 +2399,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごせんななびゃく', isCorrect: false, reason: '「七百」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五千七百」無音變。', relatedRules: ['五千の讀法', '七百の讀法'] },
+        explanation: { correctRule: '「五千七百」無音變。', relatedRules: ['五千的讀法', '七百的讀法'] },
         sourceItem: { value: 5700, kanji: '五千七百', reading: 'ごせんななひゃく' }
     },
     {
         id: 'num_thousands_extra_28', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「六千八百」的正確讀音是？', stem_zh: '「六千八百」的正確讀音是？',
+        stem: '「六千八百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「六千八百」的正確讀音是？',
         options: [
             { text: 'ろくせんはっぴゃく', isCorrect: true, reason: '正確！「六千八百」，「八百」促音+半濁音化。' },
             { text: 'ろっせんはちひゃく', isCorrect: false, reason: '「六千」不促音化。' },
@@ -2412,7 +2412,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'むせんやひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六千」無音變，但「八百」促音+半濁音化。', relatedRules: ['六千の讀法', '八百の音變'] },
+        explanation: { correctRule: '「六千」無音變，但「八百」促音+半濁音化。', relatedRules: ['六千的讀法', '八百的音變'] },
         sourceItem: { value: 6800, kanji: '六千八百', reading: 'ろくせんはっぴゃく' }
     },
     {
@@ -2425,7 +2425,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのせんここのひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七千九百」無音變。', relatedRules: ['七千の讀法', '九百の讀法'] },
+        explanation: { correctRule: '「七千九百」無音變。', relatedRules: ['七千的讀法', '九百的讀法'] },
         sourceItem: { value: 7900, kanji: '七千九百', reading: 'ななせんきゅうひゃく' }
     },
     {
@@ -2439,12 +2439,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やせんももえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八千」促音化，「百」省略「一」。', trapExplanation: '「八千」促音化容易忘記。', relatedRules: ['八千の促音化', '百の省略'] },
+        explanation: { correctRule: '「八千」促音化，「百」省略「一」。', trapExplanation: '「八千」促音化容易忘記。', relatedRules: ['八千的促音化', '百の省略'] },
         sourceItem: { value: 8100, kanji: '八千百円', reading: 'はっせんひゃくえん' }
     },
     {
         id: 'num_thousands_extra_31', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「九千二百」的正確讀音是？', stem_zh: '「九千二百」的正確讀音是？',
+        stem: '「九千二百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「九千二百」的正確讀音是？',
         options: [
             { text: 'きゅうせんにひゃく', isCorrect: true, reason: '正確！「九千二百」無音變。' },
             { text: 'くせんにひゃく', isCorrect: false, reason: '「九」讀「きゅう」。' },
@@ -2452,7 +2452,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうせんにびゃく', isCorrect: false, reason: '「二百」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九千二百」無音變。', relatedRules: ['九千の讀法', '組合數字'] },
+        explanation: { correctRule: '「九千二百」無音變。', relatedRules: ['九千的讀法', '組合數字'] },
         sourceItem: { value: 9200, kanji: '九千二百', reading: 'きゅうせんにひゃく' }
     },
     {
@@ -2465,7 +2465,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みぜんみびゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」和「三百」都濁音化。', trapExplanation: '注意兩處「三」後都有濁音化。', relatedRules: ['三千の濁音化', '三百の濁音化'] },
+        explanation: { correctRule: '「三千」和「三百」都濁音化。', trapExplanation: '注意兩處「三」後都有濁音化。', relatedRules: ['三千的濁音化', '三百的濁音化'] },
         sourceItem: { value: 3300, kanji: '三千三百', reading: 'さんぜんさんびゃく' }
     },
     {
@@ -2484,7 +2484,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
     },
     {
         id: 'num_thousands_extra_34', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「二千六百」的正確讀音是？', stem_zh: '「二千六百」的正確讀音是？',
+        stem: '「二千六百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二千六百」的正確讀音是？',
         options: [
             { text: 'にせんろっぴゃく', isCorrect: true, reason: '正確！「二千六百」，「六百」促音+半濁音化。' },
             { text: 'にせんろくひゃく', isCorrect: false, reason: '「六百」促音+半濁音化。' },
@@ -2492,7 +2492,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたせんむひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二千」無音變，「六百」促音+半濁音化。', relatedRules: ['二千の讀法', '六百の音變'] },
+        explanation: { correctRule: '「二千」無音變，「六百」促音+半濁音化。', relatedRules: ['二千的讀法', '六百的音變'] },
         sourceItem: { value: 2600, kanji: '二千六百', reading: 'にせんろっぴゃく' }
     },
     {
@@ -2505,7 +2505,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みぜんやひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化，「八百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['三千の濁音化', '八百の音變'] },
+        explanation: { correctRule: '「三千」濁音化，「八百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['三千的濁音化', '八百的音變'] },
         sourceItem: { value: 3800, kanji: '三千八百', reading: 'さんぜんはっぴゃく' }
     },
     {
@@ -2519,12 +2519,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よせんむひゃくえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四千六百円」，「六百」促音+半濁音化。', relatedRules: ['四千の讀法', '六百の音變'] },
+        explanation: { correctRule: '「四千六百円」，「六百」促音+半濁音化。', relatedRules: ['四千的讀法', '六百的音變'] },
         sourceItem: { value: 4600, kanji: '四千六百円', reading: 'よんせんろっぴゃくえん' }
     },
     {
         id: 'num_thousands_extra_37', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「五千八百」的正確讀音是？', stem_zh: '「五千八百」的正確讀音是？',
+        stem: '「五千八百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「五千八百」的正確讀音是？',
         options: [
             { text: 'ごせんはっぴゃく', isCorrect: true, reason: '正確！「五千八百」，「八百」促音+半濁音化。' },
             { text: 'ごせんはちひゃく', isCorrect: false, reason: '「八百」促音+半濁音化。' },
@@ -2532,7 +2532,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いつせんやひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五千」無音變，「八百」促音+半濁音化。', relatedRules: ['五千の讀法', '八百の音變'] },
+        explanation: { correctRule: '「五千」無音變，「八百」促音+半濁音化。', relatedRules: ['五千的讀法', '八百的音變'] },
         sourceItem: { value: 5800, kanji: '五千八百', reading: 'ごせんはっぴゃく' }
     },
     {
@@ -2545,7 +2545,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'むせんここのひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六千九百」無音變。', relatedRules: ['六千の讀法', '九百の讀法'] },
+        explanation: { correctRule: '「六千九百」無音變。', relatedRules: ['六千的讀法', '九百的讀法'] },
         sourceItem: { value: 6900, kanji: '六千九百', reading: 'ろくせんきゅうひゃく' }
     },
     {
@@ -2559,12 +2559,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのせんふたひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七千二百」無音變。', relatedRules: ['七千の讀法', '二百の讀法'] },
+        explanation: { correctRule: '「七千二百」無音變。', relatedRules: ['七千的讀法', '二百的讀法'] },
         sourceItem: { value: 7200, kanji: '七千二百', reading: 'ななせんにひゃく' }
     },
     {
         id: 'num_thousands_extra_40', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: true,
-        stem: '「八千三百」的正確讀音是？', stem_zh: '「八千三百」的正確讀音是？',
+        stem: '「八千三百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「八千三百」的正確讀音是？',
         options: [
             { text: 'はちせんさんひゃく', isCorrect: false, reason: '陷阱！「八千」促音化，「三百」濁音化。' },
             { text: 'はっせんさんびゃく', isCorrect: true, reason: '正確！「八千三百」。' },
@@ -2572,7 +2572,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やせんみびゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八千」促音化，「三百」濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['八千の促音化', '三百の濁音化'] },
+        explanation: { correctRule: '「八千」促音化，「三百」濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['八千的促音化', '三百的濁音化'] },
         sourceItem: { value: 8300, kanji: '八千三百', reading: 'はっせんさんびゃく' }
     },
     {
@@ -2585,7 +2585,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのせんよひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九千四百」無音變。', relatedRules: ['九千の讀法', '四百の讀法'] },
+        explanation: { correctRule: '「九千四百」無音變。', relatedRules: ['九千的讀法', '四百的讀法'] },
         sourceItem: { value: 9400, kanji: '九千四百', reading: 'きゅうせんよんひゃく' }
     },
     {
@@ -2599,12 +2599,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いちばんひゃくえん', isCorrect: false, reason: '「万」不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「一万」不可省略「一」，但「百」可省略。', trapExplanation: '「万」前的「一」不可省略。', relatedRules: ['一万の特殊規則', '百の省略'] },
+        explanation: { correctRule: '「一万」不可省略「一」，但「百」可省略。', trapExplanation: '「万」前的「一」不可省略。', relatedRules: ['一万的特殊規則', '百の省略'] },
         sourceItem: { value: 10100, kanji: '一万百円', reading: 'いちまんひゃくえん' }
     },
     {
         id: 'num_thousands_extra_43', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「千六百」的正確讀音是？', stem_zh: '「一千六百」的正確讀音是？',
+        stem: '「千六百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「一千六百」的正確讀音是？',
         options: [
             { text: 'せんろっぴゃく', isCorrect: true, reason: '正確！「千六百」，「六百」促音+半濁音化。' },
             { text: 'いちせんろくひゃく', isCorrect: false, reason: '「千」省略「一」，「六百」促音+半濁音化。' },
@@ -2612,7 +2612,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ちむひゃく', isCorrect: false, reason: '使用音讀「せん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「千六百」省略「一」，「六百」促音+半濁音化。', relatedRules: ['千の省略', '六百の音變'] },
+        explanation: { correctRule: '「千六百」省略「一」，「六百」促音+半濁音化。', relatedRules: ['千の省略', '六百的音變'] },
         sourceItem: { value: 1600, kanji: '千六百', reading: 'せんろっぴゃく' }
     },
     {
@@ -2625,7 +2625,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にせんななびゃく', isCorrect: false, reason: '「七百」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二千七百」無音變。', relatedRules: ['二千の讀法', '七百の讀法'] },
+        explanation: { correctRule: '「二千七百」無音變。', relatedRules: ['二千的讀法', '七百的讀法'] },
         sourceItem: { value: 2700, kanji: '二千七百', reading: 'にせんななひゃく' }
     },
     {
@@ -2639,12 +2639,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みぜんもも', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化，「百」省略「一」。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '百の省略'] },
+        explanation: { correctRule: '「三千」濁音化，「百」省略「一」。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千的濁音化', '百の省略'] },
         sourceItem: { value: 3100, kanji: '三千百', reading: 'さんぜんひゃく' }
     },
     {
         id: 'num_thousands_extra_46', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「四千八百」的正確讀音是？', stem_zh: '「四千八百」的正確讀音是？',
+        stem: '「四千八百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四千八百」的正確讀音是？',
         options: [
             { text: 'よんせんはっぴゃく', isCorrect: true, reason: '正確！「四千八百」，「八百」促音+半濁音化。' },
             { text: 'しせんはちひゃく', isCorrect: false, reason: '「四」讀「よん」，「八百」促音+半濁音化。' },
@@ -2652,7 +2652,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よせんやひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四千」無音變，「八百」促音+半濁音化。', relatedRules: ['四千の讀法', '八百の音變'] },
+        explanation: { correctRule: '「四千」無音變，「八百」促音+半濁音化。', relatedRules: ['四千的讀法', '八百的音變'] },
         sourceItem: { value: 4800, kanji: '四千八百', reading: 'よんせんはっぴゃく' }
     },
     {
@@ -2665,7 +2665,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごせんここのひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五千九百」無音變。', relatedRules: ['五千の讀法', '九百の讀法'] },
+        explanation: { correctRule: '「五千九百」無音變。', relatedRules: ['五千的讀法', '九百的讀法'] },
         sourceItem: { value: 5900, kanji: '五千九百', reading: 'ごせんきゅうひゃく' }
     },
     {
@@ -2679,12 +2679,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'むせんふたひゃくえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六千二百円」無音變。', relatedRules: ['六千の讀法', '二百の讀法'] },
+        explanation: { correctRule: '「六千二百円」無音變。', relatedRules: ['六千的讀法', '二百的讀法'] },
         sourceItem: { value: 6200, kanji: '六千二百円', reading: 'ろくせんにひゃくえん' }
     },
     {
         id: 'num_thousands_extra_49', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「七千三百」的正確讀音是？', stem_zh: '「七千三百」的正確讀音是？',
+        stem: '「七千三百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七千三百」的正確讀音是？',
         options: [
             { text: 'ななせんさんびゃく', isCorrect: true, reason: '正確！「七千三百」，「三百」濁音化。' },
             { text: 'しちせんさんひゃく', isCorrect: false, reason: '「七」讀「なな」，「三百」濁音化。' },
@@ -2692,7 +2692,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのせんみびゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七千」無音變，「三百」濁音化。', relatedRules: ['七千の讀法', '三百の濁音化'] },
+        explanation: { correctRule: '「七千」無音變，「三百」濁音化。', relatedRules: ['七千的讀法', '三百的濁音化'] },
         sourceItem: { value: 7300, kanji: '七千三百', reading: 'ななせんさんびゃく' }
     },
     {
@@ -2705,7 +2705,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やせんやひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八千」促音化，「八百」促音+半濁音化。', trapExplanation: '注意兩處「八」後的音變。', relatedRules: ['八千の促音化', '八百の音變'] },
+        explanation: { correctRule: '「八千」促音化，「八百」促音+半濁音化。', trapExplanation: '注意兩處「八」後的音變。', relatedRules: ['八千的促音化', '八百的音變'] },
         sourceItem: { value: 8800, kanji: '八千八百', reading: 'はっせんはっぴゃく' }
     },
     {
@@ -2719,12 +2719,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのせんむひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九千」無音變，「六百」促音+半濁音化。', relatedRules: ['九千の讀法', '六百の音變'] },
+        explanation: { correctRule: '「九千」無音變，「六百」促音+半濁音化。', relatedRules: ['九千的讀法', '六百的音變'] },
         sourceItem: { value: 9600, kanji: '九千六百', reading: 'きゅうせんろっぴゃく' }
     },
     {
         id: 'num_thousands_extra_52', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「千八百」的正確讀音是？', stem_zh: '「一千八百」的正確讀音是？',
+        stem: '「千八百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「一千八百」的正確讀音是？',
         options: [
             { text: 'せんはっぴゃく', isCorrect: true, reason: '正確！「千八百」，「八百」促音+半濁音化。' },
             { text: 'いちせんはちひゃく', isCorrect: false, reason: '「千」省略「一」，「八百」促音+半濁音化。' },
@@ -2732,7 +2732,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ちやひゃく', isCorrect: false, reason: '使用音讀「せん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「千八百」省略「一」，「八百」促音+半濁音化。', relatedRules: ['千の省略', '八百の音變'] },
+        explanation: { correctRule: '「千八百」省略「一」，「八百」促音+半濁音化。', relatedRules: ['千の省略', '八百的音變'] },
         sourceItem: { value: 1800, kanji: '千八百', reading: 'せんはっぴゃく' }
     },
     {
@@ -2745,7 +2745,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にせんよんびゃく', isCorrect: false, reason: '「四百」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二千四百」無音變。', relatedRules: ['二千の讀法', '四百の讀法'] },
+        explanation: { correctRule: '「二千四百」無音變。', relatedRules: ['二千的讀法', '四百的讀法'] },
         sourceItem: { value: 2400, kanji: '二千四百', reading: 'にせんよんひゃく' }
     },
     {
@@ -2759,12 +2759,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みぜんむひゃくえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化，「六百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['三千の濁音化', '六百の音變'] },
+        explanation: { correctRule: '「三千」濁音化，「六百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['三千的濁音化', '六百的音變'] },
         sourceItem: { value: 3600, kanji: '三千六百円', reading: 'さんぜんろっぴゃくえん' }
     },
     {
         id: 'num_thousands_extra_55', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「四千七百」的正確讀音是？', stem_zh: '「四千七百」的正確讀音是？',
+        stem: '「四千七百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四千七百」的正確讀音是？',
         options: [
             { text: 'よんせんななひゃく', isCorrect: true, reason: '正確！「四千七百」無音變。' },
             { text: 'しせんしちひゃく', isCorrect: false, reason: '「四」讀「よん」，「七」讀「なな」。' },
@@ -2772,7 +2772,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よせんなのひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四千七百」無音變。', relatedRules: ['四千の讀法', '七百の讀法'] },
+        explanation: { correctRule: '「四千七百」無音變。', relatedRules: ['四千的讀法', '七百的讀法'] },
         sourceItem: { value: 4700, kanji: '四千七百', reading: 'よんせんななひゃく' }
     },
     {
@@ -2785,7 +2785,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごせんにびゃく', isCorrect: false, reason: '「二百」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五千二百」無音變。', relatedRules: ['五千の讀法', '二百の讀法'] },
+        explanation: { correctRule: '「五千二百」無音變。', relatedRules: ['五千的讀法', '二百的讀法'] },
         sourceItem: { value: 5200, kanji: '五千二百', reading: 'ごせんにひゃく' }
     },
     {
@@ -2799,12 +2799,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'むせんみびゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六千」無音變，「三百」濁音化。', relatedRules: ['六千の讀法', '三百の濁音化'] },
+        explanation: { correctRule: '「六千」無音變，「三百」濁音化。', relatedRules: ['六千的讀法', '三百的濁音化'] },
         sourceItem: { value: 6300, kanji: '六千三百', reading: 'ろくせんさんびゃく' }
     },
     {
         id: 'num_thousands_extra_58', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「七千六百」的正確讀音是？', stem_zh: '「七千六百」的正確讀音是？',
+        stem: '「七千六百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七千六百」的正確讀音是？',
         options: [
             { text: 'ななせんろっぴゃく', isCorrect: true, reason: '正確！「七千六百」，「六百」促音+半濁音化。' },
             { text: 'しちせんろくひゃく', isCorrect: false, reason: '「七」讀「なな」，「六百」促音+半濁音化。' },
@@ -2812,7 +2812,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのせんむひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七千」無音變，「六百」促音+半濁音化。', relatedRules: ['七千の讀法', '六百の音變'] },
+        explanation: { correctRule: '「七千」無音變，「六百」促音+半濁音化。', relatedRules: ['七千的讀法', '六百的音變'] },
         sourceItem: { value: 7600, kanji: '七千六百', reading: 'ななせんろっぴゃく' }
     },
     {
@@ -2825,7 +2825,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やせんもも', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八千」促音化，「百」省略「一」。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千の促音化', '百の省略'] },
+        explanation: { correctRule: '「八千」促音化，「百」省略「一」。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千的促音化', '百の省略'] },
         sourceItem: { value: 8100, kanji: '八千百', reading: 'はっせんひゃく' }
     },
     {
@@ -2839,12 +2839,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのせんなのひゃくえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九千七百円」無音變。', relatedRules: ['九千の讀法', '七百の讀法'] },
+        explanation: { correctRule: '「九千七百円」無音變。', relatedRules: ['九千的讀法', '七百的讀法'] },
         sourceItem: { value: 9700, kanji: '九千七百円', reading: 'きゅうせんななひゃくえん' }
     },
     {
         id: 'num_thousands_extra_61', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「千九百」的正確讀音是？', stem_zh: '「一千九百」的正確讀音是？',
+        stem: '「千九百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「一千九百」的正確讀音是？',
         options: [
             { text: 'せんきゅうひゃく', isCorrect: true, reason: '正確！「千九百」省略「一」。' },
             { text: 'いちせんくひゃく', isCorrect: false, reason: '「千」省略「一」，「九」讀「きゅう」。' },
@@ -2852,7 +2852,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ちここのひゃく', isCorrect: false, reason: '使用音讀「せん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「千九百」省略「一」。', relatedRules: ['千の省略', '九百の讀法'] },
+        explanation: { correctRule: '「千九百」省略「一」。', relatedRules: ['千の省略', '九百的讀法'] },
         sourceItem: { value: 1900, kanji: '千九百', reading: 'せんきゅうひゃく' }
     },
     {
@@ -2865,7 +2865,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にせんごびゃく', isCorrect: false, reason: '「五百」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二千五百」無音變。', relatedRules: ['二千の讀法', '五百の讀法'] },
+        explanation: { correctRule: '「二千五百」無音變。', relatedRules: ['二千的讀法', '五百的讀法'] },
         sourceItem: { value: 2500, kanji: '二千五百', reading: 'にせんごひゃく' }
     },
     {
@@ -2879,12 +2879,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みぜんやひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化，「八百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['三千の濁音化', '八百の音變'] },
+        explanation: { correctRule: '「三千」濁音化，「八百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['三千的濁音化', '八百的音變'] },
         sourceItem: { value: 3800, kanji: '三千八百', reading: 'さんぜんはっぴゃく' }
     },
     {
         id: 'num_thousands_extra_64', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「四千二百」的正確讀音是？', stem_zh: '「四千二百」的正確讀音是？',
+        stem: '「四千二百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四千二百」的正確讀音是？',
         options: [
             { text: 'よんせんにひゃく', isCorrect: true, reason: '正確！「四千二百」無音變。' },
             { text: 'しせんにひゃく', isCorrect: false, reason: '「四」讀「よん」。' },
@@ -2892,7 +2892,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よせんふたひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四千二百」無音變。', relatedRules: ['四千の讀法', '二百の讀法'] },
+        explanation: { correctRule: '「四千二百」無音變。', relatedRules: ['四千的讀法', '二百的讀法'] },
         sourceItem: { value: 4200, kanji: '四千二百', reading: 'よんせんにひゃく' }
     },
     {
@@ -2905,7 +2905,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごせんさんひゃく', isCorrect: false, reason: '「三百」濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五千」無音變，「三百」濁音化。', relatedRules: ['五千の讀法', '三百の濁音化'] },
+        explanation: { correctRule: '「五千」無音變，「三百」濁音化。', relatedRules: ['五千的讀法', '三百的濁音化'] },
         sourceItem: { value: 5300, kanji: '五千三百', reading: 'ごせんさんびゃく' }
     },
     {
@@ -2919,12 +2919,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'むせんよひゃくえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六千四百円」無音變。', relatedRules: ['六千の讀法', '四百の讀法'] },
+        explanation: { correctRule: '「六千四百円」無音變。', relatedRules: ['六千的讀法', '四百的讀法'] },
         sourceItem: { value: 6400, kanji: '六千四百円', reading: 'ろくせんよんひゃくえん' }
     },
     {
         id: 'num_thousands_extra_67', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「七千八百」的正確讀音是？', stem_zh: '「七千八百」的正確讀音是？',
+        stem: '「七千八百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七千八百」的正確讀音是？',
         options: [
             { text: 'ななせんはっぴゃく', isCorrect: true, reason: '正確！「七千八百」，「八百」促音+半濁音化。' },
             { text: 'しちせんはちひゃく', isCorrect: false, reason: '「七」讀「なな」，「八百」促音+半濁音化。' },
@@ -2932,7 +2932,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのせんやひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七千」無音變，「八百」促音+半濁音化。', relatedRules: ['七千の讀法', '八百の音變'] },
+        explanation: { correctRule: '「七千」無音變，「八百」促音+半濁音化。', relatedRules: ['七千的讀法', '八百的音變'] },
         sourceItem: { value: 7800, kanji: '七千八百', reading: 'ななせんはっぴゃく' }
     },
     {
@@ -2945,7 +2945,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やせんむひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八千」促音化，「六百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['八千の促音化', '六百の音變'] },
+        explanation: { correctRule: '「八千」促音化，「六百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['八千的促音化', '六百的音變'] },
         sourceItem: { value: 8600, kanji: '八千六百', reading: 'はっせんろっぴゃく' }
     },
     {
@@ -2959,12 +2959,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのせんいつひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九千五百」無音變。', relatedRules: ['九千の讀法', '五百の讀法'] },
+        explanation: { correctRule: '「九千五百」無音變。', relatedRules: ['九千的讀法', '五百的讀法'] },
         sourceItem: { value: 9500, kanji: '九千五百', reading: 'きゅうせんごひゃく' }
     },
     {
         id: 'num_thousands_extra_70', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「千三百」的正確讀音是？', stem_zh: '「一千三百」的正確讀音是？',
+        stem: '「千三百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「一千三百」的正確讀音是？',
         options: [
             { text: 'せんさんびゃく', isCorrect: true, reason: '正確！「千三百」，「三百」濁音化。' },
             { text: 'いちせんさんひゃく', isCorrect: false, reason: '「千」省略「一」，「三百」濁音化。' },
@@ -2972,7 +2972,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ちみびゃく', isCorrect: false, reason: '使用音讀「せん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「千三百」省略「一」，「三百」濁音化。', relatedRules: ['千の省略', '三百の濁音化'] },
+        explanation: { correctRule: '「千三百」省略「一」，「三百」濁音化。', relatedRules: ['千の省略', '三百的濁音化'] },
         sourceItem: { value: 1300, kanji: '千三百', reading: 'せんさんびゃく' }
     },
     {
@@ -2985,7 +2985,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にせんはちひゃく', isCorrect: false, reason: '「八百」促音+半濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二千」無音變，「八百」促音+半濁音化。', relatedRules: ['二千の讀法', '八百の音變'] },
+        explanation: { correctRule: '「二千」無音變，「八百」促音+半濁音化。', relatedRules: ['二千的讀法', '八百的音變'] },
         sourceItem: { value: 2800, kanji: '二千八百', reading: 'にせんはっぴゃく' }
     },
     {
@@ -2999,12 +2999,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みぜんももえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化，「百」省略「一」。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '百の省略'] },
+        explanation: { correctRule: '「三千」濁音化，「百」省略「一」。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千的濁音化', '百の省略'] },
         sourceItem: { value: 3100, kanji: '三千百円', reading: 'さんぜんひゃくえん' }
     },
     {
         id: 'num_thousands_extra_73', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「四千三百」的正確讀音是？', stem_zh: '「四千三百」的正確讀音是？',
+        stem: '「四千三百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四千三百」的正確讀音是？',
         options: [
             { text: 'よんせんさんびゃく', isCorrect: true, reason: '正確！「四千三百」，「三百」濁音化。' },
             { text: 'しせんさんひゃく', isCorrect: false, reason: '「四」讀「よん」，「三百」濁音化。' },
@@ -3012,7 +3012,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よせんみびゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四千」無音變，「三百」濁音化。', relatedRules: ['四千の讀法', '三百の濁音化'] },
+        explanation: { correctRule: '「四千」無音變，「三百」濁音化。', relatedRules: ['四千的讀法', '三百的濁音化'] },
         sourceItem: { value: 4300, kanji: '四千三百', reading: 'よんせんさんびゃく' }
     },
     {
@@ -3025,7 +3025,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごせんろくひゃく', isCorrect: false, reason: '「六百」促音+半濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五千」無音變，「六百」促音+半濁音化。', relatedRules: ['五千の讀法', '六百の音變'] },
+        explanation: { correctRule: '「五千」無音變，「六百」促音+半濁音化。', relatedRules: ['五千的讀法', '六百的音變'] },
         sourceItem: { value: 5600, kanji: '五千六百', reading: 'ごせんろっぴゃく' }
     },
     {
@@ -3039,12 +3039,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'むせんいつひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六千五百」無音變。', relatedRules: ['六千の讀法', '五百の讀法'] },
+        explanation: { correctRule: '「六千五百」無音變。', relatedRules: ['六千的讀法', '五百的讀法'] },
         sourceItem: { value: 6500, kanji: '六千五百', reading: 'ろくせんごひゃく' }
     },
     {
         id: 'num_thousands_extra_76', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「七千四百」的正確讀音是？', stem_zh: '「七千四百」的正確讀音是？',
+        stem: '「七千四百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七千四百」的正確讀音是？',
         options: [
             { text: 'ななせんよんひゃく', isCorrect: true, reason: '正確！「七千四百」無音變。' },
             { text: 'しちせんしひゃく', isCorrect: false, reason: '「七」讀「なな」，「四」讀「よん」。' },
@@ -3052,7 +3052,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのせんよひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七千四百」無音變。', relatedRules: ['七千の讀法', '四百の讀法'] },
+        explanation: { correctRule: '「七千四百」無音變。', relatedRules: ['七千的讀法', '四百的讀法'] },
         sourceItem: { value: 7400, kanji: '七千四百', reading: 'ななせんよんひゃく' }
     },
     {
@@ -3065,7 +3065,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やせんみびゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八千」促音化，「三百」濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['八千の促音化', '三百の濁音化'] },
+        explanation: { correctRule: '「八千」促音化，「三百」濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['八千的促音化', '三百的濁音化'] },
         sourceItem: { value: 8300, kanji: '八千三百', reading: 'はっせんさんびゃく' }
     },
     {
@@ -3079,12 +3079,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのせんやひゃくえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九千」無音變，「八百」促音+半濁音化。', relatedRules: ['九千の讀法', '八百の音變'] },
+        explanation: { correctRule: '「九千」無音變，「八百」促音+半濁音化。', relatedRules: ['九千的讀法', '八百的音變'] },
         sourceItem: { value: 9800, kanji: '九千八百円', reading: 'きゅうせんはっぴゃくえん' }
     },
     {
         id: 'num_thousands_extra_79', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「千七百」的正確讀音是？', stem_zh: '「一千七百」的正確讀音是？',
+        stem: '「千七百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「一千七百」的正確讀音是？',
         options: [
             { text: 'せんななひゃく', isCorrect: true, reason: '正確！「千七百」省略「一」。' },
             { text: 'いちせんしちひゃく', isCorrect: false, reason: '「千」省略「一」，「七」讀「なな」。' },
@@ -3092,7 +3092,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ちなのひゃく', isCorrect: false, reason: '使用音讀「せん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「千七百」省略「一」。', relatedRules: ['千の省略', '七百の讀法'] },
+        explanation: { correctRule: '「千七百」省略「一」。', relatedRules: ['千の省略', '七百的讀法'] },
         sourceItem: { value: 1700, kanji: '千七百', reading: 'せんななひゃく' }
     },
     {
@@ -3105,7 +3105,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にせんいちひゃく', isCorrect: false, reason: '「百」省略「一」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二千百」，「百」省略「一」。', relatedRules: ['二千の讀法', '百の省略'] },
+        explanation: { correctRule: '「二千百」，「百」省略「一」。', relatedRules: ['二千的讀法', '百の省略'] },
         sourceItem: { value: 2100, kanji: '二千百', reading: 'にせんひゃく' }
     },
     {
@@ -3119,12 +3119,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みぜんむひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化，「六百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['三千の濁音化', '六百の音變'] },
+        explanation: { correctRule: '「三千」濁音化，「六百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['三千的濁音化', '六百的音變'] },
         sourceItem: { value: 3600, kanji: '三千六百', reading: 'さんぜんろっぴゃく' }
     },
     {
         id: 'num_thousands_extra_82', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「四千九百」的正確讀音是？', stem_zh: '「四千九百」的正確讀音是？',
+        stem: '「四千九百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四千九百」的正確讀音是？',
         options: [
             { text: 'よんせんきゅうひゃく', isCorrect: true, reason: '正確！「四千九百」無音變。' },
             { text: 'しせんくひゃく', isCorrect: false, reason: '「四」讀「よん」，「九」讀「きゅう」。' },
@@ -3132,7 +3132,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よせんここのひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四千九百」無音變。', relatedRules: ['四千の讀法', '九百の讀法'] },
+        explanation: { correctRule: '「四千九百」無音變。', relatedRules: ['四千的讀法', '九百的讀法'] },
         sourceItem: { value: 4900, kanji: '四千九百', reading: 'よんせんきゅうひゃく' }
     },
     {
@@ -3145,7 +3145,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごせんよんびゃく', isCorrect: false, reason: '「四百」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五千四百」無音變。', relatedRules: ['五千の讀法', '四百の讀法'] },
+        explanation: { correctRule: '「五千四百」無音變。', relatedRules: ['五千的讀法', '四百的讀法'] },
         sourceItem: { value: 5400, kanji: '五千四百', reading: 'ごせんよんひゃく' }
     },
     {
@@ -3159,12 +3159,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'むせんなのひゃくえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六千七百円」無音變。', relatedRules: ['六千の讀法', '七百の讀法'] },
+        explanation: { correctRule: '「六千七百円」無音變。', relatedRules: ['六千的讀法', '七百的讀法'] },
         sourceItem: { value: 6700, kanji: '六千七百円', reading: 'ろくせんななひゃくえん' }
     },
     {
         id: 'num_thousands_extra_85', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「七千一百」的正確讀音是？', stem_zh: '「七千一百」的正確讀音是？',
+        stem: '「七千一百」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七千一百」的正確讀音是？',
         options: [
             { text: 'ななせんひゃく', isCorrect: true, reason: '正確！「七千百」，「百」省略「一」。' },
             { text: 'しちせんいっぴゃく', isCorrect: false, reason: '「七」讀「なな」，「百」省略「一」。' },
@@ -3172,7 +3172,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのせんもも', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七千」無音變，「百」省略「一」。', relatedRules: ['七千の讀法', '百の省略'] },
+        explanation: { correctRule: '「七千」無音變，「百」省略「一」。', relatedRules: ['七千的讀法', '百の省略'] },
         sourceItem: { value: 7100, kanji: '七千百', reading: 'ななせんひゃく' }
     },
     {
@@ -3185,7 +3185,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やせんよひゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八千」促音化，「四百」無音變。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千の促音化', '四百の讀法'] },
+        explanation: { correctRule: '「八千」促音化，「四百」無音變。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千的促音化', '四百的讀法'] },
         sourceItem: { value: 8400, kanji: '八千四百', reading: 'はっせんよんひゃく' }
     },
     {
@@ -3199,12 +3199,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのせんみびゃく', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九千」無音變，「三百」濁音化。', relatedRules: ['九千の讀法', '三百の濁音化'] },
+        explanation: { correctRule: '「九千」無音變，「三百」濁音化。', relatedRules: ['九千的讀法', '三百的濁音化'] },
         sourceItem: { value: 9300, kanji: '九千三百', reading: 'きゅうせんさんびゃく' }
     },
     {
         id: 'num_thousands_extra_88', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: true,
-        stem: '「一万三千」的正確讀音是？', stem_zh: '「一萬三千」的正確讀音是？',
+        stem: '「一万三千」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「一萬三千」的正確讀音是？',
         options: [
             { text: 'いちまんさんせん', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
             { text: 'いちまんさんぜん', isCorrect: true, reason: '正確！「一万三千」。' },
@@ -3212,7 +3212,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いちばんさんぜん', isCorrect: false, reason: '「万」不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「一万」不可省略「一」，「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['一万の特殊規則', '三千の濁音化'] },
+        explanation: { correctRule: '「一万」不可省略「一」，「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['一万的特殊規則', '三千的濁音化'] },
         sourceItem: { value: 13000, kanji: '一万三千', reading: 'いちまんさんぜん' }
     },
     {
@@ -3225,7 +3225,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にまんごぜんえん', isCorrect: false, reason: '「五千」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二万五千円」無音變。', relatedRules: ['万位數の讀法', '五千の讀法'] },
+        explanation: { correctRule: '「二万五千円」無音變。', relatedRules: ['万位數的讀法', '五千的讀法'] },
         sourceItem: { value: 25000, kanji: '二万五千円', reading: 'にまんごせんえん' }
     },
     {
@@ -3239,12 +3239,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みまんやせんえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千の促音化', '万位數金額'] },
+        explanation: { correctRule: '「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千的促音化', '万位數金額'] },
         sourceItem: { value: 38000, kanji: '三万八千円', reading: 'さんまんはっせんえん' }
     },
     {
         id: 'num_thousands_extra_91', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「四万六千」的正確讀音是？', stem_zh: '「四萬六千」的正確讀音是？',
+        stem: '「四万六千」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四萬六千」的正確讀音是？',
         options: [
             { text: 'よんまんろくせん', isCorrect: true, reason: '正確！「四万六千」無音變。' },
             { text: 'しまんろくぜん', isCorrect: false, reason: '「四」讀「よん」，「六千」不濁音化。' },
@@ -3252,7 +3252,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よまんむせん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四万六千」無音變。', relatedRules: ['万位數の讀法', '六千の讀法'] },
+        explanation: { correctRule: '「四万六千」無音變。', relatedRules: ['万位數的讀法', '六千的讀法'] },
         sourceItem: { value: 46000, kanji: '四万六千', reading: 'よんまんろくせん' }
     },
     {
@@ -3265,7 +3265,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごまんにぜん', isCorrect: false, reason: '「二千」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五万二千」無音變。', relatedRules: ['万位數の讀法', '二千の讀法'] },
+        explanation: { correctRule: '「五万二千」無音變。', relatedRules: ['万位數的讀法', '二千的讀法'] },
         sourceItem: { value: 52000, kanji: '五万二千', reading: 'ごまんにせん' }
     },
     {
@@ -3279,12 +3279,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'むまんみぜん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '万位數組合'] },
+        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千的濁音化', '万位數組合'] },
         sourceItem: { value: 63000, kanji: '六万三千', reading: 'ろくまんさんぜん' }
     },
     {
         id: 'num_thousands_extra_94', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「七万四千」的正確讀音是？', stem_zh: '「七萬四千」的正確讀音是？',
+        stem: '「七万四千」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七萬四千」的正確讀音是？',
         options: [
             { text: 'ななまんよんせん', isCorrect: true, reason: '正確！「七万四千」無音變。' },
             { text: 'しちまんしせん', isCorrect: false, reason: '「七」讀「なな」，「四」讀「よん」。' },
@@ -3292,7 +3292,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのまんよせん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七万四千」無音變。', relatedRules: ['万位數の讀法', '四千の讀法'] },
+        explanation: { correctRule: '「七万四千」無音變。', relatedRules: ['万位數的讀法', '四千的讀法'] },
         sourceItem: { value: 74000, kanji: '七万四千', reading: 'ななまんよんせん' }
     },
     {
@@ -3305,7 +3305,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やまんいつせん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八万」不促音化，與「八千」不同。', relatedRules: ['八万不促音化', '五千の讀法'] },
+        explanation: { correctRule: '「八万」不促音化，與「八千」不同。', relatedRules: ['八万不促音化', '五千的讀法'] },
         sourceItem: { value: 85000, kanji: '八万五千', reading: 'はちまんごせん' }
     },
     {
@@ -3319,12 +3319,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのまんなのせんえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九万七千円」無音變。', relatedRules: ['万位數の讀法', '七千の讀法'] },
+        explanation: { correctRule: '「九万七千円」無音變。', relatedRules: ['万位數的讀法', '七千的讀法'] },
         sourceItem: { value: 97000, kanji: '九万七千円', reading: 'きゅうまんななせんえん' }
     },
     {
         id: 'num_thousands_extra_97', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: true,
-        stem: '「十万三千」的正確讀音是？', stem_zh: '「十萬三千」的正確讀音是？',
+        stem: '「十万三千」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「十萬三千」的正確讀音是？',
         options: [
             { text: 'じゅうまんさんせん', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
             { text: 'じゅうまんさんぜん', isCorrect: true, reason: '正確！「十万三千」。' },
@@ -3332,7 +3332,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうばんさんぜん', isCorrect: false, reason: '「万」不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '十万の讀法'] },
+        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千的濁音化', '十万的讀法'] },
         sourceItem: { value: 103000, kanji: '十万三千', reading: 'じゅうまんさんぜん' }
     },
     {
@@ -3345,7 +3345,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'とおごまんやせんえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千の促音化', '大數字金額'] },
+        explanation: { correctRule: '「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千的促音化', '大數字金額'] },
         sourceItem: { value: 158000, kanji: '十五万八千円', reading: 'じゅうごまんはっせんえん' }
     },
     {
@@ -3359,12 +3359,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたじゅうまんち', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「千」省略「一」。', relatedRules: ['千の省略', '大數字の讀法'] },
+        explanation: { correctRule: '「千」省略「一」。', relatedRules: ['千の省略', '大數字的讀法'] },
         sourceItem: { value: 201000, kanji: '二十万千', reading: 'にじゅうまんせん' }
     },
     {
         id: 'num_thousands_extra_100', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「百万」的正確讀音是？', stem_zh: '「一百萬」的正確讀音是？',
+        stem: '「百万」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「一百萬」的正確讀音是？',
         options: [
             { text: 'ひゃくまん', isCorrect: true, reason: '正確！「百万」省略「一」。' },
             { text: 'いっぴゃくまん', isCorrect: false, reason: '「百万」通常省略「一」。' },
@@ -3372,7 +3372,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ももまん', isCorrect: false, reason: '使用音讀「ひゃく」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「百万」省略「一」。', relatedRules: ['百万の讀法', '大數字の省略'] },
+        explanation: { correctRule: '「百万」省略「一」。', relatedRules: ['百万的讀法', '大數字の省略'] },
         sourceItem: { value: 1000000, kanji: '百万', reading: 'ひゃくまん' }
     },
     {
@@ -3385,7 +3385,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いちばんはっせん', isCorrect: false, reason: '「万」不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「一万」不可省略「一」，「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['一万の特殊規則', '八千の促音化'] },
+        explanation: { correctRule: '「一万」不可省略「一」，「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['一万的特殊規則', '八千的促音化'] },
         sourceItem: { value: 18000, kanji: '一万八千', reading: 'いちまんはっせん' }
     },
     {
@@ -3399,12 +3399,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたまんみぜんえん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '万位數金額'] },
+        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千的濁音化', '万位數金額'] },
         sourceItem: { value: 23000, kanji: '二万三千円', reading: 'にまんさんぜんえん' }
     },
     {
         id: 'num_thousands_extra_103', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「三万千」的正確讀音是？', stem_zh: '「三萬一千」的正確讀音是？',
+        stem: '「三万千」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「三萬一千」的正確讀音是？',
         options: [
             { text: 'さんまんせん', isCorrect: true, reason: '正確！「三万千」，「千」省略「一」。' },
             { text: 'さんまんいちせん', isCorrect: false, reason: '「千」通常省略「一」。' },
@@ -3425,7 +3425,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よまんいつせん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四万五千」無音變。', relatedRules: ['四の避諱', '五千の讀法'] },
+        explanation: { correctRule: '「四万五千」無音變。', relatedRules: ['四の避諱', '五千的讀法'] },
         sourceItem: { value: 45000, kanji: '四万五千', reading: 'よんまんごせん' }
     },
     {
@@ -3439,12 +3439,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごまんろくぜん', isCorrect: false, reason: '「六千」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五万六千」無音變。', relatedRules: ['五万の讀法', '六千の讀法'] },
+        explanation: { correctRule: '「五万六千」無音變。', relatedRules: ['五万的讀法', '六千的讀法'] },
         sourceItem: { value: 56000, kanji: '五万六千', reading: 'ごまんろくせん' }
     },
     {
         id: 'num_thousands_extra_106', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「六万七千」的正確讀音是？', stem_zh: '「六萬七千」的正確讀音是？',
+        stem: '「六万七千」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「六萬七千」的正確讀音是？',
         options: [
             { text: 'ろくまんななせん', isCorrect: true, reason: '正確！「六万七千」無音變。' },
             { text: 'むまんしちせん', isCorrect: false, reason: '使用音讀「ろく」，「七」讀「なな」。' },
@@ -3452,7 +3452,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくまんななぜん', isCorrect: false, reason: '「七千」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六万七千」無音變。', relatedRules: ['六万の讀法', '七千の讀法'] },
+        explanation: { correctRule: '「六万七千」無音變。', relatedRules: ['六万的讀法', '七千的讀法'] },
         sourceItem: { value: 67000, kanji: '六万七千', reading: 'ろくまんななせん' }
     },
     {
@@ -3465,7 +3465,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ななばんはっせん', isCorrect: false, reason: '「万」不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千の促音化', '万位數組合'] },
+        explanation: { correctRule: '「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千的促音化', '万位數組合'] },
         sourceItem: { value: 78000, kanji: '七万八千', reading: 'ななまんはっせん' }
     },
     {
@@ -3479,12 +3479,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やまんここのせん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八万」不促音化，與「八千」不同。', relatedRules: ['八万不促音化', '九千の讀法'] },
+        explanation: { correctRule: '「八万」不促音化，與「八千」不同。', relatedRules: ['八万不促音化', '九千的讀法'] },
         sourceItem: { value: 89000, kanji: '八万九千', reading: 'はちまんきゅうせん' }
     },
     {
         id: 'num_thousands_extra_109', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「九万二千」的正確讀音是？', stem_zh: '「九萬二千」的正確讀音是？',
+        stem: '「九万二千」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「九萬二千」的正確讀音是？',
         options: [
             { text: 'きゅうまんにせん', isCorrect: true, reason: '正確！「九万二千」無音變。' },
             { text: 'くまんふたせん', isCorrect: false, reason: '「九」讀「きゅう」，「二」讀「に」。' },
@@ -3492,7 +3492,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうまんにぜん', isCorrect: false, reason: '「二千」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九万二千」無音變。', relatedRules: ['九万の讀法', '二千の讀法'] },
+        explanation: { correctRule: '「九万二千」無音變。', relatedRules: ['九万的讀法', '二千的讀法'] },
         sourceItem: { value: 92000, kanji: '九万二千', reading: 'きゅうまんにせん' }
     },
     {
@@ -3505,7 +3505,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'とおいちまんみぜん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '大數字組合'] },
+        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千的濁音化', '大數字組合'] },
         sourceItem: { value: 113000, kanji: '十一万三千', reading: 'じゅういちまんさんぜん' }
     },
     {
@@ -3519,12 +3519,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'とおにまんよせん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十二万四千」無音變。', relatedRules: ['万位數の讀法', '四千の讀法'] },
+        explanation: { correctRule: '「十二万四千」無音變。', relatedRules: ['万位數的讀法', '四千的讀法'] },
         sourceItem: { value: 124000, kanji: '十二万四千', reading: 'じゅうにまんよんせん' }
     },
     {
         id: 'num_thousands_extra_112', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「二十万五千」的正確讀音是？', stem_zh: '「二十萬五千」的正確讀音是？',
+        stem: '「二十万五千」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二十萬五千」的正確讀音是？',
         options: [
             { text: 'にじゅうまんごせん', isCorrect: true, reason: '正確！「二十万五千」無音變。' },
             { text: 'にじゅうまんいつせん', isCorrect: false, reason: '使用音讀「ご」。' },
@@ -3532,7 +3532,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうまんごぜん', isCorrect: false, reason: '「五千」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十万五千」無音變。', relatedRules: ['二十万の讀法', '五千の讀法'] },
+        explanation: { correctRule: '「二十万五千」無音變。', relatedRules: ['二十万的讀法', '五千的讀法'] },
         sourceItem: { value: 205000, kanji: '二十万五千', reading: 'にじゅうまんごせん' }
     },
     {
@@ -3545,7 +3545,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みじゅうまんやせん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千の促音化', '大數字金額'] },
+        explanation: { correctRule: '「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千的促音化', '大數字金額'] },
         sourceItem: { value: 308000, kanji: '三十万八千', reading: 'さんじゅうまんはっせん' }
     },
     {
@@ -3559,12 +3559,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よじゅうまんむせん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十万六千」無音變。', relatedRules: ['四十万の讀法', '六千の讀法'] },
+        explanation: { correctRule: '「四十万六千」無音變。', relatedRules: ['四十万的讀法', '六千的讀法'] },
         sourceItem: { value: 406000, kanji: '四十万六千', reading: 'よんじゅうまんろくせん' }
     },
     {
         id: 'num_thousands_extra_115', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「五十万七千」的正確讀音是？', stem_zh: '「五十萬七千」的正確讀音是？',
+        stem: '「五十万七千」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「五十萬七千」的正確讀音是？',
         options: [
             { text: 'ごじゅうまんななせん', isCorrect: true, reason: '正確！「五十万七千」無音變。' },
             { text: 'いつじゅうまんしちせん', isCorrect: false, reason: '使用音讀「ご」，「七」讀「なな」。' },
@@ -3572,7 +3572,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごじゅうまんななぜん', isCorrect: false, reason: '「七千」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十万七千」無音變。', relatedRules: ['五十万の讀法', '七千の讀法'] },
+        explanation: { correctRule: '「五十万七千」無音變。', relatedRules: ['五十万的讀法', '七千的讀法'] },
         sourceItem: { value: 507000, kanji: '五十万七千', reading: 'ごじゅうまんななせん' }
     },
     {
@@ -3585,7 +3585,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくじゅうまんここのせん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十万九千」無音變。', relatedRules: ['六十万の讀法', '九千の讀法'] },
+        explanation: { correctRule: '「六十万九千」無音變。', relatedRules: ['六十万的讀法', '九千的讀法'] },
         sourceItem: { value: 609000, kanji: '六十万九千', reading: 'ろくじゅうまんきゅうせん' }
     },
     {
@@ -3599,12 +3599,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ななじゅうばんさんぜん', isCorrect: false, reason: '「万」不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '大數字組合'] },
+        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千的濁音化', '大數字組合'] },
         sourceItem: { value: 703000, kanji: '七十万三千', reading: 'ななじゅうまんさんぜん' }
     },
     {
         id: 'num_thousands_extra_118', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
-        stem: '「八十万四千」的正確讀音是？', stem_zh: '「八十萬四千」的正確讀音是？',
+        stem: '「八十万四千」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「八十萬四千」的正確讀音是？',
         options: [
             { text: 'はちじゅうまんよんせん', isCorrect: true, reason: '正確！「八十万四千」無音變。' },
             { text: 'やじゅうまんしせん', isCorrect: false, reason: '使用音讀「はち」，「四」讀「よん」。' },
@@ -3612,7 +3612,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちじゅうまんよんぜん', isCorrect: false, reason: '「四千」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十万四千」無音變。', relatedRules: ['八十万の讀法', '四千の讀法'] },
+        explanation: { correctRule: '「八十万四千」無音變。', relatedRules: ['八十万的讀法', '四千的讀法'] },
         sourceItem: { value: 804000, kanji: '八十万四千', reading: 'はちじゅうまんよんせん' }
     },
     {
@@ -3625,7 +3625,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうじゅうまんごぜん', isCorrect: false, reason: '「五千」不濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十万五千」無音變。', relatedRules: ['九十万の讀法', '五千の讀法'] },
+        explanation: { correctRule: '「九十万五千」無音變。', relatedRules: ['九十万的讀法', '五千的讀法'] },
         sourceItem: { value: 905000, kanji: '九十万五千', reading: 'きゅうじゅうまんごせん' }
     },
     {
@@ -3639,12 +3639,12 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ひゃくばんはっせん', isCorrect: false, reason: '「万」不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「百万」省略「一」，「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['百万の省略', '八千の促音化'] },
+        explanation: { correctRule: '「百万」省略「一」，「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['百万の省略', '八千的促音化'] },
         sourceItem: { value: 1008000, kanji: '百万八千', reading: 'ひゃくまんはっせん' }
     },
     {
         id: 'num_thousands_extra_121', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: true,
-        stem: '「二百万三千」的正確讀音是？', stem_zh: '「二百萬三千」的正確讀音是？',
+        stem: '「二百万三千」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二百萬三千」的正確讀音是？',
         options: [
             { text: 'にひゃくまんさんせん', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
             { text: 'にひゃくまんさんぜん', isCorrect: true, reason: '正確！「二百万三千」。' },
@@ -3652,7 +3652,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたひゃくまんみぜん', isCorrect: false, reason: '使用音讀。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '大數字組合'] },
+        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千的濁音化', '大數字組合'] },
         sourceItem: { value: 2003000, kanji: '二百万三千', reading: 'にひゃくまんさんぜん' }
     }
 ];

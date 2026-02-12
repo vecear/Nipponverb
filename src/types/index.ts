@@ -45,9 +45,12 @@ export interface DistractorExplanation {
   reason: string
 }
 
+export type { StructuredExplanation } from '../data/questions/types'
+
 export interface DetailedExplanation {
   correctRule: string
   distractors: DistractorExplanation[]
+  structured?: import('../data/questions/types').StructuredExplanation
 }
 
 

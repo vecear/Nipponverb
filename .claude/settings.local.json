@@ -4,7 +4,8 @@
       "Bash(npm create:*)",
       "Bash(tree:*)",
       "Bash(npm install)",
-      "Bash(cmd /c mklink \"c:\\\\Users\\\\wseu\\\\Desktop\\\\Code\\\\Nipponverb\\\\.agent\\\\skills\\\\SKILL.md\" \"c:\\\\Users\\\\wseu\\\\.gemini\\\\antigravity\\\\skills\\\\SKILL.md\")"
+      "Bash(cmd /c mklink \"c:\\\\Users\\\\wseu\\\\Desktop\\\\Code\\\\Nipponverb\\\\.agent\\\\skills\\\\SKILL.md\" \"c:\\\\Users\\\\wseu\\\\.gemini\\\\antigravity\\\\skills\\\\SKILL.md\")",
+      "Bash(node scripts/cleanDatesPass2.mjs:*)"
     ]
   }
 }

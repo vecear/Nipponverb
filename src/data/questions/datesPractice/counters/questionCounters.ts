@@ -13,19 +13,19 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'questionCounters',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「何本」的正確讀音是？',
+        stem: '「何本」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何本」的正確讀音是？',
         options: [
-            { text: 'なんぼん', isCorrect: true, reason: '正確{せいかく}！「何本{なんぼん}」發生{はっせい}濁音化{だくおんか}，讀作{どくさ}「なんぼん」。' },
-            { text: 'なんほん', isCorrect: false, reason: '陷阱{かんけい}！撥音{はつおん}「ん」後的「ほ」變為{へんい}濁音{だくおん}「ぼ」。' },
-            { text: 'なんぽん', isCorrect: false, reason: '「何本{なんぼん}」使用{しよう}濁音{だくおん}「ぼ」，不是半濁音{はんだくおん}「ぽ」。' },
-            { text: 'なにほん', isCorrect: false, reason: '搭配{たいはい}量詞{りょうし}時{とき}，「何{なに}」讀作{どくさ}「なん」。' }
+            { text: 'なんぼん', isCorrect: true, reason: '正確！「何本{なんぼん}」發生濁音化，讀作「なんぼん」。' },
+            { text: 'なんほん', isCorrect: false, reason: '陷阱！撥音「ん」後的「ほ」變為濁音「ぼ」。' },
+            { text: 'なんぽん', isCorrect: false, reason: '「何本{なんぼん}」使用濁音「ぼ」，不是半濁音「ぽ」。' },
+            { text: 'なにほん', isCorrect: false, reason: '搭配量詞時，「何{なに}」讀作「なん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何本{なんぼん}」讀作{どくさ}「なんぼん」。疑問詞{ぎもんし}「何{なん}」的撥音{はつおん}「ん」引發{いんぱつ}「ほ→ぼ」濁音化{だくおんか}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。與「三本{さんぼん}」相同{おなじ}規則{きそく}，撥音{はつおん}後h變b。',
-            relatedRules: ['疑問詞{ぎもんし}の音變{おんへん}', '「何{なん}＋本{ほん}」の讀法{よみかた}']
+            correctRule: '「何本{なんぼん}」讀作「なんぼん」。疑問詞「何{なん}」的撥音「ん」引發「ほ→ぼ」濁音化。',
+            trapExplanation: '這是陷阱題。與「三本{さんぼん}」相同規則，撥音後h變b。',
+            relatedRules: ['疑問詞的音變', '「何{なん}＋本{ほん}」的讀法']
         },
         sourceItem: { value: '?', kanji: '何本', reading: 'なんぼん' }
     },
@@ -42,15 +42,15 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '三本あります。'
         },
         options: [
-            { text: 'なんほん', isCorrect: false, reason: '「何本{なんぼん}」需要{じゅよう}濁音化{だくおんか}。' },
-            { text: 'なんぼん', isCorrect: true, reason: '正確{せいかく}！「傘{かさ}は何本{なんぼん}ありますか」是詢問{たずねる}傘{かさ}數量{すうりょう}的正確{せいかく}說法{いいかた}。' },
-            { text: 'いくつ', isCorrect: false, reason: '傘{かさ}是細長物{ほそながもの}，使用{しよう}「何本{なんぼん}」更準確{じゅんかく}。' },
-            { text: 'なにほん', isCorrect: false, reason: '「何{なに}」搭配{たいはい}量詞{りょうし}時{とき}讀{よむ}「なん」。' }
+            { text: 'なんほん', isCorrect: false, reason: '「何本{なんぼん}」需要濁音化。' },
+            { text: 'なんぼん', isCorrect: true, reason: '正確！「傘{かさ}は何本{なんぼん}ありますか」是詢問傘{かさ}數量的正確說法。' },
+            { text: 'いくつ', isCorrect: false, reason: '傘{かさ}是細長物，使用「何本{なんぼん}」更準確。' },
+            { text: 'なにほん', isCorrect: false, reason: '「何{なに}」搭配量詞時讀「なん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '詢問{たずねる}細長物{ほそながもの}數量{すうりょう}時{とき}使用{しよう}「何本{なんぼん}」。',
-            relatedRules: ['疑問詞{ぎもんし}「何本{なんぼん}」の使用{しよう}', '細長物{ほそながもの}の計數{けいすう}']
+            correctRule: '詢問細長物數量時使用「何本{なんぼん}」。',
+            relatedRules: ['疑問詞「何本{なんぼん}」的使用', '細長物の計數']
         },
         sourceItem: { value: '?', kanji: '何本', reading: 'なんぼん' }
     },
@@ -62,19 +62,19 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'questionCounters',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「何匹」的正確讀音是？',
+        stem: '「何匹」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何匹」的正確讀音是？',
         options: [
-            { text: 'なんびき', isCorrect: true, reason: '正確{せいかく}！「何匹{なんびき}」發生{はっせい}濁音化{だくおんか}，讀作{どくさ}「なんびき」。' },
-            { text: 'なんひき', isCorrect: false, reason: '陷阱{かんけい}！撥音{はつおん}「ん」後的「ひ」變為{へんい}濁音{だくおん}「び」。' },
-            { text: 'なんぴき', isCorrect: false, reason: '「何匹{なんびき}」使用{しよう}濁音{だくおん}「び」，不是半濁音{はんだくおん}「ぴ」。' },
-            { text: 'なにひき', isCorrect: false, reason: '搭配{たいはい}量詞{りょうし}時{とき}，「何{なに}」讀作{どくさ}「なん」。' }
+            { text: 'なんびき', isCorrect: true, reason: '正確！「何匹{なんびき}」發生濁音化，讀作「なんびき」。' },
+            { text: 'なんひき', isCorrect: false, reason: '陷阱！撥音「ん」後的「ひ」變為濁音「び」。' },
+            { text: 'なんぴき', isCorrect: false, reason: '「何匹{なんびき}」使用濁音「び」，不是半濁音「ぴ」。' },
+            { text: 'なにひき', isCorrect: false, reason: '搭配量詞時，「何{なに}」讀作「なん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何匹{なんびき}」讀作{どくさ}「なんびき」。疑問詞{ぎもんし}「何{なん}」的撥音{はつおん}「ん」引發{いんぱつ}「ひ→び」濁音化{だくおんか}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。與「三匹{さんびき}」相同{おなじ}規則{きそく}，撥音{はつおん}後h變b。',
-            relatedRules: ['疑問詞{ぎもんし}の音變{おんへん}', '「何{なん}＋匹{ひき}」の讀法{よみかた}']
+            correctRule: '「何匹{なんびき}」讀作「なんびき」。疑問詞「何{なん}」的撥音「ん」引發「ひ→び」濁音化。',
+            trapExplanation: '這是陷阱題。與「三匹{さんびき}」相同規則，撥音後h變b。',
+            relatedRules: ['疑問詞的音變', '「何{なん}＋匹{ひき}」的讀法']
         },
         sourceItem: { value: '?', kanji: '何匹', reading: 'なんびき' }
     },
@@ -91,15 +91,15 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '二匹飼っています。'
         },
         options: [
-            { text: 'なんひき', isCorrect: false, reason: '「何匹{なんびき}」需要{じゅよう}濁音化{だくおんか}。' },
-            { text: 'なんびき', isCorrect: true, reason: '正確{せいかく}！「猫{ねこ}は何匹{なんびき}飼{か}っていますか」是詢問{たずねる}寵物{ペット}數量{すうりょう}的正確{せいかく}說法{いいかた}。' },
-            { text: 'いくつ', isCorrect: false, reason: '動物{どうぶつ}使用{しよう}「何匹{なんびき}」更準確{じゅんかく}。' },
-            { text: 'なんぴき', isCorrect: false, reason: '「何匹{なんびき}」使用{しよう}濁音{だくおん}「び」。' }
+            { text: 'なんひき', isCorrect: false, reason: '「何匹{なんびき}」需要濁音化。' },
+            { text: 'なんびき', isCorrect: true, reason: '正確！「猫{ねこ}は何匹{なんびき}飼{か}っていますか」是詢問寵物數量的正確說法。' },
+            { text: 'いくつ', isCorrect: false, reason: '動物使用「何匹{なんびき}」更準確。' },
+            { text: 'なんぴき', isCorrect: false, reason: '「何匹{なんびき}」使用濁音「び」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '詢問{たずねる}小動物{しょうどうぶつ}數量{すうりょう}時{とき}使用{しよう}「何匹{なんびき}」。',
-            relatedRules: ['疑問詞{ぎもんし}「何匹{なんびき}」の使用{しよう}', '動物{どうぶつ}の計數{けいすう}']
+            correctRule: '詢問小動物數量時使用「何匹{なんびき}」。',
+            relatedRules: ['疑問詞「何匹{なんびき}」的使用', '動物の計數']
         },
         sourceItem: { value: '?', kanji: '何匹', reading: 'なんびき' }
     },
@@ -111,19 +111,19 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'questionCounters',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「何杯」的正確讀音是？',
+        stem: '「何杯」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何杯」的正確讀音是？',
         options: [
-            { text: 'なんばい', isCorrect: true, reason: '正確{せいかく}！「何杯{なんばい}」發生{はっせい}濁音化{だくおんか}，讀作{どくさ}「なんばい」。' },
-            { text: 'なんはい', isCorrect: false, reason: '陷阱{かんけい}！撥音{はつおん}「ん」後的「は」變為{へんい}濁音{だくおん}「ば」。' },
-            { text: 'なんぱい', isCorrect: false, reason: '「何杯{なんばい}」使用{しよう}濁音{だくおん}「ば」，不是半濁音{はんだくおん}「ぱ」。' },
-            { text: 'なにはい', isCorrect: false, reason: '搭配{たいはい}量詞{りょうし}時{とき}，「何{なに}」讀作{どくさ}「なん」。' }
+            { text: 'なんばい', isCorrect: true, reason: '正確！「何杯{なんばい}」發生濁音化，讀作「なんばい」。' },
+            { text: 'なんはい', isCorrect: false, reason: '陷阱！撥音「ん」後的「は」變為濁音「ば」。' },
+            { text: 'なんぱい', isCorrect: false, reason: '「何杯{なんばい}」使用濁音「ば」，不是半濁音「ぱ」。' },
+            { text: 'なにはい', isCorrect: false, reason: '搭配量詞時，「何{なに}」讀作「なん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何杯{なんばい}」讀作{どくさ}「なんばい」。疑問詞{ぎもんし}「何{なん}」的撥音{はつおん}「ん」引發{いんぱつ}「は→ば」濁音化{だくおんか}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。與「三杯{さんばい}」相同{おなじ}規則{きそく}，撥音{はつおん}後h變b。',
-            relatedRules: ['疑問詞{ぎもんし}の音變{おんへん}', '「何{なん}＋杯{はい}」の讀法{よみかた}']
+            correctRule: '「何杯{なんばい}」讀作「なんばい」。疑問詞「何{なん}」的撥音「ん」引發「は→ば」濁音化。',
+            trapExplanation: '這是陷阱題。與「三杯{さんばい}」相同規則，撥音後h變b。',
+            relatedRules: ['疑問詞的音變', '「何{なん}＋杯{はい}」的讀法']
         },
         sourceItem: { value: '?', kanji: '何杯', reading: 'なんばい' }
     },
@@ -140,15 +140,15 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '二杯飲みました。'
         },
         options: [
-            { text: 'なんはい', isCorrect: false, reason: '「何杯{なんばい}」需要{じゅよう}濁音化{だくおんか}。' },
-            { text: 'なんばい', isCorrect: true, reason: '正確{せいかく}！「コーヒーは何杯{なんばい}飲{の}みましたか」是詢問{たずねる}飲料{いんりょう}杯數{はいすう}的正確{せいかく}說法{いいかた}。' },
-            { text: 'いくつ', isCorrect: false, reason: '杯裝{はいそう}飲料{いんりょう}使用{しよう}「何杯{なんばい}」更準確{じゅんかく}。' },
-            { text: 'なんぱい', isCorrect: false, reason: '「何杯{なんばい}」使用{しよう}濁音{だくおん}「ば」。' }
+            { text: 'なんはい', isCorrect: false, reason: '「何杯{なんばい}」需要濁音化。' },
+            { text: 'なんばい', isCorrect: true, reason: '正確！「コーヒーは何杯{なんばい}飲{の}みましたか」是詢問飲料{いんりょう}杯數的正確說法。' },
+            { text: 'いくつ', isCorrect: false, reason: '杯裝飲料{いんりょう}使用「何杯{なんばい}」更準確。' },
+            { text: 'なんぱい', isCorrect: false, reason: '「何杯{なんばい}」使用濁音「ば」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '詢問{たずねる}杯裝{はいそう}飲料{いんりょう}數量{すうりょう}時{とき}使用{しよう}「何杯{なんばい}」。',
-            relatedRules: ['疑問詞{ぎもんし}「何杯{なんばい}」の使用{しよう}', '飲料{いんりょう}の計數{けいすう}']
+            correctRule: '詢問杯裝飲料{いんりょう}數量時使用「何杯{なんばい}」。',
+            relatedRules: ['疑問詞「何杯{なんばい}」的使用', '飲料{いんりょう}の計數']
         },
         sourceItem: { value: '?', kanji: '何杯', reading: 'なんばい' }
     },
@@ -160,19 +160,19 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'questionCounters',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「何階」的正確讀音是？',
+        stem: '「何階」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何階」的正確讀音是？',
         options: [
-            { text: 'なんがい', isCorrect: true, reason: '正確{せいかく}！「何階{なんがい}」發生{はっせい}濁音化{だくおんか}，讀作{どくさ}「なんがい」。' },
-            { text: 'なんかい', isCorrect: false, reason: '陷阱{かんけい}！撥音{はつおん}「ん」後的「か」變為{へんい}濁音{だくおん}「が」。' },
-            { text: 'なにかい', isCorrect: false, reason: '搭配{たいはい}量詞{りょうし}時{とき}，「何{なに}」讀作{どくさ}「なん」。' },
-            { text: 'なんっかい', isCorrect: false, reason: '「何階{なんがい}」不促音化{ふそくおんか}。' }
+            { text: 'なんがい', isCorrect: true, reason: '正確！「何階{なんがい}」發生濁音化，讀作「なんがい」。' },
+            { text: 'なんかい', isCorrect: false, reason: '陷阱！撥音「ん」後的「か」變為濁音「が」。' },
+            { text: 'なにかい', isCorrect: false, reason: '搭配量詞時，「何{なに}」讀作「なん」。' },
+            { text: 'なんっかい', isCorrect: false, reason: '「何階{なんがい}」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何階{なんがい}」讀作{どくさ}「なんがい」。疑問詞{ぎもんし}「何{なん}」的撥音{はつおん}「ん」引發{いんぱつ}「か→が」濁音化{だくおんか}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。與「三階{さんがい}」相同{おなじ}規則{きそく}，撥音{はつおん}後k變g。',
-            relatedRules: ['疑問詞{ぎもんし}の音變{おんへん}', '「何{なん}＋階{かい}」の讀法{よみかた}']
+            correctRule: '「何階{なんがい}」讀作「なんがい」。疑問詞「何{なん}」的撥音「ん」引發「か→が」濁音化。',
+            trapExplanation: '這是陷阱題。與「三階{さんがい}」相同規則，撥音後k變g。',
+            relatedRules: ['疑問詞的音變', '「何{なん}＋階{かい}」的讀法']
         },
         sourceItem: { value: '?', kanji: '何階', reading: 'なんがい' }
     },
@@ -189,15 +189,15 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '五階です。'
         },
         options: [
-            { text: 'なんかい', isCorrect: false, reason: '「何階{なんがい}」需要{じゅよう}濁音化{だくおんか}。' },
-            { text: 'なんがい', isCorrect: true, reason: '正確{せいかく}！「お部屋{へや}は何階{なんがい}ですか」是詢問{たずねる}樓層{かいすう}的正確{せいかく}說法{いいかた}。' },
-            { text: 'いくつ', isCorrect: false, reason: '樓層{かいすう}使用{しよう}「何階{なんがい}」。' },
-            { text: 'なにかい', isCorrect: false, reason: '「何{なに}」搭配{たいはい}量詞{りょうし}時{とき}讀{よむ}「なん」。' }
+            { text: 'なんかい', isCorrect: false, reason: '「何階{なんがい}」需要濁音化。' },
+            { text: 'なんがい', isCorrect: true, reason: '正確！「お部屋{へや}は何階{なんがい}ですか」是詢問樓層的正確說法。' },
+            { text: 'いくつ', isCorrect: false, reason: '樓層使用「何階{なんがい}」。' },
+            { text: 'なにかい', isCorrect: false, reason: '「何{なに}」搭配量詞時讀「なん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '詢問{たずねる}樓層{かいすう}時{とき}使用{しよう}「何階{なんがい}」。',
-            relatedRules: ['疑問詞{ぎもんし}「何階{なんがい}」の使用{しよう}', '樓層{かいすう}の計數{けいすう}']
+            correctRule: '詢問樓層時使用「何階{なんがい}」。',
+            relatedRules: ['疑問詞「何階{なんがい}」的使用', '樓層の計數']
         },
         sourceItem: { value: '?', kanji: '何階', reading: 'なんがい' }
     },
@@ -209,19 +209,19 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'questionCounters',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「何分」的正確讀音是？',
+        stem: '「何分」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何分」的正確讀音是？',
         options: [
-            { text: 'なんぷん', isCorrect: true, reason: '正確{せいかく}！「何分{なんぷん}」發生{はっせい}半濁音化{はんだくおんか}，讀作{どくさ}「なんぷん」。' },
-            { text: 'なんふん', isCorrect: false, reason: '陷阱{かんけい}！撥音{はつおん}「ん」後的「ふ」變為{へんい}半濁音{はんだくおん}「ぷ」。' },
-            { text: 'なんぶん', isCorrect: false, reason: '「何分{なんぷん}」使用{しよう}半濁音{はんだくおん}「ぷ」，不是濁音{だくおん}「ぶ」。' },
-            { text: 'なにふん', isCorrect: false, reason: '搭配{たいはい}量詞{りょうし}時{とき}，「何{なに}」讀作{どくさ}「なん」。' }
+            { text: 'なんぷん', isCorrect: true, reason: '正確！「何分{なんぷん}」發生半濁音化，讀作「なんぷん」。' },
+            { text: 'なんふん', isCorrect: false, reason: '陷阱！撥音「ん」後的「ふ」變為半濁音「ぷ」。' },
+            { text: 'なんぶん', isCorrect: false, reason: '「何分{なんぷん}」使用半濁音「ぷ」，不是濁音「ぶ」。' },
+            { text: 'なにふん', isCorrect: false, reason: '搭配量詞時，「何{なに}」讀作「なん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何分{なんぷん}」讀作{どくさ}「なんぷん」。「分{ふん}」是特殊{とくしゅ}的量詞{りょうし}，撥音{はつおん}後變半濁音{はんだくおん}「ぷ」而非{いがい}濁音{だくおん}「ぶ」。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「分{ふん}」的音變{おんへん}規則{きそく}特殊{とくしゅ}：撥音{はつおん}後變「ぷ」不是「ぶ」。',
-            relatedRules: ['疑問詞{ぎもんし}の音變{おんへん}', '「何{なん}＋分{ふん}」の讀法{よみかた}']
+            correctRule: '「何分{なんぷん}」讀作「なんぷん」。「分{ふん}」是特殊的量詞，撥音後變半濁音「ぷ」而非濁音「ぶ」。',
+            trapExplanation: '這是陷阱題。「分{ふん}」的音變規則特殊：撥音後變「ぷ」不是「ぶ」。',
+            relatedRules: ['疑問詞的音變', '「何{なん}＋分{ふん}」的讀法']
         },
         sourceItem: { value: '?', kanji: '何分', reading: 'なんぷん' }
     },
@@ -238,15 +238,15 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '十分くらいです。'
         },
         options: [
-            { text: 'なんふん', isCorrect: false, reason: '「何分{なんぷん}」需要{じゅよう}半濁音化{はんだくおんか}。' },
-            { text: 'なんぷん', isCorrect: true, reason: '正確{せいかく}！「駅{えき}まで何分{なんぷん}かかりますか」是詢問{たずねる}所需{しょようじ}時間{じかん}的正確{せいかく}說法{いいかた}。' },
-            { text: 'いくつ', isCorrect: false, reason: '時間{じかん}使用{しよう}「何分{なんぷん}」。' },
-            { text: 'なんぶん', isCorrect: false, reason: '「何分{なんぷん}」使用{しよう}半濁音{はんだくおん}「ぷ」。' }
+            { text: 'なんふん', isCorrect: false, reason: '「何分{なんぷん}」需要半濁音化。' },
+            { text: 'なんぷん', isCorrect: true, reason: '正確！「駅{えき}まで何分{なんぷん}かかりますか」是詢問所需時間的正確說法。' },
+            { text: 'いくつ', isCorrect: false, reason: '時間使用「何分{なんぷん}」。' },
+            { text: 'なんぶん', isCorrect: false, reason: '「何分{なんぷん}」使用半濁音「ぷ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '詢問{たずねる}所需{しょようじ}分鐘{ふん}時{とき}使用{しよう}「何分{なんぷん}」。',
-            relatedRules: ['疑問詞{ぎもんし}「何分{なんぷん}」の使用{しよう}', '時間{じかん}の質問{しつもん}']
+            correctRule: '詢問所需分鐘時使用「何分{なんぷん}」。',
+            relatedRules: ['疑問詞「何分{なんぷん}」的使用', '時間的質問']
         },
         sourceItem: { value: '?', kanji: '何分', reading: 'なんぷん' }
     },
@@ -258,18 +258,18 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'questionCounters',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「何人」的正確讀音是？',
+        stem: '「何人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何人」的正確讀音是？',
         options: [
-            { text: 'なんにん', isCorrect: true, reason: '正確{せいかく}！「何人{なんにん}」無音變{むおんへん}，讀作{どくさ}「なんにん」。' },
-            { text: 'なんびん', isCorrect: false, reason: '「人{にん}」不發生{ふはっせい}濁音化{だくおんか}。' },
-            { text: 'なにじん', isCorrect: false, reason: '「じん」是國籍{こくせき}/人種{じんしゅ}的讀法{よみかた}，不用於{もちいず}人數{にんずう}。' },
-            { text: 'なにひと', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'なんにん', isCorrect: true, reason: '正確！「何人{なんにん}」無音變，讀作「なんにん」。' },
+            { text: 'なんびん', isCorrect: false, reason: '「人{にん}」不發生濁音化。' },
+            { text: 'なにじん', isCorrect: false, reason: '「じん」是國籍/人種{じんしゅ}的讀法，不用於人數。' },
+            { text: 'なにひと', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何人{なんにん}」讀作{どくさ}「なんにん」。「人{にん}」不發生{ふはっせい}音變{おんへん}。',
-            relatedRules: ['疑問詞{ぎもんし}の讀法{よみかた}', '「何{なん}＋人{にん}」の讀法{よみかた}']
+            correctRule: '「何人{なんにん}」讀作「なんにん」。「人{にん}」不發生音變。',
+            relatedRules: ['疑問詞的讀法', '「何{なん}＋人{にん}」的讀法']
         },
         sourceItem: { value: '?', kanji: '何人', reading: 'なんにん' }
     },
@@ -286,15 +286,15 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '四人です。'
         },
         options: [
-            { text: 'なんびん', isCorrect: false, reason: '「人{にん}」不濁音化{ふだくおんか}。' },
-            { text: 'なんにん', isCorrect: true, reason: '正確{せいかく}！「何人{なんにん}様{さま}ですか」是餐廳{レストラン}常用{じょうよう}的問法{といかた}。' },
-            { text: 'いくつ', isCorrect: false, reason: '人數{にんずう}使用{しよう}「何人{なんにん}」。' },
-            { text: 'なにじん', isCorrect: false, reason: '「じん」用於{もちいる}國籍{こくせき}。' }
+            { text: 'なんびん', isCorrect: false, reason: '「人{にん}」不濁音化。' },
+            { text: 'なんにん', isCorrect: true, reason: '正確！「何人{なんにん}様{さま}ですか」是餐廳{レストラン}常用的問法。' },
+            { text: 'いくつ', isCorrect: false, reason: '人數使用「何人{なんにん}」。' },
+            { text: 'なにじん', isCorrect: false, reason: '「じん」用於國籍。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '詢問{たずねる}人數{にんずう}時{とき}使用{しよう}「何人{なんにん}」。餐廳{レストラン}常說{じょうよういう}「何人{なんにん}様{さま}ですか」。',
-            relatedRules: ['疑問詞{ぎもんし}「何人{なんにん}」の使用{しよう}', '餐廳{レストラン}用語{ようご}']
+            correctRule: '詢問人數時使用「何人{なんにん}」。餐廳{レストラン}常說「何人{なんにん}様{さま}ですか」。',
+            relatedRules: ['疑問詞「何人{なんにん}」的使用', '餐廳{レストラン}用語']
         },
         sourceItem: { value: '?', kanji: '何人', reading: 'なんにん' }
     },
@@ -306,18 +306,18 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'questionCounters',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「何枚」的正確讀音是？',
+        stem: '「何枚」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何枚」的正確讀音是？',
         options: [
-            { text: 'なんまい', isCorrect: true, reason: '正確{せいかく}！「何枚{なんまい}」無音變{むおんへん}，讀作{どくさ}「なんまい」。' },
-            { text: 'なんばい', isCorrect: false, reason: '「枚{まい}」不發生{ふはっせい}濁音化{だくおんか}。注意{ちゅうい}不要{ない}與「杯{はい}」混淆{こんこう}。' },
-            { text: 'なんぱい', isCorrect: false, reason: '「枚{まい}」不發生{ふはっせい}半濁音化{はんだくおんか}。' },
-            { text: 'なにまい', isCorrect: false, reason: '搭配{たいはい}量詞{りょうし}時{とき}，「何{なに}」讀作{どくさ}「なん」。' }
+            { text: 'なんまい', isCorrect: true, reason: '正確！「何枚{なんまい}」無音變，讀作「なんまい」。' },
+            { text: 'なんばい', isCorrect: false, reason: '「枚{まい}」不發生濁音化。注意不要與「杯{はい}」混淆。' },
+            { text: 'なんぱい', isCorrect: false, reason: '「枚{まい}」不發生半濁音化。' },
+            { text: 'なにまい', isCorrect: false, reason: '搭配量詞時，「何{なに}」讀作「なん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何枚{なんまい}」讀作{どくさ}「なんまい」。「枚{まい}」以「ま行{ぎょう}」開頭{あたま}，不受{うけない}撥音{はつおん}影響{えいきょう}。',
-            relatedRules: ['疑問詞{ぎもんし}の讀法{よみかた}', '「何{なん}＋枚{まい}」の讀法{よみかた}']
+            correctRule: '「何枚{なんまい}」讀作「なんまい」。「枚{まい}」以「ま行」開頭，不受撥音影響。',
+            relatedRules: ['疑問詞的讀法', '「何{なん}＋枚{まい}」的讀法']
         },
         sourceItem: { value: '?', kanji: '何枚', reading: 'なんまい' }
     },
@@ -329,18 +329,18 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'questionCounters',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「何冊」的正確讀音是？',
+        stem: '「何冊」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何冊」的正確讀音是？',
         options: [
-            { text: 'なんさつ', isCorrect: true, reason: '正確{せいかく}！「何冊{なんさつ}」無音變{むおんへん}，讀作{どくさ}「なんさつ」。' },
-            { text: 'なんざつ', isCorrect: false, reason: '「冊{さつ}」不發生{ふはっせい}濁音化{だくおんか}。' },
-            { text: 'なっさつ', isCorrect: false, reason: '「何冊{なんさつ}」不促音化{ふそくおんか}。' },
-            { text: 'なにさつ', isCorrect: false, reason: '搭配{たいはい}量詞{りょうし}時{とき}，「何{なに}」讀作{どくさ}「なん」。' }
+            { text: 'なんさつ', isCorrect: true, reason: '正確！「何冊{なんさつ}」無音變，讀作「なんさつ」。' },
+            { text: 'なんざつ', isCorrect: false, reason: '「冊{さつ}」不發生濁音化。' },
+            { text: 'なっさつ', isCorrect: false, reason: '「何冊{なんさつ}」不促音化。' },
+            { text: 'なにさつ', isCorrect: false, reason: '搭配量詞時，「何{なに}」讀作「なん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何冊{なんさつ}」讀作{どくさ}「なんさつ」。「冊{さつ}」以「さ行{ぎょう}」開頭{あたま}，但撥音{はつおん}後不發生{ふはっせい}濁音化{だくおんか}。',
-            relatedRules: ['疑問詞{ぎもんし}の讀法{よみかた}', '「何{なん}＋冊{さつ}」の讀法{よみかた}']
+            correctRule: '「何冊{なんさつ}」讀作「なんさつ」。「冊{さつ}」以「さ行」開頭，但撥音後不發生濁音化。',
+            relatedRules: ['疑問詞的讀法', '「何{なん}＋冊{さつ}」的讀法']
         },
         sourceItem: { value: '?', kanji: '何冊', reading: 'なんさつ' }
     },
@@ -355,16 +355,16 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
         stem: '詢問「つ」系統數量時，正確的疑問詞是？',
         stem_zh: '詢問「つ」系統數量時，正確的疑問詞是？',
         options: [
-            { text: 'いくつ', isCorrect: true, reason: '正確{せいかく}！「つ」系統{けいとう}使用{しよう}「いくつ」，不是「なんつ」。' },
-            { text: 'なんつ', isCorrect: false, reason: '陷阱{かんけい}！「つ」系統{けいとう}的疑問詞{ぎもんし}是「いくつ」，「なんつ」不存在{そんざいしない}。' },
-            { text: 'なんこ', isCorrect: false, reason: '「何個{なんこ}」使用{しよう}「個{こ}」量詞{りょうし}，與「つ」系統{けいとう}不同{ちがう}。' },
-            { text: 'いっつ', isCorrect: false, reason: '這不是正確{せいかく}的疑問詞{ぎもんし}。' }
+            { text: 'いくつ', isCorrect: true, reason: '正確！「つ」系統使用「いくつ」，不是「なんつ」。' },
+            { text: 'なんつ', isCorrect: false, reason: '陷阱！「つ」系統的疑問詞是「いくつ」，「なんつ」不存在。' },
+            { text: 'なんこ', isCorrect: false, reason: '「何個{なんこ}」使用「個{こ}」量詞，與「つ」系統不同。' },
+            { text: 'いっつ', isCorrect: false, reason: '這不是正確的疑問詞。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「つ」系統{けいとう}的疑問詞{ぎもんし}是「いくつ」，這是唯一{ゆいいつ}不用{もちいず}「何{なん}」的量詞{りょうし}疑問詞{ぎもんし}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「なんつ」這個詞{ことば}不存在{そんざいしない}，必須{ひっす}使用{しよう}「いくつ」。',
-            relatedRules: ['「いくつ」の特殊{とくしゅ}性{せい}', '「つ」系統{けいとう}の疑問詞{ぎもんし}']
+            correctRule: '「つ」系統的疑問詞是「いくつ」，這是唯一不用「何{なん}」的量詞疑問詞。',
+            trapExplanation: '這是陷阱題。「なんつ」這個詞不存在，必須使用「いくつ」。',
+            relatedRules: ['「いくつ」的特殊性', '「つ」系統の疑問詞']
         },
         sourceItem: { value: '?', kanji: '幾つ', reading: 'いくつ' }
     },
@@ -381,15 +381,15 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '五つあります。'
         },
         options: [
-            { text: 'なんつ', isCorrect: false, reason: '「なんつ」不存在{そんざいしない}，應使用{しよう}「いくつ」。' },
-            { text: 'いくつ', isCorrect: true, reason: '正確{せいかく}！「りんごはいくつありますか」是詢問{たずねる}一般{いっぱん}物品{ぶっぴん}數量{すうりょう}的說法{いいかた}。' },
-            { text: 'なんこ', isCorrect: false, reason: '若回答{かいとう}用{もちいる}「つ」，問題{もんだい}應用{おうよう}「いくつ」。' },
-            { text: 'なにつ', isCorrect: false, reason: '這不是正確{せいかく}的疑問詞{ぎもんし}。' }
+            { text: 'なんつ', isCorrect: false, reason: '「なんつ」不存在，應使用「いくつ」。' },
+            { text: 'いくつ', isCorrect: true, reason: '正確！「りんごはいくつありますか」是詢問一般物品數量的說法。' },
+            { text: 'なんこ', isCorrect: false, reason: '若回答用「つ」，問題應用「いくつ」。' },
+            { text: 'なにつ', isCorrect: false, reason: '這不是正確的疑問詞。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '詢問{たずねる}一般{いっぱん}物品{ぶっぴん}數量{すうりょう}時{とき}使用{しよう}「いくつ」，回答{かいとう}用{もちいる}「〜つ」。',
-            relatedRules: ['「いくつ」の使用{しよう}', '「つ」系統{けいとう}の質問{しつもん}與回答{かいとう}']
+            correctRule: '詢問一般物品數量時使用「いくつ」，回答用「〜つ」。',
+            relatedRules: ['「いくつ」的使用', '「つ」系統的質問與回答']
         },
         sourceItem: { value: '?', kanji: '幾つ', reading: 'いくつ' }
     },
@@ -404,16 +404,16 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
         stem: '以下哪組疑問詞量詞的讀法全部正確？',
         stem_zh: '以下哪組疑問詞量詞的讀法全部正確？',
         options: [
-            { text: 'なんぼん、なんびき、なんがい', isCorrect: true, reason: '正確{せいかく}！這三個{さんこ}都發生{はっせい}濁音化{だくおんか}：何本{なんぼん}、何匹{なんびき}、何階{なんがい}。' },
-            { text: 'なんほん、なんひき、なんかい', isCorrect: false, reason: '陷阱{かんけい}！這三個{さんこ}都需要{じゅよう}濁音化{だくおんか}，不是原音{げんおん}。' },
-            { text: 'なんぽん、なんぴき、なんっかい', isCorrect: false, reason: '這三個{さんこ}應使用{しよう}濁音{だくおん}，不是半濁音{はんだくおん}或促音{そくおん}。' },
-            { text: 'なにぼん、なにびき、なにがい', isCorrect: false, reason: '搭配{たいはい}量詞{りょうし}時{とき}，「何{なに}」讀作{どくさ}「なん」。' }
+            { text: 'なんぼん、なんびき、なんがい', isCorrect: true, reason: '正確！這三個都發生濁音化：何本{なんぼん}、何匹{なんびき}、何階{なんがい}。' },
+            { text: 'なんほん、なんひき、なんかい', isCorrect: false, reason: '陷阱！這三個都需要濁音化，不是原音。' },
+            { text: 'なんぽん、なんぴき、なんっかい', isCorrect: false, reason: '這三個應使用濁音，不是半濁音或促音。' },
+            { text: 'なにぼん、なにびき、なにがい', isCorrect: false, reason: '搭配量詞時，「何{なに}」讀作「なん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何{なん}」的撥音{はつおん}「ん」觸發{しょうはつ}後續{こうぞく}h行{ぎょう}、k行{ぎょう}量詞{りょうし}濁音化{だくおんか}：ほ→ぼ、ひ→び、か→が。',
-            trapExplanation: '這是總結{そうけつ}題{だい}。記憶{きおく}口訣{くけつ}：「何{なん}」後的h變b、k變g。',
-            relatedRules: ['疑問詞{ぎもんし}の音變{おんへん}總結{そうけつ}', '濁音化{だくおんか}規則{きそく}']
+            correctRule: '「何{なん}」的撥音「ん」觸發後續h行、k行量詞濁音化：ほ→ぼ、ひ→び、か→が。',
+            trapExplanation: '這是總結題。記憶口訣：「何{なん}」後的h變b、k變g。',
+            relatedRules: ['疑問詞的音變總結', '濁音化規則']
         },
         sourceItem: { value: '?', kanji: '何〜', reading: '音變總結' }
     },
@@ -421,7 +421,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
     // ===== 何台 的題目（濁音化：なんだい） =====
     {
         id: 'qcounter_dai_pron', category: 'counters', subcategory: 'questionCounters', type: 'pronunciation', isTrap: true,
-        stem: '「何台」的正確讀音是？', stem_zh: '「何台」的正確讀音是？',
+        stem: '「何台」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「何台」的正確讀音是？',
         options: [
             { text: 'なんだい', isCorrect: true, reason: '正確！「何台」發生濁音化，讀作「なんだい」。' },
             { text: 'なんたい', isCorrect: false, reason: '陷阱！撥音「ん」後的「た」變為濁音「だ」。' },
@@ -429,7 +429,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんっだい', isCorrect: false, reason: '「何台」不需要促音。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「何台」讀作「なんだい」。撥音「ん」引發「た→だ」濁音化。', trapExplanation: '這是陷阱題。撥音後t變d。', relatedRules: ['疑問詞の音變', '「何＋台」の讀法'] },
+        explanation: { correctRule: '「何台」讀作「なんだい」。撥音「ん」引發「た→だ」濁音化。', trapExplanation: '這是陷阱題。撥音後t變d。', relatedRules: ['疑問詞的音變', '「何＋台」的讀法'] },
         sourceItem: { value: '?', kanji: '何台', reading: 'なんだい' }
     },
     {
@@ -443,7 +443,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なにだい', isCorrect: false, reason: '「何」搭配量詞時讀「なん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問機器、車輛數量時使用「何台」。', relatedRules: ['疑問詞「何台」の使用', '機器の計數'] },
+        explanation: { correctRule: '詢問機器、車輛數量時使用「何台」。', relatedRules: ['疑問詞「何台」的使用', '機器の計數'] },
         sourceItem: { value: '?', kanji: '何台', reading: 'なんだい' }
     },
     {
@@ -456,14 +456,14 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんこ', isCorrect: false, reason: '車輛不用「個」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '車輛、機器使用「何台」詢問數量。', relatedRules: ['「何台」の使用'] },
+        explanation: { correctRule: '車輛、機器使用「何台」詢問數量。', relatedRules: ['「何台」的使用'] },
         sourceItem: { value: '?', kanji: '何台', reading: 'なんだい' }
     },
 
     // ===== 何回 的題目（濁音化：なんかい → 部分情境用 なんがい） =====
     {
         id: 'qcounter_kai2_pron', category: 'counters', subcategory: 'questionCounters', type: 'pronunciation', isTrap: true,
-        stem: '「何回」的正確讀音是？', stem_zh: '「何回」的正確讀音是？',
+        stem: '「何回」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「何回」的正確讀音是？',
         options: [
             { text: 'なんかい', isCorrect: true, reason: '正確！「何回」（次數）讀作「なんかい」，不發生濁音化。' },
             { text: 'なんがい', isCorrect: false, reason: '「何階」（樓層）才讀「なんがい」，「何回」（次數）讀「なんかい」。' },
@@ -471,7 +471,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんっかい', isCorrect: false, reason: '「何回」不需要促音。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「何回」（次數）讀作「なんかい」。注意：「何階」（樓層）才讀「なんがい」。', trapExplanation: '易混淆：何回(なんかい)vs何階(なんがい)。', relatedRules: ['「何回」vs「何階」', '疑問詞の讀法'] },
+        explanation: { correctRule: '「何回」（次數）讀作「なんかい」。注意：「何階」（樓層）才讀「なんがい」。', trapExplanation: '易混淆：何回(なんかい)vs何階(なんがい)。', relatedRules: ['「何回」vs「何階」', '疑問詞的讀法'] },
         sourceItem: { value: '?', kanji: '何回', reading: 'なんかい' }
     },
     {
@@ -485,14 +485,14 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんど', isCorrect: false, reason: '「何度」也可以，但本題答案是「何回」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問次數時使用「何回」(なんかい)。', relatedRules: ['疑問詞「何回」の使用'] },
+        explanation: { correctRule: '詢問次數時使用「何回」(なんかい)。', relatedRules: ['疑問詞「何回」的使用'] },
         sourceItem: { value: '?', kanji: '何回', reading: 'なんかい' }
     },
 
     // ===== 何個 的題目（濁音化：なんこ） =====
     {
         id: 'qcounter_ko_pron', category: 'counters', subcategory: 'questionCounters', type: 'pronunciation', isTrap: false,
-        stem: '「何個」的正確讀音是？', stem_zh: '「何個」的正確讀音是？',
+        stem: '「何個」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「何個」的正確讀音是？',
         options: [
             { text: 'なんこ', isCorrect: true, reason: '正確！「何個」讀作「なんこ」，無音變。' },
             { text: 'なんご', isCorrect: false, reason: '「個」不發生濁音化。' },
@@ -500,7 +500,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんっこ', isCorrect: false, reason: '「何個」不需要促音。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「何個」讀作「なんこ」。「個」無音變。', relatedRules: ['疑問詞の讀法', '「何＋個」の讀法'] },
+        explanation: { correctRule: '「何個」讀作「なんこ」。「個」無音變。', relatedRules: ['疑問詞的讀法', '「何＋個」的讀法'] },
         sourceItem: { value: '?', kanji: '何個', reading: 'なんこ' }
     },
     {
@@ -514,14 +514,14 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なにこ', isCorrect: false, reason: '「何」搭配量詞時讀「なん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問物品數量時使用「何個」。', relatedRules: ['疑問詞「何個」の使用'] },
+        explanation: { correctRule: '詢問物品數量時使用「何個」。', relatedRules: ['疑問詞「何個」的使用'] },
         sourceItem: { value: '?', kanji: '何個', reading: 'なんこ' }
     },
 
     // ===== 何時 的題目（なんじ） =====
     {
         id: 'qcounter_ji_pron', category: 'counters', subcategory: 'questionCounters', type: 'pronunciation', isTrap: false,
-        stem: '「何時」（幾點）的正確讀音是？', stem_zh: '「何時」（幾點）的正確讀音是？',
+        stem: '「何時」（何時{なんじ}）の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「何時」（幾點）的正確讀音是？',
         options: [
             { text: 'なんじ', isCorrect: true, reason: '正確！「何時」讀作「なんじ」。' },
             { text: 'なんぢ', isCorrect: false, reason: '「時」不使用「ぢ」。' },
@@ -543,14 +543,14 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんとき', isCorrect: false, reason: '這不是正確的說法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問具體時刻使用「何時」(なんじ)。', relatedRules: ['疑問詞「何時」の使用'] },
+        explanation: { correctRule: '詢問具體時刻使用「何時」(なんじ)。', relatedRules: ['疑問詞「何時」的使用'] },
         sourceItem: { value: '?', kanji: '何時', reading: 'なんじ' }
     },
 
     // ===== 何月 的題目（なんがつ） =====
     {
         id: 'qcounter_gatsu_pron', category: 'counters', subcategory: 'questionCounters', type: 'pronunciation', isTrap: true,
-        stem: '「何月」的正確讀音是？', stem_zh: '「何月」的正確讀音是？',
+        stem: '「何月」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「何月」的正確讀音是？',
         options: [
             { text: 'なんがつ', isCorrect: true, reason: '正確！「何月」發生濁音化，讀作「なんがつ」。' },
             { text: 'なんかつ', isCorrect: false, reason: '陷阱！撥音「ん」後的「か」變為濁音「が」。' },
@@ -558,7 +558,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんげつ', isCorrect: false, reason: '「何月」詢問月份，讀「なんがつ」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「何月」讀作「なんがつ」。撥音「ん」引發「か→が」濁音化。', trapExplanation: '這是陷阱題。撥音後k變g。', relatedRules: ['疑問詞の音變', '「何＋月」の讀法'] },
+        explanation: { correctRule: '「何月」讀作「なんがつ」。撥音「ん」引發「か→が」濁音化。', trapExplanation: '這是陷阱題。撥音後k變g。', relatedRules: ['疑問詞的音變', '「何＋月」的讀法'] },
         sourceItem: { value: '?', kanji: '何月', reading: 'なんがつ' }
     },
     {
@@ -572,14 +572,14 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんげつ', isCorrect: false, reason: '「何月」讀「なんがつ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問月份時使用「何月」(なんがつ)。', relatedRules: ['疑問詞「何月」の使用'] },
+        explanation: { correctRule: '詢問月份時使用「何月」(なんがつ)。', relatedRules: ['疑問詞「何月」的使用'] },
         sourceItem: { value: '?', kanji: '何月', reading: 'なんがつ' }
     },
 
     // ===== 何日 的題目（なんにち） =====
     {
         id: 'qcounter_nichi_pron', category: 'counters', subcategory: 'questionCounters', type: 'pronunciation', isTrap: false,
-        stem: '「何日」（幾號/幾天）的正確讀音是？', stem_zh: '「何日」（幾號/幾天）的正確讀音是？',
+        stem: '「何日」（何日{なんにち}）の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「何日」（幾號/幾天）的正確讀音是？',
         options: [
             { text: 'なんにち', isCorrect: true, reason: '正確！「何日」讀作「なんにち」。' },
             { text: 'なにひ', isCorrect: false, reason: '「日」在此讀「にち」，不是「ひ」。' },
@@ -587,7 +587,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'いつか', isCorrect: false, reason: '「五日」讀「いつか」，「何日」讀「なんにち」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「何日」讀作「なんにち」，用於詢問日期或天數。', relatedRules: ['日期の疑問詞', '「何日」の讀法'] },
+        explanation: { correctRule: '「何日」讀作「なんにち」，用於詢問日期或天數。', relatedRules: ['日期の疑問詞', '「何日」的讀法'] },
         sourceItem: { value: '?', kanji: '何日', reading: 'なんにち' }
     },
     {
@@ -601,14 +601,14 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんび', isCorrect: false, reason: '「日」不讀「び」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問日期時使用「何日」(なんにち)。', relatedRules: ['疑問詞「何日」の使用'] },
+        explanation: { correctRule: '詢問日期時使用「何日」(なんにち)。', relatedRules: ['疑問詞「何日」的使用'] },
         sourceItem: { value: '?', kanji: '何日', reading: 'なんにち' }
     },
 
     // ===== 何年 的題目（なんねん） =====
     {
         id: 'qcounter_nen_pron', category: 'counters', subcategory: 'questionCounters', type: 'pronunciation', isTrap: false,
-        stem: '「何年」的正確讀音是？', stem_zh: '「何年」的正確讀音是？',
+        stem: '「何年」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「何年」的正確讀音是？',
         options: [
             { text: 'なんねん', isCorrect: true, reason: '正確！「何年」讀作「なんねん」。' },
             { text: 'なんとし', isCorrect: false, reason: '「年」在此讀「ねん」，不是「とし」。' },
@@ -616,7 +616,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'いつとし', isCorrect: false, reason: '這不是正確的說法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「何年」讀作「なんねん」，用於詢問年份或年數。', relatedRules: ['時間の疑問詞', '「何年」の讀法'] },
+        explanation: { correctRule: '「何年」讀作「なんねん」，用於詢問年份或年數。', relatedRules: ['時間の疑問詞', '「何年」的讀法'] },
         sourceItem: { value: '?', kanji: '何年', reading: 'なんねん' }
     },
     {
@@ -630,14 +630,14 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なにねん', isCorrect: false, reason: '「何」搭配量詞時讀「なん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問年份時使用「何年」(なんねん)。', relatedRules: ['疑問詞「何年」の使用'] },
+        explanation: { correctRule: '詢問年份時使用「何年」(なんねん)。', relatedRules: ['疑問詞「何年」的使用'] },
         sourceItem: { value: '?', kanji: '何年', reading: 'なんねん' }
     },
 
     // ===== 何週間 的題目（なんしゅうかん） =====
     {
         id: 'qcounter_shukan_pron', category: 'counters', subcategory: 'questionCounters', type: 'pronunciation', isTrap: false,
-        stem: '「何週間」的正確讀音是？', stem_zh: '「何週間」的正確讀音是？',
+        stem: '「何週間」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「何週間」的正確讀音是？',
         options: [
             { text: 'なんしゅうかん', isCorrect: true, reason: '正確！「何週間」讀作「なんしゅうかん」。' },
             { text: 'なんじゅうかん', isCorrect: false, reason: '「週」讀「しゅう」，不是「じゅう」。' },
@@ -645,14 +645,14 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんしゅっかん', isCorrect: false, reason: '「何週間」不需要促音。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「何週間」讀作「なんしゅうかん」，用於詢問週數。', relatedRules: ['時間の疑問詞', '「何週間」の讀法'] },
+        explanation: { correctRule: '「何週間」讀作「なんしゅうかん」，用於詢問週數。', relatedRules: ['時間の疑問詞', '「何週間」的讀法'] },
         sourceItem: { value: '?', kanji: '何週間', reading: 'なんしゅうかん' }
     },
 
     // ===== 何曜日 的題目（なんようび） =====
     {
         id: 'qcounter_youbi_pron', category: 'counters', subcategory: 'questionCounters', type: 'pronunciation', isTrap: false,
-        stem: '「何曜日」的正確讀音是？', stem_zh: '「何曜日」的正確讀音是？',
+        stem: '「何曜日」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「何曜日」的正確讀音是？',
         options: [
             { text: 'なんようび', isCorrect: true, reason: '正確！「何曜日」讀作「なんようび」。' },
             { text: 'なにようび', isCorrect: false, reason: '搭配量詞時，「何」讀作「なん」。' },
@@ -660,7 +660,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'いつようび', isCorrect: false, reason: '這不是正確的說法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「何曜日」讀作「なんようび」，用於詢問星期幾。', relatedRules: ['曜日の疑問詞', '「何曜日」の讀法'] },
+        explanation: { correctRule: '「何曜日」讀作「なんようび」，用於詢問星期幾。', relatedRules: ['曜日の疑問詞', '「何曜日」的讀法'] },
         sourceItem: { value: '?', kanji: '何曜日', reading: 'なんようび' }
     },
     {
@@ -674,7 +674,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんにち', isCorrect: false, reason: '「何日」是問日期，不是星期。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問星期幾時使用「何曜日」(なんようび)。', relatedRules: ['疑問詞「何曜日」の使用'] },
+        explanation: { correctRule: '詢問星期幾時使用「何曜日」(なんようび)。', relatedRules: ['疑問詞「何曜日」的使用'] },
         sourceItem: { value: '?', kanji: '何曜日', reading: 'なんようび' }
     },
 
@@ -703,7 +703,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なにじん', isCorrect: false, reason: '「じん」是國籍。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '餐廳訂位時常用「何人様ですか」。', relatedRules: ['疑問詞「何人」の使用', '餐廳用語'] },
+        explanation: { correctRule: '餐廳訂位時常用「何人様ですか」。', relatedRules: ['疑問詞「何人」的使用', '餐廳用語'] },
         sourceItem: { value: '?', kanji: '何人', reading: 'なんにん' }
     },
     {
@@ -716,7 +716,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんこ', isCorrect: false, reason: '票不用「個」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '票、紙張等扁平物用「何枚」。', relatedRules: ['疑問詞「何枚」の使用'] },
+        explanation: { correctRule: '票、紙張等扁平物用「何枚」。', relatedRules: ['疑問詞「何枚」的使用'] },
         sourceItem: { value: '?', kanji: '何枚', reading: 'なんまい' }
     },
     {
@@ -730,7 +730,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんぼん', isCorrect: false, reason: '「本」是細長物量詞。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '書籍用「何冊」(なんさつ)。', relatedRules: ['疑問詞「何冊」の使用'] },
+        explanation: { correctRule: '書籍用「何冊」(なんさつ)。', relatedRules: ['疑問詞「何冊」的使用'] },
         sourceItem: { value: '?', kanji: '何冊', reading: 'なんさつ' }
     },
     {
@@ -743,7 +743,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんかいめ', isCorrect: false, reason: '「何階」已足夠。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問樓層用「何階」(なんがい)。', relatedRules: ['疑問詞「何階」の使用'] },
+        explanation: { correctRule: '詢問樓層用「何階」(なんがい)。', relatedRules: ['疑問詞「何階」的使用'] },
         sourceItem: { value: '?', kanji: '何階', reading: 'なんがい' }
     },
     {
@@ -757,7 +757,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんぱい', isCorrect: false, reason: '「何杯」使用濁音「ば」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '杯裝飲料用「何杯」(なんばい)。', relatedRules: ['疑問詞「何杯」の使用'] },
+        explanation: { correctRule: '杯裝飲料用「何杯」(なんばい)。', relatedRules: ['疑問詞「何杯」的使用'] },
         sourceItem: { value: '?', kanji: '何杯', reading: 'なんばい' }
     },
     {
@@ -770,7 +770,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんぽん', isCorrect: false, reason: '「何本」使用濁音「ぼ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '筆、傘等細長物用「何本」(なんぼん)。', relatedRules: ['疑問詞「何本」の使用'] },
+        explanation: { correctRule: '筆、傘等細長物用「何本」(なんぼん)。', relatedRules: ['疑問詞「何本」的使用'] },
         sourceItem: { value: '?', kanji: '何本', reading: 'なんぼん' }
     },
     {
@@ -784,7 +784,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんぴき', isCorrect: false, reason: '「何匹」使用濁音「び」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '小動物用「何匹」(なんびき)。', relatedRules: ['疑問詞「何匹」の使用'] },
+        explanation: { correctRule: '小動物用「何匹」(なんびき)。', relatedRules: ['疑問詞「何匹」的使用'] },
         sourceItem: { value: '?', kanji: '何匹', reading: 'なんびき' }
     },
 
@@ -825,7 +825,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: '何匹(なんびき)', isCorrect: false, reason: '這是正確的，「匹」用濁音。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「何分」應讀「なんぷん」，「分」是特殊的半濁音化。', trapExplanation: '這是陷阱題，「分」用半濁音(ぷ)而非濁音(ぶ)。', relatedRules: ['半濁音化規則', '「分」の特殊性'] },
+        explanation: { correctRule: '「何分」應讀「なんぷん」，「分」是特殊的半濁音化。', trapExplanation: '這是陷阱題，「分」用半濁音(ぷ)而非濁音(ぶ)。', relatedRules: ['半濁音化規則', '「分」的特殊性'] },
         sourceItem: { value: '?', kanji: '何分', reading: 'なんぷん' }
     },
     {
@@ -838,7 +838,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: '何曜日(なんようび)', isCorrect: false, reason: '這是正確的。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「何月」應讀「なんがつ」，k行量詞在撥音後濁音化。', trapExplanation: '這是陷阱題，k行濁音化。', relatedRules: ['濁音化規則', '「何月」の讀法'] },
+        explanation: { correctRule: '「何月」應讀「なんがつ」，k行量詞在撥音後濁音化。', trapExplanation: '這是陷阱題，k行濁音化。', relatedRules: ['濁音化規則', '「何月」的讀法'] },
         sourceItem: { value: '?', kanji: '何月', reading: 'なんがつ' }
     },
 
@@ -879,7 +879,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: '「なんぶん」才是正確的', isCorrect: false, reason: '錯誤，正確讀法是「なんぷん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「分」是特殊量詞，撥音「ん」後變半濁音「ぷ」而非濁音「ぶ」。', relatedRules: ['「分」の特殊性', '半濁音化規則'] },
+        explanation: { correctRule: '「分」是特殊量詞，撥音「ん」後變半濁音「ぷ」而非濁音「ぶ」。', relatedRules: ['「分」的特殊性', '半濁音化規則'] },
         sourceItem: { value: '?', kanji: '何分', reading: 'なんぷん' }
     },
 
@@ -894,7 +894,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんこ', isCorrect: false, reason: '照片不用「個」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '照片、信件等扁平物用「何枚」。', relatedRules: ['疑問詞「何枚」の使用'] },
+        explanation: { correctRule: '照片、信件等扁平物用「何枚」。', relatedRules: ['疑問詞「何枚」的使用'] },
         sourceItem: { value: '?', kanji: '何枚', reading: 'なんまい' }
     },
     {
@@ -908,7 +908,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんど', isCorrect: false, reason: '「何度」也可以，但本題是「何回」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問次數用「何回」(なんかい)。', relatedRules: ['疑問詞「何回」の使用'] },
+        explanation: { correctRule: '詢問次數用「何回」(なんかい)。', relatedRules: ['疑問詞「何回」的使用'] },
         sourceItem: { value: '?', kanji: '何回', reading: 'なんかい' }
     },
     {
@@ -921,7 +921,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんぷん', isCorrect: false, reason: '「何分」是問分鐘。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問具體時刻用「何時」(なんじ)。', relatedRules: ['疑問詞「何時」の使用'] },
+        explanation: { correctRule: '詢問具體時刻用「何時」(なんじ)。', relatedRules: ['疑問詞「何時」的使用'] },
         sourceItem: { value: '?', kanji: '何時', reading: 'なんじ' }
     },
     {
@@ -935,7 +935,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんにち', isCorrect: false, reason: '「何日」是問日期。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問月份用「何月」(なんがつ)。', relatedRules: ['疑問詞「何月」の使用'] },
+        explanation: { correctRule: '詢問月份用「何月」(なんがつ)。', relatedRules: ['疑問詞「何月」的使用'] },
         sourceItem: { value: '?', kanji: '何月', reading: 'なんがつ' }
     },
     {
@@ -948,7 +948,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんこ', isCorrect: false, reason: '機器不用「個」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '機器、車輛用「何台」(なんだい)。', relatedRules: ['疑問詞「何台」の使用'] },
+        explanation: { correctRule: '機器、車輛用「何台」(なんだい)。', relatedRules: ['疑問詞「何台」的使用'] },
         sourceItem: { value: '?', kanji: '何台', reading: 'なんだい' }
     },
     {
@@ -962,7 +962,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'いくつ', isCorrect: false, reason: '瓶裝飲料用「何本」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '瓶裝飲料、細長物用「何本」(なんぼん)。', relatedRules: ['疑問詞「何本」の使用'] },
+        explanation: { correctRule: '瓶裝飲料、細長物用「何本」(なんぼん)。', relatedRules: ['疑問詞「何本」的使用'] },
         sourceItem: { value: '?', kanji: '何本', reading: 'なんぼん' }
     },
     {
@@ -975,7 +975,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なにねん', isCorrect: false, reason: '「何」搭配量詞時讀「なん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問年數用「何年」(なんねん)。', relatedRules: ['疑問詞「何年」の使用'] },
+        explanation: { correctRule: '詢問年數用「何年」(なんねん)。', relatedRules: ['疑問詞「何年」的使用'] },
         sourceItem: { value: '?', kanji: '何年', reading: 'なんねん' }
     },
     {
@@ -989,7 +989,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'どのくらい', isCorrect: false, reason: '也可以，但本題是「何分」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問所需時間用「何分」(なんぷん)。', relatedRules: ['疑問詞「何分」の使用'] },
+        explanation: { correctRule: '詢問所需時間用「何分」(なんぷん)。', relatedRules: ['疑問詞「何分」的使用'] },
         sourceItem: { value: '?', kanji: '何分', reading: 'なんぷん' }
     },
 
@@ -1030,7 +1030,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: '「何」搭配量詞時讀「なに」', isCorrect: false, reason: '錯誤，應讀「なん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「つ」系統使用「いくつ」，這是唯一不用「何」的量詞疑問詞。', relatedRules: ['「いくつ」の特殊性'] },
+        explanation: { correctRule: '「つ」系統使用「いくつ」，這是唯一不用「何」的量詞疑問詞。', relatedRules: ['「いくつ」的特殊性'] },
         sourceItem: { value: '?', kanji: 'いくつ', reading: '特殊疑問詞' }
     },
     {
@@ -1043,7 +1043,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: '「何分」和「何杯」都不發生音變', isCorrect: false, reason: '錯誤，兩者都發生音變。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「分」是特殊量詞用半濁音(なんぷん)，「杯」等h行量詞用濁音(なんばい)。', relatedRules: ['「分」の特殊性', '濁音化vs半濁音化'] },
+        explanation: { correctRule: '「分」是特殊量詞用半濁音(なんぷん)，「杯」等h行量詞用濁音(なんばい)。', relatedRules: ['「分」的特殊性', '濁音化vs半濁音化'] },
         sourceItem: { value: '?', kanji: '何分・何杯', reading: '音變比較' }
     },
 
@@ -1072,7 +1072,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんぴき', isCorrect: false, reason: '「何匹」使用濁音「び」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '魚、蟲等小動物用「何匹」(なんびき)。', relatedRules: ['疑問詞「何匹」の使用'] },
+        explanation: { correctRule: '魚、蟲等小動物用「何匹」(なんびき)。', relatedRules: ['疑問詞「何匹」的使用'] },
         sourceItem: { value: '?', kanji: '何匹', reading: 'なんびき' }
     },
     {
@@ -1085,7 +1085,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんぜん', isCorrect: false, reason: '「膳」是正式說法，「本」更常用。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '筷子、鉛筆等細長物用「何本」(なんぼん)。', relatedRules: ['疑問詞「何本」の使用'] },
+        explanation: { correctRule: '筷子、鉛筆等細長物用「何本」(なんぼん)。', relatedRules: ['疑問詞「何本」的使用'] },
         sourceItem: { value: '?', kanji: '何本', reading: 'なんぼん' }
     },
     {
@@ -1099,7 +1099,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'どのくらい', isCorrect: false, reason: '也可以，但本題是「何週間」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問週數用「何週間」(なんしゅうかん)。', relatedRules: ['疑問詞「何週間」の使用'] },
+        explanation: { correctRule: '詢問週數用「何週間」(なんしゅうかん)。', relatedRules: ['疑問詞「何週間」的使用'] },
         sourceItem: { value: '?', kanji: '何週間', reading: 'なんしゅうかん' }
     },
     {
@@ -1112,7 +1112,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんこ', isCorrect: false, reason: '筆不用「個」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '筆類細長物用「何本」(なんぼん)。', relatedRules: ['疑問詞「何本」の使用'] },
+        explanation: { correctRule: '筆類細長物用「何本」(なんぼん)。', relatedRules: ['疑問詞「何本」的使用'] },
         sourceItem: { value: '?', kanji: '何本', reading: 'なんぼん' }
     },
     {
@@ -1126,7 +1126,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なにこ', isCorrect: false, reason: '「何」搭配量詞時讀「なん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問物品數量用「何個」(なんこ)。', relatedRules: ['疑問詞「何個」の使用'] },
+        explanation: { correctRule: '詢問物品數量用「何個」(なんこ)。', relatedRules: ['疑問詞「何個」的使用'] },
         sourceItem: { value: '?', kanji: '何個', reading: 'なんこ' }
     },
     {
@@ -1153,7 +1153,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんまい', isCorrect: false, reason: '雞蛋不用「枚」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '雞蛋等圓形物用「何個」(なんこ)。', relatedRules: ['疑問詞「何個」の使用'] },
+        explanation: { correctRule: '雞蛋等圓形物用「何個」(なんこ)。', relatedRules: ['疑問詞「何個」的使用'] },
         sourceItem: { value: '?', kanji: '何個', reading: 'なんこ' }
     },
     {
@@ -1166,7 +1166,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんほん', isCorrect: false, reason: '藥丸不用「本」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '藥丸用「何個」(なんこ)或「何錠」。', relatedRules: ['疑問詞「何個」の使用'] },
+        explanation: { correctRule: '藥丸用「何個」(なんこ)或「何錠」。', relatedRules: ['疑問詞「何個」的使用'] },
         sourceItem: { value: '?', kanji: '何個', reading: 'なんこ' }
     },
     {
@@ -1180,7 +1180,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんこ', isCorrect: false, reason: '書籍不用「個」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '書籍用「何冊」(なんさつ)。', relatedRules: ['疑問詞「何冊」の使用'] },
+        explanation: { correctRule: '書籍用「何冊」(なんさつ)。', relatedRules: ['疑問詞「何冊」的使用'] },
         sourceItem: { value: '?', kanji: '何冊', reading: 'なんさつ' }
     },
     {
@@ -1193,7 +1193,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんこ', isCorrect: false, reason: '信件不用「個」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '信件用「何枚」(なんまい)或「何通」。', relatedRules: ['疑問詞「何枚」の使用'] },
+        explanation: { correctRule: '信件用「何枚」(なんまい)或「何通」。', relatedRules: ['疑問詞「何枚」的使用'] },
         sourceItem: { value: '?', kanji: '何枚', reading: 'なんまい' }
     },
     {
@@ -1220,7 +1220,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんぼん', isCorrect: false, reason: '「何本」是瓶裝飲料。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '杯裝飲料用「何杯」(なんばい)。', relatedRules: ['疑問詞「何杯」の使用'] },
+        explanation: { correctRule: '杯裝飲料用「何杯」(なんばい)。', relatedRules: ['疑問詞「何杯」的使用'] },
         sourceItem: { value: '?', kanji: '何杯', reading: 'なんばい' }
     },
     {
@@ -1234,7 +1234,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なにかい', isCorrect: false, reason: '「何」搭配量詞時讀「なん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問次數用「何回」(なんかい)。', relatedRules: ['疑問詞「何回」の使用'] },
+        explanation: { correctRule: '詢問次數用「何回」(なんかい)。', relatedRules: ['疑問詞「何回」的使用'] },
         sourceItem: { value: '?', kanji: '何回', reading: 'なんかい' }
     },
     {
@@ -1247,7 +1247,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'いくつ', isCorrect: false, reason: '照片用「何枚」更準確。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '照片用「何枚」(なんまい)。', relatedRules: ['疑問詞「何枚」の使用'] },
+        explanation: { correctRule: '照片用「何枚」(なんまい)。', relatedRules: ['疑問詞「何枚」的使用'] },
         sourceItem: { value: '?', kanji: '何枚', reading: 'なんまい' }
     },
     {
@@ -1261,7 +1261,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんまい', isCorrect: false, reason: '蛋糕不用「枚」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '蛋糕等物品用「何個」(なんこ)。', relatedRules: ['疑問詞「何個」の使用'] },
+        explanation: { correctRule: '蛋糕等物品用「何個」(なんこ)。', relatedRules: ['疑問詞「何個」的使用'] },
         sourceItem: { value: '?', kanji: '何個', reading: 'なんこ' }
     },
     {
@@ -1274,7 +1274,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんかいめ', isCorrect: false, reason: '「何階」已足夠。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問樓層用「何階」(なんがい)。', relatedRules: ['疑問詞「何階」の使用'] },
+        explanation: { correctRule: '詢問樓層用「何階」(なんがい)。', relatedRules: ['疑問詞「何階」的使用'] },
         sourceItem: { value: '?', kanji: '何階', reading: 'なんがい' }
     },
     {
@@ -1288,7 +1288,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なにじん', isCorrect: false, reason: '「じん」是國籍。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問人數用「何人」(なんにん)。', relatedRules: ['疑問詞「何人」の使用'] },
+        explanation: { correctRule: '詢問人數用「何人」(なんにん)。', relatedRules: ['疑問詞「何人」的使用'] },
         sourceItem: { value: '?', kanji: '何人', reading: 'なんにん' }
     },
 
@@ -1342,7 +1342,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: '何分(なにふん)', isCorrect: false, reason: '錯誤，「何」讀「なん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「何分」讀「なんぷん」，「分」是特殊的半濁音化。', relatedRules: ['半濁音化規則', '「分」の特殊性'] },
+        explanation: { correctRule: '「何分」讀「なんぷん」，「分」是特殊的半濁音化。', relatedRules: ['半濁音化規則', '「分」的特殊性'] },
         sourceItem: { value: '?', kanji: '何分', reading: 'なんぷん' }
     },
     {
@@ -1437,7 +1437,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: '根據量詞不同，有時讀「なん」有時讀「なに」', isCorrect: false, reason: '錯誤，搭配量詞時固定讀「なん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「何」搭配量詞時讀「なん」，唯一例外是「つ」系統使用「いくつ」。', relatedRules: ['「何」の讀法', '「いくつ」の特殊性'] },
+        explanation: { correctRule: '「何」搭配量詞時讀「なん」，唯一例外是「つ」系統使用「いくつ」。', relatedRules: ['「何」的讀法', '「いくつ」的特殊性'] },
         sourceItem: { value: '?', kanji: '何', reading: '讀法規則' }
     },
     {
@@ -1465,7 +1465,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんぼん', isCorrect: false, reason: '「何本」是瓶裝飲料。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '杯裝飲料用「何杯」(なんばい)。', relatedRules: ['疑問詞「何杯」の使用'] },
+        explanation: { correctRule: '杯裝飲料用「何杯」(なんばい)。', relatedRules: ['疑問詞「何杯」的使用'] },
         sourceItem: { value: '?', kanji: '何杯', reading: 'なんばい' }
     },
     {
@@ -1479,7 +1479,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんにち', isCorrect: false, reason: '「何日」是問日期。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問星期幾用「何曜日」(なんようび)。', relatedRules: ['疑問詞「何曜日」の使用'] },
+        explanation: { correctRule: '詢問星期幾用「何曜日」(なんようび)。', relatedRules: ['疑問詞「何曜日」的使用'] },
         sourceItem: { value: '?', kanji: '何曜日', reading: 'なんようび' }
     },
     {
@@ -1492,7 +1492,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんこ', isCorrect: false, reason: '花不用「個」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '花、樹木等細長物用「何本」(なんぼん)。', relatedRules: ['疑問詞「何本」の使用'] },
+        explanation: { correctRule: '花、樹木等細長物用「何本」(なんぼん)。', relatedRules: ['疑問詞「何本」的使用'] },
         sourceItem: { value: '?', kanji: '何本', reading: 'なんぼん' }
     },
     {
@@ -1506,7 +1506,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'だれ', isCorrect: false, reason: '「誰」是問誰，不是問人數。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問人數用「何人」(なんにん)。', relatedRules: ['疑問詞「何人」の使用'] },
+        explanation: { correctRule: '詢問人數用「何人」(なんにん)。', relatedRules: ['疑問詞「何人」的使用'] },
         sourceItem: { value: '?', kanji: '何人', reading: 'なんにん' }
     },
     {
@@ -1519,7 +1519,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'いくつ', isCorrect: false, reason: '講義用「何枚」更準確。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '講義、紙張等扁平物用「何枚」(なんまい)。', relatedRules: ['疑問詞「何枚」の使用'] },
+        explanation: { correctRule: '講義、紙張等扁平物用「何枚」(なんまい)。', relatedRules: ['疑問詞「何枚」的使用'] },
         sourceItem: { value: '?', kanji: '何枚', reading: 'なんまい' }
     },
     {
@@ -1533,7 +1533,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'どのくらい', isCorrect: false, reason: '問具體樓層用「何階」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問建築樓層用「何階」(なんがい)。', relatedRules: ['疑問詞「何階」の使用'] },
+        explanation: { correctRule: '詢問建築樓層用「何階」(なんがい)。', relatedRules: ['疑問詞「何階」的使用'] },
         sourceItem: { value: '?', kanji: '何階', reading: 'なんがい' }
     },
     {
@@ -1546,7 +1546,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なんど', isCorrect: false, reason: '「何度」也可以，但本題是「何回」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '詢問次數用「何回」(なんかい)。', relatedRules: ['疑問詞「何回」の使用'] },
+        explanation: { correctRule: '詢問次數用「何回」(なんかい)。', relatedRules: ['疑問詞「何回」的使用'] },
         sourceItem: { value: '?', kanji: '何回', reading: 'なんかい' }
     },
     {
@@ -1560,7 +1560,7 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
             { text: 'なにつ', isCorrect: false, reason: '這不是正確的疑問詞。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「つ」系統的疑問詞是「いくつ」，不是「なんつ」。', relatedRules: ['「いくつ」の使用'] },
+        explanation: { correctRule: '「つ」系統的疑問詞是「いくつ」，不是「なんつ」。', relatedRules: ['「いくつ」的使用'] },
         sourceItem: { value: '?', kanji: '幾つ', reading: 'いくつ' }
     }
 ];

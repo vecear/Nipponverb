@@ -12,19 +12,19 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「一人」的正確讀音是？',
+        stem: '「一人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一人」的正確讀音是？',
         options: [
-            { text: 'ひとり', isCorrect: true, reason: '正確{せいかく}！「一人{ひとり}」讀作{どくさ}「ひとり」，使用{しよう}訓讀{くんどく}。' },
-            { text: 'いちにん', isCorrect: false, reason: '陷阱{かんけい}！一人{ひとり}使用{しよう}訓讀{くんどく}「ひとり」，不是音讀{おんどく}「いちにん」。' },
-            { text: 'いちじん', isCorrect: false, reason: '「じん」是「〜人{じん}」（人種{じんしゅ}/國籍{こくせき}）の讀法{よみかた}，不是人數{にんずう}。' },
-            { text: 'ひとにん', isCorrect: false, reason: '不能{ふのう}混合{こんごう}訓讀{くんどく}與音讀{おんどく}。' }
+            { text: 'ひとり', isCorrect: true, reason: '正確！「一人{ひとり}」讀作「ひとり」，使用訓讀。' },
+            { text: 'いちにん', isCorrect: false, reason: '陷阱！一人{ひとり}使用訓讀「ひとり」，不是音讀「いちにん」。' },
+            { text: 'いちじん', isCorrect: false, reason: '「じん」是「〜人」（人種/國籍）的讀法，不是人數。' },
+            { text: 'ひとにん', isCorrect: false, reason: '不能混合訓讀與音讀。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「一人{ひとり}」讀作{どくさ}「ひとり」，使用{しよう}訓讀{くんどく}。人數{にんずう}量詞{りょうし}「人{にん}」在1人{ひとり}和2人{ふたり}使用{しよう}訓讀{くんどく}系統{けいとう}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。雖然{すいぜん}其他{たの}人數{にんずう}使用{しよう}音讀{おんどく}「にん」，但1人{ひとり}固定{こてい}使用{しよう}訓讀{くんどく}「ひとり」。',
-            relatedRules: ['人數{にんずう}の訓讀{くんどく}規則{きそく}', '1人{ひとり}、2人{ふたり}の特殊{とくしゅ}讀法{よみかた}']
+            correctRule: '「一人{ひとり}」讀作「ひとり」，使用訓讀。人數量詞「人」在一人{ひとり}和二人{ふたり}使用訓讀系統。',
+            trapExplanation: '這是陷阱題。雖然其他人數使用音讀「にん」，但一人{ひとり}固定使用訓讀「ひとり」。',
+            relatedRules: ['人數的訓讀規則', '一人{ひとり}、二人{ふたり}的特殊讀法']
         },
         sourceItem: { value: 1, kanji: '一人', reading: 'ひとり' }
     },
@@ -37,16 +37,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '私は＿＿で旅行します。',
         stem_zh: '我一個人旅行。',
         options: [
-            { text: 'いちにん', isCorrect: false, reason: '陷阱{かんけい}！一人{ひとり}使用{しよう}訓讀{くんどく}「ひとり」。' },
-            { text: 'ひとり', isCorrect: true, reason: '正確{せいかく}！「ひとりで」表示{ひょうじ}「一個人{ひとり}」做某事{なにか}。' },
-            { text: 'いちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ひとにん', isCorrect: false, reason: '不混合{ふこんごう}訓讀{くんどく}與音讀{おんどく}。' }
+            { text: 'いちにん', isCorrect: false, reason: '陷阱！一人{ひとり}使用訓讀「ひとり」。' },
+            { text: 'ひとり', isCorrect: true, reason: '正確！「ひとりで」表示「一個人」做某事。' },
+            { text: 'いちじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ひとにん', isCorrect: false, reason: '不混合訓讀與音讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ひとりで」表示{ひょうじ}「一個人{ひとり}」做某事{なにか}，是常用{じょうよう}表達{ひょうたつ}。',
-            trapExplanation: '一人{ひとり}固定{こてい}讀む{よむ}「ひとり」，這是需要{じゅよう}特別{とくべつ}記憶{きおく}の訓讀{くんどく}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '「〜で」の使用{しよう}']
+            correctRule: '「ひとりで」表示「一個人」做某事，是常用表達。',
+            trapExplanation: '一人{ひとり}固定讀「ひとり」，這是需要特別記憶的訓讀。',
+            relatedRules: ['人數的讀法', '「〜で」的使用']
         },
         sourceItem: { value: 1, kanji: '一人', reading: 'ひとり' }
     },
@@ -63,15 +63,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（一個人）'
         },
         options: [
-            { text: 'いちにん', isCorrect: false, reason: '一人{ひとり}使用{しよう}訓讀{くんどく}。' },
-            { text: 'ひとり', isCorrect: true, reason: '正確{せいかく}！預約{よやく}是一個人{ひとり}。' },
-            { text: 'いちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ひとにん', isCorrect: false, reason: '不混合{ふこんごう}訓讀{くんどく}與音讀{おんどく}。' }
+            { text: 'いちにん', isCorrect: false, reason: '一人{ひとり}使用訓讀。' },
+            { text: 'ひとり', isCorrect: true, reason: '正確！預約是一個人。' },
+            { text: 'いちじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ひとにん', isCorrect: false, reason: '不混合訓讀與音讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '回答{かいとう}「何人{なんにん}」時{とき}，一人{ひとり}讀作{どくさ}「ひとり」。',
-            relatedRules: ['人數{にんずう}の質問{しつもん}與回答{かいとう}', '「何人{なんにん}」の使用{しよう}']
+            correctRule: '回答「何人{なんにん}」時，一人{ひとり}讀作「ひとり」。',
+            relatedRules: ['人數的質問與回答', '「何人」的使用']
         },
         sourceItem: { value: 1, kanji: '一人', reading: 'ひとり' }
     },
@@ -83,19 +83,19 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二人」的正確讀音是？',
+        stem: '「二人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二人」的正確讀音是？',
         options: [
-            { text: 'ふたり', isCorrect: true, reason: '正確{せいかく}！「二人{ふたり}」讀作{どくさ}「ふたり」，使用{しよう}訓讀{くんどく}。' },
-            { text: 'ににん', isCorrect: false, reason: '陷阱{かんけい}！二人{ふたり}使用{しよう}訓讀{くんどく}「ふたり」，不是音讀{おんどく}「ににん」。' },
-            { text: 'にじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ふたにん', isCorrect: false, reason: '不能{ふのう}混合{こんごう}訓讀{くんどく}與音讀{おんどく}。' }
+            { text: 'ふたり', isCorrect: true, reason: '正確！「二人{ふたり}」讀作「ふたり」，使用訓讀。' },
+            { text: 'ににん', isCorrect: false, reason: '陷阱！二人{ふたり}使用訓讀「ふたり」，不是音讀「ににん」。' },
+            { text: 'にじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ふたにん', isCorrect: false, reason: '不能混合訓讀與音讀。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二人{ふたり}」讀作{どくさ}「ふたり」，使用{しよう}訓讀{くんどく}。與一人{ひとり}一樣{いちよう}，是特殊{とくしゅ}讀法{よみかた}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。二人{ふたり}固定{こてい}使用{しよう}訓讀{くんどく}「ふたり」，從{から}三人{さんにん}開始{はじめ}才{はじめて}使用{しよう}音讀{おんどく}「にん」。',
-            relatedRules: ['人數{にんずう}の訓讀{くんどく}規則{きそく}', '訓讀{くんどく}與音讀{おんどく}の切換{きりかえ}']
+            correctRule: '「二人{ふたり}」讀作「ふたり」，使用訓讀。與一人{ひとり}一樣，是特殊讀法。',
+            trapExplanation: '這是陷阱題。二人{ふたり}固定使用訓讀「ふたり」，從三人開始才使用音讀「にん」。',
+            relatedRules: ['人數的訓讀規則', '訓讀與音讀の切換']
         },
         sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
     },
@@ -108,16 +108,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '私たちは＿＿で行きます。',
         stem_zh: '我們兩個人去。',
         options: [
-            { text: 'ににん', isCorrect: false, reason: '陷阱{かんけい}！二人{ふたり}使用{しよう}訓讀{くんどく}「ふたり」。' },
-            { text: 'ふたり', isCorrect: true, reason: '正確{せいかく}！「ふたりで」表示{ひょうじ}「兩個人{ふたり}」一起{いっしょ}做某事{なにか}。' },
-            { text: 'にじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ふたにん', isCorrect: false, reason: '不混合{ふこんごう}訓讀{くんどく}與音讀{おんどく}。' }
+            { text: 'ににん', isCorrect: false, reason: '陷阱！二人{ふたり}使用訓讀「ふたり」。' },
+            { text: 'ふたり', isCorrect: true, reason: '正確！「ふたりで」表示「兩個人」一起做某事。' },
+            { text: 'にじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ふたにん', isCorrect: false, reason: '不混合訓讀與音讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ふたりで」表示{ひょうじ}「兩個人{ふたり}」一起{いっしょ}做某事{なにか}。',
-            trapExplanation: '二人{ふたり}固定{こてい}讀む{よむ}「ふたり」，這是需要{じゅよう}特別{とくべつ}記憶{きおく}の訓讀{くんどく}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '「〜で」の使用{しよう}']
+            correctRule: '「ふたりで」表示「兩個人」一起做某事。',
+            trapExplanation: '二人{ふたり}固定讀「ふたり」，這是需要特別記憶的訓讀。',
+            relatedRules: ['人數的讀法', '「〜で」的使用']
         },
         sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
     },
@@ -134,15 +134,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（兩個人）'
         },
         options: [
-            { text: 'ににん', isCorrect: false, reason: '二人{ふたり}使用{しよう}訓讀{くんどく}。' },
-            { text: 'ふたり', isCorrect: true, reason: '正確{せいかく}！家庭{かぞく}有兩個人{ふたり}。' },
-            { text: 'にじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ふたにん', isCorrect: false, reason: '不混合{ふこんごう}訓讀{くんどく}與音讀{おんどく}。' }
+            { text: 'ににん', isCorrect: false, reason: '二人{ふたり}使用訓讀。' },
+            { text: 'ふたり', isCorrect: true, reason: '正確！家庭有兩個人。' },
+            { text: 'にじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ふたにん', isCorrect: false, reason: '不混合訓讀與音讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ふたり」回答{かいとう}家庭{かぞく}人數{にんずう}。',
-            relatedRules: ['人數{にんずう}の質問{しつもん}與回答{かいとう}', '家庭{かぞく}表達{ひょうたつ}']
+            correctRule: '「ふたり」回答家庭人數。',
+            relatedRules: ['人數的質問與回答', '家庭表達']
         },
         sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
     },
@@ -154,18 +154,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「三人」的正確讀音是？',
+        stem: '「三人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三人」的正確讀音是？',
         options: [
-            { text: 'さんにん', isCorrect: true, reason: '正確{せいかく}！「三人{さんにん}」讀作{どくさ}「さんにん」，從{から}三人{さんにん}開始{はじめ}使用{しよう}音讀{おんどく}。' },
-            { text: 'みたり', isCorrect: false, reason: '「みたり」是古語{こご}，現代{げんだい}日語{にほんご}使用{しよう}「さんにん」。' },
-            { text: 'さんじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}量詞{りょうし}。' },
-            { text: 'みにん', isCorrect: false, reason: '不混合{ふこんごう}訓讀{くんどく}與音讀{おんどく}。' }
+            { text: 'さんにん', isCorrect: true, reason: '正確！「三人{さんにん}」讀作「さんにん」，從三人{さんにん}開始使用音讀。' },
+            { text: 'みたり', isCorrect: false, reason: '「みたり」是古語，現代日語使用「さんにん」。' },
+            { text: 'さんじん', isCorrect: false, reason: '「じん」不用於人數量詞。' },
+            { text: 'みにん', isCorrect: false, reason: '不混合訓讀與音讀。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三人{さんにん}」讀作{どくさ}「さんにん」。從{から}三人{さんにん}開始{はじめ}，人數{にんずう}量詞{りょうし}切換{きりかえ}為{に}音讀{おんどく}「〜にん」。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '訓讀{くんどく}→音讀{おんどく}の切換點{きりかえてん}']
+            correctRule: '「三人{さんにん}」讀作「さんにん」。從三人{さんにん}開始，人數量詞切換為音讀「〜にん」。',
+            relatedRules: ['人數的音讀規則', '訓讀→音讀の切換點']
         },
         sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
     },
@@ -178,15 +178,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '＿＿で話し合いました。',
         stem_zh: '三個人討論了。',
         options: [
-            { text: 'みたり', isCorrect: false, reason: '現代{げんだい}日語{にほんご}使用{しよう}「さんにん」。' },
-            { text: 'さんにん', isCorrect: true, reason: '正確{せいかく}！三個人{さんにん}一起{いっしょ}討論{はなしあいました}。' },
-            { text: 'さんじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'みにん', isCorrect: false, reason: '使用{しよう}音讀{おんどく}「さんにん」。' }
+            { text: 'みたり', isCorrect: false, reason: '現代日語使用「さんにん」。' },
+            { text: 'さんにん', isCorrect: true, reason: '正確！三個人一起討論。' },
+            { text: 'さんじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'みにん', isCorrect: false, reason: '使用音讀「さんにん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三人{さんにん}で」表示{ひょうじ}「三個人{さんにん}」一起{いっしょ}做某事{なにか}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '「〜で」の使用{しよう}']
+            correctRule: '「三人{さんにん}で」表示「三個人」一起做某事。',
+            relatedRules: ['人數的讀法', '「〜で」的使用']
         },
         sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
     },
@@ -203,15 +203,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿で行きます。（三個人）'
         },
         options: [
-            { text: 'みたり', isCorrect: false, reason: '現代{げんだい}使用{しよう}「さんにん」。' },
-            { text: 'さんにん', isCorrect: true, reason: '正確{せいかく}！三個人{さんにん}一起{いっしょ}去旅行{りょこう}。' },
-            { text: 'さんじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'みっにん', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'みたり', isCorrect: false, reason: '現代使用「さんにん」。' },
+            { text: 'さんにん', isCorrect: true, reason: '正確！三個人一起去旅行。' },
+            { text: 'さんじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'みっにん', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三人{さんにん}で行{い}きます」表示{ひょうじ}「三個人{さんにん}去」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '旅行{りょこう}計畫{けいかく}表達{ひょうたつ}']
+            correctRule: '「三人{さんにん}で行きます」表示「三個人去」。',
+            relatedRules: ['人數的讀法', '旅行計畫表達']
         },
         sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
     },
@@ -223,19 +223,19 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「四人」的正確讀音是？',
+        stem: '「四人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「四人」的正確讀音是？',
         options: [
-            { text: 'よにん', isCorrect: true, reason: '正確{せいかく}！「四人{よにん}」讀作{どくさ}「よにん」，使用{しよう}「よ」。' },
-            { text: 'よんにん', isCorrect: false, reason: '陷阱{かんけい}！四人{よにん}使用{しよう}「よ」不是「よん」。' },
-            { text: 'しにん', isCorrect: false, reason: '陷阱{かんけい}！「しにん」聽起來{きこえ}像「死人{しにん}」，禁止{きんし}使用{しよう}。' },
-            { text: 'よったり', isCorrect: false, reason: '「よったり」是古語{こご}，現代{げんだい}使用{しよう}「よにん」。' }
+            { text: 'よにん', isCorrect: true, reason: '正確！「四人{よにん}」讀作「よにん」，使用「よ」。' },
+            { text: 'よんにん', isCorrect: false, reason: '陷阱！四人{よにん}使用「よ」不是「よん」。' },
+            { text: 'しにん', isCorrect: false, reason: '陷阱！「しにん」聽起來像「死人」，禁止使用。' },
+            { text: 'よったり', isCorrect: false, reason: '「よったり」是古語，現代使用「よにん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四人{よにん}」讀作{どくさ}「よにん」，使用{しよう}「よ」不是「よん」或「し」。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「しにん」聽起來{きこえ}像「死人{しにん}」（屍體{したい}），是禁忌{きんき}讀法{よみかた}。「よんにん」也不常用{ふつうよう}。',
-            relatedRules: ['四人{よにん}の特殊{とくしゅ}讀法{よみかた}', '避諱{いひき}規則{きそく}']
+            correctRule: '「四人{よにん}」讀作「よにん」，使用「よ」不是「よん」或「し」。',
+            trapExplanation: '這是陷阱題。「しにん」聽起來像「死人」（屍體），是禁忌讀法。「よんにん」也不常用。',
+            relatedRules: ['四人{よにん}的特殊讀法', '避諱規則']
         },
         sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
     },
@@ -248,16 +248,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '家族は＿＿です。',
         stem_zh: '家裡有四個人。',
         options: [
-            { text: 'よんにん', isCorrect: false, reason: '陷阱{かんけい}！四人{よにん}使用{しよう}「よ」不是「よん」。' },
-            { text: 'よにん', isCorrect: true, reason: '正確{せいかく}！家庭{かぞく}有四個人{よにん}。' },
-            { text: 'しにん', isCorrect: false, reason: '「しにん」是禁忌{きんき}讀法{よみかた}。' },
-            { text: 'よったり', isCorrect: false, reason: '現代{げんだい}使用{しよう}「よにん」。' }
+            { text: 'よんにん', isCorrect: false, reason: '陷阱！四人{よにん}使用「よ」不是「よん」。' },
+            { text: 'よにん', isCorrect: true, reason: '正確！家庭有四個人。' },
+            { text: 'しにん', isCorrect: false, reason: '「しにん」是禁忌讀法。' },
+            { text: 'よったり', isCorrect: false, reason: '現代使用「よにん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「家族{かぞく}は四人{よにん}です」表示{ひょうじ}「家庭{かぞく}有四個人{よにん}」。',
-            trapExplanation: '四人{よにん}固定{こてい}讀む{よむ}「よにん」，避免{さける}「しにん」（死人{しにん}）の禁忌{きんき}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '家庭{かぞく}表達{ひょうたつ}']
+            correctRule: '「家族は四人{よにん}です」表示「家庭有四個人」。',
+            trapExplanation: '四人{よにん}固定讀「よにん」，避免「しにん」（死人）の禁忌。',
+            relatedRules: ['人數的讀法', '家庭表達']
         },
         sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
     },
@@ -274,15 +274,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（四位）'
         },
         options: [
-            { text: 'よんにん', isCorrect: false, reason: '四人{よにん}使用{しよう}「よ」。' },
-            { text: 'よにん', isCorrect: true, reason: '正確{せいかく}！預約{よやく}四位{よにん}。' },
-            { text: 'しにん', isCorrect: false, reason: '「しにん」是禁忌{きんき}讀法{よみかた}。' },
-            { text: 'よったり', isCorrect: false, reason: '現代{げんだい}使用{しよう}「よにん」。' }
+            { text: 'よんにん', isCorrect: false, reason: '四人{よにん}使用「よ」。' },
+            { text: 'よにん', isCorrect: true, reason: '正確！預約四位{よにん}。' },
+            { text: 'しにん', isCorrect: false, reason: '「しにん」是禁忌讀法。' },
+            { text: 'よったり', isCorrect: false, reason: '現代使用「よにん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「四人{よにん}」回答{かいとう}預約{よやく}人數{にんずう}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '餐廳{れすとらん}預約{よやく}']
+            correctRule: '「四人{よにん}」回答預約人數。',
+            relatedRules: ['人數的讀法', '餐廳預約']
         },
         sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
     },
@@ -294,18 +294,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五人」的正確讀音是？',
+        stem: '「五人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五人」的正確讀音是？',
         options: [
-            { text: 'ごにん', isCorrect: true, reason: '正確{せいかく}！「五人{ごにん}」讀作{どくさ}「ごにん」。' },
-            { text: 'いつにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ご」不是訓讀{くんどく}「いつ」。' },
-            { text: 'ごじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}量詞{りょうし}。' },
-            { text: 'こにん', isCorrect: false, reason: '需要{じゅよう}濁音{だくおん}「ご」。' }
+            { text: 'ごにん', isCorrect: true, reason: '正確！「五人{ごにん}」讀作「ごにん」。' },
+            { text: 'いつにん', isCorrect: false, reason: '人數使用音讀「ご」不是訓讀「いつ」。' },
+            { text: 'ごじん', isCorrect: false, reason: '「じん」不用於人數量詞。' },
+            { text: 'こにん', isCorrect: false, reason: '需要濁音「ご」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五人{ごにん}」讀作{どくさ}「ごにん」，使用{しよう}音讀{おんどく}。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '「ご」の讀法{よみかた}']
+            correctRule: '「五人{ごにん}」讀作「ごにん」，使用音讀。',
+            relatedRules: ['人數的音讀規則', '「ご」的讀法']
         },
         sourceItem: { value: 5, kanji: '五人', reading: 'ごにん' }
     },
@@ -318,15 +318,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'チームは＿＿です。',
         stem_zh: '團隊有五個人。',
         options: [
-            { text: 'いつにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ご」。' },
-            { text: 'ごにん', isCorrect: true, reason: '正確{せいかく}！團隊{チーム}有五個人{ごにん}。' },
-            { text: 'ごじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'いつたり', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'いつにん', isCorrect: false, reason: '人數使用音讀「ご」。' },
+            { text: 'ごにん', isCorrect: true, reason: '正確！團隊有五個人。' },
+            { text: 'ごじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'いつたり', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「チームは五人{ごにん}です」表示{ひょうじ}「團隊{チーム}有五個人{ごにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '團隊{チーム}表達{ひょうたつ}']
+            correctRule: '「チームは五人{ごにん}です」表示「團隊有五個人」。',
+            relatedRules: ['人數的讀法', '團隊表達']
         },
         sourceItem: { value: 5, kanji: '五人', reading: 'ごにん' }
     },
@@ -343,15 +343,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿来ます。（五個人）'
         },
         options: [
-            { text: 'いつにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ご」。' },
-            { text: 'ごにん', isCorrect: true, reason: '正確{せいかく}！五個人{ごにん}來{きます}會議{かいぎ}。' },
-            { text: 'ごじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'こにん', isCorrect: false, reason: '需要{じゅよう}濁音{だくおん}「ご」。' }
+            { text: 'いつにん', isCorrect: false, reason: '人數使用音讀「ご」。' },
+            { text: 'ごにん', isCorrect: true, reason: '正確！五個人來會議。' },
+            { text: 'ごじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'こにん', isCorrect: false, reason: '需要濁音「ご」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「五人{ごにん}来{き}ます」表示{ひょうじ}「五個人{ごにん}來」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '會議{かいぎ}出席{しゅっせき}']
+            correctRule: '「五人{ごにん}来ます」表示「五個人來」。',
+            relatedRules: ['人數的讀法', '會議出席']
         },
         sourceItem: { value: 5, kanji: '五人', reading: 'ごにん' }
     },
@@ -363,18 +363,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「七人」的正確讀音是？',
+        stem: '「七人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「七人」的正確讀音是？',
         options: [
-            { text: 'しちにん / ななにん', isCorrect: true, reason: '正確{せいかく}！「七人{しちにん}」可讀作{どくさ}「しちにん」或「ななにん」，兩者{りょうしゃ}都{すべて}正確{せいかく}。' },
-            { text: 'なのにん', isCorrect: false, reason: '「なの」是日期{にっき}七日{なのか}的讀法{よみかた}。' },
-            { text: 'しちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}量詞{りょうし}。' },
-            { text: 'ななたり', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'しちにん / ななにん', isCorrect: true, reason: '正確！「七人{しちにん}」可讀作「しちにん」或「ななにん」，兩者都正確。' },
+            { text: 'なのにん', isCorrect: false, reason: '「なの」是日期七日的讀法。' },
+            { text: 'しちじん', isCorrect: false, reason: '「じん」不用於人數量詞。' },
+            { text: 'ななたり', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七人{しちにん}」可讀作{どくさ}「しちにん」或「ななにん」，兩種{ふたしゅ}讀法{よみかた}都{すべて}正確{せいかく}。',
-            relatedRules: ['七人{しちにん}の雙重{そうじゅう}讀法{よみかた}', '「しち」vs「なな」']
+            correctRule: '「七人{しちにん}」可讀作「しちにん」或「ななにん」，兩種讀法都正確。',
+            relatedRules: ['七人{しちにん}の雙重讀法', '「しち」vs「なな」']
         },
         sourceItem: { value: 7, kanji: '七人', reading: 'しちにん / ななにん' }
     },
@@ -387,15 +387,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '七人の侍は有名な映画です。',
         stem_zh: '《七武士》是著名電影。',
         options: [
-            { text: 'なのにん', isCorrect: false, reason: '「なの」是日期{にっき}讀法{よみかた}。' },
-            { text: 'しちにん', isCorrect: true, reason: '正確{せいかく}！「七人{しちにん}の侍{さむらい}」是黑澤明{くろさわあきら}的著名{ゆうめい}電影{えいが}。' },
-            { text: 'しちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ななたり', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'なのにん', isCorrect: false, reason: '「なの」是日期讀法。' },
+            { text: 'しちにん', isCorrect: true, reason: '正確！「七人{しちにん}の侍」是黑澤明的著名電影。' },
+            { text: 'しちじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ななたり', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「七人{しちにん}の侍{さむらい}」是黑澤明{くろさわあきら}的經典{けいてん}電影{えいが}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '日本{にほん}電影{えいが}']
+            correctRule: '「七人{しちにん}の侍」是黑澤明的經典電影。',
+            relatedRules: ['人數的讀法', '日本電影']
         },
         sourceItem: { value: 7, kanji: '七人', reading: 'しちにん / ななにん' }
     },
@@ -412,15 +412,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（七個人）'
         },
         options: [
-            { text: 'なのにん', isCorrect: false, reason: '「なの」是日期{にっき}讀法{よみかた}。' },
-            { text: 'ななにん', isCorrect: true, reason: '正確{せいかく}！小組{グループ}有七個人{ななにん}。' },
-            { text: 'しちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ななたり', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'なのにん', isCorrect: false, reason: '「なの」是日期讀法。' },
+            { text: 'ななにん', isCorrect: true, reason: '正確！小組有七個人。' },
+            { text: 'しちじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ななたり', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「七人{ななにん}」回答{かいとう}小組{グループ}人數{にんずう}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '團隊{チーム}表達{ひょうたつ}']
+            correctRule: '「七人{ななにん}」回答小組人數。',
+            relatedRules: ['人數的讀法', '團隊表達']
         },
         sourceItem: { value: 7, kanji: '七人', reading: 'しちにん / ななにん' }
     },
@@ -432,18 +432,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「六人」的正確讀音是？',
+        stem: '「六人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「六人」的正確讀音是？',
         options: [
-            { text: 'ろくにん', isCorrect: true, reason: '正確{せいかく}！「六人{ろくにん}」讀作{どくさ}「ろくにん」。' },
-            { text: 'むにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ろく」不是訓讀{くんどく}「む」。' },
-            { text: 'ろくじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}量詞{りょうし}。' },
-            { text: 'ろっにん', isCorrect: false, reason: '六人{ろくにん}不促音化{ふそくおんか}，是「ろくにん」。' }
+            { text: 'ろくにん', isCorrect: true, reason: '正確！「六人{ろくにん}」讀作「ろくにん」。' },
+            { text: 'むにん', isCorrect: false, reason: '人數使用音讀「ろく」不是訓讀「む」。' },
+            { text: 'ろくじん', isCorrect: false, reason: '「じん」不用於人數量詞。' },
+            { text: 'ろっにん', isCorrect: false, reason: '六人{ろくにん}不促音化，是「ろくにん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六人{ろくにん}」讀作{どくさ}「ろくにん」，使用{しよう}音讀{おんどく}。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '「ろく」の讀法{よみかた}']
+            correctRule: '「六人{ろくにん}」讀作「ろくにん」，使用音讀。',
+            relatedRules: ['人數的音讀規則', '「ろく」的讀法']
         },
         sourceItem: { value: 6, kanji: '六人', reading: 'ろくにん' }
     },
@@ -456,15 +456,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '部屋には＿＿泊まれます。',
         stem_zh: '房間可以住六個人。',
         options: [
-            { text: 'むにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ろく」。' },
-            { text: 'ろくにん', isCorrect: true, reason: '正確{せいかく}！房間{へや}可以{できます}住{とまれます}六個人{ろくにん}。' },
-            { text: 'ろくじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ろっにん', isCorrect: false, reason: '六人{ろくにん}不促音化{ふそくおんか}。' }
+            { text: 'むにん', isCorrect: false, reason: '人數使用音讀「ろく」。' },
+            { text: 'ろくにん', isCorrect: true, reason: '正確！房間可以住六個人。' },
+            { text: 'ろくじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ろっにん', isCorrect: false, reason: '六人{ろくにん}不促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「六人{ろくにん}泊{と}まれます」表示{ひょうじ}「可以{できます}住{とまる}六個人{ろくにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '住宿{しゅくはく}表達{ひょうたつ}']
+            correctRule: '「六人{ろくにん}泊まれます」表示「可以住六個人」。',
+            relatedRules: ['人數的讀法', '住宿表達']
         },
         sourceItem: { value: 6, kanji: '六人', reading: 'ろくにん' }
     },
@@ -481,15 +481,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（六個人）'
         },
         options: [
-            { text: 'むにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ろく」。' },
-            { text: 'ろくにん', isCorrect: true, reason: '正確{せいかく}！六個人{ろくにん}一起{いっしょ}烤肉{バーベキュー}。' },
-            { text: 'ろくじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ろったり', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'むにん', isCorrect: false, reason: '人數使用音讀「ろく」。' },
+            { text: 'ろくにん', isCorrect: true, reason: '正確！六個人一起烤肉。' },
+            { text: 'ろくじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ろったり', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「六人{ろくにん}」回答{かいとう}活動{かつどう}人數{にんずう}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '活動{かつどう}計畫{けいかく}']
+            correctRule: '「六人{ろくにん}」回答活動人數。',
+            relatedRules: ['人數的讀法', '活動計畫']
         },
         sourceItem: { value: 6, kanji: '六人', reading: 'ろくにん' }
     },
@@ -501,18 +501,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「八人」的正確讀音是？',
+        stem: '「八人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「八人」的正確讀音是？',
         options: [
-            { text: 'はちにん', isCorrect: true, reason: '正確{せいかく}！「八人{はちにん}」讀作{どくさ}「はちにん」。' },
-            { text: 'やにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「はち」不是訓讀{くんどく}「や」。' },
-            { text: 'はちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}量詞{りょうし}。' },
-            { text: 'はっにん', isCorrect: false, reason: '八人{はちにん}不促音化{ふそくおんか}，是「はちにん」。' }
+            { text: 'はちにん', isCorrect: true, reason: '正確！「八人{はちにん}」讀作「はちにん」。' },
+            { text: 'やにん', isCorrect: false, reason: '人數使用音讀「はち」不是訓讀「や」。' },
+            { text: 'はちじん', isCorrect: false, reason: '「じん」不用於人數量詞。' },
+            { text: 'はっにん', isCorrect: false, reason: '八人{はちにん}不促音化，是「はちにん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「八人{はちにん}」讀作{どくさ}「はちにん」，使用{しよう}音讀{おんどく}。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '「はち」の讀法{よみかた}']
+            correctRule: '「八人{はちにん}」讀作「はちにん」，使用音讀。',
+            relatedRules: ['人數的音讀規則', '「はち」的讀法']
         },
         sourceItem: { value: 8, kanji: '八人', reading: 'はちにん' }
     },
@@ -525,15 +525,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'サッカーチームは＿＿足りません。',
         stem_zh: '足球隊還差八個人。',
         options: [
-            { text: 'やにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「はち」。' },
-            { text: 'はちにん', isCorrect: true, reason: '正確{せいかく}！還差{たりません}八個人{はちにん}。' },
-            { text: 'はちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'はっにん', isCorrect: false, reason: '八人{はちにん}不促音化{ふそくおんか}。' }
+            { text: 'やにん', isCorrect: false, reason: '人數使用音讀「はち」。' },
+            { text: 'はちにん', isCorrect: true, reason: '正確！還差八個人。' },
+            { text: 'はちじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'はっにん', isCorrect: false, reason: '八人{はちにん}不促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八人{はちにん}足{た}りません」表示{ひょうじ}「還差{たりない}八個人{はちにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '不足{ふそく}表達{ひょうたつ}']
+            correctRule: '「八人{はちにん}足りません」表示「還差八個人」。',
+            relatedRules: ['人數的讀法', '不足表達']
         },
         sourceItem: { value: 8, kanji: '八人', reading: 'はちにん' }
     },
@@ -550,15 +550,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿乗れます。（八個人）'
         },
         options: [
-            { text: 'やにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「はち」。' },
-            { text: 'はちにん', isCorrect: true, reason: '正確{せいかく}！車{くるま}可以{できます}坐{のれます}八個人{はちにん}。' },
-            { text: 'はちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'やったり', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'やにん', isCorrect: false, reason: '人數使用音讀「はち」。' },
+            { text: 'はちにん', isCorrect: true, reason: '正確！車可以坐八個人。' },
+            { text: 'はちじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'やったり', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八人{はちにん}乗{の}れます」表示{ひょうじ}「可以{できます}坐{のる}八個人{はちにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '乘車{じょうしゃ}表達{ひょうたつ}']
+            correctRule: '「八人{はちにん}乗れます」表示「可以坐八個人」。',
+            relatedRules: ['人數的讀法', '乘車表達']
         },
         sourceItem: { value: 8, kanji: '八人', reading: 'はちにん' }
     },
@@ -570,18 +570,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「九人」的正確讀音是？',
+        stem: '「九人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「九人」的正確讀音是？',
         options: [
-            { text: 'きゅうにん', isCorrect: true, reason: '正確{せいかく}！「九人{きゅうにん}」讀作{どくさ}「きゅうにん」。' },
-            { text: 'くにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}「きゅう」不是「く」。' },
-            { text: 'きゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}量詞{りょうし}。' },
-            { text: 'ここのにん', isCorrect: false, reason: '「ここの」是訓讀{くんどく}，人數{にんずう}使用{しよう}音讀{おんどく}。' }
+            { text: 'きゅうにん', isCorrect: true, reason: '正確！「九人{きゅうにん}」讀作「きゅうにん」。' },
+            { text: 'くにん', isCorrect: false, reason: '人數使用「きゅう」不是「く」。' },
+            { text: 'きゅうじん', isCorrect: false, reason: '「じん」不用於人數量詞。' },
+            { text: 'ここのにん', isCorrect: false, reason: '「ここの」是訓讀，人數使用音讀。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「九人{きゅうにん}」讀作{どくさ}「きゅうにん」，使用{しよう}音讀{おんどく}。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '「きゅう」の讀法{よみかた}']
+            correctRule: '「九人{きゅうにん}」讀作「きゅうにん」，使用音讀。',
+            relatedRules: ['人數的音讀規則', '「きゅう」的讀法']
         },
         sourceItem: { value: 9, kanji: '九人', reading: 'きゅうにん' }
     },
@@ -594,15 +594,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '野球チームは＿＿必要です。',
         stem_zh: '棒球隊需要九個人。',
         options: [
-            { text: 'くにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}「きゅう」不是「く」。' },
-            { text: 'きゅうにん', isCorrect: true, reason: '正確{せいかく}！棒球隊{やきゅうチーム}需要{ひつよう}九個人{きゅうにん}。' },
-            { text: 'きゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ここのにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「きゅう」。' }
+            { text: 'くにん', isCorrect: false, reason: '人數使用「きゅう」不是「く」。' },
+            { text: 'きゅうにん', isCorrect: true, reason: '正確！棒球隊需要九個人。' },
+            { text: 'きゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ここのにん', isCorrect: false, reason: '人數使用音讀「きゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「九人{きゅうにん}必要{ひつよう}です」表示{ひょうじ}「需要{ひつよう}九個人{きゅうにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '運動{うんどう}團隊{チーム}']
+            correctRule: '「九人{きゅうにん}必要です」表示「需要九個人」。',
+            relatedRules: ['人數的讀法', '運動團隊']
         },
         sourceItem: { value: 9, kanji: '九人', reading: 'きゅうにん' }
     },
@@ -619,15 +619,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿出席しました。（九個人）'
         },
         options: [
-            { text: 'くにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}「きゅう」不是「く」。' },
-            { text: 'きゅうにん', isCorrect: true, reason: '正確{せいかく}！九個人{きゅうにん}出席{しゅっせき}了。' },
-            { text: 'きゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ここのたり', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'くにん', isCorrect: false, reason: '人數使用「きゅう」不是「く」。' },
+            { text: 'きゅうにん', isCorrect: true, reason: '正確！九個人出席了。' },
+            { text: 'きゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ここのたり', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「九人{きゅうにん}出席{しゅっせき}しました」表示{ひょうじ}「九個人{きゅうにん}出席{しゅっせき}了」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '出席{しゅっせき}表達{ひょうたつ}']
+            correctRule: '「九人{きゅうにん}出席しました」表示「九個人出席了」。',
+            relatedRules: ['人數的讀法', '出席表達']
         },
         sourceItem: { value: 9, kanji: '九人', reading: 'きゅうにん' }
     },
@@ -639,18 +639,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十人」的正確讀音是？',
+        stem: '「十人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十人」的正確讀音是？',
         options: [
-            { text: 'じゅうにん', isCorrect: true, reason: '正確{せいかく}！「十人{じゅうにん}」讀作{どくさ}「じゅうにん」。' },
-            { text: 'とおにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「じゅう」不是訓讀{くんどく}「とお」。' },
-            { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}量詞{りょうし}。' },
-            { text: 'じゅっにん', isCorrect: false, reason: '十人{じゅうにん}不促音化{ふそくおんか}，是「じゅうにん」。' }
+            { text: 'じゅうにん', isCorrect: true, reason: '正確！「十人{じゅうにん}」讀作「じゅうにん」。' },
+            { text: 'とおにん', isCorrect: false, reason: '人數使用音讀「じゅう」不是訓讀「とお」。' },
+            { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於人數量詞。' },
+            { text: 'じゅっにん', isCorrect: false, reason: '十人{じゅうにん}不促音化，是「じゅうにん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十人{じゅうにん}」讀作{どくさ}「じゅうにん」，使用{しよう}音讀{おんどく}。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '「じゅう」の讀法{よみかた}']
+            correctRule: '「十人{じゅうにん}」讀作「じゅうにん」，使用音讀。',
+            relatedRules: ['人數的音讀規則', '「じゅう」的讀法']
         },
         sourceItem: { value: 10, kanji: '十人', reading: 'じゅうにん' }
     },
@@ -663,15 +663,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'クラスは＿＿です。',
         stem_zh: '班級有十個人。',
         options: [
-            { text: 'とおにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅうにん', isCorrect: true, reason: '正確{せいかく}！班級{クラス}有十個人{じゅうにん}。' },
-            { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'じゅっにん', isCorrect: false, reason: '十人{じゅうにん}不促音化{ふそくおんか}。' }
+            { text: 'とおにん', isCorrect: false, reason: '人數使用音讀「じゅう」。' },
+            { text: 'じゅうにん', isCorrect: true, reason: '正確！班級有十個人。' },
+            { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'じゅっにん', isCorrect: false, reason: '十人{じゅうにん}不促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「クラスは十人{じゅうにん}です」表示{ひょうじ}「班級{クラス}有十個人{じゅうにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '班級{クラス}表達{ひょうたつ}']
+            correctRule: '「クラスは十人{じゅうにん}です」表示「班級有十個人」。',
+            relatedRules: ['人數的讀法', '班級表達']
         },
         sourceItem: { value: 10, kanji: '十人', reading: 'じゅうにん' }
     },
@@ -688,15 +688,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '約＿＿です。（十個人）'
         },
         options: [
-            { text: 'とおにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅうにん', isCorrect: true, reason: '正確{せいかく}！約{やく}十個人{じゅうにん}參加{さんか}。' },
-            { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'じゅっにん', isCorrect: false, reason: '十人{じゅうにん}不促音化{ふそくおんか}。' }
+            { text: 'とおにん', isCorrect: false, reason: '人數使用音讀「じゅう」。' },
+            { text: 'じゅうにん', isCorrect: true, reason: '正確！約十個人參加。' },
+            { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'じゅっにん', isCorrect: false, reason: '十人{じゅうにん}不促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「約{やく}十人{じゅうにん}」表示{ひょうじ}「約{やく}十個人{じゅうにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '參加{さんか}人數{にんずう}']
+            correctRule: '「約十人{じゅうにん}」表示「約十個人」。',
+            relatedRules: ['人數的讀法', '參加人數']
         },
         sourceItem: { value: 10, kanji: '十人', reading: 'じゅうにん' }
     },
@@ -708,18 +708,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十一人」的正確讀音是？',
+        stem: '「十一人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十一人」的正確讀音是？',
         options: [
-            { text: 'じゅういちにん', isCorrect: true, reason: '正確{せいかく}！「十一人{じゅういちにん}」讀作{どくさ}「じゅういちにん」。' },
-            { text: 'じゅうひとり', isCorrect: false, reason: '11以上{いじょう}全部{ぜんぶ}使用{しよう}音讀{おんどく}「にん」。' },
-            { text: 'といちにん', isCorrect: false, reason: '十使用{しよう}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅういちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' }
+            { text: 'じゅういちにん', isCorrect: true, reason: '正確！「十一人{じゅういちにん}」讀作「じゅういちにん」。' },
+            { text: 'じゅうひとり', isCorrect: false, reason: '11以上全部使用音讀「にん」。' },
+            { text: 'といちにん', isCorrect: false, reason: '十使用音讀「じゅう」。' },
+            { text: 'じゅういちじん', isCorrect: false, reason: '「じん」不用於人數。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十一人{じゅういちにん}」讀作{どくさ}「じゅういちにん」。11人{じゅういちにん}以上{いじょう}全部{ぜんぶ}使用{しよう}音讀{おんどく}。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '十一{じゅういち}以上{いじょう}']
+            correctRule: '「十一人{じゅういちにん}」讀作「じゅういちにん」。十一人以上全部使用音讀。',
+            relatedRules: ['人數的音讀規則', '十一以上']
         },
         sourceItem: { value: 11, kanji: '十一人', reading: 'じゅういちにん' }
     },
@@ -732,15 +732,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'サッカーチームは＿＿で試合をします。',
         stem_zh: '足球隊十一個人比賽。',
         options: [
-            { text: 'じゅうひとり', isCorrect: false, reason: '11以上{いじょう}使用{しよう}音讀{おんどく}。' },
-            { text: 'じゅういちにん', isCorrect: true, reason: '正確{せいかく}！足球隊{サッカーチーム}十一個人{じゅういちにん}比賽{しあい}。' },
-            { text: 'といちにん', isCorrect: false, reason: '十使用{しよう}「じゅう」。' },
-            { text: 'じゅういちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' }
+            { text: 'じゅうひとり', isCorrect: false, reason: '11以上使用音讀。' },
+            { text: 'じゅういちにん', isCorrect: true, reason: '正確！足球隊十一個人比賽。' },
+            { text: 'といちにん', isCorrect: false, reason: '十使用「じゅう」。' },
+            { text: 'じゅういちじん', isCorrect: false, reason: '「じん」不用於人數。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '足球{サッカー}一隊{いちチーム}需要{ひつよう}十一人{じゅういちにん}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '運動{うんどう}團隊{チーム}']
+            correctRule: '足球一隊需要十一人{じゅういちにん}。',
+            relatedRules: ['人數的讀法', '運動團隊']
         },
         sourceItem: { value: 11, kanji: '十一人', reading: 'じゅういちにん' }
     },
@@ -750,18 +750,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十二人」的正確讀音是？',
+        stem: '「十二人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十二人」的正確讀音是？',
         options: [
-            { text: 'じゅうににん', isCorrect: true, reason: '正確{せいかく}！「十二人{じゅうににん}」讀作{どくさ}「じゅうににん」。' },
-            { text: 'じゅうふたり', isCorrect: false, reason: '11以上{いじょう}全部{ぜんぶ}使用{しよう}音讀{おんどく}「にん」。' },
-            { text: 'とにににん', isCorrect: false, reason: '十使用{しよう}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅうにじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' }
+            { text: 'じゅうににん', isCorrect: true, reason: '正確！「十二人{じゅうににん}」讀作「じゅうににん」。' },
+            { text: 'じゅうふたり', isCorrect: false, reason: '11以上全部使用音讀「にん」。' },
+            { text: 'とにににん', isCorrect: false, reason: '十使用音讀「じゅう」。' },
+            { text: 'じゅうにじん', isCorrect: false, reason: '「じん」不用於人數。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十二人{じゅうににん}」讀作{どくさ}「じゅうににん」。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '十二{じゅうに}']
+            correctRule: '「十二人{じゅうににん}」讀作「じゅうににん」。',
+            relatedRules: ['人數的音讀規則', '十二']
         },
         sourceItem: { value: 12, kanji: '十二人', reading: 'じゅうににん' }
     },
@@ -774,15 +774,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '陪審員は＿＿です。',
         stem_zh: '陪審員有十二個人。',
         options: [
-            { text: 'じゅうふたり', isCorrect: false, reason: '11以上{いじょう}使用{しよう}音讀{おんどく}。' },
-            { text: 'じゅうににん', isCorrect: true, reason: '正確{せいかく}！陪審員{ばいしんいん}有十二個人{じゅうににん}。' },
-            { text: 'とににん', isCorrect: false, reason: '十使用{しよう}「じゅう」。' },
-            { text: 'じゅうにじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' }
+            { text: 'じゅうふたり', isCorrect: false, reason: '11以上使用音讀。' },
+            { text: 'じゅうににん', isCorrect: true, reason: '正確！陪審員有十二個人。' },
+            { text: 'とににん', isCorrect: false, reason: '十使用「じゅう」。' },
+            { text: 'じゅうにじん', isCorrect: false, reason: '「じん」不用於人數。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '美國{アメリカ}陪審員{ばいしんいん}通常{つうじょう}十二人{じゅうににん}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '制度{せいど}用語{ようご}']
+            correctRule: '美國陪審員通常十二人{じゅうににん}。',
+            relatedRules: ['人數的讀法', '制度用語']
         },
         sourceItem: { value: 12, kanji: '十二人', reading: 'じゅうににん' }
     },
@@ -792,19 +792,19 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「十四人」的正確讀音是？',
+        stem: '「十四人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十四人」的正確讀音是？',
         options: [
-            { text: 'じゅうよにん', isCorrect: true, reason: '正確{せいかく}！「十四人{じゅうよにん}」讀作{どくさ}「じゅうよにん」，四{よ}使用{しよう}「よ」。' },
-            { text: 'じゅうしにん', isCorrect: false, reason: '陷阱{かんけい}！「しにん」聽起來{きこえ}像「死人{しにん}」，避免{さける}使用{しよう}。' },
-            { text: 'じゅうよんにん', isCorrect: false, reason: '十四人{じゅうよにん}使用{しよう}「よ」不是「よん」。' },
-            { text: 'じゅうよじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' }
+            { text: 'じゅうよにん', isCorrect: true, reason: '正確！「十四人{じゅうよにん}」讀作「じゅうよにん」，四使用「よ」。' },
+            { text: 'じゅうしにん', isCorrect: false, reason: '陷阱！「しにん」聽起來像「死人」，避免使用。' },
+            { text: 'じゅうよんにん', isCorrect: false, reason: '十四人{じゅうよにん}使用「よ」不是「よん」。' },
+            { text: 'じゅうよじん', isCorrect: false, reason: '「じん」不用於人數。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十四人{じゅうよにん}」讀作{どくさ}「じゅうよにん」，與四人{よにん}一樣{いちよう}使用{しよう}「よ」。',
-            trapExplanation: '避免{さける}「しにん」的禁忌{きんき}讀法{よみかた}。',
-            relatedRules: ['四人{よにん}の特殊{とくしゅ}讀法{よみかた}', '避諱{いひき}規則{きそく}']
+            correctRule: '「十四人{じゅうよにん}」讀作「じゅうよにん」，與四人{よにん}一樣使用「よ」。',
+            trapExplanation: '避免「しにん」的禁忌讀法。',
+            relatedRules: ['四人{よにん}的特殊讀法', '避諱規則']
         },
         sourceItem: { value: 14, kanji: '十四人', reading: 'じゅうよにん' }
     },
@@ -817,16 +817,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '参加者は＿＿でした。',
         stem_zh: '參加者有十四個人。',
         options: [
-            { text: 'じゅうしにん', isCorrect: false, reason: '陷阱{かんけい}！避免{さける}「しにん」的禁忌{きんき}。' },
-            { text: 'じゅうよにん', isCorrect: true, reason: '正確{せいかく}！參加者{さんかしゃ}有十四個人{じゅうよにん}。' },
-            { text: 'じゅうよんにん', isCorrect: false, reason: '使用{しよう}「よ」不是「よん」。' },
-            { text: 'じゅうよじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' }
+            { text: 'じゅうしにん', isCorrect: false, reason: '陷阱！避免「しにん」的禁忌。' },
+            { text: 'じゅうよにん', isCorrect: true, reason: '正確！參加者有十四個人。' },
+            { text: 'じゅうよんにん', isCorrect: false, reason: '使用「よ」不是「よん」。' },
+            { text: 'じゅうよじん', isCorrect: false, reason: '「じん」不用於人數。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十四人{じゅうよにん}」與四人{よにん}一樣{いちよう}使用{しよう}「よ」。',
-            trapExplanation: '任何{いかなる}包含{ふくむ}「四{し}」的人數{にんずう}都{すべて}使用{しよう}「よ」避免{さける}「しにん」。',
-            relatedRules: ['四人{よにん}の讀法{よみかた}', '避諱{いひき}規則{きそく}']
+            correctRule: '「十四人{じゅうよにん}」與四人{よにん}一樣使用「よ」。',
+            trapExplanation: '任何包含「四」的人數都使用「よ」避免「しにん」。',
+            relatedRules: ['四人{よにん}的讀法', '避諱規則']
         },
         sourceItem: { value: 14, kanji: '十四人', reading: 'じゅうよにん' }
     },
@@ -836,18 +836,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十五人」的正確讀音是？',
+        stem: '「十五人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十五人」的正確讀音是？',
         options: [
-            { text: 'じゅうごにん', isCorrect: true, reason: '正確{せいかく}！「十五人{じゅうごにん}」讀作{どくさ}「じゅうごにん」。' },
-            { text: 'じゅういつにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ご」不是訓讀{くんどく}「いつ」。' },
-            { text: 'とごにん', isCorrect: false, reason: '十使用{しよう}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅうごじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' }
+            { text: 'じゅうごにん', isCorrect: true, reason: '正確！「十五人{じゅうごにん}」讀作「じゅうごにん」。' },
+            { text: 'じゅういつにん', isCorrect: false, reason: '人數使用音讀「ご」不是訓讀「いつ」。' },
+            { text: 'とごにん', isCorrect: false, reason: '十使用音讀「じゅう」。' },
+            { text: 'じゅうごじん', isCorrect: false, reason: '「じん」不用於人數。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十五人{じゅうごにん}」讀作{どくさ}「じゅうごにん」。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '十五{じゅうご}']
+            correctRule: '「十五人{じゅうごにん}」讀作「じゅうごにん」。',
+            relatedRules: ['人數的音讀規則', '十五']
         },
         sourceItem: { value: 15, kanji: '十五人', reading: 'じゅうごにん' }
     },
@@ -860,15 +860,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'ラグビーチームは＿＿で試合をします。',
         stem_zh: '橄欖球隊十五個人比賽。',
         options: [
-            { text: 'じゅういつにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ご」。' },
-            { text: 'じゅうごにん', isCorrect: true, reason: '正確{せいかく}！橄欖球隊{ラグビーチーム}十五個人{じゅうごにん}比賽{しあい}。' },
-            { text: 'とごにん', isCorrect: false, reason: '十使用{しよう}「じゅう」。' },
-            { text: 'じゅうごじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' }
+            { text: 'じゅういつにん', isCorrect: false, reason: '人數使用音讀「ご」。' },
+            { text: 'じゅうごにん', isCorrect: true, reason: '正確！橄欖球隊十五個人比賽。' },
+            { text: 'とごにん', isCorrect: false, reason: '十使用「じゅう」。' },
+            { text: 'じゅうごじん', isCorrect: false, reason: '「じん」不用於人數。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '橄欖球{ラグビー}一隊{いちチーム}需要{ひつよう}十五人{じゅうごにん}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '運動{うんどう}團隊{チーム}']
+            correctRule: '橄欖球一隊需要十五人{じゅうごにん}。',
+            relatedRules: ['人數的讀法', '運動團隊']
         },
         sourceItem: { value: 15, kanji: '十五人', reading: 'じゅうごにん' }
     },
@@ -880,18 +880,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二十人」的正確讀音是？',
+        stem: '「二十人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二十人」的正確讀音是？',
         options: [
-            { text: 'にじゅうにん', isCorrect: true, reason: '正確{せいかく}！「二十人{にじゅうにん}」讀作{どくさ}「にじゅうにん」。' },
-            { text: 'はたちにん', isCorrect: false, reason: '「はたち」只用於{つかう}年齡{ねんれい}20歲{さい}，不用於{もちいず}人數{にんずう}。' },
-            { text: 'にじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ふたじゅうにん', isCorrect: false, reason: '二十{にじゅう}使用{しよう}音讀{おんどく}「に」。' }
+            { text: 'にじゅうにん', isCorrect: true, reason: '正確！「二十人{にじゅうにん}」讀作「にじゅうにん」。' },
+            { text: 'はたちにん', isCorrect: false, reason: '「はたち」只用於年齡20歲，不用於人數。' },
+            { text: 'にじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ふたじゅうにん', isCorrect: false, reason: '二十使用音讀「に」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二十人{にじゅうにん}」讀作{どくさ}「にじゅうにん」。「はたち」只用於{つかう}年齡{ねんれい}。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '「はたち」vs「にじゅう」']
+            correctRule: '「二十人{にじゅうにん}」讀作「にじゅうにん」。「はたち」只用於年齡。',
+            relatedRules: ['人數的音讀規則', '「はたち」vs「にじゅう」']
         },
         sourceItem: { value: 20, kanji: '二十人', reading: 'にじゅうにん' }
     },
@@ -904,15 +904,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'クラスには＿＿います。',
         stem_zh: '班級有二十個人。',
         options: [
-            { text: 'はたちにん', isCorrect: false, reason: '「はたち」只用於{つかう}年齡{ねんれい}。' },
-            { text: 'にじゅうにん', isCorrect: true, reason: '正確{せいかく}！班級{クラス}有二十個人{にじゅうにん}。' },
-            { text: 'にじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ふたじゅうにん', isCorrect: false, reason: '二十{にじゅう}使用{しよう}音讀{おんどく}。' }
+            { text: 'はたちにん', isCorrect: false, reason: '「はたち」只用於年齡。' },
+            { text: 'にじゅうにん', isCorrect: true, reason: '正確！班級有二十個人。' },
+            { text: 'にじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ふたじゅうにん', isCorrect: false, reason: '二十使用音讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「クラスには二十人{にじゅうにん}います」表示{ひょうじ}「班級{クラス}有二十個人{にじゅうにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '班級{クラス}表達{ひょうたつ}']
+            correctRule: '「クラスには二十人{にじゅうにん}います」表示「班級有二十個人」。',
+            relatedRules: ['人數的讀法', '班級表達']
         },
         sourceItem: { value: 20, kanji: '二十人', reading: 'にじゅうにん' }
     },
@@ -922,19 +922,19 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二十四人」的正確讀音是？',
+        stem: '「二十四人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二十四人」的正確讀音是？',
         options: [
-            { text: 'にじゅうよにん', isCorrect: true, reason: '正確{せいかく}！「二十四人{にじゅうよにん}」使用{しよう}「よ」。' },
-            { text: 'にじゅうしにん', isCorrect: false, reason: '陷阱{かんけい}！避免{さける}「しにん」的禁忌{きんき}。' },
-            { text: 'にじゅうよんにん', isCorrect: false, reason: '使用{しよう}「よ」不是「よん」。' },
-            { text: 'にじゅうよじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' }
+            { text: 'にじゅうよにん', isCorrect: true, reason: '正確！「二十四人{にじゅうよにん}」使用「よ」。' },
+            { text: 'にじゅうしにん', isCorrect: false, reason: '陷阱！避免「しにん」的禁忌。' },
+            { text: 'にじゅうよんにん', isCorrect: false, reason: '使用「よ」不是「よん」。' },
+            { text: 'にじゅうよじん', isCorrect: false, reason: '「じん」不用於人數。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二十四人{にじゅうよにん}」讀作{どくさ}「にじゅうよにん」，包含{ふくむ}「四{し}」的人數{にんずう}都{すべて}使用{しよう}「よ」。',
-            trapExplanation: '任何{いかなる}包含{ふくむ}「四{し}」的數字{すうじ}都{すべて}避免{さける}「し」讀法{よみかた}。',
-            relatedRules: ['四人{よにん}の讀法{よみかた}', '避諱{いひき}規則{きそく}']
+            correctRule: '「二十四人{にじゅうよにん}」讀作「にじゅうよにん」，包含「四」的人數都使用「よ」。',
+            trapExplanation: '任何包含「四」的數字都避免「し」讀法。',
+            relatedRules: ['四人{よにん}的讀法', '避諱規則']
         },
         sourceItem: { value: 24, kanji: '二十四人', reading: 'にじゅうよにん' }
     },
@@ -944,18 +944,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「三十人」的正確讀音是？',
+        stem: '「三十人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三十人」的正確讀音是？',
         options: [
-            { text: 'さんじゅうにん', isCorrect: true, reason: '正確{せいかく}！「三十人{さんじゅうにん}」讀作{どくさ}「さんじゅうにん」。' },
-            { text: 'みそにん', isCorrect: false, reason: '「みそ」是古語{こご}，現代{げんだい}使用{しよう}「さんじゅう」。' },
-            { text: 'さんじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'みじゅうにん', isCorrect: false, reason: '三十{さんじゅう}使用{しよう}音讀{おんどく}「さん」。' }
+            { text: 'さんじゅうにん', isCorrect: true, reason: '正確！「三十人{さんじゅうにん}」讀作「さんじゅうにん」。' },
+            { text: 'みそにん', isCorrect: false, reason: '「みそ」是古語，現代使用「さんじゅう」。' },
+            { text: 'さんじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'みじゅうにん', isCorrect: false, reason: '三十{さんじゅう}使用音讀「さん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三十人{さんじゅうにん}」讀作{どくさ}「さんじゅうにん」。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '三十{さんじゅう}']
+            correctRule: '「三十人{さんじゅうにん}」讀作「さんじゅうにん」。',
+            relatedRules: ['人數的音讀規則', '三十']
         },
         sourceItem: { value: 30, kanji: '三十人', reading: 'さんじゅうにん' }
     },
@@ -968,15 +968,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '会議室には＿＿入れます。',
         stem_zh: '會議室可以容納三十個人。',
         options: [
-            { text: 'みそにん', isCorrect: false, reason: '現代{げんだい}使用{しよう}「さんじゅう」。' },
-            { text: 'さんじゅうにん', isCorrect: true, reason: '正確{せいかく}！會議室{かいぎしつ}可以{できます}容納{いれます}三十個人{さんじゅうにん}。' },
-            { text: 'さんじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'みじゅうにん', isCorrect: false, reason: '三十{さんじゅう}使用{しよう}「さん」。' }
+            { text: 'みそにん', isCorrect: false, reason: '現代使用「さんじゅう」。' },
+            { text: 'さんじゅうにん', isCorrect: true, reason: '正確！會議室可以容納三十個人。' },
+            { text: 'さんじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'みじゅうにん', isCorrect: false, reason: '三十使用「さん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三十人{さんじゅうにん}入{はい}れます」表示{ひょうじ}「可以{できます}容納{いれる}三十個人{さんじゅうにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '容量{ようりょう}表達{ひょうたつ}']
+            correctRule: '「三十人{さんじゅうにん}入れます」表示「可以容納三十個人」。',
+            relatedRules: ['人數的讀法', '容量表達']
         },
         sourceItem: { value: 30, kanji: '三十人', reading: 'さんじゅうにん' }
     },
@@ -986,18 +986,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五十人」的正確讀音是？',
+        stem: '「五十人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五十人」的正確讀音是？',
         options: [
-            { text: 'ごじゅうにん', isCorrect: true, reason: '正確{せいかく}！「五十人{ごじゅうにん}」讀作{どくさ}「ごじゅうにん」。' },
-            { text: 'いそにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ご」。' },
-            { text: 'ごじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'こじゅうにん', isCorrect: false, reason: '五使用{しよう}濁音{だくおん}「ご」。' }
+            { text: 'ごじゅうにん', isCorrect: true, reason: '正確！「五十人{ごじゅうにん}」讀作「ごじゅうにん」。' },
+            { text: 'いそにん', isCorrect: false, reason: '人數使用音讀「ご」。' },
+            { text: 'ごじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'こじゅうにん', isCorrect: false, reason: '五使用濁音「ご」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五十人{ごじゅうにん}」讀作{どくさ}「ごじゅうにん」。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '五十{ごじゅう}']
+            correctRule: '「五十人{ごじゅうにん}」讀作「ごじゅうにん」。',
+            relatedRules: ['人數的音讀規則', '五十']
         },
         sourceItem: { value: 50, kanji: '五十人', reading: 'ごじゅうにん' }
     },
@@ -1014,15 +1014,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '約＿＿です。（五十個人）'
         },
         options: [
-            { text: 'いそにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ご」。' },
-            { text: 'ごじゅうにん', isCorrect: true, reason: '正確{せいかく}！約{やく}五十個人{ごじゅうにん}來{きます}派對{パーティー}。' },
-            { text: 'ごじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'こじゅうにん', isCorrect: false, reason: '五使用{しよう}「ご」。' }
+            { text: 'いそにん', isCorrect: false, reason: '人數使用音讀「ご」。' },
+            { text: 'ごじゅうにん', isCorrect: true, reason: '正確！約五十個人來派對。' },
+            { text: 'ごじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'こじゅうにん', isCorrect: false, reason: '五使用「ご」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「約{やく}五十人{ごじゅうにん}」表示{ひょうじ}「約{やく}五十個人{ごじゅうにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '派對{パーティー}參加者{さんかしゃ}']
+            correctRule: '「約五十人{ごじゅうにん}」表示「約五十個人」。',
+            relatedRules: ['人數的讀法', '派對參加者']
         },
         sourceItem: { value: 50, kanji: '五十人', reading: 'ごじゅうにん' }
     },
@@ -1032,18 +1032,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「百人」的正確讀音是？',
+        stem: '「百人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「百人」的正確讀音是？',
         options: [
-            { text: 'ひゃくにん', isCorrect: true, reason: '正確{せいかく}！「百人{ひゃくにん}」讀作{どくさ}「ひゃくにん」。' },
-            { text: 'ももにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ひゃく」不是訓讀{くんどく}「もも」。' },
-            { text: 'ひゃくじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'びゃくにん', isCorrect: false, reason: '百使用{しよう}「ひゃく」不是濁音{だくおん}。' }
+            { text: 'ひゃくにん', isCorrect: true, reason: '正確！「百人{ひゃくにん}」讀作「ひゃくにん」。' },
+            { text: 'ももにん', isCorrect: false, reason: '人數使用音讀「ひゃく」不是訓讀「もも」。' },
+            { text: 'ひゃくじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'びゃくにん', isCorrect: false, reason: '百使用「ひゃく」不是濁音。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「百人{ひゃくにん}」讀作{どくさ}「ひゃくにん」。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}', '百{ひゃく}の讀法{よみかた}']
+            correctRule: '「百人{ひゃくにん}」讀作「ひゃくにん」。',
+            relatedRules: ['人數的音讀規則', '百的讀法']
         },
         sourceItem: { value: 100, kanji: '百人', reading: 'ひゃくにん' }
     },
@@ -1056,15 +1056,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '百人一首は＿＿の和歌を集めたものです。',
         stem_zh: '百人一首是收集一百個人的和歌。',
         options: [
-            { text: 'ももにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ひゃく」。' },
-            { text: 'ひゃくにん', isCorrect: true, reason: '正確{せいかく}！百人一首{ひゃくにんいっしゅ}是收集{あつめた}一百個人{ひゃくにん}的和歌{わか}。' },
-            { text: 'ひゃくじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'びゃくにん', isCorrect: false, reason: '百使用{しよう}「ひゃく」。' }
+            { text: 'ももにん', isCorrect: false, reason: '人數使用音讀「ひゃく」。' },
+            { text: 'ひゃくにん', isCorrect: true, reason: '正確！百人一首是收集一百個人的和歌。' },
+            { text: 'ひゃくじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'びゃくにん', isCorrect: false, reason: '百使用「ひゃく」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「百人一首{ひゃくにんいっしゅ}」是日本{にほん}傳統{でんとう}紙牌{かるた}遊戲{ゲーム}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '日本{にほん}文化{ぶんか}']
+            correctRule: '「百人一首{ひゃくにんいっしゅ}」是日本傳統紙牌遊戲。',
+            relatedRules: ['人數的讀法', '日本文化']
         },
         sourceItem: { value: 100, kanji: '百人', reading: 'ひゃくにん' }
     },
@@ -1083,15 +1083,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（五位）'
         },
         options: [
-            { text: 'ごめい', isCorrect: false, reason: '雖然{すいぜん}「名{めい}」也可{かのう}用於{もちいる}人數{にんずう}，但答案{こたえ}應{べき}回答{かいとう}「ごにん」。' },
-            { text: 'ごにん', isCorrect: true, reason: '正確{せいかく}！五位{ごにん}客人{きゃくさん}。' },
-            { text: 'いつにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ご」。' },
-            { text: 'ごじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' }
+            { text: 'ごめい', isCorrect: false, reason: '雖然「名」也可用於人數，但答案應回答「ごにん」。' },
+            { text: 'ごにん', isCorrect: true, reason: '正確！五位{ごにん}客人。' },
+            { text: 'いつにん', isCorrect: false, reason: '人數使用音讀「ご」。' },
+            { text: 'ごじん', isCorrect: false, reason: '「じん」不用於人數。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '餐廳{れすとらん}回答{かいとう}人數{にんずう}使用{しよう}「〜人{にん}」。',
-            relatedRules: ['餐廳{れすとらん}用語{ようご}', '「何名様{なんめいさま}」の回答{かいとう}']
+            correctRule: '餐廳回答人數使用「〜人」。',
+            relatedRules: ['餐廳用語', '「何名様」の回答']
         },
         sourceItem: { value: 5, kanji: '五人', reading: 'ごにん' }
     },
@@ -1108,15 +1108,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '私の家族は＿＿です。（三個人）'
         },
         options: [
-            { text: 'みたり', isCorrect: false, reason: '現代{げんだい}使用{しよう}「さんにん」。' },
-            { text: 'さんにん', isCorrect: true, reason: '正確{せいかく}！家庭{かぞく}有三個人{さんにん}。' },
-            { text: 'さんじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'さんめい', isCorrect: false, reason: '家庭{かぞく}人數{にんずう}使用{しよう}「人{にん}」。' }
+            { text: 'みたり', isCorrect: false, reason: '現代使用「さんにん」。' },
+            { text: 'さんにん', isCorrect: true, reason: '正確！家庭有三個人。' },
+            { text: 'さんじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'さんめい', isCorrect: false, reason: '家庭人數使用「人」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「何人家族{なんにんかぞく}」的回答{かいとう}使用{しよう}「〜人{にん}」。',
-            relatedRules: ['家庭{かぞく}表達{ひょうたつ}', '人數{にんずう}の讀法{よみかた}']
+            correctRule: '「何人家族」的回答使用「〜人」。',
+            relatedRules: ['家庭表達', '人數的讀法']
         },
         sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
     },
@@ -1133,15 +1133,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿出席しました。（八個人）'
         },
         options: [
-            { text: 'やにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「はち」。' },
-            { text: 'はちにん', isCorrect: true, reason: '正確{せいかく}！八個人{はちにん}出席{しゅっせき}了會議{かいぎ}。' },
-            { text: 'はちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'はっにん', isCorrect: false, reason: '八人{はちにん}不促音化{ふそくおんか}。' }
+            { text: 'やにん', isCorrect: false, reason: '人數使用音讀「はち」。' },
+            { text: 'はちにん', isCorrect: true, reason: '正確！八個人出席了會議。' },
+            { text: 'はちじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'はっにん', isCorrect: false, reason: '八人{はちにん}不促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八人{はちにん}出席{しゅっせき}しました」表示{ひょうじ}「八個人{はちにん}出席{しゅっせき}了」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '會議{かいぎ}用語{ようご}']
+            correctRule: '「八人{はちにん}出席しました」表示「八個人出席了」。',
+            relatedRules: ['人數的讀法', '會議用語']
         },
         sourceItem: { value: 8, kanji: '八人', reading: 'はちにん' }
     },
@@ -1154,16 +1154,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '友達と＿＿で旅行に行きます。',
         stem_zh: '和朋友四個人去旅行。',
         options: [
-            { text: 'よんにん', isCorrect: false, reason: '陷阱{かんけい}！四人{よにん}使用{しよう}「よ」不是「よん」。' },
-            { text: 'よにん', isCorrect: true, reason: '正確{せいかく}！四個人{よにん}一起{いっしょ}去旅行{りょこう}。' },
-            { text: 'しにん', isCorrect: false, reason: '「しにん」是禁忌{きんき}讀法{よみかた}。' },
-            { text: 'よったり', isCorrect: false, reason: '現代{げんだい}使用{しよう}「よにん」。' }
+            { text: 'よんにん', isCorrect: false, reason: '陷阱！四人{よにん}使用「よ」不是「よん」。' },
+            { text: 'よにん', isCorrect: true, reason: '正確！四個人一起去旅行。' },
+            { text: 'しにん', isCorrect: false, reason: '「しにん」是禁忌讀法。' },
+            { text: 'よったり', isCorrect: false, reason: '現代使用「よにん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「四人{よにん}で旅行{りょこう}に行{い}きます」表示{ひょうじ}「四個人{よにん}去旅行{りょこう}」。',
-            trapExplanation: '四人{よにん}固定{こてい}使用{しよう}「よ」，避免{さける}「し」的禁忌{きんき}。',
-            relatedRules: ['四人{よにん}の讀法{よみかた}', '旅行{りょこう}表達{ひょうたつ}']
+            correctRule: '「四人{よにん}で旅行に行きます」表示「四個人去旅行」。',
+            trapExplanation: '四人{よにん}固定使用「よ」，避免「し」的禁忌。',
+            relatedRules: ['四人{よにん}的讀法', '旅行表達']
         },
         sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
     },
@@ -1176,15 +1176,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'パーティーには＿＿来ました。',
         stem_zh: '派對來了二十個人。',
         options: [
-            { text: 'はたちにん', isCorrect: false, reason: '「はたち」只用於{つかう}年齡{ねんれい}20歲{さい}。' },
-            { text: 'にじゅうにん', isCorrect: true, reason: '正確{せいかく}！派對{パーティー}來了{きました}二十個人{にじゅうにん}。' },
-            { text: 'にじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ふたじゅうにん', isCorrect: false, reason: '二十{にじゅう}使用{しよう}音讀{おんどく}「に」。' }
+            { text: 'はたちにん', isCorrect: false, reason: '「はたち」只用於年齡20歲。' },
+            { text: 'にじゅうにん', isCorrect: true, reason: '正確！派對來了二十個人。' },
+            { text: 'にじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ふたじゅうにん', isCorrect: false, reason: '二十使用音讀「に」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二十人{にじゅうにん}来{き}ました」表示{ひょうじ}「二十個人{にじゅうにん}來了」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '派對{パーティー}表達{ひょうたつ}']
+            correctRule: '「二十人{にじゅうにん}来ました」表示「二十個人來了」。',
+            relatedRules: ['人數的讀法', '派對表達']
         },
         sourceItem: { value: 20, kanji: '二十人', reading: 'にじゅうにん' }
     },
@@ -1199,16 +1199,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '以下哪個選項「都」使用訓讀？',
         stem_zh: '以下哪個選項「都」使用訓讀？',
         options: [
-            { text: '一人、二人', isCorrect: true, reason: '正確{せいかく}！一人{ひとり}（ひとり）和二人{ふたり}（ふたり）都{すべて}使用{しよう}訓讀{くんどく}。' },
-            { text: '一人、三人', isCorrect: false, reason: '三人{さんにん}使用{しよう}音讀{おんどく}「さんにん」。' },
-            { text: '二人、四人', isCorrect: false, reason: '四人{よにん}使用{しよう}音讀{おんどく}「よにん」（雖然{すいぜん}四{よ}是特殊{とくしゅ}讀法{よみかた}）。' },
-            { text: '一人、四人', isCorrect: false, reason: '四人{よにん}使用{しよう}音讀{おんどく}「よにん」。' }
+            { text: '一人、二人', isCorrect: true, reason: '正確！一人{ひとり}（ひとり）和二人{ふたり}（ふたり）都使用訓讀。' },
+            { text: '一人、三人', isCorrect: false, reason: '三人{さんにん}使用音讀「さんにん」。' },
+            { text: '二人、四人', isCorrect: false, reason: '四人{よにん}使用音讀「よにん」（雖然四是特殊讀法）。' },
+            { text: '一人、四人', isCorrect: false, reason: '四人{よにん}使用音讀「よにん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '只有{ただ}一人{ひとり}（ひとり）和二人{ふたり}（ふたり）使用{しよう}完全{かんぜん}訓讀{くんどく}系統{けいとう}。',
-            trapExplanation: '從{から}三人{さんにん}開始{はじめ}切換{きりかえ}為{に}音讀{おんどく}「〜にん」。',
-            relatedRules: ['訓讀{くんどく}vs音讀{おんどく}', '人數{にんずう}の特殊{とくしゅ}規則{きそく}']
+            correctRule: '只有一人{ひとり}（ひとり）和二人{ふたり}（ふたり）使用完全訓讀系統。',
+            trapExplanation: '從三人開始切換為音讀「〜にん」。',
+            relatedRules: ['訓讀vs音讀', '人數的特殊規則']
         },
         sourceItem: { value: 1, kanji: '一人・二人', reading: 'ひとり・ふたり' }
     },
@@ -1221,16 +1221,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '為什麼「四人」不讀作「しにん」？',
         stem_zh: '為什麼「四人」不讀作「しにん」？',
         options: [
-            { text: '因為「しにん」聽起來像「死人」', isCorrect: true, reason: '正確{せいかく}！「しにん」與「死人{しにん}」（屍體{したい}）同音{どうおん}，是禁忌{きんき}。' },
-            { text: '因為「し」是訓讀', isCorrect: false, reason: '「し」是音讀{おんどく}，但因禁忌{きんき}而避免{さける}使用{しよう}。' },
-            { text: '因為文法規則', isCorrect: false, reason: '這是文化{ぶんか}禁忌{きんき}，不是文法{ぶんぽう}規則{きそく}。' },
-            { text: '因為「し」太短', isCorrect: false, reason: '這不是原因{げんいん}。' }
+            { text: '因為「しにん」聽起來像「死人」', isCorrect: true, reason: '正確！「しにん」與「死人」（屍體）同音，是禁忌。' },
+            { text: '因為「し」是訓讀', isCorrect: false, reason: '「し」是音讀，但因禁忌而避免使用。' },
+            { text: '因為文法規則', isCorrect: false, reason: '這是文化禁忌，不是文法規則。' },
+            { text: '因為「し」太短', isCorrect: false, reason: '這不是原因。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「しにん」與「死人{しにん}」（屍體{したい}、死者{ししゃ}）同音{どうおん}，日本人{にほんじん}避諱{いひき}使用{しよう}。',
-            trapExplanation: '這是日本{にほん}文化{ぶんか}中{ちゅう}的避諱{いひき}習慣{しゅうかん}。',
-            relatedRules: ['避諱{いひき}文化{ぶんか}', '四{し}の禁忌{きんき}']
+            correctRule: '「しにん」與「死人」（屍體、死者）同音，日本人避諱使用。',
+            trapExplanation: '這是日本文化中的避諱習慣。',
+            relatedRules: ['避諱文化', '四の禁忌']
         },
         sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
     },
@@ -1243,15 +1243,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '人數量詞從幾人開始使用音讀「〜にん」？',
         stem_zh: '人數量詞從幾人開始使用音讀「〜にん」？',
         options: [
-            { text: '三人から', isCorrect: true, reason: '正確{せいかく}！從{から}三人{さんにん}開始{はじめ}使用{しよう}音讀{おんどく}「〜にん」。' },
-            { text: '一人から', isCorrect: false, reason: '一人{ひとり}使用{しよう}訓讀{くんどく}「ひとり」。' },
-            { text: '二人から', isCorrect: false, reason: '二人{ふたり}使用{しよう}訓讀{くんどく}「ふたり」。' },
-            { text: '四人から', isCorrect: false, reason: '三人{さんにん}已經{すでに}開始{はじめ}使用{しよう}音讀{おんどく}。' }
+            { text: '三人から', isCorrect: true, reason: '正確！從三人{さんにん}開始使用音讀「〜にん」。' },
+            { text: '一人から', isCorrect: false, reason: '一人{ひとり}使用訓讀「ひとり」。' },
+            { text: '二人から', isCorrect: false, reason: '二人{ふたり}使用訓讀「ふたり」。' },
+            { text: '四人から', isCorrect: false, reason: '三人{さんにん}已經開始使用音讀。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '人數{にんずう}量詞{りょうし}：1人{ひとり}（ひとり）、2人{ふたり}（ふたり）使用{しよう}訓讀{くんどく}，從{から}3人{さんにん}開始{はじめ}切換{きりかえ}為{に}音讀{おんどく}「〜にん」。',
-            relatedRules: ['訓讀{くんどく}→音讀{おんどく}の切換點{きりかえてん}', '人數{にんずう}の規則{きそく}']
+            correctRule: '人數量詞：一人{ひとり}（ひとり）、二人{ふたり}（ふたり）使用訓讀，從三人{さんにん}開始切換為音讀「〜にん」。',
+            relatedRules: ['訓讀→音讀の切換點', '人數的規則']
         },
         sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
     },
@@ -1264,15 +1264,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '「七人」有幾種正確讀法？',
         stem_zh: '「七人」有幾種正確讀法？',
         options: [
-            { text: '兩種：しちにん、ななにん', isCorrect: true, reason: '正確{せいかく}！「七人{しちにん}」可讀作{どくさ}「しちにん」或「ななにん」，兩者{りょうしゃ}都{すべて}正確{せいかく}。' },
-            { text: '一種：しちにん', isCorrect: false, reason: '「ななにん」也正確{せいかく}。' },
-            { text: '一種：ななにん', isCorrect: false, reason: '「しちにん」也正確{せいかく}。' },
-            { text: '三種', isCorrect: false, reason: '只有{ただ}兩種{にしゅ}正確{せいかく}讀法{よみかた}。' }
+            { text: '兩種：しちにん、ななにん', isCorrect: true, reason: '正確！「七人{しちにん}」可讀作「しちにん」或「ななにん」，兩者都正確。' },
+            { text: '一種：しちにん', isCorrect: false, reason: '「ななにん」也正確。' },
+            { text: '一種：ななにん', isCorrect: false, reason: '「しちにん」也正確。' },
+            { text: '三種', isCorrect: false, reason: '只有兩種正確讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七人{しちにん}」可讀作{どくさ}「しちにん」或「ななにん」，兩種{にしゅ}讀法{よみかた}在現代{げんだい}日語{にほんご}中{ちゅう}都{すべて}使用{しよう}。',
-            relatedRules: ['七{しち}の雙重{そうじゅう}讀法{よみかた}', '「しち」vs「なな」']
+            correctRule: '「七人{しちにん}」可讀作「しちにん」或「ななにん」，兩種讀法在現代日語中都使用。',
+            relatedRules: ['七{しち}の雙重讀法', '「しち」vs「なな」']
         },
         sourceItem: { value: 7, kanji: '七人', reading: 'しちにん / ななにん' }
     },
@@ -1287,16 +1287,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '「我一個人住」的日文是？',
         stem_zh: '「我一個人住」的日文是？',
         options: [
-            { text: '私はいちにんで住んでいます', isCorrect: false, reason: '陷阱{かんけい}！一人{ひとり}使用{しよう}訓讀{くんどく}「ひとり」。' },
-            { text: '私はひとりで住んでいます', isCorrect: true, reason: '正確{せいかく}！「ひとりで住{す}んでいます」表示{ひょうじ}「一個人{ひとり}住」。' },
-            { text: '私はいちじんで住んでいます', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: '私は一つで住んでいます', isCorrect: false, reason: '「一{ひと}つ」不用於{もちいず}人數{にんずう}。' }
+            { text: '私はいちにんで住んでいます', isCorrect: false, reason: '陷阱！一人{ひとり}使用訓讀「ひとり」。' },
+            { text: '私はひとりで住んでいます', isCorrect: true, reason: '正確！「ひとりで住んでいます」表示「一個人住」。' },
+            { text: '私はいちじんで住んでいます', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: '私は一つで住んでいます', isCorrect: false, reason: '「一つ」不用於人數。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ひとりで住{す}んでいます」是「一個人{ひとり}住」的正確{せいかく}表達{ひょうたつ}。',
-            trapExplanation: '一人{ひとり}固定{こてい}使用{しよう}訓讀{くんどく}「ひとり」。',
-            relatedRules: ['一人{ひとり}の讀法{よみかた}', '居住{きょじゅう}表達{ひょうたつ}']
+            correctRule: '「ひとりで住んでいます」是「一個人住」的正確表達。',
+            trapExplanation: '一人{ひとり}固定使用訓讀「ひとり」。',
+            relatedRules: ['一人{ひとり}的讀法', '居住表達']
         },
         sourceItem: { value: 1, kanji: '一人', reading: 'ひとり' }
     },
@@ -1309,16 +1309,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '「我們兩個人是夫妻」的日文是？',
         stem_zh: '「我們兩個人是夫妻」的日文是？',
         options: [
-            { text: '私たちににんは夫婦です', isCorrect: false, reason: '陷阱{かんけい}！二人{ふたり}使用{しよう}訓讀{くんどく}「ふたり」。' },
-            { text: '私たちふたりは夫婦です', isCorrect: true, reason: '正確{せいかく}！「ふたりは夫婦{ふうふ}です」表示{ひょうじ}「兩個人{ふたり}是夫妻{ふうふ}」。' },
-            { text: '私たちにじんは夫婦です', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: '私たち二つは夫婦です', isCorrect: false, reason: '「二{ふた}つ」不用於{もちいず}人數{にんずう}。' }
+            { text: '私たちににんは夫婦です', isCorrect: false, reason: '陷阱！二人{ふたり}使用訓讀「ふたり」。' },
+            { text: '私たちふたりは夫婦です', isCorrect: true, reason: '正確！「ふたりは夫婦です」表示「兩個人是夫妻」。' },
+            { text: '私たちにじんは夫婦です', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: '私たち二つは夫婦です', isCorrect: false, reason: '「二つ」不用於人數。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ふたりは夫婦{ふうふ}です」是「兩個人{ふたり}是夫妻{ふうふ}」的正確{せいかく}表達{ひょうたつ}。',
-            trapExplanation: '二人{ふたり}固定{こてい}使用{しよう}訓讀{くんどく}「ふたり」。',
-            relatedRules: ['二人{ふたり}の讀法{よみかた}', '夫婦{ふうふ}表達{ひょうたつ}']
+            correctRule: '「ふたりは夫婦です」是「兩個人是夫妻」的正確表達。',
+            trapExplanation: '二人{ふたり}固定使用訓讀「ふたり」。',
+            relatedRules: ['二人{ふたり}的讀法', '夫婦表達']
         },
         sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
     },
@@ -1331,15 +1331,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '「六個人一組」的日文是？',
         stem_zh: '「六個人一組」的日文是？',
         options: [
-            { text: 'むにんひとくみ', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ろく」。' },
-            { text: 'ろくにんひとくみ', isCorrect: true, reason: '正確{せいかく}！「六人{ろくにん}一組{ひとくみ}」表示{ひょうじ}「六個人{ろくにん}一組{ひとくみ}」。' },
-            { text: 'ろくじんひとくみ', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'むったりひとくみ', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'むにんひとくみ', isCorrect: false, reason: '人數使用音讀「ろく」。' },
+            { text: 'ろくにんひとくみ', isCorrect: true, reason: '正確！「六人{ろくにん}一組」表示「六個人一組」。' },
+            { text: 'ろくじんひとくみ', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'むったりひとくみ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「六人{ろくにん}一組{ひとくみ}」是「六個人{ろくにん}一組{ひとくみ}」的正確{せいかく}表達{ひょうたつ}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '分組{ぶんぐみ}表達{ひょうたつ}']
+            correctRule: '「六人{ろくにん}一組」是「六個人一組」的正確表達。',
+            relatedRules: ['人數的讀法', '分組表達']
         },
         sourceItem: { value: 6, kanji: '六人', reading: 'ろくにん' }
     },
@@ -1351,18 +1351,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「何人」的正確讀音是？',
+        stem: '「何人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何人」的正確讀音是？',
         options: [
-            { text: 'なんにん', isCorrect: true, reason: '正確{せいかく}！「何人{なんにん}」讀作{どくさ}「なんにん」，表示{ひょうじ}「幾個人{いくにん}」。' },
-            { text: 'なにじん', isCorrect: false, reason: '「なにじん」是「什麼{なに}人{じん}」（國籍{こくせき}），不是人數{にんずう}。' },
-            { text: 'なにひと', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' },
-            { text: 'いくにん', isCorrect: false, reason: '人數{にんずう}疑問詞{ぎもんし}使用{しよう}「なんにん」。' }
+            { text: 'なんにん', isCorrect: true, reason: '正確！「何人{なんにん}」讀作「なんにん」，表示「幾個人」。' },
+            { text: 'なにじん', isCorrect: false, reason: '「なにじん」是「什麼人{じん}」（國籍），不是人數。' },
+            { text: 'なにひと', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'いくにん', isCorrect: false, reason: '人數疑問詞使用「なんにん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何人{なんにん}」讀作{どくさ}「なんにん」，是詢問{たずねる}人數{にんずう}的疑問詞{ぎもんし}。注意{ちゅうい}「何人{なにじん}」（なにじん）是詢問{たずねる}國籍{こくせき}。',
-            relatedRules: ['「なんにん」vs「なにじん」', '疑問詞{ぎもんし}の使{つか}い分{わ}け']
+            correctRule: '「何人{なんにん}」讀作「なんにん」，是詢問人數的疑問詞。注意「何人{なにじん}」（なにじん）是詢問國籍。',
+            relatedRules: ['「なんにん」vs「なにじん」', '疑問詞の使い分け']
         },
         sourceItem: { value: 0, kanji: '何人', reading: 'なんにん' }
     },
@@ -1379,15 +1379,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '多分十人ぐらいです。'
         },
         options: [
-            { text: 'なにじん', isCorrect: false, reason: '「なにじん」是詢問{たずねる}國籍{こくせき}。' },
-            { text: 'なんにん', isCorrect: true, reason: '正確{せいかく}！「何人{なんにん}」詢問{たずねる}人數{にんずう}。' },
-            { text: 'いくにん', isCorrect: false, reason: '人數{にんずう}疑問詞{ぎもんし}使用{しよう}「なんにん」。' },
-            { text: 'どのにん', isCorrect: false, reason: '這不是正確{せいかく}疑問詞{ぎもんし}。' }
+            { text: 'なにじん', isCorrect: false, reason: '「なにじん」是詢問國籍。' },
+            { text: 'なんにん', isCorrect: true, reason: '正確！「何人{なんにん}」詢問人數。' },
+            { text: 'いくにん', isCorrect: false, reason: '人數疑問詞使用「なんにん」。' },
+            { text: 'どのにん', isCorrect: false, reason: '這不是正確疑問詞。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「何人{なんにん}来{き}ますか」詢問{たずねる}「幾個人{いくにん}來」。',
-            relatedRules: ['人數{にんずう}の疑問詞{ぎもんし}', '「なんにん」の使用{しよう}']
+            correctRule: '「何人{なんにん}来ますか」詢問「幾個人來」。',
+            relatedRules: ['人數の疑問詞', '「なんにん」的使用']
         },
         sourceItem: { value: 0, kanji: '何人', reading: 'なんにん' }
     },
@@ -1402,16 +1402,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '以下哪個句子有錯誤？',
         stem_zh: '以下哪個句子有錯誤？',
         options: [
-            { text: '私はひとりで行きます', isCorrect: false, reason: '這是正確{せいかく}的，「ひとり」是一人{ひとり}的訓讀{くんどく}。' },
-            { text: '私たちはふたりです', isCorrect: false, reason: '這是正確{せいかく}的，「ふたり」是二人{ふたり}的訓讀{くんどく}。' },
-            { text: '私たちはしにんです', isCorrect: true, reason: '錯誤{ごさ}！「しにん」是禁忌{きんき}讀法{よみかた}，應{べき}該{べき}使用{しよう}「よにん」。' },
-            { text: '私たちはさんにんです', isCorrect: false, reason: '這是正確{せいかく}的，「さんにん」是三人{さんにん}的音讀{おんどく}。' }
+            { text: '私はひとりで行きます', isCorrect: false, reason: '這是正確的，「ひとり」是一人{ひとり}的訓讀。' },
+            { text: '私たちはふたりです', isCorrect: false, reason: '這是正確的，「ふたり」是二人{ふたり}的訓讀。' },
+            { text: '私たちはしにんです', isCorrect: true, reason: '錯誤！「しにん」是禁忌讀法，應該使用「よにん」。' },
+            { text: '私たちはさんにんです', isCorrect: false, reason: '這是正確的，「さんにん」是三人{さんにん}的音讀。' }
         ],
         correctIndex: 2,
         explanation: {
-            correctRule: '「しにん」是錯誤{ごさ}的讀法{よみかた}，因為{なぜなら}與「死人{しにん}」同音{どうおん}。四人{よにん}應{べき}讀作{どくさ}「よにん」。',
-            trapExplanation: '這是陷阱題{かんけいだい}，測試{テスト}對「四{し}」禁忌{きんき}的理解{りかい}。',
-            relatedRules: ['四人{よにん}の禁忌{きんき}', '避諱{いひき}規則{きそく}']
+            correctRule: '「しにん」是錯誤的讀法，因為與「死人」同音。四人{よにん}應讀作「よにん」。',
+            trapExplanation: '這是陷阱題，測試對「四{し}」禁忌的理解。',
+            relatedRules: ['四人{よにん}の禁忌', '避諱規則']
         },
         sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
     },
@@ -1424,16 +1424,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '以下哪個句子有錯誤？',
         stem_zh: '以下哪個句子有錯誤？',
         options: [
-            { text: '三人で話し合いました', isCorrect: false, reason: '這是正確{せいかく}的。' },
-            { text: '五人で旅行しました', isCorrect: false, reason: '這是正確{せいかく}的。' },
-            { text: 'ににんで行きました', isCorrect: true, reason: '錯誤{ごさ}！二人{ふたり}應{べき}該{べき}使用{しよう}訓讀{くんどく}「ふたり」，不是音讀{おんどく}「ににん」。' },
-            { text: '十人で会議をしました', isCorrect: false, reason: '這是正確{せいかく}的。' }
+            { text: '三人で話し合いました', isCorrect: false, reason: '這是正確的。' },
+            { text: '五人で旅行しました', isCorrect: false, reason: '這是正確的。' },
+            { text: 'ににんで行きました', isCorrect: true, reason: '錯誤！二人{ふたり}應該使用訓讀「ふたり」，不是音讀「ににん」。' },
+            { text: '十人で会議をしました', isCorrect: false, reason: '這是正確的。' }
         ],
         correctIndex: 2,
         explanation: {
-            correctRule: '二人{ふたり}固定{こてい}使用{しよう}訓讀{くんどく}「ふたり」，不能{ふのう}使用{しよう}音讀{おんどく}「ににん」。',
-            trapExplanation: '一人{ひとり}和二人{ふたり}是特殊{とくしゅ}訓讀{くんどく}，需要{じゅよう}特別{とくべつ}記憶{きおく}。',
-            relatedRules: ['二人{ふたり}の訓讀{くんどく}', '特殊{とくしゅ}讀法{よみかた}']
+            correctRule: '二人{ふたり}固定使用訓讀「ふたり」，不能使用音讀「ににん」。',
+            trapExplanation: '一人{ひとり}和二人{ふたり}是特殊訓讀，需要特別記憶。',
+            relatedRules: ['二人{ふたり}的訓讀', '特殊讀法']
         },
         sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
     },
@@ -1445,18 +1445,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十六人」的正確讀音是？',
+        stem: '「十六人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十六人」的正確讀音是？',
         options: [
-            { text: 'じゅうろくにん', isCorrect: true, reason: '正確{せいかく}！「十六人{じゅうろくにん}」讀作{どくさ}「じゅうろくにん」。' },
-            { text: 'じゅうむにん', isCorrect: false, reason: '十六{じゅうろく}使用{しよう}音讀{おんどく}「ろく」。' },
-            { text: 'じゅうろくじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'とろくにん', isCorrect: false, reason: '十使用{しよう}「じゅう」。' }
+            { text: 'じゅうろくにん', isCorrect: true, reason: '正確！「十六人{じゅうろくにん}」讀作「じゅうろくにん」。' },
+            { text: 'じゅうむにん', isCorrect: false, reason: '十六{じゅうろく}使用音讀「ろく」。' },
+            { text: 'じゅうろくじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'とろくにん', isCorrect: false, reason: '十使用「じゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十六人{じゅうろくにん}」讀作{どくさ}「じゅうろくにん」。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}']
+            correctRule: '「十六人{じゅうろくにん}」讀作「じゅうろくにん」。',
+            relatedRules: ['人數的音讀規則']
         },
         sourceItem: { value: 16, kanji: '十六人', reading: 'じゅうろくにん' }
     },
@@ -1466,18 +1466,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十七人」的正確讀音是？',
+        stem: '「十七人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十七人」的正確讀音是？',
         options: [
-            { text: 'じゅうしちにん / じゅうななにん', isCorrect: true, reason: '正確{せいかく}！兩種{にしゅ}讀法{よみかた}都{すべて}可以{できます}。' },
-            { text: 'じゅうなのにん', isCorrect: false, reason: '「なの」是日期{にっき}讀法{よみかた}。' },
-            { text: 'じゅうしちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'とななにん', isCorrect: false, reason: '十使用{しよう}「じゅう」。' }
+            { text: 'じゅうしちにん / じゅうななにん', isCorrect: true, reason: '正確！兩種讀法都可以。' },
+            { text: 'じゅうなのにん', isCorrect: false, reason: '「なの」是日期讀法。' },
+            { text: 'じゅうしちじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'とななにん', isCorrect: false, reason: '十使用「じゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十七人{じゅうしちにん}」可讀作{どくさ}「じゅうしちにん」或「じゅうななにん」。',
-            relatedRules: ['七{しち}の雙重{そうじゅう}讀法{よみかた}']
+            correctRule: '「十七人{じゅうしちにん}」可讀作「じゅうしちにん」或「じゅうななにん」。',
+            relatedRules: ['七{しち}の雙重讀法']
         },
         sourceItem: { value: 17, kanji: '十七人', reading: 'じゅうしちにん' }
     },
@@ -1487,18 +1487,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十八人」的正確讀音是？',
+        stem: '「十八人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十八人」的正確讀音是？',
         options: [
-            { text: 'じゅうはちにん', isCorrect: true, reason: '正確{せいかく}！「十八人{じゅうはちにん}」讀作{どくさ}「じゅうはちにん」。' },
-            { text: 'じゅうやにん', isCorrect: false, reason: '十八{じゅうはち}使用{しよう}音讀{おんどく}「はち」。' },
-            { text: 'じゅうはちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'じゅうはっにん', isCorrect: false, reason: '十八人{じゅうはちにん}不促音化{ふそくおんか}。' }
+            { text: 'じゅうはちにん', isCorrect: true, reason: '正確！「十八人{じゅうはちにん}」讀作「じゅうはちにん」。' },
+            { text: 'じゅうやにん', isCorrect: false, reason: '十八{じゅうはち}使用音讀「はち」。' },
+            { text: 'じゅうはちじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'じゅうはっにん', isCorrect: false, reason: '十八人{じゅうはちにん}不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十八人{じゅうはちにん}」讀作{どくさ}「じゅうはちにん」。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}']
+            correctRule: '「十八人{じゅうはちにん}」讀作「じゅうはちにん」。',
+            relatedRules: ['人數的音讀規則']
         },
         sourceItem: { value: 18, kanji: '十八人', reading: 'じゅうはちにん' }
     },
@@ -1508,18 +1508,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十九人」的正確讀音是？',
+        stem: '「十九人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十九人」的正確讀音是？',
         options: [
-            { text: 'じゅうきゅうにん', isCorrect: true, reason: '正確{せいかく}！「十九人{じゅうきゅうにん}」讀作{どくさ}「じゅうきゅうにん」。' },
-            { text: 'じゅうくにん', isCorrect: false, reason: '十九{じゅうきゅう}使用{しよう}「きゅう」不是「く」。' },
-            { text: 'じゅうきゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'とくにん', isCorrect: false, reason: '十使用{しよう}「じゅう」。' }
+            { text: 'じゅうきゅうにん', isCorrect: true, reason: '正確！「十九人{じゅうきゅうにん}」讀作「じゅうきゅうにん」。' },
+            { text: 'じゅうくにん', isCorrect: false, reason: '十九{じゅうきゅう}使用「きゅう」不是「く」。' },
+            { text: 'じゅうきゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'とくにん', isCorrect: false, reason: '十使用「じゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十九人{じゅうきゅうにん}」讀作{どくさ}「じゅうきゅうにん」。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}']
+            correctRule: '「十九人{じゅうきゅうにん}」讀作「じゅうきゅうにん」。',
+            relatedRules: ['人數的音讀規則']
         },
         sourceItem: { value: 19, kanji: '十九人', reading: 'じゅうきゅうにん' }
     },
@@ -1531,19 +1531,19 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「四十人」的正確讀音是？',
+        stem: '「四十人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「四十人」的正確讀音是？',
         options: [
-            { text: 'よんじゅうにん', isCorrect: true, reason: '正確{せいかく}！「四十人{よんじゅうにん}」讀作{どくさ}「よんじゅうにん」。' },
-            { text: 'しじゅうにん', isCorrect: false, reason: '陷阱{かんけい}！「しじゅう」聽起來{きこえ}像「始終{しじゅう}」，使用{しよう}「よんじゅう」。' },
-            { text: 'よじゅうにん', isCorrect: false, reason: '四十{よんじゅう}使用{しよう}「よん」不是「よ」。' },
-            { text: 'よんじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' }
+            { text: 'よんじゅうにん', isCorrect: true, reason: '正確！「四十人{よんじゅうにん}」讀作「よんじゅうにん」。' },
+            { text: 'しじゅうにん', isCorrect: false, reason: '陷阱！「しじゅう」聽起來像「始終」，使用「よんじゅう」。' },
+            { text: 'よじゅうにん', isCorrect: false, reason: '四十{よんじゅう}使用「よん」不是「よ」。' },
+            { text: 'よんじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四十人{よんじゅうにん}」讀作{どくさ}「よんじゅうにん」，四十{よんじゅう}使用{しよう}「よん」。',
-            trapExplanation: '四十{よんじゅう}通常{つうじょう}使用{しよう}「よんじゅう」避免{さける}與「始終{しじゅう}」混淆{こんどう}。',
-            relatedRules: ['四十{よんじゅう}の讀法{よみかた}']
+            correctRule: '「四十人{よんじゅうにん}」讀作「よんじゅうにん」，四十{よんじゅう}使用「よん」。',
+            trapExplanation: '四十{よんじゅう}通常使用「よんじゅう」避免與「始終」混淆。',
+            relatedRules: ['四十{よんじゅう}的讀法']
         },
         sourceItem: { value: 40, kanji: '四十人', reading: 'よんじゅうにん' }
     },
@@ -1553,18 +1553,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「六十人」的正確讀音是？',
+        stem: '「六十人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「六十人」的正確讀音是？',
         options: [
-            { text: 'ろくじゅうにん', isCorrect: true, reason: '正確{せいかく}！「六十人{ろくじゅうにん}」讀作{どくさ}「ろくじゅうにん」。' },
-            { text: 'むじゅうにん', isCorrect: false, reason: '六十{ろくじゅう}使用{しよう}音讀{おんどく}「ろく」。' },
-            { text: 'ろくじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ろっじゅうにん', isCorrect: false, reason: '六十{ろくじゅう}不促音化{ふそくおんか}。' }
+            { text: 'ろくじゅうにん', isCorrect: true, reason: '正確！「六十人{ろくじゅうにん}」讀作「ろくじゅうにん」。' },
+            { text: 'むじゅうにん', isCorrect: false, reason: '六十{ろくじゅう}使用音讀「ろく」。' },
+            { text: 'ろくじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ろっじゅうにん', isCorrect: false, reason: '六十{ろくじゅう}不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六十人{ろくじゅうにん}」讀作{どくさ}「ろくじゅうにん」。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}']
+            correctRule: '「六十人{ろくじゅうにん}」讀作「ろくじゅうにん」。',
+            relatedRules: ['人數的音讀規則']
         },
         sourceItem: { value: 60, kanji: '六十人', reading: 'ろくじゅうにん' }
     },
@@ -1574,18 +1574,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「七十人」的正確讀音是？',
+        stem: '「七十人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「七十人」的正確讀音是？',
         options: [
-            { text: 'しちじゅうにん / ななじゅうにん', isCorrect: true, reason: '正確{せいかく}！兩種{にしゅ}讀法{よみかた}都{すべて}可以{できます}。' },
-            { text: 'なのじゅうにん', isCorrect: false, reason: '「なの」是日期{にっき}讀法{よみかた}。' },
-            { text: 'しちじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ななじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' }
+            { text: 'しちじゅうにん / ななじゅうにん', isCorrect: true, reason: '正確！兩種讀法都可以。' },
+            { text: 'なのじゅうにん', isCorrect: false, reason: '「なの」是日期讀法。' },
+            { text: 'しちじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ななじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七十人{しちじゅうにん}」可讀作{どくさ}「しちじゅうにん」或「ななじゅうにん」。',
-            relatedRules: ['七{しち}の雙重{そうじゅう}讀法{よみかた}']
+            correctRule: '「七十人{しちじゅうにん}」可讀作「しちじゅうにん」或「ななじゅうにん」。',
+            relatedRules: ['七{しち}の雙重讀法']
         },
         sourceItem: { value: 70, kanji: '七十人', reading: 'しちじゅうにん' }
     },
@@ -1595,18 +1595,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「八十人」的正確讀音是？',
+        stem: '「八十人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「八十人」的正確讀音是？',
         options: [
-            { text: 'はちじゅうにん', isCorrect: true, reason: '正確{せいかく}！「八十人{はちじゅうにん}」讀作{どくさ}「はちじゅうにん」。' },
-            { text: 'やじゅうにん', isCorrect: false, reason: '八十{はちじゅう}使用{しよう}音讀{おんどく}「はち」。' },
-            { text: 'はちじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'はっじゅうにん', isCorrect: false, reason: '八十{はちじゅう}不促音化{ふそくおんか}。' }
+            { text: 'はちじゅうにん', isCorrect: true, reason: '正確！「八十人{はちじゅうにん}」讀作「はちじゅうにん」。' },
+            { text: 'やじゅうにん', isCorrect: false, reason: '八十{はちじゅう}使用音讀「はち」。' },
+            { text: 'はちじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'はっじゅうにん', isCorrect: false, reason: '八十{はちじゅう}不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「八十人{はちじゅうにん}」讀作{どくさ}「はちじゅうにん」。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}']
+            correctRule: '「八十人{はちじゅうにん}」讀作「はちじゅうにん」。',
+            relatedRules: ['人數的音讀規則']
         },
         sourceItem: { value: 80, kanji: '八十人', reading: 'はちじゅうにん' }
     },
@@ -1616,18 +1616,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「九十人」的正確讀音是？',
+        stem: '「九十人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「九十人」的正確讀音是？',
         options: [
-            { text: 'きゅうじゅうにん', isCorrect: true, reason: '正確{せいかく}！「九十人{きゅうじゅうにん}」讀作{どくさ}「きゅうじゅうにん」。' },
-            { text: 'くじゅうにん', isCorrect: false, reason: '九十{きゅうじゅう}使用{しよう}「きゅう」不是「く」。' },
-            { text: 'きゅうじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ここのじゅうにん', isCorrect: false, reason: '九十{きゅうじゅう}使用{しよう}音讀{おんどく}。' }
+            { text: 'きゅうじゅうにん', isCorrect: true, reason: '正確！「九十人{きゅうじゅうにん}」讀作「きゅうじゅうにん」。' },
+            { text: 'くじゅうにん', isCorrect: false, reason: '九十{きゅうじゅう}使用「きゅう」不是「く」。' },
+            { text: 'きゅうじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ここのじゅうにん', isCorrect: false, reason: '九十{きゅうじゅう}使用音讀。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「九十人{きゅうじゅうにん}」讀作{どくさ}「きゅうじゅうにん」。',
-            relatedRules: ['人數{にんずう}の音讀{おんどく}規則{きそく}']
+            correctRule: '「九十人{きゅうじゅうにん}」讀作「きゅうじゅうにん」。',
+            relatedRules: ['人數的音讀規則']
         },
         sourceItem: { value: 90, kanji: '九十人', reading: 'きゅうじゅうにん' }
     },
@@ -1642,15 +1642,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'このクラスには＿＿の学生がいます。',
         stem_zh: '這個班級有二十五個學生。',
         options: [
-            { text: 'にじゅうごじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'にじゅうごにん', isCorrect: true, reason: '正確{せいかく}！班級{クラス}有二十五個{にじゅうごにん}學生{がくせい}。' },
-            { text: 'はたちごにん', isCorrect: false, reason: '「はたち」只用於{つかう}年齡{ねんれい}。' },
-            { text: 'ふたじゅうごにん', isCorrect: false, reason: '二十{にじゅう}使用{しよう}音讀{おんどく}。' }
+            { text: 'にじゅうごじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'にじゅうごにん', isCorrect: true, reason: '正確！班級有二十五個{にじゅうごにん}學生。' },
+            { text: 'はたちごにん', isCorrect: false, reason: '「はたち」只用於年齡。' },
+            { text: 'ふたじゅうごにん', isCorrect: false, reason: '二十{にじゅう}使用音讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二十五人{にじゅうごにん}の学生{がくせい}」表示{ひょうじ}「二十五個{にじゅうごにん}學生{がくせい}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '教室{きょうしつ}用語{ようご}']
+            correctRule: '「二十五人{にじゅうごにん}の学生{がくせい}」表示「二十五個{にじゅうごにん}學生」。',
+            relatedRules: ['人數的讀法', '教室用語']
         },
         sourceItem: { value: 25, kanji: '二十五人', reading: 'にじゅうごにん' }
     },
@@ -1663,15 +1663,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'このエレベーターは＿＿まで乗れます。',
         stem_zh: '這部電梯最多可以搭十個人。',
         options: [
-            { text: 'とおにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅうにん', isCorrect: true, reason: '正確{せいかく}！電梯{エレベーター}最多{さいたか}可以{できます}搭{のれます}十個人{じゅうにん}。' },
-            { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'じゅっにん', isCorrect: false, reason: '十人{じゅうにん}不促音化{ふそくおんか}。' }
+            { text: 'とおにん', isCorrect: false, reason: '人數使用音讀「じゅう」。' },
+            { text: 'じゅうにん', isCorrect: true, reason: '正確！電梯{エレベーター}最多可以搭{のれます}十個人。' },
+            { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'じゅっにん', isCorrect: false, reason: '十人{じゅうにん}不促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十人{じゅうにん}まで乗{の}れます」表示{ひょうじ}「最多{さいたか}可以{できます}搭{のる}十個人{じゅうにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '電梯{エレベーター}標示{ひょうじ}']
+            correctRule: '「十人{じゅうにん}まで乗{の}れます」表示「最多可以搭{のる}十個人」。',
+            relatedRules: ['人數的讀法', '電梯{エレベーター}標示']
         },
         sourceItem: { value: 10, kanji: '十人', reading: 'じゅうにん' }
     },
@@ -1684,15 +1684,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '列に＿＿並んでいます。',
         stem_zh: '排隊排了十五個人。',
         options: [
-            { text: 'じゅういつにん', isCorrect: false, reason: '十五{じゅうご}使用{しよう}音讀{おんどく}「ご」。' },
-            { text: 'じゅうごにん', isCorrect: true, reason: '正確{せいかく}！十五個人{じゅうごにん}在排隊{ならぶ}。' },
-            { text: 'じゅうごじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'とごにん', isCorrect: false, reason: '十使用{しよう}「じゅう」。' }
+            { text: 'じゅういつにん', isCorrect: false, reason: '十五{じゅうご}使用音讀「ご」。' },
+            { text: 'じゅうごにん', isCorrect: true, reason: '正確！十五個人在排隊。' },
+            { text: 'じゅうごじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'とごにん', isCorrect: false, reason: '十使用「じゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十五人{じゅうごにん}並{なら}んでいます」表示{ひょうじ}「十五個人{じゅうごにん}在排隊{ならぶ}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '排隊{ならぶ}表達{ひょうたつ}']
+            correctRule: '「十五人{じゅうごにん}並{なら}んでいます」表示「十五個人在排隊」。',
+            relatedRules: ['人數的讀法', '排隊表達']
         },
         sourceItem: { value: 15, kanji: '十五人', reading: 'じゅうごにん' }
     },
@@ -1705,15 +1705,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'この会社には＿＿の社員がいます。',
         stem_zh: '這家公司有五百個員工。',
         options: [
-            { text: 'ごひゃくじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ごひゃくにん', isCorrect: true, reason: '正確{せいかく}！公司{かいしゃ}有五百個{ごひゃくにん}員工{しゃいん}。' },
-            { text: 'いつひゃくにん', isCorrect: false, reason: '五百{ごひゃく}使用{しよう}音讀{おんどく}「ご」。' },
-            { text: 'ごびゃくにん', isCorrect: false, reason: '五百{ごひゃく}不濁音化{ふだくおんか}。' }
+            { text: 'ごひゃくじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ごひゃくにん', isCorrect: true, reason: '正確！公司有五百個{ごひゃくにん}員工。' },
+            { text: 'いつひゃくにん', isCorrect: false, reason: '五百{ごひゃく}使用音讀「ご」。' },
+            { text: 'ごびゃくにん', isCorrect: false, reason: '五百{ごひゃく}不濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「五百人{ごひゃくにん}の社員{しゃいん}」表示{ひょうじ}「五百個{ごひゃくにん}員工{しゃいん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '公司{かいしゃ}用語{ようご}']
+            correctRule: '「五百人{ごひゃくにん}の社員{しゃいん}」表示「五百個{ごひゃくにん}員工」。',
+            relatedRules: ['人數的讀法', '公司用語']
         },
         sourceItem: { value: 500, kanji: '五百人', reading: 'ごひゃくにん' }
     },
@@ -1726,15 +1726,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'コンサートには約＿＿来ました。',
         stem_zh: '演唱會來了大約一千個人。',
         options: [
-            { text: 'いっせんじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'せんにん', isCorrect: true, reason: '正確{せいかく}！演唱會{コンサート}來了{きました}約{やく}一千個人{せんにん}。' },
-            { text: 'ちにん', isCorrect: false, reason: '千使用{しよう}音讀{おんどく}「せん」。' },
-            { text: 'いっせんにん', isCorrect: false, reason: '一千{せん}在人數{にんずう}前{まえ}通常{つうじょう}省略{しょうりゃく}「いっ」。' }
+            { text: 'いっせんじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'せんにん', isCorrect: true, reason: '正確！演唱會來了約一千個人。' },
+            { text: 'ちにん', isCorrect: false, reason: '千使用音讀「せん」。' },
+            { text: 'いっせんにん', isCorrect: false, reason: '一千在人數前通常省略「いっ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「千人{せんにん}」或「一千人{いっせんにん}」表示{ひょうじ}「一千個人{せんにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '大型{おおがた}活動{かつどう}']
+            correctRule: '「千人{せんにん}」或「一千人{いっせんにん}」表示「一千個人」。',
+            relatedRules: ['人數的讀法', '大型活動']
         },
         sourceItem: { value: 1000, kanji: '千人', reading: 'せんにん' }
     },
@@ -1753,15 +1753,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '大人＿＿、子供＿＿です。（兩個大人、三個小孩）'
         },
         options: [
-            { text: 'ににん、みたり', isCorrect: false, reason: '二人{ふたり}使用{しよう}訓讀{くんどく}、三人{さんにん}使用{しよう}音讀{おんどく}。' },
-            { text: 'ふたり、さんにん', isCorrect: true, reason: '正確{せいかく}！兩個{ふたり}大人{おとな}、三個{さんにん}小孩{こども}。' },
-            { text: 'にめい、さんめい', isCorrect: false, reason: '雖然{すいぜん}「名{めい}」也可{かのう}用，但答案{こたえ}應{べき}用「人{にん}」。' },
-            { text: 'ふたり、みにん', isCorrect: false, reason: '三人{さんにん}使用{しよう}音讀{おんどく}「さんにん」。' }
+            { text: 'ににん、みたり', isCorrect: false, reason: '二人{ふたり}使用訓讀、三人{さんにん}使用音讀。' },
+            { text: 'ふたり、さんにん', isCorrect: true, reason: '正確！兩個大人、三個小孩。' },
+            { text: 'にめい、さんめい', isCorrect: false, reason: '雖然「名{めい}」也可用，但答案{こたえ}應用「人{にん}」。' },
+            { text: 'ふたり、みにん', isCorrect: false, reason: '三人{さんにん}使用音讀「さんにん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「大人{おとな}二人{ふたり}、子供{こども}三人{さんにん}」是飯店{ホテル}預約{よやく}的常用{じょうよう}表達{ひょうたつ}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '飯店{ホテル}用語{ようご}']
+            correctRule: '「大人{おとな}二人{ふたり}、子供{こども}三人{さんにん}」是飯店預約的常用表達。',
+            relatedRules: ['人數的讀法', '飯店用語']
         },
         sourceItem: { value: 2, kanji: '二人・三人', reading: 'ふたり・さんにん' }
     },
@@ -1778,15 +1778,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿の予定です。（七個人）'
         },
         options: [
-            { text: 'なのにん', isCorrect: false, reason: '「なの」是日期{にっき}讀法{よみかた}。' },
-            { text: 'しちにん / ななにん', isCorrect: true, reason: '正確{せいかく}！七個人{しちにん}面試{めんせつ}。' },
-            { text: 'しちじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ななたり', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'なのにん', isCorrect: false, reason: '「なの」是日期讀法。' },
+            { text: 'しちにん / ななにん', isCorrect: true, reason: '正確！七個人面試。' },
+            { text: 'しちじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ななたり', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「七人{しちにん}の予定{よてい}です」表示{ひょうじ}「預計{よてい}七個人{しちにん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '面試{めんせつ}用語{ようご}']
+            correctRule: '「七人{しちにん}の予定{よてい}です」表示「預計七個人」。',
+            relatedRules: ['人數的讀法', '面試用語']
         },
         sourceItem: { value: 7, kanji: '七人', reading: 'しちにん' }
     },
@@ -1803,15 +1803,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（五個人）'
         },
         options: [
-            { text: 'いつにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ご」。' },
-            { text: 'ごにん', isCorrect: true, reason: '正確{せいかく}！籃球{バスケットボール}一隊{いちチーム}五個人{ごにん}。' },
-            { text: 'ごじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'こにん', isCorrect: false, reason: '五使用{しよう}濁音{だくおん}「ご」。' }
+            { text: 'いつにん', isCorrect: false, reason: '人數使用音讀「ご」。' },
+            { text: 'ごにん', isCorrect: true, reason: '正確！籃球{バスケットボール}一隊五個人。' },
+            { text: 'ごじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'こにん', isCorrect: false, reason: '五使用濁音「ご」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '籃球{バスケットボール}一隊{いちチーム}需要{ひつよう}五人{ごにん}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '運動{うんどう}團隊{チーム}']
+            correctRule: '籃球{バスケットボール}一隊需要五人{ごにん}。',
+            relatedRules: ['人數的讀法', '運動團隊']
         },
         sourceItem: { value: 5, kanji: '五人', reading: 'ごにん' }
     },
@@ -1828,16 +1828,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿ぐらいです。（十四個人左右）'
         },
         options: [
-            { text: 'じゅうしにん', isCorrect: false, reason: '陷阱{かんけい}！避免{さける}「しにん」的讀法{よみかた}。' },
-            { text: 'じゅうよにん', isCorrect: true, reason: '正確{せいかく}！約{やく}十四個人{じゅうよにん}參加{さんか}。' },
-            { text: 'じゅうよんにん', isCorrect: false, reason: '十四人{じゅうよにん}使用{しよう}「よ」不是「よん」。' },
-            { text: 'といよにん', isCorrect: false, reason: '十使用{しよう}「じゅう」。' }
+            { text: 'じゅうしにん', isCorrect: false, reason: '陷阱！避免「しにん」的讀法。' },
+            { text: 'じゅうよにん', isCorrect: true, reason: '正確！約十四個人{じゅうよにん}參加。' },
+            { text: 'じゅうよんにん', isCorrect: false, reason: '十四人{じゅうよにん}使用「よ」不是「よん」。' },
+            { text: 'といよにん', isCorrect: false, reason: '十使用「じゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十四人{じゅうよにん}ぐらい」表示{ひょうじ}「約{やく}十四個人{じゅうよにん}」。',
-            trapExplanation: '包含{ふくむ}「四{し}」的數字{すうじ}都{すべて}使用{しよう}「よ」。',
-            relatedRules: ['四{し}の避諱{いひき}', '派對{パーティー}計畫{けいかく}']
+            correctRule: '「十四人{じゅうよにん}ぐらい」表示「約十四個人{じゅうよにん}」。',
+            trapExplanation: '包含「四{し}」的數字都使用「よ」。',
+            relatedRules: ['四{し}の避諱', '派對計畫']
         },
         sourceItem: { value: 14, kanji: '十四人', reading: 'じゅうよにん' }
     },
@@ -1852,16 +1852,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '以下哪些人數有「特殊讀法」需要注意？',
         stem_zh: '以下哪些人數有「特殊讀法」需要注意？',
         options: [
-            { text: '1人、2人、4人、7人', isCorrect: true, reason: '正確{せいかく}！1人{ひとり}（ひとり）、2人{ふたり}（ふたり）是訓讀{くんどく}；4人{よにん}（よにん）避諱{いひき}；7人{しちにん}（しちにん/ななにん）有雙重{そうじゅう}讀法{よみかた}。' },
-            { text: '3人、5人、6人', isCorrect: false, reason: '這些{これら}都{すべて}是規則{きそく}的音讀{おんどく}。' },
-            { text: '8人、9人、10人', isCorrect: false, reason: '這些{これら}都{すべて}是規則{きそく}的音讀{おんどく}。' },
-            { text: '只有1人、2人', isCorrect: false, reason: '4人{よにん}和7人{しちにん}也有特殊{とくしゅ}注意{ちゅうい}事項{じこう}。' }
+            { text: '1人、2人、4人、7人', isCorrect: true, reason: '正確！1人{ひとり}（ひとり）、2人{ふたり}（ふたり）是訓讀；4人{よにん}（よにん）避諱；7人{しちにん}（しちにん/ななにん）有雙重讀法。' },
+            { text: '3人、5人、6人', isCorrect: false, reason: '這些都是規則的音讀。' },
+            { text: '8人、9人、10人', isCorrect: false, reason: '這些都是規則的音讀。' },
+            { text: '只有1人、2人', isCorrect: false, reason: '4人{よにん}和7人{しちにん}也有特殊注意事項。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '需要{じゅよう}特別{とくべつ}記憶{きおく}的人數{にんずう}：1人{ひとり}（訓讀{くんどく}）、2人{ふたり}（訓讀{くんどく}）、4人{よにん}（避諱{いひき}「し」）、7人{しちにん}（雙重{そうじゅう}讀法{よみかた}）。',
-            trapExplanation: '這題測試{テスト}對所有{すべて}特殊{とくしゅ}讀法{よみかた}的理解{りかい}。',
-            relatedRules: ['人數{にんずう}の特殊{とくしゅ}規則{きそく}', '訓讀{くんどく}vs音讀{おんどく}']
+            correctRule: '需要特別記憶的人數：1人{ひとり}（訓讀）、2人{ふたり}（訓讀）、4人{よにん}（避諱「し」）、7人{しちにん}（雙重讀法）。',
+            trapExplanation: '這題測試對所有特殊讀法的理解。',
+            relatedRules: ['人數的特殊規則', '訓讀vs音讀']
         },
         sourceItem: { value: 0, kanji: '特殊人數', reading: '各種' }
     },
@@ -1874,16 +1874,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '「人」什麼時候讀作「じん」？',
         stem_zh: '「人」什麼時候讀作「じん」？',
         options: [
-            { text: '表示國籍或民族時（如：日本人、アメリカ人）', isCorrect: true, reason: '正確{せいかく}！「〜人{じん}」表示{ひょうじ}國籍{こくせき}或民族{みんぞく}（如{たとえば}：日本人{にほんじん}、アメリカ人{じん}）。' },
-            { text: '表示人數時', isCorrect: false, reason: '人數{にんずう}使用{しよう}「〜人{にん}」（如{たとえば}：三人{さんにん}）。' },
-            { text: '數字後面接人時', isCorrect: false, reason: '數字{すうじ}後面{あとめ}接{つなぐ}人{ひと}時{とき}使用{しよう}「にん」。' },
-            { text: '任何時候都可以', isCorrect: false, reason: '「じん」和「にん」有明確{めいかく}的使{つか}い分{わ}け。' }
+            { text: '表示國籍或民族時（如：日本人、アメリカ人）', isCorrect: true, reason: '正確！「〜人{じん}」表示國籍或民族（如：日本人{にほんじん}、アメリカ人{じん}）。' },
+            { text: '表示人數時', isCorrect: false, reason: '人數使用「〜人{にん}」（如：三人{さんにん}）。' },
+            { text: '數字後面接人時', isCorrect: false, reason: '數字後面接人{ひと}時使用「にん」。' },
+            { text: '任何時候都可以', isCorrect: false, reason: '「じん」和「にん」有明確的使い分け。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「〜人{じん}」表示{ひょうじ}國籍{こくせき}或民族{みんぞく}，「〜人{にん}」表示{ひょうじ}人數{にんずう}。例{れい}：「日本人{にほんじん}」vs「三人{さんにん}」。',
-            trapExplanation: '這是常見{よくある}混淆{こんどう}點{てん}，需要{じゅよう}清楚{はっきり}區分{くぶん}。',
-            relatedRules: ['「じん」vs「にん」', '人{ひと}の讀法{よみかた}分類{ぶんるい}']
+            correctRule: '「〜人{じん}」表示國籍或民族，「〜人{にん}」表示人數。例：「日本人{にほんじん}」vs「三人{さんにん}」。',
+            trapExplanation: '這是常見混淆點，需要清楚區分。',
+            relatedRules: ['「じん」vs「にん」', '人的讀法分類']
         },
         sourceItem: { value: 0, kanji: '人', reading: 'じん/にん' }
     },
@@ -1898,16 +1898,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '以下哪個句子有錯誤？',
         stem_zh: '以下哪個句子有錯誤？',
         options: [
-            { text: '七人で旅行しました', isCorrect: false, reason: '這是正確{せいかく}的。' },
-            { text: '八人で会議をしました', isCorrect: false, reason: '這是正確{せいかく}的。' },
-            { text: 'いちにんで住んでいます', isCorrect: true, reason: '錯誤{ごさ}！一人{ひとり}應{べき}該{べき}使用{しよう}訓讀{くんどく}「ひとり」。' },
-            { text: '九人で食事をしました', isCorrect: false, reason: '這是正確{せいかく}的。' }
+            { text: '七人で旅行しました', isCorrect: false, reason: '這是正確的。' },
+            { text: '八人で会議をしました', isCorrect: false, reason: '這是正確的。' },
+            { text: 'いちにんで住んでいます', isCorrect: true, reason: '錯誤！一人{ひとり}應該使用訓讀「ひとり」。' },
+            { text: '九人で食事をしました', isCorrect: false, reason: '這是正確的。' }
         ],
         correctIndex: 2,
         explanation: {
-            correctRule: '一人{ひとり}固定{こてい}使用{しよう}訓讀{くんどく}「ひとり」，不能{ふのう}使用{しよう}音讀{おんどく}「いちにん」。',
-            trapExplanation: '一人{ひとり}和二人{ふたり}是特殊{とくしゅ}訓讀{くんどく}。',
-            relatedRules: ['一人{ひとり}の訓讀{くんどく}', '特殊{とくしゅ}讀法{よみかた}']
+            correctRule: '一人{ひとり}固定使用訓讀「ひとり」，不能使用音讀「いちにん」。',
+            trapExplanation: '一人{ひとり}和二人{ふたり}是特殊訓讀。',
+            relatedRules: ['一人{ひとり}的訓讀', '特殊讀法']
         },
         sourceItem: { value: 1, kanji: '一人', reading: 'ひとり' }
     },
@@ -1920,16 +1920,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '以下哪個讀法正確？',
         stem_zh: '以下哪個讀法正確？',
         options: [
-            { text: '十四人（じゅうしにん）', isCorrect: false, reason: '錯誤{ごさ}！避免{さける}「しにん」。' },
-            { text: '二十四人（にじゅうしにん）', isCorrect: false, reason: '錯誤{ごさ}！避免{さける}「しにん」。' },
-            { text: '四十四人（よんじゅうよにん）', isCorrect: true, reason: '正確{せいかく}！四十四人{よんじゅうよにん}使用{しよう}「よん」和「よ」。' },
-            { text: '四人（しにん）', isCorrect: false, reason: '錯誤{ごさ}！四人{よにん}讀作{どくさ}「よにん」。' }
+            { text: '十四人（じゅうしにん）', isCorrect: false, reason: '錯誤！避免「しにん」。' },
+            { text: '二十四人（にじゅうしにん）', isCorrect: false, reason: '錯誤！避免「しにん」。' },
+            { text: '四十四人（よんじゅうよにん）', isCorrect: true, reason: '正確！四十四人{よんじゅうよにん}使用「よん」和「よ」。' },
+            { text: '四人（しにん）', isCorrect: false, reason: '錯誤！四人{よにん}讀作「よにん」。' }
         ],
         correctIndex: 2,
         explanation: {
-            correctRule: '任何{いかなる}包含{ふくむ}「四{し}」的人數{にんずう}都{すべて}避免{さける}「し」讀法{よみかた}，使用{しよう}「よ」或「よん」。',
-            trapExplanation: '這題測試{テスト}對「四{し}」避諱{いひき}規則{きそく}的全面{ぜんめん}理解{りかい}。',
-            relatedRules: ['四{し}の避諱{いひき}', '人數{にんずう}の讀法{よみかた}']
+            correctRule: '任何包含「四」的人數都避免「し」讀法，使用「よ」或「よん」。',
+            trapExplanation: '這題測試對「四」避諱規則的全面理解。',
+            relatedRules: ['四の避諱', '人數的讀法']
         },
         sourceItem: { value: 44, kanji: '四十四人', reading: 'よんじゅうよにん' }
     },
@@ -1948,15 +1948,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '大人＿＿でお願いします。（六位大人）'
         },
         options: [
-            { text: 'むにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「ろく」。' },
-            { text: 'ろくにん', isCorrect: true, reason: '正確{せいかく}！六位{ろくにん}大人{おとな}預約{よやく}。' },
-            { text: 'ろくじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ろくめい', isCorrect: false, reason: '雖然{すいぜん}「名{めい}」也可{かのう}用，但回答{かいとう}通常{つうじょう}用「人{にん}」。' }
+            { text: 'むにん', isCorrect: false, reason: '人數使用音讀「ろく」。' },
+            { text: 'ろくにん', isCorrect: true, reason: '正確！六位大人預約。' },
+            { text: 'ろくじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ろくめい', isCorrect: false, reason: '雖然「名」也可用，但回答通常用「人」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「大人{おとな}六人{ろくにん}」是預約{よやく}時{とき}的常用{じょうよう}表達{ひょうたつ}。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '預約{よやく}用語{ようご}']
+            correctRule: '「大人六人{ろくにん}」是預約時的常用表達。',
+            relatedRules: ['人數的讀法', '預約用語']
         },
         sourceItem: { value: 6, kanji: '六人', reading: 'ろくにん' }
     },
@@ -1969,15 +1969,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '日本の人口は約＿＿です。',
         stem_zh: '日本人口約一億兩千萬人。',
         options: [
-            { text: 'いちおくにせんまんじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'いちおくにせんまんにん', isCorrect: true, reason: '正確{せいかく}！日本{にほん}人口{じんこう}約{やく}一億兩千萬人{いちおくにせんまんにん}。' },
-            { text: 'ひとおくにせんまんにん', isCorrect: false, reason: '「一億{いちおく}」使用{しよう}音讀{おんどく}「いち」。' },
-            { text: 'いちおくふたせんまんにん', isCorrect: false, reason: '「二千{にせん}」使用{しよう}音讀{おんどく}「に」。' }
+            { text: 'いちおくにせんまんじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'いちおくにせんまんにん', isCorrect: true, reason: '正確！日本人口約一億兩千萬人。' },
+            { text: 'ひとおくにせんまんにん', isCorrect: false, reason: '「一億」使用音讀「いち」。' },
+            { text: 'いちおくふたせんまんにん', isCorrect: false, reason: '「二千」使用音讀「に」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '大數字{だいすうじ}的人數{にんずう}也使用{しよう}「〜人{にん}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '人口{じんこう}統計{とうけい}']
+            correctRule: '大數字的人數也使用「〜人{にん}」。',
+            relatedRules: ['人數的讀法', '人口統計']
         },
         sourceItem: { value: 120000000, kanji: '一億二千万人', reading: 'いちおくにせんまんにん' }
     },
@@ -1992,15 +1992,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '私たちのグループは＿＿です。',
         stem_zh: '我們的小組有十三個人。',
         options: [
-            { text: 'じゅうみにん', isCorrect: false, reason: '十三{じゅうさん}使用{しよう}音讀{おんどく}。' },
-            { text: 'じゅうさんにん', isCorrect: true, reason: '正確{せいかく}！小組{グループ}有十三個人{じゅうさんにん}。' },
-            { text: 'じゅうさんじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'とさんにん', isCorrect: false, reason: '十使用{しよう}「じゅう」。' }
+            { text: 'じゅうみにん', isCorrect: false, reason: '十三{じゅうさん}使用音讀。' },
+            { text: 'じゅうさんにん', isCorrect: true, reason: '正確！小組有十三個人{じゅうさんにん}。' },
+            { text: 'じゅうさんじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'とさんにん', isCorrect: false, reason: '十使用「じゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十三人{じゅうさんにん}」讀作{どくさ}「じゅうさんにん」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}']
+            correctRule: '「十三人{じゅうさんにん}」讀作「じゅうさんにん」。',
+            relatedRules: ['人數的讀法']
         },
         sourceItem: { value: 13, kanji: '十三人', reading: 'じゅうさんにん' }
     },
@@ -2017,16 +2017,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（一個人）'
         },
         options: [
-            { text: 'いちにん', isCorrect: false, reason: '陷阱{かんけい}！一人{ひとり}使用{しよう}訓讀{くんどく}「ひとり」。' },
-            { text: 'ひとり', isCorrect: true, reason: '正確{せいかく}！一個人{ひとり}用餐{しょくじ}。' },
-            { text: 'いちめい', isCorrect: false, reason: '雖然{すいぜん}「名{めい}」也可{かのう}用，但通常{つうじょう}回答{かいとう}「ひとり」。' },
-            { text: 'ひとにん', isCorrect: false, reason: '不混合{ふこんごう}訓讀{くんどく}與音讀{おんどく}。' }
+            { text: 'いちにん', isCorrect: false, reason: '陷阱！一人{ひとり}使用訓讀「ひとり」。' },
+            { text: 'ひとり', isCorrect: true, reason: '正確！一個人用餐。' },
+            { text: 'いちめい', isCorrect: false, reason: '雖然「名{めい}」也可用，但通常回答「ひとり」。' },
+            { text: 'ひとにん', isCorrect: false, reason: '不混合訓讀與音讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '一人{ひとり}固定{こてい}使用{しよう}訓讀{くんどく}「ひとり」。',
-            trapExplanation: '即使{たとえ}在正式{せいしき}場合{ばあい}，一人{ひとり}也讀作{どくさ}「ひとり」。',
-            relatedRules: ['一人{ひとり}の讀法{よみかた}', '餐廳{れすとらん}用語{ようご}']
+            correctRule: '一人{ひとり}固定使用訓讀「ひとり」。',
+            trapExplanation: '即使在正式場合，一人{ひとり}也讀作「ひとり」。',
+            relatedRules: ['一人{ひとり}的讀法', '餐廳{れすとらん}用語']
         },
         sourceItem: { value: 1, kanji: '一人', reading: 'ひとり' }
     },
@@ -2039,16 +2039,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '私たち＿＿は結婚しました。',
         stem_zh: '我們兩個人結婚了。',
         options: [
-            { text: 'ににん', isCorrect: false, reason: '陷阱{かんけい}！二人{ふたり}使用{しよう}訓讀{くんどく}「ふたり」。' },
-            { text: 'ふたり', isCorrect: true, reason: '正確{せいかく}！兩個人{ふたり}結婚{けっこん}了。' },
-            { text: 'にじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ふたにん', isCorrect: false, reason: '不混合{ふこんごう}訓讀{くんどく}與音讀{おんどく}。' }
+            { text: 'ににん', isCorrect: false, reason: '陷阱！二人{ふたり}使用訓讀「ふたり」。' },
+            { text: 'ふたり', isCorrect: true, reason: '正確！兩個人結婚了。' },
+            { text: 'にじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ふたにん', isCorrect: false, reason: '不混合訓讀與音讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「私{わたし}たち二人{ふたり}」是情侶{カップル}或夫婦{ふうふ}常用{じょうよう}表達{ひょうたつ}。',
-            trapExplanation: '二人{ふたり}固定{こてい}使用{しよう}訓讀{くんどく}「ふたり」。',
-            relatedRules: ['二人{ふたり}の讀法{よみかた}', '結婚{けっこん}表達{ひょうたつ}']
+            correctRule: '「私{わたし}たち二人{ふたり}」是情侶{カップル}或夫婦{ふうふ}常用表達。',
+            trapExplanation: '二人{ふたり}固定使用訓讀「ふたり」。',
+            relatedRules: ['二人{ふたり}的讀法', '結婚表達']
         },
         sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
     },
@@ -2061,15 +2061,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'プロジェクトチームは＿＿で構成されています。',
         stem_zh: '專案團隊由十個人組成。',
         options: [
-            { text: 'とおにん', isCorrect: false, reason: '人數{にんずう}使用{しよう}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅうにん', isCorrect: true, reason: '正確{せいかく}！專案{プロジェクト}團隊{チーム}由十個人{じゅうにん}組成{こうせい}。' },
-            { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'じゅっにん', isCorrect: false, reason: '十人{じゅうにん}不促音化{ふそくおんか}。' }
+            { text: 'とおにん', isCorrect: false, reason: '人數使用音讀「じゅう」。' },
+            { text: 'じゅうにん', isCorrect: true, reason: '正確！專案{プロジェクト}團隊由十個人組成。' },
+            { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'じゅっにん', isCorrect: false, reason: '十人{じゅうにん}不促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十人{じゅうにん}で構成{こうせい}されています」表示{ひょうじ}「由十個人{じゅうにん}組成{こうせい}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '團隊{チーム}用語{ようご}']
+            correctRule: '「十人{じゅうにん}で構成されています」表示「由十個人組成」。',
+            relatedRules: ['人數的讀法', '團隊用語']
         },
         sourceItem: { value: 10, kanji: '十人', reading: 'じゅうにん' }
     },
@@ -2086,15 +2086,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿待っています。（三個人）'
         },
         options: [
-            { text: 'みたり', isCorrect: false, reason: '現代{げんだい}使用{しよう}「さんにん」。' },
-            { text: 'さんにん', isCorrect: true, reason: '正確{せいかく}！三個人{さんにん}在等候{まつ}。' },
-            { text: 'さんじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'みにん', isCorrect: false, reason: '三人{さんにん}使用{しよう}音讀{おんどく}。' }
+            { text: 'みたり', isCorrect: false, reason: '現代使用「さんにん」。' },
+            { text: 'さんにん', isCorrect: true, reason: '正確！三個人在等候。' },
+            { text: 'さんじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'みにん', isCorrect: false, reason: '三人{さんにん}使用音讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三人{さんにん}待{ま}っています」表示{ひょうじ}「三個人{さんにん}在等候{まつ}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '等候{たいき}表達{ひょうたつ}']
+            correctRule: '「三人{さんにん}待っています」表示「三個人在等候」。',
+            relatedRules: ['人數的讀法', '等候表達']
         },
         sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
     },
@@ -2111,16 +2111,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿分お願いします。（四個人份）'
         },
         options: [
-            { text: 'しにん', isCorrect: false, reason: '陷阱{かんけい}！「しにん」是禁忌{きんき}讀法{よみかた}。' },
-            { text: 'よにん', isCorrect: true, reason: '正確{せいかく}！四個人{よにん}份的電影票{チケット}。' },
-            { text: 'よんにん', isCorrect: false, reason: '四人{よにん}使用{しよう}「よ」不是「よん」。' },
-            { text: 'よったり', isCorrect: false, reason: '現代{げんだい}使用{しよう}「よにん」。' }
+            { text: 'しにん', isCorrect: false, reason: '陷阱！「しにん」是禁忌讀法。' },
+            { text: 'よにん', isCorrect: true, reason: '正確！四個人份的電影票{チケット}。' },
+            { text: 'よんにん', isCorrect: false, reason: '四人{よにん}使用「よ」不是「よん」。' },
+            { text: 'よったり', isCorrect: false, reason: '現代使用「よにん」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「四人{よにん}分{ぶん}」表示{ひょうじ}「四個人{よにん}份」。',
-            trapExplanation: '四人{よにん}固定{こてい}使用{しよう}「よ」，避免{さける}「し」。',
-            relatedRules: ['四人{よにん}の讀法{よみかた}', '購票{こうひょう}用語{ようご}']
+            correctRule: '「四人{よにん}分{ぶん}」表示「四個人份」。',
+            trapExplanation: '四人{よにん}固定使用「よ」，避免「し」。',
+            relatedRules: ['四人{よにん}的讀法', '購票用語']
         },
         sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
     },
@@ -2133,15 +2133,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'バスには＿＿乗っていました。',
         stem_zh: '巴士上坐了二十個人。',
         options: [
-            { text: 'はたちにん', isCorrect: false, reason: '「はたち」只用於{つかう}年齡{ねんれい}。' },
-            { text: 'にじゅうにん', isCorrect: true, reason: '正確{せいかく}！巴士{バス}上坐了{のっていました}二十個人{にじゅうにん}。' },
-            { text: 'にじゅうじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ふたじゅうにん', isCorrect: false, reason: '二十{にじゅう}使用{しよう}音讀{おんどく}。' }
+            { text: 'はたちにん', isCorrect: false, reason: '「はたち」只用於年齡。' },
+            { text: 'にじゅうにん', isCorrect: true, reason: '正確！巴士{バス}上坐了{のっていました}二十個人。' },
+            { text: 'にじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ふたじゅうにん', isCorrect: false, reason: '二十{にじゅう}使用音讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二十人{にじゅうにん}乗{の}っていました」表示{ひょうじ}「二十個人{にじゅうにん}坐著{のっていた}」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '交通{こうつう}用語{ようご}']
+            correctRule: '「二十人{にじゅうにん}乗{の}っていました」表示「二十個人坐著{のっていた}」。',
+            relatedRules: ['人數的讀法', '交通用語']
         },
         sourceItem: { value: 20, kanji: '二十人', reading: 'にじゅうにん' }
     },
@@ -2154,15 +2154,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '誕生日会には＿＿来ました。',
         stem_zh: '生日會來了十二個人。',
         options: [
-            { text: 'じゅうふたり', isCorrect: false, reason: '十二{じゅうに}使用{しよう}音讀{おんどく}。' },
-            { text: 'じゅうににん', isCorrect: true, reason: '正確{せいかく}！生日會{たんじょうびかい}來了{きました}十二個人{じゅうににん}。' },
-            { text: 'じゅうにじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'とにににん', isCorrect: false, reason: '十使用{しよう}「じゅう」。' }
+            { text: 'じゅうふたり', isCorrect: false, reason: '十二{じゅうに}使用音讀。' },
+            { text: 'じゅうににん', isCorrect: true, reason: '正確！生日會來了十二個人。' },
+            { text: 'じゅうにじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'とにににん', isCorrect: false, reason: '十使用「じゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十二人{じゅうににん}来{き}ました」表示{ひょうじ}「十二個人{じゅうににん}來了」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '派對{パーティー}用語{ようご}']
+            correctRule: '「十二人{じゅうににん}来ました」表示「十二個人來了」。',
+            relatedRules: ['人數的讀法', '派對用語']
         },
         sourceItem: { value: 12, kanji: '十二人', reading: 'じゅうににん' }
     },
@@ -2175,15 +2175,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'ボランティアは＿＿集まりました。',
         stem_zh: '志工集合了三十五個人。',
         options: [
-            { text: 'さんじゅういつにん', isCorrect: false, reason: '五{ご}使用{しよう}音讀{おんどく}「ご」。' },
-            { text: 'さんじゅうごにん', isCorrect: true, reason: '正確{せいかく}！志工{ボランティア}集合{あつまりました}了三十五個人{さんじゅうごにん}。' },
-            { text: 'さんじゅうごじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'みじゅうごにん', isCorrect: false, reason: '三十{さんじゅう}使用{しよう}音讀{おんどく}。' }
+            { text: 'さんじゅういつにん', isCorrect: false, reason: '五{ご}使用音讀「ご」。' },
+            { text: 'さんじゅうごにん', isCorrect: true, reason: '正確！志工集合了三十五個人。' },
+            { text: 'さんじゅうごじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'みじゅうごにん', isCorrect: false, reason: '三十{さんじゅう}使用音讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三十五人{さんじゅうごにん}集{あつ}まりました」表示{ひょうじ}「三十五個人{さんじゅうごにん}集合{あつまった}了」。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '志工{ボランティア}活動{かつどう}']
+            correctRule: '「三十五人{さんじゅうごにん}集まりました」表示「三十五個人集合了」。',
+            relatedRules: ['人數的讀法', '志工活動']
         },
         sourceItem: { value: 35, kanji: '三十五人', reading: 'さんじゅうごにん' }
     },
@@ -2200,15 +2200,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿採用する予定です。（兩個人）'
         },
         options: [
-            { text: 'ににん', isCorrect: false, reason: '二人{ふたり}使用{しよう}訓讀{くんどく}「ふたり」。' },
-            { text: 'ふたり', isCorrect: true, reason: '正確{せいかく}！預計{よてい}錄取{さいよう}兩個人{ふたり}。' },
-            { text: 'にじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'ふたにん', isCorrect: false, reason: '不混合{ふこんごう}訓讀{くんどく}與音讀{おんどく}。' }
+            { text: 'ににん', isCorrect: false, reason: '二人{ふたり}使用訓讀「ふたり」。' },
+            { text: 'ふたり', isCorrect: true, reason: '正確！預計錄取兩個人。' },
+            { text: 'にじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ふたにん', isCorrect: false, reason: '不混合訓讀與音讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二人{ふたり}採用{さいよう}する予定{よてい}です」表示{ひょうじ}「預計{よてい}錄取{さいよう}兩個人{ふたり}」。',
-            relatedRules: ['二人{ふたり}の讀法{よみかた}', '求職{きゅうしょく}用語{ようご}']
+            correctRule: '「二人{ふたり}採用する予定です」表示「預計錄取兩個人」。',
+            relatedRules: ['二人{ふたり}的讀法', '求職用語']
         },
         sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
     },
@@ -2221,15 +2221,15 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: 'この学校には＿＿の生徒がいます。',
         stem_zh: '這所學校有八百個學生。',
         options: [
-            { text: 'はっぴゃくじん', isCorrect: false, reason: '「じん」不用於{もちいず}人數{にんずう}。' },
-            { text: 'はっぴゃくにん', isCorrect: true, reason: '正確{せいかく}！學校{がっこう}有八百個{はっぴゃくにん}學生{せいと}。' },
-            { text: 'やひゃくにん', isCorrect: false, reason: '八百{はっぴゃく}使用{しよう}音讀{おんどく}。' },
-            { text: 'はちひゃくにん', isCorrect: false, reason: '八百{はっぴゃく}促音化{そくおんか}為「はっぴゃく」。' }
+            { text: 'はっぴゃくじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'はっぴゃくにん', isCorrect: true, reason: '正確！學校有八百個{はっぴゃくにん}學生。' },
+            { text: 'やひゃくにん', isCorrect: false, reason: '八百{はっぴゃく}使用音讀。' },
+            { text: 'はちひゃくにん', isCorrect: false, reason: '八百促音化為「はっぴゃく」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八百人{はっぴゃくにん}」讀作{どくさ}「はっぴゃくにん」（八百{はっぴゃく}促音化{そくおんか}）。',
-            relatedRules: ['人數{にんずう}の讀法{よみかた}', '學校{がっこう}用語{ようご}']
+            correctRule: '「八百人{はっぴゃくにん}」讀作「はっぴゃくにん」（八百促音化）。',
+            relatedRules: ['人數的讀法', '學校用語']
         },
         sourceItem: { value: 800, kanji: '八百人', reading: 'はっぴゃくにん' }
     },
@@ -2242,16 +2242,16 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem: '以下哪個組合的讀法都正確？',
         stem_zh: '以下哪個組合的讀法都正確？',
         options: [
-            { text: '一人(ひとり)、二人(ふたり)、三人(さんにん)', isCorrect: true, reason: '正確{せいかく}！這三個{みっつ}讀法{よみかた}都{すべて}正確{せいかく}。' },
-            { text: '一人(いちにん)、二人(ににん)、三人(さんにん)', isCorrect: false, reason: '一人{ひとり}、二人{ふたり}使用{しよう}訓讀{くんどく}。' },
-            { text: '一人(ひとり)、二人(ににん)、三人(さんにん)', isCorrect: false, reason: '二人{ふたり}使用{しよう}訓讀{くんどく}「ふたり」。' },
-            { text: '一人(いちにん)、二人(ふたり)、三人(みにん)', isCorrect: false, reason: '一人{ひとり}使用{しよう}訓讀{くんどく}，三人{さんにん}使用{しよう}音讀{おんどく}。' }
+            { text: '一人(ひとり)、二人(ふたり)、三人(さんにん)', isCorrect: true, reason: '正確！這三個讀法都正確。' },
+            { text: '一人(いちにん)、二人(ににん)、三人(さんにん)', isCorrect: false, reason: '一人{ひとり}、二人{ふたり}使用訓讀。' },
+            { text: '一人(ひとり)、二人(ににん)、三人(さんにん)', isCorrect: false, reason: '二人{ふたり}使用訓讀「ふたり」。' },
+            { text: '一人(いちにん)、二人(ふたり)、三人(みにん)', isCorrect: false, reason: '一人{ひとり}使用訓讀，三人{さんにん}使用音讀。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '1人{ひとり}（ひとり）、2人{ふたり}（ふたり）使用{しよう}訓讀{くんどく}，3人{さんにん}開始{はじめ}使用{しよう}音讀{おんどく}（さんにん）。',
-            trapExplanation: '這是人數{にんずう}量詞{りょうし}最基本{さいきほん}的規則{きそく}。',
-            relatedRules: ['訓讀{くんどく}vs音讀{おんどく}', '人數{にんずう}の基本{きほん}規則{きそく}']
+            correctRule: '1人{ひとり}（ひとり）、2人{ふたり}（ふたり）使用訓讀，3人{さんにん}開始使用音讀（さんにん）。',
+            trapExplanation: '這是人數量詞最基本的規則。',
+            relatedRules: ['訓讀vs音讀', '人數的基本規則']
         },
         sourceItem: { value: 0, kanji: '一人・二人・三人', reading: 'ひとり・ふたり・さんにん' }
     },
@@ -2261,18 +2261,18 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「何人」（詢問人數）的正確讀法是？',
+        stem: '「何人」（人数{にんずう}を聞{き}く）の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何人」（詢問人數）的正確讀法是？',
         options: [
-            { text: 'なんにん', isCorrect: true, reason: '正確{せいかく}！詢問{たずねる}人數{にんずう}時{とき}讀作{どくさ}「なんにん」。' },
-            { text: 'なにじん', isCorrect: false, reason: '「なにじん」是詢問{たずねる}「什麼{なに}人{じん}」（國籍{こくせき}）。' },
-            { text: 'いくにん', isCorrect: false, reason: '人數{にんずう}疑問詞{ぎもんし}使用{しよう}「なんにん」。' },
-            { text: 'どのにん', isCorrect: false, reason: '這不是正確{せいかく}疑問詞{ぎもんし}。' }
+            { text: 'なんにん', isCorrect: true, reason: '正確！詢問人數時讀作「なんにん」。' },
+            { text: 'なにじん', isCorrect: false, reason: '「なにじん」是詢問「什麼人{じん}」（國籍）。' },
+            { text: 'いくにん', isCorrect: false, reason: '人數疑問詞使用「なんにん」。' },
+            { text: 'どのにん', isCorrect: false, reason: '這不是正確疑問詞。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何人{なんにん}」（なんにん）詢問{たずねる}人數{にんずう}，「何人{なにじん}」（なにじん）詢問{たずねる}國籍{こくせき}。',
-            relatedRules: ['「なんにん」vs「なにじん」', '疑問詞{ぎもんし}の使{つか}い分{わ}け']
+            correctRule: '「何人{なんにん}」（なんにん）詢問人數，「何人{なにじん}」（なにじん）詢問國籍。',
+            relatedRules: ['「なんにん」vs「なにじん」', '疑問詞の使い分け']
         },
         sourceItem: { value: 0, kanji: '何人', reading: 'なんにん' }
     },
@@ -2284,7 +2284,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「四人」的正確讀音是？',
+        stem: '「四人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「四人」的正確讀音是？',
         options: [
             { text: 'よにん', isCorrect: true, reason: '正確！「四人」讀作「よにん」。' },
@@ -2296,7 +2296,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四人」讀作「よにん」，4使用「よ」避免「しにん（死人）」諧音。',
             trapExplanation: '這是人數量詞重要的特殊讀法。',
-            relatedRules: ['四人の讀法', '避諱讀法']
+            relatedRules: ['四人的讀法', '避諱讀法']
         },
         sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
     },
@@ -2317,7 +2317,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五人」讀作「ごにん」，是一般音讀。',
-            relatedRules: ['人數の讀法', '5人の讀法']
+            relatedRules: ['人數的讀法', '5人的讀法']
         },
         sourceItem: { value: 5, kanji: '五人', reading: 'ごにん' }
     },
@@ -2342,7 +2342,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「六人」讀作「ろくにん」，是一般音讀。',
-            relatedRules: ['人數の讀法', '6人の讀法']
+            relatedRules: ['人數的讀法', '6人的讀法']
         },
         sourceItem: { value: 6, kanji: '六人', reading: 'ろくにん' }
     },
@@ -2352,7 +2352,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「七人」的正確讀音是？',
+        stem: '「七人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「七人」的正確讀音是？',
         options: [
             { text: 'しちにん / ななにん', isCorrect: true, reason: '正確！「七人」可讀「しちにん」或「ななにん」。' },
@@ -2363,7 +2363,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「七人」可讀「しちにん」或「ななにん」，兩者皆可。',
-            relatedRules: ['人數の讀法', '7人の讀法']
+            relatedRules: ['人數的讀法', '7人的讀法']
         },
         sourceItem: { value: 7, kanji: '七人', reading: 'しちにん/ななにん' }
     },
@@ -2384,7 +2384,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「八人」讀作「はちにん」，是一般音讀。',
-            relatedRules: ['人數の讀法', '8人の讀法']
+            relatedRules: ['人數的讀法', '8人的讀法']
         },
         sourceItem: { value: 8, kanji: '八人', reading: 'はちにん' }
     },
@@ -2409,7 +2409,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「九人」可讀「きゅうにん」或「くにん」，兩者皆可。',
-            relatedRules: ['人數の讀法', '9人の讀法']
+            relatedRules: ['人數的讀法', '9人的讀法']
         },
         sourceItem: { value: 9, kanji: '九人', reading: 'きゅうにん/くにん' }
     },
@@ -2419,7 +2419,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十人」的正確讀音是？',
+        stem: '「十人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十人」的正確讀音是？',
         options: [
             { text: 'じゅうにん', isCorrect: true, reason: '正確！「十人」讀作「じゅうにん」。' },
@@ -2430,7 +2430,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十人」讀作「じゅうにん」，是一般音讀。',
-            relatedRules: ['人數の讀法', '10人の讀法']
+            relatedRules: ['人數的讀法', '10人的讀法']
         },
         sourceItem: { value: 10, kanji: '十人', reading: 'じゅうにん' }
     },
@@ -2452,7 +2452,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「百人」讀作「ひゃくにん」。',
             trapExplanation: '「百」讀「ひゃく」，不是「いっぴゃく」。',
-            relatedRules: ['人數の讀法', '100人の讀法']
+            relatedRules: ['人數的讀法', '100人的讀法']
         },
         sourceItem: { value: 100, kanji: '百人', reading: 'ひゃくにん' }
     },
@@ -2478,7 +2478,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「千人」讀作「せんにん」。',
             trapExplanation: '「千」讀「せん」，不是「いっせん」。',
-            relatedRules: ['人數の讀法', '1000人の讀法']
+            relatedRules: ['人數的讀法', '1000人的讀法']
         },
         sourceItem: { value: 1000, kanji: '千人', reading: 'せんにん' }
     },
@@ -2488,7 +2488,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十一人」的正確讀音是？',
+        stem: '「十一人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十一人」的正確讀音是？',
         options: [
             { text: 'じゅういちにん', isCorrect: true, reason: '正確！「十一人」讀作「じゅういちにん」。' },
@@ -2499,7 +2499,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十一人」讀作「じゅういちにん」，11人開始全部用音讀。',
-            relatedRules: ['人數の讀法', '11人の讀法']
+            relatedRules: ['人數的讀法', '11人的讀法']
         },
         sourceItem: { value: 11, kanji: '十一人', reading: 'じゅういちにん' }
     },
@@ -2520,7 +2520,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二十人」讀作「にじゅうにん」。',
-            relatedRules: ['人數の讀法', '20人の讀法']
+            relatedRules: ['人數的讀法', '20人的讀法']
         },
         sourceItem: { value: 20, kanji: '二十人', reading: 'にじゅうにん' }
     },
@@ -2546,7 +2546,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「十四人」讀作「じゅうよにん」，保持4的「よ」讀法。',
             trapExplanation: '任何含4的人數，4都讀「よ」。',
-            relatedRules: ['人數の讀法', '14人の讀法']
+            relatedRules: ['人數的讀法', '14人的讀法']
         },
         sourceItem: { value: 14, kanji: '十四人', reading: 'じゅうよにん' }
     },
@@ -2556,7 +2556,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二十四人」的正確讀音是？',
+        stem: '「二十四人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二十四人」的正確讀音是？',
         options: [
             { text: 'にじゅうよにん', isCorrect: true, reason: '正確！「二十四人」讀作「にじゅうよにん」。' },
@@ -2568,7 +2568,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「二十四人」讀作「にじゅうよにん」。',
             trapExplanation: '任何含4的人數，4都讀「よ」。',
-            relatedRules: ['人數の讀法', '24人の讀法']
+            relatedRules: ['人數的讀法', '24人的讀法']
         },
         sourceItem: { value: 24, kanji: '二十四人', reading: 'にじゅうよにん' }
     },
@@ -2589,7 +2589,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「三十人」讀作「さんじゅうにん」。',
-            relatedRules: ['人數の讀法', '30人の讀法']
+            relatedRules: ['人數的讀法', '30人的讀法']
         },
         sourceItem: { value: 30, kanji: '三十人', reading: 'さんじゅうにん' }
     },
@@ -2615,7 +2615,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四十四人」讀作「よんじゅうよにん」。',
             trapExplanation: '十位4讀「よん」，個位4讀「よ」。',
-            relatedRules: ['人數の讀法', '44人の讀法']
+            relatedRules: ['人數的讀法', '44人的讀法']
         },
         sourceItem: { value: 44, kanji: '四十四人', reading: 'よんじゅうよにん' }
     },
@@ -2625,7 +2625,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五十人」的正確讀音是？',
+        stem: '「五十人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五十人」的正確讀音是？',
         options: [
             { text: 'ごじゅうにん', isCorrect: true, reason: '正確！「五十人」讀作「ごじゅうにん」。' },
@@ -2636,7 +2636,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五十人」讀作「ごじゅうにん」。',
-            relatedRules: ['人數の讀法', '50人の讀法']
+            relatedRules: ['人數的讀法', '50人的讀法']
         },
         sourceItem: { value: 50, kanji: '五十人', reading: 'ごじゅうにん' }
     },
@@ -2657,7 +2657,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「六十人」讀作「ろくじゅうにん」。',
-            relatedRules: ['人數の讀法', '60人の讀法']
+            relatedRules: ['人數的讀法', '60人的讀法']
         },
         sourceItem: { value: 60, kanji: '六十人', reading: 'ろくじゅうにん' }
     },
@@ -2682,7 +2682,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「七十人」可讀「しちじゅうにん」或「ななじゅうにん」。',
-            relatedRules: ['人數の讀法', '70人の讀法']
+            relatedRules: ['人數的讀法', '70人的讀法']
         },
         sourceItem: { value: 70, kanji: '七十人', reading: 'しちじゅうにん/ななじゅうにん' }
     },
@@ -2692,7 +2692,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「八十人」的正確讀音是？',
+        stem: '「八十人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「八十人」的正確讀音是？',
         options: [
             { text: 'はちじゅうにん', isCorrect: true, reason: '正確！「八十人」讀作「はちじゅうにん」。' },
@@ -2703,7 +2703,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「八十人」讀作「はちじゅうにん」。',
-            relatedRules: ['人數の讀法', '80人の讀法']
+            relatedRules: ['人數的讀法', '80人的讀法']
         },
         sourceItem: { value: 80, kanji: '八十人', reading: 'はちじゅうにん' }
     },
@@ -2724,7 +2724,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「九十人」讀作「きゅうじゅうにん」。',
-            relatedRules: ['人數の讀法', '90人の讀法']
+            relatedRules: ['人數的讀法', '90人的讀法']
         },
         sourceItem: { value: 90, kanji: '九十人', reading: 'きゅうじゅうにん' }
     },
@@ -2750,7 +2750,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「百四十人」讀作「ひゃくよんじゅうにん」。',
             trapExplanation: '40讀「よんじゅう」避免「しじゅう」。',
-            relatedRules: ['人數の讀法', '140人の讀法']
+            relatedRules: ['人數的讀法', '140人的讀法']
         },
         sourceItem: { value: 140, kanji: '百四十人', reading: 'ひゃくよんじゅうにん' }
     },
@@ -2760,7 +2760,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「三百人」的正確讀音是？',
+        stem: '「三百人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三百人」的正確讀音是？',
         options: [
             { text: 'さんびゃくにん', isCorrect: true, reason: '正確！「三百人」讀作「さんびゃくにん」。' },
@@ -2772,7 +2772,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「三百人」讀作「さんびゃくにん」，「三百」濁音化。',
             trapExplanation: '3、6、8百的「百」會變化。',
-            relatedRules: ['人數の讀法', '300人の讀法']
+            relatedRules: ['人數的讀法', '300人的讀法']
         },
         sourceItem: { value: 300, kanji: '三百人', reading: 'さんびゃくにん' }
     },
@@ -2794,7 +2794,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「六百人」讀作「ろっぴゃくにん」，「六百」促音+半濁音化。',
             trapExplanation: '6百讀「ろっぴゃく」。',
-            relatedRules: ['人數の讀法', '600人の讀法']
+            relatedRules: ['人數的讀法', '600人的讀法']
         },
         sourceItem: { value: 600, kanji: '六百人', reading: 'ろっぴゃくにん' }
     },
@@ -2820,7 +2820,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「八百人」讀作「はっぴゃくにん」，「八百」促音+半濁音化。',
             trapExplanation: '8百讀「はっぴゃく」。',
-            relatedRules: ['人數の讀法', '800人の讀法']
+            relatedRules: ['人數的讀法', '800人的讀法']
         },
         sourceItem: { value: 800, kanji: '八百人', reading: 'はっぴゃくにん' }
     },
@@ -2830,7 +2830,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「三千人」的正確讀音是？',
+        stem: '「三千人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三千人」的正確讀音是？',
         options: [
             { text: 'さんぜんにん', isCorrect: true, reason: '正確！「三千人」讀作「さんぜんにん」。' },
@@ -2842,7 +2842,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「三千人」讀作「さんぜんにん」，「三千」濁音化。',
             trapExplanation: '3千讀「さんぜん」。',
-            relatedRules: ['人數の讀法', '3000人の讀法']
+            relatedRules: ['人數的讀法', '3000人的讀法']
         },
         sourceItem: { value: 3000, kanji: '三千人', reading: 'さんぜんにん' }
     },
@@ -2864,7 +2864,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「八千人」讀作「はっせんにん」，「八千」促音化。',
             trapExplanation: '8千讀「はっせん」。',
-            relatedRules: ['人數の讀法', '8000人の讀法']
+            relatedRules: ['人數的讀法', '8000人的讀法']
         },
         sourceItem: { value: 8000, kanji: '八千人', reading: 'はっせんにん' }
     },
@@ -2889,7 +2889,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「一萬人」讀作「いちまんにん」。',
-            relatedRules: ['人數の讀法', '10000人の讀法']
+            relatedRules: ['人數的讀法', '10000人的讀法']
         },
         sourceItem: { value: 10000, kanji: '一万人', reading: 'いちまんにん' }
     },
@@ -2931,7 +2931,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '1人（ひとり）、2人（ふたり）固定使用訓讀系統。',
-            relatedRules: ['人數の訓讀規則', '1人、2人の特殊讀法']
+            relatedRules: ['人數的訓讀規則', '1人、2人的特殊讀法']
         },
         sourceItem: { value: 'review_kun', kanji: '訓讀', reading: 'ひとり、ふたり' }
     },
@@ -2956,7 +2956,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '4人讀「よにん」避免「しにん」與「死人」諧音。',
-            relatedRules: ['四人の讀法', '避諱讀法']
+            relatedRules: ['四人的讀法', '避諱讀法']
         },
         sourceItem: { value: 'review_4', kanji: '四人', reading: 'よにん' }
     },
@@ -2977,7 +2977,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '3人以上的「人」讀「にん」，1人2人讀「り」（ひとり、ふたり）。',
-            relatedRules: ['人數の讀法規則', '〜人の讀み分け']
+            relatedRules: ['人數的讀法規則', '〜人の讀み分け']
         },
         sourceItem: { value: 'review_nin', kanji: '〜人', reading: 'にん' }
     },
@@ -3023,7 +3023,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '7人可讀「しちにん」或「ななにん」，兩者皆可。',
-            relatedRules: ['七人の讀法', '7の讀み方']
+            relatedRules: ['七人的讀法', '7の讀み方']
         },
         sourceItem: { value: 'review_7', kanji: '七人', reading: 'しちにん/ななにん' }
     },
@@ -3044,7 +3044,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '9人可讀「きゅうにん」或「くにん」，兩者皆可。',
-            relatedRules: ['九人の讀法', '9の讀み方']
+            relatedRules: ['九人的讀法', '9の讀み方']
         },
         sourceItem: { value: 'review_9', kanji: '九人', reading: 'きゅうにん/くにん' }
     },
@@ -3065,7 +3065,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '1人（ひとり）、2人（ふたり）用訓讀，3人（さんにん）開始用音讀。',
-            relatedRules: ['人數の讀法規則', '訓讀→音讀の切り替え']
+            relatedRules: ['人數的讀法規則', '訓讀→音讀の切り替え']
         },
         sourceItem: { value: 'review_start', kanji: '三人', reading: 'さんにん' }
     },
@@ -3093,7 +3093,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「二百四十人」讀作「にひゃくよんじゅうにん」。',
             trapExplanation: '40讀「よんじゅう」避免「しじゅう」。',
-            relatedRules: ['人數の讀法', '240人の讀法']
+            relatedRules: ['人數的讀法', '240人的讀法']
         },
         sourceItem: { value: 240, kanji: '二百四十人', reading: 'にひゃくよんじゅうにん' }
     },
@@ -3103,7 +3103,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十二人」的正確讀音是？',
+        stem: '「十二人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十二人」的正確讀音是？',
         options: [
             { text: 'じゅうににん', isCorrect: true, reason: '正確！「十二人」讀作「じゅうににん」。' },
@@ -3114,7 +3114,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十二人」讀作「じゅうににん」。',
-            relatedRules: ['人數の讀法', '12人の讀法']
+            relatedRules: ['人數的讀法', '12人的讀法']
         },
         sourceItem: { value: 12, kanji: '十二人', reading: 'じゅうににん' }
     },
@@ -3135,7 +3135,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十三人」讀作「じゅうさんにん」。',
-            relatedRules: ['人數の讀法', '13人の讀法']
+            relatedRules: ['人數的讀法', '13人的讀法']
         },
         sourceItem: { value: 13, kanji: '十三人', reading: 'じゅうさんにん' }
     },
@@ -3160,7 +3160,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十五人」讀作「じゅうごにん」。',
-            relatedRules: ['人數の讀法', '15人の讀法']
+            relatedRules: ['人數的讀法', '15人的讀法']
         },
         sourceItem: { value: 15, kanji: '十五人', reading: 'じゅうごにん' }
     },
@@ -3170,7 +3170,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十六人」的正確讀音是？',
+        stem: '「十六人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十六人」的正確讀音是？',
         options: [
             { text: 'じゅうろくにん', isCorrect: true, reason: '正確！「十六人」讀作「じゅうろくにん」。' },
@@ -3181,7 +3181,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十六人」讀作「じゅうろくにん」。',
-            relatedRules: ['人數の讀法', '16人の讀法']
+            relatedRules: ['人數的讀法', '16人的讀法']
         },
         sourceItem: { value: 16, kanji: '十六人', reading: 'じゅうろくにん' }
     },
@@ -3202,7 +3202,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十七人」可讀「じゅうしちにん」或「じゅうななにん」。',
-            relatedRules: ['人數の讀法', '17人の讀法']
+            relatedRules: ['人數的讀法', '17人的讀法']
         },
         sourceItem: { value: 17, kanji: '十七人', reading: 'じゅうしちにん/じゅうななにん' }
     },
@@ -3227,7 +3227,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十八人」讀作「じゅうはちにん」。',
-            relatedRules: ['人數の讀法', '18人の讀法']
+            relatedRules: ['人數的讀法', '18人的讀法']
         },
         sourceItem: { value: 18, kanji: '十八人', reading: 'じゅうはちにん' }
     },
@@ -3237,7 +3237,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十九人」的正確讀音是？',
+        stem: '「十九人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十九人」的正確讀音是？',
         options: [
             { text: 'じゅうきゅうにん / じゅうくにん', isCorrect: true, reason: '正確！「十九人」可讀兩種。' },
@@ -3248,7 +3248,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十九人」可讀「じゅうきゅうにん」或「じゅうくにん」。',
-            relatedRules: ['人數の讀法', '19人の讀法']
+            relatedRules: ['人數的讀法', '19人的讀法']
         },
         sourceItem: { value: 19, kanji: '十九人', reading: 'じゅうきゅうにん/じゅうくにん' }
     },
@@ -3269,7 +3269,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二十五人」讀作「にじゅうごにん」。',
-            relatedRules: ['人數の讀法', '25人の讀法']
+            relatedRules: ['人數的讀法', '25人的讀法']
         },
         sourceItem: { value: 25, kanji: '二十五人', reading: 'にじゅうごにん' }
     },
@@ -3295,7 +3295,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「三十四人」讀作「さんじゅうよにん」。',
             trapExplanation: '個位4讀「よ」。',
-            relatedRules: ['人數の讀法', '34人の讀法']
+            relatedRules: ['人數的讀法', '34人的讀法']
         },
         sourceItem: { value: 34, kanji: '三十四人', reading: 'さんじゅうよにん' }
     },
@@ -3305,7 +3305,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「三十六人」的正確讀音是？',
+        stem: '「三十六人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三十六人」的正確讀音是？',
         options: [
             { text: 'さんじゅうろくにん', isCorrect: true, reason: '正確！「三十六人」讀作「さんじゅうろくにん」。' },
@@ -3316,7 +3316,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「三十六人」讀作「さんじゅうろくにん」。',
-            relatedRules: ['人數の讀法', '36人の讀法']
+            relatedRules: ['人數的讀法', '36人的讀法']
         },
         sourceItem: { value: 36, kanji: '三十六人', reading: 'さんじゅうろくにん' }
     },
@@ -3337,7 +3337,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「四十二人」讀作「よんじゅうににん」。',
-            relatedRules: ['人數の讀法', '42人の讀法']
+            relatedRules: ['人數的讀法', '42人的讀法']
         },
         sourceItem: { value: 42, kanji: '四十二人', reading: 'よんじゅうににん' }
     },
@@ -3362,7 +3362,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「四十五人」讀作「よんじゅうごにん」。',
-            relatedRules: ['人數の讀法', '45人の讀法']
+            relatedRules: ['人數的讀法', '45人的讀法']
         },
         sourceItem: { value: 45, kanji: '四十五人', reading: 'よんじゅうごにん' }
     },
@@ -3372,7 +3372,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五十二人」的正確讀音是？',
+        stem: '「五十二人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五十二人」的正確讀音是？',
         options: [
             { text: 'ごじゅうににん', isCorrect: true, reason: '正確！「五十二人」讀作「ごじゅうににん」。' },
@@ -3383,7 +3383,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五十二人」讀作「ごじゅうににん」。',
-            relatedRules: ['人數の讀法', '52人の讀法']
+            relatedRules: ['人數的讀法', '52人的讀法']
         },
         sourceItem: { value: 52, kanji: '五十二人', reading: 'ごじゅうににん' }
     },
@@ -3405,7 +3405,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「五十四人」讀作「ごじゅうよにん」。',
             trapExplanation: '個位4讀「よ」。',
-            relatedRules: ['人數の讀法', '54人の讀法']
+            relatedRules: ['人數的讀法', '54人的讀法']
         },
         sourceItem: { value: 54, kanji: '五十四人', reading: 'ごじゅうよにん' }
     },
@@ -3430,7 +3430,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五十七人」可讀「ごじゅうしちにん」或「ごじゅうななにん」。',
-            relatedRules: ['人數の讀法', '57人の讀法']
+            relatedRules: ['人數的讀法', '57人的讀法']
         },
         sourceItem: { value: 57, kanji: '五十七人', reading: 'ごじゅうしちにん/ごじゅうななにん' }
     },
@@ -3440,7 +3440,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五十九人」的正確讀音是？',
+        stem: '「五十九人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五十九人」的正確讀音是？',
         options: [
             { text: 'ごじゅうきゅうにん / ごじゅうくにん', isCorrect: true, reason: '正確！「五十九人」可讀兩種。' },
@@ -3451,7 +3451,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五十九人」可讀「ごじゅうきゅうにん」或「ごじゅうくにん」。',
-            relatedRules: ['人數の讀法', '59人の讀法']
+            relatedRules: ['人數的讀法', '59人的讀法']
         },
         sourceItem: { value: 59, kanji: '五十九人', reading: 'ごじゅうきゅうにん/ごじゅうくにん' }
     },
@@ -3473,7 +3473,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「六十四人」讀作「ろくじゅうよにん」。',
             trapExplanation: '個位4讀「よ」。',
-            relatedRules: ['人數の讀法', '64人の讀法']
+            relatedRules: ['人數的讀法', '64人的讀法']
         },
         sourceItem: { value: 64, kanji: '六十四人', reading: 'ろくじゅうよにん' }
     },
@@ -3498,7 +3498,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二十三人」讀作「にじゅうさんにん」。',
-            relatedRules: ['人數の讀法', '23人の讀法']
+            relatedRules: ['人數的讀法', '23人的讀法']
         },
         sourceItem: { value: 23, kanji: '二十三人', reading: 'にじゅうさんにん' }
     },
@@ -3508,7 +3508,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二十六人」的正確讀音是？',
+        stem: '「二十六人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二十六人」的正確讀音是？',
         options: [
             { text: 'にじゅうろくにん', isCorrect: true, reason: '正確！「二十六人」讀作「にじゅうろくにん」。' },
@@ -3519,7 +3519,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二十六人」讀作「にじゅうろくにん」。',
-            relatedRules: ['人數の讀法', '26人の讀法']
+            relatedRules: ['人數的讀法', '26人的讀法']
         },
         sourceItem: { value: 26, kanji: '二十六人', reading: 'にじゅうろくにん' }
     },
@@ -3540,7 +3540,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二十八人」讀作「にじゅうはちにん」。',
-            relatedRules: ['人數の讀法', '28人の讀法']
+            relatedRules: ['人數的讀法', '28人的讀法']
         },
         sourceItem: { value: 28, kanji: '二十八人', reading: 'にじゅうはちにん' }
     },
@@ -3565,7 +3565,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「九十九人」讀作「きゅうじゅうきゅうにん」。',
-            relatedRules: ['人數の讀法', '99人の讀法']
+            relatedRules: ['人數的讀法', '99人的讀法']
         },
         sourceItem: { value: 99, kanji: '九十九人', reading: 'きゅうじゅうきゅうにん' }
     },
@@ -3575,7 +3575,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「百四人」的正確讀音是？',
+        stem: '「百四人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「百四人」的正確讀音是？',
         options: [
             { text: 'ひゃくよにん', isCorrect: true, reason: '正確！「百四人」讀作「ひゃくよにん」。' },
@@ -3587,7 +3587,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「百四人」讀作「ひゃくよにん」。',
             trapExplanation: '個位4讀「よ」。',
-            relatedRules: ['人數の讀法', '104人の讀法']
+            relatedRules: ['人數的讀法', '104人的讀法']
         },
         sourceItem: { value: 104, kanji: '百四人', reading: 'ひゃくよにん' }
     },
@@ -3608,7 +3608,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「百二十人」讀作「ひゃくにじゅうにん」。',
-            relatedRules: ['人數の讀法', '120人の讀法']
+            relatedRules: ['人數的讀法', '120人的讀法']
         },
         sourceItem: { value: 120, kanji: '百二十人', reading: 'ひゃくにじゅうにん' }
     },
@@ -3633,7 +3633,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「百五十人」讀作「ひゃくごじゅうにん」。',
-            relatedRules: ['人數の讀法', '150人の讀法']
+            relatedRules: ['人數的讀法', '150人的讀法']
         },
         sourceItem: { value: 150, kanji: '百五十人', reading: 'ひゃくごじゅうにん' }
     },
@@ -3643,7 +3643,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二百人」的正確讀音是？',
+        stem: '「二百人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二百人」的正確讀音是？',
         options: [
             { text: 'にひゃくにん', isCorrect: true, reason: '正確！「二百人」讀作「にひゃくにん」。' },
@@ -3655,7 +3655,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「二百人」讀作「にひゃくにん」。',
             trapExplanation: '「二百」讀「にひゃく」，不濁音化。',
-            relatedRules: ['人數の讀法', '200人の讀法']
+            relatedRules: ['人數的讀法', '200人的讀法']
         },
         sourceItem: { value: 200, kanji: '二百人', reading: 'にひゃくにん' }
     },
@@ -3676,7 +3676,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五百人」讀作「ごひゃくにん」。',
-            relatedRules: ['人數の讀法', '500人の讀法']
+            relatedRules: ['人數的讀法', '500人的讀法']
         },
         sourceItem: { value: 500, kanji: '五百人', reading: 'ごひゃくにん' }
     },
@@ -3701,7 +3701,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「七百人」讀作「ななひゃくにん」。',
-            relatedRules: ['人數の讀法', '700人の讀法']
+            relatedRules: ['人數的讀法', '700人的讀法']
         },
         sourceItem: { value: 700, kanji: '七百人', reading: 'ななひゃくにん' }
     },
@@ -3711,7 +3711,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「九百人」的正確讀音是？',
+        stem: '「九百人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「九百人」的正確讀音是？',
         options: [
             { text: 'きゅうひゃくにん', isCorrect: true, reason: '正確！「九百人」讀作「きゅうひゃくにん」。' },
@@ -3722,7 +3722,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「九百人」讀作「きゅうひゃくにん」。',
-            relatedRules: ['人數の讀法', '900人の讀法']
+            relatedRules: ['人數的讀法', '900人的讀法']
         },
         sourceItem: { value: 900, kanji: '九百人', reading: 'きゅうひゃくにん' }
     },
@@ -3743,7 +3743,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二千人」讀作「にせんにん」。',
-            relatedRules: ['人數の讀法', '2000人の讀法']
+            relatedRules: ['人數的讀法', '2000人的讀法']
         },
         sourceItem: { value: 2000, kanji: '二千人', reading: 'にせんにん' }
     },
@@ -3770,7 +3770,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「四千人」讀作「よんせんにん」。',
-            relatedRules: ['人數の讀法', '4000人の讀法']
+            relatedRules: ['人數的讀法', '4000人的讀法']
         },
         sourceItem: { value: 4000, kanji: '四千人', reading: 'よんせんにん' }
     },
@@ -3780,7 +3780,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五千人」的正確讀音是？',
+        stem: '「五千人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五千人」的正確讀音是？',
         options: [
             { text: 'ごせんにん', isCorrect: true, reason: '正確！「五千人」讀作「ごせんにん」。' },
@@ -3791,7 +3791,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五千人」讀作「ごせんにん」。',
-            relatedRules: ['人數の讀法', '5000人の讀法']
+            relatedRules: ['人數的讀法', '5000人的讀法']
         },
         sourceItem: { value: 5000, kanji: '五千人', reading: 'ごせんにん' }
     },
@@ -3812,7 +3812,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「六千人」讀作「ろくせんにん」。',
-            relatedRules: ['人數の讀法', '6000人の讀法']
+            relatedRules: ['人數的讀法', '6000人的讀法']
         },
         sourceItem: { value: 6000, kanji: '六千人', reading: 'ろくせんにん' }
     },
@@ -3837,7 +3837,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「七千人」讀作「ななせんにん」。',
-            relatedRules: ['人數の讀法', '7000人の讀法']
+            relatedRules: ['人數的讀法', '7000人的讀法']
         },
         sourceItem: { value: 7000, kanji: '七千人', reading: 'ななせんにん' }
     },
@@ -3847,7 +3847,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「九千人」的正確讀音是？',
+        stem: '「九千人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「九千人」的正確讀音是？',
         options: [
             { text: 'きゅうせんにん', isCorrect: true, reason: '正確！「九千人」讀作「きゅうせんにん」。' },
@@ -3858,7 +3858,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「九千人」讀作「きゅうせんにん」。',
-            relatedRules: ['人數の讀法', '9000人の讀法']
+            relatedRules: ['人數的讀法', '9000人的讀法']
         },
         sourceItem: { value: 9000, kanji: '九千人', reading: 'きゅうせんにん' }
     },
@@ -3879,7 +3879,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二萬人」讀作「にまんにん」。',
-            relatedRules: ['人數の讀法', '20000人の讀法']
+            relatedRules: ['人數的讀法', '20000人的讀法']
         },
         sourceItem: { value: 20000, kanji: '二万人', reading: 'にまんにん' }
     },
@@ -3904,7 +3904,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五萬人」讀作「ごまんにん」。',
-            relatedRules: ['人數の讀法', '50000人の讀法']
+            relatedRules: ['人數的讀法', '50000人的讀法']
         },
         sourceItem: { value: 50000, kanji: '五万人', reading: 'ごまんにん' }
     },
@@ -3914,7 +3914,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         subcategory: 'people',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十萬人」的正確讀音是？',
+        stem: '「十萬人」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十萬人」的正確讀音是？',
         options: [
             { text: 'じゅうまんにん', isCorrect: true, reason: '正確！「十萬人」讀作「じゅうまんにん」。' },
@@ -3925,7 +3925,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十萬人」讀作「じゅうまんにん」。',
-            relatedRules: ['人數の讀法', '100000人の讀法']
+            relatedRules: ['人數的讀法', '100000人的讀法']
         },
         sourceItem: { value: 100000, kanji: '十万人', reading: 'じゅうまんにん' }
     },
@@ -3947,7 +3947,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四人」讀作「よにん」。',
             trapExplanation: '4讀「よ」避免「しにん」諧音。',
-            relatedRules: ['四人の讀法', '避諱讀法']
+            relatedRules: ['四人的讀法', '避諱讀法']
         },
         sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
     },
@@ -3973,7 +3973,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「二人」讀作「ふたり」，使用訓讀。',
             trapExplanation: '2人固定用訓讀「ふたり」。',
-            relatedRules: ['人數の訓讀規則', '二人の讀法']
+            relatedRules: ['人數的訓讀規則', '二人的讀法']
         },
         sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
     },
@@ -3995,7 +3995,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「一人」讀作「ひとり」，使用訓讀。',
             trapExplanation: '1人固定用訓讀「ひとり」。',
-            relatedRules: ['人數の訓讀規則', '一人の讀法']
+            relatedRules: ['人數的訓讀規則', '一人的讀法']
         },
         sourceItem: { value: 1, kanji: '一人', reading: 'ひとり' }
     },
@@ -4016,7 +4016,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「三人」讀作「さんにん」。',
-            relatedRules: ['人數の讀法', '3人の讀法']
+            relatedRules: ['人數的讀法', '3人的讀法']
         },
         sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
     },
@@ -4041,7 +4041,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「六人」讀作「ろくにん」。',
-            relatedRules: ['人數の讀法', '6人の讀法']
+            relatedRules: ['人數的讀法', '6人的讀法']
         },
         sourceItem: { value: 6, kanji: '六人', reading: 'ろくにん' }
     },
@@ -4062,7 +4062,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「大人」讀「おとな」表示成年人，與人數無關。',
-            relatedRules: ['人的相關詞彙', '大人の讀法']
+            relatedRules: ['人的相關詞彙', '大人的讀法']
         },
         sourceItem: { value: 'adult', kanji: '大人', reading: 'おとな' }
     },
@@ -4083,7 +4083,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「子供」讀「こども」表示小孩，與人數無關。',
-            relatedRules: ['人的相關詞彙', '子供の讀法']
+            relatedRules: ['人的相關詞彙', '子供的讀法']
         },
         sourceItem: { value: 'child', kanji: '子供', reading: 'こども' }
     },
@@ -4150,7 +4150,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「日本人」讀作「にほんじん」，國籍用「じん」。',
-            relatedRules: ['國籍の讀法', '〜人（じん）']
+            relatedRules: ['國籍的讀法', '〜人（じん）']
         },
         sourceItem: { value: 'Japanese', kanji: '日本人', reading: 'にほんじん' }
     },
@@ -4175,7 +4175,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「台湾人」讀作「たいわんじん」，國籍用「じん」。',
-            relatedRules: ['國籍の讀法', '〜人（じん）']
+            relatedRules: ['國籍的讀法', '〜人（じん）']
         },
         sourceItem: { value: 'Taiwanese', kanji: '台湾人', reading: 'たいわんじん' }
     },
@@ -4217,7 +4217,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '1人（ひとり）、2人（ふたり）使用訓讀，3人開始用音讀。',
-            relatedRules: ['人數の訓讀規則', '特殊讀法']
+            relatedRules: ['人數的訓讀規則', '特殊讀法']
         },
         sourceItem: { value: 'review_kun', kanji: '1人、2人', reading: 'ひとり、ふたり' }
     },
@@ -4242,7 +4242,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '4讀「よ」避免「しにん」與「死人」同音。',
-            relatedRules: ['四人の讀法', '避諱讀法']
+            relatedRules: ['四人的讀法', '避諱讀法']
         },
         sourceItem: { value: 'review_4', kanji: '四人', reading: 'よにん' }
     },
@@ -4263,7 +4263,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '7人可讀「しちにん」或「ななにん」，兩種皆可。',
-            relatedRules: ['七人の讀法', '7の讀み方']
+            relatedRules: ['七人的讀法', '7の讀み方']
         },
         sourceItem: { value: 'review_7', kanji: '七人', reading: 'しちにん/ななにん' }
     },
@@ -4284,7 +4284,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '9人可讀「きゅうにん」或「くにん」，兩種皆可。',
-            relatedRules: ['九人の讀法', '9の讀み方']
+            relatedRules: ['九人的讀法', '9の讀み方']
         },
         sourceItem: { value: 'review_9', kanji: '九人', reading: 'きゅうにん/くにん' }
     },
@@ -4309,7 +4309,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '3/6/8百有音變，3/8千有音變。',
-            relatedRules: ['百の音變', '千の音變']
+            relatedRules: ['百的音變', '千的音變']
         },
         sourceItem: { value: 'review_change', kanji: '音變規則', reading: '3/6/8百、3/8千' }
     },
@@ -4352,7 +4352,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '1人(ひとり)、4人(よにん)、10人(じゅうにん)是正確讀法。',
             trapExplanation: '注意1人用訓讀，4人的4讀「よ」。',
-            relatedRules: ['人數の讀法規則', '特殊讀法']
+            relatedRules: ['人數的讀法規則', '特殊讀法']
         },
         sourceItem: { value: 'review_combo', kanji: '1人/4人/10人', reading: 'ひとり/よにん/じゅうにん' }
     },
@@ -4378,7 +4378,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '2人(ふたり)、3人(さんにん)、7人(しちにん/ななにん)是正確讀法。',
             trapExplanation: '注意2人用訓讀，3人開始用音讀。',
-            relatedRules: ['人數の讀法規則', '訓讀→音讀']
+            relatedRules: ['人數的讀法規則', '訓讀→音讀']
         },
         sourceItem: { value: 'review_combo2', kanji: '2人/3人/7人', reading: 'ふたり/さんにん/しちにん' }
     },
@@ -4445,7 +4445,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「人間」讀「にんげん」表示人類。',
-            relatedRules: ['人的相關詞彙', '人間の讀法']
+            relatedRules: ['人的相關詞彙', '人間的讀法']
         },
         sourceItem: { value: 'human', kanji: '人間', reading: 'にんげん' }
     },
@@ -4466,7 +4466,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '8人(はちにん)、14人(じゅうよにん)、24人(にじゅうよにん)都是正確讀法。',
-            relatedRules: ['人數の讀法規則', '4の特殊讀法']
+            relatedRules: ['人數的讀法規則', '4的特殊讀法']
         },
         sourceItem: { value: 'review_combo3', kanji: '8人/14人/24人', reading: '含4的人數' }
     },
@@ -4487,7 +4487,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '百人以上遵循「數字+にん」，注意3/6/8百、3/8千的音變。',
-            relatedRules: ['人數の讀法規則', '大數字の讀法']
+            relatedRules: ['人數的讀法規則', '大數字的讀法']
         },
         sourceItem: { value: 'review_large', kanji: '百人以上', reading: '數字+にん' }
     },
@@ -4533,7 +4533,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「三人」讀作「さんにん」，從3人開始使用音讀系統。',
-            relatedRules: ['人數の讀法總整理', '恭喜完成學習']
+            relatedRules: ['人數的讀法總整理', '恭喜完成學習']
         },
         sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
     }

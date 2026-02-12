@@ -12,19 +12,19 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「月曜日」的正確讀音是？',
+        stem: '「月曜日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「月曜日」的正確讀音是？',
         options: [
-            { text: 'げつようび', isCorrect: true, reason: '正確{せいかく}！「月曜日{げつようび}」讀作{どくさ}「げつようび」。' },
-            { text: 'がつようび', isCorrect: false, reason: '陷阱{かんけい}！「月{がつ}」是月份{げっぷん}の讀法{よみかた}，星期一{げつようび}讀む{よむ}「げつ」。' },
-            { text: 'つきようび', isCorrect: false, reason: '「つき」是「月亮{つき}」の訓讀{くんどく}，星期{ようび}使用{しよう}音讀{おんどく}。' },
-            { text: 'げつよび', isCorrect: false, reason: '缺少{けっしょう}「う」，正確{せいかく}は「げつようび」。' }
+            { text: 'げつようび', isCorrect: true, reason: '正確！「月曜日{げつようび}」讀作「げつようび」。' },
+            { text: 'がつようび', isCorrect: false, reason: '陷阱！「月{がつ}」是月份的讀法，星期一讀「げつ」。' },
+            { text: 'つきようび', isCorrect: false, reason: '「つき」是「月亮」的訓讀，星期使用音讀。' },
+            { text: 'げつよび', isCorrect: false, reason: '缺少「う」，正確「げつようび」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「月曜日{げつようび}」讀作{どくさ}「げつようび」。「月{げつ}」在星期{ようび}中使用{しよう}音讀{おんどく}「げつ」，與月份{げっぷん}の「がつ」不同{ふどう}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。學習者{がくしゅうしゃ}容易{ようい}混淆{こんこう}月份{げっぷん}の「〜がつ」與星期{ようび}の「げつ〜」讀法{よみかた}。',
-            relatedRules: ['「げつ」vs「がつ」の區別{くべつ}', '曜日{ようび}の讀法{よみかた}']
+            correctRule: '「月曜日{げつようび}」讀作「げつようび」。「月{げつ}」在星期中使用音讀「げつ」，與月份的「がつ」不同。',
+            trapExplanation: '這是陷阱題。學習者容易混淆月份的「〜がつ」與星期的「げつ〜」讀法。',
+            relatedRules: ['「げつ」vs「がつ」的區別', '曜日的讀法']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -37,15 +37,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         stem: '今日は＿＿です。週の始まりです。',
         stem_zh: '今天是星期一，是一週的開始。',
         options: [
-            { text: 'がつようび', isCorrect: false, reason: '「がつ」是月份{げっぷん}の讀法{よみかた}。' },
-            { text: 'げつようび', isCorrect: true, reason: '正確{せいかく}！星期一{げつようび}讀作{どくさ}「げつようび」。' },
-            { text: 'つきようび', isCorrect: false, reason: '星期{ようび}使用{しよう}音讀{おんどく}「げつ」不是訓讀{くんどく}「つき」。' },
-            { text: 'もくようび', isCorrect: false, reason: '這是木曜日{もくようび}（星期四{もくようび}）の讀法{よみかた}。' }
+            { text: 'がつようび', isCorrect: false, reason: '「がつ」是月份的讀法。' },
+            { text: 'げつようび', isCorrect: true, reason: '正確！星期一讀作「げつようび」。' },
+            { text: 'つきようび', isCorrect: false, reason: '星期使用音讀「げつ」不是訓讀「つき」。' },
+            { text: 'もくようび', isCorrect: false, reason: '這是木曜日（星期四）的讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「月曜日{げつようび}」是一週{いっしゅう}の開始{かいし}，讀作{どくさ}「げつようび」。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '一週{いっしゅう}の順序{じゅんじょ}']
+            correctRule: '「月曜日{げつようび}」是一週的開始，讀作「げつようび」。',
+            relatedRules: ['曜日的讀法', '一週的順序']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -62,15 +62,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（星期一）'
         },
         options: [
-            { text: 'がつようび', isCorrect: false, reason: '「がつ」是月份{げっぷん}の讀法{よみかた}。' },
-            { text: 'げつようび', isCorrect: true, reason: '正確{せいかく}！會議{かいぎ}在星期一{げつようび}。' },
-            { text: 'いちようび', isCorrect: false, reason: '星期{ようび}不使用{しよう}數字{すうじ}讀法{よみかた}。' },
-            { text: 'げつよう', isCorrect: false, reason: '缺少{けっしょう}「び」，正確{せいかく}は「げつようび」。' }
+            { text: 'がつようび', isCorrect: false, reason: '「がつ」是月份的讀法。' },
+            { text: 'げつようび', isCorrect: true, reason: '正確！會議在星期一。' },
+            { text: 'いちようび', isCorrect: false, reason: '星期不使用數字讀法。' },
+            { text: 'げつよう', isCorrect: false, reason: '缺少「び」，正確「げつようび」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '回答{かいとう}「何曜日{なんようび}」時{とき}，星期一{げつようび}讀作{どくさ}「げつようび」。',
-            relatedRules: ['曜日{ようび}の質問{しつもん}與回答{かいとう}', '「何曜日{なんようび}」の使用{しよう}']
+            correctRule: '回答「何曜日{なんようび}」時，星期一讀作「げつようび」。',
+            relatedRules: ['曜日的質問與回答', '「何曜日」的使用']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -82,18 +82,18 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「火曜日」的正確讀音是？',
+        stem: '「火曜日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「火曜日」的正確讀音是？',
         options: [
-            { text: 'かようび', isCorrect: true, reason: '正確{せいかく}！「火曜日{かようび}」讀作{どくさ}「かようび」。' },
-            { text: 'ひようび', isCorrect: false, reason: '「ひ」是「火{ひ}」の訓讀{くんどく}，星期{ようび}使用{しよう}音讀{おんどく}「か」。' },
-            { text: 'ほようび', isCorrect: false, reason: '「ほ」不是「火{か}」の讀法{よみかた}。' },
-            { text: 'かよび', isCorrect: false, reason: '缺少{けっしょう}「う」，正確{せいかく}は「かようび」。' }
+            { text: 'かようび', isCorrect: true, reason: '正確！「火曜日{かようび}」讀作「かようび」。' },
+            { text: 'ひようび', isCorrect: false, reason: '「ひ」是「火{ひ}」的訓讀，星期使用音讀「か」。' },
+            { text: 'ほようび', isCorrect: false, reason: '「ほ」不是「火{か}」的讀法。' },
+            { text: 'かよび', isCorrect: false, reason: '缺少「う」，正確「かようび」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「火曜日{かようび}」讀作{どくさ}「かようび」，「火{か}」使用{しよう}音讀{おんどく}。火星{かせい}（Mars）主宰{しゅさい}之日{ひ}。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '七曜{しちよう}の起源{きげん}']
+            correctRule: '「火曜日{かようび}」讀作「かようび」，「火{か}」使用音讀。火星（Mars）主宰之日。',
+            relatedRules: ['曜日的讀法', '七曜的起源']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -106,15 +106,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         stem: '＿＿は燃えるごみの日です。',
         stem_zh: '星期二是可燃垃圾日。',
         options: [
-            { text: 'ひようび', isCorrect: false, reason: '「ひ」是訓讀{くんどく}，星期{ようび}使用{しよう}音讀{おんどく}。' },
-            { text: 'かようび', isCorrect: true, reason: '正確{せいかく}！火曜日{かようび}常是垃圾{ごみ}收集{しゅうしゅう}日。' },
-            { text: 'ひよう', isCorrect: false, reason: '不完整{ふかんせい}且讀法{よみかた}錯誤{ごさつ}。' },
-            { text: 'かよう', isCorrect: false, reason: '缺少{けっしょう}「び」，正確{せいかく}は「かようび」。' }
+            { text: 'ひようび', isCorrect: false, reason: '「ひ」是訓讀，星期使用音讀。' },
+            { text: 'かようび', isCorrect: true, reason: '正確！火曜日{かようび}常是垃圾收集日。' },
+            { text: 'ひよう', isCorrect: false, reason: '不完整且讀法錯誤。' },
+            { text: 'かよう', isCorrect: false, reason: '缺少「び」，正確「かようび」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「火曜日{かようび}」在日本{にほん}常是可燃{かねん}垃圾{ごみ}收集{しゅうしゅう}日。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '日本{にほん}の垃圾{ごみ}分類{ぶんるい}']
+            correctRule: '「火曜日{かようび}」在日本常是可燃垃圾收集日。',
+            relatedRules: ['曜日的讀法', '日本的垃圾分類']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -131,15 +131,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
             speakerB: '来週の＿＿です。（星期二）'
         },
         options: [
-            { text: 'ひようび', isCorrect: false, reason: '「ひ」是訓讀{くんどく}，不用於{もちいず}星期{ようび}。' },
-            { text: 'かようび', isCorrect: true, reason: '正確{せいかく}！下週{らいしゅう}星期二{かようび}有考試{しけん}。' },
-            { text: 'にようび', isCorrect: false, reason: '這是「二」の讀法{よみかた}，火曜日{かようび}讀む{よむ}「か」。' },
-            { text: 'げつようび', isCorrect: false, reason: '這是月曜日{げつようび}（星期一{げつようび}）。' }
+            { text: 'ひようび', isCorrect: false, reason: '「ひ」是訓讀，不用於星期。' },
+            { text: 'かようび', isCorrect: true, reason: '正確！下週星期二有考試。' },
+            { text: 'にようび', isCorrect: false, reason: '這是「二」的讀法，火曜日讀「か」。' },
+            { text: 'げつようび', isCorrect: false, reason: '這是月曜日（星期一）。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「来週{らいしゅう}の火曜日{かようび}」表示{ひょうじ}下週{らいしゅう}星期二{かようび}。',
-            relatedRules: ['曜日{ようび}の使用{しよう}', '時間{じかん}表達{ひょうたつ}']
+            correctRule: '「来週の火曜日{かようび}」表示下週星期二。',
+            relatedRules: ['曜日的使用', '時間表達']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -151,18 +151,18 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「水曜日」的正確讀音是？',
+        stem: '「水曜日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「水曜日」的正確讀音是？',
         options: [
-            { text: 'すいようび', isCorrect: true, reason: '正確{せいかく}！「水曜日{すいようび}」讀作{どくさ}「すいようび」。' },
-            { text: 'みずようび', isCorrect: false, reason: '「みず」是「水{みず}」の訓讀{くんどく}，星期{ようび}使用{しよう}音讀{おんどく}「すい」。' },
-            { text: 'しようび', isCorrect: false, reason: '「し」不是「水{すい}」の讀法{よみかた}。' },
-            { text: 'すいよび', isCorrect: false, reason: '缺少{けっしょう}「う」，正確{せいかく}は「すいようび」。' }
+            { text: 'すいようび', isCorrect: true, reason: '正確！「水曜日{すいようび}」讀作「すいようび」。' },
+            { text: 'みずようび', isCorrect: false, reason: '「みず」是「水{みず}」的訓讀，星期使用音讀「すい」。' },
+            { text: 'しようび', isCorrect: false, reason: '「し」不是「水{すい}」的讀法。' },
+            { text: 'すいよび', isCorrect: false, reason: '缺少「う」，正確「すいようび」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「水曜日{すいようび}」讀作{どくさ}「すいようび」，「水{すい}」使用{しよう}音讀{おんどく}。水星{すいせい}（Mercury）主宰{しゅさい}之日{ひ}。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '音讀{おんどく}vs訓讀{くんどく}']
+            correctRule: '「水曜日{すいようび}」讀作「すいようび」，「水{すい}」使用音讀。水星（Mercury）主宰之日。',
+            relatedRules: ['曜日的讀法', '音讀vs訓讀']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -175,15 +175,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         stem: '＿＿は週の真ん中です。',
         stem_zh: '星期三是一週的中間。',
         options: [
-            { text: 'みずようび', isCorrect: false, reason: '「みず」是訓讀{くんどく}，星期{ようび}使用{しよう}音讀{おんどく}。' },
-            { text: 'すいようび', isCorrect: true, reason: '正確{せいかく}！水曜日{すいようび}是一週{いっしゅう}の中間{ちゅうかん}。' },
-            { text: 'すいよう', isCorrect: false, reason: '缺少{けっしょう}「び」。' },
-            { text: 'さんようび', isCorrect: false, reason: '星期{ようび}不使用{しよう}數字{すうじ}「三{さん}」。' }
+            { text: 'みずようび', isCorrect: false, reason: '「みず」是訓讀，星期使用音讀。' },
+            { text: 'すいようび', isCorrect: true, reason: '正確！水曜日{すいようび}是一週的中間。' },
+            { text: 'すいよう', isCorrect: false, reason: '缺少「び」。' },
+            { text: 'さんようび', isCorrect: false, reason: '星期不使用數字「三」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「水曜日{すいようび}」位於{いち}一週{いっしゅう}の中間{ちゅうかん}，讀作{どくさ}「すいようび」。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '一週{いっしゅう}の順序{じゅんじょ}']
+            correctRule: '「水曜日{すいようび}」位於一週的中間，讀作「すいようび」。',
+            relatedRules: ['曜日的讀法', '一週的順序']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -200,15 +200,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
             speakerB: 'いつも＿＿に見ます。（星期三）'
         },
         options: [
-            { text: 'みずようび', isCorrect: false, reason: '星期{ようび}使用{しよう}音讀{おんどく}「すい」。' },
-            { text: 'すいようび', isCorrect: true, reason: '正確{せいかく}！每週{まいしゅう}水曜日{すいようび}看電影{えいが}。' },
-            { text: 'もくようび', isCorrect: false, reason: '這是木曜日{もくようび}（星期四{もくようび}）。' },
-            { text: 'かようび', isCorrect: false, reason: '這是火曜日{かようび}（星期二{かようび}）。' }
+            { text: 'みずようび', isCorrect: false, reason: '星期使用音讀「すい」。' },
+            { text: 'すいようび', isCorrect: true, reason: '正確！每週水曜日{すいようび}看電影。' },
+            { text: 'もくようび', isCorrect: false, reason: '這是木曜日（星期四）。' },
+            { text: 'かようび', isCorrect: false, reason: '這是火曜日（星期二）。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「水曜日{すいようび}に〜」表示{ひょうじ}在星期三{すいようび}做某事{なにか}。',
-            relatedRules: ['曜日{ようび}+に', '習慣{しゅうかん}の表達{ひょうたつ}']
+            correctRule: '「水曜日{すいようび}に〜」表示在星期三做某事。',
+            relatedRules: ['曜日+に', '習慣的表達']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -220,18 +220,18 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「木曜日」的正確讀音是？',
+        stem: '「木曜日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「木曜日」的正確讀音是？',
         options: [
-            { text: 'もくようび', isCorrect: true, reason: '正確{せいかく}！「木曜日{もくようび}」讀作{どくさ}「もくようび」。' },
-            { text: 'きようび', isCorrect: false, reason: '「き」是「木{き}」の訓讀{くんどく}，星期{ようび}使用{しよう}音讀{おんどく}「もく」。' },
-            { text: 'ぼくようび', isCorrect: false, reason: '「ぼく」不是「木{もく}」の讀法{よみかた}，不濁音化{ふだくおんか}。' },
-            { text: 'もくよび', isCorrect: false, reason: '缺少{けっしょう}「う」，正確{せいかく}は「もくようび」。' }
+            { text: 'もくようび', isCorrect: true, reason: '正確！「木曜日{もくようび}」讀作「もくようび」。' },
+            { text: 'きようび', isCorrect: false, reason: '「き」是「木{き}」的訓讀，星期使用音讀「もく」。' },
+            { text: 'ぼくようび', isCorrect: false, reason: '「ぼく」不是「木{もく}」的讀法，不濁音化。' },
+            { text: 'もくよび', isCorrect: false, reason: '缺少「う」，正確「もくようび」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「木曜日{もくようび}」讀作{どくさ}「もくようび」，「木{もく}」使用{しよう}音讀{おんどく}。木星{もくせい}（Jupiter）主宰{しゅさい}之日{ひ}。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '七曜{しちよう}與行星{こうせい}']
+            correctRule: '「木曜日{もくようび}」讀作「もくようび」，「木{もく}」使用音讀。木星（Jupiter）主宰之日。',
+            relatedRules: ['曜日的讀法', '七曜與行星']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -244,15 +244,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         stem: '＿＿はサッカーの練習があります。',
         stem_zh: '星期四有足球練習。',
         options: [
-            { text: 'きようび', isCorrect: false, reason: '「き」是訓讀{くんどく}，星期{ようび}使用{しよう}音讀{おんどく}「もく」。' },
-            { text: 'もくようび', isCorrect: true, reason: '正確{せいかく}！木曜日{もくようび}有足球{サッカー}練習{れんしゅう}。' },
-            { text: 'ぼくようび', isCorrect: false, reason: '「木{もく}」不濁音化{ふだくおんか}。' },
-            { text: 'よんようび', isCorrect: false, reason: '星期{ようび}不使用{しよう}數字{すうじ}「四{よん}」。' }
+            { text: 'きようび', isCorrect: false, reason: '「き」是訓讀，星期使用音讀「もく」。' },
+            { text: 'もくようび', isCorrect: true, reason: '正確！木曜日{もくようび}有足球練習。' },
+            { text: 'ぼくようび', isCorrect: false, reason: '「木{もく}」不濁音化。' },
+            { text: 'よんようび', isCorrect: false, reason: '星期不使用數字「四」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「木曜日{もくようび}」讀作{どくさ}「もくようび」，常用於{もちいる}表達{ひょうたつ}課外{かがい}活動{かつどう}。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '日程{にってい}表達{ひょうたつ}']
+            correctRule: '「木曜日{もくようび}」讀作「もくようび」，常用於表達課外活動。',
+            relatedRules: ['曜日的讀法', '日程表達']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -269,15 +269,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
             speakerB: '毎週＿＿です。（星期四）'
         },
         options: [
-            { text: 'きようび', isCorrect: false, reason: '「き」是訓讀{くんどく}，不用於{もちいず}星期{ようび}。' },
-            { text: 'もくようび', isCorrect: true, reason: '正確{せいかく}！每週{まいしゅう}木曜日{もくようび}有日語課{にほんごクラス}。' },
-            { text: 'すいようび', isCorrect: false, reason: '這是水曜日{すいようび}（星期三{すいようび}）。' },
-            { text: 'きんようび', isCorrect: false, reason: '這是金曜日{きんようび}（星期五{きんようび}）。' }
+            { text: 'きようび', isCorrect: false, reason: '「き」是訓讀，不用於星期。' },
+            { text: 'もくようび', isCorrect: true, reason: '正確！每週木曜日{もくようび}有日語課。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「毎週{まいしゅう}木曜日{もくようび}」表示{ひょうじ}每週{まいしゅう}星期四{もくようび}。',
-            relatedRules: ['曜日{ようび}の使用{しよう}', '「毎週{まいしゅう}」の用法{ようほう}']
+            correctRule: '「毎週木曜日{もくようび}」表示每週星期四。',
+            relatedRules: ['曜日的使用', '「毎週」的用法']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -289,18 +289,18 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「金曜日」的正確讀音是？',
+        stem: '「金曜日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「金曜日」的正確讀音是？',
         options: [
-            { text: 'きんようび', isCorrect: true, reason: '正確{せいかく}！「金曜日{きんようび}」讀作{どくさ}「きんようび」。' },
-            { text: 'かねようび', isCorrect: false, reason: '「かね」是「金{かね}」（錢{かね}）の訓讀{くんどく}，星期{ようび}使用{しよう}音讀{おんどく}「きん」。' },
-            { text: 'こんようび', isCorrect: false, reason: '「こん」是另一{もういち}讀法{よみかた}（今{こん}），金曜日{きんようび}讀む{よむ}「きん」。' },
-            { text: 'きんよび', isCorrect: false, reason: '缺少{けっしょう}「う」，正確{せいかく}は「きんようび」。' }
+            { text: 'きんようび', isCorrect: true, reason: '正確！「金曜日{きんようび}」讀作「きんようび」。' },
+            { text: 'かねようび', isCorrect: false, reason: '「かね」是「金{かね}」（錢）的訓讀，星期使用音讀「きん」。' },
+            { text: 'こんようび', isCorrect: false, reason: '「こん」是另一讀法（今），金曜日讀「きん」。' },
+            { text: 'きんよび', isCorrect: false, reason: '缺少「う」，正確「きんようび」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「金曜日{きんようび}」讀作{どくさ}「きんようび」，「金{きん}」使用{しよう}音讀{おんどく}。金星{きんせい}（Venus）主宰{しゅさい}之日{ひ}。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '「金{きん}」vs「かね」の區別{くべつ}']
+            correctRule: '「金曜日{きんようび}」讀作「きんようび」，「金{きん}」使用音讀。金星（Venus）主宰之日。',
+            relatedRules: ['曜日的讀法', '「金{きん}」vs「かね」的區別']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -313,15 +313,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         stem: '＿＿の夜は友達と飲みに行きます。',
         stem_zh: '星期五晚上和朋友去喝酒。',
         options: [
-            { text: 'かねようび', isCorrect: false, reason: '「かね」是訓讀{くんどく}，星期{ようび}使用{しよう}音讀{おんどく}「きん」。' },
-            { text: 'きんようび', isCorrect: true, reason: '正確{せいかく}！金曜日{きんようび}の夜{よる}是周末{しゅうまつ}前{まえ}の放鬆{リラックス}時間{じかん}。' },
-            { text: 'ごようび', isCorrect: false, reason: '星期{ようび}不使用{しよう}數字{すうじ}「五{ご}」。' },
-            { text: 'きんよう', isCorrect: false, reason: '缺少{けっしょう}「び」，正確{せいかく}は「きんようび」。' }
+            { text: 'かねようび', isCorrect: false, reason: '「かね」是訓讀，星期使用音讀「きん」。' },
+            { text: 'きんようび', isCorrect: true, reason: '正確！金曜日{きんようび}的夜是周末前的放鬆時間。' },
+            { text: 'ごようび', isCorrect: false, reason: '星期不使用數字「五」。' },
+            { text: 'きんよう', isCorrect: false, reason: '缺少「び」，正確「きんようび」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「金曜日{きんようび}の夜{よる}」是週末{しゅうまつ}前{まえ}の社交{しゃこう}時間{じかん}，讀作{どくさ}「きんようび」。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '日本{にほん}の社交{しゃこう}文化{ぶんか}']
+            correctRule: '「金曜日{きんようび}的夜」是週末前的社交時間，讀作「きんようび」。',
+            relatedRules: ['曜日的讀法', '日本的社交文化']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -338,15 +338,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿から旅行に行きます。（星期五）'
         },
         options: [
-            { text: 'かねようび', isCorrect: false, reason: '星期{ようび}使用{しよう}音讀{おんどく}「きん」不是「かね」。' },
-            { text: 'きんようび', isCorrect: true, reason: '正確{せいかく}！從{から}金曜日{きんようび}開始{はじめ}旅行{りょこう}。' },
-            { text: 'もくようび', isCorrect: false, reason: '這是木曜日{もくようび}（星期四{もくようび}）。' },
-            { text: 'どようび', isCorrect: false, reason: '這是土曜日{どようび}（星期六{どようび}）。' }
+            { text: 'かねようび', isCorrect: false, reason: '星期使用音讀「きん」不是「かね」。' },
+            { text: 'きんようび', isCorrect: true, reason: '正確！從金曜日{きんようび}開始旅行。' },
+            { text: 'もくようび', isCorrect: false, reason: '這是木曜日（星期四）。' },
+            { text: 'どようび', isCorrect: false, reason: '這是土曜日（星期六）。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「金曜日{きんようび}から」表示{ひょうじ}從{から}星期五{きんようび}開始{はじめ}。',
-            relatedRules: ['曜日{ようび}+から', '旅行{りょこう}計畫{けいかく}の表達{ひょうたつ}']
+            correctRule: '「金曜日{きんようび}から」表示從星期五開始。',
+            relatedRules: ['曜日+から', '旅行計畫的表達']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -358,19 +358,19 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「土曜日」的正確讀音是？',
+        stem: '「土曜日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「土曜日」的正確讀音是？',
         options: [
-            { text: 'どようび', isCorrect: true, reason: '正確{せいかく}！「土曜日{どようび}」讀作{どくさ}「どようび」。' },
-            { text: 'とようび', isCorrect: false, reason: '陷阱{かんけい}！「土{ど}」是濁音{だくおん}「ど」，不是清音{せいおん}「と」。' },
-            { text: 'つちようび', isCorrect: false, reason: '「つち」是「土{つち}」の訓讀{くんどく}，星期{ようび}使用{しよう}音讀{おんどく}「ど」。' },
-            { text: 'どよび', isCorrect: false, reason: '缺少{けっしょう}「う」，正確{せいかく}は「どようび」。' }
+            { text: 'どようび', isCorrect: true, reason: '正確！「土曜日{どようび}」讀作「どようび」。' },
+            { text: 'とようび', isCorrect: false, reason: '陷阱！「土{ど}」是濁音「ど」，不是清音「と」。' },
+            { text: 'つちようび', isCorrect: false, reason: '「つち」是「土{つち}」的訓讀，星期使用音讀「ど」。' },
+            { text: 'どよび', isCorrect: false, reason: '缺少「う」，正確「どようび」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「土曜日{どようび}」讀作{どくさ}「どようび」，「土{ど}」使用{しよう}濁音{だくおん}音讀{おんどく}。土星{どせい}（Saturn）主宰{しゅさい}之日{ひ}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「土{ど}」的音讀{おんどく}是濁音{だくおん}「ど」，容易{ようい}誤讀{ごどく}為清音{せいおん}「と」。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '「ど」vs「と」の區別{くべつ}']
+            correctRule: '「土曜日{どようび}」讀作「どようび」，「土{ど}」使用濁音音讀。土星（Saturn）主宰之日。',
+            trapExplanation: '這是陷阱題。「土{ど}」的音讀是濁音「ど」，容易誤讀為清音「と」。',
+            relatedRules: ['曜日的讀法', '「ど」vs「と」的區別']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -383,15 +383,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         stem: '＿＿は家族と買い物に行きます。',
         stem_zh: '星期六和家人去購物。',
         options: [
-            { text: 'とようび', isCorrect: false, reason: '「土{ど}」是濁音{だくおん}「ど」不是「と」。' },
-            { text: 'どようび', isCorrect: true, reason: '正確{せいかく}！土曜日{どようび}是購物{かいもの}日{び}。' },
-            { text: 'つちようび', isCorrect: false, reason: '星期{ようび}使用{しよう}音讀{おんどく}「ど」不是訓讀{くんどく}。' },
-            { text: 'ろくようび', isCorrect: false, reason: '星期{ようび}不使用{しよう}數字{すうじ}「六{ろく}」。' }
+            { text: 'とようび', isCorrect: false, reason: '「土{ど}」是濁音「ど」不是「と」。' },
+            { text: 'どようび', isCorrect: true, reason: '正確！土曜日{どようび}是購物日。' },
+            { text: 'つちようび', isCorrect: false, reason: '星期使用音讀「ど」不是訓讀。' },
+            { text: 'ろくようび', isCorrect: false, reason: '星期不使用數字「六」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「土曜日{どようび}」是週末{しゅうまつ}，常用於{もちいる}家庭{かてい}活動{かつどう}，讀作{どくさ}「どようび」。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '週末{しゅうまつ}の活動{かつどう}']
+            correctRule: '「土曜日{どようび}」是週末，常用於家庭活動，讀作「どようび」。',
+            relatedRules: ['曜日的讀法', '週末的活動']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -408,15 +408,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿の夜です。（星期六）'
         },
         options: [
-            { text: 'とようび', isCorrect: false, reason: '「土{ど}」は濁音{だくおん}「ど」。' },
-            { text: 'どようび', isCorrect: true, reason: '正確{せいかく}！派對{パーティー}在土曜日{どようび}晚上{よる}。' },
-            { text: 'にちようび', isCorrect: false, reason: '這是日曜日{にちようび}（星期日{にちようび}）。' },
-            { text: 'きんようび', isCorrect: false, reason: '這是金曜日{きんようび}（星期五{きんようび}）。' }
+            { text: 'とようび', isCorrect: false, reason: '「土{ど}」は濁音「ど」。' },
+            { text: 'どようび', isCorrect: true, reason: '正確！派對在土曜日{どようび}晚上。' },
+            { text: 'にちようび', isCorrect: false, reason: '這是日曜日（星期日）。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「土曜日{どようび}の夜{よる}」是派對{パーティー}常見{じょうけん}の時間{じかん}。',
-            relatedRules: ['曜日{ようび}の使用{しよう}', '社交{しゃこう}活動{かつどう}']
+            correctRule: '「土曜日{どようび}的夜」是派對常見的時間。',
+            relatedRules: ['曜日的使用', '社交活動']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -428,19 +428,19 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「日曜日」的正確讀音是？',
+        stem: '「日曜日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「日曜日」的正確讀音是？',
         options: [
-            { text: 'にちようび', isCorrect: true, reason: '正確{せいかく}！「日曜日{にちようび}」讀作{どくさ}「にちようび」。' },
-            { text: 'ひようび', isCorrect: false, reason: '陷阱{かんけい}！「ひ」是「日{ひ}」の訓讀{くんどく}，星期{ようび}使用{しよう}音讀{おんどく}「にち」。' },
-            { text: 'じつようび', isCorrect: false, reason: '「じつ」是另一{もういち}音讀{おんどく}（事実{じじつ}等），日曜日{にちようび}讀む{よむ}「にち」。' },
-            { text: 'にちよび', isCorrect: false, reason: '缺少{けっしょう}「う」，正確{せいかく}は「にちようび」。' }
+            { text: 'にちようび', isCorrect: true, reason: '正確！「日曜日{にちようび}」讀作「にちようび」。' },
+            { text: 'ひようび', isCorrect: false, reason: '陷阱！「ひ」是「日{ひ}」的訓讀，星期使用音讀「にち」。' },
+            { text: 'じつようび', isCorrect: false, reason: '「じつ」是另一音讀（事実等），日曜日讀「にち」。' },
+            { text: 'にちよび', isCorrect: false, reason: '缺少「う」，正確「にちようび」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「日曜日{にちようび}」讀作{どくさ}「にちようび」，「日{にち}」使用{しよう}音讀{おんどく}。太陽{たいよう}（Sun）主宰{しゅさい}之日{ひ}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「日{にち}」的訓讀{くんどく}是「ひ」，但星期{ようび}使用{しよう}音讀{おんどく}「にち」。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '「にち」vs「ひ」の區別{くべつ}']
+            correctRule: '「日曜日{にちようび}」讀作「にちようび」，「日{にち}」使用音讀。太陽（Sun）主宰之日。',
+            trapExplanation: '這是陷阱題。「日{にち}」的訓讀是「ひ」，但星期使用音讀「にち」。',
+            relatedRules: ['曜日的讀法', '「にち」vs「ひ」的區別']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -453,15 +453,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         stem: '＿＿は休みです。ゆっくりします。',
         stem_zh: '星期日休息，悠閒度過。',
         options: [
-            { text: 'ひようび', isCorrect: false, reason: '「ひ」是訓讀{くんどく}，星期{ようび}使用{しよう}音讀{おんどく}「にち」。' },
-            { text: 'にちようび', isCorrect: true, reason: '正確{せいかく}！日曜日{にちようび}是休息日{やすみび}。' },
-            { text: 'にちよう', isCorrect: false, reason: '缺少{けっしょう}「び」，正確{せいかく}は「にちようび」。' },
-            { text: 'しちようび', isCorrect: false, reason: '「しち」是「七{しち}」，這裡{ここ}是「日{にち}」。' }
+            { text: 'ひようび', isCorrect: false, reason: '「ひ」是訓讀，星期使用音讀「にち」。' },
+            { text: 'にちようび', isCorrect: true, reason: '正確！日曜日{にちようび}是休息日。' },
+            { text: 'にちよう', isCorrect: false, reason: '缺少「び」，正確「にちようび」。' },
+            { text: 'しちようび', isCorrect: false, reason: '「しち」是「七{しち}」，這裡是「日{にち}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「日曜日{にちようび}」是週末{しゅうまつ}の休息日{やすみび}，讀作{どくさ}「にちようび」。',
-            relatedRules: ['曜日{ようび}の讀法{よみかた}', '休日{きゅうじつ}の表達{ひょうたつ}']
+            correctRule: '「日曜日{にちようび}」是週末的休息日，讀作「にちようび」。',
+            relatedRules: ['曜日的讀法', '休日的表達']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -478,15 +478,15 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（星期日）'
         },
         options: [
-            { text: 'ひようび', isCorrect: false, reason: '星期{ようび}使用{しよう}音讀{おんどく}「にち」不是「ひ」。' },
-            { text: 'にちようび', isCorrect: true, reason: '正確{せいかく}！明天{あした}是日曜日{にちようび}。' },
-            { text: 'どようび', isCorrect: false, reason: '這是土曜日{どようび}（星期六{どようび}）。' },
-            { text: 'げつようび', isCorrect: false, reason: '這是月曜日{げつようび}（星期一{げつようび}）。' }
+            { text: 'ひようび', isCorrect: false, reason: '星期使用音讀「にち」不是「ひ」。' },
+            { text: 'にちようび', isCorrect: true, reason: '正確！明天是日曜日{にちようび}。' },
+            { text: 'どようび', isCorrect: false, reason: '這是土曜日（星期六）。' },
+            { text: 'げつようび', isCorrect: false, reason: '這是月曜日（星期一）。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '回答{かいとう}「何曜日{なんようび}」時{とき}，星期日{にちようび}讀作{どくさ}「にちようび」。',
-            relatedRules: ['曜日{ようび}の質問{しつもん}與回答{かいとう}', '「明日{あした}」の使用{しよう}']
+            correctRule: '回答「何曜日{なんようび}」時，星期日讀作「にちようび」。',
+            relatedRules: ['曜日的質問與回答', '「明日」的使用']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -509,7 +509,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本的醫院通常「日曜日」休診，讀作「にちようび」。',
-            relatedRules: ['曜日の讀法', '日本の醫療制度']
+            relatedRules: ['曜日的讀法', '日本的醫療制度']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -534,7 +534,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本銀行通常「金曜日」為最後營業日，週末休息。',
-            relatedRules: ['曜日の使用', '日本の銀行營業時間']
+            relatedRules: ['曜日的使用', '日本的銀行營業時間']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -544,7 +544,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'sentence',
         isTrap: false,
-        stem: 'スーパーの特売日は毎週＿＿です。',
+        stem: 'スーパー的特売日は毎週＿＿です。',
         stem_zh: '超市的特價日是每週星期三。',
         options: [
             { text: 'すいようび', isCorrect: true, reason: '正確！水曜日是常見的特價日。' },
@@ -555,7 +555,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本超市常在「水曜日」舉辦特賣，讀作「すいようび」。',
-            relatedRules: ['曜日の讀法', '日本の購物習慣']
+            relatedRules: ['曜日的讀法', '日本的購物習慣']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -580,7 +580,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「火曜日」讀「かようび」，「木曜日」讀「もくようび」。',
-            relatedRules: ['曜日の讀法', '複數曜日の表達']
+            relatedRules: ['曜日的讀法', '複數曜日的表達']
         },
         sourceItem: { value: 'Tue/Thu', kanji: '火曜日・木曜日', reading: 'かようび・もくようび' }
     },
@@ -590,7 +590,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'sentence',
         isTrap: true,
-        stem: '「今週の月曜日」の「月」の讀法是？',
+        stem: '「今週の月曜日」の「月」的讀法是？',
         stem_zh: '「今週の月曜日」中「月」的讀法是？',
         options: [
             { text: 'げつ', isCorrect: true, reason: '正確！星期一的「月」讀「げつ」。' },
@@ -602,7 +602,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '星期一「月曜日」的「月」讀「げつ」，與月份的「がつ」不同。',
             trapExplanation: '「げつ」用於星期（月曜日），「がつ」用於月份（一月）。',
-            relatedRules: ['げつ vs がつ', '曜日の讀法']
+            relatedRules: ['げつ vs がつ', '曜日的讀法']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -627,7 +627,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「土曜日」讀作「どようび」，是週末約會的熱門日子。',
-            relatedRules: ['曜日の讀法', '週末の活動']
+            relatedRules: ['曜日的讀法', '週末的活動']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -648,7 +648,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本很多圖書館「月曜日」休館，讀作「げつようび」。',
-            relatedRules: ['曜日の讀法', '公共設施の休館日']
+            relatedRules: ['曜日的讀法', '公共設施的休館日']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -673,7 +673,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「木曜日」讀作「もくようび」，使用音讀「もく」。',
-            relatedRules: ['曜日の讀法', '預約の表達']
+            relatedRules: ['曜日的讀法', '預約的表達']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -696,7 +696,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「先週の水曜日」表示上週星期三，「水曜日」讀「すいようび」。',
-            relatedRules: ['曜日の讀法', '過去時態表達']
+            relatedRules: ['曜日的讀法', '過去時態表達']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -721,7 +721,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「来週の火曜日」表示下週星期二，「火曜日」讀「かようび」。',
-            relatedRules: ['曜日の讀法', '未來時態表達']
+            relatedRules: ['曜日的讀法', '未來時態表達']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -742,7 +742,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「今週の月曜日」表示這週星期一，日本有許多週一的祝日。',
-            relatedRules: ['曜日の讀法', '日本の祝日']
+            relatedRules: ['曜日的讀法', '日本的祝日']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -765,7 +765,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '週末指「土曜日」(どようび)和「日曜日」(にちようび)。',
-            relatedRules: ['曜日の讀法', '週末の概念']
+            relatedRules: ['曜日的讀法', '週末的概念']
         },
         sourceItem: { value: 'Weekend', kanji: '土曜日・日曜日', reading: 'どようび・にちようび' }
     },
@@ -790,7 +790,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '週末計畫常分「土曜日」活動日和「日曜日」休息日。',
-            relatedRules: ['曜日の讀法', '週末の過ごし方']
+            relatedRules: ['曜日的讀法', '週末的過ごし方']
         },
         sourceItem: { value: 'Weekend', kanji: '土曜日・日曜日', reading: 'どようび・にちようび' }
     },
@@ -811,7 +811,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '平日指「月曜日」到「金曜日」，共五天工作日。',
-            relatedRules: ['曜日の讀法', '平日vs週末']
+            relatedRules: ['曜日的讀法', '平日vs週末']
         },
         sourceItem: { value: 'Weekdays', kanji: '月曜日〜金曜日', reading: 'げつようび〜きんようび' }
     },
@@ -834,7 +834,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「毎週金曜日」表示每週星期五的固定習慣。',
-            relatedRules: ['曜日の讀法', '習慣の表達']
+            relatedRules: ['曜日的讀法', '習慣的表達']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -859,7 +859,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「毎週日曜日の朝」表示每週日早晨的運動習慣。',
-            relatedRules: ['曜日の讀法', '運動習慣の表達']
+            relatedRules: ['曜日的讀法', '運動習慣的表達']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -880,7 +880,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '課程常安排在「月曜日」和「水曜日」，隔日上課。',
-            relatedRules: ['曜日の讀法', '課程表の表達']
+            relatedRules: ['曜日的讀法', '課程表的表達']
         },
         sourceItem: { value: 'Mon/Wed', kanji: '月曜日・水曜日', reading: 'げつようび・すいようび' }
     },
@@ -904,7 +904,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '月份用「がつ」（一月＝いちがつ），星期用「げつ」（月曜日＝げつようび）。',
             trapExplanation: '這是最常見的混淆點，務必區分「がつ」和「げつ」。',
-            relatedRules: ['がつ vs げつ', '曜日と月份の區別']
+            relatedRules: ['がつ vs げつ', '曜日と月份的區別']
         },
         sourceItem: { value: 'comparison', kanji: '月', reading: 'がつ/げつ' }
     },
@@ -926,7 +926,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「日曜日」＝日(にち)＋曜(よう)＋日(び)，兩個「日」讀法不同。',
             trapExplanation: '前面的「日」讀「にち」表示太陽，後面的「日」讀「び」表示天。',
-            relatedRules: ['曜日の構成', '「日」の複數讀法']
+            relatedRules: ['曜日的構成', '「日」的複數讀法']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -948,7 +948,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「火」的音讀是「か」，在火事和火曜日中都使用音讀。',
             trapExplanation: '雖然訓讀「ひ」常見於單獨使用，但複合詞多用音讀「か」。',
-            relatedRules: ['火の讀法', '音讀vs訓讀']
+            relatedRules: ['火的讀法', '音讀vs訓讀']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -970,7 +970,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「土」有兩個音讀：土地(とち)用「と」，土曜日(どようび)用「ど」。',
             trapExplanation: '要注意「土」在不同詞中可能清音或濁音。',
-            relatedRules: ['土の讀法', '清音vs濁音']
+            relatedRules: ['土的讀法', '清音vs濁音']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -982,7 +982,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「何曜日」的正確讀法是？',
+        stem: '「何曜日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何曜日」的正確讀法是？',
         options: [
             { text: 'なんようび', isCorrect: true, reason: '正確！「何曜日」讀「なんようび」。' },
@@ -993,7 +993,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「何曜日」讀「なんようび」，用於詢問星期幾。',
-            relatedRules: ['何の讀法', '疑問詞の使用']
+            relatedRules: ['何的讀法', '疑問詞的使用']
         },
         sourceItem: { value: 'What day', kanji: '何曜日', reading: 'なんようび' }
     },
@@ -1018,7 +1018,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '回答「何曜日」時，直接說星期名稱，如「木曜日」。',
-            relatedRules: ['曜日の回答', '日常會話']
+            relatedRules: ['曜日的回答', '日常會話']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -1043,7 +1043,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「でした」是過去式，回答過去某天是哪個星期。',
-            relatedRules: ['曜日の回答', '過去式の使用']
+            relatedRules: ['曜日的回答', '過去式的使用']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -1066,7 +1066,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '七曜源自天體：月曜日對應月亮（Moon），讀「げつようび」。',
-            relatedRules: ['七曜の起源', '曜日と天體']
+            relatedRules: ['七曜的起源', '曜日と天體']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -1087,7 +1087,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '火曜日對應火星（Mars），使用「火」的音讀「か」。',
-            relatedRules: ['七曜の起源', '曜日と惑星']
+            relatedRules: ['七曜的起源', '曜日と惑星']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -1108,7 +1108,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '水曜日對應水星（Mercury），使用「水」的音讀「すい」。',
-            relatedRules: ['七曜の起源', '曜日と惑星']
+            relatedRules: ['七曜的起源', '曜日と惑星']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -1129,7 +1129,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '木曜日對應木星（Jupiter），使用「木」的音讀「もく」。',
-            relatedRules: ['七曜の起源', '曜日と惑星']
+            relatedRules: ['七曜的起源', '曜日と惑星']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -1150,7 +1150,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '金曜日對應金星（Venus），使用「金」的音讀「きん」。',
-            relatedRules: ['七曜の起源', '曜日と惑星']
+            relatedRules: ['七曜的起源', '曜日と惑星']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -1171,7 +1171,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '土曜日對應土星（Saturn），使用「土」的音讀「ど」（濁音）。',
-            relatedRules: ['七曜の起源', '曜日と惑星']
+            relatedRules: ['七曜的起源', '曜日と惑星']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -1192,7 +1192,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日曜日對應太陽（Sun），使用「日」的音讀「にち」。',
-            relatedRules: ['七曜の起源', '曜日と天體']
+            relatedRules: ['七曜的起源', '曜日と天體']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -1215,7 +1215,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「水曜日」讀「すいようび」，「金曜日」讀「きんようび」。',
-            relatedRules: ['曜日の讀法', '打工日程']
+            relatedRules: ['曜日的讀法', '打工日程']
         },
         sourceItem: { value: 'Wed/Fri', kanji: '水曜日・金曜日', reading: 'すいようび・きんようび' }
     },
@@ -1240,7 +1240,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本學生常在「土曜日」上補習班。',
-            relatedRules: ['曜日の讀法', '日本の教育']
+            relatedRules: ['曜日的讀法', '日本的教育']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -1261,7 +1261,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本的垃圾分類很嚴格，不同曜日收不同種類。',
-            relatedRules: ['曜日の讀法', '垃圾分類']
+            relatedRules: ['曜日的讀法', '垃圾分類']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -1286,7 +1286,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本很多店家選「火曜日」作為定休日。',
-            relatedRules: ['曜日の讀法', '日本の店舖']
+            relatedRules: ['曜日的讀法', '日本的店舖']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -1307,7 +1307,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '標準工作週是「月曜日」到「金曜日」五天。',
-            relatedRules: ['曜日の讀法', '工作週']
+            relatedRules: ['曜日的讀法', '工作週']
         },
         sourceItem: { value: 'Mon-Fri', kanji: '月曜日〜金曜日', reading: 'げつようび〜きんようび' }
     },
@@ -1332,7 +1332,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本很多美術館、博物館「月曜日」休館。',
-            relatedRules: ['曜日の讀法', '日本の文化施設']
+            relatedRules: ['曜日的讀法', '日本的文化施設']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -1355,7 +1355,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '行事曆上「月」代表月曜日，讀「げつ」。',
-            relatedRules: ['曜日の略稱', 'カレンダー表記']
+            relatedRules: ['曜日的略稱', 'カレンダー表記']
         },
         sourceItem: { value: 'Mon', kanji: '月', reading: 'げつ' }
     },
@@ -1376,7 +1376,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「火」讀「か」、「水」讀「すい」、「木」讀「もく」。',
-            relatedRules: ['曜日の略稱', 'カレンダー表記']
+            relatedRules: ['曜日的略稱', 'カレンダー表記']
         },
         sourceItem: { value: 'Tue/Wed/Thu', kanji: '火・水・木', reading: 'か・すい・もく' }
     },
@@ -1397,7 +1397,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「金」讀「きん」、「土」讀「ど」、「日」讀「にち」。',
-            relatedRules: ['曜日の略稱', 'カレンダー表記']
+            relatedRules: ['曜日的略稱', 'カレンダー表記']
         },
         sourceItem: { value: 'Fri/Sat/Sun', kanji: '金・土・日', reading: 'きん・ど・にち' }
     },
@@ -1420,7 +1420,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「再来週」表示下下週，配合曜日使用。',
-            relatedRules: ['曜日の讀法', '時間表達']
+            relatedRules: ['曜日的讀法', '時間表達']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -1445,7 +1445,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「先々週」表示上上週，用過去式回答。',
-            relatedRules: ['曜日の讀法', '過去時態']
+            relatedRules: ['曜日的讀法', '過去時態']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -1466,7 +1466,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「第二木曜日」表示每月第二個星期四。',
-            relatedRules: ['曜日の讀法', '定期會議']
+            relatedRules: ['曜日的讀法', '定期會議']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -1490,7 +1490,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「水」在複合詞中多用音讀「すい」。',
             trapExplanation: '訓讀「みず」多用於單獨或特定組合。',
-            relatedRules: ['水の讀法', '音讀vs訓讀']
+            relatedRules: ['水的讀法', '音讀vs訓讀']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -1512,7 +1512,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「金」音讀「きん」（金曜日），訓讀「かね」（お金）。',
             trapExplanation: '要區分音讀和訓讀的使用場合。',
-            relatedRules: ['金の讀法', '音讀vs訓讀']
+            relatedRules: ['金的讀法', '音讀vs訓讀']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -1534,7 +1534,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「木」音讀「もく/ぼく」，訓讀「き/こ」。曜日用「もく」。',
             trapExplanation: '曜日統一使用漢字的音讀。',
-            relatedRules: ['木の讀法', '音讀vs訓讀']
+            relatedRules: ['木的讀法', '音讀vs訓讀']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -1561,7 +1561,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '月曜日（Blue Monday）在日本也是繁忙的一天。',
-            relatedRules: ['曜日の讀法', '職場文化']
+            relatedRules: ['曜日的讀法', '職場文化']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -1571,7 +1571,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'sentence',
         isTrap: false,
-        stem: '＿＿の夜は「金曜ロードショー」を見ます。',
+        stem: '＿＿の夜「金曜ロードショー」を見ます。',
         stem_zh: '星期五晚上看「週五電影院」。',
         options: [
             { text: 'きんようび', isCorrect: true, reason: '正確！「金曜ロードショー」是著名節目。' },
@@ -1582,7 +1582,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「金曜ロードショー」是日本著名的週五電影節目。',
-            relatedRules: ['曜日の讀法', '日本のテレビ']
+            relatedRules: ['曜日的讀法', '日本的テレビ']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -1607,7 +1607,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「日曜日」是完全的休息日，很多人最喜歡。',
-            relatedRules: ['曜日の讀法', '休日の過ごし方']
+            relatedRules: ['曜日的讀法', '休日的過ごし方']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -1628,7 +1628,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本有些學校實行週六半日制。',
-            relatedRules: ['曜日の讀法', '日本の學校']
+            relatedRules: ['曜日的讀法', '日本的學校']
         },
         sourceItem: { value: 'Mon-Sat', kanji: '月曜日〜土曜日', reading: 'げつようび〜どようび' }
     },
@@ -1653,7 +1653,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「火曜日」和「金曜日」是常見的復健日程。',
-            relatedRules: ['曜日の讀法', '醫療日程']
+            relatedRules: ['曜日的讀法', '醫療日程']
         },
         sourceItem: { value: 'Tue/Fri', kanji: '火曜日・金曜日', reading: 'かようび・きんようび' }
     },
@@ -1674,7 +1674,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「水曜日の午前中」表示星期三上午的固定課程。',
-            relatedRules: ['曜日の讀法', '習い事の日程']
+            relatedRules: ['曜日的讀法', '習い事的日程']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -1699,7 +1699,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '演唱會、活動多安排在「土曜日」晚上。',
-            relatedRules: ['曜日の讀法', '娛樂活動']
+            relatedRules: ['曜日的讀法', '娛樂活動']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -1720,7 +1720,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本的才藝課多安排在「土曜日」。',
-            relatedRules: ['曜日の讀法', '子供の教育']
+            relatedRules: ['曜日的讀法', '子供的教育']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -1745,7 +1745,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '各地區的垃圾收集日不同，「水曜日」常見。',
-            relatedRules: ['曜日の讀法', '垃圾分類']
+            relatedRules: ['曜日的讀法', '垃圾分類']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -1766,7 +1766,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本發薪日多在25日，若遇「金曜日」則當天發。',
-            relatedRules: ['曜日の讀法', '日本の給料制度']
+            relatedRules: ['曜日的讀法', '日本的給料制度']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -1790,7 +1790,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「曜」讀「よう」，表示發光、照耀，延伸為星體。',
             trapExplanation: '「曜」字較難，但在曜日中固定讀「よう」。',
-            relatedRules: ['曜の讀法', '曜日の構成']
+            relatedRules: ['曜的讀法', '曜日的構成']
         },
         sourceItem: { value: 'general', kanji: '曜日', reading: 'ようび' }
     },
@@ -1812,7 +1812,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「七曜」指一週七天，讀「しちよう」。',
             trapExplanation: '「七」在此用音讀「しち」而非訓讀「なな」。',
-            relatedRules: ['七の讀法', '七曜の概念']
+            relatedRules: ['七的讀法', '七曜的概念']
         },
         sourceItem: { value: 'general', kanji: '七曜', reading: 'しちよう' }
     },
@@ -1834,7 +1834,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「日」在毎日和日曜日中都讀「にち」。',
             trapExplanation: '「日」有多種讀法：にち、じつ、ひ、か等。',
-            relatedRules: ['日の讀法', '音讀の使用']
+            relatedRules: ['日的讀法', '音讀的使用']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -1856,7 +1856,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '七曜日中只有「土曜日」的漢字使用濁音「ど」。',
             trapExplanation: '其他曜日都用清音：げつ、か、すい、もく、きん、にち。',
-            relatedRules: ['曜日の讀法', '清音vs濁音']
+            relatedRules: ['曜日的讀法', '清音vs濁音']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -1879,7 +1879,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本一週順序：日月火水木金土（にち・げつ・か・すい・もく・きん・ど）。',
-            relatedRules: ['曜日の順序', '一週間の構成']
+            relatedRules: ['曜日的順序', '一週間的構成']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -1900,7 +1900,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '月曜日（週一）前一天是日曜日（週日）。',
-            relatedRules: ['曜日の順序', '前後關係']
+            relatedRules: ['曜日的順序', '前後關係']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -1921,7 +1921,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '水曜日（週三）後一天是木曜日（週四）。',
-            relatedRules: ['曜日の順序', '前後關係']
+            relatedRules: ['曜日的順序', '前後關係']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -1946,7 +1946,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '木曜日＋2天＝土曜日。「明後日」是後天。',
-            relatedRules: ['曜日の計算', '明後日の使用']
+            relatedRules: ['曜日的計算', '明後日的使用']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -1971,7 +1971,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '火曜日−2天＝日曜日。「一昨日」是前天。',
-            relatedRules: ['曜日の計算', '一昨日の使用']
+            relatedRules: ['曜日的計算', '一昨日的使用']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -1994,7 +1994,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本傳統上一週從「日曜日」開始，到「土曜日」結束。',
-            relatedRules: ['曜日の順序', '日本vs西方']
+            relatedRules: ['曜日的順序', '日本vs西方']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -2019,7 +2019,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '週末天氣預報常分「土曜日」和「日曜日」報導。',
-            relatedRules: ['曜日の讀法', '天気予報']
+            relatedRules: ['曜日的讀法', '天気予報']
         },
         sourceItem: { value: 'Weekend', kanji: '土曜日・日曜日', reading: 'どようび・にちようび' }
     },
@@ -2040,7 +2040,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本的「ハッピーマンデー」制度將部分祝日移到「月曜日」。',
-            relatedRules: ['曜日の讀法', '日本の祝日制度']
+            relatedRules: ['曜日的讀法', '日本的祝日制度']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -2065,7 +2065,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「水曜日」被稱為「週の真ん中」（週中）。',
-            relatedRules: ['曜日の讀法', '週の構成']
+            relatedRules: ['曜日的讀法', '週の構成']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -2075,7 +2075,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'sentence',
         isTrap: false,
-        stem: '＿＿は「花金」と呼ばれています。',
+        stem: '＿＿「花金」と呼ばれています。',
         stem_zh: '星期五被稱為「花金」。',
         options: [
             { text: 'きんようび', isCorrect: true, reason: '正確！金曜日＝花金（華やかな金曜日）。' },
@@ -2086,7 +2086,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「花金」＝華やかな金曜日，指週五晚上可以放鬆。',
-            relatedRules: ['曜日の讀法', '日本の俗語']
+            relatedRules: ['曜日的讀法', '日本的俗語']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -2111,7 +2111,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「ブルーマンデー」指週末結束後憂鬱的「月曜日」。',
-            relatedRules: ['曜日の讀法', '社會現象']
+            relatedRules: ['曜日的讀法', '社會現象']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -2132,7 +2132,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「プレミアムフライデー」是日本推動的月末「金曜日」早退制度。',
-            relatedRules: ['曜日の讀法', '日本の勞動政策']
+            relatedRules: ['曜日的讀法', '日本的勞動政策']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -2153,7 +2153,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「平日」讀「へいじつ」，指週一到週五的工作日。',
-            relatedRules: ['平日の讀法', '平日vs週末']
+            relatedRules: ['平日的讀法', '平日vs週末']
         },
         sourceItem: { value: 'Weekday', kanji: '平日', reading: 'へいじつ' }
     },
@@ -2174,7 +2174,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「週末」讀「しゅうまつ」，指土曜日和日曜日。',
-            relatedRules: ['週末の讀法', '週末vs平日']
+            relatedRules: ['週末的讀法', '週末vs平日']
         },
         sourceItem: { value: 'Weekend', kanji: '週末', reading: 'しゅうまつ' }
     },
@@ -2199,7 +2199,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「祝日明け」指假日結束後，常從「火曜日」開始工作。',
-            relatedRules: ['曜日の讀法', '祝日明け']
+            relatedRules: ['曜日的讀法', '祝日明け']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -2220,7 +2220,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本的三連休常是「土曜日」到「月曜日」。',
-            relatedRules: ['曜日の讀法', '連休の表達']
+            relatedRules: ['曜日的讀法', '連休的表達']
         },
         sourceItem: { value: 'Sat-Mon', kanji: '土曜日〜月曜日', reading: 'どようび〜げつようび' }
     },
@@ -2245,7 +2245,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「月曜日」常是公司例行會議的日子。',
-            relatedRules: ['曜日の讀法', '會議の日程']
+            relatedRules: ['曜日的讀法', '會議的日程']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -2266,7 +2266,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本很多公司將「水曜日」定為「ノー残業デー」。',
-            relatedRules: ['曜日の讀法', '日本の勞動文化']
+            relatedRules: ['曜日的讀法', '日本的勞動文化']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -2291,7 +2291,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「木曜日」晚上9點是日本電視劇的黃金時段。',
-            relatedRules: ['曜日の讀法', '日本のテレビ']
+            relatedRules: ['曜日的讀法', '日本的テレビ']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -2302,7 +2302,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「日曜日」的正確讀法是？',
+        stem: '「日曜日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「日曜日」的正確讀法是？',
         options: [
             { text: 'にちようび', isCorrect: true, reason: '正確！日曜日讀「にちようび」。' },
@@ -2314,7 +2314,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「日曜日」讀「にちようび」，「日」使用音讀「にち」。',
             trapExplanation: '學習者可能混淆「日」的各種讀法。',
-            relatedRules: ['曜日の讀法', '「にち」vs「ひ」']
+            relatedRules: ['曜日的讀法', '「にち」vs「ひ」']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -2335,7 +2335,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「土曜日」是週末第一天，休閒場所最擁擠。',
-            relatedRules: ['曜日の讀法', '週末の活動']
+            relatedRules: ['曜日的讀法', '週末的活動']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -2345,10 +2345,10 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'dialogue',
         isTrap: false,
-        stem: '病院の休診日は？',
+        stem: '病院的休診日は？',
         stem_zh: '醫院的休診日是？',
         dialogue: {
-            speakerA: 'この病院の休診日はいつですか？',
+            speakerA: 'この病院的休診日はいつですか？',
             speakerB: '＿＿と祝日が休診日です。（星期日）'
         },
         options: [
@@ -2360,7 +2360,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本的醫院通常「日曜日」和「祝日」休診。',
-            relatedRules: ['曜日の讀法', '病院の休診日']
+            relatedRules: ['曜日的讀法', '病院的休診日']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -2381,7 +2381,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「今週」讀「こんしゅう」，指這個星期。',
-            relatedRules: ['週の讀法', '今週・来週・先週']
+            relatedRules: ['週的讀法', '今週・来週・先週']
         },
         sourceItem: { value: 'This week', kanji: '今週', reading: 'こんしゅう' }
     },
@@ -2402,7 +2402,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「来週」讀「らいしゅう」，指下個星期。',
-            relatedRules: ['週の讀法', '今週・来週・先週']
+            relatedRules: ['週的讀法', '今週・来週・先週']
         },
         sourceItem: { value: 'Next week', kanji: '来週', reading: 'らいしゅう' }
     },
@@ -2423,7 +2423,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「先週」讀「せんしゅう」，指上個星期。',
-            relatedRules: ['週の讀法', '今週・来週・先週']
+            relatedRules: ['週的讀法', '今週・来週・先週']
         },
         sourceItem: { value: 'Last week', kanji: '先週', reading: 'せんしゅう' }
     },
@@ -2444,7 +2444,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「週末」讀「しゅうまつ」，指土曜日和日曜日。',
-            relatedRules: ['週末の讀法', '週末の活動']
+            relatedRules: ['週末的讀法', '週末的活動']
         },
         sourceItem: { value: 'Weekend', kanji: '週末', reading: 'しゅうまつ' }
     },
@@ -2469,7 +2469,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「水曜日」在一週中間，常作為會議日。',
-            relatedRules: ['曜日の讀法', '会議の予定']
+            relatedRules: ['曜日的讀法', '会議的予定']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -2491,7 +2491,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「毎週」讀「まいしゅう」，意思是每週。',
             trapExplanation: '注意「週」的長音「しゅう」。',
-            relatedRules: ['毎〜の讀法', '週の讀法']
+            relatedRules: ['毎〜的讀法', '週的讀法']
         },
         sourceItem: { value: 'Every week', kanji: '毎週', reading: 'まいしゅう' }
     },
@@ -2512,7 +2512,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本的垃圾分類有固定的曜日，「月曜日」常是燃えるゴミ。',
-            relatedRules: ['曜日の讀法', 'ゴミの日']
+            relatedRules: ['曜日的讀法', 'ゴミの日']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -2537,7 +2537,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「木曜日」在很多地區是資源ゴミの日。',
-            relatedRules: ['曜日の讀法', 'ゴミの日']
+            relatedRules: ['曜日的讀法', 'ゴミの日']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -2558,7 +2558,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「何曜日」讀「なんようび」，用來詢問星期幾。',
-            relatedRules: ['何の讀法', '曜日の疑問詞']
+            relatedRules: ['何的讀法', '曜日的疑問詞']
         },
         sourceItem: { value: 'What day', kanji: '何曜日', reading: 'なんようび' }
     },
@@ -2579,7 +2579,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「火曜日」＋1日＝「水曜日」。',
-            relatedRules: ['曜日の讀法', '曜日の順序']
+            relatedRules: ['曜日的讀法', '曜日的順序']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -2604,7 +2604,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本的公共圖書館通常「月曜日」休館。',
-            relatedRules: ['曜日の讀法', '公共施設の休館日']
+            relatedRules: ['曜日的讀法', '公共施設的休館日']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -2626,7 +2626,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「土曜日」的「土」讀「ど」，是音讀。',
             trapExplanation: '「土」的訓讀是「つち」，但曜日中使用音讀「ど」。',
-            relatedRules: ['曜日の讀法', '音讀vs訓讀']
+            relatedRules: ['曜日的讀法', '音讀vs訓讀']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -2647,7 +2647,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '《サザエさん》是日本國民動畫，「日曜日」晚上播出。',
-            relatedRules: ['曜日の讀法', '日本のテレビ番組']
+            relatedRules: ['曜日的讀法', '日本的テレビ番組']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -2672,7 +2672,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '標準的工作週是「月曜日」到「金曜日」共5日。',
-            relatedRules: ['曜日の讀法', '労働週間']
+            relatedRules: ['曜日的讀法', '労働週間']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -2693,7 +2693,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「週間」讀「しゅうかん」，用於計算週數如「2週間」。',
-            relatedRules: ['週の讀法', '期間の表現']
+            relatedRules: ['週的讀法', '期間の表現']
         },
         sourceItem: { value: 'Week', kanji: '週間', reading: 'しゅうかん' }
     },
@@ -2714,7 +2714,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本的傳統日曆一週從「日曜日」開始。',
-            relatedRules: ['曜日の讀法', '日本のカレンダー']
+            relatedRules: ['曜日的讀法', '日本的カレンダー']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -2739,7 +2739,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '很多健身房選「水曜日」（週中）休館。',
-            relatedRules: ['曜日の讀法', '施設の休館日']
+            relatedRules: ['曜日的讀法', '施設的休館日']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -2761,7 +2761,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「金曜日」的「金」讀「きん」，不是「かね」。',
             trapExplanation: '「金」有多種讀法：「きん」（音讀）、「かね」（錢）、「こん」（金色）。',
-            relatedRules: ['曜日の讀法', '「金」の讀み分け']
+            relatedRules: ['曜日的讀法', '「金」的讀み分け']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -2782,7 +2782,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「土曜日」適合做「朝活」（早晨活動）。',
-            relatedRules: ['曜日の讀法', '週末の過ごし方']
+            relatedRules: ['曜日的讀法', '週末的過ごし方']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -2807,7 +2807,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「土曜日」是熱門的約會日。',
-            relatedRules: ['曜日の讀法', 'デートの予定']
+            relatedRules: ['曜日的讀法', 'デート的予定']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -2828,7 +2828,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「再来週」讀「さらいしゅう」，指下下週。',
-            relatedRules: ['週の讀法', '時間の表現']
+            relatedRules: ['週的讀法', '時間的表現']
         },
         sourceItem: { value: 'Week after next', kanji: '再来週', reading: 'さらいしゅう' }
     },
@@ -2849,7 +2849,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本很多電影院「水曜日」是「レディースデー」，女性優惠。',
-            relatedRules: ['曜日の讀法', '映画館の割引']
+            relatedRules: ['曜日的讀法', '映画館的割引']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -2862,7 +2862,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         stem: '超市的特價日是？',
         stem_zh: '超市的特價日是？',
         dialogue: {
-            speakerA: 'スーパーの特売日はいつですか？',
+            speakerA: 'スーパー的特売日はいつですか？',
             speakerB: '毎週＿＿です。（星期二）'
         },
         options: [
@@ -2874,7 +2874,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '很多日本超市「火曜日」有特價活動。',
-            relatedRules: ['曜日の讀法', 'スーパーの特売']
+            relatedRules: ['曜日的讀法', 'スーパー的特売']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -2896,7 +2896,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「木曜日」的「木」讀「もく」，是音讀。',
             trapExplanation: '「木」的訓讀「き」（樹木）和音讀「もく」要區分。',
-            relatedRules: ['曜日の讀法', '音讀vs訓讀']
+            relatedRules: ['曜日的讀法', '音讀vs訓讀']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -2917,7 +2917,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「サザエさん症候群」指「日曜日」晚上的憂鬱感。',
-            relatedRules: ['曜日の讀法', '日本の社会現象']
+            relatedRules: ['曜日的讀法', '日本的社会現象']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -2942,7 +2942,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「火曜日」和「木曜日」是常見的課程安排。',
-            relatedRules: ['曜日の讀法', '授業の予定']
+            relatedRules: ['曜日的讀法', '授業的予定']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -2963,7 +2963,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「先々週」讀「せんせんしゅう」，指上上週。',
-            relatedRules: ['週の讀法', '時間の表現']
+            relatedRules: ['週的讀法', '時間的表現']
         },
         sourceItem: { value: 'Week before last', kanji: '先々週', reading: 'せんせんしゅう' }
     },
@@ -2984,7 +2984,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本的銀行「週末」（土日）和「祝日」休息。',
-            relatedRules: ['週末の讀法', '銀行の営業日']
+            relatedRules: ['週末的讀法', '銀行の営業日']
         },
         sourceItem: { value: 'Weekend', kanji: '週末', reading: 'しゅうまつ' }
     },
@@ -3009,7 +3009,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '如果發薪日遇週末，通常提前到「金曜日」發放。',
-            relatedRules: ['曜日の讀法', '給料日']
+            relatedRules: ['曜日的讀法', '給料日']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -3031,7 +3031,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「火曜日」的「火」讀「か」，是音讀。',
             trapExplanation: '「火」的訓讀「ひ」（火）和音讀「か」要區分。',
-            relatedRules: ['曜日の讀法', '音讀vs訓讀']
+            relatedRules: ['曜日的讀法', '音讀vs訓讀']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -3052,7 +3052,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「金曜日」晚上是日本上班族喝酒聚會的熱門時間。',
-            relatedRules: ['曜日の讀法', '日本の飲み会文化']
+            relatedRules: ['曜日的讀法', '日本の飲み会文化']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -3077,7 +3077,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '基督教的禮拜通常在「日曜日」（主日）。',
-            relatedRules: ['曜日の讀法', '宗教行事']
+            relatedRules: ['曜日的讀法', '宗教行事']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -3098,7 +3098,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「隔週」讀「かくしゅう」，意思是每隔一週。',
-            relatedRules: ['週の讀法', '時間の表現']
+            relatedRules: ['週的讀法', '時間的表現']
         },
         sourceItem: { value: 'Every other week', kanji: '隔週', reading: 'かくしゅう' }
     },
@@ -3119,7 +3119,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '部分日本學校「土曜日」也有授業（土曜授業）。',
-            relatedRules: ['曜日の讀法', '日本の学校制度']
+            relatedRules: ['曜日的讀法', '日本の学校制度']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -3144,7 +3144,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「金曜日」是日本新產品發售的熱門日子。',
-            relatedRules: ['曜日の讀法', '発売日']
+            relatedRules: ['曜日的讀法', '発売日']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -3166,7 +3166,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「水曜日」的「水」讀「すい」，是音讀。',
             trapExplanation: '「水」的訓讀「みず」和音讀「すい」要區分。',
-            relatedRules: ['曜日の讀法', '音讀vs訓讀']
+            relatedRules: ['曜日的讀法', '音讀vs訓讀']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -3187,7 +3187,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '很多日本週刊雜誌「木曜日」發售。',
-            relatedRules: ['曜日の讀法', '出版物の発売日']
+            relatedRules: ['曜日的讀法', '出版物の発売日']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -3212,7 +3212,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「月曜日」和「金曜日」是常見的課程安排日。',
-            relatedRules: ['曜日の讀法', '習い事の予定']
+            relatedRules: ['曜日的讀法', '習い事の予定']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -3233,7 +3233,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '所有曜日中「曜」都讀「よう」。',
-            relatedRules: ['曜日の讀法', '曜の字']
+            relatedRules: ['曜日的讀法', '曜の字']
         },
         sourceItem: { value: 'Day of week', kanji: '曜', reading: 'よう' }
     },
@@ -3254,7 +3254,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「翌週の火曜日」指下週二。',
-            relatedRules: ['曜日の讀法', '配達の予定']
+            relatedRules: ['曜日的讀法', '配達の予定']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -3279,7 +3279,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '很多設施選「月曜日」作為清掃和維護日。',
-            relatedRules: ['曜日の讀法', '施設の清掃日']
+            relatedRules: ['曜日的讀法', '施設の清掃日']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -3300,7 +3300,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「翌週」讀「よくしゅう」，意思是下一週。',
-            relatedRules: ['週の讀法', '翌〜の表現']
+            relatedRules: ['週的讀法', '翌〜の表現']
         },
         sourceItem: { value: 'Following week', kanji: '翌週', reading: 'よくしゅう' }
     },
@@ -3310,7 +3310,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'sentence',
         isTrap: false,
-        stem: '＿＿は「週の半ば」と言われます。',
+        stem: '＿＿「週の半ば」と言われます。',
         stem_zh: '星期三被稱為「週中」。',
         options: [
             { text: 'すいようび', isCorrect: true, reason: '正確！水曜日是週の半ば。' },
@@ -3321,7 +3321,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「水曜日」位於工作週的中間，稱為「週の半ば」。',
-            relatedRules: ['曜日の讀法', '週の構成']
+            relatedRules: ['曜日的讀法', '週の構成']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -3346,7 +3346,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '馬拉松等大型活動常在「日曜日」舉行。',
-            relatedRules: ['曜日の讀法', 'イベントの日程']
+            relatedRules: ['曜日的讀法', 'イベントの日程']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -3368,7 +3368,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「曜日」的「日」讀「び」，全部曜日都一樣。',
             trapExplanation: '「日曜日」有兩個「日」，讀法不同：にち・よう・び。',
-            relatedRules: ['曜日の讀法', '日の讀み分け']
+            relatedRules: ['曜日的讀法', '日の讀み分け']
         },
         sourceItem: { value: 'Day', kanji: '日', reading: 'び' }
     },
@@ -3389,7 +3389,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「今週中」讀「こんしゅうちゅう」，指這週內。',
-            relatedRules: ['週の讀法', '〜中の表現']
+            relatedRules: ['週的讀法', '〜中の表現']
         },
         sourceItem: { value: 'Within this week', kanji: '今週中', reading: 'こんしゅうちゅう' }
     },
@@ -3414,7 +3414,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '學生常在「土曜日」和「日曜日」打工。',
-            relatedRules: ['曜日の讀法', 'アルバイトの予定']
+            relatedRules: ['曜日的讀法', 'アルバイトの予定']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -3436,7 +3436,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「毎日」讀「まいにち」，意思是每天。',
-            relatedRules: ['毎〜の讀法', '日の讀法']
+            relatedRules: ['毎〜的讀法', '日的讀法']
         },
         sourceItem: { value: 'Every day', kanji: '毎日', reading: 'まいにち' }
     },
@@ -3457,7 +3457,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '《週刊少年ジャンプ》每週「月曜日」發售。',
-            relatedRules: ['曜日の讀法', '日本の漫画雑誌']
+            relatedRules: ['曜日的讀法', '日本の漫画雑誌']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -3482,7 +3482,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「水曜日」是常見的社團活動日。',
-            relatedRules: ['曜日の讀法', '部活の予定']
+            relatedRules: ['曜日的讀法', '部活の予定']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -3504,7 +3504,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「休日」讀「きゅうじつ」，意思是假日。',
             trapExplanation: '注意「日」在此讀「じつ」而非「にち」。',
-            relatedRules: ['休日の讀法', '日の讀み分け']
+            relatedRules: ['休日的讀法', '日の讀み分け']
         },
         sourceItem: { value: 'Holiday', kanji: '休日', reading: 'きゅうじつ' }
     },
@@ -3514,7 +3514,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'sentence',
         isTrap: false,
-        stem: '＿＿は「週の始まり」です。',
+        stem: '＿＿「週の始まり」です。',
         stem_zh: '星期一是「一週的開始」。',
         options: [
             { text: 'げつようび', isCorrect: true, reason: '正確！工作週從月曜日開始。' },
@@ -3525,7 +3525,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '工作週從「月曜日」開始。',
-            relatedRules: ['曜日の讀法', '週の始まり']
+            relatedRules: ['曜日的讀法', '週の始まり']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -3550,7 +3550,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「火曜日」是常見的垃圾收集日之一。',
-            relatedRules: ['曜日の讀法', 'ゴミ収集']
+            relatedRules: ['曜日的讀法', 'ゴミ収集']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -3571,7 +3571,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「祝日」讀「しゅくじつ」，指國定假日。',
-            relatedRules: ['祝日の讀法', '日の讀み分け']
+            relatedRules: ['祝日的讀法', '日の讀み分け']
         },
         sourceItem: { value: 'National holiday', kanji: '祝日', reading: 'しゅくじつ' }
     },
@@ -3592,7 +3592,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「日曜日」在很多文化中是「安息日」。',
-            relatedRules: ['曜日の讀法', '宗教と曜日']
+            relatedRules: ['曜日的讀法', '宗教と曜日']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -3617,7 +3617,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '很多日本美術館每月第一「日曜日」免費。',
-            relatedRules: ['曜日の讀法', '美術館の割引']
+            relatedRules: ['曜日的讀法', '美術館の割引']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -3638,7 +3638,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「週初め」讀「しゅうはじめ」，指一週開始。',
-            relatedRules: ['週の讀法', '初めの讀法']
+            relatedRules: ['週的讀法', '初め的讀法']
         },
         sourceItem: { value: 'Beginning of week', kanji: '週初め', reading: 'しゅうはじめ' }
     },
@@ -3659,7 +3659,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本的官公庁「月曜日」到「金曜日」營業。',
-            relatedRules: ['曜日の讀法', '官公庁の営業日']
+            relatedRules: ['曜日的讀法', '官公庁の営業日']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -3684,7 +3684,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本的音樂傳統上「水曜日」發布新曲。',
-            relatedRules: ['曜日の讀法', '音楽のリリース日']
+            relatedRules: ['曜日的讀法', '音楽のリリース日']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -3706,7 +3706,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「連休」讀「れんきゅう」，指連續假期。',
             trapExplanation: '「休」的音讀是「きゅう」，訓讀是「やすみ」。',
-            relatedRules: ['連休の讀法', '休の讀み分け']
+            relatedRules: ['連休的讀法', '休の讀み分け']
         },
         sourceItem: { value: 'Consecutive holidays', kanji: '連休', reading: 'れんきゅう' }
     },
@@ -3727,7 +3727,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「日曜劇場」（日曜日晚上）是日本收視率最高的電視劇時段。',
-            relatedRules: ['曜日の讀法', 'テレビの視聴率']
+            relatedRules: ['曜日的讀法', 'テレビの視聴率']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -3752,7 +3752,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '醫院的診察日安排因醫師而異。',
-            relatedRules: ['曜日の讀法', '病院の予約']
+            relatedRules: ['曜日的讀法', '病院の予約']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -3773,7 +3773,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「週明け」讀「しゅうあけ」，指週末結束後的週一。',
-            relatedRules: ['週の讀法', '〜明けの表現']
+            relatedRules: ['週的讀法', '〜明けの表現']
         },
         sourceItem: { value: 'Beginning of new week', kanji: '週明け', reading: 'しゅうあけ' }
     },
@@ -3783,7 +3783,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'sentence',
         isTrap: false,
-        stem: '＿＿は「ハッピーマンデー」で祝日になることがあります。',
+        stem: '＿＿「ハッピーマンデー」で祝日になることがあります。',
         stem_zh: '星期一有時因「快樂星期一」制度而成為假日。',
         options: [
             { text: 'げつようび', isCorrect: true, reason: '正確！ハッピーマンデー制度使月曜日變假日。' },
@@ -3794,7 +3794,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「ハッピーマンデー制度」將部分祝日移到「月曜日」形成連休。',
-            relatedRules: ['曜日の讀法', '日本の祝日制度']
+            relatedRules: ['曜日的讀法', '日本的祝日制度']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -3819,7 +3819,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '很多考試在「土曜日」舉行。',
-            relatedRules: ['曜日の讀法', '試験の日程']
+            relatedRules: ['曜日的讀法', '試験の日程']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -3841,7 +3841,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「振替休日」讀「ふりかえきゅうじつ」，指祝日遇週日時的補假。',
             trapExplanation: '「振替」是訓讀「ふりかえ」，「休日」是音讀「きゅうじつ」。',
-            relatedRules: ['振替休日の讀法', '日本の祝日制度']
+            relatedRules: ['振替休日的讀法', '日本的祝日制度']
         },
         sourceItem: { value: 'Substitute holiday', kanji: '振替休日', reading: 'ふりかえきゅうじつ' }
     },
@@ -3851,7 +3851,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'sentence',
         isTrap: false,
-        stem: '＿＿は「週末の入り口」と呼ばれます。',
+        stem: '＿＿「週末の入り口」と呼ばれます。',
         stem_zh: '星期五被稱為「週末的入口」。',
         options: [
             { text: 'きんようび', isCorrect: true, reason: '正確！金曜日是週末的開始。' },
@@ -3862,7 +3862,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「金曜日」被稱為週末的入口，工作結束後就是假期。',
-            relatedRules: ['曜日の讀法', '週末への期待']
+            relatedRules: ['曜日的讀法', '週末への期待']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -3887,7 +3887,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「日曜日」傳統上是家庭團聚的日子。',
-            relatedRules: ['曜日の讀法', '家族の時間']
+            relatedRules: ['曜日的讀法', '家族の時間']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -3908,7 +3908,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「定休日」讀「ていきゅうび」，指店鋪固定休息日。',
-            relatedRules: ['定休日の讀法', '店舗の休み']
+            relatedRules: ['定休日的讀法', '店舗の休み']
         },
         sourceItem: { value: 'Regular holiday', kanji: '定休日', reading: 'ていきゅうび' }
     },
@@ -3929,7 +3929,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '很多餐廳選「火曜日」作為定休日。',
-            relatedRules: ['曜日の讀法', '飲食店の定休日']
+            relatedRules: ['曜日的讀法', '飲食店の定休日']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -3954,7 +3954,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '很多學校社團「月曜日」到「金曜日」每天活動。',
-            relatedRules: ['曜日の讀法', '部活動の予定']
+            relatedRules: ['曜日的讀法', '部活動の予定']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -3975,7 +3975,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「週に一回」讀「しゅうにいっかい」，意思是每週一次。',
-            relatedRules: ['週の讀法', '頻度の表現']
+            relatedRules: ['週的讀法', '頻度の表現']
         },
         sourceItem: { value: 'Once a week', kanji: '週に一回', reading: 'しゅうにいっかい' }
     },
@@ -3996,7 +3996,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「日曜日」很多地方有朝市（早晨市集）。',
-            relatedRules: ['曜日の讀法', '朝市の日']
+            relatedRules: ['曜日的讀法', '朝市の日']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -4021,7 +4021,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: 'JLPT（日本語能力試驗）每年7月和12月的「日曜日」舉行。',
-            relatedRules: ['曜日の讀法', '日本語能力試験']
+            relatedRules: ['曜日的讀法', '日本語能力試験']
         },
         sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
     },
@@ -4043,7 +4043,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「平日休み」讀「へいじつやすみ」，指平日的休假。',
             trapExplanation: '「休み」是訓讀「やすみ」，與「休日」的「きゅうじつ」不同。',
-            relatedRules: ['休みの讀法', '平日の讀法']
+            relatedRules: ['休み的讀法', '平日的讀法']
         },
         sourceItem: { value: 'Weekday off', kanji: '平日休み', reading: 'へいじつやすみ' }
     },
@@ -4053,7 +4053,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'weekdays',
         type: 'sentence',
         isTrap: false,
-        stem: '＿＿の夜は「金曜ロードショー」があります。',
+        stem: '＿＿の夜「金曜ロードショー」があります。',
         stem_zh: '星期五晚上有「金曜電影院」。',
         options: [
             { text: 'きんようび', isCorrect: true, reason: '正確！金曜ロードショー在金曜日播出。' },
@@ -4064,7 +4064,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「金曜ロードショー」是日本電視台「金曜日」播出的電影節目。',
-            relatedRules: ['曜日の讀法', '日本のテレビ番組']
+            relatedRules: ['曜日的讀法', '日本的テレビ番組']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -4089,7 +4089,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「土曜日」是做家事和大掃除的好時機。',
-            relatedRules: ['曜日の讀法', '家事の予定']
+            relatedRules: ['曜日的讀法', '家事の予定']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -4110,7 +4110,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「毎週末」讀「まいしゅうまつ」，意思是每個週末。',
-            relatedRules: ['毎〜の讀法', '週末の讀法']
+            relatedRules: ['毎〜的讀法', '週末的讀法']
         },
         sourceItem: { value: 'Every weekend', kanji: '毎週末', reading: 'まいしゅうまつ' }
     },
@@ -4131,7 +4131,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '部分郵局「土曜日」有營業（週末限定服務）。',
-            relatedRules: ['曜日の讀法', '郵便局の営業日']
+            relatedRules: ['曜日的讀法', '郵便局の営業日']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -4156,7 +4156,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「火曜日」是常見的定例會議日。',
-            relatedRules: ['曜日の讀法', '会議の予定']
+            relatedRules: ['曜日的讀法', '会議的予定']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -4178,7 +4178,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「曜日」讀「ようび」，「日」在這裡讀「び」。',
             trapExplanation: '「日」的讀法很多，在「曜日」中讀「び」。',
-            relatedRules: ['曜日の讀法', '日の讀み分け']
+            relatedRules: ['曜日的讀法', '日の讀み分け']
         },
         sourceItem: { value: 'Day of week', kanji: '曜日', reading: 'ようび' }
     },
@@ -4199,7 +4199,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「七曜」指一週七天，從「月曜日」到「日曜日」。',
-            relatedRules: ['曜日の讀法', '七曜の由来']
+            relatedRules: ['曜日的讀法', '七曜の由来']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -4224,7 +4224,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「週休二日制」指「土曜日」和「日曜日」休息。',
-            relatedRules: ['曜日の讀法', '日本の労働制度']
+            relatedRules: ['曜日的讀法', '日本の労働制度']
         },
         sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
     },
@@ -4246,7 +4246,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「水曜どうでしょう」是日本人氣節目，「水曜」讀「すいよう」。',
-            relatedRules: ['曜日の讀法', '日本のテレビ番組']
+            relatedRules: ['曜日的讀法', '日本的テレビ番組']
         },
         sourceItem: { value: 'Wed', kanji: '水曜', reading: 'すいよう' }
     },
@@ -4267,7 +4267,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「木曜日」常被視為週後半的開始。',
-            relatedRules: ['曜日の讀法', '週の構成']
+            relatedRules: ['曜日的讀法', '週の構成']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -4292,7 +4292,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「水曜日」是常見的面試日。',
-            relatedRules: ['曜日の讀法', '面接の予定']
+            relatedRules: ['曜日的讀法', '面接の予定']
         },
         sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
     },
@@ -4314,7 +4314,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '七曜「日月火水木金土」的「日」讀「にち」（日曜日）。',
             trapExplanation: '「日」有多種讀法，要根據語境判斷。',
-            relatedRules: ['曜日の讀法', '日の讀み分け']
+            relatedRules: ['曜日的讀法', '日の讀み分け']
         },
         sourceItem: { value: 'Sun', kanji: '日', reading: 'にち' }
     },
@@ -4335,7 +4335,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「月曜日」對應英文的「Monday」。',
-            relatedRules: ['曜日の讀法', '英語との対応']
+            relatedRules: ['曜日的讀法', '英語との対応']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -4360,7 +4360,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「木曜日」是常見的節目錄影日。',
-            relatedRules: ['曜日の讀法', 'テレビ収録']
+            relatedRules: ['曜日的讀法', 'テレビ収録']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -4381,7 +4381,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「週前半」讀「しゅうぜんはん」，指一週的前幾天。',
-            relatedRules: ['週の讀法', '前半の讀法']
+            relatedRules: ['週的讀法', '前半的讀法']
         },
         sourceItem: { value: 'First half of week', kanji: '週前半', reading: 'しゅうぜんはん' }
     },
@@ -4402,7 +4402,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「月曜日」早上是通勤最擁擠的時候。',
-            relatedRules: ['曜日の讀法', '通勤ラッシュ']
+            relatedRules: ['曜日的讀法', '通勤ラッシュ']
         },
         sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
     },
@@ -4427,7 +4427,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '很多圖書館「火曜日」新書上架。',
-            relatedRules: ['曜日の讀法', '図書館の新刊']
+            relatedRules: ['曜日的讀法', '図書館の新刊']
         },
         sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
     },
@@ -4449,7 +4449,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「土日」讀「どにち」，是土曜日和日曜日的簡稱。',
             trapExplanation: '「日」在這裡讀「にち」，與「曜日」的「び」不同。',
-            relatedRules: ['週末の讀法', '日の讀み分け']
+            relatedRules: ['週末的讀法', '日の讀み分け']
         },
         sourceItem: { value: 'Sat-Sun', kanji: '土日', reading: 'どにち' }
     },
@@ -4470,7 +4470,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「木曜日」晚上是日本電視劇的黃金時段之一。',
-            relatedRules: ['曜日の讀法', 'テレビドラマ']
+            relatedRules: ['曜日的讀法', 'テレビドラマ']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
     },
@@ -4495,7 +4495,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「金曜日」健診後可以直接休息週末。',
-            relatedRules: ['曜日の讀法', '健康診断']
+            relatedRules: ['曜日的讀法', '健康診断']
         },
         sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
     },
@@ -4516,7 +4516,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「週後半」讀「しゅうこうはん」，指一週的後幾天。',
-            relatedRules: ['週の讀法', '後半の讀法']
+            relatedRules: ['週的讀法', '後半的讀法']
         },
         sourceItem: { value: 'Second half of week', kanji: '週後半', reading: 'しゅうこうはん' }
     },
@@ -4537,7 +4537,7 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '工作週從「月曜日」到「金曜日」，週末是「土曜日」「日曜日」。',
-            relatedRules: ['曜日の讀法', '一週の構成']
+            relatedRules: ['曜日的讀法', '一週の構成']
         },
         sourceItem: { value: 'Mon-Sun', kanji: '月曜日〜日曜日', reading: 'げつようび〜にちようび' }
     }

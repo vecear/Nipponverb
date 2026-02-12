@@ -1,12 +1,35 @@
 import { doc, getDoc, setDoc } from 'firebase/firestore'
 import { db } from '../config/firebase'
-import { PracticeHistoryEntry, QuestionStats } from '../store/usePracticeStore'
+import { PracticeHistoryEntry, QuestionStats, QuestionStatsEntry } from '../store/usePracticeStore'
 
 // Firestore 中的使用者練習資料結構
 export interface UserPracticeData {
   practiceHistory: PracticeHistoryEntry[]
   questionStats: QuestionStats
+  earnedAchievements?: string[]
   updatedAt: string
+}
+
+/**
+ * 正規化舊格式的 QuestionStatsEntry，補上新欄位預設值
+ */
+export function normalizeQuestionStatsEntry(
+  entry: Partial<QuestionStatsEntry>
+): QuestionStatsEntry {
+  return {
+    attempts: entry.attempts ?? 0,
+    correct: entry.correct ?? 0,
+    lastAttempt: entry.lastAttempt ?? '',
+    srsInterval: entry.srsInterval ?? 1,
+    srsEaseFactor: entry.srsEaseFactor ?? 2.5,
+    srsDueDate: entry.srsDueDate,
+    srsPhase: entry.srsPhase ?? 'new',
+    consecutiveErrors: entry.consecutiveErrors ?? 0,
+    consecutiveCorrect: entry.consecutiveCorrect ?? 0,
+    avgResponseTime: entry.avgResponseTime,
+    lastResponseTime: entry.lastResponseTime,
+    errorPattern: entry.errorPattern ?? [],
+  }
 }
 
 /**
@@ -81,6 +104,25 @@ export const saveUserPracticeData = async (
     })
   } catch (error) {
     console.error('Failed to save practice data:', error)
+    throw error
+  }
+}
+
+/**
+ * 儲存使用者已獲得的成就
+ */
+export const saveEarnedAchievements = async (
+  uid: string,
+  earnedAchievements: string[]
+): Promise<void> => {
+  try {
+    const practiceRef = doc(db, 'users', uid, 'data', 'practice')
+    await setDoc(practiceRef, {
+      earnedAchievements,
+      updatedAt: new Date().toISOString(),
+    }, { merge: true })
+  } catch (error) {
+    console.error('Failed to save earned achievements:', error)
     throw error
   }
 }

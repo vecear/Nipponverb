@@ -13,18 +13,18 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'flatObjects',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「一枚」的正確讀音是？',
+        stem: '「一枚」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一枚」的正確讀音是？',
         options: [
-            { text: 'いちまい', isCorrect: true, reason: '正確{せいかく}！「一枚{いちまい}」無音變{むおんへん}，讀作{どくさ}「いちまい」。' },
-            { text: 'いっまい', isCorrect: false, reason: '量詞{りょうし}「枚{まい}」以{い}「ま行{ぎょう}」開頭{あたま}，不發生{ふはっせい}促音化{そくおんか}。' },
-            { text: 'ひとまい', isCorrect: false, reason: '量詞{りょうし}「枚{まい}」使用{しよう}音讀{おんどく}數字{すうじ}「いち」。' },
-            { text: 'いちばい', isCorrect: false, reason: '「枚{まい}」讀作{どくさ}「まい」，不是「ばい」。' }
+            { text: 'いちまい', isCorrect: true, reason: '正確！「一枚{いちまい}」無音變，讀作「いちまい」。' },
+            { text: 'いっまい', isCorrect: false, reason: '量詞「枚{まい}」以「ま行」開頭，不發生促音化。' },
+            { text: 'ひとまい', isCorrect: false, reason: '量詞「枚{まい}」使用音讀數字「いち」。' },
+            { text: 'いちばい', isCorrect: false, reason: '「枚{まい}」讀作「まい」，不是「ばい」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「一枚{いちまい}」讀作{どくさ}「いちまい」。量詞{りょうし}「枚{まい}」以{い}「ま行{ぎょう}」開頭{あたま}，不發生{ふはっせい}音變{おんへん}。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '無音變{むおんへん}の量詞{りょうし}']
+            correctRule: '「一枚{いちまい}」讀作「いちまい」。量詞「枚{まい}」以「ま行」開頭，不發生音變。',
+            relatedRules: ['量詞「枚{まい}」的使用', '無音變の量詞']
         },
         sourceItem: { value: 1, kanji: '一枚', reading: 'いちまい' }
     },
@@ -37,15 +37,15 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         stem: '紙を＿＿ください。',
         stem_zh: '請給我一張紙。',
         options: [
-            { text: 'ひとつ', isCorrect: false, reason: '紙張{しちょう}是扁平物{へんぺいぶつ}，應使用{しよう}「枚{まい}」。' },
-            { text: 'いちまい', isCorrect: true, reason: '正確{せいかく}！「紙{かみ}を一枚{いちまい}ください」表示{ひょうじ}「請給我{ください}一張{いちまい}紙{かみ}」。' },
-            { text: 'いっぽん', isCorrect: false, reason: '「本{ほん}」用於{もちいる}細長物{ほそながもの}，不用於{もちいず}紙張{しちょう}。' },
-            { text: 'いっさつ', isCorrect: false, reason: '「冊{さつ}」用於{もちいる}成冊{せいさつ}的書{ほん}，不用於{もちいず}單張{たんまい}紙{かみ}。' }
+            { text: 'ひとつ', isCorrect: false, reason: '紙張是扁平物，應使用「枚{まい}」。' },
+            { text: 'いちまい', isCorrect: true, reason: '正確！「紙を一枚{いちまい}ください」表示「請給我一張紙」。' },
+            { text: 'いっぽん', isCorrect: false, reason: '「本{ほん}」用於細長物，不用於紙張。' },
+            { text: 'いっさつ', isCorrect: false, reason: '「冊{さつ}」用於成冊的書，不用於單張紙。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「紙{かみ}」是扁平物{へんぺいぶつ}，使用{しよう}量詞{りょうし}「枚{まい}」。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '文具{ぶんぐ}の計數{けいすう}']
+            correctRule: '「紙」是扁平物，使用量詞「枚{まい}」。',
+            relatedRules: ['量詞「枚{まい}」的使用', '文具の計數']
         },
         sourceItem: { value: 1, kanji: '一枚', reading: 'いちまい' }
     },
@@ -62,15 +62,15 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿だけ撮りました。（只拍一張）'
         },
         options: [
-            { text: 'ひとつ', isCorrect: false, reason: '照片{しゃしん}是扁平{へんぺい}的，用{もちいる}「枚{まい}」。' },
-            { text: 'いちまい', isCorrect: true, reason: '正確{せいかく}！只拍了{とりました}一張{いちまい}照片{しゃしん}。' },
-            { text: 'いっこ', isCorrect: false, reason: '照片{しゃしん}不用{もちいず}「個{こ}」。' },
-            { text: 'いっさつ', isCorrect: false, reason: '「冊{さつ}」用於{もちいる}相簿{アルバム}，不用於{もちいず}單張{たんまい}照片{しゃしん}。' }
+            { text: 'ひとつ', isCorrect: false, reason: '照片是扁平的，用「枚{まい}」。' },
+            { text: 'いちまい', isCorrect: true, reason: '正確！只拍了一張照片。' },
+            { text: 'いっこ', isCorrect: false, reason: '照片不用「個」。' },
+            { text: 'いっさつ', isCorrect: false, reason: '「冊{さつ}」用於相簿，不用於單張照片。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「写真{しゃしん}」是扁平{へんぺい}的，使用{しよう}量詞{りょうし}「枚{まい}」。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '何枚{なんまい}の質問{しつもん}與回答{かいとう}']
+            correctRule: '「写真」是扁平的，使用量詞「枚{まい}」。',
+            relatedRules: ['量詞「枚{まい}」的使用', '何枚{なんまい}的質問與回答']
         },
         sourceItem: { value: 1, kanji: '一枚', reading: 'いちまい' }
     },
@@ -82,18 +82,18 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'flatObjects',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二枚」的正確讀音是？',
+        stem: '「二枚」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二枚」的正確讀音是？',
         options: [
-            { text: 'にまい', isCorrect: true, reason: '正確{せいかく}！「二枚{にまい}」無音變{むおんへん}，讀作{どくさ}「にまい」。' },
-            { text: 'ふたまい', isCorrect: false, reason: '量詞{りょうし}「枚{まい}」使用{しよう}音讀{おんどく}數字{すうじ}「に」。' },
-            { text: 'にばい', isCorrect: false, reason: '「枚{まい}」讀作{どくさ}「まい」，不發生{ふはっせい}濁音化{だくおんか}。' },
-            { text: 'ににまい', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'にまい', isCorrect: true, reason: '正確！「二枚{にまい}」無音變，讀作「にまい」。' },
+            { text: 'ふたまい', isCorrect: false, reason: '量詞「枚{まい}」使用音讀數字「に」。' },
+            { text: 'にばい', isCorrect: false, reason: '「枚{まい}」讀作「まい」，不發生濁音化。' },
+            { text: 'ににまい', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二枚{にまい}」讀作{どくさ}「にまい」，無音變{むおんへん}。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '無音變{むおんへん}の量詞{りょうし}']
+            correctRule: '「二枚{にまい}」讀作「にまい」，無音變。',
+            relatedRules: ['量詞「枚{まい}」的使用', '無音變の量詞']
         },
         sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
     },
@@ -106,15 +106,15 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         stem: 'シャツを＿＿買いました。',
         stem_zh: '我買了兩件襯衫。',
         options: [
-            { text: 'ふたつ', isCorrect: false, reason: '襯衫{シャツ}是扁平物{へんぺいぶつ}，應使用{しよう}「枚{まい}」。' },
-            { text: 'にまい', isCorrect: true, reason: '正確{せいかく}！「シャツを二枚{にまい}」表示{ひょうじ}「兩件{にまい}襯衫{シャツ}」。' },
-            { text: 'にほん', isCorrect: false, reason: '「本{ほん}」用於{もちいる}細長物{ほそながもの}。' },
-            { text: 'にちゃく', isCorrect: false, reason: '「着{ちゃく}」用於{もちいる}套裝{スーツ}。' }
+            { text: 'ふたつ', isCorrect: false, reason: '襯衫是扁平物，應使用「枚{まい}」。' },
+            { text: 'にまい', isCorrect: true, reason: '正確！「シャツを二枚{にまい}」表示「兩件襯衫」。' },
+            { text: 'にほん', isCorrect: false, reason: '「本{ほん}」用於細長物。' },
+            { text: 'にちゃく', isCorrect: false, reason: '「着{ちゃく}」用於套裝。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「シャツ」（襯衫{シャツ}）是扁平{へんぺい}的，使用{しよう}量詞{りょうし}「枚{まい}」。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '衣服{いふく}の計數{けいすう}']
+            correctRule: '「シャツ」（襯衫）是扁平的，使用量詞「枚{まい}」。',
+            relatedRules: ['量詞「枚{まい}」的使用', '衣服の計數']
         },
         sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
     },
@@ -131,15 +131,15 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿だけです。（只有兩張）'
         },
         options: [
-            { text: 'ふたつ', isCorrect: false, reason: 'CD是扁平{へんぺい}的，用{もちいる}「枚{まい}」。' },
-            { text: 'にまい', isCorrect: true, reason: '正確{せいかく}！只有兩張{にまい}CD。' },
-            { text: 'にこ', isCorrect: false, reason: 'CD不用{もちいず}「個{こ}」。' },
-            { text: 'ふたまい', isCorrect: false, reason: '量詞{りょうし}「枚{まい}」用{もちいる}音讀{おんどく}「に」。' }
+            { text: 'ふたつ', isCorrect: false, reason: 'CD是扁平的，用「枚{まい}」。' },
+            { text: 'にまい', isCorrect: true, reason: '正確！只有兩張CD。' },
+            { text: 'にこ', isCorrect: false, reason: 'CD不用「個」。' },
+            { text: 'ふたまい', isCorrect: false, reason: '量詞「枚{まい}」用音讀「に」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「CD」是扁平圓盤形{へんぺいえんばんけい}，使用{しよう}量詞{りょうし}「枚{まい}」。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '媒體{メディア}の計數{けいすう}']
+            correctRule: '「CD」是扁平圓盤形，使用量詞「枚{まい}」。',
+            relatedRules: ['量詞「枚{まい}」的使用', '媒體の計數']
         },
         sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
     },
@@ -151,18 +151,18 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'flatObjects',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「三枚」的正確讀音是？',
+        stem: '「三枚」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三枚」的正確讀音是？',
         options: [
-            { text: 'さんまい', isCorrect: true, reason: '正確{せいかく}！「三枚{さんまい}」無音變{むおんへん}，讀作{どくさ}「さんまい」。' },
-            { text: 'さんばい', isCorrect: false, reason: '「枚{まい}」讀作{どくさ}「まい」，不發生{ふはっせい}濁音化{だくおんか}。' },
-            { text: 'みまい', isCorrect: false, reason: '量詞{りょうし}「枚{まい}」使用{しよう}音讀{おんどく}數字{すうじ}「さん」。' },
-            { text: 'さんぱい', isCorrect: false, reason: '「枚{まい}」不發生{ふはっせい}半濁音化{はんだくおんか}。' }
+            { text: 'さんまい', isCorrect: true, reason: '正確！「三枚{さんまい}」無音變，讀作「さんまい」。' },
+            { text: 'さんばい', isCorrect: false, reason: '「枚{まい}」讀作「まい」，不發生濁音化。' },
+            { text: 'みまい', isCorrect: false, reason: '量詞「枚{まい}」使用音讀數字「さん」。' },
+            { text: 'さんぱい', isCorrect: false, reason: '「枚{まい}」不發生半濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三枚{さんまい}」讀作{どくさ}「さんまい」，無音變{むおんへん}。注意{ちゅうい}與「三本{さんぼん}」不同{ちがい}，「枚{まい}」不濁音化{ふだくおんか}。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '「枚{まい}」vs「本{ほん}」の音變{おんへん}差異{さい}']
+            correctRule: '「三枚{さんまい}」讀作「さんまい」，無音變。注意與「三本{さんぼん}」不同，「枚{まい}」不濁音化。',
+            relatedRules: ['量詞「枚{まい}」的使用', '「枚{まい}」vs「本{ほん}」的音變差異']
         },
         sourceItem: { value: 3, kanji: '三枚', reading: 'さんまい' }
     },
@@ -175,16 +175,16 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         stem: '切手を＿＿貼りました。',
         stem_zh: '我貼了三張郵票。',
         options: [
-            { text: 'さんぼん', isCorrect: false, reason: '陷阱{かんけい}！郵票{きって}是扁平物{へんぺいぶつ}，用{もちいる}「枚{まい}」不是「本{ほん}」。' },
-            { text: 'さんまい', isCorrect: true, reason: '正確{せいかく}！「切手{きって}を三枚{さんまい}」表示{ひょうじ}「三張{さんまい}郵票{きって}」。' },
-            { text: 'さんばい', isCorrect: false, reason: '「枚{まい}」不發生{ふはっせい}濁音化{だくおんか}。' },
-            { text: 'みっつ', isCorrect: false, reason: '郵票{きって}是扁平{へんぺい}的，應使用{しよう}「枚{まい}」。' }
+            { text: 'さんぼん', isCorrect: false, reason: '陷阱！郵票是扁平物，用「枚{まい}」不是「本{ほん}」。' },
+            { text: 'さんまい', isCorrect: true, reason: '正確！「切手を三枚{さんまい}」表示「三張郵票」。' },
+            { text: 'さんばい', isCorrect: false, reason: '「枚{まい}」不發生濁音化。' },
+            { text: 'みっつ', isCorrect: false, reason: '郵票是扁平的，應使用「枚{まい}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「切手{きって}」（郵票{ゆうびん}）是扁平{へんぺい}的，使用{しよう}量詞{りょうし}「枚{まい}」。',
-            trapExplanation: '即使{たとえ}數字{すうじ}3搭配{たいはい}「本{ほん}」會{だろう}濁音化{だくおんか}，「枚{まい}」不受{うけない}影響{えいきょう}。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '郵票{きって}の計數{けいすう}']
+            correctRule: '「切手」（郵票）是扁平的，使用量詞「枚{まい}」。',
+            trapExplanation: '即使數字3搭配「本{ほん}」會濁音化，「枚{まい}」不受影響。',
+            relatedRules: ['量詞「枚{まい}」的使用', '郵票の計數']
         },
         sourceItem: { value: 3, kanji: '三枚', reading: 'さんまい' }
     },
@@ -201,15 +201,15 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿お願いします。（三個）'
         },
         options: [
-            { text: 'みっつ', isCorrect: false, reason: '盤子{おさら}是扁平{へんぺい}的，用{もちいる}「枚{まい}」。' },
-            { text: 'さんまい', isCorrect: true, reason: '正確{せいかく}！需要{いります}三個{さんまい}盤子{おさら}。' },
-            { text: 'さんこ', isCorrect: false, reason: '盤子{おさら}不用{もちいず}「個{こ}」。' },
-            { text: 'さんばい', isCorrect: false, reason: '「枚{まい}」不發生{ふはっせい}濁音化{だくおんか}。' }
+            { text: 'みっつ', isCorrect: false, reason: '盤子是扁平的，用「枚{まい}」。' },
+            { text: 'さんまい', isCorrect: true, reason: '正確！需要三個盤子。' },
+            { text: 'さんこ', isCorrect: false, reason: '盤子不用「個」。' },
+            { text: 'さんばい', isCorrect: false, reason: '「枚{まい}」不發生濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「お皿{おさら}」（盤子{さら}）是扁平{へんぺい}的，使用{しよう}量詞{りょうし}「枚{まい}」。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '餐具{しょっき}の計數{けいすう}']
+            correctRule: '「お皿」（盤子）是扁平的，使用量詞「枚{まい}」。',
+            relatedRules: ['量詞「枚{まい}」的使用', '餐具の計數']
         },
         sourceItem: { value: 3, kanji: '三枚', reading: 'さんまい' }
     },
@@ -221,18 +221,18 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'flatObjects',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五枚」的正確讀音是？',
+        stem: '「五枚」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五枚」的正確讀音是？',
         options: [
-            { text: 'ごまい', isCorrect: true, reason: '正確{せいかく}！「五枚{ごまい}」無音變{むおんへん}，讀作{どくさ}「ごまい」。' },
-            { text: 'いつまい', isCorrect: false, reason: '量詞{りょうし}「枚{まい}」使用{しよう}音讀{おんどく}數字{すうじ}「ご」。' },
-            { text: 'ごばい', isCorrect: false, reason: '「枚{まい}」讀作{どくさ}「まい」，不發生{ふはっせい}濁音化{だくおんか}。' },
-            { text: 'こまい', isCorrect: false, reason: '需要{じゅよう}濁音{だくおん}「ご」。' }
+            { text: 'ごまい', isCorrect: true, reason: '正確！「五枚{ごまい}」無音變，讀作「ごまい」。' },
+            { text: 'いつまい', isCorrect: false, reason: '量詞「枚{まい}」使用音讀數字「ご」。' },
+            { text: 'ごばい', isCorrect: false, reason: '「枚{まい}」讀作「まい」，不發生濁音化。' },
+            { text: 'こまい', isCorrect: false, reason: '需要濁音「ご」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五枚{ごまい}」讀作{どくさ}「ごまい」，無音變{むおんへん}。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '無音變{むおんへん}の量詞{りょうし}']
+            correctRule: '「五枚{ごまい}」讀作「ごまい」，無音變。',
+            relatedRules: ['量詞「枚{まい}」的使用', '無音變の量詞']
         },
         sourceItem: { value: 5, kanji: '五枚', reading: 'ごまい' }
     },
@@ -245,15 +245,15 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         stem: 'ピザを＿＿に切りました。',
         stem_zh: '把披薩切成五片。',
         options: [
-            { text: 'いつつ', isCorrect: false, reason: '切分{きりわけ}的片{かたまり}用{もちいる}「枚{まい}」更合適{てきせつ}。' },
-            { text: 'ごまい', isCorrect: true, reason: '正確{せいかく}！「ピザを五枚{ごまい}に切{き}りました」表示{ひょうじ}「切成{きりわけ}五片{ごまい}」。' },
-            { text: 'ごほん', isCorrect: false, reason: '披薩片{ピザかたまり}不是細長物{ほそながもの}。' },
-            { text: 'ごこ', isCorrect: false, reason: '披薩片{ピザかたまり}是扁平{へんぺい}的，用{もちいる}「枚{まい}」。' }
+            { text: 'いつつ', isCorrect: false, reason: '切分的片用「枚{まい}」更合適。' },
+            { text: 'ごまい', isCorrect: true, reason: '正確！「ピザを五枚{ごまい}に切りました」表示「切成五片」。' },
+            { text: 'ごほん', isCorrect: false, reason: '披薩片{ピザかたまり}不是細長物。' },
+            { text: 'ごこ', isCorrect: false, reason: '披薩片是扁平的，用「枚{まい}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '切分{きりわけ}的「ピザ」（披薩{ピザ}）是扁平{へんぺい}的，使用{しよう}量詞{りょうし}「枚{まい}」。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '食物{しょくもつ}の計數{けいすう}']
+            correctRule: '切分的「ピザ」（披薩）是扁平的，使用量詞「枚{まい}」。',
+            relatedRules: ['量詞「枚{まい}」的使用', '食物の計數']
         },
         sourceItem: { value: 5, kanji: '五枚', reading: 'ごまい' }
     },
@@ -270,15 +270,15 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿お願いします。（五份）'
         },
         options: [
-            { text: 'いつつ', isCorrect: false, reason: '影印{コピー}是紙張{しちょう}，用{もちいる}「枚{まい}」。' },
-            { text: 'ごまい', isCorrect: true, reason: '正確{せいかく}！需要{ひつよう}五份{ごまい}影印{コピー}。' },
-            { text: 'ごぶ', isCorrect: false, reason: '「部{ぶ}」用於{もちいる}文件{ぶんけん}套{セット}，單張{たんまい}用{もちいる}「枚{まい}」。' },
-            { text: 'ごこ', isCorrect: false, reason: '影印{コピー}是扁平{へんぺい}的，用{もちいる}「枚{まい}」。' }
+            { text: 'いつつ', isCorrect: false, reason: '影印是紙張，用「枚{まい}」。' },
+            { text: 'ごまい', isCorrect: true, reason: '正確！需要五份影印。' },
+            { text: 'ごぶ', isCorrect: false, reason: '「部{ぶ}」用於文件套，單張用「枚{まい}」。' },
+            { text: 'ごこ', isCorrect: false, reason: '影印是扁平的，用「枚{まい}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「コピー」（影印{えいいん}）是紙張{しちょう}，使用{しよう}量詞{りょうし}「枚{まい}」。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '辦公{オフィス}用語{ようご}']
+            correctRule: '「コピー」（影印）是紙張，使用量詞「枚{まい}」。',
+            relatedRules: ['量詞「枚{まい}」的使用', '辦公用語']
         },
         sourceItem: { value: 5, kanji: '五枚', reading: 'ごまい' }
     },
@@ -290,18 +290,18 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'flatObjects',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「七枚」的正確讀音是？',
+        stem: '「七枚」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「七枚」的正確讀音是？',
         options: [
-            { text: 'ななまい', isCorrect: true, reason: '正確{せいかく}！「七枚{ななまい}」無音變{むおんへん}，讀作{どくさ}「ななまい」。' },
-            { text: 'しちまい', isCorrect: false, reason: '量詞{りょうし}「枚{まい}」搭配{たいはい}7時{とき}多讀{よむ}「なな」。' },
-            { text: 'ななばい', isCorrect: false, reason: '「枚{まい}」讀作{どくさ}「まい」，不發生{ふはっせい}濁音化{だくおんか}。' },
-            { text: 'なのまい', isCorrect: false, reason: '「なの」是日期{にっき}七日{なのか}的讀法{よみかた}。' }
+            { text: 'ななまい', isCorrect: true, reason: '正確！「七枚{ななまい}」無音變，讀作「ななまい」。' },
+            { text: 'しちまい', isCorrect: false, reason: '量詞「枚{まい}」搭配7時多讀「なな」。' },
+            { text: 'ななばい', isCorrect: false, reason: '「枚{まい}」讀作「まい」，不發生濁音化。' },
+            { text: 'なのまい', isCorrect: false, reason: '「なの」是日期七日{なのか}的讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七枚{ななまい}」讀作{どくさ}「ななまい」。量詞{りょうし}搭配{たいはい}數字{すうじ}7時{とき}多使用{しよう}「なな」。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '7的讀法{よみかた}選擇{せんたく}']
+            correctRule: '「七枚{ななまい}」讀作「ななまい」。量詞搭配數字7時多使用「なな」。',
+            relatedRules: ['量詞「枚{まい}」的使用', '7的讀法選擇']
         },
         sourceItem: { value: 7, kanji: '七枚', reading: 'ななまい' }
     },
@@ -314,15 +314,15 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         stem: 'トランプを＿＿配りました。',
         stem_zh: '發了七張撲克牌。',
         options: [
-            { text: 'しちまい', isCorrect: false, reason: '量詞{りょうし}搭配{たいはい}7時{とき}多讀{よむ}「なな」。' },
-            { text: 'ななまい', isCorrect: true, reason: '正確{せいかく}！「トランプを七枚{ななまい}」表示{ひょうじ}「七張{ななまい}撲克牌{トランプ}」。' },
-            { text: 'ななほん', isCorrect: false, reason: '撲克牌{トランプ}是扁平{へんぺい}的，用{もちいる}「枚{まい}」。' },
-            { text: 'ななつ', isCorrect: false, reason: '撲克牌{トランプ}是扁平物{へんぺいぶつ}，應使用{しよう}「枚{まい}」。' }
+            { text: 'しちまい', isCorrect: false, reason: '量詞搭配7時多讀「なな」。' },
+            { text: 'ななまい', isCorrect: true, reason: '正確！「トランプを七枚{ななまい}」表示「七張{ななまい}撲克牌」。' },
+            { text: 'ななほん', isCorrect: false, reason: '撲克牌是扁平的，用「枚{まい}」。' },
+            { text: 'ななつ', isCorrect: false, reason: '撲克牌是扁平物，應使用「枚{まい}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「トランプ」（撲克牌{トランプ}）是扁平{へんぺい}的，使用{しよう}量詞{りょうし}「枚{まい}」。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '遊戲{ゲーム}用品{ようひん}']
+            correctRule: '「トランプ」（撲克牌）是扁平的，使用量詞「枚{まい}」。',
+            relatedRules: ['量詞「枚{まい}」的使用', '遊戲用品']
         },
         sourceItem: { value: 7, kanji: '七枚', reading: 'ななまい' }
     },
@@ -339,15 +339,15 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿書きました。（七張）'
         },
         options: [
-            { text: 'しちまい', isCorrect: false, reason: '量詞{りょうし}搭配{たいはい}7時{とき}多讀{よむ}「なな」。' },
-            { text: 'ななまい', isCorrect: true, reason: '正確{せいかく}！寫了{かきました}七張{ななまい}賀年卡{ねんがじょう}。' },
-            { text: 'ななつう', isCorrect: false, reason: '「通{つう}」用於{もちいる}信件{てがみ}，明信片{はがき}用{もちいる}「枚{まい}」。' },
-            { text: 'ななつ', isCorrect: false, reason: '明信片{はがき}是扁平物{へんぺいぶつ}，用{もちいる}「枚{まい}」。' }
+            { text: 'しちまい', isCorrect: false, reason: '量詞搭配7時多讀「なな」。' },
+            { text: 'ななまい', isCorrect: true, reason: '正確！寫了七張賀年卡。' },
+            { text: 'ななつう', isCorrect: false, reason: '「通{つう}」用於信件，明信片用「枚{まい}」。' },
+            { text: 'ななつ', isCorrect: false, reason: '明信片是扁平物，用「枚{まい}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「年賀状{ねんがじょう}」（賀年卡{がねんか}）是扁平{へんぺい}的，使用{しよう}量詞{りょうし}「枚{まい}」。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '郵件{ゆうびん}の計數{けいすう}']
+            correctRule: '「年賀状」（賀年卡）是扁平的，使用量詞「枚{まい}」。',
+            relatedRules: ['量詞「枚{まい}」的使用', '郵件の計數']
         },
         sourceItem: { value: 7, kanji: '七枚', reading: 'ななまい' }
     },
@@ -359,19 +359,19 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'flatObjects',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「十枚」的正確讀音是？',
+        stem: '「十枚」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十枚」的正確讀音是？',
         options: [
-            { text: 'じゅうまい', isCorrect: true, reason: '正確{せいかく}！「十枚{じゅうまい}」無音變{むおんへん}，讀作{どくさ}「じゅうまい」。' },
-            { text: 'じゅっまい', isCorrect: false, reason: '陷阱{かんけい}！量詞{りょうし}「枚{まい}」以{い}「ま行{ぎょう}」開頭{あたま}，不發生{ふはっせい}促音化{そくおんか}。' },
-            { text: 'とおまい', isCorrect: false, reason: '量詞{りょうし}「枚{まい}」使用{しよう}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅっぱい', isCorrect: false, reason: '「枚{まい}」不發生{ふはっせい}半濁音化{はんだくおんか}。' }
+            { text: 'じゅうまい', isCorrect: true, reason: '正確！「十枚{じゅうまい}」無音變，讀作「じゅうまい」。' },
+            { text: 'じゅっまい', isCorrect: false, reason: '陷阱！量詞「枚{まい}」以「ま行」開頭，不發生促音化。' },
+            { text: 'とおまい', isCorrect: false, reason: '量詞「枚{まい}」使用音讀「じゅう」。' },
+            { text: 'じゅっぱい', isCorrect: false, reason: '「枚{まい}」不發生半濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十枚{じゅうまい}」讀作{どくさ}「じゅうまい」。量詞{りょうし}「枚{まい}」以{い}「ま行{ぎょう}」開頭{あたま}，不發生{ふはっせい}促音化{そくおんか}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「枚{まい}」與「本{ほん}」（h行{ぎょう}）不同{ちがい}，不會{ないだろう}促音化{そくおんか}。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '「枚{まい}」vs「本{ほん}」の音變{おんへん}差異{さい}']
+            correctRule: '「十枚{じゅうまい}」讀作「じゅうまい」。量詞「枚{まい}」以「ま行」開頭，不發生促音化。',
+            trapExplanation: '這是陷阱題。「枚{まい}」與「本{ほん}」（h行）不同，不會促音化。',
+            relatedRules: ['量詞「枚{まい}」的使用', '「枚{まい}」vs「本{ほん}」的音變差異']
         },
         sourceItem: { value: 10, kanji: '十枚', reading: 'じゅうまい' }
     },
@@ -384,16 +384,16 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         stem: 'チケットを＿＿予約しました。',
         stem_zh: '我預約了十張票。',
         options: [
-            { text: 'じゅっまい', isCorrect: false, reason: '陷阱{かんけい}！「枚{まい}」不發生{ふはっせい}促音化{そくおんか}。' },
-            { text: 'じゅうまい', isCorrect: true, reason: '正確{せいかく}！「チケットを十枚{じゅうまい}」表示{ひょうじ}「十張{じゅうまい}票{チケット}」。' },
-            { text: 'とおまい', isCorrect: false, reason: '量詞{りょうし}「枚{まい}」用{もちいる}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅっぽん', isCorrect: false, reason: '票{チケット}是扁平{へんぺい}的，用{もちいる}「枚{まい}」不是「本{ほん}」。' }
+            { text: 'じゅっまい', isCorrect: false, reason: '陷阱！「枚{まい}」不發生促音化。' },
+            { text: 'じゅうまい', isCorrect: true, reason: '正確！「チケットを十枚{じゅうまい}」表示「十張票」。' },
+            { text: 'とおまい', isCorrect: false, reason: '量詞「枚{まい}」用音讀「じゅう」。' },
+            { text: 'じゅっぽん', isCorrect: false, reason: '票是扁平的，用「枚{まい}」不是「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「チケット」（票{きっぷ}）是扁平{へんぺい}的，使用{しよう}量詞{りょうし}「枚{まい}」。',
-            trapExplanation: '與「十本{じゅっぽん}」不同{ちがい}，「十枚{じゅうまい}」保持{ほじ}原音{げんおん}不促音化{ふそくおんか}。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '票券{きっぷ}の計數{けいすう}']
+            correctRule: '「チケット」（票）是扁平的，使用量詞「枚{まい}」。',
+            trapExplanation: '與「十本{じゅっぽん}」不同，「十枚{じゅうまい}」保持原音不促音化。',
+            relatedRules: ['量詞「枚{まい}」的使用', '票券の計數']
         },
         sourceItem: { value: 10, kanji: '十枚', reading: 'じゅうまい' }
     },
@@ -410,15 +410,15 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿あります。（十條）'
         },
         options: [
-            { text: 'じゅっまい', isCorrect: false, reason: '「枚{まい}」不促音化{ふそくおんか}。' },
-            { text: 'じゅうまい', isCorrect: true, reason: '正確{せいかく}！有十條{じゅうまい}毛巾{タオル}。' },
-            { text: 'とお', isCorrect: false, reason: '毛巾{タオル}是扁平{へんぺい}的，用{もちいる}「枚{まい}」。' },
-            { text: 'じゅっぽん', isCorrect: false, reason: '毛巾{タオル}用{もちいる}「枚{まい}」不是「本{ほん}」。' }
+            { text: 'じゅっまい', isCorrect: false, reason: '「枚{まい}」不促音化。' },
+            { text: 'じゅうまい', isCorrect: true, reason: '正確！有十條毛巾。' },
+            { text: 'とお', isCorrect: false, reason: '毛巾是扁平的，用「枚{まい}」。' },
+            { text: 'じゅっぽん', isCorrect: false, reason: '毛巾用「枚{まい}」不是「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「タオル」（毛巾{タオル}）是扁平{へんぺい}的布{ぬの}製品{せいひん}，使用{しよう}量詞{りょうし}「枚{まい}」。',
-            relatedRules: ['量詞{りょうし}「枚{まい}」の使用{しよう}', '日用品{にちようひん}の計數{けいすう}']
+            correctRule: '「タオル」（毛巾）是扁平的布製品，使用量詞「枚{まい}」。',
+            relatedRules: ['量詞「枚{まい}」的使用', '日用品の計數']
         },
         sourceItem: { value: 10, kanji: '十枚', reading: 'じゅうまい' }
     },
@@ -430,18 +430,18 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'flatObjects',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「何枚」的正確讀音是？',
+        stem: '「何枚」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何枚」的正確讀音是？',
         options: [
-            { text: 'なんまい', isCorrect: true, reason: '正確{せいかく}！「何枚{なんまい}」無音變{むおんへん}，讀作{どくさ}「なんまい」。' },
-            { text: 'なんばい', isCorrect: false, reason: '「枚{まい}」讀作{どくさ}「まい」，不發生{ふはっせい}濁音化{だくおんか}。' },
-            { text: 'なにまい', isCorrect: false, reason: '搭配{たいはい}量詞{りょうし}時{とき}，「何{なに}」讀作{どくさ}「なん」。' },
-            { text: 'なんぱい', isCorrect: false, reason: '「枚{まい}」不發生{ふはっせい}半濁音化{はんだくおんか}。' }
+            { text: 'なんまい', isCorrect: true, reason: '正確！「何枚{なんまい}」無音變，讀作「なんまい」。' },
+            { text: 'なんばい', isCorrect: false, reason: '「枚{まい}」讀作「まい」，不發生濁音化。' },
+            { text: 'なにまい', isCorrect: false, reason: '搭配量詞時，「何」讀作「なん」。' },
+            { text: 'なんぱい', isCorrect: false, reason: '「枚{まい}」不發生半濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何枚{なんまい}」讀作{どくさ}「なんまい」。量詞{りょうし}「枚{まい}」不受{うけない}撥音{はつおん}「ん」影響{えいきょう}，不發生{ふはっせい}音變{おんへん}。',
-            relatedRules: ['疑問詞{ぎもんし}の讀法{よみかた}', '「何{なん}＋量詞{りょうし}」の讀法{よみかた}']
+            correctRule: '「何枚{なんまい}」讀作「なんまい」。量詞「枚{まい}」不受撥音「ん」影響，不發生音變。',
+            relatedRules: ['疑問詞的讀法', '「何{なん}＋量詞」的讀法']
         },
         sourceItem: { value: '?', kanji: '何枚', reading: 'なんまい' }
     },
@@ -450,14 +450,14 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
     // 11-20枚
     {
         id: 'flat_11_pron', category: 'counters', subcategory: 'flatObjects', type: 'pronunciation', isTrap: false,
-        stem: '「十一枚」的正確讀音是？', stem_zh: '「十一枚」的正確讀音是？',
+        stem: '「十一枚」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「十一枚」的正確讀音是？',
         options: [
             { text: 'じゅういちまい', isCorrect: true, reason: '正確！「十一枚」讀作「じゅういちまい」。' },
             { text: 'じゅういっまい', isCorrect: false, reason: '「枚」不促音化。' },
             { text: 'といちまい', isCorrect: false, reason: '十使用「じゅう」。' },
             { text: 'じゅういちばい', isCorrect: false, reason: '「枚」讀作「まい」。' }
         ],
-        correctIndex: 0, explanation: { correctRule: '「十一枚」讀作「じゅういちまい」，無音變。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 0, explanation: { correctRule: '「十一枚」讀作「じゅういちまい」，無音變。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 11, kanji: '十一枚', reading: 'じゅういちまい' }
     },
     {
@@ -469,7 +469,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうにほん', isCorrect: false, reason: '「本」不用於日曆。' },
             { text: 'じゅうにこ', isCorrect: false, reason: '「個」不用於日曆。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '日曆是扁平的，用「枚」計數。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '日曆是扁平的，用「枚」計數。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 12, kanji: '十二枚', reading: 'じゅうにまい' }
     },
     {
@@ -482,19 +482,19 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうごこ', isCorrect: false, reason: '郵票用「枚」。' },
             { text: 'じゅういつまい', isCorrect: false, reason: '使用「ご」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '「切手」是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '「切手」是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 15, kanji: '十五枚', reading: 'じゅうごまい' }
     },
     {
         id: 'flat_20_pron', category: 'counters', subcategory: 'flatObjects', type: 'pronunciation', isTrap: false,
-        stem: '「二十枚」的正確讀音是？', stem_zh: '「二十枚」的正確讀音是？',
+        stem: '「二十枚」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二十枚」的正確讀音是？',
         options: [
             { text: 'にじゅうまい', isCorrect: true, reason: '正確！「二十枚」讀作「にじゅうまい」。' },
             { text: 'にじゅっまい', isCorrect: false, reason: '「枚」不促音化。' },
             { text: 'はたまい', isCorrect: false, reason: '使用「にじゅう」。' },
             { text: 'にじゅうばい', isCorrect: false, reason: '「枚」讀作「まい」。' }
         ],
-        correctIndex: 0, explanation: { correctRule: '「二十枚」讀作「にじゅうまい」，無音變。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 0, explanation: { correctRule: '「二十枚」讀作「にじゅうまい」，無音變。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 20, kanji: '二十枚', reading: 'にじゅうまい' }
     },
     {
@@ -506,7 +506,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅうぽん', isCorrect: false, reason: '「本」不用於信封。' },
             { text: 'みそまい', isCorrect: false, reason: '使用「さんじゅう」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '「封筒」是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '「封筒」是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 30, kanji: '三十枚', reading: 'さんじゅうまい' }
     },
     {
@@ -519,19 +519,19 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ごじゅうこ', isCorrect: false, reason: '名片用「枚」。' },
             { text: 'いそまい', isCorrect: false, reason: '使用「ごじゅう」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '「名刺」是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '「名刺」是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 50, kanji: '五十枚', reading: 'ごじゅうまい' }
     },
     {
         id: 'flat_100_pron', category: 'counters', subcategory: 'flatObjects', type: 'pronunciation', isTrap: false,
-        stem: '「百枚」的正確讀音是？', stem_zh: '「百枚」的正確讀音是？',
+        stem: '「百枚」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「百枚」的正確讀音是？',
         options: [
             { text: 'ひゃくまい', isCorrect: true, reason: '正確！「百枚」讀作「ひゃくまい」。' },
             { text: 'ひゃっまい', isCorrect: false, reason: '「枚」不促音化。' },
             { text: 'ももまい', isCorrect: false, reason: '使用「ひゃく」。' },
             { text: 'ひゃくばい', isCorrect: false, reason: '「枚」讀作「まい」。' }
         ],
-        correctIndex: 0, explanation: { correctRule: '「百枚」讀作「ひゃくまい」，無音變。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 0, explanation: { correctRule: '「百枚」讀作「ひゃくまい」，無音變。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 100, kanji: '百枚', reading: 'ひゃくまい' }
     },
 
@@ -545,7 +545,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ごこ', isCorrect: false, reason: 'T恤用「枚」。' },
             { text: 'いつまい', isCorrect: false, reason: '使用「ご」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '衣服類用「枚」計數。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '衣服類用「枚」計數。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 5, kanji: '五枚', reading: 'ごまい' }
     },
     {
@@ -558,7 +558,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'みっつ', isCorrect: false, reason: '披薩用「枚」。' },
             { text: 'さんぼん', isCorrect: false, reason: '「本」不用於披薩。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '披薩是扁平圓形，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '披薩是扁平圓形，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 3, kanji: '三枚', reading: 'さんまい' }
     },
     {
@@ -570,7 +570,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'しちさつ', isCorrect: false, reason: 'CD用「枚」。' },
             { text: 'なのまい', isCorrect: false, reason: '使用「なな」或「しち」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: 'CD是扁平圓盤，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: 'CD是扁平圓盤，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 7, kanji: '七枚', reading: 'ななまい' }
     },
     {
@@ -583,7 +583,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'しまい', isCorrect: false, reason: '使用「よん」不是「し」。' },
             { text: 'よっつ', isCorrect: false, reason: '海報用「枚」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '海報是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '海報是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 4, kanji: '四枚', reading: 'よんまい' }
     },
     {
@@ -595,7 +595,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'むっつ', isCorrect: false, reason: '盤子用「枚」。' },
             { text: 'ろっぽん', isCorrect: false, reason: '「本」不用於盤子。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '盤子是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '盤子是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 6, kanji: '六枚', reading: 'ろくまい' }
     },
     {
@@ -608,7 +608,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'やっつ', isCorrect: false, reason: '車票用「枚」。' },
             { text: 'はっぽん', isCorrect: false, reason: '「本」不用於車票。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '車票是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '車票是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 8, kanji: '八枚', reading: 'はちまい' }
     },
     {
@@ -620,7 +620,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのつ', isCorrect: false, reason: '硬幣用「枚」。' },
             { text: 'くまい', isCorrect: false, reason: '使用「きゅう」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '硬幣是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '硬幣是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 9, kanji: '九枚', reading: 'きゅうまい' }
     },
     {
@@ -633,7 +633,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたつ', isCorrect: false, reason: '布料用「枚」。' },
             { text: 'にこ', isCorrect: false, reason: '布料用「枚」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '布料是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '布料是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
     },
     {
@@ -645,7 +645,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'とお', isCorrect: false, reason: '畫作用「枚」。' },
             { text: 'じゅっぽん', isCorrect: false, reason: '「本」不用於畫作。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '畫作是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '畫作是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 10, kanji: '十枚', reading: 'じゅうまい' }
     },
     {
@@ -658,7 +658,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅっさつ', isCorrect: false, reason: '餃子皮用「枚」。' },
             { text: 'はたまい', isCorrect: false, reason: '使用「にじゅう」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '餃子皮是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '餃子皮是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 20, kanji: '二十枚', reading: 'にじゅうまい' }
     },
 
@@ -684,7 +684,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: '筆、傘、樹', isCorrect: false, reason: '細長物用「本」。' },
             { text: '貓、狗、魚', isCorrect: false, reason: '動物用「匹」。' }
         ],
-        correctIndex: 0, explanation: { correctRule: '「枚」用於扁平物品：紙、布、盤子、硬幣、衣服等。', relatedRules: ['量詞「枚」の使用範圍'] },
+        correctIndex: 0, explanation: { correctRule: '「枚」用於扁平物品：紙、布、盤子、硬幣、衣服等。', relatedRules: ['量詞「枚」的使用範圍'] },
         sourceItem: { value: 0, kanji: '枚の適用', reading: '扁平物' }
     },
     {
@@ -736,7 +736,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとつ', isCorrect: false, reason: '明信片用「枚」。' },
             { text: 'いっぽん', isCorrect: false, reason: '「本」不用於明信片。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '明信片是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '明信片是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 1, kanji: '一枚', reading: 'いちまい' }
     },
     {
@@ -749,7 +749,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'みっつ', isCorrect: false, reason: '床單用「枚」。' },
             { text: 'さんさつ', isCorrect: false, reason: '「冊」不用於床單。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '床單是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '床單是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 3, kanji: '三枚', reading: 'さんまい' }
     },
     {
@@ -761,7 +761,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたつ', isCorrect: false, reason: '薄片火腿用「枚」。' },
             { text: 'にほん', isCorrect: false, reason: '「本」不用於薄片。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '薄片狀的食物用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '薄片狀的食物用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
     },
     {
@@ -774,7 +774,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'とお', isCorrect: false, reason: '貼紙用「枚」。' },
             { text: 'じゅっぽん', isCorrect: false, reason: '「本」不用於貼紙。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '貼紙是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '貼紙是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 10, kanji: '十枚', reading: 'じゅうまい' }
     },
     {
@@ -786,7 +786,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よっつ', isCorrect: false, reason: '鬆餅用「枚」。' },
             { text: 'しまい', isCorrect: false, reason: '使用「よん」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '鬆餅是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '鬆餅是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 4, kanji: '四枚', reading: 'よんまい' }
     },
     {
@@ -799,7 +799,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'むっつ', isCorrect: false, reason: '窗簾用「枚」。' },
             { text: 'ろっこ', isCorrect: false, reason: '窗簾用「枚」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '窗簾是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '窗簾是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 6, kanji: '六枚', reading: 'ろくまい' }
     },
     {
@@ -811,7 +811,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'やっつ', isCorrect: false, reason: '唱片用「枚」。' },
             { text: 'はっぽん', isCorrect: false, reason: '「本」不用於唱片。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '唱片是扁平圓盤，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '唱片是扁平圓盤，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 8, kanji: '八枚', reading: 'はちまい' }
     },
     {
@@ -824,7 +824,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのつ', isCorrect: false, reason: '薄餅用「枚」。' },
             { text: 'くまい', isCorrect: false, reason: '使用「きゅう」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '薄餅是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '薄餅是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 9, kanji: '九枚', reading: 'きゅうまい' }
     },
     {
@@ -836,7 +836,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ひゃっこ', isCorrect: false, reason: '傳單用「枚」。' },
             { text: 'ももまい', isCorrect: false, reason: '使用「ひゃく」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '傳單是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '傳單是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 100, kanji: '百枚', reading: 'ひゃくまい' }
     },
     {
@@ -849,7 +849,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'いつつ', isCorrect: false, reason: '收據用「枚」。' },
             { text: 'いつまい', isCorrect: false, reason: '使用「ご」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '收據是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '收據是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 5, kanji: '五枚', reading: 'ごまい' }
     },
     {
@@ -861,7 +861,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたつ', isCorrect: false, reason: '板子用「枚」。' },
             { text: 'にさつ', isCorrect: false, reason: '「冊」不用於板子。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '板子是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '板子是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
     },
     {
@@ -874,7 +874,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'みそまい', isCorrect: false, reason: '使用「さんじゅう」。' },
             { text: 'さんじゅうぽん', isCorrect: false, reason: '「本」不用於口罩。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '口罩是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '口罩是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 30, kanji: '三十枚', reading: 'さんじゅうまい' }
     },
     {
@@ -886,7 +886,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとつ', isCorrect: false, reason: '玻璃板用「枚」。' },
             { text: 'いっこ', isCorrect: false, reason: '玻璃板用「枚」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '玻璃板是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '玻璃板是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 1, kanji: '一枚', reading: 'いちまい' }
     },
     {
@@ -899,7 +899,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ごじゅうにこ', isCorrect: false, reason: '撲克牌用「枚」。' },
             { text: 'ごじゅうにほん', isCorrect: false, reason: '「本」不用於撲克牌。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '撲克牌是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '撲克牌是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 52, kanji: '五十二枚', reading: 'ごじゅうにまい' }
     },
     {
@@ -911,7 +911,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'みっつ', isCorrect: false, reason: '鏡子用「枚」。' },
             { text: 'さんこ', isCorrect: false, reason: '鏡子用「枚」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '鏡子是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '鏡子是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 3, kanji: '三枚', reading: 'さんまい' }
     },
     {
@@ -924,7 +924,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたつ', isCorrect: false, reason: '吐司用「枚」。' },
             { text: 'にほん', isCorrect: false, reason: '「本」不用於吐司。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '吐司片是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '吐司片是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
     },
     {
@@ -936,7 +936,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よんじゅっさつ', isCorrect: false, reason: '餃子皮用「枚」。' },
             { text: 'しじゅうまい', isCorrect: false, reason: '使用「よんじゅう」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '餃子皮是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '餃子皮是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 40, kanji: '四十枚', reading: 'よんじゅうまい' }
     },
     {
@@ -949,7 +949,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'むっつ', isCorrect: false, reason: '榻榻米用「畳」。' },
             { text: 'ろっぽん', isCorrect: false, reason: '「本」不用於榻榻米。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '榻榻米有專用量詞「畳」。', relatedRules: ['量詞「畳」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '榻榻米有專用量詞「畳」。', relatedRules: ['量詞「畳」的使用'] },
         sourceItem: { value: 6, kanji: '六畳', reading: 'ろくじょう' }
     },
     {
@@ -961,7 +961,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ななつ', isCorrect: false, reason: 'DVD用「枚」。' },
             { text: 'しちほん', isCorrect: false, reason: '「本」不用於DVD。' }
         ],
-        correctIndex: 1, explanation: { correctRule: 'DVD是扁平圓盤，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: 'DVD是扁平圓盤，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 7, kanji: '七枚', reading: 'ななまい' }
     },
     {
@@ -974,7 +974,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくじゅっぽん', isCorrect: false, reason: '「本」不用於瓷磚。' },
             { text: 'むじゅうまい', isCorrect: false, reason: '使用「ろくじゅう」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '瓷磚是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '瓷磚是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 60, kanji: '六十枚', reading: 'ろくじゅうまい' }
     },
 
@@ -988,7 +988,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとつ', isCorrect: false, reason: '證書用「枚」。' },
             { text: 'いっぽん', isCorrect: false, reason: '「本」不用於證書。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '證書是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '證書是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 1, kanji: '一枚', reading: 'いちまい' }
     },
     {
@@ -1001,7 +1001,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'みっつ', isCorrect: false, reason: '地圖用「枚」。' },
             { text: 'さんぽん', isCorrect: false, reason: '「本」不用於地圖。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '單張地圖是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '單張地圖是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 3, kanji: '三枚', reading: 'さんまい' }
     },
     {
@@ -1013,7 +1013,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅっさつ', isCorrect: false, reason: '投影片用「枚」。' },
             { text: 'はたまい', isCorrect: false, reason: '使用「にじゅう」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '投影片是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '投影片是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 20, kanji: '二十枚', reading: 'にじゅうまい' }
     },
     {
@@ -1026,7 +1026,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'いつつ', isCorrect: false, reason: '抽獎券用「枚」。' },
             { text: 'いつまい', isCorrect: false, reason: '使用「ご」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '抽獎券是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '抽獎券是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 5, kanji: '五枚', reading: 'ごまい' }
     },
     {
@@ -1038,7 +1038,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'やっつ', isCorrect: false, reason: '壁紙用「枚」。' },
             { text: 'はっぽん', isCorrect: false, reason: '「本」不用於壁紙。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '壁紙是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '壁紙是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 8, kanji: '八枚', reading: 'はちまい' }
     },
     {
@@ -1051,7 +1051,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたつ', isCorrect: false, reason: '優惠券用「枚」。' },
             { text: 'にさつ', isCorrect: false, reason: '「冊」不用於優惠券。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '優惠券是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '優惠券是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
     },
     {
@@ -1063,7 +1063,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よっつ', isCorrect: false, reason: '桌布用「枚」。' },
             { text: 'しまい', isCorrect: false, reason: '使用「よん」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '桌布是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '桌布是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 4, kanji: '四枚', reading: 'よんまい' }
     },
     {
@@ -1076,7 +1076,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'むっつ', isCorrect: false, reason: '門票用「枚」。' },
             { text: 'ろっぽん', isCorrect: false, reason: '「本」不用於門票。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '門票是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '門票是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 6, kanji: '六枚', reading: 'ろくまい' }
     },
     {
@@ -1088,7 +1088,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'とお', isCorrect: false, reason: '落葉用「枚」。' },
             { text: 'じゅっさつ', isCorrect: false, reason: '「冊」不用於落葉。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '葉子是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '葉子是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 10, kanji: '十枚', reading: 'じゅうまい' }
     },
     {
@@ -1101,7 +1101,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'みっつ', isCorrect: false, reason: '衛生紙用「枚」。' },
             { text: 'さんこ', isCorrect: false, reason: '衛生紙用「枚」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '衛生紙是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '衛生紙是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 3, kanji: '三枚', reading: 'さんまい' }
     },
     {
@@ -1113,7 +1113,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'いつつ', isCorrect: false, reason: '年糕用「枚」。' },
             { text: 'ごさつ', isCorrect: false, reason: '「冊」不用於年糕。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '扁平的年糕用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '扁平的年糕用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 5, kanji: '五枚', reading: 'ごまい' }
     },
     {
@@ -1126,7 +1126,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'とお', isCorrect: false, reason: '信封用「枚」。' },
             { text: 'じゅうつう', isCorrect: false, reason: '「通」用於信件內容。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '信封是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '信封是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 10, kanji: '十枚', reading: 'じゅうまい' }
     },
     {
@@ -1138,7 +1138,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたつ', isCorrect: false, reason: '平底鍋可用「枚」。' },
             { text: 'にこ', isCorrect: false, reason: '平底鍋用「枚」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '平底鍋是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '平底鍋是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
     },
     {
@@ -1151,7 +1151,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よっつ', isCorrect: false, reason: '棉被用「枚」。' },
             { text: 'しまい', isCorrect: false, reason: '使用「よん」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '棉被是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '棉被是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 4, kanji: '四枚', reading: 'よんまい' }
     },
     {
@@ -1163,7 +1163,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'みっつ', isCorrect: false, reason: '獎狀用「枚」。' },
             { text: 'さんぽん', isCorrect: false, reason: '「本」不用於獎狀。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '獎狀是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '獎狀是扁平的紙張，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 3, kanji: '三枚', reading: 'さんまい' }
     },
     {
@@ -1176,7 +1176,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたつ', isCorrect: false, reason: '煎蛋可用「枚」。' },
             { text: 'にほん', isCorrect: false, reason: '「本」不用於煎蛋。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '煎蛋是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '煎蛋是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
     },
     {
@@ -1188,7 +1188,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'むっつ', isCorrect: false, reason: '墊子用「枚」。' },
             { text: 'ろっさつ', isCorrect: false, reason: '「冊」不用於墊子。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '墊子是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '墊子是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 6, kanji: '六枚', reading: 'ろくまい' }
     },
     {
@@ -1201,7 +1201,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ななつ', isCorrect: false, reason: '扁平貝殼可用「枚」。' },
             { text: 'しちほん', isCorrect: false, reason: '「本」不用於貝殼。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '扁平的貝殼用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '扁平的貝殼用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 7, kanji: '七枚', reading: 'ななまい' }
     },
     {
@@ -1213,7 +1213,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ごじゅっこ', isCorrect: false, reason: '卡片用「枚」。' },
             { text: 'ごじゅうほん', isCorrect: false, reason: '「本」不用於卡片。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '卡片是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '卡片是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 50, kanji: '五十枚', reading: 'ごじゅうまい' }
     },
     {
@@ -1226,7 +1226,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'やっつ', isCorrect: false, reason: '座墊用「枚」。' },
             { text: 'はっさつ', isCorrect: false, reason: '「冊」不用於座墊。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '座墊是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '座墊是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 8, kanji: '八枚', reading: 'はちまい' }
     },
     {
@@ -1238,7 +1238,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのつ', isCorrect: false, reason: '標籤用「枚」。' },
             { text: 'くまい', isCorrect: false, reason: '使用「きゅう」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '標籤是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '標籤是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 9, kanji: '九枚', reading: 'きゅうまい' }
     },
     {
@@ -1251,7 +1251,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとつ', isCorrect: false, reason: '塑膠袋可用「枚」。' },
             { text: 'いっこ', isCorrect: false, reason: '塑膠袋用「枚」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '塑膠袋是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '塑膠袋是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 1, kanji: '一枚', reading: 'いちまい' }
     },
     {
@@ -1263,7 +1263,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'みっつ', isCorrect: false, reason: '仙貝用「枚」。' },
             { text: 'さんぽん', isCorrect: false, reason: '「本」不用於仙貝。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '仙貝是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '仙貝是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 3, kanji: '三枚', reading: 'さんまい' }
     },
     {
@@ -1276,7 +1276,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'とお', isCorrect: false, reason: '海苔用「枚」。' },
             { text: 'じゅうほん', isCorrect: false, reason: '「本」不用於海苔。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '海苔是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '海苔是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 10, kanji: '十枚', reading: 'じゅうまい' }
     },
     {
@@ -1288,7 +1288,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よっつ', isCorrect: false, reason: '浴巾用「枚」。' },
             { text: 'しまい', isCorrect: false, reason: '使用「よん」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '浴巾是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '浴巾是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 4, kanji: '四枚', reading: 'よんまい' }
     },
     {
@@ -1301,7 +1301,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうごさつ', isCorrect: false, reason: '「冊」不用於便條紙。' },
             { text: 'じゅうごほん', isCorrect: false, reason: '「本」不用於便條紙。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '便條紙是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '便條紙是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 15, kanji: '十五枚', reading: 'じゅうごまい' }
     },
     {
@@ -1313,7 +1313,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'いつつ', isCorrect: false, reason: '圍巾用「枚」。' },
             { text: 'ごさつ', isCorrect: false, reason: '「冊」不用於圍巾。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '圍巾是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '圍巾是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 5, kanji: '五枚', reading: 'ごまい' }
     },
     {
@@ -1326,7 +1326,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとつ', isCorrect: false, reason: '乾燥片可用「枚」。' },
             { text: 'いっぽん', isCorrect: false, reason: '「本」不用於乾燥片。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '乾燥片是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '乾燥片是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 1, kanji: '一枚', reading: 'いちまい' }
     },
     {
@@ -1338,7 +1338,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうにほん', isCorrect: false, reason: '「本」不用於花瓣。' },
             { text: 'じゅうにさつ', isCorrect: false, reason: '「冊」不用於花瓣。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '花瓣是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '花瓣是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 12, kanji: '十二枚', reading: 'じゅうにまい' }
     },
     {
@@ -1351,7 +1351,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅっぽん', isCorrect: false, reason: '「本」不用於紙巾。' },
             { text: 'はたまい', isCorrect: false, reason: '使用「にじゅう」。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '紙巾是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '紙巾是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 20, kanji: '二十枚', reading: 'にじゅうまい' }
     },
     {
@@ -1363,7 +1363,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうごさつ', isCorrect: false, reason: '「冊」不用於貼紙。' },
             { text: 'にじゅうごほん', isCorrect: false, reason: '「本」不用於貼紙。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '貼紙是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '貼紙是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 25, kanji: '二十五枚', reading: 'にじゅうごまい' }
     },
     {
@@ -1376,7 +1376,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'むっつ', isCorrect: false, reason: '包裝紙用「枚」。' },
             { text: 'ろっぽん', isCorrect: false, reason: '「本」不用於包裝紙。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '包裝紙是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '包裝紙是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 6, kanji: '六枚', reading: 'ろくまい' }
     },
     {
@@ -1388,7 +1388,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'やっつ', isCorrect: false, reason: '手帕用「枚」。' },
             { text: 'はっさつ', isCorrect: false, reason: '「冊」不用於手帕。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '手帕是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '手帕是扁平的布製品，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 8, kanji: '八枚', reading: 'はちまい' }
     },
     {
@@ -1401,7 +1401,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたつ', isCorrect: false, reason: '貼布用「枚」。' },
             { text: 'にほん', isCorrect: false, reason: '「本」不用於貼布。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '貼布是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '貼布是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
     },
     {
@@ -1413,7 +1413,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'みそまい', isCorrect: false, reason: '使用「さんじゅう」。' },
             { text: 'さんじゅうほん', isCorrect: false, reason: '「本」不用於餅乾。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '薄片狀餅乾用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '薄片狀餅乾用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 30, kanji: '三十枚', reading: 'さんじゅうまい' }
     },
     {
@@ -1426,7 +1426,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'いつつ', isCorrect: false, reason: 'OK繃用「枚」。' },
             { text: 'ごさつ', isCorrect: false, reason: '「冊」不用於OK繃。' }
         ],
-        correctIndex: 1, explanation: { correctRule: 'OK繃是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: 'OK繃是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 5, kanji: '五枚', reading: 'ごまい' }
     },
     {
@@ -1438,7 +1438,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'みっつ', isCorrect: false, reason: '草蓆用「枚」。' },
             { text: 'さんさつ', isCorrect: false, reason: '「冊」不用於草蓆。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '草蓆是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '草蓆是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 3, kanji: '三枚', reading: 'さんまい' }
     },
     {
@@ -1451,7 +1451,7 @@ export const flatObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ななつ', isCorrect: false, reason: '面膜用「枚」。' },
             { text: 'しちほん', isCorrect: false, reason: '「本」不用於面膜。' }
         ],
-        correctIndex: 1, explanation: { correctRule: '面膜是扁平的，用「枚」。', relatedRules: ['量詞「枚」の使用'] },
+        correctIndex: 1, explanation: { correctRule: '面膜是扁平的，用「枚」。', relatedRules: ['量詞「枚」的使用'] },
         sourceItem: { value: 7, kanji: '七枚', reading: 'ななまい' }
     },
     {

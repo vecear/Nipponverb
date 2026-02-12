@@ -11,6 +11,7 @@ import { getCharacterStory } from '../data/characterStories'
 import { courses } from '../data/courses'
 import { formatStudyTime } from '../services/studyTrackingService'
 
+
 const Dashboard = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
@@ -125,6 +126,8 @@ const Dashboard = () => {
 
   return (
     <div className="space-y-3 sm:space-y-4 md:space-y-6">
+
+
       {/* Stats Cards - 統計卡片 */}
       <div className="grid grid-cols-4 gap-2 sm:gap-3">
         {stats.map((stat, index) => (

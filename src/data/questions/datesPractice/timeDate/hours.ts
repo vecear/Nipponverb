@@ -12,18 +12,18 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「一時」的正確讀音是？',
+        stem: '「一時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一時」的正確讀音是？',
         options: [
-            { text: 'いちじ', isCorrect: true, reason: '正確{せいかく}！「一時{いちじ}」讀作{どくさ}「いちじ」。' },
-            { text: 'ひとじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}「いち」不是訓讀{くんどく}。' },
-            { text: 'いっじ', isCorrect: false, reason: '不促音化{ふそくおんか}，是「いちじ」。' },
-            { text: 'いちとき', isCorrect: false, reason: '「とき」是「時間{じかん}/時候{じこう}」的訓讀{くんどく}，小時{じかん}讀む{よむ}「じ」。' }
+            { text: 'いちじ', isCorrect: true, reason: '正確！「一時{いちじ}」讀作「いちじ」。' },
+            { text: 'ひとじ', isCorrect: false, reason: '時間使用音讀「いち」不是訓讀。' },
+            { text: 'いっじ', isCorrect: false, reason: '不促音化，是「いちじ」。' },
+            { text: 'いちとき', isCorrect: false, reason: '「とき」是「時間/時候」的訓讀，小時讀「じ」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「一時{いちじ}」讀作{どくさ}「いちじ」，使用{しよう}音讀{おんどく}。',
-            relatedRules: ['小時{じかん}の讀法{よみかた}', '「じ」の使用{しよう}']
+            correctRule: '「一時{いちじ}」讀作「いちじ」，使用音讀。',
+            relatedRules: ['小時的讀法', '「じ」的使用']
         },
         sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
     },
@@ -36,15 +36,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         stem: '会議は＿＿に始まります。',
         stem_zh: '會議在一點開始。',
         options: [
-            { text: 'ひとじ', isCorrect: false, reason: '小時{じかん}使用{しよう}音讀{おんどく}。' },
-            { text: 'いちじ', isCorrect: true, reason: '正確{せいかく}！會議{かいぎ}在一時{いちじ}開始{はじめ}。' },
-            { text: 'いっとき', isCorrect: false, reason: '「いっとき」是「暫時{ざんじ}」の意思{いし}。' },
-            { text: 'ひとつじ', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'ひとじ', isCorrect: false, reason: '小時使用音讀。' },
+            { text: 'いちじ', isCorrect: true, reason: '正確！會議在一時{いちじ}開始。' },
+            { text: 'いっとき', isCorrect: false, reason: '「いっとき」是「暫時」的意思。' },
+            { text: 'ひとつじ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「一時{いちじ}に」表示{ひょうじ}在一點{いちじ}時{とき}。',
-            relatedRules: ['時間{じかん}表達{ひょうたつ}', '「〜に」の使用{しよう}']
+            correctRule: '「一時{いちじ}に」表示在一點時。',
+            relatedRules: ['時間表達', '「〜に」的使用']
         },
         sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
     },
@@ -61,15 +61,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（一點）'
         },
         options: [
-            { text: 'ひとじ', isCorrect: false, reason: '小時{じかん}使用{しよう}音讀{おんどく}。' },
-            { text: 'いちじ', isCorrect: true, reason: '正確{せいかく}！現在{いま}是一點{いちじ}。' },
-            { text: 'いっとき', isCorrect: false, reason: '這不是時間{じかん}讀法{よみかた}。' },
-            { text: 'いちとき', isCorrect: false, reason: '小時{じかん}讀む{よむ}「じ」。' }
+            { text: 'ひとじ', isCorrect: false, reason: '小時使用音讀。' },
+            { text: 'いちじ', isCorrect: true, reason: '正確！現在是一點。' },
+            { text: 'いっとき', isCorrect: false, reason: '這不是時間讀法。' },
+            { text: 'いちとき', isCorrect: false, reason: '小時讀「じ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '回答{かいとう}「何時{なんじ}」時{とき}，一點{いちじ}讀作{どくさ}「いちじ」。',
-            relatedRules: ['時間{じかん}の質問{しつもん}與回答{かいとう}', '「何時{なんじ}」の使用{しよう}']
+            correctRule: '回答「何時」時，一點讀作「いちじ」。',
+            relatedRules: ['時間的質問與回答', '「何時」的使用']
         },
         sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
     },
@@ -81,19 +81,19 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「四時」的正確讀音是？',
+        stem: '「四時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「四時」的正確讀音是？',
         options: [
-            { text: 'よじ', isCorrect: true, reason: '正確{せいかく}！「四時{よじ}」讀作{どくさ}「よじ」，固定{こてい}讀法{よみかた}。' },
-            { text: 'よんじ', isCorrect: false, reason: '陷阱{かんけい}！四時{よじ}固定{こてい}讀む{よむ}「よじ」，禁止{きんし}讀む{よむ}「よんじ」。' },
-            { text: 'しじ', isCorrect: false, reason: '陷阱{かんけい}！雖然{すいぜん}四月{しがつ}讀む{よむ}「しがつ」，但四時{よじ}讀む{よむ}「よじ」。' },
-            { text: 'よっじ', isCorrect: false, reason: '不需要{じゅようなく}促音{そくおん}，是「よじ」。' }
+            { text: 'よじ', isCorrect: true, reason: '正確！「四時{よじ}」讀作「よじ」，固定讀法。' },
+            { text: 'よんじ', isCorrect: false, reason: '陷阱！四時{よじ}固定讀「よじ」，禁止讀「よんじ」。' },
+            { text: 'しじ', isCorrect: false, reason: '陷阱！雖然四月讀「しがつ」，但四時{よじ}讀「よじ」。' },
+            { text: 'よっじ', isCorrect: false, reason: '不需要促音，是「よじ」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四時{よじ}」固定{こてい}讀作{どくさ}「よじ」，禁止{きんし}使用{しよう}「よんじ」或「しじ」。',
-            trapExplanation: '這是陷阱題{かんけいだい}。注意{ちゅうい}四月{しがつ}讀む{よむ}「しがつ」，但四時{よじ}讀む{よむ}「よじ」，規則{きそく}不同{ふどう}！',
-            relatedRules: ['四時{よじ}の特殊{とくしゅ}讀法{よみかた}', '四月{しがつ}vs四時{よじ}の區別{くべつ}']
+            correctRule: '「四時{よじ}」固定讀作「よじ」，禁止使用「よんじ」或「しじ」。',
+            trapExplanation: '這是陷阱題。注意四月讀「しがつ」，但四時{よじ}讀「よじ」，規則不同！',
+            relatedRules: ['四時{よじ}的特殊讀法', '四月vs四時{よじ}的區別']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -106,16 +106,16 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         stem: '授業は＿＿に終わります。',
         stem_zh: '課堂在四點結束。',
         options: [
-            { text: 'よんじ', isCorrect: false, reason: '陷阱{かんけい}！四時{よじ}讀む{よむ}「よじ」，不是「よんじ」。' },
-            { text: 'よじ', isCorrect: true, reason: '正確{せいかく}！課堂{じゅぎょう}在四時{よじ}結束{おわり}。' },
-            { text: 'しじ', isCorrect: false, reason: '四時{よじ}讀む{よむ}「よ」不是「し」。' },
-            { text: 'よっじ', isCorrect: false, reason: '不需要{じゅようなく}促音{そくおん}。' }
+            { text: 'よんじ', isCorrect: false, reason: '陷阱！四時{よじ}讀「よじ」，不是「よんじ」。' },
+            { text: 'よじ', isCorrect: true, reason: '正確！課堂在四時{よじ}結束。' },
+            { text: 'しじ', isCorrect: false, reason: '四時{よじ}讀「よ」不是「し」。' },
+            { text: 'よっじ', isCorrect: false, reason: '不需要促音。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「四時{よじ}に」表示{ひょうじ}在四點{よじ}時{とき}。',
-            trapExplanation: '四時{よじ}是固定{こてい}讀法{よみかた}「よじ」，這是需要{じゅよう}特別{とくべつ}記憶{きおく}の例外{れいがい}。',
-            relatedRules: ['四時{よじ}の讀法{よみかた}', '時間{じかん}表達{ひょうたつ}']
+            correctRule: '「四時{よじ}に」表示在四點時。',
+            trapExplanation: '四時{よじ}是固定讀法「よじ」，這是需要特別記憶の例外。',
+            relatedRules: ['四時{よじ}的讀法', '時間表達']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -132,16 +132,16 @@ export const hourQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿からです。（四點）'
         },
         options: [
-            { text: 'よんじ', isCorrect: false, reason: '陷阱{かんけい}！四時{よじ}固定{こてい}讀む{よむ}「よじ」。' },
-            { text: 'よじ', isCorrect: true, reason: '正確{せいかく}！電影{えいが}從{から}四時{よじ}開始{はじめ}。' },
-            { text: 'しじ', isCorrect: false, reason: '四時{よじ}讀む{よむ}「よ」。' },
-            { text: 'よっじ', isCorrect: false, reason: '不需要{じゅようなく}促音{そくおん}。' }
+            { text: 'よんじ', isCorrect: false, reason: '陷阱！四時{よじ}固定讀「よじ」。' },
+            { text: 'よじ', isCorrect: true, reason: '正確！電影從四時{よじ}開始。' },
+            { text: 'しじ', isCorrect: false, reason: '四時{よじ}讀「よ」。' },
+            { text: 'よっじ', isCorrect: false, reason: '不需要促音。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「四時{よじ}から」表示{ひょうじ}從{から}四點{よじ}開始{はじめ}。',
-            trapExplanation: '無論{むろん}什麼{なに}情境{じょうきょう}，四時{よじ}都{すべて}固定{こてい}讀む{よむ}「よじ」。',
-            relatedRules: ['四時{よじ}の固定{こてい}讀法{よみかた}', '「〜から」の使用{しよう}']
+            correctRule: '「四時{よじ}から」表示從四點開始。',
+            trapExplanation: '無論什麼情境，四時{よじ}都固定讀「よじ」。',
+            relatedRules: ['四時{よじ}の固定讀法', '「〜から」的使用']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -153,19 +153,19 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「七時」的正確讀音是？',
+        stem: '「七時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「七時」的正確讀音是？',
         options: [
-            { text: 'しちじ', isCorrect: true, reason: '正確{せいかく}！「七時{しちじ}」讀作{どくさ}「しちじ」。' },
-            { text: 'ななじ', isCorrect: false, reason: '陷阱{かんけい}！七時{しちじ}讀む{よむ}「しちじ」，很少{ほとんど}使用{しよう}「ななじ」。' },
-            { text: 'なのじ', isCorrect: false, reason: '「なの」是日期{にっき}七日{なのか}的讀法{よみかた}。' },
+            { text: 'しちじ', isCorrect: true, reason: '正確！「七時{しちじ}」讀作「しちじ」。' },
+            { text: 'ななじ', isCorrect: false, reason: '陷阱！七時{しちじ}讀「しちじ」，很少使用「ななじ」。' },
+            { text: 'なのじ', isCorrect: false, reason: '「なの」是日期七日的讀法。' },
             { text: 'しつじ', isCorrect: false, reason: '是「しちじ」不是「しつじ」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七時{しちじ}」讀作{どくさ}「しちじ」，這是標準{ひょうじゅん}讀法{よみかた}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。雖然{すいぜん}日常{にちじょう}數字{すうじ}常用{じょうよう}「なな」，但時間{じかん}慣用{かんよう}「しちじ」。注意{ちゅうい}與「一時{いちじ}」の發音{はつおん}區別{くべつ}。',
-            relatedRules: ['七時{しちじ}の讀法{よみかた}', '「しち」vs「なな」の使用{しよう}場景{ばめん}']
+            correctRule: '「七時{しちじ}」讀作「しちじ」，這是標準讀法。',
+            trapExplanation: '這是陷阱題。雖然日常數字常用「なな」，但時間慣用「しちじ」。注意與「一時」的發音區別。',
+            relatedRules: ['七時{しちじ}的讀法', '「しち」vs「なな」的使用場景']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -178,16 +178,16 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         stem: '朝＿＿に起きます。',
         stem_zh: '早上七點起床。',
         options: [
-            { text: 'ななじ', isCorrect: false, reason: '陷阱{かんけい}！七時{しちじ}慣用{かんよう}「しちじ」。' },
-            { text: 'しちじ', isCorrect: true, reason: '正確{せいかく}！早上{あさ}七時{しちじ}起床{おきます}。' },
-            { text: 'なのじ', isCorrect: false, reason: '「なの」是日期{にっき}讀法{よみかた}。' },
+            { text: 'ななじ', isCorrect: false, reason: '陷阱！七時{しちじ}慣用「しちじ」。' },
+            { text: 'しちじ', isCorrect: true, reason: '正確！早上七時{しちじ}起床。' },
+            { text: 'なのじ', isCorrect: false, reason: '「なの」是日期讀法。' },
             { text: 'しつじ', isCorrect: false, reason: '是「しちじ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「朝{あさ}七時{しちじ}に」表示{ひょうじ}早上{あさ}七點{しちじ}。',
-            trapExplanation: '時間{じかん}表達{ひょうたつ}慣用{かんよう}「しちじ」而非{もはや}「ななじ」。',
-            relatedRules: ['七時{しちじ}の讀法{よみかた}', '日常{にちじょう}時間{じかん}表達{ひょうたつ}']
+            correctRule: '「朝七時{しちじ}に」表示早上七點。',
+            trapExplanation: '時間表達慣用「しちじ」而非「ななじ」。',
+            relatedRules: ['七時{しちじ}的讀法', '日常時間表達']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -204,15 +204,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（七點）'
         },
         options: [
-            { text: 'ななじ', isCorrect: false, reason: '七時{しちじ}慣用{かんよう}「しちじ」。' },
-            { text: 'しちじ', isCorrect: true, reason: '正確{せいかく}！七點{しちじ}下班{しゅうりょう}。' },
-            { text: 'なのじ', isCorrect: false, reason: '「なの」用於{もちいる}日期{にっき}。' },
+            { text: 'ななじ', isCorrect: false, reason: '七時{しちじ}慣用「しちじ」。' },
+            { text: 'しちじ', isCorrect: true, reason: '正確！七點下班。' },
+            { text: 'なのじ', isCorrect: false, reason: '「なの」用於日期。' },
             { text: 'しつじ', isCorrect: false, reason: '是「しちじ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '回答{かいとう}下班{しゅうりょう}時間{じかん}，七時{しちじ}讀作{どくさ}「しちじ」。',
-            relatedRules: ['七時{しちじ}の讀法{よみかた}', '工作{しごと}時間{じかん}表達{ひょうたつ}']
+            correctRule: '回答下班時間，七時{しちじ}讀作「しちじ」。',
+            relatedRules: ['七時{しちじ}的讀法', '工作時間表達']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -224,19 +224,19 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「九時」的正確讀音是？',
+        stem: '「九時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「九時」的正確讀音是？',
         options: [
-            { text: 'くじ', isCorrect: true, reason: '正確{せいかく}！「九時{くじ}」讀作{どくさ}「くじ」，固定{こてい}讀法{よみかた}。' },
-            { text: 'きゅうじ', isCorrect: false, reason: '陷阱{かんけい}！九時{くじ}固定{こてい}讀む{よむ}「くじ」，禁止{きんし}讀む{よむ}「きゅうじ」。' },
-            { text: 'ここのじ', isCorrect: false, reason: '「ここの」是日期{にっき}九日{ここのか}的讀法{よみかた}。' },
+            { text: 'くじ', isCorrect: true, reason: '正確！「九時{くじ}」讀作「くじ」，固定讀法。' },
+            { text: 'きゅうじ', isCorrect: false, reason: '陷阱！九時{くじ}固定讀「くじ」，禁止讀「きゅうじ」。' },
+            { text: 'ここのじ', isCorrect: false, reason: '「ここの」是日期九日的讀法。' },
             { text: 'きゅじ', isCorrect: false, reason: '是「くじ」不是「きゅじ」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「九時{くじ}」固定{こてい}讀作{どくさ}「くじ」，與九月{くがつ}「くがつ」一樣{いちよう}使用{しよう}「く」。',
-            trapExplanation: '這是陷阱題{かんけいだい}。雖然{すいぜん}日常{にちじょう}數字{すうじ}多く{おおく}讀む{よむ}「きゅう」以避諱{いひき}「苦{く}」，但時間{じかん}固定{こてい}使用{しよう}「くじ」。',
-            relatedRules: ['九時{くじ}の特殊{とくしゅ}讀法{よみかた}', '九月{くがつ}與九時{くじ}の共通點{きょうつうてん}']
+            correctRule: '「九時{くじ}」固定讀作「くじ」，與九月「くがつ」一樣使用「く」。',
+            trapExplanation: '這是陷阱題。雖然日常數字多讀「きゅう」以避諱「苦」，但時間固定使用「くじ」。',
+            relatedRules: ['九時{くじ}的特殊讀法', '九月與九時{くじ}の共通點']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -249,16 +249,16 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         stem: '仕事は＿＿に始まります。',
         stem_zh: '工作九點開始。',
         options: [
-            { text: 'きゅうじ', isCorrect: false, reason: '陷阱{かんけい}！九時{くじ}固定{こてい}讀む{よむ}「くじ」。' },
-            { text: 'くじ', isCorrect: true, reason: '正確{せいかく}！工作{しごと}在九時{くじ}開始{はじめ}。' },
-            { text: 'ここのじ', isCorrect: false, reason: '「ここの」是日期{にっき}讀法{よみかた}。' },
+            { text: 'きゅうじ', isCorrect: false, reason: '陷阱！九時{くじ}固定讀「くじ」。' },
+            { text: 'くじ', isCorrect: true, reason: '正確！工作在九時{くじ}開始。' },
+            { text: 'ここのじ', isCorrect: false, reason: '「ここの」是日期讀法。' },
             { text: 'きゅじ', isCorrect: false, reason: '是「くじ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「九時{くじ}に」表示{ひょうじ}在九點{くじ}時{とき}。',
-            trapExplanation: '九時{くじ}是固定{こてい}讀法{よみかた}「くじ」，這是需要{じゅよう}特別{とくべつ}記憶{きおく}の例外{れいがい}。',
-            relatedRules: ['九時{くじ}の讀法{よみかた}', '工作{しごと}時間{じかん}表達{ひょうたつ}']
+            correctRule: '「九時{くじ}に」表示在九點時。',
+            trapExplanation: '九時{くじ}是固定讀法「くじ」，這是需要特別記憶の例外。',
+            relatedRules: ['九時{くじ}的讀法', '工作時間表達']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -275,16 +275,16 @@ export const hourQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿に行きます。（九點）'
         },
         options: [
-            { text: 'きゅうじ', isCorrect: false, reason: '陷阱{かんけい}！九時{くじ}固定{こてい}讀む{よむ}「くじ」。' },
-            { text: 'くじ', isCorrect: true, reason: '正確{せいかく}！明天{あした}九點{くじ}去。' },
-            { text: 'ここのじ', isCorrect: false, reason: '「ここの」用於{もちいる}日期{にっき}。' },
+            { text: 'きゅうじ', isCorrect: false, reason: '陷阱！九時{くじ}固定讀「くじ」。' },
+            { text: 'くじ', isCorrect: true, reason: '正確！明天九點去。' },
+            { text: 'ここのじ', isCorrect: false, reason: '「ここの」用於日期。' },
             { text: 'きゅじ', isCorrect: false, reason: '是「くじ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「九時{くじ}に」表示{ひょうじ}在九點{くじ}時{とき}去。',
-            trapExplanation: '無論{むろん}什麼{なに}情境{じょうきょう}，九時{くじ}都{すべて}固定{こてい}讀む{よむ}「くじ」。',
-            relatedRules: ['九時{くじ}の固定{こてい}讀法{よみかた}', '約定{やくそく}時間{じかん}の表達{ひょうたつ}']
+            correctRule: '「九時{くじ}に」表示在九點時去。',
+            trapExplanation: '無論什麼情境，九時{くじ}都固定讀「くじ」。',
+            relatedRules: ['九時{くじ}の固定讀法', '約定時間的表達']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -296,18 +296,18 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二時」的正確讀音是？',
+        stem: '「二時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二時」的正確讀音是？',
         options: [
-            { text: 'にじ', isCorrect: true, reason: '正確{せいかく}！「二時{にじ}」讀作{どくさ}「にじ」。' },
-            { text: 'ふたじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}「に」不是訓讀{くんどく}。' },
+            { text: 'にじ', isCorrect: true, reason: '正確！「二時{にじ}」讀作「にじ」。' },
+            { text: 'ふたじ', isCorrect: false, reason: '時間使用音讀「に」不是訓讀。' },
             { text: 'につじ', isCorrect: false, reason: '是「にじ」。' },
-            { text: 'にとき', isCorrect: false, reason: '小時{じかん}讀む{よむ}「じ」不是「とき」。' }
+            { text: 'にとき', isCorrect: false, reason: '小時讀「じ」不是「とき」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二時{にじ}」讀作{どくさ}「にじ」，使用{しよう}音讀{おんどく}。',
-            relatedRules: ['小時{じかん}の讀法{よみかた}', '「じ」の使用{しよう}']
+            correctRule: '「二時{にじ}」讀作「にじ」，使用音讀。',
+            relatedRules: ['小時的讀法', '「じ」的使用']
         },
         sourceItem: { value: 2, kanji: '二時', reading: 'にじ' }
     },
@@ -320,15 +320,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         stem: '午後＿＿に昼寝をします。',
         stem_zh: '下午兩點午睡。',
         options: [
-            { text: 'ふたじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}。' },
-            { text: 'にじ', isCorrect: true, reason: '正確{せいかく}！下午{ごご}兩點{にじ}午睡{ひるね}。' },
+            { text: 'ふたじ', isCorrect: false, reason: '時間使用音讀。' },
+            { text: 'にじ', isCorrect: true, reason: '正確！下午兩點午睡。' },
             { text: 'にいじ', isCorrect: false, reason: '是「にじ」。' },
-            { text: 'ふたつじ', isCorrect: false, reason: '時間{じかん}不使用{しよう}「ふたつ」。' }
+            { text: 'ふたつじ', isCorrect: false, reason: '時間不使用「ふたつ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「午後{ごご}二時{にじ}」表示{ひょうじ}下午{ごご}兩點{にじ}。',
-            relatedRules: ['時間{じかん}表達{ひょうたつ}', '「午後{ごご}」の使用{しよう}']
+            correctRule: '「午後二時{にじ}」表示下午兩點。',
+            relatedRules: ['時間表達', '「午後」的使用']
         },
         sourceItem: { value: 2, kanji: '二時', reading: 'にじ' }
     },
@@ -345,15 +345,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿までです。（兩點）'
         },
         options: [
-            { text: 'ふたじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}。' },
-            { text: 'にじ', isCorrect: true, reason: '正確{せいかく}！午休{ひるやすみ}到兩點{にじ}。' },
+            { text: 'ふたじ', isCorrect: false, reason: '時間使用音讀。' },
+            { text: 'にじ', isCorrect: true, reason: '正確！午休到兩點。' },
             { text: 'にいじ', isCorrect: false, reason: '是「にじ」。' },
-            { text: 'ふたつじ', isCorrect: false, reason: '時間{じかん}使用{しよう}「にじ」。' }
+            { text: 'ふたつじ', isCorrect: false, reason: '時間使用「にじ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二時{にじ}まで」表示{ひょうじ}到兩點{にじ}為止{まで}。',
-            relatedRules: ['時間{じかん}表達{ひょうたつ}', '「〜まで」の使用{しよう}']
+            correctRule: '「二時{にじ}まで」表示到兩點為止。',
+            relatedRules: ['時間表達', '「〜まで」的使用']
         },
         sourceItem: { value: 2, kanji: '二時', reading: 'にじ' }
     },
@@ -365,18 +365,18 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「三時」的正確讀音是？',
+        stem: '「三時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三時」的正確讀音是？',
         options: [
-            { text: 'さんじ', isCorrect: true, reason: '正確{せいかく}！「三時{さんじ}」讀作{どくさ}「さんじ」。' },
-            { text: 'みじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}「さん」不是「み」。' },
-            { text: 'さんとき', isCorrect: false, reason: '小時{じかん}讀む{よむ}「じ」不是「とき」。' },
-            { text: 'みっじ', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'さんじ', isCorrect: true, reason: '正確！「三時{さんじ}」讀作「さんじ」。' },
+            { text: 'みじ', isCorrect: false, reason: '時間使用音讀「さん」不是「み」。' },
+            { text: 'さんとき', isCorrect: false, reason: '小時讀「じ」不是「とき」。' },
+            { text: 'みっじ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三時{さんじ}」讀作{どくさ}「さんじ」，使用{しよう}音讀{おんどく}。',
-            relatedRules: ['小時{じかん}の讀法{よみかた}', '「じ」の使用{しよう}']
+            correctRule: '「三時{さんじ}」讀作「さんじ」，使用音讀。',
+            relatedRules: ['小時的讀法', '「じ」的使用']
         },
         sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
     },
@@ -389,15 +389,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         stem: 'おやつは＿＿に食べます。',
         stem_zh: '點心在三點吃。',
         options: [
-            { text: 'みじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}。' },
-            { text: 'さんじ', isCorrect: true, reason: '正確{せいかく}！點心{おやつ}在三時{さんじ}吃{たべます}。日本{にほん}の「三時{さんじ}のおやつ」是有名{ゆうめい}の習慣{しゅうかん}。' },
-            { text: 'みっとき', isCorrect: false, reason: '小時{じかん}讀む{よむ}「じ」。' },
-            { text: 'さんとき', isCorrect: false, reason: '小時{じかん}讀む{よむ}「じ」。' }
+            { text: 'みじ', isCorrect: false, reason: '時間使用音讀。' },
+            { text: 'さんじ', isCorrect: true, reason: '正確！點心在三時{さんじ}吃。日本の「三時{さんじ}のおやつ」是有名の習慣。' },
+            { text: 'みっとき', isCorrect: false, reason: '小時讀「じ」。' },
+            { text: 'さんとき', isCorrect: false, reason: '小時讀「じ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三時{さんじ}のおやつ」是日本{にほん}の習慣{しゅうかん}，下午{ごご}三點{さんじ}吃點心{おやつ}。',
-            relatedRules: ['時間{じかん}表達{ひょうたつ}', '日本{にほん}の食{しょく}文化{ぶんか}']
+            correctRule: '「三時{さんじ}のおやつ」是日本の習慣，下午三點吃點心。',
+            relatedRules: ['時間表達', '日本の食文化']
         },
         sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
     },
@@ -414,15 +414,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
             speakerB: 'はい、＿＿になったら食べましょう。（三點）'
         },
         options: [
-            { text: 'みじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}。' },
-            { text: 'さんじ', isCorrect: true, reason: '正確{せいかく}！三點{さんじ}到了{なったら}就吃{たべましょう}。' },
-            { text: 'みっじ', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' },
-            { text: 'さんとき', isCorrect: false, reason: '小時{じかん}讀む{よむ}「じ」。' }
+            { text: 'みじ', isCorrect: false, reason: '時間使用音讀。' },
+            { text: 'さんじ', isCorrect: true, reason: '正確！三點到了就吃。' },
+            { text: 'みっじ', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'さんとき', isCorrect: false, reason: '小時讀「じ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三時{さんじ}になったら」表示{ひょうじ}「等{まち}到三點{さんじ}的話{ばあい}」。',
-            relatedRules: ['時間{じかん}表達{ひょうたつ}', '「〜になったら」の用法{ようほう}']
+            correctRule: '「三時{さんじ}になったら」表示「等到三點的話」。',
+            relatedRules: ['時間表達', '「〜になったら」の用法']
         },
         sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
     },
@@ -434,18 +434,18 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「六時」的正確讀音是？',
+        stem: '「六時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「六時」的正確讀音是？',
         options: [
-            { text: 'ろくじ', isCorrect: true, reason: '正確{せいかく}！「六時{ろくじ}」讀作{どくさ}「ろくじ」。' },
-            { text: 'むじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}「ろく」不是「む」。' },
-            { text: 'ろっじ', isCorrect: false, reason: '六時{ろくじ}不促音化{ふそくおんか}，是「ろくじ」。' },
-            { text: 'むいじ', isCorrect: false, reason: '「むい」是日期{にっき}六日{むいか}的讀法{よみかた}。' }
+            { text: 'ろくじ', isCorrect: true, reason: '正確！「六時{ろくじ}」讀作「ろくじ」。' },
+            { text: 'むじ', isCorrect: false, reason: '時間使用音讀「ろく」不是「む」。' },
+            { text: 'ろっじ', isCorrect: false, reason: '六時{ろくじ}不促音化，是「ろくじ」。' },
+            { text: 'むいじ', isCorrect: false, reason: '「むい」是日期六日的讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六時{ろくじ}」讀作{どくさ}「ろくじ」，不促音化{ふそくおんか}。',
-            relatedRules: ['小時{じかん}の讀法{よみかた}', '「ろく」不促音化{ふそくおんか}']
+            correctRule: '「六時{ろくじ}」讀作「ろくじ」，不促音化。',
+            relatedRules: ['小時的讀法', '「ろく」不促音化']
         },
         sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
     },
@@ -458,15 +458,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         stem: '毎朝＿＿に起きます。',
         stem_zh: '每天早上六點起床。',
         options: [
-            { text: 'むじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}「ろく」。' },
-            { text: 'ろくじ', isCorrect: true, reason: '正確{せいかく}！每天{まいあさ}早上{あさ}六時{ろくじ}起床{おきます}。' },
-            { text: 'ろっじ', isCorrect: false, reason: '六時{ろくじ}不促音化{ふそくおんか}。' },
-            { text: 'むいじ', isCorrect: false, reason: '「むい」用於{もちいる}日期{にっき}。' }
+            { text: 'むじ', isCorrect: false, reason: '時間使用音讀「ろく」。' },
+            { text: 'ろくじ', isCorrect: true, reason: '正確！每天早上六時{ろくじ}起床。' },
+            { text: 'ろっじ', isCorrect: false, reason: '六時{ろくじ}不促音化。' },
+            { text: 'むいじ', isCorrect: false, reason: '「むい」用於日期。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「毎朝{まいあさ}六時{ろくじ}に」表示{ひょうじ}每天{まいにち}早上{あさ}六點{ろくじ}。',
-            relatedRules: ['時間{じかん}表達{ひょうたつ}', '日常{にちじょう}習慣{しゅうかん}']
+            correctRule: '「毎朝六時{ろくじ}に」表示每天早上六點。',
+            relatedRules: ['時間表達', '日常習慣']
         },
         sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
     },
@@ -483,15 +483,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿ごろに食べます。（六點）'
         },
         options: [
-            { text: 'むじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}「ろく」。' },
-            { text: 'ろくじ', isCorrect: true, reason: '正確{せいかく}！晚餐{ばんごはん}在六點{ろくじ}左右{ごろ}吃{たべます}。' },
-            { text: 'ろっじ', isCorrect: false, reason: '六時{ろくじ}不促音化{ふそくおんか}。' },
+            { text: 'むじ', isCorrect: false, reason: '時間使用音讀「ろく」。' },
+            { text: 'ろくじ', isCorrect: true, reason: '正確！晚餐在六點左右吃。' },
+            { text: 'ろっじ', isCorrect: false, reason: '六時{ろくじ}不促音化。' },
             { text: 'りくじ', isCorrect: false, reason: '是「ろくじ」不是「りくじ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「六時{ろくじ}ごろ」表示{ひょうじ}六點{ろくじ}左右{ごろ}。',
-            relatedRules: ['時間{じかん}表達{ひょうたつ}', '「〜ごろ」の使用{しよう}']
+            correctRule: '「六時{ろくじ}ごろ」表示六點左右。',
+            relatedRules: ['時間表達', '「〜ごろ」的使用']
         },
         sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
     },
@@ -503,18 +503,18 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十時」的正確讀音是？',
+        stem: '「十時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十時」的正確讀音是？',
         options: [
-            { text: 'じゅうじ', isCorrect: true, reason: '正確{せいかく}！「十時{じゅうじ}」讀作{どくさ}「じゅうじ」。' },
-            { text: 'とおじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}「じゅう」不是訓讀{くんどく}「とお」。' },
-            { text: 'じゅっじ', isCorrect: false, reason: '十時{じゅうじ}不促音化{ふそくおんか}，是「じゅうじ」。' },
-            { text: 'じゅじ', isCorrect: false, reason: '需要{じゅよう}「う」，是「じゅうじ」。' }
+            { text: 'じゅうじ', isCorrect: true, reason: '正確！「十時{じゅうじ}」讀作「じゅうじ」。' },
+            { text: 'とおじ', isCorrect: false, reason: '時間使用音讀「じゅう」不是訓讀「とお」。' },
+            { text: 'じゅっじ', isCorrect: false, reason: '十時{じゅうじ}不促音化，是「じゅうじ」。' },
+            { text: 'じゅじ', isCorrect: false, reason: '需要「う」，是「じゅうじ」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十時{じゅうじ}」讀作{どくさ}「じゅうじ」，不促音化{ふそくおんか}。',
-            relatedRules: ['小時{じかん}の讀法{よみかた}', '「じゅう」の發音{はつおん}']
+            correctRule: '「十時{じゅうじ}」讀作「じゅうじ」，不促音化。',
+            relatedRules: ['小時的讀法', '「じゅう」的發音']
         },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
@@ -527,15 +527,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         stem: '会社は＿＿に閉まります。',
         stem_zh: '公司十點關門。',
         options: [
-            { text: 'とおじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅうじ', isCorrect: true, reason: '正確{せいかく}！公司{かいしゃ}在十時{じゅうじ}關門{しまります}。' },
-            { text: 'じゅっじ', isCorrect: false, reason: '十時{じゅうじ}不促音化{ふそくおんか}。' },
-            { text: 'じゅじ', isCorrect: false, reason: '需要{じゅよう}「う」。' }
+            { text: 'とおじ', isCorrect: false, reason: '時間使用音讀「じゅう」。' },
+            { text: 'じゅうじ', isCorrect: true, reason: '正確！公司在十時{じゅうじ}關門。' },
+            { text: 'じゅっじ', isCorrect: false, reason: '十時{じゅうじ}不促音化。' },
+            { text: 'じゅじ', isCorrect: false, reason: '需要「う」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十時{じゅうじ}に」表示{ひょうじ}在十點{じゅうじ}時{とき}。',
-            relatedRules: ['時間{じかん}表達{ひょうたつ}', '營業{えいぎょう}時間{じかん}']
+            correctRule: '「十時{じゅうじ}に」表示在十點時。',
+            relatedRules: ['時間表達', '營業時間']
         },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
@@ -552,15 +552,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿ごろに寝ます。（十點）'
         },
         options: [
-            { text: 'とおじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅうじ', isCorrect: true, reason: '正確{せいかく}！十點{じゅうじ}左右{ごろ}睡覺{ねます}。' },
-            { text: 'じゅっじ', isCorrect: false, reason: '十時{じゅうじ}不促音化{ふそくおんか}。' },
-            { text: 'じゅじ', isCorrect: false, reason: '需要{じゅよう}「う」。' }
+            { text: 'とおじ', isCorrect: false, reason: '時間使用音讀「じゅう」。' },
+            { text: 'じゅうじ', isCorrect: true, reason: '正確！十點左右睡覺。' },
+            { text: 'じゅっじ', isCorrect: false, reason: '十時{じゅうじ}不促音化。' },
+            { text: 'じゅじ', isCorrect: false, reason: '需要「う」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十時{じゅうじ}ごろに寝{ね}ます」表示{ひょうじ}十點{じゅうじ}左右{ごろ}睡覺{ねます}。',
-            relatedRules: ['時間{じかん}表達{ひょうたつ}', '日常{にちじょう}習慣{しゅうかん}']
+            correctRule: '「十時{じゅうじ}ごろに寝ます」表示十點左右睡覺。',
+            relatedRules: ['時間表達', '日常習慣']
         },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
@@ -572,18 +572,18 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十二時」的正確讀音是？',
+        stem: '「十二時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十二時」的正確讀音是？',
         options: [
-            { text: 'じゅうにじ', isCorrect: true, reason: '正確{せいかく}！「十二時{じゅうにじ}」讀作{どくさ}「じゅうにじ」。' },
-            { text: 'じゅうふたじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}「に」不是「ふた」。' },
-            { text: 'じゅにじ', isCorrect: false, reason: '需要{じゅよう}「う」，是「じゅうにじ」。' },
-            { text: 'とおにじ', isCorrect: false, reason: '「十{じゅう}」使用{しよう}音讀{おんどく}「じゅう」。' }
+            { text: 'じゅうにじ', isCorrect: true, reason: '正確！「十二時{じゅうにじ}」讀作「じゅうにじ」。' },
+            { text: 'じゅうふたじ', isCorrect: false, reason: '時間使用音讀「に」不是「ふた」。' },
+            { text: 'じゅにじ', isCorrect: false, reason: '需要「う」，是「じゅうにじ」。' },
+            { text: 'とおにじ', isCorrect: false, reason: '「十」使用音讀「じゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十二時{じゅうにじ}」讀作{どくさ}「じゅうにじ」，是正午{しょうご}或午夜{ごや}。',
-            relatedRules: ['小時{じかん}の讀法{よみかた}', '正午{しょうご}與午夜{ごや}']
+            correctRule: '「十二時{じゅうにじ}」讀作「じゅうにじ」，是正午{しょうご}或午夜。',
+            relatedRules: ['小時的讀法', '正午{しょうご}與午夜{ごや}']
         },
         sourceItem: { value: 12, kanji: '十二時', reading: 'じゅうにじ' }
     },
@@ -596,15 +596,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         stem: '昼ご飯は＿＿に食べます。',
         stem_zh: '午餐在十二點吃。',
         options: [
-            { text: 'じゅうふたじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}。' },
-            { text: 'じゅうにじ', isCorrect: true, reason: '正確{せいかく}！午餐{ひるごはん}在十二時{じゅうにじ}吃{たべます}。' },
-            { text: 'じゅにじ', isCorrect: false, reason: '需要{じゅよう}「う」。' },
-            { text: 'じゅうにとき', isCorrect: false, reason: '小時{じかん}讀む{よむ}「じ」。' }
+            { text: 'じゅうふたじ', isCorrect: false, reason: '時間使用音讀。' },
+            { text: 'じゅうにじ', isCorrect: true, reason: '正確！午餐在十二時{じゅうにじ}吃。' },
+            { text: 'じゅにじ', isCorrect: false, reason: '需要「う」。' },
+            { text: 'じゅうにとき', isCorrect: false, reason: '小時讀「じ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十二時{じゅうにじ}に」是午餐{ひるごはん}時間{じかん}，即正午{しょうご}。',
-            relatedRules: ['時間{じかん}表達{ひょうたつ}', '用餐{しょくじ}時間{じかん}']
+            correctRule: '「十二時{じゅうにじ}に」是午餐時間，即正午。',
+            relatedRules: ['時間表達', '用餐時間']
         },
         sourceItem: { value: 12, kanji: '十二時', reading: 'じゅうにじ' }
     },
@@ -621,15 +621,15 @@ export const hourQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿からです。（十二點）'
         },
         options: [
-            { text: 'じゅうふたじ', isCorrect: false, reason: '時間{じかん}使用{しよう}音讀{おんどく}。' },
-            { text: 'じゅうにじ', isCorrect: true, reason: '正確{せいかく}！從{から}十二點{じゅうにじ}開始{はじめ}午休{ひるやすみ}。' },
-            { text: 'じゅにじ', isCorrect: false, reason: '需要{じゅよう}「う」。' },
-            { text: 'とおにじ', isCorrect: false, reason: '「十{じゅう}」使用{しよう}「じゅう」。' }
+            { text: 'じゅうふたじ', isCorrect: false, reason: '時間使用音讀。' },
+            { text: 'じゅうにじ', isCorrect: true, reason: '正確！從十二點開始午休。' },
+            { text: 'じゅにじ', isCorrect: false, reason: '需要「う」。' },
+            { text: 'とおにじ', isCorrect: false, reason: '「十」使用「じゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十二時{じゅうにじ}から」表示{ひょうじ}從{から}十二點{じゅうにじ}開始{はじめ}。',
-            relatedRules: ['時間{じかん}表達{ひょうたつ}', '午休{ひるやすみ}時間{じかん}']
+            correctRule: '「十二時{じゅうにじ}から」表示從十二點開始。',
+            relatedRules: ['時間表達', '午休時間']
         },
         sourceItem: { value: 12, kanji: '十二時', reading: 'じゅうにじ' }
     },
@@ -652,7 +652,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「六時」讀「ろくじ」，使用音讀。',
-            relatedRules: ['小時の讀法', '日常作息']
+            relatedRules: ['小時的讀法', '日常作息']
         },
         sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
     },
@@ -677,7 +677,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「三時」讀「さんじ」，電影開場時間。',
-            relatedRules: ['小時の讀法', '娛樂日程']
+            relatedRules: ['小時的讀法', '娛樂日程']
         },
         sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
     },
@@ -699,7 +699,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時」固定讀「よじ」，是特殊讀法。',
             trapExplanation: '四時禁止讀「よんじ」或「しじ」。',
-            relatedRules: ['四時の特殊讀法', '航班時間']
+            relatedRules: ['四時的特殊讀法', '航班時間']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -724,7 +724,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「七時」讀「しちじ」，是特殊讀法。',
-            relatedRules: ['七時の讀法', '用餐時間']
+            relatedRules: ['七時的讀法', '用餐時間']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -745,7 +745,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「九時」讀「くじ」，是特殊讀法。',
-            relatedRules: ['九時の讀法', '營業時間']
+            relatedRules: ['九時的讀法', '營業時間']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -770,7 +770,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五時」讀「ごじ」，使用音讀。',
-            relatedRules: ['小時の讀法', '課程時間']
+            relatedRules: ['小時的讀法', '課程時間']
         },
         sourceItem: { value: 5, kanji: '五時', reading: 'ごじ' }
     },
@@ -791,7 +791,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「八時」讀「はちじ」，使用音讀。',
-            relatedRules: ['小時の讀法', '上班時間']
+            relatedRules: ['小時的讀法', '上班時間']
         },
         sourceItem: { value: 8, kanji: '八時', reading: 'はちじ' }
     },
@@ -816,7 +816,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十一時」讀「じゅういちじ」。',
-            relatedRules: ['小時の讀法', '營業時間']
+            relatedRules: ['小時的讀法', '營業時間']
         },
         sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
     },
@@ -862,7 +862,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '四月讀「しがつ」，四時讀「よじ」，規則不同。',
             trapExplanation: '這是常見混淆點，需要分別記憶。',
-            relatedRules: ['四の讀法', '月份vs時間']
+            relatedRules: ['四的讀法', '月份vs時間']
         },
         sourceItem: { value: 4, kanji: '四月/四時', reading: 'しがつ/よじ' }
     },
@@ -884,7 +884,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '七月和七時的「七」都讀「しち」。',
             trapExplanation: '與「四」不同，「七」在月份和時間都用「しち」。',
-            relatedRules: ['七の讀法', '月份vs時間']
+            relatedRules: ['七的讀法', '月份vs時間']
         },
         sourceItem: { value: 7, kanji: '七月/七時', reading: 'しちがつ/しちじ' }
     },
@@ -906,7 +906,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '九月和九時的「九」都讀「く」。',
             trapExplanation: '與「四」不同，「九」在月份和時間都用「く」。',
-            relatedRules: ['九の讀法', '月份vs時間']
+            relatedRules: ['九的讀法', '月份vs時間']
         },
         sourceItem: { value: 9, kanji: '九月/九時', reading: 'くがつ/くじ' }
     },
@@ -918,7 +918,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「何時」的正確讀法是？',
+        stem: '「何時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何時」的正確讀法是？',
         options: [
             { text: 'なんじ', isCorrect: true, reason: '正確！何時讀「なんじ」。' },
@@ -929,7 +929,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「何時」讀「なんじ」，用於詢問時間。',
-            relatedRules: ['何時の讀法', '疑問詞の使用']
+            relatedRules: ['何時的讀法', '疑問詞的使用']
         },
         sourceItem: { value: 'question', kanji: '何時', reading: 'なんじ' }
     },
@@ -954,7 +954,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二時」讀「にじ」，使用音讀。',
-            relatedRules: ['小時の讀法', '何時の回答']
+            relatedRules: ['小時的讀法', '何時の回答']
         },
         sourceItem: { value: 2, kanji: '二時', reading: 'にじ' }
     },
@@ -980,7 +980,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時」固定讀「よじ」。',
             trapExplanation: '記住：四時永遠讀「よじ」。',
-            relatedRules: ['四時の讀法', '約會時間']
+            relatedRules: ['四時的讀法', '約會時間']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -1003,7 +1003,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「午前」讀「ごぜん」，表示上午。',
-            relatedRules: ['午前の讀法', 'AM/PM']
+            relatedRules: ['午前的讀法', 'AM/PM']
         },
         sourceItem: { value: 'AM', kanji: '午前', reading: 'ごぜん' }
     },
@@ -1024,7 +1024,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「午後」讀「ごご」，表示下午。',
-            relatedRules: ['午後の讀法', 'AM/PM']
+            relatedRules: ['午後的讀法', 'AM/PM']
         },
         sourceItem: { value: 'PM', kanji: '午後', reading: 'ごご' }
     },
@@ -1045,7 +1045,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「午前」表示12點前，「午後」表示12點後。',
-            relatedRules: ['午前/午後の使用', '會議時間']
+            relatedRules: ['午前/午後的使用', '會議時間']
         },
         sourceItem: { value: 'AM/PM', kanji: '午前/午後', reading: 'ごぜん/ごご' }
     },
@@ -1072,7 +1072,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十時」讀「じゅうじ」，「六時」讀「ろくじ」。',
-            relatedRules: ['小時の讀法', '營業時間']
+            relatedRules: ['小時的讀法', '營業時間']
         },
         sourceItem: { value: '10-18', kanji: '十時〜六時', reading: 'じゅうじ〜ろくじ' }
     },
@@ -1117,7 +1117,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「七時」讀「しちじ」，早間新聞常在7點播出。',
-            relatedRules: ['七時の讀法', 'テレビ番組']
+            relatedRules: ['七時的讀法', 'テレビ番組']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -1142,7 +1142,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十二時」讀「じゅうにじ」，末班車通常在午夜前。',
-            relatedRules: ['小時の讀法', '終電時間']
+            relatedRules: ['小時的讀法', '終電時間']
         },
         sourceItem: { value: 12, kanji: '十二時', reading: 'じゅうにじ' }
     },
@@ -1164,7 +1164,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「九時」讀「くじ」，是特殊讀法。',
             trapExplanation: '九時禁止讀「きゅうじ」。',
-            relatedRules: ['九時の讀法', '交通時間']
+            relatedRules: ['九時的讀法', '交通時間']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -1189,7 +1189,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '下午三時是傳統下午茶時間。',
-            relatedRules: ['小時の讀法', 'お茶の時間']
+            relatedRules: ['小時的讀法', 'お茶の時間']
         },
         sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
     },
@@ -1210,7 +1210,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五時」讀「ごじ」，首班車通常很早。',
-            relatedRules: ['小時の讀法', '始発時間']
+            relatedRules: ['小時的讀法', '始発時間']
         },
         sourceItem: { value: 5, kanji: '五時', reading: 'ごじ' }
     },
@@ -1236,7 +1236,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「七時」讀「しちじ」。',
             trapExplanation: '七時禁止讀「ななじ」。',
-            relatedRules: ['七時の讀法', '約束時間']
+            relatedRules: ['七時的讀法', '約束時間']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -1259,7 +1259,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「24時間」讀「にじゅうよじかん」，期間的4讀「よ」。',
-            relatedRules: ['時間期間の讀法', '24時間營業']
+            relatedRules: ['時間期間的讀法', '24時間營業']
         },
         sourceItem: { value: 24, kanji: '二十四時間', reading: 'にじゅうよじかん' }
     },
@@ -1284,7 +1284,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「八時間」讀「はちじかん」，表示8小時。',
-            relatedRules: ['時間期間の讀法', '工作時間']
+            relatedRules: ['時間期間的讀法', '工作時間']
         },
         sourceItem: { value: 8, kanji: '八時間', reading: 'はちじかん' }
     },
@@ -1306,7 +1306,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「二時間」讀「にじかん」，期間使用音讀。',
             trapExplanation: '時間期間也用音讀，不用訓讀。',
-            relatedRules: ['時間期間の讀法', '電影時長']
+            relatedRules: ['時間期間的讀法', '電影時長']
         },
         sourceItem: { value: 2, kanji: '二時間', reading: 'にじかん' }
     },
@@ -1331,7 +1331,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「三時間」讀「さんじかん」，表示3小時。',
-            relatedRules: ['時間期間の讀法', '會議時間']
+            relatedRules: ['時間期間的讀法', '會議時間']
         },
         sourceItem: { value: 3, kanji: '三時間', reading: 'さんじかん' }
     },
@@ -1353,7 +1353,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「九時間」讀「くじかん」，期間的9也讀「く」。',
             trapExplanation: '9在時間和期間都讀「く」。',
-            relatedRules: ['九の讀法', '飛行時間']
+            relatedRules: ['九的讀法', '飛行時間']
         },
         sourceItem: { value: 9, kanji: '九時間', reading: 'くじかん' }
     },
@@ -1379,7 +1379,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「七時間」讀「しちじかん」，期間的7也讀「しち」。',
             trapExplanation: '7在時間和期間都讀「しち」。',
-            relatedRules: ['七の讀法', '睡眠時間']
+            relatedRules: ['七的讀法', '睡眠時間']
         },
         sourceItem: { value: 7, kanji: '七時間', reading: 'しちじかん' }
     },
@@ -1401,7 +1401,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時間」讀「よじかん」，期間的4也讀「よ」。',
             trapExplanation: '4在時間和期間都讀「よ」。',
-            relatedRules: ['四の讀法', '等待時間']
+            relatedRules: ['四的讀法', '等待時間']
         },
         sourceItem: { value: 4, kanji: '四時間', reading: 'よじかん' }
     },
@@ -1424,7 +1424,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「七時」讀「しちじ」，早餐時間。',
-            relatedRules: ['七時の讀法', '早餐時間']
+            relatedRules: ['七時的讀法', '早餐時間']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -1449,7 +1449,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「八時」讀「はちじ」，出門時間。',
-            relatedRules: ['小時の讀法', '通勤時間']
+            relatedRules: ['小時的讀法', '通勤時間']
         },
         sourceItem: { value: 8, kanji: '八時', reading: 'はちじ' }
     },
@@ -1470,7 +1470,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十時」讀「じゅうじ」，回家時間。',
-            relatedRules: ['小時の讀法', '帰宅時間']
+            relatedRules: ['小時的讀法', '帰宅時間']
         },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
@@ -1495,7 +1495,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十一時」讀「じゅういちじ」，就寢時間。',
-            relatedRules: ['小時の讀法', '就寢時間']
+            relatedRules: ['小時的讀法', '就寢時間']
         },
         sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
     },
@@ -1541,7 +1541,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「一時」(いちじ)和「一時的」(いちじてき)的「時」都讀「じ」。',
             trapExplanation: '注意：「時」讀「とき」時通常單獨使用。',
-            relatedRules: ['時の讀法', '音讀vs訓讀']
+            relatedRules: ['時的讀法', '音讀vs訓讀']
         },
         sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
     },
@@ -1563,7 +1563,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「何時」固定讀「なんじ」，「何」讀「なん」。',
             trapExplanation: '「なに」用於其他情況。',
-            relatedRules: ['何の讀法', '疑問詞']
+            relatedRules: ['何的讀法', '疑問詞']
         },
         sourceItem: { value: 'question', kanji: '何時', reading: 'なんじ' }
     },
@@ -1586,7 +1586,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「正午」讀「しょうご」，表示中午12點。',
-            relatedRules: ['正午の讀法', '時間表達']
+            relatedRules: ['正午的讀法', '時間表達']
         },
         sourceItem: { value: 'noon', kanji: '正午', reading: 'しょうご' }
     },
@@ -1607,7 +1607,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「真夜中」讀「まよなか」，表示深夜/午夜。',
-            relatedRules: ['真夜中の讀法', '時間表達']
+            relatedRules: ['真夜中的讀法', '時間表達']
         },
         sourceItem: { value: 'midnight', kanji: '真夜中', reading: 'まよなか' }
     },
@@ -1630,7 +1630,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「六時半」讀「ろくじはん」，表示6:30。',
-            relatedRules: ['時間表達', '半の使用']
+            relatedRules: ['時間表達', '半的使用']
         },
         sourceItem: { value: '6:30', kanji: '六時半', reading: 'ろくじはん' }
     },
@@ -1655,7 +1655,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「一時」讀「いちじ」，約定時間。',
-            relatedRules: ['小時の讀法', '約束時間']
+            relatedRules: ['小時的讀法', '約束時間']
         },
         sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
     },
@@ -1676,7 +1676,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '午休時間從「十二時」到「一時」。',
-            relatedRules: ['小時の讀法', '午休時間']
+            relatedRules: ['小時的讀法', '午休時間']
         },
         sourceItem: { value: '12-13', kanji: '十二時〜一時', reading: 'じゅうにじ〜いちじ' }
     },
@@ -1702,7 +1702,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時」固定讀「よじ」。',
             trapExplanation: '四時是特殊讀法，永遠讀「よじ」。',
-            relatedRules: ['四時の讀法', '診察時間']
+            relatedRules: ['四時的讀法', '診察時間']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -1723,7 +1723,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「九時」讀「くじ」，黃金時段。',
-            relatedRules: ['九時の讀法', 'テレビ番組']
+            relatedRules: ['九時的讀法', 'テレビ番組']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -1748,7 +1748,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二時」讀「にじ」，「五時」讀「ごじ」。',
-            relatedRules: ['小時の讀法', '空閒時間']
+            relatedRules: ['小時的讀法', '空閒時間']
         },
         sourceItem: { value: '14-17', kanji: '二時〜五時', reading: 'にじ〜ごじ' }
     },
@@ -1769,7 +1769,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十時」讀「じゅうじ」，閉店時間。',
-            relatedRules: ['小時の讀法', '閉店時間']
+            relatedRules: ['小時的讀法', '閉店時間']
         },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
@@ -1794,7 +1794,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「六時」讀「ろくじ」，晚餐時間。',
-            relatedRules: ['小時の讀法', '用餐時間']
+            relatedRules: ['小時的讀法', '用餐時間']
         },
         sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
     },
@@ -1815,7 +1815,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十一時」讀「じゅういちじ」，開店時間。',
-            relatedRules: ['小時の讀法', '開店時間']
+            relatedRules: ['小時的讀法', '開店時間']
         },
         sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
     },
@@ -1836,7 +1836,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '小時的「時」固定讀「じ」。',
-            relatedRules: ['時の讀法', '小時表達']
+            relatedRules: ['時的讀法', '小時表達']
         },
         sourceItem: { value: 'hour', kanji: '〜時', reading: '〜じ' }
     },
@@ -1859,7 +1859,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「一時」讀「いちじ」，午餐結束時間。',
-            relatedRules: ['小時の讀法', '用餐時間']
+            relatedRules: ['小時的讀法', '用餐時間']
         },
         sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
     },
@@ -1884,7 +1884,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五時」讀「ごじ」，早起時間。',
-            relatedRules: ['小時の讀法', '起床時間']
+            relatedRules: ['小時的讀法', '起床時間']
         },
         sourceItem: { value: 5, kanji: '五時', reading: 'ごじ' }
     },
@@ -1905,7 +1905,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二時」讀「にじ」，演講開始時間。',
-            relatedRules: ['小時の讀法', '活動時間']
+            relatedRules: ['小時的讀法', '活動時間']
         },
         sourceItem: { value: 2, kanji: '二時', reading: 'にじ' }
     },
@@ -1930,7 +1930,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「三時」讀「さんじ」，發車時間。',
-            relatedRules: ['小時の讀法', '交通時間']
+            relatedRules: ['小時的讀法', '交通時間']
         },
         sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
     },
@@ -1952,7 +1952,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時」固定讀「よじ」。',
             trapExplanation: '四時是特殊讀法。',
-            relatedRules: ['四時の讀法', '面談時間']
+            relatedRules: ['四時的讀法', '面談時間']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -1977,7 +1977,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「六時」讀「ろくじ」，出發時間。',
-            relatedRules: ['小時の讀法', '出發時間']
+            relatedRules: ['小時的讀法', '出發時間']
         },
         sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
     },
@@ -1999,7 +1999,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「七時」固定讀「しちじ」。',
             trapExplanation: '七時是特殊讀法。',
-            relatedRules: ['七時の讀法', '會議時間']
+            relatedRules: ['七時的讀法', '會議時間']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -2024,7 +2024,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「八時」讀「はちじ」，下班時間。',
-            relatedRules: ['小時の讀法', '退社時間']
+            relatedRules: ['小時的讀法', '退社時間']
         },
         sourceItem: { value: 8, kanji: '八時', reading: 'はちじ' }
     },
@@ -2046,7 +2046,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「九時」固定讀「くじ」。',
             trapExplanation: '九時是特殊讀法。',
-            relatedRules: ['九時の讀法', 'テレビ番組']
+            relatedRules: ['九時的讀法', 'テレビ番組']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -2071,7 +2071,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十時」讀「じゅうじ」，熄燈時間。',
-            relatedRules: ['小時の讀法', '就寢時間']
+            relatedRules: ['小時的讀法', '就寢時間']
         },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
@@ -2092,7 +2092,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十一時」讀「じゅういちじ」，退房時間。',
-            relatedRules: ['小時の讀法', 'ホテル']
+            relatedRules: ['小時的讀法', 'ホテル']
         },
         sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
     },
@@ -2117,7 +2117,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十二時」讀「じゅうにじ」，午餐時間。',
-            relatedRules: ['小時の讀法', 'ランチタイム']
+            relatedRules: ['小時的讀法', 'ランチタイム']
         },
         sourceItem: { value: 12, kanji: '十二時', reading: 'じゅうにじ' }
     },
@@ -2160,7 +2160,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「三時」讀「さんじ」，預約時間。',
-            relatedRules: ['小時の讀法', '預約時間']
+            relatedRules: ['小時的讀法', '預約時間']
         },
         sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
     },
@@ -2185,7 +2185,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「一時」讀「いちじ」，下午課程時間。',
-            relatedRules: ['小時の讀法', '授業時間']
+            relatedRules: ['小時的讀法', '授業時間']
         },
         sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
     },
@@ -2232,7 +2232,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「九時」固定讀「くじ」。',
             trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
-            relatedRules: ['九時の讀法', '上班時間']
+            relatedRules: ['九時的讀法', '上班時間']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -2253,7 +2253,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五時」讀「ごじ」，定時下班時間。',
-            relatedRules: ['小時の讀法', '退社時間']
+            relatedRules: ['小時的讀法', '退社時間']
         },
         sourceItem: { value: 5, kanji: '五時', reading: 'ごじ' }
     },
@@ -2279,7 +2279,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「七時」固定讀「しちじ」。',
             trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
-            relatedRules: ['七時の讀法', '待ち合わせ']
+            relatedRules: ['七時的讀法', '待ち合わせ']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -2301,7 +2301,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時」固定讀「よじ」。',
             trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
-            relatedRules: ['四時の讀法', '面接時間']
+            relatedRules: ['四時的讀法', '面接時間']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -2322,7 +2322,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「時間」讀「じかん」，表示時間長度。',
-            relatedRules: ['時間の讀法', '期間表達']
+            relatedRules: ['時間的讀法', '期間表達']
         },
         sourceItem: { value: 'duration', kanji: '〜時間', reading: '〜じかん' }
     },
@@ -2365,7 +2365,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十時」讀「じゅうじ」。',
-            relatedRules: ['小時の讀法', '電車時刻']
+            relatedRules: ['小時的讀法', '電車時刻']
         },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
@@ -2390,7 +2390,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「九時」固定讀「くじ」。',
-            relatedRules: ['九時の讀法', '銀行營業時間']
+            relatedRules: ['九時的讀法', '銀行營業時間']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -2433,7 +2433,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時」固定讀「よじ」。',
             trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
-            relatedRules: ['四時の讀法', '航班時刻']
+            relatedRules: ['四時的讀法', '航班時刻']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -2458,7 +2458,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二時」讀「にじ」。',
-            relatedRules: ['小時の讀法', '映画の時間']
+            relatedRules: ['小時的讀法', '映画の時間']
         },
         sourceItem: { value: 2, kanji: '二時', reading: 'にじ' }
     },
@@ -2500,7 +2500,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十二時」讀「じゅうにじ」。',
-            relatedRules: ['小時の讀法', 'ランチタイム']
+            relatedRules: ['小時的讀法', 'ランチタイム']
         },
         sourceItem: { value: 12, kanji: '十二時', reading: 'じゅうにじ' }
     },
@@ -2526,7 +2526,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「七時」固定讀「しちじ」。',
             trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
-            relatedRules: ['七時の讀法', '夕食時間']
+            relatedRules: ['七時的讀法', '夕食時間']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -2547,7 +2547,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「何時」讀「なんじ」，用來詢問時間。',
-            relatedRules: ['疑問詞の讀法', '何時=なんじ']
+            relatedRules: ['疑問詞的讀法', '何時=なんじ']
         },
         sourceItem: { value: 'what time', kanji: '何時', reading: 'なんじ' }
     },
@@ -2568,7 +2568,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「八時」讀「はちじ」。',
-            relatedRules: ['小時の讀法', '朝食時間']
+            relatedRules: ['小時的讀法', '朝食時間']
         },
         sourceItem: { value: 8, kanji: '八時', reading: 'はちじ' }
     },
@@ -2593,7 +2593,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五時」讀「ごじ」。',
-            relatedRules: ['小時の讀法', '図書館の閉館時間']
+            relatedRules: ['小時的讀法', '図書館の閉館時間']
         },
         sourceItem: { value: 5, kanji: '五時', reading: 'ごじ' }
     },
@@ -2635,7 +2635,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「六時」讀「ろくじ」。',
-            relatedRules: ['小時の讀法', '退勤時間']
+            relatedRules: ['小時的讀法', '退勤時間']
         },
         sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
     },
@@ -2703,7 +2703,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「九時」固定讀「くじ」。',
             trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
-            relatedRules: ['九時の讀法', '電話の時間']
+            relatedRules: ['九時的讀法', '電話の時間']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -2728,7 +2728,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「一時」讀「いちじ」。',
-            relatedRules: ['小時の讀法', 'お昼寝時間']
+            relatedRules: ['小時的讀法', 'お昼寝時間']
         },
         sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
     },
@@ -2770,7 +2770,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十一時」讀「じゅういちじ」。',
-            relatedRules: ['小時の讀法', 'ニュースの時間']
+            relatedRules: ['小時的讀法', 'ニュースの時間']
         },
         sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
     },
@@ -2796,7 +2796,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「七時」固定讀「しちじ」。',
             trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
-            relatedRules: ['七時の讀法', 'ジムの営業時間']
+            relatedRules: ['七時的讀法', 'ジムの営業時間']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -2838,7 +2838,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「三時」讀「さんじ」。日本傳統點心時間是下午三點。',
-            relatedRules: ['小時の讀法', 'おやつの時間']
+            relatedRules: ['小時的讀法', 'おやつの時間']
         },
         sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
     },
@@ -2864,7 +2864,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「零時」讀「れいじ」，意思是午夜12點/0點。',
             trapExplanation: '日語正式用「零時」而非「ゼロ時」。',
-            relatedRules: ['零時の讀法', '終電時間']
+            relatedRules: ['零時的讀法', '終電時間']
         },
         sourceItem: { value: 0, kanji: '零時', reading: 'れいじ' }
     },
@@ -2885,7 +2885,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「朝」讀「あさ」，意思是早上。',
-            relatedRules: ['時間表達', '朝の讀法']
+            relatedRules: ['時間表達', '朝的讀法']
         },
         sourceItem: { value: 'morning', kanji: '朝', reading: 'あさ' }
     },
@@ -2907,7 +2907,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時」固定讀「よじ」。',
             trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
-            relatedRules: ['四時の讀法', '授業時間']
+            relatedRules: ['四時的讀法', '授業時間']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -2932,7 +2932,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「三時」讀「さんじ」。',
-            relatedRules: ['小時の讀法', 'チェックイン時間']
+            relatedRules: ['小時的讀法', 'チェックイン時間']
         },
         sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
     },
@@ -2953,7 +2953,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「夜」讀「よる」，意思是晚上。',
-            relatedRules: ['時間表達', '夜の讀法']
+            relatedRules: ['時間表達', '夜的讀法']
         },
         sourceItem: { value: 'night', kanji: '夜', reading: 'よる' }
     },
@@ -2974,7 +2974,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十時」讀「じゅうじ」。',
-            relatedRules: ['小時の讀法', 'バスの時間']
+            relatedRules: ['小時的讀法', 'バスの時間']
         },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
@@ -3000,7 +3000,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時」固定讀「よじ」。',
             trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
-            relatedRules: ['四時の讀法', '会議終了時間']
+            relatedRules: ['四時的讀法', '会議終了時間']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -3022,7 +3022,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「昼」讀「ひる」，意思是白天/中午。',
-            relatedRules: ['時間表達', '昼の讀法']
+            relatedRules: ['時間表達', '昼的讀法']
         },
         sourceItem: { value: 'noon', kanji: '昼', reading: 'ひる' }
     },
@@ -3043,7 +3043,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十時」讀「じゅうじ」。',
-            relatedRules: ['小時の讀法', 'スーパーの営業時間']
+            relatedRules: ['小時的讀法', 'スーパーの営業時間']
         },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
@@ -3069,7 +3069,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「七時半」讀「しちじはん」。',
             trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
-            relatedRules: ['七時の讀法', 'デートの時間']
+            relatedRules: ['七時的讀法', 'デートの時間']
         },
         sourceItem: { value: '7:30', kanji: '七時半', reading: 'しちじはん' }
     },
@@ -3111,7 +3111,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「八時」讀「はちじ」。',
-            relatedRules: ['小時の讀法', '服薬時間']
+            relatedRules: ['小時的讀法', '服薬時間']
         },
         sourceItem: { value: 8, kanji: '八時', reading: 'はちじ' }
     },
@@ -3137,7 +3137,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「九時半」讀「くじはん」。',
             trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
-            relatedRules: ['九時の讀法', '診察時間']
+            relatedRules: ['九時的讀法', '診察時間']
         },
         sourceItem: { value: '9:30', kanji: '九時半', reading: 'くじはん' }
     },
@@ -3179,7 +3179,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十一時」讀「じゅういちじ」。',
-            relatedRules: ['小時の讀法', 'カフェの営業時間']
+            relatedRules: ['小時的讀法', 'カフェの営業時間']
         },
         sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
     },
@@ -3204,7 +3204,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五時」讀「ごじ」。',
-            relatedRules: ['小時の讀法', '郵便局の閉店時間']
+            relatedRules: ['小時的讀法', '郵便局の閉店時間']
         },
         sourceItem: { value: 5, kanji: '五時', reading: 'ごじ' }
     },
@@ -3225,7 +3225,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「昨夜」讀「ゆうべ」或「さくや」，意思是昨天晚上。',
-            relatedRules: ['時間表達', '昨夜の讀法']
+            relatedRules: ['時間表達', '昨夜的讀法']
         },
         sourceItem: { value: 'last night', kanji: '昨夜', reading: 'ゆうべ' }
     },
@@ -3247,7 +3247,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「九時」固定讀「くじ」。',
             trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
-            relatedRules: ['九時の讀法', '塾の終了時間']
+            relatedRules: ['九時的讀法', '塾の終了時間']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -3272,7 +3272,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二時」讀「にじ」。',
-            relatedRules: ['小時の讀法', '宅配便の時間']
+            relatedRules: ['小時的讀法', '宅配便の時間']
         },
         sourceItem: { value: 2, kanji: '二時', reading: 'にじ' }
     },
@@ -3294,7 +3294,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '4時（よじ）、7時（しちじ）、9時（くじ）是三個特殊讀法。',
             trapExplanation: '這是總結性題目，掌握小時的特殊讀法。',
-            relatedRules: ['小時の特殊讀法', '4/7/9時']
+            relatedRules: ['小時的特殊讀法', '4/7/9時']
         },
         sourceItem: { value: 'special', kanji: '特殊小時', reading: '4/7/9時' }
     },
@@ -3341,7 +3341,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「七時」固定讀「しちじ」。',
             trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
-            relatedRules: ['七時の讀法', 'コンサートの時間']
+            relatedRules: ['七時的讀法', 'コンサートの時間']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -3409,7 +3409,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時」固定讀「よじ」。',
             trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
-            relatedRules: ['四時の讀法', 'ヨガの時間']
+            relatedRules: ['四時的讀法', 'ヨガの時間']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -3451,7 +3451,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「一時」讀「いちじ」。',
-            relatedRules: ['小時の讀法', '電車の出発時間']
+            relatedRules: ['小時的讀法', '電車の出発時間']
         },
         sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
     },
@@ -3476,7 +3476,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十時」讀「じゅうじ」。',
-            relatedRules: ['小時の讀法', '商店街の開店時間']
+            relatedRules: ['小時的讀法', '商店街の開店時間']
         },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
@@ -3519,7 +3519,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時」固定讀「よじ」。',
             trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
-            relatedRules: ['四時の讀法', '美術館の閉館時間']
+            relatedRules: ['四時的讀法', '美術館の閉館時間']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -3544,7 +3544,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「六時」讀「ろくじ」。',
-            relatedRules: ['小時の讀法', 'テニスの練習時間']
+            relatedRules: ['小時的讀法', 'テニスの練習時間']
         },
         sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
     },
@@ -3566,7 +3566,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '4時避免「しじ」（與「死」同音），7時、9時也是為了避免不吉利的同音。',
             trapExplanation: '了解這些讀法的文化背景。',
-            relatedRules: ['小時の特殊讀法', '日本文化']
+            relatedRules: ['小時的特殊讀法', '日本文化']
         },
         sourceItem: { value: 'cultural', kanji: '文化背景', reading: '避諱讀法' }
     },
@@ -3587,7 +3587,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十二時」讀「じゅうにじ」。',
-            relatedRules: ['小時の讀法', '映画の終了時間']
+            relatedRules: ['小時的讀法', '映画の終了時間']
         },
         sourceItem: { value: 12, kanji: '十二時', reading: 'じゅうにじ' }
     },
@@ -3613,7 +3613,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「九時」固定讀「くじ」。',
             trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
-            relatedRules: ['九時の讀法', '夜行バスの時間']
+            relatedRules: ['九時的讀法', '夜行バスの時間']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -3655,7 +3655,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「七時」固定讀「しちじ」。',
-            relatedRules: ['七時の讀法', '起床時間']
+            relatedRules: ['七時的讀法', '起床時間']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -3680,7 +3680,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十一時」讀「じゅういちじ」。',
-            relatedRules: ['小時の讀法', '焼肉屋の営業時間']
+            relatedRules: ['小時的讀法', '焼肉屋の営業時間']
         },
         sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
     },
@@ -3723,7 +3723,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「九時」固定讀「くじ」。',
             trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
-            relatedRules: ['九時の讀法', '飛行機の到着時間']
+            relatedRules: ['九時的讀法', '飛行機の到着時間']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -3791,7 +3791,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時」固定讀「よじ」。',
             trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
-            relatedRules: ['四時の讀法', '幼稚園の時間']
+            relatedRules: ['四時的讀法', '幼稚園の時間']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -3816,7 +3816,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十時」讀「じゅうじ」。',
-            relatedRules: ['小時の讀法', '朝食の時間']
+            relatedRules: ['小時的讀法', '朝食の時間']
         },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
@@ -3858,7 +3858,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「一時」讀「いちじ」，是一般讀法。',
-            relatedRules: ['小時の讀法', '1時']
+            relatedRules: ['小時的讀法', '1時']
         },
         sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
     },
@@ -3884,7 +3884,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「七時半」讀「しちじはん」。',
             trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
-            relatedRules: ['七時の讀法', 'パーティーの時間']
+            relatedRules: ['七時的讀法', 'パーティーの時間']
         },
         sourceItem: { value: '7:30', kanji: '七時半', reading: 'しちじはん' }
     },
@@ -3906,7 +3906,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「4時」只能讀「よじ」，「しじ」「よんじ」都是錯誤的。',
             trapExplanation: '掌握4時的正確讀法非常重要。',
-            relatedRules: ['四時の讀法', '禁止讀法']
+            relatedRules: ['四時的讀法', '禁止讀法']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -3928,7 +3928,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二時」讀「にじ」，是一般讀法。',
-            relatedRules: ['小時の讀法', '2時']
+            relatedRules: ['小時的讀法', '2時']
         },
         sourceItem: { value: 2, kanji: '二時', reading: 'にじ' }
     },
@@ -3953,7 +3953,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「三時」讀「さんじ」。',
-            relatedRules: ['小時の讀法', '学校の終了時間']
+            relatedRules: ['小時的讀法', '学校の終了時間']
         },
         sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
     },
@@ -3975,7 +3975,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「7時」只能讀「しちじ」，「ななじ」是錯誤的。',
             trapExplanation: '掌握7時的正確讀法非常重要。',
-            relatedRules: ['七時の讀法', '禁止讀法']
+            relatedRules: ['七時的讀法', '禁止讀法']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -3996,7 +3996,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五時」讀「ごじ」，是一般讀法。',
-            relatedRules: ['小時の讀法', '5時']
+            relatedRules: ['小時的讀法', '5時']
         },
         sourceItem: { value: 5, kanji: '五時', reading: 'ごじ' }
     },
@@ -4022,7 +4022,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時半」讀「よじはん」。',
             trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
-            relatedRules: ['四時の讀法', '電車の時間']
+            relatedRules: ['四時的讀法', '電車の時間']
         },
         sourceItem: { value: '4:30', kanji: '四時半', reading: 'よじはん' }
     },
@@ -4044,7 +4044,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「9時」只能讀「くじ」，「きゅうじ」是錯誤的。',
             trapExplanation: '掌握9時的正確讀法非常重要。',
-            relatedRules: ['九時の讀法', '禁止讀法']
+            relatedRules: ['九時的讀法', '禁止讀法']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -4065,7 +4065,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「六時」讀「ろくじ」，是一般讀法。',
-            relatedRules: ['小時の讀法', '6時']
+            relatedRules: ['小時的讀法', '6時']
         },
         sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
     },
@@ -4090,7 +4090,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「八時」讀「はちじ」。',
-            relatedRules: ['小時の讀法', 'バスの時間']
+            relatedRules: ['小時的讀法', 'バスの時間']
         },
         sourceItem: { value: 8, kanji: '八時', reading: 'はちじ' }
     },
@@ -4111,7 +4111,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十時」讀「じゅうじ」，是一般讀法。',
-            relatedRules: ['小時の讀法', '10時']
+            relatedRules: ['小時的讀法', '10時']
         },
         sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
     },
@@ -4132,7 +4132,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十一時」讀「じゅういちじ」，是一般讀法。',
-            relatedRules: ['小時の讀法', '11時']
+            relatedRules: ['小時的讀法', '11時']
         },
         sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
     },
@@ -4157,7 +4157,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '正午是「十二時」，讀「じゅうにじ」。',
-            relatedRules: ['小時の讀法', '正午=12時']
+            relatedRules: ['小時的讀法', '正午=12時']
         },
         sourceItem: { value: 12, kanji: '十二時', reading: 'じゅうにじ' }
     },
@@ -4200,7 +4200,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「九時半」讀「くじはん」。',
             trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
-            relatedRules: ['九時の讀法', '診療時間']
+            relatedRules: ['九時的讀法', '診療時間']
         },
         sourceItem: { value: '9:30', kanji: '九時半', reading: 'くじはん' }
     },
@@ -4256,7 +4256,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'sentence',
         isTrap: true,
-        stem: '總復習：「四時」的正確讀法是？',
+        stem: '「四時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '總復習：「四時」的正確讀法是？',
         options: [
             { text: 'よじ', isCorrect: true, reason: '正確！四時讀「よじ」。' },
@@ -4268,7 +4268,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「四時」固定讀「よじ」，這是最重要的特殊讀法之一。',
             trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
-            relatedRules: ['四時の讀法', '特殊讀法']
+            relatedRules: ['四時的讀法', '特殊讀法']
         },
         sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
     },
@@ -4278,7 +4278,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'dialogue',
         isTrap: true,
-        stem: '總復習：「七時」的正確讀法是？',
+        stem: '「七時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '總復習：「七時」的正確讀法是？',
         dialogue: {
             speakerA: '「七時」はどう読みますか？',
@@ -4294,7 +4294,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「七時」固定讀「しちじ」，這是最重要的特殊讀法之一。',
             trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
-            relatedRules: ['七時の讀法', '特殊讀法']
+            relatedRules: ['七時的讀法', '特殊讀法']
         },
         sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
     },
@@ -4304,7 +4304,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         subcategory: 'hours',
         type: 'pronunciation',
         isTrap: true,
-        stem: '總復習：「九時」的正確讀法是？',
+        stem: '「九時」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '總復習：「九時」的正確讀法是？',
         options: [
             { text: 'くじ', isCorrect: true, reason: '正確！九時讀「くじ」。' },
@@ -4316,7 +4316,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「九時」固定讀「くじ」，這是最重要的特殊讀法之一。',
             trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
-            relatedRules: ['九時の讀法', '特殊讀法']
+            relatedRules: ['九時的讀法', '特殊讀法']
         },
         sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
     },
@@ -4337,7 +4337,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '小時讀法分兩種：一般讀法和特殊讀法（4時/7時/9時）。',
-            relatedRules: ['小時の讀法總整理', '兩種模式']
+            relatedRules: ['小時的讀法總整理', '兩種模式']
         },
         sourceItem: { value: 'summary', kanji: '總復習', reading: '兩種模式' }
     },
@@ -4405,7 +4405,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「午後四時」讀「ごごよじ」。',
             trapExplanation: '四時是特殊讀法，即使加「午後」也讀「よじ」。',
-            relatedRules: ['午後+時刻', '四時の讀法']
+            relatedRules: ['午後+時刻', '四時的讀法']
         },
         sourceItem: { value: 'PM4', kanji: '午後四時', reading: 'ごごよじ' }
     },
@@ -4431,7 +4431,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「午前七時」讀「ごぜんしちじ」。',
             trapExplanation: '七時是特殊讀法，即使加「午前」也讀「しちじ」。',
-            relatedRules: ['午前+時刻', '七時の讀法']
+            relatedRules: ['午前+時刻', '七時的讀法']
         },
         sourceItem: { value: 'AM7', kanji: '午前七時', reading: 'ごぜんしちじ' }
     },
@@ -4499,7 +4499,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「夜九時」讀「よるくじ」。',
             trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
-            relatedRules: ['夜+時刻', '九時の讀法']
+            relatedRules: ['夜+時刻', '九時的讀法']
         },
         sourceItem: { value: 'night9', kanji: '夜九時', reading: 'よるくじ' }
     },
@@ -4587,7 +4587,7 @@ export const hourQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '4時(よじ)、7時(しちじ)、9時(くじ)是三個特殊讀法的小時。',
-            relatedRules: ['小時の讀法總整理', '特殊讀法三個']
+            relatedRules: ['小時的讀法總整理', '特殊讀法三個']
         },
         sourceItem: { value: 'summary_special', kanji: '特殊讀法', reading: '4/7/9時' }
     }

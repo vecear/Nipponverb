@@ -13,19 +13,19 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
         subcategory: 'smallAnimals',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「一匹」的正確讀音是？',
+        stem: '「一匹」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一匹」的正確讀音是？',
         options: [
-            { text: 'いっぴき', isCorrect: true, reason: '正確{せいかく}！「一匹{いっぴき}」發生{はっせい}促音化{そくおんか}+半濁音化{はんだくおんか}，讀作{どくさ}「いっぴき」。' },
-            { text: 'いちひき', isCorrect: false, reason: '陷阱{かんけい}！「ひ」在促音{そくおん}「っ」後必須{ひっす}變為{へんい}半濁音{はんだくおん}「ぴ」。' },
-            { text: 'いちびき', isCorrect: false, reason: '1匹{いっぴき}使用{しよう}半濁音{はんだくおん}「ぴ」，不是濁音{だくおん}「び」。' },
-            { text: 'いっひき', isCorrect: false, reason: '促音{そくおん}後不能{ふのう}接「ひ」，必須{ひっす}變為{へんい}「ぴ」。' }
+            { text: 'いっぴき', isCorrect: true, reason: '正確！「一匹{いっぴき}」發生促音化+半濁音化，讀作「いっぴき」。' },
+            { text: 'いちひき', isCorrect: false, reason: '陷阱！「ひ」在促音「っ」後必須變為半濁音「ぴ」。' },
+            { text: 'いちびき', isCorrect: false, reason: '1匹{いっぴき}使用半濁音「ぴ」，不是濁音「び」。' },
+            { text: 'いっひき', isCorrect: false, reason: '促音後不能接「ひ」，必須變為「ぴ」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「一匹{いっぴき}」讀作{どくさ}「いっぴき」。音變{おんへん}規則{きそく}與「本{ほん}」相同{おなじ}：促音{そくおん}+半濁音{はんだくおん}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。h-p轉換{てんかん}規律{きそく}適用於{てきようする}所有{すべて}「は行{ぎょう}」開頭{あたま}的量詞{りょうし}。',
-            relatedRules: ['h-p轉換{てんかん}規律{きそく}', '促音化{そくおんか}規則{きそく}', '1/6/8/10的特殊{とくしゅ}音變{おんへん}']
+            correctRule: '「一匹{いっぴき}」讀作「いっぴき」。音變規則與「本{ほん}」相同：促音+半濁音。',
+            trapExplanation: '這是陷阱題。h-p轉換規律適用於所有「は行」開頭的量詞。',
+            relatedRules: ['h-p轉換規律', '促音化規則', '1/6/8/10的特殊音變']
         },
         sourceItem: { value: 1, kanji: '一匹', reading: 'いっぴき' }
     },
@@ -38,16 +38,16 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
         stem: '猫を＿＿飼っています。',
         stem_zh: '我養了一隻貓。',
         options: [
-            { text: 'いちひき', isCorrect: false, reason: '陷阱{かんけい}！1匹{いっぴき}需要{じゅよう}促音化{そくおんか}+半濁音化{はんだくおんか}。' },
-            { text: 'いっぴき', isCorrect: true, reason: '正確{せいかく}！「猫{ねこ}を一匹{いっぴき}飼{か}っています」表示{ひょうじ}「養了{かっています}一隻{いっぴき}貓{ねこ}」。' },
-            { text: 'ひとつ', isCorrect: false, reason: '動物{どうぶつ}應使用{しよう}專用{せんよう}量詞{りょうし}「匹{ひき}」，不用{もちいず}「つ」。' },
-            { text: 'いちびき', isCorrect: false, reason: '1匹{いっぴき}使用{しよう}半濁音{はんだくおん}「ぴ」。' }
+            { text: 'いちひき', isCorrect: false, reason: '陷阱！1匹{いっぴき}需要促音化+半濁音化。' },
+            { text: 'いっぴき', isCorrect: true, reason: '正確！「猫を一匹{いっぴき}飼っています」表示「養了一隻貓」。' },
+            { text: 'ひとつ', isCorrect: false, reason: '動物應使用專用量詞「匹{ひき}」，不用「つ」。' },
+            { text: 'いちびき', isCorrect: false, reason: '1匹{いっぴき}使用半濁音「ぴ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「猫{ねこ}」使用{しよう}量詞{りょうし}「匹{ひき}」來計數{けいすう}。',
-            trapExplanation: '1匹{いっぴき}固定{こてい}讀む{よむ}「いっぴき」，是常見{じょうけん}的寵物{ペット}話題{わだい}。',
-            relatedRules: ['量詞{りょうし}「匹{ひき}」の使用{しよう}', '寵物{ペット}表達{ひょうたつ}']
+            correctRule: '「猫」使用量詞「匹{ひき}」來計數。',
+            trapExplanation: '1匹{いっぴき}固定讀「いっぴき」，是常見的寵物話題。',
+            relatedRules: ['量詞「匹{ひき}」的使用', '寵物表達']
         },
         sourceItem: { value: 1, kanji: '一匹', reading: 'いっぴき' }
     },
@@ -64,15 +64,15 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             speakerB: '犬が＿＿います。（一隻）'
         },
         options: [
-            { text: 'いちひき', isCorrect: false, reason: '1匹{いっぴき}需要{じゅよう}促音化{そくおんか}+半濁音化{はんだくおんか}。' },
-            { text: 'いっぴき', isCorrect: true, reason: '正確{せいかく}！有一隻{いっぴき}狗{いぬ}。' },
-            { text: 'ひとり', isCorrect: false, reason: '「人{にん}」用於{もちいる}人，動物{どうぶつ}用{もちいる}「匹{ひき}」。' },
-            { text: 'いっぽん', isCorrect: false, reason: '「本{ほん}」用於{もちいる}細長物{ほそながもの}，動物{どうぶつ}用{もちいる}「匹{ひき}」。' }
+            { text: 'いちひき', isCorrect: false, reason: '1匹{いっぴき}需要促音化+半濁音化。' },
+            { text: 'いっぴき', isCorrect: true, reason: '正確！有一隻狗。' },
+            { text: 'ひとり', isCorrect: false, reason: '「人{にん}」用於人，動物用「匹{ひき}」。' },
+            { text: 'いっぽん', isCorrect: false, reason: '「本{ほん}」用於細長物，動物用「匹{ひき}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「犬{いぬ}」使用{しよう}量詞{りょうし}「匹{ひき}」。小型犬{こがたけん}用{もちいる}「匹{ひき}」，大型犬{おおがたけん}有時{ときには}用{もちいる}「頭{とう}」。',
-            relatedRules: ['量詞{りょうし}「匹{ひき}」の使用{しよう}', '何匹{なんびき}の質問{しつもん}與回答{かいとう}']
+            correctRule: '「犬」使用量詞「匹{ひき}」。小型犬用「匹{ひき}」，大型犬有時用「頭{とう}」。',
+            relatedRules: ['量詞「匹{ひき}」的使用', '何匹{なんびき}的質問與回答']
         },
         sourceItem: { value: 1, kanji: '一匹', reading: 'いっぴき' }
     },
@@ -84,18 +84,18 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
         subcategory: 'smallAnimals',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二匹」的正確讀音是？',
+        stem: '「二匹」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二匹」的正確讀音是？',
         options: [
-            { text: 'にひき', isCorrect: true, reason: '正確{せいかく}！「二匹{にひき}」無音變{むおんへん}，讀作{どくさ}「にひき」。' },
-            { text: 'にぴき', isCorrect: false, reason: '2匹{にひき}不發生{ふはっせい}半濁音化{はんだくおんか}。' },
-            { text: 'にびき', isCorrect: false, reason: '2匹{にひき}不發生{ふはっせい}濁音化{だくおんか}。' },
-            { text: 'ふたひき', isCorrect: false, reason: '量詞{りょうし}「匹{ひき}」使用{しよう}音讀{おんどく}數字{すうじ}「に」。' }
+            { text: 'にひき', isCorrect: true, reason: '正確！「二匹{にひき}」無音變，讀作「にひき」。' },
+            { text: 'にぴき', isCorrect: false, reason: '2匹{にひき}不發生半濁音化。' },
+            { text: 'にびき', isCorrect: false, reason: '2匹{にひき}不發生濁音化。' },
+            { text: 'ふたひき', isCorrect: false, reason: '量詞「匹{ひき}」使用音讀數字「に」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二匹{にひき}」讀作{どくさ}「にひき」，無音變{むおんへん}。數字{すうじ}2不觸發{しょうはつ}任何{なんの}音變{おんへん}。',
-            relatedRules: ['量詞{りょうし}「匹{ひき}」の音變{おんへん}規則{きそく}', '無音變{むおんへん}の數字{すうじ}']
+            correctRule: '「二匹{にひき}」讀作「にひき」，無音變。數字2不觸發任何音變。',
+            relatedRules: ['量詞「匹{ひき}」的音變規則', '無音變の數字']
         },
         sourceItem: { value: 2, kanji: '二匹', reading: 'にひき' }
     },
@@ -108,15 +108,15 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
         stem: '金魚を＿＿買いました。',
         stem_zh: '我買了兩條金魚。',
         options: [
-            { text: 'にぴき', isCorrect: false, reason: '2匹{にひき}無音變{むおんへん}，保持{ほじ}「ひ」。' },
-            { text: 'にひき', isCorrect: true, reason: '正確{せいかく}！「金魚{きんぎょ}を二匹{にひき}」表示{ひょうじ}「兩條{にひき}金魚{きんぎょ}」。' },
-            { text: 'ふたつ', isCorrect: false, reason: '魚{さかな}是動物{どうぶつ}，應使用{しよう}「匹{ひき}」。' },
-            { text: 'にびき', isCorrect: false, reason: '2匹{にひき}無濁音化{むだくおんか}。' }
+            { text: 'にぴき', isCorrect: false, reason: '2匹{にひき}無音變，保持「ひ」。' },
+            { text: 'にひき', isCorrect: true, reason: '正確！「金魚を二匹{にひき}」表示「兩條金魚」。' },
+            { text: 'ふたつ', isCorrect: false, reason: '魚是動物，應使用「匹{ひき}」。' },
+            { text: 'にびき', isCorrect: false, reason: '2匹{にひき}無濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「金魚{きんぎょ}」（金魚{きんぎょ}）使用{しよう}量詞{りょうし}「匹{ひき}」。',
-            relatedRules: ['量詞{りょうし}「匹{ひき}」の使用{しよう}', '魚{さかな}の計數{けいすう}']
+            correctRule: '「金魚」（金魚）使用量詞「匹{ひき}」。',
+            relatedRules: ['量詞「匹{ひき}」的使用', '魚の計數']
         },
         sourceItem: { value: 2, kanji: '二匹', reading: 'にひき' }
     },
@@ -133,15 +133,15 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿いました。（兩隻）'
         },
         options: [
-            { text: 'にぴき', isCorrect: false, reason: '2匹{にひき}無音變{むおんへん}。' },
-            { text: 'にひき', isCorrect: true, reason: '正確{せいかく}！有兩隻{にひき}蟲{むし}。' },
-            { text: 'ふたつ', isCorrect: false, reason: '昆蟲{こんちゅう}是動物{どうぶつ}，用{もちいる}「匹{ひき}」。' },
-            { text: 'にびき', isCorrect: false, reason: '2匹{にひき}無濁音化{むだくおんか}。' }
+            { text: 'にぴき', isCorrect: false, reason: '2匹{にひき}無音變。' },
+            { text: 'にひき', isCorrect: true, reason: '正確！有兩隻蟲。' },
+            { text: 'ふたつ', isCorrect: false, reason: '昆蟲是動物，用「匹{ひき}」。' },
+            { text: 'にびき', isCorrect: false, reason: '2匹{にひき}無濁音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「虫{むし}」（昆蟲{こんちゅう}）使用{しよう}量詞{りょうし}「匹{ひき}」。',
-            relatedRules: ['量詞{りょうし}「匹{ひき}」の使用{しよう}', '昆蟲{こんちゅう}の計數{けいすう}']
+            correctRule: '「虫」（昆蟲）使用量詞「匹{ひき}」。',
+            relatedRules: ['量詞「匹{ひき}」的使用', '昆蟲の計數']
         },
         sourceItem: { value: 2, kanji: '二匹', reading: 'にひき' }
     },
@@ -153,19 +153,19 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
         subcategory: 'smallAnimals',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「三匹」的正確讀音是？',
+        stem: '「三匹」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三匹」的正確讀音是？',
         options: [
-            { text: 'さんびき', isCorrect: true, reason: '正確{せいかく}！「三匹{さんびき}」發生{はっせい}濁音化{だくおんか}，讀作{どくさ}「さんびき」。' },
-            { text: 'さんひき', isCorrect: false, reason: '陷阱{かんけい}！撥音{はつおん}「ん」後的「ひ」變為{へんい}濁音{だくおん}「び」。' },
-            { text: 'さんぴき', isCorrect: false, reason: '3匹{さんびき}使用{しよう}濁音{だくおん}「び」，不是半濁音{はんだくおん}「ぴ」。' },
-            { text: 'みひき', isCorrect: false, reason: '量詞{りょうし}「匹{ひき}」用{もちいる}音讀{おんどく}「さん」。' }
+            { text: 'さんびき', isCorrect: true, reason: '正確！「三匹{さんびき}」發生濁音化，讀作「さんびき」。' },
+            { text: 'さんひき', isCorrect: false, reason: '陷阱！撥音「ん」後的「ひ」變為濁音「び」。' },
+            { text: 'さんぴき', isCorrect: false, reason: '3匹{さんびき}使用濁音「び」，不是半濁音「ぴ」。' },
+            { text: 'みひき', isCorrect: false, reason: '量詞「匹{ひき}」用音讀「さん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三匹{さんびき}」讀作{どくさ}「さんびき」。撥音{はつおん}「ん」後的「h」音{おん}變為{へんい}濁音{だくおん}「b」。',
-            trapExplanation: '這是陷阱題{かんけいだい}。音變{おんへん}規則{きそく}與「三本{さんぼん}」相同{おなじ}。',
-            relatedRules: ['h-b轉換{てんかん}規律{きそく}', '濁音化{だくおんか}規則{きそく}', '3的特殊{とくしゅ}音變{おんへん}']
+            correctRule: '「三匹{さんびき}」讀作「さんびき」。撥音「ん」後的「h」音變為濁音「b」。',
+            trapExplanation: '這是陷阱題。音變規則與「三本{さんぼん}」相同。',
+            relatedRules: ['h-b轉換規律', '濁音化規則', '3的特殊音變']
         },
         sourceItem: { value: 3, kanji: '三匹', reading: 'さんびき' }
     },
@@ -178,16 +178,16 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
         stem: '子犬が＿＿生まれました。',
         stem_zh: '生了三隻小狗。',
         options: [
-            { text: 'さんひき', isCorrect: false, reason: '陷阱{かんけい}！3匹{さんびき}需要{じゅよう}濁音化{だくおんか}。' },
-            { text: 'さんびき', isCorrect: true, reason: '正確{せいかく}！「子犬{こいぬ}が三匹{さんびき}」表示{ひょうじ}「三隻{さんびき}小狗{こいぬ}」。' },
-            { text: 'さんぴき', isCorrect: false, reason: '3匹{さんびき}使用{しよう}濁音{だくおん}「び」。' },
-            { text: 'みっつ', isCorrect: false, reason: '動物{どうぶつ}應使用{しよう}「匹{ひき}」。' }
+            { text: 'さんひき', isCorrect: false, reason: '陷阱！3匹{さんびき}需要濁音化。' },
+            { text: 'さんびき', isCorrect: true, reason: '正確！「子犬が三匹{さんびき}」表示「三隻小狗」。' },
+            { text: 'さんぴき', isCorrect: false, reason: '3匹{さんびき}使用濁音「び」。' },
+            { text: 'みっつ', isCorrect: false, reason: '動物應使用「匹{ひき}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「子犬{こいぬ}」（小狗{こいぬ}）使用{しよう}量詞{りょうし}「匹{ひき}」。',
-            trapExplanation: '3匹{さんびき}固定{こてい}讀む{よむ}「さんびき」，撥音{はつおん}後必須{ひっす}濁音化{だくおんか}。',
-            relatedRules: ['量詞{りょうし}「匹{ひき}」の使用{しよう}', '動物{どうぶつ}出生{しゅっしょう}']
+            correctRule: '「子犬」（小狗）使用量詞「匹{ひき}」。',
+            trapExplanation: '3匹{さんびき}固定讀「さんびき」，撥音後必須濁音化。',
+            relatedRules: ['量詞「匹{ひき}」的使用', '動物出生']
         },
         sourceItem: { value: 3, kanji: '三匹', reading: 'さんびき' }
     },
@@ -204,15 +204,15 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿見ました。（三隻）'
         },
         options: [
-            { text: 'さんひき', isCorrect: false, reason: '3匹{さんびき}需要{じゅよう}濁音化{だくおんか}。' },
-            { text: 'さんびき', isCorrect: true, reason: '正確{せいかく}！看到{みました}三隻{さんびき}蝴蝶{ちょうちょう}。' },
-            { text: 'さんぴき', isCorrect: false, reason: '3匹{さんびき}使用{しよう}濁音{だくおん}「び」。' },
-            { text: 'みっつ', isCorrect: false, reason: '蝴蝶{ちょうちょう}是昆蟲{こんちゅう}，用{もちいる}「匹{ひき}」。' }
+            { text: 'さんひき', isCorrect: false, reason: '3匹{さんびき}需要濁音化。' },
+            { text: 'さんびき', isCorrect: true, reason: '正確！看到三隻蝴蝶。' },
+            { text: 'さんぴき', isCorrect: false, reason: '3匹{さんびき}使用濁音「び」。' },
+            { text: 'みっつ', isCorrect: false, reason: '蝴蝶是昆蟲，用「匹{ひき}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「蝶々{ちょうちょう}」（蝴蝶{ちょうちょう}）使用{しよう}量詞{りょうし}「匹{ひき}」。',
-            relatedRules: ['量詞{りょうし}「匹{ひき}」の使用{しよう}', '昆蟲{こんちゅう}觀察{かんさつ}']
+            correctRule: '「蝶々」（蝴蝶）使用量詞「匹{ひき}」。',
+            relatedRules: ['量詞「匹{ひき}」的使用', '昆蟲觀察']
         },
         sourceItem: { value: 3, kanji: '三匹', reading: 'さんびき' }
     },
@@ -224,19 +224,19 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
         subcategory: 'smallAnimals',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「六匹」的正確讀音是？',
+        stem: '「六匹」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「六匹」的正確讀音是？',
         options: [
-            { text: 'ろっぴき', isCorrect: true, reason: '正確{せいかく}！「六匹{ろっぴき}」發生{はっせい}促音化{そくおんか}+半濁音化{はんだくおんか}，讀作{どくさ}「ろっぴき」。' },
-            { text: 'ろくひき', isCorrect: false, reason: '陷阱{かんけい}！6匹{ろっぴき}需要{じゅよう}促音化{そくおんか}+半濁音化{はんだくおんか}。' },
-            { text: 'ろくびき', isCorrect: false, reason: '6匹{ろっぴき}使用{しよう}促音{そくおん}+半濁音{はんだくおん}，不是濁音{だくおん}。' },
-            { text: 'ろっひき', isCorrect: false, reason: '促音{そくおん}後不能{ふのう}接「ひ」，必須{ひっす}變為{へんい}「ぴ」。' }
+            { text: 'ろっぴき', isCorrect: true, reason: '正確！「六匹{ろっぴき}」發生促音化+半濁音化，讀作「ろっぴき」。' },
+            { text: 'ろくひき', isCorrect: false, reason: '陷阱！6匹{ろっぴき}需要促音化+半濁音化。' },
+            { text: 'ろくびき', isCorrect: false, reason: '6匹{ろっぴき}使用促音+半濁音，不是濁音。' },
+            { text: 'ろっひき', isCorrect: false, reason: '促音後不能接「ひ」，必須變為「ぴ」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六匹{ろっぴき}」讀作{どくさ}「ろっぴき」。音變{おんへん}規則{きそく}與1/8/10相同{おなじ}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。數字{すうじ}6搭配{たいはい}「は行{ぎょう}」量詞{りょうし}時{とき}必定{かならず}促音化{そくおんか}+半濁音化{はんだくおんか}。',
-            relatedRules: ['h-p轉換{てんかん}規律{きそく}', '促音化{そくおんか}規則{きそく}', '6的音變{おんへん}模式{もしき}']
+            correctRule: '「六匹{ろっぴき}」讀作「ろっぴき」。音變規則與1/8/10相同。',
+            trapExplanation: '這是陷阱題。數字6搭配「は行」量詞時必定促音化+半濁音化。',
+            relatedRules: ['h-p轉換規律', '促音化規則', '6的音變模式']
         },
         sourceItem: { value: 6, kanji: '六匹', reading: 'ろっぴき' }
     },
@@ -249,16 +249,16 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
         stem: 'ウサギを＿＿飼っています。',
         stem_zh: '我養了六隻兔子。',
         options: [
-            { text: 'ろくひき', isCorrect: false, reason: '陷阱{かんけい}！6匹{ろっぴき}需要{じゅよう}促音化{そくおんか}+半濁音化{はんだくおんか}。' },
-            { text: 'ろっぴき', isCorrect: true, reason: '正確{せいかく}！「ウサギを六匹{ろっぴき}」表示{ひょうじ}「六隻{ろっぴき}兔子{ウサギ}」。' },
-            { text: 'ろくびき', isCorrect: false, reason: '6匹{ろっぴき}使用{しよう}促音{そくおん}+半濁音{はんだくおん}。' },
-            { text: 'むっつ', isCorrect: false, reason: '兔子{ウサギ}是動物{どうぶつ}，應使用{しよう}「匹{ひき}」。' }
+            { text: 'ろくひき', isCorrect: false, reason: '陷阱！6匹{ろっぴき}需要促音化+半濁音化。' },
+            { text: 'ろっぴき', isCorrect: true, reason: '正確！「ウサギを六匹{ろっぴき}」表示「六隻兔子」。' },
+            { text: 'ろくびき', isCorrect: false, reason: '6匹{ろっぴき}使用促音+半濁音。' },
+            { text: 'むっつ', isCorrect: false, reason: '兔子是動物，應使用「匹{ひき}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ウサギ」（兔子{うさぎ}）使用{しよう}量詞{りょうし}「匹{ひき}」。',
-            trapExplanation: '6匹{ろっぴき}固定{こてい}讀む{よむ}「ろっぴき」。',
-            relatedRules: ['量詞{りょうし}「匹{ひき}」の使用{しよう}', '寵物{ペット}飼養{しいく}']
+            correctRule: '「ウサギ」（兔子）使用量詞「匹{ひき}」。',
+            trapExplanation: '6匹{ろっぴき}固定讀「ろっぴき」。',
+            relatedRules: ['量詞「匹{ひき}」的使用', '寵物飼養']
         },
         sourceItem: { value: 6, kanji: '六匹', reading: 'ろっぴき' }
     },
@@ -275,15 +275,15 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿います。（六條）'
         },
         options: [
-            { text: 'ろくひき', isCorrect: false, reason: '6匹{ろっぴき}需要{じゅよう}促音化{そくおんか}+半濁音化{はんだくおんか}。' },
-            { text: 'ろっぴき', isCorrect: true, reason: '正確{せいかく}！池塘{いけ}裡有六條{ろっぴき}鯉魚{こい}。' },
-            { text: 'ろくびき', isCorrect: false, reason: '6匹{ろっぴき}使用{しよう}促音{そくおん}+半濁音{はんだくおん}。' },
-            { text: 'むっつ', isCorrect: false, reason: '魚{さかな}是動物{どうぶつ}，用{もちいる}「匹{ひき}」。' }
+            { text: 'ろくひき', isCorrect: false, reason: '6匹{ろっぴき}需要促音化+半濁音化。' },
+            { text: 'ろっぴき', isCorrect: true, reason: '正確！池塘裡有六條鯉魚。' },
+            { text: 'ろくびき', isCorrect: false, reason: '6匹{ろっぴき}使用促音+半濁音。' },
+            { text: 'むっつ', isCorrect: false, reason: '魚是動物，用「匹{ひき}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「鯉{こい}」（鯉魚{こい}）使用{しよう}量詞{りょうし}「匹{ひき}」。',
-            relatedRules: ['量詞{りょうし}「匹{ひき}」の使用{しよう}', '魚{さかな}の計數{けいすう}']
+            correctRule: '「鯉」（鯉魚）使用量詞「匹{ひき}」。',
+            relatedRules: ['量詞「匹{ひき}」的使用', '魚の計數']
         },
         sourceItem: { value: 6, kanji: '六匹', reading: 'ろっぴき' }
     },
@@ -295,19 +295,19 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
         subcategory: 'smallAnimals',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「十匹」的正確讀音是？',
+        stem: '「十匹」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十匹」的正確讀音是？',
         options: [
-            { text: 'じゅっぴき', isCorrect: true, reason: '正確{せいかく}！「十匹{じゅっぴき}」發生{はっせい}促音化{そくおんか}+半濁音化{はんだくおんか}，讀作{どくさ}「じゅっぴき」。' },
-            { text: 'じゅうひき', isCorrect: false, reason: '陷阱{かんけい}！10匹{じゅっぴき}需要{じゅよう}促音化{そくおんか}+半濁音化{はんだくおんか}。' },
-            { text: 'じゅうびき', isCorrect: false, reason: '10匹{じゅっぴき}使用{しよう}促音{そくおん}+半濁音{はんだくおん}，不是濁音{だくおん}。' },
-            { text: 'とおひき', isCorrect: false, reason: '量詞{りょうし}「匹{ひき}」用{もちいる}音讀{おんどく}「じゅう」。' }
+            { text: 'じゅっぴき', isCorrect: true, reason: '正確！「十匹{じゅっぴき}」發生促音化+半濁音化，讀作「じゅっぴき」。' },
+            { text: 'じゅうひき', isCorrect: false, reason: '陷阱！10匹{じゅっぴき}需要促音化+半濁音化。' },
+            { text: 'じゅうびき', isCorrect: false, reason: '10匹{じゅっぴき}使用促音+半濁音，不是濁音。' },
+            { text: 'とおひき', isCorrect: false, reason: '量詞「匹{ひき}」用音讀「じゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十匹{じゅっぴき}」讀作{どくさ}「じゅっぴき」。音變{おんへん}規則{きそく}與1/6/8相同{おなじ}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。數字{すうじ}10搭配{たいはい}「は行{ぎょう}」量詞{りょうし}時{とき}必定{かならず}促音化{そくおんか}+半濁音化{はんだくおんか}。',
-            relatedRules: ['h-p轉換{てんかん}規律{きそく}', '促音化{そくおんか}規則{きそく}', '10的音變{おんへん}模式{もしき}']
+            correctRule: '「十匹{じゅっぴき}」讀作「じゅっぴき」。音變規則與1/6/8相同。',
+            trapExplanation: '這是陷阱題。數字10搭配「は行」量詞時必定促音化+半濁音化。',
+            relatedRules: ['h-p轉換規律', '促音化規則', '10的音變模式']
         },
         sourceItem: { value: 10, kanji: '十匹', reading: 'じゅっぴき' }
     },
@@ -320,16 +320,16 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
         stem: 'アリが＿＿いました。',
         stem_zh: '有十隻螞蟻。',
         options: [
-            { text: 'じゅうひき', isCorrect: false, reason: '陷阱{かんけい}！10匹{じゅっぴき}需要{じゅよう}促音化{そくおんか}+半濁音化{はんだくおんか}。' },
-            { text: 'じゅっぴき', isCorrect: true, reason: '正確{せいかく}！「アリが十匹{じゅっぴき}」表示{ひょうじ}「有十隻{じゅっぴき}螞蟻{アリ}」。' },
-            { text: 'じゅうびき', isCorrect: false, reason: '10匹{じゅっぴき}使用{しよう}促音{そくおん}+半濁音{はんだくおん}。' },
-            { text: 'とお', isCorrect: false, reason: '螞蟻{アリ}是昆蟲{こんちゅう}，應使用{しよう}「匹{ひき}」。' }
+            { text: 'じゅうひき', isCorrect: false, reason: '陷阱！10匹{じゅっぴき}需要促音化+半濁音化。' },
+            { text: 'じゅっぴき', isCorrect: true, reason: '正確！「アリが十匹{じゅっぴき}」表示「有十隻螞蟻」。' },
+            { text: 'じゅうびき', isCorrect: false, reason: '10匹{じゅっぴき}使用促音+半濁音。' },
+            { text: 'とお', isCorrect: false, reason: '螞蟻是昆蟲，應使用「匹{ひき}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「アリ」（螞蟻{あり}）使用{しよう}量詞{りょうし}「匹{ひき}」。',
-            trapExplanation: '10匹{じゅっぴき}固定{こてい}讀む{よむ}「じゅっぴき」。',
-            relatedRules: ['量詞{りょうし}「匹{ひき}」の使用{しよう}', '昆蟲{こんちゅう}の計數{けいすう}']
+            correctRule: '「アリ」（螞蟻）使用量詞「匹{ひき}」。',
+            trapExplanation: '10匹{じゅっぴき}固定讀「じゅっぴき」。',
+            relatedRules: ['量詞「匹{ひき}」的使用', '昆蟲の計數']
         },
         sourceItem: { value: 10, kanji: '十匹', reading: 'じゅっぴき' }
     },
@@ -346,15 +346,15 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             speakerB: '少なくとも＿＿は見ました。（十條）'
         },
         options: [
-            { text: 'じゅうひき', isCorrect: false, reason: '10匹{じゅっぴき}需要{じゅよう}促音化{そくおんか}+半濁音化{はんだくおんか}。' },
-            { text: 'じゅっぴき', isCorrect: true, reason: '正確{せいかく}！至少{すくなくとも}看到{みました}十條{じゅっぴき}熱帶魚{ねったいぎょ}。' },
-            { text: 'じゅうびき', isCorrect: false, reason: '10匹{じゅっぴき}使用{しよう}促音{そくおん}+半濁音{はんだくおん}。' },
-            { text: 'とお', isCorrect: false, reason: '魚{さかな}用{もちいる}「匹{ひき}」。' }
+            { text: 'じゅうひき', isCorrect: false, reason: '10匹{じゅっぴき}需要促音化+半濁音化。' },
+            { text: 'じゅっぴき', isCorrect: true, reason: '正確！至少看到十條熱帶魚。' },
+            { text: 'じゅうびき', isCorrect: false, reason: '10匹{じゅっぴき}使用促音+半濁音。' },
+            { text: 'とお', isCorrect: false, reason: '魚用「匹{ひき}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「熱帯魚{ねったいぎょ}」（熱帶魚{ねったいぎょ}）使用{しよう}量詞{りょうし}「匹{ひき}」。',
-            relatedRules: ['量詞{りょうし}「匹{ひき}」の使用{しよう}', '水族館{すいぞくかん}參觀{さんかん}']
+            correctRule: '「熱帯魚」（熱帶魚）使用量詞「匹{ひき}」。',
+            relatedRules: ['量詞「匹{ひき}」的使用', '水族館參觀']
         },
         sourceItem: { value: 10, kanji: '十匹', reading: 'じゅっぴき' }
     },
@@ -362,7 +362,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
     // ===== 4匹 的三題（無音變：よんひき） =====
     {
         id: 'animal_4_pron', category: 'counters', subcategory: 'smallAnimals', type: 'pronunciation', isTrap: false,
-        stem: '「四匹」的正確讀音是？', stem_zh: '「四匹」的正確讀音是？',
+        stem: '「四匹」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四匹」的正確讀音是？',
         options: [
             { text: 'よんひき', isCorrect: true, reason: '正確！「四匹」無音變，讀作「よんひき」。' },
             { text: 'しひき', isCorrect: false, reason: '「し」有死的意思，避諱，用「よん」。' },
@@ -370,7 +370,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'よっぴき', isCorrect: false, reason: '4匹不發生促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四匹」讀作「よんひき」，無音變。使用「よん」避免「し」的不吉利聯想。', relatedRules: ['量詞「匹」の音變規則', '數字4的讀法'] },
+        explanation: { correctRule: '「四匹」讀作「よんひき」，無音變。使用「よん」避免「し」的不吉利聯想。', relatedRules: ['量詞「匹」的音變規則', '數字4的讀法'] },
         sourceItem: { value: 4, kanji: '四匹', reading: 'よんひき' }
     },
     {
@@ -383,7 +383,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'よんびき', isCorrect: false, reason: '4匹不發生濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ハムスター」是小動物，使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '寵物の計數'] },
+        explanation: { correctRule: '「ハムスター」是小動物，使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '寵物の計數'] },
         sourceItem: { value: 4, kanji: '四匹', reading: 'よんひき' }
     },
     {
@@ -397,14 +397,14 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'よんぴき', isCorrect: false, reason: '4匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「猫」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '寵物の計數'] },
+        explanation: { correctRule: '「猫」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '寵物の計數'] },
         sourceItem: { value: 4, kanji: '四匹', reading: 'よんひき' }
     },
 
     // ===== 5匹 的三題（無音變：ごひき） =====
     {
         id: 'animal_5_pron', category: 'counters', subcategory: 'smallAnimals', type: 'pronunciation', isTrap: false,
-        stem: '「五匹」的正確讀音是？', stem_zh: '「五匹」的正確讀音是？',
+        stem: '「五匹」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「五匹」的正確讀音是？',
         options: [
             { text: 'ごひき', isCorrect: true, reason: '正確！「五匹」無音變，讀作「ごひき」。' },
             { text: 'ごびき', isCorrect: false, reason: '5匹不發生濁音化。' },
@@ -412,7 +412,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'いつひき', isCorrect: false, reason: '量詞「匹」使用音讀「ご」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五匹」讀作「ごひき」，無音變。', relatedRules: ['量詞「匹」の音變規則', '無音變の數字'] },
+        explanation: { correctRule: '「五匹」讀作「ごひき」，無音變。', relatedRules: ['量詞「匹」的音變規則', '無音變の數字'] },
         sourceItem: { value: 5, kanji: '五匹', reading: 'ごひき' }
     },
     {
@@ -425,7 +425,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ごっぴき', isCorrect: false, reason: '5匹不發生促音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「鯉」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '魚の計數'] },
+        explanation: { correctRule: '「鯉」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '魚の計數'] },
         sourceItem: { value: 5, kanji: '五匹', reading: 'ごひき' }
     },
     {
@@ -439,14 +439,14 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'いつひき', isCorrect: false, reason: '使用「ご」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「蜂」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '昆蟲の計數'] },
+        explanation: { correctRule: '「蜂」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '昆蟲の計數'] },
         sourceItem: { value: 5, kanji: '五匹', reading: 'ごひき' }
     },
 
     // ===== 7匹 的三題（無音變：ななひき） =====
     {
         id: 'animal_7_pron', category: 'counters', subcategory: 'smallAnimals', type: 'pronunciation', isTrap: false,
-        stem: '「七匹」的正確讀音是？', stem_zh: '「七匹」的正確讀音是？',
+        stem: '「七匹」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七匹」的正確讀音是？',
         options: [
             { text: 'ななひき', isCorrect: true, reason: '正確！「七匹」無音變，讀作「ななひき」。' },
             { text: 'しちひき', isCorrect: false, reason: '「しち」較少使用，通常用「なな」。' },
@@ -454,7 +454,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ななぴき', isCorrect: false, reason: '7匹不發生半濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七匹」讀作「ななひき」，無音變。', relatedRules: ['量詞「匹」の音變規則', '數字7的讀法'] },
+        explanation: { correctRule: '「七匹」讀作「ななひき」，無音變。', relatedRules: ['量詞「匹」的音變規則', '數字7的讀法'] },
         sourceItem: { value: 7, kanji: '七匹', reading: 'ななひき' }
     },
     {
@@ -467,7 +467,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ななびき', isCorrect: false, reason: '7匹不發生濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「テントウムシ」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '昆蟲の計數'] },
+        explanation: { correctRule: '「テントウムシ」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '昆蟲の計數'] },
         sourceItem: { value: 7, kanji: '七匹', reading: 'ななひき' }
     },
     {
@@ -481,14 +481,14 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ななぴき', isCorrect: false, reason: '7匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「金魚」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '魚の計數'] },
+        explanation: { correctRule: '「金魚」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '魚の計數'] },
         sourceItem: { value: 7, kanji: '七匹', reading: 'ななひき' }
     },
 
     // ===== 8匹 的三題（促音+半濁音：はっぴき） =====
     {
         id: 'animal_8_pron', category: 'counters', subcategory: 'smallAnimals', type: 'pronunciation', isTrap: true,
-        stem: '「八匹」的正確讀音是？', stem_zh: '「八匹」的正確讀音是？',
+        stem: '「八匹」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「八匹」的正確讀音是？',
         options: [
             { text: 'はっぴき', isCorrect: true, reason: '正確！「八匹」發生促音化+半濁音化，讀作「はっぴき」。' },
             { text: 'はちひき', isCorrect: false, reason: '陷阱！8匹需要促音化+半濁音化。' },
@@ -509,7 +509,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'はちびき', isCorrect: false, reason: '8匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「カエル」使用量詞「匹」。8匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」の使用', '促音化規則'] },
+        explanation: { correctRule: '「カエル」使用量詞「匹」。8匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」的使用', '促音化規則'] },
         sourceItem: { value: 8, kanji: '八匹', reading: 'はっぴき' }
     },
     {
@@ -523,14 +523,14 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'はちびき', isCorrect: false, reason: '8匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「蜘蛛」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '昆蟲の計數'] },
+        explanation: { correctRule: '「蜘蛛」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '昆蟲の計數'] },
         sourceItem: { value: 8, kanji: '八匹', reading: 'はっぴき' }
     },
 
     // ===== 9匹 的三題（無音變：きゅうひき） =====
     {
         id: 'animal_9_pron', category: 'counters', subcategory: 'smallAnimals', type: 'pronunciation', isTrap: false,
-        stem: '「九匹」的正確讀音是？', stem_zh: '「九匹」的正確讀音是？',
+        stem: '「九匹」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「九匹」的正確讀音是？',
         options: [
             { text: 'きゅうひき', isCorrect: true, reason: '正確！「九匹」無音變，讀作「きゅうひき」。' },
             { text: 'くひき', isCorrect: false, reason: '量詞「匹」使用音讀「きゅう」。' },
@@ -538,7 +538,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅっぴき', isCorrect: false, reason: '9匹不發生促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九匹」讀作「きゅうひき」，無音變。', relatedRules: ['量詞「匹」の音變規則', '無音變の數字'] },
+        explanation: { correctRule: '「九匹」讀作「きゅうひき」，無音變。', relatedRules: ['量詞「匹」的音變規則', '無音變の數字'] },
         sourceItem: { value: 9, kanji: '九匹', reading: 'きゅうひき' }
     },
     {
@@ -551,7 +551,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうびき', isCorrect: false, reason: '9匹不發生濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ネズミ」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '動物の計數'] },
+        explanation: { correctRule: '「ネズミ」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '動物の計數'] },
         sourceItem: { value: 9, kanji: '九匹', reading: 'きゅうひき' }
     },
     {
@@ -565,7 +565,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうぴき', isCorrect: false, reason: '9匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「熱帯魚」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '魚の計數'] },
+        explanation: { correctRule: '「熱帯魚」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '魚の計數'] },
         sourceItem: { value: 9, kanji: '九匹', reading: 'きゅうひき' }
     },
 
@@ -576,19 +576,19 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
         subcategory: 'smallAnimals',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「何匹」的正確讀音是？',
+        stem: '「何匹」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何匹」的正確讀音是？',
         options: [
-            { text: 'なんびき', isCorrect: true, reason: '正確{せいかく}！「何匹{なんびき}」發生{はっせい}濁音化{だくおんか}，讀作{どくさ}「なんびき」。' },
-            { text: 'なんひき', isCorrect: false, reason: '陷阱{かんけい}！「何{なん}」的撥音{はつおん}「ん」使{しめす}「ひ」變為{へんい}濁音{だくおん}「び」。' },
-            { text: 'なんぴき', isCorrect: false, reason: '「何匹{なんびき}」使用{しよう}濁音{だくおん}「び」，不是半濁音{はんだくおん}「ぴ」。' },
-            { text: 'なにひき', isCorrect: false, reason: '搭配{たいはい}量詞{りょうし}時{とき}，「何{なに}」讀作{どくさ}「なん」。' }
+            { text: 'なんびき', isCorrect: true, reason: '正確！「何匹{なんびき}」發生濁音化，讀作「なんびき」。' },
+            { text: 'なんひき', isCorrect: false, reason: '陷阱！「何{なん}」的撥音「ん」使「ひ」變為濁音「び」。' },
+            { text: 'なんぴき', isCorrect: false, reason: '「何匹{なんびき}」使用濁音「び」，不是半濁音「ぴ」。' },
+            { text: 'なにひき', isCorrect: false, reason: '搭配量詞時，「何」讀作「なん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何匹{なんびき}」讀作{どくさ}「なんびき」。疑問詞{ぎもんし}「何{なん}」的撥音{はつおん}「ん」引發{いんぱつ}濁音化{だくおんか}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。撥音{はつおん}「ん」後的「h」音{おん}變為{へんい}濁音{だくおん}「b」，與「三匹{さんびき}」規則{きそく}相同{おなじ}。',
-            relatedRules: ['疑問詞{ぎもんし}の音變{おんへん}', '「何{なん}＋量詞{りょうし}」の讀法{よみかた}']
+            correctRule: '「何匹{なんびき}」讀作「なんびき」。疑問詞「何{なん}」的撥音「ん」引發濁音化。',
+            trapExplanation: '這是陷阱題。撥音「ん」後的「h」音變為濁音「b」，與「三匹{さんびき}」規則相同。',
+            relatedRules: ['疑問詞的音變', '「何{なん}＋量詞」的讀法']
         },
         sourceItem: { value: '?', kanji: '何匹', reading: 'なんびき' }
     },
@@ -604,7 +604,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'といっぴき', isCorrect: false, reason: '使用「じゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '11匹讀作「じゅういっぴき」，個位數1觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '11匹讀作「じゅういっぴき」，個位數1觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 11, kanji: '十一匹', reading: 'じゅういっぴき' }
     },
     {
@@ -618,7 +618,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'とうにひき', isCorrect: false, reason: '使用「じゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '12匹讀作「じゅうにひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '12匹讀作「じゅうにひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 12, kanji: '十二匹', reading: 'じゅうにひき' }
     },
     {
@@ -631,7 +631,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうみひき', isCorrect: false, reason: '使用「さん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '13匹讀作「じゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '13匹讀作「じゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字的讀法'] },
         sourceItem: { value: 13, kanji: '十三匹', reading: 'じゅうさんびき' }
     },
     {
@@ -645,7 +645,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうむっぴき', isCorrect: false, reason: '使用「ろく」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '16匹讀作「じゅうろっぴき」，個位數6觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '16匹讀作「じゅうろっぴき」，個位數6觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 16, kanji: '十六匹', reading: 'じゅうろっぴき' }
     },
     {
@@ -658,7 +658,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうやっぴき', isCorrect: false, reason: '使用「はち」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '18匹讀作「じゅうはっぴき」，個位數8觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '18匹讀作「じゅうはっぴき」，個位數8觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 18, kanji: '十八匹', reading: 'じゅうはっぴき' }
     },
     {
@@ -672,7 +672,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'はたひき', isCorrect: false, reason: '使用「にじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '20匹讀作「にじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '20匹讀作「にじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 20, kanji: '二十匹', reading: 'にじゅっぴき' }
     },
     {
@@ -685,7 +685,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうみひき', isCorrect: false, reason: '使用「さん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '23匹讀作「にじゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '23匹讀作「にじゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字的讀法'] },
         sourceItem: { value: 23, kanji: '二十三匹', reading: 'にじゅうさんびき' }
     },
     {
@@ -699,7 +699,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'みそひき', isCorrect: false, reason: '使用「さんじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '30匹讀作「さんじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '30匹讀作「さんじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 30, kanji: '三十匹', reading: 'さんじゅっぴき' }
     },
     {
@@ -712,7 +712,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'いそひき', isCorrect: false, reason: '使用「ごじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '50匹讀作「ごじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '50匹讀作「ごじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 50, kanji: '五十匹', reading: 'ごじゅっぴき' }
     },
     {
@@ -741,7 +741,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にびき', isCorrect: false, reason: '2匹不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「トカゲ」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '爬蟲類の計數'] },
+        explanation: { correctRule: '「トカゲ」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '爬蟲類の計數'] },
         sourceItem: { value: 2, kanji: '二匹', reading: 'にひき' }
     },
     {
@@ -755,7 +755,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'さんぴき', isCorrect: false, reason: '3匹使用濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「カタツムリ」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '軟體動物の計數'] },
+        explanation: { correctRule: '「カタツムリ」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '軟體動物の計數'] },
         sourceItem: { value: 3, kanji: '三匹', reading: 'さんびき' }
     },
     {
@@ -768,7 +768,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'よんびき', isCorrect: false, reason: '4匹不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ヤモリ」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '爬蟲類の計數'] },
+        explanation: { correctRule: '「ヤモリ」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '爬蟲類の計數'] },
         sourceItem: { value: 4, kanji: '四匹', reading: 'よんひき' }
     },
     {
@@ -782,7 +782,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ごっぴき', isCorrect: false, reason: '5匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ホタル」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '昆蟲の計數'] },
+        explanation: { correctRule: '「ホタル」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '昆蟲の計數'] },
         sourceItem: { value: 5, kanji: '五匹', reading: 'ごひき' }
     },
     {
@@ -795,7 +795,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくびき', isCorrect: false, reason: '6匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「クワガタ」使用量詞「匹」。6匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」の使用', '促音化規則'] },
+        explanation: { correctRule: '「クワガタ」使用量詞「匹」。6匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」的使用', '促音化規則'] },
         sourceItem: { value: 6, kanji: '六匹', reading: 'ろっぴき' }
     },
     {
@@ -809,7 +809,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ななびき', isCorrect: false, reason: '7匹不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「魚」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '魚の計數'] },
+        explanation: { correctRule: '「魚」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '魚の計數'] },
         sourceItem: { value: 7, kanji: '七匹', reading: 'ななひき' }
     },
     {
@@ -822,7 +822,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'はちびき', isCorrect: false, reason: '8匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「セミ」使用量詞「匹」。8匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」の使用', '促音化規則'] },
+        explanation: { correctRule: '「セミ」使用量詞「匹」。8匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」的使用', '促音化規則'] },
         sourceItem: { value: 8, kanji: '八匹', reading: 'はっぴき' }
     },
     {
@@ -836,7 +836,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうびき', isCorrect: false, reason: '9匹不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ハムスター」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '寵物の計數'] },
+        explanation: { correctRule: '「ハムスター」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '寵物の計數'] },
         sourceItem: { value: 9, kanji: '九匹', reading: 'きゅうひき' }
     },
     {
@@ -849,7 +849,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうびき', isCorrect: false, reason: '10匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ゴキブリ」使用量詞「匹」。10匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」の使用', '促音化規則'] },
+        explanation: { correctRule: '「ゴキブリ」使用量詞「匹」。10匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」的使用', '促音化規則'] },
         sourceItem: { value: 10, kanji: '十匹', reading: 'じゅっぴき' }
     },
     {
@@ -863,7 +863,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうに', isCorrect: false, reason: '需要量詞。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ペンギン」是鳥類，使用量詞「羽」。注意區分「匹」和「羽」的使用。', relatedRules: ['量詞「羽」の使用', '鳥類の計數'] },
+        explanation: { correctRule: '「ペンギン」是鳥類，使用量詞「羽」。注意區分「匹」和「羽」的使用。', relatedRules: ['量詞「羽」的使用', '鳥類の計數'] },
         sourceItem: { value: 12, kanji: '十二羽', reading: 'じゅうにわ' }
     },
     {
@@ -876,7 +876,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'よんぴき', isCorrect: false, reason: '4匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「イモムシ」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '昆蟲の計數'] },
+        explanation: { correctRule: '「イモムシ」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '昆蟲の計數'] },
         sourceItem: { value: 4, kanji: '四匹', reading: 'よんひき' }
     },
     {
@@ -890,7 +890,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくびき', isCorrect: false, reason: '6匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「魚」使用量詞「匹」。6匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」の使用', '促音化規則'] },
+        explanation: { correctRule: '「魚」使用量詞「匹」。6匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」的使用', '促音化規則'] },
         sourceItem: { value: 6, kanji: '六匹', reading: 'ろっぴき' }
     },
     {
@@ -903,7 +903,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ごっぴき', isCorrect: false, reason: '5匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「バッタ」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '昆蟲の計數'] },
+        explanation: { correctRule: '「バッタ」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '昆蟲の計數'] },
         sourceItem: { value: 5, kanji: '五匹', reading: 'ごひき' }
     },
     {
@@ -917,7 +917,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ななぴき', isCorrect: false, reason: '7匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「うさぎ」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '寵物の計數'] },
+        explanation: { correctRule: '「うさぎ」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '寵物の計數'] },
         sourceItem: { value: 7, kanji: '七匹', reading: 'ななひき' }
     },
     {
@@ -930,7 +930,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'さんぴき', isCorrect: false, reason: '3匹使用濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「トンボ」使用量詞「匹」。3匹需要濁音化。', relatedRules: ['量詞「匹」の使用', '濁音化規則'] },
+        explanation: { correctRule: '「トンボ」使用量詞「匹」。3匹需要濁音化。', relatedRules: ['量詞「匹」的使用', '濁音化規則'] },
         sourceItem: { value: 3, kanji: '三匹', reading: 'さんびき' }
     },
     {
@@ -944,7 +944,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうびき', isCorrect: false, reason: '10匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「カイコ」使用量詞「匹」。10匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」の使用', '促音化規則'] },
+        explanation: { correctRule: '「カイコ」使用量詞「匹」。10匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」的使用', '促音化規則'] },
         sourceItem: { value: 10, kanji: '十匹', reading: 'じゅっぴき' }
     },
     {
@@ -957,7 +957,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にびき', isCorrect: false, reason: '2匹不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ダンゴムシ」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '昆蟲の計數'] },
+        explanation: { correctRule: '「ダンゴムシ」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '昆蟲の計數'] },
         sourceItem: { value: 2, kanji: '二匹', reading: 'にひき' }
     },
     {
@@ -971,7 +971,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'はちびき', isCorrect: false, reason: '8匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「うなぎ」使用量詞「匹」。8匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」の使用', '促音化規則'] },
+        explanation: { correctRule: '「うなぎ」使用量詞「匹」。8匹需要促音化+半濁音化。', relatedRules: ['量詞「匹」的使用', '促音化規則'] },
         sourceItem: { value: 8, kanji: '八匹', reading: 'はっぴき' }
     },
     {
@@ -984,7 +984,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'よんびき', isCorrect: false, reason: '4匹不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「モルモット」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '寵物の計數'] },
+        explanation: { correctRule: '「モルモット」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '寵物の計數'] },
         sourceItem: { value: 4, kanji: '四匹', reading: 'よんひき' }
     },
     {
@@ -998,7 +998,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうひとひき', isCorrect: false, reason: '使用音讀「いち」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '11匹讀作「じゅういっぴき」，個位數1觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '11匹讀作「じゅういっぴき」，個位數1觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 11, kanji: '十一匹', reading: 'じゅういっぴき' }
     },
 
@@ -1080,7 +1080,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうみびき', isCorrect: false, reason: '使用「さん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '23匹讀作「にじゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '23匹讀作「にじゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字的讀法'] },
         sourceItem: { value: 23, kanji: '二十三匹', reading: 'にじゅうさんびき' }
     },
     {
@@ -1094,7 +1094,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうよんびき', isCorrect: false, reason: '14匹不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '14匹讀作「じゅうよんひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '14匹讀作「じゅうよんひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 14, kanji: '十四匹', reading: 'じゅうよんひき' }
     },
     {
@@ -1107,7 +1107,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'いそひき', isCorrect: false, reason: '使用「じゅうご」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '15匹讀作「じゅうごひき」，無音變。', relatedRules: ['量詞「匹」の使用', '爬蟲類の計數'] },
+        explanation: { correctRule: '15匹讀作「じゅうごひき」，無音變。', relatedRules: ['量詞「匹」的使用', '爬蟲類の計數'] },
         sourceItem: { value: 15, kanji: '十五匹', reading: 'じゅうごひき' }
     },
     {
@@ -1121,7 +1121,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうななぴき', isCorrect: false, reason: '17匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '17匹讀作「じゅうななひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '17匹讀作「じゅうななひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 17, kanji: '十七匹', reading: 'じゅうななひき' }
     },
     {
@@ -1134,7 +1134,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうきゅうぴき', isCorrect: false, reason: '19匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '19匹讀作「じゅうきゅうひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '19匹讀作「じゅうきゅうひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 19, kanji: '十九匹', reading: 'じゅうきゅうひき' }
     },
     {
@@ -1148,7 +1148,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうひとひき', isCorrect: false, reason: '使用音讀「いち」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '21匹讀作「にじゅういっぴき」，個位數1觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '21匹讀作「にじゅういっぴき」，個位數1觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 21, kanji: '二十一匹', reading: 'にじゅういっぴき' }
     },
     {
@@ -1161,7 +1161,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にびき', isCorrect: false, reason: '2匹不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「フェレット」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '寵物の計數'] },
+        explanation: { correctRule: '「フェレット」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '寵物の計數'] },
         sourceItem: { value: 2, kanji: '二匹', reading: 'にひき' }
     },
     {
@@ -1175,7 +1175,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうむっぴき', isCorrect: false, reason: '使用「ろく」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '26匹讀作「にじゅうろっぴき」，個位數6觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '26匹讀作「にじゅうろっぴき」，個位數6觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 26, kanji: '二十六匹', reading: 'にじゅうろっぴき' }
     },
     {
@@ -1188,7 +1188,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ごっぴき', isCorrect: false, reason: '5匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「チンチラ」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '寵物の計數'] },
+        explanation: { correctRule: '「チンチラ」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '寵物の計數'] },
         sourceItem: { value: 5, kanji: '五匹', reading: 'ごひき' }
     },
     {
@@ -1202,7 +1202,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうやっぴき', isCorrect: false, reason: '使用「はち」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '28匹讀作「にじゅうはっぴき」，個位數8觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '28匹讀作「にじゅうはっぴき」，個位數8觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 28, kanji: '二十八匹', reading: 'にじゅうはっぴき' }
     },
     {
@@ -1215,7 +1215,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'よんびき', isCorrect: false, reason: '4匹不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ヘビ」使用量詞「匹」。', relatedRules: ['量詞「匹」の使用', '爬蟲類の計數'] },
+        explanation: { correctRule: '「ヘビ」使用量詞「匹」。', relatedRules: ['量詞「匹」的使用', '爬蟲類の計數'] },
         sourceItem: { value: 4, kanji: '四匹', reading: 'よんひき' }
     },
     {
@@ -1229,7 +1229,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅうみびき', isCorrect: false, reason: '使用「さん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '33匹讀作「さんじゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '33匹讀作「さんじゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字的讀法'] },
         sourceItem: { value: 33, kanji: '三十三匹', reading: 'さんじゅうさんびき' }
     },
     {
@@ -1242,7 +1242,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'よんじゅうびき', isCorrect: false, reason: '40匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '40匹讀作「よんじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '40匹讀作「よんじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 40, kanji: '四十匹', reading: 'よんじゅっぴき' }
     },
     {
@@ -1256,7 +1256,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくじゅうびき', isCorrect: false, reason: '60匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '60匹讀作「ろくじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '60匹讀作「ろくじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 60, kanji: '六十匹', reading: 'ろくじゅっぴき' }
     },
     {
@@ -1269,7 +1269,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'ななじゅうびき', isCorrect: false, reason: '70匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '70匹讀作「ななじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '70匹讀作「ななじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 70, kanji: '七十匹', reading: 'ななじゅっぴき' }
     },
     {
@@ -1283,7 +1283,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'はちじゅうびき', isCorrect: false, reason: '80匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '80匹讀作「はちじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '80匹讀作「はちじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 80, kanji: '八十匹', reading: 'はちじゅっぴき' }
     },
     {
@@ -1296,7 +1296,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうじゅうびき', isCorrect: false, reason: '90匹使用促音+半濁音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '90匹讀作「きゅうじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '90匹讀作「きゅうじゅっぴき」，十位數10觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 90, kanji: '九十匹', reading: 'きゅうじゅっぴき' }
     },
     {
@@ -1310,7 +1310,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうに', isCorrect: false, reason: '需要量詞。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '22匹讀作「にじゅうにひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '22匹讀作「にじゅうにひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 22, kanji: '二十二匹', reading: 'にじゅうにひき' }
     },
     {
@@ -1323,7 +1323,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうよんびき', isCorrect: false, reason: '24匹不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '24匹讀作「にじゅうよんひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '24匹讀作「にじゅうよんひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 24, kanji: '二十四匹', reading: 'にじゅうよんひき' }
     },
     {
@@ -1337,7 +1337,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅういつひき', isCorrect: false, reason: '使用「ご」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '25匹讀作「にじゅうごひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '25匹讀作「にじゅうごひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 25, kanji: '二十五匹', reading: 'にじゅうごひき' }
     },
     {
@@ -1350,7 +1350,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうななぴき', isCorrect: false, reason: '27匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '27匹讀作「にじゅうななひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '27匹讀作「にじゅうななひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 27, kanji: '二十七匹', reading: 'にじゅうななひき' }
     },
     {
@@ -1364,7 +1364,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうきゅうぴき', isCorrect: false, reason: '29匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '29匹讀作「にじゅうきゅうひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '29匹讀作「にじゅうきゅうひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 29, kanji: '二十九匹', reading: 'にじゅうきゅうひき' }
     },
 
@@ -1378,7 +1378,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅうひとひき', isCorrect: false, reason: '使用音讀「いち」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '31匹讀作「さんじゅういっぴき」，個位數1觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '31匹讀作「さんじゅういっぴき」，個位數1觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 31, kanji: '三十一匹', reading: 'さんじゅういっぴき' }
     },
     {
@@ -1392,7 +1392,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'みそにひき', isCorrect: false, reason: '使用「さんじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '32匹讀作「さんじゅうにひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '32匹讀作「さんじゅうにひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 32, kanji: '三十二匹', reading: 'さんじゅうにひき' }
     },
     {
@@ -1405,7 +1405,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅうよんびき', isCorrect: false, reason: '34匹不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '34匹讀作「さんじゅうよんひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '34匹讀作「さんじゅうよんひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 34, kanji: '三十四匹', reading: 'さんじゅうよんひき' }
     },
     {
@@ -1419,7 +1419,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'みそいつひき', isCorrect: false, reason: '使用「さんじゅうご」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '35匹讀作「さんじゅうごひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '35匹讀作「さんじゅうごひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 35, kanji: '三十五匹', reading: 'さんじゅうごひき' }
     },
     {
@@ -1432,7 +1432,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅうむっぴき', isCorrect: false, reason: '使用「ろく」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '36匹讀作「さんじゅうろっぴき」，個位數6觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '36匹讀作「さんじゅうろっぴき」，個位數6觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 36, kanji: '三十六匹', reading: 'さんじゅうろっぴき' }
     },
     {
@@ -1446,7 +1446,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅうななぴき', isCorrect: false, reason: '37匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '37匹讀作「さんじゅうななひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '37匹讀作「さんじゅうななひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 37, kanji: '三十七匹', reading: 'さんじゅうななひき' }
     },
     {
@@ -1459,7 +1459,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅうやっぴき', isCorrect: false, reason: '使用「はち」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '38匹讀作「さんじゅうはっぴき」，個位數8觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '38匹讀作「さんじゅうはっぴき」，個位數8觸發促音化+半濁音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 38, kanji: '三十八匹', reading: 'さんじゅうはっぴき' }
     },
     {
@@ -1473,7 +1473,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅうきゅうぴき', isCorrect: false, reason: '39匹無音變。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '39匹讀作「さんじゅうきゅうひき」，無音變。', relatedRules: ['量詞「匹」の使用', '複合數字'] },
+        explanation: { correctRule: '39匹讀作「さんじゅうきゅうひき」，無音變。', relatedRules: ['量詞「匹」的使用', '複合數字'] },
         sourceItem: { value: 39, kanji: '三十九匹', reading: 'さんじゅうきゅうひき' }
     },
     {
@@ -1486,7 +1486,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'しじゅうさんびき', isCorrect: false, reason: '使用「よん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '43匹讀作「よんじゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '43匹讀作「よんじゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字的讀法'] },
         sourceItem: { value: 43, kanji: '四十三匹', reading: 'よんじゅうさんびき' }
     },
     {
@@ -1500,7 +1500,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'いそみびき', isCorrect: false, reason: '使用「ごじゅうさん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '53匹讀作「ごじゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '53匹讀作「ごじゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字的讀法'] },
         sourceItem: { value: 53, kanji: '五十三匹', reading: 'ごじゅうさんびき' }
     },
 
@@ -1514,7 +1514,7 @@ export const smallAnimalQuestions: DatesPracticeQuestion[] = [
             { text: 'むじゅうさんびき', isCorrect: false, reason: '使用「ろくじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '63匹讀作「ろくじゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '63匹讀作「ろくじゅうさんびき」，個位數3觸發濁音化。', relatedRules: ['濁音化規則', '複合數字的讀法'] },
         sourceItem: { value: 63, kanji: '六十三匹', reading: 'ろくじゅうさんびき' }
     },
 

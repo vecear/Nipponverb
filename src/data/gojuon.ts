@@ -1,4 +1,9 @@
 // 五十音 (Gojūon) - Hiragana and Katakana
+
+import { StructuredExplanation } from './questions/types'
+import { formatStructuredExplanation } from '../utils/questionAdapters'
+import { stripStemFurigana } from '../utils/furiganaUtils'
+
 export const hiraganaData = [
     // あ行 (A-row)
     { char: 'あ', romaji: 'a', row: 'a' },
@@ -207,6 +212,109 @@ export const katakanaData = [
 ]
 
 
+// ─── Confusion map & helpers ───
+
+/** Row display names (Chinese) */
+const ROW_NAMES: Record<string, string> = {
+    a: 'あ行（母音）', ka: 'か行（清音）', sa: 'さ行（清音）', ta: 'た行（清音）',
+    na: 'な行', ha: 'は行', ma: 'ま行', ya: 'や行', ra: 'ら行', wa: 'わ行',
+    ga: 'が行（濁音）', za: 'ざ行（濁音）', da: 'だ行（濁音）',
+    ba: 'ば行（濁音）', pa: 'ぱ行（半濁音）',
+    kya: 'きゃ行（拗音）', sha: 'しゃ行（拗音）', cha: 'ちゃ行（拗音）',
+    nya: 'にゃ行（拗音）', hya: 'ひゃ行（拗音）', mya: 'みゃ行（拗音）', rya: 'りゃ行（拗音）',
+    gya: 'ぎゃ行（拗音濁音）', ja: 'じゃ行（拗音濁音）',
+    bya: 'びゃ行（拗音濁音）', pya: 'ぴゃ行（拗音半濁音）',
+}
+
+/** Commonly confused hiragana pairs with reasons */
+const HIRAGANA_CONFUSIONS: Record<string, { similar: string; note: string }[]> = {
+    'は': [{ similar: 'ほ', note: '字形相似，注意下半部差異' }],
+    'ほ': [{ similar: 'は', note: '字形相似，注意下半部差異' }],
+    'ね': [{ similar: 'れ', note: '右側筆畫不同' }, { similar: 'わ', note: '右側收尾方式不同' }],
+    'れ': [{ similar: 'ね', note: '右側筆畫不同' }],
+    'め': [{ similar: 'ぬ', note: '都有圈但收尾不同' }],
+    'ぬ': [{ similar: 'め', note: '都有圈但收尾不同' }],
+    'わ': [{ similar: 'ね', note: '右側收尾方式不同' }, { similar: 'れ', note: '字形相似' }],
+    'さ': [{ similar: 'き', note: '筆畫數不同（さ=3 畫，き=4 畫）' }],
+    'き': [{ similar: 'さ', note: '筆畫數不同' }],
+    'う': [{ similar: 'ら', note: '字形相似但角度不同' }],
+    'ら': [{ similar: 'う', note: '字形相似但角度不同' }],
+    'し': [{ similar: 'じ', note: 'じ 是し的濁音（加兩點）' }],
+    'す': [{ similar: 'ず', note: 'ず 是す的濁音（加兩點）' }],
+}
+
+/** Commonly confused katakana pairs with reasons */
+const KATAKANA_CONFUSIONS: Record<string, { similar: string; note: string }[]> = {
+    'シ': [{ similar: 'ツ', note: '筆畫方向不同：シ橫向、ツ縱向' }],
+    'ツ': [{ similar: 'シ', note: '筆畫方向不同：ツ縱向、シ橫向' }],
+    'ソ': [{ similar: 'ン', note: '筆畫方向不同：ソ縱向、ン橫向' }],
+    'ン': [{ similar: 'ソ', note: '筆畫方向不同：ン橫向、ソ縱向' }],
+    'ウ': [{ similar: 'ワ', note: 'ウ有上面一橫，ワ沒有' }],
+    'ワ': [{ similar: 'ウ', note: 'ワ沒有上面一橫' }],
+    'ヌ': [{ similar: 'ス', note: '字形相似但交叉方式不同' }],
+    'ス': [{ similar: 'ヌ', note: '字形相似但交叉方式不同' }],
+    'ク': [{ similar: 'タ', note: 'タ多一橫' }],
+    'タ': [{ similar: 'ク', note: 'ク少一橫' }],
+    'コ': [{ similar: 'ユ', note: '開口方向不同' }],
+    'ユ': [{ similar: 'コ', note: '開口方向不同' }],
+}
+
+/** Special romanization notes for certain characters */
+const SPECIAL_NOTES: Record<string, string> = {
+    'し': '羅馬字是「shi」而非「si」',
+    'ち': '羅馬字是「chi」而非「ti」',
+    'つ': '羅馬字是「tsu」而非「tu」',
+    'ふ': '羅馬字是「fu」而非「hu」',
+    'は': '作為助詞時讀作「wa」',
+    'へ': '作為助詞時讀作「e」',
+    'を': '作為助詞使用，讀作「o」',
+    'じ': '與「ぢ」同音，現代日語多用「じ」',
+    'ず': '與「づ」同音，現代日語多用「ず」',
+    'ぢ': '與「じ」同音，僅在特定場合使用（如「鼻血{はなぢ}」）',
+    'づ': '與「ず」同音，僅在特定場合使用（如「続{つづ}く」）',
+    'シ': '與「ツ」字形易混淆，注意筆畫方向',
+    'ツ': '與「シ」字形易混淆，注意筆畫方向',
+    'ソ': '與「ン」字形易混淆，注意筆畫方向',
+    'ン': '與「ソ」字形易混淆，注意筆畫方向',
+}
+
+function getRowName(row: string): string {
+    return ROW_NAMES[row] || `${row}行`
+}
+
+function getSimilarChars(
+    target: typeof hiraganaData[0],
+    type: 'hiragana' | 'katakana',
+): { char: string; romaji: string; note: string }[] {
+    const confusionMap = type === 'hiragana' ? HIRAGANA_CONFUSIONS : KATAKANA_CONFUSIONS
+    const confusions = confusionMap[target.char]
+    if (!confusions) return []
+
+    const data = type === 'hiragana' ? hiraganaData : katakanaData
+    return confusions.map(c => {
+        const found = data.find(d => d.char === c.similar)
+        return found ? { char: found.char, romaji: found.romaji, note: c.note } : null
+    }).filter((x): x is { char: string; romaji: string; note: string } => x !== null)
+}
+
+function getCommonGojuonMistakes(
+    target: typeof hiraganaData[0],
+    type: 'hiragana' | 'katakana',
+): string[] | undefined {
+    const mistakes: string[] = []
+    const specialNote = SPECIAL_NOTES[target.char]
+    if (specialNote) {
+        mistakes.push(specialNote)
+    }
+
+    const similars = getSimilarChars(target, type)
+    for (const s of similars) {
+        mistakes.push(`○「${target.char}」= ${target.romaji} / ×「${s.char}」= ${s.romaji} → ${s.note}`)
+    }
+
+    return mistakes.length > 0 ? mistakes : undefined
+}
+
 // Helper: generate a question for a specific character
 function generateGojuonForChar(
     type: 'hiragana' | 'katakana',
@@ -214,50 +322,82 @@ function generateGojuonForChar(
     questionType: 'char-to-romaji' | 'romaji-to-char'
 ) {
     const data = type === 'hiragana' ? hiraganaData : katakanaData
-    const distractors = data
-        .filter(item => item.char !== target.char)
+    const typeName = type === 'hiragana' ? '平假名' : '片假名'
+
+    // Prefer similar chars as distractors for more meaningful practice
+    const similarChars = getSimilarChars(target, type)
+    const similarCharSet = new Set(similarChars.map(s => s.char))
+
+    // Pick from similar chars first, then fill randomly
+    const similarDistractors = data.filter(item => similarCharSet.has(item.char))
+    const otherDistractors = data
+        .filter(item => item.char !== target.char && !similarCharSet.has(item.char))
         .sort(() => Math.random() - 0.5)
-        .slice(0, 3)
+    const allDistractors = [...similarDistractors, ...otherDistractors].slice(0, 3)
+
+    const structured: StructuredExplanation = {
+        keyPoint: `${typeName}「${target.char}」的辨識`,
+        analysis: `「${target.char}」屬於${getRowName(target.row)}，讀作「${target.romaji}」。`,
+        comparisons: getSimilarChars(target, type).map(
+            s => `${s.char}（${s.romaji}）：${s.note}`
+        ),
+        commonMistakes: getCommonGojuonMistakes(target, type),
+    }
+
+    // Remove empty comparisons
+    if (!structured.comparisons?.length) delete structured.comparisons
 
     if (questionType === 'char-to-romaji') {
         const correct = target.romaji
-        const shuffledOptions = [correct, ...distractors.map(d => d.romaji)].sort(() => Math.random() - 0.5)
-        const explanationText = `「${target.char}」の読{よ}みは「${target.romaji}」です。（${target.row}行{ぎょう}）`
+        const shuffledOptions = [correct, ...allDistractors.map(d => d.romaji)].sort(() => Math.random() - 0.5)
         return {
             id: `gojuon_${type}_${target.romaji}_c2r`,
-            stem: `「${target.char}」の読{よ}み方{かた}は何{なん}ですか？`,
+            stem: stripStemFurigana(`「${target.char}」の読{よ}み方{かた}は何{なん}ですか？`),
             correct,
             options: shuffledOptions,
-            explanation: explanationText,
+            explanation: `「${target.char}」的讀音是「${target.romaji}」。（${getRowName(target.row)}）`,
             detailedExplanation: {
-                correctRule: explanationText,
-                distractors: shuffledOptions.map(opt => ({
-                    text: opt,
-                    reason: opt === correct
-                        ? `正解{せいかい}！「${target.char}」の読{よ}みは「${target.romaji}」です。`
-                        : `不正解{ふせいかい}：「${opt}」は他{ほか}の仮名{かな}の読{よ}みです。`,
-                })),
+                correctRule: formatStructuredExplanation(structured),
+                distractors: shuffledOptions.map(opt => {
+                    if (opt === correct) {
+                        return { text: opt, reason: `正確！「${target.char}」（${getRowName(target.row)}）的讀音。` }
+                    }
+                    const match = data.find(d => d.romaji === opt)
+                    return {
+                        text: opt,
+                        reason: match
+                            ? `錯誤：「${opt}」是「${match.char}」（${getRowName(match.row)}）的讀音。`
+                            : `錯誤：這不是「${target.char}」的讀音。`,
+                    }
+                }),
+                structured,
             },
             level: 'N5' as const,
         }
     } else {
         const correct = target.char
-        const shuffledOptions = [correct, ...distractors.map(d => d.char)].sort(() => Math.random() - 0.5)
-        const explanationText = `「${target.romaji}」は「${target.char}」と書{か}きます。（${target.row}行{ぎょう}）`
+        const shuffledOptions = [correct, ...allDistractors.map(d => d.char)].sort(() => Math.random() - 0.5)
         return {
             id: `gojuon_${type}_${target.romaji}_r2c`,
-            stem: `「${target.romaji}」を表{あらわ}す文字{もじ}はどれですか？`,
+            stem: stripStemFurigana(`「${target.romaji}」を表{あらわ}す文字{もじ}はどれですか？`),
             correct,
             options: shuffledOptions,
-            explanation: explanationText,
+            explanation: `「${target.romaji}」寫作「${target.char}」。（${getRowName(target.row)}）`,
             detailedExplanation: {
-                correctRule: explanationText,
-                distractors: shuffledOptions.map(opt => ({
-                    text: opt,
-                    reason: opt === correct
-                        ? `正解{せいかい}！「${target.romaji}」は「${target.char}」です。`
-                        : `不正解{ふせいかい}：この仮名{かな}の読{よ}みは「${target.romaji}」ではありません。`,
-                })),
+                correctRule: formatStructuredExplanation(structured),
+                distractors: shuffledOptions.map(opt => {
+                    if (opt === correct) {
+                        return { text: opt, reason: `正確！「${target.romaji}」就是「${target.char}」。` }
+                    }
+                    const match = data.find(d => d.char === opt)
+                    return {
+                        text: opt,
+                        reason: match
+                            ? `錯誤：「${match.char}」的讀音是「${match.romaji}」，不是「${target.romaji}」。`
+                            : `錯誤：這不是「${target.romaji}」對應的假名。`,
+                    }
+                }),
+                structured,
             },
             level: 'N5' as const,
         }

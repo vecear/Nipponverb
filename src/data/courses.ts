@@ -17,8 +17,8 @@ const COURSE_IMAGES = {
     verbs: '/assets/icons/practice/practice-verbs.png',
     vocabulary: '/assets/icons/practice/practice-vocabulary.png',
     grammar: '/assets/icons/practice/practice-grammar.png',
-    idioms: '/assets/icons/courses/course-idioms.png',
-    dateCounters: '/assets/icons/courses/course-date-counters.png',
+    // idioms: '/assets/icons/courses/course-idioms.png', // 暫無圖片
+    dateCounters: '/assets/icons/practice/practice-dates.png', // 使用練習圖示
 }
 
 export const courses: Course[] = [
@@ -60,7 +60,7 @@ export const courses: Course[] = [
         path: '/idioms',
         color: 'from-blue-500 to-cyan-500',
         emoji: '💬',
-        image: COURSE_IMAGES.idioms,
+        // image: COURSE_IMAGES.idioms,
     },
     {
         id: 'dateCounters',

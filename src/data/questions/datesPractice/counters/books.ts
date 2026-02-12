@@ -13,19 +13,19 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         subcategory: 'books',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「一冊」的正確讀音是？',
+        stem: '「一冊」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一冊」的正確讀音是？',
         options: [
-            { text: 'いっさつ', isCorrect: true, reason: '正確{せいかく}！「一冊{いっさつ}」發生{はっせい}促音化{そくおんか}，讀作{どくさ}「いっさつ」。' },
-            { text: 'いちさつ', isCorrect: false, reason: '陷阱{かんけい}！「一{いち}」的「ち」在「さ行{ぎょう}」前{まえ}變為{へんい}促音{そくおん}「っ」。' },
-            { text: 'ひとさつ', isCorrect: false, reason: '量詞{りょうし}「冊{さつ}」使用{しよう}音讀{おんどく}數字{すうじ}。' },
-            { text: 'いちざつ', isCorrect: false, reason: '「冊{さつ}」讀作{どくさ}「さつ」，不發生{ふはっせい}濁音化{だくおんか}。' }
+            { text: 'いっさつ', isCorrect: true, reason: '正確！「一冊{いっさつ}」發生促音化，讀作「いっさつ」。' },
+            { text: 'いちさつ', isCorrect: false, reason: '陷阱！「一{いち}」的「ち」在「さ行」前變為促音「っ」。' },
+            { text: 'ひとさつ', isCorrect: false, reason: '量詞「冊{さつ}」使用音讀數字。' },
+            { text: 'いちざつ', isCorrect: false, reason: '「冊{さつ}」讀作「さつ」，不發生濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「一冊{いっさつ}」讀作{どくさ}「いっさつ」。「一{いち}」在「さ行{ぎょう}」量詞{りょうし}前{まえ}發生{はっせい}促音化{そくおんか}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。數字{すうじ}1搭配{たいはい}「さ行{ぎょう}」開頭{あたま}的量詞{りょうし}時{とき}，「ち」變為{へんい}促音{そくおん}「っ」。',
-            relatedRules: ['促音化{そくおんか}規則{きそく}', '「さ行{ぎょう}」量詞{りょうし}の音變{おんへん}']
+            correctRule: '「一冊{いっさつ}」讀作「いっさつ」。「一{いち}」在「さ行」量詞前發生促音化。',
+            trapExplanation: '這是陷阱題。數字1搭配「さ行」開頭的量詞時，「ち」變為促音「っ」。',
+            relatedRules: ['促音化規則', '「さ行」量詞的音變']
         },
         sourceItem: { value: 1, kanji: '一冊', reading: 'いっさつ' }
     },
@@ -38,16 +38,16 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         stem: '本を＿＿読みました。',
         stem_zh: '我讀了一本書。',
         options: [
-            { text: 'いちさつ', isCorrect: false, reason: '陷阱{かんけい}！1冊{いっさつ}需要{じゅよう}促音化{そくおんか}。' },
-            { text: 'いっさつ', isCorrect: true, reason: '正確{せいかく}！「本{ほん}を一冊{いっさつ}読{よ}みました」表示{ひょうじ}「讀了{よみました}一本{いっさつ}書{ほん}」。' },
-            { text: 'ひとつ', isCorrect: false, reason: '書籍{しょせき}應使用{しよう}「冊{さつ}」而非{いがい}「つ」。' },
-            { text: 'いっぽん', isCorrect: false, reason: '「本{ほん}」用於{もちいる}細長物{ほそながもの}，書籍{しょせき}用{もちいる}「冊{さつ}」。' }
+            { text: 'いちさつ', isCorrect: false, reason: '陷阱！一冊{いっさつ}需要促音化。' },
+            { text: 'いっさつ', isCorrect: true, reason: '正確！「本を一冊{いっさつ}読みました」表示「讀了一本書」。' },
+            { text: 'ひとつ', isCorrect: false, reason: '書籍應使用「冊{さつ}」而非「つ」。' },
+            { text: 'いっぽん', isCorrect: false, reason: '「本{ほん}」用於細長物，書籍用「冊{さつ}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「本{ほん}」（書{ほん}）使用{しよう}量詞{りょうし}「冊{さつ}」來計數{けいすう}。',
-            trapExplanation: '1冊{いっさつ}固定{こてい}讀む{よむ}「いっさつ」，「さ行{ぎょう}」量詞{りょうし}的促音化{そくおんか}規則{きそく}。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '讀書{どくしょ}表達{ひょうたつ}']
+            correctRule: '「本」（書）使用量詞「冊{さつ}」來計數。',
+            trapExplanation: '一冊{いっさつ}固定讀「いっさつ」，「さ行」量詞的促音化規則。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '讀書表達']
         },
         sourceItem: { value: 1, kanji: '一冊', reading: 'いっさつ' }
     },
@@ -64,15 +64,15 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿だけです。（只有一本）'
         },
         options: [
-            { text: 'いちさつ', isCorrect: false, reason: '1冊{いっさつ}需要{じゅよう}促音化{そくおんか}。' },
-            { text: 'いっさつ', isCorrect: true, reason: '正確{せいかく}！只讀了{よみました}一本{いっさつ}書{ほん}。' },
-            { text: 'ひとつ', isCorrect: false, reason: '書籍{しょせき}用{もちいる}「冊{さつ}」。' },
-            { text: 'いっぽん', isCorrect: false, reason: '書籍{しょせき}用{もちいる}「冊{さつ}」不是「本{ほん}」。' }
+            { text: 'いちさつ', isCorrect: false, reason: '一冊{いっさつ}需要促音化。' },
+            { text: 'いっさつ', isCorrect: true, reason: '正確！只讀了一本書。' },
+            { text: 'ひとつ', isCorrect: false, reason: '書籍用「冊{さつ}」。' },
+            { text: 'いっぽん', isCorrect: false, reason: '書籍用「冊{さつ}」不是「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '回答{かいとう}「何冊{なんさつ}」時{とき}，使用{しよう}「〜冊{さつ}」來回答{かいとう}。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '何冊{なんさつ}の質問{しつもん}與回答{かいとう}']
+            correctRule: '回答「何冊{なんさつ}」時，使用「〜冊{さつ}」來回答。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '何冊{なんさつ}的質問與回答']
         },
         sourceItem: { value: 1, kanji: '一冊', reading: 'いっさつ' }
     },
@@ -84,18 +84,18 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         subcategory: 'books',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二冊」的正確讀音是？',
+        stem: '「二冊」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二冊」的正確讀音是？',
         options: [
-            { text: 'にさつ', isCorrect: true, reason: '正確{せいかく}！「二冊{にさつ}」無音變{むおんへん}，讀作{どくさ}「にさつ」。' },
-            { text: 'にっさつ', isCorrect: false, reason: '2冊{にさつ}不發生{ふはっせい}促音化{そくおんか}。' },
-            { text: 'ふたさつ', isCorrect: false, reason: '量詞{りょうし}「冊{さつ}」使用{しよう}音讀{おんどく}數字{すうじ}「に」。' },
-            { text: 'にざつ', isCorrect: false, reason: '「冊{さつ}」不發生{ふはっせい}濁音化{だくおんか}。' }
+            { text: 'にさつ', isCorrect: true, reason: '正確！「二冊{にさつ}」無音變，讀作「にさつ」。' },
+            { text: 'にっさつ', isCorrect: false, reason: '2冊{にさつ}不發生促音化。' },
+            { text: 'ふたさつ', isCorrect: false, reason: '量詞「冊{さつ}」使用音讀數字「に」。' },
+            { text: 'にざつ', isCorrect: false, reason: '「冊{さつ}」不發生濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二冊{にさつ}」讀作{どくさ}「にさつ」，無音變{むおんへん}。數字{すうじ}2不觸發{しょうはつ}促音化{そくおんか}。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の音變{おんへん}規則{きそく}', '無音變{むおんへん}の數字{すうじ}']
+            correctRule: '「二冊{にさつ}」讀作「にさつ」，無音變。數字2不觸發促音化。',
+            relatedRules: ['量詞「冊{さつ}」的音變規則', '無音變の數字']
         },
         sourceItem: { value: 2, kanji: '二冊', reading: 'にさつ' }
     },
@@ -108,15 +108,15 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         stem: 'ノートを＿＿買いました。',
         stem_zh: '我買了兩本筆記本。',
         options: [
-            { text: 'にっさつ', isCorrect: false, reason: '2冊{にさつ}不促音化{ふそくおんか}。' },
-            { text: 'にさつ', isCorrect: true, reason: '正確{せいかく}！「ノートを二冊{にさつ}」表示{ひょうじ}「兩本{にさつ}筆記本{ノート}」。' },
-            { text: 'ふたつ', isCorrect: false, reason: '筆記本{ノート}是成冊{せいさつ}的，用{もちいる}「冊{さつ}」。' },
-            { text: 'にまい', isCorrect: false, reason: '「枚{まい}」用於{もちいる}扁平物{へんぺいぶつ}。' }
+            { text: 'にっさつ', isCorrect: false, reason: '2冊{にさつ}不促音化。' },
+            { text: 'にさつ', isCorrect: true, reason: '正確！「ノートを二冊{にさつ}」表示「兩本筆記本」。' },
+            { text: 'ふたつ', isCorrect: false, reason: '筆記本是成冊的，用「冊{さつ}」。' },
+            { text: 'にまい', isCorrect: false, reason: '「枚{まい}」用於扁平物。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ノート」（筆記本{ノート}）是成冊{せいさつ}的，使用{しよう}量詞{りょうし}「冊{さつ}」。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '文具{ぶんぐ}の計數{けいすう}']
+            correctRule: '「ノート」（筆記本）是成冊的，使用量詞「冊{さつ}」。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '文具の計數']
         },
         sourceItem: { value: 2, kanji: '二冊', reading: 'にさつ' }
     },
@@ -133,15 +133,15 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿必要です。（兩本）'
         },
         options: [
-            { text: 'にっさつ', isCorrect: false, reason: '2冊{にさつ}不促音化{ふそくおんか}。' },
-            { text: 'にさつ', isCorrect: true, reason: '正確{せいかく}！需要{ひつよう}兩本{にさつ}教科書{きょうかしょ}。' },
-            { text: 'ふたつ', isCorrect: false, reason: '教科書{きょうかしょ}用{もちいる}「冊{さつ}」。' },
-            { text: 'にまい', isCorrect: false, reason: '教科書{きょうかしょ}不是扁平物{へんぺいぶつ}。' }
+            { text: 'にっさつ', isCorrect: false, reason: '2冊{にさつ}不促音化。' },
+            { text: 'にさつ', isCorrect: true, reason: '正確！需要兩本教科書。' },
+            { text: 'ふたつ', isCorrect: false, reason: '教科書用「冊{さつ}」。' },
+            { text: 'にまい', isCorrect: false, reason: '教科書不是扁平物。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「教科書{きょうかしょ}」使用{しよう}量詞{りょうし}「冊{さつ}」。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '學校{がっこう}用品{ようひん}']
+            correctRule: '「教科書」使用量詞「冊{さつ}」。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '學校用品']
         },
         sourceItem: { value: 2, kanji: '二冊', reading: 'にさつ' }
     },
@@ -153,18 +153,18 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         subcategory: 'books',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「三冊」的正確讀音是？',
+        stem: '「三冊」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三冊」的正確讀音是？',
         options: [
-            { text: 'さんさつ', isCorrect: true, reason: '正確{せいかく}！「三冊{さんさつ}」無音變{むおんへん}，讀作{どくさ}「さんさつ」。' },
-            { text: 'さんざつ', isCorrect: false, reason: '「冊{さつ}」不發生{ふはっせい}濁音化{だくおんか}。' },
-            { text: 'みさつ', isCorrect: false, reason: '量詞{りょうし}「冊{さつ}」使用{しよう}音讀{おんどく}數字{すうじ}「さん」。' },
-            { text: 'さっさつ', isCorrect: false, reason: '3冊{さんさつ}不發生{ふはっせい}促音化{そくおんか}。' }
+            { text: 'さんさつ', isCorrect: true, reason: '正確！「三冊{さんさつ}」無音變，讀作「さんさつ」。' },
+            { text: 'さんざつ', isCorrect: false, reason: '「冊{さつ}」不發生濁音化。' },
+            { text: 'みさつ', isCorrect: false, reason: '量詞「冊{さつ}」使用音讀數字「さん」。' },
+            { text: 'さっさつ', isCorrect: false, reason: '3冊{さんさつ}不發生促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三冊{さんさつ}」讀作{どくさ}「さんさつ」，無音變{むおんへん}。注意{ちゅうい}與「三本{さんぼん}」不同{ちがい}，「冊{さつ}」不濁音化{ふだくおんか}。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の音變{おんへん}規則{きそく}', '「冊{さつ}」vs「本{ほん}」の音變{おんへん}差異{さい}']
+            correctRule: '「三冊{さんさつ}」讀作「さんさつ」，無音變。注意與「三本{さんぼん}」不同，「冊{さつ}」不濁音化。',
+            relatedRules: ['量詞「冊{さつ}」的音變規則', '「冊{さつ}」vs「本{ほん}」的音變差異']
         },
         sourceItem: { value: 3, kanji: '三冊', reading: 'さんさつ' }
     },
@@ -177,16 +177,16 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         stem: '雑誌を＿＿持っています。',
         stem_zh: '我有三本雜誌。',
         options: [
-            { text: 'さんぼん', isCorrect: false, reason: '陷阱{かんけい}！雜誌{ざっし}是成冊{せいさつ}的，用{もちいる}「冊{さつ}」不是「本{ほん}」。' },
-            { text: 'さんさつ', isCorrect: true, reason: '正確{せいかく}！「雑誌{ざっし}を三冊{さんさつ}」表示{ひょうじ}「三本{さんさつ}雜誌{ざっし}」。' },
-            { text: 'さんざつ', isCorrect: false, reason: '「冊{さつ}」不發生{ふはっせい}濁音化{だくおんか}。' },
-            { text: 'みっつ', isCorrect: false, reason: '雜誌{ざっし}是成冊{せいさつ}的，應使用{しよう}「冊{さつ}」。' }
+            { text: 'さんぼん', isCorrect: false, reason: '陷阱！雜誌是成冊的，用「冊{さつ}」不是「本{ほん}」。' },
+            { text: 'さんさつ', isCorrect: true, reason: '正確！「雑誌を三冊{さんさつ}」表示「三本雜誌」。' },
+            { text: 'さんざつ', isCorrect: false, reason: '「冊{さつ}」不發生濁音化。' },
+            { text: 'みっつ', isCorrect: false, reason: '雜誌是成冊的，應使用「冊{さつ}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「雑誌{ざっし}」（雜誌{ざっし}）是成冊{せいさつ}的，使用{しよう}量詞{りょうし}「冊{さつ}」。',
-            trapExplanation: '即使{たとえ}數字{すうじ}3搭配{たいはい}「本{ほん}」會{だろう}濁音化{だくおんか}，「冊{さつ}」不受{うけない}影響{えいきょう}。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '出版物{しゅっぱんぶつ}の計數{けいすう}']
+            correctRule: '「雑誌」（雜誌）是成冊的，使用量詞「冊{さつ}」。',
+            trapExplanation: '即使數字3搭配「本{ほん}」會濁音化，「冊{さつ}」不受影響。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '出版物の計數']
         },
         sourceItem: { value: 3, kanji: '三冊', reading: 'さんさつ' }
     },
@@ -203,15 +203,15 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿あります。（三本）'
         },
         options: [
-            { text: 'さんぼん', isCorrect: false, reason: '漫畫{まんが}用{もちいる}「冊{さつ}」。' },
-            { text: 'さんさつ', isCorrect: true, reason: '正確{せいかく}！有三本{さんさつ}漫畫{まんが}。' },
-            { text: 'さんざつ', isCorrect: false, reason: '「冊{さつ}」不濁音化{ふだくおんか}。' },
-            { text: 'みっつ', isCorrect: false, reason: '漫畫{まんが}是成冊{せいさつ}的，用{もちいる}「冊{さつ}」。' }
+            { text: 'さんぼん', isCorrect: false, reason: '漫畫用「冊{さつ}」。' },
+            { text: 'さんさつ', isCorrect: true, reason: '正確！有三本漫畫。' },
+            { text: 'さんざつ', isCorrect: false, reason: '「冊{さつ}」不濁音化。' },
+            { text: 'みっつ', isCorrect: false, reason: '漫畫是成冊的，用「冊{さつ}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「漫画{まんが}」（漫畫{まんが}）是成冊{せいさつ}的，使用{しよう}量詞{りょうし}「冊{さつ}」。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '出版物{しゅっぱんぶつ}の計數{けいすう}']
+            correctRule: '「漫画」（漫畫）是成冊的，使用量詞「冊{さつ}」。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '出版物の計數']
         },
         sourceItem: { value: 3, kanji: '三冊', reading: 'さんさつ' }
     },
@@ -223,18 +223,18 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         subcategory: 'books',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五冊」的正確讀音是？',
+        stem: '「五冊」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五冊」的正確讀音是？',
         options: [
-            { text: 'ごさつ', isCorrect: true, reason: '正確{せいかく}！「五冊{ごさつ}」無音變{むおんへん}，讀作{どくさ}「ごさつ」。' },
-            { text: 'ごっさつ', isCorrect: false, reason: '5冊{ごさつ}不發生{ふはっせい}促音化{そくおんか}。' },
-            { text: 'いつさつ', isCorrect: false, reason: '量詞{りょうし}「冊{さつ}」使用{しよう}音讀{おんどく}數字{すうじ}「ご」。' },
-            { text: 'ござつ', isCorrect: false, reason: '「冊{さつ}」不發生{ふはっせい}濁音化{だくおんか}。' }
+            { text: 'ごさつ', isCorrect: true, reason: '正確！「五冊{ごさつ}」無音變，讀作「ごさつ」。' },
+            { text: 'ごっさつ', isCorrect: false, reason: '5冊{ごさつ}不發生促音化。' },
+            { text: 'いつさつ', isCorrect: false, reason: '量詞「冊{さつ}」使用音讀數字「ご」。' },
+            { text: 'ござつ', isCorrect: false, reason: '「冊{さつ}」不發生濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五冊{ごさつ}」讀作{どくさ}「ごさつ」，無音變{むおんへん}。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '無音變{むおんへん}の量詞{りょうし}']
+            correctRule: '「五冊{ごさつ}」讀作「ごさつ」，無音變。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '無音變の量詞']
         },
         sourceItem: { value: 5, kanji: '五冊', reading: 'ごさつ' }
     },
@@ -247,15 +247,15 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         stem: '図書館で本を＿＿借りました。',
         stem_zh: '在圖書館借了五本書。',
         options: [
-            { text: 'ごっさつ', isCorrect: false, reason: '5冊{ごさつ}不促音化{ふそくおんか}。' },
-            { text: 'ごさつ', isCorrect: true, reason: '正確{せいかく}！「本{ほん}を五冊{ごさつ}借{か}りました」表示{ひょうじ}「借了{かりました}五本{ごさつ}書{ほん}」。' },
-            { text: 'ごほん', isCorrect: false, reason: '書籍{しょせき}用{もちいる}「冊{さつ}」不是「本{ほん}」。' },
-            { text: 'いつつ', isCorrect: false, reason: '書籍{しょせき}應使用{しよう}「冊{さつ}」。' }
+            { text: 'ごっさつ', isCorrect: false, reason: '5冊{ごさつ}不促音化。' },
+            { text: 'ごさつ', isCorrect: true, reason: '正確！「本を五冊{ごさつ}借りました」表示「借了五本書」。' },
+            { text: 'ごほん', isCorrect: false, reason: '書籍用「冊{さつ}」不是「本{ほん}」。' },
+            { text: 'いつつ', isCorrect: false, reason: '書籍應使用「冊{さつ}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '在圖書館{としょかん}借書{かりる}時{とき}使用{しよう}量詞{りょうし}「冊{さつ}」。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '圖書館{としょかん}表達{ひょうたつ}']
+            correctRule: '在圖書館借書時使用量詞「冊{さつ}」。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '圖書館表達']
         },
         sourceItem: { value: 5, kanji: '五冊', reading: 'ごさつ' }
     },
@@ -272,15 +272,15 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿持っています。（五本）'
         },
         options: [
-            { text: 'ごっさつ', isCorrect: false, reason: '5冊{ごさつ}不促音化{ふそくおんか}。' },
-            { text: 'ごさつ', isCorrect: true, reason: '正確{せいかく}！有五本{ごさつ}日語{にほんご}教科書{きょうかしょ}。' },
-            { text: 'ごほん', isCorrect: false, reason: '教科書{きょうかしょ}用{もちいる}「冊{さつ}」。' },
-            { text: 'いつつ', isCorrect: false, reason: '教科書{きょうかしょ}是成冊{せいさつ}的，用{もちいる}「冊{さつ}」。' }
+            { text: 'ごっさつ', isCorrect: false, reason: '5冊{ごさつ}不促音化。' },
+            { text: 'ごさつ', isCorrect: true, reason: '正確！有五本日語教科書。' },
+            { text: 'ごほん', isCorrect: false, reason: '教科書用「冊{さつ}」。' },
+            { text: 'いつつ', isCorrect: false, reason: '教科書是成冊的，用「冊{さつ}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「教科書{きょうかしょ}」使用{しよう}量詞{りょうし}「冊{さつ}」。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '學習{がくしゅう}用品{ようひん}']
+            correctRule: '「教科書」使用量詞「冊{さつ}」。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '學習用品']
         },
         sourceItem: { value: 5, kanji: '五冊', reading: 'ごさつ' }
     },
@@ -292,19 +292,19 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         subcategory: 'books',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「八冊」的正確讀音是？',
+        stem: '「八冊」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「八冊」的正確讀音是？',
         options: [
-            { text: 'はっさつ', isCorrect: true, reason: '正確{せいかく}！「八冊{はっさつ}」發生{はっせい}促音化{そくおんか}，讀作{どくさ}「はっさつ」。' },
-            { text: 'はちさつ', isCorrect: false, reason: '陷阱{かんけい}！「八{はち}」的「ち」在「さ行{ぎょう}」前{まえ}變為{へんい}促音{そくおん}「っ」。' },
-            { text: 'やさつ', isCorrect: false, reason: '量詞{りょうし}「冊{さつ}」使用{しよう}音讀{おんどく}數字{すうじ}「はち」。' },
-            { text: 'はちざつ', isCorrect: false, reason: '「冊{さつ}」不發生{ふはっせい}濁音化{だくおんか}。' }
+            { text: 'はっさつ', isCorrect: true, reason: '正確！「八冊{はっさつ}」發生促音化，讀作「はっさつ」。' },
+            { text: 'はちさつ', isCorrect: false, reason: '陷阱！「八{はち}」的「ち」在「さ行」前變為促音「っ」。' },
+            { text: 'やさつ', isCorrect: false, reason: '量詞「冊{さつ}」使用音讀數字「はち」。' },
+            { text: 'はちざつ', isCorrect: false, reason: '「冊{さつ}」不發生濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「八冊{はっさつ}」讀作{どくさ}「はっさつ」。「八{はち}」在「さ行{ぎょう}」量詞{りょうし}前{まえ}發生{はっせい}促音化{そくおんか}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。數字{すうじ}8搭配{たいはい}「さ行{ぎょう}」開頭{あたま}的量詞{りょうし}時{とき}，「ち」變為{へんい}促音{そくおん}「っ」。',
-            relatedRules: ['促音化{そくおんか}規則{きそく}', '「さ行{ぎょう}」量詞{りょうし}の音變{おんへん}']
+            correctRule: '「八冊{はっさつ}」讀作「はっさつ」。「八{はち}」在「さ行」量詞前發生促音化。',
+            trapExplanation: '這是陷阱題。數字8搭配「さ行」開頭的量詞時，「ち」變為促音「っ」。',
+            relatedRules: ['促音化規則', '「さ行」量詞的音變']
         },
         sourceItem: { value: 8, kanji: '八冊', reading: 'はっさつ' }
     },
@@ -317,16 +317,16 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         stem: '小説を＿＿買いました。',
         stem_zh: '我買了八本小說。',
         options: [
-            { text: 'はちさつ', isCorrect: false, reason: '陷阱{かんけい}！8冊{はっさつ}需要{じゅよう}促音化{そくおんか}。' },
-            { text: 'はっさつ', isCorrect: true, reason: '正確{せいかく}！「小説{しょうせつ}を八冊{はっさつ}」表示{ひょうじ}「八本{はっさつ}小說{しょうせつ}」。' },
-            { text: 'やっつ', isCorrect: false, reason: '小說{しょうせつ}是成冊{せいさつ}的，用{もちいる}「冊{さつ}」。' },
-            { text: 'はっぽん', isCorrect: false, reason: '小說{しょうせつ}用{もちいる}「冊{さつ}」不是「本{ほん}」。' }
+            { text: 'はちさつ', isCorrect: false, reason: '陷阱！8冊{はっさつ}需要促音化。' },
+            { text: 'はっさつ', isCorrect: true, reason: '正確！「小説を八冊{はっさつ}」表示「八本小說」。' },
+            { text: 'やっつ', isCorrect: false, reason: '小說是成冊的，用「冊{さつ}」。' },
+            { text: 'はっぽん', isCorrect: false, reason: '小說用「冊{さつ}」不是「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「小説{しょうせつ}」（小說{しょうせつ}）是成冊{せいさつ}的，使用{しよう}量詞{りょうし}「冊{さつ}」。',
-            trapExplanation: '8冊{はっさつ}固定{こてい}讀む{よむ}「はっさつ」，「さ行{ぎょう}」量詞{りょうし}的促音化{そくおんか}規則{きそく}。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '出版物{しゅっぱんぶつ}の計數{けいすう}']
+            correctRule: '「小説」（小說）是成冊的，使用量詞「冊{さつ}」。',
+            trapExplanation: '8冊{はっさつ}固定讀「はっさつ」，「さ行」量詞的促音化規則。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '出版物の計數']
         },
         sourceItem: { value: 8, kanji: '八冊', reading: 'はっさつ' }
     },
@@ -343,15 +343,15 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（八本）'
         },
         options: [
-            { text: 'はちさつ', isCorrect: false, reason: '8冊{はっさつ}需要{じゅよう}促音化{そくおんか}。' },
-            { text: 'はっさつ', isCorrect: true, reason: '正確{せいかく}！哈利波特{ハリー・ポッター}系列{シリーズ}共{ぜんぶ}有八本{はっさつ}（本傳{ほんでん}7本{ななさつ}+1本{いっさつ}戲劇{げきほん}）。' },
-            { text: 'やっつ', isCorrect: false, reason: '書籍{しょせき}用{もちいる}「冊{さつ}」。' },
-            { text: 'はっぽん', isCorrect: false, reason: '書籍{しょせき}用{もちいる}「冊{さつ}」不是「本{ほん}」。' }
+            { text: 'はちさつ', isCorrect: false, reason: '8冊{はっさつ}需要促音化。' },
+            { text: 'はっさつ', isCorrect: true, reason: '正確！哈利波特系列共有八冊{はっさつ}（本傳七冊{ななさつ}+一冊{いっさつ}戲劇）。' },
+            { text: 'やっつ', isCorrect: false, reason: '書籍用「冊{さつ}」。' },
+            { text: 'はっぽん', isCorrect: false, reason: '書籍用「冊{さつ}」不是「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '書籍{しょせき}系列{シリーズ}使用{しよう}量詞{りょうし}「冊{さつ}」來計數{けいすう}。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '書籍{しょせき}系列{シリーズ}']
+            correctRule: '書籍系列使用量詞「冊{さつ}」來計數。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '書籍系列']
         },
         sourceItem: { value: 8, kanji: '八冊', reading: 'はっさつ' }
     },
@@ -363,19 +363,19 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         subcategory: 'books',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「十冊」的正確讀音是？',
+        stem: '「十冊」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十冊」的正確讀音是？',
         options: [
-            { text: 'じゅっさつ', isCorrect: true, reason: '正確{せいかく}！「十冊{じゅっさつ}」發生{はっせい}促音化{そくおんか}，讀作{どくさ}「じゅっさつ」。' },
-            { text: 'じゅうさつ', isCorrect: false, reason: '陷阱{かんけい}！10冊{じゅっさつ}需要{じゅよう}促音化{そくおんか}。' },
-            { text: 'とおさつ', isCorrect: false, reason: '量詞{りょうし}「冊{さつ}」使用{しよう}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅうざつ', isCorrect: false, reason: '「冊{さつ}」不發生{ふはっせい}濁音化{だくおんか}。' }
+            { text: 'じゅっさつ', isCorrect: true, reason: '正確！「十冊{じゅっさつ}」發生促音化，讀作「じゅっさつ」。' },
+            { text: 'じゅうさつ', isCorrect: false, reason: '陷阱！10冊{じゅっさつ}需要促音化。' },
+            { text: 'とおさつ', isCorrect: false, reason: '量詞「冊{さつ}」使用音讀「じゅう」。' },
+            { text: 'じゅうざつ', isCorrect: false, reason: '「冊{さつ}」不發生濁音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十冊{じゅっさつ}」讀作{どくさ}「じゅっさつ」。「十{じゅう}」在「さ行{ぎょう}」量詞{りょうし}前{まえ}發生{はっせい}促音化{そくおんか}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。數字{すうじ}10搭配{たいはい}「さ行{ぎょう}」開頭{あたま}的量詞{りょうし}時{とき}發生{はっせい}促音化{そくおんか}。',
-            relatedRules: ['促音化{そくおんか}規則{きそく}', '「さ行{ぎょう}」量詞{りょうし}の音變{おんへん}']
+            correctRule: '「十冊{じゅっさつ}」讀作「じゅっさつ」。「十{じゅう}」在「さ行」量詞前發生促音化。',
+            trapExplanation: '這是陷阱題。數字10搭配「さ行」開頭的量詞時發生促音化。',
+            relatedRules: ['促音化規則', '「さ行」量詞的音變']
         },
         sourceItem: { value: 10, kanji: '十冊', reading: 'じゅっさつ' }
     },
@@ -388,16 +388,16 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         stem: '図書館から＿＿借りられます。',
         stem_zh: '可以從圖書館借十本書。',
         options: [
-            { text: 'じゅうさつ', isCorrect: false, reason: '陷阱{かんけい}！10冊{じゅっさつ}需要{じゅよう}促音化{そくおんか}。' },
-            { text: 'じゅっさつ', isCorrect: true, reason: '正確{せいかく}！「十冊{じゅっさつ}借{か}りられます」表示{ひょうじ}「可以{できる}借{かりる}十本{じゅっさつ}」。' },
-            { text: 'とお', isCorrect: false, reason: '書籍{しょせき}應使用{しよう}「冊{さつ}」。' },
-            { text: 'じゅっぽん', isCorrect: false, reason: '書籍{しょせき}用{もちいる}「冊{さつ}」不是「本{ほん}」。' }
+            { text: 'じゅうさつ', isCorrect: false, reason: '陷阱！10冊{じゅっさつ}需要促音化。' },
+            { text: 'じゅっさつ', isCorrect: true, reason: '正確！「十冊{じゅっさつ}借りられます」表示「可以借十本」。' },
+            { text: 'とお', isCorrect: false, reason: '書籍應使用「冊{さつ}」。' },
+            { text: 'じゅっぽん', isCorrect: false, reason: '書籍用「冊{さつ}」不是「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '圖書館{としょかん}借書{かりる}限制{せいげん}使用{しよう}量詞{りょうし}「冊{さつ}」。',
-            trapExplanation: '10冊{じゅっさつ}固定{こてい}讀む{よむ}「じゅっさつ」，「さ行{ぎょう}」量詞{りょうし}的促音化{そくおんか}規則{きそく}。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '圖書館{としょかん}規則{きそく}']
+            correctRule: '圖書館借書限制使用量詞「冊{さつ}」。',
+            trapExplanation: '10冊{じゅっさつ}固定讀「じゅっさつ」，「さ行」量詞的促音化規則。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '圖書館規則']
         },
         sourceItem: { value: 10, kanji: '十冊', reading: 'じゅっさつ' }
     },
@@ -414,15 +414,15 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿読みたいです。（十本）'
         },
         options: [
-            { text: 'じゅうさつ', isCorrect: false, reason: '10冊{じゅっさつ}需要{じゅよう}促音化{そくおんか}。' },
-            { text: 'じゅっさつ', isCorrect: true, reason: '正確{せいかく}！想讀{よみたい}十本{じゅっさつ}書{ほん}。' },
-            { text: 'とお', isCorrect: false, reason: '書籍{しょせき}用{もちいる}「冊{さつ}」。' },
-            { text: 'じゅっぽん', isCorrect: false, reason: '書籍{しょせき}用{もちいる}「冊{さつ}」不是「本{ほん}」。' }
+            { text: 'じゅうさつ', isCorrect: false, reason: '10冊{じゅっさつ}需要促音化。' },
+            { text: 'じゅっさつ', isCorrect: true, reason: '正確！想讀十本書。' },
+            { text: 'とお', isCorrect: false, reason: '書籍用「冊{さつ}」。' },
+            { text: 'じゅっぽん', isCorrect: false, reason: '書籍用「冊{さつ}」不是「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '讀書{どくしょ}計畫{けいかく}使用{しよう}量詞{りょうし}「冊{さつ}」。',
-            relatedRules: ['量詞{りょうし}「冊{さつ}」の使用{しよう}', '讀書{どくしょ}目標{もくひょう}']
+            correctRule: '讀書計畫使用量詞「冊{さつ}」。',
+            relatedRules: ['量詞「冊{さつ}」的使用', '讀書目標']
         },
         sourceItem: { value: 10, kanji: '十冊', reading: 'じゅっさつ' }
     },
@@ -430,7 +430,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
     // ===== 4冊 的三題（無音變：よんさつ） =====
     {
         id: 'book_4_pron', category: 'counters', subcategory: 'books', type: 'pronunciation', isTrap: false,
-        stem: '「四冊」的正確讀音是？', stem_zh: '「四冊」的正確讀音是？',
+        stem: '「四冊」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四冊」的正確讀音是？',
         options: [
             { text: 'よんさつ', isCorrect: true, reason: '正確！「四冊」無音變，讀作「よんさつ」。' },
             { text: 'しさつ', isCorrect: false, reason: '「し」有死的意思，避諱，用「よん」。' },
@@ -438,7 +438,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'よんざつ', isCorrect: false, reason: '「冊」不發生濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四冊」讀作「よんさつ」，無音變。使用「よん」避免「し」的不吉利聯想。', relatedRules: ['量詞「冊」の音變規則', '數字4的讀法'] },
+        explanation: { correctRule: '「四冊」讀作「よんさつ」，無音變。使用「よん」避免「し」的不吉利聯想。', relatedRules: ['量詞「冊」的音變規則', '數字4的讀法'] },
         sourceItem: { value: 4, kanji: '四冊', reading: 'よんさつ' }
     },
     {
@@ -451,7 +451,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'よんまい', isCorrect: false, reason: '雜誌用「冊」不是「枚」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「週刊誌」是成冊的雜誌，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「週刊誌」是成冊的雜誌，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 4, kanji: '四冊', reading: 'よんさつ' }
     },
     {
@@ -465,14 +465,14 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'よんぽん', isCorrect: false, reason: '手帳用「冊」不是「本」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「手帳」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '文具の計數'] },
+        explanation: { correctRule: '「手帳」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '文具の計數'] },
         sourceItem: { value: 4, kanji: '四冊', reading: 'よんさつ' }
     },
 
     // ===== 6冊 的三題（無音變：ろくさつ） =====
     {
         id: 'book_6_pron', category: 'counters', subcategory: 'books', type: 'pronunciation', isTrap: false,
-        stem: '「六冊」的正確讀音是？', stem_zh: '「六冊」的正確讀音是？',
+        stem: '「六冊」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「六冊」的正確讀音是？',
         options: [
             { text: 'ろくさつ', isCorrect: true, reason: '正確！「六冊」無音變，讀作「ろくさつ」。' },
             { text: 'ろっさつ', isCorrect: false, reason: '6冊不發生促音化。' },
@@ -480,7 +480,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくざつ', isCorrect: false, reason: '「冊」不發生濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六冊」讀作「ろくさつ」，無音變。注意6搭配「本」會促音化（ろっぽん），但「冊」不會。', relatedRules: ['量詞「冊」の音變規則', '「冊」vs「本」の差異'] },
+        explanation: { correctRule: '「六冊」讀作「ろくさつ」，無音變。注意6搭配「本」會促音化（ろっぽん），但「冊」不會。', relatedRules: ['量詞「冊」的音變規則', '「冊」vs「本」の差異'] },
         sourceItem: { value: 6, kanji: '六冊', reading: 'ろくさつ' }
     },
     {
@@ -493,7 +493,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっぽん', isCorrect: false, reason: '參考書用「冊」不是「本」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「参考書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '學習用品'] },
+        explanation: { correctRule: '「参考書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '學習用品'] },
         sourceItem: { value: 6, kanji: '六冊', reading: 'ろくさつ' }
     },
     {
@@ -507,14 +507,14 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくぽん', isCorrect: false, reason: '日記用「冊」不是「本」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「日記」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '文具の計數'] },
+        explanation: { correctRule: '「日記」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '文具の計數'] },
         sourceItem: { value: 6, kanji: '六冊', reading: 'ろくさつ' }
     },
 
     // ===== 7冊 的三題（無音變：ななさつ） =====
     {
         id: 'book_7_pron', category: 'counters', subcategory: 'books', type: 'pronunciation', isTrap: false,
-        stem: '「七冊」的正確讀音是？', stem_zh: '「七冊」的正確讀音是？',
+        stem: '「七冊」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七冊」的正確讀音是？',
         options: [
             { text: 'ななさつ', isCorrect: true, reason: '正確！「七冊」無音變，讀作「ななさつ」。' },
             { text: 'しちさつ', isCorrect: false, reason: '「しち」較少使用，通常用「なな」。' },
@@ -522,7 +522,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ななざつ', isCorrect: false, reason: '「冊」不發生濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七冊」讀作「ななさつ」，無音變。', relatedRules: ['量詞「冊」の音變規則', '數字7的讀法'] },
+        explanation: { correctRule: '「七冊」讀作「ななさつ」，無音變。', relatedRules: ['量詞「冊」的音變規則', '數字7的讀法'] },
         sourceItem: { value: 7, kanji: '七冊', reading: 'ななさつ' }
     },
     {
@@ -535,7 +535,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ななほん', isCorrect: false, reason: '圖鑑用「冊」不是「本」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「図鑑」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「図鑑」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 7, kanji: '七冊', reading: 'ななさつ' }
     },
     {
@@ -549,14 +549,14 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ななぽん', isCorrect: false, reason: '繪本用「冊」不是「本」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「絵本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '兒童書籍'] },
+        explanation: { correctRule: '「絵本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '兒童書籍'] },
         sourceItem: { value: 7, kanji: '七冊', reading: 'ななさつ' }
     },
 
     // ===== 9冊 的三題（無音變：きゅうさつ） =====
     {
         id: 'book_9_pron', category: 'counters', subcategory: 'books', type: 'pronunciation', isTrap: false,
-        stem: '「九冊」的正確讀音是？', stem_zh: '「九冊」的正確讀音是？',
+        stem: '「九冊」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「九冊」的正確讀音是？',
         options: [
             { text: 'きゅうさつ', isCorrect: true, reason: '正確！「九冊」無音變，讀作「きゅうさつ」。' },
             { text: 'くさつ', isCorrect: false, reason: '量詞「冊」使用音讀「きゅう」。' },
@@ -564,7 +564,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうざつ', isCorrect: false, reason: '「冊」不發生濁音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九冊」讀作「きゅうさつ」，無音變。', relatedRules: ['量詞「冊」の音變規則', '無音變の數字'] },
+        explanation: { correctRule: '「九冊」讀作「きゅうさつ」，無音變。', relatedRules: ['量詞「冊」的音變規則', '無音變の數字'] },
         sourceItem: { value: 9, kanji: '九冊', reading: 'きゅうさつ' }
     },
     {
@@ -577,7 +577,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうほん', isCorrect: false, reason: '書籍用「冊」不是「本」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「料理本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「料理本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 9, kanji: '九冊', reading: 'きゅうさつ' }
     },
     {
@@ -591,7 +591,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうほん', isCorrect: false, reason: '字典用「冊」不是「本」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「辞書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '參考書籍'] },
+        explanation: { correctRule: '「辞書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '參考書籍'] },
         sourceItem: { value: 9, kanji: '九冊', reading: 'きゅうさつ' }
     },
 
@@ -602,18 +602,18 @@ export const bookQuestions: DatesPracticeQuestion[] = [
         subcategory: 'books',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「何冊」的正確讀音是？',
+        stem: '「何冊」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何冊」的正確讀音是？',
         options: [
-            { text: 'なんさつ', isCorrect: true, reason: '正確{せいかく}！「何冊{なんさつ}」無音變{むおんへん}，讀作{どくさ}「なんさつ」。' },
-            { text: 'なんざつ', isCorrect: false, reason: '「冊{さつ}」不發生{ふはっせい}濁音化{だくおんか}。' },
-            { text: 'なにさつ', isCorrect: false, reason: '搭配{たいはい}量詞{りょうし}時{とき}，「何{なに}」讀作{どくさ}「なん」。' },
-            { text: 'なっさつ', isCorrect: false, reason: '疑問詞{ぎもんし}「何{なん}」不促音化{ふそくおんか}。' }
+            { text: 'なんさつ', isCorrect: true, reason: '正確！「何冊{なんさつ}」無音變，讀作「なんさつ」。' },
+            { text: 'なんざつ', isCorrect: false, reason: '「冊{さつ}」不發生濁音化。' },
+            { text: 'なにさつ', isCorrect: false, reason: '搭配量詞時，「何」讀作「なん」。' },
+            { text: 'なっさつ', isCorrect: false, reason: '疑問詞「何」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「何冊{なんさつ}」讀作{どくさ}「なんさつ」。量詞{りょうし}「冊{さつ}」不受{うけない}撥音{はつおん}「ん」影響{えいきょう}，不發生{ふはっせい}音變{おんへん}。',
-            relatedRules: ['疑問詞{ぎもんし}の讀法{よみかた}', '「何{なん}＋量詞{りょうし}」の讀法{よみかた}']
+            correctRule: '「何冊{なんさつ}」讀作「なんさつ」。量詞「冊{さつ}」不受撥音「ん」影響，不發生音變。',
+            relatedRules: ['疑問詞的讀法', '「何{なん}＋量詞」的讀法']
         },
         sourceItem: { value: '?', kanji: '何冊', reading: 'なんさつ' }
     },
@@ -629,7 +629,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'とういっさつ', isCorrect: false, reason: '使用「じゅう」不是「とう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '11冊讀作「じゅういっさつ」，個位數1觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '11冊讀作「じゅういっさつ」，個位數1觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 11, kanji: '十一冊', reading: 'じゅういっさつ' }
     },
     {
@@ -643,7 +643,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'とうにさつ', isCorrect: false, reason: '使用「じゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '12冊讀作「じゅうにさつ」，無音變。', relatedRules: ['量詞「冊」の使用', '複合數字'] },
+        explanation: { correctRule: '12冊讀作「じゅうにさつ」，無音變。', relatedRules: ['量詞「冊」的使用', '複合數字'] },
         sourceItem: { value: 12, kanji: '十二冊', reading: 'じゅうにさつ' }
     },
     {
@@ -656,7 +656,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'いつさつ', isCorrect: false, reason: '這是15冊，不是5冊。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「文庫本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「文庫本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 15, kanji: '十五冊', reading: 'じゅうごさつ' }
     },
     {
@@ -670,7 +670,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうやさつ', isCorrect: false, reason: '使用「はち」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '18冊讀作「じゅうはっさつ」，個位數8觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '18冊讀作「じゅうはっさつ」，個位數8觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 18, kanji: '十八冊', reading: 'じゅうはっさつ' }
     },
     {
@@ -683,7 +683,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'はたさつ', isCorrect: false, reason: '使用「にじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '20冊讀作「にじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '20冊讀作「にじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 20, kanji: '二十冊', reading: 'にじゅっさつ' }
     },
     {
@@ -697,7 +697,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうひとさつ', isCorrect: false, reason: '使用音讀「いち」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '21冊讀作「にじゅういっさつ」，個位數1觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '21冊讀作「にじゅういっさつ」，個位數1觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 21, kanji: '二十一冊', reading: 'にじゅういっさつ' }
     },
     {
@@ -710,7 +710,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'みそさつ', isCorrect: false, reason: '使用「さんじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '30冊讀作「さんじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '30冊讀作「さんじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 30, kanji: '三十冊', reading: 'さんじゅっさつ' }
     },
     {
@@ -724,7 +724,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'いそさつ', isCorrect: false, reason: '使用「ごじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '50冊讀作「ごじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '50冊讀作「ごじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 50, kanji: '五十冊', reading: 'ごじゅっさつ' }
     },
     {
@@ -752,7 +752,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'さんまい', isCorrect: false, reason: '「枚」用於扁平物。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「アルバム」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用'] },
+        explanation: { correctRule: '「アルバム」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用'] },
         sourceItem: { value: 3, kanji: '三冊', reading: 'さんさつ' }
     },
     {
@@ -766,7 +766,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'にまい', isCorrect: false, reason: '「枚」用於扁平物。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「写真集」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「写真集」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 2, kanji: '二冊', reading: 'にさつ' }
     },
     {
@@ -779,7 +779,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'しさつ', isCorrect: false, reason: '使用「よん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「スケジュール帳」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '文具の計數'] },
+        explanation: { correctRule: '「スケジュール帳」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '文具の計數'] },
         sourceItem: { value: 4, kanji: '四冊', reading: 'よんさつ' }
     },
     {
@@ -793,7 +793,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ごまい', isCorrect: false, reason: '「枚」用於扁平物。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「地図帳」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '參考書籍'] },
+        explanation: { correctRule: '「地図帳」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '參考書籍'] },
         sourceItem: { value: 5, kanji: '五冊', reading: 'ごさつ' }
     },
     {
@@ -806,7 +806,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくまい', isCorrect: false, reason: '「枚」用於扁平物。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「カタログ」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '印刷物の計數'] },
+        explanation: { correctRule: '「カタログ」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '印刷物の計數'] },
         sourceItem: { value: 6, kanji: '六冊', reading: 'ろくさつ' }
     },
     {
@@ -820,7 +820,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ななまい', isCorrect: false, reason: '「枚」用於扁平物。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「取扱説明書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '說明書類'] },
+        explanation: { correctRule: '「取扱説明書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '說明書類'] },
         sourceItem: { value: 7, kanji: '七冊', reading: 'ななさつ' }
     },
     {
@@ -833,7 +833,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'はちまい', isCorrect: false, reason: '「枚」用於扁平物。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「パンフレット」是成冊的，使用量詞「冊」。8冊需要促音化。', relatedRules: ['量詞「冊」の使用', '促音化規則'] },
+        explanation: { correctRule: '「パンフレット」是成冊的，使用量詞「冊」。8冊需要促音化。', relatedRules: ['量詞「冊」的使用', '促音化規則'] },
         sourceItem: { value: 8, kanji: '八冊', reading: 'はっさつ' }
     },
     {
@@ -847,7 +847,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうほん', isCorrect: false, reason: '詩集用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「詩集」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「詩集」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 9, kanji: '九冊', reading: 'きゅうさつ' }
     },
     {
@@ -860,7 +860,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっぽん', isCorrect: false, reason: '報告書用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「報告書」是成冊的，使用量詞「冊」。10冊需要促音化。', relatedRules: ['量詞「冊」の使用', '促音化規則'] },
+        explanation: { correctRule: '「報告書」是成冊的，使用量詞「冊」。10冊需要促音化。', relatedRules: ['量詞「冊」的使用', '促音化規則'] },
         sourceItem: { value: 10, kanji: '十冊', reading: 'じゅっさつ' }
     },
     {
@@ -874,7 +874,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'はたごさつ', isCorrect: false, reason: '使用「にじゅうご」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「絵本」是成冊的，使用量詞「冊」。25不觸發促音化。', relatedRules: ['量詞「冊」の使用', '複合數字'] },
+        explanation: { correctRule: '「絵本」是成冊的，使用量詞「冊」。25不觸發促音化。', relatedRules: ['量詞「冊」的使用', '複合數字'] },
         sourceItem: { value: 25, kanji: '二十五冊', reading: 'にじゅうごさつ' }
     },
     {
@@ -887,7 +887,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'さんまい', isCorrect: false, reason: '「枚」用於扁平物。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ガイドブック」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '旅遊用品'] },
+        explanation: { correctRule: '「ガイドブック」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '旅遊用品'] },
         sourceItem: { value: 3, kanji: '三冊', reading: 'さんさつ' }
     },
     {
@@ -901,7 +901,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうごまい', isCorrect: false, reason: '「枚」用於扁平物。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「年鑑」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「年鑑」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 15, kanji: '十五冊', reading: 'じゅうごさつ' }
     },
     {
@@ -914,7 +914,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'よんまい', isCorrect: false, reason: '「枚」用於扁平物。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「楽譜」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '音樂用品'] },
+        explanation: { correctRule: '「楽譜」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '音樂用品'] },
         sourceItem: { value: 4, kanji: '四冊', reading: 'よんさつ' }
     },
     {
@@ -928,7 +928,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっさつ', isCorrect: false, reason: '6冊不促音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「作文ノート」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '文具の計數'] },
+        explanation: { correctRule: '「作文ノート」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '文具の計數'] },
         sourceItem: { value: 6, kanji: '六冊', reading: 'ろくさつ' }
     },
     {
@@ -941,7 +941,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ななほん', isCorrect: false, reason: '單字簿用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「単語帳」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '學習用品'] },
+        explanation: { correctRule: '「単語帳」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '學習用品'] },
         sourceItem: { value: 7, kanji: '七冊', reading: 'ななさつ' }
     },
     {
@@ -955,7 +955,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'はっぽん', isCorrect: false, reason: '工作手冊用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「マニュアル」是成冊的，使用量詞「冊」。8冊需要促音化。', relatedRules: ['量詞「冊」の使用', '促音化規則'] },
+        explanation: { correctRule: '「マニュアル」是成冊的，使用量詞「冊」。8冊需要促音化。', relatedRules: ['量詞「冊」的使用', '促音化規則'] },
         sourceItem: { value: 8, kanji: '八冊', reading: 'はっさつ' }
     },
     {
@@ -968,7 +968,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうほん', isCorrect: false, reason: '自傳用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「自伝」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「自伝」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 9, kanji: '九冊', reading: 'きゅうさつ' }
     },
     {
@@ -982,7 +982,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっぽん', isCorrect: false, reason: '畫集用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「画集」是成冊的，使用量詞「冊」。10冊需要促音化。', relatedRules: ['量詞「冊」の使用', '促音化規則'] },
+        explanation: { correctRule: '「画集」是成冊的，使用量詞「冊」。10冊需要促音化。', relatedRules: ['量詞「冊」的使用', '促音化規則'] },
         sourceItem: { value: 10, kanji: '十冊', reading: 'じゅっさつ' }
     },
     {
@@ -995,7 +995,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'にほん', isCorrect: false, reason: '練習冊用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ワークブック」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '學習用品'] },
+        explanation: { correctRule: '「ワークブック」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '學習用品'] },
         sourceItem: { value: 2, kanji: '二冊', reading: 'にさつ' }
     },
     {
@@ -1009,7 +1009,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうにまい', isCorrect: false, reason: '「枚」用於扁平物。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「百科事典」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '參考書籍'] },
+        explanation: { correctRule: '「百科事典」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '參考書籍'] },
         sourceItem: { value: 12, kanji: '十二冊', reading: 'じゅうにさつ' }
     },
 
@@ -1091,7 +1091,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうご', isCorrect: false, reason: '需要量詞。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「レシピ本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用'] },
+        explanation: { correctRule: '「レシピ本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用'] },
         sourceItem: { value: 15, kanji: '十五冊', reading: 'じゅうごさつ' }
     },
     {
@@ -1105,7 +1105,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅういっぽん', isCorrect: false, reason: '漫畫用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '11冊讀作「じゅういっさつ」，個位數1觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '11冊讀作「じゅういっさつ」，個位數1觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 11, kanji: '十一冊', reading: 'じゅういっさつ' }
     },
     {
@@ -1118,7 +1118,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'さんざつ', isCorrect: false, reason: '「冊」不濁音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「問題集」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '學習用品'] },
+        explanation: { correctRule: '「問題集」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '學習用品'] },
         sourceItem: { value: 3, kanji: '三冊', reading: 'さんさつ' }
     },
     {
@@ -1132,7 +1132,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'よんまい', isCorrect: false, reason: '雜誌用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「雑誌」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「雑誌」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 4, kanji: '四冊', reading: 'よんさつ' }
     },
     {
@@ -1145,7 +1145,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ごっさつ', isCorrect: false, reason: '5冊不促音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「教材」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '學習用品'] },
+        explanation: { correctRule: '「教材」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '學習用品'] },
         sourceItem: { value: 5, kanji: '五冊', reading: 'ごさつ' }
     },
     {
@@ -1159,7 +1159,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ごじゅうさつ', isCorrect: false, reason: '50冊需要促音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '50冊讀作「ごじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '50冊讀作「ごじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 50, kanji: '五十冊', reading: 'ごじゅっさつ' }
     },
     {
@@ -1172,7 +1172,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっさつ', isCorrect: false, reason: '6冊不促音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「テキスト」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '學習用品'] },
+        explanation: { correctRule: '「テキスト」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '學習用品'] },
         sourceItem: { value: 6, kanji: '六冊', reading: 'ろくさつ' }
     },
     {
@@ -1186,7 +1186,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ななほん', isCorrect: false, reason: '書用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「童話の本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '兒童書籍'] },
+        explanation: { correctRule: '「童話の本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '兒童書籍'] },
         sourceItem: { value: 7, kanji: '七冊', reading: 'ななさつ' }
     },
     {
@@ -1199,7 +1199,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'はっぽん', isCorrect: false, reason: '書用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「歴史書」是成冊的，使用量詞「冊」。8冊需要促音化。', relatedRules: ['量詞「冊」の使用', '促音化規則'] },
+        explanation: { correctRule: '「歴史書」是成冊的，使用量詞「冊」。8冊需要促音化。', relatedRules: ['量詞「冊」的使用', '促音化規則'] },
         sourceItem: { value: 8, kanji: '八冊', reading: 'はっさつ' }
     },
     {
@@ -1213,7 +1213,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうほん', isCorrect: false, reason: '論文用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '成冊的論文使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '學術出版物'] },
+        explanation: { correctRule: '成冊的論文使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '學術出版物'] },
         sourceItem: { value: 9, kanji: '九冊', reading: 'きゅうさつ' }
     },
     {
@@ -1226,7 +1226,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっぽん', isCorrect: false, reason: '書用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「入門書」是成冊的，使用量詞「冊」。10冊需要促音化。', relatedRules: ['量詞「冊」の使用', '促音化規則'] },
+        explanation: { correctRule: '「入門書」是成冊的，使用量詞「冊」。10冊需要促音化。', relatedRules: ['量詞「冊」的使用', '促音化規則'] },
         sourceItem: { value: 10, kanji: '十冊', reading: 'じゅっさつ' }
     },
     {
@@ -1240,7 +1240,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'にっさつ', isCorrect: false, reason: '2冊不促音化。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「旅行記」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「旅行記」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 2, kanji: '二冊', reading: 'にさつ' }
     },
     {
@@ -1253,7 +1253,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうひとさつ', isCorrect: false, reason: '使用音讀「いち」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '21冊讀作「にじゅういっさつ」，個位數1觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '21冊讀作「にじゅういっさつ」，個位數1觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 21, kanji: '二十一冊', reading: 'にじゅういっさつ' }
     },
     {
@@ -1267,7 +1267,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうさんまい', isCorrect: false, reason: '「枚」用於扁平物。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「推理小説」是成冊的，使用量詞「冊」。13冊無音變。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「推理小説」是成冊的，使用量詞「冊」。13冊無音變。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 13, kanji: '十三冊', reading: 'じゅうさんさつ' }
     },
     {
@@ -1280,7 +1280,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうしさつ', isCorrect: false, reason: '使用「よん」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「美術書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '藝術書籍'] },
+        explanation: { correctRule: '「美術書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '藝術書籍'] },
         sourceItem: { value: 14, kanji: '十四冊', reading: 'じゅうよんさつ' }
     },
     {
@@ -1294,7 +1294,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうろくまい', isCorrect: false, reason: '雜誌用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「科学雑誌」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「科学雑誌」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 16, kanji: '十六冊', reading: 'じゅうろくさつ' }
     },
     {
@@ -1307,7 +1307,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうななまい', isCorrect: false, reason: '「枚」用於扁平物。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「哲学書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '學術書籍'] },
+        explanation: { correctRule: '「哲学書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '學術書籍'] },
         sourceItem: { value: 17, kanji: '十七冊', reading: 'じゅうななさつ' }
     },
     {
@@ -1321,7 +1321,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうはっぽん', isCorrect: false, reason: '書用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '18冊讀作「じゅうはっさつ」，個位數8觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '18冊讀作「じゅうはっさつ」，個位數8觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 18, kanji: '十八冊', reading: 'じゅうはっさつ' }
     },
     {
@@ -1334,7 +1334,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうくさつ', isCorrect: false, reason: '使用「きゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「心理学の本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '學術書籍'] },
+        explanation: { correctRule: '「心理学の本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '學術書籍'] },
         sourceItem: { value: 19, kanji: '十九冊', reading: 'じゅうきゅうさつ' }
     },
     {
@@ -1348,7 +1348,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'はたさつ', isCorrect: false, reason: '使用「にじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '20冊讀作「にじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '20冊讀作「にじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 20, kanji: '二十冊', reading: 'にじゅっさつ' }
     },
     {
@@ -1361,7 +1361,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうに', isCorrect: false, reason: '需要量詞。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ファッション誌」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「ファッション誌」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 22, kanji: '二十二冊', reading: 'にじゅうにさつ' }
     },
     {
@@ -1375,7 +1375,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうさんまい', isCorrect: false, reason: '書用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「育児書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「育児書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 23, kanji: '二十三冊', reading: 'にじゅうさんさつ' }
     },
     {
@@ -1388,7 +1388,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうよん', isCorrect: false, reason: '需要量詞。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ビジネス書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「ビジネス書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 24, kanji: '二十四冊', reading: 'にじゅうよんさつ' }
     },
     {
@@ -1402,7 +1402,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうろくまい', isCorrect: false, reason: '書用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「語学の本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '學習用品'] },
+        explanation: { correctRule: '「語学の本」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '學習用品'] },
         sourceItem: { value: 26, kanji: '二十六冊', reading: 'にじゅうろくさつ' }
     },
     {
@@ -1415,7 +1415,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうなな', isCorrect: false, reason: '需要量詞。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「科学雑誌」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「科学雑誌」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 27, kanji: '二十七冊', reading: 'にじゅうななさつ' }
     },
     {
@@ -1429,7 +1429,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうはっぽん', isCorrect: false, reason: '書用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '28冊讀作「にじゅうはっさつ」，個位數8觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '28冊讀作「にじゅうはっさつ」，個位數8觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 28, kanji: '二十八冊', reading: 'にじゅうはっさつ' }
     },
     {
@@ -1442,7 +1442,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうきゅう', isCorrect: false, reason: '需要量詞。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「自己啓発書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」の使用', '出版物の計數'] },
+        explanation: { correctRule: '「自己啓発書」是成冊的，使用量詞「冊」。', relatedRules: ['量詞「冊」的使用', '出版物の計數'] },
         sourceItem: { value: 29, kanji: '二十九冊', reading: 'にじゅうきゅうさつ' }
     },
     {
@@ -1456,7 +1456,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'みそさつ', isCorrect: false, reason: '使用「さんじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '30冊讀作「さんじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '30冊讀作「さんじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 30, kanji: '三十冊', reading: 'さんじゅっさつ' }
     },
     {
@@ -1469,7 +1469,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'よんじゅうほん', isCorrect: false, reason: '書用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '40冊讀作「よんじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '40冊讀作「よんじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 40, kanji: '四十冊', reading: 'よんじゅっさつ' }
     },
 
@@ -1484,7 +1484,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'むじゅうさつ', isCorrect: false, reason: '使用「ろくじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '60冊讀作「ろくじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '60冊讀作「ろくじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 60, kanji: '六十冊', reading: 'ろくじゅっさつ' }
     },
     {
@@ -1497,7 +1497,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'ななじゅうほん', isCorrect: false, reason: '雜誌用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '70冊讀作「ななじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '70冊讀作「ななじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 70, kanji: '七十冊', reading: 'ななじゅっさつ' }
     },
     {
@@ -1511,7 +1511,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'やじゅうさつ', isCorrect: false, reason: '使用「はちじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '80冊讀作「はちじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '80冊讀作「はちじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 80, kanji: '八十冊', reading: 'はちじゅっさつ' }
     },
     {
@@ -1524,7 +1524,7 @@ export const bookQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうじゅうほん', isCorrect: false, reason: '論文用「冊」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '90冊讀作「きゅうじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字の讀法'] },
+        explanation: { correctRule: '90冊讀作「きゅうじゅっさつ」，十位數10觸發促音化。', relatedRules: ['促音化規則', '複合數字的讀法'] },
         sourceItem: { value: 90, kanji: '九十冊', reading: 'きゅうじゅっさつ' }
     },
     {

@@ -12,18 +12,18 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'tens',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十一」的正確讀音是？',
+        stem: '「十一」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十一」的正確讀音是？',
         options: [
-            { text: 'じゅういち', isCorrect: true, reason: '正確{せいかく}！「十一{じゅういち}」讀作{どくさ}「じゅういち」，是十{じゅう}加{か}一{いち}の組合{くみあわせ}。' },
-            { text: 'といち', isCorrect: false, reason: '「と」是訓讀{くんどく}，組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}。' },
-            { text: 'じゅうひと', isCorrect: false, reason: '「ひと」是訓讀{くんどく}，應{おう}使用{しよう}音讀{おんどく}「いち」。' },
-            { text: 'じゅいち', isCorrect: false, reason: '少了{すくな}「う」，正確{せいかく}は「じゅういち」。' }
+            { text: 'じゅういち', isCorrect: true, reason: '正確！「十一{じゅういち}」讀作「じゅういち」，是十{じゅう}加一{いち}的組合。' },
+            { text: 'といち', isCorrect: false, reason: '「と」是訓讀，組合數字使用音讀。' },
+            { text: 'じゅうひと', isCorrect: false, reason: '「ひと」是訓讀，應使用音讀「いち」。' },
+            { text: 'じゅいち', isCorrect: false, reason: '少了「う」，正確「じゅういち」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '十位{じゅうい}以上{いじょう}の數字{すうじ}使用{しよう}音讀{おんどく}組合{くみあわせ}，「十一{じゅういち}」讀作{どくさ}「じゅういち」。',
-            relatedRules: ['十位數{じゅういすう}の組合{くみあわせ}規則{きそく}', '音讀{おんどく}組合{くみあわせ}']
+            correctRule: '十位以上の數字使用音讀組合，「十一{じゅういち}」讀作「じゅういち」。',
+            relatedRules: ['十位數的組合規則', '音讀組合']
         },
         sourceItem: { value: 11, kanji: '十一', reading: 'じゅういち' }
     },
@@ -36,15 +36,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '私は＿＿歳です。',
         stem_zh: '我十一歲。',
         options: [
-            { text: 'じゅういっさい', isCorrect: true, reason: '正確{せいかく}！「十一歳{じゅういっさい}」，「一{いち}」＋「歳{さい}」促音化{そくおんか}為「いっさい」。' },
-            { text: 'じゅういちさい', isCorrect: false, reason: '「一{いち}」後接{こうせつ}「歳{さい}」會促音化{そくおんか}為「いっさい」。' },
-            { text: 'といっさい', isCorrect: false, reason: '「と」是訓讀{くんどく}，應{おう}使用{しよう}音讀{おんどく}「じゅう」。' },
-            { text: 'じゅうひとさい', isCorrect: false, reason: '「ひと」是訓讀{くんどく}，年齡{ねんれい}使用{しよう}する音讀{おんどく}。' }
+            { text: 'じゅういっさい', isCorrect: true, reason: '正確！「十一歳{じゅういっさい}」，「一{いち}」＋「歳{さい}」促音化為「いっさい」。' },
+            { text: 'じゅういちさい', isCorrect: false, reason: '「一{いち}」後接「歳{さい}」會促音化為「いっさい」。' },
+            { text: 'といっさい', isCorrect: false, reason: '「と」是訓讀，應使用音讀「じゅう」。' },
+            { text: 'じゅうひとさい', isCorrect: false, reason: '「ひと」是訓讀，年齡使用音讀。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十一歳{じゅういっさい}」中，「一{いち}」後接{こうせつ}「歳{さい}」會促音化{そくおんか}，變成{へんせい}「いっさい」。',
-            relatedRules: ['年齡{ねんれい}の讀法{よみかた}', '一{いち}の促音化{そくおんか}規則{きそく}']
+            correctRule: '「十一歳{じゅういっさい}」中，「一{いち}」後接「歳{さい}」會促音化，變成「いっさい」。',
+            relatedRules: ['年齡的讀法', '一{いち}的促音化規則']
         },
         sourceItem: { value: 11, kanji: '十一歳', reading: 'じゅういっさい' }
     },
@@ -61,15 +61,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（十一點）'
         },
         options: [
-            { text: 'じゅういちじ', isCorrect: true, reason: '正確{せいかく}！「十一時{じゅういちじ}」讀作{どくさ}「じゅういちじ」。' },
-            { text: 'といちじ', isCorrect: false, reason: '「と」是訓讀{くんどく}，時間{じかん}使用{しよう}する音讀{おんどく}。' },
-            { text: 'じゅういっじ', isCorrect: false, reason: '「時{じ}」前{まえ}不促音化{ふそくおんか}。' },
-            { text: 'じゅうひとじ', isCorrect: false, reason: '「ひと」是訓讀{くんどく}，時間{じかん}使用{しよう}する音讀{おんどく}「いち」。' }
+            { text: 'じゅういちじ', isCorrect: true, reason: '正確！「十一時{じゅういちじ}」讀作「じゅういちじ」。' },
+            { text: 'といちじ', isCorrect: false, reason: '「と」是訓讀，時間使用音讀。' },
+            { text: 'じゅういっじ', isCorrect: false, reason: '「時」前不促音化。' },
+            { text: 'じゅうひとじ', isCorrect: false, reason: '「ひと」是訓讀，時間使用音讀「いち」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '時間{じかん}使用{しよう}音讀{おんどく}，「十一時{じゅういちじ}」讀作{どくさ}「じゅういちじ」。',
-            relatedRules: ['時間{じかん}の讀法{よみかた}', '十位{じゅうい}時間{じかん}の表達{ひょうたつ}']
+            correctRule: '時間使用音讀，「十一時{じゅういちじ}」讀作「じゅういちじ」。',
+            relatedRules: ['時間的讀法', '十位時間的表達']
         },
         sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
     },
@@ -81,18 +81,18 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'tens',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十二」的正確讀音是？',
+        stem: '「十二」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十二」的正確讀音是？',
         options: [
-            { text: 'じゅうに', isCorrect: true, reason: '正確{せいかく}！「十二{じゅうに}」讀作{どくさ}「じゅうに」。' },
-            { text: 'とふた', isCorrect: false, reason: '組合{くみあわせ}數字{すうじ}使用{しよう}しない訓讀{くんどく}。' },
-            { text: 'じゅうふた', isCorrect: false, reason: '「ふた」是訓讀{くんどく}，應{おう}使用{しよう}音讀{おんどく}「に」。' },
-            { text: 'じゅに', isCorrect: false, reason: '少了{すくな}「う」，正確{せいかく}は「じゅうに」。' }
+            { text: 'じゅうに', isCorrect: true, reason: '正確！「十二{じゅうに}」讀作「じゅうに」。' },
+            { text: 'とふた', isCorrect: false, reason: '組合數字不使用訓讀。' },
+            { text: 'じゅうふた', isCorrect: false, reason: '「ふた」是訓讀，應使用音讀「に」。' },
+            { text: 'じゅに', isCorrect: false, reason: '少了「う」，正確「じゅうに」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十二{じゅうに}」是音讀{おんどく}組合{くみあわせ}，讀作{どくさ}「じゅうに」。',
-            relatedRules: ['十位數{じゅういすう}の組合{くみあわせ}', '12の發音{はつおん}']
+            correctRule: '「十二{じゅうに}」是音讀組合，讀作「じゅうに」。',
+            relatedRules: ['十位數的組合', '12的發音']
         },
         sourceItem: { value: 12, kanji: '十二', reading: 'じゅうに' }
     },
@@ -105,15 +105,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '一年は＿＿か月あります。',
         stem_zh: '一年有十二個月。',
         options: [
-            { text: 'じゅうにか', isCorrect: false, reason: '「か月{かげつ}」前{まえ}需要{じゅよう}完整{かんせい}「じゅうに」。' },
-            { text: 'じゅうにかげつ', isCorrect: true, reason: '正確{せいかく}！「十二か月{じゅうにかげつ}」。' },
-            { text: 'とふたかげつ', isCorrect: false, reason: '「か月{かげつ}」使用{しよう}しない訓讀{くんどく}數字{すうじ}。' },
-            { text: 'じゅっにかげつ', isCorrect: false, reason: '「十二{じゅうに}」不促音化{ふそくおんか}。' }
+            { text: 'じゅうにか', isCorrect: false, reason: '「か月{かげつ}」前需要完整「じゅうに」。' },
+            { text: 'じゅうにかげつ', isCorrect: true, reason: '正確！「十二か月{じゅうにかげつ}」。' },
+            { text: 'とふたかげつ', isCorrect: false, reason: '「か月{かげつ}」不使用訓讀數字。' },
+            { text: 'じゅっにかげつ', isCorrect: false, reason: '「十二{じゅうに}」不促音化。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十二か月{じゅうにかげつ}」表示{ひょうじ}期間{きかん}，使用{しよう}音讀{おんどく}組合{くみあわせ}。',
-            relatedRules: ['期間{きかん}の表達{ひょうたつ}', '「か月{かげつ}」の使用{しよう}']
+            correctRule: '「十二か月{じゅうにかげつ}」表示期間，使用音讀組合。',
+            relatedRules: ['期間的表達', '「か月{かげつ}」的使用']
         },
         sourceItem: { value: 12, kanji: '十二か月', reading: 'じゅうにかげつ' }
     },
@@ -130,15 +130,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿生まれです。（十二月）'
         },
         options: [
-            { text: 'じゅうにがつ', isCorrect: true, reason: '正確{せいかく}！「十二月{じゅうにがつ}」讀作{どくさ}「じゅうにがつ」。' },
-            { text: 'とふたがつ', isCorrect: false, reason: '月份{げっぷん}使用{しよう}しない訓讀{くんどく}數字{すうじ}。' },
-            { text: 'じゅっにがつ', isCorrect: false, reason: '「十二{じゅうに}」不促音化{ふそくおんか}。' },
-            { text: 'じゅにがつ', isCorrect: false, reason: '少了{すくな}「う」，正確{せいかく}は「じゅうにがつ」。' }
+            { text: 'じゅうにがつ', isCorrect: true, reason: '正確！「十二月{じゅうにがつ}」讀作「じゅうにがつ」。' },
+            { text: 'とふたがつ', isCorrect: false, reason: '月份不使用訓讀數字。' },
+            { text: 'じゅっにがつ', isCorrect: false, reason: '「十二{じゅうに}」不促音化。' },
+            { text: 'じゅにがつ', isCorrect: false, reason: '少了「う」，正確「じゅうにがつ」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十二月{じゅうにがつ}」是一年{いちねん}最後{さいご}の月份{げっぷん}，使用{しよう}音讀{おんどく}。',
-            relatedRules: ['月份{げっぷん}の讀法{よみかた}', '12月{じゅうにがつ}の發音{はつおん}']
+            correctRule: '「十二月{じゅうにがつ}」是一年最後の月份，使用音讀。',
+            relatedRules: ['月份的讀法', '12月{じゅうにがつ}的發音']
         },
         sourceItem: { value: 12, kanji: '十二月', reading: 'じゅうにがつ' }
     },
@@ -153,16 +153,16 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '「十四」最常用的讀音是？',
         stem_zh: '「十四」最常用的讀音是？',
         options: [
-            { text: 'じゅうし', isCorrect: false, reason: '「じゅうし」也可以{かのう}，但因{たんいん}避諱{ひき}「死{し}」，日常{にちじょう}多用{おおくもちい}「じゅうよん」。' },
-            { text: 'じゅうよん', isCorrect: true, reason: '正確{せいかく}！為{ため}避諱{ひき}「死{し}」，日常{にちじょう}多く{おおく}使用{しよう}「じゅうよん」。' },
-            { text: 'じゅよん', isCorrect: false, reason: '少了{すくな}「う」，正確{せいかく}は「じゅうよん」。' },
-            { text: 'とよっつ', isCorrect: false, reason: '組合{くみあわせ}數字{すうじ}使用{しよう}しない訓讀{くんどく}。' }
+            { text: 'じゅうし', isCorrect: false, reason: '「じゅうし」也可以，但因避諱「死」，日常多用「じゅうよん」。' },
+            { text: 'じゅうよん', isCorrect: true, reason: '正確！為避諱「死」，日常多使用「じゅうよん」。' },
+            { text: 'じゅよん', isCorrect: false, reason: '少了「う」，正確「じゅうよん」。' },
+            { text: 'とよっつ', isCorrect: false, reason: '組合數字不使用訓讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十四{じゅうよん}」有兩種{りょうしゅ}讀法{よみかた}：「じゅうし」和「じゅうよん」。由於{ゆえ}「し」與「死{し}」同音{どうおん}，日常{にちじょう}多く{おおく}使用{しよう}「じゅうよん」。',
-            trapExplanation: '陷阱題{かんけいだい}，測試{そくし}避諱{ひき}習慣{しゅうかん}的了解{りょうかい}。',
-            relatedRules: ['十四{じゅうよん}の兩種{りょうしゅ}讀法{よみかた}', '避諱{ひき}文化{ぶんか}']
+            correctRule: '「十四{じゅうよん}」有兩種讀法：「じゅうし」和「じゅうよん」。由於「し」與「死」同音，日常多使用「じゅうよん」。',
+            trapExplanation: '陷阱題，測試避諱習慣的了解。',
+            relatedRules: ['十四{じゅうよん}の兩種讀法', '避諱文化']
         },
         sourceItem: { value: 14, kanji: '十四', reading: 'じゅうよん / じゅうし' }
     },
@@ -175,16 +175,16 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '今日は＿＿日です。',
         stem_zh: '今天是十四號。',
         options: [
-            { text: 'じゅうよんにち', isCorrect: false, reason: '陷阱{かんけい}！日期{にっき}中14日{じゅうよっか}保留{ほりゅう}訓讀{くんどく}「よっか」，讀む{よむ}「じゅうよっか」。' },
-            { text: 'じゅうよっか', isCorrect: true, reason: '正確{せいかく}！「十四日{じゅうよっか}」保留{ほりゅう}了{た}4日{よっか}の訓讀{くんどく}「よっか」。' },
-            { text: 'じゅうしにち', isCorrect: false, reason: '日期{にっき}中14日{じゅうよっか}使用{しよう}特殊{とくしゅ}讀法{よみかた}「じゅうよっか」。' },
-            { text: 'といよっか', isCorrect: false, reason: '「十{じゅう}」部分{ぶぶん}使用{しよう}する音讀{おんどく}「じゅう」。' }
+            { text: 'じゅうよんにち', isCorrect: false, reason: '陷阱！日期中14日{じゅうよっか}保留訓讀「よっか」，讀「じゅうよっか」。' },
+            { text: 'じゅうよっか', isCorrect: true, reason: '正確！「十四日{じゅうよっか}」保留了4日{よっか}的訓讀「よっか」。' },
+            { text: 'じゅうしにち', isCorrect: false, reason: '日期中14日{じゅうよっか}使用特殊讀法「じゅうよっか」。' },
+            { text: 'といよっか', isCorrect: false, reason: '「十」部分使用音讀「じゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '日期{にっき}中，14日{じゅうよっか}和24日{にじゅうよっか}保留{ほりゅう}了{た}4日{よっか}の訓讀{くんどく}「よっか」，讀む{よむ}「じゅうよっか」。',
-            trapExplanation: '這是重要{じゅうよう}陷阱{かんけい}，學習者{がくしゅうしゃ}容易{ようい}套用{とうよう}音讀{おんどく}規則{きそく}而讀む{よむ}「じゅうよんにち」。',
-            relatedRules: ['14日{じゅうよっか}、24日{にじゅうよっか}の特殊{とくしゅ}讀法{よみかた}', '日期{にっき}の訓讀{くんどく}保留{ほりゅう}']
+            correctRule: '日期中，14日{じゅうよっか}和24日{にじゅうよっか}保留了4日{よっか}的訓讀「よっか」，讀「じゅうよっか」。',
+            trapExplanation: '這是重要陷阱，學習者容易套用音讀規則而讀「じゅうよんにち」。',
+            relatedRules: ['14日{じゅうよっか}、24日{にじゅうよっか}的特殊讀法', '日期的訓讀保留']
         },
         sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
     },
@@ -201,15 +201,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿歳です。（十四歲）'
         },
         options: [
-            { text: 'じゅうよんさい', isCorrect: true, reason: '正確{せいかく}！「十四歳{じゅうよんさい}」讀作{どくさ}「じゅうよんさい」。' },
-            { text: 'じゅうしさい', isCorrect: false, reason: '雖然{すいぜん}語法{ごほう}正確{せいかく}，但避諱{ひき}「死{し}」，多用{おおくもちい}「じゅうよんさい」。' },
-            { text: 'じゅうよっさい', isCorrect: false, reason: '年齡{ねんれい}不使用{ふしよう}「よっ」，應{おう}是「よん」。' },
-            { text: 'とよっさい', isCorrect: false, reason: '年齡{ねんれい}使用{しよう}する音讀{おんどく}「じゅう」。' }
+            { text: 'じゅうよんさい', isCorrect: true, reason: '正確！「十四歳{じゅうよんさい}」讀作「じゅうよんさい」。' },
+            { text: 'じゅうしさい', isCorrect: false, reason: '雖然語法正確，但避諱「死」，多用「じゅうよんさい」。' },
+            { text: 'じゅうよっさい', isCorrect: false, reason: '年齡不使用「よっ」，應是「よん」。' },
+            { text: 'とよっさい', isCorrect: false, reason: '年齡使用音讀「じゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十四歳{じゅうよんさい}」讀作{どくさ}「じゅうよんさい」，使用{しよう}「よん」避諱{ひき}。',
-            relatedRules: ['年齡{ねんれい}の表達{ひょうたつ}', '14の避諱{ひき}讀法{よみかた}']
+            correctRule: '「十四歳{じゅうよんさい}」讀作「じゅうよんさい」，使用「よん」避諱。',
+            relatedRules: ['年齡的表達', '14の避諱讀法']
         },
         sourceItem: { value: 14, kanji: '十四歳', reading: 'じゅうよんさい' }
     },
@@ -221,18 +221,18 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'tens',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二十」的正確讀音是？',
+        stem: '「二十」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二十」的正確讀音是？',
         options: [
-            { text: 'にじゅう', isCorrect: true, reason: '正確{せいかく}！「二十{にじゅう}」讀作{どくさ}「にじゅう」。' },
-            { text: 'ふたじゅう', isCorrect: false, reason: '「ふた」是訓讀{くんどく}，組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}。' },
-            { text: 'はたち', isCorrect: false, reason: '「はたち」是「二十歳{にじゅっさい}」の特殊{とくしゅ}讀法{よみかた}，不是單純{たんじゅん}數字{すうじ}20。' },
-            { text: 'にじゅ', isCorrect: false, reason: '少了{すくな}「う」，正確{せいかく}は「にじゅう」。' }
+            { text: 'にじゅう', isCorrect: true, reason: '正確！「二十{にじゅう}」讀作「にじゅう」。' },
+            { text: 'ふたじゅう', isCorrect: false, reason: '「ふた」是訓讀，組合數字使用音讀。' },
+            { text: 'はたち', isCorrect: false, reason: '「はたち」是「二十歳」的特殊讀法，不是單純數字20。' },
+            { text: 'にじゅ', isCorrect: false, reason: '少了「う」，正確「にじゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二十{にじゅう}」讀作{どくさ}「にじゅう」，是二{に}乘以{じょうい}十{じゅう}の音讀{おんどく}組合{くみあわせ}。',
-            relatedRules: ['整十數{せいじゅうすう}の讀法{よみかた}', '20の標準{ひょうじゅん}發音{はつおん}']
+            correctRule: '「二十{にじゅう}」讀作「にじゅう」，是二{に}乘以十{じゅう}的音讀組合。',
+            relatedRules: ['整十數的讀法', '20の標準發音']
         },
         sourceItem: { value: 20, kanji: '二十', reading: 'にじゅう' }
     },
@@ -245,16 +245,16 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '今日は＿＿日です。',
         stem_zh: '今天是二十號。',
         options: [
-            { text: 'にじゅうにち', isCorrect: false, reason: '陷阱{かんけい}！日期{にっき}中「二十日{はつか}」有特殊{とくしゅ}讀法{よみかた}「はつか」。' },
-            { text: 'はつか', isCorrect: true, reason: '正確{せいかく}！「二十日{はつか}」是完全{かんぜん}特殊{とくしゅ}讀法{よみかた}，讀む{よむ}「はつか」。' },
-            { text: 'ふたじゅうにち', isCorrect: false, reason: '日期{にっき}使用{しよう}しない這個{この}組合{くみあわせ}。' },
-            { text: 'にじゅっか', isCorrect: false, reason: '20日{はつか}不使用{ふしよう}促音{そくおん}，固定{こてい}讀む{よむ}「はつか」。' }
+            { text: 'にじゅうにち', isCorrect: false, reason: '陷阱！日期中「二十日{はつか}」有特殊讀法「はつか」。' },
+            { text: 'はつか', isCorrect: true, reason: '正確！「二十日{はつか}」是完全特殊讀法，讀「はつか」。' },
+            { text: 'ふたじゅうにち', isCorrect: false, reason: '日期不使用這個組合。' },
+            { text: 'にじゅっか', isCorrect: false, reason: '20日{はつか}不使用促音，固定讀「はつか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二十日{はつか}」是日期{にっき}中最{もっと}特殊{とくしゅ}の讀法{よみかた}，完全{かんぜん}獨立{どくりつ}，讀む{よむ}「はつか」。與數字{すうじ}「二十{にじゅう}」讀法{よみかた}完全{かんぜん}不同{ふどう}。',
-            trapExplanation: '這是最{もっと}重要{じゅうよう}の日期{にっき}陷阱{かんけい}。「二十日{はつか}」的讀法{よみかた}與其他{たいた}任何{いかなる}數字{すうじ}都{すべて}無關{むかん}，必須{ひっす}特別{とくべつ}記憶{きおく}。',
-            relatedRules: ['二十日{はつか}の特殊{とくしゅ}讀法{よみかた}', '日期{にっき}の訓讀{くんどく}系統{けいとう}']
+            correctRule: '「二十日{はつか}」是日期中最特殊的讀法，完全獨立，讀「はつか」。與數字「二十{にじゅう}」讀法完全不同。',
+            trapExplanation: '這是最重要の日期陷阱。「二十日{はつか}」的讀法與其他任何數字都無關，必須特別記憶。',
+            relatedRules: ['二十日{はつか}的特殊讀法', '日期的訓讀系統']
         },
         sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
     },
@@ -271,16 +271,16 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（二十歲）'
         },
         options: [
-            { text: 'にじゅっさい', isCorrect: false, reason: '雖然{すいぜん}這也可以{かのう}，但二十歳{にじゅっさい}有特殊{とくしゅ}讀法{よみかた}「はたち」。' },
-            { text: 'はたち', isCorrect: true, reason: '正確{せいかく}！「二十歳{にじゅっさい}」有特殊{とくしゅ}讀法{よみかた}「はたち」，這是成年{せいねん}的象徵{しょうちょう}。' },
-            { text: 'ふたじゅっさい', isCorrect: false, reason: '年齡{ねんれい}使用{しよう}しない訓讀{くんどく}「ふた」。' },
-            { text: 'にじゅうさい', isCorrect: false, reason: '「二十{にじゅう}」後接{こうせつ}「歳{さい}」時{とき}，使用{しよう}する特殊{とくしゅ}讀法{よみかた}「はたち」更常見{こうじょうけん}。' }
+            { text: 'にじゅっさい', isCorrect: false, reason: '雖然這也可以，但二十歳{にじゅっさい}有特殊讀法「はたち」。' },
+            { text: 'はたち', isCorrect: true, reason: '正確！「二十歳{にじゅっさい}」有特殊讀法「はたち」，這是成年的象徵。' },
+            { text: 'ふたじゅっさい', isCorrect: false, reason: '年齡不使用訓讀「ふた」。' },
+            { text: 'にじゅうさい', isCorrect: false, reason: '「二十{にじゅう}」後接「歳」時，使用特殊讀法「はたち」更常見。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二十歳{にじゅっさい}」有特殊{とくしゅ}讀法{よみかた}「はたち」，這是日本{にほん}成年{せいねん}の重要{じゅうよう}年齡{ねんれい}，有獨立{どくりつ}的傳統{でんとう}稱呼{しょうこ}。',
-            trapExplanation: '「はたち」是日本{にほん}文化{ぶんか}中非常{ひじょう}重要{じゅうよう}の詞彙{しい}，代表{だいひょう}成人{せいじん}。',
-            relatedRules: ['二十歳{にじゅっさい}の特殊{とくしゅ}讀法{よみかた}', '「はたち」の文化{ぶんか}意義{いぎ}']
+            correctRule: '「二十歳{にじゅっさい}」有特殊讀法「はたち」，這是日本成年的重要年齡，有獨立的傳統稱呼。',
+            trapExplanation: '「はたち」是日本文化中非常重要の詞彙，代表成人。',
+            relatedRules: ['二十歳{にじゅっさい}的特殊讀法', '「はたち」の文化意義']
         },
         sourceItem: { value: 20, kanji: '二十歳', reading: 'はたち' }
     },
@@ -292,18 +292,18 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'tens',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「三十」的正確讀音是？',
+        stem: '「三十」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三十」的正確讀音是？',
         options: [
-            { text: 'さんじゅう', isCorrect: true, reason: '正確{せいかく}！「三十{さんじゅう}」讀作{どくさ}「さんじゅう」。' },
-            { text: 'みっじゅう', isCorrect: false, reason: '「み」是訓讀{くんどく}，組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}。' },
-            { text: 'さんじゅ', isCorrect: false, reason: '少了{すくな}「う」，正確{せいかく}は「さんじゅう」。' },
-            { text: 'みそ', isCorrect: false, reason: '「みそ」は古語{こご}，現代{げんだい}日語{にほんご}使用{しよう}しない。' }
+            { text: 'さんじゅう', isCorrect: true, reason: '正確！「三十{さんじゅう}」讀作「さんじゅう」。' },
+            { text: 'みっじゅう', isCorrect: false, reason: '「み」是訓讀，組合數字使用音讀。' },
+            { text: 'さんじゅ', isCorrect: false, reason: '少了「う」，正確「さんじゅう」。' },
+            { text: 'みそ', isCorrect: false, reason: '「みそ」は古語，現代日語不使用。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三十{さんじゅう}」讀作{どくさ}「さんじゅう」，是三{さん}乘以{じょうい}十{じゅう}の音讀{おんどく}組合{くみあわせ}。',
-            relatedRules: ['整十數{せいじゅうすう}の讀法{よみかた}', '30の發音{はつおん}']
+            correctRule: '「三十{さんじゅう}」讀作「さんじゅう」，是三{さん}乘以十{じゅう}的音讀組合。',
+            relatedRules: ['整十數的讀法', '30的發音']
         },
         sourceItem: { value: 30, kanji: '三十', reading: 'さんじゅう' }
     },
@@ -316,15 +316,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '今日は＿＿日です。',
         stem_zh: '今天是三十號。',
         options: [
-            { text: 'さんじゅうにち', isCorrect: true, reason: '正確{せいかく}！「三十日{さんじゅうにち}」讀作{どくさ}「さんじゅうにち」。' },
-            { text: 'みそか', isCorrect: false, reason: '「みそか」是古語{こご}形式{けいしき}，現代{げんだい}多用{おおくもちい}「さんじゅうにち」。' },
-            { text: 'さんじゅっか', isCorrect: false, reason: '「日{にち}」前{まえ}不促音化{ふそくおんか}。' },
-            { text: 'みっじゅうにち', isCorrect: false, reason: '日期{にっき}使用{しよう}する音讀{おんどく}「さん」。' }
+            { text: 'さんじゅうにち', isCorrect: true, reason: '正確！「三十日{さんじゅうにち}」讀作「さんじゅうにち」。' },
+            { text: 'みそか', isCorrect: false, reason: '「みそか」是古語形式，現代多用「さんじゅうにち」。' },
+            { text: 'さんじゅっか', isCorrect: false, reason: '「日{にち}」前不促音化。' },
+            { text: 'みっじゅうにち', isCorrect: false, reason: '日期使用音讀「さん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三十日{さんじゅうにち}」讀作{どくさ}「さんじゅうにち」，使用{しよう}音讀{おんどく}規則{きそく}。',
-            relatedRules: ['30日{さんじゅうにち}の讀法{よみかた}', '日期{にっき}の音讀{おんどく}']
+            correctRule: '「三十日{さんじゅうにち}」讀作「さんじゅうにち」，使用音讀規則。',
+            relatedRules: ['30日{さんじゅうにち}的讀法', '日期的音讀']
         },
         sourceItem: { value: 30, kanji: '三十日', reading: 'さんじゅうにち' }
     },
@@ -341,15 +341,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿歳です。（三十歲）'
         },
         options: [
-            { text: 'さんじゅっさい', isCorrect: true, reason: '正確{せいかく}！「三十歳{さんじゅっさい}」，「じゅう」＋「さい」促音化{そくおんか}為「じゅっさい」。' },
-            { text: 'さんじゅうさい', isCorrect: false, reason: '「歳{さい}」前{まえ}會促音化{そくおんか}，應{おう}是「じゅっさい」。' },
-            { text: 'みっじゅっさい', isCorrect: false, reason: '年齡{ねんれい}使用{しよう}する音讀{おんどく}「さん」。' },
-            { text: 'さんじゅさい', isCorrect: false, reason: '不完整{ふかんせい}，正確{せいかく}は「さんじゅっさい」。' }
+            { text: 'さんじゅっさい', isCorrect: true, reason: '正確！「三十歳{さんじゅっさい}」，「じゅう」＋「さい」促音化為「じゅっさい」。' },
+            { text: 'さんじゅうさい', isCorrect: false, reason: '「歳{さい}」前會促音化，應是「じゅっさい」。' },
+            { text: 'みっじゅっさい', isCorrect: false, reason: '年齡使用音讀「さん」。' },
+            { text: 'さんじゅさい', isCorrect: false, reason: '不完整，正確「さんじゅっさい」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三十歳{さんじゅっさい}」中，「十{じゅう}」＋「歳{さい}」會促音化{そくおんか}，變成{へんせい}「じゅっさい」。',
-            relatedRules: ['年齡{ねんれい}の促音化{そくおんか}', '整十{せいじゅう}年齡{ねんれい}の讀法{よみかた}']
+            correctRule: '「三十歳{さんじゅっさい}」中，「十{じゅう}」＋「歳{さい}」會促音化，變成「じゅっさい」。',
+            relatedRules: ['年齡的促音化', '整十年齡的讀法']
         },
         sourceItem: { value: 30, kanji: '三十歳', reading: 'さんじゅっさい' }
     },
@@ -364,16 +364,16 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '「四十」最常用的讀音是？',
         stem_zh: '「四十」最常用的讀音是？',
         options: [
-            { text: 'しじゅう', isCorrect: false, reason: '「しじゅう」也正確{せいかく}，但為{ため}避諱{ひき}「死{し}」，日常{にちじょう}多用{おおくもちい}「よんじゅう」。' },
-            { text: 'よんじゅう', isCorrect: true, reason: '正確{せいかく}！為{ため}避諱{ひき}「死{し}」，日常{にちじょう}多く{おおく}使用{しよう}「よんじゅう」。' },
-            { text: 'よじゅう', isCorrect: false, reason: '缺少{けっしょう}「ん」，正確{せいかく}は「よんじゅう」。' },
-            { text: 'よっじゅう', isCorrect: false, reason: '沒有{ない}促音{そくおん}，正確{せいかく}は「よんじゅう」。' }
+            { text: 'しじゅう', isCorrect: false, reason: '「しじゅう」也正確，但為避諱「死」，日常多用「よんじゅう」。' },
+            { text: 'よんじゅう', isCorrect: true, reason: '正確！為避諱「死」，日常多使用「よんじゅう」。' },
+            { text: 'よじゅう', isCorrect: false, reason: '缺少「ん」，正確「よんじゅう」。' },
+            { text: 'よっじゅう', isCorrect: false, reason: '沒有促音，正確「よんじゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「四十{よんじゅう}」為{ため}避諱{ひき}「死{し}」，日常{にちじょう}多く{おおく}使用{しよう}「よんじゅう」而非「しじゅう」。',
-            trapExplanation: '陷阱題{かんけいだい}，測試{そくし}避諱{ひき}習慣{しゅうかん}的了解{りょうかい}。',
-            relatedRules: ['四十{よんじゅう}の避諱{ひき}讀法{よみかた}', '避諱{ひき}文化{ぶんか}在組合{くみあわせ}數字{すうじ}中の應用{おうよう}']
+            correctRule: '「四十{よんじゅう}」為避諱「死」，日常多使用「よんじゅう」而非「しじゅう」。',
+            trapExplanation: '陷阱題，測試避諱習慣的了解。',
+            relatedRules: ['四十{よんじゅう}の避諱讀法', '避諱文化在組合數字中の應用']
         },
         sourceItem: { value: 40, kanji: '四十', reading: 'よんじゅう' }
     },
@@ -386,15 +386,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '私は＿＿人のクラスにいます。',
         stem_zh: '我在四十人的班級。',
         options: [
-            { text: 'よんじゅうにん', isCorrect: true, reason: '正確{せいかく}！「四十人{よんじゅうにん}」讀作{どくさ}「よんじゅうにん」。' },
-            { text: 'しじゅうにん', isCorrect: false, reason: '為{ため}避諱{ひき}「死{し}」，多用{おおくもちい}「よんじゅう」。' },
-            { text: 'よっじゅうにん', isCorrect: false, reason: '沒有{ない}促音{そくおん}，正確{せいかく}は「よんじゅう」。' },
-            { text: 'よじゅうにん', isCorrect: false, reason: '缺少{けっしょう}「ん」，正確{せいかく}は「よんじゅう」。' }
+            { text: 'よんじゅうにん', isCorrect: true, reason: '正確！「四十人{よんじゅうにん}」讀作「よんじゅうにん」。' },
+            { text: 'しじゅうにん', isCorrect: false, reason: '為避諱「死」，多用「よんじゅう」。' },
+            { text: 'よっじゅうにん', isCorrect: false, reason: '沒有促音，正確「よんじゅう」。' },
+            { text: 'よじゅうにん', isCorrect: false, reason: '缺少「ん」，正確「よんじゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四十人{よんじゅうにん}」使用{しよう}「よん」避諱{ひき}「死{し}」。',
-            relatedRules: ['人數{にんずう}の表達{ひょうたつ}', '40の避諱{ひき}讀法{よみかた}']
+            correctRule: '「四十人{よんじゅうにん}」使用「よん」避諱「死」。',
+            relatedRules: ['人數的表達', '40の避諱讀法']
         },
         sourceItem: { value: 40, kanji: '四十人', reading: 'よんじゅうにん' }
     },
@@ -411,15 +411,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿歳です。（四十歲）'
         },
         options: [
-            { text: 'よんじゅっさい', isCorrect: true, reason: '正確{せいかく}！「四十歳{よんじゅっさい}」，促音化{そくおんか}為「じゅっさい」。' },
-            { text: 'しじゅっさい', isCorrect: false, reason: '為{ため}避諱{ひき}「死{し}」，多用{おおくもちい}「よん」。' },
-            { text: 'よんじゅうさい', isCorrect: false, reason: '「歳{さい}」前{まえ}會促音化{そくおんか}，應{おう}是「じゅっさい」。' },
-            { text: 'よっじゅっさい', isCorrect: false, reason: '沒有{ない}「よっ」這個{この}形式{けいしき}。' }
+            { text: 'よんじゅっさい', isCorrect: true, reason: '正確！「四十歳{よんじゅっさい}」，促音化為「じゅっさい」。' },
+            { text: 'しじゅっさい', isCorrect: false, reason: '為避諱「死」，多用「よん」。' },
+            { text: 'よんじゅうさい', isCorrect: false, reason: '「歳{さい}」前會促音化，應是「じゅっさい」。' },
+            { text: 'よっじゅっさい', isCorrect: false, reason: '沒有「よっ」這個形式。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四十歳{よんじゅっさい}」使用{しよう}「よん」＋促音化{そくおんか}「じゅっさい」。',
-            relatedRules: ['年齡{ねんれい}の促音化{そくおんか}', '40の避諱{ひき}讀法{よみかた}']
+            correctRule: '「四十歳{よんじゅっさい}」使用「よん」＋促音化「じゅっさい」。',
+            relatedRules: ['年齡的促音化', '40の避諱讀法']
         },
         sourceItem: { value: 40, kanji: '四十歳', reading: 'よんじゅっさい' }
     },
@@ -431,18 +431,18 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'tens',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五十」的正確讀音是？',
+        stem: '「五十」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五十」的正確讀音是？',
         options: [
-            { text: 'ごじゅう', isCorrect: true, reason: '正確{せいかく}！「五十{ごじゅう}」讀作{どくさ}「ごじゅう」。' },
-            { text: 'いつじゅう', isCorrect: false, reason: '「いつ」是訓讀{くんどく}，組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}。' },
-            { text: 'こじゅう', isCorrect: false, reason: '「ご」需要{じゅよう}濁音{だくおん}，不是「こ」。' },
-            { text: 'ごじゅ', isCorrect: false, reason: '少了{すくな}「う」，正確{せいかく}は「ごじゅう」。' }
+            { text: 'ごじゅう', isCorrect: true, reason: '正確！「五十{ごじゅう}」讀作「ごじゅう」。' },
+            { text: 'いつじゅう', isCorrect: false, reason: '「いつ」是訓讀，組合數字使用音讀。' },
+            { text: 'こじゅう', isCorrect: false, reason: '「ご」需要濁音，不是「こ」。' },
+            { text: 'ごじゅ', isCorrect: false, reason: '少了「う」，正確「ごじゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五十{ごじゅう}」讀作{どくさ}「ごじゅう」，是五{ご}乘以{じょうい}十{じゅう}の音讀{おんどく}組合{くみあわせ}。',
-            relatedRules: ['整十數{せいじゅうすう}の讀法{よみかた}', '50の發音{はつおん}']
+            correctRule: '「五十{ごじゅう}」讀作「ごじゅう」，是五{ご}乘以十{じゅう}的音讀組合。',
+            relatedRules: ['整十數的讀法', '50的發音']
         },
         sourceItem: { value: 50, kanji: '五十', reading: 'ごじゅう' }
     },
@@ -455,15 +455,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿ページあります。',
         stem_zh: '這本書有五十頁。',
         options: [
-            { text: 'ごじゅうページ', isCorrect: true, reason: '正確{せいかく}！「五十ページ」讀作{どくさ}「ごじゅうページ」。' },
-            { text: 'いつじゅうページ', isCorrect: false, reason: '頁數{ページ}使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'ごじゅっページ', isCorrect: false, reason: '「ページ」前{まえ}不促音化{ふそくおんか}。' },
-            { text: 'こじゅうページ', isCorrect: false, reason: '需要{じゅよう}濁音{だくおん}「ご」。' }
+            { text: 'ごじゅうページ', isCorrect: true, reason: '正確！「五十ページ」讀作「ごじゅうページ」。' },
+            { text: 'いつじゅうページ', isCorrect: false, reason: '頁數使用音讀「ご」。' },
+            { text: 'ごじゅっページ', isCorrect: false, reason: '「ページ」前不促音化。' },
+            { text: 'こじゅうページ', isCorrect: false, reason: '需要濁音「ご」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五十ページ」使用{しよう}音讀{おんどく}「ごじゅう」＋外來語{がいらいご}「ページ」。',
-            relatedRules: ['頁數{ページ}の表達{ひょうたつ}', '外來語{がいらいご}與數字{すうじ}の組合{くみあわせ}']
+            correctRule: '「五十ページ」使用音讀「ごじゅう」＋外來語「ページ」。',
+            relatedRules: ['頁數的表達', '外來語與數字的組合']
         },
         sourceItem: { value: 50, kanji: '五十', reading: 'ごじゅう' }
     },
@@ -480,15 +480,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿歳です。（五十歲）'
         },
         options: [
-            { text: 'ごじゅっさい', isCorrect: true, reason: '正確{せいかく}！「五十歳{ごじゅっさい}」，促音化{そくおんか}為「じゅっさい」。' },
-            { text: 'ごじゅうさい', isCorrect: false, reason: '「歳{さい}」前{まえ}會促音化{そくおんか}，應{おう}是「じゅっさい」。' },
-            { text: 'いつじゅっさい', isCorrect: false, reason: '年齡{ねんれい}使用{しよう}する音讀{おんどく}「ご」。' },
-            { text: 'こじゅっさい', isCorrect: false, reason: '需要{じゅよう}濁音{だくおん}「ご」。' }
+            { text: 'ごじゅっさい', isCorrect: true, reason: '正確！「五十歳{ごじゅっさい}」，促音化為「じゅっさい」。' },
+            { text: 'ごじゅうさい', isCorrect: false, reason: '「歳{さい}」前會促音化，應是「じゅっさい」。' },
+            { text: 'いつじゅっさい', isCorrect: false, reason: '年齡使用音讀「ご」。' },
+            { text: 'こじゅっさい', isCorrect: false, reason: '需要濁音「ご」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五十歳{ごじゅっさい}」中，「十{じゅう}」＋「歳{さい}」會促音化{そくおんか}，變成{へんせい}「じゅっさい」。',
-            relatedRules: ['年齡{ねんれい}の促音化{そくおんか}', '50の發音{はつおん}']
+            correctRule: '「五十歳{ごじゅっさい}」中，「十{じゅう}」＋「歳{さい}」會促音化，變成「じゅっさい」。',
+            relatedRules: ['年齡的促音化', '50的發音']
         },
         sourceItem: { value: 50, kanji: '五十歳', reading: 'ごじゅっさい' }
     },
@@ -500,18 +500,18 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'tens',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「六十」的正確讀音是？',
+        stem: '「六十」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「六十」的正確讀音是？',
         options: [
-            { text: 'ろくじゅう', isCorrect: true, reason: '正確{せいかく}！「六十{ろくじゅう}」讀作{どくさ}「ろくじゅう」。' },
-            { text: 'むっじゅう', isCorrect: false, reason: '「むっ」是訓讀{くんどく}，組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}。' },
-            { text: 'ろっじゅう', isCorrect: false, reason: '「六十{ろくじゅう}」不促音化{ふそくおんか}，正確{せいかく}は「ろくじゅう」。' },
-            { text: 'りくじゅう', isCorrect: false, reason: '「りく」是「陸{りく}」の讀法{よみかた}，數字{すうじ}讀む{よむ}「ろく」。' }
+            { text: 'ろくじゅう', isCorrect: true, reason: '正確！「六十{ろくじゅう}」讀作「ろくじゅう」。' },
+            { text: 'むっじゅう', isCorrect: false, reason: '「むっ」是訓讀，組合數字使用音讀。' },
+            { text: 'ろっじゅう', isCorrect: false, reason: '「六十{ろくじゅう}」不促音化，正確「ろくじゅう」。' },
+            { text: 'りくじゅう', isCorrect: false, reason: '「りく」是「陸{りく}」的讀法，數字讀「ろく」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六十{ろくじゅう}」讀作{どくさ}「ろくじゅう」，整十數{せいじゅうすう}不促音化{ふそくおんか}。',
-            relatedRules: ['整十數{せいじゅうすう}の讀法{よみかた}', '60の發音{はつおん}']
+            correctRule: '「六十{ろくじゅう}」讀作「ろくじゅう」，整十數不促音化。',
+            relatedRules: ['整十數的讀法', '60的發音']
         },
         sourceItem: { value: 60, kanji: '六十', reading: 'ろくじゅう' }
     },
@@ -524,15 +524,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '一時間は＿＿分です。',
         stem_zh: '一小時是六十分鐘。',
         options: [
-            { text: 'ろくじゅっぷん', isCorrect: true, reason: '正確{せいかく}！「六十分{ろくじゅっぷん}」，「十{じゅう}」＋「分{ふん}」促音化{そくおんか}＋半濁音化{はんだくおんか}。' },
-            { text: 'ろくじゅうふん', isCorrect: false, reason: '「分{ふん}」前{まえ}會促音化{そくおんか}＋半濁音化{はんだくおんか}，應{おう}是「じゅっぷん」。' },
-            { text: 'むっじゅっぷん', isCorrect: false, reason: '分鐘{ぷん}使用{しよう}する音讀{おんどく}「ろく」。' },
-            { text: 'ろくじゅぷん', isCorrect: false, reason: '不完整{ふかんせい}，正確{せいかく}は「ろくじゅっぷん」。' }
+            { text: 'ろくじゅっぷん', isCorrect: true, reason: '正確！「六十分{ろくじゅっぷん}」，「十{じゅう}」＋「分{ふん}」促音化＋半濁音化。' },
+            { text: 'ろくじゅうふん', isCorrect: false, reason: '「分{ふん}」前會促音化＋半濁音化，應是「じゅっぷん」。' },
+            { text: 'むっじゅっぷん', isCorrect: false, reason: '分鐘使用音讀「ろく」。' },
+            { text: 'ろくじゅぷん', isCorrect: false, reason: '不完整，正確「ろくじゅっぷん」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六十分{ろくじゅっぷん}」中，「十{じゅう}」＋「分{ふん}」會促音化{そくおんか}＋半濁音化{はんだくおんか}，變成{へんせい}「じゅっぷん」。',
-            relatedRules: ['分鐘{ふん}の促音化{そくおんか}＋半濁音化{はんだくおんか}', '時間{じかん}の表達{ひょうたつ}']
+            correctRule: '「六十分{ろくじゅっぷん}」中，「十{じゅう}」＋「分{ふん}」會促音化＋半濁音化，變成「じゅっぷん」。',
+            relatedRules: ['分鐘的促音化＋半濁音化', '時間的表達']
         },
         sourceItem: { value: 60, kanji: '六十分', reading: 'ろくじゅっぷん' }
     },
@@ -549,15 +549,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿歳です。（六十歲）'
         },
         options: [
-            { text: 'ろくじゅっさい', isCorrect: true, reason: '正確{せいかく}！「六十歳{ろくじゅっさい}」，促音化{そくおんか}為「じゅっさい」。' },
-            { text: 'ろくじゅうさい', isCorrect: false, reason: '「歳{さい}」前{まえ}會促音化{そくおんか}，應{おう}是「じゅっさい」。' },
-            { text: 'むっじゅっさい', isCorrect: false, reason: '年齡{ねんれい}使用{しよう}する音讀{おんどく}「ろく」。' },
-            { text: 'ろっじゅっさい', isCorrect: false, reason: '「六十{ろくじゅう}」不促音化{ふそくおんか}。' }
+            { text: 'ろくじゅっさい', isCorrect: true, reason: '正確！「六十歳{ろくじゅっさい}」，促音化為「じゅっさい」。' },
+            { text: 'ろくじゅうさい', isCorrect: false, reason: '「歳{さい}」前會促音化，應是「じゅっさい」。' },
+            { text: 'むっじゅっさい', isCorrect: false, reason: '年齡使用音讀「ろく」。' },
+            { text: 'ろっじゅっさい', isCorrect: false, reason: '「六十{ろくじゅう}」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六十歳{ろくじゅっさい}」中，「十{じゅう}」＋「歳{さい}」會促音化{そくおんか}，變成{へんせい}「じゅっさい」。',
-            relatedRules: ['年齡{ねんれい}の促音化{そくおんか}', '60の發音{はつおん}']
+            correctRule: '「六十歳{ろくじゅっさい}」中，「十{じゅう}」＋「歳{さい}」會促音化，變成「じゅっさい」。',
+            relatedRules: ['年齡的促音化', '60的發音']
         },
         sourceItem: { value: 60, kanji: '六十歳', reading: 'ろくじゅっさい' }
     },
@@ -572,16 +572,16 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '「七十」最常用的讀音是？',
         stem_zh: '「七十」最常用的讀音是？',
         options: [
-            { text: 'しちじゅう', isCorrect: false, reason: '「しちじゅう」也正確{せいかく}，但為{ため}避免{ひめん}與「一{いち}」混淆{こんこう}，多用{おおくもちい}「ななじゅう」。' },
-            { text: 'ななじゅう', isCorrect: true, reason: '正確{せいかく}！為{ため}避免{ひめん}與「一{いち}」混淆{こんこう}，日常{にちじょう}多く{おおく}使用{しよう}「ななじゅう」。' },
-            { text: 'なじゅう', isCorrect: false, reason: '缺少{けっしょう}「な」，正確{せいかく}は「ななじゅう」。' },
-            { text: 'ななつじゅう', isCorrect: false, reason: '「ななつ」是量詞{りょうし}讀法{よみかた}，不用於{もちいず}整十數{せいじゅうすう}。' }
+            { text: 'しちじゅう', isCorrect: false, reason: '「しちじゅう」也正確，但為避免與「いち」混淆，多用「ななじゅう」。' },
+            { text: 'ななじゅう', isCorrect: true, reason: '正確！為避免與「いち」混淆，日常多使用「ななじゅう」。' },
+            { text: 'なじゅう', isCorrect: false, reason: '缺少「な」，正確「ななじゅう」。' },
+            { text: 'ななつじゅう', isCorrect: false, reason: '「ななつ」是量詞讀法，不用於整十數。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「七十{ななじゅう}」為{ため}避免{ひめん}與「一{いち}」混淆{こんこう}，日常{にちじょう}多く{おおく}使用{しよう}「ななじゅう」而非「しちじゅう」。',
-            trapExplanation: '陷阱題{かんけいだい}，測試{そくし}避免{ひめん}混淆{こんこう}習慣{しゅうかん}的了解{りょうかい}。',
-            relatedRules: ['七十{ななじゅう}の兩種{りょうしゅ}讀法{よみかた}', '避免{ひめん}混淆{こんこう}の習慣{しゅうかん}']
+            correctRule: '「七十{ななじゅう}」為避免與「いち」混淆，日常多使用「ななじゅう」而非「しちじゅう」。',
+            trapExplanation: '陷阱題，測試避免混淆習慣的了解。',
+            relatedRules: ['七十{ななじゅう}の兩種讀法', '避免混淆の習慣']
         },
         sourceItem: { value: 70, kanji: '七十', reading: 'ななじゅう' }
     },
@@ -594,15 +594,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書七十日圓。',
         options: [
-            { text: 'ななじゅうえん', isCorrect: true, reason: '正確{せいかく}！「七十円{ななじゅうえん}」讀作{どくさ}「ななじゅうえん」。' },
-            { text: 'しちじゅうえん', isCorrect: false, reason: '為{ため}避免{ひめん}混淆{こんこう}，多用{おおくもちい}「なな」。' },
-            { text: 'ななじゅっえん', isCorrect: false, reason: '「円{えん}」前{まえ}不促音化{ふそくおんか}。' },
-            { text: 'なじゅうえん', isCorrect: false, reason: '缺少{けっしょう}「な」，正確{せいかく}は「ななじゅう」。' }
+            { text: 'ななじゅうえん', isCorrect: true, reason: '正確！「七十円{ななじゅうえん}」讀作「ななじゅうえん」。' },
+            { text: 'しちじゅうえん', isCorrect: false, reason: '為避免混淆，多用「なな」。' },
+            { text: 'ななじゅっえん', isCorrect: false, reason: '「円{えん}」前不促音化。' },
+            { text: 'なじゅうえん', isCorrect: false, reason: '缺少「な」，正確「ななじゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七十円{ななじゅうえん}」使用{しよう}「なな」避免{ひめん}混淆{こんこう}。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '70の避免{ひめん}混淆{こんこう}讀法{よみかた}']
+            correctRule: '「七十円{ななじゅうえん}」使用「なな」避免混淆。',
+            relatedRules: ['金額的表達', '70の避免混淆讀法']
         },
         sourceItem: { value: 70, kanji: '七十円', reading: 'ななじゅうえん' }
     },
@@ -619,15 +619,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿歳です。（七十歲）'
         },
         options: [
-            { text: 'ななじゅっさい', isCorrect: true, reason: '正確{せいかく}！「七十歳{ななじゅっさい}」，促音化{そくおんか}為「じゅっさい」。' },
-            { text: 'しちじゅっさい', isCorrect: false, reason: '為{ため}避免{ひめん}混淆{こんこう}，多用{おおくもちい}「なな」。' },
-            { text: 'ななじゅうさい', isCorrect: false, reason: '「歳{さい}」前{まえ}會促音化{そくおんか}，應{おう}是「じゅっさい」。' },
-            { text: 'ななつじゅっさい', isCorrect: false, reason: '「ななつ」不用於{もちいず}整十{せいじゅう}年齡{ねんれい}。' }
+            { text: 'ななじゅっさい', isCorrect: true, reason: '正確！「七十歳{ななじゅっさい}」，促音化為「じゅっさい」。' },
+            { text: 'しちじゅっさい', isCorrect: false, reason: '為避免混淆，多用「なな」。' },
+            { text: 'ななじゅうさい', isCorrect: false, reason: '「歳{さい}」前會促音化，應是「じゅっさい」。' },
+            { text: 'ななつじゅっさい', isCorrect: false, reason: '「ななつ」不用於整十年齡。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七十歳{ななじゅっさい}」使用{しよう}「なな」＋促音化{そくおんか}「じゅっさい」。',
-            relatedRules: ['年齡{ねんれい}の促音化{そくおんか}', '70の避免{ひめん}混淆{こんこう}讀法{よみかた}']
+            correctRule: '「七十歳{ななじゅっさい}」使用「なな」＋促音化「じゅっさい」。',
+            relatedRules: ['年齡的促音化', '70の避免混淆讀法']
         },
         sourceItem: { value: 70, kanji: '七十歳', reading: 'ななじゅっさい' }
     },
@@ -639,18 +639,18 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         subcategory: 'tens',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「八十」的正確讀音是？',
+        stem: '「八十」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「八十」的正確讀音是？',
         options: [
-            { text: 'はちじゅう', isCorrect: true, reason: '正確{せいかく}！「八十{はちじゅう}」讀作{どくさ}「はちじゅう」。' },
-            { text: 'やっじゅう', isCorrect: false, reason: '「やっ」是訓讀{くんどく}，組合{くみあわせ}數字{すうじ}使用{しよう}する音讀{おんどく}。' },
-            { text: 'はっじゅう', isCorrect: false, reason: '「八十{はちじゅう}」不促音化{ふそくおんか}，正確{せいかく}は「はちじゅう」。' },
-            { text: 'はちじゅ', isCorrect: false, reason: '少了{すくな}「う」，正確{せいかく}は「はちじゅう」。' }
+            { text: 'はちじゅう', isCorrect: true, reason: '正確！「八十{はちじゅう}」讀作「はちじゅう」。' },
+            { text: 'やっじゅう', isCorrect: false, reason: '「やっ」是訓讀，組合數字使用音讀。' },
+            { text: 'はっじゅう', isCorrect: false, reason: '「八十{はちじゅう}」不促音化，正確「はちじゅう」。' },
+            { text: 'はちじゅ', isCorrect: false, reason: '少了「う」，正確「はちじゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「八十{はちじゅう}」讀作{どくさ}「はちじゅう」，整十數{せいじゅうすう}不促音化{ふそくおんか}。',
-            relatedRules: ['整十數{せいじゅうすう}の讀法{よみかた}', '80の發音{はつおん}']
+            correctRule: '「八十{はちじゅう}」讀作「はちじゅう」，整十數不促音化。',
+            relatedRules: ['整十數的讀法', '80的發音']
         },
         sourceItem: { value: 80, kanji: '八十', reading: 'はちじゅう' }
     },
@@ -663,15 +663,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '私は＿＿点を取りました。',
         stem_zh: '我得了八十分。',
         options: [
-            { text: 'はちじゅってん', isCorrect: true, reason: '正確{せいかく}！「八十点{はちじゅってん}」，「十{じゅう}」＋「点{てん}」促音化{そくおんか}。' },
-            { text: 'はちじゅうてん', isCorrect: false, reason: '「点{てん}」前{まえ}會促音化{そくおんか}，應{おう}是「じゅってん」。' },
-            { text: 'やっじゅってん', isCorrect: false, reason: '分數{ぶんすう}使用{しよう}する音讀{おんどく}「はち」。' },
-            { text: 'はっじゅってん', isCorrect: false, reason: '「八十{はちじゅう}」不促音化{ふそくおんか}。' }
+            { text: 'はちじゅってん', isCorrect: true, reason: '正確！「八十点{はちじゅってん}」，「十{じゅう}」＋「点{てん}」促音化。' },
+            { text: 'はちじゅうてん', isCorrect: false, reason: '「点{てん}」前會促音化，應是「じゅってん」。' },
+            { text: 'やっじゅってん', isCorrect: false, reason: '分數使用音讀「はち」。' },
+            { text: 'はっじゅってん', isCorrect: false, reason: '「八十{はちじゅう}」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「八十点{はちじゅってん}」中，「十{じゅう}」＋「点{てん}」會促音化{そくおんか}，變成{へんせい}「じゅってん」。',
-            relatedRules: ['分數{ぶんすう}の促音化{そくおんか}', '「点{てん}」の音變{おんへん}']
+            correctRule: '「八十点{はちじゅってん}」中，「十{じゅう}」＋「点{てん}」會促音化，變成「じゅってん」。',
+            relatedRules: ['分數的促音化', '「点{てん}」的音變']
         },
         sourceItem: { value: 80, kanji: '八十点', reading: 'はちじゅってん' }
     },
@@ -688,15 +688,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿歳です。（八十歲）'
         },
         options: [
-            { text: 'はちじゅっさい', isCorrect: true, reason: '正確{せいかく}！「八十歳{はちじゅっさい}」，促音化{そくおんか}為「じゅっさい」。' },
-            { text: 'はちじゅうさい', isCorrect: false, reason: '「歳{さい}」前{まえ}會促音化{そくおんか}，應{おう}是「じゅっさい」。' },
-            { text: 'やっじゅっさい', isCorrect: false, reason: '年齡{ねんれい}使用{しよう}する音讀{おんどく}「はち」。' },
-            { text: 'はっじゅっさい', isCorrect: false, reason: '「八十{はちじゅう}」不促音化{ふそくおんか}。' }
+            { text: 'はちじゅっさい', isCorrect: true, reason: '正確！「八十歳{はちじゅっさい}」，促音化為「じゅっさい」。' },
+            { text: 'はちじゅうさい', isCorrect: false, reason: '「歳{さい}」前會促音化，應是「じゅっさい」。' },
+            { text: 'やっじゅっさい', isCorrect: false, reason: '年齡使用音讀「はち」。' },
+            { text: 'はっじゅっさい', isCorrect: false, reason: '「八十{はちじゅう}」不促音化。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「八十歳{はちじゅっさい}」中，「十{じゅう}」＋「歳{さい}」會促音化{そくおんか}，變成{へんせい}「じゅっさい」。',
-            relatedRules: ['年齡{ねんれい}の促音化{そくおんか}', '80の發音{はつおん}']
+            correctRule: '「八十歳{はちじゅっさい}」中，「十{じゅう}」＋「歳{さい}」會促音化，變成「じゅっさい」。',
+            relatedRules: ['年齡的促音化', '80的發音']
         },
         sourceItem: { value: 80, kanji: '八十歳', reading: 'はちじゅっさい' }
     },
@@ -711,16 +711,16 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '「九十」最常用的讀音是？',
         stem_zh: '「九十」最常用的讀音是？',
         options: [
-            { text: 'くじゅう', isCorrect: false, reason: '「くじゅう」也正確{せいかく}，但為{ため}避諱{ひき}「苦{く}」，多用{おおくもちい}「きゅうじゅう」。' },
-            { text: 'きゅうじゅう', isCorrect: true, reason: '正確{せいかく}！為{ため}避諱{ひき}「苦{く}」，日常{にちじょう}多く{おおく}使用{しよう}「きゅうじゅう」。' },
-            { text: 'ここじゅう', isCorrect: false, reason: '「ここ」不是「九{きゅう}」の讀法{よみかた}。' },
-            { text: 'きゅじゅう', isCorrect: false, reason: '少了{すくな}「う」，正確{せいかく}は「きゅうじゅう」。' }
+            { text: 'くじゅう', isCorrect: false, reason: '「くじゅう」也正確，但為避諱「苦」，多用「きゅうじゅう」。' },
+            { text: 'きゅうじゅう', isCorrect: true, reason: '正確！為避諱「苦」，日常多使用「きゅうじゅう」。' },
+            { text: 'ここじゅう', isCorrect: false, reason: '「ここ」不是「九」的讀法。' },
+            { text: 'きゅじゅう', isCorrect: false, reason: '少了「う」，正確「きゅうじゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「九十{きゅうじゅう}」為{ため}避諱{ひき}「苦{く}」，日常{にちじょう}多く{おおく}使用{しよう}「きゅうじゅう」而非「くじゅう」。',
-            trapExplanation: '陷阱題{かんけいだい}，測試{そくし}避諱{ひき}習慣{しゅうかん}的了解{りょうかい}。',
-            relatedRules: ['九十{きゅうじゅう}の避諱{ひき}讀法{よみかた}', '避諱{ひき}文化{ぶんか}']
+            correctRule: '「九十{きゅうじゅう}」為避諱「苦」，日常多使用「きゅうじゅう」而非「くじゅう」。',
+            trapExplanation: '陷阱題，測試避諱習慣的了解。',
+            relatedRules: ['九十{きゅうじゅう}の避諱讀法', '避諱文化']
         },
         sourceItem: { value: 90, kanji: '九十', reading: 'きゅうじゅう' }
     },
@@ -733,15 +733,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: 'この本は＿＿円です。',
         stem_zh: '這本書九十日圓。',
         options: [
-            { text: 'きゅうじゅうえん', isCorrect: true, reason: '正確{せいかく}！「九十円{きゅうじゅうえん}」讀作{どくさ}「きゅうじゅうえん」。' },
-            { text: 'くじゅうえん', isCorrect: false, reason: '為{ため}避諱{ひき}「苦{く}」，多用{おおくもちい}「きゅう」。' },
-            { text: 'きゅうじゅっえん', isCorrect: false, reason: '「円{えん}」前{まえ}不促音化{ふそくおんか}。' },
-            { text: 'ここじゅうえん', isCorrect: false, reason: '「ここ」不是「九{きゅう}」の讀法{よみかた}。' }
+            { text: 'きゅうじゅうえん', isCorrect: true, reason: '正確！「九十円{きゅうじゅうえん}」讀作「きゅうじゅうえん」。' },
+            { text: 'くじゅうえん', isCorrect: false, reason: '為避諱「苦」，多用「きゅう」。' },
+            { text: 'きゅうじゅっえん', isCorrect: false, reason: '「円{えん}」前不促音化。' },
+            { text: 'ここじゅうえん', isCorrect: false, reason: '「ここ」不是「九」的讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「九十円{きゅうじゅうえん}」使用{しよう}「きゅう」避諱{ひき}「苦{く}」。',
-            relatedRules: ['金額{きんがく}の表達{ひょうたつ}', '90の避諱{ひき}讀法{よみかた}']
+            correctRule: '「九十円{きゅうじゅうえん}」使用「きゅう」避諱「苦」。',
+            relatedRules: ['金額的表達', '90の避諱讀法']
         },
         sourceItem: { value: 90, kanji: '九十円', reading: 'きゅうじゅうえん' }
     },
@@ -758,15 +758,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿歳です。（九十歲）'
         },
         options: [
-            { text: 'きゅうじゅっさい', isCorrect: true, reason: '正確{せいかく}！「九十歳{きゅうじゅっさい}」，促音化{そくおんか}為「じゅっさい」。' },
-            { text: 'くじゅっさい', isCorrect: false, reason: '為{ため}避諱{ひき}「苦{く}」，多用{おおくもちい}「きゅう」。' },
-            { text: 'きゅうじゅうさい', isCorrect: false, reason: '「歳{さい}」前{まえ}會促音化{そくおんか}，應{おう}是「じゅっさい」。' },
-            { text: 'ここじゅっさい', isCorrect: false, reason: '「ここ」不是「九{きゅう}」の讀法{よみかた}。' }
+            { text: 'きゅうじゅっさい', isCorrect: true, reason: '正確！「九十歳{きゅうじゅっさい}」，促音化為「じゅっさい」。' },
+            { text: 'くじゅっさい', isCorrect: false, reason: '為避諱「苦」，多用「きゅう」。' },
+            { text: 'きゅうじゅうさい', isCorrect: false, reason: '「歳{さい}」前會促音化，應是「じゅっさい」。' },
+            { text: 'ここじゅっさい', isCorrect: false, reason: '「ここ」不是「九」的讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「九十歳{きゅうじゅっさい}」使用{しよう}「きゅう」＋促音化{そくおんか}「じゅっさい」。',
-            relatedRules: ['年齡{ねんれい}の促音化{そくおんか}', '90の避諱{ひき}讀法{よみかた}']
+            correctRule: '「九十歳{きゅうじゅっさい}」使用「きゅう」＋促音化「じゅっさい」。',
+            relatedRules: ['年齡的促音化', '90の避諱讀法']
         },
         sourceItem: { value: 90, kanji: '九十歳', reading: 'きゅうじゅっさい' }
     },
@@ -781,16 +781,16 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '「十九」最常用的讀音是？',
         stem_zh: '「十九」最常用的讀音是？',
         options: [
-            { text: 'じゅうく', isCorrect: false, reason: '「じゅうく」也正確{せいかく}，但為{ため}避諱{ひき}「苦{く}」，日常{にちじょう}多用{おおくもちい}「じゅうきゅう」。' },
-            { text: 'じゅうきゅう', isCorrect: true, reason: '正確{せいかく}！為{ため}避諱{ひき}「苦{く}」，日常{にちじょう}多く{おおく}使用{しよう}「じゅうきゅう」。' },
-            { text: 'じゅここの', isCorrect: false, reason: '組合{くみあわせ}數字{すうじ}使用{しよう}しない訓讀{くんどく}。' },
-            { text: 'じゅきゅう', isCorrect: false, reason: '少了{すくな}「う」，正確{せいかく}は「じゅうきゅう」。' }
+            { text: 'じゅうく', isCorrect: false, reason: '「じゅうく」也正確，但為避諱「苦」，日常多用「じゅうきゅう」。' },
+            { text: 'じゅうきゅう', isCorrect: true, reason: '正確！為避諱「苦」，日常多使用「じゅうきゅう」。' },
+            { text: 'じゅここの', isCorrect: false, reason: '組合數字不使用訓讀。' },
+            { text: 'じゅきゅう', isCorrect: false, reason: '少了「う」，正確「じゅうきゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十九{じゅうきゅう}」有兩種{りょうしゅ}讀法{よみかた}：「じゅうく」和「じゅうきゅう」。由於{ゆえ}「く」與「苦{く}」同音{どうおん}，日常{にちじょう}多く{おおく}使用{しよう}「じゅうきゅう」。',
-            trapExplanation: '陷阱題{かんけいだい}，測試{そくし}避諱{ひき}習慣{しゅうかん}的了解{りょうかい}。',
-            relatedRules: ['十九{じゅうきゅう}の兩種{りょうしゅ}讀法{よみかた}', '避諱{ひき}文化{ぶんか}']
+            correctRule: '「十九{じゅうきゅう}」有兩種讀法：「じゅうく」和「じゅうきゅう」。由於「く」與「苦」同音，日常多使用「じゅうきゅう」。',
+            trapExplanation: '陷阱題，測試避諱習慣的了解。',
+            relatedRules: ['十九{じゅうきゅう}の兩種讀法', '避諱文化']
         },
         sourceItem: { value: 19, kanji: '十九', reading: 'じゅうきゅう / じゅうく' }
     },
@@ -803,15 +803,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
         stem: '私は＿＿歳です。',
         stem_zh: '我十九歲。',
         options: [
-            { text: 'じゅうきゅうさい', isCorrect: true, reason: '正確{せいかく}！「十九歳{じゅうきゅうさい}」讀作{どくさ}「じゅうきゅうさい」。' },
-            { text: 'じゅうくさい', isCorrect: false, reason: '為{ため}避諱{ひき}「苦{く}」，多用{おおくもちい}「じゅうきゅう」。' },
-            { text: 'じゅここのさい', isCorrect: false, reason: '年齡{ねんれい}使用{しよう}しない訓讀{くんどく}。' },
-            { text: 'じゅうきゅっさい', isCorrect: false, reason: '19不促音化{ふそくおんか}，正確{せいかく}は「じゅうきゅうさい」。' }
+            { text: 'じゅうきゅうさい', isCorrect: true, reason: '正確！「十九歳{じゅうきゅうさい}」讀作「じゅうきゅうさい」。' },
+            { text: 'じゅうくさい', isCorrect: false, reason: '為避諱「苦」，多用「じゅうきゅう」。' },
+            { text: 'じゅここのさい', isCorrect: false, reason: '年齡不使用訓讀。' },
+            { text: 'じゅうきゅっさい', isCorrect: false, reason: '19不促音化，正確「じゅうきゅうさい」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十九歳{じゅうきゅうさい}」使用{しよう}「きゅう」避諱{ひき}「苦{く}」。',
-            relatedRules: ['年齡{ねんれい}の表達{ひょうたつ}', '19の避諱{ひき}讀法{よみかた}']
+            correctRule: '「十九歳{じゅうきゅうさい}」使用「きゅう」避諱「苦」。',
+            relatedRules: ['年齡的表達', '19の避諱讀法']
         },
         sourceItem: { value: 19, kanji: '十九歳', reading: 'じゅうきゅうさい' }
     },
@@ -828,15 +828,15 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿日です。（十九號）'
         },
         options: [
-            { text: 'じゅうきゅうにち', isCorrect: true, reason: '正確{せいかく}！「十九日{じゅうきゅうにち}」讀作{どくさ}「じゅうきゅうにち」。' },
-            { text: 'じゅうくにち', isCorrect: false, reason: '為{ため}避諱{ひき}「苦{く}」，日期{にっき}也多用{おおくもちい}「きゅう」。' },
-            { text: 'じゅうここのか', isCorrect: false, reason: '19日{じゅうきゅうにち}使用{しよう}しない訓讀{くんどく}「ここのか」。' },
-            { text: 'じゅここにち', isCorrect: false, reason: '組合{くみあわせ}讀法{よみかた}錯誤{さくご}。' }
+            { text: 'じゅうきゅうにち', isCorrect: true, reason: '正確！「十九日{じゅうきゅうにち}」讀作「じゅうきゅうにち」。' },
+            { text: 'じゅうくにち', isCorrect: false, reason: '為避諱「苦」，日期也多用「きゅう」。' },
+            { text: 'じゅうここのか', isCorrect: false, reason: '19日{じゅうきゅうにち}不使用訓讀「ここのか」。' },
+            { text: 'じゅここにち', isCorrect: false, reason: '組合讀法錯誤。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十九日{じゅうきゅうにち}」讀作{どくさ}「じゅうきゅうにち」，使用{しよう}音讀{おんどく}組合{くみあわせ}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '11-19日{にち}使用{しよう}音讀{おんどく}']
+            correctRule: '「十九日{じゅうきゅうにち}」讀作「じゅうきゅうにち」，使用音讀組合。',
+            relatedRules: ['日期的讀法', '11-19日使用音讀']
         },
         sourceItem: { value: 19, kanji: '十九日', reading: 'じゅうきゅうにち' }
     },
@@ -844,7 +844,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
     // ===== 數字 13 的三題 =====
     {
         id: 'num_tens_13_pron', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「十三」的正確讀音是？', stem_zh: '「十三」的正確讀音是？',
+        stem: '「十三」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「十三」的正確讀音是？',
         options: [
             { text: 'じゅうさん', isCorrect: true, reason: '正確！「十三」讀作「じゅうさん」。' },
             { text: 'とみ', isCorrect: false, reason: '組合數字使用音讀。' },
@@ -852,7 +852,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅさん', isCorrect: false, reason: '少了「う」，正確是「じゅうさん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十三」讀作「じゅうさん」，是音讀組合。', relatedRules: ['十位數の組合規則'] },
+        explanation: { correctRule: '「十三」讀作「じゅうさん」，是音讀組合。', relatedRules: ['十位數的組合規則'] },
         sourceItem: { value: 13, kanji: '十三', reading: 'じゅうさん' }
     },
     {
@@ -865,7 +865,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'とみさい', isCorrect: false, reason: '年齡使用音讀組合。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十三歳」讀「じゅうさんさい」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「十三歳」讀「じゅうさんさい」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 13, kanji: '十三歳', reading: 'じゅうさんさい' }
     },
     {
@@ -879,14 +879,14 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっさんにち', isCorrect: false, reason: '「十三」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十三日」讀「じゅうさんにち」，11日以上使用音讀。', relatedRules: ['日期の讀法'] },
+        explanation: { correctRule: '「十三日」讀「じゅうさんにち」，11日以上使用音讀。', relatedRules: ['日期的讀法'] },
         sourceItem: { value: 13, kanji: '十三日', reading: 'じゅうさんにち' }
     },
 
     // ===== 數字 15 的三題 =====
     {
         id: 'num_tens_15_pron', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「十五」的正確讀音是？', stem_zh: '「十五」的正確讀音是？',
+        stem: '「十五」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「十五」的正確讀音是？',
         options: [
             { text: 'じゅうご', isCorrect: true, reason: '正確！「十五」讀作「じゅうご」。' },
             { text: 'といつ', isCorrect: false, reason: '組合數字使用音讀。' },
@@ -894,7 +894,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅご', isCorrect: false, reason: '少了「う」，正確是「じゅうご」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十五」讀作「じゅうご」。', relatedRules: ['十位數の組合規則'] },
+        explanation: { correctRule: '「十五」讀作「じゅうご」。', relatedRules: ['十位數的組合規則'] },
         sourceItem: { value: 15, kanji: '十五', reading: 'じゅうご' }
     },
     {
@@ -907,7 +907,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'といつふん', isCorrect: false, reason: '分鐘使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十五分」讀「じゅうごふん」，「五」後保持原音。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「十五分」讀「じゅうごふん」，「五」後保持原音。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 15, kanji: '十五分', reading: 'じゅうごふん' }
     },
     {
@@ -921,14 +921,14 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっごにち', isCorrect: false, reason: '「十五」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十五日」讀「じゅうごにち」。', relatedRules: ['日期の讀法'] },
+        explanation: { correctRule: '「十五日」讀「じゅうごにち」。', relatedRules: ['日期的讀法'] },
         sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
     },
 
     // ===== 數字 16 的三題 =====
     {
         id: 'num_tens_16_pron', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「十六」的正確讀音是？', stem_zh: '「十六」的正確讀音是？',
+        stem: '「十六」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「十六」的正確讀音是？',
         options: [
             { text: 'じゅうろく', isCorrect: true, reason: '正確！「十六」讀作「じゅうろく」。' },
             { text: 'とむ', isCorrect: false, reason: '組合數字使用音讀。' },
@@ -936,7 +936,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅろく', isCorrect: false, reason: '少了「う」，正確是「じゅうろく」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十六」讀作「じゅうろく」。', relatedRules: ['十位數の組合規則'] },
+        explanation: { correctRule: '「十六」讀作「じゅうろく」。', relatedRules: ['十位數的組合規則'] },
         sourceItem: { value: 16, kanji: '十六', reading: 'じゅうろく' }
     },
     {
@@ -949,7 +949,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'とむさい', isCorrect: false, reason: '年齡使用音讀組合。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十六歳」讀「じゅうろくさい」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「十六歳」讀「じゅうろくさい」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 16, kanji: '十六歳', reading: 'じゅうろくさい' }
     },
     {
@@ -963,7 +963,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっろくにち', isCorrect: false, reason: '「十六」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十六日」讀「じゅうろくにち」。', relatedRules: ['日期の讀法'] },
+        explanation: { correctRule: '「十六日」讀「じゅうろくにち」。', relatedRules: ['日期的讀法'] },
         sourceItem: { value: 16, kanji: '十六日', reading: 'じゅうろくにち' }
     },
 
@@ -991,7 +991,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうなのさい', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十七歳」讀「じゅうななさい」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「十七歳」讀「じゅうななさい」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 17, kanji: '十七歳', reading: 'じゅうななさい' }
     },
     {
@@ -1005,14 +1005,14 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっしちにち', isCorrect: false, reason: '「十七」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十七日」讀「じゅうしちにち」或「じゅうななにち」。', relatedRules: ['日期の讀法'] },
+        explanation: { correctRule: '「十七日」讀「じゅうしちにち」或「じゅうななにち」。', relatedRules: ['日期的讀法'] },
         sourceItem: { value: 17, kanji: '十七日', reading: 'じゅうしちにち' }
     },
 
     // ===== 數字 18 的三題 =====
     {
         id: 'num_tens_18_pron', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「十八」的正確讀音是？', stem_zh: '「十八」的正確讀音是？',
+        stem: '「十八」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「十八」的正確讀音是？',
         options: [
             { text: 'じゅうはち', isCorrect: true, reason: '正確！「十八」讀作「じゅうはち」。' },
             { text: 'とや', isCorrect: false, reason: '組合數字使用音讀。' },
@@ -1020,7 +1020,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅはち', isCorrect: false, reason: '少了「う」，正確是「じゅうはち」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十八」讀作「じゅうはち」。', relatedRules: ['十位數の組合規則'] },
+        explanation: { correctRule: '「十八」讀作「じゅうはち」。', relatedRules: ['十位數的組合規則'] },
         sourceItem: { value: 18, kanji: '十八', reading: 'じゅうはち' }
     },
     {
@@ -1033,7 +1033,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうやっさい', isCorrect: false, reason: '「や」是訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十八歳」讀「じゅうはっさい」，「八」＋「歳」促音化。', relatedRules: ['年齡の讀法', '八の促音化'] },
+        explanation: { correctRule: '「十八歳」讀「じゅうはっさい」，「八」＋「歳」促音化。', relatedRules: ['年齡的讀法', '八的促音化'] },
         sourceItem: { value: 18, kanji: '十八歳', reading: 'じゅうはっさい' }
     },
     {
@@ -1047,14 +1047,14 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっはちにち', isCorrect: false, reason: '「十八」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十八日」讀「じゅうはちにち」。', relatedRules: ['日期の讀法'] },
+        explanation: { correctRule: '「十八日」讀「じゅうはちにち」。', relatedRules: ['日期的讀法'] },
         sourceItem: { value: 18, kanji: '十八日', reading: 'じゅうはちにち' }
     },
 
     // ===== 更多應用題目 =====
     {
         id: 'num_tens_extra_1', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「二十四日」的正確讀音是？', stem_zh: '「二十四日」的正確讀音是？',
+        stem: '「二十四日」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二十四日」的正確讀音是？',
         options: [
             { text: 'にじゅうよんにち', isCorrect: false, reason: '陷阱！「二十四日」保留「よっか」的讀法。' },
             { text: 'にじゅうよっか', isCorrect: true, reason: '正確！「二十四日」讀「にじゅうよっか」。' },
@@ -1062,7 +1062,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はつよっか', isCorrect: false, reason: '「二十」讀「にじゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「二十四日」讀「にじゅうよっか」，保留「よっか」的讀法。', trapExplanation: '這是陷阱題，14日和24日保留「よっか」。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '「二十四日」讀「にじゅうよっか」，保留「よっか」的讀法。', trapExplanation: '這是陷阱題，14日和24日保留「よっか」。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 24, kanji: '二十四日', reading: 'にじゅうよっか' }
     },
     {
@@ -1075,7 +1075,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅっごにん', isCorrect: false, reason: '「二十五」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十五人」讀「にじゅうごにん」。', relatedRules: ['人數の讀法'] },
+        explanation: { correctRule: '「二十五人」讀「にじゅうごにん」。', relatedRules: ['人數的讀法'] },
         sourceItem: { value: 25, kanji: '二十五人', reading: 'にじゅうごにん' }
     },
     {
@@ -1089,12 +1089,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅうひとさい', isCorrect: false, reason: '年齡使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十一歳」讀「にじゅういっさい」，「一」促音化。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「二十一歳」讀「にじゅういっさい」，「一」促音化。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 21, kanji: '二十一歳', reading: 'にじゅういっさい' }
     },
     {
         id: 'num_tens_extra_4', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「三十一日」的正確讀音是？', stem_zh: '「三十一日」的正確讀音是？',
+        stem: '「三十一日」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「三十一日」的正確讀音是？',
         options: [
             { text: 'さんじゅういちにち', isCorrect: true, reason: '正確！「三十一日」讀「さんじゅういちにち」。' },
             { text: 'みそついたち', isCorrect: false, reason: '現代日語不用這個讀法。' },
@@ -1102,7 +1102,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅっいちにち', isCorrect: false, reason: '「三十一」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十一日」讀「さんじゅういちにち」。', relatedRules: ['日期の讀法'] },
+        explanation: { correctRule: '「三十一日」讀「さんじゅういちにち」。', relatedRules: ['日期的讀法'] },
         sourceItem: { value: 31, kanji: '三十一日', reading: 'さんじゅういちにち' }
     },
     {
@@ -1115,7 +1115,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅういつページ', isCorrect: false, reason: '「五」讀「ご」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十五ページ」讀「さんじゅうごページ」。', relatedRules: ['頁數の讀法'] },
+        explanation: { correctRule: '「三十五ページ」讀「さんじゅうごページ」。', relatedRules: ['頁數的讀法'] },
         sourceItem: { value: 35, kanji: '三十五', reading: 'さんじゅうご' }
     },
     {
@@ -1129,12 +1129,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よじゅうごえん', isCorrect: false, reason: '缺少「ん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十五円」讀「よんじゅうごえん」。', relatedRules: ['金額の讀法'] },
+        explanation: { correctRule: '「四十五円」讀「よんじゅうごえん」。', relatedRules: ['金額的讀法'] },
         sourceItem: { value: 45, kanji: '四十五円', reading: 'よんじゅうごえん' }
     },
     {
         id: 'num_tens_extra_7', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「五十五」的正確讀音是？', stem_zh: '「五十五」的正確讀音是？',
+        stem: '「五十五」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「五十五」的正確讀音是？',
         options: [
             { text: 'ごじゅうご', isCorrect: true, reason: '正確！「五十五」讀「ごじゅうご」。' },
             { text: 'いつじゅういつ', isCorrect: false, reason: '組合數字使用音讀。' },
@@ -1142,7 +1142,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'こじゅうご', isCorrect: false, reason: '「五」讀「ご」不是「こ」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十五」讀「ごじゅうご」。', relatedRules: ['數字組合の讀法'] },
+        explanation: { correctRule: '「五十五」讀「ごじゅうご」。', relatedRules: ['數字組合的讀法'] },
         sourceItem: { value: 55, kanji: '五十五', reading: 'ごじゅうご' }
     },
     {
@@ -1155,7 +1155,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくじゅぷん', isCorrect: false, reason: '少了促音。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十分」讀「ろくじゅっぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「六十分」讀「ろくじゅっぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 60, kanji: '六十分', reading: 'ろくじゅっぷん' }
     },
     {
@@ -1169,12 +1169,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくじゅういつにん', isCorrect: false, reason: '「五」讀「ご」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十五人」讀「ろくじゅうごにん」。', relatedRules: ['人數の讀法'] },
+        explanation: { correctRule: '「六十五人」讀「ろくじゅうごにん」。', relatedRules: ['人數的讀法'] },
         sourceItem: { value: 65, kanji: '六十五人', reading: 'ろくじゅうごにん' }
     },
     {
         id: 'num_tens_extra_10', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「七十七」的正確讀音是？', stem_zh: '「七十七」的正確讀音是？',
+        stem: '「七十七」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七十七」的正確讀音是？',
         options: [
             { text: 'ななじゅうなな', isCorrect: true, reason: '正確！「七十七」讀「ななじゅうなな」。' },
             { text: 'しちじゅうしち', isCorrect: false, reason: '為避免混淆，多用「なな」。' },
@@ -1182,7 +1182,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なじゅうなな', isCorrect: false, reason: '缺少「な」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十七」讀「ななじゅうなな」。', relatedRules: ['數字組合の讀法'] },
+        explanation: { correctRule: '「七十七」讀「ななじゅうなな」。', relatedRules: ['數字組合的讀法'] },
         sourceItem: { value: 77, kanji: '七十七', reading: 'ななじゅうなな' }
     },
     {
@@ -1195,7 +1195,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ななじゅういつてん', isCorrect: false, reason: '「五」讀「ご」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十五点」讀「ななじゅうごてん」。', relatedRules: ['分數の讀法'] },
+        explanation: { correctRule: '「七十五点」讀「ななじゅうごてん」。', relatedRules: ['分數的讀法'] },
         sourceItem: { value: 75, kanji: '七十五点', reading: 'ななじゅうごてん' }
     },
     {
@@ -1209,12 +1209,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はっじゅうはちえん', isCorrect: false, reason: '「八十」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十八円」讀「はちじゅうはちえん」。', relatedRules: ['金額の讀法'] },
+        explanation: { correctRule: '「八十八円」讀「はちじゅうはちえん」。', relatedRules: ['金額的讀法'] },
         sourceItem: { value: 88, kanji: '八十八円', reading: 'はちじゅうはちえん' }
     },
     {
         id: 'num_tens_extra_13', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「九十九」的正確讀音是？', stem_zh: '「九十九」的正確讀音是？',
+        stem: '「九十九」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「九十九」的正確讀音是？',
         options: [
             { text: 'きゅうじゅうきゅう', isCorrect: true, reason: '正確！「九十九」讀「きゅうじゅうきゅう」。' },
             { text: 'くじゅうく', isCorrect: false, reason: '為避諱「苦」，多用「きゅう」。' },
@@ -1222,7 +1222,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここじゅうここ', isCorrect: false, reason: '「ここ」不是「九」的讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十九」讀「きゅうじゅうきゅう」。', relatedRules: ['數字組合の讀法'] },
+        explanation: { correctRule: '「九十九」讀「きゅうじゅうきゅう」。', relatedRules: ['數字組合的讀法'] },
         sourceItem: { value: 99, kanji: '九十九', reading: 'きゅうじゅうきゅう' }
     },
     {
@@ -1235,7 +1235,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いちひゃくてん', isCorrect: false, reason: '「百」前面不加「いち」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「百点」讀「ひゃくてん」。', relatedRules: ['分數の讀法'] },
+        explanation: { correctRule: '「百点」讀「ひゃくてん」。', relatedRules: ['分數的讀法'] },
         sourceItem: { value: 100, kanji: '百点', reading: 'ひゃくてん' }
     },
     {
@@ -1249,7 +1249,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうじゅういつさい', isCorrect: false, reason: '「五」讀「ご」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十五歳」讀「きゅうじゅうごさい」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「九十五歳」讀「きゅうじゅうごさい」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 95, kanji: '九十五歳', reading: 'きゅうじゅうごさい' }
     },
 
@@ -1277,7 +1277,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: '全部用音讀', isCorrect: false, reason: '這些日期有訓讀保留。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '14日、24日保留「よっか」，20日讀「はつか」。', trapExplanation: '這是陷阱題，測試日期特殊讀法。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '14日、24日保留「よっか」，20日讀「はつか」。', trapExplanation: '這是陷阱題，測試日期特殊讀法。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 0, kanji: '特殊日期', reading: '特殊讀法' }
     },
     {
@@ -1290,7 +1290,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: '只有20歳會變化', isCorrect: false, reason: '錯誤，所有整十歲都會促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十」＋「歳」會促音化為「じゅっさい」。', trapExplanation: '這是陷阱題，測試促音化規則。', relatedRules: ['歳の促音化'] },
+        explanation: { correctRule: '「十」＋「歳」會促音化為「じゅっさい」。', trapExplanation: '這是陷阱題，測試促音化規則。', relatedRules: ['歳的促音化'] },
         sourceItem: { value: 0, kanji: '〜歳', reading: '促音化規則' }
     },
     {
@@ -1303,7 +1303,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: '只有10分會變化', isCorrect: false, reason: '錯誤，所有整十分都會變化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十」＋「分」會促音化+半濁音化為「じゅっぷん」。', trapExplanation: '這是陷阱題，測試分的音變規則。', relatedRules: ['分の音變規則'] },
+        explanation: { correctRule: '「十」＋「分」會促音化+半濁音化為「じゅっぷん」。', trapExplanation: '這是陷阱題，測試分的音變規則。', relatedRules: ['分的音變規則'] },
         sourceItem: { value: 0, kanji: '〜分', reading: '音變規則' }
     },
 
@@ -1318,7 +1318,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: '每個數字讀法都不同', isCorrect: false, reason: '錯誤，有規律可循。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '十位數基本使用音讀組合。', relatedRules: ['十位數の基本規則'] },
+        explanation: { correctRule: '十位數基本使用音讀組合。', relatedRules: ['十位數的基本規則'] },
         sourceItem: { value: 0, kanji: '十位數', reading: '基本規則' }
     },
     {
@@ -1344,7 +1344,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: '二十沒有特殊讀法', isCorrect: false, reason: '錯誤，有兩個重要的特殊讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十歳」讀「はたち」，「二十日」讀「はつか」。', relatedRules: ['二十の特殊讀法'] },
+        explanation: { correctRule: '「二十歳」讀「はたち」，「二十日」讀「はつか」。', relatedRules: ['二十的特殊讀法'] },
         sourceItem: { value: 20, kanji: '二十', reading: '特殊讀法' }
     },
     {
@@ -1357,7 +1357,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よじゅうごふん', isCorrect: false, reason: '缺少「ん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十五分」讀「よんじゅうごふん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「四十五分」讀「よんじゅうごふん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 45, kanji: '四十五分', reading: 'よんじゅうごふん' }
     },
     {
@@ -1371,12 +1371,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はついつふん', isCorrect: false, reason: '分鐘使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十五分」讀「にじゅうごふん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「二十五分」讀「にじゅうごふん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 25, kanji: '二十五分', reading: 'にじゅうごふん' }
     },
     {
         id: 'num_tens_extra_18', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「二十二」的正確讀音是？', stem_zh: '「二十二」的正確讀音是？',
+        stem: '「二十二」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二十二」的正確讀音是？',
         options: [
             { text: 'にじゅうに', isCorrect: true, reason: '正確！「二十二」讀「にじゅうに」。' },
             { text: 'はたに', isCorrect: false, reason: '「はた」只用於特殊詞如「はたち」。' },
@@ -1384,7 +1384,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたじゅうふた', isCorrect: false, reason: '組合數字使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十二」讀「にじゅうに」。', relatedRules: ['數字組合の讀法'] },
+        explanation: { correctRule: '「二十二」讀「にじゅうに」。', relatedRules: ['數字組合的讀法'] },
         sourceItem: { value: 22, kanji: '二十二', reading: 'にじゅうに' }
     },
     {
@@ -1397,7 +1397,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はたさんばん', isCorrect: false, reason: '號碼使用音讀組合。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十三番」讀「にじゅうさんばん」。', relatedRules: ['號碼の讀法'] },
+        explanation: { correctRule: '「二十三番」讀「にじゅうさんばん」。', relatedRules: ['號碼的讀法'] },
         sourceItem: { value: 23, kanji: '二十三番', reading: 'にじゅうさんばん' }
     },
     {
@@ -1411,12 +1411,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はたむっかい', isCorrect: false, reason: '樓層使用音讀組合。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十六階」讀「にじゅうろっかい」，「六」促音化。', relatedRules: ['階の讀法'] },
+        explanation: { correctRule: '「二十六階」讀「にじゅうろっかい」，「六」促音化。', relatedRules: ['階的讀法'] },
         sourceItem: { value: 26, kanji: '二十六階', reading: 'にじゅうろっかい' }
     },
     {
         id: 'num_tens_extra_21', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「二十七」的正確讀音是？', stem_zh: '「二十七」的正確讀音是？',
+        stem: '「二十七」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二十七」的正確讀音是？',
         options: [
             { text: 'にじゅうなな', isCorrect: true, reason: '正確！「二十七」多讀「にじゅうなな」。' },
             { text: 'にじゅうしち', isCorrect: false, reason: '為避免混淆，多用「なな」。' },
@@ -1424,7 +1424,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はたなな', isCorrect: false, reason: '「はた」只用於特殊詞。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十七」多讀「にじゅうなな」。', relatedRules: ['數字組合の讀法'] },
+        explanation: { correctRule: '「二十七」多讀「にじゅうなな」。', relatedRules: ['數字組合的讀法'] },
         sourceItem: { value: 27, kanji: '二十七', reading: 'にじゅうなな' }
     },
     {
@@ -1437,7 +1437,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はたはちごうしつ', isCorrect: false, reason: '房號使用音讀組合。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十八号室」讀「にじゅうはちごうしつ」。', relatedRules: ['房號の讀法'] },
+        explanation: { correctRule: '「二十八号室」讀「にじゅうはちごうしつ」。', relatedRules: ['房號的讀法'] },
         sourceItem: { value: 28, kanji: '二十八号室', reading: 'にじゅうはちごうしつ' }
     },
     {
@@ -1451,7 +1451,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はたここのか', isCorrect: false, reason: '11日以上使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十九日」讀「にじゅうくにち」。', relatedRules: ['日期の讀法'] },
+        explanation: { correctRule: '「二十九日」讀「にじゅうくにち」。', relatedRules: ['日期的讀法'] },
         sourceItem: { value: 29, kanji: '二十九日', reading: 'にじゅうくにち' }
     },
     {
@@ -1464,7 +1464,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: '十位數日期都用訓讀', isCorrect: false, reason: '只有14日保留訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '14日保留「よっか」讀法，讀「じゅうよっか」。', trapExplanation: '這是陷阱題，測試11-19日中的特殊讀法。', relatedRules: ['十四日の特殊讀法'] },
+        explanation: { correctRule: '14日保留「よっか」讀法，讀「じゅうよっか」。', trapExplanation: '這是陷阱題，測試11-19日中的特殊讀法。', relatedRules: ['十四日的特殊讀法'] },
         sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
     },
     {
@@ -1477,7 +1477,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いっせんにひゃくさんじゅうし', isCorrect: false, reason: '電話號碼不讀成整數。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '電話號碼逐個數字讀出。', relatedRules: ['電話番号の讀法'] },
+        explanation: { correctRule: '電話號碼逐個數字讀出。', relatedRules: ['電話番号的讀法'] },
         sourceItem: { value: 1234, kanji: '一二三四', reading: 'いちにさんよん' }
     },
     {
@@ -1491,12 +1491,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅういちときはん', isCorrect: false, reason: '「とき」是「時」的訓讀，時刻用「じ」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十一時半」讀「じゅういちじはん」。', relatedRules: ['時間の讀法'] },
+        explanation: { correctRule: '「十一時半」讀「じゅういちじはん」。', relatedRules: ['時間的讀法'] },
         sourceItem: { value: 11.5, kanji: '十一時半', reading: 'じゅういちじはん' }
     },
     {
         id: 'num_tens_extra_27', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「三十三」的正確讀音是？', stem_zh: '「三十三」的正確讀音是？',
+        stem: '「三十三」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「三十三」的正確讀音是？',
         options: [
             { text: 'さんじゅうさん', isCorrect: true, reason: '正確！「三十三」讀「さんじゅうさん」。' },
             { text: 'みそみ', isCorrect: false, reason: '現代日語不用這個讀法。' },
@@ -1504,7 +1504,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みじゅうみ', isCorrect: false, reason: '組合數字使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十三」讀「さんじゅうさん」。', relatedRules: ['數字組合の讀法'] },
+        explanation: { correctRule: '「三十三」讀「さんじゅうさん」。', relatedRules: ['數字組合的讀法'] },
         sourceItem: { value: 33, kanji: '三十三', reading: 'さんじゅうさん' }
     },
     {
@@ -1517,7 +1517,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よじゅうよばんめ', isCorrect: false, reason: '缺少「ん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十四番目」讀「よんじゅうよんばんめ」。', relatedRules: ['序數の讀法'] },
+        explanation: { correctRule: '「四十四番目」讀「よんじゅうよんばんめ」。', relatedRules: ['序數的讀法'] },
         sourceItem: { value: 44, kanji: '四十四番目', reading: 'よんじゅうよんばんめ' }
     },
     {
@@ -1531,12 +1531,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'こじゅう', isCorrect: false, reason: '「五」讀「ご」不是「こ」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十キロ」讀「ごじゅうキロ」。', relatedRules: ['速度の讀法'] },
+        explanation: { correctRule: '「五十キロ」讀「ごじゅうキロ」。', relatedRules: ['速度的讀法'] },
         sourceItem: { value: 50, kanji: '五十', reading: 'ごじゅう' }
     },
     {
         id: 'num_tens_extra_30', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「六十六」的正確讀音是？', stem_zh: '「六十六」的正確讀音是？',
+        stem: '「六十六」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「六十六」的正確讀音是？',
         options: [
             { text: 'ろくじゅうろく', isCorrect: true, reason: '正確！「六十六」讀「ろくじゅうろく」。' },
             { text: 'むじゅうむ', isCorrect: false, reason: '組合數字使用音讀。' },
@@ -1544,7 +1544,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっじゅうろく', isCorrect: false, reason: '「六十」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十六」讀「ろくじゅうろく」。', relatedRules: ['數字組合の讀法'] },
+        explanation: { correctRule: '「六十六」讀「ろくじゅうろく」。', relatedRules: ['數字組合的讀法'] },
         sourceItem: { value: 66, kanji: '六十六', reading: 'ろくじゅうろく' }
     },
     {
@@ -1557,7 +1557,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はっじゅっぷん', isCorrect: false, reason: '「八十」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十分」讀「はちじゅっぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「八十分」讀「はちじゅっぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 80, kanji: '八十分', reading: 'はちじゅっぷん' }
     },
     {
@@ -1571,7 +1571,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここじゅうここえん', isCorrect: false, reason: '「ここ」不是「九」的讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十九円」讀「きゅうじゅうきゅうえん」。', relatedRules: ['金額の讀法'] },
+        explanation: { correctRule: '「九十九円」讀「きゅうじゅうきゅうえん」。', relatedRules: ['金額的讀法'] },
         sourceItem: { value: 99, kanji: '九十九円', reading: 'きゅうじゅうきゅうえん' }
     },
     {
@@ -1584,7 +1584,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: '所有整十歲都有特殊讀法', isCorrect: false, reason: '只有20歳有特殊讀法「はたち」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '20歳讀「はたち」，其他整十歲促音化。', trapExplanation: '這是陷阱題，測試年齡讀法。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '20歳讀「はたち」，其他整十歲促音化。', trapExplanation: '這是陷阱題，測試年齡讀法。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 0, kanji: '整十歲', reading: '讀法規則' }
     },
     {
@@ -1597,7 +1597,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'といつふん', isCorrect: false, reason: '分鐘使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十五分」讀「じゅうごふん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「十五分」讀「じゅうごふん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 15, kanji: '十五分', reading: 'じゅうごふん' }
     },
     {
@@ -1611,12 +1611,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのじゅうやにん', isCorrect: false, reason: '人數使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十八人」讀「ななじゅうはちにん」。', relatedRules: ['人數の讀法'] },
+        explanation: { correctRule: '「七十八人」讀「ななじゅうはちにん」。', relatedRules: ['人數的讀法'] },
         sourceItem: { value: 78, kanji: '七十八人', reading: 'ななじゅうはちにん' }
     },
     {
         id: 'num_tens_extra_36', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「五十一」的正確讀音是？', stem_zh: '「五十一」的正確讀音是？',
+        stem: '「五十一」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「五十一」的正確讀音是？',
         options: [
             { text: 'ごじゅういち', isCorrect: true, reason: '正確！「五十一」讀「ごじゅういち」。' },
             { text: 'いつじゅうひと', isCorrect: false, reason: '組合數字使用音讀。' },
@@ -1624,7 +1624,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'こじゅういち', isCorrect: false, reason: '「五」讀「ご」不是「こ」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十一」讀「ごじゅういち」。', relatedRules: ['數字組合の讀法'] },
+        explanation: { correctRule: '「五十一」讀「ごじゅういち」。', relatedRules: ['數字組合的讀法'] },
         sourceItem: { value: 51, kanji: '五十一', reading: 'ごじゅういち' }
     },
     {
@@ -1637,7 +1637,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたじゅうみさい', isCorrect: false, reason: '年齡使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十三歳」讀「にじゅうさんさい」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「二十三歳」讀「にじゅうさんさい」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 23, kanji: '二十三歳', reading: 'にじゅうさんさい' }
     },
     {
@@ -1651,12 +1651,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にときはん', isCorrect: false, reason: '「時間」讀「じかん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二時間半」讀「にじかんはん」。', relatedRules: ['時間の讀法'] },
+        explanation: { correctRule: '「二時間半」讀「にじかんはん」。', relatedRules: ['時間的讀法'] },
         sourceItem: { value: 2.5, kanji: '二時間半', reading: 'にじかんはん' }
     },
     {
         id: 'num_tens_extra_39', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「三十六」的正確讀音是？', stem_zh: '「三十六」的正確讀音是？',
+        stem: '「三十六」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「三十六」的正確讀音是？',
         options: [
             { text: 'さんじゅうろく', isCorrect: true, reason: '正確！「三十六」讀「さんじゅうろく」。' },
             { text: 'みそむ', isCorrect: false, reason: '現代日語不用這個讀法。' },
@@ -1664,7 +1664,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みじゅうろく', isCorrect: false, reason: '組合數字使用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十六」讀「さんじゅうろく」。', relatedRules: ['數字組合の讀法'] },
+        explanation: { correctRule: '「三十六」讀「さんじゅうろく」。', relatedRules: ['數字組合的讀法'] },
         sourceItem: { value: 36, kanji: '三十六', reading: 'さんじゅうろく' }
     },
     {
@@ -1677,7 +1677,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅぷん', isCorrect: false, reason: '缺少促音。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十分」讀「じゅっぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「十分」讀「じゅっぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 10, kanji: '十分', reading: 'じゅっぷん' }
     },
     {
@@ -1691,7 +1691,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅっさんにち', isCorrect: false, reason: '「二十三」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十三日」讀「にじゅうさんにち」。', relatedRules: ['日期の讀法'] },
+        explanation: { correctRule: '「二十三日」讀「にじゅうさんにち」。', relatedRules: ['日期的讀法'] },
         sourceItem: { value: 23, kanji: '二十三日', reading: 'にじゅうさんにち' }
     },
     {
@@ -1704,14 +1704,14 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: '十位數的數字可以隨意讀', isCorrect: false, reason: '錯誤，有固定規則。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '十位數使用音讀組合，但有避諱（4、7、9）和特殊讀法（20歲、20日）。', relatedRules: ['十位數の讀法總結'] },
+        explanation: { correctRule: '十位數使用音讀組合，但有避諱（4、7、9）和特殊讀法（20歲、20日）。', relatedRules: ['十位數的讀法總結'] },
         sourceItem: { value: 0, kanji: '十位數', reading: '總結' }
     },
 
     // ===== 追加100題（43-142）=====
     {
         id: 'num_tens_extra_43', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「四十五」的正確讀音是？', stem_zh: '「四十五」的正確讀音是？',
+        stem: '「四十五」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四十五」的正確讀音是？',
         options: [
             { text: 'よんじゅうご', isCorrect: true, reason: '正確！「四十五」讀「よんじゅうご」。' },
             { text: 'しじゅうご', isCorrect: false, reason: '「四十」讀「よんじゅう」。' },
@@ -1719,7 +1719,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よんじゅういつ', isCorrect: false, reason: '「五」用音讀「ご」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十五」讀「よんじゅうご」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「四十五」讀「よんじゅうご」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 45, kanji: '四十五', reading: 'よんじゅうご' }
     },
     {
@@ -1732,7 +1732,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごじゅむ', isCorrect: false, reason: '「六」用音讀「ろく」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十六」讀「ごじゅうろく」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「五十六」讀「ごじゅうろく」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 56, kanji: '五十六', reading: 'ごじゅうろく' }
     },
     {
@@ -1746,12 +1746,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくとなな', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十七」讀「ろくじゅうなな」。', relatedRules: ['數字の讀法'] },
+        explanation: { correctRule: '「六十七」讀「ろくじゅうなな」。', relatedRules: ['數字的讀法'] },
         sourceItem: { value: 67, kanji: '六十七', reading: 'ろくじゅうなな' }
     },
     {
         id: 'num_tens_extra_46', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「七十」的正確讀音是？', stem_zh: '「七十」的正確讀音是？',
+        stem: '「七十」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七十」的正確讀音是？',
         options: [
             { text: 'ななじゅう', isCorrect: true, reason: '正確！「七十」讀「ななじゅう」。' },
             { text: 'しちじゅう', isCorrect: false, reason: '陷阱！「七十」讀「ななじゅう」，不是「しちじゅう」。' },
@@ -1759,7 +1759,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ななとお', isCorrect: false, reason: '用音讀「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十」讀「ななじゅう」。', trapExplanation: '為避免與「しち」混淆，「七十」讀「ななじゅう」。', relatedRules: ['7の讀法'] },
+        explanation: { correctRule: '「七十」讀「ななじゅう」。', trapExplanation: '為避免與「しち」混淆，「七十」讀「ななじゅう」。', relatedRules: ['7的讀法'] },
         sourceItem: { value: 70, kanji: '七十', reading: 'ななじゅう' }
     },
     {
@@ -1772,7 +1772,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちとふん', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十分」讀「はちじゅっぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「八十分」讀「はちじゅっぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 80, kanji: '八十分', reading: 'はちじゅっぷん' }
     },
     {
@@ -1786,12 +1786,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうとお', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十」讀「きゅうじゅう」。', trapExplanation: '「九」在十位數用「きゅう」。', relatedRules: ['9の讀法'] },
+        explanation: { correctRule: '「九十」讀「きゅうじゅう」。', trapExplanation: '「九」在十位數用「きゅう」。', relatedRules: ['9的讀法'] },
         sourceItem: { value: 90, kanji: '九十', reading: 'きゅうじゅう' }
     },
     {
         id: 'num_tens_extra_49', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「十一」的正確讀音是？', stem_zh: '「十一」的正確讀音是？',
+        stem: '「十一」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「十一」的正確讀音是？',
         options: [
             { text: 'じゅういち', isCorrect: true, reason: '正確！「十一」讀「じゅういち」。' },
             { text: 'とおいち', isCorrect: false, reason: '用音讀「じゅう」。' },
@@ -1799,7 +1799,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっいち', isCorrect: false, reason: '「十一」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十一」讀「じゅういち」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「十一」讀「じゅういち」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 11, kanji: '十一', reading: 'じゅういち' }
     },
     {
@@ -1812,7 +1812,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっに', isCorrect: false, reason: '「十二」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十二人」讀「じゅうににん」。', relatedRules: ['人數の讀法'] },
+        explanation: { correctRule: '「十二人」讀「じゅうににん」。', relatedRules: ['人數的讀法'] },
         sourceItem: { value: 12, kanji: '十二', reading: 'じゅうに' }
     },
     {
@@ -1826,12 +1826,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅうみっ', isCorrect: false, reason: '用音讀「さん」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十三」讀「じゅうさん」。', relatedRules: ['冊の讀法'] },
+        explanation: { correctRule: '「十三」讀「じゅうさん」。', relatedRules: ['冊的讀法'] },
         sourceItem: { value: 13, kanji: '十三', reading: 'じゅうさん' }
     },
     {
         id: 'num_tens_extra_52', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「十四」的正確讀音是？', stem_zh: '「十四」的正確讀音是？',
+        stem: '「十四」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「十四」的正確讀音是？',
         options: [
             { text: 'じゅうよん', isCorrect: true, reason: '正確！「十四」讀「じゅうよん」。' },
             { text: 'じゅうし', isCorrect: false, reason: '陷阱！「十四」讀「じゅうよん」，避免「し」。' },
@@ -1839,7 +1839,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっよん', isCorrect: false, reason: '「十四」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十四」讀「じゅうよん」。', trapExplanation: '「四」避諱「し」，讀「よん」。', relatedRules: ['4の讀法'] },
+        explanation: { correctRule: '「十四」讀「じゅうよん」。', trapExplanation: '「四」避諱「し」，讀「よん」。', relatedRules: ['4的讀法'] },
         sourceItem: { value: 14, kanji: '十四', reading: 'じゅうよん' }
     },
     {
@@ -1852,7 +1852,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっご', isCorrect: false, reason: '「十五」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十五」讀「じゅうご」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「十五」讀「じゅうご」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 15, kanji: '十五', reading: 'じゅうご' }
     },
     {
@@ -1866,12 +1866,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっろく', isCorrect: false, reason: '「十六」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十六」讀「じゅうろく」。', relatedRules: ['數字の讀法'] },
+        explanation: { correctRule: '「十六」讀「じゅうろく」。', relatedRules: ['數字的讀法'] },
         sourceItem: { value: 16, kanji: '十六', reading: 'じゅうろく' }
     },
     {
         id: 'num_tens_extra_55', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「十七」的正確讀音是？', stem_zh: '「十七」的正確讀音是？',
+        stem: '「十七」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「十七」的正確讀音是？',
         options: [
             { text: 'じゅうなな', isCorrect: true, reason: '正確！「十七」讀「じゅうなな」或「じゅうしち」。' },
             { text: 'じゅうしち', isCorrect: true, reason: '「じゅうしち」也正確。' },
@@ -1879,7 +1879,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっなな', isCorrect: false, reason: '「十七」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十七」讀「じゅうなな」或「じゅうしち」。', relatedRules: ['7の讀法'] },
+        explanation: { correctRule: '「十七」讀「じゅうなな」或「じゅうしち」。', relatedRules: ['7的讀法'] },
         sourceItem: { value: 17, kanji: '十七', reading: 'じゅうなな' }
     },
     {
@@ -1892,7 +1892,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じっはち', isCorrect: false, reason: '「十八」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十八」讀「じゅうはち」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「十八」讀「じゅうはち」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 18, kanji: '十八', reading: 'じゅうはち' }
     },
     {
@@ -1906,12 +1906,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっきゅう', isCorrect: false, reason: '「十九」不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十九」讀「じゅうきゅう」。', trapExplanation: '「九」在組合數中讀「きゅう」。', relatedRules: ['9の讀法'] },
+        explanation: { correctRule: '「十九」讀「じゅうきゅう」。', trapExplanation: '「九」在組合數中讀「きゅう」。', relatedRules: ['9的讀法'] },
         sourceItem: { value: 19, kanji: '十九', reading: 'じゅうきゅう' }
     },
     {
         id: 'num_tens_extra_58', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「二十一」的正確讀音是？', stem_zh: '「二十一」的正確讀音是？',
+        stem: '「二十一」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二十一」的正確讀音是？',
         options: [
             { text: 'にじゅういち', isCorrect: true, reason: '正確！「二十一」讀「にじゅういち」。' },
             { text: 'ふたじゅういち', isCorrect: false, reason: '用音讀「に」。' },
@@ -1919,7 +1919,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にとおいち', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十一」讀「にじゅういち」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「二十一」讀「にじゅういち」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 21, kanji: '二十一', reading: 'にじゅういち' }
     },
     {
@@ -1932,7 +1932,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にとおに', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十二」讀「にじゅうに」。', relatedRules: ['冊の讀法'] },
+        explanation: { correctRule: '「二十二」讀「にじゅうに」。', relatedRules: ['冊的讀法'] },
         sourceItem: { value: 22, kanji: '二十二', reading: 'にじゅうに' }
     },
     {
@@ -1946,12 +1946,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にとおさん', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十三」讀「にじゅうさん」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「二十三」讀「にじゅうさん」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 23, kanji: '二十三', reading: 'にじゅうさん' }
     },
     {
         id: 'num_tens_extra_61', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「二十四」的正確讀音是？', stem_zh: '「二十四」的正確讀音是？',
+        stem: '「二十四」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二十四」的正確讀音是？',
         options: [
             { text: 'にじゅうよん', isCorrect: true, reason: '正確！「二十四」讀「にじゅうよん」。' },
             { text: 'にじゅうし', isCorrect: false, reason: '陷阱！「四」讀「よん」避免「し」。' },
@@ -1959,7 +1959,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅっよん', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十四」讀「にじゅうよん」。', trapExplanation: '「四」避諱「し」。', relatedRules: ['4の讀法'] },
+        explanation: { correctRule: '「二十四」讀「にじゅうよん」。', trapExplanation: '「四」避諱「し」。', relatedRules: ['4的讀法'] },
         sourceItem: { value: 24, kanji: '二十四', reading: 'にじゅうよん' }
     },
     {
@@ -1972,7 +1972,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にとおご', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十五」讀「にじゅうご」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「二十五」讀「にじゅうご」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 25, kanji: '二十五', reading: 'にじゅうご' }
     },
     {
@@ -1986,12 +1986,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にとおろく', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十六」讀「にじゅうろく」。', relatedRules: ['本の讀法'] },
+        explanation: { correctRule: '「二十六」讀「にじゅうろく」。', relatedRules: ['本的讀法'] },
         sourceItem: { value: 26, kanji: '二十六', reading: 'にじゅうろく' }
     },
     {
         id: 'num_tens_extra_64', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「二十七」的正確讀音是？', stem_zh: '「二十七」的正確讀音是？',
+        stem: '「二十七」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「二十七」的正確讀音是？',
         options: [
             { text: 'にじゅうなな', isCorrect: true, reason: '正確！「二十七」讀「にじゅうなな」。' },
             { text: 'にじゅうしち', isCorrect: false, reason: '陷阱！「七」在組合數中讀「なな」更常見。' },
@@ -1999,7 +1999,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅっなな', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十七」讀「にじゅうなな」。', trapExplanation: '「七」常讀「なな」避免混淆。', relatedRules: ['7の讀法'] },
+        explanation: { correctRule: '「二十七」讀「にじゅうなな」。', trapExplanation: '「七」常讀「なな」避免混淆。', relatedRules: ['7的讀法'] },
         sourceItem: { value: 27, kanji: '二十七', reading: 'にじゅうなな' }
     },
     {
@@ -2012,7 +2012,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にとおはち', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十八」讀「にじゅうはち」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「二十八」讀「にじゅうはち」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 28, kanji: '二十八', reading: 'にじゅうはち' }
     },
     {
@@ -2026,12 +2026,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅっきゅう', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十九」讀「にじゅうきゅう」。', trapExplanation: '「九」讀「きゅう」。', relatedRules: ['9の讀法'] },
+        explanation: { correctRule: '「二十九」讀「にじゅうきゅう」。', trapExplanation: '「九」讀「きゅう」。', relatedRules: ['9的讀法'] },
         sourceItem: { value: 29, kanji: '二十九', reading: 'にじゅうきゅう' }
     },
     {
         id: 'num_tens_extra_67', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「三十一」的正確讀音是？', stem_zh: '「三十一」的正確讀音是？',
+        stem: '「三十一」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「三十一」的正確讀音是？',
         options: [
             { text: 'さんじゅういち', isCorrect: true, reason: '正確！「三十一」讀「さんじゅういち」。' },
             { text: 'みじゅういち', isCorrect: false, reason: '用音讀「さん」。' },
@@ -2039,7 +2039,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんとおいち', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十一」讀「さんじゅういち」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「三十一」讀「さんじゅういち」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 31, kanji: '三十一', reading: 'さんじゅういち' }
     },
     {
@@ -2052,7 +2052,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんとおに', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十二」讀「さんじゅうに」。', relatedRules: ['冊の讀法'] },
+        explanation: { correctRule: '「三十二」讀「さんじゅうに」。', relatedRules: ['冊的讀法'] },
         sourceItem: { value: 32, kanji: '三十二', reading: 'さんじゅうに' }
     },
     {
@@ -2066,12 +2066,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんとおさん', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十三」讀「さんじゅうさん」。', relatedRules: ['數字の讀法'] },
+        explanation: { correctRule: '「三十三」讀「さんじゅうさん」。', relatedRules: ['數字的讀法'] },
         sourceItem: { value: 33, kanji: '三十三', reading: 'さんじゅうさん' }
     },
     {
         id: 'num_tens_extra_70', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「三十四」的正確讀音是？', stem_zh: '「三十四」的正確讀音是？',
+        stem: '「三十四」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「三十四」的正確讀音是？',
         options: [
             { text: 'さんじゅうよん', isCorrect: true, reason: '正確！「三十四」讀「さんじゅうよん」。' },
             { text: 'さんじゅうし', isCorrect: false, reason: '陷阱！「四」讀「よん」。' },
@@ -2079,7 +2079,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅっよん', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十四」讀「さんじゅうよん」。', trapExplanation: '「四」讀「よん」。', relatedRules: ['4の讀法'] },
+        explanation: { correctRule: '「三十四」讀「さんじゅうよん」。', trapExplanation: '「四」讀「よん」。', relatedRules: ['4的讀法'] },
         sourceItem: { value: 34, kanji: '三十四', reading: 'さんじゅうよん' }
     },
     {
@@ -2092,7 +2092,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんとおご', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十五」讀「さんじゅうご」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「三十五」讀「さんじゅうご」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 35, kanji: '三十五', reading: 'さんじゅうご' }
     },
     {
@@ -2106,12 +2106,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅっなな', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十七」讀「さんじゅうなな」。', relatedRules: ['7の讀法'] },
+        explanation: { correctRule: '「三十七」讀「さんじゅうなな」。', relatedRules: ['7的讀法'] },
         sourceItem: { value: 37, kanji: '三十七', reading: 'さんじゅうなな' }
     },
     {
         id: 'num_tens_extra_73', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「三十八」的正確讀音是？', stem_zh: '「三十八」的正確讀音是？',
+        stem: '「三十八」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「三十八」的正確讀音是？',
         options: [
             { text: 'さんじゅうはち', isCorrect: true, reason: '正確！「三十八」讀「さんじゅうはち」。' },
             { text: 'みじゅうや', isCorrect: false, reason: '用音讀。' },
@@ -2119,7 +2119,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんとおはち', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十八」讀「さんじゅうはち」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「三十八」讀「さんじゅうはち」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 38, kanji: '三十八', reading: 'さんじゅうはち' }
     },
     {
@@ -2132,7 +2132,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんじゅっきゅう', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十九」讀「さんじゅうきゅう」。', trapExplanation: '「九」讀「きゅう」。', relatedRules: ['9の讀法'] },
+        explanation: { correctRule: '「三十九」讀「さんじゅうきゅう」。', trapExplanation: '「九」讀「きゅう」。', relatedRules: ['9的讀法'] },
         sourceItem: { value: 39, kanji: '三十九', reading: 'さんじゅうきゅう' }
     },
     {
@@ -2146,12 +2146,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よとおいち', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十一」讀「よんじゅういち」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「四十一」讀「よんじゅういち」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 41, kanji: '四十一', reading: 'よんじゅういち' }
     },
     {
         id: 'num_tens_extra_76', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「四十二」的正確讀音是？', stem_zh: '「四十二」的正確讀音是？',
+        stem: '「四十二」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四十二」的正確讀音是？',
         options: [
             { text: 'よんじゅうに', isCorrect: true, reason: '正確！「四十二」讀「よんじゅうに」。' },
             { text: 'しじゅうに', isCorrect: false, reason: '「四十」讀「よんじゅう」。' },
@@ -2159,7 +2159,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よとおに', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十二」讀「よんじゅうに」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「四十二」讀「よんじゅうに」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 42, kanji: '四十二', reading: 'よんじゅうに' }
     },
     {
@@ -2172,7 +2172,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よとおさん', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十三」讀「よんじゅうさん」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「四十三」讀「よんじゅうさん」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 43, kanji: '四十三', reading: 'よんじゅうさん' }
     },
     {
@@ -2186,12 +2186,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よとおよん', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十四」讀「よんじゅうよん」。', trapExplanation: '「四」讀「よん」避免「し」。', relatedRules: ['4の讀法'] },
+        explanation: { correctRule: '「四十四」讀「よんじゅうよん」。', trapExplanation: '「四」讀「よん」避免「し」。', relatedRules: ['4的讀法'] },
         sourceItem: { value: 44, kanji: '四十四', reading: 'よんじゅうよん' }
     },
     {
         id: 'num_tens_extra_79', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「四十六」的正確讀音是？', stem_zh: '「四十六」的正確讀音是？',
+        stem: '「四十六」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四十六」的正確讀音是？',
         options: [
             { text: 'よんじゅうろく', isCorrect: true, reason: '正確！「四十六」讀「よんじゅうろく」。' },
             { text: 'しじゅうむ', isCorrect: false, reason: '用「よんじゅう」和「ろく」。' },
@@ -2199,7 +2199,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よとおろく', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十六」讀「よんじゅうろく」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「四十六」讀「よんじゅうろく」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 46, kanji: '四十六', reading: 'よんじゅうろく' }
     },
     {
@@ -2212,7 +2212,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よんじゅっなな', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十七」讀「よんじゅうなな」。', trapExplanation: '「七」常讀「なな」。', relatedRules: ['7の讀法'] },
+        explanation: { correctRule: '「四十七」讀「よんじゅうなな」。', trapExplanation: '「七」常讀「なな」。', relatedRules: ['7的讀法'] },
         sourceItem: { value: 47, kanji: '四十七', reading: 'よんじゅうなな' }
     },
     {
@@ -2226,12 +2226,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よとおはち', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十八」讀「よんじゅうはち」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「四十八」讀「よんじゅうはち」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 48, kanji: '四十八', reading: 'よんじゅうはち' }
     },
     {
         id: 'num_tens_extra_82', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「四十九」的正確讀音是？', stem_zh: '「四十九」的正確讀音是？',
+        stem: '「四十九」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四十九」的正確讀音是？',
         options: [
             { text: 'よんじゅうきゅう', isCorrect: true, reason: '正確！「四十九」讀「よんじゅうきゅう」。' },
             { text: 'しじゅうく', isCorrect: false, reason: '陷阱！用「よんじゅう」和「きゅう」。' },
@@ -2239,7 +2239,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よとおここの', isCorrect: false, reason: '用音讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十九」讀「よんじゅうきゅう」。', trapExplanation: '「四」讀「よん」，「九」讀「きゅう」。', relatedRules: ['4/9の讀法'] },
+        explanation: { correctRule: '「四十九」讀「よんじゅうきゅう」。', trapExplanation: '「四」讀「よん」，「九」讀「きゅう」。', relatedRules: ['4/9的讀法'] },
         sourceItem: { value: 49, kanji: '四十九', reading: 'よんじゅうきゅう' }
     },
     {
@@ -2252,7 +2252,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごとおいち', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十一」讀「ごじゅういち」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「五十一」讀「ごじゅういち」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 51, kanji: '五十一', reading: 'ごじゅういち' }
     },
     {
@@ -2266,12 +2266,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごとおに', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十二」讀「ごじゅうに」。', relatedRules: ['人數の讀法'] },
+        explanation: { correctRule: '「五十二」讀「ごじゅうに」。', relatedRules: ['人數的讀法'] },
         sourceItem: { value: 52, kanji: '五十二', reading: 'ごじゅうに' }
     },
     {
         id: 'num_tens_extra_85', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「五十三」的正確讀音是？', stem_zh: '「五十三」的正確讀音是？',
+        stem: '「五十三」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「五十三」的正確讀音是？',
         options: [
             { text: 'ごじゅうさん', isCorrect: true, reason: '正確！「五十三」讀「ごじゅうさん」。' },
             { text: 'いつじゅうみ', isCorrect: false, reason: '用音讀。' },
@@ -2279,7 +2279,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごとおさん', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十三」讀「ごじゅうさん」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「五十三」讀「ごじゅうさん」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 53, kanji: '五十三', reading: 'ごじゅうさん' }
     },
     {
@@ -2292,7 +2292,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごじゅっよん', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十四」讀「ごじゅうよん」。', trapExplanation: '「四」讀「よん」。', relatedRules: ['4の讀法'] },
+        explanation: { correctRule: '「五十四」讀「ごじゅうよん」。', trapExplanation: '「四」讀「よん」。', relatedRules: ['4的讀法'] },
         sourceItem: { value: 54, kanji: '五十四', reading: 'ごじゅうよん' }
     },
     {
@@ -2306,12 +2306,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごとおご', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十五」讀「ごじゅうご」。', relatedRules: ['數字の讀法'] },
+        explanation: { correctRule: '「五十五」讀「ごじゅうご」。', relatedRules: ['數字的讀法'] },
         sourceItem: { value: 55, kanji: '五十五', reading: 'ごじゅうご' }
     },
     {
         id: 'num_tens_extra_88', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「五十七」的正確讀音是？', stem_zh: '「五十七」的正確讀音是？',
+        stem: '「五十七」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「五十七」的正確讀音是？',
         options: [
             { text: 'ごじゅうなな', isCorrect: true, reason: '正確！「五十七」讀「ごじゅうなな」。' },
             { text: 'ごじゅうしち', isCorrect: false, reason: '陷阱！「七」常讀「なな」。' },
@@ -2319,7 +2319,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごじゅっなな', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十七」讀「ごじゅうなな」。', trapExplanation: '「七」常讀「なな」。', relatedRules: ['7の讀法'] },
+        explanation: { correctRule: '「五十七」讀「ごじゅうなな」。', trapExplanation: '「七」常讀「なな」。', relatedRules: ['7的讀法'] },
         sourceItem: { value: 57, kanji: '五十七', reading: 'ごじゅうなな' }
     },
     {
@@ -2332,7 +2332,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごとおはち', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十八」讀「ごじゅうはち」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「五十八」讀「ごじゅうはち」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 58, kanji: '五十八', reading: 'ごじゅうはち' }
     },
     {
@@ -2346,12 +2346,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごじゅっきゅう', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十九」讀「ごじゅうきゅう」。', trapExplanation: '「九」讀「きゅう」。', relatedRules: ['9の讀法'] },
+        explanation: { correctRule: '「五十九」讀「ごじゅうきゅう」。', trapExplanation: '「九」讀「きゅう」。', relatedRules: ['9的讀法'] },
         sourceItem: { value: 59, kanji: '五十九', reading: 'ごじゅうきゅう' }
     },
     {
         id: 'num_tens_extra_91', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「六十一」的正確讀音是？', stem_zh: '「六十一」的正確讀音是？',
+        stem: '「六十一」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「六十一」的正確讀音是？',
         options: [
             { text: 'ろくじゅういち', isCorrect: true, reason: '正確！「六十一」讀「ろくじゅういち」。' },
             { text: 'むじゅういち', isCorrect: false, reason: '用音讀「ろく」。' },
@@ -2359,7 +2359,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくとおいち', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十一」讀「ろくじゅういち」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「六十一」讀「ろくじゅういち」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 61, kanji: '六十一', reading: 'ろくじゅういち' }
     },
     {
@@ -2372,7 +2372,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくとおに', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十二」讀「ろくじゅうに」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「六十二」讀「ろくじゅうに」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 62, kanji: '六十二', reading: 'ろくじゅうに' }
     },
     {
@@ -2386,12 +2386,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくとおさん', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十三」讀「ろくじゅうさん」。', relatedRules: ['數字の讀法'] },
+        explanation: { correctRule: '「六十三」讀「ろくじゅうさん」。', relatedRules: ['數字的讀法'] },
         sourceItem: { value: 63, kanji: '六十三', reading: 'ろくじゅうさん' }
     },
     {
         id: 'num_tens_extra_94', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「六十四」的正確讀音是？', stem_zh: '「六十四」的正確讀音是？',
+        stem: '「六十四」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「六十四」的正確讀音是？',
         options: [
             { text: 'ろくじゅうよん', isCorrect: true, reason: '正確！「六十四」讀「ろくじゅうよん」。' },
             { text: 'ろくじゅうし', isCorrect: false, reason: '陷阱！「四」讀「よん」。' },
@@ -2399,7 +2399,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくじゅっよん', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十四」讀「ろくじゅうよん」。', trapExplanation: '「四」讀「よん」。', relatedRules: ['4の讀法'] },
+        explanation: { correctRule: '「六十四」讀「ろくじゅうよん」。', trapExplanation: '「四」讀「よん」。', relatedRules: ['4的讀法'] },
         sourceItem: { value: 64, kanji: '六十四', reading: 'ろくじゅうよん' }
     },
     {
@@ -2412,7 +2412,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくとおご', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十五」讀「ろくじゅうご」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「六十五」讀「ろくじゅうご」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 65, kanji: '六十五', reading: 'ろくじゅうご' }
     },
     {
@@ -2426,12 +2426,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくとおろく', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十六」讀「ろくじゅうろく」。', relatedRules: ['冊の讀法'] },
+        explanation: { correctRule: '「六十六」讀「ろくじゅうろく」。', relatedRules: ['冊的讀法'] },
         sourceItem: { value: 66, kanji: '六十六', reading: 'ろくじゅうろく' }
     },
     {
         id: 'num_tens_extra_97', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「六十八」的正確讀音是？', stem_zh: '「六十八」的正確讀音是？',
+        stem: '「六十八」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「六十八」的正確讀音是？',
         options: [
             { text: 'ろくじゅうはち', isCorrect: true, reason: '正確！「六十八」讀「ろくじゅうはち」。' },
             { text: 'むじゅうや', isCorrect: false, reason: '用音讀。' },
@@ -2439,7 +2439,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくとおはち', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十八」讀「ろくじゅうはち」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「六十八」讀「ろくじゅうはち」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 68, kanji: '六十八', reading: 'ろくじゅうはち' }
     },
     {
@@ -2452,7 +2452,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくじゅっきゅう', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十九」讀「ろくじゅうきゅう」。', trapExplanation: '「九」讀「きゅう」。', relatedRules: ['9の讀法'] },
+        explanation: { correctRule: '「六十九」讀「ろくじゅうきゅう」。', trapExplanation: '「九」讀「きゅう」。', relatedRules: ['9的讀法'] },
         sourceItem: { value: 69, kanji: '六十九', reading: 'ろくじゅうきゅう' }
     },
     {
@@ -2466,12 +2466,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちとおご', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十五」讀「はちじゅうご」。', relatedRules: ['數字の讀法'] },
+        explanation: { correctRule: '「八十五」讀「はちじゅうご」。', relatedRules: ['數字的讀法'] },
         sourceItem: { value: 85, kanji: '八十五', reading: 'はちじゅうご' }
     },
     {
         id: 'num_tens_extra_100', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「九十九」的正確讀音是？', stem_zh: '「九十九」的正確讀音是？',
+        stem: '「九十九」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「九十九」的正確讀音是？',
         options: [
             { text: 'きゅうじゅうきゅう', isCorrect: true, reason: '正確！「九十九」讀「きゅうじゅうきゅう」。' },
             { text: 'くじゅうく', isCorrect: false, reason: '陷阱！「九」讀「きゅう」。' },
@@ -2479,7 +2479,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうじゅっきゅう', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十九」讀「きゅうじゅうきゅう」。', trapExplanation: '「九」讀「きゅう」。', relatedRules: ['9の讀法'] },
+        explanation: { correctRule: '「九十九」讀「きゅうじゅうきゅう」。', trapExplanation: '「九」讀「きゅう」。', relatedRules: ['9的讀法'] },
         sourceItem: { value: 99, kanji: '九十九', reading: 'きゅうじゅうきゅう' }
     },
 
@@ -2494,7 +2494,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのじゅういち', isCorrect: false, reason: '用「なな」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十一」讀「ななじゅういち」。', relatedRules: ['7の讀法'] },
+        explanation: { correctRule: '「七十一」讀「ななじゅういち」。', relatedRules: ['7的讀法'] },
         sourceItem: { value: 71, kanji: '七十一', reading: 'ななじゅういち' }
     },
     {
@@ -2508,12 +2508,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのじゅうに', isCorrect: false, reason: '用「なな」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十二」讀「ななじゅうに」。', relatedRules: ['人數の讀法'] },
+        explanation: { correctRule: '「七十二」讀「ななじゅうに」。', relatedRules: ['人數的讀法'] },
         sourceItem: { value: 72, kanji: '七十二', reading: 'ななじゅうに' }
     },
     {
         id: 'num_tens_extra_103', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「七十三」的正確讀音是？', stem_zh: '「七十三」的正確讀音是？',
+        stem: '「七十三」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七十三」的正確讀音是？',
         options: [
             { text: 'ななじゅうさん', isCorrect: true, reason: '正確！「七十三」讀「ななじゅうさん」。' },
             { text: 'しちじゅうさん', isCorrect: false, reason: '「七十」讀「ななじゅう」。' },
@@ -2521,7 +2521,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのじゅうさん', isCorrect: false, reason: '用「なな」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十三」讀「ななじゅうさん」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「七十三」讀「ななじゅうさん」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 73, kanji: '七十三', reading: 'ななじゅうさん' }
     },
     {
@@ -2534,7 +2534,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ななじゅっよん', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十四」讀「ななじゅうよん」。', trapExplanation: '「四」讀「よん」。', relatedRules: ['4の讀法'] },
+        explanation: { correctRule: '「七十四」讀「ななじゅうよん」。', trapExplanation: '「四」讀「よん」。', relatedRules: ['4的讀法'] },
         sourceItem: { value: 74, kanji: '七十四', reading: 'ななじゅうよん' }
     },
     {
@@ -2548,12 +2548,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのじゅうご', isCorrect: false, reason: '用「なな」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十五」讀「ななじゅうご」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「七十五」讀「ななじゅうご」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 75, kanji: '七十五', reading: 'ななじゅうご' }
     },
     {
         id: 'num_tens_extra_106', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「七十六」的正確讀音是？', stem_zh: '「七十六」的正確讀音是？',
+        stem: '「七十六」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七十六」的正確讀音是？',
         options: [
             { text: 'ななじゅうろく', isCorrect: true, reason: '正確！「七十六」讀「ななじゅうろく」。' },
             { text: 'しちじゅうろく', isCorrect: false, reason: '「七十」讀「ななじゅう」。' },
@@ -2561,7 +2561,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのじゅうろく', isCorrect: false, reason: '用「なな」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十六」讀「ななじゅうろく」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「七十六」讀「ななじゅうろく」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 76, kanji: '七十六', reading: 'ななじゅうろく' }
     },
     {
@@ -2574,7 +2574,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ななじゅっなな', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十七」讀「ななじゅうなな」。', trapExplanation: '「七」讀「なな」。', relatedRules: ['7の讀法'] },
+        explanation: { correctRule: '「七十七」讀「ななじゅうなな」。', trapExplanation: '「七」讀「なな」。', relatedRules: ['7的讀法'] },
         sourceItem: { value: 77, kanji: '七十七', reading: 'ななじゅうなな' }
     },
     {
@@ -2588,12 +2588,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'なのじゅうはち', isCorrect: false, reason: '用「なな」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十八」讀「ななじゅうはち」。', relatedRules: ['數字の讀法'] },
+        explanation: { correctRule: '「七十八」讀「ななじゅうはち」。', relatedRules: ['數字的讀法'] },
         sourceItem: { value: 78, kanji: '七十八', reading: 'ななじゅうはち' }
     },
     {
         id: 'num_tens_extra_109', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「七十九」的正確讀音是？', stem_zh: '「七十九」的正確讀音是？',
+        stem: '「七十九」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「七十九」的正確讀音是？',
         options: [
             { text: 'ななじゅうきゅう', isCorrect: true, reason: '正確！「七十九」讀「ななじゅうきゅう」。' },
             { text: 'ななじゅうく', isCorrect: false, reason: '陷阱！「九」讀「きゅう」。' },
@@ -2601,7 +2601,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ななじゅっきゅう', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十九」讀「ななじゅうきゅう」。', trapExplanation: '「七」讀「なな」，「九」讀「きゅう」。', relatedRules: ['7/9の讀法'] },
+        explanation: { correctRule: '「七十九」讀「ななじゅうきゅう」。', trapExplanation: '「七」讀「なな」，「九」讀「きゅう」。', relatedRules: ['7/9的讀法'] },
         sourceItem: { value: 79, kanji: '七十九', reading: 'ななじゅうきゅう' }
     },
     {
@@ -2614,7 +2614,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちとおいち', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十一」讀「はちじゅういち」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「八十一」讀「はちじゅういち」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 81, kanji: '八十一', reading: 'はちじゅういち' }
     },
     {
@@ -2628,12 +2628,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちとおに', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十二」讀「はちじゅうに」。', relatedRules: ['人數の讀法'] },
+        explanation: { correctRule: '「八十二」讀「はちじゅうに」。', relatedRules: ['人數的讀法'] },
         sourceItem: { value: 82, kanji: '八十二', reading: 'はちじゅうに' }
     },
     {
         id: 'num_tens_extra_112', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「八十三」的正確讀音是？', stem_zh: '「八十三」的正確讀音是？',
+        stem: '「八十三」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「八十三」的正確讀音是？',
         options: [
             { text: 'はちじゅうさん', isCorrect: true, reason: '正確！「八十三」讀「はちじゅうさん」。' },
             { text: 'やじゅうさん', isCorrect: false, reason: '用音讀「はち」。' },
@@ -2641,7 +2641,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちとおさん', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十三」讀「はちじゅうさん」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「八十三」讀「はちじゅうさん」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 83, kanji: '八十三', reading: 'はちじゅうさん' }
     },
     {
@@ -2654,7 +2654,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちじゅっよん', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十四」讀「はちじゅうよん」。', trapExplanation: '「四」讀「よん」。', relatedRules: ['4の讀法'] },
+        explanation: { correctRule: '「八十四」讀「はちじゅうよん」。', trapExplanation: '「四」讀「よん」。', relatedRules: ['4的讀法'] },
         sourceItem: { value: 84, kanji: '八十四', reading: 'はちじゅうよん' }
     },
     {
@@ -2668,12 +2668,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちとおろく', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十六」讀「はちじゅうろく」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「八十六」讀「はちじゅうろく」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 86, kanji: '八十六', reading: 'はちじゅうろく' }
     },
     {
         id: 'num_tens_extra_115', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「八十七」的正確讀音是？', stem_zh: '「八十七」的正確讀音是？',
+        stem: '「八十七」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「八十七」的正確讀音是？',
         options: [
             { text: 'はちじゅうなな', isCorrect: true, reason: '正確！「八十七」讀「はちじゅうなな」。' },
             { text: 'はちじゅうしち', isCorrect: false, reason: '陷阱！「七」常讀「なな」。' },
@@ -2681,7 +2681,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちじゅっなな', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十七」讀「はちじゅうなな」。', trapExplanation: '「七」常讀「なな」。', relatedRules: ['7の讀法'] },
+        explanation: { correctRule: '「八十七」讀「はちじゅうなな」。', trapExplanation: '「七」常讀「なな」。', relatedRules: ['7的讀法'] },
         sourceItem: { value: 87, kanji: '八十七', reading: 'はちじゅうなな' }
     },
     {
@@ -2694,7 +2694,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちとおはち', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十八」讀「はちじゅうはち」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「八十八」讀「はちじゅうはち」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 88, kanji: '八十八', reading: 'はちじゅうはち' }
     },
     {
@@ -2708,12 +2708,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はちじゅっきゅう', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十九」讀「はちじゅうきゅう」。', trapExplanation: '「九」讀「きゅう」。', relatedRules: ['9の讀法'] },
+        explanation: { correctRule: '「八十九」讀「はちじゅうきゅう」。', trapExplanation: '「九」讀「きゅう」。', relatedRules: ['9的讀法'] },
         sourceItem: { value: 89, kanji: '八十九', reading: 'はちじゅうきゅう' }
     },
     {
         id: 'num_tens_extra_118', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「九十一」的正確讀音是？', stem_zh: '「九十一」的正確讀音是？',
+        stem: '「九十一」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「九十一」的正確讀音是？',
         options: [
             { text: 'きゅうじゅういち', isCorrect: true, reason: '正確！「九十一」讀「きゅうじゅういち」。' },
             { text: 'くじゅういち', isCorrect: false, reason: '「九十」讀「きゅうじゅう」。' },
@@ -2721,7 +2721,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのじゅういち', isCorrect: false, reason: '用音讀「きゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十一」讀「きゅうじゅういち」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「九十一」讀「きゅうじゅういち」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 91, kanji: '九十一', reading: 'きゅうじゅういち' }
     },
     {
@@ -2734,7 +2734,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのじゅうに', isCorrect: false, reason: '用音讀「きゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十二」讀「きゅうじゅうに」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「九十二」讀「きゅうじゅうに」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 92, kanji: '九十二', reading: 'きゅうじゅうに' }
     },
     {
@@ -2748,12 +2748,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのじゅうさん', isCorrect: false, reason: '用音讀「きゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十三」讀「きゅうじゅうさん」。', relatedRules: ['數字の讀法'] },
+        explanation: { correctRule: '「九十三」讀「きゅうじゅうさん」。', relatedRules: ['數字的讀法'] },
         sourceItem: { value: 93, kanji: '九十三', reading: 'きゅうじゅうさん' }
     },
     {
         id: 'num_tens_extra_121', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「九十四」的正確讀音是？', stem_zh: '「九十四」的正確讀音是？',
+        stem: '「九十四」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「九十四」的正確讀音是？',
         options: [
             { text: 'きゅうじゅうよん', isCorrect: true, reason: '正確！「九十四」讀「きゅうじゅうよん」。' },
             { text: 'くじゅうし', isCorrect: false, reason: '陷阱！「九十」讀「きゅうじゅう」，「四」讀「よん」。' },
@@ -2761,7 +2761,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうじゅっよん', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十四」讀「きゅうじゅうよん」。', trapExplanation: '「九」讀「きゅう」，「四」讀「よん」。', relatedRules: ['4/9の讀法'] },
+        explanation: { correctRule: '「九十四」讀「きゅうじゅうよん」。', trapExplanation: '「九」讀「きゅう」，「四」讀「よん」。', relatedRules: ['4/9的讀法'] },
         sourceItem: { value: 94, kanji: '九十四', reading: 'きゅうじゅうよん' }
     },
     {
@@ -2774,7 +2774,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのじゅうご', isCorrect: false, reason: '用音讀「きゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十五」讀「きゅうじゅうご」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「九十五」讀「きゅうじゅうご」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 95, kanji: '九十五', reading: 'きゅうじゅうご' }
     },
     {
@@ -2788,12 +2788,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのじゅうろく', isCorrect: false, reason: '用音讀「きゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十六」讀「きゅうじゅうろく」。', relatedRules: ['人數の讀法'] },
+        explanation: { correctRule: '「九十六」讀「きゅうじゅうろく」。', relatedRules: ['人數的讀法'] },
         sourceItem: { value: 96, kanji: '九十六', reading: 'きゅうじゅうろく' }
     },
     {
         id: 'num_tens_extra_124', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: true,
-        stem: '「九十七」的正確讀音是？', stem_zh: '「九十七」的正確讀音是？',
+        stem: '「九十七」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「九十七」的正確讀音是？',
         options: [
             { text: 'きゅうじゅうなな', isCorrect: true, reason: '正確！「九十七」讀「きゅうじゅうなな」。' },
             { text: 'くじゅうしち', isCorrect: false, reason: '陷阱！「九十」讀「きゅうじゅう」，「七」讀「なな」。' },
@@ -2801,7 +2801,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうじゅっなな', isCorrect: false, reason: '不促音化。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十七」讀「きゅうじゅうなな」。', trapExplanation: '「九」讀「きゅう」，「七」讀「なな」。', relatedRules: ['7/9の讀法'] },
+        explanation: { correctRule: '「九十七」讀「きゅうじゅうなな」。', trapExplanation: '「九」讀「きゅう」，「七」讀「なな」。', relatedRules: ['7/9的讀法'] },
         sourceItem: { value: 97, kanji: '九十七', reading: 'きゅうじゅうなな' }
     },
     {
@@ -2814,7 +2814,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのじゅうはち', isCorrect: false, reason: '用音讀「きゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十八」讀「きゅうじゅうはち」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「九十八」讀「きゅうじゅうはち」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 98, kanji: '九十八', reading: 'きゅうじゅうはち' }
     },
     {
@@ -2828,7 +2828,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にとお', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十分」讀「にじゅっぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「二十分」讀「にじゅっぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 20, kanji: '二十分', reading: 'にじゅっぷん' }
     },
     {
@@ -2841,7 +2841,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'にじゅっにち', isCorrect: false, reason: '「二十日」讀「はつか」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十日」讀「はつか」，是特殊讀法。', trapExplanation: '20日是日期的特殊讀法。', relatedRules: ['日期の特殊讀法'] },
+        explanation: { correctRule: '「二十日」讀「はつか」，是特殊讀法。', trapExplanation: '20日是日期的特殊讀法。', relatedRules: ['日期的特殊讀法'] },
         sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
     },
     {
@@ -2854,7 +2854,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたとさい', isCorrect: false, reason: '不用訓讀。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「二十歳」讀「はたち」，是特殊讀法。', trapExplanation: '20歲是年齡的特殊讀法。', relatedRules: ['年齡の特殊讀法'] },
+        explanation: { correctRule: '「二十歳」讀「はたち」，是特殊讀法。', trapExplanation: '20歲是年齡的特殊讀法。', relatedRules: ['年齡的特殊讀法'] },
         sourceItem: { value: 20, kanji: '二十歳', reading: 'はたち' }
     },
     {
@@ -2868,12 +2868,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'みそ', isCorrect: false, reason: '現代日語不用這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十」讀「さんじゅう」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「三十」讀「さんじゅう」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 30, kanji: '三十', reading: 'さんじゅう' }
     },
     {
         id: 'num_tens_extra_130', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「四十」的正確讀音是？', stem_zh: '「四十」的正確讀音是？',
+        stem: '「四十」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四十」的正確讀音是？',
         options: [
             { text: 'よんじゅう', isCorrect: true, reason: '正確！「四十」讀「よんじゅう」。' },
             { text: 'しじゅう', isCorrect: false, reason: '「四十」讀「よんじゅう」。' },
@@ -2881,7 +2881,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よんとお', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十」讀「よんじゅう」。', relatedRules: ['4の讀法'] },
+        explanation: { correctRule: '「四十」讀「よんじゅう」。', relatedRules: ['4的讀法'] },
         sourceItem: { value: 40, kanji: '四十', reading: 'よんじゅう' }
     },
     {
@@ -2894,7 +2894,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'いそ', isCorrect: false, reason: '現代日語不用這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十」讀「ごじゅう」。', relatedRules: ['年齡の讀法'] },
+        explanation: { correctRule: '「五十」讀「ごじゅう」。', relatedRules: ['年齡的讀法'] },
         sourceItem: { value: 50, kanji: '五十', reading: 'ごじゅう' }
     },
     {
@@ -2908,12 +2908,12 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'むそ', isCorrect: false, reason: '現代日語不用這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十」讀「ろくじゅう」。', relatedRules: ['人數の讀法'] },
+        explanation: { correctRule: '「六十」讀「ろくじゅう」。', relatedRules: ['人數的讀法'] },
         sourceItem: { value: 60, kanji: '六十', reading: 'ろくじゅう' }
     },
     {
         id: 'num_tens_extra_133', category: 'numbers', subcategory: 'tens', type: 'pronunciation', isTrap: false,
-        stem: '「八十」的正確讀音是？', stem_zh: '「八十」的正確讀音是？',
+        stem: '「八十」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「八十」的正確讀音是？',
         options: [
             { text: 'はちじゅう', isCorrect: true, reason: '正確！「八十」讀「はちじゅう」。' },
             { text: 'やじゅう', isCorrect: false, reason: '用音讀「はち」。' },
@@ -2921,7 +2921,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'やそ', isCorrect: false, reason: '現代日語不用這個讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「八十」讀「はちじゅう」。', relatedRules: ['十位數の讀法'] },
+        explanation: { correctRule: '「八十」讀「はちじゅう」。', relatedRules: ['十位數的讀法'] },
         sourceItem: { value: 80, kanji: '八十', reading: 'はちじゅう' }
     },
     {
@@ -2934,7 +2934,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'さんとお', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「三十分」讀「さんじゅっぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「三十分」讀「さんじゅっぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 30, kanji: '三十分', reading: 'さんじゅっぷん' }
     },
     {
@@ -2948,7 +2948,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'よんとお', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「四十分」讀「よんじゅっぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「四十分」讀「よんじゅっぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 40, kanji: '四十分', reading: 'よんじゅっぷん' }
     },
     {
@@ -2961,7 +2961,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ごとふん', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「五十分」讀「ごじゅっぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「五十分」讀「ごじゅっぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 50, kanji: '五十分', reading: 'ごじゅっぷん' }
     },
     {
@@ -2974,7 +2974,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ろくとお', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「六十分」讀「ろくじゅっぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「六十分」讀「ろくじゅっぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 60, kanji: '六十分', reading: 'ろくじゅっぷん' }
     },
     {
@@ -2988,7 +2988,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ななとお', isCorrect: false, reason: '用「じゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「七十分」讀「ななじゅっぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「七十分」讀「ななじゅっぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 70, kanji: '七十分', reading: 'ななじゅっぷん' }
     },
     {
@@ -3001,7 +3001,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'ここのじゅうふん', isCorrect: false, reason: '用音讀「きゅう」。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「九十分」讀「きゅうじゅっぷん」。', relatedRules: ['分の讀法'] },
+        explanation: { correctRule: '「九十分」讀「きゅうじゅっぷん」。', relatedRules: ['分的讀法'] },
         sourceItem: { value: 90, kanji: '九十分', reading: 'きゅうじゅっぷん' }
     },
     {
@@ -3014,7 +3014,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっ', isCorrect: false, reason: '「じゅっ」是促音化形式。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「十」的讀法有「じゅう」「とお」「じゅっ」「じっ」。', relatedRules: ['10の讀法'] },
+        explanation: { correctRule: '「十」的讀法有「じゅう」「とお」「じゅっ」「じっ」。', relatedRules: ['10的讀法'] },
         sourceItem: { value: 10, kanji: '十', reading: '讀法辨析' }
     },
     {
@@ -3041,7 +3041,7 @@ export const tensNumberQuestions: DatesPracticeQuestion[] = [
             { text: 'はく', isCorrect: false, reason: '這不是「百」的讀法。' }
         ],
         correctIndex: 0,
-        explanation: { correctRule: '「百」讀「ひゃく」。', relatedRules: ['百の讀法'] },
+        explanation: { correctRule: '「百」讀「ひゃく」。', relatedRules: ['百的讀法'] },
         sourceItem: { value: 100, kanji: '百', reading: 'ひゃく' }
     }
 ];

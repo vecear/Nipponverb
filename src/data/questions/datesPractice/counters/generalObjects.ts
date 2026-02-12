@@ -14,19 +14,19 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'generalObjects',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「一つ」的正確讀音是？',
+        stem: '「一つ」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一つ」的正確讀音是？',
         options: [
-            { text: 'ひとつ', isCorrect: true, reason: '正確{せいかく}！「一{ひと}つ」使用{しよう}訓讀{くんどく}，讀作{どくさ}「ひとつ」。' },
-            { text: 'いちつ', isCorrect: false, reason: '陷阱{かんけい}！「つ」系統{けいとう}使用{しよう}訓讀{くんどく}「ひと」，不是音讀{おんどく}「いち」。' },
-            { text: 'いっつ', isCorrect: false, reason: '量詞{りょうし}「つ」使用{しよう}訓讀{くんどく}數字{すうじ}。' },
-            { text: 'ひとっつ', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'ひとつ', isCorrect: true, reason: '正確！「一{ひと}つ」使用訓讀，讀作「ひとつ」。' },
+            { text: 'いちつ', isCorrect: false, reason: '陷阱！「つ」系統使用訓讀「ひと」，不是音讀「いち」。' },
+            { text: 'いっつ', isCorrect: false, reason: '量詞「つ」使用訓讀數字。' },
+            { text: 'ひとっつ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「一{ひと}つ」讀作{どくさ}「ひとつ」。「つ」系統{けいとう}是日語{にほんご}固有{こゆう}的訓讀{くんどく}計數{けいすう}法{ほう}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「つ」搭配{たいはい}訓讀{くんどく}數字{すうじ}（ひと、ふた、み...），不用{もちいず}音讀{おんどく}。',
-            relatedRules: ['訓讀{くんどく}計數{けいすう}系統{けいとう}', '「つ」の特殊{とくしゅ}性{せい}']
+            correctRule: '「一{ひと}つ」讀作「ひとつ」。「つ」系統是日語固有的訓讀計數法。',
+            trapExplanation: '這是陷阱題。「つ」搭配訓讀數字（ひと、ふた、み...），不用音讀。',
+            relatedRules: ['訓讀計數系統', '「つ」的特殊性']
         },
         sourceItem: { value: 1, kanji: '一つ', reading: 'ひとつ' }
     },
@@ -39,16 +39,16 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         stem: 'りんごを＿＿ください。',
         stem_zh: '請給我一個蘋果。',
         options: [
-            { text: 'いちこ', isCorrect: false, reason: '陷阱{かんけい}！蘋果{りんご}可用{もちいる}「つ」或「個{こ}」，但不說{いわない}「いちこ」。' },
-            { text: 'ひとつ', isCorrect: true, reason: '正確{せいかく}！「りんごを一{ひと}つください」表示{ひょうじ}「請給我{ください}一個{ひとつ}蘋果{りんご}」。' },
-            { text: 'いちつ', isCorrect: false, reason: '「つ」使用{しよう}訓讀{くんどく}「ひと」。' },
-            { text: 'いっこ', isCorrect: false, reason: '「個{こ}」也可用{もちいる}，但本題{ほんだい}考察{こうさつ}「つ」的讀法{よみかた}。' }
+            { text: 'いちこ', isCorrect: false, reason: '陷阱！蘋果可用「つ」或「個{こ}」，但不說「いちこ」。' },
+            { text: 'ひとつ', isCorrect: true, reason: '正確！「りんごを一{ひと}つください」表示「請給我一個蘋果」。' },
+            { text: 'いちつ', isCorrect: false, reason: '「つ」使用訓讀「ひと」。' },
+            { text: 'いっこ', isCorrect: false, reason: '「個{こ}」也可用，但本題考察「つ」的讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「りんご」（蘋果{りんご}）可使用{しよう}萬能{ばんのう}量詞{りょうし}「つ」。',
-            trapExplanation: '「つ」是最安全{あんぜん}的量詞{りょうし}選擇{せんたく}，當不確定{ふかくてい}該{べき}用什麼{なにを}量詞{りょうし}時{とき}可使用{しよう}。',
-            relatedRules: ['量詞{りょうし}「つ」の使用{しよう}', '購物{こうぶつ}表達{ひょうたつ}']
+            correctRule: '「りんご」（蘋果）可使用萬能量詞「つ」。',
+            trapExplanation: '「つ」是最安全的量詞選擇，當不確定該用什麼量詞時可使用。',
+            relatedRules: ['量詞「つ」的使用', '購物表達']
         },
         sourceItem: { value: 1, kanji: '一つ', reading: 'ひとつ' }
     },
@@ -65,15 +65,15 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿だけ食べました。（只吃一個）'
         },
         options: [
-            { text: 'いちこ', isCorrect: false, reason: '「つ」系統{けいとう}不用{もちいず}音讀{おんどく}。' },
-            { text: 'ひとつ', isCorrect: true, reason: '正確{せいかく}！只吃了{たべました}一個{ひとつ}點心{おかし}。' },
-            { text: 'いちつ', isCorrect: false, reason: '「つ」使用{しよう}訓讀{くんどく}。' },
-            { text: 'いっこ', isCorrect: false, reason: '回答{かいとう}「いくつ」時{とき}使用{しよう}「つ」。' }
+            { text: 'いちこ', isCorrect: false, reason: '「つ」系統不用音讀。' },
+            { text: 'ひとつ', isCorrect: true, reason: '正確！只吃了一個點心。' },
+            { text: 'いちつ', isCorrect: false, reason: '「つ」使用訓讀。' },
+            { text: 'いっこ', isCorrect: false, reason: '回答「いくつ」時使用「つ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '回答{かいとう}「いくつ」（幾個{いくつ}）時{とき}，使用{しよう}「〜つ」來回答{かいとう}。',
-            relatedRules: ['量詞{りょうし}「つ」の使用{しよう}', '「いくつ」の質問{しつもん}與回答{かいとう}']
+            correctRule: '回答「いくつ」（幾個）時，使用「〜つ」來回答。',
+            relatedRules: ['量詞「つ」的使用', '「いくつ」的質問與回答']
         },
         sourceItem: { value: 1, kanji: '一つ', reading: 'ひとつ' }
     },
@@ -85,19 +85,19 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'generalObjects',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二つ」的正確讀音是？',
+        stem: '「二つ」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二つ」的正確讀音是？',
         options: [
-            { text: 'ふたつ', isCorrect: true, reason: '正確{せいかく}！「二{ふた}つ」使用{しよう}訓讀{くんどく}，讀作{どくさ}「ふたつ」。' },
-            { text: 'につ', isCorrect: false, reason: '陷阱{かんけい}！「つ」系統{けいとう}使用{しよう}訓讀{くんどく}「ふた」，不是音讀{おんどく}「に」。' },
-            { text: 'にっつ', isCorrect: false, reason: '量詞{りょうし}「つ」使用{しよう}訓讀{くんどく}數字{すうじ}。' },
-            { text: 'ふたっつ', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'ふたつ', isCorrect: true, reason: '正確！「二{ふた}つ」使用訓讀，讀作「ふたつ」。' },
+            { text: 'につ', isCorrect: false, reason: '陷阱！「つ」系統使用訓讀「ふた」，不是音讀「に」。' },
+            { text: 'にっつ', isCorrect: false, reason: '量詞「つ」使用訓讀數字。' },
+            { text: 'ふたっつ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二{ふた}つ」讀作{どくさ}「ふたつ」。與「二人{ふたり}」相同{おなじ}，使用{しよう}訓讀{くんどく}「ふた」。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「つ」系統{けいとう}完全{かんぜん}使用{しよう}訓讀{くんどく}數字{すうじ}。',
-            relatedRules: ['訓讀{くんどく}計數{けいすう}系統{けいとう}', '「ふた」の使用{しよう}']
+            correctRule: '「二{ふた}つ」讀作「ふたつ」。與「二人{ふたり}」相同，使用訓讀「ふた」。',
+            trapExplanation: '這是陷阱題。「つ」系統完全使用訓讀數字。',
+            relatedRules: ['訓讀計數系統', '「ふた」的使用']
         },
         sourceItem: { value: 2, kanji: '二つ', reading: 'ふたつ' }
     },
@@ -110,16 +110,16 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         stem: '石が＿＿ありました。',
         stem_zh: '有兩顆石頭。',
         options: [
-            { text: 'につ', isCorrect: false, reason: '陷阱{かんけい}！「つ」使用{しよう}訓讀{くんどく}「ふた」。' },
-            { text: 'ふたつ', isCorrect: true, reason: '正確{せいかく}！「石{いし}が二{ふた}つ」表示{ひょうじ}「有兩顆{ふたつ}石頭{いし}」。' },
-            { text: 'にこ', isCorrect: false, reason: '石頭{いし}可用{もちいる}「つ」或「個{こ}」，但「個{こ}」讀{よむ}「にこ」不對{ちがう}。' },
-            { text: 'ふたこ', isCorrect: false, reason: '「個{こ}」使用{しよう}音讀{おんどく}數字{すうじ}。' }
+            { text: 'につ', isCorrect: false, reason: '陷阱！「つ」使用訓讀「ふた」。' },
+            { text: 'ふたつ', isCorrect: true, reason: '正確！「石が二{ふた}つ」表示「有兩顆石頭」。' },
+            { text: 'にこ', isCorrect: false, reason: '石頭可用「つ」或「個{こ}」，但「個{こ}」讀「にこ」不對。' },
+            { text: 'ふたこ', isCorrect: false, reason: '「個{こ}」使用音讀數字。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「石{いし}」（石頭{いし}）形狀{けいじょう}不規則{ふきそく}，可使用{しよう}萬能{ばんのう}量詞{りょうし}「つ」。',
-            trapExplanation: '「つ」系統{けいとう}完全{かんぜん}使用{しよう}訓讀{くんどく}，包括{ふくむ}「ふたつ」。',
-            relatedRules: ['量詞{りょうし}「つ」の使用{しよう}', '不規則{ふきそく}物品{ぶっぴん}']
+            correctRule: '「石」（石頭）形狀不規則，可使用萬能量詞「つ」。',
+            trapExplanation: '「つ」系統完全使用訓讀，包括「ふたつ」。',
+            relatedRules: ['量詞「つ」的使用', '不規則物品']
         },
         sourceItem: { value: 2, kanji: '二つ', reading: 'ふたつ' }
     },
@@ -136,15 +136,15 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿お願いします。（兩個）'
         },
         options: [
-            { text: 'につ', isCorrect: false, reason: '「つ」使用{しよう}訓讀{くんどく}。' },
-            { text: 'ふたつ', isCorrect: true, reason: '正確{せいかく}！需要{いります}兩個{ふたつ}蛋糕{ケーキ}。' },
-            { text: 'にこ', isCorrect: false, reason: '回答{かいとう}「いくつ」時{とき}使用{しよう}「つ」。' },
-            { text: 'ふたり', isCorrect: false, reason: '「人{にん}」用於{もちいる}人，蛋糕{ケーキ}用{もちいる}「つ」。' }
+            { text: 'につ', isCorrect: false, reason: '「つ」使用訓讀。' },
+            { text: 'ふたつ', isCorrect: true, reason: '正確！需要兩個蛋糕。' },
+            { text: 'にこ', isCorrect: false, reason: '回答「いくつ」時使用「つ」。' },
+            { text: 'ふたり', isCorrect: false, reason: '「人{にん}」用於人，蛋糕用「つ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ケーキ」（蛋糕{けーき}）可使用{しよう}萬能{ばんのう}量詞{りょうし}「つ」。',
-            relatedRules: ['量詞{りょうし}「つ」の使用{しよう}', '點餐{てんさい}表達{ひょうたつ}']
+            correctRule: '「ケーキ」（蛋糕）可使用萬能量詞「つ」。',
+            relatedRules: ['量詞「つ」的使用', '點餐表達']
         },
         sourceItem: { value: 2, kanji: '二つ', reading: 'ふたつ' }
     },
@@ -156,19 +156,19 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'generalObjects',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「三つ」的正確讀音是？',
+        stem: '「三つ」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三つ」的正確讀音是？',
         options: [
-            { text: 'みっつ', isCorrect: true, reason: '正確{せいかく}！「三{み}つ」使用{しよう}訓讀{くんどく}，讀作{どくさ}「みっつ」（有促音{そくおん}）。' },
-            { text: 'さんつ', isCorrect: false, reason: '陷阱{かんけい}！「つ」系統{けいとう}使用{しよう}訓讀{くんどく}「み」，不是音讀{おんどく}「さん」。' },
-            { text: 'みつ', isCorrect: false, reason: '「三{み}つ」有促音{そくおん}，讀作{どくさ}「みっつ」。' },
-            { text: 'みいつ', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'みっつ', isCorrect: true, reason: '正確！「三{み}つ」使用訓讀，讀作「みっつ」（有促音）。' },
+            { text: 'さんつ', isCorrect: false, reason: '陷阱！「つ」系統使用訓讀「み」，不是音讀「さん」。' },
+            { text: 'みつ', isCorrect: false, reason: '「三{み}つ」有促音，讀作「みっつ」。' },
+            { text: 'みいつ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三{み}つ」讀作{どくさ}「みっつ」。注意{ちゅうい}有促音{そくおん}「っ」。',
-            trapExplanation: '這是陷阱題{かんけいだい}。3、4、6、8有促音{そくおん}：みっつ、よっつ、むっつ、やっつ。',
-            relatedRules: ['訓讀{くんどく}計數{けいすう}系統{けいとう}', '促音{そくおん}的規則{きそく}']
+            correctRule: '「三{み}つ」讀作「みっつ」。注意有促音「っ」。',
+            trapExplanation: '這是陷阱題。3、4、6、8有促音：みっつ、よっつ、むっつ、やっつ。',
+            relatedRules: ['訓讀計數系統', '促音的規則']
         },
         sourceItem: { value: 3, kanji: '三つ', reading: 'みっつ' }
     },
@@ -181,16 +181,16 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         stem: '問題が＿＿あります。',
         stem_zh: '有三個問題。',
         options: [
-            { text: 'さんつ', isCorrect: false, reason: '陷阱{かんけい}！「つ」使用{しよう}訓讀{くんどく}「みっ」。' },
-            { text: 'みっつ', isCorrect: true, reason: '正確{せいかく}！「問題{もんだい}が三{み}つ」表示{ひょうじ}「有三個{みっつ}問題{もんだい}」。' },
-            { text: 'みつ', isCorrect: false, reason: '需要{じゅよう}促音{そくおん}「みっつ」。' },
-            { text: 'さんこ', isCorrect: false, reason: '抽象{ちゅうしょう}事物{じぶつ}常用{じょうよう}「つ」。' }
+            { text: 'さんつ', isCorrect: false, reason: '陷阱！「つ」使用訓讀「みっ」。' },
+            { text: 'みっつ', isCorrect: true, reason: '正確！「問題が三{み}つ」表示「有三個問題」。' },
+            { text: 'みつ', isCorrect: false, reason: '需要促音「みっつ」。' },
+            { text: 'さんこ', isCorrect: false, reason: '抽象事物常用「つ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「問題{もんだい}」（問題{もんだい}）等抽象{ちゅうしょう}事物{じぶつ}可使用{しよう}「つ」。',
-            trapExplanation: '「三{み}つ」固定{こてい}讀む{よむ}「みっつ」，有促音{そくおん}。',
-            relatedRules: ['量詞{りょうし}「つ」の使用{しよう}', '抽象{ちゅうしょう}事物{じぶつ}']
+            correctRule: '「問題」（問題）等抽象事物可使用「つ」。',
+            trapExplanation: '「三{み}つ」固定讀「みっつ」，有促音。',
+            relatedRules: ['量詞「つ」的使用', '抽象事物']
         },
         sourceItem: { value: 3, kanji: '三つ', reading: 'みっつ' }
     },
@@ -207,15 +207,15 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿買います。（三個）'
         },
         options: [
-            { text: 'さんつ', isCorrect: false, reason: '「つ」使用{しよう}訓讀{くんどく}。' },
-            { text: 'みっつ', isCorrect: true, reason: '正確{せいかく}！買三個{みっつ}飯糰{おにぎり}。' },
-            { text: 'みつ', isCorrect: false, reason: '需要{じゅよう}促音{そくおん}「みっつ」。' },
-            { text: 'さんこ', isCorrect: false, reason: '回答{かいとう}「いくつ」時{とき}使用{しよう}「つ」。' }
+            { text: 'さんつ', isCorrect: false, reason: '「つ」使用訓讀。' },
+            { text: 'みっつ', isCorrect: true, reason: '正確！買三個飯糰。' },
+            { text: 'みつ', isCorrect: false, reason: '需要促音「みっつ」。' },
+            { text: 'さんこ', isCorrect: false, reason: '回答「いくつ」時使用「つ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「おにぎり」（飯糰{おにぎり}）可使用{しよう}萬能{ばんのう}量詞{りょうし}「つ」。',
-            relatedRules: ['量詞{りょうし}「つ」の使用{しよう}', '便利商店{コンビニ}購物{こうぶつ}']
+            correctRule: '「おにぎり」（飯糰）可使用萬能量詞「つ」。',
+            relatedRules: ['量詞「つ」的使用', '便利商店購物']
         },
         sourceItem: { value: 3, kanji: '三つ', reading: 'みっつ' }
     },
@@ -227,19 +227,19 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'generalObjects',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「五つ」的正確讀音是？',
+        stem: '「五つ」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五つ」的正確讀音是？',
         options: [
-            { text: 'いつつ', isCorrect: true, reason: '正確{せいかく}！「五{いつ}つ」使用{しよう}訓讀{くんどく}，讀作{どくさ}「いつつ」。' },
-            { text: 'ごつ', isCorrect: false, reason: '陷阱{かんけい}！「つ」系統{けいとう}使用{しよう}訓讀{くんどく}「いつ」，不是音讀{おんどく}「ご」。' },
-            { text: 'いっつ', isCorrect: false, reason: '「五{いつ}つ」沒有{ない}促音{そくおん}，讀作{どくさ}「いつつ」。' },
-            { text: 'いつっつ', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'いつつ', isCorrect: true, reason: '正確！「五{いつ}つ」使用訓讀，讀作「いつつ」。' },
+            { text: 'ごつ', isCorrect: false, reason: '陷阱！「つ」系統使用訓讀「いつ」，不是音讀「ご」。' },
+            { text: 'いっつ', isCorrect: false, reason: '「五{いつ}つ」沒有促音，讀作「いつつ」。' },
+            { text: 'いつっつ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五{いつ}つ」讀作{どくさ}「いつつ」。5不{ない}促音{そくおん}，與「五日{いつか}」的「いつ」相同{おなじ}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「つ」系統{けいとう}完全{かんぜん}使用{しよう}訓讀{くんどく}。',
-            relatedRules: ['訓讀{くんどく}計數{けいすう}系統{けいとう}', '「いつ」の使用{しよう}']
+            correctRule: '「五{いつ}つ」讀作「いつつ」。5不促音，與「五日{いつか}」的「いつ」相同。',
+            trapExplanation: '這是陷阱題。「つ」系統完全使用訓讀。',
+            relatedRules: ['訓讀計數系統', '「いつ」的使用']
         },
         sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
     },
@@ -252,16 +252,16 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         stem: '星が＿＿光っています。',
         stem_zh: '五顆星星在閃耀。',
         options: [
-            { text: 'ごつ', isCorrect: false, reason: '陷阱{かんけい}！「つ」使用{しよう}訓讀{くんどく}「いつ」。' },
-            { text: 'いつつ', isCorrect: true, reason: '正確{せいかく}！「星{ほし}が五{いつ}つ」表示{ひょうじ}「五顆{いつつ}星星{ほし}」。' },
-            { text: 'いっつ', isCorrect: false, reason: '「五{いつ}つ」沒有{ない}促音{そくおん}。' },
-            { text: 'ごこ', isCorrect: false, reason: '星星{ほし}常用{じょうよう}「つ」。' }
+            { text: 'ごつ', isCorrect: false, reason: '陷阱！「つ」使用訓讀「いつ」。' },
+            { text: 'いつつ', isCorrect: true, reason: '正確！「星が五{いつ}つ」表示「五顆星星」。' },
+            { text: 'いっつ', isCorrect: false, reason: '「五{いつ}つ」沒有促音。' },
+            { text: 'ごこ', isCorrect: false, reason: '星星常用「つ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「星{ほし}」（星星{ほし}）可使用{しよう}萬能{ばんのう}量詞{りょうし}「つ」。',
-            trapExplanation: '「五{いつ}つ」固定{こてい}讀む{よむ}「いつつ」，沒有{ない}促音{そくおん}。',
-            relatedRules: ['量詞{りょうし}「つ」の使用{しよう}', '天體{てんたい}の計數{けいすう}']
+            correctRule: '「星」（星星）可使用萬能量詞「つ」。',
+            trapExplanation: '「五{いつ}つ」固定讀「いつつ」，沒有促音。',
+            relatedRules: ['量詞「つ」的使用', '天體の計數']
         },
         sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
     },
@@ -278,15 +278,15 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿あります。（五個）'
         },
         options: [
-            { text: 'ごつ', isCorrect: false, reason: '「つ」使用{しよう}訓讀{くんどく}。' },
-            { text: 'いつつ', isCorrect: true, reason: '正確{せいかく}！有五個{いつつ}橘子{みかん}。' },
-            { text: 'いっつ', isCorrect: false, reason: '「五{いつ}つ」沒有{ない}促音{そくおん}。' },
-            { text: 'ごこ', isCorrect: false, reason: '回答{かいとう}「いくつ」時{とき}使用{しよう}「つ」。' }
+            { text: 'ごつ', isCorrect: false, reason: '「つ」使用訓讀。' },
+            { text: 'いつつ', isCorrect: true, reason: '正確！有五個橘子。' },
+            { text: 'いっつ', isCorrect: false, reason: '「五{いつ}つ」沒有促音。' },
+            { text: 'ごこ', isCorrect: false, reason: '回答「いくつ」時使用「つ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「みかん」（橘子{みかん}）可使用{しよう}萬能{ばんのう}量詞{りょうし}「つ」。',
-            relatedRules: ['量詞{りょうし}「つ」の使用{しよう}', '水果{くだもの}の計數{けいすう}']
+            correctRule: '「みかん」（橘子）可使用萬能量詞「つ」。',
+            relatedRules: ['量詞「つ」的使用', '水果の計數']
         },
         sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
     },
@@ -298,19 +298,19 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'generalObjects',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「七つ」的正確讀音是？',
+        stem: '「七つ」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「七つ」的正確讀音是？',
         options: [
-            { text: 'ななつ', isCorrect: true, reason: '正確{せいかく}！「七{なな}つ」使用{しよう}訓讀{くんどく}，讀作{どくさ}「ななつ」。' },
-            { text: 'しちつ', isCorrect: false, reason: '陷阱{かんけい}！「つ」系統{けいとう}使用{しよう}訓讀{くんどく}「なな」，不是音讀{おんどく}「しち」。' },
-            { text: 'なのつ', isCorrect: false, reason: '「なの」是日期{にっき}七日{なのか}的讀法{よみかた}。' },
-            { text: 'なっつ', isCorrect: false, reason: '「七{なな}つ」沒有{ない}促音{そくおん}。' }
+            { text: 'ななつ', isCorrect: true, reason: '正確！「七{なな}つ」使用訓讀，讀作「ななつ」。' },
+            { text: 'しちつ', isCorrect: false, reason: '陷阱！「つ」系統使用訓讀「なな」，不是音讀「しち」。' },
+            { text: 'なのつ', isCorrect: false, reason: '「なの」是日期七日{なのか}的讀法。' },
+            { text: 'なっつ', isCorrect: false, reason: '「七{なな}つ」沒有促音。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七{なな}つ」讀作{どくさ}「ななつ」。7不{ない}促音{そくおん}，使用{しよう}訓讀{くんどく}「なな」。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「つ」系統{けいとう}的7固定{こてい}使用{しよう}「なな」不是「しち」。',
-            relatedRules: ['訓讀{くんどく}計數{けいすう}系統{けいとう}', '「なな」vs「しち」']
+            correctRule: '「七{なな}つ」讀作「ななつ」。7不促音，使用訓讀「なな」。',
+            trapExplanation: '這是陷阱題。「つ」系統的7固定使用「なな」不是「しち」。',
+            relatedRules: ['訓讀計數系統', '「なな」vs「しち」']
         },
         sourceItem: { value: 7, kanji: '七つ', reading: 'ななつ' }
     },
@@ -323,16 +323,16 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         stem: '願いが＿＿叶いました。',
         stem_zh: '七個願望實現了。',
         options: [
-            { text: 'しちつ', isCorrect: false, reason: '陷阱{かんけい}！「つ」使用{しよう}訓讀{くんどく}「なな」。' },
-            { text: 'ななつ', isCorrect: true, reason: '正確{せいかく}！「願{ねがい}いが七{なな}つ」表示{ひょうじ}「七個{ななつ}願望{ねがい}」。' },
-            { text: 'なのつ', isCorrect: false, reason: '「なの」是日期{にっき}讀法{よみかた}。' },
-            { text: 'しちこ', isCorrect: false, reason: '抽象{ちゅうしょう}事物{じぶつ}常用{じょうよう}「つ」。' }
+            { text: 'しちつ', isCorrect: false, reason: '陷阱！「つ」使用訓讀「なな」。' },
+            { text: 'ななつ', isCorrect: true, reason: '正確！「願いが七{なな}つ」表示「七個願望」。' },
+            { text: 'なのつ', isCorrect: false, reason: '「なの」是日期讀法。' },
+            { text: 'しちこ', isCorrect: false, reason: '抽象事物常用「つ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「願{ねが}い」（願望{ねがい}）等抽象{ちゅうしょう}事物{じぶつ}可使用{しよう}「つ」。七夕{たなばた}與「七{なな}つの願{ねが}い」相關{かんけい}。',
-            trapExplanation: '「七{なな}つ」固定{こてい}讀む{よむ}「ななつ」。',
-            relatedRules: ['量詞{りょうし}「つ」の使用{しよう}', '抽象{ちゅうしょう}事物{じぶつ}']
+            correctRule: '「願い」（願望）等抽象事物可使用「つ」。七夕與「七{なな}つの願い」相關。',
+            trapExplanation: '「七{なな}つ」固定讀「ななつ」。',
+            relatedRules: ['量詞「つ」的使用', '抽象事物']
         },
         sourceItem: { value: 7, kanji: '七つ', reading: 'ななつ' }
     },
@@ -349,15 +349,15 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿あります。（七個）'
         },
         options: [
-            { text: 'しちつ', isCorrect: false, reason: '「つ」使用{しよう}訓讀{くんどく}「なな」。' },
-            { text: 'ななつ', isCorrect: true, reason: '正確{せいかく}！箱子{はこ}裡有七個{ななつ}。' },
-            { text: 'なのつ', isCorrect: false, reason: '「なの」是日期{にっき}讀法{よみかた}。' },
-            { text: 'しちこ', isCorrect: false, reason: '回答{かいとう}「いくつ」時{とき}使用{しよう}「つ」。' }
+            { text: 'しちつ', isCorrect: false, reason: '「つ」使用訓讀「なな」。' },
+            { text: 'ななつ', isCorrect: true, reason: '正確！箱子裡有七個{ななつ}。' },
+            { text: 'なのつ', isCorrect: false, reason: '「なの」是日期讀法。' },
+            { text: 'しちこ', isCorrect: false, reason: '回答「いくつ」時使用「つ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '回答{かいとう}「いくつ」時{とき}使用{しよう}「〜つ」。',
-            relatedRules: ['量詞{りょうし}「つ」の使用{しよう}', '「いくつ」の質問{しつもん}與回答{かいとう}']
+            correctRule: '回答「いくつ」時使用「〜つ」。',
+            relatedRules: ['量詞「つ」的使用', '「いくつ」的質問與回答']
         },
         sourceItem: { value: 7, kanji: '七つ', reading: 'ななつ' }
     },
@@ -369,19 +369,19 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'generalObjects',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「十」（萬能量詞系統）的正確讀音是？',
+        stem: '「十」（万能{ばんのう}の数{かぞ}え方{かた}）の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十」（萬能量詞系統中的10）的正確讀音是？',
         options: [
-            { text: 'とお', isCorrect: true, reason: '正確{せいかく}！「つ」系統{けいとう}的10讀作{どくさ}「とお」，沒有{ない}「つ」。' },
-            { text: 'じゅう', isCorrect: false, reason: '陷阱{かんけい}！「つ」系統{けいとう}使用{しよう}訓讀{くんどく}「とお」，不是音讀{おんどく}「じゅう」。' },
-            { text: 'とおつ', isCorrect: false, reason: '「つ」系統{けいとう}的10沒有{ない}「つ」，直接{ちょくせつ}讀{よむ}「とお」。' },
-            { text: 'じゅっつ', isCorrect: false, reason: '「つ」系統{けいとう}使用{しよう}訓讀{くんどく}。' }
+            { text: 'とお', isCorrect: true, reason: '正確！「つ」系統的10讀作「とお」，沒有「つ」。' },
+            { text: 'じゅう', isCorrect: false, reason: '陷阱！「つ」系統使用訓讀「とお」，不是音讀「じゅう」。' },
+            { text: 'とおつ', isCorrect: false, reason: '「つ」系統的10沒有「つ」，直接讀「とお」。' },
+            { text: 'じゅっつ', isCorrect: false, reason: '「つ」系統使用訓讀。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「つ」系統{けいとう}的10讀作{どくさ}「とお」，是唯一{ゆいいつ}沒有{ない}「つ」結尾{けつび}的數字{すうじ}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「つ」系統{けいとう}只能{のみ}計數{けいすう}到10，10讀作{どくさ}「とお」。超過{こえる}10通常{つうじょう}使用{しよう}其他{たの}量詞{りょうし}。',
-            relatedRules: ['訓讀{くんどく}計數{けいすう}系統{けいとう}', '「とお」の特殊{とくしゅ}性{せい}']
+            correctRule: '「つ」系統的10讀作「とお」，是唯一沒有「つ」結尾的數字。',
+            trapExplanation: '這是陷阱題。「つ」系統只能計數到10，10讀作「とお」。超過10通常使用其他量詞。',
+            relatedRules: ['訓讀計數系統', '「とお」的特殊性']
         },
         sourceItem: { value: 10, kanji: '十', reading: 'とお' }
     },
@@ -394,16 +394,16 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         stem: '卵が＿＿あります。',
         stem_zh: '有十顆雞蛋。',
         options: [
-            { text: 'じゅう', isCorrect: false, reason: '陷阱{かんけい}！「つ」系統{けいとう}的10使用{しよう}訓讀{くんどく}「とお」。' },
-            { text: 'とお', isCorrect: true, reason: '正確{せいかく}！「卵{たまご}が十{とお}」表示{ひょうじ}「有十顆{とお}雞蛋{たまご}」。' },
-            { text: 'とおつ', isCorrect: false, reason: '10沒有{ない}「つ」，直接{ちょくせつ}讀{よむ}「とお」。' },
-            { text: 'じゅっこ', isCorrect: false, reason: '若用{もちいる}「個{こ}」則{ならば}讀{よむ}「じゅっこ」，但本題{ほんだい}考察{こうさつ}「つ」系統{けいとう}。' }
+            { text: 'じゅう', isCorrect: false, reason: '陷阱！「つ」系統的10使用訓讀「とお」。' },
+            { text: 'とお', isCorrect: true, reason: '正確！「卵{たまご}が十{とお}」表示「有十顆{とお}雞蛋」。' },
+            { text: 'とおつ', isCorrect: false, reason: '10沒有「つ」，直接讀「とお」。' },
+            { text: 'じゅっこ', isCorrect: false, reason: '若用「個{こ}」則讀「じゅっこ」，但本題考察「つ」系統。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「卵{たまご}」（雞蛋{たまご}）可使用{しよう}「つ」系統{けいとう}計數{けいすう}，10讀作{どくさ}「とお」。',
-            trapExplanation: '「つ」系統{けいとう}的10固定{こてい}讀む{よむ}「とお」，沒有{ない}「つ」。',
-            relatedRules: ['量詞{りょうし}「つ」の使用{しよう}', '10の特殊{とくしゅ}讀法{よみかた}']
+            correctRule: '「卵{たまご}」（雞蛋）可使用「つ」系統計數，10讀作「とお」。',
+            trapExplanation: '「つ」系統的10固定讀「とお」，沒有「つ」。',
+            relatedRules: ['量詞「つ」的使用', '10的特殊讀法']
         },
         sourceItem: { value: 10, kanji: '十', reading: 'とお' }
     },
@@ -420,15 +420,15 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿までです。（到十）'
         },
         options: [
-            { text: 'じゅう', isCorrect: false, reason: '「つ」系統{けいとう}使用{しよう}訓讀{くんどく}。' },
-            { text: 'とお', isCorrect: true, reason: '正確{せいかく}！「つ」系統{けいとう}最多{さいた}計數{けいすう}到「とお」（10）。' },
-            { text: 'とおつ', isCorrect: false, reason: '10沒有{ない}「つ」。' },
-            { text: 'ここのつ', isCorrect: false, reason: '「ここのつ」是9，不是最大{さいだい}數字{すうじ}。' }
+            { text: 'じゅう', isCorrect: false, reason: '「つ」系統使用訓讀。' },
+            { text: 'とお', isCorrect: true, reason: '正確！「つ」系統最多計數到「とお」（10）。' },
+            { text: 'とおつ', isCorrect: false, reason: '10沒有「つ」。' },
+            { text: 'ここのつ', isCorrect: false, reason: '「ここのつ」是9，不是最大數字。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「つ」系統{けいとう}只能{のみ}計數{けいすう}到10，超過{こえる}10通常{つうじょう}使用{しよう}其他{たの}量詞{りょうし}或直接{ちょくせつ}讀{よむ}音讀{おんどく}數字{すうじ}。',
-            relatedRules: ['量詞{りょうし}「つ」の使用{しよう}', '「つ」系統{けいとう}の限制{せいげん}']
+            correctRule: '「つ」系統只能計數到10，超過10通常使用其他量詞或直接讀音讀數字。',
+            relatedRules: ['量詞「つ」的使用', '「つ」系統の限制']
         },
         sourceItem: { value: 10, kanji: '十', reading: 'とお' }
     },
@@ -440,18 +440,18 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
         subcategory: 'generalObjects',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「幾つ」的正確讀音是？',
+        stem: '「幾つ」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「幾つ」（幾個）的正確讀音是？',
         options: [
-            { text: 'いくつ', isCorrect: true, reason: '正確{せいかく}！「幾{いく}つ」讀作{どくさ}「いくつ」，用於{もちいる}詢問{たずねる}數量{すうりょう}。' },
-            { text: 'なんつ', isCorrect: false, reason: '「つ」系統{けいとう}的疑問詞{ぎもんし}是「いくつ」，不是「なんつ」。' },
-            { text: 'いくこ', isCorrect: false, reason: '「いくつ」是固定{こてい}讀法{よみかた}。' },
-            { text: 'なんこ', isCorrect: false, reason: '「何個{なんこ}」是另一種{べつの}問法{といかた}，使用{しよう}「個{こ}」。' }
+            { text: 'いくつ', isCorrect: true, reason: '正確！「幾{いく}つ」讀作「いくつ」，用於詢問數量。' },
+            { text: 'なんつ', isCorrect: false, reason: '「つ」系統的疑問詞是「いくつ」，不是「なんつ」。' },
+            { text: 'いくこ', isCorrect: false, reason: '「いくつ」是固定讀法。' },
+            { text: 'なんこ', isCorrect: false, reason: '「何個{なんこ}」是另一種問法，使用「個{こ}」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「いくつ」是「つ」系統{けいとう}的疑問詞{ぎもんし}，用於{もちいる}詢問{たずねる}不特定{ふとくてい}物品{ぶっぴん}的數量{すうりょう}或年齡{ねんれい}（「お歳{とし}はいくつですか」）。',
-            relatedRules: ['疑問詞{ぎもんし}の讀法{よみかた}', '「いくつ」の使用{しよう}']
+            correctRule: '「いくつ」是「つ」系統的疑問詞，用於詢問不特定物品的數量或年齡（「お歳{とし}はいくつですか」）。',
+            relatedRules: ['疑問詞的讀法', '「いくつ」的使用']
         },
         sourceItem: { value: '?', kanji: '幾つ', reading: 'いくつ' }
     },
@@ -459,7 +459,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
     // ===== 4つ 的三題（訓讀：よっつ） =====
     {
         id: 'general_4_pron', category: 'counters', subcategory: 'generalObjects', type: 'pronunciation', isTrap: true,
-        stem: '「四つ」的正確讀音是？', stem_zh: '「四つ」的正確讀音是？',
+        stem: '「四つ」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「四つ」的正確讀音是？',
         options: [
             { text: 'よっつ', isCorrect: true, reason: '正確！「四つ」使用訓讀，讀作「よっつ」（有促音）。' },
             { text: 'しつ', isCorrect: false, reason: '陷阱！「つ」系統使用訓讀「よ」，不是音讀「し」。' },
@@ -480,7 +480,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よんこ', isCorrect: false, reason: '本題考察「つ」的讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「角」（角）等抽象概念可使用「つ」。', trapExplanation: '「四つ」固定讀作「よっつ」。', relatedRules: ['量詞「つ」の使用', '抽象事物'] },
+        explanation: { correctRule: '「角」（角）等抽象概念可使用「つ」。', trapExplanation: '「四つ」固定讀作「よっつ」。', relatedRules: ['量詞「つ」的使用', '抽象事物'] },
         sourceItem: { value: 4, kanji: '四つ', reading: 'よっつ' }
     },
     {
@@ -494,14 +494,14 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よつ', isCorrect: false, reason: '需要促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 4, kanji: '四つ', reading: 'よっつ' }
     },
 
     // ===== 5つ 的三題（訓讀：いつつ） =====
     {
         id: 'general_5_pron', category: 'counters', subcategory: 'generalObjects', type: 'pronunciation', isTrap: true,
-        stem: '「五つ」的正確讀音是？', stem_zh: '「五つ」的正確讀音是？',
+        stem: '「五つ」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「五つ」的正確讀音是？',
         options: [
             { text: 'いつつ', isCorrect: true, reason: '正確！「五つ」使用訓讀，讀作「いつつ」。' },
             { text: 'ごつ', isCorrect: false, reason: '陷阱！「つ」系統使用訓讀「いつ」，不是音讀「ご」。' },
@@ -522,7 +522,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ごこ', isCorrect: false, reason: '本題考察「つ」的讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「星」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「星」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
     },
     {
@@ -536,14 +536,14 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'いっつ', isCorrect: false, reason: '5沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
     },
 
     // ===== 6つ 的三題（訓讀：むっつ） =====
     {
         id: 'general_6_pron', category: 'counters', subcategory: 'generalObjects', type: 'pronunciation', isTrap: true,
-        stem: '「六つ」的正確讀音是？', stem_zh: '「六つ」的正確讀音是？',
+        stem: '「六つ」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「六つ」的正確讀音是？',
         options: [
             { text: 'むっつ', isCorrect: true, reason: '正確！「六つ」使用訓讀，讀作「むっつ」（有促音）。' },
             { text: 'ろくつ', isCorrect: false, reason: '陷阱！「つ」系統使用訓讀「む」，不是音讀「ろく」。' },
@@ -564,7 +564,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっこ', isCorrect: false, reason: '本題考察「つ」的讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「穴」（洞）可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「穴」（洞）可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 6, kanji: '六つ', reading: 'むっつ' }
     },
     {
@@ -578,14 +578,14 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'むつ', isCorrect: false, reason: '需要促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 6, kanji: '六つ', reading: 'むっつ' }
     },
 
     // ===== 8つ 的三題（訓讀：やっつ） =====
     {
         id: 'general_8_pron', category: 'counters', subcategory: 'generalObjects', type: 'pronunciation', isTrap: true,
-        stem: '「八つ」的正確讀音是？', stem_zh: '「八つ」的正確讀音是？',
+        stem: '「八つ」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「八つ」的正確讀音是？',
         options: [
             { text: 'やっつ', isCorrect: true, reason: '正確！「八つ」使用訓讀，讀作「やっつ」（有促音）。' },
             { text: 'はちつ', isCorrect: false, reason: '陷阱！「つ」系統使用訓讀「や」，不是音讀「はち」。' },
@@ -606,7 +606,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'はっこ', isCorrect: false, reason: '本題考察「つ」的讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「島」（島）可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「島」（島）可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 8, kanji: '八つ', reading: 'やっつ' }
     },
     {
@@ -620,14 +620,14 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'やつ', isCorrect: false, reason: '需要促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 8, kanji: '八つ', reading: 'やっつ' }
     },
 
     // ===== 9つ 的三題（訓讀：ここのつ） =====
     {
         id: 'general_9_pron', category: 'counters', subcategory: 'generalObjects', type: 'pronunciation', isTrap: true,
-        stem: '「九つ」的正確讀音是？', stem_zh: '「九つ」的正確讀音是？',
+        stem: '「九つ」の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「九つ」的正確讀音是？',
         options: [
             { text: 'ここのつ', isCorrect: true, reason: '正確！「九つ」使用訓讀，讀作「ここのつ」。' },
             { text: 'きゅうつ', isCorrect: false, reason: '陷阱！「つ」系統使用訓讀「ここの」，不是音讀「きゅう」。' },
@@ -648,7 +648,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうこ', isCorrect: false, reason: '本題考察「つ」的讀法。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「窓」（窗戶）可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「窓」（窗戶）可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 9, kanji: '九つ', reading: 'ここのつ' }
     },
     {
@@ -662,7 +662,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ここっつ', isCorrect: false, reason: '9沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 9, kanji: '九つ', reading: 'ここのつ' }
     },
 
@@ -677,7 +677,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'さんこ', isCorrect: false, reason: '本題考察「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ドーナツ」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用', '食物の計數'] },
+        explanation: { correctRule: '「ドーナツ」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用', '食物の計數'] },
         sourceItem: { value: 3, kanji: '三つ', reading: 'みっつ' }
     },
     {
@@ -691,7 +691,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'いっつ', isCorrect: false, reason: '5沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
     },
     {
@@ -704,7 +704,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたっつ', isCorrect: false, reason: '2沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「パン」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「パン」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 2, kanji: '二つ', reading: 'ふたつ' }
     },
     {
@@ -718,7 +718,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よつ', isCorrect: false, reason: '需要促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 4, kanji: '四つ', reading: 'よっつ' }
     },
     {
@@ -731,7 +731,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっこ', isCorrect: false, reason: '本題考察「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「みかん」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「みかん」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 6, kanji: '六つ', reading: 'むっつ' }
     },
     {
@@ -745,7 +745,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ななっつ', isCorrect: false, reason: '7沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 7, kanji: '七つ', reading: 'ななつ' }
     },
     {
@@ -758,7 +758,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'はっこ', isCorrect: false, reason: '本題考察「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「チョコレート」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「チョコレート」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 8, kanji: '八つ', reading: 'やっつ' }
     },
     {
@@ -772,7 +772,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ここっつ', isCorrect: false, reason: '9沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 9, kanji: '九つ', reading: 'ここのつ' }
     },
     {
@@ -785,7 +785,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっこ', isCorrect: false, reason: '本題考察「つ」系統。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「つ」系統的10讀作「とお」，沒有「つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「つ」系統的10讀作「とお」，沒有「つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 10, kanji: '十', reading: 'とお' }
     },
     {
@@ -799,7 +799,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとっつ', isCorrect: false, reason: '1沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 1, kanji: '一つ', reading: 'ひとつ' }
     },
     {
@@ -812,7 +812,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'さんこ', isCorrect: false, reason: '抽象概念用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「理由」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」の使用', '抽象事物'] },
+        explanation: { correctRule: '「理由」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」的使用', '抽象事物'] },
         sourceItem: { value: 3, kanji: '三つ', reading: 'みっつ' }
     },
     {
@@ -826,7 +826,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よつ', isCorrect: false, reason: '需要促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 4, kanji: '四つ', reading: 'よっつ' }
     },
     {
@@ -839,7 +839,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ごこ', isCorrect: false, reason: '抽象概念用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「条件」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」の使用', '抽象事物'] },
+        explanation: { correctRule: '「条件」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」的使用', '抽象事物'] },
         sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
     },
     {
@@ -853,7 +853,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'むつ', isCorrect: false, reason: '需要促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 6, kanji: '六つ', reading: 'むっつ' }
     },
     {
@@ -866,7 +866,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'しちこ', isCorrect: false, reason: '抽象概念用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ポイント」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」の使用', '抽象事物'] },
+        explanation: { correctRule: '「ポイント」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」的使用', '抽象事物'] },
         sourceItem: { value: 7, kanji: '七つ', reading: 'ななつ' }
     },
     {
@@ -880,7 +880,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'やつ', isCorrect: false, reason: '需要促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 8, kanji: '八つ', reading: 'やっつ' }
     },
     {
@@ -893,7 +893,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうこ', isCorrect: false, reason: '抽象概念用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「趣味」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」の使用', '抽象事物'] },
+        explanation: { correctRule: '「趣味」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」的使用', '抽象事物'] },
         sourceItem: { value: 9, kanji: '九つ', reading: 'ここのつ' }
     },
     {
@@ -907,7 +907,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっこ', isCorrect: false, reason: '回答「いくつ」用「つ」系統。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「つ」系統的10讀作「とお」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「つ」系統的10讀作「とお」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 10, kanji: '十', reading: 'とお' }
     },
     {
@@ -920,7 +920,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたっつ', isCorrect: false, reason: '2沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「アイデア」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」の使用', '抽象事物'] },
+        explanation: { correctRule: '「アイデア」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」的使用', '抽象事物'] },
         sourceItem: { value: 2, kanji: '二つ', reading: 'ふたつ' }
     },
     {
@@ -934,7 +934,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとっつ', isCorrect: false, reason: '1沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 1, kanji: '一つ', reading: 'ひとつ' }
     },
 
@@ -1018,7 +1018,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'さんこ', isCorrect: false, reason: '本題考察「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ドーナツ」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「ドーナツ」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 3, kanji: '三つ', reading: 'みっつ' }
     },
     {
@@ -1032,7 +1032,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ごこ', isCorrect: false, reason: '回答「いくつ」用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
     },
     {
@@ -1045,7 +1045,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっこ', isCorrect: false, reason: '本題考察「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「たまご」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「たまご」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 6, kanji: '六つ', reading: 'むっつ' }
     },
     {
@@ -1059,7 +1059,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'はっこ', isCorrect: false, reason: '回答「いくつ」用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 8, kanji: '八つ', reading: 'やっつ' }
     },
     {
@@ -1072,7 +1072,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたっつ', isCorrect: false, reason: '2沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「プレゼント」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「プレゼント」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 2, kanji: '二つ', reading: 'ふたつ' }
     },
     {
@@ -1086,7 +1086,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よつ', isCorrect: false, reason: '需要促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 4, kanji: '四つ', reading: 'よっつ' }
     },
     {
@@ -1099,7 +1099,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'しちこ', isCorrect: false, reason: '本題考察「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ボタン」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「ボタン」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 7, kanji: '七つ', reading: 'ななつ' }
     },
     {
@@ -1113,7 +1113,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうこ', isCorrect: false, reason: '回答「いくつ」用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 9, kanji: '九つ', reading: 'ここのつ' }
     },
     {
@@ -1126,7 +1126,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとっつ', isCorrect: false, reason: '1沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「箱」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「箱」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 1, kanji: '一つ', reading: 'ひとつ' }
     },
     {
@@ -1140,7 +1140,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっこ', isCorrect: false, reason: '回答「いくつ」用「つ」系統。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「つ」系統的10讀作「とお」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「つ」系統的10讀作「とお」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 10, kanji: '十', reading: 'とお' }
     },
     {
@@ -1153,7 +1153,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'さんこ', isCorrect: false, reason: '本題考察「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「ケーキ」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「ケーキ」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 3, kanji: '三つ', reading: 'みっつ' }
     },
     {
@@ -1167,7 +1167,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっこ', isCorrect: false, reason: '回答「いくつ」用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 6, kanji: '六つ', reading: 'むっつ' }
     },
     {
@@ -1180,7 +1180,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よんこ', isCorrect: false, reason: '抽象概念用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「アドバイス」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」の使用', '抽象事物'] },
+        explanation: { correctRule: '「アドバイス」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」的使用', '抽象事物'] },
         sourceItem: { value: 4, kanji: '四つ', reading: 'よっつ' }
     },
     {
@@ -1194,7 +1194,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたっつ', isCorrect: false, reason: '2沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 2, kanji: '二つ', reading: 'ふたつ' }
     },
     {
@@ -1207,7 +1207,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'はっこ', isCorrect: false, reason: '本題考察「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「果物」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「果物」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 8, kanji: '八つ', reading: 'やっつ' }
     },
     {
@@ -1221,7 +1221,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ごこ', isCorrect: false, reason: '回答「いくつ」用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
     },
     {
@@ -1234,7 +1234,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうこ', isCorrect: false, reason: '本題考察「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「メッセージ」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「メッセージ」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 9, kanji: '九つ', reading: 'ここのつ' }
     },
     {
@@ -1248,7 +1248,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'しちこ', isCorrect: false, reason: '回答「いくつ」用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 7, kanji: '七つ', reading: 'ななつ' }
     },
     {
@@ -1261,7 +1261,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'さんこ', isCorrect: false, reason: '抽象概念用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「意見」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」の使用', '抽象事物'] },
+        explanation: { correctRule: '「意見」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」的使用', '抽象事物'] },
         sourceItem: { value: 3, kanji: '三つ', reading: 'みっつ' }
     },
     {
@@ -1275,7 +1275,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よつ', isCorrect: false, reason: '需要促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 4, kanji: '四つ', reading: 'よっつ' }
     },
 
@@ -1396,7 +1396,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ひとっつ', isCorrect: false, reason: '1沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「コップ」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「コップ」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 1, kanji: '一つ', reading: 'ひとつ' }
     },
     {
@@ -1410,7 +1410,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'さんこ', isCorrect: false, reason: '回答「いくつ」用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 3, kanji: '三つ', reading: 'みっつ' }
     },
     {
@@ -1423,7 +1423,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ごこ', isCorrect: false, reason: '本題考察「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「お土産」可使用「つ」計數。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「お土産」可使用「つ」計數。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
     },
     {
@@ -1437,7 +1437,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ふたっつ', isCorrect: false, reason: '2沒有促音。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 2, kanji: '二つ', reading: 'ふたつ' }
     },
     {
@@ -1450,7 +1450,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'よんきゃく', isCorrect: false, reason: '本題考察「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「椅子」可使用「つ」計數（也可用「脚」）。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「椅子」可使用「つ」計數（也可用「脚」）。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 4, kanji: '四つ', reading: 'よっつ' }
     },
     {
@@ -1464,7 +1464,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'ろっこ', isCorrect: false, reason: '回答「いくつ」用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 6, kanji: '六つ', reading: 'むっつ' }
     },
     {
@@ -1477,7 +1477,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'はちまい', isCorrect: false, reason: '本題考察「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「皿」可使用「つ」計數（也可用「枚」）。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「皿」可使用「つ」計數（也可用「枚」）。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 8, kanji: '八つ', reading: 'やっつ' }
     },
     {
@@ -1491,7 +1491,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'しちこ', isCorrect: false, reason: '回答「いくつ」用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '回答「いくつ」時使用「〜つ」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 7, kanji: '七つ', reading: 'ななつ' }
     },
     {
@@ -1504,7 +1504,7 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'きゅうこ', isCorrect: false, reason: '抽象概念用「つ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「方法」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」の使用', '抽象事物'] },
+        explanation: { correctRule: '「方法」等抽象概念可使用「つ」計數。', relatedRules: ['量詞「つ」的使用', '抽象事物'] },
         sourceItem: { value: 9, kanji: '九つ', reading: 'ここのつ' }
     },
     {
@@ -1518,14 +1518,14 @@ export const generalObjectQuestions: DatesPracticeQuestion[] = [
             { text: 'じゅっこ', isCorrect: false, reason: '回答「いくつ」用「つ」系統。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「つ」系統的10讀作「とお」。', relatedRules: ['量詞「つ」の使用'] },
+        explanation: { correctRule: '「つ」系統的10讀作「とお」。', relatedRules: ['量詞「つ」的使用'] },
         sourceItem: { value: 10, kanji: '十', reading: 'とお' }
     },
 
     // ===== 綜合複習題 =====
     {
         id: 'general_review_1', category: 'counters', subcategory: 'generalObjects', type: 'pronunciation', isTrap: false,
-        stem: '「つ」系統5-8的正確讀法是？', stem_zh: '「つ」系統5-8的正確讀法是？',
+        stem: '「つ」の数{かぞ}え方{かた}（5〜8）の正{ただ}しい読{よ}み方{かた}はどれですか。', stem_zh: '「つ」系統5-8的正確讀法是？',
         options: [
             { text: 'いつつ、むっつ、ななつ、やっつ', isCorrect: true, reason: '正確！5-8的讀法都正確。' },
             { text: 'ごつ、ろくつ、しちつ、はちつ', isCorrect: false, reason: '錯誤，「つ」使用訓讀，不是音讀。' },

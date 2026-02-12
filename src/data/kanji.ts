@@ -1,6 +1,10 @@
 // Kanji practice data
 // Sample kanji with readings and meanings
 
+import { StructuredExplanation } from './questions/types'
+import { formatStructuredExplanation } from '../utils/questionAdapters'
+import { stripStemFurigana } from '../utils/furiganaUtils'
+
 export interface KanjiData {
     kanji: string
     meanings: string[]
@@ -175,24 +179,93 @@ export const kanjiData: KanjiData[] = [
     },
 ]
 
-// Helper to build detailedExplanation for kanji questions
+// ─── Rich explanation helpers ───
+
+/**
+ * Find which word a given reading belongs to in kanjiData.
+ * Returns a hint like「這是「学校」（がっこう）的讀法」.
+ */
+function findReadingSource(reading: string, excludeWord: string): string {
+    for (const k of kanjiData) {
+        for (const ex of k.examples) {
+            if (ex.reading === reading && ex.word !== excludeWord) {
+                return `這是「${ex.word}」（${ex.meaning_zh}）的讀法。`
+            }
+        }
+    }
+    return ''
+}
+
+/**
+ * Generate common mistake hints based on on/kun reading confusion.
+ */
+function generateKanjiMistakes(
+    target: KanjiData,
+    example: KanjiData['examples'][0],
+    distractorReadings: string[],
+): string[] {
+    const mistakes: string[] = []
+
+    // Check if this word uses on-yomi or kun-yomi
+    const isOnYomi = target.onYomi.some(on =>
+        example.reading.includes(on.toLowerCase().replace(/[ー]/g, ''))
+    )
+    if (target.onYomi.length > 0 && target.kunYomi.length > 0) {
+        mistakes.push(
+            `○ ${example.word}（${example.reading}）→ 使用${isOnYomi ? '音讀' : '訓讀'}` +
+            ` / 注意不要與${isOnYomi ? '訓讀' : '音讀'}混淆`
+        )
+    }
+
+    // Add distractor-specific hints
+    for (const dr of distractorReadings) {
+        const source = findReadingSource(dr, example.word)
+        if (source) {
+            mistakes.push(`× ${dr} → ${source}`)
+        }
+    }
+
+    return mistakes.length > 0 ? mistakes : [`○ ${example.word}（${example.reading}）→ 正確讀法`]
+}
+
+/**
+ * Build rich DetailedExplanation for kanji questions using full KanjiData metadata.
+ */
 function buildKanjiExplanation(
+    target: KanjiData,
+    example: KanjiData['examples'][0],
     correct: string,
     shuffledOptions: string[],
-    explanationText: string
 ) {
+    const structured: StructuredExplanation = {
+        keyPoint: `漢字「${target.kanji}」的讀音`,
+        analysis: `「${example.word}」讀作「${example.reading}」（${example.meaning_zh}）。` +
+            (target.onYomi.length > 0 ? `\n漢字「${target.kanji}」的音讀（オン）：${target.onYomi.join('、')}` : '') +
+            (target.kunYomi.length > 0 ? `\n漢字「${target.kanji}」的訓讀（くん）：${target.kunYomi.join('、')}` : ''),
+        comparisons: target.examples
+            .filter(e => e.word !== example.word)
+            .slice(0, 3)
+            .map(e => `${e.word}（${e.reading}）：${e.meaning_zh}`),
+        commonMistakes: generateKanjiMistakes(
+            target, example,
+            shuffledOptions.filter(o => o !== correct),
+        ),
+    }
+
     return {
-        correctRule: explanationText,
+        correctRule: formatStructuredExplanation(structured),
         distractors: shuffledOptions.map(opt => ({
             text: opt,
             reason: opt === correct
-                ? '正解{せいかい}！'
-                : '不正解{ふせいかい}：正{ただ}しい答{こた}えではありません。',
+                ? `正確！「${example.word}」的讀音是「${example.reading}」。`
+                : `錯誤：「${opt}」不是「${example.word}」的正確讀法。${findReadingSource(opt, example.word)}`,
         })),
+        structured,
     }
 }
 
-// Generate a reading question for a specific kanji entry and example index
+// ─── Question generation ───
+
 function generateKanjiReadingForEntry(target: KanjiData, exampleIdx: number) {
     const example = target.examples[exampleIdx]
     const level = target.level
@@ -205,15 +278,15 @@ function generateKanjiReadingForEntry(target: KanjiData, exampleIdx: number) {
         .sort(() => Math.random() - 0.5)
         .slice(0, 3)
     const shuffledOptions = [example.reading, ...distractors].sort(() => Math.random() - 0.5)
-    const explanationText = `「${example.word}」の読{よ}み方{かた}は「${example.reading}」です。`
 
     return {
         id: `kanji_${level}_${target.kanji}_reading_${exampleIdx}`,
-        stem: `「${example.word}」の読{よ}み方{かた}は何{なん}ですか。`,
+        stem: stripStemFurigana(`「${example.word}」の読{よ}み方{かた}は何{なん}ですか。`),
+        meaning: `「${example.word}」（${example.meaning_zh}）的讀法是什麼？`,
         correct: example.reading,
         options: shuffledOptions,
-        explanation: explanationText,
-        detailedExplanation: buildKanjiExplanation(example.reading, shuffledOptions, explanationText),
+        explanation: `「${example.word}」的讀法是「${example.reading}」。`,
+        detailedExplanation: buildKanjiExplanation(target, example, example.reading, shuffledOptions),
         level,
         source: 'kanji_reading',
     }

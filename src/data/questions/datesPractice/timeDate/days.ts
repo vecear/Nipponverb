@@ -12,19 +12,19 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「一日」（日期）的正確讀音是？',
+        stem: '「一日」（日付{ひづけ}）の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「一日」（日期）的正確讀音是？',
         options: [
-            { text: 'ついたち', isCorrect: true, reason: '正確{せいかく}！日期{にっき}「一日{ついたち}」讀作{どくさ}「ついたち」，源於{げんい}「月立{つきたち}ち」。' },
-            { text: 'いちにち', isCorrect: false, reason: '陷阱{かんけい}！「いちにち」是「一天{いちにち}」（時間{じかん}長度{ながさ}）の意思{いし}，不是日期{にっき}。' },
-            { text: 'いっか', isCorrect: false, reason: '「か」系列{けいれつ}從{から}2日{ふつか}開始{はじめ}，1日{ついたち}は獨特{どくとく}讀法{よみかた}「ついたち」。' },
-            { text: 'ひとひ', isCorrect: false, reason: '這不是日期{にっき}の讀法{よみかた}。' }
+            { text: 'ついたち', isCorrect: true, reason: '正確！日期「一日{ついたち}」讀作「ついたち」，源於「月立ち」。' },
+            { text: 'いちにち', isCorrect: false, reason: '陷阱！「いちにち」是「一天」（時間長度）的意思，不是日期。' },
+            { text: 'いっか', isCorrect: false, reason: '「か」系列從2日開始，1日{ついたち}は獨特讀法「ついたち」。' },
+            { text: 'ひとひ', isCorrect: false, reason: '這不是日期的讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「一日{ついたち}」讀作{どくさ}「ついたち」，這是最特殊{とくしゅ}の日期{にっき}讀法{よみかた}。源於{げんい}古日語{こにほんご}「月立{つきたち}ち」，意指{いし}新月{しんげつ}出現{しゅつげん}、月份{げっぷん}開始{かいし}の那一天{いちにち}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「いちにち」表示{ひょうじ}「一天{いちにち}」の時間{じかん}長度{ながさ}，而日期{にっき}「1號{いちごう}」必須{ひっす}讀む{よむ}「ついたち」。',
-            relatedRules: ['日期{にっき}の訓讀{くんどく}傳統{でんとう}', '「ついたち」の語源{ごげん}']
+            correctRule: '「一日{ついたち}」讀作「ついたち」，這是最特殊の日期讀法。源於古日語「月立ち」，意指新月出現、月份開始の那一天。',
+            trapExplanation: '這是陷阱題。「いちにち」表示「一天」の時間長度，而日期「1號」必須讀「ついたち」。',
+            relatedRules: ['日期的訓讀傳統', '「ついたち」の語源']
         },
         sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
     },
@@ -37,16 +37,16 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: '四月＿＿は新学期です。',
         stem_zh: '四月一日是新學期。',
         options: [
-            { text: 'いちにち', isCorrect: false, reason: '陷阱{かんけい}！日期{にっき}讀む{よむ}「ついたち」，不是「いちにち」。' },
-            { text: 'ついたち', isCorrect: true, reason: '正確{せいかく}！四月{しがつ}一日{ついたち}是日本{にほん}學年{がくねん}開始{かいし}。' },
-            { text: 'いっか', isCorrect: false, reason: '1日{ついたち}は特殊{とくしゅ}讀法{よみかた}「ついたち」。' },
-            { text: 'ひとつ', isCorrect: false, reason: '「ひとつ」是萬能{ばんのう}量詞{りょうし}，不用於{もちいず}日期{にっき}。' }
+            { text: 'いちにち', isCorrect: false, reason: '陷阱！日期讀「ついたち」，不是「いちにち」。' },
+            { text: 'ついたち', isCorrect: true, reason: '正確！四月一日{ついたち}是日本學年開始。' },
+            { text: 'いっか', isCorrect: false, reason: '1日{ついたち}是特殊讀法「ついたち」。' },
+            { text: 'ひとつ', isCorrect: false, reason: '「ひとつ」是萬能量詞，不用於日期。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「四月{しがつ}一日{ついたち}」是日本{にほん}新學年{しんがくねん}の開始{かいし}。日期{にっき}「一日{ついたち}」固定{こてい}讀む{よむ}「ついたち」。',
-            trapExplanation: '「いちにち」是「一天{いちにち}」（時間{じかん}長度{ながさ}）。日期{にっき}「1號{いちごう}」必須{ひっす}讀む{よむ}「ついたち」，這是需要{じゅよう}特別{とくべつ}記憶{きおく}の例外{れいがい}。',
-            relatedRules: ['日期{にっき}の特殊{とくしゅ}讀法{よみかた}', '日本{にほん}學年{がくねん}制度{せいど}']
+            correctRule: '「四月一日{ついたち}」是日本新學年の開始。日期「一日{ついたち}」固定讀「ついたち」。',
+            trapExplanation: '「いちにち」是「一天」（時間長度）。日期「1號」必須讀「ついたち」，這是需要特別記憶の例外。',
+            relatedRules: ['日期的特殊讀法', '日本學年制度']
         },
         sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
     },
@@ -63,15 +63,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（一號）'
         },
         options: [
-            { text: 'いちにち', isCorrect: false, reason: '「いちにち」是「一天{いちにち}」，不是日期{にっき}。' },
-            { text: 'ついたち', isCorrect: true, reason: '正確{せいかく}！今天{きょう}是1號{いちごう}。' },
-            { text: 'いっぴ', isCorrect: false, reason: '這不是日期{にっき}の讀法{よみかた}。' },
-            { text: 'ひとにち', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'いちにち', isCorrect: false, reason: '「いちにち」是「一天」，不是日期。' },
+            { text: 'ついたち', isCorrect: true, reason: '正確！今天是1號。' },
+            { text: 'いっぴ', isCorrect: false, reason: '這不是日期的讀法。' },
+            { text: 'ひとにち', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '回答{かいとう}「何日{なんにち}」時{とき}，1號{いちごう}讀作{どくさ}「ついたち」。',
-            relatedRules: ['日期{にっき}の質問{しつもん}與回答{かいとう}', '「何日{なんにち}」の使用{しよう}']
+            correctRule: '回答「何日」時，1號讀作「ついたち」。',
+            relatedRules: ['日期的質問與回答', '「何日」的使用']
         },
         sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
     },
@@ -83,19 +83,19 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二日」的正確讀音是？',
+        stem: '「二日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二日」的正確讀音是？',
         options: [
-            { text: 'ふつか', isCorrect: true, reason: '正確{せいかく}！「二日{ふつか}」讀作{どくさ}「ふつか」。' },
-            { text: 'にか', isCorrect: false, reason: '陷阱{かんけい}！日期{にっき}1-10使用{しよう}訓讀{くんどく}，不是「にか」。' },
-            { text: 'ににち', isCorrect: false, reason: '「にち」用於{もちいる}11日以後{いご}の日期{にっき}。' },
-            { text: 'ふたか', isCorrect: false, reason: '應{おう}是「ふつか」不是「ふたか」。' }
+            { text: 'ふつか', isCorrect: true, reason: '正確！「二日{ふつか}」讀作「ふつか」。' },
+            { text: 'にか', isCorrect: false, reason: '陷阱！日期1-10使用訓讀，不是「にか」。' },
+            { text: 'ににち', isCorrect: false, reason: '「にち」用於11日以後の日期。' },
+            { text: 'ふたか', isCorrect: false, reason: '應是「ふつか」不是「ふたか」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二日{ふつか}」讀作{どくさ}「ふつか」，使用{しよう}訓讀{くんどく}系統{けいとう}。',
-            trapExplanation: '日期{にっき}1-10使用{しよう}古日語{こにほんご}の訓讀{くんどく}系統{けいとう}，與現代{げんだい}數字{すうじ}讀法{よみかた}不同{ふどう}。',
-            relatedRules: ['日期{にっき}の訓讀{くんどく}', '1-10日の特殊{とくしゅ}讀法{よみかた}']
+            correctRule: '「二日{ふつか}」讀作「ふつか」，使用訓讀系統。',
+            trapExplanation: '日期1-10使用古日語的訓讀系統，與現代數字讀法不同。',
+            relatedRules: ['日期的訓讀', '1-10日的特殊讀法']
         },
         sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
     },
@@ -108,15 +108,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: '旅行は＿＿間です。',
         stem_zh: '旅行是兩天。',
         options: [
-            { text: 'にか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}「ふつか」。' },
-            { text: 'ふつか', isCorrect: true, reason: '正確{せいかく}！「ふつか間{かん}」表示{ひょうじ}兩天{ふつか}。' },
-            { text: 'ふたか', isCorrect: false, reason: '應{おう}是「ふつか」。' },
-            { text: 'にちにち', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'にか', isCorrect: false, reason: '日期使用訓讀「ふつか」。' },
+            { text: 'ふつか', isCorrect: true, reason: '正確！「ふつか間」表示兩天。' },
+            { text: 'ふたか', isCorrect: false, reason: '應是「ふつか」。' },
+            { text: 'にちにち', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ふつか間{かん}」表示{ひょうじ}兩天{ふつか}の期間{きかん}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '期間{きかん}表達{ひょうたつ}']
+            correctRule: '「ふつか間」表示兩天の期間。',
+            relatedRules: ['日期的讀法', '期間表達']
         },
         sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
     },
@@ -133,15 +133,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '二月＿＿ごろです。'
         },
         options: [
-            { text: 'にか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}。' },
-            { text: 'ふつか', isCorrect: true, reason: '正確{せいかく}！節分{せつぶん}在二月{にがつ}二日{ふつか}前後{ぜんご}。' },
-            { text: 'ににち', isCorrect: false, reason: '2日{ふつか}使用{しよう}訓讀{くんどく}。' },
-            { text: 'ふたひ', isCorrect: false, reason: '應{おう}是「ふつか」。' }
+            { text: 'にか', isCorrect: false, reason: '日期使用訓讀。' },
+            { text: 'ふつか', isCorrect: true, reason: '正確！節分在二月二日{ふつか}前後。' },
+            { text: 'ににち', isCorrect: false, reason: '2日{ふつか}使用訓讀。' },
+            { text: 'ふたひ', isCorrect: false, reason: '應是「ふつか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二月{にがつ}二日{ふつか}」是節分{せつぶん}の時期{じき}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '日本{にほん}の節日{せつじつ}']
+            correctRule: '「二月二日{ふつか}」是節分の時期。',
+            relatedRules: ['日期的讀法', '日本の節日']
         },
         sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
     },
@@ -153,18 +153,18 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「三日」的正確讀音是？',
+        stem: '「三日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三日」的正確讀音是？',
         options: [
-            { text: 'みっか', isCorrect: true, reason: '正確{せいかく}！「三日{みっか}」讀作{どくさ}「みっか」，有促音{そくおん}。' },
-            { text: 'さんか', isCorrect: false, reason: '日期{にっき}1-10使用{しよう}訓讀{くんどく}，不是「さんか」。' },
-            { text: 'さんにち', isCorrect: false, reason: '「にち」用於{もちいる}11日以後{いご}。' },
-            { text: 'みか', isCorrect: false, reason: '需要{じゅよう}促音{そくおん}，是「みっか」不是「みか」。' }
+            { text: 'みっか', isCorrect: true, reason: '正確！「三日{みっか}」讀作「みっか」，有促音。' },
+            { text: 'さんか', isCorrect: false, reason: '日期1-10使用訓讀，不是「さんか」。' },
+            { text: 'さんにち', isCorrect: false, reason: '「にち」用於11日以後。' },
+            { text: 'みか', isCorrect: false, reason: '需要促音，是「みっか」不是「みか」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三日{みっか}」讀作{どくさ}「みっか」，有促音{そくおん}「っ」。',
-            relatedRules: ['日期{にっき}の訓讀{くんどく}', '促音{そくおん}の重要性{じゅうようせい}']
+            correctRule: '「三日{みっか}」讀作「みっか」，有促音「っ」。',
+            relatedRules: ['日期的訓讀', '促音的重要性']
         },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
@@ -177,15 +177,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: 'ひな祭りは三月＿＿です。',
         stem_zh: '女兒節是三月三日。',
         options: [
-            { text: 'さんか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}。' },
-            { text: 'みっか', isCorrect: true, reason: '正確{せいかく}！女兒節{ひなまつり}在三月{さんがつ}三日{みっか}。' },
-            { text: 'みか', isCorrect: false, reason: '需要{じゅよう}促音{そくおん}「っ」。' },
-            { text: 'さんにち', isCorrect: false, reason: '3日{みっか}使用{しよう}訓讀{くんどく}。' }
+            { text: 'さんか', isCorrect: false, reason: '日期使用訓讀。' },
+            { text: 'みっか', isCorrect: true, reason: '正確！女兒節在三月三日{みっか}。' },
+            { text: 'みか', isCorrect: false, reason: '需要促音「っ」。' },
+            { text: 'さんにち', isCorrect: false, reason: '3日{みっか}使用訓讀。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「三月{さんがつ}三日{みっか}」是ひな祭{まつ}り（女兒節{ひなまつり}）。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '日本{にほん}の節日{せつじつ}']
+            correctRule: '「三月三日{みっか}」是ひな祭り（女兒節）。',
+            relatedRules: ['日期的讀法', '日本の節日']
         },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
@@ -202,15 +202,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿間です。（三天）'
         },
         options: [
-            { text: 'さんにち', isCorrect: false, reason: '天數{にっすう}使用{しよう}訓讀{くんどく}「みっか」。' },
-            { text: 'みっか', isCorrect: true, reason: '正確{せいかく}！「みっか間{かん}」是三天{さんにち}。' },
-            { text: 'みか', isCorrect: false, reason: '需要{じゅよう}促音{そくおん}。' },
-            { text: 'さんか', isCorrect: false, reason: '使用{しよう}訓讀{くんどく}「みっか」。' }
+            { text: 'さんにち', isCorrect: false, reason: '天數使用訓讀「みっか」。' },
+            { text: 'みっか', isCorrect: true, reason: '正確！「みっか間」是三天。' },
+            { text: 'みか', isCorrect: false, reason: '需要促音。' },
+            { text: 'さんか', isCorrect: false, reason: '使用訓讀「みっか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「みっか間{かん}」表示{ひょうじ}三天{さんにち}の休假{やすみ}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '期間{きかん}表達{ひょうたつ}']
+            correctRule: '「みっか間」表示三天の休假。',
+            relatedRules: ['日期的讀法', '期間表達']
         },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
@@ -222,19 +222,19 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「四日」的正確讀音是？',
+        stem: '「四日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「四日」的正確讀音是？',
         options: [
-            { text: 'よっか', isCorrect: true, reason: '正確{せいかく}！「四日{よっか}」讀作{どくさ}「よっか」，有促音{そくおん}且是短音{たんおん}。' },
-            { text: 'よんか', isCorrect: false, reason: '陷阱{かんけい}！日期{にっき}使用{しよう}訓讀{くんどく}「よっか」，不是「よんか」。' },
-            { text: 'しか', isCorrect: false, reason: '日期{にっき}使用{しよう}「よ」不是「し」。' },
-            { text: 'ようか', isCorrect: false, reason: '陷阱{かんけい}！「ようか」是八日{ようか}，四日{よっか}是短音{たんおん}「よっか」。' }
+            { text: 'よっか', isCorrect: true, reason: '正確！「四日{よっか}」讀作「よっか」，有促音且是短音。' },
+            { text: 'よんか', isCorrect: false, reason: '陷阱！日期使用訓讀「よっか」，不是「よんか」。' },
+            { text: 'しか', isCorrect: false, reason: '日期使用「よ」不是「し」。' },
+            { text: 'ようか', isCorrect: false, reason: '陷阱！「ようか」是八日{ようか}，四日{よっか}是短音「よっか」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「四日{よっか}」讀作{どくさ}「よっか」，注意{ちゅうい}是短音{たんおん}（促音{そくおん}+か）。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「よっか」（四日{よっか}）是短音{たんおん}，「ようか」（八日{ようか}）是長音{ちょうおん}。這是常見{じょうけん}混淆{こんこう}點{てん}。',
-            relatedRules: ['「よっか」vs「ようか」の區別{くべつ}', '日期{にっき}の訓讀{くんどく}']
+            correctRule: '「四日{よっか}」讀作「よっか」，注意是短音（促音+か）。',
+            trapExplanation: '這是陷阱題。「よっか」（四日{よっか}）是短音，「ようか」（八日{ようか}）是長音。這是常見混淆點。',
+            relatedRules: ['「よっか」vs「ようか」的區別', '日期的訓讀']
         },
         sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
     },
@@ -247,16 +247,16 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: '仕事は＿＿間で終わります。',
         stem_zh: '工作四天就結束。',
         options: [
-            { text: 'よんにち', isCorrect: false, reason: '期間{きかん}使用{しよう}訓讀{くんどく}。' },
-            { text: 'よっか', isCorrect: true, reason: '正確{せいかく}！「よっか間{かん}」是四天{よっか}。' },
-            { text: 'ようか', isCorrect: false, reason: '陷阱{かんけい}！「ようか」是八日{ようか}，四日{よっか}是「よっか」。' },
-            { text: 'しか', isCorrect: false, reason: '日期{にっき}使用{しよう}「よ」。' }
+            { text: 'よんにち', isCorrect: false, reason: '期間使用訓讀。' },
+            { text: 'よっか', isCorrect: true, reason: '正確！「よっか間」是四天。' },
+            { text: 'ようか', isCorrect: false, reason: '陷阱！「ようか」是八日{ようか}，四日{よっか}是「よっか」。' },
+            { text: 'しか', isCorrect: false, reason: '日期使用「よ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「よっか間{かん}」表示{ひょうじ}四天{よっか}。',
-            trapExplanation: '注意{ちゅうい}「よっか」（四日{よっか}）與「ようか」（八日{ようか}）の發音{はつおん}區別{くべつ}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '長短音{ちょうたんおん}の區別{くべつ}']
+            correctRule: '「よっか間」表示四天。',
+            trapExplanation: '注意「よっか」（四日{よっか}）與「ようか」（八日{ようか}）的發音區別。',
+            relatedRules: ['日期的讀法', '長短音的區別']
         },
         sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
     },
@@ -273,15 +273,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '五月＿＿です。（四日）'
         },
         options: [
-            { text: 'よんにち', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}。' },
-            { text: 'よっか', isCorrect: true, reason: '正確{せいかく}！五月{ごがつ}四日{よっか}。' },
-            { text: 'ようか', isCorrect: false, reason: '這是八日{ようか}の讀法{よみかた}。' },
-            { text: 'しにち', isCorrect: false, reason: '日期{にっき}使用{しよう}「よ」系列{けいれつ}。' }
+            { text: 'よんにち', isCorrect: false, reason: '日期使用訓讀。' },
+            { text: 'よっか', isCorrect: true, reason: '正確！五月四日{よっか}。' },
+            { text: 'ようか', isCorrect: false, reason: '這是八日{ようか}的讀法。' },
+            { text: 'しにち', isCorrect: false, reason: '日期使用「よ」系列。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「五月{ごがつ}四日{よっか}」の「四日{よっか}」讀作{どくさ}「よっか」。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '生日{たんじょうび}表達{ひょうたつ}']
+            correctRule: '「五月四日{よっか}」の「四日{よっか}」讀作「よっか」。',
+            relatedRules: ['日期的讀法', '生日表達']
         },
         sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
     },
@@ -293,18 +293,18 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「五日」的正確讀音是？',
+        stem: '「五日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「五日」的正確讀音是？',
         options: [
-            { text: 'いつか', isCorrect: true, reason: '正確{せいかく}！「五日{いつか}」讀作{どくさ}「いつか」。' },
-            { text: 'ごか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}，不是「ごか」。' },
-            { text: 'ごにち', isCorrect: false, reason: '「にち」用於{もちいる}11日以後{いご}。' },
-            { text: 'いっか', isCorrect: false, reason: '應{おう}是「いつか」不是「いっか」。' }
+            { text: 'いつか', isCorrect: true, reason: '正確！「五日{いつか}」讀作「いつか」。' },
+            { text: 'ごか', isCorrect: false, reason: '日期使用訓讀，不是「ごか」。' },
+            { text: 'ごにち', isCorrect: false, reason: '「にち」用於11日以後。' },
+            { text: 'いっか', isCorrect: false, reason: '應是「いつか」不是「いっか」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「五日{いつか}」讀作{どくさ}「いつか」，與「いつつ」（五個{いつつ}）相關{かんけい}。',
-            relatedRules: ['日期{にっき}の訓讀{くんどく}', '訓讀{くんどく}數字{すうじ}系統{けいとう}']
+            correctRule: '「五日{いつか}」讀作「いつか」，與「いつつ」（五個）相關。',
+            relatedRules: ['日期的訓讀', '訓讀數字系統']
         },
         sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
     },
@@ -317,15 +317,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: 'こどもの日は五月＿＿です。',
         stem_zh: '兒童節是五月五日。',
         options: [
-            { text: 'ごか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}。' },
-            { text: 'いつか', isCorrect: true, reason: '正確{せいかく}！兒童節{こどものひ}在五月{ごがつ}五日{いつか}。' },
-            { text: 'ごにち', isCorrect: false, reason: '5日{いつか}使用{しよう}訓讀{くんどく}。' },
-            { text: 'いっか', isCorrect: false, reason: '應{おう}是「いつか」。' }
+            { text: 'ごか', isCorrect: false, reason: '日期使用訓讀。' },
+            { text: 'いつか', isCorrect: true, reason: '正確！兒童節在五月五日{いつか}。' },
+            { text: 'ごにち', isCorrect: false, reason: '5日{いつか}使用訓讀。' },
+            { text: 'いっか', isCorrect: false, reason: '應是「いつか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「五月{ごがつ}五日{いつか}」是こどもの日{ひ}（兒童節{こどものひ}）。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '日本{にほん}の節日{せつじつ}']
+            correctRule: '「五月五日{いつか}」是こどもの日（兒童節）。',
+            relatedRules: ['日期的讀法', '日本の節日']
         },
         sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
     },
@@ -342,15 +342,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（五號）'
         },
         options: [
-            { text: 'ごにち', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}。' },
-            { text: 'いつか', isCorrect: true, reason: '正確{せいかく}！五號{いつか}出發{しゅっぱつ}。' },
-            { text: 'ごか', isCorrect: false, reason: '使用{しよう}訓讀{くんどく}「いつか」。' },
-            { text: 'いっか', isCorrect: false, reason: '應{おう}是「いつか」。' }
+            { text: 'ごにち', isCorrect: false, reason: '日期使用訓讀。' },
+            { text: 'いつか', isCorrect: true, reason: '正確！五號{いつか}出發。' },
+            { text: 'ごか', isCorrect: false, reason: '使用訓讀「いつか」。' },
+            { text: 'いっか', isCorrect: false, reason: '應是「いつか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「五日{いつか}」回答{かいとう}「何日{なんにち}」の問題{もんだい}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '日程{にってい}表達{ひょうたつ}']
+            correctRule: '「五日{いつか}」回答「何日」の問題。',
+            relatedRules: ['日期的讀法', '日程表達']
         },
         sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
     },
@@ -362,18 +362,18 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「六日」的正確讀音是？',
+        stem: '「六日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「六日」的正確讀音是？',
         options: [
-            { text: 'むいか', isCorrect: true, reason: '正確{せいかく}！「六日{むいか}」讀作{どくさ}「むいか」。' },
-            { text: 'ろっか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}「む」不是「ろく」。' },
-            { text: 'ろくにち', isCorrect: false, reason: '「にち」用於{もちいる}11日以後{いご}。' },
-            { text: 'むっか', isCorrect: false, reason: '應{おう}是「むいか」不是「むっか」。' }
+            { text: 'むいか', isCorrect: true, reason: '正確！「六日{むいか}」讀作「むいか」。' },
+            { text: 'ろっか', isCorrect: false, reason: '日期使用訓讀「む」不是「ろく」。' },
+            { text: 'ろくにち', isCorrect: false, reason: '「にち」用於11日以後。' },
+            { text: 'むっか', isCorrect: false, reason: '應是「むいか」不是「むっか」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「六日{むいか}」讀作{どくさ}「むいか」，與「むっつ」（六個{むっつ}）相關{かんけい}但不同{ふどう}。',
-            relatedRules: ['日期{にっき}の訓讀{くんどく}', '「む」系列{けいれつ}の讀法{よみかた}']
+            correctRule: '「六日{むいか}」讀作「むいか」，與「むっつ」（六個）相關但不同。',
+            relatedRules: ['日期的訓讀', '「む」系列的讀法']
         },
         sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
     },
@@ -386,15 +386,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: '会議は来週の＿＿です。',
         stem_zh: '會議是下週六號。',
         options: [
-            { text: 'ろっか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}「むいか」。' },
-            { text: 'むいか', isCorrect: true, reason: '正確{せいかく}！下週{らいしゅう}六號{むいか}有會議{かいぎ}。' },
-            { text: 'ろくにち', isCorrect: false, reason: '6日{むいか}使用{しよう}訓讀{くんどく}。' },
-            { text: 'むっか', isCorrect: false, reason: '應{おう}是「むいか」。' }
+            { text: 'ろっか', isCorrect: false, reason: '日期使用訓讀「むいか」。' },
+            { text: 'むいか', isCorrect: true, reason: '正確！下週六號{むいか}有會議。' },
+            { text: 'ろくにち', isCorrect: false, reason: '6日{むいか}使用訓讀。' },
+            { text: 'むっか', isCorrect: false, reason: '應是「むいか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「来週{らいしゅう}の六日{むいか}」表示{ひょうじ}下週{らいしゅう}六號{むいか}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '日程{にってい}表達{ひょうたつ}']
+            correctRule: '「来週の六日{むいか}」表示下週六號。',
+            relatedRules: ['日期的讀法', '日程表達']
         },
         sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
     },
@@ -411,15 +411,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（六號）'
         },
         options: [
-            { text: 'ろくにち', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}。' },
-            { text: 'むいか', isCorrect: true, reason: '正確{せいかく}！截止{しめきり}是六號{むいか}。' },
-            { text: 'ろっか', isCorrect: false, reason: '使用{しよう}訓讀{くんどく}「むいか」。' },
-            { text: 'むっか', isCorrect: false, reason: '應{おう}是「むいか」。' }
+            { text: 'ろくにち', isCorrect: false, reason: '日期使用訓讀。' },
+            { text: 'むいか', isCorrect: true, reason: '正確！截止是六號{むいか}。' },
+            { text: 'ろっか', isCorrect: false, reason: '使用訓讀「むいか」。' },
+            { text: 'むっか', isCorrect: false, reason: '應是「むいか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「六日{むいか}」回答{かいとう}截止{しめきり}日期{にっき}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '商務{しょうむ}表達{ひょうたつ}']
+            correctRule: '「六日{むいか}」回答截止日期。',
+            relatedRules: ['日期的讀法', '商務表達']
         },
         sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
     },
@@ -431,18 +431,18 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「七日」的正確讀音是？',
+        stem: '「七日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「七日」的正確讀音是？',
         options: [
-            { text: 'なのか', isCorrect: true, reason: '正確{せいかく}！「七日{なのか}」讀作{どくさ}「なのか」。' },
-            { text: 'しちか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}「なの」不是「しち」。' },
-            { text: 'ななにち', isCorrect: false, reason: '7日{なのか}使用{しよう}訓讀{くんどく}「なのか」。' },
-            { text: 'なのっか', isCorrect: false, reason: '不需要{じゅようなく}促音{そくおん}，是「なのか」。' }
+            { text: 'なのか', isCorrect: true, reason: '正確！「七日{なのか}」讀作「なのか」。' },
+            { text: 'しちか', isCorrect: false, reason: '日期使用訓讀「なの」不是「しち」。' },
+            { text: 'ななにち', isCorrect: false, reason: '7日{なのか}使用訓讀「なのか」。' },
+            { text: 'なのっか', isCorrect: false, reason: '不需要促音，是「なのか」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「七日{なのか}」讀作{どくさ}「なのか」，與「ななつ」（七個{ななつ}）相關{かんけい}但變形{へんけい}。',
-            relatedRules: ['日期{にっき}の訓讀{くんどく}', '「なな」系列{けいれつ}の變化{へんか}']
+            correctRule: '「七日{なのか}」讀作「なのか」，與「ななつ」（七個）相關但變形。',
+            relatedRules: ['日期的訓讀', '「なな」系列の變化']
         },
         sourceItem: { value: 7, kanji: '七日', reading: 'なのか' }
     },
@@ -455,15 +455,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: '七夕は七月＿＿です。',
         stem_zh: '七夕是七月七日。',
         options: [
-            { text: 'しちか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}。' },
-            { text: 'なのか', isCorrect: true, reason: '正確{せいかく}！七夕{たなばた}在七月{しちがつ}七日{なのか}。' },
-            { text: 'ななにち', isCorrect: false, reason: '7日{なのか}使用{しよう}訓讀{くんどく}。' },
-            { text: 'なのっか', isCorrect: false, reason: '不需要{じゅようなく}促音{そくおん}。' }
+            { text: 'しちか', isCorrect: false, reason: '日期使用訓讀。' },
+            { text: 'なのか', isCorrect: true, reason: '正確！七夕在七月七日{なのか}。' },
+            { text: 'ななにち', isCorrect: false, reason: '7日{なのか}使用訓讀。' },
+            { text: 'なのっか', isCorrect: false, reason: '不需要促音。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「七月{しちがつ}七日{なのか}」是七夕{たなばた}（牛郎織女{おりひめひこぼし}節{せつ}）。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '日本{にほん}の節日{せつじつ}']
+            correctRule: '「七月七日{なのか}」是七夕（牛郎織女節）。',
+            relatedRules: ['日期的讀法', '日本の節日']
         },
         sourceItem: { value: 7, kanji: '七日', reading: 'なのか' }
     },
@@ -480,15 +480,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿からです。（七號）'
         },
         options: [
-            { text: 'ななにち', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}。' },
-            { text: 'なのか', isCorrect: true, reason: '正確{せいかく}！從{から}七號{なのか}開始{はじめ}預約{よやく}。' },
-            { text: 'しちか', isCorrect: false, reason: '使用{しよう}訓讀{くんどく}「なのか」。' },
-            { text: 'なのっか', isCorrect: false, reason: '不需要{じゅようなく}促音{そくおん}。' }
+            { text: 'ななにち', isCorrect: false, reason: '日期使用訓讀。' },
+            { text: 'なのか', isCorrect: true, reason: '正確！從七號{なのか}開始預約。' },
+            { text: 'しちか', isCorrect: false, reason: '使用訓讀「なのか」。' },
+            { text: 'なのっか', isCorrect: false, reason: '不需要促音。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「七日{なのか}から」表示{ひょうじ}從{から}七號{なのか}開始{はじめ}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '預約{よやく}表達{ひょうたつ}']
+            correctRule: '「七日{なのか}から」表示從七號開始。',
+            relatedRules: ['日期的讀法', '預約表達']
         },
         sourceItem: { value: 7, kanji: '七日', reading: 'なのか' }
     },
@@ -500,19 +500,19 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「八日」的正確讀音是？',
+        stem: '「八日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「八日」的正確讀音是？',
         options: [
-            { text: 'ようか', isCorrect: true, reason: '正確{せいかく}！「八日{ようか}」讀作{どくさ}「ようか」，是長音{ちょうおん}。' },
-            { text: 'はちか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}「ようか」不是「はちか」。' },
-            { text: 'やっか', isCorrect: false, reason: '應{おう}是長音{ちょうおん}「ようか」不是「やっか」。' },
-            { text: 'よっか', isCorrect: false, reason: '陷阱{かんけい}！「よっか」是四日{よっか}，八日{ようか}是長音{ちょうおん}「ようか」。' }
+            { text: 'ようか', isCorrect: true, reason: '正確！「八日{ようか}」讀作「ようか」，是長音。' },
+            { text: 'はちか', isCorrect: false, reason: '日期使用訓讀「ようか」不是「はちか」。' },
+            { text: 'やっか', isCorrect: false, reason: '應是長音「ようか」不是「やっか」。' },
+            { text: 'よっか', isCorrect: false, reason: '陷阱！「よっか」是四日{よっか}，八日{ようか}是長音「ようか」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「八日{ようか}」讀作{どくさ}「ようか」，是長音{ちょうおん}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「ようか」（八日{ようか}）是長音{ちょうおん}，「よっか」（四日{よっか}）是短音{たんおん}。這是最容易{さいようい}混淆{こんこう}の日期{にっき}對{つい}。',
-            relatedRules: ['「よっか」vs「ようか」の區別{くべつ}', '長短音{ちょうたんおん}の重要性{じゅうようせい}']
+            correctRule: '「八日{ようか}」讀作「ようか」，是長音。',
+            trapExplanation: '這是陷阱題。「ようか」（八日{ようか}）是長音，「よっか」（四日{よっか}）是短音。這是最容易混淆の日期對。',
+            relatedRules: ['「よっか」vs「ようか」的區別', '長短音的重要性']
         },
         sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
     },
@@ -525,16 +525,16 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: '旅行は＿＿間です。（八天）',
         stem_zh: '旅行是八天。',
         options: [
-            { text: 'はちにち', isCorrect: false, reason: '期間{きかん}使用{しよう}訓讀{くんどく}。' },
-            { text: 'ようか', isCorrect: true, reason: '正確{せいかく}！「ようか間{かん}」是八天{ようか}。' },
-            { text: 'よっか', isCorrect: false, reason: '陷阱{かんけい}！「よっか」是四日{よっか}，八日{ようか}是「ようか」。' },
-            { text: 'やっか', isCorrect: false, reason: '應{おう}是「ようか」。' }
+            { text: 'はちにち', isCorrect: false, reason: '期間使用訓讀。' },
+            { text: 'ようか', isCorrect: true, reason: '正確！「ようか間」是八天。' },
+            { text: 'よっか', isCorrect: false, reason: '陷阱！「よっか」是四日{よっか}，八日{ようか}是「ようか」。' },
+            { text: 'やっか', isCorrect: false, reason: '應是「ようか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ようか間{かん}」表示{ひょうじ}八天{ようか}の期間{きかん}。',
-            trapExplanation: '注意{ちゅうい}「ようか」（八日{ようか}）與「よっか」（四日{よっか}）の發音{はつおん}區別{くべつ}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '長短音{ちょうたんおん}の區別{くべつ}']
+            correctRule: '「ようか間」表示八天の期間。',
+            trapExplanation: '注意「ようか」（八日{ようか}）與「よっか」（四日{よっか}）的發音區別。',
+            relatedRules: ['日期的讀法', '長短音的區別']
         },
         sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
     },
@@ -551,15 +551,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（八號）'
         },
         options: [
-            { text: 'はちにち', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}。' },
-            { text: 'ようか', isCorrect: true, reason: '正確{せいかく}！歸還{へんきゃく}日{び}是八號{ようか}。' },
-            { text: 'よっか', isCorrect: false, reason: '這是四日{よっか}の讀法{よみかた}。' },
-            { text: 'やか', isCorrect: false, reason: '應{おう}是「ようか」。' }
+            { text: 'はちにち', isCorrect: false, reason: '日期使用訓讀。' },
+            { text: 'ようか', isCorrect: true, reason: '正確！歸還日是八號{ようか}。' },
+            { text: 'よっか', isCorrect: false, reason: '這是四日{よっか}的讀法。' },
+            { text: 'やか', isCorrect: false, reason: '應是「ようか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「八日{ようか}」回答{かいとう}歸還{へんきゃく}日期{にっき}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '圖書館{としょかん}用語{ようご}']
+            correctRule: '「八日{ようか}」回答歸還日期。',
+            relatedRules: ['日期的讀法', '圖書館用語']
         },
         sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
     },
@@ -571,18 +571,18 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「九日」的正確讀音是？',
+        stem: '「九日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「九日」的正確讀音是？',
         options: [
-            { text: 'ここのか', isCorrect: true, reason: '正確{せいかく}！「九日{ここのか}」讀作{どくさ}「ここのか」。' },
-            { text: 'きゅうか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}「ここの」不是「きゅう」。' },
-            { text: 'くにち', isCorrect: false, reason: '9日{ここのか}使用{しよう}訓讀{くんどく}「ここのか」。' },
-            { text: 'ここか', isCorrect: false, reason: '少了{すくな}「の」，應{おう}是「ここのか」。' }
+            { text: 'ここのか', isCorrect: true, reason: '正確！「九日{ここのか}」讀作「ここのか」。' },
+            { text: 'きゅうか', isCorrect: false, reason: '日期使用訓讀「ここの」不是「きゅう」。' },
+            { text: 'くにち', isCorrect: false, reason: '9日{ここのか}使用訓讀「ここのか」。' },
+            { text: 'ここか', isCorrect: false, reason: '少了「の」，應是「ここのか」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「九日{ここのか}」讀作{どくさ}「ここのか」，與「ここのつ」（九個{ここのつ}）相關{かんけい}。',
-            relatedRules: ['日期{にっき}の訓讀{くんどく}', '「ここの」系列{けいれつ}の讀法{よみかた}']
+            correctRule: '「九日{ここのか}」讀作「ここのか」，與「ここのつ」（九個）相關。',
+            relatedRules: ['日期的訓讀', '「ここの」系列的讀法']
         },
         sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
     },
@@ -595,15 +595,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: '重陽の節句は九月＿＿です。',
         stem_zh: '重陽節是九月九日。',
         options: [
-            { text: 'きゅうか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}。' },
-            { text: 'ここのか', isCorrect: true, reason: '正確{せいかく}！重陽{ちょうよう}節{せつ}在九月{くがつ}九日{ここのか}。' },
-            { text: 'くにち', isCorrect: false, reason: '9日{ここのか}使用{しよう}訓讀{くんどく}。' },
-            { text: 'ここか', isCorrect: false, reason: '少了{すくな}「の」。' }
+            { text: 'きゅうか', isCorrect: false, reason: '日期使用訓讀。' },
+            { text: 'ここのか', isCorrect: true, reason: '正確！重陽節在九月九日{ここのか}。' },
+            { text: 'くにち', isCorrect: false, reason: '9日{ここのか}使用訓讀。' },
+            { text: 'ここか', isCorrect: false, reason: '少了「の」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「九月{くがつ}九日{ここのか}」是重陽{ちょうよう}の節句{せっく}（菊{きく}の節句{せっく}）。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '日本{にほん}の節日{せつじつ}']
+            correctRule: '「九月九日{ここのか}」是重陽の節句（菊の節句）。',
+            relatedRules: ['日期的讀法', '日本の節日']
         },
         sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
     },
@@ -620,15 +620,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（九號）'
         },
         options: [
-            { text: 'くにち', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}。' },
-            { text: 'ここのか', isCorrect: true, reason: '正確{せいかく}！考試{しけん}在九號{ここのか}。' },
-            { text: 'きゅうか', isCorrect: false, reason: '使用{しよう}訓讀{くんどく}「ここのか」。' },
-            { text: 'ここか', isCorrect: false, reason: '少了{すくな}「の」。' }
+            { text: 'くにち', isCorrect: false, reason: '日期使用訓讀。' },
+            { text: 'ここのか', isCorrect: true, reason: '正確！考試在九號{ここのか}。' },
+            { text: 'きゅうか', isCorrect: false, reason: '使用訓讀「ここのか」。' },
+            { text: 'ここか', isCorrect: false, reason: '少了「の」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「九日{ここのか}」回答{かいとう}考試{しけん}日期{にっき}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '學校{がっこう}行事{ぎょうじ}']
+            correctRule: '「九日{ここのか}」回答考試日期。',
+            relatedRules: ['日期的讀法', '學校行事']
         },
         sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
     },
@@ -640,18 +640,18 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十日」的正確讀音是？',
+        stem: '「十日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十日」的正確讀音是？',
         options: [
-            { text: 'とおか', isCorrect: true, reason: '正確{せいかく}！「十日{とおか}」讀作{どくさ}「とおか」，是長音{ちょうおん}。' },
-            { text: 'じゅうか', isCorrect: false, reason: '日期{にっき}使用{しよう}訓讀{くんどく}「とお」不是「じゅう」。' },
-            { text: 'じゅうにち', isCorrect: false, reason: '10日{とおか}使用{しよう}訓讀{くんどく}「とおか」。' },
-            { text: 'とか', isCorrect: false, reason: '需要{じゅよう}長音{ちょうおん}，是「とおか」不是「とか」。' }
+            { text: 'とおか', isCorrect: true, reason: '正確！「十日{とおか}」讀作「とおか」，是長音。' },
+            { text: 'じゅうか', isCorrect: false, reason: '日期使用訓讀「とお」不是「じゅう」。' },
+            { text: 'じゅうにち', isCorrect: false, reason: '10日{とおか}使用訓讀「とおか」。' },
+            { text: 'とか', isCorrect: false, reason: '需要長音，是「とおか」不是「とか」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十日{とおか}」讀作{どくさ}「とおか」，與「とお」（十{とお}）相關{かんけい}。這是訓讀{くんどく}系列{けいれつ}の最後{さいご}一個{いっこ}。',
-            relatedRules: ['日期{にっき}の訓讀{くんどく}', '1-10日の訓讀{くんどく}系統{けいとう}']
+            correctRule: '「十日{とおか}」讀作「とおか」，與「とお」（十）相關。這是訓讀系列の最後一個。',
+            relatedRules: ['日期的訓讀', '1-10日的訓讀系統']
         },
         sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
     },
@@ -664,15 +664,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: '給料日は毎月＿＿です。',
         stem_zh: '發薪日是每月十號。',
         options: [
-            { text: 'じゅうにち', isCorrect: false, reason: '10日{とおか}使用{しよう}訓讀{くんどく}。' },
-            { text: 'とおか', isCorrect: true, reason: '正確{せいかく}！發薪日{きゅうりょうび}是每月{まいつき}十號{とおか}。' },
-            { text: 'じゅうか', isCorrect: false, reason: '使用{しよう}訓讀{くんどく}「とおか」。' },
-            { text: 'とか', isCorrect: false, reason: '需要{じゅよう}長音{ちょうおん}「とおか」。' }
+            { text: 'じゅうにち', isCorrect: false, reason: '10日{とおか}使用訓讀。' },
+            { text: 'とおか', isCorrect: true, reason: '正確！發薪日是每月十號{とおか}。' },
+            { text: 'じゅうか', isCorrect: false, reason: '使用訓讀「とおか」。' },
+            { text: 'とか', isCorrect: false, reason: '需要長音「とおか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「毎月{まいつき}十日{とおか}」是常見{じょうけん}の發薪日{きゅうりょうび}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '商務{しょうむ}用語{ようご}']
+            correctRule: '「毎月十日{とおか}」是常見の發薪日。',
+            relatedRules: ['日期的讀法', '商務用語']
         },
         sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
     },
@@ -689,15 +689,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '＿＿です。（十號）'
         },
         options: [
-            { text: 'じゅうにち', isCorrect: false, reason: '10日{とおか}使用{しよう}訓讀{くんどく}。' },
-            { text: 'とおか', isCorrect: true, reason: '正確{せいかく}！截止{しめきり}是十號{とおか}。' },
-            { text: 'じゅうか', isCorrect: false, reason: '使用{しよう}訓讀{くんどく}「とおか」。' },
-            { text: 'とっか', isCorrect: false, reason: '應{おう}是長音{ちょうおん}「とおか」。' }
+            { text: 'じゅうにち', isCorrect: false, reason: '10日{とおか}使用訓讀。' },
+            { text: 'とおか', isCorrect: true, reason: '正確！截止是十號{とおか}。' },
+            { text: 'じゅうか', isCorrect: false, reason: '使用訓讀「とおか」。' },
+            { text: 'とっか', isCorrect: false, reason: '應是長音「とおか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十日{とおか}」回答{かいとう}截止{しめきり}日期{にっき}。',
-            relatedRules: ['日期{にっき}の讀法{よみかた}', '商務{しょうむ}表達{ひょうたつ}']
+            correctRule: '「十日{とおか}」回答截止日期。',
+            relatedRules: ['日期的讀法', '商務表達']
         },
         sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
     },
@@ -709,19 +709,19 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「十四日」的正確讀音是？',
+        stem: '「十四日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十四日」的正確讀音是？',
         options: [
-            { text: 'じゅうよっか', isCorrect: true, reason: '正確{せいかく}！「十四日{じゅうよっか}」讀作{どくさ}「じゅうよっか」，保留{ほりゅう}四日{よっか}の訓讀{くんどく}尾綴{びてつ}。' },
-            { text: 'じゅうよんにち', isCorrect: false, reason: '陷阱{かんけい}！14日{じゅうよっか}保留{ほりゅう}「よっか」の形式{けいしき}，不是「よんにち」。' },
-            { text: 'じゅうしにち', isCorrect: false, reason: '14日{じゅうよっか}使用{しよう}「よっか」系列{けいれつ}。' },
-            { text: 'じゅうよか', isCorrect: false, reason: '需要{じゅよう}促音{そくおん}「っ」，是「じゅうよっか」。' }
+            { text: 'じゅうよっか', isCorrect: true, reason: '正確！「十四日{じゅうよっか}」讀作「じゅうよっか」，保留四日{よっか}的訓讀尾綴。' },
+            { text: 'じゅうよんにち', isCorrect: false, reason: '陷阱！14日{じゅうよっか}保留「よっか」的形式，不是「よんにち」。' },
+            { text: 'じゅうしにち', isCorrect: false, reason: '14日{じゅうよっか}使用「よっか」系列。' },
+            { text: 'じゅうよか', isCorrect: false, reason: '需要促音「っ」，是「じゅうよっか」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十四日{じゅうよっか}」讀作{どくさ}「じゅうよっか」，保留{ほりゅう}了四日{よっか}「よっか」の訓讀{くんどく}尾綴{びてつ}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。14日{じゅうよっか}和24日{にじゅうよっか}都{すべて}保留{ほりゅう}「よっか」，不是「よんにち」。',
-            relatedRules: ['14日{じゅうよっか}の特殊{とくしゅ}讀法{よみかた}', '「よっか」尾綴{びてつ}の保留{ほりゅう}']
+            correctRule: '「十四日{じゅうよっか}」讀作「じゅうよっか」，保留了四日{よっか}「よっか」的訓讀尾綴。',
+            trapExplanation: '這是陷阱題。14日{じゅうよっか}和24日{にじゅうよっか}都保留「よっか」，不是「よんにち」。',
+            relatedRules: ['14日{じゅうよっか}的特殊讀法', '「よっか」尾綴の保留']
         },
         sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
     },
@@ -734,16 +734,16 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: 'バレンタインデーは二月＿＿です。',
         stem_zh: '情人節是二月十四日。',
         options: [
-            { text: 'じゅうよんにち', isCorrect: false, reason: '陷阱{かんけい}！14日{じゅうよっか}は「じゅうよっか」。' },
-            { text: 'じゅうよっか', isCorrect: true, reason: '正確{せいかく}！情人節{バレンタインデー}在二月{にがつ}十四日{じゅうよっか}。' },
-            { text: 'じゅうしにち', isCorrect: false, reason: '14日{じゅうよっか}使用{しよう}「よっか」系列{けいれつ}。' },
-            { text: 'とうよっか', isCorrect: false, reason: '「十{じゅう}」不讀む{よむ}「とう」。' }
+            { text: 'じゅうよんにち', isCorrect: false, reason: '陷阱！14日{じゅうよっか}「じゅうよっか」。' },
+            { text: 'じゅうよっか', isCorrect: true, reason: '正確！情人節在二月十四日{じゅうよっか}。' },
+            { text: 'じゅうしにち', isCorrect: false, reason: '14日{じゅうよっか}使用「よっか」系列。' },
+            { text: 'とうよっか', isCorrect: false, reason: '「十」不讀「とう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二月{にがつ}十四日{じゅうよっか}」是バレンタインデー（情人節{バレンタインデー}）。',
-            trapExplanation: '14日{じゅうよっか}保留{ほりゅう}「よっか」の形式{けいしき}，這是特殊{とくしゅ}讀法{よみかた}。',
-            relatedRules: ['14日{じゅうよっか}の讀法{よみかた}', '國際{こくさい}節日{せつじつ}']
+            correctRule: '「二月十四日{じゅうよっか}」是バレンタインデー（情人節）。',
+            trapExplanation: '14日{じゅうよっか}保留「よっか」的形式，這是特殊讀法。',
+            relatedRules: ['14日{じゅうよっか}的讀法', '國際節日']
         },
         sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
     },
@@ -760,15 +760,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '二月＿＿です。（十四日）'
         },
         options: [
-            { text: 'じゅうよんにち', isCorrect: false, reason: '14日{じゅうよっか}は「じゅうよっか」。' },
-            { text: 'じゅうよっか', isCorrect: true, reason: '正確{せいかく}！二月{にがつ}十四日{じゅうよっか}送巧克力{チョコ}。' },
-            { text: 'じゅうしにち', isCorrect: false, reason: '使用{しよう}「よっか」系列{けいれつ}。' },
-            { text: 'じゅうようか', isCorrect: false, reason: '需要{じゅよう}促音{そくおん}「っ」。' }
+            { text: 'じゅうよんにち', isCorrect: false, reason: '14日{じゅうよっか}「じゅうよっか」。' },
+            { text: 'じゅうよっか', isCorrect: true, reason: '正確！二月十四日{じゅうよっか}送巧克力。' },
+            { text: 'じゅうしにち', isCorrect: false, reason: '使用「よっか」系列。' },
+            { text: 'じゅうようか', isCorrect: false, reason: '需要促音「っ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「二月{にがつ}十四日{じゅうよっか}」是日本{にほん}の情人節{バレンタインデー}，女性{じょせい}送巧克力{チョコ}給男性{だんせい}。',
-            relatedRules: ['14日{じゅうよっか}の讀法{よみかた}', '日本{にほん}の習慣{しゅうかん}']
+            correctRule: '「二月十四日{じゅうよっか}」是日本の情人節，女性送巧克力給男性。',
+            relatedRules: ['14日{じゅうよっか}的讀法', '日本の習慣']
         },
         sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
     },
@@ -780,19 +780,19 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二十日」的正確讀音是？',
+        stem: '「二十日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二十日」的正確讀音是？',
         options: [
-            { text: 'はつか', isCorrect: true, reason: '正確{せいかく}！「二十日{はつか}」讀作{どくさ}「はつか」，是完全{かんぜん}獨立{どくりつ}の特殊{とくしゅ}讀法{よみかた}。' },
-            { text: 'にじゅうにち', isCorrect: false, reason: '陷阱{かんけい}！20日{はつか}是最特殊{さいとくしゅ}の讀法{よみかた}，不是「にじゅうにち」。' },
-            { text: 'ふたとおか', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' },
-            { text: 'にじゅっか', isCorrect: false, reason: '20日{はつか}は完全{かんぜん}獨特{どくとく}，讀む{よむ}「はつか」。' }
+            { text: 'はつか', isCorrect: true, reason: '正確！「二十日{はつか}」讀作「はつか」，是完全獨立的特殊讀法。' },
+            { text: 'にじゅうにち', isCorrect: false, reason: '陷阱！20日{はつか}是最特殊的讀法，不是「にじゅうにち」。' },
+            { text: 'ふたとおか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅっか', isCorrect: false, reason: '20日{はつか}は完全獨特，讀「はつか」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二十日{はつか}」讀作{どくさ}「はつか」，這是日期{にっき}中最特殊{さいとくしゅ}の讀法{よみかた}，完全{かんぜん}脫離{だつり}數字{すうじ}讀法{よみかた}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。「はつか」與「二十{にじゅう}」毫無{ごうむ}關係{かんけい}，是完全{かんぜん}獨立{どくりつ}の古語{こご}。同樣{どうよう}地{ち}，二十歲{はたち}也讀む{よむ}「はたち」。',
-            relatedRules: ['20日{はつか}の獨特{どくとく}讀法{よみかた}', '「はつか」vs「はたち」']
+            correctRule: '「二十日{はつか}」讀作「はつか」，這是日期中最特殊的讀法，完全脫離數字讀法。',
+            trapExplanation: '這是陷阱題。「はつか」與「二十」毫無關係，是完全獨立の古語。同樣地，二十歲也讀「はたち」。',
+            relatedRules: ['20日{はつか}の獨特讀法', '「はつか」vs「はたち」']
         },
         sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
     },
@@ -805,16 +805,16 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: '締め切りは今月の＿＿です。',
         stem_zh: '截止日是這個月的二十號。',
         options: [
-            { text: 'にじゅうにち', isCorrect: false, reason: '陷阱{かんけい}！20日{はつか}は「はつか」。' },
-            { text: 'はつか', isCorrect: true, reason: '正確{せいかく}！截止日{しめきりび}是二十號{はつか}。' },
-            { text: 'ふたじゅうにち', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' },
-            { text: 'にじゅっか', isCorrect: false, reason: '20日{はつか}讀む{よむ}「はつか」。' }
+            { text: 'にじゅうにち', isCorrect: false, reason: '陷阱！20日{はつか}「はつか」。' },
+            { text: 'はつか', isCorrect: true, reason: '正確！截止日是二十號{はつか}。' },
+            { text: 'ふたじゅうにち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅっか', isCorrect: false, reason: '20日{はつか}讀「はつか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「今月{こんげつ}の二十日{はつか}」表示{ひょうじ}這個月{こんげつ}的二十號{はつか}。',
-            trapExplanation: '「はつか」是必須{ひっす}背誦{はいしょう}の特殊{とくしゅ}讀法{よみかた}，與數字{すうじ}「二十{にじゅう}」無關{むかん}。',
-            relatedRules: ['20日{はつか}の讀法{よみかた}', '商務{しょうむ}表達{ひょうたつ}']
+            correctRule: '「今月の二十日{はつか}」表示這個月的二十號。',
+            trapExplanation: '「はつか」是必須背誦的特殊讀法，與數字「二十」無關。',
+            relatedRules: ['20日{はつか}的讀法', '商務表達']
         },
         sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
     },
@@ -831,15 +831,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '六月＿＿です。（二十日）'
         },
         options: [
-            { text: 'にじゅうにち', isCorrect: false, reason: '20日{はつか}は「はつか」。' },
-            { text: 'はつか', isCorrect: true, reason: '正確{せいかく}！結婚{けっこん}紀念日{きねんび}在六月{ろくがつ}二十日{はつか}。' },
-            { text: 'ふたじゅう', isCorrect: false, reason: '這不是日期{にっき}讀法{よみかた}。' },
-            { text: 'にじゅっか', isCorrect: false, reason: '20日{はつか}讀む{よむ}「はつか」。' }
+            { text: 'にじゅうにち', isCorrect: false, reason: '20日{はつか}「はつか」。' },
+            { text: 'はつか', isCorrect: true, reason: '正確！結婚紀念日在六月二十日{はつか}。' },
+            { text: 'ふたじゅう', isCorrect: false, reason: '這不是日期讀法。' },
+            { text: 'にじゅっか', isCorrect: false, reason: '20日{はつか}讀「はつか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「六月{ろくがつ}二十日{はつか}」の「二十日{はつか}」讀作{どくさ}「はつか」。',
-            relatedRules: ['20日{はつか}の讀法{よみかた}', '紀念日{きねんび}表達{ひょうたつ}']
+            correctRule: '「六月二十日{はつか}」の「二十日{はつか}」讀作「はつか」。',
+            relatedRules: ['20日{はつか}的讀法', '紀念日表達']
         },
         sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
     },
@@ -851,19 +851,19 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二十四日」的正確讀音是？',
+        stem: '「二十四日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二十四日」的正確讀音是？',
         options: [
-            { text: 'にじゅうよっか', isCorrect: true, reason: '正確{せいかく}！「二十四日{にじゅうよっか}」讀作{どくさ}「にじゅうよっか」，保留{ほりゅう}「よっか」尾綴{びてつ}。' },
-            { text: 'にじゅうよんにち', isCorrect: false, reason: '陷阱{かんけい}！24日{にじゅうよっか}保留{ほりゅう}「よっか」，不是「よんにち」。' },
-            { text: 'にじゅうしにち', isCorrect: false, reason: '24日{にじゅうよっか}使用{しよう}「よっか」系列{けいれつ}。' },
-            { text: 'はつよっか', isCorrect: false, reason: '「二十{にじゅう}」不讀む{よむ}「はつ」，那是20日{はつか}の讀法{よみかた}。' }
+            { text: 'にじゅうよっか', isCorrect: true, reason: '正確！「二十四日{にじゅうよっか}」讀作「にじゅうよっか」，保留「よっか」尾綴。' },
+            { text: 'にじゅうよんにち', isCorrect: false, reason: '陷阱！24日{にじゅうよっか}保留「よっか」，不是「よんにち」。' },
+            { text: 'にじゅうしにち', isCorrect: false, reason: '24日{にじゅうよっか}使用「よっか」系列。' },
+            { text: 'はつよっか', isCorrect: false, reason: '「二十」不讀「はつ」，那是20日{はつか}的讀法。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二十四日{にじゅうよっか}」讀作{どくさ}「にじゅうよっか」，保留{ほりゅう}了「よっか」の尾綴{びてつ}。',
-            trapExplanation: '這是陷阱題{かんけいだい}。24日{にじゅうよっか}與14日{じゅうよっか}一樣{いちよう}保留{ほりゅう}「よっか」，這是需要{じゅよう}特別{とくべつ}記憶{きおく}の讀法{よみかた}。',
-            relatedRules: ['24日{にじゅうよっか}の特殊{とくしゅ}讀法{よみかた}', '14日{じゅうよっか}、24日{にじゅうよっか}の共通點{きょうつうてん}']
+            correctRule: '「二十四日{にじゅうよっか}」讀作「にじゅうよっか」，保留了「よっか」の尾綴。',
+            trapExplanation: '這是陷阱題。24日{にじゅうよっか}與14日{じゅうよっか}一樣保留「よっか」，這是需要特別記憶的讀法。',
+            relatedRules: ['24日{にじゅうよっか}的特殊讀法', '14日{じゅうよっか}、24日{にじゅうよっか}の共通點']
         },
         sourceItem: { value: 24, kanji: '二十四日', reading: 'にじゅうよっか' }
     },
@@ -876,16 +876,16 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: 'クリスマスイブは十二月＿＿です。',
         stem_zh: '聖誕夜是十二月二十四日。',
         options: [
-            { text: 'にじゅうよんにち', isCorrect: false, reason: '陷阱{かんけい}！24日{にじゅうよっか}は「にじゅうよっか」。' },
-            { text: 'にじゅうよっか', isCorrect: true, reason: '正確{せいかく}！聖誕夜{クリスマスイブ}在十二月{じゅうにがつ}二十四日{にじゅうよっか}。' },
-            { text: 'にじゅうしにち', isCorrect: false, reason: '24日{にじゅうよっか}使用{しよう}「よっか」系列{けいれつ}。' },
-            { text: 'にじゅうようか', isCorrect: false, reason: '需要{じゅよう}促音{そくおん}「っ」，是「よっか」不是「ようか」。' }
+            { text: 'にじゅうよんにち', isCorrect: false, reason: '陷阱！24日{にじゅうよっか}「にじゅうよっか」。' },
+            { text: 'にじゅうよっか', isCorrect: true, reason: '正確！聖誕夜在十二月二十四日{にじゅうよっか}。' },
+            { text: 'にじゅうしにち', isCorrect: false, reason: '24日{にじゅうよっか}使用「よっか」系列。' },
+            { text: 'にじゅうようか', isCorrect: false, reason: '需要促音「っ」，是「よっか」不是「ようか」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十二月{じゅうにがつ}二十四日{にじゅうよっか}」是クリスマスイブ（聖誕夜{クリスマスイブ}）。',
-            trapExplanation: '24日{にじゅうよっか}保留{ほりゅう}「よっか」の形式{けいしき}，這是特殊{とくしゅ}讀法{よみかた}。',
-            relatedRules: ['24日{にじゅうよっか}の讀法{よみかた}', '國際{こくさい}節日{せつじつ}']
+            correctRule: '「十二月二十四日{にじゅうよっか}」是クリスマスイブ（聖誕夜）。',
+            trapExplanation: '24日{にじゅうよっか}保留「よっか」的形式，這是特殊讀法。',
+            relatedRules: ['24日{にじゅうよっか}的讀法', '國際節日']
         },
         sourceItem: { value: 24, kanji: '二十四日', reading: 'にじゅうよっか' }
     },
@@ -902,15 +902,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '十二月＿＿です。（二十四日）'
         },
         options: [
-            { text: 'にじゅうよんにち', isCorrect: false, reason: '24日{にじゅうよっか}は「にじゅうよっか」。' },
-            { text: 'にじゅうよっか', isCorrect: true, reason: '正確{せいかく}！聖誕{クリスマス}派對{パーティー}在二十四日{にじゅうよっか}。' },
-            { text: 'にじゅうしにち', isCorrect: false, reason: '使用{しよう}「よっか」系列{けいれつ}。' },
-            { text: 'はつよんか', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'にじゅうよんにち', isCorrect: false, reason: '24日{にじゅうよっか}「にじゅうよっか」。' },
+            { text: 'にじゅうよっか', isCorrect: true, reason: '正確！聖誕派對在二十四日{にじゅうよっか}。' },
+            { text: 'にじゅうしにち', isCorrect: false, reason: '使用「よっか」系列。' },
+            { text: 'はつよんか', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十二月{じゅうにがつ}二十四日{にじゅうよっか}」是聖誕{クリスマス}派對{パーティー}の日期{にっき}。',
-            relatedRules: ['24日{にじゅうよっか}の讀法{よみかた}', '派對{パーティー}日程{にってい}']
+            correctRule: '「十二月二十四日{にじゅうよっか}」是聖誕派對の日期。',
+            relatedRules: ['24日{にじゅうよっか}的讀法', '派對日程']
         },
         sourceItem: { value: 24, kanji: '二十四日', reading: 'にじゅうよっか' }
     },
@@ -922,18 +922,18 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十五日」的正確讀音是？',
+        stem: '「十五日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十五日」的正確讀音是？',
         options: [
-            { text: 'じゅうごにち', isCorrect: true, reason: '正確{せいかく}！「十五日{じゅうごにち}」讀作{どくさ}「じゅうごにち」，是一般{いっぱん}讀法{よみかた}。' },
-            { text: 'じゅうごか', isCorrect: false, reason: '11日以後{いご}使用{しよう}「にち」，不是「か」。' },
-            { text: 'じゅごにち', isCorrect: false, reason: '需要{じゅよう}「う」，是「じゅう」。' },
-            { text: 'とおごか', isCorrect: false, reason: '11日以後{いご}使用{しよう}音讀{おんどく}「じゅう」。' }
+            { text: 'じゅうごにち', isCorrect: true, reason: '正確！「十五日{じゅうごにち}」讀作「じゅうごにち」，是一般讀法。' },
+            { text: 'じゅうごか', isCorrect: false, reason: '11日以後使用「にち」，不是「か」。' },
+            { text: 'じゅごにち', isCorrect: false, reason: '需要「う」，是「じゅう」。' },
+            { text: 'とおごか', isCorrect: false, reason: '11日以後使用音讀「じゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「十五日{じゅうごにち}」讀作{どくさ}「じゅうごにち」。11日以後{いご}（除{のぞく}14、20、24外{ほか}）使用{しよう}一般{いっぱん}讀法{よみかた}「〜にち」。',
-            relatedRules: ['一般{いっぱん}日期{にっき}の讀法{よみかた}', '「にち」の使用{しよう}']
+            correctRule: '「十五日{じゅうごにち}」讀作「じゅうごにち」。11日以後（除14、20、24外）使用一般讀法「〜にち」。',
+            relatedRules: ['一般日期的讀法', '「にち」的使用']
         },
         sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
     },
@@ -946,15 +946,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: '七五三は十一月＿＿です。',
         stem_zh: '七五三節是十一月十五日。',
         options: [
-            { text: 'じゅうごか', isCorrect: false, reason: '使用{しよう}「にち」不是「か」。' },
-            { text: 'じゅうごにち', isCorrect: true, reason: '正確{せいかく}！七五三{しちごさん}在十一月{じゅういちがつ}十五日{じゅうごにち}。' },
-            { text: 'いつか', isCorrect: false, reason: '「いつか」是5日{いつか}，不是15日{じゅうごにち}。' },
-            { text: 'とおごにち', isCorrect: false, reason: '使用{しよう}音讀{おんどく}「じゅう」。' }
+            { text: 'じゅうごか', isCorrect: false, reason: '使用「にち」不是「か」。' },
+            { text: 'じゅうごにち', isCorrect: true, reason: '正確！七五三在十一月十五日{じゅうごにち}。' },
+            { text: 'いつか', isCorrect: false, reason: '「いつか」是5日，不是15日{じゅうごにち}。' },
+            { text: 'とおごにち', isCorrect: false, reason: '使用音讀「じゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十一月{じゅういちがつ}十五日{じゅうごにち}」是七五三{しちごさん}（慶祝{けいしゅく}兒童{じどう}成長{せいちょう}の節日{せつじつ}）。',
-            relatedRules: ['一般{いっぱん}日期{にっき}の讀法{よみかた}', '日本{にほん}の節日{せつじつ}']
+            correctRule: '「十一月十五日{じゅうごにち}」是七五三（慶祝兒童成長の節日）。',
+            relatedRules: ['一般日期的讀法', '日本の節日']
         },
         sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
     },
@@ -971,15 +971,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '毎月＿＿です。（十五日）'
         },
         options: [
-            { text: 'じゅうごか', isCorrect: false, reason: '使用{しよう}「にち」。' },
-            { text: 'じゅうごにち', isCorrect: true, reason: '正確{せいかく}！發薪日{きゅうりょうび}是每月{まいつき}十五號{じゅうごにち}。' },
-            { text: 'いつか', isCorrect: false, reason: '這是5日{いつか}の讀法{よみかた}。' },
-            { text: 'じゅごにち', isCorrect: false, reason: '需要{じゅよう}「う」。' }
+            { text: 'じゅうごか', isCorrect: false, reason: '使用「にち」。' },
+            { text: 'じゅうごにち', isCorrect: true, reason: '正確！發薪日是每月十五號{じゅうごにち}。' },
+            { text: 'いつか', isCorrect: false, reason: '這是5日的讀法。' },
+            { text: 'じゅごにち', isCorrect: false, reason: '需要「う」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「毎月{まいつき}十五日{じゅうごにち}」是常見{じょうけん}の發薪日{きゅうりょうび}。',
-            relatedRules: ['一般{いっぱん}日期{にっき}の讀法{よみかた}', '商務{しょうむ}用語{ようご}']
+            correctRule: '「毎月十五日{じゅうごにち}」是常見の發薪日。',
+            relatedRules: ['一般日期的讀法', '商務用語']
         },
         sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
     },
@@ -991,18 +991,18 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「二十五日」的正確讀音是？',
+        stem: '「二十五日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二十五日」的正確讀音是？',
         options: [
-            { text: 'にじゅうごにち', isCorrect: true, reason: '正確{せいかく}！「二十五日{にじゅうごにち}」讀作{どくさ}「にじゅうごにち」。' },
-            { text: 'にじゅうごか', isCorrect: false, reason: '使用{しよう}「にち」不是「か」。' },
-            { text: 'はついつか', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' },
-            { text: 'にじゅうごにっち', isCorrect: false, reason: '不需要{じゅようなく}促音{そくおん}。' }
+            { text: 'にじゅうごにち', isCorrect: true, reason: '正確！「二十五日{にじゅうごにち}」讀作「にじゅうごにち」。' },
+            { text: 'にじゅうごか', isCorrect: false, reason: '使用「にち」不是「か」。' },
+            { text: 'はついつか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅうごにっち', isCorrect: false, reason: '不需要促音。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「二十五日{にじゅうごにち}」讀作{どくさ}「にじゅうごにち」，是一般{いっぱん}讀法{よみかた}。',
-            relatedRules: ['一般{いっぱん}日期{にっき}の讀法{よみかた}', '「にち」の使用{しよう}']
+            correctRule: '「二十五日{にじゅうごにち}」讀作「にじゅうごにち」，是一般讀法。',
+            relatedRules: ['一般日期的讀法', '「にち」的使用']
         },
         sourceItem: { value: 25, kanji: '二十五日', reading: 'にじゅうごにち' }
     },
@@ -1015,15 +1015,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: 'クリスマスは十二月＿＿です。',
         stem_zh: '聖誕節是十二月二十五日。',
         options: [
-            { text: 'にじゅうごか', isCorrect: false, reason: '使用{しよう}「にち」。' },
-            { text: 'にじゅうごにち', isCorrect: true, reason: '正確{せいかく}！聖誕節{クリスマス}在十二月{じゅうにがつ}二十五日{にじゅうごにち}。' },
-            { text: 'にじゅうよっか', isCorrect: false, reason: '這是24日{にじゅうよっか}の讀法{よみかた}。' },
-            { text: 'はついつ', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'にじゅうごか', isCorrect: false, reason: '使用「にち」。' },
+            { text: 'にじゅうごにち', isCorrect: true, reason: '正確！聖誕節在十二月二十五日{にじゅうごにち}。' },
+            { text: 'にじゅうよっか', isCorrect: false, reason: '這是24日的讀法。' },
+            { text: 'はついつ', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十二月{じゅうにがつ}二十五日{にじゅうごにち}」是クリスマス（聖誕節{クリスマス}）。',
-            relatedRules: ['一般{いっぱん}日期{にっき}の讀法{よみかた}', '國際{こくさい}節日{せつじつ}']
+            correctRule: '「十二月二十五日{にじゅうごにち}」是クリスマス（聖誕節）。',
+            relatedRules: ['一般日期的讀法', '國際節日']
         },
         sourceItem: { value: 25, kanji: '二十五日', reading: 'にじゅうごにち' }
     },
@@ -1040,15 +1040,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '十二月＿＿です。（二十五日）'
         },
         options: [
-            { text: 'にじゅうごか', isCorrect: false, reason: '使用{しよう}「にち」。' },
-            { text: 'にじゅうごにち', isCorrect: true, reason: '正確{せいかく}！聖誕{クリスマス}禮物{プレゼント}在二十五日{にじゅうごにち}。' },
-            { text: 'にじゅうよっか', isCorrect: false, reason: '這是24日{にじゅうよっか}。' },
-            { text: 'はつごにち', isCorrect: false, reason: '這不是正確{せいかく}讀法{よみかた}。' }
+            { text: 'にじゅうごか', isCorrect: false, reason: '使用「にち」。' },
+            { text: 'にじゅうごにち', isCorrect: true, reason: '正確！聖誕禮物在二十五日{にじゅうごにち}。' },
+            { text: 'にじゅうよっか', isCorrect: false, reason: '這是24日。' },
+            { text: 'はつごにち', isCorrect: false, reason: '這不是正確讀法。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十二月{じゅうにがつ}二十五日{にじゅうごにち}」收到{もらう}聖誕{クリスマス}禮物{プレゼント}。',
-            relatedRules: ['一般{いっぱん}日期{にっき}の讀法{よみかた}', '聖誕{クリスマス}習慣{しゅうかん}']
+            correctRule: '「十二月二十五日{にじゅうごにち}」收到聖誕禮物。',
+            relatedRules: ['一般日期的讀法', '聖誕習慣']
         },
         sourceItem: { value: 25, kanji: '二十五日', reading: 'にじゅうごにち' }
     },
@@ -1060,18 +1060,18 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「三十一日」的正確讀音是？',
+        stem: '「三十一日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「三十一日」的正確讀音是？',
         options: [
-            { text: 'さんじゅういちにち', isCorrect: true, reason: '正確{せいかく}！「三十一日{さんじゅういちにち}」讀作{どくさ}「さんじゅういちにち」。' },
-            { text: 'さんじゅういっか', isCorrect: false, reason: '使用{しよう}「にち」不是「か」。' },
-            { text: 'みそひとか', isCorrect: false, reason: '這是古語{こご}讀法{よみかた}，現代{げんだい}日語{にほんご}使用{しよう}「さんじゅういちにち」。' },
-            { text: 'さんじゅいちにち', isCorrect: false, reason: '需要{じゅよう}「う」，是「じゅう」。' }
+            { text: 'さんじゅういちにち', isCorrect: true, reason: '正確！「三十一日{さんじゅういちにち}」讀作「さんじゅういちにち」。' },
+            { text: 'さんじゅういっか', isCorrect: false, reason: '使用「にち」不是「か」。' },
+            { text: 'みそひとか', isCorrect: false, reason: '這是古語讀法，現代日語使用「さんじゅういちにち」。' },
+            { text: 'さんじゅいちにち', isCorrect: false, reason: '需要「う」，是「じゅう」。' }
         ],
         correctIndex: 0,
         explanation: {
-            correctRule: '「三十一日{さんじゅういちにち}」讀作{どくさ}「さんじゅういちにち」，是一般{いっぱん}讀法{よみかた}。',
-            relatedRules: ['一般{いっぱん}日期{にっき}の讀法{よみかた}', '月末{げつまつ}表達{ひょうたつ}']
+            correctRule: '「三十一日{さんじゅういちにち}」讀作「さんじゅういちにち」，是一般讀法。',
+            relatedRules: ['一般日期的讀法', '月末表達']
         },
         sourceItem: { value: 31, kanji: '三十一日', reading: 'さんじゅういちにち' }
     },
@@ -1084,15 +1084,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         stem: '大晦日は十二月＿＿です。',
         stem_zh: '除夕是十二月三十一日。',
         options: [
-            { text: 'さんじゅういっか', isCorrect: false, reason: '使用{しよう}「にち」。' },
-            { text: 'さんじゅういちにち', isCorrect: true, reason: '正確{せいかく}！除夕{おおみそか}在十二月{じゅうにがつ}三十一日{さんじゅういちにち}。' },
-            { text: 'みそか', isCorrect: false, reason: '「みそか」是月末{げつまつ}の意思{いし}，但31日{さんじゅういちにち}讀む{よむ}「さんじゅういちにち」。' },
-            { text: 'さんじゅいちにち', isCorrect: false, reason: '需要{じゅよう}「う」。' }
+            { text: 'さんじゅういっか', isCorrect: false, reason: '使用「にち」。' },
+            { text: 'さんじゅういちにち', isCorrect: true, reason: '正確！除夕在十二月三十一日{さんじゅういちにち}。' },
+            { text: 'みそか', isCorrect: false, reason: '「みそか」是月末的意思，但31日{さんじゅういちにち}讀「さんじゅういちにち」。' },
+            { text: 'さんじゅいちにち', isCorrect: false, reason: '需要「う」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十二月{じゅうにがつ}三十一日{さんじゅういちにち}」是大晦日{おおみそか}（除夕{じょせき}）。',
-            relatedRules: ['一般{いっぱん}日期{にっき}の讀法{よみかた}', '日本{にほん}の節日{せつじつ}']
+            correctRule: '「十二月三十一日{さんじゅういちにち}」是大晦日（除夕）。',
+            relatedRules: ['一般日期的讀法', '日本の節日']
         },
         sourceItem: { value: 31, kanji: '三十一日', reading: 'さんじゅういちにち' }
     },
@@ -1109,15 +1109,15 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             speakerB: '十二月＿＿です。（三十一日）'
         },
         options: [
-            { text: 'さんじゅういっか', isCorrect: false, reason: '使用{しよう}「にち」。' },
-            { text: 'さんじゅういちにち', isCorrect: true, reason: '正確{せいかく}！年末{ねんまつ}是十二月{じゅうにがつ}三十一日{さんじゅういちにち}。' },
-            { text: 'みそひとか', isCorrect: false, reason: '這是古語{こご}，現代{げんだい}使用{しよう}「さんじゅういちにち」。' },
-            { text: 'さんじゅいちにち', isCorrect: false, reason: '需要{じゅよう}「う」。' }
+            { text: 'さんじゅういっか', isCorrect: false, reason: '使用「にち」。' },
+            { text: 'さんじゅういちにち', isCorrect: true, reason: '正確！年末是十二月三十一日{さんじゅういちにち}。' },
+            { text: 'みそひとか', isCorrect: false, reason: '這是古語，現代使用「さんじゅういちにち」。' },
+            { text: 'さんじゅいちにち', isCorrect: false, reason: '需要「う」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「十二月{じゅうにがつ}三十一日{さんじゅういちにち}」是一年{いちねん}の最後{さいご}一天{いちにち}。',
-            relatedRules: ['一般{いっぱん}日期{にっき}の讀法{よみかた}', '年末{ねんまつ}表達{ひょうたつ}']
+            correctRule: '「十二月三十一日{さんじゅういちにち}」是一年の最後一天。',
+            relatedRules: ['一般日期的讀法', '年末表達']
         },
         sourceItem: { value: 31, kanji: '三十一日', reading: 'さんじゅういちにち' }
     },
@@ -1140,7 +1140,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '五月五日是兒童節，「五日」讀「いつか」。',
-            relatedRules: ['日期の訓讀', '日本の節日']
+            relatedRules: ['日期的訓讀', '日本の節日']
         },
         sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
     },
@@ -1165,7 +1165,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本發薪日多在25日，讀「にじゅうごにち」。',
-            relatedRules: ['一般日期の讀法', '日本の給料制度']
+            relatedRules: ['一般日期的讀法', '日本の給料制度']
         },
         sourceItem: { value: 25, kanji: '二十五日', reading: 'にじゅうごにち' }
     },
@@ -1187,7 +1187,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '12月25日是聖誕節，「25日」讀「にじゅうごにち」。',
             trapExplanation: '「か」系列只用於1-10日和14、24日。',
-            relatedRules: ['一般日期の讀法', '日本のクリスマス']
+            relatedRules: ['一般日期的讀法', '日本のクリスマス']
         },
         sourceItem: { value: 25, kanji: '二十五日', reading: 'にじゅうごにち' }
     },
@@ -1212,7 +1212,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十五日」讀「じゅうごにち」，常用於截止日。',
-            relatedRules: ['一般日期の讀法', '締切の表達']
+            relatedRules: ['一般日期的讀法', '締切的表達']
         },
         sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
     },
@@ -1233,7 +1233,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '三月三日是女兒節，「三日」讀「みっか」。',
-            relatedRules: ['日期の訓讀', 'ひな祭り']
+            relatedRules: ['日期的訓讀', 'ひな祭り']
         },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
@@ -1258,7 +1258,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「七日」讀「なのか」，是七夕的日期。',
-            relatedRules: ['日期の訓讀', '七夕']
+            relatedRules: ['日期的訓讀', '七夕']
         },
         sourceItem: { value: 7, kanji: '七日', reading: 'なのか' }
     },
@@ -1280,7 +1280,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '11日讀「じゅういちにち」，不是訓讀組合。',
             trapExplanation: '11日開始使用「〜にち」系統，不再用訓讀。',
-            relatedRules: ['一般日期の讀法', '日本の祝日']
+            relatedRules: ['一般日期的讀法', '日本の祝日']
         },
         sourceItem: { value: 11, kanji: '十一日', reading: 'じゅういちにち' }
     },
@@ -1305,7 +1305,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「八日」讀「ようか」，「九日」讀「ここのか」。',
-            relatedRules: ['日期の訓讀', '試験日程']
+            relatedRules: ['日期的訓讀', '試験日程']
         },
         sourceItem: { value: '8-9', kanji: '八日・九日', reading: 'ようか・ここのか' }
     },
@@ -1317,7 +1317,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「十四日」的正確讀法是？',
+        stem: '「十四日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十四日」的正確讀法是？',
         options: [
             { text: 'じゅうよっか', isCorrect: true, reason: '正確！14日讀「じゅうよっか」。' },
@@ -1329,7 +1329,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '14日保留訓讀「よっか」，讀「じゅうよっか」。',
             trapExplanation: '14日、24日是特例，保留「〜か」而非「〜にち」。',
-            relatedRules: ['14日の特殊讀法', '日期の例外']
+            relatedRules: ['14日的特殊讀法', '日期の例外']
         },
         sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
     },
@@ -1339,7 +1339,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二十日」的正確讀法是？',
+        stem: '「二十日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二十日」的正確讀法是？',
         options: [
             { text: 'はつか', isCorrect: true, reason: '正確！20日讀「はつか」。' },
@@ -1351,7 +1351,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '20日是特殊讀法「はつか」，需要記憶。',
             trapExplanation: '「はつか」是最特殊的日期讀法之一。',
-            relatedRules: ['20日の特殊讀法', '日期の例外']
+            relatedRules: ['20日的特殊讀法', '日期の例外']
         },
         sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
     },
@@ -1361,7 +1361,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二十四日」的正確讀法是？',
+        stem: '「二十四日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二十四日」的正確讀法是？',
         options: [
             { text: 'にじゅうよっか', isCorrect: true, reason: '正確！24日讀「にじゅうよっか」。' },
@@ -1373,7 +1373,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '24日像14日一樣保留「よっか」，讀「にじゅうよっか」。',
             trapExplanation: '14日和24日都保留「よっか」的讀法。',
-            relatedRules: ['24日の特殊讀法', '14日・24日の例外']
+            relatedRules: ['24日的特殊讀法', '14日・24日の例外']
         },
         sourceItem: { value: 24, kanji: '二十四日', reading: 'にじゅうよっか' }
     },
@@ -1394,7 +1394,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '2月14日是情人節，「14日」讀「じゅうよっか」。',
-            relatedRules: ['14日の讀法', 'バレンタインデー']
+            relatedRules: ['14日的讀法', 'バレンタインデー']
         },
         sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
     },
@@ -1419,7 +1419,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '12月24日是聖誕夜，「24日」讀「にじゅうよっか」。',
-            relatedRules: ['24日の讀法', 'クリスマスイブ']
+            relatedRules: ['24日的讀法', 'クリスマスイブ']
         },
         sourceItem: { value: 24, kanji: '二十四日', reading: 'にじゅうよっか' }
     },
@@ -1465,7 +1465,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '期間「三天」和日期「3日」都讀「みっか」。',
             trapExplanation: '1-10的期間表達也用訓讀系統。',
-            relatedRules: ['期間の讀法', '日期vs期間']
+            relatedRules: ['期間的讀法', '日期vs期間']
         },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
@@ -1490,7 +1490,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '期間「五天」讀「いつか」，與日期相同。',
-            relatedRules: ['期間の讀法', '何日の使用']
+            relatedRules: ['期間的讀法', '何日的使用']
         },
         sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
     },
@@ -1502,7 +1502,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「何日」的正確讀法是？',
+        stem: '「何日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「何日」的正確讀法是？',
         options: [
             { text: 'なんにち', isCorrect: true, reason: '正確！何日讀「なんにち」。' },
@@ -1513,7 +1513,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「何日」讀「なんにち」，用於詢問日期或天數。',
-            relatedRules: ['何日の讀法', '疑問詞の使用']
+            relatedRules: ['何日的讀法', '疑問詞的使用']
         },
         sourceItem: { value: 'question', kanji: '何日', reading: 'なんにち' }
     },
@@ -1538,7 +1538,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「十日」讀「とおか」，是1-10日訓讀的最後一個。',
-            relatedRules: ['日期の訓讀', '何日の回答']
+            relatedRules: ['日期的訓讀', '何日の回答']
         },
         sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
     },
@@ -1559,7 +1559,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「六日」讀「むいか」，使用訓讀系統。',
-            relatedRules: ['日期の訓讀', '旅行日程']
+            relatedRules: ['日期的訓讀', '旅行日程']
         },
         sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
     },
@@ -1582,7 +1582,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '1月1日是元旦，「一日」讀「ついたち」。',
-            relatedRules: ['日期の讀法', '元日']
+            relatedRules: ['日期的讀法', '元日']
         },
         sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
     },
@@ -1607,7 +1607,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '7月7日是七夕，「七日」讀「なのか」。',
-            relatedRules: ['日期の訓讀', '七夕']
+            relatedRules: ['日期的訓讀', '七夕']
         },
         sourceItem: { value: 7, kanji: '七日', reading: 'なのか' }
     },
@@ -1632,7 +1632,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '11月3日是文化節，「三日」讀「みっか」。',
-            relatedRules: ['日期の訓讀', '文化の日']
+            relatedRules: ['日期的訓讀', '文化の日']
         },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
@@ -1653,7 +1653,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '11月23日是勤勞感謝日，「23日」讀「にじゅうさんにち」。',
-            relatedRules: ['一般日期の讀法', '勤労感謝の日']
+            relatedRules: ['一般日期的讀法', '勤労感謝の日']
         },
         sourceItem: { value: 23, kanji: '二十三日', reading: 'にじゅうさんにち' }
     },
@@ -1678,7 +1678,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '5月3日是憲法紀念日，「三日」讀「みっか」。',
-            relatedRules: ['日期の訓讀', '憲法記念日']
+            relatedRules: ['日期的訓讀', '憲法記念日']
         },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
@@ -1701,7 +1701,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '每月1日的定期會議，「一日」讀「ついたち」。',
-            relatedRules: ['日期の讀法', '定期會議']
+            relatedRules: ['日期的讀法', '定期會議']
         },
         sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
     },
@@ -1726,7 +1726,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「二日」讀「ふつか」，使用訓讀系統。',
-            relatedRules: ['日期の訓讀', '引っ越し日程']
+            relatedRules: ['日期的訓讀', '引っ越し日程']
         },
         sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
     },
@@ -1747,7 +1747,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「28日」讀「にじゅうはちにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '納品日程']
+            relatedRules: ['一般日期的讀法', '納品日程']
         },
         sourceItem: { value: 28, kanji: '二十八日', reading: 'にじゅうはちにち' }
     },
@@ -1772,7 +1772,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「四日」讀「よっか」，使用訓讀系統。',
-            relatedRules: ['日期の訓讀', '面接日程']
+            relatedRules: ['日期的訓讀', '面接日程']
         },
         sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
     },
@@ -1793,7 +1793,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「12日」讀「じゅうににち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '締切日程']
+            relatedRules: ['一般日期的讀法', '締切日程']
         },
         sourceItem: { value: 12, kanji: '十二日', reading: 'じゅうににち' }
     },
@@ -1818,7 +1818,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '17日讀「じゅうしちにち」，19日讀「じゅうくにち」。',
-            relatedRules: ['一般日期の讀法', '出張日程']
+            relatedRules: ['一般日期的讀法', '出張日程']
         },
         sourceItem: { value: '17-19', kanji: '十七日〜十九日', reading: 'じゅうしちにち〜じゅうくにち' }
     },
@@ -1839,7 +1839,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「22日」讀「にじゅうににち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '記念日']
+            relatedRules: ['一般日期的讀法', '記念日']
         },
         sourceItem: { value: 22, kanji: '二十二日', reading: 'にじゅうににち' }
     },
@@ -1864,7 +1864,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「26日」讀「にじゅうろくにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '發售日']
+            relatedRules: ['一般日期的讀法', '發售日']
         },
         sourceItem: { value: 26, kanji: '二十六日', reading: 'にじゅうろくにち' }
     },
@@ -1885,7 +1885,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「九日」讀「ここのか」，使用訓讀系統。',
-            relatedRules: ['日期の訓讀', '入学式']
+            relatedRules: ['日期的訓讀', '入学式']
         },
         sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
     },
@@ -1910,7 +1910,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「30日」讀「さんじゅうにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '支払い期限']
+            relatedRules: ['一般日期的讀法', '支払い期限']
         },
         sourceItem: { value: 30, kanji: '三十日', reading: 'さんじゅうにち' }
     },
@@ -1934,7 +1934,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '日期「十日」讀「とおか」，期間「十日間」讀「じゅうにちかん」。',
             trapExplanation: '加上「間」表示期間時，讀法會改變。',
-            relatedRules: ['日期vs期間', '〜間の讀法']
+            relatedRules: ['日期vs期間', '〜間的讀法']
         },
         sourceItem: { value: 10, kanji: '十日/十日間', reading: 'とおか/じゅうにちかん' }
     },
@@ -1978,7 +1978,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「八日」讀「ようか」，8是1-10範圍內。',
             trapExplanation: '1-10日全部使用訓讀系統。',
-            relatedRules: ['日期の訓讀', '1-10日']
+            relatedRules: ['日期的訓讀', '1-10日']
         },
         sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
     },
@@ -2000,7 +2000,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '29日讀「にじゅうくにち」（9＝く），31日讀「さんじゅういちにち」。',
             trapExplanation: '29的9讀「く」而非「きゅう」是常見錯誤。',
-            relatedRules: ['一般日期の讀法', '9の讀法']
+            relatedRules: ['一般日期的讀法', '9的讀法']
         },
         sourceItem: { value: '29-31', kanji: '二十九日〜三十一日', reading: 'にじゅうくにち〜さんじゅういちにち' }
     },
@@ -2023,7 +2023,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「月末」讀「げつまつ」，表示月底。',
-            relatedRules: ['月末の讀法', '時間表達']
+            relatedRules: ['月末的讀法', '時間表達']
         },
         sourceItem: { value: 'monthend', kanji: '月末', reading: 'げつまつ' }
     },
@@ -2044,7 +2044,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '月末日期因月份而異：2月28日、4月30日、12月31日等。',
-            relatedRules: ['一般日期の讀法', '月末']
+            relatedRules: ['一般日期的讀法', '月末']
         },
         sourceItem: { value: 'monthend', kanji: '月末', reading: 'various' }
     },
@@ -2071,7 +2071,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「五日」讀「いつか」，使用訓讀系統。',
-            relatedRules: ['日期の訓讀', '診察日程']
+            relatedRules: ['日期的訓讀', '診察日程']
         },
         sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
     },
@@ -2092,7 +2092,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「18日」讀「じゅうはちにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '卒業式']
+            relatedRules: ['一般日期的讀法', '卒業式']
         },
         sourceItem: { value: 18, kanji: '十八日', reading: 'じゅうはちにち' }
     },
@@ -2117,7 +2117,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '13日讀「じゅうさんにち」，16日讀「じゅうろくにち」。',
-            relatedRules: ['一般日期の讀法', '休暇日程']
+            relatedRules: ['一般日期的讀法', '休暇日程']
         },
         sourceItem: { value: '13-16', kanji: '十三日〜十六日', reading: 'じゅうさんにち〜じゅうろくにち' }
     },
@@ -2138,7 +2138,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「21日」讀「にじゅういちにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '契約日程']
+            relatedRules: ['一般日期的讀法', '契約日程']
         },
         sourceItem: { value: 21, kanji: '二十一日', reading: 'にじゅういちにち' }
     },
@@ -2163,7 +2163,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「27日」讀「にじゅうしちにち」（7＝しち）。',
-            relatedRules: ['一般日期の讀法', '健康診断']
+            relatedRules: ['一般日期的讀法', '健康診断']
         },
         sourceItem: { value: 27, kanji: '二十七日', reading: 'にじゅうしちにち' }
     },
@@ -2184,7 +2184,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '8月15日是盂蘭盆節中心日，「15日」讀「じゅうごにち」。',
-            relatedRules: ['一般日期の讀法', 'お盆']
+            relatedRules: ['一般日期的讀法', 'お盆']
         },
         sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
     },
@@ -2194,7 +2194,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: false,
-        stem: '「十三日」的正確讀法是？',
+        stem: '「十三日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十三日」的正確讀法是？',
         options: [
             { text: 'じゅうさんにち', isCorrect: true, reason: '正確！13日讀「じゅうさんにち」。' },
@@ -2205,7 +2205,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「13日」讀「じゅうさんにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '13日']
+            relatedRules: ['一般日期的讀法', '13日']
         },
         sourceItem: { value: 13, kanji: '十三日', reading: 'じゅうさんにち' }
     },
@@ -2230,7 +2230,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「16日」讀「じゅうろくにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '航班日程']
+            relatedRules: ['一般日期的讀法', '航班日程']
         },
         sourceItem: { value: 16, kanji: '十六日', reading: 'じゅうろくにち' }
     },
@@ -2272,7 +2272,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '17日讀「じゅうしちにち」，7用音讀「しち」。',
-            relatedRules: ['一般日期の讀法', '7の讀法']
+            relatedRules: ['一般日期的讀法', '7的讀法']
         },
         sourceItem: { value: 17, kanji: '十七日', reading: 'じゅうしちにち' }
     },
@@ -2297,7 +2297,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「19日」讀「じゅうくにち」（9＝く）。',
-            relatedRules: ['一般日期の讀法', '9の讀法']
+            relatedRules: ['一般日期的讀法', '9的讀法']
         },
         sourceItem: { value: 19, kanji: '十九日', reading: 'じゅうくにち' }
     },
@@ -2318,7 +2318,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '8月11日是山之日，「11日」讀「じゅういちにち」。',
-            relatedRules: ['一般日期の讀法', '山の日']
+            relatedRules: ['一般日期的讀法', '山の日']
         },
         sourceItem: { value: 11, kanji: '十一日', reading: 'じゅういちにち' }
     },
@@ -2329,7 +2329,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二十日」的正確讀法是？',
+        stem: '「二十日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二十日」的正確讀法是？',
         options: [
             { text: 'はつか', isCorrect: true, reason: '正確！20日讀「はつか」。' },
@@ -2341,7 +2341,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「20日」讀「はつか」，是特殊讀法。',
             trapExplanation: '20日和1日一樣有特殊讀法，要特別記憶。',
-            relatedRules: ['日期の特殊讀法', '20日＝はつか']
+            relatedRules: ['日期的特殊讀法', '20日＝はつか']
         },
         sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
     },
@@ -2362,7 +2362,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「25日」讀「にじゅうごにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '20以上の日期']
+            relatedRules: ['一般日期的讀法', '20以上の日期']
         },
         sourceItem: { value: 25, kanji: '二十五日', reading: 'にじゅうごにち' }
     },
@@ -2387,7 +2387,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「28日」讀「にじゅうはちにち」。',
-            relatedRules: ['一般日期の讀法', '期限の表達']
+            relatedRules: ['一般日期的讀法', '期限的表達']
         },
         sourceItem: { value: 28, kanji: '二十八日', reading: 'にじゅうはちにち' }
     },
@@ -2397,7 +2397,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「二十四日」的正確讀法是？',
+        stem: '「二十四日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「二十四日」的正確讀法是？',
         options: [
             { text: 'にじゅうよっか', isCorrect: true, reason: '正確！24日讀「にじゅうよっか」。' },
@@ -2409,7 +2409,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「24日」讀「にじゅうよっか」，4用訓讀「よっ」。',
             trapExplanation: '14日、24日的「4」都使用訓讀「よっ」。',
-            relatedRules: ['日期の特殊讀法', '4の讀法']
+            relatedRules: ['日期的特殊讀法', '4的讀法']
         },
         sourceItem: { value: 24, kanji: '二十四日', reading: 'にじゅうよっか' }
     },
@@ -2430,7 +2430,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「31日」讀「さんじゅういちにち」，大晦日是一年最後一天。',
-            relatedRules: ['一般日期の讀法', '大晦日']
+            relatedRules: ['一般日期的讀法', '大晦日']
         },
         sourceItem: { value: 31, kanji: '三十一日', reading: 'さんじゅういちにち' }
     },
@@ -2455,7 +2455,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '聖誕節是「12月25日」，讀「じゅうにがつにじゅうごにち」。',
-            relatedRules: ['一般日期の讀法', 'クリスマス']
+            relatedRules: ['一般日期的讀法', 'クリスマス']
         },
         sourceItem: { value: 25, kanji: '二十五日', reading: 'にじゅうごにち' }
     },
@@ -2465,7 +2465,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「十四日」的正確讀法是？',
+        stem: '「十四日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「十四日」的正確讀法是？',
         options: [
             { text: 'じゅうよっか', isCorrect: true, reason: '正確！14日讀「じゅうよっか」。' },
@@ -2477,7 +2477,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「14日」讀「じゅうよっか」，4用訓讀「よっ」。',
             trapExplanation: '14日是特殊讀法，4讀「よっ」+「か」。',
-            relatedRules: ['日期の特殊讀法', '14日＝じゅうよっか']
+            relatedRules: ['日期的特殊讀法', '14日＝じゅうよっか']
         },
         sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
     },
@@ -2498,7 +2498,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '情人節是「2月14日」，讀「にがつじゅうよっか」。',
-            relatedRules: ['日期の特殊讀法', 'バレンタインデー']
+            relatedRules: ['日期的特殊讀法', 'バレンタインデー']
         },
         sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
     },
@@ -2523,7 +2523,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「15日」讀「じゅうごにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '約束の日付']
+            relatedRules: ['一般日期的讀法', '約束の日付']
         },
         sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
     },
@@ -2544,7 +2544,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「22日」讀「にじゅうににち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '20以上の日期']
+            relatedRules: ['一般日期的讀法', '20以上の日期']
         },
         sourceItem: { value: 22, kanji: '二十二日', reading: 'にじゅうににち' }
     },
@@ -2565,7 +2565,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「29日」讀「にじゅうくにち」，9讀「く」。',
-            relatedRules: ['一般日期の讀法', '9の讀法']
+            relatedRules: ['一般日期的讀法', '9的讀法']
         },
         sourceItem: { value: 29, kanji: '二十九日', reading: 'にじゅうくにち' }
     },
@@ -2590,7 +2590,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「30日」讀「さんじゅうにち」。',
-            relatedRules: ['一般日期の讀法', '月末の日付']
+            relatedRules: ['一般日期的讀法', '月末の日付']
         },
         sourceItem: { value: 30, kanji: '三十日', reading: 'さんじゅうにち' }
     },
@@ -2611,7 +2611,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「21日」讀「にじゅういちにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '20以上の日期']
+            relatedRules: ['一般日期的讀法', '20以上の日期']
         },
         sourceItem: { value: 21, kanji: '二十一日', reading: 'にじゅういちにち' }
     },
@@ -2632,7 +2632,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '勤労感謝の日是「11月23日」，讀「にじゅうさんにち」。',
-            relatedRules: ['一般日期の讀法', '勤労感謝の日']
+            relatedRules: ['一般日期的讀法', '勤労感謝の日']
         },
         sourceItem: { value: 23, kanji: '二十三日', reading: 'にじゅうさんにち' }
     },
@@ -2657,7 +2657,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「27日」讀「にじゅうしちにち」，7讀「しち」。',
-            relatedRules: ['一般日期の讀法', '7の讀法']
+            relatedRules: ['一般日期的讀法', '7的讀法']
         },
         sourceItem: { value: 27, kanji: '二十七日', reading: 'にじゅうしちにち' }
     },
@@ -2678,7 +2678,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「26日」讀「にじゅうろくにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '20以上の日期']
+            relatedRules: ['一般日期的讀法', '20以上の日期']
         },
         sourceItem: { value: 26, kanji: '二十六日', reading: 'にじゅうろくにち' }
     },
@@ -2700,7 +2700,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '每月的第一天「1日」讀「ついたち」。',
             trapExplanation: '「いちにち」表示時間長度「一天」。',
-            relatedRules: ['日期の特殊讀法', '1日＝ついたち']
+            relatedRules: ['日期的特殊讀法', '1日＝ついたち']
         },
         sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
     },
@@ -2725,7 +2725,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '日本常見的給料日是每月「25日」。',
-            relatedRules: ['一般日期の讀法', '給料日']
+            relatedRules: ['一般日期的讀法', '給料日']
         },
         sourceItem: { value: 25, kanji: '二十五日', reading: 'にじゅうごにち' }
     },
@@ -2735,7 +2735,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「九日」的正確讀法是？',
+        stem: '「九日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「九日」的正確讀法是？',
         options: [
             { text: 'ここのか', isCorrect: true, reason: '正確！9日讀「ここのか」。' },
@@ -2747,7 +2747,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「9日」讀「ここのか」，是訓讀。',
             trapExplanation: '1-10日都用訓讀，9日是「ここのか」。',
-            relatedRules: ['日期の訓讀', '9日＝ここのか']
+            relatedRules: ['日期的訓讀', '9日＝ここのか']
         },
         sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
     },
@@ -2768,7 +2768,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「5日」讀「いつか」，兒童節是5月5日。',
-            relatedRules: ['日期の訓讀', '子供の日']
+            relatedRules: ['日期的訓讀', '子供の日']
         },
         sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
     },
@@ -2793,7 +2793,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '七夕是7月7日，「7日」讀「なのか」。',
-            relatedRules: ['日期の訓讀', '七夕']
+            relatedRules: ['日期的訓讀', '七夕']
         },
         sourceItem: { value: 7, kanji: '七日', reading: 'なのか' }
     },
@@ -2803,7 +2803,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「八日」的正確讀法是？',
+        stem: '「八日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「八日」的正確讀法是？',
         options: [
             { text: 'ようか', isCorrect: true, reason: '正確！8日讀「ようか」。' },
@@ -2815,7 +2815,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「8日」讀「ようか」，是訓讀。',
             trapExplanation: '8日「ようか」和20日「はつか」容易混淆。',
-            relatedRules: ['日期の訓讀', '8日＝ようか']
+            relatedRules: ['日期的訓讀', '8日＝ようか']
         },
         sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
     },
@@ -2836,7 +2836,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「3日」讀「みっか」，3月3日是女兒節（雛祭り）。',
-            relatedRules: ['日期の訓讀', '雛祭り']
+            relatedRules: ['日期的訓讀', '雛祭り']
         },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
@@ -2861,7 +2861,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「10日」讀「とおか」，是訓讀。',
-            relatedRules: ['日期の訓讀', '10日＝とおか']
+            relatedRules: ['日期的訓讀', '10日＝とおか']
         },
         sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
     },
@@ -2871,7 +2871,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「四日」的正確讀法是？',
+        stem: '「四日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「四日」的正確讀法是？',
         options: [
             { text: 'よっか', isCorrect: true, reason: '正確！4日讀「よっか」。' },
@@ -2883,7 +2883,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「4日」讀「よっか」，是訓讀。',
             trapExplanation: '4日、14日、24日的「4」都讀「よっ」。',
-            relatedRules: ['日期の訓讀', '4日＝よっか']
+            relatedRules: ['日期的訓讀', '4日＝よっか']
         },
         sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
     },
@@ -2904,7 +2904,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '元日是1月1日，「1日」讀「ついたち」。',
-            relatedRules: ['日期の特殊讀法', '元日']
+            relatedRules: ['日期的特殊讀法', '元日']
         },
         sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
     },
@@ -2929,7 +2929,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「2日」讀「ふつか」，是訓讀。',
-            relatedRules: ['日期の訓讀', '2日＝ふつか']
+            relatedRules: ['日期的訓讀', '2日＝ふつか']
         },
         sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
     },
@@ -2939,7 +2939,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         subcategory: 'days',
         type: 'pronunciation',
         isTrap: true,
-        stem: '「六日」的正確讀法是？',
+        stem: '「六日」の正{ただ}しい読{よ}み方{かた}はどれですか。',
         stem_zh: '「六日」的正確讀法是？',
         options: [
             { text: 'むいか', isCorrect: true, reason: '正確！6日讀「むいか」。' },
@@ -2951,7 +2951,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「6日」讀「むいか」，是訓讀。',
             trapExplanation: '6日沒有促音，讀「むいか」。',
-            relatedRules: ['日期の訓讀', '6日＝むいか']
+            relatedRules: ['日期的訓讀', '6日＝むいか']
         },
         sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
     },
@@ -2972,7 +2972,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「10日」讀「とおか」，是1-10日中的最後一個訓讀。',
-            relatedRules: ['日期の訓讀', '10日＝とおか']
+            relatedRules: ['日期的訓讀', '10日＝とおか']
         },
         sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
     },
@@ -2997,7 +2997,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「18日」讀「じゅうはちにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '試験日程']
+            relatedRules: ['一般日期的讀法', '試験日程']
         },
         sourceItem: { value: 18, kanji: '十八日', reading: 'じゅうはちにち' }
     },
@@ -3018,7 +3018,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「12日」讀「じゅうににち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '11日以上']
+            relatedRules: ['一般日期的讀法', '11日以上']
         },
         sourceItem: { value: 12, kanji: '十二日', reading: 'じゅうににち' }
     },
@@ -3039,7 +3039,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '天皇誕生日是「2月23日」。',
-            relatedRules: ['一般日期の讀法', '天皇誕生日']
+            relatedRules: ['一般日期的讀法', '天皇誕生日']
         },
         sourceItem: { value: 23, kanji: '二十三日', reading: 'にじゅうさんにち' }
     },
@@ -3065,7 +3065,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「20日」讀「はつか」，是特殊讀法。',
             trapExplanation: '20日和1日一樣有特殊讀法，需要記憶。',
-            relatedRules: ['日期の特殊讀法', '20日＝はつか']
+            relatedRules: ['日期的特殊讀法', '20日＝はつか']
         },
         sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
     },
@@ -3086,7 +3086,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「15日」讀「じゅうごにち」，是一般讀法。',
-            relatedRules: ['一般日期の讀法', '11日以上']
+            relatedRules: ['一般日期的讀法', '11日以上']
         },
         sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
     },
@@ -3132,7 +3132,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「5日」讀「いつか」，是訓讀。',
-            relatedRules: ['日期の訓讀', '5日＝いつか']
+            relatedRules: ['日期的訓讀', '5日＝いつか']
         },
         sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
     },
@@ -3175,7 +3175,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '文化の日是「11月3日」，讀「みっか」。',
-            relatedRules: ['日期の訓讀', '文化の日']
+            relatedRules: ['日期的訓讀', '文化の日']
         },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
@@ -3200,7 +3200,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「31日」讀「さんじゅういちにち」。',
-            relatedRules: ['一般日期の讀法', '月末の日付']
+            relatedRules: ['一般日期的讀法', '月末の日付']
         },
         sourceItem: { value: 31, kanji: '三十一日', reading: 'さんじゅういちにち' }
     },
@@ -3221,7 +3221,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「何日」讀「なんにち」，用來詢問日期。',
-            relatedRules: ['疑問詞の讀法', '何日＝なんにち']
+            relatedRules: ['疑問詞的讀法', '何日＝なんにち']
         },
         sourceItem: { value: 'what day', kanji: '何日', reading: 'なんにち' }
     },
@@ -3267,7 +3267,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「15日」讀「じゅうごにち」。',
-            relatedRules: ['一般日期の讀法', '父の日']
+            relatedRules: ['一般日期的讀法', '父の日']
         },
         sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
     },
@@ -3289,7 +3289,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '1-10日全部使用訓讀，是日語日期的重要特徵。',
             trapExplanation: '這是總結性題目，1-10日都要特別記憶。',
-            relatedRules: ['日期の訓讀', '1-10日の讀法']
+            relatedRules: ['日期的訓讀', '1-10日的讀法']
         },
         sourceItem: { value: '1-10', kanji: '一日〜十日', reading: 'ついたち〜とおか' }
     },
@@ -3310,7 +3310,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '昭和の日是「4月29日」，讀「にじゅうくにち」。',
-            relatedRules: ['一般日期の讀法', '昭和の日']
+            relatedRules: ['一般日期的讀法', '昭和の日']
         },
         sourceItem: { value: 29, kanji: '二十九日', reading: 'にじゅうくにち' }
     },
@@ -3335,7 +3335,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「26日」讀「にじゅうろくにち」。',
-            relatedRules: ['一般日期の讀法', '有効期限']
+            relatedRules: ['一般日期的讀法', '有効期限']
         },
         sourceItem: { value: 26, kanji: '二十六日', reading: 'にじゅうろくにち' }
     },
@@ -3356,7 +3356,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「朔日」讀「ついたち」，是1日的另一種漢字寫法。',
-            relatedRules: ['日期の特殊讀法', '朔日＝ついたち']
+            relatedRules: ['日期的特殊讀法', '朔日＝ついたち']
         },
         sourceItem: { value: 1, kanji: '朔日', reading: 'ついたち' }
     },
@@ -3377,7 +3377,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '建国記念の日是「2月11日」。',
-            relatedRules: ['一般日期の讀法', '建国記念の日']
+            relatedRules: ['一般日期的讀法', '建国記念の日']
         },
         sourceItem: { value: 11, kanji: '十一日', reading: 'じゅういちにち' }
     },
@@ -3402,7 +3402,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「8日」讀「ようか」，是訓讀。',
-            relatedRules: ['日期の訓讀', '8日＝ようか']
+            relatedRules: ['日期的訓讀', '8日＝ようか']
         },
         sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
     },
@@ -3424,7 +3424,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '11日以後改用音讀「〜にち」，除了14日、20日、24日例外。',
             trapExplanation: '這是總結性題目，理解11日以後的規則變化。',
-            relatedRules: ['日期の讀法規則', '11日以上の讀法']
+            relatedRules: ['日期的讀法規則', '11日以上的讀法']
         },
         sourceItem: { value: '11+', kanji: '十一日以上', reading: '〜にち' }
     },
@@ -3471,7 +3471,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「4日」讀「よっか」，是訓讀。',
-            relatedRules: ['日期の訓讀', '4日＝よっか']
+            relatedRules: ['日期的訓讀', '4日＝よっか']
         },
         sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
     },
@@ -3492,7 +3492,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「晦日」讀「みそか」，指每月最後一天。',
-            relatedRules: ['日期の特殊讀法', '晦日＝みそか']
+            relatedRules: ['日期的特殊讀法', '晦日＝みそか']
         },
         sourceItem: { value: 'last day', kanji: '晦日', reading: 'みそか' }
     },
@@ -3513,7 +3513,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '春分の日大約是「3月21日」左右。',
-            relatedRules: ['一般日期の讀法', '春分の日']
+            relatedRules: ['一般日期的讀法', '春分の日']
         },
         sourceItem: { value: 21, kanji: '二十一日', reading: 'にじゅういちにち' }
     },
@@ -3538,7 +3538,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「9日」讀「ここのか」，是訓讀。',
-            relatedRules: ['日期の訓讀', '9日＝ここのか']
+            relatedRules: ['日期的訓讀', '9日＝ここのか']
         },
         sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
     },
@@ -3560,7 +3560,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '14日（じゅうよっか）、24日（にじゅうよっか）的「4」用訓讀「よっ」。',
             trapExplanation: '這是日期中4的特殊讀法規則。',
-            relatedRules: ['日期の特殊讀法', '4の讀法']
+            relatedRules: ['日期的特殊讀法', '4的讀法']
         },
         sourceItem: { value: '4', kanji: '四', reading: 'よっ' }
     },
@@ -3581,7 +3581,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '秋分の日大約是「9月23日」左右。',
-            relatedRules: ['一般日期の讀法', '秋分の日']
+            relatedRules: ['一般日期的讀法', '秋分の日']
         },
         sourceItem: { value: 23, kanji: '二十三日', reading: 'にじゅうさんにち' }
     },
@@ -3606,7 +3606,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「6日」讀「むいか」，是訓讀。',
-            relatedRules: ['日期の訓讀', '6日＝むいか']
+            relatedRules: ['日期的訓讀', '6日＝むいか']
         },
         sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
     },
@@ -3627,7 +3627,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「毎月」讀「まいつき」，意思是每個月。',
-            relatedRules: ['毎〜の讀法', '毎月＝まいつき']
+            relatedRules: ['毎〜的讀法', '毎月＝まいつき']
         },
         sourceItem: { value: 'every month', kanji: '毎月', reading: 'まいつき' }
     },
@@ -3648,7 +3648,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '憲法記念日是「5月3日」。',
-            relatedRules: ['日期の訓讀', '憲法記念日']
+            relatedRules: ['日期的訓讀', '憲法記念日']
         },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
@@ -3673,7 +3673,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「7日」讀「なのか」，是訓讀。',
-            relatedRules: ['日期の訓讀', '7日＝なのか']
+            relatedRules: ['日期的訓讀', '7日＝なのか']
         },
         sourceItem: { value: 7, kanji: '七日', reading: 'なのか' }
     },
@@ -3695,7 +3695,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「はつか」來自古語「二十」（はた）＋「日」（か）。',
             trapExplanation: '了解語源有助於記憶特殊讀法。',
-            relatedRules: ['日期の特殊讀法', '20日の語源']
+            relatedRules: ['日期的特殊讀法', '20日の語源']
         },
         sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
     },
@@ -3716,7 +3716,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: 'みどりの日是「5月4日」。',
-            relatedRules: ['日期の訓讀', 'みどりの日']
+            relatedRules: ['日期的訓讀', 'みどりの日']
         },
         sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
     },
@@ -3741,7 +3741,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「10日」讀「とおか」，是訓讀。',
-            relatedRules: ['日期の訓讀', '10日＝とおか']
+            relatedRules: ['日期的訓讀', '10日＝とおか']
         },
         sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
     },
@@ -3783,7 +3783,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「8日」讀「ようか」。',
-            relatedRules: ['日期の訓讀', '8日＝ようか']
+            relatedRules: ['日期的訓讀', '8日＝ようか']
         },
         sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
     },
@@ -3808,7 +3808,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「3日以内」的「3日」讀「みっか」。',
-            relatedRules: ['日期の訓讀', '3日＝みっか']
+            relatedRules: ['日期的訓讀', '3日＝みっか']
         },
         sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
     },
@@ -3830,7 +3830,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '「ついたち」來自「月立ち」（つきたち），指新月出現。',
             trapExplanation: '了解語源有助於記憶這個特殊讀法。',
-            relatedRules: ['日期の特殊讀法', '1日の語源']
+            relatedRules: ['日期的特殊讀法', '1日の語源']
         },
         sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
     },
@@ -3876,7 +3876,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「20日」讀「はつか」。',
-            relatedRules: ['日期の特殊讀法', '20日＝はつか']
+            relatedRules: ['日期的特殊讀法', '20日＝はつか']
         },
         sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
     },
@@ -3918,7 +3918,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「24日」讀「にじゅうよっか」。',
-            relatedRules: ['日期の特殊讀法', '24日']
+            relatedRules: ['日期的特殊讀法', '24日']
         },
         sourceItem: { value: 24, kanji: '二十四日', reading: 'にじゅうよっか' }
     },
@@ -3943,7 +3943,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「5日」讀「いつか」。',
-            relatedRules: ['日期の訓讀', '5日＝いつか']
+            relatedRules: ['日期的訓讀', '5日＝いつか']
         },
         sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
     },
@@ -3985,7 +3985,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '七五三是「11月15日」。',
-            relatedRules: ['一般日期の讀法', '七五三']
+            relatedRules: ['一般日期的讀法', '七五三']
         },
         sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
     },
@@ -4010,7 +4010,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「2日」讀「ふつか」。',
-            relatedRules: ['日期の訓讀', '2日＝ふつか']
+            relatedRules: ['日期的訓讀', '2日＝ふつか']
         },
         sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
     },
@@ -4052,7 +4052,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '終戦記念日是「8月15日」。',
-            relatedRules: ['一般日期の讀法', '終戦記念日']
+            relatedRules: ['一般日期的讀法', '終戦記念日']
         },
         sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
     },
@@ -4078,7 +4078,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '這裡的「31日」表示天數，讀「さんじゅういちにち」。',
             trapExplanation: '詢問天數時用「にち」表示。',
-            relatedRules: ['日數の讀法', '何日ある']
+            relatedRules: ['日數的讀法', '何日ある']
         },
         sourceItem: { value: 31, kanji: '三十一日', reading: 'さんじゅういちにち' }
     },
@@ -4120,7 +4120,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '每月的第一天「1日」讀「ついたち」。',
-            relatedRules: ['日期の特殊讀法', '1日＝ついたち']
+            relatedRules: ['日期的特殊讀法', '1日＝ついたち']
         },
         sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
     },
@@ -4145,7 +4145,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「5日間」的「5日」讀「いつか」。',
-            relatedRules: ['日期の訓讀', '期間の表現']
+            relatedRules: ['日期的訓讀', '期間の表現']
         },
         sourceItem: { value: 5, kanji: '五日間', reading: 'いつかかん' }
     },
@@ -4187,7 +4187,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '1-10日全部使用訓讀，如「ついたち」「ふつか」「みっか」等。',
-            relatedRules: ['日期の訓讀', '1-10日の讀法']
+            relatedRules: ['日期的訓讀', '1-10日的讀法']
         },
         sourceItem: { value: '1-10', kanji: '一日〜十日', reading: '訓讀' }
     },
@@ -4212,7 +4212,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「14日」讀「じゅうよっか」。',
-            relatedRules: ['日期の特殊讀法', '14日']
+            relatedRules: ['日期的特殊讀法', '14日']
         },
         sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
     },
@@ -4234,7 +4234,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '14日（じゅうよっか）、20日（はつか）、24日（にじゅうよっか）有特殊讀法。',
             trapExplanation: '這是總結性題目，掌握11日以後的例外。',
-            relatedRules: ['日期の特殊讀法', '例外の日期']
+            relatedRules: ['日期的特殊讀法', '例外の日期']
         },
         sourceItem: { value: 'exception', kanji: '特殊日期', reading: '例外' }
     },
@@ -4255,7 +4255,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「20日」讀「はつか」。',
-            relatedRules: ['日期の特殊讀法', '20日＝はつか']
+            relatedRules: ['日期的特殊讀法', '20日＝はつか']
         },
         sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
     },
@@ -4280,7 +4280,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「10日」讀「とおか」。',
-            relatedRules: ['日期の訓讀', '10日＝とおか']
+            relatedRules: ['日期的訓讀', '10日＝とおか']
         },
         sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
     },
@@ -4322,7 +4322,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「24日」讀「にじゅうよっか」。',
-            relatedRules: ['日期の特殊讀法', '24日']
+            relatedRules: ['日期的特殊讀法', '24日']
         },
         sourceItem: { value: 24, kanji: '二十四日', reading: 'にじゅうよっか' }
     },
@@ -4347,7 +4347,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「7日間」的「7日」讀「なのか」。',
-            relatedRules: ['日期の訓讀', '期間の表現']
+            relatedRules: ['日期的訓讀', '期間の表現']
         },
         sourceItem: { value: 7, kanji: '七日間', reading: 'なのかかん' }
     },
@@ -4389,7 +4389,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「6日」讀「むいか」。',
-            relatedRules: ['日期の訓讀', '6日＝むいか']
+            relatedRules: ['日期的訓讀', '6日＝むいか']
         },
         sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
     },
@@ -4414,7 +4414,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「8日」讀「ようか」。',
-            relatedRules: ['日期の訓讀', '8日＝ようか']
+            relatedRules: ['日期的訓讀', '8日＝ようか']
         },
         sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
     },
@@ -4458,7 +4458,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「9日」讀「ここのか」，是訓讀。',
-            relatedRules: ['日期の訓讀', '9日＝ここのか']
+            relatedRules: ['日期的訓讀', '9日＝ここのか']
         },
         sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
     },
@@ -4483,7 +4483,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「4日」讀「よっか」，是訓讀。',
-            relatedRules: ['日期の訓讀', '4日＝よっか']
+            relatedRules: ['日期的訓讀', '4日＝よっか']
         },
         sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
     },
@@ -4525,7 +4525,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「2日」讀「ふつか」，是訓讀。',
-            relatedRules: ['日期の訓讀', '2日＝ふつか']
+            relatedRules: ['日期的訓讀', '2日＝ふつか']
         },
         sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
     },
@@ -4550,7 +4550,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         correctIndex: 0,
         explanation: {
             correctRule: '「14日」讀「じゅうよっか」。',
-            relatedRules: ['日期の特殊讀法', '14日']
+            relatedRules: ['日期的特殊讀法', '14日']
         },
         sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
     },
@@ -4572,7 +4572,7 @@ export const dayQuestions: DatesPracticeQuestion[] = [
         explanation: {
             correctRule: '日語日期讀法有三種模式：1-10日訓讀、11日以後音讀、例外（14/20/24日）。',
             trapExplanation: '掌握這三種模式是學習日期讀法的關鍵。',
-            relatedRules: ['日期の讀法總整理', '三種模式']
+            relatedRules: ['日期的讀法總整理', '三種模式']
         },
         sourceItem: { value: 'summary', kanji: '總復習', reading: '三種模式' }
     }

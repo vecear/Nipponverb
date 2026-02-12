@@ -5,7 +5,7 @@
  * eliminating the repetitive if/else chains in Practice.tsx.
  */
 
-import { StaticQuestion } from '../data/questions/types'
+import { StaticQuestion, UnifiedQuestion } from '../data/questions/types'
 
 // Verb banks
 import { n5Questions } from '../data/questions/n5'
@@ -16,6 +16,9 @@ import { n1Questions } from '../data/questions/n1'
 
 // Vocabulary banks
 import { vocabN5, vocabN4, vocabN3, vocabN2, vocabN1 } from '../data/questions/vocab'
+
+// Grammar bank (UnifiedQuestion format)
+import { grammarQuestions } from '../data/grammar'
 
 type Level = 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
 
@@ -37,7 +40,7 @@ const vocabBanks: Record<Level, StaticQuestion[]> = {
 
 /**
  * Get the static question bank for a given category and level.
- * Returns null for categories without static banks (gojuon, grammar, kanji).
+ * Returns null for categories without static banks (gojuon, kanji).
  */
 export function getStaticBank(
   category: string,
@@ -46,6 +49,13 @@ export function getStaticBank(
   if (category === 'verbs') return verbBanks[level]
   if (category === 'vocabulary') return vocabBanks[level]
   return null
+}
+
+/**
+ * Get the grammar question bank (UnifiedQuestion format) for a given level.
+ */
+export function getGrammarBank(level: Level): UnifiedQuestion[] {
+  return grammarQuestions.filter(q => q.level === level)
 }
 
 /**
