@@ -1675,5 +1675,1346 @@ export const basicNumberQuestions: DatesPracticeQuestion[] = [
         correctIndex: 1,
         explanation: { correctRule: '「四分」讀「よんぷん」，「四」後「分」需要半濁音化。', trapExplanation: '「分」的讀法規則：1/6/8/10促音+ぷん，3/4撥音/長音+ぷん，其他ふん。', relatedRules: ['分の讀法規則'] },
         sourceItem: { value: 4, kanji: '四分', reading: 'よんぷん' }
+    },
+
+    // ===== 追加100題（59-158） =====
+    // 更多0-10數字的應用場景、比較題和陷阱題
+
+    // 購物場景
+    {
+        id: 'num_basic_extra_59', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '購物對話', stem_zh: '購物對話',
+        dialogue: { speakerA: 'これはいくらですか？', speakerB: '＿＿百円です。（三）' },
+        options: [
+            { text: 'さん', isCorrect: true, reason: '正確！「三百」讀「さんびゃく」。' },
+            { text: 'み', isCorrect: false, reason: '「み」是訓讀，不用於百位數。' },
+            { text: 'みっ', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'さ', isCorrect: false, reason: '需要完整的「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「三百」讀「さんびゃく」，使用音讀。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 3, kanji: '三百', reading: 'さんびゃく' }
+    },
+    {
+        id: 'num_basic_extra_60', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: true,
+        stem: 'りんごを＿＿ください。（五個）', stem_zh: '請給我五個蘋果。',
+        options: [
+            { text: 'ごこ', isCorrect: false, reason: '陷阱！一般物品用「〜つ」不是「〜個」。' },
+            { text: 'いつつ', isCorrect: true, reason: '正確！「五つ」讀「いつつ」。' },
+            { text: 'ごつ', isCorrect: false, reason: '沒有這個讀法。' },
+            { text: 'いつ', isCorrect: false, reason: '需要完整的「いつつ」。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '一般物品計數使用「〜つ」，「五つ」讀「いつつ」。', trapExplanation: '「〜個」主要用於漢語詞彙。', relatedRules: ['つ量詞の使用'] },
+        sourceItem: { value: 5, kanji: '五つ', reading: 'いつつ' }
+    },
+    {
+        id: 'num_basic_extra_61', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「六」的音讀是？', stem_zh: '「六」的音讀是？',
+        options: [
+            { text: 'ろく', isCorrect: true, reason: '正確！「六」的音讀是「ろく」。' },
+            { text: 'むっ', isCorrect: false, reason: '「むっ」是訓讀的一部分。' },
+            { text: 'りく', isCorrect: false, reason: '這不是「六」的讀法。' },
+            { text: 'む', isCorrect: false, reason: '「む」是訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六」的音讀是「ろく」。', relatedRules: ['6の發音'] },
+        sourceItem: { value: 6, kanji: '六', reading: 'ろく' }
+    },
+    {
+        id: 'num_basic_extra_62', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '點餐對話', stem_zh: '點餐對話',
+        dialogue: { speakerA: 'コーヒーをいくつ？', speakerB: '＿＿ください。（二つ）' },
+        options: [
+            { text: 'にこ', isCorrect: false, reason: '一般飲料用「〜つ」。' },
+            { text: 'ふたつ', isCorrect: true, reason: '正確！「二つ」讀「ふたつ」。' },
+            { text: 'にっ', isCorrect: false, reason: '沒有這個讀法。' },
+            { text: 'ふたこ', isCorrect: false, reason: '沒有這個組合。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「二つ」讀「ふたつ」，用於計數一般物品。', relatedRules: ['つ量詞の使用'] },
+        sourceItem: { value: 2, kanji: '二つ', reading: 'ふたつ' }
+    },
+    {
+        id: 'num_basic_extra_63', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '部屋番号は＿＿です。（八）', stem_zh: '房間號碼是八號。',
+        options: [
+            { text: 'や', isCorrect: false, reason: '「や」是訓讀，不用於號碼。' },
+            { text: 'はち', isCorrect: true, reason: '正確！號碼使用音讀「はち」。' },
+            { text: 'やっ', isCorrect: false, reason: '沒有這個讀法。' },
+            { text: 'はっ', isCorrect: false, reason: '獨立使用時不促音化。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '號碼使用音讀，「八」讀「はち」。', relatedRules: ['號碼の讀法'] },
+        sourceItem: { value: 8, kanji: '八', reading: 'はち' }
+    },
+    {
+        id: 'num_basic_extra_64', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
+        stem: '「零」的讀法是？', stem_zh: '「零」的讀法是？',
+        options: [
+            { text: 'れい', isCorrect: true, reason: '正確！「零」讀「れい」。' },
+            { text: 'ぜろ', isCorrect: true, reason: '「ゼロ」也是正確的外來語讀法。' },
+            { text: 'まる', isCorrect: false, reason: '「まる」是「○」的讀法，不是「零」。' },
+            { text: 'ない', isCorrect: false, reason: '「ない」表示「沒有」，不是數字0。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「零」可讀「れい」或「ゼロ」。', relatedRules: ['0の讀法'] },
+        sourceItem: { value: 0, kanji: '零', reading: 'れい' }
+    },
+    {
+        id: 'num_basic_extra_65', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '數學課', stem_zh: '數學課',
+        dialogue: { speakerA: '＿＿足す二は？', speakerB: '三です。（一）' },
+        options: [
+            { text: 'いち', isCorrect: true, reason: '正確！數學計算用音讀。' },
+            { text: 'ひと', isCorrect: false, reason: '數學用音讀，不用訓讀。' },
+            { text: 'ひとつ', isCorrect: false, reason: '數學不用量詞讀法。' },
+            { text: 'いっ', isCorrect: false, reason: '「足す」前不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '數學計算使用音讀。', relatedRules: ['數學の讀法'] },
+        sourceItem: { value: 1, kanji: '一', reading: 'いち' }
+    },
+    {
+        id: 'num_basic_extra_66', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: true,
+        stem: '＿＿人で食事しました。（四）', stem_zh: '四個人一起吃飯。',
+        options: [
+            { text: 'しにん', isCorrect: false, reason: '陷阱！「四人」讀「よにん」。' },
+            { text: 'よにん', isCorrect: true, reason: '正確！「四人」讀「よにん」。' },
+            { text: 'よんにん', isCorrect: false, reason: '「四人」不讀「よんにん」。' },
+            { text: 'しじん', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「四人」讀「よにん」，「四」後接人用「よ」。', trapExplanation: '「四」在「四人」中讀「よ」，不是「し」或「よん」。', relatedRules: ['人數の讀法'] },
+        sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
+    },
+    {
+        id: 'num_basic_extra_67', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「十」的音讀是？', stem_zh: '「十」的音讀是？',
+        options: [
+            { text: 'じゅう', isCorrect: true, reason: '正確！「十」的音讀是「じゅう」。' },
+            { text: 'とお', isCorrect: false, reason: '「とお」是訓讀。' },
+            { text: 'じゅ', isCorrect: false, reason: '需要長音「じゅう」。' },
+            { text: 'じっ', isCorrect: false, reason: '這是促音化形式。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十」的音讀是「じゅう」。', relatedRules: ['10の發音'] },
+        sourceItem: { value: 10, kanji: '十', reading: 'じゅう' }
+    },
+    {
+        id: 'num_basic_extra_68', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '年齡詢問', stem_zh: '年齡詢問',
+        dialogue: { speakerA: '何歳ですか？', speakerB: '＿＿歳です。（九）' },
+        options: [
+            { text: 'く', isCorrect: false, reason: '「九歳」不讀「くさい」。' },
+            { text: 'きゅう', isCorrect: true, reason: '正確！「九歳」讀「きゅうさい」。' },
+            { text: 'ここの', isCorrect: false, reason: '「ここの」是訓讀。' },
+            { text: 'きゅ', isCorrect: false, reason: '需要長音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「九歳」讀「きゅうさい」。', relatedRules: ['年齡の讀法'] },
+        sourceItem: { value: 9, kanji: '九歳', reading: 'きゅうさい' }
+    },
+    {
+        id: 'num_basic_extra_69', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '猫を＿＿飼っています。（三）', stem_zh: '養了三隻貓。',
+        options: [
+            { text: 'さんびき', isCorrect: true, reason: '正確！「三匹」讀「さんびき」。' },
+            { text: 'さんひき', isCorrect: false, reason: '「三」後「匹」濁音化為「びき」。' },
+            { text: 'みっぴき', isCorrect: false, reason: '「三匹」用音讀。' },
+            { text: 'さんぴき', isCorrect: false, reason: '是「びき」不是「ぴき」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「三匹」讀「さんびき」，濁音化。', relatedRules: ['匹の音變'] },
+        sourceItem: { value: 3, kanji: '三匹', reading: 'さんびき' }
+    },
+    {
+        id: 'num_basic_extra_70', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
+        stem: '「七」有哪兩種讀法？', stem_zh: '「七」有哪兩種讀法？',
+        options: [
+            { text: 'しち・なな', isCorrect: true, reason: '正確！「七」可讀「しち」或「なな」。' },
+            { text: 'しち・なの', isCorrect: false, reason: '「なの」是「七日」的讀法，不是「七」。' },
+            { text: 'なな・ひち', isCorrect: false, reason: '沒有「ひち」這個讀法。' },
+            { text: 'しち・ななつ', isCorrect: false, reason: '「ななつ」是「七つ」的讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七」可讀「しち」（音讀）或「なな」（訓讀）。', relatedRules: ['7の讀法'] },
+        sourceItem: { value: 7, kanji: '七', reading: 'しち/なな' }
+    },
+    {
+        id: 'num_basic_extra_71', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: true,
+        stem: '時間對話', stem_zh: '時間對話',
+        dialogue: { speakerA: '今何時ですか？', speakerB: '＿＿時です。（四）' },
+        options: [
+            { text: 'しじ', isCorrect: false, reason: '陷阱！「四時」讀「よじ」，不是「しじ」。' },
+            { text: 'よじ', isCorrect: true, reason: '正確！「四時」讀「よじ」。' },
+            { text: 'よんじ', isCorrect: false, reason: '「四時」不讀「よんじ」。' },
+            { text: 'しいじ', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「四時」讀「よじ」。', trapExplanation: '時間的「四」讀「よ」，是特殊讀法。', relatedRules: ['時間の特殊讀法'] },
+        sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
+    },
+    {
+        id: 'num_basic_extra_72', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '本を＿＿買いました。（六冊）', stem_zh: '買了六本書。',
+        options: [
+            { text: 'ろくさつ', isCorrect: true, reason: '正確！「六冊」讀「ろくさつ」。' },
+            { text: 'むっさつ', isCorrect: false, reason: '「冊」用音讀。' },
+            { text: 'ろっさつ', isCorrect: false, reason: '「六冊」不促音化。' },
+            { text: 'ろくせつ', isCorrect: false, reason: '是「さつ」不是「せつ」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六冊」讀「ろくさつ」。', relatedRules: ['冊の讀法'] },
+        sourceItem: { value: 6, kanji: '六冊', reading: 'ろくさつ' }
+    },
+    {
+        id: 'num_basic_extra_73', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「八」的訓讀是？', stem_zh: '「八」的訓讀是？',
+        options: [
+            { text: 'や', isCorrect: true, reason: '正確！「八」的訓讀是「や」。' },
+            { text: 'はち', isCorrect: false, reason: '「はち」是音讀。' },
+            { text: 'やつ', isCorrect: false, reason: '「やつ」是「八つ」的讀法。' },
+            { text: 'は', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八」的訓讀是「や」，如「八百屋（やおや）」。', relatedRules: ['8の讀法'] },
+        sourceItem: { value: 8, kanji: '八', reading: 'や' }
+    },
+    {
+        id: 'num_basic_extra_74', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '買東西', stem_zh: '買東西',
+        dialogue: { speakerA: 'ペンは何本いりますか？', speakerB: '＿＿本ください。（五）' },
+        options: [
+            { text: 'ごほん', isCorrect: true, reason: '正確！「五本」讀「ごほん」。' },
+            { text: 'いつほん', isCorrect: false, reason: '「本」用音讀。' },
+            { text: 'ごぼん', isCorrect: false, reason: '「五」後「本」不濁音化。' },
+            { text: 'ごっぽん', isCorrect: false, reason: '「五」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五本」讀「ごほん」。', relatedRules: ['本の讀法'] },
+        sourceItem: { value: 5, kanji: '五本', reading: 'ごほん' }
+    },
+    {
+        id: 'num_basic_extra_75', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: true,
+        stem: '切手を＿＿買いました。（一枚）', stem_zh: '買了一張郵票。',
+        options: [
+            { text: 'いちまい', isCorrect: true, reason: '正確！「一枚」讀「いちまい」。' },
+            { text: 'いっまい', isCorrect: false, reason: '陷阱！「枚」前「一」不促音化。' },
+            { text: 'ひとまい', isCorrect: false, reason: '「枚」用音讀。' },
+            { text: 'いちばい', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「一枚」讀「いちまい」，不促音化。', trapExplanation: '「一」在「枚」前不促音化。', relatedRules: ['枚の讀法'] },
+        sourceItem: { value: 1, kanji: '一枚', reading: 'いちまい' }
+    },
+    {
+        id: 'num_basic_extra_76', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「九」有哪兩種讀法？', stem_zh: '「九」有哪兩種讀法？',
+        options: [
+            { text: 'きゅう・く', isCorrect: true, reason: '正確！「九」可讀「きゅう」或「く」。' },
+            { text: 'きゅう・ここの', isCorrect: false, reason: '「ここの」是「九つ」的讀法。' },
+            { text: 'く・ここの', isCorrect: false, reason: '「ここの」不是單獨「九」的讀法。' },
+            { text: 'きゅ・く', isCorrect: false, reason: '是「きゅう」不是「きゅ」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九」的音讀有「きゅう」和「く」兩種。', relatedRules: ['9の讀法'] },
+        sourceItem: { value: 9, kanji: '九', reading: 'きゅう/く' }
+    },
+    {
+        id: 'num_basic_extra_77', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '日期對話', stem_zh: '日期對話',
+        dialogue: { speakerA: '誕生日はいつですか？', speakerB: '＿＿月です。（二）' },
+        options: [
+            { text: 'に', isCorrect: true, reason: '正確！「二月」讀「にがつ」。' },
+            { text: 'ふた', isCorrect: false, reason: '月份用音讀。' },
+            { text: 'ふ', isCorrect: false, reason: '沒有這個讀法。' },
+            { text: 'じ', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二月」讀「にがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 2, kanji: '二月', reading: 'にがつ' }
+    },
+    {
+        id: 'num_basic_extra_78', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: true,
+        stem: '水を＿＿飲みました。（一杯）', stem_zh: '喝了一杯水。',
+        options: [
+            { text: 'いっぱい', isCorrect: true, reason: '正確！「一杯」讀「いっぱい」。' },
+            { text: 'いちはい', isCorrect: false, reason: '陷阱！「杯」前「一」促音化且半濁音。' },
+            { text: 'ひとはい', isCorrect: false, reason: '「杯」用音讀。' },
+            { text: 'いちばい', isCorrect: false, reason: '是「ぱい」不是「ばい」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「一杯」讀「いっぱい」，促音化且半濁音。', trapExplanation: '「一」在「杯」前促音化，且「杯」變「ぱい」。', relatedRules: ['杯の讀法'] },
+        sourceItem: { value: 1, kanji: '一杯', reading: 'いっぱい' }
+    },
+    {
+        id: 'num_basic_extra_79', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「四」的訓讀是？', stem_zh: '「四」的訓讀是？',
+        options: [
+            { text: 'よ', isCorrect: true, reason: '正確！「四」的訓讀是「よ」。' },
+            { text: 'し', isCorrect: false, reason: '「し」是音讀。' },
+            { text: 'よん', isCorrect: false, reason: '「よん」是「四」的另一種音讀形式。' },
+            { text: 'よつ', isCorrect: false, reason: '「よつ」是「四つ」的讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四」的訓讀是「よ」，如「四日（よっか）」。', relatedRules: ['4の讀法'] },
+        sourceItem: { value: 4, kanji: '四', reading: 'よ' }
+    },
+    {
+        id: 'num_basic_extra_80', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '椅子はいくつありますか？', speakerB: '＿＿あります。（八つ）' },
+        options: [
+            { text: 'やっつ', isCorrect: true, reason: '正確！「八つ」讀「やっつ」。' },
+            { text: 'はちつ', isCorrect: false, reason: '「つ」用訓讀。' },
+            { text: 'やつ', isCorrect: false, reason: '需要促音「やっつ」。' },
+            { text: 'はっつ', isCorrect: false, reason: '不用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八つ」讀「やっつ」。', relatedRules: ['つ量詞の讀法'] },
+        sourceItem: { value: 8, kanji: '八つ', reading: 'やっつ' }
+    },
+    {
+        id: 'num_basic_extra_81', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '階段を＿＿段上がりました。（十）', stem_zh: '上了十階樓梯。',
+        options: [
+            { text: 'じゅう', isCorrect: false, reason: '「十段」讀「じゅうだん」，但「十」在此讀「じゅっ」。' },
+            { text: 'じゅっ', isCorrect: true, reason: '正確！「十段」讀「じゅっだん」。' },
+            { text: 'とお', isCorrect: false, reason: '「段」用音讀。' },
+            { text: 'じっ', isCorrect: true, reason: '「じっだん」也正確。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「十段」讀「じゅっだん」或「じっだん」。', relatedRules: ['10の促音化'] },
+        sourceItem: { value: 10, kanji: '十段', reading: 'じゅっだん' }
+    },
+    {
+        id: 'num_basic_extra_82', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
+        stem: '「三」在「三人」中讀作？', stem_zh: '「三」在「三人」中讀作？',
+        options: [
+            { text: 'さん', isCorrect: true, reason: '正確！「三人」讀「さんにん」。' },
+            { text: 'み', isCorrect: false, reason: '陷阱！「三人」用音讀，不用訓讀。' },
+            { text: 'みっ', isCorrect: false, reason: '「三人」不促音化。' },
+            { text: 'さ', isCorrect: false, reason: '需要完整的「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「三人」讀「さんにん」。', trapExplanation: '「人」前用音讀，不用訓讀「み」。', relatedRules: ['人數の讀法'] },
+        sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
+    },
+    {
+        id: 'num_basic_extra_83', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: true,
+        stem: '點菜', stem_zh: '點菜',
+        dialogue: { speakerA: 'ビールをいくつ？', speakerB: '＿＿ください。（六つ）' },
+        options: [
+            { text: 'むっつ', isCorrect: true, reason: '正確！「六つ」讀「むっつ」。' },
+            { text: 'ろくつ', isCorrect: false, reason: '陷阱！「つ」用訓讀，不用音讀。' },
+            { text: 'むつ', isCorrect: false, reason: '需要促音「むっつ」。' },
+            { text: 'ろっつ', isCorrect: false, reason: '不用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六つ」讀「むっつ」。', trapExplanation: '「〜つ」量詞用訓讀。', relatedRules: ['つ量詞の讀法'] },
+        sourceItem: { value: 6, kanji: '六つ', reading: 'むっつ' }
+    },
+    {
+        id: 'num_basic_extra_84', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '＿＿階に住んでいます。（七）', stem_zh: '住在七樓。',
+        options: [
+            { text: 'なな', isCorrect: false, reason: '「階」用音讀。' },
+            { text: 'しち', isCorrect: true, reason: '正確！「七階」讀「しちかい」或「ななかい」。' },
+            { text: 'なの', isCorrect: false, reason: '這不是「七」的讀法。' },
+            { text: 'ひち', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「七階」可讀「しちかい」或「ななかい」。', relatedRules: ['7の讀法'] },
+        sourceItem: { value: 7, kanji: '七階', reading: 'しちかい' }
+    },
+    {
+        id: 'num_basic_extra_85', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「一」在「一本」中讀作？', stem_zh: '「一」在「一本」中讀作？',
+        options: [
+            { text: 'いっ', isCorrect: true, reason: '正確！「一本」讀「いっぽん」。' },
+            { text: 'いち', isCorrect: false, reason: '「本」前「一」促音化。' },
+            { text: 'ひと', isCorrect: false, reason: '「本」用音讀。' },
+            { text: 'い', isCorrect: false, reason: '需要促音。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「一本」讀「いっぽん」，促音化且半濁音。', relatedRules: ['本の讀法'] },
+        sourceItem: { value: 1, kanji: '一本', reading: 'いっぽん' }
+    },
+    {
+        id: 'num_basic_extra_86', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '預約', stem_zh: '預約',
+        dialogue: { speakerA: '何名様ですか？', speakerB: '＿＿名です。（五）' },
+        options: [
+            { text: 'ご', isCorrect: true, reason: '正確！「五名」讀「ごめい」。' },
+            { text: 'いつ', isCorrect: false, reason: '「名」用音讀。' },
+            { text: 'いつつ', isCorrect: false, reason: '「名」不用「つ」。' },
+            { text: 'ごう', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五名」讀「ごめい」。', relatedRules: ['名の讀法'] },
+        sourceItem: { value: 5, kanji: '五名', reading: 'ごめい' }
+    },
+    {
+        id: 'num_basic_extra_87', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: true,
+        stem: '薬を＿＿飲みます。（三回）', stem_zh: '吃藥三次。',
+        options: [
+            { text: 'さんかい', isCorrect: true, reason: '正確！「三回」讀「さんかい」。' },
+            { text: 'みかい', isCorrect: false, reason: '陷阱！「回」前用音讀。' },
+            { text: 'さんがい', isCorrect: false, reason: '「三」後「回」不濁音化。' },
+            { text: 'みっかい', isCorrect: false, reason: '不用訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「三回」讀「さんかい」。', trapExplanation: '「回」前用音讀，不用訓讀。', relatedRules: ['回の讀法'] },
+        sourceItem: { value: 3, kanji: '三回', reading: 'さんかい' }
+    },
+    {
+        id: 'num_basic_extra_88', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「二」在「二人」中讀作？', stem_zh: '「二」在「二人」中讀作？',
+        options: [
+            { text: 'ふた', isCorrect: true, reason: '正確！「二人」讀「ふたり」。' },
+            { text: 'に', isCorrect: false, reason: '「二人」是特殊讀法，用訓讀。' },
+            { text: 'ふ', isCorrect: false, reason: '需要「ふた」。' },
+            { text: 'にっ', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二人」讀「ふたり」，是特殊訓讀。', relatedRules: ['人數の特殊讀法'] },
+        sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
+    },
+    {
+        id: 'num_basic_extra_89', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問時間', stem_zh: '問時間',
+        dialogue: { speakerA: '何時に起きますか？', speakerB: '＿＿時に起きます。（六）' },
+        options: [
+            { text: 'ろく', isCorrect: true, reason: '正確！「六時」讀「ろくじ」。' },
+            { text: 'む', isCorrect: false, reason: '「時」用音讀。' },
+            { text: 'むっ', isCorrect: false, reason: '「六時」不促音化。' },
+            { text: 'ろっ', isCorrect: false, reason: '「六時」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六時」讀「ろくじ」。', relatedRules: ['時間の讀法'] },
+        sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
+    },
+    {
+        id: 'num_basic_extra_90', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '＿＿番目に並んでいます。（八）', stem_zh: '排在第八個。',
+        options: [
+            { text: 'はち', isCorrect: true, reason: '正確！「八番目」讀「はちばんめ」。' },
+            { text: 'や', isCorrect: false, reason: '「番目」用音讀。' },
+            { text: 'やっ', isCorrect: false, reason: '不用訓讀。' },
+            { text: 'はっ', isCorrect: false, reason: '「八番目」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八番目」讀「はちばんめ」。', relatedRules: ['序數の讀法'] },
+        sourceItem: { value: 8, kanji: '八番目', reading: 'はちばんめ' }
+    },
+    {
+        id: 'num_basic_extra_91', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
+        stem: '「十」在「十本」中讀作？', stem_zh: '「十」在「十本」中讀作？',
+        options: [
+            { text: 'じゅっ', isCorrect: true, reason: '正確！「十本」讀「じゅっぽん」。' },
+            { text: 'じゅう', isCorrect: false, reason: '陷阱！「本」前「十」促音化。' },
+            { text: 'とお', isCorrect: false, reason: '「本」用音讀。' },
+            { text: 'じっ', isCorrect: true, reason: '「じっぽん」也正確。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十本」讀「じゅっぽん」或「じっぽん」。', trapExplanation: '「十」在「本」前促音化。', relatedRules: ['本の讀法'] },
+        sourceItem: { value: 10, kanji: '十本', reading: 'じゅっぽん' }
+    },
+    {
+        id: 'num_basic_extra_92', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問年齡', stem_zh: '問年齡',
+        dialogue: { speakerA: 'お子さんは何歳ですか？', speakerB: '＿＿歳です。（三）' },
+        options: [
+            { text: 'さん', isCorrect: true, reason: '正確！「三歳」讀「さんさい」。' },
+            { text: 'み', isCorrect: false, reason: '「歳」用音讀。' },
+            { text: 'みっ', isCorrect: false, reason: '不用訓讀。' },
+            { text: 'さ', isCorrect: false, reason: '需要「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「三歳」讀「さんさい」。', relatedRules: ['年齡の讀法'] },
+        sourceItem: { value: 3, kanji: '三歳', reading: 'さんさい' }
+    },
+    {
+        id: 'num_basic_extra_93', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: true,
+        stem: '犬を＿＿飼っています。（一匹）', stem_zh: '養了一隻狗。',
+        options: [
+            { text: 'いっぴき', isCorrect: true, reason: '正確！「一匹」讀「いっぴき」。' },
+            { text: 'いちひき', isCorrect: false, reason: '陷阱！「匹」前「一」促音化且半濁音。' },
+            { text: 'ひとひき', isCorrect: false, reason: '「匹」用音讀。' },
+            { text: 'いちびき', isCorrect: false, reason: '不是這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「一匹」讀「いっぴき」。', trapExplanation: '「一」在「匹」前促音化，且「匹」變「ぴき」。', relatedRules: ['匹の讀法'] },
+        sourceItem: { value: 1, kanji: '一匹', reading: 'いっぴき' }
+    },
+    {
+        id: 'num_basic_extra_94', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「六」在「六匹」中讀作？', stem_zh: '「六」在「六匹」中讀作？',
+        options: [
+            { text: 'ろっ', isCorrect: true, reason: '正確！「六匹」讀「ろっぴき」。' },
+            { text: 'ろく', isCorrect: false, reason: '「匹」前「六」促音化。' },
+            { text: 'む', isCorrect: false, reason: '「匹」用音讀。' },
+            { text: 'むっ', isCorrect: false, reason: '不用訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六匹」讀「ろっぴき」。', relatedRules: ['匹の讀法'] },
+        sourceItem: { value: 6, kanji: '六匹', reading: 'ろっぴき' }
+    },
+    {
+        id: 'num_basic_extra_95', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'これはいくらですか？', speakerB: '＿＿千円です。（二）' },
+        options: [
+            { text: 'に', isCorrect: true, reason: '正確！「二千」讀「にせん」。' },
+            { text: 'ふた', isCorrect: false, reason: '「千」用音讀。' },
+            { text: 'ふ', isCorrect: false, reason: '不用訓讀。' },
+            { text: 'にっ', isCorrect: false, reason: '「二千」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二千」讀「にせん」。', relatedRules: ['千の讀法'] },
+        sourceItem: { value: 2, kanji: '二千', reading: 'にせん' }
+    },
+    {
+        id: 'num_basic_extra_96', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '写真を＿＿撮りました。（十枚）', stem_zh: '拍了十張照片。',
+        options: [
+            { text: 'じゅうまい', isCorrect: true, reason: '正確！「十枚」讀「じゅうまい」。' },
+            { text: 'じゅっまい', isCorrect: false, reason: '「枚」前不促音化。' },
+            { text: 'とおまい', isCorrect: false, reason: '「枚」用音讀。' },
+            { text: 'じっまい', isCorrect: false, reason: '「枚」前不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十枚」讀「じゅうまい」。', relatedRules: ['枚の讀法'] },
+        sourceItem: { value: 10, kanji: '十枚', reading: 'じゅうまい' }
+    },
+    {
+        id: 'num_basic_extra_97', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
+        stem: '「八」在「八本」中讀作？', stem_zh: '「八」在「八本」中讀作？',
+        options: [
+            { text: 'はっ', isCorrect: true, reason: '正確！「八本」讀「はっぽん」。' },
+            { text: 'はち', isCorrect: false, reason: '陷阱！「本」前「八」促音化。' },
+            { text: 'や', isCorrect: false, reason: '「本」用音讀。' },
+            { text: 'やっ', isCorrect: false, reason: '不用訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八本」讀「はっぽん」。', trapExplanation: '「八」在「本」前促音化，且「本」變「ぽん」。', relatedRules: ['本の讀法'] },
+        sourceItem: { value: 8, kanji: '八本', reading: 'はっぽん' }
+    },
+    {
+        id: 'num_basic_extra_98', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問個數', stem_zh: '問個數',
+        dialogue: { speakerA: 'みかんはいくつありますか？', speakerB: '＿＿あります。（九つ）' },
+        options: [
+            { text: 'ここのつ', isCorrect: true, reason: '正確！「九つ」讀「ここのつ」。' },
+            { text: 'きゅうつ', isCorrect: false, reason: '「つ」用訓讀。' },
+            { text: 'くつ', isCorrect: false, reason: '「九つ」不讀「くつ」。' },
+            { text: 'ここつ', isCorrect: false, reason: '需要「ここのつ」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九つ」讀「ここのつ」。', relatedRules: ['つ量詞の讀法'] },
+        sourceItem: { value: 9, kanji: '九つ', reading: 'ここのつ' }
+    },
+    {
+        id: 'num_basic_extra_99', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '階段は＿＿段あります。（五）', stem_zh: '樓梯有五階。',
+        options: [
+            { text: 'ご', isCorrect: true, reason: '正確！「五段」讀「ごだん」。' },
+            { text: 'いつ', isCorrect: false, reason: '「段」用音讀。' },
+            { text: 'いつつ', isCorrect: false, reason: '不用「つ」量詞。' },
+            { text: 'ごう', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五段」讀「ごだん」。', relatedRules: ['段の讀法'] },
+        sourceItem: { value: 5, kanji: '五段', reading: 'ごだん' }
+    },
+    {
+        id: 'num_basic_extra_100', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
+        stem: '以下哪個「杯」的讀法正確？', stem_zh: '以下哪個「杯」的讀法正確？',
+        options: [
+            { text: '三杯(さんばい)', isCorrect: true, reason: '正確！「三杯」讀「さんばい」。' },
+            { text: '三杯(さんはい)', isCorrect: false, reason: '「三」後「杯」濁音化為「ばい」。' },
+            { text: '三杯(さんぱい)', isCorrect: false, reason: '不是半濁音。' },
+            { text: '三杯(みはい)', isCorrect: false, reason: '「杯」用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「三杯」讀「さんばい」。', trapExplanation: '「杯」的讀法：1/6/8/10→っぱい，3→ばい，其他→はい。', relatedRules: ['杯の讀法規則'] },
+        sourceItem: { value: 3, kanji: '三杯', reading: 'さんばい' }
+    },
+
+    // ===== 繼續追加（101-158）=====
+    {
+        id: 'num_basic_extra_101', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問日期', stem_zh: '問日期',
+        dialogue: { speakerA: '今日は何日ですか？', speakerB: '＿＿日です。（一）' },
+        options: [
+            { text: 'ついたち', isCorrect: true, reason: '正確！「一日」讀「ついたち」。' },
+            { text: 'いちにち', isCorrect: false, reason: '「一日」作為日期讀「ついたち」。' },
+            { text: 'いちび', isCorrect: false, reason: '沒有這個讀法。' },
+            { text: 'ひとひ', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「一日」作為日期讀「ついたち」。', relatedRules: ['日期の特殊讀法'] },
+        sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
+    },
+    {
+        id: 'num_basic_extra_102', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: true,
+        stem: '電車は＿＿分後に来ます。（六）', stem_zh: '電車六分鐘後來。',
+        options: [
+            { text: 'ろっぷん', isCorrect: true, reason: '正確！「六分」讀「ろっぷん」。' },
+            { text: 'ろくふん', isCorrect: false, reason: '陷阱！「分」前「六」促音化且半濁音。' },
+            { text: 'むふん', isCorrect: false, reason: '「分」用音讀。' },
+            { text: 'ろくぷん', isCorrect: false, reason: '需要促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六分」讀「ろっぷん」。', trapExplanation: '「六」在「分」前促音化，且「分」變「ぷん」。', relatedRules: ['分の讀法'] },
+        sourceItem: { value: 6, kanji: '六分', reading: 'ろっぷん' }
+    },
+    {
+        id: 'num_basic_extra_103', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「十」在「十日」中讀作？', stem_zh: '「十」在「十日」中讀作？',
+        options: [
+            { text: 'とお', isCorrect: true, reason: '正確！「十日」讀「とおか」。' },
+            { text: 'じゅう', isCorrect: false, reason: '「十日」是特殊讀法。' },
+            { text: 'じゅっ', isCorrect: false, reason: '「十日」不用音讀。' },
+            { text: 'と', isCorrect: false, reason: '需要「とお」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十日」讀「とおか」。', relatedRules: ['日期の特殊讀法'] },
+        sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
+    },
+    {
+        id: 'num_basic_extra_104', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問年級', stem_zh: '問年級',
+        dialogue: { speakerA: '何年生ですか？', speakerB: '＿＿年生です。（四）' },
+        options: [
+            { text: 'よ', isCorrect: true, reason: '正確！「四年生」讀「よねんせい」。' },
+            { text: 'し', isCorrect: false, reason: '「四年生」讀「よねんせい」。' },
+            { text: 'よん', isCorrect: false, reason: '「四年生」不讀「よんねんせい」。' },
+            { text: 'よっ', isCorrect: false, reason: '不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四年生」讀「よねんせい」。', relatedRules: ['年級の讀法'] },
+        sourceItem: { value: 4, kanji: '四年生', reading: 'よねんせい' }
+    },
+    {
+        id: 'num_basic_extra_105', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '傘を＿＿持っています。（七本）', stem_zh: '有七把傘。',
+        options: [
+            { text: 'ななほん', isCorrect: true, reason: '正確！「七本」讀「ななほん」。' },
+            { text: 'しちほん', isCorrect: false, reason: '「七本」讀「ななほん」。' },
+            { text: 'ななぼん', isCorrect: false, reason: '「七」後「本」不濁音化。' },
+            { text: 'なのほん', isCorrect: false, reason: '不是「なの」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七本」讀「ななほん」。', relatedRules: ['本の讀法'] },
+        sourceItem: { value: 7, kanji: '七本', reading: 'ななほん' }
+    },
+    {
+        id: 'num_basic_extra_106', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
+        stem: '「一」在「一人」中讀作？', stem_zh: '「一」在「一人」中讀作？',
+        options: [
+            { text: 'ひと', isCorrect: true, reason: '正確！「一人」讀「ひとり」。' },
+            { text: 'いち', isCorrect: false, reason: '陷阱！「一人」是特殊訓讀。' },
+            { text: 'いっ', isCorrect: false, reason: '「一人」不用音讀。' },
+            { text: 'ひ', isCorrect: false, reason: '需要「ひと」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「一人」讀「ひとり」。', trapExplanation: '「一人」和「二人」是特殊訓讀。', relatedRules: ['人數の特殊讀法'] },
+        sourceItem: { value: 1, kanji: '一人', reading: 'ひとり' }
+    },
+    {
+        id: 'num_basic_extra_107', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '買票', stem_zh: '買票',
+        dialogue: { speakerA: '入場券は何枚いりますか？', speakerB: '＿＿枚ください。（二）' },
+        options: [
+            { text: 'に', isCorrect: true, reason: '正確！「二枚」讀「にまい」。' },
+            { text: 'ふた', isCorrect: false, reason: '「枚」用音讀。' },
+            { text: 'ふ', isCorrect: false, reason: '不用訓讀。' },
+            { text: 'にっ', isCorrect: false, reason: '「二枚」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二枚」讀「にまい」。', relatedRules: ['枚の讀法'] },
+        sourceItem: { value: 2, kanji: '二枚', reading: 'にまい' }
+    },
+    {
+        id: 'num_basic_extra_108', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: true,
+        stem: '会議室は＿＿階です。（八）', stem_zh: '會議室在八樓。',
+        options: [
+            { text: 'はっ', isCorrect: true, reason: '正確！「八階」讀「はっかい」。' },
+            { text: 'はち', isCorrect: false, reason: '陷阱！「階」前「八」促音化。' },
+            { text: 'や', isCorrect: false, reason: '「階」用音讀。' },
+            { text: 'やっ', isCorrect: false, reason: '不用訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八階」讀「はっかい」。', trapExplanation: '「八」在「階」前促音化。', relatedRules: ['階の讀法'] },
+        sourceItem: { value: 8, kanji: '八階', reading: 'はっかい' }
+    },
+    {
+        id: 'num_basic_extra_109', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「三」在「三月」中讀作？', stem_zh: '「三」在「三月」中讀作？',
+        options: [
+            { text: 'さん', isCorrect: true, reason: '正確！「三月」讀「さんがつ」。' },
+            { text: 'み', isCorrect: false, reason: '「月」用音讀。' },
+            { text: 'みっ', isCorrect: false, reason: '不用訓讀。' },
+            { text: 'さ', isCorrect: false, reason: '需要「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「三月」讀「さんがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 3, kanji: '三月', reading: 'さんがつ' }
+    },
+    {
+        id: 'num_basic_extra_110', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問分數', stem_zh: '問分數',
+        dialogue: { speakerA: 'テストは何点でしたか？', speakerB: '＿＿点です。（十）' },
+        options: [
+            { text: 'じゅっ', isCorrect: true, reason: '正確！「十点」讀「じゅってん」。' },
+            { text: 'じゅう', isCorrect: false, reason: '「点」前「十」促音化。' },
+            { text: 'とお', isCorrect: false, reason: '「点」用音讀。' },
+            { text: 'じっ', isCorrect: true, reason: '「じってん」也正確。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十点」讀「じゅってん」或「じってん」。', relatedRules: ['点の讀法'] },
+        sourceItem: { value: 10, kanji: '十点', reading: 'じゅってん' }
+    },
+    {
+        id: 'num_basic_extra_111', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '子供は＿＿います。（五人）', stem_zh: '有五個孩子。',
+        options: [
+            { text: 'ごにん', isCorrect: true, reason: '正確！「五人」讀「ごにん」。' },
+            { text: 'いつにん', isCorrect: false, reason: '「人」用音讀。' },
+            { text: 'ごじん', isCorrect: false, reason: '是「にん」不是「じん」。' },
+            { text: 'いつたり', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五人」讀「ごにん」。', relatedRules: ['人數の讀法'] },
+        sourceItem: { value: 5, kanji: '五人', reading: 'ごにん' }
+    },
+    {
+        id: 'num_basic_extra_112', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
+        stem: '「六」在「六日」中讀作？', stem_zh: '「六」在「六日」中讀作？',
+        options: [
+            { text: 'むい', isCorrect: true, reason: '正確！「六日」讀「むいか」。' },
+            { text: 'ろく', isCorrect: false, reason: '陷阱！「六日」是特殊訓讀。' },
+            { text: 'む', isCorrect: false, reason: '需要「むい」。' },
+            { text: 'ろっ', isCorrect: false, reason: '不用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六日」讀「むいか」。', trapExplanation: '日期1-10日都有特殊讀法。', relatedRules: ['日期の特殊讀法'] },
+        sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
+    },
+    {
+        id: 'num_basic_extra_113', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '買水果', stem_zh: '買水果',
+        dialogue: { speakerA: 'バナナは何本いりますか？', speakerB: '＿＿本ください。（三）' },
+        options: [
+            { text: 'さん', isCorrect: false, reason: '「三本」讀「さんぼん」。' },
+            { text: 'さんぼん', isCorrect: true, reason: '正確！「三本」讀「さんぼん」。' },
+            { text: 'みほん', isCorrect: false, reason: '「本」用音讀。' },
+            { text: 'さんほん', isCorrect: false, reason: '「三」後「本」濁音化。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三本」讀「さんぼん」。', relatedRules: ['本の讀法'] },
+        sourceItem: { value: 3, kanji: '三本', reading: 'さんぼん' }
+    },
+    {
+        id: 'num_basic_extra_114', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '＿＿月に旅行します。（九）', stem_zh: '九月去旅行。',
+        options: [
+            { text: 'く', isCorrect: true, reason: '正確！「九月」讀「くがつ」。' },
+            { text: 'きゅう', isCorrect: false, reason: '「九月」讀「くがつ」，不是「きゅうがつ」。' },
+            { text: 'ここの', isCorrect: false, reason: '「月」用音讀。' },
+            { text: 'きゅ', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九月」讀「くがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 9, kanji: '九月', reading: 'くがつ' }
+    },
+    {
+        id: 'num_basic_extra_115', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「七」在「七日」中讀作？', stem_zh: '「七」在「七日」中讀作？',
+        options: [
+            { text: 'なの', isCorrect: true, reason: '正確！「七日」讀「なのか」。' },
+            { text: 'なな', isCorrect: false, reason: '「七日」讀「なのか」。' },
+            { text: 'しち', isCorrect: false, reason: '「七日」是特殊訓讀。' },
+            { text: 'なん', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七日」讀「なのか」。', relatedRules: ['日期の特殊讀法'] },
+        sourceItem: { value: 7, kanji: '七日', reading: 'なのか' }
+    },
+    {
+        id: 'num_basic_extra_116', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: true,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: 'テーブルは何台ありますか？', speakerB: '＿＿台あります。（一）' },
+        options: [
+            { text: 'いち', isCorrect: true, reason: '正確！「一台」讀「いちだい」。' },
+            { text: 'いっ', isCorrect: false, reason: '陷阱！「台」前不促音化。' },
+            { text: 'ひと', isCorrect: false, reason: '「台」用音讀。' },
+            { text: 'ひとつ', isCorrect: false, reason: '「台」不用「つ」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「一台」讀「いちだい」。', trapExplanation: '「一」在「台」前不促音化。', relatedRules: ['台の讀法'] },
+        sourceItem: { value: 1, kanji: '一台', reading: 'いちだい' }
+    },
+    {
+        id: 'num_basic_extra_117', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '＿＿日間休みます。（二）', stem_zh: '休息兩天。',
+        options: [
+            { text: 'ふつ', isCorrect: true, reason: '正確！「二日間」讀「ふつかかん」。' },
+            { text: 'に', isCorrect: false, reason: '「二日」讀「ふつか」。' },
+            { text: 'ふた', isCorrect: false, reason: '需要「ふつ」。' },
+            { text: 'にっ', isCorrect: false, reason: '不用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二日」讀「ふつか」。', relatedRules: ['日期の特殊讀法'] },
+        sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
+    },
+    {
+        id: 'num_basic_extra_118', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「四」在「四月」中讀作？', stem_zh: '「四」在「四月」中讀作？',
+        options: [
+            { text: 'し', isCorrect: true, reason: '正確！「四月」讀「しがつ」。' },
+            { text: 'よ', isCorrect: false, reason: '「四月」讀「しがつ」。' },
+            { text: 'よん', isCorrect: false, reason: '不是「よんがつ」。' },
+            { text: 'よっ', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四月」讀「しがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 4, kanji: '四月', reading: 'しがつ' }
+    },
+    {
+        id: 'num_basic_extra_119', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問歲數', stem_zh: '問歲數',
+        dialogue: { speakerA: '何歳ですか？', speakerB: '＿＿歳です。（七）' },
+        options: [
+            { text: 'なな', isCorrect: true, reason: '正確！「七歳」讀「ななさい」。' },
+            { text: 'しち', isCorrect: false, reason: '「七歳」讀「ななさい」。' },
+            { text: 'なの', isCorrect: false, reason: '「なの」用於日期。' },
+            { text: 'なん', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七歳」讀「ななさい」。', relatedRules: ['年齡の讀法'] },
+        sourceItem: { value: 7, kanji: '七歳', reading: 'ななさい' }
+    },
+    {
+        id: 'num_basic_extra_120', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: true,
+        stem: '映画は＿＿時間です。（二）', stem_zh: '電影兩小時。',
+        options: [
+            { text: 'に', isCorrect: true, reason: '正確！「二時間」讀「にじかん」。' },
+            { text: 'ふた', isCorrect: false, reason: '陷阱！「時間」用音讀。' },
+            { text: 'ふ', isCorrect: false, reason: '不用訓讀。' },
+            { text: 'にっ', isCorrect: false, reason: '「二時間」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二時間」讀「にじかん」。', trapExplanation: '「時間」用音讀，不用訓讀。', relatedRules: ['時間の讀法'] },
+        sourceItem: { value: 2, kanji: '二時間', reading: 'にじかん' }
+    },
+    {
+        id: 'num_basic_extra_121', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「八」在「八日」中讀作？', stem_zh: '「八」在「八日」中讀作？',
+        options: [
+            { text: 'よう', isCorrect: true, reason: '正確！「八日」讀「ようか」。' },
+            { text: 'はち', isCorrect: false, reason: '「八日」是特殊訓讀。' },
+            { text: 'や', isCorrect: false, reason: '需要「よう」。' },
+            { text: 'はっ', isCorrect: false, reason: '不用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八日」讀「ようか」。', relatedRules: ['日期の特殊讀法'] },
+        sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
+    },
+    {
+        id: 'num_basic_extra_122', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問頻率', stem_zh: '問頻率',
+        dialogue: { speakerA: '週に何回運動しますか？', speakerB: '＿＿回です。（四）' },
+        options: [
+            { text: 'よん', isCorrect: true, reason: '正確！「四回」讀「よんかい」。' },
+            { text: 'し', isCorrect: false, reason: '「四回」讀「よんかい」。' },
+            { text: 'よ', isCorrect: false, reason: '需要「よん」。' },
+            { text: 'よっ', isCorrect: false, reason: '「四回」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四回」讀「よんかい」。', relatedRules: ['回の讀法'] },
+        sourceItem: { value: 4, kanji: '四回', reading: 'よんかい' }
+    },
+    {
+        id: 'num_basic_extra_123', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '＿＿月に結婚しました。（六）', stem_zh: '六月結婚了。',
+        options: [
+            { text: 'ろく', isCorrect: true, reason: '正確！「六月」讀「ろくがつ」。' },
+            { text: 'む', isCorrect: false, reason: '「六月」用音讀。' },
+            { text: 'むい', isCorrect: false, reason: '「むい」用於日期。' },
+            { text: 'ろっ', isCorrect: false, reason: '「六月」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六月」讀「ろくがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 6, kanji: '六月', reading: 'ろくがつ' }
+    },
+    {
+        id: 'num_basic_extra_124', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
+        stem: '「三」在「三日」中讀作？', stem_zh: '「三」在「三日」中讀作？',
+        options: [
+            { text: 'みっ', isCorrect: true, reason: '正確！「三日」讀「みっか」。' },
+            { text: 'さん', isCorrect: false, reason: '陷阱！「三日」是特殊訓讀。' },
+            { text: 'み', isCorrect: false, reason: '需要「みっ」。' },
+            { text: 'さ', isCorrect: false, reason: '不用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「三日」讀「みっか」。', trapExplanation: '日期1-10日都有特殊讀法。', relatedRules: ['日期の特殊讀法'] },
+        sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
+    },
+    {
+        id: 'num_basic_extra_125', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問價錢', stem_zh: '問價錢',
+        dialogue: { speakerA: 'このパンはいくらですか？', speakerB: '＿＿十円です。（八）' },
+        options: [
+            { text: 'はち', isCorrect: true, reason: '正確！「八十」讀「はちじゅう」。' },
+            { text: 'や', isCorrect: false, reason: '「十」用音讀。' },
+            { text: 'やっ', isCorrect: false, reason: '不用訓讀。' },
+            { text: 'はっ', isCorrect: false, reason: '「八十」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八十」讀「はちじゅう」。', relatedRules: ['十位數の讀法'] },
+        sourceItem: { value: 8, kanji: '八十', reading: 'はちじゅう' }
+    },
+    {
+        id: 'num_basic_extra_126', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '鳥が＿＿飛んでいます。（十羽）', stem_zh: '有十隻鳥在飛。',
+        options: [
+            { text: 'じゅっ', isCorrect: true, reason: '正確！「十羽」讀「じゅっぱ」。' },
+            { text: 'じゅう', isCorrect: false, reason: '「羽」前「十」促音化。' },
+            { text: 'とお', isCorrect: false, reason: '「羽」用音讀。' },
+            { text: 'じっ', isCorrect: true, reason: '「じっぱ」也正確。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十羽」讀「じゅっぱ」或「じっぱ」。', relatedRules: ['羽の讀法'] },
+        sourceItem: { value: 10, kanji: '十羽', reading: 'じゅっぱ' }
+    },
+    {
+        id: 'num_basic_extra_127', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「九」在「九日」中讀作？', stem_zh: '「九」在「九日」中讀作？',
+        options: [
+            { text: 'ここの', isCorrect: true, reason: '正確！「九日」讀「ここのか」。' },
+            { text: 'きゅう', isCorrect: false, reason: '「九日」是特殊訓讀。' },
+            { text: 'く', isCorrect: false, reason: '需要「ここの」。' },
+            { text: 'きゅ', isCorrect: false, reason: '不用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九日」讀「ここのか」。', relatedRules: ['日期の特殊讀法'] },
+        sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
+    },
+    {
+        id: 'num_basic_extra_128', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: true,
+        stem: '問時長', stem_zh: '問時長',
+        dialogue: { speakerA: '映画は何分ですか？', speakerB: '＿＿十分です。（九）' },
+        options: [
+            { text: 'きゅう', isCorrect: true, reason: '正確！「九十」讀「きゅうじゅう」。' },
+            { text: 'く', isCorrect: false, reason: '陷阱！「九十」讀「きゅうじゅう」，不是「くじゅう」。' },
+            { text: 'ここの', isCorrect: false, reason: '「十」用音讀。' },
+            { text: 'きゅ', isCorrect: false, reason: '需要長音。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九十」讀「きゅうじゅう」。', trapExplanation: '「九」在十位數用「きゅう」。', relatedRules: ['十位數の讀法'] },
+        sourceItem: { value: 9, kanji: '九十', reading: 'きゅうじゅう' }
+    },
+    {
+        id: 'num_basic_extra_129', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '＿＿月に卒業します。（三）', stem_zh: '三月畢業。',
+        options: [
+            { text: 'さん', isCorrect: true, reason: '正確！「三月」讀「さんがつ」。' },
+            { text: 'み', isCorrect: false, reason: '「月」用音讀。' },
+            { text: 'みっ', isCorrect: false, reason: '「三月」不用訓讀。' },
+            { text: 'さ', isCorrect: false, reason: '需要「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「三月」讀「さんがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 3, kanji: '三月', reading: 'さんがつ' }
+    },
+    {
+        id: 'num_basic_extra_130', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「五」在「五日」中讀作？', stem_zh: '「五」在「五日」中讀作？',
+        options: [
+            { text: 'いつ', isCorrect: true, reason: '正確！「五日」讀「いつか」。' },
+            { text: 'ご', isCorrect: false, reason: '「五日」是特殊訓讀。' },
+            { text: 'いつつ', isCorrect: false, reason: '需要「いつ」。' },
+            { text: 'ごう', isCorrect: false, reason: '不用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五日」讀「いつか」。', relatedRules: ['日期の特殊讀法'] },
+        sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
+    },
+    {
+        id: 'num_basic_extra_131', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: 'りんごはいくつ買いましたか？', speakerB: '＿＿買いました。（十）' },
+        options: [
+            { text: 'とお', isCorrect: true, reason: '正確！「十」讀「とお」（訓讀）。' },
+            { text: 'じゅう', isCorrect: false, reason: '「いくつ」用訓讀回答。' },
+            { text: 'じゅっ', isCorrect: false, reason: '不用促音。' },
+            { text: 'と', isCorrect: false, reason: '需要「とお」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十」的訓讀是「とお」。', relatedRules: ['10の讀法'] },
+        sourceItem: { value: 10, kanji: '十', reading: 'とお' }
+    },
+    {
+        id: 'num_basic_extra_132', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: true,
+        stem: '鳥が＿＿飛んでいます。（六羽）', stem_zh: '有六隻鳥在飛。',
+        options: [
+            { text: 'ろっ', isCorrect: true, reason: '正確！「六羽」讀「ろっぱ」。' },
+            { text: 'ろく', isCorrect: false, reason: '陷阱！「羽」前「六」促音化。' },
+            { text: 'む', isCorrect: false, reason: '「羽」用音讀。' },
+            { text: 'むっ', isCorrect: false, reason: '不用訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六羽」讀「ろっぱ」。', trapExplanation: '「六」在「羽」前促音化，且「羽」變「ぱ」。', relatedRules: ['羽の讀法'] },
+        sourceItem: { value: 6, kanji: '六羽', reading: 'ろっぱ' }
+    },
+    {
+        id: 'num_basic_extra_133', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「四」在「四日」中讀作？', stem_zh: '「四」在「四日」中讀作？',
+        options: [
+            { text: 'よっ', isCorrect: true, reason: '正確！「四日」讀「よっか」。' },
+            { text: 'し', isCorrect: false, reason: '「四日」是特殊訓讀。' },
+            { text: 'よ', isCorrect: false, reason: '需要「よっ」。' },
+            { text: 'よん', isCorrect: false, reason: '不用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四日」讀「よっか」。', relatedRules: ['日期の特殊讀法'] },
+        sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
+    },
+    {
+        id: 'num_basic_extra_134', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問月份', stem_zh: '問月份',
+        dialogue: { speakerA: '今何月ですか？', speakerB: '＿＿月です。（十）' },
+        options: [
+            { text: 'じゅう', isCorrect: true, reason: '正確！「十月」讀「じゅうがつ」。' },
+            { text: 'とお', isCorrect: false, reason: '「月」用音讀。' },
+            { text: 'じゅっ', isCorrect: false, reason: '「十月」不促音化。' },
+            { text: 'じっ', isCorrect: false, reason: '「十月」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十月」讀「じゅうがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 10, kanji: '十月', reading: 'じゅうがつ' }
+    },
+    {
+        id: 'num_basic_extra_135', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '花を＿＿買いました。（七本）', stem_zh: '買了七枝花。',
+        options: [
+            { text: 'ななほん', isCorrect: true, reason: '正確！「七本」讀「ななほん」。' },
+            { text: 'しちほん', isCorrect: false, reason: '「七本」讀「ななほん」。' },
+            { text: 'ななぼん', isCorrect: false, reason: '「七」後「本」不濁音化。' },
+            { text: 'なのほん', isCorrect: false, reason: '不是「なの」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七本」讀「ななほん」。', relatedRules: ['本の讀法'] },
+        sourceItem: { value: 7, kanji: '七本', reading: 'ななほん' }
+    },
+    {
+        id: 'num_basic_extra_136', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
+        stem: '「一」在「一月」中讀作？', stem_zh: '「一」在「一月」中讀作？',
+        options: [
+            { text: 'いち', isCorrect: true, reason: '正確！「一月」讀「いちがつ」。' },
+            { text: 'ひと', isCorrect: false, reason: '陷阱！「月」用音讀。' },
+            { text: 'いっ', isCorrect: false, reason: '「一月」不促音化。' },
+            { text: 'ひ', isCorrect: false, reason: '不用訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「一月」讀「いちがつ」。', trapExplanation: '月份用音讀，不用訓讀。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 1, kanji: '一月', reading: 'いちがつ' }
+    },
+    {
+        id: 'num_basic_extra_137', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'これはいくらですか？', speakerB: '＿＿百円です。（五）' },
+        options: [
+            { text: 'ご', isCorrect: true, reason: '正確！「五百」讀「ごひゃく」。' },
+            { text: 'いつ', isCorrect: false, reason: '「百」用音讀。' },
+            { text: 'いつつ', isCorrect: false, reason: '不用訓讀。' },
+            { text: 'ごう', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五百」讀「ごひゃく」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 5, kanji: '五百', reading: 'ごひゃく' }
+    },
+    {
+        id: 'num_basic_extra_138', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: true,
+        stem: '鳥が＿＿飛んでいます。（一羽）', stem_zh: '有一隻鳥在飛。',
+        options: [
+            { text: 'いち', isCorrect: true, reason: '正確！「一羽」讀「いちわ」。' },
+            { text: 'いっ', isCorrect: false, reason: '陷阱！「羽」前「一」不促音化（讀いちわ）。' },
+            { text: 'ひと', isCorrect: false, reason: '「羽」用音讀。' },
+            { text: 'ひとつ', isCorrect: false, reason: '「羽」不用「つ」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「一羽」讀「いちわ」。', trapExplanation: '「一」在「羽」前不促音化。', relatedRules: ['羽の讀法'] },
+        sourceItem: { value: 1, kanji: '一羽', reading: 'いちわ' }
+    },
+    {
+        id: 'num_basic_extra_139', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「七」在「七月」中讀作？', stem_zh: '「七」在「七月」中讀作？',
+        options: [
+            { text: 'しち', isCorrect: true, reason: '正確！「七月」讀「しちがつ」。' },
+            { text: 'なな', isCorrect: false, reason: '「七月」讀「しちがつ」。' },
+            { text: 'なの', isCorrect: false, reason: '「なの」用於日期。' },
+            { text: 'なん', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七月」讀「しちがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 7, kanji: '七月', reading: 'しちがつ' }
+    },
+    {
+        id: 'num_basic_extra_140', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '犬は何匹いますか？', speakerB: '＿＿匹います。（二）' },
+        options: [
+            { text: 'に', isCorrect: true, reason: '正確！「二匹」讀「にひき」。' },
+            { text: 'ふた', isCorrect: false, reason: '「匹」用音讀。' },
+            { text: 'にっ', isCorrect: false, reason: '「二匹」不促音化。' },
+            { text: 'ふ', isCorrect: false, reason: '不用訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二匹」讀「にひき」。', relatedRules: ['匹の讀法'] },
+        sourceItem: { value: 2, kanji: '二匹', reading: 'にひき' }
+    },
+    {
+        id: 'num_basic_extra_141', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '＿＿月に帰国します。（八）', stem_zh: '八月回國。',
+        options: [
+            { text: 'はち', isCorrect: true, reason: '正確！「八月」讀「はちがつ」。' },
+            { text: 'や', isCorrect: false, reason: '「八月」用音讀。' },
+            { text: 'よう', isCorrect: false, reason: '「よう」用於日期。' },
+            { text: 'はっ', isCorrect: false, reason: '「八月」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八月」讀「はちがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 8, kanji: '八月', reading: 'はちがつ' }
+    },
+    {
+        id: 'num_basic_extra_142', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: true,
+        stem: '「六」在「六月」中讀作？', stem_zh: '「六」在「六月」中讀作？',
+        options: [
+            { text: 'ろく', isCorrect: true, reason: '正確！「六月」讀「ろくがつ」。' },
+            { text: 'む', isCorrect: false, reason: '陷阱！「六月」用音讀，不用訓讀。' },
+            { text: 'むい', isCorrect: false, reason: '「むい」用於日期。' },
+            { text: 'ろっ', isCorrect: false, reason: '「六月」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六月」讀「ろくがつ」。', trapExplanation: '月份用音讀，不用訓讀。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 6, kanji: '六月', reading: 'ろくがつ' }
+    },
+    {
+        id: 'num_basic_extra_143', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問距離', stem_zh: '問距離',
+        dialogue: { speakerA: '駅まで何分ですか？', speakerB: '＿＿分です。（五）' },
+        options: [
+            { text: 'ご', isCorrect: true, reason: '正確！「五分」讀「ごふん」。' },
+            { text: 'いつ', isCorrect: false, reason: '「分」用音讀。' },
+            { text: 'ごっ', isCorrect: false, reason: '「五分」不促音化。' },
+            { text: 'いつつ', isCorrect: false, reason: '不用訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五分」讀「ごふん」。', relatedRules: ['分の讀法'] },
+        sourceItem: { value: 5, kanji: '五分', reading: 'ごふん' }
+    },
+    {
+        id: 'num_basic_extra_144', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '猫が＿＿います。（四匹）', stem_zh: '有四隻貓。',
+        options: [
+            { text: 'よん', isCorrect: true, reason: '正確！「四匹」讀「よんひき」。' },
+            { text: 'し', isCorrect: false, reason: '「四匹」讀「よんひき」。' },
+            { text: 'よ', isCorrect: false, reason: '需要「よん」。' },
+            { text: 'よっ', isCorrect: false, reason: '「四匹」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四匹」讀「よんひき」。', relatedRules: ['匹の讀法'] },
+        sourceItem: { value: 4, kanji: '四匹', reading: 'よんひき' }
+    },
+    {
+        id: 'num_basic_extra_145', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「二」在「二月」中讀作？', stem_zh: '「二」在「二月」中讀作？',
+        options: [
+            { text: 'に', isCorrect: true, reason: '正確！「二月」讀「にがつ」。' },
+            { text: 'ふた', isCorrect: false, reason: '「二月」用音讀。' },
+            { text: 'ふつ', isCorrect: false, reason: '「ふつ」用於日期。' },
+            { text: 'にっ', isCorrect: false, reason: '「二月」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二月」讀「にがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 2, kanji: '二月', reading: 'にがつ' }
+    },
+    {
+        id: 'num_basic_extra_146', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: true,
+        stem: '問時間', stem_zh: '問時間',
+        dialogue: { speakerA: '電車は何分かかりますか？', speakerB: '＿＿分です。（八）' },
+        options: [
+            { text: 'はっぷん', isCorrect: true, reason: '正確！「八分」讀「はっぷん」。' },
+            { text: 'はちふん', isCorrect: false, reason: '陷阱！「分」前「八」促音化。' },
+            { text: 'やふん', isCorrect: false, reason: '「分」用音讀。' },
+            { text: 'はちぷん', isCorrect: false, reason: '需要促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八分」讀「はっぷん」。', trapExplanation: '「八」在「分」前促音化，且「分」變「ぷん」。', relatedRules: ['分の讀法'] },
+        sourceItem: { value: 8, kanji: '八分', reading: 'はっぷん' }
+    },
+    {
+        id: 'num_basic_extra_147', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '＿＿月に入学しました。（四）', stem_zh: '四月入學。',
+        options: [
+            { text: 'し', isCorrect: true, reason: '正確！「四月」讀「しがつ」。' },
+            { text: 'よ', isCorrect: false, reason: '「四月」讀「しがつ」。' },
+            { text: 'よん', isCorrect: false, reason: '不是「よんがつ」。' },
+            { text: 'よっ', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四月」讀「しがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 4, kanji: '四月', reading: 'しがつ' }
+    },
+    {
+        id: 'num_basic_extra_148', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「五」在「五月」中讀作？', stem_zh: '「五」在「五月」中讀作？',
+        options: [
+            { text: 'ご', isCorrect: true, reason: '正確！「五月」讀「ごがつ」。' },
+            { text: 'いつ', isCorrect: false, reason: '「五月」用音讀。' },
+            { text: 'いつつ', isCorrect: false, reason: '不用訓讀。' },
+            { text: 'ごう', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五月」讀「ごがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 5, kanji: '五月', reading: 'ごがつ' }
+    },
+    {
+        id: 'num_basic_extra_149', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '鉛筆は何本ありますか？', speakerB: '＿＿本あります。（九）' },
+        options: [
+            { text: 'きゅう', isCorrect: true, reason: '正確！「九本」讀「きゅうほん」。' },
+            { text: 'く', isCorrect: false, reason: '「九本」讀「きゅうほん」。' },
+            { text: 'ここの', isCorrect: false, reason: '「本」用音讀。' },
+            { text: 'きゅっ', isCorrect: false, reason: '「九本」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九本」讀「きゅうほん」。', relatedRules: ['本の讀法'] },
+        sourceItem: { value: 9, kanji: '九本', reading: 'きゅうほん' }
+    },
+    {
+        id: 'num_basic_extra_150', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: true,
+        stem: '鳥が＿＿飛んでいます。（三羽）', stem_zh: '有三隻鳥在飛。',
+        options: [
+            { text: 'さん', isCorrect: true, reason: '正確！「三羽」讀「さんわ」或「さんば」。' },
+            { text: 'み', isCorrect: false, reason: '陷阱！「羽」用音讀。' },
+            { text: 'みっ', isCorrect: false, reason: '不用訓讀。' },
+            { text: 'さ', isCorrect: false, reason: '需要「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「三羽」讀「さんわ」或「さんば」。', trapExplanation: '「羽」用音讀，不用訓讀。', relatedRules: ['羽の讀法'] },
+        sourceItem: { value: 3, kanji: '三羽', reading: 'さんわ' }
+    },
+    {
+        id: 'num_basic_extra_151', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「八」在「八月」中讀作？', stem_zh: '「八」在「八月」中讀作？',
+        options: [
+            { text: 'はち', isCorrect: true, reason: '正確！「八月」讀「はちがつ」。' },
+            { text: 'や', isCorrect: false, reason: '「八月」用音讀。' },
+            { text: 'よう', isCorrect: false, reason: '「よう」用於日期。' },
+            { text: 'はっ', isCorrect: false, reason: '「八月」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八月」讀「はちがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 8, kanji: '八月', reading: 'はちがつ' }
+    },
+    {
+        id: 'num_basic_extra_152', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問冊數', stem_zh: '問冊數',
+        dialogue: { speakerA: '本は何冊読みましたか？', speakerB: '＿＿冊読みました。（七）' },
+        options: [
+            { text: 'なな', isCorrect: true, reason: '正確！「七冊」讀「ななさつ」。' },
+            { text: 'しち', isCorrect: false, reason: '「七冊」讀「ななさつ」。' },
+            { text: 'なの', isCorrect: false, reason: '「なの」用於日期。' },
+            { text: 'なん', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七冊」讀「ななさつ」。', relatedRules: ['冊の讀法'] },
+        sourceItem: { value: 7, kanji: '七冊', reading: 'ななさつ' }
+    },
+    {
+        id: 'num_basic_extra_153', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '電話は＿＿回鳴りました。（六）', stem_zh: '電話響了六次。',
+        options: [
+            { text: 'ろっ', isCorrect: true, reason: '正確！「六回」讀「ろっかい」。' },
+            { text: 'ろく', isCorrect: false, reason: '「回」前「六」促音化。' },
+            { text: 'む', isCorrect: false, reason: '「回」用音讀。' },
+            { text: 'むっ', isCorrect: false, reason: '不用訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六回」讀「ろっかい」。', relatedRules: ['回の讀法'] },
+        sourceItem: { value: 6, kanji: '六回', reading: 'ろっかい' }
+    },
+    {
+        id: 'num_basic_extra_154', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「九」在「九月」中讀作？', stem_zh: '「九」在「九月」中讀作？',
+        options: [
+            { text: 'く', isCorrect: true, reason: '正確！「九月」讀「くがつ」。' },
+            { text: 'きゅう', isCorrect: false, reason: '「九月」讀「くがつ」。' },
+            { text: 'ここの', isCorrect: false, reason: '「ここの」用於日期。' },
+            { text: 'きゅ', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九月」讀「くがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 9, kanji: '九月', reading: 'くがつ' }
+    },
+    {
+        id: 'num_basic_extra_155', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: true,
+        stem: '問時間', stem_zh: '問時間',
+        dialogue: { speakerA: '映画は何分ですか？', speakerB: '＿＿分です。（十）' },
+        options: [
+            { text: 'じゅっぷん', isCorrect: true, reason: '正確！「十分」讀「じゅっぷん」。' },
+            { text: 'じゅうふん', isCorrect: false, reason: '陷阱！「分」前「十」促音化。' },
+            { text: 'とおふん', isCorrect: false, reason: '「分」用音讀。' },
+            { text: 'じっぷん', isCorrect: true, reason: '「じっぷん」也正確。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十分」讀「じゅっぷん」或「じっぷん」。', trapExplanation: '「十」在「分」前促音化，且「分」變「ぷん」。', relatedRules: ['分の讀法'] },
+        sourceItem: { value: 10, kanji: '十分', reading: 'じゅっぷん' }
+    },
+    {
+        id: 'num_basic_extra_156', category: 'numbers', subcategory: 'basic', type: 'sentence', isTrap: false,
+        stem: '＿＿月に留学します。（十一）', stem_zh: '十一月去留學。',
+        options: [
+            { text: 'じゅういち', isCorrect: true, reason: '正確！「十一月」讀「じゅういちがつ」。' },
+            { text: 'じゅいち', isCorrect: false, reason: '需要「じゅう」。' },
+            { text: 'といち', isCorrect: false, reason: '「月」用音讀。' },
+            { text: 'じゅっいち', isCorrect: false, reason: '「十一月」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十一月」讀「じゅういちがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 11, kanji: '十一月', reading: 'じゅういちがつ' }
+    },
+    {
+        id: 'num_basic_extra_157', category: 'numbers', subcategory: 'basic', type: 'pronunciation', isTrap: false,
+        stem: '「十二」的讀法是？', stem_zh: '「十二」的讀法是？',
+        options: [
+            { text: 'じゅうに', isCorrect: true, reason: '正確！「十二」讀「じゅうに」。' },
+            { text: 'とおに', isCorrect: false, reason: '用音讀。' },
+            { text: 'じゅに', isCorrect: false, reason: '需要長音。' },
+            { text: 'じっに', isCorrect: false, reason: '「十二」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十二」讀「じゅうに」。', relatedRules: ['十位數の讀法'] },
+        sourceItem: { value: 12, kanji: '十二', reading: 'じゅうに' }
+    },
+    {
+        id: 'num_basic_extra_158', category: 'numbers', subcategory: 'basic', type: 'dialogue', isTrap: false,
+        stem: '問月份', stem_zh: '問月份',
+        dialogue: { speakerA: '誕生日は何月ですか？', speakerB: '＿＿月です。（十二）' },
+        options: [
+            { text: 'じゅうに', isCorrect: true, reason: '正確！「十二月」讀「じゅうにがつ」。' },
+            { text: 'とおに', isCorrect: false, reason: '「月」用音讀。' },
+            { text: 'じゅに', isCorrect: false, reason: '需要長音。' },
+            { text: 'じゅっに', isCorrect: false, reason: '「十二月」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十二月」讀「じゅうにがつ」。', relatedRules: ['月份の讀法'] },
+        sourceItem: { value: 12, kanji: '十二月', reading: 'じゅうにがつ' }
     }
 ];

@@ -2325,5 +2325,2270 @@ export const hourQuestions: DatesPracticeQuestion[] = [
             relatedRules: ['時間の讀法', '期間表達']
         },
         sourceItem: { value: 'duration', kanji: '〜時間', reading: '〜じかん' }
+    },
+    // ===== 追加題目 22-71 =====
+    {
+        id: 'hour_extra_22',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「午前」的讀法是？',
+        stem_zh: '「午前」的讀法是？',
+        options: [
+            { text: 'ごぜん', isCorrect: true, reason: '正確！午前讀「ごぜん」。' },
+            { text: 'うまえ', isCorrect: false, reason: '「午」讀「ご」不是「うま」。' },
+            { text: 'ひるまえ', isCorrect: false, reason: '這是「昼前」的意思。' },
+            { text: 'ごまえ', isCorrect: false, reason: '「前」讀「ぜん」不是「まえ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「午前」讀「ごぜん」，意思是上午（AM）。',
+            relatedRules: ['時間表達', '午前vs午後']
+        },
+        sourceItem: { value: 'AM', kanji: '午前', reading: 'ごぜん' }
+    },
+    {
+        id: 'hour_extra_23',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '電車は午前＿＿に出発します。',
+        stem_zh: '電車在上午十點出發。',
+        options: [
+            { text: 'じゅうじ', isCorrect: true, reason: '正確！十時讀「じゅうじ」。' },
+            { text: 'とおじ', isCorrect: false, reason: '時間使用音讀「じゅう」。' },
+            { text: 'じゅっじ', isCorrect: false, reason: '不是促音化。' },
+            { text: 'とおか', isCorrect: false, reason: '「とおか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十時」讀「じゅうじ」。',
+            relatedRules: ['小時の讀法', '電車時刻']
+        },
+        sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
+    },
+    {
+        id: 'hour_extra_24',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '銀行幾點開門？',
+        stem_zh: '銀行幾點開門？',
+        dialogue: {
+            speakerA: '銀行は何時に開きますか？',
+            speakerB: '＿＿に開きます。（九點）'
+        },
+        options: [
+            { text: 'くじ', isCorrect: true, reason: '正確！九時讀「くじ」。' },
+            { text: 'きゅうじ', isCorrect: false, reason: '九時固定讀「くじ」。' },
+            { text: 'ここのじ', isCorrect: false, reason: '時間用音讀。' },
+            { text: 'ここのか', isCorrect: false, reason: '「ここのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九時」固定讀「くじ」。',
+            relatedRules: ['九時の讀法', '銀行營業時間']
+        },
+        sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
+    },
+    {
+        id: 'hour_extra_25',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「午後」的讀法是？',
+        stem_zh: '「午後」的讀法是？',
+        options: [
+            { text: 'ごご', isCorrect: true, reason: '正確！午後讀「ごご」。' },
+            { text: 'うまあと', isCorrect: false, reason: '「午」讀「ご」不是「うま」。' },
+            { text: 'ひるあと', isCorrect: false, reason: '這是「昼後」的意思。' },
+            { text: 'ごあと', isCorrect: false, reason: '「後」讀「ご」不是「あと」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「午後」讀「ごご」，意思是下午（PM）。',
+            relatedRules: ['時間表達', '午前vs午後']
+        },
+        sourceItem: { value: 'PM', kanji: '午後', reading: 'ごご' }
+    },
+    {
+        id: 'hour_extra_26',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: true,
+        stem: '飛行機は午後＿＿に出発します。',
+        stem_zh: '飛機在下午四點出發。',
+        options: [
+            { text: 'よじ', isCorrect: true, reason: '正確！四時讀「よじ」。' },
+            { text: 'よんじ', isCorrect: false, reason: '陷阱！四時固定讀「よじ」。' },
+            { text: 'しじ', isCorrect: false, reason: '四時讀「よじ」。' },
+            { text: 'よっか', isCorrect: false, reason: '「よっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四時」固定讀「よじ」。',
+            trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
+            relatedRules: ['四時の讀法', '航班時刻']
+        },
+        sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
+    },
+    {
+        id: 'hour_extra_27',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '電影幾點開始？',
+        stem_zh: '電影幾點開始？',
+        dialogue: {
+            speakerA: '映画は何時からですか？',
+            speakerB: '＿＿からです。（二點）'
+        },
+        options: [
+            { text: 'にじ', isCorrect: true, reason: '正確！二時讀「にじ」。' },
+            { text: 'ふたじ', isCorrect: false, reason: '時間使用音讀「に」。' },
+            { text: 'ふつじ', isCorrect: false, reason: '不存在這個讀法。' },
+            { text: 'ふつか', isCorrect: false, reason: '「ふつか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二時」讀「にじ」。',
+            relatedRules: ['小時の讀法', '映画の時間']
+        },
+        sourceItem: { value: 2, kanji: '二時', reading: 'にじ' }
+    },
+    {
+        id: 'hour_extra_28',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「正午」的讀法是？',
+        stem_zh: '「正午」的讀法是？',
+        options: [
+            { text: 'しょうご', isCorrect: true, reason: '正確！正午讀「しょうご」。' },
+            { text: 'せいご', isCorrect: false, reason: '「正」讀「しょう」不是「せい」。' },
+            { text: 'まひる', isCorrect: false, reason: '「まひる」是「真昼」的讀法。' },
+            { text: 'しょううま', isCorrect: false, reason: '「午」讀「ご」不是「うま」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「正午」讀「しょうご」，意思是中午12點。',
+            relatedRules: ['時間表達', '正午=12時']
+        },
+        sourceItem: { value: 12, kanji: '正午', reading: 'しょうご' }
+    },
+    {
+        id: 'hour_extra_29',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: 'ランチタイムは＿＿からです。',
+        stem_zh: '午餐時間從十二點開始。',
+        options: [
+            { text: 'じゅうにじ', isCorrect: true, reason: '正確！十二時讀「じゅうにじ」。' },
+            { text: 'じゅうふたじ', isCorrect: false, reason: '時間使用音讀「に」。' },
+            { text: 'とおにじ', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうににち', isCorrect: false, reason: '「にち」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十二時」讀「じゅうにじ」。',
+            relatedRules: ['小時の讀法', 'ランチタイム']
+        },
+        sourceItem: { value: 12, kanji: '十二時', reading: 'じゅうにじ' }
+    },
+    {
+        id: 'hour_extra_30',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '晚餐幾點吃？',
+        stem_zh: '晚餐幾點吃？',
+        dialogue: {
+            speakerA: '夕食は何時に食べますか？',
+            speakerB: '＿＿に食べます。（七點）'
+        },
+        options: [
+            { text: 'しちじ', isCorrect: true, reason: '正確！七時讀「しちじ」。' },
+            { text: 'ななじ', isCorrect: false, reason: '陷阱！七時固定讀「しちじ」。' },
+            { text: 'なのか', isCorrect: false, reason: '「なのか」是日期。' },
+            { text: 'ななとき', isCorrect: false, reason: '小時讀「じ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七時」固定讀「しちじ」。',
+            trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
+            relatedRules: ['七時の讀法', '夕食時間']
+        },
+        sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
+    },
+    {
+        id: 'hour_extra_31',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「何時」的讀法是？',
+        stem_zh: '「何時」的讀法是？',
+        options: [
+            { text: 'なんじ', isCorrect: true, reason: '正確！何時讀「なんじ」。' },
+            { text: 'なにじ', isCorrect: false, reason: '「何」在此讀「なん」。' },
+            { text: 'いつ', isCorrect: false, reason: '「いつ」是「什麼時候」的意思。' },
+            { text: 'かじ', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「何時」讀「なんじ」，用來詢問時間。',
+            relatedRules: ['疑問詞の讀法', '何時=なんじ']
+        },
+        sourceItem: { value: 'what time', kanji: '何時', reading: 'なんじ' }
+    },
+    {
+        id: 'hour_extra_32',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '朝ごはんは＿＿に食べます。',
+        stem_zh: '早餐在八點吃。',
+        options: [
+            { text: 'はちじ', isCorrect: true, reason: '正確！八時讀「はちじ」。' },
+            { text: 'やじ', isCorrect: false, reason: '時間使用音讀「はち」。' },
+            { text: 'はっじ', isCorrect: false, reason: '八時不促音化。' },
+            { text: 'ようか', isCorrect: false, reason: '「ようか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「八時」讀「はちじ」。',
+            relatedRules: ['小時の讀法', '朝食時間']
+        },
+        sourceItem: { value: 8, kanji: '八時', reading: 'はちじ' }
+    },
+    {
+        id: 'hour_extra_33',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '圖書館幾點關門？',
+        stem_zh: '圖書館幾點關門？',
+        dialogue: {
+            speakerA: '図書館は何時に閉まりますか？',
+            speakerB: '＿＿に閉まります。（五點）'
+        },
+        options: [
+            { text: 'ごじ', isCorrect: true, reason: '正確！五時讀「ごじ」。' },
+            { text: 'いつじ', isCorrect: false, reason: '時間使用音讀「ご」。' },
+            { text: 'いつか', isCorrect: false, reason: '「いつか」是日期。' },
+            { text: 'ごとき', isCorrect: false, reason: '小時讀「じ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五時」讀「ごじ」。',
+            relatedRules: ['小時の讀法', '図書館の閉館時間']
+        },
+        sourceItem: { value: 5, kanji: '五時', reading: 'ごじ' }
+    },
+    {
+        id: 'hour_extra_34',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「深夜」的讀法是？',
+        stem_zh: '「深夜」的讀法是？',
+        options: [
+            { text: 'しんや', isCorrect: true, reason: '正確！深夜讀「しんや」。' },
+            { text: 'ふかよる', isCorrect: false, reason: '「深」讀「しん」，「夜」讀「や」。' },
+            { text: 'しんよる', isCorrect: false, reason: '「夜」讀「や」不是「よる」。' },
+            { text: 'ふかや', isCorrect: false, reason: '「深」讀「しん」不是「ふか」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「深夜」讀「しんや」，意思是深夜。',
+            relatedRules: ['時間表達', '深夜時段']
+        },
+        sourceItem: { value: 'late night', kanji: '深夜', reading: 'しんや' }
+    },
+    {
+        id: 'hour_extra_35',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '会社は＿＿に終わります。',
+        stem_zh: '公司在六點結束。',
+        options: [
+            { text: 'ろくじ', isCorrect: true, reason: '正確！六時讀「ろくじ」。' },
+            { text: 'むじ', isCorrect: false, reason: '時間使用音讀「ろく」。' },
+            { text: 'ろっじ', isCorrect: false, reason: '六時不促音化。' },
+            { text: 'むいか', isCorrect: false, reason: '「むいか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六時」讀「ろくじ」。',
+            relatedRules: ['小時の讀法', '退勤時間']
+        },
+        sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
+    },
+    {
+        id: 'hour_extra_36',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '鬧鐘設幾點？',
+        stem_zh: '鬧鐘設幾點？',
+        dialogue: {
+            speakerA: '目覚ましは何時にセットしますか？',
+            speakerB: '＿＿にセットします。（六點半）'
+        },
+        options: [
+            { text: 'ろくじはん', isCorrect: true, reason: '正確！六時半讀「ろくじはん」。' },
+            { text: 'むじはん', isCorrect: false, reason: '時間使用音讀「ろく」。' },
+            { text: 'ろくじなかば', isCorrect: false, reason: '「半」讀「はん」。' },
+            { text: 'むいかはん', isCorrect: false, reason: '「むいか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六時半」讀「ろくじはん」。',
+            relatedRules: ['時間表達', '目覚まし設定']
+        },
+        sourceItem: { value: '6:30', kanji: '六時半', reading: 'ろくじはん' }
+    },
+    {
+        id: 'hour_extra_37',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「早朝」的讀法是？',
+        stem_zh: '「早朝」的讀法是？',
+        options: [
+            { text: 'そうちょう', isCorrect: true, reason: '正確！早朝讀「そうちょう」。' },
+            { text: 'はやあさ', isCorrect: false, reason: '「早」讀「そう」，「朝」讀「ちょう」。' },
+            { text: 'さっちょう', isCorrect: false, reason: '「早」讀「そう」不是「さっ」。' },
+            { text: 'はやちょう', isCorrect: false, reason: '「早」讀「そう」不是「はや」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「早朝」讀「そうちょう」，意思是清晨。',
+            relatedRules: ['時間表達', '早朝時段']
+        },
+        sourceItem: { value: 'early morning', kanji: '早朝', reading: 'そうちょう' }
+    },
+    {
+        id: 'hour_extra_38',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: true,
+        stem: '電話は＿＿にかけてください。',
+        stem_zh: '請在九點打電話。',
+        options: [
+            { text: 'くじ', isCorrect: true, reason: '正確！九時讀「くじ」。' },
+            { text: 'きゅうじ', isCorrect: false, reason: '陷阱！九時固定讀「くじ」。' },
+            { text: 'ここのじ', isCorrect: false, reason: '時間用音讀。' },
+            { text: 'ここのか', isCorrect: false, reason: '「ここのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九時」固定讀「くじ」。',
+            trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
+            relatedRules: ['九時の讀法', '電話の時間']
+        },
+        sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
+    },
+    {
+        id: 'hour_extra_39',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '午睡時間是幾點？',
+        stem_zh: '午睡時間是幾點？',
+        dialogue: {
+            speakerA: 'お昼寝は何時からですか？',
+            speakerB: '＿＿からです。（一點）'
+        },
+        options: [
+            { text: 'いちじ', isCorrect: true, reason: '正確！一時讀「いちじ」。' },
+            { text: 'ひとじ', isCorrect: false, reason: '時間使用音讀「いち」。' },
+            { text: 'いっじ', isCorrect: false, reason: '不是促音化。' },
+            { text: 'ついたち', isCorrect: false, reason: '「ついたち」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「一時」讀「いちじ」。',
+            relatedRules: ['小時の讀法', 'お昼寝時間']
+        },
+        sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
+    },
+    {
+        id: 'hour_extra_40',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「夕方」的讀法是？',
+        stem_zh: '「夕方」的讀法是？',
+        options: [
+            { text: 'ゆうがた', isCorrect: true, reason: '正確！夕方讀「ゆうがた」。' },
+            { text: 'せきほう', isCorrect: false, reason: '「夕方」讀「ゆうがた」。' },
+            { text: 'ゆうほう', isCorrect: false, reason: '「方」讀「がた」不是「ほう」。' },
+            { text: 'ゆうかた', isCorrect: false, reason: '「方」讀「がた」有濁音。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「夕方」讀「ゆうがた」，意思是傍晚。',
+            relatedRules: ['時間表達', '夕方時段']
+        },
+        sourceItem: { value: 'evening', kanji: '夕方', reading: 'ゆうがた' }
+    },
+    {
+        id: 'hour_extra_41',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: 'テレビのニュースは＿＿からです。',
+        stem_zh: '電視新聞從十一點開始。',
+        options: [
+            { text: 'じゅういちじ', isCorrect: true, reason: '正確！十一時讀「じゅういちじ」。' },
+            { text: 'とおいちじ', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうひとじ', isCorrect: false, reason: '時間使用音讀「いち」。' },
+            { text: 'じゅういちにち', isCorrect: false, reason: '「にち」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十一時」讀「じゅういちじ」。',
+            relatedRules: ['小時の讀法', 'ニュースの時間']
+        },
+        sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
+    },
+    {
+        id: 'hour_extra_42',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '健身房幾點開？',
+        stem_zh: '健身房幾點開？',
+        dialogue: {
+            speakerA: 'ジムは何時に開きますか？',
+            speakerB: '＿＿に開きます。（七點）'
+        },
+        options: [
+            { text: 'しちじ', isCorrect: true, reason: '正確！七時讀「しちじ」。' },
+            { text: 'ななじ', isCorrect: false, reason: '陷阱！七時固定讀「しちじ」。' },
+            { text: 'なのか', isCorrect: false, reason: '「なのか」是日期。' },
+            { text: 'しちとき', isCorrect: false, reason: '小時讀「じ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七時」固定讀「しちじ」。',
+            trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
+            relatedRules: ['七時の讀法', 'ジムの営業時間']
+        },
+        sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
+    },
+    {
+        id: 'hour_extra_43',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「昼休み」的讀法是？',
+        stem_zh: '「昼休み」的讀法是？',
+        options: [
+            { text: 'ひるやすみ', isCorrect: true, reason: '正確！昼休み讀「ひるやすみ」。' },
+            { text: 'ちゅうきゅう', isCorrect: false, reason: '「昼休み」讀「ひるやすみ」。' },
+            { text: 'ひるきゅうみ', isCorrect: false, reason: '「休み」讀「やすみ」。' },
+            { text: 'ちゅうやすみ', isCorrect: false, reason: '「昼」讀「ひる」不是「ちゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「昼休み」讀「ひるやすみ」，意思是午休。',
+            relatedRules: ['時間表達', '昼休み']
+        },
+        sourceItem: { value: 'lunch break', kanji: '昼休み', reading: 'ひるやすみ' }
+    },
+    {
+        id: 'hour_extra_44',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: 'おやつは＿＿に食べます。',
+        stem_zh: '點心在三點吃。',
+        options: [
+            { text: 'さんじ', isCorrect: true, reason: '正確！三時讀「さんじ」。' },
+            { text: 'みじ', isCorrect: false, reason: '時間使用音讀「さん」。' },
+            { text: 'さんとき', isCorrect: false, reason: '小時讀「じ」。' },
+            { text: 'みっか', isCorrect: false, reason: '「みっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三時」讀「さんじ」。日本傳統點心時間是下午三點。',
+            relatedRules: ['小時の讀法', 'おやつの時間']
+        },
+        sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
+    },
+    {
+        id: 'hour_extra_45',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '最後一班電車是幾點？',
+        stem_zh: '最後一班電車是幾點？',
+        dialogue: {
+            speakerA: '終電は何時ですか？',
+            speakerB: '＿＿です。（零點）'
+        },
+        options: [
+            { text: 'れいじ', isCorrect: true, reason: '正確！零時讀「れいじ」。' },
+            { text: 'ぜろじ', isCorrect: false, reason: '「零」讀「れい」不是「ゼロ」。' },
+            { text: 'まるじ', isCorrect: false, reason: '「零」讀「れい」不是「まる」。' },
+            { text: 'なしじ', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「零時」讀「れいじ」，意思是午夜12點/0點。',
+            trapExplanation: '日語正式用「零時」而非「ゼロ時」。',
+            relatedRules: ['零時の讀法', '終電時間']
+        },
+        sourceItem: { value: 0, kanji: '零時', reading: 'れいじ' }
+    },
+    {
+        id: 'hour_extra_46',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「朝」的讀法是？',
+        stem_zh: '「朝」的讀法是？',
+        options: [
+            { text: 'あさ', isCorrect: true, reason: '正確！朝讀「あさ」。' },
+            { text: 'ちょう', isCorrect: false, reason: '「ちょう」是音讀，單獨用訓讀「あさ」。' },
+            { text: 'あした', isCorrect: false, reason: '「あした」是「明日」。' },
+            { text: 'あさひ', isCorrect: false, reason: '「あさひ」是「朝日」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「朝」讀「あさ」，意思是早上。',
+            relatedRules: ['時間表達', '朝の讀法']
+        },
+        sourceItem: { value: 'morning', kanji: '朝', reading: 'あさ' }
+    },
+    {
+        id: 'hour_extra_47',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: true,
+        stem: '授業は午後＿＿に始まります。',
+        stem_zh: '課程在下午四點開始。',
+        options: [
+            { text: 'よじ', isCorrect: true, reason: '正確！四時讀「よじ」。' },
+            { text: 'よんじ', isCorrect: false, reason: '陷阱！四時固定讀「よじ」。' },
+            { text: 'しじ', isCorrect: false, reason: '四時讀「よじ」。' },
+            { text: 'よっじ', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四時」固定讀「よじ」。',
+            trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
+            relatedRules: ['四時の讀法', '授業時間']
+        },
+        sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
+    },
+    {
+        id: 'hour_extra_48',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '飯店入住時間是幾點？',
+        stem_zh: '飯店入住時間是幾點？',
+        dialogue: {
+            speakerA: 'チェックインは何時からですか？',
+            speakerB: '＿＿からです。（三點）'
+        },
+        options: [
+            { text: 'さんじ', isCorrect: true, reason: '正確！三時讀「さんじ」。' },
+            { text: 'みじ', isCorrect: false, reason: '時間使用音讀「さん」。' },
+            { text: 'さんとき', isCorrect: false, reason: '小時讀「じ」。' },
+            { text: 'みっか', isCorrect: false, reason: '「みっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三時」讀「さんじ」。',
+            relatedRules: ['小時の讀法', 'チェックイン時間']
+        },
+        sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
+    },
+    {
+        id: 'hour_extra_49',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「夜」的讀法是？',
+        stem_zh: '「夜」的讀法是？',
+        options: [
+            { text: 'よる', isCorrect: true, reason: '正確！夜讀「よる」。' },
+            { text: 'や', isCorrect: false, reason: '「や」是音讀，單獨用訓讀「よる」。' },
+            { text: 'よ', isCorrect: false, reason: '需要「る」。' },
+            { text: 'やる', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「夜」讀「よる」，意思是晚上。',
+            relatedRules: ['時間表達', '夜の讀法']
+        },
+        sourceItem: { value: 'night', kanji: '夜', reading: 'よる' }
+    },
+    {
+        id: 'hour_extra_50',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: 'バスは＿＿に来ます。',
+        stem_zh: '公車在十點來。',
+        options: [
+            { text: 'じゅうじ', isCorrect: true, reason: '正確！十時讀「じゅうじ」。' },
+            { text: 'とおじ', isCorrect: false, reason: '時間使用音讀「じゅう」。' },
+            { text: 'じゅっじ', isCorrect: false, reason: '不是促音化。' },
+            { text: 'とおか', isCorrect: false, reason: '「とおか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十時」讀「じゅうじ」。',
+            relatedRules: ['小時の讀法', 'バスの時間']
+        },
+        sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
+    },
+    {
+        id: 'hour_extra_51',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '會議結束是幾點？',
+        stem_zh: '會議結束是幾點？',
+        dialogue: {
+            speakerA: '会議は何時に終わりますか？',
+            speakerB: '＿＿に終わります。（四點）'
+        },
+        options: [
+            { text: 'よじ', isCorrect: true, reason: '正確！四時讀「よじ」。' },
+            { text: 'よんじ', isCorrect: false, reason: '陷阱！四時固定讀「よじ」。' },
+            { text: 'しじ', isCorrect: false, reason: '四時讀「よじ」。' },
+            { text: 'よっか', isCorrect: false, reason: '「よっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四時」固定讀「よじ」。',
+            trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
+            relatedRules: ['四時の讀法', '会議終了時間']
+        },
+        sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
+    },
+    // ===== 追加題目 52-121 =====
+    {
+        id: 'hour_extra_52',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「昼」的讀法是？',
+        stem_zh: '「昼」的讀法是？',
+        options: [
+            { text: 'ひる', isCorrect: true, reason: '正確！昼讀「ひる」。' },
+            { text: 'ちゅう', isCorrect: false, reason: '「ちゅう」是音讀，單獨用訓讀「ひる」。' },
+            { text: 'ひ', isCorrect: false, reason: '需要「る」。' },
+            { text: 'ちる', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「昼」讀「ひる」，意思是白天/中午。',
+            relatedRules: ['時間表達', '昼の讀法']
+        },
+        sourceItem: { value: 'noon', kanji: '昼', reading: 'ひる' }
+    },
+    {
+        id: 'hour_extra_53',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: 'スーパーは＿＿まで開いています。',
+        stem_zh: '超市營業到十點。',
+        options: [
+            { text: 'じゅうじ', isCorrect: true, reason: '正確！十時讀「じゅうじ」。' },
+            { text: 'とおじ', isCorrect: false, reason: '時間使用音讀「じゅう」。' },
+            { text: 'じゅっじ', isCorrect: false, reason: '不是促音化。' },
+            { text: 'とおか', isCorrect: false, reason: '「とおか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十時」讀「じゅうじ」。',
+            relatedRules: ['小時の讀法', 'スーパーの営業時間']
+        },
+        sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
+    },
+    {
+        id: 'hour_extra_54',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '約會是幾點？',
+        stem_zh: '約會是幾點？',
+        dialogue: {
+            speakerA: 'デートは何時ですか？',
+            speakerB: '＿＿です。（七點半）'
+        },
+        options: [
+            { text: 'しちじはん', isCorrect: true, reason: '正確！七時半讀「しちじはん」。' },
+            { text: 'ななじはん', isCorrect: false, reason: '陷阱！七時固定讀「しちじ」。' },
+            { text: 'なのかはん', isCorrect: false, reason: '「なのか」是日期。' },
+            { text: 'しちとき', isCorrect: false, reason: '小時讀「じ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七時半」讀「しちじはん」。',
+            trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
+            relatedRules: ['七時の讀法', 'デートの時間']
+        },
+        sourceItem: { value: '7:30', kanji: '七時半', reading: 'しちじはん' }
+    },
+    {
+        id: 'hour_extra_55',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「今朝」的讀法是？',
+        stem_zh: '「今朝」的讀法是？',
+        options: [
+            { text: 'けさ', isCorrect: true, reason: '正確！今朝讀「けさ」。' },
+            { text: 'いまあさ', isCorrect: false, reason: '「今朝」的特殊讀法是「けさ」。' },
+            { text: 'こんちょう', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'きょうあさ', isCorrect: false, reason: '「今朝」的特殊讀法是「けさ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「今朝」讀「けさ」，意思是今天早上。',
+            relatedRules: ['時間表達', '今朝=けさ']
+        },
+        sourceItem: { value: 'this morning', kanji: '今朝', reading: 'けさ' }
+    },
+    {
+        id: 'hour_extra_56',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '薬は＿＿に飲んでください。',
+        stem_zh: '請在八點吃藥。',
+        options: [
+            { text: 'はちじ', isCorrect: true, reason: '正確！八時讀「はちじ」。' },
+            { text: 'やじ', isCorrect: false, reason: '時間使用音讀「はち」。' },
+            { text: 'はっじ', isCorrect: false, reason: '八時不促音化。' },
+            { text: 'ようか', isCorrect: false, reason: '「ようか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「八時」讀「はちじ」。',
+            relatedRules: ['小時の讀法', '服薬時間']
+        },
+        sourceItem: { value: 8, kanji: '八時', reading: 'はちじ' }
+    },
+    {
+        id: 'hour_extra_57',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '醫生的診療時間是幾點？',
+        stem_zh: '醫生的診療時間是幾點？',
+        dialogue: {
+            speakerA: '診察時間は何時からですか？',
+            speakerB: '＿＿からです。（九點半）'
+        },
+        options: [
+            { text: 'くじはん', isCorrect: true, reason: '正確！九時半讀「くじはん」。' },
+            { text: 'きゅうじはん', isCorrect: false, reason: '陷阱！九時固定讀「くじ」。' },
+            { text: 'ここのじはん', isCorrect: false, reason: '時間用音讀。' },
+            { text: 'ここのかはん', isCorrect: false, reason: '「ここのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九時半」讀「くじはん」。',
+            trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
+            relatedRules: ['九時の讀法', '診察時間']
+        },
+        sourceItem: { value: '9:30', kanji: '九時半', reading: 'くじはん' }
+    },
+    {
+        id: 'hour_extra_58',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「今夜」的讀法是？',
+        stem_zh: '「今夜」的讀法是？',
+        options: [
+            { text: 'こんや', isCorrect: true, reason: '正確！今夜讀「こんや」。' },
+            { text: 'いまよる', isCorrect: false, reason: '「今夜」讀「こんや」。' },
+            { text: 'こんよる', isCorrect: false, reason: '「夜」讀「や」不是「よる」。' },
+            { text: 'きょうよる', isCorrect: false, reason: '「今夜」讀「こんや」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「今夜」讀「こんや」，意思是今天晚上。',
+            relatedRules: ['時間表達', '今夜=こんや']
+        },
+        sourceItem: { value: 'tonight', kanji: '今夜', reading: 'こんや' }
+    },
+    {
+        id: 'hour_extra_59',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: 'カフェは＿＿から開いています。',
+        stem_zh: '咖啡廳從十一點開始營業。',
+        options: [
+            { text: 'じゅういちじ', isCorrect: true, reason: '正確！十一時讀「じゅういちじ」。' },
+            { text: 'とおいちじ', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうひとじ', isCorrect: false, reason: '時間使用音讀「いち」。' },
+            { text: 'じゅういちにち', isCorrect: false, reason: '「にち」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十一時」讀「じゅういちじ」。',
+            relatedRules: ['小時の讀法', 'カフェの営業時間']
+        },
+        sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
+    },
+    {
+        id: 'hour_extra_60',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '郵局幾點關門？',
+        stem_zh: '郵局幾點關門？',
+        dialogue: {
+            speakerA: '郵便局は何時に閉まりますか？',
+            speakerB: '＿＿に閉まります。（五點）'
+        },
+        options: [
+            { text: 'ごじ', isCorrect: true, reason: '正確！五時讀「ごじ」。' },
+            { text: 'いつじ', isCorrect: false, reason: '時間使用音讀「ご」。' },
+            { text: 'いつか', isCorrect: false, reason: '「いつか」是日期。' },
+            { text: 'ごとき', isCorrect: false, reason: '小時讀「じ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五時」讀「ごじ」。',
+            relatedRules: ['小時の讀法', '郵便局の閉店時間']
+        },
+        sourceItem: { value: 5, kanji: '五時', reading: 'ごじ' }
+    },
+    {
+        id: 'hour_extra_61',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「昨夜」的讀法是？',
+        stem_zh: '「昨夜」的讀法是？',
+        options: [
+            { text: 'ゆうべ / さくや', isCorrect: true, reason: '正確！昨夜讀「ゆうべ」或「さくや」。' },
+            { text: 'きのうよる', isCorrect: false, reason: '「昨夜」有特殊讀法。' },
+            { text: 'さくよる', isCorrect: false, reason: '「夜」讀「や」不是「よる」。' },
+            { text: 'きのうや', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「昨夜」讀「ゆうべ」或「さくや」，意思是昨天晚上。',
+            relatedRules: ['時間表達', '昨夜の讀法']
+        },
+        sourceItem: { value: 'last night', kanji: '昨夜', reading: 'ゆうべ' }
+    },
+    {
+        id: 'hour_extra_62',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: true,
+        stem: '塾は＿＿に終わります。',
+        stem_zh: '補習班在九點結束。',
+        options: [
+            { text: 'くじ', isCorrect: true, reason: '正確！九時讀「くじ」。' },
+            { text: 'きゅうじ', isCorrect: false, reason: '陷阱！九時固定讀「くじ」。' },
+            { text: 'ここのじ', isCorrect: false, reason: '時間用音讀。' },
+            { text: 'ここのか', isCorrect: false, reason: '「ここのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九時」固定讀「くじ」。',
+            trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
+            relatedRules: ['九時の讀法', '塾の終了時間']
+        },
+        sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
+    },
+    {
+        id: 'hour_extra_63',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '快遞幾點會到？',
+        stem_zh: '快遞幾點會到？',
+        dialogue: {
+            speakerA: '宅配便は何時に届きますか？',
+            speakerB: '＿＿頃届きます。（二點）'
+        },
+        options: [
+            { text: 'にじ', isCorrect: true, reason: '正確！二時讀「にじ」。' },
+            { text: 'ふたじ', isCorrect: false, reason: '時間使用音讀「に」。' },
+            { text: 'ふつじ', isCorrect: false, reason: '不存在這個讀法。' },
+            { text: 'ふつか', isCorrect: false, reason: '「ふつか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二時」讀「にじ」。',
+            relatedRules: ['小時の讀法', '宅配便の時間']
+        },
+        sourceItem: { value: 2, kanji: '二時', reading: 'にじ' }
+    },
+    {
+        id: 'hour_extra_64',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '總復習：哪些小時有特殊讀法？',
+        stem_zh: '總復習：哪些小時有特殊讀法？',
+        options: [
+            { text: '4時（よじ）、7時（しちじ）、9時（くじ）', isCorrect: true, reason: '正確！這三個小時有特殊讀法。' },
+            { text: '只有4時', isCorrect: false, reason: '4時、7時、9時都有特殊讀法。' },
+            { text: '1-12時都是特殊讀法', isCorrect: false, reason: '只有4時、7時、9時是特殊讀法。' },
+            { text: '沒有特殊讀法', isCorrect: false, reason: '4時、7時、9時有特殊讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '4時（よじ）、7時（しちじ）、9時（くじ）是三個特殊讀法。',
+            trapExplanation: '這是總結性題目，掌握小時的特殊讀法。',
+            relatedRules: ['小時の特殊讀法', '4/7/9時']
+        },
+        sourceItem: { value: 'special', kanji: '特殊小時', reading: '4/7/9時' }
+    },
+    {
+        id: 'hour_extra_65',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: 'コンビニは＿＿時間営業です。',
+        stem_zh: '便利商店24小時營業。',
+        options: [
+            { text: 'にじゅうよ', isCorrect: true, reason: '正確！二十四讀「にじゅうよ」。' },
+            { text: 'にじゅうし', isCorrect: false, reason: '24時間的24讀「にじゅうよ」。' },
+            { text: 'にじゅうよん', isCorrect: false, reason: '「24時間」的讀法是「にじゅうよじかん」。' },
+            { text: 'にじゅうよっ', isCorrect: false, reason: '需要「よ」不是「よっ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「24時間」讀「にじゅうよじかん」，24的讀法是「にじゅうよ」。',
+            relatedRules: ['時間表達', '24時間営業']
+        },
+        sourceItem: { value: 24, kanji: '二十四時間', reading: 'にじゅうよじかん' }
+    },
+    {
+        id: 'hour_extra_66',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '演唱會幾點開始？',
+        stem_zh: '演唱會幾點開始？',
+        dialogue: {
+            speakerA: 'コンサートは何時からですか？',
+            speakerB: '＿＿からです。（七點）'
+        },
+        options: [
+            { text: 'しちじ', isCorrect: true, reason: '正確！七時讀「しちじ」。' },
+            { text: 'ななじ', isCorrect: false, reason: '陷阱！七時固定讀「しちじ」。' },
+            { text: 'なのか', isCorrect: false, reason: '「なのか」是日期。' },
+            { text: 'しちとき', isCorrect: false, reason: '小時讀「じ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七時」固定讀「しちじ」。',
+            trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
+            relatedRules: ['七時の讀法', 'コンサートの時間']
+        },
+        sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
+    },
+    {
+        id: 'hour_extra_67',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「明朝」的讀法是？',
+        stem_zh: '「明朝」的讀法是？',
+        options: [
+            { text: 'みょうちょう', isCorrect: true, reason: '正確！明朝讀「みょうちょう」。' },
+            { text: 'あしたあさ', isCorrect: false, reason: '「明朝」讀「みょうちょう」。' },
+            { text: 'あすあさ', isCorrect: false, reason: '「明朝」讀「みょうちょう」。' },
+            { text: 'めいちょう', isCorrect: false, reason: '「明」讀「みょう」不是「めい」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「明朝」讀「みょうちょう」，意思是明天早上。',
+            relatedRules: ['時間表達', '明朝=みょうちょう']
+        },
+        sourceItem: { value: 'tomorrow morning', kanji: '明朝', reading: 'みょうちょう' }
+    },
+    {
+        id: 'hour_extra_68',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '美容院の予約は＿＿です。',
+        stem_zh: '美容院的預約是三點半。',
+        options: [
+            { text: 'さんじはん', isCorrect: true, reason: '正確！三時半讀「さんじはん」。' },
+            { text: 'みじはん', isCorrect: false, reason: '時間使用音讀「さん」。' },
+            { text: 'さんときはん', isCorrect: false, reason: '小時讀「じ」。' },
+            { text: 'みっかはん', isCorrect: false, reason: '「みっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三時半」讀「さんじはん」。',
+            relatedRules: ['時間表達', '美容院の予約']
+        },
+        sourceItem: { value: '3:30', kanji: '三時半', reading: 'さんじはん' }
+    },
+    {
+        id: 'hour_extra_69',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '瑜伽課幾點開始？',
+        stem_zh: '瑜伽課幾點開始？',
+        dialogue: {
+            speakerA: 'ヨガのクラスは何時からですか？',
+            speakerB: '＿＿からです。（四點）'
+        },
+        options: [
+            { text: 'よじ', isCorrect: true, reason: '正確！四時讀「よじ」。' },
+            { text: 'よんじ', isCorrect: false, reason: '陷阱！四時固定讀「よじ」。' },
+            { text: 'しじ', isCorrect: false, reason: '四時讀「よじ」。' },
+            { text: 'よっか', isCorrect: false, reason: '「よっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四時」固定讀「よじ」。',
+            trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
+            relatedRules: ['四時の讀法', 'ヨガの時間']
+        },
+        sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
+    },
+    {
+        id: 'hour_extra_70',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「真夜中」的讀法是？',
+        stem_zh: '「真夜中」的讀法是？',
+        options: [
+            { text: 'まよなか', isCorrect: true, reason: '正確！真夜中讀「まよなか」。' },
+            { text: 'しんやちゅう', isCorrect: false, reason: '「真夜中」讀「まよなか」。' },
+            { text: 'まよるなか', isCorrect: false, reason: '「夜」讀「よ」不是「よる」。' },
+            { text: 'まやなか', isCorrect: false, reason: '需要「よ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「真夜中」讀「まよなか」，意思是半夜。',
+            relatedRules: ['時間表達', '真夜中=まよなか']
+        },
+        sourceItem: { value: 'midnight', kanji: '真夜中', reading: 'まよなか' }
+    },
+    {
+        id: 'hour_extra_71',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '電車は＿＿に出発します。',
+        stem_zh: '電車在一點出發。',
+        options: [
+            { text: 'いちじ', isCorrect: true, reason: '正確！一時讀「いちじ」。' },
+            { text: 'ひとじ', isCorrect: false, reason: '時間使用音讀「いち」。' },
+            { text: 'いっじ', isCorrect: false, reason: '不是促音化。' },
+            { text: 'ついたち', isCorrect: false, reason: '「ついたち」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「一時」讀「いちじ」。',
+            relatedRules: ['小時の讀法', '電車の出発時間']
+        },
+        sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
+    },
+    {
+        id: 'hour_extra_72',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '商店街幾點開門？',
+        stem_zh: '商店街幾點開門？',
+        dialogue: {
+            speakerA: '商店街は何時に開きますか？',
+            speakerB: '＿＿に開きます。（十點）'
+        },
+        options: [
+            { text: 'じゅうじ', isCorrect: true, reason: '正確！十時讀「じゅうじ」。' },
+            { text: 'とおじ', isCorrect: false, reason: '時間使用音讀「じゅう」。' },
+            { text: 'じゅっじ', isCorrect: false, reason: '不是促音化。' },
+            { text: 'とおか', isCorrect: false, reason: '「とおか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十時」讀「じゅうじ」。',
+            relatedRules: ['小時の讀法', '商店街の開店時間']
+        },
+        sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
+    },
+    {
+        id: 'hour_extra_73',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「日中」的讀法是？',
+        stem_zh: '「日中」的讀法是？',
+        options: [
+            { text: 'にっちゅう', isCorrect: true, reason: '正確！日中讀「にっちゅう」。' },
+            { text: 'ひなか', isCorrect: false, reason: '「日中」讀「にっちゅう」。' },
+            { text: 'ひるなか', isCorrect: false, reason: '「日中」讀「にっちゅう」。' },
+            { text: 'にちじゅう', isCorrect: false, reason: '有促音「っ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「日中」讀「にっちゅう」，意思是白天。',
+            relatedRules: ['時間表達', '日中=にっちゅう']
+        },
+        sourceItem: { value: 'daytime', kanji: '日中', reading: 'にっちゅう' }
+    },
+    {
+        id: 'hour_extra_74',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: true,
+        stem: '美術館は＿＿まで開いています。',
+        stem_zh: '美術館營業到四點。',
+        options: [
+            { text: 'よじ', isCorrect: true, reason: '正確！四時讀「よじ」。' },
+            { text: 'よんじ', isCorrect: false, reason: '陷阱！四時固定讀「よじ」。' },
+            { text: 'しじ', isCorrect: false, reason: '四時讀「よじ」。' },
+            { text: 'よっか', isCorrect: false, reason: '「よっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四時」固定讀「よじ」。',
+            trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
+            relatedRules: ['四時の讀法', '美術館の閉館時間']
+        },
+        sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
+    },
+    {
+        id: 'hour_extra_75',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '網球練習是幾點？',
+        stem_zh: '網球練習是幾點？',
+        dialogue: {
+            speakerA: 'テニスの練習は何時からですか？',
+            speakerB: '＿＿からです。（六點）'
+        },
+        options: [
+            { text: 'ろくじ', isCorrect: true, reason: '正確！六時讀「ろくじ」。' },
+            { text: 'むじ', isCorrect: false, reason: '時間使用音讀「ろく」。' },
+            { text: 'ろっじ', isCorrect: false, reason: '六時不促音化。' },
+            { text: 'むいか', isCorrect: false, reason: '「むいか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六時」讀「ろくじ」。',
+            relatedRules: ['小時の讀法', 'テニスの練習時間']
+        },
+        sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
+    },
+    {
+        id: 'hour_extra_76',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '為什麼4時、7時、9時有特殊讀法？',
+        stem_zh: '為什麼4時、7時、9時有特殊讀法？',
+        options: [
+            { text: '避免與「死」「質」等不吉字同音', isCorrect: true, reason: '正確！這是避諱讀法。' },
+            { text: '沒有特別原因', isCorrect: false, reason: '有歷史和文化原因。' },
+            { text: '這是外來語讀法', isCorrect: false, reason: '這是日本傳統的避諱讀法。' },
+            { text: '發音比較好聽', isCorrect: false, reason: '主要是避諱不吉利的同音字。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '4時避免「しじ」（與「死」同音），7時、9時也是為了避免不吉利的同音。',
+            trapExplanation: '了解這些讀法的文化背景。',
+            relatedRules: ['小時の特殊讀法', '日本文化']
+        },
+        sourceItem: { value: 'cultural', kanji: '文化背景', reading: '避諱讀法' }
+    },
+    {
+        id: 'hour_extra_77',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '映画は＿＿に終わります。',
+        stem_zh: '電影在十二點結束。',
+        options: [
+            { text: 'じゅうにじ', isCorrect: true, reason: '正確！十二時讀「じゅうにじ」。' },
+            { text: 'じゅうふたじ', isCorrect: false, reason: '時間使用音讀「に」。' },
+            { text: 'とおにじ', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうににち', isCorrect: false, reason: '「にち」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十二時」讀「じゅうにじ」。',
+            relatedRules: ['小時の讀法', '映画の終了時間']
+        },
+        sourceItem: { value: 12, kanji: '十二時', reading: 'じゅうにじ' }
+    },
+    {
+        id: 'hour_extra_78',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '夜間巴士幾點發車？',
+        stem_zh: '夜間巴士幾點發車？',
+        dialogue: {
+            speakerA: '夜行バスは何時発ですか？',
+            speakerB: '＿＿発です。（九點）'
+        },
+        options: [
+            { text: 'くじ', isCorrect: true, reason: '正確！九時讀「くじ」。' },
+            { text: 'きゅうじ', isCorrect: false, reason: '陷阱！九時固定讀「くじ」。' },
+            { text: 'ここのじ', isCorrect: false, reason: '時間用音讀。' },
+            { text: 'ここのか', isCorrect: false, reason: '「ここのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九時」固定讀「くじ」。',
+            trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
+            relatedRules: ['九時の讀法', '夜行バスの時間']
+        },
+        sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
+    },
+    {
+        id: 'hour_extra_79',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「午前中」的讀法是？',
+        stem_zh: '「午前中」的讀法是？',
+        options: [
+            { text: 'ごぜんちゅう', isCorrect: true, reason: '正確！午前中讀「ごぜんちゅう」。' },
+            { text: 'ごぜんなか', isCorrect: false, reason: '「中」讀「ちゅう」不是「なか」。' },
+            { text: 'うまえちゅう', isCorrect: false, reason: '「午前」讀「ごぜん」。' },
+            { text: 'ごまえちゅう', isCorrect: false, reason: '「前」讀「ぜん」不是「まえ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「午前中」讀「ごぜんちゅう」，意思是上午期間。',
+            relatedRules: ['時間表達', '午前中']
+        },
+        sourceItem: { value: 'in the morning', kanji: '午前中', reading: 'ごぜんちゅう' }
+    },
+    {
+        id: 'hour_extra_80',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '起床は毎朝＿＿です。',
+        stem_zh: '每天早上七點起床。',
+        options: [
+            { text: 'しちじ', isCorrect: true, reason: '正確！七時讀「しちじ」。' },
+            { text: 'ななじ', isCorrect: false, reason: '七時固定讀「しちじ」。' },
+            { text: 'なのか', isCorrect: false, reason: '「なのか」是日期。' },
+            { text: 'しちとき', isCorrect: false, reason: '小時讀「じ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七時」固定讀「しちじ」。',
+            relatedRules: ['七時の讀法', '起床時間']
+        },
+        sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
+    },
+    {
+        id: 'hour_extra_81',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '烤肉店幾點結束營業？',
+        stem_zh: '烤肉店幾點結束營業？',
+        dialogue: {
+            speakerA: '焼肉屋は何時までですか？',
+            speakerB: '＿＿までです。（十一點）'
+        },
+        options: [
+            { text: 'じゅういちじ', isCorrect: true, reason: '正確！十一時讀「じゅういちじ」。' },
+            { text: 'とおいちじ', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうひとじ', isCorrect: false, reason: '時間使用音讀「いち」。' },
+            { text: 'じゅういちにち', isCorrect: false, reason: '「にち」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十一時」讀「じゅういちじ」。',
+            relatedRules: ['小時の讀法', '焼肉屋の営業時間']
+        },
+        sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
+    },
+    {
+        id: 'hour_extra_82',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「夜中」的讀法是？',
+        stem_zh: '「夜中」的讀法是？',
+        options: [
+            { text: 'よなか', isCorrect: true, reason: '正確！夜中讀「よなか」。' },
+            { text: 'やちゅう', isCorrect: false, reason: '「夜中」讀「よなか」。' },
+            { text: 'よるなか', isCorrect: false, reason: '「夜」讀「よ」不是「よる」。' },
+            { text: 'やなか', isCorrect: false, reason: '需要「よ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「夜中」讀「よなか」，意思是半夜。',
+            relatedRules: ['時間表達', '夜中=よなか']
+        },
+        sourceItem: { value: 'in the night', kanji: '夜中', reading: 'よなか' }
+    },
+    {
+        id: 'hour_extra_83',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: true,
+        stem: '飛行機は＿＿に到着します。',
+        stem_zh: '飛機在九點到達。',
+        options: [
+            { text: 'くじ', isCorrect: true, reason: '正確！九時讀「くじ」。' },
+            { text: 'きゅうじ', isCorrect: false, reason: '陷阱！九時固定讀「くじ」。' },
+            { text: 'ここのじ', isCorrect: false, reason: '時間用音讀。' },
+            { text: 'ここのか', isCorrect: false, reason: '「ここのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九時」固定讀「くじ」。',
+            trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
+            relatedRules: ['九時の讀法', '飛行機の到着時間']
+        },
+        sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
+    },
+    {
+        id: 'hour_extra_84',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '睡覺時間是幾點？',
+        stem_zh: '睡覺時間是幾點？',
+        dialogue: {
+            speakerA: '寝る時間は何時ですか？',
+            speakerB: '＿＿に寝ます。（十點半）'
+        },
+        options: [
+            { text: 'じゅうじはん', isCorrect: true, reason: '正確！十時半讀「じゅうじはん」。' },
+            { text: 'とおじはん', isCorrect: false, reason: '時間使用音讀「じゅう」。' },
+            { text: 'じゅっじはん', isCorrect: false, reason: '不是促音化。' },
+            { text: 'とおかはん', isCorrect: false, reason: '「とおか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十時半」讀「じゅうじはん」。',
+            relatedRules: ['時間表達', '就寝時間']
+        },
+        sourceItem: { value: '10:30', kanji: '十時半', reading: 'じゅうじはん' }
+    },
+    {
+        id: 'hour_extra_85',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「今晩」的讀法是？',
+        stem_zh: '「今晩」的讀法是？',
+        options: [
+            { text: 'こんばん', isCorrect: true, reason: '正確！今晩讀「こんばん」。' },
+            { text: 'いまばん', isCorrect: false, reason: '「今」讀「こん」不是「いま」。' },
+            { text: 'こんよる', isCorrect: false, reason: '「晩」讀「ばん」不是「よる」。' },
+            { text: 'きょうばん', isCorrect: false, reason: '「今」讀「こん」不是「きょう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「今晩」讀「こんばん」，意思是今天晚上。',
+            relatedRules: ['時間表達', '今晩=こんばん']
+        },
+        sourceItem: { value: 'this evening', kanji: '今晩', reading: 'こんばん' }
+    },
+    {
+        id: 'hour_extra_86',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: true,
+        stem: '幼稚園は＿＿までです。',
+        stem_zh: '幼稚園到下午四點。',
+        options: [
+            { text: 'よじ', isCorrect: true, reason: '正確！四時讀「よじ」。' },
+            { text: 'よんじ', isCorrect: false, reason: '陷阱！四時固定讀「よじ」。' },
+            { text: 'しじ', isCorrect: false, reason: '四時讀「よじ」。' },
+            { text: 'よっか', isCorrect: false, reason: '「よっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四時」固定讀「よじ」。',
+            trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
+            relatedRules: ['四時の讀法', '幼稚園の時間']
+        },
+        sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
+    },
+    {
+        id: 'hour_extra_87',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '早餐到幾點？',
+        stem_zh: '早餐到幾點？',
+        dialogue: {
+            speakerA: '朝食は何時までですか？',
+            speakerB: '＿＿までです。（十點）'
+        },
+        options: [
+            { text: 'じゅうじ', isCorrect: true, reason: '正確！十時讀「じゅうじ」。' },
+            { text: 'とおじ', isCorrect: false, reason: '時間使用音讀「じゅう」。' },
+            { text: 'じゅっじ', isCorrect: false, reason: '不是促音化。' },
+            { text: 'とおか', isCorrect: false, reason: '「とおか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十時」讀「じゅうじ」。',
+            relatedRules: ['小時の讀法', '朝食の時間']
+        },
+        sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
+    },
+    {
+        id: 'hour_extra_88',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「明晩」的讀法是？',
+        stem_zh: '「明晩」的讀法是？',
+        options: [
+            { text: 'みょうばん', isCorrect: true, reason: '正確！明晩讀「みょうばん」。' },
+            { text: 'あしたばん', isCorrect: false, reason: '「明」讀「みょう」不是「あした」。' },
+            { text: 'あすばん', isCorrect: false, reason: '「明晩」讀「みょうばん」。' },
+            { text: 'めいばん', isCorrect: false, reason: '「明」讀「みょう」不是「めい」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「明晩」讀「みょうばん」，意思是明天晚上。',
+            relatedRules: ['時間表達', '明晩=みょうばん']
+        },
+        sourceItem: { value: 'tomorrow evening', kanji: '明晩', reading: 'みょうばん' }
+    },
+    {
+        id: 'hour_extra_89',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：「1時」讀作？',
+        stem_zh: '總復習：「1時」讀作？',
+        options: [
+            { text: 'いちじ', isCorrect: true, reason: '正確！一時讀「いちじ」。' },
+            { text: 'ひとじ', isCorrect: false, reason: '時間使用音讀「いち」。' },
+            { text: 'いっじ', isCorrect: false, reason: '不是促音化。' },
+            { text: 'ついたち', isCorrect: false, reason: '「ついたち」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「一時」讀「いちじ」，是一般讀法。',
+            relatedRules: ['小時の讀法', '1時']
+        },
+        sourceItem: { value: 1, kanji: '一時', reading: 'いちじ' }
+    },
+    {
+        id: 'hour_extra_90',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '晚會幾點開始？',
+        stem_zh: '晚會幾點開始？',
+        dialogue: {
+            speakerA: 'パーティーは何時からですか？',
+            speakerB: '＿＿からです。（七點半）'
+        },
+        options: [
+            { text: 'しちじはん', isCorrect: true, reason: '正確！七時半讀「しちじはん」。' },
+            { text: 'ななじはん', isCorrect: false, reason: '陷阱！七時固定讀「しちじ」。' },
+            { text: 'なのかはん', isCorrect: false, reason: '「なのか」是日期。' },
+            { text: 'しちとき', isCorrect: false, reason: '小時讀「じ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七時半」讀「しちじはん」。',
+            trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
+            relatedRules: ['七時の讀法', 'パーティーの時間']
+        },
+        sourceItem: { value: '7:30', kanji: '七時半', reading: 'しちじはん' }
+    },
+    {
+        id: 'hour_extra_91',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '總復習：「4時」不能讀作？',
+        stem_zh: '總復習：「4時」不能讀作？',
+        options: [
+            { text: 'しじ / よんじ', isCorrect: true, reason: '正確！4時只能讀「よじ」。' },
+            { text: 'よじ', isCorrect: false, reason: '「よじ」是正確讀法。' },
+            { text: 'よじ和しじ都可以', isCorrect: false, reason: '只能讀「よじ」。' },
+            { text: '沒有限制', isCorrect: false, reason: '有限制，只能讀「よじ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「4時」只能讀「よじ」，「しじ」「よんじ」都是錯誤的。',
+            trapExplanation: '掌握4時的正確讀法非常重要。',
+            relatedRules: ['四時の讀法', '禁止讀法']
+        },
+        sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
+    },
+    // ===== 追加題目 92-121 =====
+    {
+        id: 'hour_extra_92',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：「2時」讀作？',
+        stem_zh: '總復習：「2時」讀作？',
+        options: [
+            { text: 'にじ', isCorrect: true, reason: '正確！二時讀「にじ」。' },
+            { text: 'ふたじ', isCorrect: false, reason: '時間使用音讀「に」。' },
+            { text: 'ふつじ', isCorrect: false, reason: '不存在這個讀法。' },
+            { text: 'ふつか', isCorrect: false, reason: '「ふつか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二時」讀「にじ」，是一般讀法。',
+            relatedRules: ['小時の讀法', '2時']
+        },
+        sourceItem: { value: 2, kanji: '二時', reading: 'にじ' }
+    },
+    {
+        id: 'hour_extra_93',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '學校幾點下課？',
+        stem_zh: '學校幾點下課？',
+        dialogue: {
+            speakerA: '学校は何時に終わりますか？',
+            speakerB: '＿＿に終わります。（三點）'
+        },
+        options: [
+            { text: 'さんじ', isCorrect: true, reason: '正確！三時讀「さんじ」。' },
+            { text: 'みじ', isCorrect: false, reason: '時間使用音讀「さん」。' },
+            { text: 'さんとき', isCorrect: false, reason: '小時讀「じ」。' },
+            { text: 'みっか', isCorrect: false, reason: '「みっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三時」讀「さんじ」。',
+            relatedRules: ['小時の讀法', '学校の終了時間']
+        },
+        sourceItem: { value: 3, kanji: '三時', reading: 'さんじ' }
+    },
+    {
+        id: 'hour_extra_94',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '總復習：「7時」不能讀作？',
+        stem_zh: '總復習：「7時」不能讀作？',
+        options: [
+            { text: 'ななじ', isCorrect: true, reason: '正確！7時只能讀「しちじ」。' },
+            { text: 'しちじ', isCorrect: false, reason: '「しちじ」是正確讀法。' },
+            { text: 'しちじ和ななじ都可以', isCorrect: false, reason: '只能讀「しちじ」。' },
+            { text: '沒有限制', isCorrect: false, reason: '有限制，只能讀「しちじ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「7時」只能讀「しちじ」，「ななじ」是錯誤的。',
+            trapExplanation: '掌握7時的正確讀法非常重要。',
+            relatedRules: ['七時の讀法', '禁止讀法']
+        },
+        sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
+    },
+    {
+        id: 'hour_extra_95',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：「5時」讀作？',
+        stem_zh: '總復習：「5時」讀作？',
+        options: [
+            { text: 'ごじ', isCorrect: true, reason: '正確！五時讀「ごじ」。' },
+            { text: 'いつじ', isCorrect: false, reason: '時間使用音讀「ご」。' },
+            { text: 'いつか', isCorrect: false, reason: '「いつか」是日期。' },
+            { text: 'ごとき', isCorrect: false, reason: '小時讀「じ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五時」讀「ごじ」，是一般讀法。',
+            relatedRules: ['小時の讀法', '5時']
+        },
+        sourceItem: { value: 5, kanji: '五時', reading: 'ごじ' }
+    },
+    {
+        id: 'hour_extra_96',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '火車到站是幾點？',
+        stem_zh: '火車到站是幾點？',
+        dialogue: {
+            speakerA: '電車は何時に着きますか？',
+            speakerB: '＿＿に着きます。（四點半）'
+        },
+        options: [
+            { text: 'よじはん', isCorrect: true, reason: '正確！四時半讀「よじはん」。' },
+            { text: 'よんじはん', isCorrect: false, reason: '陷阱！四時固定讀「よじ」。' },
+            { text: 'しじはん', isCorrect: false, reason: '四時讀「よじ」。' },
+            { text: 'よっかはん', isCorrect: false, reason: '「よっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四時半」讀「よじはん」。',
+            trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
+            relatedRules: ['四時の讀法', '電車の時間']
+        },
+        sourceItem: { value: '4:30', kanji: '四時半', reading: 'よじはん' }
+    },
+    {
+        id: 'hour_extra_97',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '總復習：「9時」不能讀作？',
+        stem_zh: '總復習：「9時」不能讀作？',
+        options: [
+            { text: 'きゅうじ', isCorrect: true, reason: '正確！9時只能讀「くじ」。' },
+            { text: 'くじ', isCorrect: false, reason: '「くじ」是正確讀法。' },
+            { text: 'くじ和きゅうじ都可以', isCorrect: false, reason: '只能讀「くじ」。' },
+            { text: '沒有限制', isCorrect: false, reason: '有限制，只能讀「くじ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「9時」只能讀「くじ」，「きゅうじ」是錯誤的。',
+            trapExplanation: '掌握9時的正確讀法非常重要。',
+            relatedRules: ['九時の讀法', '禁止讀法']
+        },
+        sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
+    },
+    {
+        id: 'hour_extra_98',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：「6時」讀作？',
+        stem_zh: '總復習：「6時」讀作？',
+        options: [
+            { text: 'ろくじ', isCorrect: true, reason: '正確！六時讀「ろくじ」。' },
+            { text: 'むじ', isCorrect: false, reason: '時間使用音讀「ろく」。' },
+            { text: 'ろっじ', isCorrect: false, reason: '六時不促音化。' },
+            { text: 'むいか', isCorrect: false, reason: '「むいか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六時」讀「ろくじ」，是一般讀法。',
+            relatedRules: ['小時の讀法', '6時']
+        },
+        sourceItem: { value: 6, kanji: '六時', reading: 'ろくじ' }
+    },
+    {
+        id: 'hour_extra_99',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '公車幾點來？',
+        stem_zh: '公車幾點來？',
+        dialogue: {
+            speakerA: 'バスは何時に来ますか？',
+            speakerB: '＿＿に来ます。（八點）'
+        },
+        options: [
+            { text: 'はちじ', isCorrect: true, reason: '正確！八時讀「はちじ」。' },
+            { text: 'やじ', isCorrect: false, reason: '時間使用音讀「はち」。' },
+            { text: 'はっじ', isCorrect: false, reason: '八時不促音化。' },
+            { text: 'ようか', isCorrect: false, reason: '「ようか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「八時」讀「はちじ」。',
+            relatedRules: ['小時の讀法', 'バスの時間']
+        },
+        sourceItem: { value: 8, kanji: '八時', reading: 'はちじ' }
+    },
+    {
+        id: 'hour_extra_100',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '總復習：「10時」讀作？',
+        stem_zh: '總復習：「10時」讀作？',
+        options: [
+            { text: 'じゅうじ', isCorrect: true, reason: '正確！十時讀「じゅうじ」。' },
+            { text: 'とおじ', isCorrect: false, reason: '時間使用音讀「じゅう」。' },
+            { text: 'じゅっじ', isCorrect: false, reason: '不是促音化。' },
+            { text: 'とおか', isCorrect: false, reason: '「とおか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十時」讀「じゅうじ」，是一般讀法。',
+            relatedRules: ['小時の讀法', '10時']
+        },
+        sourceItem: { value: 10, kanji: '十時', reading: 'じゅうじ' }
+    },
+    {
+        id: 'hour_extra_101',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：「11時」讀作？',
+        stem_zh: '總復習：「11時」讀作？',
+        options: [
+            { text: 'じゅういちじ', isCorrect: true, reason: '正確！十一時讀「じゅういちじ」。' },
+            { text: 'とおいちじ', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうひとじ', isCorrect: false, reason: '時間使用音讀「いち」。' },
+            { text: 'じゅういちにち', isCorrect: false, reason: '「にち」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十一時」讀「じゅういちじ」，是一般讀法。',
+            relatedRules: ['小時の讀法', '11時']
+        },
+        sourceItem: { value: 11, kanji: '十一時', reading: 'じゅういちじ' }
+    },
+    {
+        id: 'hour_extra_102',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '總復習：正午是幾點？',
+        stem_zh: '總復習：正午是幾點？',
+        dialogue: {
+            speakerA: '正午は何時ですか？',
+            speakerB: '＿＿です。（十二點）'
+        },
+        options: [
+            { text: 'じゅうにじ', isCorrect: true, reason: '正確！十二時讀「じゅうにじ」。' },
+            { text: 'じゅうふたじ', isCorrect: false, reason: '時間使用音讀「に」。' },
+            { text: 'とおにじ', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうににち', isCorrect: false, reason: '「にち」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '正午是「十二時」，讀「じゅうにじ」。',
+            relatedRules: ['小時の讀法', '正午=12時']
+        },
+        sourceItem: { value: 12, kanji: '十二時', reading: 'じゅうにじ' }
+    },
+    {
+        id: 'hour_extra_103',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「〜時半」的「半」讀作？',
+        stem_zh: '「〜時半」的「半」讀作？',
+        options: [
+            { text: 'はん', isCorrect: true, reason: '正確！半讀「はん」。' },
+            { text: 'なかば', isCorrect: false, reason: '在時間表達中讀「はん」。' },
+            { text: 'はんぶん', isCorrect: false, reason: '只有「はん」一個字。' },
+            { text: 'ばん', isCorrect: false, reason: '不是濁音。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「〜時半」的「半」讀「はん」，表示30分。',
+            relatedRules: ['時間表達', '〜時半']
+        },
+        sourceItem: { value: 'half', kanji: '半', reading: 'はん' }
+    },
+    {
+        id: 'hour_extra_104',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: true,
+        stem: '門診是＿＿開始。',
+        stem_zh: '門診是九點半開始。',
+        options: [
+            { text: 'くじはん', isCorrect: true, reason: '正確！九時半讀「くじはん」。' },
+            { text: 'きゅうじはん', isCorrect: false, reason: '陷阱！九時固定讀「くじ」。' },
+            { text: 'ここのじはん', isCorrect: false, reason: '時間用音讀。' },
+            { text: 'ここのかはん', isCorrect: false, reason: '「ここのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九時半」讀「くじはん」。',
+            trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
+            relatedRules: ['九時の讀法', '診療時間']
+        },
+        sourceItem: { value: '9:30', kanji: '九時半', reading: 'くじはん' }
+    },
+    {
+        id: 'hour_extra_105',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '一天有幾小時？',
+        stem_zh: '一天有幾小時？',
+        dialogue: {
+            speakerA: '一日は何時間ありますか？',
+            speakerB: '＿＿あります。（二十四）'
+        },
+        options: [
+            { text: 'にじゅうよじかん', isCorrect: true, reason: '正確！二十四時間讀「にじゅうよじかん」。' },
+            { text: 'にじゅうしじかん', isCorrect: false, reason: '24時間的24讀「にじゅうよ」。' },
+            { text: 'にじゅうよんじかん', isCorrect: false, reason: '「24時間」讀「にじゅうよじかん」。' },
+            { text: 'はつかよじかん', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「24時間」讀「にじゅうよじかん」。',
+            relatedRules: ['時間表達', '一日=24時間']
+        },
+        sourceItem: { value: 24, kanji: '二十四時間', reading: 'にじゅうよじかん' }
+    },
+    {
+        id: 'hour_extra_106',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「〜時」的「時」讀作？',
+        stem_zh: '「〜時」的「時」讀作？',
+        options: [
+            { text: 'じ', isCorrect: true, reason: '正確！時讀「じ」。' },
+            { text: 'とき', isCorrect: false, reason: '「とき」是「時間/時候」的訓讀。' },
+            { text: 'し', isCorrect: false, reason: '時間的「時」讀「じ」。' },
+            { text: 'ちょう', isCorrect: false, reason: '這不是「時」的讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「〜時」的「時」讀「じ」，表示小時。',
+            relatedRules: ['時間表達', '時=じ']
+        },
+        sourceItem: { value: 'hour', kanji: '時', reading: 'じ' }
+    },
+    {
+        id: 'hour_extra_107',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: true,
+        stem: '總復習：「四時」的正確讀法是？',
+        stem_zh: '總復習：「四時」的正確讀法是？',
+        options: [
+            { text: 'よじ', isCorrect: true, reason: '正確！四時讀「よじ」。' },
+            { text: 'しじ', isCorrect: false, reason: '陷阱！四時固定讀「よじ」。' },
+            { text: 'よんじ', isCorrect: false, reason: '陷阱！四時固定讀「よじ」。' },
+            { text: 'よっか', isCorrect: false, reason: '「よっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四時」固定讀「よじ」，這是最重要的特殊讀法之一。',
+            trapExplanation: '四時是特殊讀法，禁止讀「よんじ」或「しじ」。',
+            relatedRules: ['四時の讀法', '特殊讀法']
+        },
+        sourceItem: { value: 4, kanji: '四時', reading: 'よじ' }
+    },
+    {
+        id: 'hour_extra_108',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '總復習：「七時」的正確讀法是？',
+        stem_zh: '總復習：「七時」的正確讀法是？',
+        dialogue: {
+            speakerA: '「七時」はどう読みますか？',
+            speakerB: '＿＿と読みます。'
+        },
+        options: [
+            { text: 'しちじ', isCorrect: true, reason: '正確！七時讀「しちじ」。' },
+            { text: 'ななじ', isCorrect: false, reason: '陷阱！七時固定讀「しちじ」。' },
+            { text: 'なのか', isCorrect: false, reason: '「なのか」是日期。' },
+            { text: 'しちとき', isCorrect: false, reason: '小時讀「じ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七時」固定讀「しちじ」，這是最重要的特殊讀法之一。',
+            trapExplanation: '七時是特殊讀法，禁止讀「ななじ」。',
+            relatedRules: ['七時の讀法', '特殊讀法']
+        },
+        sourceItem: { value: 7, kanji: '七時', reading: 'しちじ' }
+    },
+    {
+        id: 'hour_extra_109',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '總復習：「九時」的正確讀法是？',
+        stem_zh: '總復習：「九時」的正確讀法是？',
+        options: [
+            { text: 'くじ', isCorrect: true, reason: '正確！九時讀「くじ」。' },
+            { text: 'きゅうじ', isCorrect: false, reason: '陷阱！九時固定讀「くじ」。' },
+            { text: 'ここのじ', isCorrect: false, reason: '時間用音讀。' },
+            { text: 'ここのか', isCorrect: false, reason: '「ここのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九時」固定讀「くじ」，這是最重要的特殊讀法之一。',
+            trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
+            relatedRules: ['九時の讀法', '特殊讀法']
+        },
+        sourceItem: { value: 9, kanji: '九時', reading: 'くじ' }
+    },
+    {
+        id: 'hour_extra_110',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：小時讀法有幾種模式？',
+        stem_zh: '總復習：小時讀法有幾種模式？',
+        options: [
+            { text: '兩種：一般讀法和特殊讀法（4/7/9時）', isCorrect: true, reason: '正確！小時讀法分一般和特殊。' },
+            { text: '只有一種', isCorrect: false, reason: '有一般讀法和特殊讀法。' },
+            { text: '三種', isCorrect: false, reason: '主要分兩種模式。' },
+            { text: '沒有固定模式', isCorrect: false, reason: '有明確的規則。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '小時讀法分兩種：一般讀法和特殊讀法（4時/7時/9時）。',
+            relatedRules: ['小時の讀法總整理', '兩種模式']
+        },
+        sourceItem: { value: 'summary', kanji: '總復習', reading: '兩種模式' }
+    },
+    {
+        id: 'hour_extra_111',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '「午前」是什麼意思？',
+        stem_zh: '「午前」是什麼意思？',
+        dialogue: {
+            speakerA: '「午前」はどういう意味ですか？',
+            speakerB: '＿＿という意味です。'
+        },
+        options: [
+            { text: '上午', isCorrect: true, reason: '正確！午前是上午。' },
+            { text: '下午', isCorrect: false, reason: '下午是「午後」。' },
+            { text: '中午', isCorrect: false, reason: '中午是「正午」。' },
+            { text: '半夜', isCorrect: false, reason: '半夜是「真夜中」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「午前」（ごぜん）表示上午，從0時到12時。',
+            relatedRules: ['時間表達', '午前=AM']
+        },
+        sourceItem: { value: 'AM', kanji: '午前', reading: 'ごぜん' }
+    },
+    {
+        id: 'hour_extra_112',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「午後」讀作？',
+        stem_zh: '「午後」讀作？',
+        options: [
+            { text: 'ごご', isCorrect: true, reason: '正確！午後讀「ごご」。' },
+            { text: 'ごこう', isCorrect: false, reason: '「後」讀「ご」。' },
+            { text: 'うまあと', isCorrect: false, reason: '這是訓讀方式，不用於時間。' },
+            { text: 'ごうご', isCorrect: false, reason: '不是長音。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「午後」讀「ごご」，表示下午（PM）。',
+            relatedRules: ['時間表達', '午後=PM']
+        },
+        sourceItem: { value: 'PM', kanji: '午後', reading: 'ごご' }
+    },
+    {
+        id: 'hour_extra_113',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: true,
+        stem: '會議在＿＿召開。',
+        stem_zh: '會議在下午四點召開。',
+        options: [
+            { text: 'ごごよじ', isCorrect: true, reason: '正確！午後四時讀「ごごよじ」。' },
+            { text: 'ごごしじ', isCorrect: false, reason: '陷阱！四時固定讀「よじ」。' },
+            { text: 'ごごよんじ', isCorrect: false, reason: '陷阱！四時固定讀「よじ」。' },
+            { text: 'ひるよじ', isCorrect: false, reason: '下午用「午後」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「午後四時」讀「ごごよじ」。',
+            trapExplanation: '四時是特殊讀法，即使加「午後」也讀「よじ」。',
+            relatedRules: ['午後+時刻', '四時の讀法']
+        },
+        sourceItem: { value: 'PM4', kanji: '午後四時', reading: 'ごごよじ' }
+    },
+    {
+        id: 'hour_extra_114',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '早餐時間是什麼時候？',
+        stem_zh: '早餐時間是什麼時候？',
+        dialogue: {
+            speakerA: '朝ごはんは何時ですか？',
+            speakerB: '＿＿です。（早上七點）'
+        },
+        options: [
+            { text: 'ごぜんしちじ', isCorrect: true, reason: '正確！午前七時讀「ごぜんしちじ」。' },
+            { text: 'ごぜんななじ', isCorrect: false, reason: '陷阱！七時固定讀「しちじ」。' },
+            { text: 'あさしちじ', isCorrect: false, reason: '正式說法用「午前」。' },
+            { text: 'ごぜんなのか', isCorrect: false, reason: '「なのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「午前七時」讀「ごぜんしちじ」。',
+            trapExplanation: '七時是特殊讀法，即使加「午前」也讀「しちじ」。',
+            relatedRules: ['午前+時刻', '七時の讀法']
+        },
+        sourceItem: { value: 'AM7', kanji: '午前七時', reading: 'ごぜんしちじ' }
+    },
+    {
+        id: 'hour_extra_115',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「正午」讀作？',
+        stem_zh: '「正午」讀作？',
+        options: [
+            { text: 'しょうご', isCorrect: true, reason: '正確！正午讀「しょうご」。' },
+            { text: 'せいご', isCorrect: false, reason: '「正」讀「しょう」。' },
+            { text: 'ただひる', isCorrect: false, reason: '這是訓讀，不適用。' },
+            { text: 'しょうごご', isCorrect: false, reason: '沒有重複的「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「正午」讀「しょうご」，表示中午12點整。',
+            relatedRules: ['時間表達', '正午=12:00']
+        },
+        sourceItem: { value: 'noon', kanji: '正午', reading: 'しょうご' }
+    },
+    {
+        id: 'hour_extra_116',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '深夜節目在＿＿播出。',
+        stem_zh: '深夜節目在零時（午夜12點）播出。',
+        options: [
+            { text: 'れいじ', isCorrect: true, reason: '正確！零時讀「れいじ」。' },
+            { text: 'ぜろじ', isCorrect: false, reason: '時間用「れいじ」。' },
+            { text: 'まよなか', isCorrect: false, reason: '這是「真夜中」，不是小時讀法。' },
+            { text: 'じゅうにじ', isCorrect: false, reason: '這是12時，不是0時。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「零時」讀「れいじ」，表示午夜0點。',
+            relatedRules: ['時間表達', '零時=0:00']
+        },
+        sourceItem: { value: 0, kanji: '零時', reading: 'れいじ' }
+    },
+    {
+        id: 'hour_extra_117',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '最後一班電車是什麼時候？',
+        stem_zh: '最後一班電車是什麼時候？',
+        dialogue: {
+            speakerA: '終電は何時ですか？',
+            speakerB: '＿＿です。（晚上九點）'
+        },
+        options: [
+            { text: 'よるくじ', isCorrect: true, reason: '正確！夜九時讀「よるくじ」。' },
+            { text: 'よるきゅうじ', isCorrect: false, reason: '陷阱！九時固定讀「くじ」。' },
+            { text: 'ばんここのじ', isCorrect: false, reason: '時間用音讀。' },
+            { text: 'ごごここのか', isCorrect: false, reason: '「ここのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「夜九時」讀「よるくじ」。',
+            trapExplanation: '九時是特殊讀法，禁止讀「きゅうじ」。',
+            relatedRules: ['夜+時刻', '九時の讀法']
+        },
+        sourceItem: { value: 'night9', kanji: '夜九時', reading: 'よるくじ' }
+    },
+    {
+        id: 'hour_extra_118',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「朝」讀作？（時間帶表達）',
+        stem_zh: '「朝」讀作？（時間帶表達）',
+        options: [
+            { text: 'あさ', isCorrect: true, reason: '正確！朝讀「あさ」。' },
+            { text: 'ちょう', isCorrect: false, reason: '這是音讀，用於複合詞。' },
+            { text: 'あした', isCorrect: false, reason: '這是「明日」的讀法。' },
+            { text: 'はやい', isCorrect: false, reason: '這是「早い」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「朝」讀「あさ」，表示早上的時間帶。',
+            relatedRules: ['時間帶', '朝=morning']
+        },
+        sourceItem: { value: 'morning', kanji: '朝', reading: 'あさ' }
+    },
+    {
+        id: 'hour_extra_119',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '從＿＿到五點開放。',
+        stem_zh: '從一點到五點開放。',
+        options: [
+            { text: 'いちじからごじまで', isCorrect: true, reason: '正確！一時から五時まで。' },
+            { text: 'ひとつからいつつ', isCorrect: false, reason: '時間用音讀。' },
+            { text: 'いっじからごじ', isCorrect: false, reason: '一時沒有促音。' },
+            { text: 'いちにちからごにち', isCorrect: false, reason: '「にち」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「一時から五時まで」表示時間範圍，用「から〜まで」。',
+            relatedRules: ['時間範圍', '〜から〜まで']
+        },
+        sourceItem: { value: '1-5', kanji: '一時から五時まで', reading: 'いちじからごじまで' }
+    },
+    {
+        id: 'hour_extra_120',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '上班時間是多久？',
+        stem_zh: '上班時間是多久？',
+        dialogue: {
+            speakerA: '勤務時間は何時間ですか？',
+            speakerB: '＿＿です。（八小時）'
+        },
+        options: [
+            { text: 'はちじかん', isCorrect: true, reason: '正確！八時間讀「はちじかん」。' },
+            { text: 'やっじかん', isCorrect: false, reason: '時間長度用音讀「はち」。' },
+            { text: 'はちじ', isCorrect: false, reason: '時間長度要加「間」。' },
+            { text: 'はっじかん', isCorrect: false, reason: '八時間沒有促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「八時間」讀「はちじかん」，表示8小時的時間長度。',
+            relatedRules: ['時間長度', '〜時間']
+        },
+        sourceItem: { value: '8hours', kanji: '八時間', reading: 'はちじかん' }
+    },
+    {
+        id: 'hour_extra_121',
+        category: 'timeDate',
+        subcategory: 'hours',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：特殊讀法的小時有哪些？',
+        stem_zh: '總復習：特殊讀法的小時有哪些？',
+        options: [
+            { text: '4時(よじ)、7時(しちじ)、9時(くじ)', isCorrect: true, reason: '正確！這三個有特殊讀法。' },
+            { text: '1時、2時、3時', isCorrect: false, reason: '這些都是一般讀法。' },
+            { text: '5時、6時、8時', isCorrect: false, reason: '這些都是一般讀法。' },
+            { text: '10時、11時、12時', isCorrect: false, reason: '這些都是一般讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '4時(よじ)、7時(しちじ)、9時(くじ)是三個特殊讀法的小時。',
+            relatedRules: ['小時の讀法總整理', '特殊讀法三個']
+        },
+        sourceItem: { value: 'summary_special', kanji: '特殊讀法', reading: '4/7/9時' }
     }
 ];

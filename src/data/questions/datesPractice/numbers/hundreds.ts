@@ -1612,5 +1612,1340 @@ export const hundredsNumberQuestions: DatesPracticeQuestion[] = [
         correctIndex: 1,
         explanation: { correctRule: '「三百」濁音化為「さんびゃく」。', trapExplanation: '這是陷阱題。', relatedRules: ['三百の音變'] },
         sourceItem: { value: 300, kanji: '三百キロ', reading: 'さんびゃくキロ' }
+    },
+
+    // ===== 追加100題（67-166）=====
+    {
+        id: 'num_hundreds_extra_67', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「四百」的正確讀音是？', stem_zh: '「四百」的正確讀音是？',
+        options: [
+            { text: 'よんひゃく', isCorrect: true, reason: '正確！「四百」讀「よんひゃく」。' },
+            { text: 'しひゃく', isCorrect: false, reason: '「四」避諱讀「よん」。' },
+            { text: 'よんびゃく', isCorrect: false, reason: '「四百」不濁音化。' },
+            { text: 'よんぴゃく', isCorrect: false, reason: '「四百」不半濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四百」讀「よんひゃく」，無音變。', relatedRules: ['四百の讀法'] },
+        sourceItem: { value: 400, kanji: '四百', reading: 'よんひゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_68', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '書籍價格是＿＿円。（五百二十）', stem_zh: '書籍價格是五百二十日圓。',
+        options: [
+            { text: 'ごひゃくにじゅう', isCorrect: true, reason: '正確！「五百二十」讀「ごひゃくにじゅう」。' },
+            { text: 'いつひゃくにじゅう', isCorrect: false, reason: '用音讀「ご」。' },
+            { text: 'ごびゃくにじゅう', isCorrect: false, reason: '「五百」不濁音化。' },
+            { text: 'ごひゃくふたじゅう', isCorrect: false, reason: '用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五百二十」讀「ごひゃくにじゅう」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 520, kanji: '五百二十', reading: 'ごひゃくにじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_69', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このペンはいくらですか？', speakerB: '＿＿円です。（六百）' },
+        options: [
+            { text: 'ろくひゃく', isCorrect: false, reason: '陷阱！「六百」促音+半濁音化。' },
+            { text: 'ろっぴゃく', isCorrect: true, reason: '正確！「六百」讀「ろっぴゃく」。' },
+            { text: 'むひゃく', isCorrect: false, reason: '用音讀「ろく」。' },
+            { text: 'ろくびゃく', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「六百」讀「ろっぴゃく」。', trapExplanation: '「六」在「百」前促音+半濁音化。', relatedRules: ['六百の音變'] },
+        sourceItem: { value: 600, kanji: '六百', reading: 'ろっぴゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_70', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「七百」的正確讀音是？', stem_zh: '「七百」的正確讀音是？',
+        options: [
+            { text: 'ななひゃく', isCorrect: true, reason: '正確！「七百」讀「ななひゃく」。' },
+            { text: 'しちひゃく', isCorrect: false, reason: '「七百」讀「ななひゃく」更常見。' },
+            { text: 'ななびゃく', isCorrect: false, reason: '「七百」不濁音化。' },
+            { text: 'ななぴゃく', isCorrect: false, reason: '「七百」不半濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七百」讀「ななひゃく」，無音變。', relatedRules: ['七百の讀法'] },
+        sourceItem: { value: 700, kanji: '七百', reading: 'ななひゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_71', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '電腦價格是＿＿円。（八百五十）', stem_zh: '電腦價格是八百五十日圓。',
+        options: [
+            { text: 'はちひゃくごじゅう', isCorrect: false, reason: '陷阱！「八百」促音+半濁音化。' },
+            { text: 'はっぴゃくごじゅう', isCorrect: true, reason: '正確！「八百五十」讀「はっぴゃくごじゅう」。' },
+            { text: 'やひゃくごじゅう', isCorrect: false, reason: '用音讀「はち」。' },
+            { text: 'はちびゃくごじゅう', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八百」讀「はっぴゃく」。', trapExplanation: '「八」在「百」前促音+半濁音化。', relatedRules: ['八百の音變'] },
+        sourceItem: { value: 850, kanji: '八百五十', reading: 'はっぴゃくごじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_72', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '参加者は何人ですか？', speakerB: '＿＿人です。（九百）' },
+        options: [
+            { text: 'きゅうひゃく', isCorrect: true, reason: '正確！「九百」讀「きゅうひゃく」。' },
+            { text: 'くひゃく', isCorrect: false, reason: '「九」讀「きゅう」更常見。' },
+            { text: 'きゅうびゃく', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'きゅうぴゃく', isCorrect: false, reason: '「九百」不半濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九百」讀「きゅうひゃく」，無音變。', relatedRules: ['九百の讀法'] },
+        sourceItem: { value: 900, kanji: '九百', reading: 'きゅうひゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_73', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: true,
+        stem: '「一百」的正確讀音是？', stem_zh: '「一百」的正確讀音是？',
+        options: [
+            { text: 'いちひゃく', isCorrect: false, reason: '陷阱！「一百」促音+半濁音化。' },
+            { text: 'いっぴゃく', isCorrect: true, reason: '正確！「一百」讀「いっぴゃく」。' },
+            { text: 'ひとひゃく', isCorrect: false, reason: '用音讀。' },
+            { text: 'いちびゃく', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「一百」讀「いっぴゃく」。', trapExplanation: '「一」在「百」前促音+半濁音化。', relatedRules: ['一百の音變'] },
+        sourceItem: { value: 100, kanji: '一百', reading: 'いっぴゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_74', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '價格是＿＿円。（二百三十四）', stem_zh: '價格是二百三十四日圓。',
+        options: [
+            { text: 'にひゃくさんじゅうよん', isCorrect: true, reason: '正確！「二百三十四」。' },
+            { text: 'にびゃくさんじゅうよん', isCorrect: false, reason: '「二百」不濁音化。' },
+            { text: 'にひゃくさんじゅうし', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'ふたひゃくみじゅうよん', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二百三十四」讀「にひゃくさんじゅうよん」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 234, kanji: '二百三十四', reading: 'にひゃくさんじゅうよん' }
+    },
+    {
+        id: 'num_hundreds_extra_75', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'これはいくらですか？', speakerB: '＿＿円です。（三百四十五）' },
+        options: [
+            { text: 'さんひゃくよんじゅうご', isCorrect: false, reason: '陷阱！「三百」濁音化。' },
+            { text: 'さんびゃくよんじゅうご', isCorrect: true, reason: '正確！「三百四十五」。' },
+            { text: 'みひゃくよじゅういつ', isCorrect: false, reason: '用音讀。' },
+            { text: 'さんぴゃくよんじゅうご', isCorrect: false, reason: '應是濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三百」濁音化為「さんびゃく」。', trapExplanation: '「三」後「百」濁音化。', relatedRules: ['三百の音變'] },
+        sourceItem: { value: 345, kanji: '三百四十五', reading: 'さんびゃくよんじゅうご' }
+    },
+    {
+        id: 'num_hundreds_extra_76', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「四百五十六」的正確讀音是？', stem_zh: '「四百五十六」的正確讀音是？',
+        options: [
+            { text: 'よんひゃくごじゅうろく', isCorrect: true, reason: '正確！「四百五十六」。' },
+            { text: 'しひゃくごじゅうろく', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'よんびゃくごじゅうろく', isCorrect: false, reason: '「四百」不濁音化。' },
+            { text: 'よひゃくいつじゅうむ', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四百五十六」讀「よんひゃくごじゅうろく」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 456, kanji: '四百五十六', reading: 'よんひゃくごじゅうろく' }
+    },
+    {
+        id: 'num_hundreds_extra_77', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '人數是＿＿人。（五百六十七）', stem_zh: '人數是五百六十七人。',
+        options: [
+            { text: 'ごひゃくろくじゅうなな', isCorrect: true, reason: '正確！「五百六十七」。' },
+            { text: 'ごびゃくろくじゅうなな', isCorrect: false, reason: '「五百」不濁音化。' },
+            { text: 'いつひゃくむじゅうなの', isCorrect: false, reason: '用音讀。' },
+            { text: 'ごひゃくろくじゅうしち', isCorrect: false, reason: '「七」讀「なな」更常見。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五百六十七」讀「ごひゃくろくじゅうなな」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 567, kanji: '五百六十七', reading: 'ごひゃくろくじゅうなな' }
+    },
+    {
+        id: 'num_hundreds_extra_78', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'この本はいくらですか？', speakerB: '＿＿円です。（六百七十八）' },
+        options: [
+            { text: 'ろくひゃくななじゅうはち', isCorrect: false, reason: '陷阱！「六百」促音+半濁音化。' },
+            { text: 'ろっぴゃくななじゅうはち', isCorrect: true, reason: '正確！「六百七十八」。' },
+            { text: 'むひゃくななじゅうはち', isCorrect: false, reason: '用音讀「ろく」。' },
+            { text: 'ろくびゃくななじゅうはち', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「六百」讀「ろっぴゃく」。', trapExplanation: '「六」促音+半濁音化。', relatedRules: ['六百の音變'] },
+        sourceItem: { value: 678, kanji: '六百七十八', reading: 'ろっぴゃくななじゅうはち' }
+    },
+    {
+        id: 'num_hundreds_extra_79', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「七百八十九」的正確讀音是？', stem_zh: '「七百八十九」的正確讀音是？',
+        options: [
+            { text: 'ななひゃくはちじゅうきゅう', isCorrect: true, reason: '正確！「七百八十九」。' },
+            { text: 'しちひゃくはちじゅうく', isCorrect: false, reason: '「七」讀「なな」，「九」讀「きゅう」。' },
+            { text: 'ななびゃくはちじゅうきゅう', isCorrect: false, reason: '「七百」不濁音化。' },
+            { text: 'なのひゃくやじゅうここの', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七百八十九」讀「ななひゃくはちじゅうきゅう」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 789, kanji: '七百八十九', reading: 'ななひゃくはちじゅうきゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_80', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '商品價格是＿＿円。（八百九十）', stem_zh: '商品價格是八百九十日圓。',
+        options: [
+            { text: 'はちひゃくきゅうじゅう', isCorrect: false, reason: '陷阱！「八百」促音+半濁音化。' },
+            { text: 'はっぴゃくきゅうじゅう', isCorrect: true, reason: '正確！「八百九十」。' },
+            { text: 'やひゃくきゅうじゅう', isCorrect: false, reason: '用音讀「はち」。' },
+            { text: 'はちびゃくくじゅう', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八百」讀「はっぴゃく」。', trapExplanation: '「八」促音+半濁音化。', relatedRules: ['八百の音變'] },
+        sourceItem: { value: 890, kanji: '八百九十', reading: 'はっぴゃくきゅうじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_81', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何人参加しましたか？', speakerB: '＿＿人です。（九百十二）' },
+        options: [
+            { text: 'きゅうひゃくじゅうに', isCorrect: true, reason: '正確！「九百十二」。' },
+            { text: 'くひゃくじゅうに', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうびゃくじゅうに', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'ここのひゃくとおに', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九百十二」讀「きゅうひゃくじゅうに」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 912, kanji: '九百十二', reading: 'きゅうひゃくじゅうに' }
+    },
+    {
+        id: 'num_hundreds_extra_82', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: true,
+        stem: '「一百二十三」的正確讀音是？', stem_zh: '「一百二十三」的正確讀音是？',
+        options: [
+            { text: 'いちひゃくにじゅうさん', isCorrect: false, reason: '陷阱！「一百」促音+半濁音化。' },
+            { text: 'いっぴゃくにじゅうさん', isCorrect: true, reason: '正確！「一百二十三」。' },
+            { text: 'ひゃくにじゅうさん', isCorrect: true, reason: '「百」可省略「一」。' },
+            { text: 'ひとひゃくふたじゅうみ', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「一百」讀「いっぴゃく」或直接「ひゃく」。', trapExplanation: '「一」促音+半濁音化。', relatedRules: ['一百の音變'] },
+        sourceItem: { value: 123, kanji: '一百二十三', reading: 'いっぴゃくにじゅうさん' }
+    },
+    {
+        id: 'num_hundreds_extra_83', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '距離是＿＿米。（二百四十五）', stem_zh: '距離是二百四十五公尺。',
+        options: [
+            { text: 'にひゃくよんじゅうご', isCorrect: true, reason: '正確！「二百四十五」。' },
+            { text: 'にびゃくよんじゅうご', isCorrect: false, reason: '「二百」不濁音化。' },
+            { text: 'にひゃくしじゅうご', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'ふたひゃくよじゅういつ', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二百四十五」讀「にひゃくよんじゅうご」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 245, kanji: '二百四十五', reading: 'にひゃくよんじゅうご' }
+    },
+    {
+        id: 'num_hundreds_extra_84', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このお菓子はいくらですか？', speakerB: '＿＿円です。（三百五十六）' },
+        options: [
+            { text: 'さんひゃくごじゅうろく', isCorrect: false, reason: '陷阱！「三百」濁音化。' },
+            { text: 'さんびゃくごじゅうろく', isCorrect: true, reason: '正確！「三百五十六」。' },
+            { text: 'みひゃくいつじゅうむ', isCorrect: false, reason: '用音讀。' },
+            { text: 'さんぴゃくごじゅうろく', isCorrect: false, reason: '應是濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三百」濁音化為「さんびゃく」。', trapExplanation: '「三」後「百」濁音化。', relatedRules: ['三百の音變'] },
+        sourceItem: { value: 356, kanji: '三百五十六', reading: 'さんびゃくごじゅうろく' }
+    },
+    {
+        id: 'num_hundreds_extra_85', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「四百六十七」的正確讀音是？', stem_zh: '「四百六十七」的正確讀音是？',
+        options: [
+            { text: 'よんひゃくろくじゅうなな', isCorrect: true, reason: '正確！「四百六十七」。' },
+            { text: 'しひゃくろくじゅうしち', isCorrect: false, reason: '「四」讀「よん」，「七」讀「なな」。' },
+            { text: 'よんびゃくろくじゅうなな', isCorrect: false, reason: '「四百」不濁音化。' },
+            { text: 'よひゃくむじゅうなの', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四百六十七」讀「よんひゃくろくじゅうなな」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 467, kanji: '四百六十七', reading: 'よんひゃくろくじゅうなな' }
+    },
+    {
+        id: 'num_hundreds_extra_86', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '重量是＿＿克。（五百七十八）', stem_zh: '重量是五百七十八克。',
+        options: [
+            { text: 'ごひゃくななじゅうはち', isCorrect: true, reason: '正確！「五百七十八」。' },
+            { text: 'ごびゃくしちじゅうはち', isCorrect: false, reason: '「五百」不濁音化，「七」讀「なな」。' },
+            { text: 'いつひゃくなのじゅうや', isCorrect: false, reason: '用音讀。' },
+            { text: 'ごひゃくしちじゅうはち', isCorrect: false, reason: '「七」讀「なな」更常見。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五百七十八」讀「ごひゃくななじゅうはち」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 578, kanji: '五百七十八', reading: 'ごひゃくななじゅうはち' }
+    },
+    {
+        id: 'num_hundreds_extra_87', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: true,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '本は何冊ありますか？', speakerB: '＿＿冊です。（六百八十九）' },
+        options: [
+            { text: 'ろくひゃくはちじゅうきゅう', isCorrect: false, reason: '陷阱！「六百」促音+半濁音化。' },
+            { text: 'ろっぴゃくはちじゅうきゅう', isCorrect: true, reason: '正確！「六百八十九」。' },
+            { text: 'むひゃくやじゅうここの', isCorrect: false, reason: '用音讀。' },
+            { text: 'ろくびゃくはちじゅうく', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「六百」讀「ろっぴゃく」。', trapExplanation: '「六」促音+半濁音化。', relatedRules: ['六百の音變'] },
+        sourceItem: { value: 689, kanji: '六百八十九', reading: 'ろっぴゃくはちじゅうきゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_88', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「七百九十」的正確讀音是？', stem_zh: '「七百九十」的正確讀音是？',
+        options: [
+            { text: 'ななひゃくきゅうじゅう', isCorrect: true, reason: '正確！「七百九十」。' },
+            { text: 'しちひゃくくじゅう', isCorrect: false, reason: '「七」讀「なな」，「九」讀「きゅう」。' },
+            { text: 'ななびゃくきゅうじゅう', isCorrect: false, reason: '「七百」不濁音化。' },
+            { text: 'なのひゃくここのじゅう', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七百九十」讀「ななひゃくきゅうじゅう」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 790, kanji: '七百九十', reading: 'ななひゃくきゅうじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_89', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '價格是＿＿円。（八百十一）', stem_zh: '價格是八百十一日圓。',
+        options: [
+            { text: 'はちひゃくじゅういち', isCorrect: false, reason: '陷阱！「八百」促音+半濁音化。' },
+            { text: 'はっぴゃくじゅういち', isCorrect: true, reason: '正確！「八百十一」。' },
+            { text: 'やひゃくとおいち', isCorrect: false, reason: '用音讀。' },
+            { text: 'はちびゃくじゅういち', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八百」讀「はっぴゃく」。', trapExplanation: '「八」促音+半濁音化。', relatedRules: ['八百の音變'] },
+        sourceItem: { value: 811, kanji: '八百十一', reading: 'はっぴゃくじゅういち' }
+    },
+    {
+        id: 'num_hundreds_extra_90', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このケーキはいくらですか？', speakerB: '＿＿円です。（九百二十二）' },
+        options: [
+            { text: 'きゅうひゃくにじゅうに', isCorrect: true, reason: '正確！「九百二十二」。' },
+            { text: 'くひゃくにじゅうに', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうびゃくにじゅうに', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'ここのひゃくふたじゅうふた', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九百二十二」讀「きゅうひゃくにじゅうに」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 922, kanji: '九百二十二', reading: 'きゅうひゃくにじゅうに' }
+    },
+    {
+        id: 'num_hundreds_extra_91', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: true,
+        stem: '哪些數字在「百」前會促音+半濁音化？', stem_zh: '哪些數字在「百」前會促音+半濁音化？',
+        options: [
+            { text: '1、6、8', isCorrect: true, reason: '正確！いっぴゃく、ろっぴゃく、はっぴゃく。' },
+            { text: '2、5、9', isCorrect: false, reason: '這些不發生音變。' },
+            { text: '3、4、7', isCorrect: false, reason: '3濁音化，4和7無變化。' },
+            { text: '所有數字', isCorrect: false, reason: '只有1、6、8會促音+半濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '1、6、8在「百」前促音+半濁音化。', relatedRules: ['百の音變規則'] },
+        sourceItem: { value: 0, kanji: '音變規則', reading: '促音+半濁音' }
+    },
+    {
+        id: 'num_hundreds_extra_92', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '哪個數字在「百」前會濁音化？', stem_zh: '哪個數字在「百」前會濁音化？',
+        options: [
+            { text: '3', isCorrect: true, reason: '正確！「三百」讀「さんびゃく」。' },
+            { text: '1', isCorrect: false, reason: '1是促音+半濁音化。' },
+            { text: '6', isCorrect: false, reason: '6是促音+半濁音化。' },
+            { text: '8', isCorrect: false, reason: '8是促音+半濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '只有3在「百」前濁音化。', trapExplanation: '「三百」讀「さんびゃく」。', relatedRules: ['百の音變規則'] },
+        sourceItem: { value: 3, kanji: '三百', reading: 'さんびゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_93', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '写真は何枚ありますか？', speakerB: '＿＿枚です。（百五十）' },
+        options: [
+            { text: 'ひゃくごじゅう', isCorrect: true, reason: '正確！「百五十」讀「ひゃくごじゅう」。' },
+            { text: 'いっぴゃくごじゅう', isCorrect: true, reason: '也可以讀「いっぴゃくごじゅう」。' },
+            { text: 'もももいつじゅう', isCorrect: false, reason: '用音讀。' },
+            { text: 'ひゃくいつじゅう', isCorrect: false, reason: '「五」讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「百」可省略「一」，直接讀「ひゃく」。', relatedRules: ['一百の省略'] },
+        sourceItem: { value: 150, kanji: '百五十', reading: 'ひゃくごじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_94', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「二百」的正確讀音是？', stem_zh: '「二百」的正確讀音是？',
+        options: [
+            { text: 'にひゃく', isCorrect: true, reason: '正確！「二百」讀「にひゃく」。' },
+            { text: 'ふたひゃく', isCorrect: false, reason: '用音讀「に」。' },
+            { text: 'にびゃく', isCorrect: false, reason: '「二百」不濁音化。' },
+            { text: 'にっぴゃく', isCorrect: false, reason: '「二百」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二百」讀「にひゃく」，無音變。', relatedRules: ['二百の讀法'] },
+        sourceItem: { value: 200, kanji: '二百', reading: 'にひゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_95', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '會議室容量是＿＿人。（三百）', stem_zh: '會議室容量是三百人。',
+        options: [
+            { text: 'さんびゃく', isCorrect: true, reason: '正確！「三百」讀「さんびゃく」。' },
+            { text: 'さんひゃく', isCorrect: false, reason: '「三百」濁音化。' },
+            { text: 'みひゃく', isCorrect: false, reason: '用音讀「さん」。' },
+            { text: 'さんぴゃく', isCorrect: false, reason: '應是濁音。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「三百」濁音化為「さんびゃく」。', relatedRules: ['三百の音變'] },
+        sourceItem: { value: 300, kanji: '三百', reading: 'さんびゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_96', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このコーヒーはいくらですか？', speakerB: '＿＿円です。（四百）' },
+        options: [
+            { text: 'よんひゃく', isCorrect: true, reason: '正確！「四百」讀「よんひゃく」。' },
+            { text: 'しひゃく', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'よんびゃく', isCorrect: false, reason: '「四百」不濁音化。' },
+            { text: 'よひゃく', isCorrect: false, reason: '需要「よん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四百」讀「よんひゃく」，無音變。', relatedRules: ['四百の讀法'] },
+        sourceItem: { value: 400, kanji: '四百', reading: 'よんひゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_97', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「五百」的正確讀音是？', stem_zh: '「五百」的正確讀音是？',
+        options: [
+            { text: 'ごひゃく', isCorrect: true, reason: '正確！「五百」讀「ごひゃく」。' },
+            { text: 'いつひゃく', isCorrect: false, reason: '用音讀「ご」。' },
+            { text: 'ごびゃく', isCorrect: false, reason: '「五百」不濁音化。' },
+            { text: 'ごっぴゃく', isCorrect: false, reason: '「五百」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五百」讀「ごひゃく」，無音變。', relatedRules: ['五百の讀法'] },
+        sourceItem: { value: 500, kanji: '五百', reading: 'ごひゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_98', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '這本書有＿＿頁。（六百）', stem_zh: '這本書有六百頁。',
+        options: [
+            { text: 'ろくひゃく', isCorrect: false, reason: '陷阱！「六百」促音+半濁音化。' },
+            { text: 'ろっぴゃく', isCorrect: true, reason: '正確！「六百」讀「ろっぴゃく」。' },
+            { text: 'むひゃく', isCorrect: false, reason: '用音讀「ろく」。' },
+            { text: 'ろくびゃく', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「六百」讀「ろっぴゃく」。', trapExplanation: '「六」促音+半濁音化。', relatedRules: ['六百の音變'] },
+        sourceItem: { value: 600, kanji: '六百', reading: 'ろっぴゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_99', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何人参加しましたか？', speakerB: '＿＿人です。（七百）' },
+        options: [
+            { text: 'ななひゃく', isCorrect: true, reason: '正確！「七百」讀「ななひゃく」。' },
+            { text: 'しちひゃく', isCorrect: false, reason: '「七百」讀「ななひゃく」更常見。' },
+            { text: 'ななびゃく', isCorrect: false, reason: '「七百」不濁音化。' },
+            { text: 'なのひゃく', isCorrect: false, reason: '用「なな」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七百」讀「ななひゃく」，無音變。', relatedRules: ['七百の讀法'] },
+        sourceItem: { value: 700, kanji: '七百', reading: 'ななひゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_100', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: true,
+        stem: '「八百」的正確讀音是？', stem_zh: '「八百」的正確讀音是？',
+        options: [
+            { text: 'はちひゃく', isCorrect: false, reason: '陷阱！「八百」促音+半濁音化。' },
+            { text: 'はっぴゃく', isCorrect: true, reason: '正確！「八百」讀「はっぴゃく」。' },
+            { text: 'やひゃく', isCorrect: false, reason: '用音讀「はち」。' },
+            { text: 'はちびゃく', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八百」讀「はっぴゃく」。', trapExplanation: '「八」促音+半濁音化。', relatedRules: ['八百の音變'] },
+        sourceItem: { value: 800, kanji: '八百', reading: 'はっぴゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_101', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '這棟大樓有＿＿戶。（九百）', stem_zh: '這棟大樓有九百戶。',
+        options: [
+            { text: 'きゅうひゃく', isCorrect: true, reason: '正確！「九百」讀「きゅうひゃく」。' },
+            { text: 'くひゃく', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうびゃく', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'ここのひゃく', isCorrect: false, reason: '用音讀「きゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九百」讀「きゅうひゃく」，無音變。', relatedRules: ['九百の讀法'] },
+        sourceItem: { value: 900, kanji: '九百', reading: 'きゅうひゃく' }
+    },
+    {
+        id: 'num_hundreds_extra_102', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: true,
+        stem: '問距離', stem_zh: '問距離',
+        dialogue: { speakerA: '駅まで何メートルですか？', speakerB: '＿＿メートルです。（百三十）' },
+        options: [
+            { text: 'いちひゃくさんじゅう', isCorrect: false, reason: '陷阱！「一百」促音+半濁音化。' },
+            { text: 'ひゃくさんじゅう', isCorrect: true, reason: '正確！「百」可省略「一」。' },
+            { text: 'いっぴゃくさんじゅう', isCorrect: true, reason: '也正確，完整讀法。' },
+            { text: 'ももさんじゅう', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「百」可省略「一」，也可讀「いっぴゃく」。', relatedRules: ['一百の省略'] },
+        sourceItem: { value: 130, kanji: '百三十', reading: 'ひゃくさんじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_103', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「二百三十四」的正確讀音是？', stem_zh: '「二百三十四」的正確讀音是？',
+        options: [
+            { text: 'にひゃくさんじゅうよん', isCorrect: true, reason: '正確！「二百三十四」。' },
+            { text: 'にびゃくさんじゅうし', isCorrect: false, reason: '「二百」不濁音化，「四」讀「よん」。' },
+            { text: 'ふたひゃくみじゅうよ', isCorrect: false, reason: '用音讀。' },
+            { text: 'にひゃくさんじゅうし', isCorrect: false, reason: '「四」讀「よん」更常見。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二百三十四」讀「にひゃくさんじゅうよん」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 234, kanji: '二百三十四', reading: 'にひゃくさんじゅうよん' }
+    },
+    {
+        id: 'num_hundreds_extra_104', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '會場有＿＿個座位。（三百四十五）', stem_zh: '會場有三百四十五個座位。',
+        options: [
+            { text: 'さんひゃくよんじゅうご', isCorrect: false, reason: '陷阱！「三百」濁音化。' },
+            { text: 'さんびゃくよんじゅうご', isCorrect: true, reason: '正確！「三百四十五」。' },
+            { text: 'みひゃくしじゅういつ', isCorrect: false, reason: '用音讀。' },
+            { text: 'さんぴゃくよんじゅうご', isCorrect: false, reason: '應是濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三百」濁音化為「さんびゃく」。', trapExplanation: '「三」後「百」濁音化。', relatedRules: ['三百の音變'] },
+        sourceItem: { value: 345, kanji: '三百四十五', reading: 'さんびゃくよんじゅうご' }
+    },
+    {
+        id: 'num_hundreds_extra_105', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このノートはいくらですか？', speakerB: '＿＿円です。（四百五十六）' },
+        options: [
+            { text: 'よんひゃくごじゅうろく', isCorrect: true, reason: '正確！「四百五十六」。' },
+            { text: 'しひゃくごじゅうろく', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'よんびゃくごじゅうろく', isCorrect: false, reason: '「四百」不濁音化。' },
+            { text: 'よひゃくいつじゅうむ', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四百五十六」讀「よんひゃくごじゅうろく」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 456, kanji: '四百五十六', reading: 'よんひゃくごじゅうろく' }
+    },
+    {
+        id: 'num_hundreds_extra_106', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「五百六十七」的正確讀音是？', stem_zh: '「五百六十七」的正確讀音是？',
+        options: [
+            { text: 'ごひゃくろくじゅうなな', isCorrect: true, reason: '正確！「五百六十七」。' },
+            { text: 'ごびゃくろくじゅうしち', isCorrect: false, reason: '「五百」不濁音化，「七」讀「なな」。' },
+            { text: 'いつひゃくむじゅうなの', isCorrect: false, reason: '用音讀。' },
+            { text: 'ごひゃくろくじゅうしち', isCorrect: false, reason: '「七」讀「なな」更常見。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五百六十七」讀「ごひゃくろくじゅうなな」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 567, kanji: '五百六十七', reading: 'ごひゃくろくじゅうなな' }
+    },
+    {
+        id: 'num_hundreds_extra_107', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '商品編號是＿＿。（六百七十八）', stem_zh: '商品編號是六百七十八。',
+        options: [
+            { text: 'ろくひゃくななじゅうはち', isCorrect: false, reason: '陷阱！「六百」促音+半濁音化。' },
+            { text: 'ろっぴゃくななじゅうはち', isCorrect: true, reason: '正確！「六百七十八」。' },
+            { text: 'むひゃくなのじゅうや', isCorrect: false, reason: '用音讀。' },
+            { text: 'ろくびゃくななじゅうはち', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「六百」讀「ろっぴゃく」。', trapExplanation: '「六」促音+半濁音化。', relatedRules: ['六百の音變'] },
+        sourceItem: { value: 678, kanji: '六百七十八', reading: 'ろっぴゃくななじゅうはち' }
+    },
+    {
+        id: 'num_hundreds_extra_108', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何人いますか？', speakerB: '＿＿人です。（七百八十九）' },
+        options: [
+            { text: 'ななひゃくはちじゅうきゅう', isCorrect: true, reason: '正確！「七百八十九」。' },
+            { text: 'しちひゃくはちじゅうく', isCorrect: false, reason: '「七」讀「なな」，「九」讀「きゅう」。' },
+            { text: 'ななびゃくはちじゅうきゅう', isCorrect: false, reason: '「七百」不濁音化。' },
+            { text: 'なのひゃくやじゅうここの', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七百八十九」讀「ななひゃくはちじゅうきゅう」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 789, kanji: '七百八十九', reading: 'ななひゃくはちじゅうきゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_109', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: true,
+        stem: '「八百九十」的正確讀音是？', stem_zh: '「八百九十」的正確讀音是？',
+        options: [
+            { text: 'はちひゃくきゅうじゅう', isCorrect: false, reason: '陷阱！「八百」促音+半濁音化。' },
+            { text: 'はっぴゃくきゅうじゅう', isCorrect: true, reason: '正確！「八百九十」。' },
+            { text: 'やひゃくここのじゅう', isCorrect: false, reason: '用音讀。' },
+            { text: 'はちびゃくきゅうじゅう', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八百」讀「はっぴゃく」。', trapExplanation: '「八」促音+半濁音化。', relatedRules: ['八百の音變'] },
+        sourceItem: { value: 890, kanji: '八百九十', reading: 'はっぴゃくきゅうじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_110', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '圖書館有＿＿本書。（九百一）', stem_zh: '圖書館有九百零一本書。',
+        options: [
+            { text: 'きゅうひゃくいち', isCorrect: true, reason: '正確！「九百一」。' },
+            { text: 'くひゃくいち', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうびゃくいち', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'ここのひゃくひと', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九百一」讀「きゅうひゃくいち」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 901, kanji: '九百一', reading: 'きゅうひゃくいち' }
+    },
+    {
+        id: 'num_hundreds_extra_111', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: true,
+        stem: '問金額', stem_zh: '問金額',
+        dialogue: { speakerA: '合計はいくらですか？', speakerB: '＿＿円です。（百十二）' },
+        options: [
+            { text: 'いちひゃくじゅうに', isCorrect: false, reason: '陷阱！「一百」促音+半濁音化或省略。' },
+            { text: 'ひゃくじゅうに', isCorrect: true, reason: '正確！「百十二」可省略「一」。' },
+            { text: 'ももとおに', isCorrect: false, reason: '用音讀。' },
+            { text: 'いっぴゃくじゅうに', isCorrect: true, reason: '也正確，完整讀法。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「百」可省略「一」。', relatedRules: ['一百の省略'] },
+        sourceItem: { value: 112, kanji: '百十二', reading: 'ひゃくじゅうに' }
+    },
+    {
+        id: 'num_hundreds_extra_112', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「二百二十三」的正確讀音是？', stem_zh: '「二百二十三」的正確讀音是？',
+        options: [
+            { text: 'にひゃくにじゅうさん', isCorrect: true, reason: '正確！「二百二十三」。' },
+            { text: 'にびゃくにじゅうさん', isCorrect: false, reason: '「二百」不濁音化。' },
+            { text: 'ふたひゃくふたじゅうみ', isCorrect: false, reason: '用音讀。' },
+            { text: 'にっぴゃくにじゅうさん', isCorrect: false, reason: '「二百」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二百二十三」讀「にひゃくにじゅうさん」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 223, kanji: '二百二十三', reading: 'にひゃくにじゅうさん' }
+    },
+    {
+        id: 'num_hundreds_extra_113', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '演唱會有＿＿人。（三百三十四）', stem_zh: '演唱會有三百三十四人。',
+        options: [
+            { text: 'さんひゃくさんじゅうよん', isCorrect: false, reason: '陷阱！「三百」濁音化。' },
+            { text: 'さんびゃくさんじゅうよん', isCorrect: true, reason: '正確！「三百三十四」。' },
+            { text: 'みひゃくみじゅうよ', isCorrect: false, reason: '用音讀。' },
+            { text: 'さんぴゃくさんじゅうよん', isCorrect: false, reason: '應是濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三百」濁音化為「さんびゃく」。', trapExplanation: '「三」後「百」濁音化。', relatedRules: ['三百の音變'] },
+        sourceItem: { value: 334, kanji: '三百三十四', reading: 'さんびゃくさんじゅうよん' }
+    },
+    {
+        id: 'num_hundreds_extra_114', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このペンはいくらですか？', speakerB: '＿＿円です。（四百四十五）' },
+        options: [
+            { text: 'よんひゃくよんじゅうご', isCorrect: true, reason: '正確！「四百四十五」。' },
+            { text: 'しひゃくしじゅうご', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'よんびゃくよんじゅうご', isCorrect: false, reason: '「四百」不濁音化。' },
+            { text: 'よひゃくよじゅういつ', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四百四十五」讀「よんひゃくよんじゅうご」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 445, kanji: '四百四十五', reading: 'よんひゃくよんじゅうご' }
+    },
+    {
+        id: 'num_hundreds_extra_115', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「五百五十六」的正確讀音是？', stem_zh: '「五百五十六」的正確讀音是？',
+        options: [
+            { text: 'ごひゃくごじゅうろく', isCorrect: true, reason: '正確！「五百五十六」。' },
+            { text: 'ごびゃくごじゅうろく', isCorrect: false, reason: '「五百」不濁音化。' },
+            { text: 'いつひゃくいつじゅうむ', isCorrect: false, reason: '用音讀。' },
+            { text: 'ごっぴゃくごじゅうろく', isCorrect: false, reason: '「五百」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五百五十六」讀「ごひゃくごじゅうろく」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 556, kanji: '五百五十六', reading: 'ごひゃくごじゅうろく' }
+    },
+    {
+        id: 'num_hundreds_extra_116', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '這個城市有＿＿條公車路線。（六百六十七）', stem_zh: '這個城市有六百六十七條公車路線。',
+        options: [
+            { text: 'ろくひゃくろくじゅうなな', isCorrect: false, reason: '陷阱！「六百」促音+半濁音化。' },
+            { text: 'ろっぴゃくろくじゅうなな', isCorrect: true, reason: '正確！「六百六十七」。' },
+            { text: 'むひゃくむじゅうなの', isCorrect: false, reason: '用音讀。' },
+            { text: 'ろくびゃくろくじゅうなな', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「六百」讀「ろっぴゃく」。', trapExplanation: '「六」促音+半濁音化。', relatedRules: ['六百の音變'] },
+        sourceItem: { value: 667, kanji: '六百六十七', reading: 'ろっぴゃくろくじゅうなな' }
+    },
+    {
+        id: 'num_hundreds_extra_117', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何枚ありますか？', speakerB: '＿＿枚です。（七百七十八）' },
+        options: [
+            { text: 'ななひゃくななじゅうはち', isCorrect: true, reason: '正確！「七百七十八」。' },
+            { text: 'しちひゃくしちじゅうはち', isCorrect: false, reason: '「七」讀「なな」。' },
+            { text: 'ななびゃくななじゅうはち', isCorrect: false, reason: '「七百」不濁音化。' },
+            { text: 'なのひゃくなのじゅうや', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七百七十八」讀「ななひゃくななじゅうはち」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 778, kanji: '七百七十八', reading: 'ななひゃくななじゅうはち' }
+    },
+    {
+        id: 'num_hundreds_extra_118', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: true,
+        stem: '「八百八十九」的正確讀音是？', stem_zh: '「八百八十九」的正確讀音是？',
+        options: [
+            { text: 'はちひゃくはちじゅうきゅう', isCorrect: false, reason: '陷阱！「八百」促音+半濁音化。' },
+            { text: 'はっぴゃくはちじゅうきゅう', isCorrect: true, reason: '正確！「八百八十九」。' },
+            { text: 'やひゃくやじゅうここの', isCorrect: false, reason: '用音讀。' },
+            { text: 'はちびゃくはちじゅうきゅう', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八百」讀「はっぴゃく」。', trapExplanation: '「八」促音+半濁音化。', relatedRules: ['八百の音變'] },
+        sourceItem: { value: 889, kanji: '八百八十九', reading: 'はっぴゃくはちじゅうきゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_119', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '這件商品售價＿＿円。（九百九十）', stem_zh: '這件商品售價九百九十日圓。',
+        options: [
+            { text: 'きゅうひゃくきゅうじゅう', isCorrect: true, reason: '正確！「九百九十」。' },
+            { text: 'くひゃくくじゅう', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうびゃくきゅうじゅう', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'ここのひゃくここのじゅう', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九百九十」讀「きゅうひゃくきゅうじゅう」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 990, kanji: '九百九十', reading: 'きゅうひゃくきゅうじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_120', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'お菓子はいくらですか？', speakerB: '＿＿円です。（百一）' },
+        options: [
+            { text: 'いちひゃくいち', isCorrect: false, reason: '陷阱！「一百」促音+半濁音化或省略。' },
+            { text: 'ひゃくいち', isCorrect: true, reason: '正確！「百」可省略「一」。' },
+            { text: 'ももひと', isCorrect: false, reason: '用音讀。' },
+            { text: 'いっぴゃくいち', isCorrect: true, reason: '也正確，完整讀法。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「百」可省略「一」。', relatedRules: ['一百の省略'] },
+        sourceItem: { value: 101, kanji: '百一', reading: 'ひゃくいち' }
+    },
+    {
+        id: 'num_hundreds_extra_121', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「二百十五」的正確讀音是？', stem_zh: '「二百十五」的正確讀音是？',
+        options: [
+            { text: 'にひゃくじゅうご', isCorrect: true, reason: '正確！「二百十五」。' },
+            { text: 'にびゃくじゅうご', isCorrect: false, reason: '「二百」不濁音化。' },
+            { text: 'ふたひゃくとおご', isCorrect: false, reason: '用音讀。' },
+            { text: 'にっぴゃくじゅうご', isCorrect: false, reason: '「二百」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二百十五」讀「にひゃくじゅうご」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 215, kanji: '二百十五', reading: 'にひゃくじゅうご' }
+    },
+    {
+        id: 'num_hundreds_extra_122', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '停車場有＿＿個車位。（三百二十六）', stem_zh: '停車場有三百二十六個車位。',
+        options: [
+            { text: 'さんひゃくにじゅうろく', isCorrect: false, reason: '陷阱！「三百」濁音化。' },
+            { text: 'さんびゃくにじゅうろく', isCorrect: true, reason: '正確！「三百二十六」。' },
+            { text: 'みひゃくふたじゅうむ', isCorrect: false, reason: '用音讀。' },
+            { text: 'さんぴゃくにじゅうろく', isCorrect: false, reason: '應是濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三百」濁音化為「さんびゃく」。', trapExplanation: '「三」後「百」濁音化。', relatedRules: ['三百の音變'] },
+        sourceItem: { value: 326, kanji: '三百二十六', reading: 'さんびゃくにじゅうろく' }
+    },
+    {
+        id: 'num_hundreds_extra_123', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問距離', stem_zh: '問距離',
+        dialogue: { speakerA: 'ここから何キロですか？', speakerB: '＿＿キロです。（四百三十七）' },
+        options: [
+            { text: 'よんひゃくさんじゅうなな', isCorrect: true, reason: '正確！「四百三十七」。' },
+            { text: 'しひゃくさんじゅうしち', isCorrect: false, reason: '「四」讀「よん」，「七」讀「なな」。' },
+            { text: 'よんびゃくさんじゅうなな', isCorrect: false, reason: '「四百」不濁音化。' },
+            { text: 'よひゃくみじゅうなの', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四百三十七」讀「よんひゃくさんじゅうなな」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 437, kanji: '四百三十七', reading: 'よんひゃくさんじゅうなな' }
+    },
+    {
+        id: 'num_hundreds_extra_124', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「五百四十八」的正確讀音是？', stem_zh: '「五百四十八」的正確讀音是？',
+        options: [
+            { text: 'ごひゃくよんじゅうはち', isCorrect: true, reason: '正確！「五百四十八」。' },
+            { text: 'ごびゃくしじゅうはち', isCorrect: false, reason: '「五百」不濁音化，「四」讀「よん」。' },
+            { text: 'いつひゃくよじゅうや', isCorrect: false, reason: '用音讀。' },
+            { text: 'ごひゃくしじゅうはち', isCorrect: false, reason: '「四」讀「よん」更常見。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五百四十八」讀「ごひゃくよんじゅうはち」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 548, kanji: '五百四十八', reading: 'ごひゃくよんじゅうはち' }
+    },
+    {
+        id: 'num_hundreds_extra_125', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '這個月銷售額是＿＿萬日圓。（六百五十九）', stem_zh: '這個月銷售額是六百五十九萬日圓。',
+        options: [
+            { text: 'ろくひゃくごじゅうきゅう', isCorrect: false, reason: '陷阱！「六百」促音+半濁音化。' },
+            { text: 'ろっぴゃくごじゅうきゅう', isCorrect: true, reason: '正確！「六百五十九」。' },
+            { text: 'むひゃくいつじゅうここの', isCorrect: false, reason: '用音讀。' },
+            { text: 'ろくびゃくごじゅうきゅう', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「六百」讀「ろっぴゃく」。', trapExplanation: '「六」促音+半濁音化。', relatedRules: ['六百の音變'] },
+        sourceItem: { value: 659, kanji: '六百五十九', reading: 'ろっぴゃくごじゅうきゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_126', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何本ありますか？', speakerB: '＿＿本です。（七百六十）' },
+        options: [
+            { text: 'ななひゃくろくじゅう', isCorrect: true, reason: '正確！「七百六十」。' },
+            { text: 'しちひゃくろくじゅう', isCorrect: false, reason: '「七」讀「なな」。' },
+            { text: 'ななびゃくろくじゅう', isCorrect: false, reason: '「七百」不濁音化。' },
+            { text: 'なのひゃくむじゅう', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七百六十」讀「ななひゃくろくじゅう」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 760, kanji: '七百六十', reading: 'ななひゃくろくじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_127', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: true,
+        stem: '「八百七十一」的正確讀音是？', stem_zh: '「八百七十一」的正確讀音是？',
+        options: [
+            { text: 'はちひゃくななじゅういち', isCorrect: false, reason: '陷阱！「八百」促音+半濁音化。' },
+            { text: 'はっぴゃくななじゅういち', isCorrect: true, reason: '正確！「八百七十一」。' },
+            { text: 'やひゃくなのじゅうひと', isCorrect: false, reason: '用音讀。' },
+            { text: 'はちびゃくななじゅういち', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八百」讀「はっぴゃく」。', trapExplanation: '「八」促音+半濁音化。', relatedRules: ['八百の音變'] },
+        sourceItem: { value: 871, kanji: '八百七十一', reading: 'はっぴゃくななじゅういち' }
+    },
+    {
+        id: 'num_hundreds_extra_128', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '展覽會有＿＿件作品。（九百八十二）', stem_zh: '展覽會有九百八十二件作品。',
+        options: [
+            { text: 'きゅうひゃくはちじゅうに', isCorrect: true, reason: '正確！「九百八十二」。' },
+            { text: 'くひゃくはちじゅうに', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうびゃくはちじゅうに', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'ここのひゃくやじゅうふた', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九百八十二」讀「きゅうひゃくはちじゅうに」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 982, kanji: '九百八十二', reading: 'きゅうひゃくはちじゅうに' }
+    },
+    {
+        id: 'num_hundreds_extra_129', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: true,
+        stem: '問房間號碼', stem_zh: '問房間號碼',
+        dialogue: { speakerA: '部屋番号は？', speakerB: '＿＿号室です。（百九十三）' },
+        options: [
+            { text: 'いちひゃくきゅうじゅうさん', isCorrect: false, reason: '陷阱！「一百」促音+半濁音化或省略。' },
+            { text: 'ひゃくきゅうじゅうさん', isCorrect: true, reason: '正確！「百」可省略「一」。' },
+            { text: 'いっぴゃくきゅうじゅうさん', isCorrect: true, reason: '也正確，完整讀法。' },
+            { text: 'ももここのじゅうみ', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「百」可省略「一」。', relatedRules: ['一百の省略'] },
+        sourceItem: { value: 193, kanji: '百九十三', reading: 'ひゃくきゅうじゅうさん' }
+    },
+    {
+        id: 'num_hundreds_extra_130', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「二百八十四」的正確讀音是？', stem_zh: '「二百八十四」的正確讀音是？',
+        options: [
+            { text: 'にひゃくはちじゅうよん', isCorrect: true, reason: '正確！「二百八十四」。' },
+            { text: 'にびゃくはちじゅうし', isCorrect: false, reason: '「二百」不濁音化，「四」讀「よん」。' },
+            { text: 'ふたひゃくやじゅうよ', isCorrect: false, reason: '用音讀。' },
+            { text: 'にひゃくはちじゅうし', isCorrect: false, reason: '「四」讀「よん」更常見。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二百八十四」讀「にひゃくはちじゅうよん」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 284, kanji: '二百八十四', reading: 'にひゃくはちじゅうよん' }
+    },
+    {
+        id: 'num_hundreds_extra_131', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '這批貨物有＿＿箱。（三百七十五）', stem_zh: '這批貨物有三百七十五箱。',
+        options: [
+            { text: 'さんひゃくななじゅうご', isCorrect: false, reason: '陷阱！「三百」濁音化。' },
+            { text: 'さんびゃくななじゅうご', isCorrect: true, reason: '正確！「三百七十五」。' },
+            { text: 'みひゃくなのじゅういつ', isCorrect: false, reason: '用音讀。' },
+            { text: 'さんぴゃくななじゅうご', isCorrect: false, reason: '應是濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三百」濁音化為「さんびゃく」。', trapExplanation: '「三」後「百」濁音化。', relatedRules: ['三百の音變'] },
+        sourceItem: { value: 375, kanji: '三百七十五', reading: 'さんびゃくななじゅうご' }
+    },
+    {
+        id: 'num_hundreds_extra_132', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このお弁当はいくらですか？', speakerB: '＿＿円です。（四百六十六）' },
+        options: [
+            { text: 'よんひゃくろくじゅうろく', isCorrect: true, reason: '正確！「四百六十六」。' },
+            { text: 'しひゃくろくじゅうろく', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'よんびゃくろくじゅうろく', isCorrect: false, reason: '「四百」不濁音化。' },
+            { text: 'よひゃくむじゅうむ', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四百六十六」讀「よんひゃくろくじゅうろく」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 466, kanji: '四百六十六', reading: 'よんひゃくろくじゅうろく' }
+    },
+    {
+        id: 'num_hundreds_extra_133', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「五百七十七」的正確讀音是？', stem_zh: '「五百七十七」的正確讀音是？',
+        options: [
+            { text: 'ごひゃくななじゅうなな', isCorrect: true, reason: '正確！「五百七十七」。' },
+            { text: 'ごびゃくしちじゅうしち', isCorrect: false, reason: '「五百」不濁音化，「七」讀「なな」。' },
+            { text: 'いつひゃくなのじゅうなの', isCorrect: false, reason: '用音讀。' },
+            { text: 'ごひゃくしちじゅうしち', isCorrect: false, reason: '「七」讀「なな」更常見。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五百七十七」讀「ごひゃくななじゅうなな」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 577, kanji: '五百七十七', reading: 'ごひゃくななじゅうなな' }
+    },
+    {
+        id: 'num_hundreds_extra_134', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '電影院有＿＿個座位。（六百八十八）', stem_zh: '電影院有六百八十八個座位。',
+        options: [
+            { text: 'ろくひゃくはちじゅうはち', isCorrect: false, reason: '陷阱！「六百」促音+半濁音化。' },
+            { text: 'ろっぴゃくはちじゅうはち', isCorrect: true, reason: '正確！「六百八十八」。' },
+            { text: 'むひゃくやじゅうや', isCorrect: false, reason: '用音讀。' },
+            { text: 'ろくびゃくはちじゅうはち', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「六百」讀「ろっぴゃく」。', trapExplanation: '「六」促音+半濁音化。', relatedRules: ['六百の音變'] },
+        sourceItem: { value: 688, kanji: '六百八十八', reading: 'ろっぴゃくはちじゅうはち' }
+    },
+    {
+        id: 'num_hundreds_extra_135', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '商品は何個ですか？', speakerB: '＿＿個です。（七百九十九）' },
+        options: [
+            { text: 'ななひゃくきゅうじゅうきゅう', isCorrect: true, reason: '正確！「七百九十九」。' },
+            { text: 'しちひゃくくじゅうく', isCorrect: false, reason: '「七」讀「なな」，「九」讀「きゅう」。' },
+            { text: 'ななびゃくきゅうじゅうきゅう', isCorrect: false, reason: '「七百」不濁音化。' },
+            { text: 'なのひゃくここのじゅうここの', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七百九十九」讀「ななひゃくきゅうじゅうきゅう」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 799, kanji: '七百九十九', reading: 'ななひゃくきゅうじゅうきゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_136', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: true,
+        stem: '「八百十」的正確讀音是？', stem_zh: '「八百十」的正確讀音是？',
+        options: [
+            { text: 'はちひゃくじゅう', isCorrect: false, reason: '陷阱！「八百」促音+半濁音化。' },
+            { text: 'はっぴゃくじゅう', isCorrect: true, reason: '正確！「八百十」。' },
+            { text: 'やひゃくとお', isCorrect: false, reason: '用音讀。' },
+            { text: 'はちびゃくじゅう', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八百」讀「はっぴゃく」。', trapExplanation: '「八」促音+半濁音化。', relatedRules: ['八百の音變'] },
+        sourceItem: { value: 810, kanji: '八百十', reading: 'はっぴゃくじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_137', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '公司有＿＿名員工。（九百二十一）', stem_zh: '公司有九百二十一名員工。',
+        options: [
+            { text: 'きゅうひゃくにじゅういち', isCorrect: true, reason: '正確！「九百二十一」。' },
+            { text: 'くひゃくにじゅういち', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうびゃくにじゅういち', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'ここのひゃくふたじゅうひと', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九百二十一」讀「きゅうひゃくにじゅういち」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 921, kanji: '九百二十一', reading: 'きゅうひゃくにじゅういち' }
+    },
+    {
+        id: 'num_hundreds_extra_138', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: true,
+        stem: '問電話號碼', stem_zh: '問電話號碼',
+        dialogue: { speakerA: '電話番号の下四桁は？', speakerB: '＿＿です。（百三十二）' },
+        options: [
+            { text: 'いちひゃくさんじゅうに', isCorrect: false, reason: '陷阱！「一百」促音+半濁音化或省略。' },
+            { text: 'ひゃくさんじゅうに', isCorrect: true, reason: '正確！「百」可省略「一」。' },
+            { text: 'いっぴゃくさんじゅうに', isCorrect: true, reason: '也正確，完整讀法。' },
+            { text: 'ももみじゅうふた', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「百」可省略「一」。', relatedRules: ['一百の省略'] },
+        sourceItem: { value: 132, kanji: '百三十二', reading: 'ひゃくさんじゅうに' }
+    },
+    {
+        id: 'num_hundreds_extra_139', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「二百四十三」的正確讀音是？', stem_zh: '「二百四十三」的正確讀音是？',
+        options: [
+            { text: 'にひゃくよんじゅうさん', isCorrect: true, reason: '正確！「二百四十三」。' },
+            { text: 'にびゃくしじゅうさん', isCorrect: false, reason: '「二百」不濁音化，「四」讀「よん」。' },
+            { text: 'ふたひゃくよじゅうみ', isCorrect: false, reason: '用音讀。' },
+            { text: 'にひゃくしじゅうさん', isCorrect: false, reason: '「四」讀「よん」更常見。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二百四十三」讀「にひゃくよんじゅうさん」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 243, kanji: '二百四十三', reading: 'にひゃくよんじゅうさん' }
+    },
+    {
+        id: 'num_hundreds_extra_140', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '這本字典有＿＿頁。（三百五十四）', stem_zh: '這本字典有三百五十四頁。',
+        options: [
+            { text: 'さんひゃくごじゅうよん', isCorrect: false, reason: '陷阱！「三百」濁音化。' },
+            { text: 'さんびゃくごじゅうよん', isCorrect: true, reason: '正確！「三百五十四」。' },
+            { text: 'みひゃくいつじゅうよ', isCorrect: false, reason: '用音讀。' },
+            { text: 'さんぴゃくごじゅうよん', isCorrect: false, reason: '應是濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三百」濁音化為「さんびゃく」。', trapExplanation: '「三」後「百」濁音化。', relatedRules: ['三百の音變'] },
+        sourceItem: { value: 354, kanji: '三百五十四', reading: 'さんびゃくごじゅうよん' }
+    },
+    {
+        id: 'num_hundreds_extra_141', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問容量', stem_zh: '問容量',
+        dialogue: { speakerA: 'このボトルは何ミリリットルですか？', speakerB: '＿＿ミリリットルです。（四百六十五）' },
+        options: [
+            { text: 'よんひゃくろくじゅうご', isCorrect: true, reason: '正確！「四百六十五」。' },
+            { text: 'しひゃくろくじゅうご', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'よんびゃくろくじゅうご', isCorrect: false, reason: '「四百」不濁音化。' },
+            { text: 'よひゃくむじゅういつ', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四百六十五」讀「よんひゃくろくじゅうご」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 465, kanji: '四百六十五', reading: 'よんひゃくろくじゅうご' }
+    },
+    {
+        id: 'num_hundreds_extra_142', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「五百七十六」的正確讀音是？', stem_zh: '「五百七十六」的正確讀音是？',
+        options: [
+            { text: 'ごひゃくななじゅうろく', isCorrect: true, reason: '正確！「五百七十六」。' },
+            { text: 'ごびゃくしちじゅうろく', isCorrect: false, reason: '「五百」不濁音化，「七」讀「なな」。' },
+            { text: 'いつひゃくなのじゅうむ', isCorrect: false, reason: '用音讀。' },
+            { text: 'ごひゃくしちじゅうろく', isCorrect: false, reason: '「七」讀「なな」更常見。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五百七十六」讀「ごひゃくななじゅうろく」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 576, kanji: '五百七十六', reading: 'ごひゃくななじゅうろく' }
+    },
+    {
+        id: 'num_hundreds_extra_143', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '這個月有＿＿筆訂單。（六百八十七）', stem_zh: '這個月有六百八十七筆訂單。',
+        options: [
+            { text: 'ろくひゃくはちじゅうなな', isCorrect: false, reason: '陷阱！「六百」促音+半濁音化。' },
+            { text: 'ろっぴゃくはちじゅうなな', isCorrect: true, reason: '正確！「六百八十七」。' },
+            { text: 'むひゃくやじゅうなの', isCorrect: false, reason: '用音讀。' },
+            { text: 'ろくびゃくはちじゅうなな', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「六百」讀「ろっぴゃく」。', trapExplanation: '「六」促音+半濁音化。', relatedRules: ['六百の音變'] },
+        sourceItem: { value: 687, kanji: '六百八十七', reading: 'ろっぴゃくはちじゅうなな' }
+    },
+    {
+        id: 'num_hundreds_extra_144', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何人来ましたか？', speakerB: '＿＿人です。（七百九十八）' },
+        options: [
+            { text: 'ななひゃくきゅうじゅうはち', isCorrect: true, reason: '正確！「七百九十八」。' },
+            { text: 'しちひゃくくじゅうはち', isCorrect: false, reason: '「七」讀「なな」，「九」讀「きゅう」。' },
+            { text: 'ななびゃくきゅうじゅうはち', isCorrect: false, reason: '「七百」不濁音化。' },
+            { text: 'なのひゃくここのじゅうや', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七百九十八」讀「ななひゃくきゅうじゅうはち」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 798, kanji: '七百九十八', reading: 'ななひゃくきゅうじゅうはち' }
+    },
+    {
+        id: 'num_hundreds_extra_145', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: true,
+        stem: '「八百九」的正確讀音是？', stem_zh: '「八百零九」的正確讀音是？',
+        options: [
+            { text: 'はちひゃくきゅう', isCorrect: false, reason: '陷阱！「八百」促音+半濁音化。' },
+            { text: 'はっぴゃくきゅう', isCorrect: true, reason: '正確！「八百九」。' },
+            { text: 'やひゃくここの', isCorrect: false, reason: '用音讀。' },
+            { text: 'はちびゃくく', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八百」讀「はっぴゃく」。', trapExplanation: '「八」促音+半濁音化。', relatedRules: ['八百の音變'] },
+        sourceItem: { value: 809, kanji: '八百九', reading: 'はっぴゃくきゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_146', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '飛機航程是＿＿公里。（九百十）', stem_zh: '飛機航程是九百十公里。',
+        options: [
+            { text: 'きゅうひゃくじゅう', isCorrect: true, reason: '正確！「九百十」。' },
+            { text: 'くひゃくじゅう', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうびゃくじゅう', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'ここのひゃくとお', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九百十」讀「きゅうひゃくじゅう」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 910, kanji: '九百十', reading: 'きゅうひゃくじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_147', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'この本はいくらですか？', speakerB: '＿＿円です。（百二十一）' },
+        options: [
+            { text: 'いちひゃくにじゅういち', isCorrect: false, reason: '陷阱！「一百」促音+半濁音化或省略。' },
+            { text: 'ひゃくにじゅういち', isCorrect: true, reason: '正確！「百」可省略「一」。' },
+            { text: 'いっぴゃくにじゅういち', isCorrect: true, reason: '也正確，完整讀法。' },
+            { text: 'ももふたじゅうひと', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「百」可省略「一」。', relatedRules: ['一百の省略'] },
+        sourceItem: { value: 121, kanji: '百二十一', reading: 'ひゃくにじゅういち' }
+    },
+    {
+        id: 'num_hundreds_extra_148', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「二百三十二」的正確讀音是？', stem_zh: '「二百三十二」的正確讀音是？',
+        options: [
+            { text: 'にひゃくさんじゅうに', isCorrect: true, reason: '正確！「二百三十二」。' },
+            { text: 'にびゃくさんじゅうに', isCorrect: false, reason: '「二百」不濁音化。' },
+            { text: 'ふたひゃくみじゅうふた', isCorrect: false, reason: '用音讀。' },
+            { text: 'にっぴゃくさんじゅうに', isCorrect: false, reason: '「二百」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二百三十二」讀「にひゃくさんじゅうに」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 232, kanji: '二百三十二', reading: 'にひゃくさんじゅうに' }
+    },
+    {
+        id: 'num_hundreds_extra_149', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '比賽有＿＿名選手。（三百四十三）', stem_zh: '比賽有三百四十三名選手。',
+        options: [
+            { text: 'さんひゃくよんじゅうさん', isCorrect: false, reason: '陷阱！「三百」濁音化。' },
+            { text: 'さんびゃくよんじゅうさん', isCorrect: true, reason: '正確！「三百四十三」。' },
+            { text: 'みひゃくよじゅうみ', isCorrect: false, reason: '用音讀。' },
+            { text: 'さんぴゃくよんじゅうさん', isCorrect: false, reason: '應是濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三百」濁音化為「さんびゃく」。', trapExplanation: '「三」後「百」濁音化。', relatedRules: ['三百の音變'] },
+        sourceItem: { value: 343, kanji: '三百四十三', reading: 'さんびゃくよんじゅうさん' }
+    },
+    {
+        id: 'num_hundreds_extra_150', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問重量', stem_zh: '問重量',
+        dialogue: { speakerA: 'この荷物は何グラムですか？', speakerB: '＿＿グラムです。（四百五十四）' },
+        options: [
+            { text: 'よんひゃくごじゅうよん', isCorrect: true, reason: '正確！「四百五十四」。' },
+            { text: 'しひゃくごじゅうし', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'よんびゃくごじゅうよん', isCorrect: false, reason: '「四百」不濁音化。' },
+            { text: 'よひゃくいつじゅうよ', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四百五十四」讀「よんひゃくごじゅうよん」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 454, kanji: '四百五十四', reading: 'よんひゃくごじゅうよん' }
+    },
+    {
+        id: 'num_hundreds_extra_151', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「五百六十五」的正確讀音是？', stem_zh: '「五百六十五」的正確讀音是？',
+        options: [
+            { text: 'ごひゃくろくじゅうご', isCorrect: true, reason: '正確！「五百六十五」。' },
+            { text: 'ごびゃくろくじゅうご', isCorrect: false, reason: '「五百」不濁音化。' },
+            { text: 'いつひゃくむじゅういつ', isCorrect: false, reason: '用音讀。' },
+            { text: 'ごっぴゃくろくじゅうご', isCorrect: false, reason: '「五百」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五百六十五」讀「ごひゃくろくじゅうご」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 565, kanji: '五百六十五', reading: 'ごひゃくろくじゅうご' }
+    },
+    {
+        id: 'num_hundreds_extra_152', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '這棟公寓有＿＿戶。（六百七十六）', stem_zh: '這棟公寓有六百七十六戶。',
+        options: [
+            { text: 'ろくひゃくななじゅうろく', isCorrect: false, reason: '陷阱！「六百」促音+半濁音化。' },
+            { text: 'ろっぴゃくななじゅうろく', isCorrect: true, reason: '正確！「六百七十六」。' },
+            { text: 'むひゃくなのじゅうむ', isCorrect: false, reason: '用音讀。' },
+            { text: 'ろくびゃくななじゅうろく', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「六百」讀「ろっぴゃく」。', trapExplanation: '「六」促音+半濁音化。', relatedRules: ['六百の音變'] },
+        sourceItem: { value: 676, kanji: '六百七十六', reading: 'ろっぴゃくななじゅうろく' }
+    },
+    {
+        id: 'num_hundreds_extra_153', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何台ありますか？', speakerB: '＿＿台です。（七百八十七）' },
+        options: [
+            { text: 'ななひゃくはちじゅうなな', isCorrect: true, reason: '正確！「七百八十七」。' },
+            { text: 'しちひゃくはちじゅうしち', isCorrect: false, reason: '「七」讀「なな」。' },
+            { text: 'ななびゃくはちじゅうなな', isCorrect: false, reason: '「七百」不濁音化。' },
+            { text: 'なのひゃくやじゅうなの', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七百八十七」讀「ななひゃくはちじゅうなな」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 787, kanji: '七百八十七', reading: 'ななひゃくはちじゅうなな' }
+    },
+    {
+        id: 'num_hundreds_extra_154', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: true,
+        stem: '「八百九十八」的正確讀音是？', stem_zh: '「八百九十八」的正確讀音是？',
+        options: [
+            { text: 'はちひゃくきゅうじゅうはち', isCorrect: false, reason: '陷阱！「八百」促音+半濁音化。' },
+            { text: 'はっぴゃくきゅうじゅうはち', isCorrect: true, reason: '正確！「八百九十八」。' },
+            { text: 'やひゃくここのじゅうや', isCorrect: false, reason: '用音讀。' },
+            { text: 'はちびゃくきゅうじゅうはち', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八百」讀「はっぴゃく」。', trapExplanation: '「八」促音+半濁音化。', relatedRules: ['八百の音變'] },
+        sourceItem: { value: 898, kanji: '八百九十八', reading: 'はっぴゃくきゅうじゅうはち' }
+    },
+    {
+        id: 'num_hundreds_extra_155', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '網站有＿＿個會員。（九百九）', stem_zh: '網站有九百零九個會員。',
+        options: [
+            { text: 'きゅうひゃくきゅう', isCorrect: true, reason: '正確！「九百九」。' },
+            { text: 'くひゃくく', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうびゃくきゅう', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'ここのひゃくここの', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九百九」讀「きゅうひゃくきゅう」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 909, kanji: '九百九', reading: 'きゅうひゃくきゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_156', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このスカーフはいくらですか？', speakerB: '＿＿円です。（百十）' },
+        options: [
+            { text: 'いちひゃくじゅう', isCorrect: false, reason: '陷阱！「一百」促音+半濁音化或省略。' },
+            { text: 'ひゃくじゅう', isCorrect: true, reason: '正確！「百」可省略「一」。' },
+            { text: 'いっぴゃくじゅう', isCorrect: true, reason: '也正確，完整讀法。' },
+            { text: 'ももとお', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「百」可省略「一」。', relatedRules: ['一百の省略'] },
+        sourceItem: { value: 110, kanji: '百十', reading: 'ひゃくじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_157', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「二百二十一」的正確讀音是？', stem_zh: '「二百二十一」的正確讀音是？',
+        options: [
+            { text: 'にひゃくにじゅういち', isCorrect: true, reason: '正確！「二百二十一」。' },
+            { text: 'にびゃくにじゅういち', isCorrect: false, reason: '「二百」不濁音化。' },
+            { text: 'ふたひゃくふたじゅうひと', isCorrect: false, reason: '用音讀。' },
+            { text: 'にっぴゃくにじゅういち', isCorrect: false, reason: '「二百」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二百二十一」讀「にひゃくにじゅういち」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 221, kanji: '二百二十一', reading: 'にひゃくにじゅういち' }
+    },
+    {
+        id: 'num_hundreds_extra_158', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '這個花園有＿＿棵樹。（三百三十二）', stem_zh: '這個花園有三百三十二棵樹。',
+        options: [
+            { text: 'さんひゃくさんじゅうに', isCorrect: false, reason: '陷阱！「三百」濁音化。' },
+            { text: 'さんびゃくさんじゅうに', isCorrect: true, reason: '正確！「三百三十二」。' },
+            { text: 'みひゃくみじゅうふた', isCorrect: false, reason: '用音讀。' },
+            { text: 'さんぴゃくさんじゅうに', isCorrect: false, reason: '應是濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三百」濁音化為「さんびゃく」。', trapExplanation: '「三」後「百」濁音化。', relatedRules: ['三百の音變'] },
+        sourceItem: { value: 332, kanji: '三百三十二', reading: 'さんびゃくさんじゅうに' }
+    },
+    {
+        id: 'num_hundreds_extra_159', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '学生は何人いますか？', speakerB: '＿＿人です。（四百四十三）' },
+        options: [
+            { text: 'よんひゃくよんじゅうさん', isCorrect: true, reason: '正確！「四百四十三」。' },
+            { text: 'しひゃくしじゅうさん', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'よんびゃくよんじゅうさん', isCorrect: false, reason: '「四百」不濁音化。' },
+            { text: 'よひゃくよじゅうみ', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四百四十三」讀「よんひゃくよんじゅうさん」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 443, kanji: '四百四十三', reading: 'よんひゃくよんじゅうさん' }
+    },
+    {
+        id: 'num_hundreds_extra_160', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「五百五十四」的正確讀音是？', stem_zh: '「五百五十四」的正確讀音是？',
+        options: [
+            { text: 'ごひゃくごじゅうよん', isCorrect: true, reason: '正確！「五百五十四」。' },
+            { text: 'ごびゃくごじゅうし', isCorrect: false, reason: '「五百」不濁音化，「四」讀「よん」。' },
+            { text: 'いつひゃくいつじゅうよ', isCorrect: false, reason: '用音讀。' },
+            { text: 'ごひゃくごじゅうし', isCorrect: false, reason: '「四」讀「よん」更常見。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五百五十四」讀「ごひゃくごじゅうよん」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 554, kanji: '五百五十四', reading: 'ごひゃくごじゅうよん' }
+    },
+    {
+        id: 'num_hundreds_extra_161', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: true,
+        stem: '圖書館藏書＿＿冊。（六百六十五）', stem_zh: '圖書館藏書六百六十五冊。',
+        options: [
+            { text: 'ろくひゃくろくじゅうご', isCorrect: false, reason: '陷阱！「六百」促音+半濁音化。' },
+            { text: 'ろっぴゃくろくじゅうご', isCorrect: true, reason: '正確！「六百六十五」。' },
+            { text: 'むひゃくむじゅういつ', isCorrect: false, reason: '用音讀。' },
+            { text: 'ろくびゃくろくじゅうご', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「六百」讀「ろっぴゃく」。', trapExplanation: '「六」促音+半濁音化。', relatedRules: ['六百の音變'] },
+        sourceItem: { value: 665, kanji: '六百六十五', reading: 'ろっぴゃくろくじゅうご' }
+    },
+    {
+        id: 'num_hundreds_extra_162', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'この帽子はいくらですか？', speakerB: '＿＿円です。（七百七十六）' },
+        options: [
+            { text: 'ななひゃくななじゅうろく', isCorrect: true, reason: '正確！「七百七十六」。' },
+            { text: 'しちひゃくしちじゅうろく', isCorrect: false, reason: '「七」讀「なな」。' },
+            { text: 'ななびゃくななじゅうろく', isCorrect: false, reason: '「七百」不濁音化。' },
+            { text: 'なのひゃくなのじゅうむ', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七百七十六」讀「ななひゃくななじゅうろく」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 776, kanji: '七百七十六', reading: 'ななひゃくななじゅうろく' }
+    },
+    {
+        id: 'num_hundreds_extra_163', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: true,
+        stem: '「八百八十七」的正確讀音是？', stem_zh: '「八百八十七」的正確讀音是？',
+        options: [
+            { text: 'はちひゃくはちじゅうなな', isCorrect: false, reason: '陷阱！「八百」促音+半濁音化。' },
+            { text: 'はっぴゃくはちじゅうなな', isCorrect: true, reason: '正確！「八百八十七」。' },
+            { text: 'やひゃくやじゅうなの', isCorrect: false, reason: '用音讀。' },
+            { text: 'はちびゃくはちじゅうなな', isCorrect: false, reason: '應是促音+半濁音。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八百」讀「はっぴゃく」。', trapExplanation: '「八」促音+半濁音化。', relatedRules: ['八百の音變'] },
+        sourceItem: { value: 887, kanji: '八百八十七', reading: 'はっぴゃくはちじゅうなな' }
+    },
+    {
+        id: 'num_hundreds_extra_164', category: 'numbers', subcategory: 'hundreds', type: 'sentence', isTrap: false,
+        stem: '今年營業額是＿＿萬。（九百九十八）', stem_zh: '今年營業額是九百九十八萬。',
+        options: [
+            { text: 'きゅうひゃくきゅうじゅうはち', isCorrect: true, reason: '正確！「九百九十八」。' },
+            { text: 'くひゃくくじゅうはち', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうびゃくきゅうじゅうはち', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'ここのひゃくここのじゅうや', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九百九十八」讀「きゅうひゃくきゅうじゅうはち」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 998, kanji: '九百九十八', reading: 'きゅうひゃくきゅうじゅうはち' }
+    },
+    {
+        id: 'num_hundreds_extra_165', category: 'numbers', subcategory: 'hundreds', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: 'このビルは何階建てですか？', speakerB: '＿＿メートルの高さです。（二百五十）' },
+        options: [
+            { text: 'にひゃくごじゅう', isCorrect: true, reason: '正確！「二百五十」。' },
+            { text: 'にびゃくごじゅう', isCorrect: false, reason: '「二百」不濁音化。' },
+            { text: 'ふたひゃくいつじゅう', isCorrect: false, reason: '用音讀。' },
+            { text: 'にっぴゃくごじゅう', isCorrect: false, reason: '「二百」不促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二百五十」讀「にひゃくごじゅう」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 250, kanji: '二百五十', reading: 'にひゃくごじゅう' }
+    },
+    {
+        id: 'num_hundreds_extra_166', category: 'numbers', subcategory: 'hundreds', type: 'pronunciation', isTrap: false,
+        stem: '「九百九十九」的正確讀音是？', stem_zh: '「九百九十九」的正確讀音是？',
+        options: [
+            { text: 'きゅうひゃくきゅうじゅうきゅう', isCorrect: true, reason: '正確！「九百九十九」。' },
+            { text: 'くひゃくくじゅうく', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうびゃくきゅうじゅうきゅう', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'ここのひゃくここのじゅうここの', isCorrect: false, reason: '用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九百九十九」讀「きゅうひゃくきゅうじゅうきゅう」。', relatedRules: ['百位數の讀法'] },
+        sourceItem: { value: 999, kanji: '九百九十九', reading: 'きゅうひゃくきゅうじゅうきゅう' }
     }
 ];

@@ -2189,5 +2189,804 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         correctIndex: 1,
         explanation: { correctRule: '百{ひゃく}的「く」促音化{そくおんか}為「っ」。', trapExplanation: '100本{ひゃっぽん}同{おなじ}1/6/8/10的規則{きそく}。', relatedRules: ['量詞{りょうし}「本{ほん}」の音變{おんへん}規則{きそく}'] },
         sourceItem: { value: 100, kanji: '百本', reading: 'ひゃっぽん' }
+    },
+
+    // ===== 擴充題庫 (101-135) =====
+    {
+        id: 'long_ext_01',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「十一本」的正確讀音是？',
+        stem_zh: '「十一本」的正確讀音是？',
+        options: [
+            { text: 'じゅういっぽん', isCorrect: true, reason: '正確！「十一本」讀作「じゅういっぽん」。' },
+            { text: 'じゅういちほん', isCorrect: false, reason: '陷阱！1本促音化+半濁音化。' },
+            { text: 'とおいっぽん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅういちぼん', isCorrect: false, reason: '1本用半濁音「ぽ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十一本」讀作「じゅういっぽん」，1本促音+半濁音化。',
+            trapExplanation: '個位1保持促音+半濁音規則。',
+            relatedRules: ['量詞「本」の音變', '11本の讀法']
+        },
+        sourceItem: { value: 11, kanji: '十一本', reading: 'じゅういっぽん' }
+    },
+    {
+        id: 'long_ext_02',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'sentence',
+        isTrap: false,
+        stem: '花瓶に花が＿＿挿してあります。',
+        stem_zh: '花瓶裡插著十二支花。',
+        options: [
+            { text: 'じゅうにほん', isCorrect: true, reason: '正確！「十二本」讀作「じゅうにほん」。' },
+            { text: 'じゅうにぽん', isCorrect: false, reason: '2本無音變。' },
+            { text: 'とおにほん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうにぼん', isCorrect: false, reason: '2本用清音「ほ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十二本」讀作「じゅうにほん」，2本無音變。',
+            relatedRules: ['量詞「本」の音變', '12本の讀法']
+        },
+        sourceItem: { value: 12, kanji: '十二本', reading: 'じゅうにほん' }
+    },
+    {
+        id: 'long_ext_03',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '鉛筆有幾支？',
+        stem_zh: '鉛筆有幾支？',
+        dialogue: {
+            speakerA: '鉛筆は何本ありますか？',
+            speakerB: '＿＿あります。（十三支）'
+        },
+        options: [
+            { text: 'じゅうさんぼん', isCorrect: true, reason: '正確！「十三本」讀作「じゅうさんぼん」。' },
+            { text: 'じゅうさんほん', isCorrect: false, reason: '陷阱！3本濁音化。' },
+            { text: 'とおさんぼん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうさんぽん', isCorrect: false, reason: '3本用濁音「ぼ」，不是半濁音。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十三本」讀作「じゅうさんぼん」，3本濁音化。',
+            trapExplanation: '3本的「ほ」變成濁音「ぼ」。',
+            relatedRules: ['量詞「本」の音變', '13本の讀法']
+        },
+        sourceItem: { value: 13, kanji: '十三本', reading: 'じゅうさんぼん' }
+    },
+    {
+        id: 'long_ext_04',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十四本」的正確讀音是？',
+        stem_zh: '「十四本」的正確讀音是？',
+        options: [
+            { text: 'じゅうよんほん', isCorrect: true, reason: '正確！「十四本」讀作「じゅうよんほん」。' },
+            { text: 'じゅうしほん', isCorrect: false, reason: '「本」的4用「よん」。' },
+            { text: 'じゅうよんぽん', isCorrect: false, reason: '4本無音變。' },
+            { text: 'じゅうよほん', isCorrect: false, reason: '「本」的4讀「よん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十四本」讀作「じゅうよんほん」，4本無音變。',
+            relatedRules: ['量詞「本」の音變', '14本の讀法']
+        },
+        sourceItem: { value: 14, kanji: '十四本', reading: 'じゅうよんほん' }
+    },
+    {
+        id: 'long_ext_05',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'sentence',
+        isTrap: false,
+        stem: '棚に傘が＿＿置いてあります。',
+        stem_zh: '架子上放著十五支傘。',
+        options: [
+            { text: 'じゅうごほん', isCorrect: true, reason: '正確！「十五本」讀作「じゅうごほん」。' },
+            { text: 'じゅうごぽん', isCorrect: false, reason: '5本無音變。' },
+            { text: 'とおごほん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうごぼん', isCorrect: false, reason: '5本用清音「ほ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十五本」讀作「じゅうごほん」，5本無音變。',
+            relatedRules: ['量詞「本」の音變', '15本の讀法']
+        },
+        sourceItem: { value: 15, kanji: '十五本', reading: 'じゅうごほん' }
+    },
+    {
+        id: 'long_ext_06',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '蠟燭有幾支？',
+        stem_zh: '蠟燭有幾支？',
+        dialogue: {
+            speakerA: 'ろうそくは何本ありますか？',
+            speakerB: '＿＿あります。（十六支）'
+        },
+        options: [
+            { text: 'じゅうろっぽん', isCorrect: true, reason: '正確！「十六本」讀作「じゅうろっぽん」。' },
+            { text: 'じゅうろくほん', isCorrect: false, reason: '陷阱！6本促音+半濁音化。' },
+            { text: 'とおろっぽん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうろくぼん', isCorrect: false, reason: '6本用半濁音「ぽ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十六本」讀作「じゅうろっぽん」，6本促音+半濁音化。',
+            trapExplanation: '6本的「ろく」變「ろっ」，「ほ」變「ぽ」。',
+            relatedRules: ['量詞「本」の音變', '16本の讀法']
+        },
+        sourceItem: { value: 16, kanji: '十六本', reading: 'じゅうろっぽん' }
+    },
+    {
+        id: 'long_ext_07',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十七本」的正確讀音是？',
+        stem_zh: '「十七本」的正確讀音是？',
+        options: [
+            { text: 'じゅうななほん / じゅうしちほん', isCorrect: true, reason: '正確！「十七本」可讀兩種。' },
+            { text: 'じゅうななぽん', isCorrect: false, reason: '7本無音變。' },
+            { text: 'とおななほん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうななぼん', isCorrect: false, reason: '7本用清音「ほ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十七本」可讀「じゅうななほん」或「じゅうしちほん」。',
+            relatedRules: ['量詞「本」の音變', '17本の讀法']
+        },
+        sourceItem: { value: 17, kanji: '十七本', reading: 'じゅうななほん' }
+    },
+    {
+        id: 'long_ext_08',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'sentence',
+        isTrap: true,
+        stem: '倉庫に竹が＿＿保管されています。',
+        stem_zh: '倉庫保管著十八根竹子。',
+        options: [
+            { text: 'じゅうはっぽん', isCorrect: true, reason: '正確！「十八本」讀作「じゅうはっぽん」。' },
+            { text: 'じゅうはちほん', isCorrect: false, reason: '陷阱！8本促音+半濁音化。' },
+            { text: 'とおはっぽん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうはちぼん', isCorrect: false, reason: '8本用半濁音「ぽ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十八本」讀作「じゅうはっぽん」，8本促音+半濁音化。',
+            trapExplanation: '8本的「はち」變「はっ」，「ほ」變「ぽ」。',
+            relatedRules: ['量詞「本」の音變', '18本の讀法']
+        },
+        sourceItem: { value: 18, kanji: '十八本', reading: 'じゅうはっぽん' }
+    },
+    {
+        id: 'long_ext_09',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '樹有幾棵？',
+        stem_zh: '樹有幾棵？',
+        dialogue: {
+            speakerA: '木は何本ありますか？',
+            speakerB: '＿＿あります。（十九棵）'
+        },
+        options: [
+            { text: 'じゅうきゅうほん', isCorrect: true, reason: '正確！「十九本」讀作「じゅうきゅうほん」。' },
+            { text: 'じゅうきゅうぽん', isCorrect: false, reason: '9本無音變。' },
+            { text: 'とおきゅうほん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうくほん', isCorrect: false, reason: '「本」的9用「きゅう」較常見。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十九本」讀作「じゅうきゅうほん」，9本無音變。',
+            relatedRules: ['量詞「本」の音變', '19本の讀法']
+        },
+        sourceItem: { value: 19, kanji: '十九本', reading: 'じゅうきゅうほん' }
+    },
+    {
+        id: 'long_ext_10',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「二十本」的正確讀音是？',
+        stem_zh: '「二十本」的正確讀音是？',
+        options: [
+            { text: 'にじゅっぽん', isCorrect: true, reason: '正確！「二十本」讀作「にじゅっぽん」。' },
+            { text: 'にじゅうほん', isCorrect: false, reason: '陷阱！10的規則，促音+半濁音化。' },
+            { text: 'ふたじゅっぽん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にじっぽん', isCorrect: false, reason: '「二十」讀「にじゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十本」讀作「にじゅっぽん」，遵循10的規則。',
+            trapExplanation: '10位數的本遵循促音+半濁音規則。',
+            relatedRules: ['量詞「本」の音變', '20本の讀法']
+        },
+        sourceItem: { value: 20, kanji: '二十本', reading: 'にじゅっぽん' }
+    },
+    {
+        id: 'long_ext_11',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'sentence',
+        isTrap: true,
+        stem: '棚に本が＿＿並んでいます。',
+        stem_zh: '架子上排列著二十一本書。',
+        options: [
+            { text: 'にじゅういっぽん', isCorrect: true, reason: '正確！「二十一本」讀作「にじゅういっぽん」。' },
+            { text: 'にじゅういちほん', isCorrect: false, reason: '陷阱！1本促音+半濁音化。' },
+            { text: 'ふたじゅういっぽん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にじゅういちぼん', isCorrect: false, reason: '1本用半濁音「ぽ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十一本」讀作「にじゅういっぽん」。',
+            trapExplanation: '個位1保持促音+半濁音規則。',
+            relatedRules: ['量詞「本」の音變', '21本の讀法']
+        },
+        sourceItem: { value: 21, kanji: '二十一本', reading: 'にじゅういっぽん' }
+    },
+    {
+        id: 'long_ext_12',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '釣竿有幾支？',
+        stem_zh: '釣竿有幾支？',
+        dialogue: {
+            speakerA: '釣り竿は何本ありますか？',
+            speakerB: '＿＿あります。（二十三支）'
+        },
+        options: [
+            { text: 'にじゅうさんぼん', isCorrect: true, reason: '正確！「二十三本」讀作「にじゅうさんぼん」。' },
+            { text: 'にじゅうさんほん', isCorrect: false, reason: '陷阱！3本濁音化。' },
+            { text: 'ふたじゅうさんぼん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にじゅうさんぽん', isCorrect: false, reason: '3本用濁音「ぼ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十三本」讀作「にじゅうさんぼん」，3本濁音化。',
+            trapExplanation: '個位3保持濁音規則。',
+            relatedRules: ['量詞「本」の音變', '23本の讀法']
+        },
+        sourceItem: { value: 23, kanji: '二十三本', reading: 'にじゅうさんぼん' }
+    },
+    {
+        id: 'long_ext_13',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「二十六本」的正確讀音是？',
+        stem_zh: '「二十六本」的正確讀音是？',
+        options: [
+            { text: 'にじゅうろっぽん', isCorrect: true, reason: '正確！「二十六本」讀作「にじゅうろっぽん」。' },
+            { text: 'にじゅうろくほん', isCorrect: false, reason: '陷阱！6本促音+半濁音化。' },
+            { text: 'ふたじゅうろっぽん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にじゅうろくぼん', isCorrect: false, reason: '6本用半濁音「ぽ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十六本」讀作「にじゅうろっぽん」，6本促音+半濁音化。',
+            trapExplanation: '個位6保持促音+半濁音規則。',
+            relatedRules: ['量詞「本」の音變', '26本の讀法']
+        },
+        sourceItem: { value: 26, kanji: '二十六本', reading: 'にじゅうろっぽん' }
+    },
+    {
+        id: 'long_ext_14',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'sentence',
+        isTrap: true,
+        stem: '工場でパイプが＿＿製造されました。',
+        stem_zh: '工廠製造了二十八根管子。',
+        options: [
+            { text: 'にじゅうはっぽん', isCorrect: true, reason: '正確！「二十八本」讀作「にじゅうはっぽん」。' },
+            { text: 'にじゅうはちほん', isCorrect: false, reason: '陷阱！8本促音+半濁音化。' },
+            { text: 'ふたじゅうはっぽん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にじゅうはちぼん', isCorrect: false, reason: '8本用半濁音「ぽ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十八本」讀作「にじゅうはっぽん」，8本促音+半濁音化。',
+            trapExplanation: '個位8保持促音+半濁音規則。',
+            relatedRules: ['量詞「本」の音變', '28本の讀法']
+        },
+        sourceItem: { value: 28, kanji: '二十八本', reading: 'にじゅうはっぽん' }
+    },
+    {
+        id: 'long_ext_15',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '旗有幾面？',
+        stem_zh: '旗有幾面？',
+        dialogue: {
+            speakerA: '旗は何本ありますか？',
+            speakerB: '＿＿あります。（三十支）'
+        },
+        options: [
+            { text: 'さんじゅっぽん', isCorrect: true, reason: '正確！「三十本」讀作「さんじゅっぽん」。' },
+            { text: 'さんじゅうほん', isCorrect: false, reason: '陷阱！10的規則，促音+半濁音化。' },
+            { text: 'みじゅっぽん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんじっぽん', isCorrect: false, reason: '「三十」讀「さんじゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十本」讀作「さんじゅっぽん」，遵循10的規則。',
+            trapExplanation: '10位數的本遵循促音+半濁音規則。',
+            relatedRules: ['量詞「本」の音變', '30本の讀法']
+        },
+        sourceItem: { value: 30, kanji: '三十本', reading: 'さんじゅっぽん' }
+    },
+    {
+        id: 'long_ext_16',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「三十三本」的正確讀音是？',
+        stem_zh: '「三十三本」的正確讀音是？',
+        options: [
+            { text: 'さんじゅうさんぼん', isCorrect: true, reason: '正確！「三十三本」讀作「さんじゅうさんぼん」。' },
+            { text: 'さんじゅうさんほん', isCorrect: false, reason: '陷阱！3本濁音化。' },
+            { text: 'みじゅうさんぼん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんじゅうさんぽん', isCorrect: false, reason: '3本用濁音「ぼ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十三本」讀作「さんじゅうさんぼん」，3本濁音化。',
+            trapExplanation: '個位3保持濁音規則。',
+            relatedRules: ['量詞「本」の音變', '33本の讀法']
+        },
+        sourceItem: { value: 33, kanji: '三十三本', reading: 'さんじゅうさんぼん' }
+    },
+    {
+        id: 'long_ext_17',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'sentence',
+        isTrap: false,
+        stem: '花屋に薔薇が＿＿売っています。',
+        stem_zh: '花店賣著三十五支玫瑰。',
+        options: [
+            { text: 'さんじゅうごほん', isCorrect: true, reason: '正確！「三十五本」讀作「さんじゅうごほん」。' },
+            { text: 'さんじゅうごぽん', isCorrect: false, reason: '5本無音變。' },
+            { text: 'みじゅうごほん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんじゅうごぼん', isCorrect: false, reason: '5本用清音「ほ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十五本」讀作「さんじゅうごほん」，5本無音變。',
+            relatedRules: ['量詞「本」の音變', '35本の讀法']
+        },
+        sourceItem: { value: 35, kanji: '三十五本', reading: 'さんじゅうごほん' }
+    },
+    {
+        id: 'long_ext_18',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '柱子有幾根？',
+        stem_zh: '柱子有幾根？',
+        dialogue: {
+            speakerA: '柱は何本ありますか？',
+            speakerB: '＿＿あります。（四十支）'
+        },
+        options: [
+            { text: 'よんじゅっぽん', isCorrect: true, reason: '正確！「四十本」讀作「よんじゅっぽん」。' },
+            { text: 'よんじゅうほん', isCorrect: false, reason: '陷阱！10的規則，促音+半濁音化。' },
+            { text: 'しじゅっぽん', isCorrect: false, reason: '「四十」讀「よんじゅう」。' },
+            { text: 'よんじっぽん', isCorrect: false, reason: '「四十」讀「よんじゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十本」讀作「よんじゅっぽん」，遵循10的規則。',
+            trapExplanation: '10位數的本遵循促音+半濁音規則。',
+            relatedRules: ['量詞「本」の音變', '40本の讀法']
+        },
+        sourceItem: { value: 40, kanji: '四十本', reading: 'よんじゅっぽん' }
+    },
+    {
+        id: 'long_ext_19',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「五十本」的正確讀音是？',
+        stem_zh: '「五十本」的正確讀音是？',
+        options: [
+            { text: 'ごじゅっぽん', isCorrect: true, reason: '正確！「五十本」讀作「ごじゅっぽん」。' },
+            { text: 'ごじゅうほん', isCorrect: false, reason: '陷阱！10的規則，促音+半濁音化。' },
+            { text: 'いつじゅっぽん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごじっぽん', isCorrect: false, reason: '「五十」讀「ごじゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十本」讀作「ごじゅっぽん」，遵循10的規則。',
+            trapExplanation: '10位數的本遵循促音+半濁音規則。',
+            relatedRules: ['量詞「本」の音變', '50本の讀法']
+        },
+        sourceItem: { value: 50, kanji: '五十本', reading: 'ごじゅっぽん' }
+    },
+    {
+        id: 'long_ext_20',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'sentence',
+        isTrap: true,
+        stem: '倉庫に竹刀が＿＿保管されています。',
+        stem_zh: '倉庫保管著六十支竹刀。',
+        options: [
+            { text: 'ろくじゅっぽん', isCorrect: true, reason: '正確！「六十本」讀作「ろくじゅっぽん」。' },
+            { text: 'ろくじゅうほん', isCorrect: false, reason: '陷阱！10的規則，促音+半濁音化。' },
+            { text: 'むじゅっぽん', isCorrect: false, reason: '使用音讀「ろく」。' },
+            { text: 'ろくじっぽん', isCorrect: false, reason: '「六十」讀「ろくじゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十本」讀作「ろくじゅっぽん」，遵循10的規則。',
+            trapExplanation: '10位數的本遵循促音+半濁音規則。',
+            relatedRules: ['量詞「本」の音變', '60本の讀法']
+        },
+        sourceItem: { value: 60, kanji: '六十本', reading: 'ろくじゅっぽん' }
+    },
+    {
+        id: 'long_ext_21',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '總復習：「本」的音變規則是什麼？',
+        stem_zh: '總復習：「本」的音變規則是什麼？',
+        dialogue: {
+            speakerA: '「本」の音変化を教えてください。',
+            speakerB: '＿＿です。'
+        },
+        options: [
+            { text: '1/6/8/10促音+半濁音(っぽん)、3濁音(ぼん)、其他無音變(ほん)', isCorrect: true, reason: '正確！這是完整規則。' },
+            { text: '全部促音+半濁音化', isCorrect: false, reason: '只有特定數字音變。' },
+            { text: '全部濁音化', isCorrect: false, reason: '只有3濁音化。' },
+            { text: '沒有音變', isCorrect: false, reason: '有明確音變規則。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '1/6/8/10→っぽん、3→ぼん、其他→ほん。',
+            relatedRules: ['量詞「本」の完整規則', '音變總整理']
+        },
+        sourceItem: { value: 'review', kanji: '音變規則', reading: 'っぽん/ぼん/ほん' }
+    },
+    {
+        id: 'long_ext_22',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '總復習：哪些數字會促音+半濁音化？',
+        stem_zh: '總復習：哪些數字會促音+半濁音化？',
+        options: [
+            { text: '1、6、8、10 (いっぽん、ろっぽん、はっぽん、じゅっぽん)', isCorrect: true, reason: '正確！這四個促音+半濁音化。' },
+            { text: '3', isCorrect: false, reason: '3是濁音化。' },
+            { text: '2、5、7、9', isCorrect: false, reason: '這些無音變。' },
+            { text: '全部', isCorrect: false, reason: '只有特定數字。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '1/6/8/10的「本」促音+半濁音化：いっぽん、ろっぽん、はっぽん、じゅっぽん。',
+            relatedRules: ['量詞「本」の促音組', '1/6/8/10']
+        },
+        sourceItem: { value: 'review_ppon', kanji: '促音組', reading: '1/6/8/10' }
+    },
+    {
+        id: 'long_ext_23',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：哪個數字會濁音化？',
+        stem_zh: '總復習：哪個數字會濁音化？',
+        options: [
+            { text: '3 (さんぼん)', isCorrect: true, reason: '正確！只有3濁音化。' },
+            { text: '1', isCorrect: false, reason: '1是促音+半濁音化。' },
+            { text: '2、5、7、9', isCorrect: false, reason: '這些無音變。' },
+            { text: '6、8', isCorrect: false, reason: '這些是促音+半濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '只有3的「本」濁音化：さんぼん。',
+            relatedRules: ['量詞「本」の濁音組', '3']
+        },
+        sourceItem: { value: 'review_bon', kanji: '濁音組', reading: '3' }
+    },
+    {
+        id: 'long_ext_24',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '總復習：哪些數字無音變？',
+        stem_zh: '總復習：哪些數字無音變？',
+        dialogue: {
+            speakerA: '音変化しないのはどれですか？',
+            speakerB: '＿＿です。'
+        },
+        options: [
+            { text: '2、4、5、7、9 (にほん、よんほん、ごほん、ななほん、きゅうほん)', isCorrect: true, reason: '正確！這些無音變。' },
+            { text: '1、6、8、10', isCorrect: false, reason: '這些促音+半濁音化。' },
+            { text: '3', isCorrect: false, reason: '3濁音化。' },
+            { text: '全部', isCorrect: false, reason: '有部分無音變。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '2/4/5/7/9的「本」保持「ほん」：にほん、よんほん、ごほん等。',
+            relatedRules: ['量詞「本」の無音變組', '2/4/5/7/9']
+        },
+        sourceItem: { value: 'review_hon', kanji: '無音變組', reading: '2/4/5/7/9' }
+    },
+    {
+        id: 'long_ext_25',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「何本」讀作？',
+        stem_zh: '「何本」讀作？',
+        options: [
+            { text: 'なんぼん', isCorrect: true, reason: '正確！「何本」讀作「なんぼん」。' },
+            { text: 'なにほん', isCorrect: false, reason: '「何」+「本」讀「なんぼん」。' },
+            { text: 'なんほん', isCorrect: false, reason: '「本」濁音化。' },
+            { text: 'なにぽん', isCorrect: false, reason: '「何」讀「なん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「何本」讀作「なんぼん」，「何」後「本」濁音化。',
+            relatedRules: ['疑問詞', '何本の讀法']
+        },
+        sourceItem: { value: 'question', kanji: '何本', reading: 'なんぼん' }
+    },
+    {
+        id: 'long_ext_26',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'sentence',
+        isTrap: false,
+        stem: '「本」量詞用於什麼物品？',
+        stem_zh: '「本」量詞用於什麼物品？',
+        options: [
+            { text: '細長物體（筆、傘、樹、瓶子等）', isCorrect: true, reason: '正確！用於細長物體。' },
+            { text: '扁平物體', isCorrect: false, reason: '扁平物用「枚」。' },
+            { text: '小動物', isCorrect: false, reason: '小動物用「匹」。' },
+            { text: '書籍', isCorrect: false, reason: '書籍用「冊」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「本」用於細長物體：筆、傘、樹木、瓶子、電線桿等。',
+            relatedRules: ['量詞「本」の使用', '適用物品']
+        },
+        sourceItem: { value: 'usage', kanji: '本', reading: '細長物體' }
+    },
+    {
+        id: 'long_ext_27',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '網球拍有幾支？',
+        stem_zh: '網球拍有幾支？',
+        dialogue: {
+            speakerA: 'テニスラケットは何本ありますか？',
+            speakerB: '＿＿あります。（三支）'
+        },
+        options: [
+            { text: 'さんぼん', isCorrect: true, reason: '正確！「三本」讀作「さんぼん」。' },
+            { text: 'さんほん', isCorrect: false, reason: '陷阱！3本濁音化。' },
+            { text: 'みほん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんぽん', isCorrect: false, reason: '3本用濁音「ぼ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三本」讀作「さんぼん」，3本濁音化。',
+            trapExplanation: '3本的「ほ」變成濁音「ぼ」。',
+            relatedRules: ['量詞「本」の音變', '3本の讀法']
+        },
+        sourceItem: { value: 3, kanji: '三本', reading: 'さんぼん' }
+    },
+    {
+        id: 'long_ext_28',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「四本」的正確讀音是？',
+        stem_zh: '「四本」的正確讀音是？',
+        options: [
+            { text: 'よんほん', isCorrect: true, reason: '正確！「四本」讀作「よんほん」。' },
+            { text: 'しほん', isCorrect: false, reason: '「本」的4用「よん」。' },
+            { text: 'よんぽん', isCorrect: false, reason: '4本無音變。' },
+            { text: 'よほん', isCorrect: false, reason: '「本」的4讀「よん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四本」讀作「よんほん」，4本無音變。',
+            relatedRules: ['量詞「本」の音變', '4本の讀法']
+        },
+        sourceItem: { value: 4, kanji: '四本', reading: 'よんほん' }
+    },
+    {
+        id: 'long_ext_29',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'sentence',
+        isTrap: false,
+        stem: '花瓶に百合が＿＿活けてあります。',
+        stem_zh: '花瓶裡插著五支百合。',
+        options: [
+            { text: 'ごほん', isCorrect: true, reason: '正確！「五本」讀作「ごほん」。' },
+            { text: 'ごぽん', isCorrect: false, reason: '5本無音變。' },
+            { text: 'いつほん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごぼん', isCorrect: false, reason: '5本用清音「ほ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五本」讀作「ごほん」，5本無音變。',
+            relatedRules: ['量詞「本」の音變', '5本の讀法']
+        },
+        sourceItem: { value: 5, kanji: '五本', reading: 'ごほん' }
+    },
+    {
+        id: 'long_ext_30',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '吸管有幾支？',
+        stem_zh: '吸管有幾支？',
+        dialogue: {
+            speakerA: 'ストローは何本ありますか？',
+            speakerB: '＿＿あります。（七支）'
+        },
+        options: [
+            { text: 'ななほん / しちほん', isCorrect: true, reason: '正確！「七本」可讀兩種。' },
+            { text: 'ななぽん', isCorrect: false, reason: '7本無音變。' },
+            { text: 'なのほん', isCorrect: false, reason: '「七」讀「なな」或「しち」。' },
+            { text: 'ななぼん', isCorrect: false, reason: '7本用清音「ほ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七本」可讀「ななほん」或「しちほん」，7本無音變。',
+            relatedRules: ['量詞「本」の音變', '7本の讀法']
+        },
+        sourceItem: { value: 7, kanji: '七本', reading: 'ななほん' }
+    },
+    {
+        id: 'long_ext_31',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「九本」的正確讀音是？',
+        stem_zh: '「九本」的正確讀音是？',
+        options: [
+            { text: 'きゅうほん', isCorrect: true, reason: '正確！「九本」讀作「きゅうほん」。' },
+            { text: 'きゅうぽん', isCorrect: false, reason: '9本無音變。' },
+            { text: 'くほん', isCorrect: false, reason: '「本」的9用「きゅう」較常見。' },
+            { text: 'きゅうぼん', isCorrect: false, reason: '9本用清音「ほ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九本」讀作「きゅうほん」，9本無音變。',
+            relatedRules: ['量詞「本」の音變', '9本の讀法']
+        },
+        sourceItem: { value: 9, kanji: '九本', reading: 'きゅうほん' }
+    },
+    {
+        id: 'long_ext_32',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'sentence',
+        isTrap: true,
+        stem: '店に杖が＿＿展示されています。',
+        stem_zh: '店裡展示著十支手杖。',
+        options: [
+            { text: 'じゅっぽん', isCorrect: true, reason: '正確！「十本」讀作「じゅっぽん」。' },
+            { text: 'じゅうほん', isCorrect: false, reason: '陷阱！10本促音+半濁音化。' },
+            { text: 'とおほん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じっぽん', isCorrect: false, reason: '「十」讀「じゅう」促音為「じゅっ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十本」讀作「じゅっぽん」，10本促音+半濁音化。',
+            trapExplanation: '10本的「じゅう」變「じゅっ」，「ほ」變「ぽ」。',
+            relatedRules: ['量詞「本」の音變', '10本の讀法']
+        },
+        sourceItem: { value: 10, kanji: '十本', reading: 'じゅっぽん' }
+    },
+    {
+        id: 'long_ext_33',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '香蕉有幾根？',
+        stem_zh: '香蕉有幾根？',
+        dialogue: {
+            speakerA: 'バナナは何本ありますか？',
+            speakerB: '＿＿あります。（二根）'
+        },
+        options: [
+            { text: 'にほん', isCorrect: true, reason: '正確！「二本」讀作「にほん」。' },
+            { text: 'にぽん', isCorrect: false, reason: '2本無音變。' },
+            { text: 'ふたほん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にぼん', isCorrect: false, reason: '2本用清音「ほ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二本」讀作「にほん」，2本無音變。',
+            relatedRules: ['量詞「本」の音變', '2本の讀法']
+        },
+        sourceItem: { value: 2, kanji: '二本', reading: 'にほん' }
+    },
+    {
+        id: 'long_ext_34',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '以下哪組讀法全部正確？',
+        stem_zh: '以下哪組讀法全部正確？',
+        options: [
+            { text: '1本(いっぽん)、3本(さんぼん)、5本(ごほん)', isCorrect: true, reason: '正確！這些讀法都正確。' },
+            { text: '1本(いちほん)、3本(さんほん)、5本(ごほん)', isCorrect: false, reason: '1本和3本需要音變。' },
+            { text: '1本(いっぽん)、3本(さんぽん)、5本(ごぽん)', isCorrect: false, reason: '3本用濁音，5本無音變。' },
+            { text: '1本(いっぼん)、3本(さんぼん)、5本(ごほん)', isCorrect: false, reason: '1本用半濁音「ぽ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '1本(いっぽん)促音+半濁音、3本(さんぼん)濁音、5本(ごほん)無音變。',
+            trapExplanation: '注意不同數字的不同音變規則。',
+            relatedRules: ['量詞「本」の音變總整理', '複合規則']
+        },
+        sourceItem: { value: 'review_combo', kanji: '1本/3本/5本', reading: 'いっぽん/さんぼん/ごほん' }
+    },
+    {
+        id: 'long_ext_35',
+        category: 'counters',
+        subcategory: 'longObjects',
+        type: 'sentence',
+        isTrap: true,
+        stem: '以下哪組讀法全部正確？',
+        stem_zh: '以下哪組讀法全部正確？',
+        options: [
+            { text: '6本(ろっぽん)、8本(はっぽん)、10本(じゅっぽん)', isCorrect: true, reason: '正確！這些都促音+半濁音化。' },
+            { text: '6本(ろくほん)、8本(はちほん)、10本(じゅうほん)', isCorrect: false, reason: '這三個都需要促音+半濁音化。' },
+            { text: '6本(ろっぼん)、8本(はっぼん)、10本(じゅっぼん)', isCorrect: false, reason: '需要半濁音「ぽ」，不是濁音。' },
+            { text: '6本(ろくぽん)、8本(はちぽん)、10本(じゅうぽん)', isCorrect: false, reason: '需要促音。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '6/8/10本都促音+半濁音化：ろっぽん、はっぽん、じゅっぽん。',
+            trapExplanation: '注意這三個都遵循相同的促音+半濁音規則。',
+            relatedRules: ['量詞「本」の促音組', '6/8/10']
+        },
+        sourceItem: { value: 'review_combo2', kanji: '6本/8本/10本', reading: 'ろっぽん/はっぽん/じゅっぽん' }
     }
 ];

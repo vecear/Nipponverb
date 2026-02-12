@@ -2294,5 +2294,2251 @@ export const weekdayQuestions: DatesPracticeQuestion[] = [
             relatedRules: ['曜日の讀法', '日本のテレビ']
         },
         sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
+    },
+    // ===== 追加題目 15-64 =====
+    {
+        id: 'weekday_extra_15',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「日曜日」的正確讀法是？',
+        stem_zh: '「日曜日」的正確讀法是？',
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！日曜日讀「にちようび」。' },
+            { text: 'ひようび', isCorrect: false, reason: '「日」在曜日中讀「にち」不是「ひ」。' },
+            { text: 'じつようび', isCorrect: false, reason: '「日」在曜日中不讀「じつ」。' },
+            { text: 'かようび', isCorrect: false, reason: '這是火曜日的讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「日曜日」讀「にちようび」，「日」使用音讀「にち」。',
+            trapExplanation: '學習者可能混淆「日」的各種讀法。',
+            relatedRules: ['曜日の讀法', '「にち」vs「ひ」']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_16',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '映画館は＿＿が一番混んでいます。',
+        stem_zh: '電影院在星期六最擁擠。',
+        options: [
+            { text: 'どようび', isCorrect: true, reason: '正確！土曜日電影院人最多。' },
+            { text: 'つちようび', isCorrect: false, reason: '「土」讀「ど」不是「つち」。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' },
+            { text: 'にちようび', isCorrect: false, reason: '雖然人多但題目說的是土曜日。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「土曜日」是週末第一天，休閒場所最擁擠。',
+            relatedRules: ['曜日の讀法', '週末の活動']
+        },
+        sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
+    },
+    {
+        id: 'weekday_extra_17',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '病院の休診日は？',
+        stem_zh: '醫院的休診日是？',
+        dialogue: {
+            speakerA: 'この病院の休診日はいつですか？',
+            speakerB: '＿＿と祝日が休診日です。（星期日）'
+        },
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！大多數醫院日曜日休診。' },
+            { text: 'ひようび', isCorrect: false, reason: '「日」讀「にち」不是「ひ」。' },
+            { text: 'どようび', isCorrect: false, reason: '很多醫院土曜日有診。' },
+            { text: 'げつようび', isCorrect: false, reason: '月曜日通常有看診。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '日本的醫院通常「日曜日」和「祝日」休診。',
+            relatedRules: ['曜日の讀法', '病院の休診日']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_18',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「今週」的讀法是？',
+        stem_zh: '「今週」的讀法是？',
+        options: [
+            { text: 'こんしゅう', isCorrect: true, reason: '正確！今週讀「こんしゅう」。' },
+            { text: 'いましゅう', isCorrect: false, reason: '「今」讀「こん」不是「いま」。' },
+            { text: 'こんしゅ', isCorrect: false, reason: '缺少長音「う」。' },
+            { text: 'きんしゅう', isCorrect: false, reason: '「今」讀「こん」不是「きん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「今週」讀「こんしゅう」，指這個星期。',
+            relatedRules: ['週の讀法', '今週・来週・先週']
+        },
+        sourceItem: { value: 'This week', kanji: '今週', reading: 'こんしゅう' }
+    },
+    {
+        id: 'weekday_extra_19',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「来週」的讀法是？',
+        stem_zh: '「来週」的讀法是？',
+        options: [
+            { text: 'らいしゅう', isCorrect: true, reason: '正確！来週讀「らいしゅう」。' },
+            { text: 'きしゅう', isCorrect: false, reason: '「来」讀「らい」不是「き」。' },
+            { text: 'らいしゅ', isCorrect: false, reason: '缺少長音「う」。' },
+            { text: 'くるしゅう', isCorrect: false, reason: '「来」讀「らい」不是「くる」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「来週」讀「らいしゅう」，指下個星期。',
+            relatedRules: ['週の讀法', '今週・来週・先週']
+        },
+        sourceItem: { value: 'Next week', kanji: '来週', reading: 'らいしゅう' }
+    },
+    {
+        id: 'weekday_extra_20',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「先週」的讀法是？',
+        stem_zh: '「先週」的讀法是？',
+        options: [
+            { text: 'せんしゅう', isCorrect: true, reason: '正確！先週讀「せんしゅう」。' },
+            { text: 'さきしゅう', isCorrect: false, reason: '「先」讀「せん」不是「さき」。' },
+            { text: 'せんしゅ', isCorrect: false, reason: '缺少長音「う」。' },
+            { text: 'まえしゅう', isCorrect: false, reason: '「先」讀「せん」不是「まえ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「先週」讀「せんしゅう」，指上個星期。',
+            relatedRules: ['週の讀法', '今週・来週・先週']
+        },
+        sourceItem: { value: 'Last week', kanji: '先週', reading: 'せんしゅう' }
+    },
+    {
+        id: 'weekday_extra_21',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿に買い物に行きます。',
+        stem_zh: '我在週末去購物。',
+        options: [
+            { text: 'しゅうまつ', isCorrect: true, reason: '正確！週末去購物。' },
+            { text: 'しゅうすえ', isCorrect: false, reason: '「末」讀「まつ」不是「すえ」。' },
+            { text: 'へいじつ', isCorrect: false, reason: '平日是工作日不是週末。' },
+            { text: 'しゅうかん', isCorrect: false, reason: '這是「週間」（一週）的讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「週末」讀「しゅうまつ」，指土曜日和日曜日。',
+            relatedRules: ['週末の讀法', '週末の活動']
+        },
+        sourceItem: { value: 'Weekend', kanji: '週末', reading: 'しゅうまつ' }
+    },
+    {
+        id: 'weekday_extra_22',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '來週的會議是哪一天？',
+        stem_zh: '下週的會議是哪一天？',
+        dialogue: {
+            speakerA: '来週の会議はいつですか？',
+            speakerB: '＿＿の午後2時からです。（星期三）'
+        },
+        options: [
+            { text: 'すいようび', isCorrect: true, reason: '正確！水曜日下午2點開會。' },
+            { text: 'みずようび', isCorrect: false, reason: '「水」讀「すい」不是「みず」。' },
+            { text: 'もくようび', isCorrect: false, reason: '這是木曜日（星期四）。' },
+            { text: 'かようび', isCorrect: false, reason: '這是火曜日（星期二）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「水曜日」在一週中間，常作為會議日。',
+            relatedRules: ['曜日の讀法', '会議の予定']
+        },
+        sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
+    },
+    {
+        id: 'weekday_extra_23',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「毎週」的讀法是？',
+        stem_zh: '「毎週」的讀法是？',
+        options: [
+            { text: 'まいしゅう', isCorrect: true, reason: '正確！毎週讀「まいしゅう」。' },
+            { text: 'まいしゅ', isCorrect: false, reason: '缺少長音「う」。' },
+            { text: 'ごとしゅう', isCorrect: false, reason: '「毎」讀「まい」不是「ごと」。' },
+            { text: 'まいしう', isCorrect: false, reason: '拼寫錯誤，應為「しゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「毎週」讀「まいしゅう」，意思是每週。',
+            trapExplanation: '注意「週」的長音「しゅう」。',
+            relatedRules: ['毎〜の讀法', '週の讀法']
+        },
+        sourceItem: { value: 'Every week', kanji: '毎週', reading: 'まいしゅう' }
+    },
+    {
+        id: 'weekday_extra_24',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿は燃えるゴミの日です。',
+        stem_zh: '星期一是可燃垃圾日。',
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！很多地區月曜日收可燃垃圾。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」。' },
+            { text: 'かようび', isCorrect: false, reason: '這是火曜日（星期二）。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '日本的垃圾分類有固定的曜日，「月曜日」常是燃えるゴミ。',
+            relatedRules: ['曜日の讀法', 'ゴミの日']
+        },
+        sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
+    },
+    {
+        id: 'weekday_extra_25',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '資源回收是哪一天？',
+        stem_zh: '資源回收是哪一天？',
+        dialogue: {
+            speakerA: '資源ゴミの日はいつですか？',
+            speakerB: '＿＿です。（星期四）'
+        },
+        options: [
+            { text: 'もくようび', isCorrect: true, reason: '正確！木曜日是資源回收日。' },
+            { text: 'きようび', isCorrect: false, reason: '「木」讀「もく」不是「き」。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「木曜日」在很多地區是資源ゴミの日。',
+            relatedRules: ['曜日の讀法', 'ゴミの日']
+        },
+        sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
+    },
+    {
+        id: 'weekday_extra_26',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「何曜日」的讀法是？',
+        stem_zh: '「何曜日」的讀法是？',
+        options: [
+            { text: 'なんようび', isCorrect: true, reason: '正確！何曜日讀「なんようび」。' },
+            { text: 'なにようび', isCorrect: false, reason: '「何」在此讀「なん」不是「なに」。' },
+            { text: 'かようび', isCorrect: false, reason: '這是火曜日的讀法。' },
+            { text: 'なによび', isCorrect: false, reason: '讀法錯誤。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「何曜日」讀「なんようび」，用來詢問星期幾。',
+            relatedRules: ['何の讀法', '曜日の疑問詞']
+        },
+        sourceItem: { value: 'What day', kanji: '何曜日', reading: 'なんようび' }
+    },
+    {
+        id: 'weekday_extra_27',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '今日は＿＿、明日は水曜日です。',
+        stem_zh: '今天是星期二，明天是星期三。',
+        options: [
+            { text: 'かようび', isCorrect: true, reason: '正確！火曜日的下一天是水曜日。' },
+            { text: 'ひようび', isCorrect: false, reason: '「火」讀「か」不是「ひ」。' },
+            { text: 'げつようび', isCorrect: false, reason: '月曜日的下一天是火曜日。' },
+            { text: 'もくようび', isCorrect: false, reason: '木曜日的前一天是水曜日。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「火曜日」＋1日＝「水曜日」。',
+            relatedRules: ['曜日の讀法', '曜日の順序']
+        },
+        sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
+    },
+    {
+        id: 'weekday_extra_28',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '圖書館的休館日是？',
+        stem_zh: '圖書館的休館日是？',
+        dialogue: {
+            speakerA: '図書館の休館日はいつですか？',
+            speakerB: '毎週＿＿です。（星期一）'
+        },
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！日本的圖書館多數月曜日休館。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」。' },
+            { text: 'にちようび', isCorrect: false, reason: '日曜日通常開館。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日通常開館。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '日本的公共圖書館通常「月曜日」休館。',
+            relatedRules: ['曜日の讀法', '公共施設の休館日']
+        },
+        sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
+    },
+    {
+        id: 'weekday_extra_29',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「土曜日」中「土」的讀法是？',
+        stem_zh: '「土曜日」中「土」的讀法是？',
+        options: [
+            { text: 'ど', isCorrect: true, reason: '正確！「土」在曜日中讀「ど」。' },
+            { text: 'つち', isCorrect: false, reason: '「つち」是訓讀，曜日用音讀「ど」。' },
+            { text: 'と', isCorrect: false, reason: '「土」的音讀是「ど」不是「と」。' },
+            { text: 'どう', isCorrect: false, reason: '沒有長音，是短音「ど」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「土曜日」的「土」讀「ど」，是音讀。',
+            trapExplanation: '「土」的訓讀是「つち」，但曜日中使用音讀「ど」。',
+            relatedRules: ['曜日の讀法', '音讀vs訓讀']
+        },
+        sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
+    },
+    {
+        id: 'weekday_extra_30',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿の夜はサザエさんを見ます。',
+        stem_zh: '星期日晚上看《海螺小姐》。',
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！サザエさん在日曜日播出。' },
+            { text: 'ひようび', isCorrect: false, reason: '「日」讀「にち」不是「ひ」。' },
+            { text: 'どようび', isCorrect: false, reason: '這是土曜日（星期六）。' },
+            { text: 'げつようび', isCorrect: false, reason: '這是月曜日（星期一）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '《サザエさん》是日本國民動畫，「日曜日」晚上播出。',
+            relatedRules: ['曜日の讀法', '日本のテレビ番組']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_31',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '這週有幾天工作？',
+        stem_zh: '這週有幾天工作？',
+        dialogue: {
+            speakerA: '今週は何日働きますか？',
+            speakerB: '＿＿から金曜日まで5日間です。（星期一）'
+        },
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！月曜日到金曜日是5天工作日。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」。' },
+            { text: 'かようび', isCorrect: false, reason: '火曜日開始只有4天。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日是週末。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '標準的工作週是「月曜日」到「金曜日」共5日。',
+            relatedRules: ['曜日の讀法', '労働週間']
+        },
+        sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
+    },
+    {
+        id: 'weekday_extra_32',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「週間」的讀法是？',
+        stem_zh: '「週間」的讀法是？',
+        options: [
+            { text: 'しゅうかん', isCorrect: true, reason: '正確！週間讀「しゅうかん」。' },
+            { text: 'しゅかん', isCorrect: false, reason: '「週」要有長音「しゅう」。' },
+            { text: 'しゅうま', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'しゅっかん', isCorrect: false, reason: '沒有促音。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「週間」讀「しゅうかん」，用於計算週數如「2週間」。',
+            relatedRules: ['週の讀法', '期間の表現']
+        },
+        sourceItem: { value: 'Week', kanji: '週間', reading: 'しゅうかん' }
+    },
+    {
+        id: 'weekday_extra_33',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '日本では＿＿から一週間が始まります。',
+        stem_zh: '在日本，一週從星期日開始。',
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！日本的日曆從日曜日開始。' },
+            { text: 'げつようび', isCorrect: false, reason: '西方從月曜日開始，但日本從日曜日。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日是週末最後一天。' },
+            { text: 'きんようび', isCorrect: false, reason: '金曜日是平日最後一天。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '日本的傳統日曆一週從「日曜日」開始。',
+            relatedRules: ['曜日の讀法', '日本のカレンダー']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_34',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '健身房的休館日是？',
+        stem_zh: '健身房的休館日是？',
+        dialogue: {
+            speakerA: 'ジムの休館日はいつですか？',
+            speakerB: '毎週＿＿です。（星期三）'
+        },
+        options: [
+            { text: 'すいようび', isCorrect: true, reason: '正確！很多健身房水曜日休館。' },
+            { text: 'みずようび', isCorrect: false, reason: '「水」讀「すい」不是「みず」。' },
+            { text: 'にちようび', isCorrect: false, reason: '日曜日通常開館。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日通常開館。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '很多健身房選「水曜日」（週中）休館。',
+            relatedRules: ['曜日の讀法', '施設の休館日']
+        },
+        sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
+    },
+    {
+        id: 'weekday_extra_35',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「金曜日」中「金」的讀法是？',
+        stem_zh: '「金曜日」中「金」的讀法是？',
+        options: [
+            { text: 'きん', isCorrect: true, reason: '正確！「金」在曜日中讀「きん」。' },
+            { text: 'かね', isCorrect: false, reason: '「かね」是訓讀（錢的意思），曜日用「きん」。' },
+            { text: 'こん', isCorrect: false, reason: '「こん」是「金色」等詞的讀法。' },
+            { text: 'ごん', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「金曜日」的「金」讀「きん」，不是「かね」。',
+            trapExplanation: '「金」有多種讀法：「きん」（音讀）、「かね」（錢）、「こん」（金色）。',
+            relatedRules: ['曜日の讀法', '「金」の讀み分け']
+        },
+        sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
+    },
+    {
+        id: 'weekday_extra_36',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿の朝は早起きして朝活をします。',
+        stem_zh: '星期六早上早起做晨間活動。',
+        options: [
+            { text: 'どようび', isCorrect: true, reason: '正確！土曜日早上做朝活。' },
+            { text: 'つちようび', isCorrect: false, reason: '「土」讀「ど」不是「つち」。' },
+            { text: 'にちようび', isCorrect: false, reason: '日曜日通常睡比較晚。' },
+            { text: 'げつようび', isCorrect: false, reason: '月曜日要上班比較趕。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「土曜日」適合做「朝活」（早晨活動）。',
+            relatedRules: ['曜日の讀法', '週末の過ごし方']
+        },
+        sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
+    },
+    {
+        id: 'weekday_extra_37',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '約會是哪一天？',
+        stem_zh: '約會是哪一天？',
+        dialogue: {
+            speakerA: 'デートはいつですか？',
+            speakerB: '＿＿の午後です。（星期六）'
+        },
+        options: [
+            { text: 'どようび', isCorrect: true, reason: '正確！土曜日下午約會。' },
+            { text: 'つちようび', isCorrect: false, reason: '「土」讀「ど」不是「つち」。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' },
+            { text: 'にちようび', isCorrect: false, reason: '這是日曜日（星期日）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「土曜日」是熱門的約會日。',
+            relatedRules: ['曜日の讀法', 'デートの予定']
+        },
+        sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
+    },
+    {
+        id: 'weekday_extra_38',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「再来週」的讀法是？',
+        stem_zh: '「再来週」的讀法是？',
+        options: [
+            { text: 'さらいしゅう', isCorrect: true, reason: '正確！再来週讀「さらいしゅう」。' },
+            { text: 'ふたたびらいしゅう', isCorrect: false, reason: '「再」在此讀「さ」。' },
+            { text: 'さいらいしゅう', isCorrect: false, reason: '「再」讀「さ」不是「さい」。' },
+            { text: 'またらいしゅう', isCorrect: false, reason: '「再」讀「さ」不是「また」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「再来週」讀「さらいしゅう」，指下下週。',
+            relatedRules: ['週の讀法', '時間の表現']
+        },
+        sourceItem: { value: 'Week after next', kanji: '再来週', reading: 'さらいしゅう' }
+    },
+    {
+        id: 'weekday_extra_39',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿はレディースデーで映画が安いです。',
+        stem_zh: '星期三是女性日，電影比較便宜。',
+        options: [
+            { text: 'すいようび', isCorrect: true, reason: '正確！很多電影院水曜日是レディースデー。' },
+            { text: 'みずようび', isCorrect: false, reason: '「水」讀「すい」不是「みず」。' },
+            { text: 'きんようび', isCorrect: false, reason: '金曜日通常票價正常。' },
+            { text: 'もくようび', isCorrect: false, reason: '木曜日通常票價正常。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '日本很多電影院「水曜日」是「レディースデー」，女性優惠。',
+            relatedRules: ['曜日の讀法', '映画館の割引']
+        },
+        sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
+    },
+    {
+        id: 'weekday_extra_40',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '超市的特價日是？',
+        stem_zh: '超市的特價日是？',
+        dialogue: {
+            speakerA: 'スーパーの特売日はいつですか？',
+            speakerB: '毎週＿＿です。（星期二）'
+        },
+        options: [
+            { text: 'かようび', isCorrect: true, reason: '正確！很多超市火曜日特價。' },
+            { text: 'ひようび', isCorrect: false, reason: '「火」讀「か」不是「ひ」。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' },
+            { text: 'もくようび', isCorrect: false, reason: '這是木曜日（星期四）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '很多日本超市「火曜日」有特價活動。',
+            relatedRules: ['曜日の讀法', 'スーパーの特売']
+        },
+        sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
+    },
+    {
+        id: 'weekday_extra_41',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「木曜日」中「木」的讀法是？',
+        stem_zh: '「木曜日」中「木」的讀法是？',
+        options: [
+            { text: 'もく', isCorrect: true, reason: '正確！「木」在曜日中讀「もく」。' },
+            { text: 'き', isCorrect: false, reason: '「き」是訓讀（樹木），曜日用「もく」。' },
+            { text: 'ぼく', isCorrect: false, reason: '「ぼく」是其他詞的讀法。' },
+            { text: 'こ', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「木曜日」的「木」讀「もく」，是音讀。',
+            trapExplanation: '「木」的訓讀「き」（樹木）和音讀「もく」要區分。',
+            relatedRules: ['曜日の讀法', '音讀vs訓讀']
+        },
+        sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
+    },
+    {
+        id: 'weekday_extra_42',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '「サザエさん症候群」は＿＿の夜に起こります。',
+        stem_zh: '「海螺小姐症候群」發生在星期日晚上。',
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！日曜日晚上想到要上班就憂鬱。' },
+            { text: 'ひようび', isCorrect: false, reason: '「日」讀「にち」不是「ひ」。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日還有一天假期。' },
+            { text: 'げつようび', isCorrect: false, reason: '月曜日已經開始上班了。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「サザエさん症候群」指「日曜日」晚上的憂鬱感。',
+            relatedRules: ['曜日の讀法', '日本の社会現象']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_43',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '每週幾次日語課？',
+        stem_zh: '每週幾次日語課？',
+        dialogue: {
+            speakerA: '日本語の授業は週に何回ありますか？',
+            speakerB: '＿＿と木曜日の2回です。（星期二）'
+        },
+        options: [
+            { text: 'かようび', isCorrect: true, reason: '正確！火曜日和木曜日各一次。' },
+            { text: 'ひようび', isCorrect: false, reason: '「火」讀「か」不是「ひ」。' },
+            { text: 'げつようび', isCorrect: false, reason: '題目說的是火曜日和木曜日。' },
+            { text: 'すいようび', isCorrect: false, reason: '題目說的是火曜日和木曜日。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「火曜日」和「木曜日」是常見的課程安排。',
+            relatedRules: ['曜日の讀法', '授業の予定']
+        },
+        sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
+    },
+    {
+        id: 'weekday_extra_44',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「先々週」的讀法是？',
+        stem_zh: '「先々週」的讀法是？',
+        options: [
+            { text: 'せんせんしゅう', isCorrect: true, reason: '正確！先々週讀「せんせんしゅう」。' },
+            { text: 'さきさきしゅう', isCorrect: false, reason: '「先」讀「せん」不是「さき」。' },
+            { text: 'ぜんぜんしゅう', isCorrect: false, reason: '「先」讀「せん」不是「ぜん」。' },
+            { text: 'せんしゅうまえ', isCorrect: false, reason: '這不是正確的讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「先々週」讀「せんせんしゅう」，指上上週。',
+            relatedRules: ['週の讀法', '時間の表現']
+        },
+        sourceItem: { value: 'Week before last', kanji: '先々週', reading: 'せんせんしゅう' }
+    },
+    {
+        id: 'weekday_extra_45',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '銀行は＿＿と祝日が休みです。',
+        stem_zh: '銀行在週末和假日休息。',
+        options: [
+            { text: 'しゅうまつ', isCorrect: true, reason: '正確！銀行週末休息。' },
+            { text: 'しゅうすえ', isCorrect: false, reason: '「末」讀「まつ」不是「すえ」。' },
+            { text: 'へいじつ', isCorrect: false, reason: '平日銀行有營業。' },
+            { text: 'きんようび', isCorrect: false, reason: '金曜日銀行有營業。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '日本的銀行「週末」（土日）和「祝日」休息。',
+            relatedRules: ['週末の讀法', '銀行の営業日']
+        },
+        sourceItem: { value: 'Weekend', kanji: '週末', reading: 'しゅうまつ' }
+    },
+    {
+        id: 'weekday_extra_46',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '發薪日是每月幾號？',
+        stem_zh: '發薪日是每月幾號？',
+        dialogue: {
+            speakerA: '給料日はいつですか？',
+            speakerB: '毎月25日ですが、土日の場合は前の＿＿に振り込まれます。（星期五）'
+        },
+        options: [
+            { text: 'きんようび', isCorrect: true, reason: '正確！週末前的金曜日發薪。' },
+            { text: 'かねようび', isCorrect: false, reason: '「金」讀「きん」不是「かね」。' },
+            { text: 'もくようび', isCorrect: false, reason: '通常是金曜日不是木曜日。' },
+            { text: 'げつようび', isCorrect: false, reason: '不會延到下週一。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '如果發薪日遇週末，通常提前到「金曜日」發放。',
+            relatedRules: ['曜日の讀法', '給料日']
+        },
+        sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
+    },
+    {
+        id: 'weekday_extra_47',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「火曜日」中「火」的讀法是？',
+        stem_zh: '「火曜日」中「火」的讀法是？',
+        options: [
+            { text: 'か', isCorrect: true, reason: '正確！「火」在曜日中讀「か」。' },
+            { text: 'ひ', isCorrect: false, reason: '「ひ」是訓讀（火焰），曜日用「か」。' },
+            { text: 'ほ', isCorrect: false, reason: '沒有這個讀法。' },
+            { text: 'かい', isCorrect: false, reason: '沒有長音，是短音「か」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「火曜日」的「火」讀「か」，是音讀。',
+            trapExplanation: '「火」的訓讀「ひ」（火）和音讀「か」要區分。',
+            relatedRules: ['曜日の讀法', '音讀vs訓讀']
+        },
+        sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
+    },
+    {
+        id: 'weekday_extra_48',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿の夜は居酒屋が混んでいます。',
+        stem_zh: '星期五晚上居酒屋很擁擠。',
+        options: [
+            { text: 'きんようび', isCorrect: true, reason: '正確！金曜日晚上大家去喝酒。' },
+            { text: 'かねようび', isCorrect: false, reason: '「金」讀「きん」不是「かね」。' },
+            { text: 'もくようび', isCorrect: false, reason: '木曜日比金曜日人少。' },
+            { text: 'すいようび', isCorrect: false, reason: '水曜日比金曜日人少。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「金曜日」晚上是日本上班族喝酒聚會的熱門時間。',
+            relatedRules: ['曜日の讀法', '日本の飲み会文化']
+        },
+        sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
+    },
+    {
+        id: 'weekday_extra_49',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '教會禮拜是哪一天？',
+        stem_zh: '教會禮拜是哪一天？',
+        dialogue: {
+            speakerA: '教会の礼拝は何曜日ですか？',
+            speakerB: '毎週＿＿の朝です。（星期日）'
+        },
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！教會日曜日做禮拜。' },
+            { text: 'ひようび', isCorrect: false, reason: '「日」讀「にち」不是「ひ」。' },
+            { text: 'どようび', isCorrect: false, reason: '這是土曜日（星期六）。' },
+            { text: 'げつようび', isCorrect: false, reason: '這是月曜日（星期一）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '基督教的禮拜通常在「日曜日」（主日）。',
+            relatedRules: ['曜日の讀法', '宗教行事']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_50',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「隔週」的讀法是？',
+        stem_zh: '「隔週」的讀法是？',
+        options: [
+            { text: 'かくしゅう', isCorrect: true, reason: '正確！隔週讀「かくしゅう」。' },
+            { text: 'かくしゅ', isCorrect: false, reason: '「週」要有長音「しゅう」。' },
+            { text: 'へだてしゅう', isCorrect: false, reason: '「隔」讀「かく」不是「へだて」。' },
+            { text: 'りかくしゅう', isCorrect: false, reason: '沒有「り」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「隔週」讀「かくしゅう」，意思是每隔一週。',
+            relatedRules: ['週の讀法', '時間の表現']
+        },
+        sourceItem: { value: 'Every other week', kanji: '隔週', reading: 'かくしゅう' }
+    },
+    {
+        id: 'weekday_extra_51',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '日本の小学校は＿＿も授業があります。',
+        stem_zh: '日本的小學星期六也有課。',
+        options: [
+            { text: 'どようび', isCorrect: true, reason: '正確！有些學校土曜日有授業。' },
+            { text: 'つちようび', isCorrect: false, reason: '「土」讀「ど」不是「つち」。' },
+            { text: 'にちようび', isCorrect: false, reason: '日曜日沒有學校。' },
+            { text: 'きんようび', isCorrect: false, reason: '金曜日是平常上課日。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '部分日本學校「土曜日」也有授業（土曜授業）。',
+            relatedRules: ['曜日の讀法', '日本の学校制度']
+        },
+        sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
+    },
+    {
+        id: 'weekday_extra_52',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '新產品發售日是？',
+        stem_zh: '新產品發售日是？',
+        dialogue: {
+            speakerA: '新製品の発売日はいつですか？',
+            speakerB: '来週の＿＿です。（星期五）'
+        },
+        options: [
+            { text: 'きんようび', isCorrect: true, reason: '正確！金曜日是常見的發售日。' },
+            { text: 'かねようび', isCorrect: false, reason: '「金」讀「きん」不是「かね」。' },
+            { text: 'げつようび', isCorrect: false, reason: '週初不是常見發售日。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「金曜日」是日本新產品發售的熱門日子。',
+            relatedRules: ['曜日の讀法', '発売日']
+        },
+        sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
+    },
+    {
+        id: 'weekday_extra_53',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「水曜日」中「水」的讀法是？',
+        stem_zh: '「水曜日」中「水」的讀法是？',
+        options: [
+            { text: 'すい', isCorrect: true, reason: '正確！「水」在曜日中讀「すい」。' },
+            { text: 'みず', isCorrect: false, reason: '「みず」是訓讀（水），曜日用「すい」。' },
+            { text: 'み', isCorrect: false, reason: '沒有這個讀法。' },
+            { text: 'しゅい', isCorrect: false, reason: '拼寫錯誤。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「水曜日」的「水」讀「すい」，是音讀。',
+            trapExplanation: '「水」的訓讀「みず」和音讀「すい」要區分。',
+            relatedRules: ['曜日の讀法', '音讀vs訓讀']
+        },
+        sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
+    },
+    {
+        id: 'weekday_extra_54',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '週刊誌は毎週＿＿に発売されます。',
+        stem_zh: '週刊雜誌每週星期四發售。',
+        options: [
+            { text: 'もくようび', isCorrect: true, reason: '正確！很多週刊木曜日發售。' },
+            { text: 'きようび', isCorrect: false, reason: '「木」讀「もく」不是「き」。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' },
+            { text: 'げつようび', isCorrect: false, reason: '這是月曜日（星期一）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '很多日本週刊雜誌「木曜日」發售。',
+            relatedRules: ['曜日の讀法', '出版物の発売日']
+        },
+        sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
+    },
+    {
+        id: 'weekday_extra_55',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '瑜伽課是哪幾天？',
+        stem_zh: '瑜伽課是哪幾天？',
+        dialogue: {
+            speakerA: 'ヨガ教室は何曜日にありますか？',
+            speakerB: '＿＿と金曜日です。（星期一）'
+        },
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！月曜日和金曜日有瑜伽課。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' },
+            { text: 'もくようび', isCorrect: false, reason: '這是木曜日（星期四）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「月曜日」和「金曜日」是常見的課程安排日。',
+            relatedRules: ['曜日の讀法', '習い事の予定']
+        },
+        sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
+    },
+    {
+        id: 'weekday_extra_56',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「月曜日」中「曜」的讀法是？',
+        stem_zh: '「月曜日」中「曜」的讀法是？',
+        options: [
+            { text: 'よう', isCorrect: true, reason: '正確！「曜」讀「よう」。' },
+            { text: 'よ', isCorrect: false, reason: '有長音，是「よう」。' },
+            { text: 'び', isCorrect: false, reason: '「び」是「日」的讀法。' },
+            { text: 'あき', isCorrect: false, reason: '沒有這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '所有曜日中「曜」都讀「よう」。',
+            relatedRules: ['曜日の讀法', '曜の字']
+        },
+        sourceItem: { value: 'Day of week', kanji: '曜', reading: 'よう' }
+    },
+    {
+        id: 'weekday_extra_57',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '翌週の＿＿に届きます。',
+        stem_zh: '下週星期二送達。',
+        options: [
+            { text: 'かようび', isCorrect: true, reason: '正確！下週火曜日送達。' },
+            { text: 'ひようび', isCorrect: false, reason: '「火」讀「か」不是「ひ」。' },
+            { text: 'げつようび', isCorrect: false, reason: '這是月曜日（星期一）。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「翌週の火曜日」指下週二。',
+            relatedRules: ['曜日の讀法', '配達の予定']
+        },
+        sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
+    },
+    {
+        id: 'weekday_extra_58',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '游泳池的清掃日是？',
+        stem_zh: '游泳池的清掃日是？',
+        dialogue: {
+            speakerA: 'プールの清掃日はいつですか？',
+            speakerB: '毎週＿＿の午前中です。（星期一）'
+        },
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！很多游泳池月曜日清掃。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '很多設施選「月曜日」作為清掃和維護日。',
+            relatedRules: ['曜日の讀法', '施設の清掃日']
+        },
+        sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
+    },
+    {
+        id: 'weekday_extra_59',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「翌週」的讀法是？',
+        stem_zh: '「翌週」的讀法是？',
+        options: [
+            { text: 'よくしゅう', isCorrect: true, reason: '正確！翌週讀「よくしゅう」。' },
+            { text: 'つぎしゅう', isCorrect: false, reason: '「翌」讀「よく」不是「つぎ」。' },
+            { text: 'よくしゅ', isCorrect: false, reason: '「週」要有長音「しゅう」。' },
+            { text: 'あくしゅう', isCorrect: false, reason: '「翌」讀「よく」不是「あく」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「翌週」讀「よくしゅう」，意思是下一週。',
+            relatedRules: ['週の讀法', '翌〜の表現']
+        },
+        sourceItem: { value: 'Following week', kanji: '翌週', reading: 'よくしゅう' }
+    },
+    {
+        id: 'weekday_extra_60',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿は「週の半ば」と言われます。',
+        stem_zh: '星期三被稱為「週中」。',
+        options: [
+            { text: 'すいようび', isCorrect: true, reason: '正確！水曜日是週の半ば。' },
+            { text: 'みずようび', isCorrect: false, reason: '「水」讀「すい」不是「みず」。' },
+            { text: 'もくようび', isCorrect: false, reason: '木曜日已過半。' },
+            { text: 'かようび', isCorrect: false, reason: '火曜日還在週初。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「水曜日」位於工作週的中間，稱為「週の半ば」。',
+            relatedRules: ['曜日の讀法', '週の構成']
+        },
+        sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
+    },
+    {
+        id: 'weekday_extra_61',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '馬拉松大會是哪天？',
+        stem_zh: '馬拉松大會是哪天？',
+        dialogue: {
+            speakerA: 'マラソン大会はいつですか？',
+            speakerB: '今度の＿＿です。（星期日）'
+        },
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！馬拉松大會常在日曜日舉行。' },
+            { text: 'ひようび', isCorrect: false, reason: '「日」讀「にち」不是「ひ」。' },
+            { text: 'どようび', isCorrect: false, reason: '這是土曜日（星期六）。' },
+            { text: 'げつようび', isCorrect: false, reason: '平日不適合大型活動。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '馬拉松等大型活動常在「日曜日」舉行。',
+            relatedRules: ['曜日の讀法', 'イベントの日程']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_62',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「日曜日」中「日」的最後一個讀法是？',
+        stem_zh: '「日曜日」中最後一個「日」的讀法是？',
+        options: [
+            { text: 'び', isCorrect: true, reason: '正確！最後的「日」讀「び」。' },
+            { text: 'にち', isCorrect: false, reason: '第一個「日」讀「にち」，最後讀「び」。' },
+            { text: 'ひ', isCorrect: false, reason: '不是訓讀「ひ」。' },
+            { text: 'か', isCorrect: false, reason: '「日」沒有「か」的讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「曜日」的「日」讀「び」，全部曜日都一樣。',
+            trapExplanation: '「日曜日」有兩個「日」，讀法不同：にち・よう・び。',
+            relatedRules: ['曜日の讀法', '日の讀み分け']
+        },
+        sourceItem: { value: 'Day', kanji: '日', reading: 'び' }
+    },
+    {
+        id: 'weekday_extra_63',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '今週中に終わらせます。',
+        stem_zh: '這週內完成。',
+        options: [
+            { text: 'こんしゅうちゅう', isCorrect: true, reason: '正確！今週中讀「こんしゅうちゅう」。' },
+            { text: 'こんしゅうなか', isCorrect: false, reason: '「中」讀「ちゅう」不是「なか」。' },
+            { text: 'いましゅうちゅう', isCorrect: false, reason: '「今」讀「こん」不是「いま」。' },
+            { text: 'こんしゅじゅう', isCorrect: false, reason: '缺少長音，且「中」讀「ちゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「今週中」讀「こんしゅうちゅう」，指這週內。',
+            relatedRules: ['週の讀法', '〜中の表現']
+        },
+        sourceItem: { value: 'Within this week', kanji: '今週中', reading: 'こんしゅうちゅう' }
+    },
+    {
+        id: 'weekday_extra_64',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '打工是哪幾天？',
+        stem_zh: '打工是哪幾天？',
+        dialogue: {
+            speakerA: 'バイトは何曜日に入っていますか？',
+            speakerB: '＿＿と日曜日です。（星期六）'
+        },
+        options: [
+            { text: 'どようび', isCorrect: true, reason: '正確！土曜日和日曜日打工。' },
+            { text: 'つちようび', isCorrect: false, reason: '「土」讀「ど」不是「つち」。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' },
+            { text: 'げつようび', isCorrect: false, reason: '這是月曜日（星期一）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '學生常在「土曜日」和「日曜日」打工。',
+            relatedRules: ['曜日の讀法', 'アルバイトの予定']
+        },
+        sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
+    },
+    // ===== 追加題目 65-114 =====
+    {
+        id: 'weekday_extra_65',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「毎日」的讀法是？',
+        stem_zh: '「毎日」的讀法是？',
+        options: [
+            { text: 'まいにち', isCorrect: true, reason: '正確！毎日讀「まいにち」。' },
+            { text: 'まいひ', isCorrect: false, reason: '「日」讀「にち」不是「ひ」。' },
+            { text: 'ごとにち', isCorrect: false, reason: '「毎」讀「まい」不是「ごと」。' },
+            { text: 'まいじつ', isCorrect: false, reason: '「日」在此讀「にち」不是「じつ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「毎日」讀「まいにち」，意思是每天。',
+            relatedRules: ['毎〜の讀法', '日の讀法']
+        },
+        sourceItem: { value: 'Every day', kanji: '毎日', reading: 'まいにち' }
+    },
+    {
+        id: 'weekday_extra_66',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿のジャンプは人気があります。',
+        stem_zh: '週一的JUMP（少年漫畫雜誌）很受歡迎。',
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！少年ジャンプ月曜日發售。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」。' },
+            { text: 'きんようび', isCorrect: false, reason: '不是金曜日發售。' },
+            { text: 'もくようび', isCorrect: false, reason: '不是木曜日發售。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '《週刊少年ジャンプ》每週「月曜日」發售。',
+            relatedRules: ['曜日の讀法', '日本の漫画雑誌']
+        },
+        sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
+    },
+    {
+        id: 'weekday_extra_67',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '網球練習是哪天？',
+        stem_zh: '網球練習是哪天？',
+        dialogue: {
+            speakerA: 'テニスの練習は何曜日ですか？',
+            speakerB: '毎週＿＿の放課後です。（星期三）'
+        },
+        options: [
+            { text: 'すいようび', isCorrect: true, reason: '正確！水曜日放學後練習。' },
+            { text: 'みずようび', isCorrect: false, reason: '「水」讀「すい」不是「みず」。' },
+            { text: 'かようび', isCorrect: false, reason: '這是火曜日（星期二）。' },
+            { text: 'もくようび', isCorrect: false, reason: '這是木曜日（星期四）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「水曜日」是常見的社團活動日。',
+            relatedRules: ['曜日の讀法', '部活の予定']
+        },
+        sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
+    },
+    {
+        id: 'weekday_extra_68',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「休日」的讀法是？',
+        stem_zh: '「休日」的讀法是？',
+        options: [
+            { text: 'きゅうじつ', isCorrect: true, reason: '正確！休日讀「きゅうじつ」。' },
+            { text: 'やすみび', isCorrect: false, reason: '「休」讀「きゅう」，「日」讀「じつ」。' },
+            { text: 'きゅうにち', isCorrect: false, reason: '「日」在此讀「じつ」不是「にち」。' },
+            { text: 'やすみにち', isCorrect: false, reason: '用音讀不是訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「休日」讀「きゅうじつ」，意思是假日。',
+            trapExplanation: '注意「日」在此讀「じつ」而非「にち」。',
+            relatedRules: ['休日の讀法', '日の讀み分け']
+        },
+        sourceItem: { value: 'Holiday', kanji: '休日', reading: 'きゅうじつ' }
+    },
+    {
+        id: 'weekday_extra_69',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿は「週の始まり」です。',
+        stem_zh: '星期一是「一週的開始」。',
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！工作週從月曜日開始。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」。' },
+            { text: 'にちようび', isCorrect: false, reason: '日本日曆從日曜日開始，但工作週從月曜日。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日是週末開始。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '工作週從「月曜日」開始。',
+            relatedRules: ['曜日の讀法', '週の始まり']
+        },
+        sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
+    },
+    {
+        id: 'weekday_extra_70',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '垃圾車幾點來？',
+        stem_zh: '垃圾車幾點來？',
+        dialogue: {
+            speakerA: '＿＿のゴミ収集は何時ですか？（星期二）',
+            speakerB: '朝8時に来ます。'
+        },
+        options: [
+            { text: 'かようび', isCorrect: true, reason: '正確！火曜日的垃圾收集。' },
+            { text: 'ひようび', isCorrect: false, reason: '「火」讀「か」不是「ひ」。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「火曜日」是常見的垃圾收集日之一。',
+            relatedRules: ['曜日の讀法', 'ゴミ収集']
+        },
+        sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
+    },
+    {
+        id: 'weekday_extra_71',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「祝日」的讀法是？',
+        stem_zh: '「祝日」的讀法是？',
+        options: [
+            { text: 'しゅくじつ', isCorrect: true, reason: '正確！祝日讀「しゅくじつ」。' },
+            { text: 'いわいび', isCorrect: false, reason: '「祝」讀「しゅく」，「日」讀「じつ」。' },
+            { text: 'しゅくにち', isCorrect: false, reason: '「日」在此讀「じつ」不是「にち」。' },
+            { text: 'しゅくひ', isCorrect: false, reason: '「日」讀「じつ」不是「ひ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「祝日」讀「しゅくじつ」，指國定假日。',
+            relatedRules: ['祝日の讀法', '日の讀み分け']
+        },
+        sourceItem: { value: 'National holiday', kanji: '祝日', reading: 'しゅくじつ' }
+    },
+    {
+        id: 'weekday_extra_72',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '日本では＿＿が「安息日」です。',
+        stem_zh: '在日本，星期日是「安息日」。',
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！日曜日是休息日。' },
+            { text: 'ひようび', isCorrect: false, reason: '「日」讀「にち」不是「ひ」。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日也是休息日但不叫安息日。' },
+            { text: 'げつようび', isCorrect: false, reason: '月曜日是工作日。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「日曜日」在很多文化中是「安息日」。',
+            relatedRules: ['曜日の讀法', '宗教と曜日']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_73',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '美術館的免費日是？',
+        stem_zh: '美術館的免費日是？',
+        dialogue: {
+            speakerA: '美術館の無料日はいつですか？',
+            speakerB: '毎月第一＿＿です。（星期日）'
+        },
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！每月第一個日曜日免費。' },
+            { text: 'ひようび', isCorrect: false, reason: '「日」讀「にち」不是「ひ」。' },
+            { text: 'どようび', isCorrect: false, reason: '這是土曜日（星期六）。' },
+            { text: 'げつようび', isCorrect: false, reason: '月曜日通常休館。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '很多日本美術館每月第一「日曜日」免費。',
+            relatedRules: ['曜日の讀法', '美術館の割引']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_74',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「週初め」的讀法是？',
+        stem_zh: '「週初め」的讀法是？',
+        options: [
+            { text: 'しゅうはじめ', isCorrect: true, reason: '正確！週初め讀「しゅうはじめ」。' },
+            { text: 'しゅうそめ', isCorrect: false, reason: '「初め」讀「はじめ」不是「そめ」。' },
+            { text: 'しゅうしょ', isCorrect: false, reason: '「初め」不讀「しょ」。' },
+            { text: 'しゅはじめ', isCorrect: false, reason: '「週」要有長音「しゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「週初め」讀「しゅうはじめ」，指一週開始。',
+            relatedRules: ['週の讀法', '初めの讀法']
+        },
+        sourceItem: { value: 'Beginning of week', kanji: '週初め', reading: 'しゅうはじめ' }
+    },
+    {
+        id: 'weekday_extra_75',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '日本の官公庁は＿＿から金曜日まで開いています。',
+        stem_zh: '日本的政府機關從星期一到星期五開放。',
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！政府機關月曜日到金曜日營業。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」。' },
+            { text: 'にちようび', isCorrect: false, reason: '日曜日政府機關休息。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日政府機關休息。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '日本的官公庁「月曜日」到「金曜日」營業。',
+            relatedRules: ['曜日の讀法', '官公庁の営業日']
+        },
+        sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
+    },
+    {
+        id: 'weekday_extra_76',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '新歌發布是哪天？',
+        stem_zh: '新歌發布是哪天？',
+        dialogue: {
+            speakerA: '新曲のリリース日はいつですか？',
+            speakerB: '毎週＿＿です。（星期三）'
+        },
+        options: [
+            { text: 'すいようび', isCorrect: true, reason: '正確！日本的音樂常水曜日發布。' },
+            { text: 'みずようび', isCorrect: false, reason: '「水」讀「すい」不是「みず」。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' },
+            { text: 'げつようび', isCorrect: false, reason: '這是月曜日（星期一）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '日本的音樂傳統上「水曜日」發布新曲。',
+            relatedRules: ['曜日の讀法', '音楽のリリース日']
+        },
+        sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
+    },
+    {
+        id: 'weekday_extra_77',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「連休」的讀法是？',
+        stem_zh: '「連休」的讀法是？',
+        options: [
+            { text: 'れんきゅう', isCorrect: true, reason: '正確！連休讀「れんきゅう」。' },
+            { text: 'つらやすみ', isCorrect: false, reason: '用音讀不是訓讀。' },
+            { text: 'れんやすみ', isCorrect: false, reason: '「休」讀「きゅう」不是「やすみ」。' },
+            { text: 'つづきやすみ', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「連休」讀「れんきゅう」，指連續假期。',
+            trapExplanation: '「休」的音讀是「きゅう」，訓讀是「やすみ」。',
+            relatedRules: ['連休の讀法', '休の讀み分け']
+        },
+        sourceItem: { value: 'Consecutive holidays', kanji: '連休', reading: 'れんきゅう' }
+    },
+    {
+        id: 'weekday_extra_78',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿のドラマが一番視聴率が高いです。',
+        stem_zh: '星期日的電視劇收視率最高。',
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！日曜劇場收視率高。' },
+            { text: 'ひようび', isCorrect: false, reason: '「日」讀「にち」不是「ひ」。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日也有人氣但不是最高。' },
+            { text: 'きんようび', isCorrect: false, reason: '金曜日不是最高收視時段。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「日曜劇場」（日曜日晚上）是日本收視率最高的電視劇時段。',
+            relatedRules: ['曜日の讀法', 'テレビの視聴率']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_79',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '回診是哪一天？',
+        stem_zh: '回診是哪一天？',
+        dialogue: {
+            speakerA: '次の診察日はいつですか？',
+            speakerB: '来週の＿＿です。（星期四）'
+        },
+        options: [
+            { text: 'もくようび', isCorrect: true, reason: '正確！下週木曜日回診。' },
+            { text: 'きようび', isCorrect: false, reason: '「木」讀「もく」不是「き」。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '醫院的診察日安排因醫師而異。',
+            relatedRules: ['曜日の讀法', '病院の予約']
+        },
+        sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
+    },
+    {
+        id: 'weekday_extra_80',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「週明け」的讀法是？',
+        stem_zh: '「週明け」的讀法是？',
+        options: [
+            { text: 'しゅうあけ', isCorrect: true, reason: '正確！週明け讀「しゅうあけ」。' },
+            { text: 'しゅうみょう', isCorrect: false, reason: '「明け」讀「あけ」。' },
+            { text: 'しゅあけ', isCorrect: false, reason: '「週」要有長音「しゅう」。' },
+            { text: 'しゅうびらき', isCorrect: false, reason: '「明け」不讀「びらき」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「週明け」讀「しゅうあけ」，指週末結束後的週一。',
+            relatedRules: ['週の讀法', '〜明けの表現']
+        },
+        sourceItem: { value: 'Beginning of new week', kanji: '週明け', reading: 'しゅうあけ' }
+    },
+    {
+        id: 'weekday_extra_81',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿は「ハッピーマンデー」で祝日になることがあります。',
+        stem_zh: '星期一有時因「快樂星期一」制度而成為假日。',
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！ハッピーマンデー制度使月曜日變假日。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」。' },
+            { text: 'きんようび', isCorrect: false, reason: '這制度與金曜日無關。' },
+            { text: 'にちようび', isCorrect: false, reason: '日曜日本來就是週末。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「ハッピーマンデー制度」將部分祝日移到「月曜日」形成連休。',
+            relatedRules: ['曜日の讀法', '日本の祝日制度']
+        },
+        sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
+    },
+    {
+        id: 'weekday_extra_82',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '考試是哪一天？',
+        stem_zh: '考試是哪一天？',
+        dialogue: {
+            speakerA: '試験は何曜日ですか？',
+            speakerB: '＿＿の午前中です。（星期六）'
+        },
+        options: [
+            { text: 'どようび', isCorrect: true, reason: '正確！土曜日上午考試。' },
+            { text: 'つちようび', isCorrect: false, reason: '「土」讀「ど」不是「つち」。' },
+            { text: 'にちようび', isCorrect: false, reason: '這是日曜日（星期日）。' },
+            { text: 'げつようび', isCorrect: false, reason: '這是月曜日（星期一）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '很多考試在「土曜日」舉行。',
+            relatedRules: ['曜日の讀法', '試験の日程']
+        },
+        sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
+    },
+    {
+        id: 'weekday_extra_83',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「振替休日」的讀法是？',
+        stem_zh: '「振替休日」的讀法是？',
+        options: [
+            { text: 'ふりかえきゅうじつ', isCorrect: true, reason: '正確！振替休日讀「ふりかえきゅうじつ」。' },
+            { text: 'しんたいきゅうじつ', isCorrect: false, reason: '「振替」讀「ふりかえ」。' },
+            { text: 'ふりかえやすみび', isCorrect: false, reason: '「休日」讀「きゅうじつ」。' },
+            { text: 'しんかえきゅうじつ', isCorrect: false, reason: '「振」讀「ふり」不是「しん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「振替休日」讀「ふりかえきゅうじつ」，指祝日遇週日時的補假。',
+            trapExplanation: '「振替」是訓讀「ふりかえ」，「休日」是音讀「きゅうじつ」。',
+            relatedRules: ['振替休日の讀法', '日本の祝日制度']
+        },
+        sourceItem: { value: 'Substitute holiday', kanji: '振替休日', reading: 'ふりかえきゅうじつ' }
+    },
+    {
+        id: 'weekday_extra_84',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿は「週末の入り口」と呼ばれます。',
+        stem_zh: '星期五被稱為「週末的入口」。',
+        options: [
+            { text: 'きんようび', isCorrect: true, reason: '正確！金曜日是週末的開始。' },
+            { text: 'かねようび', isCorrect: false, reason: '「金」讀「きん」不是「かね」。' },
+            { text: 'もくようび', isCorrect: false, reason: '木曜日還要工作一天。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日已經是週末了。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「金曜日」被稱為週末的入口，工作結束後就是假期。',
+            relatedRules: ['曜日の讀法', '週末への期待']
+        },
+        sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
+    },
+    {
+        id: 'weekday_extra_85',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '家庭日是哪天？',
+        stem_zh: '家庭日是哪天？',
+        dialogue: {
+            speakerA: 'ファミリーデーはいつですか？',
+            speakerB: '毎週＿＿です。（星期日）'
+        },
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！日曜日是家庭團聚日。' },
+            { text: 'ひようび', isCorrect: false, reason: '「日」讀「にち」不是「ひ」。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日也可以但傳統是日曜日。' },
+            { text: 'げつようび', isCorrect: false, reason: '月曜日大家要工作上學。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「日曜日」傳統上是家庭團聚的日子。',
+            relatedRules: ['曜日の讀法', '家族の時間']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_86',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「定休日」的讀法是？',
+        stem_zh: '「定休日」的讀法是？',
+        options: [
+            { text: 'ていきゅうび', isCorrect: true, reason: '正確！定休日讀「ていきゅうび」。' },
+            { text: 'ていやすみび', isCorrect: false, reason: '「休」讀「きゅう」不是「やすみ」。' },
+            { text: 'じょうきゅうび', isCorrect: false, reason: '「定」讀「てい」不是「じょう」。' },
+            { text: 'さだめやすみび', isCorrect: false, reason: '全部用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「定休日」讀「ていきゅうび」，指店鋪固定休息日。',
+            relatedRules: ['定休日の讀法', '店舗の休み']
+        },
+        sourceItem: { value: 'Regular holiday', kanji: '定休日', reading: 'ていきゅうび' }
+    },
+    {
+        id: 'weekday_extra_87',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: 'この店の定休日は＿＿です。',
+        stem_zh: '這家店的定休日是星期二。',
+        options: [
+            { text: 'かようび', isCorrect: true, reason: '正確！火曜日是定休日。' },
+            { text: 'ひようび', isCorrect: false, reason: '「火」讀「か」不是「ひ」。' },
+            { text: 'げつようび', isCorrect: false, reason: '這是月曜日（星期一）。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '很多餐廳選「火曜日」作為定休日。',
+            relatedRules: ['曜日の讀法', '飲食店の定休日']
+        },
+        sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
+    },
+    {
+        id: 'weekday_extra_88',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '社團活動是哪幾天？',
+        stem_zh: '社團活動是哪幾天？',
+        dialogue: {
+            speakerA: '部活は週に何日ありますか？',
+            speakerB: '月曜日から＿＿まで毎日です。（星期五）'
+        },
+        options: [
+            { text: 'きんようび', isCorrect: true, reason: '正確！平日每天都有社團活動。' },
+            { text: 'かねようび', isCorrect: false, reason: '「金」讀「きん」不是「かね」。' },
+            { text: 'もくようび', isCorrect: false, reason: '這是木曜日（星期四）。' },
+            { text: 'どようび', isCorrect: false, reason: '週末不一定有活動。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '很多學校社團「月曜日」到「金曜日」每天活動。',
+            relatedRules: ['曜日の讀法', '部活動の予定']
+        },
+        sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
+    },
+    {
+        id: 'weekday_extra_89',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「週に一回」的讀法是？',
+        stem_zh: '「週に一回」的讀法是？',
+        options: [
+            { text: 'しゅうにいっかい', isCorrect: true, reason: '正確！週に一回讀「しゅうにいっかい」。' },
+            { text: 'しゅうにひとかい', isCorrect: false, reason: '「一回」讀「いっかい」。' },
+            { text: 'しゅにいちかい', isCorrect: false, reason: '「週」是「しゅう」，「一回」有促音。' },
+            { text: 'しゅうにいちかい', isCorrect: false, reason: '「一回」有促音變成「いっかい」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「週に一回」讀「しゅうにいっかい」，意思是每週一次。',
+            relatedRules: ['週の讀法', '頻度の表現']
+        },
+        sourceItem: { value: 'Once a week', kanji: '週に一回', reading: 'しゅうにいっかい' }
+    },
+    {
+        id: 'weekday_extra_90',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿の朝市は新鮮な野菜がたくさんあります。',
+        stem_zh: '星期日早上的市集有很多新鮮蔬菜。',
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！日曜日有朝市。' },
+            { text: 'ひようび', isCorrect: false, reason: '「日」讀「にち」不是「ひ」。' },
+            { text: 'どようび', isCorrect: false, reason: '這是土曜日（星期六）。' },
+            { text: 'げつようび', isCorrect: false, reason: '平日比較少有朝市。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「日曜日」很多地方有朝市（早晨市集）。',
+            relatedRules: ['曜日の讀法', '朝市の日']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_91',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '日語能力試驗是哪天？',
+        stem_zh: '日語能力試驗是哪天？',
+        dialogue: {
+            speakerA: 'JLPTはいつですか？',
+            speakerB: '7月と12月の＿＿です。（星期日）'
+        },
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！JLPT在日曜日舉行。' },
+            { text: 'ひようび', isCorrect: false, reason: '「日」讀「にち」不是「ひ」。' },
+            { text: 'どようび', isCorrect: false, reason: '這是土曜日（星期六）。' },
+            { text: 'げつようび', isCorrect: false, reason: '不在平日舉行。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: 'JLPT（日本語能力試驗）每年7月和12月的「日曜日」舉行。',
+            relatedRules: ['曜日の讀法', '日本語能力試験']
+        },
+        sourceItem: { value: 'Sun', kanji: '日曜日', reading: 'にちようび' }
+    },
+    {
+        id: 'weekday_extra_92',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「平日休み」的讀法是？',
+        stem_zh: '「平日休み」的讀法是？',
+        options: [
+            { text: 'へいじつやすみ', isCorrect: true, reason: '正確！平日休み讀「へいじつやすみ」。' },
+            { text: 'へいじつきゅう', isCorrect: false, reason: '「休み」讀「やすみ」。' },
+            { text: 'ひらびやすみ', isCorrect: false, reason: '「平日」讀「へいじつ」。' },
+            { text: 'へいにちやすみ', isCorrect: false, reason: '「日」讀「じつ」不是「にち」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「平日休み」讀「へいじつやすみ」，指平日的休假。',
+            trapExplanation: '「休み」是訓讀「やすみ」，與「休日」的「きゅうじつ」不同。',
+            relatedRules: ['休みの讀法', '平日の讀法']
+        },
+        sourceItem: { value: 'Weekday off', kanji: '平日休み', reading: 'へいじつやすみ' }
+    },
+    {
+        id: 'weekday_extra_93',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿の夜は「金曜ロードショー」があります。',
+        stem_zh: '星期五晚上有「金曜電影院」。',
+        options: [
+            { text: 'きんようび', isCorrect: true, reason: '正確！金曜ロードショー在金曜日播出。' },
+            { text: 'かねようび', isCorrect: false, reason: '「金」讀「きん」不是「かね」。' },
+            { text: 'もくようび', isCorrect: false, reason: '這是木曜日（星期四）。' },
+            { text: 'どようび', isCorrect: false, reason: '這是土曜日（星期六）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「金曜ロードショー」是日本電視台「金曜日」播出的電影節目。',
+            relatedRules: ['曜日の讀法', '日本のテレビ番組']
+        },
+        sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
+    },
+    {
+        id: 'weekday_extra_94',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '大掃除是哪天？',
+        stem_zh: '大掃除是哪天？',
+        dialogue: {
+            speakerA: '大掃除はいつしますか？',
+            speakerB: '今度の＿＿の午前中にします。（星期六）'
+        },
+        options: [
+            { text: 'どようび', isCorrect: true, reason: '正確！土曜日上午大掃除。' },
+            { text: 'つちようび', isCorrect: false, reason: '「土」讀「ど」不是「つち」。' },
+            { text: 'にちようび', isCorrect: false, reason: '這是日曜日（星期日）。' },
+            { text: 'きんようび', isCorrect: false, reason: '平日沒時間大掃除。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「土曜日」是做家事和大掃除的好時機。',
+            relatedRules: ['曜日の讀法', '家事の予定']
+        },
+        sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
+    },
+    {
+        id: 'weekday_extra_95',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「毎週末」的讀法是？',
+        stem_zh: '「毎週末」的讀法是？',
+        options: [
+            { text: 'まいしゅうまつ', isCorrect: true, reason: '正確！毎週末讀「まいしゅうまつ」。' },
+            { text: 'ごとしゅうまつ', isCorrect: false, reason: '「毎」讀「まい」不是「ごと」。' },
+            { text: 'まいしゅうすえ', isCorrect: false, reason: '「末」讀「まつ」不是「すえ」。' },
+            { text: 'まいしゅまつ', isCorrect: false, reason: '「週」要有長音「しゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「毎週末」讀「まいしゅうまつ」，意思是每個週末。',
+            relatedRules: ['毎〜の讀法', '週末の讀法']
+        },
+        sourceItem: { value: 'Every weekend', kanji: '毎週末', reading: 'まいしゅうまつ' }
+    },
+    {
+        id: 'weekday_extra_96',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '郵便局は＿＿も営業しています。',
+        stem_zh: '郵局星期六也有營業。',
+        options: [
+            { text: 'どようび', isCorrect: true, reason: '正確！有些郵局土曜日營業。' },
+            { text: 'つちようび', isCorrect: false, reason: '「土」讀「ど」不是「つち」。' },
+            { text: 'にちようび', isCorrect: false, reason: '日曜日大多休息。' },
+            { text: 'しゅうまつ', isCorrect: false, reason: '週末指土日，但這題指土曜日。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '部分郵局「土曜日」有營業（週末限定服務）。',
+            relatedRules: ['曜日の讀法', '郵便局の営業日']
+        },
+        sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
+    },
+    {
+        id: 'weekday_extra_97',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '線上會議是幾點？',
+        stem_zh: '線上會議是幾點？',
+        dialogue: {
+            speakerA: 'オンライン会議は何曜日の何時ですか？',
+            speakerB: '毎週＿＿の午前10時です。（星期二）'
+        },
+        options: [
+            { text: 'かようび', isCorrect: true, reason: '正確！火曜日上午10點開會。' },
+            { text: 'ひようび', isCorrect: false, reason: '「火」讀「か」不是「ひ」。' },
+            { text: 'げつようび', isCorrect: false, reason: '這是月曜日（星期一）。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「火曜日」是常見的定例會議日。',
+            relatedRules: ['曜日の讀法', '会議の予定']
+        },
+        sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
+    },
+    {
+        id: 'weekday_extra_98',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「曜日」單獨的讀法是？',
+        stem_zh: '「曜日」單獨的讀法是？',
+        options: [
+            { text: 'ようび', isCorrect: true, reason: '正確！曜日讀「ようび」。' },
+            { text: 'ようじつ', isCorrect: false, reason: '「日」在曜日中讀「び」。' },
+            { text: 'ようにち', isCorrect: false, reason: '「日」在曜日中讀「び」。' },
+            { text: 'よび', isCorrect: false, reason: '「曜」是長音「よう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「曜日」讀「ようび」，「日」在這裡讀「び」。',
+            trapExplanation: '「日」的讀法很多，在「曜日」中讀「び」。',
+            relatedRules: ['曜日の讀法', '日の讀み分け']
+        },
+        sourceItem: { value: 'Day of week', kanji: '曜日', reading: 'ようび' }
+    },
+    {
+        id: 'weekday_extra_99',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '七曜とは＿＿から日曜日までのことです。',
+        stem_zh: '七曜指的是從星期一到星期日。',
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！七曜從月曜日開始。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」。' },
+            { text: 'にちようび', isCorrect: false, reason: '日曜日是七曜的最後一天。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日是第六天。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七曜」指一週七天，從「月曜日」到「日曜日」。',
+            relatedRules: ['曜日の讀法', '七曜の由来']
+        },
+        sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
+    },
+    {
+        id: 'weekday_extra_100',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '每週固定休息是哪兩天？',
+        stem_zh: '每週固定休息是哪兩天？',
+        dialogue: {
+            speakerA: '週休二日制の休みは何曜日ですか？',
+            speakerB: '＿＿と日曜日です。（星期六）'
+        },
+        options: [
+            { text: 'どようび', isCorrect: true, reason: '正確！週休二日是土日休息。' },
+            { text: 'つちようび', isCorrect: false, reason: '「土」讀「ど」不是「つち」。' },
+            { text: 'きんようび', isCorrect: false, reason: '金曜日還要工作。' },
+            { text: 'げつようび', isCorrect: false, reason: '月曜日是工作日。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「週休二日制」指「土曜日」和「日曜日」休息。',
+            relatedRules: ['曜日の讀法', '日本の労働制度']
+        },
+        sourceItem: { value: 'Sat', kanji: '土曜日', reading: 'どようび' }
+    },
+    // ===== 追加題目 101-114 =====
+    {
+        id: 'weekday_extra_101',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「水曜どうでしょう」的「水曜」讀法是？',
+        stem_zh: '「水曜日怎麼樣」的「水曜」讀法是？',
+        options: [
+            { text: 'すいよう', isCorrect: true, reason: '正確！水曜讀「すいよう」。' },
+            { text: 'みずよう', isCorrect: false, reason: '「水」讀「すい」不是「みず」。' },
+            { text: 'すいようび', isCorrect: false, reason: '節目名省略「日」。' },
+            { text: 'しゅいよう', isCorrect: false, reason: '拼寫錯誤。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「水曜どうでしょう」是日本人氣節目，「水曜」讀「すいよう」。',
+            relatedRules: ['曜日の讀法', '日本のテレビ番組']
+        },
+        sourceItem: { value: 'Wed', kanji: '水曜', reading: 'すいよう' }
+    },
+    {
+        id: 'weekday_extra_102',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '週の後半は＿＿から始まります。',
+        stem_zh: '一週的後半從星期四開始。',
+        options: [
+            { text: 'もくようび', isCorrect: true, reason: '正確！木曜日是週後半的開始。' },
+            { text: 'きようび', isCorrect: false, reason: '「木」讀「もく」不是「き」。' },
+            { text: 'すいようび', isCorrect: false, reason: '水曜日是週中。' },
+            { text: 'きんようび', isCorrect: false, reason: '金曜日已經接近週末。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「木曜日」常被視為週後半的開始。',
+            relatedRules: ['曜日の讀法', '週の構成']
+        },
+        sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
+    },
+    {
+        id: 'weekday_extra_103',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '面試是哪天？',
+        stem_zh: '面試是哪天？',
+        dialogue: {
+            speakerA: '面接は何曜日ですか？',
+            speakerB: '来週の＿＿の午後2時です。（星期三）'
+        },
+        options: [
+            { text: 'すいようび', isCorrect: true, reason: '正確！水曜日下午2點面試。' },
+            { text: 'みずようび', isCorrect: false, reason: '「水」讀「すい」不是「みず」。' },
+            { text: 'かようび', isCorrect: false, reason: '這是火曜日（星期二）。' },
+            { text: 'もくようび', isCorrect: false, reason: '這是木曜日（星期四）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「水曜日」是常見的面試日。',
+            relatedRules: ['曜日の讀法', '面接の予定']
+        },
+        sourceItem: { value: 'Wed', kanji: '水曜日', reading: 'すいようび' }
+    },
+    {
+        id: 'weekday_extra_104',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「日月火水木金土」的「日」讀法是？',
+        stem_zh: '「日月火水木金土」的「日」讀法是？',
+        options: [
+            { text: 'にち', isCorrect: true, reason: '正確！七曜的「日」讀「にち」。' },
+            { text: 'ひ', isCorrect: false, reason: '在七曜中用音讀「にち」。' },
+            { text: 'び', isCorrect: false, reason: '「び」是「曜日」的「日」。' },
+            { text: 'じつ', isCorrect: false, reason: '在七曜名稱中讀「にち」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '七曜「日月火水木金土」的「日」讀「にち」（日曜日）。',
+            trapExplanation: '「日」有多種讀法，要根據語境判斷。',
+            relatedRules: ['曜日の讀法', '日の讀み分け']
+        },
+        sourceItem: { value: 'Sun', kanji: '日', reading: 'にち' }
+    },
+    {
+        id: 'weekday_extra_105',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿は英語で「Monday」です。',
+        stem_zh: '星期一的英文是「Monday」。',
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！月曜日＝Monday。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」。' },
+            { text: 'にちようび', isCorrect: false, reason: '日曜日＝Sunday。' },
+            { text: 'かようび', isCorrect: false, reason: '火曜日＝Tuesday。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「月曜日」對應英文的「Monday」。',
+            relatedRules: ['曜日の讀法', '英語との対応']
+        },
+        sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
+    },
+    {
+        id: 'weekday_extra_106',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '電視節目錄影是哪天？',
+        stem_zh: '電視節目錄影是哪天？',
+        dialogue: {
+            speakerA: '番組の収録は何曜日ですか？',
+            speakerB: '毎週＿＿です。（星期四）'
+        },
+        options: [
+            { text: 'もくようび', isCorrect: true, reason: '正確！很多節目木曜日錄影。' },
+            { text: 'きようび', isCorrect: false, reason: '「木」讀「もく」不是「き」。' },
+            { text: 'きんようび', isCorrect: false, reason: '這是金曜日（星期五）。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「木曜日」是常見的節目錄影日。',
+            relatedRules: ['曜日の讀法', 'テレビ収録']
+        },
+        sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
+    },
+    {
+        id: 'weekday_extra_107',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「週前半」的讀法是？',
+        stem_zh: '「週前半」的讀法是？',
+        options: [
+            { text: 'しゅうぜんはん', isCorrect: true, reason: '正確！週前半讀「しゅうぜんはん」。' },
+            { text: 'しゅうまえはん', isCorrect: false, reason: '「前半」讀「ぜんはん」。' },
+            { text: 'しゅぜんはん', isCorrect: false, reason: '「週」要有長音「しゅう」。' },
+            { text: 'しゅうさきはん', isCorrect: false, reason: '「前」讀「ぜん」不是「さき」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「週前半」讀「しゅうぜんはん」，指一週的前幾天。',
+            relatedRules: ['週の讀法', '前半の讀法']
+        },
+        sourceItem: { value: 'First half of week', kanji: '週前半', reading: 'しゅうぜんはん' }
+    },
+    {
+        id: 'weekday_extra_108',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿の電車は通勤ラッシュで混んでいます。',
+        stem_zh: '星期一的電車因為通勤尖峰很擁擠。',
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！月曜日早上是通勤高峰。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」。' },
+            { text: 'にちようび', isCorrect: false, reason: '日曜日沒有通勤。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日人較少。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「月曜日」早上是通勤最擁擠的時候。',
+            relatedRules: ['曜日の讀法', '通勤ラッシュ']
+        },
+        sourceItem: { value: 'Mon', kanji: '月曜日', reading: 'げつようび' }
+    },
+    {
+        id: 'weekday_extra_109',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '圖書館的新書上架是哪天？',
+        stem_zh: '圖書館的新書上架是哪天？',
+        dialogue: {
+            speakerA: '図書館の新刊入荷日はいつですか？',
+            speakerB: '毎週＿＿です。（星期二）'
+        },
+        options: [
+            { text: 'かようび', isCorrect: true, reason: '正確！火曜日新書上架。' },
+            { text: 'ひようび', isCorrect: false, reason: '「火」讀「か」不是「ひ」。' },
+            { text: 'げつようび', isCorrect: false, reason: '月曜日通常休館。' },
+            { text: 'すいようび', isCorrect: false, reason: '這是水曜日（星期三）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '很多圖書館「火曜日」新書上架。',
+            relatedRules: ['曜日の讀法', '図書館の新刊']
+        },
+        sourceItem: { value: 'Tue', kanji: '火曜日', reading: 'かようび' }
+    },
+    {
+        id: 'weekday_extra_110',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「土日」的讀法是？',
+        stem_zh: '「土日」的讀法是？',
+        options: [
+            { text: 'どにち', isCorrect: true, reason: '正確！土日讀「どにち」。' },
+            { text: 'つちひ', isCorrect: false, reason: '用音讀不是訓讀。' },
+            { text: 'どじつ', isCorrect: false, reason: '「日」讀「にち」不是「じつ」。' },
+            { text: 'どび', isCorrect: false, reason: '「日」在此讀「にち」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「土日」讀「どにち」，是土曜日和日曜日的簡稱。',
+            trapExplanation: '「日」在這裡讀「にち」，與「曜日」的「び」不同。',
+            relatedRules: ['週末の讀法', '日の讀み分け']
+        },
+        sourceItem: { value: 'Sat-Sun', kanji: '土日', reading: 'どにち' }
+    },
+    {
+        id: 'weekday_extra_111',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '＿＿の夜はドラマの放送が多いです。',
+        stem_zh: '星期四晚上有很多電視劇播出。',
+        options: [
+            { text: 'もくようび', isCorrect: true, reason: '正確！木曜日是熱門電視劇時段。' },
+            { text: 'きようび', isCorrect: false, reason: '「木」讀「もく」不是「き」。' },
+            { text: 'すいようび', isCorrect: false, reason: '水曜日也有但木曜日更多。' },
+            { text: 'かようび', isCorrect: false, reason: '火曜日也有但木曜日更多。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「木曜日」晚上是日本電視劇的黃金時段之一。',
+            relatedRules: ['曜日の讀法', 'テレビドラマ']
+        },
+        sourceItem: { value: 'Thu', kanji: '木曜日', reading: 'もくようび' }
+    },
+    {
+        id: 'weekday_extra_112',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '健康檢查是哪天？',
+        stem_zh: '健康檢查是哪天？',
+        dialogue: {
+            speakerA: '健康診断は何曜日ですか？',
+            speakerB: '来週の＿＿の朝です。（星期五）'
+        },
+        options: [
+            { text: 'きんようび', isCorrect: true, reason: '正確！金曜日早上做健診。' },
+            { text: 'かねようび', isCorrect: false, reason: '「金」讀「きん」不是「かね」。' },
+            { text: 'もくようび', isCorrect: false, reason: '這是木曜日（星期四）。' },
+            { text: 'げつようび', isCorrect: false, reason: '這是月曜日（星期一）。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「金曜日」健診後可以直接休息週末。',
+            relatedRules: ['曜日の讀法', '健康診断']
+        },
+        sourceItem: { value: 'Fri', kanji: '金曜日', reading: 'きんようび' }
+    },
+    {
+        id: 'weekday_extra_113',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「週後半」的讀法是？',
+        stem_zh: '「週後半」的讀法是？',
+        options: [
+            { text: 'しゅうこうはん', isCorrect: true, reason: '正確！週後半讀「しゅうこうはん」。' },
+            { text: 'しゅうあとはん', isCorrect: false, reason: '「後半」讀「こうはん」。' },
+            { text: 'しゅこうはん', isCorrect: false, reason: '「週」要有長音「しゅう」。' },
+            { text: 'しゅうごはん', isCorrect: false, reason: '「後半」讀「こうはん」不是「ごはん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「週後半」讀「しゅうこうはん」，指一週的後幾天。',
+            relatedRules: ['週の讀法', '後半の讀法']
+        },
+        sourceItem: { value: 'Second half of week', kanji: '週後半', reading: 'しゅうこうはん' }
+    },
+    {
+        id: 'weekday_extra_114',
+        category: 'timeDate',
+        subcategory: 'weekdays',
+        type: 'sentence',
+        isTrap: false,
+        stem: '総復習：日本の一週間は＿＿〜日曜日です。',
+        stem_zh: '總復習：日本的一週是星期一到星期日。',
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！工作週從月曜日開始。' },
+            { text: 'がつようび', isCorrect: false, reason: '「月曜日」讀「げつ」不是「がつ」。' },
+            { text: 'にちようび', isCorrect: false, reason: '這是日曜日，是終點不是起點。' },
+            { text: 'どようび', isCorrect: false, reason: '土曜日是週末。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '工作週從「月曜日」到「金曜日」，週末是「土曜日」「日曜日」。',
+            relatedRules: ['曜日の讀法', '一週の構成']
+        },
+        sourceItem: { value: 'Mon-Sun', kanji: '月曜日〜日曜日', reading: 'げつようび〜にちようび' }
     }
 ];

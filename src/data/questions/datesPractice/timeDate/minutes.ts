@@ -2335,5 +2335,2293 @@ export const minuteQuestions: DatesPracticeQuestion[] = [
             relatedRules: ['分鐘の音變', '31分の讀法']
         },
         sourceItem: { value: 31, kanji: '三十一分', reading: 'さんじゅういっぷん' }
+    },
+
+    // ===== 擴充題庫 (101-135) =====
+    {
+        id: 'minute_extra_01',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「四十一分」讀作？',
+        stem_zh: '「四十一分」讀作？',
+        options: [
+            { text: 'よんじゅういっぷん', isCorrect: true, reason: '正確！四十一分讀「よんじゅういっぷん」。' },
+            { text: 'よんじゅういちふん', isCorrect: false, reason: '陷阱！1發生促音+半濁音化。' },
+            { text: 'しじゅういっぷん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'よんじゅうひとふん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十一分」讀「よんじゅういっぷん」，1促音+半濁音化。',
+            trapExplanation: '1是促音+半濁音組(いっぷん)。',
+            relatedRules: ['分鐘の音變', '41分の讀法']
+        },
+        sourceItem: { value: 41, kanji: '四十一分', reading: 'よんじゅういっぷん' }
+    },
+    {
+        id: 'minute_extra_02',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '洗碗需要＿＿。',
+        stem_zh: '洗碗需要七分鐘。',
+        options: [
+            { text: 'ななふん', isCorrect: true, reason: '正確！七分讀「ななふん」。' },
+            { text: 'しちふん', isCorrect: false, reason: '分鐘用「なな」。' },
+            { text: 'ななぷん', isCorrect: false, reason: '7無音變，保持「ふん」。' },
+            { text: 'なのか', isCorrect: false, reason: '「なのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七分」讀「ななふん」，7無音變。',
+            relatedRules: ['分鐘の無音變組', '7分の讀法']
+        },
+        sourceItem: { value: 7, kanji: '七分', reading: 'ななふん' }
+    },
+    {
+        id: 'minute_extra_03',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '散步多久了？',
+        stem_zh: '散步多久了？',
+        dialogue: {
+            speakerA: '散歩はどれくらいですか？',
+            speakerB: '＿＿です。（五十三分）'
+        },
+        options: [
+            { text: 'ごじゅうさんぷん', isCorrect: true, reason: '正確！五十三分讀「ごじゅうさんぷん」。' },
+            { text: 'ごじゅうさんふん', isCorrect: false, reason: '陷阱！3發生半濁音化。' },
+            { text: 'いつじゅうさんぷん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごじゅうみふん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十三分」讀「ごじゅうさんぷん」，3半濁音化。',
+            trapExplanation: '3是半濁音組(さんぷん)。',
+            relatedRules: ['分鐘の音變', '53分の讀法']
+        },
+        sourceItem: { value: 53, kanji: '五十三分', reading: 'ごじゅうさんぷん' }
+    },
+    {
+        id: 'minute_extra_04',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十二分」讀作？',
+        stem_zh: '「十二分」讀作？',
+        options: [
+            { text: 'じゅうにふん', isCorrect: true, reason: '正確！十二分讀「じゅうにふん」。' },
+            { text: 'じゅうにぷん', isCorrect: false, reason: '2無音變。' },
+            { text: 'とおにふん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうふたふん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十二分」讀「じゅうにふん」，2無音變。',
+            relatedRules: ['分鐘の無音變組', '12分の讀法']
+        },
+        sourceItem: { value: 12, kanji: '十二分', reading: 'じゅうにふん' }
+    },
+    {
+        id: 'minute_extra_05',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: true,
+        stem: '快遞在＿＿內送達。',
+        stem_zh: '快遞在六十四分鐘內送達。',
+        options: [
+            { text: 'ろくじゅうよんぷん', isCorrect: true, reason: '正確！六十四分讀「ろくじゅうよんぷん」。' },
+            { text: 'ろくじゅうよんふん', isCorrect: false, reason: '陷阱！4發生半濁音化。' },
+            { text: 'ろくじゅうしふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'むじゅうよんぷん', isCorrect: false, reason: '使用音讀「ろく」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十四分」讀「ろくじゅうよんぷん」，4半濁音化。',
+            trapExplanation: '4是半濁音組(よんぷん)。',
+            relatedRules: ['分鐘の音變', '64分の讀法']
+        },
+        sourceItem: { value: 64, kanji: '六十四分', reading: 'ろくじゅうよんぷん' }
+    },
+    {
+        id: 'minute_extra_06',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '會議還剩多少時間？',
+        stem_zh: '會議還剩多少時間？',
+        dialogue: {
+            speakerA: '会議はあと何分ですか？',
+            speakerB: '＿＿です。（二十五分）'
+        },
+        options: [
+            { text: 'にじゅうごふん', isCorrect: true, reason: '正確！二十五分讀「にじゅうごふん」。' },
+            { text: 'にじゅうごぷん', isCorrect: false, reason: '5無音變。' },
+            { text: 'ふたじゅうごふん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にじゅういつふん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十五分」讀「にじゅうごふん」，5無音變。',
+            relatedRules: ['分鐘の無音變組', '25分の讀法']
+        },
+        sourceItem: { value: 25, kanji: '二十五分', reading: 'にじゅうごふん' }
+    },
+    {
+        id: 'minute_extra_07',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「三十六分」讀作？',
+        stem_zh: '「三十六分」讀作？',
+        options: [
+            { text: 'さんじゅうろっぷん', isCorrect: true, reason: '正確！三十六分讀「さんじゅうろっぷん」。' },
+            { text: 'さんじゅうろくふん', isCorrect: false, reason: '陷阱！6發生促音+半濁音化。' },
+            { text: 'さんじゅうろくぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'みじゅうろっぷん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十六分」讀「さんじゅうろっぷん」，6促音+半濁音化。',
+            trapExplanation: '6是促音+半濁音組(ろっぷん)。',
+            relatedRules: ['分鐘の音變', '36分の讀法']
+        },
+        sourceItem: { value: 36, kanji: '三十六分', reading: 'さんじゅうろっぷん' }
+    },
+    {
+        id: 'minute_extra_08',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '瑜伽課是＿＿。',
+        stem_zh: '瑜伽課是四十九分鐘。',
+        options: [
+            { text: 'よんじゅうきゅうふん', isCorrect: true, reason: '正確！四十九分讀「よんじゅうきゅうふん」。' },
+            { text: 'よんじゅうきゅうぷん', isCorrect: false, reason: '9無音變。' },
+            { text: 'しじゅうくふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'よんじゅうここのふん', isCorrect: false, reason: '使用音讀「きゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十九分」讀「よんじゅうきゅうふん」，9無音變。',
+            relatedRules: ['分鐘の無音變組', '49分の讀法']
+        },
+        sourceItem: { value: 49, kanji: '四十九分', reading: 'よんじゅうきゅうふん' }
+    },
+    {
+        id: 'minute_extra_09',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '早餐準備時間？',
+        stem_zh: '早餐準備時間？',
+        dialogue: {
+            speakerA: '朝ごはんの準備は何分ですか？',
+            speakerB: '＿＿です。（十八分）'
+        },
+        options: [
+            { text: 'じゅうはっぷん', isCorrect: true, reason: '正確！十八分讀「じゅうはっぷん」。' },
+            { text: 'じゅうはちふん', isCorrect: false, reason: '陷阱！8發生促音+半濁音化。' },
+            { text: 'じゅうはちぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'とおはっぷん', isCorrect: false, reason: '使用音讀「じゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十八分」讀「じゅうはっぷん」，8促音+半濁音化。',
+            trapExplanation: '8是促音+半濁音組(はっぷん)。',
+            relatedRules: ['分鐘の音變', '18分の讀法']
+        },
+        sourceItem: { value: 18, kanji: '十八分', reading: 'じゅうはっぷん' }
+    },
+    {
+        id: 'minute_extra_10',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「二十分」讀作？',
+        stem_zh: '「二十分」讀作？',
+        options: [
+            { text: 'にじゅっぷん', isCorrect: true, reason: '正確！二十分讀「にじゅっぷん」。' },
+            { text: 'にじゅうふん', isCorrect: false, reason: '陷阱！10發生促音+半濁音化。' },
+            { text: 'にじっぷん', isCorrect: false, reason: '「二十」讀「にじゅう」。' },
+            { text: 'はつかふん', isCorrect: false, reason: '分鐘用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十分」讀「にじゅっぷん」，10促音+半濁音化。',
+            trapExplanation: '10是促音+半濁音組(じゅっぷん)。',
+            relatedRules: ['分鐘の音變', '20分の讀法']
+        },
+        sourceItem: { value: 20, kanji: '二十分', reading: 'にじゅっぷん' }
+    },
+    {
+        id: 'minute_extra_11',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '沐浴需要＿＿。',
+        stem_zh: '沐浴需要十七分鐘。',
+        options: [
+            { text: 'じゅうななふん', isCorrect: true, reason: '正確！十七分讀「じゅうななふん」。' },
+            { text: 'じゅうしちふん', isCorrect: false, reason: '分鐘用「なな」。' },
+            { text: 'じゅうななぷん', isCorrect: false, reason: '7無音變。' },
+            { text: 'とおななふん', isCorrect: false, reason: '使用音讀「じゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十七分」讀「じゅうななふん」，7無音變。',
+            relatedRules: ['分鐘の無音變組', '17分の讀法']
+        },
+        sourceItem: { value: 17, kanji: '十七分', reading: 'じゅうななふん' }
+    },
+    {
+        id: 'minute_extra_12',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '通勤需要多久？',
+        stem_zh: '通勤需要多久？',
+        dialogue: {
+            speakerA: '通勤時間は何分ですか？',
+            speakerB: '＿＿です。（四十三分）'
+        },
+        options: [
+            { text: 'よんじゅうさんぷん', isCorrect: true, reason: '正確！四十三分讀「よんじゅうさんぷん」。' },
+            { text: 'よんじゅうさんふん', isCorrect: false, reason: '陷阱！3發生半濁音化。' },
+            { text: 'しじゅうさんぷん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'よんじゅうみぷん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十三分」讀「よんじゅうさんぷん」，3半濁音化。',
+            trapExplanation: '3是半濁音組(さんぷん)。',
+            relatedRules: ['分鐘の音變', '43分の讀法']
+        },
+        sourceItem: { value: 43, kanji: '四十三分', reading: 'よんじゅうさんぷん' }
+    },
+    {
+        id: 'minute_extra_13',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「三十分」讀作？',
+        stem_zh: '「三十分」讀作？',
+        options: [
+            { text: 'さんじゅっぷん', isCorrect: true, reason: '正確！三十分讀「さんじゅっぷん」。' },
+            { text: 'さんじゅうふん', isCorrect: false, reason: '陷阱！10發生促音+半濁音化。' },
+            { text: 'さんじっぷん', isCorrect: false, reason: '「三十」讀「さんじゅう」。' },
+            { text: 'みそふん', isCorrect: false, reason: '分鐘用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十分」讀「さんじゅっぷん」，10促音+半濁音化。',
+            trapExplanation: '10是促音+半濁音組(じゅっぷん)。',
+            relatedRules: ['分鐘の音變', '30分の讀法']
+        },
+        sourceItem: { value: 30, kanji: '三十分', reading: 'さんじゅっぷん' }
+    },
+    {
+        id: 'minute_extra_14',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '午餐時間是＿＿。',
+        stem_zh: '午餐時間是五十五分鐘。',
+        options: [
+            { text: 'ごじゅうごふん', isCorrect: true, reason: '正確！五十五分讀「ごじゅうごふん」。' },
+            { text: 'ごじゅうごぷん', isCorrect: false, reason: '5無音變。' },
+            { text: 'いつじゅうごふん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごじゅういつふん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十五分」讀「ごじゅうごふん」，5無音變。',
+            relatedRules: ['分鐘の無音變組', '55分の讀法']
+        },
+        sourceItem: { value: 55, kanji: '五十五分', reading: 'ごじゅうごふん' }
+    },
+    {
+        id: 'minute_extra_15',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '等待時間是多久？',
+        stem_zh: '等待時間是多久？',
+        dialogue: {
+            speakerA: '待ち時間は何分ですか？',
+            speakerB: '＿＿です。（十四分）'
+        },
+        options: [
+            { text: 'じゅうよんぷん', isCorrect: true, reason: '正確！十四分讀「じゅうよんぷん」。' },
+            { text: 'じゅうよんふん', isCorrect: false, reason: '陷阱！4發生半濁音化。' },
+            { text: 'じゅうしふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'とおよんぷん', isCorrect: false, reason: '使用音讀「じゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十四分」讀「じゅうよんぷん」，4半濁音化。',
+            trapExplanation: '4是半濁音組(よんぷん)。',
+            relatedRules: ['分鐘の音變', '14分の讀法']
+        },
+        sourceItem: { value: 14, kanji: '十四分', reading: 'じゅうよんぷん' }
+    },
+    {
+        id: 'minute_extra_16',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「四十分」讀作？',
+        stem_zh: '「四十分」讀作？',
+        options: [
+            { text: 'よんじゅっぷん', isCorrect: true, reason: '正確！四十分讀「よんじゅっぷん」。' },
+            { text: 'よんじゅうふん', isCorrect: false, reason: '陷阱！10發生促音+半濁音化。' },
+            { text: 'しじゅっぷん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'よんじっぷん', isCorrect: false, reason: '「四十」讀「よんじゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十分」讀「よんじゅっぷん」，10促音+半濁音化。',
+            trapExplanation: '10是促音+半濁音組(じゅっぷん)。',
+            relatedRules: ['分鐘の音變', '40分の讀法']
+        },
+        sourceItem: { value: 40, kanji: '四十分', reading: 'よんじゅっぷん' }
+    },
+    {
+        id: 'minute_extra_17',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '公園步行＿＿可達。',
+        stem_zh: '公園步行二十二分鐘可達。',
+        options: [
+            { text: 'にじゅうにふん', isCorrect: true, reason: '正確！二十二分讀「にじゅうにふん」。' },
+            { text: 'にじゅうにぷん', isCorrect: false, reason: '2無音變。' },
+            { text: 'ふたじゅうにふん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にじゅうふたふん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十二分」讀「にじゅうにふん」，2無音變。',
+            relatedRules: ['分鐘の無音變組', '22分の讀法']
+        },
+        sourceItem: { value: 22, kanji: '二十二分', reading: 'にじゅうにふん' }
+    },
+    {
+        id: 'minute_extra_18',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '烤麵包需要多久？',
+        stem_zh: '烤麵包需要多久？',
+        dialogue: {
+            speakerA: 'パンを焼くのに何分かかりますか？',
+            speakerB: '＿＿です。（二十一分）'
+        },
+        options: [
+            { text: 'にじゅういっぷん', isCorrect: true, reason: '正確！二十一分讀「にじゅういっぷん」。' },
+            { text: 'にじゅういちふん', isCorrect: false, reason: '陷阱！1發生促音+半濁音化。' },
+            { text: 'にじゅうひとふん', isCorrect: false, reason: '使用音讀「いち」。' },
+            { text: 'ふたじゅういっぷん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十一分」讀「にじゅういっぷん」，1促音+半濁音化。',
+            trapExplanation: '1是促音+半濁音組(いっぷん)。',
+            relatedRules: ['分鐘の音變', '21分の讀法']
+        },
+        sourceItem: { value: 21, kanji: '二十一分', reading: 'にじゅういっぷん' }
+    },
+    {
+        id: 'minute_extra_19',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「五十分」讀作？',
+        stem_zh: '「五十分」讀作？',
+        options: [
+            { text: 'ごじゅっぷん', isCorrect: true, reason: '正確！五十分讀「ごじゅっぷん」。' },
+            { text: 'ごじゅうふん', isCorrect: false, reason: '陷阱！10發生促音+半濁音化。' },
+            { text: 'いつじゅっぷん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごじっぷん', isCorrect: false, reason: '「五十」讀「ごじゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十分」讀「ごじゅっぷん」，10促音+半濁音化。',
+            trapExplanation: '10是促音+半濁音組(じゅっぷん)。',
+            relatedRules: ['分鐘の音變', '50分の讀法']
+        },
+        sourceItem: { value: 50, kanji: '五十分', reading: 'ごじゅっぷん' }
+    },
+    {
+        id: 'minute_extra_20',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '晚餐後休息＿＿。',
+        stem_zh: '晚餐後休息三十七分鐘。',
+        options: [
+            { text: 'さんじゅうななふん', isCorrect: true, reason: '正確！三十七分讀「さんじゅうななふん」。' },
+            { text: 'さんじゅうしちふん', isCorrect: false, reason: '分鐘用「なな」。' },
+            { text: 'さんじゅうななぷん', isCorrect: false, reason: '7無音變。' },
+            { text: 'みじゅうななふん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十七分」讀「さんじゅうななふん」，7無音變。',
+            relatedRules: ['分鐘の無音變組', '37分の讀法']
+        },
+        sourceItem: { value: 37, kanji: '三十七分', reading: 'さんじゅうななふん' }
+    },
+    {
+        id: 'minute_extra_21',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '等公車多久了？',
+        stem_zh: '等公車多久了？',
+        dialogue: {
+            speakerA: 'バスをどれくらい待ちましたか？',
+            speakerB: '＿＿です。（五十八分）'
+        },
+        options: [
+            { text: 'ごじゅうはっぷん', isCorrect: true, reason: '正確！五十八分讀「ごじゅうはっぷん」。' },
+            { text: 'ごじゅうはちふん', isCorrect: false, reason: '陷阱！8發生促音+半濁音化。' },
+            { text: 'ごじゅうはちぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'いつじゅうはっぷん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十八分」讀「ごじゅうはっぷん」，8促音+半濁音化。',
+            trapExplanation: '8是促音+半濁音組(はっぷん)。',
+            relatedRules: ['分鐘の音變', '58分の讀法']
+        },
+        sourceItem: { value: 58, kanji: '五十八分', reading: 'ごじゅうはっぷん' }
+    },
+    {
+        id: 'minute_extra_22',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「六十分」讀作？',
+        stem_zh: '「六十分」讀作？',
+        options: [
+            { text: 'ろくじゅっぷん', isCorrect: true, reason: '正確！六十分讀「ろくじゅっぷん」。' },
+            { text: 'ろくじゅうふん', isCorrect: false, reason: '陷阱！10發生促音+半濁音化。' },
+            { text: 'むじゅっぷん', isCorrect: false, reason: '使用音讀「ろく」。' },
+            { text: 'ろくじっぷん', isCorrect: false, reason: '「六十」讀「ろくじゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十分」讀「ろくじゅっぷん」，10促音+半濁音化。',
+            trapExplanation: '10是促音+半濁音組(じゅっぷん)。',
+            relatedRules: ['分鐘の音變', '60分の讀法']
+        },
+        sourceItem: { value: 60, kanji: '六十分', reading: 'ろくじゅっぷん' }
+    },
+    {
+        id: 'minute_extra_23',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '運動時間是＿＿。',
+        stem_zh: '運動時間是四十五分鐘。',
+        options: [
+            { text: 'よんじゅうごふん', isCorrect: true, reason: '正確！四十五分讀「よんじゅうごふん」。' },
+            { text: 'よんじゅうごぷん', isCorrect: false, reason: '5無音變。' },
+            { text: 'しじゅうごふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'よんじゅういつふん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十五分」讀「よんじゅうごふん」，5無音變。',
+            relatedRules: ['分鐘の無音變組', '45分の讀法']
+        },
+        sourceItem: { value: 45, kanji: '四十五分', reading: 'よんじゅうごふん' }
+    },
+    {
+        id: 'minute_extra_24',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '演講長度是多久？',
+        stem_zh: '演講長度是多久？',
+        dialogue: {
+            speakerA: 'スピーチは何分ですか？',
+            speakerB: '＿＿です。（二十三分）'
+        },
+        options: [
+            { text: 'にじゅうさんぷん', isCorrect: true, reason: '正確！二十三分讀「にじゅうさんぷん」。' },
+            { text: 'にじゅうさんふん', isCorrect: false, reason: '陷阱！3發生半濁音化。' },
+            { text: 'ふたじゅうさんぷん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にじゅうみぷん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十三分」讀「にじゅうさんぷん」，3半濁音化。',
+            trapExplanation: '3是半濁音組(さんぷん)。',
+            relatedRules: ['分鐘の音變', '23分の讀法']
+        },
+        sourceItem: { value: 23, kanji: '二十三分', reading: 'にじゅうさんぷん' }
+    },
+    {
+        id: 'minute_extra_25',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十九分」讀作？',
+        stem_zh: '「十九分」讀作？',
+        options: [
+            { text: 'じゅうきゅうふん', isCorrect: true, reason: '正確！十九分讀「じゅうきゅうふん」。' },
+            { text: 'じゅうきゅうぷん', isCorrect: false, reason: '9無音變。' },
+            { text: 'じゅうくふん', isCorrect: false, reason: '分鐘的9讀「きゅう」。' },
+            { text: 'とおくふん', isCorrect: false, reason: '使用音讀「じゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十九分」讀「じゅうきゅうふん」，9無音變。',
+            relatedRules: ['分鐘の無音變組', '19分の讀法']
+        },
+        sourceItem: { value: 19, kanji: '十九分', reading: 'じゅうきゅうふん' }
+    },
+    {
+        id: 'minute_extra_26',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: true,
+        stem: '熱身運動是＿＿。',
+        stem_zh: '熱身運動是十六分鐘。',
+        options: [
+            { text: 'じゅうろっぷん', isCorrect: true, reason: '正確！十六分讀「じゅうろっぷん」。' },
+            { text: 'じゅうろくふん', isCorrect: false, reason: '陷阱！6發生促音+半濁音化。' },
+            { text: 'じゅうろくぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'とおろっぷん', isCorrect: false, reason: '使用音讀「じゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十六分」讀「じゅうろっぷん」，6促音+半濁音化。',
+            trapExplanation: '6是促音+半濁音組(ろっぷん)。',
+            relatedRules: ['分鐘の音變', '16分の讀法']
+        },
+        sourceItem: { value: 16, kanji: '十六分', reading: 'じゅうろっぷん' }
+    },
+    {
+        id: 'minute_extra_27',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '電車遲到多久？',
+        stem_zh: '電車遲到多久？',
+        dialogue: {
+            speakerA: '電車は何分遅れましたか？',
+            speakerB: '＿＿です。（二十四分）'
+        },
+        options: [
+            { text: 'にじゅうよんぷん', isCorrect: true, reason: '正確！二十四分讀「にじゅうよんぷん」。' },
+            { text: 'にじゅうよんふん', isCorrect: false, reason: '陷阱！4發生半濁音化。' },
+            { text: 'にじゅうしふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'ふたじゅうよんぷん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十四分」讀「にじゅうよんぷん」，4半濁音化。',
+            trapExplanation: '4是半濁音組(よんぷん)。',
+            relatedRules: ['分鐘の音變', '24分の讀法']
+        },
+        sourceItem: { value: 24, kanji: '二十四分', reading: 'にじゅうよんぷん' }
+    },
+    {
+        id: 'minute_extra_28',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「二十八分」讀作？',
+        stem_zh: '「二十八分」讀作？',
+        options: [
+            { text: 'にじゅうはっぷん', isCorrect: true, reason: '正確！二十八分讀「にじゅうはっぷん」。' },
+            { text: 'にじゅうはちふん', isCorrect: false, reason: '陷阱！8發生促音+半濁音化。' },
+            { text: 'にじゅうはちぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'ふたじゅうはっぷん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十八分」讀「にじゅうはっぷん」，8促音+半濁音化。',
+            trapExplanation: '8是促音+半濁音組(はっぷん)。',
+            relatedRules: ['分鐘の音變', '28分の讀法']
+        },
+        sourceItem: { value: 28, kanji: '二十八分', reading: 'にじゅうはっぷん' }
+    },
+    {
+        id: 'minute_extra_29',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '煮咖啡需要＿＿。',
+        stem_zh: '煮咖啡需要二十七分鐘。',
+        options: [
+            { text: 'にじゅうななふん', isCorrect: true, reason: '正確！二十七分讀「にじゅうななふん」。' },
+            { text: 'にじゅうしちふん', isCorrect: false, reason: '分鐘用「なな」。' },
+            { text: 'にじゅうななぷん', isCorrect: false, reason: '7無音變。' },
+            { text: 'ふたじゅうななふん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十七分」讀「にじゅうななふん」，7無音變。',
+            relatedRules: ['分鐘の無音變組', '27分の讀法']
+        },
+        sourceItem: { value: 27, kanji: '二十七分', reading: 'にじゅうななふん' }
+    },
+    {
+        id: 'minute_extra_30',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '排隊買票要多久？',
+        stem_zh: '排隊買票要多久？',
+        dialogue: {
+            speakerA: 'チケットを買うのに何分かかりますか？',
+            speakerB: '＿＿です。（二十九分）'
+        },
+        options: [
+            { text: 'にじゅうきゅうふん', isCorrect: true, reason: '正確！二十九分讀「にじゅうきゅうふん」。' },
+            { text: 'にじゅうきゅうぷん', isCorrect: false, reason: '9無音變。' },
+            { text: 'にじゅうくふん', isCorrect: false, reason: '分鐘的9讀「きゅう」。' },
+            { text: 'ふたじゅうくふん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十九分」讀「にじゅうきゅうふん」，9無音變。',
+            relatedRules: ['分鐘の無音變組', '29分の讀法']
+        },
+        sourceItem: { value: 29, kanji: '二十九分', reading: 'にじゅうきゅうふん' }
+    },
+    {
+        id: 'minute_extra_31',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「三十三分」讀作？',
+        stem_zh: '「三十三分」讀作？',
+        options: [
+            { text: 'さんじゅうさんぷん', isCorrect: true, reason: '正確！三十三分讀「さんじゅうさんぷん」。' },
+            { text: 'さんじゅうさんふん', isCorrect: false, reason: '陷阱！3發生半濁音化。' },
+            { text: 'みじゅうさんぷん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんじゅうみぷん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十三分」讀「さんじゅうさんぷん」，3半濁音化。',
+            trapExplanation: '3是半濁音組(さんぷん)。',
+            relatedRules: ['分鐘の音變', '33分の讀法']
+        },
+        sourceItem: { value: 33, kanji: '三十三分', reading: 'さんじゅうさんぷん' }
+    },
+    {
+        id: 'minute_extra_32',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: true,
+        stem: '影片長度是＿＿。',
+        stem_zh: '影片長度是三十四分鐘。',
+        options: [
+            { text: 'さんじゅうよんぷん', isCorrect: true, reason: '正確！三十四分讀「さんじゅうよんぷん」。' },
+            { text: 'さんじゅうよんふん', isCorrect: false, reason: '陷阱！4發生半濁音化。' },
+            { text: 'さんじゅうしふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'みじゅうよんぷん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十四分」讀「さんじゅうよんぷん」，4半濁音化。',
+            trapExplanation: '4是半濁音組(よんぷん)。',
+            relatedRules: ['分鐘の音變', '34分の讀法']
+        },
+        sourceItem: { value: 34, kanji: '三十四分', reading: 'さんじゅうよんぷん' }
+    },
+    {
+        id: 'minute_extra_33',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '化妝需要多久？',
+        stem_zh: '化妝需要多久？',
+        dialogue: {
+            speakerA: 'メイクは何分かかりますか？',
+            speakerB: '＿＿です。（三十五分）'
+        },
+        options: [
+            { text: 'さんじゅうごふん', isCorrect: true, reason: '正確！三十五分讀「さんじゅうごふん」。' },
+            { text: 'さんじゅうごぷん', isCorrect: false, reason: '5無音變。' },
+            { text: 'みじゅうごふん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんじゅういつふん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十五分」讀「さんじゅうごふん」，5無音變。',
+            relatedRules: ['分鐘の無音變組', '35分の讀法']
+        },
+        sourceItem: { value: 35, kanji: '三十五分', reading: 'さんじゅうごふん' }
+    },
+    {
+        id: 'minute_extra_34',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「三十八分」讀作？',
+        stem_zh: '「三十八分」讀作？',
+        options: [
+            { text: 'さんじゅうはっぷん', isCorrect: true, reason: '正確！三十八分讀「さんじゅうはっぷん」。' },
+            { text: 'さんじゅうはちふん', isCorrect: false, reason: '陷阱！8發生促音+半濁音化。' },
+            { text: 'さんじゅうはちぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'みじゅうはっぷん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十八分」讀「さんじゅうはっぷん」，8促音+半濁音化。',
+            trapExplanation: '8是促音+半濁音組(はっぷん)。',
+            relatedRules: ['分鐘の音變', '38分の讀法']
+        },
+        sourceItem: { value: 38, kanji: '三十八分', reading: 'さんじゅうはっぷん' }
+    },
+    {
+        id: 'minute_extra_35',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '午睡是＿＿。',
+        stem_zh: '午睡是三十九分鐘。',
+        options: [
+            { text: 'さんじゅうきゅうふん', isCorrect: true, reason: '正確！三十九分讀「さんじゅうきゅうふん」。' },
+            { text: 'さんじゅうきゅうぷん', isCorrect: false, reason: '9無音變。' },
+            { text: 'さんじゅうくふん', isCorrect: false, reason: '分鐘的9讀「きゅう」。' },
+            { text: 'みじゅうくふん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十九分」讀「さんじゅうきゅうふん」，9無音變。',
+            relatedRules: ['分鐘の無音變組', '39分の讀法']
+        },
+        sourceItem: { value: 39, kanji: '三十九分', reading: 'さんじゅうきゅうふん' }
+    },
+
+    // ===== 擴充題庫 (136-170) =====
+    {
+        id: 'minute_extra_36',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '閱讀報紙需要多久？',
+        stem_zh: '閱讀報紙需要多久？',
+        dialogue: {
+            speakerA: '新聞を読むのに何分かかりますか？',
+            speakerB: '＿＿です。（四十一分）'
+        },
+        options: [
+            { text: 'よんじゅういっぷん', isCorrect: true, reason: '正確！四十一分讀「よんじゅういっぷん」。' },
+            { text: 'よんじゅういちふん', isCorrect: false, reason: '陷阱！1發生促音+半濁音化。' },
+            { text: 'しじゅういっぷん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'よんじゅうひとふん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十一分」讀「よんじゅういっぷん」，1促音+半濁音化。',
+            trapExplanation: '1是促音+半濁音組(いっぷん)。',
+            relatedRules: ['分鐘の音變', '41分の讀法']
+        },
+        sourceItem: { value: 41, kanji: '四十一分', reading: 'よんじゅういっぷん' }
+    },
+    {
+        id: 'minute_extra_37',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「四十二分」讀作？',
+        stem_zh: '「四十二分」讀作？',
+        options: [
+            { text: 'よんじゅうにふん', isCorrect: true, reason: '正確！四十二分讀「よんじゅうにふん」。' },
+            { text: 'よんじゅうにぷん', isCorrect: false, reason: '2無音變。' },
+            { text: 'しじゅうにふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'よんじゅうふたふん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十二分」讀「よんじゅうにふん」，2無音變。',
+            relatedRules: ['分鐘の無音變組', '42分の讀法']
+        },
+        sourceItem: { value: 42, kanji: '四十二分', reading: 'よんじゅうにふん' }
+    },
+    {
+        id: 'minute_extra_38',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: true,
+        stem: '做菜需要＿＿。',
+        stem_zh: '做菜需要四十六分鐘。',
+        options: [
+            { text: 'よんじゅうろっぷん', isCorrect: true, reason: '正確！四十六分讀「よんじゅうろっぷん」。' },
+            { text: 'よんじゅうろくふん', isCorrect: false, reason: '陷阱！6發生促音+半濁音化。' },
+            { text: 'よんじゅうろくぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'しじゅうろっぷん', isCorrect: false, reason: '分鐘的4讀「よん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十六分」讀「よんじゅうろっぷん」，6促音+半濁音化。',
+            trapExplanation: '6是促音+半濁音組(ろっぷん)。',
+            relatedRules: ['分鐘の音變', '46分の讀法']
+        },
+        sourceItem: { value: 46, kanji: '四十六分', reading: 'よんじゅうろっぷん' }
+    },
+    {
+        id: 'minute_extra_39',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '洗車需要多久？',
+        stem_zh: '洗車需要多久？',
+        dialogue: {
+            speakerA: '洗車は何分かかりますか？',
+            speakerB: '＿＿です。（四十七分）'
+        },
+        options: [
+            { text: 'よんじゅうななふん', isCorrect: true, reason: '正確！四十七分讀「よんじゅうななふん」。' },
+            { text: 'よんじゅうしちふん', isCorrect: false, reason: '分鐘用「なな」。' },
+            { text: 'よんじゅうななぷん', isCorrect: false, reason: '7無音變。' },
+            { text: 'しじゅうななふん', isCorrect: false, reason: '分鐘的4讀「よん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十七分」讀「よんじゅうななふん」，7無音變。',
+            relatedRules: ['分鐘の無音變組', '47分の讀法']
+        },
+        sourceItem: { value: 47, kanji: '四十七分', reading: 'よんじゅうななふん' }
+    },
+    {
+        id: 'minute_extra_40',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「五十一分」讀作？',
+        stem_zh: '「五十一分」讀作？',
+        options: [
+            { text: 'ごじゅういっぷん', isCorrect: true, reason: '正確！五十一分讀「ごじゅういっぷん」。' },
+            { text: 'ごじゅういちふん', isCorrect: false, reason: '陷阱！1發生促音+半濁音化。' },
+            { text: 'いつじゅういっぷん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごじゅうひとふん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十一分」讀「ごじゅういっぷん」，1促音+半濁音化。',
+            trapExplanation: '1是促音+半濁音組(いっぷん)。',
+            relatedRules: ['分鐘の音變', '51分の讀法']
+        },
+        sourceItem: { value: 51, kanji: '五十一分', reading: 'ごじゅういっぷん' }
+    },
+    {
+        id: 'minute_extra_41',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '跑步時間是＿＿。',
+        stem_zh: '跑步時間是五十二分鐘。',
+        options: [
+            { text: 'ごじゅうにふん', isCorrect: true, reason: '正確！五十二分讀「ごじゅうにふん」。' },
+            { text: 'ごじゅうにぷん', isCorrect: false, reason: '2無音變。' },
+            { text: 'いつじゅうにふん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごじゅうふたふん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十二分」讀「ごじゅうにふん」，2無音變。',
+            relatedRules: ['分鐘の無音變組', '52分の讀法']
+        },
+        sourceItem: { value: 52, kanji: '五十二分', reading: 'ごじゅうにふん' }
+    },
+    {
+        id: 'minute_extra_42',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '開車到機場要多久？',
+        stem_zh: '開車到機場要多久？',
+        dialogue: {
+            speakerA: '空港まで車で何分かかりますか？',
+            speakerB: '＿＿です。（五十四分）'
+        },
+        options: [
+            { text: 'ごじゅうよんぷん', isCorrect: true, reason: '正確！五十四分讀「ごじゅうよんぷん」。' },
+            { text: 'ごじゅうよんふん', isCorrect: false, reason: '陷阱！4發生半濁音化。' },
+            { text: 'ごじゅうしふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'いつじゅうよんぷん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十四分」讀「ごじゅうよんぷん」，4半濁音化。',
+            trapExplanation: '4是半濁音組(よんぷん)。',
+            relatedRules: ['分鐘の音變', '54分の讀法']
+        },
+        sourceItem: { value: 54, kanji: '五十四分', reading: 'ごじゅうよんぷん' }
+    },
+    {
+        id: 'minute_extra_43',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「五十七分」讀作？',
+        stem_zh: '「五十七分」讀作？',
+        options: [
+            { text: 'ごじゅうななふん', isCorrect: true, reason: '正確！五十七分讀「ごじゅうななふん」。' },
+            { text: 'ごじゅうしちふん', isCorrect: false, reason: '分鐘用「なな」。' },
+            { text: 'ごじゅうななぷん', isCorrect: false, reason: '7無音變。' },
+            { text: 'いつじゅうななふん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十七分」讀「ごじゅうななふん」，7無音變。',
+            relatedRules: ['分鐘の無音變組', '57分の讀法']
+        },
+        sourceItem: { value: 57, kanji: '五十七分', reading: 'ごじゅうななふん' }
+    },
+    {
+        id: 'minute_extra_44',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '睡前閱讀是＿＿。',
+        stem_zh: '睡前閱讀是五十九分鐘。',
+        options: [
+            { text: 'ごじゅうきゅうふん', isCorrect: true, reason: '正確！五十九分讀「ごじゅうきゅうふん」。' },
+            { text: 'ごじゅうきゅうぷん', isCorrect: false, reason: '9無音變。' },
+            { text: 'ごじゅうくふん', isCorrect: false, reason: '分鐘的9讀「きゅう」。' },
+            { text: 'いつじゅうくふん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十九分」讀「ごじゅうきゅうふん」，9無音變。',
+            relatedRules: ['分鐘の無音變組', '59分の讀法']
+        },
+        sourceItem: { value: 59, kanji: '五十九分', reading: 'ごじゅうきゅうふん' }
+    },
+    {
+        id: 'minute_extra_45',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '上課時間是多久？',
+        stem_zh: '上課時間是多久？',
+        dialogue: {
+            speakerA: '授業は何分ですか？',
+            speakerB: '＿＿です。（六十一分）'
+        },
+        options: [
+            { text: 'ろくじゅういっぷん', isCorrect: true, reason: '正確！六十一分讀「ろくじゅういっぷん」。' },
+            { text: 'ろくじゅういちふん', isCorrect: false, reason: '陷阱！1發生促音+半濁音化。' },
+            { text: 'むじゅういっぷん', isCorrect: false, reason: '使用音讀「ろく」。' },
+            { text: 'ろくじゅうひとふん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十一分」讀「ろくじゅういっぷん」，1促音+半濁音化。',
+            trapExplanation: '1是促音+半濁音組(いっぷん)。',
+            relatedRules: ['分鐘の音變', '61分の讀法']
+        },
+        sourceItem: { value: 61, kanji: '六十一分', reading: 'ろくじゅういっぷん' }
+    },
+    {
+        id: 'minute_extra_46',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「六十三分」讀作？',
+        stem_zh: '「六十三分」讀作？',
+        options: [
+            { text: 'ろくじゅうさんぷん', isCorrect: true, reason: '正確！六十三分讀「ろくじゅうさんぷん」。' },
+            { text: 'ろくじゅうさんふん', isCorrect: false, reason: '陷阱！3發生半濁音化。' },
+            { text: 'むじゅうさんぷん', isCorrect: false, reason: '使用音讀「ろく」。' },
+            { text: 'ろくじゅうみぷん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十三分」讀「ろくじゅうさんぷん」，3半濁音化。',
+            trapExplanation: '3是半濁音組(さんぷん)。',
+            relatedRules: ['分鐘の音變', '63分の讀法']
+        },
+        sourceItem: { value: 63, kanji: '六十三分', reading: 'ろくじゅうさんぷん' }
+    },
+    {
+        id: 'minute_extra_47',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '開會延長了＿＿。',
+        stem_zh: '開會延長了六十五分鐘。',
+        options: [
+            { text: 'ろくじゅうごふん', isCorrect: true, reason: '正確！六十五分讀「ろくじゅうごふん」。' },
+            { text: 'ろくじゅうごぷん', isCorrect: false, reason: '5無音變。' },
+            { text: 'むじゅうごふん', isCorrect: false, reason: '使用音讀「ろく」。' },
+            { text: 'ろくじゅういつふん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十五分」讀「ろくじゅうごふん」，5無音變。',
+            relatedRules: ['分鐘の無音變組', '65分の讀法']
+        },
+        sourceItem: { value: 65, kanji: '六十五分', reading: 'ろくじゅうごふん' }
+    },
+    {
+        id: 'minute_extra_48',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '健身房待了多久？',
+        stem_zh: '健身房待了多久？',
+        dialogue: {
+            speakerA: 'ジムには何分いましたか？',
+            speakerB: '＿＿です。（六十六分）'
+        },
+        options: [
+            { text: 'ろくじゅうろっぷん', isCorrect: true, reason: '正確！六十六分讀「ろくじゅうろっぷん」。' },
+            { text: 'ろくじゅうろくふん', isCorrect: false, reason: '陷阱！6發生促音+半濁音化。' },
+            { text: 'ろくじゅうろくぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'むじゅうろっぷん', isCorrect: false, reason: '使用音讀「ろく」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十六分」讀「ろくじゅうろっぷん」，6促音+半濁音化。',
+            trapExplanation: '6是促音+半濁音組(ろっぷん)。',
+            relatedRules: ['分鐘の音變', '66分の讀法']
+        },
+        sourceItem: { value: 66, kanji: '六十六分', reading: 'ろくじゅうろっぷん' }
+    },
+    {
+        id: 'minute_extra_49',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「六十八分」讀作？',
+        stem_zh: '「六十八分」讀作？',
+        options: [
+            { text: 'ろくじゅうはっぷん', isCorrect: true, reason: '正確！六十八分讀「ろくじゅうはっぷん」。' },
+            { text: 'ろくじゅうはちふん', isCorrect: false, reason: '陷阱！8發生促音+半濁音化。' },
+            { text: 'ろくじゅうはちぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'むじゅうはっぷん', isCorrect: false, reason: '使用音讀「ろく」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十八分」讀「ろくじゅうはっぷん」，8促音+半濁音化。',
+            trapExplanation: '8是促音+半濁音組(はっぷん)。',
+            relatedRules: ['分鐘の音變', '68分の讀法']
+        },
+        sourceItem: { value: 68, kanji: '六十八分', reading: 'ろくじゅうはっぷん' }
+    },
+    {
+        id: 'minute_extra_50',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '電影開始前要等＿＿。',
+        stem_zh: '電影開始前要等六十九分鐘。',
+        options: [
+            { text: 'ろくじゅうきゅうふん', isCorrect: true, reason: '正確！六十九分讀「ろくじゅうきゅうふん」。' },
+            { text: 'ろくじゅうきゅうぷん', isCorrect: false, reason: '9無音變。' },
+            { text: 'ろくじゅうくふん', isCorrect: false, reason: '分鐘的9讀「きゅう」。' },
+            { text: 'むじゅうくふん', isCorrect: false, reason: '使用音讀「ろく」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十九分」讀「ろくじゅうきゅうふん」，9無音變。',
+            relatedRules: ['分鐘の無音變組', '69分の讀法']
+        },
+        sourceItem: { value: 69, kanji: '六十九分', reading: 'ろくじゅうきゅうふん' }
+    },
+    {
+        id: 'minute_extra_51',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '游泳課是多久？',
+        stem_zh: '游泳課是多久？',
+        dialogue: {
+            speakerA: '水泳のレッスンは何分ですか？',
+            speakerB: '＿＿です。（六十七分）'
+        },
+        options: [
+            { text: 'ろくじゅうななふん', isCorrect: true, reason: '正確！六十七分讀「ろくじゅうななふん」。' },
+            { text: 'ろくじゅうしちふん', isCorrect: false, reason: '分鐘用「なな」。' },
+            { text: 'ろくじゅうななぷん', isCorrect: false, reason: '7無音變。' },
+            { text: 'むじゅうななふん', isCorrect: false, reason: '使用音讀「ろく」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十七分」讀「ろくじゅうななふん」，7無音變。',
+            relatedRules: ['分鐘の無音變組', '67分の讀法']
+        },
+        sourceItem: { value: 67, kanji: '六十七分', reading: 'ろくじゅうななふん' }
+    },
+    {
+        id: 'minute_extra_52',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「六十二分」讀作？',
+        stem_zh: '「六十二分」讀作？',
+        options: [
+            { text: 'ろくじゅうにふん', isCorrect: true, reason: '正確！六十二分讀「ろくじゅうにふん」。' },
+            { text: 'ろくじゅうにぷん', isCorrect: false, reason: '2無音變。' },
+            { text: 'むじゅうにふん', isCorrect: false, reason: '使用音讀「ろく」。' },
+            { text: 'ろくじゅうふたふん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十二分」讀「ろくじゅうにふん」，2無音變。',
+            relatedRules: ['分鐘の無音變組', '62分の讀法']
+        },
+        sourceItem: { value: 62, kanji: '六十二分', reading: 'ろくじゅうにふん' }
+    },
+    {
+        id: 'minute_extra_53',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：分鐘的音變有幾種模式？',
+        stem_zh: '總復習：分鐘的音變有幾種模式？',
+        options: [
+            { text: '三種：促音+半濁音、半濁音、無音變', isCorrect: true, reason: '正確！分鐘音變分三種模式。' },
+            { text: '只有一種', isCorrect: false, reason: '有多種模式。' },
+            { text: '兩種', isCorrect: false, reason: '有三種模式。' },
+            { text: '沒有規則', isCorrect: false, reason: '有明確規則。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '分鐘音變分三種：1/6/8/10促音+半濁音、3/4半濁音、2/5/7/9無音變。',
+            relatedRules: ['分鐘の音變總整理', '三種模式']
+        },
+        sourceItem: { value: 'summary', kanji: '音變規則', reading: '三種模式' }
+    },
+    {
+        id: 'minute_extra_54',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '總復習：哪些數字的「分」讀「ふん」？',
+        stem_zh: '總復習：哪些數字的「分」讀「ふん」？',
+        dialogue: {
+            speakerA: '「ふん」と読むのはどの数字ですか？',
+            speakerB: '＿＿です。'
+        },
+        options: [
+            { text: '2、5、7、9', isCorrect: true, reason: '正確！這四個無音變。' },
+            { text: '1、3、6、8', isCorrect: false, reason: '這些有音變。' },
+            { text: '4、10', isCorrect: false, reason: '這些有音變。' },
+            { text: '全部', isCorrect: false, reason: '只有部分無音變。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '2、5、7、9的「分」保持「ふん」，無音變。',
+            relatedRules: ['分鐘の無音變組', '2/5/7/9']
+        },
+        sourceItem: { value: 'summary_fun', kanji: '無音變組', reading: '2/5/7/9' }
+    },
+    {
+        id: 'minute_extra_55',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '總復習：哪些數字促音+半濁音化？',
+        stem_zh: '總復習：哪些數字促音+半濁音化？',
+        options: [
+            { text: '1、6、8、10', isCorrect: true, reason: '正確！這四個促音+半濁音化。' },
+            { text: '3、4', isCorrect: false, reason: '這兩個只有半濁音化。' },
+            { text: '2、5、7、9', isCorrect: false, reason: '這些無音變。' },
+            { text: '全部', isCorrect: false, reason: '只有部分促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '1、6、8、10的「分」促音+半濁音化：いっぷん、ろっぷん、はっぷん、じゅっぷん。',
+            relatedRules: ['分鐘の促音組', '1/6/8/10']
+        },
+        sourceItem: { value: 'summary_ppun', kanji: '促音組', reading: '1/6/8/10' }
+    },
+    {
+        id: 'minute_extra_56',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：哪些數字只有半濁音化？',
+        stem_zh: '總復習：哪些數字只有半濁音化？',
+        options: [
+            { text: '3、4', isCorrect: true, reason: '正確！這兩個只半濁音化。' },
+            { text: '1、6、8、10', isCorrect: false, reason: '這些有促音。' },
+            { text: '2、5、7、9', isCorrect: false, reason: '這些無音變。' },
+            { text: '全部', isCorrect: false, reason: '只有部分。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '3、4的「分」只半濁音化：さんぷん、よんぷん（無促音）。',
+            relatedRules: ['分鐘の半濁音組', '3/4']
+        },
+        sourceItem: { value: 'summary_pun', kanji: '半濁音組', reading: '3/4' }
+    },
+    {
+        id: 'minute_extra_57',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '廣告時間是多久？',
+        stem_zh: '廣告時間是多久？',
+        dialogue: {
+            speakerA: 'CMは何分ですか？',
+            speakerB: '＿＿です。（十一分）'
+        },
+        options: [
+            { text: 'じゅういっぷん', isCorrect: true, reason: '正確！十一分讀「じゅういっぷん」。' },
+            { text: 'じゅういちふん', isCorrect: false, reason: '陷阱！1發生促音+半濁音化。' },
+            { text: 'とおいっぷん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうひとふん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十一分」讀「じゅういっぷん」，1促音+半濁音化。',
+            trapExplanation: '1是促音+半濁音組(いっぷん)。',
+            relatedRules: ['分鐘の音變', '11分の讀法']
+        },
+        sourceItem: { value: 11, kanji: '十一分', reading: 'じゅういっぷん' }
+    },
+    {
+        id: 'minute_extra_58',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「十三分」讀作？',
+        stem_zh: '「十三分」讀作？',
+        options: [
+            { text: 'じゅうさんぷん', isCorrect: true, reason: '正確！十三分讀「じゅうさんぷん」。' },
+            { text: 'じゅうさんふん', isCorrect: false, reason: '陷阱！3發生半濁音化。' },
+            { text: 'とおさんぷん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうみぷん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十三分」讀「じゅうさんぷん」，3半濁音化。',
+            trapExplanation: '3是半濁音組(さんぷん)。',
+            relatedRules: ['分鐘の音變', '13分の讀法']
+        },
+        sourceItem: { value: 13, kanji: '十三分', reading: 'じゅうさんぷん' }
+    },
+    {
+        id: 'minute_extra_59',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: true,
+        stem: '等紅燈需要＿＿。',
+        stem_zh: '等紅燈需要四分鐘。',
+        options: [
+            { text: 'よんぷん', isCorrect: true, reason: '正確！四分讀「よんぷん」。' },
+            { text: 'よんふん', isCorrect: false, reason: '陷阱！4發生半濁音化。' },
+            { text: 'しふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'よっか', isCorrect: false, reason: '「よっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四分」讀「よんぷん」，4半濁音化。',
+            trapExplanation: '4是半濁音組(よんぷん)。',
+            relatedRules: ['分鐘の音變', '4分の讀法']
+        },
+        sourceItem: { value: 4, kanji: '四分', reading: 'よんぷん' }
+    },
+    {
+        id: 'minute_extra_60',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '等電梯要多久？',
+        stem_zh: '等電梯要多久？',
+        dialogue: {
+            speakerA: 'エレベーターを待つのに何分かかりますか？',
+            speakerB: '＿＿です。（二分）'
+        },
+        options: [
+            { text: 'にふん', isCorrect: true, reason: '正確！二分讀「にふん」。' },
+            { text: 'にぷん', isCorrect: false, reason: '2無音變。' },
+            { text: 'ふたふん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'ふつか', isCorrect: false, reason: '「ふつか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二分」讀「にふん」，2無音變。',
+            relatedRules: ['分鐘の無音變組', '2分の讀法']
+        },
+        sourceItem: { value: 2, kanji: '二分', reading: 'にふん' }
+    },
+    {
+        id: 'minute_extra_61',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「五分」讀作？',
+        stem_zh: '「五分」讀作？',
+        options: [
+            { text: 'ごふん', isCorrect: true, reason: '正確！五分讀「ごふん」。' },
+            { text: 'ごぷん', isCorrect: false, reason: '5無音變。' },
+            { text: 'いつふん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'いつか', isCorrect: false, reason: '「いつか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五分」讀「ごふん」，5無音變。',
+            relatedRules: ['分鐘の無音變組', '5分の讀法']
+        },
+        sourceItem: { value: 5, kanji: '五分', reading: 'ごふん' }
+    },
+    {
+        id: 'minute_extra_62',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '微波爐加熱需要＿＿。',
+        stem_zh: '微波爐加熱需要九分鐘。',
+        options: [
+            { text: 'きゅうふん', isCorrect: true, reason: '正確！九分讀「きゅうふん」。' },
+            { text: 'きゅうぷん', isCorrect: false, reason: '9無音變。' },
+            { text: 'くふん', isCorrect: false, reason: '分鐘的9讀「きゅう」。' },
+            { text: 'ここのか', isCorrect: false, reason: '「ここのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九分」讀「きゅうふん」，9無音變。',
+            relatedRules: ['分鐘の無音變組', '9分の讀法']
+        },
+        sourceItem: { value: 9, kanji: '九分', reading: 'きゅうふん' }
+    },
+    {
+        id: 'minute_extra_63',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '刷牙需要多久？',
+        stem_zh: '刷牙需要多久？',
+        dialogue: {
+            speakerA: '歯磨きは何分かかりますか？',
+            speakerB: '＿＿です。（三分）'
+        },
+        options: [
+            { text: 'さんぷん', isCorrect: true, reason: '正確！三分讀「さんぷん」。' },
+            { text: 'さんふん', isCorrect: false, reason: '陷阱！3發生半濁音化。' },
+            { text: 'みふん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'みっか', isCorrect: false, reason: '「みっか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三分」讀「さんぷん」，3半濁音化。',
+            trapExplanation: '3是半濁音組(さんぷん)。',
+            relatedRules: ['分鐘の音變', '3分の讀法']
+        },
+        sourceItem: { value: 3, kanji: '三分', reading: 'さんぷん' }
+    },
+    {
+        id: 'minute_extra_64',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「六分」讀作？',
+        stem_zh: '「六分」讀作？',
+        options: [
+            { text: 'ろっぷん', isCorrect: true, reason: '正確！六分讀「ろっぷん」。' },
+            { text: 'ろくふん', isCorrect: false, reason: '陷阱！6發生促音+半濁音化。' },
+            { text: 'ろくぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'むいか', isCorrect: false, reason: '「むいか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六分」讀「ろっぷん」，6促音+半濁音化。',
+            trapExplanation: '6是促音+半濁音組(ろっぷん)。',
+            relatedRules: ['分鐘の音變', '6分の讀法']
+        },
+        sourceItem: { value: 6, kanji: '六分', reading: 'ろっぷん' }
+    },
+    {
+        id: 'minute_extra_65',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: true,
+        stem: '泡茶需要＿＿。',
+        stem_zh: '泡茶需要八分鐘。',
+        options: [
+            { text: 'はっぷん', isCorrect: true, reason: '正確！八分讀「はっぷん」。' },
+            { text: 'はちふん', isCorrect: false, reason: '陷阱！8發生促音+半濁音化。' },
+            { text: 'はちぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'ようか', isCorrect: false, reason: '「ようか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「八分」讀「はっぷん」，8促音+半濁音化。',
+            trapExplanation: '8是促音+半濁音組(はっぷん)。',
+            relatedRules: ['分鐘の音變', '8分の讀法']
+        },
+        sourceItem: { value: 8, kanji: '八分', reading: 'はっぷん' }
+    },
+    {
+        id: 'minute_extra_66',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '下載更新需要多久？',
+        stem_zh: '下載更新需要多久？',
+        dialogue: {
+            speakerA: 'アップデートのダウンロードは何分かかりますか？',
+            speakerB: '＿＿です。（十分）'
+        },
+        options: [
+            { text: 'じゅっぷん', isCorrect: true, reason: '正確！十分讀「じゅっぷん」。' },
+            { text: 'じゅうふん', isCorrect: false, reason: '陷阱！10發生促音+半濁音化。' },
+            { text: 'とおふん', isCorrect: false, reason: '使用音讀。' },
+            { text: 'とおか', isCorrect: false, reason: '「とおか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十分」讀「じゅっぷん」，10促音+半濁音化。',
+            trapExplanation: '10是促音+半濁音組(じゅっぷん)。',
+            relatedRules: ['分鐘の音變', '10分の讀法']
+        },
+        sourceItem: { value: 10, kanji: '十分', reading: 'じゅっぷん' }
+    },
+    {
+        id: 'minute_extra_67',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「一分」讀作？',
+        stem_zh: '「一分」讀作？',
+        options: [
+            { text: 'いっぷん', isCorrect: true, reason: '正確！一分讀「いっぷん」。' },
+            { text: 'いちふん', isCorrect: false, reason: '陷阱！1發生促音+半濁音化。' },
+            { text: 'いちぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'ついたち', isCorrect: false, reason: '「ついたち」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「一分」讀「いっぷん」，1促音+半濁音化。',
+            trapExplanation: '1是促音+半濁音組(いっぷん)。',
+            relatedRules: ['分鐘の音變', '1分の讀法']
+        },
+        sourceItem: { value: 1, kanji: '一分', reading: 'いっぷん' }
+    },
+    {
+        id: 'minute_extra_68',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '等水煮沸需要＿＿。',
+        stem_zh: '等水煮沸需要七分鐘。',
+        options: [
+            { text: 'ななふん', isCorrect: true, reason: '正確！七分讀「ななふん」。' },
+            { text: 'しちふん', isCorrect: false, reason: '分鐘用「なな」。' },
+            { text: 'ななぷん', isCorrect: false, reason: '7無音變。' },
+            { text: 'なのか', isCorrect: false, reason: '「なのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七分」讀「ななふん」，7無音變。',
+            relatedRules: ['分鐘の無音變組', '7分の讀法']
+        },
+        sourceItem: { value: 7, kanji: '七分', reading: 'ななふん' }
+    },
+    {
+        id: 'minute_extra_69',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '抵達目的地前剩多久？',
+        stem_zh: '抵達目的地前剩多久？',
+        dialogue: {
+            speakerA: '目的地まであと何分ですか？',
+            speakerB: '＿＿です。（四十五分）'
+        },
+        options: [
+            { text: 'よんじゅうごふん', isCorrect: true, reason: '正確！四十五分讀「よんじゅうごふん」。' },
+            { text: 'よんじゅうごぷん', isCorrect: false, reason: '5無音變。' },
+            { text: 'しじゅうごふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'よんじゅういつふん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十五分」讀「よんじゅうごふん」，5無音變。',
+            relatedRules: ['分鐘の無音變組', '45分の讀法']
+        },
+        sourceItem: { value: 45, kanji: '四十五分', reading: 'よんじゅうごふん' }
+    },
+    {
+        id: 'minute_extra_70',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「何分」讀作？',
+        stem_zh: '「何分」讀作？',
+        options: [
+            { text: 'なんぷん', isCorrect: true, reason: '正確！何分讀「なんぷん」。' },
+            { text: 'なにふん', isCorrect: false, reason: '疑問詞「何」讀「なん」。' },
+            { text: 'なんふん', isCorrect: false, reason: '「分」變半濁音。' },
+            { text: 'なにぷん', isCorrect: false, reason: '「何」讀「なん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「何分」讀「なんぷん」，「何」讀「なん」，「分」半濁音化。',
+            relatedRules: ['疑問詞', '何分の讀法']
+        },
+        sourceItem: { value: 'question', kanji: '何分', reading: 'なんぷん' }
+    },
+
+    // ===== 擴充題庫 (171-200) =====
+    {
+        id: 'minute_extra_71',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: true,
+        stem: '早會進行了＿＿。',
+        stem_zh: '早會進行了四十四分鐘。',
+        options: [
+            { text: 'よんじゅうよんぷん', isCorrect: true, reason: '正確！四十四分讀「よんじゅうよんぷん」。' },
+            { text: 'よんじゅうよんふん', isCorrect: false, reason: '陷阱！4發生半濁音化。' },
+            { text: 'しじゅうしふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'よんじゅうしぷん', isCorrect: false, reason: '個位4也讀「よん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十四分」讀「よんじゅうよんぷん」，4半濁音化。',
+            trapExplanation: '4是半濁音組(よんぷん)。',
+            relatedRules: ['分鐘の音變', '44分の讀法']
+        },
+        sourceItem: { value: 44, kanji: '四十四分', reading: 'よんじゅうよんぷん' }
+    },
+    {
+        id: 'minute_extra_72',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '午休還剩多久？',
+        stem_zh: '午休還剩多久？',
+        dialogue: {
+            speakerA: '昼休みはあと何分ですか？',
+            speakerB: '＿＿です。（三十三分）'
+        },
+        options: [
+            { text: 'さんじゅうさんぷん', isCorrect: true, reason: '正確！三十三分讀「さんじゅうさんぷん」。' },
+            { text: 'さんじゅうさんふん', isCorrect: false, reason: '陷阱！3發生半濁音化。' },
+            { text: 'みじゅうさんぷん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんじゅうみぷん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十三分」讀「さんじゅうさんぷん」，3半濁音化。',
+            trapExplanation: '3是半濁音組(さんぷん)。',
+            relatedRules: ['分鐘の音變', '33分の讀法']
+        },
+        sourceItem: { value: 33, kanji: '三十三分', reading: 'さんじゅうさんぷん' }
+    },
+    {
+        id: 'minute_extra_73',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「一百分」讀作？',
+        stem_zh: '「一百分」讀作？',
+        options: [
+            { text: 'ひゃっぷん', isCorrect: true, reason: '正確！一百分讀「ひゃっぷん」。' },
+            { text: 'ひゃくふん', isCorrect: false, reason: '陷阱！「百」後促音+半濁音化。' },
+            { text: 'いっぴゃくふん', isCorrect: false, reason: '「百」讀「ひゃく」。' },
+            { text: 'ひゃくぷん', isCorrect: false, reason: '需要促音。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「百分」讀「ひゃっぷん」，促音+半濁音化。',
+            trapExplanation: '「百」後的「分」促音化。',
+            relatedRules: ['分鐘の音變', '100分の讀法']
+        },
+        sourceItem: { value: 100, kanji: '百分', reading: 'ひゃっぷん' }
+    },
+    {
+        id: 'minute_extra_74',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '午後茶時間是＿＿。',
+        stem_zh: '午後茶時間是三十七分鐘。',
+        options: [
+            { text: 'さんじゅうななふん', isCorrect: true, reason: '正確！三十七分讀「さんじゅうななふん」。' },
+            { text: 'さんじゅうしちふん', isCorrect: false, reason: '分鐘用「なな」。' },
+            { text: 'さんじゅうななぷん', isCorrect: false, reason: '7無音變。' },
+            { text: 'みじゅうななふん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十七分」讀「さんじゅうななふん」，7無音變。',
+            relatedRules: ['分鐘の無音變組', '37分の讀法']
+        },
+        sourceItem: { value: 37, kanji: '三十七分', reading: 'さんじゅうななふん' }
+    },
+    {
+        id: 'minute_extra_75',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '洗衣服需要多久？',
+        stem_zh: '洗衣服需要多久？',
+        dialogue: {
+            speakerA: '洗濯は何分かかりますか？',
+            speakerB: '＿＿です。（五十二分）'
+        },
+        options: [
+            { text: 'ごじゅうにふん', isCorrect: true, reason: '正確！五十二分讀「ごじゅうにふん」。' },
+            { text: 'ごじゅうにぷん', isCorrect: false, reason: '2無音變。' },
+            { text: 'いつじゅうにふん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごじゅうふたふん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十二分」讀「ごじゅうにふん」，2無音變。',
+            relatedRules: ['分鐘の無音變組', '52分の讀法']
+        },
+        sourceItem: { value: 52, kanji: '五十二分', reading: 'ごじゅうにふん' }
+    },
+    {
+        id: 'minute_extra_76',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「五十六分」讀作？',
+        stem_zh: '「五十六分」讀作？',
+        options: [
+            { text: 'ごじゅうろっぷん', isCorrect: true, reason: '正確！五十六分讀「ごじゅうろっぷん」。' },
+            { text: 'ごじゅうろくふん', isCorrect: false, reason: '陷阱！6發生促音+半濁音化。' },
+            { text: 'ごじゅうろくぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'いつじゅうろっぷん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十六分」讀「ごじゅうろっぷん」，6促音+半濁音化。',
+            trapExplanation: '6是促音+半濁音組(ろっぷん)。',
+            relatedRules: ['分鐘の音變', '56分の讀法']
+        },
+        sourceItem: { value: 56, kanji: '五十六分', reading: 'ごじゅうろっぷん' }
+    },
+    {
+        id: 'minute_extra_77',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '午餐後散步＿＿。',
+        stem_zh: '午餐後散步二十九分鐘。',
+        options: [
+            { text: 'にじゅうきゅうふん', isCorrect: true, reason: '正確！二十九分讀「にじゅうきゅうふん」。' },
+            { text: 'にじゅうきゅうぷん', isCorrect: false, reason: '9無音變。' },
+            { text: 'にじゅうくふん', isCorrect: false, reason: '分鐘的9讀「きゅう」。' },
+            { text: 'ふたじゅうきゅうふん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十九分」讀「にじゅうきゅうふん」，9無音變。',
+            relatedRules: ['分鐘の無音變組', '29分の讀法']
+        },
+        sourceItem: { value: 29, kanji: '二十九分', reading: 'にじゅうきゅうふん' }
+    },
+    {
+        id: 'minute_extra_78',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '搭地鐵需要多久？',
+        stem_zh: '搭地鐵需要多久？',
+        dialogue: {
+            speakerA: '地下鉄で何分かかりますか？',
+            speakerB: '＿＿です。（三十一分）'
+        },
+        options: [
+            { text: 'さんじゅういっぷん', isCorrect: true, reason: '正確！三十一分讀「さんじゅういっぷん」。' },
+            { text: 'さんじゅういちふん', isCorrect: false, reason: '陷阱！1發生促音+半濁音化。' },
+            { text: 'みじゅういっぷん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんじゅうひとふん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十一分」讀「さんじゅういっぷん」，1促音+半濁音化。',
+            trapExplanation: '1是促音+半濁音組(いっぷん)。',
+            relatedRules: ['分鐘の音變', '31分の讀法']
+        },
+        sourceItem: { value: 31, kanji: '三十一分', reading: 'さんじゅういっぷん' }
+    },
+    {
+        id: 'minute_extra_79',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「四十八分」讀作？',
+        stem_zh: '「四十八分」讀作？',
+        options: [
+            { text: 'よんじゅうはっぷん', isCorrect: true, reason: '正確！四十八分讀「よんじゅうはっぷん」。' },
+            { text: 'よんじゅうはちふん', isCorrect: false, reason: '陷阱！8發生促音+半濁音化。' },
+            { text: 'よんじゅうはちぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'しじゅうはっぷん', isCorrect: false, reason: '分鐘的4讀「よん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十八分」讀「よんじゅうはっぷん」，8促音+半濁音化。',
+            trapExplanation: '8是促音+半濁音組(はっぷん)。',
+            relatedRules: ['分鐘の音變', '48分の讀法']
+        },
+        sourceItem: { value: 48, kanji: '四十八分', reading: 'よんじゅうはっぷん' }
+    },
+    {
+        id: 'minute_extra_80',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '烹飪節目是＿＿。',
+        stem_zh: '烹飪節目是五十五分鐘。',
+        options: [
+            { text: 'ごじゅうごふん', isCorrect: true, reason: '正確！五十五分讀「ごじゅうごふん」。' },
+            { text: 'ごじゅうごぷん', isCorrect: false, reason: '5無音變。' },
+            { text: 'いつじゅうごふん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'ごじゅういつふん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十五分」讀「ごじゅうごふん」，5無音變。',
+            relatedRules: ['分鐘の無音變組', '55分の讀法']
+        },
+        sourceItem: { value: 55, kanji: '五十五分', reading: 'ごじゅうごふん' }
+    },
+    {
+        id: 'minute_extra_81',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '練習鋼琴多久？',
+        stem_zh: '練習鋼琴多久？',
+        dialogue: {
+            speakerA: 'ピアノの練習は何分ですか？',
+            speakerB: '＿＿です。（六十四分）'
+        },
+        options: [
+            { text: 'ろくじゅうよんぷん', isCorrect: true, reason: '正確！六十四分讀「ろくじゅうよんぷん」。' },
+            { text: 'ろくじゅうよんふん', isCorrect: false, reason: '陷阱！4發生半濁音化。' },
+            { text: 'ろくじゅうしふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'むじゅうよんぷん', isCorrect: false, reason: '使用音讀「ろく」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十四分」讀「ろくじゅうよんぷん」，4半濁音化。',
+            trapExplanation: '4是半濁音組(よんぷん)。',
+            relatedRules: ['分鐘の音變', '64分の讀法']
+        },
+        sourceItem: { value: 64, kanji: '六十四分', reading: 'ろくじゅうよんぷん' }
+    },
+    {
+        id: 'minute_extra_82',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「二十五分」讀作？',
+        stem_zh: '「二十五分」讀作？',
+        options: [
+            { text: 'にじゅうごふん', isCorrect: true, reason: '正確！二十五分讀「にじゅうごふん」。' },
+            { text: 'にじゅうごぷん', isCorrect: false, reason: '5無音變。' },
+            { text: 'ふたじゅうごふん', isCorrect: false, reason: '使用音讀「に」。' },
+            { text: 'にじゅういつふん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十五分」讀「にじゅうごふん」，5無音變。',
+            relatedRules: ['分鐘の無音變組', '25分の讀法']
+        },
+        sourceItem: { value: 25, kanji: '二十五分', reading: 'にじゅうごふん' }
+    },
+    {
+        id: 'minute_extra_83',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: true,
+        stem: '烤肉需要＿＿。',
+        stem_zh: '烤肉需要十六分鐘。',
+        options: [
+            { text: 'じゅうろっぷん', isCorrect: true, reason: '正確！十六分讀「じゅうろっぷん」。' },
+            { text: 'じゅうろくふん', isCorrect: false, reason: '陷阱！6發生促音+半濁音化。' },
+            { text: 'じゅうろくぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'とおろっぷん', isCorrect: false, reason: '使用音讀「じゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十六分」讀「じゅうろっぷん」，6促音+半濁音化。',
+            trapExplanation: '6是促音+半濁音組(ろっぷん)。',
+            relatedRules: ['分鐘の音變', '16分の讀法']
+        },
+        sourceItem: { value: 16, kanji: '十六分', reading: 'じゅうろっぷん' }
+    },
+    {
+        id: 'minute_extra_84',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '做瑜伽多久？',
+        stem_zh: '做瑜伽多久？',
+        dialogue: {
+            speakerA: 'ヨガは何分やりますか？',
+            speakerB: '＿＿です。（四十五分）'
+        },
+        options: [
+            { text: 'よんじゅうごふん', isCorrect: true, reason: '正確！四十五分讀「よんじゅうごふん」。' },
+            { text: 'よんじゅうごぷん', isCorrect: false, reason: '5無音變。' },
+            { text: 'しじゅうごふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'よんじゅういつふん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十五分」讀「よんじゅうごふん」，5無音變。',
+            relatedRules: ['分鐘の無音變組', '45分の讀法']
+        },
+        sourceItem: { value: 45, kanji: '四十五分', reading: 'よんじゅうごふん' }
+    },
+    {
+        id: 'minute_extra_85',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「二十六分」讀作？',
+        stem_zh: '「二十六分」讀作？',
+        options: [
+            { text: 'にじゅうろっぷん', isCorrect: true, reason: '正確！二十六分讀「にじゅうろっぷん」。' },
+            { text: 'にじゅうろくふん', isCorrect: false, reason: '陷阱！6發生促音+半濁音化。' },
+            { text: 'にじゅうろくぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'ふたじゅうろっぷん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十六分」讀「にじゅうろっぷん」，6促音+半濁音化。',
+            trapExplanation: '6是促音+半濁音組(ろっぷん)。',
+            relatedRules: ['分鐘の音變', '26分の讀法']
+        },
+        sourceItem: { value: 26, kanji: '二十六分', reading: 'にじゅうろっぷん' }
+    },
+    {
+        id: 'minute_extra_86',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '等醫生需要＿＿。',
+        stem_zh: '等醫生需要三十二分鐘。',
+        options: [
+            { text: 'さんじゅうにふん', isCorrect: true, reason: '正確！三十二分讀「さんじゅうにふん」。' },
+            { text: 'さんじゅうにぷん', isCorrect: false, reason: '2無音變。' },
+            { text: 'みじゅうにふん', isCorrect: false, reason: '使用音讀「さん」。' },
+            { text: 'さんじゅうふたふん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十二分」讀「さんじゅうにふん」，2無音變。',
+            relatedRules: ['分鐘の無音變組', '32分の讀法']
+        },
+        sourceItem: { value: 32, kanji: '三十二分', reading: 'さんじゅうにふん' }
+    },
+    {
+        id: 'minute_extra_87',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '排隊買咖啡要多久？',
+        stem_zh: '排隊買咖啡要多久？',
+        dialogue: {
+            speakerA: 'コーヒーを買うのに何分並びますか？',
+            speakerB: '＿＿です。（十一分）'
+        },
+        options: [
+            { text: 'じゅういっぷん', isCorrect: true, reason: '正確！十一分讀「じゅういっぷん」。' },
+            { text: 'じゅういちふん', isCorrect: false, reason: '陷阱！1發生促音+半濁音化。' },
+            { text: 'とおいっぷん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうひとふん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十一分」讀「じゅういっぷん」，1促音+半濁音化。',
+            trapExplanation: '1是促音+半濁音組(いっぷん)。',
+            relatedRules: ['分鐘の音變', '11分の讀法']
+        },
+        sourceItem: { value: 11, kanji: '十一分', reading: 'じゅういっぷん' }
+    },
+    {
+        id: 'minute_extra_88',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「十八分」讀作？',
+        stem_zh: '「十八分」讀作？',
+        options: [
+            { text: 'じゅうはっぷん', isCorrect: true, reason: '正確！十八分讀「じゅうはっぷん」。' },
+            { text: 'じゅうはちふん', isCorrect: false, reason: '陷阱！8發生促音+半濁音化。' },
+            { text: 'じゅうはちぷん', isCorrect: false, reason: '需要促音。' },
+            { text: 'とおはっぷん', isCorrect: false, reason: '使用音讀「じゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十八分」讀「じゅうはっぷん」，8促音+半濁音化。',
+            trapExplanation: '8是促音+半濁音組(はっぷん)。',
+            relatedRules: ['分鐘の音變', '18分の讀法']
+        },
+        sourceItem: { value: 18, kanji: '十八分', reading: 'じゅうはっぷん' }
+    },
+    {
+        id: 'minute_extra_89',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '影印文件需要＿＿。',
+        stem_zh: '影印文件需要十五分鐘。',
+        options: [
+            { text: 'じゅうごふん', isCorrect: true, reason: '正確！十五分讀「じゅうごふん」。' },
+            { text: 'じゅうごぷん', isCorrect: false, reason: '5無音變。' },
+            { text: 'とおごふん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅういつふん', isCorrect: false, reason: '使用音讀「ご」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十五分」讀「じゅうごふん」，5無音變。',
+            relatedRules: ['分鐘の無音變組', '15分の讀法']
+        },
+        sourceItem: { value: 15, kanji: '十五分', reading: 'じゅうごふん' }
+    },
+    {
+        id: 'minute_extra_90',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '寫信需要多久？',
+        stem_zh: '寫信需要多久？',
+        dialogue: {
+            speakerA: '手紙を書くのに何分かかりますか？',
+            speakerB: '＿＿です。（十二分）'
+        },
+        options: [
+            { text: 'じゅうにふん', isCorrect: true, reason: '正確！十二分讀「じゅうにふん」。' },
+            { text: 'じゅうにぷん', isCorrect: false, reason: '2無音變。' },
+            { text: 'とおにふん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうふたふん', isCorrect: false, reason: '使用音讀「に」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十二分」讀「じゅうにふん」，2無音變。',
+            relatedRules: ['分鐘の無音變組', '12分の讀法']
+        },
+        sourceItem: { value: 12, kanji: '十二分', reading: 'じゅうにふん' }
+    },
+    {
+        id: 'minute_extra_91',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十七分」讀作？',
+        stem_zh: '「十七分」讀作？',
+        options: [
+            { text: 'じゅうななふん', isCorrect: true, reason: '正確！十七分讀「じゅうななふん」。' },
+            { text: 'じゅうしちふん', isCorrect: false, reason: '分鐘用「なな」。' },
+            { text: 'じゅうななぷん', isCorrect: false, reason: '7無音變。' },
+            { text: 'とおななふん', isCorrect: false, reason: '使用音讀「じゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十七分」讀「じゅうななふん」，7無音變。',
+            relatedRules: ['分鐘の無音變組', '17分の讀法']
+        },
+        sourceItem: { value: 17, kanji: '十七分', reading: 'じゅうななふん' }
+    },
+    {
+        id: 'minute_extra_92',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '清潔房間需要＿＿。',
+        stem_zh: '清潔房間需要十九分鐘。',
+        options: [
+            { text: 'じゅうきゅうふん', isCorrect: true, reason: '正確！十九分讀「じゅうきゅうふん」。' },
+            { text: 'じゅうきゅうぷん', isCorrect: false, reason: '9無音變。' },
+            { text: 'じゅうくふん', isCorrect: false, reason: '分鐘的9讀「きゅう」。' },
+            { text: 'とおきゅうふん', isCorrect: false, reason: '使用音讀「じゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十九分」讀「じゅうきゅうふん」，9無音變。',
+            relatedRules: ['分鐘の無音變組', '19分の讀法']
+        },
+        sourceItem: { value: 19, kanji: '十九分', reading: 'じゅうきゅうふん' }
+    },
+    {
+        id: 'minute_extra_93',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '準備出門需要多久？',
+        stem_zh: '準備出門需要多久？',
+        dialogue: {
+            speakerA: '出かける準備は何分かかりますか？',
+            speakerB: '＿＿です。（十三分）'
+        },
+        options: [
+            { text: 'じゅうさんぷん', isCorrect: true, reason: '正確！十三分讀「じゅうさんぷん」。' },
+            { text: 'じゅうさんふん', isCorrect: false, reason: '陷阱！3發生半濁音化。' },
+            { text: 'とおさんぷん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうみぷん', isCorrect: false, reason: '使用音讀「さん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十三分」讀「じゅうさんぷん」，3半濁音化。',
+            trapExplanation: '3是半濁音組(さんぷん)。',
+            relatedRules: ['分鐘の音變', '13分の讀法']
+        },
+        sourceItem: { value: 13, kanji: '十三分', reading: 'じゅうさんぷん' }
+    },
+    {
+        id: 'minute_extra_94',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「十四分」讀作？',
+        stem_zh: '「十四分」讀作？',
+        options: [
+            { text: 'じゅうよんぷん', isCorrect: true, reason: '正確！十四分讀「じゅうよんぷん」。' },
+            { text: 'じゅうよんふん', isCorrect: false, reason: '陷阱！4發生半濁音化。' },
+            { text: 'じゅうしふん', isCorrect: false, reason: '分鐘的4讀「よん」。' },
+            { text: 'とおよんぷん', isCorrect: false, reason: '使用音讀「じゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十四分」讀「じゅうよんぷん」，4半濁音化。',
+            trapExplanation: '4是半濁音組(よんぷん)。',
+            relatedRules: ['分鐘の音變', '14分の讀法']
+        },
+        sourceItem: { value: 14, kanji: '十四分', reading: 'じゅうよんぷん' }
+    },
+    {
+        id: 'minute_extra_95',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：「分」的促音+半濁音組有哪些數字？',
+        stem_zh: '總復習：「分」的促音+半濁音組有哪些數字？',
+        options: [
+            { text: '1、6、8、10 (いっぷん、ろっぷん、はっぷん、じゅっぷん)', isCorrect: true, reason: '正確！這四個促音+半濁音化。' },
+            { text: '3、4 (さんぷん、よんぷん)', isCorrect: false, reason: '這兩個只有半濁音化。' },
+            { text: '2、5、7、9', isCorrect: false, reason: '這些無音變。' },
+            { text: '全部', isCorrect: false, reason: '只有部分促音化。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '1/6/8/10的「分」促音+半濁音化：いっぷん、ろっぷん、はっぷん、じゅっぷん。',
+            relatedRules: ['分鐘の音變總整理', '促音+半濁音組']
+        },
+        sourceItem: { value: 'review_ppun', kanji: '促音組', reading: '1/6/8/10' }
+    },
+    {
+        id: 'minute_extra_96',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '總復習：「分」只有半濁音化的有哪些？',
+        stem_zh: '總復習：「分」只有半濁音化的有哪些？',
+        dialogue: {
+            speakerA: '「ぷん」だけ変化するのは？',
+            speakerB: '＿＿です。'
+        },
+        options: [
+            { text: '3、4 (さんぷん、よんぷん)', isCorrect: true, reason: '正確！這兩個只有半濁音化。' },
+            { text: '1、6、8、10', isCorrect: false, reason: '這些有促音。' },
+            { text: '2、5、7、9', isCorrect: false, reason: '這些無音變。' },
+            { text: '全部', isCorrect: false, reason: '只有部分。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '3/4的「分」只有半濁音化：さんぷん、よんぷん（無促音）。',
+            relatedRules: ['分鐘の音變總整理', '半濁音組']
+        },
+        sourceItem: { value: 'review_pun', kanji: '半濁音組', reading: '3/4' }
+    },
+    {
+        id: 'minute_extra_97',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '總復習：「分」無音變的有哪些數字？',
+        stem_zh: '總復習：「分」無音變的有哪些數字？',
+        options: [
+            { text: '2、5、7、9 (にふん、ごふん、ななふん、きゅうふん)', isCorrect: true, reason: '正確！這四個無音變。' },
+            { text: '1、6、8、10', isCorrect: false, reason: '這些有音變。' },
+            { text: '3、4', isCorrect: false, reason: '這些有音變。' },
+            { text: '全部', isCorrect: false, reason: '只有部分無音變。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '2/5/7/9的「分」保持「ふん」：にふん、ごふん、ななふん、きゅうふん。',
+            relatedRules: ['分鐘の音變總整理', '無音變組']
+        },
+        sourceItem: { value: 'review_fun', kanji: '無音變組', reading: '2/5/7/9' }
+    },
+    {
+        id: 'minute_extra_98',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：分鐘的7讀什麼？',
+        stem_zh: '總復習：分鐘的7讀什麼？',
+        options: [
+            { text: 'なな（不是しち）', isCorrect: true, reason: '正確！分鐘的7固定讀「なな」。' },
+            { text: 'しち', isCorrect: false, reason: '分鐘用「なな」。' },
+            { text: '兩者皆可', isCorrect: false, reason: '分鐘固定讀「なな」。' },
+            { text: 'なのか', isCorrect: false, reason: '「なのか」是日期。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '分鐘的7固定讀「なな」，與日期的「なのか」和小時的「しち」不同。',
+            relatedRules: ['分鐘の讀法', '7の讀み方']
+        },
+        sourceItem: { value: 'review_7', kanji: '七分', reading: 'ななふん' }
+    },
+    {
+        id: 'minute_extra_99',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '總復習：分鐘的9讀什麼？',
+        stem_zh: '總復習：分鐘的9讀什麼？',
+        dialogue: {
+            speakerA: '「9分」の9はどう読みますか？',
+            speakerB: '＿＿と読みます。'
+        },
+        options: [
+            { text: 'きゅう（不是く）', isCorrect: true, reason: '正確！分鐘的9固定讀「きゅう」。' },
+            { text: 'く', isCorrect: false, reason: '分鐘用「きゅう」。' },
+            { text: '兩者皆可', isCorrect: false, reason: '分鐘固定讀「きゅう」。' },
+            { text: 'ここの', isCorrect: false, reason: '這是訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '分鐘的9固定讀「きゅう」，與小時的「くじ」不同。',
+            relatedRules: ['分鐘の讀法', '9の讀み方']
+        },
+        sourceItem: { value: 'review_9', kanji: '九分', reading: 'きゅうふん' }
+    },
+    {
+        id: 'minute_extra_100',
+        category: 'timeDate',
+        subcategory: 'minutes',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '總復習：「半」（30分）讀作？',
+        stem_zh: '總復習：「半」（30分）讀作？',
+        options: [
+            { text: 'はん', isCorrect: true, reason: '正確！半讀「はん」。' },
+            { text: 'なかば', isCorrect: false, reason: '時間表達用「はん」。' },
+            { text: 'はんぶん', isCorrect: false, reason: '只有「はん」一個音。' },
+            { text: 'さんじゅっぷん', isCorrect: false, reason: '「半」是「はん」的簡稱。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「〜時半」的「半」讀「はん」，等於30分。',
+            relatedRules: ['時間表達', '半=30分']
+        },
+        sourceItem: { value: 'half', kanji: '半', reading: 'はん' }
     }
 ];

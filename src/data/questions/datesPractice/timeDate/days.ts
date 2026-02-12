@@ -2321,5 +2321,2259 @@ export const dayQuestions: DatesPracticeQuestion[] = [
             relatedRules: ['一般日期の讀法', '山の日']
         },
         sourceItem: { value: 11, kanji: '十一日', reading: 'じゅういちにち' }
+    },
+    // ===== 追加題目 07-56 =====
+    {
+        id: 'day_extra_07',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「二十日」的正確讀法是？',
+        stem_zh: '「二十日」的正確讀法是？',
+        options: [
+            { text: 'はつか', isCorrect: true, reason: '正確！20日讀「はつか」。' },
+            { text: 'にじゅうにち', isCorrect: false, reason: '20日是特殊讀法「はつか」。' },
+            { text: 'ふつか', isCorrect: false, reason: '「ふつか」是2日。' },
+            { text: 'にじゅっか', isCorrect: false, reason: '不存在這個讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「20日」讀「はつか」，是特殊讀法。',
+            trapExplanation: '20日和1日一樣有特殊讀法，要特別記憶。',
+            relatedRules: ['日期の特殊讀法', '20日＝はつか']
+        },
+        sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
+    },
+    {
+        id: 'day_extra_08',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '申込締切は今月＿＿です。',
+        stem_zh: '報名截止日是本月二十五日。',
+        options: [
+            { text: 'にじゅうごにち', isCorrect: true, reason: '正確！25日讀「にじゅうごにち」。' },
+            { text: 'にじゅういつか', isCorrect: false, reason: '21日以後用「にち」。' },
+            { text: 'にじゅごにち', isCorrect: false, reason: '需要「う」。' },
+            { text: 'はつかごにち', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「25日」讀「にじゅうごにち」，是一般讀法。',
+            relatedRules: ['一般日期の讀法', '20以上の日期']
+        },
+        sourceItem: { value: 25, kanji: '二十五日', reading: 'にじゅうごにち' }
+    },
+    {
+        id: 'day_extra_09',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '入金期限是幾號？',
+        stem_zh: '付款期限是幾號？',
+        dialogue: {
+            speakerA: '入金の期限はいつですか？',
+            speakerB: '今月の＿＿までです。（二十八日）'
+        },
+        options: [
+            { text: 'にじゅうはちにち', isCorrect: true, reason: '正確！28日讀「にじゅうはちにち」。' },
+            { text: 'にじゅうようか', isCorrect: false, reason: '8日的「ようか」只用於單獨的8日。' },
+            { text: 'にじゅはちにち', isCorrect: false, reason: '需要「う」。' },
+            { text: 'はつかようか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「28日」讀「にじゅうはちにち」。',
+            relatedRules: ['一般日期の讀法', '期限の表達']
+        },
+        sourceItem: { value: 28, kanji: '二十八日', reading: 'にじゅうはちにち' }
+    },
+    {
+        id: 'day_extra_10',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「二十四日」的正確讀法是？',
+        stem_zh: '「二十四日」的正確讀法是？',
+        options: [
+            { text: 'にじゅうよっか', isCorrect: true, reason: '正確！24日讀「にじゅうよっか」。' },
+            { text: 'にじゅうよんにち', isCorrect: false, reason: '24日的4讀「よっ」。' },
+            { text: 'にじゅうしにち', isCorrect: false, reason: '24日的4讀「よっ」不是「し」。' },
+            { text: 'はつかよっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「24日」讀「にじゅうよっか」，4用訓讀「よっ」。',
+            trapExplanation: '14日、24日的「4」都使用訓讀「よっ」。',
+            relatedRules: ['日期の特殊讀法', '4の讀法']
+        },
+        sourceItem: { value: 24, kanji: '二十四日', reading: 'にじゅうよっか' }
+    },
+    {
+        id: 'day_extra_11',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '大晦日は十二月＿＿です。',
+        stem_zh: '除夕是十二月三十一日。',
+        options: [
+            { text: 'さんじゅういちにち', isCorrect: true, reason: '正確！31日讀「さんじゅういちにち」。' },
+            { text: 'みっかじゅういち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'さんじゅうついたち', isCorrect: false, reason: '「ついたち」只用於1日。' },
+            { text: 'さんじゅいちにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「31日」讀「さんじゅういちにち」，大晦日是一年最後一天。',
+            relatedRules: ['一般日期の讀法', '大晦日']
+        },
+        sourceItem: { value: 31, kanji: '三十一日', reading: 'さんじゅういちにち' }
+    },
+    {
+        id: 'day_extra_12',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '聖誕節是幾號？',
+        stem_zh: '聖誕節是幾號？',
+        dialogue: {
+            speakerA: 'クリスマスは何月何日ですか？',
+            speakerB: '十二月＿＿です。（二十五日）'
+        },
+        options: [
+            { text: 'にじゅうごにち', isCorrect: true, reason: '正確！聖誕節是12月25日。' },
+            { text: 'にじゅういつか', isCorrect: false, reason: '21日以後用「にち」。' },
+            { text: 'はつかごにち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅごにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '聖誕節是「12月25日」，讀「じゅうにがつにじゅうごにち」。',
+            relatedRules: ['一般日期の讀法', 'クリスマス']
+        },
+        sourceItem: { value: 25, kanji: '二十五日', reading: 'にじゅうごにち' }
+    },
+    {
+        id: 'day_extra_13',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「十四日」的正確讀法是？',
+        stem_zh: '「十四日」的正確讀法是？',
+        options: [
+            { text: 'じゅうよっか', isCorrect: true, reason: '正確！14日讀「じゅうよっか」。' },
+            { text: 'じゅうよんにち', isCorrect: false, reason: '14日的4讀「よっ」。' },
+            { text: 'じゅうしにち', isCorrect: false, reason: '14日的4讀「よっ」不是「し」。' },
+            { text: 'とおよっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「14日」讀「じゅうよっか」，4用訓讀「よっ」。',
+            trapExplanation: '14日是特殊讀法，4讀「よっ」+「か」。',
+            relatedRules: ['日期の特殊讀法', '14日＝じゅうよっか']
+        },
+        sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
+    },
+    {
+        id: 'day_extra_14',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '情人節是二月＿＿です。',
+        stem_zh: '情人節是二月十四日。',
+        options: [
+            { text: 'じゅうよっか', isCorrect: true, reason: '正確！2月14日是情人節。' },
+            { text: 'じゅうよんにち', isCorrect: false, reason: '14日的4讀「よっ」。' },
+            { text: 'じゅうしにち', isCorrect: false, reason: '14日的4讀「よっ」不是「し」。' },
+            { text: 'とおよっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '情人節是「2月14日」，讀「にがつじゅうよっか」。',
+            relatedRules: ['日期の特殊讀法', 'バレンタインデー']
+        },
+        sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
+    },
+    {
+        id: 'day_extra_15',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '下次約會是幾號？',
+        stem_zh: '下次約會是幾號？',
+        dialogue: {
+            speakerA: '次のデートはいつですか？',
+            speakerB: '来週の＿＿はどうですか？（十五日）'
+        },
+        options: [
+            { text: 'じゅうごにち', isCorrect: true, reason: '正確！15日讀「じゅうごにち」。' },
+            { text: 'じゅういつか', isCorrect: false, reason: '11日以後用「にち」。' },
+            { text: 'とおいつか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'じゅごにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「15日」讀「じゅうごにち」，是一般讀法。',
+            relatedRules: ['一般日期の讀法', '約束の日付']
+        },
+        sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
+    },
+    {
+        id: 'day_extra_16',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「二十二日」的讀法是？',
+        stem_zh: '「二十二日」的讀法是？',
+        options: [
+            { text: 'にじゅうににち', isCorrect: true, reason: '正確！22日讀「にじゅうににち」。' },
+            { text: 'にじゅうふつか', isCorrect: false, reason: '「ふつか」只用於2日。' },
+            { text: 'はつかふつか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅににち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「22日」讀「にじゅうににち」，是一般讀法。',
+            relatedRules: ['一般日期の讀法', '20以上の日期']
+        },
+        sourceItem: { value: 22, kanji: '二十二日', reading: 'にじゅうににち' }
+    },
+    {
+        id: 'day_extra_17',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '今日は＿＿、明日は三十日です。',
+        stem_zh: '今天是二十九日，明天是三十日。',
+        options: [
+            { text: 'にじゅうくにち', isCorrect: true, reason: '正確！29日讀「にじゅうくにち」。' },
+            { text: 'にじゅうきゅうにち', isCorrect: false, reason: '29日的9讀「く」。' },
+            { text: 'にじゅうここのか', isCorrect: false, reason: '21日以後用「にち」。' },
+            { text: 'はつかここのか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「29日」讀「にじゅうくにち」，9讀「く」。',
+            relatedRules: ['一般日期の讀法', '9の讀法']
+        },
+        sourceItem: { value: 29, kanji: '二十九日', reading: 'にじゅうくにち' }
+    },
+    {
+        id: 'day_extra_18',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '月底是幾號？',
+        stem_zh: '月底是幾號？',
+        dialogue: {
+            speakerA: '今月の末日は何日ですか？',
+            speakerB: '今月は＿＿までです。（三十日）'
+        },
+        options: [
+            { text: 'さんじゅうにち', isCorrect: true, reason: '正確！30日讀「さんじゅうにち」。' },
+            { text: 'みっかじゅう', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'さんじゅっか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'さんじゅにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「30日」讀「さんじゅうにち」。',
+            relatedRules: ['一般日期の讀法', '月末の日付']
+        },
+        sourceItem: { value: 30, kanji: '三十日', reading: 'さんじゅうにち' }
+    },
+    {
+        id: 'day_extra_19',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「二十一日」的讀法是？',
+        stem_zh: '「二十一日」的讀法是？',
+        options: [
+            { text: 'にじゅういちにち', isCorrect: true, reason: '正確！21日讀「にじゅういちにち」。' },
+            { text: 'にじゅうついたち', isCorrect: false, reason: '「ついたち」只用於1日。' },
+            { text: 'はつかいちにち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅいちにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「21日」讀「にじゅういちにち」，是一般讀法。',
+            relatedRules: ['一般日期の讀法', '20以上の日期']
+        },
+        sourceItem: { value: 21, kanji: '二十一日', reading: 'にじゅういちにち' }
+    },
+    {
+        id: 'day_extra_20',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '勤労感謝の日は十一月＿＿です。',
+        stem_zh: '勤勞感謝之日是十一月二十三日。',
+        options: [
+            { text: 'にじゅうさんにち', isCorrect: true, reason: '正確！23日讀「にじゅうさんにち」。' },
+            { text: 'にじゅうみっか', isCorrect: false, reason: '21日以後用「にち」。' },
+            { text: 'はつかみっか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅさんにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '勤労感謝の日是「11月23日」，讀「にじゅうさんにち」。',
+            relatedRules: ['一般日期の讀法', '勤労感謝の日']
+        },
+        sourceItem: { value: 23, kanji: '二十三日', reading: 'にじゅうさんにち' }
+    },
+    {
+        id: 'day_extra_21',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '展覽會最後一天是？',
+        stem_zh: '展覽會最後一天是？',
+        dialogue: {
+            speakerA: '展覧会の最終日はいつですか？',
+            speakerB: '今月＿＿までです。（二十七日）'
+        },
+        options: [
+            { text: 'にじゅうしちにち', isCorrect: true, reason: '正確！27日讀「にじゅうしちにち」。' },
+            { text: 'にじゅうなのか', isCorrect: false, reason: '「なのか」只用於7日。' },
+            { text: 'はつかなのか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅななにち', isCorrect: false, reason: '27日的7讀「しち」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「27日」讀「にじゅうしちにち」，7讀「しち」。',
+            relatedRules: ['一般日期の讀法', '7の讀法']
+        },
+        sourceItem: { value: 27, kanji: '二十七日', reading: 'にじゅうしちにち' }
+    },
+    {
+        id: 'day_extra_22',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「二十六日」的讀法是？',
+        stem_zh: '「二十六日」的讀法是？',
+        options: [
+            { text: 'にじゅうろくにち', isCorrect: true, reason: '正確！26日讀「にじゅうろくにち」。' },
+            { text: 'にじゅうむいか', isCorrect: false, reason: '「むいか」只用於6日。' },
+            { text: 'はつかむいか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅろくにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「26日」讀「にじゅうろくにち」，是一般讀法。',
+            relatedRules: ['一般日期の讀法', '20以上の日期']
+        },
+        sourceItem: { value: 26, kanji: '二十六日', reading: 'にじゅうろくにち' }
+    },
+    {
+        id: 'day_extra_23',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: true,
+        stem: '今日は＿＿です（每月的第一天）。',
+        stem_zh: '今天是這個月的第一天。',
+        options: [
+            { text: 'ついたち', isCorrect: true, reason: '正確！每月第一天讀「ついたち」。' },
+            { text: 'いちにち', isCorrect: false, reason: '「いちにち」是「一天」的意思。' },
+            { text: 'いっか', isCorrect: false, reason: '1日用「ついたち」。' },
+            { text: 'ひとひ', isCorrect: false, reason: '這不是日期的讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '每月的第一天「1日」讀「ついたち」。',
+            trapExplanation: '「いちにち」表示時間長度「一天」。',
+            relatedRules: ['日期の特殊讀法', '1日＝ついたち']
+        },
+        sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
+    },
+    {
+        id: 'day_extra_24',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '薪水日是幾號？',
+        stem_zh: '薪水日是幾號？',
+        dialogue: {
+            speakerA: '給料日は何日ですか？',
+            speakerB: '毎月＿＿です。（二十五日）'
+        },
+        options: [
+            { text: 'にじゅうごにち', isCorrect: true, reason: '正確！25日讀「にじゅうごにち」。' },
+            { text: 'にじゅういつか', isCorrect: false, reason: '21日以後用「にち」。' },
+            { text: 'はつかごにち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅごにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '日本常見的給料日是每月「25日」。',
+            relatedRules: ['一般日期の讀法', '給料日']
+        },
+        sourceItem: { value: 25, kanji: '二十五日', reading: 'にじゅうごにち' }
+    },
+    {
+        id: 'day_extra_25',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「九日」的正確讀法是？',
+        stem_zh: '「九日」的正確讀法是？',
+        options: [
+            { text: 'ここのか', isCorrect: true, reason: '正確！9日讀「ここのか」。' },
+            { text: 'くにち', isCorrect: false, reason: '9日是特殊讀法「ここのか」。' },
+            { text: 'きゅうにち', isCorrect: false, reason: '9日是特殊讀法「ここのか」。' },
+            { text: 'ここのひ', isCorrect: false, reason: '日期用「か」不是「ひ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「9日」讀「ここのか」，是訓讀。',
+            trapExplanation: '1-10日都用訓讀，9日是「ここのか」。',
+            relatedRules: ['日期の訓讀', '9日＝ここのか']
+        },
+        sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
+    },
+    {
+        id: 'day_extra_26',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '子供の日は五月＿＿です。',
+        stem_zh: '兒童節是五月五日。',
+        options: [
+            { text: 'いつか', isCorrect: true, reason: '正確！5日讀「いつか」。' },
+            { text: 'ごにち', isCorrect: false, reason: '5日是特殊讀法「いつか」。' },
+            { text: 'ごか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'いつにち', isCorrect: false, reason: '5日用「いつか」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「5日」讀「いつか」，兒童節是5月5日。',
+            relatedRules: ['日期の訓讀', '子供の日']
+        },
+        sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
+    },
+    {
+        id: 'day_extra_27',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '七夕是幾月幾號？',
+        stem_zh: '七夕是幾月幾號？',
+        dialogue: {
+            speakerA: '七夕は何月何日ですか？',
+            speakerB: '七月＿＿です。（七日）'
+        },
+        options: [
+            { text: 'なのか', isCorrect: true, reason: '正確！7日讀「なのか」。' },
+            { text: 'しちにち', isCorrect: false, reason: '7日是特殊讀法「なのか」。' },
+            { text: 'なななか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'ななにち', isCorrect: false, reason: '7日用「なのか」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '七夕是7月7日，「7日」讀「なのか」。',
+            relatedRules: ['日期の訓讀', '七夕']
+        },
+        sourceItem: { value: 7, kanji: '七日', reading: 'なのか' }
+    },
+    {
+        id: 'day_extra_28',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「八日」的正確讀法是？',
+        stem_zh: '「八日」的正確讀法是？',
+        options: [
+            { text: 'ようか', isCorrect: true, reason: '正確！8日讀「ようか」。' },
+            { text: 'はちにち', isCorrect: false, reason: '8日是特殊讀法「ようか」。' },
+            { text: 'はつか', isCorrect: false, reason: '「はつか」是20日。' },
+            { text: 'やっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「8日」讀「ようか」，是訓讀。',
+            trapExplanation: '8日「ようか」和20日「はつか」容易混淆。',
+            relatedRules: ['日期の訓讀', '8日＝ようか']
+        },
+        sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
+    },
+    {
+        id: 'day_extra_29',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '彼の誕生日は三月＿＿です。',
+        stem_zh: '他的生日是三月三日。',
+        options: [
+            { text: 'みっか', isCorrect: true, reason: '正確！3日讀「みっか」。' },
+            { text: 'さんにち', isCorrect: false, reason: '3日是特殊讀法「みっか」。' },
+            { text: 'みか', isCorrect: false, reason: '有促音「っ」。' },
+            { text: 'さんか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「3日」讀「みっか」，3月3日是女兒節（雛祭り）。',
+            relatedRules: ['日期の訓讀', '雛祭り']
+        },
+        sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
+    },
+    {
+        id: 'day_extra_30',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '會議延期到幾號？',
+        stem_zh: '會議延期到幾號？',
+        dialogue: {
+            speakerA: '会議は何日に延期されましたか？',
+            speakerB: '＿＿になりました。（十日）'
+        },
+        options: [
+            { text: 'とおか', isCorrect: true, reason: '正確！10日讀「とおか」。' },
+            { text: 'じゅうにち', isCorrect: false, reason: '10日是特殊讀法「とおか」。' },
+            { text: 'じゅっか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'とおにち', isCorrect: false, reason: '10日用「とおか」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「10日」讀「とおか」，是訓讀。',
+            relatedRules: ['日期の訓讀', '10日＝とおか']
+        },
+        sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
+    },
+    {
+        id: 'day_extra_31',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「四日」的正確讀法是？',
+        stem_zh: '「四日」的正確讀法是？',
+        options: [
+            { text: 'よっか', isCorrect: true, reason: '正確！4日讀「よっか」。' },
+            { text: 'しにち', isCorrect: false, reason: '4日是特殊讀法「よっか」。' },
+            { text: 'よんにち', isCorrect: false, reason: '4日是特殊讀法「よっか」。' },
+            { text: 'よんか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「4日」讀「よっか」，是訓讀。',
+            trapExplanation: '4日、14日、24日的「4」都讀「よっ」。',
+            relatedRules: ['日期の訓讀', '4日＝よっか']
+        },
+        sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
+    },
+    {
+        id: 'day_extra_32',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '元日は一月＿＿です。',
+        stem_zh: '元旦是一月一日。',
+        options: [
+            { text: 'ついたち', isCorrect: true, reason: '正確！1日讀「ついたち」。' },
+            { text: 'いちにち', isCorrect: false, reason: '日期的1日讀「ついたち」。' },
+            { text: 'いっか', isCorrect: false, reason: '1日用「ついたち」。' },
+            { text: 'がんじつ', isCorrect: false, reason: '「元日」是節日名，不是日期讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '元日是1月1日，「1日」讀「ついたち」。',
+            relatedRules: ['日期の特殊讀法', '元日']
+        },
+        sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
+    },
+    {
+        id: 'day_extra_33',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '預約是幾號？',
+        stem_zh: '預約是幾號？',
+        dialogue: {
+            speakerA: '予約は何日ですか？',
+            speakerB: '＿＿にお願いします。（二日）'
+        },
+        options: [
+            { text: 'ふつか', isCorrect: true, reason: '正確！2日讀「ふつか」。' },
+            { text: 'ににち', isCorrect: false, reason: '2日是特殊讀法「ふつか」。' },
+            { text: 'にか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'ふたひ', isCorrect: false, reason: '日期用「か」不是「ひ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「2日」讀「ふつか」，是訓讀。',
+            relatedRules: ['日期の訓讀', '2日＝ふつか']
+        },
+        sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
+    },
+    {
+        id: 'day_extra_34',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「六日」的正確讀法是？',
+        stem_zh: '「六日」的正確讀法是？',
+        options: [
+            { text: 'むいか', isCorrect: true, reason: '正確！6日讀「むいか」。' },
+            { text: 'ろくにち', isCorrect: false, reason: '6日是特殊讀法「むいか」。' },
+            { text: 'むっか', isCorrect: false, reason: '沒有促音，是「むいか」。' },
+            { text: 'ろっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「6日」讀「むいか」，是訓讀。',
+            trapExplanation: '6日沒有促音，讀「むいか」。',
+            relatedRules: ['日期の訓讀', '6日＝むいか']
+        },
+        sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
+    },
+    {
+        id: 'day_extra_35',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '彼女の誕生日は四月＿＿です。',
+        stem_zh: '她的生日是四月十日。',
+        options: [
+            { text: 'とおか', isCorrect: true, reason: '正確！10日讀「とおか」。' },
+            { text: 'じゅうにち', isCorrect: false, reason: '10日是特殊讀法「とおか」。' },
+            { text: 'じゅっか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'とか', isCorrect: false, reason: '需要長音「とおか」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「10日」讀「とおか」，是1-10日中的最後一個訓讀。',
+            relatedRules: ['日期の訓讀', '10日＝とおか']
+        },
+        sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
+    },
+    {
+        id: 'day_extra_36',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '考試是幾號？',
+        stem_zh: '考試是幾號？',
+        dialogue: {
+            speakerA: '試験は何日ですか？',
+            speakerB: '＿＿です。（十八日）'
+        },
+        options: [
+            { text: 'じゅうはちにち', isCorrect: true, reason: '正確！18日讀「じゅうはちにち」。' },
+            { text: 'じゅうようか', isCorrect: false, reason: '「ようか」只用於8日。' },
+            { text: 'とおようか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'じゅはちにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「18日」讀「じゅうはちにち」，是一般讀法。',
+            relatedRules: ['一般日期の讀法', '試験日程']
+        },
+        sourceItem: { value: 18, kanji: '十八日', reading: 'じゅうはちにち' }
+    },
+    {
+        id: 'day_extra_37',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十二日」的讀法是？',
+        stem_zh: '「十二日」的讀法是？',
+        options: [
+            { text: 'じゅうににち', isCorrect: true, reason: '正確！12日讀「じゅうににち」。' },
+            { text: 'じゅうふつか', isCorrect: false, reason: '「ふつか」只用於2日。' },
+            { text: 'とおふつか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'じゅににち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「12日」讀「じゅうににち」，是一般讀法。',
+            relatedRules: ['一般日期の讀法', '11日以上']
+        },
+        sourceItem: { value: 12, kanji: '十二日', reading: 'じゅうににち' }
+    },
+    {
+        id: 'day_extra_38',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '天皇誕生日は二月＿＿です。',
+        stem_zh: '天皇誕辰是二月二十三日。',
+        options: [
+            { text: 'にじゅうさんにち', isCorrect: true, reason: '正確！23日讀「にじゅうさんにち」。' },
+            { text: 'にじゅうみっか', isCorrect: false, reason: '21日以後用「にち」。' },
+            { text: 'はつかみっか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅさんにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '天皇誕生日是「2月23日」。',
+            relatedRules: ['一般日期の讀法', '天皇誕生日']
+        },
+        sourceItem: { value: 23, kanji: '二十三日', reading: 'にじゅうさんにち' }
+    },
+    {
+        id: 'day_extra_39',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '報告書提交期限是？',
+        stem_zh: '報告書提交期限是？',
+        dialogue: {
+            speakerA: 'レポートの提出期限は？',
+            speakerB: '今月＿＿までです。（二十日）'
+        },
+        options: [
+            { text: 'はつか', isCorrect: true, reason: '正確！20日讀「はつか」。' },
+            { text: 'にじゅうにち', isCorrect: false, reason: '20日是特殊讀法「はつか」。' },
+            { text: 'にじゅっか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'ふつか', isCorrect: false, reason: '「ふつか」是2日。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「20日」讀「はつか」，是特殊讀法。',
+            trapExplanation: '20日和1日一樣有特殊讀法，需要記憶。',
+            relatedRules: ['日期の特殊讀法', '20日＝はつか']
+        },
+        sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
+    },
+    {
+        id: 'day_extra_40',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十五日」的讀法是？',
+        stem_zh: '「十五日」的讀法是？',
+        options: [
+            { text: 'じゅうごにち', isCorrect: true, reason: '正確！15日讀「じゅうごにち」。' },
+            { text: 'じゅういつか', isCorrect: false, reason: '「いつか」只用於5日。' },
+            { text: 'とおいつか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'じゅごにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「15日」讀「じゅうごにち」，是一般讀法。',
+            relatedRules: ['一般日期の讀法', '11日以上']
+        },
+        sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
+    },
+    {
+        id: 'day_extra_41',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '敬老の日は九月の第三＿＿です。',
+        stem_zh: '敬老之日是九月的第三個星期一。',
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！敬老の日是9月第三個週一。' },
+            { text: 'じゅうごにち', isCorrect: false, reason: '敬老の日是週一制，不是固定日期。' },
+            { text: 'はつか', isCorrect: false, reason: '敬老の日已改為週一制。' },
+            { text: 'にちようび', isCorrect: false, reason: '敬老の日是週一。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '敬老の日是9月第三個週一（ハッピーマンデー制度）。',
+            relatedRules: ['日本の祝日', 'ハッピーマンデー']
+        },
+        sourceItem: { value: 'holiday', kanji: '敬老の日', reading: 'けいろうのひ' }
+    },
+    {
+        id: 'day_extra_42',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '搬家日是幾號？',
+        stem_zh: '搬家日是幾號？',
+        dialogue: {
+            speakerA: '引っ越しは何日ですか？',
+            speakerB: '来月の＿＿です。（五日）'
+        },
+        options: [
+            { text: 'いつか', isCorrect: true, reason: '正確！5日讀「いつか」。' },
+            { text: 'ごにち', isCorrect: false, reason: '5日是特殊讀法「いつか」。' },
+            { text: 'ごか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'いつにち', isCorrect: false, reason: '5日用「いつか」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「5日」讀「いつか」，是訓讀。',
+            relatedRules: ['日期の訓讀', '5日＝いつか']
+        },
+        sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
+    },
+    {
+        id: 'day_extra_43',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「一日」作為「一天」時的讀法是？',
+        stem_zh: '「一日」作為「一天」時的讀法是？',
+        options: [
+            { text: 'いちにち', isCorrect: true, reason: '正確！「一天」讀「いちにち」。' },
+            { text: 'ついたち', isCorrect: false, reason: '「ついたち」是日期「1號」。' },
+            { text: 'ひとひ', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'いっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「一日」作為時間長度「一天」讀「いちにち」。',
+            trapExplanation: '「ついたち」是日期，「いちにち」是時間長度。',
+            relatedRules: ['一日の讀み分け', '日期vs期間']
+        },
+        sourceItem: { value: '1day', kanji: '一日', reading: 'いちにち' }
+    },
+    {
+        id: 'day_extra_44',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '文化の日は十一月＿＿です。',
+        stem_zh: '文化之日是十一月三日。',
+        options: [
+            { text: 'みっか', isCorrect: true, reason: '正確！3日讀「みっか」。' },
+            { text: 'さんにち', isCorrect: false, reason: '3日是特殊讀法「みっか」。' },
+            { text: 'みか', isCorrect: false, reason: '有促音「っ」。' },
+            { text: 'さんか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '文化の日是「11月3日」，讀「みっか」。',
+            relatedRules: ['日期の訓讀', '文化の日']
+        },
+        sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
+    },
+    {
+        id: 'day_extra_45',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '租約到期是幾號？',
+        stem_zh: '租約到期是幾號？',
+        dialogue: {
+            speakerA: '契約満了日はいつですか？',
+            speakerB: '来年の三月＿＿です。（三十一日）'
+        },
+        options: [
+            { text: 'さんじゅういちにち', isCorrect: true, reason: '正確！31日讀「さんじゅういちにち」。' },
+            { text: 'みっかじゅういち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'さんじゅうついたち', isCorrect: false, reason: '「ついたち」只用於1日。' },
+            { text: 'さんじゅいちにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「31日」讀「さんじゅういちにち」。',
+            relatedRules: ['一般日期の讀法', '月末の日付']
+        },
+        sourceItem: { value: 31, kanji: '三十一日', reading: 'さんじゅういちにち' }
+    },
+    {
+        id: 'day_extra_46',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「何日」的讀法是？',
+        stem_zh: '「何日」的讀法是？',
+        options: [
+            { text: 'なんにち', isCorrect: true, reason: '正確！何日讀「なんにち」。' },
+            { text: 'なにか', isCorrect: false, reason: '「何」在此讀「なん」。' },
+            { text: 'なんか', isCorrect: false, reason: '用「にち」不是「か」。' },
+            { text: 'いくにち', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「何日」讀「なんにち」，用來詢問日期。',
+            relatedRules: ['疑問詞の讀法', '何日＝なんにち']
+        },
+        sourceItem: { value: 'what day', kanji: '何日', reading: 'なんにち' }
+    },
+    {
+        id: 'day_extra_47',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '体育の日は十月の第二＿＿です。',
+        stem_zh: '體育之日是十月的第二個星期一。',
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！體育の日是10月第二個週一。' },
+            { text: 'じゅうにち', isCorrect: false, reason: '體育の日是週一制，不是固定日期。' },
+            { text: 'とおか', isCorrect: false, reason: '體育の日已改為週一制。' },
+            { text: 'にちようび', isCorrect: false, reason: '體育の日是週一。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '體育の日是10月第二個週一（ハッピーマンデー制度）。',
+            relatedRules: ['日本の祝日', 'ハッピーマンデー']
+        },
+        sourceItem: { value: 'holiday', kanji: 'スポーツの日', reading: 'スポーツのひ' }
+    },
+    {
+        id: 'day_extra_48',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '父親節是幾號？',
+        stem_zh: '父親節是幾號？',
+        dialogue: {
+            speakerA: '父の日は何月何日ですか？',
+            speakerB: '六月の第三日曜日です。今年は六月＿＿です。（十五日）'
+        },
+        options: [
+            { text: 'じゅうごにち', isCorrect: true, reason: '正確！15日讀「じゅうごにち」。' },
+            { text: 'じゅういつか', isCorrect: false, reason: '「いつか」只用於5日。' },
+            { text: 'とおいつか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'じゅごにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「15日」讀「じゅうごにち」。',
+            relatedRules: ['一般日期の讀法', '父の日']
+        },
+        sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
+    },
+    {
+        id: 'day_extra_49',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '1-10日中，哪些有特殊讀法？',
+        stem_zh: '1-10日中，哪些有特殊讀法？',
+        options: [
+            { text: '全部1-10日都是特殊讀法', isCorrect: true, reason: '正確！1-10日全部用訓讀。' },
+            { text: '只有1日和10日', isCorrect: false, reason: '1-10日全部用特殊訓讀。' },
+            { text: '只有1日', isCorrect: false, reason: '1-10日全部用特殊訓讀。' },
+            { text: '沒有特殊讀法', isCorrect: false, reason: '1-10日全部用特殊訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '1-10日全部使用訓讀，是日語日期的重要特徵。',
+            trapExplanation: '這是總結性題目，1-10日都要特別記憶。',
+            relatedRules: ['日期の訓讀', '1-10日の讀法']
+        },
+        sourceItem: { value: '1-10', kanji: '一日〜十日', reading: 'ついたち〜とおか' }
+    },
+    {
+        id: 'day_extra_50',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '昭和の日は四月＿＿です。',
+        stem_zh: '昭和之日是四月二十九日。',
+        options: [
+            { text: 'にじゅうくにち', isCorrect: true, reason: '正確！29日讀「にじゅうくにち」。' },
+            { text: 'にじゅうきゅうにち', isCorrect: false, reason: '29日的9讀「く」。' },
+            { text: 'にじゅうここのか', isCorrect: false, reason: '21日以後用「にち」。' },
+            { text: 'はつかここのか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '昭和の日是「4月29日」，讀「にじゅうくにち」。',
+            relatedRules: ['一般日期の讀法', '昭和の日']
+        },
+        sourceItem: { value: 29, kanji: '二十九日', reading: 'にじゅうくにち' }
+    },
+    {
+        id: 'day_extra_51',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '簽證到期是幾號？',
+        stem_zh: '簽證到期是幾號？',
+        dialogue: {
+            speakerA: 'ビザの有効期限はいつですか？',
+            speakerB: '＿＿までです。（二十六日）'
+        },
+        options: [
+            { text: 'にじゅうろくにち', isCorrect: true, reason: '正確！26日讀「にじゅうろくにち」。' },
+            { text: 'にじゅうむいか', isCorrect: false, reason: '「むいか」只用於6日。' },
+            { text: 'はつかむいか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅろくにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「26日」讀「にじゅうろくにち」。',
+            relatedRules: ['一般日期の讀法', '有効期限']
+        },
+        sourceItem: { value: 26, kanji: '二十六日', reading: 'にじゅうろくにち' }
+    },
+    {
+        id: 'day_extra_52',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「朔日」的讀法是？',
+        stem_zh: '「朔日」的讀法是？',
+        options: [
+            { text: 'ついたち', isCorrect: true, reason: '正確！朔日讀「ついたち」。' },
+            { text: 'さくじつ', isCorrect: false, reason: '「朔日」的讀法是「ついたち」。' },
+            { text: 'さくにち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'ついにち', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「朔日」讀「ついたち」，是1日的另一種漢字寫法。',
+            relatedRules: ['日期の特殊讀法', '朔日＝ついたち']
+        },
+        sourceItem: { value: 1, kanji: '朔日', reading: 'ついたち' }
+    },
+    {
+        id: 'day_extra_53',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '建国記念の日は二月＿＿です。',
+        stem_zh: '建國紀念日是二月十一日。',
+        options: [
+            { text: 'じゅういちにち', isCorrect: true, reason: '正確！11日讀「じゅういちにち」。' },
+            { text: 'じゅういっか', isCorrect: false, reason: '11日以後用「にち」。' },
+            { text: 'とおかついたち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'じゅいちにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '建国記念の日是「2月11日」。',
+            relatedRules: ['一般日期の讀法', '建国記念の日']
+        },
+        sourceItem: { value: 11, kanji: '十一日', reading: 'じゅういちにち' }
+    },
+    {
+        id: 'day_extra_54',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '新專輯發售是幾號？',
+        stem_zh: '新專輯發售是幾號？',
+        dialogue: {
+            speakerA: '新アルバムの発売日はいつですか？',
+            speakerB: '来月の＿＿です。（八日）'
+        },
+        options: [
+            { text: 'ようか', isCorrect: true, reason: '正確！8日讀「ようか」。' },
+            { text: 'はちにち', isCorrect: false, reason: '8日是特殊讀法「ようか」。' },
+            { text: 'はつか', isCorrect: false, reason: '「はつか」是20日。' },
+            { text: 'やっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「8日」讀「ようか」，是訓讀。',
+            relatedRules: ['日期の訓讀', '8日＝ようか']
+        },
+        sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
+    },
+    {
+        id: 'day_extra_55',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '11日以後的日期讀法規則是？',
+        stem_zh: '11日以後的日期讀法規則是？',
+        options: [
+            { text: '用音讀「〜にち」', isCorrect: true, reason: '正確！11日以後用「にち」。' },
+            { text: '繼續用訓讀「〜か」', isCorrect: false, reason: '11日以後改用「にち」。' },
+            { text: '沒有固定規則', isCorrect: false, reason: '有固定規則：11日以後用「にち」。' },
+            { text: '用音讀「〜じつ」', isCorrect: false, reason: '日期用「にち」不是「じつ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '11日以後改用音讀「〜にち」，除了14日、20日、24日例外。',
+            trapExplanation: '這是總結性題目，理解11日以後的規則變化。',
+            relatedRules: ['日期の讀法規則', '11日以上の讀法']
+        },
+        sourceItem: { value: '11+', kanji: '十一日以上', reading: '〜にち' }
+    },
+    {
+        id: 'day_extra_56',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '成人の日は一月の第二＿＿です。',
+        stem_zh: '成人之日是一月的第二個星期一。',
+        options: [
+            { text: 'げつようび', isCorrect: true, reason: '正確！成人の日是1月第二個週一。' },
+            { text: 'じゅうごにち', isCorrect: false, reason: '成人の日是週一制，不是固定日期。' },
+            { text: 'とおか', isCorrect: false, reason: '成人の日已改為週一制。' },
+            { text: 'にちようび', isCorrect: false, reason: '成人の日是週一。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '成人の日是1月第二個週一（ハッピーマンデー制度）。',
+            relatedRules: ['日本の祝日', 'ハッピーマンデー']
+        },
+        sourceItem: { value: 'holiday', kanji: '成人の日', reading: 'せいじんのひ' }
+    },
+    // ===== 追加題目 57-106 =====
+    {
+        id: 'day_extra_57',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '出發日是幾號？',
+        stem_zh: '出發日是幾號？',
+        dialogue: {
+            speakerA: '出発日は何日ですか？',
+            speakerB: '＿＿です。（四日）'
+        },
+        options: [
+            { text: 'よっか', isCorrect: true, reason: '正確！4日讀「よっか」。' },
+            { text: 'しにち', isCorrect: false, reason: '4日是特殊讀法「よっか」。' },
+            { text: 'よんにち', isCorrect: false, reason: '4日是特殊讀法「よっか」。' },
+            { text: 'よんか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「4日」讀「よっか」，是訓讀。',
+            relatedRules: ['日期の訓讀', '4日＝よっか']
+        },
+        sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
+    },
+    {
+        id: 'day_extra_58',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「晦日」的讀法是？',
+        stem_zh: '「晦日」的讀法是？',
+        options: [
+            { text: 'みそか', isCorrect: true, reason: '正確！晦日讀「みそか」。' },
+            { text: 'かいじつ', isCorrect: false, reason: '「晦日」的讀法是「みそか」。' },
+            { text: 'つごもり', isCorrect: false, reason: '「つごもり」也可以但「みそか」更常用。' },
+            { text: 'まいにち', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「晦日」讀「みそか」，指每月最後一天。',
+            relatedRules: ['日期の特殊讀法', '晦日＝みそか']
+        },
+        sourceItem: { value: 'last day', kanji: '晦日', reading: 'みそか' }
+    },
+    {
+        id: 'day_extra_59',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '春分の日は三月＿＿頃です。',
+        stem_zh: '春分之日大約在三月二十一日。',
+        options: [
+            { text: 'にじゅういちにち', isCorrect: true, reason: '正確！21日讀「にじゅういちにち」。' },
+            { text: 'にじゅうついたち', isCorrect: false, reason: '「ついたち」只用於1日。' },
+            { text: 'はつかいちにち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅいちにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '春分の日大約是「3月21日」左右。',
+            relatedRules: ['一般日期の讀法', '春分の日']
+        },
+        sourceItem: { value: 21, kanji: '二十一日', reading: 'にじゅういちにち' }
+    },
+    {
+        id: 'day_extra_60',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '回國日是幾號？',
+        stem_zh: '回國日是幾號？',
+        dialogue: {
+            speakerA: '帰国日はいつですか？',
+            speakerB: '来月の＿＿です。（九日）'
+        },
+        options: [
+            { text: 'ここのか', isCorrect: true, reason: '正確！9日讀「ここのか」。' },
+            { text: 'くにち', isCorrect: false, reason: '9日是特殊讀法「ここのか」。' },
+            { text: 'きゅうにち', isCorrect: false, reason: '9日是特殊讀法「ここのか」。' },
+            { text: 'ここのひ', isCorrect: false, reason: '日期用「か」不是「ひ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「9日」讀「ここのか」，是訓讀。',
+            relatedRules: ['日期の訓讀', '9日＝ここのか']
+        },
+        sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
+    },
+    {
+        id: 'day_extra_61',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '14日、24日的「4」使用什麼讀法？',
+        stem_zh: '14日、24日的「4」使用什麼讀法？',
+        options: [
+            { text: '訓讀「よっ」', isCorrect: true, reason: '正確！14日、24日的4讀「よっ」。' },
+            { text: '音讀「し」', isCorrect: false, reason: '14日、24日的4不讀「し」。' },
+            { text: '音讀「よん」', isCorrect: false, reason: '14日、24日的4不讀「よん」。' },
+            { text: '沒有固定規則', isCorrect: false, reason: '有固定規則：讀「よっ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '14日（じゅうよっか）、24日（にじゅうよっか）的「4」用訓讀「よっ」。',
+            trapExplanation: '這是日期中4的特殊讀法規則。',
+            relatedRules: ['日期の特殊讀法', '4の讀法']
+        },
+        sourceItem: { value: '4', kanji: '四', reading: 'よっ' }
+    },
+    {
+        id: 'day_extra_62',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '秋分の日は九月＿＿頃です。',
+        stem_zh: '秋分之日大約在九月二十三日。',
+        options: [
+            { text: 'にじゅうさんにち', isCorrect: true, reason: '正確！23日讀「にじゅうさんにち」。' },
+            { text: 'にじゅうみっか', isCorrect: false, reason: '21日以後用「にち」。' },
+            { text: 'はつかみっか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'にじゅさんにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '秋分の日大約是「9月23日」左右。',
+            relatedRules: ['一般日期の讀法', '秋分の日']
+        },
+        sourceItem: { value: 23, kanji: '二十三日', reading: 'にじゅうさんにち' }
+    },
+    {
+        id: 'day_extra_63',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '保險到期是幾號？',
+        stem_zh: '保險到期是幾號？',
+        dialogue: {
+            speakerA: '保険の満期日はいつですか？',
+            speakerB: '今月の＿＿です。（六日）'
+        },
+        options: [
+            { text: 'むいか', isCorrect: true, reason: '正確！6日讀「むいか」。' },
+            { text: 'ろくにち', isCorrect: false, reason: '6日是特殊讀法「むいか」。' },
+            { text: 'むっか', isCorrect: false, reason: '沒有促音，是「むいか」。' },
+            { text: 'ろっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「6日」讀「むいか」，是訓讀。',
+            relatedRules: ['日期の訓讀', '6日＝むいか']
+        },
+        sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
+    },
+    {
+        id: 'day_extra_64',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「毎月」的讀法是？',
+        stem_zh: '「毎月」的讀法是？',
+        options: [
+            { text: 'まいつき', isCorrect: true, reason: '正確！毎月讀「まいつき」。' },
+            { text: 'まいげつ', isCorrect: false, reason: '「毎月」的標準讀法是「まいつき」。' },
+            { text: 'ごとつき', isCorrect: false, reason: '「毎」讀「まい」不是「ごと」。' },
+            { text: 'まいがつ', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「毎月」讀「まいつき」，意思是每個月。',
+            relatedRules: ['毎〜の讀法', '毎月＝まいつき']
+        },
+        sourceItem: { value: 'every month', kanji: '毎月', reading: 'まいつき' }
+    },
+    {
+        id: 'day_extra_65',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '憲法記念日は五月＿＿です。',
+        stem_zh: '憲法紀念日是五月三日。',
+        options: [
+            { text: 'みっか', isCorrect: true, reason: '正確！3日讀「みっか」。' },
+            { text: 'さんにち', isCorrect: false, reason: '3日是特殊讀法「みっか」。' },
+            { text: 'みか', isCorrect: false, reason: '有促音「っ」。' },
+            { text: 'さんか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '憲法記念日是「5月3日」。',
+            relatedRules: ['日期の訓讀', '憲法記念日']
+        },
+        sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
+    },
+    {
+        id: 'day_extra_66',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '面談是幾號？',
+        stem_zh: '面談是幾號？',
+        dialogue: {
+            speakerA: '面談は何日ですか？',
+            speakerB: '＿＿の午後3時です。（七日）'
+        },
+        options: [
+            { text: 'なのか', isCorrect: true, reason: '正確！7日讀「なのか」。' },
+            { text: 'しちにち', isCorrect: false, reason: '7日是特殊讀法「なのか」。' },
+            { text: 'なななか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'ななにち', isCorrect: false, reason: '7日用「なのか」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「7日」讀「なのか」，是訓讀。',
+            relatedRules: ['日期の訓讀', '7日＝なのか']
+        },
+        sourceItem: { value: 7, kanji: '七日', reading: 'なのか' }
+    },
+    {
+        id: 'day_extra_67',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '20日特殊讀法的由來是？',
+        stem_zh: '20日特殊讀法的由來是？',
+        options: [
+            { text: '古語「二十」（はた）＋日（か）', isCorrect: true, reason: '正確！「はた」＋「か」→「はつか」。' },
+            { text: '沒有特殊由來', isCorrect: false, reason: '有特殊由來：古語「はた」。' },
+            { text: '來自外來語', isCorrect: false, reason: '來自古日語「はた」。' },
+            { text: '來自中國語', isCorrect: false, reason: '來自古日語「はた」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「はつか」來自古語「二十」（はた）＋「日」（か）。',
+            trapExplanation: '了解語源有助於記憶特殊讀法。',
+            relatedRules: ['日期の特殊讀法', '20日の語源']
+        },
+        sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
+    },
+    {
+        id: 'day_extra_68',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: 'みどりの日は五月＿＿です。',
+        stem_zh: '綠之日是五月四日。',
+        options: [
+            { text: 'よっか', isCorrect: true, reason: '正確！4日讀「よっか」。' },
+            { text: 'しにち', isCorrect: false, reason: '4日是特殊讀法「よっか」。' },
+            { text: 'よんにち', isCorrect: false, reason: '4日是特殊讀法「よっか」。' },
+            { text: 'よんか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: 'みどりの日是「5月4日」。',
+            relatedRules: ['日期の訓讀', 'みどりの日']
+        },
+        sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
+    },
+    {
+        id: 'day_extra_69',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '開幕式是幾號？',
+        stem_zh: '開幕式是幾號？',
+        dialogue: {
+            speakerA: '開会式は何日ですか？',
+            speakerB: '＿＿です。（十日）'
+        },
+        options: [
+            { text: 'とおか', isCorrect: true, reason: '正確！10日讀「とおか」。' },
+            { text: 'じゅうにち', isCorrect: false, reason: '10日是特殊讀法「とおか」。' },
+            { text: 'じゅっか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'とおにち', isCorrect: false, reason: '10日用「とおか」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「10日」讀「とおか」，是訓讀。',
+            relatedRules: ['日期の訓讀', '10日＝とおか']
+        },
+        sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
+    },
+    {
+        id: 'day_extra_70',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「日付」的讀法是？',
+        stem_zh: '「日付」的讀法是？',
+        options: [
+            { text: 'ひづけ', isCorrect: true, reason: '正確！日付讀「ひづけ」。' },
+            { text: 'にちふ', isCorrect: false, reason: '「日付」讀「ひづけ」。' },
+            { text: 'にちつき', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'ひつけ', isCorrect: false, reason: '有濁音「づ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「日付」讀「ひづけ」，意思是日期。',
+            relatedRules: ['日期相關詞彙', '日付＝ひづけ']
+        },
+        sourceItem: { value: 'date', kanji: '日付', reading: 'ひづけ' }
+    },
+    {
+        id: 'day_extra_71',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '今日は＿＿、あさっては十日です。',
+        stem_zh: '今天是八日，後天是十日。',
+        options: [
+            { text: 'ようか', isCorrect: true, reason: '正確！8日讀「ようか」。' },
+            { text: 'はちにち', isCorrect: false, reason: '8日是特殊讀法「ようか」。' },
+            { text: 'はつか', isCorrect: false, reason: '「はつか」是20日。' },
+            { text: 'やっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「8日」讀「ようか」。',
+            relatedRules: ['日期の訓讀', '8日＝ようか']
+        },
+        sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
+    },
+    {
+        id: 'day_extra_72',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '產品發貨是幾號？',
+        stem_zh: '產品發貨是幾號？',
+        dialogue: {
+            speakerA: '商品の発送日はいつですか？',
+            speakerB: 'ご注文から＿＿以内です。（三日）'
+        },
+        options: [
+            { text: 'みっか', isCorrect: true, reason: '正確！3日讀「みっか」。' },
+            { text: 'さんにち', isCorrect: false, reason: '3日是特殊讀法「みっか」。' },
+            { text: 'みか', isCorrect: false, reason: '有促音「っ」。' },
+            { text: 'さんか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「3日以内」的「3日」讀「みっか」。',
+            relatedRules: ['日期の訓讀', '3日＝みっか']
+        },
+        sourceItem: { value: 3, kanji: '三日', reading: 'みっか' }
+    },
+    {
+        id: 'day_extra_73',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「一日」讀「ついたち」時的語源是？',
+        stem_zh: '「一日」讀「ついたち」時的語源是？',
+        options: [
+            { text: '「月立ち」（新月出現）', isCorrect: true, reason: '正確！來自「つきたち」。' },
+            { text: '「一立ち」', isCorrect: false, reason: '來自「月立ち」不是「一立ち」。' },
+            { text: '沒有特殊語源', isCorrect: false, reason: '有特殊語源：「月立ち」。' },
+            { text: '來自中國語', isCorrect: false, reason: '來自古日語「月立ち」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「ついたち」來自「月立ち」（つきたち），指新月出現。',
+            trapExplanation: '了解語源有助於記憶這個特殊讀法。',
+            relatedRules: ['日期の特殊讀法', '1日の語源']
+        },
+        sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
+    },
+    {
+        id: 'day_extra_74',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '母の日は五月の第二＿＿です。',
+        stem_zh: '母親節是五月的第二個星期日。',
+        options: [
+            { text: 'にちようび', isCorrect: true, reason: '正確！母の日是5月第二個週日。' },
+            { text: 'じゅうにち', isCorrect: false, reason: '母の日是週日制，不是固定日期。' },
+            { text: 'とおか', isCorrect: false, reason: '母の日是週日制。' },
+            { text: 'げつようび', isCorrect: false, reason: '母の日是週日。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '母の日是5月第二個週日。',
+            relatedRules: ['日本の祝日', '母の日']
+        },
+        sourceItem: { value: 'holiday', kanji: '母の日', reading: 'ははのひ' }
+    },
+    {
+        id: 'day_extra_75',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '畢業典禮是幾號？',
+        stem_zh: '畢業典禮是幾號？',
+        dialogue: {
+            speakerA: '卒業式は何日ですか？',
+            speakerB: '三月＿＿です。（二十日）'
+        },
+        options: [
+            { text: 'はつか', isCorrect: true, reason: '正確！20日讀「はつか」。' },
+            { text: 'にじゅうにち', isCorrect: false, reason: '20日是特殊讀法「はつか」。' },
+            { text: 'にじゅっか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'ふつか', isCorrect: false, reason: '「ふつか」是2日。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「20日」讀「はつか」。',
+            relatedRules: ['日期の特殊讀法', '20日＝はつか']
+        },
+        sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
+    },
+    {
+        id: 'day_extra_76',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「今日」的讀法是？',
+        stem_zh: '「今日」的讀法是？',
+        options: [
+            { text: 'きょう', isCorrect: true, reason: '正確！今日讀「きょう」。' },
+            { text: 'こんにち', isCorrect: false, reason: '「こんにち」是正式讀法但不常用。' },
+            { text: 'きょうび', isCorrect: false, reason: '這是「今日日」的讀法。' },
+            { text: 'いまにち', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「今日」讀「きょう」，意思是今天。',
+            relatedRules: ['日期相關詞彙', '今日＝きょう']
+        },
+        sourceItem: { value: 'today', kanji: '今日', reading: 'きょう' }
+    },
+    {
+        id: 'day_extra_77',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '勤労感謝の日の翌日は十一月＿＿です。',
+        stem_zh: '勤勞感謝之日的隔天是十一月二十四日。',
+        options: [
+            { text: 'にじゅうよっか', isCorrect: true, reason: '正確！24日讀「にじゅうよっか」。' },
+            { text: 'にじゅうよんにち', isCorrect: false, reason: '24日的4讀「よっ」。' },
+            { text: 'にじゅうしにち', isCorrect: false, reason: '24日的4讀「よっ」不是「し」。' },
+            { text: 'はつかよっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「24日」讀「にじゅうよっか」。',
+            relatedRules: ['日期の特殊讀法', '24日']
+        },
+        sourceItem: { value: 24, kanji: '二十四日', reading: 'にじゅうよっか' }
+    },
+    {
+        id: 'day_extra_78',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '申請期限是幾號？',
+        stem_zh: '申請期限是幾號？',
+        dialogue: {
+            speakerA: '申請の締め切りは何日ですか？',
+            speakerB: '今月＿＿必着です。（五日）'
+        },
+        options: [
+            { text: 'いつか', isCorrect: true, reason: '正確！5日讀「いつか」。' },
+            { text: 'ごにち', isCorrect: false, reason: '5日是特殊讀法「いつか」。' },
+            { text: 'ごか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'いつにち', isCorrect: false, reason: '5日用「いつか」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「5日」讀「いつか」。',
+            relatedRules: ['日期の訓讀', '5日＝いつか']
+        },
+        sourceItem: { value: 5, kanji: '五日', reading: 'いつか' }
+    },
+    {
+        id: 'day_extra_79',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「明日」的讀法是？',
+        stem_zh: '「明日」的讀法是？',
+        options: [
+            { text: 'あした / あす', isCorrect: true, reason: '正確！明日讀「あした」或「あす」。' },
+            { text: 'みょうにち', isCorrect: false, reason: '「みょうにち」是正式讀法但不常用。' },
+            { text: 'めいにち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'あけのひ', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「明日」讀「あした」或「あす」。',
+            relatedRules: ['日期相關詞彙', '明日']
+        },
+        sourceItem: { value: 'tomorrow', kanji: '明日', reading: 'あした' }
+    },
+    {
+        id: 'day_extra_80',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '七五三は十一月＿＿です。',
+        stem_zh: '七五三是十一月十五日。',
+        options: [
+            { text: 'じゅうごにち', isCorrect: true, reason: '正確！15日讀「じゅうごにち」。' },
+            { text: 'じゅういつか', isCorrect: false, reason: '「いつか」只用於5日。' },
+            { text: 'とおいつか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'じゅごにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '七五三是「11月15日」。',
+            relatedRules: ['一般日期の讀法', '七五三']
+        },
+        sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
+    },
+    {
+        id: 'day_extra_81',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '演唱會是幾號？',
+        stem_zh: '演唱會是幾號？',
+        dialogue: {
+            speakerA: 'コンサートは何日ですか？',
+            speakerB: '来月の＿＿です。（二日）'
+        },
+        options: [
+            { text: 'ふつか', isCorrect: true, reason: '正確！2日讀「ふつか」。' },
+            { text: 'ににち', isCorrect: false, reason: '2日是特殊讀法「ふつか」。' },
+            { text: 'にか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'ふたひ', isCorrect: false, reason: '日期用「か」不是「ひ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「2日」讀「ふつか」。',
+            relatedRules: ['日期の訓讀', '2日＝ふつか']
+        },
+        sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
+    },
+    {
+        id: 'day_extra_82',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「昨日」的讀法是？',
+        stem_zh: '「昨日」的讀法是？',
+        options: [
+            { text: 'きのう', isCorrect: true, reason: '正確！昨日讀「きのう」。' },
+            { text: 'さくじつ', isCorrect: false, reason: '「さくじつ」是正式讀法但不常用。' },
+            { text: 'さくにち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'きのひ', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「昨日」讀「きのう」，意思是昨天。',
+            relatedRules: ['日期相關詞彙', '昨日＝きのう']
+        },
+        sourceItem: { value: 'yesterday', kanji: '昨日', reading: 'きのう' }
+    },
+    {
+        id: 'day_extra_83',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '終戦記念日は八月＿＿です。',
+        stem_zh: '終戰紀念日是八月十五日。',
+        options: [
+            { text: 'じゅうごにち', isCorrect: true, reason: '正確！15日讀「じゅうごにち」。' },
+            { text: 'じゅういつか', isCorrect: false, reason: '「いつか」只用於5日。' },
+            { text: 'とおいつか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'じゅごにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '終戦記念日是「8月15日」。',
+            relatedRules: ['一般日期の讀法', '終戦記念日']
+        },
+        sourceItem: { value: 15, kanji: '十五日', reading: 'じゅうごにち' }
+    },
+    {
+        id: 'day_extra_84',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '這個月有幾天？',
+        stem_zh: '這個月有幾天？',
+        dialogue: {
+            speakerA: '今月は何日ありますか？',
+            speakerB: '＿＿あります。（三十一日）'
+        },
+        options: [
+            { text: 'さんじゅういちにち', isCorrect: true, reason: '正確！31天讀「さんじゅういちにち」。' },
+            { text: 'さんじゅうついたち', isCorrect: false, reason: '這裡是天數不是日期。' },
+            { text: 'みっかじゅういち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'さんじゅいちにち', isCorrect: false, reason: '需要「う」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '這裡的「31日」表示天數，讀「さんじゅういちにち」。',
+            trapExplanation: '詢問天數時用「にち」表示。',
+            relatedRules: ['日數の讀法', '何日ある']
+        },
+        sourceItem: { value: 31, kanji: '三十一日', reading: 'さんじゅういちにち' }
+    },
+    {
+        id: 'day_extra_85',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「一昨日」的讀法是？',
+        stem_zh: '「一昨日」的讀法是？',
+        options: [
+            { text: 'おととい', isCorrect: true, reason: '正確！一昨日讀「おととい」。' },
+            { text: 'いっさくじつ', isCorrect: false, reason: '「いっさくじつ」是正式讀法但不常用。' },
+            { text: 'いちさくにち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'ひとひまえ', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「一昨日」讀「おととい」，意思是前天。',
+            relatedRules: ['日期相關詞彙', '一昨日＝おととい']
+        },
+        sourceItem: { value: 'day before yesterday', kanji: '一昨日', reading: 'おととい' }
+    },
+    {
+        id: 'day_extra_86',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '今月は＿＿から始まりました。',
+        stem_zh: '這個月從一日開始。',
+        options: [
+            { text: 'ついたち', isCorrect: true, reason: '正確！1日讀「ついたち」。' },
+            { text: 'いちにち', isCorrect: false, reason: '日期的1日讀「ついたち」。' },
+            { text: 'いっか', isCorrect: false, reason: '1日用「ついたち」。' },
+            { text: 'ひとひ', isCorrect: false, reason: '這不是日期的讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '每月的第一天「1日」讀「ついたち」。',
+            relatedRules: ['日期の特殊讀法', '1日＝ついたち']
+        },
+        sourceItem: { value: 1, kanji: '一日', reading: 'ついたち' }
+    },
+    {
+        id: 'day_extra_87',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '旅行是幾天？',
+        stem_zh: '旅行是幾天？',
+        dialogue: {
+            speakerA: '旅行は何日間ですか？',
+            speakerB: '＿＿間です。（五日）'
+        },
+        options: [
+            { text: 'いつか', isCorrect: true, reason: '正確！5日讀「いつか」。' },
+            { text: 'ごにち', isCorrect: false, reason: '5日是特殊讀法「いつか」。' },
+            { text: 'ごか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'いつにち', isCorrect: false, reason: '5日用「いつか」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「5日間」的「5日」讀「いつか」。',
+            relatedRules: ['日期の訓讀', '期間の表現']
+        },
+        sourceItem: { value: 5, kanji: '五日間', reading: 'いつかかん' }
+    },
+    {
+        id: 'day_extra_88',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「明後日」的讀法是？',
+        stem_zh: '「明後日」的讀法是？',
+        options: [
+            { text: 'あさって', isCorrect: true, reason: '正確！明後日讀「あさって」。' },
+            { text: 'みょうごにち', isCorrect: false, reason: '「みょうごにち」是正式讀法但不常用。' },
+            { text: 'めいごにち', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'あとのひ', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「明後日」讀「あさって」，意思是後天。',
+            relatedRules: ['日期相關詞彙', '明後日＝あさって']
+        },
+        sourceItem: { value: 'day after tomorrow', kanji: '明後日', reading: 'あさって' }
+    },
+    {
+        id: 'day_extra_89',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：1-10日使用＿＿讀法。',
+        stem_zh: '總復習：1-10日使用什麼讀法？',
+        options: [
+            { text: '訓讀（〜か）', isCorrect: true, reason: '正確！1-10日用訓讀。' },
+            { text: '音讀（〜にち）', isCorrect: false, reason: '1-10日用訓讀「〜か」。' },
+            { text: '沒有固定規則', isCorrect: false, reason: '有固定規則：用訓讀。' },
+            { text: '可以任選', isCorrect: false, reason: '1-10日固定用訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '1-10日全部使用訓讀，如「ついたち」「ふつか」「みっか」等。',
+            relatedRules: ['日期の訓讀', '1-10日の讀法']
+        },
+        sourceItem: { value: '1-10', kanji: '一日〜十日', reading: '訓讀' }
+    },
+    {
+        id: 'day_extra_90',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '派對是幾號？',
+        stem_zh: '派對是幾號？',
+        dialogue: {
+            speakerA: 'パーティーは何日ですか？',
+            speakerB: '＿＿の夜です。（十四日）'
+        },
+        options: [
+            { text: 'じゅうよっか', isCorrect: true, reason: '正確！14日讀「じゅうよっか」。' },
+            { text: 'じゅうよんにち', isCorrect: false, reason: '14日的4讀「よっ」。' },
+            { text: 'じゅうしにち', isCorrect: false, reason: '14日的4讀「よっ」不是「し」。' },
+            { text: 'とおよっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「14日」讀「じゅうよっか」。',
+            relatedRules: ['日期の特殊讀法', '14日']
+        },
+        sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
+    },
+    {
+        id: 'day_extra_91',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '總復習：哪些日期在11日以後仍用特殊讀法？',
+        stem_zh: '總復習：哪些日期在11日以後仍用特殊讀法？',
+        options: [
+            { text: '14日、20日、24日', isCorrect: true, reason: '正確！這三個日期有特殊讀法。' },
+            { text: '只有20日', isCorrect: false, reason: '14日、20日、24日都有特殊讀法。' },
+            { text: '11-31日都沒有特殊讀法', isCorrect: false, reason: '14日、20日、24日有特殊讀法。' },
+            { text: '所有帶4的日期', isCorrect: false, reason: '只有14日、24日，不是所有帶4的。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '14日（じゅうよっか）、20日（はつか）、24日（にじゅうよっか）有特殊讀法。',
+            trapExplanation: '這是總結性題目，掌握11日以後的例外。',
+            relatedRules: ['日期の特殊讀法', '例外の日期']
+        },
+        sourceItem: { value: 'exception', kanji: '特殊日期', reading: '例外' }
+    },
+    {
+        id: 'day_extra_92',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '彼は＿＿に生まれました。',
+        stem_zh: '他在二十日出生。',
+        options: [
+            { text: 'はつか', isCorrect: true, reason: '正確！20日讀「はつか」。' },
+            { text: 'にじゅうにち', isCorrect: false, reason: '20日是特殊讀法「はつか」。' },
+            { text: 'にじゅっか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'ふつか', isCorrect: false, reason: '「ふつか」是2日。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「20日」讀「はつか」。',
+            relatedRules: ['日期の特殊讀法', '20日＝はつか']
+        },
+        sourceItem: { value: 20, kanji: '二十日', reading: 'はつか' }
+    },
+    {
+        id: 'day_extra_93',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '存款到期是幾號？',
+        stem_zh: '存款到期是幾號？',
+        dialogue: {
+            speakerA: '定期預金の満期日はいつですか？',
+            speakerB: '来月の＿＿です。（十日）'
+        },
+        options: [
+            { text: 'とおか', isCorrect: true, reason: '正確！10日讀「とおか」。' },
+            { text: 'じゅうにち', isCorrect: false, reason: '10日是特殊讀法「とおか」。' },
+            { text: 'じゅっか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'とおにち', isCorrect: false, reason: '10日用「とおか」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「10日」讀「とおか」。',
+            relatedRules: ['日期の訓讀', '10日＝とおか']
+        },
+        sourceItem: { value: 10, kanji: '十日', reading: 'とおか' }
+    },
+    {
+        id: 'day_extra_94',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「翌日」的讀法是？',
+        stem_zh: '「翌日」的讀法是？',
+        options: [
+            { text: 'よくじつ', isCorrect: true, reason: '正確！翌日讀「よくじつ」。' },
+            { text: 'よくにち', isCorrect: false, reason: '「翌日」讀「よくじつ」。' },
+            { text: 'あくるひ', isCorrect: false, reason: '「あくるひ」是「翌る日」的讀法。' },
+            { text: 'つぎのひ', isCorrect: false, reason: '這是「次の日」的讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「翌日」讀「よくじつ」，意思是第二天。',
+            relatedRules: ['日期相關詞彙', '翌日＝よくじつ']
+        },
+        sourceItem: { value: 'next day', kanji: '翌日', reading: 'よくじつ' }
+    },
+    {
+        id: 'day_extra_95',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '會議將延期到＿＿。',
+        stem_zh: '會議將延期到二十四日。',
+        options: [
+            { text: 'にじゅうよっか', isCorrect: true, reason: '正確！24日讀「にじゅうよっか」。' },
+            { text: 'にじゅうよんにち', isCorrect: false, reason: '24日的4讀「よっ」。' },
+            { text: 'にじゅうしにち', isCorrect: false, reason: '24日的4讀「よっ」不是「し」。' },
+            { text: 'はつかよっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「24日」讀「にじゅうよっか」。',
+            relatedRules: ['日期の特殊讀法', '24日']
+        },
+        sourceItem: { value: 24, kanji: '二十四日', reading: 'にじゅうよっか' }
+    },
+    {
+        id: 'day_extra_96',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '活動持續幾天？',
+        stem_zh: '活動持續幾天？',
+        dialogue: {
+            speakerA: 'イベントは何日間続きますか？',
+            speakerB: '＿＿間です。（七日）'
+        },
+        options: [
+            { text: 'なのか', isCorrect: true, reason: '正確！7日讀「なのか」。' },
+            { text: 'しちにち', isCorrect: false, reason: '7日是特殊讀法「なのか」。' },
+            { text: 'なななか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'ななにち', isCorrect: false, reason: '7日用「なのか」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「7日間」的「7日」讀「なのか」。',
+            relatedRules: ['日期の訓讀', '期間の表現']
+        },
+        sourceItem: { value: 7, kanji: '七日間', reading: 'なのかかん' }
+    },
+    {
+        id: 'day_extra_97',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「前日」的讀法是？',
+        stem_zh: '「前日」的讀法是？',
+        options: [
+            { text: 'ぜんじつ', isCorrect: true, reason: '正確！前日讀「ぜんじつ」。' },
+            { text: 'まえにち', isCorrect: false, reason: '「前日」讀「ぜんじつ」。' },
+            { text: 'ぜんにち', isCorrect: false, reason: '「日」在此讀「じつ」。' },
+            { text: 'まえび', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「前日」讀「ぜんじつ」，意思是前一天。',
+            relatedRules: ['日期相關詞彙', '前日＝ぜんじつ']
+        },
+        sourceItem: { value: 'previous day', kanji: '前日', reading: 'ぜんじつ' }
+    },
+    {
+        id: 'day_extra_98',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '彼女は＿＿から入院しています。',
+        stem_zh: '她從六日開始住院。',
+        options: [
+            { text: 'むいか', isCorrect: true, reason: '正確！6日讀「むいか」。' },
+            { text: 'ろくにち', isCorrect: false, reason: '6日是特殊讀法「むいか」。' },
+            { text: 'むっか', isCorrect: false, reason: '沒有促音，是「むいか」。' },
+            { text: 'ろっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「6日」讀「むいか」。',
+            relatedRules: ['日期の訓讀', '6日＝むいか']
+        },
+        sourceItem: { value: 6, kanji: '六日', reading: 'むいか' }
+    },
+    {
+        id: 'day_extra_99',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '預約是幾號？',
+        stem_zh: '預約是幾號？',
+        dialogue: {
+            speakerA: '予約は何日ですか？',
+            speakerB: '＿＿でお願いします。（八日）'
+        },
+        options: [
+            { text: 'ようか', isCorrect: true, reason: '正確！8日讀「ようか」。' },
+            { text: 'はちにち', isCorrect: false, reason: '8日是特殊讀法「ようか」。' },
+            { text: 'はつか', isCorrect: false, reason: '「はつか」是20日。' },
+            { text: 'やっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「8日」讀「ようか」。',
+            relatedRules: ['日期の訓讀', '8日＝ようか']
+        },
+        sourceItem: { value: 8, kanji: '八日', reading: 'ようか' }
+    },
+    {
+        id: 'day_extra_100',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '總復習：「ついたち」「はつか」都是特殊讀法，有什麼共同特徵？',
+        stem_zh: '總復習：「ついたち」「はつか」都是特殊讀法，有什麼共同特徵？',
+        options: [
+            { text: '都與月亮或時間的循環有關', isCorrect: true, reason: '正確！「ついたち」源自「月立ち」，「はつか」源自古語。' },
+            { text: '沒有共同特徵', isCorrect: false, reason: '都與時間循環的古語有關。' },
+            { text: '都是外來語', isCorrect: false, reason: '都是古日語。' },
+            { text: '都是音讀', isCorrect: false, reason: '都是訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「ついたち」源自「月立ち」（新月），「はつか」源自古語「二十」（はた）。',
+            trapExplanation: '了解語源有助於記憶這些特殊讀法。',
+            relatedRules: ['日期の語源', '特殊讀法の由来']
+        },
+        sourceItem: { value: 'summary', kanji: '總復習', reading: '特殊讀法' }
+    },
+    // ===== 追加題目 101-106 =====
+    {
+        id: 'day_extra_101',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '入學式は四月＿＿に行われます。',
+        stem_zh: '入學典禮在四月九日舉行。',
+        options: [
+            { text: 'ここのか', isCorrect: true, reason: '正確！9日讀「ここのか」。' },
+            { text: 'くにち', isCorrect: false, reason: '9日是特殊讀法「ここのか」。' },
+            { text: 'きゅうにち', isCorrect: false, reason: '9日是特殊讀法「ここのか」。' },
+            { text: 'ここのひ', isCorrect: false, reason: '日期用「か」不是「ひ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「9日」讀「ここのか」，是訓讀。',
+            relatedRules: ['日期の訓讀', '9日＝ここのか']
+        },
+        sourceItem: { value: 9, kanji: '九日', reading: 'ここのか' }
+    },
+    {
+        id: 'day_extra_102',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '退房日是幾號？',
+        stem_zh: '退房日是幾號？',
+        dialogue: {
+            speakerA: 'チェックアウトは何日ですか？',
+            speakerB: '＿＿の午前11時です。（四日）'
+        },
+        options: [
+            { text: 'よっか', isCorrect: true, reason: '正確！4日讀「よっか」。' },
+            { text: 'しにち', isCorrect: false, reason: '4日是特殊讀法「よっか」。' },
+            { text: 'よんにち', isCorrect: false, reason: '4日是特殊讀法「よっか」。' },
+            { text: 'よんか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「4日」讀「よっか」，是訓讀。',
+            relatedRules: ['日期の訓讀', '4日＝よっか']
+        },
+        sourceItem: { value: 4, kanji: '四日', reading: 'よっか' }
+    },
+    {
+        id: 'day_extra_103',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「当日」的讀法是？',
+        stem_zh: '「當日」的讀法是？',
+        options: [
+            { text: 'とうじつ', isCorrect: true, reason: '正確！當日讀「とうじつ」。' },
+            { text: 'とうにち', isCorrect: false, reason: '「當日」讀「とうじつ」。' },
+            { text: 'あたりひ', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'とうび', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「當日」讀「とうじつ」，意思是當天。',
+            relatedRules: ['日期相關詞彙', '當日＝とうじつ']
+        },
+        sourceItem: { value: 'that day', kanji: '当日', reading: 'とうじつ' }
+    },
+    {
+        id: 'day_extra_104',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'sentence',
+        isTrap: false,
+        stem: '彼の出張は＿＿から一週間です。',
+        stem_zh: '他的出差從二日開始一週。',
+        options: [
+            { text: 'ふつか', isCorrect: true, reason: '正確！2日讀「ふつか」。' },
+            { text: 'ににち', isCorrect: false, reason: '2日是特殊讀法「ふつか」。' },
+            { text: 'にか', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'ふたひ', isCorrect: false, reason: '日期用「か」不是「ひ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「2日」讀「ふつか」，是訓讀。',
+            relatedRules: ['日期の訓讀', '2日＝ふつか']
+        },
+        sourceItem: { value: 2, kanji: '二日', reading: 'ふつか' }
+    },
+    {
+        id: 'day_extra_105',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '電影上映到幾號？',
+        stem_zh: '電影上映到幾號？',
+        dialogue: {
+            speakerA: '映画はいつまで上映していますか？',
+            speakerB: '今月＿＿までです。（十四日）'
+        },
+        options: [
+            { text: 'じゅうよっか', isCorrect: true, reason: '正確！14日讀「じゅうよっか」。' },
+            { text: 'じゅうよんにち', isCorrect: false, reason: '14日的4讀「よっ」。' },
+            { text: 'じゅうしにち', isCorrect: false, reason: '14日的4讀「よっ」不是「し」。' },
+            { text: 'とおよっか', isCorrect: false, reason: '這不是正確讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「14日」讀「じゅうよっか」。',
+            relatedRules: ['日期の特殊讀法', '14日']
+        },
+        sourceItem: { value: 14, kanji: '十四日', reading: 'じゅうよっか' }
+    },
+    {
+        id: 'day_extra_106',
+        category: 'timeDate',
+        subcategory: 'days',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '總復習：日語日期的讀法有幾種主要模式？',
+        stem_zh: '總復習：日語日期的讀法有幾種主要模式？',
+        options: [
+            { text: '三種：1-10日訓讀、11日以後音讀、例外（14/20/24日）', isCorrect: true, reason: '正確！這是日期讀法的三種主要模式。' },
+            { text: '只有一種：全部音讀', isCorrect: false, reason: '1-10日用訓讀，還有例外。' },
+            { text: '只有一種：全部訓讀', isCorrect: false, reason: '11日以後大多用音讀。' },
+            { text: '沒有規則', isCorrect: false, reason: '有明確的規則和例外。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '日語日期讀法有三種模式：1-10日訓讀、11日以後音讀、例外（14/20/24日）。',
+            trapExplanation: '掌握這三種模式是學習日期讀法的關鍵。',
+            relatedRules: ['日期の讀法總整理', '三種模式']
+        },
+        sourceItem: { value: 'summary', kanji: '總復習', reading: '三種模式' }
     }
 ];

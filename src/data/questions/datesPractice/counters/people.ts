@@ -2275,5 +2275,2266 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
             relatedRules: ['「なんにん」vs「なにじん」', '疑問詞{ぎもんし}の使{つか}い分{わ}け']
         },
         sourceItem: { value: 0, kanji: '何人', reading: 'なんにん' }
+    },
+
+    // ===== 擴充題庫 (101-135) =====
+    {
+        id: 'people_ext_01',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「四人」的正確讀音是？',
+        stem_zh: '「四人」的正確讀音是？',
+        options: [
+            { text: 'よにん', isCorrect: true, reason: '正確！「四人」讀作「よにん」。' },
+            { text: 'しにん', isCorrect: false, reason: '陷阱！「死人」諧音，避免使用「しにん」。' },
+            { text: 'よんにん', isCorrect: false, reason: '四人的4讀「よ」，不是「よん」。' },
+            { text: 'よったり', isCorrect: false, reason: '訓讀只用於1人、2人。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四人」讀作「よにん」，4使用「よ」避免「しにん（死人）」諧音。',
+            trapExplanation: '這是人數量詞重要的特殊讀法。',
+            relatedRules: ['四人の讀法', '避諱讀法']
+        },
+        sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
+    },
+    {
+        id: 'people_ext_02',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '家族は＿＿です。',
+        stem_zh: '家裡有五個人。',
+        options: [
+            { text: 'ごにん', isCorrect: true, reason: '正確！「五人」讀作「ごにん」。' },
+            { text: 'いつにん', isCorrect: false, reason: '人數用音讀「ご」。' },
+            { text: 'いつたり', isCorrect: false, reason: '訓讀只用於1人、2人。' },
+            { text: 'ごじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五人」讀作「ごにん」，是一般音讀。',
+            relatedRules: ['人數の讀法', '5人の讀法']
+        },
+        sourceItem: { value: 5, kanji: '五人', reading: 'ごにん' }
+    },
+    {
+        id: 'people_ext_03',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '班上有幾個人？',
+        stem_zh: '班上有幾個人？',
+        dialogue: {
+            speakerA: 'クラスには何人いますか？',
+            speakerB: '＿＿います。（六個人）'
+        },
+        options: [
+            { text: 'ろくにん', isCorrect: true, reason: '正確！「六人」讀作「ろくにん」。' },
+            { text: 'むにん', isCorrect: false, reason: '人數用音讀「ろく」。' },
+            { text: 'むたり', isCorrect: false, reason: '訓讀只用於1人、2人。' },
+            { text: 'ろくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六人」讀作「ろくにん」，是一般音讀。',
+            relatedRules: ['人數の讀法', '6人の讀法']
+        },
+        sourceItem: { value: 6, kanji: '六人', reading: 'ろくにん' }
+    },
+    {
+        id: 'people_ext_04',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「七人」的正確讀音是？',
+        stem_zh: '「七人」的正確讀音是？',
+        options: [
+            { text: 'しちにん / ななにん', isCorrect: true, reason: '正確！「七人」可讀「しちにん」或「ななにん」。' },
+            { text: 'なのにん', isCorrect: false, reason: '這不是正確讀法。' },
+            { text: 'なのか', isCorrect: false, reason: '「なのか」是日期讀法。' },
+            { text: 'ななじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七人」可讀「しちにん」或「ななにん」，兩者皆可。',
+            relatedRules: ['人數の讀法', '7人の讀法']
+        },
+        sourceItem: { value: 7, kanji: '七人', reading: 'しちにん/ななにん' }
+    },
+    {
+        id: 'people_ext_05',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: 'チームは＿＿で構成されています。',
+        stem_zh: '團隊由八個人組成。',
+        options: [
+            { text: 'はちにん', isCorrect: true, reason: '正確！「八人」讀作「はちにん」。' },
+            { text: 'やにん', isCorrect: false, reason: '人數用音讀「はち」。' },
+            { text: 'やったり', isCorrect: false, reason: '訓讀只用於1人、2人。' },
+            { text: 'はちじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「八人」讀作「はちにん」，是一般音讀。',
+            relatedRules: ['人數の讀法', '8人の讀法']
+        },
+        sourceItem: { value: 8, kanji: '八人', reading: 'はちにん' }
+    },
+    {
+        id: 'people_ext_06',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '會議有幾個人參加？',
+        stem_zh: '會議有幾個人參加？',
+        dialogue: {
+            speakerA: '会議には何人参加しましたか？',
+            speakerB: '＿＿参加しました。（九個人）'
+        },
+        options: [
+            { text: 'きゅうにん / くにん', isCorrect: true, reason: '正確！「九人」可讀「きゅうにん」或「くにん」。' },
+            { text: 'ここのにん', isCorrect: false, reason: '人數用音讀。' },
+            { text: 'ここのたり', isCorrect: false, reason: '訓讀只用於1人、2人。' },
+            { text: 'くじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九人」可讀「きゅうにん」或「くにん」，兩者皆可。',
+            relatedRules: ['人數の讀法', '9人の讀法']
+        },
+        sourceItem: { value: 9, kanji: '九人', reading: 'きゅうにん/くにん' }
+    },
+    {
+        id: 'people_ext_07',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十人」的正確讀音是？',
+        stem_zh: '「十人」的正確讀音是？',
+        options: [
+            { text: 'じゅうにん', isCorrect: true, reason: '正確！「十人」讀作「じゅうにん」。' },
+            { text: 'とおにん', isCorrect: false, reason: '人數用音讀「じゅう」。' },
+            { text: 'とたり', isCorrect: false, reason: '訓讀只用於1人、2人。' },
+            { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十人」讀作「じゅうにん」，是一般音讀。',
+            relatedRules: ['人數の讀法', '10人の讀法']
+        },
+        sourceItem: { value: 10, kanji: '十人', reading: 'じゅうにん' }
+    },
+    {
+        id: 'people_ext_08',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: true,
+        stem: '映画館には＿＿がいました。',
+        stem_zh: '電影院有一百個人。',
+        options: [
+            { text: 'ひゃくにん', isCorrect: true, reason: '正確！「百人」讀作「ひゃくにん」。' },
+            { text: 'いっぴゃくにん', isCorrect: false, reason: '「百」直接讀「ひゃく」，不加「いっ」。' },
+            { text: 'ももにん', isCorrect: false, reason: '人數用音讀。' },
+            { text: 'ひゃくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「百人」讀作「ひゃくにん」。',
+            trapExplanation: '「百」讀「ひゃく」，不是「いっぴゃく」。',
+            relatedRules: ['人數の讀法', '100人の讀法']
+        },
+        sourceItem: { value: 100, kanji: '百人', reading: 'ひゃくにん' }
+    },
+    {
+        id: 'people_ext_09',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '學校有多少學生？',
+        stem_zh: '學校有多少學生？',
+        dialogue: {
+            speakerA: '学校には何人の学生がいますか？',
+            speakerB: '＿＿います。（一千人）'
+        },
+        options: [
+            { text: 'せんにん', isCorrect: true, reason: '正確！「千人」讀作「せんにん」。' },
+            { text: 'いっせんにん', isCorrect: false, reason: '「千」直接讀「せん」。' },
+            { text: 'ちにん', isCorrect: false, reason: '「千」讀「せん」。' },
+            { text: 'せんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「千人」讀作「せんにん」。',
+            trapExplanation: '「千」讀「せん」，不是「いっせん」。',
+            relatedRules: ['人數の讀法', '1000人の讀法']
+        },
+        sourceItem: { value: 1000, kanji: '千人', reading: 'せんにん' }
+    },
+    {
+        id: 'people_ext_10',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十一人」的正確讀音是？',
+        stem_zh: '「十一人」的正確讀音是？',
+        options: [
+            { text: 'じゅういちにん', isCorrect: true, reason: '正確！「十一人」讀作「じゅういちにん」。' },
+            { text: 'じゅうひとり', isCorrect: false, reason: '11人以上用音讀。' },
+            { text: 'とおひとり', isCorrect: false, reason: '11人以上用音讀。' },
+            { text: 'じゅういちじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十一人」讀作「じゅういちにん」，11人開始全部用音讀。',
+            relatedRules: ['人數の讀法', '11人の讀法']
+        },
+        sourceItem: { value: 11, kanji: '十一人', reading: 'じゅういちにん' }
+    },
+    {
+        id: 'people_ext_11',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '合唱團有＿＿。',
+        stem_zh: '合唱團有二十個人。',
+        options: [
+            { text: 'にじゅうにん', isCorrect: true, reason: '正確！「二十人」讀作「にじゅうにん」。' },
+            { text: 'ふたじゅうにん', isCorrect: false, reason: '「二十」讀音讀「にじゅう」。' },
+            { text: 'にじゅうふたり', isCorrect: false, reason: '超過2人後用音讀「にん」。' },
+            { text: 'にじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十人」讀作「にじゅうにん」。',
+            relatedRules: ['人數の讀法', '20人の讀法']
+        },
+        sourceItem: { value: 20, kanji: '二十人', reading: 'にじゅうにん' }
+    },
+    {
+        id: 'people_ext_12',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '派對邀請了多少人？',
+        stem_zh: '派對邀請了多少人？',
+        dialogue: {
+            speakerA: 'パーティーには何人招待しましたか？',
+            speakerB: '＿＿招待しました。（十四個人）'
+        },
+        options: [
+            { text: 'じゅうよにん', isCorrect: true, reason: '正確！「十四人」讀作「じゅうよにん」。' },
+            { text: 'じゅうしにん', isCorrect: false, reason: '陷阱！四人的4讀「よ」，避免「しにん」。' },
+            { text: 'じゅうよんにん', isCorrect: false, reason: '人數的4讀「よ」，不是「よん」。' },
+            { text: 'とおよにん', isCorrect: false, reason: '「十」讀「じゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十四人」讀作「じゅうよにん」，保持4的「よ」讀法。',
+            trapExplanation: '任何含4的人數，4都讀「よ」。',
+            relatedRules: ['人數の讀法', '14人の讀法']
+        },
+        sourceItem: { value: 14, kanji: '十四人', reading: 'じゅうよにん' }
+    },
+    {
+        id: 'people_ext_13',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「二十四人」的正確讀音是？',
+        stem_zh: '「二十四人」的正確讀音是？',
+        options: [
+            { text: 'にじゅうよにん', isCorrect: true, reason: '正確！「二十四人」讀作「にじゅうよにん」。' },
+            { text: 'にじゅうしにん', isCorrect: false, reason: '陷阱！4讀「よ」避免「しにん」。' },
+            { text: 'にじゅうよんにん', isCorrect: false, reason: '人數的4讀「よ」。' },
+            { text: 'ふたじゅうよにん', isCorrect: false, reason: '「二十」讀「にじゅう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十四人」讀作「にじゅうよにん」。',
+            trapExplanation: '任何含4的人數，4都讀「よ」。',
+            relatedRules: ['人數の讀法', '24人の讀法']
+        },
+        sourceItem: { value: 24, kanji: '二十四人', reading: 'にじゅうよにん' }
+    },
+    {
+        id: 'people_ext_14',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: 'バスには＿＿乗っています。',
+        stem_zh: '公車上有三十個人。',
+        options: [
+            { text: 'さんじゅうにん', isCorrect: true, reason: '正確！「三十人」讀作「さんじゅうにん」。' },
+            { text: 'みじゅうにん', isCorrect: false, reason: '「三十」讀「さんじゅう」。' },
+            { text: 'さんじゅうたり', isCorrect: false, reason: '超過2人用「にん」。' },
+            { text: 'さんじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十人」讀作「さんじゅうにん」。',
+            relatedRules: ['人數の讀法', '30人の讀法']
+        },
+        sourceItem: { value: 30, kanji: '三十人', reading: 'さんじゅうにん' }
+    },
+    {
+        id: 'people_ext_15',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '公司有多少員工？',
+        stem_zh: '公司有多少員工？',
+        dialogue: {
+            speakerA: '会社には何人の社員がいますか？',
+            speakerB: '＿＿います。（四十四個人）'
+        },
+        options: [
+            { text: 'よんじゅうよにん', isCorrect: true, reason: '正確！「四十四人」讀作「よんじゅうよにん」。' },
+            { text: 'しじゅうしにん', isCorrect: false, reason: '陷阱！4讀「よん」或「よ」避免「し」。' },
+            { text: 'よんじゅうしにん', isCorrect: false, reason: '個位的4也讀「よ」。' },
+            { text: 'しじゅうよにん', isCorrect: false, reason: '十位的4讀「よん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十四人」讀作「よんじゅうよにん」。',
+            trapExplanation: '十位4讀「よん」，個位4讀「よ」。',
+            relatedRules: ['人數の讀法', '44人の讀法']
+        },
+        sourceItem: { value: 44, kanji: '四十四人', reading: 'よんじゅうよにん' }
+    },
+    {
+        id: 'people_ext_16',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「五十人」的正確讀音是？',
+        stem_zh: '「五十人」的正確讀音是？',
+        options: [
+            { text: 'ごじゅうにん', isCorrect: true, reason: '正確！「五十人」讀作「ごじゅうにん」。' },
+            { text: 'いつじゅうにん', isCorrect: false, reason: '「五十」讀「ごじゅう」。' },
+            { text: 'ごじっにん', isCorrect: false, reason: '「五十」不促音化。' },
+            { text: 'ごじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十人」讀作「ごじゅうにん」。',
+            relatedRules: ['人數の讀法', '50人の讀法']
+        },
+        sourceItem: { value: 50, kanji: '五十人', reading: 'ごじゅうにん' }
+    },
+    {
+        id: 'people_ext_17',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '電車には＿＿乗っています。',
+        stem_zh: '電車上有六十個人。',
+        options: [
+            { text: 'ろくじゅうにん', isCorrect: true, reason: '正確！「六十人」讀作「ろくじゅうにん」。' },
+            { text: 'むじゅうにん', isCorrect: false, reason: '「六十」讀「ろくじゅう」。' },
+            { text: 'ろくじっにん', isCorrect: false, reason: '「六十」不促音化。' },
+            { text: 'ろくじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十人」讀作「ろくじゅうにん」。',
+            relatedRules: ['人數の讀法', '60人の讀法']
+        },
+        sourceItem: { value: 60, kanji: '六十人', reading: 'ろくじゅうにん' }
+    },
+    {
+        id: 'people_ext_18',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '這個部門有多少人？',
+        stem_zh: '這個部門有多少人？',
+        dialogue: {
+            speakerA: 'この部署には何人いますか？',
+            speakerB: '＿＿います。（七十人）'
+        },
+        options: [
+            { text: 'しちじゅうにん / ななじゅうにん', isCorrect: true, reason: '正確！「七十人」可讀兩種。' },
+            { text: 'なのじゅうにん', isCorrect: false, reason: '「七十」讀「しちじゅう」或「ななじゅう」。' },
+            { text: 'しちじっにん', isCorrect: false, reason: '「七十」不促音化。' },
+            { text: 'しちじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七十人」可讀「しちじゅうにん」或「ななじゅうにん」。',
+            relatedRules: ['人數の讀法', '70人の讀法']
+        },
+        sourceItem: { value: 70, kanji: '七十人', reading: 'しちじゅうにん/ななじゅうにん' }
+    },
+    {
+        id: 'people_ext_19',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「八十人」的正確讀音是？',
+        stem_zh: '「八十人」的正確讀音是？',
+        options: [
+            { text: 'はちじゅうにん', isCorrect: true, reason: '正確！「八十人」讀作「はちじゅうにん」。' },
+            { text: 'やじゅうにん', isCorrect: false, reason: '「八十」讀「はちじゅう」。' },
+            { text: 'はちじっにん', isCorrect: false, reason: '「八十」不促音化。' },
+            { text: 'はちじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「八十人」讀作「はちじゅうにん」。',
+            relatedRules: ['人數の讀法', '80人の讀法']
+        },
+        sourceItem: { value: 80, kanji: '八十人', reading: 'はちじゅうにん' }
+    },
+    {
+        id: 'people_ext_20',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '飛機上有＿＿。',
+        stem_zh: '飛機上有九十個人。',
+        options: [
+            { text: 'きゅうじゅうにん', isCorrect: true, reason: '正確！「九十人」讀作「きゅうじゅうにん」。' },
+            { text: 'くじゅうにん', isCorrect: false, reason: '「九十」一般讀「きゅうじゅう」。' },
+            { text: 'ここのじゅうにん', isCorrect: false, reason: '「九十」用音讀。' },
+            { text: 'きゅうじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九十人」讀作「きゅうじゅうにん」。',
+            relatedRules: ['人數の讀法', '90人の讀法']
+        },
+        sourceItem: { value: 90, kanji: '九十人', reading: 'きゅうじゅうにん' }
+    },
+    {
+        id: 'people_ext_21',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '餐廳可容納多少人？',
+        stem_zh: '餐廳可容納多少人？',
+        dialogue: {
+            speakerA: 'レストランには何人座れますか？',
+            speakerB: '＿＿座れます。（一百四十個人）'
+        },
+        options: [
+            { text: 'ひゃくよんじゅうにん', isCorrect: true, reason: '正確！「百四十人」讀作「ひゃくよんじゅうにん」。' },
+            { text: 'いっぴゃくしじゅうにん', isCorrect: false, reason: '陷阱！「百」讀「ひゃく」，40讀「よんじゅう」。' },
+            { text: 'ひゃくしじゅうにん', isCorrect: false, reason: '40讀「よんじゅう」避免「し」。' },
+            { text: 'ひゃくよんじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「百四十人」讀作「ひゃくよんじゅうにん」。',
+            trapExplanation: '40讀「よんじゅう」避免「しじゅう」。',
+            relatedRules: ['人數の讀法', '140人の讀法']
+        },
+        sourceItem: { value: 140, kanji: '百四十人', reading: 'ひゃくよんじゅうにん' }
+    },
+    {
+        id: 'people_ext_22',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「三百人」的正確讀音是？',
+        stem_zh: '「三百人」的正確讀音是？',
+        options: [
+            { text: 'さんびゃくにん', isCorrect: true, reason: '正確！「三百人」讀作「さんびゃくにん」。' },
+            { text: 'さんひゃくにん', isCorrect: false, reason: '陷阱！「三百」濁音化為「さんびゃく」。' },
+            { text: 'みひゃくにん', isCorrect: false, reason: '「三百」讀「さんびゃく」。' },
+            { text: 'さんびゃくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三百人」讀作「さんびゃくにん」，「三百」濁音化。',
+            trapExplanation: '3、6、8百的「百」會變化。',
+            relatedRules: ['人數の讀法', '300人の讀法']
+        },
+        sourceItem: { value: 300, kanji: '三百人', reading: 'さんびゃくにん' }
+    },
+    {
+        id: 'people_ext_23',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: true,
+        stem: '演唱會有＿＿。',
+        stem_zh: '演唱會有六百個人。',
+        options: [
+            { text: 'ろっぴゃくにん', isCorrect: true, reason: '正確！「六百人」讀作「ろっぴゃくにん」。' },
+            { text: 'ろくひゃくにん', isCorrect: false, reason: '陷阱！「六百」促音+半濁音化。' },
+            { text: 'むひゃくにん', isCorrect: false, reason: '「六」讀「ろく」。' },
+            { text: 'ろっぴゃくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六百人」讀作「ろっぴゃくにん」，「六百」促音+半濁音化。',
+            trapExplanation: '6百讀「ろっぴゃく」。',
+            relatedRules: ['人數の讀法', '600人の讀法']
+        },
+        sourceItem: { value: 600, kanji: '六百人', reading: 'ろっぴゃくにん' }
+    },
+    {
+        id: 'people_ext_24',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '球場有多少觀眾？',
+        stem_zh: '球場有多少觀眾？',
+        dialogue: {
+            speakerA: 'スタジアムには何人の観客がいますか？',
+            speakerB: '＿＿います。（八百人）'
+        },
+        options: [
+            { text: 'はっぴゃくにん', isCorrect: true, reason: '正確！「八百人」讀作「はっぴゃくにん」。' },
+            { text: 'はちひゃくにん', isCorrect: false, reason: '陷阱！「八百」促音+半濁音化。' },
+            { text: 'やひゃくにん', isCorrect: false, reason: '「八」讀「はち」。' },
+            { text: 'はっぴゃくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「八百人」讀作「はっぴゃくにん」，「八百」促音+半濁音化。',
+            trapExplanation: '8百讀「はっぴゃく」。',
+            relatedRules: ['人數の讀法', '800人の讀法']
+        },
+        sourceItem: { value: 800, kanji: '八百人', reading: 'はっぴゃくにん' }
+    },
+    {
+        id: 'people_ext_25',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「三千人」的正確讀音是？',
+        stem_zh: '「三千人」的正確讀音是？',
+        options: [
+            { text: 'さんぜんにん', isCorrect: true, reason: '正確！「三千人」讀作「さんぜんにん」。' },
+            { text: 'さんせんにん', isCorrect: false, reason: '陷阱！「三千」濁音化為「さんぜん」。' },
+            { text: 'みせんにん', isCorrect: false, reason: '「三千」讀「さんぜん」。' },
+            { text: 'さんぜんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三千人」讀作「さんぜんにん」，「三千」濁音化。',
+            trapExplanation: '3千讀「さんぜん」。',
+            relatedRules: ['人數の讀法', '3000人の讀法']
+        },
+        sourceItem: { value: 3000, kanji: '三千人', reading: 'さんぜんにん' }
+    },
+    {
+        id: 'people_ext_26',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: true,
+        stem: '這個城市有＿＿。',
+        stem_zh: '這個城市有八千個人。',
+        options: [
+            { text: 'はっせんにん', isCorrect: true, reason: '正確！「八千人」讀作「はっせんにん」。' },
+            { text: 'はちせんにん', isCorrect: false, reason: '陷阱！「八千」促音化為「はっせん」。' },
+            { text: 'やせんにん', isCorrect: false, reason: '「八」讀「はち」。' },
+            { text: 'はっせんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「八千人」讀作「はっせんにん」，「八千」促音化。',
+            trapExplanation: '8千讀「はっせん」。',
+            relatedRules: ['人數の讀法', '8000人の讀法']
+        },
+        sourceItem: { value: 8000, kanji: '八千人', reading: 'はっせんにん' }
+    },
+    {
+        id: 'people_ext_27',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '這場活動有多少人參加？',
+        stem_zh: '這場活動有多少人參加？',
+        dialogue: {
+            speakerA: 'このイベントには何人参加しましたか？',
+            speakerB: '＿＿参加しました。（一萬人）'
+        },
+        options: [
+            { text: 'いちまんにん', isCorrect: true, reason: '正確！「一萬人」讀作「いちまんにん」。' },
+            { text: 'いっまんにん', isCorrect: false, reason: '「一萬」讀「いちまん」，不促音化。' },
+            { text: 'ひとまんにん', isCorrect: false, reason: '「一萬」用音讀。' },
+            { text: 'いちまんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「一萬人」讀作「いちまんにん」。',
+            relatedRules: ['人數の讀法', '10000人の讀法']
+        },
+        sourceItem: { value: 10000, kanji: '一万人', reading: 'いちまんにん' }
+    },
+    {
+        id: 'people_ext_28',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「何人（詢問國籍）」的讀音是？',
+        stem_zh: '「何人（詢問國籍）」的讀音是？',
+        options: [
+            { text: 'なにじん', isCorrect: true, reason: '正確！詢問國籍時讀「なにじん」。' },
+            { text: 'なんにん', isCorrect: false, reason: '「なんにん」是問人數。' },
+            { text: 'なにか', isCorrect: false, reason: '這是「什麼」的讀法。' },
+            { text: 'どのにん', isCorrect: false, reason: '這不是正確疑問詞。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「何人」讀「なにじん」時是問國籍，讀「なんにん」時是問人數。',
+            relatedRules: ['なんにん vs なにじん', '疑問詞の使い分け']
+        },
+        sourceItem: { value: 0, kanji: '何人（國籍）', reading: 'なにじん' }
+    },
+    {
+        id: 'people_ext_29',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：1人和2人使用什麼讀法？',
+        stem_zh: '總復習：1人和2人使用什麼讀法？',
+        options: [
+            { text: '訓讀（ひとり、ふたり）', isCorrect: true, reason: '正確！1人、2人固定使用訓讀。' },
+            { text: '音讀（いちにん、ににん）', isCorrect: false, reason: '1人、2人不用音讀。' },
+            { text: '兩者皆可', isCorrect: false, reason: '1人、2人固定用訓讀。' },
+            { text: '沒有固定規則', isCorrect: false, reason: '有明確規則。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '1人（ひとり）、2人（ふたり）固定使用訓讀系統。',
+            relatedRules: ['人數の訓讀規則', '1人、2人の特殊讀法']
+        },
+        sourceItem: { value: 'review_kun', kanji: '訓讀', reading: 'ひとり、ふたり' }
+    },
+    {
+        id: 'people_ext_30',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '總復習：4人為什麼讀「よにん」？',
+        stem_zh: '總復習：4人為什麼讀「よにん」？',
+        dialogue: {
+            speakerA: '「四人」はなぜ「よにん」と読みますか？',
+            speakerB: '＿＿からです。'
+        },
+        options: [
+            { text: '避免「しにん（死人）」諧音', isCorrect: true, reason: '正確！避免不吉利的諧音。' },
+            { text: '訓讀系統', isCorrect: false, reason: '4人用音讀，只是4讀「よ」。' },
+            { text: '沒有特別原因', isCorrect: false, reason: '有避諱的原因。' },
+            { text: '發音容易', isCorrect: false, reason: '主要是避諱原因。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '4人讀「よにん」避免「しにん」與「死人」諧音。',
+            relatedRules: ['四人の讀法', '避諱讀法']
+        },
+        sourceItem: { value: 'review_4', kanji: '四人', reading: 'よにん' }
+    },
+    {
+        id: 'people_ext_31',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '總復習：「〜人」用於人數時讀什麼？',
+        stem_zh: '總復習：「〜人」用於人數時讀什麼？',
+        options: [
+            { text: 'にん（3人以上）', isCorrect: true, reason: '正確！3人開始用「にん」。' },
+            { text: 'じん', isCorrect: false, reason: '「じん」用於國籍等。' },
+            { text: 'り', isCorrect: false, reason: '只有1人、2人用訓讀「り」。' },
+            { text: '沒有固定讀法', isCorrect: false, reason: '有明確規則。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '3人以上的「人」讀「にん」，1人2人讀「り」（ひとり、ふたり）。',
+            relatedRules: ['人數の讀法規則', '〜人の讀み分け']
+        },
+        sourceItem: { value: 'review_nin', kanji: '〜人', reading: 'にん' }
+    },
+    {
+        id: 'people_ext_32',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：「〜人」用於國籍時讀什麼？',
+        stem_zh: '總復習：「〜人」用於國籍時讀什麼？',
+        options: [
+            { text: 'じん（日本人、台湾人等）', isCorrect: true, reason: '正確！國籍用「じん」。' },
+            { text: 'にん', isCorrect: false, reason: '「にん」用於人數。' },
+            { text: 'り', isCorrect: false, reason: '訓讀只用於1人、2人。' },
+            { text: '沒有固定讀法', isCorrect: false, reason: '有明確規則。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '國籍的「人」讀「じん」：日本人（にほんじん）、台湾人（たいわんじん）等。',
+            relatedRules: ['〜人の讀み分け', '國籍の表現']
+        },
+        sourceItem: { value: 'review_jin', kanji: '〜人（國籍）', reading: 'じん' }
+    },
+    {
+        id: 'people_ext_33',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '總復習：7人有幾種讀法？',
+        stem_zh: '總復習：7人有幾種讀法？',
+        dialogue: {
+            speakerA: '「七人」は何通りの読み方がありますか？',
+            speakerB: '＿＿あります。'
+        },
+        options: [
+            { text: '兩種（しちにん、ななにん）', isCorrect: true, reason: '正確！7人可讀兩種。' },
+            { text: '只有一種', isCorrect: false, reason: '7人有兩種讀法。' },
+            { text: '三種', isCorrect: false, reason: '主要是兩種。' },
+            { text: '沒有固定讀法', isCorrect: false, reason: '有明確的兩種讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '7人可讀「しちにん」或「ななにん」，兩者皆可。',
+            relatedRules: ['七人の讀法', '7の讀み方']
+        },
+        sourceItem: { value: 'review_7', kanji: '七人', reading: 'しちにん/ななにん' }
+    },
+    {
+        id: 'people_ext_34',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '總復習：9人有幾種讀法？',
+        stem_zh: '總復習：9人有幾種讀法？',
+        options: [
+            { text: '兩種（きゅうにん、くにん）', isCorrect: true, reason: '正確！9人可讀兩種。' },
+            { text: '只有一種', isCorrect: false, reason: '9人有兩種讀法。' },
+            { text: '三種', isCorrect: false, reason: '主要是兩種。' },
+            { text: '沒有固定讀法', isCorrect: false, reason: '有明確的兩種讀法。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '9人可讀「きゅうにん」或「くにん」，兩者皆可。',
+            relatedRules: ['九人の讀法', '9の讀み方']
+        },
+        sourceItem: { value: 'review_9', kanji: '九人', reading: 'きゅうにん/くにん' }
+    },
+    {
+        id: 'people_ext_35',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：從幾人開始使用音讀「にん」？',
+        stem_zh: '總復習：從幾人開始使用音讀「にん」？',
+        options: [
+            { text: '3人（さんにん）', isCorrect: true, reason: '正確！3人開始用音讀。' },
+            { text: '1人', isCorrect: false, reason: '1人用訓讀「ひとり」。' },
+            { text: '4人', isCorrect: false, reason: '3人開始就用音讀。' },
+            { text: '10人', isCorrect: false, reason: '3人開始就用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '1人（ひとり）、2人（ふたり）用訓讀，3人（さんにん）開始用音讀。',
+            relatedRules: ['人數の讀法規則', '訓讀→音讀の切り替え']
+        },
+        sourceItem: { value: 'review_start', kanji: '三人', reading: 'さんにん' }
+    },
+
+    // ===== 擴充題庫 (136-170) =====
+    {
+        id: 'people_ext_36',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '婚禮有多少賓客？',
+        stem_zh: '婚禮有多少賓客？',
+        dialogue: {
+            speakerA: '結婚式には何人のゲストが来ましたか？',
+            speakerB: '＿＿来ました。（二百四十個人）'
+        },
+        options: [
+            { text: 'にひゃくよんじゅうにん', isCorrect: true, reason: '正確！「二百四十人」讀作「にひゃくよんじゅうにん」。' },
+            { text: 'ふたひゃくしじゅうにん', isCorrect: false, reason: '陷阱！「二百」讀「にひゃく」，40讀「よんじゅう」。' },
+            { text: 'にひゃくしじゅうにん', isCorrect: false, reason: '40讀「よんじゅう」避免「し」。' },
+            { text: 'にひゃくよんじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二百四十人」讀作「にひゃくよんじゅうにん」。',
+            trapExplanation: '40讀「よんじゅう」避免「しじゅう」。',
+            relatedRules: ['人數の讀法', '240人の讀法']
+        },
+        sourceItem: { value: 240, kanji: '二百四十人', reading: 'にひゃくよんじゅうにん' }
+    },
+    {
+        id: 'people_ext_37',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十二人」的正確讀音是？',
+        stem_zh: '「十二人」的正確讀音是？',
+        options: [
+            { text: 'じゅうににん', isCorrect: true, reason: '正確！「十二人」讀作「じゅうににん」。' },
+            { text: 'じゅうふたり', isCorrect: false, reason: '12人用音讀。' },
+            { text: 'とおふたり', isCorrect: false, reason: '12人用音讀。' },
+            { text: 'じゅうにじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十二人」讀作「じゅうににん」。',
+            relatedRules: ['人數の讀法', '12人の讀法']
+        },
+        sourceItem: { value: 12, kanji: '十二人', reading: 'じゅうににん' }
+    },
+    {
+        id: 'people_ext_38',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '這個課程有＿＿報名。',
+        stem_zh: '這個課程有十三個人報名。',
+        options: [
+            { text: 'じゅうさんにん', isCorrect: true, reason: '正確！「十三人」讀作「じゅうさんにん」。' },
+            { text: 'じゅうみにん', isCorrect: false, reason: '「三」讀「さん」。' },
+            { text: 'とおさんにん', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうさんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十三人」讀作「じゅうさんにん」。',
+            relatedRules: ['人數の讀法', '13人の讀法']
+        },
+        sourceItem: { value: 13, kanji: '十三人', reading: 'じゅうさんにん' }
+    },
+    {
+        id: 'people_ext_39',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '籃球隊有多少人？',
+        stem_zh: '籃球隊有多少人？',
+        dialogue: {
+            speakerA: 'バスケットボールチームには何人いますか？',
+            speakerB: '＿＿います。（十五個人）'
+        },
+        options: [
+            { text: 'じゅうごにん', isCorrect: true, reason: '正確！「十五人」讀作「じゅうごにん」。' },
+            { text: 'じゅういつにん', isCorrect: false, reason: '「五」讀「ご」。' },
+            { text: 'とおごにん', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうごじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十五人」讀作「じゅうごにん」。',
+            relatedRules: ['人數の讀法', '15人の讀法']
+        },
+        sourceItem: { value: 15, kanji: '十五人', reading: 'じゅうごにん' }
+    },
+    {
+        id: 'people_ext_40',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十六人」的正確讀音是？',
+        stem_zh: '「十六人」的正確讀音是？',
+        options: [
+            { text: 'じゅうろくにん', isCorrect: true, reason: '正確！「十六人」讀作「じゅうろくにん」。' },
+            { text: 'じゅうむにん', isCorrect: false, reason: '「六」讀「ろく」。' },
+            { text: 'とおろくにん', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうろくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十六人」讀作「じゅうろくにん」。',
+            relatedRules: ['人數の讀法', '16人の讀法']
+        },
+        sourceItem: { value: 16, kanji: '十六人', reading: 'じゅうろくにん' }
+    },
+    {
+        id: 'people_ext_41',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '這個社團有＿＿。',
+        stem_zh: '這個社團有十七個人。',
+        options: [
+            { text: 'じゅうしちにん / じゅうななにん', isCorrect: true, reason: '正確！「十七人」可讀兩種。' },
+            { text: 'じゅうなのにん', isCorrect: false, reason: '「七」讀「しち」或「なな」。' },
+            { text: 'とおしちにん', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうしちじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十七人」可讀「じゅうしちにん」或「じゅうななにん」。',
+            relatedRules: ['人數の讀法', '17人の讀法']
+        },
+        sourceItem: { value: 17, kanji: '十七人', reading: 'じゅうしちにん/じゅうななにん' }
+    },
+    {
+        id: 'people_ext_42',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '研究團隊有多少人？',
+        stem_zh: '研究團隊有多少人？',
+        dialogue: {
+            speakerA: '研究チームには何人いますか？',
+            speakerB: '＿＿います。（十八個人）'
+        },
+        options: [
+            { text: 'じゅうはちにん', isCorrect: true, reason: '正確！「十八人」讀作「じゅうはちにん」。' },
+            { text: 'じゅうやにん', isCorrect: false, reason: '「八」讀「はち」。' },
+            { text: 'とおはちにん', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうはちじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十八人」讀作「じゅうはちにん」。',
+            relatedRules: ['人數の讀法', '18人の讀法']
+        },
+        sourceItem: { value: 18, kanji: '十八人', reading: 'じゅうはちにん' }
+    },
+    {
+        id: 'people_ext_43',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十九人」的正確讀音是？',
+        stem_zh: '「十九人」的正確讀音是？',
+        options: [
+            { text: 'じゅうきゅうにん / じゅうくにん', isCorrect: true, reason: '正確！「十九人」可讀兩種。' },
+            { text: 'じゅうここのにん', isCorrect: false, reason: '「九」讀「きゅう」或「く」。' },
+            { text: 'とおきゅうにん', isCorrect: false, reason: '「十」讀「じゅう」。' },
+            { text: 'じゅうきゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十九人」可讀「じゅうきゅうにん」或「じゅうくにん」。',
+            relatedRules: ['人數の讀法', '19人の讀法']
+        },
+        sourceItem: { value: 19, kanji: '十九人', reading: 'じゅうきゅうにん/じゅうくにん' }
+    },
+    {
+        id: 'people_ext_44',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '講座有＿＿參加。',
+        stem_zh: '講座有二十五個人參加。',
+        options: [
+            { text: 'にじゅうごにん', isCorrect: true, reason: '正確！「二十五人」讀作「にじゅうごにん」。' },
+            { text: 'ふたじゅうごにん', isCorrect: false, reason: '「二十」讀「にじゅう」。' },
+            { text: 'にじゅういつにん', isCorrect: false, reason: '「五」讀「ご」。' },
+            { text: 'にじゅうごじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十五人」讀作「にじゅうごにん」。',
+            relatedRules: ['人數の讀法', '25人の讀法']
+        },
+        sourceItem: { value: 25, kanji: '二十五人', reading: 'にじゅうごにん' }
+    },
+    {
+        id: 'people_ext_45',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '班上出席多少人？',
+        stem_zh: '班上出席多少人？',
+        dialogue: {
+            speakerA: 'クラスには何人出席しましたか？',
+            speakerB: '＿＿出席しました。（三十四個人）'
+        },
+        options: [
+            { text: 'さんじゅうよにん', isCorrect: true, reason: '正確！「三十四人」讀作「さんじゅうよにん」。' },
+            { text: 'さんじゅうしにん', isCorrect: false, reason: '陷阱！4讀「よ」避免「し」。' },
+            { text: 'みじゅうよにん', isCorrect: false, reason: '「三十」讀「さんじゅう」。' },
+            { text: 'さんじゅうよんにん', isCorrect: false, reason: '人數的4讀「よ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十四人」讀作「さんじゅうよにん」。',
+            trapExplanation: '個位4讀「よ」。',
+            relatedRules: ['人數の讀法', '34人の讀法']
+        },
+        sourceItem: { value: 34, kanji: '三十四人', reading: 'さんじゅうよにん' }
+    },
+    {
+        id: 'people_ext_46',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「三十六人」的正確讀音是？',
+        stem_zh: '「三十六人」的正確讀音是？',
+        options: [
+            { text: 'さんじゅうろくにん', isCorrect: true, reason: '正確！「三十六人」讀作「さんじゅうろくにん」。' },
+            { text: 'みじゅうろくにん', isCorrect: false, reason: '「三十」讀「さんじゅう」。' },
+            { text: 'さんじゅうむにん', isCorrect: false, reason: '「六」讀「ろく」。' },
+            { text: 'さんじゅうろくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三十六人」讀作「さんじゅうろくにん」。',
+            relatedRules: ['人數の讀法', '36人の讀法']
+        },
+        sourceItem: { value: 36, kanji: '三十六人', reading: 'さんじゅうろくにん' }
+    },
+    {
+        id: 'people_ext_47',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '電影院有＿＿在看電影。',
+        stem_zh: '電影院有四十二個人在看電影。',
+        options: [
+            { text: 'よんじゅうににん', isCorrect: true, reason: '正確！「四十二人」讀作「よんじゅうににん」。' },
+            { text: 'しじゅうににん', isCorrect: false, reason: '「四十」讀「よんじゅう」。' },
+            { text: 'よんじゅうふたり', isCorrect: false, reason: '超過2人用「にん」。' },
+            { text: 'よんじゅうにじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十二人」讀作「よんじゅうににん」。',
+            relatedRules: ['人數の讀法', '42人の讀法']
+        },
+        sourceItem: { value: 42, kanji: '四十二人', reading: 'よんじゅうににん' }
+    },
+    {
+        id: 'people_ext_48',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '圖書館有多少人？',
+        stem_zh: '圖書館有多少人？',
+        dialogue: {
+            speakerA: '図書館には何人いますか？',
+            speakerB: '＿＿います。（四十五個人）'
+        },
+        options: [
+            { text: 'よんじゅうごにん', isCorrect: true, reason: '正確！「四十五人」讀作「よんじゅうごにん」。' },
+            { text: 'しじゅうごにん', isCorrect: false, reason: '「四十」讀「よんじゅう」。' },
+            { text: 'よんじゅういつにん', isCorrect: false, reason: '「五」讀「ご」。' },
+            { text: 'よんじゅうごじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四十五人」讀作「よんじゅうごにん」。',
+            relatedRules: ['人數の讀法', '45人の讀法']
+        },
+        sourceItem: { value: 45, kanji: '四十五人', reading: 'よんじゅうごにん' }
+    },
+    {
+        id: 'people_ext_49',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「五十二人」的正確讀音是？',
+        stem_zh: '「五十二人」的正確讀音是？',
+        options: [
+            { text: 'ごじゅうににん', isCorrect: true, reason: '正確！「五十二人」讀作「ごじゅうににん」。' },
+            { text: 'いつじゅうににん', isCorrect: false, reason: '「五十」讀「ごじゅう」。' },
+            { text: 'ごじゅうふたり', isCorrect: false, reason: '超過2人用「にん」。' },
+            { text: 'ごじゅうにじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十二人」讀作「ごじゅうににん」。',
+            relatedRules: ['人數の讀法', '52人の讀法']
+        },
+        sourceItem: { value: 52, kanji: '五十二人', reading: 'ごじゅうににん' }
+    },
+    {
+        id: 'people_ext_50',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: true,
+        stem: '公園有＿＿在運動。',
+        stem_zh: '公園有五十四個人在運動。',
+        options: [
+            { text: 'ごじゅうよにん', isCorrect: true, reason: '正確！「五十四人」讀作「ごじゅうよにん」。' },
+            { text: 'ごじゅうしにん', isCorrect: false, reason: '陷阱！4讀「よ」避免「し」。' },
+            { text: 'いつじゅうよにん', isCorrect: false, reason: '「五十」讀「ごじゅう」。' },
+            { text: 'ごじゅうよんにん', isCorrect: false, reason: '人數的4讀「よ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十四人」讀作「ごじゅうよにん」。',
+            trapExplanation: '個位4讀「よ」。',
+            relatedRules: ['人數の讀法', '54人の讀法']
+        },
+        sourceItem: { value: 54, kanji: '五十四人', reading: 'ごじゅうよにん' }
+    },
+    {
+        id: 'people_ext_51',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '游泳池有多少人？',
+        stem_zh: '游泳池有多少人？',
+        dialogue: {
+            speakerA: 'プールには何人いますか？',
+            speakerB: '＿＿います。（五十七個人）'
+        },
+        options: [
+            { text: 'ごじゅうしちにん / ごじゅうななにん', isCorrect: true, reason: '正確！「五十七人」可讀兩種。' },
+            { text: 'ごじゅうなのにん', isCorrect: false, reason: '「七」讀「しち」或「なな」。' },
+            { text: 'いつじゅうしちにん', isCorrect: false, reason: '「五十」讀「ごじゅう」。' },
+            { text: 'ごじゅうしちじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十七人」可讀「ごじゅうしちにん」或「ごじゅうななにん」。',
+            relatedRules: ['人數の讀法', '57人の讀法']
+        },
+        sourceItem: { value: 57, kanji: '五十七人', reading: 'ごじゅうしちにん/ごじゅうななにん' }
+    },
+    {
+        id: 'people_ext_52',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「五十九人」的正確讀音是？',
+        stem_zh: '「五十九人」的正確讀音是？',
+        options: [
+            { text: 'ごじゅうきゅうにん / ごじゅうくにん', isCorrect: true, reason: '正確！「五十九人」可讀兩種。' },
+            { text: 'ごじゅうここのにん', isCorrect: false, reason: '「九」讀「きゅう」或「く」。' },
+            { text: 'いつじゅうきゅうにん', isCorrect: false, reason: '「五十」讀「ごじゅう」。' },
+            { text: 'ごじゅうきゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五十九人」可讀「ごじゅうきゅうにん」或「ごじゅうくにん」。',
+            relatedRules: ['人數の讀法', '59人の讀法']
+        },
+        sourceItem: { value: 59, kanji: '五十九人', reading: 'ごじゅうきゅうにん/ごじゅうくにん' }
+    },
+    {
+        id: 'people_ext_53',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: true,
+        stem: '畢業典禮有＿＿參加。',
+        stem_zh: '畢業典禮有六十四個人參加。',
+        options: [
+            { text: 'ろくじゅうよにん', isCorrect: true, reason: '正確！「六十四人」讀作「ろくじゅうよにん」。' },
+            { text: 'ろくじゅうしにん', isCorrect: false, reason: '陷阱！4讀「よ」避免「し」。' },
+            { text: 'むじゅうよにん', isCorrect: false, reason: '「六十」讀「ろくじゅう」。' },
+            { text: 'ろくじゅうよんにん', isCorrect: false, reason: '人數的4讀「よ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六十四人」讀作「ろくじゅうよにん」。',
+            trapExplanation: '個位4讀「よ」。',
+            relatedRules: ['人數の讀法', '64人の讀法']
+        },
+        sourceItem: { value: 64, kanji: '六十四人', reading: 'ろくじゅうよにん' }
+    },
+    {
+        id: 'people_ext_54',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '派對最後有多少人留下？',
+        stem_zh: '派對最後有多少人留下？',
+        dialogue: {
+            speakerA: 'パーティーの最後には何人残りましたか？',
+            speakerB: '＿＿残りました。（二十三個人）'
+        },
+        options: [
+            { text: 'にじゅうさんにん', isCorrect: true, reason: '正確！「二十三人」讀作「にじゅうさんにん」。' },
+            { text: 'ふたじゅうさんにん', isCorrect: false, reason: '「二十」讀「にじゅう」。' },
+            { text: 'にじゅうみにん', isCorrect: false, reason: '「三」讀「さん」。' },
+            { text: 'にじゅうさんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十三人」讀作「にじゅうさんにん」。',
+            relatedRules: ['人數の讀法', '23人の讀法']
+        },
+        sourceItem: { value: 23, kanji: '二十三人', reading: 'にじゅうさんにん' }
+    },
+    {
+        id: 'people_ext_55',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「二十六人」的正確讀音是？',
+        stem_zh: '「二十六人」的正確讀音是？',
+        options: [
+            { text: 'にじゅうろくにん', isCorrect: true, reason: '正確！「二十六人」讀作「にじゅうろくにん」。' },
+            { text: 'ふたじゅうろくにん', isCorrect: false, reason: '「二十」讀「にじゅう」。' },
+            { text: 'にじゅうむにん', isCorrect: false, reason: '「六」讀「ろく」。' },
+            { text: 'にじゅうろくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十六人」讀作「にじゅうろくにん」。',
+            relatedRules: ['人數の讀法', '26人の讀法']
+        },
+        sourceItem: { value: 26, kanji: '二十六人', reading: 'にじゅうろくにん' }
+    },
+    {
+        id: 'people_ext_56',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '這場比賽有＿＿參賽。',
+        stem_zh: '這場比賽有二十八個人參賽。',
+        options: [
+            { text: 'にじゅうはちにん', isCorrect: true, reason: '正確！「二十八人」讀作「にじゅうはちにん」。' },
+            { text: 'ふたじゅうはちにん', isCorrect: false, reason: '「二十」讀「にじゅう」。' },
+            { text: 'にじゅうやにん', isCorrect: false, reason: '「八」讀「はち」。' },
+            { text: 'にじゅうはちじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二十八人」讀作「にじゅうはちにん」。',
+            relatedRules: ['人數の讀法', '28人の讀法']
+        },
+        sourceItem: { value: 28, kanji: '二十八人', reading: 'にじゅうはちにん' }
+    },
+    {
+        id: 'people_ext_57',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '這個社區有多少人？',
+        stem_zh: '這個社區有多少人？',
+        dialogue: {
+            speakerA: 'このコミュニティには何人いますか？',
+            speakerB: '＿＿います。（九十九個人）'
+        },
+        options: [
+            { text: 'きゅうじゅうきゅうにん', isCorrect: true, reason: '正確！「九十九人」讀作「きゅうじゅうきゅうにん」。' },
+            { text: 'くじゅうくにん', isCorrect: false, reason: '「九十」一般讀「きゅうじゅう」。' },
+            { text: 'ここのじゅうここのにん', isCorrect: false, reason: '「九十九」用音讀。' },
+            { text: 'きゅうじゅうきゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九十九人」讀作「きゅうじゅうきゅうにん」。',
+            relatedRules: ['人數の讀法', '99人の讀法']
+        },
+        sourceItem: { value: 99, kanji: '九十九人', reading: 'きゅうじゅうきゅうにん' }
+    },
+    {
+        id: 'people_ext_58',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「百四人」的正確讀音是？',
+        stem_zh: '「百四人」的正確讀音是？',
+        options: [
+            { text: 'ひゃくよにん', isCorrect: true, reason: '正確！「百四人」讀作「ひゃくよにん」。' },
+            { text: 'ひゃくしにん', isCorrect: false, reason: '陷阱！4讀「よ」避免「し」。' },
+            { text: 'いっぴゃくよにん', isCorrect: false, reason: '「百」讀「ひゃく」。' },
+            { text: 'ひゃくよんにん', isCorrect: false, reason: '人數的4讀「よ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「百四人」讀作「ひゃくよにん」。',
+            trapExplanation: '個位4讀「よ」。',
+            relatedRules: ['人數の讀法', '104人の讀法']
+        },
+        sourceItem: { value: 104, kanji: '百四人', reading: 'ひゃくよにん' }
+    },
+    {
+        id: 'people_ext_59',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '這個會議有＿＿出席。',
+        stem_zh: '這個會議有一百二十個人出席。',
+        options: [
+            { text: 'ひゃくにじゅうにん', isCorrect: true, reason: '正確！「百二十人」讀作「ひゃくにじゅうにん」。' },
+            { text: 'いっぴゃくにじゅうにん', isCorrect: false, reason: '「百」讀「ひゃく」。' },
+            { text: 'ひゃくふたじゅうにん', isCorrect: false, reason: '「二十」讀「にじゅう」。' },
+            { text: 'ひゃくにじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「百二十人」讀作「ひゃくにじゅうにん」。',
+            relatedRules: ['人數の讀法', '120人の讀法']
+        },
+        sourceItem: { value: 120, kanji: '百二十人', reading: 'ひゃくにじゅうにん' }
+    },
+    {
+        id: 'people_ext_60',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '這場音樂會有多少人？',
+        stem_zh: '這場音樂會有多少人？',
+        dialogue: {
+            speakerA: 'コンサートには何人来ましたか？',
+            speakerB: '＿＿来ました。（一百五十個人）'
+        },
+        options: [
+            { text: 'ひゃくごじゅうにん', isCorrect: true, reason: '正確！「百五十人」讀作「ひゃくごじゅうにん」。' },
+            { text: 'いっぴゃくごじゅうにん', isCorrect: false, reason: '「百」讀「ひゃく」。' },
+            { text: 'ひゃくいつじゅうにん', isCorrect: false, reason: '「五十」讀「ごじゅう」。' },
+            { text: 'ひゃくごじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「百五十人」讀作「ひゃくごじゅうにん」。',
+            relatedRules: ['人數の讀法', '150人の讀法']
+        },
+        sourceItem: { value: 150, kanji: '百五十人', reading: 'ひゃくごじゅうにん' }
+    },
+    {
+        id: 'people_ext_61',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '「二百人」的正確讀音是？',
+        stem_zh: '「二百人」的正確讀音是？',
+        options: [
+            { text: 'にひゃくにん', isCorrect: true, reason: '正確！「二百人」讀作「にひゃくにん」。' },
+            { text: 'ふたひゃくにん', isCorrect: false, reason: '「二百」讀「にひゃく」。' },
+            { text: 'にびゃくにん', isCorrect: false, reason: '「二百」不濁音化。' },
+            { text: 'にひゃくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二百人」讀作「にひゃくにん」。',
+            trapExplanation: '「二百」讀「にひゃく」，不濁音化。',
+            relatedRules: ['人數の讀法', '200人の讀法']
+        },
+        sourceItem: { value: 200, kanji: '二百人', reading: 'にひゃくにん' }
+    },
+    {
+        id: 'people_ext_62',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '這所大學有＿＿學生。',
+        stem_zh: '這所大學有五百個學生。',
+        options: [
+            { text: 'ごひゃくにん', isCorrect: true, reason: '正確！「五百人」讀作「ごひゃくにん」。' },
+            { text: 'いつひゃくにん', isCorrect: false, reason: '「五百」讀「ごひゃく」。' },
+            { text: 'ごびゃくにん', isCorrect: false, reason: '「五百」不濁音化。' },
+            { text: 'ごひゃくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五百人」讀作「ごひゃくにん」。',
+            relatedRules: ['人數の讀法', '500人の讀法']
+        },
+        sourceItem: { value: 500, kanji: '五百人', reading: 'ごひゃくにん' }
+    },
+    {
+        id: 'people_ext_63',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '這個城鎮有多少人？',
+        stem_zh: '這個城鎮有多少人？',
+        dialogue: {
+            speakerA: 'この町には何人住んでいますか？',
+            speakerB: '＿＿住んでいます。（七百個人）'
+        },
+        options: [
+            { text: 'ななひゃくにん', isCorrect: true, reason: '正確！「七百人」讀作「ななひゃくにん」。' },
+            { text: 'しちひゃくにん', isCorrect: false, reason: '「七百」讀「ななひゃく」較常見。' },
+            { text: 'なのひゃくにん', isCorrect: false, reason: '「七」讀「なな」或「しち」。' },
+            { text: 'ななひゃくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七百人」讀作「ななひゃくにん」。',
+            relatedRules: ['人數の讀法', '700人の讀法']
+        },
+        sourceItem: { value: 700, kanji: '七百人', reading: 'ななひゃくにん' }
+    },
+    {
+        id: 'people_ext_64',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「九百人」的正確讀音是？',
+        stem_zh: '「九百人」的正確讀音是？',
+        options: [
+            { text: 'きゅうひゃくにん', isCorrect: true, reason: '正確！「九百人」讀作「きゅうひゃくにん」。' },
+            { text: 'くひゃくにん', isCorrect: false, reason: '「九百」讀「きゅうひゃく」較常見。' },
+            { text: 'ここのひゃくにん', isCorrect: false, reason: '「九百」用音讀。' },
+            { text: 'きゅうひゃくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九百人」讀作「きゅうひゃくにん」。',
+            relatedRules: ['人數の讀法', '900人の讀法']
+        },
+        sourceItem: { value: 900, kanji: '九百人', reading: 'きゅうひゃくにん' }
+    },
+    {
+        id: 'people_ext_65',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '這個工廠有＿＿員工。',
+        stem_zh: '這個工廠有兩千個員工。',
+        options: [
+            { text: 'にせんにん', isCorrect: true, reason: '正確！「二千人」讀作「にせんにん」。' },
+            { text: 'ふたせんにん', isCorrect: false, reason: '「二千」讀「にせん」。' },
+            { text: 'にぜんにん', isCorrect: false, reason: '「二千」不濁音化。' },
+            { text: 'にせんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二千人」讀作「にせんにん」。',
+            relatedRules: ['人數の讀法', '2000人の讀法']
+        },
+        sourceItem: { value: 2000, kanji: '二千人', reading: 'にせんにん' }
+    },
+
+    // ===== 擴充題庫 (171-200) =====
+    {
+        id: 'people_ext_66',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '這個村莊有多少人？',
+        stem_zh: '這個村莊有多少人？',
+        dialogue: {
+            speakerA: 'この村には何人住んでいますか？',
+            speakerB: '＿＿住んでいます。（四千個人）'
+        },
+        options: [
+            { text: 'よんせんにん', isCorrect: true, reason: '正確！「四千人」讀作「よんせんにん」。' },
+            { text: 'しせんにん', isCorrect: false, reason: '「四千」讀「よんせん」。' },
+            { text: 'よせんにん', isCorrect: false, reason: '「四千」讀「よんせん」。' },
+            { text: 'よんせんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四千人」讀作「よんせんにん」。',
+            relatedRules: ['人數の讀法', '4000人の讀法']
+        },
+        sourceItem: { value: 4000, kanji: '四千人', reading: 'よんせんにん' }
+    },
+    {
+        id: 'people_ext_67',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「五千人」的正確讀音是？',
+        stem_zh: '「五千人」的正確讀音是？',
+        options: [
+            { text: 'ごせんにん', isCorrect: true, reason: '正確！「五千人」讀作「ごせんにん」。' },
+            { text: 'いつせんにん', isCorrect: false, reason: '「五千」讀「ごせん」。' },
+            { text: 'ごぜんにん', isCorrect: false, reason: '「五千」不濁音化。' },
+            { text: 'ごせんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五千人」讀作「ごせんにん」。',
+            relatedRules: ['人數の讀法', '5000人の讀法']
+        },
+        sourceItem: { value: 5000, kanji: '五千人', reading: 'ごせんにん' }
+    },
+    {
+        id: 'people_ext_68',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '這個活動有＿＿報名。',
+        stem_zh: '這個活動有六千個人報名。',
+        options: [
+            { text: 'ろくせんにん', isCorrect: true, reason: '正確！「六千人」讀作「ろくせんにん」。' },
+            { text: 'むせんにん', isCorrect: false, reason: '「六千」讀「ろくせん」。' },
+            { text: 'ろくぜんにん', isCorrect: false, reason: '「六千」不濁音化。' },
+            { text: 'ろくせんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六千人」讀作「ろくせんにん」。',
+            relatedRules: ['人數の讀法', '6000人の讀法']
+        },
+        sourceItem: { value: 6000, kanji: '六千人', reading: 'ろくせんにん' }
+    },
+    {
+        id: 'people_ext_69',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '這個節目有多少觀眾？',
+        stem_zh: '這個節目有多少觀眾？',
+        dialogue: {
+            speakerA: 'この番組には何人の視聴者がいますか？',
+            speakerB: '＿＿います。（七千個人）'
+        },
+        options: [
+            { text: 'ななせんにん', isCorrect: true, reason: '正確！「七千人」讀作「ななせんにん」。' },
+            { text: 'しちせんにん', isCorrect: false, reason: '「七千」讀「ななせん」較常見。' },
+            { text: 'なのせんにん', isCorrect: false, reason: '「七」讀「なな」或「しち」。' },
+            { text: 'ななせんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「七千人」讀作「ななせんにん」。',
+            relatedRules: ['人數の讀法', '7000人の讀法']
+        },
+        sourceItem: { value: 7000, kanji: '七千人', reading: 'ななせんにん' }
+    },
+    {
+        id: 'people_ext_70',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「九千人」的正確讀音是？',
+        stem_zh: '「九千人」的正確讀音是？',
+        options: [
+            { text: 'きゅうせんにん', isCorrect: true, reason: '正確！「九千人」讀作「きゅうせんにん」。' },
+            { text: 'くせんにん', isCorrect: false, reason: '「九千」讀「きゅうせん」較常見。' },
+            { text: 'ここのせんにん', isCorrect: false, reason: '「九千」用音讀。' },
+            { text: 'きゅうせんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「九千人」讀作「きゅうせんにん」。',
+            relatedRules: ['人數の讀法', '9000人の讀法']
+        },
+        sourceItem: { value: 9000, kanji: '九千人', reading: 'きゅうせんにん' }
+    },
+    {
+        id: 'people_ext_71',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '這場馬拉松有＿＿參加。',
+        stem_zh: '這場馬拉松有兩萬個人參加。',
+        options: [
+            { text: 'にまんにん', isCorrect: true, reason: '正確！「二萬人」讀作「にまんにん」。' },
+            { text: 'ふたまんにん', isCorrect: false, reason: '「二萬」讀「にまん」。' },
+            { text: 'にばんにん', isCorrect: false, reason: '「萬」讀「まん」。' },
+            { text: 'にまんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二萬人」讀作「にまんにん」。',
+            relatedRules: ['人數の讀法', '20000人の讀法']
+        },
+        sourceItem: { value: 20000, kanji: '二万人', reading: 'にまんにん' }
+    },
+    {
+        id: 'people_ext_72',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '這個城市有多少人？',
+        stem_zh: '這個城市有多少人？',
+        dialogue: {
+            speakerA: 'この都市には何人住んでいますか？',
+            speakerB: '＿＿住んでいます。（五萬個人）'
+        },
+        options: [
+            { text: 'ごまんにん', isCorrect: true, reason: '正確！「五萬人」讀作「ごまんにん」。' },
+            { text: 'いつまんにん', isCorrect: false, reason: '「五萬」讀「ごまん」。' },
+            { text: 'ごばんにん', isCorrect: false, reason: '「萬」讀「まん」。' },
+            { text: 'ごまんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「五萬人」讀作「ごまんにん」。',
+            relatedRules: ['人數の讀法', '50000人の讀法']
+        },
+        sourceItem: { value: 50000, kanji: '五万人', reading: 'ごまんにん' }
+    },
+    {
+        id: 'people_ext_73',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「十萬人」的正確讀音是？',
+        stem_zh: '「十萬人」的正確讀音是？',
+        options: [
+            { text: 'じゅうまんにん', isCorrect: true, reason: '正確！「十萬人」讀作「じゅうまんにん」。' },
+            { text: 'とおまんにん', isCorrect: false, reason: '「十萬」讀「じゅうまん」。' },
+            { text: 'じゅうばんにん', isCorrect: false, reason: '「萬」讀「まん」。' },
+            { text: 'じゅうまんじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「十萬人」讀作「じゅうまんにん」。',
+            relatedRules: ['人數の讀法', '100000人の讀法']
+        },
+        sourceItem: { value: 100000, kanji: '十万人', reading: 'じゅうまんにん' }
+    },
+    {
+        id: 'people_ext_74',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: true,
+        stem: '宴會有＿＿受邀。',
+        stem_zh: '宴會有四人受邀。',
+        options: [
+            { text: 'よにん', isCorrect: true, reason: '正確！「四人」讀作「よにん」。' },
+            { text: 'しにん', isCorrect: false, reason: '陷阱！避免「しにん（死人）」諧音。' },
+            { text: 'よったり', isCorrect: false, reason: '訓讀只用於1、2人。' },
+            { text: 'よんにん', isCorrect: false, reason: '人數的4讀「よ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「四人」讀作「よにん」。',
+            trapExplanation: '4讀「よ」避免「しにん」諧音。',
+            relatedRules: ['四人の讀法', '避諱讀法']
+        },
+        sourceItem: { value: 4, kanji: '四人', reading: 'よにん' }
+    },
+    {
+        id: 'people_ext_75',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '這組有幾個人？',
+        stem_zh: '這組有幾個人？',
+        dialogue: {
+            speakerA: 'このグループには何人いますか？',
+            speakerB: '＿＿います。（兩個人）'
+        },
+        options: [
+            { text: 'ふたり', isCorrect: true, reason: '正確！「二人」讀作「ふたり」。' },
+            { text: 'ににん', isCorrect: false, reason: '陷阱！二人使用訓讀。' },
+            { text: 'にじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ふたにん', isCorrect: false, reason: '不混合訓讀與音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「二人」讀作「ふたり」，使用訓讀。',
+            trapExplanation: '2人固定用訓讀「ふたり」。',
+            relatedRules: ['人數の訓讀規則', '二人の讀法']
+        },
+        sourceItem: { value: 2, kanji: '二人', reading: 'ふたり' }
+    },
+    {
+        id: 'people_ext_76',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: true,
+        stem: '這房間只有我一個人，「一人」讀作？',
+        stem_zh: '這房間只有我一個人，「一人」讀作？',
+        options: [
+            { text: 'ひとり', isCorrect: true, reason: '正確！「一人」讀作「ひとり」。' },
+            { text: 'いちにん', isCorrect: false, reason: '陷阱！一人使用訓讀。' },
+            { text: 'いちじん', isCorrect: false, reason: '「じん」不用於人數。' },
+            { text: 'ひとにん', isCorrect: false, reason: '不混合訓讀與音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「一人」讀作「ひとり」，使用訓讀。',
+            trapExplanation: '1人固定用訓讀「ひとり」。',
+            relatedRules: ['人數の訓讀規則', '一人の讀法']
+        },
+        sourceItem: { value: 1, kanji: '一人', reading: 'ひとり' }
+    },
+    {
+        id: 'people_ext_77',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '三個人一組。',
+        stem_zh: '三個人一組。',
+        options: [
+            { text: 'さんにんひとくみ', isCorrect: true, reason: '正確！「三人」讀作「さんにん」。' },
+            { text: 'みにんひとくみ', isCorrect: false, reason: '「三」讀「さん」。' },
+            { text: 'さんたりひとくみ', isCorrect: false, reason: '超過2人用「にん」。' },
+            { text: 'さんじんひとくみ', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三人」讀作「さんにん」。',
+            relatedRules: ['人數の讀法', '3人の讀法']
+        },
+        sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
+    },
+    {
+        id: 'people_ext_78',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '一桌坐多少人？',
+        stem_zh: '一桌坐多少人？',
+        dialogue: {
+            speakerA: '一つのテーブルには何人座れますか？',
+            speakerB: '＿＿座れます。（六個人）'
+        },
+        options: [
+            { text: 'ろくにん', isCorrect: true, reason: '正確！「六人」讀作「ろくにん」。' },
+            { text: 'むにん', isCorrect: false, reason: '「六」讀「ろく」。' },
+            { text: 'むたり', isCorrect: false, reason: '訓讀只用於1、2人。' },
+            { text: 'ろくじん', isCorrect: false, reason: '「じん」不用於人數。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「六人」讀作「ろくにん」。',
+            relatedRules: ['人數の讀法', '6人の讀法']
+        },
+        sourceItem: { value: 6, kanji: '六人', reading: 'ろくにん' }
+    },
+    {
+        id: 'people_ext_79',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「大人」（おとな）是指？',
+        stem_zh: '「大人」（おとな）是指？',
+        options: [
+            { text: '成年人', isCorrect: true, reason: '正確！「大人」讀「おとな」指成年人。' },
+            { text: '大的人數', isCorrect: false, reason: '「大人」讀「おとな」是成年人。' },
+            { text: '很多人', isCorrect: false, reason: '這是「多くの人」。' },
+            { text: '偉大的人', isCorrect: false, reason: '這是「偉大な人」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「大人」讀「おとな」表示成年人，與人數無關。',
+            relatedRules: ['人的相關詞彙', '大人の讀法']
+        },
+        sourceItem: { value: 'adult', kanji: '大人', reading: 'おとな' }
+    },
+    {
+        id: 'people_ext_80',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '「子供」（こども）是指？',
+        stem_zh: '「子供」（こども）是指？',
+        options: [
+            { text: '小孩', isCorrect: true, reason: '正確！「子供」讀「こども」指小孩。' },
+            { text: '小的人數', isCorrect: false, reason: '「子供」是小孩的意思。' },
+            { text: '少數人', isCorrect: false, reason: '這是「少人数」。' },
+            { text: '年輕人', isCorrect: false, reason: '這是「若者」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「子供」讀「こども」表示小孩，與人數無關。',
+            relatedRules: ['人的相關詞彙', '子供の讀法']
+        },
+        sourceItem: { value: 'child', kanji: '子供', reading: 'こども' }
+    },
+    {
+        id: 'people_ext_81',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '「何人」讀「なにじん」是什麼意思？',
+        stem_zh: '「何人」讀「なにじん」是什麼意思？',
+        dialogue: {
+            speakerA: '「なにじん」とはどういう意味ですか？',
+            speakerB: '＿＿という意味です。'
+        },
+        options: [
+            { text: '哪國人（詢問國籍）', isCorrect: true, reason: '正確！「なにじん」是問國籍。' },
+            { text: '幾個人（詢問人數）', isCorrect: false, reason: '問人數用「なんにん」。' },
+            { text: '什麼樣的人', isCorrect: false, reason: '這是「どんな人」。' },
+            { text: '誰', isCorrect: false, reason: '這是「だれ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「何人」讀「なにじん」問國籍，讀「なんにん」問人數。',
+            relatedRules: ['なんにん vs なにじん', '疑問詞の使い分け']
+        },
+        sourceItem: { value: 'nationality', kanji: '何人（國籍）', reading: 'なにじん' }
+    },
+    {
+        id: 'people_ext_82',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「何人」讀「なんにん」是什麼意思？',
+        stem_zh: '「何人」讀「なんにん」是什麼意思？',
+        options: [
+            { text: '幾個人（詢問人數）', isCorrect: true, reason: '正確！「なんにん」是問人數。' },
+            { text: '哪國人（詢問國籍）', isCorrect: false, reason: '問國籍用「なにじん」。' },
+            { text: '什麼樣的人', isCorrect: false, reason: '這是「どんな人」。' },
+            { text: '誰', isCorrect: false, reason: '這是「だれ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「何人」讀「なんにん」問人數，讀「なにじん」問國籍。',
+            relatedRules: ['なんにん vs なにじん', '疑問詞の使い分け']
+        },
+        sourceItem: { value: 'count', kanji: '何人（人數）', reading: 'なんにん' }
+    },
+    {
+        id: 'people_ext_83',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '「日本人」讀作？',
+        stem_zh: '「日本人」讀作？',
+        options: [
+            { text: 'にほんじん', isCorrect: true, reason: '正確！「日本人」讀作「にほんじん」。' },
+            { text: 'にほんにん', isCorrect: false, reason: '國籍用「じん」。' },
+            { text: 'にっぽんにん', isCorrect: false, reason: '國籍用「じん」。' },
+            { text: 'にほんひと', isCorrect: false, reason: '國籍讀「〜じん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「日本人」讀作「にほんじん」，國籍用「じん」。',
+            relatedRules: ['國籍の讀法', '〜人（じん）']
+        },
+        sourceItem: { value: 'Japanese', kanji: '日本人', reading: 'にほんじん' }
+    },
+    {
+        id: 'people_ext_84',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '「台湾人」讀作？',
+        stem_zh: '「台湾人」讀作？',
+        dialogue: {
+            speakerA: '「台湾人」はどう読みますか？',
+            speakerB: '＿＿と読みます。'
+        },
+        options: [
+            { text: 'たいわんじん', isCorrect: true, reason: '正確！「台湾人」讀作「たいわんじん」。' },
+            { text: 'たいわんにん', isCorrect: false, reason: '國籍用「じん」。' },
+            { text: 'たいわんひと', isCorrect: false, reason: '國籍讀「〜じん」。' },
+            { text: 'だいわんじん', isCorrect: false, reason: '「台」讀「たい」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「台湾人」讀作「たいわんじん」，國籍用「じん」。',
+            relatedRules: ['國籍の讀法', '〜人（じん）']
+        },
+        sourceItem: { value: 'Taiwanese', kanji: '台湾人', reading: 'たいわんじん' }
+    },
+    {
+        id: 'people_ext_85',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '總復習：人數量詞「人」的兩種讀法是？',
+        stem_zh: '總復習：人數量詞「人」的兩種讀法是？',
+        options: [
+            { text: 'にん（人數）、じん（國籍）', isCorrect: true, reason: '正確！人數用「にん」，國籍用「じん」。' },
+            { text: '只有「にん」', isCorrect: false, reason: '國籍用「じん」。' },
+            { text: '只有「じん」', isCorrect: false, reason: '人數用「にん」。' },
+            { text: '兩者可互換', isCorrect: false, reason: '不可互換，各有用途。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「人」的讀法：人數用「にん」（三人、十人等），國籍用「じん」（日本人等）。',
+            relatedRules: ['人的讀法規則', 'にん vs じん']
+        },
+        sourceItem: { value: 'review_readings', kanji: '人', reading: 'にん/じん' }
+    },
+    {
+        id: 'people_ext_86',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：特殊訓讀的人數有哪些？',
+        stem_zh: '總復習：特殊訓讀的人數有哪些？',
+        options: [
+            { text: '1人（ひとり）、2人（ふたり）', isCorrect: true, reason: '正確！只有1人、2人使用訓讀。' },
+            { text: '1人、2人、3人', isCorrect: false, reason: '3人開始用音讀「さんにん」。' },
+            { text: '只有1人', isCorrect: false, reason: '2人也用訓讀「ふたり」。' },
+            { text: '沒有特殊讀法', isCorrect: false, reason: '1人、2人有特殊訓讀。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '1人（ひとり）、2人（ふたり）使用訓讀，3人開始用音讀。',
+            relatedRules: ['人數の訓讀規則', '特殊讀法']
+        },
+        sourceItem: { value: 'review_kun', kanji: '1人、2人', reading: 'ひとり、ふたり' }
+    },
+    {
+        id: 'people_ext_87',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '總復習：4的特殊讀法原因是？',
+        stem_zh: '總復習：4的特殊讀法原因是？',
+        dialogue: {
+            speakerA: '「四人」の4はなぜ「よ」と読みますか？',
+            speakerB: '＿＿を避けるためです。'
+        },
+        options: [
+            { text: '「しにん」（死人）諧音', isCorrect: true, reason: '正確！避免不吉利的諧音。' },
+            { text: '發音容易', isCorrect: false, reason: '主要是避諱原因。' },
+            { text: '傳統習慣', isCorrect: false, reason: '是避諱原因。' },
+            { text: '沒有特別原因', isCorrect: false, reason: '有避諱的原因。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '4讀「よ」避免「しにん」與「死人」同音。',
+            relatedRules: ['四人の讀法', '避諱讀法']
+        },
+        sourceItem: { value: 'review_4', kanji: '四人', reading: 'よにん' }
+    },
+    {
+        id: 'people_ext_88',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '總復習：7人有幾種讀法？',
+        stem_zh: '總復習：7人有幾種讀法？',
+        options: [
+            { text: '兩種（しちにん、ななにん）', isCorrect: true, reason: '正確！7人可讀兩種。' },
+            { text: '只有しちにん', isCorrect: false, reason: '也可讀「ななにん」。' },
+            { text: '只有ななにん', isCorrect: false, reason: '也可讀「しちにん」。' },
+            { text: '三種以上', isCorrect: false, reason: '主要是兩種。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '7人可讀「しちにん」或「ななにん」，兩種皆可。',
+            relatedRules: ['七人の讀法', '7の讀み方']
+        },
+        sourceItem: { value: 'review_7', kanji: '七人', reading: 'しちにん/ななにん' }
+    },
+    {
+        id: 'people_ext_89',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：9人有幾種讀法？',
+        stem_zh: '總復習：9人有幾種讀法？',
+        options: [
+            { text: '兩種（きゅうにん、くにん）', isCorrect: true, reason: '正確！9人可讀兩種。' },
+            { text: '只有きゅうにん', isCorrect: false, reason: '也可讀「くにん」。' },
+            { text: '只有くにん', isCorrect: false, reason: '也可讀「きゅうにん」。' },
+            { text: '三種以上', isCorrect: false, reason: '主要是兩種。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '9人可讀「きゅうにん」或「くにん」，兩種皆可。',
+            relatedRules: ['九人の讀法', '9の讀み方']
+        },
+        sourceItem: { value: 'review_9', kanji: '九人', reading: 'きゅうにん/くにん' }
+    },
+    {
+        id: 'people_ext_90',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '總復習：百、千的特殊音變有哪些？',
+        stem_zh: '總復習：百、千的特殊音變有哪些？',
+        dialogue: {
+            speakerA: '百と千の音変化を教えてください。',
+            speakerB: '＿＿があります。'
+        },
+        options: [
+            { text: '3百(さんびゃく)、6百(ろっぴゃく)、8百(はっぴゃく)；3千(さんぜん)、8千(はっせん)', isCorrect: true, reason: '正確！這些有特殊音變。' },
+            { text: '全部都有音變', isCorrect: false, reason: '只有特定數字音變。' },
+            { text: '全部都沒有音變', isCorrect: false, reason: '有特定數字音變。' },
+            { text: '只有百有音變', isCorrect: false, reason: '千也有音變。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '3/6/8百有音變，3/8千有音變。',
+            relatedRules: ['百の音變', '千の音變']
+        },
+        sourceItem: { value: 'review_change', kanji: '音變規則', reading: '3/6/8百、3/8千' }
+    },
+    {
+        id: 'people_ext_91',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '總復習：人數量詞的完整規則是？',
+        stem_zh: '總復習：人數量詞的完整規則是？',
+        options: [
+            { text: '1/2訓讀、4讀よ、7/9有兩種讀法、其他音讀', isCorrect: true, reason: '正確！這是完整規則。' },
+            { text: '全部用音讀', isCorrect: false, reason: '1/2用訓讀。' },
+            { text: '全部用訓讀', isCorrect: false, reason: '3人以上用音讀。' },
+            { text: '沒有規則', isCorrect: false, reason: '有明確規則。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '1人(ひとり)、2人(ふたり)訓讀；4人(よにん)特殊；7/9人兩種讀法；其他音讀。',
+            relatedRules: ['人數の完整規則', '特殊讀法總整理']
+        },
+        sourceItem: { value: 'review_full', kanji: '完整規則', reading: '訓讀/特殊/音讀' }
+    },
+    {
+        id: 'people_ext_92',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: true,
+        stem: '以下哪個讀法是正確的？',
+        stem_zh: '以下哪個讀法是正確的？',
+        options: [
+            { text: '一人(ひとり)、四人(よにん)、十人(じゅうにん)', isCorrect: true, reason: '正確！這三個讀法都正確。' },
+            { text: '一人(いちにん)、四人(しにん)、十人(じゅうにん)', isCorrect: false, reason: '1人用訓讀，4人讀「よにん」。' },
+            { text: '一人(ひとり)、四人(よんにん)、十人(とおにん)', isCorrect: false, reason: '4人讀「よにん」，10人讀「じゅうにん」。' },
+            { text: '一人(いちにん)、四人(よにん)、十人(とおにん)', isCorrect: false, reason: '1人用訓讀，10人讀「じゅうにん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '1人(ひとり)、4人(よにん)、10人(じゅうにん)是正確讀法。',
+            trapExplanation: '注意1人用訓讀，4人的4讀「よ」。',
+            relatedRules: ['人數の讀法規則', '特殊讀法']
+        },
+        sourceItem: { value: 'review_combo', kanji: '1人/4人/10人', reading: 'ひとり/よにん/じゅうにん' }
+    },
+    {
+        id: 'people_ext_93',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: true,
+        stem: '以下哪個讀法是正確的？',
+        stem_zh: '以下哪個讀法是正確的？',
+        dialogue: {
+            speakerA: '正しい読み方はどれですか？',
+            speakerB: '＿＿です。'
+        },
+        options: [
+            { text: '二人(ふたり)、三人(さんにん)、七人(しちにん/ななにん)', isCorrect: true, reason: '正確！這些讀法都正確。' },
+            { text: '二人(ににん)、三人(さんにん)、七人(しちにん)', isCorrect: false, reason: '2人用訓讀「ふたり」。' },
+            { text: '二人(ふたり)、三人(みにん)、七人(ななにん)', isCorrect: false, reason: '3人讀「さんにん」。' },
+            { text: '二人(ふたにん)、三人(さんにん)、七人(なのにん)', isCorrect: false, reason: '2人讀「ふたり」，7人讀「しちにん/ななにん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '2人(ふたり)、3人(さんにん)、7人(しちにん/ななにん)是正確讀法。',
+            trapExplanation: '注意2人用訓讀，3人開始用音讀。',
+            relatedRules: ['人數の讀法規則', '訓讀→音讀']
+        },
+        sourceItem: { value: 'review_combo2', kanji: '2人/3人/7人', reading: 'ふたり/さんにん/しちにん' }
+    },
+    {
+        id: 'people_ext_94',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '「人気」讀作？（詞意：受歡迎）',
+        stem_zh: '「人気」讀作？（詞意：受歡迎）',
+        options: [
+            { text: 'にんき', isCorrect: true, reason: '正確！「人気」讀「にんき」表示受歡迎。' },
+            { text: 'ひとけ', isCorrect: false, reason: '「ひとけ」是另一個意思（人煙）。' },
+            { text: 'じんき', isCorrect: false, reason: '讀「にんき」。' },
+            { text: 'ひとき', isCorrect: false, reason: '讀「にんき」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「人気」讀「にんき」表示受歡迎，讀「ひとけ」表示人煙。',
+            relatedRules: ['人的相關詞彙', '人気の讀み分け']
+        },
+        sourceItem: { value: 'popular', kanji: '人気', reading: 'にんき' }
+    },
+    {
+        id: 'people_ext_95',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '「人気」讀作「ひとけ」是什麼意思？',
+        stem_zh: '「人気」讀作「ひとけ」是什麼意思？',
+        options: [
+            { text: '人煙、有沒有人', isCorrect: true, reason: '正確！「ひとけ」表示人煙。' },
+            { text: '受歡迎', isCorrect: false, reason: '受歡迎讀「にんき」。' },
+            { text: '人數', isCorrect: false, reason: '人數用「〜にん」。' },
+            { text: '人情', isCorrect: false, reason: '這是「にんじょう」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「人気」讀「ひとけ」表示人煙，如「人気がない」（沒有人煙）。',
+            relatedRules: ['人的相關詞彙', '人気の讀み分け']
+        },
+        sourceItem: { value: 'presence', kanji: '人気', reading: 'ひとけ' }
+    },
+    {
+        id: 'people_ext_96',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '「人間」讀作？',
+        stem_zh: '「人間」讀作？',
+        dialogue: {
+            speakerA: '「人間」はどう読みますか？',
+            speakerB: '＿＿と読みます。'
+        },
+        options: [
+            { text: 'にんげん', isCorrect: true, reason: '正確！「人間」讀「にんげん」表示人類。' },
+            { text: 'ひとま', isCorrect: false, reason: '讀「にんげん」。' },
+            { text: 'じんかん', isCorrect: false, reason: '讀「にんげん」。' },
+            { text: 'ひとあいだ', isCorrect: false, reason: '讀「にんげん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「人間」讀「にんげん」表示人類。',
+            relatedRules: ['人的相關詞彙', '人間の讀法']
+        },
+        sourceItem: { value: 'human', kanji: '人間', reading: 'にんげん' }
+    },
+    {
+        id: 'people_ext_97',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '總復習：以下哪組讀法全部正確？',
+        stem_zh: '總復習：以下哪組讀法全部正確？',
+        options: [
+            { text: '8人(はちにん)、14人(じゅうよにん)、24人(にじゅうよにん)', isCorrect: true, reason: '正確！這些讀法都正確。' },
+            { text: '8人(やにん)、14人(じゅうしにん)、24人(にじゅうしにん)', isCorrect: false, reason: '8讀「はち」，4讀「よ」。' },
+            { text: '8人(はちにん)、14人(じゅうよんにん)、24人(にじゅうよんにん)', isCorrect: false, reason: '人數的4讀「よ」。' },
+            { text: '8人(はちにん)、14人(じゅうしにん)、24人(にじゅうよにん)', isCorrect: false, reason: '14人的4也讀「よ」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '8人(はちにん)、14人(じゅうよにん)、24人(にじゅうよにん)都是正確讀法。',
+            relatedRules: ['人數の讀法規則', '4の特殊讀法']
+        },
+        sourceItem: { value: 'review_combo3', kanji: '8人/14人/24人', reading: '含4的人數' }
+    },
+    {
+        id: 'people_ext_98',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'sentence',
+        isTrap: false,
+        stem: '總復習：百人以上的讀法規則是？',
+        stem_zh: '總復習：百人以上的讀法規則是？',
+        options: [
+            { text: '遵循數字+にん，注意百、千的音變', isCorrect: true, reason: '正確！遵循基本規則加音變。' },
+            { text: '全部用訓讀', isCorrect: false, reason: '只有1/2人用訓讀。' },
+            { text: '沒有規則', isCorrect: false, reason: '有明確規則。' },
+            { text: '全部用特殊讀法', isCorrect: false, reason: '遵循基本規則。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '百人以上遵循「數字+にん」，注意3/6/8百、3/8千的音變。',
+            relatedRules: ['人數の讀法規則', '大數字の讀法']
+        },
+        sourceItem: { value: 'review_large', kanji: '百人以上', reading: '數字+にん' }
+    },
+    {
+        id: 'people_ext_99',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'dialogue',
+        isTrap: false,
+        stem: '總復習：人數和國籍的區分是？',
+        stem_zh: '總復習：人數和國籍的區分是？',
+        dialogue: {
+            speakerA: '人数と国籍の読み分けを教えてください。',
+            speakerB: '人数は＿＿、国籍は＿＿です。'
+        },
+        options: [
+            { text: '人數用「にん」，國籍用「じん」', isCorrect: true, reason: '正確！這是基本區分。' },
+            { text: '人數用「じん」，國籍用「にん」', isCorrect: false, reason: '相反了。' },
+            { text: '兩者都用「にん」', isCorrect: false, reason: '國籍用「じん」。' },
+            { text: '兩者都用「じん」', isCorrect: false, reason: '人數用「にん」。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '人數用「〜にん」（三人等），國籍用「〜じん」（日本人等）。',
+            relatedRules: ['にん vs じん', '人的讀法區分']
+        },
+        sourceItem: { value: 'review_distinction', kanji: 'にん/じん', reading: '人數/國籍' }
+    },
+    {
+        id: 'people_ext_100',
+        category: 'counters',
+        subcategory: 'people',
+        type: 'pronunciation',
+        isTrap: false,
+        stem: '恭喜完成人數量詞學習！最後確認：「三人」讀作？',
+        stem_zh: '恭喜完成人數量詞學習！最後確認：「三人」讀作？',
+        options: [
+            { text: 'さんにん', isCorrect: true, reason: '正確！「三人」讀作「さんにん」，這是人數量詞的基本讀法。' },
+            { text: 'みにん', isCorrect: false, reason: '「三」讀「さん」。' },
+            { text: 'さんたり', isCorrect: false, reason: '超過2人用「にん」。' },
+            { text: 'さんじん', isCorrect: false, reason: '「じん」用於國籍。' }
+        ],
+        correctIndex: 0,
+        explanation: {
+            correctRule: '「三人」讀作「さんにん」，從3人開始使用音讀系統。',
+            relatedRules: ['人數の讀法總整理', '恭喜完成學習']
+        },
+        sourceItem: { value: 3, kanji: '三人', reading: 'さんにん' }
     }
 ];

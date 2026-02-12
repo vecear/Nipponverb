@@ -2321,5 +2321,1338 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
             relatedRules: ['九{きゅう}の避諱{ひき}', '八千{はっせん}の促音化{そくおんか}']
         },
         sourceItem: { value: 98000, kanji: '九万八千円', reading: 'きゅうまんはっせんえん' }
+    },
+    {
+        id: 'num_thousands_extra_22', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「千二百」的正確讀音是？', stem_zh: '「一千二百」的正確讀音是？',
+        options: [
+            { text: 'せんにひゃく', isCorrect: true, reason: '正確！「千二百」省略「一」。' },
+            { text: 'いちせんにひゃく', isCorrect: false, reason: '「千」通常省略「一」。' },
+            { text: 'せんにびゃく', isCorrect: false, reason: '「二百」不濁音化。' },
+            { text: 'ちにひゃく', isCorrect: false, reason: '使用音讀「せん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「千二百」省略「一」，無音變。', relatedRules: ['千の省略', '千位數組合'] },
+        sourceItem: { value: 1200, kanji: '千二百', reading: 'せんにひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_23', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '這批貨物價值＿＿日圓。（二千三百）', stem_zh: '這批貨物價值二千三百日圓。',
+        options: [
+            { text: 'にせんさんびゃくえん', isCorrect: true, reason: '正確！「二千三百円」。' },
+            { text: 'にせんさんひゃくえん', isCorrect: false, reason: '「三百」濁音化。' },
+            { text: 'にぜんさんびゃくえん', isCorrect: false, reason: '「二千」不濁音化。' },
+            { text: 'ふたせんみひゃくえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二千三百円」，「三百」濁音化。', relatedRules: ['二千の讀法', '三百の濁音化'] },
+        sourceItem: { value: 2300, kanji: '二千三百円', reading: 'にせんさんびゃくえん' }
+    },
+    {
+        id: 'num_thousands_extra_24', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このジャケットはいくらですか？', speakerB: '＿＿です。（三千四百日圓）' },
+        options: [
+            { text: 'さんせんよんひゃくえん', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
+            { text: 'さんぜんよんひゃくえん', isCorrect: true, reason: '正確！「三千四百円」。' },
+            { text: 'さんぜんしひゃくえん', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'みぜんよひゃくえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化為「さんぜん」。', trapExplanation: '「三千」的濁音化容易被忽略。', relatedRules: ['三千の濁音化'] },
+        sourceItem: { value: 3400, kanji: '三千四百円', reading: 'さんぜんよんひゃくえん' }
+    },
+    {
+        id: 'num_thousands_extra_25', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「四千五百」的正確讀音是？', stem_zh: '「四千五百」的正確讀音是？',
+        options: [
+            { text: 'よんせんごひゃく', isCorrect: true, reason: '正確！「四千五百」無音變。' },
+            { text: 'しせんごひゃく', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'よんぜんごひゃく', isCorrect: false, reason: '「四千」不濁音化。' },
+            { text: 'よんせんごびゃく', isCorrect: false, reason: '「五百」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四千五百」無音變。', relatedRules: ['四千の讀法', '組合數字'] },
+        sourceItem: { value: 4500, kanji: '四千五百', reading: 'よんせんごひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_26', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '距離目的地還有＿＿公尺。（八千六百）', stem_zh: '距離目的地還有八千六百公尺。',
+        options: [
+            { text: 'はちせんろくひゃく', isCorrect: false, reason: '陷阱！「八千」促音化。' },
+            { text: 'はっせんろっぴゃく', isCorrect: true, reason: '正確！「八千六百」。' },
+            { text: 'はっせんろくひゃく', isCorrect: false, reason: '「六百」也要促音+半濁音化。' },
+            { text: 'やせんむひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八千六百」，「八千」促音化，「六百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['八千の促音化', '六百の音變'] },
+        sourceItem: { value: 8600, kanji: '八千六百', reading: 'はっせんろっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_27', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '在庫は何個ありますか？', speakerB: '＿＿個あります。（五千七百）' },
+        options: [
+            { text: 'ごせんななひゃく', isCorrect: true, reason: '正確！「五千七百」無音變。' },
+            { text: 'ごぜんしちひゃく', isCorrect: false, reason: '「五千」不濁音化，「七」讀「なな」。' },
+            { text: 'いつせんなのひゃく', isCorrect: false, reason: '使用音讀。' },
+            { text: 'ごせんななびゃく', isCorrect: false, reason: '「七百」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五千七百」無音變。', relatedRules: ['五千の讀法', '七百の讀法'] },
+        sourceItem: { value: 5700, kanji: '五千七百', reading: 'ごせんななひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_28', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「六千八百」的正確讀音是？', stem_zh: '「六千八百」的正確讀音是？',
+        options: [
+            { text: 'ろくせんはっぴゃく', isCorrect: true, reason: '正確！「六千八百」，「八百」促音+半濁音化。' },
+            { text: 'ろっせんはちひゃく', isCorrect: false, reason: '「六千」不促音化。' },
+            { text: 'ろくぜんはっぴゃく', isCorrect: false, reason: '「六千」不濁音化。' },
+            { text: 'むせんやひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六千」無音變，但「八百」促音+半濁音化。', relatedRules: ['六千の讀法', '八百の音變'] },
+        sourceItem: { value: 6800, kanji: '六千八百', reading: 'ろくせんはっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_29', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '今年銷售了＿＿台電腦。（七千九百）', stem_zh: '今年銷售了七千九百台電腦。',
+        options: [
+            { text: 'ななせんきゅうひゃく', isCorrect: true, reason: '正確！「七千九百」無音變。' },
+            { text: 'しちせんくひゃく', isCorrect: false, reason: '「七」讀「なな」，「九」讀「きゅう」。' },
+            { text: 'ななぜんきゅうひゃく', isCorrect: false, reason: '「七千」不濁音化。' },
+            { text: 'なのせんここのひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七千九百」無音變。', relatedRules: ['七千の讀法', '九百の讀法'] },
+        sourceItem: { value: 7900, kanji: '七千九百', reading: 'ななせんきゅうひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_30', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'この時計はいくらですか？', speakerB: '＿＿です。（八千百日圓）' },
+        options: [
+            { text: 'はちせんひゃくえん', isCorrect: false, reason: '陷阱！「八千」促音化，「一百」省略「一」。' },
+            { text: 'はっせんひゃくえん', isCorrect: true, reason: '正確！「八千百円」。' },
+            { text: 'はっせんいっぴゃくえん', isCorrect: false, reason: '「百」通常省略「一」。' },
+            { text: 'やせんももえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八千」促音化，「百」省略「一」。', trapExplanation: '「八千」促音化容易忘記。', relatedRules: ['八千の促音化', '百の省略'] },
+        sourceItem: { value: 8100, kanji: '八千百円', reading: 'はっせんひゃくえん' }
+    },
+    {
+        id: 'num_thousands_extra_31', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「九千二百」的正確讀音是？', stem_zh: '「九千二百」的正確讀音是？',
+        options: [
+            { text: 'きゅうせんにひゃく', isCorrect: true, reason: '正確！「九千二百」無音變。' },
+            { text: 'くせんにひゃく', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうぜんにひゃく', isCorrect: false, reason: '「九千」不濁音化。' },
+            { text: 'きゅうせんにびゃく', isCorrect: false, reason: '「二百」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九千二百」無音變。', relatedRules: ['九千の讀法', '組合數字'] },
+        sourceItem: { value: 9200, kanji: '九千二百', reading: 'きゅうせんにひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_32', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '這場活動有＿＿人參加。（三千三百）', stem_zh: '這場活動有三千三百人參加。',
+        options: [
+            { text: 'さんせんさんびゃく', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
+            { text: 'さんぜんさんびゃく', isCorrect: true, reason: '正確！「三千三百」，兩處都有音變。' },
+            { text: 'さんぜんさんひゃく', isCorrect: false, reason: '「三百」也要濁音化。' },
+            { text: 'みぜんみびゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」和「三百」都濁音化。', trapExplanation: '注意兩處「三」後都有濁音化。', relatedRules: ['三千の濁音化', '三百の濁音化'] },
+        sourceItem: { value: 3300, kanji: '三千三百', reading: 'さんぜんさんびゃく' }
+    },
+    {
+        id: 'num_thousands_extra_33', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '本は何冊ありますか？', speakerB: '＿＿冊あります。（千四百）' },
+        options: [
+            { text: 'せんよんひゃく', isCorrect: true, reason: '正確！「千四百」省略「一」。' },
+            { text: 'いちせんしひゃく', isCorrect: false, reason: '「千」省略「一」，「四」讀「よん」。' },
+            { text: 'せんよんびゃく', isCorrect: false, reason: '「四百」不濁音化。' },
+            { text: 'ちよひゃく', isCorrect: false, reason: '使用音讀「せん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「千四百」省略「一」。', relatedRules: ['千の省略', '四の避諱'] },
+        sourceItem: { value: 1400, kanji: '千四百', reading: 'せんよんひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_34', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「二千六百」的正確讀音是？', stem_zh: '「二千六百」的正確讀音是？',
+        options: [
+            { text: 'にせんろっぴゃく', isCorrect: true, reason: '正確！「二千六百」，「六百」促音+半濁音化。' },
+            { text: 'にせんろくひゃく', isCorrect: false, reason: '「六百」促音+半濁音化。' },
+            { text: 'にぜんろっぴゃく', isCorrect: false, reason: '「二千」不濁音化。' },
+            { text: 'ふたせんむひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二千」無音變，「六百」促音+半濁音化。', relatedRules: ['二千の讀法', '六百の音變'] },
+        sourceItem: { value: 2600, kanji: '二千六百', reading: 'にせんろっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_35', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '公司年營業額是＿＿萬日圓。（三千八百）', stem_zh: '公司年營業額是三千八百萬日圓。',
+        options: [
+            { text: 'さんせんはちひゃく', isCorrect: false, reason: '陷阱！「三千」濁音化，「八百」促音+半濁音化。' },
+            { text: 'さんぜんはっぴゃく', isCorrect: true, reason: '正確！「三千八百」。' },
+            { text: 'さんぜんはちひゃく', isCorrect: false, reason: '「八百」也要促音+半濁音化。' },
+            { text: 'みぜんやひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化，「八百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['三千の濁音化', '八百の音變'] },
+        sourceItem: { value: 3800, kanji: '三千八百', reading: 'さんぜんはっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_36', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このカメラはいくらですか？', speakerB: '＿＿です。（四千六百日圓）' },
+        options: [
+            { text: 'よんせんろっぴゃくえん', isCorrect: true, reason: '正確！「四千六百円」。' },
+            { text: 'しせんろくひゃくえん', isCorrect: false, reason: '「四」讀「よん」，「六百」促音+半濁音化。' },
+            { text: 'よんぜんろっぴゃくえん', isCorrect: false, reason: '「四千」不濁音化。' },
+            { text: 'よせんむひゃくえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四千六百円」，「六百」促音+半濁音化。', relatedRules: ['四千の讀法', '六百の音變'] },
+        sourceItem: { value: 4600, kanji: '四千六百円', reading: 'よんせんろっぴゃくえん' }
+    },
+    {
+        id: 'num_thousands_extra_37', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「五千八百」的正確讀音是？', stem_zh: '「五千八百」的正確讀音是？',
+        options: [
+            { text: 'ごせんはっぴゃく', isCorrect: true, reason: '正確！「五千八百」，「八百」促音+半濁音化。' },
+            { text: 'ごせんはちひゃく', isCorrect: false, reason: '「八百」促音+半濁音化。' },
+            { text: 'ごぜんはっぴゃく', isCorrect: false, reason: '「五千」不濁音化。' },
+            { text: 'いつせんやひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五千」無音變，「八百」促音+半濁音化。', relatedRules: ['五千の讀法', '八百の音變'] },
+        sourceItem: { value: 5800, kanji: '五千八百', reading: 'ごせんはっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_38', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '這個城市有＿＿家餐廳。（六千九百）', stem_zh: '這個城市有六千九百家餐廳。',
+        options: [
+            { text: 'ろくせんきゅうひゃく', isCorrect: true, reason: '正確！「六千九百」無音變。' },
+            { text: 'ろっせんくひゃく', isCorrect: false, reason: '「六千」不促音化，「九」讀「きゅう」。' },
+            { text: 'ろくぜんきゅうひゃく', isCorrect: false, reason: '「六千」不濁音化。' },
+            { text: 'むせんここのひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六千九百」無音變。', relatedRules: ['六千の讀法', '九百の讀法'] },
+        sourceItem: { value: 6900, kanji: '六千九百', reading: 'ろくせんきゅうひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_39', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '図書館に本は何冊ありますか？', speakerB: '＿＿冊あります。（七千二百）' },
+        options: [
+            { text: 'ななせんにひゃく', isCorrect: true, reason: '正確！「七千二百」無音變。' },
+            { text: 'しちせんにひゃく', isCorrect: false, reason: '「七」讀「なな」。' },
+            { text: 'ななぜんにひゃく', isCorrect: false, reason: '「七千」不濁音化。' },
+            { text: 'なのせんふたひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七千二百」無音變。', relatedRules: ['七千の讀法', '二百の讀法'] },
+        sourceItem: { value: 7200, kanji: '七千二百', reading: 'ななせんにひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_40', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: true,
+        stem: '「八千三百」的正確讀音是？', stem_zh: '「八千三百」的正確讀音是？',
+        options: [
+            { text: 'はちせんさんひゃく', isCorrect: false, reason: '陷阱！「八千」促音化，「三百」濁音化。' },
+            { text: 'はっせんさんびゃく', isCorrect: true, reason: '正確！「八千三百」。' },
+            { text: 'はっせんさんひゃく', isCorrect: false, reason: '「三百」也要濁音化。' },
+            { text: 'やせんみびゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八千」促音化，「三百」濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['八千の促音化', '三百の濁音化'] },
+        sourceItem: { value: 8300, kanji: '八千三百', reading: 'はっせんさんびゃく' }
+    },
+    {
+        id: 'num_thousands_extra_41', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '會員人數達到＿＿人。（九千四百）', stem_zh: '會員人數達到九千四百人。',
+        options: [
+            { text: 'きゅうせんよんひゃく', isCorrect: true, reason: '正確！「九千四百」無音變。' },
+            { text: 'くせんしひゃく', isCorrect: false, reason: '「九」讀「きゅう」，「四」讀「よん」。' },
+            { text: 'きゅうぜんよんひゃく', isCorrect: false, reason: '「九千」不濁音化。' },
+            { text: 'ここのせんよひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九千四百」無音變。', relatedRules: ['九千の讀法', '四百の讀法'] },
+        sourceItem: { value: 9400, kanji: '九千四百', reading: 'きゅうせんよんひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_42', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このコートはいくらですか？', speakerB: '＿＿です。（一萬一百日圓）' },
+        options: [
+            { text: 'まんひゃくえん', isCorrect: false, reason: '陷阱！「一萬」不可省略「一」。' },
+            { text: 'いちまんひゃくえん', isCorrect: true, reason: '正確！「一万百円」。' },
+            { text: 'いちまんいちひゃくえん', isCorrect: false, reason: '「百」可省略「一」。' },
+            { text: 'いちばんひゃくえん', isCorrect: false, reason: '「万」不濁音化。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「一万」不可省略「一」，但「百」可省略。', trapExplanation: '「万」前的「一」不可省略。', relatedRules: ['一万の特殊規則', '百の省略'] },
+        sourceItem: { value: 10100, kanji: '一万百円', reading: 'いちまんひゃくえん' }
+    },
+    {
+        id: 'num_thousands_extra_43', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「千六百」的正確讀音是？', stem_zh: '「一千六百」的正確讀音是？',
+        options: [
+            { text: 'せんろっぴゃく', isCorrect: true, reason: '正確！「千六百」，「六百」促音+半濁音化。' },
+            { text: 'いちせんろくひゃく', isCorrect: false, reason: '「千」省略「一」，「六百」促音+半濁音化。' },
+            { text: 'せんろくひゃく', isCorrect: false, reason: '「六百」促音+半濁音化。' },
+            { text: 'ちむひゃく', isCorrect: false, reason: '使用音讀「せん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「千六百」省略「一」，「六百」促音+半濁音化。', relatedRules: ['千の省略', '六百の音變'] },
+        sourceItem: { value: 1600, kanji: '千六百', reading: 'せんろっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_44', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '這本雜誌每期發行＿＿本。（二千七百）', stem_zh: '這本雜誌每期發行二千七百本。',
+        options: [
+            { text: 'にせんななひゃく', isCorrect: true, reason: '正確！「二千七百」無音變。' },
+            { text: 'にぜんしちひゃく', isCorrect: false, reason: '「二千」不濁音化，「七」讀「なな」。' },
+            { text: 'ふたせんなのひゃく', isCorrect: false, reason: '使用音讀。' },
+            { text: 'にせんななびゃく', isCorrect: false, reason: '「七百」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二千七百」無音變。', relatedRules: ['二千の讀法', '七百の讀法'] },
+        sourceItem: { value: 2700, kanji: '二千七百', reading: 'にせんななひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_45', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: 'この映画の観客は何人でしたか？', speakerB: '＿＿人でした。（三千一百）' },
+        options: [
+            { text: 'さんせんひゃく', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
+            { text: 'さんぜんひゃく', isCorrect: true, reason: '正確！「三千一百」。' },
+            { text: 'さんぜんいっぴゃく', isCorrect: false, reason: '「百」通常省略「一」。' },
+            { text: 'みぜんもも', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化，「百」省略「一」。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '百の省略'] },
+        sourceItem: { value: 3100, kanji: '三千百', reading: 'さんぜんひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_46', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「四千八百」的正確讀音是？', stem_zh: '「四千八百」的正確讀音是？',
+        options: [
+            { text: 'よんせんはっぴゃく', isCorrect: true, reason: '正確！「四千八百」，「八百」促音+半濁音化。' },
+            { text: 'しせんはちひゃく', isCorrect: false, reason: '「四」讀「よん」，「八百」促音+半濁音化。' },
+            { text: 'よんぜんはっぴゃく', isCorrect: false, reason: '「四千」不濁音化。' },
+            { text: 'よせんやひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四千」無音變，「八百」促音+半濁音化。', relatedRules: ['四千の讀法', '八百の音變'] },
+        sourceItem: { value: 4800, kanji: '四千八百', reading: 'よんせんはっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_47', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '商場每日客流量是＿＿人。（五千九百）', stem_zh: '商場每日客流量是五千九百人。',
+        options: [
+            { text: 'ごせんきゅうひゃく', isCorrect: true, reason: '正確！「五千九百」無音變。' },
+            { text: 'いつせんくひゃく', isCorrect: false, reason: '使用音讀「ご」，「九」讀「きゅう」。' },
+            { text: 'ごぜんきゅうひゃく', isCorrect: false, reason: '「五千」不濁音化。' },
+            { text: 'ごせんここのひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五千九百」無音變。', relatedRules: ['五千の讀法', '九百の讀法'] },
+        sourceItem: { value: 5900, kanji: '五千九百', reading: 'ごせんきゅうひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_48', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'この椅子はいくらですか？', speakerB: '＿＿です。（六千二百日圓）' },
+        options: [
+            { text: 'ろくせんにひゃくえん', isCorrect: true, reason: '正確！「六千二百円」無音變。' },
+            { text: 'ろっせんにひゃくえん', isCorrect: false, reason: '「六千」不促音化。' },
+            { text: 'ろくぜんにひゃくえん', isCorrect: false, reason: '「六千」不濁音化。' },
+            { text: 'むせんふたひゃくえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六千二百円」無音變。', relatedRules: ['六千の讀法', '二百の讀法'] },
+        sourceItem: { value: 6200, kanji: '六千二百円', reading: 'ろくせんにひゃくえん' }
+    },
+    {
+        id: 'num_thousands_extra_49', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「七千三百」的正確讀音是？', stem_zh: '「七千三百」的正確讀音是？',
+        options: [
+            { text: 'ななせんさんびゃく', isCorrect: true, reason: '正確！「七千三百」，「三百」濁音化。' },
+            { text: 'しちせんさんひゃく', isCorrect: false, reason: '「七」讀「なな」，「三百」濁音化。' },
+            { text: 'ななぜんさんびゃく', isCorrect: false, reason: '「七千」不濁音化。' },
+            { text: 'なのせんみびゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七千」無音變，「三百」濁音化。', relatedRules: ['七千の讀法', '三百の濁音化'] },
+        sourceItem: { value: 7300, kanji: '七千三百', reading: 'ななせんさんびゃく' }
+    },
+    {
+        id: 'num_thousands_extra_50', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '這批訂單金額是＿＿日圓。（八千八百）', stem_zh: '這批訂單金額是八千八百日圓。',
+        options: [
+            { text: 'はちせんはちひゃく', isCorrect: false, reason: '陷阱！「八千」促音化，「八百」促音+半濁音化。' },
+            { text: 'はっせんはっぴゃく', isCorrect: true, reason: '正確！「八千八百」，兩處都有音變。' },
+            { text: 'はっせんはちひゃく', isCorrect: false, reason: '「八百」也要促音+半濁音化。' },
+            { text: 'やせんやひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八千」促音化，「八百」促音+半濁音化。', trapExplanation: '注意兩處「八」後的音變。', relatedRules: ['八千の促音化', '八百の音變'] },
+        sourceItem: { value: 8800, kanji: '八千八百', reading: 'はっせんはっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_51', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '学生は何人いますか？', speakerB: '＿＿人います。（九千六百）' },
+        options: [
+            { text: 'きゅうせんろっぴゃく', isCorrect: true, reason: '正確！「九千六百」，「六百」促音+半濁音化。' },
+            { text: 'くせんろくひゃく', isCorrect: false, reason: '「九」讀「きゅう」，「六百」促音+半濁音化。' },
+            { text: 'きゅうぜんろっぴゃく', isCorrect: false, reason: '「九千」不濁音化。' },
+            { text: 'ここのせんむひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九千」無音變，「六百」促音+半濁音化。', relatedRules: ['九千の讀法', '六百の音變'] },
+        sourceItem: { value: 9600, kanji: '九千六百', reading: 'きゅうせんろっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_52', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「千八百」的正確讀音是？', stem_zh: '「一千八百」的正確讀音是？',
+        options: [
+            { text: 'せんはっぴゃく', isCorrect: true, reason: '正確！「千八百」，「八百」促音+半濁音化。' },
+            { text: 'いちせんはちひゃく', isCorrect: false, reason: '「千」省略「一」，「八百」促音+半濁音化。' },
+            { text: 'せんはちひゃく', isCorrect: false, reason: '「八百」促音+半濁音化。' },
+            { text: 'ちやひゃく', isCorrect: false, reason: '使用音讀「せん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「千八百」省略「一」，「八百」促音+半濁音化。', relatedRules: ['千の省略', '八百の音變'] },
+        sourceItem: { value: 1800, kanji: '千八百', reading: 'せんはっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_53', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '這家公司有＿＿名員工。（二千四百）', stem_zh: '這家公司有二千四百名員工。',
+        options: [
+            { text: 'にせんよんひゃく', isCorrect: true, reason: '正確！「二千四百」無音變。' },
+            { text: 'にぜんしひゃく', isCorrect: false, reason: '「二千」不濁音化，「四」讀「よん」。' },
+            { text: 'ふたせんよひゃく', isCorrect: false, reason: '使用音讀。' },
+            { text: 'にせんよんびゃく', isCorrect: false, reason: '「四百」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二千四百」無音變。', relatedRules: ['二千の讀法', '四百の讀法'] },
+        sourceItem: { value: 2400, kanji: '二千四百', reading: 'にせんよんひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_54', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'この花瓶はいくらですか？', speakerB: '＿＿です。（三千六百日圓）' },
+        options: [
+            { text: 'さんせんろくひゃくえん', isCorrect: false, reason: '陷阱！「三千」濁音化，「六百」促音+半濁音化。' },
+            { text: 'さんぜんろっぴゃくえん', isCorrect: true, reason: '正確！「三千六百円」。' },
+            { text: 'さんぜんろくひゃくえん', isCorrect: false, reason: '「六百」也要促音+半濁音化。' },
+            { text: 'みぜんむひゃくえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化，「六百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['三千の濁音化', '六百の音變'] },
+        sourceItem: { value: 3600, kanji: '三千六百円', reading: 'さんぜんろっぴゃくえん' }
+    },
+    {
+        id: 'num_thousands_extra_55', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「四千七百」的正確讀音是？', stem_zh: '「四千七百」的正確讀音是？',
+        options: [
+            { text: 'よんせんななひゃく', isCorrect: true, reason: '正確！「四千七百」無音變。' },
+            { text: 'しせんしちひゃく', isCorrect: false, reason: '「四」讀「よん」，「七」讀「なな」。' },
+            { text: 'よんぜんななひゃく', isCorrect: false, reason: '「四千」不濁音化。' },
+            { text: 'よせんなのひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四千七百」無音變。', relatedRules: ['四千の讀法', '七百の讀法'] },
+        sourceItem: { value: 4700, kanji: '四千七百', reading: 'よんせんななひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_56', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '網站每天有＿＿次訪問。（五千二百）', stem_zh: '網站每天有五千二百次訪問。',
+        options: [
+            { text: 'ごせんにひゃく', isCorrect: true, reason: '正確！「五千二百」無音變。' },
+            { text: 'いつせんふたひゃく', isCorrect: false, reason: '使用音讀「ご」和「に」。' },
+            { text: 'ごぜんにひゃく', isCorrect: false, reason: '「五千」不濁音化。' },
+            { text: 'ごせんにびゃく', isCorrect: false, reason: '「二百」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五千二百」無音變。', relatedRules: ['五千の讀法', '二百の讀法'] },
+        sourceItem: { value: 5200, kanji: '五千二百', reading: 'ごせんにひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_57', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何枚印刷しましたか？', speakerB: '＿＿枚印刷しました。（六千三百）' },
+        options: [
+            { text: 'ろくせんさんびゃく', isCorrect: true, reason: '正確！「六千三百」，「三百」濁音化。' },
+            { text: 'ろっせんさんひゃく', isCorrect: false, reason: '「六千」不促音化，「三百」濁音化。' },
+            { text: 'ろくぜんさんびゃく', isCorrect: false, reason: '「六千」不濁音化。' },
+            { text: 'むせんみびゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六千」無音變，「三百」濁音化。', relatedRules: ['六千の讀法', '三百の濁音化'] },
+        sourceItem: { value: 6300, kanji: '六千三百', reading: 'ろくせんさんびゃく' }
+    },
+    {
+        id: 'num_thousands_extra_58', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「七千六百」的正確讀音是？', stem_zh: '「七千六百」的正確讀音是？',
+        options: [
+            { text: 'ななせんろっぴゃく', isCorrect: true, reason: '正確！「七千六百」，「六百」促音+半濁音化。' },
+            { text: 'しちせんろくひゃく', isCorrect: false, reason: '「七」讀「なな」，「六百」促音+半濁音化。' },
+            { text: 'ななぜんろっぴゃく', isCorrect: false, reason: '「七千」不濁音化。' },
+            { text: 'なのせんむひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七千」無音變，「六百」促音+半濁音化。', relatedRules: ['七千の讀法', '六百の音變'] },
+        sourceItem: { value: 7600, kanji: '七千六百', reading: 'ななせんろっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_59', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '這輛車行駛了＿＿公里。（八千一百）', stem_zh: '這輛車行駛了八千一百公里。',
+        options: [
+            { text: 'はちせんひゃく', isCorrect: false, reason: '陷阱！「八千」促音化。' },
+            { text: 'はっせんひゃく', isCorrect: true, reason: '正確！「八千百」。' },
+            { text: 'はっせんいっぴゃく', isCorrect: false, reason: '「百」通常省略「一」。' },
+            { text: 'やせんもも', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八千」促音化，「百」省略「一」。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千の促音化', '百の省略'] },
+        sourceItem: { value: 8100, kanji: '八千百', reading: 'はっせんひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_60', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このランプはいくらですか？', speakerB: '＿＿です。（九千七百日圓）' },
+        options: [
+            { text: 'きゅうせんななひゃくえん', isCorrect: true, reason: '正確！「九千七百円」無音變。' },
+            { text: 'くせんしちひゃくえん', isCorrect: false, reason: '「九」讀「きゅう」，「七」讀「なな」。' },
+            { text: 'きゅうぜんななひゃくえん', isCorrect: false, reason: '「九千」不濁音化。' },
+            { text: 'ここのせんなのひゃくえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九千七百円」無音變。', relatedRules: ['九千の讀法', '七百の讀法'] },
+        sourceItem: { value: 9700, kanji: '九千七百円', reading: 'きゅうせんななひゃくえん' }
+    },
+    {
+        id: 'num_thousands_extra_61', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「千九百」的正確讀音是？', stem_zh: '「一千九百」的正確讀音是？',
+        options: [
+            { text: 'せんきゅうひゃく', isCorrect: true, reason: '正確！「千九百」省略「一」。' },
+            { text: 'いちせんくひゃく', isCorrect: false, reason: '「千」省略「一」，「九」讀「きゅう」。' },
+            { text: 'せんきゅうびゃく', isCorrect: false, reason: '「九百」不濁音化。' },
+            { text: 'ちここのひゃく', isCorrect: false, reason: '使用音讀「せん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「千九百」省略「一」。', relatedRules: ['千の省略', '九百の讀法'] },
+        sourceItem: { value: 1900, kanji: '千九百', reading: 'せんきゅうひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_62', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '會場可容納＿＿人。（二千五百）', stem_zh: '會場可容納二千五百人。',
+        options: [
+            { text: 'にせんごひゃく', isCorrect: true, reason: '正確！「二千五百」無音變。' },
+            { text: 'にぜんごひゃく', isCorrect: false, reason: '「二千」不濁音化。' },
+            { text: 'ふたせんいつひゃく', isCorrect: false, reason: '使用音讀。' },
+            { text: 'にせんごびゃく', isCorrect: false, reason: '「五百」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二千五百」無音變。', relatedRules: ['二千の讀法', '五百の讀法'] },
+        sourceItem: { value: 2500, kanji: '二千五百', reading: 'にせんごひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_63', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何人応募しましたか？', speakerB: '＿＿人応募しました。（三千八百）' },
+        options: [
+            { text: 'さんせんはちひゃく', isCorrect: false, reason: '陷阱！「三千」濁音化，「八百」促音+半濁音化。' },
+            { text: 'さんぜんはっぴゃく', isCorrect: true, reason: '正確！「三千八百」。' },
+            { text: 'さんぜんはちひゃく', isCorrect: false, reason: '「八百」也要促音+半濁音化。' },
+            { text: 'みぜんやひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化，「八百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['三千の濁音化', '八百の音變'] },
+        sourceItem: { value: 3800, kanji: '三千八百', reading: 'さんぜんはっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_64', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「四千二百」的正確讀音是？', stem_zh: '「四千二百」的正確讀音是？',
+        options: [
+            { text: 'よんせんにひゃく', isCorrect: true, reason: '正確！「四千二百」無音變。' },
+            { text: 'しせんにひゃく', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'よんぜんにひゃく', isCorrect: false, reason: '「四千」不濁音化。' },
+            { text: 'よせんふたひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四千二百」無音變。', relatedRules: ['四千の讀法', '二百の讀法'] },
+        sourceItem: { value: 4200, kanji: '四千二百', reading: 'よんせんにひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_65', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '這個品牌每月生產＿＿件商品。（五千三百）', stem_zh: '這個品牌每月生產五千三百件商品。',
+        options: [
+            { text: 'ごせんさんびゃく', isCorrect: true, reason: '正確！「五千三百」，「三百」濁音化。' },
+            { text: 'いつせんみひゃく', isCorrect: false, reason: '使用音讀「ご」，「三百」濁音化。' },
+            { text: 'ごぜんさんびゃく', isCorrect: false, reason: '「五千」不濁音化。' },
+            { text: 'ごせんさんひゃく', isCorrect: false, reason: '「三百」濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五千」無音變，「三百」濁音化。', relatedRules: ['五千の讀法', '三百の濁音化'] },
+        sourceItem: { value: 5300, kanji: '五千三百', reading: 'ごせんさんびゃく' }
+    },
+    {
+        id: 'num_thousands_extra_66', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'この掃除機はいくらですか？', speakerB: '＿＿です。（六千四百日圓）' },
+        options: [
+            { text: 'ろくせんよんひゃくえん', isCorrect: true, reason: '正確！「六千四百円」無音變。' },
+            { text: 'ろっせんしひゃくえん', isCorrect: false, reason: '「六千」不促音化，「四」讀「よん」。' },
+            { text: 'ろくぜんよんひゃくえん', isCorrect: false, reason: '「六千」不濁音化。' },
+            { text: 'むせんよひゃくえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六千四百円」無音變。', relatedRules: ['六千の讀法', '四百の讀法'] },
+        sourceItem: { value: 6400, kanji: '六千四百円', reading: 'ろくせんよんひゃくえん' }
+    },
+    {
+        id: 'num_thousands_extra_67', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「七千八百」的正確讀音是？', stem_zh: '「七千八百」的正確讀音是？',
+        options: [
+            { text: 'ななせんはっぴゃく', isCorrect: true, reason: '正確！「七千八百」，「八百」促音+半濁音化。' },
+            { text: 'しちせんはちひゃく', isCorrect: false, reason: '「七」讀「なな」，「八百」促音+半濁音化。' },
+            { text: 'ななぜんはっぴゃく', isCorrect: false, reason: '「七千」不濁音化。' },
+            { text: 'なのせんやひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七千」無音變，「八百」促音+半濁音化。', relatedRules: ['七千の讀法', '八百の音變'] },
+        sourceItem: { value: 7800, kanji: '七千八百', reading: 'ななせんはっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_68', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '今年新增＿＿個帳號。（八千六百）', stem_zh: '今年新增八千六百個帳號。',
+        options: [
+            { text: 'はちせんろくひゃく', isCorrect: false, reason: '陷阱！「八千」促音化，「六百」促音+半濁音化。' },
+            { text: 'はっせんろっぴゃく', isCorrect: true, reason: '正確！「八千六百」。' },
+            { text: 'はっせんろくひゃく', isCorrect: false, reason: '「六百」也要促音+半濁音化。' },
+            { text: 'やせんむひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八千」促音化，「六百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['八千の促音化', '六百の音變'] },
+        sourceItem: { value: 8600, kanji: '八千六百', reading: 'はっせんろっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_69', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: 'この商品は何個売れましたか？', speakerB: '＿＿個売れました。（九千五百）' },
+        options: [
+            { text: 'きゅうせんごひゃく', isCorrect: true, reason: '正確！「九千五百」無音變。' },
+            { text: 'くせんごひゃく', isCorrect: false, reason: '「九」讀「きゅう」。' },
+            { text: 'きゅうぜんごひゃく', isCorrect: false, reason: '「九千」不濁音化。' },
+            { text: 'ここのせんいつひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九千五百」無音變。', relatedRules: ['九千の讀法', '五百の讀法'] },
+        sourceItem: { value: 9500, kanji: '九千五百', reading: 'きゅうせんごひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_70', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「千三百」的正確讀音是？', stem_zh: '「一千三百」的正確讀音是？',
+        options: [
+            { text: 'せんさんびゃく', isCorrect: true, reason: '正確！「千三百」，「三百」濁音化。' },
+            { text: 'いちせんさんひゃく', isCorrect: false, reason: '「千」省略「一」，「三百」濁音化。' },
+            { text: 'せんさんひゃく', isCorrect: false, reason: '「三百」濁音化。' },
+            { text: 'ちみびゃく', isCorrect: false, reason: '使用音讀「せん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「千三百」省略「一」，「三百」濁音化。', relatedRules: ['千の省略', '三百の濁音化'] },
+        sourceItem: { value: 1300, kanji: '千三百', reading: 'せんさんびゃく' }
+    },
+    {
+        id: 'num_thousands_extra_71', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '這棟大樓高＿＿公尺。（二千八百）', stem_zh: '這棟大樓高二千八百公尺。',
+        options: [
+            { text: 'にせんはっぴゃく', isCorrect: true, reason: '正確！「二千八百」，「八百」促音+半濁音化。' },
+            { text: 'にぜんはちひゃく', isCorrect: false, reason: '「二千」不濁音化，「八百」促音+半濁音化。' },
+            { text: 'ふたせんやひゃく', isCorrect: false, reason: '使用音讀。' },
+            { text: 'にせんはちひゃく', isCorrect: false, reason: '「八百」促音+半濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二千」無音變，「八百」促音+半濁音化。', relatedRules: ['二千の讀法', '八百の音變'] },
+        sourceItem: { value: 2800, kanji: '二千八百', reading: 'にせんはっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_72', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このスピーカーはいくらですか？', speakerB: '＿＿です。（三千一百日圓）' },
+        options: [
+            { text: 'さんせんひゃくえん', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
+            { text: 'さんぜんひゃくえん', isCorrect: true, reason: '正確！「三千百円」。' },
+            { text: 'さんぜんいっぴゃくえん', isCorrect: false, reason: '「百」通常省略「一」。' },
+            { text: 'みぜんももえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化，「百」省略「一」。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '百の省略'] },
+        sourceItem: { value: 3100, kanji: '三千百円', reading: 'さんぜんひゃくえん' }
+    },
+    {
+        id: 'num_thousands_extra_73', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「四千三百」的正確讀音是？', stem_zh: '「四千三百」的正確讀音是？',
+        options: [
+            { text: 'よんせんさんびゃく', isCorrect: true, reason: '正確！「四千三百」，「三百」濁音化。' },
+            { text: 'しせんさんひゃく', isCorrect: false, reason: '「四」讀「よん」，「三百」濁音化。' },
+            { text: 'よんぜんさんびゃく', isCorrect: false, reason: '「四千」不濁音化。' },
+            { text: 'よせんみびゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四千」無音變，「三百」濁音化。', relatedRules: ['四千の讀法', '三百の濁音化'] },
+        sourceItem: { value: 4300, kanji: '四千三百', reading: 'よんせんさんびゃく' }
+    },
+    {
+        id: 'num_thousands_extra_74', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '這場音樂會有＿＿名觀眾。（五千六百）', stem_zh: '這場音樂會有五千六百名觀眾。',
+        options: [
+            { text: 'ごせんろっぴゃく', isCorrect: true, reason: '正確！「五千六百」，「六百」促音+半濁音化。' },
+            { text: 'いつせんむひゃく', isCorrect: false, reason: '使用音讀「ご」，「六百」促音+半濁音化。' },
+            { text: 'ごぜんろっぴゃく', isCorrect: false, reason: '「五千」不濁音化。' },
+            { text: 'ごせんろくひゃく', isCorrect: false, reason: '「六百」促音+半濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五千」無音變，「六百」促音+半濁音化。', relatedRules: ['五千の讀法', '六百の音變'] },
+        sourceItem: { value: 5600, kanji: '五千六百', reading: 'ごせんろっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_75', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: 'この動画は何回再生されましたか？', speakerB: '＿＿回再生されました。（六千五百）' },
+        options: [
+            { text: 'ろくせんごひゃく', isCorrect: true, reason: '正確！「六千五百」無音變。' },
+            { text: 'ろっせんごひゃく', isCorrect: false, reason: '「六千」不促音化。' },
+            { text: 'ろくぜんごひゃく', isCorrect: false, reason: '「六千」不濁音化。' },
+            { text: 'むせんいつひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六千五百」無音變。', relatedRules: ['六千の讀法', '五百の讀法'] },
+        sourceItem: { value: 6500, kanji: '六千五百', reading: 'ろくせんごひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_76', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「七千四百」的正確讀音是？', stem_zh: '「七千四百」的正確讀音是？',
+        options: [
+            { text: 'ななせんよんひゃく', isCorrect: true, reason: '正確！「七千四百」無音變。' },
+            { text: 'しちせんしひゃく', isCorrect: false, reason: '「七」讀「なな」，「四」讀「よん」。' },
+            { text: 'ななぜんよんひゃく', isCorrect: false, reason: '「七千」不濁音化。' },
+            { text: 'なのせんよひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七千四百」無音變。', relatedRules: ['七千の讀法', '四百の讀法'] },
+        sourceItem: { value: 7400, kanji: '七千四百', reading: 'ななせんよんひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_77', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '這批貨物重＿＿公斤。（八千三百）', stem_zh: '這批貨物重八千三百公斤。',
+        options: [
+            { text: 'はちせんさんひゃく', isCorrect: false, reason: '陷阱！「八千」促音化，「三百」濁音化。' },
+            { text: 'はっせんさんびゃく', isCorrect: true, reason: '正確！「八千三百」。' },
+            { text: 'はっせんさんひゃく', isCorrect: false, reason: '「三百」也要濁音化。' },
+            { text: 'やせんみびゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八千」促音化，「三百」濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['八千の促音化', '三百の濁音化'] },
+        sourceItem: { value: 8300, kanji: '八千三百', reading: 'はっせんさんびゃく' }
+    },
+    {
+        id: 'num_thousands_extra_78', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このテーブルはいくらですか？', speakerB: '＿＿です。（九千八百日圓）' },
+        options: [
+            { text: 'きゅうせんはっぴゃくえん', isCorrect: true, reason: '正確！「九千八百円」，「八百」促音+半濁音化。' },
+            { text: 'くせんはちひゃくえん', isCorrect: false, reason: '「九」讀「きゅう」，「八百」促音+半濁音化。' },
+            { text: 'きゅうぜんはっぴゃくえん', isCorrect: false, reason: '「九千」不濁音化。' },
+            { text: 'ここのせんやひゃくえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九千」無音變，「八百」促音+半濁音化。', relatedRules: ['九千の讀法', '八百の音變'] },
+        sourceItem: { value: 9800, kanji: '九千八百円', reading: 'きゅうせんはっぴゃくえん' }
+    },
+    {
+        id: 'num_thousands_extra_79', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「千七百」的正確讀音是？', stem_zh: '「一千七百」的正確讀音是？',
+        options: [
+            { text: 'せんななひゃく', isCorrect: true, reason: '正確！「千七百」省略「一」。' },
+            { text: 'いちせんしちひゃく', isCorrect: false, reason: '「千」省略「一」，「七」讀「なな」。' },
+            { text: 'せんななびゃく', isCorrect: false, reason: '「七百」不濁音化。' },
+            { text: 'ちなのひゃく', isCorrect: false, reason: '使用音讀「せん」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「千七百」省略「一」。', relatedRules: ['千の省略', '七百の讀法'] },
+        sourceItem: { value: 1700, kanji: '千七百', reading: 'せんななひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_80', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '倉庫存放了＿＿箱貨物。（二千一百）', stem_zh: '倉庫存放了二千一百箱貨物。',
+        options: [
+            { text: 'にせんひゃく', isCorrect: true, reason: '正確！「二千百」。' },
+            { text: 'にぜんいっぴゃく', isCorrect: false, reason: '「二千」不濁音化，「百」省略「一」。' },
+            { text: 'ふたせんもも', isCorrect: false, reason: '使用音讀。' },
+            { text: 'にせんいちひゃく', isCorrect: false, reason: '「百」省略「一」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二千百」，「百」省略「一」。', relatedRules: ['二千の讀法', '百の省略'] },
+        sourceItem: { value: 2100, kanji: '二千百', reading: 'にせんひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_81', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何人登録しましたか？', speakerB: '＿＿人登録しました。（三千六百）' },
+        options: [
+            { text: 'さんせんろくひゃく', isCorrect: false, reason: '陷阱！「三千」濁音化，「六百」促音+半濁音化。' },
+            { text: 'さんぜんろっぴゃく', isCorrect: true, reason: '正確！「三千六百」。' },
+            { text: 'さんぜんろくひゃく', isCorrect: false, reason: '「六百」也要促音+半濁音化。' },
+            { text: 'みぜんむひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化，「六百」促音+半濁音化。', trapExplanation: '注意兩處音變。', relatedRules: ['三千の濁音化', '六百の音變'] },
+        sourceItem: { value: 3600, kanji: '三千六百', reading: 'さんぜんろっぴゃく' }
+    },
+    {
+        id: 'num_thousands_extra_82', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「四千九百」的正確讀音是？', stem_zh: '「四千九百」的正確讀音是？',
+        options: [
+            { text: 'よんせんきゅうひゃく', isCorrect: true, reason: '正確！「四千九百」無音變。' },
+            { text: 'しせんくひゃく', isCorrect: false, reason: '「四」讀「よん」，「九」讀「きゅう」。' },
+            { text: 'よんぜんきゅうひゃく', isCorrect: false, reason: '「四千」不濁音化。' },
+            { text: 'よせんここのひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四千九百」無音變。', relatedRules: ['四千の讀法', '九百の讀法'] },
+        sourceItem: { value: 4900, kanji: '四千九百', reading: 'よんせんきゅうひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_83', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '這個系列銷售了＿＿套。（五千四百）', stem_zh: '這個系列銷售了五千四百套。',
+        options: [
+            { text: 'ごせんよんひゃく', isCorrect: true, reason: '正確！「五千四百」無音變。' },
+            { text: 'いつせんしひゃく', isCorrect: false, reason: '使用音讀「ご」，「四」讀「よん」。' },
+            { text: 'ごぜんよんひゃく', isCorrect: false, reason: '「五千」不濁音化。' },
+            { text: 'ごせんよんびゃく', isCorrect: false, reason: '「四百」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五千四百」無音變。', relatedRules: ['五千の讀法', '四百の讀法'] },
+        sourceItem: { value: 5400, kanji: '五千四百', reading: 'ごせんよんひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_84', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このソファはいくらですか？', speakerB: '＿＿です。（六千七百日圓）' },
+        options: [
+            { text: 'ろくせんななひゃくえん', isCorrect: true, reason: '正確！「六千七百円」無音變。' },
+            { text: 'ろっせんしちひゃくえん', isCorrect: false, reason: '「六千」不促音化，「七」讀「なな」。' },
+            { text: 'ろくぜんななひゃくえん', isCorrect: false, reason: '「六千」不濁音化。' },
+            { text: 'むせんなのひゃくえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六千七百円」無音變。', relatedRules: ['六千の讀法', '七百の讀法'] },
+        sourceItem: { value: 6700, kanji: '六千七百円', reading: 'ろくせんななひゃくえん' }
+    },
+    {
+        id: 'num_thousands_extra_85', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「七千一百」的正確讀音是？', stem_zh: '「七千一百」的正確讀音是？',
+        options: [
+            { text: 'ななせんひゃく', isCorrect: true, reason: '正確！「七千百」，「百」省略「一」。' },
+            { text: 'しちせんいっぴゃく', isCorrect: false, reason: '「七」讀「なな」，「百」省略「一」。' },
+            { text: 'ななぜんひゃく', isCorrect: false, reason: '「七千」不濁音化。' },
+            { text: 'なのせんもも', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七千」無音變，「百」省略「一」。', relatedRules: ['七千の讀法', '百の省略'] },
+        sourceItem: { value: 7100, kanji: '七千百', reading: 'ななせんひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_86', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '這個地區有＿＿家商店。（八千四百）', stem_zh: '這個地區有八千四百家商店。',
+        options: [
+            { text: 'はちせんよんひゃく', isCorrect: false, reason: '陷阱！「八千」促音化。' },
+            { text: 'はっせんよんひゃく', isCorrect: true, reason: '正確！「八千四百」。' },
+            { text: 'はっせんしひゃく', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'やせんよひゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八千」促音化，「四百」無音變。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千の促音化', '四百の讀法'] },
+        sourceItem: { value: 8400, kanji: '八千四百', reading: 'はっせんよんひゃく' }
+    },
+    {
+        id: 'num_thousands_extra_87', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '今月は何件の注文がありましたか？', speakerB: '＿＿件ありました。（九千三百）' },
+        options: [
+            { text: 'きゅうせんさんびゃく', isCorrect: true, reason: '正確！「九千三百」，「三百」濁音化。' },
+            { text: 'くせんさんひゃく', isCorrect: false, reason: '「九」讀「きゅう」，「三百」濁音化。' },
+            { text: 'きゅうぜんさんびゃく', isCorrect: false, reason: '「九千」不濁音化。' },
+            { text: 'ここのせんみびゃく', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九千」無音變，「三百」濁音化。', relatedRules: ['九千の讀法', '三百の濁音化'] },
+        sourceItem: { value: 9300, kanji: '九千三百', reading: 'きゅうせんさんびゃく' }
+    },
+    {
+        id: 'num_thousands_extra_88', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: true,
+        stem: '「一万三千」的正確讀音是？', stem_zh: '「一萬三千」的正確讀音是？',
+        options: [
+            { text: 'いちまんさんせん', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
+            { text: 'いちまんさんぜん', isCorrect: true, reason: '正確！「一万三千」。' },
+            { text: 'まんさんぜん', isCorrect: false, reason: '「一万」不可省略「一」。' },
+            { text: 'いちばんさんぜん', isCorrect: false, reason: '「万」不濁音化。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「一万」不可省略「一」，「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['一万の特殊規則', '三千の濁音化'] },
+        sourceItem: { value: 13000, kanji: '一万三千', reading: 'いちまんさんぜん' }
+    },
+    {
+        id: 'num_thousands_extra_89', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '這本書定價＿＿日圓。（二萬五千）', stem_zh: '這本書定價二萬五千日圓。',
+        options: [
+            { text: 'にまんごせんえん', isCorrect: true, reason: '正確！「二万五千円」無音變。' },
+            { text: 'にばんごぜんえん', isCorrect: false, reason: '「万」不濁音化，「五千」不濁音化。' },
+            { text: 'ふたまんいつせんえん', isCorrect: false, reason: '使用音讀。' },
+            { text: 'にまんごぜんえん', isCorrect: false, reason: '「五千」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二万五千円」無音變。', relatedRules: ['万位數の讀法', '五千の讀法'] },
+        sourceItem: { value: 25000, kanji: '二万五千円', reading: 'にまんごせんえん' }
+    },
+    {
+        id: 'num_thousands_extra_90', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'この冷蔵庫はいくらですか？', speakerB: '＿＿です。（三萬八千日圓）' },
+        options: [
+            { text: 'さんまんはちせんえん', isCorrect: false, reason: '陷阱！「八千」促音化。' },
+            { text: 'さんまんはっせんえん', isCorrect: true, reason: '正確！「三万八千円」。' },
+            { text: 'さんばんはっせんえん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'みまんやせんえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千の促音化', '万位數金額'] },
+        sourceItem: { value: 38000, kanji: '三万八千円', reading: 'さんまんはっせんえん' }
+    },
+    {
+        id: 'num_thousands_extra_91', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「四万六千」的正確讀音是？', stem_zh: '「四萬六千」的正確讀音是？',
+        options: [
+            { text: 'よんまんろくせん', isCorrect: true, reason: '正確！「四万六千」無音變。' },
+            { text: 'しまんろくぜん', isCorrect: false, reason: '「四」讀「よん」，「六千」不濁音化。' },
+            { text: 'よんばんろくせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'よまんむせん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四万六千」無音變。', relatedRules: ['万位數の讀法', '六千の讀法'] },
+        sourceItem: { value: 46000, kanji: '四万六千', reading: 'よんまんろくせん' }
+    },
+    {
+        id: 'num_thousands_extra_92', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '演唱會門票售出＿＿張。（五萬二千）', stem_zh: '演唱會門票售出五萬二千張。',
+        options: [
+            { text: 'ごまんにせん', isCorrect: true, reason: '正確！「五万二千」無音變。' },
+            { text: 'いつまんふたせん', isCorrect: false, reason: '使用音讀「ご」和「に」。' },
+            { text: 'ごばんにせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'ごまんにぜん', isCorrect: false, reason: '「二千」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五万二千」無音變。', relatedRules: ['万位數の讀法', '二千の讀法'] },
+        sourceItem: { value: 52000, kanji: '五万二千', reading: 'ごまんにせん' }
+    },
+    {
+        id: 'num_thousands_extra_93', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何人フォローしていますか？', speakerB: '＿＿人です。（六萬三千）' },
+        options: [
+            { text: 'ろくまんさんせん', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
+            { text: 'ろくまんさんぜん', isCorrect: true, reason: '正確！「六万三千」。' },
+            { text: 'ろくばんさんぜん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'むまんみぜん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '万位數組合'] },
+        sourceItem: { value: 63000, kanji: '六万三千', reading: 'ろくまんさんぜん' }
+    },
+    {
+        id: 'num_thousands_extra_94', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「七万四千」的正確讀音是？', stem_zh: '「七萬四千」的正確讀音是？',
+        options: [
+            { text: 'ななまんよんせん', isCorrect: true, reason: '正確！「七万四千」無音變。' },
+            { text: 'しちまんしせん', isCorrect: false, reason: '「七」讀「なな」，「四」讀「よん」。' },
+            { text: 'ななばんよんせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'なのまんよせん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「七万四千」無音變。', relatedRules: ['万位數の讀法', '四千の讀法'] },
+        sourceItem: { value: 74000, kanji: '七万四千', reading: 'ななまんよんせん' }
+    },
+    {
+        id: 'num_thousands_extra_95', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '網站每月有＿＿訪客。（八萬五千）', stem_zh: '網站每月有八萬五千訪客。',
+        options: [
+            { text: 'はちまんごせん', isCorrect: true, reason: '正確！「八万五千」，注意「八万」不促音化。' },
+            { text: 'はっまんごせん', isCorrect: false, reason: '「八万」不促音化。' },
+            { text: 'はちばんごせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'やまんいつせん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八万」不促音化，與「八千」不同。', relatedRules: ['八万不促音化', '五千の讀法'] },
+        sourceItem: { value: 85000, kanji: '八万五千', reading: 'はちまんごせん' }
+    },
+    {
+        id: 'num_thousands_extra_96', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このパソコンはいくらですか？', speakerB: '＿＿です。（九萬七千日圓）' },
+        options: [
+            { text: 'きゅうまんななせんえん', isCorrect: true, reason: '正確！「九万七千円」無音變。' },
+            { text: 'くまんしちせんえん', isCorrect: false, reason: '「九」讀「きゅう」，「七」讀「なな」。' },
+            { text: 'きゅうばんななせんえん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'ここのまんなのせんえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九万七千円」無音變。', relatedRules: ['万位數の讀法', '七千の讀法'] },
+        sourceItem: { value: 97000, kanji: '九万七千円', reading: 'きゅうまんななせんえん' }
+    },
+    {
+        id: 'num_thousands_extra_97', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: true,
+        stem: '「十万三千」的正確讀音是？', stem_zh: '「十萬三千」的正確讀音是？',
+        options: [
+            { text: 'じゅうまんさんせん', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
+            { text: 'じゅうまんさんぜん', isCorrect: true, reason: '正確！「十万三千」。' },
+            { text: 'とおまんさんぜん', isCorrect: false, reason: '使用音讀「じゅう」。' },
+            { text: 'じゅうばんさんぜん', isCorrect: false, reason: '「万」不濁音化。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '十万の讀法'] },
+        sourceItem: { value: 103000, kanji: '十万三千', reading: 'じゅうまんさんぜん' }
+    },
+    {
+        id: 'num_thousands_extra_98', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '這批訂單總計＿＿日圓。（十五萬八千）', stem_zh: '這批訂單總計十五萬八千日圓。',
+        options: [
+            { text: 'じゅうごまんはちせんえん', isCorrect: false, reason: '陷阱！「八千」促音化。' },
+            { text: 'じゅうごまんはっせんえん', isCorrect: true, reason: '正確！「十五万八千円」。' },
+            { text: 'じゅうごばんはっせんえん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'とおごまんやせんえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千の促音化', '大數字金額'] },
+        sourceItem: { value: 158000, kanji: '十五万八千円', reading: 'じゅうごまんはっせんえん' }
+    },
+    {
+        id: 'num_thousands_extra_99', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: 'この大学には何人の学生がいますか？', speakerB: '＿＿人います。（二十萬千）' },
+        options: [
+            { text: 'にじゅうまんせん', isCorrect: true, reason: '正確！「二十万千」，「千」省略「一」。' },
+            { text: 'にじゅうまんいちせん', isCorrect: false, reason: '「千」通常省略「一」。' },
+            { text: 'にじゅうばんせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'ふたじゅうまんち', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「千」省略「一」。', relatedRules: ['千の省略', '大數字の讀法'] },
+        sourceItem: { value: 201000, kanji: '二十万千', reading: 'にじゅうまんせん' }
+    },
+    {
+        id: 'num_thousands_extra_100', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「百万」的正確讀音是？', stem_zh: '「一百萬」的正確讀音是？',
+        options: [
+            { text: 'ひゃくまん', isCorrect: true, reason: '正確！「百万」省略「一」。' },
+            { text: 'いっぴゃくまん', isCorrect: false, reason: '「百万」通常省略「一」。' },
+            { text: 'ひゃくばん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'ももまん', isCorrect: false, reason: '使用音讀「ひゃく」。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「百万」省略「一」。', relatedRules: ['百万の讀法', '大數字の省略'] },
+        sourceItem: { value: 1000000, kanji: '百万', reading: 'ひゃくまん' }
+    },
+    {
+        id: 'num_thousands_extra_101', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '這場展覽有＿＿名參觀者。（一萬八千）', stem_zh: '這場展覽有一萬八千名參觀者。',
+        options: [
+            { text: 'いちまんはちせん', isCorrect: false, reason: '陷阱！「八千」促音化。' },
+            { text: 'いちまんはっせん', isCorrect: true, reason: '正確！「一万八千」。' },
+            { text: 'まんはっせん', isCorrect: false, reason: '「一万」不可省略「一」。' },
+            { text: 'いちばんはっせん', isCorrect: false, reason: '「万」不濁音化。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「一万」不可省略「一」，「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['一万の特殊規則', '八千の促音化'] },
+        sourceItem: { value: 18000, kanji: '一万八千', reading: 'いちまんはっせん' }
+    },
+    {
+        id: 'num_thousands_extra_102', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'この家具セットはいくらですか？', speakerB: '＿＿です。（二萬三千日圓）' },
+        options: [
+            { text: 'にまんさんせんえん', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
+            { text: 'にまんさんぜんえん', isCorrect: true, reason: '正確！「二万三千円」。' },
+            { text: 'にばんさんぜんえん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'ふたまんみぜんえん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '万位數金額'] },
+        sourceItem: { value: 23000, kanji: '二万三千円', reading: 'にまんさんぜんえん' }
+    },
+    {
+        id: 'num_thousands_extra_103', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「三万千」的正確讀音是？', stem_zh: '「三萬一千」的正確讀音是？',
+        options: [
+            { text: 'さんまんせん', isCorrect: true, reason: '正確！「三万千」，「千」省略「一」。' },
+            { text: 'さんまんいちせん', isCorrect: false, reason: '「千」通常省略「一」。' },
+            { text: 'さんばんせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'みまんち', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「千」省略「一」。', relatedRules: ['千の省略', '万位數組合'] },
+        sourceItem: { value: 31000, kanji: '三万千', reading: 'さんまんせん' }
+    },
+    {
+        id: 'num_thousands_extra_104', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '公司利潤達到＿＿萬日圓。（四萬五千）', stem_zh: '公司利潤達到四萬五千萬日圓。',
+        options: [
+            { text: 'よんまんごせん', isCorrect: true, reason: '正確！「四万五千」無音變。' },
+            { text: 'しまんごぜん', isCorrect: false, reason: '「四」讀「よん」，「五千」不濁音化。' },
+            { text: 'よんばんごせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'よまんいつせん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四万五千」無音變。', relatedRules: ['四の避諱', '五千の讀法'] },
+        sourceItem: { value: 45000, kanji: '四万五千', reading: 'よんまんごせん' }
+    },
+    {
+        id: 'num_thousands_extra_105', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: 'チャンネル登録者は何人ですか？', speakerB: '＿＿人です。（五萬六千）' },
+        options: [
+            { text: 'ごまんろくせん', isCorrect: true, reason: '正確！「五万六千」無音變。' },
+            { text: 'いつまんむせん', isCorrect: false, reason: '使用音讀「ご」和「ろく」。' },
+            { text: 'ごばんろくせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'ごまんろくぜん', isCorrect: false, reason: '「六千」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五万六千」無音變。', relatedRules: ['五万の讀法', '六千の讀法'] },
+        sourceItem: { value: 56000, kanji: '五万六千', reading: 'ごまんろくせん' }
+    },
+    {
+        id: 'num_thousands_extra_106', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「六万七千」的正確讀音是？', stem_zh: '「六萬七千」的正確讀音是？',
+        options: [
+            { text: 'ろくまんななせん', isCorrect: true, reason: '正確！「六万七千」無音變。' },
+            { text: 'むまんしちせん', isCorrect: false, reason: '使用音讀「ろく」，「七」讀「なな」。' },
+            { text: 'ろくばんななせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'ろくまんななぜん', isCorrect: false, reason: '「七千」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六万七千」無音變。', relatedRules: ['六万の讀法', '七千の讀法'] },
+        sourceItem: { value: 67000, kanji: '六万七千', reading: 'ろくまんななせん' }
+    },
+    {
+        id: 'num_thousands_extra_107', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '這批貨物價值＿＿日圓。（七萬八千）', stem_zh: '這批貨物價值七萬八千日圓。',
+        options: [
+            { text: 'ななまんはちせん', isCorrect: false, reason: '陷阱！「八千」促音化。' },
+            { text: 'ななまんはっせん', isCorrect: true, reason: '正確！「七万八千」。' },
+            { text: 'しちまんはっせん', isCorrect: false, reason: '「七」讀「なな」。' },
+            { text: 'ななばんはっせん', isCorrect: false, reason: '「万」不濁音化。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千の促音化', '万位數組合'] },
+        sourceItem: { value: 78000, kanji: '七万八千', reading: 'ななまんはっせん' }
+    },
+    {
+        id: 'num_thousands_extra_108', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'このエアコンはいくらですか？', speakerB: '＿＿です。（八萬九千日圓）' },
+        options: [
+            { text: 'はちまんきゅうせん', isCorrect: true, reason: '正確！「八万九千」，注意「八万」不促音化。' },
+            { text: 'はっまんきゅうせん', isCorrect: false, reason: '「八万」不促音化。' },
+            { text: 'はちばんきゅうせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'やまんここのせん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八万」不促音化，與「八千」不同。', relatedRules: ['八万不促音化', '九千の讀法'] },
+        sourceItem: { value: 89000, kanji: '八万九千', reading: 'はちまんきゅうせん' }
+    },
+    {
+        id: 'num_thousands_extra_109', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「九万二千」的正確讀音是？', stem_zh: '「九萬二千」的正確讀音是？',
+        options: [
+            { text: 'きゅうまんにせん', isCorrect: true, reason: '正確！「九万二千」無音變。' },
+            { text: 'くまんふたせん', isCorrect: false, reason: '「九」讀「きゅう」，「二」讀「に」。' },
+            { text: 'きゅうばんにせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'きゅうまんにぜん', isCorrect: false, reason: '「二千」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九万二千」無音變。', relatedRules: ['九万の讀法', '二千の讀法'] },
+        sourceItem: { value: 92000, kanji: '九万二千', reading: 'きゅうまんにせん' }
+    },
+    {
+        id: 'num_thousands_extra_110', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '今年銷售額達＿＿萬日圓。（十一萬三千）', stem_zh: '今年銷售額達十一萬三千萬日圓。',
+        options: [
+            { text: 'じゅういちまんさんせん', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
+            { text: 'じゅういちまんさんぜん', isCorrect: true, reason: '正確！「十一万三千」。' },
+            { text: 'じゅういちばんさんぜん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'とおいちまんみぜん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '大數字組合'] },
+        sourceItem: { value: 113000, kanji: '十一万三千', reading: 'じゅういちまんさんぜん' }
+    },
+    {
+        id: 'num_thousands_extra_111', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何人参加しましたか？', speakerB: '＿＿人参加しました。（十二萬四千）' },
+        options: [
+            { text: 'じゅうにまんよんせん', isCorrect: true, reason: '正確！「十二万四千」無音變。' },
+            { text: 'じゅうにまんしせん', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'じゅうにばんよんせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'とおにまんよせん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「十二万四千」無音變。', relatedRules: ['万位數の讀法', '四千の讀法'] },
+        sourceItem: { value: 124000, kanji: '十二万四千', reading: 'じゅうにまんよんせん' }
+    },
+    {
+        id: 'num_thousands_extra_112', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「二十万五千」的正確讀音是？', stem_zh: '「二十萬五千」的正確讀音是？',
+        options: [
+            { text: 'にじゅうまんごせん', isCorrect: true, reason: '正確！「二十万五千」無音變。' },
+            { text: 'にじゅうまんいつせん', isCorrect: false, reason: '使用音讀「ご」。' },
+            { text: 'にじゅうばんごせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'にじゅうまんごぜん', isCorrect: false, reason: '「五千」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「二十万五千」無音變。', relatedRules: ['二十万の讀法', '五千の讀法'] },
+        sourceItem: { value: 205000, kanji: '二十万五千', reading: 'にじゅうまんごせん' }
+    },
+    {
+        id: 'num_thousands_extra_113', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: true,
+        stem: '預算是＿＿日圓。（三十萬八千）', stem_zh: '預算是三十萬八千日圓。',
+        options: [
+            { text: 'さんじゅうまんはちせん', isCorrect: false, reason: '陷阱！「八千」促音化。' },
+            { text: 'さんじゅうまんはっせん', isCorrect: true, reason: '正確！「三十万八千」。' },
+            { text: 'さんじゅうばんはっせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'みじゅうまんやせん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['八千の促音化', '大數字金額'] },
+        sourceItem: { value: 308000, kanji: '三十万八千', reading: 'さんじゅうまんはっせん' }
+    },
+    {
+        id: 'num_thousands_extra_114', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: false,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'この車はいくらですか？', speakerB: '＿＿です。（四十萬六千日圓）' },
+        options: [
+            { text: 'よんじゅうまんろくせん', isCorrect: true, reason: '正確！「四十万六千」無音變。' },
+            { text: 'しじゅうまんろくせん', isCorrect: false, reason: '「四」讀「よん」。' },
+            { text: 'よんじゅうばんろくせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'よじゅうまんむせん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「四十万六千」無音變。', relatedRules: ['四十万の讀法', '六千の讀法'] },
+        sourceItem: { value: 406000, kanji: '四十万六千', reading: 'よんじゅうまんろくせん' }
+    },
+    {
+        id: 'num_thousands_extra_115', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「五十万七千」的正確讀音是？', stem_zh: '「五十萬七千」的正確讀音是？',
+        options: [
+            { text: 'ごじゅうまんななせん', isCorrect: true, reason: '正確！「五十万七千」無音變。' },
+            { text: 'いつじゅうまんしちせん', isCorrect: false, reason: '使用音讀「ご」，「七」讀「なな」。' },
+            { text: 'ごじゅうばんななせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'ごじゅうまんななぜん', isCorrect: false, reason: '「七千」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「五十万七千」無音變。', relatedRules: ['五十万の讀法', '七千の讀法'] },
+        sourceItem: { value: 507000, kanji: '五十万七千', reading: 'ごじゅうまんななせん' }
+    },
+    {
+        id: 'num_thousands_extra_116', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '這棟大樓價值＿＿萬日圓。（六十萬九千）', stem_zh: '這棟大樓價值六十萬九千萬日圓。',
+        options: [
+            { text: 'ろくじゅうまんきゅうせん', isCorrect: true, reason: '正確！「六十万九千」無音變。' },
+            { text: 'むじゅうまんくせん', isCorrect: false, reason: '使用音讀「ろく」，「九」讀「きゅう」。' },
+            { text: 'ろくじゅうばんきゅうせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'ろくじゅうまんここのせん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「六十万九千」無音變。', relatedRules: ['六十万の讀法', '九千の讀法'] },
+        sourceItem: { value: 609000, kanji: '六十万九千', reading: 'ろくじゅうまんきゅうせん' }
+    },
+    {
+        id: 'num_thousands_extra_117', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問數量', stem_zh: '問數量',
+        dialogue: { speakerA: '何人視聴しましたか？', speakerB: '＿＿人視聴しました。（七十萬三千）' },
+        options: [
+            { text: 'ななじゅうまんさんせん', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
+            { text: 'ななじゅうまんさんぜん', isCorrect: true, reason: '正確！「七十万三千」。' },
+            { text: 'しちじゅうまんさんぜん', isCorrect: false, reason: '「七」讀「なな」。' },
+            { text: 'ななじゅうばんさんぜん', isCorrect: false, reason: '「万」不濁音化。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '大數字組合'] },
+        sourceItem: { value: 703000, kanji: '七十万三千', reading: 'ななじゅうまんさんぜん' }
+    },
+    {
+        id: 'num_thousands_extra_118', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: false,
+        stem: '「八十万四千」的正確讀音是？', stem_zh: '「八十萬四千」的正確讀音是？',
+        options: [
+            { text: 'はちじゅうまんよんせん', isCorrect: true, reason: '正確！「八十万四千」無音變。' },
+            { text: 'やじゅうまんしせん', isCorrect: false, reason: '使用音讀「はち」，「四」讀「よん」。' },
+            { text: 'はちじゅうばんよんせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'はちじゅうまんよんぜん', isCorrect: false, reason: '「四千」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「八十万四千」無音變。', relatedRules: ['八十万の讀法', '四千の讀法'] },
+        sourceItem: { value: 804000, kanji: '八十万四千', reading: 'はちじゅうまんよんせん' }
+    },
+    {
+        id: 'num_thousands_extra_119', category: 'numbers', subcategory: 'thousands', type: 'sentence', isTrap: false,
+        stem: '資本金是＿＿日圓。（九十萬五千）', stem_zh: '資本金是九十萬五千日圓。',
+        options: [
+            { text: 'きゅうじゅうまんごせん', isCorrect: true, reason: '正確！「九十万五千」無音變。' },
+            { text: 'くじゅうまんいつせん', isCorrect: false, reason: '「九」讀「きゅう」，「五」讀「ご」。' },
+            { text: 'きゅうじゅうばんごせん', isCorrect: false, reason: '「万」不濁音化。' },
+            { text: 'きゅうじゅうまんごぜん', isCorrect: false, reason: '「五千」不濁音化。' }
+        ],
+        correctIndex: 0,
+        explanation: { correctRule: '「九十万五千」無音變。', relatedRules: ['九十万の讀法', '五千の讀法'] },
+        sourceItem: { value: 905000, kanji: '九十万五千', reading: 'きゅうじゅうまんごせん' }
+    },
+    {
+        id: 'num_thousands_extra_120', category: 'numbers', subcategory: 'thousands', type: 'dialogue', isTrap: true,
+        stem: '問價格', stem_zh: '問價格',
+        dialogue: { speakerA: 'この土地はいくらですか？', speakerB: '＿＿です。（百萬八千日圓）' },
+        options: [
+            { text: 'ひゃくまんはちせん', isCorrect: false, reason: '陷阱！「八千」促音化。' },
+            { text: 'ひゃくまんはっせん', isCorrect: true, reason: '正確！「百万八千」。' },
+            { text: 'いっぴゃくまんはっせん', isCorrect: false, reason: '「百万」省略「一」。' },
+            { text: 'ひゃくばんはっせん', isCorrect: false, reason: '「万」不濁音化。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「百万」省略「一」，「八千」促音化。', trapExplanation: '「八千」的促音化。', relatedRules: ['百万の省略', '八千の促音化'] },
+        sourceItem: { value: 1008000, kanji: '百万八千', reading: 'ひゃくまんはっせん' }
+    },
+    {
+        id: 'num_thousands_extra_121', category: 'numbers', subcategory: 'thousands', type: 'pronunciation', isTrap: true,
+        stem: '「二百万三千」的正確讀音是？', stem_zh: '「二百萬三千」的正確讀音是？',
+        options: [
+            { text: 'にひゃくまんさんせん', isCorrect: false, reason: '陷阱！「三千」濁音化。' },
+            { text: 'にひゃくまんさんぜん', isCorrect: true, reason: '正確！「二百万三千」。' },
+            { text: 'にびゃくまんさんぜん', isCorrect: false, reason: '「二百」不濁音化。' },
+            { text: 'ふたひゃくまんみぜん', isCorrect: false, reason: '使用音讀。' }
+        ],
+        correctIndex: 1,
+        explanation: { correctRule: '「三千」濁音化。', trapExplanation: '「三千」的濁音化。', relatedRules: ['三千の濁音化', '大數字組合'] },
+        sourceItem: { value: 2003000, kanji: '二百万三千', reading: 'にひゃくまんさんぜん' }
     }
 ];
