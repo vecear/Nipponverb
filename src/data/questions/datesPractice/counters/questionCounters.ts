@@ -287,14 +287,14 @@ export const questionCounterQuestions: DatesPracticeQuestion[] = [
         },
         options: [
             { text: 'なんびん', isCorrect: false, reason: '「人{にん}」不濁音化。' },
-            { text: 'なんにん', isCorrect: true, reason: '正確！「何人{なんにん}様{さま}ですか」是餐廳{レストラン}常用的問法。' },
+            { text: 'なんにん', isCorrect: true, reason: '正確！「何人{なんにん}様{さま}ですか」是餐廳常用的問法。' },
             { text: 'いくつ', isCorrect: false, reason: '人數使用「何人{なんにん}」。' },
             { text: 'なにじん', isCorrect: false, reason: '「じん」用於國籍。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '詢問人數時使用「何人{なんにん}」。餐廳{レストラン}常說「何人{なんにん}様{さま}ですか」。',
-            relatedRules: ['疑問詞「何人{なんにん}」的使用', '餐廳{レストラン}用語']
+            correctRule: '詢問人數時使用「何人{なんにん}」。餐廳常說「何人{なんにん}様{さま}ですか」。',
+            relatedRules: ['疑問詞「何人{なんにん}」的使用', '餐廳用語']
         },
         sourceItem: { value: '?', kanji: '何人', reading: 'なんにん' }
     },

@@ -464,7 +464,7 @@ export const minuteQuestions: DatesPracticeQuestion[] = [
         stem_zh: '距離會議還有十分鐘。',
         options: [
             { text: 'じゅうふん', isCorrect: false, reason: '陷阱！十分{じゅっぷん}發生音變。' },
-            { text: 'じゅっぷん', isCorrect: true, reason: '正確！距離會議還有十分鐘{じゅっぷん}。' },
+            { text: 'じゅっぷん', isCorrect: true, reason: '正確！距離會議還有十分{じゅっぷん}鐘。' },
             { text: 'とおふん', isCorrect: false, reason: '使用音讀「じゅう」。' },
             { text: 'じゅうぷん', isCorrect: false, reason: '需要促音化。' }
         ],

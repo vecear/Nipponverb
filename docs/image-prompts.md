@@ -145,6 +145,28 @@ on cream background (#F5F1E8), prestigious and advanced design,
 circular frame with elaborate traditional border pattern
 ```
 
+### 3.6 慣用語課程圖示 (Idioms)
+**檔案名稱：** `course-idioms.png`
+
+```
+Japanese Idioms course icon, ukiyo-e woodblock print style,
+stylized illustration of "cat and gold coin" (neko ni koban),
+deep Prussian blue (#1A3A5C) on cream background (#F5F1E8),
+circular frame with wave pattern border,
+cultural and meaningful aesthetic, clean vector style
+```
+
+### 3.7 日期及數量詞課程圖示 (Date & Counters)
+**檔案名稱：** `course-date-counters.png`
+
+```
+Japanese Date and Counters course icon, ukiyo-e woodblock print style,
+traditional Japanese abacus (soroban) with beads,
+deep Prussian blue (#1A3A5C) with vermilion accent (#C53D2F),
+circular frame with geometric pattern border,
+structure and counting aesthetic, clean vector style
+```
+
 ---
 
 ## 4. 練習類別圖示

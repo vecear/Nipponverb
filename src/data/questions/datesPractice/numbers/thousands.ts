@@ -1908,7 +1908,7 @@ export const thousandsNumberQuestions: DatesPracticeQuestion[] = [
         correctIndex: 1,
         explanation: {
             correctRule: '「八千メートル{はっせんメートル}」中，「八千{はっせん}」促音化。',
-            trapExplanation: '距離表達時也要{とも}注意音變。',
+            trapExplanation: '距離表達時也要注意音變。',
             relatedRules: ['八千{はっせん}的促音化', '距離的表達']
         },
         sourceItem: { value: 8000, kanji: '八千メートル', reading: 'はっせんメートル' }

@@ -1198,13 +1198,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '我有一支球棒。',
         options: [
             { text: 'いちほん', isCorrect: false, reason: '陷阱！1本{いっぽん}需要促音化+半濁音化。' },
-            { text: 'いっぽん', isCorrect: true, reason: '正確！有一支{いっぽん}球棒{バット}。' },
+            { text: 'いっぽん', isCorrect: true, reason: '正確！有一本{いっぽん}球棒。' },
             { text: 'ひとほん', isCorrect: false, reason: '使用音讀「いち」。' },
             { text: 'いっぼん', isCorrect: false, reason: '1本{いっぽん}用半濁音「ぽ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「バットを一本{いっぽん}」表示「一支{いっぽん}球棒{バット}」。',
+            correctRule: '「バットを一本{いっぽん}」表示「一本{いっぽん}球棒」。',
             trapExplanation: '1本{いっぽん}固定讀「いっぽん」。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
@@ -1224,7 +1224,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         },
         options: [
             { text: 'ふたほん', isCorrect: false, reason: '使用音讀「に」。' },
-            { text: 'にほん', isCorrect: true, reason: '正確！釣了{つりました}兩條{にほん}魚。' },
+            { text: 'にほん', isCorrect: true, reason: '正確！釣了兩本{にほん}魚。' },
             { text: 'にぼん', isCorrect: false, reason: '2本{にほん}無音變。' },
             { text: 'にひき', isCorrect: false, reason: '釣到{つれた}的魚通常用「本{ほん}」計數。' }
         ],
@@ -1245,13 +1245,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '我買了三根蘿蔔。',
         options: [
             { text: 'さんほん', isCorrect: false, reason: '陷阱！3本{さんぼん}需要濁音化。' },
-            { text: 'さんぼん', isCorrect: true, reason: '正確！買了{かいました}三根{さんぼん}蘿蔔{だいこん}。' },
-            { text: 'みっつ', isCorrect: false, reason: '蘿蔔{だいこん}用「本{ほん}」。' },
+            { text: 'さんぼん', isCorrect: true, reason: '正確！買了三本{さんぼん}蘿蔔。' },
+            { text: 'みっつ', isCorrect: false, reason: '蘿蔔用「本{ほん}」。' },
             { text: 'さんぽん', isCorrect: false, reason: '3本{さんぼん}用濁音「ぼ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「大根{だいこん}を三本{さんぼん}」表示「三根{さんぼん}蘿蔔{だいこん}」。',
+            correctRule: '「大根{だいこん}を三本{さんぼん}」表示「三本{さんぼん}蘿蔔」。',
             trapExplanation: '3本{さんぼん}固定濁音化。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
@@ -1271,13 +1271,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         },
         options: [
             { text: 'しほん', isCorrect: false, reason: '使用「よん」不用「し」。' },
-            { text: 'よんほん', isCorrect: true, reason: '正確！有四支{よんほん}牙刷{はブラシ}。' },
+            { text: 'よんほん', isCorrect: true, reason: '正確！有四本{よんほん}牙刷。' },
             { text: 'よんぼん', isCorrect: false, reason: '4本{よんほん}無音變。' },
-            { text: 'よっつ', isCorrect: false, reason: '牙刷{はブラシ}用「本{ほん}」。' }
+            { text: 'よっつ', isCorrect: false, reason: '牙刷用「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「歯{は}ブラシが四本{よんほん}」表示「四支{よんほん}牙刷{はブラシ}」。',
+            correctRule: '「歯{は}ブラシが四本{よんほん}」表示「四本{よんほん}牙刷」。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
         sourceItem: { value: 4, kanji: '四本', reading: 'よんほん' }
@@ -1292,13 +1292,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '換了六個輪胎。',
         options: [
             { text: 'ろくほん', isCorrect: false, reason: '陷阱！6本{ろっぽん}需要促音化+半濁音化。' },
-            { text: 'ろっぽん', isCorrect: true, reason: '正確！換了{こうかん}六個{ろっぽん}輪胎{タイヤ}。' },
-            { text: 'むっつ', isCorrect: false, reason: '輪胎{タイヤ}用「本{ほん}」計數。' },
+            { text: 'ろっぽん', isCorrect: true, reason: '正確！換了{こうかん}六個{ろっぽん}輪胎。' },
+            { text: 'むっつ', isCorrect: false, reason: '輪胎用「本{ほん}」計數。' },
             { text: 'ろくぼん', isCorrect: false, reason: '6本{ろっぽん}用半濁音「ぽ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '輪胎{タイヤ}用「本{ほん}」計數。',
+            correctRule: '輪胎用「本{ほん}」計數。',
             trapExplanation: '6本{ろっぽん}固定促音化+半濁音化。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
@@ -1318,13 +1318,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         },
         options: [
             { text: 'なのほん', isCorrect: false, reason: '「なの」是日期讀法。' },
-            { text: 'ななほん', isCorrect: true, reason: '正確！需要七支{ななほん}吸管{ストロー}。' },
+            { text: 'ななほん', isCorrect: true, reason: '正確！需要七本{ななほん}吸管。' },
             { text: 'しちぽん', isCorrect: false, reason: '7本{ななほん}無半濁音化。' },
-            { text: 'ななつ', isCorrect: false, reason: '吸管{ストロー}用「本{ほん}」。' }
+            { text: 'ななつ', isCorrect: false, reason: '吸管用「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ストローが七本{ななほん}」表示「七支{ななほん}吸管{ストロー}」。',
+            correctRule: '「ストローが七本{ななほん}」表示「七本{ななほん}吸管」。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
         sourceItem: { value: 7, kanji: '七本', reading: 'ななほん' }
@@ -1339,13 +1339,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '立了八根蠟燭。',
         options: [
             { text: 'はちほん', isCorrect: false, reason: '陷阱！8本{はっぽん}需要促音化+半濁音化。' },
-            { text: 'はっぽん', isCorrect: true, reason: '正確！立了{たてました}八根{はっぽん}蠟燭{ロウソク}。' },
-            { text: 'やっつ', isCorrect: false, reason: '蠟燭{ロウソク}用「本{ほん}」。' },
+            { text: 'はっぽん', isCorrect: true, reason: '正確！立了八本{はっぽん}蠟燭。' },
+            { text: 'やっつ', isCorrect: false, reason: '蠟燭用「本{ほん}」。' },
             { text: 'はちぼん', isCorrect: false, reason: '8本{はっぽん}用半濁音「ぽ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ロウソクを八本{はっぽん}」表示「八根{はっぽん}蠟燭{ロウソク}」。',
+            correctRule: '「ロウソクを八本{はっぽん}」表示「八本{はっぽん}蠟燭」。',
             trapExplanation: '8本{はっぽん}固定促音化+半濁音化。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
@@ -1365,13 +1365,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         },
         options: [
             { text: 'くほん', isCorrect: false, reason: '使用「きゅう」不是「く」。' },
-            { text: 'きゅうほん', isCorrect: true, reason: '正確！用了{つかいました}九支{きゅうほん}螺絲{ネジ}。' },
+            { text: 'きゅうほん', isCorrect: true, reason: '正確！用了九本{きゅうほん}螺絲。' },
             { text: 'きゅうぽん', isCorrect: false, reason: '9本{きゅうほん}無音變。' },
-            { text: 'ここのつ', isCorrect: false, reason: '螺絲{ネジ}用「本{ほん}」。' }
+            { text: 'ここのつ', isCorrect: false, reason: '螺絲用「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ネジを九本{きゅうほん}」表示「九支{きゅうほん}螺絲{ネジ}」。',
+            correctRule: '「ネジを九本{きゅうほん}」表示「九本{きゅうほん}螺絲」。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
         sourceItem: { value: 9, kanji: '九本', reading: 'きゅうほん' }
@@ -1386,13 +1386,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '路上排著十根電線桿。',
         options: [
             { text: 'じゅうほん', isCorrect: false, reason: '陷阱！10本{じゅっぽん}需要促音化+半濁音化。' },
-            { text: 'じゅっぽん', isCorrect: true, reason: '正確！排著{ならんでいます}十根{じゅっぽん}電線桿{でんちゅう}。' },
+            { text: 'じゅっぽん', isCorrect: true, reason: '正確！排著十本{じゅっぽん}電線桿。' },
             { text: 'とおほん', isCorrect: false, reason: '使用音讀「じゅう」。' },
             { text: 'じゅうぼん', isCorrect: false, reason: '10本{じゅっぽん}用半濁音「ぽ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「電柱{でんちゅう}が十本{じゅっぽん}」表示「十根{じゅっぽん}電線桿{でんちゅう}」。',
+            correctRule: '「電柱{でんちゅう}が十本{じゅっぽん}」表示「十本{じゅっぽん}電線桿」。',
             trapExplanation: '10本{じゅっぽん}固定促音化+半濁音化。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
@@ -1459,13 +1459,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         },
         options: [
             { text: 'じゅうさんほん', isCorrect: false, reason: '陷阱！尾數3時濁音化。' },
-            { text: 'じゅうさんぼん', isCorrect: true, reason: '正確！買{かいます}十三根{じゅうさんぼん}小黃瓜{きゅうり}。' },
+            { text: 'じゅうさんぼん', isCorrect: true, reason: '正確！買十三本{じゅうさんぼん}小黃瓜。' },
             { text: 'とみぼん', isCorrect: false, reason: '十三{じゅうさん}使用音讀。' },
             { text: 'じゅうさんぽん', isCorrect: false, reason: '尾數3用濁音「ぼ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「きゅうりを十三本{じゅうさんぼん}」表示「十三根{じゅうさんぼん}小黃瓜{きゅうり}」。',
+            correctRule: '「きゅうりを十三本{じゅうさんぼん}」表示「十三本{じゅうさんぼん}小黃瓜」。',
             trapExplanation: '尾數3觸發濁音化。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
@@ -1481,13 +1481,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '準備了十四條緞帶。',
         options: [
             { text: 'じゅうしほん', isCorrect: false, reason: '使用「よん」不用「し」。' },
-            { text: 'じゅうよんほん', isCorrect: true, reason: '正確！準備{じゅんび}了十四條{じゅうよんほん}緞帶{リボン}。' },
+            { text: 'じゅうよんほん', isCorrect: true, reason: '正確！準備了十四本{じゅうよんほん}緞帶。' },
             { text: 'じゅうよんぼん', isCorrect: false, reason: '14本{じゅうよんほん}無音變。' },
             { text: 'といよんほん', isCorrect: false, reason: '十使用「じゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「リボンを十四本{じゅうよんほん}」表示「十四條{じゅうよんほん}緞帶{リボン}」。',
+            correctRule: '「リボンを十四本{じゅうよんほん}」表示「十四本{じゅうよんほん}緞帶」。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
         sourceItem: { value: 14, kanji: '十四本', reading: 'じゅうよんほん' }
@@ -1506,13 +1506,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         },
         options: [
             { text: 'じゅういつほん', isCorrect: false, reason: '使用音讀「ご」。' },
-            { text: 'じゅうごほん', isCorrect: true, reason: '正確！打了{うちました}十五支{じゅうごほん}安打{ヒット}。' },
+            { text: 'じゅうごほん', isCorrect: true, reason: '正確！打了十五本{じゅうごほん}安打。' },
             { text: 'じゅうごぽん', isCorrect: false, reason: '15本{じゅうごほん}無音變。' },
             { text: 'とごほん', isCorrect: false, reason: '十使用「じゅう」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「ヒットを十五本{じゅうごほん}」表示「十五支{じゅうごほん}安打{ヒット}」。',
+            correctRule: '「ヒットを十五本{じゅうごほん}」表示「十五本{じゅうごほん}安打」。',
             relatedRules: ['量詞「本{ほん}」的使用', '運動用語']
         },
         sourceItem: { value: 15, kanji: '十五本', reading: 'じゅうごほん' }
@@ -1527,13 +1527,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '弓道射了十六支箭。',
         options: [
             { text: 'じゅうろくほん', isCorrect: false, reason: '陷阱！尾數6時促音化+半濁音化。' },
-            { text: 'じゅうろっぽん', isCorrect: true, reason: '正確！射了{いました}十六支{じゅうろっぽん}箭{や}。' },
+            { text: 'じゅうろっぽん', isCorrect: true, reason: '正確！射了十六本{じゅうろっぽん}箭。' },
             { text: 'じゅうむっぽん', isCorrect: false, reason: '使用音讀「ろく」。' },
             { text: 'じゅうろくぼん', isCorrect: false, reason: '尾數6用半濁音「ぽ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「矢{や}を十六本{じゅうろっぽん}」表示「十六支{じゅうろっぽん}箭{や}」。',
+            correctRule: '「矢{や}を十六本{じゅうろっぽん}」表示「十六本{じゅうろっぽん}箭」。',
             trapExplanation: '尾數6觸發促音化+半濁音化。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
@@ -1553,13 +1553,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         },
         options: [
             { text: 'じゅうしちほん', isCorrect: false, reason: '雖然可以，但口語常用「なな」。' },
-            { text: 'じゅうななほん', isCorrect: true, reason: '正確！準備{じゅんび}十七支{じゅうななほん}筷子{はし}。' },
+            { text: 'じゅうななほん', isCorrect: true, reason: '正確！準備十七本{じゅうななほん}筷子。' },
             { text: 'じゅうなのほん', isCorrect: false, reason: '「なの」是日期讀法。' },
             { text: 'じゅうななぽん', isCorrect: false, reason: '17本{じゅうななほん}無音變。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「お箸{はし}を十七本{じゅうななほん}」表示「十七支{じゅうななほん}筷子{はし}」。',
+            correctRule: '「お箸{はし}を十七本{じゅうななほん}」表示「十七本{じゅうななほん}筷子」。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
         sourceItem: { value: 17, kanji: '十七本', reading: 'じゅうななほん' }
@@ -1574,13 +1574,13 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '放入了十八支蠟筆。',
         options: [
             { text: 'じゅうはちほん', isCorrect: false, reason: '陷阱！尾數8時促音化+半濁音化。' },
-            { text: 'じゅうはっぽん', isCorrect: true, reason: '正確！放入{いれました}了十八支{じゅうはっぽん}蠟筆{クレヨン}。' },
+            { text: 'じゅうはっぽん', isCorrect: true, reason: '正確！放入了十八本{じゅうはっぽん}蠟筆。' },
             { text: 'じゅうやっぽん', isCorrect: false, reason: '使用音讀「はち」。' },
             { text: 'じゅうはちぼん', isCorrect: false, reason: '尾數8用半濁音「ぽ」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「クレヨンを十八本{じゅうはっぽん}」表示「十八支{じゅうはっぽん}蠟筆{クレヨン}」。',
+            correctRule: '「クレヨンを十八本{じゅうはっぽん}」表示「十八本{じゅうはっぽん}蠟筆」。',
             trapExplanation: '尾數8觸發促音化+半濁音化。',
             relatedRules: ['量詞「本{ほん}」的使用']
         },
@@ -1645,7 +1645,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '水族館裡有五條魚在游。',
         options: [
             { text: 'ごぽん', isCorrect: false, reason: '5本{ごほん}無音變。' },
-            { text: 'ごほん', isCorrect: true, reason: '正確！五條{ごほん}魚在游泳{およいでいます}。' },
+            { text: 'ごほん', isCorrect: true, reason: '正確！五本{ごほん}魚在游泳。' },
             { text: 'いつほん', isCorrect: false, reason: '使用音讀「ご」。' },
             { text: 'ごひき', isCorrect: false, reason: '細長形的魚可用「本{ほん}」。' }
         ],
@@ -1664,7 +1664,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: 'ごぼうを何本買いますか？', speakerB: '＿＿買います。（一根）' },
         options: [
             { text: 'いちほん', isCorrect: false, reason: '陷阱！1本{いっぽん}促音化+半濁音化。' },
-            { text: 'いっぽん', isCorrect: true, reason: '正確！一根{いっぽん}牛蒡{ごぼう}。' },
+            { text: 'いっぽん', isCorrect: true, reason: '正確！一本{いっぽん}牛蒡。' },
             { text: 'ひとほん', isCorrect: false, reason: '使用音讀「いち」。' },
             { text: 'いっぼん', isCorrect: false, reason: '1本{いっぽん}用半濁音「ぽ」。' }
         ],
@@ -1682,7 +1682,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '架子上排著二十瓶紅酒。',
         options: [
             { text: 'にじゅうほん', isCorrect: false, reason: '20本{にじゅっぽん}促音化+半濁音化。' },
-            { text: 'にじゅっぽん', isCorrect: true, reason: '正確！二十瓶{にじゅっぽん}紅酒{ワイン}。' },
+            { text: 'にじゅっぽん', isCorrect: true, reason: '正確！二十瓶{にじゅっぽん}紅酒。' },
             { text: 'はたほん', isCorrect: false, reason: '使用音讀「にじゅう」。' },
             { text: 'にじゅうぼん', isCorrect: false, reason: '20本{にじゅっぽん}用半濁音「ぽ」。' }
         ],
@@ -1719,9 +1719,9 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '帳篷需要四根支柱。',
         options: [
             { text: 'しほん', isCorrect: false, reason: '使用「よん」不用「し」。' },
-            { text: 'よんほん', isCorrect: true, reason: '正確！需要四根{よんほん}支柱{ポール}。' },
+            { text: 'よんほん', isCorrect: true, reason: '正確！需要四本{よんほん}支柱。' },
             { text: 'よんぼん', isCorrect: false, reason: '4本{よんほん}無音變。' },
-            { text: 'よっつ', isCorrect: false, reason: '支柱{ポール}用「本{ほん}」。' }
+            { text: 'よっつ', isCorrect: false, reason: '支柱用「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: { correctRule: '「ポールが四本{よんほん}」。', relatedRules: ['量詞「本{ほん}」的使用'] },
@@ -1738,7 +1738,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: '鉄パイプは何本ありますか？', speakerB: '＿＿あります。（三十根）' },
         options: [
             { text: 'さんじゅうほん', isCorrect: false, reason: '陷阱！整十{じゅう}數促音化+半濁音化。' },
-            { text: 'さんじゅっぽん', isCorrect: true, reason: '正確！三十根{さんじゅっぽん}鐵管{てつパイプ}。' },
+            { text: 'さんじゅっぽん', isCorrect: true, reason: '正確！三十本{さんじゅっぽん}鐵管。' },
             { text: 'みそほん', isCorrect: false, reason: '使用音讀「さんじゅう」。' },
             { text: 'さんじゅうぼん', isCorrect: false, reason: '整十{じゅう}數用半濁音「ぽ」。' }
         ],
@@ -1756,7 +1756,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '停車場有七根電線桿。',
         options: [
             { text: 'しちぽん', isCorrect: false, reason: '7本{ななほん}無音變。' },
-            { text: 'ななほん', isCorrect: true, reason: '正確！七根{ななほん}電線桿{でんちゅう}。' },
+            { text: 'ななほん', isCorrect: true, reason: '正確！七本{ななほん}電線桿。' },
             { text: 'なのほん', isCorrect: false, reason: '「なの」是日期讀法。' },
             { text: 'ななぽん', isCorrect: false, reason: '7本{ななほん}保持「ほ」。' }
         ],
@@ -1775,7 +1775,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: '毛糸は何本使いましたか？', speakerB: '＿＿使いました。（九球）' },
         options: [
             { text: 'くほん', isCorrect: false, reason: '使用「きゅう」。' },
-            { text: 'きゅうほん', isCorrect: true, reason: '正確！用了{つかいました}九球{きゅうほん}毛線{けいと}。' },
+            { text: 'きゅうほん', isCorrect: true, reason: '正確！用了九球{きゅうほん}毛線{けいと}。' },
             { text: 'きゅうぽん', isCorrect: false, reason: '9本{きゅうほん}無音變。' },
             { text: 'ここのほん', isCorrect: false, reason: '使用音讀「きゅう」。' }
         ],
@@ -1793,8 +1793,8 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '打了三支全壘打。',
         options: [
             { text: 'さんほん', isCorrect: false, reason: '陷阱！3本{さんぼん}濁音化。' },
-            { text: 'さんぼん', isCorrect: true, reason: '正確！打了{うちました}三支{さんぼん}全壘打{ホームラン}。' },
-            { text: 'みっつ', isCorrect: false, reason: '全壘打{ホームラン}用「本{ほん}」。' },
+            { text: 'さんぼん', isCorrect: true, reason: '正確！打了三本{さんぼん}全壘打。' },
+            { text: 'みっつ', isCorrect: false, reason: '全壘打用「本{ほん}」。' },
             { text: 'さんぽん', isCorrect: false, reason: '3本{さんぼん}用濁音「ぼ」。' }
         ],
         correctIndex: 1,
@@ -1812,9 +1812,9 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: 'ろうそくは何本立てますか？', speakerB: '＿＿立てます。（兩根）' },
         options: [
             { text: 'ふたほん', isCorrect: false, reason: '使用音讀「に」。' },
-            { text: 'にほん', isCorrect: true, reason: '正確！立{たてます}兩根{にほん}蠟燭{ろうそく}。' },
+            { text: 'にほん', isCorrect: true, reason: '正確！立兩本{にほん}蠟燭。' },
             { text: 'にぼん', isCorrect: false, reason: '2本{にほん}無音變。' },
-            { text: 'ふたつ', isCorrect: false, reason: '蠟燭{ろうそく}用「本{ほん}」。' }
+            { text: 'ふたつ', isCorrect: false, reason: '蠟燭用「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: { correctRule: '「ろうそくを二本{にほん}」。', relatedRules: ['量詞「本{ほん}」的使用'] },
@@ -1830,8 +1830,8 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '我有六支口紅膠。',
         options: [
             { text: 'ろくほん', isCorrect: false, reason: '陷阱！6本{ろっぽん}促音化+半濁音化。' },
-            { text: 'ろっぽん', isCorrect: true, reason: '正確！有六支{ろっぽん}口紅膠{スティックのり}。' },
-            { text: 'むっつ', isCorrect: false, reason: '口紅膠{スティックのり}用「本{ほん}」。' },
+            { text: 'ろっぽん', isCorrect: true, reason: '正確！有六本{ろっぽん}口紅膠。' },
+            { text: 'むっつ', isCorrect: false, reason: '口紅膠用「本{ほん}」。' },
             { text: 'ろくぼん', isCorrect: false, reason: '6本{ろっぽん}用半濁音「ぽ」。' }
         ],
         correctIndex: 1,
@@ -1849,12 +1849,12 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: 'チューリップの球根は何本植えましたか？', speakerB: '＿＿植えました。（十五個）' },
         options: [
             { text: 'じゅういつほん', isCorrect: false, reason: '使用音讀「ご」。' },
-            { text: 'じゅうごほん', isCorrect: true, reason: '正確！種了{うえました}十五個{じゅうごほん}球根{きゅうこん}。' },
+            { text: 'じゅうごほん', isCorrect: true, reason: '正確！種了{うえました}十五個{じゅうごほん}球根。' },
             { text: 'じゅうごぽん', isCorrect: false, reason: '15本{じゅうごほん}無音變。' },
             { text: 'とごほん', isCorrect: false, reason: '使用音讀「じゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「球根{きゅうこん}を十五本{じゅうごほん}」。', relatedRules: ['量詞「本{ほん}」的使用'] },
+        explanation: { correctRule: '「球根を十五本{じゅうごほん}」。', relatedRules: ['量詞「本{ほん}」的使用'] },
         sourceItem: { value: 15, kanji: '十五本', reading: 'じゅうごほん' }
     },
     {
@@ -1867,8 +1867,8 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '立著八根天線。',
         options: [
             { text: 'はちほん', isCorrect: false, reason: '陷阱！8本{はっぽん}促音化+半濁音化。' },
-            { text: 'はっぽん', isCorrect: true, reason: '正確！立著{たっています}八根{はっぽん}天線{アンテナ}。' },
-            { text: 'やっつ', isCorrect: false, reason: '天線{アンテナ}用「本{ほん}」。' },
+            { text: 'はっぽん', isCorrect: true, reason: '正確！立著八本{はっぽん}天線。' },
+            { text: 'やっつ', isCorrect: false, reason: '天線用「本{ほん}」。' },
             { text: 'はちぼん', isCorrect: false, reason: '8本{はっぽん}用半濁音「ぽ」。' }
         ],
         correctIndex: 1,
@@ -1886,9 +1886,9 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: 'アイスキャンディーは何本買いますか？', speakerB: '＿＿買います。（四支）' },
         options: [
             { text: 'しほん', isCorrect: false, reason: '使用「よん」。' },
-            { text: 'よんほん', isCorrect: true, reason: '正確！買{かいます}四支{よんほん}棒冰{アイスキャンディー}。' },
+            { text: 'よんほん', isCorrect: true, reason: '正確！買四本{よんほん}棒冰。' },
             { text: 'よんぼん', isCorrect: false, reason: '4本{よんほん}無音變。' },
-            { text: 'よっつ', isCorrect: false, reason: '棒冰{アイスキャンディー}用「本{ほん}」。' }
+            { text: 'よっつ', isCorrect: false, reason: '棒冰用「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: { correctRule: '「アイスキャンディーを四本{よんほん}」。', relatedRules: ['量詞「本{ほん}」的使用'] },
@@ -1904,12 +1904,12 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '拍了十支廣告。',
         options: [
             { text: 'じゅうほん', isCorrect: false, reason: '陷阱！10本{じゅっぽん}促音化+半濁音化。' },
-            { text: 'じゅっぽん', isCorrect: true, reason: '正確！拍了{さつえいしました}十支{じゅっぽん}廣告{CM}。' },
+            { text: 'じゅっぽん', isCorrect: true, reason: '正確！拍了十本{じゅっぽん}廣告。' },
             { text: 'とおほん', isCorrect: false, reason: '使用音讀「じゅう」。' },
             { text: 'じゅうぼん', isCorrect: false, reason: '10本{じゅっぽん}用半濁音「ぽ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '廣告{CM}（影片{えいが}）用「本{ほん}」計數。', trapExplanation: '10本{じゅっぽん}固定促音化+半濁音化。', relatedRules: ['量詞「本{ほん}」的使用'] },
+        explanation: { correctRule: '廣告（影片{えいが}）用「本{ほん}」計數。', trapExplanation: '10本{じゅっぽん}固定促音化+半濁音化。', relatedRules: ['量詞「本{ほん}」的使用'] },
         sourceItem: { value: 10, kanji: '十本', reading: 'じゅっぽん' }
     },
     {
@@ -1941,9 +1941,9 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '需要七條電線。',
         options: [
             { text: 'しちぽん', isCorrect: false, reason: '7本{ななほん}無音變。' },
-            { text: 'ななほん', isCorrect: true, reason: '正確！需要七條{ななほん}電線{ケーブル}。' },
+            { text: 'ななほん', isCorrect: true, reason: '正確！需要七本{ななほん}電線。' },
             { text: 'なのほん', isCorrect: false, reason: '「なの」是日期讀法。' },
-            { text: 'ななつ', isCorrect: false, reason: '電線{ケーブル}用「本{ほん}」。' }
+            { text: 'ななつ', isCorrect: false, reason: '電線用「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: { correctRule: '「ケーブルが七本{ななほん}」。', relatedRules: ['量詞「本{ほん}」的使用'] },
@@ -1960,9 +1960,9 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: '骨は何本折れましたか？', speakerB: '幸い＿＿だけです。（兩根）' },
         options: [
             { text: 'ふたほん', isCorrect: false, reason: '使用音讀「に」。' },
-            { text: 'にほん', isCorrect: true, reason: '正確！只有兩根{にほん}骨頭{ほね}骨折{こっせつ}。' },
+            { text: 'にほん', isCorrect: true, reason: '正確！只有兩本{にほん}骨頭骨折。' },
             { text: 'にぼん', isCorrect: false, reason: '2本{にほん}無音變。' },
-            { text: 'ふたつ', isCorrect: false, reason: '骨頭{ほね}用「本{ほん}」。' }
+            { text: 'ふたつ', isCorrect: false, reason: '骨頭用「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: { correctRule: '「骨{ほね}が二本{にほん}」。', relatedRules: ['量詞「本{ほん}」的使用'] },
@@ -1978,7 +1978,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '放入了六顆電池。',
         options: [
             { text: 'ろくほん', isCorrect: false, reason: '陷阱！6本{ろっぽん}促音化+半濁音化。' },
-            { text: 'ろっぽん', isCorrect: true, reason: '正確！放入{いれました}了六顆{ろっぽん}電池{でんち}。' },
+            { text: 'ろっぽん', isCorrect: true, reason: '正確！放入了六顆{ろっぽん}電池{でんち}。' },
             { text: 'むっつ', isCorrect: false, reason: '圓筒形{えんとうがた}電池{でんち}用「本{ほん}」。' },
             { text: 'ろくぼん', isCorrect: false, reason: '6本{ろっぽん}用半濁音「ぽ」。' }
         ],
@@ -1997,9 +1997,9 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: '綿棒は何本使いましたか？', speakerB: '＿＿使いました。（五支）' },
         options: [
             { text: 'いつほん', isCorrect: false, reason: '使用音讀「ご」。' },
-            { text: 'ごほん', isCorrect: true, reason: '正確！用了{つかいました}五支{ごほん}棉花棒{めんぼう}。' },
+            { text: 'ごほん', isCorrect: true, reason: '正確！用了五本{ごほん}棉花棒。' },
             { text: 'ごぽん', isCorrect: false, reason: '5本{ごほん}無音變。' },
-            { text: 'いつつ', isCorrect: false, reason: '棉花棒{めんぼう}用「本{ほん}」。' }
+            { text: 'いつつ', isCorrect: false, reason: '棉花棒用「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: { correctRule: '「綿棒{めんぼう}を五本{ごほん}」。', relatedRules: ['量詞「本{ほん}」的使用'] },
@@ -2015,12 +2015,12 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '看了八部電視劇。',
         options: [
             { text: 'はちほん', isCorrect: false, reason: '陷阱！8本{はっぽん}促音化+半濁音化。' },
-            { text: 'はっぽん', isCorrect: true, reason: '正確！看了{みました}八部{はっぽん}電視劇{ドラマ}。' },
-            { text: 'やっつ', isCorrect: false, reason: '電視劇{ドラマ}用「本{ほん}」。' },
+            { text: 'はっぽん', isCorrect: true, reason: '正確！看了{みました}八部{はっぽん}電視劇。' },
+            { text: 'やっつ', isCorrect: false, reason: '電視劇用「本{ほん}」。' },
             { text: 'はちぼん', isCorrect: false, reason: '8本{はっぽん}用半濁音「ぽ」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '電視劇{ドラマ}（影片{えいが}）用「本{ほん}」計數。', trapExplanation: '8本{はっぽん}固定促音化+半濁音化。', relatedRules: ['量詞「本{ほん}」的使用'] },
+        explanation: { correctRule: '電視劇（影片{えいが}）用「本{ほん}」計數。', trapExplanation: '8本{はっぽん}固定促音化+半濁音化。', relatedRules: ['量詞「本{ほん}」的使用'] },
         sourceItem: { value: 8, kanji: '八本', reading: 'はっぽん' }
     },
     {
@@ -2034,9 +2034,9 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: '釘は何本打ちましたか？', speakerB: '＿＿打ちました。（九支）' },
         options: [
             { text: 'くほん', isCorrect: false, reason: '使用「きゅう」。' },
-            { text: 'きゅうほん', isCorrect: true, reason: '正確！打了{うちました}九支{きゅうほん}釘子{くぎ}。' },
+            { text: 'きゅうほん', isCorrect: true, reason: '正確！打了九本{きゅうほん}釘子。' },
             { text: 'きゅうぽん', isCorrect: false, reason: '9本{きゅうほん}無音變。' },
-            { text: 'ここのつ', isCorrect: false, reason: '釘子{くぎ}用「本{ほん}」。' }
+            { text: 'ここのつ', isCorrect: false, reason: '釘子用「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: { correctRule: '「釘{くぎ}を九本{きゅうほん}」。', relatedRules: ['量詞「本{ほん}」的使用'] },
@@ -2052,7 +2052,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '打了一針。',
         options: [
             { text: 'いちほん', isCorrect: false, reason: '陷阱！1本{いっぽん}促音化+半濁音化。' },
-            { text: 'いっぽん', isCorrect: true, reason: '正確！打了{うちました}一針{いっぽん}。' },
+            { text: 'いっぽん', isCorrect: true, reason: '正確！打了一針{いっぽん}。' },
             { text: 'ひとつ', isCorrect: false, reason: '注射{ちゅうしゃ}用「本{ほん}」。' },
             { text: 'いっぼん', isCorrect: false, reason: '1本{いっぽん}用半濁音「ぽ」。' }
         ],
@@ -2071,12 +2071,12 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: '口紅は何本持っていますか？', speakerB: '＿＿持っています。（十二支）' },
         options: [
             { text: 'じゅうふたほん', isCorrect: false, reason: '使用音讀「に」。' },
-            { text: 'じゅうにほん', isCorrect: true, reason: '正確！有十二支{じゅうにほん}口紅{くちべに}。' },
+            { text: 'じゅうにほん', isCorrect: true, reason: '正確！有十二本{じゅうにほん}口紅。' },
             { text: 'じゅうにぼん', isCorrect: false, reason: '12本{じゅうにほん}無音變。' },
             { text: 'とにほん', isCorrect: false, reason: '使用音讀「じゅう」。' }
         ],
         correctIndex: 1,
-        explanation: { correctRule: '「口紅{くちべに}を十二本{じゅうにほん}」。', relatedRules: ['量詞「本{ほん}」的使用'] },
+        explanation: { correctRule: '「口紅を十二本{じゅうにほん}」。', relatedRules: ['量詞「本{ほん}」的使用'] },
         sourceItem: { value: 12, kanji: '十二本', reading: 'じゅうにほん' }
     },
     {
@@ -2089,7 +2089,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '路上排著二十三盞路燈。',
         options: [
             { text: 'にじゅうさんほん', isCorrect: false, reason: '陷阱！尾數3濁音化。' },
-            { text: 'にじゅうさんぼん', isCorrect: true, reason: '正確！排著{ならんでいます}二十三盞{にじゅうさんぼん}路燈{がいとう}。' },
+            { text: 'にじゅうさんぼん', isCorrect: true, reason: '正確！排著二十三盞{にじゅうさんぼん}路燈{がいとう}。' },
             { text: 'にじゅうみっつ', isCorrect: false, reason: '路燈{がいとう}用「本{ほん}」。' },
             { text: 'にじゅうさんぽん', isCorrect: false, reason: '尾數3用濁音「ぼ」。' }
         ],
@@ -2108,7 +2108,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: 'ネクタイは何本集めていますか？', speakerB: '＿＿集めています。（四十條）' },
         options: [
             { text: 'しじゅうほん', isCorrect: false, reason: '使用「よんじゅう」。' },
-            { text: 'よんじゅっぽん', isCorrect: true, reason: '正確！收集了{あつめています}四十條{よんじゅっぽん}領帶{ネクタイ}。' },
+            { text: 'よんじゅっぽん', isCorrect: true, reason: '正確！收集了四十本{よんじゅっぽん}領帶。' },
             { text: 'よんじゅうほん', isCorrect: false, reason: '整十{じゅう}數促音化+半濁音化。' },
             { text: 'よんじゅうぼん', isCorrect: false, reason: '整十{じゅう}數用半濁音「ぽ」。' }
         ],
@@ -2126,7 +2126,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '有五條公車路線。',
         options: [
             { text: 'いつほん', isCorrect: false, reason: '使用音讀「ご」。' },
-            { text: 'ごほん', isCorrect: true, reason: '正確！有五條{ごほん}公車{バス}路線。' },
+            { text: 'ごほん', isCorrect: true, reason: '正確！有五本{ごほん}公車路線。' },
             { text: 'ごぽん', isCorrect: false, reason: '5本{ごほん}無音變。' },
             { text: 'いつつ', isCorrect: false, reason: '路線用「本{ほん}」。' }
         ],
@@ -2145,8 +2145,8 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: 'スキー板は何本ありますか？', speakerB: '＿＿あります。（六支）' },
         options: [
             { text: 'ろくほん', isCorrect: false, reason: '陷阱！6本{ろっぽん}促音化+半濁音化。' },
-            { text: 'ろっぽん', isCorrect: true, reason: '正確！有六支{ろっぽん}滑雪板{スキーいた}。' },
-            { text: 'むっつ', isCorrect: false, reason: '滑雪板{スキーいた}用「本{ほん}」。' },
+            { text: 'ろっぽん', isCorrect: true, reason: '正確！有六本{ろっぽん}滑雪板。' },
+            { text: 'むっつ', isCorrect: false, reason: '滑雪板用「本{ほん}」。' },
             { text: 'ろくぼん', isCorrect: false, reason: '6本{ろっぽん}用半濁音「ぽ」。' }
         ],
         correctIndex: 1,
@@ -2163,9 +2163,9 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         stem_zh: '桌上有四雙筷子（八支）。',
         options: [
             { text: 'はちぽん', isCorrect: false, reason: '8本{はっぽん}促音化+半濁音化。' },
-            { text: 'はっぽん', isCorrect: true, reason: '正確！桌上{テーブル}有八支{はっぽん}筷子{はし}。' },
+            { text: 'はっぽん', isCorrect: true, reason: '正確！桌上有八本{はっぽん}筷子。' },
             { text: 'はちほん', isCorrect: false, reason: '8本{はっぽん}需要促音化+半濁音化。' },
-            { text: 'やっつ', isCorrect: false, reason: '筷子{はし}用「本{ほん}」。' }
+            { text: 'やっつ', isCorrect: false, reason: '筷子用「本{ほん}」。' }
         ],
         correctIndex: 1,
         explanation: { correctRule: '「箸{はし}が八本{はっぽん}」。', relatedRules: ['量詞「本{ほん}」的使用'] },
@@ -2182,7 +2182,7 @@ export const longObjectQuestions: DatesPracticeQuestion[] = [
         dialogue: { speakerA: '何本のペンを持っていますか？', speakerB: '＿＿です。（一百支）' },
         options: [
             { text: 'ひゃくほん', isCorrect: false, reason: '陷阱！100本{ひゃっぽん}促音化+半濁音化。' },
-            { text: 'ひゃっぽん', isCorrect: true, reason: '正確！有一百支{ひゃっぽん}筆{ペン}。' },
+            { text: 'ひゃっぽん', isCorrect: true, reason: '正確！有一百本{ひゃっぽん}筆。' },
             { text: 'ももほん', isCorrect: false, reason: '使用音讀「ひゃく」。' },
             { text: 'ひゃくぼん', isCorrect: false, reason: '100本{ひゃっぽん}用半濁音「ぽ」。' }
         ],

@@ -275,7 +275,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         },
         options: [
             { text: 'よんにん', isCorrect: false, reason: '四人{よにん}使用「よ」。' },
-            { text: 'よにん', isCorrect: true, reason: '正確！預約四位{よにん}。' },
+            { text: 'よにん', isCorrect: true, reason: '正確！預約四人{よにん}。' },
             { text: 'しにん', isCorrect: false, reason: '「しにん」是禁忌讀法。' },
             { text: 'よったり', isCorrect: false, reason: '現代使用「よにん」。' }
         ],
@@ -1664,14 +1664,14 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem_zh: '這部電梯最多可以搭十個人。',
         options: [
             { text: 'とおにん', isCorrect: false, reason: '人數使用音讀「じゅう」。' },
-            { text: 'じゅうにん', isCorrect: true, reason: '正確！電梯{エレベーター}最多可以搭{のれます}十個人。' },
+            { text: 'じゅうにん', isCorrect: true, reason: '正確！電梯最多可以搭十個人。' },
             { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
             { text: 'じゅっにん', isCorrect: false, reason: '十人{じゅうにん}不促音化。' }
         ],
         correctIndex: 1,
         explanation: {
             correctRule: '「十人{じゅうにん}まで乗{の}れます」表示「最多可以搭{のる}十個人」。',
-            relatedRules: ['人數的讀法', '電梯{エレベーター}標示']
+            relatedRules: ['人數的讀法', '電梯標示']
         },
         sourceItem: { value: 10, kanji: '十人', reading: 'じゅうにん' }
     },
@@ -1755,7 +1755,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         options: [
             { text: 'ににん、みたり', isCorrect: false, reason: '二人{ふたり}使用訓讀、三人{さんにん}使用音讀。' },
             { text: 'ふたり、さんにん', isCorrect: true, reason: '正確！兩個大人、三個小孩。' },
-            { text: 'にめい、さんめい', isCorrect: false, reason: '雖然「名{めい}」也可用，但答案{こたえ}應用「人{にん}」。' },
+            { text: 'にめい、さんめい', isCorrect: false, reason: '雖然「名{めい}」也可用，但答案應用「人{にん}」。' },
             { text: 'ふたり、みにん', isCorrect: false, reason: '三人{さんにん}使用音讀「さんにん」。' }
         ],
         correctIndex: 1,
@@ -1804,13 +1804,13 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         },
         options: [
             { text: 'いつにん', isCorrect: false, reason: '人數使用音讀「ご」。' },
-            { text: 'ごにん', isCorrect: true, reason: '正確！籃球{バスケットボール}一隊五個人。' },
+            { text: 'ごにん', isCorrect: true, reason: '正確！籃球一隊五個人。' },
             { text: 'ごじん', isCorrect: false, reason: '「じん」不用於人數。' },
             { text: 'こにん', isCorrect: false, reason: '五使用濁音「ご」。' }
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '籃球{バスケットボール}一隊需要五人{ごにん}。',
+            correctRule: '籃球一隊需要五人{ごにん}。',
             relatedRules: ['人數的讀法', '運動團隊']
         },
         sourceItem: { value: 5, kanji: '五人', reading: 'ごにん' }
@@ -1876,8 +1876,8 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         options: [
             { text: '表示國籍或民族時（如：日本人、アメリカ人）', isCorrect: true, reason: '正確！「〜人{じん}」表示國籍或民族（如：日本人{にほんじん}、アメリカ人{じん}）。' },
             { text: '表示人數時', isCorrect: false, reason: '人數使用「〜人{にん}」（如：三人{さんにん}）。' },
-            { text: '數字後面接人時', isCorrect: false, reason: '數字後面接人{ひと}時使用「にん」。' },
-            { text: '任何時候都可以', isCorrect: false, reason: '「じん」和「にん」有明確的使い分け。' }
+            { text: '數字後面接人時', isCorrect: false, reason: '數字後面接「人」時使用「にん」。' },
+            { text: '任何時候都可以', isCorrect: false, reason: '「じん」和「にん」有明確的區別。' }
         ],
         correctIndex: 0,
         explanation: {
@@ -2046,7 +2046,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         ],
         correctIndex: 1,
         explanation: {
-            correctRule: '「私{わたし}たち二人{ふたり}」是情侶{カップル}或夫婦{ふうふ}常用表達。',
+            correctRule: '「私{わたし}たち二人{ふたり}」是情侶或夫婦{ふうふ}常用表達。',
             trapExplanation: '二人{ふたり}固定使用訓讀「ふたり」。',
             relatedRules: ['二人{ふたり}的讀法', '結婚表達']
         },
@@ -2062,7 +2062,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem_zh: '專案團隊由十個人組成。',
         options: [
             { text: 'とおにん', isCorrect: false, reason: '人數使用音讀「じゅう」。' },
-            { text: 'じゅうにん', isCorrect: true, reason: '正確！專案{プロジェクト}團隊由十個人組成。' },
+            { text: 'じゅうにん', isCorrect: true, reason: '正確！專案團隊由十個人組成。' },
             { text: 'じゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
             { text: 'じゅっにん', isCorrect: false, reason: '十人{じゅうにん}不促音化。' }
         ],
@@ -2112,7 +2112,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         },
         options: [
             { text: 'しにん', isCorrect: false, reason: '陷阱！「しにん」是禁忌讀法。' },
-            { text: 'よにん', isCorrect: true, reason: '正確！四個人份的電影票{チケット}。' },
+            { text: 'よにん', isCorrect: true, reason: '正確！四個人份的電影票。' },
             { text: 'よんにん', isCorrect: false, reason: '四人{よにん}使用「よ」不是「よん」。' },
             { text: 'よったり', isCorrect: false, reason: '現代使用「よにん」。' }
         ],
@@ -2134,7 +2134,7 @@ export const peopleCounterQuestions: DatesPracticeQuestion[] = [
         stem_zh: '巴士上坐了二十個人。',
         options: [
             { text: 'はたちにん', isCorrect: false, reason: '「はたち」只用於年齡。' },
-            { text: 'にじゅうにん', isCorrect: true, reason: '正確！巴士{バス}上坐了{のっていました}二十個人。' },
+            { text: 'にじゅうにん', isCorrect: true, reason: '正確！巴士上坐了{のっていました}二十個人。' },
             { text: 'にじゅうじん', isCorrect: false, reason: '「じん」不用於人數。' },
             { text: 'ふたじゅうにん', isCorrect: false, reason: '二十{にじゅう}使用音讀。' }
         ],
