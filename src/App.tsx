@@ -19,7 +19,6 @@ import Admin from './pages/Admin'
 import VocabularyLevelSelection from './pages/VocabularyLevelSelection'
 import { VocabularyList } from './pages/vocabulary'
 import DatesAndCounters from './pages/DatesAndCounters'
-import DatesPractice from './pages/DatesPractice'
 import ProtectedRoute from './components/ProtectedRoute'
 
 import AdminRoute from './components/AdminRoute'
@@ -35,7 +34,6 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/courses" element={<Courses />} />
               <Route path="/practice" element={<Practice />} />
-              <Route path="/practice/dates" element={<DatesPractice />} />
               <Route path="/practice/:category" element={<Practice />} />
               <Route path="/grammar" element={<GrammarList />} />
               <Route path="/grammar/:id" element={<GrammarDetail />} />

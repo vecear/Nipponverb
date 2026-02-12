@@ -32,7 +32,7 @@ export function generateJLPTExam(level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1'): JLPTE
     // Section 1: Vocabulary and Kanji
     const vocabQuestions: Question[] = []
     for (let i = 0; i < 15; i++) {
-        const question = generateKanjiQuestion(level, Math.random() > 0.5 ? 'reading' : 'writing')
+        const question = generateKanjiQuestion(level)
         vocabQuestions.push({
             ...question,
             id: `vocab_${i}`,
