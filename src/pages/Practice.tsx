@@ -24,6 +24,7 @@ import { practiceCategories as datesPracticeCategories, getQuestionsBySubcategor
 import { selectQuestionsSmartly } from '../utils/smartSelection'
 import { staticToQuestion, datesToQuestion } from '../utils/questionAdapters'
 import { getStaticBank, getStaticBankCount } from '../utils/questionBanks'
+import { buildQuestionLookup } from '../utils/questionLookup'
 
 type PracticeCategory = 'gojuon' | 'verbs' | 'grammar' | 'kanji' | 'vocabulary' | 'dates'
 type GojuonSubcategory = 'hiragana' | 'katakana'
@@ -446,6 +447,20 @@ const Practice = () => {
   if (viewingHistory) {
     const historyRecordMap = new Map(viewingHistory.answerRecords.map(r => [r.questionId, r]))
 
+    // Enrich compact questions with detailedExplanation from banks if missing
+    const lookup = viewingHistory.questions.some(q => !q.detailedExplanation)
+      ? buildQuestionLookup(viewingHistory.category, viewingHistory.level)
+      : null
+    const enrichedQuestions = lookup
+      ? viewingHistory.questions.map(q => {
+          if (!q.detailedExplanation) {
+            const fullQ = lookup.get(q.id)
+            return fullQ ? { ...q, detailedExplanation: fullQ.detailedExplanation } : q
+          }
+          return q
+        })
+      : viewingHistory.questions
+
     return (
       <div className="max-w-3xl mx-auto space-y-6">
         {/* History Summary Card */}
@@ -490,7 +505,7 @@ const Practice = () => {
         {/* Question Navigation */}
         <div className="card py-3 px-4">
           <div className="flex flex-wrap gap-2 justify-center">
-            {viewingHistory.questions.map((q, index) => {
+            {enrichedQuestions.map((q, index) => {
               const record = historyRecordMap.get(q.id)
               if (!record) {
                 return (
@@ -521,7 +536,7 @@ const Practice = () => {
         <div className="space-y-4">
           <h2 className="text-xl font-bold text-sumi">詳細解析</h2>
 
-          {viewingHistory.questions.map((question, index) => {
+          {enrichedQuestions.map((question, index) => {
             const record = historyRecordMap.get(question.id)
             if (!record) return null
             const isExpanded = expandedQuestions.has(index)
