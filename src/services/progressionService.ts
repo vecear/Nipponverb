@@ -101,6 +101,15 @@ export function calculateExpReward(
     case 'grammar_lesson_complete':
       return EXP_REWARDS.GRAMMAR_LESSON_COMPLETE
 
+    case 'course_lesson_complete':
+      return EXP_REWARDS.COURSE_LESSON_COMPLETE
+
+    case 'course_unit_complete':
+      return EXP_REWARDS.COURSE_UNIT_COMPLETE
+
+    case 'course_complete':
+      return EXP_REWARDS.COURSE_COMPLETE
+
     default:
       return 0
   }
@@ -337,6 +346,25 @@ export async function handleGrammarLessonComplete(
   customExpAmount?: number
 ): Promise<LevelUpInfo | null> {
   const expAmount = customExpAmount ?? calculateExpReward('grammar_lesson_complete')
+  const { newProgression, levelUpInfo } = addExp(
+    currentProgression,
+    expAmount,
+    gender
+  )
+  await updateUserProgression(uid, newProgression)
+  return levelUpInfo
+}
+
+/**
+ * 處理完成結構課程課堂測驗事件
+ */
+export async function handleCourseLessonComplete(
+  uid: string,
+  currentProgression: UserProgression,
+  gender: Gender,
+  eventType: 'course_lesson_complete' | 'course_unit_complete' | 'course_complete' = 'course_lesson_complete'
+): Promise<LevelUpInfo | null> {
+  const expAmount = calculateExpReward(eventType)
   const { newProgression, levelUpInfo } = addExp(
     currentProgression,
     expAmount,

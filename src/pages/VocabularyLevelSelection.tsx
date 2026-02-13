@@ -8,7 +8,7 @@ const LEVELS = [
     { id: 'N4', title: 'N4', description: '初級單字 (571 字)', color: 'from-pink-400 to-pink-500', enabled: true },
     { id: 'N3', title: 'N3', description: '中級單字 (192 字)', color: 'from-purple-400 to-purple-500', enabled: true },
     { id: 'N2', title: 'N2', description: '中高級單字 (99 字)', color: 'from-blue-400 to-blue-500', enabled: true },
-    { id: 'N1', title: 'N1', description: '高級單字 (Coming Soon)', color: 'from-emerald-400 to-emerald-500', enabled: false },
+    { id: 'N1', title: 'N1', description: '高級單字（即將推出）', color: 'from-emerald-400 to-emerald-500', enabled: false },
 ];
 
 const VocabularyLevelSelection: React.FC = () => {

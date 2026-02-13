@@ -95,10 +95,10 @@ const MatchingQuestionCard = ({ question, onAnswer }: MatchingQuestionCardProps)
             <div className="space-y-2 sm:space-y-4">
                 <div className="text-center">
                     <span className="inline-block px-1.5 py-0.5 sm:px-2 bg-vermilion/20 text-vermilion rounded-full text-[9px] sm:text-xs font-semibold mb-0.5 sm:mb-2">
-                        マッチング
+                        配對
                     </span>
                     <h2 className="text-sm sm:text-xl font-zen font-bold text-sumi">
-                        {question.instruction || "Match the pairs"}
+                        {question.instruction || '請配對假名與讀音'}
                     </h2>
                 </div>
 
@@ -176,7 +176,7 @@ const MatchingQuestionCard = ({ question, onAnswer }: MatchingQuestionCardProps)
                                     <X className="text-red-500" size={20} />
                                 )}
                                 <span className="text-sm sm:text-base font-bold">
-                                    {wasSuccessful ? '正解！' : '不正解'}
+                                    {wasSuccessful ? '正確！' : '答錯了'}
                                 </span>
                             </div>
                             {!wasSuccessful && (

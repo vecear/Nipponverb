@@ -80,3 +80,11 @@ export function getStaticBankCount(
   const bank = getStaticBank(category, level)
   return bank ? bank.length : null
 }
+
+/**
+ * Get the total question count for the vocabulary unified bank.
+ * Returns 0 for levels without unified banks (N1).
+ */
+export function getVocabUnifiedBankCount(level: Level): number {
+  return _getVocabUnifiedBank(level).length
+}

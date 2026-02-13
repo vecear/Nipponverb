@@ -318,6 +318,10 @@
     },
     "dateCounters": {
       "description": "掌握日期、時間和數量詞的用法"
+    },
+    "jlptCourse": {
+      "title": "JLPT 結構課程",
+      "description": "循序漸進學習日語，掌握 JLPT 考試所需能力"
     }
   },
   "common": {

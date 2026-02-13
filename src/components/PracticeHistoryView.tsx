@@ -176,7 +176,7 @@ const PracticeHistoryView = ({ history, onBack }: PracticeHistoryViewProps) => {
                     }`}>
                     {question.type === 'matching' ? (
                       <div className="text-center">
-                        <p className="text-sm font-bold text-green-400">マッチング完了！</p>
+                        <p className="text-sm font-bold text-green-400">配對完成！</p>
                       </div>
                     ) : (
                       <p className="text-sm">

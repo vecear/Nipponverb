@@ -2,7 +2,7 @@
  * Furigana utilities for stem/explanation text processing.
  */
 
-const FURIGANA_RE = /([\u4e00-\u9fff\u3400-\u4dbf\u3005\u3007]+)\{([^{}]+)\}/g
+const FURIGANA_RE = /([\u4e00-\u9fff\u3400-\u4dbf\u3005\u3007][\u4e00-\u9fff\u3400-\u4dbf\u3005\u3007\u3040-\u309f\u30a0-\u30ff]*)\{([^{}]+)\}/g
 
 /**
  * Strip furigana annotations from question stems (JLPT-style: no readings shown).

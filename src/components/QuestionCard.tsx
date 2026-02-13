@@ -146,7 +146,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
 
         {question.source && (
           <div className="text-center text-sm text-white/50">
-            Source: {question.source}
+            來源：{question.source}
           </div>
         )}
       </div>

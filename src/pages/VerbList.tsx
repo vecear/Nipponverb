@@ -116,7 +116,7 @@ const VerbList = () => {
                                         <span className="text-xs text-indigo-900/90 px-2 py-1 rounded bg-indigo-900/5 capitalize">{t(`practice.categories.verbs.types.${verb.type}`)}</span>
                                     </div>
                                     <div className="text-sm text-indigo-900/80 mt-1">
-                                        {(i18n.language === 'zh-TW' || i18n.language.startsWith('zh')) ? verb.meaning_zh : verb.meaning}
+                                        {verb.meaning_zh}
                                     </div>
                                 </div >
                             ))}
@@ -161,7 +161,7 @@ const VerbList = () => {
                                         </span>
                                     </div>
                                     <p className="text-xl text-indigo-900/80 mt-2 font-medium">
-                                        {(i18n.language === 'zh-TW' || i18n.language.startsWith('zh')) ? selectedVerb.meaning_zh : selectedVerb.meaning}
+                                        {selectedVerb.meaning_zh}
                                     </p>
                                 </div>
                                 <div className="text-right">
@@ -172,7 +172,7 @@ const VerbList = () => {
                                 </div>
                             </div>
 
-                            {selectedVerb.dictionary_definition && selectedVerb.dictionary_definition.length > 0 && (i18n.language === 'zh-TW' || i18n.language.startsWith('zh')) && (
+                            {selectedVerb.dictionary_definition && selectedVerb.dictionary_definition.length > 0 && (
                                 <div className="bg-indigo-900/5 p-4 rounded-xl border border-indigo-900/10 mb-6">
                                     <div className="text-xs text-indigo-900/40 font-bold uppercase tracking-wider mb-2">
                                         辭書定義

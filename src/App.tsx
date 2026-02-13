@@ -19,6 +19,9 @@ import Admin from './pages/Admin'
 import VocabularyLevelSelection from './pages/VocabularyLevelSelection'
 import { VocabularyList } from './pages/vocabulary'
 import DatesAndCounters from './pages/DatesAndCounters'
+import CourseSelection from './pages/course/CourseSelection'
+import CourseOverview from './pages/course/CourseOverview'
+import LessonPage from './pages/course/LessonPage'
 import ProtectedRoute from './components/ProtectedRoute'
 
 import AdminRoute from './components/AdminRoute'
@@ -47,6 +50,9 @@ function App() {
               <Route path="/vocabulary" element={<VocabularyLevelSelection />} />
               <Route path="/vocabulary/:level" element={<VocabularyList />} />
               <Route path="/date-counters" element={<DatesAndCounters />} />
+              <Route path="/course" element={<CourseSelection />} />
+              <Route path="/course/:level" element={<CourseOverview />} />
+              <Route path="/course/:level/lesson/:lessonId" element={<LessonPage />} />
             </Route>
             {/* 管理員路由 */}
             <Route path="/admin" element={<AdminRoute><Admin /></AdminRoute>} />

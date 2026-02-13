@@ -288,27 +288,95 @@ ID 格式：`v_{level}_{三位數字}_{type}`（如 `v_n5_001_r`, `v_n5_001_c`, 
 
 ---
 
-## 八、當前狀態
+## 八、JLPT 結構化課程系統（已完成）
+
+### 目標
+建立引導式學習路徑，將現有單字與文法組織為有教學順序的課堂。目前完成 N5 課程（6 單元 25 堂課）。
+
+### 架構
+```
+Course (JLPT N5)
+├── Unit 1: 入門・自我介紹 (4 lessons)
+├── Unit 2: 日常生活 (4 lessons)
+├── Unit 3: 描述事物 (5 lessons)
+├── Unit 4: 動作與順序 (4 lessons)
+├── Unit 5: 許可・義務・理由 (5 lessons)
+└── Unit 6: 溝通與複習 (3 lessons)
+```
+
+每堂課包含：~26 個單字、3-4 個文法摘要（連結到文法詳解頁）、5-7 行情境對話、10 題綜合測驗。
+
+### 路由
+| 路由 | 頁面 | 說明 |
+|------|------|------|
+| `/course` | CourseSelection | JLPT 等級選擇（N5 可用，N4-N1 Coming Soon） |
+| `/course/:level` | CourseOverview | 單元與課堂列表 |
+| `/course/:level/lesson/:lessonId` | LessonPage | 課堂頁面（學習→測驗→結果三階段） |
+
+### 檔案結構
+| 檔案 | 說明 |
+|------|------|
+| `src/types/course.ts` | CourseDefinition, UnitDefinition, LessonDefinition 等型別 |
+| `src/data/courses/index.ts` | Barrel export + `getCourseByLevel()`, `getAvailableLevels()` |
+| `src/data/courses/n5/index.ts` | N5 課程定義（動態計算 totalVocab/totalGrammar/totalLessons） |
+| `src/data/courses/n5/lessons/index.ts` | 課堂 barrel export |
+| `src/data/courses/n5/lessons/u1.ts` ~ `u6.ts` | 各單元課堂資料（含 vocab, grammar, dialogue, quiz） |
+| `src/store/useCourseProgressStore.ts` | Zustand 課程進度 store（含 Firebase sync） |
+| `src/pages/course/CourseSelection.tsx` | JLPT 等級選擇頁 |
+| `src/pages/course/CourseOverview.tsx` | 課程總覽頁 |
+| `src/pages/course/LessonPage.tsx` | 課堂頁（三階段：learning → quiz → results） |
+
+### 測驗整合
+- 測驗使用 `UnifiedQuestion` 格式，透過 `unifiedToQuestion()` 轉為 runtime `Question`
+- 重用 `PracticeSession` 組件進行一題一答
+- 測驗 ID 格式：`cq_n5_uX_lY_NNN`（共 250 題，無重複）
+- 完成測驗後獎勵 80 EXP（透過 `handleCourseLessonComplete()`）
+- 進度儲存至 `useCourseProgressStore`（Zustand persist + Firebase）
+
+### 資料統計
+| 項目 | 數量 |
+|------|------|
+| 課堂總數 | 25 |
+| 單字總數 | 650 |
+| 文法引用 | 80（對應 grammarList 中 85 個 N5 文法的 80 個） |
+| 測驗題數 | 250 |
+| 對話行數 | 168 |
+
+### 首頁整合
+- `src/data/courses.ts`：新增「JLPT 結構課程」卡片（排在第一位），導向 `/course`
+- `src/i18n/locales/zh-TW.json`：新增 `courses.jlptCourse.title` / `description` 翻譯
+- `src/types/progression.ts`：新增 `course_lesson_complete`（+80 EXP）、`course_unit_complete`（+200 EXP）、`course_complete`（+1000 EXP）事件
+- `src/services/progressionService.ts`：新增 `handleCourseLessonComplete()`
+
+### 擴展方式
+新增其他 JLPT 等級只需在 `src/data/courses/` 下建立 `n4/`, `n3/` 等資料夾，結構與 `n5/` 完全一致。型別、store、組件、路由全部複用。
+
+---
+
+## 九、當前狀態
 
 - **Git 分支**：main
 - **文法題庫擴充及整合已完成**
 - **單字題庫擴充及整合已完成**
+- **JLPT N5 結構化課程已完成**
 - **TypeScript 編譯**：通過
 - **Vite 構建**：通過
 
 ---
 
-## 九、已知問題 / 可能的後續工作
+## 十、已知問題 / 可能的後續工作
 
-1. **Vite build 警告**：主 chunk 超過 500KB（~9,700KB），建議做 code-splitting
+1. **Vite build 警告**：主 chunk 超過 500KB（~9,900KB），建議做 code-splitting
 2. **practiceService.ts 動態導入警告**：同時被靜態和動態導入
 3. **清理腳本**：`scripts/` 下的 .mjs 腳本已執行完畢，可以刪除
 4. **Gojuon/Kanji explanation 中的 `explanation` 欄位**：已改為中文，但 `detailedExplanation.structured` 本就是中文，兩者一致
 5. **N1 單字題庫**：尚未建立（目前無 N1 原始單字資料）
+6. **JLPT N4-N1 課程**：課程基礎設施已就緒，只需建立各等級課堂資料
+7. **5 個 N5 文法未納入課程**：`n5_no_desu`, `n5_no_ga_heta`, `n5_o_kudasai`, `n5_soshite`, `n5_wa_dou_desu_ka`（與其他文法功能重疊，可在未來課堂中補充）
 
 ---
 
-## 十、使用者偏好
+## 十一、使用者偏好
 
 - 語言：使用者以繁體中文溝通
 - 工作風格：一次交代多個任務，不希望中途被打斷詢問，完成後再驗收

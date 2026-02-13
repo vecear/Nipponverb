@@ -329,9 +329,10 @@ function generateGojuonForChar(
     const similarCharSet = new Set(similarChars.map(s => s.char))
 
     // Pick from similar chars first, then fill randomly
-    const similarDistractors = data.filter(item => similarCharSet.has(item.char))
+    // Exclude chars with same romaji as target (e.g. じ/ぢ both='ji') to avoid duplicate options
+    const similarDistractors = data.filter(item => similarCharSet.has(item.char) && item.romaji !== target.romaji)
     const otherDistractors = data
-        .filter(item => item.char !== target.char && !similarCharSet.has(item.char))
+        .filter(item => item.char !== target.char && !similarCharSet.has(item.char) && item.romaji !== target.romaji)
         .sort(() => Math.random() - 0.5)
     const allDistractors = [...similarDistractors, ...otherDistractors].slice(0, 3)
 
@@ -351,7 +352,7 @@ function generateGojuonForChar(
         const correct = target.romaji
         const shuffledOptions = [correct, ...allDistractors.map(d => d.romaji)].sort(() => Math.random() - 0.5)
         return {
-            id: `gojuon_${type}_${target.romaji}_c2r`,
+            id: `gojuon_${type}_${target.romaji}_${target.row}_c2r`,
             stem: stripStemFurigana(`「${target.char}」の読{よ}み方{かた}は何{なん}ですか？`),
             correct,
             options: shuffledOptions,
@@ -378,7 +379,7 @@ function generateGojuonForChar(
         const correct = target.char
         const shuffledOptions = [correct, ...allDistractors.map(d => d.char)].sort(() => Math.random() - 0.5)
         return {
-            id: `gojuon_${type}_${target.romaji}_r2c`,
+            id: `gojuon_${type}_${target.romaji}_${target.row}_r2c`,
             stem: stripStemFurigana(`「${target.romaji}」を表{あらわ}す文字{もじ}はどれですか？`),
             correct,
             options: shuffledOptions,
@@ -432,7 +433,7 @@ export function generateMatchingQuestion(type: 'hiragana' | 'katakana', pairCoun
 
     return {
         type: 'matching',
-        instruction: '正しい組み合わせを選んでください（正しいペアをマッチさせてください）。',
+        instruction: '請將假名與對應的羅馬拼音配對。',
         pairs: selected.map(item => ({
             char: item.char,
             romaji: item.romaji,

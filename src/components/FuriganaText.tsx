@@ -24,8 +24,10 @@ const FuriganaText: React.FC<FuriganaTextProps> = ({ text, className = "" }) => 
 
     // Helper to parse just the furigana parts
     const parseFurigana = (str: string) => {
-        // Regex to match: Kanji{Furigana}
-        const regex = /([\u4e00-\u9fff\u3400-\u4dbf\u3005\u3007\u30f5\u30f6]+)\{([^{}]+)\}/g;
+        // Regex to match: Kanji(+optional kana){Furigana}
+        // Must start with CJK character, then can include hiragana/katakana
+        // e.g. 漢字{かんじ}, 消しゴム{けしごむ}, 伯母さん{おばさん}
+        const regex = /([\u4e00-\u9fff\u3400-\u4dbf\u3005\u3007][\u4e00-\u9fff\u3400-\u4dbf\u3005\u3007\u3040-\u309f\u30a0-\u30ff]*)\{([^{}]+)\}/g;
         const parts = [];
         let lastIndex = 0;
         let match;

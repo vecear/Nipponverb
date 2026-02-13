@@ -5,7 +5,7 @@ import { usePracticeStore, PracticeHistoryEntry } from '../store/usePracticeStor
 import { getGojuonQuestionCount } from '../data/gojuon'
 import { getGrammarQuestionCount } from '../data/grammar'
 import { getKanjiQuestionCount } from '../data/kanji'
-import { getStaticBankCount } from '../utils/questionBanks'
+import { getStaticBankCount, getVocabUnifiedBankCount } from '../utils/questionBanks'
 import { practiceCategories as datesPracticeCategories } from '../data/questions/datesPractice'
 
 type GojuonSubcategory = 'hiragana' | 'katakana'
@@ -220,8 +220,10 @@ const PracticeCategorySetup = ({
             <label className="block text-base sm:text-lg font-semibold mb-3">{t('practice.selectLevel')}:</label>
             <div className="grid grid-cols-5 gap-2 sm:gap-3">
               {(['N5', 'N4', 'N3', 'N2', 'N1'] as const).map((level) => {
+                const vocabUnifiedCount = category === 'vocabulary' ? getVocabUnifiedBankCount(level) : 0
                 const totalQuestionCount =
-                  getStaticBankCount(category, level)
+                  (category === 'vocabulary' && vocabUnifiedCount > 0 ? vocabUnifiedCount : null)
+                  ?? getStaticBankCount(category, level)
                   ?? (category === 'grammar' ? getGrammarQuestionCount(level) : null)
                   ?? (category === 'kanji' ? getKanjiQuestionCount(level) : null)
                 const attemptedCount = getAttemptedQuestions(category, level).size

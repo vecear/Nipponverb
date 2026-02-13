@@ -363,7 +363,7 @@ const PracticeResults = ({
                   }`}>
                     {question.type === 'matching' ? (
                       <div className="text-center">
-                        <p className="text-lg font-bold text-green-400 mb-2">マッチング完了！</p>
+                        <p className="text-lg font-bold text-green-400 mb-2">配對完成！</p>
                         <div className="grid grid-cols-2 gap-2 text-sm">
                           {question.pairs?.map((p, idx) => (
                             <div key={idx} className="bg-white/10 p-2 rounded">{p.char} = {p.romaji}</div>

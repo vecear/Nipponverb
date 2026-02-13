@@ -6,6 +6,15 @@ import { useAuth } from '../contexts/AuthContext'
 import { useUserStore } from '../store/useUserStore'
 import { addExp, updateUserProgression } from '../services/progressionService'
 import { DEFAULT_PROGRESSION, EXP_REWARDS } from '../types/progression'
+import FuriganaText from '../components/FuriganaText'
+
+const topicLabels: Record<string, string> = {
+  daily_life: '日常生活',
+  school: '學校',
+  travel: '旅遊',
+  health: '健康',
+  entertainment: '娛樂',
+}
 
 const Stages = () => {
   const { t } = useTranslation()
@@ -179,8 +188,8 @@ const Stages = () => {
                     <span className="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-vermilion/20 text-vermilion rounded">
                       {stage.level}
                     </span>
-                    <span className="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-wave-light/20 text-wave-light rounded capitalize">
-                      {stage.topic.replace('_', ' ')}
+                    <span className="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-wave-light/20 text-wave-light rounded">
+                      {topicLabels[stage.topic] || stage.topic}
                     </span>
                   </div>
                 </div>
@@ -308,7 +317,7 @@ const Stages = () => {
               <div className="font-semibold text-vermilion mb-0.5 sm:mb-1 text-xs sm:text-base">
                 {line.speaker}:
               </div>
-              <div className="text-sm sm:text-lg mb-1 sm:mb-2">{line.text}</div>
+              <div className="text-sm sm:text-lg mb-1 sm:mb-2"><FuriganaText text={line.text} /></div>
             </div>
           ))}
         </div>
@@ -318,7 +327,7 @@ const Stages = () => {
       <div>
         <div className="flex items-center justify-between mb-1 sm:mb-2">
           <span className="text-indigo-900/90 text-xs sm:text-base">
-            Question {currentQuestionIndex + 1} / {selectedStage.questions.length}
+            第 {currentQuestionIndex + 1} 題 / 共 {selectedStage.questions.length} 題
           </span>
         </div>
         <div className="w-full bg-indigo-900/10 rounded-full h-1 sm:h-2">
@@ -333,7 +342,7 @@ const Stages = () => {
 
       <div className="card p-3 sm:p-6">
         <h3 className="text-base sm:text-2xl font-semibold mb-3 sm:mb-6">
-          {currentQuestion.stem}
+          <FuriganaText text={currentQuestion.stem || ''} />
         </h3>
 
         <div className="space-y-2 sm:space-y-3">
@@ -349,7 +358,7 @@ const Stages = () => {
               <span className="font-semibold mr-2 sm:mr-3">
                 {String.fromCharCode(65 + _idx)}.
               </span>
-              {option}
+              <FuriganaText text={option} />
             </button>
           ))}
         </div>
@@ -357,7 +366,7 @@ const Stages = () => {
         {answers[currentQuestion.id] && (
           <div className="mt-2 sm:mt-4 p-2 sm:p-4 bg-white/5 rounded-lg sm:rounded-xl">
             <div className="text-xs sm:text-sm text-indigo-900/80">
-              <strong>{t('stages.explanation')}</strong> {currentQuestion.explanation}
+              <strong>{t('stages.explanation')}</strong> <FuriganaText text={currentQuestion.explanation || ''} />
             </div>
           </div>
         )}

@@ -1,4 +1,4 @@
-import { BookOpen, MessageSquare, Calendar, Book, FileText, LucideIcon } from 'lucide-react'
+import { BookOpen, MessageSquare, Calendar, Book, FileText, GraduationCap, LucideIcon } from 'lucide-react'
 
 export interface Course {
     id: string
@@ -14,6 +14,15 @@ export interface Course {
 import { COURSE_LIST_ICONS } from '../config/assets'
 
 export const courses: Course[] = [
+    {
+        id: 'jlptCourse',
+        titleKey: 'courses.jlptCourse.title',
+        descriptionKey: 'courses.jlptCourse.description',
+        icon: GraduationCap,
+        path: '/course',
+        color: 'from-indigo-500 to-purple-600',
+        emoji: '🎓',
+    },
     {
         id: 'verbs',
         titleKey: 'nav.verbs',

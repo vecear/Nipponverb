@@ -24,6 +24,9 @@ export type ExpEventType =
   | 'simulation_complete' // 模擬考試完成 +100~500
   | 'stage_complete'      // 完成情境關卡 +200
   | 'grammar_lesson_complete' // 完成文法課程隨堂測驗 +30
+  | 'course_lesson_complete'  // 完成結構課程課堂測驗 +80
+  | 'course_unit_complete'    // 完成結構課程單元 +200
+  | 'course_complete'         // 完成整門結構課程 +1000
 
 // 經驗值獲取事件
 export interface ExpEvent {
@@ -67,6 +70,9 @@ export const EXP_REWARDS = {
   SIMULATION_MAX: 500,     // 模擬考試最高獎勵
   STAGE_COMPLETE: 200,     // 完成情境關卡
   GRAMMAR_LESSON_COMPLETE: 30, // 完成文法課程隨堂測驗
+  COURSE_LESSON_COMPLETE: 80,  // 完成結構課程課堂測驗
+  COURSE_UNIT_COMPLETE: 200,   // 完成結構課程單元
+  COURSE_COMPLETE: 1000,       // 完成整門結構課程
 } as const
 
 // 職業階段等級範圍
