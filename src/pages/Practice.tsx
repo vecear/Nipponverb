@@ -12,7 +12,7 @@ import { updateStudyTracking } from '../services/studyTrackingService'
 import { getQuestionsBySubcategory } from '../data/questions/datesPractice'
 import { selectQuestionsSmartly } from '../utils/smartSelection'
 import { staticToQuestion, datesToQuestion, unifiedToQuestion } from '../utils/questionAdapters'
-import { getStaticBank, getGrammarBank } from '../utils/questionBanks'
+import { getStaticBank, getGrammarBank, getVocabUnifiedBank } from '../utils/questionBanks'
 
 // Sub-components
 import PracticeCategoryGrid from '../components/PracticeCategoryGrid'
@@ -104,7 +104,23 @@ const Practice = () => {
     const { level, subcategory, datesCategory, datesSubcategory, questionCount: count } = settings
     const allStats = usePracticeStore.getState().questionStats
 
-    // Static bank categories (vocabulary, verbs)
+    // Vocabulary unified bank (UnifiedQuestion format, preferred over legacy static bank)
+    if (cat === 'vocabulary') {
+      const vocabBank = getVocabUnifiedBank(level as any)
+      if (vocabBank.length > 0) {
+        const selected = selectQuestionsSmartly({
+          bank: vocabBank, getId: q => q.id, count,
+          questionStats: allStats, overallAccuracy: getOverallAccuracy(cat, level),
+        })
+        return selected.map(q => {
+          const shuffled = [...q.options].sort(() => Math.random() - 0.5)
+          const newIdx = shuffled.findIndex(o => o.text === q.options[q.correctIndex].text)
+          return unifiedToQuestion({ ...q, options: shuffled, correctIndex: newIdx })
+        })
+      }
+    }
+
+    // Static bank categories (vocabulary fallback, verbs)
     const staticBank = getStaticBank(cat, level as any)
     if (staticBank) {
       const selected = selectQuestionsSmartly({
@@ -200,6 +216,15 @@ const Practice = () => {
     } else if (cat === 'grammar') {
       const bank = getGrammarBank(settings.level as any)
       wrongQuestions = bank.filter(q => wrongIdSet.has(q.id)).map(q => unifiedToQuestion(q))
+    } else if (cat === 'vocabulary') {
+      const vocabBank = getVocabUnifiedBank(settings.level as any)
+      if (vocabBank.length > 0) {
+        wrongQuestions = vocabBank.filter(q => wrongIdSet.has(q.id)).map(q => unifiedToQuestion(q))
+      } else {
+        const bank = getStaticBank(cat, settings.level as any)
+        if (!bank) return
+        wrongQuestions = bank.filter(q => wrongIdSet.has(q.id)).map(q => staticToQuestion(q, settings.level as any))
+      }
     } else if (cat === 'kanji') {
       const bank = getKanjiQuestionBank(settings.level as any)
       wrongQuestions = bank.filter(q => wrongIdSet.has(q.id)).map(q => ({ ...q, type: 'multiple-choice' as const }))
@@ -252,6 +277,15 @@ const Practice = () => {
     } else if (cat === 'grammar') {
       const bank = getGrammarBank(settings.level as any)
       dueQuestions = bank.filter(q => dueIds.has(q.id)).map(q => unifiedToQuestion(q))
+    } else if (cat === 'vocabulary') {
+      const vocabBank = getVocabUnifiedBank(settings.level as any)
+      if (vocabBank.length > 0) {
+        dueQuestions = vocabBank.filter(q => dueIds.has(q.id)).map(q => unifiedToQuestion(q))
+      } else {
+        const bank = getStaticBank(cat, settings.level as any)
+        if (!bank) return
+        dueQuestions = bank.filter(q => dueIds.has(q.id)).map(q => staticToQuestion(q, settings.level as any))
+      }
     } else if (cat === 'kanji') {
       const bank = getKanjiQuestionBank(settings.level as any)
       dueQuestions = bank.filter(q => dueIds.has(q.id)).map(q => ({ ...q, type: 'multiple-choice' as const }))

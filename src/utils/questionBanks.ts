@@ -14,8 +14,11 @@ import { n3Questions } from '../data/questions/n3'
 import { n2Questions } from '../data/questions/n2'
 import { n1Questions } from '../data/questions/n1'
 
-// Vocabulary banks
+// Vocabulary banks (legacy StaticQuestion format)
 import { vocabN5, vocabN4, vocabN3, vocabN2, vocabN1 } from '../data/questions/vocab'
+
+// Vocabulary banks (new UnifiedQuestion format)
+import { getVocabUnifiedBank as _getVocabUnifiedBank } from '../data/questions/vocabulary'
 
 // Grammar bank (UnifiedQuestion format)
 import { grammarQuestions } from '../data/grammar'
@@ -56,6 +59,14 @@ export function getStaticBank(
  */
 export function getGrammarBank(level: Level): UnifiedQuestion[] {
   return grammarQuestions.filter(q => q.level === level)
+}
+
+/**
+ * Get the vocabulary question bank (UnifiedQuestion format) for a given level.
+ * Returns empty array for levels without unified banks (N1).
+ */
+export function getVocabUnifiedBank(level: Level): UnifiedQuestion[] {
+  return _getVocabUnifiedBank(level)
 }
 
 /**

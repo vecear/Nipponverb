@@ -11,15 +11,7 @@ export interface Course {
     image?: string // 浮世繪風格圖示路徑 (存放於 public/assets/icons/)
 }
 
-// 課程圖示路徑
-// 圖片生成 Prompts 請參考: docs/image-prompts.md
-const COURSE_IMAGES = {
-    verbs: '/assets/icons/practice/practice-verbs.png',
-    vocabulary: '/assets/icons/practice/practice-vocabulary.png',
-    grammar: '/assets/icons/practice/practice-grammar.png',
-    // idioms: '/assets/icons/courses/course-idioms.png', // 暫無圖片
-    dateCounters: '/assets/icons/practice/practice-dates.png', // 使用練習圖示
-}
+import { COURSE_LIST_ICONS } from '../config/assets'
 
 export const courses: Course[] = [
     {
@@ -30,7 +22,7 @@ export const courses: Course[] = [
         path: '/verbs',
         color: 'from-orange-500 to-red-500',
         emoji: '✍️',
-        image: COURSE_IMAGES.verbs,
+        image: COURSE_LIST_ICONS.verbs,
     },
     {
         id: 'vocabulary',
@@ -40,7 +32,7 @@ export const courses: Course[] = [
         path: '/vocabulary',
         color: 'from-yellow-500 to-orange-500',
         emoji: '🔤',
-        image: COURSE_IMAGES.vocabulary,
+        image: COURSE_LIST_ICONS.vocabulary,
     },
     {
         id: 'grammar',
@@ -50,7 +42,7 @@ export const courses: Course[] = [
         path: '/grammar',
         color: 'from-pink-500 to-purple-500',
         emoji: '📖',
-        image: COURSE_IMAGES.grammar,
+        image: COURSE_LIST_ICONS.grammar,
     },
     {
         id: 'idioms',
@@ -60,7 +52,7 @@ export const courses: Course[] = [
         path: '/idioms',
         color: 'from-blue-500 to-cyan-500',
         emoji: '💬',
-        // image: COURSE_IMAGES.idioms,
+        image: COURSE_LIST_ICONS.idioms,
     },
     {
         id: 'dateCounters',
@@ -70,6 +62,6 @@ export const courses: Course[] = [
         path: '/date-counters',
         color: 'from-green-500 to-teal-500',
         emoji: '📅',
-        image: COURSE_IMAGES.dateCounters,
+        image: COURSE_LIST_ICONS.dateCounters,
     },
 ]

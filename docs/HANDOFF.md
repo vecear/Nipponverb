@@ -224,25 +224,91 @@ interface DatesPracticeQuestion {
 
 ---
 
-## 七、當前狀態
+## 七、單字題庫擴充（已完成）
+
+### 目標
+將單字題庫從 N5 ~1,200 題（舊 StaticQuestion 格式）+ N4/N3/N2 各 3 題佔位，擴充為每個單字 3 題（對應 JLPT 題型），全面使用 UnifiedQuestion 格式。
+
+### 題目來源
+- 原始單字檔案：`src/data/raw/n{x}_vocab*.ts`（VocabularyData 介面：word, reading, meaning, meaning_zh, level）
+- 單字數：N5: 644, N4: 571, N3: 192, N2: 99（共 1,506 個單字）
+
+### 三種 JLPT 題型（每個單字各一題）
+
+| 類型 | 標籤 | 說明 | 難度 |
+|------|------|------|------|
+| 漢字読み / 表記 | `vocab_reading` | 給漢字問讀音；無漢字則問正確寫法 | 簡單 |
+| 文脈規定 | `vocab_context` | 句子填空，選填正確詞彙 | 中等 |
+| 用法・言い換え | `vocab_usage` | 測試正確含義理解 | 困難 |
+
+ID 格式：`v_{level}_{三位數字}_{type}`（如 `v_n5_001_r`, `v_n5_001_c`, `v_n5_001_u`）
+
+### 最終結果（截至 2026-02-14）
+
+| 階段 | 單字數 | 題數 | 檔案 |
+|------|--------|------|------|
+| N5 | 643 | 1,929 | n5_part1.ts (675), n5_part2.ts (516), n5_part3.ts (738) |
+| N4 | 567 | 1,701 | n4_part1.ts (579), n4_part2.ts (549), n4_part3.ts (573) |
+| N3 | 191 | 573 | n3.ts |
+| N2 | 99 | 297 | n2.ts |
+| **合計** | **1,500** | **4,500** | 8 個資料檔 + index.ts |
+
+### 生成方式
+使用程式化生成腳本 `scripts/generateVocabQuestions.mjs`：
+- 從原始單字檔案（`.ts`）以正則解析 VocabularyData
+- 對每個單字自動判斷是否含漢字 / 片假名 / 純平假名，選擇對應題型模板
+- 同級單字中智慧選取干擾項（distractors）
+- 使用 seeded PRNG 確保可重現性
+- 一次執行即生成所有 8 個資料檔 + barrel export
+
+### 檔案位置
+| 檔案 | 說明 |
+|------|------|
+| `src/data/questions/vocabulary/index.ts` | Barrel export + `allVocabQuestions` + `getVocabUnifiedBank()` |
+| `src/data/questions/vocabulary/n5_part1.ts` | N5 單字 1-225（675 題） |
+| `src/data/questions/vocabulary/n5_part2.ts` | N5 單字 226-397（516 題） |
+| `src/data/questions/vocabulary/n5_part3.ts` | N5 單字 398-643（738 題） |
+| `src/data/questions/vocabulary/n4_part1.ts` | N4 單字 1-193（579 題） |
+| `src/data/questions/vocabulary/n4_part2.ts` | N4 單字 194-376（549 題） |
+| `src/data/questions/vocabulary/n4_part3.ts` | N4 單字 377-567（573 題） |
+| `src/data/questions/vocabulary/n3.ts` | N3 全部 191 字（573 題） |
+| `src/data/questions/vocabulary/n2.ts` | N2 全部 99 字（297 題） |
+| `scripts/generateVocabQuestions.mjs` | 生成腳本（可重新執行） |
+
+### 整合方式
+- `src/utils/questionBanks.ts`：新增 `getVocabUnifiedBank()` 函數
+- `src/pages/Practice.tsx`：`generateQuestions()`, `startReview()`, `startSrsReview()` 三處均已修改
+  - 優先使用 UnifiedQuestion 題庫（同 grammar 處理方式）
+  - 若 unified bank 為空，fallback 至舊 StaticQuestion 題庫（`src/data/questions/vocab.ts`）
+- 舊題庫 `src/data/questions/vocab.ts` 保留不刪除，作為 N1 或其他 fallback
+
+### 驗證結果
+- `npx tsc --noEmit`：通過，無錯誤
+- `npx vite build`：構建成功
+
+---
+
+## 八、當前狀態
 
 - **Git 分支**：main
-- **文法題庫擴充及整合已完成**，待 commit
+- **文法題庫擴充及整合已完成**
+- **單字題庫擴充及整合已完成**
 - **TypeScript 編譯**：通過
 - **Vite 構建**：通過
 
 ---
 
-## 八、已知問題 / 可能的後續工作
+## 九、已知問題 / 可能的後續工作
 
-1. **Vite build 警告**：主 chunk 超過 500KB（7,842KB），建議做 code-splitting
+1. **Vite build 警告**：主 chunk 超過 500KB（~9,700KB），建議做 code-splitting
 2. **practiceService.ts 動態導入警告**：同時被靜態和動態導入
-3. **清理腳本**：`scripts/` 下的 4 個 .mjs 腳本已執行完畢，可以刪除
+3. **清理腳本**：`scripts/` 下的 .mjs 腳本已執行完畢，可以刪除
 4. **Gojuon/Kanji explanation 中的 `explanation` 欄位**：已改為中文，但 `detailedExplanation.structured` 本就是中文，兩者一致
+5. **N1 單字題庫**：尚未建立（目前無 N1 原始單字資料）
 
 ---
 
-## 八、使用者偏好
+## 十、使用者偏好
 
 - 語言：使用者以繁體中文溝通
 - 工作風格：一次交代多個任務，不希望中途被打斷詢問，完成後再驗收

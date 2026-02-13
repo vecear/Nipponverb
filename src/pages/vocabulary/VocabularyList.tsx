@@ -1,15 +1,19 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useCallback } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ChevronLeft, Search } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Search } from 'lucide-react';
 import { n5Vocabulary, n4Vocabulary, n3Vocabulary, n2Vocabulary } from '../../data/vocabulary';
+
+const PAGE_SIZE = 50;
 
 const VocabularyList: React.FC = () => {
     const navigate = useNavigate();
     const { level } = useParams<{ level: string }>();
     const { t } = useTranslation();
+    const tableRef = useRef<HTMLDivElement>(null);
 
     const [searchTerm, setSearchTerm] = useState('');
+    const [currentPage, setCurrentPage] = useState(1);
 
     const data = useMemo(() => {
         switch (level?.toLowerCase()) {
@@ -30,7 +34,37 @@ const VocabularyList: React.FC = () => {
         );
     }, [data, searchTerm]);
 
+    const totalPages = Math.ceil(filteredVocab.length / PAGE_SIZE);
+    const startIdx = (currentPage - 1) * PAGE_SIZE;
+    const endIdx = Math.min(startIdx + PAGE_SIZE, filteredVocab.length);
+    const pagedVocab = filteredVocab.slice(startIdx, endIdx);
+
+    const goToPage = useCallback((page: number) => {
+        setCurrentPage(page);
+        tableRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, []);
+
+    const handleSearch = useCallback((value: string) => {
+        setSearchTerm(value);
+        setCurrentPage(1);
+    }, []);
+
     const displayLevel = level?.toUpperCase() || '';
+
+    // Generate page numbers with ellipsis
+    const getPageNumbers = (): (number | '...')[] => {
+        if (totalPages <= 7) {
+            return Array.from({ length: totalPages }, (_, i) => i + 1);
+        }
+        const pages: (number | '...')[] = [1];
+        if (currentPage > 3) pages.push('...');
+        for (let i = Math.max(2, currentPage - 1); i <= Math.min(totalPages - 1, currentPage + 1); i++) {
+            pages.push(i);
+        }
+        if (currentPage < totalPages - 2) pages.push('...');
+        pages.push(totalPages);
+        return pages;
+    };
 
     return (
         <div className="min-h-screen py-8 px-4 bg-sand-light/30">
@@ -56,13 +90,13 @@ const VocabularyList: React.FC = () => {
                             type="text"
                             placeholder="搜尋單字、讀音或意思"
                             value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
+                            onChange={(e) => handleSearch(e.target.value)}
                             className="w-full pl-4 pr-10 py-2.5 bg-white border-2 border-sumi-light/20 focus:border-wave/50 outline-none rounded-lg shadow-sm transition-all"
                         />
                     </div>
                 </div>
 
-                <div className="bg-white rounded-xl shadow-ukiyo overflow-hidden border border-sumi-light/10">
+                <div ref={tableRef} className="bg-white rounded-xl shadow-ukiyo overflow-hidden border border-sumi-light/10">
                     <div className="overflow-x-auto">
                         <table className="w-full text-left border-collapse">
                             <thead>
@@ -73,20 +107,13 @@ const VocabularyList: React.FC = () => {
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-sumi-light/10">
-                                {filteredVocab.slice(0, 300).map((v, idx) => (
-                                    <tr key={`${v.word}-${idx}`} className="hover:bg-sand-light/50 transition-colors">
+                                {pagedVocab.map((v, idx) => (
+                                    <tr key={`${v.word}-${startIdx + idx}`} className="hover:bg-sand-light/50 transition-colors">
                                         <td className="px-6 py-4 text-xl font-bold text-sumi">{v.word}</td>
                                         <td className="px-6 py-4 text-wave-deep">{v.reading}</td>
                                         <td className="px-6 py-4 text-vermilion font-medium">{v.meaning_zh}</td>
                                     </tr>
                                 ))}
-                                {filteredVocab.length > 300 && (
-                                    <tr>
-                                        <td colSpan={3} className="px-6 py-4 text-center text-sumi-faded italic bg-sand-light/20">
-                                            ... 僅顯示前 300 筆資料 ...
-                                        </td>
-                                    </tr>
-                                )}
                                 {filteredVocab.length === 0 && (
                                     <tr>
                                         <td colSpan={3} className="px-6 py-12 text-center text-sumi-faded">
@@ -97,6 +124,48 @@ const VocabularyList: React.FC = () => {
                             </tbody>
                         </table>
                     </div>
+
+                    {/* Pagination */}
+                    {totalPages > 1 && (
+                        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 px-6 py-4 bg-sand-light/20 border-t border-sumi-light/10">
+                            <span className="text-sm text-sumi-faded">
+                                第 {startIdx + 1}-{endIdx} 筆，共 {filteredVocab.length} 筆
+                            </span>
+                            <div className="flex items-center gap-1">
+                                <button
+                                    onClick={() => goToPage(currentPage - 1)}
+                                    disabled={currentPage === 1}
+                                    className="p-2 rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed hover:bg-wave/10 text-wave-deep"
+                                >
+                                    <ChevronLeft className="w-4 h-4" />
+                                </button>
+                                {getPageNumbers().map((page, i) =>
+                                    page === '...' ? (
+                                        <span key={`dots-${i}`} className="px-2 text-sumi-faded">...</span>
+                                    ) : (
+                                        <button
+                                            key={page}
+                                            onClick={() => goToPage(page)}
+                                            className={`min-w-[36px] h-9 rounded-lg text-sm font-medium transition-colors ${
+                                                currentPage === page
+                                                    ? 'bg-wave-deep text-white shadow-sm'
+                                                    : 'hover:bg-wave/10 text-sumi-faded'
+                                            }`}
+                                        >
+                                            {page}
+                                        </button>
+                                    )
+                                )}
+                                <button
+                                    onClick={() => goToPage(currentPage + 1)}
+                                    disabled={currentPage === totalPages}
+                                    className="p-2 rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed hover:bg-wave/10 text-wave-deep"
+                                >
+                                    <ChevronRight className="w-4 h-4" />
+                                </button>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
