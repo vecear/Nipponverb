@@ -195,8 +195,8 @@ const DatesPractice: React.FC = () => {
                     {/* 題目數量選擇 */}
                     <div className="mb-5">
                         <label className="block text-base sm:text-lg font-semibold mb-3">題目數量:</label>
-                        <div className="grid grid-cols-5 gap-2 sm:gap-3">
-                            {[10, 20, 30, 40, 50].map(count => (
+                        <div className="grid grid-cols-6 gap-2 sm:gap-3">
+                            {[5, 10, 20, 30, 40, 50].map(count => (
                                 <button
                                     key={count}
                                     onClick={() => setQuestionCount(count)}

@@ -1,6 +1,6 @@
 # Claude Agent 工作交接文件
 
-> 最後更新：2026-02-13
+> 最後更新：2026-02-14
 > 用途：讓新的 Claude Agent 讀取後能接續工作
 
 ---
@@ -168,27 +168,27 @@ interface DatesPracticeQuestion {
 
 ---
 
-## 六、文法題庫擴充（進行中）
+## 六、文法題庫擴充（已完成）
 
 ### 目標
-將文法題庫從原本 19 題擴充到每個 JLPT 階段 500+ 題（N5-N1 共 2,500+ 題）。
+將文法題庫從原本 15 題擴充到每個 JLPT 階段 505 題（N5-N1 共 2,525 題）。
 
 ### 題目來源
 - 文法模式清單：`src/data/grammarList.ts`（1,167 個文法模式：N5:86, N4:213, N3:232, N2:271, N1:365）
 - 題目設計遵照 JLPT 題型，大部分稍難於 JLPT 實際考題
 - 難度分布：20% 基礎、60% 進階、20% 挑戰
 
-### 當前進度（截至 2026-02-13）
+### 最終結果（截至 2026-02-13）
 
-| 階段 | 題數 | 最後 ID | 狀態 |
+| 階段 | 題數 | ID 範圍 | 狀態 |
 |------|------|---------|------|
-| N5 | ~430 | g_n5_435 | 進行中（agent 續寫中，目標 505+） |
-| N4 | ~300 | g_n4_300 | 進行中（目標 505+） |
-| N3 | ~350 | g_n3_350 | 進行中（目標 505+） |
-| N2 | ~400 | g_n2_400 | 進行中（目標 505+） |
-| N1 | ~350 | g_n1_350 | 進行中（目標 505+） |
+| N5 | 505 | g_n5_006 ~ g_n5_510 | 已完成 |
+| N4 | 505 | g_n4_001 ~ g_n4_505 | 已完成 |
+| N3 | 505 | g_n3_001 ~ g_n3_505 | 已完成 |
+| N2 | 505 | g_n2_001 ~ g_n2_505 | 已完成 |
+| N1 | 505 | g_n1_001 ~ g_n1_505 | 已完成 |
 
-**合計：~1,830 題**（原有 19 題 + 新增 ~1,811 題）
+**合計：2,525 題**
 
 ### 檔案位置
 | 檔案 | 說明 |
@@ -198,6 +198,13 @@ interface DatesPracticeQuestion {
 | `src/data/questions/grammar/n3.ts` | N3 文法題（export `grammarN3`） |
 | `src/data/questions/grammar/n2.ts` | N2 文法題（export `grammarN2`） |
 | `src/data/questions/grammar/n1.ts` | N1 文法題（export `grammarN1`） |
+| `src/data/questions/grammar/index.ts` | Barrel export + `allGrammarQuestions` 合併陣列 |
+
+### 整合方式
+- `src/data/grammar.ts` 已移除原有 15 題內嵌題目
+- 改為從 `./questions/grammar` 匯入 `allGrammarQuestions`
+- 保留原有 Public API：`grammarQuestions`, `generateGrammarQuestion()`, `getGrammarQuestionBank()`, `getGrammarQuestionCount()`
+- 所有 consumer（`questionBanks.ts`, `questionLookup.ts`, `jlpt-exams.ts`, `PracticeCategorySetup.tsx`）無需修改
 
 ### 題目格式
 使用 `UnifiedQuestion` 介面（定義於 `src/data/questions/types.ts`），包含：
@@ -210,59 +217,28 @@ interface DatesPracticeQuestion {
 - `correctIndex`: 正確選項索引（0-based）
 - `explanation`: 結構化詳解（`keyPoint`, `analysis`, `comparisons`, `commonMistakes`）
 
-### 尚未完成的工作
-1. **繼續擴充各階段題目至 500+**
-   - N5 需要 ~75 題（從 g_n5_436 繼續）
-   - N4 需要 ~200 題（從 g_n4_301 繼續）
-   - N3 需要 ~150 題（從 g_n3_351 繼續）
-   - N2 需要 ~100 題（從 g_n2_401 繼續）
-   - N1 需要 ~150 題（從 g_n1_351 繼續）
-
-2. **建立 index.ts**
-   - 在 `src/data/questions/grammar/index.ts` 建立 re-export：
-   ```typescript
-   export { grammarN5 } from './n5'
-   export { grammarN4 } from './n4'
-   export { grammarN3 } from './n3'
-   export { grammarN2 } from './n2'
-   export { grammarN1 } from './n1'
-   ```
-
-3. **整合到 grammar.ts**
-   - 修改 `src/data/grammar.ts`，匯入新題庫檔案
-   - 將原有 19 題合併入新陣列，或移除原有題目改用新檔案
-   - 更新 `getGrammarQuestionBank()` 和 `getGrammarQuestionCount()` 函數
-
-4. **驗證**
-   - `npx tsc --noEmit` 確認 TypeScript 編譯無誤
-   - 檢查 ID 無重複
-   - 確認題數統計正確
-   - `npx vite build` 確認構建成功
-
-### 注意事項
-- 原有 `src/data/grammar.ts` 中有 5 題 N5（g_n5_001~005）、4 題 N4、3 題 N3、2 題 N2、1 題 N1
-- 新檔案 n5.ts 從 g_n5_006 開始，避免 ID 衝突
-- 新檔案 n4.ts 從 g_n4_001 開始（需確認與 grammar.ts 原有 N4 ID 不衝突）
-- 整合時需決定：保留 grammar.ts 原有題目 + 新題目，或完全用新檔案取代
+### 驗證結果
+- `npx tsc --noEmit`：通過，無錯誤
+- ID 唯一性檢查：無重複
+- `npx vite build`：構建成功
 
 ---
 
 ## 七、當前狀態
 
 - **Git 分支**：main
-- **新增文法題檔案未 commit**（`src/data/questions/grammar/` 目錄下 5 個 .ts 檔）
-- **TypeScript 編譯**：待驗證（新檔案尚未整合到主程式）
-- **Vite 構建**：待驗證
+- **文法題庫擴充及整合已完成**，待 commit
+- **TypeScript 編譯**：通過
+- **Vite 構建**：通過
 
 ---
 
 ## 八、已知問題 / 可能的後續工作
 
-1. **Vite build 警告**：主 chunk 超過 500KB（6,494KB），建議做 code-splitting
+1. **Vite build 警告**：主 chunk 超過 500KB（7,842KB），建議做 code-splitting
 2. **practiceService.ts 動態導入警告**：同時被靜態和動態導入
 3. **清理腳本**：`scripts/` 下的 4 個 .mjs 腳本已執行完畢，可以刪除
 4. **Gojuon/Kanji explanation 中的 `explanation` 欄位**：已改為中文，但 `detailedExplanation.structured` 本就是中文，兩者一致
-5. **文法題庫擴充**：見上方「六、文法題庫擴充」章節，需完成剩餘題目、建立 index.ts、整合到主程式
 
 ---
 
