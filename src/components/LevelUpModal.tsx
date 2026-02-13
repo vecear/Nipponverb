@@ -39,7 +39,7 @@ const LevelUpModal = ({
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            transition={{ type: 'spring', duration: 0.5 }}
+            transition={{ type: 'spring', duration: 0.125 }}
             className="fixed inset-0 z-50 flex items-center justify-center p-4"
             onClick={(e) => e.stopPropagation()}
           >
@@ -60,9 +60,9 @@ const LevelUpModal = ({
                       opacity: [0, 1, 0],
                     }}
                     transition={{
-                      duration: 2 + Math.random() * 2,
+                      duration: 0.5 + Math.random() * 0.5,
                       repeat: Infinity,
-                      delay: Math.random() * 2,
+                      delay: Math.random() * 0.5,
                     }}
                   />
                 ))}
@@ -72,7 +72,7 @@ const LevelUpModal = ({
               <motion.div
                 initial={{ scale: 0, rotate: -180 }}
                 animate={{ scale: 1, rotate: 0 }}
-                transition={{ type: 'spring', delay: 0.2 }}
+                transition={{ type: 'spring', delay: 0.05 }}
                 className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-vermilion to-ochre flex items-center justify-center shadow-ukiyo overflow-hidden"
               >
                 <img
@@ -90,7 +90,7 @@ const LevelUpModal = ({
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
+                transition={{ delay: 0.075 }}
               >
                 <div className="flex items-center justify-center gap-2 mb-2">
                   <Sparkles className="text-yellow-400" size={24} />
@@ -108,7 +108,7 @@ const LevelUpModal = ({
                   <motion.span
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    transition={{ delay: 0.4, type: 'spring' }}
+                    transition={{ delay: 0.1, type: 'spring' }}
                     className="text-vermilion text-2xl"
                   >
                     →
@@ -116,7 +116,7 @@ const LevelUpModal = ({
                   <motion.span
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    transition={{ delay: 0.5, type: 'spring' }}
+                    transition={{ delay: 0.125, type: 'spring' }}
                     className="text-wave-light text-3xl font-bold"
                   >
                     Lv.{levelUpInfo.newLevel}
@@ -128,7 +128,7 @@ const LevelUpModal = ({
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.6 }}
+                    transition={{ delay: 0.15 }}
                     className="glass rounded-xl p-4 mb-6"
                   >
                     <p className="text-white/50 text-sm mb-2">
@@ -151,7 +151,7 @@ const LevelUpModal = ({
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.6 }}
+                    transition={{ delay: 0.15 }}
                     className="glass rounded-xl p-4 mb-6 border border-vermilion/30"
                   >
                     <p className="text-vermilion font-bold mb-2">
@@ -178,7 +178,7 @@ const LevelUpModal = ({
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7 }}
+                transition={{ delay: 0.175 }}
               >
                 {levelUpInfo.isJobChangeTriggered && onJobSelect ? (
                   <button

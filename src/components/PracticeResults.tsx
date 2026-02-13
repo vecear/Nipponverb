@@ -231,7 +231,7 @@ const PracticeResults = ({
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
+          transition={{ delay: 0.025 }}
           className="card p-3 sm:p-4"
         >
           <h2 className="text-sm sm:text-base font-bold text-sumi mb-2">📈 正確率趨勢</h2>
@@ -246,7 +246,7 @@ const PracticeResults = ({
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.15 }}
+          transition={{ delay: 0.04 }}
           className="card p-3 sm:p-4"
         >
           <h2 className="text-sm sm:text-base font-bold text-sumi mb-2">🏅 獲得成就</h2>
@@ -288,7 +288,7 @@ const PracticeResults = ({
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.05 }}
           className="card p-3 sm:p-4"
         >
           <div className="flex items-center justify-between mb-2">

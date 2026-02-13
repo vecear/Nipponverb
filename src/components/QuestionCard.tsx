@@ -28,11 +28,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 40 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -40 }}
-      transition={{ duration: 0.3, ease: 'easeOut' }}
+    <div
       className="card max-w-md sm:max-w-2xl mx-auto px-3 py-3 sm:px-6 sm:py-6"
     >
       <div className="space-y-2 sm:space-y-4">
@@ -64,8 +60,8 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
                     ? { scale: [1, 1.03, 1] }
                     : {}
                 }
-                transition={{ duration: 0.3 }}
-                className={`py-1.5 px-2 sm:py-3 sm:px-4 rounded-md sm:rounded-xl border-2 transition-all duration-100 ${
+                transition={{ duration: 0.075 }}
+                className={`py-1.5 px-2 sm:py-3 sm:px-4 rounded-md sm:rounded-xl border-2 transition-all duration-[38ms] ${
                   isSelected
                     ? isCorrect
                       ? 'bg-green-500/20 border-green-500 shadow-sm shadow-green-500/30'
@@ -87,7 +83,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.25, ease: 'easeOut' }}
+            transition={{ duration: 0.06, ease: 'easeOut' }}
             className="space-y-2 sm:space-y-3"
           >
             {/* 快速結果徽章 */}
@@ -99,7 +95,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
               <motion.div
                 initial={{ scale: 0, rotate: -45 }}
                 animate={{ scale: 1, rotate: 0 }}
-                transition={{ type: 'spring', stiffness: 300, delay: 0.1 }}
+                transition={{ type: 'spring', stiffness: 300, delay: 0.025 }}
               >
                 {isCorrect
                   ? <Check size={18} className="text-green-600" />
@@ -123,7 +119,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
                 meaning={question.meaning}
                 correct={question.correct}
                 selectedAnswer={selectedAnswer}
-                defaultOpen={!isCorrect}
+                defaultOpen={true}
               />
             ) : (
               /* 舊格式 fallback */
@@ -138,7 +134,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
             <motion.button
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.2 }}
+              transition={{ delay: 0.05, duration: 0.05 }}
               onClick={() => onAnswer(selectedAnswer!)}
               className="w-full btn-primary py-2 sm:py-3 flex items-center justify-center gap-1.5 text-sm sm:text-base font-bold"
             >
@@ -154,7 +150,7 @@ const QuestionCard = ({ question, onAnswer, showExplanation = false }: QuestionC
           </div>
         )}
       </div>
-    </motion.div>
+    </div>
   )
 }
 

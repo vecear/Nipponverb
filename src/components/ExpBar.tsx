@@ -123,7 +123,7 @@ const ExpBar = ({
             className="absolute inset-y-0 left-0 bg-gradient-to-r from-[#1D3450] to-[#2A6F97] rounded-full"
             initial={{ width: 0 }}
             animate={{ width: `${percentage}%` }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
+            transition={{ duration: 0.125, ease: 'easeOut' }}
           />
 
           {/* 發光效果 */}
@@ -131,7 +131,7 @@ const ExpBar = ({
             className="absolute inset-y-0 left-0 bg-gradient-to-r from-[#1D3450]/50 to-[#2A6F97]/50 rounded-full blur-sm"
             initial={{ width: 0 }}
             animate={{ width: `${percentage}%` }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
+            transition={{ duration: 0.125, ease: 'easeOut' }}
           />
         </div>
       </div>

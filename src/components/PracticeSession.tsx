@@ -74,7 +74,7 @@ const PracticeSession = ({
             return (
               <div
                 key={i}
-                className={`flex-1 rounded-full transition-all duration-300 ${
+                className={`flex-1 rounded-full transition-all duration-75 ${
                   i === currentIndex
                     ? 'bg-vermilion'
                     : record

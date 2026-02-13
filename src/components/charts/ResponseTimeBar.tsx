@@ -24,7 +24,7 @@ const ResponseTimeBar = ({ data, maxItems = 20 }: ResponseTimeBarProps) => {
             </span>
             <div className="flex-1 h-3 bg-wave-deep/5 rounded-full overflow-hidden">
               <div
-                className={`h-full rounded-full transition-all duration-500 ${
+                className={`h-full rounded-full transition-all duration-[125ms] ${
                   item.isCorrect ? 'bg-green-500/60' : 'bg-red-400/60'
                 }`}
                 style={{ width: `${width}%` }}

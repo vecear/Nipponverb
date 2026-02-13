@@ -28,7 +28,7 @@ const AchievementToast = ({ achievements, onDismiss }: AchievementToastProps) =>
                 key={a.id}
                 initial={{ scale: 0, rotate: -90 }}
                 animate={{ scale: 1, rotate: 0 }}
-                transition={{ type: 'spring', delay: 0.2 }}
+                transition={{ type: 'spring', delay: 0.05 }}
                 className="flex flex-col items-center gap-0.5"
               >
                 <span className="text-2xl">{a.icon}</span>

@@ -71,7 +71,7 @@ const MatchingQuestionCard = ({ question, onAnswer }: MatchingQuestionCardProps)
                     setIsError(false)
                     setIsFinished(true)
                     setWasSuccessful(false)
-                }, 500)
+                }, 125)
             }
         }
     }, [selectedLeft, selectedRight, pairs, solvedLeft, solvedRight, isFinished])
@@ -113,7 +113,7 @@ const MatchingQuestionCard = ({ question, onAnswer }: MatchingQuestionCardProps)
                                     key={`left-${idx}`}
                                     onClick={() => handleLeftClick(idx)}
                                     disabled={isSolved || isError || isFinished}
-                                    className={`w-full py-1.5 px-2 sm:py-3 sm:px-4 rounded-md sm:rounded-xl border-2 transition-all duration-200 text-center
+                                    className={`w-full py-1.5 px-2 sm:py-3 sm:px-4 rounded-md sm:rounded-xl border-2 transition-all duration-[50ms] text-center
                                 ${isSolved
                                             ? 'bg-green-500/10 border-green-500/30 text-green-600 opacity-50 scale-95'
                                             : isSelected
@@ -142,7 +142,7 @@ const MatchingQuestionCard = ({ question, onAnswer }: MatchingQuestionCardProps)
                                     key={`right-${idx}`}
                                     onClick={() => handleRightClick(idx)}
                                     disabled={isSolved || isError || isFinished}
-                                    className={`w-full py-1.5 px-2 sm:py-3 sm:px-4 rounded-md sm:rounded-xl border-2 transition-all duration-200 text-center
+                                    className={`w-full py-1.5 px-2 sm:py-3 sm:px-4 rounded-md sm:rounded-xl border-2 transition-all duration-[50ms] text-center
                                 ${isSolved
                                             ? 'bg-green-500/10 border-green-500/30 text-green-600 opacity-50 scale-95'
                                             : isSelected

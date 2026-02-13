@@ -106,7 +106,7 @@
   /* Links - 使用朱紅色 */
   a {
     color: var(--color-wave-deep);
-    transition: color 0.2s ease;
+    transition: color 0.05s ease;
   }
 
   a:hover {
@@ -154,7 +154,7 @@
   .paper-card,
   .glass,
   .card {
-    @apply relative p-3 sm:p-6 transition-all duration-300;
+    @apply relative p-3 sm:p-6 transition-all duration-75;
     background-color: var(--color-washi-light);
     border: 2px solid var(--color-wave-deep);
     box-shadow: 4px 4px 0px 0px rgba(26, 58, 92, 0.2);
@@ -224,7 +224,7 @@
 
   /* 主要按鈕 - 朱印風格 */
   .btn-primary {
-    @apply relative inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 font-zen font-bold text-sm sm:text-lg text-white transition-all duration-200 overflow-hidden select-none;
+    @apply relative inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 font-zen font-bold text-sm sm:text-lg text-white transition-all duration-[50ms] overflow-hidden select-none;
     background-color: var(--color-vermilion);
     border: 2px solid var(--color-vermilion-dark);
     border-radius: 6px 3px 6px 3px;
@@ -250,7 +250,7 @@
 
   /* 次要按鈕 - 波浪風格 */
   .btn-secondary {
-    @apply relative inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 font-zen font-bold text-sm sm:text-lg transition-all duration-200 select-none;
+    @apply relative inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 font-zen font-bold text-sm sm:text-lg transition-all duration-[50ms] select-none;
     background-color: var(--color-foam);
     color: var(--color-wave-deep);
     border: 2px solid var(--color-wave-deep);
@@ -272,7 +272,7 @@
 
   /* 幽靈按鈕 */
   .btn-ghost {
-    @apply relative inline-flex items-center justify-center px-4 py-2 font-zen font-bold transition-all duration-200;
+    @apply relative inline-flex items-center justify-center px-4 py-2 font-zen font-bold transition-all duration-[50ms];
     color: var(--color-wave-deep);
     background: transparent;
     border: none;
@@ -353,7 +353,7 @@
   }
 
   .progress-bar-fill {
-    @apply h-full transition-all duration-500;
+    @apply h-full transition-all duration-[125ms];
     background: linear-gradient(90deg, var(--color-wave-light), var(--color-wave-mid), var(--color-wave-deep));
   }
 
@@ -521,11 +521,11 @@
 
   /* === 動畫效果 === */
   .animate-fade-in {
-    animation: fadeIn 0.2s ease-out;
+    animation: fadeIn 0.05s ease-out;
   }
 
   .animate-scale-in {
-    animation: scaleIn 0.2s ease-out;
+    animation: scaleIn 0.05s ease-out;
   }
 
   @keyframes fadeIn {
