@@ -3780,4 +3780,4750 @@ export const grammarN2: UnifiedQuestion[] = [
             commonMistakes: ['○ 忘れようにも忘れられない / × 忘れようにも忘れない → 後句用可能形否定'],
         },
     },
+    // ━━━ をはじめ (starting with / including) ━━━
+    {
+        id: 'g_n2_201', category: 'grammar', level: 'N2', tags: ['listing', 'representative'],
+        stem: '東京{とうきょう}___、日本{にほん}には多{おお}くの大都市{だいとし}がある。',
+        stemZh: '以東京為首，日本有很多大都市。',
+        options: [
+            { text: 'をはじめ', reason: '正確！「をはじめ」表示「以…為首」，列舉代表性的例子。' },
+            { text: 'をもとに', reason: '「をもとに」表示「以…為基礎」，語意不同。' },
+            { text: 'を通じて', reason: '「を通じて」表示「透過…」，語意不同。' },
+            { text: 'をめぐって', reason: '「をめぐって」表示「圍繞著…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「をはじめ」表示列舉代表性事物',
+            analysis: '「をはじめ（として）」用於列舉最具代表性的事物，後面暗示還有其他類似的事物。',
+            comparisons: ['をはじめ：以…為首（列舉代表）', 'をもとに：以…為基礎（根據）'],
+            commonMistakes: ['○ 東京をはじめ / × 東京がはじめ → 用「を」不用「が」'],
+        },
+    },
+    {
+        id: 'g_n2_202', category: 'grammar', level: 'N2', tags: ['listing', 'representative'],
+        stem: 'この大学{だいがく}では、英語{えいご}___、フランス語{ご}や中国語{ちゅうごくご}など多{おお}くの言語{げんご}が学{まな}べる。',
+        stemZh: '這所大學以英語為首，可以學習法語和中文等多種語言。',
+        options: [
+            { text: 'をもとに', reason: '「をもとに」表示「以…為基礎」，不適合列舉語境。' },
+            { text: 'をはじめとして', reason: '正確！「をはじめとして」表示「以…為首」。' },
+            { text: 'に先立って', reason: '「に先立って」表示「在…之前」，語意不同。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「をはじめとして」是「をはじめ」的完整形式',
+            analysis: '「をはじめ」和「をはじめとして」都可以使用，意思相同，表示列舉最具代表性的例子。',
+            comparisons: ['をはじめ：以…為首（簡略形）', 'をはじめとして：以…為首（完整形）'],
+            commonMistakes: ['○ 英語をはじめとして / ○ 英語をはじめ → 兩種都可以'],
+        },
+    },
+    // ━━━ はもちろん (of course / needless to say) ━━━
+    {
+        id: 'g_n2_203', category: 'grammar', level: 'N2', tags: ['emphasis', 'addition'],
+        stem: '彼{かれ}は日本語{にほんご}___、英語{えいご}もフランス語{ご}も話{はな}せる。',
+        stemZh: '他不用說日語，英語和法語也會說。',
+        options: [
+            { text: 'はもとより', reason: '「はもとより」也可以，但較書面，「はもちろん」更口語常用。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語感稍有不同。' },
+            { text: 'はもちろん', reason: '正確！「はもちろん」表示「不用說…（更何況）」。' },
+            { text: 'はおろか', reason: '「はおろか」表示「別說…了」，語氣更強烈，暗示連基本的都…。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「はもちろん」表示理所當然、不言而喻',
+            analysis: '「はもちろん」用於先提出理所當然的事實，再強調其他更進一步的內容。',
+            comparisons: ['はもちろん：不用說（口語常用）', 'はもとより：不用說（書面語）', 'はおろか：別說了（語氣更強）'],
+            commonMistakes: ['○ 日本語はもちろん / × 日本語がもちろん → 用「は」不用「が」'],
+        },
+    },
+    {
+        id: 'g_n2_204', category: 'grammar', level: 'N2', tags: ['emphasis', 'addition'],
+        stem: 'このレストランは味{あじ}___、雰囲気{ふんいき}もサービスも素晴{すば}らしい。',
+        stemZh: '這家餐廳不用說味道，氛圍和服務也都很出色。',
+        options: [
+            { text: 'はもちろん', reason: '正確！「はもちろん」表示前項理所當然，後項也一樣好。' },
+            { text: 'ばかりか', reason: '「ばかりか」表示「不僅…而且」，但用法不同。' },
+            { text: 'どころか', reason: '「どころか」表示程度大大超出預期，語感不同。' },
+            { text: 'に反して', reason: '「に反して」表示「與…相反」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「はもちろん」的固定搭配',
+            analysis: '「AはもちろんBも」是固定句型，先列舉不言自明的A，再強調B也具有同樣的特質。',
+            comparisons: ['はもちろん：前者理所當然，後者也是', 'ばかりか：不僅…而且（遞進）'],
+            commonMistakes: ['○ 味はもちろん、雰囲気も / × 味はもちろん、雰囲気が → 後面常搭配「も」'],
+        },
+    },
+    // ━━━ に至るまで (up to / even including) ━━━
+    {
+        id: 'g_n2_205', category: 'grammar', level: 'N2', tags: ['range', 'extent'],
+        stem: '社長{しゃちょう}から新入{しんにゅう}社員{しゃいん}___、全員{ぜんいん}が参加{さんか}した。',
+        stemZh: '從社長到新員工，全員都參加了。',
+        options: [
+            { text: 'にわたって', reason: '「にわたって」表示時間或範圍的持續，用法不同。' },
+            { text: 'を通じて', reason: '「を通じて」表示「透過…」或「在整個…期間」，不適合。' },
+            { text: 'に至るまで', reason: '正確！「に至るまで」表示「直到…為止」，強調範圍之廣。' },
+            { text: 'に限って', reason: '「に限って」表示「偏偏…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「に至るまで」表示範圍的極端端點',
+            analysis: '「から…に至るまで」是常見搭配，表示從一端到另一端的整個範圍，強調涵蓋面之廣。',
+            comparisons: ['に至るまで：直到…為止（強調範圍極端）', 'にわたって：在…範圍內（強調廣度）'],
+            commonMistakes: ['○ 新入社員に至るまで / × 新入社員まで至って → 「に至るまで」是固定搭配'],
+        },
+    },
+    {
+        id: 'g_n2_206', category: 'grammar', level: 'N2', tags: ['range', 'extent'],
+        stem: 'この辞書{じしょ}は基本的{きほんてき}な単語{たんご}から専門用語{せんもんようご}___収録{しゅうろく}している。',
+        stemZh: '這本辭典從基本單字到專業用語都有收錄。',
+        options: [
+            { text: 'をはじめ', reason: '「をはじめ」表示列舉代表，不強調範圍的端點。' },
+            { text: 'を問わず', reason: '「を問わず」表示「不論…」，用法不同。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語感不同。' },
+            { text: 'に至るまで', reason: '正確！「に至るまで」強調範圍之廣，直到極端端點。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+            keyPoint: '「から〜に至るまで」表示範圍的全面覆蓋',
+            analysis: '「に至るまで」常與「から」搭配，表示「從…到（甚至）…」，強調涵蓋面極廣。',
+            comparisons: ['に至るまで：直到…（強調極端）', 'まで：到…為止（一般）'],
+            commonMistakes: ['○ 専門用語に至るまで / × 専門用語に至って → 「に至って」是不同文法'],
+        },
+    },
+    // ━━━ だけましだ (at least / could be worse) ━━━
+    {
+        id: 'g_n2_207', category: 'grammar', level: 'N2', tags: ['comparison', 'consolation'],
+        stem: '怪我{けが}はしたが、命{いのち}が助{たす}かった___。',
+        stemZh: '雖然受了傷，但至少保住了性命，這已經算好了。',
+        options: [
+            { text: 'だけだ', reason: '「だけだ」表示「只是…」，沒有安慰的語感。' },
+            { text: 'だけましだ', reason: '正確！「だけましだ」表示「至少…算好了」，在壞情況中找到安慰。' },
+            { text: 'だけあって', reason: '「だけあって」表示「不愧是…」，語意不同。' },
+            { text: 'だけに', reason: '「だけに」表示「正因為…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「だけましだ」表示在不好的情況中的安慰',
+            analysis: '「だけましだ」用於雖然情況不理想，但比最壞的結果好一些，表示「至少…算不錯了」。',
+            comparisons: ['だけましだ：至少…算好了（安慰）', 'だけあって：不愧是…（稱讚）'],
+            commonMistakes: ['○ 助かっただけましだ / × 助かるだけましだ → 前面用た形'],
+        },
+    },
+    // ━━━ でしかない (nothing more than) ━━━
+    {
+        id: 'g_n2_208', category: 'grammar', level: 'N2', tags: ['limitation', 'dismissal'],
+        stem: 'どんなに努力{どりょく}しても、結果{けっか}が出{で}なければ自己満足{じこまんぞく}___。',
+        stemZh: '無論多努力，如果沒有成果，那也不過是自我滿足罷了。',
+        options: [
+            { text: 'にほかならない', reason: '「にほかならない」表示「正是…」，語意相反，是強調肯定。' },
+            { text: 'に過ぎない', reason: '「に過ぎない」也可以表示「不過是…」，但「でしかない」語氣更強。' },
+            { text: 'でしかない', reason: '正確！「でしかない」表示「只不過是…」，帶有否定評價的語氣。' },
+            { text: 'に相違ない', reason: '「に相違ない」表示「肯定是…」，語意完全不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「でしかない」表示貶低性的限定',
+            analysis: '「でしかない」和「に過ぎない」意思相近，都表示「只不過是…」，但「でしかない」更加口語化，且否定語氣更強。',
+            comparisons: ['でしかない：只不過是…（較強否定）', 'に過ぎない：僅僅是…（較書面）'],
+            commonMistakes: ['○ 自己満足でしかない / × 自己満足がしかない → 用「で」不用「が」'],
+        },
+    },
+    // ━━━ だって (because / even / also) ━━━
+    {
+        id: 'g_n2_209', category: 'grammar', level: 'N2', tags: ['reason', 'excuse', 'informal'],
+        stem: '「どうして遅刻{ちこく}したの？」「___、電車{でんしゃ}が止{と}まっていたんだもん。」',
+        stemZh: '「為什麼遲到了？」「因為電車停駛了嘛。」',
+        options: [
+            { text: 'なぜなら', reason: '「なぜなら」是書面語，口語對話中不自然。' },
+            { text: 'だって', reason: '正確！「だって」用於口語辯解，表示「因為…嘛」。' },
+            { text: 'それで', reason: '「それで」表示「所以…」，不表示辯解。' },
+            { text: 'すると', reason: '「すると」表示「於是…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「だって」的口語辯解用法',
+            analysis: '「だって」在口語中用於辯解或給理由，語氣帶有撒嬌或不滿的感覺，常與「もん/もの」搭配。',
+            comparisons: ['だって：因為…嘛（口語辯解）', 'なぜなら：因為…（書面正式）'],
+            commonMistakes: ['○ だって、電車が止まっていた → 口語中自然', '× なぜなら、電車が止まっていた → 口語中不自然'],
+        },
+    },
+    // ━━━ 抜きにして (without / excluding) ━━━
+    {
+        id: 'g_n2_210', category: 'grammar', level: 'N2', tags: ['exclusion', 'aside'],
+        stem: '冗談{じょうだん}は___、真面目{まじめ}に話{はな}し合{あ}おう。',
+        stemZh: '撇開玩笑不談，我們認真討論吧。',
+        options: [
+            { text: '抜きにして', reason: '正確！「抜きにして」表示「撇開…不談」。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語意不同。' },
+            { text: 'はともかく', reason: '「はともかく」也可以表示「暫且不談…」，但用法不同。' },
+            { text: 'もかまわず', reason: '「もかまわず」表示「不顧…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「抜きにして」表示排除某事物',
+            analysis: '「抜きにして」用於將某個要素排除在外，常見於「冗談は抜きにして」等慣用表現。',
+            comparisons: ['抜きにして：撇開…不談', 'はともかく：暫且不論…', '抜きで：沒有…（省略）'],
+            commonMistakes: ['○ 冗談は抜きにして / ○ 冗談抜きで → 兩種都可以使用'],
+        },
+    },
+    // ━━━ ものか / もんか (absolutely not - additional) ━━━
+    {
+        id: 'g_n2_211', category: 'grammar', level: 'N2', tags: ['strong_negation', 'determination'],
+        stem: 'あんな失礼{しつれい}な店{みせ}に二度{にど}と行{い}く___。',
+        stemZh: '那麼無禮的店我絕不會再去。',
+        options: [
+            { text: 'はずだ', reason: '「はずだ」表示「應該…」，語意完全不同。' },
+            { text: 'ことだ', reason: '「ことだ」表示建議「應該…」，語意不同。' },
+            { text: 'ものだ', reason: '「ものだ」表示感嘆或常理，語意不同。' },
+            { text: 'ものか', reason: '正確！「ものか」表示「絕不…」，強烈否定。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+            keyPoint: '「ものか」表示強烈的否定決心',
+            analysis: '「ものか」用於表達說話者堅決否定的態度，語氣非常強烈。口語中常說「もんか」。',
+            comparisons: ['ものか：絕不…（強烈否定）', 'まい：不打算…（推量否定）'],
+            commonMistakes: ['○ 行くものか / × 行ったものか → 前面用辭書形'],
+        },
+    },
+    // ━━━ がきっかけで (triggered by / prompted by) ━━━
+    {
+        id: 'g_n2_212', category: 'grammar', level: 'N2', tags: ['trigger', 'cause'],
+        stem: '留学{りゅうがく}___、国際的{こくさいてき}な仕事{しごと}に興味{きょうみ}を持{も}つようになった。',
+        stemZh: '以留學為契機，開始對國際性的工作產生了興趣。',
+        options: [
+            { text: 'をもとに', reason: '「をもとに」表示「以…為基礎」，不是契機。' },
+            { text: 'に際して', reason: '「に際して」表示「在…之際」，語意不同。' },
+            { text: 'がきっかけで', reason: '正確！「がきっかけで」表示「以…為契機」。' },
+            { text: 'に先立って', reason: '「に先立って」表示「在…之前」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「がきっかけで」表示引發變化的契機',
+            analysis: '「がきっかけで」用於說明促使某種變化發生的原因或契機，強調開始的觸發點。',
+            comparisons: ['がきっかけで：以…為契機（用「が」）', 'をきっかけに：以…為契機（用「を」）'],
+            commonMistakes: ['○ 留学がきっかけで / ○ 留学をきっかけに → 兩種助詞都可以'],
+        },
+    },
+    // ━━━ ようか〜まいか (whether to or not - additional) ━━━
+    {
+        id: 'g_n2_213', category: 'grammar', level: 'N2', tags: ['hesitation', 'indecision'],
+        stem: '転職{てんしょく}し___し___か、まだ決{き}められない。',
+        stemZh: '要不要換工作，還無法決定。',
+        options: [
+            { text: 'ようと / まいと', reason: '「ようと〜まいと」表示「無論做不做…都…」，語意不同。' },
+            { text: 'たり / たり', reason: '「たり〜たり」表示列舉動作，語意不同。' },
+            { text: 'ようか / まい', reason: '正確！「ようか〜まいか」表示「猶豫要不要…」。' },
+            { text: 'ても / ても', reason: '「ても〜ても」表示「即使…也…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「ようか〜まいか」表示猶豫不決',
+            analysis: '「意向形＋か＋まいか」用於表達對某件事猶豫不決、無法下定決心的狀態。',
+            comparisons: ['ようか〜まいか：猶豫要不要…', 'ようと〜まいと：無論做不做…（都一樣）'],
+            commonMistakes: ['○ 転職しようかしまいか / × 転職するかしないか → 後者雖可以但不是此文法'],
+        },
+    },
+    // ━━━ ているうちに (while doing / before one knows it) ━━━
+    {
+        id: 'g_n2_214', category: 'grammar', level: 'N2', tags: ['change', 'duration'],
+        stem: '毎日{まいにち}練習{れんしゅう}し___、自然{しぜん}にピアノが上手{じょうず}になった。',
+        stemZh: '在每天練習的過程中，不知不覺鋼琴就變好了。',
+        options: [
+            { text: 'たところで', reason: '「たところで」表示「即使做了…也…」，語意不同。' },
+            { text: 'ているうちに', reason: '正確！「ているうちに」表示在持續做某事的過程中，不知不覺發生了變化。' },
+            { text: 'ているかぎり', reason: '「ているかぎり」表示「只要在…」，語意不同。' },
+            { text: 'ていては', reason: '「ていては」表示「如果一直…的話（壞結果）」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ているうちに」表示在持續過程中自然發生變化',
+            analysis: '「ているうちに」用於描述在做某事的持續過程中，不知不覺地發生了某種變化或新的狀況。',
+            comparisons: ['ているうちに：在…的過程中（自然變化）', 'ているあいだに：在…期間（客觀時間）'],
+            commonMistakes: ['○ 練習しているうちに / × 練習するうちに → 「ている」強調持續'],
+        },
+    },
+    // ━━━ にかわって (in place of / on behalf of) ━━━
+    {
+        id: 'g_n2_215', category: 'grammar', level: 'N2', tags: ['substitution', 'behalf'],
+        stem: '病気{びょうき}の部長{ぶちょう}___、私{わたし}が会議{かいぎ}に出席{しゅっせき}した。',
+        stemZh: '代替生病的部長，我出席了會議。',
+        options: [
+            { text: 'にかわって', reason: '正確！「にかわって」表示「代替…」。' },
+            { text: 'に応じて', reason: '「に応じて」表示「根據…」，語意不同。' },
+            { text: 'に際して', reason: '「に際して」表示「在…之際」，語意不同。' },
+            { text: 'に沿って', reason: '「に沿って」表示「沿著…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「にかわって」表示代替他人行動',
+            analysis: '「にかわって」用於代替某人執行任務或承擔角色，表示「代替…做…」。',
+            comparisons: ['にかわって：代替…（替代行動）', 'のかわりに：代替…（更口語）'],
+            commonMistakes: ['○ 部長にかわって / × 部長をかわって → 用「に」不用「を」'],
+        },
+    },
+    {
+        id: 'g_n2_216', category: 'grammar', level: 'N2', tags: ['substitution', 'change'],
+        stem: '近年{きんねん}、手紙{てがみ}___メールでのやり取{と}りが主流{しゅりゅう}になっている。',
+        stemZh: '近年來，取代書信，電子郵件的往來已成為主流。',
+        options: [
+            { text: 'をもとに', reason: '「をもとに」表示「以…為基礎」，語意不同。' },
+            { text: 'を通じて', reason: '「を通じて」表示「透過…」，語意不同。' },
+            { text: 'にかわって', reason: '正確！「にかわって」表示「取代…」，用於事物的替代也可以。' },
+            { text: 'に伴って', reason: '「に伴って」表示「伴隨著…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「にかわって」也可以表示事物間的取代',
+            analysis: '「にかわって」不僅可以代替人做事，也可以表示一種事物取代另一種事物。',
+            comparisons: ['にかわって：取代…（人或事物）', 'のかわりに：代替…（較限定於人）'],
+            commonMistakes: ['○ 手紙にかわって / ○ 手紙にかわり → 「にかわり」也可以'],
+        },
+    },
+    // ━━━ と同時に (at the same time as - additional) ━━━
+    {
+        id: 'g_n2_217', category: 'grammar', level: 'N2', tags: ['simultaneous', 'dual_role'],
+        stem: '彼女{かのじょ}は母親{ははおや}である___、優秀{ゆうしゅう}な研究者{けんきゅうしゃ}でもある。',
+        stemZh: '她既是母親，同時也是優秀的研究者。',
+        options: [
+            { text: 'と同時に', reason: '正確！「と同時に」表示「…的同時也是…」，強調雙重身份。' },
+            { text: '一方で', reason: '「一方で」表示「另一方面」，也可以但語感不同。' },
+            { text: 'ばかりか', reason: '「ばかりか」表示「不僅…而且」，語感不同。' },
+            { text: 'に加えて', reason: '「に加えて」表示「加上…」，語意稍有不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「と同時に」表示同時具有兩個特質或身份',
+            analysis: '「と同時に」除了表示時間上的同時，也可以表示某人或某物同時具有兩種特質或角色。',
+            comparisons: ['と同時に：同時也是…（雙重特質）', '一方で：另一方面（對比）'],
+            commonMistakes: ['○ 母親であると同時に / × 母親と同時に → 用「である」連接'],
+        },
+    },
+    // ━━━ そう言えば (speaking of which / come to think of it) ━━━
+    {
+        id: 'g_n2_218', category: 'grammar', level: 'N2', tags: ['topic_change', 'recall'],
+        stem: '___、来週{らいしゅう}の会議{かいぎ}の場所{ばしょ}はどこだっけ？',
+        stemZh: '說起來，下週的會議地點是哪裡來著？',
+        options: [
+            { text: 'ところで', reason: '「ところで」表示「對了」，也可以轉換話題但語感不同。' },
+            { text: 'そう言えば', reason: '正確！「そう言えば」表示「這麼一說/說起來」，因為聯想而想起某事。' },
+            { text: 'ちなみに', reason: '「ちなみに」表示「順便一提」，用於補充相關資訊。' },
+            { text: 'さて', reason: '「さて」表示「那麼」，用於正式開始新話題。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「そう言えば」表示因聯想而回憶起某事',
+            analysis: '「そう言えば」用於因為前面的話題或情境而聯想到某件事，表示「這麼一說，想到了…」。',
+            comparisons: ['そう言えば：這麼一說…（因聯想想起）', 'ところで：對了…（主動轉換話題）'],
+            commonMistakes: ['○ そう言えば / ○ そういえば → 兩種寫法都可以'],
+        },
+    },
+    // ━━━ にしたら (from one's perspective - additional context) ━━━
+    {
+        id: 'g_n2_219', category: 'grammar', level: 'N2', tags: ['perspective', 'empathy'],
+        stem: '親{おや}___、子{こ}どもの安全{あんぜん}が一番{いちばん}大切{たいせつ}なのだ。',
+        stemZh: '站在父母的角度來看，孩子的安全是最重要的。',
+        options: [
+            { text: 'として', reason: '「として」表示「作為…」，意思可以但語感不同。' },
+            { text: 'にとって', reason: '「にとって」表示「對…來說」，也可以但沒有強調「站在某人立場」的感覺。' },
+            { text: 'にしたら', reason: '正確！「にしたら」表示「站在…的角度來看」，強調設身處地。' },
+            { text: 'に対して', reason: '「に対して」表示「對於…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「にしたら」強調從他人的角度或立場考慮',
+            analysis: '「にしたら」用於站在他人的立場來思考問題，強調設身處地的理解。與「にすれば」意思相同。',
+            comparisons: ['にしたら：站在…的角度（設身處地）', 'にとって：對…來說（一般觀點）'],
+            commonMistakes: ['○ 親にしたら / ○ 親にすれば → 兩種都可以使用'],
+        },
+    },
+    // ━━━ ぬ (classical negative) ━━━
+    {
+        id: 'g_n2_220', category: 'grammar', level: 'N2', tags: ['classical', 'formal', 'negative'],
+        stem: '努力{どりょく}せ___者{もの}に成功{せいこう}はない。',
+        stemZh: '不努力的人不會成功。',
+        options: [
+            { text: 'ない', reason: '「ない」是現代日語的否定形，文法正確但不符合書面語風格。' },
+            { text: 'ぬ', reason: '正確！「ぬ」是古語否定形，相當於「ない」，書面語中使用。' },
+            { text: 'ず', reason: '「ず」也是否定形，但接續不同，「ず」用於中止形。' },
+            { text: 'まい', reason: '「まい」表示否定推量，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ぬ」是書面語的否定表現',
+            analysis: '「ぬ」相當於「ない」，是較古風的否定表現，常見於書面語、諺語、格言中。接續方式與「ない」相同。',
+            comparisons: ['ぬ：不…（書面/古語）', 'ない：不…（口語/現代）', 'ず：不…（中止形）'],
+            commonMistakes: ['○ 努力せぬ者 / × 努力しぬ者 → 用未然形接續'],
+        },
+    },
+    // ━━━ のみ (only / solely) ━━━
+    {
+        id: 'g_n2_221', category: 'grammar', level: 'N2', tags: ['limitation', 'formal'],
+        stem: '入場{にゅうじょう}は会員{かいいん}___に限{かぎ}られている。',
+        stemZh: '入場僅限於會員。',
+        options: [
+            { text: 'だけ', reason: '「だけ」也表示「只有」，但較口語，此處書面語用「のみ」更適合。' },
+            { text: 'しか', reason: '「しか」後面需要否定形，文法不合。' },
+            { text: 'のみ', reason: '正確！「のみ」表示「僅僅…」，是書面語的限定表現。' },
+            { text: 'ばかり', reason: '「ばかり」表示「盡是…」或「大約」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「のみ」是書面語的限定表現',
+            analysis: '「のみ」相當於口語的「だけ」，表示「僅僅…」「只有…」，常用於公告、規定等正式場合。',
+            comparisons: ['のみ：僅僅…（書面語）', 'だけ：只有…（口語）'],
+            commonMistakes: ['○ 会員のみ / × 会員だけのみ → 不能與「だけ」重複使用'],
+        },
+    },
+    // ━━━ ものがある (there is something ~) - additional ━━━
+    {
+        id: 'g_n2_222', category: 'grammar', level: 'N2', tags: ['impression', 'feeling'],
+        stem: '彼{かれ}の演説{えんぜつ}には人{ひと}の心{こころ}を動{うご}かす___。',
+        stemZh: '他的演說有著打動人心的力量。',
+        options: [
+            { text: 'ことがある', reason: '「ことがある」表示「有時會…」，語意不同。' },
+            { text: 'わけがない', reason: '「わけがない」表示「不可能…」，語意相反。' },
+            { text: 'ものがある', reason: '正確！「ものがある」表示「有著…的東西/力量」，表達深刻感受。' },
+            { text: 'ものだ', reason: '「ものだ」表示感嘆或常理，用法不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「ものがある」表示深刻的感受或印象',
+            analysis: '「ものがある」用於表達說話者對某事物有著深刻的感受或印象，帶有主觀評價的語感。',
+            comparisons: ['ものがある：確實有…之處（深刻感受）', 'ことがある：有時會…（頻率）'],
+            commonMistakes: ['○ 心を動かすものがある / × 心を動かしたものがある → 前面常用辭書形'],
+        },
+    },
+    // ━━━ よりほかない (no choice but to) ━━━
+    {
+        id: 'g_n2_223', category: 'grammar', level: 'N2', tags: ['no_choice', 'resignation'],
+        stem: 'バスも電車{でんしゃ}もないので、歩{ある}く___。',
+        stemZh: '因為沒有公車也沒有電車，只好走路了。',
+        options: [
+            { text: 'ほかない', reason: '「ほかない」需要前面加「より」或「しか」。' },
+            { text: 'しかない', reason: '「しかない」也可以表示「只好…」，但此題正確答案為「よりほかない」。' },
+            { text: 'よりほかない', reason: '正確！「よりほかない」表示「除了…之外別無選擇」。' },
+            { text: 'わけにはいかない', reason: '「わけにはいかない」表示「不能…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「よりほかない」表示別無選擇',
+            analysis: '「よりほかない」與「しかない」「ざるを得ない」意思相近，都表示沒有其他選擇只能這樣做。語氣較正式。',
+            comparisons: ['よりほかない：除此以外別無他法（正式）', 'しかない：只好…（口語）', 'ざるを得ない：不得不…（正式）'],
+            commonMistakes: ['○ 歩くよりほかない / × 歩くよりほかはない → 「は」可加可不加'],
+        },
+    },
+    // ━━━ ゆえに (therefore / because of) - additional ━━━
+    {
+        id: 'g_n2_224', category: 'grammar', level: 'N2', tags: ['reason', 'formal', 'literary'],
+        stem: '若{わか}さ___の過{あやま}ちは誰{だれ}にでもある。',
+        stemZh: '因為年輕而犯的錯誤誰都有。',
+        options: [
+            { text: 'からの', reason: '「からの」不是正確的接續方式。' },
+            { text: 'ゆえの', reason: '正確！「ゆえの」是「ゆえに」的連體修飾形，表示「因…而引起的…」。' },
+            { text: 'ための', reason: '「ための」也可以表示原因，但語感不如「ゆえの」書面和深層。' },
+            { text: 'せいの', reason: '「せいの」表示「因為…的（負面）」，語感帶有責怪。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ゆえの」是「ゆえに」的連體修飾形',
+            analysis: '「ゆえに」表示原因理由（書面語），修飾名詞時變成「ゆえの」。常見於較為文學性的表達。',
+            comparisons: ['ゆえの：因…而引起的（修飾名詞）', 'ゆえに：因此（接句子）'],
+            commonMistakes: ['○ 若さゆえの / × 若いゆえの → 名詞直接接「ゆえの」'],
+        },
+    },
+    // ━━━ 逆に (conversely) - additional ━━━
+    {
+        id: 'g_n2_225', category: 'grammar', level: 'N2', tags: ['contrast', 'opposite'],
+        stem: '便利{べんり}になった___、人{ひと}と人{ひと}との繋{つな}がりが薄{うす}くなった。',
+        stemZh: '變得方便了，反而人與人之間的聯繫變淡了。',
+        options: [
+            { text: '一方で', reason: '「一方で」表示「另一方面」，也可以但不強調「反而」的語感。' },
+            { text: '反面', reason: '「反面」表示「另一方面」，可以但接續不同。' },
+            { text: '逆に', reason: '正確！「逆に」表示「反而/相反地」，強調與預期相反的結果。' },
+            { text: 'にもかかわらず', reason: '「にもかかわらず」表示「儘管…卻」，需要接在名詞或句子後。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「逆に」表示與預期相反的結果',
+            analysis: '「逆に」用於引出與前述內容或一般預期相反的結果，可以放在句首或句中。',
+            comparisons: ['逆に：反而（相反的結果）', 'かえって：反而（與預期相反）', '一方で：另一方面（並列對比）'],
+            commonMistakes: ['○ 便利になった。逆に… / ○ 逆に、…なった → 可以放句首或句中'],
+        },
+    },
+    // ━━━ ようでは (if ~ continues - additional) ━━━
+    {
+        id: 'g_n2_226', category: 'grammar', level: 'N2', tags: ['warning', 'negative_prediction'],
+        stem: 'こんな簡単{かんたん}な問題{もんだい}も解{と}けない___、試験{しけん}に受{う}かるはずがない。',
+        stemZh: '如果連這麼簡單的問題都不會解的話，不可能通過考試。',
+        options: [
+            { text: 'ようでは', reason: '正確！「ようでは」表示「如果是這種狀態的話（會有壞結果）」。' },
+            { text: 'ようなら', reason: '「ようなら」也可以表示假設，但沒有「ようでは」的警告語氣。' },
+            { text: 'ようにも', reason: '「ようにも」表示「想…也做不到」，語意不同。' },
+            { text: 'ようが', reason: '「ようが」表示「無論…也…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ようでは」帶有警告和負面預測',
+            analysis: '「ようでは」用於假設某種不良狀態繼續下去，將會導致不好的結果，帶有警告和忠告的語氣。',
+            comparisons: ['ようでは：如果這樣的話…（警告）', 'ようなら：如果…的話（一般假設）'],
+            commonMistakes: ['○ 解けないようでは / × 解けるようでは → 前面通常是負面狀態'],
+        },
+    },
+    // ━━━ 一気に (all at once) ━━━
+    {
+        id: 'g_n2_227', category: 'grammar', level: 'N2', tags: ['speed', 'completion'],
+        stem: '締{し}め切{き}りが近{ちか}いので、レポートを___書{か}き上{あ}げた。',
+        stemZh: '因為截止日期快到了，所以一口氣寫完了報告。',
+        options: [
+            { text: '次第に', reason: '「次第に」表示「逐漸地」，與「一口氣」語意相反。' },
+            { text: '一気に', reason: '正確！「一気に」表示「一口氣地」，表示不間斷地完成。' },
+            { text: 'いきなり', reason: '「いきなり」表示「突然」，語意不同。' },
+            { text: 'とっくに', reason: '「とっくに」表示「早就」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「一気に」表示不間斷地一口氣完成',
+            analysis: '「一気に」用於描述在短時間內不間斷地完成某事，強調速度和效率。',
+            comparisons: ['一気に：一口氣地（不間斷）', '次第に：逐漸地（慢慢來）', 'いきなり：突然（無預警）'],
+            commonMistakes: ['○ 一気に書き上げた / × 一気で書き上げた → 用「に」不用「で」'],
+        },
+    },
+    // ━━━ 要するに (in short) - additional ━━━
+    {
+        id: 'g_n2_228', category: 'grammar', level: 'N2', tags: ['summary', 'conclusion'],
+        stem: '長{なが}い説明{せつめい}だったが、___やる気{き}があるかないかの問題{もんだい}だ。',
+        stemZh: '說明很長，但總之就是有沒有幹勁的問題。',
+        options: [
+            { text: 'つまり', reason: '「つまり」也表示「也就是說」，但「要するに」更強調總結。' },
+            { text: '要するに', reason: '正確！「要するに」表示「總而言之」，用於簡要總結前述內容。' },
+            { text: 'それにしても', reason: '「それにしても」表示「即便如此」，語意不同。' },
+            { text: 'ちなみに', reason: '「ちなみに」表示「順便一提」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「要するに」用於總結概括',
+            analysis: '「要するに」用於將前面冗長的說明簡單總結，提煉出核心要點。語氣較為直接。',
+            comparisons: ['要するに：總而言之（提煉要點）', 'つまり：也就是說（換句話說）'],
+            commonMistakes: ['○ 要するに、…の問題だ / × 要するにとして → 直接接句子'],
+        },
+    },
+    // ━━━ ばかり (approximately) ━━━
+    {
+        id: 'g_n2_229', category: 'grammar', level: 'N2', tags: ['approximation', 'quantity'],
+        stem: '赤{あか}ちゃんが生{う}まれて一{いっ}ヶ月{かげつ}___だ。',
+        stemZh: '嬰兒出生大約一個月了。',
+        options: [
+            { text: 'ぐらい', reason: '「ぐらい」也可以表示「大約」，但語感較口語。' },
+            { text: 'ばかり', reason: '正確！「ばかり」在此表示「大約…」，常用於時間數量的概略表達。' },
+            { text: 'ほど', reason: '「ほど」也表示「大約」，但此處「ばかり」更自然。' },
+            { text: 'だけ', reason: '「だけ」表示「只有…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ばかり」的概數用法',
+            analysis: '「ばかり」除了「盡是…」的意思外，還可以表示「大約…」，常用於時間或數量的概略表達。',
+            comparisons: ['ばかり：大約（概略）', 'ぐらい：大約（口語）', 'ほど：大約（書面）'],
+            commonMistakes: ['○ 一ヶ月ばかり / ○ 一ヶ月ほど → 都表示大約'],
+        },
+    },
+    // ━━━ まだしも (if it were ~ it would be okay / passable) ━━━
+    {
+        id: 'g_n2_230', category: 'grammar', level: 'N2', tags: ['comparison', 'compromise'],
+        stem: '一回{いっかい}の失敗{しっぱい}なら___、何度{なんど}も繰{く}り返{かえ}すのは許{ゆる}せない。',
+        stemZh: '如果是一次失敗還說得過去，但反覆犯錯就無法容忍了。',
+        options: [
+            { text: 'まだしも', reason: '正確！「まだしも」表示「如果是…的話還說得過去」。' },
+            { text: 'ましだ', reason: '「ましだ」表示「…較好」，但接續不同。' },
+            { text: 'ともかく', reason: '「ともかく」表示「暫且不論…」，語意不同。' },
+            { text: 'どころか', reason: '「どころか」表示「豈止…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「まだしも」表示勉強可以接受的程度',
+            analysis: '「まだしも」用於前項勉強可以接受，但後項完全不能接受的對比。強調讓步的底線。',
+            comparisons: ['まだしも：還說得過去（勉強接受）', 'だけましだ：至少…算好了（安慰）'],
+            commonMistakes: ['○ 一回ならまだしも / × 一回でまだしも → 常與「なら」搭配'],
+        },
+    },
+    // ━━━ てばかりはいられない (can't just keep doing) ━━━
+    {
+        id: 'g_n2_231', category: 'grammar', level: 'N2', tags: ['urgency', 'action'],
+        stem: '悲{かな}しんで___。前{まえ}を向{む}いて進{すす}まなければならない。',
+        stemZh: '不能光是悲傷。必須向前看，繼續前進。',
+        options: [
+            { text: 'ばかりだ', reason: '「ばかりだ」表示「不斷…」，不表示「不能光是…」。' },
+            { text: 'ばかりはいられない', reason: '正確！「てばかりはいられない」表示「不能光是…」。' },
+            { text: 'ばかりか', reason: '「ばかりか」表示「不僅…」，語意不同。' },
+            { text: 'ばかりに', reason: '「ばかりに」表示「只因為…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「てばかりはいられない」表示不能一直持續某狀態',
+            analysis: '「てばかりはいられない」用於催促自己或他人不能一直停留在某種狀態中，應該採取行動。',
+            comparisons: ['てばかりはいられない：不能光是…（需要行動）', 'てはいられない：不能再…了（緊迫）'],
+            commonMistakes: ['○ 悲しんでばかりはいられない / × 悲しいばかりはいられない → 前面用て形'],
+        },
+    },
+    // ━━━ に至って (having reached the point) - additional ━━━
+    {
+        id: 'g_n2_232', category: 'grammar', level: 'N2', tags: ['reaching_point', 'realization'],
+        stem: '病気{びょうき}が悪化{あっか}して入院{にゅういん}する事態{じたい}___、ようやく健康{けんこう}の大切{たいせつ}さに気{き}づいた。',
+        stemZh: '到了病情惡化而住院的地步，才終於意識到健康的重要性。',
+        options: [
+            { text: 'になって', reason: '「になって」表示「變成…」，也可以但不夠正式。' },
+            { text: 'に至って', reason: '正確！「に至って」表示「到了…的地步」，強調事態發展到極端。' },
+            { text: 'にあたって', reason: '「にあたって」表示「在…之際」，語意不同。' },
+            { text: 'に際して', reason: '「に際して」表示「在…之際」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「に至って」強調事態發展到某個嚴重程度',
+            analysis: '「に至って」用於描述事態發展到了某個關鍵點或極端狀態，後面常接「ようやく〜」「初めて〜」等表示遲來的反應。',
+            comparisons: ['に至って：到了…的地步（嚴重程度）', 'になって：變成…（一般變化）'],
+            commonMistakes: ['○ 事態に至って / × 事態に至ると → 用「に至って」不用「に至ると」'],
+        },
+    },
+    // ━━━ をきっかけに (taking the opportunity of) ━━━
+    {
+        id: 'g_n2_233', category: 'grammar', level: 'N2', tags: ['trigger', 'opportunity'],
+        stem: '結婚{けっこん}___、生活{せいかつ}スタイルを見直{みなお}した。',
+        stemZh: '以結婚為契機，重新審視了生活方式。',
+        options: [
+            { text: 'を契機に', reason: '「を契機に」也可以表示「以…為契機」，更書面語。' },
+            { text: 'をきっかけに', reason: '正確！「をきっかけに」表示「以…為契機」，觸發某種改變。' },
+            { text: 'をもとに', reason: '「をもとに」表示「以…為基礎」，語意不同。' },
+            { text: 'をめぐって', reason: '「をめぐって」表示「圍繞著…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「をきっかけに」表示引發變化的契機',
+            analysis: '「をきっかけに」與「がきっかけで」意思相同，都表示某個事件成為引發變化的契機。',
+            comparisons: ['をきっかけに：以…為契機（用「を」）', 'を契機に：以…為契機（更書面）', 'がきっかけで：以…為契機（用「が」）'],
+            commonMistakes: ['○ 結婚をきっかけに / ○ 結婚がきっかけで → 助詞不同但意思相同'],
+        },
+    },
+    // ━━━ と考えられる (it is thought that) ━━━
+    {
+        id: 'g_n2_234', category: 'grammar', level: 'N2', tags: ['academic', 'passive_opinion'],
+        stem: 'この遺跡{いせき}は約{やく}三千年前{さんぜんねんまえ}のものだ___。',
+        stemZh: '這個遺跡被認為是大約三千年前的東西。',
+        options: [
+            { text: 'と思われる', reason: '「と思われる」也可以表示「被認為…」，但「と考えられる」更學術性。' },
+            { text: 'と言われる', reason: '「と言われる」表示「據說…」，強調傳聞。' },
+            { text: 'と見られる', reason: '「と見られる」表示「被看作…」，語感不同。' },
+            { text: 'と考えられる', reason: '正確！「と考えられる」表示「被認為是…」，學術性客觀判斷。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+            keyPoint: '「と考えられる」表示客觀的學術判斷',
+            analysis: '「と考えられる」是學術論文和正式場合中常用的表達，表示基於證據或分析得出的結論。',
+            comparisons: ['と考えられる：被認為…（學術判斷）', 'と思われる：被認為…（一般推測）', 'と言われる：據說…（傳聞）'],
+            commonMistakes: ['○ 三千年前のものだと考えられる / × 三千年前のものと考えられる → 「だ」常保留'],
+        },
+    },
+    // ━━━ とか（で）(heard that / reportedly) ━━━
+    {
+        id: 'g_n2_235', category: 'grammar', level: 'N2', tags: ['hearsay', 'informal'],
+        stem: '田中{たなか}さんは来月{らいげつ}転勤{てんきん}する___。',
+        stemZh: '聽說田中下個月要調職。',
+        options: [
+            { text: 'そうだ', reason: '「そうだ」也表示傳聞，但較一般，不帶「聽說是…」的不確定感。' },
+            { text: 'とか', reason: '正確！「とか」用於傳聞，帶有「聽說好像…」的不確定語氣。' },
+            { text: 'らしい', reason: '「らしい」表示「好像…」，基於推測而非傳聞。' },
+            { text: 'ようだ', reason: '「ようだ」表示「看起來…」，基於觀察的推測。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「とか」用於非正式的傳聞',
+            analysis: '「とか」在句尾使用時表示不確定的傳聞，帶有「好像聽說…」的語感，較為口語化。',
+            comparisons: ['とか：聽說…（不確定傳聞）', 'そうだ：聽說…（一般傳聞）', 'らしい：好像…（推測）'],
+            commonMistakes: ['○ 転勤するとか / ○ 転勤するとかで → 加「で」表示原因'],
+        },
+    },
+    // ━━━ からして (judging from - additional) ━━━
+    {
+        id: 'g_n2_236', category: 'grammar', level: 'N2', tags: ['judgment', 'from_the_start'],
+        stem: 'あの映画{えいが}はタイトル___面白{おもしろ}そうだ。',
+        stemZh: '那部電影光從標題就看起來很有趣。',
+        options: [
+            { text: 'からして', reason: '正確！「からして」表示「單從…來看就…」，暗示整體更是如此。' },
+            { text: 'からすると', reason: '「からすると」表示「從…來看」，但不強調「光從…就…」。' },
+            { text: 'から見ると', reason: '「から見ると」表示「從…來看」，較客觀。' },
+            { text: 'から言うと', reason: '「から言うと」表示「從…來說」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「からして」強調連最基本的部分都已經如此',
+            analysis: '「からして」用於從一個最基本的要素來判斷整體，暗示「連…都已經這樣了，更何況其他」。',
+            comparisons: ['からして：光從…就…（暗示整體更是如此）', 'からすると：從…來看（客觀判斷）'],
+            commonMistakes: ['○ タイトルからして面白そうだ / × タイトルからして面白い → 常用推測形'],
+        },
+    },
+    // ━━━ にしろ〜にしろ (whether ~ or ~ - additional) ━━━
+    {
+        id: 'g_n2_237', category: 'grammar', level: 'N2', tags: ['either_way', 'regardless'],
+        stem: '賛成{さんせい}___反対{はんたい}___、理由{りゆう}をはっきり述{の}べてください。',
+        stemZh: '不管是贊成還是反對，請清楚說明理由。',
+        options: [
+            { text: 'にしろ / にしろ', reason: '正確！「にしろ〜にしろ」表示「無論是…還是…」。' },
+            { text: 'にして / にして', reason: '「にして」不用於列舉選項。' },
+            { text: 'として / として', reason: '「として」表示「作為…」，語意不同。' },
+            { text: 'にせよ / にせよ', reason: '「にせよ〜にせよ」也可以，與「にしろ〜にしろ」同義。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「にしろ〜にしろ」列舉兩個選項表示無論哪個',
+            analysis: '「にしろ〜にしろ」用於列舉兩個（通常是對立的）選項，表示無論是哪種情況，結論都一樣。',
+            comparisons: ['にしろ〜にしろ：無論…還是…（口語）', 'にせよ〜にせよ：無論…還是…（書面）'],
+            commonMistakes: ['○ 賛成にしろ反対にしろ / × 賛成するにしろ反対するにしろ → 名詞直接接「にしろ」'],
+        },
+    },
+    // ━━━ 甲斐がある (worth doing - additional) ━━━
+    {
+        id: 'g_n2_238', category: 'grammar', level: 'N2', tags: ['worth', 'reward'],
+        stem: '苦労{くろう}した___、素晴{すば}らしい結果{けっか}が得{え}られた。',
+        stemZh: '辛苦沒有白費，得到了出色的成果。',
+        options: [
+            { text: '甲斐があって', reason: '正確！「甲斐があって」表示「…的努力有了回報」。' },
+            { text: '末に', reason: '「末に」表示「經過…之後」，不強調回報感。' },
+            { text: 'あげく', reason: '「あげく」表示「最終結果是…」，通常用於負面結果。' },
+            { text: 'ばかりに', reason: '「ばかりに」表示「只因為…（壞結果）」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「甲斐があって」表示努力得到了回報',
+            analysis: '「甲斐がある」表示做某事有價值、值得，「甲斐があって」用於說明因為努力有了回報而得到好結果。',
+            comparisons: ['甲斐があって：努力有了回報（正面結果）', 'あげく：最終結果是…（負面居多）'],
+            commonMistakes: ['○ 苦労した甲斐があって / × 苦労の甲斐があって → 動詞た形接「甲斐」'],
+        },
+    },
+    // ━━━ に向かって (toward / facing) ━━━
+    {
+        id: 'g_n2_239', category: 'grammar', level: 'N2', tags: ['direction', 'goal'],
+        stem: '夢{ゆめ}の実現{じつげん}___、毎日{まいにち}努力{どりょく}し続{つづ}けている。',
+        stemZh: '朝著實現夢想，每天持續努力著。',
+        options: [
+            { text: 'に向かって', reason: '正確！「に向かって」表示「朝著…（目標）」。' },
+            { text: 'に沿って', reason: '「に沿って」表示「沿著…」，語意不同。' },
+            { text: 'にわたって', reason: '「にわたって」表示「長達…」，語意不同。' },
+            { text: 'に至るまで', reason: '「に至るまで」表示「直到…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に向かって」表示朝著目標前進',
+            analysis: '「に向かって」除了物理方向（朝著某方向），也可以表示朝著某個目標努力。',
+            comparisons: ['に向かって：朝著…（方向/目標）', 'に向けて：面向…（較強調準備過程）'],
+            commonMistakes: ['○ 夢の実現に向かって / ○ 夢に向かって → 都可以使用'],
+        },
+    },
+    // ━━━ に基づいて (based on - additional) ━━━
+    {
+        id: 'g_n2_240', category: 'grammar', level: 'N2', tags: ['basis', 'foundation'],
+        stem: '調査{ちょうさ}結果{けっか}___、新{あたら}しい対策{たいさく}を立{た}てた。',
+        stemZh: '根據調查結果，制定了新的對策。',
+        options: [
+            { text: 'をもとに', reason: '「をもとに」也表示「以…為基礎」，但語感略有不同。' },
+            { text: 'に沿って', reason: '「に沿って」表示「沿著…」，語意不同。' },
+            { text: 'に基づいて', reason: '正確！「に基づいて」表示「基於…/根據…」，強調依據。' },
+            { text: 'に応じて', reason: '「に応じて」表示「根據…的變化而」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「に基づいて」強調以某事為依據',
+            analysis: '「に基づいて」表示以某個事實、資料或規則為依據來做事，語氣較為正式。',
+            comparisons: ['に基づいて：基於…（嚴格依據）', 'をもとに：以…為基礎（較靈活）'],
+            commonMistakes: ['○ 調査結果に基づいて / × 調査結果を基づいて → 用「に」不用「を」'],
+        },
+    },
+    // ━━━ に加えて (in addition to - additional) ━━━
+    {
+        id: 'g_n2_241', category: 'grammar', level: 'N2', tags: ['addition', 'moreover'],
+        stem: '人手不足{ひとでぶそく}___、材料費{ざいりょうひ}の高騰{こうとう}も問題{もんだい}になっている。',
+        stemZh: '除了人手不足之外，材料費上漲也成了問題。',
+        options: [
+            { text: 'はもちろん', reason: '「はもちろん」表示「不用說…」，語感不同。' },
+            { text: 'ばかりか', reason: '「ばかりか」表示「不僅…而且」，也可以但接續不同。' },
+            { text: 'に加えて', reason: '正確！「に加えて」表示「除了…之外，還有…」。' },
+            { text: 'に伴って', reason: '「に伴って」表示「伴隨著…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「に加えて」表示在某事物之上再追加',
+            analysis: '「に加えて」用於在已有的事物之上再追加新的內容，表示「除了A之外，B也…」。',
+            comparisons: ['に加えて：除了…之外還有（追加）', 'ばかりか：不僅…而且（遞進強調）'],
+            commonMistakes: ['○ 人手不足に加えて / × 人手不足を加えて → 用「に」不用「を」'],
+        },
+    },
+    // ━━━ てて形＋ 以来 (since - additional) ━━━
+    {
+        id: 'g_n2_242', category: 'grammar', level: 'N2', tags: ['since', 'continuation'],
+        stem: '大学{だいがく}を卒業{そつぎょう}し___、ずっとこの会社{かいしゃ}で働{はたら}いている。',
+        stemZh: '自從大學畢業以來，一直在這家公司工作。',
+        options: [
+            { text: 'てから', reason: '「てから」表示「…之後」，但不強調持續至今。' },
+            { text: 'た後', reason: '「た後」表示「…之後」，不強調持續至今。' },
+            { text: 'て以来', reason: '正確！「て以来」表示「自從…以來（一直）」。' },
+            { text: 'たところ', reason: '「たところ」表示「做了…之後（發現）」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「て以来」強調從某時間點開始至今的持續狀態',
+            analysis: '「て以来」用於表示從某個起始點到現在為止一直持續的狀態或行為，強調「自從…以來一直…」。',
+            comparisons: ['て以来：自從…以來（持續至今）', 'てから：…之後（時間先後）'],
+            commonMistakes: ['○ 卒業して以来 / × 卒業した以来 → 用て形不用た形'],
+        },
+    },
+    // ━━━ ことから (from the fact that - additional) ━━━
+    {
+        id: 'g_n2_243', category: 'grammar', level: 'N2', tags: ['reason', 'naming'],
+        stem: 'この花{はな}は形{かたち}が星{ほし}に似{に}ている___、「星草{ほしくさ}」と呼{よ}ばれている。',
+        stemZh: '這種花因為形狀像星星，所以被稱為「星草」。',
+        options: [
+            { text: 'ことで', reason: '「ことで」表示「因為…」，但不如「ことから」自然。' },
+            { text: 'せいで', reason: '「せいで」表示「因為…（負面）」，不適合中性語境。' },
+            { text: 'わけで', reason: '「わけで」表示「所以…」，語感不同。' },
+            { text: 'ことから', reason: '正確！「ことから」表示「因為…的緣故」，常用於名稱由來。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+            keyPoint: '「ことから」常用於解釋名稱或稱呼的由來',
+            analysis: '「ことから」除了一般的因果關係外，特別常用於解釋某事物被命名或被稱為某名稱的原因。',
+            comparisons: ['ことから：因為…的緣故（命名由來）', 'ために：因為…（一般因果）'],
+            commonMistakes: ['○ 似ていることから / × 似たことから → 前面用ている形較自然'],
+        },
+    },
+    // ━━━ を除いて (except for / excluding) ━━━
+    {
+        id: 'g_n2_244', category: 'grammar', level: 'N2', tags: ['exception', 'exclusion'],
+        stem: '日曜日{にちようび}___、毎日{まいにち}営業{えいぎょう}しています。',
+        stemZh: '除了星期日以外，每天都有營業。',
+        options: [
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語意相反。' },
+            { text: 'を除いて', reason: '正確！「を除いて」表示「除了…以外」。' },
+            { text: 'をはじめ', reason: '「をはじめ」表示「以…為首」，語意不同。' },
+            { text: 'を問わず', reason: '「を問わず」表示「不論…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「を除いて」表示排除某事物',
+            analysis: '「を除いて」用於將某個例外排除在外，表示「除了…以外」。較正式的說法。',
+            comparisons: ['を除いて：除了…以外（正式）', '以外：除了…以外（一般）'],
+            commonMistakes: ['○ 日曜日を除いて / × 日曜日が除いて → 用「を」不用「が」'],
+        },
+    },
+    // ━━━ に先立って (prior to - additional) ━━━
+    {
+        id: 'g_n2_245', category: 'grammar', level: 'N2', tags: ['preparation', 'before'],
+        stem: '新商品{しんしょうひん}の発売{はつばい}___、記者{きしゃ}会見{かいけん}が行{おこな}われた。',
+        stemZh: '在新商品上市之前，舉行了記者會。',
+        options: [
+            { text: 'に際して', reason: '「に際して」表示「在…之際」，時間點不同。' },
+            { text: 'にあたって', reason: '「にあたって」表示「在…之際」，不強調「之前」。' },
+            { text: 'に先立って', reason: '正確！「に先立って」表示「在…之前」，強調事先準備。' },
+            { text: 'に応じて', reason: '「に応じて」表示「根據…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「に先立って」強調在主要事件之前進行準備或宣傳',
+            analysis: '「に先立って」用於描述在某個重要事件發生之前，先進行某些準備性的行動。',
+            comparisons: ['に先立って：在…之前（事先準備）', 'の前に：在…之前（一般時間）', 'に際して：在…之際（當場）'],
+            commonMistakes: ['○ 発売に先立って / ○ 発売に先立ち → 兩種都可以'],
+        },
+    },
+    // ━━━ からには (since / now that - additional) ━━━
+    {
+        id: 'g_n2_246', category: 'grammar', level: 'N2', tags: ['determination', 'obligation'],
+        stem: '約束{やくそく}した___、必{かなら}ず守{まも}らなければならない。',
+        stemZh: '既然約定了，就必須遵守。',
+        options: [
+            { text: 'からには', reason: '正確！「からには」表示「既然…就…」，強調責任和決心。' },
+            { text: 'からこそ', reason: '「からこそ」表示「正因為…」，語意不同。' },
+            { text: 'からして', reason: '「からして」表示「從…來看」，語意不同。' },
+            { text: 'からすると', reason: '「からすると」表示「從…來看」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「からには」強調既然做了就要負責到底',
+            analysis: '「からには」用於表達既然已經做出了選擇或承諾，就應該承擔責任或貫徹到底的決心。',
+            comparisons: ['からには：既然…就…（責任和決心）', '以上（は）：既然…就…（義務感更強）'],
+            commonMistakes: ['○ 約束したからには / × 約束するからには → 前面常用た形'],
+        },
+    },
+    // ━━━ にほかならない (nothing other than - additional) ━━━
+    {
+        id: 'g_n2_247', category: 'grammar', level: 'N2', tags: ['emphasis', 'assertion'],
+        stem: '彼{かれ}が成功{せいこう}したのは、努力{どりょく}の結果{けっか}___。',
+        stemZh: '他的成功正是努力的結果。',
+        options: [
+            { text: 'に相違ない', reason: '「に相違ない」表示「肯定是…」，但不強調「正是…」。' },
+            { text: 'に過ぎない', reason: '「に過ぎない」表示「只不過是…」，語意相反。' },
+            { text: 'でしかない', reason: '「でしかない」表示「只不過是…」，語意相反。' },
+            { text: 'にほかならない', reason: '正確！「にほかならない」表示「正是…」「不外乎就是…」。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+            keyPoint: '「にほかならない」強調確信和斷定',
+            analysis: '「にほかならない」用於強調某事的原因或本質，表示「正是…」「無非就是…」，語氣非常肯定。',
+            comparisons: ['にほかならない：正是…（肯定斷言）', 'に相違ない：肯定是…（確信推斷）', 'に過ぎない：只不過是…（貶低）'],
+            commonMistakes: ['○ 努力の結果にほかならない / × 努力の結果がほかならない → 用「に」不用「が」'],
+        },
+    },
+    // ━━━ にかけては (when it comes to - additional) ━━━
+    {
+        id: 'g_n2_248', category: 'grammar', level: 'N2', tags: ['specialty', 'confidence'],
+        stem: '料理{りょうり}の腕{うで}___、彼女{かのじょ}の右{みぎ}に出{で}る者{もの}はいない。',
+        stemZh: '說到廚藝，沒有人能超越她。',
+        options: [
+            { text: 'に関して', reason: '「に関して」表示「關於…」，不帶自信的語氣。' },
+            { text: 'にかけては', reason: '正確！「にかけては」表示「說到…方面」，暗示自信和擅長。' },
+            { text: 'について', reason: '「について」表示「關於…」，太一般。' },
+            { text: 'において', reason: '「において」表示「在…方面」，較正式但不帶自信感。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「にかけては」暗示在該領域特別出色',
+            analysis: '「にかけては」用於表示在某個特定領域或方面特別擅長或出色，後面通常接正面評價。',
+            comparisons: ['にかけては：說到…方面（暗示擅長）', 'に関して：關於…（中性）', 'において：在…方面（正式）'],
+            commonMistakes: ['○ 料理の腕にかけては / × 料理の腕にかけて → 需要「は」'],
+        },
+    },
+    // ━━━ ないではいられない (cannot help but - additional) ━━━
+    {
+        id: 'g_n2_249', category: 'grammar', level: 'N2', tags: ['involuntary', 'emotion'],
+        stem: 'あの映画{えいが}を見{み}たら、涙{なみだ}が出{で}___。',
+        stemZh: '看了那部電影的話，忍不住就流淚了。',
+        options: [
+            { text: 'ないではいられない', reason: '正確！「ないではいられない」表示「忍不住…」。' },
+            { text: 'なければならない', reason: '「なければならない」表示「必須…」，語意不同。' },
+            { text: 'ないわけにはいかない', reason: '「ないわけにはいかない」表示「不能不…」，語意稍有不同。' },
+            { text: 'ないことはない', reason: '「ないことはない」表示「並非不…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ないではいられない」表示無法抑制的情感或行為',
+            analysis: '「ないではいられない」與「ずにはいられない」同義，表示因為情感太強烈而無法抑制自己。',
+            comparisons: ['ないではいられない：忍不住…（無法抑制）', 'ずにはいられない：忍不住…（同義書面）'],
+            commonMistakes: ['○ 涙が出ないではいられない / × 涙が出ないではいられる → 否定形是「いられる」'],
+        },
+    },
+    // ━━━ にあたって (on the occasion of - additional) ━━━
+    {
+        id: 'g_n2_250', category: 'grammar', level: 'N2', tags: ['occasion', 'formal'],
+        stem: '新{あたら}しいプロジェクトの開始{かいし}___、チーム全員{ぜんいん}で目標{もくひょう}を確認{かくにん}した。',
+        stemZh: '在新專案開始之際，全體團隊確認了目標。',
+        options: [
+            { text: 'に先立って', reason: '「に先立って」表示「在…之前」，時間點不同。' },
+            { text: 'に際して', reason: '「に際して」也可以表示「在…之際」，與「にあたって」意思相近。' },
+            { text: 'にあたって', reason: '正確！「にあたって」表示「在…之際」，用於重要場合。' },
+            { text: 'を契機に', reason: '「を契機に」表示「以…為契機」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「にあたって」用於重要的、正式的場合',
+            analysis: '「にあたって」用於描述某個重要事件或場合的開始，語氣正式，常見於演講、書面通知。',
+            comparisons: ['にあたって：在…之際（重要場合）', 'に際して：在…之際（正式但範圍更廣）', 'の時に：在…的時候（一般）'],
+            commonMistakes: ['○ 開始にあたって / ○ 開始にあたり → 兩種都可以'],
+        },
+    },
+    // ━━━ ことにはならない (does not mean - additional) ━━━
+    {
+        id: 'g_n2_251', category: 'grammar', level: 'N2', tags: ['negation', 'logic'],
+        stem: 'お金{かね}があるからといって、幸{しあわ}せだという___。',
+        stemZh: '不能因為有錢就說是幸福的。',
+        options: [
+            { text: 'ことにはならない', reason: '正確！「ことにはならない」表示「不能說就是…」。' },
+            { text: 'わけがない', reason: '「わけがない」表示「不可能…」，語氣過強。' },
+            { text: 'はずがない', reason: '「はずがない」表示「不應該…」，語意不同。' },
+            { text: 'ものではない', reason: '「ものではない」表示「不應該…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ことにはならない」表示邏輯上不能成立',
+            analysis: '「ことにはならない」用於否定某種推論，表示「不能因此就認為…」「不等於…」。',
+            comparisons: ['ことにはならない：不能說就是…（否定推論）', 'わけがない：不可能…（強烈否定）'],
+            commonMistakes: ['○ 幸せだということにはならない / × 幸せなことにはならない → 需要「という」引述'],
+        },
+    },
+    // ━━━ というものではない (not necessarily - additional) ━━━
+    {
+        id: 'g_n2_252', category: 'grammar', level: 'N2', tags: ['negation', 'moderation'],
+        stem: '安{やす}ければ安{やす}いほどいい___。品質{ひんしつ}も大切{たいせつ}だ。',
+        stemZh: '並不是越便宜越好。品質也很重要。',
+        options: [
+            { text: 'ものだ', reason: '「ものだ」表示常理或感嘆，語意不同。' },
+            { text: 'ことだ', reason: '「ことだ」表示建議，語意不同。' },
+            { text: 'はずだ', reason: '「はずだ」表示「應該…」，語意不同。' },
+            { text: 'というものではない', reason: '正確！「というものではない」表示「並不是…」，否定過度的想法。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+            keyPoint: '「というものではない」否定過於極端或片面的看法',
+            analysis: '「というものではない」用於否定過於簡單化或極端的觀點，提出更均衡的看法。',
+            comparisons: ['というものではない：並不是…（否定極端觀點）', 'というものだ：確實是…（肯定）'],
+            commonMistakes: ['○ いいというものではない / × いいのものではない → 需要「という」'],
+        },
+    },
+    // ━━━ ついでに (while at it - additional) ━━━
+    {
+        id: 'g_n2_253', category: 'grammar', level: 'N2', tags: ['opportunity', 'additional_action'],
+        stem: '買{か}い物{もの}の___、郵便局{ゆうびんきょく}にも寄{よ}ってきた。',
+        stemZh: '趁著去買東西的時候，順便也去了郵局。',
+        options: [
+            { text: 'あいだに', reason: '「あいだに」表示「在…期間內」，不強調「順便」。' },
+            { text: 'ついでに', reason: '正確！「ついでに」表示「順便」，趁做某事時附帶做另一件事。' },
+            { text: 'うちに', reason: '「うちに」表示「趁…的時候」，語感不同。' },
+            { text: 'ところに', reason: '「ところに」表示「正當…的時候」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ついでに」表示趁做某事的機會順便做另一件事',
+            analysis: '「ついでに」用於在做主要事情的同時，順便或附帶做另一件事情。',
+            comparisons: ['ついでに：順便（附帶行動）', 'ながら：一邊…一邊…（同時進行）'],
+            commonMistakes: ['○ 買い物のついでに / ○ 買い物に行ったついでに → 名詞用「の」，動詞用た形'],
+        },
+    },
+    // ━━━ わりに (considering / for - additional) ━━━
+    {
+        id: 'g_n2_254', category: 'grammar', level: 'N2', tags: ['contrast', 'unexpected'],
+        stem: 'このレストランは値段{ねだん}が高{たか}い___、あまり美味{おい}しくない。',
+        stemZh: '這家餐廳價格高的同時，卻不太好吃。',
+        options: [
+            { text: 'わりに', reason: '正確！「わりに」表示「雖然…但是（與預期不符）」。' },
+            { text: '反面', reason: '「反面」表示「另一方面」，可以但語感不同。' },
+            { text: 'にしては', reason: '「にしては」表示「就…而言（出乎意料）」，也可以但語感不同。' },
+            { text: 'くせに', reason: '「くせに」表示「明明…卻…」，帶有責備語氣。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「わりに」表示與程度不相稱的結果',
+            analysis: '「わりに」用於表示實際情況與預期的程度不相符，帶有意外的語感。',
+            comparisons: ['わりに：雖然…但是（不相稱）', 'にしては：就…而言（意外）', 'のに：雖然…但是（不滿）'],
+            commonMistakes: ['○ 高いわりに / × 高いのわりに → 形容詞直接接「わりに」'],
+        },
+    },
+    // ━━━ にしては (considering - additional) ━━━
+    {
+        id: 'g_n2_255', category: 'grammar', level: 'N2', tags: ['unexpected', 'evaluation'],
+        stem: '日本語{にほんご}を一年{いちねん}しか勉強{べんきょう}していない___、とても上手{じょうず}だ。',
+        stemZh: '以只學了一年日語來說，非常厲害。',
+        options: [
+            { text: 'のに', reason: '「のに」表示「雖然…但是」，帶有不滿語氣。' },
+            { text: 'にしては', reason: '正確！「にしては」表示「就…而言」，與預期不同。' },
+            { text: 'わりに', reason: '「わりに」也可以表示「以…而言」，但語感不如「にしては」強。' },
+            { text: 'としても', reason: '「としても」表示「即使…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「にしては」表示與基準相比出乎意料',
+            analysis: '「にしては」以某個基準或條件來衡量，表示實際情況與根據該基準的預期不同。可以是好的也可以是壞的意外。',
+            comparisons: ['にしては：就…而言（出乎意料）', 'わりに：雖然…但是（不相稱）'],
+            commonMistakes: ['○ 一年にしては / × 一年としては → 用「にしては」不用「としては」'],
+        },
+    },
+    // ━━━ に反して (contrary to) - additional ━━━
+    {
+        id: 'g_n2_256', category: 'grammar', level: 'N2', tags: ['contrast', 'opposite'],
+        stem: '予想{よそう}___、試合{しあい}は大差{たいさ}で負{ま}けてしまった。',
+        stemZh: '與預期相反，比賽大幅落敗了。',
+        options: [
+            { text: 'に反して', reason: '正確！「に反して」表示「與…相反」。' },
+            { text: 'に対して', reason: '「に対して」表示「對於…」，不表示相反。' },
+            { text: 'に比べて', reason: '「に比べて」表示「與…相比」，不表示相反。' },
+            { text: 'に伴って', reason: '「に伴って」表示「伴隨著…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に反して」表示與預期或規則相反',
+            analysis: '「に反して」用於表示實際結果與預期、期待、規則等完全相反。',
+            comparisons: ['に反して：與…相反（結果與預期相反）', '逆に：反而（副詞用法）'],
+            commonMistakes: ['○ 予想に反して / × 予想を反して → 用「に」不用「を」'],
+        },
+    },
+    // ━━━ に伴って (along with - additional) ━━━
+    {
+        id: 'g_n2_257', category: 'grammar', level: 'N2', tags: ['accompanying', 'change'],
+        stem: '経済{けいざい}の発展{はってん}___、環境{かんきょう}問題{もんだい}も深刻{しんこく}になってきた。',
+        stemZh: '隨著經濟發展，環境問題也變得嚴重起來。',
+        options: [
+            { text: 'に伴って', reason: '正確！「に伴って」表示「伴隨著…」，兩者同時發生變化。' },
+            { text: 'に応じて', reason: '「に応じて」表示「根據…而變化」，語感不同。' },
+            { text: 'に沿って', reason: '「に沿って」表示「沿著…」，語意不同。' },
+            { text: 'に基づいて', reason: '「に基づいて」表示「基於…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に伴って」表示兩個事物同時變化',
+            analysis: '「に伴って」用於描述一個事物的變化帶動另一個事物也發生變化，強調伴隨關係。',
+            comparisons: ['に伴って：伴隨著…（同步變化）', 'につれて：隨著…（漸進變化）', 'とともに：隨著…/和…一起'],
+            commonMistakes: ['○ 発展に伴って / × 発展を伴って → 用「に」不用「を」表示原因'],
+        },
+    },
+    // ━━━ をめぐって (concerning / around - additional) ━━━
+    {
+        id: 'g_n2_258', category: 'grammar', level: 'N2', tags: ['dispute', 'discussion'],
+        stem: '新{あたら}しい法律{ほうりつ}___、賛否両論{さんぴりょうろん}の議論{ぎろん}が続{つづ}いている。',
+        stemZh: '圍繞新法律，贊成和反對的討論持續進行著。',
+        options: [
+            { text: 'について', reason: '「について」表示「關於…」，較一般，不強調爭議。' },
+            { text: 'に関して', reason: '「に関して」表示「關於…」，較正式但不強調爭議。' },
+            { text: 'をめぐって', reason: '正確！「をめぐって」表示「圍繞著…（有爭議/討論）」。' },
+            { text: 'に対して', reason: '「に対して」表示「對於…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「をめぐって」暗示有爭議或多方意見',
+            analysis: '「をめぐって」專門用於圍繞某個議題存在爭論、討論或對立意見的情境。',
+            comparisons: ['をめぐって：圍繞著…（有爭議）', 'について：關於…（中性話題）'],
+            commonMistakes: ['○ 法律をめぐって / × 法律にめぐって → 用「を」不用「に」'],
+        },
+    },
+    // ━━━ を通じて / を通して (through / throughout - additional) ━━━
+    {
+        id: 'g_n2_259', category: 'grammar', level: 'N2', tags: ['means', 'throughout'],
+        stem: 'ボランティア活動{かつどう}___、多{おお}くのことを学{まな}んだ。',
+        stemZh: '透過志工活動，學到了很多東西。',
+        options: [
+            { text: 'を通じて', reason: '正確！「を通じて」表示「透過…」，以某事為媒介。' },
+            { text: 'をもとに', reason: '「をもとに」表示「以…為基礎」，語意不同。' },
+            { text: 'を契機に', reason: '「を契機に」表示「以…為契機」，語意不同。' },
+            { text: 'をはじめ', reason: '「をはじめ」表示「以…為首」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「を通じて」表示透過某種媒介或手段',
+            analysis: '「を通じて」有兩個主要用法：(1)透過某種手段或媒介、(2)在整個期間中。此題為第一種用法。',
+            comparisons: ['を通じて：透過…/在整個…期間（較書面）', 'を通して：透過…/在整個…期間（較口語）'],
+            commonMistakes: ['○ 活動を通じて / ○ 活動を通して → 兩種都可以使用'],
+        },
+    },
+    // ━━━ にわたって (spanning - additional) ━━━
+    {
+        id: 'g_n2_260', category: 'grammar', level: 'N2', tags: ['range', 'duration'],
+        stem: 'この工事{こうじ}は三年間{さんねんかん}___行{おこな}われた。',
+        stemZh: '這項工程持續了三年之久。',
+        options: [
+            { text: 'をかけて', reason: '「をかけて」表示「花費…」，也可以但語感不同。' },
+            { text: 'に至るまで', reason: '「に至るまで」表示「直到…」，不適合接時間長度。' },
+            { text: 'にわたって', reason: '正確！「にわたって」表示「歷時…/跨越…」。' },
+            { text: 'を通じて', reason: '「を通じて」表示「在整個…期間」，可以但語感不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「にわたって」強調持續的時間或範圍之廣',
+            analysis: '「にわたって」用於強調某事在時間或空間上的持續範圍之廣，帶有驚嘆的語氣。',
+            comparisons: ['にわたって：歷時…/跨越…（強調範圍）', 'の間：在…期間（一般）'],
+            commonMistakes: ['○ 三年間にわたって / × 三年間をわたって → 用「に」不用「を」'],
+        },
+    },
+    // ━━━ を問わず (regardless of - additional) ━━━
+    {
+        id: 'g_n2_261', category: 'grammar', level: 'N2', tags: ['regardless', 'inclusive'],
+        stem: '経験{けいけん}の有無{うむ}___、やる気{き}のある方{かた}を募集{ぼしゅう}しています。',
+        stemZh: '不論有無經驗，我們招募有幹勁的人。',
+        options: [
+            { text: 'にかかわらず', reason: '「にかかわらず」也表示「不論…」，意思相近。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語感不同。' },
+            { text: 'を問わず', reason: '正確！「を問わず」表示「不問…/不論…」。' },
+            { text: 'はもちろん', reason: '「はもちろん」表示「不用說…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「を問わず」表示不在乎某個條件',
+            analysis: '「を問わず」常與「有無」「男女」「年齢」等對立概念搭配，表示不以此為條件。常見於招聘啟事。',
+            comparisons: ['を問わず：不問…（正式）', 'にかかわらず：不管…（同義）', 'に関係なく：與…無關（口語）'],
+            commonMistakes: ['○ 経験の有無を問わず / × 経験を問わず → 常與「有無」搭配'],
+        },
+    },
+    // ━━━ に限らず (not limited to - additional) ━━━
+    {
+        id: 'g_n2_262', category: 'grammar', level: 'N2', tags: ['expansion', 'not_only'],
+        stem: '若者{わかもの}___、高齢者{こうれいしゃ}もスマートフォンを使{つか}う時代{じだい}になった。',
+        stemZh: '不僅是年輕人，老年人也使用智慧型手機的時代來臨了。',
+        options: [
+            { text: 'に限らず', reason: '正確！「に限らず」表示「不限於…」，範圍更廣。' },
+            { text: 'ばかりか', reason: '「ばかりか」表示「不僅…而且」，也可以但用法不同。' },
+            { text: 'はもちろん', reason: '「はもちろん」表示「不用說…」，語感不同。' },
+            { text: 'をはじめ', reason: '「をはじめ」表示「以…為首」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に限らず」表示不僅限於某範圍',
+            analysis: '「に限らず」用於表示某事不僅限於某個群體或範圍，而是更廣泛地適用。',
+            comparisons: ['に限らず：不限於…（擴大範圍）', 'ばかりか：不僅…而且（遞進）', 'のみならず：不僅…（書面）'],
+            commonMistakes: ['○ 若者に限らず / × 若者を限らず → 用「に」不用「を」'],
+        },
+    },
+    // ━━━ のみならず (not only - additional) ━━━
+    {
+        id: 'g_n2_263', category: 'grammar', level: 'N2', tags: ['formal', 'expansion'],
+        stem: 'この問題{もんだい}は日本{にほん}___、世界中{せかいじゅう}で議論{ぎろん}されている。',
+        stemZh: '這個問題不僅在日本，在全世界都被討論著。',
+        options: [
+            { text: 'だけでなく', reason: '「だけでなく」也表示「不僅…」，但較口語。' },
+            { text: 'のみならず', reason: '正確！「のみならず」表示「不僅…」，書面語。' },
+            { text: 'ばかりか', reason: '「ばかりか」表示「不僅…而且」，口語色彩較強。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「のみならず」是「だけでなく」的書面語',
+            analysis: '「のみならず」是較正式的書面表達，相當於「だけでなく」，用於論文、新聞等正式場合。',
+            comparisons: ['のみならず：不僅…（書面正式）', 'だけでなく：不僅…（口語一般）', 'ばかりか：不僅…而且（口語強調）'],
+            commonMistakes: ['○ 日本のみならず / × 日本だけのみならず → 不能與「だけ」重複'],
+        },
+    },
+    // ━━━ ばかりに (just because - additional) ━━━
+    {
+        id: 'g_n2_264', category: 'grammar', level: 'N2', tags: ['regret', 'cause_negative'],
+        stem: '一言{ひとこと}余計{よけい}なことを言{い}った___、友人{ゆうじん}との関係{かんけい}が悪{わる}くなってしまった。',
+        stemZh: '只因為多說了一句話，和朋友的關係就變糟了。',
+        options: [
+            { text: 'せいで', reason: '「せいで」也表示「因為…（壞結果）」，但不如「ばかりに」強調後悔。' },
+            { text: 'ばかりに', reason: '正確！「ばかりに」表示「只因為…（導致壞結果）」，帶有強烈後悔。' },
+            { text: 'からには', reason: '「からには」表示「既然…就…」，語意不同。' },
+            { text: 'ものだから', reason: '「ものだから」表示「因為…（辯解）」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ばかりに」強調因小事導致壞結果的後悔',
+            analysis: '「ばかりに」用於表示只因為某個小原因就導致了不好的結果，帶有強烈的後悔或遺憾。',
+            comparisons: ['ばかりに：只因為…（後悔）', 'せいで：因為…（歸咎）', 'ものだから：因為…嘛（辯解）'],
+            commonMistakes: ['○ 言ったばかりに / × 言うばかりに → 前面常用た形'],
+        },
+    },
+    // ━━━ ものだから (because - excuse - additional) ━━━
+    {
+        id: 'g_n2_265', category: 'grammar', level: 'N2', tags: ['excuse', 'reason'],
+        stem: '急{いそ}いでいた___、財布{さいふ}を忘{わす}れてきてしまった。',
+        stemZh: '因為太急了，就把錢包忘在那裡了。',
+        options: [
+            { text: 'ものだから', reason: '正確！「ものだから」表示「因為…嘛」，用於辯解。' },
+            { text: 'からこそ', reason: '「からこそ」表示「正因為…」，語意不同。' },
+            { text: 'ばかりに', reason: '「ばかりに」表示「只因為…（後悔）」，語氣不同。' },
+            { text: 'ことから', reason: '「ことから」表示「由於…」，不帶辯解語氣。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ものだから」帶有辯解和解釋的語氣',
+            analysis: '「ものだから」用於為自己的行為辯解，暗示「不是故意的，是因為…」。口語中常說「もんだから」。',
+            comparisons: ['ものだから：因為…嘛（辯解）', 'から：因為…（一般原因）', 'ので：因為…（客觀原因）'],
+            commonMistakes: ['○ 急いでいたものだから / × 急いだものだから → 用ていた形表示當時狀態'],
+        },
+    },
+    // ━━━ ものの (although - additional) ━━━
+    {
+        id: 'g_n2_266', category: 'grammar', level: 'N2', tags: ['concession', 'contrast'],
+        stem: '新{あたら}しいパソコンを買{か}った___、使{つか}い方{かた}がよくわからない。',
+        stemZh: '雖然買了新電腦，但不太會用。',
+        options: [
+            { text: 'のに', reason: '「のに」也表示「雖然…但是」，但帶有不滿語氣。' },
+            { text: 'けれども', reason: '「けれども」表示「雖然…但是」，較一般。' },
+            { text: 'ところで', reason: '「ところで」表示「即使…也」，接續不同。' },
+            { text: 'ものの', reason: '正確！「ものの」表示「雖然…但是」，書面語。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+            keyPoint: '「ものの」表示雖然…但是（書面語的讓步）',
+            analysis: '「ものの」用於承認前項事實，但後項表示與之不符的狀態。語氣較為冷靜客觀，常用於書面語。',
+            comparisons: ['ものの：雖然…但是（書面冷靜）', 'のに：雖然…但是（帶有不滿）', 'けれども：雖然…但是（一般）'],
+            commonMistakes: ['○ 買ったものの / × 買うものの → 前面常用た形'],
+        },
+    },
+    // ━━━ からこそ (precisely because - additional) ━━━
+    {
+        id: 'g_n2_267', category: 'grammar', level: 'N2', tags: ['emphasis', 'reason'],
+        stem: '失敗{しっぱい}した___、学{まな}べることがたくさんある。',
+        stemZh: '正因為失敗了，才能學到很多東西。',
+        options: [
+            { text: 'ばかりに', reason: '「ばかりに」表示「只因為…（壞結果）」，語意不同。' },
+            { text: 'からこそ', reason: '正確！「からこそ」表示「正因為…才…」，強調原因。' },
+            { text: 'からには', reason: '「からには」表示「既然…就…」，語意不同。' },
+            { text: 'からして', reason: '「からして」表示「從…來看」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「からこそ」強調因果關係中的「正因為」',
+            analysis: '「からこそ」用於特別強調原因，表示「正是因為A，所以才B」，帶有積極肯定的語氣。',
+            comparisons: ['からこそ：正因為…才…（強調原因）', 'から：因為…（一般原因）'],
+            commonMistakes: ['○ 失敗したからこそ / × 失敗だからこそ → 動詞用た形接續'],
+        },
+    },
+    // ━━━ あまり (to the extent that - additional) ━━━
+    {
+        id: 'g_n2_268', category: 'grammar', level: 'N2', tags: ['excess', 'cause'],
+        stem: '嬉{うれ}しさの___、涙{なみだ}が止{と}まらなかった。',
+        stemZh: '因為太開心了，眼淚停不住。',
+        options: [
+            { text: 'あまり', reason: '正確！「あまり」表示「因為太…而…」，感情過度導致的結果。' },
+            { text: 'ために', reason: '「ために」表示「因為…」，不強調程度過度。' },
+            { text: 'せいで', reason: '「せいで」表示「因為…（壞結果）」，不適合正面語境。' },
+            { text: 'おかげで', reason: '「おかげで」表示「託…的福」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「名詞＋のあまり」表示感情過度導致某種結果',
+            analysis: '「あまり」接在名詞後面時用「のあまり」，表示因為某種感情或狀態太過強烈而導致的結果。',
+            comparisons: ['あまり：因為太…（程度過度）', 'ために：因為…（一般原因）'],
+            commonMistakes: ['○ 嬉しさのあまり / × 嬉しいあまり → 名詞用「のあまり」，形容詞用「あまり」'],
+        },
+    },
+    // ━━━ 上で (in doing / after doing - additional) ━━━
+    {
+        id: 'g_n2_269', category: 'grammar', level: 'N2', tags: ['condition', 'process'],
+        stem: '日本{にほん}で生活{せいかつ}する___、言葉{ことば}の問題{もんだい}は避{さ}けられない。',
+        stemZh: '在日本生活的時候，語言問題是無法避免的。',
+        options: [
+            { text: '上で', reason: '正確！「上で」表示「在…方面」或「做…的時候」。' },
+            { text: 'ために', reason: '「ために」表示「為了…」，語意不同。' },
+            { text: 'にあたって', reason: '「にあたって」表示「在…之際」，語感不同。' },
+            { text: 'に際して', reason: '「に際して」表示「在…之際」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「上で」表示「在…的過程中/…時」',
+            analysis: '「上で」有兩個用法：(1)動詞辭書形＋上で＝在做…的過程中、(2)動詞た形＋上で＝做了…之後。此題為第一種。',
+            comparisons: ['する上で：在做…的過程中', 'した上で：做了…之後', 'の上で：在…方面'],
+            commonMistakes: ['○ 生活する上で / × 生活の上で → 動詞用辭書形接「上で」'],
+        },
+    },
+    // ━━━ 次第 (as soon as / depending on - additional) ━━━
+    {
+        id: 'g_n2_270', category: 'grammar', level: 'N2', tags: ['immediate', 'action'],
+        stem: '結果{けっか}がわかり___、すぐにご連絡{れんらく}いたします。',
+        stemZh: '一有結果就立刻聯絡您。',
+        options: [
+            { text: 'ながら', reason: '「ながら」表示「一邊…一邊…」，語意不同。' },
+            { text: 'つつ', reason: '「つつ」表示「一邊…一邊…」，語意不同。' },
+            { text: '次第', reason: '正確！「次第」表示「一…就…」，立即採取行動。' },
+            { text: 'たとたん', reason: '「たとたん」也表示「一…就…」，但語感不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「ます形去ます＋次第」表示一…就立刻…',
+            analysis: '「次第」接在動詞連用形後表示「一…就…」，常用於商務場合，表示動作完成後立即採取下一步行動。',
+            comparisons: ['次第：一…就…（鄭重承諾）', 'たら：…了之後（一般）', 'や否や：剛…就…（文學性）'],
+            commonMistakes: ['○ わかり次第 / × わかった次第 → 用連用形（ます形去ます）不用た形'],
+        },
+    },
+    // ━━━ 次第で (depending on) ━━━
+    {
+        id: 'g_n2_271', category: 'grammar', level: 'N2', tags: ['condition', 'variable'],
+        stem: '結果{けっか}は努力{どりょく}___変{か}わる。',
+        stemZh: '結果取決於努力。',
+        options: [
+            { text: '次第で', reason: '正確！「次第で」表示「取決於…」。' },
+            { text: 'によって', reason: '「によって」也表示「根據…」，但語感不同。' },
+            { text: 'に応じて', reason: '「に応じて」表示「根據…而變化」，語感不同。' },
+            { text: 'をもとに', reason: '「をもとに」表示「以…為基礎」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「次第で」表示某事物取決於某個條件',
+            analysis: '「次第で」用於表示結果由某個關鍵因素決定，強調「全看…而定」。',
+            comparisons: ['次第で：取決於…（關鍵因素）', 'によって：根據…（方法或原因）', 'に応じて：根據…而相應變化'],
+            commonMistakes: ['○ 努力次第で / × 努力する次第で → 名詞直接接「次第で」'],
+        },
+    },
+    // ━━━ に応じて (according to - additional) ━━━
+    {
+        id: 'g_n2_272', category: 'grammar', level: 'N2', tags: ['correspondence', 'adjustment'],
+        stem: 'お客様{きゃくさま}のご要望{ようぼう}___、プランを変更{へんこう}いたします。',
+        stemZh: '根據客人的需求，我們會變更方案。',
+        options: [
+            { text: 'に応じて', reason: '正確！「に応じて」表示「根據…相應地」。' },
+            { text: 'に基づいて', reason: '「に基づいて」表示「基於…」，較為固定不變。' },
+            { text: 'に沿って', reason: '「に沿って」表示「沿著…」，語意不同。' },
+            { text: 'に際して', reason: '「に際して」表示「在…之際」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に応じて」表示根據情況靈活應對',
+            analysis: '「に応じて」用於表示根據不同情況或需求做出相應的調整或變化，強調靈活性。',
+            comparisons: ['に応じて：根據…相應地（靈活調整）', 'に基づいて：基於…（固定依據）', '次第で：取決於…（決定性因素）'],
+            commonMistakes: ['○ 要望に応じて / × 要望を応じて → 用「に」不用「を」'],
+        },
+    },
+    // ━━━ ばかりか (not only - additional) ━━━
+    {
+        id: 'g_n2_273', category: 'grammar', level: 'N2', tags: ['expansion', 'addition'],
+        stem: '彼{かれ}は勉強{べんきょう}ができる___、スポーツも万能{ばんのう}だ。',
+        stemZh: '他不僅會讀書，運動也是全能的。',
+        options: [
+            { text: 'ばかりか', reason: '正確！「ばかりか」表示「不僅…而且」，遞進強調。' },
+            { text: 'ものの', reason: '「ものの」表示「雖然…但是」，語意相反。' },
+            { text: 'からこそ', reason: '「からこそ」表示「正因為…」，語意不同。' },
+            { text: 'あまり', reason: '「あまり」表示「因為太…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ばかりか」表示不僅A還有B，遞進強調',
+            analysis: '「ばかりか」用於表示不僅具有A的特質，還進一步具有B的特質，後者通常更加出人意料。',
+            comparisons: ['ばかりか：不僅…而且（驚訝）', 'だけでなく：不僅…也（一般）', 'のみならず：不僅…（書面）'],
+            commonMistakes: ['○ できるばかりか / × できたばかりか → 前面用辭書形或現在形'],
+        },
+    },
+    // ━━━ に過ぎない (merely - additional) ━━━
+    {
+        id: 'g_n2_274', category: 'grammar', level: 'N2', tags: ['limitation', 'modesty'],
+        stem: '私{わたし}の意見{いけん}は個人的{こじんてき}な感想{かんそう}___。',
+        stemZh: '我的意見僅僅是個人的感想而已。',
+        options: [
+            { text: 'にほかならない', reason: '「にほかならない」表示「正是…」，語意相反。' },
+            { text: 'に相違ない', reason: '「に相違ない」表示「肯定是…」，語意不同。' },
+            { text: 'に過ぎない', reason: '正確！「に過ぎない」表示「只不過是…」，謙虛或貶低。' },
+            { text: 'に限らない', reason: '「に限らない」表示「不限於…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「に過ぎない」表示僅僅如此而已',
+            analysis: '「に過ぎない」用於表示某事的程度或價值低於預期，帶有謙虛或貶低的語氣。',
+            comparisons: ['に過ぎない：只不過是…（謙虛/貶低）', 'にほかならない：正是…（強調）', 'でしかない：只不過是…（更口語）'],
+            commonMistakes: ['○ 感想に過ぎない / × 感想が過ぎない → 用「に」不用「が」'],
+        },
+    },
+    // ━━━ に相違ない (certainly / no doubt - additional) ━━━
+    {
+        id: 'g_n2_275', category: 'grammar', level: 'N2', tags: ['certainty', 'formal'],
+        stem: 'あれだけの証拠{しょうこ}がある以上{いじょう}、彼{かれ}が犯人{はんにん}___。',
+        stemZh: '既然有那麼多證據，他肯定就是犯人。',
+        options: [
+            { text: 'に決まっている', reason: '「に決まっている」也表示「肯定是…」，但較口語。' },
+            { text: 'に違いない', reason: '「に違いない」也表示「肯定是…」，但比「に相違ない」口語。' },
+            { text: 'に過ぎない', reason: '「に過ぎない」表示「只不過是…」，語意完全不同。' },
+            { text: 'に相違ない', reason: '正確！「に相違ない」表示「無疑是…」，非常正式的確信表達。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+            keyPoint: '「に相違ない」是最正式的確信表達',
+            analysis: '「に相違ない」是書面語，表示基於客觀證據的強烈確信。正式度：に相違ない＞に違いない＞に決まっている。',
+            comparisons: ['に相違ない：無疑是…（最正式）', 'に違いない：一定是…（書面）', 'に決まっている：肯定是…（口語）'],
+            commonMistakes: ['○ 犯人に相違ない / × 犯人が相違ない → 用「に」不用「が」'],
+        },
+    },
+    // ━━━ に決まっている (must be / surely - additional) ━━━
+    {
+        id: 'g_n2_276', category: 'grammar', level: 'N2', tags: ['certainty', 'conviction'],
+        stem: 'こんなに練習{れんしゅう}したんだから、明日{あした}の試合{しあい}は勝{か}つ___。',
+        stemZh: '練習了這麼多，明天的比賽肯定會贏。',
+        options: [
+            { text: 'はずだ', reason: '「はずだ」表示「應該…」，確信度不如「に決まっている」。' },
+            { text: 'だろう', reason: '「だろう」表示「大概…」，確信度較低。' },
+            { text: 'に決まっている', reason: '正確！「に決まっている」表示「肯定…」，帶有強烈主觀確信。' },
+            { text: 'かもしれない', reason: '「かもしれない」表示「也許…」，完全不確定。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「に決まっている」表示說話者的強烈主觀確信',
+            analysis: '「に決まっている」用於表達說話者非常確信某事，語氣較口語，帶有「這是理所當然的」的感覺。',
+            comparisons: ['に決まっている：肯定…（口語確信）', 'はずだ：應該…（推理判斷）', 'に違いない：一定…（書面確信）'],
+            commonMistakes: ['○ 勝つに決まっている / × 勝ったに決まっている → 用辭書形表示未來確信'],
+        },
+    },
+    // ━━━ まい (will not / probably not - additional) ━━━
+    {
+        id: 'g_n2_277', category: 'grammar', level: 'N2', tags: ['negative_volition', 'determination'],
+        stem: 'もう二度{にど}とあんな危{あぶ}ないことはする___と心{こころ}に誓{ちか}った。',
+        stemZh: '在心裡發誓再也不做那麼危險的事。',
+        options: [
+            { text: 'まい', reason: '正確！「まい」表示「絕不再…」，強烈的否定意志。' },
+            { text: 'ない', reason: '「ない」是一般否定，不夠強烈。' },
+            { text: 'ものか', reason: '「ものか」表示「絕不…」，語氣不同。' },
+            { text: 'はずがない', reason: '「はずがない」表示「不可能…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「まい」表示強烈的否定意志',
+            analysis: '「まい」有兩個用法：(1)否定意志「絕不再…」、(2)否定推量「大概不會…」。此題為第一種，表示堅定的決心。',
+            comparisons: ['まい：絕不再…（否定決心）', 'ないだろう：大概不會…（推測）', 'ないつもりだ：不打算…（計畫）'],
+            commonMistakes: ['○ するまい / × しまい → 「する」的まい形是「するまい」或「すまい」'],
+        },
+    },
+    // ━━━ はおろか (let alone - additional) ━━━
+    {
+        id: 'g_n2_278', category: 'grammar', level: 'N2', tags: ['extreme', 'emphasis'],
+        stem: '漢字{かんじ}___、ひらがなさえ読{よ}めない。',
+        stemZh: '別說漢字了，連平假名都不會讀。',
+        options: [
+            { text: 'ばかりか', reason: '「ばかりか」表示「不僅…而且」，語氣不夠強烈。' },
+            { text: 'はもちろん', reason: '「はもちろん」表示「不用說…」，語氣不夠極端。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語意不同。' },
+            { text: 'はおろか', reason: '正確！「はおろか」表示「別說…了」，連更基本的都做不到。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+            keyPoint: '「はおろか」表示「別說A了，連B都…」',
+            analysis: '「はおろか」用於提出一個高標準的事物（A），然後表示連低標準的事物（B）都無法達到。後面常搭配「さえ」「すら」「も」。',
+            comparisons: ['はおろか：別說…了（極端否定）', 'はもちろん：不用說…（正面列舉）', 'どころか：豈止…（超出預期）'],
+            commonMistakes: ['○ 漢字はおろか、ひらがなさえ / × 漢字がおろか → 用「は」不用「が」'],
+        },
+    },
+    // ━━━ どころか (far from / let alone - additional) ━━━
+    {
+        id: 'g_n2_279', category: 'grammar', level: 'N2', tags: ['extreme', 'contrast'],
+        stem: '手伝{てつだ}う___、邪魔{じゃま}ばかりしている。',
+        stemZh: '別說幫忙了，盡是在搗亂。',
+        options: [
+            { text: 'ばかりか', reason: '「ばかりか」表示「不僅…而且」，方向不同。' },
+            { text: 'のみならず', reason: '「のみならず」表示「不僅…」，方向不同。' },
+            { text: 'どころか', reason: '正確！「どころか」表示「豈止…/哪裡談得上…」，實際情況與預期完全相反。' },
+            { text: 'はもちろん', reason: '「はもちろん」表示「不用說…」，方向不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「どころか」表示實際情況遠遠超出或低於預期',
+            analysis: '「どころか」用於否定前者，強調實際情況與所提到的完全不同，甚至是相反的方向。',
+            comparisons: ['どころか：豈止…（實際相反）', 'はおろか：別說…了（連基本都不行）', 'ばかりか：不僅…而且（同方向遞進）'],
+            commonMistakes: ['○ 手伝うどころか / × 手伝いどころか → 動詞用辭書形'],
+        },
+    },
+    // ━━━ に沿って (along / according to - additional) ━━━
+    {
+        id: 'g_n2_280', category: 'grammar', level: 'N2', tags: ['accordance', 'following'],
+        stem: '計画{けいかく}___、プロジェクトを進{すす}めてください。',
+        stemZh: '請按照計畫推進專案。',
+        options: [
+            { text: 'に基づいて', reason: '「に基づいて」表示「基於…」，較強調根據。' },
+            { text: 'に沿って', reason: '正確！「に沿って」表示「按照…」，順著方針或計畫進行。' },
+            { text: 'に応じて', reason: '「に応じて」表示「根據…而變化」，語感不同。' },
+            { text: 'をもとに', reason: '「をもとに」表示「以…為基礎」，較靈活。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「に沿って」表示按照方針或計畫行動',
+            analysis: '「に沿って」除了物理意義上的「沿著…」外，也可以表示按照某個方針、計畫、期待等行動。',
+            comparisons: ['に沿って：按照…（順著方向）', 'に基づいて：基於…（嚴格依據）', 'に従って：遵循…（服從指示）'],
+            commonMistakes: ['○ 計画に沿って / × 計画を沿って → 用「に」不用「を」'],
+        },
+    },
+    // ━━━ に越したことはない (best to / nothing better - additional) ━━━
+    {
+        id: 'g_n2_281', category: 'grammar', level: 'N2', tags: ['advice', 'ideal'],
+        stem: '健康{けんこう}のためには、早寝早起{はやねはやお}きする___。',
+        stemZh: '為了健康，早睡早起是最好不過的了。',
+        options: [
+            { text: 'に限る', reason: '「に限る」也表示「最好是…」，但語氣不同。' },
+            { text: 'に越したことはない', reason: '正確！「に越したことはない」表示「…再好不過了」。' },
+            { text: 'べきだ', reason: '「べきだ」表示「應該…」，語氣較強制。' },
+            { text: 'ものだ', reason: '「ものだ」表示「應該…」或「本來就是…」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「に越したことはない」表示最好不過、最理想的選擇',
+            analysis: '「に越したことはない」用於表示某件事是最理想的選擇，但暗示不一定能做到。語氣溫和。',
+            comparisons: ['に越したことはない：…再好不過了（理想但不強制）', 'に限る：最好是…（推薦）', 'べきだ：應該…（強制）'],
+            commonMistakes: ['○ 早寝早起きするに越したことはない / × 早寝早起きに越したことはない → 動詞用辭書形'],
+        },
+    },
+    // ━━━ に限る (nothing beats / best to - additional) ━━━
+    {
+        id: 'g_n2_282', category: 'grammar', level: 'N2', tags: ['recommendation', 'best'],
+        stem: '暑{あつ}い日{ひ}はビールを飲{の}む___。',
+        stemZh: '大熱天最好就是喝啤酒。',
+        options: [
+            { text: 'に限る', reason: '正確！「に限る」表示「最好是…」，強烈推薦。' },
+            { text: 'にかぎらない', reason: '「にかぎらない」表示「不限於…」，語意相反。' },
+            { text: 'に越したことはない', reason: '「に越したことはない」表示「…再好不過了」，但語氣不同。' },
+            { text: 'ことだ', reason: '「ことだ」表示建議「應該…」，語氣不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に限る」表示某個選擇是最好的',
+            analysis: '「に限る」用於表達說話者認為某件事是最好的選擇，帶有強烈的個人推薦語氣。',
+            comparisons: ['に限る：最好是…（推薦）', 'に越したことはない：…再好不過了（理想）'],
+            commonMistakes: ['○ ビールを飲むに限る / ○ ビールに限る → 動詞或名詞都可以'],
+        },
+    },
+    // ━━━ にかけては (when it comes to - additional context) ━━━
+    {
+        id: 'g_n2_283', category: 'grammar', level: 'N2', tags: ['specialty', 'pride'],
+        stem: '数学{すうがく}___、クラスで一番{いちばん}の成績{せいせき}を誇{ほこ}っている。',
+        stemZh: '說到數學，在班上擁有第一名的成績。',
+        options: [
+            { text: 'について', reason: '「について」表示「關於…」，不帶自信語氣。' },
+            { text: 'にかけては', reason: '正確！「にかけては」表示「說到…方面」，暗示擅長。' },
+            { text: 'に対して', reason: '「に対して」表示「對於…」，語意不同。' },
+            { text: 'において', reason: '「において」表示「在…方面」，太正式且不帶自信語氣。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「にかけては」後面一定搭配正面評價',
+            analysis: '「にかけては」的一大特徵是後面必定接正面的評價或自信的內容，不能接負面內容。',
+            comparisons: ['にかけては：說到…方面（自信/擅長）', 'に関しては：關於…（中性）'],
+            commonMistakes: ['○ 数学にかけては一番だ / × 数学にかけては苦手だ → 後面不能接負面評價'],
+        },
+    },
+    // ━━━ 反面 (on the other hand - additional) ━━━
+    {
+        id: 'g_n2_284', category: 'grammar', level: 'N2', tags: ['contrast', 'two_sides'],
+        stem: '彼{かれ}は仕事{しごと}に厳{きび}しい___、部下{ぶか}の面倒見{めんどうみ}がとてもいい。',
+        stemZh: '他工作方面很嚴格，另一方面對下屬很照顧。',
+        options: [
+            { text: '反面', reason: '正確！「反面」表示「另一方面」，同一事物的兩面。' },
+            { text: '一方で', reason: '「一方で」也表示「另一方面」，但可以是不同主語。' },
+            { text: 'にもかかわらず', reason: '「にもかかわらず」表示「儘管…」，語感不同。' },
+            { text: 'くせに', reason: '「くせに」表示「明明…卻…」，帶有責備。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「反面」強調同一人或物的兩個對比特質',
+            analysis: '「反面」用於描述同一個人或事物具有兩個對立的特質，強調事物的兩面性。',
+            comparisons: ['反面：另一方面（同一主語兩面性）', '一方で：另一方面（可以不同主語）'],
+            commonMistakes: ['○ 厳しい反面 / × 厳しいの反面 → 形容詞直接接「反面」'],
+        },
+    },
+    // ━━━ を契機に (taking the opportunity - additional) ━━━
+    {
+        id: 'g_n2_285', category: 'grammar', level: 'N2', tags: ['trigger', 'turning_point'],
+        stem: '大地震{だいじしん}___、防災{ぼうさい}意識{いしき}が高{たか}まった。',
+        stemZh: '以大地震為契機，防災意識提高了。',
+        options: [
+            { text: 'をきっかけに', reason: '「をきっかけに」也可以，但「を契機に」更書面正式。' },
+            { text: 'を契機に', reason: '正確！「を契機に」表示「以…為契機」，書面正式語。' },
+            { text: 'を通じて', reason: '「を通じて」表示「透過…」，語意不同。' },
+            { text: 'をもとに', reason: '「をもとに」表示「以…為基礎」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「を契機に」是「をきっかけに」的書面語',
+            analysis: '「を契機に」與「をきっかけに」意思相同，但「を契機に」更適合正式場合，常用於新聞報導。',
+            comparisons: ['を契機に：以…為契機（書面正式）', 'をきっかけに：以…為契機（一般）', 'がきっかけで：以…為契機（口語）'],
+            commonMistakes: ['○ 大地震を契機に / × 大地震が契機に → 用「を」不用「が」'],
+        },
+    },
+    // ━━━ に際して (on the occasion of - additional) ━━━
+    {
+        id: 'g_n2_286', category: 'grammar', level: 'N2', tags: ['occasion', 'formal'],
+        stem: '海外{かいがい}出張{しゅっちょう}___、パスポートの有効期限{ゆうこうきげん}を確認{かくにん}しておいてください。',
+        stemZh: '在出國出差之際，請事先確認護照的有效期限。',
+        options: [
+            { text: 'の前に', reason: '「の前に」表示「在…之前」，太一般。' },
+            { text: 'に際して', reason: '正確！「に際して」表示「在…之際」，正式場合。' },
+            { text: 'のために', reason: '「のために」表示「為了…」，語意不同。' },
+            { text: 'の結果', reason: '「の結果」表示「結果…」，語意完全不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「に際して」用於正式場合的「在…之際」',
+            analysis: '「に際して」是書面語，用於描述某個正式或重要的場合。與「にあたって」意思相近。',
+            comparisons: ['に際して：在…之際（正式）', 'にあたって：在…之際（重要場合）', 'の時に：在…的時候（一般）'],
+            commonMistakes: ['○ 出張に際して / ○ 出張に際し → 兩種都可以'],
+        },
+    },
+    // ━━━ ざるを得ない (have no choice but to - additional) ━━━
+    {
+        id: 'g_n2_287', category: 'grammar', level: 'N2', tags: ['obligation', 'no_choice'],
+        stem: '証拠{しょうこ}が揃{そろ}った以上{いじょう}、事実{じじつ}を認{みと}め___。',
+        stemZh: '既然證據都齊了，不得不承認事實。',
+        options: [
+            { text: 'ざるを得ない', reason: '正確！「ざるを得ない」表示「不得不…」，別無選擇。' },
+            { text: 'わけにはいかない', reason: '「わけにはいかない」表示「不能…」，方向不同。' },
+            { text: 'ことにする', reason: '「ことにする」表示「決定…」，是主動選擇。' },
+            { text: 'べきだ', reason: '「べきだ」表示「應該…」，是義務建議。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ざるを得ない」表示迫不得已的行動',
+            analysis: '「ざるを得ない」用於表示雖然不情願但不得不這樣做，強調被迫的感覺。',
+            comparisons: ['ざるを得ない：不得不…（被迫）', 'なければならない：必須…（義務）', 'よりほかない：只好…（別無選擇）'],
+            commonMistakes: ['○ 認めざるを得ない / × 認めないざるを得ない → 未然形接「ざる」'],
+        },
+    },
+    // ━━━ きり (since / only - additional) ━━━
+    {
+        id: 'g_n2_288', category: 'grammar', level: 'N2', tags: ['continuation', 'limitation'],
+        stem: '彼{かれ}は去年{きょねん}国{くに}に帰{かえ}った___、連絡{れんらく}がない。',
+        stemZh: '他去年回國之後就沒有消息了。',
+        options: [
+            { text: 'まま', reason: '「まま」表示「保持…的狀態」，語感不同。' },
+            { text: 'きり', reason: '正確！「きり」表示「自從…以後就一直沒…」。' },
+            { text: 'ばかり', reason: '「ばかり」表示「盡是…」，語意不同。' },
+            { text: 'だけ', reason: '「だけ」表示「只有…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「きり」表示自從某個動作後就一直沒有後續',
+            analysis: '「きり」用於表示做了某個動作之後，預期的後續變化沒有發生，一直維持著某種狀態。',
+            comparisons: ['きり：自從…就沒…（缺乏後續）', 'まま：保持…的狀態（不變化）'],
+            commonMistakes: ['○ 帰ったきり / × 帰るきり → 前面用た形'],
+        },
+    },
+    // ━━━ がたい (difficult to - additional) ━━━
+    {
+        id: 'g_n2_289', category: 'grammar', level: 'N2', tags: ['difficulty', 'impossibility'],
+        stem: '彼{かれ}の行動{こうどう}は理解{りかい}し___。',
+        stemZh: '他的行為難以理解。',
+        options: [
+            { text: 'にくい', reason: '「にくい」也表示「難以…」，但較口語。' },
+            { text: 'がたい', reason: '正確！「がたい」表示「難以…」，語氣更強，近乎不可能。' },
+            { text: 'かねる', reason: '「かねる」表示「難以…」，較婉轉。' },
+            { text: 'づらい', reason: '「づらい」表示「做起來困難」，強調物理或心理障礙。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「がたい」表示幾乎不可能做到',
+            analysis: '「がたい」比「にくい」語氣更強，表示近乎不可能的困難。常用詞：信じがたい、理解しがたい、許しがたい。',
+            comparisons: ['がたい：難以…（近乎不可能）', 'にくい：不容易…（一般困難）', 'かねる：難以…（婉轉拒絕）'],
+            commonMistakes: ['○ 理解しがたい / × 理解がたい → 用動詞連用形（ます形去ます）'],
+        },
+    },
+    // ━━━ っこない (no chance of - additional) ━━━
+    {
+        id: 'g_n2_290', category: 'grammar', level: 'N2', tags: ['impossibility', 'informal'],
+        stem: 'そんな難{むずか}しい試験{しけん}、受{う}かり___よ。',
+        stemZh: '那麼難的考試，絕不可能考上啦。',
+        options: [
+            { text: 'はしない', reason: '「はしない」表示「不會…」，語氣較溫和。' },
+            { text: 'っこない', reason: '正確！「っこない」表示「絕對不可能…」，口語強烈否定。' },
+            { text: 'わけがない', reason: '「わけがない」也表示「不可能…」，但用法不同。' },
+            { text: 'がたい', reason: '「がたい」表示「難以…」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「っこない」是口語中最強烈的不可能表達',
+            analysis: '「っこない」用動詞連用形（ます形去ます）接續，表示「絕對不可能…」，非常口語化。',
+            comparisons: ['っこない：絕不可能…（口語最強）', 'わけがない：不可能…（較一般）', 'はずがない：不應該…（推理判斷）'],
+            commonMistakes: ['○ 受かりっこない / × 受かるっこない → 用連用形不用辭書形'],
+        },
+    },
+    // ━━━ 恐れがある (risk of - additional) ━━━
+    {
+        id: 'g_n2_291', category: 'grammar', level: 'N2', tags: ['risk', 'warning'],
+        stem: '台風{たいふう}の影響{えいきょう}で、明日{あした}の便{びん}が欠航{けっこう}する___。',
+        stemZh: '受颱風影響，明天的航班有停飛的可能。',
+        options: [
+            { text: 'かもしれない', reason: '「かもしれない」也表示可能性，但不帶「危險」的語感。' },
+            { text: '恐れがある', reason: '正確！「恐れがある」表示「有…的危險/可能性」，用於負面預測。' },
+            { text: 'はずだ', reason: '「はずだ」表示「應該…」，確信度過高。' },
+            { text: 'に違いない', reason: '「に違いない」表示「肯定…」，確信度過高。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「恐れがある」用於正式場合的風險警告',
+            analysis: '「恐れがある」是正式用語，用於新聞、公告等場合警告某種不好的事情可能發生。',
+            comparisons: ['恐れがある：有…的危險（正式警告）', 'かもしれない：也許…（一般推測）', 'かねない：有可能…（擔心）'],
+            commonMistakes: ['○ 欠航する恐れがある / × 欠航の恐れがある → 動詞用辭書形，名詞用「の」'],
+        },
+    },
+    // ━━━ かねない (might - additional) ━━━
+    {
+        id: 'g_n2_292', category: 'grammar', level: 'N2', tags: ['possibility', 'worry'],
+        stem: 'このまま放{ほう}っておくと、大{おお}きな事故{じこ}に繋{つな}がり___。',
+        stemZh: '如果就這樣放著不管，有可能會導致重大事故。',
+        options: [
+            { text: 'かねない', reason: '正確！「かねない」表示「有可能…（不好的事）」。' },
+            { text: 'かねる', reason: '「かねる」表示「難以…」，語意完全不同。' },
+            { text: '得ない', reason: '「得ない」表示「不可能…」，語意不同。' },
+            { text: 'がたい', reason: '「がたい」表示「難以…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「かねない」表示不好的事情有可能發生',
+            analysis: '「かねない」表示壞事有可能發生，帶有擔心和警告的語氣。注意與「かねる」（難以做到）的區別。',
+            comparisons: ['かねない：有可能…（壞事，擔心）', 'かねる：難以…（婉轉拒絕）', '恐れがある：有…的危險（更正式）'],
+            commonMistakes: ['○ 繋がりかねない / × 繋がるかねない → 用連用形不用辭書形'],
+        },
+    },
+    // ━━━ 得る（える/うる）(possible - additional) ━━━
+    {
+        id: 'g_n2_293', category: 'grammar', level: 'N2', tags: ['possibility', 'potential'],
+        stem: 'そのようなミスは誰{だれ}にでも起{お}こり___ことだ。',
+        stemZh: '那種錯誤是任何人都有可能發生的事。',
+        options: [
+            { text: '得る', reason: '正確！「得る」表示「有可能…」，表示客觀上可能發生。' },
+            { text: '得ない', reason: '「得ない」表示「不可能…」，語意相反。' },
+            { text: 'かねない', reason: '「かねない」也表示可能，但帶有負面擔心。' },
+            { text: 'がたい', reason: '「がたい」表示「難以…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「得る」表示客觀上有發生的可能性',
+            analysis: '「得る（うる/える）」表示某事在客觀上是有可能發生的。讀音可以是「うる」或「える」。',
+            comparisons: ['得る（うる）：有可能…（客觀可能性）', '得ない（えない）：不可能…（否定）', 'かねない：有可能…（擔心壞事）'],
+            commonMistakes: ['○ 起こり得る / × 起こる得る → 用連用形接「得る」'],
+        },
+    },
+    // ━━━ かねる (cannot bring oneself to - additional) ━━━
+    {
+        id: 'g_n2_294', category: 'grammar', level: 'N2', tags: ['inability', 'polite_refusal'],
+        stem: 'その件{けん}に関{かん}しては、お答{こた}えし___。',
+        stemZh: '關於那件事，恕我無法回答。',
+        options: [
+            { text: 'かねます', reason: '正確！「かねます」是「かねる」的禮貌形，表示「難以…」，婉轉拒絕。' },
+            { text: 'できません', reason: '「できません」也表示「無法…」，但不夠婉轉。' },
+            { text: 'いたしません', reason: '「いたしません」表示「不做…」，太直接。' },
+            { text: 'かねません', reason: '「かねません」是「かねない」的禮貌形，表示「有可能…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「かねます」用於商務場合的婉轉拒絕',
+            analysis: '「かねる/かねます」是非常有禮貌的拒絕表達，常用於客服、商務等需要婉轉的場合。',
+            comparisons: ['かねます：難以…（婉轉拒絕）', 'できません：無法…（直接拒絕）', 'いたしかねます：難以…（更鄭重）'],
+            commonMistakes: ['○ お答えしかねます / × お答えかねます → 用「し」接續'],
+        },
+    },
+    // ━━━ っぱなし (left as is - additional) ━━━
+    {
+        id: 'g_n2_295', category: 'grammar', level: 'N2', tags: ['neglect', 'criticism'],
+        stem: '水道{すいどう}を出{だ}し___にしないでください。',
+        stemZh: '請不要讓水龍頭一直開著不關。',
+        options: [
+            { text: 'まま', reason: '「まま」也表示「保持…的狀態」，但不帶批評語氣。' },
+            { text: 'っぱなし', reason: '正確！「っぱなし」表示「一直…不管」，帶有批評語氣。' },
+            { text: 'っきり', reason: '「っきり」表示「自從…以後」，語意不同。' },
+            { text: 'がち', reason: '「がち」表示「容易…/動不動就…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「っぱなし」表示做了某事後不收拾、不管',
+            analysis: '「っぱなし」帶有批評或不滿的語氣，表示某個動作的結果一直被放置不管。常用於日常抱怨。',
+            comparisons: ['っぱなし：一直…不管（批評）', 'まま：保持…的狀態（中性）'],
+            commonMistakes: ['○ 出しっぱなし / × 出すっぱなし → 用連用形不用辭書形'],
+        },
+    },
+    // ━━━ ことだから (because of someone's character) - additional ━━━
+    {
+        id: 'g_n2_296', category: 'grammar', level: 'N2', tags: ['character', 'expectation'],
+        stem: '真面目{まじめ}な田中{たなか}さんの___、きっと時間{じかん}通{どお}りに来{く}るだろう。',
+        stemZh: '因為田中是個認真的人，一定會準時來的吧。',
+        options: [
+            { text: 'ことだから', reason: '正確！「ことだから」表示「因為是（那樣性格的）…」。' },
+            { text: 'ことから', reason: '「ことから」表示「由於…的緣故」，不強調性格。' },
+            { text: 'ことだ', reason: '「ことだ」表示建議「應該…」，語意不同。' },
+            { text: 'ことに', reason: '「ことに」表示「令人…的是」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ことだから」根據某人一貫的性格來推測',
+            analysis: '「ことだから」用於根據某人的性格、習慣或一貫表現來推測他的行為。前面通常接「人＋の」。',
+            comparisons: ['ことだから：因為是（那樣的人）…（性格推測）', 'ことから：由於…的緣故（一般原因）'],
+            commonMistakes: ['○ 田中さんのことだから / × 田中さんがことだから → 用「の」不用「が」'],
+        },
+    },
+    // ━━━ ものではない (should not - additional) ━━━
+    {
+        id: 'g_n2_297', category: 'grammar', level: 'N2', tags: ['prohibition', 'moral'],
+        stem: '人{ひと}の悪口{わるくち}を言{い}う___。',
+        stemZh: '不應該說別人的壞話。',
+        options: [
+            { text: 'ことだ', reason: '「ことだ」表示建議「應該…」，語意方向不同。' },
+            { text: 'ものだ', reason: '「ものだ」表示「本來就是…」或感嘆，語意不同。' },
+            { text: 'ものではない', reason: '正確！「ものではない」表示「不應該…」，道德層面的勸誡。' },
+            { text: 'わけがない', reason: '「わけがない」表示「不可能…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「ものではない」表示從道德或常識上不應該做的事',
+            analysis: '「ものではない」用於表達從社會常識或道德角度來看不應該做的事情，帶有教誨的語氣。',
+            comparisons: ['ものではない：不應該…（道德勸誡）', 'てはいけない：不可以…（禁止命令）', 'べきではない：不該…（義務判斷）'],
+            commonMistakes: ['○ 言うものではない / × 言ったものではない → 用辭書形表示一般性勸誡'],
+        },
+    },
+    // ━━━ ものなら (if possible - additional) ━━━
+    {
+        id: 'g_n2_298', category: 'grammar', level: 'N2', tags: ['hypothetical', 'wish'],
+        stem: 'やり直{なお}せる___、もう一度{いちど}大学{だいがく}に入{はい}りたい。',
+        stemZh: '如果能重來的話，想再上一次大學。',
+        options: [
+            { text: 'ものなら', reason: '正確！「ものなら」表示「如果能…的話」，假設難以實現的事。' },
+            { text: 'としたら', reason: '「としたら」表示「如果…的話」，假設較一般。' },
+            { text: 'ならば', reason: '「ならば」表示「如果…」，較正式但不帶「難以實現」的語感。' },
+            { text: 'とすれば', reason: '「とすれば」表示「如果…的話」，較一般。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ものなら」假設幾乎不可能實現的事',
+            analysis: '「ものなら」用於假設說話者非常想做但知道很難或不可能實現的事情，帶有願望和遺憾。',
+            comparisons: ['ものなら：如果能…的話（難以實現）', 'なら：如果…（一般假設）', 'としたら：假如…（較中性）'],
+            commonMistakes: ['○ やり直せるものなら / × やり直すものなら → 用可能形表示「如果能…」'],
+        },
+    },
+    // ━━━ ことだ (should / ought to - additional) ━━━
+    {
+        id: 'g_n2_299', category: 'grammar', level: 'N2', tags: ['advice', 'recommendation'],
+        stem: '健康{けんこう}を維持{いじ}したいなら、毎日{まいにち}運動{うんどう}する___。',
+        stemZh: '如果想維持健康，就應該每天運動。',
+        options: [
+            { text: 'べきだ', reason: '「べきだ」也表示「應該…」，但語氣更強制。' },
+            { text: 'ことだ', reason: '正確！「ことだ」表示「應該…」，溫和的建議。' },
+            { text: 'ものだ', reason: '「ものだ」表示常理或感嘆，不是直接建議。' },
+            { text: 'わけだ', reason: '「わけだ」表示「難怪…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ことだ」用於給予溫和的建議或忠告',
+            analysis: '「ことだ」用於表達建議或忠告，語氣比「べきだ」溫和，常用於年長者對年輕人的勸告。',
+            comparisons: ['ことだ：應該…（溫和建議）', 'べきだ：應該…（強烈義務）', 'ほうがいい：最好…（一般建議）'],
+            commonMistakes: ['○ 運動することだ / × 運動するのことだ → 動詞辭書形直接接「ことだ」'],
+        },
+    },
+    // ━━━ ものだ (how ~ / used to - additional) ━━━
+    {
+        id: 'g_n2_300', category: 'grammar', level: 'N2', tags: ['nostalgia', 'emotion'],
+        stem: '子{こ}どもの頃{ころ}はよくこの川{かわ}で遊{あそ}んだ___。',
+        stemZh: '小時候經常在這條河邊玩耍啊。',
+        options: [
+            { text: 'ことだ', reason: '「ことだ」表示建議「應該…」，語意不同。' },
+            { text: 'わけだ', reason: '「わけだ」表示「難怪…」，語意不同。' },
+            { text: 'ものだ', reason: '正確！「ものだ」表示對過去的感嘆和懷念。' },
+            { text: 'はずだ', reason: '「はずだ」表示「應該…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「ものだ」的懷舊用法',
+            analysis: '「ものだ」接在過去式後表示對過去的懷念和感嘆，帶有「以前常常…啊」的語感。',
+            comparisons: ['ものだ（過去）：以前常常…啊（懷舊）', 'ものだ（現在）：本來就是…/真是…啊（常理/感嘆）'],
+            commonMistakes: ['○ 遊んだものだ / × 遊ぶものだ → 懷舊用法前面用た形'],
+        },
+    },
+    // ━━━ ことか (how ~! - additional) ━━━
+    {
+        id: 'g_n2_301', category: 'grammar', level: 'N2', tags: ['emotion', 'exclamation'],
+        stem: '合格{ごうかく}の知{し}らせを聞{き}いて、どれほど嬉{うれ}しかった___。',
+        stemZh: '聽到合格的消息，不知道有多開心啊。',
+        options: [
+            { text: 'ことか', reason: '正確！「ことか」表示「多麼…啊！」，強烈的感嘆。' },
+            { text: 'ことだ', reason: '「ことだ」表示建議，語意不同。' },
+            { text: 'ものだ', reason: '「ものだ」表示感嘆但語感不同。' },
+            { text: 'わけだ', reason: '「わけだ」表示「難怪…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ことか」表示強烈的感嘆',
+            analysis: '「ことか」常與「どれほど」「何度」「どんなに」等疑問詞搭配，表示程度之深難以言喻。',
+            comparisons: ['ことか：多麼…啊（深刻感嘆）', 'ものだ：真是…啊（一般感嘆）'],
+            commonMistakes: ['○ どれほど嬉しかったことか / × どれほど嬉しいことか → 常用過去形'],
+        },
+    },
+    // ━━━ わけだ (no wonder / that's why) ━━━
+    {
+        id: 'g_n2_302', category: 'grammar', level: 'N2', tags: ['reasoning', 'understanding'],
+        stem: '彼{かれ}は十年{じゅうねん}もフランスに住{す}んでいたのか。フランス語{ご}が上手{じょうず}な___。',
+        stemZh: '他在法國住了十年啊。難怪法語這麼好。',
+        options: [
+            { text: 'はずだ', reason: '「はずだ」表示「應該…」，推理語感不同。' },
+            { text: 'ものだ', reason: '「ものだ」表示感嘆或常理，不表示「難怪」。' },
+            { text: 'わけだ', reason: '正確！「わけだ」表示「難怪…」，理解了原因後的感嘆。' },
+            { text: 'ことだ', reason: '「ことだ」表示建議，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「わけだ」表示了解原因後的恍然大悟',
+            analysis: '「わけだ」用於得知某個事實後，理解了之前不明白的事情的原因，表示「原來如此/難怪…」。',
+            comparisons: ['わけだ：難怪…（理解原因）', 'はずだ：應該…（推理判斷）'],
+            commonMistakes: ['○ 上手なわけだ / × 上手のわけだ → な形容詞用「な」接續'],
+        },
+    },
+    // ━━━ にしても (even if - additional context) ━━━
+    {
+        id: 'g_n2_303', category: 'grammar', level: 'N2', tags: ['concession', 'minimum'],
+        stem: '反対{はんたい}する___、もう少{すこ}し穏{おだ}やかな言{い}い方{かた}があるだろう。',
+        stemZh: '即使要反對，也應該有更溫和的說法吧。',
+        options: [
+            { text: 'にしても', reason: '正確！「にしても」表示「即使…也…」，讓步條件。' },
+            { text: 'としても', reason: '「としても」也可以表示「即使…」，但語感略有不同。' },
+            { text: 'にせよ', reason: '「にせよ」也可以，但更書面。' },
+            { text: 'にしたら', reason: '「にしたら」表示「站在…的立場」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「にしても」在此表示讓步條件',
+            analysis: '「にしても」表示即使承認前項的事實，但後項仍然有不同的看法或要求。',
+            comparisons: ['にしても：即使…也（讓步）', 'としても：即使…也（假設性更強）', 'にせよ：即便…也（書面）'],
+            commonMistakes: ['○ 反対するにしても / × 反対にしても → 動詞用辭書形接續'],
+        },
+    },
+    // ━━━ たところで (even if one does - additional) ━━━
+    {
+        id: 'g_n2_304', category: 'grammar', level: 'N2', tags: ['futility', 'pessimism'],
+        stem: '今{いま}さら謝{あやま}った___、許{ゆる}してもらえないだろう。',
+        stemZh: '事到如今即使道歉，也不會被原諒吧。',
+        options: [
+            { text: 'としても', reason: '「としても」表示「即使…」，但不帶「徒勞」的語感。' },
+            { text: 'にしても', reason: '「にしても」表示「即使…」，不強調徒勞感。' },
+            { text: 'ところで', reason: '正確！「たところで」表示「即使做了…也（沒用）」。' },
+            { text: 'からには', reason: '「からには」表示「既然…就…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「たところで」強調做了也是白費力氣',
+            analysis: '「たところで」用於表示即使做了某事，結果也不會有什麼改變或好轉，帶有悲觀、徒勞的語氣。',
+            comparisons: ['たところで：即使做了…也（徒勞）', 'としても：即使…也（一般讓步）'],
+            commonMistakes: ['○ 謝ったところで / × 謝るところで → 前面用た形'],
+        },
+    },
+    // ━━━ にせよ (even if - additional) ━━━
+    {
+        id: 'g_n2_305', category: 'grammar', level: 'N2', tags: ['concession', 'formal'],
+        stem: 'どんな理由{りゆう}がある___、暴力{ぼうりょく}は許{ゆる}されない。',
+        stemZh: '不管有什麼理由，暴力都是不被允許的。',
+        options: [
+            { text: 'にしても', reason: '「にしても」也可以，但不如「にせよ」書面正式。' },
+            { text: 'としても', reason: '「としても」表示「即使…」，用法不同。' },
+            { text: 'にせよ', reason: '正確！「にせよ」表示「即便…也…」，書面語。' },
+            { text: 'ところで', reason: '「ところで」需要用た形，接續不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「にせよ」是較正式的讓步表達',
+            analysis: '「にせよ」與「にしても」意思相同，但更適合書面語和正式場合。可以與「にしろ」互換。',
+            comparisons: ['にせよ：即便…也（書面正式）', 'にしても：即使…也（口語一般）', 'にしろ：即使…也（口語）'],
+            commonMistakes: ['○ 理由があるにせよ / × 理由のにせよ → 動詞或形容詞接續'],
+        },
+    },
+    // ━━━ ずにはいられない (cannot help but - additional) ━━━
+    {
+        id: 'g_n2_306', category: 'grammar', level: 'N2', tags: ['involuntary', 'emotion'],
+        stem: 'あの感動的{かんどうてき}な映画{えいが}を見{み}たら、泣{な}か___。',
+        stemZh: '看了那部感人的電影，忍不住就哭了。',
+        options: [
+            { text: 'ずにはいられない', reason: '正確！「ずにはいられない」表示「忍不住…」。' },
+            { text: 'ないわけにはいかない', reason: '「ないわけにはいかない」表示「不能不…」，是義務感。' },
+            { text: 'なければならない', reason: '「なければならない」表示「必須…」，語意不同。' },
+            { text: 'ないことはない', reason: '「ないことはない」表示「並非不…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ずにはいられない」表示無法控制的情感反應',
+            analysis: '「ずにはいられない」與「ないではいられない」同義，用於表示情感上無法抑制自己。注意「する」變「せずに」。',
+            comparisons: ['ずにはいられない：忍不住…（書面）', 'ないではいられない：忍不住…（口語）'],
+            commonMistakes: ['○ 泣かずにはいられない / × 泣かないずにはいられない → 用未然形接「ず」'],
+        },
+    },
+    // ━━━ に限って (particularly - additional) ━━━
+    {
+        id: 'g_n2_307', category: 'grammar', level: 'N2', tags: ['irony', 'frustration'],
+        stem: '傘{かさ}を持{も}っていない日{ひ}___雨{あめ}が降{ふ}る。',
+        stemZh: '偏偏沒帶傘的日子就下雨。',
+        options: [
+            { text: 'にかぎって', reason: '正確！「に限って」表示「偏偏…」，強調不巧。' },
+            { text: 'にかぎらず', reason: '「に限らず」表示「不限於…」，語意相反。' },
+            { text: 'にかぎり', reason: '「に限り」表示「僅限於…」，語意不同。' },
+            { text: 'にかぎる', reason: '「に限る」表示「最好是…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に限って」表示偏偏在最不想的時候發生',
+            analysis: '「に限って」用於表達諷刺或無奈，表示偏偏在最不希望的情況下發生了不好的事。',
+            comparisons: ['に限って：偏偏…（無奈諷刺）', 'に限り：僅限…（限定條件）', 'に限る：最好是…（推薦）'],
+            commonMistakes: ['○ 傘を持っていない日に限って / × 傘を持たない日が限って → 用「に」不用「が」'],
+        },
+    },
+    // ━━━ に関わる (related to / affects - additional) ━━━
+    {
+        id: 'g_n2_308', category: 'grammar', level: 'N2', tags: ['involvement', 'seriousness'],
+        stem: 'これは会社{かいしゃ}の信用{しんよう}___問題{もんだい}だ。',
+        stemZh: '這是關係到公司信譽的問題。',
+        options: [
+            { text: 'に関する', reason: '「に関する」表示「關於…」，不強調嚴重性。' },
+            { text: 'にかかわる', reason: '正確！「にかかわる」表示「關係到…/涉及…」，強調影響的嚴重性。' },
+            { text: 'についての', reason: '「についての」表示「關於…的」，太一般。' },
+            { text: 'における', reason: '「における」表示「在…方面的」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「にかかわる」強調事情的嚴重性和影響',
+            analysis: '「にかかわる」用於表示某件事關係到重要的事物（如生命、名譽、信用等），強調影響的嚴重性。',
+            comparisons: ['にかかわる：關係到…（嚴重影響）', 'に関する：關於…（一般關聯）'],
+            commonMistakes: ['○ 信用にかかわる問題 / × 信用がかかわる問題 → 用「に」不用「が」'],
+        },
+    },
+    // ━━━ どころではない (far from - additional) ━━━
+    {
+        id: 'g_n2_309', category: 'grammar', level: 'N2', tags: ['impossibility', 'busy'],
+        stem: '締{し}め切{き}りが明日{あした}なので、遊{あそ}ぶ___。',
+        stemZh: '因為截止日期是明天，根本不是能玩的時候。',
+        options: [
+            { text: 'わけがない', reason: '「わけがない」表示「不可能…」，語感不同。' },
+            { text: 'はずがない', reason: '「はずがない」表示「不應該…」，語感不同。' },
+            { text: 'ものではない', reason: '「ものではない」表示「不應該…」，語感不同。' },
+            { text: 'どころではない', reason: '正確！「どころではない」表示「哪裡談得上…/不是…的時候」。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+            keyPoint: '「どころではない」表示情況不允許做某事',
+            analysis: '「どころではない」用於表示因為某種情況太忙或太緊急，根本沒有餘力去做某事。',
+            comparisons: ['どころではない：哪裡談得上…（沒有餘力）', 'どころか：豈止…（超出預期）'],
+            commonMistakes: ['○ 遊ぶどころではない / × 遊びどころではない → 用辭書形'],
+        },
+    },
+    // ━━━ 以上は (since / now that - additional) ━━━
+    {
+        id: 'g_n2_310', category: 'grammar', level: 'N2', tags: ['obligation', 'determination'],
+        stem: '引{ひ}き受{う}けた___、最後{さいご}まで責任{せきにん}を持{も}ってやり遂{と}げる。',
+        stemZh: '既然接受了，就要負責任地做到最後。',
+        options: [
+            { text: '以上は', reason: '正確！「以上は」表示「既然…就…」，強調義務和決心。' },
+            { text: 'からには', reason: '「からには」也表示「既然…就…」，意思相近。' },
+            { text: 'からして', reason: '「からして」表示「從…來看」，語意不同。' },
+            { text: 'ものの', reason: '「ものの」表示「雖然…但是」，語意相反。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「以上は」與「からには」同義，表示既定事實帶來的責任',
+            analysis: '「以上は」用於表示既然某件事已經成為事實，就必須承擔相應的責任或義務。',
+            comparisons: ['以上は：既然…就…（義務感強）', 'からには：既然…就…（決心感強）'],
+            commonMistakes: ['○ 引き受けた以上は / × 引き受ける以上は → 前面常用た形'],
+        },
+    },
+    // ━━━ において (in / at - additional) ━━━
+    {
+        id: 'g_n2_311', category: 'grammar', level: 'N2', tags: ['formal', 'location', 'context'],
+        stem: '現代社会{げんだいしゃかい}___、コミュニケーション能力{のうりょく}は不可欠{ふかけつ}だ。',
+        stemZh: '在現代社會中，溝通能力是不可或缺的。',
+        options: [
+            { text: 'で', reason: '「で」也可以，但不夠正式。' },
+            { text: 'において', reason: '正確！「において」是「で」的書面語，表示「在…方面/場所」。' },
+            { text: 'にとって', reason: '「にとって」表示「對…來說」，語意不同。' },
+            { text: 'に対して', reason: '「に対して」表示「對於…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「において」是「で」的書面語表達',
+            analysis: '「において」相當於助詞「で」，表示場所、場合、領域等，常用於正式文章或演講。修飾名詞時用「における」。',
+            comparisons: ['において：在…（書面正式）', 'で：在…（口語一般）', 'における：在…的（修飾名詞）'],
+            commonMistakes: ['○ 現代社会において / ○ 現代社会における → 句中用「において」，修飾名詞用「における」'],
+        },
+    },
+    // ━━━ からといって (just because - additional) ━━━
+    {
+        id: 'g_n2_312', category: 'grammar', level: 'N2', tags: ['logic', 'warning'],
+        stem: '有名{ゆうめい}だ___、必{かなら}ずしも信頼{しんらい}できるとは限{かぎ}らない。',
+        stemZh: '不能因為有名就一定值得信賴。',
+        options: [
+            { text: 'からこそ', reason: '「からこそ」表示「正因為…」，語意相反。' },
+            { text: 'からして', reason: '「からして」表示「從…來看」，語意不同。' },
+            { text: 'からといって', reason: '正確！「からといって」表示「不能因為…就…」，否定片面推理。' },
+            { text: 'からには', reason: '「からには」表示「既然…就…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「からといって」否定根據某一理由做出的簡單推論',
+            analysis: '「からといって」用於表示不能僅僅因為某個理由就做出某種判斷或行動，常與否定表達搭配。',
+            comparisons: ['からといって：不能因為…就…（否定推論）', 'からこそ：正因為…才…（肯定原因）'],
+            commonMistakes: ['○ 有名だからといって / × 有名からといって → な形容詞用「だ」接續'],
+        },
+    },
+    // ━━━ をもとに (based on - additional) ━━━
+    {
+        id: 'g_n2_313', category: 'grammar', level: 'N2', tags: ['basis', 'creation'],
+        stem: 'この映画{えいが}は実話{じつわ}___作{つく}られた。',
+        stemZh: '這部電影是以真實故事為基礎製作的。',
+        options: [
+            { text: 'をもとに', reason: '正確！「をもとに」表示「以…為基礎」。' },
+            { text: 'に基づいて', reason: '「に基づいて」也表示「基於…」，但更強調嚴格依據。' },
+            { text: 'に沿って', reason: '「に沿って」表示「按照…」，語感不同。' },
+            { text: 'を通じて', reason: '「を通じて」表示「透過…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「をもとに」表示以某事物作為素材或基礎',
+            analysis: '「をもとに」用於表示以某事物為素材、靈感或基礎來創作或進行某事。比「に基づいて」更靈活。',
+            comparisons: ['をもとに：以…為基礎（靈活創作）', 'に基づいて：基於…（嚴格依據）'],
+            commonMistakes: ['○ 実話をもとに / ○ 実話をもとにして → 兩種都可以'],
+        },
+    },
+    // ━━━ にもかかわらず (despite - additional) ━━━
+    {
+        id: 'g_n2_314', category: 'grammar', level: 'N2', tags: ['concession', 'contrast'],
+        stem: '何度{なんど}も警告{けいこく}された___、彼{かれ}は同{おな}じ間違{まちが}いを繰{く}り返{かえ}した。',
+        stemZh: '儘管被多次警告，他仍然重複犯同樣的錯誤。',
+        options: [
+            { text: 'にもかかわらず', reason: '正確！「にもかかわらず」表示「儘管…卻…」。' },
+            { text: 'ものの', reason: '「ものの」也表示「雖然…但是」，但語氣不同。' },
+            { text: 'わりに', reason: '「わりに」表示「雖然…但是」，語氣較輕。' },
+            { text: 'にしても', reason: '「にしても」表示「即使…」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「にもかかわらず」是最正式的讓步表達',
+            analysis: '「にもかかわらず」用於表示儘管有某種應該產生影響的條件，結果卻與預期完全不同。語氣正式且強烈。',
+            comparisons: ['にもかかわらず：儘管…卻…（正式強烈）', 'のに：雖然…但是…（口語不滿）', 'ものの：雖然…但是…（冷靜客觀）'],
+            commonMistakes: ['○ 警告されたにもかかわらず / × 警告にもかかわらず → 動詞用た形接續'],
+        },
+    },
+    // ━━━ 以外 (except / besides) ━━━
+    {
+        id: 'g_n2_315', category: 'grammar', level: 'N2', tags: ['exception', 'exclusion'],
+        stem: '英語{えいご}___の外国語{がいこくご}を勉強{べんきょう}したことがない。',
+        stemZh: '除了英語以外的外語沒有學過。',
+        options: [
+            { text: '以外', reason: '正確！「以外」表示「除了…以外」。' },
+            { text: 'を除いて', reason: '「を除いて」也表示「除了…」，但接續不同。' },
+            { text: 'のほか', reason: '「のほか」也可以，但用法不同。' },
+            { text: '以上', reason: '「以上」表示「以上/既然」，語意完全不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「以外」表示排除某事物的範圍',
+            analysis: '「以外」直接接在名詞後，表示除了該事物以外的範圍。修飾名詞時用「以外の＋名詞」。',
+            comparisons: ['以外：除了…以外（直接排除）', 'を除いて：除了…以外（正式動詞形式）'],
+            commonMistakes: ['○ 英語以外の / × 英語の以外の → 直接接在名詞後'],
+        },
+    },
+    // ━━━ 以上に (more than) ━━━
+    {
+        id: 'g_n2_316', category: 'grammar', level: 'N2', tags: ['comparison', 'exceeding'],
+        stem: '予想{よそう}___大{おお}きな反響{はんきょう}があった。',
+        stemZh: '有超出預想的巨大迴響。',
+        options: [
+            { text: 'より', reason: '「より」也表示「比…」，但不如「以上に」強調超出預期。' },
+            { text: '以上に', reason: '正確！「以上に」表示「超出…」，強調程度大大超過。' },
+            { text: 'に反して', reason: '「に反して」表示「與…相反」，語意不同。' },
+            { text: 'にかけて', reason: '「にかけて」表示「從…到…期間」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「以上に」強調實際程度超出了某個基準',
+            analysis: '「以上に」用於表示實際的程度或結果超出了預期或基準，帶有驚訝或強調的語氣。',
+            comparisons: ['以上に：超出…（強調超出）', 'より：比…（一般比較）'],
+            commonMistakes: ['○ 予想以上に / × 予想の以上に → 直接接在名詞後'],
+        },
+    },
+    // ━━━ といった (such as) - additional ━━━
+    {
+        id: 'g_n2_317', category: 'grammar', level: 'N2', tags: ['example', 'listing'],
+        stem: '日本語{にほんご}や韓国語{かんこくご}___アジアの言語{げんご}に興味{きょうみ}がある。',
+        stemZh: '對日語和韓語等亞洲語言感興趣。',
+        options: [
+            { text: 'という', reason: '「という」表示「叫做…」，不適合列舉。' },
+            { text: 'といった', reason: '正確！「といった」表示「…等（之類的）」，用於列舉例子。' },
+            { text: 'としての', reason: '「としての」表示「作為…的」，語意不同。' },
+            { text: 'に関する', reason: '「に関する」表示「關於…的」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「といった」用於列舉具體例子',
+            analysis: '「といった」相當於「のような」「など」，用於列舉幾個具體例子來代表一個類別。',
+            comparisons: ['といった：…之類的（列舉例子）', 'という：叫做…（定義/引述）', 'のような：像…一樣的（比喻/列舉）'],
+            commonMistakes: ['○ 日本語や韓国語といった / × 日本語や韓国語というった → 正確拼寫是「といった」'],
+        },
+    },
+    // ━━━ ということは (that means - additional) ━━━
+    {
+        id: 'g_n2_318', category: 'grammar', level: 'N2', tags: ['inference', 'conclusion'],
+        stem: '彼{かれ}がまだ来{き}ていない___、電車{でんしゃ}が遅{おく}れているのかもしれない。',
+        stemZh: '他還沒來，也就是說電車可能誤點了。',
+        options: [
+            { text: 'つまり', reason: '「つまり」也表示「也就是說」，但用法不同。' },
+            { text: 'ということは', reason: '正確！「ということは」表示「這意味著…/也就是說…」。' },
+            { text: 'とすれば', reason: '「とすれば」表示「如果…的話」，語感不同。' },
+            { text: 'わけだから', reason: '「わけだから」表示「所以…」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ということは」用於從已知事實推理出結論',
+            analysis: '「ということは」用於從前面的事實推導出某個結論或可能性，表示「這意味著…」。',
+            comparisons: ['ということは：這意味著…（推理結論）', 'つまり：也就是說（換句話說）'],
+            commonMistakes: ['○ 来ていないということは / × 来ないということは → 用ている形表示當前狀態'],
+        },
+    },
+    // ━━━ 上は (now that - same as 以上は) ━━━
+    {
+        id: 'g_n2_319', category: 'grammar', level: 'N2', tags: ['determination', 'obligation'],
+        stem: 'やると決{き}めた___、最後{さいご}までやり抜{ぬ}くつもりだ。',
+        stemZh: '既然決定要做，就打算做到最後。',
+        options: [
+            { text: '上は', reason: '正確！「上は」表示「既然…就…」，與「以上は」同義。' },
+            { text: 'ものの', reason: '「ものの」表示「雖然…但是」，語意相反。' },
+            { text: 'わりに', reason: '「わりに」表示「雖然…但是」，語意不同。' },
+            { text: 'ところで', reason: '「ところで」表示「即使…」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「上は」與「以上は」同義',
+            analysis: '「上は」和「以上は」完全同義，都表示「既然…就應該…」，強調基於既定事實的責任感。',
+            comparisons: ['上は：既然…就…（義務感）', '以上は：既然…就…（同義）', 'からには：既然…就…（決心感）'],
+            commonMistakes: ['○ 決めた上は / × 決める上は → 前面用た形表示已經決定的事'],
+        },
+    },
+    // ━━━ に限る (best to - different context) ━━━
+    {
+        id: 'g_n2_320', category: 'grammar', level: 'N2', tags: ['recommendation', 'limitation'],
+        stem: 'この割引{わりびき}は学生{がくせい}___。',
+        stemZh: '這個折扣僅限學生。',
+        options: [
+            { text: 'に限る', reason: '正確！「に限る」在此表示「僅限於…」，限定範圍。' },
+            { text: 'に限って', reason: '「に限って」表示「偏偏…」，語意不同。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語意相反。' },
+            { text: 'のみ', reason: '「のみ」表示「僅…」，也可以但接續不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に限る」的限定用法',
+            analysis: '「に限る」有兩個用法：(1)「最好是…」（推薦）、(2)「僅限於…」（限定範圍）。此題為第二種。',
+            comparisons: ['に限る（推薦）：最好是…', 'に限る（限定）：僅限於…'],
+            commonMistakes: ['○ 学生に限る / × 学生を限る → 用「に」不用「を」'],
+        },
+    },
+    // ━━━ にかかわらず (regardless - additional) ━━━
+    {
+        id: 'g_n2_321', category: 'grammar', level: 'N2', tags: ['regardless', 'inclusive'],
+        stem: '天候{てんこう}___、イベントは予定{よてい}通{どお}り開催{かいさい}します。',
+        stemZh: '不論天氣如何，活動將按照原定計畫舉辦。',
+        options: [
+            { text: 'にかかわらず', reason: '正確！「にかかわらず」表示「不論…」。' },
+            { text: 'を問わず', reason: '「を問わず」也表示「不論…」，意思相近。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語感不同。' },
+            { text: 'にもかかわらず', reason: '「にもかかわらず」表示「儘管…」，是讓步不是「不論」。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「にかかわらず」表示不受某條件影響',
+            analysis: '「にかかわらず」用於表示無論某個條件如何，結果都不受影響。常用於公告和通知。',
+            comparisons: ['にかかわらず：不論…（不受影響）', 'にもかかわらず：儘管…（讓步）', 'を問わず：不問…（同義）'],
+            commonMistakes: ['○ 天候にかかわらず / × 天候にもかかわらず → 沒有「も」是不論，有「も」是儘管'],
+        },
+    },
+    // ━━━ ままに (as ~ dictates - additional) ━━━
+    {
+        id: 'g_n2_322', category: 'grammar', level: 'N2', tags: ['passivity', 'following'],
+        stem: '思{おも}い付{つ}く___、書{か}いてみた。',
+        stemZh: '隨著想到什麼就寫什麼。',
+        options: [
+            { text: 'ままに', reason: '正確！「ままに」表示「隨著…/任憑…」。' },
+            { text: 'ながら', reason: '「ながら」表示「一邊…一邊…」，語意不同。' },
+            { text: 'つつ', reason: '「つつ」表示「一邊…」或「雖然…」，語意不同。' },
+            { text: 'たびに', reason: '「たびに」表示「每次…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ままに」表示隨著某種狀態或衝動行動',
+            analysis: '「ままに」用於表示順從某種感覺、衝動或狀態行動，不加以控制或修正。',
+            comparisons: ['ままに：隨著…（順從行動）', 'まま：保持…的狀態（不改變）'],
+            commonMistakes: ['○ 思い付くままに / ○ 気の向くままに → 辭書形接「ままに」'],
+        },
+    },
+    // ━━━ もかまわず (without caring - additional) ━━━
+    {
+        id: 'g_n2_323', category: 'grammar', level: 'N2', tags: ['disregard', 'boldness'],
+        stem: '周{まわ}りの目{め}___、彼{かれ}は大声{おおごえ}で歌{うた}い始{はじ}めた。',
+        stemZh: '他不顧旁人的目光，開始大聲唱歌。',
+        options: [
+            { text: 'もかまわず', reason: '正確！「もかまわず」表示「不顧…」。' },
+            { text: 'にもかかわらず', reason: '「にもかかわらず」表示「儘管…」，語感不同。' },
+            { text: 'を問わず', reason: '「を問わず」表示「不論…」，語感不同。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「もかまわず」表示不在乎某種應該顧慮的事',
+            analysis: '「もかまわず」用於描述某人不在乎通常應該在意的事情，帶有大膽或不體貼的語感。',
+            comparisons: ['もかまわず：不顧…（不在乎）', 'にもかかわらず：儘管…（讓步）'],
+            commonMistakes: ['○ 周りの目もかまわず / × 周りの目をかまわず → 用「も」不用「を」'],
+        },
+    },
+    // ━━━ くせに (despite - additional) ━━━
+    {
+        id: 'g_n2_324', category: 'grammar', level: 'N2', tags: ['criticism', 'contrast'],
+        stem: '自分{じぶん}は何{なに}もしない___、文句{もんく}ばかり言{い}う。',
+        stemZh: '自己什麼都不做，卻淨說些抱怨的話。',
+        options: [
+            { text: 'のに', reason: '「のに」也表示「明明…卻」，但不帶嚴厲的批評語氣。' },
+            { text: 'くせに', reason: '正確！「くせに」表示「明明…卻…」，帶有蔑視和責備。' },
+            { text: 'にもかかわらず', reason: '「にもかかわらず」表示「儘管…」，太正式。' },
+            { text: 'わりに', reason: '「わりに」表示「雖然…但是」，語氣太溫和。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「くせに」帶有強烈的批評和蔑視語氣',
+            analysis: '「くせに」用於批評某人的矛盾行為，帶有「明明…卻不像話」的不滿和蔑視。注意不能用於自己。',
+            comparisons: ['くせに：明明…卻…（批評蔑視）', 'のに：雖然…但是…（不滿一般）'],
+            commonMistakes: ['○ しないくせに / × しないのくせに → 動詞直接接「くせに」'],
+        },
+    },
+    // ━━━ てこそ (only by doing - additional) ━━━
+    {
+        id: 'g_n2_325', category: 'grammar', level: 'N2', tags: ['condition', 'emphasis'],
+        stem: '実際{じっさい}にやっ___、本当{ほんとう}のことがわかる。',
+        stemZh: '只有實際去做了，才能了解真正的情況。',
+        options: [
+            { text: 'たら', reason: '「たら」表示「如果…了」，不強調「唯有…才」。' },
+            { text: 'ても', reason: '「ても」表示「即使…也」，語意相反。' },
+            { text: 'てこそ', reason: '正確！「てこそ」表示「只有做了…才…」，強調必要條件。' },
+            { text: 'てから', reason: '「てから」表示「做了…之後」，不強調唯一條件。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「てこそ」強調某件事是實現結果的唯一條件',
+            analysis: '「てこそ」用於強調只有通過某個行動或條件，才能達到某個結果，表示「唯有…才能…」。',
+            comparisons: ['てこそ：只有…才（唯一條件）', 'てはじめて：做了…才第一次（同義）'],
+            commonMistakes: ['○ やってこそ / × やるこそ → 用て形接「こそ」'],
+        },
+    },
+    // ━━━ つつ (while / although - additional) ━━━
+    {
+        id: 'g_n2_326', category: 'grammar', level: 'N2', tags: ['simultaneous', 'contrast'],
+        stem: '体{からだ}に悪{わる}いと知{し}り___、タバコをやめられない。',
+        stemZh: '雖然知道對身體有害，卻無法戒菸。',
+        options: [
+            { text: 'ながら', reason: '「ながら」也可以表示「雖然…卻」，但較口語。' },
+            { text: 'つつ', reason: '正確！「つつ」表示「雖然…卻…」，書面語。' },
+            { text: 'つつも', reason: '「つつも」加了「も」更強調讓步，也可以。' },
+            { text: 'ているのに', reason: '「ているのに」表示「明明…卻」，帶有不滿。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「つつ」的讓步用法表示「雖然知道…卻…」',
+            analysis: '「つつ」有兩個用法：(1)一邊…一邊…（同時進行）、(2)雖然…卻…（讓步，常帶有自我矛盾感）。此題為第二種。',
+            comparisons: ['つつ（讓步）：雖然…卻…（書面自省）', 'ながら（讓步）：雖然…卻…（口語）'],
+            commonMistakes: ['○ 知りつつ / × 知るつつ → 用連用形（ます形去ます）'],
+        },
+    },
+    // ━━━ つつある (in the process of - additional) ━━━
+    {
+        id: 'g_n2_327', category: 'grammar', level: 'N2', tags: ['progress', 'change'],
+        stem: '地球{ちきゅう}の環境{かんきょう}は少{すこ}しずつ変化{へんか}し___。',
+        stemZh: '地球的環境正在逐漸變化中。',
+        options: [
+            { text: 'ている', reason: '「ている」也表示進行，但不夠書面正式。' },
+            { text: 'つつある', reason: '正確！「つつある」表示「正在…中」，用於漸進的變化。' },
+            { text: 'ていく', reason: '「ていく」表示「逐漸…下去」，方向不同。' },
+            { text: 'てくる', reason: '「てくる」表示「逐漸…起來」，方向不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「つつある」表示正在進行中的漸進變化',
+            analysis: '「つつある」是書面語，特別用於描述正在進行中的漸進變化，常用於社會現象、自然變化等。',
+            comparisons: ['つつある：正在…中（書面漸進）', 'ている：正在…（一般進行）'],
+            commonMistakes: ['○ 変化しつつある / × 変化するつつある → 用連用形'],
+        },
+    },
+    // ━━━ とはいえ (that said - additional) ━━━
+    {
+        id: 'g_n2_328', category: 'grammar', level: 'N2', tags: ['concession', 'modification'],
+        stem: '景気{けいき}は回復{かいふく}傾向{けいこう}にある。___、油断{ゆだん}は禁物{きんもつ}だ。',
+        stemZh: '景氣有恢復的傾向。話雖如此，不能掉以輕心。',
+        options: [
+            { text: 'とはいえ', reason: '正確！「とはいえ」表示「話雖如此」，承認前項但提出保留。' },
+            { text: 'そのため', reason: '「そのため」表示「因此」，語意不同。' },
+            { text: 'それで', reason: '「それで」表示「所以」，語意不同。' },
+            { text: 'すると', reason: '「すると」表示「於是」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「とはいえ」用於承認前項後提出保留意見',
+            analysis: '「とはいえ」用於先承認前面的事實或觀點，然後提出與之不完全一致的看法或補充，表示「雖然如此，但…」。',
+            comparisons: ['とはいえ：話雖如此（保留意見）', 'それにしても：即便如此（感嘆）', 'もっとも：話說回來（補充）'],
+            commonMistakes: ['○ 回復傾向にある。とはいえ、… / ○ …あるとはいえ、… → 可以放句首或句中'],
+        },
+    },
+    // ━━━ もっとも (although / to be fair - additional) ━━━
+    {
+        id: 'g_n2_329', category: 'grammar', level: 'N2', tags: ['qualification', 'fairness'],
+        stem: '今回{こんかい}の試験{しけん}は難{むずか}しかった。___、十分{じゅうぶん}に準備{じゅんび}していれば合格{ごうかく}できたはずだ。',
+        stemZh: '這次考試很難。話說回來，如果充分準備的話應該能合格。',
+        options: [
+            { text: 'しかし', reason: '「しかし」表示「但是」，太一般。' },
+            { text: 'もっとも', reason: '正確！「もっとも」表示「話說回來/不過」，補充修正前面的說法。' },
+            { text: 'ところが', reason: '「ところが」表示「然而」，語感不同。' },
+            { text: 'それなのに', reason: '「それなのに」表示「儘管如此」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「もっとも」用於對前述內容的補充修正',
+            analysis: '「もっとも」用於在前面的陳述之後，提出一個公平或合理的補充觀點，不完全否定前者但進行修正。',
+            comparisons: ['もっとも：話說回來（補充修正）', 'とはいえ：話雖如此（保留意見）'],
+            commonMistakes: ['○ もっとも、準備していれば… / × もっとも準備していれば… → 通常後面加逗號'],
+        },
+    },
+    // ━━━ それなのに (despite that - additional) ━━━
+    {
+        id: 'g_n2_330', category: 'grammar', level: 'N2', tags: ['contrast', 'frustration'],
+        stem: 'あれだけお願{ねが}いした。___、全然{ぜんぜん}聞{き}いてくれなかった。',
+        stemZh: '拜託了那麼多次。儘管如此，卻完全不聽。',
+        options: [
+            { text: 'だから', reason: '「だから」表示「所以」，語意相反。' },
+            { text: 'そして', reason: '「そして」表示「然後」，語意不同。' },
+            { text: 'それなのに', reason: '正確！「それなのに」表示「儘管如此卻…」，帶有不滿。' },
+            { text: 'そこで', reason: '「そこで」表示「於是」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「それなのに」承接前句表示不滿的讓步',
+            analysis: '「それなのに」用於表示前面的事實本應該帶來某個結果，但實際卻不是，帶有強烈的不滿和失望。',
+            comparisons: ['それなのに：儘管如此卻…（不滿）', 'それにもかかわらず：儘管如此…（正式）'],
+            commonMistakes: ['○ …した。それなのに、… / × …したそれなのに → 放在句首'],
+        },
+    },
+    // ━━━ ちなみに (by the way / incidentally - additional) ━━━
+    {
+        id: 'g_n2_331', category: 'grammar', level: 'N2', tags: ['supplement', 'information'],
+        stem: 'この店{みせ}のラーメンは美味{おい}しいですよ。___、醤油{しょうゆ}味{あじ}が一番{いちばん}人気{にんき}だそうです。',
+        stemZh: '這家店的拉麵很好吃喔。順便一提，聽說醬油口味最受歡迎。',
+        options: [
+            { text: 'そう言えば', reason: '「そう言えば」表示「這麼一說」，因聯想想起。' },
+            { text: 'ところで', reason: '「ところで」表示「對了」，轉換話題。' },
+            { text: 'ちなみに', reason: '正確！「ちなみに」表示「順便一提」，補充相關資訊。' },
+            { text: 'それから', reason: '「それから」表示「然後」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「ちなみに」用於補充與前話題相關的額外資訊',
+            analysis: '「ちなみに」用於在主要話題之後補充一些相關但非必要的資訊，是「順便說一下」的意思。',
+            comparisons: ['ちなみに：順便一提（補充資訊）', 'そう言えば：這麼一說（因聯想想起）', 'ところで：對了（轉換話題）'],
+            commonMistakes: ['○ ちなみに、醤油味が… / × ちなみに醤油味が… → 後面通常加逗號'],
+        },
+    },
+    // ━━━ なお (furthermore / still - additional) ━━━
+    {
+        id: 'g_n2_332', category: 'grammar', level: 'N2', tags: ['addition', 'formal'],
+        stem: '申{もう}し込{こ}みは来週{らいしゅう}の金曜日{きんようび}までです。___、定員{ていいん}になり次第{しだい}、締{し}め切{き}ります。',
+        stemZh: '報名截止到下週五。另外，一達到名額上限就截止。',
+        options: [
+            { text: 'しかも', reason: '「しかも」表示「而且」，語感不同。' },
+            { text: 'おまけに', reason: '「おまけに」表示「加上」，太口語。' },
+            { text: 'なお', reason: '正確！「なお」表示「另外/此外」，用於正式場合補充重要資訊。' },
+            { text: 'ちなみに', reason: '「ちなみに」表示「順便一提」，重要性不夠。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「なお」用於正式場合補充重要的附加資訊',
+            analysis: '「なお」常用於公告、通知等正式文書中，補充讀者需要知道的重要附加事項。語氣比「ちなみに」正式且重要。',
+            comparisons: ['なお：另外（正式補充重要資訊）', 'ちなみに：順便一提（非必要補充）'],
+            commonMistakes: ['○ なお、定員になり次第… / × なおは定員になり次第… → 「なお」後面不加「は」'],
+        },
+    },
+    // ━━━ はともかく (regardless of / leaving aside - additional) ━━━
+    {
+        id: 'g_n2_333', category: 'grammar', level: 'N2', tags: ['aside', 'focus'],
+        stem: '値段{ねだん}___、この製品{せいひん}の品質{ひんしつ}は素晴{すば}らしい。',
+        stemZh: '價格暫且不論，這個產品的品質很出色。',
+        options: [
+            { text: 'はともかく', reason: '正確！「はともかく」表示「暫且不論…」。' },
+            { text: '抜きにして', reason: '「抜きにして」表示「撇開…不談」，語感不同。' },
+            { text: 'はもちろん', reason: '「はもちろん」表示「不用說…」，語意相反。' },
+            { text: 'はおろか', reason: '「はおろか」表示「別說…了」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「はともかく」暫時擱置某個議題來聚焦另一個',
+            analysis: '「はともかく」用於暫時不討論前面提到的事項，而聚焦在後面更想強調的內容。',
+            comparisons: ['はともかく：暫且不論…（擱置議題）', '抜きにして：撇開…不談（排除議題）'],
+            commonMistakes: ['○ 値段はともかく / × 値段がともかく → 用「は」不用「が」'],
+        },
+    },
+    // ━━━ 直ちに (immediately - additional) ━━━
+    {
+        id: 'g_n2_334', category: 'grammar', level: 'N2', tags: ['immediacy', 'formal'],
+        stem: '問題{もんだい}が発覚{はっかく}した場合{ばあい}は、___対処{たいしょ}してください。',
+        stemZh: '如果發現問題，請立即處理。',
+        options: [
+            { text: 'すぐに', reason: '「すぐに」也表示「立刻」，但不夠正式。' },
+            { text: '直ちに', reason: '正確！「直ちに」表示「立即」，正式書面語。' },
+            { text: 'いきなり', reason: '「いきなり」表示「突然」，語意不同。' },
+            { text: 'やがて', reason: '「やがて」表示「不久」，語意相反。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「直ちに」是正式的「立即」表達',
+            analysis: '「直ちに」相當於口語的「すぐに」，但更正式，常用於公告、指示、法律文書等。',
+            comparisons: ['直ちに：立即（正式）', 'すぐに：馬上（口語）', 'ただちに：立即（同字異讀）'],
+            commonMistakes: ['○ 直ちに対処する / × 直ちにに対処する → 「直ちに」本身是副詞，不需要再加「に」'],
+        },
+    },
+    // ━━━ せいか (perhaps because - additional) ━━━
+    {
+        id: 'g_n2_335', category: 'grammar', level: 'N2', tags: ['speculation', 'cause'],
+        stem: '寝不足{ねぶそく}の___、今日{きょう}は頭{あたま}がぼんやりする。',
+        stemZh: '也許是因為睡眠不足，今天腦袋昏沉沉的。',
+        options: [
+            { text: 'ために', reason: '「ために」表示「因為…」，太確定了。' },
+            { text: 'おかげで', reason: '「おかげで」表示「託…的福」，語感不同。' },
+            { text: 'せいか', reason: '正確！「せいか」表示「也許是因為…」，不確定的推測原因。' },
+            { text: 'せいで', reason: '「せいで」表示「因為…（壞結果）」，太確定了。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「せいか」帶有不確定的因果推測',
+            analysis: '「せいか」比「せいで」多了一層不確定性，表示說話者推測可能是因為某個原因，但不能完全確定。',
+            comparisons: ['せいか：也許是因為…（不確定推測）', 'せいで：因為…（確定歸因）'],
+            commonMistakes: ['○ 寝不足のせいか / × 寝不足せいか → 名詞用「の」接續'],
+        },
+    },
+    // ━━━ やら〜やら (what with ~ and ~) ━━━
+    {
+        id: 'g_n2_336', category: 'grammar', level: 'N2', tags: ['listing', 'overwhelmed'],
+        stem: '引{ひ}っ越{こ}しの準備{じゅんび}___、仕事{しごと}の締{し}め切{き}り___で、忙{いそが}しくて大変{たいへん}だ。',
+        stemZh: '又是搬家的準備，又是工作的截止日，忙得不行。',
+        options: [
+            { text: 'やら / やら', reason: '正確！「やら〜やら」表示「又是…又是…」，列舉使人困擾的事。' },
+            { text: 'とか / とか', reason: '「とか〜とか」也可以列舉，但不帶困擾感。' },
+            { text: 'たり / たり', reason: '「たり〜たり」表示列舉動作，不適合名詞。' },
+            { text: 'か / か', reason: '「か〜か」表示「是…還是…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「やら〜やら」列舉多個令人不堪重負的事物',
+            analysis: '「やら〜やら」用於列舉多個事物，通常帶有「太多了令人困擾」的語感。',
+            comparisons: ['やら〜やら：又是…又是…（困擾）', 'とか〜とか：…啦…啦（列舉，中性）'],
+            commonMistakes: ['○ 準備やら締め切りやら / × 準備やら、締め切りやら → 可以加逗號也可以不加'],
+        },
+    },
+    // ━━━ よほど / よっぽど (very / quite) ━━━
+    {
+        id: 'g_n2_337', category: 'grammar', level: 'N2', tags: ['degree', 'emphasis'],
+        stem: '彼{かれ}は___疲{つか}れていたのか、帰{かえ}るなりすぐ寝{ね}てしまった。',
+        stemZh: '他大概相當累吧，一回來就馬上睡著了。',
+        options: [
+            { text: 'とても', reason: '「とても」表示「非常」，但不帶推測語感。' },
+            { text: 'よほど', reason: '正確！「よほど」表示「相當/很」，帶有推測程度深的語感。' },
+            { text: 'かなり', reason: '「かなり」表示「相當」，但不帶推測語感。' },
+            { text: 'ずいぶん', reason: '「ずいぶん」表示「相當」，但不帶推測語感。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「よほど」表示程度非常深，常用於推測',
+            analysis: '「よほど」表示比一般程度要深得多，常用於推測某人的狀態或心情。口語說「よっぽど」。',
+            comparisons: ['よほど：相當…（推測程度深）', 'とても：非常（一般程度）', 'かなり：相當（客觀程度）'],
+            commonMistakes: ['○ よほど疲れていた / ○ よっぽど疲れていた → 兩種都可以'],
+        },
+    },
+    // ━━━ いわゆる (so-called - additional) ━━━
+    {
+        id: 'g_n2_338', category: 'grammar', level: 'N2', tags: ['definition', 'common_knowledge'],
+        stem: '彼{かれ}は___天才{てんさい}タイプの人間{にんげん}だ。',
+        stemZh: '他是所謂天才型的人。',
+        options: [
+            { text: 'いわゆる', reason: '正確！「いわゆる」表示「所謂的」，引用一般認知的稱呼。' },
+            { text: 'まさに', reason: '「まさに」表示「正是」，語感不同。' },
+            { text: 'あくまで', reason: '「あくまで」表示「始終/終究」，語意不同。' },
+            { text: 'もはや', reason: '「もはや」表示「已經」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「いわゆる」引用一般通用的稱呼或概念',
+            analysis: '「いわゆる」用於引用人們一般使用的稱呼、概念或分類，表示「人們所說的…」。',
+            comparisons: ['いわゆる：所謂的（引用通用稱呼）', 'まさに：正是（強調確認）'],
+            commonMistakes: ['○ いわゆる天才 / × いわゆるの天才 → 直接修飾名詞，不加「の」'],
+        },
+    },
+    // ━━━ どうせ (anyway / after all - additional) ━━━
+    {
+        id: 'g_n2_339', category: 'grammar', level: 'N2', tags: ['resignation', 'pessimism'],
+        stem: '___やるなら、徹底的{てっていてき}にやったほうがいい。',
+        stemZh: '反正要做的話，不如做得徹底一點。',
+        options: [
+            { text: 'どうせ', reason: '正確！「どうせ」表示「反正…」，帶有接受現實的語氣。' },
+            { text: 'せっかく', reason: '「せっかく」表示「難得…」，語氣不同。' },
+            { text: 'いっそ', reason: '「いっそ」表示「乾脆…」，語感不同。' },
+            { text: 'せめて', reason: '「せめて」表示「至少…」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「どうせ」帶有「反正結果都一樣」的接受語氣',
+            analysis: '「どうせ」表示說話者認為無論如何結果都不會改變，帶有消極接受或無奈的態度。但也可以用於積極的轉向。',
+            comparisons: ['どうせ：反正…（消極接受）', 'せっかく：難得…（珍惜機會）'],
+            commonMistakes: ['○ どうせやるなら / × どうせでやるなら → 「どうせ」是副詞，直接接句子'],
+        },
+    },
+    // ━━━ せっかく (with effort / specially - additional) ━━━
+    {
+        id: 'g_n2_340', category: 'grammar', level: 'N2', tags: ['effort', 'waste'],
+        stem: '___作{つく}ったのに、誰{だれ}も食{た}べてくれなかった。',
+        stemZh: '好不容易做了，卻沒有人吃。',
+        options: [
+            { text: 'せっかく', reason: '正確！「せっかく」表示「好不容易…/特意…」，強調付出的努力被浪費。' },
+            { text: 'わざわざ', reason: '「わざわざ」表示「特意…」，但不帶「可惜」的語感。' },
+            { text: 'どうせ', reason: '「どうせ」表示「反正…」，語意不同。' },
+            { text: 'まさか', reason: '「まさか」表示「不會吧…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「せっかく」強調努力或機會被浪費的遺憾',
+            analysis: '「せっかく」用於表示好不容易做了某事或得到某個機會，但結果卻不如預期，帶有「可惜」的語感。常與「のに」搭配。',
+            comparisons: ['せっかく：好不容易…（可惜被浪費）', 'わざわざ：特意…（強調行動的特別）'],
+            commonMistakes: ['○ せっかく作ったのに / × せっかくに作ったのに → 「せっかく」直接接動詞'],
+        },
+    },
+    // ━━━ せめて (at least - additional) ━━━
+    {
+        id: 'g_n2_341', category: 'grammar', level: 'N2', tags: ['minimum', 'wish'],
+        stem: '全部{ぜんぶ}は無理{むり}でも、___半分{はんぶん}はやってほしい。',
+        stemZh: '全部做不完也沒關係，至少希望能做一半。',
+        options: [
+            { text: 'せめて', reason: '正確！「せめて」表示「至少…」，在困難情況下的最低期望。' },
+            { text: '少なくとも', reason: '「少なくとも」也表示「至少」，但較客觀。' },
+            { text: 'できれば', reason: '「できれば」表示「如果可以的話」，語感不同。' },
+            { text: 'なるべく', reason: '「なるべく」表示「盡量…」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「せめて」表示在不理想情況下的最低願望',
+            analysis: '「せめて」用於在理想情況無法實現時，退而求其次的最低期望或願望，帶有無奈但仍有期待。',
+            comparisons: ['せめて：至少…（最低願望，有感情）', '少なくとも：至少…（客觀數量）'],
+            commonMistakes: ['○ せめて半分は / × せめてに半分は → 「せめて」直接接表達'],
+        },
+    },
+    // ━━━ ばかりだ (only getting worse - additional) ━━━
+    {
+        id: 'g_n2_342', category: 'grammar', level: 'N2', tags: ['deterioration', 'trend'],
+        stem: '物価{ぶっか}は上{あ}がる___で、生活{せいかつ}が苦{くる}しくなっている。',
+        stemZh: '物價一直在漲，生活變得越來越辛苦。',
+        options: [
+            { text: 'ばかり', reason: '正確！「ばかりだ」表示「不斷…」，通常用於惡化趨勢。' },
+            { text: '一方', reason: '「一方だ」也表示「不斷…」，意思相近。' },
+            { text: 'っぱなし', reason: '「っぱなし」表示「一直保持」，語感不同。' },
+            { text: 'つつ', reason: '「つつある」表示「正在…」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ばかりだ」表示某種趨勢只會繼續不會改善',
+            analysis: '「ばかりだ」用於描述某種（通常是不好的）趨勢一直持續，暗示情況只會越來越糟。',
+            comparisons: ['ばかりだ：不斷…（持續惡化）', '一方だ：不斷…（同義）'],
+            commonMistakes: ['○ 上がるばかりだ / × 上がったばかりだ → 用辭書形不用た形（た形是「剛剛…」）'],
+        },
+    },
+    // ━━━ 一方だ (keep ~ing - additional) ━━━
+    {
+        id: 'g_n2_343', category: 'grammar', level: 'N2', tags: ['trend', 'continuation'],
+        stem: '高齢化{こうれいか}が進{すす}む___で、医療費{いりょうひ}の問題{もんだい}が深刻{しんこく}になっている。',
+        stemZh: '高齡化持續加劇，醫療費的問題越來越嚴重。',
+        options: [
+            { text: '一方', reason: '正確！「一方だ」表示「不斷…」，持續一個方向的變化。' },
+            { text: 'ばかり', reason: '「ばかりだ」也表示「不斷…」，意思相近。' },
+            { text: 'あまり', reason: '「あまり」表示「太…」，語意不同。' },
+            { text: '反面', reason: '「反面」表示「另一方面」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「一方だ」表示某個趨勢持續朝一個方向發展',
+            analysis: '「一方だ」與「ばかりだ」意思相近，都表示持續朝某個方向（通常是不好的方向）發展。',
+            comparisons: ['一方だ：不斷…（持續趨勢）', 'ばかりだ：不斷…（同義，更口語）'],
+            commonMistakes: ['○ 進む一方だ / × 進んだ一方だ → 用辭書形'],
+        },
+    },
+    // ━━━ 一方で (on the other hand - additional) ━━━
+    {
+        id: 'g_n2_344', category: 'grammar', level: 'N2', tags: ['contrast', 'parallel'],
+        stem: 'インターネットは便利{べんり}である___、危険{きけん}もたくさんある。',
+        stemZh: '網路很方便，另一方面也有很多危險。',
+        options: [
+            { text: '一方で', reason: '正確！「一方で」表示「另一方面」，對比兩個方面。' },
+            { text: '反面', reason: '「反面」也表示「另一方面」，但限定同一主語的兩面。' },
+            { text: 'ものの', reason: '「ものの」表示「雖然…但是」，不強調並列。' },
+            { text: 'にもかかわらず', reason: '「にもかかわらず」表示「儘管…」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「一方で」用於並列對比兩個不同的方面',
+            analysis: '「一方で」用於提出兩個相對或相反的觀點或事實，進行並列對比。比「反面」的使用範圍更廣。',
+            comparisons: ['一方で：另一方面（並列對比）', '反面：另一方面（同一事物兩面性）'],
+            commonMistakes: ['○ である一方で / × である一方 → 加「で」更自然'],
+        },
+    },
+    // ━━━ に対して (toward / in contrast - additional) ━━━
+    {
+        id: 'g_n2_345', category: 'grammar', level: 'N2', tags: ['contrast', 'direction'],
+        stem: '兄{あに}が理系{りけい}なの___、弟{おとうと}は文系{ぶんけい}だ。',
+        stemZh: '哥哥是理科，相對地弟弟是文科。',
+        options: [
+            { text: 'に対して', reason: '正確！「に対して」在此表示「相對於…」，對比用法。' },
+            { text: 'に反して', reason: '「に反して」表示「與…相反」，語氣過強。' },
+            { text: 'に比べて', reason: '「に比べて」表示「與…相比」，也可以但不強調對比。' },
+            { text: 'と違って', reason: '「と違って」表示「與…不同」，也可以但不夠正式。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に対して」的對比用法',
+            analysis: '「に対して」除了「對於…」的方向性用法外，還有對比兩個事物的用法，表示「相對於A，B是…」。',
+            comparisons: ['に対して（對比）：相對於…（並列對比）', 'に対して（方向）：對於…（對象指向）'],
+            commonMistakes: ['○ 理系なのに対して / × 理系に対して → 對比用法前面用「のに対して」'],
+        },
+    },
+    // ━━━ につき (due to / per - additional) ━━━
+    {
+        id: 'g_n2_346', category: 'grammar', level: 'N2', tags: ['reason', 'formal', 'rate'],
+        stem: '工事中{こうじちゅう}___、この道{みち}は通行{つうこう}禁止{きんし}です。',
+        stemZh: '因為施工中，這條路禁止通行。',
+        options: [
+            { text: 'のため', reason: '「のため」也表示「因為…」，但不如「につき」正式。' },
+            { text: 'につき', reason: '正確！「につき」表示「因為…」，用於告示和正式通知。' },
+            { text: 'から', reason: '「から」表示「因為…」，太口語。' },
+            { text: 'ので', reason: '「ので」表示「因為…」，一般語感。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「につき」用於告示和正式通知的理由說明',
+            analysis: '「につき」有兩個用法：(1)表示原因（用於告示）、(2)表示「每…」（比率）。此題為第一種。',
+            comparisons: ['につき（原因）：因為…（正式告示）', 'につき（比率）：每…（單位換算）'],
+            commonMistakes: ['○ 工事中につき / × 工事につき → 表示正在進行的狀態'],
+        },
+    },
+    // ━━━ につけ (whenever - additional) ━━━
+    {
+        id: 'g_n2_347', category: 'grammar', level: 'N2', tags: ['trigger', 'emotion'],
+        stem: 'この写真{しゃしん}を見{み}る___、学生{がくせい}時代{じだい}を思{おも}い出{だ}す。',
+        stemZh: '每次看到這張照片，就想起學生時代。',
+        options: [
+            { text: 'たびに', reason: '「たびに」也表示「每次…就…」，但語感不同。' },
+            { text: 'につけ', reason: '正確！「につけ」表示「每當…就…」，感情被觸發。' },
+            { text: 'ごとに', reason: '「ごとに」表示「每…」，較客觀。' },
+            { text: 'と', reason: '「と」也可以表示「一…就…」，但太一般。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「につけ」表示每當遇到某事就觸發某種情感',
+            analysis: '「につけ」用於表示每當遇到某個情境就不由自主地產生某種感情或想法。帶有感性的語感。',
+            comparisons: ['につけ：每當…就…（感情觸發）', 'たびに：每次…就…（客觀頻率）'],
+            commonMistakes: ['○ 見るにつけ / × 見たにつけ → 用辭書形'],
+        },
+    },
+    // ━━━ にて (at / by means of - additional) ━━━
+    {
+        id: 'g_n2_348', category: 'grammar', level: 'N2', tags: ['formal', 'location', 'classical'],
+        stem: '第三{だいさん}会議室{かいぎしつ}___、会議{かいぎ}を行{おこな}います。',
+        stemZh: '在第三會議室舉行會議。',
+        options: [
+            { text: 'で', reason: '「で」也表示「在…」，但不夠正式。' },
+            { text: 'にて', reason: '正確！「にて」是「で」的書面語，用於正式場合。' },
+            { text: 'において', reason: '「において」也可以，但更正式且語感不同。' },
+            { text: 'に', reason: '「に」表示存在地點，不表示動作場所。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「にて」是「で」的正式書面語表達',
+            analysis: '「にて」是古語的「で」，現代日語中用於正式的通知、公告、會議場合。比「において」稍微口語一些。',
+            comparisons: ['にて：在…（書面正式）', 'で：在…（口語一般）', 'において：在…（最正式）'],
+            commonMistakes: ['○ 会議室にて / × 会議室でにて → 不能與「で」重複'],
+        },
+    },
+    // ━━━ の下で (under - additional) ━━━
+    {
+        id: 'g_n2_349', category: 'grammar', level: 'N2', tags: ['authority', 'guidance'],
+        stem: '優秀{ゆうしゅう}な指導者{しどうしゃ}___、チームは大{おお}きく成長{せいちょう}した。',
+        stemZh: '在優秀的指導者帶領下，團隊有了很大的成長。',
+        options: [
+            { text: 'のもとで', reason: '正確！「のもとで」表示「在…的指導/影響下」。' },
+            { text: 'のうえで', reason: '「のうえで」表示「在…方面」，語意不同。' },
+            { text: 'によって', reason: '「によって」表示「由…/根據…」，語感不同。' },
+            { text: 'において', reason: '「において」表示「在…」，不表示受到指導。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「のもとで」表示在某人的指導或影響之下',
+            analysis: '「のもとで」用於表示在某個人的指導、監督、影響或庇護之下進行某事。',
+            comparisons: ['のもとで：在…的指導下（人的影響）', 'のもとに：在…的條件下（條件/狀況）'],
+            commonMistakes: ['○ 指導者のもとで / × 指導者のしたで → 「もと」不讀「した」'],
+        },
+    },
+    // ━━━ 及び (and / as well as - additional) ━━━
+    {
+        id: 'g_n2_350', category: 'grammar', level: 'N2', tags: ['formal', 'conjunction'],
+        stem: '受験者{じゅけんしゃ}は筆記{ひっき}試験{しけん}___面接{めんせつ}を受{う}けなければならない。',
+        stemZh: '考生必須接受筆試以及面試。',
+        options: [
+            { text: 'と', reason: '「と」也表示「和」，但不夠正式。' },
+            { text: 'や', reason: '「や」表示列舉部分，不適合只有兩項的場合。' },
+            { text: '及び', reason: '正確！「及び」表示「以及」，正式的連接詞。' },
+            { text: 'または', reason: '「または」表示「或者」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「及び」是正式的「和/以及」',
+            analysis: '「及び」相當於口語的「と」或「そして」，用於正式文書、法律文件、公告等場合。',
+            comparisons: ['及び：以及（正式）', 'と：和（口語）', 'ならびに：以及（更正式，用於並列較大的項目）'],
+            commonMistakes: ['○ 筆記試験及び面接 / × 筆記試験及ぶ面接 → 讀作「および」'],
+        },
+    },
+    // ━━━ あるいは (or / perhaps - additional) ━━━
+    {
+        id: 'g_n2_351', category: 'grammar', level: 'N2', tags: ['formal', 'alternative'],
+        stem: '明日{あした}___明後日{あさって}までに提出{ていしゅつ}してください。',
+        stemZh: '請在明天或者後天之前提交。',
+        options: [
+            { text: 'あるいは', reason: '正確！「あるいは」表示「或者」，正式的選擇表達。' },
+            { text: 'それとも', reason: '「それとも」用於疑問句中的選擇，不適合此句。' },
+            { text: 'もしくは', reason: '「もしくは」也表示「或者」，更正式，用於法律文書。' },
+            { text: 'なお', reason: '「なお」表示「另外」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「あるいは」用於正式場合的選擇',
+            analysis: '「あるいは」相當於口語的「または」，用於列舉可選擇的項目，語氣較正式。',
+            comparisons: ['あるいは：或者（正式）', 'または：或者（一般）', 'もしくは：或者（最正式/法律）'],
+            commonMistakes: ['○ 明日あるいは明後日 / × 明日かあるいは明後日 → 不需要加「か」'],
+        },
+    },
+    // ━━━ わけにはいかない (cannot - additional) ━━━
+    {
+        id: 'g_n2_352', category: 'grammar', level: 'N2', tags: ['impossibility', 'social_obligation'],
+        stem: '約束{やくそく}した以上{いじょう}、今{いま}さらやめる___。',
+        stemZh: '既然已經約好了，事到如今不能說不幹了。',
+        options: [
+            { text: 'ことはない', reason: '「ことはない」表示「不必…」，語意不同。' },
+            { text: 'わけにはいかない', reason: '正確！「わけにはいかない」表示「不能…」，因社會道德因素。' },
+            { text: 'はずがない', reason: '「はずがない」表示「不可能…」，語意不同。' },
+            { text: 'ものではない', reason: '「ものではない」表示「不應該…」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「わけにはいかない」表示因社會義務或道德而不能做某事',
+            analysis: '「わけにはいかない」用於表示雖然想做或物理上能做，但因為社會道德、義務、常識等因素而不能做。',
+            comparisons: ['わけにはいかない：不能…（社會因素）', 'できない：不能…（能力因素）'],
+            commonMistakes: ['○ やめるわけにはいかない / × やめたわけにはいかない → 用辭書形'],
+        },
+    },
+    // ━━━ ないわけにはいかない (must / have to) ━━━
+    {
+        id: 'g_n2_353', category: 'grammar', level: 'N2', tags: ['obligation', 'duty'],
+        stem: '招待{しょうたい}されたのだから、行{い}か___。',
+        stemZh: '既然被邀請了，不去不行。',
+        options: [
+            { text: 'なくてはならない', reason: '「なくてはならない」表示「必須…」，但不強調社會義務。' },
+            { text: 'なければならない', reason: '「なければならない」表示「必須…」，語感較一般。' },
+            { text: 'ないわけにはいかない', reason: '正確！「ないわけにはいかない」表示「不…不行」，因義務感。' },
+            { text: 'ないではいられない', reason: '「ないではいられない」表示「忍不住…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「ないわけにはいかない」是「わけにはいかない」的否定形',
+            analysis: '「ないわけにはいかない」表示「不做…是不行的」，即必須做某事，強調社會義務或道德上的必要性。',
+            comparisons: ['ないわけにはいかない：不…不行（義務感）', 'なければならない：必須…（一般義務）'],
+            commonMistakes: ['○ 行かないわけにはいかない / × 行くないわけにはいかない → 用ない形'],
+        },
+    },
+    // ━━━ ないことはない (not impossible / not that ~) ━━━
+    {
+        id: 'g_n2_354', category: 'grammar', level: 'N2', tags: ['partial_affirmation', 'hedging'],
+        stem: '辛{から}い料理{りょうり}は食{た}べ___が、あまり好{す}きではない。',
+        stemZh: '辛辣的料理不是不能吃，但不太喜歡。',
+        options: [
+            { text: 'ないことはない', reason: '正確！「ないことはない」表示「並非不…/也不是不…」，婉轉肯定。' },
+            { text: 'なくはない', reason: '「なくはない」也可以，意思相同。' },
+            { text: 'ないわけではない', reason: '「ないわけではない」也可以，意思相同。' },
+            { text: 'ないものではない', reason: '「ないものではない」不自然。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ないことはない」用雙重否定表示婉轉的肯定',
+            analysis: '「ないことはない」通過「不是不能」的雙重否定來表達婉轉的肯定，暗示雖然可以但帶有保留。',
+            comparisons: ['ないことはない：也不是不…（婉轉肯定）', 'なくはない：也不是沒有…（同義）'],
+            commonMistakes: ['○ 食べないことはない / × 食べることはない → 後者意為「不必吃」'],
+        },
+    },
+    // ━━━ ようか〜まいか (whether or not - complex) ━━━
+    {
+        id: 'g_n2_355', category: 'grammar', level: 'N2', tags: ['indecision', 'complex'],
+        stem: '本当{ほんとう}のことを言{い}おう___言{い}う___、一晩{ひとばん}中{じゅう}悩{なや}んだ。',
+        stemZh: '要不要說出真相，煩惱了一整夜。',
+        options: [
+            { text: 'か / まいか', reason: '正確！「ようか〜まいか」表示猶豫要不要做某事。' },
+            { text: 'と / まいと', reason: '「ようと〜まいと」表示「無論做不做」，語意不同。' },
+            { text: 'が / まいが', reason: '「ようが〜まいが」表示「不管做不做」，語意不同。' },
+            { text: 'にも / まいにも', reason: '不存在此文法形式。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ようか〜まいか」的猶豫不決用法',
+            analysis: '「ようか〜まいか」表示在做與不做之間猶豫不決。注意五段動詞用「辭書形＋まいか」或「意向形＋まいか」。',
+            comparisons: ['ようか〜まいか：要不要…（猶豫）', 'ようと〜まいと：無論做不做…（讓步）'],
+            commonMistakes: ['○ 言おうか言うまいか / × 言おうか言わまいか → 五段動詞用辭書形接「まい」'],
+        },
+    },
+    // ━━━ としたら / とすれば (if we assume) - additional ━━━
+    {
+        id: 'g_n2_356', category: 'grammar', level: 'N2', tags: ['hypothetical', 'assumption'],
+        stem: 'もし宝{たから}くじに当{あ}たった___、何{なに}に使{つか}いますか。',
+        stemZh: '如果中了彩券的話，你會用來做什麼？',
+        options: [
+            { text: 'ものなら', reason: '「ものなら」表示「如果能…的話」，強調難以實現。' },
+            { text: 'としたら', reason: '正確！「としたら」表示「假如…的話」，假設性提問。' },
+            { text: 'からには', reason: '「からには」表示「既然…」，不是假設。' },
+            { text: '以上は', reason: '「以上は」表示「既然…」，不是假設。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「としたら」用於假設性的情境提問',
+            analysis: '「としたら」用於假設某種情況成立時，詢問或表達相應的反應。與「とすれば」「とすると」同義。',
+            comparisons: ['としたら：假如…的話（假設提問）', 'ものなら：如果能…的話（幾乎不可能）'],
+            commonMistakes: ['○ 当たったとしたら / ○ 当たるとしたら → 用た形或辭書形都可以'],
+        },
+    },
+    // ━━━ だけは (at least - minimal effort) ━━━
+    {
+        id: 'g_n2_357', category: 'grammar', level: 'N2', tags: ['minimum', 'effort'],
+        stem: '時間{じかん}がなくても、宿題{しゅくだい}___やっておいたほうがいい。',
+        stemZh: '即使沒有時間，至少作業該做的要做好。',
+        options: [
+            { text: 'だけは', reason: '正確！「だけは」表示「至少…」，強調最低限度。' },
+            { text: 'だけに', reason: '「だけに」表示「正因為…」，語意不同。' },
+            { text: 'だけで', reason: '「だけで」表示「光是…就」，語意不同。' },
+            { text: 'だけの', reason: '「だけの」表示「相當於…的」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「だけは」強調最低限度該做的事',
+            analysis: '「だけは」用於表示至少某件事是必須做的，即使其他事情無法完成。',
+            comparisons: ['だけは：至少…（最低限度）', 'だけに：正因為…（原因強調）'],
+            commonMistakes: ['○ 宿題だけはやる / × 宿題だけやる → 加「は」強調最低限度'],
+        },
+    },
+    // ━━━ だけのことはある (it was worth - additional) ━━━
+    {
+        id: 'g_n2_358', category: 'grammar', level: 'N2', tags: ['worth', 'recognition'],
+        stem: '一流{いちりゅう}大学{だいがく}を出{で}た___、彼{かれ}の知識{ちしき}は幅広{はばひろ}い。',
+        stemZh: '不愧是一流大學畢業的，他的知識很廣泛。',
+        options: [
+            { text: 'だけに', reason: '「だけに」表示「正因為…」，但不帶「不愧是」的語感。' },
+            { text: 'だけあって', reason: '「だけあって」也表示「不愧是…」，意思相同。' },
+            { text: 'だけのことはあって', reason: '正確！「だけのことはあって」表示「不愧是…/果然名不虛傳」。' },
+            { text: 'ばかりに', reason: '「ばかりに」表示「只因為…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「だけのことはある」表示名副其實、不愧是',
+            analysis: '「だけのことはある」用於表示某人或某事的表現與其背景或名聲相符，表示「果然名不虛傳」。',
+            comparisons: ['だけのことはある：不愧是…（完整形）', 'だけあって：不愧是…（簡略形）'],
+            commonMistakes: ['○ 出ただけのことはあって / × 出るだけのことはあって → 用た形表示已有的背景'],
+        },
+    },
+    // ━━━ 果たして (as expected / really?) ━━━
+    {
+        id: 'g_n2_359', category: 'grammar', level: 'N2', tags: ['doubt', 'confirmation'],
+        stem: '___彼{かれ}の言{い}うことは本当{ほんとう}なのだろうか。',
+        stemZh: '他說的話真的是真的嗎？',
+        options: [
+            { text: 'もしや', reason: '「もしや」表示「莫非…」，語感不同。' },
+            { text: 'まさか', reason: '「まさか」表示「不會吧…」，語感不同。' },
+            { text: '果たして', reason: '正確！「果たして」表示「真的…嗎？」，帶有疑問和懷疑。' },
+            { text: 'いったい', reason: '「いったい」表示「到底…」，也表疑問但語感不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「果たして」帶有懷疑或期待的疑問語氣',
+            analysis: '「果たして」有兩個用法：(1)「真的…嗎？」（懷疑）、(2)「果然…」（確認預期）。此題為第一種。',
+            comparisons: ['果たして（懷疑）：真的…嗎？', '果たして（確認）：果然…/如預期地…'],
+            commonMistakes: ['○ 果たして本当なのだろうか / × 果たして本当だ → 懷疑用法後面用疑問形式'],
+        },
+    },
+    // ━━━ 恐らく (probably - additional) ━━━
+    {
+        id: 'g_n2_360', category: 'grammar', level: 'N2', tags: ['speculation', 'probability'],
+        stem: '___、この計画{けいかく}は成功{せいこう}するだろう。',
+        stemZh: '恐怕這個計畫會成功吧。',
+        options: [
+            { text: '恐らく', reason: '正確！「恐らく」表示「恐怕…/大概…」，較高確信的推測。' },
+            { text: '多分', reason: '「多分」也表示「大概」，但較口語。' },
+            { text: 'もしかしたら', reason: '「もしかしたら」表示「也許…」，確信度較低。' },
+            { text: 'きっと', reason: '「きっと」表示「一定…」，確信度過高。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「恐らく」是書面語的推測表達',
+            analysis: '「恐らく」用於表示較高確信度的推測，比「多分」正式，常用於書面語或演講。',
+            comparisons: ['恐らく：恐怕…（書面高確信）', '多分：大概…（口語中確信）', 'もしかしたら：也許…（低確信）'],
+            commonMistakes: ['○ 恐らく成功するだろう / × 恐らく成功する → 後面常搭配「だろう」「と思われる」'],
+        },
+    },
+    // ━━━ 幸いなことに (fortunately) - additional ━━━
+    {
+        id: 'g_n2_361', category: 'grammar', level: 'N2', tags: ['fortune', 'relief'],
+        stem: '___、怪我人{けがにん}は出{で}なかった。',
+        stemZh: '幸運的是，沒有出現傷者。',
+        options: [
+            { text: '残念なことに', reason: '「残念なことに」表示「遺憾的是…」，語意相反。' },
+            { text: '幸いなことに', reason: '正確！「幸いなことに」表示「幸運的是…」。' },
+            { text: '驚いたことに', reason: '「驚いたことに」表示「令人驚訝的是…」，語感不同。' },
+            { text: '困ったことに', reason: '「困ったことに」表示「麻煩的是…」，語意相反。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「幸いなことに」用於表達對好結果的慶幸',
+            analysis: '「幸いなことに」用於引出一個好的結果或情況，表達說話者的慶幸和安心。',
+            comparisons: ['幸いなことに：幸運的是…', '残念なことに：遺憾的是…', '困ったことに：麻煩的是…'],
+            commonMistakes: ['○ 幸いなことに / ○ 幸い / ○ 幸いにも → 三種都可以使用'],
+        },
+    },
+    // ━━━ ことに (to one's ~ - additional) ━━━
+    {
+        id: 'g_n2_362', category: 'grammar', level: 'N2', tags: ['emotion', 'emphasis'],
+        stem: '嬉{うれ}しい___、第一志望{だいいちしぼう}の大学{だいがく}に合格{ごうかく}した。',
+        stemZh: '令人高興的是，考上了第一志願的大學。',
+        options: [
+            { text: 'ことに', reason: '正確！「ことに」表示「令人…的是」。' },
+            { text: 'ことか', reason: '「ことか」表示「多麼…啊！」，用法不同。' },
+            { text: 'ことだ', reason: '「ことだ」表示建議「應該…」，語意不同。' },
+            { text: 'ことから', reason: '「ことから」表示「因為…的緣故」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「感情形容詞＋ことに」引出令人…的事情',
+            analysis: '「ことに」前面接感情形容詞（嬉しい、悲しい、驚いた等），用於先表達感情再敘述引起該感情的事件。',
+            comparisons: ['ことに：令人…的是（先感情後事件）', 'ことか：多麼…啊（純感嘆）'],
+            commonMistakes: ['○ 嬉しいことに / × 嬉しくことに → 用原形接「ことに」'],
+        },
+    },
+    // ━━━ からすると (judging from - additional) ━━━
+    {
+        id: 'g_n2_363', category: 'grammar', level: 'N2', tags: ['judgment', 'perspective'],
+        stem: '彼{かれ}の表情{ひょうじょう}___、何{なに}か嫌{いや}なことがあったらしい。',
+        stemZh: '從他的表情來看，好像發生了什麼不愉快的事。',
+        options: [
+            { text: 'からすると', reason: '正確！「からすると」表示「從…來看/判斷」。' },
+            { text: 'からして', reason: '「からして」表示「光從…就」，語感不同。' },
+            { text: 'からには', reason: '「からには」表示「既然…」，語意不同。' },
+            { text: 'からこそ', reason: '「からこそ」表示「正因為…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「からすると」用於根據觀察做出判斷',
+            analysis: '「からすると」用於根據某個可觀察到的跡象或線索來做出推測或判斷。',
+            comparisons: ['からすると：從…來看（根據觀察判斷）', 'からして：光從…就（強調起點）'],
+            commonMistakes: ['○ 表情からすると / ○ 表情からすれば → 兩種都可以'],
+        },
+    },
+    // ━━━ から見ると (from the perspective of - additional) ━━━
+    {
+        id: 'g_n2_364', category: 'grammar', level: 'N2', tags: ['perspective', 'judgment'],
+        stem: '専門家{せんもんか}の目{め}___、この計画{けいかく}にはいくつかの問題{もんだい}がある。',
+        stemZh: '從專家的角度來看，這個計畫有幾個問題。',
+        options: [
+            { text: 'に対して', reason: '「に対して」表示「對於…」，語意不同。' },
+            { text: 'によると', reason: '「によると」表示「根據…（消息來源）」，語感不同。' },
+            { text: 'から見ると', reason: '正確！「から見ると」表示「從…的角度來看」。' },
+            { text: 'にしたら', reason: '「にしたら」表示「站在…的角度」，語感不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「から見ると」根據某個視角或觀點來評價',
+            analysis: '「から見ると」用於從某個特定的視角、立場或觀點來觀察和評價事物。',
+            comparisons: ['から見ると：從…角度來看（評價）', 'からすると：從…來看（判斷推測）', 'によると：根據…（消息來源）'],
+            commonMistakes: ['○ 専門家の目から見ると / ○ 専門家から見ると → 兩種都可以'],
+        },
+    },
+    // ━━━ から言うと (from the standpoint of - additional) ━━━
+    {
+        id: 'g_n2_365', category: 'grammar', level: 'N2', tags: ['standpoint', 'opinion'],
+        stem: '文法{ぶんぽう}の点{てん}___、この文{ぶん}は正{ただ}しくない。',
+        stemZh: '從文法的角度來說，這個句子不正確。',
+        options: [
+            { text: 'から言うと', reason: '正確！「から言うと」表示「從…來說」。' },
+            { text: 'から見ると', reason: '「から見ると」表示「從…來看」，也可以但語感不同。' },
+            { text: 'について', reason: '「について」表示「關於…」，語意不同。' },
+            { text: 'に関して', reason: '「に関して」表示「關於…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「から言うと」從某個觀點來陳述意見',
+            analysis: '「から言うと」用於從某個特定的觀點或標準來進行評價或陳述意見，與「から言えば」同義。',
+            comparisons: ['から言うと：從…來說（陳述意見）', 'から見ると：從…來看（觀察評價）'],
+            commonMistakes: ['○ 文法の点から言うと / ○ 文法的に言うと → 兩種都可以'],
+        },
+    },
+    // ━━━ ところを見ると (judging from - additional) ━━━
+    {
+        id: 'g_n2_366', category: 'grammar', level: 'N2', tags: ['observation', 'inference'],
+        stem: '彼{かれ}が笑{わら}っている___、良{よ}い結果{けっか}だったのだろう。',
+        stemZh: '看到他在笑，結果大概很好吧。',
+        options: [
+            { text: 'ところを見ると', reason: '正確！「ところを見ると」表示「從…的情況來看」。' },
+            { text: 'からすると', reason: '「からすると」也表示「從…來看」，但不強調「觀察到」。' },
+            { text: 'ところに', reason: '「ところに」表示「正當…時」，語意不同。' },
+            { text: 'ところで', reason: '「ところで」表示「即使…」或「對了」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ところを見ると」根據觀察到的情況做推測',
+            analysis: '「ところを見ると」用於根據親眼觀察到的某個情況或跡象來做出推測或判斷。',
+            comparisons: ['ところを見ると：看到…來判斷（親眼觀察）', 'からすると：從…來看（一般判斷）'],
+            commonMistakes: ['○ 笑っているところを見ると / × 笑ったところを見ると → 用ている形表示觀察到的當前狀態'],
+        },
+    },
+    // ━━━ としても (even if - additional) ━━━
+    {
+        id: 'g_n2_367', category: 'grammar', level: 'N2', tags: ['concession', 'hypothetical'],
+        stem: 'たとえ失敗{しっぱい}した___、挑戦{ちょうせん}したことに意味{いみ}がある。',
+        stemZh: '即使失敗了，挑戰本身也有意義。',
+        options: [
+            { text: 'としても', reason: '正確！「としても」表示「即使…也…」，假設性讓步。' },
+            { text: 'にしても', reason: '「にしても」也可以，但語感略有不同。' },
+            { text: 'ところで', reason: '「ところで」表示「即使…也（徒勞）」，語氣太消極。' },
+            { text: 'にせよ', reason: '「にせよ」也可以，較書面。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「としても」用於假設性的讓步條件',
+            analysis: '「としても」用於假設某種情況即使發生，結論也不會改變。常與「たとえ」搭配。',
+            comparisons: ['としても：即使…也（假設讓步）', 'にしても：即使…也（事實讓步）'],
+            commonMistakes: ['○ 失敗したとしても / × 失敗としても → 動詞用た形接續'],
+        },
+    },
+    // ━━━ として〜ない (not even one - additional) ━━━
+    {
+        id: 'g_n2_368', category: 'grammar', level: 'N2', tags: ['emphasis', 'complete_negation'],
+        stem: 'この問題{もんだい}に正解{せいかい}できた学生{がくせい}は一人{ひとり}___いなかった。',
+        stemZh: '這個問題能答對的學生連一個都沒有。',
+        options: [
+            { text: 'として', reason: '正確！「として〜ない」表示「連一個…也沒有」。' },
+            { text: 'でも', reason: '「でも」表示「連…也」，可以但語感不同。' },
+            { text: 'さえ', reason: '「さえ」表示「連…也」，可以但語感不同。' },
+            { text: 'すら', reason: '「すら」表示「連…也」，可以但較書面。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「一＋量詞＋として〜ない」表示完全沒有',
+            analysis: '「として〜ない」與數量詞「一つ」「一人」等搭配，表示「連一個都沒有」，強調完全不存在。',
+            comparisons: ['として〜ない：連一個…也沒有（完全否定）', 'さえ〜ない：連…也沒有（最低標準都不滿足）'],
+            commonMistakes: ['○ 一人としていなかった / × 一人としていた → 後面必須是否定'],
+        },
+    },
+    // ━━━ にもかかわらず (despite - complex sentence) ━━━
+    {
+        id: 'g_n2_369', category: 'grammar', level: 'N2', tags: ['concession', 'complex'],
+        stem: '彼{かれ}は体調{たいちょう}が悪{わる}い___、毎日{まいにち}残業{ざんぎょう}を続{つづ}けている。',
+        stemZh: '儘管身體不舒服，他仍然每天繼續加班。',
+        options: [
+            { text: 'にもかかわらず', reason: '正確！「にもかかわらず」表示「儘管…卻…」。' },
+            { text: 'にかかわらず', reason: '「にかかわらず」表示「不論…」，語意不同。' },
+            { text: 'わりに', reason: '「わりに」表示「雖然…但是」，語氣太輕。' },
+            { text: 'にしたところで', reason: '「にしたところで」表示「即使…也」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「にもかかわらず」在複雜句型中的使用',
+            analysis: '「にもかかわらず」可以接在各種詞性後面：名詞、な形容詞（である/な/にもかかわらず）、い形容詞、動詞。',
+            comparisons: ['にもかかわらず：儘管…（正式讓步）', 'にかかわらず：不論…（不受影響）'],
+            commonMistakes: ['○ 悪いにもかかわらず / ○ 悪いのにもかかわらず → 形容詞兩種接法都可以'],
+        },
+    },
+    // ━━━ ものの (although - complex context) ━━━
+    {
+        id: 'g_n2_370', category: 'grammar', level: 'N2', tags: ['concession', 'complex'],
+        stem: '計画{けいかく}を立{た}てた___、実行{じっこう}に移{うつ}せないでいる。',
+        stemZh: '雖然制定了計畫，卻遲遲無法付諸實行。',
+        options: [
+            { text: 'のに', reason: '「のに」也可以，但帶有不滿語氣。' },
+            { text: 'けれども', reason: '「けれども」也可以，但較一般。' },
+            { text: 'ものの', reason: '正確！「ものの」表示「雖然…但是…」，書面語的冷靜讓步。' },
+            { text: 'としても', reason: '「としても」表示「即使…」，是假設不是事實。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「ものの」表達冷靜客觀的讓步',
+            analysis: '「ものの」用於承認前項事實但後項與之矛盾，語氣冷靜客觀，不帶感情色彩。常用於書面語。',
+            comparisons: ['ものの：雖然…但是（冷靜客觀）', 'のに：雖然…但是（不滿失望）'],
+            commonMistakes: ['○ 立てたものの / × 立てるものの → 常用た形接續'],
+        },
+    },
+    // ━━━ ことなく (without doing - additional) ━━━
+    {
+        id: 'g_n2_371', category: 'grammar', level: 'N2', tags: ['negation', 'without'],
+        stem: '彼女{かのじょ}は一度{いちど}も諦{あきら}める___、夢{ゆめ}を追{お}い続{つづ}けた。',
+        stemZh: '她一次也沒有放棄，持續追逐夢想。',
+        options: [
+            { text: 'ことなく', reason: '正確！「ことなく」表示「沒有…地」，書面語的否定。' },
+            { text: 'ないで', reason: '「ないで」也表示「沒有…」，但較口語。' },
+            { text: 'ずに', reason: '「ずに」也表示「沒有…」，但語感不同。' },
+            { text: 'なしに', reason: '「なしに」表示「沒有…」，但接名詞。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ことなく」是書面語的否定連接',
+            analysis: '「ことなく」相當於口語的「ないで」「ずに」，用於書面語中連接兩個句子，表示「在不…的情況下」。',
+            comparisons: ['ことなく：沒有…地（書面）', 'ないで：沒有…地（口語）', 'ずに：沒有…地（較正式）'],
+            commonMistakes: ['○ 諦めることなく / × 諦めたことなく → 用辭書形接「ことなく」'],
+        },
+    },
+    // ━━━ 抜く (do thoroughly - additional) ━━━
+    {
+        id: 'g_n2_372', category: 'grammar', level: 'N2', tags: ['completion', 'persistence'],
+        stem: '長{なが}いマラソンを最後{さいご}まで走{はし}り___。',
+        stemZh: '把漫長的馬拉松一直跑到最後。',
+        options: [
+            { text: '抜いた', reason: '正確！「抜く」表示「做到底/徹底完成」。' },
+            { text: '切った', reason: '「切る」也表示「做完」，但強調完結。' },
+            { text: '通した', reason: '「通す」表示「貫徹」，語感不同。' },
+            { text: '続けた', reason: '「続ける」表示「繼續…」，不強調完成。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「抜く」表示堅持到底、徹底完成',
+            analysis: '「動詞連用形＋抜く」表示把某件困難的事情堅持到最後完成，強調毅力和決心。',
+            comparisons: ['抜く：做到底（堅持完成）', '切る：做完（徹底結束）', '通す：貫徹（保持一致）'],
+            commonMistakes: ['○ 走り抜いた / × 走る抜いた → 用連用形接「抜く」'],
+        },
+    },
+    // ━━━ をこめて (with ~ in mind - additional) ━━━
+    {
+        id: 'g_n2_373', category: 'grammar', level: 'N2', tags: ['emotion', 'dedication'],
+        stem: '感謝{かんしゃ}の気持{きも}ち___、手紙{てがみ}を書{か}いた。',
+        stemZh: '帶著感謝的心情寫了信。',
+        options: [
+            { text: 'をこめて', reason: '正確！「をこめて」表示「傾注…/帶著…」。' },
+            { text: 'を通じて', reason: '「を通じて」表示「透過…」，語意不同。' },
+            { text: 'をもとに', reason: '「をもとに」表示「以…為基礎」，語意不同。' },
+            { text: 'を契機に', reason: '「を契機に」表示「以…為契機」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「をこめて」表示將感情或心意傾注其中',
+            analysis: '「をこめて」用於表示在做某事時傾注了某種感情或心意，常見搭配：心をこめて、感謝の気持ちをこめて、愛をこめて。',
+            comparisons: ['をこめて：帶著…（傾注感情）', 'のために：為了…（目的）'],
+            commonMistakes: ['○ 気持ちをこめて / × 気持ちがこめて → 用「を」不用「が」'],
+        },
+    },
+    // ━━━ や否や (as soon as - additional) ━━━
+    {
+        id: 'g_n2_374', category: 'grammar', level: 'N2', tags: ['immediate', 'literary'],
+        stem: 'ベルが鳴{な}る___、学生{がくせい}たちは教室{きょうしつ}から飛{と}び出{だ}した。',
+        stemZh: '鈴聲一響，學生們就從教室衝了出來。',
+        options: [
+            { text: 'が早いか', reason: '「が早いか」也表示「一…就」，但用法不同。' },
+            { text: 'や否や', reason: '正確！「や否や」表示「剛一…就…」，文學性表達。' },
+            { text: '次第', reason: '「次第」也表示「一…就」，但用於承諾。' },
+            { text: 'とたんに', reason: '「とたんに」也表示「一…就」，但用た形接續。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「や否や」表示動作之間幾乎沒有間隔',
+            analysis: '「や否や」用辭書形接續，表示前一個動作剛開始或完成就立刻發生後面的動作。語氣文學性較強。',
+            comparisons: ['や否や：剛…就…（文學性）', 'とたんに：一…就…（口語）', '次第：一…就…（鄭重承諾）'],
+            commonMistakes: ['○ 鳴るや否や / × 鳴ったや否や → 用辭書形不用た形'],
+        },
+    },
+    // ━━━ か〜ないかのうちに (no sooner than - additional) ━━━
+    {
+        id: 'g_n2_375', category: 'grammar', level: 'N2', tags: ['immediate', 'speed'],
+        stem: '目{め}を閉{と}じた___閉{と}じない___のうちに、すぐに眠{ねむ}ってしまった。',
+        stemZh: '眼睛才剛一閉，馬上就睡著了。',
+        options: [
+            { text: 'か / か', reason: '正確！「〜たか〜ないかのうちに」表示幾乎同時發生。' },
+            { text: 'や / や', reason: '「〜や〜や」不是正確的文法形式。' },
+            { text: 'と / と', reason: '「〜と〜と」不是正確的文法形式。' },
+            { text: 'も / も', reason: '「〜も〜も」表示「都…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「〜たか〜ないかのうちに」表示動作還沒完成就發生了下一件事',
+            analysis: '「動詞た形＋か＋動詞ない形＋かのうちに」表示前一個動作還沒有完全完成，後一個動作就已經發生了。',
+            comparisons: ['か〜ないかのうちに：還沒…就…（極快）', 'や否や：剛…就…（文學性）'],
+            commonMistakes: ['○ 閉じたか閉じないかのうちに / × 閉じるか閉じないかのうちに → 第一個動詞用た形'],
+        },
+    },
+    // ━━━ ところだった (almost / nearly - additional) ━━━
+    {
+        id: 'g_n2_376', category: 'grammar', level: 'N2', tags: ['near_miss', 'danger'],
+        stem: 'もう少{すこ}しで車{くるま}にひかれる___。',
+        stemZh: '差一點就被車撞了。',
+        options: [
+            { text: 'ところだった', reason: '正確！「ところだった」表示「差一點就…」。' },
+            { text: 'ところだ', reason: '「ところだ」表示「正要…」或「剛…」，語意不同。' },
+            { text: 'ところに', reason: '「ところに」表示「正當…時」，語意不同。' },
+            { text: 'ところで', reason: '「ところで」表示「即使…」或「對了」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ところだった」表示差一點就發生的危險事',
+            analysis: '「ところだった」用於描述某件壞事差一點就要發生了，但最終沒有發生。常與「もう少しで」搭配。',
+            comparisons: ['ところだった：差一點就…（險些發生）', 'ところだ：正要…/剛…（時間點）'],
+            commonMistakes: ['○ ひかれるところだった / × ひかれたところだった → 用辭書形表示「差一點就要…」'],
+        },
+    },
+    // ━━━ てまで (to the extent of - additional) ━━━
+    {
+        id: 'g_n2_377', category: 'grammar', level: 'N2', tags: ['extreme', 'sacrifice'],
+        stem: '健康{けんこう}を犠牲{ぎせい}にし___、働{はたら}く必要{ひつよう}はない。',
+        stemZh: '沒有必要犧牲健康到那個地步去工作。',
+        options: [
+            { text: 'てまで', reason: '正確！「てまで」表示「甚至不惜…也要/沒必要…到那地步」。' },
+            { text: 'てこそ', reason: '「てこそ」表示「只有…才」，語意不同。' },
+            { text: 'てでも', reason: '「てでも」表示「即使…也要」，語意不同。' },
+            { text: 'てから', reason: '「てから」表示「做了…之後」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「てまで」表示做到某種極端程度',
+            analysis: '「てまで」用於表示做某事到了過度或極端的程度，帶有「沒必要到那個地步」或「居然到那個地步」的語感。',
+            comparisons: ['てまで：甚至…到那地步（過度）', 'てでも：即使…也要（決心）'],
+            commonMistakes: ['○ 犠牲にしてまで / × 犠牲にするまで → 用て形接「まで」'],
+        },
+    },
+    // ━━━ てでも (even if one has to - additional) ━━━
+    {
+        id: 'g_n2_378', category: 'grammar', level: 'N2', tags: ['determination', 'sacrifice'],
+        stem: '借金{しゃっきん}し___、子{こ}どもの学費{がくひ}は払{はら}いたい。',
+        stemZh: '即使借錢也想付孩子的學費。',
+        options: [
+            { text: 'てまで', reason: '「てまで」表示「到…的程度」，語感不同。' },
+            { text: 'てこそ', reason: '「てこそ」表示「只有…才」，語意不同。' },
+            { text: 'てでも', reason: '正確！「てでも」表示「即使不惜…也要…」。' },
+            { text: 'ても', reason: '「ても」表示「即使…也」，語氣不夠強烈。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「てでも」表示即使做出犧牲也要完成某事',
+            analysis: '「てでも」用於表達即使需要做出某種犧牲或付出代價也要實現某個目標的強烈決心。',
+            comparisons: ['てでも：即使…也要（強烈決心）', 'てまで：到…的地步（批評過度）'],
+            commonMistakes: ['○ 借金してでも / × 借金するでも → 用て形接「でも」'],
+        },
+    },
+    // ━━━ て当然だ (natural / no wonder - additional) ━━━
+    {
+        id: 'g_n2_379', category: 'grammar', level: 'N2', tags: ['natural', 'expected'],
+        stem: 'あれだけ練習{れんしゅう}したのだから、上手{じょうず}になっ___。',
+        stemZh: '練習了那麼多，變厲害也是理所當然的。',
+        options: [
+            { text: 'て当然だ', reason: '正確！「て当然だ」表示「…是理所當然的」。' },
+            { text: 'てたまらない', reason: '「てたまらない」表示「…得受不了」，語意不同。' },
+            { text: 'てならない', reason: '「てならない」表示「…得不行」，語意不同。' },
+            { text: 'てこそ', reason: '「てこそ」表示「只有…才」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「て当然だ」表示某結果是理所當然的',
+            analysis: '「て当然だ」用於表示根據前面的條件或情況，某個結果是可以預期的、理所當然的。',
+            comparisons: ['て当然だ：…是理所當然的', 'ても当然だ：即使…也是理所當然的', 'のも無理はない：…也是難怪的'],
+            commonMistakes: ['○ 上手になって当然だ / × 上手になる当然だ → 用て形接「当然だ」'],
+        },
+    },
+    // ━━━ てはならない (must not - additional) ━━━
+    {
+        id: 'g_n2_380', category: 'grammar', level: 'N2', tags: ['prohibition', 'formal'],
+        stem: 'いかなる理由{りゆう}があっても、差別{さべつ}をし___。',
+        stemZh: '不管有什麼理由，都不可以歧視。',
+        options: [
+            { text: 'てはいけない', reason: '「てはいけない」也表示「不可以…」，但不夠正式。' },
+            { text: 'てはならない', reason: '正確！「てはならない」表示「不可以…」，正式的禁止。' },
+            { text: 'べきではない', reason: '「べきではない」表示「不應該…」，語氣不同。' },
+            { text: 'ものではない', reason: '「ものではない」表示「不應該…」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「てはならない」是最正式的禁止表達',
+            analysis: '「てはならない」用於表示嚴肅的禁止，常見於法律、規則、道德宣言等正式場合。',
+            comparisons: ['てはならない：不可以…（正式禁止）', 'てはいけない：不可以…（一般禁止）', 'ものではない：不應該…（道德勸誡）'],
+            commonMistakes: ['○ 差別をしてはならない / × 差別してはならない → 加「を」更正式'],
+        },
+    },
+    // ━━━ ては〜ては (repeatedly - additional) ━━━
+    {
+        id: 'g_n2_381', category: 'grammar', level: 'N2', tags: ['repetition', 'routine'],
+        stem: '食{た}べ___寝{ね}___の繰{く}り返{かえ}しで、太{ふと}ってしまった。',
+        stemZh: '反覆地吃了又睡、睡了又吃，結果胖了。',
+        options: [
+            { text: 'ては / ては', reason: '正確！「ては〜ては」表示「又…又…」的重複動作。' },
+            { text: 'たり / たり', reason: '「たり〜たり」也表示列舉，但不強調反覆。' },
+            { text: 'て / て', reason: '「て〜て」表示動作連續，不強調反覆。' },
+            { text: 'ながら / ながら', reason: '「ながら〜ながら」不自然。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ては〜ては」表示兩個動作反覆交替進行',
+            analysis: '「ては〜ては」用於描述兩個動作反覆交替進行的狀態，常帶有無奈或厭煩的語氣。',
+            comparisons: ['ては〜ては：又…又…（反覆交替）', 'たり〜たり：…啦…啦（列舉）'],
+            commonMistakes: ['○ 食べては寝ては / × 食べてと寝てと → 用「ては」不用「てと」'],
+        },
+    },
+    // ━━━ ようではないか (let's / why don't we - additional) ━━━
+    {
+        id: 'g_n2_382', category: 'grammar', level: 'N2', tags: ['invitation', 'formal'],
+        stem: 'みんなで力{ちから}を合{あ}わせて、この困難{こんなん}を乗{の}り越{こ}え___。',
+        stemZh: '讓我們大家齊心協力來克服這個困難吧。',
+        options: [
+            { text: 'ましょう', reason: '「ましょう」也表示「讓我們…」，但不夠莊重。' },
+            { text: 'よう', reason: '「よう」也表示「讓我們…」，太一般。' },
+            { text: 'ようではないか', reason: '正確！「ようではないか」表示「讓我們…吧」，莊重的呼籲。' },
+            { text: 'ことだ', reason: '「ことだ」表示「應該…」，語意不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「ようではないか」用於莊重的呼籲或號召',
+            analysis: '「ようではないか」是較為莊重的邀請或號召表達，常用於演講、領導對群眾的呼籲。',
+            comparisons: ['ようではないか：讓我們…吧（莊重呼籲）', 'ましょう：讓我們…吧（一般邀請）'],
+            commonMistakes: ['○ 乗り越えようではないか / × 乗り越えるではないか → 用意向形'],
+        },
+    },
+    // ━━━ ようが (no matter how - additional) ━━━
+    {
+        id: 'g_n2_383', category: 'grammar', level: 'N2', tags: ['strong_concession', 'determination'],
+        stem: '誰{だれ}に何{なに}と言{い}われ___、自分{じぶん}の信念{しんねん}を貫{つらぬ}く。',
+        stemZh: '不管誰說了什麼，都要貫徹自己的信念。',
+        options: [
+            { text: 'ても', reason: '「ても」也表示「即使…也」，但語氣不夠強烈。' },
+            { text: 'ようが', reason: '正確！「ようが」表示「無論…也…」，強烈讓步。' },
+            { text: 'たところで', reason: '「たところで」表示「即使…也（徒勞）」，語氣消極。' },
+            { text: 'にしても', reason: '「にしても」表示「即使…」，語氣較溫和。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ようが」表示無論如何都不會動搖',
+            analysis: '「ようが」用意向形接續，表示無論發生什麼，後面的決心或結論都不會改變。語氣非常強烈。',
+            comparisons: ['ようが：無論…也…（最強讓步）', 'ても：即使…也…（一般讓步）'],
+            commonMistakes: ['○ 言われようが / × 言われるようが → 用意向形（被動意向形）'],
+        },
+    },
+    // ━━━ ようにも〜ない (can't even if want to - additional) ━━━
+    {
+        id: 'g_n2_384', category: 'grammar', level: 'N2', tags: ['impossibility', 'frustration'],
+        stem: '仕事{しごと}が忙{いそが}しくて、休{やす}み___休{やす}めない。',
+        stemZh: '工作太忙了，想休息也沒辦法休息。',
+        options: [
+            { text: 'たくても', reason: '「たくても」也可以表示「即使想…也」，但語感不同。' },
+            { text: 'ようにも', reason: '正確！「ようにも〜ない」表示「想…也做不到」。' },
+            { text: 'ようとしても', reason: '「ようとしても」表示「即使試圖…也」，語感不同。' },
+            { text: 'ないでは', reason: '「ないでは」不自然。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ようにも〜ない」表示想做某事卻無法實現',
+            analysis: '「意向形＋にも＋可能否定形」表示即使主觀上想做某事，客觀條件或環境卻不允許。帶有無奈和挫折感。',
+            comparisons: ['ようにも〜ない：想…也（做不到）（環境阻礙）', 'たくても〜ない：即使想…也（不能）（一般）'],
+            commonMistakes: ['○ 休もうにも休めない / × 休むようにも休めない → 用意向形'],
+        },
+    },
+    // ━━━ がち (tend to / prone to) ━━━
+    {
+        id: 'g_n2_385', category: 'grammar', level: 'N2', tags: ['tendency', 'negative'],
+        stem: '冬{ふゆ}は風邪{かぜ}をひき___だ。',
+        stemZh: '冬天容易感冒。',
+        options: [
+            { text: 'がち', reason: '正確！「がち」表示「容易…/動不動就…」，通常用於負面傾向。' },
+            { text: 'っぽい', reason: '「っぽい」表示「…似的/容易…」，語感不同。' },
+            { text: 'やすい', reason: '「やすい」表示「容易…」，較中性。' },
+            { text: 'げ', reason: '「げ」表示「看起來…的樣子」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「がち」表示容易出現的負面傾向',
+            analysis: '「がち」用於表示某事容易反覆發生，通常帶有負面含義。接在動詞連用形或名詞後。',
+            comparisons: ['がち：容易…（負面傾向）', 'やすい：容易…（中性）', 'っぽい：像…（性質似乎）'],
+            commonMistakes: ['○ ひきがち / × ひくがち → 用連用形（ます形去ます）'],
+        },
+    },
+    // ━━━ げ (seeming / appearing) - additional ━━━
+    {
+        id: 'g_n2_386', category: 'grammar', level: 'N2', tags: ['appearance', 'impression'],
+        stem: '彼{かれ}は何{なに}か言{い}いた___な顔{かお}をしている。',
+        stemZh: '他露出一副好像想說什麼的表情。',
+        options: [
+            { text: 'そう', reason: '「そう」也表示「看起來…」，但接續不同。' },
+            { text: 'げ', reason: '正確！「げ」表示「看起來…的樣子」，修飾外表或態度。' },
+            { text: 'っぽい', reason: '「っぽい」表示「像…的」，語感不同。' },
+            { text: 'らしい', reason: '「らしい」表示「好像…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「げ」用於描述從外表看到的某種感覺',
+            analysis: '「げ」接在形容詞語幹或某些動詞後，表示「看起來…的樣子」。修飾名詞時加「な」。',
+            comparisons: ['げ：看起來…的樣子（外在印象）', 'そう：看起來…（推測）'],
+            commonMistakes: ['○ 言いたげ / × 言いたいげ → 去掉「い」接「げ」'],
+        },
+    },
+    // ━━━ かと思ったら (just when I thought - additional) ━━━
+    {
+        id: 'g_n2_387', category: 'grammar', level: 'N2', tags: ['surprise', 'sudden_change'],
+        stem: '泣{な}いていた___、急{きゅう}に笑{わら}い出{だ}した。',
+        stemZh: '以為在哭，突然又笑了出來。',
+        options: [
+            { text: 'と思ったら', reason: '「と思ったら」也可以，但不如「かと思ったら」自然。' },
+            { text: 'かと思ったら', reason: '正確！「かと思ったら」表示「剛以為…忽然就…」。' },
+            { text: 'ところに', reason: '「ところに」表示「正當…時」，語感不同。' },
+            { text: 'とたんに', reason: '「とたんに」表示「一…就」，不帶「以為」的語感。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「かと思ったら」表示出乎意料的快速變化',
+            analysis: '「かと思ったら」用於描述事情在極短時間內發生了意外的變化，說話者對此感到驚訝。',
+            comparisons: ['かと思ったら：剛以為…忽然（驚訝變化）', 'かと思うと：一…就…（同義）'],
+            commonMistakes: ['○ 泣いていたかと思ったら / × 泣くかと思ったら → 前面用ていた形更自然'],
+        },
+    },
+    // ━━━ ところに / ところへ (just when / right at that moment) ━━━
+    {
+        id: 'g_n2_388', category: 'grammar', level: 'N2', tags: ['timing', 'interruption'],
+        stem: '出{で}かけようとしている___、友達{ともだち}から電話{でんわ}がかかってきた。',
+        stemZh: '正要出門的時候，朋友打電話來了。',
+        options: [
+            { text: 'ところに', reason: '正確！「ところに」表示「正當…的時候」。' },
+            { text: 'ところで', reason: '「ところで」表示「即使…」或「對了」，語意不同。' },
+            { text: 'ところが', reason: '「ところが」表示「然而」，語意不同。' },
+            { text: 'ところを', reason: '「ところを」表示「正…的時候（被…）」，需要被動。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ところに」表示在某個時間點發生了介入',
+            analysis: '「ところに」用於描述在某個動作正要進行或正在進行時，外部事件介入了。前面常用「ようとしている」「ている」。',
+            comparisons: ['ところに：正當…時（外部介入）', 'ところへ：正當…時（同義）', 'ところを：正…時被…（被動介入）'],
+            commonMistakes: ['○ 出かけようとしているところに / × 出かけるところに → 用「ようとしている」表示正要…'],
+        },
+    },
+    // ━━━ ことから (from the fact that - naming) ━━━
+    {
+        id: 'g_n2_389', category: 'grammar', level: 'N2', tags: ['reason', 'naming', 'complex'],
+        stem: 'この山{やま}は富士山{ふじさん}に似{に}ている___、「小富士{こふじ}」と呼{よ}ばれている。',
+        stemZh: '因為這座山和富士山很像，所以被稱為「小富士」。',
+        options: [
+            { text: 'ために', reason: '「ために」也表示原因，但不適合命名語境。' },
+            { text: 'ことから', reason: '正確！「ことから」表示「因為…」，特別適合說明命名由來。' },
+            { text: 'せいで', reason: '「せいで」表示「因為…（負面）」，不適合。' },
+            { text: 'おかげで', reason: '「おかげで」表示「託…的福」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ことから」特別適合說明名稱的由來',
+            analysis: '「ことから」在說明名稱或稱呼的由來時特別自然，後面常接「〜と呼ばれている」「〜と名付けられた」等。',
+            comparisons: ['ことから：因為…（命名由來）', 'ために：因為…（一般原因）'],
+            commonMistakes: ['○ 似ていることから / × 似ることから → 用ている形表示持續狀態'],
+        },
+    },
+    // ━━━ にしたら / にすれば (from one's standpoint - complex) ━━━
+    {
+        id: 'g_n2_390', category: 'grammar', level: 'N2', tags: ['empathy', 'perspective', 'complex'],
+        stem: '子{こ}どもたち___、夏休{なつやす}みが短{みじか}くなるのは嫌{いや}だろう。',
+        stemZh: '站在孩子們的角度，暑假變短肯定不喜歡吧。',
+        options: [
+            { text: 'にしたら', reason: '正確！「にしたら」表示「站在…的角度」。' },
+            { text: 'にとって', reason: '「にとって」表示「對…來說」，也可以但不強調設身處地。' },
+            { text: 'として', reason: '「として」表示「作為…」，語感不同。' },
+            { text: 'に対して', reason: '「に対して」表示「對於…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「にしたら」強調站在對方角度思考',
+            analysis: '「にしたら」用於設身處地為對方著想，推測對方的感受或想法。與「にすれば」同義。',
+            comparisons: ['にしたら：站在…角度（設身處地）', 'にとって：對…來說（客觀觀點）'],
+            commonMistakes: ['○ 子どもたちにしたら / ○ 子どもたちにすれば → 兩種都可以'],
+        },
+    },
+    // ━━━ わけではない (it doesn't mean that) ━━━
+    {
+        id: 'g_n2_391', category: 'grammar', level: 'N2', tags: ['partial_negation', 'clarification'],
+        stem: '日本語{にほんご}が嫌{きら}いな___、ただ時間{じかん}がないだけだ。',
+        stemZh: '並不是不喜歡日語，只是沒有時間而已。',
+        options: [
+            { text: 'わけではない', reason: '正確！「わけではない」表示「並不是…」，否定某種推論。' },
+            { text: 'はずがない', reason: '「はずがない」表示「不可能…」，語氣過強。' },
+            { text: 'ことはない', reason: '「ことはない」表示「不必…」，語意不同。' },
+            { text: 'ものではない', reason: '「ものではない」表示「不應該…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「わけではない」用於澄清誤解',
+            analysis: '「わけではない」用於否定他人可能產生的誤解或錯誤推論，表示「並不是那樣的」。',
+            comparisons: ['わけではない：並不是…（澄清）', 'わけがない：不可能…（強烈否定）'],
+            commonMistakes: ['○ 嫌いなわけではない / × 嫌いのわけではない → な形容詞用「な」接續'],
+        },
+    },
+    // ━━━ に応えて (in response to - additional) ━━━
+    {
+        id: 'g_n2_392', category: 'grammar', level: 'N2', tags: ['response', 'fulfillment'],
+        stem: '市民{しみん}の要望{ようぼう}___、市{し}は新{あたら}しい公園{こうえん}を建設{けんせつ}した。',
+        stemZh: '回應市民的需求，市政府建設了新的公園。',
+        options: [
+            { text: 'に対して', reason: '「に対して」表示「對於…」，不強調「回應」。' },
+            { text: 'に応えて', reason: '正確！「に応えて」表示「回應…/滿足…」。' },
+            { text: 'に応じて', reason: '「に応じて」表示「根據…」，語感不同。' },
+            { text: 'について', reason: '「について」表示「關於…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「に応えて」表示回應他人的期待或要求',
+            analysis: '「に応えて」用於表示為了滿足或回應某人的期待、要求、呼聲而採取行動。',
+            comparisons: ['に応えて：回應…（滿足期待）', 'に応じて：根據…（相應調整）'],
+            commonMistakes: ['○ 要望に応えて / × 要望を応えて → 用「に」不用「を」'],
+        },
+    },
+    // ━━━ にかわって (on behalf of - complex) ━━━
+    {
+        id: 'g_n2_393', category: 'grammar', level: 'N2', tags: ['substitution', 'representation'],
+        stem: '社長{しゃちょう}___、副社長{ふくしゃちょう}がご挨拶{あいさつ}を申{もう}し上{あ}げます。',
+        stemZh: '代替社長，由副社長來致辭。',
+        options: [
+            { text: 'にかわりまして', reason: '正確！「にかわりまして」是「にかわって」的敬語形式。' },
+            { text: 'のかわりに', reason: '「のかわりに」也可以，但不夠正式。' },
+            { text: 'として', reason: '「として」表示「作為…」，語意不同。' },
+            { text: 'に代えて', reason: '「に代えて」表示「代替…」，但接續不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「にかわりまして」是「にかわって」的敬語形',
+            analysis: '「にかわりまして」是正式場合使用的敬語表達，常見於致辭、會議等場合。',
+            comparisons: ['にかわりまして：代替…（敬語正式）', 'にかわって：代替…（一般正式）', 'のかわりに：代替…（口語）'],
+            commonMistakes: ['○ 社長にかわりまして / × 社長のかわりまして → 用「に」不用「の」'],
+        },
+    },
+    // ━━━ に関する (related to / concerning) ━━━
+    {
+        id: 'g_n2_394', category: 'grammar', level: 'N2', tags: ['about', 'formal'],
+        stem: '環境{かんきょう}問題{もんだい}___調査{ちょうさ}が行{おこな}われた。',
+        stemZh: '進行了有關環境問題的調查。',
+        options: [
+            { text: 'についての', reason: '「についての」也可以，意思相同。' },
+            { text: 'に関する', reason: '正確！「に関する」表示「有關…的」，修飾名詞用。' },
+            { text: 'における', reason: '「における」表示「在…的」，語意不同。' },
+            { text: 'に対する', reason: '「に対する」表示「對…的」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「に関する」是修飾名詞時用的「關於」',
+            analysis: '「に関する」用於修飾名詞，相當於「についての」。句中用「に関して」，修飾名詞用「に関する」。',
+            comparisons: ['に関する＋名詞：關於…的（修飾名詞）', 'に関して：關於…（句中使用）'],
+            commonMistakes: ['○ 環境問題に関する調査 / × 環境問題に関しての調査 → 修飾名詞用「に関する」'],
+        },
+    },
+    // ━━━ もう少しで (almost - additional) ━━━
+    {
+        id: 'g_n2_395', category: 'grammar', level: 'N2', tags: ['near_miss', 'close_call'],
+        stem: '___遅刻{ちこく}する___だった。',
+        stemZh: '差一點就遲到了。',
+        options: [
+            { text: 'もう少しで / ところ', reason: '正確！「もう少しで〜ところだった」表示「差一點就…」。' },
+            { text: 'あと少しで / はず', reason: '「はず」表示「應該…」，搭配不當。' },
+            { text: 'もうすぐ / こと', reason: '「もうすぐ」表示「快要…」，語感不同。' },
+            { text: 'もう少しで / わけ', reason: '「わけだった」不自然。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「もう少しで〜ところだった」是固定搭配',
+            analysis: '「もう少しで」與「ところだった」搭配使用，表示差一點就要發生某事（通常是不好的事），但最終沒有發生。',
+            comparisons: ['もう少しで〜ところだった：差一點就…（險些）', '危うく〜ところだった：差一點就…（同義）'],
+            commonMistakes: ['○ もう少しで遅刻するところだった / × もう少しで遅刻したところだった → 用辭書形'],
+        },
+    },
+    // ━━━ 言うまでもなく (needless to say) ━━━
+    {
+        id: 'g_n2_396', category: 'grammar', level: 'N2', tags: ['emphasis', 'obvious'],
+        stem: '健康{けんこう}が大切{たいせつ}なのは___。',
+        stemZh: '健康的重要性是不言而喻的。',
+        options: [
+            { text: '言うまでもない', reason: '正確！「言うまでもない」表示「不用說也知道…」。' },
+            { text: '言わざるを得ない', reason: '「言わざるを得ない」表示「不得不說」，語意相反。' },
+            { text: '言いかねない', reason: '「言いかねない」表示「有可能會說」，語意不同。' },
+            { text: '言うべきだ', reason: '「言うべきだ」表示「應該說」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「言うまでもない」表示理所當然到不需要說',
+            analysis: '「言うまでもない」用於強調某件事是眾所周知的、不需要特別說明的常識。',
+            comparisons: ['言うまでもない：不用說也知道（常識）', 'もちろん：當然（口語）'],
+            commonMistakes: ['○ 言うまでもない / ○ 言うまでもなく → 兩種都可以'],
+        },
+    },
+    // ━━━ に先立って (prior to - complex context) ━━━
+    {
+        id: 'g_n2_397', category: 'grammar', level: 'N2', tags: ['preparation', 'complex'],
+        stem: '工事{こうじ}の開始{かいし}___、近隣{きんりん}住民{じゅうみん}への説明会{せつめいかい}が開{ひら}かれた。',
+        stemZh: '在開工之前，舉行了對附近居民的說明會。',
+        options: [
+            { text: 'に先立ち', reason: '正確！「に先立ち」表示「在…之前」，書面語。' },
+            { text: 'にあたって', reason: '「にあたって」表示「在…之際」，不強調「之前」。' },
+            { text: 'に際して', reason: '「に際して」表示「在…之際」，不強調「之前」。' },
+            { text: 'の後で', reason: '「の後で」表示「在…之後」，時間相反。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に先立ち」是「に先立って」的書面語形式',
+            analysis: '「に先立ち」和「に先立って」意思相同，表示在某件重要事情之前做準備性的工作。「に先立ち」更書面。',
+            comparisons: ['に先立ち：在…之前（書面）', 'に先立って：在…之前（一般正式）'],
+            commonMistakes: ['○ 開始に先立ち / ○ 開始に先立って → 兩種都可以'],
+        },
+    },
+    // ━━━ ないことには〜ない (unless - additional) ━━━
+    {
+        id: 'g_n2_398', category: 'grammar', level: 'N2', tags: ['condition', 'necessity'],
+        stem: '実際{じっさい}にやって___、できるかどうかわからない。',
+        stemZh: '如果不實際去做的話，就不知道能不能做到。',
+        options: [
+            { text: 'みないことには', reason: '正確！「ないことには〜ない」表示「如果不…就不…」。' },
+            { text: 'みないかぎり', reason: '「ないかぎり」也可以，但語感不同。' },
+            { text: 'みなくては', reason: '「みなくては」表示「不…的話不行」，語感不同。' },
+            { text: 'みないと', reason: '「みないと」表示「如果不…」，太口語。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ないことには〜ない」強調做某事是前提條件',
+            analysis: '「ないことには〜ない」表示如果不做前面的事情，後面的事情就無法實現或判斷。強調前提條件的必要性。',
+            comparisons: ['ないことには〜ない：如果不…就不…（前提必要）', 'ないかぎり〜ない：除非…否則不…（條件限定）'],
+            commonMistakes: ['○ やってみないことには / × やらないことには → 「やってみる」整體的否定'],
+        },
+    },
+    // ━━━ なくて済む (can get by without - additional) ━━━
+    {
+        id: 'g_n2_399', category: 'grammar', level: 'N2', tags: ['avoidance', 'relief'],
+        stem: 'オンラインで手続{てつづ}きできるので、わざわざ窓口{まどぐち}に行{い}か___。',
+        stemZh: '因為可以在網上辦手續，所以不用特地去窗口。',
+        options: [
+            { text: 'ないで済む', reason: '「ないで済む」也可以，但較口語。' },
+            { text: 'なくて済む', reason: '正確！「なくて済む」表示「不用…就行了」。' },
+            { text: 'ずに済む', reason: '「ずに済む」也可以，較書面。' },
+            { text: 'ないことはない', reason: '「ないことはない」表示「也不是不…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「なくて済む」表示不需要做某事也能解決',
+            analysis: '「なくて済む」用於表示某件本來可能需要做的事情，因為某種原因可以省略，帶有方便或安心的語氣。',
+            comparisons: ['なくて済む：不用…就行（省去麻煩）', 'ずに済む：不用…就行（書面語）'],
+            commonMistakes: ['○ 行かなくて済む / × 行くなくて済む → 用ない形接「て」'],
+        },
+    },
+    // ━━━ かのように (as if - additional) ━━━
+    {
+        id: 'g_n2_400', category: 'grammar', level: 'N2', tags: ['simile', 'pretense'],
+        stem: '彼{かれ}は何{なに}も知{し}らない___振{ふ}る舞{ま}っている。',
+        stemZh: '他表現得好像什麼都不知道一樣。',
+        options: [
+            { text: 'ように', reason: '「ように」也可以，但不帶「彷彿」的強調語氣。' },
+            { text: 'かのように', reason: '正確！「かのように」表示「彷彿…一樣」，強調虛假或比喻。' },
+            { text: 'みたいに', reason: '「みたいに」也表示「像…一樣」，但太口語。' },
+            { text: 'ふうに', reason: '「ふうに」表示「那樣地」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「かのように」強調虛假的表象或深層的比喻',
+            analysis: '「かのように」比「ように」語氣更強，常用於強調實際上並非如此的假象，或文學性的深層比喻。',
+            comparisons: ['かのように：彷彿…一樣（強調虛假/比喻）', 'ように：像…一樣（一般比喻）'],
+            commonMistakes: ['○ 知らないかのように / × 知らなかったかのように → 常用現在形表示持續狀態'],
+        },
+    },
+    // ━━━ ふうに (in a ~ way - additional) ━━━
+    {
+        id: 'g_n2_401', category: 'grammar', level: 'N2', tags: ['manner', 'style'],
+        stem: 'もっと簡単{かんたん}な___説明{せつめい}していただけませんか。',
+        stemZh: '可以用更簡單的方式說明嗎？',
+        options: [
+            { text: 'ふうに', reason: '正確！「ふうに」表示「以…的方式」。' },
+            { text: 'ように', reason: '「ように」也表示「像…一樣」，但語感不同。' },
+            { text: 'みたいに', reason: '「みたいに」表示「像…一樣」，太口語。' },
+            { text: 'として', reason: '「として」表示「作為…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ふうに」表示某種方式或風格',
+            analysis: '「ふうに」接在形容詞或「こう/そう/ああ/どう」等後面，表示「以…的方式/風格」。',
+            comparisons: ['ふうに：以…的方式（風格）', 'ように：像…一樣（模仿）'],
+            commonMistakes: ['○ 簡単なふうに / ○ こういうふうに → 形容詞用「な」接續'],
+        },
+    },
+    // ━━━ というふうに (in such a way - additional) ━━━
+    {
+        id: 'g_n2_402', category: 'grammar', level: 'N2', tags: ['manner', 'quotation'],
+        stem: '「もう少{すこ}し頑張{がんば}ろう」___自分{じぶん}を励{はげ}ました。',
+        stemZh: '用「再加油一下」這樣的方式來鼓勵自己。',
+        options: [
+            { text: 'というふうに', reason: '正確！「というふうに」表示「以…的方式」，引述具體內容。' },
+            { text: 'ように', reason: '「ように」表示「像…一樣」，不用於引述。' },
+            { text: 'として', reason: '「として」表示「作為…」，語意不同。' },
+            { text: 'とばかりに', reason: '「とばかりに」表示「好像在說…似的」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「というふうに」引述具體的方式或想法',
+            analysis: '「というふうに」用於引述具體的想法、話語或方式，表示「以…這樣的方式」。',
+            comparisons: ['というふうに：以…這樣的方式（引述具體內容）', 'ふうに：以…的方式（一般風格）'],
+            commonMistakes: ['○ 「頑張ろう」というふうに / × 「頑張ろう」とふうに → 需要「いう」'],
+        },
+    },
+    // ━━━ というものだ (that's what ~ is - additional) ━━━
+    {
+        id: 'g_n2_403', category: 'grammar', level: 'N2', tags: ['definition', 'emphasis'],
+        stem: '困{こま}っている人{ひと}を助{たす}けるのが、真{しん}の友情{ゆうじょう}___。',
+        stemZh: '幫助困難中的人，這才是真正的友情。',
+        options: [
+            { text: 'というものだ', reason: '正確！「というものだ」表示「這才真正是…」。' },
+            { text: 'ということだ', reason: '「ということだ」表示「據說…/意味著…」，語意不同。' },
+            { text: 'というわけだ', reason: '「というわけだ」表示「所以…」，語意不同。' },
+            { text: 'というはずだ', reason: '「というはずだ」不自然。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「というものだ」用於強調事物的本質',
+            analysis: '「というものだ」用於定義或強調某事物的真正本質或意義，表示「這才是真正的…」。',
+            comparisons: ['というものだ：這才是…（定義本質）', 'というものではない：不見得是…（否定定義）'],
+            commonMistakes: ['○ 友情というものだ / × 友情のものだ → 需要「という」'],
+        },
+    },
+    // ━━━ そうすると (then / in that case - additional) ━━━
+    {
+        id: 'g_n2_404', category: 'grammar', level: 'N2', tags: ['consequence', 'logic'],
+        stem: '来月{らいげつ}から値上{ねあ}げされるそうだ。___、今{いま}のうちに買{か}っておいたほうがいい。',
+        stemZh: '聽說下個月開始漲價。那樣的話，趁現在先買好比較好。',
+        options: [
+            { text: 'だから', reason: '「だから」表示「所以」，也可以但較直接。' },
+            { text: 'そうすると', reason: '正確！「そうすると」表示「那樣的話」，根據前述情況推出結論。' },
+            { text: 'ところが', reason: '「ところが」表示「然而」，語意相反。' },
+            { text: 'それなのに', reason: '「それなのに」表示「儘管如此」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「そうすると」根據前述條件推出合理結論',
+            analysis: '「そうすると」用於聽到某個情況後，推導出相應的結論或建議，表示「那樣的話…」。',
+            comparisons: ['そうすると：那樣的話（推論結論）', 'だから：所以（直接因果）', 'それなら：如果那樣的話（條件）'],
+            commonMistakes: ['○ そうすると、買っておいたほうがいい / × そうしたら、… → 「そうすると」更書面'],
+        },
+    },
+    // ━━━ それなら (if that's the case) ━━━
+    {
+        id: 'g_n2_405', category: 'grammar', level: 'N2', tags: ['condition', 'response'],
+        stem: '「明日{あした}は雨{あめ}らしいよ。」「___、ピクニックは中止{ちゅうし}にしよう。」',
+        stemZh: '「聽說明天會下雨。」「如果那樣的話，野餐就取消吧。」',
+        options: [
+            { text: 'それなら', reason: '正確！「それなら」表示「如果是那樣的話」，回應對方的資訊。' },
+            { text: 'そうすると', reason: '「そうすると」表示「那樣的話」，語感不同。' },
+            { text: 'そうだとしても', reason: '「そうだとしても」表示「即使如此」，語意相反。' },
+            { text: 'それにしても', reason: '「それにしても」表示「即便如此」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「それなら」直接回應對方的資訊做出決定',
+            analysis: '「それなら」用於接受對方提供的資訊後，基於該資訊做出相應的回應或決定。常用於對話中。',
+            comparisons: ['それなら：如果那樣的話（直接回應）', 'そうすると：那樣的話（推論）'],
+            commonMistakes: ['○ それなら、中止にしよう / × それなので、中止にしよう → 「それなら」是假設不是因果'],
+        },
+    },
+    // ━━━ しかも (moreover - additional) ━━━
+    {
+        id: 'g_n2_406', category: 'grammar', level: 'N2', tags: ['addition', 'emphasis'],
+        stem: 'この料理{りょうり}は美味{おい}しい。___、値段{ねだん}もとても安{やす}い。',
+        stemZh: '這道菜很好吃。而且價格也非常便宜。',
+        options: [
+            { text: 'しかも', reason: '正確！「しかも」表示「而且/況且」，追加更有力的資訊。' },
+            { text: 'ところが', reason: '「ところが」表示「然而」，語意相反。' },
+            { text: 'ただし', reason: '「ただし」表示「不過/但是」，語意不同。' },
+            { text: 'むしろ', reason: '「むしろ」表示「倒不如說」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「しかも」用於追加更有說服力的資訊',
+            analysis: '「しかも」用於在前面的陳述之後追加另一個更有說服力或更出人意料的資訊，加強前面的論點。',
+            comparisons: ['しかも：而且（追加強調）', 'おまけに：加上（附帶，較口語）', 'その上：再加上（書面）'],
+            commonMistakes: ['○ しかも、値段も安い / × しかもに値段も安い → 「しかも」直接接句子'],
+        },
+    },
+    // ━━━ おまけに (on top of that - additional) ━━━
+    {
+        id: 'g_n2_407', category: 'grammar', level: 'N2', tags: ['addition', 'informal'],
+        stem: '道{みち}に迷{まよ}った。___雨{あめ}まで降{ふ}ってきた。',
+        stemZh: '迷了路。加上又開始下雨了。',
+        options: [
+            { text: 'しかも', reason: '「しかも」也表示「而且」，但較正式。' },
+            { text: 'おまけに', reason: '正確！「おまけに」表示「加上/而且」，口語色彩，常用於累積不好的事。' },
+            { text: 'なお', reason: '「なお」表示「另外」，太正式。' },
+            { text: 'ちなみに', reason: '「ちなみに」表示「順便一提」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「おまけに」常用於累積不幸的情況',
+            analysis: '「おまけに」用於在已有的（通常是不好的）狀況上再追加另一個不幸，帶有「屋漏偏逢連夜雨」的語感。',
+            comparisons: ['おまけに：加上（口語，常用於負面累積）', 'しかも：而且（正式，正負面皆可）'],
+            commonMistakes: ['○ おまけに雨まで降ってきた / × おまけに雨が降ってきた → 常搭配「まで」強調'],
+        },
+    },
+    // ━━━ いよいよ (finally / at last - additional) ━━━
+    {
+        id: 'g_n2_408', category: 'grammar', level: 'N2', tags: ['climax', 'anticipation'],
+        stem: '長{なが}い準備{じゅんび}期間{きかん}を経{へ}て、___本番{ほんばん}を迎{むか}える。',
+        stemZh: '經過漫長的準備期間，終於迎來正式演出。',
+        options: [
+            { text: 'やがて', reason: '「やがて」表示「不久」，不強調期待感。' },
+            { text: 'とうとう', reason: '「とうとう」表示「終於」，常帶有疲憊感。' },
+            { text: 'いよいよ', reason: '正確！「いよいよ」表示「終於/關鍵時刻」，帶有期待和興奮。' },
+            { text: 'ついに', reason: '「ついに」表示「終於」，但不帶「即將到來」的緊張感。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+            keyPoint: '「いよいよ」帶有期待和緊張的「終於」',
+            analysis: '「いよいよ」用於表示期待已久的事情即將到來，帶有興奮、緊張或期待的語氣。',
+            comparisons: ['いよいよ：終於（期待興奮）', 'ついに：終於（長期努力的結果）', 'とうとう：終於（疲憊/無奈）'],
+            commonMistakes: ['○ いよいよ本番 / × いよいよに本番 → 「いよいよ」直接修飾'],
+        },
+    },
+    // ━━━ やがて (before long / eventually - additional) ━━━
+    {
+        id: 'g_n2_409', category: 'grammar', level: 'N2', tags: ['time', 'natural_progression'],
+        stem: '空{そら}が暗{くら}くなり、___雨{あめ}が降{ふ}り始{はじ}めた。',
+        stemZh: '天空變暗了，不久就開始下雨了。',
+        options: [
+            { text: 'やがて', reason: '正確！「やがて」表示「不久/漸漸地」，自然推移。' },
+            { text: 'いきなり', reason: '「いきなり」表示「突然」，語感不同。' },
+            { text: 'とっくに', reason: '「とっくに」表示「早就」，語意不同。' },
+            { text: 'ようやく', reason: '「ようやく」表示「好不容易」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「やがて」描述事物自然推移的過程',
+            analysis: '「やがて」用於描述事物自然而然地發展到某個結果，不帶有人為的努力或期待感。',
+            comparisons: ['やがて：不久（自然推移）', 'まもなく：不久（即將發生）', 'いよいよ：終於（期待到來）'],
+            commonMistakes: ['○ やがて雨が降り始めた / × やがてに雨が降り始めた → 「やがて」直接修飾'],
+        },
+    },
+    // ━━━ いきなり (suddenly - additional) ━━━
+    {
+        id: 'g_n2_410', category: 'grammar', level: 'N2', tags: ['sudden', 'unexpected'],
+        stem: '彼{かれ}は___怒{おこ}り出{だ}して、みんなを驚{おどろ}かせた。',
+        stemZh: '他突然發怒，嚇到了大家。',
+        options: [
+            { text: 'いきなり', reason: '正確！「いきなり」表示「突然/沒有預兆地」。' },
+            { text: 'やがて', reason: '「やがて」表示「不久」，不是突然。' },
+            { text: '次第に', reason: '「次第に」表示「逐漸」，語意相反。' },
+            { text: 'ようやく', reason: '「ようやく」表示「好不容易」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「いきなり」強調毫無預兆的突然發生',
+            analysis: '「いきなり」用於描述事情在沒有任何預兆或前兆的情況下突然發生，常帶有驚訝。',
+            comparisons: ['いきなり：突然（沒有預兆）', '急に：突然（一般突然）', '突然：突然（正式用語）'],
+            commonMistakes: ['○ いきなり怒り出した / × いきなりに怒り出した → 直接修飾動詞'],
+        },
+    },
+    // ━━━ とっくに (long ago / already - additional) ━━━
+    {
+        id: 'g_n2_411', category: 'grammar', level: 'N2', tags: ['already', 'emphasis'],
+        stem: 'そんなことは___知{し}っているよ。',
+        stemZh: '那種事我早就知道了。',
+        options: [
+            { text: 'もう', reason: '「もう」也表示「已經」，但語氣不夠強。' },
+            { text: 'とっくに', reason: '正確！「とっくに」表示「早就…」，強調很早以前就已經。' },
+            { text: 'すでに', reason: '「すでに」表示「已經」，較正式但不強調「很久以前」。' },
+            { text: 'ようやく', reason: '「ようやく」表示「好不容易」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「とっくに」強調「很早以前就已經…」',
+            analysis: '「とっくに」用於強調某件事在很早以前就已經完成或知道了，帶有「你說什麼廢話」的語感。',
+            comparisons: ['とっくに：早就…（強調時間久遠）', 'もう：已經…（一般）', 'すでに：已經…（正式）'],
+            commonMistakes: ['○ とっくに知っている / × とっくに知った → 用ている形表示持續狀態'],
+        },
+    },
+    // ━━━ ろくに〜ない (not properly - additional) ━━━
+    {
+        id: 'g_n2_412', category: 'grammar', level: 'N2', tags: ['insufficiency', 'criticism'],
+        stem: '最近{さいきん}忙{いそが}しくて、___食事{しょくじ}も取{と}れていない。',
+        stemZh: '最近太忙了，連飯都沒好好吃。',
+        options: [
+            { text: 'ろくに', reason: '正確！「ろくに〜ない」表示「沒有好好…/不像樣地…」。' },
+            { text: 'まったく', reason: '「まったく」表示「完全不」，語氣過強。' },
+            { text: 'ちっとも', reason: '「ちっとも」表示「一點也不」，語意不同。' },
+            { text: 'すこしも', reason: '「すこしも」表示「一點也不」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ろくに〜ない」表示沒有做到應有的程度',
+            analysis: '「ろくに〜ない」用於表示某事沒有做到應有的程度或標準，帶有不滿或批評的語氣。後面必須接否定。',
+            comparisons: ['ろくに〜ない：沒好好…（不夠標準）', 'まったく〜ない：完全不…（零程度）'],
+            commonMistakes: ['○ ろくに食事も取れていない / × ろくに食事を取れていない → 常搭配「も」加強語氣'],
+        },
+    },
+    // ━━━ どうやら (apparently - additional) ━━━
+    {
+        id: 'g_n2_413', category: 'grammar', level: 'N2', tags: ['speculation', 'apparent'],
+        stem: '___彼{かれ}は風邪{かぜ}をひいたらしい。',
+        stemZh: '看來他好像感冒了。',
+        options: [
+            { text: 'どうやら', reason: '正確！「どうやら」表示「看來好像…」，根據跡象推測。' },
+            { text: 'まさか', reason: '「まさか」表示「不會吧…」，語感不同。' },
+            { text: 'もしかして', reason: '「もしかして」表示「難道…」，不確定性更高。' },
+            { text: 'きっと', reason: '「きっと」表示「一定…」，確信度過高。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「どうやら」表示根據種種跡象的推測',
+            analysis: '「どうやら」用於根據觀察到的跡象做出推測，確信度在「きっと」和「もしかして」之間。常搭配「らしい」「ようだ」。',
+            comparisons: ['どうやら：看來好像…（中等確信推測）', 'きっと：一定…（高確信）', 'もしかして：難道…（低確信）'],
+            commonMistakes: ['○ どうやら風邪をひいたらしい / × どうやら風邪をひいた → 後面常搭配推測表達'],
+        },
+    },
+    // ━━━ かえって (on the contrary - additional) ━━━
+    {
+        id: 'g_n2_414', category: 'grammar', level: 'N2', tags: ['contrary', 'unexpected'],
+        stem: '薬{くすり}を飲{の}んだのに、___悪{わる}くなった。',
+        stemZh: '明明吃了藥，反而變糟了。',
+        options: [
+            { text: 'かえって', reason: '正確！「かえって」表示「反而」，與預期相反。' },
+            { text: '逆に', reason: '「逆に」也表示「反而」，但更強調方向相反。' },
+            { text: 'むしろ', reason: '「むしろ」表示「倒不如」，語感不同。' },
+            { text: 'やっぱり', reason: '「やっぱり」表示「果然」，語意相反。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「かえって」表示做了某事反而得到相反的結果',
+            analysis: '「かえって」用於描述為了改善而做的行動反而導致了更壞的結果，強調結果與意圖相反。',
+            comparisons: ['かえって：反而（行動導致反效果）', '逆に：反而（方向相反）'],
+            commonMistakes: ['○ かえって悪くなった / × かえってに悪くなった → 「かえって」直接修飾'],
+        },
+    },
+    // ━━━ あげく (in the end - additional complex) ━━━
+    {
+        id: 'g_n2_415', category: 'grammar', level: 'N2', tags: ['outcome', 'negative_result'],
+        stem: '長時間{ちょうじかん}議論{ぎろん}した___、結論{けつろん}は出{で}なかった。',
+        stemZh: '經過長時間的討論，最終還是沒有得出結論。',
+        options: [
+            { text: 'あげく', reason: '正確！「あげく」表示「最終結果是…」，通常是不好的結果。' },
+            { text: '末に', reason: '「末に」也表示「經過…之後」，但可用於正面結果。' },
+            { text: '結果', reason: '「結果」表示「結果」，太一般。' },
+            { text: 'ことから', reason: '「ことから」表示「由於…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「あげく」強調經過努力後的不好結果',
+            analysis: '「あげく」用於表示經過一段努力或過程後，最終得到了（通常是不好的）結果。帶有徒勞感。',
+            comparisons: ['あげく：最終…（負面結果為主）', '末に：經過…之後（正面負面皆可）'],
+            commonMistakes: ['○ 議論したあげく / ○ 議論のあげく → た形或「の」都可以'],
+        },
+    },
+    // ━━━ 末に (after much - additional complex) ━━━
+    {
+        id: 'g_n2_416', category: 'grammar', level: 'N2', tags: ['outcome', 'effort'],
+        stem: '長{なが}い苦労{くろう}の___、ようやく夢{ゆめ}を実現{じつげん}した。',
+        stemZh: '經過漫長的辛苦之後，終於實現了夢想。',
+        options: [
+            { text: '末に', reason: '正確！「末に」表示「經過…之後」，此處用於正面結果。' },
+            { text: 'あげく', reason: '「あげく」通常用於負面結果，不太適合。' },
+            { text: '上で', reason: '「上で」表示「在…方面」或「做了…之後」，語感不同。' },
+            { text: 'うちに', reason: '「うちに」表示「在…之間」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「末に」可以用於正面或負面的最終結果',
+            analysis: '「末に」用於表示經過一段漫長的過程或努力後得到的結果，比「あげく」更中性，正負面結果都可以。',
+            comparisons: ['末に：經過…之後（中性）', 'あげく：最終…（負面為主）'],
+            commonMistakes: ['○ 苦労の末に / ○ 苦労した末に → 名詞用「の」，動詞用た形'],
+        },
+    },
+    // ━━━ ては / では (if ~ then - additional) ━━━
+    {
+        id: 'g_n2_417', category: 'grammar', level: 'N2', tags: ['condition', 'negative_result'],
+        stem: 'そんなに食{た}べ___、太{ふと}ってしまうよ。',
+        stemZh: '吃那麼多的話會胖的喔。',
+        options: [
+            { text: 'ては', reason: '正確！「ては」表示「如果…的話（會有壞結果）」。' },
+            { text: 'たら', reason: '「たら」也表示「如果…」，但不帶「會有壞結果」的語氣。' },
+            { text: 'ても', reason: '「ても」表示「即使…也」，語意不同。' },
+            { text: 'てこそ', reason: '「てこそ」表示「只有…才」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ては」暗示某種行為會導致不好的結果',
+            analysis: '「ては」（或「では」）用於表示如果做了某事會導致不好的結果，帶有警告或擔心的語氣。',
+            comparisons: ['ては：如果…的話（壞結果）', 'たら：如果…（中性假設）'],
+            commonMistakes: ['○ 食べては太る / × 食べるては太る → 用て形接「は」'],
+        },
+    },
+    // ━━━ ていては (if one keeps - additional) ━━━
+    {
+        id: 'g_n2_418', category: 'grammar', level: 'N2', tags: ['warning', 'continuous_negative'],
+        stem: 'そんなにゲームばかりし___、成績{せいせき}が下{さ}がるよ。',
+        stemZh: '如果一直玩遊戲的話，成績會下降喔。',
+        options: [
+            { text: 'ていては', reason: '正確！「ていては」表示「如果一直…的話（壞結果）」。' },
+            { text: 'ていたら', reason: '「ていたら」也可以，但不帶警告的語氣。' },
+            { text: 'ていても', reason: '「ていても」表示「即使一直…也」，語意不同。' },
+            { text: 'てばかりいたら', reason: '「てばかりいたら」也可以，但較冗長。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ていては」對持續的行為發出警告',
+            analysis: '「ていては」用於警告某人如果持續某種行為會導致不好的結果，帶有「這樣下去不行」的語氣。',
+            comparisons: ['ていては：如果一直…（持續行為的警告）', 'ては：如果…（一次性行為的警告）'],
+            commonMistakes: ['○ していては / × するていては → 先用て形再加「は」'],
+        },
+    },
+    // ━━━ ことにする (decide to) ━━━
+    {
+        id: 'g_n2_419', category: 'grammar', level: 'N2', tags: ['decision', 'active'],
+        stem: '来年{らいねん}から毎朝{まいあさ}ジョギングする___。',
+        stemZh: '決定從明年開始每天早上慢跑。',
+        options: [
+            { text: 'ことにした', reason: '正確！「ことにする」表示「決定…」，主動的決定。' },
+            { text: 'ことになった', reason: '「ことになった」表示「變成要…」，被動的決定。' },
+            { text: 'ようにした', reason: '「ようにする」表示「設法…/注意…」，語感不同。' },
+            { text: 'つもりだ', reason: '「つもりだ」表示「打算…」，但不是已做出的決定。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ことにする」表示說話者自己做出的主動決定',
+            analysis: '「ことにする」用於表示說話者自己主動做出的決定。與「ことになる」（被動決定/自然發展）對比。',
+            comparisons: ['ことにする：決定…（主動決定）', 'ことになる：變成要…（被動/自然結果）'],
+            commonMistakes: ['○ ジョギングすることにした / × ジョギングのことにした → 動詞辭書形接「ことにする」'],
+        },
+    },
+    // ━━━ ことになる (it has been decided / it turns out) ━━━
+    {
+        id: 'g_n2_420', category: 'grammar', level: 'N2', tags: ['decision', 'passive'],
+        stem: '来月{らいげつ}からニューヨークに転勤{てんきん}する___。',
+        stemZh: '決定下個月開始調到紐約工作了。',
+        options: [
+            { text: 'ことにした', reason: '「ことにした」表示自己決定的，此處是公司決定的。' },
+            { text: 'ことになった', reason: '正確！「ことになった」表示「變成要…」，組織或環境決定的。' },
+            { text: 'はずだ', reason: '「はずだ」表示「應該…」，語意不同。' },
+            { text: 'わけだ', reason: '「わけだ」表示「難怪…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ことになった」表示非自己主動的決定',
+            analysis: '「ことになった」用於表示被他人、組織或情況所決定的結果，說話者是被動接受的一方。',
+            comparisons: ['ことになった：變成要…（被動決定）', 'ことにした：決定…（主動決定）'],
+            commonMistakes: ['○ 転勤することになった / × 転勤のことになった → 動詞辭書形接「ことになる」'],
+        },
+    },
+    // ━━━ ことにしている (make it a rule to) ━━━
+    {
+        id: 'g_n2_421', category: 'grammar', level: 'N2', tags: ['habit', 'rule'],
+        stem: '健康{けんこう}のために、毎日{まいにち}三十分{さんじゅっぷん}歩{ある}く___。',
+        stemZh: '為了健康，我規定自己每天走三十分鐘。',
+        options: [
+            { text: 'ことにしている', reason: '正確！「ことにしている」表示「規定自己…/養成習慣…」。' },
+            { text: 'ことになっている', reason: '「ことになっている」表示「規定是…」，是外部規定。' },
+            { text: 'ようにしている', reason: '「ようにしている」表示「盡量做到…」，語感不同。' },
+            { text: 'ことにした', reason: '「ことにした」表示「決定了」，但不強調持續習慣。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ことにしている」表示自己設定的持續習慣',
+            analysis: '「ことにしている」表示自己主動決定並持續執行的習慣或規則。強調個人的自律和堅持。',
+            comparisons: ['ことにしている：規定自己…（個人習慣）', 'ことになっている：規定是…（外部規則）', 'ようにしている：盡量…（努力目標）'],
+            commonMistakes: ['○ 歩くことにしている / × 歩くのことにしている → 辭書形直接接「ことにしている」'],
+        },
+    },
+    // ━━━ ことになっている (it is a rule / it is scheduled) ━━━
+    {
+        id: 'g_n2_422', category: 'grammar', level: 'N2', tags: ['rule', 'schedule'],
+        stem: 'この会社{かいしゃ}では、社員{しゃいん}は制服{せいふく}を着{き}る___。',
+        stemZh: '在這家公司，規定員工要穿制服。',
+        options: [
+            { text: 'ことにしている', reason: '「ことにしている」表示個人習慣，不是公司規定。' },
+            { text: 'ことになっている', reason: '正確！「ことになっている」表示「規定是…」，外部規則。' },
+            { text: 'べきだ', reason: '「べきだ」表示「應該…」，語感不同。' },
+            { text: 'ものだ', reason: '「ものだ」表示「本來就是…」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ことになっている」表示既定的規則或安排',
+            analysis: '「ことになっている」用於表示已經決定的規則、制度或安排，不是個人決定的，而是組織或社會的規定。',
+            comparisons: ['ことになっている：規定是…（外部規則）', 'ことにしている：規定自己…（個人習慣）'],
+            commonMistakes: ['○ 着ることになっている / × 着ていることになっている → 用辭書形表示規定內容'],
+        },
+    },
+    // ━━━ ようにする (try to / make sure to) ━━━
+    {
+        id: 'g_n2_423', category: 'grammar', level: 'N2', tags: ['effort', 'habit_forming'],
+        stem: '遅刻{ちこく}しない___気{き}をつけてください。',
+        stemZh: '請注意不要遲到。',
+        options: [
+            { text: 'ようにする', reason: '「ようにする」也可以但此處需要搭配「気をつけてください」。' },
+            { text: 'ように', reason: '正確！「ように気をつける」表示「注意…/留意做到…」。' },
+            { text: 'ために', reason: '「ために」表示「為了…」，語意不同。' },
+            { text: 'ことに', reason: '「ことに」表示「令人…的是」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ように」與「気をつける」搭配表示注意做到某事',
+            analysis: '「ように」在此用於表示努力的目標或方向，與「気をつける」搭配表示「注意做到…」。',
+            comparisons: ['ように気をつける：注意做到…', 'ようにする：盡量做到…', 'ようにしている：持續盡量做到…'],
+            commonMistakes: ['○ 遅刻しないように / × 遅刻をしないように → 「遅刻しない」直接接「ように」'],
+        },
+    },
+    // ━━━ ようになる (come to be able to / begin to) ━━━
+    {
+        id: 'g_n2_424', category: 'grammar', level: 'N2', tags: ['change', 'ability'],
+        stem: '日本{にほん}に来{き}てから、生魚{なまざかな}が食{た}べられる___。',
+        stemZh: '來到日本之後，變得能吃生魚了。',
+        options: [
+            { text: 'ようになった', reason: '正確！「ようになった」表示「變得能…了」，能力或習慣的變化。' },
+            { text: 'ことになった', reason: '「ことになった」表示「決定要…」，語意不同。' },
+            { text: 'ことにした', reason: '「ことにした」表示「決定…」，語意不同。' },
+            { text: 'はずだった', reason: '「はずだった」表示「原本應該…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ようになる」表示能力或習慣的漸進變化',
+            analysis: '「ようになる」用於表示從「不能做」變成「能做」，或從「不做」變成「做」的漸進變化過程。',
+            comparisons: ['ようになる：變得…了（漸進變化）', 'ことになる：決定要…（外部決定）'],
+            commonMistakes: ['○ 食べられるようになった / × 食べるようになった → 用可能形表示能力的獲得'],
+        },
+    },
+    // ━━━ わけにはいかない (cannot - complex) ━━━
+    {
+        id: 'g_n2_425', category: 'grammar', level: 'N2', tags: ['moral_obligation', 'complex'],
+        stem: '部下{ぶか}が頑張{がんば}っているのに、上司{じょうし}の私{わたし}が先{さき}に帰{かえ}る___。',
+        stemZh: '下屬還在努力，身為上司的我不能先回去。',
+        options: [
+            { text: 'わけにはいかない', reason: '正確！「わけにはいかない」表示因社會義務或道德不能做某事。' },
+            { text: 'はずがない', reason: '「はずがない」表示「不可能…」，語意不同。' },
+            { text: 'ことはない', reason: '「ことはない」表示「不必…」，語意不同。' },
+            { text: 'ものではない', reason: '「ものではない」表示「不應該…」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「わけにはいかない」表示因立場或道德觀而不能做某事',
+            analysis: '「わけにはいかない」用於表示因為社會立場、道德觀念或人際關係等因素而不能做某事，即使客觀上是可以做的。',
+            comparisons: ['わけにはいかない：不能…（道德/立場）', 'できない：不能…（能力/客觀）'],
+            commonMistakes: ['○ 帰るわけにはいかない / × 帰れるわけにはいかない → 用辭書形不用可能形'],
+        },
+    },
+    // ━━━ に関して (regarding / concerning) ━━━
+    {
+        id: 'g_n2_426', category: 'grammar', level: 'N2', tags: ['about', 'formal'],
+        stem: 'この件{けん}___、何{なに}かご質問{しつもん}はありますか。',
+        stemZh: '關於這件事，有什麼問題嗎？',
+        options: [
+            { text: 'に関して', reason: '正確！「に関して」表示「關於…」，正式場合使用。' },
+            { text: 'について', reason: '「について」也表示「關於…」，意思相同但較一般。' },
+            { text: 'にかけて', reason: '「にかけて」表示「從…到…」，語意不同。' },
+            { text: 'に際して', reason: '「に際して」表示「在…之際」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に関して」是「について」的較正式版本',
+            analysis: '「に関して」與「について」意思相同，但更適合正式場合。修飾名詞時用「に関する」。',
+            comparisons: ['に関して：關於…（正式）', 'について：關於…（一般）'],
+            commonMistakes: ['○ この件に関して / × この件を関して → 用「に」不用「を」'],
+        },
+    },
+    // ━━━ にかけて (from ~ to ~ / over a period) ━━━
+    {
+        id: 'g_n2_427', category: 'grammar', level: 'N2', tags: ['period', 'range'],
+        stem: '今夜{こんや}から明日{あした}の朝{あさ}___、大雪{おおゆき}になるでしょう。',
+        stemZh: '從今晚到明天早上，預計會下大雪。',
+        options: [
+            { text: 'にかけて', reason: '正確！「にかけて」表示「從…到…的期間」。' },
+            { text: 'にわたって', reason: '「にわたって」表示「歷時…」，但用法不同。' },
+            { text: 'を通じて', reason: '「を通じて」表示「在整個…期間」，語感不同。' },
+            { text: 'に至るまで', reason: '「に至るまで」表示「直到…」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「にかけて」表示從某個時間到某個時間的期間',
+            analysis: '「にかけて」與「から」搭配，表示從某個起點到某個終點的時間或空間範圍。',
+            comparisons: ['にかけて：從…到…（期間）', 'にわたって：歷時…（強調持續）'],
+            commonMistakes: ['○ 今夜から明日の朝にかけて / × 今夜にかけて明日の朝 → 「にかけて」接在終點後'],
+        },
+    },
+    // ━━━ こそ (emphasis - it is precisely) ━━━
+    {
+        id: 'g_n2_428', category: 'grammar', level: 'N2', tags: ['emphasis', 'assertion'],
+        stem: '今___チャンスだ。行動{こうどう}を起{お}こそう。',
+        stemZh: '現在正是機會。行動起來吧。',
+        options: [
+            { text: 'こそ', reason: '正確！「こそ」表示「正是…」，強調。' },
+            { text: 'さえ', reason: '「さえ」表示「連…也」，語意不同。' },
+            { text: 'まで', reason: '「まで」表示「甚至…」，語意不同。' },
+            { text: 'でも', reason: '「でも」表示「即使…也」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「こそ」用於強調某事物的特殊性',
+            analysis: '「こそ」用於特別強調某個事物，表示「正是這個、就是這個」，排他性地突出重點。',
+            comparisons: ['こそ：正是…（強調唯一性）', 'は：…是（一般主題標記）'],
+            commonMistakes: ['○ 今こそチャンスだ / × 今がこそチャンスだ → 「こそ」取代「が」或「は」'],
+        },
+    },
+    // ━━━ さえ〜ば (if only / as long as) ━━━
+    {
+        id: 'g_n2_429', category: 'grammar', level: 'N2', tags: ['condition', 'minimum'],
+        stem: '健康{けんこう}で___、何{なに}でもできる。',
+        stemZh: '只要健康，什麼都能做。',
+        options: [
+            { text: 'あれば', reason: '「あれば」表示「如果有」，但不強調「只要…就夠了」。' },
+            { text: 'さえあれば', reason: '正確！「さえ〜ば」表示「只要…就…」，強調最低條件。' },
+            { text: 'さえあっても', reason: '「さえあっても」表示「即使有…也」，語意不同。' },
+            { text: 'であれば', reason: '「であれば」表示「如果是…的話」，不強調「只要」。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「さえ〜ば」強調只要滿足這一個條件就足夠了',
+            analysis: '「さえ〜ば」用於強調某一個條件就是足夠的最低條件，只要滿足這個條件其他都不是問題。',
+            comparisons: ['さえ〜ば：只要…就…（最低條件）', 'ば：如果…就…（一般條件）'],
+            commonMistakes: ['○ 健康でさえあれば / × 健康さえあれば → 形容動詞用「でさえあれば」'],
+        },
+    },
+    // ━━━ すら (even) ━━━
+    {
+        id: 'g_n2_430', category: 'grammar', level: 'N2', tags: ['emphasis', 'extreme', 'formal'],
+        stem: '彼{かれ}は自分{じぶん}の名前{なまえ}___書{か}けない。',
+        stemZh: '他連自己的名字都不會寫。',
+        options: [
+            { text: 'さえ', reason: '「さえ」也表示「連…也」，口語較常用。' },
+            { text: 'すら', reason: '正確！「すら」表示「連…也」，書面語，語氣更強。' },
+            { text: 'まで', reason: '「まで」表示「甚至…」，語感不同。' },
+            { text: 'でも', reason: '「でも」表示「即使…」，語氣不夠強。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「すら」是「さえ」的書面語版本',
+            analysis: '「すら」與「さえ」意思相同，都表示「連…也」，但「すら」更書面、語氣更強烈。',
+            comparisons: ['すら：連…也（書面強調）', 'さえ：連…也（口語/一般）', 'まで：甚至…（程度強調）'],
+            commonMistakes: ['○ 名前すら書けない / × 名前がすら書けない → 「すら」取代助詞「が」或「を」'],
+        },
+    },
+    // ━━━ にしたところで (even if / even from the standpoint of) ━━━
+    {
+        id: 'g_n2_431', category: 'grammar', level: 'N2', tags: ['concession', 'perspective'],
+        stem: '親{おや}___、子{こ}どもの全{すべ}てをコントロールすることはできない。',
+        stemZh: '即使是父母，也無法控制孩子的一切。',
+        options: [
+            { text: 'にしたところで', reason: '正確！「にしたところで」表示「即使是…也…」。' },
+            { text: 'にしたら', reason: '「にしたら」表示「站在…角度」，不是讓步。' },
+            { text: 'としても', reason: '「としても」表示「即使…」，但不強調立場。' },
+            { text: 'にとっても', reason: '「にとっても」表示「對…來說也」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「にしたところで」表示即使是某個有利立場也無法改變',
+            analysis: '「にしたところで」用於表示即使從某個有利的立場或身份來看，結果也不會改變。帶有「連…都…」的語氣。',
+            comparisons: ['にしたところで：即使是…也（立場無法改變結果）', 'にしても：即使…也（一般讓步）'],
+            commonMistakes: ['○ 親にしたところで / × 親がしたところで → 用「に」不用「が」'],
+        },
+    },
+    // ━━━ ないまでも (even if not / at least) ━━━
+    {
+        id: 'g_n2_432', category: 'grammar', level: 'N2', tags: ['concession', 'minimum'],
+        stem: '完璧{かんぺき}___、最低限{さいていげん}のことはしておくべきだ。',
+        stemZh: '即使做不到完美，至少應該做到最基本的。',
+        options: [
+            { text: 'でないまでも', reason: '正確！「ないまでも」表示「即使不能…至少…」。' },
+            { text: 'ではなくても', reason: '「ではなくても」也可以，但不如「ないまでも」書面。' },
+            { text: 'どころか', reason: '「どころか」表示「豈止…」，語意不同。' },
+            { text: 'はおろか', reason: '「はおろか」表示「別說…了」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ないまでも」表示退而求其次',
+            analysis: '「ないまでも」用於承認理想目標可能無法達到，但至少應該做到某個最低程度。',
+            comparisons: ['ないまでも：即使不能…至少…（退而求其次）', 'ではなくても：即使不是…也…（一般讓步）'],
+            commonMistakes: ['○ 完璧でないまでも / × 完璧じゃないまでも → 書面語用「でない」'],
+        },
+    },
+    // ━━━ に至っては (when it comes to / as for) ━━━
+    {
+        id: 'g_n2_433', category: 'grammar', level: 'N2', tags: ['extreme_case', 'escalation'],
+        stem: '兄弟{きょうだい}はみんな成績{せいせき}が悪{わる}いが、末{すえ}の弟{おとうと}___、ほとんど勉強{べんきょう}しない。',
+        stemZh: '兄弟成績都不好，至於最小的弟弟，幾乎不讀書。',
+        options: [
+            { text: 'に至っては', reason: '正確！「に至っては」表示「至於…（程度更嚴重）」。' },
+            { text: 'にしたら', reason: '「にしたら」表示「站在…角度」，語意不同。' },
+            { text: 'にとっては', reason: '「にとっては」表示「對…來說」，語意不同。' },
+            { text: 'については', reason: '「については」表示「關於…」，太一般。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に至っては」提出一個程度更極端的例子',
+            analysis: '「に至っては」用於在一般描述之後，特別提出一個更極端的例子，表示「至於…更是嚴重」。',
+            comparisons: ['に至っては：至於…（最極端的例子）', 'に至って：到了…的地步（達到程度）'],
+            commonMistakes: ['○ 弟に至っては / × 弟が至っては → 用「に」不用「が」'],
+        },
+    },
+    // ━━━ てたまらない (unbearably - additional) ━━━
+    {
+        id: 'g_n2_434', category: 'grammar', level: 'N2', tags: ['intensity', 'emotion'],
+        stem: '早{はや}く結果{けっか}が知{し}りたく___。',
+        stemZh: '好想快點知道結果，等不及了。',
+        options: [
+            { text: 'てならない', reason: '「てならない」也表示「…得不行」，但語感稍有不同。' },
+            { text: 'てたまらない', reason: '正確！「てたまらない」表示「…得受不了」，感情或感覺極度強烈。' },
+            { text: 'てしょうがない', reason: '「てしょうがない」也可以，較口語。' },
+            { text: 'てはいられない', reason: '「てはいられない」表示「不能再…」，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「てたまらない」表示感受強烈到無法忍受',
+            analysis: '「てたまらない」用於表達身體或心理的感受強烈到無法忍受的程度。常用於渴望、痛苦、悲傷等。',
+            comparisons: ['てたまらない：…得受不了（身體心理感受）', 'てならない：…得不行（自然湧起的感覺）', 'てしょうがない：…得沒辦法（口語）'],
+            commonMistakes: ['○ 知りたくてたまらない / × 知りたいてたまらない → 「たい」的て形是「たくて」'],
+        },
+    },
+    // ━━━ てならない (extremely / irresistibly - additional) ━━━
+    {
+        id: 'g_n2_435', category: 'grammar', level: 'N2', tags: ['intensity', 'involuntary'],
+        stem: '故郷{ふるさと}のことが思{おも}い出{だ}され___。',
+        stemZh: '不禁想起故鄉的事。',
+        options: [
+            { text: 'てたまらない', reason: '「てたまらない」表示「…得受不了」，語感不同。' },
+            { text: 'てならない', reason: '正確！「てならない」表示「不禁…/自然而然地…」。' },
+            { text: 'てはいられない', reason: '「てはいられない」表示「不能再…」，語意不同。' },
+            { text: 'ないではいられない', reason: '「ないではいられない」表示「忍不住…」，主動性不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「てならない」表示自然而然湧起的強烈感覺',
+            analysis: '「てならない」用於表達不由自主地產生的強烈感覺或情緒，強調是自然發生而非有意識的。',
+            comparisons: ['てならない：不禁…（自然湧起）', 'てたまらない：…得受不了（忍受不住）'],
+            commonMistakes: ['○ 思い出されてならない / × 思い出してならない → 常用自發態或被動態'],
+        },
+    },
+    // ━━━ ねばならない (must - additional) ━━━
+    {
+        id: 'g_n2_436', category: 'grammar', level: 'N2', tags: ['obligation', 'formal'],
+        stem: '約束{やくそく}は守{まも}ら___。',
+        stemZh: '約定必須遵守。',
+        options: [
+            { text: 'なければならない', reason: '「なければならない」也表示「必須…」，但較口語。' },
+            { text: 'ねばならない', reason: '正確！「ねばならない」表示「必須…」，書面語。' },
+            { text: 'ないわけにはいかない', reason: '「ないわけにはいかない」表示「不…不行」，語感不同。' },
+            { text: 'ざるを得ない', reason: '「ざるを得ない」表示「不得不…」，強調被迫。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「ねばならない」是書面語的「必須」',
+            analysis: '「ねばならない」相當於「なければならない」，但更正式、更書面化。常見於格言、法律文書。',
+            comparisons: ['ねばならない：必須…（書面正式）', 'なければならない：必須…（口語一般）'],
+            commonMistakes: ['○ 守らねばならない / × 守りねばならない → 用未然形接「ねば」'],
+        },
+    },
+    // ━━━ たまえ (do ~ - superior to inferior - additional) ━━━
+    {
+        id: 'g_n2_437', category: 'grammar', level: 'N2', tags: ['command', 'superior'],
+        stem: '君{きみ}も一緒{いっしょ}に来{き}___。',
+        stemZh: '你也一起來吧。（上對下命令）',
+        options: [
+            { text: 'なさい', reason: '「なさい」也是命令，但用於老師對學生等。' },
+            { text: 'たまえ', reason: '正確！「たまえ」是上位者對下位者的命令，較古風。' },
+            { text: 'ください', reason: '「ください」表示「請…」，太禮貌。' },
+            { text: 'なよ', reason: '「なよ」是很口語的禁止表達，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「たまえ」是上位者用的較古風命令形',
+            analysis: '「たまえ」用於上司對下屬、老師對學生等上對下的場合，語氣古風且權威。現代已較少使用。',
+            comparisons: ['たまえ：…吧（上對下命令，古風）', 'なさい：…吧（上對下命令，現代）'],
+            commonMistakes: ['○ 来たまえ / × 来るたまえ → 用連用形接「たまえ」'],
+        },
+    },
+    // ━━━ 何も〜ない (nothing / no need to) ━━━
+    {
+        id: 'g_n2_438', category: 'grammar', level: 'N2', tags: ['negation', 'unnecessary'],
+        stem: '___そこまで心配{しんぱい}する___。大丈夫{だいじょうぶ}だよ。',
+        stemZh: '不用擔心到那個程度。沒問題的。',
+        options: [
+            { text: '何も / ことはない', reason: '正確！「何も〜ことはない」表示「沒必要…」。' },
+            { text: '何も / わけがない', reason: '「何も〜わけがない」表示「不可能…」，語意不同。' },
+            { text: '何でも / ない', reason: '「何でも〜ない」不自然。' },
+            { text: '何も / はずがない', reason: '「何も〜はずがない」不自然。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「何も〜ことはない」表示不需要做某事',
+            analysis: '「何も」加上否定表達，表示「什麼都不需要…」。「ことはない」在此表示「不必…」。',
+            comparisons: ['何も〜ことはない：不必…（安慰）', '何も〜ない：什麼都沒有（完全否定）'],
+            commonMistakes: ['○ 何も心配することはない / × 何を心配することはない → 用「も」不用「を」'],
+        },
+    },
+    // ━━━ こと（は）ない (no need to) ━━━
+    {
+        id: 'g_n2_439', category: 'grammar', level: 'N2', tags: ['unnecessary', 'reassurance'],
+        stem: 'そんなに急{いそ}ぐ___。まだ時間{じかん}はたっぷりある。',
+        stemZh: '不必那麼著急。時間還很充裕。',
+        options: [
+            { text: 'ことはない', reason: '正確！「ことはない」表示「不必…/沒必要…」。' },
+            { text: 'わけがない', reason: '「わけがない」表示「不可能…」，語意不同。' },
+            { text: 'はずがない', reason: '「はずがない」表示「不應該…」，語意不同。' },
+            { text: 'ものではない', reason: '「ものではない」表示「不應該…」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「ことはない」用於安慰對方不需要做某事',
+            analysis: '「ことはない」用於表示某件事是不必要的，常帶有安慰或寬慰的語氣。',
+            comparisons: ['ことはない：不必…（安慰）', 'ないことはない：也不是不…（雙重否定）'],
+            commonMistakes: ['○ 急ぐことはない / × 急ぐのことはない → 辭書形直接接「ことはない」'],
+        },
+    },
+    // ━━━ 中を / 中では (in the middle of / among) ━━━
+    {
+        id: 'g_n2_440', category: 'grammar', level: 'N2', tags: ['circumstance', 'adversity'],
+        stem: '雨{あめ}の___、多{おお}くのファンが会場{かいじょう}に集{あつ}まった。',
+        stemZh: '在雨中，很多粉絲聚集到了會場。',
+        options: [
+            { text: '中を', reason: '正確！「中を」表示「在…（不利的條件）中」。' },
+            { text: '中で', reason: '「中で」表示「在…之中」，不強調逆境。' },
+            { text: '間に', reason: '「間に」表示「在…期間內」，語感不同。' },
+            { text: 'うちに', reason: '「うちに」表示「趁…的時候」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「中を」表示在不利條件中做某事',
+            analysis: '「中を」用於描述在惡劣天氣、困難環境等不利條件下仍然做某事，強調克服困難。',
+            comparisons: ['中を：在…中（逆境克服）', '中で：在…之中（一般場所/範圍）'],
+            commonMistakes: ['○ 雨の中を / × 雨中を → 名詞用「の中を」'],
+        },
+    },
+    // ━━━ をはじめとして (starting with - complex) ━━━
+    {
+        id: 'g_n2_441', category: 'grammar', level: 'N2', tags: ['listing', 'representative', 'complex'],
+        stem: '社長{しゃちょう}___、会社{かいしゃ}の幹部{かんぶ}全員{ぜんいん}がこの問題{もんだい}に取{と}り組{く}んでいる。',
+        stemZh: '以社長為首，公司所有高層都在處理這個問題。',
+        options: [
+            { text: 'はもちろん', reason: '「はもちろん」表示「不用說…」，語感不同。' },
+            { text: 'をはじめとして', reason: '正確！「をはじめとして」表示「以…為首/從…開始」。' },
+            { text: 'を中心に', reason: '「を中心に」表示「以…為中心」，語感不同。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「をはじめとして」列舉最重要的代表者',
+            analysis: '「をはじめとして」用於列舉最具代表性或最重要的人/事物，暗示還有其他類似的。',
+            comparisons: ['をはじめとして：以…為首（完整形）', 'をはじめ：以…為首（簡略形）'],
+            commonMistakes: ['○ 社長をはじめとして / ○ 社長をはじめ → 兩種都可以'],
+        },
+    },
+    // ━━━ に至るまで (up to / even including - complex) ━━━
+    {
+        id: 'g_n2_442', category: 'grammar', level: 'N2', tags: ['range', 'comprehensive'],
+        stem: 'この百科事典{ひゃっかじてん}は、科学{かがく}から芸術{げいじゅつ}___、あらゆる分野{ぶんや}を網羅{もうら}している。',
+        stemZh: '這本百科全書從科學到藝術，涵蓋了所有領域。',
+        options: [
+            { text: 'まで', reason: '「まで」也可以，但不如「に至るまで」強調全面性。' },
+            { text: 'に至るまで', reason: '正確！「に至るまで」表示「直到…為止」，強調涵蓋面之廣。' },
+            { text: 'にわたって', reason: '「にわたって」表示「歷時…」，用法不同。' },
+            { text: 'にかけて', reason: '「にかけて」表示「從…到…期間」，語感不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+            keyPoint: '「に至るまで」在學術或描述中強調涵蓋範圍的全面性',
+            analysis: '「から〜に至るまで」是固定搭配，用於強調從一端到另一端的完整涵蓋，常用於描述全面性。',
+            comparisons: ['に至るまで：直到…為止（強調全面）', 'まで：到…（一般範圍）'],
+            commonMistakes: ['○ 芸術に至るまで / × 芸術まで至る → 「に至るまで」是固定搭配'],
+        },
+    },
+    // ━━━ はもとより (not to mention - additional) ━━━
+    {
+        id: 'g_n2_443', category: 'grammar', level: 'N2', tags: ['emphasis', 'formal', 'inclusion'],
+        stem: '日本語{にほんご}___、中国語{ちゅうごくご}や韓国語{かんこくご}も話{はな}せる。',
+        stemZh: '不用說日語，中文和韓語也會說。',
+        options: [
+            { text: 'はもとより', reason: '正確！「はもとより」表示「不用說…/…更不用說」，書面語。' },
+            { text: 'はもちろん', reason: '「はもちろん」也可以，但較口語。' },
+            { text: 'のみならず', reason: '「のみならず」表示「不僅…」，語感不同。' },
+            { text: 'はおろか', reason: '「はおろか」表示「別說…了」，語氣過強。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「はもとより」是「はもちろん」的書面語',
+            analysis: '「はもとより」與「はもちろん」意思相同，都表示前項是理所當然的，後項更是值得注意。「はもとより」更書面正式。',
+            comparisons: ['はもとより：不用說…（書面正式）', 'はもちろん：不用說…（口語一般）'],
+            commonMistakes: ['○ 日本語はもとより / × 日本語がもとより → 用「は」不用「が」'],
+        },
+    },
+    // ━━━ に関わらず (regardless - mixed context) ━━━
+    {
+        id: 'g_n2_444', category: 'grammar', level: 'N2', tags: ['regardless', 'mixed'],
+        stem: '結果{けっか}の良{よ}し悪{あ}し___、全力{ぜんりょく}を尽{つ}くすことが大切{たいせつ}だ。',
+        stemZh: '不論結果好壞，全力以赴才是最重要的。',
+        options: [
+            { text: 'にかかわらず', reason: '正確！「にかかわらず」表示「不論…」。' },
+            { text: 'を問わず', reason: '「を問わず」也可以，意思相近。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語感不同。' },
+            { text: 'はともかく', reason: '「はともかく」表示「暫且不論…」，語感不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「にかかわらず」與對立概念搭配表示不論哪種情況',
+            analysis: '「にかかわらず」常與「良し悪し」「成功か失敗か」等對立概念搭配，表示不受任何情況影響。',
+            comparisons: ['にかかわらず：不論…（不受影響）', 'を問わず：不問…（同義）'],
+            commonMistakes: ['○ 良し悪しにかかわらず / ○ 良し悪しを問わず → 兩種都可以'],
+        },
+    },
+    // ━━━ に応えて (in response to - complex) ━━━
+    {
+        id: 'g_n2_445', category: 'grammar', level: 'N2', tags: ['response', 'expectations'],
+        stem: 'ファンの期待{きたい}___、チームは見事{みごと}に優勝{ゆうしょう}した。',
+        stemZh: '回應粉絲的期待，團隊精彩地奪得了冠軍。',
+        options: [
+            { text: 'に応えて', reason: '正確！「に応えて」表示「回應…的期待」。' },
+            { text: 'に応じて', reason: '「に応じて」表示「根據…而變化」，語意不同。' },
+            { text: 'にかけて', reason: '「にかけて」表示「從…到…」，語意不同。' },
+            { text: 'に際して', reason: '「に際して」表示「在…之際」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に応えて」特別適合「回應期待」的語境',
+            analysis: '「に応えて」用於表示為了回應他人的期待、要求或呼聲而做出相應的行動或表現。',
+            comparisons: ['に応えて：回應…的期待（滿足期待）', 'に応じて：根據…（靈活調整）'],
+            commonMistakes: ['○ 期待に応えて / ○ 期待に応え → 兩種都可以'],
+        },
+    },
+    // ━━━ にあたって (on the occasion of - complex context) ━━━
+    {
+        id: 'g_n2_446', category: 'grammar', level: 'N2', tags: ['occasion', 'formal', 'complex'],
+        stem: '創立{そうりつ}五十周年{ごじっしゅうねん}を迎{むか}える___、記念式典{きねんしきてん}を開催{かいさい}する。',
+        stemZh: '在迎來創立五十週年之際，將舉辦紀念典禮。',
+        options: [
+            { text: 'にあたり', reason: '正確！「にあたり」是「にあたって」的書面形式。' },
+            { text: 'に際して', reason: '「に際して」也可以，意思相近。' },
+            { text: 'を契機に', reason: '「を契機に」表示「以…為契機」，語感不同。' },
+            { text: 'に先立って', reason: '「に先立って」表示「在…之前」，時間點不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「にあたり」是「にあたって」的書面語形式',
+            analysis: '「にあたり」和「にあたって」意思相同，但「にあたり」更適合書面語和正式文書。',
+            comparisons: ['にあたり：在…之際（書面）', 'にあたって：在…之際（一般正式）'],
+            commonMistakes: ['○ 迎えるにあたり / ○ 迎えるにあたって → 兩種都可以'],
+        },
+    },
+    // ━━━ を通じて (throughout - time period) ━━━
+    {
+        id: 'g_n2_447', category: 'grammar', level: 'N2', tags: ['throughout', 'duration'],
+        stem: '一年{いちねん}___、この地域{ちいき}は温暖{おんだん}な気候{きこう}だ。',
+        stemZh: '一整年之中，這個地區都是溫暖的氣候。',
+        options: [
+            { text: 'を通じて', reason: '正確！「を通じて」表示「在整個…期間中」。' },
+            { text: 'にわたって', reason: '「にわたって」表示「歷時…」，語感不同。' },
+            { text: 'にかけて', reason: '「にかけて」表示「從…到…」，用法不同。' },
+            { text: 'の間', reason: '「の間」表示「在…期間」，但不強調「整個」。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「を通じて」的時間期間用法',
+            analysis: '「を通じて」在表示時間時，意為「在整個…期間中」，強調從頭到尾都是如此。',
+            comparisons: ['を通じて（時間）：在整個…期間中', 'を通じて（手段）：透過…'],
+            commonMistakes: ['○ 一年を通じて / ○ 一年を通して → 兩種都可以'],
+        },
+    },
+    // ━━━ に沿って (along / according to - complex) ━━━
+    {
+        id: 'g_n2_448', category: 'grammar', level: 'N2', tags: ['accordance', 'physical'],
+        stem: '川{かわ}___、桜{さくら}の木{き}が植{う}えられている。',
+        stemZh: '沿著河流種著櫻花樹。',
+        options: [
+            { text: 'に沿って', reason: '正確！「に沿って」表示「沿著…」，物理上的方向。' },
+            { text: 'に向かって', reason: '「に向かって」表示「朝著…」，語意不同。' },
+            { text: 'を通って', reason: '「を通って」表示「經過…」，語意不同。' },
+            { text: 'にわたって', reason: '「にわたって」表示「歷時…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「に沿って」的物理方向用法',
+            analysis: '「に沿って」在物理意義上表示「沿著…」，描述沿著某個線形事物（道路、河流、海岸等）的方向。',
+            comparisons: ['に沿って（物理）：沿著…', 'に沿って（抽象）：按照…/順著…'],
+            commonMistakes: ['○ 川に沿って / × 川を沿って → 用「に」不用「を」'],
+        },
+    },
+    // ━━━ をもとにして (based on - complex) ━━━
+    {
+        id: 'g_n2_449', category: 'grammar', level: 'N2', tags: ['basis', 'creation', 'complex'],
+        stem: 'アンケートの結果{けっか}___、サービスの改善{かいぜん}を行{おこな}った。',
+        stemZh: '以問卷調查的結果為基礎，進行了服務的改善。',
+        options: [
+            { text: 'をもとにして', reason: '正確！「をもとにして」表示「以…為基礎」。' },
+            { text: 'に基づいて', reason: '「に基づいて」也可以，但更強調嚴格依據。' },
+            { text: 'を契機にして', reason: '「を契機にして」表示「以…為契機」，語意不同。' },
+            { text: 'を中心にして', reason: '「を中心にして」表示「以…為中心」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「をもとにして」是「をもとに」的完整形式',
+            analysis: '「をもとにして」和「をもとに」意思相同，都表示以某事物作為素材或基礎來進行某事。',
+            comparisons: ['をもとにして：以…為基礎（完整形）', 'をもとに：以…為基礎（簡略形）'],
+            commonMistakes: ['○ 結果をもとにして / ○ 結果をもとに → 兩種都可以'],
+        },
+    },
+    // ━━━ を除いて (except - complex) ━━━
+    {
+        id: 'g_n2_450', category: 'grammar', level: 'N2', tags: ['exception', 'complex'],
+        stem: '彼{かれ}___、全員{ぜんいん}が賛成{さんせい}した。',
+        stemZh: '除了他以外，全員都贊成了。',
+        options: [
+            { text: 'を除いて', reason: '正確！「を除いて」表示「除了…以外」。' },
+            { text: '以外は', reason: '「以外は」也可以，意思相同。' },
+            { text: 'をはじめ', reason: '「をはじめ」表示「以…為首」，語意相反。' },
+            { text: 'に限らず', reason: '「に限らず」表示「不限於…」，語意不同。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+            keyPoint: '「を除いて」在列舉例外時使用',
+            analysis: '「を除いて」用於明確指出某個例外，表示在排除該例外後，其他都是如此。',
+            comparisons: ['を除いて：除了…以外（正式）', '以外は：除了…以外（一般）', '抜きにして：撇開…不談（擱置）'],
+            commonMistakes: ['○ 彼を除いて / × 彼が除いて → 用「を」不用「が」'],
+        },
+    },
 ]
