@@ -1,9 +1,9 @@
 import { useState, useMemo, useCallback } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowLeft, Play, ChevronRight } from 'lucide-react'
+import { ArrowLeft, Play, ChevronRight, BookOpen, Languages } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { getCourseByLevel } from '../../data/courses/index'
-import type { JLPTLevel, LessonDefinition } from '../../types/course'
+import type { JLPTLevel, LessonDefinition, LessonVocab, LessonGrammarSummary } from '../../types/course'
 import { unifiedToQuestion } from '../../utils/questionAdapters'
 import type { Question } from '../../types'
 import type { AnswerRecord } from '../../store/usePracticeStore'
@@ -21,6 +21,35 @@ function shuffleArray<T>(arr: T[]): T[] {
     ;[a[i], a[j]] = [a[j], a[i]]
   }
   return a
+}
+
+/** 去除振假名標記 */
+const stripFurigana = (s: string) => s.replace(/\{[^}]+\}/g, '')
+
+/** 偵測對話行中出現的本課單字 */
+function detectVocab(line: string, vocabulary: LessonVocab[]): LessonVocab[] {
+  const plain = stripFurigana(line)
+  return vocabulary.filter(v => {
+    const word = stripFurigana(v.word)
+    if (word.length < 2) return false // 單字元太泛，不標記
+    return plain.includes(word)
+  })
+}
+
+/** 偵測對話行中出現的本課文法 */
+function detectGrammar(line: string, grammarSummaries: LessonGrammarSummary[]): LessonGrammarSummary[] {
+  const plain = stripFurigana(line)
+  return grammarSummaries.filter(g => {
+    const parts = stripFurigana(g.pattern)
+      .split(/[〜～AB（）()\/\s]+/)
+      .filter(p => p.length >= 2)
+    return parts.some(p => plain.includes(p))
+  })
+}
+
+/** 捲動到指定 element */
+function scrollToId(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'center' })
 }
 
 const LessonPage = () => {
@@ -266,6 +295,55 @@ const LessonPage = () => {
           </div>
         )}
 
+        {lesson.dialogue.length > 0 && (
+          <div id="dialogue" className="card p-4 mb-4">
+            <h2 className="text-base font-bold text-wave-deep mb-3">情境對話</h2>
+            <p className="text-xs text-sumi-faded mb-3">點擊標籤可跳至對應的單字或文法解說</p>
+            <div className="space-y-3">
+              {lesson.dialogue.map((line, i) => {
+                const matchedVocab = detectVocab(line.japanese, lesson.vocabulary)
+                const matchedGrammar = detectGrammar(line.japanese, lesson.grammarSummaries)
+                const hasAnnotations = matchedVocab.length > 0 || matchedGrammar.length > 0
+                return (
+                  <div key={i} className="flex gap-3">
+                    <div className="shrink-0 w-14 text-right">
+                      <span className="text-xs font-bold text-wave-mid"><FuriganaText text={line.speaker} /></span>
+                    </div>
+                    <div className="flex-1">
+                      <div className="text-sm"><FuriganaText text={line.japanese} /></div>
+                      <div className="text-xs text-sumi-faded mt-0.5">{line.chinese}</div>
+                      {hasAnnotations && (
+                        <div className="flex flex-wrap gap-1 mt-1.5">
+                          {matchedVocab.map((v, vi) => (
+                            <button
+                              key={`v-${vi}`}
+                              onClick={() => scrollToId(`vocab-${lesson.vocabulary.indexOf(v)}`)}
+                              className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[10px] rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 hover:bg-indigo-100 transition-colors"
+                            >
+                              <BookOpen size={10} />
+                              {stripFurigana(v.word)}
+                            </button>
+                          ))}
+                          {matchedGrammar.map((g, gi) => (
+                            <button
+                              key={`g-${gi}`}
+                              onClick={() => scrollToId(`grammar-${g.grammarId}`)}
+                              className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[10px] rounded-full bg-amber-50 text-amber-700 border border-amber-200 hover:bg-amber-100 transition-colors"
+                            >
+                              <Languages size={10} />
+                              <FuriganaText text={g.pattern} />
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        )}
+
         {lesson.vocabulary.length > 0 && (
           <div id="vocabulary" className="card p-4 mb-4">
             <h2 className="text-base font-bold text-wave-deep mb-3">
@@ -273,7 +351,7 @@ const LessonPage = () => {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {lesson.vocabulary.map((v, i) => (
-                <div key={i} className="p-2 rounded-lg bg-white/50 border border-indigo-900/5">
+                <div key={i} id={`vocab-${i}`} className="p-2 rounded-lg bg-white/50 border border-indigo-900/5 scroll-mt-20">
                   <div className="font-bold text-wave-deep">{v.word}</div>
                   <div className="text-xs text-sumi-faded">{v.reading} — {v.meaning_zh}</div>
                 </div>
@@ -289,7 +367,7 @@ const LessonPage = () => {
             </h2>
             <div className="space-y-3">
               {lesson.grammarSummaries.map(g => (
-                <div key={g.grammarId} className="p-3 rounded-lg bg-white/50 border border-indigo-900/5">
+                <div key={g.grammarId} id={`grammar-${g.grammarId}`} className="p-3 rounded-lg bg-white/50 border border-indigo-900/5 scroll-mt-20">
                   <div className="flex items-center justify-between mb-1">
                     <span className="font-bold text-wave-deep"><FuriganaText text={g.pattern} /></span>
                     <button
@@ -303,25 +381,6 @@ const LessonPage = () => {
                   <div className="text-xs">
                     <FuriganaText text={g.quickExample} />
                     <span className="text-sumi-faded ml-2">{g.quickExampleZh}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {lesson.dialogue.length > 0 && (
-          <div id="dialogue" className="card p-4 mb-4">
-            <h2 className="text-base font-bold text-wave-deep mb-3">情境對話</h2>
-            <div className="space-y-3">
-              {lesson.dialogue.map((line, i) => (
-                <div key={i} className="flex gap-3">
-                  <div className="shrink-0 w-14 text-right">
-                    <span className="text-xs font-bold text-wave-mid"><FuriganaText text={line.speaker} /></span>
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-sm"><FuriganaText text={line.japanese} /></div>
-                    <div className="text-xs text-sumi-faded mt-0.5">{line.chinese}</div>
                   </div>
                 </div>
               ))}
