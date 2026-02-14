@@ -333,7 +333,7 @@ const DatesPractice: React.FC = () => {
                                     >
                                         <div className="flex items-center gap-2">
                                             <span className="font-bold text-sm sm:text-base">{String.fromCharCode(65 + idx)}.</span>
-                                            <span className="text-sm sm:text-base flex-1">{option.text}</span>
+                                            <span className="text-sm sm:text-base flex-1"><FuriganaText text={option.text} /></span>
                                             {showResult && isOptionCorrect && <Check className="w-4 h-4 sm:w-5 sm:h-5 ml-auto text-green-600" />}
                                             {showResult && isSelected && !isOptionCorrect && <X className="w-4 h-4 sm:w-5 sm:h-5 ml-auto text-red-600" />}
                                         </div>
@@ -353,7 +353,7 @@ const DatesPractice: React.FC = () => {
                                     <p className="text-xs">
                                         {!isCorrect && (
                                             <>
-                                                正確答案：<span className="font-bold text-green-700">{currentQuestion.options[currentQuestion.correctIndex].text}</span>
+                                                正確答案：<span className="font-bold text-green-700"><FuriganaText text={currentQuestion.options[currentQuestion.correctIndex].text} /></span>
                                             </>
                                         )}
                                     </p>
@@ -399,7 +399,7 @@ const DatesPractice: React.FC = () => {
                                                             {isCorrectOption ? '✓' : isSelectedOption ? '✗' : '•'}
                                                         </span>
                                                         <div className="flex-1">
-                                                            <span className="font-bold">{String.fromCharCode(65 + idx)}. {option.text}</span>
+                                                            <span className="font-bold">{String.fromCharCode(65 + idx)}. <FuriganaText text={option.text} /></span>
                                                             <p className="text-gray-700 mt-1"><FuriganaText text={option.reason} /></p>
                                                         </div>
                                                     </div>
@@ -415,7 +415,7 @@ const DatesPractice: React.FC = () => {
                                     <div className="flex flex-wrap gap-2">
                                         {currentQuestion.explanation.relatedRules.map((rule, idx) => (
                                             <span key={idx} className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">
-                                                {rule}
+                                                <FuriganaText text={rule} />
                                             </span>
                                         ))}
                                     </div>

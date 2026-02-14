@@ -10,6 +10,18 @@ import { StaticQuestion, UnifiedQuestion, StructuredExplanation } from '../data/
 import { DatesPracticeQuestion } from '../data/questions/datesPractice/types'
 import { stripStemFurigana } from './furiganaUtils'
 
+// ─── Helpers ───
+
+/** Fisher-Yates shuffle（回傳新陣列） */
+function shuffleOptions<T>(arr: T[]): T[] {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
 // ─── StructuredExplanation → 文字序列化 ───
 
 /**
@@ -77,16 +89,17 @@ export function parseCorrectRule(correctRule: string): StructuredExplanation {
  * Convert a UnifiedQuestion to the runtime Question format.
  */
 export function unifiedToQuestion(q: UnifiedQuestion): Question {
+  const shuffled = shuffleOptions(q.options)
   return {
     id: q.id,
     type: 'multiple-choice',
     stem: stripStemFurigana(q.stem),
     meaning: q.stemZh,
-    options: q.options.map(o => o.text),
+    options: shuffled.map(o => o.text),
     correct: q.options[q.correctIndex].text,
     detailedExplanation: {
       correctRule: formatStructuredExplanation(q.explanation),
-      distractors: q.options.map(o => ({ text: o.text, reason: o.reason })),
+      distractors: shuffled.map(o => ({ text: o.text, reason: o.reason })),
       structured: q.explanation,
     },
     level: q.level,
@@ -102,21 +115,22 @@ export function unifiedToQuestion(q: UnifiedQuestion): Question {
  */
 export function staticToQuestion(q: StaticQuestion, level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1'): Question {
   const structured = q.correctRule ? parseCorrectRule(q.correctRule) : undefined
+  const shuffled = shuffleOptions(q.options)
 
   return {
     id: q.id,
     type: 'multiple-choice',
     stem: stripStemFurigana(q.prob),
     meaning: q.prob_zh,
-    options: q.options.map(o => o.text),
+    options: shuffled.map(o => o.text),
     correct: q.options[q.correctIndex].text,
-    explanation: q.options
+    explanation: shuffled
       .map(o => o.reason ? `${o.text}: ${o.reason}` : '')
       .filter(Boolean)
       .join('\n'),
     detailedExplanation: {
       correctRule: q.correctRule || '正解です。',
-      distractors: q.options.map(o => ({
+      distractors: shuffled.map(o => ({
         text: o.text,
         reason: o.reason || '正解',
       })),
@@ -139,20 +153,22 @@ export function datesToQuestion(q: DatesPracticeQuestion): Question {
     furiganaNote: q.explanation.furiganaNote || undefined,
   }
 
+  const shuffled = shuffleOptions(q.options)
+
   return {
     id: q.id,
     type: 'multiple-choice',
     stem: stripStemFurigana(q.stem),
     meaning: q.stem_zh,
-    options: q.options.map(o => o.text),
+    options: shuffled.map(o => o.text),
     correct: q.options[q.correctIndex].text,
-    explanation: q.options
+    explanation: shuffled
       .map(o => o.reason ? `${o.text}: ${o.reason}` : '')
       .filter(Boolean)
       .join('\n'),
     detailedExplanation: {
       correctRule: q.explanation.correctRule,
-      distractors: q.options.map(o => ({
+      distractors: shuffled.map(o => ({
         text: o.text,
         reason: o.reason,
       })),

@@ -181,11 +181,11 @@ const PracticeHistoryView = ({ history, onBack }: PracticeHistoryViewProps) => {
                     ) : (
                       <p className="text-sm">
                         <span className="text-indigo-900/90">你的答案：</span>
-                        <span className="font-bold">{record.selectedAnswer}</span>
+                        <span className="font-bold"><FuriganaText text={record.selectedAnswer} /></span>
                         {!record.isCorrect && (
                           <>
                             <span className="text-indigo-900/90 mx-2">→</span>
-                            <span className="text-green-400 font-bold">正確答案：{question.correct}</span>
+                            <span className="text-green-400 font-bold">正確答案：<FuriganaText text={question.correct || ''} /></span>
                           </>
                         )}
                       </p>

@@ -373,11 +373,11 @@ const PracticeResults = ({
                     ) : (
                       <p className="text-sm">
                         <span className="text-white/60">你的答案：</span>
-                        <span className="font-bold">{record.selectedAnswer}</span>
+                        <span className="font-bold"><FuriganaText text={record.selectedAnswer} /></span>
                         {!record.isCorrect && (
                           <>
                             <span className="text-white/60 mx-2">→</span>
-                            <span className="text-green-400 font-bold">正確答案：{question.correct}</span>
+                            <span className="text-green-400 font-bold">正確答案：<FuriganaText text={question.correct || ''} /></span>
                           </>
                         )}
                       </p>

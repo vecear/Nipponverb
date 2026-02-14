@@ -12,6 +12,7 @@ import { addExp, updateUserProgression } from '../services/progressionService'
 import { DEFAULT_PROGRESSION, EXP_REWARDS } from '../types/progression'
 import { getGameConfig } from '../services/adminService'
 import GrammarPassModal from '../components/GrammarPassModal'
+import FuriganaText from '../components/FuriganaText'
 
 const GrammarDetail = () => {
     const { id } = useParams<{ id: string }>()
@@ -221,36 +222,6 @@ const GrammarDetail = () => {
         }
     }, [])
 
-    const renderFurigana = (text: string) => {
-        // Parser for "漢字{かんじ}" format
-        // Only matches CJK characters (kanji) followed by {reading}
-        // CJK Unified Ideographs: \u4e00-\u9fff, Extension A: \u3400-\u4dbf
-        const regex = /([\u4e00-\u9fff\u3400-\u4dbf\u3005\u3007\u30f5\u30f6]+)\{([^{}]+)\}/g
-        const parts: (string | JSX.Element)[] = []
-        let lastIndex = 0
-        let match
-
-        while ((match = regex.exec(text)) !== null) {
-            // Add text before the match
-            if (match.index > lastIndex) {
-                parts.push(text.substring(lastIndex, match.index))
-            }
-            // Add the ruby element
-            parts.push(
-                <ruby key={match.index}>
-                    {match[1]}<rt>{match[2]}</rt>
-                </ruby>
-            )
-            lastIndex = regex.lastIndex
-        }
-
-        // Add remaining text
-        if (lastIndex < text.length) {
-            parts.push(text.substring(lastIndex))
-        }
-
-        return <span>{parts}</span>
-    }
 
     // Strip furigana markers for Chinese text display (e.g., connection field)
     // Removes {reading} markers but keeps the kanji
@@ -293,7 +264,7 @@ const GrammarDetail = () => {
                             }`}>
                             {detail.level}
                         </span>
-                        <h1 className="text-2xl sm:text-4xl font-bold text-indigo-900">{renderFurigana(detail.pattern)}</h1>
+                        <h1 className="text-2xl sm:text-4xl font-bold text-indigo-900"><FuriganaText text={detail.pattern} /></h1>
                         {/* Show completion badge if already completed */}
                         {wasAlreadyCompleted && (
                             <span className="inline-flex items-center gap-1 px-1.5 py-0.5 sm:px-2 sm:py-1 bg-green-500/20 text-green-500 rounded text-xs sm:text-sm font-medium">
@@ -324,14 +295,14 @@ const GrammarDetail = () => {
                                 <h4 className="text-sm sm:text-lg font-bold text-indigo-900 mb-1 sm:mb-2">{usage.title}</h4>
                             )}
                             <p className="text-indigo-900/80 mb-3 sm:mb-6 leading-relaxed text-xs sm:text-base">
-                                {renderFurigana(usage.description)}
+                                <FuriganaText text={usage.description} />
                             </p>
 
                             <div className="space-y-2 sm:space-y-4">
                                 {usage.examples.map((ex, i) => (
                                     <div key={i} className="bg-indigo-900/10 rounded-lg sm:rounded-xl p-2 sm:p-4">
                                         <div className="text-sm sm:text-lg text-indigo-900 mb-0.5 sm:mb-1 font-zen">
-                                            {renderFurigana(ex.japanese)}
+                                            <FuriganaText text={ex.japanese} />
                                         </div>
                                         <div className="text-indigo-900/90 text-xs sm:text-sm">
                                             {ex.chinese}
@@ -357,7 +328,7 @@ const GrammarDetail = () => {
                         </h3>
                         {detail.analysis.description && (
                             <p className="text-indigo-900/80 mb-2 sm:mb-4 text-xs sm:text-base">
-                                {renderFurigana(detail.analysis.description)}
+                                <FuriganaText text={detail.analysis.description} />
                             </p>
                         )}
 
@@ -367,10 +338,10 @@ const GrammarDetail = () => {
                                     <li key={i} className="flex gap-2 sm:gap-3">
                                         <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-indigo-900/40 mt-2 sm:mt-2.5 flex-shrink-0" />
                                         <div className="space-y-1 sm:space-y-2 flex-1">
-                                            <p className="text-indigo-900/90 text-xs sm:text-base">{renderFurigana(point.rule)}</p>
+                                            <p className="text-indigo-900/90 text-xs sm:text-base"><FuriganaText text={point.rule} /></p>
                                             {point.examples && point.examples.map((ex, j) => (
                                                 <div key={j} className="bg-indigo-900/10 rounded-md sm:rounded-lg p-2 sm:p-3 text-xs sm:text-sm">
-                                                    <div className="text-indigo-900 mb-0.5 sm:mb-1">{renderFurigana(ex.japanese)}</div>
+                                                    <div className="text-indigo-900 mb-0.5 sm:mb-1"><FuriganaText text={ex.japanese} /></div>
                                                     <div className="text-indigo-900/80">{ex.chinese}</div>
                                                 </div>
                                             ))}
@@ -402,7 +373,7 @@ const GrammarDetail = () => {
                             return (
                                 <div key={q.id} className="bg-indigo-900/5 border border-indigo-900/10 rounded-xl sm:rounded-2xl p-3 sm:p-6">
                                     <p className="text-sm sm:text-lg text-indigo-900 mb-3 sm:mb-6 font-zen whitespace-pre-wrap">
-                                        {renderFurigana(q.sentence)}
+                                        <FuriganaText text={q.sentence} />
                                     </p>
 
                                     <div className="grid grid-cols-2 gap-1.5 sm:gap-3 mb-2 sm:mb-4">
@@ -427,7 +398,7 @@ const GrammarDetail = () => {
                                                     disabled={isAnswered}
                                                     className={btnClass}
                                                 >
-                                                    {renderFurigana(opt)}
+                                                    <FuriganaText text={opt} />
                                                 </button>
                                             )
                                         })}
@@ -443,7 +414,7 @@ const GrammarDetail = () => {
                                                     {isCorrect ? '答對了！' : '答錯了'}
                                                 </p>
                                                 <p className="text-indigo-900/80 text-[10px] sm:text-sm">
-                                                    {explanationText ? renderFurigana(explanationText) : null}
+                                                    {explanationText ? <FuriganaText text={explanationText} /> : null}
                                                 </p>
                                             </div>
                                         </div>

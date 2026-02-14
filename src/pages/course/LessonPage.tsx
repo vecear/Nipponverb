@@ -223,8 +223,8 @@ const LessonPage = () => {
                       {q.meaning && <p className="text-xs text-sumi-faded">{q.meaning}</p>}
                       {!record.isCorrect && (
                         <p className="text-xs mt-1">
-                          <span className="text-red-400">你的答案：{record.selectedAnswer}</span>
-                          <span className="text-green-600 ml-2">正確：{q.correct}</span>
+                          <span className="text-red-400">你的答案：<FuriganaText text={record.selectedAnswer} /></span>
+                          <span className="text-green-600 ml-2">正確：<FuriganaText text={q.correct || ''} /></span>
                         </p>
                       )}
                     </div>
