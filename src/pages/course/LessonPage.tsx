@@ -291,7 +291,7 @@ const LessonPage = () => {
               {lesson.grammarSummaries.map(g => (
                 <div key={g.grammarId} className="p-3 rounded-lg bg-white/50 border border-indigo-900/5">
                   <div className="flex items-center justify-between mb-1">
-                    <span className="font-bold text-wave-deep">{g.pattern}</span>
+                    <span className="font-bold text-wave-deep"><FuriganaText text={g.pattern} /></span>
                     <button
                       onClick={() => navigate(`/grammar/${g.grammarId}`)}
                       className="text-xs text-vermilion hover:underline"
