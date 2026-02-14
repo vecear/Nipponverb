@@ -54,7 +54,7 @@ const units: UnitDefinition[] = [
 
 const totalLessons = units.reduce((sum, u) => sum + u.lessons.length, 0)
 const totalVocab = units.reduce((sum, u) => sum + u.lessons.reduce((s, l) => s + l.vocabulary.length, 0), 0)
-const totalGrammar = units.reduce((sum, u) => sum + u.lessons.reduce((s, l) => s + l.grammarIds.length, 0), 0)
+const totalGrammar = units.reduce((sum, u) => sum + u.lessons.reduce((s, l) => s + l.grammarSummaries.length, 0), 0)
 
 export const n5Course: CourseDefinition = {
   id: 'jlpt_n5',

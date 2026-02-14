@@ -75,7 +75,7 @@ const CourseOverview = () => {
                         </span>
                       </div>
                       <span className="text-xs text-sumi-faded">
-                        {lesson.vocabulary.length} 單字 · {lesson.grammarIds.length} 文法
+                        {lesson.vocabulary.length} 單字 · {lesson.grammarSummaries.length} 文法
                       </span>
                     </button>
                   ))}

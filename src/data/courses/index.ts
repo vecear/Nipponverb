@@ -1,9 +1,11 @@
 import type { CourseDefinition, JLPTLevel } from '../../types/course'
+import { n4Course } from './n4'
 import { n5Course } from './n5'
 
 /** 所有已建立的課程 */
 export const allCourses: CourseDefinition[] = [
   n5Course,
+  n4Course,
 ]
 
 /** 依 ID 取得課程 */

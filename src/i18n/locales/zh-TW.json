@@ -108,6 +108,10 @@
       "dates": {
         "title": "日期及數量詞",
         "description": "掌握日期、時間和各種量詞的讀法"
+      },
+      "course": {
+        "title": "課程練習",
+        "description": "複習課程所學內容"
       }
     },
     "question": "第 {{current}} 題，共 {{total}} 題",

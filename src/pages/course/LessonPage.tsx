@@ -317,7 +317,7 @@ const LessonPage = () => {
               {lesson.dialogue.map((line, i) => (
                 <div key={i} className="flex gap-3">
                   <div className="shrink-0 w-14 text-right">
-                    <span className="text-xs font-bold text-wave-mid">{line.speaker}</span>
+                    <span className="text-xs font-bold text-wave-mid"><FuriganaText text={line.speaker} /></span>
                   </div>
                   <div className="flex-1">
                     <div className="text-sm"><FuriganaText text={line.japanese} /></div>
