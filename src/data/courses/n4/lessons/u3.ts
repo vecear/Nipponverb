@@ -5,50 +5,151 @@ import type { UnifiedQuestion } from '../../../questions/types'
 
 // ─── Lesson 1 Quiz ───
 const l1Quiz: UnifiedQuestion[] = [
+  // Q1 vocabulary — 大学生
   {
-    id: 'cq_n4_u3_l1_001',
+    id: 'n4_u3_l1_q1',
     category: 'vocabulary',
     level: 'N4',
-    tags: ['meaning'],
-    stem: '「試験{しけん}」の意味{いみ}はどれですか。',
-    stemZh: '「試験」的意思是哪個？',
+    stem: '「大学生{だいがくせい}」の意味{いみ}はどれですか。',
+    stemZh: '「大学生」的意思是哪個？',
     options: [
-      { text: '考試', reason: '正確。試験{しけん}意為考試。' },
-      { text: '練習', reason: '錯誤。練習是練習{れんしゅう}。' },
-      { text: '授業', reason: '錯誤。授業是上課。' },
-      { text: '宿題', reason: '錯誤。宿題是作業。' },
+      { text: '高中生', reason: '錯誤。高中生是高校生{こうこうせい}。' },
+      { text: '大學生', reason: '正確。大学生{だいがくせい}意為大學生。' },
+      { text: '中學生', reason: '錯誤。中學生是中学生{ちゅうがくせい}。' },
+      { text: '小學生', reason: '錯誤。小學生是小学生{しょうがくせい}。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '大学生的詞義',
+      analysis: '大学生{だいがくせい}意為大學生。「大学」＋「生」構成身分詞。',
+      relatedRules: ['📖 本課 單字「大学生」'],
+    },
+  },
+  // Q2 vocabulary — 中学校
+  {
+    id: 'n4_u3_l1_q2',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「中学校{ちゅうがっこう}」の読{よ}み方{かた}はどれですか。',
+    stemZh: '「中学校」的讀法是哪個？',
+    options: [
+      { text: 'なかがっこう', reason: '錯誤。「中」在此讀「ちゅう」而非訓讀「なか」。' },
+      { text: 'ちゅうがくこう', reason: '錯誤。「校」在此因連濁讀「こう」，但「学校」整體讀「がっこう」。' },
+      { text: 'ちゅうがっこう', reason: '正確。中学校讀作ちゅうがっこう，意為中學。' },
+      { text: 'じゅうがっこう', reason: '錯誤。「中」讀「ちゅう」不讀「じゅう」。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '中学校的讀音',
+      analysis: '中学校{ちゅうがっこう}意為中學。注意「学校」讀「がっこう」有促音。',
+      relatedRules: ['📖 本課 單字「中学校」'],
+    },
+  },
+  // Q3 vocabulary — 小学校
+  {
+    id: 'n4_u3_l1_q3',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「小学校{しょうがっこう}」の意味{いみ}はどれですか。',
+    stemZh: '「小学校」的意思是哪個？',
+    options: [
+      { text: '小學', reason: '正確。小学校{しょうがっこう}意為小學。' },
+      { text: '中學', reason: '錯誤。中學是中学校{ちゅうがっこう}。' },
+      { text: '幼稚園', reason: '錯誤。幼稚園是幼稚園{ようちえん}。' },
+      { text: '高中', reason: '錯誤。高中是高校{こうこう}。' },
     ],
     correctIndex: 0,
     explanation: {
-      keyPoint: '試験的詞義',
-      analysis: '試験{しけん}意為考試、測驗。是學校生活中最重要的詞彙之一。',
+      keyPoint: '小学校的詞義',
+      analysis: '小学校{しょうがっこう}意為小學。日本學制為小学校（6年）→中学校（3年）→高等学校（3年）。',
+      relatedRules: ['📖 本課 單字「小学校」'],
     },
   },
+  // Q4 vocabulary — 高校 vs 高等学校
   {
-    id: 'cq_n4_u3_l1_002',
+    id: 'n4_u3_l1_q4',
     category: 'vocabulary',
     level: 'N4',
-    tags: ['meaning'],
-    stem: '「卒業{そつぎょう}」の反対語{はんたいご}はどれですか。',
-    stemZh: '「卒業」（畢業）的反義詞是哪個？',
+    stem: '「高校{こうこう}」と「高等学校{こうとうがっこう}」の関係{かんけい}はどれですか。',
+    stemZh: '「高校」和「高等学校」的關係是哪個？',
     options: [
-      { text: '入学{にゅうがく}', reason: '正確。入学意為入學，是卒業的反義詞。' },
-      { text: '予習{よしゅう}', reason: '錯誤。予習意為預習，不是反義詞。' },
-      { text: '復習{ふくしゅう}', reason: '錯誤。復習意為復習，不是反義詞。' },
-      { text: '研究{けんきゅう}', reason: '錯誤。研究意為研究，不是反義詞。' },
+      { text: '高校是大學的簡稱', reason: '錯誤。大學是大学{だいがく}，和高校無關。' },
+      { text: '兩者完全不同', reason: '錯誤。高校正是高等学校的簡稱。' },
+      { text: '高校是高等学校的簡稱', reason: '正確。兩者都指高中。' },
+      { text: '高等学校是高校的敬語', reason: '錯誤。只是正式名稱與簡稱的關係，不是敬語。' },
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: {
-      keyPoint: '卒業與入学的配對',
-      analysis: '卒業{そつぎょう}（畢業）⇔ 入学{にゅうがく}（入學）。這是學校生活中最基本的反義詞組合。',
-      comparisons: ['卒業{そつぎょう}＝畢業', '入学{にゅうがく}＝入學'],
+      keyPoint: '高校與高等学校的關係',
+      analysis: '高校{こうこう}是高等学校{こうとうがっこう}的簡稱，都指高中。日常會話中多用「高校」。',
+      relatedRules: ['📖 本課 單字「高校」「高等学校」'],
     },
   },
+  // Q5 vocabulary — 入学
   {
-    id: 'cq_n4_u3_l1_003',
+    id: 'n4_u3_l1_q5',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「入学{にゅうがく}」の意味{いみ}はどれですか。',
+    stemZh: '「入学」的意思是哪個？',
+    options: [
+      { text: '畢業', reason: '錯誤。畢業是卒業{そつぎょう}。' },
+      { text: '轉學', reason: '錯誤。轉學是転校{てんこう}。' },
+      { text: '入學', reason: '正確。入学{にゅうがく}意為入學。' },
+      { text: '休學', reason: '錯誤。休學是休学{きゅうがく}。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '入学的詞義',
+      analysis: '入学{にゅうがく}意為入學。「入」有進入之意，「学」有學校之意。反義詞是卒業{そつぎょう}（畢業）。',
+      relatedRules: ['📖 本課 單字「入学」'],
+    },
+  },
+  // Q6 vocabulary — 教育
+  {
+    id: 'n4_u3_l1_q6',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「教育{きょういく}」の読{よ}み方{かた}はどれですか。',
+    stemZh: '「教育」的讀法是哪個？',
+    options: [
+      { text: 'きょいく', reason: '錯誤。「教」讀「きょう」，不是「きょ」。' },
+      { text: 'きょういく', reason: '正確。教育讀作きょういく，意為教育。' },
+      { text: 'こういく', reason: '錯誤。「教」的音讀是「きょう」，不是「こう」。' },
+      { text: 'きょうそだて', reason: '錯誤。這是混合了音讀和訓讀，不正確。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '教育的讀音',
+      analysis: '教育{きょういく}意為教育。「教」讀「きょう」、「育」讀「いく」。注意長音。',
+      relatedRules: ['📖 本課 單字「教育」'],
+    },
+  },
+  // Q7 vocabulary — 高校生
+  {
+    id: 'n4_u3_l1_q7',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '高校{こうこう}に通{かよ}っている学生{がくせい}のことを何{なん}と言{い}いますか。',
+    stemZh: '在高中就讀的學生叫什麼？',
+    options: [
+      { text: '大学生{だいがくせい}', reason: '錯誤。大学生是就讀大學的學生。' },
+      { text: '中学生{ちゅうがくせい}', reason: '錯誤。中学生是就讀中學的學生。' },
+      { text: '小学生{しょうがくせい}', reason: '錯誤。小学生是就讀小學的學生。' },
+      { text: '高校生{こうこうせい}', reason: '正確。高校生意為高中生。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '高校生的詞義',
+      analysis: '高校生{こうこうせい}意為高中生。「高校」＋「生」表示就讀於高中的學生。',
+      relatedRules: ['📖 本課 單字「高校生」'],
+    },
+  },
+  // Q8 grammar — たら基礎
+  {
+    id: 'n4_u3_l1_q8',
     category: 'grammar',
     level: 'N4',
-    tags: ['tara'],
     stem: 'もし雨{あめ}が降{ふ}っ＿＿、家{いえ}にいます。',
     stemZh: '如果下雨的話，我待在家裡。',
     options: [
@@ -60,58 +161,203 @@ const l1Quiz: UnifiedQuestion[] = [
     correctIndex: 0,
     explanation: {
       keyPoint: '條件句型「たら」',
-      analysis: '「たら」接在動詞た形後，表示「如果〜的話」。構成方式：動詞た形＋ら。例如：降った→降ったら。',
+      analysis: '「たら」接在動詞た形後，表示「如果〜的話」。構成方式：動詞た形＋ら。降った→降ったら。',
       commonMistakes: ['○ 降ったら / × 降るたら → たら接在た形後面'],
+      relatedRules: ['📖 本課 文法「〜たら」'],
     },
   },
+  // Q9 grammar — ば基礎
   {
-    id: 'cq_n4_u3_l1_004',
+    id: 'n4_u3_l1_q9',
     category: 'grammar',
     level: 'N4',
-    tags: ['ba'],
     stem: '勉強{べんきょう}すれ＿＿、試験{しけん}に合格{ごうかく}できます。',
     stemZh: '只要用功讀書，就能通過考試。',
     options: [
+      { text: 'と', reason: '錯誤。「と」不接在假定形後面。' },
       { text: 'ば', reason: '正確。「ば」是假定形，すれ＋ば構成條件。' },
       { text: 'たら', reason: '錯誤。「たら」不接在假定形後面。' },
-      { text: 'と', reason: '錯誤。「と」不接在假定形後面。' },
       { text: 'なら', reason: '錯誤。「なら」不接在假定形後面。' },
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: {
       keyPoint: '條件句型「ば」',
       analysis: '「ば」接在動詞假定形後，表示「只要〜就〜」。する→すれば、食べる→食べれば。',
       comparisons: ['たら＝如果（較口語）', 'ば＝只要（較強調條件）'],
+      relatedRules: ['📖 本課 文法「〜ば」'],
+    },
+  },
+  // Q10 grammar — ばいい
+  {
+    id: 'n4_u3_l1_q10',
+    category: 'grammar',
+    level: 'N4',
+    stem: '駅{えき}で降{お}り＿＿いいですよ。',
+    stemZh: '在車站下車就好了。',
+    options: [
+      { text: 'たら', reason: '錯誤。此處是「ばいい」句型，不用「たら」。' },
+      { text: 'ても', reason: '錯誤。「ても」表示即使〜也〜，語意不同。' },
+      { text: 'れば', reason: '正確。降りる的假定形是降りれ＋ば→降りればいい，表示「下車就好了」。' },
+      { text: 'ると', reason: '錯誤。「ると」不能構成建議句型。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「〜ばいい」建議句型',
+      analysis: '「〜ばいい」表示「〜就好了」、「只要〜就行」。降りる→降りれば→降りればいい。',
+      relatedRules: ['📖 本課 文法「〜ばいい」'],
+    },
+  },
+  // Q11 grammar — たら with 入学
+  {
+    id: 'n4_u3_l1_q11',
+    category: 'grammar',
+    level: 'N4',
+    stem: '大学{だいがく}に入学{にゅうがく}でき＿＿、何{なに}を勉強{べんきょう}しますか。',
+    stemZh: '如果能入學的話，你要學什麼？',
+    options: [
+      { text: 'ば', reason: '錯誤。此處是た形＋ら的句型，不用假定形。' },
+      { text: 'たら', reason: '正確。できた＋ら→できたら，表示假設未來的條件。' },
+      { text: 'ると', reason: '錯誤。「ると」不表示假設未來。' },
+      { text: 'ても', reason: '錯誤。「ても」表示即使〜也〜，語意不同。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '「たら」用於假設未來',
+      analysis: '「たら」可以假設尚未發生的事情。できた＋ら→できたら（如果能〜的話）。',
+      relatedRules: ['📖 本課 文法「〜たら」'],
+    },
+  },
+  // Q12 grammar — ば with i-adj
+  {
+    id: 'n4_u3_l1_q12',
+    category: 'grammar',
+    level: 'N4',
+    stem: '安{やす}＿＿買{か}います。',
+    stemZh: '如果便宜的話就買。',
+    options: [
+      { text: 'かったら', reason: '錯誤。雖然也通，但空格只留一處，這裡考假定形。' },
+      { text: 'いなら', reason: '錯誤。い形容詞不能直接加なら。' },
+      { text: 'ければ', reason: '正確。い形容詞的假定形：去い＋ければ。安い→安ければ。' },
+      { text: 'くて', reason: '錯誤。「くて」是連接形，不表示條件。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: 'い形容詞的「ば」形',
+      analysis: 'い形容詞的假定形：去掉い，加ければ。安い→安ければ（如果便宜的話）。',
+      commonMistakes: ['○ 安ければ / × 安いば → い形容詞去い加ければ'],
+      relatedRules: ['📖 本課 文法「〜ば」'],
+    },
+  },
+  // Q13 grammar — ばいい with 学校
+  {
+    id: 'n4_u3_l1_q13',
+    category: 'grammar',
+    level: 'N4',
+    stem: '教育{きょういく}を勉強{べんきょう}すればいいですね。',
+    stemZh: '學教育就好了呢。',
+    options: [
+      { text: '「すればいい」表示建議對方做某事', reason: '正確。「〜ばいい」表示「〜就好了」的建議。' },
+      { text: '「すればいい」表示禁止對方做某事', reason: '錯誤。禁止用「〜てはいけない」。' },
+      { text: '「すればいい」表示對方已經做了某事', reason: '錯誤。這不是過去式，是建議句型。' },
+      { text: '「すればいい」表示必須做某事', reason: '錯誤。必須用「〜なければならない」。' },
+    ],
+    correctIndex: 0,
+    explanation: {
+      keyPoint: '「〜ばいい」的語意',
+      analysis: '「〜ばいい」用於給建議，表示「只要〜就好」。語氣輕鬆，適合朋友之間。',
+      relatedRules: ['📖 本課 文法「〜ばいい」'],
+    },
+  },
+  // Q14 dialogue comprehension
+  {
+    id: 'n4_u3_l1_q14',
+    category: 'grammar',
+    level: 'N4',
+    stem: '「頑張{がんば}れば、きっとなれますよ。」の意味{いみ}はどれですか。',
+    stemZh: '「頑張れば、きっとなれますよ。」的意思是哪個？',
+    options: [
+      { text: '即使努力也不行', reason: '錯誤。句中沒有否定或讓步的語氣。' },
+      { text: '只要努力，一定可以的', reason: '正確。「ば」表示條件，「きっと」表示一定。' },
+      { text: '因為努力了所以成功了', reason: '錯誤。這不是過去式，是對未來的鼓勵。' },
+      { text: '不需要努力', reason: '錯誤。句意恰好相反，是鼓勵對方要努力。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '「ば」的鼓勵用法',
+      analysis: '「頑張れば」是「頑張る」的假定形＋ば。搭配「きっと」表示「只要努力，一定〜」，用於鼓勵他人。',
+      relatedRules: ['📖 本課 文法「〜ば」'],
+    },
+  },
+  // Q15 grammar — たら vs ば
+  {
+    id: 'n4_u3_l1_q15',
+    category: 'grammar',
+    level: 'N4',
+    stem: '「たら」と「ば」の違{ちが}いについて正{ただ}しいのはどれですか。',
+    stemZh: '關於「たら」和「ば」的差異，正確的是哪個？',
+    options: [
+      { text: '「たら」只能用於過去', reason: '錯誤。「たら」也能用於假設未來的條件。' },
+      { text: '「ば」只能用於否定句', reason: '錯誤。「ば」可以用於肯定句和否定句。' },
+      { text: '「ば」不能用於名詞', reason: '錯誤。名詞可以用「であれば」的形式。' },
+      { text: '「たら」較口語，「ば」較強調條件成立', reason: '正確。「たら」常用於口語，「ば」較正式並強調條件。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '「たら」與「ば」的比較',
+      analysis: '「たら」較口語且用途廣泛，「ば」較正式且強調條件成立後的結果。兩者都表示條件，但語感不同。',
+      comparisons: ['たら＝如果（口語、萬用）', 'ば＝只要（正式、強調條件）'],
+      relatedRules: ['📖 本課 文法「〜たら」「〜ば」'],
     },
   },
 ]
 
 // ─── Lesson 2 Quiz ───
 const l2Quiz: UnifiedQuestion[] = [
+  // Q1 vocabulary — 講義
   {
-    id: 'cq_n4_u3_l2_001',
+    id: 'n4_u3_l2_q1',
     category: 'vocabulary',
     level: 'N4',
-    tags: ['meaning'],
     stem: '「講義{こうぎ}」の意味{いみ}はどれですか。',
     stemZh: '「講義」的意思是哪個？',
     options: [
-      { text: '講義', reason: '正確。講義{こうぎ}意為講義、課堂講授。' },
-      { text: '教育', reason: '錯誤。教育是教育{きょういく}。' },
       { text: '校長', reason: '錯誤。校長是校長{こうちょう}。' },
+      { text: '講義、課堂講授', reason: '正確。講義{こうぎ}指大學的講課、課堂講授。' },
       { text: '研究', reason: '錯誤。研究是研究{けんきゅう}。' },
+      { text: '教育', reason: '錯誤。教育是教育{きょういく}。' },
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: {
       keyPoint: '講義的詞義',
       analysis: '講義{こうぎ}指大學的講課、講授。主要用於大學以上的學術課堂。',
+      relatedRules: ['📖 本課 單字「講義」'],
     },
   },
+  // Q2 vocabulary — 講堂
   {
-    id: 'cq_n4_u3_l2_002',
+    id: 'n4_u3_l2_q2',
     category: 'vocabulary',
     level: 'N4',
-    tags: ['reading'],
+    stem: '「講堂{こうどう}」の意味{いみ}はどれですか。',
+    stemZh: '「講堂」的意思是哪個？',
+    options: [
+      { text: '教室', reason: '錯誤。教室是教室{きょうしつ}，比講堂小。' },
+      { text: '圖書館', reason: '錯誤。圖書館是図書館{としょかん}。' },
+      { text: '體育館', reason: '錯誤。體育館是体育館{たいいくかん}。' },
+      { text: '講堂', reason: '正確。講堂{こうどう}意為講堂，可用於集會或演講的大廳。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '講堂的詞義',
+      analysis: '講堂{こうどう}意為講堂，比一般教室大的集會場所。「講」有講授之意，「堂」有大廳之意。',
+      relatedRules: ['📖 本課 單字「講堂」'],
+    },
+  },
+  // Q3 vocabulary — 数学
+  {
+    id: 'n4_u3_l2_q3',
+    category: 'vocabulary',
+    level: 'N4',
     stem: '「数学{すうがく}」の意味{いみ}はどれですか。',
     stemZh: '「数学」的意思是哪個？',
     options: [
@@ -125,13 +371,95 @@ const l2Quiz: UnifiedQuestion[] = [
       keyPoint: '學科名稱',
       analysis: '数学{すうがく}意為數學。日語學科名稱多為漢字詞，與中文相近。',
       comparisons: ['数学＝數學', '科学＝科學', '文学＝文學', '地理＝地理'],
+      relatedRules: ['📖 本課 單字「数学」'],
     },
   },
+  // Q4 vocabulary — 地理
   {
-    id: 'cq_n4_u3_l2_003',
+    id: 'n4_u3_l2_q4',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「地理{ちり}」の読{よ}み方{かた}はどれですか。',
+    stemZh: '「地理」的讀法是哪個？',
+    options: [
+      { text: 'じり', reason: '錯誤。「地」在此讀「ち」不讀「じ」。' },
+      { text: 'ちり', reason: '正確。地理讀作ちり，意為地理。' },
+      { text: 'とち', reason: '錯誤。「土地」讀「とち」，但「地理」不同。' },
+      { text: 'じりょう', reason: '錯誤。這不是地理的讀音。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '地理的讀音',
+      analysis: '地理{ちり}意為地理。只有兩個音節，是較短的學科名稱。',
+      relatedRules: ['📖 本課 單字「地理」'],
+    },
+  },
+  // Q5 vocabulary — 科学 vs 文学
+  {
+    id: 'n4_u3_l2_q5',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「科学{かがく}」と「文学{ぶんがく}」、理系{りけい}の科目{かもく}はどちらですか。',
+    stemZh: '「科学」和「文学」，理科的科目是哪個？',
+    options: [
+      { text: '文学{ぶんがく}', reason: '錯誤。文學屬於文科（文系）。' },
+      { text: '科学{かがく}', reason: '正確。科學屬於理科（理系）。' },
+      { text: '兩者都是理科', reason: '錯誤。文學是文科。' },
+      { text: '兩者都是文科', reason: '錯誤。科學是理科。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '文理科的區分',
+      analysis: '科学{かがく}（科學）屬於理系（理科），文学{ぶんがく}（文學）屬於文系（文科）。',
+      comparisons: ['理系{りけい}＝理科：数学、科学', '文系{ぶんけい}＝文科：文学、地理'],
+      relatedRules: ['📖 本課 單字「科学」「文学」'],
+    },
+  },
+  // Q6 vocabulary — 文法
+  {
+    id: 'n4_u3_l2_q6',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「文法{ぶんぽう}」の意味{いみ}はどれですか。',
+    stemZh: '「文法」的意思是哪個？',
+    options: [
+      { text: '文化', reason: '錯誤。文化是文化{ぶんか}。' },
+      { text: '文學', reason: '錯誤。文學是文学{ぶんがく}。' },
+      { text: '語法', reason: '正確。文法{ぶんぽう}意為語法、文法。' },
+      { text: '作文', reason: '錯誤。作文是作文{さくぶん}。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '文法的詞義',
+      analysis: '文法{ぶんぽう}意為語法、文法。「文」有文章之意，「法」有規則之意。',
+      relatedRules: ['📖 本課 單字「文法」'],
+    },
+  },
+  // Q7 vocabulary — 文化
+  {
+    id: 'n4_u3_l2_q7',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「文化{ぶんか}祭{さい}」の「文化{ぶんか}」はどんな意味{いみ}ですか。',
+    stemZh: '「文化祭」中的「文化」是什麼意思？',
+    options: [
+      { text: '語法', reason: '錯誤。語法是文法{ぶんぽう}。' },
+      { text: '文學', reason: '錯誤。文學是文学{ぶんがく}。' },
+      { text: '文化', reason: '正確。文化{ぶんか}意為文化。文化祭是學校的文化活動。' },
+      { text: '作文', reason: '錯誤。作文是作文{さくぶん}。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '文化的詞義',
+      analysis: '文化{ぶんか}意為文化。文化祭{ぶんかさい}是日本學校的重要活動，類似台灣的校慶。',
+      relatedRules: ['📖 本課 單字「文化」'],
+    },
+  },
+  // Q8 grammar — ば〜ほど
+  {
+    id: 'n4_u3_l2_q8',
     category: 'grammar',
     level: 'N4',
-    tags: ['ba_hodo'],
     stem: '練習{れんしゅう}すれ＿＿するほど上手{じょうず}になります。',
     stemZh: '越練習就越進步。',
     options: [
@@ -143,90 +471,453 @@ const l2Quiz: UnifiedQuestion[] = [
     correctIndex: 0,
     explanation: {
       keyPoint: '「〜ば〜ほど」越〜越〜',
-      analysis: '「〜ば〜ほど」表示「越〜越〜」。動詞假定形＋同一動詞辭書形＋ほど。練習すればするほど上手になる。',
+      analysis: '「〜ば〜ほど」表示「越〜越〜」。動詞假定形＋同一動詞辭書形＋ほど。',
+      relatedRules: ['📖 本課 文法「〜ば〜ほど」'],
+    },
+  },
+  // Q9 grammar — ば〜ほど with reading
+  {
+    id: 'n4_u3_l2_q9',
+    category: 'grammar',
+    level: 'N4',
+    stem: '読{よ}め＿＿読{よ}むほど文学{ぶんがく}の魅力{みりょく}が分{わ}かります。',
+    stemZh: '越讀越能了解文學的魅力。',
+    options: [
+      { text: 'たら', reason: '錯誤。「たら」不用於此句型。' },
+      { text: 'ると', reason: '錯誤。「ると」不是正確的接續。' },
+      { text: 'ば', reason: '正確。読む的假定形是読め＋ば。「読めば読むほど」＝越讀越〜。' },
+      { text: 'ても', reason: '錯誤。「ても」表示即使〜也〜，不用於此句型。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '五段動詞的「〜ば〜ほど」',
+      analysis: '五段動詞的假定形：将う段改為え段。読む→読め＋ば→読めば読むほど。',
+      relatedRules: ['📖 本課 文法「〜ば〜ほど」'],
+    },
+  },
+  // Q10 grammar — たらいい
+  {
+    id: 'n4_u3_l2_q10',
+    category: 'grammar',
+    level: 'N4',
+    stem: '早{はや}く春{はる}になっ＿＿いいのに。',
+    stemZh: '要是早點變成春天就好了。',
+    options: [
+      { text: 'ば', reason: '錯誤。此處是「たらいい」句型，不用假定形。' },
+      { text: 'たら', reason: '正確。「〜たらいい」表示願望，「なったらいいのに」＝要是〜就好了。' },
+      { text: 'ても', reason: '錯誤。「ても」表示即使〜也〜。' },
+      { text: 'と', reason: '錯誤。「と」表示自然因果，不表示願望。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '「〜たらいい」表示願望',
+      analysis: '「〜たらいいのに」表示「要是〜就好了」的願望。のに加強了遺憾或期盼的語氣。',
+      relatedRules: ['📖 本課 文法「〜たらいい」'],
+    },
+  },
+  // Q11 grammar — もし
+  {
+    id: 'n4_u3_l2_q11',
+    category: 'grammar',
+    level: 'N4',
+    stem: '＿＿時間{じかん}があれば、手伝{てつだ}ってください。',
+    stemZh: '如果有時間的話，請幫幫忙。',
+    options: [
+      { text: 'もし', reason: '正確。「もし」放在句首強調假設語氣，搭配「ば」「たら」等條件句型。' },
+      { text: 'まだ', reason: '錯誤。「まだ」意為「還」，不表示假設。' },
+      { text: 'もう', reason: '錯誤。「もう」意為「已經」，不表示假設。' },
+      { text: 'ぜひ', reason: '錯誤。「ぜひ」意為「務必」，不表示假設。' },
+    ],
+    correctIndex: 0,
+    explanation: {
+      keyPoint: '「もし」的用法',
+      analysis: '「もし」放在句首，強調假設語氣，常搭配「ば」「たら」「なら」等條件句型使用。',
+      relatedRules: ['📖 本課 文法「もし」'],
+    },
+  },
+  // Q12 grammar — もし + たら
+  {
+    id: 'n4_u3_l2_q12',
+    category: 'grammar',
+    level: 'N4',
+    stem: 'もし選{えら}べ＿＿いいんですけど。',
+    stemZh: '要是能選擇就好了。',
+    options: [
+      { text: 'ると', reason: '錯誤。「ると」不能構成願望句型。' },
+      { text: 'れば', reason: '錯誤。雖然文法上可以，但此處前面有「もし」，搭配「たら」更自然。' },
+      { text: 'たら', reason: '正確。「もし〜たらいい」表示「要是能〜就好了」。選べた＋ら→選べたら。' },
+      { text: 'ても', reason: '錯誤。「ても」表示即使〜也〜，語意不同。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「もし〜たらいい」',
+      analysis: '「もし」搭配「たらいい」，加強假設願望的語氣。選べる→選べたら→もし選べたらいい。',
+      relatedRules: ['📖 本課 文法「もし」「〜たらいい」'],
+    },
+  },
+  // Q13 grammar — ば〜ほど with adj
+  {
+    id: 'n4_u3_l2_q13',
+    category: 'grammar',
+    level: 'N4',
+    stem: '数学{すうがく}は勉強{べんきょう}すればするほど＿＿なりますね。',
+    stemZh: '數學越學越有趣呢。',
+    options: [
+      { text: '面白{おもしろ}く', reason: '正確。い形容詞接「なる」時去い加く。面白い→面白くなる。' },
+      { text: '面白{おもしろ}い', reason: '錯誤。い形容詞不能直接接なる。' },
+      { text: '面白{おもしろ}に', reason: '錯誤。い形容詞不用「に」接なる。' },
+      { text: '面白{おもしろ}で', reason: '錯誤。い形容詞不用「で」接なる。' },
+    ],
+    correctIndex: 0,
+    explanation: {
+      keyPoint: 'い形容詞＋なる',
+      analysis: 'い形容詞接「なる」表示變化：去い加く。面白い→面白くなる（變得有趣）。',
+      relatedRules: ['📖 本課 文法「〜ば〜ほど」'],
+    },
+  },
+  // Q14 dialogue comprehension
+  {
+    id: 'n4_u3_l2_q14',
+    category: 'grammar',
+    level: 'N4',
+    stem: '「もっと勉強{べんきょう}したらいいのにと思{おも}います」はどんな気持{きも}ちですか。',
+    stemZh: '「覺得要是能多學點就好了」是什麼心情？',
+    options: [
+      { text: '命令對方學習', reason: '錯誤。命令用「〜なさい」或「〜しろ」。' },
+      { text: '已經學夠了', reason: '錯誤。句意是想要更多學習，不是已經滿足。' },
+      { text: '希望能學更多的期盼', reason: '正確。「〜たらいいのに」表示對現狀的遺憾和期盼。' },
+      { text: '拒絕學習', reason: '錯誤。句意是想學更多，不是拒絕。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「〜たらいいのに」的語氣',
+      analysis: '「〜たらいいのに」帶有「要是〜就好了（可惜做不到）」的遺憾和期盼語氣。',
+      relatedRules: ['📖 本課 文法「〜たらいい」'],
+    },
+  },
+  // Q15 grammar — もし comprehensive
+  {
+    id: 'n4_u3_l2_q15',
+    category: 'grammar',
+    level: 'N4',
+    stem: '「もし」について正{ただ}しいのはどれですか。',
+    stemZh: '關於「もし」，正確的是哪個？',
+    options: [
+      { text: '「もし」必須和「と」搭配', reason: '錯誤。「もし」可搭配ば、たら、なら等多種條件句型。' },
+      { text: '「もし」放在句尾', reason: '錯誤。「もし」放在句首。' },
+      { text: '「もし」表示確定的事實', reason: '錯誤。「もし」表示假設，不是確定事實。' },
+      { text: '「もし」放在句首強調假設語氣', reason: '正確。「もし」是副詞，放在條件句句首加強假設語氣。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '「もし」的綜合理解',
+      analysis: '「もし」是副詞，放在句首強調假設語氣。可以搭配「ば」「たら」「なら」等多種條件句型。省略也可以。',
+      relatedRules: ['📖 本課 文法「もし」'],
     },
   },
 ]
 
 // ─── Lesson 3 Quiz ───
 const l3Quiz: UnifiedQuestion[] = [
+  // Q1 vocabulary — 試験
   {
-    id: 'cq_n4_u3_l3_001',
-    category: 'grammar',
-    level: 'N4',
-    tags: ['tara'],
-    stem: '大学{だいがく}に入{はい}っ＿＿、何{なに}を勉強{べんきょう}したいですか。',
-    stemZh: '如果進了大學，你想學什麼？',
-    options: [
-      { text: 'たら', reason: '正確。「たら」表示假設條件。入った→入ったら。' },
-      { text: 'ば', reason: '錯誤。「ば」需要假定形，入れば的形式不同。' },
-      { text: 'て', reason: '錯誤。「て」是連接形，不表示條件。' },
-      { text: 'ので', reason: '錯誤。「ので」表示原因，不是假設條件。' },
-    ],
-    correctIndex: 0,
-    explanation: {
-      keyPoint: '「たら」用於假設未來',
-      analysis: '「たら」可以表示尚未發生的假設。入った＋ら→入ったら（如果進入的話）。',
-    },
-  },
-  {
-    id: 'cq_n4_u3_l3_002',
+    id: 'n4_u3_l3_q1',
     category: 'vocabulary',
     level: 'N4',
-    tags: ['meaning'],
+    stem: '「試験{しけん}」の意味{いみ}はどれですか。',
+    stemZh: '「試験」的意思是哪個？',
+    options: [
+      { text: '作業', reason: '錯誤。作業是宿題{しゅくだい}。' },
+      { text: '考試', reason: '正確。試験{しけん}意為考試、測驗。' },
+      { text: '授課', reason: '錯誤。授課是授業{じゅぎょう}。' },
+      { text: '練習', reason: '錯誤。練習是練習{れんしゅう}。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '試験的詞義',
+      analysis: '試験{しけん}意為考試、測驗。「試」有嘗試之意，「験」有驗證之意。',
+      relatedRules: ['📖 本課 單字「試験」'],
+    },
+  },
+  // Q2 vocabulary — 予習 vs 復習
+  {
+    id: 'n4_u3_l3_q2',
+    category: 'vocabulary',
+    level: 'N4',
     stem: '「予習{よしゅう}」と「復習{ふくしゅう}」の違{ちが}いは何{なん}ですか。',
     stemZh: '「予習」和「復習」的差別是什麼？',
     options: [
-      { text: '預習和復習', reason: '正確。予習是事前預習，復習是事後復習。' },
-      { text: '練習和測驗', reason: '錯誤。練習是練習，測驗是試験{しけん}。' },
+      { text: '預習和復習', reason: '正確。予習是課前預習，復習是課後復習。' },
+      { text: '練習和測驗', reason: '錯誤。練習是練習，測驗是試験。' },
       { text: '教育和學習', reason: '錯誤。教育是教育{きょういく}。' },
-      { text: '入學和畢業', reason: '錯誤。入學是入学、畢業是卒業。' },
+      { text: '入學和畢業', reason: '錯誤。入學是入学，畢業是卒業。' },
     ],
     correctIndex: 0,
     explanation: {
       keyPoint: '予習與復習的區別',
       analysis: '予習{よしゅう}＝課前的預習，復習{ふくしゅう}＝課後的復習。「予」有事前的意思，「復」有重新的意思。',
       comparisons: ['予習{よしゅう}＝預習（課前）', '復習{ふくしゅう}＝復習（課後）'],
+      relatedRules: ['📖 本課 單字「予習」「復習」'],
     },
   },
+  // Q3 vocabulary — テキスト
   {
-    id: 'cq_n4_u3_l3_003',
-    category: 'grammar',
-    level: 'N4',
-    tags: ['ba'],
-    stem: '早{はや}く起{お}きれ＿＿、朝{あさ}ご飯{はん}が食{た}べられます。',
-    stemZh: '只要早起，就能吃到早餐。',
-    options: [
-      { text: 'ば', reason: '正確。起きる的假定形是起きれ，加ば構成條件。' },
-      { text: 'たら', reason: '錯誤。此處已經是假定形，不接たら。' },
-      { text: 'と', reason: '錯誤。「と」不接在假定形後面。' },
-      { text: 'て', reason: '錯誤。「て」不接在假定形後面。' },
-    ],
-    correctIndex: 0,
-    explanation: {
-      keyPoint: '一段動詞的「ば」形',
-      analysis: '一段動詞的假定形：去掉る，加れば。起きる→起きれば。五段動詞則是將う段改為え段＋ば。',
-      commonMistakes: ['○ 起きれば / × 起きるば → 一段動詞去る加れば'],
-    },
-  },
-  {
-    id: 'cq_n4_u3_l3_004',
+    id: 'n4_u3_l3_q3',
     category: 'vocabulary',
     level: 'N4',
-    tags: ['meaning'],
-    stem: '「高校{こうこう}」と「高等学校{こうとうがっこう}」の関係{かんけい}はどれですか。',
-    stemZh: '「高校」和「高等学校」的關係是哪個？',
+    stem: '「テキスト」の意味{いみ}はどれですか。',
+    stemZh: '「テキスト」的意思是哪個？',
     options: [
-      { text: '同義詞，都是高中', reason: '正確。高校是高等学校的簡稱，都指高中。' },
-      { text: '高校是大學', reason: '錯誤。大學是大学{だいがく}。' },
-      { text: '高等学校是大學', reason: '錯誤。高等学校就是高中。' },
-      { text: '完全不同的學校', reason: '錯誤。兩者指的是同一種學校。' },
+      { text: '筆記本', reason: '錯誤。筆記本是ノート。' },
+      { text: '黑板', reason: '錯誤。黑板是黒板{こくばん}。' },
+      { text: '課本', reason: '正確。テキスト源自英語text，意為課本、教材。' },
+      { text: '字典', reason: '錯誤。字典是辞書{じしょ}。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: 'テキスト的詞義',
+      analysis: 'テキスト源自英語text，在日語中主要指課本、教材。是學校生活的常用外來語。',
+      relatedRules: ['📖 本課 單字「テキスト」'],
+    },
+  },
+  // Q4 vocabulary — レポート
+  {
+    id: 'n4_u3_l3_q4',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「レポート」の意味{いみ}はどれですか。',
+    stemZh: '「レポート」的意思是哪個？',
+    options: [
+      { text: '考試', reason: '錯誤。考試是試験{しけん}。' },
+      { text: '作業', reason: '錯誤。作業是宿題{しゅくだい}。' },
+      { text: '上課', reason: '錯誤。上課是授業{じゅぎょう}。' },
+      { text: '報告', reason: '正確。レポート源自英語report，意為報告。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: 'レポート的詞義',
+      analysis: 'レポート源自英語report，意為報告。在大學中常指書面報告或小論文。',
+      relatedRules: ['📖 本課 單字「レポート」'],
+    },
+  },
+  // Q5 vocabulary — 卒業
+  {
+    id: 'n4_u3_l3_q5',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「卒業{そつぎょう}」の反対語{はんたいご}はどれですか。',
+    stemZh: '「卒業」（畢業）的反義詞是哪個？',
+    options: [
+      { text: '予習{よしゅう}', reason: '錯誤。予習意為預習，不是反義詞。' },
+      { text: '入学{にゅうがく}', reason: '正確。入学意為入學，是卒業的反義詞。' },
+      { text: '復習{ふくしゅう}', reason: '錯誤。復習意為復習，不是反義詞。' },
+      { text: '研究{けんきゅう}', reason: '錯誤。研究意為研究，不是反義詞。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '卒業與入学的配對',
+      analysis: '卒業{そつぎょう}（畢業）⇔ 入学{にゅうがく}（入學）。這是學校生活中最基本的反義詞組合。',
+      relatedRules: ['📖 本課 單字「卒業」'],
+    },
+  },
+  // Q6 vocabulary — 校長
+  {
+    id: 'n4_u3_l3_q6',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「校長{こうちょう}」の意味{いみ}はどれですか。',
+    stemZh: '「校長」的意思是哪個？',
+    options: [
+      { text: '班導師', reason: '錯誤。班導師是担任{たんにん}の先生{せんせい}。' },
+      { text: '教授', reason: '錯誤。教授是教授{きょうじゅ}。' },
+      { text: '校長', reason: '正確。校長{こうちょう}意為校長，學校的最高負責人。' },
+      { text: '學長', reason: '錯誤。學長是先輩{せんぱい}。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '校長的詞義',
+      analysis: '校長{こうちょう}意為校長，學校的最高管理者。「校」有學校之意，「長」有領導者之意。',
+      relatedRules: ['📖 本課 單字「校長」'],
+    },
+  },
+  // Q7 vocabulary — 研究
+  {
+    id: 'n4_u3_l3_q7',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「研究{けんきゅう}」の読{よ}み方{かた}はどれですか。',
+    stemZh: '「研究」的讀法是哪個？',
+    options: [
+      { text: 'けんきゅう', reason: '正確。研究讀作けんきゅう，意為研究。' },
+      { text: 'けんきゅ', reason: '錯誤。少了長音，正確讀音有長音「ゅう」。' },
+      { text: 'げんきゅう', reason: '錯誤。「研」讀「けん」不讀「げん」。' },
+      { text: 'けんぐう', reason: '錯誤。「究」讀「きゅう」不讀「ぐう」。' },
     ],
     correctIndex: 0,
     explanation: {
-      keyPoint: '高校與高等学校的關係',
-      analysis: '高校{こうこう}是高等学校{こうとうがっこう}的簡稱，都指高中。日本的學制是小学校→中学校→高等学校。',
-      comparisons: ['小学校{しょうがっこう}＝小學', '中学校{ちゅうがっこう}＝中學', '高校/高等学校＝高中'],
+      keyPoint: '研究的讀音',
+      analysis: '研究{けんきゅう}意為研究。注意「究」讀「きゅう」，帶長音。',
+      relatedRules: ['📖 本課 單字「研究」'],
+    },
+  },
+  // Q8 grammar — たらどう
+  {
+    id: 'n4_u3_l3_q8',
+    category: 'grammar',
+    level: 'N4',
+    stem: '医者{いしゃ}に行{い}っ＿＿どうですか。',
+    stemZh: '去看醫生如何？',
+    options: [
+      { text: 'ても', reason: '錯誤。「ても」表示即使〜也〜，不是建議。' },
+      { text: 'たら', reason: '正確。「〜たらどうですか」表示建議對方做某事。行った＋ら→行ったら。' },
+      { text: 'ば', reason: '錯誤。「ばどうですか」不是標準建議句型。' },
+      { text: 'ので', reason: '錯誤。「ので」表示原因，不是建議。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '「〜たらどうですか」建議句型',
+      analysis: '「〜たらどうですか」用於建議對方做某事，意為「〜如何？」。語氣委婉。',
+      relatedRules: ['📖 本課 文法「〜たらどう」'],
+    },
+  },
+  // Q9 grammar — たらいいですか
+  {
+    id: 'n4_u3_l3_q9',
+    category: 'grammar',
+    level: 'N4',
+    stem: 'どう＿＿いいですか。',
+    stemZh: '該怎麼辦才好？',
+    options: [
+      { text: 'すると', reason: '錯誤。「すると」表示接著、於是，不表示詢問建議。' },
+      { text: 'しても', reason: '錯誤。「しても」表示即使做了，語意不同。' },
+      { text: 'したら', reason: '正確。「どうしたらいいですか」表示「該怎麼辦才好？」。' },
+      { text: 'するなら', reason: '錯誤。「するなら」表示如果要做的話，不是詢問建議。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「〜たらいいですか」詢問建議',
+      analysis: '「〜たらいいですか」用於詢問該怎麼做。「どうしたらいいですか」是最常見的用法。',
+      relatedRules: ['📖 本課 文法「〜たらいいですか」'],
+    },
+  },
+  // Q10 grammar — と conditional
+  {
+    id: 'n4_u3_l3_q10',
+    category: 'grammar',
+    level: 'N4',
+    stem: 'テキストを開{ひら}く＿＿、重要{じゅうよう}なところがすぐ分{わ}かります。',
+    stemZh: '一打開課本，就能馬上看到重要的地方。',
+    options: [
+      { text: 'なら', reason: '錯誤。「なら」用於話題前提，不適合一般規律。' },
+      { text: 'ても', reason: '錯誤。「ても」表示即使〜也〜，語意不同。' },
+      { text: 'と', reason: '正確。「と」表示做了A就必然發生B，適合一般規律或習慣。' },
+      { text: 'から', reason: '錯誤。「から」表示原因，不是條件。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「と」表示必然結果',
+      analysis: '「と」接在動詞辭書形後，表示做了A就必然發生B。適合描述自然規律或操作結果。',
+      relatedRules: ['📖 本課 文法「〜と（條件）」'],
+    },
+  },
+  // Q11 grammar — たらどう with 先輩
+  {
+    id: 'n4_u3_l3_q11',
+    category: 'grammar',
+    level: 'N4',
+    stem: '先輩{せんぱい}に聞{き}いたらどうですか。',
+    stemZh: '問學長如何？',
+    options: [
+      { text: '這是在命令對方去問學長', reason: '錯誤。「たらどうですか」是委婉建議，不是命令。' },
+      { text: '這是在建議對方去問學長', reason: '正確。「〜たらどうですか」是委婉的建議句型。' },
+      { text: '這是在問學長好不好', reason: '錯誤。不是在評價學長，是在建議行動。' },
+      { text: '這是在禁止對方去問學長', reason: '錯誤。禁止用「〜てはいけません」。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '「〜たらどうですか」的語氣',
+      analysis: '「〜たらどうですか」是委婉的建議，語氣比直接說「〜てください」更柔和。適合同輩或晚輩之間使用。',
+      relatedRules: ['📖 本課 文法「〜たらどう」'],
+    },
+  },
+  // Q12 grammar — たらいいですか with 卒業
+  {
+    id: 'n4_u3_l3_q12',
+    category: 'grammar',
+    level: 'N4',
+    stem: '卒業{そつぎょう}までにどんな研究{けんきゅう}を＿＿いいですか。',
+    stemZh: '到畢業為止，做什麼研究比較好？',
+    options: [
+      { text: 'すると', reason: '錯誤。「すると」不能構成詢問建議的句型。' },
+      { text: 'したら', reason: '正確。「〜したらいいですか」用於詢問該做什麼。' },
+      { text: 'するなら', reason: '錯誤。「するなら」不是詢問建議的形式。' },
+      { text: 'しても', reason: '錯誤。「しても」表示即使做了也〜，語意不同。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '「〜たらいいですか」詢問做法',
+      analysis: '「どんな研究をしたらいいですか」是詢問「該做什麼研究」的標準句型。した＋ら→したら。',
+      relatedRules: ['📖 本課 文法「〜たらいいですか」'],
+    },
+  },
+  // Q13 grammar — と with ボタン
+  {
+    id: 'n4_u3_l3_q13',
+    category: 'grammar',
+    level: 'N4',
+    stem: 'このボタンを押{お}す＿＿、図書館{としょかん}の資料{しりょう}が検索{けんさく}できます。',
+    stemZh: '按下這個按鈕，就能搜尋圖書館的資料。',
+    options: [
+      { text: 'たら', reason: '錯誤。雖然也通，但「と」更適合描述操作結果。' },
+      { text: 'なら', reason: '錯誤。「なら」用於話題前提，不適合操作說明。' },
+      { text: 'ば', reason: '錯誤。「ば」需要假定形，不直接接辭書形。' },
+      { text: 'と', reason: '正確。「と」表示按下按鈕後必然產生的結果，適合操作說明。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '「と」用於操作說明',
+      analysis: '描述操作（按按鈕、開電源等）的必然結果時，用「と」最自然。',
+      relatedRules: ['📖 本課 文法「〜と（條件）」'],
+    },
+  },
+  // Q14 dialogue comprehension
+  {
+    id: 'n4_u3_l3_q14',
+    category: 'grammar',
+    level: 'N4',
+    stem: '「まず予習{よしゅう}をしたらどうですか。テキストを読{よ}むといいですよ。」の意味{いみ}はどれですか。',
+    stemZh: '「先預習如何？讀課本就好了。」的意思是哪個？',
+    options: [
+      { text: '命令對方去預習', reason: '錯誤。「たらどうですか」是建議，不是命令。' },
+      { text: '問對方有沒有預習', reason: '錯誤。不是詢問，是建議。' },
+      { text: '建議對方先預習並讀課本', reason: '正確。「たらどう」建議預習，「と」說明讀課本的效果。' },
+      { text: '禁止對方預習', reason: '錯誤。句意是鼓勵預習，不是禁止。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '建議句型的綜合理解',
+      analysis: '「〜たらどうですか」＝建議，「〜といいですよ」＝告知對方做了會有好結果。兩者組合為完整的建議。',
+      relatedRules: ['📖 本課 文法「〜たらどう」「〜と（條件）」'],
+    },
+  },
+  // Q15 grammar — 三種句型比較
+  {
+    id: 'n4_u3_l3_q15',
+    category: 'grammar',
+    level: 'N4',
+    stem: '「〜たらどうですか」「〜たらいいですか」「〜と」の使{つか}い分{わ}けで正{ただ}しいのはどれですか。',
+    stemZh: '關於「〜たらどうですか」「〜たらいいですか」「〜と」的區分，正確的是哪個？',
+    options: [
+      { text: '三者都表示命令', reason: '錯誤。都不是命令句型。' },
+      { text: '「たらどう」是建議，「たらいいですか」是詢問，「と」是必然結果', reason: '正確。三者用途各有不同。' },
+      { text: '三者意思完全相同', reason: '錯誤。三者有不同的用途和語感。' },
+      { text: '「と」用於建議，其餘兩個表示因果', reason: '錯誤。「と」表示因果，而非建議。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '三種條件相關句型的比較',
+      analysis: '「〜たらどうですか」用於給建議；「〜たらいいですか」用於詢問做法；「〜と」用於描述必然因果。三者功能不同。',
+      relatedRules: ['📖 本課 文法「〜たらどう」「〜たらいいですか」「〜と（條件）」'],
     },
   },
 ]
