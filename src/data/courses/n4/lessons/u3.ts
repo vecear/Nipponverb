@@ -924,11 +924,11 @@ const l3Quiz: UnifiedQuestion[] = [
 
 // ─── Lesson 4 Quiz ───
 const l4Quiz: UnifiedQuestion[] = [
+  // Q1 vocabulary — 会議
   {
-    id: 'cq_n4_u3_l4_001',
+    id: 'n4_u3_l4_q1',
     category: 'vocabulary',
     level: 'N4',
-    tags: ['meaning'],
     stem: '「会議{かいぎ}」の意味{いみ}はどれですか。',
     stemZh: '「会議」的意思是哪個？',
     options: [
@@ -941,13 +941,14 @@ const l4Quiz: UnifiedQuestion[] = [
     explanation: {
       keyPoint: '会議的詞義',
       analysis: '会議{かいぎ}意為會議。「会」有聚集之意，「議」有討論之意。',
+      relatedRules: ['📖 本課 單字「会議」'],
     },
   },
+  // Q2 vocabulary — 部長・課長・社長
   {
-    id: 'cq_n4_u3_l4_002',
+    id: 'n4_u3_l4_q2',
     category: 'vocabulary',
     level: 'N4',
-    tags: ['meaning'],
     stem: '「部長{ぶちょう}」「課長{かちょう}」「社長{しゃちょう}」で一番{いちばん}偉{えら}いのは誰{だれ}ですか。',
     stemZh: '「部長」「課長」「社長」中最高職位的是誰？',
     options: [
@@ -960,58 +961,278 @@ const l4Quiz: UnifiedQuestion[] = [
     explanation: {
       keyPoint: '日本企業職位階層',
       analysis: '日本企業的職位由高到低：社長{しゃちょう}→部長{ぶちょう}→課長{かちょう}。社長相當於總經理/董事長。',
-      comparisons: ['社長＝社長（最高）', '部長＝部長（中間）', '課長＝課長（基層管理）'],
+      relatedRules: ['📖 本課 單字「部長」「課長」「社長」'],
     },
   },
+  // Q3 vocabulary — 会議室
   {
-    id: 'cq_n4_u3_l4_003',
+    id: 'n4_u3_l4_q3',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「会議室{かいぎしつ}」の読{よ}み方{かた}はどれですか。',
+    stemZh: '「会議室」的讀法是哪個？',
+    options: [
+      { text: 'かいぎしつ', reason: '正確。会議室讀作かいぎしつ，意為會議室。' },
+      { text: 'かいぎへや', reason: '錯誤。「室」在此讀「しつ」而非「へや」。' },
+      { text: 'かいぎま', reason: '錯誤。「室」讀「しつ」而非「ま」。' },
+      { text: 'あいぎしつ', reason: '錯誤。「会」讀「かい」不讀「あい」。' },
+    ],
+    correctIndex: 0,
+    explanation: {
+      keyPoint: '会議室的讀音',
+      analysis: '会議室{かいぎしつ}意為會議室。由「会議」＋「室」組成。「室」音讀「しつ」。',
+      relatedRules: ['📖 本課 單字「会議室」'],
+    },
+  },
+  // Q4 vocabulary — 会場
+  {
+    id: 'n4_u3_l4_q4',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「会場{かいじょう}」の意味{いみ}はどれですか。',
+    stemZh: '「会場」的意思是哪個？',
+    options: [
+      { text: '教室', reason: '錯誤。教室是教室{きょうしつ}。' },
+      { text: '會場', reason: '正確。会場{かいじょう}意為會場、活動舉辦的場所。' },
+      { text: '廣場', reason: '錯誤。廣場是広場{ひろば}。' },
+      { text: '車站', reason: '錯誤。車站是駅{えき}。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '会場的詞義',
+      analysis: '会場{かいじょう}意為會場。「会」有集會之意，「場」有場所之意。常用於活動、典禮等場合。',
+      relatedRules: ['📖 本課 單字「会場」'],
+    },
+  },
+  // Q5 vocabulary — 事務所
+  {
+    id: 'n4_u3_l4_q5',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「事務所{じむしょ}」の意味{いみ}はどれですか。',
+    stemZh: '「事務所」的意思是哪個？',
+    options: [
+      { text: '研究室', reason: '錯誤。研究室是研究室{けんきゅうしつ}。' },
+      { text: '工廠', reason: '錯誤。工廠是工場{こうじょう}。' },
+      { text: '辦事處', reason: '正確。事務所{じむしょ}意為辦事處、辦公室。' },
+      { text: '停車場', reason: '錯誤。停車場是駐車場{ちゅうしゃじょう}。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '事務所的詞義',
+      analysis: '事務所{じむしょ}意為辦事處或辦公室。「事務」指事務性工作，「所」指場所。',
+      relatedRules: ['📖 本課 單字「事務所」'],
+    },
+  },
+  // Q6 vocabulary — 工場
+  {
+    id: 'n4_u3_l4_q6',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「工場{こうじょう}」の読{よ}み方{かた}と意味{いみ}で正{ただ}しいのはどれですか。',
+    stemZh: '「工場」的讀法與意思正確的是哪個？',
+    options: [
+      { text: '讀作「こうば」，意為工程', reason: '錯誤。「こうば」是口語讀法，但意思不是工程。' },
+      { text: '讀作「こうじょう」，意為工廠', reason: '正確。工場{こうじょう}意為工廠。' },
+      { text: '讀作「くじょう」，意為苦情', reason: '錯誤。苦情{くじょう}是另一個詞，意為抱怨。' },
+      { text: '讀作「こうじょう」，意為向上', reason: '錯誤。向上{こうじょう}是另一個詞，意為進步。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '工場的讀音與詞義',
+      analysis: '工場{こうじょう}意為工廠。注意「こうじょう」有多個同音異字詞：工場（工廠）、向上（進步）等。',
+      relatedRules: ['📖 本課 單字「工場」'],
+    },
+  },
+  // Q7 grammar — なら（基於話題）
+  {
+    id: 'n4_u3_l4_q7',
     category: 'grammar',
     level: 'N4',
-    tags: ['nara'],
     stem: '日本{にほん}に行{い}く＿＿、京都{きょうと}がおすすめです。',
     stemZh: '如果要去日本的話，推薦京都。',
     options: [
-      { text: 'なら', reason: '正確。「なら」接在動詞辭書形後，表示以對方的話題為前提的條件。' },
-      { text: 'たら', reason: '錯誤。「たら」用法不同，這裡是接對方話題提建議。' },
-      { text: 'ば', reason: '錯誤。「ば」需要假定形，不接辭書形。' },
+      { text: 'なら', reason: '正確。「なら」承接對方的話題，提出建議。' },
+      { text: 'たら', reason: '錯誤。「たら」用於假設完成後的結果，此處是針對話題提建議。' },
+      { text: 'ば', reason: '錯誤。「ば」需要假定形，不直接接辭書形。' },
       { text: 'ても', reason: '錯誤。「ても」表示「即使」，語意不符。' },
     ],
     correctIndex: 0,
     explanation: {
       keyPoint: '條件句型「なら」',
       analysis: '「なら」用於承接對方的話題或前提條件，提出建議或判斷。常譯為「如果〜的話」。',
-      comparisons: ['なら＝如果（基於話題/前提提建議）', 'たら＝如果（假設完成後的結果）'],
+      relatedRules: ['📖 本課 文法「〜なら」'],
     },
   },
+  // Q8 grammar — と（自然規律）
   {
-    id: 'cq_n4_u3_l4_004',
+    id: 'n4_u3_l4_q8',
     category: 'grammar',
     level: 'N4',
-    tags: ['to'],
     stem: '春{はる}になる＿＿、桜{さくら}が咲{さ}きます。',
     stemZh: '一到春天，櫻花就會開。',
     options: [
+      { text: 'なら', reason: '錯誤。「なら」用於主觀建議，不適合描述自然規律。' },
       { text: 'と', reason: '正確。「と」表示自然規律或必然結果的條件。' },
-      { text: 'なら', reason: '錯誤。「なら」用於主觀建議，不適合自然規律。' },
-      { text: 'ば', reason: '錯誤。雖然可以用，但「と」更適合表達自然規律。' },
+      { text: 'ば', reason: '錯誤。雖然可以使用，但「と」更適合表達自然規律。' },
       { text: 'ても', reason: '錯誤。「ても」表示「即使」，語意不符。' },
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: {
       keyPoint: '條件句型「と」',
       analysis: '「と」用於表達自然規律、習慣或必然的因果關係。一旦前項成立，後項必然發生。',
-      commonMistakes: ['○ 春になると桜が咲く → と用於自然規律'],
+      relatedRules: ['📖 本課 文法「〜と（条件）」'],
+    },
+  },
+  // Q9 grammar — 場合は
+  {
+    id: 'n4_u3_l4_q9',
+    category: 'grammar',
+    level: 'N4',
+    stem: '地震{じしん}の＿＿、机{つくえ}の下{した}に隠{かく}れてください。',
+    stemZh: '萬一發生地震，請躲到桌子底下。',
+    options: [
+      { text: 'ために', reason: '錯誤。「ために」表示「為了」，語意不符。' },
+      { text: '場合{ばあい}は', reason: '正確。「〜場合は」表示在某情況發生時應採取的行動。' },
+      { text: 'ところ', reason: '錯誤。「ところ」表示時機或場所，不適合此處。' },
+      { text: 'あいだに', reason: '錯誤。「あいだに」表示「在〜期間」，語意不符。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '「〜場合は」的用法',
+      analysis: '「〜場合{ばあい}は」表示「在〜的情況下」，用於預設某種情境並說明應對方式。常用於規則說明、緊急指示等。',
+      relatedRules: ['📖 本課 文法「〜場合は」'],
+    },
+  },
+  // Q10 grammar — なら（名詞接續）
+  {
+    id: 'n4_u3_l4_q10',
+    category: 'grammar',
+    level: 'N4',
+    stem: 'A：「パソコンが壊{こわ}れました。」B：「パソコン＿＿、田中{たなか}さんに聞{き}いてください。」',
+    stemZh: 'A：「電腦壞了。」B：「如果是電腦的問題，請問田中先生。」',
+    options: [
+      { text: 'と', reason: '錯誤。「と」不直接接名詞表示話題條件。' },
+      { text: 'ば', reason: '錯誤。「ば」不直接接名詞。' },
+      { text: 'ても', reason: '錯誤。「ても」表示「即使」，語意不符。' },
+      { text: 'なら', reason: '正確。「なら」可直接接名詞，承接對方提到的話題。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '「なら」接名詞的用法',
+      analysis: '「なら」可以直接接在名詞後面，形式為「名詞＋なら」，用於承接對方的話題來給出建議或看法。',
+      relatedRules: ['📖 本課 文法「〜なら」'],
+    },
+  },
+  // Q11 grammar — と（機械因果）
+  {
+    id: 'n4_u3_l4_q11',
+    category: 'grammar',
+    level: 'N4',
+    stem: 'このボタンを押{お}す＿＿、データが出{で}てきます。',
+    stemZh: '按下這個按鈕，數據就會出來。',
+    options: [
+      { text: 'と', reason: '正確。「と」表示按下按鈕後必然出現數據的機械性因果。' },
+      { text: 'なら', reason: '錯誤。「なら」用於話題性條件，不適合機械操作。' },
+      { text: '場合{ばあい}は', reason: '錯誤。雖可用但不夠自然，「と」更適合機械性因果。' },
+      { text: 'のに', reason: '錯誤。「のに」表示「儘管」，語意不符。' },
+    ],
+    correctIndex: 0,
+    explanation: {
+      keyPoint: '「と」用於操作說明',
+      analysis: '「と」適合描述機器操作等必然的因果關係。按下A就必定發生B的情況最適合用「と」。',
+      relatedRules: ['📖 本課 文法「〜と（条件）」'],
+    },
+  },
+  // Q12 grammar — 場合は（應用）
+  {
+    id: 'n4_u3_l4_q12',
+    category: 'grammar',
+    level: 'N4',
+    stem: '遅{おく}れる＿＿、事前{じぜん}に連絡{れんらく}してください。',
+    stemZh: '如果會遲到的話，請事先聯繫。',
+    options: [
+      { text: 'と', reason: '錯誤。「と」用於必然結果，此處是請求在某情況下做某事。' },
+      { text: 'ので', reason: '錯誤。「ので」表示原因「因為」，語意不符。' },
+      { text: '場合{ばあい}は', reason: '正確。「〜場合は」表示「在〜的情況下」，適合預設情境並請求對應行動。' },
+      { text: 'から', reason: '錯誤。「から」表示原因「因為」，語意不符。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「場合は」用於規定與請求',
+      analysis: '「〜場合{ばあい}は」可接動詞辭書形，表示預設某種情境並說明對應做法。常用於職場規定或指示。',
+      relatedRules: ['📖 本課 文法「〜場合は」'],
+    },
+  },
+  // Q13 vocabulary — 会議 vs 会場 vs 会議室
+  {
+    id: 'n4_u3_l4_q13',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「会議{かいぎ}」「会場{かいじょう}」「会議室{かいぎしつ}」の説明{せつめい}で正{ただ}しいのはどれですか。',
+    stemZh: '關於「会議」「会場」「会議室」的說明，正確的是哪個？',
+    options: [
+      { text: '三者都指同一個場所', reason: '錯誤。会議是活動本身，会場和会議室是場所。' },
+      { text: '会議是活動，会場是舉辦場所，会議室是專門開會的房間', reason: '正確。三者各有不同含義。' },
+      { text: '会議室比会場大', reason: '錯誤。通常会場較大，可用於各種活動。' },
+      { text: '会場是開會的房間', reason: '錯誤。会場指較大型活動的場地，開會房間是会議室。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '「会」字頭詞彙的區別',
+      analysis: '会議{かいぎ}＝會議（活動）；会場{かいじょう}＝會場（較大型的場地）；会議室{かいぎしつ}＝會議室（專門開會的房間）。',
+      relatedRules: ['📖 本課 單字「会議」「会場」「会議室」'],
+    },
+  },
+  // Q14 grammar — なら vs と vs 場合は 比較
+  {
+    id: 'n4_u3_l4_q14',
+    category: 'grammar',
+    level: 'N4',
+    stem: '「なら」「と」「場合{ばあい}は」の使{つか}い分{わ}けで正{ただ}しいのはどれですか。',
+    stemZh: '關於「なら」「と」「場合は」的區分，正確的是哪個？',
+    options: [
+      { text: '三者意思完全相同', reason: '錯誤。三者有不同的語感和用途。' },
+      { text: '「と」用於建議，「なら」用於必然結果', reason: '錯誤。剛好相反：「と」用於必然結果，「なら」用於話題建議。' },
+      { text: '「なら」基於話題提建議，「と」表示必然結果，「場合は」預設情境說明對應做法', reason: '正確。三者各有不同的功能。' },
+      { text: '「場合は」只用於疑問句', reason: '錯誤。「場合は」可用於各種句型。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '三種條件句型的比較',
+      analysis: '「なら」承接話題提建議；「と」描述自然規律或機械性因果；「場合は」預設某種情境並說明應對方式。三者功能各異。',
+      relatedRules: ['📖 本課 文法「〜なら」「〜と」「〜場合は」'],
+    },
+  },
+  // Q15 grammar — 綜合應用
+  {
+    id: 'n4_u3_l4_q15',
+    category: 'grammar',
+    level: 'N4',
+    stem: '社長{しゃちょう}が出席{しゅっせき}する＿＿、席順{せきじゅん}を変{か}えなければなりません。',
+    stemZh: '如果社長也出席的話，必須更改座位順序。',
+    options: [
+      { text: 'と', reason: '錯誤。「と」用於必然結果，此處是假設情境下需要做的事。' },
+      { text: 'なら', reason: '錯誤。「なら」用於承接話題，此處是預設情境。' },
+      { text: '場合{ばあい}は', reason: '正確。「場合は」表示「在〜的情況下」，適合預設可能的情境。' },
+      { text: 'ので', reason: '錯誤。「ので」表示原因「因為」，語意不符。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「場合は」用於假設情境',
+      analysis: '「〜場合{ばあい}は」可接動詞辭書形，表示預設某種可能的情境，並說明應對方式。此處預設社長出席的情境。',
+      relatedRules: ['📖 本課 文法「〜場合は」'],
     },
   },
 ]
 
 // ─── Lesson 5 Quiz ───
 const l5Quiz: UnifiedQuestion[] = [
+  // Q1 vocabulary — 経験
   {
-    id: 'cq_n4_u3_l5_001',
+    id: 'n4_u3_l5_q1',
     category: 'vocabulary',
     level: 'N4',
-    tags: ['meaning'],
     stem: '「経験{けいけん}」の意味{いみ}はどれですか。',
     stemZh: '「経験」的意思是哪個？',
     options: [
@@ -1024,106 +1245,591 @@ const l5Quiz: UnifiedQuestion[] = [
     explanation: {
       keyPoint: '経験的詞義',
       analysis: '経験{けいけん}意為經驗。注意和経済{けいざい}（經濟）的區別，兩者都以「経」開頭。',
-      comparisons: ['経験{けいけん}＝經驗', '経済{けいざい}＝經濟'],
+      relatedRules: ['📖 本課 單字「経験」'],
     },
   },
+  // Q2 vocabulary — 失敗
   {
-    id: 'cq_n4_u3_l5_002',
+    id: 'n4_u3_l5_q2',
     category: 'vocabulary',
     level: 'N4',
-    tags: ['meaning'],
     stem: '「失敗{しっぱい}」の意味{いみ}はどれですか。',
     stemZh: '「失敗」的意思是哪個？',
     options: [
-      { text: '失敗', reason: '正確。失敗{しっぱい}意為失敗。' },
       { text: '準備', reason: '錯誤。準備是準備{じゅんび}。' },
+      { text: '失敗', reason: '正確。失敗{しっぱい}意為失敗。' },
       { text: '說明', reason: '錯誤。說明是説明{せつめい}。' },
-      { text: '成功', reason: '錯誤。成功是成功{せいこう}。' },
+      { text: '成功', reason: '錯誤。成功是成功{せいこう}，是失敗的反義詞。' },
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: {
       keyPoint: '失敗的詞義',
       analysis: '失敗{しっぱい}意為失敗。注意促音「っ」的發音。反義詞是成功{せいこう}。',
+      relatedRules: ['📖 本課 單字「失敗」'],
     },
   },
+  // Q3 vocabulary — 経済
   {
-    id: 'cq_n4_u3_l5_003',
-    category: 'grammar',
+    id: 'n4_u3_l5_q3',
+    category: 'vocabulary',
     level: 'N4',
-    tags: ['nara'],
-    stem: 'A：「パソコンが壊{こわ}れました。」B：「パソコン＿＿、山田{やまだ}さんに聞{き}いてください。」',
-    stemZh: 'A：「電腦壞了。」B：「如果是電腦的問題，請問山田先生。」',
+    stem: '「経済{けいざい}」の読{よ}み方{かた}はどれですか。',
+    stemZh: '「経済」的讀法是哪個？',
     options: [
-      { text: 'なら', reason: '正確。「なら」承接對方話題，表示「如果是〜的話」。' },
-      { text: 'たら', reason: '錯誤。此處是承接對方話題，用なら更自然。' },
-      { text: 'ば', reason: '錯誤。「ば」不直接接名詞。' },
-      { text: 'と', reason: '錯誤。「と」不直接接名詞。' },
+      { text: 'けいけん', reason: '錯誤。けいけん是「経験」（經驗）的讀法。' },
+      { text: 'けいかく', reason: '錯誤。けいかく是「計画」（計劃）的讀法。' },
+      { text: 'けいざい', reason: '正確。経済讀作けいざい，意為經濟。' },
+      { text: 'けいさい', reason: '錯誤。經濟的「済」讀「ざい」而非「さい」。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '経済的讀音',
+      analysis: '経済{けいざい}意為經濟。注意「済」讀「ざい」。「経」開頭的常見詞：経験{けいけん}（經驗）、経済{けいざい}（經濟）。',
+      relatedRules: ['📖 本課 單字「経済」'],
+    },
+  },
+  // Q4 vocabulary — 工業
+  {
+    id: 'n4_u3_l5_q4',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「工業{こうぎょう}」の意味{いみ}はどれですか。',
+    stemZh: '「工業」的意思是哪個？',
+    options: [
+      { text: '農業', reason: '錯誤。農業是農業{のうぎょう}。' },
+      { text: '商業', reason: '錯誤。商業是商業{しょうぎょう}。' },
+      { text: '漁業', reason: '錯誤。漁業是漁業{ぎょぎょう}。' },
+      { text: '工業', reason: '正確。工業{こうぎょう}意為工業。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '工業的詞義',
+      analysis: '工業{こうぎょう}意為工業。「工」指工作或製造，「業」指行業。注意與工場{こうじょう}（工廠）的區別。',
+      relatedRules: ['📖 本課 單字「工業」'],
+    },
+  },
+  // Q5 vocabulary — 産業
+  {
+    id: 'n4_u3_l5_q5',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「産業{さんぎょう}」の意味{いみ}はどれですか。',
+    stemZh: '「産業」的意思是哪個？',
+    options: [
+      { text: '產業', reason: '正確。産業{さんぎょう}意為產業。' },
+      { text: '產品', reason: '錯誤。產品是製品{せいひん}。' },
+      { text: '出產', reason: '錯誤。出產是生産{せいさん}。' },
+      { text: '工廠', reason: '錯誤。工廠是工場{こうじょう}。' },
     ],
     correctIndex: 0,
     explanation: {
-      keyPoint: '「なら」承接話題',
-      analysis: '「なら」可以直接接在名詞後，承接對方提到的話題來給出建議或看法。名詞＋なら的形式。',
+      keyPoint: '産業的詞義',
+      analysis: '産業{さんぎょう}意為產業。包括農業、工業、商業等各種經濟活動的總稱。',
+      relatedRules: ['📖 本課 單字「産業」'],
+    },
+  },
+  // Q6 vocabulary — 貿易
+  {
+    id: 'n4_u3_l5_q6',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「貿易{ぼうえき}」の意味{いみ}はどれですか。',
+    stemZh: '「貿易」的意思是哪個？',
+    options: [
+      { text: '產業', reason: '錯誤。產業是産業{さんぎょう}。' },
+      { text: '貿易', reason: '正確。貿易{ぼうえき}意為貿易，指國際間的商業交易。' },
+      { text: '工業', reason: '錯誤。工業是工業{こうぎょう}。' },
+      { text: '經濟', reason: '錯誤。經濟是経済{けいざい}。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '貿易的詞義',
+      analysis: '貿易{ぼうえき}意為貿易。「貿」有交換之意，「易」也有交易之意。指國與國之間的商業交易。',
+      relatedRules: ['📖 本課 單字「貿易」'],
+    },
+  },
+  // Q7 vocabulary — 技術 vs 計画
+  {
+    id: 'n4_u3_l5_q7',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「技術{ぎじゅつ}」と「計画{けいかく}」の意味{いみ}で正{ただ}しいのはどれですか。',
+    stemZh: '「技術」和「計画」的意思正確的是哪個？',
+    options: [
+      { text: '技術＝計劃、計画＝技術', reason: '錯誤。兩者的意思剛好相反了。' },
+      { text: '技術＝技術、計画＝計劃', reason: '正確。技術{ぎじゅつ}意為技術，計画{けいかく}意為計劃。' },
+      { text: '兩者都是「經驗」的意思', reason: '錯誤。經驗是経験{けいけん}。' },
+      { text: '兩者都是「經濟」的意思', reason: '錯誤。經濟是経済{けいざい}。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '技術與計画的詞義',
+      analysis: '技術{ぎじゅつ}意為技術、技能。計画{けいかく}意為計劃、方案。兩者是完全不同的概念。',
+      relatedRules: ['📖 本課 單字「技術」「計画」'],
+    },
+  },
+  // Q8 grammar — かどうか（基本）
+  {
+    id: 'n4_u3_l5_q8',
+    category: 'grammar',
+    level: 'N4',
+    stem: '彼{かれ}が来{く}る＿＿わかりません。',
+    stemZh: '不知道他是否會來。',
+    options: [
+      { text: 'かどうか', reason: '正確。「かどうか」表示「是否〜」，用於間接疑問。' },
+      { text: 'かな', reason: '錯誤。「かな」是自問「不知道〜」，不接「わかりません」。' },
+      { text: 'かしら', reason: '錯誤。「かしら」是自問用語，不接「わかりません」。' },
+      { text: 'かい', reason: '錯誤。「かい」是口語疑問句尾，不用於間接疑問。' },
+    ],
+    correctIndex: 0,
+    explanation: {
+      keyPoint: '「〜かどうか」的基本用法',
+      analysis: '「〜かどうか」表示「是否〜」，用於將疑問句嵌入句子中作為間接疑問。常搭配「わかりません」「知りません」等。',
+      relatedRules: ['📖 本課 文法「〜かどうか」'],
+    },
+  },
+  // Q9 grammar — かどうか（確認用法）
+  {
+    id: 'n4_u3_l5_q9',
+    category: 'grammar',
+    level: 'N4',
+    stem: '計画{けいかく}が正{ただ}しい＿＿確認{かくにん}してください。',
+    stemZh: '請確認計劃是否正確。',
+    options: [
+      { text: 'か', reason: '錯誤。單用「か」語意不完整，需要「かどうか」。' },
+      { text: 'かどうか', reason: '正確。「かどうか」表示「是否〜」，用於請求確認。' },
+      { text: 'ので', reason: '錯誤。「ので」表示原因「因為」，語意不符。' },
+      { text: 'から', reason: '錯誤。「から」表示原因「因為」，語意不符。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '「〜かどうか」用於確認',
+      analysis: '「〜かどうか」常與「確認する」「調べる」等動詞搭配，表示確認某事是否成立。',
+      relatedRules: ['📖 本課 文法「〜かどうか」'],
+    },
+  },
+  // Q10 grammar — か（不定用法）
+  {
+    id: 'n4_u3_l5_q10',
+    category: 'grammar',
+    level: 'N4',
+    stem: 'どこ＿＿で会{あ}ったことがありますか。',
+    stemZh: '是不是在哪裡見過？',
+    options: [
+      { text: 'も', reason: '錯誤。「どこも」表示「到處都」，語意不同。' },
+      { text: 'でも', reason: '錯誤。「どこでも」表示「無論哪裡」，語意不同。' },
+      { text: 'か', reason: '正確。「どこか」表示「某處」，用於不確定的場所。' },
+      { text: 'かどうか', reason: '錯誤。「かどうか」表示「是否」，不接疑問詞。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「か」的不定用法',
+      analysis: '疑問詞＋「か」表示不確定：どこか（某處）、だれか（某人）、なにか（某事）。這是「か」的不定用法。',
+      relatedRules: ['📖 本課 文法「〜か（不定）」'],
+    },
+  },
+  // Q11 grammar — か（不定）— 誰か
+  {
+    id: 'n4_u3_l5_q11',
+    category: 'grammar',
+    level: 'N4',
+    stem: '誰{だれ}＿＿詳{くわ}しい人{ひと}に聞{き}きましょう。',
+    stemZh: '找某位了解的人問問吧。',
+    options: [
+      { text: 'が', reason: '錯誤。「誰が」是「誰」的疑問用法，不適合此處。' },
+      { text: 'も', reason: '錯誤。「誰も」表示「任何人都」，語意不同。' },
+      { text: 'か', reason: '正確。「誰か」表示「某人」，用於不確定的人。' },
+      { text: 'でも', reason: '錯誤。「誰でも」表示「無論誰」，語意不同。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「誰か」的用法',
+      analysis: '「誰か」表示「某人」，是疑問詞＋「か」的不定用法。不指定特定的人，只表示「有某個人」。',
+      relatedRules: ['📖 本課 文法「〜か（不定）」'],
+    },
+  },
+  // Q12 grammar — かどうか（心配）
+  {
+    id: 'n4_u3_l5_q12',
+    category: 'grammar',
+    level: 'N4',
+    stem: '貿易{ぼうえき}計画{けいかく}が成功{せいこう}する＿＿心配{しんぱい}です。',
+    stemZh: '擔心貿易計劃是否會成功。',
+    options: [
+      { text: 'から', reason: '錯誤。「から」表示原因「因為」，語意不符。' },
+      { text: 'ので', reason: '錯誤。「ので」表示原因「因為」，語意不符。' },
+      { text: 'のに', reason: '錯誤。「のに」表示「儘管」，語意不符。' },
+      { text: 'かどうか', reason: '正確。「かどうか」表示「是否〜」，搭配「心配」表示擔心某事是否會發生。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '「〜かどうか」搭配情緒表達',
+      analysis: '「〜かどうか」可搭配「心配です」「不安です」等情緒表達，表示對某事是否成立感到擔心或不安。',
+      relatedRules: ['📖 本課 文法「〜かどうか」'],
+    },
+  },
+  // Q13 grammar — か（不定）— 何か
+  {
+    id: 'n4_u3_l5_q13',
+    category: 'grammar',
+    level: 'N4',
+    stem: '何{なに}＿＿問題{もんだい}があったら、すぐ知{し}らせます。',
+    stemZh: '如果有什麼問題，我會馬上通知。',
+    options: [
+      { text: 'か', reason: '正確。「何か」表示「某事、什麼」，用於不確定的事物。' },
+      { text: 'も', reason: '錯誤。「何も」搭配否定表示「什麼都不」，此處是肯定句。' },
+      { text: 'が', reason: '錯誤。「何が」是疑問用法「什麼」，不適合此處。' },
+      { text: 'でも', reason: '錯誤。「何でも」表示「無論什麼」，語意不同。' },
+    ],
+    correctIndex: 0,
+    explanation: {
+      keyPoint: '「何か」的用法',
+      analysis: '「何か」表示「某事、什麼」，是疑問詞＋「か」的不定用法。用於不確定具體是什麼的情況。',
+      relatedRules: ['📖 本課 文法「〜か（不定）」'],
+    },
+  },
+  // Q14 vocabulary — 経験 vs 経済 比較
+  {
+    id: 'n4_u3_l5_q14',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「経験{けいけん}」と「経済{けいざい}」の説明{せつめい}で正{ただ}しいのはどれですか。',
+    stemZh: '關於「経験」和「経済」的說明，正確的是哪個？',
+    options: [
+      { text: '兩者都表示「經濟」', reason: '錯誤。只有経済才是經濟。' },
+      { text: '経験是經驗、経済是經濟，兩者都以「経」開頭', reason: '正確。兩者字形相近但意思不同。' },
+      { text: '兩者意思相同可互換', reason: '錯誤。兩者意思完全不同。' },
+      { text: '経験是經濟、経済是經驗', reason: '錯誤。剛好相反。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '経験與経済的區別',
+      analysis: '経験{けいけん}＝經驗；経済{けいざい}＝經濟。兩者都以「経」開頭，但後半部分不同，意思完全不同。',
+      relatedRules: ['📖 本課 單字「経験」「経済」'],
+    },
+  },
+  // Q15 grammar — かどうか vs か 比較
+  {
+    id: 'n4_u3_l5_q15',
+    category: 'grammar',
+    level: 'N4',
+    stem: '「〜かどうか」と「疑問詞{ぎもんし}＋か」の使{つか}い分{わ}けで正{ただ}しいのはどれですか。',
+    stemZh: '關於「〜かどうか」和「疑問詞＋か」的區分，正確的是哪個？',
+    options: [
+      { text: '兩者意思完全相同', reason: '錯誤。兩者用法和意思不同。' },
+      { text: '「かどうか」用於是非判斷，「疑問詞＋か」用於不定表達', reason: '正確。「かどうか」問是否，「疑問詞＋か」表示某人/某處/某事。' },
+      { text: '「疑問詞＋か」只能用在疑問句中', reason: '錯誤。「疑問詞＋か」可用於陳述句，如「どこかに行きたい」。' },
+      { text: '「かどうか」只能接動詞', reason: '錯誤。「かどうか」也可接形容詞，如「正しいかどうか」。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '「かどうか」與「疑問詞＋か」的區別',
+      analysis: '「〜かどうか」用於判斷是否成立（是/否）；「疑問詞＋か」表示不確定的對象：どこか（某處）、誰か（某人）、何か（某事）。',
+      relatedRules: ['📖 本課 文法「〜かどうか」「〜か（不定）」'],
     },
   },
 ]
 
 // ─── Lesson 6 Quiz ───
 const l6Quiz: UnifiedQuestion[] = [
+  // Q1 vocabulary — 公務員
   {
-    id: 'cq_n4_u3_l6_001',
+    id: 'n4_u3_l6_q1',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「公務員{こうむいん}」の意味{いみ}はどれですか。',
+    stemZh: '「公務員」的意思是哪個？',
+    options: [
+      { text: '工程師', reason: '錯誤。工程師是エンジニア。' },
+      { text: '公務員', reason: '正確。公務員{こうむいん}意為公務員，在政府機關工作的人。' },
+      { text: '報社記者', reason: '錯誤。報社記者是新聞記者{しんぶんきしゃ}。' },
+      { text: '播音員', reason: '錯誤。播音員是アナウンサー。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '公務員的詞義',
+      analysis: '公務員{こうむいん}意為公務員。「公務」指公家事務，「員」指成員。指在政府機關工作的人。',
+      relatedRules: ['📖 本課 單字「公務員」'],
+    },
+  },
+  // Q2 vocabulary — 新聞社
+  {
+    id: 'n4_u3_l6_q2',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「新聞社{しんぶんしゃ}」の意味{いみ}はどれですか。',
+    stemZh: '「新聞社」的意思是哪個？',
+    options: [
+      { text: '電視台', reason: '錯誤。電視台是テレビ局{きょく}。' },
+      { text: '出版社', reason: '錯誤。出版社是出版社{しゅっぱんしゃ}。' },
+      { text: '報社', reason: '正確。新聞社{しんぶんしゃ}意為報社。日語的「新聞」指報紙。' },
+      { text: '廣播電台', reason: '錯誤。廣播電台是ラジオ局{きょく}。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '新聞社的詞義',
+      analysis: '新聞社{しんぶんしゃ}意為報社。注意日語的「新聞」指的是報紙，不是中文的「新聞」。中文的新聞在日語中是「ニュース」。',
+      relatedRules: ['📖 本課 單字「新聞社」'],
+    },
+  },
+  // Q3 vocabulary — 研究室
+  {
+    id: 'n4_u3_l6_q3',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「研究室{けんきゅうしつ}」の読{よ}み方{かた}はどれですか。',
+    stemZh: '「研究室」的讀法是哪個？',
+    options: [
+      { text: 'けんきゅうしつ', reason: '正確。研究室讀作けんきゅうしつ，意為研究室。' },
+      { text: 'けんきゅうへや', reason: '錯誤。「室」在此讀「しつ」而非「へや」。' },
+      { text: 'けんきゅうま', reason: '錯誤。「室」讀「しつ」而非「ま」。' },
+      { text: 'けんきょうしつ', reason: '錯誤。「究」讀「きゅう」不讀「きょう」。' },
+    ],
+    correctIndex: 0,
+    explanation: {
+      keyPoint: '研究室的讀音',
+      analysis: '研究室{けんきゅうしつ}意為研究室。由「研究」＋「室」組成。大學中教授的辦公室稱為研究室。',
+      relatedRules: ['📖 本課 單字「研究室」'],
+    },
+  },
+  // Q4 vocabulary — 説明
+  {
+    id: 'n4_u3_l6_q4',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「説明{せつめい}」の意味{いみ}はどれですか。',
+    stemZh: '「説明」的意思是哪個？',
+    options: [
+      { text: '說明', reason: '正確。説明{せつめい}意為說明、解釋。' },
+      { text: '準備', reason: '錯誤。準備是準備{じゅんび}。' },
+      { text: '發明', reason: '錯誤。發明是発明{はつめい}。' },
+      { text: '證明', reason: '錯誤。證明是証明{しょうめい}。' },
+    ],
+    correctIndex: 0,
+    explanation: {
+      keyPoint: '説明的詞義',
+      analysis: '説明{せつめい}意為說明、解釋。「説」有解說之意，「明」有清楚之意。注意與発明{はつめい}（發明）、証明{しょうめい}（證明）的區別。',
+      relatedRules: ['📖 本課 單字「説明」'],
+    },
+  },
+  // Q5 vocabulary — アルバイト vs パート
+  {
+    id: 'n4_u3_l6_q5',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「アルバイト」と「パート」の説明{せつめい}で正{ただ}しいのはどれですか。',
+    stemZh: '關於「アルバイト」和「パート」的說明，正確的是哪個？',
+    options: [
+      { text: '都是全職工作', reason: '錯誤。全職工作是正社員{せいしゃいん}。' },
+      { text: 'アルバイト是全職，パート是兼職', reason: '錯誤。兩者都是兼職工作。' },
+      { text: '都是兼職，アルバイト多用於學生，パート多用於主婦', reason: '正確。兩者都指兼職但使用場合不同。' },
+      { text: '兩者是完全不同種類的工作', reason: '錯誤。兩者本質上都是兼職工作。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: 'アルバイト與パート的區別',
+      analysis: 'アルバイト（源自德語Arbeit）和パート（源自英語part-time）都指兼職工作。一般而言アルバイト多用於學生打工，パート多用於主婦兼職。',
+      relatedRules: ['📖 本課 單字「アルバイト」「パート」'],
+    },
+  },
+  // Q6 vocabulary — アナウンサー
+  {
+    id: 'n4_u3_l6_q6',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「アナウンサー」の意味{いみ}はどれですか。',
+    stemZh: '「アナウンサー」的意思是哪個？',
+    options: [
+      { text: '公務員', reason: '錯誤。公務員是公務員{こうむいん}。' },
+      { text: '記者', reason: '錯誤。記者是記者{きしゃ}。' },
+      { text: '作家', reason: '錯誤。作家是作家{さっか}。' },
+      { text: '播音員', reason: '正確。アナウンサー意為播音員，源自英語announcer。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: 'アナウンサー的詞義',
+      analysis: 'アナウンサー意為播音員。源自英語announcer。指在電視台或廣播電台播報新聞的人。',
+      relatedRules: ['📖 本課 單字「アナウンサー」'],
+    },
+  },
+  // Q7 vocabulary — 準備
+  {
+    id: 'n4_u3_l6_q7',
+    category: 'vocabulary',
+    level: 'N4',
+    stem: '「準備{じゅんび}」の読{よ}み方{かた}はどれですか。',
+    stemZh: '「準備」的讀法是哪個？',
+    options: [
+      { text: 'じゅんび', reason: '正確。準備讀作じゅんび，意為準備。' },
+      { text: 'じゅんぴ', reason: '錯誤。「備」讀「び」（濁音）而非「ぴ」。' },
+      { text: 'しゅんび', reason: '錯誤。「準」讀「じゅん」不讀「しゅん」。' },
+      { text: 'じゅうび', reason: '錯誤。「準」讀「じゅん」不讀「じゅう」。' },
+    ],
+    correctIndex: 0,
+    explanation: {
+      keyPoint: '準備的讀音',
+      analysis: '準備{じゅんび}意為準備。注意「備」讀濁音「び」。「準備する」是常用的動詞形式。',
+      relatedRules: ['📖 本課 單字「準備」'],
+    },
+  },
+  // Q8 grammar — かな（自問）
+  {
+    id: 'n4_u3_l6_q8',
     category: 'grammar',
     level: 'N4',
-    tags: ['to'],
-    stem: 'このボタンを押{お}す＿＿、ドアが開{あ}きます。',
-    stemZh: '按下這個按鈕，門就會打開。',
+    stem: '卒業{そつぎょう}したら、どんな仕事{しごと}をしよう＿＿。',
+    stemZh: '畢業之後，要做什麼工作好呢。',
     options: [
-      { text: 'と', reason: '正確。「と」表示按下按鈕後必然會開門的因果關係。' },
-      { text: 'なら', reason: '錯誤。「なら」是基於話題給建議，不適合機械因果。' },
-      { text: 'ても', reason: '錯誤。「ても」表示「即使」，語意不符。' },
-      { text: 'のに', reason: '錯誤。「のに」表示「儘管」，語意不符。' },
+      { text: 'かしら', reason: '錯誤。「かしら」主要是女性用語。此句為自問，用「かな」更通用。' },
+      { text: 'かい', reason: '錯誤。「かい」用於向別人提問，不是自問。' },
+      { text: 'かな', reason: '正確。「かな」用於自言自語，表示「不知道〜」「〜呢」。' },
+      { text: 'かどうか', reason: '錯誤。「かどうか」用於間接疑問「是否」，不用於句尾自問。' },
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: {
-      keyPoint: '「と」用於機械性因果',
-      analysis: '「と」用於表達做了A就必然會發生B的情況。適合操作說明、自然現象等必然因果。',
+      keyPoint: '「〜かな」的自問用法',
+      analysis: '「〜かな」接在句尾，表示自問「不知道〜」「〜好呢」。男女都可使用，常用於自言自語或輕鬆思考。',
+      relatedRules: ['📖 本課 文法「〜かな」'],
     },
   },
+  // Q9 grammar — かしら（女性自問）
   {
-    id: 'cq_n4_u3_l6_002',
-    category: 'vocabulary',
+    id: 'n4_u3_l6_q9',
+    category: 'grammar',
     level: 'N4',
-    tags: ['meaning'],
-    stem: '「アルバイト」と「パート」は何{なん}ですか。',
-    stemZh: '「アルバイト」和「パート」是什麼？',
+    stem: '電車{でんしゃ}は間{ま}に合{あ}う＿＿。（女性用語）',
+    stemZh: '不知道趕不趕得上電車。（女性用語）',
     options: [
-      { text: '都是兼職工作', reason: '正確。アルバイト和パート都指兼職，但パート多指主婦的兼職。' },
-      { text: '都是全職工作', reason: '錯誤。全職工作是正社員{せいしゃいん}。' },
-      { text: '播音員和記者', reason: '錯誤。播音員是アナウンサー。' },
-      { text: '部長和課長', reason: '錯誤。這些是管理職位。' },
+      { text: 'かな', reason: '錯誤。「かな」雖也可使用，但題目要求女性用語。' },
+      { text: 'かしら', reason: '正確。「かしら」是女性用的自問句尾詞，表示「不知道〜」。' },
+      { text: 'かい', reason: '錯誤。「かい」是男性口語疑問，不是自問。' },
+      { text: 'ですか', reason: '錯誤。「ですか」是向對方提問，不是自問。' },
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: {
-      keyPoint: 'アルバイト與パート的關係',
-      analysis: 'アルバイト（源自德語Arbeit）和パート（源自英語part-time）都指兼職工作。アルバイト多用於學生打工，パート多用於主婦兼職。',
+      keyPoint: '「〜かしら」的女性用語',
+      analysis: '「〜かしら」是女性常用的自問句尾詞，表示「不知道〜」「〜呢」。功能類似「かな」，但帶有女性語氣。',
+      relatedRules: ['📖 本課 文法「〜かしら」'],
     },
   },
+  // Q10 grammar — かい（口語疑問）
   {
-    id: 'cq_n4_u3_l6_003',
+    id: 'n4_u3_l6_q10',
+    category: 'grammar',
+    level: 'N4',
+    stem: '元気{げんき}＿＿？（親密的口語）',
+    stemZh: '你好嗎？（親密的口語）',
+    options: [
+      { text: 'ですか', reason: '錯誤。「ですか」是禮貌語，不是親密口語。' },
+      { text: 'かな', reason: '錯誤。「かな」是自問，不是向對方提問。' },
+      { text: 'かしら', reason: '錯誤。「かしら」是女性自問用語。' },
+      { text: 'かい', reason: '正確。「かい」是男性口語疑問句尾，用於親密關係。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '「〜かい」的口語疑問',
+      analysis: '「〜かい」是男性口語的疑問句尾詞，用於向關係親密的人提問。語氣比「ですか」親近，比「か」柔和。',
+      relatedRules: ['📖 本課 文法「〜かい」'],
+    },
+  },
+  // Q11 grammar — かな vs かしら 比較
+  {
+    id: 'n4_u3_l6_q11',
+    category: 'grammar',
+    level: 'N4',
+    stem: '「〜かな」と「〜かしら」の説明{せつめい}で正{ただ}しいのはどれですか。',
+    stemZh: '關於「〜かな」和「〜かしら」的說明，正確的是哪個？',
+    options: [
+      { text: '「かな」是女性用語，「かしら」是男性用語', reason: '錯誤。剛好相反：「かな」男女通用，「かしら」主要是女性用語。' },
+      { text: '兩者都是向對方提問的句型', reason: '錯誤。兩者都是自問句型，不是向對方提問。' },
+      { text: '「かな」男女通用，「かしら」主要是女性用語，兩者都用於自問', reason: '正確。兩者都表示「不知道〜」，但使用者不同。' },
+      { text: '兩者只能用在疑問句中', reason: '錯誤。兩者是自問語氣，不是正式的疑問句。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「かな」與「かしら」的比較',
+      analysis: '「かな」男女通用，「かしら」主要是女性用語。兩者都用於自言自語式的自問，表示「不知道〜」「〜好呢」。',
+      relatedRules: ['📖 本課 文法「〜かな」「〜かしら」'],
+    },
+  },
+  // Q12 grammar — かい（應用）
+  {
+    id: 'n4_u3_l6_q12',
+    category: 'grammar',
+    level: 'N4',
+    stem: '面接{めんせつ}の練習{れんしゅう}は始{はじ}めた＿＿？（男性口語）',
+    stemZh: '面試的練習開始了嗎？（男性口語）',
+    options: [
+      { text: 'かしら', reason: '錯誤。「かしら」是女性自問用語，不適合向人提問且不是男性用語。' },
+      { text: 'かな', reason: '錯誤。「かな」是自問，不是向對方提問。' },
+      { text: 'かい', reason: '正確。「かい」是男性口語疑問，用於向親密的人提問。' },
+      { text: 'かどうか', reason: '錯誤。「かどうか」用於間接疑問，不用於句尾直接提問。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「かい」向對方提問',
+      analysis: '「かい」用於男性口語中向關係親密的人提問。接在動詞た形後「〜たかい」表示「〜了嗎」。',
+      relatedRules: ['📖 本課 文法「〜かい」'],
+    },
+  },
+  // Q13 grammar — かな（應用）
+  {
+    id: 'n4_u3_l6_q13',
+    category: 'grammar',
+    level: 'N4',
+    stem: '新聞社{しんぶんしゃ}で働{はたら}くのも面白{おもしろ}い＿＿。',
+    stemZh: '在報社工作也滿有趣的嗎。',
+    options: [
+      { text: 'ですか', reason: '錯誤。「ですか」是向對方提問，此處是自問思考。' },
+      { text: 'かい', reason: '錯誤。「かい」是向對方提問，不是自問。' },
+      { text: 'かしら', reason: '錯誤。雖是自問，但「かしら」是女性用語。此處語境為通用。' },
+      { text: 'かな', reason: '正確。「かな」用於自言自語，思考某事是否如此。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '「かな」用於思考',
+      analysis: '「かな」接在形容詞後，表示在自問思考某件事。「面白いかな」意為「不知道有不有趣呢」。',
+      relatedRules: ['📖 本課 文法「〜かな」'],
+    },
+  },
+  // Q14 vocabulary — 説明 vs 準備 比較
+  {
+    id: 'n4_u3_l6_q14',
     category: 'vocabulary',
     level: 'N4',
-    tags: ['reading'],
-    stem: '「貿易{ぼうえき}」の意味{いみ}はどれですか。',
-    stemZh: '「貿易」的意思是哪個？',
+    stem: '「説明{せつめい}」と「準備{じゅんび}」を使{つか}った文{ぶん}で正{ただ}しいのはどれですか。',
+    stemZh: '使用「説明」和「準備」的句子中正確的是哪個？',
     options: [
-      { text: '貿易', reason: '正確。貿易{ぼうえき}意為貿易、國際交易。' },
-      { text: '產業', reason: '錯誤。產業是産業{さんぎょう}。' },
-      { text: '工業', reason: '錯誤。工業是工業{こうぎょう}。' },
-      { text: '公務員', reason: '錯誤。公務員是公務員{こうむいん}。' },
+      { text: '面接の準備をする＝準備面試', reason: '正確。「準備をする」是常用搭配，意為做準備。' },
+      { text: '準備を説明する＝準備說明', reason: '錯誤。「説明を準備する」（準備說明稿）才自然，語序不對。' },
+      { text: '説明を準備をする＝準備說明', reason: '錯誤。「を」重複了，日語中一個動詞只能接一個「を」。' },
+      { text: '説明が準備する＝說明要準備', reason: '錯誤。「準備する」的主語應是人，不是「説明」。' },
     ],
     correctIndex: 0,
     explanation: {
-      keyPoint: '貿易的詞義',
-      analysis: '貿易{ぼうえき}意為貿易。「貿」有交換之意，「易」也有交易之意。指國與國之間的商業交易。',
+      keyPoint: '「説明」「準備」的搭配用法',
+      analysis: '「準備をする」（做準備）和「説明をする」（做說明）是常用搭配。「面接の準備をする」意為準備面試。',
+      relatedRules: ['📖 本課 單字「説明」「準備」'],
+    },
+  },
+  // Q15 grammar — かな・かしら・かい 三者比較
+  {
+    id: 'n4_u3_l6_q15',
+    category: 'grammar',
+    level: 'N4',
+    stem: '「〜かな」「〜かしら」「〜かい」の使{つか}い分{わ}けで正{ただ}しいのはどれですか。',
+    stemZh: '關於「〜かな」「〜かしら」「〜かい」的區分，正確的是哪個？',
+    options: [
+      { text: '三者都是向對方提問的句型', reason: '錯誤。「かな」和「かしら」是自問，只有「かい」是向人提問。' },
+      { text: '三者都是自問的句型', reason: '錯誤。「かい」是向別人提問，不是自問。' },
+      { text: '「かな」「かしら」是自問，「かい」是向人提問；「かしら」是女性用語，「かい」是男性口語', reason: '正確。三者各有不同的功能和使用者。' },
+      { text: '三者意思完全相同，可以互換', reason: '錯誤。三者的功能和使用場合不同。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '三種句尾詞的比較',
+      analysis: '「かな」男女通用的自問；「かしら」女性用的自問；「かい」男性口語向親密的人提問。三者功能各異，不可互換。',
+      relatedRules: ['📖 本課 文法「〜かな」「〜かしら」「〜かい」'],
     },
   },
 ]
@@ -1494,5 +2200,448 @@ export const u3Lessons: LessonDefinition[] = [
       { speaker: '山田{やまだ}', japanese: 'うん、一緒{いっしょ}に頑張{がんば}ろうかい！', chinese: '嗯，一起加油吧！' },
     ],
     quizQuestions: l6Quiz,
+  },
+
+  // ─── Unit Test: 單元綜合測驗 ───
+  {
+    id: 'n4_u3_test',
+    unitId: 'n4_u3',
+    order: 7,
+    titleJp: '単元{たんげん}テスト',
+    titleZh: '單元綜合測驗',
+    objectives: ['複習本單元所有單字與文法，並回顧第二單元重點，檢驗學習成果'],
+    vocabulary: [],
+    grammarIds: [],
+    grammarSummaries: [],
+    dialogue: [],
+    quizQuestions: [
+      // ═══════════════════════════════════════
+      // Unit 3 題目 Q1–Q15（涵蓋第1～6課）
+      // ═══════════════════════════════════════
+
+      // Q1 vocabulary — 第1課 教育
+      {
+        id: 'n4_u3_test_q1',
+        category: 'vocabulary' as const,
+        level: 'N4' as const,
+        stem: '「教育{きょういく}」の意味{いみ}はどれですか。',
+        stemZh: '「教育」的意思是哪個？',
+        options: [
+          { text: '入學', reason: '錯誤。入學是入学{にゅうがく}。' },
+          { text: '教育', reason: '正確。教育{きょういく}意為教育。' },
+          { text: '卒業', reason: '錯誤。卒業是卒業{そつぎょう}。' },
+          { text: '研究', reason: '錯誤。研究是研究{けんきゅう}。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '教育的詞義',
+          analysis: '教育{きょういく}意為教育。「教」有教導之意，「育」有培養之意。',
+          relatedRules: ['📖 第1課 單字「教育」'],
+        },
+      },
+
+      // Q2 vocabulary — 第1課 入学
+      {
+        id: 'n4_u3_test_q2',
+        category: 'vocabulary' as const,
+        level: 'N4' as const,
+        stem: '「入学{にゅうがく}」の反対{はんたい}の意味{いみ}に近{ちか}い言葉{ことば}はどれですか。',
+        stemZh: '與「入学」意思相反的詞是哪個？',
+        options: [
+          { text: '卒業{そつぎょう}', reason: '正確。卒業意為畢業，是入學的相反概念。' },
+          { text: '教育{きょういく}', reason: '錯誤。教育不是入學的反義詞。' },
+          { text: '転校{てんこう}', reason: '錯誤。轉學不是入學的直接反義詞。' },
+          { text: '高校{こうこう}', reason: '錯誤。高校是學校名稱，不是反義詞。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '入学與卒業的對比',
+          analysis: '入学{にゅうがく}＝入學，卒業{そつぎょう}＝畢業。兩者是學業歷程中的起點與終點。',
+          relatedRules: ['📖 第1課 單字「入学」「卒業」'],
+        },
+      },
+
+      // Q3 grammar — 第1課 たら
+      {
+        id: 'n4_u3_test_q3',
+        category: 'grammar' as const,
+        level: 'N4' as const,
+        stem: '試験{しけん}に合格{ごうかく}し＿＿、何{なに}をしたいですか。',
+        stemZh: '如果考試及格了，想做什麼？',
+        options: [
+          { text: 'ても', reason: '錯誤。「ても」表示即使〜也〜，語意不同。' },
+          { text: 'ば', reason: '錯誤。此處是た形＋ら的句型，不用假定形。' },
+          { text: 'たら', reason: '正確。「したら」是「する」的た形＋ら，表示假設未來的條件。' },
+          { text: 'ので', reason: '錯誤。「ので」表示原因，不是條件。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「たら」用於假設未來',
+          analysis: '「たら」接在動詞た形後，表示「如果〜的話」。する→した→したら。用於假設未來可能發生的事。',
+          relatedRules: ['📖 第1課 文法「〜たら」'],
+        },
+      },
+
+      // Q4 grammar — 第1課 ば
+      {
+        id: 'n4_u3_test_q4',
+        category: 'grammar' as const,
+        level: 'N4' as const,
+        stem: '値段{ねだん}が安{やす}＿＿買{か}いたいです。',
+        stemZh: '如果價格便宜的話想買。',
+        options: [
+          { text: 'ければ', reason: '正確。い形容詞的假定形：去い＋ければ。安い→安ければ。' },
+          { text: 'いなら', reason: '錯誤。い形容詞不能直接加なら。' },
+          { text: 'かったら', reason: '錯誤。雖然語法上也通，但此處空格考的是假定形。' },
+          { text: 'くて', reason: '錯誤。「くて」是連接形，不表示條件。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: 'い形容詞的「ば」形',
+          analysis: 'い形容詞的假定形：去掉い，加ければ。安い→安ければ（如果便宜的話）。',
+          relatedRules: ['📖 第1課 文法「〜ば」'],
+        },
+      },
+
+      // Q5 vocabulary — 第2課 講義
+      {
+        id: 'n4_u3_test_q5',
+        category: 'vocabulary' as const,
+        level: 'N4' as const,
+        stem: '大学{だいがく}で「講義{こうぎ}」を受{う}けました。「講義」はどんな意味{いみ}ですか。',
+        stemZh: '在大學接受了「講義」。「講義」是什麼意思？',
+        options: [
+          { text: '考試', reason: '錯誤。考試是試験{しけん}。' },
+          { text: '研究', reason: '錯誤。研究是研究{けんきゅう}。' },
+          { text: '課堂講授', reason: '正確。講義{こうぎ}指大學的講課、課堂講授。' },
+          { text: '作業', reason: '錯誤。作業是宿題{しゅくだい}或レポート。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '講義的詞義',
+          analysis: '講義{こうぎ}指大學的課堂講授。「講義を受{う}ける」＝聽課、上課。',
+          relatedRules: ['📖 第2課 單字「講義」'],
+        },
+      },
+
+      // Q6 grammar — 第2課 ば〜ほど
+      {
+        id: 'n4_u3_test_q6',
+        category: 'grammar' as const,
+        level: 'N4' as const,
+        stem: '日本語{にほんご}は勉強{べんきょう}すれ＿＿するほど楽{たの}しくなります。',
+        stemZh: '日語越學越有趣。',
+        options: [
+          { text: 'たら', reason: '錯誤。「たら」不用於「〜ほど」句型。' },
+          { text: 'ば', reason: '正確。「〜ば〜ほど」表示越〜越〜。勉強すれば勉強するほど。' },
+          { text: 'と', reason: '錯誤。「と」不用於「〜ほど」句型。' },
+          { text: 'ても', reason: '錯誤。「ても」表示即使〜也〜，語意不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「〜ば〜ほど」越〜越〜',
+          analysis: '「〜ば〜ほど」表示「越〜越〜」。動詞假定形＋同一動詞辭書形＋ほど。勉強すれば勉強するほど。',
+          relatedRules: ['📖 第2課 文法「〜ば〜ほど」'],
+        },
+      },
+
+      // Q7 vocabulary — 第3課 試験
+      {
+        id: 'n4_u3_test_q7',
+        category: 'vocabulary' as const,
+        level: 'N4' as const,
+        stem: '「予習{よしゅう}」と「復習{ふくしゅう}」の説明{せつめい}で正{ただ}しいのはどれですか。',
+        stemZh: '關於「予習」和「復習」的說明，正確的是哪個？',
+        options: [
+          { text: '予習是事後複習，復習是事前預習', reason: '錯誤。剛好相反。' },
+          { text: '兩者意思完全相同', reason: '錯誤。兩者是不同的學習行為。' },
+          { text: '予習是事前預習，復習是事後複習', reason: '正確。予習＝預習，復習＝複習。' },
+          { text: '予習是作業，復習是考試', reason: '錯誤。兩者都是學習方法，不是作業或考試。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '予習與復習的區別',
+          analysis: '予習{よしゅう}意為預習（上課前先學），復習{ふくしゅう}意為複習（上課後再溫習）。兩者都是重要的學習方法。',
+          relatedRules: ['📖 第3課 單字「予習」「復習」'],
+        },
+      },
+
+      // Q8 grammar — 第3課 たらどう
+      {
+        id: 'n4_u3_test_q8',
+        category: 'grammar' as const,
+        level: 'N4' as const,
+        stem: 'もっと予習{よしゅう}し＿＿どうですか。',
+        stemZh: '多預習一些如何？',
+        options: [
+          { text: 'ば', reason: '錯誤。「ばどうですか」不是標準建議句型。' },
+          { text: 'ると', reason: '錯誤。「るとどうですか」不是建議句型。' },
+          { text: 'ても', reason: '錯誤。「てもどうですか」語意不通。' },
+          { text: 'たら', reason: '正確。「〜たらどうですか」表示委婉建議。した＋ら→したら。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '「〜たらどうですか」建議句型',
+          analysis: '「〜たらどうですか」用於委婉地建議對方做某事。する→した→したらどうですか（做〜如何？）。',
+          relatedRules: ['📖 第3課 文法「〜たらどう」'],
+        },
+      },
+
+      // Q9 vocabulary — 第4課 工場
+      {
+        id: 'n4_u3_test_q9',
+        category: 'vocabulary' as const,
+        level: 'N4' as const,
+        stem: '「工場{こうじょう}」の意味{いみ}はどれですか。',
+        stemZh: '「工場」的意思是哪個？',
+        options: [
+          { text: '會場', reason: '錯誤。會場是会場{かいじょう}。' },
+          { text: '辦事處', reason: '錯誤。辦事處是事務所{じむしょ}。' },
+          { text: '會議室', reason: '錯誤。會議室是会議室{かいぎしつ}。' },
+          { text: '工廠', reason: '正確。工場{こうじょう}意為工廠。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '工場的詞義',
+          analysis: '工場{こうじょう}意為工廠。注意日語的「工場」讀作「こうじょう」或「こうば」。',
+          relatedRules: ['📖 第4課 單字「工場」'],
+        },
+      },
+
+      // Q10 grammar — 第4課 なら
+      {
+        id: 'n4_u3_test_q10',
+        category: 'grammar' as const,
+        level: 'N4' as const,
+        stem: 'A：「会議室{かいぎしつ}を探{さが}しています。」B：「会議室{かいぎしつ}＿＿、二階{にかい}にありますよ。」',
+        stemZh: 'A：「我在找會議室。」B：「如果是會議室，在二樓喔。」',
+        options: [
+          { text: 'と', reason: '錯誤。「と」不直接接名詞表示話題條件。' },
+          { text: 'ば', reason: '錯誤。「ば」不直接接名詞。' },
+          { text: 'なら', reason: '正確。「なら」可直接接名詞，承接對方提到的話題給出資訊。' },
+          { text: 'たら', reason: '錯誤。「たら」不直接接名詞表示話題。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「なら」接名詞的用法',
+          analysis: '「名詞＋なら」承接對方的話題，提供資訊或建議。「会議室なら」＝如果是會議室的話。',
+          relatedRules: ['📖 第4課 文法「〜なら」'],
+        },
+      },
+
+      // Q11 grammar — 第4課 場合は
+      {
+        id: 'n4_u3_test_q11',
+        category: 'grammar' as const,
+        level: 'N4' as const,
+        stem: '火事{かじ}の＿＿、すぐ外{そと}に出{で}てください。',
+        stemZh: '萬一發生火災，請立刻到外面去。',
+        options: [
+          { text: 'ために', reason: '錯誤。「ために」表示「為了」，語意不符。' },
+          { text: 'あいだに', reason: '錯誤。「あいだに」表示「在〜期間」，語意不符。' },
+          { text: 'ところ', reason: '錯誤。「ところ」表示時機，不適合此處。' },
+          { text: '場合{ばあい}は', reason: '正確。「〜場合は」表示在某情況發生時應採取的行動。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '「〜場合は」的用法',
+          analysis: '「〜場合{ばあい}は」表示「在〜的情況下」，用於預設某種情境並說明應對方式。火事の場合は＝萬一發生火災的話。',
+          relatedRules: ['📖 第4課 文法「〜場合は」'],
+        },
+      },
+
+      // Q12 vocabulary — 第5課 経験
+      {
+        id: 'n4_u3_test_q12',
+        category: 'vocabulary' as const,
+        level: 'N4' as const,
+        stem: '「経験{けいけん}」の意味{いみ}はどれですか。',
+        stemZh: '「経験」的意思是哪個？',
+        options: [
+          { text: '計劃', reason: '錯誤。計劃是計画{けいかく}。' },
+          { text: '經濟', reason: '錯誤。經濟是経済{けいざい}。' },
+          { text: '經驗', reason: '正確。経験{けいけん}意為經驗。' },
+          { text: '技術', reason: '錯誤。技術是技術{ぎじゅつ}。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '経験的詞義',
+          analysis: '経験{けいけん}意為經驗。常見用法：経験{けいけん}がある（有經驗）、経験{けいけん}を積{つ}む（累積經驗）。',
+          relatedRules: ['📖 第5課 單字「経験」'],
+        },
+      },
+
+      // Q13 grammar — 第5課 かどうか
+      {
+        id: 'n4_u3_test_q13',
+        category: 'grammar' as const,
+        level: 'N4' as const,
+        stem: '明日{あした}天気{てんき}がいい＿＿わかりません。',
+        stemZh: '不知道明天天氣是否好。',
+        options: [
+          { text: 'かな', reason: '錯誤。「かな」是自問句尾詞，不接「わかりません」。' },
+          { text: 'かどうか', reason: '正確。「〜かどうか」表示「是否〜」，用於間接疑問。' },
+          { text: 'かしら', reason: '錯誤。「かしら」是自問用語，不接「わかりません」。' },
+          { text: 'かい', reason: '錯誤。「かい」是口語疑問句尾，不用於間接疑問。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「〜かどうか」表示「是否」',
+          analysis: '「〜かどうか」表示「是否〜」，用於將疑問句嵌入句中作為間接疑問。常搭配「わかりません」「知りません」等。',
+          relatedRules: ['📖 第5課 文法「〜かどうか」'],
+        },
+      },
+
+      // Q14 vocabulary — 第6課 アルバイト
+      {
+        id: 'n4_u3_test_q14',
+        category: 'vocabulary' as const,
+        level: 'N4' as const,
+        stem: '「アルバイト」の意味{いみ}はどれですか。',
+        stemZh: '「アルバイト」的意思是哪個？',
+        options: [
+          { text: '全職工作', reason: '錯誤。全職工作是正社員{せいしゃいん}。' },
+          { text: '兼職', reason: '正確。アルバイト源自德語Arbeit，指兼職工作，多用於學生打工。' },
+          { text: '播音員', reason: '錯誤。播音員是アナウンサー。' },
+          { text: '公務員', reason: '錯誤。公務員是公務員{こうむいん}。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: 'アルバイト的詞義',
+          analysis: 'アルバイト源自德語Arbeit，在日語中指兼職工作，特別常用於學生打工的場合。',
+          relatedRules: ['📖 第6課 單字「アルバイト」'],
+        },
+      },
+
+      // Q15 grammar — 第6課 かな
+      {
+        id: 'n4_u3_test_q15',
+        category: 'grammar' as const,
+        level: 'N4' as const,
+        stem: '将来{しょうらい}どんな仕事{しごと}をしよう＿＿。（自言自語）',
+        stemZh: '將來要做什麼工作好呢。（自言自語）',
+        options: [
+          { text: 'ですか', reason: '錯誤。「ですか」是向對方提問，不是自言自語。' },
+          { text: 'かい', reason: '錯誤。「かい」是向別人提問，不是自問。' },
+          { text: 'かしら', reason: '錯誤。「かしら」主要是女性用語，此處為通用情境。' },
+          { text: 'かな', reason: '正確。「かな」用於自言自語式的自問，表示「〜好呢」。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '「〜かな」的自問用法',
+          analysis: '「〜かな」接在句尾，表示自言自語「不知道〜」「〜好呢」。男女通用，語氣輕鬆。',
+          relatedRules: ['📖 第6課 文法「〜かな」'],
+        },
+      },
+
+      // ═══════════════════════════════════════
+      // Unit 2 複習題 Q16–Q20
+      // ═══════════════════════════════════════
+
+      // Q16 vocabulary — U2第1課 悲しい
+      {
+        id: 'n4_u3_test_q16',
+        category: 'vocabulary' as const,
+        level: 'N4' as const,
+        stem: '「悲{かな}しい」の意味{いみ}はどれですか。',
+        stemZh: '「悲しい」的意思是哪個？',
+        options: [
+          { text: '害羞', reason: '錯誤。害羞是恥{は}ずかしい。' },
+          { text: '可怕', reason: '錯誤。可怕是怖{こわ}い。' },
+          { text: '想睡', reason: '錯誤。想睡是眠{ねむ}い。' },
+          { text: '難過', reason: '正確。悲{かな}しい意為難過、悲傷。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '悲しい的詞義（複習）',
+          analysis: '悲{かな}しい是い形容詞，意為難過、悲傷。是描述悲傷心情的基本詞彙。',
+          relatedRules: ['📖 U2第1課 單字「悲しい」'],
+        },
+      },
+
+      // Q17 grammar — U2第1課 らしい
+      {
+        id: 'n4_u3_test_q17',
+        category: 'grammar' as const,
+        level: 'N4' as const,
+        stem: '来週{らいしゅう}テストがある＿＿です。先輩{せんぱい}がそう言{い}っていました。',
+        stemZh: '聽說下週有考試。學長這樣說的。',
+        options: [
+          { text: 'そう', reason: '錯誤。動詞原形＋そうです是傳聞，但此處更適合用らしい表示根據資訊來源的推測。' },
+          { text: 'らしい', reason: '正確。根據學長說的話來推測，用らしい表示有依據的推測。' },
+          { text: 'かもしれない', reason: '錯誤。かもしれない表示也許，但此處有明確的資訊來源。' },
+          { text: 'はず', reason: '錯誤。はず表示應該，語氣過於肯定。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '〜らしい表示有依據的推測（複習）',
+          analysis: '「〜らしいです」用於根據某資訊來源進行推測。學長說下週有考試，所以用「あるらしいです」。',
+          relatedRules: ['📖 U2第1課 文法「〜らしい」'],
+        },
+      },
+
+      // Q18 grammar — U2第3課 〜がる
+      {
+        id: 'n4_u3_test_q18',
+        category: 'grammar' as const,
+        level: 'N4' as const,
+        stem: '弟{おとうと}は注射{ちゅうしゃ}を怖{こわ}＿＿。',
+        stemZh: '弟弟害怕打針。（表現出害怕的樣子）',
+        options: [
+          { text: 'いです', reason: '錯誤。〜い用於第一人稱的感受，描述第三人稱要用〜がる。' },
+          { text: 'がります', reason: '正確。形容詞詞幹＋がる，描述第三人稱表現出害怕的樣子。' },
+          { text: 'たがります', reason: '錯誤。たがる用於「想要做〜」，不用於形容詞。' },
+          { text: 'そうです', reason: '錯誤。〜そう表示看起來〜，接續方式不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '〜がる描述第三人稱感情（複習）',
+          analysis: '形容詞詞幹＋がる，用於描述第三人稱表現出某種感情。怖{こわ}い→怖{こわ}がる（表現出害怕的樣子）。',
+          relatedRules: ['📖 U2第3課 文法「〜がる」'],
+        },
+      },
+
+      // Q19 grammar — U2第5課 まま
+      {
+        id: 'n4_u3_test_q19',
+        category: 'grammar' as const,
+        level: 'N4' as const,
+        stem: '電気{でんき}をつけた＿＿寝{ね}てしまいました。',
+        stemZh: '開著燈就那樣睡著了。',
+        options: [
+          { text: 'ばかり', reason: '錯誤。ばかり表示光是〜，語意不同。' },
+          { text: 'まだ', reason: '錯誤。まだ表示還，不表示保持狀態。' },
+          { text: 'まま', reason: '正確。〜たまま表示保持某動作完成後的狀態。開著燈的狀態＝つけたまま。' },
+          { text: 'だけ', reason: '錯誤。だけ表示只有，語意不通。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「〜まま」保持狀態（複習）',
+          analysis: '動詞た形＋まま，表示保持某動作完成後的狀態不變。「つけたまま」＝開著（燈）的狀態。',
+          relatedRules: ['📖 U2第5課 文法「〜まま」'],
+        },
+      },
+
+      // Q20 vocabulary — U2第6課 太る vs 痩せる
+      {
+        id: 'n4_u3_test_q20',
+        category: 'vocabulary' as const,
+        level: 'N4' as const,
+        stem: '「太{ふと}る」の反対{はんたい}の意味{いみ}の言葉{ことば}はどれですか。',
+        stemZh: '「太る」的反義詞是哪個？',
+        options: [
+          { text: '倒{たお}れる', reason: '錯誤。倒れる意為倒下，不是太る的反義詞。' },
+          { text: '治{なお}る', reason: '錯誤。治る意為治好，不是太る的反義詞。' },
+          { text: '痩{や}せる', reason: '正確。太{ふと}る＝發胖，痩{や}せる＝瘦，兩者是反義詞。' },
+          { text: '冷{ひ}える', reason: '錯誤。冷える意為變冷，不是太る的反義詞。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '太る與痩せる的對比（複習）',
+          analysis: '太{ふと}る＝發胖，痩{や}せる＝瘦。兩者是描述體型變化的一組反義詞。',
+          relatedRules: ['📖 U2第6課 單字「太る」「痩せる」'],
+        },
+      },
+    ],
   },
 ]

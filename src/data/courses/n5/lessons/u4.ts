@@ -2274,4 +2274,464 @@ export const u4Lessons: LessonDefinition[] = [
       },
     ] as UnifiedQuestion[],
   },
+
+  // ============================================================
+  // 単元テスト: 單元綜合測驗
+  // ============================================================
+  {
+    id: 'n5_u4_test',
+    unitId: 'n5_u4',
+    order: 7,
+    titleJp: '単元テスト',
+    titleZh: '單元綜合測驗',
+    objectives: [
+      '綜合複習第四單元所有文法與單字',
+      '回顧第三單元重點內容',
+    ],
+
+    vocabulary: [],
+    grammarIds: [],
+    grammarSummaries: [],
+    dialogue: [],
+
+    quizQuestions: [
+      // ── U4 題目（15 題）──────────────────────────────
+      // Q1: grammar — てください (correctIndex: 1)
+      {
+        id: 'n5_u4_test_q1',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['te-kudasai', 'unit-test'],
+        stem: 'すみません、もう少{すこ}しゆっくり＿＿ください。',
+        stemZh: '不好意思，請再慢一點＿＿。',
+        options: [
+          { text: '話す', reason: '辭書形不接「ください」，需用て形。' },
+          { text: '話して', reason: '正確。「話す」→「話して」＋ください＝請說慢一點。' },
+          { text: '話した', reason: '「話した」是た形（過去），不接「ください」。' },
+          { text: '話さない', reason: '「話さない」是否定形，不能直接接「ください」。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「てください」的接續',
+          analysis: '「てください」前面接動詞て形。「話す」（五段）→ 話して → 話してください＝請說。',
+          commonMistakes: ['× 話すください → ○ 話してください'],
+          relatedRules: ['📖 L1 文法「てください」'],
+        },
+      },
+      // Q2: grammar — ないでください (correctIndex: 2)
+      {
+        id: 'n5_u4_test_q2',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['naide-kudasai', 'unit-test'],
+        stem: '図書館{としょかん}では大{おお}きい声{こえ}で＿＿でください。',
+        stemZh: '在圖書館請不要大聲＿＿。',
+        options: [
+          { text: '話して', reason: '「話して」是肯定て形，不是「ないでください」的接續。' },
+          { text: '話し', reason: '「話し」是連用形，不接「でください」。' },
+          { text: '話さない', reason: '正確。「話す」→「話さない」＋でください＝請不要說。' },
+          { text: '話す', reason: '辭書形不接「でください」。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「ないでください」的接續',
+          analysis: '「ないでください」前面接動詞ない形。「話す」→ 話さない → 話さないでください＝請不要說。',
+          commonMistakes: ['× 話してでください → ○ 話さないでください'],
+          relatedRules: ['📖 L1 文法「ないでください」'],
+        },
+      },
+      // Q3: grammar — ている (correctIndex: 0)
+      {
+        id: 'n5_u4_test_q3',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['te-iru', 'unit-test'],
+        stem: '兄{あに}は東京{とうきょう}に＿＿います。',
+        stemZh: '哥哥＿＿在東京。',
+        options: [
+          { text: '住んで', reason: '正確。「住む」→「住んで」＋いる＝住在。表示持續狀態。' },
+          { text: '住む', reason: '辭書形不接「います」，需用て形。' },
+          { text: '住んだ', reason: '「住んだ」是た形，不接「います」。' },
+          { text: '住まない', reason: '否定形不接「います」。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '「ている」表示持續狀態',
+          analysis: '「住んでいる」表示居住的持續狀態。「住む」（五段）→ 住んで → 住んでいます。',
+          comparisons: ['住んでいます（住在～）', '働いています（在工作）'],
+          relatedRules: ['📖 L2 文法「ている」'],
+        },
+      },
+      // Q4: grammar — てある (correctIndex: 3)
+      {
+        id: 'n5_u4_test_q4',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['te-aru', 'unit-test'],
+        stem: '壁{かべ}にポスターが＿＿あります。',
+        stemZh: '牆上＿＿著海報。',
+        options: [
+          { text: '貼{は}る', reason: '辭書形不接「あります」，需用て形。' },
+          { text: '貼{は}った', reason: '「貼った」是た形，不接「あります」。' },
+          { text: '貼{は}らない', reason: '否定形不接「あります」。' },
+          { text: '貼{は}って', reason: '正確。「貼る」→「貼って」＋ある＝貼著（結果狀態）。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '「てある」表示結果狀態',
+          analysis: '「てある」表示某人做了動作後的結果狀態。「ポスターが貼ってある」＝海報被貼著。',
+          comparisons: ['ている＝正在做／持續狀態', 'てある＝做了之後的結果狀態'],
+          relatedRules: ['📖 L2 文法「てある」'],
+        },
+      },
+      // Q5: vocab — 貸す vs 借りる (correctIndex: 1)
+      {
+        id: 'n5_u4_test_q5',
+        category: 'vocabulary',
+        level: 'N5',
+        tags: ['verb-pair', 'unit-test'],
+        stem: '友達{ともだち}にお金{かね}を＿＿ました。来週{らいしゅう}返{かえ}してくれるそうです。',
+        stemZh: '＿＿了錢給朋友。聽說下週會還。',
+        options: [
+          { text: '借り', reason: '「借りる」是自己借入，不是借出給別人。' },
+          { text: '貸し', reason: '正確。「貸す」＝借出。把錢借給朋友。' },
+          { text: '上げ', reason: '「上げる」是送、給，不是借。' },
+          { text: '渡し', reason: '「渡す」是交給，但不含歸還的含義。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「貸す」與「借りる」的方向',
+          analysis: '因為下週會「返す」，所以是借的關係。自己借出用「貸す」，自己借入用「借りる」。',
+          comparisons: ['貸す（借出）⇔ 借りる（借入）'],
+          relatedRules: ['📖 L1 單字「貸す・借りる」'],
+        },
+      },
+      // Q6: grammar — まだ〜ていません (correctIndex: 2)
+      {
+        id: 'n5_u4_test_q6',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['mada-te-imasen', 'unit-test'],
+        stem: 'A：レポートはもう出{だ}しましたか。\nB：いいえ、＿＿。',
+        stemZh: 'A：報告已經交了嗎？\nB：不，＿＿。',
+        options: [
+          { text: 'もう出しました', reason: '「もう出しました」是肯定，與「いいえ」矛盾。' },
+          { text: 'まだ出しません', reason: '「出しません」是否定現在式，不是「還沒交」的正確說法。' },
+          { text: 'まだ出していません', reason: '正確。「まだ〜ていません」＝還沒做。「まだ出していません」＝還沒交。' },
+          { text: 'もう出していません', reason: '「もう」不搭配否定「ていません」。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「まだ〜ていません」的用法',
+          analysis: '回答「もう〜ましたか」的否定用「まだ〜ていません」（還沒做）。',
+          comparisons: ['肯定：もう出しました（已經交了）', '否定：まだ出していません（還沒交）'],
+          relatedRules: ['📖 L3 文法「まだ〜ていません」'],
+        },
+      },
+      // Q7: grammar — てから (correctIndex: 0)
+      {
+        id: 'n5_u4_test_q7',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['te-kara', 'unit-test'],
+        stem: '手{て}を洗{あら}って＿＿、ご飯{はん}を食{た}べます。',
+        stemZh: '洗完手＿＿，吃飯。',
+        options: [
+          { text: 'から', reason: '正確。「てから」＝做完之後。洗完手之後吃飯。' },
+          { text: 'まで', reason: '「まで」＝到～為止，不符合先後順序的語境。' },
+          { text: 'ので', reason: '「ので」＝因為，不表示先後關係。' },
+          { text: 'けど', reason: '「けど」＝但是，不表示先後關係。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '「てから」表示先後順序',
+          analysis: '「てから」＝做完～之後再做另一件事。「手を洗ってから食べる」＝洗完手再吃。',
+          relatedRules: ['📖 L4 文法「てから」'],
+        },
+      },
+      // Q8: grammar — 前に (correctIndex: 3)
+      {
+        id: 'n5_u4_test_q8',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['mae-ni', 'unit-test'],
+        stem: '＿＿前{まえ}に、歯{は}を磨{みが}きます。',
+        stemZh: '＿＿之前，刷牙。',
+        options: [
+          { text: '寝{ね}て', reason: '「前に」前面接辭書形，不接て形。' },
+          { text: '寝{ね}た', reason: '「前に」前面接辭書形，不接た形。' },
+          { text: '寝{ね}ない', reason: '「前に」前面接辭書形，不接ない形。' },
+          { text: '寝{ね}る', reason: '正確。「前に」前面接動詞辭書形。「寝る前に」＝睡覺之前。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '「前に」的接續',
+          analysis: '「前に」前面接動詞辭書形或名詞＋の。「寝る前に歯を磨く」＝睡前刷牙。',
+          commonMistakes: ['× 寝て前に → ○ 寝る前に'],
+          relatedRules: ['📖 L4 文法「前に」'],
+        },
+      },
+      // Q9: grammar — たり〜たりする (correctIndex: 1)
+      {
+        id: 'n5_u4_test_q9',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['tari-tari', 'unit-test'],
+        stem: '休{やす}みの日{ひ}は音楽{おんがく}を聴{き}い＿＿、散歩{さんぽ}し＿＿します。',
+        stemZh: '休假日聽聽音樂、散散步之類的。',
+        options: [
+          { text: 'て / て', reason: '「て」是て形，不是「たり〜たりする」的接續。' },
+          { text: 'たり / たり', reason: '正確。「たり〜たりする」列舉多項活動。「聴いたり、散歩したりする」。' },
+          { text: 'ても / ても', reason: '「ても」＝即使，不是列舉。' },
+          { text: 'たら / たら', reason: '「たら」＝的話，不是列舉。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「たり〜たりする」列舉活動',
+          analysis: '用「たり〜たりする」列舉幾個代表性的動作。動詞た形去「た」加「たり」。',
+          relatedRules: ['📖 L5 文法「たり〜たりする」'],
+        },
+      },
+      // Q10: grammar — たことがある (correctIndex: 2)
+      {
+        id: 'n5_u4_test_q10',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['ta-koto-ga-aru', 'unit-test'],
+        stem: '富士山{ふじさん}に＿＿ことがありますか。',
+        stemZh: '你有＿＿過富士山嗎？',
+        options: [
+          { text: '登{のぼ}る', reason: '辭書形不接「ことがある」，表經驗時需用た形。' },
+          { text: '登{のぼ}って', reason: '「て形」不接「ことがある」。' },
+          { text: '登{のぼ}った', reason: '正確。「たことがある」＝曾經做過～。「登った」＋ことがある＝爬過。' },
+          { text: '登{のぼ}らない', reason: '否定形不接「ことがある」表經驗。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「たことがある」表示經驗',
+          analysis: '「たことがある」表示過去的經驗。接動詞た形。「登ったことがある」＝曾經爬過。',
+          commonMistakes: ['× 登ることがある → ○ 登ったことがある（表經驗）'],
+          relatedRules: ['📖 L5 文法「たことがある」'],
+        },
+      },
+      // Q11: grammar — もう (correctIndex: 0)
+      {
+        id: 'n5_u4_test_q11',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['mou', 'unit-test'],
+        stem: 'A：宿題{しゅくだい}は終{お}わりましたか。\nB：はい、＿＿終{お}わりました。',
+        stemZh: 'A：作業做完了嗎？\nB：是的，＿＿做完了。',
+        options: [
+          { text: 'もう', reason: '正確。「もう」＋過去肯定＝已經做完了。' },
+          { text: 'まだ', reason: '「まだ」搭配否定表示還沒，不搭配「終わりました」。' },
+          { text: 'あまり', reason: '「あまり」＝不太，不合語境。' },
+          { text: 'ちょっと', reason: '「ちょっと」＝一點，不合語境。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '「もう」＝已經',
+          analysis: '「もう」搭配肯定過去式表示「已經做了」。「もう終わりました」＝已經做完了。',
+          comparisons: ['もう＋肯定＝已經', 'まだ＋否定＝還沒'],
+          relatedRules: ['📖 L6 文法「もう」'],
+        },
+      },
+      // Q12: vocab — 交通工具 (correctIndex: 3)
+      {
+        id: 'n5_u4_test_q12',
+        category: 'vocabulary',
+        level: 'N5',
+        tags: ['transport', 'unit-test'],
+        stem: '「自転車{じてんしゃ}」の読{よ}み方{かた}はどれですか。',
+        stemZh: '「自転車」的讀法是哪個？',
+        options: [
+          { text: 'じどうしゃ', reason: '「じどうしゃ」是「自動車」（汽車）的讀法。' },
+          { text: 'でんしゃ', reason: '「でんしゃ」是「電車」的讀法。' },
+          { text: 'ひこうき', reason: '「ひこうき」是「飛行機」（飛機）的讀法。' },
+          { text: 'じてんしゃ', reason: '正確。「自転車」讀作「じてんしゃ」，意思是腳踏車。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '交通工具漢字讀音',
+          analysis: '自転車（じてんしゃ）＝腳踏車。注意與自動車（じどうしゃ）＝汽車的區別。',
+          comparisons: ['自転車（じてんしゃ）＝腳踏車', '自動車（じどうしゃ）＝汽車'],
+          relatedRules: ['📖 L4 單字「自転車」'],
+        },
+      },
+      // Q13: vocab — それから (correctIndex: 1)
+      {
+        id: 'n5_u4_test_q13',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['sore-kara', 'unit-test'],
+        stem: 'まず野菜{やさい}を切{き}ります。＿＿鍋{なべ}に入{い}れます。',
+        stemZh: '先切蔬菜。＿＿放進鍋裡。',
+        options: [
+          { text: 'でも', reason: '「でも」＝但是，不表順序。' },
+          { text: 'それから', reason: '正確。「それから」＝然後。用於連接按順序進行的動作。' },
+          { text: 'しかし', reason: '「しかし」＝然而，不表順序。' },
+          { text: 'だから', reason: '「だから」＝所以，表因果不表順序。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「それから」連接順序動作',
+          analysis: '「それから」＝然後。用來連接按時間順序進行的動作。',
+          relatedRules: ['📖 L3 文法「それから」'],
+        },
+      },
+      // Q14: vocab — 動作動詞 (correctIndex: 2)
+      {
+        id: 'n5_u4_test_q14',
+        category: 'vocabulary',
+        level: 'N5',
+        tags: ['verb', 'unit-test'],
+        stem: '部屋{へや}を掃除{そうじ}してから、洗濯{せんたく}をして、＿＿しました。',
+        stemZh: '打掃完房間後，洗完衣服，覺得＿＿。',
+        options: [
+          { text: '困り', reason: '「困る」＝困擾，與打掃洗衣無直接關連。' },
+          { text: '歌い', reason: '「歌う」＝唱歌，不是做家事後的自然感受。' },
+          { text: '疲れ', reason: '正確。「疲れる」＝累。做完家事後覺得累。' },
+          { text: '着き', reason: '「着く」＝到達，不合語境。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「疲れる」的用法',
+          analysis: '「疲れる」＝疲倦、累。做了大量家事之後覺得累是自然的語境。',
+          relatedRules: ['📖 L5 單字「疲れる」'],
+        },
+      },
+      // Q15: grammar — てから vs 前に 綜合 (correctIndex: 1)
+      {
+        id: 'n5_u4_test_q15',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['te-kara', 'mae-ni', 'unit-test'],
+        stem: '薬{くすり}は食事{しょくじ}の＿＿飲{の}んでください。',
+        stemZh: '藥請在用餐＿＿吃。',
+        options: [
+          { text: 'てから', reason: '「てから」接動詞て形，不接名詞＋の。此處用名詞形。' },
+          { text: '後{あと}で', reason: '正確。「名詞＋の＋後で」＝～之後。「食事の後で」＝用餐之後。' },
+          { text: 'ので', reason: '「ので」＝因為，不合語境。' },
+          { text: 'から', reason: '「から」搭配動詞て形或句子表原因，此處不適合。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「名詞＋の＋後で」vs「てから」',
+          analysis: '名詞接「の後で」，動詞接「てから」。「食事の後で」＝用餐之後。',
+          comparisons: ['食事の後で飲む（名詞＋の後で）', '食べてから飲む（動詞て形＋から）'],
+          relatedRules: ['📖 L4 文法「てから」「前に」'],
+        },
+      },
+
+      // ── U3 複習題目（5 題）──────────────────────────────
+      // Q16: grammar — い形容詞 / な形容詞 (correctIndex: 2)
+      {
+        id: 'n5_u4_test_q16',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['adjective', 'unit3-review'],
+        stem: 'あの＿＿建物{たてもの}は美術館{びじゅつかん}です。',
+        stemZh: '那棟＿＿的建築是美術館。',
+        options: [
+          { text: '立派', reason: '「立派」是な形容詞，修飾名詞要加「な」。' },
+          { text: '静かの', reason: '「の」不用於な形容詞修飾名詞。' },
+          { text: '立派な', reason: '正確。「立派」是な形容詞，修飾名詞要加「な」→「立派な建物」。' },
+          { text: '静かい', reason: '「静か」是な形容詞，不加「い」。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: 'な形容詞的修飾用法',
+          analysis: 'な形容詞修飾名詞時加「な」。「立派」→「立派な建物」＝出色的建築。',
+          comparisons: ['な形容詞：静かな部屋、立派な建物', 'い形容詞：高い建物、大きい公園'],
+          relatedRules: ['📖 U3 L1 文法「な形容詞」'],
+        },
+      },
+      // Q17: grammar — AはBより (correctIndex: 0)
+      {
+        id: 'n5_u4_test_q17',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['comparison', 'unit3-review'],
+        stem: '東京{とうきょう}は大阪{おおさか}＿＿人{ひと}が多{おお}いです。',
+        stemZh: '東京＿＿大阪人多。',
+        options: [
+          { text: 'より', reason: '正確。「AはBより〜」＝A比B更～。「東京は大阪より人が多い」。' },
+          { text: 'から', reason: '「から」＝從，不表比較。' },
+          { text: 'まで', reason: '「まで」＝到，不表比較。' },
+          { text: 'ほど', reason: '「ほど」用於否定比較「AはBほど〜ない」，此處是肯定句。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '「AはBより」比較句型',
+          analysis: '「AはBより〜」＝A比B更～。「東京は大阪より人が多い」＝東京比大阪人多。',
+          relatedRules: ['📖 U3 L3 文法「AはBより」'],
+        },
+      },
+      // Q18: grammar — 一番 (correctIndex: 3)
+      {
+        id: 'n5_u4_test_q18',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['ichiban', 'unit3-review'],
+        stem: '日本{にほん}で＿＿高{たか}い山{やま}は富士山{ふじさん}です。',
+        stemZh: '日本＿＿高的山是富士山。',
+        options: [
+          { text: 'とても', reason: '「とても」＝非常，不表最高級。' },
+          { text: 'もっと', reason: '「もっと」＝更加，不表最高級。' },
+          { text: 'すごく', reason: '「すごく」＝非常，不表最高級。' },
+          { text: '一番{いちばん}', reason: '正確。「一番」＝最。「日本で一番高い山」＝日本最高的山。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '「〜で一番」最高級',
+          analysis: '「〜で一番〜」＝在～範圍內最～。「日本で一番高い山」＝日本最高的山。',
+          relatedRules: ['📖 U3 L4 文法「一番」'],
+        },
+      },
+      // Q19: grammar — すぎる (correctIndex: 2)
+      {
+        id: 'n5_u4_test_q19',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['sugiru', 'unit3-review'],
+        stem: 'この鞄{かばん}は重{おも}＿＿て持{も}てません。',
+        stemZh: '這個包包太重了拿不動。',
+        options: [
+          { text: 'い', reason: '只是形容詞原形，沒有「太過」的意思。' },
+          { text: 'くて', reason: '「重くて」是て形連接，但沒有「太過」的意思。' },
+          { text: 'すぎ', reason: '正確。「重い」→「重すぎる」＝太重。「重すぎて」＝太重以至於。' },
+          { text: 'く', reason: '「重く」是連用形，後面不接「て」表示太過。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「すぎる」的接續',
+          analysis: 'い形容詞去「い」加「すぎる」。「重い」→「重すぎる」＝太重。',
+          commonMistakes: ['× 重いすぎる → ○ 重すぎる'],
+          relatedRules: ['📖 U3 L2 文法「すぎる」'],
+        },
+      },
+      // Q20: grammar — でしょう (correctIndex: 1)
+      {
+        id: 'n5_u4_test_q20',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['deshou', 'unit3-review'],
+        stem: '明日{あした}は天気{てんき}がいい＿＿。',
+        stemZh: '明天天氣應該會不錯＿＿。',
+        options: [
+          { text: 'です', reason: '「です」是斷定，沒有推測的語氣。' },
+          { text: 'でしょう', reason: '正確。「でしょう」＝大概、應該。表示推測。' },
+          { text: 'ですか', reason: '「ですか」是疑問，不是推測。' },
+          { text: 'ですね', reason: '「ですね」是確認，不是推測。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「でしょう」表示推測',
+          analysis: '「でしょう」表示推測、估計。「天気がいいでしょう」＝天氣應該會好吧。',
+          comparisons: ['です＝斷定', 'でしょう＝推測'],
+          relatedRules: ['📖 U3 L6 文法「でしょう」'],
+        },
+      },
+    ] as UnifiedQuestion[],
+  },
 ]

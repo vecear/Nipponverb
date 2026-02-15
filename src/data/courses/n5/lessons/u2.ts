@@ -1737,6 +1737,413 @@ const l6Quiz: UnifiedQuestion[] = [
   },
 ]
 
+// ─── Unit Test Quiz: 單元綜合測驗 ───
+const testQuiz: UnifiedQuestion[] = [
+  // ── Q1: vocabulary (L1 朝の生活) ──
+  {
+    id: 'n5_u2_test_q1',
+    category: 'vocabulary',
+    level: 'N5',
+    stem: '「寝{ね}る」の反対語{はんたいご}はどれですか。',
+    stemZh: '「寝る」（睡覺）的反義詞是哪個？',
+    options: [
+      { text: '食{た}べる', reason: '錯誤。食べる是「吃」，概念不同。' },
+      { text: '飲{の}む', reason: '錯誤。飲む是「喝」，概念不同。' },
+      { text: '起{お}きる', reason: '正確。起きる（起床）是寝る（睡覺）的反義詞。' },
+      { text: '洗{あら}う', reason: '錯誤。洗う是「洗」，概念不同。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '起きる與寝るの反義關係',
+      analysis: '寝{ね}る（睡覺）⇔ 起{お}きる（起床）。兩者是描述睡眠狀態的基本反義動詞。',
+      relatedRules: ['📖 第1課「朝の生活」 單字「寝る」「起きる」'],
+    },
+  },
+  // ── Q2: grammar (L1 受詞助詞を) ──
+  {
+    id: 'n5_u2_test_q2',
+    category: 'grammar',
+    level: 'N5',
+    stem: '朝{あさ}、シャワー＿＿浴{あ}びます。',
+    stemZh: '早上淋浴。',
+    options: [
+      { text: 'に', reason: '錯誤。「に」是場所/時間助詞，此處標記的是動作對象。' },
+      { text: 'で', reason: '錯誤。「で」表示手段或場所，此處需要受詞助詞。' },
+      { text: 'が', reason: '錯誤。「が」是主格助詞，此處需要受詞助詞。' },
+      { text: 'を', reason: '正確。「を」標記動作的對象（受詞）。「シャワーを浴びる」是固定搭配。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '受詞助詞「を」的搭配',
+      analysis: '「シャワーを浴{あ}びる」是固定搭配。「を」標記動詞的直接受詞。',
+      relatedRules: ['📖 第1課「朝の生活」 文法「〜を＋動詞」'],
+    },
+  },
+  // ── Q3: vocabulary (L2 食べ物と飲み物) ──
+  {
+    id: 'n5_u2_test_q3',
+    category: 'vocabulary',
+    level: 'N5',
+    stem: '「甘{あま}い」の反対語{はんたいご}はどれですか。',
+    stemZh: '「甘い」（甜的）的反義詞是哪個？',
+    options: [
+      { text: '美味{おい}しい', reason: '錯誤。美味しい是「好吃的」，概念不同。' },
+      { text: '辛{から}い', reason: '正確。甘い（甜的）⇔ 辛い（辣的）是味覺的反義詞。' },
+      { text: '軽{かる}い', reason: '錯誤。軽い是「輕的」，描述重量不是味道。' },
+      { text: '重{おも}い', reason: '錯誤。重い是「重的」，描述重量不是味道。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '味覺形容詞反義詞',
+      analysis: '甘{あま}い（甜的）⇔ 辛{から}い（辣的）。這是描述食物味道的基本反義詞組。',
+      relatedRules: ['📖 第2課「食べ物と飲み物」 單字「甘い」「辛い」'],
+    },
+  },
+  // ── Q4: grammar (L2 手段助詞で) ──
+  {
+    id: 'n5_u2_test_q4',
+    category: 'grammar',
+    level: 'N5',
+    stem: 'スプーン＿＿スープを飲{の}みます。',
+    stemZh: '用湯匙喝湯。',
+    options: [
+      { text: 'で', reason: '正確。「で」表示手段/方法，用什麼工具做某事。' },
+      { text: 'を', reason: '錯誤。「を」是受詞助詞，後面已經有「スープを」了。' },
+      { text: 'に', reason: '錯誤。「に」表示場所或目的地，不表示工具。' },
+      { text: 'が', reason: '錯誤。「が」是主格助詞，此處不適用。' },
+    ],
+    correctIndex: 0,
+    explanation: {
+      keyPoint: '手段助詞「で」',
+      analysis: '「で」可以表示使用的工具或手段。「スプーンで飲む」＝「用湯匙喝」。',
+      relatedRules: ['📖 第2課「食べ物と飲み物」 文法「〜で」'],
+    },
+  },
+  // ── Q5: vocabulary (L3 時間と一日) ──
+  {
+    id: 'n5_u2_test_q5',
+    category: 'vocabulary',
+    level: 'N5',
+    stem: '「明後日{あさって}」の意味{いみ}はどれですか。',
+    stemZh: '「明後日」的意思是哪個？',
+    options: [
+      { text: '昨天', reason: '錯誤。昨天是昨日{きのう}。' },
+      { text: '前天', reason: '錯誤。前天是一昨日{おととい}。' },
+      { text: '明天', reason: '錯誤。明天是明日{あした}。' },
+      { text: '後天', reason: '正確。明後日{あさって}意為後天。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '明後日的詞義',
+      analysis: '明後日{あさって}意為後天。時間順序：一昨日→昨日→今日→明日→明後日。',
+      relatedRules: ['📖 第3課「時間と一日」 單字「明後日」'],
+    },
+  },
+  // ── Q6: grammar (L3 から〜まで) ──
+  {
+    id: 'n5_u2_test_q6',
+    category: 'grammar',
+    level: 'N5',
+    stem: '銀行{ぎんこう}は朝{あさ}九時{くじ}＿＿午後{ごご}三時{さんじ}まで開{あ}いています。',
+    stemZh: '銀行從早上九點開到下午三點。',
+    options: [
+      { text: 'まで', reason: '錯誤。「まで」表示終點，起點應用「から」。' },
+      { text: 'で', reason: '錯誤。「で」不用於時間的起點。' },
+      { text: 'から', reason: '正確。「から」表示起點（從〜）。「九時から三時まで」＝「從九點到三點」。' },
+      { text: 'に', reason: '錯誤。「に」標記時間點，不表示起點。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「から〜まで」句型',
+      analysis: '「から」表示起點（從），「まで」表示終點（到）。「AからBまで」＝「從A到B」。',
+      relatedRules: ['📖 第3課「時間と一日」 文法「〜から〜まで」'],
+    },
+  },
+  // ── Q7: vocabulary (L4 買い物) ──
+  {
+    id: 'n5_u2_test_q7',
+    category: 'vocabulary',
+    level: 'N5',
+    stem: '「切符{きっぷ}」の意味{いみ}はどれですか。',
+    stemZh: '「切符」的意思是哪個？',
+    options: [
+      { text: '錢包', reason: '錯誤。錢包是財布{さいふ}。' },
+      { text: '車票', reason: '正確。切符{きっぷ}意為車票/票券。' },
+      { text: '衣服', reason: '錯誤。衣服是服{ふく}。' },
+      { text: '鞋子', reason: '錯誤。鞋子是靴{くつ}。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '切符的詞義',
+      analysis: '切符{きっぷ}意為車票/票券。是購物和交通場景中常用的詞彙。',
+      relatedRules: ['📖 第4課「買い物」 單字「切符」'],
+    },
+  },
+  // ── Q8: grammar (L4 〜に行く) ──
+  {
+    id: 'n5_u2_test_q8',
+    category: 'grammar',
+    level: 'N5',
+    stem: '友達{ともだち}と昼{ひる}ご飯{はん}を食{た}べ＿＿行{い}きました。',
+    stemZh: '和朋友去吃了午餐。',
+    options: [
+      { text: 'を', reason: '錯誤。目的用「に」，不用「を」。' },
+      { text: 'で', reason: '錯誤。「で」表示手段或場所，不用於移動目的。' },
+      { text: 'に', reason: '正確。「動詞ます形去ます＋に行く」表示去做某事。食べます→食べに行く。' },
+      { text: 'が', reason: '錯誤。「が」是主格助詞，不用於移動目的。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「動詞ます形去ます＋に行く」',
+      analysis: '「動詞ます形去ます＋に行く」表示去做某事。食べます→食べに行く。',
+      relatedRules: ['📖 第4課「買い物」 文法「〜に行く」'],
+    },
+  },
+  // ── Q9: grammar (L4 〜たい) ──
+  {
+    id: 'n5_u2_test_q9',
+    category: 'grammar',
+    level: 'N5',
+    stem: '冷{つめ}たいジュース＿＿飲{の}みたいです。',
+    stemZh: '想喝冰涼的果汁。',
+    options: [
+      { text: 'を', reason: '錯誤。「たい」句型中用「が」更強調想要的對象，但「を」也可以。此題正解是「が」。' },
+      { text: 'に', reason: '錯誤。「に」不用於「たい」的對象。' },
+      { text: 'が', reason: '正確。「たい」句型中，對象用「が」更能強調想要的東西。' },
+      { text: 'で', reason: '錯誤。「で」不用於「たい」的對象。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「〜たい」句型的助詞',
+      analysis: '「〜たい」句型中，對象可以用「が」或「を」，但用「が」更強調想要的對象。「ジュースが飲みたい」＝「想喝果汁」。',
+      relatedRules: ['📖 第4課「買い物」 文法「〜たいです」'],
+    },
+  },
+  // ── Q10: vocabulary (L5 服と持ち物) ──
+  {
+    id: 'n5_u2_test_q10',
+    category: 'vocabulary',
+    level: 'N5',
+    stem: '「着{き}る」と「履{は}く」の使{つか}い分{わ}けで正{ただ}しいのはどれですか。',
+    stemZh: '「着る」和「履く」的用法區分，正確的是哪個？',
+    options: [
+      { text: 'セーターを履{は}く', reason: '錯誤。毛衣穿在上半身，用「着る」。' },
+      { text: 'コートを着{き}る', reason: '正確。大衣穿在上半身，用「着る」。' },
+      { text: '靴{くつ}を着{き}る', reason: '錯誤。鞋子穿在腳上，用「履く」。' },
+      { text: 'シャツを履{は}く', reason: '錯誤。襯衫穿在上半身，用「着る」。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '穿戴動詞的正確搭配',
+      analysis: '着{き}る用於上半身衣物（シャツ、セーター、コート等），履{は}く用於下半身/腳（ズボン、スカート、靴、靴下等）。',
+      relatedRules: ['📖 第5課「服と持ち物」 單字「着る」「履く」'],
+    },
+  },
+  // ── Q11: grammar (L5 ましょう) ──
+  {
+    id: 'n5_u2_test_q11',
+    category: 'grammar',
+    level: 'N5',
+    stem: '今日{きょう}は天気{てんき}がいいですね。散歩{さんぽ}し＿＿。',
+    stemZh: '今天天氣真好呢。一起去散步吧。',
+    options: [
+      { text: 'ません', reason: '錯誤。「ません」是否定形，不表示提議。' },
+      { text: 'ましょう', reason: '正確。「ましょう」表示「一起做〜吧」的提議。' },
+      { text: 'ます', reason: '錯誤。「ます」是一般敬體陳述。' },
+      { text: 'ました', reason: '錯誤。「ました」是過去式。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '提議句型「ましょう」',
+      analysis: '「ましょう」用於提議一起做某事。散歩します→散歩しましょう＝一起散步吧。',
+      relatedRules: ['📖 第5課「服と持ち物」 文法「〜ましょう」'],
+    },
+  },
+  // ── Q12: grammar (L5 ませんか) ──
+  {
+    id: 'n5_u2_test_q12',
+    category: 'grammar',
+    level: 'N5',
+    stem: '来週{らいしゅう}一緒{いっしょ}にプールに行{い}き＿＿。（禮貌地邀約）',
+    stemZh: '下週要不要一起去游泳池？',
+    options: [
+      { text: 'ましょう', reason: '錯誤。「ましょう」是直接提議「一起去吧」，不如「ませんか」禮貌。' },
+      { text: 'たい', reason: '錯誤。「たい」是個人願望，不是邀約。' },
+      { text: 'ます', reason: '錯誤。「ます」是一般敬體陳述，不是邀約。' },
+      { text: 'ませんか', reason: '正確。「ませんか」是禮貌委婉的邀約句型。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '邀約句型「ませんか」',
+      analysis: '「ませんか」比「ましょう」更禮貌委婉，用於邀約對方一起做某事。',
+      relatedRules: ['📖 第5課「服と持ち物」 文法「〜ませんか」'],
+    },
+  },
+  // ── Q13: vocabulary (L6 週末の予定) ──
+  {
+    id: 'n5_u2_test_q13',
+    category: 'vocabulary',
+    level: 'N5',
+    stem: '「木曜日{もくようび}」の次{つぎ}の日{ひ}は何曜日{なんようび}ですか。',
+    stemZh: '「木曜日」的隔天是星期幾？',
+    options: [
+      { text: '水曜日{すいようび}', reason: '錯誤。水曜日（星期三）在木曜日之前。' },
+      { text: '金曜日{きんようび}', reason: '正確。木曜日（星期四）的隔天是金曜日（星期五）。' },
+      { text: '火曜日{かようび}', reason: '錯誤。火曜日（星期二）在木曜日之前。' },
+      { text: '土曜日{どようび}', reason: '錯誤。土曜日（星期六）是金曜日之後。' },
+    ],
+    correctIndex: 1,
+    explanation: {
+      keyPoint: '曜日的順序',
+      analysis: '曜日順序：日→月→火→水→木→金→土。木曜日（星期四）的下一天是金曜日（星期五）。',
+      relatedRules: ['📖 第6課「週末の予定」 單字「木曜日」「金曜日」'],
+    },
+  },
+  // ── Q14: grammar (L6 つもり) ──
+  {
+    id: 'n5_u2_test_q14',
+    category: 'grammar',
+    level: 'N5',
+    stem: '夏休{なつやす}みに海{うみ}に行{い}く＿＿です。',
+    stemZh: '暑假打算去海邊。',
+    options: [
+      { text: 'ほしい', reason: '錯誤。「ほしい」接名詞表示想要某物，不接動詞辭書形。' },
+      { text: 'たい', reason: '錯誤。「たい」接動詞ます形去ます，不接辭書形＋です。' },
+      { text: 'つもり', reason: '正確。「動詞辭書形＋つもりです」表示打算/計畫做某事。' },
+      { text: 'ましょう', reason: '錯誤。「ましょう」是提議句型，不能接「です」。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '意向句型「つもり」',
+      analysis: '「動詞辭書形＋つもりです」表示已經決定要做的計畫。「行くつもりです」＝「打算去」。',
+      relatedRules: ['📖 第6課「週末の予定」 文法「〜つもりです」'],
+    },
+  },
+  // ── Q15: grammar (L6 ましょうか) ──
+  {
+    id: 'n5_u2_test_q15',
+    category: 'grammar',
+    level: 'N5',
+    stem: '重{おも}そうですね。荷物{にもつ}を持{も}ち＿＿か。',
+    stemZh: '看起來好重呢。要不要我幫你拿行李？',
+    options: [
+      { text: 'ます', reason: '錯誤。「ますか」是一般疑問，不表達主動幫忙的意思。' },
+      { text: 'ません', reason: '錯誤。「ませんか」是邀約，不是主動提供幫助。' },
+      { text: 'たい', reason: '錯誤。「たいですか」是問對方的願望，不是主動幫忙。' },
+      { text: 'ましょう', reason: '正確。「ましょうか」表示主動提供幫助，「要不要我幫你〜？」。' },
+    ],
+    correctIndex: 3,
+    explanation: {
+      keyPoint: '「ましょうか」表示主動幫助',
+      analysis: '「ましょうか」除了「一起做〜？」之外，也可以表示「要不要我做〜？」（主動提供幫助）。',
+      relatedRules: ['📖 第6課「週末の予定」 文法「〜ましょうか」'],
+    },
+  },
+
+  // ── 以下為複習題（Unit 1 回顧） ──
+
+  // ── Q16: vocabulary (U1 L1 自我介紹) ──
+  {
+    id: 'n5_u2_test_q16',
+    category: 'vocabulary',
+    level: 'N5',
+    stem: '「会社員{かいしゃいん}」の意味{いみ}はどれですか。',
+    stemZh: '「会社員」的意思是哪個？',
+    options: [
+      { text: '學生', reason: '錯誤。學生是学生{がくせい}。' },
+      { text: '老師', reason: '錯誤。老師是先生{せんせい}。' },
+      { text: '公司職員', reason: '正確。会社員{かいしゃいん}意為公司職員。「会社」＝公司，「員」＝成員。' },
+      { text: '醫生', reason: '錯誤。醫生是医者{いしゃ}。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '職業詞彙',
+      analysis: '会社員{かいしゃいん}由「会社」（公司）＋「員」（成員）組成，意為公司職員。是自我介紹時常用的詞彙。',
+      relatedRules: ['📖 上一單元 第1課「自己紹介」 單字「会社員」'],
+    },
+  },
+  // ── Q17: grammar (U1 L2 家族と挨拶 — の) ──
+  {
+    id: 'n5_u2_test_q17',
+    category: 'grammar',
+    level: 'N5',
+    stem: 'これは姉{あね}＿＿かばんです。',
+    stemZh: '這是姊姊的包包。',
+    options: [
+      { text: 'が', reason: '錯誤。「が」是主格助詞，不用於表示所屬。' },
+      { text: 'を', reason: '錯誤。「を」是受詞助詞，不用於表示所屬。' },
+      { text: 'の', reason: '正確。「の」表示所屬/所有。「姉のかばん」＝「姊姊的包包」。' },
+      { text: 'に', reason: '錯誤。「に」是場所/時間助詞，不用於表示所屬。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '所屬助詞「の」',
+      analysis: '「の」放在兩個名詞之間，表示所屬關係。「姉{あね}のかばん」＝「姊姊的包包」。',
+      relatedRules: ['📖 上一單元 第2課「家族と挨拶」 文法「〜の〜」'],
+    },
+  },
+  // ── Q18: grammar (U1 L4 これは何ですか — 指示詞) ──
+  {
+    id: 'n5_u2_test_q18',
+    category: 'grammar',
+    level: 'N5',
+    stem: '＿＿本{ほん}は誰{だれ}のですか。（指離雙方都遠的書）',
+    stemZh: '那本書是誰的？（指離雙方都遠的書）',
+    options: [
+      { text: 'この', reason: '錯誤。「この」指靠近說話者的東西。' },
+      { text: 'その', reason: '錯誤。「その」指靠近聽者的東西。' },
+      { text: 'あの', reason: '正確。「あの」指離雙方都遠的東西。' },
+      { text: 'どの', reason: '錯誤。「どの」是疑問詞，「哪個〜」。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '連體詞 あの',
+      analysis: '「あの＋名詞」用於指離說話者和聽者都遠的東西。「あの本」＝「那本書（遠處的）」。',
+      relatedRules: ['📖 上一單元 第4課「これは何ですか」 文法「この/その/あの」'],
+    },
+  },
+  // ── Q19: grammar (U1 L5 位置與場所 — あります/います) ──
+  {
+    id: 'n5_u2_test_q19',
+    category: 'grammar',
+    level: 'N5',
+    stem: '教室{きょうしつ}に学生{がくせい}＿＿います。',
+    stemZh: '教室裡有學生。',
+    options: [
+      { text: 'を', reason: '錯誤。「を」是受詞助詞，此處需要主格助詞。' },
+      { text: 'に', reason: '錯誤。前面已經有「教室に」表示場所了。' },
+      { text: 'が', reason: '正確。「場所に＋名詞が＋います」表示某處有（有生命物）。' },
+      { text: 'で', reason: '錯誤。「で」不用於存在句型。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '存在動詞「います」的句型',
+      analysis: '「場所に＋名詞が＋います」表示某處有有生命的東西。「教室に学生がいます」＝「教室裡有學生」。',
+      relatedRules: ['📖 上一單元 第5課「どこにありますか」 文法「〜がいます」'],
+    },
+  },
+  // ── Q20: grammar (U1 L6 興趣與喜好 — のが好き) ──
+  {
+    id: 'n5_u2_test_q20',
+    category: 'grammar',
+    level: 'N5',
+    stem: '私{わたし}は音楽{おんがく}を聞{き}く＿＿好{す}きです。',
+    stemZh: '我喜歡聽音樂。',
+    options: [
+      { text: 'が', reason: '錯誤。「が」用在「好き」前面，但此處需要把動詞名詞化。' },
+      { text: 'を', reason: '錯誤。「を」不用於動詞名詞化。' },
+      { text: 'のが', reason: '正確。「動詞辭書形＋のが好き」表示喜歡做某事。「聞くのが好き」＝「喜歡聽」。' },
+      { text: 'に', reason: '錯誤。「に」不用於此句型。' },
+    ],
+    correctIndex: 2,
+    explanation: {
+      keyPoint: '「〜のが好き」句型',
+      analysis: '「動詞辭書形＋のが好き」表示喜歡做某事。「の」把動詞變成名詞，「が」是「好き」前面的助詞。',
+      relatedRules: ['📖 上一單元 第6課「趣味は何ですか」 文法「〜のが好きです」'],
+    },
+  },
+]
+
 export const u2Lessons: LessonDefinition[] = [
   // ─── Lesson 1: 朝の生活 ───
   {
@@ -2131,5 +2538,24 @@ export const u2Lessons: LessonDefinition[] = [
       { speaker: '田中{たなか}', japanese: 'はい！土曜日{どようび}が楽{たの}しみですね。', chinese: '好！期待星期六呢。' },
     ],
     quizQuestions: l6Quiz,
+  },
+
+  // ─── Unit Test: 單元綜合測驗 ───
+  {
+    id: 'n5_u2_test',
+    unitId: 'n5_u2',
+    order: 7,
+    titleJp: '単元テスト',
+    titleZh: '單元綜合測驗',
+    objectives: [
+      '綜合測驗第二單元所學的詞彙與文法',
+      '複習第一單元的重點內容',
+      '確認助詞、句型的正確使用',
+    ],
+    vocabulary: [],
+    grammarIds: [],
+    grammarSummaries: [],
+    dialogue: [],
+    quizQuestions: testQuiz,
   },
 ]

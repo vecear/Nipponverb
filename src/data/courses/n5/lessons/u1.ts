@@ -2251,4 +2251,443 @@ export const u1Lessons: LessonDefinition[] = [
     ],
     quizQuestions: l6Quiz,
   },
+
+  // ─── Unit Test: 單元綜合測驗 ───
+  {
+    id: 'n5_u1_test',
+    unitId: 'n5_u1',
+    order: 7,
+    titleJp: '単元テスト',
+    titleZh: '單元綜合測驗',
+    objectives: ['複習本單元所有單字與文法，檢驗學習成果'],
+    vocabulary: [],
+    grammarIds: [],
+    grammarSummaries: [],
+    dialogue: [],
+    quizQuestions: [
+      // ─── 單字題 Q1–Q10 ───
+
+      // Q1 vocabulary — 第1課 先生
+      {
+        id: 'n5_u1_test_q1',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「先生{せんせい}」の意味{いみ}はどれですか。',
+        stemZh: '「先生」的意思是哪個？',
+        options: [
+          { text: '學生', reason: '錯誤。學生是学生{がくせい}。' },
+          { text: '朋友', reason: '錯誤。朋友是友達{ともだち}。' },
+          { text: '老師', reason: '正確。先生{せんせい}意為老師。' },
+          { text: '公司', reason: '錯誤。公司是会社{かいしゃ}。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '先生的詞義',
+          analysis: '先生{せんせい}意為老師。是最基本的稱呼詞彙之一，也可用來尊稱醫生、律師等專業人士。',
+          relatedRules: ['📖 第1課 單字「先生」'],
+        },
+      },
+
+      // Q2 vocabulary — 第2課 お母さん
+      {
+        id: 'n5_u1_test_q2',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「お母{かあ}さん」の意味{いみ}はどれですか。',
+        stemZh: '「お母さん」的意思是哪個？',
+        options: [
+          { text: '父親', reason: '錯誤。父親是お父{とう}さん。' },
+          { text: '母親', reason: '正確。お母{かあ}さん意為母親。' },
+          { text: '姊姊', reason: '錯誤。姊姊是姉{あね}。' },
+          { text: '妹妹', reason: '錯誤。妹妹是妹{いもうと}。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '家族稱呼：お母さん',
+          analysis: 'お母{かあ}さん是對母親的尊稱。稱呼自己的母親（自謙）時用「母{はは}」。',
+          relatedRules: ['📖 第2課 單字「お母さん」'],
+        },
+      },
+
+      // Q3 vocabulary — 第3課 鉛筆
+      {
+        id: 'n5_u1_test_q3',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「鉛筆{えんぴつ}」の読{よ}み方{かた}はどれですか。',
+        stemZh: '「鉛筆」的讀法是哪個？',
+        options: [
+          { text: 'えんひつ', reason: '錯誤。「筆」在此讀「ぴつ」，有連濁現象。' },
+          { text: 'えんぺつ', reason: '錯誤。「筆」的半濁音讀法不是「ぺつ」。' },
+          { text: 'えんぴつ', reason: '正確。鉛筆{えんぴつ}意為鉛筆。' },
+          { text: 'えんびつ', reason: '錯誤。「筆」在此是半濁音「ぴ」，不是濁音「び」。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '鉛筆的讀音',
+          analysis: '鉛筆{えんぴつ}的讀音是「えんぴつ」。注意連濁現象：「筆」本讀「ひつ」，接在「鉛」後面變成「ぴつ」。',
+          relatedRules: ['📖 第3課 單字「鉛筆」'],
+        },
+      },
+
+      // Q4 vocabulary — 第4課 傘
+      {
+        id: 'n5_u1_test_q4',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「傘{かさ}」の意味{いみ}はどれですか。',
+        stemZh: '「傘」的意思是哪個？',
+        options: [
+          { text: '帽子', reason: '錯誤。帽子是帽子{ぼうし}。' },
+          { text: '包包', reason: '錯誤。包包是かばん。' },
+          { text: '眼鏡', reason: '錯誤。眼鏡是眼鏡{めがね}。' },
+          { text: '傘', reason: '正確。傘{かさ}意為傘。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '傘的詞義',
+          analysis: '傘{かさ}意為傘。是日常生活中常用的物品詞彙，讀音只有兩個音節「か・さ」。',
+          relatedRules: ['📖 第4課 單字「傘」'],
+        },
+      },
+
+      // Q5 vocabulary — 第5課 駅
+      {
+        id: 'n5_u1_test_q5',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「駅{えき}」の意味{いみ}はどれですか。',
+        stemZh: '「駅」的意思是哪個？',
+        options: [
+          { text: '車站', reason: '正確。駅{えき}意為車站。' },
+          { text: '醫院', reason: '錯誤。醫院是病院{びょういん}。' },
+          { text: '郵局', reason: '錯誤。郵局是郵便局{ゆうびんきょく}。' },
+          { text: '公園', reason: '錯誤。公園是公園{こうえん}。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '駅的詞義',
+          analysis: '駅{えき}意為車站。日本的交通以鐵路為主，「駅」是最常用的場所詞彙之一。',
+          relatedRules: ['📖 第5課 單字「駅」'],
+        },
+      },
+
+      // Q6 vocabulary — 第6課 好き ⇔ 嫌い
+      {
+        id: 'n5_u1_test_q6',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「好{す}き」の反対語{はんたいご}はどれですか。',
+        stemZh: '「好き」的反義詞是哪個？',
+        options: [
+          { text: '上手{じょうず}', reason: '錯誤。上手意為擅長，不是好き的反義詞。' },
+          { text: '欲{ほ}しい', reason: '錯誤。欲しい意為想要，不是好き的反義詞。' },
+          { text: '面白{おもしろ}い', reason: '錯誤。面白い意為有趣，不是好き的反義詞。' },
+          { text: '嫌{きら}い', reason: '正確。嫌い（討厭）是好き（喜歡）的反義詞。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '好き與嫌い的配對',
+          analysis: '好{す}き（喜歡）⇔嫌{きら}い（討厭）。兩者都是形容動詞，前面的對象用「が」標記。',
+          relatedRules: ['📖 第6課 單字「好き・嫌い」'],
+        },
+      },
+
+      // Q7 vocabulary — 第1課 会社
+      {
+        id: 'n5_u1_test_q7',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「会社{かいしゃ}」の意味{いみ}はどれですか。',
+        stemZh: '「会社」的意思是哪個？',
+        options: [
+          { text: '學校', reason: '錯誤。學校是学校{がっこう}。' },
+          { text: '大學', reason: '錯誤。大學是大学{だいがく}。' },
+          { text: '公司', reason: '正確。会社{かいしゃ}意為公司。' },
+          { text: '國家', reason: '錯誤。國家是国{くに}。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '会社的詞義',
+          analysis: '会社{かいしゃ}意為公司。「会社員{かいしゃいん}」意為公司職員。',
+          relatedRules: ['📖 第1課 單字「会社」'],
+        },
+      },
+
+      // Q8 vocabulary — 第2課 元気
+      {
+        id: 'n5_u1_test_q8',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「お元気{げんき}ですか。」の「元気{げんき}」はどんな意味{いみ}ですか。',
+        stemZh: '「お元気ですか。」中的「元気」是什麼意思？',
+        options: [
+          { text: '天氣', reason: '錯誤。天氣是天気{てんき}。注意「元気」和「天気」讀音相近但意思不同。' },
+          { text: '元氣、精神好', reason: '正確。元気{げんき}意為精神好、健康。' },
+          { text: '什麼', reason: '錯誤。什麼是何{なに}。' },
+          { text: '一起', reason: '錯誤。一起是一緒{いっしょ}。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '元気的詞義',
+          analysis: '元気{げんき}意為精神好、健康。「お元気ですか」是問候對方是否健康的常用語。',
+          relatedRules: ['📖 第2課 單字「元気」'],
+        },
+      },
+
+      // Q9 vocabulary — 第5課 入口 ⇔ 出口
+      {
+        id: 'n5_u1_test_q9',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「入口{いりぐち}」の反対語{はんたいご}はどれですか。',
+        stemZh: '「入口」的反義詞是哪個？',
+        options: [
+          { text: '出口{でぐち}', reason: '正確。入口（入口）⇔出口（出口）。' },
+          { text: '窓{まど}', reason: '錯誤。窓是窗戶，不是入口的反義詞。' },
+          { text: 'ドア', reason: '錯誤。ドア是門，不是入口的反義詞。' },
+          { text: '外{そと}', reason: '錯誤。外是外面，不是入口的反義詞。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '入口和出口的配對',
+          analysis: '入口{いりぐち}⇔出口{でぐち}。「入」＝進入，「出」＝出去，「口」＝出入處。在車站等場所常見這組詞彙。',
+          relatedRules: ['📖 第5課 單字「入口・出口」'],
+        },
+      },
+
+      // Q10 vocabulary — 第3課 新しい ⇔ 古い
+      {
+        id: 'n5_u1_test_q10',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「新{あたら}しい」の反対語{はんたいご}はどれですか。',
+        stemZh: '「新しい」的反義詞是哪個？',
+        options: [
+          { text: '面白{おもしろ}い', reason: '錯誤。面白い意為有趣，不是反義詞。' },
+          { text: '古{ふる}い', reason: '正確。古い（舊的）是新しい（新的）的反義詞。' },
+          { text: '楽{たの}しい', reason: '錯誤。楽しい意為快樂，不是反義詞。' },
+          { text: '多{おお}い', reason: '錯誤。多い意為多的，不是反義詞。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '形容詞反義詞配對',
+          analysis: '新{あたら}しい（新的）⇔古{ふる}い（舊的）是基本的反義詞組合。兩者都是い形容詞。',
+          relatedRules: ['📖 第3課 單字「新しい・古い」'],
+        },
+      },
+
+      // ─── 文法題 Q11–Q20 ───
+
+      // Q11 grammar — 第1課 は
+      {
+        id: 'n5_u1_test_q11',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '田中{たなか}さん＿＿会社{かいしゃ}の人{ひと}です。',
+        stemZh: '田中先生是公司的人。',
+        options: [
+          { text: 'を', reason: '錯誤。「を」是受詞助詞，此處需要主題助詞。' },
+          { text: 'が', reason: '錯誤。描述已知主題時「は」比「が」更自然。' },
+          { text: 'は', reason: '正確。「は」標記句子的主題「田中さん」。' },
+          { text: 'に', reason: '錯誤。「に」是場所或時間助詞，此處不適用。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '主題助詞「は」的用法',
+          analysis: '「は」用來標記句子的主題。「AはBです」是描述身分的基本句型。「田中さんは会社の人です」＝「田中先生是公司的人」。',
+          relatedRules: ['📖 第1課 文法「AはBです」'],
+        },
+      },
+
+      // Q12 grammar — 第2課 か
+      {
+        id: 'n5_u1_test_q12',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '佐藤{さとう}さんは学生{がくせい}です＿＿。（想問對方是不是學生）',
+        stemZh: '佐藤同學是學生嗎？（選擇正確的句尾）',
+        options: [
+          { text: 'ね', reason: '錯誤。「ね」是確認語氣，不是純粹的提問。' },
+          { text: 'か', reason: '正確。句尾加「か」構成疑問句。' },
+          { text: 'よ', reason: '錯誤。「よ」是強調告知，不是提問。' },
+          { text: 'も', reason: '錯誤。「も」是「也」的意思，不放在句尾表疑問。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '疑問助詞「か」',
+          analysis: '句尾加「か」把陳述句變成疑問句。「〜ですか」是最基本的敬體疑問句型。',
+          relatedRules: ['📖 第2課 文法「〜ですか」'],
+        },
+      },
+
+      // Q13 grammar — 第3課 の
+      {
+        id: 'n5_u1_test_q13',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: 'これは山田{やまだ}さん＿＿ノートです。',
+        stemZh: '這是山田同學的筆記本。',
+        options: [
+          { text: 'は', reason: '錯誤。「は」是主題助詞，不表示所有。' },
+          { text: 'も', reason: '錯誤。「も」是「也」的意思，不表示所有。' },
+          { text: 'が', reason: '錯誤。「が」是主格助詞，不表示所有。' },
+          { text: 'の', reason: '正確。「の」連接名詞表示所有格。「AのB」＝「A的B」。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '所有格助詞「の」',
+          analysis: '「の」放在兩個名詞之間表示所屬關係。「山田さんのノート」＝「山田同學的筆記本」。',
+          relatedRules: ['📖 第3課 文法「AのB」'],
+        },
+      },
+
+      // Q14 grammar — 第3課 じゃないです
+      {
+        id: 'n5_u1_test_q14',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: 'これはペン＿＿。鉛筆{えんぴつ}です。',
+        stemZh: '這不是筆。是鉛筆。',
+        options: [
+          { text: 'です', reason: '錯誤。「です」是肯定，但語境需要否定。' },
+          { text: 'ですか', reason: '錯誤。「ですか」是疑問，不是否定。' },
+          { text: 'でした', reason: '錯誤。「でした」是過去肯定。' },
+          { text: 'じゃないです', reason: '正確。「じゃないです」是「です」的否定形。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '否定句型「じゃないです」',
+          analysis: '「です」的否定是「じゃないです」（口語）或「ではありません」（書面語）。用來否定名詞句。',
+          relatedRules: ['📖 第3課 文法「〜じゃないです」'],
+        },
+      },
+
+      // Q15 grammar — 第4課 この/その/あの
+      {
+        id: 'n5_u1_test_q15',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '（手{て}に持{も}っている帽子{ぼうし}について）＿＿帽子{ぼうし}は私{わたし}のです。',
+        stemZh: '（拿著手中的帽子）這頂帽子是我的。',
+        options: [
+          { text: 'この', reason: '正確。「この」＋名詞，指靠近說話者的事物。手中的東西用「この」。' },
+          { text: 'その', reason: '錯誤。「その」指靠近聽者的事物。' },
+          { text: 'あの', reason: '錯誤。「あの」指離雙方都遠的事物。' },
+          { text: 'これ', reason: '錯誤。「これ」是代名詞，不能直接接名詞。應用「この」。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '連體詞「この」的用法',
+          analysis: '修飾名詞時用「この/その/あの」＋名詞。「これ/それ/あれ」是代名詞，獨立使用，不接名詞。',
+          relatedRules: ['📖 第4課 文法「この/その/あの＋名詞」'],
+        },
+      },
+
+      // Q16 grammar — 第5課 があります / がいます
+      {
+        id: 'n5_u1_test_q16',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '図書館{としょかん}の前{まえ}に猫{ねこ}＿＿。',
+        stemZh: '圖書館前面有貓。',
+        options: [
+          { text: 'があります', reason: '錯誤。「あります」用於無生命物體，猫是有生命的動物。' },
+          { text: 'にいます', reason: '錯誤。場所後面已有「に」，主語用「が」不是「に」。' },
+          { text: 'がいます', reason: '正確。猫是有生命的動物，用「がいます」表示存在。' },
+          { text: 'はあります', reason: '錯誤。存在的新資訊用「が」，且猫是有生命物。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '存在動詞「います」用於有生命物',
+          analysis: '有生命物（人、動物）用「います」，無生命物（書、時計等）用「あります」。猫是動物，所以用「がいます」。',
+          relatedRules: ['📖 第5課 文法「場所に〜がいます」'],
+        },
+      },
+
+      // Q17 grammar — 第6課 〜が好きです
+      {
+        id: 'n5_u1_test_q17',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '私{わたし}は音楽{おんがく}＿＿大好{だいす}きです。',
+        stemZh: '我非常喜歡音樂。',
+        options: [
+          { text: 'を', reason: '錯誤。「好き」是形容動詞，喜歡的對象不用「を」。' },
+          { text: 'は', reason: '錯誤。喜歡的對象用「が」而非「は」。' },
+          { text: 'に', reason: '錯誤。「に」不用於「好き」的對象。' },
+          { text: 'が', reason: '正確。「好き」「大好き」前面用「が」標記喜歡的對象。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '「〜が好きです」的助詞搭配',
+          analysis: '「好き」「大好き」「嫌い」等詞前面的對象用「が」標記。常見錯誤是用「を」，但正確的是「が」。',
+          relatedRules: ['📖 第6課 文法「〜のが好きです」'],
+        },
+      },
+
+      // Q18 grammar — 第2課 も
+      {
+        id: 'n5_u1_test_q18',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: 'A：「私{わたし}は台湾{たいわん}です。」B：「私{わたし}＿＿台湾{たいわん}です。」',
+        stemZh: 'A：「我是台灣。」B：「我也是台灣。」',
+        options: [
+          { text: 'は', reason: '錯誤。「は」不能表達「也是」的意思。' },
+          { text: 'も', reason: '正確。「も」替代「は」使用，表示「也」。' },
+          { text: 'の', reason: '錯誤。「の」是所有格，此處不適用。' },
+          { text: 'が', reason: '錯誤。「が」是主格助詞，不表示「也」。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '助詞「も」的用法',
+          analysis: '「も」替代「は」使用，表示「也」。A說他是台灣人，B也是台灣人時用「私も台湾です」。',
+          relatedRules: ['📖 第2課 文法「AもB」'],
+        },
+      },
+
+      // Q19 grammar — 第5課 に
+      {
+        id: 'n5_u1_test_q19',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '銀行{ぎんこう}は駅{えき}の隣{となり}＿＿あります。',
+        stemZh: '銀行在車站旁邊。',
+        options: [
+          { text: 'で', reason: '錯誤。「で」用於動作發生的場所，此處是靜態存在。' },
+          { text: 'を', reason: '錯誤。「を」是受詞助詞，不用於標記場所。' },
+          { text: 'に', reason: '正確。「に」標記靜態存在的場所。「場所にあります」。' },
+          { text: 'が', reason: '錯誤。「が」是主格助詞，不用於標記場所。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '場所助詞「に」',
+          analysis: '靜態存在用「に」。「銀行は駅の隣にあります」＝「銀行在車站旁邊」。注意「に」和「で」的區別：存在用「に」，動作場所用「で」。',
+          relatedRules: ['📖 第5課 文法「〜に」'],
+        },
+      },
+
+      // Q20 grammar — 第6課 〜がほしいです
+      {
+        id: 'n5_u1_test_q20',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '新{あたら}しいカメラ＿＿ほしいです。',
+        stemZh: '想要新的相機。',
+        options: [
+          { text: 'が', reason: '正確。「ほしい」前面用「が」標記想要的對象。' },
+          { text: 'を', reason: '錯誤。「ほしい」是い形容詞，對象用「が」而非「を」。' },
+          { text: 'は', reason: '錯誤。想要的對象用「が」而非「は」。' },
+          { text: 'に', reason: '錯誤。「に」不用於「ほしい」的對象。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '「〜がほしいです」的助詞搭配',
+          analysis: '「〜がほしいです」表示「想要〜」。「ほしい」是い形容詞，前面的對象用「が」標記。常見錯誤是用「を」。',
+          relatedRules: ['📖 第6課 文法「〜がほしいです」'],
+        },
+      },
+    ],
+  },
 ]

@@ -2574,4 +2574,436 @@ export const u3Lessons: LessonDefinition[] = [
       },
     ] as UnifiedQuestion[],
   },
+
+  // ============================================================
+  // 単元テスト: 單元綜合測驗 (15 題 Unit 3 + 5 題 Unit 2 複習)
+  // ============================================================
+  {
+    id: 'n5_u3_test',
+    unitId: 'n5_u3',
+    order: 8,
+    titleJp: '単元{たんげん}テスト',
+    titleZh: '單元綜合測驗',
+    objectives: [
+      '綜合複習第三單元所有文法與單字',
+      '回顧第二單元重點內容',
+    ],
+
+    vocabulary: [],
+    grammarIds: [],
+    grammarSummaries: [],
+    dialogue: [],
+
+    quizQuestions: [
+      // ────────────────────────────────────────
+      // Unit 3 題目 (Q1–Q15)
+      // ────────────────────────────────────────
+
+      // Q1: vocab — い形容詞 (L1) (correctIndex: 2)
+      {
+        id: 'n5_u3_test_q1',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「広{ひろ}い」の反対語{はんたいご}はどれですか。',
+        stemZh: '「広い」（寬）的反義詞是哪個？',
+        options: [
+          { text: '長{なが}い', reason: '錯誤。長い是「長」，概念不同。' },
+          { text: '低{ひく}い', reason: '錯誤。低い是「低」，概念不同。' },
+          { text: '狭{せま}い', reason: '正確。広{ひろ}い（寬）⇔ 狭{せま}い（狹窄）。' },
+          { text: '暗{くら}い', reason: '錯誤。暗い是「暗」，概念不同。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: 'い形容詞反義：広い ⇔ 狭い',
+          analysis: '広{ひろ}い意為「寬敞的」，反義詞是狭{せま}い（狹窄的）。兩者常用於描述空間大小。',
+          relatedRules: ['📖 U3 L1 單字「広い」「狭い」'],
+        },
+      },
+      // Q2: grammar — な形容詞修飾名詞 (L1) (correctIndex: 1)
+      {
+        id: 'n5_u3_test_q2',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '静{しず}か＿＿部屋{へや}で勉強{べんきょう}します。',
+        stemZh: '在安靜的房間裡學習。',
+        options: [
+          { text: 'い', reason: '錯誤。「い」用於い形容詞，「静か」是な形容詞。' },
+          { text: 'な', reason: '正確。な形容詞修飾名詞時需加「な」。' },
+          { text: 'の', reason: '錯誤。「の」不用於な形容詞修飾名詞。' },
+          { text: 'に', reason: '錯誤。「に」用於な形容詞副詞化，此處是修飾名詞。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: 'な形容詞＋な＋名詞',
+          analysis: '「静{しず}か」是な形容詞，修飾名詞時必須加「な」：静かな部屋＝安靜的房間。',
+          relatedRules: ['📖 U3 L1 文法「な形容詞＋な＋名詞」'],
+        },
+      },
+      // Q3: vocab — 天氣 (L2) (correctIndex: 0)
+      {
+        id: 'n5_u3_test_q3',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「涼{すず}しい」の意味{いみ}はどれですか。',
+        stemZh: '「涼しい」的意思是哪個？',
+        options: [
+          { text: '涼爽', reason: '正確。涼{すず}しい意為「涼爽的」。' },
+          { text: '寒冷', reason: '錯誤。寒冷是寒{さむ}い。' },
+          { text: '炎熱', reason: '錯誤。炎熱是暑{あつ}い。' },
+          { text: '溫暖', reason: '錯誤。溫暖是暖{あたた}かい。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '天氣形容詞「涼しい」',
+          analysis: '涼{すず}しい意為涼爽的，常用於描述秋天的天氣。四季氣溫：暑{あつ}い（熱）、涼{すず}しい（涼爽）、暖{あたた}かい（溫暖）、寒{さむ}い（冷）。',
+          relatedRules: ['📖 U3 L2 單字「涼しい」'],
+        },
+      },
+      // Q4: grammar — すぎる (L2) (correctIndex: 3)
+      {
+        id: 'n5_u3_test_q4',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: 'この荷物{にもつ}は重{おも}＿＿。持{も}てません。',
+        stemZh: '這個行李太重了。拿不動。',
+        options: [
+          { text: 'くない', reason: '錯誤。「くない」是否定形，與後文「拿不動」矛盾。' },
+          { text: 'くなる', reason: '錯誤。「くなる」表示「變得〜」，不是「太〜」。' },
+          { text: 'いです', reason: '錯誤。單純描述「重」，但缺少「太〜」的程度感。' },
+          { text: 'すぎます', reason: '正確。「重{おも}すぎる」＝「太重了」。い形容詞去い＋すぎる。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '「〜すぎる」表示過度',
+          analysis: 'い形容詞去掉「い」後加「すぎる」表示「太〜了」。重{おも}い→重すぎる＝太重了。',
+          relatedRules: ['📖 U3 L2 文法「〜すぎる」'],
+        },
+      },
+      // Q5: grammar — AはBより (L3) (correctIndex: 1)
+      {
+        id: 'n5_u3_test_q5',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '夏{なつ}＿＿冬{ふゆ}より暑{あつ}いです。',
+        stemZh: '夏天比冬天熱。',
+        options: [
+          { text: 'が', reason: '錯誤。「が」不用於此比較句型。' },
+          { text: 'は', reason: '正確。「AはBより〜」＝A比B更〜。' },
+          { text: 'を', reason: '錯誤。「を」是受詞助詞，此處不適用。' },
+          { text: 'も', reason: '錯誤。「も」是「也」的意思，此處不適用。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '比較句型「AはBより〜」',
+          analysis: '「AはBより〜」表示A比B更〜。「夏{なつ}は冬{ふゆ}より暑{あつ}い」＝夏天比冬天熱。',
+          relatedRules: ['📖 U3 L3 文法「AはBより〜」'],
+        },
+      },
+      // Q6: vocab — 顏色 (L3) (correctIndex: 2)
+      {
+        id: 'n5_u3_test_q6',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '雪{ゆき}は何色{なにいろ}ですか。',
+        stemZh: '雪是什麼顏色的？',
+        options: [
+          { text: '赤{あか}い', reason: '錯誤。赤い是紅色。' },
+          { text: '青{あお}い', reason: '錯誤。青い是藍色。' },
+          { text: '白{しろ}い', reason: '正確。雪是白{しろ}い（白色的）。' },
+          { text: '黒{くろ}い', reason: '錯誤。黒い是黑色。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '顏色詞彙：白い',
+          analysis: '雪（ゆき）是白{しろ}い（白色的）。日文中基本顏色的い形容詞有：赤{あか}い、青{あお}い、白{しろ}い、黒{くろ}い、黄色{きいろ}い。',
+          relatedRules: ['📖 U3 L3 單字「白い」'],
+        },
+      },
+      // Q7: grammar — 一番 (L4) (correctIndex: 0)
+      {
+        id: 'n5_u3_test_q7',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: 'この店{みせ}で＿＿美味{おい}しい料理{りょうり}は何{なん}ですか。',
+        stemZh: '這間店最好吃的菜是什麼？',
+        options: [
+          { text: '一番{いちばん}', reason: '正確。「一番」表示最高級「最〜」。' },
+          { text: 'とても', reason: '錯誤。「とても」是「非常」，不是「最」。' },
+          { text: 'あまり', reason: '錯誤。「あまり」是「不太〜」，常與否定搭配。' },
+          { text: 'すこし', reason: '錯誤。「すこし」是「稍微」。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '最高級「一番」',
+          analysis: '「〜で一番{いちばん}〜」表示「在〜中最〜」。「この店{みせ}で一番{いちばん}美味{おい}しい」＝這間店最好吃的。',
+          relatedRules: ['📖 U3 L4 文法「〜で一番〜」'],
+        },
+      },
+      // Q8: vocab — 飲食器具 (L4) (correctIndex: 3)
+      {
+        id: 'n5_u3_test_q8',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「箸{はし}」の意味{いみ}はどれですか。',
+        stemZh: '「箸」的意思是哪個？',
+        options: [
+          { text: '湯匙', reason: '錯誤。湯匙是スプーン。' },
+          { text: '叉子', reason: '錯誤。叉子是フォーク。' },
+          { text: '小刀', reason: '錯誤。小刀是ナイフ。' },
+          { text: '筷子', reason: '正確。箸{はし}意為筷子。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '餐具詞彙「箸」',
+          analysis: '箸{はし}是筷子。日式餐具包括：箸（筷子）、茶碗{ちゃわん}（飯碗）、お皿{さら}（盤子）。西式餐具則有フォーク（叉子）、スプーン（湯匙）、ナイフ（小刀）。',
+          relatedRules: ['📖 U3 L4 單字「箸」'],
+        },
+      },
+      // Q9: grammar — の中で〜が一番 (L5) (correctIndex: 1)
+      {
+        id: 'n5_u3_test_q9',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '果物{くだもの}の中{なか}＿＿りんごが一番{いちばん}好{す}きです。',
+        stemZh: '水果之中最喜歡蘋果。',
+        options: [
+          { text: 'は', reason: '錯誤。此句型需要「で」表示範圍。' },
+          { text: 'で', reason: '正確。「〜の中{なか}で〜が一番{いちばん}」表示在某範圍中最〜。' },
+          { text: 'に', reason: '錯誤。「に」不用於此句型。' },
+          { text: 'を', reason: '錯誤。「を」是受詞助詞，此處不適用。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「〜の中で〜が一番」句型',
+          analysis: '「〜の中{なか}で〜が一番{いちばん}〜」表示「在〜之中，〜是最〜的」。「で」限定範圍。',
+          relatedRules: ['📖 U3 L5 文法「〜の中で〜が一番〜」'],
+        },
+      },
+      // Q10: vocab — 身體 (L5) (correctIndex: 0)
+      {
+        id: 'n5_u3_test_q10',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「お腹{なか}が痛{いた}い」はどういう意味{いみ}ですか。',
+        stemZh: '「お腹が痛い」是什麼意思？',
+        options: [
+          { text: '肚子痛', reason: '正確。お腹{なか}（肚子）＋痛{いた}い（痛的）＝肚子痛。' },
+          { text: '頭痛', reason: '錯誤。頭痛是頭{あたま}が痛い。' },
+          { text: '牙痛', reason: '錯誤。牙痛是歯{は}が痛い。' },
+          { text: '腳痛', reason: '錯誤。腳痛是足{あし}が痛い。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '身體不適的表達',
+          analysis: '「〜が痛{いた}い」表示某處疼痛。お腹{なか}＝肚子、頭{あたま}＝頭、歯{は}＝牙齒、足{あし}＝腳。',
+          relatedRules: ['📖 U3 L5 單字「お腹」「痛い」'],
+        },
+      },
+      // Q11: grammar — だけ (L5) (correctIndex: 2)
+      {
+        id: 'n5_u3_test_q11',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '薬{くすり}＿＿飲{の}んでください。他{ほか}のものは要{い}りません。',
+        stemZh: '只要吃藥就好。其他的不需要。',
+        options: [
+          { text: 'も', reason: '錯誤。「も」表示「也」，不表示限定。' },
+          { text: 'は', reason: '錯誤。「は」是主題助詞，無法表達「只有」。' },
+          { text: 'だけ', reason: '正確。「〜だけ」表示「只有〜」。' },
+          { text: 'しか', reason: '錯誤。「しか」後面需要否定形，此處用肯定的「飲んでください」。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '限定助詞「だけ」',
+          analysis: '「〜だけ」表示「只有〜」。「薬{くすり}だけ飲{の}んでください」＝「只要吃藥就好」。「だけ」後面可接肯定或否定。',
+          relatedRules: ['📖 U3 L5 文法「〜だけ」'],
+        },
+      },
+      // Q12: vocab — 形狀性質 (L6) (correctIndex: 1)
+      {
+        id: 'n5_u3_test_q12',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「軽{かる}い」の反対語{はんたいご}はどれですか。',
+        stemZh: '「軽い」（輕）的反義詞是哪個？',
+        options: [
+          { text: '薄{うす}い', reason: '錯誤。薄い是「薄」，概念不同。' },
+          { text: '重{おも}い', reason: '正確。軽{かる}い（輕）⇔ 重{おも}い（重）。' },
+          { text: '厚{あつ}い', reason: '錯誤。厚い是「厚」，概念不同。' },
+          { text: '汚{きたな}い', reason: '錯誤。汚い是「髒」，概念不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: 'い形容詞反義：軽い ⇔ 重い',
+          analysis: '軽{かる}い意為輕的，反義詞是重{おも}い（重的）。例如：この箱{はこ}は軽{かる}い（這個箱子很輕）。',
+          relatedRules: ['📖 U3 L6 單字「軽い」「重い」'],
+        },
+      },
+      // Q13: grammar — でしょう (L6) (correctIndex: 3)
+      {
+        id: 'n5_u3_test_q13',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '明日{あした}は晴{は}れる＿＿。天気予報{てんきよほう}で言{い}っていました。',
+        stemZh: '明天大概會放晴吧。天氣預報有說。',
+        options: [
+          { text: 'ます', reason: '錯誤。「ます」是確定的敬體，缺少推測語氣。' },
+          { text: 'ません', reason: '錯誤。「ません」是否定形。' },
+          { text: 'だろう', reason: '錯誤。「だろう」是隨意推測，此處用的是禮貌語體。' },
+          { text: 'でしょう', reason: '正確。「〜でしょう」表示禮貌的推測「大概〜吧」。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '禮貌推測「〜でしょう」',
+          analysis: '「〜でしょう」表示禮貌的推測「大概〜吧」。動詞辭書形＋でしょう。「晴{は}れるでしょう」＝大概會放晴吧。「だろう」是比較隨意的說法。',
+          relatedRules: ['📖 U3 L6 文法「〜でしょう」'],
+        },
+      },
+      // Q14: grammar — なあ (L7) (correctIndex: 0)
+      {
+        id: 'n5_u3_test_q14',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '宿題{しゅくだい}が多{おお}い＿＿。全部{ぜんぶ}で二十問{にじゅうもん}もあるよ。',
+        stemZh: '作業好多啊。全部有二十題呢。',
+        options: [
+          { text: 'なあ', reason: '正確。「〜なあ」表示自言自語的感嘆。' },
+          { text: 'ね', reason: '錯誤。「ね」偏向與對方互動確認，此處是自言自語。' },
+          { text: 'よ', reason: '錯誤。「よ」是告知對方新資訊，此處是感嘆。' },
+          { text: 'か', reason: '錯誤。「か」是疑問助詞。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '感嘆語氣「〜なあ」',
+          analysis: '「〜なあ」表示自言自語的感嘆。「多{おお}いなあ」＝好多啊。與「ね」不同，「なあ」偏向自己的感受。',
+          relatedRules: ['📖 U3 L7 文法「〜なあ」'],
+        },
+      },
+      // Q15: grammar — くなる (L2) + 綜合 (correctIndex: 2)
+      {
+        id: 'n5_u3_test_q15',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '秋{あき}になると、涼{すず}し＿＿なります。',
+        stemZh: '到了秋天就會變涼爽。',
+        options: [
+          { text: 'い', reason: '錯誤。「い」是原形結尾，接「なる」時需要變化。' },
+          { text: 'に', reason: '錯誤。「に」用於な形容詞和名詞接「なる」。' },
+          { text: 'く', reason: '正確。い形容詞去「い」加「く」再接「なる」。涼{すず}しい→涼しくなる。' },
+          { text: 'さ', reason: '錯誤。「さ」用於名詞化，不接「なる」。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: 'い形容詞＋くなる（變化）',
+          analysis: 'い形容詞接「なる」（變得）時要去「い」加「く」。涼{すず}しい→涼しくなる＝變涼爽。な形容詞則用「〜になる」。',
+          relatedRules: ['📖 U3 L2 文法「〜くなる / 〜になる」'],
+        },
+      },
+
+      // ────────────────────────────────────────
+      // Unit 2 複習題目 (Q16–Q20)
+      // ────────────────────────────────────────
+
+      // Q16: grammar — 受詞助詞を (U2 L1) (correctIndex: 1)
+      {
+        id: 'n5_u3_test_q16',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '毎朝{まいあさ}コーヒー＿＿飲{の}みます。',
+        stemZh: '每天早上喝咖啡。',
+        options: [
+          { text: 'が', reason: '錯誤。「が」是主格助詞，此處需要受詞助詞。' },
+          { text: 'を', reason: '正確。「を」標記動作的直接受詞。「コーヒーを飲む」＝喝咖啡。' },
+          { text: 'で', reason: '錯誤。「で」是手段/場所助詞，此處不適用。' },
+          { text: 'に', reason: '錯誤。「に」是方向/時間助詞，此處不適用。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '【複習 U2】受詞助詞「を」',
+          analysis: '「を」放在名詞後面，標記動詞的直接受詞。「コーヒーを飲{の}む」＝喝咖啡。',
+          relatedRules: ['📖 U2 L1 文法「〜を＋動詞」'],
+        },
+      },
+      // Q17: vocab — 時間表達 (U2 L3) (correctIndex: 3)
+      {
+        id: 'n5_u3_test_q17',
+        category: 'vocabulary' as const,
+        level: 'N5' as const,
+        stem: '「明後日{あさって}」の意味{いみ}はどれですか。',
+        stemZh: '「明後日」的意思是哪個？',
+        options: [
+          { text: '昨天', reason: '錯誤。昨天是昨日{きのう}。' },
+          { text: '前天', reason: '錯誤。前天是一昨日{おととい}。' },
+          { text: '明天', reason: '錯誤。明天是明日{あした}。' },
+          { text: '後天', reason: '正確。明後日{あさって}意為後天。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '【複習 U2】日期詞彙「明後日」',
+          analysis: '日期序列：一昨日{おととい}（前天）→ 昨日{きのう}（昨天）→ 今日{きょう}（今天）→ 明日{あした}（明天）→ 明後日{あさって}（後天）。',
+          relatedRules: ['📖 U2 L3 單字「明後日」'],
+        },
+      },
+      // Q18: grammar — たいです (U2 L4) (correctIndex: 0)
+      {
+        id: 'n5_u3_test_q18',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '新{あたら}しい靴{くつ}を買{か}い＿＿です。',
+        stemZh: '想買新鞋。',
+        options: [
+          { text: 'たい', reason: '正確。「動詞ます形去ます＋たい」表示「想要做〜」。' },
+          { text: 'ます', reason: '錯誤。「ます」是敬體陳述，不是願望。' },
+          { text: 'ません', reason: '錯誤。「ません」是否定形。' },
+          { text: 'ましょう', reason: '錯誤。「ましょう」是提議「一起做〜吧」。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '【複習 U2】願望句型「〜たい」',
+          analysis: '「〜たいです」表示「想要做〜」。動詞ます形去掉「ます」加「たい」。買{か}います→買いたい＝想買。',
+          relatedRules: ['📖 U2 L4 文法「〜たいです」'],
+        },
+      },
+      // Q19: grammar — ましょう (U2 L5) (correctIndex: 2)
+      {
+        id: 'n5_u3_test_q19',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '一緒{いっしょ}に公園{こうえん}に行{い}き＿＿。',
+        stemZh: '一起去公園吧。',
+        options: [
+          { text: 'ます', reason: '錯誤。「ます」是陳述，不是提議。' },
+          { text: 'ません', reason: '錯誤。「ません」是否定形。' },
+          { text: 'ましょう', reason: '正確。「〜ましょう」表示提議「一起做〜吧」。' },
+          { text: 'ました', reason: '錯誤。「ました」是過去式。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '【複習 U2】提議句型「〜ましょう」',
+          analysis: '「〜ましょう」表示「一起做〜吧」的提議。「行{い}きましょう」＝一起去吧。常與「一緒{いっしょ}に」搭配使用。',
+          relatedRules: ['📖 U2 L5 文法「〜ましょう」'],
+        },
+      },
+      // Q20: grammar — つもり (U2 L6) (correctIndex: 1)
+      {
+        id: 'n5_u3_test_q20',
+        category: 'grammar' as const,
+        level: 'N5' as const,
+        stem: '週末{しゅうまつ}は山{やま}に行{い}く＿＿です。',
+        stemZh: '週末打算去山上。',
+        options: [
+          { text: 'たい', reason: '錯誤。「たい」表示願望「想做〜」，不是計畫。' },
+          { text: 'つもり', reason: '正確。「〜つもりです」表示「打算做〜」的計畫或意圖。' },
+          { text: 'ましょう', reason: '錯誤。「ましょう」是提議，不是陳述計畫。' },
+          { text: 'ながら', reason: '錯誤。「ながら」表示同時進行兩個動作。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '【複習 U2】意向句型「〜つもり」',
+          analysis: '「動詞辭書形＋つもりです」表示「打算做〜」的計畫。「行{い}くつもりです」＝打算去。表示已有明確意向。',
+          relatedRules: ['📖 U2 L6 文法「〜つもりです」'],
+        },
+      },
+    ] as UnifiedQuestion[],
+  },
 ]

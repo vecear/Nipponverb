@@ -2503,4 +2503,481 @@ export const u5Lessons: LessonDefinition[] = [
       },
     ],
   },
+
+  // ━━━ 單元綜合測驗 ━━━
+  {
+    id: 'n5_u5_test',
+    unitId: 'n5_u5',
+    order: 8,
+    titleJp: '単元テスト',
+    titleZh: '單元綜合測驗',
+    objectives: [
+      '綜合複習第五單元所有文法與單字',
+      '複習第四單元重點內容',
+    ],
+
+    vocabulary: [],
+    grammarIds: [],
+    grammarSummaries: [],
+    dialogue: [],
+
+    quizQuestions: [
+      // ════════════════════════════════════════
+      // Unit 5 複習（15 題）
+      // ════════════════════════════════════════
+
+      // ── Q1: L1 てもいい（許可）──
+      {
+        id: 'n5_u5_test_q1',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['temo-ii'],
+        stem: 'すみません、ここで荷物{にもつ}を置{お}い＿＿いいですか。',
+        stemZh: '不好意思，可以在這裡放行李嗎？',
+        options: [
+          { text: 'ても', reason: '正確。「動詞て形 + もいいですか」表達詢問許可。' },
+          { text: 'ては', reason: '「ては」接「いけない」表禁止，不接「いいですか」。' },
+          { text: 'たら', reason: '「たら」是假定形，不用於許可表達。' },
+          { text: 'ので', reason: '「ので」表原因，不用於許可表達。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '「てもいい」表達許可',
+          analysis: '「動詞て形 + もいいですか」用於詢問許可。「置く」→「置いて」→「置いてもいいですか」。',
+          relatedRules: ['📖 U5 L1 文法「てもいいです」'],
+        },
+      },
+
+      // ── Q2: L1 てはいけない（禁止）──
+      {
+        id: 'n5_u5_test_q2',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['te-wa-ikenai'],
+        stem: 'この病院{びょういん}では走{はし}っ＿＿いけません。',
+        stemZh: '在這間醫院不可以跑。',
+        options: [
+          { text: 'ても', reason: '「ても」接「いいですか」表許可，不接「いけません」。' },
+          { text: 'たら', reason: '「たら」是假定形，不用於禁止表達。' },
+          { text: 'ては', reason: '正確。「動詞て形 + はいけません」表禁止。' },
+          { text: 'てから', reason: '「てから」表示先後順序，不用於禁止。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「てはいけない」表達禁止',
+          analysis: '「動詞て形 + はいけません」= 不可以做～。「走る」→「走って」→「走ってはいけません」。',
+          relatedRules: ['📖 U5 L1 文法「てはいけません」'],
+        },
+      },
+
+      // ── Q3: L1 單字（場所）──
+      {
+        id: 'n5_u5_test_q3',
+        category: 'vocabulary',
+        level: 'N5',
+        stem: '「としょかん」を漢字{かんじ}で書{か}くとどれですか。',
+        stemZh: '「としょかん」用漢字寫是哪個？',
+        options: [
+          { text: '映画館', reason: '「映画館（えいがかん）」是電影院。' },
+          { text: '病院', reason: '「病院（びょういん）」是醫院。' },
+          { text: '教室', reason: '「教室（きょうしつ）」是教室。' },
+          { text: '図書館', reason: '正確。「図書館（としょかん）」= 圖書館。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '場所名稱的漢字',
+          analysis: '「図書館（としょかん）」= 圖書館。注意「図」的讀法和「館（かん）」的共通用法。',
+          relatedRules: ['📖 U5 L1 單字「図書館」'],
+        },
+      },
+
+      // ── Q4: L2 ないといけない（義務）──
+      {
+        id: 'n5_u5_test_q4',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['naito-ikenai'],
+        stem: '明日{あした}テストがあるから、勉強{べんきょう}し＿＿いけない。',
+        stemZh: '因為明天有考試，所以必須讀書。',
+        options: [
+          { text: 'ては', reason: '「ては」接「いけない」是禁止，不是義務。' },
+          { text: 'なくちゃ', reason: '「なくちゃ」後面不再接「いけない」，單獨使用。' },
+          { text: 'ないと', reason: '正確。「ないといけない」= 必須做～。' },
+          { text: 'なくても', reason: '「なくてもいい」是免除義務，意思相反。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「ないといけない」表達義務',
+          analysis: '「動詞ない形 → ないと + いけない」= 必須做～。「勉強する」→「勉強しない」→「勉強しないといけない」。',
+          relatedRules: ['📖 U5 L2 文法「ないといけない」'],
+        },
+      },
+
+      // ── Q5: L2 なくちゃ（口語義務）──
+      {
+        id: 'n5_u5_test_q5',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['nakucha'],
+        stem: 'もう遅{おそ}い！早{はや}く準備{じゅんび}し＿＿。',
+        stemZh: '已經很晚了！得趕快準備。',
+        options: [
+          { text: 'ないで', reason: '「ないで」是「不做～地」，不是義務。' },
+          { text: 'なくてもいい', reason: '「なくてもいい」是免除義務，意思相反。' },
+          { text: 'ては', reason: '「ては」接「いけない」才完整，且是禁止。' },
+          { text: 'なくちゃ', reason: '正確。「なくちゃ」= 必須（口語）。「しなくちゃ」= 得做。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '口語義務表達「なくちゃ」',
+          analysis: '「なくちゃ」是「なくてはいけない」的口語縮約。可單獨使用，後面省略「いけない」。',
+          relatedRules: ['📖 U5 L2 文法「なくちゃ」'],
+        },
+      },
+
+      // ── Q6: L3 から vs ので ──
+      {
+        id: 'n5_u5_test_q6',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['kara', 'node'],
+        stem: '電車{でんしゃ}が遅{おく}れた＿＿、会議{かいぎ}に間{ま}に合{あ}いませんでした。',
+        stemZh: '因為電車誤點，所以沒趕上會議。',
+        options: [
+          { text: 'ので', reason: '正確。「普通形 + ので」表委婉的因果關係。' },
+          { text: 'けど', reason: '「けど」是轉折「雖然」，不是因果。' },
+          { text: 'のに', reason: '「のに」是「明明～卻」，語意不合。' },
+          { text: 'が', reason: '「が」接在丁寧體後表轉折，不是因果。' },
+        ],
+        correctIndex: 0,
+        explanation: {
+          keyPoint: '「ので」表達因果關係',
+          analysis: '「ので」比「から」更委婉禮貌。前面接普通形。「遅れた＋ので」= 因為遲了。',
+          comparisons: ['から：較直接，主觀原因', 'ので：較委婉，客觀原因'],
+          relatedRules: ['📖 U5 L3 文法「ので」「から」'],
+        },
+      },
+
+      // ── Q7: L3 單字 ──
+      {
+        id: 'n5_u5_test_q7',
+        category: 'vocabulary',
+        level: 'N5',
+        stem: '「おくれる」はどういう意味{いみ}ですか。',
+        stemZh: '「おくれる」是什麼意思？',
+        options: [
+          { text: '來得及', reason: '「來得及」是「間に合う（まにあう）」。' },
+          { text: '遲到', reason: '正確。「遅れる（おくれる）」= 遲到。' },
+          { text: '結束', reason: '「結束」是「終わる（おわる）」。' },
+          { text: '修理', reason: '「修理」是「直す（なおす）」。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「遅れる」的意思',
+          analysis: '「遅れる（おくれる）」= 遲到、延遲。反義：「間に合う（まにあう）」= 來得及。',
+          comparisons: ['遅れる（遲到）⇔ 間に合う（來得及）'],
+          relatedRules: ['📖 U5 L3 單字「遅れる」'],
+        },
+      },
+
+      // ── Q8: L4 んです（說明原因）──
+      {
+        id: 'n5_u5_test_q8',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['ndesu'],
+        stem: 'A：どうしましたか。\nB：お腹{なか}が痛{いた}い＿＿。',
+        stemZh: 'A：怎麼了？\nB：（其實是）肚子痛。',
+        options: [
+          { text: 'です', reason: '「です」只是一般敘述，沒有說明背景的語感。' },
+          { text: 'んです', reason: '正確。「んです」用於回應對方的疑問，說明原因或背景。' },
+          { text: 'けど', reason: '「けど」是轉折，前面需接完整句。' },
+          { text: 'から', reason: '「から」用於表原因後接結論，語境不同。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「んです」說明原因或背景',
+          analysis: '回應「どうしましたか」時，用「んです」說明背景。い形容詞直接加「んです」。',
+          relatedRules: ['📖 U5 L4 文法「んです」'],
+        },
+      },
+
+      // ── Q9: L4 でも（轉折）──
+      {
+        id: 'n5_u5_test_q9',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['demo'],
+        stem: '風邪{かぜ}を引{ひ}きました。＿＿、明日{あした}は学校{がっこう}に行{い}きます。',
+        stemZh: '感冒了。___，明天還是會去學校。',
+        options: [
+          { text: 'それから', reason: '「それから」是「然後」，不是轉折。' },
+          { text: 'ので', reason: '「ので」是原因，不是轉折。' },
+          { text: 'でも', reason: '正確。「でも」放在句首表示轉折「但是」。' },
+          { text: 'から', reason: '「から」是原因，不是轉折。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「でも」的句首轉折用法',
+          analysis: '「でも」放在兩個句子之間表示「但是」。前句和後句意思相反或出乎意料。',
+          comparisons: ['でも：口語，放句首', 'しかし：書面語，放句首', 'けど：接在句尾'],
+          relatedRules: ['📖 U5 L4 文法「でも」'],
+        },
+      },
+
+      // ── Q10: L5 けれども vs しかし vs が ──
+      {
+        id: 'n5_u5_test_q10',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['keredo-mo', 'shikashi', 'ga'],
+        stem: '試験{しけん}は難{むずか}しかったです。＿＿、合格{ごうかく}しました。',
+        stemZh: '考試很難。___，通過了。',
+        options: [
+          { text: 'ので', reason: '「ので」是原因，不是轉折。' },
+          { text: 'しかし', reason: '正確。「しかし」是書面語的轉折「然而」，放在句首。' },
+          { text: 'それから', reason: '「それから」是「然後」，表順序，不是轉折。' },
+          { text: 'から', reason: '「から」是原因，不是轉折。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「しかし」的書面轉折用法',
+          analysis: '「しかし」= 然而，書面語。放在第二個句子的開頭，表示與前句相反的結果。',
+          comparisons: ['しかし：書面語', 'でも：口語', 'けれども：正式口語'],
+          relatedRules: ['📖 U5 L5 文法「しかし」'],
+        },
+      },
+
+      // ── Q11: L5 單字（感情形容詞）──
+      {
+        id: 'n5_u5_test_q11',
+        category: 'vocabulary',
+        level: 'N5',
+        stem: '友達{ともだち}が引{ひ}っ越{こ}して＿＿です。',
+        stemZh: '朋友搬走了，覺得___。',
+        options: [
+          { text: '怖い', reason: '「怖い（こわい）」是害怕，不合語境。' },
+          { text: '悔しい', reason: '「悔しい（くやしい）」是不甘心，不合語境。' },
+          { text: '恥ずかしい', reason: '「恥ずかしい（はずかしい）」是丟臉，不合語境。' },
+          { text: '寂しい', reason: '正確。「寂しい（さびしい）」= 寂寞。朋友搬走會覺得寂寞。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '感情形容詞的區分',
+          analysis: '「寂しい（さびしい）」= 寂寞、孤單。離別的場景常用此詞。',
+          comparisons: ['寂しい（寂寞）', '悲しい（悲傷）', '懐かしい（懷念）'],
+          relatedRules: ['📖 U5 L5 單字「寂しい」'],
+        },
+      },
+
+      // ── Q12: L6 なくてもいい（免除義務）──
+      {
+        id: 'n5_u5_test_q12',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['nakutemo-ii'],
+        stem: '明日{あした}は休{やす}みだから、早{はや}く起{お}き＿＿いいですよ。',
+        stemZh: '明天放假，所以不早起也可以喔。',
+        options: [
+          { text: 'ても', reason: '「ても」接在動詞て形後面表許可，但語境要求「不做也可以」。' },
+          { text: 'ないと', reason: '「ないといけない」是義務表達，意思相反。' },
+          { text: 'なくても', reason: '正確。「動詞ない形 → なくてもいい」= 不做也可以。' },
+          { text: 'なくては', reason: '「なくてはいけない」是義務表達，意思相反。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「なくてもいい」免除義務',
+          analysis: '「起きる」→「起きない」→「起きなくてもいい」= 不起也可以。表示不需要做某事。',
+          comparisons: ['なくてもいい（不做也可以）⇔ なくてはいけない（必須做）'],
+          relatedRules: ['📖 U5 L6 文法「なくてもいい」'],
+        },
+      },
+
+      // ── Q13: L6 ほうがいい（建議）──
+      {
+        id: 'n5_u5_test_q13',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['hou-ga-ii'],
+        stem: '体{からだ}の調子{ちょうし}が悪{わる}いなら、病院{びょういん}に行{い}っ＿＿ほうがいいですよ。',
+        stemZh: '如果身體不舒服，最好去醫院喔。',
+        options: [
+          { text: 'て', reason: '「行って」不直接接「ほうがいい」，需要た形。' },
+          { text: 'た', reason: '正確。「動詞た形 + ほうがいい」= 最好做～。「行った＋ほうがいい」。' },
+          { text: 'ない', reason: '「行かないほうがいい」= 最好不要去，意思不同。而且接法錯誤。' },
+          { text: 'ている', reason: '「行っている」是持續狀態，不直接接「ほうがいい」。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「た形＋ほうがいい」的建議用法',
+          analysis: '肯定建議用「動詞た形 + ほうがいい」。「行く」→「行った」→「行ったほうがいい」= 最好去。',
+          commonMistakes: ['× 行くほうがいい → ○ 行ったほうがいい'],
+          relatedRules: ['📖 U5 L6 文法「ほうがいい」'],
+        },
+      },
+
+      // ── Q14: L7 ないで（附帶狀態）──
+      {
+        id: 'n5_u5_test_q14',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['naide'],
+        stem: '傘{かさ}を持{も}た＿＿出{で}かけました。',
+        stemZh: '沒帶傘就出門了。',
+        options: [
+          { text: 'なくて', reason: '「なくて」是原因用法的接續，不表「沒做就」的狀態。' },
+          { text: 'ないで', reason: '正確。「ないで」= 沒做～就。「持たないで出かけた」= 沒帶就出門了。' },
+          { text: 'なくても', reason: '「なくてもいい」是免除義務，語意不合。' },
+          { text: 'ないと', reason: '「ないといけない」是義務，語意不合。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「ないで」表附帶狀態',
+          analysis: '「動詞ない形 → ないで」= 沒做～地、沒做～就。「持つ」→「持たない」→「持たないで」。',
+          comparisons: ['ないで（沒做～就）', 'ないでください（請不要）'],
+          relatedRules: ['📖 U5 L7 文法「ないで」'],
+        },
+      },
+
+      // ── Q15: L7 にする（選擇決定）──
+      {
+        id: 'n5_u5_test_q15',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['ni-suru'],
+        stem: '飲{の}み物{もの}は何{なに}にしますか。\n——紅茶{こうちゃ}＿＿します。',
+        stemZh: '飲料要什麼？\n——我要紅茶。',
+        options: [
+          { text: 'で', reason: '「で」是場所或方式助詞，不用於「にする」。' },
+          { text: 'を', reason: '「を」是受詞助詞，不用於「にする」的選擇表達。' },
+          { text: 'が', reason: '「が」是主詞助詞，不用於「にする」的選擇表達。' },
+          { text: 'に', reason: '正確。「名詞 + にする」= 決定選～。「紅茶にします」= 我要紅茶。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '「にする」表達選擇決定',
+          analysis: '「名詞 + にする」= 決定選某個東西。常用於點餐或選擇場景。',
+          relatedRules: ['📖 U5 L7 文法「にする」'],
+        },
+      },
+
+      // ════════════════════════════════════════
+      // Unit 4 複習（5 題）
+      // ════════════════════════════════════════
+
+      // ── Q16: U4 L1 てください ──
+      {
+        id: 'n5_u5_test_q16',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['te-kudasai', 'review-u4'],
+        stem: 'ドアを＿＿てください。寒{さむ}いですから。',
+        stemZh: '請＿＿門。因為很冷。',
+        options: [
+          { text: '開け', reason: '開門會更冷，意思不合。' },
+          { text: '押し', reason: '「押す」是推，不是關門。' },
+          { text: '閉め', reason: '正確。因為冷所以關門。「閉める」→「閉めて」→「閉めてください」。' },
+          { text: '消し', reason: '「消す」是擦掉或關燈，不用於門。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「てください」與語境理解',
+          analysis: '「寒いから」= 因為冷，所以應該是關門。「閉める」→「閉めてください」= 請關門。',
+          comparisons: ['開ける（開）⇔ 閉める（關）', '門窗：開ける / 閉める', '電燈：つける / 消す'],
+          relatedRules: ['📖 U4 L1 文法「てください」'],
+        },
+      },
+
+      // ── Q17: U4 L2 ている（進行・持續）──
+      {
+        id: 'n5_u5_test_q17',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['te-iru', 'review-u4'],
+        stem: '兄{あに}は大阪{おおさか}の銀行{ぎんこう}に＿＿います。',
+        stemZh: '哥哥在大阪的銀行任職。',
+        options: [
+          { text: '住んで', reason: '「住んでいる」是居住，不是任職。' },
+          { text: '入って', reason: '「入っている」是進入的狀態，不是任職。' },
+          { text: '働いて', reason: '「働いている」是在工作，但「銀行に」要用「勤めている」。' },
+          { text: '勤めて', reason: '正確。「勤める（つとめる）」= 任職。「銀行に勤めています」= 在銀行工作。' },
+        ],
+        correctIndex: 3,
+        explanation: {
+          keyPoint: '「ている」表持續狀態＋「勤める」',
+          analysis: '「勤める（つとめる）」= 任職於某處。用「〜に勤めている」表示持續任職的狀態。',
+          comparisons: ['働く：泛指工作', '勤める：任職於某單位'],
+          relatedRules: ['📖 U4 L2 文法「ている」', '📖 U4 L2 單字「勤める」'],
+        },
+      },
+
+      // ── Q18: U4 L4 てから（先後順序）──
+      {
+        id: 'n5_u5_test_q18',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['te-kara', 'review-u4'],
+        stem: '手{て}を洗{あら}っ＿＿、ご飯{はん}を食{た}べてください。',
+        stemZh: '洗完手之後再吃飯。',
+        options: [
+          { text: 'ても', reason: '「ても」是許可表達，不是先後順序。' },
+          { text: 'てから', reason: '正確。「動詞て形 + から」= 做完～之後。「洗ってから」= 洗完之後。' },
+          { text: 'ないで', reason: '「ないで」是「沒做就」，意思相反。' },
+          { text: 'ては', reason: '「ては」接「いけない」表禁止，不是先後順序。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「てから」表先後順序',
+          analysis: '「動詞て形 + から」= 做完～之後再做另一件事。強調第一個動作完成後才開始第二個。',
+          relatedRules: ['📖 U4 L4 文法「てから」'],
+        },
+      },
+
+      // ── Q19: U4 L5 たり〜たりする ──
+      {
+        id: 'n5_u5_test_q19',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['tari-tari', 'review-u4'],
+        stem: '週末{しゅうまつ}は音楽{おんがく}を聞{き}い＿＿、散歩{さんぽ}し＿＿します。',
+        stemZh: '週末聽聽音樂、散散步之類的。',
+        options: [
+          { text: 'て / て', reason: '「て」只是並列兩個動作，不表「之類的」。' },
+          { text: 'たら / たら', reason: '「たら」是假定形，不表列舉。' },
+          { text: 'たり / たり', reason: '正確。「たり〜たりする」= 做～或做～等事。' },
+          { text: 'ながら / ながら', reason: '「ながら」是同時進行，不是列舉。' },
+        ],
+        correctIndex: 2,
+        explanation: {
+          keyPoint: '「たり〜たりする」列舉動作',
+          analysis: '「動詞た形 → たり」用於列舉多個動作。結尾加「する」。表示「做～或做～等事」。',
+          commonMistakes: ['忘記結尾的「する」'],
+          relatedRules: ['📖 U4 L5 文法「たり〜たりする」'],
+        },
+      },
+
+      // ── Q20: U4 L6 もう / まだ ──
+      {
+        id: 'n5_u5_test_q20',
+        category: 'grammar',
+        level: 'N5',
+        tags: ['mou-mada', 'review-u4'],
+        stem: 'A：宿題{しゅくだい}は終{お}わりましたか。\nB：いいえ、＿＿終{お}わっていません。',
+        stemZh: 'A：作業寫完了嗎？\nB：不，___沒有寫完。',
+        options: [
+          { text: 'もう', reason: '「もう」= 已經，用於肯定回答，不合否定語境。' },
+          { text: 'まだ', reason: '正確。「まだ〜ていません」= 還沒做～。' },
+          { text: 'ぜんぜん', reason: '「全然」= 完全不，語氣太強，且通常不接「ていません」。' },
+          { text: 'すぐ', reason: '「すぐ」= 馬上，不合語境。' },
+        ],
+        correctIndex: 1,
+        explanation: {
+          keyPoint: '「まだ〜ていません」表尚未完成',
+          analysis: '「もう〜ました」= 已經做了（肯定），「まだ〜ていません」= 還沒做（否定）。兩者成對。',
+          comparisons: ['もう＋た形（已經做了）⇔ まだ＋ていません（還沒做）'],
+          relatedRules: ['📖 U4 L6 文法「もう・まだ」'],
+        },
+      },
+    ],
+  },
 ]
